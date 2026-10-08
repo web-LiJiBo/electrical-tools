@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "新投运48h至2周期间",
+      "type": "时间范围",
+      "desc": "设备投运后48小时至2周的时间段"
+    },
+    {
+      "name": "检测",
+      "type": "操作",
+      "desc": "对设备进行状态检测"
+    },
+    {
+      "name": "交接时的检测结果",
+      "type": "检测数据",
+      "desc": "设备交接验收时的检测数据"
+    },
+    {
+      "name": "表195要求",
+      "type": "技术标准",
+      "desc": "设备状态检测结果的技术标准要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新投运48h至2周期间检测1次",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "定期检测设备状态",
+      "condition": "设备投运后48小时至2周",
+      "constraint": "每2周检测1次",
+      "related_entities": [
+        "新投运48h至2周期间",
+        "检测"
+      ]
+    },
+    {
+      "content": "如有明显增加，应跟踪分析",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "对检测结果异常进行分析",
+      "condition": "检测结果与交接时的检测结果相比，有明显增加",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "检测",
+        "交接时的检测结果"
+      ]
+    },
+    {
+      "content": "直至检测结果稳定且符合表195要求",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "持续跟踪检测结果",
+      "condition": "检测结果与交接时的检测结果相比，有明显增加",
+      "constraint": "检测结果稳定且符合表195要求",
+      "related_entities": [
+        "检测",
+        "表195要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "新投运48h至2周期间",
+      "target": "检测",
+      "type": "检测周期"
+    },
+    {
+      "source": "检测",
+      "target": "交接时的检测结果",
+      "type": "对比基准"
+    },
+    {
+      "source": "检测",
+      "target": "表195要求",
+      "type": "技术标准依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2761,
+      "source_row_id": "2770",
+      "clause_index": 2,
+      "source_text": "新投运48h至2周期间检测1次，与交接时的检测结果相比，如有明显增加，应跟踪分析，直至检测结果稳定且符合表195要求。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.961314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

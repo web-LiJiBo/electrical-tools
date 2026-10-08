@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "出厂局部放电试验",
+      "type": "试验项目",
+      "desc": "变压器出厂前进行的局部放电检测"
+    },
+    {
+      "name": "1.5Um/3",
+      "type": "试验电压",
+      "desc": "局部放电试验时施加的电压值"
+    },
+    {
+      "name": "220kV及以上电压等级变压器",
+      "type": "设备类型",
+      "desc": "220kV及以上电压等级的电力变压器"
+    },
+    {
+      "name": "高、中压端",
+      "type": "设备部位",
+      "desc": "变压器高压侧和中压侧绕组端部"
+    },
+    {
+      "name": "局部放电量",
+      "type": "试验结果",
+      "desc": "局部放电试验中测得的放电量大小"
+    },
+    {
+      "name": "100pC",
+      "type": "试验结果限值",
+      "desc": "局部放电试验允许的最大放电量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "出厂局部放电试验测量电压为1.5Um/3时，220kV及以上电压等级变压器高、中压端的局部放电量不大于100pC",
+      "type": "强制",
+      "subject": "220kV及以上电压等级变压器",
+      "action": "出厂局部放电试验",
+      "condition": "在1.5Um/3电压下进行局部放电试验",
+      "constraint": "高、中压端局部放电量不大于100pC",
+      "related_entities": [
+        "出厂局部放电试验",
+        "1.5Um/3",
+        "220kV及以上电压等级变压器",
+        "高、中压端",
+        "局部放电量",
+        "100pC"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂局部放电试验",
+      "target": "1.5Um/3",
+      "type": "使用电压"
+    },
+    {
+      "source": "出厂局部放电试验",
+      "target": "220kV及以上电压等级变压器",
+      "type": "试验对象"
+    },
+    {
+      "source": "出厂局部放电试验",
+      "target": "高、中压端",
+      "type": "试验部位"
+    },
+    {
+      "source": "出厂局部放电试验",
+      "target": "局部放电量",
+      "type": "试验结果"
+    },
+    {
+      "source": "局部放电量",
+      "target": "100pC",
+      "type": "限值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2363,
+      "source_row_id": "2363",
+      "clause_index": 1,
+      "source_text": "出厂局部放电试验测量电压为1.5Um/3时，220kV及以上电压等级变压器高、中压端的局部放电量不大于100pC"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.462547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

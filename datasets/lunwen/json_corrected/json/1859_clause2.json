@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "管径",
+      "type": "物理参数",
+      "desc": "管道内部直径大小"
+    },
+    {
+      "name": "电缆外径",
+      "type": "物理参数",
+      "desc": "单根电缆外部直径大小"
+    },
+    {
+      "name": "多根电缆包络外径",
+      "type": "物理参数",
+      "desc": "多根电缆排列后最外侧电缆与最内侧电缆之间的最大距离"
+    },
+    {
+      "name": "最小管径",
+      "type": "物理参数",
+      "desc": "满足电缆敷设要求的最小管径"
+    }
+  ],
+  "rules": [
+    {
+      "content": "管的内径不宜小于电缆外径或多根电缆包络外径的1.5倍，一般不宜小于150mm",
+      "type": "强制",
+      "subject": "电力工程设计人员",
+      "action": "选择电缆保护管尺寸",
+      "condition": "电缆敷设工程",
+      "constraint": "管的内径≥1.5*电缆外径或1.5*多根电缆包络外径，且≥150mm",
+      "related_entities": [
+        "电缆",
+        "管径",
+        "电缆外径",
+        "多根电缆包络外径",
+        "最小管径"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "管径",
+      "type": "适用范围"
+    },
+    {
+      "source": "电缆",
+      "target": "电缆外径",
+      "type": "属性"
+    },
+    {
+      "source": "电缆",
+      "target": "多根电缆包络外径",
+      "type": "属性"
+    },
+    {
+      "source": "电缆",
+      "target": "最小管径",
+      "type": "属性"
+    },
+    {
+      "source": "管径",
+      "target": "最小管径",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1859,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1ab8c15204fab617",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1859_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

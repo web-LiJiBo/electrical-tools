@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "在例行检查必要时测量行程特性曲线：“在额定操作电压下测试时间特性，要求：合、分指示正确；辅助开关动作正确；合、分闸时间，合、分闸不同期，合-分时间均满足技术文件要求且没有明显变化；必要时，测量行程特性曲线做进一步分析。除有特别要求的之外，相间合闸不同期不大于5ms，相间分闸不同期不大于3ms；同相各断口合闸不同期不大于3ms，同相分闸不同期不大于2ms",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 292,
+      "source_row_id": "292",
+      "clause_index": 1,
+      "source_text": "在例行检查必要时测量行程特性曲线：“在额定操作电压下测试时间特性，要求：合、分指示正确；辅助开关动作正确；合、分闸时间，合、分闸不同期，合-分时间均满足技术文件要求且没有明显变化；必要时，测量行程特性曲线做进一步分析。除有特别要求的之外，相间合闸不同期不大于5ms，相间分闸不同期不大于3ms；同相各断口合闸不同期不大于3ms，同相分闸不同期不大于2ms"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.067600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备",
+      "desc": "变压器内部磁路系统"
+    },
+    {
+      "name": "绕组",
+      "type": "电力设备",
+      "desc": "变压器内部线圈系统"
+    },
+    {
+      "name": "电气连接件",
+      "type": "电力设备",
+      "desc": "变压器外部电气连接部件"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器储油容器"
+    },
+    {
+      "name": "结构件",
+      "type": "电力设备",
+      "desc": "变压器内部非导电部件"
+    },
+    {
+      "name": "温升",
+      "type": "技术参数",
+      "desc": "设备温度升高值"
+    },
+    {
+      "name": "部件",
+      "type": "电力设备",
+      "desc": "变压器内部或外部其他部件"
+    },
+    {
+      "name": "绝缘液体",
+      "type": "电力材料",
+      "desc": "变压器油或其他绝缘介质"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心、绕组外部的电气连接件或油箱中的结构件，不规定温升限值",
+      "type": "强制",
+      "subject": "变压器设计制造者",
+      "action": "设计制造变压器",
+      "condition": "变压器设计制造过程",
+      "constraint": "不规定温升限值",
+      "related_entities": [
+        "铁心",
+        "绕组",
+        "电气连接件",
+        "油箱",
+        "结构件"
+      ]
+    },
+    {
+      "content": "温升不能过高，以免使与其相邻的部件受到热损坏或使绝缘液体过度老化",
+      "type": "强制",
+      "subject": "变压器设计制造者",
+      "action": "设计制造变压器",
+      "condition": "变压器设计制造过程",
+      "constraint": "温升不超过规定值",
+      "related_entities": [
+        "温升",
+        "部件",
+        "绝缘液体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "绕组",
+      "type": "组成关系"
+    },
+    {
+      "source": "铁心",
+      "target": "电气连接件",
+      "type": "连接关系"
+    },
+    {
+      "source": "铁心",
+      "target": "油箱",
+      "type": "安装关系"
+    },
+    {
+      "source": "绕组",
+      "target": "电气连接件",
+      "type": "连接关系"
+    },
+    {
+      "source": "绕组",
+      "target": "油箱",
+      "type": "安装关系"
+    },
+    {
+      "source": "电气连接件",
+      "target": "油箱",
+      "type": "安装关系"
+    },
+    {
+      "source": "油箱",
+      "target": "结构件",
+      "type": "安装关系"
+    },
+    {
+      "source": "温升",
+      "target": "部件",
+      "type": "影响关系"
+    },
+    {
+      "source": "温升",
+      "target": "绝缘液体",
+      "type": "影响关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2202,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0399dc73fc9a33db",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2202_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

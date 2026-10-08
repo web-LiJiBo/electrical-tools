@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "H2",
+      "type": "气体组分",
+      "desc": "氢气"
+    },
+    {
+      "name": "C2H2",
+      "type": "气体组分",
+      "desc": "乙炔"
+    },
+    {
+      "name": "CH4",
+      "type": "气体组分",
+      "desc": "甲烷"
+    },
+    {
+      "name": "油中溶解气体组分含量",
+      "type": "检测指标",
+      "desc": "变压器油中溶解气体的浓度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油中溶解气体组分含量(μL/L)超过下列任一值时应引起注意：H2含量大于100，C2H2含量大于0.5，CH4含量大于10",
+      "type": "强制",
+      "subject": "电力设备运行维护人员",
+      "action": "进行设备状态评估与故障诊断",
+      "condition": "电力设备运行过程中",
+      "constraint": "油中溶解气体组分含量(μL/L)超过下列任一值：H2含量大于100，C2H2含量大于0.5，CH4含量大于10",
+      "related_entities": [
+        "H2",
+        "C2H2",
+        "CH4",
+        "油中溶解气体组分含量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "H2",
+      "target": "油中溶解气体组分含量",
+      "type": "组成成分"
+    },
+    {
+      "source": "C2H2",
+      "target": "油中溶解气体组分含量",
+      "type": "组成成分"
+    },
+    {
+      "source": "CH4",
+      "target": "油中溶解气体组分含量",
+      "type": "组成成分"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2118,
+      "source_row_id": "2118",
+      "clause_index": 1,
+      "source_text": "油中溶解气体组分含量(μL/L)超过下列任一值时应引起注意：H2含量大于100，C2H2含量大于0.5，CH4含量大于10"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.160546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

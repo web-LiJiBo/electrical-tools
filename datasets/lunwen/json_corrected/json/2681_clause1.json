@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "涂层",
+      "type": "材料",
+      "desc": "电力设备表面的保护层"
+    },
+    {
+      "name": "厚度",
+      "type": "物理量",
+      "desc": "涂层的厚度值"
+    },
+    {
+      "name": "0.4mm",
+      "type": "数值",
+      "desc": "涂层厚度的中心值"
+    },
+    {
+      "name": "0.1mm",
+      "type": "数值",
+      "desc": "涂层厚度的公差值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "涂层厚度为0.4mm±0.1mm",
+      "type": "强制",
+      "subject": "电力设备制造商",
+      "action": "生产电力设备",
+      "condition": "电力设备需要进行防腐蚀处理",
+      "constraint": "涂层厚度范围为0.3mm至0.5mm",
+      "related_entities": [
+        "涂层",
+        "厚度",
+        "0.4mm",
+        "0.1mm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "涂层",
+      "target": "厚度",
+      "type": "属性"
+    },
+    {
+      "source": "0.4mm",
+      "target": "厚度",
+      "type": "属性"
+    },
+    {
+      "source": "0.1mm",
+      "target": "厚度",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2681,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8cf83deedfd97665",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2681_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

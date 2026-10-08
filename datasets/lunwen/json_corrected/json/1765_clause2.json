@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "共箱封闭母线",
+      "type": "电力设备",
+      "desc": "一种电力传输设备"
+    },
+    {
+      "name": "直线段",
+      "type": "电力设备",
+      "desc": "共箱封闭母线的直线部分"
+    },
+    {
+      "name": "不同基础连接段",
+      "type": "电力设备",
+      "desc": "共箱封闭母线的不同基础连接部分"
+    },
+    {
+      "name": "设备连接处",
+      "type": "电力设备",
+      "desc": "共箱封闭母线与设备的连接点"
+    },
+    {
+      "name": "热胀冷缩补偿装置",
+      "type": "电力设备",
+      "desc": "用于补偿共箱封闭母线因温度变化引起的长度变化的装置"
+    },
+    {
+      "name": "基础沉降补偿装置",
+      "type": "电力设备",
+      "desc": "用于补偿共箱封闭母线因基础沉降引起的长度变化的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "共箱封闭母线超过20m长的直线段、不同基础连接段及设备连接处等部位，应设置热胀冷缩或基础沉降的补偿装置",
+      "type": "强制",
+      "subject": "共箱封闭母线",
+      "action": "设置补偿装置",
+      "condition": "共箱封闭母线超过20m长的直线段、不同基础连接段及设备连接处等部位",
+      "constraint": "热胀冷缩补偿装置或基础沉降补偿装置",
+      "related_entities": [
+        "共箱封闭母线",
+        "直线段",
+        "不同基础连接段",
+        "设备连接处",
+        "热胀冷缩补偿装置",
+        "基础沉降补偿装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "共箱封闭母线",
+      "target": "直线段",
+      "type": "包含"
+    },
+    {
+      "source": "共箱封闭母线",
+      "target": "不同基础连接段",
+      "type": "包含"
+    },
+    {
+      "source": "共箱封闭母线",
+      "target": "设备连接处",
+      "type": "包含"
+    },
+    {
+      "source": "共箱封闭母线",
+      "target": "热胀冷缩补偿装置",
+      "type": "设置"
+    },
+    {
+      "source": "共箱封闭母线",
+      "target": "基础沉降补偿装置",
+      "type": "设置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1765,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5425da8deb1b0571",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1765_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

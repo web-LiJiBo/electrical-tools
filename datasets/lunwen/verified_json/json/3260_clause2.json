@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "电缆终端",
+      "type": "电力设备",
+      "desc": "电力系统中用于连接电缆与其它电气设备的装置"
+    },
+    {
+      "name": "施工现场",
+      "type": "施工场所",
+      "desc": "进行电缆终端安装工作的地点"
+    },
+    {
+      "name": "消防灭火要求",
+      "type": "安全规范",
+      "desc": "针对施工环境制定的消防安全标准"
+    },
+    {
+      "name": "消防器材",
+      "type": "消防设施",
+      "desc": "用于火灾预防和扑救的设备"
+    },
+    {
+      "name": "动火作业",
+      "type": "施工活动",
+      "desc": "需要使用明火或产生高温的施工操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆终端安装消防措施应满足施工所处环境的消防灭火要求",
+      "type": "强制",
+      "subject": "电缆终端安装工程",
+      "action": "安装电缆终端",
+      "condition": "在具有火灾风险的环境中进行电缆终端安装",
+      "constraint": "必须遵守施工环境的消防灭火要求",
+      "related_entities": [
+        "电缆终端",
+        "施工现场",
+        "消防灭火要求"
+      ]
+    },
+    {
+      "content": "施工现场应配备足够的消防器材",
+      "type": "强制",
+      "subject": "电缆终端安装工程",
+      "action": "配置消防器材",
+      "condition": "在具有火灾风险的环境中进行电缆终端安装",
+      "constraint": "根据施工环境的消防灭火要求配备消防器材",
+      "related_entities": [
+        "施工现场",
+        "消防灭火要求",
+        "消防器材"
+      ]
+    },
+    {
+      "content": "施工现场如需动火应严格按照有关动火作业消防管理规定执行",
+      "type": "强制",
+      "subject": "电缆终端安装工程",
+      "action": "进行动火作业",
+      "condition": "在具有火灾风险的环境中进行电缆终端安装且需要动火",
+      "constraint": "必须按照动火作业消防管理规定执行",
+      "related_entities": [
+        "施工现场",
+        "动火作业",
+        "消防灭火要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆终端",
+      "target": "施工现场",
+      "type": "位于"
+    },
+    {
+      "source": "施工现场",
+      "target": "消防灭火要求",
+      "type": "遵循"
+    },
+    {
+      "source": "施工现场",
+      "target": "消防器材",
+      "type": "配置"
+    },
+    {
+      "source": "施工现场",
+      "target": "动火作业",
+      "type": "可能涉及"
+    },
+    {
+      "source": "动火作业",
+      "target": "消防灭火要求",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3251,
+      "source_row_id": "3260",
+      "clause_index": 2,
+      "source_text": "电缆终端安装消防措施应满足施工所处环境的消防灭火要求，施工现场应配备足够的消防器材，施工现场如需动火应严格按照有关动火作业消防管理规定执行。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.567365+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "套管",
+      "type": "电力设备",
+      "desc": "电力系统中用于绝缘和连接导体的电气设备"
+    },
+    {
+      "name": "500kV套管",
+      "type": "电力设备",
+      "desc": "额定电压为500kV的套管"
+    },
+    {
+      "name": "110220kV套管",
+      "type": "电力设备",
+      "desc": "额定电压为110kV或220kV的套管"
+    },
+    {
+      "name": "静放时间",
+      "type": "技术参数",
+      "desc": "套管在安装就位后带电前的静置时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "检修时当套管水平存放，安装就位后，带电前必须进行静放",
+      "type": "强制",
+      "subject": "检修人员",
+      "action": "对套管进行静放",
+      "condition": "套管水平存放，安装就位后",
+      "constraint": "静放时间应满足规定要求",
+      "related_entities": [
+        "套管",
+        "500kV套管",
+        "110220kV套管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "套管",
+      "target": "500kV套管",
+      "type": "分类"
+    },
+    {
+      "source": "套管",
+      "target": "110220kV套管",
+      "type": "分类"
+    },
+    {
+      "source": "500kV套管",
+      "target": "静放时间",
+      "type": "属性"
+    },
+    {
+      "source": "110220kV套管",
+      "target": "静放时间",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2158,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0bbb936abbf4173b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2158_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

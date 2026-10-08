@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "拉桩杆",
+      "type": "电力设施",
+      "desc": "用于支撑导线的木制或金属杆件"
+    },
+    {
+      "name": "张力",
+      "type": "物理量",
+      "desc": "作用在拉桩杆上的拉力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "拉桩杆应向张力反方向倾斜15～20度",
+      "type": "强制",
+      "subject": "拉桩杆",
+      "action": "安装时应向张力反方向倾斜",
+      "condition": "架空线路施工",
+      "constraint": "15～20度",
+      "related_entities": [
+        "拉桩杆",
+        "张力"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "拉桩杆",
+      "target": "张力",
+      "type": "受力关系"
+    },
+    {
+      "source": "张力",
+      "target": "拉桩杆",
+      "type": "作用力关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 188,
+      "source_row_id": "188",
+      "clause_index": 1,
+      "source_text": "拉桩杆应向张力反方向倾斜15～20度"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.956603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压"
+    },
+    {
+      "name": "三相对称短路电流",
+      "type": "电力参数",
+      "desc": "电力系统中三相短路时流经变压器的电流"
+    },
+    {
+      "name": "绕组",
+      "type": "电力设备部件",
+      "desc": "变压器内部的导电线圈，用于传输和变换电压"
+    },
+    {
+      "name": "电磁线",
+      "type": "材料",
+      "desc": "变压器绕组中的绝缘导线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器在任何分接头位置时，应能承受三相对称短路电流",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "承受三相对称短路电流",
+      "condition": "任何分接头位置",
+      "constraint": "无损坏和明显变形",
+      "related_entities": [
+        "变压器",
+        "三相对称短路电流"
+      ]
+    },
+    {
+      "content": "短路后绕组的温度不应超过改变电磁线机械性能的最高温度",
+      "type": "强制",
+      "subject": "变压器绕组",
+      "action": "保持温度不超过最高温度",
+      "condition": "短路后",
+      "constraint": "不改变电磁线机械性能",
+      "related_entities": [
+        "变压器",
+        "绕组",
+        "电磁线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "三相对称短路电流",
+      "type": "承受"
+    },
+    {
+      "source": "变压器",
+      "target": "绕组",
+      "type": "包含"
+    },
+    {
+      "source": "绕组",
+      "target": "电磁线",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1335,
+      "source_row_id": "1335",
+      "clause_index": 2,
+      "source_text": "变压器在任何分接头位置时，应能承受三相对称短路电流，各部位无损坏和明显变形，短路后绕组的温度不应超过改变电磁线机械性能的最高温度"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.258547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

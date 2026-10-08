@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘组合电器"
+    },
+    {
+      "name": "金属法兰",
+      "type": "材料",
+      "desc": "GIS盆式绝缘子的金属连接部件"
+    },
+    {
+      "name": "盆式绝缘子",
+      "type": "电力设备",
+      "desc": "GIS内部绝缘支撑件"
+    },
+    {
+      "name": "特高频局部放电检测",
+      "type": "检测方法",
+      "desc": "GIS内部缺陷检测技术"
+    },
+    {
+      "name": "型式试验",
+      "type": "试验",
+      "desc": "产品设计定型前的全面测试"
+    },
+    {
+      "name": "跨接片",
+      "type": "电力设备",
+      "desc": "GIS罐体对接处的电气连接片"
+    },
+    {
+      "name": "罐体对接处",
+      "type": "位置",
+      "desc": "GIS罐体之间的连接部位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新投运GIS采用带金属法兰的盆式绝缘子时，应预留窗口用于特高频局部放电检测。",
+      "type": "强制",
+      "subject": "GIS生产厂家",
+      "action": "预留检测窗口",
+      "condition": "新投运GIS采用带金属法兰的盆式绝缘子",
+      "constraint": "预留窗口用于特高频局部放电检测",
+      "related_entities": [
+        "GIS",
+        "金属法兰",
+        "盆式绝缘子",
+        "特高频局部放电检测"
+      ]
+    },
+    {
+      "content": "采用此结构的盆式绝缘子可取消罐体对接处的跨接片，但生产厂家应提供型式试验依据。",
+      "type": "强制",
+      "subject": "GIS生产厂家",
+      "action": "取消跨接片",
+      "condition": "采用带金属法兰的盆式绝缘子",
+      "constraint": "型式试验依据",
+      "related_entities": [
+        "GIS",
+        "金属法兰",
+        "盆式绝缘子",
+        "型式试验",
+        "跨接片",
+        "罐体对接处"
+      ]
+    },
+    {
+      "content": "如需采用跨接片，户外GIS罐体上应有专用跨接部位，禁止通过法兰螺栓直连。",
+      "type": "强制",
+      "subject": "GIS生产厂家",
+      "action": "设置专用跨接部位",
+      "condition": "采用带金属法兰的盆式绝缘子且需采用跨接片",
+      "constraint": "禁止通过法兰螺栓直连",
+      "related_entities": [
+        "GIS",
+        "金属法兰",
+        "盆式绝缘子",
+        "跨接片",
+        "罐体对接处"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "金属法兰",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "盆式绝缘子",
+      "type": "包含"
+    },
+    {
+      "source": "金属法兰",
+      "target": "盆式绝缘子",
+      "type": "组成"
+    },
+    {
+      "source": "GIS",
+      "target": "特高频局部放电检测",
+      "type": "适用"
+    },
+    {
+      "source": "GIS",
+      "target": "型式试验",
+      "type": "依据"
+    },
+    {
+      "source": "GIS",
+      "target": "跨接片",
+      "type": "组成"
+    },
+    {
+      "source": "GIS",
+      "target": "罐体对接处",
+      "type": "位置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2785,
+      "source_row_id": "2794",
+      "clause_index": 2,
+      "source_text": "新投运GIS采用带金属法兰的盆式绝缘子时，应预留窗口用于特高频局部放电检测。采用此结构的盆式绝缘子可取消罐体对接处的跨接片，但生产厂家应提供型式试验依据。如需采用跨接片，户外GIS罐体上应有专用跨接部位，禁止通过法兰螺栓直连。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.991315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

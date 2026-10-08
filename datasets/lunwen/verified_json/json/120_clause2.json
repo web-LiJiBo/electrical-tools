@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "换流站消防系统",
+      "type": "电力设备",
+      "desc": "换流站内用于火灾预防与控制的系统"
+    },
+    {
+      "name": "空调系统",
+      "type": "电力设备",
+      "desc": "换流站内用于调节室内温度的系统"
+    },
+    {
+      "name": "保护装置",
+      "type": "电力设备",
+      "desc": "用于检测并处理异常情况的装置"
+    },
+    {
+      "name": "直流系统",
+      "type": "电力系统",
+      "desc": "换流站内用于传输直流电能的系统"
+    },
+    {
+      "name": "省级公司生技部",
+      "type": "组织机构",
+      "desc": "负责省级电力公司技术管理的部门"
+    },
+    {
+      "name": "总部生技部",
+      "type": "组织机构",
+      "desc": "负责国家电网公司技术管理的部门"
+    }
+  ],
+  "rules": [
+    {
+      "content": "换流站消防系统、空调系统相关保护不应发闭锁直流命令",
+      "type": "强制",
+      "subject": "保护装置",
+      "action": "不发闭锁直流命令",
+      "condition": "换流站消防系统、空调系统相关保护动作时",
+      "constraint": "不应发闭锁直流命令",
+      "related_entities": [
+        "换流站消防系统",
+        "空调系统",
+        "保护装置",
+        "直流系统"
+      ]
+    },
+    {
+      "content": "如厂家有特殊要求，应经省级公司生技部审核后报总部生技部备案",
+      "type": "强制",
+      "subject": "保护装置",
+      "action": "经省级公司生技部审核后报总部生技部备案",
+      "condition": "厂家有特殊要求时",
+      "constraint": "厂家特殊要求需经省级公司生技部审核后报总部生技部备案",
+      "related_entities": [
+        "保护装置",
+        "省级公司生技部",
+        "总部生技部"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流站消防系统",
+      "target": "保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "空调系统",
+      "target": "保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "保护装置",
+      "target": "直流系统",
+      "type": "保护对象"
+    },
+    {
+      "source": "省级公司生技部",
+      "target": "总部生技部",
+      "type": "上级关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 120,
+      "source_row_id": "120",
+      "clause_index": 2,
+      "source_text": "换流站消防系统、空调系统相关保护不应发闭锁直流命令。如厂家有特殊要求，应经省级公司生技部审核后报总部生技部备案"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9583,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.884600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "排管",
+      "type": "电力设施",
+      "desc": "电力电缆敷设方式之一，通过管道进行电缆敷设"
+    },
+    {
+      "name": "工作井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中设置的检查、维护用井室"
+    },
+    {
+      "name": "管枕",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中用于支撑电缆的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "排管在选择路径时，应尽可能取直线，在转弯和折角处，应增设工作井。",
+      "type": "强制",
+      "subject": "排管敷设路径设计",
+      "action": "敷设路径设计",
+      "condition": "排管敷设路径选择",
+      "constraint": "转弯和折角处增设工作井",
+      "related_entities": [
+        "排管",
+        "工作井"
+      ]
+    },
+    {
+      "content": "在直线部分，两工作井之间的距离不宜大于150m",
+      "type": "强制",
+      "subject": "排管敷设路径设计",
+      "action": "敷设路径设计",
+      "condition": "排管敷设路径选择",
+      "constraint": "两工作井之间距离不宜大于150m",
+      "related_entities": [
+        "排管",
+        "工作井"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "排管",
+      "target": "工作井",
+      "type": "敷设路径"
+    },
+    {
+      "source": "排管",
+      "target": "管枕",
+      "type": "敷设支撑"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1952,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d0df91a79e5fec2b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1952_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

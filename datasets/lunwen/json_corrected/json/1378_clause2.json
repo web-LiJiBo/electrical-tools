@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "电缆护层",
+      "type": "电力设备",
+      "desc": "保护电缆内部结构的外层"
+    },
+    {
+      "name": "管路",
+      "type": "电力设施",
+      "desc": "用于电缆敷设的管道"
+    },
+    {
+      "name": "杂物",
+      "type": "电力设施",
+      "desc": "管路内的非电缆相关物质"
+    },
+    {
+      "name": "钢管",
+      "type": "电力工具",
+      "desc": "用于疏通管路的金属管件"
+    },
+    {
+      "name": "钢丝刷",
+      "type": "电力工具",
+      "desc": "用于清理管路内杂物的工具"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆敷设前疏通管路并清除杂物",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "施工",
+      "condition": "电缆敷设前",
+      "constraint": "确保电缆能顺利穿管而不损伤电缆护层",
+      "related_entities": [
+        "电缆",
+        "电缆护层",
+        "管路",
+        "杂物"
+      ]
+    },
+    {
+      "content": "疏通管路时使用直径不小于0.85倍管孔直径、长度约600mm的钢管",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "施工",
+      "condition": "电缆敷设前",
+      "constraint": "确保管路畅通无阻",
+      "related_entities": [
+        "电缆",
+        "管路",
+        "钢管"
+      ]
+    },
+    {
+      "content": "使用与管孔等直径的钢丝刷清除管内杂物",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "施工",
+      "condition": "电缆敷设前",
+      "constraint": "确保管路清洁无杂物",
+      "related_entities": [
+        "电缆",
+        "管路",
+        "钢丝刷"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "电缆护层",
+      "type": "保护"
+    },
+    {
+      "source": "电缆",
+      "target": "管路",
+      "type": "敷设"
+    },
+    {
+      "source": "管路",
+      "target": "杂物",
+      "type": "存在"
+    },
+    {
+      "source": "钢管",
+      "target": "管路",
+      "type": "疏通"
+    },
+    {
+      "source": "钢丝刷",
+      "target": "管路",
+      "type": "清理"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1378,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bc8bb9299e6a3aa7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1378_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

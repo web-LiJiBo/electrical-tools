@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "户外设备",
+      "type": "电力设备",
+      "desc": "安装在户外环境中的电力设备"
+    },
+    {
+      "name": "箱体",
+      "type": "电力设备部件",
+      "desc": "电力设备中用于保护内部元件的外壳"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "衡量设备对外界影响因素防护能力的技术指标"
+    },
+    {
+      "name": "IP3XDW",
+      "type": "防护等级",
+      "desc": "户外设备箱体防护等级最低要求"
+    },
+    {
+      "name": "IP2X",
+      "type": "防护等级",
+      "desc": "户内设备箱体防护等级最低要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "户外设备的箱体提供的防护等级最低应为IP3XDW",
+      "type": "强制",
+      "subject": "户外设备箱体",
+      "action": "提供防护等级",
+      "condition": "户外环境",
+      "constraint": "IP3XDW",
+      "related_entities": [
+        "户外设备",
+        "箱体"
+      ]
+    },
+    {
+      "content": "户内设备的箱体提供的防护等级最低应为IP2X",
+      "type": "强制",
+      "subject": "户内设备箱体",
+      "action": "提供防护等级",
+      "condition": "户内环境",
+      "constraint": "IP2X",
+      "related_entities": [
+        "户内设备",
+        "箱体"
+      ]
+    },
+    {
+      "content": "通常不要求在外壳打开后阻止人员偶然触及危险部位的防护",
+      "type": "建议",
+      "subject": "电力设备",
+      "action": "提供防护措施",
+      "condition": "外壳打开后",
+      "constraint": "不强制要求",
+      "related_entities": [
+        "电力设备",
+        "箱体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户外设备",
+      "target": "箱体",
+      "type": "包含"
+    },
+    {
+      "source": "户内设备",
+      "target": "箱体",
+      "type": "包含"
+    },
+    {
+      "source": "防护等级",
+      "target": "箱体",
+      "type": "属性"
+    },
+    {
+      "source": "IP3XDW",
+      "target": "防护等级",
+      "type": "具体值"
+    },
+    {
+      "source": "IP2X",
+      "target": "防护等级",
+      "type": "具体值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 617,
+      "source_row_id": "617",
+      "clause_index": 2,
+      "source_text": "户外设备的箱体提供的防护等级最低应为IP3XDW，户内设备的箱体提供的防护等级最低应为IP2X。此外，通常不要求在外壳打开后阻止人员偶然触及危险部位的防护"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.425482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "直埋电缆",
+      "type": "电力设施",
+      "desc": "直接埋设于地下并敷设在保护管中的电缆"
+    },
+    {
+      "name": "热力管沟",
+      "type": "电力设施",
+      "desc": "用于输送蒸汽、热水等热力介质的地下管道沟槽"
+    },
+    {
+      "name": "隔板",
+      "type": "电力设施",
+      "desc": "用于隔离不同电力设施的绝缘材料板"
+    },
+    {
+      "name": "电缆穿管",
+      "type": "电力设施",
+      "desc": "将电缆置于保护管中进行敷设的方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋电缆与热力管沟平行，容许最小净距为2.0m，用隔板分隔或电缆穿管时可为0.1m",
+      "type": "强制",
+      "subject": "直埋电缆与热力管沟",
+      "action": "平行敷设",
+      "condition": "直埋电缆与热力管沟平行敷设",
+      "constraint": "当未使用隔板分隔或电缆穿管时，最小净距为2.0m；使用隔板分隔或电缆穿管时，最小净距为0.1m",
+      "related_entities": [
+        "直埋电缆",
+        "热力管沟",
+        "隔板",
+        "电缆穿管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋电缆",
+      "target": "热力管沟",
+      "type": "平行敷设"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "隔板",
+      "type": "隔离"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "电缆穿管",
+      "type": "敷设方式"
+    },
+    {
+      "source": "隔板",
+      "target": "热力管沟",
+      "type": "隔离"
+    },
+    {
+      "source": "电缆穿管",
+      "target": "热力管沟",
+      "type": "敷设方式"
+    }
+  ],
+  "metadata": {
+    "pair_id": 554,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fdc42d2f77629cbe",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\554_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

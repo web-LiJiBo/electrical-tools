@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "导电回路",
+      "type": "电力系统元件",
+      "desc": "连接电力设备的导电部分"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "设备正常工作时的最大电流值"
+    },
+    {
+      "name:": "允许温升",
+      "type": "电气参数",
+      "desc": "设备在规定条件下允许的最大温升"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔离开关导电回路的设计应能耐受1.1倍额定电流而不超过允许温升",
+      "type": "强制",
+      "subject": "隔离开关导电回路设计者",
+      "action": "设计隔离开关导电回路",
+      "condition": "隔离开关导电回路设计",
+      "constraint": "1.1倍额定电流, 不超过允许温升",
+      "related_entities": [
+        "隔离开关",
+        "导电回路",
+        "额定电流",
+        "允许温升"
+      ]
+    },
+    {
+      "content": "试验电流应为额定电流的1.1倍",
+      "type": "强制",
+      "subject": "隔离开关导电回路试验人员",
+      "action": "进行隔离开关导电回路试验",
+      "condition": "隔离开关导电回路试验",
+      "constraint": "1.1倍额定电流",
+      "related_entities": [
+        "隔离开关",
+        "导电回路",
+        "额定电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "导电回路",
+      "type": "包含"
+    },
+    {
+      "source": "导电回路",
+      "target": "额定电流",
+      "type": "承载"
+    },
+    {
+      "source": "导电回路",
+      "target": "允许温升",
+      "type": "限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1234,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "533eee2b80fe9e72",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1234_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

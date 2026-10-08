@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "额定容量",
+      "type": "电力参数",
+      "desc": "并联电抗器的额定容量"
+    },
+    {
+      "name": "额定电压",
+      "type": "电力参数",
+      "desc": "并联电抗器的额定电压"
+    },
+    {
+      "name": "额定电抗",
+      "type": "电力参数",
+      "desc": "并联电抗器的额定电抗值"
+    },
+    {
+      "name": "额定损耗",
+      "type": "电力参数",
+      "desc": "并联电抗器的额定损耗值"
+    },
+    {
+      "name": "并联电抗器",
+      "type": "电力设备",
+      "desc": "用于电力系统无功补偿的电力设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定容量60Mvar、额定电压765/√3及800/√3kV、额定电抗3251Ω及3556Ω并联电抗器的额定损耗为130kW。",
+      "type": "强制",
+      "subject": "并联电抗器",
+      "action": "运行",
+      "condition": "额定容量60Mvar、额定电压765/√3及800/√3kV、额定电抗3251Ω及3556Ω",
+      "constraint": "额定损耗130kW",
+      "related_entities": [
+        "额定容量",
+        "额定电压",
+        "额定电抗",
+        "额定损耗"
+      ]
+    },
+    {
+      "content": "额定容量70Mvar、额定电压765/√3及800/√3kV、额定电抗2787Ω及3048Ω并联电抗器的额定损耗为145kW。",
+      "type": "强制",
+      "subject": "并联电抗器",
+      "action": "运行",
+      "condition": "额定容量70Mvar、额定电压765/√3及800/√3kV、额定电抗2787Ω及3048Ω",
+      "constraint": "额定损耗145kW",
+      "related_entities": [
+        "额定容量",
+        "额定电压",
+        "额定电抗",
+        "额定损耗"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定容量",
+      "target": "并联电抗器",
+      "type": "属于"
+    },
+    {
+      "source": "额定电压",
+      "target": "并联电抗器",
+      "type": "属于"
+    },
+    {
+      "source": "额定电抗",
+      "target": "并联电抗器",
+      "type": "属于"
+    },
+    {
+      "source": "额定损耗",
+      "target": "并联电抗器",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 222,
+      "source_row_id": "222",
+      "clause_index": 2,
+      "source_text": "基本参数，表4750kV并联电抗器基本参数——额定损耗按额定容量进行划分：额定容量60Mvar、额定电压765/√3及800/√3kV、额定电抗3251Ω及3556Ω并联电抗器的额定损耗为130kW。额定容量70Mvar、额定电压765/√3及800/√3kV、额定电抗2787Ω及3048Ω并联电抗器的额定损耗为145kW"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:58.993600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

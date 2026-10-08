@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "卖方",
+      "type": "组织机构",
+      "desc": "提供电力设备的供应商"
+    },
+    {
+      "name": "买方",
+      "type": "组织机构",
+      "desc": "购买电力设备的用户"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "试验报告",
+      "type": "技术文档",
+      "desc": "记录电力设备试验结果的技术文件"
+    },
+    {
+      "name": "型式试验",
+      "type": "试验项目",
+      "desc": "验证电力设备设计是否满足标准要求的试验"
+    },
+    {
+      "name": "特殊试验",
+      "type": "试验项目",
+      "desc": "针对特定需求或条件进行的电力设备试验"
+    },
+    {
+      "name": "短路承受能力试验",
+      "type": "试验项目",
+      "desc": "评估电力设备在短路故障情况下的耐受能力的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "卖方向买方提供的试验报告，订货条件内容：变压器型式试验和特殊试验报告（含短路承受能力试验报告）",
+      "type": "强制",
+      "subject": "卖方",
+      "action": "提供试验报告",
+      "condition": "订货合同签订后",
+      "constraint": "必须包括变压器型式试验报告、特殊试验报告（含短路承受能力试验报告）",
+      "related_entities": [
+        "卖方",
+        "买方",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "卖方",
+      "target": "买方",
+      "type": "供货关系"
+    },
+    {
+      "source": "卖方",
+      "target": "变压器",
+      "type": "供货对象"
+    },
+    {
+      "source": "变压器",
+      "target": "试验报告",
+      "type": "技术依据"
+    },
+    {
+      "source": "试验报告",
+      "target": "卖方",
+      "type": "出具方"
+    },
+    {
+      "source": "试验报告",
+      "target": "买方",
+      "type": "接收方"
+    },
+    {
+      "source": "型式试验",
+      "target": "试验报告",
+      "type": "试验内容"
+    },
+    {
+      "source": "特殊试验",
+      "target": "试验报告",
+      "type": "试验内容"
+    },
+    {
+      "source": "短路承受能力试验",
+      "target": "试验报告",
+      "type": "试验内容"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2095,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ed76f6479c4b7b5f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2095_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "焊接接头接地体",
+      "type": "接地体",
+      "desc": "含有焊接接头的接地体"
+    },
+    {
+      "name": "规格尺寸均相同的接地体",
+      "type": "接地体",
+      "desc": "与焊接接头接地体规格尺寸相同的接地体"
+    },
+    {
+      "name": "直流电阻值",
+      "type": "电气参数",
+      "desc": "接地体在直流条件下的电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在同一温度条件下，带焊接接头接地体直流电阻值不得大于规格尺寸均相同的接地体直流电阻值的1.05倍。",
+      "type": "强制",
+      "subject": "焊接接头接地体",
+      "action": "直流电阻值测试",
+      "condition": "同一温度条件下",
+      "constraint": "焊接接头接地体直流电阻值≤规格尺寸均相同的接地体直流电阻值×1.05",
+      "related_entities": [
+        "焊接接头接地体",
+        "规格尺寸均相同的接地体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "焊接接头接地体",
+      "target": "直流电阻值",
+      "type": "具有"
+    },
+    {
+      "source": "规格尺寸均相同的接地体",
+      "target": "直流电阻值",
+      "type": "具有"
+    },
+    {
+      "source": "焊接接头接地体",
+      "target": "规格尺寸均相同的接地体",
+      "type": "对比"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2978,
+      "source_row_id": "2987",
+      "clause_index": 1,
+      "source_text": "在同一温度条件下，带焊接接头接地体直流电阻值不得大于规格尺寸均相同的接地体直流电阻值的1.05倍。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.236315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

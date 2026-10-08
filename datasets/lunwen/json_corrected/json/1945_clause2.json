@@ -1,0 +1,125 @@
+{
+  "entities": [
+    {
+      "name": "电缆终端",
+      "type": "电力设备",
+      "desc": "电缆与电气设备连接的终端部分"
+    },
+    {
+      "name": "电缆接头",
+      "type": "电力设备",
+      "desc": "电缆与电缆之间的连接部分"
+    },
+    {
+      "name": "电缆分支处",
+      "type": "电力设备",
+      "desc": "电缆分路的地方"
+    },
+    {
+      "name": "接地线",
+      "type": "电力设备",
+      "desc": "用于接地的导体"
+    },
+    {
+      "name": "红外测温",
+      "type": "检测方法",
+      "desc": "利用红外技术对电力设备进行温度检测的方法"
+    },
+    {
+      "name": "电缆线路负荷",
+      "type": "运行参数",
+      "desc": "电缆线路实际输送的电流占其额定电流的比例"
+    },
+    {
+      "name": "检测周期",
+      "type": "检测计划",
+      "desc": "进行带电检测的时间间隔"
+    },
+    {
+      "name": "设备负荷",
+      "type": "运行参数",
+      "desc": "电力设备实际运行的负载情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "红外测温重点检测电缆终端、电缆接头、电缆分支处及接地线，应无异常温升、温差和/或相对温差。",
+      "type": "强制",
+      "subject": "电力设备运维人员",
+      "action": "进行红外测温",
+      "condition": "电缆线路带电运行",
+      "constraint": "检测部位包括电缆终端、电缆接头、电缆分支处及接地线，检测结果不应出现异常温升、温差和/或相对温差",
+      "related_entities": [
+        "电缆终端",
+        "电缆接头",
+        "电缆分支处",
+        "接地线",
+        "红外测温"
+      ]
+    },
+    {
+      "content": "必要时，当电缆线路负荷较重(超过50%)时，应适当缩短检测周期，检测宜在设备负荷高峰状态下进行，一般不低于30%额定负荷。",
+      "type": "强制",
+      "subject": "电力设备运维人员",
+      "action": "调整检测周期并选择合适检测时机",
+      "condition": "电缆线路负荷超过50%",
+      "constraint": "检测周期应根据实际情况适当缩短，检测应在设备负荷高峰状态下进行，一般不低于30%额定负荷",
+      "related_entities": [
+        "电缆线路负荷",
+        "检测周期",
+        "设备负荷"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆终端",
+      "target": "红外测温",
+      "type": "检测对象"
+    },
+    {
+      "source": "电缆接头",
+      "target": "红外测温",
+      "type": "检测对象"
+    },
+    {
+      "source": "电缆分支处",
+      "target": "红外测温",
+      "type": "检测对象"
+    },
+    {
+      "source": "接地线",
+      "target": "红外测温",
+      "type": "检测对象"
+    },
+    {
+      "source": "电缆线路负荷",
+      "target": "设备负荷",
+      "type": "影响因素"
+    },
+    {
+      "source": "检测周期",
+      "target": "电缆线路负荷",
+      "type": "调整依据"
+    },
+    {
+      "source": "设备负荷",
+      "target": "检测周期",
+      "type": "调整依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1945,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4985d60b50664a4f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1945_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

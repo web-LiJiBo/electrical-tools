@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "陆地接地极",
+      "type": "接地装置",
+      "desc": "用于将电气设备的电位与大地电位相连接的装置"
+    },
+    {
+      "name": "最大暂态电流",
+      "type": "电流参数",
+      "desc": "接地装置在发生故障时可能承受的最大电流"
+    },
+    {
+      "name": "地面最大允许跨步电压",
+      "type": "电压参数",
+      "desc": "人员在接地装置附近行走时，两脚之间所能承受的最大电压"
+    },
+    {
+      "name": "ρs",
+      "type": "土壤电阻率",
+      "desc": "接地装置周围土壤的电阻率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "陆地接地极在最大暂态电流下，地面最大允许跨步电压应满足下式的要求：Upm=7.42+0.0318ρs",
+      "type": "强制",
+      "subject": "陆地接地极",
+      "action": "设计、施工、运行维护",
+      "condition": "陆地接地极在最大暂态电流下",
+      "constraint": "地面最大允许跨步电压≤Upm=7.42+0.0318ρs",
+      "related_entities": [
+        "陆地接地极",
+        "最大暂态电流",
+        "地面最大允许跨步电压",
+        "ρs"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "陆地接地极",
+      "target": "最大暂态电流",
+      "type": "承受"
+    },
+    {
+      "source": "陆地接地极",
+      "target": "地面最大允许跨步电压",
+      "type": "限制"
+    },
+    {
+      "source": "地面最大允许跨步电压",
+      "target": "ρs",
+      "type": "依赖于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 273,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "03beb60d303f6ea0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\273_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

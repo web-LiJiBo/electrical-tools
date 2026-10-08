@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "底座绝缘电阻",
+      "type": "电气参数",
+      "desc": "电力设备底座的绝缘性能指标"
+    },
+    {
+      "name": "兆欧表",
+      "type": "检测仪器",
+      "desc": "用于测量高阻值电阻的仪表"
+    },
+    {
+      "name": "2500V",
+      "type": "电压等级",
+      "desc": "兆欧表施加的电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "底座绝缘电阻用2500V的兆欧表测量",
+      "type": "强制",
+      "subject": "电力设备底座",
+      "action": "进行绝缘电阻测量",
+      "condition": "在电力设备安装或检修后",
+      "constraint": "使用2500V兆欧表",
+      "related_entities": [
+        "底座绝缘电阻",
+        "兆欧表"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "底座绝缘电阻",
+      "target": "兆欧表",
+      "type": "测量工具"
+    },
+    {
+      "source": "底座绝缘电阻",
+      "target": "2500V",
+      "type": "测量电压等级"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3099,
+      "source_row_id": "3108",
+      "clause_index": 1,
+      "source_text": "底座绝缘电阻用2500V的兆欧表测量。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.382318+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

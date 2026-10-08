@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "接点温度",
+      "type": "电气设备状态参数",
+      "desc": "电力系统中连接部位的温度"
+    },
+    {
+      "name": "导线温度",
+      "type": "电气设备状态参数",
+      "desc": "电力线路导体的温度"
+    },
+    {
+      "name": "负荷变化",
+      "type": "运行参数",
+      "desc": "电力系统负荷的变化情况"
+    },
+    {
+      "name": "大气环境条件",
+      "type": "外部环境因素",
+      "desc": "影响电力设备运行的气象条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接点温度可略高于导线温度，但不应超过10ºC。",
+      "type": "强制",
+      "subject": "接点温度",
+      "action": "控制",
+      "condition": "电力系统运行过程中",
+      "constraint": "接点温度≤导线温度+10ºC",
+      "related_entities": [
+        "接点温度",
+        "导线温度"
+      ]
+    },
+    {
+      "content": "在分析时，要综合考虑当时及前1小时的负荷变化以及大气环境条件且不高于导线允许运行温度。",
+      "type": "强制",
+      "subject": "电力系统运行参数",
+      "action": "监测与分析",
+      "condition": "电力系统运行过程中",
+      "constraint": "负荷变化≤允许范围，大气环境条件正常，导线温度≤允许运行温度",
+      "related_entities": [
+        "负荷变化",
+        "大气环境条件",
+        "导线温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接点温度",
+      "target": "导线温度",
+      "type": "温度关联"
+    },
+    {
+      "source": "负荷变化",
+      "target": "导线温度",
+      "type": "影响因素"
+    },
+    {
+      "source": "大气环境条件",
+      "target": "导线温度",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 955,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "04d46b7d90a8af3a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\955_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

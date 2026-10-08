@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "电缆头",
+      "type": "电力设备",
+      "desc": "电力系统中用于连接电缆的电气装置"
+    },
+    {
+      "name": "隔板",
+      "type": "电力设备",
+      "desc": "用于隔离电缆头的绝缘材料"
+    },
+    {
+      "name": "阻燃材料",
+      "type": "电力材料",
+      "desc": "具有阻燃性能的填充材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在多个电缆头并排安装的场合中，应在电缆头之间加隔板或填充阻燃材料",
+      "type": "强制",
+      "subject": "电缆头",
+      "action": "加装隔板或阻燃材料",
+      "condition": "电缆头并排安装",
+      "constraint": "隔板或阻燃材料应满足防火要求",
+      "related_entities": [
+        "电缆头",
+        "隔板",
+        "阻燃材料"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆头",
+      "target": "隔板",
+      "type": "加装"
+    },
+    {
+      "source": "电缆头",
+      "target": "阻燃材料",
+      "type": "加装"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 503,
+      "source_row_id": "503",
+      "clause_index": 1,
+      "source_text": "在多个电缆头并排安装的场合中，应在电缆头之间加隔板或填充阻燃材料"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.300484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

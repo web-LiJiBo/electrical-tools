@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "使用环境条件",
+      "type": "电力设备运行环境",
+      "desc": "电力设备在实际运行中所处的环境条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "使用环境条件表中规定",
+      "type": "强制",
+      "subject": "电力设备制造商或设计单位",
+      "action": "遵循使用环境条件表中的规定",
+      "condition": "电力设备的设计与制造阶段",
+      "constraint": "必须严格遵守使用环境条件表中的规定，确保电力设备在实际运行环境中能够安全稳定运行",
+      "related_entities": [
+        "使用环境条件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "使用环境条件",
+      "target": "电力设备制造商或设计单位",
+      "type": "遵循"
+    },
+    {
+      "source": "使用环境条件",
+      "target": "电力设备",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1087,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f2f9faf2962650ad",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1087_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

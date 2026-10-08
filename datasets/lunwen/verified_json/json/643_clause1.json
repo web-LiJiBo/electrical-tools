@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "三相四线系统",
+      "type": "电力系统",
+      "desc": "采用三根相线和一根中性线的供电系统"
+    },
+    {
+      "name": "三相三线系统",
+      "type": "电力系统",
+      "desc": "采用三根相线的供电系统"
+    },
+    {
+      "name": "标称电压",
+      "type": "电气参数",
+      "desc": "电力系统正常运行时的额定电压值"
+    },
+    {
+      "name": "220V",
+      "type": "电压等级",
+      "desc": "低压交流配电电压等级"
+    },
+    {
+      "name": "380V",
+      "type": "电压等级",
+      "desc": "低压交流配电电压等级"
+    },
+    {
+      "name": "660V",
+      "type": "电压等级",
+      "desc": "高压交流配电电压等级"
+    },
+    {
+      "name": "1000V(1140V)",
+      "type": "电压等级",
+      "desc": "高压交流配电电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三相四线或三相三线系统的标称电压为220/380V、380/660V、1000(1140)V",
+      "type": "强制",
+      "subject": "电力系统设计与运行人员",
+      "action": "选择合适的电压等级",
+      "condition": "新建或改造电力系统",
+      "constraint": "根据负荷性质、供电距离、经济性等因素确定",
+      "related_entities": [
+        "三相四线系统",
+        "三相三线系统",
+        "标称电压",
+        "220V",
+        "380V",
+        "660V",
+        "1000V(1140V)"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三相四线系统",
+      "target": "标称电压",
+      "type": "包含"
+    },
+    {
+      "source": "三相三线系统",
+      "target": "标称电压",
+      "type": "包含"
+    },
+    {
+      "source": "标称电压",
+      "target": "220V",
+      "type": "具体化"
+    },
+    {
+      "source": "标称电压",
+      "target": "380V",
+      "type": "具体化"
+    },
+    {
+      "source": "标称电压",
+      "target": "660V",
+      "type": "具体化"
+    },
+    {
+      "source": "标称电压",
+      "target": "1000V(1140V)",
+      "type": "具体化"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 643,
+      "source_row_id": "643",
+      "clause_index": 1,
+      "source_text": "三相四线或三相三线系统的标称电压220/380380/6601000(1140)"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.4899,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.464485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

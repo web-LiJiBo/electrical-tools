@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "额定电压",
+      "type": "电气参数",
+      "desc": "电力系统中设备的额定工作电压"
+    },
+    {
+      "name": "放电电流",
+      "type": "电气参数",
+      "desc": "电力系统中设备承受的最大放电电流"
+    },
+    {
+      "name": "标称放电电流",
+      "type": "电气参数",
+      "desc": "电力系统中设备的额定放电电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电站用额定电压范围：标称放电电流20kA时，414≤Ur≤828kV。",
+      "type": "强制",
+      "subject": "电力系统设备",
+      "action": "设计与选型",
+      "condition": "电力系统中设备的额定放电电流为20kA",
+      "constraint": "额定电压范围为414kV至828kV",
+      "related_entities": [
+        "额定电压",
+        "放电电流",
+        "标称放电电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定电压",
+      "target": "放电电流",
+      "type": "约束"
+    },
+    {
+      "source": "额定电压",
+      "target": "标称放电电流",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2632,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2cacc5a530835a8c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2632_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

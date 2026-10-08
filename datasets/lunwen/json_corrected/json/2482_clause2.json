@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "连接点",
+      "type": "电力设备",
+      "desc": "电力系统中不同电压等级之间的连接点"
+    },
+    {
+      "name": "谐波电压畸变率",
+      "type": "电气参数",
+      "desc": "电力系统中谐波电压相对于基波电压的畸变程度"
+    },
+    {
+      "name": "注入系统的谐波电流",
+      "type": "电气参数",
+      "desc": "电力系统中注入系统的谐波电流值"
+    },
+    {
+      "name": "GB/T14549",
+      "type": "国家标准",
+      "desc": "电力系统谐波限值标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "连接点的谐波电压畸变率和注入系统的谐波电流应满足GB/T14549的要求",
+      "type": "强制",
+      "subject": "连接点",
+      "action": "谐波电压畸变率和注入系统的谐波电流应满足GB/T14549的要求",
+      "condition": "在电力系统运行过程中",
+      "constraint": "GB/T14549",
+      "related_entities": [
+        "连接点",
+        "谐波电压畸变率",
+        "注入系统的谐波电流",
+        "GB/T14549"
+      ]
+    },
+    {
+      "content": "特殊情况由供方和需方共同商定",
+      "type": "强制",
+      "subject": "供方和需方",
+      "action": "协商解决特殊情况下的谐波电压畸变率和注入系统的谐波电流问题",
+      "condition": "在电力系统运行过程中出现特殊情况时",
+      "constraint": "无具体约束",
+      "related_entities": [
+        "供方",
+        "需方",
+        "连接点",
+        "谐波电压畸变率",
+        "注入系统的谐波电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "连接点",
+      "target": "谐波电压畸变率",
+      "type": "包含"
+    },
+    {
+      "source": "连接点",
+      "target": "注入系统的谐波电流",
+      "type": "包含"
+    },
+    {
+      "source": "GB/T14549",
+      "target": "连接点",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2482,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "30c18559d16c33fa",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2482_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

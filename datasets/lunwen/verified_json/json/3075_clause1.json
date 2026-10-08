@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "±500kV直流架空输电线路",
+      "type": "输电线路",
+      "desc": "额定电压为±500kV的直流架空输电线路"
+    },
+    {
+      "name": "导线边线",
+      "type": "输电线路组成部分",
+      "desc": "架空输电线路中导线的边缘线"
+    },
+    {
+      "name": "保护区",
+      "type": "保护区域",
+      "desc": "架空输电线路周围需要保护的区域"
+    }
+  ],
+  "rules": [
+    {
+      "content": "±500kV直流架空输电线路保护区：导线边线向外侧水平延伸20m并垂直于地面所形成的两平行面内的区域。",
+      "type": "强制",
+      "subject": "±500kV直流架空输电线路",
+      "action": "设置保护区",
+      "condition": "新建或改造±500kV直流架空输电线路",
+      "constraint": "保护区宽度20m",
+      "related_entities": [
+        "±500kV直流架空输电线路",
+        "导线边线",
+        "保护区"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "±500kV直流架空输电线路",
+      "target": "导线边线",
+      "type": "包含"
+    },
+    {
+      "source": "导线边线",
+      "target": "保护区",
+      "type": "边界"
+    },
+    {
+      "source": "±500kV直流架空输电线路",
+      "target": "保护区",
+      "type": "保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3066,
+      "source_row_id": "3075",
+      "clause_index": 1,
+      "source_text": "线路走廊保护区管理，±500kV直流架空输电线路保护区：导线边线向外侧水平延伸20m并垂直于地面所形成的两平行面内的区域。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.344313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

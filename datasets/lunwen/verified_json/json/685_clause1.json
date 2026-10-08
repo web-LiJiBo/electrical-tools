@@ -1,0 +1,38 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "必要时，无具体周期要求",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 685,
+      "source_row_id": "685",
+      "clause_index": 1,
+      "source_text": "必要时，无具体周期要求"
+    },
+    "audit": {
+      "status": "corrected_to_source_faithful_rule",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_unrelated_to_excel_source",
+        "entity_grounding_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.509482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

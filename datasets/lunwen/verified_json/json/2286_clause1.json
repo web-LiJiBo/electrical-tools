@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "户外设备",
+      "type": "电力设备",
+      "desc": "安装在户外的电力设备"
+    },
+    {
+      "name": "户内设备",
+      "type": "电力设备",
+      "desc": "安装在室内的电力设备"
+    },
+    {
+      "name": "噪声水平",
+      "type": "物理量",
+      "desc": "设备运行时产生的噪声强度"
+    },
+    {
+      "name": "声源设备",
+      "type": "电力设备",
+      "desc": "产生噪声的主要电力设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在离地高1m-1.5m，距声源设备外沿垂直面的水平距离为2m处测得的户外设备的噪声水平不得超过110dB(A)",
+      "type": "强制",
+      "subject": "户外设备",
+      "action": "噪声控制",
+      "condition": "户外环境，距离地面1m-1.5m，距离声源设备外沿垂直面的水平距离为2m",
+      "constraint": "噪声水平≤110dB(A)",
+      "related_entities": [
+        "户外设备",
+        "声源设备"
+      ]
+    },
+    {
+      "content": "户内设备的噪声水平不得超过90dB(A)",
+      "type": "强制",
+      "subject": "户内设备",
+      "action": "噪声控制",
+      "condition": "室内环境",
+      "constraint": "噪声水平≤90dB(A)",
+      "related_entities": [
+        "户内设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户外设备",
+      "target": "声源设备",
+      "type": "噪声来源"
+    },
+    {
+      "source": "户内设备",
+      "target": "声源设备",
+      "type": "噪声来源"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2286,
+      "source_row_id": "2286",
+      "clause_index": 1,
+      "source_text": "在离地高1m-1.5m，距声源设备外沿垂直面的水平距离为2m处测得的户外设备的噪声水平不得超过110dB(A)；户内设备的噪声水平不得超过90dB(A)"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.366547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

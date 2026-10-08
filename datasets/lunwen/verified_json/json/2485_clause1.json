@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "接口电抗器",
+      "type": "电力设备",
+      "desc": "连接交流系统与直流系统的电气设备"
+    },
+    {
+      "name": "额定电流",
+      "type": "技术参数",
+      "desc": "设备在正常运行条件下允许通过的最大电流值"
+    },
+    {
+      "name": "换流链回路",
+      "type": "电力系统",
+      "desc": "由多个换流器串联组成的直流输电系统组成部分"
+    },
+    {
+      "name": "最大可能工作电流",
+      "type": "技术参数",
+      "desc": "换流链回路在最恶劣工况下的最大工作电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接口电抗器额定电流应按换流链回路最大可能工作电流选择",
+      "type": "强制",
+      "subject": "接口电抗器",
+      "action": "设计选型",
+      "condition": "换流链回路最大可能工作电流",
+      "constraint": "额定电流≥最大可能工作电流",
+      "related_entities": [
+        "接口电抗器",
+        "换流链回路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接口电抗器",
+      "target": "换流链回路",
+      "type": "连接"
+    },
+    {
+      "source": "额定电流",
+      "target": "接口电抗器",
+      "type": "技术参数"
+    },
+    {
+      "source": "最大可能工作电流",
+      "target": "换流链回路",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2485,
+      "source_row_id": "2485",
+      "clause_index": 1,
+      "source_text": "a）接口电抗器额定电流应按换流链回路最大可能工作电流选择。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.624315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

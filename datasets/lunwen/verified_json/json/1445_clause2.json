@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "损耗实测值",
+      "type": "电力参数",
+      "desc": "实际测量得到的电力损耗值"
+    },
+    {
+      "name": "损耗规定值",
+      "type": "电力参数",
+      "desc": "根据标准或设计要求规定的电力损耗值"
+    },
+    {
+      "name": "损耗允许偏差",
+      "type": "电力参数",
+      "desc": "损耗实测值与规定值之间的允许误差范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "损耗实测值与规定值的允许偏差不应超过+10%",
+      "type": "强制",
+      "subject": "电力系统运行维护人员",
+      "action": "进行电力损耗测量并记录结果",
+      "condition": "电力系统运行过程中",
+      "constraint": "+10%",
+      "related_entities": [
+        "损耗实测值",
+        "损耗规定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "损耗实测值",
+      "target": "损耗规定值",
+      "type": "对比"
+    },
+    {
+      "source": "损耗实测值",
+      "target": "损耗允许偏差",
+      "type": "计算依据"
+    },
+    {
+      "source": "损耗规定值",
+      "target": "损耗允许偏差",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1445,
+      "source_row_id": "1445",
+      "clause_index": 2,
+      "source_text": "损耗允许偏差：损耗实测值与规定值的允许偏差不应超过+10%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9667,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.387550+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "三级电缆隧道",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设电缆的地下通道"
+    },
+    {
+      "name": "温度监测",
+      "type": "监控设备",
+      "desc": "用于检测电缆隧道内温度变化的装置"
+    },
+    {
+      "name": "井盖监控",
+      "type": "监控设备",
+      "desc": "用于监控电缆隧道内井盖状态的装置"
+    },
+    {
+      "name": "水位监测",
+      "type": "监控设备",
+      "desc": "用于检测电缆隧道内积水深度的装置"
+    },
+    {
+      "name": "自动排水",
+      "type": "自动化设备",
+      "desc": "用于自动排出电缆隧道内积水的装置"
+    },
+    {
+      "name": "门禁监控",
+      "type": "监控设备",
+      "desc": "用于监控电缆隧道内人员进出情况的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三级电缆隧道宜配置温度监测、井盖监控",
+      "type": "强制",
+      "subject": "三级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造",
+      "constraint": "必须配置温度监测和井盖监控",
+      "related_entities": [
+        "三级电缆隧道",
+        "温度监测",
+        "井盖监控"
+      ]
+    },
+    {
+      "content": "可配置水位监测及自动排水（易积水区域应安装）",
+      "type": "建议",
+      "subject": "三级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造且位于易积水区域",
+      "constraint": "建议配置水位监测及自动排水",
+      "related_entities": [
+        "三级电缆隧道",
+        "水位监测",
+        "自动排水"
+      ]
+    },
+    {
+      "content": "可配置门禁监控",
+      "type": "建议",
+      "subject": "三级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造",
+      "constraint": "建议配置门禁监控",
+      "related_entities": [
+        "三级电缆隧道",
+        "门禁监控"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三级电缆隧道",
+      "target": "温度监测",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "井盖监控",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "水位监测",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "自动排水",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "门禁监控",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2431,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5c72aca17f22ab9a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2431_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

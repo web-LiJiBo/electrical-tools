@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "配电变压器",
+      "type": "电力设备",
+      "desc": "用于配电系统中的变压器"
+    },
+    {
+      "name": "Dyn11接线组别",
+      "type": "技术参数",
+      "desc": "配电变压器的接线方式之一"
+    },
+    {
+      "name": "单台变压器容量",
+      "type": "技术参数",
+      "desc": "配电变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电变压器接线组别一般采用Dyn11，单台变压器容量不宜超过800kVA",
+      "type": "强制",
+      "subject": "配电变压器",
+      "action": "接线组别选择与容量配置",
+      "condition": "新建或改造10kV配电系统",
+      "constraint": "接线组别采用Dyn11，单台变压器容量不超过800kVA",
+      "related_entities": [
+        "配电变压器",
+        "Dyn11接线组别",
+        "单台变压器容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电变压器",
+      "target": "Dyn11接线组别",
+      "type": "采用"
+    },
+    {
+      "source": "配电变压器",
+      "target": "单台变压器容量",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1560,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "997f0bf4ebf59e56",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1560_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

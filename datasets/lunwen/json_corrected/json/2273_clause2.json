@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "制造厂",
+      "type": "制造企业",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "元件",
+      "type": "电力设备部件",
+      "desc": "电力设备中的基本组成单元"
+    },
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路中导体的电阻值"
+    },
+    {
+      "name": "控制值Rn",
+      "type": "技术指标",
+      "desc": "产品技术条件规定的元件主回路电阻值"
+    },
+    {
+      "name": "出厂实测值",
+      "type": "检测数据",
+      "desc": "元件主回路电阻的实际测量值"
+    },
+    {
+      "name": "测试区间",
+      "type": "测试范围",
+      "desc": "元件主回路电阻测试时的电压电流范围"
+    },
+    {
+      "name": "测试点示意图",
+      "type": "技术图纸",
+      "desc": "元件主回路电阻测试点的布置图"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制造厂应提供每个元件或每个单元主回路电阻的控制值Rn，(Rn是产品技术条件规定值)和出厂实值",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供元件主回路电阻的控制值和实测值",
+      "condition": "元件或单元制造完成",
+      "constraint": "控制值Rn是产品技术条件规定值，实测值应在测试区间内",
+      "related_entities": [
+        "制造厂",
+        "元件",
+        "主回路电阻",
+        "控制值Rn",
+        "出厂实测值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制造厂",
+      "target": "元件",
+      "type": "制造"
+    },
+    {
+      "source": "制造厂",
+      "target": "主回路电阻",
+      "type": "检测"
+    },
+    {
+      "source": "制造厂",
+      "target": "控制值Rn",
+      "type": "规定"
+    },
+    {
+      "source": "制造厂",
+      "target": "出厂实测值",
+      "type": "检测结果"
+    },
+    {
+      "source": "元件",
+      "target": "主回路电阻",
+      "type": "包含"
+    },
+    {
+      "source": "元件",
+      "target": "控制值Rn",
+      "type": "包含"
+    },
+    {
+      "source": "元件",
+      "target": "出厂实测值",
+      "type": "包含"
+    },
+    {
+      "source": "测试区间",
+      "target": "主回路电阻",
+      "type": "测试对象"
+    },
+    {
+      "source": "测试点示意图",
+      "target": "主回路电阻",
+      "type": "测试依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2273,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dccef139c055f623",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2273_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

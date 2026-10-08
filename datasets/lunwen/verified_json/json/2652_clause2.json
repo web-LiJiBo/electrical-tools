@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "现场验收试验",
+      "type": "试验",
+      "desc": "电力工程中对设备进行的全面检查与测试"
+    },
+    {
+      "name": "设备调试",
+      "type": "调试",
+      "desc": "对单台或成套设备进行的功能验证"
+    },
+    {
+      "name": "分系统调试",
+      "type": "调试",
+      "desc": "对电力系统中各子系统的功能验证"
+    },
+    {
+      "name": "站系统调试",
+      "type": "调试",
+      "desc": "对变电站内各系统之间的协调工作进行验证"
+    },
+    {
+      "name": "系统调试",
+      "type": "调试",
+      "desc": "对整个电力系统进行的功能验证"
+    },
+    {
+      "name": "试运行",
+      "type": "运行",
+      "desc": "在实际运行条件下对电力系统进行的初步运行"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场验收试验将分为设备调试、分系统调试、站系统调试、系统调试和试运行等五个阶段。",
+      "type": "强制",
+      "subject": "电力工程验收试验",
+      "action": "验收试验",
+      "condition": "电力工程竣工后",
+      "constraint": "验收试验必须按照规定顺序进行",
+      "related_entities": [
+        "现场验收试验",
+        "设备调试",
+        "分系统调试",
+        "站系统调试",
+        "系统调试",
+        "试运行"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "现场验收试验",
+      "target": "设备调试",
+      "type": "包含"
+    },
+    {
+      "source": "现场验收试验",
+      "target": "分系统调试",
+      "type": "包含"
+    },
+    {
+      "source": "现场验收试验",
+      "target": "站系统调试",
+      "type": "包含"
+    },
+    {
+      "source": "现场验收试验",
+      "target": "系统调试",
+      "type": "包含"
+    },
+    {
+      "source": "现场验收试验",
+      "target": "试运行",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2643,
+      "source_row_id": "2652",
+      "clause_index": 2,
+      "source_text": "现场验收试验将分为设备调试、分系统调试、站系统调试、系统调试和试运行等五个阶段。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.809313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "SF6开关",
+      "type": "电力设备",
+      "desc": "一种使用SF6气体作为灭弧介质的断路器"
+    },
+    {
+      "name": "进出线",
+      "type": "电力线路",
+      "desc": "连接电力设备与电网的输电线路"
+    },
+    {
+      "name": "电气安全距离",
+      "type": "技术参数",
+      "desc": "电气设备之间保持的安全距离"
+    },
+    {
+      "name": "电气连接",
+      "type": "技术参数",
+      "desc": "电力设备之间的电气连接方式"
+    },
+    {
+      "name": "导电膏",
+      "type": "材料",
+      "desc": "用于提高导电性能的膏状材料"
+    },
+    {
+      "name": "电力复合脂",
+      "type": "材料",
+      "desc": "用于提高导电性能的复合脂状材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6开关进出线安装牢固，高低一致，在同一水平面上，电气安全距离不小于300mm。",
+      "type": "强制",
+      "subject": "SF6开关进出线",
+      "action": "安装",
+      "condition": "安装过程中",
+      "constraint": "电气安全距离不小于300mm",
+      "related_entities": [
+        "SF6开关",
+        "进出线",
+        "电气安全距离"
+      ]
+    },
+    {
+      "content": "电气连接应接触紧密导电良好，必要时涂抹导电膏或电力复合脂。",
+      "type": "强制",
+      "subject": "电气连接",
+      "action": "连接",
+      "condition": "连接过程中",
+      "constraint": "接触紧密，导电良好，必要时涂抹导电膏或电力复合脂",
+      "related_entities": [
+        "电气连接",
+        "导电膏",
+        "电力复合脂"
+      ]
+    },
+    {
+      "content": "不同金属连接应有过渡措施。",
+      "type": "强制",
+      "subject": "不同金属连接",
+      "action": "连接",
+      "condition": "连接过程中",
+      "constraint": "应有过渡措施",
+      "related_entities": [
+        "不同金属连接"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6开关",
+      "target": "进出线",
+      "type": "连接"
+    },
+    {
+      "source": "进出线",
+      "target": "电气安全距离",
+      "type": "满足"
+    },
+    {
+      "source": "电气连接",
+      "target": "导电膏",
+      "type": "使用"
+    },
+    {
+      "source": "电气连接",
+      "target": "电力复合脂",
+      "type": "使用"
+    },
+    {
+      "source": "不同金属连接",
+      "target": "过渡措施",
+      "type": "采取"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1957,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c96a7d76bb9a643a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1957_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "厂家",
+      "type": "生产厂家",
+      "desc": "生产产品的厂家"
+    },
+    {
+      "name": "型号",
+      "type": "产品型号",
+      "desc": "产品的型号"
+    },
+    {
+      "name": "规格",
+      "type": "产品规格",
+      "desc": "产品的规格参数"
+    },
+    {
+      "name": "柜体板材",
+      "type": "产品部件",
+      "desc": "配电柜的柜体板材"
+    },
+    {
+      "name": "板材厚度",
+      "type": "产品部件参数",
+      "desc": "柜体板材的厚度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "产品与技术规范书/技术协议中厂家、型号、规格一致",
+      "type": "强制",
+      "subject": "生产厂家",
+      "action": "提供符合技术规范书/技术协议的产品",
+      "condition": "签订技术协议后",
+      "constraint": "厂家、型号、规格一致",
+      "related_entities": [
+        "厂家",
+        "型号",
+        "规格"
+      ]
+    },
+    {
+      "content": "柜体板材厚度不小于2.5mm",
+      "type": "强制",
+      "subject": "生产厂家",
+      "action": "保证柜体板材厚度",
+      "condition": "签订技术协议后",
+      "constraint": "柜体板材厚度≥2.5mm",
+      "related_entities": [
+        "柜体板材",
+        "板材厚度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "厂家",
+      "target": "型号",
+      "type": "提供"
+    },
+    {
+      "source": "厂家",
+      "target": "规格",
+      "type": "提供"
+    },
+    {
+      "source": "厂家",
+      "target": "柜体板材",
+      "type": "提供"
+    },
+    {
+      "source": "柜体板材",
+      "target": "板材厚度",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 433,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7755cb282cdf05be",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\433_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

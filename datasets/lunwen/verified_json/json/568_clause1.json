@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "交联聚乙烯绝缘电缆",
+      "type": "电缆",
+      "desc": "一种采用交联聚乙烯作为绝缘材料的电力电缆"
+    },
+    {
+      "name": "单芯",
+      "type": "电缆结构",
+      "desc": "电缆内部仅有一根导体的结构形式"
+    },
+    {
+      "name": "三芯",
+      "type": "电缆结构",
+      "desc": "电缆内部有三根导体的结构形式"
+    },
+    {
+      "name": "弯曲半径",
+      "type": "几何参数",
+      "desc": "电缆在弯曲时所允许的最小弯曲圆弧半径"
+    },
+    {
+      "name": "66kV",
+      "type": "电压等级",
+      "desc": "高压输电系统中的电压等级"
+    },
+    {
+      "name": "35kV",
+      "type": "电压等级",
+      "desc": "中压输电系统中的电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交联聚乙烯绝缘电缆≥66kV单芯20D三芯15D≤35kV单芯12D三芯10D",
+      "type": "强制",
+      "subject": "交联聚乙烯绝缘电缆",
+      "action": "敷设",
+      "condition": "电缆敷设过程中",
+      "constraint": "单芯20D, 三芯15D, 单芯12D, 三芯10D",
+      "related_entities": [
+        "交联聚乙烯绝缘电缆",
+        "单芯",
+        "三芯",
+        "弯曲半径",
+        "66kV",
+        "35kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交联聚乙烯绝缘电缆",
+      "target": "弯曲半径",
+      "type": "约束"
+    },
+    {
+      "source": "单芯",
+      "target": "弯曲半径",
+      "type": "约束"
+    },
+    {
+      "source": "三芯",
+      "target": "弯曲半径",
+      "type": "约束"
+    },
+    {
+      "source": "66kV",
+      "target": "弯曲半径",
+      "type": "约束"
+    },
+    {
+      "source": "35kV",
+      "target": "弯曲半径",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 568,
+      "source_row_id": "568",
+      "clause_index": 1,
+      "source_text": "电缆敷设允许最小弯曲半径。交联聚乙烯绝缘电缆≥66kV单芯20D三芯15D≤35kV单芯12D三芯10D"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.371483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

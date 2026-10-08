@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "110(66)kV及以上电压等级的油浸式电流互感器",
+      "type": "电力设备",
+      "desc": "110(66)kV及以上电压等级的油浸式电流互感器"
+    },
+    {
+      "name": "交流耐受电压试验",
+      "type": "试验项目",
+      "desc": "交流耐受电压试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在交接试验时，对110(66)kV及以上电压等级的油浸式电流互感器，应逐台进行交流耐受电压试验",
+      "type": "强制",
+      "subject": "110(66)kV及以上电压等级的油浸式电流互感器",
+      "action": "进行交流耐受电压试验",
+      "condition": "交接试验时",
+      "constraint": "逐台",
+      "related_entities": [
+        "110(66)kV及以上电压等级的油浸式电流互感器",
+        "交流耐受电压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110(66)kV及以上电压等级的油浸式电流互感器",
+      "target": "交流耐受电压试验",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1497,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0415b4f619cd52eb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1497_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

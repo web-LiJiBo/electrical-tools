@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "额定容量",
+      "type": "技术参数",
+      "desc": "设备在额定运行条件下能够提供的最大无功功率"
+    },
+    {
+      "name": "750kV油浸式并联电抗器",
+      "type": "电力设备",
+      "desc": "一种用于电力系统无功补偿的高压电抗器"
+    },
+    {
+      "name": "额定总损耗",
+      "type": "技术参数",
+      "desc": "设备在额定运行条件下产生的总损耗功率"
+    },
+    {
+      "name": "75℃",
+      "type": "环境条件",
+      "desc": "设备运行时的环境温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定容量100Mvar的750kV油浸式并联电抗器的额定总损耗(75℃)：≤230kW",
+      "type": "强制",
+      "subject": "750kV油浸式并联电抗器",
+      "action": "运行",
+      "condition": "额定容量100Mvar, 75℃环境温度",
+      "constraint": "额定总损耗≤230kW",
+      "related_entities": [
+        "额定容量",
+        "750kV油浸式并联电抗器",
+        "额定总损耗"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定容量",
+      "target": "750kV油浸式并联电抗器",
+      "type": "属于"
+    },
+    {
+      "source": "额定总损耗",
+      "target": "750kV油浸式并联电抗器",
+      "type": "属于"
+    },
+    {
+      "source": "750kV油浸式并联电抗器",
+      "target": "额定总损耗",
+      "type": "产生"
+    },
+    {
+      "source": "750kV油浸式并联电抗器",
+      "target": "额定容量",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 791,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a83e1465bac3ca0d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\791_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

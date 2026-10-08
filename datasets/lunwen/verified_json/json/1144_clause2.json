@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "独立建筑",
+      "type": "建筑物",
+      "desc": "不与其他建筑物相连的建筑"
+    },
+    {
+      "name": "配电室",
+      "type": "电气设备",
+      "desc": "用于分配电能的房间或建筑物"
+    },
+    {
+      "name": "单台油浸变压器",
+      "type": "电气设备",
+      "desc": "使用油作为绝缘介质的变压器"
+    },
+    {
+      "name": "变压器容量",
+      "type": "参数",
+      "desc": "变压器一次侧额定电压下二次侧额定功率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "独立建筑配电室内的单台油浸变压器容量不宜大于800kVA",
+      "type": "强制",
+      "subject": "独立建筑配电室",
+      "action": "安装单台油浸变压器",
+      "condition": "独立建筑内",
+      "constraint": "单台油浸变压器容量≤800kVA",
+      "related_entities": [
+        "独立建筑",
+        "配电室",
+        "单台油浸变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "独立建筑",
+      "target": "配电室",
+      "type": "包含"
+    },
+    {
+      "source": "配电室",
+      "target": "单台油浸变压器",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1144,
+      "source_row_id": "1144",
+      "clause_index": 2,
+      "source_text": "独立建筑配电室内的单台油浸变压器容量不宜大于800kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.038949+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

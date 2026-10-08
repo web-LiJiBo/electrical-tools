@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "110kV整台变压器应能承受储油柜的油面上施加0.03-0.05MPa静压力进行密封试验，持续时间24h，应无渗漏和损伤。220kV，整台变压器应能承受储油柜的油面上施加0.05MPa静压力进行密封试验，持续时间12h，应无渗漏和损伤。330kV整台变压器应能承受储油柜的油面上施加0.03MPa静压力进行密封试验，持续时间12h，应无渗漏和损伤。500kV整台变压器应能承受储油柜的油面上施加0.03-0.05MPa静压力进行密封试验，持续时间24h，应无渗漏和损伤。750kV整台变压器应能承受储油柜的油面上施加0.03MPa静压力进行密封试验，持续时间24h，应无渗漏和损伤",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1097,
+      "source_row_id": "1097",
+      "clause_index": 2,
+      "source_text": "110kV整台变压器应能承受储油柜的油面上施加0.03-0.05MPa静压力进行密封试验，持续时间24h，应无渗漏和损伤。220kV，整台变压器应能承受储油柜的油面上施加0.05MPa静压力进行密封试验，持续时间12h，应无渗漏和损伤。330kV整台变压器应能承受储油柜的油面上施加0.03MPa静压力进行密封试验，持续时间12h，应无渗漏和损伤。500kV整台变压器应能承受储油柜的油面上施加0.03-0.05MPa静压力进行密封试验，持续时间24h，应无渗漏和损伤。750kV整台变压器应能承受储油柜的油面上施加0.03MPa静压力进行密封试验，持续时间24h，应无渗漏和损伤"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.984952+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

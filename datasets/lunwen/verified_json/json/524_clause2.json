@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "管道",
+      "type": "电力设备",
+      "desc": "电力系统中用于传输流体介质的管状装置"
+    },
+    {
+      "name": "气体继电器",
+      "type": "电力设备",
+      "desc": "变压器等电力设备中用于检测内部故障并发出信号的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "通向气体继电器的管道应有1.5%的坡度",
+      "type": "强制",
+      "subject": "管道",
+      "action": "设置坡度",
+      "condition": "通向气体继电器",
+      "constraint": "1.5%",
+      "related_entities": [
+        "管道",
+        "气体继电器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "管道",
+      "target": "气体继电器",
+      "type": "连接"
+    },
+    {
+      "source": "气体继电器",
+      "target": "管道",
+      "type": "接收"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 524,
+      "source_row_id": "524",
+      "clause_index": 2,
+      "source_text": "通向气体继电器的管道应有1.5%的坡度"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.325482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

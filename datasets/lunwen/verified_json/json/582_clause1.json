@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "a)红外热像设备应图像清晰、稳定，工作可靠。具备超设定值报警以及必要的图像分析功能、热像储存、数据传输功能；具备单点或多点温度显示功能；显示空间分辨率应能满足绝热缺陷测温要求，或具备按照检测模式进行选择能力；b)红外热像设备的检测方法、判断依据及绝热效果评价应按DL/T907执行；",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 582,
+      "source_row_id": "582",
+      "clause_index": 1,
+      "source_text": "a)红外热像设备应图像清晰、稳定，工作可靠。具备超设定值报警以及必要的图像分析功能、热像储存、数据传输功能；具备单点或多点温度显示功能；显示空间分辨率应能满足绝热缺陷测温要求，或具备按照检测模式进行选择能力；b)红外热像设备的检测方法、判断依据及绝热效果评价应按DL/T907执行；"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.387487+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

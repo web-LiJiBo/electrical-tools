@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "电压分布试验",
+      "type": "试验项目",
+      "desc": "电力设备的电压分布特性测试"
+    },
+    {
+      "name": "抗震试验",
+      "type": "试验项目",
+      "desc": "电力设备在地震作用下的性能测试"
+    },
+    {
+      "name": "绝缘底座绝缘电阻试验",
+      "type": "试验项目",
+      "desc": "电力设备绝缘底座的绝缘电阻测量"
+    },
+    {
+      "name": "电力设备",
+      "type": "电力设备",
+      "desc": "电力系统中使用的各种电气设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "不包括电压分布试验、抗震试验和绝缘底座绝缘电阻试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "试验",
+      "condition": "电力设备出厂前或定期检修时",
+      "constraint": "试验项目",
+      "related_entities": [
+        "电压分布试验",
+        "抗震试验",
+        "绝缘底座绝缘电阻试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电力设备",
+      "target": "电压分布试验",
+      "type": "不包括"
+    },
+    {
+      "source": "电力设备",
+      "target": "抗震试验",
+      "type": "不包括"
+    },
+    {
+      "source": "电力设备",
+      "target": "绝缘底座绝缘电阻试验",
+      "type": "不包括"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2624,
+      "source_row_id": "2633",
+      "clause_index": 1,
+      "source_text": "不包括电压分布试验、抗震试验和绝缘底座绝缘电阻试验。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9531,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.790315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

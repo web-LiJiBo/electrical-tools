@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "人工接地极",
+      "type": "电力设备",
+      "desc": "用于人工制造的接地装置"
+    },
+    {
+      "name": "圆钢",
+      "type": "材料",
+      "desc": "圆形截面的钢材"
+    },
+    {
+      "name": "扁钢",
+      "type": "材料",
+      "desc": "方形或矩形截面的钢材"
+    },
+    {
+      "name": "角钢",
+      "type": "材料",
+      "desc": "具有两个直角边的钢材"
+    },
+    {
+      "name": "钢管",
+      "type": "材料",
+      "desc": "圆管状的钢材"
+    },
+    {
+      "name": "铜",
+      "type": "材料",
+      "desc": "紫红色金属元素"
+    },
+    {
+      "name": "铜覆钢",
+      "type": "材料",
+      "desc": "表面镀铜的钢材"
+    },
+    {
+      "name": "铜绞线",
+      "type": "材料",
+      "desc": "多股铜线绞合而成的导线"
+    },
+    {
+      "name": "铜覆钢绞线",
+      "type": "材料",
+      "desc": "表面镀铜的多股钢绞线"
+    },
+    {
+      "name": "铜覆圆钢",
+      "type": "材料",
+      "desc": "表面镀铜的圆钢"
+    },
+    {
+      "name": "铜覆扁钢",
+      "type": "材料",
+      "desc": "表面镀铜的扁钢"
+    }
+  ],
+  "rules": [
+    {
+      "content": "人工接地极，水平敷设时可采用圆钢、扁钢；垂直敷设时可采用角钢或钢管。",
+      "type": "强制",
+      "subject": "人工接地极",
+      "action": "敷设方式选择",
+      "condition": "无特殊要求",
+      "constraint": "水平敷设时可采用圆钢、扁钢；垂直敷设时可采用角钢或钢管。",
+      "related_entities": [
+        "人工接地极",
+        "圆钢",
+        "扁钢",
+        "角钢",
+        "钢管"
+      ]
+    },
+    {
+      "content": "腐蚀较重地区采用铜或铜覆钢材时，水平敷设的人工接地极可采用圆钢、扁钢、铜绞线、铜覆钢绞线、铜覆圆钢或铜覆扁钢材，垂直敷设的人工接地极可采用圆钢或铜覆钢等。",
+      "type": "强制",
+      "subject": "人工接地极",
+      "action": "敷设方式选择",
+      "condition": "腐蚀较重地区",
+      "constraint": "水平敷设时可采用圆钢、扁钢、铜绞线、铜覆钢绞线、铜覆圆钢或铜覆扁钢材；垂直敷设时可采用圆钢或铜覆钢等。",
+      "related_entities": [
+        "人工接地极",
+        "圆钢",
+        "扁钢",
+        "铜绞线",
+        "铜覆钢绞线",
+        "铜覆圆钢",
+        "铜覆扁钢",
+        "铜",
+        "铜覆钢"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "人工接地极",
+      "target": "圆钢",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "扁钢",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "角钢",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "钢管",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "铜",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "铜绞线",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "铜覆钢绞线",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "铜覆圆钢",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "铜覆扁钢",
+      "type": "使用材料"
+    },
+    {
+      "source": "人工接地极",
+      "target": "铜覆钢",
+      "type": "使用材料"
+    }
+  ],
+  "metadata": {
+    "pair_id": 316,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6977602e75fa8d82",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\316_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

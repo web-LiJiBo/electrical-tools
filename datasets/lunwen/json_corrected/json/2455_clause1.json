@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设电缆的沟道"
+    },
+    {
+      "name": "纵向排水坡度",
+      "type": "技术参数",
+      "desc": "电缆沟纵向排水的倾斜角度"
+    },
+    {
+      "name": "集水井",
+      "type": "电力设施",
+      "desc": "电缆沟内用于汇集并排出积水的井状设施"
+    },
+    {
+      "name": "泄水系统",
+      "type": "电力设施",
+      "desc": "电缆沟内用于排出积水的排水系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆沟的纵向排水坡度，不得小于0.5%",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置纵向排水坡度",
+      "condition": "电缆沟敷设电缆",
+      "constraint": "纵向排水坡度≥0.5%",
+      "related_entities": [
+        "电缆沟",
+        "纵向排水坡度"
+      ]
+    },
+    {
+      "content": "沿排水方向适当距离宜设置集水井及其泄水系统",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置集水井及泄水系统",
+      "condition": "电缆沟纵向排水坡度≥0.5%",
+      "constraint": "集水井间距≤100m，泄水系统满足排水需求",
+      "related_entities": [
+        "电缆沟",
+        "集水井",
+        "泄水系统"
+      ]
+    },
+    {
+      "content": "必要时应实施机械排水",
+      "type": "建议",
+      "subject": "电缆沟",
+      "action": "实施机械排水",
+      "condition": "电缆沟纵向排水坡度≥0.5%，且集水井及泄水系统不能满足排水需求",
+      "constraint": "机械排水设备满足排水需求",
+      "related_entities": [
+        "电缆沟",
+        "集水井",
+        "泄水系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "纵向排水坡度",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "集水井",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "泄水系统",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2455,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "afdfd01ca7d983b6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2455_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

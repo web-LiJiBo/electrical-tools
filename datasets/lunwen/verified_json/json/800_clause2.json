@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "风速",
+      "type": "气象参数",
+      "desc": "风速是指空气相对于地面的运动速度"
+    },
+    {
+      "name": "31m/s",
+      "type": "数值约束",
+      "desc": "风速的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "风速应不超过31m/s",
+      "type": "强制",
+      "subject": "风速",
+      "action": "控制在31m/s以内",
+      "condition": "风速超过31m/s",
+      "constraint": "风速≤31m/s",
+      "related_entities": [
+        "风速"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "风速",
+      "target": "31m/s",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 800,
+      "source_row_id": "800",
+      "clause_index": 2,
+      "source_text": "风速应不超过31m/s"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.655083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

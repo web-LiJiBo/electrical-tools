@@ -1,0 +1,63 @@
+{
+  "entities": [
+    {
+      "name": "损耗实测值",
+      "type": "电力参数",
+      "desc": "实际测量得到的电力损耗值"
+    },
+    {
+      "name": "损耗规定值",
+      "type": "电力参数",
+      "desc": "根据标准或设计要求规定的电力损耗值"
+    },
+    {
+      "name": "损耗允许偏差",
+      "type": "电力参数",
+      "desc": "损耗实测值与规定值之间的允许误差范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "损耗实测值与规定值的允许偏差不应超过+10%",
+      "type": "强制",
+      "subject": "电力系统运行维护人员",
+      "action": "进行电力损耗测量并记录结果",
+      "condition": "电力系统运行过程中",
+      "constraint": "+10%",
+      "related_entities": [
+        "损耗实测值",
+        "损耗规定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "损耗实测值",
+      "target": "损耗规定值",
+      "type": "对比"
+    },
+    {
+      "source": "损耗实测值",
+      "target": "损耗允许偏差",
+      "type": "计算依据"
+    },
+    {
+      "source": "损耗规定值",
+      "target": "损耗允许偏差",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1418,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "085bb79284069d19",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1418_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

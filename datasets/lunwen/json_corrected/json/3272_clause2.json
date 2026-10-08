@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "永冻土",
+      "type": "地理环境",
+      "desc": "地下持续多年冻结的土层"
+    },
+    {
+      "name": "接地电阻",
+      "type": "电气参数",
+      "desc": "接地装置对地电压与通过接地体流入大地电流之比"
+    },
+    {
+      "name": "深钻式接地极",
+      "type": "接地技术",
+      "desc": "将接地极打入地下一定深度的接地方式"
+    },
+    {
+      "name": "井管",
+      "type": "接地材料",
+      "desc": "利用地下水井管作为接地极的材料"
+    },
+    {
+      "name": "深垂直接地极",
+      "type": "接地技术",
+      "desc": "垂直打入地下一定深度的接地极"
+    }
+  ],
+  "rules": [
+    {
+      "content": "敷设深钻式接地极",
+      "type": "强制",
+      "subject": "接地装置设计者",
+      "action": "设计接地装置",
+      "condition": "在永冻土地区",
+      "constraint": "接地极深度应保证深入冻土层下面的土壤至少0.5m",
+      "related_entities": [
+        "永冻土",
+        "接地电阻",
+        "深钻式接地极"
+      ]
+    },
+    {
+      "content": "充分利用井管或其他深埋地下的金属构件作接地极",
+      "type": "强制",
+      "subject": "接地装置设计者",
+      "action": "设计接地装置",
+      "condition": "在永冻土地区",
+      "constraint": "无特殊要求",
+      "related_entities": [
+        "永冻土",
+        "接地电阻",
+        "井管"
+      ]
+    },
+    {
+      "content": "敷设深垂直接地极",
+      "type": "强制",
+      "subject": "接地装置设计者",
+      "action": "设计接地装置",
+      "condition": "在永冻土地区",
+      "constraint": "接地极深度应保证深入冻土层下面的土壤至少0.5m",
+      "related_entities": [
+        "永冻土",
+        "接地电阻",
+        "深垂直接地极"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "永冻土",
+      "target": "接地电阻",
+      "type": "影响因素"
+    },
+    {
+      "source": "永冻土",
+      "target": "深钻式接地极",
+      "type": "应用对象"
+    },
+    {
+      "source": "永冻土",
+      "target": "井管",
+      "type": "应用对象"
+    },
+    {
+      "source": "永冻土",
+      "target": "深垂直接地极",
+      "type": "应用对象"
+    },
+    {
+      "source": "接地电阻",
+      "target": "深钻式接地极",
+      "type": "控制对象"
+    },
+    {
+      "source": "接地电阻",
+      "target": "井管",
+      "type": "控制对象"
+    },
+    {
+      "source": "接地电阻",
+      "target": "深垂直接地极",
+      "type": "控制对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3272,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6d508510bab78d07",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3272_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

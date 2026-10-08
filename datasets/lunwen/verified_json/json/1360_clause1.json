@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "金属套管",
+      "type": "电力设备",
+      "desc": "用于保护电缆的金属管状物"
+    },
+    {
+      "name": "电缆管外径",
+      "type": "电力设备参数",
+      "desc": "电缆管的外径尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "金属套管长度为1.5D～3D电缆管外径",
+      "type": "强制",
+      "subject": "金属套管",
+      "action": "确定长度范围",
+      "condition": "适用于所有电力工程中的电缆敷设",
+      "constraint": "金属套管长度应为电缆管外径的1.5倍至3倍",
+      "related_entities": [
+        "金属套管",
+        "电缆管外径"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "金属套管",
+      "target": "电缆管外径",
+      "type": "保护"
+    },
+    {
+      "source": "电缆管外径",
+      "target": "金属套管",
+      "type": "被保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1360,
+      "source_row_id": "1360",
+      "clause_index": 1,
+      "source_text": "金属套管长度为1.5D～3D电缆管外径"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.285548+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

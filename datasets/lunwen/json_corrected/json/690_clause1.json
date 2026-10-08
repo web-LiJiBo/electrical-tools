@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "滑轮轴承",
+      "type": "设备",
+      "desc": "用于支撑滑轮的机械部件"
+    },
+    {
+      "name": "滚动轴承",
+      "type": "设备",
+      "desc": "一种滑动摩擦转化为滚动摩擦的轴承"
+    },
+    {
+      "name": "国家标准",
+      "type": "标准",
+      "desc": "国家层面制定的技术规范"
+    },
+    {
+      "name": "静载安全系数",
+      "type": "参数",
+      "desc": "衡量轴承承载能力的重要指标"
+    },
+    {
+      "name": "侧向间隙",
+      "type": "参数",
+      "desc": "滑轮轴承两侧面之间的距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "滑轮轴承应选用滚动轴承，轴承选用按国家标准进行。",
+      "type": "强制",
+      "subject": "滑轮轴承",
+      "action": "选用",
+      "condition": "滑轮轴承选型",
+      "constraint": "滚动轴承，按国家标准",
+      "related_entities": [
+        "滑轮轴承",
+        "滚动轴承",
+        "国家标准"
+      ]
+    },
+    {
+      "content": "滚动轴承静载安全系数应不小于1.5。",
+      "type": "强制",
+      "subject": "滚动轴承",
+      "action": "使用",
+      "condition": "滚动轴承选型后",
+      "constraint": "静载安全系数≥1.5",
+      "related_entities": [
+        "滚动轴承",
+        "静载安全系数"
+      ]
+    },
+    {
+      "content": "在多轮滑车中两滑轮间侧向间隙不大于4mm。",
+      "type": "强制",
+      "subject": "滑轮轴承",
+      "action": "安装",
+      "condition": "多轮滑车中",
+      "constraint": "侧向间隙≤4mm",
+      "related_entities": [
+        "滑轮轴承",
+        "侧向间隙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "滑轮轴承",
+      "target": "滚动轴承",
+      "type": "选用"
+    },
+    {
+      "source": "滚动轴承",
+      "target": "国家标准",
+      "type": "遵循"
+    },
+    {
+      "source": "滚动轴承",
+      "target": "静载安全系数",
+      "type": "满足"
+    },
+    {
+      "source": "滑轮轴承",
+      "target": "侧向间隙",
+      "type": "控制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 690,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "311c5c0bd7d32c69",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\690_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

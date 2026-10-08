@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "六氟化硫气体",
+      "type": "电力设备",
+      "desc": "SF6气体"
+    },
+    {
+      "name": "含水量",
+      "type": "物理量",
+      "desc": "六氟化硫气体中的水分含量"
+    },
+    {
+      "name": "20℃",
+      "type": "温度",
+      "desc": "测量温度"
+    },
+    {
+      "name": "体积分数",
+      "type": "浓度单位",
+      "desc": "气体中水分的体积比例"
+    },
+    {
+      "name": "GB7674",
+      "type": "标准",
+      "desc": "额定电压72.5kV及以上气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "GB/T8905",
+      "type": "标准",
+      "desc": "六氟化硫电气设备中气体管理和检测导则"
+    },
+    {
+      "name": "电弧分解",
+      "type": "操作",
+      "desc": "产生电弧的电气操作"
+    },
+    {
+      "name": "隔室",
+      "type": "电力设备部件",
+      "desc": "封闭式组合电器内部的独立空间"
+    },
+    {
+      "name": "μL/L",
+      "type": "浓度单位",
+      "desc": "每升气体中的微升水含量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测量六氟化硫气体含水量（20C的体积分数），应按现行国家标准《额定电压72.5kV及以上气体绝缘金属封闭开关设备》GB7674和《六氟化硫电气设备中气体管理和检测导则》GB/T8905的有关规定执行",
+      "type": "强制",
+      "subject": "六氟化硫气体含水量测量",
+      "action": "测量",
+      "condition": "在封闭式组合电器充气24h后进行",
+      "constraint": "按GB7674和GB/T8905的规定执行",
+      "related_entities": [
+        "六氟化硫气体",
+        "含水量",
+        "20℃",
+        "体积分数",
+        "GB7674",
+        "GB/T8905"
+      ]
+    },
+    {
+      "content": "有电弧分解的隔室,应小于150μL/L",
+      "type": "强制",
+      "subject": "有电弧分解的隔室",
+      "action": "控制含水量",
+      "condition": "在封闭式组合电器充气24h后进行",
+      "constraint": "含水量小于150μL/L",
+      "related_entities": [
+        "六氟化硫气体",
+        "含水量",
+        "电弧分解",
+        "隔室",
+        "μL/L"
+      ]
+    },
+    {
+      "content": "无电弧分解的隔室，应小于250μL/L",
+      "type": "强制",
+      "subject": "无电弧分解的隔室",
+      "action": "控制含水量",
+      "condition": "在封闭式组合电器充气24h后进行",
+      "constraint": "含水量小于250μL/L",
+      "related_entities": [
+        "六氟化硫气体",
+        "含水量",
+        "电弧分解",
+        "隔室",
+        "μL/L"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "六氟化硫气体",
+      "target": "含水量",
+      "type": "包含"
+    },
+    {
+      "source": "GB7674",
+      "target": "六氟化硫气体",
+      "type": "规定"
+    },
+    {
+      "source": "GB/T8905",
+      "target": "六氟化硫气体",
+      "type": "规定"
+    },
+    {
+      "source": "电弧分解",
+      "target": "隔室",
+      "type": "发生于"
+    },
+    {
+      "source": "含水量",
+      "target": "隔室",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2784,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "74919ec3e29c03a3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2784_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

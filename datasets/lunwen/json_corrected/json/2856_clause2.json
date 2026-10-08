@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "name": "离子罐",
+      "type": "设备",
+      "desc": "用于电力系统中水处理或化学除盐的离子交换设备"
+    },
+    {
+      "name": "树脂",
+      "type": "材料",
+      "desc": "离子罐内填充的离子交换介质"
+    },
+    {
+      "name": "运行",
+      "type": "操作",
+      "desc": "离子罐的工作状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每年更换前面一个离子罐的树脂运行24小时后将新更换的离子罐切换至后面运行",
+      "type": "强制",
+      "subject": "离子罐",
+      "action": "树脂更换及切换运行",
+      "condition": "每年",
+      "constraint": "前面一个离子罐的树脂运行24小时后",
+      "related_entities": [
+        "离子罐",
+        "树脂"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "离子罐",
+      "target": "树脂",
+      "type": "填充"
+    },
+    {
+      "source": "树脂",
+      "target": "离子罐",
+      "type": "填充物"
+    },
+    {
+      "source": "离子罐",
+      "target": "运行",
+      "type": "工作状态"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2856,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f65ddbcdab75dc20",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2856_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

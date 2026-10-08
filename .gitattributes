@@ -1,0 +1,2 @@
+models/embedding/**/pytorch_model.bin filter=lfs diff=lfs merge=lfs -text
+models/embedding/**/model.safetensors filter=lfs diff=lfs merge=lfs -text

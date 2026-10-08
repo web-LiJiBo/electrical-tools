@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "角钢",
+      "type": "电力设备",
+      "desc": "电力系统中用于支撑导线的金属构件"
+    },
+    {
+      "name": "弯曲度",
+      "type": "物理量",
+      "desc": "角钢弯曲的程度，以长度的百分比表示"
+    },
+    {
+      "name": "长度",
+      "type": "物理量",
+      "desc": "角钢的总长度"
+    },
+    {
+      "name": "表7.1.11",
+      "type": "技术标准",
+      "desc": "电力行业关于角钢变形限度的技术规定"
+    },
+    {
+      "name": "冷矫正法",
+      "type": "工艺方法",
+      "desc": "通过机械力使角钢恢复原状的矫正方法"
+    },
+    {
+      "name": "裂纹",
+      "type": "缺陷",
+      "desc": "材料表面或内部的不连续性"
+    },
+    {
+      "name": "锌层",
+      "type": "涂层",
+      "desc": "角钢表面的防腐蚀镀层"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运至塔位的个别角钢，当弯曲度超过长度的2‰，但未超过表7.1.11的变形限度时，可采用冷矫正法矫正，但矫正后的角钢不得出现裂纹和锌层脱落",
+      "type": "强制",
+      "subject": "运至塔位的个别角钢",
+      "action": "冷矫正法矫正",
+      "condition": "弯曲度超过长度的2‰，但未超过表7.1.11的变形限度",
+      "constraint": "矫正后的角钢不得出现裂纹和锌层脱落",
+      "related_entities": [
+        "角钢",
+        "弯曲度",
+        "长度",
+        "表7.1.11",
+        "冷矫正法",
+        "裂纹",
+        "锌层"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "角钢",
+      "target": "弯曲度",
+      "type": "具有"
+    },
+    {
+      "source": "角钢",
+      "target": "长度",
+      "type": "具有"
+    },
+    {
+      "source": "角钢",
+      "target": "冷矫正法",
+      "type": "矫正方式"
+    },
+    {
+      "source": "角钢",
+      "target": "裂纹",
+      "type": "可能产生"
+    },
+    {
+      "source": "角钢",
+      "target": "锌层",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2004,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f011cdaebae22a36",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2004_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

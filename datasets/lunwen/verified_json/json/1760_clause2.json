@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "363kV设备",
+      "type": "电力设备",
+      "desc": "额定电压为363kV的电力设备"
+    },
+    {
+      "name": "550kV开关",
+      "type": "电力设备",
+      "desc": "额定电压为550kV的断路器"
+    },
+    {
+      "name": "工频耐压试验",
+      "type": "试验方法",
+      "desc": "对电力设备进行工频耐压试验的方法"
+    },
+    {
+      "name": "460kV",
+      "type": "电压等级",
+      "desc": "363kV设备的工频耐压试验值之一"
+    },
+    {
+      "name": "510kV",
+      "type": "电压等级",
+      "desc": "363kV设备的工频耐压试验值之一"
+    },
+    {
+      "name": "680kV",
+      "type": "电压等级",
+      "desc": "550kV开关的工频耐压试验值之一"
+    },
+    {
+      "name": "740kV",
+      "type": "电压等级",
+      "desc": "550kV开关的工频耐压试验值之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "363kV设备的工频耐压试验值为460kV、510kV",
+      "type": "强制",
+      "subject": "363kV设备",
+      "action": "进行工频耐压试验",
+      "condition": "在出厂或交接验收时",
+      "constraint": "试验电压为460kV或510kV",
+      "related_entities": [
+        "363kV设备",
+        "工频耐压试验"
+      ]
+    },
+    {
+      "content": "550kV开关的工频耐压试验值为680kV、740kV",
+      "type": "强制",
+      "subject": "550kV开关",
+      "action": "进行工频耐压试验",
+      "condition": "在出厂或交接验收时",
+      "constraint": "试验电压为680kV或740kV",
+      "related_entities": [
+        "550kV开关",
+        "工频耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "363kV设备",
+      "target": "工频耐压试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "550kV开关",
+      "target": "工频耐压试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "460kV",
+      "target": "工频耐压试验",
+      "type": "试验电压"
+    },
+    {
+      "source": "510kV",
+      "target": "工频耐压试验",
+      "type": "试验电压"
+    },
+    {
+      "source": "680kV",
+      "target": "工频耐压试验",
+      "type": "试验电压"
+    },
+    {
+      "source": "740kV",
+      "target": "工频耐压试验",
+      "type": "试验电压"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1760,
+      "source_row_id": "1760",
+      "clause_index": 2,
+      "source_text": "363kV设备的工频耐压试验值为460kV、510kV，550kV开关的工频耐压试验值为680kV、740kV"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.737214+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

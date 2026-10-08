@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "城镇公共区域开挖式隧道",
+      "type": "电力设施",
+      "desc": "城镇公共区域开挖式隧道"
+    },
+    {
+      "name": "城镇公共区域非开挖式隧道",
+      "type": "电力设施",
+      "desc": "城镇公共区域非开挖式隧道"
+    },
+    {
+      "name": "人员出入（检修）口",
+      "type": "电力设施",
+      "desc": "电力设施检修或人员进出的通道"
+    },
+    {
+      "name": "隧道埋深",
+      "type": "电力设施参数",
+      "desc": "隧道在地下的深度"
+    },
+    {
+      "name": "电缆敷设",
+      "type": "电力设施参数",
+      "desc": "电缆铺设方式及位置"
+    },
+    {
+      "name": "通风",
+      "type": "电力设施参数",
+      "desc": "隧道内的通风系统"
+    },
+    {
+      "name": "消防",
+      "type": "电力设施参数",
+      "desc": "隧道内的消防系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在城镇公共区域开挖式隧道的人员出入（检修）口间距不宜大于200m",
+      "type": "强制",
+      "subject": "城镇公共区域开挖式隧道",
+      "action": "设置人员出入（检修）口间距",
+      "condition": "城镇公共区域开挖式隧道",
+      "constraint": "间距不宜大于200m",
+      "related_entities": [
+        "城镇公共区域开挖式隧道",
+        "人员出入（检修）口"
+      ]
+    },
+    {
+      "content": "非开挖式隧道的人员出入（检修）口间距可适当加大",
+      "type": "强制",
+      "subject": "城镇公共区域非开挖式隧道",
+      "action": "设置人员出入（检修）口间距",
+      "condition": "城镇公共区域非开挖式隧道",
+      "constraint": "间距可适当加大",
+      "related_entities": [
+        "城镇公共区域非开挖式隧道",
+        "人员出入（检修）口"
+      ]
+    },
+    {
+      "content": "且宜根据隧道埋深和结合电缆敷设、通风、消防等综合确定",
+      "type": "建议",
+      "subject": "城镇公共区域非开挖式隧道",
+      "action": "设置人员出入（检修）口间距",
+      "condition": "城镇公共区域非开挖式隧道",
+      "constraint": "间距应结合隧道埋深、电缆敷设、通风、消防等因素综合确定",
+      "related_entities": [
+        "城镇公共区域非开挖式隧道",
+        "隧道埋深",
+        "电缆敷设",
+        "通风",
+        "消防",
+        "人员出入（检修）口"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "城镇公共区域开挖式隧道",
+      "target": "人员出入（检修）口",
+      "type": "包含"
+    },
+    {
+      "source": "城镇公共区域非开挖式隧道",
+      "target": "人员出入（检修）口",
+      "type": "包含"
+    },
+    {
+      "source": "城镇公共区域非开挖式隧道",
+      "target": "隧道埋深",
+      "type": "包含"
+    },
+    {
+      "source": "城镇公共区域非开挖式隧道",
+      "target": "电缆敷设",
+      "type": "包含"
+    },
+    {
+      "source": "城镇公共区域非开挖式隧道",
+      "target": "通风",
+      "type": "包含"
+    },
+    {
+      "source": "城镇公共区域非开挖式隧道",
+      "target": "消防",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 652,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bce854679653b83c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\652_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

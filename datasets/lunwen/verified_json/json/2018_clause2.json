@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "基准周期",
+      "type": "时间周期",
+      "desc": "规定设备或系统检修、试验的周期"
+    },
+    {
+      "name": "运行情况",
+      "type": "状态",
+      "desc": "设备或系统的运行状态"
+    },
+    {
+      "name": "雷击故障",
+      "type": "故障类型",
+      "desc": "由雷电引起的电力系统故障"
+    },
+    {
+      "name": "杆塔",
+      "type": "电力设施",
+      "desc": "架空输电线路的支撑结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "基准周期为5年，根据运行情况可调整时间",
+      "type": "强制",
+      "subject": "电力系统维护部门",
+      "action": "制定并执行设备检修计划",
+      "condition": "电力系统设备定期检修",
+      "constraint": "基准周期5年，可根据运行情况进行调整",
+      "related_entities": [
+        "基准周期",
+        "运行情况"
+      ]
+    },
+    {
+      "content": "每次雷击故障后的杆塔应进行测试",
+      "type": "强制",
+      "subject": "电力系统维护部门",
+      "action": "对杆塔进行检测",
+      "condition": "发生雷击故障",
+      "constraint": "雷击故障后立即进行",
+      "related_entities": [
+        "雷击故障",
+        "杆塔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "基准周期",
+      "target": "电力系统维护部门",
+      "type": "约束对象"
+    },
+    {
+      "source": "运行情况",
+      "target": "电力系统维护部门",
+      "type": "约束对象"
+    },
+    {
+      "source": "雷击故障",
+      "target": "电力系统维护部门",
+      "type": "约束对象"
+    },
+    {
+      "source": "杆塔",
+      "target": "电力系统维护部门",
+      "type": "维护对象"
+    },
+    {
+      "source": "电力系统维护部门",
+      "target": "基准周期",
+      "type": "执行者"
+    },
+    {
+      "source": "电力系统维护部门",
+      "target": "运行情况",
+      "type": "执行者"
+    },
+    {
+      "source": "电力系统维护部门",
+      "target": "雷击故障",
+      "type": "执行者"
+    },
+    {
+      "source": "电力系统维护部门",
+      "target": "杆塔",
+      "type": "执行者"
+    },
+    {
+      "source": "电力系统维护部门",
+      "target": "电力系统维护部门",
+      "type": "管理关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2018,
+      "source_row_id": "2018",
+      "clause_index": 2,
+      "source_text": "基准周期为5年，根据运行情况可调整时间，每次雷击故障后的杆塔应进行测试"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.031968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

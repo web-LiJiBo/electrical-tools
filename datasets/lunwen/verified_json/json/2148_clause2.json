@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "新油介损",
+      "type": "电气参数",
+      "desc": "变压器新油的介质损耗因数"
+    },
+    {
+      "name": "330kV及以下",
+      "type": "电压等级",
+      "desc": "330kV及以下电压等级的电力设备"
+    },
+    {
+      "name": "500kV及以上",
+      "type": "电压等级",
+      "desc": "500kV及以上电压等级的电力设备"
+    },
+    {
+      "name": "1%",
+      "type": "数值约束",
+      "desc": "330kV及以下电压等级新油介损的最大值"
+    },
+    {
+      "name": "0.5%",
+      "type": "数值约束",
+      "desc": "500kV及以上电压等级新油介损的最大值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对新油介损的要求：330kV及以下，不大于1%；500kV及以上，不大于0.5%",
+      "type": "强制",
+      "subject": "电力设备制造与检修单位",
+      "action": "控制新油介损值",
+      "condition": "电力设备制造与检修过程中",
+      "constraint": "新油介损值≤1%（330kV及以下）；新油介损值≤0.5%（500kV及以上）",
+      "related_entities": [
+        "新油介损",
+        "330kV及以下",
+        "500kV及以上"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "新油介损",
+      "target": "330kV及以下",
+      "type": "适用于"
+    },
+    {
+      "source": "新油介损",
+      "target": "500kV及以上",
+      "type": "适用于"
+    },
+    {
+      "source": "新油介损",
+      "target": "电力设备制造与检修单位",
+      "type": "约束对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2148,
+      "source_row_id": "2148",
+      "clause_index": 2,
+      "source_text": "对新油介损的要求：330kV及以下，不大于1%；500kV及以上，不大于0.5%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.200547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

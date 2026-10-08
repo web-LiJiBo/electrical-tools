@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "配电线路",
+      "type": "电力设施",
+      "desc": "电力系统中用于传输电能的线路"
+    },
+    {
+      "name": "导线",
+      "type": "电力设备",
+      "desc": "电力系统中用于传输电能的导体"
+    },
+    {
+      "name": "拉线",
+      "type": "电力设备",
+      "desc": "电力系统中用于稳定杆塔的拉紧装置"
+    },
+    {
+      "name": "电杆",
+      "type": "电力设施",
+      "desc": "电力系统中用于支撑导线的杆塔"
+    },
+    {
+      "name": "构架",
+      "type": "电力设施",
+      "desc": "电力系统中用于支撑导线的结构框架"
+    },
+    {
+      "name": "净空距离",
+      "type": "技术参数",
+      "desc": "导线与其他物体之间的最小安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电线路的导线与拉线、电杆或构架间的净空距离，不应小于下列数值：1kV以下为0.1m",
+      "type": "强制",
+      "subject": "配电线路",
+      "action": "安装维护",
+      "condition": "1kV及以下电压等级的配电线路",
+      "constraint": "导线与拉线、电杆或构架间净空距离≥0.1m",
+      "related_entities": [
+        "配电线路",
+        "导线",
+        "拉线",
+        "电杆",
+        "构架"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电线路",
+      "target": "导线",
+      "type": "包含"
+    },
+    {
+      "source": "配电线路",
+      "target": "拉线",
+      "type": "包含"
+    },
+    {
+      "source": "配电线路",
+      "target": "电杆",
+      "type": "包含"
+    },
+    {
+      "source": "配电线路",
+      "target": "构架",
+      "type": "包含"
+    },
+    {
+      "source": "导线",
+      "target": "净空距离",
+      "type": "满足"
+    },
+    {
+      "source": "拉线",
+      "target": "净空距离",
+      "type": "满足"
+    },
+    {
+      "source": "电杆",
+      "target": "净空距离",
+      "type": "满足"
+    },
+    {
+      "source": "构架",
+      "target": "净空距离",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1398,
+      "source_row_id": "1398",
+      "clause_index": 1,
+      "source_text": "配电线路的导线与拉线、电杆或构架间的净空距离，不应小于下列数值：1kV以下为0.1m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.335551+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

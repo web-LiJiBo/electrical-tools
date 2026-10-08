@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "紧线弧垂",
+      "type": "电力施工参数",
+      "desc": "电力线路施工中导线架设后的弧垂值"
+    },
+    {
+      "name": "允许偏差",
+      "type": "电力施工参数",
+      "desc": "紧线弧垂允许的最大偏差范围"
+    },
+    {
+      "name": "通航河流",
+      "type": "地理环境",
+      "desc": "电力线路跨越的具有通航功能的河流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "紧线弧垂允许偏差不应超过±2.5%",
+      "type": "强制",
+      "subject": "紧线弧垂",
+      "action": "施工时控制弧垂偏差",
+      "condition": "一般情况下",
+      "constraint": "±2.5%",
+      "related_entities": [
+        "紧线弧垂",
+        "允许偏差"
+      ]
+    },
+    {
+      "content": "跨越通航河流的大跨越档弧垂允许偏差不应大于±1%，其正偏差不应超过1m。",
+      "type": "强制",
+      "subject": "紧线弧垂",
+      "action": "施工时控制弧垂偏差",
+      "condition": "跨越通航河流的大跨越档",
+      "constraint": "±1%且正偏差不超过1m",
+      "related_entities": [
+        "紧线弧垂",
+        "允许偏差",
+        "通航河流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "紧线弧垂",
+      "target": "允许偏差",
+      "type": "包含"
+    },
+    {
+      "source": "通航河流",
+      "target": "紧线弧垂",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2579,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "32119a6ec7afa069",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2579_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "温升试验",
+      "type": "试验项目",
+      "desc": "变压器在额定负载下的温升测试"
+    },
+    {
+      "name": "环境温度",
+      "type": "试验条件",
+      "desc": "试验时周围空气的温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器应按如下规定进行试验。除温升试验外，试验应在5℃~40℃的环境温度下进行",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "试验",
+      "condition": "除温升试验外",
+      "constraint": "环境温度5℃~40℃",
+      "related_entities": [
+        "变压器",
+        "温升试验",
+        "环境温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "温升试验",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "环境温度",
+      "type": "试验条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 534,
+      "source_row_id": "534",
+      "clause_index": 2,
+      "source_text": "变压器应按如下规定进行试验。除温升试验外，试验应在5℃~40℃的环境温度下进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.335482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

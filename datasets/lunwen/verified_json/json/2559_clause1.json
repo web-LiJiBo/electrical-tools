@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "平波电抗器",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中抑制电流波动的电抗器"
+    },
+    {
+      "name": "电感",
+      "type": "电气参数",
+      "desc": "电抗器的电感量"
+    },
+    {
+      "name": "额定值",
+      "type": "电气参数",
+      "desc": "电抗器在正常工作条件下的标称电感值"
+    },
+    {
+      "name": "频率",
+      "type": "电气参数",
+      "desc": "电抗器工作时的交流电频率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "平波电抗器在任何频率下的电感对额定值的偏差应不超过±5%的范围。",
+      "type": "强制",
+      "subject": "平波电抗器",
+      "action": "运行",
+      "condition": "在任何频率下",
+      "constraint": "电感偏差≤±5%",
+      "related_entities": [
+        "平波电抗器",
+        "电感",
+        "额定值",
+        "频率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "平波电抗器",
+      "target": "电感",
+      "type": "具有"
+    },
+    {
+      "source": "平波电抗器",
+      "target": "额定值",
+      "type": "具有"
+    },
+    {
+      "source": "平波电抗器",
+      "target": "频率",
+      "type": "工作于"
+    },
+    {
+      "source": "电感",
+      "target": "额定值",
+      "type": "相对于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2559,
+      "source_row_id": "2559",
+      "clause_index": 1,
+      "source_text": "如无其他特殊要求，平波电抗器在任何频率下的电感对额定值的偏差应不超过±5%的范围。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.715314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

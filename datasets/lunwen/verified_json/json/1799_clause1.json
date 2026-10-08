@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "330kV配电装置",
+      "type": "电力设备",
+      "desc": "330kV电压等级的配电装置"
+    },
+    {
+      "name": "一个半断路器接线",
+      "type": "接线方式",
+      "desc": "一种高压配电装置接线方式"
+    },
+    {
+      "name": "双母线接线",
+      "type": "接线方式",
+      "desc": "一种高压配电装置接线方式"
+    },
+    {
+      "name": "母线分段",
+      "type": "操作",
+      "desc": "将母线分成若干段进行独立运行的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "330kV配电装置可采用一个半断路器接线或双母线接线。",
+      "type": "强制",
+      "subject": "330kV配电装置",
+      "action": "采用接线方式",
+      "condition": "无特殊要求",
+      "constraint": "一个半断路器接线或双母线接线",
+      "related_entities": [
+        "330kV配电装置",
+        "一个半断路器接线",
+        "双母线接线"
+      ]
+    },
+    {
+      "content": "因系统潮流控制或因限制短路电流需要分片运行时，可将母线分段。",
+      "type": "强制",
+      "subject": "330kV配电装置",
+      "action": "母线分段",
+      "condition": "系统潮流控制或限制短路电流需要分片运行",
+      "constraint": "无具体约束",
+      "related_entities": [
+        "330kV配电装置",
+        "母线分段"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "330kV配电装置",
+      "target": "一个半断路器接线",
+      "type": "采用"
+    },
+    {
+      "source": "330kV配电装置",
+      "target": "双母线接线",
+      "type": "采用"
+    },
+    {
+      "source": "330kV配电装置",
+      "target": "母线分段",
+      "type": "操作"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1799,
+      "source_row_id": "1799",
+      "clause_index": 1,
+      "source_text": "330kV配电装置可采用一个半断路器接线或双母线接线。因系统潮流控制或因限制短路电流需要分片运行时，可将母线分段"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.779211+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

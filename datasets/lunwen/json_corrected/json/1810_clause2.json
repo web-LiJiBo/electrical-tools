@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "温升试验",
+      "type": "试验",
+      "desc": "电气设备在规定条件下运行时产生的温度变化测试"
+    },
+    {
+      "name": "电源电流",
+      "type": "电流",
+      "desc": "供电系统向电气设备提供的电流"
+    },
+    {
+      "name": "正弦波",
+      "type": "波形",
+      "desc": "周期性变化的电流波形，其电压或电流随时间按正弦规律变化"
+    },
+    {
+      "name": "开关设备",
+      "type": "设备",
+      "desc": "用于接通、断开电路的电气装置"
+    },
+    {
+      "name": "控制设备",
+      "type": "设备",
+      "desc": "用于控制电路状态的电气装置"
+    },
+    {
+      "name": "试验电流",
+      "type": "电流",
+      "desc": "电气设备进行温升试验时通过的电流"
+    },
+    {
+      "name": "额定电流Ir",
+      "type": "电流",
+      "desc": "电气设备正常工作时允许的最大持续电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "温升试验的电源电流应是正弦波",
+      "type": "强制",
+      "subject": "温升试验",
+      "action": "进行",
+      "condition": "温升试验",
+      "constraint": "电源电流为正弦波",
+      "related_entities": [
+        "温升试验",
+        "电源电流",
+        "正弦波"
+      ]
+    },
+    {
+      "content": "流过开关设备和控制设备的试验电流应为额定电流Ir的1.1倍",
+      "type": "强制",
+      "subject": "温升试验",
+      "action": "进行",
+      "condition": "温升试验",
+      "constraint": "试验电流=1.1×额定电流Ir",
+      "related_entities": [
+        "温升试验",
+        "试验电流",
+        "额定电流Ir",
+        "开关设备",
+        "控制设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "温升试验",
+      "target": "电源电流",
+      "type": "使用"
+    },
+    {
+      "source": "温升试验",
+      "target": "正弦波",
+      "type": "使用"
+    },
+    {
+      "source": "温升试验",
+      "target": "试验电流",
+      "type": "使用"
+    },
+    {
+      "source": "温升试验",
+      "target": "额定电流Ir",
+      "type": "使用"
+    },
+    {
+      "source": "温升试验",
+      "target": "开关设备",
+      "type": "使用"
+    },
+    {
+      "source": "温升试验",
+      "target": "控制设备",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1810,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "cce023d2dde5c731",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1810_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

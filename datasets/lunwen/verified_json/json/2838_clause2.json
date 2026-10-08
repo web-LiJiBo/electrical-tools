@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "水压",
+      "type": "物理量",
+      "desc": "对设备施加的压力"
+    },
+    {
+      "name": "运行压力",
+      "type": "物理量",
+      "desc": "设备正常运行时的压力值"
+    },
+    {
+      "name": "持续时间",
+      "type": "时间",
+      "desc": "试验持续的时间长度"
+    },
+    {
+      "name": "渗漏",
+      "type": "现象",
+      "desc": "设备在试验过程中出现的泄漏现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "施加水压至1.2倍的运行压力，持续时间30min，应无渗漏。",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行水压试验",
+      "condition": "设备安装完毕后",
+      "constraint": "水压1.2倍运行压力，持续30min",
+      "related_entities": [
+        "水压",
+        "运行压力",
+        "持续时间",
+        "渗漏"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水压",
+      "target": "运行压力",
+      "type": "倍数关系"
+    },
+    {
+      "source": "水压",
+      "target": "渗漏",
+      "type": "影响关系"
+    },
+    {
+      "source": "持续时间",
+      "target": "渗漏",
+      "type": "影响关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2829,
+      "source_row_id": "2838",
+      "clause_index": 2,
+      "source_text": "施加水压至1.2倍的运行压力，持续时间30min，应无渗漏。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.045315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

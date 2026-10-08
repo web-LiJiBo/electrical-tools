@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "永冻土",
+      "type": "地理环境",
+      "desc": "地下持续多年冻结的土层"
+    },
+    {
+      "name": "接地极",
+      "type": "电气设备",
+      "desc": "用于降低接地电阻的装置"
+    },
+    {
+      "name": "深钻式接地极",
+      "type": "电气设备",
+      "desc": "通过钻孔方式安装的接地极"
+    },
+    {
+      "name": "井管",
+      "type": "电气设备",
+      "desc": "利用已有井管作为接地极的装置"
+    },
+    {
+      "name": "深垂直接地极",
+      "type": "电气设备",
+      "desc": "垂直埋入地下的接地极"
+    }
+  ],
+  "rules": [
+    {
+      "content": "可敷设深钻式接地极，或充分利用井管或其他深埋在地下的金属构件作接地极，还应敷设深垂直接地极，其深度应保证深入冻土层下面的土壤至少5m。",
+      "type": "强制",
+      "subject": "永冻土地区的接地系统设计与施工",
+      "action": "敷设接地极",
+      "condition": "永冻土地区",
+      "constraint": "深垂直接地极深度≥5m",
+      "related_entities": [
+        "永冻土",
+        "接地极",
+        "深钻式接地极",
+        "井管",
+        "深垂直接地极"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "永冻土",
+      "target": "接地极",
+      "type": "适用于"
+    },
+    {
+      "source": "永冻土",
+      "target": "深钻式接地极",
+      "type": "采用"
+    },
+    {
+      "source": "永冻土",
+      "target": "井管",
+      "type": "采用"
+    },
+    {
+      "source": "永冻土",
+      "target": "深垂直接地极",
+      "type": "采用"
+    },
+    {
+      "source": "接地极",
+      "target": "深钻式接地极",
+      "type": "具体形式"
+    },
+    {
+      "source": "接地极",
+      "target": "井管",
+      "type": "具体形式"
+    },
+    {
+      "source": "接地极",
+      "target": "深垂直接地极",
+      "type": "具体形式"
+    },
+    {
+      "source": "深垂直接地极",
+      "target": "永冻土",
+      "type": "深入"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2505,
+      "source_row_id": "2505",
+      "clause_index": 1,
+      "source_text": "在永冻土地区可采用下列措施：2）可敷设深钻式接地极，或充分利用井管或其他深埋在地下的金属构件作接地极，还应敷设深垂直接地极，其深度应保证深入冻土层下面的土壤至少5m。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.650314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

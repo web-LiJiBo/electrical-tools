@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "外观检查",
+      "type": "试验项目",
+      "desc": "对设备外观进行检查"
+    },
+    {
+      "name": "绝缘电阻测量",
+      "type": "试验项目",
+      "desc": "测量设备的绝缘电阻"
+    },
+    {
+      "name": "电容测量",
+      "type": "试验项目",
+      "desc": "测量设备的电容值"
+    },
+    {
+      "name": "耐压试验",
+      "type": "试验项目",
+      "desc": "对设备施加一定电压以检验其耐压性能"
+    },
+    {
+      "name": "电容器损耗角正切测量",
+      "type": "试验项目",
+      "desc": "测量电容器的损耗角正切值"
+    },
+    {
+      "name": "耐压后复测电容值",
+      "type": "试验项目",
+      "desc": "在耐压试验后再次测量设备的电容值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有试验项目均应按规定的试验方法进行",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "进行试验",
+      "condition": "试验前",
+      "constraint": "试验方法",
+      "related_entities": [
+        "外观检查",
+        "绝缘电阻测量",
+        "电容测量",
+        "耐压试验",
+        "电容器损耗角正切测量",
+        "耐压后复测电容值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外观检查",
+      "target": "电容器损耗角正切测量",
+      "type": "并列"
+    },
+    {
+      "source": "绝缘电阻测量",
+      "target": "电容器损耗角正切测量",
+      "type": "并列"
+    },
+    {
+      "source": "电容测量",
+      "target": "耐压后复测电容值",
+      "type": "并列"
+    },
+    {
+      "source": "耐压试验",
+      "target": "耐压后复测电容值",
+      "type": "并列"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1262,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5618bbb489df6b71",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1262_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

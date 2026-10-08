@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "半断路器接线",
+      "type": "电气接线方式",
+      "desc": "一种高压配电装置的接线方式"
+    },
+    {
+      "name": "独立式电流互感器",
+      "type": "测量设备",
+      "desc": "安装在户外的电流互感器"
+    },
+    {
+      "name": "电流互感器组数",
+      "type": "数量",
+      "desc": "每串独立式电流互感器的数量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当采用一个半断路器接线时，对独立式电流互感器每串宜配置三组",
+      "type": "强制",
+      "subject": "独立式电流互感器",
+      "action": "配置",
+      "condition": "采用一个半断路器接线方式",
+      "constraint": "每串独立式电流互感器宜配置三组",
+      "related_entities": [
+        "半断路器接线",
+        "独立式电流互感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "半断路器接线",
+      "target": "独立式电流互感器",
+      "type": "适用于"
+    },
+    {
+      "source": "独立式电流互感器",
+      "target": "电流互感器组数",
+      "type": "配置数量为"
+    }
+  ],
+  "metadata": {
+    "pair_id": 59,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9ae22a60c5a6fc4e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\59_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

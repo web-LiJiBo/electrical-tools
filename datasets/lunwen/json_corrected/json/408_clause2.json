@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "注入新油",
+      "type": "操作",
+      "desc": "向电力设备中注入新的绝缘油"
+    },
+    {
+      "name": "750kV及以上",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "66-500kV",
+      "type": "电压等级",
+      "desc": "中压输电系统电压等级"
+    },
+    {
+      "name": "0.002",
+      "type": "数值约束",
+      "desc": "750kV及以上设备注入新油的含水量上限"
+    },
+    {
+      "name": "0.005",
+      "type": "数值约束",
+      "desc": "66-500kV设备注入新油的含水量上限"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注入新油，750kV及以上不大于0.002，66-500kV不大于0.005",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "注入新油",
+      "condition": "电力设备检修或更换新油时",
+      "constraint": "含水量",
+      "related_entities": [
+        "注入新油",
+        "750kV及以上",
+        "66-500kV",
+        "0.002",
+        "0.005"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "注入新油",
+      "target": "750kV及以上",
+      "type": "适用于"
+    },
+    {
+      "source": "注入新油",
+      "target": "66-500kV",
+      "type": "适用于"
+    },
+    {
+      "source": "注入新油",
+      "target": "0.002",
+      "type": "含水量上限"
+    },
+    {
+      "source": "注入新油",
+      "target": "0.005",
+      "type": "含水量上限"
+    }
+  ],
+  "metadata": {
+    "pair_id": 408,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "632ce010f0ba4a45",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\408_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

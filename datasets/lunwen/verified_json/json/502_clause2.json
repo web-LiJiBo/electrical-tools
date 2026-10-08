@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "房屋",
+      "type": "电力设施",
+      "desc": "厂矿或民房等建筑物"
+    },
+    {
+      "name": "林木",
+      "type": "电力设施",
+      "desc": "林区内的树木"
+    },
+    {
+      "name": "厂矿企业",
+      "type": "电力设施",
+      "desc": "工业生产场所"
+    },
+    {
+      "name": "民房",
+      "type": "电力设施",
+      "desc": "居民住宅建筑"
+    },
+    {
+      "name": "林区",
+      "type": "电力设施",
+      "desc": "森林区域"
+    },
+    {
+      "name": "三线",
+      "type": "电力设施",
+      "desc": "通信线路、广播电视线路等"
+    },
+    {
+      "name": "重要交叉跨越",
+      "type": "电力设施",
+      "desc": "电力线路与其他重要设施的交叉跨越点"
+    },
+    {
+      "name": "拆迁规模",
+      "type": "工程量",
+      "desc": "拆迁的总体规模"
+    },
+    {
+      "name": "拆迁数量",
+      "type": "工程量",
+      "desc": "拆迁的数量"
+    },
+    {
+      "name": "拆迁面积",
+      "type": "工程量",
+      "desc": "拆迁的总面积"
+    },
+    {
+      "name": "结构类型",
+      "type": "工程量",
+      "desc": "建筑物的主要结构类型"
+    },
+    {
+      "name": "砍伐数量",
+      "type": "工程量",
+      "desc": "树木的砍伐数量"
+    },
+    {
+      "name": "砍伐种类",
+      "type": "工程量",
+      "desc": "树木的种类"
+    }
+  ],
+  "rules": [
+    {
+      "content": "说明各路径方案的房屋（含厂矿）、林木等走廊清理及交叉跨越等工程量",
+      "type": "强制",
+      "subject": "电力工程设计人员",
+      "action": "说明工程量",
+      "condition": "电力线路路径方案设计阶段",
+      "constraint": "详细说明厂矿企业拆迁规模和数量、民房拆迁面积及主要结构类型、三线拆迁数量、其他拆迁数量，林区长度、树木种类及砍伐数量，重要交叉跨越数量等",
+      "related_entities": [
+        "房屋",
+        "林木",
+        "厂矿企业",
+        "民房",
+        "林区",
+        "三线",
+        "重要交叉跨越",
+        "拆迁规模",
+        "拆迁数量",
+        "拆迁面积",
+        "结构类型",
+        "砍伐数量",
+        "砍伐种类"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "房屋",
+      "target": "拆迁规模",
+      "type": "包含"
+    },
+    {
+      "source": "房屋",
+      "target": "拆迁数量",
+      "type": "包含"
+    },
+    {
+      "source": "房屋",
+      "target": "拆迁面积",
+      "type": "包含"
+    },
+    {
+      "source": "房屋",
+      "target": "结构类型",
+      "type": "包含"
+    },
+    {
+      "source": "林木",
+      "target": "砍伐数量",
+      "type": "包含"
+    },
+    {
+      "source": "林木",
+      "target": "砍伐种类",
+      "type": "包含"
+    },
+    {
+      "source": "林区",
+      "target": "林木",
+      "type": "包含"
+    },
+    {
+      "source": "厂矿企业",
+      "target": "房屋",
+      "type": "包含"
+    },
+    {
+      "source": "民房",
+      "target": "房屋",
+      "type": "包含"
+    },
+    {
+      "source": "三线",
+      "target": "重要交叉跨越",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 502,
+      "source_row_id": "502",
+      "clause_index": 2,
+      "source_text": "说明各路径方案的房屋（含厂矿）、林木等走廊清理及交叉跨越等工程量，包括厂矿企业拆迁规模和数量、民房拆迁面积及主要结构类型、三线拆迁数量、其他拆迁数量，林区长度、树木种类及砍伐数量，重要交叉跨越数量等"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9904,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.300484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

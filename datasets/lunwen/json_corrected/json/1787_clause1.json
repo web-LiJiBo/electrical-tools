@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "主回路",
+      "type": "电气设备",
+      "desc": "电力系统中的主要电流路径"
+    },
+    {
+      "name": "直接与其相连的部件",
+      "type": "电气设备",
+      "desc": "与主回路直接连接的其他电气元件"
+    },
+    {
+      "name": "辅助回路",
+      "type": "电气设备",
+      "desc": "电力系统中除主回路外的其他电路"
+    },
+    {
+      "name": "运动部分",
+      "type": "电气设备",
+      "desc": "电力系统中具有机械运动功能的部分"
+    },
+    {
+      "name": "GB/T11022-1999",
+      "type": "标准",
+      "desc": "电气技术用名词术语标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主回路和直接与其相连的部件的防护等级不作规定",
+      "type": "强制",
+      "subject": "主回路和直接与其相连的部件",
+      "action": "不作防护等级规定",
+      "condition": "无特殊要求时",
+      "constraint": "无",
+      "related_entities": [
+        "主回路",
+        "直接与其相连的部件"
+      ]
+    },
+    {
+      "content": "辅助回路和运动部分的防护等级按GB/T11022-1999的5.13执行",
+      "type": "强制",
+      "subject": "辅助回路和运动部分",
+      "action": "执行GB/T11022-1999的5.13条款",
+      "condition": "有特殊要求时",
+      "constraint": "GB/T11022-1999的5.13条款",
+      "related_entities": [
+        "辅助回路",
+        "运动部分",
+        "GB/T11022-1999"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主回路",
+      "target": "直接与其相连的部件",
+      "type": "直接连接"
+    },
+    {
+      "source": "辅助回路",
+      "target": "运动部分",
+      "type": "并列存在"
+    },
+    {
+      "source": "GB/T11022-1999",
+      "target": "辅助回路",
+      "type": "标准依据"
+    },
+    {
+      "source": "GB/T11022-1999",
+      "target": "运动部分",
+      "type": "标准依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1787,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "759973619dfef602",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1787_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

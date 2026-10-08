@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "直埋敷设的电缆",
+      "type": "电力设施",
+      "desc": "直接埋设在地下的电缆"
+    },
+    {
+      "name": "地下管道",
+      "type": "电力设施",
+      "desc": "埋设在地下的管道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋敷设的电缆，严禁位于地下管道的正上方或正下方",
+      "type": "强制",
+      "subject": "直埋敷设的电缆",
+      "action": "敷设",
+      "condition": "电缆直埋敷设时",
+      "constraint": "电缆不应位于地下管道的正上方或正下方",
+      "related_entities": [
+        "直埋敷设的电缆",
+        "地下管道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋敷设的电缆",
+      "target": "地下管道",
+      "type": "禁止相邻"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1932,
+      "source_row_id": "1932",
+      "clause_index": 1,
+      "source_text": "直埋敷设的电缆，严禁位于地下管道的正上方或正下方"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.930970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

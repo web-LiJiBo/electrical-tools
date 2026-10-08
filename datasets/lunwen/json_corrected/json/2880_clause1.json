@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "接地装置",
+      "type": "电力设备",
+      "desc": "用于将电气设备与大地连接的装置"
+    },
+    {
+      "name": "合理选材",
+      "type": "技术措施",
+      "desc": "选择适合土壤环境的材料"
+    },
+    {
+      "name": "腐蚀裕量",
+      "type": "技术措施",
+      "desc": "在材料设计时预留的抗腐蚀余量"
+    },
+    {
+      "name": "防腐层保护",
+      "type": "技术措施",
+      "desc": "通过涂层等方式保护金属表面免受腐蚀"
+    },
+    {
+      "name": "阴极保护",
+      "type": "技术措施",
+      "desc": "通过外加电流或牺牲阳极等方式减少金属腐蚀的方法"
+    },
+    {
+      "name": "普通碳素钢",
+      "type": "材料",
+      "desc": "一种常用的钢材，具有良好的机械性能"
+    },
+    {
+      "name": "热浸镀锌钢",
+      "type": "材料",
+      "desc": "经过热浸镀锌处理的钢材，具有较好的耐腐蚀性"
+    },
+    {
+      "name": "铜",
+      "type": "材料",
+      "desc": "一种具有良好导电性和耐腐蚀性的有色金属"
+    },
+    {
+      "name": "铜覆钢",
+      "type": "材料",
+      "desc": "表面镀铜的钢材，结合了钢材的强度和铜的耐腐蚀性"
+    },
+    {
+      "name": "不锈钢",
+      "type": "材料",
+      "desc": "一种具有优良耐腐蚀性的合金钢"
+    }
+  ],
+  "rules": [
+    {
+      "content": "土壤腐蚀性为微或弱时，可采用普通碳素钢或热浸镀锌钢",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "选用材料",
+      "condition": "土壤腐蚀性为微或弱",
+      "constraint": "可采用普通碳素钢或热浸镀锌钢",
+      "related_entities": [
+        "接地装置",
+        "普通碳素钢",
+        "热浸镀锌钢"
+      ]
+    },
+    {
+      "content": "土壤的腐蚀性为中时，应采用热浸镀锌钢，亦可采用热浸镀锌钢联合阴极保护等方法",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "选用材料",
+      "condition": "土壤腐蚀性为中",
+      "constraint": "应采用热浸镀锌钢，亦可采用热浸镀锌钢联合阴极保护等方法",
+      "related_entities": [
+        "接地装置",
+        "热浸镀锌钢",
+        "阴极保护"
+      ]
+    },
+    {
+      "content": "土壤的腐蚀性为强时，应采用热浸镀锌钢联合阴极保护方法，亦可采用铜、铜覆钢或不锈钢",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "选用材料",
+      "condition": "土壤腐蚀性为强",
+      "constraint": "应采用热浸镀锌钢联合阴极保护方法，亦可采用铜、铜覆钢或不锈钢",
+      "related_entities": [
+        "接地装置",
+        "热浸镀锌钢",
+        "阴极保护",
+        "铜",
+        "铜覆钢",
+        "不锈钢"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地装置",
+      "target": "合理选材",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "腐蚀裕量",
+      "type": "考虑"
+    },
+    {
+      "source": "接地装置",
+      "target": "防腐层保护",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "阴极保护",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "普通碳素钢",
+      "type": "选用"
+    },
+    {
+      "source": "接地装置",
+      "target": "热浸镀锌钢",
+      "type": "选用"
+    },
+    {
+      "source": "接地装置",
+      "target": "铜",
+      "type": "选用"
+    },
+    {
+      "source": "接地装置",
+      "target": "铜覆钢",
+      "type": "选用"
+    },
+    {
+      "source": "接地装置",
+      "target": "不锈钢",
+      "type": "选用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2880,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ddd3f2fa51e15b5c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2880_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

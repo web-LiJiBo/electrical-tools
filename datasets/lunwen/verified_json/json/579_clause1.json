@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "电力设备在安装或检修后进行的全面检查试验"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验",
+      "desc": "通过交流高压对电气设备进行耐压试验"
+    },
+    {
+      "name": "例行试验",
+      "type": "试验",
+      "desc": "电力设备定期进行的检查试验"
+    },
+    {
+      "name": "主绝缘交流耐压试验",
+      "type": "试验",
+      "desc": "对电缆线路主绝缘进行交流耐压试验"
+    },
+    {
+      "name": "电缆线路",
+      "type": "设备",
+      "desc": "电力系统中传输电能的电缆线路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交接试验交流耐压试验规定",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行交流耐压试验",
+      "condition": "电力设备在安装或检修后",
+      "constraint": "无",
+      "related_entities": [
+        "交接试验",
+        "交流耐压试验"
+      ]
+    },
+    {
+      "content": "例行试验要求主绝缘交流耐压试验采用频率范围为20Hz~300Hz的交流电压对电缆线路进行耐压试验",
+      "type": "强制",
+      "subject": "电缆线路",
+      "action": "进行主绝缘交流耐压试验",
+      "condition": "例行试验",
+      "constraint": "频率范围20Hz~300Hz",
+      "related_entities": [
+        "例行试验",
+        "主绝缘交流耐压试验",
+        "电缆线路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交接试验",
+      "target": "交流耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "主绝缘交流耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "主绝缘交流耐压试验",
+      "target": "电缆线路",
+      "type": "针对"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 579,
+      "source_row_id": "579",
+      "clause_index": 1,
+      "source_text": "交接试验交流耐压试验规定。例行试验要求主绝缘交流耐压试验采用频率范围为20Hz~300Hz的交流电压对电缆线路进行耐压试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.383482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

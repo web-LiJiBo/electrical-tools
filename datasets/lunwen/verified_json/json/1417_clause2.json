@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "允许偏差",
+      "type": "技术参数",
+      "desc": "电力系统中设备或参数允许的最大偏差值"
+    },
+    {
+      "name": "大跨越档弧垂",
+      "type": "技术参数",
+      "desc": "跨越通航河流的输电线路在大跨越档距下的导线最低点至地面的距离"
+    },
+    {
+      "name": "±2.5%",
+      "type": "数值",
+      "desc": "一般情况下允许偏差值"
+    },
+    {
+      "name": "±1%",
+      "type": "数值",
+      "desc": "跨越通航河流的大跨越档弧垂允许偏差值"
+    },
+    {
+      "name": "1m",
+      "type": "数值",
+      "desc": "跨越通航河流的大跨越档弧垂正偏差最大值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般情况下允许偏差不应超过±2.5%",
+      "type": "强制",
+      "subject": "电力系统设备或参数",
+      "action": "运行维护",
+      "condition": "一般情况下",
+      "constraint": "±2.5%",
+      "related_entities": [
+        "允许偏差"
+      ]
+    },
+    {
+      "content": "跨越通航河流的大跨越档弧垂允许偏差不应大于±1%，其正偏差不应超过1m",
+      "type": "强制",
+      "subject": "跨越通航河流的大跨越档弧垂",
+      "action": "设计施工",
+      "condition": "跨越通航河流的大跨越档",
+      "constraint": "±1%、1m",
+      "related_entities": [
+        "大跨越档弧垂",
+        "允许偏差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "允许偏差",
+      "target": "大跨越档弧垂",
+      "type": "适用于"
+    },
+    {
+      "source": "±2.5%",
+      "target": "允许偏差",
+      "type": "具体数值"
+    },
+    {
+      "source": "±1%",
+      "target": "允许偏差",
+      "type": "具体数值"
+    },
+    {
+      "source": "1m",
+      "target": "允许偏差",
+      "type": "具体数值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1417,
+      "source_row_id": "1417",
+      "clause_index": 2,
+      "source_text": "1、一般情况下允许偏差不应超过±2.5%，2、跨越通航河流的大跨越档弧垂允许偏差不应大于±1%，其正偏差不应超过1m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.355548+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

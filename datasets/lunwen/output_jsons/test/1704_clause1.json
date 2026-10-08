@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于接通或断开电路的电气装置"
+    },
+    {
+      "name": "控制设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制电路状态的电气装置"
+    },
+    {
+      "name": "额定电流(Ir)",
+      "type": "技术参数",
+      "desc": "设备正常工作时允许通过的最大电流值"
+    },
+    {
+      "name": "电源电流",
+      "type": "技术参数",
+      "desc": "供电系统向设备提供的电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应该在开关设备和控制设备的额定电流（Ir）下进行试验",
+      "type": "强制",
+      "subject": "开关设备和控制设备",
+      "action": "试验",
+      "condition": "额定电流（Ir）下",
+      "constraint": "额定电流（Ir）",
+      "related_entities": [
+        "开关设备",
+        "控制设备"
+      ]
+    },
+    {
+      "content": "电源电流应该几乎是正弦的",
+      "type": "强制",
+      "subject": "电源",
+      "action": "提供电流",
+      "condition": "额定电流（Ir）下",
+      "constraint": "正弦波形",
+      "related_entities": [
+        "电源电流",
+        "开关设备",
+        "控制设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关设备",
+      "target": "额定电流(Ir)",
+      "type": "参数对应"
+    },
+    {
+      "source": "控制设备",
+      "target": "额定电流(Ir)",
+      "type": "参数对应"
+    },
+    {
+      "source": "电源电流",
+      "target": "额定电流(Ir)",
+      "type": "参数对应"
+    },
+    {
+      "source": "电源",
+      "target": "电源电流",
+      "type": "提供"
+    }
+  ]
+}

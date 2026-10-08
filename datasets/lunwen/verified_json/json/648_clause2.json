@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "330kV及以上变压器",
+      "type": "电力设备",
+      "desc": "额定电压330kV及以上的电力变压器"
+    },
+    {
+      "name": "储油柜",
+      "type": "电力设备部件",
+      "desc": "变压器中用于储存变压器油的装置"
+    },
+    {
+      "name": "主油箱",
+      "type": "电力设备部件",
+      "desc": "变压器中用于储存变压器油的主要容器"
+    },
+    {
+      "name": "断流阀",
+      "type": "电力设备部件",
+      "desc": "安装在储油柜与主油箱之间的阀门，用于控制油流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "330kV及以上变压器储油柜与主油箱之间应设置断流阀",
+      "type": "强制",
+      "subject": "330kV及以上变压器",
+      "action": "设置断流阀",
+      "condition": "330kV及以上变压器",
+      "constraint": "储油柜与主油箱之间",
+      "related_entities": [
+        "330kV及以上变压器",
+        "储油柜",
+        "主油箱",
+        "断流阀"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "330kV及以上变压器",
+      "target": "储油柜",
+      "type": "包含"
+    },
+    {
+      "source": "330kV及以上变压器",
+      "target": "主油箱",
+      "type": "包含"
+    },
+    {
+      "source": "储油柜",
+      "target": "断流阀",
+      "type": "连接"
+    },
+    {
+      "source": "主油箱",
+      "target": "断流阀",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 648,
+      "source_row_id": "648",
+      "clause_index": 2,
+      "source_text": "330kV及以上变压器储油柜与主油箱之间应设置断流阀"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.470485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

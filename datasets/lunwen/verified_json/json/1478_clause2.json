@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种电力系统中用于限制短路电流的设备"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "电抗器内部装油的容器"
+    },
+    {
+      "name": "振动水平",
+      "type": "技术参数",
+      "desc": "电抗器运行时油箱的振动程度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电抗器在额定电压、额定频率和允许的谐波电流分量下，油箱振动平均值应不大于60µm",
+      "type": "强制",
+      "subject": "电抗器",
+      "action": "运行",
+      "condition": "额定电压、额定频率和允许的谐波电流分量下",
+      "constraint": "油箱振动平均值≤60µm",
+      "related_entities": [
+        "电抗器",
+        "油箱"
+      ]
+    },
+    {
+      "content": "电抗器在额定电压、额定频率和允许的谐波电流分量下，油箱振动最大振幅应不大于100µm",
+      "type": "强制",
+      "subject": "电抗器",
+      "action": "运行",
+      "condition": "额定电压、额定频率和允许的谐波电流分量下",
+      "constraint": "油箱振动最大振幅≤100µm",
+      "related_entities": [
+        "电抗器",
+        "油箱"
+      ]
+    },
+    {
+      "content": "电抗器在额定电压、额定频率和允许的谐波电流分量下，油箱底部振动应不大于20µm",
+      "type": "强制",
+      "subject": "电抗器",
+      "action": "运行",
+      "condition": "额定电压、额定频率和允许的谐波电流分量下",
+      "constraint": "油箱底部振动≤20µm",
+      "related_entities": [
+        "电抗器",
+        "油箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电抗器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "振动水平",
+      "type": "反映"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1478,
+      "source_row_id": "1478",
+      "clause_index": 2,
+      "source_text": "振动水平：电抗器在额定电压、额定频率和允许的谐波电流分量下，油箱振动平均值应不大于60µm，油箱振动最大振幅应不大于100µm，油箱底部振动应不大于20µm"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8467,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.425620+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

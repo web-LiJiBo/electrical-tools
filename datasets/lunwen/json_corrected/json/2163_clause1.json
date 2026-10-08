@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电的电压等级"
+    },
+    {
+      "name": "低电压短路阻抗法",
+      "type": "试验方法",
+      "desc": "一种检测变压器绕组变形的方法"
+    },
+    {
+      "name": "频率响应法",
+      "type": "试验方法",
+      "desc": "一种检测变压器绕组变形的方法"
+    },
+    {
+      "name": "35kV及以下变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压在35kV及以下的变压器"
+    },
+    {
+      "name": "66kV及以上变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压在66kV及以上的变压器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于35kV及以下变压器，宜采用低电压短路阻抗法",
+      "type": "强制",
+      "subject": "35kV及以下变压器",
+      "action": "进行绕组变形试验",
+      "condition": "变压器绕组变形试验",
+      "constraint": "宜采用低电压短路阻抗法",
+      "related_entities": [
+        "变压器",
+        "低电压短路阻抗法"
+      ]
+    },
+    {
+      "content": "对于66kV及以上变压器，宜采用频率响应法测量绕组特征图谱",
+      "type": "强制",
+      "subject": "66kV及以上变压器",
+      "action": "进行绕组变形试验",
+      "condition": "变压器绕组变形试验",
+      "constraint": "宜采用频率响应法测量绕组特征图谱",
+      "related_entities": [
+        "变压器",
+        "频率响应法"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "35kV及以下变压器",
+      "target": "低电压短路阻抗法",
+      "type": "适用方法"
+    },
+    {
+      "source": "66kV及以上变压器",
+      "target": "频率响应法",
+      "type": "适用方法"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2163,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6567247990ceb2a0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2163_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

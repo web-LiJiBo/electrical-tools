@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "电缆线路",
+      "type": "电力设施",
+      "desc": "电力系统中用于传输电能的电缆线路"
+    },
+    {
+      "name": "施工竣工",
+      "type": "施工状态",
+      "desc": "电缆线路完成施工后的状态"
+    },
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "电缆线路在投入运行前进行的电气性能测试"
+    },
+    {
+      "name": "合格",
+      "type": "结果",
+      "desc": "试验结果满足技术规范要求的状态"
+    },
+    {
+      "name": "投入运行",
+      "type": "运行状态",
+      "desc": "电缆线路正式投入使用的状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆线路施工竣工后，应按照附录C进行交接试验，全部项目合格后方可投入运行",
+      "type": "强制",
+      "subject": "电缆线路",
+      "action": "投入运行",
+      "condition": "施工竣工",
+      "constraint": "全部项目合格",
+      "related_entities": [
+        "电缆线路",
+        "交接试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "施工竣工",
+      "target": "电缆线路",
+      "type": "施工状态-电力设施"
+    },
+    {
+      "source": "电缆线路",
+      "target": "交接试验",
+      "type": "电力设施-试验"
+    },
+    {
+      "source": "交接试验",
+      "target": "合格",
+      "type": "试验-结果"
+    },
+    {
+      "source": "合格",
+      "target": "投入运行",
+      "type": "结果-运行状态"
+    },
+    {
+      "source": "施工竣工",
+      "target": "投入运行",
+      "type": "施工状态-运行状态"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 590,
+      "source_row_id": "590",
+      "clause_index": 1,
+      "source_text": "电缆线路施工竣工后，应按照附录C进行交接试验，全部项目合格后方可投入运行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.395482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

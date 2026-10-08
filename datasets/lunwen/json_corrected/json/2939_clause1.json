@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "主航道",
+      "type": "电力设施",
+      "desc": "电力系统中用于船只通行的航道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "电力系统中传输电能的导线"
+    },
+    {
+      "name": "最高水位水深",
+      "type": "电力参数",
+      "desc": "主航道在最高水位时的水深"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主航道内，电缆间距不宜小于最高水位水深的2倍。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "设置电缆间距",
+      "condition": "主航道内",
+      "constraint": "电缆间距≥最高水位水深×2",
+      "related_entities": [
+        "主航道",
+        "电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主航道",
+      "target": "电缆",
+      "type": "电缆敷设路径"
+    },
+    {
+      "source": "电缆",
+      "target": "最高水位水深",
+      "type": "电缆间距计算依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2939,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9fabe1b6368af9b3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2939_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

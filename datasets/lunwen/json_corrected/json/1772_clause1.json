@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "气体绝缘金属封闭开关设备",
+      "type": "电力设备",
+      "desc": "一种高压电气设备，内部充有绝缘气体"
+    },
+    {
+      "name": "外壳",
+      "type": "设备部件",
+      "desc": "气体绝缘金属封闭开关设备的外部防护结构"
+    },
+    {
+      "name": "气体隔室",
+      "type": "设备部件",
+      "desc": "气体绝缘金属封闭开关设备内部的独立气室"
+    },
+    {
+      "name": "相对年泄漏率",
+      "type": "技术参数",
+      "desc": "气体隔室在一年内的气体泄漏量占初始充气量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制造厂宜按GB/T11023确定每个气体隔室允许的相对年泄漏率。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "确定气体隔室允许的相对年泄漏率",
+      "condition": "气体绝缘金属封闭开关设备制造过程",
+      "constraint": "应符合GB/T11023标准",
+      "related_entities": [
+        "气体绝缘金属封闭开关设备",
+        "气体隔室"
+      ]
+    },
+    {
+      "content": "每个隔室的相对年泄漏率应不大于1%。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "控制气体隔室的相对年泄漏率",
+      "condition": "气体绝缘金属封闭开关设备制造过程",
+      "constraint": "每个隔室的相对年泄漏率≤1%",
+      "related_entities": [
+        "气体隔室",
+        "相对年泄漏率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体绝缘金属封闭开关设备",
+      "target": "外壳",
+      "type": "包含"
+    },
+    {
+      "source": "外壳",
+      "target": "气体隔室",
+      "type": "包含"
+    },
+    {
+      "source": "气体隔室",
+      "target": "相对年泄漏率",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1772,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1bd354a2479fcd93",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1772_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

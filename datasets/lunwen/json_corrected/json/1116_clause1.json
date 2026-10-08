@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "柱上变压器",
+      "type": "电力设备",
+      "desc": "安装在户外的变压器，用于将高压电转换为低压电供用户使用"
+    },
+    {
+      "name": "低压负荷中心",
+      "type": "电力负荷分布区域",
+      "desc": "低压电力系统中负荷密度较高的区域"
+    },
+    {
+      "name": "三相柱上变压器",
+      "type": "电力设备",
+      "desc": "具有三个相线输入的柱上变压器"
+    },
+    {
+      "name": "单相柱上变压器",
+      "type": "电力设备",
+      "desc": "具有一个相线输入的柱上变压器"
+    },
+    {
+      "name": "农村地区",
+      "type": "地理区域",
+      "desc": "以农业为主的地区，居民居住较为分散"
+    },
+    {
+      "name": "居民电采暖",
+      "type": "用电负荷",
+      "desc": "居民住宅区的电采暖负荷"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上变压器宜设于低压负荷中心，三相柱上变压器容量不应超过400kVA。",
+      "type": "强制",
+      "subject": "柱上变压器",
+      "action": "安装",
+      "condition": "低压负荷中心",
+      "constraint": "三相柱上变压器容量≤400kVA",
+      "related_entities": [
+        "柱上变压器",
+        "低压负荷中心"
+      ]
+    },
+    {
+      "content": "农村地区居民分散居住、单相负荷为主地区宜选用单相变压器，容量为10kVA~50kVA，供电半径宜小于50米或供电户数不超过5户，居民电采暖地区单相变压器容量可提高至100kVA。",
+      "type": "强制",
+      "subject": "单相柱上变压器",
+      "action": "安装",
+      "condition": "农村地区居民分散居住、单相负荷为主地区或居民电采暖地区",
+      "constraint": "单相柱上变压器容量10kVA~50kVA，供电半径<50米或供电户数≤5户；居民电采暖地区单相柱上变压器容量≤100kVA",
+      "related_entities": [
+        "单相柱上变压器",
+        "农村地区",
+        "居民电采暖"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上变压器",
+      "target": "低压负荷中心",
+      "type": "安装于"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "柱上变压器",
+      "type": "子类"
+    },
+    {
+      "source": "单相柱上变压器",
+      "target": "柱上变压器",
+      "type": "子类"
+    },
+    {
+      "source": "农村地区",
+      "target": "低压负荷中心",
+      "type": "负荷中心分布区域"
+    },
+    {
+      "source": "居民电采暖",
+      "target": "低压负荷中心",
+      "type": "负荷类型"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1116,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8e340eb8b7c7f4a1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1116_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

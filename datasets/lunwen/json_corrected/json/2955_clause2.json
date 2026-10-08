@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "直流电源",
+      "type": "设备",
+      "desc": "用于接地电阻测量的直流电源"
+    },
+    {
+      "name": "接地极",
+      "type": "设备",
+      "desc": "用于接地的金属棒或板"
+    },
+    {
+      "name": "换流站接地网",
+      "type": "设备",
+      "desc": "换流站内部的接地网络"
+    },
+    {
+      "name": "零电位参考点",
+      "type": "设备",
+      "desc": "测量过程中设定的零电位参考点"
+    },
+    {
+      "name": "接地极任意二点间最大距离",
+      "type": "参数",
+      "desc": "接地极上任意两点之间的最大距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流电源的另一接地点（可以是换流站接地网）以及零电位参考点与接地极之间的最小距离大于接地极任意二点间最大距离的5倍。",
+      "type": "强制",
+      "subject": "直流电源的另一接地点、零电位参考点与接地极",
+      "action": "保持安全距离",
+      "condition": "进行接地电阻测量时",
+      "constraint": "最小距离 > 接地极任意二点间最大距离 * 5",
+      "related_entities": [
+        "直流电源",
+        "接地极",
+        "换流站接地网",
+        "零电位参考点"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电源",
+      "target": "接地极",
+      "type": "连接"
+    },
+    {
+      "source": "直流电源",
+      "target": "换流站接地网",
+      "type": "连接"
+    },
+    {
+      "source": "零电位参考点",
+      "target": "接地极",
+      "type": "连接"
+    },
+    {
+      "source": "接地极",
+      "target": "接地极任意二点间最大距离",
+      "type": "属性"
+    },
+    {
+      "source": "直流电源的另一接地点",
+      "target": "接地极",
+      "type": "距离约束"
+    },
+    {
+      "source": "零电位参考点",
+      "target": "接地极",
+      "type": "距离约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2955,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5b142dba971af4e7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2955_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

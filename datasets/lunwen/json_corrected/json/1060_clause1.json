@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "并联电抗器",
+      "type": "电力设备",
+      "desc": "用于电力系统无功补偿的电抗器"
+    },
+    {
+      "name": "干式空心并联电抗器",
+      "type": "电力设备",
+      "desc": "一种无油、无铁心的干式电抗器"
+    },
+    {
+      "name": "干式半心并联电抗器",
+      "type": "电力设备",
+      "desc": "一种无油、部分有铁心的干式电抗器"
+    },
+    {
+      "name": "油浸铁心并联电抗器",
+      "type": "电力设备",
+      "desc": "一种带油箱、有铁心的油浸式电抗器"
+    },
+    {
+      "name": "干式铁心电抗器",
+      "type": "电力设备",
+      "desc": "一种无油、有铁心的干式电抗器"
+    },
+    {
+      "name": "户外布置",
+      "type": "安装环境",
+      "desc": "电力设备在室外的安装方式"
+    },
+    {
+      "name": "户内布置",
+      "type": "安装环境",
+      "desc": "电力设备在室内的安装方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "并联电抗器选型时，可采用干式空心、半心并联电抗器或油浸铁心并联电抗器，户内布置时也可采用干式铁心电抗器",
+      "type": "强制",
+      "subject": "并联电抗器选型",
+      "action": "选择并联电抗器型号",
+      "condition": "电力系统无功补偿需求",
+      "constraint": "根据安装环境选择合适的电抗器类型",
+      "related_entities": [
+        "并联电抗器",
+        "干式空心并联电抗器",
+        "干式半心并联电抗器",
+        "油浸铁心并联电抗器",
+        "干式铁心电抗器",
+        "户外布置",
+        "户内布置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "并联电抗器",
+      "target": "干式空心并联电抗器",
+      "type": "包含"
+    },
+    {
+      "source": "并联电抗器",
+      "target": "干式半心并联电抗器",
+      "type": "包含"
+    },
+    {
+      "source": "并联电抗器",
+      "target": "油浸铁心并联电抗器",
+      "type": "包含"
+    },
+    {
+      "source": "并联电抗器",
+      "target": "干式铁心电抗器",
+      "type": "包含"
+    },
+    {
+      "source": "户内布置",
+      "target": "干式铁心电抗器",
+      "type": "适用"
+    },
+    {
+      "source": "户外布置",
+      "target": "干式空心并联电抗器",
+      "type": "适用"
+    },
+    {
+      "source": "户外布置",
+      "target": "干式半心并联电抗器",
+      "type": "适用"
+    },
+    {
+      "source": "户外布置",
+      "target": "油浸铁心并联电抗器",
+      "type": "适用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1060,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f6b11c5ad81f5cef",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1060_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

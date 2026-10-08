@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "非地下变电站",
+      "type": "变电站",
+      "desc": "未建在地下的变电站"
+    },
+    {
+      "name": "接地网",
+      "type": "接地装置",
+      "desc": "用于将电气设备与大地连接的金属网状结构"
+    },
+    {
+      "name": "铜质材料接地体",
+      "type": "接地材料",
+      "desc": "由铜制成的接地体"
+    },
+    {
+      "name": "腐蚀情况",
+      "type": "技术状态",
+      "desc": "接地网因环境因素导致的腐蚀程度"
+    },
+    {
+      "name": "开挖检查",
+      "type": "检修方式",
+      "desc": "通过开挖地面检查接地网的技术状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "投运10年及以上的非地下变电站接地网，应定期开挖（间隔不大于5年），抽检接地网的腐蚀情况，每站抽检5～8个点。",
+      "type": "强制",
+      "subject": "非地下变电站",
+      "action": "定期开挖检查接地网",
+      "condition": "投运10年及以上",
+      "constraint": "间隔不大于5年，每站抽检5～8个点",
+      "related_entities": [
+        "非地下变电站",
+        "接地网",
+        "开挖检查"
+      ]
+    },
+    {
+      "content": "铜质材料接地体地网整体情况评估合格的不必定期开挖检查。",
+      "type": "强制",
+      "subject": "铜质材料接地体地网",
+      "action": "无需定期开挖检查",
+      "condition": "整体情况评估合格",
+      "constraint": "-",
+      "related_entities": [
+        "铜质材料接地体",
+        "接地网",
+        "开挖检查"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非地下变电站",
+      "target": "接地网",
+      "type": "拥有"
+    },
+    {
+      "source": "接地网",
+      "target": "铜质材料接地体",
+      "type": "使用"
+    },
+    {
+      "source": "接地网",
+      "target": "腐蚀情况",
+      "type": "反映"
+    },
+    {
+      "source": "非地下变电站",
+      "target": "开挖检查",
+      "type": "执行"
+    },
+    {
+      "source": "铜质材料接地体",
+      "target": "开挖检查",
+      "type": "执行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2515,
+      "source_row_id": "2515",
+      "clause_index": 2,
+      "source_text": "投运10年及以上的非地下变电站接地网，应定期开挖（间隔不大于5年），抽检接地网的腐蚀情况，每站抽检5～8个点。铜质材料接地体地网整体情况评估合格的不必定期开挖检查。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.661315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

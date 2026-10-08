@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "主航道",
+      "type": "地理区域",
+      "desc": "电力电缆敷设的主要水域通道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "电力传输用的电缆线"
+    },
+    {
+      "name": "平均最大水深",
+      "type": "物理量",
+      "desc": "主航道内最深的水深值"
+    },
+    {
+      "name": "通航",
+      "type": "电力设施状态",
+      "desc": "航道允许船只通行的状态"
+    },
+    {
+      "name": "流速",
+      "type": "物理量",
+      "desc": "水流的速度"
+    },
+    {
+      "name": "小河",
+      "type": "地理区域",
+      "desc": "非通航的河流区域"
+    },
+    {
+      "name": "单芯电缆",
+      "type": "电力设施",
+      "desc": "由单一导体构成的电缆"
+    },
+    {
+      "name": "不同回路电缆",
+      "type": "电力设施",
+      "desc": "不同回路的电力传输电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主航道内，电缆间距不宜小于平均最大水深的1.2倍。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "主航道内",
+      "constraint": "间距≥1.2×平均最大水深",
+      "related_entities": [
+        "主航道",
+        "电缆",
+        "平均最大水深"
+      ]
+    },
+    {
+      "content": "引至岸边间距可适当缩小。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "主航道内，靠近岸边",
+      "constraint": "间距≤1.2×平均最大水深",
+      "related_entities": [
+        "主航道",
+        "电缆",
+        "平均最大水深"
+      ]
+    },
+    {
+      "content": "在非通航的流速未超过1m/s的小河中，同回路单芯电缆间距不得小于0.5m，不同回路电缆间距不得小于5m。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "非通航的小河中，流速≤1m/s",
+      "constraint": "同回路单芯电缆间距≥0.5m，不同回路电缆间距≥5m",
+      "related_entities": [
+        "小河",
+        "单芯电缆",
+        "不同回路电缆",
+        "流速"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主航道",
+      "target": "电缆",
+      "type": "敷设路径"
+    },
+    {
+      "source": "电缆",
+      "target": "平均最大水深",
+      "type": "间距依据"
+    },
+    {
+      "source": "电缆",
+      "target": "单芯电缆",
+      "type": "敷设类型"
+    },
+    {
+      "source": "电缆",
+      "target": "不同回路电缆",
+      "type": "敷设类型"
+    },
+    {
+      "source": "小河",
+      "target": "电缆",
+      "type": "敷设路径"
+    },
+    {
+      "source": "电缆",
+      "target": "流速",
+      "type": "敷设条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 156,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1add5775a248b47d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\156_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

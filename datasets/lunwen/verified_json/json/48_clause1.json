@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电路电流的电气设备"
+    },
+    {
+      "name": "交流耐受电压试验",
+      "type": "试验方法",
+      "desc": "一种电气设备绝缘性能测试方法"
+    },
+    {
+      "name": "油中溶解气体分析",
+      "type": "试验方法",
+      "desc": "一种检测变压器油中溶解气体含量的方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在交接试验时，对110（66）kV及以上电压等级的电流互感器，应逐台进行交流耐受电压试验",
+      "type": "强制",
+      "subject": "电流互感器",
+      "action": "进行交流耐受电压试验",
+      "condition": "交接试验时，电压等级110（66）kV及以上",
+      "constraint": "逐台进行",
+      "related_entities": [
+        "电流互感器",
+        "交流耐受电压试验"
+      ]
+    },
+    {
+      "content": "交流耐压试验前后应进行油中溶解气体分析",
+      "type": "强制",
+      "subject": "电流互感器",
+      "action": "进行油中溶解气体分析",
+      "condition": "交流耐压试验前后",
+      "constraint": "必须进行",
+      "related_entities": [
+        "电流互感器",
+        "油中溶解气体分析"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电流互感器",
+      "target": "交流耐受电压试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "电流互感器",
+      "target": "油中溶解气体分析",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 48,
+      "source_row_id": "48",
+      "clause_index": 1,
+      "source_text": "在交接试验时，对110（66）kV及以上电压等级的电流互感器，应逐台进行交流耐受电压试验，交流耐压试验前后应进行油中溶解气体分析"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.805605+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

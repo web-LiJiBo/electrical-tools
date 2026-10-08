@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "辅助及控制回路",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于辅助功能或控制功能的电气回路"
+    },
+    {
+      "name": "工频电压",
+      "type": "电力参数",
+      "desc": "电力系统中交流电的频率为50Hz的电压"
+    },
+    {
+      "name": "耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备施加高于额定电压一定倍数的电压，以检验其绝缘性能的试验"
+    },
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "绝缘材料两端施加直流电压时流过的电流与电压之比"
+    },
+    {
+      "name": "兆欧表",
+      "type": "试验仪器",
+      "desc": "用于测量绝缘电阻的仪表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "辅助及控制回路应耐受工频电压2000V，时间1min。",
+      "type": "强制",
+      "subject": "辅助及控制回路",
+      "action": "耐受工频电压2000V，时间1min",
+      "condition": "耐压试验",
+      "constraint": "2000V, 1min",
+      "related_entities": [
+        "辅助及控制回路",
+        "工频电压"
+      ]
+    },
+    {
+      "content": "在耐压试验前后均应进行绝缘电阻测量，耐压试验前后测量的绝缘电阻值不应小于试验前的测量值。",
+      "type": "强制",
+      "subject": "辅助及控制回路",
+      "action": "进行绝缘电阻测量",
+      "condition": "耐压试验前后",
+      "constraint": "绝缘电阻值不应小于试验前的测量值",
+      "related_entities": [
+        "辅助及控制回路",
+        "绝缘电阻"
+      ]
+    },
+    {
+      "content": "采用500V兆欧表，绝缘电阻值应大于2MΩ。",
+      "type": "强制",
+      "subject": "辅助及控制回路",
+      "action": "使用500V兆欧表测量绝缘电阻",
+      "condition": "绝缘电阻测量",
+      "constraint": "绝缘电阻值应大于2MΩ",
+      "related_entities": [
+        "辅助及控制回路",
+        "兆欧表",
+        "绝缘电阻"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "辅助及控制回路",
+      "target": "工频电压",
+      "type": "承受"
+    },
+    {
+      "source": "辅助及控制回路",
+      "target": "耐压试验",
+      "type": "参与"
+    },
+    {
+      "source": "辅助及控制回路",
+      "target": "绝缘电阻",
+      "type": "测量"
+    },
+    {
+      "source": "辅助及控制回路",
+      "target": "兆欧表",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1008,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4c4c983459a179d1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1008_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

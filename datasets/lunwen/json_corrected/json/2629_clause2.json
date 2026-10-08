@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "传递过电压测量",
+      "type": "试验项目",
+      "desc": "对电容器进行传递过电压测量"
+    },
+    {
+      "name": "机械强度测定",
+      "type": "试验项目",
+      "desc": "对电容器进行机械强度测定"
+    },
+    {
+      "name": "温度系数测定",
+      "type": "试验项目",
+      "desc": "对电容器进行温度系数测定"
+    },
+    {
+      "name": "电容器单元密封性设计试验",
+      "type": "试验项目",
+      "desc": "对电容器单元进行密封性设计试验"
+    },
+    {
+      "name": "电容分压器的高频电容和等值串联电阻测量",
+      "type": "试验项目",
+      "desc": "对电容分压器进行高频电容和等值串联电阻测量"
+    },
+    {
+      "name": "电容分压器低压端子的杂散电容和杂散电导测量",
+      "type": "试验项目",
+      "desc": "对电容分压器低压端子进行杂散电容和杂散电导测量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "如果适用，进行电容分压器的高频电容和等值串联电阻测量",
+      "type": "强制",
+      "subject": "电容分压器",
+      "action": "测量",
+      "condition": "电容分压器存在高频电容和等值串联电阻",
+      "constraint": "无",
+      "related_entities": [
+        "电容分压器的高频电容和等值串联电阻测量"
+      ]
+    },
+    {
+      "content": "如果适用，进行电容分压器低压端子的杂散电容和杂散电导测量",
+      "type": "强制",
+      "subject": "电容分压器",
+      "action": "测量",
+      "condition": "电容分压器存在低压端子的杂散电容和杂散电导",
+      "constraint": "无",
+      "related_entities": [
+        "电容分压器低压端子的杂散电容和杂散电导测量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "传递过电压测量",
+      "target": "电容器",
+      "type": "试验对象"
+    },
+    {
+      "source": "机械强度测定",
+      "target": "电容器",
+      "type": "试验对象"
+    },
+    {
+      "source": "温度系数测定",
+      "target": "电容器",
+      "type": "试验对象"
+    },
+    {
+      "source": "电容器单元密封性设计试验",
+      "target": "电容器单元",
+      "type": "试验对象"
+    },
+    {
+      "source": "电容分压器的高频电容和等值串联电阻测量",
+      "target": "电容分压器",
+      "type": "试验对象"
+    },
+    {
+      "source": "电容分压器低压端子的杂散电容和杂散电导测量",
+      "target": "电容分压器",
+      "type": "试验对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2629,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b2eb3c6d6e9f308d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2629_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

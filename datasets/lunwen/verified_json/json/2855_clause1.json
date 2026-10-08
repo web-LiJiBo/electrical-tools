@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "离子交换器",
+      "type": "电力设备",
+      "desc": "用于电力系统中水处理的设备"
+    },
+    {
+      "name": "树脂",
+      "type": "电力材料",
+      "desc": "离子交换器中用于去除水中杂质的材料"
+    },
+    {
+      "name": "厂家说明书",
+      "type": "技术文档",
+      "desc": "设备制造商提供的操作维护指南"
+    }
+  ],
+  "rules": [
+    {
+      "content": "正常时按照厂家说明书定期更换离子交换器中的树脂",
+      "type": "强制",
+      "subject": "离子交换器",
+      "action": "定期更换树脂",
+      "condition": "正常运行状态",
+      "constraint": "按照厂家说明书规定周期",
+      "related_entities": [
+        "离子交换器",
+        "树脂",
+        "厂家说明书"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "离子交换器",
+      "target": "树脂",
+      "type": "使用"
+    },
+    {
+      "source": "厂家说明书",
+      "target": "离子交换器",
+      "type": "指导"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2846,
+      "source_row_id": "2855",
+      "clause_index": 1,
+      "source_text": "正常时按照厂家说明书定期更换离子交换器中的树脂。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.061317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

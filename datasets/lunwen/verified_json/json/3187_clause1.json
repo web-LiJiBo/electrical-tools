@@ -1,0 +1,106 @@
+{
+  "entities": [
+    {
+      "name": "滤油机",
+      "type": "设备",
+      "desc": "用于变压器油的过滤和净化"
+    },
+    {
+      "name": "脱水缸",
+      "type": "设备",
+      "desc": "滤油机中用于加热和脱水的容器"
+    },
+    {
+      "name": "热油循环过程",
+      "type": "工艺",
+      "desc": "变压器油加热后进行循环处理的过程"
+    },
+    {
+      "name": "变压器",
+      "type": "设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "电抗器",
+      "type": "设备",
+      "desc": "电力系统中用于限制短路电流的电气设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "滤油机加热脱水缸中的温度应控制在65℃±5℃范围内",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "加热脱水缸中的油温",
+      "condition": "热油循环过程中",
+      "constraint": "65℃±5℃",
+      "related_entities": [
+        "滤油机",
+        "脱水缸"
+      ]
+    },
+    {
+      "content": "热油循环时间不应少于48h",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "进行热油循环",
+      "condition": "热油循环过程中",
+      "constraint": "48h",
+      "related_entities": [
+        "滤油机",
+        "变压器",
+        "电抗器"
+      ]
+    },
+    {
+      "content": "热油循环油量不应少于3倍变压器（电抗器）总油量",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "进行热油循环",
+      "condition": "热油循环过程中",
+      "constraint": "3倍变压器（电抗器）总油量",
+      "related_entities": [
+        "滤油机",
+        "变压器",
+        "电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "滤油机",
+      "target": "脱水缸",
+      "type": "使用"
+    },
+    {
+      "source": "滤油机",
+      "target": "变压器",
+      "type": "处理对象"
+    },
+    {
+      "source": "滤油机",
+      "target": "电抗器",
+      "type": "处理对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3178,
+      "source_row_id": "3187",
+      "clause_index": 1,
+      "source_text": "热油循环过程中，滤油机加热脱水缸中的温度应控制在65℃±5℃范围内；热油循环时间不应少于48h，且热油循环油量不应少于3倍变压器（电抗器）总油量。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.477314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

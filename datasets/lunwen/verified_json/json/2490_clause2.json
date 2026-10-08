@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "静态（稳态）试验",
+      "type": "试验",
+      "desc": "电力系统在稳态运行下的性能测试"
+    },
+    {
+      "name": "控制功能试验",
+      "type": "试验",
+      "desc": "验证控制系统功能的试验"
+    },
+    {
+      "name": "负载试验",
+      "type": "试验",
+      "desc": "验证系统在不同负载下的性能试验"
+    },
+    {
+      "name": "备用系统功能试验",
+      "type": "试验",
+      "desc": "验证备用系统功能的试验"
+    },
+    {
+      "name": "保护方式试验",
+      "type": "试验",
+      "desc": "验证保护装置工作方式的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "静态（稳态）试验中包含5.4.1.1控制功能试验",
+      "type": "强制",
+      "subject": "静态（稳态）试验",
+      "action": "包含",
+      "condition": "进行静态（稳态）试验时",
+      "constraint": "必须包含控制功能试验",
+      "related_entities": [
+        "静态（稳态）试验",
+        "控制功能试验"
+      ]
+    },
+    {
+      "content": "静态（稳态）试验中包含5.4.1.2负载试验",
+      "type": "强制",
+      "subject": "静态（稳态）试验",
+      "action": "包含",
+      "condition": "进行静态（稳态）试验时",
+      "constraint": "必须包含负载试验",
+      "related_entities": [
+        "静态（稳态）试验",
+        "负载试验"
+      ]
+    },
+    {
+      "content": "静态（稳态）试验中包含5.4.1.3备用系统功能试验",
+      "type": "强制",
+      "subject": "静态（稳态）试验",
+      "action": "包含",
+      "condition": "进行静态（稳态）试验时",
+      "constraint": "必须包含备用系统功能试验",
+      "related_entities": [
+        "静态（稳态）试验",
+        "备用系统功能试验"
+      ]
+    },
+    {
+      "content": "静态（稳态）试验中包含5.4.1.4保护方式试验",
+      "type": "强制",
+      "subject": "静态（稳态）试验",
+      "action": "包含",
+      "condition": "进行静态（稳态）试验时",
+      "constraint": "必须包含保护方式试验",
+      "related_entities": [
+        "静态（稳态）试验",
+        "保护方式试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "静态（稳态）试验",
+      "target": "控制功能试验",
+      "type": "包含"
+    },
+    {
+      "source": "静态（稳态）试验",
+      "target": "负载试验",
+      "type": "包含"
+    },
+    {
+      "source": "静态（稳态）试验",
+      "target": "备用系统功能试验",
+      "type": "包含"
+    },
+    {
+      "source": "静态（稳态）试验",
+      "target": "保护方式试验",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2490,
+      "source_row_id": "2490",
+      "clause_index": 2,
+      "source_text": "静态（稳态）试验中包含5.4.1.1控制功能试验；5.4.1.2负载试验；5.4.1.3备用系统功能试验；5.4.1.4保护方式试验。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.7954,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.632317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

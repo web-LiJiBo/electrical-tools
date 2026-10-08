@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "12kV/1250A-31.5kA真空开关高压开关柜",
+      "type": "设备",
+      "desc": "一种额定电压12kV，额定电流1250A，额定短路开断电流31.5kA的真空开关高压开关柜"
+    },
+    {
+      "name": "分闸时间",
+      "type": "参数",
+      "desc": "开关从接收到分闸指令到触头分离所需的时间"
+    },
+    {
+      "name": "合闸时间",
+      "type": "参数",
+      "desc": "开关从接收到合闸指令到触头接触所需的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "分闸时间≤40ms",
+      "type": "强制",
+      "subject": "12kV/1250A-31.5kA真空开关高压开关柜",
+      "action": "分闸",
+      "condition": "正常运行状态",
+      "constraint": "分闸时间≤40ms",
+      "related_entities": [
+        "12kV/1250A-31.5kA真空开关高压开关柜",
+        "分闸时间"
+      ]
+    },
+    {
+      "content": "合闸时间≤60ms",
+      "type": "强制",
+      "subject": "12kV/1250A-31.5kA真空开关高压开关柜",
+      "action": "合闸",
+      "condition": "正常运行状态",
+      "constraint": "合闸时间≤60ms",
+      "related_entities": [
+        "12kV/1250A-31.5kA真空开关高压开关柜",
+        "合闸时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "12kV/1250A-31.5kA真空开关高压开关柜",
+      "target": "分闸时间",
+      "type": "包含"
+    },
+    {
+      "source": "12kV/1250A-31.5kA真空开关高压开关柜",
+      "target": "合闸时间",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 439,
+      "source_row_id": "439",
+      "clause_index": 1,
+      "source_text": "12kV/1250A-31.5kA真空开关高压开关柜技术参数特性：表114、15条：分闸时间≤40ms，合闸时间≤60ms"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.225485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

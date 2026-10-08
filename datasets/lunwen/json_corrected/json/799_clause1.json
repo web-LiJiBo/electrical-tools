@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "220kV及以上电压等级变压器",
+      "type": "电力设备",
+      "desc": "220kV及以上的电力变压器"
+    },
+    {
+      "name": "110(66)kV电压等级变压器",
+      "type": "电力设备",
+      "desc": "110kV或66kV的电力变压器"
+    },
+    {
+      "name": "驻厂监造",
+      "type": "质量监督方式",
+      "desc": "在制造现场进行的质量监督活动"
+    },
+    {
+      "name": "监造关键控制点",
+      "type": "质量控制点",
+      "desc": "监造过程中需要重点关注的质量控制环节"
+    },
+    {
+      "name": "监造报告",
+      "type": "质量文档",
+      "desc": "监造过程中的质量监督报告"
+    }
+  ],
+  "rules": [
+    {
+      "content": "220kV及以上电压等级变压器须进行驻厂监造",
+      "type": "强制",
+      "subject": "220kV及以上电压等级变压器",
+      "action": "驻厂监造",
+      "condition": "变压器制造阶段",
+      "constraint": "无",
+      "related_entities": [
+        "220kV及以上电压等级变压器",
+        "驻厂监造"
+      ]
+    },
+    {
+      "content": "110(66)kV电压等级的变压器应按照监造关键控制点的要求进行监造",
+      "type": "强制",
+      "subject": "110(66)kV电压等级变压器",
+      "action": "监造",
+      "condition": "变压器制造阶段",
+      "constraint": "监造关键控制点应在合同中予以明确",
+      "related_entities": [
+        "110(66)kV电压等级变压器",
+        "监造关键控制点",
+        "驻厂监造"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "220kV及以上电压等级变压器",
+      "target": "驻厂监造",
+      "type": "需要进行"
+    },
+    {
+      "source": "110(66)kV电压等级变压器",
+      "target": "监造关键控制点",
+      "type": "依据进行"
+    },
+    {
+      "source": "监造关键控制点",
+      "target": "驻厂监造",
+      "type": "属于"
+    },
+    {
+      "source": "监造报告",
+      "target": "驻厂监造",
+      "type": "结果体现"
+    },
+    {
+      "source": "监造报告",
+      "target": "110(66)kV电压等级变压器",
+      "type": "反映情况"
+    },
+    {
+      "source": "监造报告",
+      "target": "220kV及以上电压等级变压器",
+      "type": "反映情况"
+    }
+  ],
+  "metadata": {
+    "pair_id": 799,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e795c7ea8579927a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\799_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

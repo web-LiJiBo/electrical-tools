@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "直流接地极",
+      "type": "电力设备",
+      "desc": "用于直流输电系统中的接地功能的装置"
+    },
+    {
+      "name": "设计寿命",
+      "type": "技术参数",
+      "desc": "设备从设计到报废的预期使用年限"
+    },
+    {
+      "name": "运行方式",
+      "type": "运行状态",
+      "desc": "设备在实际运行中所处的状态或模式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流接地极的设计寿命在规定的运行方式下一般应不少于30年。",
+      "type": "强制",
+      "subject": "直流接地极",
+      "action": "设计寿命",
+      "condition": "在规定的运行方式下",
+      "constraint": "≥30年",
+      "related_entities": [
+        "直流接地极",
+        "运行方式"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流接地极",
+      "target": "设计寿命",
+      "type": "包含"
+    },
+    {
+      "source": "直流接地极",
+      "target": "运行方式",
+      "type": "运行于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2663,
+      "source_row_id": "2672",
+      "clause_index": 2,
+      "source_text": "直流接地极的设计寿命在规定的运行方式下一般应不少于30年。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.834312+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

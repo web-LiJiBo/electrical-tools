@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送液体介质的泵"
+    },
+    {
+      "name": "冗余配置",
+      "type": "配置方式",
+      "desc": "系统中存在备用设备，以提高可靠性"
+    },
+    {
+      "name": "切换功能",
+      "type": "功能",
+      "desc": "主泵在运行过程中可进行切换操作"
+    },
+    {
+      "name": "自动回切",
+      "type": "功能",
+      "desc": "当切换失败后，系统能够自动恢复到原状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵应冗余配置，并具备切换功能",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "冗余配置并具备切换功能",
+      "condition": "主泵运行过程中",
+      "constraint": "无具体约束",
+      "related_entities": [
+        "主泵",
+        "冗余配置",
+        "切换功能"
+      ]
+    },
+    {
+      "content": "在切换不成功时应能自动回切",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "自动回切",
+      "condition": "主泵切换失败时",
+      "constraint": "无具体约束",
+      "related_entities": [
+        "主泵",
+        "切换功能",
+        "自动回切"
+      ]
+    },
+    {
+      "content": "切换时间的选择应恰当",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "选择恰当的切换时间",
+      "condition": "主泵切换过程中",
+      "constraint": "无具体约束",
+      "related_entities": [
+        "主泵",
+        "切换功能"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "冗余配置",
+      "type": "包含"
+    },
+    {
+      "source": "主泵",
+      "target": "切换功能",
+      "type": "包含"
+    },
+    {
+      "source": "主泵",
+      "target": "自动回切",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2823,
+      "source_row_id": "2832",
+      "clause_index": 2,
+      "source_text": "主泵应冗余配置，并具备切换功能，在切换不成功时应能自动回切，切换时间的选择应恰当。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.038315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

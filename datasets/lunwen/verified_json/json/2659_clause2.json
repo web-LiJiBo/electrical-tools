@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于切断或接通电路"
+    },
+    {
+      "name": "开断命令",
+      "type": "控制信号",
+      "desc": "由控制系统发出的使断路器动作的指令"
+    },
+    {
+      "name": "总电流",
+      "type": "电气参数",
+      "desc": "通过断路器所有相线的电流之和"
+    },
+    {
+      "name": "开断时间",
+      "type": "时间参数",
+      "desc": "从开断命令发出到总电流下降所需的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "从断路器收到开断命令时刻，到流过断路器的总电流开始下降时刻的时间间隔。",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "开断",
+      "condition": "在正常运行状态下，断路器接收到开断命令时",
+      "constraint": "开断时间≤0.05s",
+      "related_entities": [
+        "断路器",
+        "开断命令",
+        "总电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "开断命令",
+      "type": "接收"
+    },
+    {
+      "source": "断路器",
+      "target": "总电流",
+      "type": "承载"
+    },
+    {
+      "source": "开断命令",
+      "target": "断路器",
+      "type": "触发"
+    },
+    {
+      "source": "总电流",
+      "target": "断路器",
+      "type": "反馈"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2650,
+      "source_row_id": "2659",
+      "clause_index": 2,
+      "source_text": "从断路器收到开断命令时刻，到流过断路器的总电流开始下降时刻的时间间隔。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9688,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.818315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

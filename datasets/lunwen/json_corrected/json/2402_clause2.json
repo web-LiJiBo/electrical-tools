@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "外套",
+      "type": "电力设备部件",
+      "desc": "电力设备的外部防护层"
+    },
+    {
+      "name": "气相法白炭黑",
+      "type": "原材料",
+      "desc": "用于生产硅橡胶的原料"
+    },
+    {
+      "name": "硅橡胶护套",
+      "type": "电力设备部件",
+      "desc": "电力设备的外部绝缘保护层"
+    },
+    {
+      "name": "沉淀法白炭黑",
+      "type": "原材料",
+      "desc": "用于生产硅橡胶的原料"
+    },
+    {
+      "name": "拉断伸长率",
+      "type": "技术参数",
+      "desc": "材料断裂时的伸长率"
+    },
+    {
+      "name": "机械扯断强度",
+      "type": "技术参数",
+      "desc": "材料在机械力作用下断裂时的强度"
+    },
+    {
+      "name": "抗撕裂强度",
+      "type": "技术参数",
+      "desc": "材料抵抗撕裂的能力"
+    },
+    {
+      "name": "DL/T376",
+      "type": "技术标准",
+      "desc": "电力行业相关技术标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "外套应采用气相法白炭黑生产硅橡胶，禁止使用沉淀法白炭黑生产硅橡胶",
+      "type": "强制",
+      "subject": "外套",
+      "action": "采用原材料生产",
+      "condition": "生产外套",
+      "constraint": "必须使用气相法白炭黑，禁止使用沉淀法白炭黑",
+      "related_entities": [
+        "外套",
+        "气相法白炭黑",
+        "沉淀法白炭黑"
+      ]
+    },
+    {
+      "content": "硅橡胶护套厚度不应小于5mm",
+      "type": "强制",
+      "subject": "硅橡胶护套",
+      "action": "确定厚度",
+      "condition": "生产硅橡胶护套",
+      "constraint": "厚度≥5mm",
+      "related_entities": [
+        "硅橡胶护套"
+      ]
+    },
+    {
+      "content": "拉断伸长率不应小于270%",
+      "type": "强制",
+      "subject": "硅橡胶护套",
+      "action": "确定拉断伸长率",
+      "condition": "生产硅橡胶护套",
+      "constraint": "拉断伸长率≥270%",
+      "related_entities": [
+        "硅橡胶护套"
+      ]
+    },
+    {
+      "content": "机械扯断强度不应小于4.7MPa",
+      "type": "强制",
+      "subject": "硅橡胶护套",
+      "action": "确定机械扯断强度",
+      "condition": "生产硅橡胶护套",
+      "constraint": "机械扯断强度≥4.7MPa",
+      "related_entities": [
+        "硅橡胶护套"
+      ]
+    },
+    {
+      "content": "抗撕裂强度（直角法）不应小于12kN/m",
+      "type": "强制",
+      "subject": "硅橡胶护套",
+      "action": "确定抗撕裂强度",
+      "condition": "生产硅橡胶护套",
+      "constraint": "抗撕裂强度（直角法）≥12kN/m",
+      "related_entities": [
+        "硅橡胶护套"
+      ]
+    },
+    {
+      "content": "其余技术参数应满足DL/T376",
+      "type": "强制",
+      "subject": "硅橡胶护套",
+      "action": "确定技术参数",
+      "condition": "生产硅橡胶护套",
+      "constraint": "技术参数应满足DL/T376",
+      "related_entities": [
+        "硅橡胶护套",
+        "DL/T376"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外套",
+      "target": "气相法白炭黑",
+      "type": "采用原材料"
+    },
+    {
+      "source": "外套",
+      "target": "沉淀法白炭黑",
+      "type": "禁止采用原材料"
+    },
+    {
+      "source": "硅橡胶护套",
+      "target": "拉断伸长率",
+      "type": "确定技术参数"
+    },
+    {
+      "source": "硅橡胶护套",
+      "target": "机械扯断强度",
+      "type": "确定技术参数"
+    },
+    {
+      "source": "硅橡胶护套",
+      "target": "抗撕裂强度",
+      "type": "确定技术参数"
+    },
+    {
+      "source": "硅橡胶护套",
+      "target": "DL/T376",
+      "type": "满足技术标准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2402,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "50668e6b1df91d69",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2402_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

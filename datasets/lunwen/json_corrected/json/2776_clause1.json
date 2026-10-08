@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "气体湿度",
+      "type": "电力设备状态参数",
+      "desc": "气体中的水分含量"
+    },
+    {
+      "name": "额定压力",
+      "type": "电力设备运行参数",
+      "desc": "设备正常工作时的压力值"
+    },
+    {
+      "name": "SF6湿度",
+      "type": "电力设备状态参数",
+      "desc": "六氟化硫气体中的水分含量"
+    },
+    {
+      "name": "GB/T11022-2011",
+      "type": "行业标准",
+      "desc": "高压开关设备和控制设备的标准"
+    },
+    {
+      "name": "5.2",
+      "type": "标准条款",
+      "desc": "GB/T11022-2011标准中的具体条款"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体湿度应在充入额定压力的气体至少24h后进行检査。",
+      "type": "强制",
+      "subject": "气体湿度",
+      "action": "检查",
+      "condition": "充入额定压力的气体",
+      "constraint": "至少24小时后",
+      "related_entities": [
+        "气体湿度",
+        "额定压力"
+      ]
+    },
+    {
+      "content": "SF6湿度不应超过GB/T11022-2011的5.2中确定的限值。",
+      "type": "强制",
+      "subject": "SF6湿度",
+      "action": "不超过限值",
+      "condition": "充入额定压力的气体至少24h后",
+      "constraint": "GB/T11022-2011 5.2条款确定的限值",
+      "related_entities": [
+        "SF6湿度",
+        "GB/T11022-2011",
+        "5.2"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体湿度",
+      "target": "额定压力",
+      "type": "依赖于"
+    },
+    {
+      "source": "SF6湿度",
+      "target": "气体湿度",
+      "type": "从属与"
+    },
+    {
+      "source": "SF6湿度",
+      "target": "GB/T11022-2011",
+      "type": "遵循标准"
+    },
+    {
+      "source": "SF6湿度",
+      "target": "5.2",
+      "type": "遵循条款"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2776,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "da19a6903683dfd0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2776_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

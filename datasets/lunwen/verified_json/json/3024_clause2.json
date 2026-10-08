@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "气体继电器",
+      "type": "电力设备",
+      "desc": "变压器或电抗器内部故障检测装置"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "将一种电压等级的交流电能转变为另一种电压等级交流电能的静止电气设备"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "用于限制短路电流和吸收系统无功功率的电力设备"
+    },
+    {
+      "name": "顶盖",
+      "type": "电力设备部件",
+      "desc": "变压器或电抗器上部的盖板"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装有气体继电器的变压器、电抗器，除制造厂规定不需要设置安装坡度外，应使其顶盖沿气体继电器气流方向有1%～1.5%的升高坡度。",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "设置安装坡度",
+      "condition": "装有气体继电器且制造厂未规定不需要设置安装坡度",
+      "constraint": "顶盖沿气体继电器气流方向有1%～1.5%的升高坡度",
+      "related_entities": [
+        "气体继电器",
+        "变压器",
+        "电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体继电器",
+      "target": "变压器",
+      "type": "安装于"
+    },
+    {
+      "source": "气体继电器",
+      "target": "电抗器",
+      "type": "安装于"
+    },
+    {
+      "source": "顶盖",
+      "target": "气体继电器",
+      "type": "沿气流方向倾斜"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3015,
+      "source_row_id": "3024",
+      "clause_index": 2,
+      "source_text": "装有气体继电器的变压器、电抗器，除制造厂规定不需要设置安装坡度外，应使其顶盖沿气体继电器气流方向有l%～1.5%的升高坡度。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.8889,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.278314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

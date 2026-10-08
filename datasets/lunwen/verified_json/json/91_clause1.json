@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器的储油容器"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "变压器油箱内填充的气体"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "用于电能转换和传输的电气设备"
+    },
+    {
+      "name": "油面",
+      "type": "物理参数",
+      "desc": "变压器油箱内油液表面"
+    },
+    {
+      "name": "压力",
+      "type": "物理参数",
+      "desc": "油箱内气体的压力"
+    },
+    {
+      "name": "波纹油箱",
+      "type": "电力设备",
+      "desc": "一种特殊设计的变压器油箱"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油箱内部充有气体的密封式变压器油面上部应承受60kPa压力（波纹油箱除外）。",
+      "type": "强制",
+      "subject": "变压器油箱",
+      "action": "承受压力",
+      "condition": "变压器为密封式且油箱内充有气体",
+      "constraint": "油面上部承受60kPa压力",
+      "related_entities": [
+        "油箱",
+        "气体",
+        "变压器"
+      ]
+    },
+    {
+      "content": "其剩余压力应不小于规定值的70%",
+      "type": "强制",
+      "subject": "变压器油箱",
+      "action": "保持压力",
+      "condition": "变压器为密封式且油箱内充有气体",
+      "constraint": "剩余压力≥规定值×70%",
+      "related_entities": [
+        "油箱",
+        "气体",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油箱",
+      "target": "气体",
+      "type": "含有"
+    },
+    {
+      "source": "油箱",
+      "target": "变压器",
+      "type": "属于"
+    },
+    {
+      "source": "油箱",
+      "target": "油面",
+      "type": "承载"
+    },
+    {
+      "source": "油面",
+      "target": "气体",
+      "type": "覆盖"
+    },
+    {
+      "source": "变压器",
+      "target": "油箱",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 91,
+      "source_row_id": "91",
+      "clause_index": 1,
+      "source_text": "油箱内部充有气体的密封式变压器油面上部应承受60kPa压力（波纹油箱除外）。其剩余压力应不小于规定值的70%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.853602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

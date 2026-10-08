@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "辅助回路",
+      "type": "电力系统回路",
+      "desc": "电力系统中用于提供辅助功能的电路"
+    },
+    {
+      "name": "控制回路",
+      "type": "电力系统回路",
+      "desc": "电力系统中用于控制设备运行状态的电路"
+    },
+    {
+      "name": "电流",
+      "type": "电气参数",
+      "desc": "电路中通过导体的电荷量随时间的变化率"
+    },
+    {
+      "name": "接地线",
+      "type": "电气设备",
+      "desc": "连接电气设备与地的导线，用于保护人身安全"
+    },
+    {
+      "name": "绝缘电阻表",
+      "type": "检测仪器",
+      "desc": "用于测量电气设备绝缘性能的仪表"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电能的导电线路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "检查辅助回路和控制回路电流、接地线是否完好",
+      "type": "强制",
+      "subject": "电力系统维护人员",
+      "action": "检查",
+      "condition": "定期维护或故障排查时",
+      "constraint": "无",
+      "related_entities": [
+        "辅助回路",
+        "控制回路",
+        "接地线"
+      ]
+    },
+    {
+      "content": "用1000V绝缘电阻表测量电缆的绝缘电阻，应无显著下降",
+      "type": "强制",
+      "subject": "电力系统维护人员",
+      "action": "测量",
+      "condition": "定期维护或故障排查时",
+      "constraint": "绝缘电阻表电压等级为1000V",
+      "related_entities": [
+        "电缆",
+        "绝缘电阻表"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "辅助回路",
+      "target": "电流",
+      "type": "包含"
+    },
+    {
+      "source": "控制回路",
+      "target": "电流",
+      "type": "包含"
+    },
+    {
+      "source": "接地线",
+      "target": "辅助回路",
+      "type": "连接"
+    },
+    {
+      "source": "接地线",
+      "target": "控制回路",
+      "type": "连接"
+    },
+    {
+      "source": "电缆",
+      "target": "绝缘电阻表",
+      "type": "测量对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1269,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d3586d94a626a510",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1269_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

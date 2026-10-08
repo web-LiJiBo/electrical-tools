@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "a）击穿电压：≥45kVb）介质损耗因数：在油温100±1℃和场强1MV/m的测试条件下，对于U0=190kV的电缆，应不大于0.01，对于U0≤127kV的电缆，应不大于0.03；c）油中溶解气体分析：各气体含量满足下列注意值要求（μL/L）,可燃气体总量＜1500；H2＜500；C2H2痕量；CO＜100；CO2＜1000；CH4＜200；C2H4＜200；C2H6＜200。试验方法按GB7252",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 521,
+      "source_row_id": "521",
+      "clause_index": 2,
+      "source_text": "a）击穿电压：≥45kVb）介质损耗因数：在油温100±1℃和场强1MV/m的测试条件下，对于U0=190kV的电缆，应不大于0.01，对于U0≤127kV的电缆，应不大于0.03；c）油中溶解气体分析：各气体含量满足下列注意值要求（μL/L）,可燃气体总量＜1500；H2＜500；C2H2痕量；CO＜100；CO2＜1000；CH4＜200；C2H4＜200；C2H6＜200。试验方法按GB7252"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.322483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

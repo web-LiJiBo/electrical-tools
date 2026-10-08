@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "按照DL/T393-2010《输变电设备状态检修试验规程》开展红外检测，新建、改扩建或大修后的变压器（电抗器），应在投运带负荷后不超过1个月内(但至少在24h以后)进行一次精确检测。220kV及以上电压等级的变压器（抗器）每年在季节变化前后应至少各进行一次精确检测。在高温大负荷运行期间，对220kV及以上电压等级变压器（电抗器）应增加红外检测次数。精确检测的测量数据和图像应存入数据库",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2394,
+      "source_row_id": "2394",
+      "clause_index": 1,
+      "source_text": "按照DL/T393-2010《输变电设备状态检修试验规程》开展红外检测，新建、改扩建或大修后的变压器（电抗器），应在投运带负荷后不超过1个月内(但至少在24h以后)进行一次精确检测。220kV及以上电压等级的变压器（抗器）每年在季节变化前后应至少各进行一次精确检测。在高温大负荷运行期间，对220kV及以上电压等级变压器（电抗器）应增加红外检测次数。精确检测的测量数据和图像应存入数据库"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:01.502549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

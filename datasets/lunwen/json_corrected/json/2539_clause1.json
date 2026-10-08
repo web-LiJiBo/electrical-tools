@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "油浸式真空有载分接开关",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中的有载调压装置"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "变压器本体",
+      "type": "电力设备",
+      "desc": "变压器的主要组成部分"
+    },
+    {
+      "name": "油色谱分析",
+      "type": "试验方法",
+      "desc": "一种检测变压器油中溶解气体成分的方法"
+    },
+    {
+      "name": "乙炔",
+      "type": "化学物质",
+      "desc": "一种在电力设备中可能产生的气体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行中油浸式真空有载分接开关绝缘油含水量及击穿电压试验周期，与变压器本体保持一致。",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "进行绝缘油含水量及击穿电压试验",
+      "condition": "运行中",
+      "constraint": "试验周期与变压器本体保持一致",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "变压器本体"
+      ]
+    },
+    {
+      "content": "油色谱分析，检测周期与变压器本体一致，乙炔含量的注意值为40μL/L。",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "进行油色谱分析",
+      "condition": "运行中",
+      "constraint": "检测周期与变压器本体保持一致，乙炔含量注意值为40μL/L",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "变压器本体",
+        "油色谱分析"
+      ]
+    },
+    {
+      "content": "若乙炔含量超过注意值，应缩短检测周期，增长量不宜大于10μL/L。",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "缩短检测周期",
+      "condition": "乙炔含量超过40μL/L",
+      "constraint": "增长量不宜大于10μL/L",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "油色谱分析"
+      ]
+    },
+    {
+      "content": "若乙炔含量超过以上数值与制造厂联系进一步分析处理。",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "与制造厂联系进一步分析处理",
+      "condition": "乙炔含量超过40μL/L且增长量大于10μL/L",
+      "constraint": "无",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "油色谱分析"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "变压器本体",
+      "type": "并联"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "油色谱分析",
+      "type": "采用"
+    },
+    {
+      "source": "油色谱分析",
+      "target": "乙炔",
+      "type": "检测对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2539,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5cedfc44d71abfff",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2539_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

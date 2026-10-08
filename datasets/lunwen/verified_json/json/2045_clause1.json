@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "钢管部件",
+      "type": "电力设备",
+      "desc": "电力系统中使用的钢管部件"
+    },
+    {
+      "name": "热浸镀锌",
+      "type": "防腐工艺",
+      "desc": "将钢管部件完全浸入熔融锌液中进行防腐处理的方法"
+    },
+    {
+      "name": "热喷涂",
+      "type": "防腐工艺",
+      "desc": "通过高温使锌粉熔化并喷射到钢管部件表面形成防腐层的方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "钢管部件的防腐处理宜采用热浸镀锌。",
+      "type": "强制",
+      "subject": "钢管部件",
+      "action": "防腐处理",
+      "condition": "一般情况下",
+      "constraint": "优先采用热浸镀锌",
+      "related_entities": [
+        "钢管部件",
+        "热浸镀锌"
+      ]
+    },
+    {
+      "content": "当部件较大，采用热浸镀锌有困难时，可采用热喷涂进行防腐处理。",
+      "type": "强制",
+      "subject": "钢管部件",
+      "action": "防腐处理",
+      "condition": "部件较大且热浸镀锌有困难",
+      "constraint": "采用热喷涂进行防腐处理",
+      "related_entities": [
+        "钢管部件",
+        "热喷涂"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢管部件",
+      "target": "热浸镀锌",
+      "type": "采用"
+    },
+    {
+      "source": "钢管部件",
+      "target": "热喷涂",
+      "type": "备选采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2045,
+      "source_row_id": "2045",
+      "clause_index": 1,
+      "source_text": "钢管部件的防腐处理宜采用热浸镀锌。当部件较大，采用热浸镀锌有困难时，可采用热喷涂进行防腐处理"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.062968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

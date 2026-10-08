@@ -1,0 +1,50 @@
+{
+  "entities": [
+    {
+      "name": "两台泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送液体的机械设备"
+    },
+    {
+      "name": "定期轮换运行",
+      "type": "操作规程",
+      "desc": "对两台泵进行周期性的切换使用"
+    }
+  ],
+  "rules": [
+    {
+      "content": "两台泵应定期轮换运行",
+      "type": "强制",
+      "subject": "两台泵",
+      "action": "定期轮换运行",
+      "condition": "两台泵同时运行时",
+      "constraint": "每季度至少轮换一次",
+      "related_entities": [
+        "两台泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "两台泵",
+      "target": "定期轮换运行",
+      "type": "执行"
+    },
+    {
+      "source": "定期轮换运行",
+      "target": "两台泵",
+      "type": "被执行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 217,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e1007c8a8940aeaf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\217_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

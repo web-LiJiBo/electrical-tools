@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "主循环泵",
+      "type": "设备",
+      "desc": "电力系统中用于循环冷却水的设备"
+    },
+    {
+      "name": "定时切换",
+      "type": "操作",
+      "desc": "按照预设时间间隔进行的主循环泵切换操作"
+    },
+    {
+      "name": "手动切换",
+      "type": "操作",
+      "desc": "通过人工操作进行的主循环泵切换操作"
+    },
+    {
+      "name": "远程切换",
+      "type": "操作",
+      "desc": "通过远程控制进行的主循环泵切换操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应具有主循环泵定时切换、手动切换、远程切换功能。",
+      "type": "强制",
+      "subject": "主循环泵",
+      "action": "切换",
+      "condition": "主循环泵运行过程中",
+      "constraint": "具备定时切换、手动切换、远程切换功能",
+      "related_entities": [
+        "主循环泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主循环泵",
+      "target": "定时切换",
+      "type": "支持"
+    },
+    {
+      "source": "主循环泵",
+      "target": "手动切换",
+      "type": "支持"
+    },
+    {
+      "source": "主循环泵",
+      "target": "远程切换",
+      "type": "支持"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2823,
+      "source_row_id": "2832",
+      "clause_index": 1,
+      "source_text": "c）应具有主循环泵定时切换、手动切换、远程切换功能。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.038315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

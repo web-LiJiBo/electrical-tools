@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体绝缘电流互感器",
+      "type": "电力设备",
+      "desc": "一种采用SF6气体作为绝缘介质的电流互感器"
+    },
+    {
+      "name": "老练试验",
+      "type": "试验方法",
+      "desc": "一种用于检测电气设备性能的试验方法"
+    },
+    {
+      "name": "工频耐压试验",
+      "type": "试验方法",
+      "desc": "一种通过工频交流电压对电气设备进行耐压试验的方法"
+    },
+    {
+      "name": "额定相对地电压",
+      "type": "技术参数",
+      "desc": "设备在正常运行时相对于地的最大允许电压"
+    },
+    {
+      "name": "出厂试验",
+      "type": "试验方法",
+      "desc": "设备制造完成后进行的出厂前的全面试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "老练试验程序加1.1倍设备额定相对地电压10min，然后下降至0。施加1.0倍设备额定相对地电压5min，接着升至1.73倍额定相对地电压3min，然后下降至0。",
+      "type": "强制",
+      "subject": "SF6气体绝缘电流互感器",
+      "action": "进行老练试验",
+      "condition": "设备安装完毕后",
+      "constraint": "试验电压分别为1.1倍、1.0倍、1.73倍额定相对地电压，持续时间分别为10min、5min、3min",
+      "related_entities": [
+        "SF6气体绝缘电流互感器",
+        "老练试验"
+      ]
+    },
+    {
+      "content": "老练试验后应进行工频耐压，所加试验电压值为出厂试验值的90%",
+      "type": "强制",
+      "subject": "SF6气体绝缘电流互感器",
+      "action": "进行工频耐压试验",
+      "condition": "完成老练试验后",
+      "constraint": "试验电压为出厂试验值的90%",
+      "related_entities": [
+        "SF6气体绝缘电流互感器",
+        "工频耐压试验",
+        "出厂试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体绝缘电流互感器",
+      "target": "老练试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "SF6气体绝缘电流互感器",
+      "target": "工频耐压试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "老练试验",
+      "target": "工频耐压试验",
+      "type": "后续试验"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1500,
+      "source_row_id": "1500",
+      "clause_index": 2,
+      "source_text": "SF6气体绝缘电流互感器的安装：（二）老练试验程序加1.1倍设备额定相对地电压10min，然后下降至0。施加1.0倍设备额定相对地电压5min，接着升至1.73倍额定相对地电压3min，然后下降至0。（三）老练试验后应进行工频耐压，所加试验电压值为出厂试验值的90%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9833,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.451370+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

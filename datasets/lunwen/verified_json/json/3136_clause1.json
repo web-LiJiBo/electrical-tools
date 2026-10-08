@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "换流站",
+      "type": "电力设施",
+      "desc": "高压直流输电系统中的关键设备"
+    },
+    {
+      "name": "极址",
+      "type": "选址",
+      "desc": "换流站或接地极的选址方案"
+    },
+    {
+      "name": "接地极",
+      "type": "电力设施",
+      "desc": "高压直流输电系统中用于接地的设施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个换流站应提出两个及以上极址方案",
+      "type": "强制",
+      "subject": "换流站",
+      "action": "提出极址方案",
+      "condition": "换流站选址阶段",
+      "constraint": "至少两个极址方案",
+      "related_entities": [
+        "换流站",
+        "极址"
+      ]
+    },
+    {
+      "content": "提出接地极极址的推荐方案",
+      "type": "强制",
+      "subject": "换流站",
+      "action": "提出接地极极址推荐方案",
+      "condition": "换流站选址阶段",
+      "constraint": "需提出推荐方案",
+      "related_entities": [
+        "换流站",
+        "接地极"
+      ]
+    },
+    {
+      "content": "确实因选择困难或其他原因只能提供一个极址方案的应提供充分依据和详细说明",
+      "type": "强制",
+      "subject": "换流站",
+      "action": "提供极址方案",
+      "condition": "换流站选址阶段",
+      "constraint": "仅能提供一个极址方案时需提供充分依据和详细说明",
+      "related_entities": [
+        "换流站",
+        "极址"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流站",
+      "target": "极址",
+      "type": "提出方案"
+    },
+    {
+      "source": "换流站",
+      "target": "接地极",
+      "type": "提出推荐方案"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3127,
+      "source_row_id": "3136",
+      "clause_index": 1,
+      "source_text": "在充分考虑极址用地可行性和接地极对周边相关设施影响的前提下，每个换流站应提出两个及以上极址方案，并提出接地极极址的推荐方案。确实因选择团因难或其他原因只能提供一个极址方案的应提供充分依据和详细说明。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9571,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.414314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

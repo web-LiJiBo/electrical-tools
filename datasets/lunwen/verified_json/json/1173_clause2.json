@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "配电变压器",
+      "type": "电力设备",
+      "desc": "用于配电系统中的变压器"
+    },
+    {
+      "name": "Dyn11接线组别",
+      "type": "技术参数",
+      "desc": "配电变压器的接线方式之一"
+    },
+    {
+      "name": "单台变压器容量",
+      "type": "技术参数",
+      "desc": "配电变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电变压器接线组别一般采用Dyn11，单台变压器容量不宜超过800kVA",
+      "type": "强制",
+      "subject": "配电变压器",
+      "action": "接线组别选择与容量配置",
+      "condition": "新建或改造10kV配电系统",
+      "constraint": "接线组别采用Dyn11，单台变压器容量不超过800kVA",
+      "related_entities": [
+        "配电变压器",
+        "Dyn11接线组别",
+        "单台变压器容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电变压器",
+      "target": "Dyn11接线组别",
+      "type": "采用"
+    },
+    {
+      "source": "配电变压器",
+      "target": "单台变压器容量",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1173,
+      "source_row_id": "1173",
+      "clause_index": 2,
+      "source_text": "c)配电变压器接线组别一般采用Dyn11，单台变压器容量不宜超过800kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.963,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.074950+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

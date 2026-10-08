@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "name": "箱式变电站",
+      "type": "电力设备",
+      "desc": "一种将高压开关设备、配电变压器和低压配电装置等组合在一起的成套配电装置"
+    },
+    {
+      "name": "电缆",
+      "type": "电力线路",
+      "desc": "一种用于传输电能的导体，通常由多股铜或铝线芯与绝缘层组成"
+    },
+    {
+      "name": "负荷",
+      "type": "电力负荷",
+      "desc": "用电设备在某一时刻实际消耗的功率"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "低压配电网",
+      "type": "电力系统",
+      "desc": "从变电站到用户终端的电力网络，负责分配电能至各个用户"
+    }
+  ],
+  "rules": [
+    {
+      "content": "箱式变电站的变压器容量应根据负荷需要选取，一般不宜大于800kVA",
+      "type": "强制",
+      "subject": "箱式变电站",
+      "action": "选取变压器容量",
+      "condition": "负荷需要",
+      "constraint": "不宜大于800kVA",
+      "related_entities": [
+        "箱式变电站",
+        "负荷",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "箱式变电站",
+      "target": "电缆",
+      "type": "使用"
+    },
+    {
+      "source": "箱式变电站",
+      "target": "变压器",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "负荷",
+      "type": "承载"
+    },
+    {
+      "source": "变压器",
+      "target": "低压配电网",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1140,
+      "source_row_id": "1140",
+      "clause_index": 2,
+      "source_text": "在主要街道、路间绿地、住宅小区及建筑群中，也可采用电缆进出线的箱式变电站。箱式变电站的变压器容量应根据负荷需要选取，一般不宜大于800kVA，以控制低压配电网的供电距离"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.033947+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

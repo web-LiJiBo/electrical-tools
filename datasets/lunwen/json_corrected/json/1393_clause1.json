@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "绝缘线",
+      "type": "电力线路",
+      "desc": "架设在杆塔上的输电导线"
+    },
+    {
+      "name": "交通困难地区",
+      "type": "地理环境",
+      "desc": "道路狭窄、人烟稀少等不易通行的区域"
+    },
+    {
+      "name": "中压",
+      "type": "电压等级",
+      "desc": "电力系统中用于配电的电压等级"
+    },
+    {
+      "name": "低压",
+      "type": "电压等级",
+      "desc": "电力系统中用于终端用户的电压等级"
+    },
+    {
+      "name": "地面",
+      "type": "地理环境",
+      "desc": "绝缘线与地面之间的垂直距离"
+    },
+    {
+      "name": "跨越物",
+      "type": "地理环境",
+      "desc": "绝缘线跨越的障碍物"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘线在最大弧垂时，对地面及跨越物的最小垂直距离：交通困难地区：中压4.5米，低压4米",
+      "type": "强制",
+      "subject": "电力设施运行维护部门",
+      "action": "设置绝缘线与地面及跨越物的最小垂直距离",
+      "condition": "在交通困难地区的中压和低压绝缘线安装过程中",
+      "constraint": "中压4.5米，低压4米",
+      "related_entities": [
+        "绝缘线",
+        "交通困难地区",
+        "中压",
+        "低压",
+        "地面",
+        "跨越物"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘线",
+      "target": "地面",
+      "type": "垂直距离"
+    },
+    {
+      "source": "绝缘线",
+      "target": "跨越物",
+      "type": "垂直距离"
+    },
+    {
+      "source": "绝缘线",
+      "target": "交通困难地区",
+      "type": "适用范围"
+    },
+    {
+      "source": "绝缘线",
+      "target": "中压",
+      "type": "电压等级"
+    },
+    {
+      "source": "绝缘线",
+      "target": "低压",
+      "type": "电压等级"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1393,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e43686414a4caacc",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1393_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

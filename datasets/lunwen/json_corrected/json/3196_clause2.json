@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "直流参考电压",
+      "type": "电气参数",
+      "desc": "直流系统中用于参考的电压值"
+    },
+    {
+      "name": "出厂值",
+      "type": "电气参数",
+      "desc": "设备制造厂家规定的额定值或出厂试验值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流参考电压应不低于出厂值的95%",
+      "type": "强制",
+      "subject": "直流参考电压",
+      "action": "保持在规定范围内",
+      "condition": "运行中的直流系统",
+      "constraint": "≥0.95×出厂值",
+      "related_entities": [
+        "直流参考电压",
+        "出厂值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流参考电压",
+      "target": "出厂值",
+      "type": "参照"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3196,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1a9435c4454b5fd8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3196_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "高压直流隔离开关",
+      "type": "电力设备",
+      "desc": "高压直流系统中的隔离开关设备"
+    },
+    {
+      "name": "高压直流接地开关",
+      "type": "电力设备",
+      "desc": "高压直流系统中的接地开关设备"
+    },
+    {
+      "name": "机械寿命",
+      "type": "技术参数",
+      "desc": "设备在机械操作下的耐久度指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高压直流隔离开关和接地开关的机械寿命额定值为1000次、2000次",
+      "type": "强制",
+      "subject": "高压直流隔离开关和接地开关",
+      "action": "机械寿命试验",
+      "condition": "出厂前",
+      "constraint": "高压直流隔离开关1000次，高压直流接地开关2000次",
+      "related_entities": [
+        "高压直流隔离开关",
+        "高压直流接地开关"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高压直流隔离开关",
+      "target": "机械寿命",
+      "type": "包含"
+    },
+    {
+      "source": "高压直流接地开关",
+      "target": "机械寿命",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 240,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ba7b7f8b7e364d1c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\240_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

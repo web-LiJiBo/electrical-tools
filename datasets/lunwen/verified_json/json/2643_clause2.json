@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "避雷器",
+      "type": "电力设备",
+      "desc": "一种用于保护电气系统免受过电压损害的设备"
+    },
+    {
+      "name": "持续运行电压",
+      "type": "电力参数",
+      "desc": "电气设备长期稳定运行时所承受的最大电压值"
+    },
+    {
+      "name": "无线电干扰水平",
+      "type": "电力参数",
+      "desc": "电气设备在运行过程中产生的无线电干扰强度"
+    },
+    {
+      "name": "μV",
+      "type": "单位",
+      "desc": "微伏，电压单位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1.05倍持续运行电压下，避雷器最大无线电干扰水平不应超过500μV",
+      "type": "强制",
+      "subject": "避雷器",
+      "action": "限制无线电干扰水平",
+      "condition": "在1.05倍持续运行电压下",
+      "constraint": "无线电干扰水平≤500μV",
+      "related_entities": [
+        "避雷器",
+        "持续运行电压",
+        "无线电干扰水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "避雷器",
+      "target": "持续运行电压",
+      "type": "承受电压"
+    },
+    {
+      "source": "避雷器",
+      "target": "无线电干扰水平",
+      "type": "产生干扰"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2634,
+      "source_row_id": "2643",
+      "clause_index": 2,
+      "source_text": "在1.05倍持续运行电压下，避雷器最大无线电干扰水平不应超过500μV。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.801316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

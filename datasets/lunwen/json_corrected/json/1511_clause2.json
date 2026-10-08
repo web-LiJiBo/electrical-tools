@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "串联电抗器",
+      "type": "电力设备",
+      "desc": "用于电力系统中限制短路电流的电感元件"
+    },
+    {
+      "name": "干式电抗器",
+      "type": "电力设备",
+      "desc": "一种不使用油作为绝缘介质的电抗器"
+    },
+    {
+      "name": "油浸式电抗器",
+      "type": "电力设备",
+      "desc": "一种使用油作为绝缘介质的电抗器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "串联电抗器选型时，可采用干式电抗器或油浸式电抗器",
+      "type": "强制",
+      "subject": "串联电抗器选型",
+      "action": "选择电抗器类型",
+      "condition": "在电力系统中需要限制短路电流时",
+      "constraint": "根据实际运行环境和需求选择合适的电抗器类型",
+      "related_entities": [
+        "串联电抗器",
+        "干式电抗器",
+        "油浸式电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "串联电抗器",
+      "target": "干式电抗器",
+      "type": "可选配"
+    },
+    {
+      "source": "串联电抗器",
+      "target": "油浸式电抗器",
+      "type": "可选配"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1511,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "cd66df4a11a1ff28",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1511_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

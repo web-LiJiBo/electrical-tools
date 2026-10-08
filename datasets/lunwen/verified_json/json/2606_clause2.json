@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "架空电力线路保护区",
+      "type": "电力设施保护区",
+      "desc": "架设架空电力线路的区域"
+    },
+    {
+      "name": "建筑物",
+      "type": "建筑物",
+      "desc": "供人们居住、工作、学习、娱乐等用途的建筑"
+    },
+    {
+      "name": "构筑物",
+      "type": "构筑物",
+      "desc": "不供人们居住、工作等用途的建筑物"
+    },
+    {
+      "name": "植物",
+      "type": "植被",
+      "desc": "树木、灌木等植物"
+    },
+    {
+      "name": "电力设施",
+      "type": "电力设备",
+      "desc": "发电、输电、变电、配电、用电等电力系统中的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "任何单位或个人在架空电力线路保护区内，不得兴建建筑物、构筑物",
+      "type": "强制",
+      "subject": "任何单位或个人",
+      "action": "不得兴建建筑物、构筑物",
+      "condition": "在架空电力线路保护区内",
+      "constraint": "不得兴建建筑物、构筑物",
+      "related_entities": [
+        "架空电力线路保护区",
+        "建筑物",
+        "构筑物"
+      ]
+    },
+    {
+      "content": "任何单位或个人在架空电力线路保护区内，不得种植可能危及电力设施安全的植物",
+      "type": "强制",
+      "subject": "任何单位或个人",
+      "action": "不得种植可能危及电力设施安全的植物",
+      "condition": "在架空电力线路保护区内",
+      "constraint": "不得种植可能危及电力设施安全的植物",
+      "related_entities": [
+        "架空电力线路保护区",
+        "植物",
+        "电力设施"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "架空电力线路保护区",
+      "target": "建筑物",
+      "type": "禁止建设"
+    },
+    {
+      "source": "架空电力线路保护区",
+      "target": "构筑物",
+      "type": "禁止建设"
+    },
+    {
+      "source": "架空电力线路保护区",
+      "target": "植物",
+      "type": "禁止种植"
+    },
+    {
+      "source": "架空电力线路保护区",
+      "target": "电力设施",
+      "type": "保护电力设施"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2606,
+      "source_row_id": "2606",
+      "clause_index": 2,
+      "source_text": "任何单位或个人在架空电力线路保护区内，必须遵守下列规定：（三）不得兴建建筑物、构筑物；（四）不得种植可能危及电力设施安全的植物。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.6839,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.770316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

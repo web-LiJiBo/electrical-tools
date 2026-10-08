@@ -1,0 +1,165 @@
+{
+  "entities": [
+    {
+      "name": "瓶装工业六氟化硫",
+      "type": "产品",
+      "desc": "瓶装工业用六氟化硫气体"
+    },
+    {
+      "name": "表2",
+      "type": "表格",
+      "desc": "瓶装工业六氟化硫抽样检验标准表"
+    },
+    {
+      "name": "随机抽样检验",
+      "type": "检验方法",
+      "desc": "从产品中随机抽取样本进行检验的方法"
+    },
+    {
+      "name": "成批验收",
+      "type": "验收方式",
+      "desc": "对一批产品进行整体验收的方式"
+    },
+    {
+      "name": "指标",
+      "type": "检测项目",
+      "desc": "瓶装工业六氟化硫气体的技术参数或性能指标"
+    },
+    {
+      "name": "本标准技术要求",
+      "type": "技术标准",
+      "desc": "瓶装工业六氟化硫气体的技术性能要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "瓶装工业六氟化硫按表2规定随机抽样检验，成批验收。",
+      "type": "强制",
+      "subject": "瓶装工业六氟化硫",
+      "action": "检验、验收",
+      "condition": "批量生产",
+      "constraint": "按表2规定",
+      "related_entities": [
+        "瓶装工业六氟化硫",
+        "表2",
+        "随机抽样检验",
+        "成批验收"
+      ]
+    },
+    {
+      "content": "当有任何一项指标的检验结果不符合本标准技术要求时，应重新加倍随机抽样检验。",
+      "type": "强制",
+      "subject": "瓶装工业六氟化硫",
+      "action": "重新加倍随机抽样检验",
+      "condition": "检验结果有一项指标不符合本标准技术要求",
+      "constraint": "重新加倍随机抽样检验",
+      "related_entities": [
+        "瓶装工业六氟化硫",
+        "指标",
+        "本标准技术要求",
+        "随机抽样检验"
+      ]
+    },
+    {
+      "content": "如果仍有任何一项指标不符合本标准技术要求时，则判该批产品不合格。",
+      "type": "强制",
+      "subject": "瓶装工业六氟化硫",
+      "action": "判该批产品不合格",
+      "condition": "重新加倍随机抽样检验后仍有一项指标不符合本标准技术要求",
+      "constraint": "判该批产品不合格",
+      "related_entities": [
+        "瓶装工业六氟化硫",
+        "指标",
+        "本标准技术要求",
+        "随机抽样检验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "表2",
+      "type": "依据"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "随机抽样检验",
+      "type": "采用"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "成批验收",
+      "type": "采用"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "指标",
+      "type": "检测"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "本标准技术要求",
+      "type": "符合"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "随机抽样检验",
+      "type": "执行"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "成批验收",
+      "type": "执行"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "指标",
+      "type": "检验结果"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "本标准技术要求",
+      "type": "不符合"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "随机抽样检验",
+      "type": "重新加倍执行"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "指标",
+      "type": "重新加倍检验结果"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "本标准技术要求",
+      "type": "重新加倍不符合"
+    },
+    {
+      "source": "瓶装工业六氟化硫",
+      "target": "判该批产品不合格",
+      "type": "判定"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1812,
+      "source_row_id": "1812",
+      "clause_index": 1,
+      "source_text": "瓶装工业六氟化硫按表2规定随机抽样检验，成批验收。当有任何一项指标的检验结果不符合本标准技术要求时，应重新加倍随机抽样检验，如果仍有任何一项指标不符合本标准技术要求时，则判该批产品不合格"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.792213+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

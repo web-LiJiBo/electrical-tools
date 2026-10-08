@@ -1,0 +1,158 @@
+{
+  "entities": [
+    {
+      "name": "750kV套管绝缘油",
+      "type": "电力设备",
+      "desc": "750kV电压等级的套管绝缘油"
+    },
+    {
+      "name": "油中溶解气体",
+      "type": "检测项目",
+      "desc": "套管绝缘油中的溶解气体"
+    },
+    {
+      "name": "色谱分析",
+      "type": "检测方法",
+      "desc": "通过色谱技术分析油中溶解气体成分"
+    },
+    {
+      "name": "总烃",
+      "type": "气体组分",
+      "desc": "油中溶解气体的一种主要成分"
+    },
+    {
+      "name": "H2",
+      "type": "气体组分",
+      "desc": "油中溶解气体的一种主要成分"
+    },
+    {
+      "name": "C2H2",
+      "type": "气体组分",
+      "desc": "油中溶解气体的一种主要成分"
+    },
+    {
+      "name": "10µL/L",
+      "type": "浓度限值",
+      "desc": "总烃含量限值"
+    },
+    {
+      "name": "150µL/L",
+      "type": "浓度限值",
+      "desc": "H2含量限值"
+    },
+    {
+      "name": "0.1µL/L",
+      "type": "浓度限值",
+      "desc": "C2H2含量限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电压等级为750kV的套管绝缘油，宜进行油中溶解气体的色谱分析",
+      "type": "强制",
+      "subject": "750kV套管绝缘油",
+      "action": "进行色谱分析",
+      "condition": "750kV电压等级的套管绝缘油",
+      "constraint": "无",
+      "related_entities": [
+        "750kV套管绝缘油",
+        "油中溶解气体",
+        "色谱分析"
+      ]
+    },
+    {
+      "content": "油中溶解气体组分总烃含量不应超过10µL/L",
+      "type": "强制",
+      "subject": "750kV套管绝缘油",
+      "action": "控制总烃含量",
+      "condition": "750kV电压等级的套管绝缘油",
+      "constraint": "总烃含量≤10µL/L",
+      "related_entities": [
+        "750kV套管绝缘油",
+        "总烃",
+        "10µL/L"
+      ]
+    },
+    {
+      "content": "油中溶解气体组分H2含量不应超过150µL/L",
+      "type": "强制",
+      "subject": "750kV套管绝缘油",
+      "action": "控制H2含量",
+      "condition": "750kV电压等级的套管绝缘油",
+      "constraint": "H2含量≤150µL/L",
+      "related_entities": [
+        "750kV套管绝缘油",
+        "H2",
+        "150µL/L"
+      ]
+    },
+    {
+      "content": "油中溶解气体组分C2H2含量不应超过0.1µL/L",
+      "type": "强制",
+      "subject": "750kV套管绝缘油",
+      "action": "控制C2H2含量",
+      "condition": "750kV电压等级的套管绝缘油",
+      "constraint": "C2H2含量≤0.1µL/L",
+      "related_entities": [
+        "750kV套管绝缘油",
+        "C2H2",
+        "0.1µL/L"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "750kV套管绝缘油",
+      "target": "油中溶解气体",
+      "type": "含有"
+    },
+    {
+      "source": "750kV套管绝缘油",
+      "target": "色谱分析",
+      "type": "需要"
+    },
+    {
+      "source": "750kV套管绝缘油",
+      "target": "总烃",
+      "type": "含有"
+    },
+    {
+      "source": "750kV套管绝缘油",
+      "target": "H2",
+      "type": "含有"
+    },
+    {
+      "source": "750kV套管绝缘油",
+      "target": "C2H2",
+      "type": "含有"
+    },
+    {
+      "source": "总烃",
+      "target": "10µL/L",
+      "type": "限值"
+    },
+    {
+      "source": "H2",
+      "target": "150µL/L",
+      "type": "限值"
+    },
+    {
+      "source": "C2H2",
+      "target": "0.1µL/L",
+      "type": "限值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3102,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ab083296a431a459",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3102_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

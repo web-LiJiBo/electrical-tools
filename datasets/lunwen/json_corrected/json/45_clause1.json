@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种用于限制短路电流的电力设备"
+    },
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流或电压的电力设备"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备",
+      "desc": "一种用于连接电力设备的绝缘部件"
+    },
+    {
+      "name": "新油",
+      "type": "电力材料",
+      "desc": "用于电力设备的绝缘油"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "用于电力设备绝缘的液体介质"
+    },
+    {
+      "name": "试验项目",
+      "type": "技术要求",
+      "desc": "对电力设备进行检测的项目"
+    },
+    {
+      "name": "试验标准",
+      "type": "技术要求",
+      "desc": "对电力设备检测项目的具体要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "准备注入变压器、电抗器、互感器、套管的新油，应按表20.0.1绝缘油的试验项目及标准中的第2～9项规定进行",
+      "type": "强制",
+      "subject": "新油",
+      "action": "注入电力设备",
+      "condition": "电力设备安装前",
+      "constraint": "第2～9项试验项目",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "互感器",
+        "套管",
+        "新油",
+        "绝缘油",
+        "试验项目",
+        "试验标准"
+      ]
+    },
+    {
+      "content": "对油的性能有怀疑时，应按表20.0.1绝缘油的试验项目及标准的全部项目进行",
+      "type": "强制",
+      "subject": "新油",
+      "action": "重新检测",
+      "condition": "怀疑油的性能",
+      "constraint": "全部试验项目",
+      "related_entities": [
+        "新油",
+        "绝缘油",
+        "试验项目",
+        "试验标准"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "新油",
+      "type": "使用"
+    },
+    {
+      "source": "电抗器",
+      "target": "新油",
+      "type": "使用"
+    },
+    {
+      "source": "互感器",
+      "target": "新油",
+      "type": "使用"
+    },
+    {
+      "source": "套管",
+      "target": "新油",
+      "type": "使用"
+    },
+    {
+      "source": "新油",
+      "target": "绝缘油",
+      "type": "属于"
+    },
+    {
+      "source": "试验项目",
+      "target": "试验标准",
+      "type": "依据"
+    },
+    {
+      "source": "新油",
+      "target": "试验项目",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验标准",
+      "target": "试验项目",
+      "type": "规定"
+    }
+  ],
+  "metadata": {
+    "pair_id": 45,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "45def1cf9e5f7acd",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\45_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

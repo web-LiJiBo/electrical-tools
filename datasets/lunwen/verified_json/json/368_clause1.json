@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "气体绝缘金属封闭开关设备",
+      "type": "电力设备",
+      "desc": "一种高压电气设备，内部充有绝缘气体"
+    },
+    {
+      "name": "气隔",
+      "type": "电气结构",
+      "desc": "气体绝缘金属封闭开关设备内部的独立气室"
+    },
+    {
+      "name": "断路器",
+      "type": "电气元件",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "用户",
+      "type": "主体",
+      "desc": "电力系统中的需求方，负责提出技术要求"
+    },
+    {
+      "name": "制造厂商",
+      "type": "主体",
+      "desc": "电力设备的生产方，负责设备制造"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体绝缘金属封闭开关设备内各元件应分成若干气隔",
+      "type": "强制",
+      "subject": "用户",
+      "action": "划分气隔",
+      "condition": "根据布置条件和检修要求",
+      "constraint": "在订货技术条款中由用户与制造厂商确定",
+      "related_entities": [
+        "气体绝缘金属封闭开关设备",
+        "气隔"
+      ]
+    },
+    {
+      "content": "气体系统的压力，除断路器外，其余部分宜采用相同气压",
+      "type": "建议",
+      "subject": "用户",
+      "action": "选择气体系统压力",
+      "condition": "在订货技术条款中",
+      "constraint": "除断路器外，其余部分宜采用相同气压",
+      "related_entities": [
+        "气体绝缘金属封闭开关设备",
+        "断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体绝缘金属封闭开关设备",
+      "target": "气隔",
+      "type": "包含"
+    },
+    {
+      "source": "用户",
+      "target": "制造厂商",
+      "type": "交互"
+    },
+    {
+      "source": "用户",
+      "target": "气体绝缘金属封闭开关设备",
+      "type": "需求方"
+    },
+    {
+      "source": "制造厂商",
+      "target": "气体绝缘金属封闭开关设备",
+      "type": "供应方"
+    },
+    {
+      "source": "气体绝缘金属封闭开关设备",
+      "target": "断路器",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 368,
+      "source_row_id": "368",
+      "clause_index": 1,
+      "source_text": "气体绝缘金属封闭开关设备内各元件应分成若干气隔。气隔的具体划分可根据布置条件和检修要求，在订货技术条款中由用户与制造厂商定。气体系统的压力，除断路器外，其余部分宜采用相同气压"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.149482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

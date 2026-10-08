@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "例行试验",
+      "type": "试验项目",
+      "desc": "电力设备定期进行的常规检测"
+    },
+    {
+      "name": "外观检查",
+      "type": "试验项目",
+      "desc": "对电力设备外观进行检查"
+    },
+    {
+      "name": "电容测量",
+      "type": "试验项目",
+      "desc": "测量电力设备的电容值"
+    },
+    {
+      "name": "电容器损耗角正切测量",
+      "type": "试验项目",
+      "desc": "测量电力设备电容器的损耗角正切值"
+    },
+    {
+      "name": "端子间电压试验",
+      "type": "试验项目",
+      "desc": "测量电力设备端子间的耐压值"
+    },
+    {
+      "name": "端子与外壳间交流电压试验",
+      "type": "试验项目",
+      "desc": "测量电力设备端子与外壳间的耐压值"
+    },
+    {
+      "name": "内部放电器件检验",
+      "type": "试验项目",
+      "desc": "检查电力设备内部放电器件状态"
+    },
+    {
+      "name": "密封性试验",
+      "type": "试验项目",
+      "desc": "检查电力设备密封性能"
+    },
+    {
+      "name": "内部熔丝的放电试验",
+      "type": "试验项目",
+      "desc": "检查电力设备内部熔丝放电性能"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验项目",
+      "desc": "测量电力设备局部放电量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "例行试验应按周期进行",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行例行试验",
+      "condition": "电力设备投运后",
+      "constraint": "每年至少一次",
+      "related_entities": [
+        "例行试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "例行试验",
+      "target": "外观检查",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "电容测量",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "电容器损耗角正切测量",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "端子间电压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "端子与外壳间交流电压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "内部放电器件检验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "密封性试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "内部熔丝的放电试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "局部放电试验",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1666,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0b1ac4b83e7b1de8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1666_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

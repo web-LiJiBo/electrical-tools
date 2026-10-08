@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "保护间隙",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中防止雷击的保护装置"
+    },
+    {
+      "name": "设定值",
+      "type": "技术参数",
+      "desc": "保护间隙在正常工作状态下的设定距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "保护间隙设定值为1.2-1.6m",
+      "type": "强制",
+      "subject": "保护间隙",
+      "action": "设定",
+      "condition": "电力系统运行",
+      "constraint": "设定值为1.2-1.6m",
+      "related_entities": [
+        "保护间隙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "保护间隙",
+      "target": "设定值",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 720,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8559549eeafe71e2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\720_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

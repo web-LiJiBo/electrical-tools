@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "直流耐压试验",
+      "type": "试验项目",
+      "desc": "对电力设备进行直流电压耐受能力测试"
+    },
+    {
+      "name": "新的、清洁的和干燥的完整设备",
+      "type": "试验对象",
+      "desc": "试验时使用的电力设备状态"
+    },
+    {
+      "name": "试验持续时间",
+      "type": "试验参数",
+      "desc": "直流耐压试验的持续时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应进行直流耐压试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行直流耐压试验",
+      "condition": "新的、清洁的和干燥的完整设备",
+      "constraint": "试验持续时间为30min",
+      "related_entities": [
+        "直流耐压试验",
+        "新的、清洁的和干燥的完整设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流耐压试验",
+      "target": "新的、清洁的和干燥的完整设备",
+      "type": "针对"
+    },
+    {
+      "source": "直流耐压试验",
+      "target": "试验持续时间",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1650,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "69f46004c7af4611",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1650_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

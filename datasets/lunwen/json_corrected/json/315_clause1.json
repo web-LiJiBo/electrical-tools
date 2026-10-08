@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "交、直流电源",
+      "type": "电力系统",
+      "desc": "电力系统中的交流和直流电源"
+    },
+    {
+      "name": "辅助设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制、监测、监控和通信的辅助设备"
+    },
+    {
+      "name": "电子设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于数据处理、通信等的电子设备"
+    },
+    {
+      "name": "电源电压",
+      "type": "电力参数",
+      "desc": "电力系统中电源提供的电压值"
+    },
+    {
+      "name": "最小值",
+      "type": "电力参数",
+      "desc": "电源电压的最低允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在正常工作情况下，在辅助设备端子处测量的交、直流电源的相对允差为85%－110%",
+      "type": "强制",
+      "subject": "辅助设备",
+      "action": "测量交、直流电源的相对允差",
+      "condition": "正常工作情况",
+      "constraint": "85%－110%",
+      "related_entities": [
+        "交、直流电源",
+        "辅助设备"
+      ]
+    },
+    {
+      "content": "电源电压低于电源电压的最小值时，应采取措施防止电子设备损坏和/或因不可预知的性能引起不安全的操作",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "采取措施防止电子设备损坏和/或不安全操作",
+      "condition": "电源电压低于电源电压的最小值",
+      "constraint": "电源电压的最小值",
+      "related_entities": [
+        "电源电压",
+        "电子设备",
+        "电力系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交、直流电源",
+      "target": "辅助设备",
+      "type": "供电"
+    },
+    {
+      "source": "电源电压",
+      "target": "电子设备",
+      "type": "供电"
+    },
+    {
+      "source": "辅助设备",
+      "target": "电子设备",
+      "type": "控制"
+    },
+    {
+      "source": "电源电压",
+      "target": "电力系统",
+      "type": "构成部分"
+    }
+  ],
+  "metadata": {
+    "pair_id": 315,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "edd380eb74c32a11",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\315_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

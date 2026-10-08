@@ -1,0 +1,145 @@
+{
+  "entities": [
+    {
+      "name": "接地装置",
+      "type": "电力设备",
+      "desc": "用于将电气设备与大地连接的装置"
+    },
+    {
+      "name": "热镀锌钢材",
+      "type": "材料",
+      "desc": "经过热镀锌处理的钢材"
+    },
+    {
+      "name": "圆钢",
+      "type": "材料",
+      "desc": "圆形截面的钢材"
+    },
+    {
+      "name": "扁钢",
+      "type": "材料",
+      "desc": "扁平截面的钢材"
+    },
+    {
+      "name": "角钢",
+      "type": "材料",
+      "desc": "具有两个直角边的钢材"
+    },
+    {
+      "name": "钢管",
+      "type": "材料",
+      "desc": "中空圆柱形的钢材"
+    },
+    {
+      "name": "腐蚀",
+      "type": "现象",
+      "desc": "材料表面发生化学或电化学反应导致的破坏"
+    },
+    {
+      "name": "阴极保护",
+      "type": "技术",
+      "desc": "通过外部电源或其他方法使被保护体成为阴极以防止腐蚀的技术"
+    }
+  ],
+  "rules": [
+    {
+      "content": "除临时接地装置外，接地装置应采用热镀锌钢材",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采用",
+      "condition": "非临时接地装置",
+      "constraint": "热镀锌钢材",
+      "related_entities": [
+        "接地装置",
+        "热镀锌钢材"
+      ]
+    },
+    {
+      "content": "水平敷设的可采用圆钢和扁钢",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采用",
+      "condition": "水平敷设",
+      "constraint": "圆钢和扁钢",
+      "related_entities": [
+        "接地装置",
+        "圆钢",
+        "扁钢"
+      ]
+    },
+    {
+      "content": "垂直敷设的可采用角钢和钢管",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采用",
+      "condition": "垂直敷设",
+      "constraint": "角钢和钢管",
+      "related_entities": [
+        "接地装置",
+        "角钢",
+        "钢管"
+      ]
+    },
+    {
+      "content": "腐蚀比较严重地区的接地装置，应适应加大截面，或采用阴极保护等措施",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采取措施",
+      "condition": "腐蚀比较严重地区",
+      "constraint": "加大截面或阴极保护",
+      "related_entities": [
+        "接地装置",
+        "腐蚀",
+        "阴极保护"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地装置",
+      "target": "热镀锌钢材",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "圆钢",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "扁钢",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "角钢",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "钢管",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "腐蚀",
+      "type": "受制于"
+    },
+    {
+      "source": "接地装置",
+      "target": "阴极保护",
+      "type": "采取措施"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1396,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a34f21bacaff3c0d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1396_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

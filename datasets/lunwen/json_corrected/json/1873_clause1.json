@@ -1,0 +1,118 @@
+{
+  "entities": [
+    {
+      "name": "水下电缆",
+      "type": "电力设备",
+      "desc": "在水下铺设的电缆"
+    },
+    {
+      "name": "岸边",
+      "type": "地理环境",
+      "desc": "水下电缆上岸的位置"
+    },
+    {
+      "name": "保护管",
+      "type": "电力设备",
+      "desc": "用于保护电缆的管道"
+    },
+    {
+      "name": "沟槽",
+      "type": "电力设备",
+      "desc": "用于敷设电缆的沟槽"
+    },
+    {
+      "name": "工作井",
+      "type": "电力设备",
+      "desc": "电缆敷设过程中设置的工作井"
+    },
+    {
+      "name": "最低水位",
+      "type": "地理环境",
+      "desc": "水体中最低的水面位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "岸边稳定时，应采用保护管、沟槽敷设电缆",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "岸边稳定",
+      "constraint": "采用保护管或沟槽敷设电缆",
+      "related_entities": [
+        "水下电缆",
+        "保护管",
+        "沟槽"
+      ]
+    },
+    {
+      "content": "必要时可设置工作井连接",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "岸边稳定且需要连接",
+      "constraint": "设置工作井连接",
+      "related_entities": [
+        "水下电缆",
+        "工作井"
+      ]
+    },
+    {
+      "content": "管沟下端宜置于最低水位下不小于1m处",
+      "type": "强制",
+      "subject": "沟槽",
+      "action": "敷设",
+      "condition": "岸边稳定",
+      "constraint": "管沟下端置于最低水位下不小于1m处",
+      "related_entities": [
+        "沟槽",
+        "最低水位"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水下电缆",
+      "target": "保护管",
+      "type": "使用"
+    },
+    {
+      "source": "水下电缆",
+      "target": "沟槽",
+      "type": "使用"
+    },
+    {
+      "source": "水下电缆",
+      "target": "工作井",
+      "type": "连接"
+    },
+    {
+      "source": "保护管",
+      "target": "水下电缆",
+      "type": "保护"
+    },
+    {
+      "source": "沟槽",
+      "target": "水下电缆",
+      "type": "保护"
+    },
+    {
+      "source": "工作井",
+      "target": "水下电缆",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1873,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bf7326f7fbf817f0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1873_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "地震烈度",
+      "type": "环境因素",
+      "desc": "地震发生时地面受到的影响程度"
+    },
+    {
+      "name": "110kV及以上配电装置",
+      "type": "电力设施",
+      "desc": "110kV及以上的高压配电装置"
+    },
+    {
+      "name": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "电力设备",
+      "desc": "一种高压开关设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "地震烈度为9度及以上地区的110kV及以上配电装置宜采用气体绝缘金属封闭开关设备(GIS)配电装置",
+      "type": "强制",
+      "subject": "110kV及以上配电装置",
+      "action": "采用",
+      "condition": "地震烈度为9度及以上地区",
+      "constraint": "宜采用气体绝缘金属封闭开关设备(GIS)配电装置",
+      "related_entities": [
+        "地震烈度",
+        "110kV及以上配电装置",
+        "气体绝缘金属封闭开关设备(GIS)"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地震烈度",
+      "target": "110kV及以上配电装置",
+      "type": "影响"
+    },
+    {
+      "source": "地震烈度",
+      "target": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "推荐使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 405,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6ff32c015af47ad7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\405_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

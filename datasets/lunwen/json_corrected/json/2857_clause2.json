@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送和分配电能的设备"
+    },
+    {
+      "name": "主泵失电切换",
+      "type": "操作",
+      "desc": "当主泵发生失电情况时，进行切换的操作"
+    },
+    {
+      "name": "10kV站用电备自投切换",
+      "type": "操作",
+      "desc": "10kV站用电备用电源自动投入切换操作"
+    },
+    {
+      "name": "切换时间",
+      "type": "参数",
+      "desc": "主泵失电切换或10kV站用电备自投切换所需的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵失电切换时间应躲过10kV站用电备自投切换时间。",
+      "type": "强制",
+      "subject": "主泵失电切换",
+      "action": "切换",
+      "condition": "主泵失电情况下",
+      "constraint": "主泵失电切换时间 > 10kV站用电备自投切换时间",
+      "related_entities": [
+        "主泵",
+        "主泵失电切换",
+        "10kV站用电备自投切换"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "主泵失电切换",
+      "type": "执行"
+    },
+    {
+      "source": "10kV站用电备自投切换",
+      "target": "主泵失电切换",
+      "type": "避免同时发生"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2857,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bafad6b396ef0200",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2857_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

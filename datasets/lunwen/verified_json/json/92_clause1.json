@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "10kV油浸式变压器",
+      "type": "电力设备",
+      "desc": "额定电压10kV的油浸式变压器"
+    },
+    {
+      "name": "波纹油箱",
+      "type": "电力设备部件",
+      "desc": "一种油箱结构，具有波纹状变形能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10kV油浸式变压器c）波纹油箱的强度和密封性中，未提及",
+      "type": "强制",
+      "subject": "10kV油浸式变压器",
+      "action": "设计与制造",
+      "condition": "在进行10kV油浸式变压器的设计与制造时",
+      "constraint": "必须明确波纹油箱的强度和密封性要求",
+      "related_entities": [
+        "10kV油浸式变压器",
+        "波纹油箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "10kV油浸式变压器",
+      "target": "波纹油箱",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 92,
+      "source_row_id": "92",
+      "clause_index": 1,
+      "source_text": "10kV油浸式变压器c）波纹油箱的强度和密封性中，未提及"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.855605+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

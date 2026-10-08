@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "焊接点",
+      "type": "焊接工艺",
+      "desc": "焊接过程中形成的连接点"
+    },
+    {
+      "name": "母材",
+      "type": "材料",
+      "desc": "焊接前的原始材料"
+    },
+    {
+      "name": "电阻值",
+      "type": "物理量",
+      "desc": "导体两端电压与通过该导体电流的比值"
+    },
+    {
+      "name": "搭边",
+      "type": "焊接结构",
+      "desc": "焊接件边缘超出部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "焊接点直径大于母材直径，堆积高度不小于3mm",
+      "type": "强制",
+      "subject": "焊接点",
+      "action": "焊接",
+      "condition": "焊接过程",
+      "constraint": "焊接点直径>母材直径, 堆积高度≥3mm",
+      "related_entities": [
+        "焊接点",
+        "母材"
+      ]
+    },
+    {
+      "content": "单侧搭边长度不小于10mm",
+      "type": "强制",
+      "subject": "搭边",
+      "action": "焊接",
+      "condition": "焊接过程",
+      "constraint": "搭边长度≥10mm",
+      "related_entities": [
+        "搭边"
+      ]
+    },
+    {
+      "content": "全数检查200mm焊接端电阻值，电阻值不大于同长度母材电阻值",
+      "type": "强制",
+      "subject": "电阻值",
+      "action": "测量",
+      "condition": "焊接完成后",
+      "constraint": "电阻值≤同长度母材电阻值",
+      "related_entities": [
+        "电阻值",
+        "母材"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "焊接点",
+      "target": "母材",
+      "type": "焊接连接"
+    },
+    {
+      "source": "搭边",
+      "target": "焊接点",
+      "type": "焊接辅助"
+    },
+    {
+      "source": "电阻值",
+      "target": "焊接点",
+      "type": "检测属性"
+    },
+    {
+      "source": "电阻值",
+      "target": "母材",
+      "type": "对比基准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 275,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d52954fb38ff8bee",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\275_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

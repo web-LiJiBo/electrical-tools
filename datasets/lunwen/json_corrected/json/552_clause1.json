@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "直埋电缆",
+      "type": "电力设施",
+      "desc": "直接埋设于地下并敷设在保护管中的电缆"
+    },
+    {
+      "name": "热力管沟",
+      "type": "电力设施",
+      "desc": "用于输送蒸汽或热水的地下管道沟渠"
+    },
+    {
+      "name": "容许最小距离",
+      "type": "技术参数",
+      "desc": "直埋电缆与热力管沟平行敷设时的安全间距"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋电缆与热力管沟平行，容许最小距离为2.0m",
+      "type": "强制",
+      "subject": "直埋电缆与热力管沟",
+      "action": "平行敷设",
+      "condition": "直埋电缆与热力管沟平行敷设",
+      "constraint": "2.0m",
+      "related_entities": [
+        "直埋电缆",
+        "热力管沟"
+      ]
+    },
+    {
+      "content": "特殊情况时，减小值不得大于50%",
+      "type": "强制",
+      "subject": "直埋电缆与热力管沟",
+      "action": "平行敷设",
+      "condition": "直埋电缆与热力管沟平行敷设且存在特殊情况",
+      "constraint": "减小值≤2.0m×50%=1.0m",
+      "related_entities": [
+        "直埋电缆",
+        "热力管沟"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋电缆",
+      "target": "热力管沟",
+      "type": "平行敷设"
+    },
+    {
+      "source": "容许最小距离",
+      "target": "直埋电缆",
+      "type": "约束"
+    },
+    {
+      "source": "容许最小距离",
+      "target": "热力管沟",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 552,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "640bf01f77bb7bee",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\552_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "电气设备在安装或检修后进行的检验试验"
+    },
+    {
+      "name": "油箱密封性试验",
+      "type": "试验",
+      "desc": "检查油箱是否密封无泄漏的试验"
+    },
+    {
+      "name": "油箱",
+      "type": "设备部件",
+      "desc": "变压器等电气设备中的储油容器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交接试验项目中包括油箱密封性试验",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行交接试验",
+      "condition": "电气设备安装或检修后",
+      "constraint": "必须包含油箱密封性试验",
+      "related_entities": [
+        "交接试验",
+        "油箱密封性试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交接试验",
+      "target": "油箱密封性试验",
+      "type": "包含"
+    },
+    {
+      "source": "油箱密封性试验",
+      "target": "油箱",
+      "type": "针对"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3027,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3274e8c171e3bcdb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3027_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

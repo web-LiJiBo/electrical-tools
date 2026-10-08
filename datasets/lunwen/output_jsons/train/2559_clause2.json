@@ -1,0 +1,35 @@
+{
+  "entities": [
+    {
+      "name": "电感量",
+      "type": "电气参数",
+      "desc": "电感器的电感值"
+    },
+    {
+      "name": "误差",
+      "type": "电气参数",
+      "desc": "电感量与标称值之间的偏差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电感量误差允许：0～＋5%",
+      "type": "强制",
+      "subject": "电感器制造企业",
+      "action": "生产电感器时",
+      "condition": "电感器在出厂前",
+      "constraint": "电感量误差范围为0～+5%",
+      "related_entities": [
+        "电感量",
+        "误差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电感量",
+      "target": "误差",
+      "type": "误差范围"
+    }
+  ]
+}

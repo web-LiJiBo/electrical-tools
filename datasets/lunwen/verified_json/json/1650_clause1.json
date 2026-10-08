@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "直流耐压试验",
+      "type": "试验项目",
+      "desc": "对电力设备进行直流电压耐受能力测试"
+    },
+    {
+      "name": "新的、清洁的和干燥的完整设备",
+      "type": "试验对象",
+      "desc": "试验时使用的电力设备状态"
+    },
+    {
+      "name": "试验持续时间",
+      "type": "试验参数",
+      "desc": "直流耐压试验的持续时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应进行直流耐压试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行直流耐压试验",
+      "condition": "新的、清洁的和干燥的完整设备",
+      "constraint": "试验持续时间为30min",
+      "related_entities": [
+        "直流耐压试验",
+        "新的、清洁的和干燥的完整设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流耐压试验",
+      "target": "新的、清洁的和干燥的完整设备",
+      "type": "针对"
+    },
+    {
+      "source": "直流耐压试验",
+      "target": "试验持续时间",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1650,
+      "source_row_id": "1650",
+      "clause_index": 1,
+      "source_text": "应进行直流耐压试验，试验按6.2.6在新的、清洁的和干燥的完整设备上进行，并作如下修改：试验持续时间为30min"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.613157+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

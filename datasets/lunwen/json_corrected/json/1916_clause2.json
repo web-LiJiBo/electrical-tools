@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "直埋电缆",
+      "type": "电力设施",
+      "desc": "直接埋设于地下的电缆"
+    },
+    {
+      "name": "地面",
+      "type": "地理环境",
+      "desc": "电缆上方的地面"
+    },
+    {
+      "name": "电缆外护套",
+      "type": "电力设施",
+      "desc": "电缆外部的保护层"
+    },
+    {
+      "name": "车行道",
+      "type": "地理环境",
+      "desc": "供车辆行驶的道路"
+    },
+    {
+      "name": "建筑物",
+      "type": "地理环境",
+      "desc": "房屋等建筑结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般由地面至电缆外护套顶部的距离不小于0.7m",
+      "type": "强制",
+      "subject": "直埋电缆",
+      "action": "埋设",
+      "condition": "一般情况",
+      "constraint": "地面至电缆外护套顶部距离≥0.7m",
+      "related_entities": [
+        "直埋电缆",
+        "地面",
+        "电缆外护套"
+      ]
+    },
+    {
+      "content": "穿越农田或在车行道下时不小于1m",
+      "type": "强制",
+      "subject": "直埋电缆",
+      "action": "埋设",
+      "condition": "穿越农田或在车行道下",
+      "constraint": "地面至电缆外护套顶部距离≥1m",
+      "related_entities": [
+        "直埋电缆",
+        "地面",
+        "电缆外护套",
+        "车行道"
+      ]
+    },
+    {
+      "content": "在引入建筑物、与地下建筑物交叉及绕过建筑物时可浅埋，但应采取保护措施",
+      "type": "强制",
+      "subject": "直埋电缆",
+      "action": "埋设",
+      "condition": "引入建筑物、与地下建筑物交叉及绕过建筑物",
+      "constraint": "地面至电缆外护套顶部距离≤0.7m，且采取保护措施",
+      "related_entities": [
+        "直埋电缆",
+        "地面",
+        "电缆外护套",
+        "建筑物"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋电缆",
+      "target": "地面",
+      "type": "位于"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "电缆外护套",
+      "type": "包含"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "车行道",
+      "type": "穿越"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "建筑物",
+      "type": "引入"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1916,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "543e56b14b0d06e1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1916_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

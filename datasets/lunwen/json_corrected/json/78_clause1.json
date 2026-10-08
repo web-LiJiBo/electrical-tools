@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "无人值班变电站",
+      "type": "电力设施",
+      "desc": "无需人员值守的变电站"
+    },
+    {
+      "name": "10天",
+      "type": "时间周期",
+      "desc": "10天一次的周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "无人值班变电站内一般每10天一次",
+      "type": "强制",
+      "subject": "无人值班变电站",
+      "action": "巡视检查",
+      "condition": "无人值班变电站运行期间",
+      "constraint": "10天",
+      "related_entities": [
+        "无人值班变电站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "无人值班变电站",
+      "target": "10天",
+      "type": "周期性检查"
+    }
+  ],
+  "metadata": {
+    "pair_id": 78,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "efb6419897f47404",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\78_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

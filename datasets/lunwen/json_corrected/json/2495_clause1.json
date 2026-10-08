@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "直流电缆",
+      "type": "电力设备",
+      "desc": "用于直流供电系统的电缆"
+    },
+    {
+      "name": "电力工程电缆设计规范",
+      "type": "行业标准",
+      "desc": "规定电力工程电缆的设计原则和要求"
+    },
+    {
+      "name": "耐火电缆",
+      "type": "电力设备",
+      "desc": "具有耐火性能的电缆"
+    },
+    {
+      "name": "阻燃电缆",
+      "type": "电力设备",
+      "desc": "具有阻燃性能的电缆"
+    },
+    {
+      "name": "屏蔽电缆",
+      "type": "电力设备",
+      "desc": "具有屏蔽层的电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流电缆的选择和敷设应符合现行国家标准《电力工程电缆设计规范》GB50217的有关规定。",
+      "type": "强制",
+      "subject": "直流电缆",
+      "action": "选择和敷设",
+      "condition": "直流供电系统",
+      "constraint": "《电力工程电缆设计规范》GB50217",
+      "related_entities": [
+        "直流电缆",
+        "电力工程电缆设计规范"
+      ]
+    },
+    {
+      "content": "直流电源系统明敷电缆应选用耐火电缆或采取了规定的耐火防护措施的阻燃电缆。",
+      "type": "强制",
+      "subject": "直流电源系统明敷电缆",
+      "action": "选择",
+      "condition": "直流电源系统明敷",
+      "constraint": "耐火电缆或采取了规定的耐火防护措施的阻燃电缆",
+      "related_entities": [
+        "直流电源系统明敷电缆",
+        "耐火电缆",
+        "阻燃电缆"
+      ]
+    },
+    {
+      "content": "控制和保护回路直流电缆应选用屏蔽电缆。",
+      "type": "强制",
+      "subject": "控制和保护回路直流电缆",
+      "action": "选择",
+      "condition": "控制和保护回路",
+      "constraint": "屏蔽电缆",
+      "related_entities": [
+        "控制和保护回路直流电缆",
+        "屏蔽电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电缆",
+      "target": "电力工程电缆设计规范",
+      "type": "符合"
+    },
+    {
+      "source": "直流电源系统明敷电缆",
+      "target": "耐火电缆",
+      "type": "选择"
+    },
+    {
+      "source": "直流电源系统明敷电缆",
+      "target": "阻燃电缆",
+      "type": "选择"
+    },
+    {
+      "source": "控制和保护回路直流电缆",
+      "target": "屏蔽电缆",
+      "type": "选择"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2495,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2d6a3f4af7734a46",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2495_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "导、地线",
+      "type": "电力设备",
+      "desc": "输电线路中的导线和地线"
+    },
+    {
+      "name": "弧垂",
+      "type": "电气参数",
+      "desc": "导线或地线在悬挂点之间的水平投影长度与悬挂点间距离的比值"
+    },
+    {
+      "name": "220kV及以上线路",
+      "type": "电力系统",
+      "desc": "220kV及以上的高压输电线路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "导、地线弧垂允许偏差：220kV及以上线路为+3.0%、-2.5%",
+      "type": "强制",
+      "subject": "设计、施工、运行维护单位",
+      "action": "设计、施工、运行维护",
+      "condition": "新建、改建、扩建220kV及以上输电线路工程",
+      "constraint": "+3.0%、-2.5%",
+      "related_entities": [
+        "导、地线",
+        "220kV及以上线路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导、地线",
+      "target": "弧垂",
+      "type": "测量对象"
+    },
+    {
+      "source": "220kV及以上线路",
+      "target": "导、地线",
+      "type": "应用范围"
+    },
+    {
+      "source": "220kV及以上线路",
+      "target": "弧垂",
+      "type": "测量对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3046,
+      "source_row_id": "3055",
+      "clause_index": 1,
+      "source_text": "导、地线弧垂允许偏差：220kV及以上线路为+3.0%、-2.5%。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.315315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

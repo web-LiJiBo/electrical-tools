@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "气室",
+      "type": "电力设备",
+      "desc": "电力系统中用于隔离带电部分的封闭空间"
+    },
+    {
+      "name": "年漏气率",
+      "type": "技术参数",
+      "desc": "一年内气室气体泄漏量占初始充气量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个气室的年漏气率应不大于0.5%",
+      "type": "强制",
+      "subject": "气室",
+      "action": "控制年漏气率",
+      "condition": "在运行期间",
+      "constraint": "≤0.5%",
+      "related_entities": [
+        "气室"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气室",
+      "target": "年漏气率",
+      "type": "包含"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "不均匀沉降",
+      "type": "地理环境",
+      "desc": "地基土层分布不均导致的地面沉降现象"
+    },
+    {
+      "name": "强风",
+      "type": "气候条件",
+      "desc": "风速超过一定阈值的自然风力现象"
+    },
+    {
+      "name": "易覆冰",
+      "type": "气候条件",
+      "desc": "线路容易发生覆冰现象的地理环境"
+    },
+    {
+      "name": "微地形",
+      "type": "地理环境",
+      "desc": "局部地形特征与周围环境差异显著的区域"
+    },
+    {
+      "name": "微气象",
+      "type": "气候条件",
+      "desc": "局部气候特征与大范围气候差异显著的区域"
+    },
+    {
+      "name": "状态监测装置",
+      "type": "设备",
+      "desc": "用于实时监测输电线路运行状态的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对不均匀沉降、强风、易覆冰等微地形、微气象区域，宜安装状态监测装置",
+      "type": "强制",
+      "subject": "输电线路设计与建设单位",
+      "action": "安装状态监测装置",
+      "condition": "在不均匀沉降、强风、易覆冰等微地形、微气象区域",
+      "constraint": "宜",
+      "related_entities": [
+        "不均匀沉降",
+        "强风",
+        "易覆冰",
+        "微地形",
+        "微气象",
+        "状态监测装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "不均匀沉降",
+      "target": "状态监测装置",
+      "type": "安装于"
+    },
+    {
+      "source": "强风",
+      "target": "状态监测装置",
+      "type": "安装于"
+    },
+    {
+      "source": "易覆冰",
+      "target": "状态监测装置",
+      "type": "安装于"
+    },
+    {
+      "source": "微地形",
+      "target": "状态监测装置",
+      "type": "安装于"
+    },
+    {
+      "source": "微气象",
+      "target": "状态监测装置",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 544,
+      "source_row_id": "544",
+      "clause_index": 2,
+      "source_text": "7.3对不均匀沉降、强风、易覆冰等微地形、微气象区域，宜安装状态监测装置"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.346482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

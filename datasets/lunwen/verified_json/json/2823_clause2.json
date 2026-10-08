@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "去离子回路",
+      "type": "电力设备",
+      "desc": "电力系统中用于去除水溶液中离子的装置"
+    },
+    {
+      "name": "电导率",
+      "type": "物理参数",
+      "desc": "衡量溶液导电能力的指标"
+    },
+    {
+      "name": "离子交换树脂",
+      "type": "电力材料",
+      "desc": "用于去除水中离子的高分子材料"
+    },
+    {
+      "name": "运行时间",
+      "type": "时间参数",
+      "desc": "设备连续运行的时间长度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当去离子回路电导率大于0.5µS/cm或运行时间超过3年时需更换离子交换树脂。",
+      "type": "强制",
+      "subject": "去离子回路",
+      "action": "更换离子交换树脂",
+      "condition": "电导率>0.5µS/cm或运行时间>3年",
+      "constraint": "电导率>0.5µS/cm且运行时间>3年",
+      "related_entities": [
+        "去离子回路",
+        "电导率",
+        "离子交换树脂",
+        "运行时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "去离子回路",
+      "target": "电导率",
+      "type": "检测"
+    },
+    {
+      "source": "去离子回路",
+      "target": "离子交换树脂",
+      "type": "使用"
+    },
+    {
+      "source": "去离子回路",
+      "target": "运行时间",
+      "type": "记录"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2814,
+      "source_row_id": "2823",
+      "clause_index": 2,
+      "source_text": "去离子回路技术要求f）当去离子回路电导率大于0.5µS/cm或运行时间超过3年时需更换离子交换树脂。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.028314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

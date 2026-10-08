@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压的电气设备"
+    },
+    {
+      "name": "室内",
+      "type": "环境",
+      "desc": "电力设备安装的场所，指建筑物内部空间"
+    },
+    {
+      "name": "后壁",
+      "type": "电力设备安装位置",
+      "desc": "变压器安装位置的背面墙壁"
+    },
+    {
+      "name": "侧壁",
+      "type": "电力设备安装位置",
+      "desc": "变压器安装位置的侧面墙壁"
+    },
+    {
+      "name": "门",
+      "type": "电力设备安装位置",
+      "desc": "变压器安装位置的门"
+    }
+  ],
+  "rules": [
+    {
+      "content": "安装在室内的变压器，其外廓与后壁、侧壁净距不小于600mm、800mm，与门净距不小于800mm",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "安装",
+      "condition": "安装在室内",
+      "constraint": "与后壁、侧壁净距不小于600mm、800mm，与门净距不小于800mm",
+      "related_entities": [
+        "变压器",
+        "室内",
+        "后壁",
+        "侧壁",
+        "门"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "后壁",
+      "type": "安装距离"
+    },
+    {
+      "source": "变压器",
+      "target": "侧壁",
+      "type": "安装距离"
+    },
+    {
+      "source": "变压器",
+      "target": "门",
+      "type": "安装距离"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1585,
+      "source_row_id": "1585",
+      "clause_index": 1,
+      "source_text": "安装在室内的变压器，其外廓与后壁、侧壁净距不小于600mm、800mm，与门净距不小于800mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.540159+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

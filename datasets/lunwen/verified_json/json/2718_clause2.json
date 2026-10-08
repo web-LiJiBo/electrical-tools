@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "地震烈度",
+      "type": "自然灾害等级",
+      "desc": "地震强度的衡量标准"
+    },
+    {
+      "name": "地面水平加速度",
+      "type": "工程参数",
+      "desc": "地震时地面水平方向的加速度值"
+    },
+    {
+      "name": "地面垂直加速度",
+      "type": "工程参数",
+      "desc": "地震时地面垂直方向的加速度值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "地震烈度9度地区，地面水平加速度4m/s2，地面垂直加速度2m/s2。",
+      "type": "强制",
+      "subject": "建筑物设计与施工",
+      "action": "抗震设防",
+      "condition": "位于地震烈度9度地区",
+      "constraint": "地面水平加速度4m/s2，地面垂直加速度2m/s2",
+      "related_entities": [
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "地震烈度8度地区，地面水平加速度2.5m/s2，地面垂直加速度1.25m/s2。",
+      "type": "强制",
+      "subject": "建筑物设计与施工",
+      "action": "抗震设防",
+      "condition": "位于地震烈度8度地区",
+      "constraint": "地面水平加速度2.5m/s2，地面垂直加速度1.25m/s2",
+      "related_entities": [
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "地震烈度7度地区，地面水平加速度2m/s2，地面垂直加速度1m/s2。",
+      "type": "强制",
+      "subject": "建筑物设计与施工",
+      "action": "抗震设防",
+      "condition": "位于地震烈度7度地区",
+      "constraint": "地面水平加速度2m/s2，地面垂直加速度1m/s2",
+      "related_entities": [
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地震烈度",
+      "target": "地面水平加速度",
+      "type": "对应关系"
+    },
+    {
+      "source": "地震烈度",
+      "target": "地面垂直加速度",
+      "type": "对应关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2709,
+      "source_row_id": "2718",
+      "clause_index": 2,
+      "source_text": "a)地震烈度9度地区。1）地面水平加速度：4m/s2。2）地面垂直加速度：2m/s2。b)地震烈度8度地区。1）地面水平加速度：2.5m/s2。2）地面垂直加速度：1.25m/s2。c)地震烈度7度地区。1）地面水平加速度：2m/s2。2）地面垂直加速度：1m/s2。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5561,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.890314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

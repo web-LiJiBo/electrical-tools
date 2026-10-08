@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "短路故障",
+      "type": "电力故障",
+      "desc": "电力系统中由于绝缘损坏等原因导致电流异常流通的情况"
+    },
+    {
+      "name": "外壳",
+      "type": "电力设备部件",
+      "desc": "电力设备的外部防护结构"
+    },
+    {
+      "name": "感应电压",
+      "type": "电气参数",
+      "desc": "电力设备外壳对地的电压"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在发生短路故障的情况下，外壳的感应电压不应超过24V",
+      "type": "强制",
+      "subject": "电力设备外壳",
+      "action": "限制感应电压",
+      "condition": "电力系统发生短路故障时",
+      "constraint": "感应电压≤24V",
+      "related_entities": [
+        "短路故障",
+        "外壳"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "短路故障",
+      "target": "外壳",
+      "type": "引起"
+    },
+    {
+      "source": "外壳",
+      "target": "感应电压",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1302,
+      "source_row_id": "1302",
+      "clause_index": 1,
+      "source_text": "在发生短路故障的情况下，外壳的感应电压不应超过24V"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.219550+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "年漏气率",
+      "type": "技术参数",
+      "desc": "设备在一年内的气体泄漏比例"
+    },
+    {
+      "name": "气室",
+      "type": "设备部件",
+      "desc": "GIS设备中的独立气室"
+    },
+    {
+      "name": "24小时漏气量",
+      "type": "技术参数",
+      "desc": "设备在24小时内气体泄漏量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每一个气室年漏气率不应大于1%",
+      "type": "强制",
+      "subject": "气室",
+      "action": "年漏气率控制",
+      "condition": "GIS设备运行期间",
+      "constraint": "年漏气率≤1%",
+      "related_entities": [
+        "年漏气率",
+        "气室"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "年漏气率",
+      "target": "气室",
+      "type": "属于"
+    },
+    {
+      "source": "24小时漏气量",
+      "target": "年漏气率",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2261,
+      "source_row_id": "2261",
+      "clause_index": 1,
+      "source_text": "以24h的漏气量换算，每一个气室年漏气率不应大于1%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9524,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.338547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

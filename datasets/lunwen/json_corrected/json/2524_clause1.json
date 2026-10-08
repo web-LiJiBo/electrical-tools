@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "油浸式真空有载分接开关",
+      "type": "电力设备",
+      "desc": "一种用于变压器的有载调压装置"
+    },
+    {
+      "name": "色谱跟踪",
+      "type": "检测方法",
+      "desc": "通过分析气体成分来判断设备状态的方法"
+    },
+    {
+      "name": "特征气体组分数值",
+      "type": "检测参数",
+      "desc": "色谱分析中得到的特征气体含量数据"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新投入运行、大修后的油浸式真空有载分接开关可在投运并变换分接后的24h、3天、1周、1月（或气体监测器）分别进行色谱跟踪",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "进行色谱跟踪",
+      "condition": "新投入运行、大修后",
+      "constraint": "投运并变换分接后的24h、3天、1周、1月（或气体监测器）",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "色谱跟踪"
+      ]
+    },
+    {
+      "content": "逐次特征气体组分数值比较应无明显增量",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "进行特征气体组分数值比较",
+      "condition": "色谱跟踪后",
+      "constraint": "逐次比较，无明显增量",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "特征气体组分数值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "色谱跟踪",
+      "type": "采用"
+    },
+    {
+      "source": "特征气体组分数值",
+      "target": "油浸式真空有载分接开关",
+      "type": "反映状态"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "特征气体组分数值",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2524,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "91b30a908e1a799b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2524_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

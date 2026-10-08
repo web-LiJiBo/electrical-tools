@@ -1,0 +1,196 @@
+{
+  "entities": [
+    {
+      "name": "过电流",
+      "type": "继电保护",
+      "desc": "当电路中的电流超过预设值时触发的保护机制"
+    },
+    {
+      "name": "电流速断",
+      "type": "继电保护",
+      "desc": "在电流突增时立即动作的保护机制"
+    },
+    {
+      "name": "过电压",
+      "type": "继电保护",
+      "desc": "当电路中的电压超过预设值时触发的保护机制"
+    },
+    {
+      "name": "欠电压",
+      "type": "继电保护",
+      "desc": "当电路中的电压低于预设值时触发的保护机制"
+    },
+    {
+      "name": "低频",
+      "type": "继电保护",
+      "desc": "当系统频率低于预设值时触发的保护机制"
+    },
+    {
+      "name": "不平衡",
+      "type": "继电保护",
+      "desc": "当三相电流或电压不平衡时触发的保护机制"
+    },
+    {
+      "name": "闭锁",
+      "type": "继电保护",
+      "desc": "当系统出现异常情况时，阻止某些设备动作的保护机制"
+    },
+    {
+      "name": "联切",
+      "type": "继电保护",
+      "desc": "当系统出现故障时，同时切断多个相关设备的保护机制"
+    }
+  ],
+  "rules": [
+    {
+      "content": "过电流",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "动作",
+      "condition": "电路电流超过预设值",
+      "constraint": "无",
+      "related_entities": [
+        "过电流"
+      ]
+    },
+    {
+      "content": "电流速断",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "动作",
+      "condition": "电流突增",
+      "constraint": "无",
+      "related_entities": [
+        "电流速断"
+      ]
+    },
+    {
+      "content": "过电压",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "动作",
+      "condition": "电路电压超过预设值",
+      "constraint": "无",
+      "related_entities": [
+        "过电压"
+      ]
+    },
+    {
+      "content": "欠电压",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "动作",
+      "condition": "电路电压低于预设值",
+      "constraint": "无",
+      "related_entities": [
+        "欠电压"
+      ]
+    },
+    {
+      "content": "低频（可选）",
+      "type": "建议",
+      "subject": "继电保护装置",
+      "action": "动作",
+      "condition": "系统频率低于预设值",
+      "constraint": "无",
+      "related_entities": [
+        "低频"
+      ]
+    },
+    {
+      "content": "不平衡",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "动作",
+      "condition": "三相电流或电压不平衡",
+      "constraint": "无",
+      "related_entities": [
+        "不平衡"
+      ]
+    },
+    {
+      "content": "闭锁",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "闭锁",
+      "condition": "系统出现异常情况",
+      "constraint": "无",
+      "related_entities": [
+        "闭锁"
+      ]
+    },
+    {
+      "content": "联切",
+      "type": "强制",
+      "subject": "继电保护装置",
+      "action": "联切",
+      "condition": "系统出现故障",
+      "constraint": "无",
+      "related_entities": [
+        "联切"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "过电流",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "电流速断",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "过电压",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "欠电压",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "低频",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "不平衡",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "闭锁",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    },
+    {
+      "source": "联切",
+      "target": "继电保护装置",
+      "type": "保护对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3308,
+      "source_row_id": "3317",
+      "clause_index": 2,
+      "source_text": "保护要求1）过电流；2）电流速断；3）过电压；4）欠电压；5）低频（可选）；6）不平衡；7）闭锁、联切。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.639363+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

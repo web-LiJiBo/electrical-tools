@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "避雷器",
+      "type": "电力设备",
+      "desc": "一种用于保护电气系统免受过电压损害的设备"
+    },
+    {
+      "name": "持续运行电压",
+      "type": "电力参数",
+      "desc": "电气设备长期稳定运行时所承受的最大电压值"
+    },
+    {
+      "name": "无线电干扰水平",
+      "type": "电力参数",
+      "desc": "电气设备在运行过程中产生的无线电干扰强度"
+    },
+    {
+      "name": "μV",
+      "type": "单位",
+      "desc": "微伏，电压单位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1.05倍持续运行电压下，避雷器最大无线电干扰水平不应超过500μV",
+      "type": "强制",
+      "subject": "避雷器",
+      "action": "限制无线电干扰水平",
+      "condition": "在1.05倍持续运行电压下",
+      "constraint": "无线电干扰水平≤500μV",
+      "related_entities": [
+        "避雷器",
+        "持续运行电压",
+        "无线电干扰水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "避雷器",
+      "target": "持续运行电压",
+      "type": "承受电压"
+    },
+    {
+      "source": "避雷器",
+      "target": "无线电干扰水平",
+      "type": "产生干扰"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2643,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e40759b7d246a31f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2643_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

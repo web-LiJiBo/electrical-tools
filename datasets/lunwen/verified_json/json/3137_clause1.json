@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "接地极",
+      "type": "电力设备",
+      "desc": "电力系统中用于接地的金属构件"
+    },
+    {
+      "name": "温度报警装置",
+      "type": "电力设备",
+      "desc": "监测接地极温度并发出报警信号的装置"
+    },
+    {
+      "name": "温度",
+      "type": "物理量",
+      "desc": "物体的冷热程度，以摄氏度表示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极温升允许值的确定原则是保证在任何情况下接地极的温度不得超过90℃。",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "温度控制",
+      "condition": "任何情况",
+      "constraint": "温度≤90℃",
+      "related_entities": [
+        "接地极",
+        "温度"
+      ]
+    },
+    {
+      "content": "当接地极设有温度报警装置时，该温度值可以放宽到95℃。",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "温度控制",
+      "condition": "设有温度报警装置",
+      "constraint": "温度≤95℃",
+      "related_entities": [
+        "接地极",
+        "温度报警装置",
+        "温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极",
+      "target": "温度报警装置",
+      "type": "安装于"
+    },
+    {
+      "source": "温度报警装置",
+      "target": "接地极",
+      "type": "监测对象"
+    },
+    {
+      "source": "接地极",
+      "target": "温度",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3128,
+      "source_row_id": "3137",
+      "clause_index": 1,
+      "source_text": "接地极温升允许值的确定原则是保证在任何情况下接地极的温度不得超过90℃。当接地极设有温度报警装置时，该温度值可以放宽到95℃。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.415314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

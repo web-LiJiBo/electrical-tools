@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "铁心电抗器",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中限制短路电流的电力设备"
+    },
+    {
+      "name": "室内",
+      "type": "安装环境",
+      "desc": "电力设备安装的场所，通常指建筑物内部"
+    }
+  ],
+  "rules": [
+    {
+      "content": "室内应选用铁心电抗器",
+      "type": "强制",
+      "subject": "电力设备安装设计人员",
+      "action": "选择电力设备",
+      "condition": "电力系统短路电流较大且安装在建筑物内部",
+      "constraint": "铁心电抗器",
+      "related_entities": [
+        "铁心电抗器",
+        "室内"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "室内",
+      "target": "铁心电抗器",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1063,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c293fd5d3895c43d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1063_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

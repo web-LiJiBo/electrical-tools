@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "电力电缆",
+      "type": "电力设备",
+      "desc": "用于传输电能的电缆"
+    },
+    {
+      "name": "防火涂料",
+      "type": "材料",
+      "desc": "具有防火功能的涂料"
+    },
+    {
+      "name": "防火包带",
+      "type": "材料",
+      "desc": "具有防火功能的带状材料"
+    },
+    {
+      "name": "防爆耐火槽盒",
+      "type": "电力设备",
+      "desc": "具有防爆和耐火功能的槽盒"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在电力电缆接头两侧及相邻电缆2～3m长的区段施加防火涂料或防火包带",
+      "type": "强制",
+      "subject": "电力电缆",
+      "action": "施加防火涂料或防火包带",
+      "condition": "电力电缆接头两侧及相邻电缆2～3m长的区段",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "电力电缆",
+        "防火涂料",
+        "防火包带"
+      ]
+    },
+    {
+      "content": "必要时采用高强度防爆耐火槽盒进行封闭",
+      "type": "强制",
+      "subject": "电力电缆",
+      "action": "采用高强度防爆耐火槽盒进行封闭",
+      "condition": "必要时",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "电力电缆",
+        "防爆耐火槽盒"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电力电缆",
+      "target": "防火涂料",
+      "type": "施加"
+    },
+    {
+      "source": "电力电缆",
+      "target": "防火包带",
+      "type": "施加"
+    },
+    {
+      "source": "电力电缆",
+      "target": "防爆耐火槽盒",
+      "type": "封闭"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1894,
+      "source_row_id": "1894",
+      "clause_index": 1,
+      "source_text": "在电力电缆接头两侧及相邻电缆2～3m长的区段施加防火涂料或防火包带。必要时采用高强度防爆耐火槽盒进行封闭"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.889969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

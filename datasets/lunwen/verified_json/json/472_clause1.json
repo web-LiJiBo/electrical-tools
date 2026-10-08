@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "电缆支架",
+      "type": "电力设备",
+      "desc": "用于支撑电缆的结构"
+    },
+    {
+      "name": "电缆外径",
+      "type": "电力参数",
+      "desc": "电缆的直径尺寸"
+    },
+    {
+      "name": "层间净距",
+      "type": "电力参数",
+      "desc": "电缆支架相邻两层之间的垂直间距"
+    },
+    {
+      "name": "电缆支架层间允许最小距离",
+      "type": "电力参数",
+      "desc": "电缆支架相邻两层之间的最小允许距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆支架的层间允许最小距离，当设计无规定时，可采用表4的规定。但层间净距不应小于2倍电缆外径加10mm。",
+      "type": "强制",
+      "subject": "电缆支架",
+      "action": "设置层间允许最小距离",
+      "condition": "设计无规定",
+      "constraint": "层间净距≥2*电缆外径+10mm",
+      "related_entities": [
+        "电缆支架",
+        "电缆外径",
+        "层间净距"
+      ]
+    },
+    {
+      "content": "35kV及以上高压电缆不应小于2倍电缆外径加50mm。",
+      "type": "强制",
+      "subject": "电缆支架",
+      "action": "设置层间允许最小距离",
+      "condition": "电缆电压等级≥35kV",
+      "constraint": "层间净距≥2*电缆外径+50mm",
+      "related_entities": [
+        "电缆支架",
+        "电缆外径",
+        "层间净距"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆支架",
+      "target": "电缆外径",
+      "type": "依赖"
+    },
+    {
+      "source": "电缆支架",
+      "target": "层间净距",
+      "type": "依赖"
+    },
+    {
+      "source": "电缆支架",
+      "target": "电缆支架层间允许最小距离",
+      "type": "依赖"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 472,
+      "source_row_id": "472",
+      "clause_index": 1,
+      "source_text": "电缆支架的层间允许最小距离，当设计无规定时，可采用表4的规定。但层间净距不应小于2倍电缆外径加10mm。35kV及以上高压电缆不应小于2倍电缆外径加50mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9792,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.263486+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

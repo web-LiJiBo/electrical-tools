@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "绝缘材料",
+      "type": "电力设备材料",
+      "desc": "用于电力系统中电气设备绝缘的部分"
+    },
+    {
+      "name": "无填充剂的交联聚乙烯",
+      "type": "电力设备材料",
+      "desc": "一种特定类型的绝缘材料"
+    },
+    {
+      "name": "附录B",
+      "type": "技术文档",
+      "desc": "标准文件中的技术说明部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "本标准包括的绝缘材料的类型应是无填充剂的交联聚乙烯",
+      "type": "强制",
+      "subject": "绝缘材料",
+      "action": "使用",
+      "condition": "电力系统中电气设备绝缘部分",
+      "constraint": "无填充剂的交联聚乙烯",
+      "related_entities": [
+        "绝缘材料",
+        "无填充剂的交联聚乙烯"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘材料",
+      "target": "无填充剂的交联聚乙烯",
+      "type": "具体化"
+    },
+    {
+      "source": "无填充剂的交联聚乙烯",
+      "target": "绝缘材料",
+      "type": "实例化"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1849,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "54898ca094b8b15b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1849_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

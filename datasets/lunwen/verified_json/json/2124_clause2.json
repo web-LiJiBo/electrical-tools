@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "油中颗粒",
+      "type": "电力设备状态参数",
+      "desc": "电力设备油中颗粒物含量"
+    },
+    {
+      "name": "运行前",
+      "type": "时间点",
+      "desc": "电力设备投入运行之前的时间点"
+    },
+    {
+      "name": "5μm",
+      "type": "颗粒尺寸",
+      "desc": "油中颗粒物的直径大小"
+    },
+    {
+      "name": "2000个/100mL",
+      "type": "颗粒浓度",
+      "desc": "油中颗粒物的浓度值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "投入运行前油中大于5μm的颗粒不多于2000个/100mL",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "投入运行",
+      "condition": "设备检修完毕后",
+      "constraint": "油中颗粒物浓度≤2000个/100mL",
+      "related_entities": [
+        "油中颗粒",
+        "运行前"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油中颗粒",
+      "target": "运行前",
+      "type": "检测时间"
+    },
+    {
+      "source": "油中颗粒",
+      "target": "2000个/100mL",
+      "type": "浓度限制"
+    },
+    {
+      "source": "运行前",
+      "target": "电力设备",
+      "type": "设备状态检查"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2124,
+      "source_row_id": "2124",
+      "clause_index": 2,
+      "source_text": "表13中，投入运行前油中大于5μm的颗粒不多于2000个/100mL"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9688,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.168544+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

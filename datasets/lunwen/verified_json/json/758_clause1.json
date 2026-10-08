@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "导地线",
+      "type": "电力设备",
+      "desc": "输电线路中的导线或地线"
+    },
+    {
+      "name": "设计值",
+      "type": "技术参数",
+      "desc": "导地线安装时的设计弧垂值"
+    },
+    {
+      "name": "允许误差",
+      "type": "技术参数",
+      "desc": "导地线弧垂与设计值之间的允许偏差范围"
+    },
+    {
+      "name": "正偏差",
+      "type": "技术参数",
+      "desc": "导地线弧垂超出设计值的允许偏差量"
+    },
+    {
+      "name": "大跨越档",
+      "type": "特殊区段",
+      "desc": "跨越重要设施或地形复杂的大跨度输电线路区段"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般情况下导地线弧垂对设计值的允许误差为±2.5%，其正偏差不应超过0.5m",
+      "type": "强制",
+      "subject": "导地线",
+      "action": "安装",
+      "condition": "一般情况下",
+      "constraint": "允许误差±2.5%，正偏差≤0.5m",
+      "related_entities": [
+        "导地线",
+        "设计值",
+        "允许误差",
+        "正偏差"
+      ]
+    },
+    {
+      "content": "大跨越档弧垂允许偏差为±1%，其正偏差不应超过1m",
+      "type": "强制",
+      "subject": "导地线",
+      "action": "安装",
+      "condition": "大跨越档",
+      "constraint": "允许误差±1%，正偏差≤1m",
+      "related_entities": [
+        "导地线",
+        "设计值",
+        "允许误差",
+        "正偏差",
+        "大跨越档"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导地线",
+      "target": "设计值",
+      "type": "依据"
+    },
+    {
+      "source": "导地线",
+      "target": "允许误差",
+      "type": "依据"
+    },
+    {
+      "source": "导地线",
+      "target": "正偏差",
+      "type": "依据"
+    },
+    {
+      "source": "导地线",
+      "target": "大跨越档",
+      "type": "特殊条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 758,
+      "source_row_id": "758",
+      "clause_index": 1,
+      "source_text": "一般情况下导地线弧垂对设计值的允许误差为±2.5%，其正偏差不应超过0.5m；大跨越档弧垂允许偏差为±1%，其正偏差不应超过1m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.588084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

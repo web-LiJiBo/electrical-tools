@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "测得的电阻值",
+      "type": "电气参数",
+      "desc": "实际测量得到的电阻值"
+    },
+    {
+      "name": "型式试验测得的最小电阻值",
+      "type": "电气参数",
+      "desc": "产品型式试验时测得的最小电阻值"
+    },
+    {
+      "name": "倍数",
+      "type": "系数",
+      "desc": "倍数关系，用于计算最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测得的电阻值不应超过型式试验测得的最小电阻值的1.2倍",
+      "type": "强制",
+      "subject": "测得的电阻值",
+      "action": "不应超过",
+      "condition": "在产品运行过程中",
+      "constraint": "不超过型式试验测得的最小电阻值的1.2倍",
+      "related_entities": [
+        "测得的电阻值",
+        "型式试验测得的最小电阻值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "测得的电阻值",
+      "target": "型式试验测得的最小电阻值",
+      "type": "基于"
+    },
+    {
+      "source": "测得的电阻值",
+      "target": "倍数",
+      "type": "乘积"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 231,
+      "source_row_id": "231",
+      "clause_index": 1,
+      "source_text": "测得的电阻值不应超过型式试验测得的最小电阻值的1.2倍"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9583,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.002603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "半断路器接线",
+      "type": "电气接线方式",
+      "desc": "一种高压配电装置的接线方式"
+    },
+    {
+      "name": "电源回路",
+      "type": "电气回路",
+      "desc": "从电源引出至负荷的供电路径"
+    },
+    {
+      "name": "负荷回路",
+      "type": "电气回路",
+      "desc": "从电源引出至用户负荷的供电路径"
+    },
+    {
+      "name": "同名回路",
+      "type": "电气回路",
+      "desc": "具有相同相位的电气回路"
+    },
+    {
+      "name": "母线",
+      "type": "电气设备",
+      "desc": "连接多条回路的导电体"
+    },
+    {
+      "name": "断路器",
+      "type": "电气设备",
+      "desc": "一种开关电器，用于切断或闭合电路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用一个半断路器接线时，宜将电源回路与负荷回路配对成串",
+      "type": "强制",
+      "subject": "半断路器接线",
+      "action": "将电源回路与负荷回路配对成串",
+      "condition": "采用一个半断路器接线",
+      "constraint": "无",
+      "related_entities": [
+        "半断路器接线",
+        "电源回路",
+        "负荷回路"
+      ]
+    },
+    {
+      "content": "同名回路不宜配置在同一串内",
+      "type": "强制",
+      "subject": "半断路器接线",
+      "action": "避免同名回路配置在同一串内",
+      "condition": "采用一个半断路器接线",
+      "constraint": "无",
+      "related_entities": [
+        "半断路器接线",
+        "电源回路",
+        "负荷回路",
+        "同名回路"
+      ]
+    },
+    {
+      "content": "但可接于同一侧母线",
+      "type": "强制",
+      "subject": "半断路器接线",
+      "action": "允许同名回路接于同一侧母线",
+      "condition": "采用一个半断路器接线",
+      "constraint": "无",
+      "related_entities": [
+        "半断路器接线",
+        "电源回路",
+        "负荷回路",
+        "同名回路",
+        "母线"
+      ]
+    },
+    {
+      "content": "当变器超过两台时，其中两台进串，其他变压器可不进串，直接经断路器接母线",
+      "type": "强制",
+      "subject": "半断路器接线",
+      "action": "部分变压器进串，其余变压器直接接母线",
+      "condition": "采用一个半断路器接线且变压器数量超过两台",
+      "constraint": "无",
+      "related_entities": [
+        "半断路器接线",
+        "电源回路",
+        "负荷回路",
+        "变压器",
+        "母线",
+        "断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电源回路",
+      "target": "半断路器接线",
+      "type": "属于"
+    },
+    {
+      "source": "负荷回路",
+      "target": "半断路器接线",
+      "type": "属于"
+    },
+    {
+      "source": "同名回路",
+      "target": "电源回路",
+      "type": "属于"
+    },
+    {
+      "source": "同名回路",
+      "target": "负荷回路",
+      "type": "属于"
+    },
+    {
+      "source": "母线",
+      "target": "电源回路",
+      "type": "连接"
+    },
+    {
+      "source": "母线",
+      "target": "负荷回路",
+      "type": "连接"
+    },
+    {
+      "source": "变压器",
+      "target": "电源回路",
+      "type": "属于"
+    },
+    {
+      "source": "变压器",
+      "target": "负荷回路",
+      "type": "属于"
+    },
+    {
+      "source": "断路器",
+      "target": "电源回路",
+      "type": "连接"
+    },
+    {
+      "source": "断路器",
+      "target": "负荷回路",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 762,
+      "source_row_id": "762",
+      "clause_index": 1,
+      "source_text": "采用一个半断路器接线时，宜将电源回路与负荷回路配对成串，同名回路不宜配置在同一串内，但可接于同一侧母线；当变器超过两台时，其中两台进串，其他变压器可不进串，直接经断路器接母线"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.593082+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

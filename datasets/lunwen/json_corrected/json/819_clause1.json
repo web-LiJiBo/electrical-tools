@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "运行设备",
+      "type": "电力设备",
+      "desc": "正在运行中的电力设备"
+    },
+    {
+      "name": "油中溶解气体",
+      "type": "电力设备状态参数",
+      "desc": "电力设备油中溶解气体含量"
+    },
+    {
+      "name": "总烃",
+      "type": "油中溶解气体成分",
+      "desc": "电力设备油中溶解气体总烃含量"
+    },
+    {
+      "name": "H2",
+      "type": "油中溶解气体成分",
+      "desc": "电力设备油中溶解气体氢气含量"
+    },
+    {
+      "name": "C2H2",
+      "type": "油中溶解气体成分",
+      "desc": "电力设备油中溶解气体乙炔含量"
+    },
+    {
+      "name": "烃类气体",
+      "type": "油中溶解气体成分",
+      "desc": "电力设备油中溶解气体烃类气体含量"
+    },
+    {
+      "name": "产气速率",
+      "type": "电力设备状态参数",
+      "desc": "电力设备油中溶解气体产气速率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行设备的油中任一溶解气体含量超过下列任何一项值时应引起注意：总烃含量大于150，H2含量大于150，C2H2含量并大于1．0ul/l",
+      "type": "强制",
+      "subject": "运行设备",
+      "action": "引起注意",
+      "condition": "油中溶解气体含量超过阈值",
+      "constraint": "总烃含量>150或H2含量>150或C2H2含量>1.0ul/l",
+      "related_entities": [
+        "运行设备",
+        "总烃",
+        "H2",
+        "C2H2"
+      ]
+    },
+    {
+      "content": "烃类气体总和的产气速率大于0．5mL/h,相对产气速率大于10%/月，则认为设备有异常",
+      "type": "强制",
+      "subject": "运行设备",
+      "action": "认为设备有异常",
+      "condition": "产气速率超过阈值",
+      "constraint": "烃类气体总和的产气速率>0.5mL/h且相对产气速率>10%/月",
+      "related_entities": [
+        "运行设备",
+        "烃类气体",
+        "产气速率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "运行设备",
+      "target": "油中溶解气体",
+      "type": "包含"
+    },
+    {
+      "source": "油中溶解气体",
+      "target": "总烃",
+      "type": "包含"
+    },
+    {
+      "source": "油中溶解气体",
+      "target": "H2",
+      "type": "包含"
+    },
+    {
+      "source": "油中溶解气体",
+      "target": "C2H2",
+      "type": "包含"
+    },
+    {
+      "source": "油中溶解气体",
+      "target": "烃类气体",
+      "type": "包含"
+    },
+    {
+      "source": "烃类气体",
+      "target": "产气速率",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "pair_id": 819,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "307055f084121955",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\819_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

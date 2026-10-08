@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "绝缘工具",
+      "type": "电力设备",
+      "desc": "用于电力系统中绝缘的工具"
+    },
+    {
+      "name": "金属工具",
+      "type": "电力设备",
+      "desc": "用于电力系统中非绝缘的工具"
+    },
+    {
+      "name": "机械试验",
+      "type": "试验检测",
+      "desc": "对电力设备进行机械性能测试"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘工具两年一次，金属工具每年一次",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "定期进行机械试验",
+      "condition": "电力设备使用过程中",
+      "constraint": "绝缘工具每2年1次，金属工具每年1次",
+      "related_entities": [
+        "绝缘工具",
+        "金属工具",
+        "机械试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘工具",
+      "target": "机械试验",
+      "type": "需要"
+    },
+    {
+      "source": "金属工具",
+      "target": "机械试验",
+      "type": "需要"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 873,
+      "source_row_id": "873",
+      "clause_index": 2,
+      "source_text": "机械试验周期：绝缘工具两年一次，金属工具每年一次"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.733080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

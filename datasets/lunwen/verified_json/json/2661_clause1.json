@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "直流断路器",
+      "type": "设备",
+      "desc": "一种用于直流电路中的开关电器"
+    },
+    {
+      "name": "额定预期短路电流",
+      "type": "参数",
+      "desc": "直流断路器在预期短路情况下能安全分断的最大电流值"
+    },
+    {
+      "name": "R10系列",
+      "type": "标准系列",
+      "desc": "GB/T762--2002中规定的直流断路器系列"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流断路器额定预期短路电流由下列值中选取：8kA,10kA,12.5kA,16kA,20kA,25kA,31.5kA,40kA,50kA,63kA",
+      "type": "强制",
+      "subject": "直流断路器",
+      "action": "选择额定预期短路电流",
+      "condition": "直流断路器选型设计阶段",
+      "constraint": "额定预期短路电流必须从8kA,10kA,12.5kA,16kA,20kA,25kA,31.5kA,40kA,50kA,63kA中选取",
+      "related_entities": [
+        "直流断路器",
+        "额定预期短路电流"
+      ]
+    },
+    {
+      "content": "以上电流是在GB/T762--2002中规定的R10系列中选取的",
+      "type": "说明",
+      "subject": "直流断路器",
+      "action": "选择额定预期短路电流",
+      "condition": "直流断路器选型设计阶段",
+      "constraint": "额定预期短路电流必须从GB/T762--2002中规定的R10系列中选取",
+      "related_entities": [
+        "直流断路器",
+        "额定预期短路电流",
+        "R10系列"
+      ]
+    },
+    {
+      "content": "对于额定预期短路电流有特殊要求时,由供需双方协商确定",
+      "type": "说明",
+      "subject": "直流断路器",
+      "action": "选择额定预期短路电流",
+      "condition": "直流断路器选型设计阶段且有特殊要求",
+      "constraint": "额定预期短路电流可由供需双方协商确定",
+      "related_entities": [
+        "直流断路器",
+        "额定预期短路电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流断路器",
+      "target": "额定预期短路电流",
+      "type": "包含"
+    },
+    {
+      "source": "额定预期短路电流",
+      "target": "R10系列",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2652,
+      "source_row_id": "2661",
+      "clause_index": 1,
+      "source_text": "直流断路器额定预期短路电流由下列值中选取：8kA,10kA,12.5kA,16kA,20kA,25kA,31.5kA,40kA,50kA,63kA.注1：以上电流是在GB/T762--2002中规定的R10系列中选取的。注2：对于额定预期短路电流有特殊要求时,由供需双方协商确定。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.820313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

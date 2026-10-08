@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "一次端多次截断冲击试验",
+      "type": "试验项目",
+      "desc": "对一次端进行多次截断冲击的试验"
+    },
+    {
+      "name": "传递过电压试验",
+      "type": "试验项目",
+      "desc": "测试设备在传递过电压情况下的耐受能力"
+    },
+    {
+      "name": "机械强度试验",
+      "type": "试验项目",
+      "desc": "测试设备在机械应力作用下的强度"
+    },
+    {
+      "name": "内部电弧故障试验",
+      "type": "试验项目",
+      "desc": "模拟内部电弧故障的试验"
+    },
+    {
+      "name": "低温和高温下的密封性能试验",
+      "type": "试验项目",
+      "desc": "测试设备在不同温度下的密封性能"
+    },
+    {
+      "name": "腐蚀试验",
+      "type": "试验项目",
+      "desc": "测试设备在腐蚀环境中的耐受能力"
+    },
+    {
+      "name": "着火危险试验",
+      "type": "试验项目",
+      "desc": "测试设备在火灾情况下的安全性能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有电力设备都应进行一次端多次截断冲击试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行一次端多次截断冲击试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "一次端多次截断冲击试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行传递过电压试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行传递过电压试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "传递过电压试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行机械强度试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行机械强度试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "机械强度试验"
+      ]
+    },
+    {
+      "content": "所有气体绝缘产品都应进行低温和高温下的密封性能试验",
+      "type": "强制",
+      "subject": "气体绝缘产品",
+      "action": "进行低温和高温下的密封性能试验",
+      "condition": "所有气体绝缘产品",
+      "constraint": "无",
+      "related_entities": [
+        "低温和高温下的密封性能试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行腐蚀试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行腐蚀试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "腐蚀试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行着火危险试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行着火危险试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "着火危险试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一次端多次截断冲击试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "传递过电压试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "机械强度试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "内部电弧故障试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "低温和高温下的密封性能试验",
+      "target": "气体绝缘产品",
+      "type": "适用对象"
+    },
+    {
+      "source": "腐蚀试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "着火危险试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2628,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ddb63b63682a9974",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2628_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

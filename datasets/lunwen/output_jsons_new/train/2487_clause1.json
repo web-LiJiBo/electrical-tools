@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "生产厂家",
+      "type": "组织机构",
+      "desc": "生产SVC晶闸管阀组的企业"
+    },
+    {
+      "name": "SVC晶闸管阀组",
+      "type": "电力设备",
+      "desc": "静止无功补偿装置中的晶闸管阀组"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力元器件",
+      "desc": "SVC晶闸管阀组中的关键元器件"
+    },
+    {
+      "name": "冗余度",
+      "type": "技术参数",
+      "desc": "晶闸管串联个数的冗余度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "生产厂家在进行SVC晶闸管阀组设计时，增加晶闸管串联个数的冗余度应大于等于10%",
+      "type": "强制",
+      "subject": "生产厂家",
+      "action": "设计SVC晶闸管阀组",
+      "condition": "SVC晶闸管阀组设计阶段",
+      "constraint": "冗余度≥10%",
+      "related_entities": [
+        "生产厂家",
+        "SVC晶闸管阀组",
+        "晶闸管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "生产厂家",
+      "target": "SVC晶闸管阀组",
+      "type": "设计"
+    },
+    {
+      "source": "SVC晶闸管阀组",
+      "target": "晶闸管",
+      "type": "包含"
+    },
+    {
+      "source": "冗余度",
+      "target": "晶闸管",
+      "type": "参数"
+    }
+  ]
+}

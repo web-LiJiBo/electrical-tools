@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "直流电源系统",
+      "type": "电力系统",
+      "desc": "由直流电源设备及其连接线缆组成的系统"
+    },
+    {
+      "name": "阻燃电缆",
+      "type": "电力电缆",
+      "desc": "具有阻燃性能的电力电缆"
+    },
+    {
+      "name": "蓄电池组",
+      "type": "储能装置",
+      "desc": "用于储存电能的电池组"
+    },
+    {
+      "name": "电缆通道",
+      "type": "电力通道",
+      "desc": "供电缆敷设的专用通道"
+    },
+    {
+      "name": "电缆竖井",
+      "type": "电力竖井",
+      "desc": "供电缆垂直敷设的专用竖井"
+    },
+    {
+      "name": "防火隔离措施",
+      "type": "安全措施",
+      "desc": "防止火灾蔓延的安全措施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流电源系统应采用阻燃电缆",
+      "type": "强制",
+      "subject": "直流电源系统",
+      "action": "使用电缆",
+      "condition": "直流电源系统运行中",
+      "constraint": "必须使用阻燃电缆",
+      "related_entities": [
+        "直流电源系统",
+        "阻燃电缆"
+      ]
+    },
+    {
+      "content": "两组及以上蓄电池组电缆，应分别铺设在各自独立的通道内",
+      "type": "强制",
+      "subject": "蓄电池组电缆",
+      "action": "敷设电缆",
+      "condition": "两组及以上蓄电池组并列运行",
+      "constraint": "每组蓄电池组电缆应铺设在独立的通道内",
+      "related_entities": [
+        "蓄电池组",
+        "电缆通道"
+      ]
+    },
+    {
+      "content": "并尽量沿最短路径敷设",
+      "type": "建议",
+      "subject": "蓄电池组电缆",
+      "action": "敷设电缆",
+      "condition": "两组及以上蓄电池组并列运行",
+      "constraint": "敷设路径应尽可能短",
+      "related_entities": [
+        "蓄电池组",
+        "电缆通道"
+      ]
+    },
+    {
+      "content": "在穿越电缆竖井时，两组蓄电池电缆应分别加穿金属套管",
+      "type": "强制",
+      "subject": "蓄电池组电缆",
+      "action": "敷设电缆",
+      "condition": "两组及以上蓄电池组并列运行且穿越电缆竖井",
+      "constraint": "电缆应加穿金属套管",
+      "related_entities": [
+        "蓄电池组",
+        "电缆竖井"
+      ]
+    },
+    {
+      "content": "对不满足要求的运行变电站，应采取防火隔离措施",
+      "type": "强制",
+      "subject": "运行变电站",
+      "action": "采取防火隔离措施",
+      "condition": "直流电源系统存在安全隐患",
+      "constraint": "应采取防火隔离措施",
+      "related_entities": [
+        "直流电源系统",
+        "防火隔离措施"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电源系统",
+      "target": "阻燃电缆",
+      "type": "使用"
+    },
+    {
+      "source": "蓄电池组",
+      "target": "电缆通道",
+      "type": "敷设于"
+    },
+    {
+      "source": "蓄电池组",
+      "target": "电缆竖井",
+      "type": "穿越"
+    },
+    {
+      "source": "蓄电池组电缆",
+      "target": "金属套管",
+      "type": "加穿"
+    },
+    {
+      "source": "运行变电站",
+      "target": "防火隔离措施",
+      "type": "采取"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3230,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8855f7a9f8adfd74",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3230_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

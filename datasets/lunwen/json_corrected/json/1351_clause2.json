@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "短路耐热能力",
+      "type": "电气设备性能",
+      "desc": "电气设备在短路情况下能够承受的温度和时间的能力"
+    },
+    {
+      "name": "电流I",
+      "type": "电气参数",
+      "desc": "用于计算电气设备承受短路耐热能力的电流值"
+    },
+    {
+      "name": "持续时间",
+      "type": "时间",
+      "desc": "电流I在短路情况下作用于电气设备的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "除另有规定，用于计算承受短路耐热能力的电流I的持续时间为2s",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "计算承受短路耐热能力的电流I的持续时间",
+      "condition": "无特殊规定时",
+      "constraint": "2s",
+      "related_entities": [
+        "短路耐热能力",
+        "电流I",
+        "持续时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "短路耐热能力",
+      "target": "电流I",
+      "type": "计算依据"
+    },
+    {
+      "source": "电流I",
+      "target": "持续时间",
+      "type": "计算依据"
+    },
+    {
+      "source": "电气设备",
+      "target": "短路耐热能力",
+      "type": "承载对象"
+    },
+    {
+      "source": "电气设备",
+      "target": "电流I",
+      "type": "承受对象"
+    },
+    {
+      "source": "电气设备",
+      "target": "持续时间",
+      "type": "承受条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1351,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a64ce74b6533b1dc",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1351_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

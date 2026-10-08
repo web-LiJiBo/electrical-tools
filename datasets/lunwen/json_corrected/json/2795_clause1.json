@@ -1,0 +1,128 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "订货技术要求",
+      "type": "技术文档",
+      "desc": "采购合同中规定的设备技术参数和性能要求"
+    },
+    {
+      "name": "铭牌",
+      "type": "设备标识",
+      "desc": "设备上标注的技术参数和信息标识"
+    },
+    {
+      "name": "辅助设备",
+      "type": "电力设备",
+      "desc": "断路器配套使用的其他电气设备"
+    },
+    {
+      "name": "油漆",
+      "type": "材料",
+      "desc": "用于设备表面防腐和美观的涂料"
+    },
+    {
+      "name": "金属表面",
+      "type": "材料",
+      "desc": "设备金属部件的表面"
+    },
+    {
+      "name": "电容",
+      "type": "电气元件",
+      "desc": "储存电荷的储能元件"
+    },
+    {
+      "name": "分、合闸电阻",
+      "type": "电气元件",
+      "desc": "控制断路器分闸和合闸过程中的电阻"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应检查断路器以验证其与订货技术要求的符合性",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "检查",
+      "condition": "断路器安装前",
+      "constraint": "符合订货技术要求",
+      "related_entities": [
+        "断路器",
+        "订货技术要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "铭牌",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "辅助设备",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "油漆",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "金属表面",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "电容",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "分、合闸电阻",
+      "type": "包含"
+    },
+    {
+      "source": "铭牌",
+      "target": "断路器",
+      "type": "标识"
+    },
+    {
+      "source": "辅助设备",
+      "target": "断路器",
+      "type": "配套"
+    },
+    {
+      "source": "油漆",
+      "target": "金属表面",
+      "type": "涂覆"
+    },
+    {
+      "source": "电容",
+      "target": "断路器",
+      "type": "连接"
+    },
+    {
+      "source": "分、合闸电阻",
+      "target": "断路器",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2795,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "06b9a7ad0b458f5f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2795_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

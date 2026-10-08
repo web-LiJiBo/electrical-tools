@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "油",
+      "type": "介质",
+      "desc": "变压器等电气设备中的绝缘油"
+    },
+    {
+      "name": "颗粒",
+      "type": "杂质",
+      "desc": "油中直径大于5μm的颗粒物"
+    },
+    {
+      "name": "数量",
+      "type": "参数",
+      "desc": "油中颗粒的数量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "过滤以后的油中直径大于5μm的颗粒不多于1000个/100mL",
+      "type": "强制",
+      "subject": "油",
+      "action": "控制颗粒数量",
+      "condition": "设备运行期间",
+      "constraint": "颗粒数量≤1000个/100mL",
+      "related_entities": [
+        "颗粒",
+        "数量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油",
+      "target": "颗粒",
+      "type": "含有"
+    },
+    {
+      "source": "颗粒",
+      "target": "数量",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 826,
+      "source_row_id": "826",
+      "clause_index": 1,
+      "source_text": "过滤以后的油中直径大于5μm的颗粒不多于1000个/100mL"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9167,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.682082+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

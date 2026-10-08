@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "气体密封性检测",
+      "type": "检测项目",
+      "desc": "对电力设备中气体的泄漏情况进行检测"
+    },
+    {
+      "name": "0.5%/年",
+      "type": "检测标准",
+      "desc": "气体泄漏率不超过0.5%/年"
+    },
+    {
+      "name": "设备技术文件",
+      "type": "技术文档",
+      "desc": "设备制造厂家提供的技术文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体密封性检测标准为不大于0.5%/年或符合设备技术文件要求",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "进行气体密封性检测",
+      "condition": "每年定期或在必要时",
+      "constraint": "0.5%/年或符合设备技术文件要求",
+      "related_entities": [
+        "气体密封性检测",
+        "0.5%/年",
+        "设备技术文件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体密封性检测",
+      "target": "0.5%/年",
+      "type": "检测标准"
+    },
+    {
+      "source": "气体密封性检测",
+      "target": "设备技术文件",
+      "type": "参考依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 11,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "81a663d9b68869ef",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\11_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

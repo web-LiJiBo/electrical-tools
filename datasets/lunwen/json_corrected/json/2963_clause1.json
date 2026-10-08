@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "SVC",
+      "type": "电力设备",
+      "desc": "静止无功补偿装置"
+    },
+    {
+      "name": "控制顺序",
+      "type": "控制策略",
+      "desc": "SVC的控制操作顺序"
+    },
+    {
+      "name": "控制范围",
+      "type": "控制参数",
+      "desc": "SVC可调节的无功功率范围"
+    },
+    {
+      "name": "控制能力",
+      "type": "控制性能",
+      "desc": "SVC在不同运行状态下的无功补偿能力"
+    },
+    {
+      "name": "控制模式",
+      "type": "控制方式",
+      "desc": "SVC的运行控制模式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对SVC常规控制功能进行验证",
+      "type": "强制",
+      "subject": "SVC",
+      "action": "验证",
+      "condition": "SVC投运前或投运后定期",
+      "constraint": "无",
+      "related_entities": [
+        "SVC"
+      ]
+    },
+    {
+      "content": "验证控制顺序正确性",
+      "type": "强制",
+      "subject": "SVC",
+      "action": "验证",
+      "condition": "SVC投运前或投运后定期",
+      "constraint": "无",
+      "related_entities": [
+        "SVC",
+        "控制顺序"
+      ]
+    },
+    {
+      "content": "验证控制范围和控制能力",
+      "type": "强制",
+      "subject": "SVC",
+      "action": "验证",
+      "condition": "SVC投运前或投运后定期",
+      "constraint": "无",
+      "related_entities": [
+        "SVC",
+        "控制范围",
+        "控制能力"
+      ]
+    },
+    {
+      "content": "验证控制模式",
+      "type": "强制",
+      "subject": "SVC",
+      "action": "验证",
+      "condition": "SVC投运前或投运后定期",
+      "constraint": "无",
+      "related_entities": [
+        "SVC",
+        "控制模式"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SVC",
+      "target": "控制顺序",
+      "type": "包含"
+    },
+    {
+      "source": "SVC",
+      "target": "控制范围",
+      "type": "包含"
+    },
+    {
+      "source": "SVC",
+      "target": "控制能力",
+      "type": "包含"
+    },
+    {
+      "source": "SVC",
+      "target": "控制模式",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2963,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8e3168a24c53c862",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2963_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

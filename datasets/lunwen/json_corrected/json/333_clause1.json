@@ -1,0 +1,106 @@
+{
+  "entities": [
+    {
+      "name": "制造厂",
+      "type": "制造企业",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "元件",
+      "type": "电力设备部件",
+      "desc": "电力设备中的具体组件"
+    },
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路的电阻值"
+    },
+    {
+      "name": "控制值Rn",
+      "type": "技术指标",
+      "desc": "产品技术条件规定的主回路电阻值"
+    },
+    {
+      "name": "出厂实测值",
+      "type": "技术指标",
+      "desc": "实际测量得到的主回路电阻值"
+    },
+    {
+      "name": "测试区间",
+      "type": "测试范围",
+      "desc": "电阻值测试的电压电流范围"
+    },
+    {
+      "name": "测试点示意图",
+      "type": "技术文档",
+      "desc": "电阻值测试点的图形表示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制造厂应提供每个元件或每个单元主回路电阻的控制值Rn，(Rn是产品技术条件规定值)和出厂实值",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供元件或单元主回路电阻的控制值和实测值",
+      "condition": "元件或单元出厂前",
+      "constraint": "控制值Rn是产品技术条件规定值，实测值是出厂时测量得到的值",
+      "related_entities": [
+        "制造厂",
+        "元件",
+        "主回路电阻",
+        "控制值Rn",
+        "出厂实测值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制造厂",
+      "target": "元件",
+      "type": "生产制造"
+    },
+    {
+      "source": "制造厂",
+      "target": "主回路电阻",
+      "type": "检测对象"
+    },
+    {
+      "source": "元件",
+      "target": "主回路电阻",
+      "type": "组成部分"
+    },
+    {
+      "source": "主回路电阻",
+      "target": "控制值Rn",
+      "type": "技术指标"
+    },
+    {
+      "source": "主回路电阻",
+      "target": "出厂实测值",
+      "type": "技术指标"
+    },
+    {
+      "source": "制造厂",
+      "target": "测试点示意图",
+      "type": "提供技术文档"
+    },
+    {
+      "source": "测试点示意图",
+      "target": "主回路电阻",
+      "type": "测试对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 333,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dccef139c055f623",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\333_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

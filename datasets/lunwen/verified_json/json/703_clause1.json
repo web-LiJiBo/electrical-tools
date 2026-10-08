@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "高杆塔",
+      "type": "电力设施",
+      "desc": "电力系统中用于支撑输电线路的高大铁塔"
+    },
+    {
+      "name": "高空作业工作人员",
+      "type": "人员",
+      "desc": "从事电力施工或检修等高空作业的工作人员"
+    },
+    {
+      "name": "防坠安全保护措施",
+      "type": "安全措施",
+      "desc": "防止高空作业人员坠落的安全防护措施"
+    },
+    {
+      "name": "架线高空作业",
+      "type": "作业活动",
+      "desc": "电力施工中进行导线架设的高空作业"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高杆塔宜采取高空作业工作人员的防坠安全保护措施。",
+      "type": "强制",
+      "subject": "高杆塔",
+      "action": "采取防坠安全保护措施",
+      "condition": "高杆塔高空作业",
+      "constraint": "宜",
+      "related_entities": [
+        "高杆塔",
+        "高空作业工作人员",
+        "防坠安全保护措施"
+      ]
+    },
+    {
+      "content": "在架线高空作业时，应制定安全措施，确保安全生产。",
+      "type": "强制",
+      "subject": "架线高空作业",
+      "action": "制定安全措施",
+      "condition": "架线高空作业",
+      "constraint": "应",
+      "related_entities": [
+        "架线高空作业",
+        "高空作业工作人员",
+        "安全措施"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高杆塔",
+      "target": "高空作业工作人员",
+      "type": "支撑"
+    },
+    {
+      "source": "高杆塔",
+      "target": "防坠安全保护措施",
+      "type": "采取"
+    },
+    {
+      "source": "架线高空作业",
+      "target": "高空作业工作人员",
+      "type": "涉及"
+    },
+    {
+      "source": "架线高空作业",
+      "target": "安全措施",
+      "type": "制定"
+    },
+    {
+      "source": "防坠安全保护措施",
+      "target": "高空作业工作人员",
+      "type": "保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 703,
+      "source_row_id": "703",
+      "clause_index": 1,
+      "source_text": "高杆塔宜采取高空作业工作人员的防坠安全保护措施。在架线高空作业时，应制定安全措施，确保安全生产"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.529081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

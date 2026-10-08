@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "介质",
+      "desc": "六氟化硫气体，用于高压开关设备中"
+    },
+    {
+      "name": "GIS断路器",
+      "type": "设备",
+      "desc": "气体绝缘金属封闭开关设备中的断路器"
+    },
+    {
+      "name": "额定工作气压",
+      "type": "参数",
+      "desc": "设备正常运行时的气体压力值"
+    },
+    {
+      "name": "SF6气体年泄漏率",
+      "type": "参数",
+      "desc": "一年内SF6气体泄漏量占初始充气量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在额定工作气压下的SF6、GIS断路器，SF6气体年泄漏率不得大于0.5%",
+      "type": "强制",
+      "subject": "GIS断路器",
+      "action": "控制SF6气体泄漏率",
+      "condition": "额定工作气压下",
+      "constraint": "SF6气体年泄漏率≤0.5%",
+      "related_entities": [
+        "SF6气体",
+        "GIS断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体",
+      "target": "GIS断路器",
+      "type": "使用于"
+    },
+    {
+      "source": "GIS断路器",
+      "target": "SF6气体",
+      "type": "使用介质"
+    },
+    {
+      "source": "SF6气体年泄漏率",
+      "target": "GIS断路器",
+      "type": "性能指标"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2259,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "97b867a1fada281e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2259_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

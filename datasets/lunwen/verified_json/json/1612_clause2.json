@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "热像图",
+      "type": "检测结果",
+      "desc": "通过红外热像仪获取的设备表面温度分布图像"
+    },
+    {
+      "name": "设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于发电、输电、配电等环节的各类电气设备"
+    },
+    {
+      "name": "温度",
+      "type": "物理量",
+      "desc": "物体内部粒子运动的剧烈程度，通常用摄氏度表示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "与前次比较，热像图无明显变化",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行红外热像检测",
+      "condition": "设备运行正常且已进行过至少一次红外热像检测",
+      "constraint": "热像图无明显变化",
+      "related_entities": [
+        "热像图"
+      ]
+    },
+    {
+      "content": "与同类型设备比较，相同位置的温度差不大于3℃",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行红外热像检测",
+      "condition": "设备运行正常且为同类型设备",
+      "constraint": "相同位置的温度差不大于3℃",
+      "related_entities": [
+        "热像图",
+        "设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "热像图",
+      "target": "设备",
+      "type": "检测对象"
+    },
+    {
+      "source": "温度",
+      "target": "热像图",
+      "type": "表征参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1612,
+      "source_row_id": "1612",
+      "clause_index": 2,
+      "source_text": "1)与前次比较，热像图无明显变化；2)与同类型设备比较，相同位置的温度差不大于3℃"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.571160+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "同一通道",
+      "type": "电力设施",
+      "desc": "电力系统中同一条电缆沟或隧道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电力的导线装置"
+    },
+    {
+      "name": "电压等级",
+      "type": "电力参数",
+      "desc": "电力系统中不同等级的电能输送电压"
+    }
+  ],
+  "rules": [
+    {
+      "content": "同一通道内不同电压等级的电缆，应按照电压等级的高低从下向上排列。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "排列",
+      "condition": "同一通道内",
+      "constraint": "从下向上按电压等级高低排列",
+      "related_entities": [
+        "同一通道",
+        "电缆",
+        "电压等级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "同一通道",
+      "target": "电缆",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "电压等级",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2425,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2b537aefd325701c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2425_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

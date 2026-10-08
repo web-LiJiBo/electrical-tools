@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送电能的设备"
+    },
+    {
+      "name": "主泵电机",
+      "type": "设备部件",
+      "desc": "主泵的动力装置"
+    },
+    {
+      "name": "热敏电阻",
+      "type": "传感器",
+      "desc": "一种温度敏感元件，其阻值随温度变化而变化"
+    },
+    {
+      "name": "过热监视",
+      "type": "监控功能",
+      "desc": "对设备运行温度进行监测的功能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵电机可装设热敏电阻并构成过热监视，只报警",
+      "type": "强制",
+      "subject": "主泵电机",
+      "action": "安装热敏电阻并构成过热监视",
+      "condition": "主泵电机运行过程中",
+      "constraint": "过热监视仅报警，不跳闸",
+      "related_entities": [
+        "主泵",
+        "热敏电阻",
+        "过热监视"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "主泵电机",
+      "type": "包含"
+    },
+    {
+      "source": "主泵电机",
+      "target": "热敏电阻",
+      "type": "包含"
+    },
+    {
+      "source": "主泵电机",
+      "target": "过热监视",
+      "type": "实现"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1628,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0af0ddc9069e9e86",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1628_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

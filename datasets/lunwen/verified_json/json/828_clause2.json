@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "隧道",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的地下通道"
+    },
+    {
+      "name": "电缆支架",
+      "type": "电力设备",
+      "desc": "支撑电缆的装置"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电能的导体"
+    },
+    {
+      "name": "通道",
+      "type": "电力设施",
+      "desc": "电缆隧道内部供电缆敷设的空间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隧道的净宽不宜小于电缆支架配置及通道特征电缆隧道两侧支架1000单列支架与壁间通道900",
+      "type": "强制",
+      "subject": "电缆隧道设计者",
+      "action": "设计电缆隧道",
+      "condition": "电缆隧道内敷设电缆",
+      "constraint": "隧道净宽≥1000mm, 两侧支架与壁间通道≥900mm",
+      "related_entities": [
+        "隧道",
+        "电缆支架",
+        "电缆",
+        "通道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隧道",
+      "target": "电缆支架",
+      "type": "支撑"
+    },
+    {
+      "source": "隧道",
+      "target": "电缆",
+      "type": "敷设路径"
+    },
+    {
+      "source": "隧道",
+      "target": "通道",
+      "type": "空间划分"
+    },
+    {
+      "source": "电缆支架",
+      "target": "电缆",
+      "type": "支撑"
+    },
+    {
+      "source": "电缆支架",
+      "target": "通道",
+      "type": "分隔"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 828,
+      "source_row_id": "828",
+      "clause_index": 2,
+      "source_text": "隧道技术要求：b)隧道的净宽不宜小于电缆支架配置及通道特征电缆隧道两侧支架1000单列支架与壁间通道900"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.684082+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

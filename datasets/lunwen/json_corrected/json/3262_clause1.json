@@ -1,0 +1,133 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "合闸时间",
+      "type": "电气参数",
+      "desc": "断路器从合闸线圈得电到动静触头接触的时间"
+    },
+    {
+      "name": "分闸时间",
+      "type": "电气参数",
+      "desc": "断路器从分闸线圈得电到动静触头分离的时间"
+    },
+    {
+      "name": "合分时间",
+      "type": "电气参数",
+      "desc": "断路器从合闸线圈得电到分闸线圈得电的时间"
+    },
+    {
+      "name": "合闸同期性",
+      "type": "电气参数",
+      "desc": "断路器各相合闸时间的一致性"
+    },
+    {
+      "name": "分闸同期性",
+      "type": "电气参数",
+      "desc": "断路器各相分闸时间的一致性"
+    },
+    {
+      "name": "合闸速度",
+      "type": "电气参数",
+      "desc": "断路器合闸过程中动触头的速度"
+    },
+    {
+      "name": "分闸速度",
+      "type": "电气参数",
+      "desc": "断路器分闸过程中动触头的速度"
+    },
+    {
+      "name": "产品技术条件",
+      "type": "技术文件",
+      "desc": "规定了断路器的技术性能指标和试验方法的文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "断路器对合闸时间、分闸时间、合分时间、合闸同期性、分闸同期性、合闸速度、分闸速度等参数进行测量，并应符合产品技术条件的要求。",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量",
+      "condition": "断路器机械特性试验",
+      "constraint": "产品技术条件的要求",
+      "related_entities": [
+        "断路器",
+        "合闸时间",
+        "分闸时间",
+        "合分时间",
+        "合闸同期性",
+        "分闸同期性",
+        "合闸速度",
+        "分闸速度",
+        "产品技术条件"
+      ]
+    },
+    {
+      "content": "当现场测试条件不具备时，制造厂应提供保证值。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供保证值",
+      "condition": "合闸速度、分闸速度的测量",
+      "constraint": "现场测试条件不具备",
+      "related_entities": [
+        "断路器",
+        "合闸速度",
+        "分闸速度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "合闸时间",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "分闸时间",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "合分时间",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "合闸同期性",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "分闸同期性",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "合闸速度",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "分闸速度",
+      "type": "测量"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3262,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ad1919f0d65f7553",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3262_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

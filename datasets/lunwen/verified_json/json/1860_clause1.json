@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "管的内径",
+      "type": "物理参数",
+      "desc": "电力管道内部直径"
+    },
+    {
+      "name": "电缆外径",
+      "type": "物理参数",
+      "desc": "单根电缆外部直径"
+    },
+    {
+      "name": "多根电缆包络外径",
+      "type": "物理参数",
+      "desc": "多根电缆排列后最外侧电缆与最内侧电缆之间的最大距离"
+    },
+    {
+      "name": "排管的管孔内径",
+      "type": "物理参数",
+      "desc": "电力管道孔洞内部直径"
+    }
+  ],
+  "rules": [
+    {
+      "content": "管的内径，不宜小于电缆外径或多根电缆包络外径的1.5倍。",
+      "type": "强制",
+      "subject": "电力管道设计者",
+      "action": "确定电力管道内径尺寸",
+      "condition": "电力管道内径设计阶段",
+      "constraint": "管的内径≥1.5*max(电缆外径, 多根电缆包络外径)",
+      "related_entities": [
+        "管的内径",
+        "电缆外径",
+        "多根电缆包络外径"
+      ]
+    },
+    {
+      "content": "排管的管孔内径，不宜小于75mm。",
+      "type": "强制",
+      "subject": "电力管道设计者",
+      "action": "确定电力管道孔洞尺寸",
+      "condition": "电力管道孔洞设计阶段",
+      "constraint": "排管的管孔内径≥75mm",
+      "related_entities": [
+        "排管的管孔内径"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "管的内径",
+      "target": "电缆外径",
+      "type": "大于等于"
+    },
+    {
+      "source": "管的内径",
+      "target": "多根电缆包络外径",
+      "type": "大于等于"
+    },
+    {
+      "source": "排管的管孔内径",
+      "target": "75mm",
+      "type": "大于等于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1860,
+      "source_row_id": "1860",
+      "clause_index": 1,
+      "source_text": "管的内径，不宜小于电缆外径或多根电缆包络外径的1.5倍。排管的管孔内径，不宜小于75mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.850970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

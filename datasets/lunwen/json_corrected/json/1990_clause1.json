@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "铝绞线",
+      "type": "导地线",
+      "desc": "一种由多股铝线绞合而成的导线"
+    },
+    {
+      "name": "铝合金绞线",
+      "type": "导地线",
+      "desc": "一种由多股铝合金线绞合而成的导线"
+    },
+    {
+      "name": "铝股",
+      "type": "导地线组成部分",
+      "desc": "铝绞线中的单股铝线"
+    },
+    {
+      "name": "合金股",
+      "type": "导地线组成部分",
+      "desc": "铝合金绞线中的单股铝合金线"
+    },
+    {
+      "name": "断股损伤",
+      "type": "缺陷",
+      "desc": "导地线在运行过程中出现的断股现象"
+    },
+    {
+      "name": "减少截面",
+      "type": "处理措施",
+      "desc": "对导地线断股损伤进行处理以减小其截面积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铝绞线与铝合金绞线：断股损伤截面不超过铝股或合金股总面积7%",
+      "type": "强制",
+      "subject": "铝绞线与铝合金绞线",
+      "action": "减少断股损伤截面",
+      "condition": "导地线运行过程中出现断股损伤",
+      "constraint": "断股损伤截面≤铝股或合金股总面积7%",
+      "related_entities": [
+        "铝绞线",
+        "铝合金绞线",
+        "铝股",
+        "合金股",
+        "断股损伤"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铝绞线",
+      "target": "铝股",
+      "type": "组成"
+    },
+    {
+      "source": "铝合金绞线",
+      "target": "合金股",
+      "type": "组成"
+    },
+    {
+      "source": "铝股",
+      "target": "断股损伤",
+      "type": "故障部位"
+    },
+    {
+      "source": "合金股",
+      "target": "断股损伤",
+      "type": "故障部位"
+    },
+    {
+      "source": "铝绞线",
+      "target": "断股损伤",
+      "type": "故障对象"
+    },
+    {
+      "source": "铝合金绞线",
+      "target": "断股损伤",
+      "type": "故障对象"
+    },
+    {
+      "source": "断股损伤",
+      "target": "减少截面",
+      "type": "处理措施"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1990,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8ad86ea1d424cc2e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1990_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

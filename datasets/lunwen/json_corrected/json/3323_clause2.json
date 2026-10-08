@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "新投运48h至2周期间",
+      "type": "时间范围",
+      "desc": "设备投运后48小时至2周的时间段"
+    },
+    {
+      "name": "检测",
+      "type": "操作",
+      "desc": "对设备进行状态检测"
+    },
+    {
+      "name": "交接时的检测结果",
+      "type": "检测数据",
+      "desc": "设备交接验收时的检测数据"
+    },
+    {
+      "name": "表195要求",
+      "type": "技术标准",
+      "desc": "设备状态检测结果的技术标准要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新投运48h至2周期间检测1次",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "定期检测设备状态",
+      "condition": "设备投运后48小时至2周",
+      "constraint": "每2周检测1次",
+      "related_entities": [
+        "新投运48h至2周期间",
+        "检测"
+      ]
+    },
+    {
+      "content": "如有明显增加，应跟踪分析",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "对检测结果异常进行分析",
+      "condition": "检测结果与交接时的检测结果相比，有明显增加",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "检测",
+        "交接时的检测结果"
+      ]
+    },
+    {
+      "content": "直至检测结果稳定且符合表195要求",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "持续跟踪检测结果",
+      "condition": "检测结果与交接时的检测结果相比，有明显增加",
+      "constraint": "检测结果稳定且符合表195要求",
+      "related_entities": [
+        "检测",
+        "表195要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "新投运48h至2周期间",
+      "target": "检测",
+      "type": "检测周期"
+    },
+    {
+      "source": "检测",
+      "target": "交接时的检测结果",
+      "type": "对比基准"
+    },
+    {
+      "source": "检测",
+      "target": "表195要求",
+      "type": "技术标准依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3323,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ac47096b1b259b7f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3323_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

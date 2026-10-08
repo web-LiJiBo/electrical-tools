@@ -1,0 +1,38 @@
+{
+  "entities": [
+    {
+      "name": "热浸镀锌",
+      "type": "工艺方法",
+      "desc": "一种金属表面处理工艺"
+    }
+  ],
+  "rules": [
+    {
+      "content": "热浸镀锌要求没有相关要求。",
+      "type": "强制",
+      "subject": "热浸镀锌",
+      "action": "无具体要求",
+      "condition": "无",
+      "constraint": "无",
+      "related_entities": []
+    }
+  ],
+  "relations": [
+    {
+      "source": "热浸镀锌",
+      "target": "无具体要求",
+      "type": "无具体要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3314,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ac84907fdad9b1ca",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3314_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

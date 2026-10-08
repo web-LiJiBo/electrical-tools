@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "用于变换电压的电气设备"
+    },
+    {
+      "name": "频响法",
+      "type": "检测方法",
+      "desc": "一种测量变压器绕组变形的方法"
+    },
+    {
+      "name": "低电压短路阻抗法",
+      "type": "检测方法",
+      "desc": "一种测量变压器绕组变形的方法"
+    },
+    {
+      "name": "出厂试验",
+      "type": "试验类型",
+      "desc": "变压器制造完成后进行的试验"
+    },
+    {
+      "name": "投产试验",
+      "type": "试验类型",
+      "desc": "变压器安装完成后进行的试验"
+    },
+    {
+      "name": "绕组变形测试",
+      "type": "试验项目",
+      "desc": "变压器绕组是否发生变形的测试"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110（66）kV及以上电压等级变压器在出厂和投产前，应采用频响法和低电压短路阻抗法对绕组进行变形测试，并留存原始记录。",
+      "type": "强制",
+      "subject": "变压器生产厂家及使用单位",
+      "action": "进行绕组变形测试并留存原始记录",
+      "condition": "110（66）kV及以上电压等级变压器出厂和投产前",
+      "constraint": "采用频响法和低电压短路阻抗法",
+      "related_entities": [
+        "变压器",
+        "频响法",
+        "低电压短路阻抗法",
+        "出厂试验",
+        "投产试验",
+        "绕组变形测试"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "出厂试验",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "投产试验",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "绕组变形测试",
+      "type": "包含"
+    },
+    {
+      "source": "出厂试验",
+      "target": "绕组变形测试",
+      "type": "包含"
+    },
+    {
+      "source": "投产试验",
+      "target": "绕组变形测试",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "频响法",
+      "type": "采用"
+    },
+    {
+      "source": "变压器",
+      "target": "低电压短路阻抗法",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3080,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a0828f5f6203d8dc",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3080_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

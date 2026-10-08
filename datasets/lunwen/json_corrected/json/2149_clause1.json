@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压"
+    },
+    {
+      "name": "变压器油",
+      "type": "电力材料",
+      "desc": "变压器内部绝缘和散热用的液体介质"
+    },
+    {
+      "name": "25#变压器油",
+      "type": "电力材料",
+      "desc": "特定牌号的变压器油，适用于特定温度环境"
+    },
+    {
+      "name": "介质损耗因数",
+      "type": "技术参数",
+      "desc": "衡量绝缘材料在交流电场作用下能量损耗的指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器绝缘油选用25#变压器油，应满足以下要求：介质损耗因数不大于0.5%",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "使用25#变压器油",
+      "condition": "变压器运行中",
+      "constraint": "介质损耗因数≤0.5%",
+      "related_entities": [
+        "变压器",
+        "25#变压器油"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "25#变压器油",
+      "type": "使用"
+    },
+    {
+      "source": "25#变压器油",
+      "target": "介质损耗因数",
+      "type": "满足要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2149,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bdedf607a3701a8d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2149_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

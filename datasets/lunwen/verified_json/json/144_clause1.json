@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "电力系统中用于直流输电的换流装置"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "换流阀在正常运行时允许通过的最大电流值"
+    },
+    {
+      "name": "过负荷电流",
+      "type": "电气参数",
+      "desc": "换流阀在短时间内的最大允许电流值"
+    },
+    {
+      "name": "暂态冲击电流",
+      "type": "电气参数",
+      "desc": "换流阀在暂态过程中可能遇到的冲击电流值"
+    },
+    {
+      "name": "晶闸管元件",
+      "type": "电力电子器件",
+      "desc": "电力系统中常用的可控硅器件"
+    },
+    {
+      "name": "主回路",
+      "type": "电力系统结构",
+      "desc": "电力系统中连接发电、输电、配电等环节的主要电路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "换流阀应具有承担额定电流、过负荷电流及各种暂态冲击电流的能力",
+      "type": "强制",
+      "subject": "换流阀",
+      "action": "设计制造",
+      "condition": "电力系统运行",
+      "constraint": "额定电流、过负荷电流、暂态冲击电流",
+      "related_entities": [
+        "换流阀",
+        "额定电流",
+        "过负荷电流",
+        "暂态冲击电流"
+      ]
+    },
+    {
+      "content": "主回路中不能采用晶闸管元件并联的设计",
+      "type": "强制",
+      "subject": "主回路",
+      "action": "设计制造",
+      "condition": "电力系统运行",
+      "constraint": "晶闸管元件并联",
+      "related_entities": [
+        "主回路",
+        "晶闸管元件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流阀",
+      "target": "额定电流",
+      "type": "承载能力"
+    },
+    {
+      "source": "换流阀",
+      "target": "过负荷电流",
+      "type": "承载能力"
+    },
+    {
+      "source": "换流阀",
+      "target": "暂态冲击电流",
+      "type": "承载能力"
+    },
+    {
+      "source": "主回路",
+      "target": "晶闸管元件",
+      "type": "禁止使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 144,
+      "source_row_id": "144",
+      "clause_index": 1,
+      "source_text": "换流阀应具有承担额定电流、过负荷电流及各种暂态冲击电流的能力。主回路中不能采用晶闸管元件并联的设计"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.909600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

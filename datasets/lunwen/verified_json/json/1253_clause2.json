@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "导地线弧垂",
+      "type": "电力设备",
+      "desc": "架空输电线路中导线或地线在悬挂点之间的水平距离"
+    },
+    {
+      "name": "设计值",
+      "type": "技术参数",
+      "desc": "导地线弧垂的设计预期值"
+    },
+    {
+      "name": "允许误差",
+      "type": "技术参数",
+      "desc": "导地线弧垂与设计值的允许偏差范围"
+    },
+    {
+      "name": "正偏差",
+      "type": "技术参数",
+      "desc": "导地线弧垂超出设计值的允许偏差量"
+    },
+    {
+      "name": "大跨越档",
+      "type": "特殊区段",
+      "desc": "跨越大江大河、高山峡谷等特殊地形的输电线路区段"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般情况下导地线弧垂对设计值的允许误差为±2.5%，其正偏差不应超过0.5m",
+      "type": "强制",
+      "subject": "导地线弧垂",
+      "action": "施工安装",
+      "condition": "一般输电线路区段",
+      "constraint": "允许误差±2.5%，正偏差≤0.5m",
+      "related_entities": [
+        "导地线弧垂",
+        "设计值",
+        "允许误差",
+        "正偏差"
+      ]
+    },
+    {
+      "content": "大跨越档弧垂允许偏差为±1%，其正偏差不应超过1m",
+      "type": "强制",
+      "subject": "导地线弧垂",
+      "action": "施工安装",
+      "condition": "大跨越档区段",
+      "constraint": "允许误差±1%，正偏差≤1m",
+      "related_entities": [
+        "导地线弧垂",
+        "设计值",
+        "允许误差",
+        "正偏差",
+        "大跨越档"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导地线弧垂",
+      "target": "设计值",
+      "type": "基于"
+    },
+    {
+      "source": "导地线弧垂",
+      "target": "允许误差",
+      "type": "基于"
+    },
+    {
+      "source": "导地线弧垂",
+      "target": "正偏差",
+      "type": "基于"
+    },
+    {
+      "source": "导地线弧垂",
+      "target": "大跨越档",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1253,
+      "source_row_id": "1253",
+      "clause_index": 2,
+      "source_text": "一般情况下导地线弧垂对设计值的允许误差为±2.5%，其正偏差不应超过0.5m；大跨越档弧垂允许偏差为±1%，其正偏差不应超过1m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.160547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

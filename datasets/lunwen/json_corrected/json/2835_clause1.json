@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "主循环泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送冷却水或其他介质的泵"
+    },
+    {
+      "name": "轴承",
+      "type": "部件",
+      "desc": "支撑旋转轴并减少摩擦的机械元件"
+    },
+    {
+      "name": "含润滑油的轴承",
+      "type": "部件",
+      "desc": "内置润滑油脂的轴承"
+    },
+    {
+      "name": "耐磨轴承",
+      "type": "部件",
+      "desc": "具有较高耐磨性能的轴承"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主循环泵应使用耐摩擦的含润滑油的轴承",
+      "type": "强制",
+      "subject": "主循环泵",
+      "action": "使用",
+      "condition": "在电力系统中",
+      "constraint": "使用耐摩擦的含润滑油的轴承",
+      "related_entities": [
+        "主循环泵",
+        "含润滑油的轴承"
+      ]
+    },
+    {
+      "content": "耐磨轴承要求保证至少正常运行50000小时",
+      "type": "强制",
+      "subject": "耐磨轴承",
+      "action": "保证正常运行时间",
+      "condition": "在电力系统中",
+      "constraint": "至少正常运行50000小时",
+      "related_entities": [
+        "耐磨轴承",
+        "主循环泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主循环泵",
+      "target": "含润滑油的轴承",
+      "type": "使用"
+    },
+    {
+      "source": "主循环泵",
+      "target": "耐磨轴承",
+      "type": "使用"
+    },
+    {
+      "source": "耐磨轴承",
+      "target": "主循环泵",
+      "type": "保证正常运行时间"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2835,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1aeb60db29a1647e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2835_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

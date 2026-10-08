@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "直流系统",
+      "type": "电力系统",
+      "desc": "由直流电源、直流负荷、直流母线及直流回路组成"
+    },
+    {
+      "name": "蓄电池",
+      "type": "电力设备",
+      "desc": "用于储存电能的装置"
+    },
+    {
+      "name": "电缆",
+      "type": "电力电缆",
+      "desc": "传输电力的导体"
+    },
+    {
+      "name": "独立通道",
+      "type": "电力设施",
+      "desc": "供电缆铺设的专用通道"
+    },
+    {
+      "name": "防火墙",
+      "type": "电力设施",
+      "desc": "用于隔离电缆的防火隔断"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流系统两组及以上蓄电池的电缆应分别铺设在各自独立的通道内",
+      "type": "强制",
+      "subject": "直流系统",
+      "action": "铺设电缆",
+      "condition": "直流系统两组及以上蓄电池",
+      "constraint": "独立通道",
+      "related_entities": [
+        "直流系统",
+        "蓄电池",
+        "电缆",
+        "独立通道"
+      ]
+    },
+    {
+      "content": "尽量避免与交流电缆并排铺设",
+      "type": "强制",
+      "subject": "直流系统",
+      "action": "铺设电缆",
+      "condition": "直流系统两组及以上蓄电池",
+      "constraint": "交流电缆并排铺设",
+      "related_entities": [
+        "直流系统",
+        "蓄电池",
+        "电缆",
+        "交流电缆"
+      ]
+    },
+    {
+      "content": "对不满足上述要求的变电站采取加装防火墙等隔离措施",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "采取隔离措施",
+      "condition": "直流系统两组及以上蓄电池电缆未按要求铺设",
+      "constraint": "加装防火墙",
+      "related_entities": [
+        "变电站",
+        "直流系统",
+        "电缆",
+        "防火墙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流系统",
+      "target": "蓄电池",
+      "type": "包含"
+    },
+    {
+      "source": "直流系统",
+      "target": "电缆",
+      "type": "包含"
+    },
+    {
+      "source": "直流系统",
+      "target": "独立通道",
+      "type": "铺设于"
+    },
+    {
+      "source": "直流系统",
+      "target": "交流电缆",
+      "type": "避免并排铺设于"
+    },
+    {
+      "source": "变电站",
+      "target": "直流系统",
+      "type": "包含"
+    },
+    {
+      "source": "变电站",
+      "target": "防火墙",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 532,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0b9fe3b545ec3977",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\532_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

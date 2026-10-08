@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "介质",
+      "desc": "六氟化硫气体，用于高压电气设备中作为绝缘和灭弧介质"
+    },
+    {
+      "name": "GIS断路器",
+      "type": "设备",
+      "desc": "气体绝缘金属封闭开关设备中的断路器部分"
+    },
+    {
+      "name": "额定工作气压",
+      "type": "参数",
+      "desc": "设备正常运行时的气体压力值"
+    },
+    {
+      "name": "SF6气体年泄漏率",
+      "type": "参数",
+      "desc": "一年内SF6气体泄漏量占初始充气量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在额定工作气压下的SF6、GIS断路器，SF6气体年泄漏率不得大于0.5%",
+      "type": "强制",
+      "subject": "GIS断路器",
+      "action": "控制SF6气体泄漏率",
+      "condition": "额定工作气压下",
+      "constraint": "SF6气体年泄漏率≤0.5%",
+      "related_entities": [
+        "SF6气体",
+        "GIS断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体",
+      "target": "GIS断路器",
+      "type": "使用于"
+    },
+    {
+      "source": "SF6气体年泄漏率",
+      "target": "GIS断路器",
+      "type": "反映状态"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2257,
+      "source_row_id": "2257",
+      "clause_index": 1,
+      "source_text": "在额定工作气压下的SF6、GIS断路器，SF6气体年泄漏率不得大于0.5%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.334548+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "用于关合、承载和开断高压直流输电系统中的运行电流及故障电流的设备"
+    },
+    {
+      "name": "高压直流输电系统",
+      "type": "电力系统",
+      "desc": "采用高压直流输电技术进行电力传输的系统"
+    },
+    {
+      "name": "运行电流",
+      "type": "电力参数",
+      "desc": "在正常运行状态下通过电力系统的电流"
+    },
+    {
+      "name": "故障电流",
+      "type": "电力参数",
+      "desc": "电力系统发生故障时通过电力系统的电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关设备应能关合、承载和开断高压直流输电系统中的运行电流",
+      "type": "强制",
+      "subject": "开关设备",
+      "action": "关合、承载和开断运行电流",
+      "condition": "在正常运行状态下",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "开关设备",
+        "高压直流输电系统",
+        "运行电流"
+      ]
+    },
+    {
+      "content": "开关设备应能在规定的时间内关合、承载和开断直流系统故障电流",
+      "type": "强制",
+      "subject": "开关设备",
+      "action": "关合、承载和开断故障电流",
+      "condition": "在电力系统发生故障时",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "开关设备",
+        "高压直流输电系统",
+        "故障电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关设备",
+      "target": "高压直流输电系统",
+      "type": "应用于"
+    },
+    {
+      "source": "开关设备",
+      "target": "运行电流",
+      "type": "关合、承载和开断"
+    },
+    {
+      "source": "开关设备",
+      "target": "故障电流",
+      "type": "关合、承载和开断"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3122,
+      "source_row_id": "3131",
+      "clause_index": 1,
+      "source_text": "能够关合、承载和开断高压直流输电系统中的运行电流，并能在规定的时间内关合、承载和开断直流系统故障电流的开关设备。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.8497,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.408315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

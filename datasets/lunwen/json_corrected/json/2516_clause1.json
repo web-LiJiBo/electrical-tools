@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "换流变",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中进行交流与直流电能转换的变压器"
+    },
+    {
+      "name": "直流耐压试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行直流电压耐受能力测试的试验方法"
+    },
+    {
+      "name": "阀侧绕组",
+      "type": "电力设备部件",
+      "desc": "换流变连接阀厅的绕组部分"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备部件",
+      "desc": "用于绝缘和引出高压导体的电力设备部件"
+    },
+    {
+      "name": "出厂试验值",
+      "type": "试验参数",
+      "desc": "设备制造厂家在出厂时规定的试验标准值"
+    },
+    {
+      "name": "合同规定值",
+      "type": "试验参数",
+      "desc": "双方签订合同时约定的试验标准值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "换流变交接试验阀侧绕组连同套管的直流耐压试验（按出厂试验值的0.8倍或合同规定值，60min）",
+      "type": "强制",
+      "subject": "换流变",
+      "action": "进行直流耐压试验",
+      "condition": "换流变交接试验",
+      "constraint": "试验电压为出厂试验值的0.8倍或合同规定值，持续时间60分钟",
+      "related_entities": [
+        "换流变",
+        "直流耐压试验",
+        "阀侧绕组",
+        "套管",
+        "出厂试验值",
+        "合同规定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流变",
+      "target": "直流耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "直流耐压试验",
+      "target": "阀侧绕组",
+      "type": "针对"
+    },
+    {
+      "source": "直流耐压试验",
+      "target": "套管",
+      "type": "针对"
+    },
+    {
+      "source": "出厂试验值",
+      "target": "换流变",
+      "type": "依据"
+    },
+    {
+      "source": "合同规定值",
+      "target": "换流变",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2516,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f190d86b72237d7c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2516_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

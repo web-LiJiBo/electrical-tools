@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备部件",
+      "desc": "变压器内部的磁性材料"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器的外壳，用于容纳绝缘油"
+    },
+    {
+      "name": "结构表面",
+      "type": "电力设备部件",
+      "desc": "变压器外部的金属结构面"
+    },
+    {
+      "name": "温升限值",
+      "type": "技术参数",
+      "desc": "设备在运行过程中允许的最大温升"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心、油箱及结构表面温升限值：75K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "正常运行条件下",
+      "constraint": "温升限值≤75K",
+      "related_entities": [
+        "铁心",
+        "油箱",
+        "结构表面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "油箱",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "结构表面",
+      "target": "温升限值",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 93,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c05dd0882422b268",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\93_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

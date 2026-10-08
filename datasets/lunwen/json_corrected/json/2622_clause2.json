@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "用于测量电压、电流的电气设备"
+    },
+    {
+      "name": "66kV及以上互感器",
+      "type": "电力设备",
+      "desc": "额定电压66kV及以上的互感器"
+    },
+    {
+      "name": "投运",
+      "type": "操作行为",
+      "desc": "电力设备投入运行"
+    },
+    {
+      "name": "检测",
+      "type": "操作行为",
+      "desc": "对电力设备进行状态评估"
+    },
+    {
+      "name": "制造厂",
+      "type": "组织机构",
+      "desc": "生产电力设备的企业或单位"
+    },
+    {
+      "name": "全密封互感器",
+      "type": "电力设备",
+      "desc": "具有全密封结构的互感器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新的或大修后的66kV及以上的互感器，宜在投运后3个月内做一次检测。",
+      "type": "强制",
+      "subject": "66kV及以上互感器",
+      "action": "检测",
+      "condition": "新安装或大修后",
+      "constraint": "投运后3个月内",
+      "related_entities": [
+        "互感器",
+        "66kV及以上互感器",
+        "投运",
+        "检测"
+      ]
+    },
+    {
+      "content": "制造厂规定不取样的全密封互感器可不做检测。",
+      "type": "强制",
+      "subject": "全密封互感器",
+      "action": "检测",
+      "condition": "制造厂规定不取样",
+      "constraint": "无需检测",
+      "related_entities": [
+        "互感器",
+        "全密封互感器",
+        "制造厂",
+        "检测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "66kV及以上互感器",
+      "target": "互感器",
+      "type": "子类"
+    },
+    {
+      "source": "全密封互感器",
+      "target": "互感器",
+      "type": "子类"
+    },
+    {
+      "source": "66kV及以上互感器",
+      "target": "投运",
+      "type": "操作对象"
+    },
+    {
+      "source": "66kV及以上互感器",
+      "target": "检测",
+      "type": "操作对象"
+    },
+    {
+      "source": "全密封互感器",
+      "target": "检测",
+      "type": "操作对象"
+    },
+    {
+      "source": "制造厂",
+      "target": "全密封互感器",
+      "type": "生产者"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2622,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "53f363957a6bc7a6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2622_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

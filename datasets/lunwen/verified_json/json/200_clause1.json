@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "海拔高度",
+      "type": "环境参数",
+      "desc": "设备安装地点的海拔高度"
+    },
+    {
+      "name": "1000米",
+      "type": "高度值",
+      "desc": "设备安装地点的最大海拔高度限制"
+    }
+  ],
+  "rules": [
+    {
+      "content": "海拔高度不超过1000米",
+      "type": "强制",
+      "subject": "设备安装地点",
+      "action": "安装设备",
+      "condition": "海拔高度",
+      "constraint": "≤1000米",
+      "related_entities": [
+        "海拔高度",
+        "1000米"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设备安装地点",
+      "target": "海拔高度",
+      "type": "安装条件"
+    },
+    {
+      "source": "设备安装地点",
+      "target": "1000米",
+      "type": "安装限制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 200,
+      "source_row_id": "200",
+      "clause_index": 1,
+      "source_text": "一般规定：d）海拔高度不超过1000米"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:58.969601+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "空载",
+      "type": "运行状态",
+      "desc": "变压器不带负荷运行的状态"
+    },
+    {
+      "name": "额定电流负载",
+      "type": "运行状态",
+      "desc": "变压器按照铭牌规定的额定电流运行的状态"
+    },
+    {
+      "name": "声级水平",
+      "type": "物理量",
+      "desc": "声音强度的度量，以分贝为单位"
+    },
+    {
+      "name": "声压级",
+      "type": "物理量",
+      "desc": "声波压力与参考声压之比的对数表示方式"
+    },
+    {
+      "name": "声功率级",
+      "type": "物理量",
+      "desc": "声源在所有方向上辐射的总声能流密度的度量"
+    },
+    {
+      "name": "GB/T1094．10",
+      "type": "标准",
+      "desc": "中国国家标准，规定了变压器噪声测量方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在变压器空载及额定电流负载条件下，距变压器基准发射面2m处测得的声级水平(声压级)均应不超过80dB(A)",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行时的噪声控制",
+      "condition": "变压器空载或额定电流负载运行",
+      "constraint": "声级水平≤80dB(A)",
+      "related_entities": [
+        "变压器",
+        "空载",
+        "额定电流负载",
+        "声级水平",
+        "声压级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "空载",
+      "type": "运行状态-运行条件"
+    },
+    {
+      "source": "变压器",
+      "target": "额定电流负载",
+      "type": "运行状态-运行条件"
+    },
+    {
+      "source": "变压器",
+      "target": "声级水平",
+      "type": "物理量-测量结果"
+    },
+    {
+      "source": "变压器",
+      "target": "声压级",
+      "type": "物理量-测量结果"
+    },
+    {
+      "source": "变压器",
+      "target": "声功率级",
+      "type": "物理量-计算结果"
+    },
+    {
+      "source": "变压器",
+      "target": "GB/T1094．10",
+      "type": "标准-依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2286,
+      "source_row_id": "2286",
+      "clause_index": 2,
+      "source_text": "(4．8声级水平：在变压器空载及额定电流负载条件下，距变压器基准发射面2m处测得的声级水平(声压级)均应不超过80dB(A)，并应按GB/T1094．10的规定进行换算，给出声功率级"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.367549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

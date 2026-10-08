@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "阀基电子设备",
+      "type": "电力设备",
+      "desc": "用于晶闸管控制与监测的电力电子设备"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力电子元件",
+      "desc": "可控硅整流器，用于电力系统的开关控制"
+    },
+    {
+      "name": "光发射",
+      "type": "通信方式",
+      "desc": "通过光纤传输电信号的方式"
+    },
+    {
+      "name": "光接收",
+      "type": "通信方式",
+      "desc": "通过光纤接收电信号的方式"
+    },
+    {
+      "name": "反向恢复期保护",
+      "type": "保护措施",
+      "desc": "防止晶闸管关断时产生反向电压导致的损坏"
+    },
+    {
+      "name": "供电电源",
+      "type": "电力系统",
+      "desc": "为阀基电子设备提供工作电源的系统"
+    },
+    {
+      "name": "接口",
+      "type": "通信接口",
+      "desc": "实现阀基电子设备与其他系统通信的接口"
+    },
+    {
+      "name": "阀控系统",
+      "type": "控制系统",
+      "desc": "控制阀基电子设备工作的控制系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀基电子设备负责分配触发脉冲",
+      "type": "强制",
+      "subject": "阀基电子设备",
+      "action": "分配触发脉冲",
+      "condition": "晶闸管控制与监测",
+      "constraint": "无",
+      "related_entities": [
+        "阀基电子设备",
+        "晶闸管"
+      ]
+    },
+    {
+      "content": "阀基电子设备负责检测晶闸管回报信号",
+      "type": "强制",
+      "subject": "阀基电子设备",
+      "action": "检测回报信号",
+      "condition": "晶闸管控制与监测",
+      "constraint": "无",
+      "related_entities": [
+        "阀基电子设备",
+        "晶闸管"
+      ]
+    },
+    {
+      "content": "阀基电子设备负责向阀控系统发送信息",
+      "type": "强制",
+      "subject": "阀基电子设备",
+      "action": "发送信息",
+      "condition": "晶闸管控制与监测",
+      "constraint": "无",
+      "related_entities": [
+        "阀基电子设备",
+        "阀控系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀基电子设备",
+      "target": "晶闸管",
+      "type": "控制"
+    },
+    {
+      "source": "阀基电子设备",
+      "target": "光发射",
+      "type": "包含"
+    },
+    {
+      "source": "阀基电子设备",
+      "target": "光接收",
+      "type": "包含"
+    },
+    {
+      "source": "阀基电子设备",
+      "target": "反向恢复期保护",
+      "type": "包含"
+    },
+    {
+      "source": "阀基电子设备",
+      "target": "供电电源",
+      "type": "包含"
+    },
+    {
+      "source": "阀基电子设备",
+      "target": "接口",
+      "type": "包含"
+    },
+    {
+      "source": "阀基电子设备",
+      "target": "阀控系统",
+      "type": "通信"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1607,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "66f9fd7dbae42867",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1607_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "线路",
+      "type": "电力设施",
+      "desc": "电力系统中的输电线路"
+    },
+    {
+      "name": "220kV及以上线路",
+      "type": "电力设施",
+      "desc": "电压等级在220kV及以上的输电线路"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "铁路运输线路"
+    },
+    {
+      "name": "高速公路",
+      "type": "交通设施",
+      "desc": "高等级公路"
+    },
+    {
+      "name": "一级公路",
+      "type": "交通设施",
+      "desc": "高等级公路"
+    },
+    {
+      "name": "一、二级通航河流",
+      "type": "水体",
+      "desc": "具有航运价值的河流"
+    },
+    {
+      "name": "特殊管道",
+      "type": "工业设施",
+      "desc": "特定用途的地下管线"
+    },
+    {
+      "name": "悬垂绝缘子串",
+      "type": "电气设备",
+      "desc": "输电线路中用于悬挂导线的绝缘装置"
+    },
+    {
+      "name": "双挂点",
+      "type": "技术方案",
+      "desc": "悬垂绝缘子串安装方式之一"
+    },
+    {
+      "name": "双联‘I串’",
+      "type": "技术方案",
+      "desc": "悬垂绝缘子串安装方式之一"
+    },
+    {
+      "name": "双联‘V’串",
+      "type": "技术方案",
+      "desc": "悬垂绝缘子串安装方式之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路跨越220kV及以上线路，铁路，高速公路，一级公路，一、二级通航河流及特殊管道时，悬垂绝缘子串宜采用双挂点、双联‘I串’或‘V’串型式",
+      "type": "强制",
+      "subject": "线路",
+      "action": "跨越",
+      "condition": "跨越220kV及以上线路，铁路，高速公路，一级公路，一、二级通航河流及特殊管道",
+      "constraint": "悬垂绝缘子串宜采用双挂点、双联‘I串’或‘V’串型式",
+      "related_entities": [
+        "线路",
+        "220kV及以上线路",
+        "铁路",
+        "高速公路",
+        "一级公路",
+        "一、二级通航河流",
+        "特殊管道",
+        "悬垂绝缘子串",
+        "双挂点",
+        "双联‘I串’",
+        "双联‘V’串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路",
+      "target": "220kV及以上线路",
+      "type": "跨越"
+    },
+    {
+      "source": "线路",
+      "target": "铁路",
+      "type": "跨越"
+    },
+    {
+      "source": "线路",
+      "target": "高速公路",
+      "type": "跨越"
+    },
+    {
+      "source": "线路",
+      "target": "一级公路",
+      "type": "跨越"
+    },
+    {
+      "source": "线路",
+      "target": "一、二级通航河流",
+      "type": "跨越"
+    },
+    {
+      "source": "线路",
+      "target": "特殊管道",
+      "type": "跨越"
+    },
+    {
+      "source": "悬垂绝缘子串",
+      "target": "双挂点",
+      "type": "采用"
+    },
+    {
+      "source": "悬垂绝缘子串",
+      "target": "双联‘I串’",
+      "type": "采用"
+    },
+    {
+      "source": "悬垂绝缘子串",
+      "target": "双联‘V’串",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2055,
+      "source_row_id": "2055",
+      "clause_index": 2,
+      "source_text": "线路跨越220kV及以上线路，铁路，高速公路，一级公路，一、二级通航河流及特殊管道时，悬垂绝缘子串宜采用双挂点、双联”I串”或”V”串型式"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9886,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.076967+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流或电压的电气设备"
+    },
+    {
+      "name": "绝缘介质",
+      "type": "电力材料",
+      "desc": "用于绝缘的介质材料"
+    },
+    {
+      "name": "油中溶解气体",
+      "type": "电力参数",
+      "desc": "变压器油中的溶解气体成分"
+    },
+    {
+      "name": "色谱分析",
+      "type": "试验方法",
+      "desc": "通过色谱技术分析油中溶解气体的方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对绝缘性能有怀疑的互感器应检测绝缘介质性能",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "检测绝缘介质性能",
+      "condition": "互感器绝缘性能有怀疑",
+      "constraint": "",
+      "related_entities": [
+        "互感器",
+        "绝缘介质"
+      ]
+    },
+    {
+      "content": "电压等级在66kV154及以上的互感器应进行油中溶解气体的色谱分析",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "进行油中溶解气体的色谱分析",
+      "condition": "互感器电压等级在66kV154及以上且绝缘性能有怀疑",
+      "constraint": "电压等级≥66kV154",
+      "related_entities": [
+        "互感器",
+        "油中溶解气体",
+        "色谱分析"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "绝缘介质",
+      "type": "检测对象"
+    },
+    {
+      "source": "互感器",
+      "target": "油中溶解气体",
+      "type": "检测对象"
+    },
+    {
+      "source": "互感器",
+      "target": "色谱分析",
+      "type": "检测方法"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 109,
+      "source_row_id": "109",
+      "clause_index": 2,
+      "source_text": "对绝缘性能有怀疑的互感器应检测绝缘介质性能，其中电压等级在66kV154及以上的互感器应进行油中溶解气体的色谱分析"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.873603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

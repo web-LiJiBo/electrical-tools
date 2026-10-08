@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "进水温度保护",
+      "type": "保护装置",
+      "desc": "用于监测进水温度的保护装置"
+    },
+    {
+      "name": "阀出水温度保护",
+      "type": "保护装置",
+      "desc": "用于监测阀出水温度的保护装置"
+    },
+    {
+      "name": "极控系统",
+      "type": "控制系统",
+      "desc": "控制换流站内直流系统的控制系统"
+    },
+    {
+      "name": "功率回降",
+      "type": "操作",
+      "desc": "降低直流系统功率的操作"
+    },
+    {
+      "name": "直流闭锁",
+      "type": "操作",
+      "desc": "关闭直流系统的操作"
+    },
+    {
+      "name": "报警",
+      "type": "信号",
+      "desc": "设备异常时发出的警告信号"
+    },
+    {
+      "name": "跳闸",
+      "type": "信号",
+      "desc": "设备故障时发出的断开电源信号"
+    },
+    {
+      "name": "温度保护",
+      "type": "保护策略",
+      "desc": "针对温度异常情况采取的保护措施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "进水温度保护投报警和跳闸。",
+      "type": "强制",
+      "subject": "进水温度保护",
+      "action": "投报警和跳闸",
+      "condition": "进水温度异常",
+      "constraint": "报警和跳闸",
+      "related_entities": [
+        "进水温度保护",
+        "报警",
+        "跳闸"
+      ]
+    },
+    {
+      "content": "阀出水温度保护动作后应向极控系统发功率回降命令，不宜发直流闭锁命令。",
+      "type": "强制",
+      "subject": "阀出水温度保护",
+      "action": "向极控系统发功率回降命令",
+      "condition": "阀出水温度异常",
+      "constraint": "不宜发直流闭锁命令",
+      "related_entities": [
+        "阀出水温度保护",
+        "极控系统",
+        "功率回降",
+        "直流闭锁"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "进水温度保护",
+      "target": "报警",
+      "type": "触发"
+    },
+    {
+      "source": "进水温度保护",
+      "target": "跳闸",
+      "type": "触发"
+    },
+    {
+      "source": "阀出水温度保护",
+      "target": "极控系统",
+      "type": "通信"
+    },
+    {
+      "source": "阀出水温度保护",
+      "target": "功率回降",
+      "type": "触发"
+    },
+    {
+      "source": "阀出水温度保护",
+      "target": "直流闭锁",
+      "type": "不触发"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1626,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e2d33c5a21de322d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1626_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

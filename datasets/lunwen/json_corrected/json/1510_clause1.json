@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "500kV变电站",
+      "type": "电力设施",
+      "desc": "一座500kV电压等级的变电站"
+    },
+    {
+      "name": "低压并联电抗器",
+      "type": "电力设备",
+      "desc": "用于补偿无功功率的低压并联电抗器"
+    },
+    {
+      "name": "串联电抗器",
+      "type": "电力设备",
+      "desc": "用于限制短路电流的串联电抗器"
+    },
+    {
+      "name": "干式空心电抗器",
+      "type": "电力设备",
+      "desc": "一种无油、无铁芯的干式电抗器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "500kV变电站低压并联电抗器及串联电抗器宜选用干式空心电抗器",
+      "type": "强制",
+      "subject": "500kV变电站",
+      "action": "选择低压并联电抗器及串联电抗器",
+      "condition": "500kV变电站低压并联电抗器及串联电抗器配置",
+      "constraint": "宜选用干式空心电抗器",
+      "related_entities": [
+        "500kV变电站",
+        "低压并联电抗器",
+        "串联电抗器",
+        "干式空心电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "500kV变电站",
+      "target": "低压并联电抗器",
+      "type": "配置"
+    },
+    {
+      "source": "500kV变电站",
+      "target": "串联电抗器",
+      "type": "配置"
+    },
+    {
+      "source": "500kV变电站",
+      "target": "干式空心电抗器",
+      "type": "推荐使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1510,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3ed0bfc90715a304",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1510_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

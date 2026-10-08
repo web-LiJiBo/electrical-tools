@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "阀控系统",
+      "type": "电力系统设备",
+      "desc": "换流站内用于控制换流阀的系统"
+    },
+    {
+      "name": "极控系统",
+      "type": "电力系统设备",
+      "desc": "换流站内用于控制直流线路两端交流系统的系统"
+    },
+    {
+      "name": "联调试验",
+      "type": "试验项目",
+      "desc": "对两个或多个系统进行联合调试的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在二次设备联调试验阶段，应安排阀控系统与极控系统之间的联调试验",
+      "type": "强制",
+      "subject": "二次设备联调试验阶段",
+      "action": "安排联调试验",
+      "condition": "二次设备联调试验阶段",
+      "constraint": "阀控系统与极控系统之间",
+      "related_entities": [
+        "阀控系统",
+        "极控系统"
+      ]
+    },
+    {
+      "content": "防止不同厂家设备接口工作异常",
+      "type": "强制",
+      "subject": "阀控系统与极控系统",
+      "action": "防止接口工作异常",
+      "condition": "阀控系统与极控系统之间",
+      "constraint": "不同厂家设备接口工作异常",
+      "related_entities": [
+        "阀控系统",
+        "极控系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀控系统",
+      "target": "联调试验",
+      "type": "参与"
+    },
+    {
+      "source": "极控系统",
+      "target": "联调试验",
+      "type": "参与"
+    },
+    {
+      "source": "联调试验",
+      "target": "防止接口工作异常",
+      "type": "实现"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1605,
+      "source_row_id": "1605",
+      "clause_index": 1,
+      "source_text": "在二次设备联调试验阶段，应安排阀控系统与极控系统之间的联调试验，防止不同厂家设备接口工作异常"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.561158+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

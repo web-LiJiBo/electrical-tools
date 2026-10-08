@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "真空热油循环速度",
+      "type": "技术参数",
+      "desc": "真空热油循环系统中热油的循环速率"
+    },
+    {
+      "name": "滤油机出口温度",
+      "type": "技术参数",
+      "desc": "滤油机排出热油的温度"
+    },
+    {
+      "name": "变压器出口油温",
+      "type": "技术参数",
+      "desc": "变压器排出热油的温度"
+    },
+    {
+      "name": "循环时间",
+      "type": "技术参数",
+      "desc": "完成一次热油循环所需的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "保证真空热油循环速度为6000L/h-10000L/h",
+      "type": "强制",
+      "subject": "真空热油循环系统",
+      "action": "控制真空热油循环速度",
+      "condition": "在变压器真空注油过程中",
+      "constraint": "6000L/h-10000L/h",
+      "related_entities": [
+        "真空热油循环速度"
+      ]
+    },
+    {
+      "content": "滤油机出口温度设定不超过75℃",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "设定出口温度上限",
+      "condition": "在变压器真空注油过程中",
+      "constraint": "≤75℃",
+      "related_entities": [
+        "滤油机出口温度"
+      ]
+    },
+    {
+      "content": "变压器出口油温到达55℃开始计时，循环时间应不少于96h(或按照厂家技术要求执行）",
+      "type": "强制",
+      "subject": "变压器真空注油过程",
+      "action": "开始计时并控制循环时间",
+      "condition": "在变压器真空注油过程中",
+      "constraint": "≥96h",
+      "related_entities": [
+        "变压器出口油温",
+        "循环时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "真空热油循环速度",
+      "target": "滤油机出口温度",
+      "type": "影响"
+    },
+    {
+      "source": "真空热油循环速度",
+      "target": "循环时间",
+      "type": "影响"
+    },
+    {
+      "source": "滤油机出口温度",
+      "target": "变压器出口油温",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3023,
+      "source_row_id": "3032",
+      "clause_index": 2,
+      "source_text": "保证真空热油循环速度为6000L/h-10000L/h，滤油机出口温度设定不超过75℃，变压器出口油温到达55℃开始计时，循环时间应不少于96h(或按照厂家技术要求执行）。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.287316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

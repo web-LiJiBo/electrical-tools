@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "GIS配电装置",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "感应电压",
+      "type": "电气参数",
+      "desc": "GIS配电装置外壳和支架上产生的电压"
+    },
+    {
+      "name": "人身安全",
+      "type": "安全指标",
+      "desc": "人员在设备附近工作时的安全保障"
+    },
+    {
+      "name": "设备安全",
+      "type": "安全指标",
+      "desc": "设备在正常和故障条件下的安全性"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS配电装置感应电压不应危及人身和设备的安全",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "感应电压控制",
+      "condition": "正常运行条件或故障条件下",
+      "constraint": "感应电压不应危及人身和设备安全",
+      "related_entities": [
+        "GIS配电装置",
+        "感应电压",
+        "人身安全",
+        "设备安全"
+      ]
+    },
+    {
+      "content": "外壳和支架上的感应电压，正常运行条件下不应大于24V，故障条件下不应大于100V",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "感应电压控制",
+      "condition": "正常运行条件或故障条件下",
+      "constraint": "感应电压≤24V（正常运行）或≤100V（故障条件）",
+      "related_entities": [
+        "GIS配电装置",
+        "感应电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS配电装置",
+      "target": "感应电压",
+      "type": "产生"
+    },
+    {
+      "source": "感应电压",
+      "target": "人身安全",
+      "type": "影响"
+    },
+    {
+      "source": "感应电压",
+      "target": "设备安全",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1766,
+      "source_row_id": "1766",
+      "clause_index": 1,
+      "source_text": "GIS配电装置感应电压不应危及人身和设备的安全。外壳和支架上的感应电压，正常运行条件下不应大于24V，故障条件下不应大于100V"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9375,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.743212+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

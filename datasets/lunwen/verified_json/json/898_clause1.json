@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "感应耐压试验",
+      "type": "试验方法",
+      "desc": "一种电气设备的绝缘性能测试方法"
+    },
+    {
+      "name": "高压端",
+      "type": "试验部位",
+      "desc": "进行试验的高压侧部位"
+    },
+    {
+      "name": "电压值",
+      "type": "试验参数",
+      "desc": "试验过程中测量的电压大小"
+    }
+  ],
+  "rules": [
+    {
+      "content": "感应耐压试验时，应在高压端测量电压值",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "进行感应耐压试验",
+      "condition": "对电气设备进行出厂或交接试验",
+      "constraint": "在高压端测量电压值",
+      "related_entities": [
+        "感应耐压试验",
+        "高压端",
+        "电压值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "感应耐压试验",
+      "target": "高压端",
+      "type": "在...上进行"
+    },
+    {
+      "source": "感应耐压试验",
+      "target": "电压值",
+      "type": "测量"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 898,
+      "source_row_id": "898",
+      "clause_index": 1,
+      "source_text": "感应耐压试验时，应在高压端测量电压值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.760081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

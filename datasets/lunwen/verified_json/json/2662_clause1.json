@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "被测试设备",
+      "type": "电力设备",
+      "desc": "需要进行试验的电力设备"
+    },
+    {
+      "name": "一般运行环境温度",
+      "type": "环境参数",
+      "desc": "设备正常运行时的环境温度范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试验应在被测试设备的一般运行环境温度下进行。",
+      "type": "强制",
+      "subject": "被测试设备",
+      "action": "试验",
+      "condition": "试验前",
+      "constraint": "一般运行环境温度",
+      "related_entities": [
+        "被测试设备",
+        "一般运行环境温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "被测试设备",
+      "target": "一般运行环境温度",
+      "type": "在...条件下进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2653,
+      "source_row_id": "2662",
+      "clause_index": 1,
+      "source_text": "试验应在被测试设备的一般运行环境温度下进行。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.821313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

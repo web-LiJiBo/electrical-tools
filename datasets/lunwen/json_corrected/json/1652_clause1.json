@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "直流滤波器高压端隔离开关",
+      "type": "设备",
+      "desc": "直流输电系统中用于隔离直流滤波器的高压开关设备"
+    },
+    {
+      "name": "电气寿命",
+      "type": "性能指标",
+      "desc": "设备在特定工作条件下能够完成的操作次数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流滤波器高压端隔离开关电气寿命5次",
+      "type": "强制",
+      "subject": "直流滤波器高压端隔离开关",
+      "action": "操作",
+      "condition": "直流滤波器高压端隔离开关在正常运行工况下",
+      "constraint": "电气寿命5次",
+      "related_entities": [
+        "直流滤波器高压端隔离开关"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流滤波器高压端隔离开关",
+      "target": "电气寿命",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1652,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b0ecb73b16c16baf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1652_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

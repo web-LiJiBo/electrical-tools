@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "气体湿度",
+      "type": "电力设备状态参数",
+      "desc": "电力设备中气体的湿度值"
+    },
+    {
+      "name": "额定压力",
+      "type": "电力设备运行参数",
+      "desc": "电力设备在正常工作状态下应保持的压力值"
+    },
+    {
+      "name": "气体",
+      "type": "电力设备介质",
+      "desc": "电力设备内部填充的气体介质"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体湿度应在充入额定压力的气体至少五天后进行检查",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "检查气体湿度",
+      "condition": "电力设备充入额定压力的气体",
+      "constraint": "至少五天后",
+      "related_entities": [
+        "气体湿度",
+        "额定压力",
+        "气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体湿度",
+      "target": "气体",
+      "type": "检测对象"
+    },
+    {
+      "source": "气体湿度",
+      "target": "额定压力",
+      "type": "检测条件"
+    },
+    {
+      "source": "气体",
+      "target": "额定压力",
+      "type": "检测对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2761,
+      "source_row_id": "2770",
+      "clause_index": 1,
+      "source_text": "为了获得可靠的测量结果，气体湿度应在充入额定压力的气体至少五天后进行检查。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.960314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

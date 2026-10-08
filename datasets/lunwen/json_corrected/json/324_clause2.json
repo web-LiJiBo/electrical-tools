@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "额定电压",
+      "type": "技术参数",
+      "desc": "设备正常运行时允许的最大工作电压"
+    },
+    {
+      "name": "交流频率",
+      "type": "技术参数",
+      "desc": "电网交流电的频率"
+    },
+    {
+      "name": "农村电网",
+      "type": "电网类型",
+      "desc": "服务于农村地区的电力网络"
+    },
+    {
+      "name": "户外低压配电箱",
+      "type": "设备",
+      "desc": "安装在户外的低压配电装置"
+    },
+    {
+      "name": "变压器",
+      "type": "设备",
+      "desc": "用于改变交流电压的电气设备"
+    },
+    {
+      "name": "国家电网公司",
+      "type": "组织机构",
+      "desc": "中国国家电网公司的简称"
+    }
+  ],
+  "rules": [
+    {
+      "content": "本标准适用于国家电网公司供电区域内交流频率50Hz，额定电压为400V及以下农村电网中，安装于容量为400kVA及以下变压器端的户外低压配电箱",
+      "type": "强制",
+      "subject": "户外低压配电箱",
+      "action": "设计与安装",
+      "condition": "国家电网公司供电区域内的农村电网",
+      "constraint": "交流频率50Hz，额定电压400V及以下，安装于400kVA及以下变压器端",
+      "related_entities": [
+        "额定电压",
+        "交流频率",
+        "农村电网",
+        "户外低压配电箱",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定电压",
+      "target": "户外低压配电箱",
+      "type": "适用"
+    },
+    {
+      "source": "交流频率",
+      "target": "户外低压配电箱",
+      "type": "适用"
+    },
+    {
+      "source": "农村电网",
+      "target": "户外低压配电箱",
+      "type": "适用"
+    },
+    {
+      "source": "变压器",
+      "target": "户外低压配电箱",
+      "type": "安装位置"
+    },
+    {
+      "source": "国家电网公司",
+      "target": "户外低压配电箱",
+      "type": "适用区域"
+    }
+  ],
+  "metadata": {
+    "pair_id": 324,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "af1c155c4c439a5d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\324_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

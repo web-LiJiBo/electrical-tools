@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "气体介质",
+      "desc": "六氟化硫气体，用于高压断路器等电气设备中"
+    },
+    {
+      "name": "额定密度",
+      "type": "技术参数",
+      "desc": "设备设计时确定的SF6气体密度值"
+    },
+    {
+      "name": "环境相对湿度",
+      "type": "环境参数",
+      "desc": "测量时周围空气中的水蒸气含量比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测量时，SF6气体应为额定密度，环境相对湿度一般不大于95%",
+      "type": "强制",
+      "subject": "SF6气体测量",
+      "action": "测量",
+      "condition": "在电气设备运行或检修过程中进行SF6气体测量",
+      "constraint": "SF6气体密度为额定密度，环境相对湿度≤95%",
+      "related_entities": [
+        "SF6气体",
+        "额定密度",
+        "环境相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体",
+      "target": "额定密度",
+      "type": "符合"
+    },
+    {
+      "source": "SF6气体",
+      "target": "环境相对湿度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 988,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c2ef367fb31ce3af",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\988_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

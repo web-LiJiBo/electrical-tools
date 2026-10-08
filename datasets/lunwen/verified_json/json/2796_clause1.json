@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "订货技术要求",
+      "type": "技术文档",
+      "desc": "采购合同中规定的设备技术参数和性能要求"
+    },
+    {
+      "name": "铭牌",
+      "type": "设备标识",
+      "desc": "设备上标注的技术参数和信息标识"
+    },
+    {
+      "name": "辅助设备",
+      "type": "电力设备",
+      "desc": "断路器配套使用的其他电气设备"
+    },
+    {
+      "name": "油漆",
+      "type": "材料",
+      "desc": "用于设备表面防腐和美观的涂料"
+    },
+    {
+      "name": "金属表面",
+      "type": "材料",
+      "desc": "设备金属部件的表面"
+    },
+    {
+      "name": "电容",
+      "type": "电气元件",
+      "desc": "储存电荷的储能元件"
+    },
+    {
+      "name": "分、合闸电阻",
+      "type": "电气元件",
+      "desc": "控制断路器分闸和合闸过程中的电阻"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应检查断路器以验证其与订货技术要求的符合性",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "检查",
+      "condition": "断路器安装前",
+      "constraint": "符合订货技术要求",
+      "related_entities": [
+        "断路器",
+        "订货技术要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "铭牌",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "辅助设备",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "油漆",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "金属表面",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "电容",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "分、合闸电阻",
+      "type": "包含"
+    },
+    {
+      "source": "铭牌",
+      "target": "断路器",
+      "type": "标识"
+    },
+    {
+      "source": "辅助设备",
+      "target": "断路器",
+      "type": "配套"
+    },
+    {
+      "source": "油漆",
+      "target": "金属表面",
+      "type": "涂覆"
+    },
+    {
+      "source": "电容",
+      "target": "断路器",
+      "type": "连接"
+    },
+    {
+      "source": "分、合闸电阻",
+      "target": "断路器",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2787,
+      "source_row_id": "2796",
+      "clause_index": 1,
+      "source_text": "应检查断路器以验证其与订货技术要求的符合性。可对下列项目进行检查:---铭牌上的语言和数据；---辅助设备的确认；---油漆的颜色和质量以及金属表面的防腐蚀保护；---连接到主回路的电容和分、合闸电阻的值,其偏差在制造厂允许的范围内。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.993317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

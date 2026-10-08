@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "阀冷却系统",
+      "type": "电力设备",
+      "desc": "用于冷却换流阀的系统"
+    },
+    {
+      "name": "换流阀厂家",
+      "type": "电力设备供应商",
+      "desc": "提供换流阀及其冷却需求的厂家"
+    },
+    {
+      "name": "冷却容量",
+      "type": "技术参数",
+      "desc": "阀冷却系统能够提供的冷却能力"
+    },
+    {
+      "name": "环境极端最高温度",
+      "type": "环境参数",
+      "desc": "极端高温天气下的环境温度"
+    },
+    {
+      "name": "湿球温度",
+      "type": "环境参数",
+      "desc": "考虑湿度影响后的实际温度感受"
+    },
+    {
+      "name": "过负荷运行",
+      "type": "运行状态",
+      "desc": "超过额定功率运行的状态"
+    },
+    {
+      "name": "晶闸管换流阀",
+      "type": "电力设备",
+      "desc": "采用晶闸管作为开关元件的换流阀"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀冷却系统设计应以换流阀厂家提供的冷却容量为依据",
+      "type": "强制",
+      "subject": "阀冷却系统设计者",
+      "action": "设计阀冷却系统",
+      "condition": "在换流阀厂家提供的冷却容量范围内",
+      "constraint": "冷却容量",
+      "related_entities": [
+        "阀冷却系统",
+        "换流阀厂家"
+      ]
+    },
+    {
+      "content": "满足环境极端最高温度或湿球温度条件下，换流阀连续2h过负荷运行时的晶闸管换流阀要求",
+      "type": "强制",
+      "subject": "阀冷却系统设计者",
+      "action": "确保阀冷却系统性能",
+      "condition": "在极端环境条件下",
+      "constraint": "冷却容量、环境极端最高温度、湿球温度、过负荷运行时间",
+      "related_entities": [
+        "阀冷却系统",
+        "环境极端最高温度",
+        "湿球温度",
+        "过负荷运行",
+        "晶闸管换流阀"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀冷却系统",
+      "target": "换流阀厂家",
+      "type": "依据"
+    },
+    {
+      "source": "阀冷却系统",
+      "target": "冷却容量",
+      "type": "基于"
+    },
+    {
+      "source": "阀冷却系统",
+      "target": "环境极端最高温度",
+      "type": "适应"
+    },
+    {
+      "source": "阀冷却系统",
+      "target": "湿球温度",
+      "type": "适应"
+    },
+    {
+      "source": "阀冷却系统",
+      "target": "过负荷运行",
+      "type": "适应"
+    },
+    {
+      "source": "阀冷却系统",
+      "target": "晶闸管换流阀",
+      "type": "保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2820,
+      "source_row_id": "2829",
+      "clause_index": 1,
+      "source_text": "阀冷却系统设计应以换流阀厂家提供的冷却容量为依据，满足环境极端最高温度或湿球温度条件下，换流阀连续2h过负荷运行时的晶闸管换流阀要求。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.034314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

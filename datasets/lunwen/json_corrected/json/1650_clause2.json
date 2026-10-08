@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "直流耐压干试试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行直流耐压试验的方法"
+    },
+    {
+      "name": "7.1.5.1",
+      "type": "试验标准",
+      "desc": "具体试验方法和步骤的章节编号"
+    },
+    {
+      "name": "试验电压",
+      "type": "试验参数",
+      "desc": "直流耐压试验时施加的电压值"
+    },
+    {
+      "name": "10min",
+      "type": "时间参数",
+      "desc": "试验电压持续的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应进行直流耐压干试试验，按照7.1.5.1的规定进行，试验电压持续时间为10min",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行直流耐压干试试验",
+      "condition": "在规定的试验条件下",
+      "constraint": "试验电压持续时间为10min",
+      "related_entities": [
+        "直流耐压干试试验",
+        "7.1.5.1",
+        "试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流耐压干试试验",
+      "target": "7.1.5.1",
+      "type": "依据"
+    },
+    {
+      "source": "直流耐压干试试验",
+      "target": "试验电压",
+      "type": "包含"
+    },
+    {
+      "source": "试验电压",
+      "target": "10min",
+      "type": "持续时间"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1650,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ae3eb0365a61d8a2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1650_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

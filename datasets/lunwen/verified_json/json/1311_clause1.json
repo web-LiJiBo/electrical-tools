@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体绝缘母线",
+      "type": "电力设备",
+      "desc": "一种使用SF6气体作为绝缘介质的母线"
+    },
+    {
+      "name": "多点接地方式",
+      "type": "技术方案",
+      "desc": "一种接地方式，通过多个接地点实现接地"
+    },
+    {
+      "name": "铜母线",
+      "type": "材料",
+      "desc": "由铜制成的导电母线"
+    },
+    {
+      "name": "铝母线",
+      "type": "材料",
+      "desc": "由铝制成的导电母线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6气体绝缘母线宜采用多点接地方式",
+      "type": "强制",
+      "subject": "SF6气体绝缘母线",
+      "action": "接地方式选择",
+      "condition": "无特殊要求",
+      "constraint": "宜采用多点接地方式",
+      "related_entities": [
+        "SF6气体绝缘母线",
+        "多点接地方式"
+      ]
+    },
+    {
+      "content": "同一相气体绝缘母线各节外壳之间宜采用铜或铝母线进行电气连接",
+      "type": "强制",
+      "subject": "气体绝缘母线",
+      "action": "电气连接方式选择",
+      "condition": "无特殊要求",
+      "constraint": "宜采用铜或铝母线进行电气连接",
+      "related_entities": [
+        "气体绝缘母线",
+        "铜母线",
+        "铝母线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体绝缘母线",
+      "target": "多点接地方式",
+      "type": "采用"
+    },
+    {
+      "source": "气体绝缘母线",
+      "target": "铜母线",
+      "type": "电气连接"
+    },
+    {
+      "source": "气体绝缘母线",
+      "target": "铝母线",
+      "type": "电气连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1311,
+      "source_row_id": "1311",
+      "clause_index": 1,
+      "source_text": "SF6气体绝缘母线宜采用多点接地方式。同一相气体绝缘母线各节外壳之间宜采用铜或铝母线进行电气连接，气体绝缘母线在两端和中间(可根据母线的长度确定中间接地点的数量)三相互连后用一根接地线接地"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9792,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.229547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

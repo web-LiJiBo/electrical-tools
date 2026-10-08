@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "name": "电缆终端场站",
+      "type": "电力设施",
+      "desc": "电缆线路的终端接入点"
+    },
+    {
+      "name": "隧道出入口",
+      "type": "电力设施",
+      "desc": "电缆隧道的进出口位置"
+    },
+    {
+      "name": "工井井盖",
+      "type": "电力设备",
+      "desc": "电缆工井的井口盖板"
+    },
+    {
+      "name": "在线监控装置",
+      "type": "安全防护设备",
+      "desc": "用于实时监控井盖状态的电子设备"
+    },
+    {
+      "name": "户外金属电缆支架",
+      "type": "电力设备",
+      "desc": "户外架设电缆的金属支撑结构"
+    },
+    {
+      "name": "电缆固定金具",
+      "type": "电力设备",
+      "desc": "用于固定电缆的金属配件"
+    },
+    {
+      "name": "防盗螺栓",
+      "type": "安全防护设备",
+      "desc": "具有防盗功能的紧固件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆终端场站、隧道出入口、重要区域的工井井盖应有安防措施，并宜加装在线监控装置",
+      "type": "强制",
+      "subject": "电缆终端场站、隧道出入口、重要区域的工井井盖",
+      "action": "安装安防措施并加装在线监控装置",
+      "condition": "位于电缆终端场站、隧道出入口、重要区域的工井井盖",
+      "constraint": "安防措施应具备防盗功能，宜采用在线监控装置进行实时监控",
+      "related_entities": [
+        "电缆终端场站",
+        "隧道出入口",
+        "工井井盖",
+        "在线监控装置"
+      ]
+    },
+    {
+      "content": "户外金属电缆支架、电缆固定金具等应使用防盗螺栓",
+      "type": "强制",
+      "subject": "户外金属电缆支架、电缆固定金具等",
+      "action": "使用防盗螺栓",
+      "condition": "位于户外环境中的金属电缆支架、电缆固定金具等",
+      "constraint": "防盗螺栓应具备防盗功能",
+      "related_entities": [
+        "户外金属电缆支架",
+        "电缆固定金具",
+        "防盗螺栓"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆终端场站",
+      "target": "工井井盖",
+      "type": "位于"
+    },
+    {
+      "source": "隧道出入口",
+      "target": "工井井盖",
+      "type": "位于"
+    },
+    {
+      "source": "工井井盖",
+      "target": "在线监控装置",
+      "type": "安装"
+    },
+    {
+      "source": "户外金属电缆支架",
+      "target": "防盗螺栓",
+      "type": "使用"
+    },
+    {
+      "source": "电缆固定金具",
+      "target": "防盗螺栓",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 300,
+      "source_row_id": "300",
+      "clause_index": 2,
+      "source_text": "电缆终端场站、隧道出入口、重要区域的工井井盖应有安防措施，并宜加装在线监控装置。户外金属电缆支架、电缆固定金具等应使用防盗螺栓"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.076601+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

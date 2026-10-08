@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "等效声级Leq",
+      "type": "物理量",
+      "desc": "规定测量时间内A级计权网络测得的声压级能量平均值"
+    },
+    {
+      "name": "GB3096",
+      "type": "标准",
+      "desc": "中国国家标准，关于声环境质量标准"
+    },
+    {
+      "name": "GB/T1094.10",
+      "type": "标准",
+      "desc": "中国国家标准，关于电力变压器的试验方法和参数"
+    },
+    {
+      "name": "GB12348《工业企业厂界环境噪声排放标准》",
+      "type": "标准",
+      "desc": "中国国家标准，关于工业企业厂界环境噪声排放限值"
+    },
+    {
+      "name": "额定分接电流",
+      "type": "电气参数",
+      "desc": "变压器在额定运行状态下的电流值"
+    },
+    {
+      "name": "励磁噪声",
+      "type": "噪声类型",
+      "desc": "变压器在空载状态下产生的噪声"
+    },
+    {
+      "name": "负载噪声",
+      "type": "噪声类型",
+      "desc": "变压器在带负载状态下产生的噪声"
+    },
+    {
+      "name": "环保要求",
+      "type": "要求",
+      "desc": "对噪声排放的环境保护要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器的噪声应在额定分接电流下测量变压器励磁噪声和负载噪声的合成噪声",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "测量噪声",
+      "condition": "额定分接电流下",
+      "constraint": "励磁噪声+负载噪声",
+      "related_entities": [
+        "额定分接电流",
+        "励磁噪声",
+        "负载噪声"
+      ]
+    },
+    {
+      "content": "变压器噪声满足GB12348《工业企业厂界环境噪声排放标准》Ⅲ类以下等级的环保要求",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "噪声排放",
+      "condition": "GB12348《工业企业厂界环境噪声排放标准》",
+      "constraint": "Ⅲ类以下等级",
+      "related_entities": [
+        "GB12348《工业企业厂界环境噪声排放标准》",
+        "环保要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "等效声级Leq",
+      "target": "GB3096",
+      "type": "定义依据"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "GB/T1094.10",
+      "type": "测量依据"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "额定分接电流",
+      "type": "测量条件"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "励磁噪声",
+      "type": "组成成分"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "负载噪声",
+      "type": "组成成分"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "环保要求",
+      "type": "合规要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1477,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "448e7bfca435c79d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1477_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

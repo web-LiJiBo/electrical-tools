@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "走廊清理应包括以下内容：a)应说明拟拆迁或跨越的房屋情况，包括建筑物的属性、规模、结构分类、价格。b)拆除或迁移”三线”（电力线、通信线、广播线）的情况说明。c)林区主要树种自然生长高度、长度，树木跨越长度及砍伐数量、价格等。d)拟拆迁、压覆厂矿的类型、所属单位、规模、数量、费用。e)拟拆除或迁移改造道路或管线的所属单位、类型、等级、数量、费用。f)对导航台、雷达站、通信基站等特殊障碍物的影响。g)当走廊清理规模较大时，应提供相应专题报告或由建设方委托第三方完成的评估报告。h)其他",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 732,
+      "source_row_id": "732",
+      "clause_index": 1,
+      "source_text": "走廊清理应包括以下内容：a)应说明拟拆迁或跨越的房屋情况，包括建筑物的属性、规模、结构分类、价格。b)拆除或迁移”三线”（电力线、通信线、广播线）的情况说明。c)林区主要树种自然生长高度、长度，树木跨越长度及砍伐数量、价格等。d)拟拆迁、压覆厂矿的类型、所属单位、规模、数量、费用。e)拟拆除或迁移改造道路或管线的所属单位、类型、等级、数量、费用。f)对导航台、雷达站、通信基站等特殊障碍物的影响。g)当走廊清理规模较大时，应提供相应专题报告或由建设方委托第三方完成的评估报告。h)其他"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.561081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的沟道"
+    },
+    {
+      "name": "阻火墙",
+      "type": "电力设施",
+      "desc": "用于阻止火灾蔓延的墙体"
+    },
+    {
+      "name": "配电装置",
+      "type": "电力设备",
+      "desc": "用于分配电能的电气设备组"
+    },
+    {
+      "name": "控制室",
+      "type": "电力设施",
+      "desc": "用于监控电力系统运行状态的房间"
+    },
+    {
+      "name": "厂区围墙",
+      "type": "电力设施",
+      "desc": "厂区与外界隔离的围墙"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在隧道或重要回路的电缆沟中的下列部位，宜设置阻火墙",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "隧道或重要回路的电缆沟",
+      "constraint": "电缆沟中的下列部位",
+      "related_entities": [
+        "电缆沟",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "公用主沟道的分支处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "公用主沟道的分支处",
+      "constraint": "无",
+      "related_entities": [
+        "电缆沟",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "多段配电装置对应的沟道适当分段处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "多段配电装置对应的沟道",
+      "constraint": "适当分段处",
+      "related_entities": [
+        "电缆沟",
+        "配电装置",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "长距离沟道中相隔约200m或通风区段处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "长距离沟道中",
+      "constraint": "相隔约200m或通风区段处",
+      "related_entities": [
+        "电缆沟",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "至控制室或配电装置的沟道入口、厂区围墙处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "至控制室或配电装置的沟道入口、厂区围墙处",
+      "constraint": "无",
+      "related_entities": [
+        "电缆沟",
+        "配电装置",
+        "控制室",
+        "厂区围墙",
+        "阻火墙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "配电装置",
+      "type": "连接"
+    },
+    {
+      "source": "电缆沟",
+      "target": "控制室",
+      "type": "连接"
+    },
+    {
+      "source": "电缆沟",
+      "target": "厂区围墙",
+      "type": "连接"
+    },
+    {
+      "source": "电缆沟",
+      "target": "阻火墙",
+      "type": "设置"
+    },
+    {
+      "source": "配电装置",
+      "target": "阻火墙",
+      "type": "设置"
+    },
+    {
+      "source": "控制室",
+      "target": "阻火墙",
+      "type": "设置"
+    },
+    {
+      "source": "厂区围墙",
+      "target": "阻火墙",
+      "type": "设置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 548,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2d4d417d868a33e8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\548_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "主循环泵电机供电回路",
+      "type": "电力系统设备",
+      "desc": "主循环泵电机供电回路是为泵提供电力的回路"
+    },
+    {
+      "name": "电源监视继电器",
+      "type": "电力系统设备",
+      "desc": "用于监测电源状态的继电器"
+    },
+    {
+      "name": "告警信号",
+      "type": "电力系统信号",
+      "desc": "当电源监视继电器检测到异常时发出的报警信号"
+    },
+    {
+      "name": "运行主循环泵",
+      "type": "电力系统设备",
+      "desc": "正在运行的主循环泵"
+    },
+    {
+      "name": "备用主循环泵",
+      "type": "电力系统设备",
+      "desc": "未运行的备用主循环泵"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主循环泵电机供电回路的电源监视继电器告警信号不参与运行主循环泵切换控制",
+      "type": "强制",
+      "subject": "电源监视继电器告警信号",
+      "action": "不参与运行主循环泵切换控制",
+      "condition": "主循环泵电机供电回路发生故障",
+      "constraint": "电源监视继电器告警信号",
+      "related_entities": [
+        "主循环泵电机供电回路",
+        "电源监视继电器",
+        "运行主循环泵"
+      ]
+    },
+    {
+      "content": "主循环泵电机供电回路的电源监视继电器告警信号参与备用主循环泵的控制逻辑",
+      "type": "强制",
+      "subject": "电源监视继电器告警信号",
+      "action": "参与备用主循环泵的控制逻辑",
+      "condition": "主循环泵电机供电回路发生故障",
+      "constraint": "电源监视继电器告警信号",
+      "related_entities": [
+        "主循环泵电机供电回路",
+        "电源监视继电器",
+        "备用主循环泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主循环泵电机供电回路",
+      "target": "电源监视继电器",
+      "type": "包含"
+    },
+    {
+      "source": "电源监视继电器",
+      "target": "告警信号",
+      "type": "产生"
+    },
+    {
+      "source": "电源监视继电器",
+      "target": "运行主循环泵",
+      "type": "不参与控制"
+    },
+    {
+      "source": "电源监视继电器",
+      "target": "备用主循环泵",
+      "type": "参与控制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2848,
+      "source_row_id": "2857",
+      "clause_index": 1,
+      "source_text": "主循环泵电机供电回路的电源监视继电器告警信号不参与运行主循环泵切换控制，但参与备用主循环泵的控制逻辑。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8607,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.063325+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

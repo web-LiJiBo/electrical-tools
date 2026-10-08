@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种将电能从一个电压等级转换到另一个电压等级的静止电气设备"
+    },
+    {
+      "name": "本体储油柜",
+      "type": "电力设备部件",
+      "desc": "变压器油箱内部用于储存变压器油的容器"
+    },
+    {
+      "name": "气体继电器",
+      "type": "电力设备部件",
+      "desc": "变压器内部故障时发出信号或直接切断电源的保护装置"
+    },
+    {
+      "name": "断流阀",
+      "type": "电力设备部件",
+      "desc": "控制油流通过的阀门，防止油流过大导致的事故"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用排油注氮保护装置的变压器，本体储油柜与气体继电器间应设断流阀",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "设置断流阀",
+      "condition": "采用排油注氮保护装置",
+      "constraint": "本体储油柜与气体继电器间",
+      "related_entities": [
+        "变压器",
+        "本体储油柜",
+        "气体继电器",
+        "断流阀"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "本体储油柜",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "气体继电器",
+      "type": "连接"
+    },
+    {
+      "source": "本体储油柜",
+      "target": "气体继电器",
+      "type": "连接"
+    },
+    {
+      "source": "变压器",
+      "target": "断流阀",
+      "type": "安装"
+    },
+    {
+      "source": "本体储油柜",
+      "target": "断流阀",
+      "type": "连接"
+    },
+    {
+      "source": "气体继电器",
+      "target": "断流阀",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2086,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "33169ad970480246",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2086_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

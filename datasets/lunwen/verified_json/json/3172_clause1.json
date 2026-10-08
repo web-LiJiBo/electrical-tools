@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "油浸式变压器",
+      "type": "电力设备",
+      "desc": "一种将电能进行变换的电力设备"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种用于限制短路电流的电力设备"
+    },
+    {
+      "name": "电压等级",
+      "type": "电力参数",
+      "desc": "电力系统中各元件的额定电压等级"
+    },
+    {
+      "name": "充油后静置时间",
+      "type": "电力参数",
+      "desc": "油浸式变压器或电抗器充油后需要静置的时间"
+    },
+    {
+      "name": "110(66)kV",
+      "type": "电压等级",
+      "desc": "电力系统中的电压等级"
+    },
+    {
+      "name": "220~330kV",
+      "type": "电压等级",
+      "desc": "电力系统中的电压等级"
+    },
+    {
+      "name": "500kV",
+      "type": "电压等级",
+      "desc": "电力系统中的电压等级"
+    },
+    {
+      "name": "750kV",
+      "type": "电压等级",
+      "desc": "电力系统中的电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110（66）kV及以下：≥24h",
+      "type": "强制",
+      "subject": "油浸式变压器及电抗器",
+      "action": "充油后静置",
+      "condition": "电压等级≤110(66)kV",
+      "constraint": "充油后静置时间≥24h",
+      "related_entities": [
+        "油浸式变压器",
+        "电抗器",
+        "110(66)kV"
+      ]
+    },
+    {
+      "content": "220~330kV：≥48h",
+      "type": "强制",
+      "subject": "油浸式变压器及电抗器",
+      "action": "充油后静置",
+      "condition": "电压等级在220~330kV之间",
+      "constraint": "充油后静置时间≥48h",
+      "related_entities": [
+        "油浸式变压器",
+        "电抗器",
+        "220~330kV"
+      ]
+    },
+    {
+      "content": "500kV≥72h",
+      "type": "强制",
+      "subject": "油浸式变压器及电抗器",
+      "action": "充油后静置",
+      "condition": "电压等级为500kV",
+      "constraint": "充油后静置时间≥72h",
+      "related_entities": [
+        "油浸式变压器",
+        "电抗器",
+        "500kV"
+      ]
+    },
+    {
+      "content": "750kV≥96h",
+      "type": "强制",
+      "subject": "油浸式变压器及电抗器",
+      "action": "充油后静置",
+      "condition": "电压等级为750kV",
+      "constraint": "充油后静置时间≥96h",
+      "related_entities": [
+        "油浸式变压器",
+        "电抗器",
+        "750kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式变压器",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "电抗器",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "电压等级",
+      "target": "充油后静置时间",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3163,
+      "source_row_id": "3172",
+      "clause_index": 1,
+      "source_text": "油浸式变压器及电抗器电压等级与充油后静置时间关系：110（66）kV及以下：≥24h；220~330kV：≥48h；500kV≥72h：750kV≥96h。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.459313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

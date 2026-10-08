@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "开关装置",
+      "type": "电力设备",
+      "desc": "一种能够关合、承载和开断直流运行电流，并能在规定的时间内关合、承载和开断异常回路条件（如短路条件）下的电流的电力设备"
+    },
+    {
+      "name": "直流运行电流",
+      "type": "电力参数",
+      "desc": "直流电路中正常运行时的电流"
+    },
+    {
+      "name": "异常回路条件",
+      "type": "电力状态",
+      "desc": "包括短路等非正常运行状态下的电路条件"
+    },
+    {
+      "name": "短路条件",
+      "type": "电力状态",
+      "desc": "电路中出现的短路故障状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关装置应能关合、承载和开断直流运行电流，并能在规定的时间内关合、承载和开断异常回路条件（如短路条件）下的电流",
+      "type": "强制",
+      "subject": "开关装置",
+      "action": "关合、承载和开断电流",
+      "condition": "在直流运行电流及异常回路条件下",
+      "constraint": "关合、承载和开断电流",
+      "related_entities": [
+        "开关装置",
+        "直流运行电流",
+        "异常回路条件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关装置",
+      "target": "直流运行电流",
+      "type": "关合、承载和开断"
+    },
+    {
+      "source": "开关装置",
+      "target": "异常回路条件",
+      "type": "关合、承载和开断"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2657,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "66e01acdbd0cff27",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2657_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

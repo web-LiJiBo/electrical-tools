@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "管",
+      "type": "电力设备",
+      "desc": "保护电缆的管道"
+    },
+    {
+      "name": "电缆外径",
+      "type": "电力参数",
+      "desc": "单根电缆的外径尺寸"
+    },
+    {
+      "name": "多根电缆包络外径",
+      "type": "电力参数",
+      "desc": "多根电缆排列时的最外围尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "管的内径不宜小于电缆外径或多根电缆包络外径的1.5倍，一般不宜小于100mm。",
+      "type": "强制",
+      "subject": "管",
+      "action": "设计安装",
+      "condition": "电缆敷设于管内",
+      "constraint": "管内径≥1.5*电缆外径或1.5*多根电缆包络外径，且≥100mm",
+      "related_entities": [
+        "电缆",
+        "管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "管",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆外径",
+      "target": "管",
+      "type": "决定"
+    },
+    {
+      "source": "多根电缆包络外径",
+      "target": "管",
+      "type": "决定"
+    },
+    {
+      "source": "管",
+      "target": "电缆外径",
+      "type": "适应"
+    },
+    {
+      "source": "管",
+      "target": "多根电缆包络外径",
+      "type": "适应"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3261,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "636b61294338e3b9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3261_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

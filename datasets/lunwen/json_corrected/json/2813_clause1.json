@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "设备",
+      "desc": "气体绝缘组合电器"
+    },
+    {
+      "name": "断路器",
+      "type": "设备",
+      "desc": "高压断路器"
+    },
+    {
+      "name": "隔离开关",
+      "type": "设备",
+      "desc": "高压隔离开关"
+    },
+    {
+      "name": "电压互感器",
+      "type": "设备",
+      "desc": "高压电压互感器"
+    },
+    {
+      "name": "避雷器",
+      "type": "设备",
+      "desc": "金属氧化物避雷器"
+    },
+    {
+      "name": "套管",
+      "type": "设备",
+      "desc": "高压套管"
+    },
+    {
+      "name": "三维冲击记录仪",
+      "type": "设备",
+      "desc": "用于记录运输过程中三维冲击加速度的仪器"
+    },
+    {
+      "name": "震动指示器",
+      "type": "设备",
+      "desc": "用于指示运输过程中震动情况的仪器"
+    },
+    {
+      "name": "冲击加速度",
+      "type": "参数",
+      "desc": "运输过程中三维冲击记录仪记录的加速度值"
+    },
+    {
+      "name": "3g",
+      "type": "参数",
+      "desc": "三维冲击记录仪设定的冲击加速度阈值"
+    },
+    {
+      "name": "产品技术文件",
+      "type": "文档",
+      "desc": "产品制造过程中的技术文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS出厂运输时，应在断路器、隔离开关、电压互感器、避雷器和363kV及以上套管运输单元上加装三维冲击记录仪，其他运输单元加装震动指示器。",
+      "type": "强制",
+      "subject": "GIS生产厂家",
+      "action": "加装三维冲击记录仪或震动指示器",
+      "condition": "GIS出厂运输",
+      "constraint": "断路器、隔离开关、电压互感器、避雷器和363kV及以上套管运输单元加装三维冲击记录仪，其他运输单元加装震动指示器",
+      "related_entities": [
+        "GIS",
+        "断路器",
+        "隔离开关",
+        "电压互感器",
+        "避雷器",
+        "套管",
+        "三维冲击记录仪",
+        "震动指示器"
+      ]
+    },
+    {
+      "content": "运输中如出现冲击加速度大于3g或不满足产品技术文件要求的情况，产品运至现场后应打开相应隔室检查各部件是否完好，必要时可增加试验项目或返厂处理。",
+      "type": "强制",
+      "subject": "GIS生产厂家",
+      "action": "打开相应隔室检查各部件是否完好，必要时增加试验项目或返厂处理",
+      "condition": "运输中出现冲击加速度大于3g或不满足产品技术文件要求的情况",
+      "constraint": "冲击加速度大于3g或不满足产品技术文件要求",
+      "related_entities": [
+        "GIS",
+        "冲击加速度",
+        "3g",
+        "产品技术文件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "断路器",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "隔离开关",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "电压互感器",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "避雷器",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "套管",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "隔离开关",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "电压互感器",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "避雷器",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "套管",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "其他运输单元",
+      "target": "震动指示器",
+      "type": "安装"
+    },
+    {
+      "source": "GIS",
+      "target": "产品技术文件",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2813,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a7bc53758b186f92",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2813_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

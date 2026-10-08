@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "电容器组",
+      "type": "电力设备",
+      "desc": "电力系统中用于补偿无功功率的设备"
+    },
+    {
+      "name": "滤波器",
+      "type": "电力设备",
+      "desc": "电力系统中用于滤除谐波的设备"
+    },
+    {
+      "name": "过电流保护",
+      "type": "保护装置",
+      "desc": "当电路中的电流超过设定值时启动保护的装置"
+    },
+    {
+      "name": "不平衡保护",
+      "type": "保护装置",
+      "desc": "当三相电流不平衡度超过设定值时启动保护的装置"
+    },
+    {
+      "name": "过电压保护",
+      "type": "保护装置",
+      "desc": "当系统电压超过设定值时启动保护的装置"
+    },
+    {
+      "name": "低电压保护",
+      "type": "保护装置",
+      "desc": "当系统电压低于设定值时启动保护的装置"
+    },
+    {
+      "name": "低频保护",
+      "type": "保护装置",
+      "desc": "当系统频率低于设定值时启动保护的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电容器组（或滤波器）保护，包括1）过电流；2）不平衡；3）过电压；4）低电压；5）低频（可选）。",
+      "type": "强制",
+      "subject": "电容器组（或滤波器）",
+      "action": "设置保护装置",
+      "condition": "电容器组（或滤波器）运行期间",
+      "constraint": "必须配置过电流保护、不平衡保护、过电压保护、低电压保护；可选配置低频保护",
+      "related_entities": [
+        "电容器组",
+        "滤波器",
+        "过电流保护",
+        "不平衡保护",
+        "过电压保护",
+        "低电压保护",
+        "低频保护"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容器组",
+      "target": "过电流保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "不平衡保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "过电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "低电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "低频保护",
+      "type": "可选配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "过电流保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "不平衡保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "过电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "低电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "低频保护",
+      "type": "可选配置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2961,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "66c35e093b5deac1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2961_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

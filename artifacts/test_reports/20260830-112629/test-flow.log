@@ -1,0 +1,27 @@
+**********************
+PowerShell transcript start
+Start time: 20260830112629
+Username: DESKTOP-JCP4HUU\CodexSandboxOffline
+RunAs User: DESKTOP-JCP4HUU\CodexSandboxOffline
+Configuration Name: 
+Machine: DESKTOP-JCP4HUU (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Users\13591\.cache\codex-runtimes\codex-primary-runtime\dependencies\native\powershell\pwsh.dll -NoProfile -Command try { [Console]::OutputEncoding=[System.Text.Encoding]::UTF8 } catch {}
+& .\scripts\run_test_flow.ps1 -Profile standard -PythonCommand 'D:\anaconda\python.exe'
+Process ID: 24384
+PSVersion: 7.6.4
+PSEdition: Core
+GitCommitId: 7.6.4
+OS: Microsoft Windows 10.0.19045
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1, 6.0, 7.0
+PSRemotingProtocolVersion: 2.4
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+
+[环境信息] D:\anaconda\python.exe -c import json,platform,sys; print(json.dumps({'python':sys.version,'executable':sys.executable,'platform':platform.platform()},ensure_ascii=False))
+
+**********************
+PowerShell transcript end
+End time: 20260830112629
+**********************

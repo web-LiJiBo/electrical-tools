@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "直流隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于直流电路中的开关设备，用于隔离电源或切换电路"
+    },
+    {
+      "name": "过负荷电流",
+      "type": "电气参数",
+      "desc": "超过额定电流的电流值，通常指短时间内的过载电流"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "设备正常工作时允许通过的最大电流值"
+    },
+    {
+      "name": "负载电流",
+      "type": "电气参数",
+      "desc": "实际运行中流经设备的电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流隔离开关应具有承受过负荷电流能力（10s，2h和连续）",
+      "type": "强制",
+      "subject": "直流隔离开关",
+      "action": "承受过负荷电流",
+      "condition": "直流隔离开关在10s、2h和连续运行条件下",
+      "constraint": "直流隔离开关应能承受过负荷电流",
+      "related_entities": [
+        "直流隔离开关",
+        "过负荷电流"
+      ]
+    },
+    {
+      "content": "在选择直流隔离开关的额定电流时，应使其额定电流适应于运行中可能出现的任何负载电流",
+      "type": "强制",
+      "subject": "直流隔离开关",
+      "action": "选择额定电流",
+      "condition": "直流隔离开关在运行中",
+      "constraint": "直流隔离开关的额定电流应大于等于运行中可能出现的最大负载电流",
+      "related_entities": [
+        "直流隔离开关",
+        "额定电流",
+        "负载电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流隔离开关",
+      "target": "过负荷电流",
+      "type": "承受"
+    },
+    {
+      "source": "直流隔离开关",
+      "target": "额定电流",
+      "type": "选择"
+    },
+    {
+      "source": "额定电流",
+      "target": "负载电流",
+      "type": "适应"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1234,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "74139b000e74961a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1234_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

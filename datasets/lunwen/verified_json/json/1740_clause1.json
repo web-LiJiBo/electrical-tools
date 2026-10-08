@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "电力设备材料",
+      "desc": "六氟化硫气体，用于高压开关设备中"
+    },
+    {
+      "name": "湿度测量",
+      "type": "检测项目",
+      "desc": "对SF6气体中的水分含量进行测量"
+    },
+    {
+      "name": "充气时间",
+      "type": "时间参数",
+      "desc": "充入SF6气体的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6气体湿度测量应在最后充入气体至少48h后进行",
+      "type": "强制",
+      "subject": "SF6气体湿度测量",
+      "action": "测量",
+      "condition": "在最后充入气体之后",
+      "constraint": "至少48小时后",
+      "related_entities": [
+        "SF6气体",
+        "湿度测量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体",
+      "target": "湿度测量",
+      "type": "测量对象"
+    },
+    {
+      "source": "充气时间",
+      "target": "湿度测量",
+      "type": "前置条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1740,
+      "source_row_id": "1740",
+      "clause_index": 1,
+      "source_text": "SF6气体湿度测量应在最后充入气体至少48h后进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9375,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.715582+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

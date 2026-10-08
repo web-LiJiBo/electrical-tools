@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "牵引机",
+      "type": "设备",
+      "desc": "用于牵引电缆等物体的机械设备"
+    },
+    {
+      "name": "过载保护装置",
+      "type": "装置",
+      "desc": "用于防止牵引机过载的保护装置"
+    },
+    {
+      "name": "额定牵引力",
+      "type": "参数",
+      "desc": "牵引机在正常工作条件下所能提供的最大牵引力"
+    },
+    {
+      "name": "最大牵引力",
+      "type": "参数",
+      "desc": "牵引机在过载保护装置作用下所能提供的最大牵引力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "牵引机必须有过载保护装置",
+      "type": "强制",
+      "subject": "牵引机",
+      "action": "安装过载保护装置",
+      "condition": "牵引机在使用过程中",
+      "constraint": "必须安装过载保护装置",
+      "related_entities": [
+        "牵引机",
+        "过载保护装置"
+      ]
+    },
+    {
+      "content": "过载保持装置可保护的最大牵引力不应小于额定牵引力的1.25倍",
+      "type": "强制",
+      "subject": "过载保护装置",
+      "action": "设置最大牵引力",
+      "condition": "牵引机在使用过程中",
+      "constraint": "最大牵引力≥1.25×额定牵引力",
+      "related_entities": [
+        "过载保护装置",
+        "额定牵引力",
+        "最大牵引力"
+      ]
+    },
+    {
+      "content": "过载保护装置应连续可调",
+      "type": "强制",
+      "subject": "过载保护装置",
+      "action": "调节最大牵引力",
+      "condition": "牵引机在使用过程中",
+      "constraint": "最大牵引力连续可调",
+      "related_entities": [
+        "过载保护装置",
+        "最大牵引力"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "牵引机",
+      "target": "过载保护装置",
+      "type": "安装"
+    },
+    {
+      "source": "过载保护装置",
+      "target": "额定牵引力",
+      "type": "保护"
+    },
+    {
+      "source": "过载保护装置",
+      "target": "最大牵引力",
+      "type": "保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 692,
+      "source_row_id": "692",
+      "clause_index": 1,
+      "source_text": "牵引机必须有过载保护装置,过载保持装置可保护的最大牵引力不应小于额定牵引力的1.25倍,过载保护装置应连续可调"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.516481+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

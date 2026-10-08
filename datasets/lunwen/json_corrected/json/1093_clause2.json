@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器或电抗器内部装油的容器"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "充入油箱内的干燥气体"
+    },
+    {
+      "name": "干燥气体瓶",
+      "type": "辅助设备",
+      "desc": "储存干燥气体的钢瓶"
+    },
+    {
+      "name": "露点",
+      "type": "物理参数",
+      "desc": "气体中水蒸气含量的度量方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "充干燥气体运输的变压器、电抗器油箱内的气体压力应保持在0.01MPa-0.03MPa",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "充干燥气体运输时保持油箱内气体压力",
+      "condition": "充干燥气体运输过程中",
+      "constraint": "0.01MPa-0.03MPa",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "油箱",
+        "气体"
+      ]
+    },
+    {
+      "content": "干燥气体露点必须低于-40°C",
+      "type": "强制",
+      "subject": "干燥气体",
+      "action": "控制干燥气体露点",
+      "condition": "充干燥气体运输过程中",
+      "constraint": "-40°C",
+      "related_entities": [
+        "干燥气体",
+        "露点"
+      ]
+    },
+    {
+      "content": "每台变压器、电抗器必须配有可以随时补气的纯净、干燥气体瓶",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "配备干燥气体瓶",
+      "condition": "充干燥气体运输过程中",
+      "constraint": "随时补气",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "干燥气体瓶"
+      ]
+    },
+    {
+      "content": "始终保持变压器、电抗器内为正压力",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "保持油箱内为正压力",
+      "condition": "充干燥气体运输过程中",
+      "constraint": "正压力",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "油箱",
+        "气体"
+      ]
+    },
+    {
+      "content": "并设有压力表进行监视",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "设置压力表进行监视",
+      "condition": "充干燥气体运输过程中",
+      "constraint": "压力表",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "油箱",
+        "气体",
+        "压力表"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "气体",
+      "type": "充入"
+    },
+    {
+      "source": "干燥气体瓶",
+      "target": "气体",
+      "type": "提供"
+    },
+    {
+      "source": "变压器",
+      "target": "干燥气体瓶",
+      "type": "使用"
+    },
+    {
+      "source": "电抗器",
+      "target": "干燥气体瓶",
+      "type": "使用"
+    },
+    {
+      "source": "变压器",
+      "target": "压力表",
+      "type": "安装"
+    },
+    {
+      "source": "电抗器",
+      "target": "压力表",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1093,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "cb993a54efe9f9a3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1093_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

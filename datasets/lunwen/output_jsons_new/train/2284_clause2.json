@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "噪声水平",
+      "type": "技术参数",
+      "desc": "风冷却设备投入运行时的噪声水平"
+    },
+    {
+      "name": "风冷却设备",
+      "type": "设备",
+      "desc": "用于电力系统中冷却的通风设备"
+    },
+    {
+      "name": "75dB",
+      "type": "噪声水平",
+      "desc": "风冷却设备投入运行时的噪声水平上限"
+    }
+  ],
+  "rules": [
+    {
+      "content": "<75dB",
+      "type": "强制",
+      "subject": "风冷却设备",
+      "action": "噪声控制",
+      "condition": "风冷却设备投入运行",
+      "constraint": "≤75dB",
+      "related_entities": [
+        "噪声水平",
+        "风冷却设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "噪声水平",
+      "target": "风冷却设备",
+      "type": "属于"
+    },
+    {
+      "source": "风冷却设备",
+      "target": "噪声水平",
+      "type": "产生"
+    }
+  ]
+}

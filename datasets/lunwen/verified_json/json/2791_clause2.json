@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "速度定义",
+      "type": "技术参数",
+      "desc": "断路器操作速度的定义值"
+    },
+    {
+      "name": "机械行程特性曲线",
+      "type": "技术参数",
+      "desc": "断路器在不同操作状态下的行程变化曲线"
+    },
+    {
+      "name": "传感器",
+      "type": "检测设备",
+      "desc": "用于测量断路器机械特性的仪器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "卖方应提供断路器的速度定义和参考机械行程特性曲线",
+      "type": "强制",
+      "subject": "卖方",
+      "action": "提供断路器相关技术参数",
+      "condition": "进行现场机械特性试验时",
+      "constraint": "速度定义和机械行程特性曲线需符合行业标准和技术规范",
+      "related_entities": [
+        "断路器",
+        "速度定义",
+        "机械行程特性曲线"
+      ]
+    },
+    {
+      "content": "卖方应提供检测用传感器和安装附件",
+      "type": "强制",
+      "subject": "卖方",
+      "action": "提供检测设备",
+      "condition": "进行现场机械特性试验时",
+      "constraint": "传感器和安装附件需满足试验要求且符合相关标准",
+      "related_entities": [
+        "断路器",
+        "传感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "速度定义",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "机械行程特性曲线",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "传感器",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2782,
+      "source_row_id": "2791",
+      "clause_index": 2,
+      "source_text": "现场机械特性试验，卖方应提供断路器的速度定义和参考机械行程特性曲线，及检测用传感器和安装附件。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8828,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.988316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

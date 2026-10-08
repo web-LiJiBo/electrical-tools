@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "交流电压",
+      "type": "电气参数",
+      "desc": "交流电的电压特性"
+    },
+    {
+      "name": "自由导电微粒",
+      "type": "检测对象",
+      "desc": "电力设备中可能存在的自由移动导电颗粒"
+    },
+    {
+      "name": "异常电极结构",
+      "type": "检测对象",
+      "desc": "电力设备中可能存在的异常电极结构"
+    },
+    {
+      "name": "电压波形",
+      "type": "电气参数",
+      "desc": "交流电压的波形特性"
+    },
+    {
+      "name": "正弦波",
+      "type": "电气参数",
+      "desc": "理想的交流电压波形"
+    },
+    {
+      "name": "峰值",
+      "type": "电气参数",
+      "desc": "交流电压的最大值"
+    },
+    {
+      "name": "有效值",
+      "type": "电气参数",
+      "desc": "交流电压的平均值"
+    },
+    {
+      "name": "交流电压频率",
+      "type": "电气参数",
+      "desc": "交流电压的频率特性"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交流电压对检查自由导电微粒等杂质比较敏感。",
+      "type": "强制",
+      "subject": "交流电压",
+      "action": "检查自由导电微粒等杂质",
+      "condition": "电力设备运行过程中",
+      "constraint": "",
+      "related_entities": [
+        "交流电压",
+        "自由导电微粒"
+      ]
+    },
+    {
+      "content": "在大多数情况下，能有效地检查异常电极结构。",
+      "type": "强制",
+      "subject": "交流电压",
+      "action": "检查异常电极结构",
+      "condition": "电力设备运行过程中",
+      "constraint": "",
+      "related_entities": [
+        "交流电压",
+        "异常电极结构"
+      ]
+    },
+    {
+      "content": "电压波形应接近正弦，两个半波应完全一样，且峰值和有效值之比等于√2±0.07。",
+      "type": "强制",
+      "subject": "交流电压",
+      "action": "保持电压波形接近正弦",
+      "condition": "电力设备运行过程中",
+      "constraint": "峰值/有效值=√2±0.07",
+      "related_entities": [
+        "交流电压",
+        "电压波形",
+        "正弦波",
+        "峰值",
+        "有效值"
+      ]
+    },
+    {
+      "content": "交流电压频率一般应在10Hz-300Hz范围内。",
+      "type": "强制",
+      "subject": "交流电压",
+      "action": "控制交流电压频率",
+      "condition": "电力设备运行过程中",
+      "constraint": "10Hz≤交流电压频率≤300Hz",
+      "related_entities": [
+        "交流电压",
+        "交流电压频率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交流电压",
+      "target": "自由导电微粒",
+      "type": "敏感度检查"
+    },
+    {
+      "source": "交流电压",
+      "target": "异常电极结构",
+      "type": "敏感度检查"
+    },
+    {
+      "source": "交流电压",
+      "target": "电压波形",
+      "type": "波形特性"
+    },
+    {
+      "source": "交流电压",
+      "target": "正弦波",
+      "type": "波形特性"
+    },
+    {
+      "source": "交流电压",
+      "target": "峰值",
+      "type": "波形特性"
+    },
+    {
+      "source": "交流电压",
+      "target": "有效值",
+      "type": "波形特性"
+    },
+    {
+      "source": "交流电压",
+      "target": "交流电压频率",
+      "type": "频率特性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3226,
+      "source_row_id": "3235",
+      "clause_index": 1,
+      "source_text": "交流电压对检查自由导电微粒等杂质比较敏感。在大多数情况下，能有效地检查异常电极结构。电压波形应接近正弦，两个半波应完全一样，且峰值和有效值之比等于√2±0.07。交流电压频率一般应在10Hz-300Hz范围内。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9896,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.537364+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

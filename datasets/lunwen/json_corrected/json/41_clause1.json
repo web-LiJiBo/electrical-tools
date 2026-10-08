@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流或电压的电气设备"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备施加交流高压以检验其绝缘性能的试验方法"
+    },
+    {
+      "name": "出厂试验电压",
+      "type": "试验参数",
+      "desc": "设备出厂时规定的耐压值"
+    },
+    {
+      "name": "电压等级220kV以上SF6气体绝缘互感器",
+      "type": "电力设备",
+      "desc": "特定电压等级和绝缘方式的互感器"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备施加交流高压以检验其绝缘性能的试验方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应按出厂试验电压的80％进行",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "交流耐压试验",
+      "condition": "互感器交流耐压试验",
+      "constraint": "出厂试验电压的80%",
+      "related_entities": [
+        "互感器",
+        "出厂试验电压"
+      ]
+    },
+    {
+      "content": "电压等级220kV以上的SF6气体绝缘互感器宜在安装完毕的情况下进行交流耐压试验",
+      "type": "强制",
+      "subject": "电压等级220kV以上的SF6气体绝缘互感器",
+      "action": "交流耐压试验",
+      "condition": "互感器交流耐压试验",
+      "constraint": "安装完毕",
+      "related_entities": [
+        "电压等级220kV以上的SF6气体绝缘互感器",
+        "互感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "交流耐压试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "出厂试验电压",
+      "target": "互感器",
+      "type": "参考依据"
+    },
+    {
+      "source": "电压等级220kV以上的SF6气体绝缘互感器",
+      "target": "交流耐压试验",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 41,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "afb9652bab30f764",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\41_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

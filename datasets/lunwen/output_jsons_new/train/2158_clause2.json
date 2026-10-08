@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "500kV套管",
+      "type": "电力设备",
+      "desc": "500kV电压等级的电力变压器套管"
+    },
+    {
+      "name": "静放时间",
+      "type": "技术参数",
+      "desc": "电力设备在安装前需要静置的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "500kV套管静放时间应为72小时",
+      "type": "强制",
+      "subject": "500kV套管",
+      "action": "静置",
+      "condition": "安装前",
+      "constraint": "72小时",
+      "related_entities": [
+        "500kV套管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "500kV套管",
+      "target": "静放时间",
+      "type": "包含"
+    }
+  ]
+}

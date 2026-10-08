@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "现场测试值",
+      "type": "电力参数",
+      "desc": "在现场进行的电力设备参数测量结果"
+    },
+    {
+      "name": "控制值Rn",
+      "type": "电力参数",
+      "desc": "电力设备在正常运行状态下的允许最大值"
+    },
+    {
+      "name": "出厂值",
+      "type": "电力参数",
+      "desc": "电力设备出厂时的额定参数值"
+    },
+    {
+      "name": "三相测试值",
+      "type": "电力参数",
+      "desc": "电力设备三相之间的参数测量结果"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场测试值不得超过控制值Rn",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "现场测试",
+      "condition": "电力设备运行中",
+      "constraint": "现场测试值≤控制值Rn",
+      "related_entities": [
+        "现场测试值",
+        "控制值Rn"
+      ]
+    },
+    {
+      "content": "注意与出厂值的比较",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "现场测试",
+      "condition": "电力设备运行中",
+      "constraint": "现场测试值与出厂值对比",
+      "related_entities": [
+        "现场测试值",
+        "出厂值"
+      ]
+    },
+    {
+      "content": "注意三相测试值的平衡度",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "现场测试",
+      "condition": "电力设备运行中",
+      "constraint": "三相测试值平衡度良好",
+      "related_entities": [
+        "三相测试值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "现场测试值",
+      "target": "控制值Rn",
+      "type": "不超过"
+    },
+    {
+      "source": "现场测试值",
+      "target": "出厂值",
+      "type": "对比"
+    },
+    {
+      "source": "三相测试值",
+      "target": "现场测试值",
+      "type": "组成"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1735,
+      "source_row_id": "1735",
+      "clause_index": 1,
+      "source_text": "现场测试值不得超过控制值Rn，还应注意与出厂值的比较和三相测试值的平衡度"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9545,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.710583+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

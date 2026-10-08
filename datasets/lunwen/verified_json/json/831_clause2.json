@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "制孔表面",
+      "type": "工艺过程",
+      "desc": "电力设备制造过程中进行钻孔的表面"
+    },
+    {
+      "name": "凹面缺陷",
+      "type": "质量缺陷",
+      "desc": "制孔表面出现的凹陷不平现象"
+    },
+    {
+      "name": "毛刺",
+      "type": "质量缺陷",
+      "desc": "制孔过程中产生的多余金属突起"
+    },
+    {
+      "name": "孔壁",
+      "type": "结构部件",
+      "desc": "钻孔后的孔洞边缘部分"
+    },
+    {
+      "name": "零件表面",
+      "type": "结构部件",
+      "desc": "电力设备零件的外表面"
+    },
+    {
+      "name": "缺棱",
+      "type": "质量缺陷",
+      "desc": "孔壁与零件表面交接处的锐角缺失"
+    },
+    {
+      "name": "塌角",
+      "type": "质量缺陷",
+      "desc": "孔壁与零件表面交接处的钝角变形"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制孔表面不应有明显的凹面缺陷，大于0.3mm的毛刺应清除。",
+      "type": "强制",
+      "subject": "制孔表面",
+      "action": "加工处理",
+      "condition": "制孔工序完成后",
+      "constraint": "凹面缺陷不应存在，毛刺尺寸不大于0.3mm",
+      "related_entities": [
+        "制孔表面",
+        "凹面缺陷",
+        "毛刺"
+      ]
+    },
+    {
+      "content": "制孔后孔壁与零件表面的边界交接处，不应有大于0.5mm的缺棱或塌角。",
+      "type": "强制",
+      "subject": "孔壁与零件表面交接处",
+      "action": "加工处理",
+      "condition": "制孔工序完成后",
+      "constraint": "缺棱或塌角尺寸不大于0.5mm",
+      "related_entities": [
+        "孔壁",
+        "零件表面",
+        "缺棱",
+        "塌角"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制孔表面",
+      "target": "凹面缺陷",
+      "type": "包含"
+    },
+    {
+      "source": "制孔表面",
+      "target": "毛刺",
+      "type": "包含"
+    },
+    {
+      "source": "制孔表面",
+      "target": "孔壁",
+      "type": "包含"
+    },
+    {
+      "source": "孔壁",
+      "target": "零件表面",
+      "type": "交接"
+    },
+    {
+      "source": "孔壁",
+      "target": "缺棱",
+      "type": "包含"
+    },
+    {
+      "source": "孔壁",
+      "target": "塌角",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 831,
+      "source_row_id": "831",
+      "clause_index": 2,
+      "source_text": "制孔表面不应有明显的凹面缺陷，大于0.3mm的毛刺应清除。制孔后孔壁与零件表面的边界交接处，不应有大于0.5mm的缺棱或塌角"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.688083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

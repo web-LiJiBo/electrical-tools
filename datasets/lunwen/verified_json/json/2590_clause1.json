@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "绝缘子串",
+      "type": "电力设备",
+      "desc": "用于电力系统中架空线路的绝缘装置"
+    },
+    {
+      "name": "独立双挂点",
+      "type": "技术方案",
+      "desc": "一种绝缘子串安装方式，具有两个独立挂点"
+    },
+    {
+      "name": "双联'I'型串",
+      "type": "技术方案",
+      "desc": "一种绝缘子串安装方式，呈双联'I'型结构"
+    },
+    {
+      "name": "双‘V’型串",
+      "type": "技术方案",
+      "desc": "一种绝缘子串安装方式，呈双‘V’型结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "跨越档内绝缘子串宜采用独立双挂点、双联'I'型串或双‘V’型串",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "选择绝缘子串安装方式",
+      "condition": "在跨越档内进行绝缘子串安装时",
+      "constraint": "应优先考虑独立双挂点、双联'I'型串或双‘V’型串",
+      "related_entities": [
+        "绝缘子串",
+        "独立双挂点",
+        "双联'I'型串",
+        "双‘V’型串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘子串",
+      "target": "独立双挂点",
+      "type": "采用"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "双联'I'型串",
+      "type": "采用"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "双‘V’型串",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2590,
+      "source_row_id": "2590",
+      "clause_index": 1,
+      "source_text": "跨越档内绝缘子串宜采用独立双挂点、双联“I”型串或双“V”型串。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.751315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

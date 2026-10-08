@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "悬垂线夹",
+      "type": "电力金具",
+      "desc": "用于固定导线的金具"
+    },
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "用于支撑和固定导线的绝缘部件"
+    },
+    {
+      "name": "铁塔",
+      "type": "电力设施",
+      "desc": "架设输电线路的高耸钢结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "悬垂线夹安装后，绝缘子应垂直地平面，其顺线路方向与垂直位置的偏移值一般不应超过200mm（高山大岭300mm）",
+      "type": "强制",
+      "subject": "悬垂线夹安装人员",
+      "action": "安装悬垂线夹",
+      "condition": "悬垂线夹安装后",
+      "constraint": "绝缘子顺线路方向与垂直位置的偏移值≤200mm（高山大岭≤300mm）",
+      "related_entities": [
+        "悬垂线夹",
+        "绝缘子"
+      ]
+    },
+    {
+      "content": "连续上（下）山坡处铁塔上的悬垂线夹的安装位置应符合设计规定",
+      "type": "强制",
+      "subject": "悬垂线夹安装人员",
+      "action": "安装悬垂线夹",
+      "condition": "连续上（下）山坡处铁塔上",
+      "constraint": "悬垂线夹安装位置符合设计规定",
+      "related_entities": [
+        "悬垂线夹",
+        "铁塔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "悬垂线夹",
+      "target": "绝缘子",
+      "type": "支撑固定"
+    },
+    {
+      "source": "悬垂线夹",
+      "target": "铁塔",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2573,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "363194785c035d4b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2573_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

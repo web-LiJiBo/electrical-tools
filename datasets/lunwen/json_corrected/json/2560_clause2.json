@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "name": "绕组电阻",
+      "type": "电气参数",
+      "desc": "变压器或电机绕组的直流电阻"
+    },
+    {
+      "name": "设计额定值",
+      "type": "技术参数",
+      "desc": "产品设计时确定的额定值"
+    },
+    {
+      "name": "测量值",
+      "type": "检测结果",
+      "desc": "实际测量得到的数值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绕组电阻测量值与设计额定值比较，变化应不大于±2%",
+      "type": "强制",
+      "subject": "绕组电阻测量值",
+      "action": "与设计额定值比较",
+      "condition": "在交接试验或预防性试验中",
+      "constraint": "变化不大于±2%",
+      "related_entities": [
+        "绕组电阻",
+        "设计额定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绕组电阻",
+      "target": "设计额定值",
+      "type": "参照"
+    },
+    {
+      "source": "测量值",
+      "target": "绕组电阻",
+      "type": "反映"
+    },
+    {
+      "source": "测量值",
+      "target": "设计额定值",
+      "type": "对比"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2560,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "297d5bef1418f612",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2560_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

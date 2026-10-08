@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "单阀",
+      "type": "电力设备",
+      "desc": "换流站中用于控制直流电流的电力电子器件"
+    },
+    {
+      "name": "冗余晶闸管",
+      "type": "电力元件",
+      "desc": "单阀中用于冗余保护的晶闸管"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力元件",
+      "desc": "单阀中用于控制直流电流的电力电子器件"
+    },
+    {
+      "name": "12个月运行周期",
+      "type": "时间周期",
+      "desc": "一个完整的年度运行周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个单阀中必须增加一定数量的冗余晶闸管。",
+      "type": "强制",
+      "subject": "单阀",
+      "action": "增加冗余晶闸管",
+      "condition": "无特定条件",
+      "constraint": "无特定约束",
+      "related_entities": [
+        "单阀",
+        "冗余晶闸管"
+      ]
+    },
+    {
+      "content": "各单阀中的冗余晶闸管数，应不小于12个月运行周期内损坏的晶闸管数的期望值的2.5倍，也不应少于2至3个晶闸管。",
+      "type": "强制",
+      "subject": "单阀",
+      "action": "配置冗余晶闸管数量",
+      "condition": "单阀运行12个月",
+      "constraint": "冗余晶闸管数≥12个月运行周期内损坏的晶闸管数的期望值×2.5且≥2至3个",
+      "related_entities": [
+        "单阀",
+        "冗余晶闸管",
+        "晶闸管",
+        "12个月运行周期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "单阀",
+      "target": "冗余晶闸管",
+      "type": "包含"
+    },
+    {
+      "source": "单阀",
+      "target": "晶闸管",
+      "type": "包含"
+    },
+    {
+      "source": "冗余晶闸管",
+      "target": "晶闸管",
+      "type": "冗余保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1610,
+      "source_row_id": "1610",
+      "clause_index": 2,
+      "source_text": "每个单阀中必须增加一定数量的冗余晶闸管。各单阀中的冗余晶闸管数，应不小于12个月运行周期内损坏的晶闸管数的期望值的2.5倍，也不应少于2至3个晶闸管"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.568164+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

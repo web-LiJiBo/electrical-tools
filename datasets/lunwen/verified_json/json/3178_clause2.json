@@ -1,0 +1,38 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "2000、5000、10000次。",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3169,
+      "source_row_id": "3178",
+      "clause_index": 2,
+      "source_text": "2000、5000、10000次。"
+    },
+    "audit": {
+      "status": "corrected_to_source_faithful_rule",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_unrelated_to_excel_source",
+        "entity_grounding_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.468313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

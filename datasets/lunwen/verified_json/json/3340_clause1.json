@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "焊缝质量",
+      "type": "焊缝质量",
+      "desc": "焊接完成后对焊缝进行的质量检测结果"
+    },
+    {
+      "name": "承压设备无损检测",
+      "type": "行业标准",
+      "desc": "现行行业标准《承压设备无损检测》JB/T4730"
+    },
+    {
+      "name": "三级",
+      "type": "焊缝质量等级",
+      "desc": "焊缝质量等级中的最低级别"
+    }
+  ],
+  "rules": [
+    {
+      "content": "抽样或局部射线检测的焊缝质量不应低于现行行业标准《承压设备无损检测》JB/T4730规定的三级",
+      "type": "强制",
+      "subject": "焊缝质量",
+      "action": "检测",
+      "condition": "抽样或局部射线检测",
+      "constraint": "不低于三级",
+      "related_entities": [
+        "承压设备无损检测",
+        "焊缝质量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "焊缝质量",
+      "target": "承压设备无损检测",
+      "type": "依据"
+    },
+    {
+      "source": "焊缝质量",
+      "target": "三级",
+      "type": "等级划分"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3331,
+      "source_row_id": "3340",
+      "clause_index": 1,
+      "source_text": "抽样或局部射线检测的焊缝质量不应低于现行行业标准《承压设备无损检测》JB/T4730规定的三级。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.665366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

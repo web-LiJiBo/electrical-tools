@@ -1,0 +1,63 @@
+{
+  "entities": [
+    {
+      "name": "悬垂杆塔",
+      "type": "电力设施",
+      "desc": "用于架设输电线路的杆塔"
+    },
+    {
+      "name": "结构倾斜",
+      "type": "技术参数",
+      "desc": "杆塔结构倾斜度"
+    },
+    {
+      "name": "高塔",
+      "type": "电力设施",
+      "desc": "高度较高的杆塔"
+    },
+    {
+      "name": "套接式钢管电杆",
+      "type": "电力设施",
+      "desc": "采用套接方式连接的钢管电杆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "悬垂杆塔结构倾斜3‰，高塔1.5‰。",
+      "type": "强制",
+      "subject": "设计单位",
+      "action": "设计杆塔结构",
+      "condition": "新建或改造输电线路工程",
+      "constraint": "悬垂杆塔结构倾斜≤3‰，高塔结构倾斜≤1.5‰",
+      "related_entities": [
+        "悬垂杆塔",
+        "高塔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "悬垂杆塔",
+      "target": "结构倾斜",
+      "type": "包含"
+    },
+    {
+      "source": "高塔",
+      "target": "结构倾斜",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 702,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "117d6e841db8c1c6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\702_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

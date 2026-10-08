@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "110(66)kV及以上变压器",
+      "type": "电力设备",
+      "desc": "110kV或66kV及以上的电力变压器"
+    },
+    {
+      "name": "现场局部放电试验",
+      "type": "试验项目",
+      "desc": "对电力变压器进行的局部放电检测"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110（66）kV及以上变压器在新安装时应进行现场局部放电试验",
+      "type": "强制",
+      "subject": "110(66)kV及以上变压器",
+      "action": "新安装时进行现场局部放电试验",
+      "condition": "新安装",
+      "constraint": "无",
+      "related_entities": [
+        "110(66)kV及以上变压器",
+        "现场局部放电试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110(66)kV及以上变压器",
+      "target": "现场局部放电试验",
+      "type": "应进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 911,
+      "source_row_id": "911",
+      "clause_index": 2,
+      "source_text": "110（66）kV及以上变压器在新安装时应进行现场局部放电试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.774081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

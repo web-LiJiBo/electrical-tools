@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "直流控制保护系统",
+      "type": "电力系统设备",
+      "desc": "直流输电系统的控制保护装置"
+    },
+    {
+      "name": "合并单元",
+      "type": "电力系统设备",
+      "desc": "实现模拟量采集与数字信号转换的装置"
+    },
+    {
+      "name": "电子式测量设备",
+      "type": "电力系统设备",
+      "desc": "采用电子技术进行数据采集与处理的设备"
+    },
+    {
+      "name": "IEC60044-8总线",
+      "type": "通信协议",
+      "desc": "一种用于电力系统数字化采样的通信协议"
+    },
+    {
+      "name": "TDM总线",
+      "type": "通信协议",
+      "desc": "时分复用总线，用于同步传输数据"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流控制保护系统与合并单元的接口方式应采用光纤方式",
+      "type": "强制",
+      "subject": "直流控制保护系统",
+      "action": "与合并单元接口",
+      "condition": "直流控制保护系统与合并单元之间数据传输",
+      "constraint": "光纤方式",
+      "related_entities": [
+        "直流控制保护系统",
+        "合并单元"
+      ]
+    },
+    {
+      "content": "直流控制保护系统与合并单元的通信协议应采用IEC60044-8总线或TDM总线",
+      "type": "强制",
+      "subject": "直流控制保护系统",
+      "action": "与合并单元通信",
+      "condition": "直流控制保护系统与合并单元之间数据传输",
+      "constraint": "IEC60044-8总线或TDM总线",
+      "related_entities": [
+        "直流控制保护系统",
+        "合并单元"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流控制保护系统",
+      "target": "合并单元",
+      "type": "接口"
+    },
+    {
+      "source": "直流控制保护系统",
+      "target": "电子式测量设备",
+      "type": "间接接口"
+    },
+    {
+      "source": "合并单元",
+      "target": "电子式测量设备",
+      "type": "直接接口"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3046,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c4523e718c51ec90",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3046_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

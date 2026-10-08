@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "冷却设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于降低设备温度的装置"
+    },
+    {
+      "name": "主循环过滤器",
+      "type": "电力设备部件",
+      "desc": "冷却系统中的过滤装置，用于过滤冷却介质中的杂质"
+    },
+    {
+      "name": "网孔径",
+      "type": "物理参数",
+      "desc": "过滤器网孔的尺寸大小"
+    }
+  ],
+  "rules": [
+    {
+      "content": "冷却设备应设置网孔径不大于200µm的主循环过滤器",
+      "type": "强制",
+      "subject": "冷却设备",
+      "action": "设置主循环过滤器",
+      "condition": "冷却设备运行过程中",
+      "constraint": "主循环过滤器网孔径≤200µm",
+      "related_entities": [
+        "冷却设备",
+        "主循环过滤器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "冷却设备",
+      "target": "主循环过滤器",
+      "type": "包含"
+    },
+    {
+      "source": "主循环过滤器",
+      "target": "冷却设备",
+      "type": "被包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 643,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "db79c644ad67815c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\643_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

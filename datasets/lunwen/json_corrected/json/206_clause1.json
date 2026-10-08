@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "电力系统中用于直流输电的换流装置"
+    },
+    {
+      "name": "水冷却",
+      "type": "冷却方式",
+      "desc": "利用水作为冷却介质进行散热的方式"
+    },
+    {
+      "name": "热量",
+      "type": "物理量",
+      "desc": "物体内部能量的一种表现形式，通常指热能"
+    },
+    {
+      "name": "损耗",
+      "type": "电气参数",
+      "desc": "电力系统中元件或设备在运行过程中消耗的能量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水冷却带走的热量应取换流阀在各种工况时损耗的较大值",
+      "type": "强制",
+      "subject": "换流阀冷却设计",
+      "action": "确定冷却带走的热量",
+      "condition": "换流阀在各种工况下运行",
+      "constraint": "取损耗最大值",
+      "related_entities": [
+        "换流阀",
+        "水冷却",
+        "热量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流阀",
+      "target": "水冷却",
+      "type": "采用"
+    },
+    {
+      "source": "换流阀",
+      "target": "热量",
+      "type": "产生"
+    },
+    {
+      "source": "热量",
+      "target": "损耗",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 206,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8ebb3d5da0b9577f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\206_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

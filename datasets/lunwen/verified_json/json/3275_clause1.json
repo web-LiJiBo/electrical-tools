@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "局部放电测量",
+      "type": "试验方法",
+      "desc": "检测气体绝缘金属封闭开关设备内部缺陷的方法"
+    },
+    {
+      "name": "气体绝缘金属封闭开关设备",
+      "type": "设备",
+      "desc": "一种高压电气设备，内部充有SF6气体"
+    },
+    {
+      "name": "安装后耐压试验",
+      "type": "试验方法",
+      "desc": "对安装后的电气设备进行耐压测试"
+    },
+    {
+      "name": "环境干扰",
+      "type": "干扰因素",
+      "desc": "影响局部放电测量结果的因素"
+    },
+    {
+      "name": "试验结果判断",
+      "type": "操作步骤",
+      "desc": "根据局部放电测量数据判断设备状态的过程"
+    },
+    {
+      "name": "现场局部放电试验",
+      "type": "试验方法",
+      "desc": "在实际运行环境中进行的局部放电测量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "局部放电测量是安装后耐压试验很好的补充试验",
+      "type": "强制",
+      "subject": "气体绝缘金属封闭开关设备",
+      "action": "进行局部放电测量",
+      "condition": "安装后耐压试验之后",
+      "constraint": "无",
+      "related_entities": [
+        "局部放电测量",
+        "气体绝缘金属封闭开关设备",
+        "安装后耐压试验"
+      ]
+    },
+    {
+      "content": "试验结果的判断需要一定的经验",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "判断试验结果",
+      "condition": "进行局部放电测量",
+      "constraint": "具备一定经验",
+      "related_entities": [
+        "试验结果判断",
+        "局部放电测量"
+      ]
+    },
+    {
+      "content": "建议凡有条件和可能的地方，应进行现场局部放电试验",
+      "type": "建议",
+      "subject": "电力企业",
+      "action": "进行局部放电测量",
+      "condition": "设备运行中或定期维护时",
+      "constraint": "具备现场试验条件",
+      "related_entities": [
+        "现场局部放电试验",
+        "气体绝缘金属封闭开关设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "局部放电测量",
+      "target": "气体绝缘金属封闭开关设备",
+      "type": "针对"
+    },
+    {
+      "source": "局部放电测量",
+      "target": "安装后耐压试验",
+      "type": "补充"
+    },
+    {
+      "source": "局部放电测量",
+      "target": "试验结果判断",
+      "type": "依据"
+    },
+    {
+      "source": "试验结果判断",
+      "target": "局部放电测量",
+      "type": "结果"
+    },
+    {
+      "source": "现场局部放电试验",
+      "target": "气体绝缘金属封闭开关设备",
+      "type": "针对"
+    },
+    {
+      "source": "现场局部放电试验",
+      "target": "试验结果判断",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3266,
+      "source_row_id": "3275",
+      "clause_index": 1,
+      "source_text": "局部放电测量有助于检查气体绝缘金属封闭开关设备内部多种缺陷，因而它是安装后耐压试验很好的补充试验，由于环境干扰，此项工作比较困难，试验结果的判断需要一定的经验，建议凡有条件和可能的地方，应进行现场局部放电试验。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.9147,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.589364+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

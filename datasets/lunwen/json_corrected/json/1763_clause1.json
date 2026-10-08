@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "伸缩节",
+      "type": "电力设备部件",
+      "desc": "GIS中用于补偿外壳位移的弹性元件"
+    },
+    {
+      "name": "外壳",
+      "type": "电力设备部件",
+      "desc": "GIS的金属外壳"
+    },
+    {
+      "name": "内部导体",
+      "type": "电力设备部件",
+      "desc": "GIS内部的导电元件"
+    },
+    {
+      "name": "电接触能力",
+      "type": "技术参数",
+      "desc": "保证电气连接可靠性的能力"
+    },
+    {
+      "name": "支架",
+      "type": "电力设备部件",
+      "desc": "GIS安装用的支撑结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS设置伸缩节时，应考虑外壳位移时内部导体相对位移不应导致电接触能力的下降",
+      "type": "强制",
+      "subject": "GIS设计者/制造者",
+      "action": "设计/制造GIS",
+      "condition": "GIS安装于变电站等场所",
+      "constraint": "伸缩节设计应确保外壳位移时内部导体相对位移不会影响电接触能力",
+      "related_entities": [
+        "GIS",
+        "伸缩节",
+        "外壳",
+        "内部导体",
+        "电接触能力"
+      ]
+    },
+    {
+      "content": "GIS的支架应为可调式，以适应土建允许的基础的误差",
+      "type": "强制",
+      "subject": "GIS设计者/制造者",
+      "action": "设计/制造GIS",
+      "condition": "GIS安装于变电站等场所",
+      "constraint": "GIS支架应具备调节功能，以适应土建基础的误差",
+      "related_entities": [
+        "GIS",
+        "支架"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "伸缩节",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "外壳",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "内部导体",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "电接触能力",
+      "type": "技术参数"
+    },
+    {
+      "source": "GIS",
+      "target": "支架",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1763,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "02b3ab7ba1205bce",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1763_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

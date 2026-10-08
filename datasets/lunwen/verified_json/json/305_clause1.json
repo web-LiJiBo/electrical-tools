@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "电线",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "加热元件",
+      "type": "电力设备",
+      "desc": "产生热量的电气设备"
+    },
+    {
+      "name": "接线",
+      "type": "操作行为",
+      "desc": "将电缆或电线连接到其他设备或元件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接线应考虑与加热元件的距离",
+      "type": "强制",
+      "subject": "电缆/电线",
+      "action": "接线",
+      "condition": "在存在加热元件的环境中",
+      "constraint": "与加热元件保持适当距离",
+      "related_entities": [
+        "电缆",
+        "电线",
+        "加热元件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "接线",
+      "type": "执行"
+    },
+    {
+      "source": "电线",
+      "target": "接线",
+      "type": "执行"
+    },
+    {
+      "source": "加热元件",
+      "target": "接线",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 305,
+      "source_row_id": "305",
+      "clause_index": 1,
+      "source_text": "电缆和电线中，“接线应考虑与加热元件的距离”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.080606+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

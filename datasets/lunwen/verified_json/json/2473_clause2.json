@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "电缆接头安装",
+      "type": "施工工序",
+      "desc": "电力工程中电缆接头的安装过程"
+    },
+    {
+      "name": "施工现场",
+      "type": "施工地点",
+      "desc": "进行电缆接头安装工作的具体场所"
+    },
+    {
+      "name": "消防器材",
+      "type": "消防设备",
+      "desc": "用于灭火或预防火灾的工具和材料"
+    },
+    {
+      "name": "动火作业",
+      "type": "施工活动",
+      "desc": "需要使用明火的施工操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆接头安装消防措施应满足施工所处环境的消防要求",
+      "type": "强制",
+      "subject": "电缆接头安装",
+      "action": "采取消防措施",
+      "condition": "电缆接头安装过程中",
+      "constraint": "施工所处环境的消防要求",
+      "related_entities": [
+        "电缆接头安装",
+        "施工现场"
+      ]
+    },
+    {
+      "content": "施工现场应配备足够的消防器材",
+      "type": "强制",
+      "subject": "施工现场",
+      "action": "配备消防器材",
+      "condition": "电缆接头安装过程中",
+      "constraint": "数量和种类应满足施工所处环境的消防要求",
+      "related_entities": [
+        "施工现场",
+        "消防器材"
+      ]
+    },
+    {
+      "content": "施工现场动火应严格按照有关动火作业消防管理规定执行",
+      "type": "强制",
+      "subject": "施工现场",
+      "action": "动火作业",
+      "condition": "电缆接头安装过程中",
+      "constraint": "动火作业消防管理规定",
+      "related_entities": [
+        "施工现场",
+        "动火作业"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆接头安装",
+      "target": "施工现场",
+      "type": "在...进行"
+    },
+    {
+      "source": "施工现场",
+      "target": "消防器材",
+      "type": "配备"
+    },
+    {
+      "source": "施工现场",
+      "target": "动火作业",
+      "type": "进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2473,
+      "source_row_id": "2473",
+      "clause_index": 2,
+      "source_text": "电缆接头安装消防措施应满足施工所处环境的消防要求，施工现场应配备足够的消防器材，施工现场动火应严格按照有关动火作业消防管理规定执行。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.611316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

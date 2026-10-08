@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "接触电位差人体两脚站在地面离设备水平距离为1.0m处与人手接触设备外壳、构架或墙壁离地面垂直距离1.8m处的两点间的电位差。",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2963,
+      "source_row_id": "2972",
+      "clause_index": 1,
+      "source_text": "接触电位差人体两脚站在地面离设备水平距离为1.0m处与人手接触设备外壳、构架或墙壁离地面垂直距离1.8m处的两点间的电位差。"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:02.218315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

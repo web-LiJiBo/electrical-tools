@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "潜油泵",
+      "type": "电力设备部件",
+      "desc": "变压器内部的一种冷却装置，通过循环油来散热"
+    },
+    {
+      "name": "轴承",
+      "type": "机械部件",
+      "desc": "支撑旋转轴并减少摩擦的机械部件"
+    },
+    {
+      "name": "油泵",
+      "type": "电力设备部件",
+      "desc": "变压器内部的一种冷却装置，通过循环油来散热"
+    },
+    {
+      "name": "转速",
+      "type": "技术参数",
+      "desc": "油泵每分钟旋转的次数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "潜油泵应采用E级或D级轴承",
+      "type": "强制",
+      "subject": "潜油泵",
+      "action": "采用轴承",
+      "condition": "应用于变压器冷却装置",
+      "constraint": "E级或D级",
+      "related_entities": [
+        "变压器",
+        "潜油泵",
+        "轴承"
+      ]
+    },
+    {
+      "content": "油泵应选用较低转速油泵（小于1500rpm）",
+      "type": "强制",
+      "subject": "油泵",
+      "action": "选用转速",
+      "condition": "应用于变压器冷却装置",
+      "constraint": "小于1500rpm",
+      "related_entities": [
+        "变压器",
+        "油泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "潜油泵",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "油泵",
+      "type": "包含"
+    },
+    {
+      "source": "潜油泵",
+      "target": "轴承",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 801,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bb96346b14b90c47",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\801_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "硅橡17胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的硅橡胶制品"
+    },
+    {
+      "name": "氟橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的氟橡胶制品"
+    },
+    {
+      "name": "氟硅橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的氟硅橡胶制品"
+    },
+    {
+      "name": "氢化丁脂橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的氢化丁脂橡胶制品"
+    },
+    {
+      "name": "丙烯酸酯橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的丙烯酸酯橡胶制品"
+    },
+    {
+      "name": "丁腈橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的丁腈橡胶制品"
+    }
+  ],
+  "rules": [
+    {
+      "content": "硅橡17胶、氟橡胶、氟硅橡胶制品贮存期为5年",
+      "type": "强制",
+      "subject": "硅橡17胶、氟橡胶、氟硅橡胶制品",
+      "action": "贮存",
+      "condition": "自生产日计",
+      "constraint": "贮存期为5年",
+      "related_entities": [
+        "硅橡17胶",
+        "氟橡胶",
+        "氟硅橡胶"
+      ]
+    },
+    {
+      "content": "氢化丁脂橡胶、丙烯酸酯橡胶贮存期为3年",
+      "type": "强制",
+      "subject": "氢化丁脂橡胶、丙烯酸酯橡胶",
+      "action": "贮存",
+      "condition": "自生产日计",
+      "constraint": "贮存期为3年",
+      "related_entities": [
+        "氢化丁脂橡胶",
+        "丙烯酸酯橡胶"
+      ]
+    },
+    {
+      "content": "丁腈橡胶制品贮存期为1年",
+      "type": "强制",
+      "subject": "丁腈橡胶",
+      "action": "贮存",
+      "condition": "自生产日计",
+      "constraint": "贮存期为1年",
+      "related_entities": [
+        "丁腈橡胶"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "硅橡17胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "氟橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "氟硅橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "氢化丁脂橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "丙烯酸酯橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "丁腈橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2736,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b1c3964d73208997",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2736_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

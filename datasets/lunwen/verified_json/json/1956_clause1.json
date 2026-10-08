@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "柱上开关",
+      "type": "电力设备",
+      "desc": "安装在电杆上的开关设备"
+    },
+    {
+      "name": "托架",
+      "type": "安装部件",
+      "desc": "支撑柱上开关的横梁或支架"
+    },
+    {
+      "name": "引线",
+      "type": "电气连接",
+      "desc": "连接柱上开关与其它设备的导线"
+    },
+    {
+      "name": "相间距离",
+      "type": "电气参数",
+      "desc": "不同相之间导线间的最小安全距离"
+    },
+    {
+      "name": "对地距离",
+      "type": "电气参数",
+      "desc": "导线与地面之间的最小安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上开关水平倾斜不大于托架长度的1/100",
+      "type": "强制",
+      "subject": "柱上开关",
+      "action": "安装",
+      "condition": "柱上开关安装时",
+      "constraint": "水平倾斜≤托架长度的1/100",
+      "related_entities": [
+        "柱上开关",
+        "托架"
+      ]
+    },
+    {
+      "content": "引线连接紧密，引线相间距离不小于300mm，对地距离不小于200mm",
+      "type": "强制",
+      "subject": "引线",
+      "action": "连接",
+      "condition": "柱上开关安装时",
+      "constraint": "相间距离≥300mm，对地距离≥200mm",
+      "related_entities": [
+        "引线",
+        "柱上开关"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上开关",
+      "target": "托架",
+      "type": "安装于"
+    },
+    {
+      "source": "引线",
+      "target": "柱上开关",
+      "type": "连接至"
+    },
+    {
+      "source": "相间距离",
+      "target": "引线",
+      "type": "参数要求"
+    },
+    {
+      "source": "对地距离",
+      "target": "引线",
+      "type": "参数要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1956,
+      "source_row_id": "1956",
+      "clause_index": 1,
+      "source_text": "柱上开关安装施工要点：（1）柱上开关水平倾斜不大于托架长度的1/100。（2）引线连接紧密，引线相间距离不小于300mm，对地距离不小于200mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.958966+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

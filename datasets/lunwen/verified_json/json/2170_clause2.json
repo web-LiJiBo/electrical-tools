@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种电力系统中用于限制短路电流的设备"
+    },
+    {
+      "name": "箱壳振动",
+      "type": "电气参数",
+      "desc": "电抗器箱壳在运行时产生的振动"
+    },
+    {
+      "name": "双峰值",
+      "type": "电气参数",
+      "desc": "箱壳振动振幅的最大值和次大值"
+    },
+    {
+      "name": "500kV",
+      "type": "电压等级",
+      "desc": "高压输电线路的电压等级"
+    },
+    {
+      "name": "额定工况",
+      "type": "运行状态",
+      "desc": "设备正常运行的工作状态"
+    },
+    {
+      "name": "100μm",
+      "type": "振动振幅",
+      "desc": "箱壳振动振幅的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电压等级为500kV的电抗器，在额定工况下测得的箱壳振动振幅双峰值不应大于100μm",
+      "type": "强制",
+      "subject": "电抗器",
+      "action": "运行维护",
+      "condition": "额定工况",
+      "constraint": "箱壳振动振幅双峰值≤100μm",
+      "related_entities": [
+        "电抗器",
+        "箱壳振动",
+        "双峰值",
+        "500kV",
+        "额定工况",
+        "100μm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电抗器",
+      "target": "箱壳振动",
+      "type": "产生"
+    },
+    {
+      "source": "箱壳振动",
+      "target": "双峰值",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "额定工况",
+      "type": "运行状态"
+    },
+    {
+      "source": "电抗器",
+      "target": "500kV",
+      "type": "电压等级"
+    },
+    {
+      "source": "箱壳振动",
+      "target": "100μm",
+      "type": "振幅限值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2170,
+      "source_row_id": "2170",
+      "clause_index": 2,
+      "source_text": "电压等级为500kV的电抗器，在额定工况下测得的箱壳振动振幅双峰值不应大于100μm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.227545+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

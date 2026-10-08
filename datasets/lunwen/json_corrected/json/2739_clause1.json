@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "name": "设备柜体",
+      "type": "电力设备",
+      "desc": "电力系统中用于安装电气设备的封闭式装置"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "衡量设备防尘防水能力的技术指标"
+    },
+    {
+      "name": "IP54",
+      "type": "防护等级",
+      "desc": "户外设备防护等级，防尘和防水等级较高"
+    },
+    {
+      "name": "IP31",
+      "type": "防护等级",
+      "desc": "户内设备防护等级，防尘和防水等级较低"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有设备柜体的防护等级应大于IP54(户外)、IP31(户内)",
+      "type": "强制",
+      "subject": "设备柜体",
+      "action": "设置防护等级",
+      "condition": "设备柜体安装于户外或户内环境",
+      "constraint": "防护等级大于IP54(户外)、IP31(户内)",
+      "related_entities": [
+        "设备柜体",
+        "防护等级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设备柜体",
+      "target": "防护等级",
+      "type": "具有"
+    },
+    {
+      "source": "防护等级",
+      "target": "设备柜体",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2739,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "efb0e007380ddaf6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2739_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

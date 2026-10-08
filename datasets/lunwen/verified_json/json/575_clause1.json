@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "橡塑电缆",
+      "type": "电力设备",
+      "desc": "一种绝缘材料为橡皮或塑料的电缆"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备进行交流电压耐受能力测试的方法"
+    },
+    {
+      "name": "20～300Hz交流耐压试验",
+      "type": "试验方法",
+      "desc": "频率范围在20～300Hz的交流耐压试验方法"
+    },
+    {
+      "name": "交流耐压试验电压",
+      "type": "试验参数",
+      "desc": "交流耐压试验中施加的交流电压值"
+    },
+    {
+      "name": "交流耐压试验时间",
+      "type": "试验参数",
+      "desc": "交流耐压试验持续的时间长度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "橡塑电缆优先采用20～300Hz交流耐压试验",
+      "type": "强制",
+      "subject": "橡塑电缆",
+      "action": "进行交流耐压试验",
+      "condition": "橡塑电缆的交流耐压试验",
+      "constraint": "优先采用20～300Hz交流耐压试验",
+      "related_entities": [
+        "橡塑电缆",
+        "20～300Hz交流耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "橡塑电缆",
+      "target": "20～300Hz交流耐压试验",
+      "type": "适用试验"
+    },
+    {
+      "source": "20～300Hz交流耐压试验",
+      "target": "交流耐压试验电压",
+      "type": "包含参数"
+    },
+    {
+      "source": "20～300Hz交流耐压试验",
+      "target": "交流耐压试验时间",
+      "type": "包含参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 575,
+      "source_row_id": "575",
+      "clause_index": 1,
+      "source_text": "交流耐压试验，应符合下列规定：1）橡塑电缆优先采用20～300Hz交流耐压试验。20～300Hz交流耐压试验电压和时间"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9875,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.378483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

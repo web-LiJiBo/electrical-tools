@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "排管",
+      "type": "电力设施",
+      "desc": "电力电缆敷设用的管道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "排管内径",
+      "type": "技术参数",
+      "desc": "排管内部直径尺寸"
+    },
+    {
+      "name": "电缆外径",
+      "type": "技术参数",
+      "desc": "电缆外部直径尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "排管通道所选用排管内径不应小于1.5倍电缆外径，并不小于Φ150mm。",
+      "type": "强制",
+      "subject": "排管",
+      "action": "选用",
+      "condition": "电力电缆敷设时",
+      "constraint": "排管内径≥1.5倍电缆外径且≥Φ150mm",
+      "related_entities": [
+        "排管",
+        "电缆"
+      ]
+    },
+    {
+      "content": "同一段排管通道的排管内径选择不宜多余2种。",
+      "type": "强制",
+      "subject": "排管",
+      "action": "选择内径",
+      "condition": "电力电缆敷设时",
+      "constraint": "排管内径种类≤2种",
+      "related_entities": [
+        "排管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "排管",
+      "target": "电缆",
+      "type": "敷设"
+    },
+    {
+      "source": "排管内径",
+      "target": "电缆外径",
+      "type": "匹配"
+    },
+    {
+      "source": "排管",
+      "target": "排管内径",
+      "type": "属性"
+    },
+    {
+      "source": "排管",
+      "target": "排管内径",
+      "type": "选择"
+    }
+  ],
+  "metadata": {
+    "pair_id": 478,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2e92acd0c295a711",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\478_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

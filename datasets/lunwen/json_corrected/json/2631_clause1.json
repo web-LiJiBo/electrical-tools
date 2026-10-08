@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "油中溶解气体分析",
+      "type": "试验项目",
+      "desc": "对变压器等设备的油中溶解气体进行分析"
+    },
+    {
+      "name": "乙炔",
+      "type": "气体成分",
+      "desc": "油纸绝缘设备运行过程中产生的气体之一"
+    },
+    {
+      "name": "110(66)kV及以上",
+      "type": "电压等级",
+      "desc": "高压输电线路或主变的额定电压范围"
+    },
+    {
+      "name": "油纸绝缘",
+      "type": "绝缘介质",
+      "desc": "变压器等设备常用的绝缘材料"
+    },
+    {
+      "name": "≤2µL/L",
+      "type": "浓度限值",
+      "desc": "乙炔在油中溶解气体中的最大允许浓度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110（66）kV及以上乙炔≤2µL/L",
+      "type": "强制",
+      "subject": "油纸绝缘设备",
+      "action": "定期进行油中溶解气体分析",
+      "condition": "设备运行期间",
+      "constraint": "乙炔含量不超过2µL/L",
+      "related_entities": [
+        "油中溶解气体分析",
+        "乙炔",
+        "110(66)kV及以上",
+        "油纸绝缘"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油中溶解气体分析",
+      "target": "乙炔",
+      "type": "检测对象"
+    },
+    {
+      "source": "油中溶解气体分析",
+      "target": "110(66)kV及以上",
+      "type": "适用范围"
+    },
+    {
+      "source": "油中溶解气体分析",
+      "target": "油纸绝缘",
+      "type": "绝缘介质"
+    },
+    {
+      "source": "乙炔",
+      "target": "110(66)kV及以上",
+      "type": "浓度限值适用对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2631,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3856a09a75e2230a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2631_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

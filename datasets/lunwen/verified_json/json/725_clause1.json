@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "钢管塔构件",
+      "type": "电力设备",
+      "desc": "电力系统中用于支撑导线的钢管结构部件"
+    },
+    {
+      "name": "热浸镀锌法",
+      "type": "防腐方法",
+      "desc": "将金属工件浸入熔融的锌液中使其表面形成一层锌镀层的方法"
+    },
+    {
+      "name": "相关标准",
+      "type": "技术标准",
+      "desc": "规定了热浸镀锌工艺的技术要求和质量控制标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "钢管塔构件的防腐应采用热浸镀锌法",
+      "type": "强制",
+      "subject": "钢管塔构件",
+      "action": "防腐处理",
+      "condition": "在电力系统运行环境中",
+      "constraint": "采用热浸镀锌法",
+      "related_entities": [
+        "钢管塔构件",
+        "热浸镀锌法"
+      ]
+    },
+    {
+      "content": "热浸镀锌工艺应满足相关标准要求",
+      "type": "强制",
+      "subject": "热浸镀锌工艺",
+      "action": "实施",
+      "condition": "应用于钢管塔构件防腐处理",
+      "constraint": "遵循相关标准",
+      "related_entities": [
+        "热浸镀锌法",
+        "相关标准"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢管塔构件",
+      "target": "热浸镀锌法",
+      "type": "防腐处理方式"
+    },
+    {
+      "source": "热浸镀锌法",
+      "target": "相关标准",
+      "type": "遵循标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 725,
+      "source_row_id": "725",
+      "clause_index": 1,
+      "source_text": "钢管塔构件的防腐应采用热浸镀锌法，热浸镀锌工艺应满足相关标准要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.554083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

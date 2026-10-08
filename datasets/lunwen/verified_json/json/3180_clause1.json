@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电的电压等级"
+    },
+    {
+      "name": "绕组变形试验",
+      "type": "试验方法",
+      "desc": "检测变压器绕组是否发生变形的试验方法"
+    },
+    {
+      "name": "低电压短路阻抗法",
+      "type": "试验方法",
+      "desc": "一种检测变压器绕组变形的方法，通过施加低电压测量短路阻抗变化"
+    },
+    {
+      "name": "频率响应法",
+      "type": "试验方法",
+      "desc": "一种检测变压器绕组变形的方法，通过测量不同频率下的绕组特性变化"
+    },
+    {
+      "name": "35kV及以下电压等级变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压在35kV及以下的变压器"
+    },
+    {
+      "name": "110(66)kV及以上电压等级变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压在110(66)kV及以上的变压器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于35kV及以下电压等级变压器，宜采用低电压短路阻抗法",
+      "type": "强制",
+      "subject": "35kV及以下电压等级变压器",
+      "action": "进行绕组变形试验",
+      "condition": "在必要时",
+      "constraint": "宜采用低电压短路阻抗法",
+      "related_entities": [
+        "变压器",
+        "低电压短路阻抗法"
+      ]
+    },
+    {
+      "content": "对于110(66)kV及以上电压等级变压器，宜采用频率响应法测量绕组特征图谱",
+      "type": "强制",
+      "subject": "110(66)kV及以上电压等级变压器",
+      "action": "进行绕组变形试验",
+      "condition": "在必要时",
+      "constraint": "宜采用频率响应法测量绕组特征图谱",
+      "related_entities": [
+        "变压器",
+        "频率响应法"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "绕组变形试验",
+      "type": "包含"
+    },
+    {
+      "source": "35kV及以下电压等级变压器",
+      "target": "绕组变形试验",
+      "type": "包含"
+    },
+    {
+      "source": "110(66)kV及以上电压等级变压器",
+      "target": "绕组变形试验",
+      "type": "包含"
+    },
+    {
+      "source": "低电压短路阻抗法",
+      "target": "绕组变形试验",
+      "type": "适用方法"
+    },
+    {
+      "source": "频率响应法",
+      "target": "绕组变形试验",
+      "type": "适用方法"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3171,
+      "source_row_id": "3180",
+      "clause_index": 1,
+      "source_text": "变压器绕组变形试验，应符合下列规定：1对于35kV及以下电压等级变压器，宜采用低电压短路阻抗法；2对于110（66）kV及以上电压等级变压器，宜采用频率响应法测量绕组特征图谱。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.469314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

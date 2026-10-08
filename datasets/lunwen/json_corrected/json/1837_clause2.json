@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "绝缘",
+      "type": "电力设备",
+      "desc": "电力系统中用于隔离带电部分与非带电部分的绝缘材料"
+    },
+    {
+      "name": "标称厚度",
+      "type": "技术参数",
+      "desc": "绝缘材料设计时规定的厚度值"
+    },
+    {
+      "name": "最小测量厚度",
+      "type": "技术参数",
+      "desc": "实际测量得到的绝缘材料最薄处的厚度值"
+    },
+    {
+      "name": "偏心度",
+      "type": "技术参数",
+      "desc": "绝缘材料中心轴线与理想圆形或矩形截面中心轴线之间的偏差程度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "任一点最小测量厚度应不小于标称厚度的90%",
+      "type": "强制",
+      "subject": "绝缘",
+      "action": "测量",
+      "condition": "在绝缘材料的任意一点进行测量",
+      "constraint": "tmin≥0.90tn",
+      "related_entities": [
+        "绝缘",
+        "标称厚度",
+        "最小测量厚度"
+      ]
+    },
+    {
+      "content": "绝缘的偏心度不应大于10%",
+      "type": "强制",
+      "subject": "绝缘",
+      "action": "检测",
+      "condition": "在绝缘材料的整个截面上进行检测",
+      "constraint": "偏心度≤10%",
+      "related_entities": [
+        "绝缘",
+        "偏心度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最小测量厚度",
+      "target": "标称厚度",
+      "type": "基于"
+    },
+    {
+      "source": "偏心度",
+      "target": "绝缘",
+      "type": "反映"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1837,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4fcb415f30f6276d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1837_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

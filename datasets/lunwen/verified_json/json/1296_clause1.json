@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于接通或断开电路的电气装置"
+    },
+    {
+      "name": "控制设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制开关设备操作的电气装置"
+    },
+    {
+      "name": "额定短时耐受电流",
+      "type": "电气参数",
+      "desc": "开关设备在规定时间内能承受的最大短路电流值"
+    },
+    {
+      "name": "额定短路持续时间",
+      "type": "电气参数",
+      "desc": "开关设备在合闸状态下能承载额定短时耐受电流的时间间隔"
+    },
+    {
+      "name": "550kV-1100kV开关设备",
+      "type": "电力设备",
+      "desc": "额定电压为550kV至1100kV的开关设备"
+    },
+    {
+      "name": "126kV-363kV开关设备",
+      "type": "电力设备",
+      "desc": "额定电压为126kV至363kV的开关设备"
+    },
+    {
+      "name": "72.5kV及以下开关设备",
+      "type": "电力设备",
+      "desc": "额定电压为72.5kV及以下的开关设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "550kV-1100kV的开关设备和控制设备的额定短路持续时间为2s",
+      "type": "强制",
+      "subject": "550kV-1100kV开关设备和控制设备",
+      "action": "承载额定短时耐受电流",
+      "condition": "合闸状态",
+      "constraint": "2s",
+      "related_entities": [
+        "550kV-1100kV开关设备",
+        "控制设备",
+        "额定短时耐受电流"
+      ]
+    },
+    {
+      "content": "126kV-363kV的开关设备和控制设备的额定短路持续时间为3s",
+      "type": "强制",
+      "subject": "126kV-363kV开关设备和控制设备",
+      "action": "承载额定短时耐受电流",
+      "condition": "合闸状态",
+      "constraint": "3s",
+      "related_entities": [
+        "126kV-363kV开关设备",
+        "控制设备",
+        "额定短时耐受电流"
+      ]
+    },
+    {
+      "content": "72.5kV及以下的开关设备和控制设备的额定短路持续时间为4s",
+      "type": "强制",
+      "subject": "72.5kV及以下开关设备和控制设备",
+      "action": "承载额定短时耐受电流",
+      "condition": "合闸状态",
+      "constraint": "4s",
+      "related_entities": [
+        "72.5kV及以下开关设备",
+        "控制设备",
+        "额定短时耐受电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关设备",
+      "target": "控制设备",
+      "type": "控制"
+    },
+    {
+      "source": "控制设备",
+      "target": "开关设备",
+      "type": "控制"
+    },
+    {
+      "source": "额定短时耐受电流",
+      "target": "开关设备",
+      "type": "承载"
+    },
+    {
+      "source": "额定短时耐受电流",
+      "target": "控制设备",
+      "type": "承载"
+    },
+    {
+      "source": "550kV-1100kV开关设备",
+      "target": "额定短时耐受电流",
+      "type": "承载"
+    },
+    {
+      "source": "126kV-363kV开关设备",
+      "target": "额定短时耐受电流",
+      "type": "承载"
+    },
+    {
+      "source": "72.5kV及以下开关设备",
+      "target": "额定短时耐受电流",
+      "type": "承载"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1296,
+      "source_row_id": "1296",
+      "clause_index": 1,
+      "source_text": "“开关设备和控制设备在合闸状态下能够承载额定短时耐受电流的时间间隔：a)550kV-1100kV的开关设备和控制设备的额定短路持续时间为2s；b)126kV-363kV的开关设备和控制设备的额定短路持续时间为3s；c)72.5kV及以下的开关设备和控制设备的额定短路持续时间为4s。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9684,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.212550+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

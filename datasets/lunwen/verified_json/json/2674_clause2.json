@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "接地短路故障电流",
+      "type": "电气参数",
+      "desc": "接地短路故障时通过接地装置的电流"
+    },
+    {
+      "name": "接触电位差",
+      "type": "电气参数",
+      "desc": "在特定条件下测量得到的电位差值"
+    },
+    {
+      "name": "接地装置",
+      "type": "设备",
+      "desc": "用于将电气设备接地的装置"
+    },
+    {
+      "name": "设备外壳",
+      "type": "设备",
+      "desc": "电气设备的外部金属壳体"
+    },
+    {
+      "name": "设备架构",
+      "type": "设备",
+      "desc": "支撑电气设备的结构框架"
+    },
+    {
+      "name": "墙壁",
+      "type": "设备",
+      "desc": "建筑物的墙体部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接触电位差当接地短路故障电流流过接地装置时，在地面上距设备水平距离1.0m处与沿设备外壳、架构或墙壁离地面的垂直距离2.0m处两点间电位差。",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行接触电位差测试",
+      "condition": "接地短路故障电流流过接地装置时",
+      "constraint": "在地面上距设备水平距离1.0m处与沿设备外壳、架构或墙壁离地面的垂直距离2.0m处两点间电位差",
+      "related_entities": [
+        "接地短路故障电流",
+        "接触电位差",
+        "接地装置",
+        "设备外壳",
+        "设备架构",
+        "墙壁"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地短路故障电流",
+      "target": "接地装置",
+      "type": "流经"
+    },
+    {
+      "source": "接触电位差",
+      "target": "接地装置",
+      "type": "产生于"
+    },
+    {
+      "source": "接触电位差",
+      "target": "设备外壳",
+      "type": "测量于"
+    },
+    {
+      "source": "接触电位差",
+      "target": "设备架构",
+      "type": "测量于"
+    },
+    {
+      "source": "接触电位差",
+      "target": "墙壁",
+      "type": "测量于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2665,
+      "source_row_id": "2674",
+      "clause_index": 2,
+      "source_text": "接触电位差当接地短路故障电流流过接地装置时，在地面上距设备水平距离1.0m处与沿设备外壳、架构或墙壁离地面的垂直距离2.0m处两点间电位差。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9792,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.836315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

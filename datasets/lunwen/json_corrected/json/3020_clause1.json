@@ -1,0 +1,175 @@
+{
+  "entities": [
+    {
+      "name": "非循环油工作方式",
+      "type": "电力系统运行方式",
+      "desc": "一种油样采集与处理方式"
+    },
+    {
+      "name": "油样",
+      "type": "电力设备油样",
+      "desc": "用于电力设备状态监测的油样"
+    },
+    {
+      "name": "本体油样",
+      "type": "电力设备油样",
+      "desc": "电力设备内部油样"
+    },
+    {
+      "name": "被监测设备",
+      "type": "电力设备",
+      "desc": "需要进行状态监测的电力设备"
+    },
+    {
+      "name": "油样容器",
+      "type": "电力设备附件",
+      "desc": "用于收集油样的容器"
+    },
+    {
+      "name": "油量监测功能",
+      "type": "油样容器特性",
+      "desc": "油样容器具备的监测油量的功能"
+    },
+    {
+      "name": "告警",
+      "type": "安全措施",
+      "desc": "对满油状态进行的报警提示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采集油样应能代表本体油样状态",
+      "type": "强制",
+      "subject": "油样采集",
+      "action": "采集油样",
+      "condition": "油样采集",
+      "constraint": "油样应能代表本体油样状态",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样",
+        "本体油样"
+      ]
+    },
+    {
+      "content": "取样方式不影响被监测设备的安全运行",
+      "type": "强制",
+      "subject": "油样采集",
+      "action": "采集油样",
+      "condition": "油样采集",
+      "constraint": "取样方式不应影响被监测设备的安全运行",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样",
+        "被监测设备"
+      ]
+    },
+    {
+      "content": "分析完的油样不回注被监测设备",
+      "type": "强制",
+      "subject": "油样处理",
+      "action": "处理油样",
+      "condition": "油样分析完成",
+      "constraint": "油样不回注被监测设备",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样",
+        "被监测设备"
+      ]
+    },
+    {
+      "content": "应单独收集处理",
+      "type": "强制",
+      "subject": "油样处理",
+      "action": "处理油样",
+      "condition": "油样分析完成",
+      "constraint": "油样应单独收集处理",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样"
+      ]
+    },
+    {
+      "content": "单次排放油量不大于200mL",
+      "type": "强制",
+      "subject": "油样排放",
+      "action": "排放油样",
+      "condition": "油样排放",
+      "constraint": "单次排放油量不大于200mL",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样"
+      ]
+    },
+    {
+      "content": "收集油的容器应具有油量监测功能",
+      "type": "强制",
+      "subject": "油样容器配置",
+      "action": "配置油样容器",
+      "condition": "油样采集",
+      "constraint": "油样容器应具有油量监测功能",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样容器",
+        "油量监测功能"
+      ]
+    },
+    {
+      "content": "对满油进行就地及远程告警",
+      "type": "强制",
+      "subject": "油样容器管理",
+      "action": "管理油样容器",
+      "condition": "油样容器使用",
+      "constraint": "对满油进行就地及远程告警",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样容器",
+        "告警"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非循环油工作方式",
+      "target": "油样",
+      "type": "采用"
+    },
+    {
+      "source": "油样",
+      "target": "本体油样",
+      "type": "代表"
+    },
+    {
+      "source": "油样",
+      "target": "被监测设备",
+      "type": "监测对象"
+    },
+    {
+      "source": "油样",
+      "target": "油样容器",
+      "type": "存放"
+    },
+    {
+      "source": "油样容器",
+      "target": "油量监测功能",
+      "type": "具备"
+    },
+    {
+      "source": "油样容器",
+      "target": "告警",
+      "type": "触发"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3020,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b084f75c23c60516",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3020_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

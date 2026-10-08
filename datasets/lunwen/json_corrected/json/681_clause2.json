@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "水冷系统",
+      "type": "设备",
+      "desc": "电力系统中用于冷却的水循环系统"
+    },
+    {
+      "name": "压力试验",
+      "type": "试验",
+      "desc": "对水冷系统施加压力以检测其密封性的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "进行压力试验，整个水冷系统应无水滴泄漏现象",
+      "type": "强制",
+      "subject": "水冷系统",
+      "action": "进行压力试验",
+      "condition": "在安装或检修后",
+      "constraint": "整个水冷系统无水滴泄漏现象",
+      "related_entities": [
+        "水冷系统",
+        "压力试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水冷系统",
+      "target": "压力试验",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "pair_id": 681,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "eea860efb3927acf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\681_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

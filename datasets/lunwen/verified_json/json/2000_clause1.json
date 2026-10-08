@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "耐张段",
+      "type": "电力设施",
+      "desc": "电力系统中的耐张段是指在输电线路中采用耐张杆塔进行分段的线路部分"
+    },
+    {
+      "name": "轻冰区",
+      "type": "地理环境",
+      "desc": "覆冰厚度小于10mm的地区"
+    },
+    {
+      "name": "中冰区",
+      "type": "地理环境",
+      "desc": "覆冰厚度在10mm至20mm之间的地区"
+    },
+    {
+      "name": "重冰区",
+      "type": "地理环境",
+      "desc": "覆冰厚度大于20mm的地区"
+    },
+    {
+      "name": "加强型悬垂型杆塔",
+      "type": "电力设施",
+      "desc": "具有较强纵向强度的悬垂型杆塔"
+    }
+  ],
+  "rules": [
+    {
+      "content": "轻、中、重冰区的耐张段长度分别不宜大于10km、5km和3km，且单导线线路不宜大于5km。",
+      "type": "强制",
+      "subject": "耐张段",
+      "action": "设计与建设",
+      "condition": "轻、中、重冰区",
+      "constraint": "轻冰区≤10km，中冰区≤5km，重冰区≤3km，单导线线路≤5km",
+      "related_entities": [
+        "耐张段",
+        "轻冰区",
+        "中冰区",
+        "重冰区"
+      ]
+    },
+    {
+      "content": "当耐张段长度较长时应考虑防串倒措施，例如，轻冰区每隔7基～8基（中冰区每隔4基～5基）设置一基纵向强度较大的加强型悬垂型杆塔。",
+      "type": "强制",
+      "subject": "耐张段",
+      "action": "设计与建设",
+      "condition": "耐张段长度较长",
+      "constraint": "轻冰区≥10km，中冰区≥5km",
+      "related_entities": [
+        "耐张段",
+        "轻冰区",
+        "中冰区",
+        "加强型悬垂型杆塔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "耐张段",
+      "target": "轻冰区",
+      "type": "位于"
+    },
+    {
+      "source": "耐张段",
+      "target": "中冰区",
+      "type": "位于"
+    },
+    {
+      "source": "耐张段",
+      "target": "重冰区",
+      "type": "位于"
+    },
+    {
+      "source": "耐张段",
+      "target": "加强型悬垂型杆塔",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2000,
+      "source_row_id": "2000",
+      "clause_index": 1,
+      "source_text": "轻、中、重冰区的耐张段长度分别不宜大于10km、5km和3km，且单导线线路不宜大于5km。“条文说明3.0.7”当耐张段长度较长时应考虑防串倒措施，例如，轻冰区每隔7基～8基（中冰区每隔4基～5基）设置一基纵向强度较大的加强型悬垂型杆塔"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.011969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

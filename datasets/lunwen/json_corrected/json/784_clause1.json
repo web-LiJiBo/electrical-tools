@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备部件",
+      "desc": "变压器或电抗器的磁路部分"
+    },
+    {
+      "name": "结构件",
+      "type": "电力设备部件",
+      "desc": "变压器或电抗器的支撑、连接等非磁性部件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心及结构件表面温度不应超过80K",
+      "type": "强制",
+      "subject": "铁心及结构件",
+      "action": "温度控制",
+      "condition": "运行状态",
+      "constraint": "≤80K",
+      "related_entities": [
+        "铁心",
+        "结构件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "结构件",
+      "type": "组成"
+    },
+    {
+      "source": "铁心",
+      "target": "温度",
+      "type": "属性"
+    },
+    {
+      "source": "结构件",
+      "target": "温度",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 784,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0308d94940a6c95a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\784_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "电力变压器",
+      "type": "电力设备",
+      "desc": "一种将交流电从一个电压等级转换到另一个电压等级的静止电器"
+    },
+    {
+      "name": "试验项目",
+      "type": "试验方法",
+      "desc": "对电力变压器进行检测的方法"
+    },
+    {
+      "name": "直流电阻",
+      "type": "电气参数",
+      "desc": "电力变压器绕组在直流电流作用下的电阻值"
+    },
+    {
+      "name": "油浸式变压器",
+      "type": "电力设备",
+      "desc": "一种将交流电从一个电压等级转换到另一个电压等级的静止电器，其绝缘介质为油"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电力变压器的试验项目，应包括下列内容：2.测量绕组连同套管的直流电阻",
+      "type": "强制",
+      "subject": "电力变压器",
+      "action": "试验",
+      "condition": "电力变压器出厂或大修后",
+      "constraint": "测量绕组连同套管的直流电阻",
+      "related_entities": [
+        "电力变压器",
+        "试验项目"
+      ]
+    },
+    {
+      "content": "注解中注明适用容量为1600kVA及以下的油浸式变压器",
+      "type": "强制",
+      "subject": "电力变压器",
+      "action": "试验",
+      "condition": "电力变压器出厂或大修后，且为油浸式变压器",
+      "constraint": "容量为1600kVA及以下",
+      "related_entities": [
+        "电力变压器",
+        "油浸式变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电力变压器",
+      "target": "试验项目",
+      "type": "包含"
+    },
+    {
+      "source": "试验项目",
+      "target": "直流电阻",
+      "type": "测量对象"
+    },
+    {
+      "source": "电力变压器",
+      "target": "油浸式变压器",
+      "type": "分类"
+    },
+    {
+      "source": "油浸式变压器",
+      "target": "电力变压器",
+      "type": "实例"
+    }
+  ],
+  "metadata": {
+    "pair_id": 126,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "328a522df148e4ae",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\126_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

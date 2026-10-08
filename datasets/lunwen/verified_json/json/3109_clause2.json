@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "气体继电器",
+      "type": "电力设备",
+      "desc": "变压器内部故障检测装置"
+    },
+    {
+      "name": "油浸式变压器",
+      "type": "电力设备",
+      "desc": "变压器的一种，油作为绝缘介质"
+    },
+    {
+      "name": "顶盖",
+      "type": "电力设备部件",
+      "desc": "变压器油箱上部的盖板"
+    },
+    {
+      "name": "油流方向",
+      "type": "电力设备参数",
+      "desc": "气体继电器油流的方向"
+    },
+    {
+      "name": "升高坡度",
+      "type": "电力设备参数",
+      "desc": "变压器顶盖沿气体继电器油流方向的坡度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装有气体继电器的油浸式变压器，无升高坡度者，安装时应使顶盖沿气体继电器油流方向1.5%-2%的坡度。",
+      "type": "强制",
+      "subject": "油浸式变压器",
+      "action": "安装",
+      "condition": "装有气体继电器且无升高坡度",
+      "constraint": "顶盖沿气体继电器油流方向1.5%-2%的坡度",
+      "related_entities": [
+        "气体继电器",
+        "油浸式变压器",
+        "顶盖",
+        "油流方向"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体继电器",
+      "target": "油浸式变压器",
+      "type": "安装于"
+    },
+    {
+      "source": "顶盖",
+      "target": "油浸式变压器",
+      "type": "构成部件"
+    },
+    {
+      "source": "油流方向",
+      "target": "气体继电器",
+      "type": "检测方向"
+    },
+    {
+      "source": "升高坡度",
+      "target": "油浸式变压器",
+      "type": "参数要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3100,
+      "source_row_id": "3109",
+      "clause_index": 2,
+      "source_text": "关于气体继电器管道坡度的问题，条款统一意见：装有气体继电器的油浸式变压器，无升高坡度者，安装时应使顶盖沿气体继电器油流方向1.5%-2%的坡度。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.383316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

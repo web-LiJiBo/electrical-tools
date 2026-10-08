@@ -1,0 +1,165 @@
+{
+  "entities": [
+    {
+      "name": "温升限值",
+      "type": "技术参数",
+      "desc": "变压器绕组、顶层油、铁心等部件在运行中允许的最大温升"
+    },
+    {
+      "name": "电阻法",
+      "type": "测量方法",
+      "desc": "通过测量绕组电阻变化来计算温升的方法"
+    },
+    {
+      "name": "温度传感器",
+      "type": "测量设备",
+      "desc": "用于直接测量顶层油温的设备"
+    },
+    {
+      "name": "海拔",
+      "type": "地理环境",
+      "desc": "试验地点的海拔高度"
+    },
+    {
+      "name": "绕组平均温升",
+      "type": "温升参数",
+      "desc": "绕组整体的温升限值"
+    },
+    {
+      "name": "顶层油温升",
+      "type": "温升参数",
+      "desc": "顶层油的温升限值"
+    },
+    {
+      "name": "铁心温升",
+      "type": "温升参数",
+      "desc": "铁心的温升限值"
+    },
+    {
+      "name": "电气连接线温升",
+      "type": "温升参数",
+      "desc": "电气连接线的温升限值"
+    },
+    {
+      "name": "油箱结构件温升",
+      "type": "温升参数",
+      "desc": "油箱内部结构件的温升限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绕组平均温升：65K(用电阻法测量)，试验地点海拔低于1000m时为61K。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "绕组平均温升",
+      "constraint": "65K(用电阻法测量)，试验地点海拔低于1000m时为61K。",
+      "related_entities": [
+        "温升限值",
+        "电阻法",
+        "海拔"
+      ]
+    },
+    {
+      "content": "顶层油温升：55K(用温度传感器测量)，试验地点海拔低于1000m时为51K。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "顶层油温升",
+      "constraint": "55K(用温度传感器测量)，试验地点海拔低于1000m时为51K。",
+      "related_entities": [
+        "温升限值",
+        "温度传感器",
+        "海拔"
+      ]
+    },
+    {
+      "content": "铁心、绕组外部的电气连接线或油箱中的结构件不超过80K，试验地点海拔低于1000m时为76K。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "铁心、绕组外部的电气连接线或油箱中的结构件温升",
+      "constraint": "铁心、绕组外部的电气连接线或油箱中的结构件不超过80K，试验地点海拔低于1000m时为76K。",
+      "related_entities": [
+        "温升限值",
+        "海拔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "温升限值",
+      "target": "绕组平均温升",
+      "type": "包含"
+    },
+    {
+      "source": "温升限值",
+      "target": "顶层油温升",
+      "type": "包含"
+    },
+    {
+      "source": "温升限值",
+      "target": "铁心温升",
+      "type": "包含"
+    },
+    {
+      "source": "温升限值",
+      "target": "电气连接线温升",
+      "type": "包含"
+    },
+    {
+      "source": "温升限值",
+      "target": "油箱结构件温升",
+      "type": "包含"
+    },
+    {
+      "source": "电阻法",
+      "target": "绕组平均温升",
+      "type": "测量方式"
+    },
+    {
+      "source": "温度传感器",
+      "target": "顶层油温升",
+      "type": "测量方式"
+    },
+    {
+      "source": "海拔",
+      "target": "绕组平均温升",
+      "type": "影响因素"
+    },
+    {
+      "source": "海拔",
+      "target": "顶层油温升",
+      "type": "影响因素"
+    },
+    {
+      "source": "海拔",
+      "target": "铁心温升",
+      "type": "影响因素"
+    },
+    {
+      "source": "海拔",
+      "target": "电气连接线温升",
+      "type": "影响因素"
+    },
+    {
+      "source": "海拔",
+      "target": "油箱结构件温升",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 836,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "61f9a32ec0af29ff",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\836_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

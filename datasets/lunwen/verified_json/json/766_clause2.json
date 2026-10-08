@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "局部放电试验",
+      "type": "试验方法",
+      "desc": "对电力设备进行局部放电的检测"
+    },
+    {
+      "name": "产品",
+      "type": "电力设备",
+      "desc": "电力系统中使用的各种电气设备"
+    },
+    {
+      "name": "GB/T7354",
+      "type": "国家标准",
+      "desc": "局部放电测量的标准方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有有关的产品标准有要求，应进行局部放电试验，并按GB/T7354进行测量",
+      "type": "强制",
+      "subject": "产品",
+      "action": "进行局部放电试验并按GB/T7354进行测量",
+      "condition": "产品标准有要求",
+      "constraint": "局部放电试验应按照GB/T7354标准进行",
+      "related_entities": [
+        "产品",
+        "局部放电试验",
+        "GB/T7354"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "产品",
+      "target": "局部放电试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "GB/T7354",
+      "type": "依据标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 766,
+      "source_row_id": "766",
+      "clause_index": 2,
+      "source_text": "如果有关的产品标准有要求，应进行局部放电试验，并按GB/T7354进行测量"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9559,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.597080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

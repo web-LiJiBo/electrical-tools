@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "油室",
+      "type": "设备",
+      "desc": "变压器内部装有绝缘油的密封容器"
+    },
+    {
+      "name": "绝缘油",
+      "type": "介质",
+      "desc": "变压器内部使用的绝缘液体"
+    },
+    {
+      "name": "击穿电压",
+      "type": "电气参数",
+      "desc": "绝缘油在电场作用下被击穿的电压值"
+    },
+    {
+      "name": "含水率",
+      "type": "物理参数",
+      "desc": "绝缘油中水分含量比例"
+    },
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "新安装或改造后的变压器进行的首次试验"
+    },
+    {
+      "name": "大修试验",
+      "type": "试验",
+      "desc": "变压器检修后进行的试验"
+    },
+    {
+      "name": "分接变换次数",
+      "type": "运行参数",
+      "desc": "变压器分接开关切换操作次数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油室绝缘油击穿电压和含水率，周期为：交接时、大修时、一年一次或分接变换2万次。",
+      "type": "强制",
+      "subject": "油室绝缘油",
+      "action": "检测",
+      "condition": "交接试验、大修试验、每年至少一次或分接变换2万次后",
+      "constraint": "击穿电压≥35kV，含水率≤200ppm",
+      "related_entities": [
+        "油室",
+        "绝缘油",
+        "击穿电压",
+        "含水率",
+        "交接试验",
+        "大修试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油室",
+      "target": "绝缘油",
+      "type": "含有"
+    },
+    {
+      "source": "绝缘油",
+      "target": "击穿电压",
+      "type": "检测参数"
+    },
+    {
+      "source": "绝缘油",
+      "target": "含水率",
+      "type": "检测参数"
+    },
+    {
+      "source": "油室",
+      "target": "交接试验",
+      "type": "试验对象"
+    },
+    {
+      "source": "油室",
+      "target": "大修试验",
+      "type": "试验对象"
+    },
+    {
+      "source": "绝缘油",
+      "target": "交接试验",
+      "type": "试验对象"
+    },
+    {
+      "source": "绝缘油",
+      "target": "大修试验",
+      "type": "试验对象"
+    },
+    {
+      "source": "绝缘油",
+      "target": "分接变换次数",
+      "type": "运行参数关联"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2539,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0b8321729a7134bf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2539_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

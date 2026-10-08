@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电路中电流的电气设备"
+    },
+    {
+      "name": "巡检",
+      "type": "维护活动",
+      "desc": "对电力设备进行定期检查和维护"
+    },
+    {
+      "name": "例行试验",
+      "type": "维护活动",
+      "desc": "对电力设备进行定期的性能测试"
+    },
+    {
+      "name": "红外热像检测",
+      "type": "检测方法",
+      "desc": "利用红外热像仪检测电力设备温度分布情况的方法"
+    },
+    {
+      "name": "基准周期",
+      "type": "时间周期",
+      "desc": "规定的时间间隔，用于安排巡检或试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电流互感器巡检及例行试验红外热像检测基准周期为：330kV及以上：1月；220kV：3月；110kV/66kV：半年",
+      "type": "强制",
+      "subject": "电力设备运维人员",
+      "action": "巡检及例行试验红外热像检测",
+      "condition": "在规定的电压等级下运行的电流互感器",
+      "constraint": "巡检周期为1月、3月或半年，具体根据电压等级确定",
+      "related_entities": [
+        "电流互感器",
+        "巡检",
+        "例行试验",
+        "红外热像检测",
+        "基准周期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电流互感器",
+      "target": "巡检",
+      "type": "包含"
+    },
+    {
+      "source": "电流互感器",
+      "target": "例行试验",
+      "type": "包含"
+    },
+    {
+      "source": "电流互感器",
+      "target": "红外热像检测",
+      "type": "包含"
+    },
+    {
+      "source": "巡检",
+      "target": "基准周期",
+      "type": "依据"
+    },
+    {
+      "source": "例行试验",
+      "target": "基准周期",
+      "type": "依据"
+    },
+    {
+      "source": "红外热像检测",
+      "target": "基准周期",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 362,
+      "source_row_id": "362",
+      "clause_index": 2,
+      "source_text": "电流互感器巡检及例行试验红外热像检测基准周期为：330kV及以上：1月；220kV：3月；110kV/66kV：半年"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.143485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "换流站控制系统",
+      "type": "系统",
+      "desc": "换流站的控制系统"
+    },
+    {
+      "name": "对侧换流站",
+      "type": "换流站",
+      "desc": "与本换流站相对的另一端换流站"
+    },
+    {
+      "name": "直流运行方式",
+      "type": "参数",
+      "desc": "直流输电系统的运行模式"
+    },
+    {
+      "name": "直流功率",
+      "type": "参数",
+      "desc": "直流输电系统的输送功率"
+    },
+    {
+      "name": "直流电压",
+      "type": "参数",
+      "desc": "直流输电系统的电压值"
+    },
+    {
+      "name": "直流电流",
+      "type": "参数",
+      "desc": "直流输电系统的电流值"
+    },
+    {
+      "name": "触发角",
+      "type": "参数",
+      "desc": "晶闸管触发控制角"
+    },
+    {
+      "name": "关断角",
+      "type": "参数",
+      "desc": "晶闸管关断控制角"
+    },
+    {
+      "name": "交流母线电压",
+      "type": "参数",
+      "desc": "交流输电系统的母线电压"
+    },
+    {
+      "name": "交流母线频率",
+      "type": "参数",
+      "desc": "交流输电系统的母线频率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对侧换流站运行参数对站运行参数应通过换流站控制系统站间通信完成",
+      "type": "强制",
+      "subject": "换流站控制系统",
+      "action": "完成对侧换流站运行参数对站运行参数的传输",
+      "condition": "换流站控制系统正常运行",
+      "constraint": "实时数据传输",
+      "related_entities": [
+        "换流站控制系统",
+        "对侧换流站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流站控制系统",
+      "target": "对侧换流站",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "直流运行方式",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "直流功率",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "直流电压",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "直流电流",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "触发角",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "关断角",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "交流母线电压",
+      "type": "监控"
+    },
+    {
+      "source": "换流站控制系统",
+      "target": "交流母线频率",
+      "type": "监控"
+    }
+  ],
+  "metadata": {
+    "pair_id": 170,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f921b99f61b3ab9c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\170_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "注意状态",
+      "type": "设备状态",
+      "desc": "设备运行中存在异常但不影响当前运行的设备状态"
+    },
+    {
+      "name": "C类检修",
+      "type": "检修类别",
+      "desc": "例行检查与维护，不涉及设备解体"
+    },
+    {
+      "name": "基准周期",
+      "type": "检修周期",
+      "desc": "设备正常检修周期，由设备制造厂家或行业标准规定"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注意状态的检修策略执行C类检修",
+      "type": "强制",
+      "subject": "设备运维人员",
+      "action": "执行C类检修",
+      "condition": "设备处于注意状态",
+      "constraint": "检修周期不宜超过基准周期",
+      "related_entities": [
+        "注意状态",
+        "C类检修",
+        "基准周期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "注意状态",
+      "target": "C类检修",
+      "type": "检修策略"
+    },
+    {
+      "source": "C类检修",
+      "target": "基准周期",
+      "type": "检修周期依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1521,
+      "source_row_id": "1521",
+      "clause_index": 2,
+      "source_text": "“注意状态”的检修策略执行C类检修。检修周期不宜超过基准周期，同时根据状态评价结果，按照本导则确定检修类别和内容"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.472958+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

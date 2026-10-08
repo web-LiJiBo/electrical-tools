@@ -1,0 +1,35 @@
+{
+  "entities": [
+    {
+      "name": "风速",
+      "type": "气象参数",
+      "desc": "安装地区风速大小"
+    },
+    {
+      "name": "安装地区",
+      "type": "地理区域",
+      "desc": "电力设备安装的具体地理位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "安装地区的风速应不超过34m/s",
+      "type": "强制",
+      "subject": "安装地区",
+      "action": "安装电力设备",
+      "condition": "在风速超过34m/s的地区安装电力设备",
+      "constraint": "风速≤34m/s",
+      "related_entities": [
+        "风速",
+        "安装地区"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "安装地区",
+      "target": "风速",
+      "type": "影响"
+    }
+  ]
+}

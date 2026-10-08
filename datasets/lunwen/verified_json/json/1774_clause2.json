@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "密封压力系统",
+      "type": "设备",
+      "desc": "电力系统中用于密封气体的压力容器"
+    },
+    {
+      "name": "泄漏性能",
+      "type": "性能指标",
+      "desc": "密封压力系统在运行过程中防止气体泄漏的能力"
+    },
+    {
+      "name": "预期工作寿命",
+      "type": "性能指标",
+      "desc": "密封压力系统在正常工作条件下能够持续运行的时间长度"
+    },
+    {
+      "name": "制造厂",
+      "type": "组织机构",
+      "desc": "生产制造密封压力系统的厂家或企业"
+    },
+    {
+      "name": "SF6系统",
+      "type": "设备",
+      "desc": "使用六氟化硫气体作为绝缘介质的电气设备"
+    },
+    {
+      "name": "漏气率",
+      "type": "性能指标",
+      "desc": "SF6系统在一定时间内气体泄漏量占总气体量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "密封压力系统的密封性用其预期工作寿命来规定。",
+      "type": "强制",
+      "subject": "密封压力系统",
+      "action": "规定密封性",
+      "condition": "正常工作条件下",
+      "constraint": "预期工作寿命",
+      "related_entities": [
+        "密封压力系统",
+        "预期工作寿命"
+      ]
+    },
+    {
+      "content": "与泄漏性能有关的预期工作寿命应该由制造厂规定。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "规定预期工作寿命",
+      "condition": "泄漏性能相关",
+      "constraint": "预期工作寿命",
+      "related_entities": [
+        "制造厂",
+        "密封压力系统",
+        "预期工作寿命"
+      ]
+    },
+    {
+      "content": "优选值为20年、30年和40年。",
+      "type": "建议",
+      "subject": "制造厂",
+      "action": "规定预期工作寿命",
+      "condition": "泄漏性能相关",
+      "constraint": "预期工作寿命",
+      "related_entities": [
+        "制造厂",
+        "密封压力系统",
+        "预期工作寿命"
+      ]
+    },
+    {
+      "content": "为了满足预期的工作寿命要求，SF6系统的漏气率应不大于每年0.1%。",
+      "type": "强制",
+      "subject": "SF6系统",
+      "action": "控制漏气率",
+      "condition": "满足预期工作寿命要求",
+      "constraint": "漏气率≤0.1%/年",
+      "related_entities": [
+        "SF6系统",
+        "漏气率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "密封压力系统",
+      "target": "预期工作寿命",
+      "type": "规定"
+    },
+    {
+      "source": "制造厂",
+      "target": "密封压力系统",
+      "type": "制造"
+    },
+    {
+      "source": "制造厂",
+      "target": "预期工作寿命",
+      "type": "规定"
+    },
+    {
+      "source": "密封压力系统",
+      "target": "泄漏性能",
+      "type": "影响"
+    },
+    {
+      "source": "制造厂",
+      "target": "预期工作寿命",
+      "type": "建议"
+    },
+    {
+      "source": "SF6系统",
+      "target": "漏气率",
+      "type": "控制"
+    },
+    {
+      "source": "预期工作寿命",
+      "target": "SF6系统",
+      "type": "要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1774,
+      "source_row_id": "1774",
+      "clause_index": 2,
+      "source_text": "密封压力系统的密封性用其预期工作寿命来规定。与泄漏性能有关的预期工作寿命应该由制造厂规定。优选值为20年、30年和40年。注:为了满足预期的工作寿命要求，SF6系统的漏气率应不大于每年0.1%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.754213+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

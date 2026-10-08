@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "覆冰地区",
+      "type": "地理环境",
+      "desc": "存在覆冰现象的区域"
+    },
+    {
+      "name": "稀有覆冰条件",
+      "type": "气象条件",
+      "desc": "罕见的覆冰情况"
+    },
+    {
+      "name": "验算",
+      "type": "技术措施",
+      "desc": "对电力设备进行强度校核"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于大于10mm覆冰地区，必要时宜按稀有覆冰条件进行验算",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "进行验算",
+      "condition": "在覆冰厚度超过10mm的地区",
+      "constraint": "当需要考虑稀有覆冰条件时",
+      "related_entities": [
+        "覆冰地区",
+        "稀有覆冰条件",
+        "验算"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "覆冰地区",
+      "target": "稀有覆冰条件",
+      "type": "包含"
+    },
+    {
+      "source": "稀有覆冰条件",
+      "target": "验算",
+      "type": "适用"
+    },
+    {
+      "source": "覆冰地区",
+      "target": "验算",
+      "type": "触发"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2049,
+      "source_row_id": "2049",
+      "clause_index": 1,
+      "source_text": "对于大于10mm覆冰地区，必要时宜按稀有覆冰条件进行验算"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.067967+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "entities": [
+    {
+      "name": "交流电压波形",
+      "type": "电力参数",
+      "desc": "交流电的电压变化形式"
+    },
+    {
+      "name": "正弦波",
+      "type": "电力波形",
+      "desc": "理想的交流电压波形"
+    },
+    {
+      "name": "正半波峰值",
+      "type": "电力参数",
+      "desc": "交流电压波形正半周的最大值"
+    },
+    {
+      "name": "负半波峰值",
+      "type": "电力参数",
+      "desc": "交流电压波形负半周的最大值"
+    },
+    {
+      "name": "正半波峰值与负半波峰值差",
+      "type": "电力参数",
+      "desc": "正半波峰值与负半波峰值之间的差值"
+    },
+    {
+      "name": "正半波峰值与有效值之比",
+      "type": "电力参数",
+      "desc": "正半波峰值与有效值的比例关系"
+    },
+    {
+      "name": "试验电压波形",
+      "type": "电力参数",
+      "desc": "实际测试中使用的交流电压波形"
+    },
+    {
+      "name": "高压试验",
+      "type": "电力试验",
+      "desc": "对高压设备进行的电气性能测试"
+    },
+    {
+      "name": "试验电压频率",
+      "type": "电力参数",
+      "desc": "试验电压的频率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试验电压波形应为近似正弦波",
+      "type": "强制",
+      "subject": "试验电压波形",
+      "action": "应为近似正弦波",
+      "condition": "高压试验",
+      "constraint": "无",
+      "related_entities": [
+        "交流电压波形",
+        "正弦波"
+      ]
+    },
+    {
+      "content": "正半波峰值与负半波峰值差应小于2％",
+      "type": "强制",
+      "subject": "试验电压波形",
+      "action": "正半波峰值与负半波峰值差应小于2％",
+      "condition": "高压试验",
+      "constraint": "正半波峰值与负半波峰值差<2%",
+      "related_entities": [
+        "正半波峰值",
+        "负半波峰值"
+      ]
+    },
+    {
+      "content": "正半波的峰值与有效值之比在√2±5％以内，则认为高压试验结果不受波形畸变的影响",
+      "type": "强制",
+      "subject": "试验电压波形",
+      "action": "正半波的峰值与有效值之比在√2±5％以内",
+      "condition": "高压试验",
+      "constraint": "正半波峰值与有效值之比在√2±5％以内",
+      "related_entities": [
+        "正半波峰值",
+        "有效值"
+      ]
+    },
+    {
+      "content": "试验电压的频率一般在30Hz～300Hz的范围内",
+      "type": "强制",
+      "subject": "试验电压频率",
+      "action": "试验电压频率应在30Hz～300Hz的范围内",
+      "condition": "高压试验",
+      "constraint": "试验电压频率在30Hz～300Hz的范围内",
+      "related_entities": [
+        "试验电压波形"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交流电压波形",
+      "target": "正弦波",
+      "type": "是...的一种"
+    },
+    {
+      "source": "正半波峰值",
+      "target": "正弦波",
+      "type": "属于...的一部分"
+    },
+    {
+      "source": "负半波峰值",
+      "target": "正弦波",
+      "type": "属于...的一部分"
+    },
+    {
+      "source": "正半波峰值与负半波峰值差",
+      "target": "正弦波",
+      "type": "属于...的一部分"
+    },
+    {
+      "source": "正半波峰值与有效值之比",
+      "target": "正弦波",
+      "type": "属于...的一部分"
+    },
+    {
+      "source": "试验电压波形",
+      "target": "交流电压波形",
+      "type": "是...的一种"
+    },
+    {
+      "source": "试验电压波形",
+      "target": "正弦波",
+      "type": "是...的一种"
+    },
+    {
+      "source": "试验电压波形",
+      "target": "高压试验",
+      "type": "用于"
+    },
+    {
+      "source": "试验电压频率",
+      "target": "试验电压波形",
+      "type": "属于...的一部分"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2748,
+      "source_row_id": "2757",
+      "clause_index": 2,
+      "source_text": "交流电压波形。试验电压波形应为近似正弦波，且正半波峰值与负半波峰值差应小于2％。若正半波的峰值与有效值之比在√2±5％以内，则认为高压试验结果不受波形畸变的影响。试验电压的频率一般在30Hz～300Hz的范围内。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9832,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.943315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

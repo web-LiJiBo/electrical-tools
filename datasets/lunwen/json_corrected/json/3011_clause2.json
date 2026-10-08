@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "转角塔",
+      "type": "电力设施",
+      "desc": "电力系统中用于改变线路走向的杆塔"
+    },
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "电力系统中用于支持导线并提供电气绝缘的设备"
+    },
+    {
+      "name": "跳线串",
+      "type": "电力设备",
+      "desc": "连接不同电位导线的绝缘子串"
+    },
+    {
+      "name": "顺线方向",
+      "type": "电力术语",
+      "desc": "线路正向延伸的方向"
+    }
+  ],
+  "rules": [
+    {
+      "content": "40度及以上转角塔的外角侧宜在顺线方向布置前后两串绝缘子跳线串",
+      "type": "强制",
+      "subject": "转角塔",
+      "action": "布置绝缘子跳线串",
+      "condition": "转角塔角度大于等于40度",
+      "constraint": "外角侧顺线方向布置前后两串绝缘子跳线串",
+      "related_entities": [
+        "转角塔",
+        "绝缘子",
+        "跳线串"
+      ]
+    },
+    {
+      "content": "15度以内的转角内外侧跳线均应加装跳线绝缘子串",
+      "type": "强制",
+      "subject": "转角塔",
+      "action": "加装绝缘子串",
+      "condition": "转角塔角度小于15度",
+      "constraint": "内外侧跳线均应加装绝缘子串",
+      "related_entities": [
+        "转角塔",
+        "绝缘子",
+        "跳线串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "转角塔",
+      "target": "绝缘子",
+      "type": "使用"
+    },
+    {
+      "source": "转角塔",
+      "target": "跳线串",
+      "type": "使用"
+    },
+    {
+      "source": "绝缘子",
+      "target": "跳线串",
+      "type": "组成"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3011,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1aab8bd34cd31d63",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3011_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

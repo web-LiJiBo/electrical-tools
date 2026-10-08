@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "直埋电缆",
+      "type": "电力设施",
+      "desc": "直接埋设于地下的电缆"
+    },
+    {
+      "name": "路径标志",
+      "type": "电力设施",
+      "desc": "用于指示电缆路径的标识物"
+    },
+    {
+      "name": "标桩",
+      "type": "电力设施",
+      "desc": "用于标记电缆路径的桩状标识物"
+    },
+    {
+      "name": "直线段",
+      "type": "电力设施",
+      "desc": "电缆无转弯的直线敷设段落"
+    },
+    {
+      "name": "电缆接头",
+      "type": "电力设施",
+      "desc": "连接两段电缆的电气连接装置"
+    },
+    {
+      "name": "转弯处",
+      "type": "电力设施",
+      "desc": "电缆路径发生转向的位置"
+    },
+    {
+      "name": "建筑物",
+      "type": "电力设施",
+      "desc": "电缆进入建筑物的入口处"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋电缆在直线段每隔30m～50m处、电缆接头处、转弯处、进入建筑物等处，应设置明显的路径标志或标桩",
+      "type": "强制",
+      "subject": "直埋电缆",
+      "action": "设置路径标志或标桩",
+      "condition": "敷设于地下且长度超过30m",
+      "constraint": "每隔30m～50m处、电缆接头处、转弯处、进入建筑物等处",
+      "related_entities": [
+        "直埋电缆",
+        "路径标志",
+        "标桩",
+        "直线段",
+        "电缆接头",
+        "转弯处",
+        "建筑物"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋电缆",
+      "target": "路径标志",
+      "type": "设置"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "标桩",
+      "type": "设置"
+    },
+    {
+      "source": "直线段",
+      "target": "直埋电缆",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆接头",
+      "target": "直埋电缆",
+      "type": "连接"
+    },
+    {
+      "source": "转弯处",
+      "target": "直埋电缆",
+      "type": "路径变化"
+    },
+    {
+      "source": "建筑物",
+      "target": "直埋电缆",
+      "type": "进入"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1857,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7ef86229f7e07644",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1857_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "entities": [
+    {
+      "name": "巡检周期",
+      "type": "运维检修",
+      "desc": "设备或系统的检查维护周期"
+    },
+    {
+      "name": "1~7天",
+      "type": "时间周期",
+      "desc": "巡检周期的具体范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "巡检周期为1~7天",
+      "type": "强制",
+      "subject": "设备或系统",
+      "action": "巡检",
+      "condition": "定期",
+      "constraint": "1~7天",
+      "related_entities": [
+        "巡检周期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "巡检周期",
+      "target": "1~7天",
+      "type": "包含"
+    },
+    {
+      "source": "设备或系统",
+      "target": "巡检周期",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2234,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "415108d055c7cb18",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2234_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

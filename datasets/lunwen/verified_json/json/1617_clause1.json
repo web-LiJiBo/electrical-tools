@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "环形钢筋混凝土电杆",
+      "type": "电力设备",
+      "desc": "一种采用环形钢筋混凝土材料制成的电杆"
+    },
+    {
+      "name": "制造质量",
+      "type": "技术要求",
+      "desc": "对环形钢筋混凝土电杆在生产过程中的质量控制要求"
+    },
+    {
+      "name": "外观检查",
+      "type": "检验方法",
+      "desc": "对环形钢筋混凝土电杆表面状况进行检查的方法"
+    },
+    {
+      "name": "杆身弯曲",
+      "type": "技术参数",
+      "desc": "环形钢筋混凝土电杆在安装前的弯曲程度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "环形钢筋混凝土电杆制造质量应符合现行国家标准《环形钢筋混凝土电杆》的规定",
+      "type": "强制",
+      "subject": "环形钢筋混凝土电杆制造企业",
+      "action": "制造",
+      "condition": "环形钢筋混凝土电杆制造过程中",
+      "constraint": "应遵循现行国家标准《环形钢筋混凝土电杆》的要求",
+      "related_entities": [
+        "环形钢筋混凝土电杆",
+        "制造质量"
+      ]
+    },
+    {
+      "content": "安装前应进行外观检查",
+      "type": "强制",
+      "subject": "环形钢筋混凝土电杆安装人员",
+      "action": "安装",
+      "condition": "环形钢筋混凝土电杆安装前",
+      "constraint": "必须进行外观检查",
+      "related_entities": [
+        "环形钢筋混凝土电杆",
+        "外观检查"
+      ]
+    },
+    {
+      "content": "杆身弯曲不应超过杆长的1/1000",
+      "type": "强制",
+      "subject": "环形钢筋混凝土电杆安装人员",
+      "action": "安装",
+      "condition": "环形钢筋混凝土电杆安装前",
+      "constraint": "杆身弯曲度不得超过杆长的1/1000",
+      "related_entities": [
+        "环形钢筋混凝土电杆",
+        "杆身弯曲"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "环形钢筋混凝土电杆",
+      "target": "制造质量",
+      "type": "符合"
+    },
+    {
+      "source": "环形钢筋混凝土电杆",
+      "target": "外观检查",
+      "type": "接受"
+    },
+    {
+      "source": "环形钢筋混凝土电杆",
+      "target": "杆身弯曲",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1617,
+      "source_row_id": "1617",
+      "clause_index": 1,
+      "source_text": "环形钢筋混凝土电杆制造质量应符合现行国家标准《环形钢筋混凝土电杆》的规定。安装前应进行外观检查，且应符合下列规定：三、杆身弯曲不应超过杆长的1/1000"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.575158+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

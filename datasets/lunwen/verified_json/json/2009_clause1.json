@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "线路通道",
+      "type": "电力设施",
+      "desc": "电力线路的保护区域"
+    },
+    {
+      "name": "树木",
+      "type": "障碍物",
+      "desc": "影响电力线路安全运行的植物"
+    },
+    {
+      "name": "建筑物",
+      "type": "障碍物",
+      "desc": "影响电力线路安全运行的人造结构"
+    },
+    {
+      "name": "堆积物",
+      "type": "障碍物",
+      "desc": "影响电力线路安全运行的堆积物"
+    },
+    {
+      "name": "清理",
+      "type": "操作",
+      "desc": "对线路通道内障碍物进行清除"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路通道内的树木、建筑物、堆积物等障碍物的清理，应符合设计要求",
+      "type": "强制",
+      "subject": "线路通道内的障碍物",
+      "action": "清理",
+      "condition": "线路通道内存在可能影响电力线路安全运行的障碍物",
+      "constraint": "清理后的线路通道应满足设计要求",
+      "related_entities": [
+        "线路通道",
+        "树木",
+        "建筑物",
+        "堆积物"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路通道",
+      "target": "树木",
+      "type": "包含"
+    },
+    {
+      "source": "线路通道",
+      "target": "建筑物",
+      "type": "包含"
+    },
+    {
+      "source": "线路通道",
+      "target": "堆积物",
+      "type": "包含"
+    },
+    {
+      "source": "线路通道",
+      "target": "清理",
+      "type": "执行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2009,
+      "source_row_id": "2009",
+      "clause_index": 1,
+      "source_text": "线路通道内的树木、建筑物、堆积物等障碍物的清理，应符合设计要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.022969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "橡塑电缆",
+      "type": "电力设备",
+      "desc": "一种具有橡胶或塑料绝缘层的电缆"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "通过交流电压对电气设备进行耐压测试的方法"
+    },
+    {
+      "name": "20Hz～300Hz",
+      "type": "频率范围",
+      "desc": "交流耐压试验的频率范围"
+    },
+    {
+      "name": "正常系统对地电压",
+      "type": "电压等级",
+      "desc": "系统对地的额定电压值"
+    },
+    {
+      "name": "24h",
+      "type": "时间",
+      "desc": "耐压持续时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "橡塑电缆优先采用20Hz～300Hz交流耐压试验,试验电压和时间。",
+      "type": "强制",
+      "subject": "橡塑电缆",
+      "action": "进行交流耐压试验",
+      "condition": "橡塑电缆出厂前或检修后",
+      "constraint": "试验电压和时间应满足相关标准要求",
+      "related_entities": [
+        "橡塑电缆",
+        "交流耐压试验"
+      ]
+    },
+    {
+      "content": "可采用施加正常系统对地电压24h方法替代交流耐压",
+      "type": "强制",
+      "subject": "橡塑电缆",
+      "action": "进行耐压试验",
+      "condition": "橡塑电缆出厂前或检修后，且不具备交流耐压试验条件时",
+      "constraint": "正常系统对地电压应满足相关标准要求",
+      "related_entities": [
+        "橡塑电缆",
+        "正常系统对地电压",
+        "24h"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "橡塑电缆",
+      "target": "交流耐压试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "20Hz～300Hz",
+      "target": "交流耐压试验",
+      "type": "适用范围"
+    },
+    {
+      "source": "正常系统对地电压",
+      "target": "交流耐压试验",
+      "type": "替代方法"
+    },
+    {
+      "source": "24h",
+      "target": "交流耐压试验",
+      "type": "替代方法"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 576,
+      "source_row_id": "576",
+      "clause_index": 1,
+      "source_text": "橡塑电缆的交流耐压试验1）橡塑电缆优先采用20Hz～300Hz交流耐压试验,试验电压和时间。可采用施加正常系统对地电压24h方法替代交流耐压"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.380484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

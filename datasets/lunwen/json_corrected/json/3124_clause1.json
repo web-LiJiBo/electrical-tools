@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "远动工作站",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于远距离数据采集与控制的计算机系统"
+    },
+    {
+      "name": "站LAN网",
+      "type": "电力系统网络",
+      "desc": "变电站内部局域网络"
+    },
+    {
+      "name": "控制保护设备",
+      "type": "电力系统设备",
+      "desc": "变电站内用于控制和保护电力系统的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "双重化的每一台远动工作站均应配置两路网络接口分别接入双重化的站LAN网",
+      "type": "强制",
+      "subject": "远动工作站",
+      "action": "配置网络接口",
+      "condition": "双重化",
+      "constraint": "两路网络接口分别接入双重化的站LAN网",
+      "related_entities": [
+        "远动工作站",
+        "站LAN网"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "远动工作站",
+      "target": "站LAN网",
+      "type": "接入"
+    },
+    {
+      "source": "远动工作站",
+      "target": "控制保护设备",
+      "type": "通信"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3124,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2ad8c7b179a655f7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3124_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

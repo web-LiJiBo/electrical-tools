@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "冷却设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于散热的设备"
+    },
+    {
+      "name": "温度",
+      "type": "环境参数",
+      "desc": "冷却设备运行环境的温度"
+    },
+    {
+      "name": "相对湿度",
+      "type": "环境参数",
+      "desc": "冷却设备运行环境的相对湿度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "冷却设备间a）温度为5℃～40℃，相对湿度不大于90%",
+      "type": "强制",
+      "subject": "冷却设备",
+      "action": "运行",
+      "condition": "在冷却设备间内",
+      "constraint": "温度5℃～40℃，相对湿度≤90%",
+      "related_entities": [
+        "冷却设备",
+        "温度",
+        "相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "冷却设备",
+      "target": "温度",
+      "type": "运行环境"
+    },
+    {
+      "source": "冷却设备",
+      "target": "相对湿度",
+      "type": "运行环境"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2491,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "54818c3855d1764b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2491_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

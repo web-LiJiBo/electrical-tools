@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备",
+      "desc": "变压器内部的磁性材料"
+    },
+    {
+      "name": "电气连接线",
+      "type": "电力设备",
+      "desc": "变压器内部的导电线路"
+    },
+    {
+      "name": "电磁屏蔽",
+      "type": "电力设备",
+      "desc": "变压器内部的电磁屏蔽装置"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器的外壳，用于容纳绝缘液体"
+    },
+    {
+      "name": "结构件",
+      "type": "电力设备",
+      "desc": "变压器内部的支撑结构件"
+    },
+    {
+      "name": "温升",
+      "type": "技术参数",
+      "desc": "设备在运行过程中温度上升的幅度"
+    },
+    {
+      "name": "绝缘液体",
+      "type": "电力设备",
+      "desc": "变压器内部使用的绝缘液体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心、裸露的电气连接线、电磁屏蔽及油箱上的结构件，均不规定温升限值",
+      "type": "强制",
+      "subject": "变压器设计者",
+      "action": "设计变压器",
+      "condition": "变压器设计阶段",
+      "constraint": "不规定温升限值",
+      "related_entities": [
+        "铁心",
+        "电气连接线",
+        "电磁屏蔽",
+        "油箱",
+        "结构件"
+      ]
+    },
+    {
+      "content": "但要求其温升不能过高，以免使与其相邻的部件受到热损坏或使绝缘液体过度老化",
+      "type": "强制",
+      "subject": "变压器设计者",
+      "action": "设计变压器",
+      "condition": "变压器设计阶段",
+      "constraint": "温升不能过高，避免相邻部件热损坏或绝缘液体老化",
+      "related_entities": [
+        "铁心",
+        "电气连接线",
+        "电磁屏蔽",
+        "油箱",
+        "结构件",
+        "绝缘液体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "温升",
+      "type": "影响"
+    },
+    {
+      "source": "电气连接线",
+      "target": "温升",
+      "type": "影响"
+    },
+    {
+      "source": "电磁屏蔽",
+      "target": "温升",
+      "type": "影响"
+    },
+    {
+      "source": "油箱",
+      "target": "温升",
+      "type": "影响"
+    },
+    {
+      "source": "结构件",
+      "target": "温升",
+      "type": "影响"
+    },
+    {
+      "source": "温升",
+      "target": "绝缘液体",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 95,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8e65068e21641222",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\95_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

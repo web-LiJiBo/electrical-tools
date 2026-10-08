@@ -1,0 +1,152 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的沟道"
+    },
+    {
+      "name": "阻火墙",
+      "type": "电力设施",
+      "desc": "用于阻止火灾蔓延的墙体"
+    },
+    {
+      "name": "配电装置",
+      "type": "电力设备",
+      "desc": "用于分配电能的电气设备组"
+    },
+    {
+      "name": "控制室",
+      "type": "电力设施",
+      "desc": "用于监控电力系统运行状态的房间"
+    },
+    {
+      "name": "厂区围墙",
+      "type": "电力设施",
+      "desc": "厂区与外界隔离的围墙"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在隧道或重要回路的电缆沟中的下列部位，宜设置阻火墙",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "隧道或重要回路的电缆沟",
+      "constraint": "电缆沟中的下列部位",
+      "related_entities": [
+        "电缆沟",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "公用主沟道的分支处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "公用主沟道的分支处",
+      "constraint": "无",
+      "related_entities": [
+        "电缆沟",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "多段配电装置对应的沟道适当分段处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "多段配电装置对应的沟道",
+      "constraint": "适当分段处",
+      "related_entities": [
+        "电缆沟",
+        "配电装置",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "长距离沟道中相隔约200m或通风区段处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "长距离沟道中",
+      "constraint": "相隔约200m或通风区段处",
+      "related_entities": [
+        "电缆沟",
+        "阻火墙"
+      ]
+    },
+    {
+      "content": "至控制室或配电装置的沟道入口、厂区围墙处",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置阻火墙",
+      "condition": "至控制室或配电装置的沟道入口、厂区围墙处",
+      "constraint": "无",
+      "related_entities": [
+        "电缆沟",
+        "配电装置",
+        "控制室",
+        "厂区围墙",
+        "阻火墙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "配电装置",
+      "type": "连接"
+    },
+    {
+      "source": "电缆沟",
+      "target": "控制室",
+      "type": "连接"
+    },
+    {
+      "source": "电缆沟",
+      "target": "厂区围墙",
+      "type": "连接"
+    },
+    {
+      "source": "电缆沟",
+      "target": "阻火墙",
+      "type": "设置"
+    },
+    {
+      "source": "配电装置",
+      "target": "阻火墙",
+      "type": "设置"
+    },
+    {
+      "source": "控制室",
+      "target": "阻火墙",
+      "type": "设置"
+    },
+    {
+      "source": "厂区围墙",
+      "target": "阻火墙",
+      "type": "设置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 529,
+      "source_row_id": "529",
+      "clause_index": 1,
+      "source_text": "在隧道或重要回路的电缆沟中的下列部位，宜设置阻火墙（防火墙）。1）公用主沟道的分支处。2）多段配电装置对应的沟道适当分段处。3）长距离沟道中相隔约200m或通风区段处。4）至控制室或配电装置的沟道入口、厂区围墙处"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.330485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

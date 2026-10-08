@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "无线电干扰电压",
+      "type": "电磁干扰",
+      "desc": "电力系统中由电磁场引起的电压波动"
+    },
+    {
+      "name": "Uc",
+      "type": "额定电压",
+      "desc": "电力系统中规定的额定电压值"
+    },
+    {
+      "name": "试验",
+      "type": "测试",
+      "desc": "对电力设备进行的性能验证过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1.05倍Uc下和所有较低电压级差下的无线电干扰电压均不大于2500μV，则试验通过。",
+      "type": "强制",
+      "subject": "试验",
+      "action": "通过",
+      "condition": "无线电干扰电压",
+      "constraint": "≤2500μV",
+      "related_entities": [
+        "无线电干扰电压",
+        "Uc"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "试验",
+      "target": "无线电干扰电压",
+      "type": "满足条件"
+    },
+    {
+      "source": "试验",
+      "target": "Uc",
+      "type": "基于电压等级"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2634,
+      "source_row_id": "2643",
+      "clause_index": 1,
+      "source_text": "在1.05倍Uc下和所有较低电压级差下的无线电干扰电压均不大于2500μV，则试验通过。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.800315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

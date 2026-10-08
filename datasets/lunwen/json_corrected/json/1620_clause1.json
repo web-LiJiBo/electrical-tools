@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "开口销",
+      "type": "电力设备",
+      "desc": "用于防止螺栓松动的金属环状部件"
+    },
+    {
+      "name": "螺栓",
+      "type": "电力设备",
+      "desc": "用于连接电力设备的紧固件"
+    },
+    {
+      "name": "折断",
+      "type": "缺陷状态",
+      "desc": "开口销断裂的现象"
+    },
+    {
+      "name": "裂痕",
+      "type": "缺陷状态",
+      "desc": "开口销表面出现裂纹的现象"
+    },
+    {
+      "name": "线材",
+      "type": "材料",
+      "desc": "用于电力设备连接的导电材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开口销应开口至60°～90°",
+      "type": "强制",
+      "subject": "开口销",
+      "action": "安装",
+      "condition": "在电力设备中使用",
+      "constraint": "开口角度应在60°～90°之间",
+      "related_entities": [
+        "开口销",
+        "螺栓"
+      ]
+    },
+    {
+      "content": "开口后的销子不应有折断、裂痕等现象",
+      "type": "强制",
+      "subject": "开口销",
+      "action": "安装",
+      "condition": "在电力设备中使用",
+      "constraint": "不允许开口后出现折断、裂痕等现象",
+      "related_entities": [
+        "开口销",
+        "折断",
+        "裂痕"
+      ]
+    },
+    {
+      "content": "不应用线材或其它材料代替开口销子",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "安装",
+      "condition": "在电力设备中使用开口销",
+      "constraint": "禁止使用线材或其他材料替代开口销",
+      "related_entities": [
+        "开口销",
+        "线材"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开口销",
+      "target": "螺栓",
+      "type": "紧固"
+    },
+    {
+      "source": "开口销",
+      "target": "折断",
+      "type": "导致"
+    },
+    {
+      "source": "开口销",
+      "target": "裂痕",
+      "type": "导致"
+    },
+    {
+      "source": "开口销",
+      "target": "线材",
+      "type": "替代禁止"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1620,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "417943cef199e30f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1620_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

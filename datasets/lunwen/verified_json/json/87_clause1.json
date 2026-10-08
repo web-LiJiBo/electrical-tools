@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "户外",
+      "type": "环境",
+      "desc": "户外设备安装环境"
+    },
+    {
+      "name": "户内",
+      "type": "环境",
+      "desc": "户内设备安装环境"
+    },
+    {
+      "name": "C级",
+      "type": "污秽等级",
+      "desc": "户内设备的污秽等级分类"
+    },
+    {
+      "name": "E级",
+      "type": "污秽等级",
+      "desc": "户外设备的污秽等级分类"
+    }
+  ],
+  "rules": [
+    {
+      "content": "污秽等级：户内≥C级，户外≥E级",
+      "type": "强制",
+      "subject": "设备",
+      "action": "安装",
+      "condition": "设备安装在户内或户外环境中",
+      "constraint": "户内≥C级，户外≥E级",
+      "related_entities": [
+        "户外",
+        "户内",
+        "C级",
+        "E级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户外",
+      "target": "设备",
+      "type": "安装环境"
+    },
+    {
+      "source": "户内",
+      "target": "设备",
+      "type": "安装环境"
+    },
+    {
+      "source": "C级",
+      "target": "户内",
+      "type": "污秽等级分类"
+    },
+    {
+      "source": "E级",
+      "target": "户外",
+      "type": "污秽等级分类"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 87,
+      "source_row_id": "87",
+      "clause_index": 1,
+      "source_text": "污秽等级：户内≥C级，户外≥E级"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:58.848604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

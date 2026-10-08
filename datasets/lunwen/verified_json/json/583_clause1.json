@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "排管式通道",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的一种方式，采用排管进行电缆敷设"
+    },
+    {
+      "name": "工作井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中用于电缆接头制作、检修等操作的地下空间"
+    },
+    {
+      "name": "排管通道",
+      "type": "电力设施",
+      "desc": "电力电缆敷设在排管中的通道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "排管通道需要转弯或连接时，应在转弯或连接部位设置工作井",
+      "type": "强制",
+      "subject": "排管式通道",
+      "action": "设置工作井",
+      "condition": "排管通道需要转弯或连接",
+      "constraint": "无",
+      "related_entities": [
+        "排管式通道",
+        "工作井"
+      ]
+    },
+    {
+      "content": "相邻两座工作井的间距不宜超过130m",
+      "type": "强制",
+      "subject": "排管式通道",
+      "action": "控制工作井间距",
+      "condition": "排管式通道敷设",
+      "constraint": "相邻两座工作井的间距不宜超过130m",
+      "related_entities": [
+        "排管式通道",
+        "工作井"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "排管式通道",
+      "target": "工作井",
+      "type": "包含"
+    },
+    {
+      "source": "排管式通道",
+      "target": "排管通道",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 583,
+      "source_row_id": "583",
+      "clause_index": 1,
+      "source_text": "排管式通道的工作井应符合下列规定：a）排管通道需要转弯或连接时，应在转弯或连接部位设置工作井。b）相邻两座工作井的间距不宜超过130m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.388485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

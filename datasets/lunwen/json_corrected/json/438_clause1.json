@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "操作机构",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制断路器分合闸的装置"
+    },
+    {
+      "name": "断路器分闸时间",
+      "type": "电气参数",
+      "desc": "断路器从接收到分闸指令到主触头完全分离所需的时间"
+    },
+    {
+      "name": "断路器合闸时间",
+      "type": "电气参数",
+      "desc": "断路器从接收到合闸指令到主触头完全接触所需的时间"
+    },
+    {
+      "name": "合闸弹跳时间",
+      "type": "电气参数",
+      "desc": "断路器在合闸过程中动、静触头接触后再次分离至重新接触的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "操作机构应确保断路器分闸时间≤60ms",
+      "type": "强制",
+      "subject": "操作机构",
+      "action": "确保断路器分闸时间不超过60ms",
+      "condition": "所有运行中的断路器",
+      "constraint": "断路器分闸时间≤60ms",
+      "related_entities": [
+        "操作机构",
+        "断路器分闸时间"
+      ]
+    },
+    {
+      "content": "操作机构应确保断路器合闸时间≤100ms",
+      "type": "强制",
+      "subject": "操作机构",
+      "action": "确保断路器合闸时间不超过100ms",
+      "condition": "所有运行中的断路器",
+      "constraint": "断路器合闸时间≤100ms",
+      "related_entities": [
+        "操作机构",
+        "断路器合闸时间"
+      ]
+    },
+    {
+      "content": "操作机构应确保合闸弹跳时间≤2ms",
+      "type": "强制",
+      "subject": "操作机构",
+      "action": "确保合闸弹跳时间不超过2ms",
+      "condition": "所有运行中的断路器",
+      "constraint": "合闸弹跳时间≤2ms",
+      "related_entities": [
+        "操作机构",
+        "合闸弹跳时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "操作机构",
+      "target": "断路器分闸时间",
+      "type": "控制"
+    },
+    {
+      "source": "操作机构",
+      "target": "断路器合闸时间",
+      "type": "控制"
+    },
+    {
+      "source": "操作机构",
+      "target": "合闸弹跳时间",
+      "type": "控制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 438,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ac51456f206d25e5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\438_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "entities": [
+    {
+      "name": "直流电流互感器",
+      "type": "设备",
+      "desc": "一种用于测量直流电流的互感器"
+    },
+    {
+      "name": "误差",
+      "type": "参数",
+      "desc": "互感器在特定电流下的测量误差"
+    },
+    {
+      "name": "电流点",
+      "type": "参数",
+      "desc": "互感器需要测试的电流值点"
+    },
+    {
+      "name": "In",
+      "type": "参数",
+      "desc": "额定电流值"
+    },
+    {
+      "name": "0.1In",
+      "type": "参数",
+      "desc": "额定电流值的10%"
+    },
+    {
+      "name": "0.2In",
+      "type": "参数",
+      "desc": "额定电流值的20%"
+    },
+    {
+      "name": "1.2In",
+      "type": "参数",
+      "desc": "额定电流值的120%"
+    },
+    {
+      "name": "0.2%",
+      "type": "参数",
+      "desc": "误差限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试验直流电流互感器在下列各电流点的误差：0.1In、0.2In、In、1.2In。",
+      "type": "强制",
+      "subject": "直流电流互感器",
+      "action": "进行误差试验",
+      "condition": "直流电流互感器安装调试后",
+      "constraint": "在0.1In、0.2In、In、1.2In电流点进行误差试验",
+      "related_entities": [
+        "直流电流互感器",
+        "误差",
+        "电流点"
+      ]
+    },
+    {
+      "content": "若误差小于0.2%，则互感器通过本实验。",
+      "type": "强制",
+      "subject": "直流电流互感器",
+      "action": "通过误差试验",
+      "condition": "直流电流互感器在0.1In、0.2In、In、1.2In电流点的误差试验完成",
+      "constraint": "误差小于0.2%",
+      "related_entities": [
+        "直流电流互感器",
+        "误差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电流互感器",
+      "target": "误差",
+      "type": "测试"
+    },
+    {
+      "source": "直流电流互感器",
+      "target": "电流点",
+      "type": "测试点"
+    },
+    {
+      "source": "误差",
+      "target": "直流电流互感器",
+      "type": "测试结果"
+    },
+    {
+      "source": "直流电流互感器",
+      "target": "0.1In",
+      "type": "测试点"
+    },
+    {
+      "source": "直流电流互感器",
+      "target": "0.2In",
+      "type": "测试点"
+    },
+    {
+      "source": "直流电流互感器",
+      "target": "In",
+      "type": "测试点"
+    },
+    {
+      "source": "直流电流互感器",
+      "target": "1.2In",
+      "type": "测试点"
+    },
+    {
+      "source": "误差",
+      "target": "0.2%",
+      "type": "限值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1257,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "af8cbcb44ca495ab",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1257_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

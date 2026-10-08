@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "开关柜",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中进行电能分配与控制的装置"
+    },
+    {
+      "name": "柜门",
+      "type": "电力设备部件",
+      "desc": "开关柜上用于封闭内部电气元件的门板"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "衡量电气设备防尘、防水能力的技术指标"
+    },
+    {
+      "name": "IP4X",
+      "type": "防护等级标准",
+      "desc": "国际电工委员会制定的防护等级标准之一"
+    },
+    {
+      "name": "IP2X",
+      "type": "防护等级标准",
+      "desc": "国际电工委员会制定的防护等级标准之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在开关柜的柜门关闭时防护等级应达到IP4X或以上，柜门打开时防护等级达到IP2X或以上",
+      "type": "强制",
+      "subject": "开关柜制造商及使用者",
+      "action": "设计、制造、使用开关柜",
+      "condition": "开关柜在户外或潮湿环境中的应用",
+      "constraint": "柜门关闭时防护等级≥IP4X; 柜门打开时防护等级≥IP2X",
+      "related_entities": [
+        "开关柜",
+        "柜门",
+        "防护等级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关柜",
+      "target": "柜门",
+      "type": "包含"
+    },
+    {
+      "source": "柜门",
+      "target": "防护等级",
+      "type": "具有"
+    },
+    {
+      "source": "防护等级",
+      "target": "开关柜",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1835,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "68848d483310a068",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1835_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

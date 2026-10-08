@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "电力系统",
+      "type": "电力系统",
+      "desc": "电力系统的整体架构与运行特性"
+    },
+    {
+      "name": "发电厂",
+      "type": "发电设备",
+      "desc": "生产电能的场所"
+    },
+    {
+      "name": "变电站",
+      "type": "变配电设备",
+      "desc": "进行电压变换和电力分配的场所"
+    },
+    {
+      "name": "输电线路",
+      "type": "输电设备",
+      "desc": "传输电力的架空或电缆线路"
+    },
+    {
+      "name": "用户",
+      "type": "用电设备",
+      "desc": "电力系统的终端用户"
+    },
+    {
+      "name": "调度中心",
+      "type": "电力调度机构",
+      "desc": "电力系统运行的指挥中心"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电力系统应具备足够的备用容量，以保证在任何一台发电机故障停运时，系统仍能保持稳定运行。",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "保持稳定运行",
+      "condition": "任一发电机故障停运",
+      "constraint": "备用容量充足",
+      "related_entities": [
+        "电力系统",
+        "发电厂"
+      ]
+    },
+    {
+      "content": "变电站应配置必要的继电保护装置，确保电力系统安全稳定运行。",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "配置继电保护装置",
+      "condition": "电力系统运行",
+      "constraint": "继电保护装置齐全有效",
+      "related_entities": [
+        "变电站",
+        "电力系统"
+      ]
+    },
+    {
+      "content": "输电线路的设计应满足短路电流的要求，防止因短路导致设备损坏。",
+      "type": "强制",
+      "subject": "输电线路",
+      "action": "设计满足短路电流要求",
+      "condition": "电力系统运行",
+      "constraint": "短路电流不超过设备额定值",
+      "related_entities": [
+        "输电线路",
+        "电力系统"
+      ]
+    },
+    {
+      "content": "用户应安装电能计量装置，按实际用电量缴纳电费。",
+      "type": "强制",
+      "subject": "用户",
+      "action": "安装电能计量装置",
+      "condition": "电力系统运行",
+      "constraint": "计量装置准确可靠",
+      "related_entities": [
+        "用户",
+        "电力系统"
+      ]
+    },
+    {
+      "content": "调度中心应根据负荷预测合理安排发电计划，确保电力供需平衡。",
+      "type": "强制",
+      "subject": "调度中心",
+      "action": "合理安排发电计划",
+      "condition": "电力系统运行",
+      "constraint": "负荷预测准确",
+      "related_entities": [
+        "调度中心",
+        "电力系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电力系统",
+      "target": "发电厂",
+      "type": "供电"
+    },
+    {
+      "source": "电力系统",
+      "target": "变电站",
+      "type": "供电"
+    },
+    {
+      "source": "电力系统",
+      "target": "输电线路",
+      "type": "供电"
+    },
+    {
+      "source": "电力系统",
+      "target": "用户",
+      "type": "供电"
+    },
+    {
+      "source": "电力系统",
+      "target": "调度中心",
+      "type": "调度"
+    },
+    {
+      "source": "变电站",
+      "target": "输电线路",
+      "type": "连接"
+    },
+    {
+      "source": "变电站",
+      "target": "用户",
+      "type": "供电"
+    },
+    {
+      "source": "调度中心",
+      "target": "发电厂",
+      "type": "调度"
+    },
+    {
+      "source": "调度中心",
+      "target": "变电站",
+      "type": "调度"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2019,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d45190313fb8023c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2019_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

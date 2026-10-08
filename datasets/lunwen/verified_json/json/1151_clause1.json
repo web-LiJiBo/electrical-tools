@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "三相柱上变压器",
+      "type": "设备",
+      "desc": "安装在电杆上的三相变压器"
+    },
+    {
+      "name": "单相柱上变压器",
+      "type": "设备",
+      "desc": "安装在电杆上的单相变压器"
+    },
+    {
+      "name": "30kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为30kVA"
+    },
+    {
+      "name": "50kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为50kVA"
+    },
+    {
+      "name": "100kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为100kVA"
+    },
+    {
+      "name": "160kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为160kVA"
+    },
+    {
+      "name": "200kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为200kVA"
+    },
+    {
+      "name": "315kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为315kVA"
+    },
+    {
+      "name": "400kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为400kVA"
+    },
+    {
+      "name": "80kVA",
+      "type": "容量",
+      "desc": "变压器的额定容量为80kVA"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三相柱上变压器容量序列为30kVA、50kVA、100kVA、160kVA、200kVA、315kVA、400kVA",
+      "type": "强制",
+      "subject": "三相柱上变压器",
+      "action": "选择额定容量",
+      "condition": "安装在电杆上",
+      "constraint": "30kVA, 50kVA, 100kVA, 160kVA, 200kVA, 315kVA, 400kVA",
+      "related_entities": [
+        "三相柱上变压器"
+      ]
+    },
+    {
+      "content": "单相柱上变压器容量序列为30kVA、50kVA、80kVA、100kVA",
+      "type": "强制",
+      "subject": "单相柱上变压器",
+      "action": "选择额定容量",
+      "condition": "安装在电杆上",
+      "constraint": "30kVA, 50kVA, 80kVA, 100kVA",
+      "related_entities": [
+        "单相柱上变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三相柱上变压器",
+      "target": "30kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "50kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "100kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "160kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "200kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "315kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "三相柱上变压器",
+      "target": "400kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "单相柱上变压器",
+      "target": "30kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "单相柱上变压器",
+      "target": "50kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "单相柱上变压器",
+      "target": "80kVA",
+      "type": "额定容量"
+    },
+    {
+      "source": "单相柱上变压器",
+      "target": "100kVA",
+      "type": "额定容量"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1151,
+      "source_row_id": "1151",
+      "clause_index": 1,
+      "source_text": "三相柱上变压器容量序列为30kVA、50kVA、100kVA、160kVA、200kVA、315kVA、400kVA”，“单相柱上变压器容量序列为30kVA、50kVA、80kVA、100kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.044950+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

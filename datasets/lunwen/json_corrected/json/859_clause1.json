@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "高压套管",
+      "type": "电力设备",
+      "desc": "高压输电系统中用于绝缘的套管"
+    },
+    {
+      "name": "末屏",
+      "type": "电力设备部件",
+      "desc": "高压套管内部的接地屏蔽装置"
+    },
+    {
+      "name": "介质损耗因数",
+      "type": "电气参数",
+      "desc": "反映绝缘材料在交流电压作用下能量损耗的参数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高压套管诊断性试验表21:末屏（如有）介质损耗因数≤0.015",
+      "type": "强制",
+      "subject": "高压套管",
+      "action": "进行诊断性试验",
+      "condition": "高压套管存在末屏",
+      "constraint": "末屏介质损耗因数≤0.015",
+      "related_entities": [
+        "高压套管",
+        "末屏"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高压套管",
+      "target": "末屏",
+      "type": "包含"
+    },
+    {
+      "source": "末屏",
+      "target": "介质损耗因数",
+      "type": "测量"
+    }
+  ],
+  "metadata": {
+    "pair_id": 859,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6e54f2512ad1a2a6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\859_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "阀",
+      "type": "电力设备",
+      "desc": "电力系统中的晶闸管阀"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力电子器件",
+      "desc": "电力系统中用于控制电流的半导体器件"
+    },
+    {
+      "name": "晶闸管阀管级",
+      "type": "电力设备部件",
+      "desc": "晶闸管阀中的基本单元"
+    },
+    {
+      "name": "冗余数",
+      "type": "技术参数",
+      "desc": "晶闸管阀管级的冗余数量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀的设计应考虑阀中晶闸管电压分布不均匀性而留有适当裕量",
+      "type": "强制",
+      "subject": "阀设计者",
+      "action": "设计阀",
+      "condition": "阀中晶闸管电压分布不均匀",
+      "constraint": "留有适当裕量",
+      "related_entities": [
+        "阀",
+        "晶闸管"
+      ]
+    },
+    {
+      "content": "单相每组晶闸管阀中串联晶闸管阀管级的最小冗余数为1",
+      "type": "强制",
+      "subject": "阀设计者",
+      "action": "设计阀",
+      "condition": "单相每组晶闸管阀中串联晶闸管阀管级",
+      "constraint": "最小冗余数为1",
+      "related_entities": [
+        "阀",
+        "晶闸管阀管级",
+        "冗余数"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀",
+      "target": "晶闸管",
+      "type": "包含"
+    },
+    {
+      "source": "阀",
+      "target": "晶闸管阀管级",
+      "type": "包含"
+    },
+    {
+      "source": "晶闸管阀管级",
+      "target": "晶闸管",
+      "type": "组成"
+    },
+    {
+      "source": "阀设计者",
+      "target": "阀",
+      "type": "设计"
+    },
+    {
+      "source": "阀设计者",
+      "target": "晶闸管阀管级",
+      "type": "设计"
+    },
+    {
+      "source": "阀设计者",
+      "target": "冗余数",
+      "type": "设计"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2487,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ef9338025c516e51",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2487_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

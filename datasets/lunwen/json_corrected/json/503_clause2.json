@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "普通导体",
+      "type": "电力设备",
+      "desc": "电力系统中常用的导电材料"
+    },
+    {
+      "name": "钢芯铝线",
+      "type": "电力设备",
+      "desc": "一种由钢芯和铝线组成的复合导体"
+    },
+    {
+      "name": "管形导体",
+      "type": "电力设备",
+      "desc": "一种具有管状结构的导体"
+    },
+    {
+      "name": "镀（搪）锡的可靠覆盖层",
+      "type": "电力设备",
+      "desc": "导体表面的金属覆盖层，用于防腐蚀和提高导电性能"
+    },
+    {
+      "name": "特种耐热导体",
+      "type": "电力设备",
+      "desc": "具有较高耐热性能的特殊导体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "普通导体的正常最高工作温度不宜超过+70℃",
+      "type": "强制",
+      "subject": "普通导体",
+      "action": "运行",
+      "condition": "正常运行",
+      "constraint": "+70℃",
+      "related_entities": [
+        "普通导体"
+      ]
+    },
+    {
+      "content": "在计及日照影响时，钢芯铝线及管形导体可按不超过+80℃考虑",
+      "type": "强制",
+      "subject": "钢芯铝线及管形导体",
+      "action": "运行",
+      "condition": "日照影响下",
+      "constraint": "+80℃",
+      "related_entities": [
+        "钢芯铝线",
+        "管形导体"
+      ]
+    },
+    {
+      "content": "当普通导体接触面处有镀（搪）锡的可靠覆盖层时，可提高到+85℃",
+      "type": "强制",
+      "subject": "普通导体",
+      "action": "运行",
+      "condition": "接触面有镀（搪）锡的可靠覆盖层",
+      "constraint": "+85℃",
+      "related_entities": [
+        "普通导体",
+        "镀（搪）锡的可靠覆盖层"
+      ]
+    },
+    {
+      "content": "特种耐热导体的最高工作温度可根据制造厂提供的数据选择使用，但要考虑高温导体对连接设备的影响，并采取防护措施",
+      "type": "强制",
+      "subject": "特种耐热导体",
+      "action": "运行",
+      "condition": "高温环境下",
+      "constraint": "根据制造厂提供的数据",
+      "related_entities": [
+        "特种耐热导体",
+        "连接设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "普通导体",
+      "target": "镀（搪）锡的可靠覆盖层",
+      "type": "覆盖"
+    },
+    {
+      "source": "普通导体",
+      "target": "钢芯铝线",
+      "type": "组成"
+    },
+    {
+      "source": "普通导体",
+      "target": "管形导体",
+      "type": "组成"
+    },
+    {
+      "source": "普通导体",
+      "target": "特种耐热导体",
+      "type": "类别"
+    },
+    {
+      "source": "特种耐热导体",
+      "target": "连接设备",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 503,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "817374e5be6d7737",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\503_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

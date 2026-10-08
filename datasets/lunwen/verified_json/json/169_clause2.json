@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "操动机构箱",
+      "type": "电力设备",
+      "desc": "电力系统中用于操作断路器等开关设备的机械装置"
+    },
+    {
+      "name": "防寒",
+      "type": "环境要求",
+      "desc": "设备在低温环境下正常工作的能力"
+    },
+    {
+      "name": "防腐",
+      "type": "环境要求",
+      "desc": "设备在腐蚀性环境中正常工作的能力"
+    },
+    {
+      "name": "防潮",
+      "type": "环境要求",
+      "desc": "设备在潮湿环境中正常工作的能力"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "设备防护性能的技术指标"
+    },
+    {
+      "name": "IP54",
+      "type": "防护等级",
+      "desc": "国际电工委员会规定的防护等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "操动机构箱应能防寒、防腐、防潮，防护等级满足IP54的要求。",
+      "type": "强制",
+      "subject": "操动机构箱",
+      "action": "设计制造",
+      "condition": "安装于户外或潮湿环境",
+      "constraint": "防护等级≥IP54",
+      "related_entities": [
+        "操动机构箱",
+        "防寒",
+        "防腐",
+        "防潮",
+        "防护等级",
+        "IP54"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "操动机构箱",
+      "target": "防寒",
+      "type": "满足要求"
+    },
+    {
+      "source": "操动机构箱",
+      "target": "防腐",
+      "type": "满足要求"
+    },
+    {
+      "source": "操动机构箱",
+      "target": "防潮",
+      "type": "满足要求"
+    },
+    {
+      "source": "操动机构箱",
+      "target": "防护等级",
+      "type": "满足要求"
+    },
+    {
+      "source": "防护等级",
+      "target": "IP54",
+      "type": "满足要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 169,
+      "source_row_id": "169",
+      "clause_index": 2,
+      "source_text": "“操动机构箱应能防寒、防腐、防潮，防护等级满足IP54的要求。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.937602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

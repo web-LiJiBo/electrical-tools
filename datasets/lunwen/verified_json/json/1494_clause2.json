@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于变换电流或电压的电气设备"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "通过施加交流高压来检验电气设备绝缘性能的方法"
+    },
+    {
+      "name": "二次绕组",
+      "type": "电力设备部件",
+      "desc": "互感器中用于测量电流或电压的线圈"
+    },
+    {
+      "name": "外壳",
+      "type": "电力设备部件",
+      "desc": "互感器的外部保护结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "互感器交流耐压试验，应符合下列规定：4二次绕组之间及其对外壳的工频耐压试验电压标准应为2kV",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "进行交流耐压试验",
+      "condition": "互感器出厂或交接时",
+      "constraint": "二次绕组之间及其对外壳的工频耐压试验电压标准应为2kV",
+      "related_entities": [
+        "互感器",
+        "交流耐压试验",
+        "二次绕组",
+        "外壳"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "交流耐压试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "二次绕组",
+      "target": "互感器",
+      "type": "属于"
+    },
+    {
+      "source": "外壳",
+      "target": "互感器",
+      "type": "属于"
+    },
+    {
+      "source": "交流耐压试验",
+      "target": "二次绕组",
+      "type": "针对对象"
+    },
+    {
+      "source": "交流耐压试验",
+      "target": "外壳",
+      "type": "针对对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1494,
+      "source_row_id": "1494",
+      "clause_index": 2,
+      "source_text": "没有规定段间绝缘试验项目；9.0.5.互感器交流耐压试验，应符合下列规定：4二次绕组之间及其对外壳的工频耐压试验电压标准应为2kV"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.444368+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

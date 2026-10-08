@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于变换电流或电压的电气设备"
+    },
+    {
+      "name": "精确测温",
+      "type": "检测方法",
+      "desc": "通过红外热像仪等手段对设备进行精确温度测量的方法"
+    },
+    {
+      "name": "新建互感器",
+      "type": "电力设备",
+      "desc": "新安装的互感器设备"
+    },
+    {
+      "name": "改扩建或大修后互感器",
+      "type": "电力设备",
+      "desc": "经过改造、扩建或大修后的互感器设备"
+    },
+    {
+      "name": "220kV及以上电压等级互感器",
+      "type": "电力设备",
+      "desc": "额定电压为220kV及以上的互感器设备"
+    },
+    {
+      "name": "高温大负荷运行",
+      "type": "运行状态",
+      "desc": "设备在高温和高负载条件下运行的状态"
+    },
+    {
+      "name": "数据库",
+      "type": "信息存储系统",
+      "desc": "用于存储设备检测数据和图像的信息管理系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新建、改扩建或大修后的互感器，应在投运后不超过1个月内(但至少在24h以后)进行一次精确检测。",
+      "type": "强制",
+      "subject": "新建、改扩建或大修后的互感器",
+      "action": "进行精确检测",
+      "condition": "投运后不超过1个月且至少在24小时以后",
+      "constraint": "1个月, 24小时",
+      "related_entities": [
+        "新建互感器",
+        "改扩建或大修后互感器",
+        "精确测温"
+      ]
+    },
+    {
+      "content": "220kV及以上电压等级的互感器每年在季节变化前后应至少各进行一次精确检测。",
+      "type": "强制",
+      "subject": "220kV及以上电压等级互感器",
+      "action": "进行精确检测",
+      "condition": "每年季节变化前后",
+      "constraint": "每年, 季节变化前后",
+      "related_entities": [
+        "220kV及以上电压等级互感器",
+        "精确测温"
+      ]
+    },
+    {
+      "content": "在高温大负荷运行期间，对220kV及以上电压等级互感器应增加红外检测次数。",
+      "type": "强制",
+      "subject": "220kV及以上电压等级互感器",
+      "action": "增加红外检测次数",
+      "condition": "高温大负荷运行期间",
+      "constraint": "高温大负荷运行期间",
+      "related_entities": [
+        "220kV及以上电压等级互感器",
+        "高温大负荷运行",
+        "精确测温"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "新建互感器",
+      "target": "精确测温",
+      "type": "需要进行"
+    },
+    {
+      "source": "改扩建或大修后互感器",
+      "target": "精确测温",
+      "type": "需要进行"
+    },
+    {
+      "source": "220kV及以上电压等级互感器",
+      "target": "精确测温",
+      "type": "需要进行"
+    },
+    {
+      "source": "220kV及以上电压等级互感器",
+      "target": "高温大负荷运行",
+      "type": "处于"
+    },
+    {
+      "source": "新建互感器",
+      "target": "220kV及以上电压等级互感器",
+      "type": "属于"
+    },
+    {
+      "source": "改扩建或大修后互感器",
+      "target": "220kV及以上电压等级互感器",
+      "type": "属于"
+    },
+    {
+      "source": "高温大负荷运行",
+      "target": "220kV及以上电压等级互感器",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 20,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ec4570c1ab76aebc",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\20_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

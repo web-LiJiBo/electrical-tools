@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "水下电缆",
+      "type": "电力设施",
+      "desc": "敷设于水下的电缆"
+    },
+    {
+      "name": "通航水道",
+      "type": "地理环境",
+      "desc": "需要船只通行的水域"
+    },
+    {
+      "name": "机械力损伤",
+      "type": "风险因素",
+      "desc": "外部机械作用导致的电缆损坏"
+    },
+    {
+      "name": "沟槽",
+      "type": "施工工艺",
+      "desc": "用于埋设电缆的土方挖掘区域"
+    },
+    {
+      "name": "浅水区",
+      "type": "地理环境",
+      "desc": "水深较浅的水域"
+    },
+    {
+      "name": "深水航道",
+      "type": "地理环境",
+      "desc": "水深较深且需要船只通行的航道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水下电缆不得悬空于水中，应埋置于水底。",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "任何水域",
+      "constraint": "不得悬空于水中，应埋置于水底",
+      "related_entities": [
+        "水下电缆"
+      ]
+    },
+    {
+      "content": "在通航水道等需防范外部机械力损伤的水域，电缆应埋置于水底适当深度的沟槽中，并应加以稳固覆盖保护。",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "通航水道等需防范外部机械力损伤的水域",
+      "constraint": "埋置于水底适当深度的沟槽中，并加以稳固覆盖保护",
+      "related_entities": [
+        "水下电缆",
+        "通航水道",
+        "机械力损伤",
+        "沟槽"
+      ]
+    },
+    {
+      "content": "浅水区的埋深不宜小于0.5m，深水航道的埋深不宜小于2m。",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "浅水区或深水航道",
+      "constraint": "浅水区埋深≥0.5m，深水航道埋深≥2m",
+      "related_entities": [
+        "水下电缆",
+        "浅水区",
+        "深水航道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水下电缆",
+      "target": "通航水道",
+      "type": "敷设于"
+    },
+    {
+      "source": "水下电缆",
+      "target": "机械力损伤",
+      "type": "防范"
+    },
+    {
+      "source": "水下电缆",
+      "target": "沟槽",
+      "type": "敷设于"
+    },
+    {
+      "source": "水下电缆",
+      "target": "浅水区",
+      "type": "敷设于"
+    },
+    {
+      "source": "水下电缆",
+      "target": "深水航道",
+      "type": "敷设于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2310,
+      "source_row_id": "2310",
+      "clause_index": 2,
+      "source_text": "水下电缆不得悬空于水中，应埋置于水底。在通航水道等需防范外部机械力损伤的水域，电缆应埋置于水底适当深度的沟槽中，并应加以稳固覆盖保护；浅水区的埋深不宜小于0.5m，深水航道的埋深不宜小于2m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.397546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

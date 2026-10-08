@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压，以利于功率的传输"
+    },
+    {
+      "name": "储油柜",
+      "type": "电力设备部件",
+      "desc": "变压器中用于储存变压器油的容器"
+    },
+    {
+      "name": "气体继电器",
+      "type": "电力设备部件",
+      "desc": "变压器内部故障时发出信号或切断电源的保护装置"
+    },
+    {
+      "name": "断流阀",
+      "type": "电力设备部件",
+      "desc": "控制油流方向和流量的阀门"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装有排油注氮装置的变压器本体储油柜与气体继电器间应增设断流阀",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "增设断流阀",
+      "condition": "变压器本体储油柜与气体继电器间",
+      "constraint": "装有排油注氮装置",
+      "related_entities": [
+        "变压器",
+        "储油柜",
+        "气体继电器",
+        "断流阀"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "储油柜",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "气体继电器",
+      "type": "连接"
+    },
+    {
+      "source": "变压器",
+      "target": "断流阀",
+      "type": "连接"
+    },
+    {
+      "source": "储油柜",
+      "target": "断流阀",
+      "type": "连接"
+    },
+    {
+      "source": "气体继电器",
+      "target": "断流阀",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3097,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0f38d645a339f966",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3097_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

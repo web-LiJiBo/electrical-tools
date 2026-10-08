@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "超净的可交联聚乙烯料",
+      "type": "材料",
+      "desc": "一种用于电力电缆绝缘层的高纯度可交联聚乙烯材料"
+    },
+    {
+      "name": "绝缘料",
+      "type": "材料",
+      "desc": "电力电缆中用于绝缘的材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘料推荐采用超净的可交联聚乙烯料",
+      "type": "强制",
+      "subject": "绝缘料",
+      "action": "推荐使用",
+      "condition": "电力电缆制造过程",
+      "constraint": "推荐采用超净的可交联聚乙烯料",
+      "related_entities": [
+        "超净的可交联聚乙烯料",
+        "绝缘料"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘料",
+      "target": "超净的可交联聚乙烯料",
+      "type": "推荐使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1847,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "be11c47750fc1eee",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1847_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

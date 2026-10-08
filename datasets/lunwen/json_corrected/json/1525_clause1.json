@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "使用环境",
+      "type": "环境",
+      "desc": "电力设备运行的外部环境条件"
+    },
+    {
+      "name": "污秽等级",
+      "type": "环境参数",
+      "desc": "电力设备周围环境的污秽程度分类"
+    },
+    {
+      "name": "IV级污秽",
+      "type": "环境参数",
+      "desc": "电力设备周围环境的污秽程度为IV级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在IV级污秽环境下，应按照GB/T 16927.1-2015《高电压试验技术 第1部分：试验方法》的要求进行试验",
+      "type": "强制",
+      "subject": "电力设备制造商与用户",
+      "action": "试验",
+      "condition": "电力设备在IV级污秽环境下运行",
+      "constraint": "试验方法遵循GB/T 16927.1-2015",
+      "related_entities": [
+        "使用环境",
+        "IV级污秽"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "使用环境",
+      "target": "IV级污秽",
+      "type": "包含"
+    },
+    {
+      "source": "IV级污秽",
+      "target": "使用环境",
+      "type": "被包含于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1525,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bca28b136ca6f575",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1525_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

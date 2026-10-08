@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "耐张段",
+      "type": "电力设施",
+      "desc": "电力系统中的耐张段是指在输电线路中采用耐张杆塔进行分段的线路部分"
+    },
+    {
+      "name": "轻冰区",
+      "type": "地理环境",
+      "desc": "覆冰厚度小于10mm的地区"
+    },
+    {
+      "name": "中冰区",
+      "type": "地理环境",
+      "desc": "覆冰厚度在10mm至20mm之间的地区"
+    },
+    {
+      "name": "重冰区",
+      "type": "地理环境",
+      "desc": "覆冰厚度大于20mm的地区"
+    },
+    {
+      "name": "加强型悬垂型杆塔",
+      "type": "电力设施",
+      "desc": "具有较强纵向强度的悬垂型杆塔"
+    }
+  ],
+  "rules": [
+    {
+      "content": "轻、中、重冰区的耐张段长度分别不宜大于10km、5km和3km，且单导线线路不宜大于5km。",
+      "type": "强制",
+      "subject": "耐张段",
+      "action": "设计与建设",
+      "condition": "轻、中、重冰区",
+      "constraint": "轻冰区≤10km，中冰区≤5km，重冰区≤3km，单导线线路≤5km",
+      "related_entities": [
+        "耐张段",
+        "轻冰区",
+        "中冰区",
+        "重冰区"
+      ]
+    },
+    {
+      "content": "当耐张段长度较长时应考虑防串倒措施，例如，轻冰区每隔7基～8基（中冰区每隔4基～5基）设置一基纵向强度较大的加强型悬垂型杆塔。",
+      "type": "强制",
+      "subject": "耐张段",
+      "action": "设计与建设",
+      "condition": "耐张段长度较长",
+      "constraint": "轻冰区≥10km，中冰区≥5km",
+      "related_entities": [
+        "耐张段",
+        "轻冰区",
+        "中冰区",
+        "加强型悬垂型杆塔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "耐张段",
+      "target": "轻冰区",
+      "type": "位于"
+    },
+    {
+      "source": "耐张段",
+      "target": "中冰区",
+      "type": "位于"
+    },
+    {
+      "source": "耐张段",
+      "target": "重冰区",
+      "type": "位于"
+    },
+    {
+      "source": "耐张段",
+      "target": "加强型悬垂型杆塔",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 665,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "25aff4506b2af8ce",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\665_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

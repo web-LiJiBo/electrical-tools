@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "40.5kV开关柜",
+      "type": "电力设备",
+      "desc": "40.5kV电压等级的开关柜"
+    },
+    {
+      "name": "架空进线",
+      "type": "电力线路",
+      "desc": "架空线路接入电力系统的方式"
+    },
+    {
+      "name": "架空出线",
+      "type": "电力线路",
+      "desc": "架空线路从电力系统引出的方式"
+    },
+    {
+      "name": "电缆进线",
+      "type": "电力线路",
+      "desc": "电缆接入电力系统的方式"
+    },
+    {
+      "name": "电缆出线",
+      "type": "电力线路",
+      "desc": "电缆从电力系统引出的方式"
+    },
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "电力系统中用于汇集、分配和控制电能的场所"
+    },
+    {
+      "name": "开关柜外形尺寸",
+      "type": "技术参数",
+      "desc": "开关柜的外形尺寸规格"
+    }
+  ],
+  "rules": [
+    {
+      "content": "40.5kV开关柜外形尺寸应统一",
+      "type": "强制",
+      "subject": "40.5kV开关柜",
+      "action": "设计与制造",
+      "condition": "不同厂家生产的开关柜外形尺寸不一致",
+      "constraint": "长2800mm、宽1400mm、高2600mm",
+      "related_entities": [
+        "40.5kV开关柜",
+        "开关柜外形尺寸"
+      ]
+    },
+    {
+      "content": "变电站用地紧张、负荷密度较大地区柜宽可采用1200mm",
+      "type": "强制",
+      "subject": "40.5kV开关柜",
+      "action": "设计与制造",
+      "condition": "变电站用地紧张、负荷密度较大地区",
+      "constraint": "柜宽1200mm",
+      "related_entities": [
+        "40.5kV开关柜",
+        "开关柜外形尺寸"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "40.5kV开关柜",
+      "target": "架空进线",
+      "type": "连接方式"
+    },
+    {
+      "source": "40.5kV开关柜",
+      "target": "架空出线",
+      "type": "连接方式"
+    },
+    {
+      "source": "40.5kV开关柜",
+      "target": "电缆进线",
+      "type": "连接方式"
+    },
+    {
+      "source": "40.5kV开关柜",
+      "target": "电缆出线",
+      "type": "连接方式"
+    },
+    {
+      "source": "40.5kV开关柜",
+      "target": "变电站",
+      "type": "安装位置"
+    },
+    {
+      "source": "40.5kV开关柜外形尺寸",
+      "target": "40.5kV开关柜",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 40,
+      "source_row_id": "40",
+      "clause_index": 2,
+      "source_text": "电气一次接口a）40.5kV开关柜外形尺寸：由于不同厂家生产的开关柜外形尺寸不一致，架空进、出线及电缆进、出线的40.5kV开关柜应统一外形尺寸，标准化设计推荐生产尺寸为长2800mm、宽1400mm、高2600mm。对于变电站用地紧张、负荷密度较大的地区柜宽可采用1200mm"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.6839,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.795602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

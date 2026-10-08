@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备",
+      "desc": "变压器内部磁路的主要组成部分"
+    },
+    {
+      "name": "绕组",
+      "type": "电力设备",
+      "desc": "变压器内部产生电磁感应的导电部分"
+    },
+    {
+      "name": "电器连接线",
+      "type": "电力设备",
+      "desc": "变压器外部用于电气连接的导线"
+    },
+    {
+      "name": "结构件",
+      "type": "电力设备",
+      "desc": "变压器油箱内部的支撑或固定元件"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器内部绝缘油的储存容器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心、绕组外部的电器连接线或油箱中的结构件≤80K，并保证不使其相邻的部件受到热损坏使油过度老化",
+      "type": "强制",
+      "subject": "变压器制造与检修人员",
+      "action": "设计、制造、检修变压器时",
+      "condition": "变压器运行环境温度不超过80K",
+      "constraint": "确保变压器铁心、绕组外部的电器连接线或油箱中的结构件温度不超过80K，防止相邻部件因过热而损坏，避免变压器油过度老化",
+      "related_entities": [
+        "铁心",
+        "绕组",
+        "电器连接线",
+        "结构件",
+        "油箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "绕组",
+      "type": "电磁耦合"
+    },
+    {
+      "source": "铁心",
+      "target": "电器连接线",
+      "type": "电气连接"
+    },
+    {
+      "source": "铁心",
+      "target": "油箱",
+      "type": "磁路闭合"
+    },
+    {
+      "source": "绕组",
+      "target": "电器连接线",
+      "type": "电气连接"
+    },
+    {
+      "source": "绕组",
+      "target": "油箱",
+      "type": "绝缘介质"
+    },
+    {
+      "source": "电器连接线",
+      "target": "油箱",
+      "type": "电气连接"
+    },
+    {
+      "source": "结构件",
+      "target": "油箱",
+      "type": "固定支撑"
+    }
+  ],
+  "metadata": {
+    "pair_id": 94,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "695b387eff446b4d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\94_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

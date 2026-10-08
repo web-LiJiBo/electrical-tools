@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "用于测量电压或电流的电气设备"
+    },
+    {
+      "name": "110kV及以上电压等级互感器",
+      "type": "电力设备",
+      "desc": "110kV及以上电压等级的互感器设备"
+    },
+    {
+      "name": "35kV及以下电压等级互感器",
+      "type": "电力设备",
+      "desc": "35kV及以下电压等级的互感器设备"
+    },
+    {
+      "name": "DL/T393-2010《输变电设备状态检修试验规程》",
+      "type": "技术标准",
+      "desc": "输变电设备状态检修试验的技术规范"
+    },
+    {
+      "name": "例行试验",
+      "type": "试验项目",
+      "desc": "对电力设备进行的常规检测与试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "已安装完成的互感器若长期未带电运行（110kV及以上大于半146年；35kV及以下一年以上），在投运前应按照DL/T393-2010《输变电设备状态检修试验规程》进行例行试验",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "进行例行试验",
+      "condition": "已安装完成的互感器长期未带电运行",
+      "constraint": "110kV及以上电压等级互感器大于半146年；35kV及以下电压等级互感器一年以上",
+      "related_entities": [
+        "互感器",
+        "110kV及以上电压等级互感器",
+        "35kV及以下电压等级互感器",
+        "DL/T393-2010《输变电设备状态检修试验规程》",
+        "例行试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "110kV及以上电压等级互感器",
+      "type": "属于"
+    },
+    {
+      "source": "互感器",
+      "target": "35kV及以下电压等级互感器",
+      "type": "属于"
+    },
+    {
+      "source": "110kV及以上电压等级互感器",
+      "target": "互感器",
+      "type": "实例化"
+    },
+    {
+      "source": "35kV及以下电压等级互感器",
+      "target": "互感器",
+      "type": "实例化"
+    },
+    {
+      "source": "互感器",
+      "target": "DL/T393-2010《输变电设备状态检修试验规程》",
+      "type": "依据"
+    },
+    {
+      "source": "互感器",
+      "target": "例行试验",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 716,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c06da88cbb176c20",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\716_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

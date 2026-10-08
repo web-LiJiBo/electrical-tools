@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "电气设备在安装或检修后进行的首次测试"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验",
+      "desc": "对电气设备施加高于额定电压的交流电压以检验其绝缘性能的试验"
+    },
+    {
+      "name": "局放检测",
+      "type": "试验",
+      "desc": "局部放电检测，用于发现电气设备内部的局部放电现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交接试验时，应在交流耐压试验的同时进行局放检测",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行交接试验",
+      "condition": "新安装或检修后的电气设备",
+      "constraint": "在交流耐压试验的同时进行局放检测",
+      "related_entities": [
+        "交接试验",
+        "交流耐压试验",
+        "局放检测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交接试验",
+      "target": "交流耐压试验",
+      "type": "同时进行"
+    },
+    {
+      "source": "交接试验",
+      "target": "局放检测",
+      "type": "同时进行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2801,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b6617930e96f01a1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2801_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

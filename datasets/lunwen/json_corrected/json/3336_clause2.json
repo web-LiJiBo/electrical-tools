@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "接地网",
+      "type": "电力设备",
+      "desc": "用于将电气设备的外壳或金属结构与大地连接起来的装置"
+    },
+    {
+      "name": "故障电流",
+      "type": "电力参数",
+      "desc": "电力系统发生故障时流经保护装置的电流"
+    },
+    {
+      "name": "总故障电流",
+      "type": "电力参数",
+      "desc": "电力系统发生故障时流经整个系统的电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地网分流系数：通过接地网泄放的故障电流与总故障电流之间的比值。",
+      "type": "强制",
+      "subject": "电力系统设计人员",
+      "action": "计算接地网分流系数",
+      "condition": "电力系统设计阶段",
+      "constraint": "接地网分流系数应大于0且小于1",
+      "related_entities": [
+        "接地网",
+        "故障电流",
+        "总故障电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地网",
+      "target": "故障电流",
+      "type": "泄放"
+    },
+    {
+      "source": "接地网",
+      "target": "总故障电流",
+      "type": "分流"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3336,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e8be92ef88e5eb91",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3336_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

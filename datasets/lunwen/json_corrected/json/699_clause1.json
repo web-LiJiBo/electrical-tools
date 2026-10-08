@@ -1,0 +1,118 @@
+{
+  "entities": [
+    {
+      "name": "单个绝缘子",
+      "type": "电力设备",
+      "desc": "电力系统中用于绝缘的设备"
+    },
+    {
+      "name": "10kV试验电压",
+      "type": "试验参数",
+      "desc": "单个绝缘子耐压试验电压"
+    },
+    {
+      "name": "1MHz测量频率",
+      "type": "试验参数",
+      "desc": "无线电干扰测量频率"
+    },
+    {
+      "name": "无线电干扰水平",
+      "type": "试验结果",
+      "desc": "无线电干扰强度"
+    },
+    {
+      "name": "50μV",
+      "type": "试验结果",
+      "desc": "单个绝缘子无线电干扰水平限值"
+    },
+    {
+      "name": "1.1×Um/√3kV试验电压",
+      "type": "试验参数",
+      "desc": "绝缘子串耐压试验电压"
+    },
+    {
+      "name": "500μV",
+      "type": "试验结果",
+      "desc": "绝缘子串无线电干扰水平限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "单个绝缘子在10kV试验电压和1MHz测量频率下，无线电干扰水平不大于50μV",
+      "type": "强制",
+      "subject": "单个绝缘子",
+      "action": "进行无线电干扰试验",
+      "condition": "10kV试验电压和1MHz测量频率",
+      "constraint": "无线电干扰水平不大于50μV",
+      "related_entities": [
+        "单个绝缘子",
+        "10kV试验电压",
+        "1MHz测量频率",
+        "无线电干扰水平",
+        "50μV"
+      ]
+    },
+    {
+      "content": "在规定1.1×Um/√3kV试验电压下，绝缘子串的无线电干扰水平不大于500μV",
+      "type": "强制",
+      "subject": "绝缘子串",
+      "action": "进行无线电干扰试验",
+      "condition": "1.1×Um/√3kV试验电压",
+      "constraint": "无线电干扰水平不大于500μV",
+      "related_entities": [
+        "绝缘子串",
+        "1.1×Um/√3kV试验电压",
+        "无线电干扰水平",
+        "500μV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "单个绝缘子",
+      "target": "10kV试验电压",
+      "type": "满足"
+    },
+    {
+      "source": "单个绝缘子",
+      "target": "1MHz测量频率",
+      "type": "满足"
+    },
+    {
+      "source": "单个绝缘子",
+      "target": "无线电干扰水平",
+      "type": "产生"
+    },
+    {
+      "source": "单个绝缘子",
+      "target": "50μV",
+      "type": "不超过"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "1.1×Um/√3kV试验电压",
+      "type": "满足"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "无线电干扰水平",
+      "type": "产生"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "500μV",
+      "type": "不超过"
+    }
+  ],
+  "metadata": {
+    "pair_id": 699,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fe37ab0c0db50741",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\699_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

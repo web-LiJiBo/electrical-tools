@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "隔离开关在正常工作条件下允许通过的最大电流值"
+    },
+    {
+      "name": "最大长时直流运行电流",
+      "type": "运行参数",
+      "desc": "隔离开关在长时间直流运行条件下允许通过的最大电流值"
+    },
+    {
+      "name": "额定输送容量",
+      "type": "电气参数",
+      "desc": "隔离开关额定输送容量对应的直流电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔离开关的额定电流为最大长时直流运行电流",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "选取额定电流",
+      "condition": "隔离开关在最大长时直流运行条件下",
+      "constraint": "额定电流=最大长时直流运行电流",
+      "related_entities": [
+        "隔离开关",
+        "额定电流",
+        "最大长时直流运行电流"
+      ]
+    },
+    {
+      "content": "隔离开关的额定电流通常按额定输送容量对应的直流电流的1.25倍选取",
+      "type": "建议",
+      "subject": "隔离开关",
+      "action": "选取额定电流",
+      "condition": "隔离开关在正常工作条件下",
+      "constraint": "额定电流≤1.25×额定输送容量对应的直流电流",
+      "related_entities": [
+        "隔离开关",
+        "额定电流",
+        "额定输送容量",
+        "直流电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "额定电流",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "最大长时直流运行电流",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "额定输送容量",
+      "type": "包含"
+    },
+    {
+      "source": "额定电流",
+      "target": "最大长时直流运行电流",
+      "type": "等于"
+    },
+    {
+      "source": "额定电流",
+      "target": "额定输送容量对应的直流电流",
+      "type": "小于等于1.25倍"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1235,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1583766a52cf1683",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1235_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

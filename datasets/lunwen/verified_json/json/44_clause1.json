@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "注入设备",
+      "type": "电力设备",
+      "desc": "电力系统中的变压器等电气设备"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "用于变压器等电气设备的绝缘介质"
+    },
+    {
+      "name": "水分",
+      "type": "检测项目",
+      "desc": "绝缘油中的水含量"
+    },
+    {
+      "name": "介质损耗因数",
+      "type": "检测项目",
+      "desc": "绝缘油在特定温度下的介质损耗特性"
+    },
+    {
+      "name": "击穿电压",
+      "type": "检测项目",
+      "desc": "绝缘油承受电场强度的能力"
+    },
+    {
+      "name": "油中溶解气体分析",
+      "type": "检测项目",
+      "desc": "检测绝缘油中溶解气体的种类与含量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注入设备前，按照表37电气设备绝缘油试验分类规定进行水分、介质损耗因数（90℃）、击穿电压检测",
+      "type": "强制",
+      "subject": "注入设备",
+      "action": "进行绝缘油试验",
+      "condition": "设备安装前",
+      "constraint": "按照表37电气设备绝缘油试验分类规定",
+      "related_entities": [
+        "注入设备",
+        "绝缘油",
+        "水分",
+        "介质损耗因数",
+        "击穿电压"
+      ]
+    },
+    {
+      "content": "注入设备后交流耐压前，进行水分、介质损耗因数（90℃）、击穿电压检测、油中溶解气体分析检测",
+      "type": "强制",
+      "subject": "注入设备",
+      "action": "进行绝缘油试验",
+      "condition": "设备安装后，交流耐压试验前",
+      "constraint": "按照表37电气设备绝缘油试验分类规定",
+      "related_entities": [
+        "注入设备",
+        "绝缘油",
+        "水分",
+        "介质损耗因数",
+        "击穿电压",
+        "油中溶解气体分析"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "注入设备",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "注入设备",
+      "target": "水分",
+      "type": "检测"
+    },
+    {
+      "source": "注入设备",
+      "target": "介质损耗因数",
+      "type": "检测"
+    },
+    {
+      "source": "注入设备",
+      "target": "击穿电压",
+      "type": "检测"
+    },
+    {
+      "source": "注入设备",
+      "target": "油中溶解气体分析",
+      "type": "检测"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 44,
+      "source_row_id": "44",
+      "clause_index": 1,
+      "source_text": "注入设备前，按照表37电气设备绝缘油试验分类规定进行水分、介质损耗因数（90℃）、击穿电压检测；注入设备后交流耐压前，进行水分、介质损耗因数（90℃）、击穿电压检测、油中溶解气体分析检测"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.800602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

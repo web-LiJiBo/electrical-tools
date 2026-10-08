@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "晶闸管级",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制电流的半导体器件"
+    },
+    {
+      "name": "保护触发",
+      "type": "操作行为",
+      "desc": "晶闸管级保护装置检测到故障后发出的动作指令"
+    },
+    {
+      "name": "闭锁抽查试验",
+      "type": "试验项目",
+      "desc": "对晶闸管级保护装置进行随机抽样测试，验证其功能正确性"
+    }
+  ],
+  "rules": [
+    {
+      "content": "晶闸管级的保护触发和闭锁抽查试验，抽查数量不少于晶闸管级总数的10%",
+      "type": "强制",
+      "subject": "晶闸管级保护装置",
+      "action": "进行保护触发和闭锁抽查试验",
+      "condition": "晶闸管级保护装置投运前或定期检修时",
+      "constraint": "抽查数量不少于晶闸管级总数的10%",
+      "related_entities": [
+        "晶闸管级",
+        "保护触发",
+        "闭锁抽查试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "晶闸管级",
+      "target": "保护触发",
+      "type": "包含"
+    },
+    {
+      "source": "晶闸管级",
+      "target": "闭锁抽查试验",
+      "type": "包含"
+    },
+    {
+      "source": "保护触发",
+      "target": "闭锁抽查试验",
+      "type": "触发"
+    }
+  ],
+  "metadata": {
+    "pair_id": 86,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c14d9d855521443f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\86_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

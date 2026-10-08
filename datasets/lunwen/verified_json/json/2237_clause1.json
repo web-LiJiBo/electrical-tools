@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "例行巡视",
+      "type": "巡视方式",
+      "desc": "电力设备定期检查方式"
+    },
+    {
+      "name": "正常巡视",
+      "type": "巡视类型",
+      "desc": "日常例行巡视检查"
+    },
+    {
+      "name": "熄灯巡视",
+      "type": "巡视类型",
+      "desc": "夜间熄灯状态下进行的巡视检查"
+    },
+    {
+      "name": "全面巡视",
+      "type": "巡视类型",
+      "desc": "对设备进行全面检查的巡视方式"
+    },
+    {
+      "name": "设备",
+      "type": "巡视对象",
+      "desc": "电力系统中的各类电气设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每天至少一次正常巡视",
+      "type": "强制",
+      "subject": "运维人员",
+      "action": "巡视设备",
+      "condition": "每日",
+      "constraint": "每天至少一次",
+      "related_entities": [
+        "例行巡视",
+        "正常巡视"
+      ]
+    },
+    {
+      "content": "每周至少进行一次熄灯巡视",
+      "type": "强制",
+      "subject": "运维人员",
+      "action": "巡视设备",
+      "condition": "每周",
+      "constraint": "每周至少一次",
+      "related_entities": [
+        "例行巡视",
+        "熄灯巡视"
+      ]
+    },
+    {
+      "content": "每月进行一次全面巡视",
+      "type": "强制",
+      "subject": "运维人员",
+      "action": "巡视设备",
+      "condition": "每月",
+      "constraint": "每月至少一次",
+      "related_entities": [
+        "例行巡视",
+        "全面巡视"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "例行巡视",
+      "target": "正常巡视",
+      "type": "包含"
+    },
+    {
+      "source": "例行巡视",
+      "target": "熄灯巡视",
+      "type": "包含"
+    },
+    {
+      "source": "例行巡视",
+      "target": "全面巡视",
+      "type": "包含"
+    },
+    {
+      "source": "正常巡视",
+      "target": "设备",
+      "type": "巡视对象"
+    },
+    {
+      "source": "熄灯巡视",
+      "target": "设备",
+      "type": "巡视对象"
+    },
+    {
+      "source": "全面巡视",
+      "target": "设备",
+      "type": "巡视对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2237,
+      "source_row_id": "2237",
+      "clause_index": 1,
+      "source_text": "例行巡视巡视周期规定如下：例行巡视包括正常巡视、熄灯巡视、全面巡视。a)每天至少一次正常巡视；b)每周至少进行一次熄灯巡视，检查设备有无电晕、放电、接头有无过热现象；c)每月进行一次全面巡视，主要是对设备进行全面的外部检查，对缺陷有无发展作出鉴定，检查设备防火、防小动物、检查接地网及引线是否完好"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.306547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

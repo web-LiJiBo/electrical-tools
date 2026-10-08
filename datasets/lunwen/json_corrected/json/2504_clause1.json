@@ -1,0 +1,53 @@
+{
+  "entities": [
+    {
+      "name": "接地故障电流",
+      "type": "电气参数",
+      "desc": "电力系统中发生单相或两相接地故障时流经故障点的电流"
+    },
+    {
+      "name": "接地故障",
+      "type": "故障现象",
+      "desc": "电力系统中由于绝缘损坏等原因导致的接地情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地故障电流持续时间是指从接地故障出现起直至其终止的全部时间。",
+      "type": "强制",
+      "subject": "电力系统运行维护人员",
+      "action": "监测与记录",
+      "condition": "电力系统发生接地故障",
+      "constraint": "接地故障电流持续时间",
+      "related_entities": [
+        "接地故障电流",
+        "接地故障"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地故障电流",
+      "target": "接地故障",
+      "type": "伴随"
+    },
+    {
+      "source": "接地故障电流持续时间",
+      "target": "接地故障电流",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2504,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "03256964ce9ec694",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2504_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

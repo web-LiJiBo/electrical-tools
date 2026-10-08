@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "不通航河流",
+      "type": "地理环境",
+      "desc": "不通航的河流"
+    },
+    {
+      "name": "五年一遇洪水位",
+      "type": "水文气象",
+      "desc": "五年一遇的洪水位高度"
+    },
+    {
+      "name": "线路跨越",
+      "type": "电力设施",
+      "desc": "电力线路跨越不通航河流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路跨越不通航河流时最小垂直距离以五年一遇洪水位为基准",
+      "type": "强制",
+      "subject": "电力线路",
+      "action": "跨越不通航河流",
+      "condition": "线路跨越不通航河流",
+      "constraint": "最小垂直距离以五年一遇洪水位为基准",
+      "related_entities": [
+        "不通航河流",
+        "五年一遇洪水位",
+        "线路跨越"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路跨越",
+      "target": "不通航河流",
+      "type": "跨越"
+    },
+    {
+      "source": "线路跨越",
+      "target": "五年一遇洪水位",
+      "type": "参照基准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2068,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0f629746c0970afe",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2068_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

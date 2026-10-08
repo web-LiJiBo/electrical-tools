@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "1000kV充油电气设备",
+      "type": "电气设备",
+      "desc": "额定电压为1000kV的充油电气设备"
+    },
+    {
+      "name": "真空注油",
+      "type": "操作步骤",
+      "desc": "在电气设备中注入真空状态下的绝缘油"
+    },
+    {
+      "name": "热油循环",
+      "type": "操作步骤",
+      "desc": "对电气设备进行加热并循环流动的绝缘油"
+    },
+    {
+      "name": "耐压试验",
+      "type": "试验项目",
+      "desc": "对电气设备施加高电压以检测其绝缘性能的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于1000kV充油电气设备，在真空注油和热油循环后应静置不小于168h，方可进行耐压试验。",
+      "type": "强制",
+      "subject": "1000kV充油电气设备",
+      "action": "进行耐压试验",
+      "condition": "真空注油和热油循环后",
+      "constraint": "静置时间不小于168小时",
+      "related_entities": [
+        "1000kV充油电气设备",
+        "真空注油",
+        "热油循环",
+        "耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "1000kV充油电气设备",
+      "target": "真空注油",
+      "type": "操作前"
+    },
+    {
+      "source": "1000kV充油电气设备",
+      "target": "热油循环",
+      "type": "操作前"
+    },
+    {
+      "source": "1000kV充油电气设备",
+      "target": "耐压试验",
+      "type": "操作后"
+    },
+    {
+      "source": "真空注油",
+      "target": "1000kV充油电气设备",
+      "type": "操作对象"
+    },
+    {
+      "source": "热油循环",
+      "target": "1000kV充油电气设备",
+      "type": "操作对象"
+    },
+    {
+      "source": "耐压试验",
+      "target": "1000kV充油电气设备",
+      "type": "操作对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2707,
+      "source_row_id": "2716",
+      "clause_index": 1,
+      "source_text": "对于1000kV充油电气设备，在真空注油和热油循环后应静置不小于168h，方可进行耐压试验。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.887316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

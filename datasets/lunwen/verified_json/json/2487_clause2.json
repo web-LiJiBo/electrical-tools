@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "阀",
+      "type": "电力设备",
+      "desc": "电力系统中的晶闸管阀"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力电子器件",
+      "desc": "电力系统中用于控制电流的半导体器件"
+    },
+    {
+      "name": "晶闸管阀管级",
+      "type": "电力设备部件",
+      "desc": "晶闸管阀中的基本单元"
+    },
+    {
+      "name": "冗余数",
+      "type": "技术参数",
+      "desc": "晶闸管阀管级的冗余数量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀的设计应考虑阀中晶闸管电压分布不均匀性而留有适当裕量",
+      "type": "强制",
+      "subject": "阀设计者",
+      "action": "设计阀",
+      "condition": "阀中晶闸管电压分布不均匀",
+      "constraint": "留有适当裕量",
+      "related_entities": [
+        "阀",
+        "晶闸管"
+      ]
+    },
+    {
+      "content": "单相每组晶闸管阀中串联晶闸管阀管级的最小冗余数为1",
+      "type": "强制",
+      "subject": "阀设计者",
+      "action": "设计阀",
+      "condition": "单相每组晶闸管阀中串联晶闸管阀管级",
+      "constraint": "最小冗余数为1",
+      "related_entities": [
+        "阀",
+        "晶闸管阀管级",
+        "冗余数"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀",
+      "target": "晶闸管",
+      "type": "包含"
+    },
+    {
+      "source": "阀",
+      "target": "晶闸管阀管级",
+      "type": "包含"
+    },
+    {
+      "source": "晶闸管阀管级",
+      "target": "晶闸管",
+      "type": "组成"
+    },
+    {
+      "source": "阀设计者",
+      "target": "阀",
+      "type": "设计"
+    },
+    {
+      "source": "阀设计者",
+      "target": "晶闸管阀管级",
+      "type": "设计"
+    },
+    {
+      "source": "阀设计者",
+      "target": "冗余数",
+      "type": "设计"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2487,
+      "source_row_id": "2487",
+      "clause_index": 2,
+      "source_text": "阀的设计应考虑阀中晶闸管电压分布不均匀性而留有适当裕量。单相每组晶闸管阀中串联晶闸管阀管级的最小冗余数为1。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.627314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "1000kV设备",
+      "type": "电力设备",
+      "desc": "1000kV等级的电力设备"
+    },
+    {
+      "name": "电晕",
+      "type": "电气现象",
+      "desc": "电力系统中导线周围空气被局部击穿的现象"
+    },
+    {
+      "name": "无线电干扰",
+      "type": "电磁干扰",
+      "desc": "电力系统运行产生的电磁波对无线电通信系统的干扰"
+    },
+    {
+      "name": "最高相电压",
+      "type": "电气参数",
+      "desc": "电力系统中相电压的最大值"
+    },
+    {
+      "name": "晴天夜晚",
+      "type": "环境条件",
+      "desc": "晴朗天气下的夜间环境"
+    },
+    {
+      "name": "晴天",
+      "type": "环境条件",
+      "desc": "晴朗天气环境"
+    },
+    {
+      "name": "无线电干扰电压",
+      "type": "电气参数",
+      "desc": "无线电干扰产生的电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1.1倍最高相电压下，屋外晴天夜晚应无可见电晕，晴天无线电干扰电压不应大于500μV。",
+      "type": "强制",
+      "subject": "1000kV设备",
+      "action": "运行维护",
+      "condition": "晴天夜晚",
+      "constraint": "1.1倍最高相电压下，无可见电晕；晴天无线电干扰电压不大于500μV",
+      "related_entities": [
+        "1000kV设备",
+        "电晕",
+        "无线电干扰",
+        "最高相电压",
+        "晴天夜晚"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "1000kV设备",
+      "target": "电晕",
+      "type": "产生"
+    },
+    {
+      "source": "1000kV设备",
+      "target": "无线电干扰",
+      "type": "产生"
+    },
+    {
+      "source": "电晕",
+      "target": "无线电干扰",
+      "type": "导致"
+    },
+    {
+      "source": "最高相电压",
+      "target": "1000kV设备",
+      "type": "作用于"
+    },
+    {
+      "source": "晴天夜晚",
+      "target": "1000kV设备",
+      "type": "环境影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2615,
+      "source_row_id": "2624",
+      "clause_index": 1,
+      "source_text": "1000kV设备的电晕及无线电干扰应符合下列规定：1）在1.1倍最高相电压下，屋外晴天夜晚应无可见电晕，晴天无线电干扰电压不应大于500μV。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.779315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

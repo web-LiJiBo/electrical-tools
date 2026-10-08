@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "钢杆基础",
+      "type": "电力设施",
+      "desc": "电力系统中用于支撑导线的钢结构基础"
+    },
+    {
+      "name": "浇筑",
+      "type": "施工工序",
+      "desc": "混凝土浇筑过程"
+    },
+    {
+      "name": "养护",
+      "type": "施工工序",
+      "desc": "混凝土浇筑后的保湿处理过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "浇筑后应在12h内开始浇水养护",
+      "type": "强制",
+      "subject": "钢杆基础",
+      "action": "养护",
+      "condition": "浇筑完成",
+      "constraint": "12h内开始养护",
+      "related_entities": [
+        "钢杆基础",
+        "浇筑",
+        "养护"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢杆基础",
+      "target": "浇筑",
+      "type": "包含"
+    },
+    {
+      "source": "钢杆基础",
+      "target": "养护",
+      "type": "包含"
+    },
+    {
+      "source": "浇筑",
+      "target": "养护",
+      "type": "前置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 794,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3aea2eff7bbbde5e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\794_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

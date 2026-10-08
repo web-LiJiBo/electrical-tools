@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "接地体",
+      "type": "电力设备",
+      "desc": "用于将电气装置或设施的某一部分与大地进行连接的金属导体"
+    },
+    {
+      "name": "顶面埋设深度",
+      "type": "技术参数",
+      "desc": "接地体顶部相对于地面的埋设深度"
+    },
+    {
+      "name": "设计规定",
+      "type": "技术规范",
+      "desc": "由设计文件规定的接地体顶面埋设深度要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地体顶面埋设深度应符合设计规定。当无规定时，不应小于0.6m。",
+      "type": "强制",
+      "subject": "接地体",
+      "action": "顶面埋设",
+      "condition": "设计规定存在且有效",
+      "constraint": "顶面埋设深度≥设计规定值",
+      "related_entities": [
+        "接地体",
+        "设计规定"
+      ]
+    },
+    {
+      "content": "当无规定时，接地体顶面埋设深度不应小于0.6m。",
+      "type": "强制",
+      "subject": "接地体",
+      "action": "顶面埋设",
+      "condition": "设计规定不存在或无效",
+      "constraint": "顶面埋设深度≥0.6m",
+      "related_entities": [
+        "接地体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地体",
+      "target": "顶面埋设深度",
+      "type": "属性"
+    },
+    {
+      "source": "设计规定",
+      "target": "顶面埋设深度",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2970,
+      "source_row_id": "2979",
+      "clause_index": 2,
+      "source_text": "接地体顶面埋设深度应符合设计规定。当无规定时，不应小于0.6m。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.7857,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.226314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

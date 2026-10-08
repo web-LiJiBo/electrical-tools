@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "气体密度表",
+      "type": "设备",
+      "desc": "用于监测气体压力或密度的仪表"
+    },
+    {
+      "name": "产品",
+      "type": "设备",
+      "desc": "指电力系统中的电气设备"
+    },
+    {
+      "name": "年漏气率",
+      "type": "参数",
+      "desc": "一年内气体泄漏量占初始充气量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行中应巡视检查气体密度表，产品年漏气率应小于0.5%",
+      "type": "强制",
+      "subject": "产品",
+      "action": "巡视检查气体密度表",
+      "condition": "产品在运行中",
+      "constraint": "年漏气率<0.5%",
+      "related_entities": [
+        "气体密度表",
+        "产品"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体密度表",
+      "target": "产品",
+      "type": "监测对象"
+    },
+    {
+      "source": "产品",
+      "target": "气体密度表",
+      "type": "被监测对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 12,
+      "source_row_id": "12",
+      "clause_index": 1,
+      "source_text": "运行中应巡视检查气体密度表，产品年漏气率应小于0.5%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.764786+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

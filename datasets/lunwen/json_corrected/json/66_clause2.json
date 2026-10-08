@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "室内",
+      "type": "施工环境",
+      "desc": "电力施工的室内环境"
+    },
+    {
+      "name": "充油电缆施工现场",
+      "type": "施工地点",
+      "desc": "使用充油电缆的电力施工场所"
+    },
+    {
+      "name": "消防器材",
+      "type": "安全设施",
+      "desc": "用于火灾预防和扑救的设备"
+    },
+    {
+      "name": "临时电源",
+      "type": "施工电源",
+      "desc": "为施工现场提供电力的临时装置"
+    },
+    {
+      "name": "施工现场",
+      "type": "施工地点",
+      "desc": "电力施工的具体位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在室内及充油电缆施工现场应备有消防器材。",
+      "type": "强制",
+      "subject": "施工现场",
+      "action": "配备消防器材",
+      "condition": "室内及充油电缆施工现场",
+      "constraint": "消防器材",
+      "related_entities": [
+        "室内",
+        "充油电缆施工现场",
+        "消防器材"
+      ]
+    },
+    {
+      "content": "室内或隧道中施工应有临时电源。",
+      "type": "强制",
+      "subject": "施工现场",
+      "action": "提供临时电源",
+      "condition": "室内或隧道中施工",
+      "constraint": "临时电源",
+      "related_entities": [
+        "室内",
+        "隧道",
+        "施工现场",
+        "临时电源"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "室内",
+      "target": "施工现场",
+      "type": "位于"
+    },
+    {
+      "source": "充油电缆施工现场",
+      "target": "施工现场",
+      "type": "属于"
+    },
+    {
+      "source": "消防器材",
+      "target": "施工现场",
+      "type": "配置于"
+    },
+    {
+      "source": "临时电源",
+      "target": "施工现场",
+      "type": "配置于"
+    },
+    {
+      "source": "施工现场",
+      "target": "室内",
+      "type": "包含"
+    },
+    {
+      "source": "施工现场",
+      "target": "充油电缆施工现场",
+      "type": "包含"
+    },
+    {
+      "source": "施工现场",
+      "target": "临时电源",
+      "type": "配置于"
+    },
+    {
+      "source": "施工现场",
+      "target": "消防器材",
+      "type": "配置于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 66,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "28a96f5648890a1a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\66_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

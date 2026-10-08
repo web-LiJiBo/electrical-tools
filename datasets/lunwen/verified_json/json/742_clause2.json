@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "10kV线路",
+      "type": "电力线路",
+      "desc": "10kV电压等级的输电线路"
+    },
+    {
+      "name": "主变容量",
+      "type": "变压器容量",
+      "desc": "主变压器的额定容量"
+    },
+    {
+      "name": "表10",
+      "type": "技术规范表",
+      "desc": "用于指导10kV线路截面与主变容量配合的技术规范表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10kV线路截面应与主变容量相配合",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "选择10kV线路截面",
+      "condition": "新建或改造10kV配电网工程",
+      "constraint": "10kV线路截面应与主变容量相配合",
+      "related_entities": [
+        "10kV线路",
+        "主变容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "10kV线路",
+      "target": "主变容量",
+      "type": "配合关系"
+    },
+    {
+      "source": "10kV线路",
+      "target": "表10",
+      "type": "参考关系"
+    },
+    {
+      "source": "主变容量",
+      "target": "表10",
+      "type": "参考关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 742,
+      "source_row_id": "742",
+      "clause_index": 2,
+      "source_text": "提出10kV线路截面应与主变容量相配合，具体参考表10"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.572083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

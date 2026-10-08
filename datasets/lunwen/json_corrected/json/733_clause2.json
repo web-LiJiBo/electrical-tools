@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "混凝土",
+      "type": "材料",
+      "desc": "浇筑后的混凝土结构"
+    },
+    {
+      "name": "浇水养护",
+      "type": "施工工序",
+      "desc": "对混凝土进行浇水保湿的养护方式"
+    },
+    {
+      "name": "天气",
+      "type": "环境因素",
+      "desc": "影响混凝土养护的外部气候条件"
+    },
+    {
+      "name": "基础模板",
+      "type": "施工工具",
+      "desc": "浇筑混凝土时使用的模板"
+    }
+  ],
+  "rules": [
+    {
+      "content": "浇筑后应在12h内开始浇水养护",
+      "type": "强制",
+      "subject": "混凝土",
+      "action": "浇水养护",
+      "condition": "浇筑完成后",
+      "constraint": "12h内",
+      "related_entities": [
+        "混凝土",
+        "浇水养护"
+      ]
+    },
+    {
+      "content": "当天气炎热、干燥有风时，应在3h内进行浇水养护",
+      "type": "强制",
+      "subject": "混凝土",
+      "action": "浇水养护",
+      "condition": "天气炎热、干燥有风",
+      "constraint": "3h内",
+      "related_entities": [
+        "混凝土",
+        "浇水养护",
+        "天气"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "混凝土",
+      "target": "浇水养护",
+      "type": "接受养护"
+    },
+    {
+      "source": "天气",
+      "target": "混凝土",
+      "type": "影响养护"
+    },
+    {
+      "source": "基础模板",
+      "target": "混凝土",
+      "type": "支撑结构"
+    }
+  ],
+  "metadata": {
+    "pair_id": 733,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9a631355b765f0a2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\733_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

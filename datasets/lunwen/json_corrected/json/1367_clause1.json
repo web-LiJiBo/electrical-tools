@@ -1,0 +1,153 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力传输线缆"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "铁路运输线路"
+    },
+    {
+      "name": "公路",
+      "type": "交通设施",
+      "desc": "公路运输线路"
+    },
+    {
+      "name": "城市街道",
+      "type": "公共设施",
+      "desc": "城市道路"
+    },
+    {
+      "name": "厂区道路",
+      "type": "生产设施",
+      "desc": "工厂内部道路"
+    },
+    {
+      "name": "保护管",
+      "type": "电力设备",
+      "desc": "电缆保护管道"
+    },
+    {
+      "name": "隧道",
+      "type": "电力设施",
+      "desc": "电缆隧道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆与铁路、公路、城市街道、厂区道路交叉时，应敷设于坚固的保护管或隧道内。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "电缆与铁路、公路、城市街道、厂区道路交叉时",
+      "constraint": "敷设于坚固的保护管或隧道内",
+      "related_entities": [
+        "电缆",
+        "铁路",
+        "公路",
+        "城市街道",
+        "厂区道路",
+        "保护管",
+        "隧道"
+      ]
+    },
+    {
+      "content": "电缆管的两端宜伸出道路路基两边0.5m以上；",
+      "type": "强制",
+      "subject": "电缆管",
+      "action": "伸出",
+      "condition": "电缆管敷设于坚固的保护管或隧道内",
+      "constraint": "两端宜伸出道路路基两边0.5m以上",
+      "related_entities": [
+        "电缆管",
+        "道路路基"
+      ]
+    },
+    {
+      "content": "伸出排水沟0.5m；",
+      "type": "强制",
+      "subject": "电缆管",
+      "action": "伸出",
+      "condition": "电缆管敷设于坚固的保护管或隧道内",
+      "constraint": "伸出排水沟0.5m",
+      "related_entities": [
+        "电缆管",
+        "排水沟"
+      ]
+    },
+    {
+      "content": "在城市街道应伸出车道路面。",
+      "type": "强制",
+      "subject": "电缆管",
+      "action": "伸出",
+      "condition": "电缆管敷设于坚固的保护管或隧道内",
+      "constraint": "在城市街道应伸出车道路面",
+      "related_entities": [
+        "电缆管",
+        "城市街道",
+        "车道路面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "铁路",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "公路",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "城市街道",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "厂区道路",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "保护管",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆",
+      "target": "隧道",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "道路路基",
+      "type": "伸出"
+    },
+    {
+      "source": "电缆管",
+      "target": "排水沟",
+      "type": "伸出"
+    },
+    {
+      "source": "电缆管",
+      "target": "城市街道",
+      "type": "伸出"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1367,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "32c9a3d1bd9ebf1a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1367_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

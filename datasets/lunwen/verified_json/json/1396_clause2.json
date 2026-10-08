@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "66kV系统",
+      "type": "电力系统",
+      "desc": "额定电压为66kV的电力系统"
+    },
+    {
+      "name": "消弧线圈接地方式",
+      "type": "接地方式",
+      "desc": "通过消弧线圈进行单相接地保护的方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "66kV系统宜采用经消弧线圈接地方式",
+      "type": "强制",
+      "subject": "66kV系统",
+      "action": "采用接地方式",
+      "condition": "66kV系统",
+      "constraint": "宜采用经消弧线圈接地方式",
+      "related_entities": [
+        "66kV系统",
+        "消弧线圈接地方式"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "66kV系统",
+      "target": "消弧线圈接地方式",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1396,
+      "source_row_id": "1396",
+      "clause_index": 2,
+      "source_text": "b）66kV系统宜采用经消弧线圈接地方式"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.333549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压的电气设备"
+    },
+    {
+      "name": "出厂",
+      "type": "事件",
+      "desc": "电力设备制造完成后出厂前的检验过程"
+    },
+    {
+      "name": "交接",
+      "type": "事件",
+      "desc": "电力设备安装到电力系统后进行的首次检验过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器出厂时",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "出厂检验",
+      "condition": "变压器制造完成",
+      "constraint": "出厂检验合格",
+      "related_entities": [
+        "变压器"
+      ]
+    },
+    {
+      "content": "变压器交接时",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "交接检验",
+      "condition": "变压器安装到电力系统",
+      "constraint": "交接检验合格",
+      "related_entities": [
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "出厂",
+      "type": "发生于"
+    },
+    {
+      "source": "变压器",
+      "target": "交接",
+      "type": "发生于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3174,
+      "source_row_id": "3183",
+      "clause_index": 1,
+      "source_text": "检测周期如下：--变压器出厂时。--变压器交接时。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.472314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

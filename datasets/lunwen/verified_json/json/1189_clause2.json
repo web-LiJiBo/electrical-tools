@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "name": "配电变压器",
+      "type": "电力设备",
+      "desc": "用于配电系统中的变压器"
+    },
+    {
+      "name": "无功自动补偿装置",
+      "type": "电力设备",
+      "desc": "用于补偿无功功率的装置"
+    },
+    {
+      "name": "低压侧母线",
+      "type": "电力系统",
+      "desc": "配电变压器低压侧连接的母线"
+    },
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "安装配电变压器等设备的房间"
+    },
+    {
+      "name": "箱式变电站",
+      "type": "电力设施",
+      "desc": "集成配电变压器、无功补偿装置等设备的户外配电装置"
+    },
+    {
+      "name": "柱上变",
+      "type": "电力设施",
+      "desc": "安装在电杆上的配电变压器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电变压器（含配电室、箱式变电站、柱上变）安装无功自动补偿装置时，应符合下列规定：a)在低压侧母线上装设，容量按配电变压器容量20%～40%考虑",
+      "type": "强制",
+      "subject": "配电变压器（含配电室、箱式变电站、柱上变）",
+      "action": "安装无功自动补偿装置",
+      "condition": "配电变压器安装无功自动补偿装置时",
+      "constraint": "无功自动补偿装置安装在低压侧母线上，容量按配电变压器容量20%～40%考虑",
+      "related_entities": [
+        "配电变压器",
+        "无功自动补偿装置",
+        "低压侧母线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电变压器",
+      "target": "无功自动补偿装置",
+      "type": "安装"
+    },
+    {
+      "source": "无功自动补偿装置",
+      "target": "低压侧母线",
+      "type": "连接"
+    },
+    {
+      "source": "配电变压器",
+      "target": "低压侧母线",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1189,
+      "source_row_id": "1189",
+      "clause_index": 2,
+      "source_text": "配电变压器（含配电室、箱式变电站、柱上变）安装无功自动补偿装置时，应符合下列规定：a)在低压侧母线上装设，容量按配电变压器容量20%～40%考虑"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.092947+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

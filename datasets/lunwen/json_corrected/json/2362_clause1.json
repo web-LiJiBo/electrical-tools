@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种将交流电从一个电压等级转换到另一个电压等级的静止电器"
+    },
+    {
+      "name": "气体压力",
+      "type": "技术参数",
+      "desc": "变压器内部气体的压力值"
+    },
+    {
+      "name": "干燥气体",
+      "type": "材料",
+      "desc": "用于补充变压器气体压力的干燥气体"
+    },
+    {
+      "name": "储油柜",
+      "type": "电力设备",
+      "desc": "变压器油箱外的储油装置，用于调节变压器油位"
+    },
+    {
+      "name": "胶囊",
+      "type": "电力设备",
+      "desc": "变压器油箱内的弹性隔膜，用于调节变压器油位"
+    },
+    {
+      "name": "密封气体",
+      "type": "技术参数",
+      "desc": "变压器内部气体的密封状态"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备",
+      "desc": "变压器与外部电网连接的绝缘部件"
+    },
+    {
+      "name": "将军帽",
+      "type": "电力设备",
+      "desc": "套管顶部的密封部件"
+    },
+    {
+      "name": "露点",
+      "type": "技术参数",
+      "desc": "变压器内部气体的湿度指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "充气运输的变压器运到现场后，必须密切监视气体压力，压力过低时（低于0.01MPa）要补干燥气体",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "补干燥气体",
+      "condition": "充气运输的变压器运到现场后，气体压力低于0.01MPa",
+      "constraint": "干燥气体",
+      "related_entities": [
+        "变压器",
+        "气体压力",
+        "干燥气体"
+      ]
+    },
+    {
+      "content": "现场放置时间超过3个月的变压器应注油保存，并装上储油柜和胶囊",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "注油保存并装上储油柜和胶囊",
+      "condition": "现场放置时间超过3个月",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "储油柜",
+        "胶囊"
+      ]
+    },
+    {
+      "content": "注油前，必须测定密封气体的压力，密封状况，必要时应进行检漏试验",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "测定密封气体的压力，密封状况，必要时进行检漏试验",
+      "condition": "注油前",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "密封气体"
+      ]
+    },
+    {
+      "content": "为防止变压器在安装和运行中进水受潮，套管顶部将军帽、储油柜顶部、套管升高座及其连管等处必须密封良好",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "密封良好",
+      "condition": "安装和运行中",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "将军帽",
+        "储油柜",
+        "套管升高座",
+        "连管"
+      ]
+    },
+    {
+      "content": "必要时应测露点",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "测露点",
+      "condition": "必要时",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "露点"
+      ]
+    },
+    {
+      "content": "如已发现绝缘受潮，应及时采取相应措施",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "采取相应措施",
+      "condition": "绝缘受潮",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "绝缘"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "气体压力",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "干燥气体",
+      "type": "使用"
+    },
+    {
+      "source": "变压器",
+      "target": "储油柜",
+      "type": "装配"
+    },
+    {
+      "source": "变压器",
+      "target": "胶囊",
+      "type": "装配"
+    },
+    {
+      "source": "变压器",
+      "target": "将军帽",
+      "type": "装配"
+    },
+    {
+      "source": "变压器",
+      "target": "套管升高座",
+      "type": "装配"
+    },
+    {
+      "source": "变压器",
+      "target": "连管",
+      "type": "装配"
+    },
+    {
+      "source": "变压器",
+      "target": "露点",
+      "type": "检测"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2362,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bb4fb66881c8038a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2362_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

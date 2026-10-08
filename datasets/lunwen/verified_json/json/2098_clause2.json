@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "工作条件",
+      "type": "运行环境",
+      "desc": "变压器正常运行时所处的环境条件"
+    },
+    {
+      "name": "负荷条件",
+      "type": "运行参数",
+      "desc": "变压器在运行过程中所承受的负载情况"
+    },
+    {
+      "name": "卖方说明书",
+      "type": "技术文档",
+      "desc": "卖方向买方提供的产品使用维护说明文档"
+    },
+    {
+      "name": "寿命",
+      "type": "性能指标",
+      "desc": "变压器从开始使用到不能继续使用的总时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器在规定的工作条件和负荷条件下运行",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "在规定的工作条件和负荷条件下",
+      "constraint": "无特殊限制",
+      "related_entities": [
+        "变压器",
+        "工作条件",
+        "负荷条件"
+      ]
+    },
+    {
+      "content": "按照卖方的说明书进行维护",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "维护",
+      "condition": "依据卖方提供的说明书",
+      "constraint": "无特殊限制",
+      "related_entities": [
+        "变压器",
+        "卖方说明书"
+      ]
+    },
+    {
+      "content": "变压器的寿命应不小于40年",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "使用",
+      "condition": "在规定的工作条件和负荷条件下运行并按说明书维护",
+      "constraint": "寿命≥40年",
+      "related_entities": [
+        "变压器",
+        "寿命"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "工作条件",
+      "type": "满足"
+    },
+    {
+      "source": "变压器",
+      "target": "负荷条件",
+      "type": "满足"
+    },
+    {
+      "source": "变压器",
+      "target": "卖方说明书",
+      "type": "依据"
+    },
+    {
+      "source": "变压器",
+      "target": "寿命",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2098,
+      "source_row_id": "2098",
+      "clause_index": 2,
+      "source_text": "变压器在规定的工作条件和负荷条件下运行，并按照卖方的说明书进行维护，变压器的寿命应不小于40年"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.98,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.136536+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

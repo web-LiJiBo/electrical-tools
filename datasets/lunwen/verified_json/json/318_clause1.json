@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "GB11022",
+      "type": "标准",
+      "desc": "国家电网公司标准"
+    },
+    {
+      "name": "4.8",
+      "type": "章节",
+      "desc": "GB11022标准中的4.8章节"
+    },
+    {
+      "name": "接地开关",
+      "type": "设备",
+      "desc": "电力系统中用于接通或断开电路的开关设备"
+    },
+    {
+      "name": "短时耐受电流",
+      "type": "参数",
+      "desc": "接地开关在短时耐受电流下的最大允许电流值"
+    },
+    {
+      "name": "额定持续时间",
+      "type": "参数",
+      "desc": "接地开关在短时耐受电流下允许持续的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GB11022－2011的4.8适用，并作如下补充，除非另有规定，接地开关短时耐受电流的额定持续时间至少为2s",
+      "type": "强制",
+      "subject": "接地开关",
+      "action": "短时耐受电流的额定持续时间",
+      "condition": "GB11022－2011的4.8章节",
+      "constraint": "额定持续时间≥2s",
+      "related_entities": [
+        "GB11022",
+        "4.8",
+        "接地开关",
+        "短时耐受电流",
+        "额定持续时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GB11022",
+      "target": "4.8",
+      "type": "包含"
+    },
+    {
+      "source": "4.8",
+      "target": "接地开关",
+      "type": "约束"
+    },
+    {
+      "source": "4.8",
+      "target": "短时耐受电流",
+      "type": "约束"
+    },
+    {
+      "source": "4.8",
+      "target": "额定持续时间",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 318,
+      "source_row_id": "318",
+      "clause_index": 1,
+      "source_text": "“GB11022－2011的4.8适用，并作如下补充，除非另有规定，接地开关短时耐受电流的额定持续时间至少为2s”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.094604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

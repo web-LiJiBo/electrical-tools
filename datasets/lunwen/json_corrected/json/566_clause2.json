@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "气体绝缘金属封闭开关设备",
+      "type": "电力设备",
+      "desc": "一种高压电气设备，内部充有绝缘气体"
+    },
+    {
+      "name": "气隔",
+      "type": "电气结构",
+      "desc": "气体绝缘金属封闭开关设备内部的独立气室"
+    },
+    {
+      "name": "断路器",
+      "type": "电气元件",
+      "desc": "用于开断和关合电路的开关电器"
+    },
+    {
+      "name": "用户",
+      "type": "主体",
+      "desc": "电力系统中的用电方或需求方"
+    },
+    {
+      "name": "制造厂商",
+      "type": "主体",
+      "desc": "生产制造电力设备的企业或机构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体绝缘金属封闭开关设备内各元件应分成若干气隔",
+      "type": "强制",
+      "subject": "气体绝缘金属封闭开关设备",
+      "action": "划分气隔",
+      "condition": "根据布置条件和检修要求",
+      "constraint": "分成若干气隔",
+      "related_entities": [
+        "气体绝缘金属封闭开关设备",
+        "气隔"
+      ]
+    },
+    {
+      "content": "气体系统的压力，除断路器外，其余部分宜采用相同气压",
+      "type": "建议",
+      "subject": "气体绝缘金属封闭开关设备",
+      "action": "设置气压",
+      "condition": "气体系统内",
+      "constraint": "除断路器外，其余部分宜采用相同气压",
+      "related_entities": [
+        "气体绝缘金属封闭开关设备",
+        "断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体绝缘金属封闭开关设备",
+      "target": "气隔",
+      "type": "包含"
+    },
+    {
+      "source": "用户",
+      "target": "气体绝缘金属封闭开关设备",
+      "type": "需求"
+    },
+    {
+      "source": "制造厂商",
+      "target": "气体绝缘金属封闭开关设备",
+      "type": "生产"
+    },
+    {
+      "source": "气体绝缘金属封闭开关设备",
+      "target": "断路器",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 566,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c0b0312da216552a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\566_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

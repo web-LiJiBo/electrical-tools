@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "二次绕端绝缘",
+      "type": "电力设备",
+      "desc": "电力系统中二次回路中的绝缘部件"
+    },
+    {
+      "name": "额定工频耐受电压",
+      "type": "电气参数",
+      "desc": "设备在额定工频电压下的耐受能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "二次端绝缘的额定工频耐受电压应为3kV",
+      "type": "强制",
+      "subject": "二次绕端绝缘",
+      "action": "进行额定工频耐受电压试验",
+      "condition": "在额定工频电压下",
+      "constraint": "3kV",
+      "related_entities": [
+        "二次绕端绝缘"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "二次绕端绝缘",
+      "target": "额定工频耐受电压",
+      "type": "满足要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 24,
+      "source_row_id": "24",
+      "clause_index": 1,
+      "source_text": "二次绕端绝缘要求二次端绝缘的额定工频耐受电压应为3kV"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.777783+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "entities": [
+    {
+      "name": "柜、屏",
+      "type": "电力设备",
+      "desc": "电力系统中用于安装电气设备的柜体或屏体"
+    },
+    {
+      "name": "金属框架",
+      "type": "电力设备部件",
+      "desc": "柜、屏的金属结构部分"
+    },
+    {
+      "name": "基础型钢",
+      "type": "电力设备部件",
+      "desc": "柜、屏安装的基础金属结构件"
+    },
+    {
+      "name": "接地（PE）",
+      "type": "电气安全措施",
+      "desc": "保护接地，将电气装置的外露可导电部分与大地连接"
+    },
+    {
+      "name": "接零（PEN）",
+      "type": "电气安全措施",
+      "desc": "保护接零，将电气装置的外露可导电部分与中性线连接"
+    },
+    {
+      "name": "可开启门",
+      "type": "电力设备部件",
+      "desc": "柜、屏上可以打开的门板"
+    },
+    {
+      "name": "框架的接地端子",
+      "type": "电力设备部件",
+      "desc": "柜、屏框架上的接地连接点"
+    },
+    {
+      "name": "软铜线",
+      "type": "电气材料",
+      "desc": "用于连接接地端子的导线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柜、屏的金属框架及基础型钢应接地（PE）或接零（PEN）可靠",
+      "type": "强制",
+      "subject": "柜、屏",
+      "action": "接地",
+      "condition": "柜、屏安装完毕后",
+      "constraint": "接地电阻不大于4Ω",
+      "related_entities": [
+        "柜、屏",
+        "金属框架",
+        "基础型钢",
+        "接地（PE）",
+        "接零（PEN）"
+      ]
+    },
+    {
+      "content": "装有电器的可开启门和框架的接地端子间应用软铜线连接",
+      "type": "强制",
+      "subject": "柜、屏",
+      "action": "连接",
+      "condition": "柜、屏安装完毕后",
+      "constraint": "软铜线截面不应小于2.5mm2，且满足机械强度要求",
+      "related_entities": [
+        "柜、屏",
+        "可开启门",
+        "框架的接地端子",
+        "软铜线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柜、屏",
+      "target": "金属框架",
+      "type": "包含"
+    },
+    {
+      "source": "柜、屏",
+      "target": "基础型钢",
+      "type": "包含"
+    },
+    {
+      "source": "柜、屏",
+      "target": "可开启门",
+      "type": "包含"
+    },
+    {
+      "source": "柜、屏",
+      "target": "框架的接地端子",
+      "type": "包含"
+    },
+    {
+      "source": "金属框架",
+      "target": "接地（PE）",
+      "type": "连接方式"
+    },
+    {
+      "source": "金属框架",
+      "target": "接零（PEN）",
+      "type": "连接方式"
+    },
+    {
+      "source": "基础型钢",
+      "target": "接地（PE）",
+      "type": "连接方式"
+    },
+    {
+      "source": "基础型钢",
+      "target": "接零（PEN）",
+      "type": "连接方式"
+    },
+    {
+      "source": "可开启门",
+      "target": "框架的接地端子",
+      "type": "连接方式"
+    },
+    {
+      "source": "可开启门",
+      "target": "软铜线",
+      "type": "连接方式"
+    },
+    {
+      "source": "框架的接地端子",
+      "target": "软铜线",
+      "type": "连接方式"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 722,
+      "source_row_id": "722",
+      "clause_index": 2,
+      "source_text": "接地a）柜、屏的金属框架及基础型钢应接地（PE）或接零（PEN）可靠；装有电器的可开启门和框架的接地端子间应用软铜线连接，软铜线截面不应小于2.5mm2，还应满足机械强度的要求，并做好标识"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.550084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "entities": [
+    {
+      "name": "放线滑车",
+      "type": "电力设备",
+      "desc": "用于电力线路施工中的放线作业"
+    },
+    {
+      "name": "滑轮",
+      "type": "电力设备部件",
+      "desc": "放线滑车的重要组成部分，用于支撑导线并引导其移动"
+    },
+    {
+      "name": "架体",
+      "type": "电力设备",
+      "desc": "放线滑车的安装载体，通常指放线滑车的支架结构"
+    },
+    {
+      "name": "侧向间隙",
+      "type": "技术参数",
+      "desc": "滑轮与架体之间以及相邻滑轮之间的横向距离"
+    },
+    {
+      "name": "滑轮槽底直径",
+      "type": "技术参数",
+      "desc": "滑轮槽底部的直径尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "放线滑车相邻两滑轮间及滑轮与架体间的侧向间隙为4mm-6mm",
+      "type": "强制",
+      "subject": "放线滑车",
+      "action": "安装",
+      "condition": "滑轮槽底直径等于或大于710mm且滑轮槽底直径小于或等于560mm",
+      "constraint": "侧向间隙为4mm-6mm",
+      "related_entities": [
+        "放线滑车",
+        "滑轮",
+        "架体",
+        "侧向间隙"
+      ]
+    },
+    {
+      "content": "滑轮槽底直径等于或大于710mm时侧向间隙为5mm-6mm",
+      "type": "强制",
+      "subject": "放线滑车",
+      "action": "安装",
+      "condition": "滑轮槽底直径等于或大于710mm",
+      "constraint": "侧向间隙为5mm-6mm",
+      "related_entities": [
+        "放线滑车",
+        "滑轮",
+        "架体",
+        "侧向间隙"
+      ]
+    },
+    {
+      "content": "滑轮槽底直径小于或等于560mm时侧向间隙为4mm",
+      "type": "强制",
+      "subject": "放线滑车",
+      "action": "安装",
+      "condition": "滑轮槽底直径小于或等于560mm",
+      "constraint": "侧向间隙为4mm",
+      "related_entities": [
+        "放线滑车",
+        "滑轮",
+        "架体",
+        "侧向间隙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "放线滑车",
+      "target": "滑轮",
+      "type": "包含"
+    },
+    {
+      "source": "放线滑车",
+      "target": "架体",
+      "type": "安装于"
+    },
+    {
+      "source": "滑轮",
+      "target": "架体",
+      "type": "安装于"
+    },
+    {
+      "source": "侧向间隙",
+      "target": "滑轮",
+      "type": "测量参数"
+    },
+    {
+      "source": "侧向间隙",
+      "target": "架体",
+      "type": "测量参数"
+    },
+    {
+      "source": "滑轮槽底直径",
+      "target": "滑轮",
+      "type": "测量参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 691,
+      "source_row_id": "691",
+      "clause_index": 1,
+      "source_text": "放线滑车相邻两滑轮间及滑轮与架体间的侧向间隙为4mm-6mm。滑轮槽底直径等于或大于710mm时侧向间隙为5mm-6mm，滑轮槽底直径小于或等于560mm时侧向间隙为4mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.515484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

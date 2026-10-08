@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "C类检修",
+      "type": "检修类别",
+      "desc": "对设备进行局部解体检查和维修，以恢复设备性能"
+    },
+    {
+      "name": "D类检修",
+      "type": "检修类别",
+      "desc": "对设备进行带电测试和外观检查，以发现和处理缺陷"
+    },
+    {
+      "name": "状态量",
+      "type": "评价指标",
+      "desc": "反映设备运行状态的参数或数据"
+    },
+    {
+      "name": "评价结果",
+      "type": "评价结论",
+      "desc": "基于状态量综合评估得出的设备健康状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "被评价为“注意状态”的变压器（电抗器），执行C类检修。",
+      "type": "强制",
+      "subject": "变压器（电抗器）",
+      "action": "执行C类检修",
+      "condition": "评价结果为“注意状态”",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "C类检修"
+      ]
+    },
+    {
+      "content": "如果单项状态量扣分导致评价结果为“注意状态”时，应根据实际情况提前安排C类检修。",
+      "type": "强制",
+      "subject": "变压器（电抗器）",
+      "action": "提前安排C类检修",
+      "condition": "单项状态量扣分导致评价结果为“注意状态”",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "C类检修",
+        "状态量"
+      ]
+    },
+    {
+      "content": "如果仅由多项状态量合计扣分导致评价结果为“注意状态”时，可按正常周期执行，并根据设备的实际状况，增加必要的检修或试验内容。",
+      "type": "强制",
+      "subject": "变压器（电抗器）",
+      "action": "按正常周期执行，并根据设备实际状况增加必要的检修或试验内容",
+      "condition": "仅由多项状态量合计扣分导致评价结果为“注意状态”",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "C类检修",
+        "状态量"
+      ]
+    },
+    {
+      "content": "注意状态的设备应适当加强D类检修。",
+      "type": "强制",
+      "subject": "变压器（电抗器）",
+      "action": "适当加强D类检修",
+      "condition": "评价结果为“注意状态”",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "D类检修"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "C类检修",
+      "type": "执行"
+    },
+    {
+      "source": "变压器",
+      "target": "D类检修",
+      "type": "执行"
+    },
+    {
+      "source": "变压器",
+      "target": "状态量",
+      "type": "评价依据"
+    },
+    {
+      "source": "变压器",
+      "target": "评价结果",
+      "type": "评价结论"
+    },
+    {
+      "source": "电抗器",
+      "target": "C类检修",
+      "type": "执行"
+    },
+    {
+      "source": "电抗器",
+      "target": "D类检修",
+      "type": "执行"
+    },
+    {
+      "source": "电抗器",
+      "target": "状态量",
+      "type": "评价依据"
+    },
+    {
+      "source": "电抗器",
+      "target": "评价结果",
+      "type": "评价结论"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1521,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "36c9518878f4d2aa",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1521_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

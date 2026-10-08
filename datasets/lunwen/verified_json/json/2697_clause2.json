@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "击穿电压",
+      "type": "电气参数",
+      "desc": "电气设备绝缘材料在电场作用下发生击穿的最低电压值"
+    },
+    {
+      "name": "750kV",
+      "type": "额定电压",
+      "desc": "电气设备的额定工作电压"
+    },
+    {
+      "name": "70kV",
+      "type": "最小击穿电压",
+      "desc": "电气设备绝缘材料在750kV额定电压下的最小击穿电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "击穿电压750kV：≥70kV",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "设计与制造",
+      "condition": "额定电压为750kV的电气设备",
+      "constraint": "击穿电压≥70kV",
+      "related_entities": [
+        "击穿电压",
+        "750kV",
+        "70kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "击穿电压",
+      "target": "750kV",
+      "type": "针对"
+    },
+    {
+      "source": "击穿电压",
+      "target": "70kV",
+      "type": "针对"
+    },
+    {
+      "source": "750kV",
+      "target": "70kV",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2688,
+      "source_row_id": "2697",
+      "clause_index": 2,
+      "source_text": "击穿电压750kV：≥70kV。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.866315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

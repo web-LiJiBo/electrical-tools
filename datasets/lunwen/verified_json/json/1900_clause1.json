@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "接头",
+      "type": "电力设备",
+      "desc": "电缆连接处，用于连接不同电缆段"
+    },
+    {
+      "name": "防火包带",
+      "type": "电力材料",
+      "desc": "用于电缆防火阻燃的材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在接头两侧电缆各约3m区段和该范围内邻近并行敷设的其他电缆上，宜采用防火包带实施阻止延燃",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "采用防火包带",
+      "condition": "接头两侧电缆各约3m区段和该范围内邻近并行敷设的其他电缆",
+      "constraint": "宜",
+      "related_entities": [
+        "电缆",
+        "接头",
+        "防火包带"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "接头",
+      "type": "连接"
+    },
+    {
+      "source": "电缆",
+      "target": "防火包带",
+      "type": "使用"
+    },
+    {
+      "source": "接头",
+      "target": "电缆",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1900,
+      "source_row_id": "1900",
+      "clause_index": 1,
+      "source_text": "在接头两侧电缆各约3m区段和该范围内邻近并行敷设的其他电缆上，宜采用防火包带实施阻止延燃"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.895970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

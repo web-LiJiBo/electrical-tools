@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "非晶油变",
+      "type": "电力设备",
+      "desc": "一种采用非晶合金材料制造铁芯的变压器"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器中用于盛装绝缘油的容器"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "变压器油箱内填充的气体"
+    },
+    {
+      "name": "油面",
+      "type": "电力设备状态",
+      "desc": "变压器油箱内绝缘油液面位置"
+    },
+    {
+      "name:": "试验压力",
+      "type": "测试参数",
+      "desc": "对变压器油箱进行气密性试验时施加的压力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内部充有气体的密封式非晶油变油箱，油面上部应承受的试验压力为70kPa",
+      "type": "强制",
+      "subject": "非晶油变油箱",
+      "action": "承受试验压力",
+      "condition": "油箱内部充有气体且处于密封状态",
+      "constraint": "试验压力为70kPa",
+      "related_entities": [
+        "非晶油变",
+        "油箱",
+        "气体",
+        "油面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非晶油变",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "气体",
+      "type": "填充"
+    },
+    {
+      "source": "油箱",
+      "target": "油面",
+      "type": "承载"
+    },
+    {
+      "source": "油面",
+      "target": "气体",
+      "type": "上方"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1203,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "600138cfd3b7dd1c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1203_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

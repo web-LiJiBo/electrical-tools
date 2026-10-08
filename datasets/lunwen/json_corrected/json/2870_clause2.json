@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "外冷水管道焊缝",
+      "type": "设备",
+      "desc": "电力系统中用于输送冷却水的管道焊缝"
+    },
+    {
+      "name": "焊缝检测",
+      "type": "操作",
+      "desc": "对外冷水管道焊缝进行质量检测"
+    },
+    {
+      "name": "焊缝缺陷",
+      "type": "问题",
+      "desc": "焊缝中存在的质量问题或隐患"
+    },
+    {
+      "name": "施工单位",
+      "type": "组织",
+      "desc": "负责外冷水管道焊缝焊接施工的单位"
+    },
+    {
+      "name": "焊接缺陷",
+      "type": "问题",
+      "desc": "焊接过程中产生的质量问题或隐患"
+    },
+    {
+      "name": "焊接质量",
+      "type": "属性",
+      "desc": "焊接工艺及结果的质量水平"
+    }
+  ],
+  "rules": [
+    {
+      "content": "外冷水管道焊缝（包括管道制造焊缝和现场安装焊缝）分别按照20％比例进行抽样检测",
+      "type": "强制",
+      "subject": "施工单位",
+      "action": "焊缝检测",
+      "condition": "外冷水管道焊缝",
+      "constraint": "20%抽样检测",
+      "related_entities": [
+        "外冷水管道焊缝",
+        "焊缝检测"
+      ]
+    },
+    {
+      "content": "发现缺陷时应分析原因并扩大抽查比例（一般为不合格焊口数量的2倍）",
+      "type": "强制",
+      "subject": "施工单位",
+      "action": "焊缝检测",
+      "condition": "焊缝缺陷",
+      "constraint": "不合格焊口数量的2倍",
+      "related_entities": [
+        "焊缝缺陷",
+        "焊缝检测"
+      ]
+    },
+    {
+      "content": "对扩大抽查比例仍存在危害性焊接缺陷的，应对该施工单位焊接的全部焊缝进行检测",
+      "type": "强制",
+      "subject": "施工单位",
+      "action": "焊缝检测",
+      "condition": "扩大抽查比例仍存在危害性焊接缺陷",
+      "constraint": "全部焊缝检测",
+      "related_entities": [
+        "施工单位",
+        "焊缝缺陷",
+        "焊缝检测"
+      ]
+    },
+    {
+      "content": "对检测不合格焊缝进行重焊处理，重焊后的焊缝应检测合格",
+      "type": "强制",
+      "subject": "施工单位",
+      "action": "焊缝检测",
+      "condition": "检测不合格焊缝",
+      "constraint": "重焊处理，重焊后检测合格",
+      "related_entities": [
+        "施工单位",
+        "焊缝缺陷",
+        "焊缝检测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外冷水管道焊缝",
+      "target": "焊缝检测",
+      "type": "接受检测"
+    },
+    {
+      "source": "焊缝缺陷",
+      "target": "施工单位",
+      "type": "影响对象"
+    },
+    {
+      "source": "施工单位",
+      "target": "焊缝检测",
+      "type": "执行主体"
+    },
+    {
+      "source": "施工单位",
+      "target": "焊接质量",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2870,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0fa53cff3bc73e33",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2870_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

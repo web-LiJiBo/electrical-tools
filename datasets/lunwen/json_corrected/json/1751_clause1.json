@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "六氟化硫气体",
+      "type": "气体",
+      "desc": "SF6气体"
+    },
+    {
+      "name": "含水量",
+      "type": "物理量",
+      "desc": "气体中水分含量"
+    },
+    {
+      "name": "电弧分解隔室",
+      "type": "设备部件",
+      "desc": "有电弧分解的隔室"
+    },
+    {
+      "name": "无电弧分解隔室",
+      "type": "设备部件",
+      "desc": "无电弧分解的隔室"
+    },
+    {
+      "name": "封闭式组合电器",
+      "type": "电气设备",
+      "desc": "GIS设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "有电弧分解的隔室，应小于150μL/L",
+      "type": "强制",
+      "subject": "电弧分解隔室",
+      "action": "控制含水量",
+      "condition": "有电弧分解的隔室",
+      "constraint": "含水量<150μL/L",
+      "related_entities": [
+        "六氟化硫气体",
+        "电弧分解隔室"
+      ]
+    },
+    {
+      "content": "无电弧分解的隔室，应小于250μL/L",
+      "type": "强制",
+      "subject": "无电弧分解隔室",
+      "action": "控制含水量",
+      "condition": "无电弧分解的隔室",
+      "constraint": "含水量<250μL/L",
+      "related_entities": [
+        "六氟化硫气体",
+        "无电弧分解隔室"
+      ]
+    },
+    {
+      "content": "气体含水量的测量应在封闭式组合电器充气48h后进行",
+      "type": "强制",
+      "subject": "封闭式组合电器",
+      "action": "测量含水量",
+      "condition": "封闭式组合电器充气后",
+      "constraint": "测量时间≥48h",
+      "related_entities": [
+        "六氟化硫气体",
+        "封闭式组合电器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "六氟化硫气体",
+      "target": "含水量",
+      "type": "包含"
+    },
+    {
+      "source": "电弧分解隔室",
+      "target": "含水量",
+      "type": "控制"
+    },
+    {
+      "source": "无电弧分解隔室",
+      "target": "含水量",
+      "type": "控制"
+    },
+    {
+      "source": "封闭式组合电器",
+      "target": "电弧分解隔室",
+      "type": "包含"
+    },
+    {
+      "source": "封闭式组合电器",
+      "target": "无电弧分解隔室",
+      "type": "包含"
+    },
+    {
+      "source": "封闭式组合电器",
+      "target": "六氟化硫气体",
+      "type": "充气"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1751,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "09365ac146b2c993",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1751_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

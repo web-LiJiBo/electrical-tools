@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "复合绝缘子",
+      "type": "电力设备",
+      "desc": "一种由多种材料组成的高压输电线路绝缘子"
+    },
+    {
+      "name": "抽检试验",
+      "type": "检测活动",
+      "desc": "对电力设备进行质量检查的活动"
+    },
+    {
+      "name": "积污特性",
+      "type": "设备参数",
+      "desc": "绝缘子表面污秽程度的特性"
+    },
+    {
+      "name": "运行状态",
+      "type": "设备状态",
+      "desc": "绝缘子在实际运行中的工作状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "抽检周期运行时间达10年的复合绝缘子应按批进行一次抽检试验",
+      "type": "强制",
+      "subject": "复合绝缘子",
+      "action": "抽检试验",
+      "condition": "运行时间达10年",
+      "constraint": "按批进行",
+      "related_entities": [
+        "复合绝缘子",
+        "抽检试验"
+      ]
+    },
+    {
+      "content": "结合积污特性和运行状态做好记录分析",
+      "type": "强制",
+      "subject": "复合绝缘子",
+      "action": "记录分析",
+      "condition": "抽检试验后",
+      "constraint": "结合积污特性和运行状态",
+      "related_entities": [
+        "复合绝缘子",
+        "积污特性",
+        "运行状态",
+        "抽检试验"
+      ]
+    },
+    {
+      "content": "第一次抽检6年后，应进行第二次抽样",
+      "type": "强制",
+      "subject": "复合绝缘子",
+      "action": "抽样",
+      "condition": "第一次抽检后6年",
+      "constraint": "进行第二次抽样",
+      "related_entities": [
+        "复合绝缘子",
+        "抽检试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "复合绝缘子",
+      "target": "抽检试验",
+      "type": "需要"
+    },
+    {
+      "source": "复合绝缘子",
+      "target": "积污特性",
+      "type": "具有"
+    },
+    {
+      "source": "复合绝缘子",
+      "target": "运行状态",
+      "type": "处于"
+    },
+    {
+      "source": "抽检试验",
+      "target": "记录分析",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "pair_id": 705,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2b465ba56c6d8a2f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\705_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "木质",
+      "type": "材料",
+      "desc": "一种不良导电材料"
+    },
+    {
+      "name": "沥青",
+      "type": "材料",
+      "desc": "一种不良导电材料"
+    },
+    {
+      "name": "电气设备外壳",
+      "type": "设备部件",
+      "desc": "电气设备的外部金属壳体"
+    },
+    {
+      "name": "维护人员",
+      "type": "人员",
+      "desc": "进行电气设备维护操作的工作人员"
+    },
+    {
+      "name": "电气装置外壳",
+      "type": "设备部件",
+      "desc": "电气装置的外部金属壳体"
+    },
+    {
+      "name": "接地文件",
+      "type": "设备部件",
+      "desc": "电气设备的接地部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在木质、沥青等不良导电地面的干燥房间内，交流额定电压400V及以下、直流额定电压440V及以下的电气设备外壳，当维护人员可能同时触及电气装置外壳和接地文件时除外",
+      "type": "强制",
+      "subject": "电气设备外壳",
+      "action": "接地",
+      "condition": "在木质、沥青等不良导电地面的干燥房间内，交流额定电压400V及以下、直流额定电压440V及以下的电气设备外壳",
+      "constraint": "当维护人员可能同时触及电气装置外壳和接地文件时除外",
+      "related_entities": [
+        "木质",
+        "沥青",
+        "电气设备外壳",
+        "维护人员",
+        "电气装置外壳",
+        "接地文件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "木质",
+      "target": "电气设备外壳",
+      "type": "安装于"
+    },
+    {
+      "source": "沥青",
+      "target": "电气设备外壳",
+      "type": "安装于"
+    },
+    {
+      "source": "电气设备外壳",
+      "target": "维护人员",
+      "type": "接触"
+    },
+    {
+      "source": "电气装置外壳",
+      "target": "电气设备外壳",
+      "type": "同属电气设备"
+    },
+    {
+      "source": "接地文件",
+      "target": "电气设备外壳",
+      "type": "同属电气设备"
+    }
+  ],
+  "metadata": {
+    "pair_id": 611,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "61bf2ff5dab1c3c0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\611_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

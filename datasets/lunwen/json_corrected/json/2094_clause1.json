@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "铁芯",
+      "type": "电力设备",
+      "desc": "变压器内部的磁路部分"
+    },
+    {
+      "name": "夹件",
+      "type": "电力设备",
+      "desc": "变压器铁芯的支撑部件"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器的外壳，用于盛装绝缘油"
+    },
+    {
+      "name": "接地引线",
+      "type": "电力设备",
+      "desc": "变压器的接地装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁芯和夹件应分别与油箱绝缘",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "安装",
+      "condition": "所有变压器",
+      "constraint": "铁芯和夹件与油箱之间应保持绝缘状态",
+      "related_entities": [
+        "铁芯",
+        "夹件",
+        "油箱"
+      ]
+    },
+    {
+      "content": "接地引线应引出油箱外",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "安装",
+      "condition": "所有变压器",
+      "constraint": "接地引线应从油箱外部引出",
+      "related_entities": [
+        "接地引线",
+        "油箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁芯",
+      "target": "油箱",
+      "type": "绝缘"
+    },
+    {
+      "source": "夹件",
+      "target": "油箱",
+      "type": "绝缘"
+    },
+    {
+      "source": "接地引线",
+      "target": "油箱",
+      "type": "引出"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2094,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "70516de3566edfc9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2094_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

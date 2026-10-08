@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "套管",
+      "type": "电力设备",
+      "desc": "电力系统中用于电气隔离和绝缘的装置"
+    },
+    {
+      "name": "主绝缘",
+      "type": "电力设备部件",
+      "desc": "套管内部的主绝缘材料"
+    },
+    {
+      "name": "电容型套管",
+      "type": "电力设备",
+      "desc": "具有电容芯子的套管"
+    },
+    {
+      "name": "末屏",
+      "type": "电力设备部件",
+      "desc": "套管内部的接地屏蔽部件"
+    },
+    {
+      "name": "tgδ%",
+      "type": "测试参数",
+      "desc": "介质损耗因数百分比"
+    },
+    {
+      "name": "油纸电容性套管",
+      "type": "电力设备",
+      "desc": "采用油纸绝缘结构的电容型套管"
+    },
+    {
+      "name": "运行中油纸电容性套管",
+      "type": "电力设备",
+      "desc": "正在运行中的油纸电容性套管"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主绝缘及电容型套管对地末屏tgδ%运行中油纸电容性套管（66-110kV）20℃时tgδ不大于0.01",
+      "type": "强制",
+      "subject": "运行中油纸电容性套管",
+      "action": "进行tgδ%测试",
+      "condition": "66-110kV电压等级，20℃环境温度",
+      "constraint": "tgδ不大于0.01",
+      "related_entities": [
+        "主绝缘",
+        "电容型套管",
+        "末屏",
+        "tgδ%",
+        "油纸电容性套管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主绝缘",
+      "target": "套管",
+      "type": "构成部件"
+    },
+    {
+      "source": "电容型套管",
+      "target": "套管",
+      "type": "构成部件"
+    },
+    {
+      "source": "末屏",
+      "target": "电容型套管",
+      "type": "构成部件"
+    },
+    {
+      "source": "tgδ%",
+      "target": "运行中油纸电容性套管",
+      "type": "测试参数"
+    },
+    {
+      "source": "油纸电容性套管",
+      "target": "运行中油纸电容性套管",
+      "type": "状态描述"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2161,
+      "source_row_id": "2161",
+      "clause_index": 2,
+      "source_text": "套管的试验项目、周期和要求见表20：主绝缘及电容型套管对地末屏tgδ%运行中油纸电容性套管（66-110kV）20℃时tgδ不大于0.01"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.217547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

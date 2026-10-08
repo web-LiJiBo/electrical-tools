@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "航道",
+      "type": "电力设施",
+      "desc": "水域中供船只通行的区域"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "传输电力的导线"
+    },
+    {
+      "name": "施工机具",
+      "type": "施工设备",
+      "desc": "用于电缆敷设的机械设备"
+    },
+    {
+      "name": "水流流速",
+      "type": "环境因素",
+      "desc": "水流的速度"
+    },
+    {
+      "name": "施工技术",
+      "type": "施工方法",
+      "desc": "电缆敷设的技术手段"
+    },
+    {
+      "name": "水深",
+      "type": "地理参数",
+      "desc": "航道底部到水面的距离"
+    },
+    {
+      "name": "回路",
+      "type": "电力系统",
+      "desc": "电力传输路径"
+    },
+    {
+      "name": "单芯电缆",
+      "type": "电力设施",
+      "desc": "由单一导体构成的电缆"
+    },
+    {
+      "name": "不同回路电缆",
+      "type": "电力系统",
+      "desc": "不同电力传输路径的电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "航道内电缆相互间距按施工机具、水流流速以及施工技术决定，一般不宜小于最大水深的1.2倍。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "在航道内敷设电缆",
+      "constraint": "间距≥最大水深×1.2",
+      "related_entities": [
+        "航道",
+        "电缆",
+        "施工机具",
+        "水流流速",
+        "施工技术"
+      ]
+    },
+    {
+      "content": "引至岸边可适当缩小。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "电缆从航道引至岸边",
+      "constraint": "间距≤航道内间距×0.8",
+      "related_entities": [
+        "航道",
+        "电缆"
+      ]
+    },
+    {
+      "content": "在非航道的流速未超过1m/s的河流中，同回路单芯电缆相互间距不得小于0.5m，不同回路电缆间距不得小于5m。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "在非航道的流速未超过1m/s的河流中敷设电缆",
+      "constraint": "同回路单芯电缆间距≥0.5m，不同回路电缆间距≥5m",
+      "related_entities": [
+        "非航道河流",
+        "电缆",
+        "单芯电缆",
+        "不同回路电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "航道",
+      "target": "电缆",
+      "type": "敷设路径"
+    },
+    {
+      "source": "施工机具",
+      "target": "电缆",
+      "type": "施工工具"
+    },
+    {
+      "source": "水流流速",
+      "target": "电缆",
+      "type": "影响因素"
+    },
+    {
+      "source": "施工技术",
+      "target": "电缆",
+      "type": "施工方法"
+    },
+    {
+      "source": "水深",
+      "target": "电缆",
+      "type": "影响因素"
+    },
+    {
+      "source": "回路",
+      "target": "电缆",
+      "type": "电力传输路径"
+    },
+    {
+      "source": "单芯电缆",
+      "target": "电缆",
+      "type": "电缆类型"
+    },
+    {
+      "source": "不同回路电缆",
+      "target": "电缆",
+      "type": "电缆类型"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3122,
+      "source_row_id": "3131",
+      "clause_index": 2,
+      "source_text": "航道内电缆相互间距按施工机具、水流流速以及施工技术决定，一般不宜小于最大水深的1.2倍。引至岸边可适当缩小。在非航道的流速未超过1m/s的河流中，同回路单芯电缆相互间距不得小于0.5m，不同回路电缆间距不得小于5m。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.408315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

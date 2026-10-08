@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "外施耐压试验",
+      "type": "试验项目",
+      "desc": "电力设备的外施耐压试验"
+    },
+    {
+      "name": "间隙铁心或磁屏蔽空心电抗器",
+      "type": "电力设备",
+      "desc": "一种特定结构的电抗器"
+    },
+    {
+      "name": "干式空心电抗器",
+      "type": "电力设备",
+      "desc": "一种无油绝缘的电抗器"
+    },
+    {
+      "name": "标准支柱式绝缘子",
+      "type": "绝缘材料",
+      "desc": "电力系统中常用的支柱绝缘子"
+    },
+    {
+      "name": "母线支柱绝缘子",
+      "type": "绝缘材料",
+      "desc": "用于母线与电抗器之间的绝缘"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于间隙铁心或磁屏蔽空心电抗器，作为例行试验",
+      "type": "强制",
+      "subject": "间隙铁心或磁屏蔽空心电抗器",
+      "action": "例行试验",
+      "condition": "间隙铁心或磁屏蔽空心电抗器",
+      "constraint": "参见GB1094.3-2003的第11章",
+      "related_entities": [
+        "外施耐压试验",
+        "间隙铁心或磁屏蔽空心电抗器"
+      ]
+    },
+    {
+      "content": "对于干式空心电抗器作为特殊试验",
+      "type": "强制",
+      "subject": "干式空心电抗器",
+      "action": "特殊试验",
+      "condition": "干式空心电抗器",
+      "constraint": "试验是对支柱绝缘子的试验，只有特殊要求时才进行",
+      "related_entities": [
+        "外施耐压试验",
+        "干式空心电抗器",
+        "标准支柱式绝缘子",
+        "母线支柱绝缘子"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外施耐压试验",
+      "target": "间隙铁心或磁屏蔽空心电抗器",
+      "type": "针对"
+    },
+    {
+      "source": "外施耐压试验",
+      "target": "干式空心电抗器",
+      "type": "针对"
+    },
+    {
+      "source": "干式空心电抗器",
+      "target": "标准支柱式绝缘子",
+      "type": "使用"
+    },
+    {
+      "source": "干式空心电抗器",
+      "target": "母线支柱绝缘子",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 449,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b2885e4f2e36b4f4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\449_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

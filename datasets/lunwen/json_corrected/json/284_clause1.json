@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "出厂试验",
+      "type": "试验",
+      "desc": "电力设备出厂前的例行试验"
+    },
+    {
+      "name": "主回路",
+      "type": "电气回路",
+      "desc": "电力设备的主要电气连接路径"
+    },
+    {
+      "name": "电压降",
+      "type": "电气参数",
+      "desc": "电路中电压的降低值"
+    },
+    {
+      "name": "电阻",
+      "type": "电气参数",
+      "desc": "电路中导体对电流的阻碍程度"
+    },
+    {
+      "name": "型式试验",
+      "type": "试验",
+      "desc": "电力设备定型时的例行试验"
+    },
+    {
+      "name": "周围空气温度",
+      "type": "环境参数",
+      "desc": "试验过程中周围的空气温度"
+    },
+    {
+      "name": "测量部位",
+      "type": "试验部位",
+      "desc": "试验过程中需要测量的具体位置"
+    },
+    {
+      "name": "试验电流",
+      "type": "试验参数",
+      "desc": "试验过程中通过电路的电流大小"
+    },
+    {
+      "name": "温升试验",
+      "type": "试验",
+      "desc": "电力设备在额定负载下的温升试验"
+    },
+    {
+      "name": "R0",
+      "type": "电气参数",
+      "desc": "温升试验前测得的电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主回路每极电压降或电阻的测量，应该尽可能在与相应的型式试验相似的条件（周围空气温度和测量部位）下进行。",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "测量主回路每极电压降或电阻",
+      "condition": "与型式试验相似的条件",
+      "constraint": "周围空气温度和测量部位",
+      "related_entities": [
+        "出厂试验",
+        "主回路",
+        "型式试验",
+        "周围空气温度",
+        "测量部位"
+      ]
+    },
+    {
+      "content": "试验电流应当在6.4.1规定的范围内。",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "测量主回路每极电压降或电阻",
+      "condition": "试验电流范围",
+      "constraint": "6.4.1规定范围",
+      "related_entities": [
+        "出厂试验",
+        "主回路",
+        "试验电流"
+      ]
+    },
+    {
+      "content": "测得的电阻不应该超过1.2R0，这里R0等于温升试验前测得的电阻。",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "测量主回路每极电阻",
+      "condition": "电阻测量结果",
+      "constraint": "不超过1.2R0",
+      "related_entities": [
+        "出厂试验",
+        "主回路",
+        "电阻",
+        "温升试验",
+        "R0"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂试验",
+      "target": "主回路",
+      "type": "涉及"
+    },
+    {
+      "source": "出厂试验",
+      "target": "型式试验",
+      "type": "参照"
+    },
+    {
+      "source": "出厂试验",
+      "target": "周围空气温度",
+      "type": "影响因素"
+    },
+    {
+      "source": "出厂试验",
+      "target": "测量部位",
+      "type": "测量对象"
+    },
+    {
+      "source": "出厂试验",
+      "target": "试验电流",
+      "type": "试验参数"
+    },
+    {
+      "source": "出厂试验",
+      "target": "温升试验",
+      "type": "相关试验"
+    },
+    {
+      "source": "出厂试验",
+      "target": "R0",
+      "type": "参考值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 284,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "746337a21feb6a78",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\284_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "容性电流开合试验",
+      "type": "试验项目",
+      "desc": "电力系统中对设备进行的容性电流开合能力测试"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中的输电线路组成部分"
+    },
+    {
+      "name": "试验室",
+      "type": "试验环境",
+      "desc": "进行电力设备试验的场所"
+    },
+    {
+      "name": "试验电压",
+      "type": "试验参数",
+      "desc": "试验过程中施加在设备上的电压值"
+    },
+    {
+      "name": "充电电流",
+      "type": "试验参数",
+      "desc": "电缆在试验过程中产生的充电电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "容性电流开合试验中，电缆充电电流为10A",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "进行电缆充电电流测量",
+      "condition": "容性电流开合试验",
+      "constraint": "充电电流=10A",
+      "related_entities": [
+        "容性电流开合试验",
+        "电缆"
+      ]
+    },
+    {
+      "content": "容性电流开合试验中，试验电压为1.4倍额定电压除以根号三",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "设置试验电压",
+      "condition": "容性电流开合试验",
+      "constraint": "试验电压=1.4*12/1.732kV",
+      "related_entities": [
+        "容性电流开合试验",
+        "试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "容性电流开合试验",
+      "target": "电缆",
+      "type": "涉及设备"
+    },
+    {
+      "source": "容性电流开合试验",
+      "target": "试验室",
+      "type": "试验环境"
+    },
+    {
+      "source": "容性电流开合试验",
+      "target": "试验电压",
+      "type": "试验参数"
+    },
+    {
+      "source": "容性电流开合试验",
+      "target": "充电电流",
+      "type": "试验参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1955,
+      "source_row_id": "1955",
+      "clause_index": 2,
+      "source_text": "容性电流开合试验(试验室)，电缆充电电流为10A，试验电压1.4*12/1.732kV"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5628,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.957970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

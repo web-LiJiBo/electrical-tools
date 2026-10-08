@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "一次接线端子",
+      "type": "电力设备",
+      "desc": "电力系统中用于连接一次设备的端子"
+    },
+    {
+      "name": "机械强度",
+      "type": "技术参数",
+      "desc": "电力设备在机械应力作用下的抗破坏能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一次接线端子机械强度要求任意方向静态承受试验载荷为1000N",
+      "type": "强制",
+      "subject": "一次接线端子",
+      "action": "承受试验载荷",
+      "condition": "任意方向静态",
+      "constraint": "1000N",
+      "related_entities": [
+        "一次接线端子",
+        "机械强度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一次接线端子",
+      "target": "机械强度",
+      "type": "承载"
+    }
+  ],
+  "metadata": {
+    "pair_id": 899,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d701b13163766d8f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\899_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

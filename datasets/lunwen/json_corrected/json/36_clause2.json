@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "400kVA及以下的变压器",
+      "type": "电力设备",
+      "desc": "容量在400kVA及以下的电力变压器"
+    },
+    {
+      "name": "柱上式变压器台",
+      "type": "电力设备安装方式",
+      "desc": "一种将变压器安装在杆塔上的安装方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "400kVA及以下的变压器，宜采用柱上式变压器台",
+      "type": "强制",
+      "subject": "400kVA及以下的变压器",
+      "action": "安装方式选择",
+      "condition": "适用于400kVA及以下的变压器安装",
+      "constraint": "宜采用柱上式变压器台",
+      "related_entities": [
+        "400kVA及以下的变压器",
+        "柱上式变压器台"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "400kVA及以下的变压器",
+      "target": "柱上式变压器台",
+      "type": "推荐安装方式"
+    }
+  ],
+  "metadata": {
+    "pair_id": 36,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d6ed5877b5204a84",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\36_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

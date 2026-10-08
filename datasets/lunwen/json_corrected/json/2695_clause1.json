@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "GB/T7595",
+      "type": "国家标准",
+      "desc": "绝缘油相关技术标准"
+    },
+    {
+      "name": "标准间隙击穿电压",
+      "type": "电气参数",
+      "desc": "绝缘油在标准电极间距下的击穿电压值"
+    },
+    {
+      "name": "颗粒度",
+      "type": "物理特性",
+      "desc": "绝缘油中颗粒杂质的大小分布情况"
+    },
+    {
+      "name": "500kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "750kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "330kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油按照GB/T7595中“投入运行前的油”的规定进行",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "检测",
+      "condition": "新投运前",
+      "constraint": "符合GB/T7595标准",
+      "related_entities": [
+        "绝缘油",
+        "GB/T7595"
+      ]
+    },
+    {
+      "content": "750及以上的标准间隙击穿电压不低于70kV",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "检测",
+      "condition": "750kV及以上电压等级",
+      "constraint": "标准间隙击穿电压≥70kV",
+      "related_entities": [
+        "绝缘油",
+        "标准间隙击穿电压",
+        "750kV"
+      ]
+    },
+    {
+      "content": "500kV不低于60kV",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "检测",
+      "condition": "500kV电压等级",
+      "constraint": "标准间隙击穿电压≥60kV",
+      "related_entities": [
+        "绝缘油",
+        "标准间隙击穿电压",
+        "500kV"
+      ]
+    },
+    {
+      "content": "330kV及以下为50kV",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "检测",
+      "condition": "330kV及以下电压等级",
+      "constraint": "标准间隙击穿电压≥50kV",
+      "related_entities": [
+        "绝缘油",
+        "标准间隙击穿电压",
+        "330kV"
+      ]
+    },
+    {
+      "content": "500kV及以上应进行绝缘油清洁度（颗粒度标准参见附录A）测试",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "检测",
+      "condition": "500kV及以上电压等级",
+      "constraint": "颗粒度≤附录A标准",
+      "related_entities": [
+        "绝缘油",
+        "颗粒度",
+        "500kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油",
+      "target": "GB/T7595",
+      "type": "遵循标准"
+    },
+    {
+      "source": "绝缘油",
+      "target": "标准间隙击穿电压",
+      "type": "检测指标"
+    },
+    {
+      "source": "绝缘油",
+      "target": "颗粒度",
+      "type": "检测指标"
+    },
+    {
+      "source": "标准间隙击穿电压",
+      "target": "绝缘油",
+      "type": "检测对象"
+    },
+    {
+      "source": "颗粒度",
+      "target": "绝缘油",
+      "type": "检测对象"
+    },
+    {
+      "source": "GB/T7595",
+      "target": "标准间隙击穿电压",
+      "type": "规定检测指标"
+    },
+    {
+      "source": "GB/T7595",
+      "target": "颗粒度",
+      "type": "规定检测指标"
+    },
+    {
+      "source": "500kV",
+      "target": "标准间隙击穿电压",
+      "type": "适用电压等级"
+    },
+    {
+      "source": "750kV",
+      "target": "标准间隙击穿电压",
+      "type": "适用电压等级"
+    },
+    {
+      "source": "330kV",
+      "target": "标准间隙击穿电压",
+      "type": "适用电压等级"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2695,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dfc8fb7803215bbe",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2695_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "电缆导体",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的电缆内部金属线芯"
+    },
+    {
+      "name": "最高允许温度",
+      "type": "技术参数",
+      "desc": "电缆导体在正常运行条件下允许达到的最高温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆导体的最高允许温度不应超过90℃",
+      "type": "强制",
+      "subject": "电缆导体",
+      "action": "运行",
+      "condition": "正常运行条件下",
+      "constraint": "最高允许温度≤90℃",
+      "related_entities": [
+        "电缆导体",
+        "最高允许温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆导体",
+      "target": "最高允许温度",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 561,
+      "source_row_id": "561",
+      "clause_index": 2,
+      "source_text": "电缆导体的最高允许温度"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.7353,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.364485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

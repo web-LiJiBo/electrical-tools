@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "水冷装置",
+      "type": "电力设备",
+      "desc": "电力系统中用于冷却的装置"
+    },
+    {
+      "name": "环境温度",
+      "type": "物理参数",
+      "desc": "水冷装置周围空气的温度"
+    },
+    {
+      "name": "相对湿度",
+      "type": "物理参数",
+      "desc": "水冷装置周围空气的湿度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水冷装置的其他室内部分的环境温度为+5℃～+35℃，相对湿度不大于90%",
+      "type": "强制",
+      "subject": "水冷装置",
+      "action": "运行维护",
+      "condition": "在室内环境下",
+      "constraint": "环境温度+5℃～+35℃，相对湿度≤90%",
+      "related_entities": [
+        "水冷装置",
+        "环境温度",
+        "相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水冷装置",
+      "target": "环境温度",
+      "type": "影响"
+    },
+    {
+      "source": "水冷装置",
+      "target": "相对湿度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2491,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "166a44d5b93c2f78",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2491_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

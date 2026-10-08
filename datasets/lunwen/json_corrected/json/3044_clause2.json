@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "name": "工频电压试验",
+      "type": "试验方法",
+      "desc": "一种用于检测电力设备绝缘性能的试验方法"
+    },
+    {
+      "name": "自由移动的导电粒子",
+      "type": "试验对象",
+      "desc": "可能存在于电力设备表面的导电颗粒"
+    },
+    {
+      "name": "电场结构",
+      "type": "试验对象",
+      "desc": "电力设备内部或外部的电场分布情况"
+    },
+    {
+      "name": "试验频率",
+      "type": "试验参数",
+      "desc": "工频电压试验中使用的交流电压频率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工频电压试验对探测污秽（例如自由移动的导电粒子）特别敏感，并且在大多数情况下足以探测异常的电场结构",
+      "type": "强制",
+      "subject": "电力设备制造商与运维人员",
+      "action": "进行工频电压试验",
+      "condition": "电力设备安装前、运行中定期维护",
+      "constraint": "试验时应确保试验频率在10Hz到300Hz范围内",
+      "related_entities": [
+        "工频电压试验",
+        "自由移动的导电粒子",
+        "电场结构"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "工频电压试验",
+      "target": "自由移动的导电粒子",
+      "type": "敏感度"
+    },
+    {
+      "source": "工频电压试验",
+      "target": "电场结构",
+      "type": "敏感度"
+    },
+    {
+      "source": "试验频率",
+      "target": "工频电压试验",
+      "type": "参数控制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3044,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "85b5703937eea635",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3044_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

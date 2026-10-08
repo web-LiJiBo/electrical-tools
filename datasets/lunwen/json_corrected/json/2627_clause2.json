@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "试验电压",
+      "type": "电气参数",
+      "desc": "进行电气设备绝缘性能测试时所施加的电压"
+    },
+    {
+      "name": "额定雷电冲击电压",
+      "type": "电气参数",
+      "desc": "电气设备在雷电冲击条件下允许的最大电压值"
+    },
+    {
+      "name": "峰值",
+      "type": "电气参数",
+      "desc": "电压或电流的最大瞬时值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试验电压的峰值为额定雷电冲击电压的115%",
+      "type": "强制",
+      "subject": "试验电压",
+      "action": "施加",
+      "condition": "进行电气设备绝缘性能测试时",
+      "constraint": "试验电压峰值=额定雷电冲击电压*115%",
+      "related_entities": [
+        "试验电压",
+        "额定雷电冲击电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "试验电压",
+      "target": "额定雷电冲击电压",
+      "type": "基于"
+    },
+    {
+      "source": "试验电压",
+      "target": "峰值",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2627,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "15ea5f5df7005cff",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2627_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

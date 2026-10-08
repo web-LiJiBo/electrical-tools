@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "城市配电网中的配电设施"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "城市配电网中用于电压变换的电气设备"
+    },
+    {
+      "name": "电源",
+      "type": "电力系统",
+      "desc": "向配电室供电的电力系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "城市配电网中配电室宜按照两台变压器、双路电源设计",
+      "type": "强制",
+      "subject": "配电室",
+      "action": "设计",
+      "condition": "城市配电网中",
+      "constraint": "宜按照两台变压器、双路电源设计",
+      "related_entities": [
+        "配电室",
+        "变压器",
+        "电源"
+      ]
+    },
+    {
+      "content": "单台变压器容量不宜大于800kVA",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "设计",
+      "condition": "城市配电网中",
+      "constraint": "单台变压器容量不宜大于800kVA",
+      "related_entities": [
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电室",
+      "target": "变压器",
+      "type": "包含"
+    },
+    {
+      "source": "配电室",
+      "target": "电源",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1572,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1b47ec8e14c3e516",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1572_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "entities": [
+    {
+      "name": "电缆夹层",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设电缆的封闭空间"
+    },
+    {
+      "name": "电缆接头",
+      "type": "电力设备",
+      "desc": "电缆连接处，用于实现电缆之间的电气连接"
+    },
+    {
+      "name": "防火涂覆材料",
+      "type": "材料",
+      "desc": "用于电缆防火处理的材料，包括阻燃带和防火涂料"
+    },
+    {
+      "name": "氯丁橡胶",
+      "type": "材料",
+      "desc": "一种合成橡胶，具有良好的耐热性和阻燃性"
+    },
+    {
+      "name": "阻燃带",
+      "type": "材料",
+      "desc": "以氯丁橡胶为基材的阻燃带，用于电缆接头的防火处理"
+    },
+    {
+      "name": "防火涂料",
+      "type": "材料",
+      "desc": "用于电缆接头及电缆表面的防火涂料"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电能的导体，由导电线芯和绝缘层组成"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆夹层中的电缆接头，应采用防火涂覆材料进行表面阻燃处理",
+      "type": "强制",
+      "subject": "电缆接头",
+      "action": "进行表面阻燃处理",
+      "condition": "电缆夹层内",
+      "constraint": "采用防火涂覆材料",
+      "related_entities": [
+        "电缆夹层",
+        "电缆接头",
+        "防火涂覆材料"
+      ]
+    },
+    {
+      "content": "接头及其两侧2m～3m和相邻电缆上绕包氯丁橡胶为基的阻燃带",
+      "type": "强制",
+      "subject": "电缆接头",
+      "action": "绕包阻燃带",
+      "condition": "电缆夹层内",
+      "constraint": "采用氯丁橡胶为基的阻燃带，长度2m～3m",
+      "related_entities": [
+        "电缆夹层",
+        "电缆接头",
+        "氯丁橡胶",
+        "阻燃带"
+      ]
+    },
+    {
+      "content": "涂刷防火涂料，涂料总厚度应为0.9mm～1.0mm",
+      "type": "强制",
+      "subject": "电缆接头",
+      "action": "涂刷防火涂料",
+      "condition": "电缆夹层内",
+      "constraint": "涂料总厚度0.9mm～1.0mm",
+      "related_entities": [
+        "电缆夹层",
+        "电缆接头",
+        "防火涂料"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆夹层",
+      "target": "电缆接头",
+      "type": "包含"
+    },
+    {
+      "source": "电缆接头",
+      "target": "防火涂覆材料",
+      "type": "使用"
+    },
+    {
+      "source": "电缆接头",
+      "target": "氯丁橡胶",
+      "type": "使用"
+    },
+    {
+      "source": "电缆接头",
+      "target": "阻燃带",
+      "type": "使用"
+    },
+    {
+      "source": "电缆接头",
+      "target": "防火涂料",
+      "type": "使用"
+    },
+    {
+      "source": "电缆接头",
+      "target": "电缆",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1883,
+      "source_row_id": "1883",
+      "clause_index": 2,
+      "source_text": "在电缆夹层中的电缆接头，应采用防火涂覆材料进行表面阻燃处理，即在接头及其两侧2m～3m和相邻电缆上绕包氯丁橡胶为基的阻燃带或涂刷防火涂料，涂料总厚度应为0.9mm～1.0mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.877966+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

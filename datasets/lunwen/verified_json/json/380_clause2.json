@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "冷却水",
+      "type": "介质",
+      "desc": "用于电力系统中设备冷却的水"
+    },
+    {
+      "name": "电导率",
+      "type": "物理量",
+      "desc": "衡量水中离子导电能力的物理量"
+    },
+    {
+      "name": "20℃",
+      "type": "温度",
+      "desc": "规定温度点"
+    },
+    {
+      "name": "0.5μS/cm",
+      "type": "数值",
+      "desc": "电导率上限值"
+    },
+    {
+      "name": "设备技术文件",
+      "type": "文件",
+      "desc": "设备的技术规范文档"
+    }
+  ],
+  "rules": [
+    {
+      "content": "监测冷却水的电导率，要求20℃时的电导率不大于0.5μS/cm",
+      "type": "强制",
+      "subject": "冷却水",
+      "action": "监测电导率",
+      "condition": "20℃时",
+      "constraint": "电导率不大于0.5μS/cm",
+      "related_entities": [
+        "冷却水",
+        "20℃",
+        "0.5μS/cm"
+      ]
+    },
+    {
+      "content": "或符合设备技术文件要求",
+      "type": "强制",
+      "subject": "冷却水",
+      "action": "监测电导率",
+      "condition": "20℃时",
+      "constraint": "电导率符合设备技术文件要求",
+      "related_entities": [
+        "冷却水",
+        "20℃",
+        "设备技术文件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "冷却水",
+      "target": "电导率",
+      "type": "属性"
+    },
+    {
+      "source": "电导率",
+      "target": "20℃",
+      "type": "测量条件"
+    },
+    {
+      "source": "电导率",
+      "target": "0.5μS/cm",
+      "type": "约束条件"
+    },
+    {
+      "source": "电导率",
+      "target": "设备技术文件",
+      "type": "参考依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 380,
+      "source_row_id": "380",
+      "clause_index": 2,
+      "source_text": "监测冷却水的电导率，要求20℃时的电导率不大于0.5μS/cm，或符合设备技术文件要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.161485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

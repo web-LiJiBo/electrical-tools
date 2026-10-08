@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "介质损耗因数",
+      "type": "电气参数",
+      "desc": "反映绝缘材料在交流电压作用下能量损耗的大小"
+    },
+    {
+      "name": "90℃",
+      "type": "温度",
+      "desc": "试验时的环境温度"
+    },
+    {
+      "name": "标准检修后",
+      "type": "检修状态",
+      "desc": "设备经过检修后的状态"
+    },
+    {
+      "name": "0.007",
+      "type": "数值约束",
+      "desc": "介质损耗因数的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "介质损耗因数（90℃）标准检修后：≤0.007",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "检修后测试介质损耗因数",
+      "condition": "电气设备检修后",
+      "constraint": "介质损耗因数≤0.007",
+      "related_entities": [
+        "介质损耗因数",
+        "90℃",
+        "标准检修后"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "介质损耗因数",
+      "target": "90℃",
+      "type": "测试条件"
+    },
+    {
+      "source": "介质损耗因数",
+      "target": "标准检修后",
+      "type": "检修后状态"
+    },
+    {
+      "source": "电气设备",
+      "target": "介质损耗因数",
+      "type": "检测对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3247,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4ab05c59c29ae392",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3247_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

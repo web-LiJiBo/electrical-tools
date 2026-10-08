@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "架空输电线路",
+      "type": "电力设施",
+      "desc": "架设在地面上的输电线路"
+    },
+    {
+      "name": "保护区",
+      "type": "电力设施保护区",
+      "desc": "架空输电线路周围一定范围内的区域"
+    },
+    {
+      "name": "建筑物",
+      "type": "电力设施保护区禁止物",
+      "desc": "在架空输电线路保护区内不允许建设的建筑物"
+    },
+    {
+      "name": "厂矿",
+      "type": "电力设施保护区禁止物",
+      "desc": "在架空输电线路保护区内不允许存在的厂矿"
+    },
+    {
+      "name": "树木",
+      "type": "电力设施保护区禁止物",
+      "desc": "在架空输电线路保护区内不允许种植的树木"
+    },
+    {
+      "name": "高跨设计",
+      "type": "电力设施保护区允许物",
+      "desc": "在架空输电线路保护区内允许存在的高跨设计"
+    }
+  ],
+  "rules": [
+    {
+      "content": "架空输电线路保护区内（500kV为20m）不得有建筑物、厂矿、树木（高跨设计除外）及其他生产活动。",
+      "type": "强制",
+      "subject": "架空输电线路保护区",
+      "action": "不得有建筑物、厂矿、树木（高跨设计除外）及其他生产活动",
+      "condition": "架空输电线路保护区",
+      "constraint": "500kV为20m",
+      "related_entities": [
+        "架空输电线路",
+        "保护区",
+        "建筑物",
+        "厂矿",
+        "树木",
+        "高跨设计"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "架空输电线路",
+      "target": "保护区",
+      "type": "位于"
+    },
+    {
+      "source": "保护区",
+      "target": "建筑物",
+      "type": "禁止存在"
+    },
+    {
+      "source": "保护区",
+      "target": "厂矿",
+      "type": "禁止存在"
+    },
+    {
+      "source": "保护区",
+      "target": "树木",
+      "type": "禁止存在"
+    },
+    {
+      "source": "保护区",
+      "target": "高跨设计",
+      "type": "允许存在"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2605,
+      "source_row_id": "2605",
+      "clause_index": 2,
+      "source_text": "架空输电线路保护区内（500kV为20m）不得有建筑物、厂矿、树木（高跨设计除外）及其他生产活动。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.769315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

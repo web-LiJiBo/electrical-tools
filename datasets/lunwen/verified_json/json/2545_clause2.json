@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "继电器",
+      "type": "电力设备",
+      "desc": "一种根据输入信号变化来接通或断开电路的自动电器"
+    },
+    {
+      "name": "工频试验电压",
+      "type": "试验参数",
+      "desc": "继电器在工频条件下进行耐压试验所施加的电压值"
+    },
+    {
+      "name": "触点间隙",
+      "type": "电气参数",
+      "desc": "继电器触点之间的空气间隙距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "继电器应能承受表2要求的工频试验电压",
+      "type": "强制",
+      "subject": "继电器",
+      "action": "承受工频试验电压",
+      "condition": "继电器出厂前",
+      "constraint": "表2要求的工频试验电压",
+      "related_entities": [
+        "继电器",
+        "工频试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "继电器",
+      "target": "工频试验电压",
+      "type": "承受"
+    },
+    {
+      "source": "继电器",
+      "target": "触点间隙",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2545,
+      "source_row_id": "2545",
+      "clause_index": 2,
+      "source_text": "继电器工频耐压要求：继电器应能承受表2要求的工频试验电压。试验时触点间隙应无辉光闪络现象,其它绝缘亦应无击穿闪络现象。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.698317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "330kV-750kV变电站中的220kV或110kV配电装置，可采用双母线接线，技术经济合理时，也可采用一个半断路器接线。当采用双母线接线，且出线和变压器等连接元件总数为l0-14回时，可在一条母线上装设分段断路器；15回及以上时，可在2条母线上装设分段断路器；当为了限制220kV母线短路电流或满足系统解列运行的要求，可根据需要将母线分段",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1803,
+      "source_row_id": "1803",
+      "clause_index": 1,
+      "source_text": "330kV-750kV变电站中的220kV或110kV配电装置，可采用双母线接线，技术经济合理时，也可采用一个半断路器接线。当采用双母线接线，且出线和变压器等连接元件总数为l0-14回时，可在一条母线上装设分段断路器；15回及以上时，可在2条母线上装设分段断路器；当为了限制220kV母线短路电流或满足系统解列运行的要求，可根据需要将母线分段"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:00.782215+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

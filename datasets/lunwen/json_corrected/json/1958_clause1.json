@@ -1,0 +1,139 @@
+{
+  "entities": [
+    {
+      "name": "高压开关柜",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中进行控制和保护的电气设备"
+    },
+    {
+      "name": "组件",
+      "type": "电力设备部件",
+      "desc": "高压开关柜中的各个组成部分"
+    },
+    {
+      "name": "支撑绝缘件",
+      "type": "电力设备部件",
+      "desc": "高压开关柜中用于支撑和绝缘的部件"
+    },
+    {
+      "name": "外绝缘爬电比距离",
+      "type": "技术参数",
+      "desc": "衡量绝缘材料耐受电压能力的重要指标"
+    },
+    {
+      "name": "凝露型",
+      "type": "环境条件",
+      "desc": "湿度较高的环境条件"
+    },
+    {
+      "name": "不凝露型",
+      "type": "环境条件",
+      "desc": "湿度较低的环境条件"
+    },
+    {
+      "name": "瓷质绝缘",
+      "type": "绝缘材料",
+      "desc": "以陶瓷材料为主要成分的绝缘材料"
+    },
+    {
+      "name": "有机绝缘",
+      "type": "绝缘材料",
+      "desc": "以有机材料为主要成分的绝缘材料"
+    },
+    {
+      "name": "Ⅰ级污秽",
+      "type": "污秽等级",
+      "desc": "电力设备运行环境中污秽程度的分类之一"
+    },
+    {
+      "name": "Ⅱ级污秽",
+      "type": "污秽等级",
+      "desc": "电力设备运行环境中污秽程度的分类之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "凝露型的爬电比距。瓷质绝缘14/18mm/kV(Ⅰ/Ⅱ级污秽)，有机绝缘16/20mm/kV(Ⅰ/Ⅱ级污秽等级)",
+      "type": "强制",
+      "subject": "高压开关柜",
+      "action": "设计与制造",
+      "condition": "在凝露型环境下运行",
+      "constraint": "瓷质绝缘≥14/18mm/kV, 有机绝缘≥16/20mm/kV",
+      "related_entities": [
+        "高压开关柜",
+        "支撑绝缘件",
+        "外绝缘爬电比距离",
+        "瓷质绝缘",
+        "有机绝缘",
+        "Ⅰ级污秽",
+        "Ⅱ级污秽"
+      ]
+    },
+    {
+      "content": "不凝露型的爬电比距。瓷质绝缘不小于12mm/kV，有机绝缘不小于14mm/kV",
+      "type": "强制",
+      "subject": "高压开关柜",
+      "action": "设计与制造",
+      "condition": "在不凝露型环境下运行",
+      "constraint": "瓷质绝缘≥12mm/kV, 有机绝缘≥14mm/kV",
+      "related_entities": [
+        "高压开关柜",
+        "支撑绝缘件",
+        "外绝缘爬电比距离",
+        "瓷质绝缘",
+        "有机绝缘"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高压开关柜",
+      "target": "组件",
+      "type": "包含"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "支撑绝缘件",
+      "type": "包含"
+    },
+    {
+      "source": "支撑绝缘件",
+      "target": "外绝缘爬电比距离",
+      "type": "满足"
+    },
+    {
+      "source": "瓷质绝缘",
+      "target": "外绝缘爬电比距离",
+      "type": "构成部分"
+    },
+    {
+      "source": "有机绝缘",
+      "target": "外绝缘爬电比距离",
+      "type": "构成部分"
+    },
+    {
+      "source": "Ⅰ级污秽",
+      "target": "外绝缘爬电比距离",
+      "type": "适用条件"
+    },
+    {
+      "source": "Ⅱ级污秽",
+      "target": "外绝缘爬电比距离",
+      "type": "适用条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1958,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3e0cab5c9227983b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1958_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

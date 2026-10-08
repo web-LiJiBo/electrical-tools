@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "锚孔直径D",
+      "type": "尺寸",
+      "desc": "锚孔的直径大小"
+    },
+    {
+      "name": "d",
+      "type": "尺寸",
+      "desc": "锚杆直径"
+    },
+    {
+      "name": "90mm",
+      "type": "尺寸",
+      "desc": "最小锚孔直径要求"
+    },
+    {
+      "name": "d+50mm",
+      "type": "尺寸",
+      "desc": "与锚杆直径相关的尺寸要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "锚孔直径D=(2.5～3)d，直径不小于90mm，尚应符合d+50mm的要求",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "确定锚孔直径",
+      "condition": "锚杆施工",
+      "constraint": "D≥(2.5～3)d且D≥90mm且D≥d+50mm",
+      "related_entities": [
+        "锚孔直径D",
+        "d",
+        "90mm",
+        "d+50mm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "锚孔直径D",
+      "target": "d",
+      "type": "计算依据"
+    },
+    {
+      "source": "锚孔直径D",
+      "target": "90mm",
+      "type": "最小值限制"
+    },
+    {
+      "source": "锚孔直径D",
+      "target": "d+50mm",
+      "type": "最大值限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2040,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4df13656c87c3062",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2040_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

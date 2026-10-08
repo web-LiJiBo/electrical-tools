@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "110kV变压器",
+      "type": "电力设备",
+      "desc": "110kV电压等级的电力变压器"
+    },
+    {
+      "name": "运输",
+      "type": "操作行为",
+      "desc": "电力设备从一地移动到另一地的过程"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "安全监测设备",
+      "desc": "用于记录运输过程中设备受力情况的仪器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "31500kVA及以上的110kV变压器在运输中应装三维冲撞记录仪",
+      "type": "强制",
+      "subject": "110kV变压器",
+      "action": "运输",
+      "condition": "容量≥31500kVA",
+      "constraint": "必须安装三维冲撞记录仪",
+      "related_entities": [
+        "110kV变压器",
+        "三维冲撞记录仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110kV变压器",
+      "target": "运输",
+      "type": "进行"
+    },
+    {
+      "source": "三维冲撞记录仪",
+      "target": "运输",
+      "type": "监控"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3269,
+      "source_row_id": "3278",
+      "clause_index": 2,
+      "source_text": "31500kVA及以上的110kV变压器在运输中应装三维冲撞记录仪。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.595366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

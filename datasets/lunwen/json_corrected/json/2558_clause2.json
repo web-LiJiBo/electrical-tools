@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "电力系统中用于储存绝缘油的容器"
+    },
+    {
+      "name": "真空残压",
+      "type": "试验参数",
+      "desc": "油箱在真空状态下残留的压力值"
+    },
+    {
+      "name": "正压",
+      "type": "试验参数",
+      "desc": "油箱承受的正向压力值"
+    },
+    {
+      "name": "机械强度试验",
+      "type": "试验方法",
+      "desc": "评估油箱抵抗内外压力的能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油箱的机械强度应承受住真空残压13Pa和正压不小于0.1MPa的机械强度试验",
+      "type": "强制",
+      "subject": "油箱",
+      "action": "进行机械强度试验",
+      "condition": "油箱制造完成后",
+      "constraint": "真空残压13Pa, 正压0.1MPa",
+      "related_entities": [
+        "油箱",
+        "真空残压",
+        "正压",
+        "机械强度试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油箱",
+      "target": "真空残压",
+      "type": "承受"
+    },
+    {
+      "source": "油箱",
+      "target": "正压",
+      "type": "承受"
+    },
+    {
+      "source": "油箱",
+      "target": "机械强度试验",
+      "type": "参与"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2558,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "247c941eb5c2a0ac",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2558_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

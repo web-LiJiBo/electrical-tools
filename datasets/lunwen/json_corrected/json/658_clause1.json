@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "地电位带电作业",
+      "type": "作业方式",
+      "desc": "一种电力检修作业方式"
+    },
+    {
+      "name": "带电体",
+      "type": "电力设备",
+      "desc": "带电运行的电力设备"
+    },
+    {
+      "name": "安全距离",
+      "type": "技术参数",
+      "desc": "作业人员与带电体之间保持的距离"
+    },
+    {
+      "name": "海拔高度",
+      "type": "环境参数",
+      "desc": "作业地点的海拔高度"
+    },
+    {
+      "name": "500kV紧凑型线路",
+      "type": "电力系统",
+      "desc": "500kV紧凑型输电线路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "进行地电位带电作业时，人身与带电体间的安全距离不准小于表5规定",
+      "type": "强制",
+      "subject": "地电位带电作业人员",
+      "action": "保持安全距离",
+      "condition": "进行地电位带电作业",
+      "constraint": "安全距离不得小于表5规定",
+      "related_entities": [
+        "地电位带电作业",
+        "带电体",
+        "安全距离"
+      ]
+    },
+    {
+      "content": "海拔500m以下，500kV取值为3.2m，但不适用于500kV紧凑型线路",
+      "type": "强制",
+      "subject": "地电位带电作业人员",
+      "action": "保持安全距离",
+      "condition": "海拔500m以下且进行500kV地电位带电作业",
+      "constraint": "安全距离为3.2m",
+      "related_entities": [
+        "地电位带电作业",
+        "带电体",
+        "安全距离",
+        "500kV紧凑型线路"
+      ]
+    },
+    {
+      "content": "海拔在500m~1000m时，500kV取值为3.4m",
+      "type": "强制",
+      "subject": "地电位带电作业人员",
+      "action": "保持安全距离",
+      "condition": "海拔500m~1000m且进行500kV地电位带电作业",
+      "constraint": "安全距离为3.4m",
+      "related_entities": [
+        "地电位带电作业",
+        "带电体",
+        "安全距离"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地电位带电作业",
+      "target": "带电体",
+      "type": "作业对象"
+    },
+    {
+      "source": "地电位带电作业",
+      "target": "安全距离",
+      "type": "作业要求"
+    },
+    {
+      "source": "安全距离",
+      "target": "带电体",
+      "type": "保护对象"
+    },
+    {
+      "source": "海拔高度",
+      "target": "地电位带电作业",
+      "type": "作业环境"
+    },
+    {
+      "source": "海拔高度",
+      "target": "安全距离",
+      "type": "影响因素"
+    },
+    {
+      "source": "500kV紧凑型线路",
+      "target": "地电位带电作业",
+      "type": "作业限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 658,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9638aaba426e61a3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\658_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

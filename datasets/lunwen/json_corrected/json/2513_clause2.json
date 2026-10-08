@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "测试",
+      "type": "试验",
+      "desc": "对电气设备进行绝缘电阻测量"
+    },
+    {
+      "name": "专门仪器",
+      "type": "测量工具",
+      "desc": "用于测量电气设备绝缘电阻的专用仪器"
+    },
+    {
+      "name": "分辨率",
+      "type": "技术参数",
+      "desc": "仪器分辨最小可测量值的能力"
+    },
+    {
+      "name": "准确度",
+      "type": "技术参数",
+      "desc": "仪器测量结果与真实值的一致程度"
+    },
+    {
+      "name": "直流电桥",
+      "type": "测量方法",
+      "desc": "一种基于直流平衡原理的测量方法"
+    },
+    {
+      "name": "恒定直流电流",
+      "type": "测量参数",
+      "desc": "施加于被测设备接地部分的恒定直流电流"
+    },
+    {
+      "name": "高内阻电压表",
+      "type": "测量工具",
+      "desc": "具有高输入阻抗的电压测量仪表"
+    },
+    {
+      "name": "电压降",
+      "type": "测量参数",
+      "desc": "由直流电流在接地装置中产生的电压差"
+    },
+    {
+      "name": "电阻值",
+      "type": "测量结果",
+      "desc": "根据电压降计算得到的接地电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测试宜选用专门仪器，仪器的分辨率不大于1mΩ，准确度不低于1.0级。",
+      "type": "强制",
+      "subject": "测试",
+      "action": "使用仪器进行测量",
+      "condition": "进行电气设备绝缘电阻测试时",
+      "constraint": "仪器分辨率≤1mΩ，准确度≥1.0级",
+      "related_entities": [
+        "测试",
+        "专门仪器",
+        "分辨率",
+        "准确度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "测试",
+      "target": "专门仪器",
+      "type": "使用"
+    },
+    {
+      "source": "专门仪器",
+      "target": "分辨率",
+      "type": "具有"
+    },
+    {
+      "source": "专门仪器",
+      "target": "准确度",
+      "type": "具有"
+    },
+    {
+      "source": "测试",
+      "target": "直流电桥",
+      "type": "参考原理"
+    },
+    {
+      "source": "测试",
+      "target": "恒定直流电流",
+      "type": "施加参数"
+    },
+    {
+      "source": "测试",
+      "target": "高内阻电压表",
+      "type": "使用工具"
+    },
+    {
+      "source": "测试",
+      "target": "电压降",
+      "type": "测量参数"
+    },
+    {
+      "source": "测试",
+      "target": "电阻值",
+      "type": "计算结果"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2513,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1ee149010d848798",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2513_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

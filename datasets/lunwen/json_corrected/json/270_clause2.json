@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "热像图",
+      "type": "检测结果",
+      "desc": "通过红外热像仪获取的设备表面温度分布图像"
+    },
+    {
+      "name": "设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于发电、输电、配电等环节的各类电气设备"
+    },
+    {
+      "name": "温度",
+      "type": "物理量",
+      "desc": "物体内部粒子运动的剧烈程度，通常用摄氏度表示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "与前次比较，热像图无明显变化",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行红外热像检测",
+      "condition": "设备运行正常且已进行过至少一次红外热像检测",
+      "constraint": "热像图无明显变化",
+      "related_entities": [
+        "热像图"
+      ]
+    },
+    {
+      "content": "与同类型设备比较，相同位置的温度差不大于3℃",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行红外热像检测",
+      "condition": "设备运行正常且为同类型设备",
+      "constraint": "相同位置的温度差不大于3℃",
+      "related_entities": [
+        "热像图",
+        "设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "热像图",
+      "target": "设备",
+      "type": "检测对象"
+    },
+    {
+      "source": "温度",
+      "target": "热像图",
+      "type": "表征参数"
+    }
+  ],
+  "metadata": {
+    "pair_id": 270,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c9ff739fc572fb4f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\270_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

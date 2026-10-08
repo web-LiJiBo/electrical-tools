@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "10kV接户线",
+      "type": "电力线路",
+      "desc": "10kV电压等级的接户线"
+    },
+    {
+      "name": "低压接户线",
+      "type": "电力线路",
+      "desc": "低压电压等级的接户线"
+    },
+    {
+      "name": "10kV架空配电线路",
+      "type": "电力线路",
+      "desc": "10kV电压等级的架空配电线路"
+    },
+    {
+      "name": "低压架空配电线路",
+      "type": "电力线路",
+      "desc": "低压电压等级的架空配电线路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10kV接户线的档距不宜大于40m，超过时应按10kV架空配电线路架设",
+      "type": "强制",
+      "subject": "10kV接户线",
+      "action": "架设",
+      "condition": "10kV接户线的档距大于40m",
+      "constraint": "10kV接户线的档距不宜大于40m",
+      "related_entities": [
+        "10kV接户线",
+        "10kV架空配电线路"
+      ]
+    },
+    {
+      "content": "低压接户线的档距不宜大于25m，超过时应按低压架空配电线路架设",
+      "type": "强制",
+      "subject": "低压接户线",
+      "action": "架设",
+      "condition": "低压接户线的档距大于25m",
+      "constraint": "低压接户线的档距不宜大于25m",
+      "related_entities": [
+        "低压接户线",
+        "低压架空配电线路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "10kV接户线",
+      "target": "10kV架空配电线路",
+      "type": "替代"
+    },
+    {
+      "source": "低压接户线",
+      "target": "低压架空配电线路",
+      "type": "替代"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1619,
+      "source_row_id": "1619",
+      "clause_index": 2,
+      "source_text": "10kV接户线的档距不宜大于40m，超过时应按10kV架空配电线路架设；低压接户线的档距不宜大于25m，超过时应按低压架空配电线路架设"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.577160+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "辅助及控制回路",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于辅助功能的电气回路"
+    },
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "电气设备或线路对地或相间的绝缘性能指标"
+    },
+    {
+      "name": "兆欧表",
+      "type": "测量仪器",
+      "desc": "用于测量高阻值电阻的专用仪表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "辅助及控制回路绝缘电阻不应低于2MΩ",
+      "type": "强制",
+      "subject": "辅助及控制回路",
+      "action": "进行绝缘电阻测试",
+      "condition": "在安装、检修或定期维护时",
+      "constraint": "绝缘电阻≥2MΩ",
+      "related_entities": [
+        "辅助及控制回路",
+        "绝缘电阻"
+      ]
+    },
+    {
+      "content": "采用500V或1000V兆欧表",
+      "type": "强制",
+      "subject": "兆欧表",
+      "action": "进行绝缘电阻测量",
+      "condition": "在进行辅助及控制回路绝缘电阻测试时",
+      "constraint": "使用500V或1000V兆欧表",
+      "related_entities": [
+        "辅助及控制回路",
+        "兆欧表",
+        "绝缘电阻"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "辅助及控制回路",
+      "target": "绝缘电阻",
+      "type": "包含"
+    },
+    {
+      "source": "兆欧表",
+      "target": "绝缘电阻",
+      "type": "测量"
+    },
+    {
+      "source": "兆欧表",
+      "target": "辅助及控制回路",
+      "type": "应用于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1009,
+      "source_row_id": "1009",
+      "clause_index": 2,
+      "source_text": "辅助及控制回路绝缘电阻不应低于2MΩ，采用500V或1000V兆欧表"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.887947+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "110（66）kV及以上电压等级变压器在出厂和投产前，应用频响法和低电压短路阻抗测试绕组变形以留原始记录；110(66)kV及以上电压等级的变压器在新安装时应进行现场局部放电试验；对110（66）kV电压等级变压器在新安装时应抽样进行额定电压下空载损耗试验和负载损耗试验；如有条件时，500kV并联电抗器在新安装时可进行现场局部放电试验。现场局部放电试验验收，应在所有额定运行油泵（如有）启动以及工厂试验电压和时间下，220kV及以上变压器放电量不大于100pC",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2401,
+      "source_row_id": "2401",
+      "clause_index": 2,
+      "source_text": "110（66）kV及以上电压等级变压器在出厂和投产前，应用频响法和低电压短路阻抗测试绕组变形以留原始记录；110(66)kV及以上电压等级的变压器在新安装时应进行现场局部放电试验；对110（66）kV电压等级变压器在新安装时应抽样进行额定电压下空载损耗试验和负载损耗试验；如有条件时，500kV并联电抗器在新安装时可进行现场局部放电试验。现场局部放电试验验收，应在所有额定运行油泵（如有）启动以及工厂试验电压和时间下，220kV及以上变压器放电量不大于100pC"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:01.510549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

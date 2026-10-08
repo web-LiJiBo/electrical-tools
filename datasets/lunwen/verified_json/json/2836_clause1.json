@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "主循环泵",
+      "type": "设备",
+      "desc": "核电站中用于冷却反应堆的泵"
+    },
+    {
+      "name": "主循环泵电机供电回路",
+      "type": "回路",
+      "desc": "为运行主循环泵提供动力的供电回路"
+    },
+    {
+      "name": "电源监视继电器",
+      "type": "继电器",
+      "desc": "监测主循环泵电机供电回路电源状态的继电器"
+    },
+    {
+      "name": "运行主循环泵",
+      "type": "设备",
+      "desc": "正在运行的主循环泵"
+    },
+    {
+      "name": "备用主循环泵",
+      "type": "设备",
+      "desc": "未运行但可随时启动的主循环泵"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主循环泵电机供电回路的电源监视继电器告警信号宜参与运行主循环泵切换控制，并参与备用主循环泵的控制逻辑。",
+      "type": "强制",
+      "subject": "主循环泵电机供电回路的电源监视继电器",
+      "action": "参与运行主循环泵切换控制及备用主循环泵控制逻辑",
+      "condition": "主循环泵电机供电回路的电源监视继电器告警信号出现时",
+      "constraint": "无具体约束条件",
+      "related_entities": [
+        "主循环泵",
+        "主循环泵电机供电回路",
+        "电源监视继电器",
+        "运行主循环泵",
+        "备用主循环泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主循环泵电机供电回路",
+      "target": "电源监视继电器",
+      "type": "连接"
+    },
+    {
+      "source": "电源监视继电器",
+      "target": "运行主循环泵",
+      "type": "控制"
+    },
+    {
+      "source": "电源监视继电器",
+      "target": "备用主循环泵",
+      "type": "控制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2827,
+      "source_row_id": "2836",
+      "clause_index": 1,
+      "source_text": "g）主循环泵电机供电回路的电源监视继电器告警信号宜参与运行主循环泵切换控制，并参与备用主循环泵的控制逻辑。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.042315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

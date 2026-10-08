@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "新油",
+      "type": "电力设备材料",
+      "desc": "电力系统中使用的绝缘油"
+    },
+    {
+      "name": "介质损耗因数",
+      "type": "电气参数",
+      "desc": "反映绝缘油介质损耗特性的参数"
+    },
+    {
+      "name": "脱气",
+      "type": "工艺过程",
+      "desc": "去除油中溶解气体的过程"
+    },
+    {
+      "name": "过滤净化",
+      "type": "工艺过程",
+      "desc": "去除油中杂质和水分的过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "验收合格的新油经脱气和过滤净化处理后，还应满足下列各项的指标要求，介质损耗因数≤0.002",
+      "type": "强制",
+      "subject": "新油",
+      "action": "进行脱气和过滤净化处理，并满足介质损耗因数≤0.002的要求",
+      "condition": "新油在验收合格后",
+      "constraint": "介质损耗因数≤0.002",
+      "related_entities": [
+        "新油",
+        "介质损耗因数"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "新油",
+      "target": "脱气",
+      "type": "经过"
+    },
+    {
+      "source": "新油",
+      "target": "过滤净化",
+      "type": "经过"
+    },
+    {
+      "source": "脱气",
+      "target": "新油",
+      "type": "处理对象"
+    },
+    {
+      "source": "过滤净化",
+      "target": "新油",
+      "type": "处理对象"
+    },
+    {
+      "source": "新油",
+      "target": "介质损耗因数",
+      "type": "满足要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2146,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "001af26e5d972492",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2146_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

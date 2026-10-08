@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "网、省调度大楼应具备两条及以上完全独立的光缆通道。电网调度机构、集控中心（站）、重要变电站、直调发电厂、重要风电场和通信枢纽站的通信光缆或电缆应采用不同路由的电缆沟（竖井）进入通信机房和主控室；避免与一次动力电缆同沟（架）布放，并完善332防火阻燃和阻火分隔等各项安全措施，绑扎醒目的识别标志；如不具备条件，应采取电缆沟（竖井）内部分隔离等措施进行有效隔离。新建通信站应在设计时与全站电缆沟、架统一规划，满足以上要求",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 513,
+      "source_row_id": "513",
+      "clause_index": 1,
+      "source_text": "网、省调度大楼应具备两条及以上完全独立的光缆通道。电网调度机构、集控中心（站）、重要变电站、直调发电厂、重要风电场和通信枢纽站的通信光缆或电缆应采用不同路由的电缆沟（竖井）进入通信机房和主控室；避免与一次动力电缆同沟（架）布放，并完善332防火阻燃和阻火分隔等各项安全措施，绑扎醒目的识别标志；如不具备条件，应采取电缆沟（竖井）内部分隔离等措施进行有效隔离。新建通信站应在设计时与全站电缆沟、架统一规划，满足以上要求"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.312483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

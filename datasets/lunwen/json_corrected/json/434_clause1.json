@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "箱门",
+      "type": "电力设备部件",
+      "desc": "配电箱的门"
+    },
+    {
+      "name": "开启灵活",
+      "type": "技术要求",
+      "desc": "箱门开闭顺畅无卡滞现象"
+    },
+    {
+      "name": "开启角度",
+      "type": "技术参数",
+      "desc": "箱门开启的最大角度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "箱门应开启灵活，开启角度应大于90°",
+      "type": "强制",
+      "subject": "箱门",
+      "action": "开启灵活且开启角度大于90°",
+      "condition": "配电箱安装完毕后",
+      "constraint": "开启角度>90°",
+      "related_entities": [
+        "箱门"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "箱门",
+      "target": "开启灵活",
+      "type": "满足"
+    },
+    {
+      "source": "箱门",
+      "target": "开启角度",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 434,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e0f9d7f0cc542471",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\434_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

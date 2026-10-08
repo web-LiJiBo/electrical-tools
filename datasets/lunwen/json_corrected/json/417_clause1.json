@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "开关柜",
+      "type": "电力设备",
+      "desc": "一种用于分配电能的成套电器设备"
+    },
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "安装和运行电力设备的场所"
+    },
+    {
+      "name": "通风设备",
+      "type": "电力设备",
+      "desc": "用于改善室内空气流通的装置"
+    },
+    {
+      "name": "除湿防潮设备",
+      "type": "电力设备",
+      "desc": "用于降低室内湿度和防止潮湿的装置"
+    },
+    {
+      "name": "凝露",
+      "type": "环境因素",
+      "desc": "空气中的水蒸气遇冷凝结成水滴的现象"
+    },
+    {
+      "name": "绝缘事故",
+      "type": "电力故障",
+      "desc": "由于绝缘材料损坏导致的电力系统故障"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应在开关柜配电室配置通风、除湿防潮设备，防止凝露导致绝缘事故",
+      "type": "强制",
+      "subject": "开关柜配电室",
+      "action": "配置通风、除湿防潮设备",
+      "condition": "在开关柜配电室内存在绝缘材料",
+      "constraint": "通风设备应保持室内空气流通，除湿防潮设备应有效降低室内湿度，防止凝露现象发生",
+      "related_entities": [
+        "开关柜",
+        "配电室",
+        "通风设备",
+        "除湿防潮设备",
+        "凝露",
+        "绝缘事故"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关柜",
+      "target": "配电室",
+      "type": "位于"
+    },
+    {
+      "source": "通风设备",
+      "target": "配电室",
+      "type": "安装于"
+    },
+    {
+      "source": "除湿防潮设备",
+      "target": "配电室",
+      "type": "安装于"
+    },
+    {
+      "source": "凝露",
+      "target": "配电室",
+      "type": "可能产生于"
+    },
+    {
+      "source": "绝缘事故",
+      "target": "配电室",
+      "type": "可能导致于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 417,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "69fa9c4dd3dc7e85",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\417_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

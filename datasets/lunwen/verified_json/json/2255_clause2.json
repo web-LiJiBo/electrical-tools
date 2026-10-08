@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "封闭压力系统",
+      "type": "电力设备",
+      "desc": "电力系统中的一种密封结构，用于防止气体泄漏"
+    },
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘开关设备，一种高压电气设备"
+    },
+    {
+      "name": "隔室",
+      "type": "电力设备部件",
+      "desc": "GIS内部的独立气室"
+    },
+    {
+      "name": "漏气率",
+      "type": "技术参数",
+      "desc": "单位时间内气体泄漏量占初始气体总量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "封闭压力系统，在设备运行寿命期间，从GIS任一单个隔室泄漏到大气和隔室间的漏气率不应超过每年0.5%",
+      "type": "强制",
+      "subject": "封闭压力系统",
+      "action": "控制漏气率",
+      "condition": "GIS设备运行寿命期间",
+      "constraint": "每年漏气率≤0.5%",
+      "related_entities": [
+        "封闭压力系统",
+        "GIS",
+        "隔室"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "封闭压力系统",
+      "target": "GIS",
+      "type": "包含"
+    },
+    {
+      "source": "封闭压力系统",
+      "target": "隔室",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "隔室",
+      "type": "构成"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2255,
+      "source_row_id": "2255",
+      "clause_index": 2,
+      "source_text": "如果是封闭压力系统，在设备运行寿命期间，从GIS任一单个隔室泄漏到大气和隔室间的漏气率不应超过每年0.5%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.332547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

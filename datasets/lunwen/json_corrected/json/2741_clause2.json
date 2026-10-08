@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "断路器操动机构",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制电路通断的电气设备"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "电气设备外壳对异物侵入的防护能力等级"
+    },
+    {
+      "name": "IP5X",
+      "type": "技术参数",
+      "desc": "具体防护等级，表示防尘且无有害粉尘堆积"
+    },
+    {
+      "name": "GB4208-2008",
+      "type": "国家标准",
+      "desc": "电气外壳防护等级标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "断路器操动机构的防护等级：一般应为IP5X（见GB4208-2008）。",
+      "type": "强制",
+      "subject": "断路器操动机构",
+      "action": "设置防护等级",
+      "condition": "适用于所有断路器操动机构",
+      "constraint": "防护等级不低于IP5X",
+      "related_entities": [
+        "断路器操动机构",
+        "防护等级",
+        "IP5X",
+        "GB4208-2008"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器操动机构",
+      "target": "防护等级",
+      "type": "具有"
+    },
+    {
+      "source": "防护等级",
+      "target": "IP5X",
+      "type": "具体值"
+    },
+    {
+      "source": "防护等级",
+      "target": "GB4208-2008",
+      "type": "依据标准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2741,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c0983eeb40805ca7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2741_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

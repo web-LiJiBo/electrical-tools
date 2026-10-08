@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "主变压器",
+      "type": "电力设备",
+      "desc": "变电站中的主要电气设备，用于电压变换"
+    },
+    {
+      "name": "高压电抗器",
+      "type": "电力设备",
+      "desc": "用于限制输电线路的工频过电压和操作过电压的设备"
+    },
+    {
+      "name": "中性点接地部位",
+      "type": "电力设备部件",
+      "desc": "主变压器或高压电抗器的中性点接地部分"
+    },
+    {
+      "name": "绝缘等级",
+      "type": "技术参数",
+      "desc": "电气设备绝缘材料的耐压等级"
+    },
+    {
+      "name": "防护措施",
+      "type": "安全措施",
+      "desc": "为防止设备故障对人身和设备造成伤害而采取的技术措施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于主变压器、高压电抗器中性点接地部位应按绝缘等级增加防护措施",
+      "type": "强制",
+      "subject": "主变压器、高压电抗器",
+      "action": "增加防护措施",
+      "condition": "主变压器、高压电抗器中性点接地部位",
+      "constraint": "按绝缘等级",
+      "related_entities": [
+        "主变压器",
+        "高压电抗器",
+        "中性点接地部位",
+        "绝缘等级",
+        "防护措施"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主变压器",
+      "target": "中性点接地部位",
+      "type": "包含"
+    },
+    {
+      "source": "高压电抗器",
+      "target": "中性点接地部位",
+      "type": "包含"
+    },
+    {
+      "source": "中性点接地部位",
+      "target": "绝缘等级",
+      "type": "依据"
+    },
+    {
+      "source": "中性点接地部位",
+      "target": "防护措施",
+      "type": "执行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2082,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5dd9a371a060c655",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2082_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "一次绕组",
+      "type": "电力设备",
+      "desc": "变压器的一次侧绕组"
+    },
+    {
+      "name": "二次绕组",
+      "type": "电力设备",
+      "desc": "变压器的二次侧绕组"
+    },
+    {
+      "name": "段间绝缘",
+      "type": "电力设备",
+      "desc": "变压器绕组分段间的绝缘"
+    },
+    {
+      "name": "额定工频耐受电压",
+      "type": "电气参数",
+      "desc": "电气设备在额定工频下能承受的最大电压"
+    },
+    {
+      "name": "方均根值",
+      "type": "电气参数",
+      "desc": "交流电的有效值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当一次或二次绕组分成两段或多段时，段间绝缘的额定工频耐受电压应为3kV(方均根值)",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "设计与制造",
+      "condition": "一次或二次绕组分段",
+      "constraint": "额定工频耐受电压≥3kV(方均根值)",
+      "related_entities": [
+        "一次绕组",
+        "二次绕组",
+        "段间绝缘"
+      ]
+    },
+    {
+      "content": "二次绕组绝缘的额定工额耐受电压应为3kV(方均根值)",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "设计与制造",
+      "condition": "存在二次绕组",
+      "constraint": "额定工频耐受电压≥3kV(方均根值)",
+      "related_entities": [
+        "二次绕组"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一次绕组",
+      "target": "段间绝缘",
+      "type": "包含"
+    },
+    {
+      "source": "二次绕组",
+      "target": "段间绝缘",
+      "type": "包含"
+    },
+    {
+      "source": "段间绝缘",
+      "target": "额定工频耐受电压",
+      "type": "满足"
+    },
+    {
+      "source": "二次绕组",
+      "target": "额定工频耐受电压",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 424,
+      "source_row_id": "424",
+      "clause_index": 2,
+      "source_text": "6.1.3段间绝缘要求：当一次或二次绕组分成两段或多段时，段间绝缘的额定工频耐受电压应为3kV(方均根值)。6.1.4二次绕组的绝缘要求：二次绕组绝缘的额定工额耐受电压应为3kV(方均根值)"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9875,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.209483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的沟道"
+    },
+    {
+      "name": "隧道",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的地下通道"
+    },
+    {
+      "name": "纵向排水坡度",
+      "type": "技术参数",
+      "desc": "电缆沟或隧道纵向排水的坡度要求"
+    },
+    {
+      "name": "集水井",
+      "type": "电力设施",
+      "desc": "电缆沟或隧道内用于汇集并排出积水的设施"
+    },
+    {
+      "name": "泄水系统",
+      "type": "电力设施",
+      "desc": "电缆沟或隧道内用于排出积水的系统"
+    },
+    {
+      "name": "机械排水",
+      "type": "技术措施",
+      "desc": "通过机械设备进行电缆沟或隧道内的排水"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆沟、隧道的纵向排水坡度，不得小于0.5%",
+      "type": "强制",
+      "subject": "电缆沟、隧道",
+      "action": "设置纵向排水坡度",
+      "condition": "电缆沟、隧道敷设电力电缆",
+      "constraint": "纵向排水坡度≥0.5%",
+      "related_entities": [
+        "电缆沟",
+        "隧道",
+        "纵向排水坡度"
+      ]
+    },
+    {
+      "content": "沿排水方向适当距离宜设置集水井及其泄水系统",
+      "type": "强制",
+      "subject": "电缆沟、隧道",
+      "action": "设置集水井及其泄水系统",
+      "condition": "电缆沟、隧道敷设电力电缆且纵向排水坡度≥0.5%",
+      "constraint": "集水井间距≤100m，泄水系统满足排水需求",
+      "related_entities": [
+        "电缆沟",
+        "隧道",
+        "集水井",
+        "泄水系统",
+        "纵向排水坡度"
+      ]
+    },
+    {
+      "content": "必要时应实施机械排水",
+      "type": "强制",
+      "subject": "电缆沟、隧道",
+      "action": "实施机械排水",
+      "condition": "电缆沟、隧道敷设电力电缆且纵向排水坡度≥0.5%，但排水不畅",
+      "constraint": "机械排水设备满足排水需求",
+      "related_entities": [
+        "电缆沟",
+        "隧道",
+        "纵向排水坡度",
+        "机械排水"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "纵向排水坡度",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "集水井",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "泄水系统",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "机械排水",
+      "type": "包含"
+    },
+    {
+      "source": "隧道",
+      "target": "纵向排水坡度",
+      "type": "包含"
+    },
+    {
+      "source": "隧道",
+      "target": "集水井",
+      "type": "包含"
+    },
+    {
+      "source": "隧道",
+      "target": "泄水系统",
+      "type": "包含"
+    },
+    {
+      "source": "隧道",
+      "target": "机械排水",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 519,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e8ac0d865da62267",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\519_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

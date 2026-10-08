@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "500kV交流线路",
+      "type": "电力线路",
+      "desc": "500kV交流输电线路"
+    },
+    {
+      "name": "地电位作业人员",
+      "type": "电力作业人员",
+      "desc": "进行地电位作业的工作人员"
+    },
+    {
+      "name": "等电位作业人员",
+      "type": "电力作业人员",
+      "desc": "进行等电位作业的工作人员"
+    },
+    {
+      "name": "带电体",
+      "type": "电力设备",
+      "desc": "带电运行的电力设备"
+    },
+    {
+      "name": "最小安全距离",
+      "type": "安全距离",
+      "desc": "电力作业中保证人身安全的最小距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "500kV交流线路带电作业时地电位作业人员与带电体最小安全距离3.4米",
+      "type": "强制",
+      "subject": "地电位作业人员",
+      "action": "与带电体保持最小安全距离",
+      "condition": "500kV交流线路带电作业",
+      "constraint": "3.4米",
+      "related_entities": [
+        "500kV交流线路",
+        "地电位作业人员",
+        "带电体"
+      ]
+    },
+    {
+      "content": "500kV交流线路带电作业时等电位作业人员对地最小安全距离3.4米",
+      "type": "强制",
+      "subject": "等电位作业人员",
+      "action": "与地保持最小安全距离",
+      "condition": "500kV交流线路带电作业",
+      "constraint": "3.4米",
+      "related_entities": [
+        "500kV交流线路",
+        "等电位作业人员",
+        "带电体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "500kV交流线路",
+      "target": "地电位作业人员",
+      "type": "作业对象"
+    },
+    {
+      "source": "500kV交流线路",
+      "target": "等电位作业人员",
+      "type": "作业对象"
+    },
+    {
+      "source": "地电位作业人员",
+      "target": "带电体",
+      "type": "作业距离"
+    },
+    {
+      "source": "等电位作业人员",
+      "target": "带电体",
+      "type": "作业距离"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1995,
+      "source_row_id": "1995",
+      "clause_index": 2,
+      "source_text": "500kV交流线路带电作业时地电位作业人员与带电体最小安全距离3.4米，等电位作业人员对地最小安全距离3.4米"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8359,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.006969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

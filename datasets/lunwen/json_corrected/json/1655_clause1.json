@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "光电式电流互感器",
+      "type": "设备",
+      "desc": "一种利用光电原理测量电流的互感器"
+    },
+    {
+      "name": "外观检查",
+      "type": "巡检项目",
+      "desc": "对设备外观进行检查的巡检项目"
+    },
+    {
+      "name": "500kv",
+      "type": "电压等级",
+      "desc": "特高压交流输电系统电压等级"
+    },
+    {
+      "name": "220kv",
+      "type": "电压等级",
+      "desc": "超高压交流输电系统电压等级"
+    },
+    {
+      "name": "110kv",
+      "type": "电压等级",
+      "desc": "高压交流输电系统电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "光电式电流互感器外观检查基准周期为500kv：2周；220kv:1月；110kv：3月",
+      "type": "强制",
+      "subject": "光电式电流互感器",
+      "action": "外观检查",
+      "condition": "定期巡检",
+      "constraint": "500kv：2周；220kv:1月；110kv：3月",
+      "related_entities": [
+        "光电式电流互感器",
+        "外观检查"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "光电式电流互感器",
+      "target": "外观检查",
+      "type": "包含"
+    },
+    {
+      "source": "500kv",
+      "target": "光电式电流互感器",
+      "type": "适用于"
+    },
+    {
+      "source": "220kv",
+      "target": "光电式电流互感器",
+      "type": "适用于"
+    },
+    {
+      "source": "110kv",
+      "target": "光电式电流互感器",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1655,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "844b63f8868c0260",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1655_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

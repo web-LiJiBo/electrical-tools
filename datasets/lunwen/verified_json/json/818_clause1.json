@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "H2",
+      "type": "气体",
+      "desc": "氢气"
+    },
+    {
+      "name": "烃类气体",
+      "type": "气体",
+      "desc": "包括CH4、C2H4、C2H6等"
+    },
+    {
+      "name": "总烃",
+      "type": "气体",
+      "desc": "烃类气体总和"
+    },
+    {
+      "name": "C2H2",
+      "type": "气体",
+      "desc": "乙炔"
+    },
+    {
+      "name": "油",
+      "type": "介质",
+      "desc": "变压器油"
+    },
+    {
+      "name": "设备",
+      "type": "设备",
+      "desc": "变压器等电力设备"
+    },
+    {
+      "name": "产气速率",
+      "type": "参数",
+      "desc": "单位时间内气体产生量"
+    },
+    {
+      "name": "相对产气速率",
+      "type": "参数",
+      "desc": "相对时间内的气体产生量变化率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行设备的油中H2与烃类气体含量超过下列任何一项值时应引起注意：总烃含量大于150ul/l，H2含量大于150ul/l，C2H2含量大于0．5ul/l",
+      "type": "强制",
+      "subject": "设备",
+      "action": "引起注意",
+      "condition": "运行设备",
+      "constraint": "H2含量>150ul/l or 总烃含量>150ul/l or C2H2含量>0.5ul/l",
+      "related_entities": [
+        "H2",
+        "烃类气体",
+        "总烃",
+        "C2H2",
+        "油"
+      ]
+    },
+    {
+      "content": "烃类气体总和的产气速率大于6mL/d,或相对产气速率大于10%/月则认为设备异常",
+      "type": "强制",
+      "subject": "设备",
+      "action": "认为设备异常",
+      "condition": "运行设备",
+      "constraint": "产气速率>6mL/d or 相对产气速率>10%/月",
+      "related_entities": [
+        "烃类气体",
+        "产气速率",
+        "相对产气速率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "H2",
+      "target": "设备",
+      "type": "存在于"
+    },
+    {
+      "source": "烃类气体",
+      "target": "设备",
+      "type": "存在于"
+    },
+    {
+      "source": "总烃",
+      "target": "烃类气体",
+      "type": "组成"
+    },
+    {
+      "source": "C2H2",
+      "target": "烃类气体",
+      "type": "组成"
+    },
+    {
+      "source": "油",
+      "target": "设备",
+      "type": "介质"
+    },
+    {
+      "source": "产气速率",
+      "target": "设备",
+      "type": "参数"
+    },
+    {
+      "source": "相对产气速率",
+      "target": "设备",
+      "type": "参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 818,
+      "source_row_id": "818",
+      "clause_index": 1,
+      "source_text": "油中溶解气体分析中要求：1）运行设备的油中H2与烃类气体含量超过下列任何一项值时应引起注意：总烃含量大于150ul/l，H2含量大于150ul/l，C2H2含量大于0．5ul/l;2）烃类气体总和的产气速率大于6mL/d,或相对产气速率大于10%/月则认为设备异常．"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.673084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

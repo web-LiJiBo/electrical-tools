@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "外观检查",
+      "type": "试验项目",
+      "desc": "对设备外观进行检查"
+    },
+    {
+      "name": "电容测量",
+      "type": "试验项目",
+      "desc": "测量电容器的电容值"
+    },
+    {
+      "name": "电容器损耗角正切测量",
+      "type": "试验项目",
+      "desc": "测量电容器的损耗角正切值"
+    },
+    {
+      "name": "端子间电压试验",
+      "type": "试验项目",
+      "desc": "测量端子间的耐压值"
+    },
+    {
+      "name": "端子与外壳间交流电压试验",
+      "type": "试验项目",
+      "desc": "测量端子与外壳间的耐压值"
+    },
+    {
+      "name": "内部均压电阻测量",
+      "type": "试验项目",
+      "desc": "测量内部均压电阻值"
+    },
+    {
+      "name": "密封性试验",
+      "type": "试验项目",
+      "desc": "检测设备的密封性能"
+    },
+    {
+      "name": "内部熔丝的放电试验",
+      "type": "试验项目",
+      "desc": "检测内部熔丝的放电性能"
+    },
+    {
+      "name": "电容器",
+      "type": "电力设备",
+      "desc": "电力系统中用于储存电能的设备"
+    },
+    {
+      "name": "端子",
+      "type": "电力设备部件",
+      "desc": "连接电力设备的导电部件"
+    },
+    {
+      "name": "外壳",
+      "type": "电力设备部件",
+      "desc": "电力设备的外部防护结构"
+    },
+    {
+      "name": "均压电阻",
+      "type": "电力设备部件",
+      "desc": "电力设备内部用于均压的电阻器"
+    },
+    {
+      "name": "熔丝",
+      "type": "电力设备部件",
+      "desc": "电力设备内部用于保护电路的保险丝"
+    }
+  ],
+  "rules": [
+    {
+      "content": "例行试验项目如下：a)外观检查；b)电容测量；c)电容器损耗角正切测量；d)端子间电压试验；e)端子与外壳间交流电压试验；f)内部均压电阻测量；g)密封性试验；h)内部熔丝的放电试验",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": [
+        "外观检查",
+        "电容测量",
+        "电容器损耗角正切测量",
+        "端子间电压试验",
+        "端子与外壳间交流电压试验",
+        "内部均压电阻测量",
+        "密封性试验",
+        "内部熔丝的放电试验",
+        "电容器",
+        "端子",
+        "外壳",
+        "均压电阻",
+        "熔丝"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1264,
+      "source_row_id": "1264",
+      "clause_index": 1,
+      "source_text": "例行试验项目如下：a)外观检查；b)电容测量；c)电容器损耗角正切测量；d)端子间电压试验；e)端子与外壳间交流电压试验；f)内部均压电阻测量；g)密封性试验；h)内部熔丝的放电试验"
+    },
+    "audit": {
+      "status": "corrected_to_source_faithful_rule",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": false,
+      "reasons": [
+        "rule_content_unrelated_to_excel_source"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.173547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

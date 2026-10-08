@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "储油柜",
+      "type": "电力设备",
+      "desc": "变压器等电力设备中用于储存绝缘油的容器"
+    },
+    {
+      "name": "胶囊",
+      "type": "电力设备部件",
+      "desc": "储油柜内部用于隔离油与空气的弹性隔膜"
+    },
+    {
+      "name": "隔膜",
+      "type": "电力设备部件",
+      "desc": "储油柜内部用于隔离油与空气的弹性隔膜"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对运行年限超过15年储油柜的胶囊和隔膜应更换",
+      "type": "强制",
+      "subject": "电力设备检修人员",
+      "action": "更换胶囊和隔膜",
+      "condition": "储油柜运行年限超过15年",
+      "constraint": "无",
+      "related_entities": [
+        "储油柜",
+        "胶囊",
+        "隔膜"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "储油柜",
+      "target": "胶囊",
+      "type": "包含"
+    },
+    {
+      "source": "储油柜",
+      "target": "隔膜",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 769,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "05cb6abc4ad02804",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\769_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

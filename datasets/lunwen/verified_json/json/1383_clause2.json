@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "导线",
+      "type": "电力设备",
+      "desc": "架空输电线路中的导体部分"
+    },
+    {
+      "name": "地面",
+      "type": "地理环境",
+      "desc": "导线与地面之间的垂直距离"
+    },
+    {
+      "name": "水面",
+      "type": "地理环境",
+      "desc": "导线与水面之间的垂直距离"
+    },
+    {
+      "name": "交通困难地区",
+      "type": "地理环境",
+      "desc": "交通不便的山区、林区等区域"
+    },
+    {
+      "name": "1kV",
+      "type": "电压等级",
+      "desc": "低压输电系统电压等级"
+    },
+    {
+      "name": "10kV",
+      "type": "电压等级",
+      "desc": "中压输电系统电压等级"
+    },
+    {
+      "name": "4.5米",
+      "type": "距离",
+      "desc": "1kV～10kV导线与地面或水面的最小距离"
+    },
+    {
+      "name": "4米",
+      "type": "距离",
+      "desc": "1kV以下导线与地面或水面的最小距离"
+    },
+    {
+      "name": "绝缘线",
+      "type": "电力设备",
+      "desc": "具有绝缘层的导线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交通困难地区1kV～10kV4.5（3）米；1kV以下4（3）米",
+      "type": "强制",
+      "subject": "导线",
+      "action": "与地面或水面保持最小距离",
+      "condition": "在交通困难地区架设1kV～10kV及1kV以下导线",
+      "constraint": "1kV～10kV导线与地面或水面的最小距离为4.5米，其中绝缘线为4.5米；1kV以下导线与地面或水面的最小距离为4米，其中绝缘线为4米",
+      "related_entities": [
+        "导线",
+        "地面",
+        "水面",
+        "交通困难地区",
+        "1kV",
+        "10kV",
+        "4.5米",
+        "4米",
+        "绝缘线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导线",
+      "target": "地面",
+      "type": "最小距离"
+    },
+    {
+      "source": "导线",
+      "target": "水面",
+      "type": "最小距离"
+    },
+    {
+      "source": "导线",
+      "target": "交通困难地区",
+      "type": "适用区域"
+    },
+    {
+      "source": "1kV",
+      "target": "导线",
+      "type": "电压等级"
+    },
+    {
+      "source": "10kV",
+      "target": "导线",
+      "type": "电压等级"
+    },
+    {
+      "source": "4.5米",
+      "target": "导线",
+      "type": "最小距离"
+    },
+    {
+      "source": "4米",
+      "target": "导线",
+      "type": "最小距离"
+    },
+    {
+      "source": "绝缘线",
+      "target": "导线",
+      "type": "类型"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1383,
+      "source_row_id": "1383",
+      "clause_index": 2,
+      "source_text": "导线与地面或水面的最小距离：交通困难地区1kV～10kV4.5（3）米；1kV以下4（3）米，注：括号内为绝缘线数值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9769,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.313548+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

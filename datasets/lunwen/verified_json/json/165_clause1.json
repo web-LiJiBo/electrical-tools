@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "晶闸管",
+      "type": "电力设备",
+      "desc": "电力系统中的一种半导体器件"
+    },
+    {
+      "name": "晶闸管级",
+      "type": "电力设备",
+      "desc": "晶闸管级是晶闸管的组合单元"
+    },
+    {
+      "name": "阀",
+      "type": "电力设备",
+      "desc": "电力系统中的一种高压直流换流器组成部分"
+    },
+    {
+      "name": "冗余度",
+      "type": "技术参数",
+      "desc": "晶闸管级的冗余配置比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "冗余度每个阀中必须按规定增加一些晶闸管，作为两次计划检修之间12个月的运行周期中损坏元件的备用。",
+      "type": "强制",
+      "subject": "晶闸管级",
+      "action": "增加冗余度",
+      "condition": "晶闸管级的损坏",
+      "constraint": "冗余度的确定应保证：各阀中的冗余晶闸管级数应不小于12个月运行周期内损坏的晶闸管级数的期望值的2.5倍，也不应少于每阀晶闸管级总数的3%",
+      "related_entities": [
+        "晶闸管",
+        "晶闸管级",
+        "阀"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "晶闸管",
+      "target": "晶闸管级",
+      "type": "组成"
+    },
+    {
+      "source": "晶闸管级",
+      "target": "阀",
+      "type": "组成"
+    },
+    {
+      "source": "阀",
+      "target": "冗余度",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 165,
+      "source_row_id": "165",
+      "clause_index": 1,
+      "source_text": "冗余度每个阀中必须按规定增加一些晶闸管，作为两次计划检修之间12个月的运行周期中损坏元件的备用。晶闸管级的损坏是指阀中晶闸管元件或相关元件的损坏导致该晶闸管级短路，在功能上减少了阀中晶闸管级的有效数量。冗余度的确定应保证：各阀中的冗余晶闸管级数应不小于12个月运行周期内损坏的晶闸管级数的期望值的2.5倍，也不应少于每阀晶闸管级总数的3%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.932601+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

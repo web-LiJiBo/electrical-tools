@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "悬垂线夹",
+      "type": "电力金具",
+      "desc": "用于导线悬挂在杆塔横担上的金具"
+    },
+    {
+      "name": "绝缘子串",
+      "type": "电力设备",
+      "desc": "由多个绝缘子串联组成的电气绝缘装置"
+    },
+    {
+      "name": "顺线路方向",
+      "type": "电力方向",
+      "desc": "沿电力线路走向的方向"
+    }
+  ],
+  "rules": [
+    {
+      "content": "悬垂线夹安装后，绝缘子串应竖直，顺线路方向与竖直位置的偏移角不应超过5°，且最大偏移值不应超过200mm",
+      "type": "强制",
+      "subject": "悬垂线夹安装人员",
+      "action": "安装悬垂线夹",
+      "condition": "悬垂线夹安装完成后",
+      "constraint": "顺线路方向与竖直位置的偏移角≤5°，最大偏移值≤200mm",
+      "related_entities": [
+        "悬垂线夹",
+        "绝缘子串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "悬垂线夹",
+      "target": "绝缘子串",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "悬垂线夹",
+      "type": "被支撑"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 783,
+      "source_row_id": "783",
+      "clause_index": 2,
+      "source_text": "悬垂线夹安装后，绝缘子串应竖直，顺线路方向与竖直位置的偏移角不应超过5°，且最大偏移值不应超过200mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.636086+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

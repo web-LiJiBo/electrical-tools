@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "水底电缆",
+      "type": "电力设备",
+      "desc": "铺设在水底的电缆"
+    },
+    {
+      "name": "河床",
+      "type": "地理环境",
+      "desc": "河流底部的沉积物层"
+    },
+    {
+      "name": "海底",
+      "type": "地理环境",
+      "desc": "海洋底部的沉积物层"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水底电缆的敷设，必须平放水底，不得悬空。",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "敷设",
+      "condition": "水底电缆敷设",
+      "constraint": "平放水底，不得悬空",
+      "related_entities": [
+        "水底电缆"
+      ]
+    },
+    {
+      "content": "当条件允许时，宜埋入河床（海底）0.5m以下。",
+      "type": "建议",
+      "subject": "水底电缆",
+      "action": "敷设",
+      "condition": "水底电缆敷设于河床或海底且条件允许",
+      "constraint": "埋入河床（海底）0.5m以下",
+      "related_entities": [
+        "水底电缆",
+        "河床",
+        "海底"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水底电缆",
+      "target": "河床",
+      "type": "敷设于"
+    },
+    {
+      "source": "水底电缆",
+      "target": "海底",
+      "type": "敷设于"
+    },
+    {
+      "source": "水底电缆",
+      "target": "河床",
+      "type": "敷设于"
+    },
+    {
+      "source": "水底电缆",
+      "target": "海底",
+      "type": "敷设于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1935,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "67a8a28a1e444bf4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1935_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

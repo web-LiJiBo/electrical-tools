@@ -1,0 +1,63 @@
+{
+  "entities": [
+    {
+      "name": "10kV线路",
+      "type": "电力线路",
+      "desc": "10kV电压等级的输电线路"
+    },
+    {
+      "name": "主变容量",
+      "type": "变压器容量",
+      "desc": "主变压器的额定容量"
+    },
+    {
+      "name": "表10",
+      "type": "技术规范表",
+      "desc": "用于指导10kV线路截面与主变容量配合的技术规范表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10kV线路截面应与主变容量相配合",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "选择10kV线路截面",
+      "condition": "新建或改造10kV配电网工程",
+      "constraint": "10kV线路截面应与主变容量相配合",
+      "related_entities": [
+        "10kV线路",
+        "主变容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "10kV线路",
+      "target": "主变容量",
+      "type": "配合关系"
+    },
+    {
+      "source": "10kV线路",
+      "target": "表10",
+      "type": "参考关系"
+    },
+    {
+      "source": "主变容量",
+      "target": "表10",
+      "type": "参考关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 628,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "23fc840fcff61e20",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\628_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

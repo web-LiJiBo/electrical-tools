@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "电缆接头",
+      "type": "电力设备",
+      "desc": "电力系统中连接电缆的装置"
+    },
+    {
+      "name": "防火槽盒",
+      "type": "电力设备",
+      "desc": "用于电缆防火隔离的专用槽盒"
+    },
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "电力系统中汇集、分配和控制电能的场所"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电能的导体组合"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆接头应加装防火槽盒或采用其他防火隔离措施",
+      "type": "强制",
+      "subject": "电缆接头",
+      "action": "加装防火槽盒或采用其他防火隔离措施",
+      "condition": "电缆接头安装于电力系统中",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "电缆接头",
+        "防火槽盒"
+      ]
+    },
+    {
+      "content": "变电站夹层内不应设置电缆接头",
+      "type": "强制",
+      "subject": "电缆接头",
+      "action": "不设置",
+      "condition": "电缆接头安装于变电站夹层内",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "电缆接头",
+        "变电站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆接头",
+      "target": "防火槽盒",
+      "type": "使用"
+    },
+    {
+      "source": "电缆接头",
+      "target": "变电站",
+      "type": "安装位置"
+    },
+    {
+      "source": "变电站",
+      "target": "电缆",
+      "type": "供电对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 502,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6e210bbb2c15aa72",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\502_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

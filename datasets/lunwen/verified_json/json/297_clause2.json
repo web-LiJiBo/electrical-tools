@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "瓷质材料",
+      "type": "绝缘材料",
+      "desc": "电力系统中使用的瓷质绝缘材料"
+    },
+    {
+      "name": "有机材料",
+      "type": "绝缘材料",
+      "desc": "电力系统中使用的有机绝缘材料"
+    },
+    {
+      "name": "爬电距离",
+      "type": "电气参数",
+      "desc": "沿绝缘材料表面的最短路径长度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "瓷质材料（对地）≥216mm，有机材料（对地）≥240mm",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "设计与制造",
+      "condition": "电气设备的爬电距离设计",
+      "constraint": "瓷质材料≥216mm，有机材料≥240mm",
+      "related_entities": [
+        "瓷质材料",
+        "有机材料",
+        "爬电距离"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "瓷质材料",
+      "target": "爬电距离",
+      "type": "满足"
+    },
+    {
+      "source": "有机材料",
+      "target": "爬电距离",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 297,
+      "source_row_id": "297",
+      "clause_index": 2,
+      "source_text": "爬电距离：瓷质材料（对地）≥216mm，有机材料（对地）≥240mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.073603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

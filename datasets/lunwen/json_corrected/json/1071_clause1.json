@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "电气设备或线路在一定电压下测量得到的电阻值"
+    },
+    {
+      "name": "测试温度",
+      "type": "环境参数",
+      "desc": "进行绝缘电阻测试时的实际环境温度"
+    },
+    {
+      "name": "20℃",
+      "type": "环境参数",
+      "desc": "规定用于换算的标准温度"
+    },
+    {
+      "name": "产品出厂试验值",
+      "type": "历史数据",
+      "desc": "产品出厂时进行绝缘电阻测试所记录的数值"
+    },
+    {
+      "name": "换算值",
+      "type": "计算结果",
+      "desc": "根据测试温度下的绝缘电阻值换算到20℃下的绝缘电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "将测试温度下的绝缘电阻换算到20℃下的绝缘电阻值不应低于产品出厂试验值的70%",
+      "type": "强制",
+      "subject": "电气设备或线路",
+      "action": "换算绝缘电阻值",
+      "condition": "在测试温度下进行绝缘电阻测试",
+      "constraint": "换算值≥产品出厂试验值×0.7",
+      "related_entities": [
+        "绝缘电阻",
+        "测试温度",
+        "20℃",
+        "产品出厂试验值",
+        "换算值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘电阻",
+      "target": "换算值",
+      "type": "计算依据"
+    },
+    {
+      "source": "测试温度",
+      "target": "绝缘电阻",
+      "type": "影响因素"
+    },
+    {
+      "source": "20℃",
+      "target": "换算值",
+      "type": "换算基准"
+    },
+    {
+      "source": "产品出厂试验值",
+      "target": "换算值",
+      "type": "比较基准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1071,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b7740bd8f6bf8349",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1071_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

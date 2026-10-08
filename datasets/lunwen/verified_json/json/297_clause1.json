@@ -1,0 +1,147 @@
+{
+  "entities": [
+    {
+      "name": "出厂试验",
+      "type": "试验",
+      "desc": "电力设备从制造厂出厂前的检验试验"
+    },
+    {
+      "name": "主回路",
+      "type": "电气回路",
+      "desc": "电力设备中主要的电气连接路径"
+    },
+    {
+      "name": "电压降",
+      "type": "电气参数",
+      "desc": "电路中电压的降低量"
+    },
+    {
+      "name": "电阻",
+      "type": "电气参数",
+      "desc": "电路中导体对电流的阻碍作用"
+    },
+    {
+      "name": "型式试验",
+      "type": "试验",
+      "desc": "电力设备定型设计时的试验"
+    },
+    {
+      "name": "温升",
+      "type": "电气参数",
+      "desc": "电路工作时发热导致的温度升高"
+    },
+    {
+      "name": "试验电流",
+      "type": "试验参数",
+      "desc": "电力设备出厂试验时的电流值"
+    },
+    {
+      "name": "Ru",
+      "type": "电气参数",
+      "desc": "型式试验时温升前测得的电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主回路每极电压降或电阻的测量值应该尽可能在与其型式试验时相似的条件下（周围空气温度和测量部件）进行",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "测量主回路电压降或电阻",
+      "condition": "与型式试验相似的环境条件",
+      "constraint": "周围空气温度和测量部件",
+      "related_entities": [
+        "出厂试验",
+        "主回路",
+        "电压降",
+        "电阻",
+        "型式试验"
+      ]
+    },
+    {
+      "content": "试验电流应在6.4.1规定的范围内",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "确定试验电流值",
+      "condition": "出厂试验",
+      "constraint": "6.4.1规定范围",
+      "related_entities": [
+        "出厂试验",
+        "主回路",
+        "试验电流"
+      ]
+    },
+    {
+      "content": "测得的电阻不应超过1.2Ru，Ru为型式试验时温升前测得的电阻值",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "测量电阻值",
+      "condition": "出厂试验",
+      "constraint": "不超过1.2Ru",
+      "related_entities": [
+        "出厂试验",
+        "主回路",
+        "电阻",
+        "型式试验",
+        "温升",
+        "Ru"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂试验",
+      "target": "主回路",
+      "type": "涉及"
+    },
+    {
+      "source": "出厂试验",
+      "target": "电压降",
+      "type": "涉及"
+    },
+    {
+      "source": "出厂试验",
+      "target": "电阻",
+      "type": "涉及"
+    },
+    {
+      "source": "出厂试验",
+      "target": "型式试验",
+      "type": "参照"
+    },
+    {
+      "source": "出厂试验",
+      "target": "试验电流",
+      "type": "涉及"
+    },
+    {
+      "source": "出厂试验",
+      "target": "温升",
+      "type": "涉及"
+    },
+    {
+      "source": "出厂试验",
+      "target": "Ru",
+      "type": "涉及"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 297,
+      "source_row_id": "297",
+      "clause_index": 1,
+      "source_text": "对于出厂试验，主回路每极电压降或电阻的测量值应该尽可能在与其型式试验时相似的条件下（周围空气温度和测量部件）进行，试验电流应在6.4.1规定的范围内，测得的电阻不应超过1.2Ru，Ru为型式试验时温升前测得的电阻值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.072601+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

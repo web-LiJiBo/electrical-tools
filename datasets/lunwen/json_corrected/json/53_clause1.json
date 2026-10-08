@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "混油",
+      "type": "电力设备材料",
+      "desc": "不同批次或品牌的绝缘油混合后的产物"
+    },
+    {
+      "name": "混油样",
+      "type": "电力设备材料",
+      "desc": "用于检测的混油样本"
+    },
+    {
+      "name": "表20.0.1",
+      "type": "技术标准",
+      "desc": "绝缘油性能指标表"
+    },
+    {
+      "name": "击穿电压",
+      "type": "电气参数",
+      "desc": "绝缘油承受电场强度的能力"
+    },
+    {
+      "name": "油泥与沉淀物",
+      "type": "物理特性",
+      "desc": "绝缘油中析出的固体杂质"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在混合前，应按混油的实际混合比例先取混油样进行分析",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "混合前取样分析",
+      "condition": "绝缘油混合前",
+      "constraint": "按混油实际混合比例取样",
+      "related_entities": [
+        "绝缘油",
+        "混油样"
+      ]
+    },
+    {
+      "content": "其结果应该符合表20.0.1中第8、11项（击穿电压、油泥与沉淀物）的规定",
+      "type": "强制",
+      "subject": "混油样",
+      "action": "检测结果符合标准",
+      "condition": "绝缘油混合前取样分析后",
+      "constraint": "击穿电压、油泥与沉淀物符合表20.0.1规定",
+      "related_entities": [
+        "混油样",
+        "表20.0.1"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油",
+      "target": "混油",
+      "type": "混合"
+    },
+    {
+      "source": "混油",
+      "target": "混油样",
+      "type": "取样"
+    },
+    {
+      "source": "混油样",
+      "target": "表20.0.1",
+      "type": "参照标准"
+    },
+    {
+      "source": "混油样",
+      "target": "击穿电压",
+      "type": "检测项目"
+    },
+    {
+      "source": "混油样",
+      "target": "油泥与沉淀物",
+      "type": "检测项目"
+    }
+  ],
+  "metadata": {
+    "pair_id": 53,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bab6892ae21bfab7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\53_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

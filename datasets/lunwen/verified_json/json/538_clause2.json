@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流的电力设备"
+    },
+    {
+      "name": "油色谱",
+      "type": "试验项目",
+      "desc": "一种检测变压器油中溶解气体含量的技术"
+    },
+    {
+      "name": "微水分析",
+      "type": "试验项目",
+      "desc": "一种检测变压器油中水分含量的技术"
+    },
+    {
+      "name": "厂家",
+      "type": "企业",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "取油样",
+      "type": "操作",
+      "desc": "从电力设备中取出一定量的油样进行检测"
+    },
+    {
+      "name": "补油",
+      "type": "操作",
+      "desc": "向电力设备中补充一定量的油液"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对新投运的220kV及以上电压等级电流互感器，1-2年内应取油样进行油色谱、微水分析",
+      "type": "强制",
+      "subject": "电流互感器",
+      "action": "取油样",
+      "condition": "新投运的220kV及以上电压等级电流互感器",
+      "constraint": "1-2年内",
+      "related_entities": [
+        "电流互感器",
+        "油色谱",
+        "微水分析"
+      ]
+    },
+    {
+      "content": "对于厂家明确要求不取油样的产品，确需取样或补油时应由制造厂配合进行",
+      "type": "强制",
+      "subject": "厂家",
+      "action": "配合取油样或补油",
+      "condition": "厂家明确要求不取油样的产品",
+      "constraint": "确需取样或补油时",
+      "related_entities": [
+        "厂家",
+        "电流互感器",
+        "取油样",
+        "补油"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电流互感器",
+      "target": "油色谱",
+      "type": "需要"
+    },
+    {
+      "source": "电流互感器",
+      "target": "微水分析",
+      "type": "需要"
+    },
+    {
+      "source": "厂家",
+      "target": "电流互感器",
+      "type": "生产"
+    },
+    {
+      "source": "厂家",
+      "target": "取油样",
+      "type": "配合"
+    },
+    {
+      "source": "厂家",
+      "target": "补油",
+      "type": "配合"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 538,
+      "source_row_id": "538",
+      "clause_index": 2,
+      "source_text": "对新投运的220kV及以上电压等级电流互感器，1-2年内应取油样进行油色谱、微水分析；对于厂家明确要求不取油样的产品，确需取样或补油时应由制造厂配合进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.340485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

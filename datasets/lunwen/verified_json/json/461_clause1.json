@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "金属电缆管",
+      "type": "电力设备",
+      "desc": "用于电力传输的金属材质电缆管"
+    },
+    {
+      "name": "防腐漆",
+      "type": "材料",
+      "desc": "具有防锈蚀功能的涂料"
+    },
+    {
+      "name": "镀锌管",
+      "type": "电力设备",
+      "desc": "表面经过镀锌处理的金属电缆管"
+    }
+  ],
+  "rules": [
+    {
+      "content": "无防腐措施的金属电缆管应在外表涂防腐漆",
+      "type": "强制",
+      "subject": "金属电缆管",
+      "action": "涂防腐漆",
+      "condition": "未采取防腐措施",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "金属电缆管",
+        "防腐漆"
+      ]
+    },
+    {
+      "content": "镀锌管锌层剥落处也应涂以防腐漆",
+      "type": "强制",
+      "subject": "镀锌管",
+      "action": "涂防腐漆",
+      "condition": "锌层剥落",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "镀锌管",
+        "防腐漆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "金属电缆管",
+      "target": "防腐漆",
+      "type": "涂覆"
+    },
+    {
+      "source": "镀锌管",
+      "target": "防腐漆",
+      "type": "涂覆"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 461,
+      "source_row_id": "461",
+      "clause_index": 1,
+      "source_text": "无防腐措施的金属电缆管应在外表涂防腐漆，镀锌管锌层剥落处也应涂以防腐漆"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.250485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

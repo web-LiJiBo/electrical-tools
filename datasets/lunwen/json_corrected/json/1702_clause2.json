@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "操动机构",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制断路器等开关电器操作的机械装置"
+    },
+    {
+      "name": "机构箱",
+      "type": "电力设备部件",
+      "desc": "操动机构的外壳，用于保护内部电气元件"
+    },
+    {
+      "name": "防潮装置",
+      "type": "电力设备部件",
+      "desc": "防止机构箱内部受潮的装置"
+    },
+    {
+      "name": "加热装置",
+      "type": "电力设备部件",
+      "desc": "用于防止机构箱内部结露的加热元件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "机构箱应密闭良好、防雨防潮性能良好",
+      "type": "强制",
+      "subject": "操动机构",
+      "action": "安装调整",
+      "condition": "在户外或潮湿环境中的操动机构",
+      "constraint": "机构箱应达到IP67及以上防护等级",
+      "related_entities": [
+        "操动机构",
+        "机构箱"
+      ]
+    },
+    {
+      "content": "箱内安装有防潮装置时，加热装置应完好",
+      "type": "强制",
+      "subject": "操动机构",
+      "action": "安装调整",
+      "condition": "机构箱内安装有防潮装置",
+      "constraint": "加热装置应能正常工作且无损坏",
+      "related_entities": [
+        "操动机构",
+        "机构箱",
+        "防潮装置",
+        "加热装置"
+      ]
+    },
+    {
+      "content": "加热器与各元件、电缆及电线的距离应大于50mm",
+      "type": "强制",
+      "subject": "操动机构",
+      "action": "安装调整",
+      "condition": "机构箱内安装有加热装置",
+      "constraint": "加热器与各元件、电缆及电线之间的最小距离应大于50mm",
+      "related_entities": [
+        "操动机构",
+        "机构箱",
+        "加热装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "操动机构",
+      "target": "机构箱",
+      "type": "包含"
+    },
+    {
+      "source": "机构箱",
+      "target": "防潮装置",
+      "type": "包含"
+    },
+    {
+      "source": "机构箱",
+      "target": "加热装置",
+      "type": "包含"
+    },
+    {
+      "source": "加热装置",
+      "target": "操动机构",
+      "type": "服务于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1702,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1e2d35e6cab20341",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1702_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

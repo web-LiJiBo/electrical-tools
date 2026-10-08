@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "电缆终端",
+      "type": "电力设备",
+      "desc": "电缆连接至电气设备的装置"
+    },
+    {
+      "name": "电缆接头",
+      "type": "电力设备",
+      "desc": "电缆中间连接的装置"
+    },
+    {
+      "name": "防火要求场所",
+      "type": "电力环境",
+      "desc": "需要采取防火措施的电力设施区域"
+    },
+    {
+      "name": "充油电缆",
+      "type": "电力电缆",
+      "desc": "内部含有绝缘油的电缆"
+    },
+    {
+      "name": "消防器材",
+      "type": "安全防护",
+      "desc": "用于火灾预防和扑救的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在室内、隧道内或林区等有防火要求的场所及充油电缆施工现场进行电缆终端与接头制作，应备有足够消防器材。",
+      "type": "强制",
+      "subject": "电缆终端与接头制作人员",
+      "action": "进行电缆终端与接头制作",
+      "condition": "在防火要求场所或充油电缆施工现场",
+      "constraint": "备有足够消防器材",
+      "related_entities": [
+        "电缆终端",
+        "电缆接头",
+        "防火要求场所",
+        "充油电缆",
+        "消防器材"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆终端",
+      "target": "电缆接头",
+      "type": "制作关系"
+    },
+    {
+      "source": "防火要求场所",
+      "target": "电缆终端",
+      "type": "制作环境"
+    },
+    {
+      "source": "防火要求场所",
+      "target": "电缆接头",
+      "type": "制作环境"
+    },
+    {
+      "source": "充油电缆",
+      "target": "电缆终端",
+      "type": "制作对象"
+    },
+    {
+      "source": "充油电缆",
+      "target": "电缆接头",
+      "type": "制作对象"
+    },
+    {
+      "source": "消防器材",
+      "target": "电缆终端",
+      "type": "安全保障"
+    },
+    {
+      "source": "消防器材",
+      "target": "电缆接头",
+      "type": "安全保障"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2474,
+      "source_row_id": "2474",
+      "clause_index": 1,
+      "source_text": "在室内、隧道内或林区等有防火要求的场所及充油电缆施工现场进行电缆终端与接头制作，应备有足够消防器材。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9583,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.611316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

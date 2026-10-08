@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "阀冷系统",
+      "type": "设备",
+      "desc": "阀冷系统是直流输电系统中用于冷却换流阀的系统"
+    },
+    {
+      "name": "直流控制保护系统",
+      "type": "系统",
+      "desc": "直流控制保护系统是直流输电系统中的控制系统"
+    },
+    {
+      "name": "阀冷控制保护系统",
+      "type": "系统",
+      "desc": "阀冷控制保护系统是阀冷系统中的控制系统"
+    },
+    {
+      "name": "开关量",
+      "type": "信号",
+      "desc": "开关量是一种数字信号，表示设备状态的开或关"
+    },
+    {
+      "name": "ACTIVE",
+      "type": "信号",
+      "desc": "ACTIVE信号表示系统处于活动状态"
+    },
+    {
+      "name": "SWITCHPUMP",
+      "type": "信号",
+      "desc": "SWITCHPUMP信号表示远方切换主泵"
+    },
+    {
+      "name": "DEBLOCK/BLOCK",
+      "type": "信号",
+      "desc": "DEBLOCK/BLOCK信号表示换流阀解锁/闭锁"
+    },
+    {
+      "name": "TRIP",
+      "type": "信号",
+      "desc": "TRIP信号表示阀冷系统请求跳闸"
+    },
+    {
+      "name": "RUNBACK",
+      "type": "信号",
+      "desc": "RUNBACK信号表示阀冷系统请求功率回降"
+    },
+    {
+      "name": "OK",
+      "type": "信号",
+      "desc": "OK信号表示阀冷系统可用"
+    },
+    {
+      "name": "RFO",
+      "type": "信号",
+      "desc": "RFO信号表示阀冷系统具备运行条件"
+    },
+    {
+      "name": "REDCOOLING",
+      "type": "信号",
+      "desc": "REDCOOLING信号表示阀冷系统具有冗余冷却能力"
+    },
+    {
+      "name": "SYS-ACTIVE",
+      "type": "信号",
+      "desc": "SYS-ACTIVE信号表示系统处于活动状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流控制保护系统下发至阀冷控制保护系统的开关量应包括但不限于以下信号：1）系统ACTIVE（ACTIVE）；2）远方切换主泵（SWITCHPUMP）；3）换流阀解锁/闭锁（DEBLOCK/BLOCK）。",
+      "type": "强制",
+      "subject": "直流控制保护系统",
+      "action": "下发开关量信号",
+      "condition": "阀冷系统与直流控制保护系统通讯正常",
+      "constraint": "必须包含ACTIVE、SWITCHPUMP、DEBLOCK/BLOCK信号",
+      "related_entities": [
+        "阀冷系统",
+        "直流控制保护系统",
+        "阀冷控制保护系统"
+      ]
+    },
+    {
+      "content": "阀冷控制保护系统上传至直流控制保护系统的开关量应包括但不限于以下信号：1）阀冷系统请求跳闸（TRIP）；2）阀冷系统请求功率回降（RUNBACK）；3）阀冷系统可用（OK）；4）阀冷系统具备运行条件（RFO）；5）阀冷系统具有冗余冷却能力（REDCOOLING）；6）SYS-ACTIVE（ACTIVE）。",
+      "type": "强制",
+      "subject": "阀冷控制保护系统",
+      "action": "上传开关量信号",
+      "condition": "阀冷系统与直流控制保护系统通讯正常",
+      "constraint": "必须包含TRIP、RUNBACK、OK、RFO、REDCOOLING、SYS-ACTIVE信号",
+      "related_entities": [
+        "阀冷系统",
+        "直流控制保护系统",
+        "阀冷控制保护系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀冷系统",
+      "target": "直流控制保护系统",
+      "type": "通讯"
+    },
+    {
+      "source": "阀冷系统",
+      "target": "阀冷控制保护系统",
+      "type": "内部通讯"
+    },
+    {
+      "source": "直流控制保护系统",
+      "target": "阀冷控制保护系统",
+      "type": "通讯"
+    },
+    {
+      "source": "阀冷控制保护系统",
+      "target": "直流控制保护系统",
+      "type": "通讯"
+    }
+  ]
+}

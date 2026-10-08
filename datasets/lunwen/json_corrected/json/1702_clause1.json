@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "加热元件",
+      "type": "设备",
+      "desc": "用于电力系统中的加热功能的元件"
+    },
+    {
+      "name": "非暴露型加热元件",
+      "type": "设备",
+      "desc": "不直接暴露在操作人员接触范围内的加热元件"
+    },
+    {
+      "name": "加热器",
+      "type": "设备",
+      "desc": "产生热量的装置"
+    },
+    {
+      "name": "接线",
+      "type": "设备",
+      "desc": "连接电气设备的导线"
+    },
+    {
+      "name": "元件",
+      "type": "设备",
+      "desc": "电力系统中的各种元器件"
+    },
+    {
+      "name": "防护板",
+      "type": "设备",
+      "desc": "保护加热器免受外界影响的板状结构"
+    },
+    {
+      "name": "温升限值",
+      "type": "参数",
+      "desc": "设备允许的最大温升限度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有的加热元件应是非暴露型的",
+      "type": "强制",
+      "subject": "加热元件",
+      "action": "安装",
+      "condition": "所有加热元件",
+      "constraint": "非暴露型",
+      "related_entities": [
+        "加热元件",
+        "非暴露型加热元件"
+      ]
+    },
+    {
+      "content": "加热器应置于不会引起接线或元件运行劣化的位置",
+      "type": "强制",
+      "subject": "加热器",
+      "action": "安装",
+      "condition": "加热器",
+      "constraint": "不会引起接线或元件运行劣化",
+      "related_entities": [
+        "加热器",
+        "接线",
+        "元件"
+      ]
+    },
+    {
+      "content": "如果能偶然触及加热器或其防护板，则表面温度不应超过表3中规定的正常运行时无需触及的可触及部件的温升限值",
+      "type": "强制",
+      "subject": "加热器/防护板",
+      "action": "安装",
+      "condition": "加热器或其防护板能偶然触及",
+      "constraint": "表面温度不超过温升限值",
+      "related_entities": [
+        "加热器",
+        "防护板",
+        "温升限值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "加热元件",
+      "target": "非暴露型加热元件",
+      "type": "属于"
+    },
+    {
+      "source": "加热器",
+      "target": "加热元件",
+      "type": "组成"
+    },
+    {
+      "source": "加热器",
+      "target": "接线",
+      "type": "影响"
+    },
+    {
+      "source": "加热器",
+      "target": "元件",
+      "type": "影响"
+    },
+    {
+      "source": "加热器",
+      "target": "防护板",
+      "type": "组成"
+    },
+    {
+      "source": "防护板",
+      "target": "加热器",
+      "type": "保护"
+    },
+    {
+      "source": "加热器",
+      "target": "温升限值",
+      "type": "限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1702,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fde1f48591eacaad",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1702_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

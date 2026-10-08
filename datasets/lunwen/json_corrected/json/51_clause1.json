@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "六氟化硫气体",
+      "type": "电力设备气体",
+      "desc": "电力系统中使用的六氟化硫气体"
+    },
+    {
+      "name": "投运前",
+      "type": "时间点",
+      "desc": "电力设备投入运行之前的时间点"
+    },
+    {
+      "name": "交接时",
+      "type": "时间点",
+      "desc": "电力设备移交使用方的时间点"
+    }
+  ],
+  "rules": [
+    {
+      "content": "投运前、交接时六氟化硫气体泄漏≤0.5%/年",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "控制六氟化硫气体泄漏量",
+      "condition": "投运前、交接时",
+      "constraint": "六氟化硫气体泄漏≤0.5%/年",
+      "related_entities": [
+        "六氟化硫气体",
+        "投运前",
+        "交接时"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "投运前",
+      "target": "六氟化硫气体",
+      "type": "检测对象"
+    },
+    {
+      "source": "交接时",
+      "target": "六氟化硫气体",
+      "type": "检测对象"
+    },
+    {
+      "source": "六氟化硫气体",
+      "target": "投运前",
+      "type": "检测时间点"
+    },
+    {
+      "source": "六氟化硫气体",
+      "target": "交接时",
+      "type": "检测时间点"
+    }
+  ],
+  "metadata": {
+    "pair_id": 51,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8b807e3ce5916a9f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\51_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

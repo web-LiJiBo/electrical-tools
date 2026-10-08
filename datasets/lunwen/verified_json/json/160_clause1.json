@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于实现电能转换、传输、分配的装置"
+    },
+    {
+      "name": "冗余",
+      "type": "系统配置",
+      "desc": "系统中设置的备用或备份部分，以提高系统可靠性"
+    },
+    {
+      "name": "故障",
+      "type": "异常状态",
+      "desc": "设备或系统出现的非正常工作状态"
+    },
+    {
+      "name": "检修",
+      "type": "维护操作",
+      "desc": "对设备进行检查、维修、保养等操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "设备宜采用可靠的冗余，各冗余设备同时运行。",
+      "type": "强制",
+      "subject": "设备",
+      "action": "采用冗余配置",
+      "condition": "系统运行",
+      "constraint": "冗余设备同时运行",
+      "related_entities": [
+        "设备",
+        "冗余"
+      ]
+    },
+    {
+      "content": "任意一重设备因故障、检修、或其他原因而退出时，不应影响其他冗余设备。",
+      "type": "强制",
+      "subject": "设备",
+      "action": "退出运行",
+      "condition": "故障、检修、或其他原因",
+      "constraint": "不影响其他冗余设备",
+      "related_entities": [
+        "设备",
+        "故障",
+        "检修",
+        "冗余"
+      ]
+    },
+    {
+      "content": "并对整个系统的正常运行没有影响。",
+      "type": "强制",
+      "subject": "系统",
+      "action": "保持正常运行",
+      "condition": "故障、检修、或其他原因",
+      "constraint": "不受影响",
+      "related_entities": [
+        "系统",
+        "故障",
+        "检修",
+        "冗余"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设备",
+      "target": "冗余",
+      "type": "包含"
+    },
+    {
+      "source": "故障",
+      "target": "设备",
+      "type": "导致"
+    },
+    {
+      "source": "检修",
+      "target": "设备",
+      "type": "导致"
+    },
+    {
+      "source": "冗余",
+      "target": "设备",
+      "type": "保护"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 160,
+      "source_row_id": "160",
+      "clause_index": 1,
+      "source_text": "设备宜采用可靠的冗余，各冗余设备同时运行。任意一重设备因故障、检修、或其他原因而退出时，不应影响其他冗余设备。并对整个系统的正常运行没有影响"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.926602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

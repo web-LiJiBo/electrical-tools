@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "110kV及以上高压电缆终端",
+      "type": "电力设备",
+      "desc": "110kV及以上的高压电缆终端"
+    },
+    {
+      "name": "110kV及以上高压电缆接头",
+      "type": "电力设备",
+      "desc": "110kV及以上的高压电缆接头"
+    },
+    {
+      "name": "临时工棚",
+      "type": "施工设施",
+      "desc": "施工时搭建的临时工棚"
+    },
+    {
+      "name": "环境湿度",
+      "type": "施工环境参数",
+      "desc": "施工时的环境湿度"
+    },
+    {
+      "name": "温度",
+      "type": "施工环境参数",
+      "desc": "施工时的环境温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110kV及以上高压电缆终端与接头施工时，应搭临时工棚",
+      "type": "强制",
+      "subject": "110kV及以上高压电缆终端与接头",
+      "action": "施工时搭建临时工棚",
+      "condition": "110kV及以上高压电缆终端与接头施工时",
+      "constraint": "无",
+      "related_entities": [
+        "110kV及以上高压电缆终端",
+        "110kV及以上高压电缆接头",
+        "临时工棚"
+      ]
+    },
+    {
+      "content": "环境湿度应严格控制",
+      "type": "强制",
+      "subject": "110kV及以上高压电缆终端与接头",
+      "action": "控制施工时的环境湿度",
+      "condition": "110kV及以上高压电缆终端与接头施工时",
+      "constraint": "无",
+      "related_entities": [
+        "110kV及以上高压电缆终端",
+        "110kV及以上高压电缆接头",
+        "环境湿度"
+      ]
+    },
+    {
+      "content": "温度宜为10～30℃",
+      "type": "建议",
+      "subject": "110kV及以上高压电缆终端与接头",
+      "action": "控制施工时的环境温度",
+      "condition": "110kV及以上高压电缆终端与接头施工时",
+      "constraint": "无",
+      "related_entities": [
+        "110kV及以上高压电缆终端",
+        "110kV及以上高压电缆接头",
+        "温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110kV及以上高压电缆终端",
+      "target": "临时工棚",
+      "type": "施工环境"
+    },
+    {
+      "source": "110kV及以上高压电缆接头",
+      "target": "临时工棚",
+      "type": "施工环境"
+    },
+    {
+      "source": "110kV及以上高压电缆终端",
+      "target": "环境湿度",
+      "type": "施工环境参数"
+    },
+    {
+      "source": "110kV及以上高压电缆接头",
+      "target": "环境湿度",
+      "type": "施工环境参数"
+    },
+    {
+      "source": "110kV及以上高压电缆终端",
+      "target": "温度",
+      "type": "施工环境参数"
+    },
+    {
+      "source": "110kV及以上高压电缆接头",
+      "target": "温度",
+      "type": "施工环境参数"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1226,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "10d619535f0762cf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1226_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

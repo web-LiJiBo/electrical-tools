@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "段间绝缘试验",
+      "type": "试验项目",
+      "desc": "变压器绕组之间绝缘性能测试"
+    },
+    {
+      "name": "匝间绝缘",
+      "type": "绝缘类型",
+      "desc": "绕组内部线圈之间的绝缘"
+    },
+    {
+      "name": "额定耐受电压",
+      "type": "电气参数",
+      "desc": "设备在正常运行条件下能承受的最大电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "没有规定段间绝缘试验项目",
+      "type": "强制",
+      "subject": "变压器制造企业",
+      "action": "必须制定段间绝缘试验项目",
+      "condition": "变压器设计与制造阶段",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "段间绝缘试验"
+      ]
+    },
+    {
+      "content": "绕组匝间绝缘的额定耐受电压应为4.5kV（峰值）",
+      "type": "强制",
+      "subject": "变压器制造企业",
+      "action": "确保绕组匝间绝缘满足额定耐受电压要求",
+      "condition": "变压器设计与制造阶段",
+      "constraint": "额定耐受电压4.5kV（峰值）",
+      "related_entities": [
+        "匝间绝缘",
+        "额定耐受电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "段间绝缘试验",
+      "target": "变压器制造企业",
+      "type": "执行"
+    },
+    {
+      "source": "匝间绝缘",
+      "target": "变压器制造企业",
+      "type": "执行"
+    },
+    {
+      "source": "额定耐受电压",
+      "target": "匝间绝缘",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 116,
+      "source_row_id": "116",
+      "clause_index": 2,
+      "source_text": "没有规定段间绝缘试验项目；5.3.201匝间绝缘要求：绕组匝间绝缘的额定耐受电压应为4.5kV（峰值）"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.880600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

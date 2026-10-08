@@ -1,0 +1,115 @@
+{
+  "entities": [
+    {
+      "name": "中置式开关柜",
+      "type": "电力设备",
+      "desc": "一种高压开关柜"
+    },
+    {
+      "name": "母线室",
+      "type": "电力设备功能区",
+      "desc": "开关柜内部用于安装母线的区域"
+    },
+    {
+      "name": "断路器室",
+      "type": "电力设备功能区",
+      "desc": "开关柜内部用于安装断路器的区域"
+    },
+    {
+      "name": "电缆室",
+      "type": "电力设备功能区",
+      "desc": "开关柜内部用于安装电缆终端头的区域"
+    },
+    {
+      "name": "二次装置室",
+      "type": "电力设备功能区",
+      "desc": "开关柜内部用于安装二次装置的区域"
+    },
+    {
+      "name": "柜体外壳",
+      "type": "电力设备部件",
+      "desc": "开关柜外部金属壳体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "中置式开关柜母线室、断路器室、电缆室、二次装置室等功能区间及相邻母线室之间应完全隔离",
+      "type": "强制",
+      "subject": "中置式开关柜",
+      "action": "隔离各功能区间",
+      "condition": "中置式开关柜安装过程中",
+      "constraint": "各功能区间之间无直接电气连接",
+      "related_entities": [
+        "中置式开关柜",
+        "母线室",
+        "断路器室",
+        "电缆室",
+        "二次装置室"
+      ]
+    },
+    {
+      "content": "柜体外壳防护等级不低于IP31",
+      "type": "强制",
+      "subject": "柜体外壳",
+      "action": "满足防护等级要求",
+      "condition": "中置式开关柜制造过程中",
+      "constraint": "防护等级≥IP31",
+      "related_entities": [
+        "柜体外壳"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "中置式开关柜",
+      "target": "母线室",
+      "type": "包含"
+    },
+    {
+      "source": "中置式开关柜",
+      "target": "断路器室",
+      "type": "包含"
+    },
+    {
+      "source": "中置式开关柜",
+      "target": "电缆室",
+      "type": "包含"
+    },
+    {
+      "source": "中置式开关柜",
+      "target": "二次装置室",
+      "type": "包含"
+    },
+    {
+      "source": "母线室",
+      "target": "柜体外壳",
+      "type": "位于"
+    },
+    {
+      "source": "断路器室",
+      "target": "柜体外壳",
+      "type": "位于"
+    },
+    {
+      "source": "电缆室",
+      "target": "柜体外壳",
+      "type": "位于"
+    },
+    {
+      "source": "二次装置室",
+      "target": "柜体外壳",
+      "type": "位于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 440,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "14002468ce09bc90",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\440_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "组热点温升",
+      "type": "温升",
+      "desc": "变压器组热点的温升"
+    },
+    {
+      "name": "顶层油温",
+      "type": "顶层油温",
+      "desc": "变压器顶层油的温度"
+    },
+    {
+      "name": "绕组（平均）温升",
+      "type": "绕组温升",
+      "desc": "变压器绕组的平均温升"
+    },
+    {
+      "name": "油箱温升",
+      "type": "油箱温升",
+      "desc": "变压器油箱的温升"
+    },
+    {
+      "name": "铁心及结构件表面温升",
+      "type": "铁心及结构件表面温升",
+      "desc": "变压器铁心及结构件表面的温升"
+    }
+  ],
+  "rules": [
+    {
+      "content": "组热点温升78K，顶层油温55K，绕组（平均）温升65K，油箱80K，铁心及结构件表面80K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "变压器在额定负载下运行",
+      "constraint": "组热点温升≤78K，顶层油温≤55K，绕组（平均）温升≤65K，油箱温升≤80K，铁心及结构件表面温升≤80K",
+      "related_entities": [
+        "组热点温升",
+        "顶层油温",
+        "绕组（平均）温升",
+        "油箱温升",
+        "铁心及结构件表面温升"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "组热点温升",
+      "target": "顶层油温",
+      "type": "高于"
+    },
+    {
+      "source": "组热点温升",
+      "target": "绕组（平均）温升",
+      "type": "高于"
+    },
+    {
+      "source": "组热点温升",
+      "target": "油箱温升",
+      "type": "高于"
+    },
+    {
+      "source": "组热点温升",
+      "target": "铁心及结构件表面温升",
+      "type": "高于"
+    },
+    {
+      "source": "顶层油温",
+      "target": "绕组（平均）温升",
+      "type": "高于"
+    },
+    {
+      "source": "顶层油温",
+      "target": "油箱温升",
+      "type": "高于"
+    },
+    {
+      "source": "顶层油温",
+      "target": "铁心及结构件表面温升",
+      "type": "高于"
+    },
+    {
+      "source": "绕组（平均）温升",
+      "target": "油箱温升",
+      "type": "高于"
+    },
+    {
+      "source": "绕组（平均）温升",
+      "target": "铁心及结构件表面温升",
+      "type": "高于"
+    },
+    {
+      "source": "油箱温升",
+      "target": "铁心及结构件表面温升",
+      "type": "高于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 773,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6029d605937e59e8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\773_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

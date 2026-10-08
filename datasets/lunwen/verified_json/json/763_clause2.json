@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "制孔",
+      "type": "工艺过程",
+      "desc": "在零件上加工孔的过程"
+    },
+    {
+      "name": "零件",
+      "type": "产品",
+      "desc": "需要进行制孔处理的机械零件"
+    },
+    {
+      "name": "孔周围表面",
+      "type": "特征部位",
+      "desc": "孔周边的表面区域"
+    },
+    {
+      "name": "凹面缺陷",
+      "type": "质量缺陷",
+      "desc": "孔周围表面出现的凹陷缺陷"
+    },
+    {
+      "name": "毛刺",
+      "type": "质量缺陷",
+      "desc": "孔边缘或孔壁上的多余金属片状物"
+    },
+    {
+      "name": "表10",
+      "type": "技术文件",
+      "desc": "规定制孔允许偏差的技术表格"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制孔后零件不得有明显变形",
+      "type": "强制",
+      "subject": "零件",
+      "action": "制孔",
+      "condition": "制孔后",
+      "constraint": "无明显变形",
+      "related_entities": [
+        "制孔",
+        "零件"
+      ]
+    },
+    {
+      "content": "孔周围表面不得有明显的凹面缺陷",
+      "type": "强制",
+      "subject": "孔周围表面",
+      "action": "制孔",
+      "condition": "制孔后",
+      "constraint": "无明显凹面缺陷",
+      "related_entities": [
+        "孔周围表面",
+        "制孔"
+      ]
+    },
+    {
+      "content": "大于0.3mm的毛刺应清除",
+      "type": "强制",
+      "subject": "毛刺",
+      "action": "清除",
+      "condition": "制孔后",
+      "constraint": "大于0.3mm",
+      "related_entities": [
+        "毛刺",
+        "制孔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制孔",
+      "target": "零件",
+      "type": "加工对象"
+    },
+    {
+      "source": "制孔",
+      "target": "孔周围表面",
+      "type": "加工部位"
+    },
+    {
+      "source": "制孔",
+      "target": "凹面缺陷",
+      "type": "质量控制"
+    },
+    {
+      "source": "制孔",
+      "target": "毛刺",
+      "type": "质量控制"
+    },
+    {
+      "source": "制孔",
+      "target": "表10",
+      "type": "技术依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 763,
+      "source_row_id": "763",
+      "clause_index": 2,
+      "source_text": "制孔后零件不得有明显变形，孔周围表面不得有明显的凹面缺陷，大于0.3mm的毛刺应清除。制孔的允许偏差应满足表10的规定"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.594083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

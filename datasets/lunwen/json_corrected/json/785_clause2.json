@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "回路电阻",
+      "type": "电气参数",
+      "desc": "电路中导体材料、截面及长度决定的总电阻值"
+    },
+    {
+      "name": "DL/T593-2006",
+      "type": "技术标准",
+      "desc": "电力设备预防性试验规程"
+    },
+    {
+      "name": "6.4",
+      "type": "章节编号",
+      "desc": "DL/T593-2006中关于回路电阻测量的具体章节"
+    }
+  ],
+  "rules": [
+    {
+      "content": "回路电阻的测量应按照DL/T593-2006中的6.4规定进行",
+      "type": "强制",
+      "subject": "电力设备预防性试验人员",
+      "action": "进行回路电阻测量",
+      "condition": "电力设备预防性试验过程中",
+      "constraint": "应遵循DL/T593-2006中6.4的规定",
+      "related_entities": [
+        "回路电阻",
+        "DL/T593-2006"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "回路电阻",
+      "target": "DL/T593-2006",
+      "type": "依据"
+    },
+    {
+      "source": "回路电阻",
+      "target": "6.4",
+      "type": "具体规定"
+    }
+  ],
+  "metadata": {
+    "pair_id": 785,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "16ae47ba0045a33e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\785_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

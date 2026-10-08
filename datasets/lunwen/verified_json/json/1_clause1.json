@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "除了项目h）误差测定是在项目a）～g）后进行外，其余试验项目的前后顺序或可能的组合均不作规定",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1,
+      "source_row_id": "1",
+      "clause_index": 1,
+      "source_text": "除了项目h）误差测定是在项目a）～g）后进行外，其余试验项目的前后顺序或可能的组合均不作规定"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:58.750787+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

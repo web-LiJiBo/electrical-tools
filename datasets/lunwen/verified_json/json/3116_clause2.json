@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "阀冷与极控通讯信号：“直流控制保护系统下发至阀冷控制保护系统的开关量应包括但不限于以下信号：a）远方停止主泵（STOP_PUMP）；b）远方启动主泵（START_PUMP）；c）远方切换主泵（SWITCH_PUMP）；d）换流阀解锁（DEBLOCK）；e）换流阀闭锁（BLOCK）；f）主用直流控制系统（ACTIVE）。阀冷控制保护系统上传至直流控制保护系统的开关量应包括但不限于以下信号：a）阀冷跳闸（TRIP）；b）阀冷系统运行（OPERATING）；c）功率回降（RUNBACK）；d）阀冷就绪（RFO）；e）阀冷失去冗余冷却（NO_RED_COOLING）；f）阀冷主用系统（ACTIVE）。”",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3107,
+      "source_row_id": "3116",
+      "clause_index": 2,
+      "source_text": "阀冷与极控通讯信号：“直流控制保护系统下发至阀冷控制保护系统的开关量应包括但不限于以下信号：a）远方停止主泵（STOP_PUMP）；b）远方启动主泵（START_PUMP）；c）远方切换主泵（SWITCH_PUMP）；d）换流阀解锁（DEBLOCK）；e）换流阀闭锁（BLOCK）；f）主用直流控制系统（ACTIVE）。阀冷控制保护系统上传至直流控制保护系统的开关量应包括但不限于以下信号：a）阀冷跳闸（TRIP）；b）阀冷系统运行（OPERATING）；c）功率回降（RUNBACK）；d）阀冷就绪（RFO）；e）阀冷失去冗余冷却（NO_RED_COOLING）；f）阀冷主用系统（ACTIVE）。”"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:02.391318+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

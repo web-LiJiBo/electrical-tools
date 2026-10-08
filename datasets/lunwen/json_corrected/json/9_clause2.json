@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "例行维修项目",
+      "type": "电力检修",
+      "desc": "电力设备定期维护保养项目"
+    },
+    {
+      "name": "外观检查",
+      "type": "电力检修",
+      "desc": "对电力设备外部进行检查"
+    },
+    {
+      "name": "元件",
+      "type": "电力设备",
+      "desc": "电力系统中各种电气元件"
+    },
+    {
+      "name": "放电痕迹",
+      "type": "电力故障",
+      "desc": "电力设备因过电压等原因导致的放电现象"
+    },
+    {
+      "name": "氧化",
+      "type": "电力故障",
+      "desc": "电力设备材料表面发生氧化反应"
+    },
+    {
+      "name": "阀塔悬吊杆",
+      "type": "电力设备",
+      "desc": "阀塔内部支撑结构部件"
+    },
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "电力系统中用于绝缘的设备部件"
+    },
+    {
+      "name": "光纤",
+      "type": "电力设备",
+      "desc": "电力系统中传输信号的光导纤维"
+    },
+    {
+      "name": "阀电抗器",
+      "type": "电力设备",
+      "desc": "电力系统中用于限制短路电流的设备部件"
+    },
+    {
+      "name": "水回路",
+      "type": "电力设备",
+      "desc": "电力系统中冷却回路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "例行维修项目的主要内容及要求2外观检查及处理无元件损坏，无放电痕迹、无氧化，阀塔悬吊杆无裂痕、绝缘子表面无裂纹和闪络痕迹，光纤连接正常、无断裂、脱落，阀电抗器无裂痕，水回路无泄漏",
+      "type": "强制",
+      "subject": "例行维修项目",
+      "action": "外观检查及处理",
+      "condition": "例行维修项目实施过程中",
+      "constraint": "无元件损坏，无放电痕迹、无氧化，阀塔悬吊杆无裂痕、绝缘子表面无裂纹和闪络痕迹，光纤连接正常、无断裂、脱落，阀电抗器无裂痕，水回路无泄漏",
+      "related_entities": [
+        "例行维修项目",
+        "外观检查",
+        "元件",
+        "放电痕迹",
+        "氧化",
+        "阀塔悬吊杆",
+        "绝缘子",
+        "光纤",
+        "阀电抗器",
+        "水回路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "例行维修项目",
+      "target": "外观检查",
+      "type": "包含"
+    },
+    {
+      "source": "外观检查",
+      "target": "元件",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "放电痕迹",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "氧化",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "阀塔悬吊杆",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "绝缘子",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "光纤",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "阀电抗器",
+      "type": "检查对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "水回路",
+      "type": "检查对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 9,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4e5e5478c721c6ea",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\9_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

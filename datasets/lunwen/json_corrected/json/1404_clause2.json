@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "允许偏差",
+      "type": "技术参数",
+      "desc": "电力系统中设备或参数允许的最大偏差值"
+    },
+    {
+      "name": "大跨越档弧垂",
+      "type": "技术参数",
+      "desc": "跨越通航河流的输电线路在大跨越档距下的导线最低点至地面的距离"
+    },
+    {
+      "name": "±2.5%",
+      "type": "数值",
+      "desc": "一般情况下允许偏差值"
+    },
+    {
+      "name": "±1%",
+      "type": "数值",
+      "desc": "跨越通航河流的大跨越档弧垂允许偏差值"
+    },
+    {
+      "name": "1m",
+      "type": "数值",
+      "desc": "跨越通航河流的大跨越档弧垂正偏差最大值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般情况下允许偏差不应超过±2.5%",
+      "type": "强制",
+      "subject": "电力系统设备或参数",
+      "action": "运行维护",
+      "condition": "一般情况下",
+      "constraint": "±2.5%",
+      "related_entities": [
+        "允许偏差"
+      ]
+    },
+    {
+      "content": "跨越通航河流的大跨越档弧垂允许偏差不应大于±1%，其正偏差不应超过1m",
+      "type": "强制",
+      "subject": "跨越通航河流的大跨越档弧垂",
+      "action": "设计施工",
+      "condition": "跨越通航河流的大跨越档",
+      "constraint": "±1%、1m",
+      "related_entities": [
+        "大跨越档弧垂",
+        "允许偏差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "允许偏差",
+      "target": "大跨越档弧垂",
+      "type": "适用于"
+    },
+    {
+      "source": "±2.5%",
+      "target": "允许偏差",
+      "type": "具体数值"
+    },
+    {
+      "source": "±1%",
+      "target": "允许偏差",
+      "type": "具体数值"
+    },
+    {
+      "source": "1m",
+      "target": "允许偏差",
+      "type": "具体数值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1404,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8e0620e5ee5baf1f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1404_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

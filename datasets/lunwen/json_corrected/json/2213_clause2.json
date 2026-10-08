@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "制造厂",
+      "type": "制造企业",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "元件",
+      "type": "电力设备部件",
+      "desc": "电力设备中的基本组成单元"
+    },
+    {
+      "name": "回路电阻值",
+      "type": "电气参数",
+      "desc": "元件在电路中产生的电阻值"
+    },
+    {
+      "name": "产品技术条件",
+      "type": "技术文件",
+      "desc": "产品设计、制造、检验的技术依据"
+    },
+    {
+      "name": "出厂实测值",
+      "type": "检测数据",
+      "desc": "元件出厂时实际测量的回路电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制造厂应提供每个元件(或每个单元)的回路电阻值。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供回路电阻值",
+      "condition": "元件或单元制造完成",
+      "constraint": "无",
+      "related_entities": [
+        "制造厂",
+        "元件"
+      ]
+    },
+    {
+      "content": "测试值应符合产品技术条件的规定，并不得超过出厂实测值的120%。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供符合技术条件的回路电阻值",
+      "condition": "元件或单元制造完成并进行测试",
+      "constraint": "测试值≤1.2×出厂实测值",
+      "related_entities": [
+        "制造厂",
+        "元件",
+        "产品技术条件",
+        "出厂实测值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制造厂",
+      "target": "元件",
+      "type": "制造"
+    },
+    {
+      "source": "元件",
+      "target": "回路电阻值",
+      "type": "具有"
+    },
+    {
+      "source": "回路电阻值",
+      "target": "产品技术条件",
+      "type": "符合"
+    },
+    {
+      "source": "回路电阻值",
+      "target": "出厂实测值",
+      "type": "不超过120%"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2213,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "23f6d1a70ba1d095",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2213_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

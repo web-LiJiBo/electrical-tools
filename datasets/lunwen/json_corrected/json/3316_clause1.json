@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "水压",
+      "type": "物理量",
+      "desc": "对设备施加的压力"
+    },
+    {
+      "name": "运行压力",
+      "type": "物理量",
+      "desc": "设备正常运行时的压力值"
+    },
+    {
+      "name": "持续时间",
+      "type": "时间",
+      "desc": "试验持续的时间长度"
+    },
+    {
+      "name": "渗漏",
+      "type": "现象",
+      "desc": "设备在试验过程中出现的泄漏现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "施加水压至1.2倍的运行压力，持续时间30min，应无渗漏。",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行水压试验",
+      "condition": "设备安装完毕后",
+      "constraint": "水压1.2倍运行压力，持续30min",
+      "related_entities": [
+        "水压",
+        "运行压力",
+        "持续时间",
+        "渗漏"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水压",
+      "target": "运行压力",
+      "type": "倍数关系"
+    },
+    {
+      "source": "水压",
+      "target": "渗漏",
+      "type": "影响关系"
+    },
+    {
+      "source": "持续时间",
+      "target": "渗漏",
+      "type": "影响关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3316,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4c1ad8089bd3266f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3316_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

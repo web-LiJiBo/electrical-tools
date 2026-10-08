@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "500kV及以下线路",
+      "type": "电力线路",
+      "desc": "500kV及以下电压等级的输电线路"
+    },
+    {
+      "name": "悬垂绝缘子串",
+      "type": "电力设备",
+      "desc": "用于架空输电线路悬垂杆塔上的绝缘子串"
+    },
+    {
+      "name": "耐张绝缘子",
+      "type": "电力设备",
+      "desc": "用于架空输电线路耐张杆塔上的绝缘子"
+    },
+    {
+      "name": "独立双串设计",
+      "type": "设计规范",
+      "desc": "悬垂绝缘子串采用两串独立布置的设计方案"
+    },
+    {
+      "name": "双联及以上结构形式",
+      "type": "设计规范",
+      "desc": "耐张绝缘子采用两个或两个以上联结的结构形式"
+    },
+    {
+      "name": "单串强度",
+      "type": "技术参数",
+      "desc": "悬垂绝缘子串承受的机械强度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "500千伏及以下线路的悬垂绝缘子串应采用独立双串设计",
+      "type": "强制",
+      "subject": "500kV及以下线路",
+      "action": "采用悬垂绝缘子串设计",
+      "condition": "500kV及以下线路新建或改造工程",
+      "constraint": "悬垂绝缘子串采用独立双串设计",
+      "related_entities": [
+        "500kV及以下线路",
+        "悬垂绝缘子串"
+      ]
+    },
+    {
+      "content": "耐张绝缘子应采用双联及以上结构形式",
+      "type": "强制",
+      "subject": "500kV及以下线路",
+      "action": "采用耐张绝缘子结构形式",
+      "condition": "500kV及以下线路新建或改造工程",
+      "constraint": "耐张绝缘子采用双联及以上结构形式",
+      "related_entities": [
+        "500kV及以下线路",
+        "耐张绝缘子"
+      ]
+    },
+    {
+      "content": "单串强度应满足受力要求",
+      "type": "强制",
+      "subject": "悬垂绝缘子串",
+      "action": "满足受力要求",
+      "condition": "500kV及以下线路新建或改造工程",
+      "constraint": "单串强度应满足受力要求",
+      "related_entities": [
+        "悬垂绝缘子串",
+        "单串强度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "500kV及以下线路",
+      "target": "悬垂绝缘子串",
+      "type": "使用"
+    },
+    {
+      "source": "500kV及以下线路",
+      "target": "耐张绝缘子",
+      "type": "使用"
+    },
+    {
+      "source": "悬垂绝缘子串",
+      "target": "独立双串设计",
+      "type": "采用"
+    },
+    {
+      "source": "耐张绝缘子",
+      "target": "双联及以上结构形式",
+      "type": "采用"
+    },
+    {
+      "source": "悬垂绝缘子串",
+      "target": "单串强度",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2594,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "485f7995f8f736a7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2594_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

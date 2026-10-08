@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "外施交流电压耐受试验",
+      "type": "试验项目",
+      "desc": "电力设备进行的交流电压耐受试验"
+    },
+    {
+      "name": "局部放电量",
+      "type": "试验参数",
+      "desc": "电力设备在试验过程中产生的局部放电能量"
+    },
+    {
+      "name": "300pC",
+      "type": "数值约束",
+      "desc": "局部放电量的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "外施交流电压耐受试验中允许的局部放电量最大值应不超过300pC。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行外施交流电压耐受试验",
+      "condition": "试验过程中",
+      "constraint": "局部放电量≤300pC",
+      "related_entities": [
+        "外施交流电压耐受试验",
+        "局部放电量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外施交流电压耐受试验",
+      "target": "局部放电量",
+      "type": "测试对象"
+    },
+    {
+      "source": "局部放电量",
+      "target": "300pC",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3302,
+      "source_row_id": "3311",
+      "clause_index": 2,
+      "source_text": "外施交流电压耐受试验中允许的局部放电量最大值应不超过300pC。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.633366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

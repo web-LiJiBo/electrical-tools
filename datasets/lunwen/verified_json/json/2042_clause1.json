@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "制孔技术",
+      "type": "工艺",
+      "desc": "电力设备制造过程中的一种钻孔技术"
+    },
+    {
+      "name": "成孔后构件周围表面",
+      "type": "结构",
+      "desc": "电力设备加工完成后，孔周边的表面区域"
+    },
+    {
+      "name": "凹面缺陷",
+      "type": "缺陷",
+      "desc": "电力设备表面出现的凹陷状缺陷"
+    },
+    {
+      "name": "毛刺",
+      "type": "缺陷",
+      "desc": "电力设备表面出现的多余金属突起"
+    }
+  ],
+  "rules": [
+    {
+      "content": "成孔后构件周围表面不应有明显的凹面缺陷，大于0.3mm的毛刺应清除",
+      "type": "强制",
+      "subject": "制孔技术",
+      "action": "加工",
+      "condition": "电力设备制造过程中的钻孔工序",
+      "constraint": "成孔后构件周围表面不应有明显的凹面缺陷，大于0.3mm的毛刺应清除",
+      "related_entities": [
+        "制孔技术",
+        "成孔后构件周围表面",
+        "凹面缺陷",
+        "毛刺"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制孔技术",
+      "target": "成孔后构件周围表面",
+      "type": "作用于"
+    },
+    {
+      "source": "制孔技术",
+      "target": "凹面缺陷",
+      "type": "产生"
+    },
+    {
+      "source": "制孔技术",
+      "target": "毛刺",
+      "type": "产生"
+    },
+    {
+      "source": "凹面缺陷",
+      "target": "成孔后构件周围表面",
+      "type": "存在于"
+    },
+    {
+      "source": "毛刺",
+      "target": "成孔后构件周围表面",
+      "type": "存在于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2042,
+      "source_row_id": "2042",
+      "clause_index": 1,
+      "source_text": "制孔技术要求：成孔后构件周围表面不应有明显的凹面缺陷，大于0.3mm的毛刺应清除"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.059969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

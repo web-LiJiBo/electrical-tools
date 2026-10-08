@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "接地导体",
+      "type": "电力设备",
+      "desc": "用于电气系统接地的导电材料"
+    },
+    {
+      "name": "铜覆钢材",
+      "type": "材料",
+      "desc": "表面镀铜的钢材"
+    },
+    {
+      "name": "放热焊接",
+      "type": "工艺",
+      "desc": "一种焊接技术，通过化学反应产生热量进行焊接"
+    },
+    {
+      "name": "搭接焊接",
+      "type": "工艺",
+      "desc": "将两根导体对接并焊接在一起的焊接方式"
+    },
+    {
+      "name": "扁钢",
+      "type": "材料",
+      "desc": "截面为矩形的金属板材"
+    },
+    {
+      "name": "圆钢",
+      "type": "材料",
+      "desc": "截面为圆形的金属棒材"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用铜或铜覆钢材的接地导体（线）应采用放热焊接方式连接。",
+      "type": "强制",
+      "subject": "接地导体",
+      "action": "连接",
+      "condition": "接地导体材质为铜或铜覆钢材",
+      "constraint": "采用放热焊接方式",
+      "related_entities": [
+        "接地导体",
+        "放热焊接"
+      ]
+    },
+    {
+      "content": "钢接地导体（线）使用搭接焊接方式时，其搭接长度应为扁钢宽度的2倍且不得少于3个棱边焊接或圆钢直径的6倍。",
+      "type": "强制",
+      "subject": "钢接地导体",
+      "action": "搭接焊接",
+      "condition": "接地导体材质为钢，采用搭接焊接方式",
+      "constraint": "搭接长度≥扁钢宽度*2且≥3个棱边焊接；搭接长度≥圆钢直径*6",
+      "related_entities": [
+        "钢接地导体",
+        "搭接焊接",
+        "扁钢",
+        "圆钢"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地导体",
+      "target": "放热焊接",
+      "type": "采用"
+    },
+    {
+      "source": "接地导体",
+      "target": "搭接焊接",
+      "type": "采用"
+    },
+    {
+      "source": "铜覆钢材",
+      "target": "接地导体",
+      "type": "构成"
+    },
+    {
+      "source": "铜",
+      "target": "接地导体",
+      "type": "构成"
+    },
+    {
+      "source": "扁钢",
+      "target": "搭接焊接",
+      "type": "搭接对象"
+    },
+    {
+      "source": "圆钢",
+      "target": "搭接焊接",
+      "type": "搭接对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2509,
+      "source_row_id": "2509",
+      "clause_index": 2,
+      "source_text": "采用铜或铜覆钢材的接地导体（线）应采用放热焊接方式连接。钢接地导体（线）使用搭接焊接方式时，其搭接长度应为扁钢宽度的2倍且不得少于3个棱边焊接或圆钢直径的6倍。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.655316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

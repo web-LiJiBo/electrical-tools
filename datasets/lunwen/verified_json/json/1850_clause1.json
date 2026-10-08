@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "绝缘材料",
+      "type": "电力设备材料",
+      "desc": "电力系统中使用的绝缘材料"
+    },
+    {
+      "name": "超净的交联聚乙烯",
+      "type": "绝缘材料类型",
+      "desc": "一种特定类型的绝缘材料"
+    },
+    {
+      "name": "XLPE",
+      "type": "材料缩写",
+      "desc": "超净的交联聚乙烯的缩写代号"
+    }
+  ],
+  "rules": [
+    {
+      "content": "本部分包括的绝缘材料的类型应是超净的交联聚乙烯，缩写代号为XLPE。",
+      "type": "强制",
+      "subject": "绝缘材料",
+      "action": "使用",
+      "condition": "在电力系统中",
+      "constraint": "必须为超净的交联聚乙烯",
+      "related_entities": [
+        "绝缘材料",
+        "超净的交联聚乙烯"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘材料",
+      "target": "超净的交联聚乙烯",
+      "type": "具体化"
+    },
+    {
+      "source": "超净的交联聚乙烯",
+      "target": "绝缘材料",
+      "type": "实例化"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1850,
+      "source_row_id": "1850",
+      "clause_index": 1,
+      "source_text": "本部分包括的绝缘材料的类型应是超净的交联聚乙烯，缩写代号为XLPE。绝缘材料的性能参见附录B"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.838973+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

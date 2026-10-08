@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "导线",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "铜芯绝缘线",
+      "type": "电力设备",
+      "desc": "以铜作为导体芯的绝缘电线"
+    },
+    {
+      "name": "铝芯绝缘线",
+      "type": "电力设备",
+      "desc": "以铝作为导体芯的绝缘电线"
+    },
+    {
+      "name": "导线截面",
+      "type": "电力参数",
+      "desc": "导线的横截面积"
+    },
+    {
+      "name": "3a规划负荷",
+      "type": "电力负荷",
+      "desc": "3a规划周期内的最大负荷需求"
+    },
+    {
+      "name": "线路末端电压",
+      "type": "电力参数",
+      "desc": "电力线路末端的电压值"
+    },
+    {
+      "name": "供电电压偏差",
+      "type": "电力参数",
+      "desc": "供电电压与额定电压之间的偏差值"
+    },
+    {
+      "name": "GB/T12325",
+      "type": "标准规范",
+      "desc": "电能质量供电电压偏差标准"
+    },
+    {
+      "name": "表8.1.2",
+      "type": "技术表格",
+      "desc": "导线截面选择参考表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "导线宜采用铜芯或铝芯绝缘线",
+      "type": "强制",
+      "subject": "导线",
+      "action": "选择",
+      "condition": "无特殊要求",
+      "constraint": "无特殊要求",
+      "related_entities": [
+        "导线",
+        "铜芯绝缘线",
+        "铝芯绝缘线"
+      ]
+    },
+    {
+      "content": "导线截面按3a规划负荷确定",
+      "type": "强制",
+      "subject": "导线截面",
+      "action": "选择",
+      "condition": "3a规划负荷",
+      "constraint": "无特殊要求",
+      "related_entities": [
+        "导线截面",
+        "3a规划负荷"
+      ]
+    },
+    {
+      "content": "线路末端电压应符合现行国家标准《电能质量供电电压偏差》GB/T12325的有关规定",
+      "type": "强制",
+      "subject": "线路末端电压",
+      "action": "满足",
+      "condition": "GB/T12325",
+      "constraint": "无特殊要求",
+      "related_entities": [
+        "线路末端电压",
+        "GB/T12325"
+      ]
+    },
+    {
+      "content": "导线截面宜按表8.1.2的规定选择",
+      "type": "建议",
+      "subject": "导线截面",
+      "action": "选择",
+      "condition": "表8.1.2",
+      "constraint": "无特殊要求",
+      "related_entities": [
+        "导线截面",
+        "表8.1.2"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导线",
+      "target": "铜芯绝缘线",
+      "type": "包含"
+    },
+    {
+      "source": "导线",
+      "target": "铝芯绝缘线",
+      "type": "包含"
+    },
+    {
+      "source": "导线截面",
+      "target": "3a规划负荷",
+      "type": "依据"
+    },
+    {
+      "source": "线路末端电压",
+      "target": "GB/T12325",
+      "type": "依据"
+    },
+    {
+      "source": "导线截面",
+      "target": "表8.1.2",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 623,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fc16e577122ed006",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\623_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

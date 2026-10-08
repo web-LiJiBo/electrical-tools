@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "温度类别",
+      "type": "电力设备运行环境",
+      "desc": "电力设备在不同温度条件下运行的分类"
+    },
+    {
+      "name": "温度范围",
+      "type": "电力设备运行参数",
+      "desc": "电力设备允许运行的温度区间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "温度类别覆盖的温度范围为：-50℃～+50℃",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "运行",
+      "condition": "在不同温度条件下",
+      "constraint": "-50℃～+50℃",
+      "related_entities": [
+        "温度类别",
+        "温度范围"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "温度类别",
+      "target": "温度范围",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 255,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f51bc155ebadc950",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\255_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

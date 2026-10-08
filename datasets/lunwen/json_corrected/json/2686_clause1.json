@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "装卸和运输过程",
+      "type": "操作过程",
+      "desc": "电力设备从生产地到安装地的移动过程"
+    },
+    {
+      "name": "严重冲击和振动",
+      "type": "物理现象",
+      "desc": "对电力设备造成损害的剧烈运动状态"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "监测设备",
+      "desc": "用于记录电力设备在运输过程中受到的冲击加速度和方向变化情况的仪器"
+    },
+    {
+      "name": "冲击记录纸",
+      "type": "记录介质",
+      "desc": "三维冲撞记录仪记录冲击数据的纸质载体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器、电抗器在装卸和运输过程不应有严重冲击和振动。",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "装卸和运输",
+      "condition": "在装卸和运输过程中",
+      "constraint": "不应有严重冲击和振动",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "装卸和运输过程",
+        "严重冲击和振动"
+      ]
+    },
+    {
+      "content": "电压在220kV及以上且容量在150MVA及以上的变压器和电压在330kV及以上的电抗器均应装设三维冲撞记录仪。",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "装设三维冲撞记录仪",
+      "condition": "电压在220kV及以上且容量在150MVA及以上或电压在330kV及以上",
+      "constraint": "均应装设三维冲撞记录仪",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "三维冲撞记录仪",
+        "电压",
+        "容量"
+      ]
+    },
+    {
+      "content": "冲击记录纸应符合制造厂合同规定。",
+      "type": "强制",
+      "subject": "冲击记录纸",
+      "action": "符合制造厂合同规定",
+      "condition": "三维冲撞记录仪记录冲击数据后",
+      "constraint": "应符合制造厂合同规定",
+      "related_entities": [
+        "冲击记录纸",
+        "三维冲撞记录仪",
+        "制造厂合同"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "装卸和运输过程",
+      "type": "涉及"
+    },
+    {
+      "source": "电抗器",
+      "target": "装卸和运输过程",
+      "type": "涉及"
+    },
+    {
+      "source": "变压器",
+      "target": "三维冲撞记录仪",
+      "type": "装设"
+    },
+    {
+      "source": "电抗器",
+      "target": "三维冲撞记录仪",
+      "type": "装设"
+    },
+    {
+      "source": "三维冲撞记录仪",
+      "target": "冲击记录纸",
+      "type": "记录"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2686,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7c2e2c89dbe28a4f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2686_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

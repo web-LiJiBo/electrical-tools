@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "雷电冲击试验",
+      "type": "试验",
+      "desc": "一种电力设备的耐压测试方法"
+    },
+    {
+      "name": "252kV",
+      "type": "电压等级",
+      "desc": "电力设备额定电压等级"
+    },
+    {
+      "name": "3/50μs",
+      "type": "波形参数",
+      "desc": "雷电冲击波形参数"
+    },
+    {
+      "name": "正负极性",
+      "type": "试验方式",
+      "desc": "雷电冲击试验的极性方式"
+    },
+    {
+      "name": "3次",
+      "type": "试验次数",
+      "desc": "雷电冲击试验的重复次数"
+    },
+    {
+      "name": "产品技术协议",
+      "type": "技术文件",
+      "desc": "电力设备制造过程中的技术规范文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "252kV及以上设备应在3/50μs标准下进行正负极性各3次雷电冲击耐压试验",
+      "type": "强制",
+      "subject": "252kV及以上设备",
+      "action": "进行雷电冲击试验",
+      "condition": "在3/50μs标准下",
+      "constraint": "正负极性各3次",
+      "related_entities": [
+        "雷电冲击试验",
+        "252kV",
+        "3/50μs",
+        "正负极性",
+        "3次"
+      ]
+    },
+    {
+      "content": "试验结果符合产品技术协议要求",
+      "type": "强制",
+      "subject": "试验结果",
+      "action": "满足技术协议要求",
+      "condition": "完成雷电冲击试验后",
+      "constraint": "符合产品技术协议要求",
+      "related_entities": [
+        "雷电冲击试验",
+        "产品技术协议"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "252kV",
+      "target": "雷电冲击试验",
+      "type": "适用电压等级"
+    },
+    {
+      "source": "3/50μs",
+      "target": "雷电冲击试验",
+      "type": "适用波形参数"
+    },
+    {
+      "source": "正负极性",
+      "target": "雷电冲击试验",
+      "type": "试验极性方式"
+    },
+    {
+      "source": "3次",
+      "target": "雷电冲击试验",
+      "type": "试验重复次数"
+    },
+    {
+      "source": "产品技术协议",
+      "target": "雷电冲击试验",
+      "type": "试验依据文件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2799,
+      "source_row_id": "2808",
+      "clause_index": 2,
+      "source_text": "雷电冲击试验：252kV及以上设备应在3/50μs标准下进行正负极性各3次雷电冲击耐压试验，试验结果符合产品技术协议要求。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.009315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

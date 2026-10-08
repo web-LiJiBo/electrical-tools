@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "电器",
+      "type": "电力设备",
+      "desc": "电力系统中使用的各种电气设备"
+    },
+    {
+      "name": "噪声水平",
+      "type": "物理量",
+      "desc": "电器运行时产生的声音强度"
+    },
+    {
+      "name": "环保标准",
+      "type": "行业标准",
+      "desc": "国家或地区对电器噪声排放的要求"
+    },
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "电力系统中用于切断电路的开关设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电器噪声水平应满足环保标准要求。",
+      "type": "强制",
+      "subject": "电器",
+      "action": "噪声控制",
+      "condition": "电器运行过程中",
+      "constraint": "符合环保标准要求",
+      "related_entities": [
+        "电器",
+        "环保标准"
+      ]
+    },
+    {
+      "content": "电器的连续噪声水平不应大于85dB(A)。",
+      "type": "强制",
+      "subject": "电器",
+      "action": "噪声控制",
+      "condition": "电器运行过程中",
+      "constraint": "连续噪声水平≤85dB(A)",
+      "related_entities": [
+        "电器",
+        "噪声水平"
+      ]
+    },
+    {
+      "content": "在设备外沿垂直面的水平距离为2m，离地高度为1m~1.5m处，断路器的非连续噪声水平，户内不宜大于90dB(A)，户外不应大于110dB(A)。",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "噪声控制",
+      "condition": "断路器运行过程中",
+      "constraint": "户内非连续噪声水平≤90dB(A)，户外非连续噪声水平≤110dB(A)",
+      "related_entities": [
+        "断路器",
+        "噪声水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电器",
+      "target": "噪声水平",
+      "type": "产生"
+    },
+    {
+      "source": "环保标准",
+      "target": "噪声水平",
+      "type": "规定"
+    },
+    {
+      "source": "电器",
+      "target": "环保标准",
+      "type": "符合"
+    },
+    {
+      "source": "断路器",
+      "target": "噪声水平",
+      "type": "产生"
+    },
+    {
+      "source": "断路器",
+      "target": "环保标准",
+      "type": "符合"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3216,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "93271ce43a2589f4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3216_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

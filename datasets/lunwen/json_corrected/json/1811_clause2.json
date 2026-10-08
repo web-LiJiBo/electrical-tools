@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "电力材料",
+      "desc": "六氟化硫气体"
+    },
+    {
+      "name": "GB12022",
+      "type": "国家标准",
+      "desc": "六氟化硫电气设备用气体质量标准"
+    },
+    {
+      "name": "到货",
+      "type": "事件",
+      "desc": "SF6气体到达现场"
+    },
+    {
+      "name": "充入设备",
+      "type": "事件",
+      "desc": "将SF6气体充入电气设备中"
+    },
+    {
+      "name": "含水量",
+      "type": "检测项目",
+      "desc": "SF6气体中的水分含量"
+    },
+    {
+      "name": "纯度",
+      "type": "检测项目",
+      "desc": "SF6气体的纯净程度"
+    },
+    {
+      "name": "抽检率",
+      "type": "检测参数",
+      "desc": "SF6气体的抽样检查比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6新气到货后，充入设备前应按GB12022验收。",
+      "type": "强制",
+      "subject": "SF6气体",
+      "action": "验收",
+      "condition": "SF6气体到货后，充入设备前",
+      "constraint": "GB12022",
+      "related_entities": [
+        "SF6气体",
+        "GB12022"
+      ]
+    },
+    {
+      "content": "抽检率为十分之三。",
+      "type": "强制",
+      "subject": "SF6气体",
+      "action": "抽检",
+      "condition": "SF6气体到货后，充入设备前",
+      "constraint": "十分之三",
+      "related_entities": [
+        "SF6气体",
+        "抽检率"
+      ]
+    },
+    {
+      "content": "同一批相同出厂日期的，只测定含水量和纯度。",
+      "type": "强制",
+      "subject": "SF6气体",
+      "action": "检测",
+      "condition": "同一批相同出厂日期的SF6气体",
+      "constraint": "含水量和纯度",
+      "related_entities": [
+        "SF6气体",
+        "含水量",
+        "纯度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "到货",
+      "target": "SF6气体",
+      "type": "事件-实体"
+    },
+    {
+      "source": "充入设备",
+      "target": "SF6气体",
+      "type": "事件-实体"
+    },
+    {
+      "source": "GB12022",
+      "target": "SF6气体",
+      "type": "标准-实体"
+    },
+    {
+      "source": "抽检率",
+      "target": "SF6气体",
+      "type": "参数-实体"
+    },
+    {
+      "source": "含水量",
+      "target": "SF6气体",
+      "type": "检测项目-实体"
+    },
+    {
+      "source": "纯度",
+      "target": "SF6气体",
+      "type": "检测项目-实体"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1811,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0baa85eb879d6b17",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1811_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

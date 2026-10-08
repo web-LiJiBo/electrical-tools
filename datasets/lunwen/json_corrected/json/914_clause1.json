@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "电线",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "加热元件",
+      "type": "电力设备",
+      "desc": "产生热量的电气设备"
+    },
+    {
+      "name": "接线",
+      "type": "操作行为",
+      "desc": "将电缆或电线连接到其他设备或元件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接线应考虑与加热元件的距离",
+      "type": "强制",
+      "subject": "电缆/电线",
+      "action": "接线",
+      "condition": "在存在加热元件的环境中",
+      "constraint": "与加热元件保持适当距离",
+      "related_entities": [
+        "电缆",
+        "电线",
+        "加热元件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "接线",
+      "type": "执行"
+    },
+    {
+      "source": "电线",
+      "target": "接线",
+      "type": "执行"
+    },
+    {
+      "source": "加热元件",
+      "target": "接线",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 914,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d5d16278af5af4df",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\914_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

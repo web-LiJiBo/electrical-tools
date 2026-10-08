@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "出厂试验",
+      "type": "试验项目",
+      "desc": "产品出厂前进行的全面检测"
+    },
+    {
+      "name": "连续运行时间",
+      "type": "试验参数",
+      "desc": "产品在额定负载下连续运行的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "出厂试验连续运行时间为6h。",
+      "type": "强制",
+      "subject": "出厂试验",
+      "action": "连续运行",
+      "condition": "产品出厂前",
+      "constraint": "连续运行时间6h",
+      "related_entities": [
+        "出厂试验",
+        "连续运行时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂试验",
+      "target": "连续运行时间",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2849,
+      "source_row_id": "2858",
+      "clause_index": 2,
+      "source_text": "出厂试验连续运行时间为6h。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.065314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

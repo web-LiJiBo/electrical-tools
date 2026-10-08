@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "密封式单相、三相变压器",
+      "type": "电力设备",
+      "desc": "一种内部充有气体的密封式变压器"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器的油箱部分"
+    },
+    {
+      "name": "油面",
+      "type": "电力设备状态",
+      "desc": "变压器油箱中油液的表面"
+    },
+    {
+      "name": "试验压力",
+      "type": "测试参数",
+      "desc": "对变压器油箱进行耐压试验时施加的压力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内部充有气体的密封式单相、三相变压器油箱，油面上部应承受的试验压力为70kPa（波纹式油箱除外）",
+      "type": "强制",
+      "subject": "密封式单相、三相变压器油箱",
+      "action": "承受试验压力",
+      "condition": "在进行耐压试验时",
+      "constraint": "试验压力为70kPa",
+      "related_entities": [
+        "密封式单相、三相变压器",
+        "油箱",
+        "油面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "密封式单相、三相变压器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "油面",
+      "type": "承载"
+    },
+    {
+      "source": "试验压力",
+      "target": "油面",
+      "type": "作用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 582,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c72612e4647ed42a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\582_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

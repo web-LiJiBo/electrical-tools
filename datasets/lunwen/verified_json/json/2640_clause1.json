@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "泄漏电流初值差",
+      "type": "电气参数",
+      "desc": "在0.75U1mA电压下测量的泄漏电流变化量"
+    },
+    {
+      "name": "0.75U1mA",
+      "type": "电压等级",
+      "desc": "直流系统中规定的参考电压等级"
+    },
+    {
+      "name": "U1mA",
+      "type": "电气参数",
+      "desc": "直流系统中规定的最大工作电压"
+    },
+    {
+      "name": "50μA",
+      "type": "电气参数",
+      "desc": "规定值，用于比较泄漏电流变化量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在0.75U1mA下泄漏电流初值差≤30%或≤50μA（注意值）",
+      "type": "强制",
+      "subject": "设备制造商与用户",
+      "action": "进行直流设备出厂试验",
+      "condition": "直流设备出厂前",
+      "constraint": "泄漏电流初值差≤30%或≤50μA",
+      "related_entities": [
+        "泄漏电流初值差",
+        "0.75U1mA",
+        "50μA"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "泄漏电流初值差",
+      "target": "0.75U1mA",
+      "type": "测量条件"
+    },
+    {
+      "source": "泄漏电流初值差",
+      "target": "50μA",
+      "type": "比较基准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2631,
+      "source_row_id": "2640",
+      "clause_index": 1,
+      "source_text": "0.75U1mA下泄漏电流初值差≤30%或≤50μA（注意值）。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.97,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.797317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

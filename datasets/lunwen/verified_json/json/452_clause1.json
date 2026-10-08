@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "挤包的绝缘半导电屏蔽层",
+      "type": "电力设备",
+      "desc": "电力电缆的绝缘层外层"
+    },
+    {
+      "name": "缓冲层",
+      "type": "电力设备",
+      "desc": "电力电缆的绝缘层外层的附加层"
+    },
+    {
+      "name": "金属屏蔽层",
+      "type": "电力设备",
+      "desc": "电力电缆的金属屏蔽保护层"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力传输的导体和绝缘材料组合"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在挤包的绝缘半导电屏蔽层外应有缓冲层",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "设置缓冲层",
+      "condition": "电缆设计制造",
+      "constraint": "必须设置",
+      "related_entities": [
+        "挤包的绝缘半导电屏蔽层",
+        "缓冲层"
+      ]
+    },
+    {
+      "content": "缓冲层应是半导电的",
+      "type": "强制",
+      "subject": "缓冲层",
+      "action": "采用半导电材料",
+      "condition": "电缆设计制造",
+      "constraint": "必须采用",
+      "related_entities": [
+        "缓冲层",
+        "金属屏蔽层"
+      ]
+    },
+    {
+      "content": "以使绝缘半导电屏蔽层与金属屏蔽层保持电气上接触良好",
+      "type": "强制",
+      "subject": "缓冲层",
+      "action": "保证电气接触",
+      "condition": "电缆运行",
+      "constraint": "确保接触良好",
+      "related_entities": [
+        "挤包的绝缘半导电屏蔽层",
+        "金属屏蔽层",
+        "缓冲层"
+      ]
+    },
+    {
+      "content": "缓冲层的厚度应能够满足补偿电缆运行中热膨胀的要求",
+      "type": "强制",
+      "subject": "缓冲层",
+      "action": "确定厚度",
+      "condition": "电缆设计制造",
+      "constraint": "满足热膨胀要求",
+      "related_entities": [
+        "缓冲层",
+        "电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "挤包的绝缘半导电屏蔽层",
+      "target": "缓冲层",
+      "type": "外层"
+    },
+    {
+      "source": "缓冲层",
+      "target": "金属屏蔽层",
+      "type": "接触层"
+    },
+    {
+      "source": "缓冲层",
+      "target": "电缆",
+      "type": "组成部件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 452,
+      "source_row_id": "452",
+      "clause_index": 1,
+      "source_text": "在挤包的绝缘半导电屏蔽层外应有缓冲层。缓冲层应是半导电的，以使绝缘半导电屏蔽层与金属屏蔽层保持电气上接触良好。缓冲层的厚度应能够满足补偿电缆运行中热膨胀的要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.240485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

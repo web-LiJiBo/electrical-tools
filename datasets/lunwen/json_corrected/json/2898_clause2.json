@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "接地故障电流",
+      "type": "电气参数",
+      "desc": "电力系统中发生接地故障时流经故障点的电流"
+    },
+    {
+      "name": "接地故障",
+      "type": "故障类型",
+      "desc": "电力系统中发生的单相或两相接地故障"
+    },
+    {
+      "name": "一级后备保护",
+      "type": "继电保护",
+      "desc": "主保护装置拒动时启动的后备保护"
+    },
+    {
+      "name": "主保护",
+      "type": "继电保护",
+      "desc": "电力系统中用于快速切除故障的第一级保护"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地故障电流持续时间接地故障出现起直至其终止的全部时间。为严格起见,考虑一级后备保护(主保护失灵)动作的时限。",
+      "type": "强制",
+      "subject": "电力系统运行维护人员",
+      "action": "制定接地故障电流持续时间标准",
+      "condition": "电力系统发生接地故障时",
+      "constraint": "接地故障电流持续时间应包括从故障出现到故障终止的全部时间，且应考虑一级后备保护动作时限",
+      "related_entities": [
+        "接地故障电流",
+        "接地故障",
+        "一级后备保护",
+        "主保护"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地故障电流",
+      "target": "接地故障",
+      "type": "伴随"
+    },
+    {
+      "source": "一级后备保护",
+      "target": "主保护",
+      "type": "后备"
+    },
+    {
+      "source": "接地故障电流持续时间",
+      "target": "一级后备保护",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2898,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2228bba1c55ac4ee",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2898_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

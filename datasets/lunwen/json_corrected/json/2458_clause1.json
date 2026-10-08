@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "水平定向钻",
+      "type": "施工方法",
+      "desc": "一种在地表下进行管道铺设的技术"
+    },
+    {
+      "name": "入土角",
+      "type": "施工参数",
+      "desc": "水平定向钻开始钻进时与地面的夹角"
+    },
+    {
+      "name": "出土角",
+      "type": "施工参数",
+      "desc": "水平定向钻结束钻进时与地面的夹角"
+    },
+    {
+      "name": "钢管",
+      "type": "材料",
+      "desc": "用于增强管道强度或防腐蚀的金属管材"
+    }
+  ],
+  "rules": [
+    {
+      "content": "不套钢管的水平定向钻：入土角0°~20°，出土角为0°~15°",
+      "type": "强制",
+      "subject": "水平定向钻",
+      "action": "选取入土角和出土角",
+      "condition": "不套钢管的水平定向钻",
+      "constraint": "入土角0°~20°，出土角0°~15°",
+      "related_entities": [
+        "水平定向钻",
+        "入土角",
+        "出土角"
+      ]
+    },
+    {
+      "content": "套钢管的水平定向钻：入土角0°~15°，出土角为0°~10°",
+      "type": "强制",
+      "subject": "水平定向钻",
+      "action": "选取入土角和出土角",
+      "condition": "套钢管的水平定向钻",
+      "constraint": "入土角0°~15°，出土角0°~10°",
+      "related_entities": [
+        "水平定向钻",
+        "入土角",
+        "出土角"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水平定向钻",
+      "target": "入土角",
+      "type": "选取"
+    },
+    {
+      "source": "水平定向钻",
+      "target": "出土角",
+      "type": "选取"
+    },
+    {
+      "source": "钢管",
+      "target": "水平定向钻",
+      "type": "使用条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2458,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bece5e39546d5740",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2458_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

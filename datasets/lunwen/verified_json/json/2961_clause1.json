@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "电容器组",
+      "type": "电力设备",
+      "desc": "电力系统中用于补偿无功功率的设备"
+    },
+    {
+      "name": "滤波器",
+      "type": "电力设备",
+      "desc": "电力系统中用于滤除谐波的设备"
+    },
+    {
+      "name": "过电流保护",
+      "type": "保护装置",
+      "desc": "当电路中的电流超过设定值时启动保护的装置"
+    },
+    {
+      "name": "不平衡保护",
+      "type": "保护装置",
+      "desc": "当三相电流不平衡度超过设定值时启动保护的装置"
+    },
+    {
+      "name": "过电压保护",
+      "type": "保护装置",
+      "desc": "当系统电压超过设定值时启动保护的装置"
+    },
+    {
+      "name": "低电压保护",
+      "type": "保护装置",
+      "desc": "当系统电压低于设定值时启动保护的装置"
+    },
+    {
+      "name": "低频保护",
+      "type": "保护装置",
+      "desc": "当系统频率低于设定值时启动保护的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电容器组（或滤波器）保护，包括1）过电流；2）不平衡；3）过电压；4）低电压；5）低频（可选）。",
+      "type": "强制",
+      "subject": "电容器组（或滤波器）",
+      "action": "设置保护装置",
+      "condition": "电容器组（或滤波器）运行期间",
+      "constraint": "必须配置过电流保护、不平衡保护、过电压保护、低电压保护；可选配置低频保护",
+      "related_entities": [
+        "电容器组",
+        "滤波器",
+        "过电流保护",
+        "不平衡保护",
+        "过电压保护",
+        "低电压保护",
+        "低频保护"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容器组",
+      "target": "过电流保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "不平衡保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "过电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "低电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "电容器组",
+      "target": "低频保护",
+      "type": "可选配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "过电流保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "不平衡保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "过电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "低电压保护",
+      "type": "配置"
+    },
+    {
+      "source": "滤波器",
+      "target": "低频保护",
+      "type": "可选配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2952,
+      "source_row_id": "2961",
+      "clause_index": 1,
+      "source_text": "电容器组（或滤波器）保护，包括1）过电流；2）不平衡；3）过电压；4）低电压；5）低频（可选）。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.925,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "entity_grounding_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.204314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

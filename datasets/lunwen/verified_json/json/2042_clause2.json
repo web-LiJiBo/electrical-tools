@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "制孔表面",
+      "type": "工艺过程",
+      "desc": "金属加工过程中形成的孔洞表面"
+    },
+    {
+      "name": "凹面缺陷",
+      "type": "质量缺陷",
+      "desc": "孔洞表面出现的凹陷区域"
+    },
+    {
+      "name": "毛刺",
+      "type": "质量缺陷",
+      "desc": "孔洞边缘超出正常范围的多余金属片"
+    },
+    {
+      "name": "孔壁与零件表面的边界交接处",
+      "type": "工艺特征",
+      "desc": "孔洞边缘与零件表面相交的部位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制孔表面不得有明显的凹面缺陷",
+      "type": "强制",
+      "subject": "制孔表面",
+      "action": "加工",
+      "condition": "制孔过程",
+      "constraint": "无明显凹面缺陷",
+      "related_entities": [
+        "制孔表面"
+      ]
+    },
+    {
+      "content": "大于0.3mm的毛刺应清除",
+      "type": "强制",
+      "subject": "毛刺",
+      "action": "去除",
+      "condition": "制孔过程",
+      "constraint": "去除大于0.3mm的毛刺",
+      "related_entities": [
+        "毛刺"
+      ]
+    },
+    {
+      "content": "制孔后孔壁与零件表面的边界交接处，不应有大于0.5mm的缺棱或塌角",
+      "type": "强制",
+      "subject": "孔壁与零件表面的边界交接处",
+      "action": "加工",
+      "condition": "制孔过程",
+      "constraint": "不应有大于0.5mm的缺棱或塌角",
+      "related_entities": [
+        "孔壁与零件表面的边界交接处"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制孔表面",
+      "target": "凹面缺陷",
+      "type": "包含"
+    },
+    {
+      "source": "制孔表面",
+      "target": "毛刺",
+      "type": "包含"
+    },
+    {
+      "source": "制孔表面",
+      "target": "孔壁与零件表面的边界交接处",
+      "type": "相邻"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2042,
+      "source_row_id": "2042",
+      "clause_index": 2,
+      "source_text": "制孔表面不得有明显的凹面缺陷，大于0.3mm的毛刺应清除，制孔后孔壁与零件表面的边界交接处，不应有大于0.5mm的缺棱或塌角"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.059969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "电力系统中用于分配电能的场所"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "将一种电压等级的交流电能转变为另一种电压等级的交流电能的装置"
+    },
+    {
+      "name": "绕组联结组别",
+      "type": "电气参数",
+      "desc": "变压器绕组连接方式的表示方法"
+    },
+    {
+      "name": "Dyn11",
+      "type": "电气参数",
+      "desc": "变压器绕组联结组别的表示方式"
+    },
+    {
+      "name": "单台变压器容量",
+      "type": "电气参数",
+      "desc": "单台变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器绕组联结组别应采用Dyn11，单台变压器容量不宜超过800kVA",
+      "type": "强制",
+      "subject": "配电室",
+      "action": "配置变压器",
+      "condition": "新建或改造配电室",
+      "constraint": "变压器绕组联结组别为Dyn11，单台变压器容量不超过800kVA",
+      "related_entities": [
+        "配电室",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电室",
+      "target": "变压器",
+      "type": "配置"
+    },
+    {
+      "source": "变压器",
+      "target": "绕组联结组别",
+      "type": "参数配置"
+    },
+    {
+      "source": "变压器",
+      "target": "单台变压器容量",
+      "type": "参数配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1169,
+      "source_row_id": "1169",
+      "clause_index": 2,
+      "source_text": "配电室应满足以下技术要求：c）变压器绕组联结组别应采用Dyn11，单台变压器容量不宜超过800kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.070950+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

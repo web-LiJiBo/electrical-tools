@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "额定输出",
+      "type": "电力参数",
+      "desc": "测量级的最大输出能力"
+    },
+    {
+      "name": "测量级",
+      "type": "设备类别",
+      "desc": "用于精确测量的电力设备"
+    },
+    {
+      "name": "二次负荷",
+      "type": "电力参数",
+      "desc": "测量级二次侧的负载情况"
+    },
+    {
+      "name": "比值差",
+      "type": "电力参数",
+      "desc": "测量级在不同负载下的误差表现"
+    },
+    {
+      "name": "相位差",
+      "type": "电力参数",
+      "desc": "测量级在不同负载下的相位误差表现"
+    },
+    {
+      "name": "准确级",
+      "type": "设备等级",
+      "desc": "测量级的精度等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对额定输出最大不超过15VA的测量级，可以规定扩大负荷范围。",
+      "type": "强制",
+      "subject": "测量级",
+      "action": "规定扩大负荷范围",
+      "condition": "额定输出最大不超过15VA",
+      "constraint": "",
+      "related_entities": [
+        "额定输出",
+        "测量级"
+      ]
+    },
+    {
+      "content": "当二次负荷范围扩大为1VA至100%额定输出时，比值差和相位差应不超过表201、表202和表203所列相应准确级的限值。",
+      "type": "强制",
+      "subject": "测量级",
+      "action": "保证比值差和相位差在规定范围内",
+      "condition": "二次负荷范围扩大为1VA至100%额定输出",
+      "constraint": "比值差和相位差不超过表201、表202和表203所列相应准确级的限值",
+      "related_entities": [
+        "二次负荷",
+        "比值差",
+        "相位差",
+        "准确级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定输出",
+      "target": "测量级",
+      "type": "属于"
+    },
+    {
+      "source": "二次负荷",
+      "target": "测量级",
+      "type": "属于"
+    },
+    {
+      "source": "比值差",
+      "target": "测量级",
+      "type": "属于"
+    },
+    {
+      "source": "相位差",
+      "target": "测量级",
+      "type": "属于"
+    },
+    {
+      "source": "准确级",
+      "target": "测量级",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 57,
+      "source_row_id": "57",
+      "clause_index": 1,
+      "source_text": "对额定输出最大不超过15VA的测量级，可以规定扩大负荷范围。当二次负荷范围扩大为1VA至100%额定输出时，比值差和相位差应不超过表201、表202和表203所列相应准确级的限值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.815604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

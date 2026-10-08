@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "真空有载分接开关",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中实现变压器分接头切换的电气设备"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "变压器内部绝缘介质，用于提高电气绝缘性能"
+    },
+    {
+      "name": "变压器本体",
+      "type": "电力设备",
+      "desc": "变压器的主要部分，包括铁芯、绕组等"
+    }
+  ],
+  "rules": [
+    {
+      "content": "真空有载分接开关绝缘油检测的周期和项目应与变压器本体保持一致",
+      "type": "强制",
+      "subject": "真空有载分接开关",
+      "action": "进行绝缘油检测",
+      "condition": "在规定的周期内",
+      "constraint": "检测项目与变压器本体保持一致",
+      "related_entities": [
+        "真空有载分接开关",
+        "绝缘油",
+        "变压器本体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "真空有载分接开关",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "真空有载分接开关",
+      "target": "变压器本体",
+      "type": "组成部件"
+    },
+    {
+      "source": "变压器本体",
+      "target": "绝缘油",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3284,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f5e0e1fdbfdb6daa",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3284_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

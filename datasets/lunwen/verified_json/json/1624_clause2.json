@@ -1,0 +1,128 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "换流站内用于循环冷却水的泵"
+    },
+    {
+      "name": "变频器",
+      "type": "设备",
+      "desc": "用于调节电机转速的电子装置"
+    },
+    {
+      "name": "工频电源",
+      "type": "电源",
+      "desc": "50Hz或60Hz的交流电源"
+    },
+    {
+      "name": "站用电",
+      "type": "电源",
+      "desc": "换流站内部使用的交流电源"
+    },
+    {
+      "name": "换流站",
+      "type": "场所",
+      "desc": "高压直流输电系统中的关键设施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在主泵启动成功后，应保持通过变频器方式运行，禁止采用变频器启动经延时转工频的运行方式。",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "启动方式",
+      "condition": "主泵启动成功",
+      "constraint": "禁止采用变频器启动经延时转工频的运行方式",
+      "related_entities": [
+        "主泵",
+        "变频器",
+        "工频电源"
+      ]
+    },
+    {
+      "content": "保留工频运行的应急运行方式，在两台主循环泵的变频器都出现故障的情况下，实现水泵的工频电源切换。",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "启动方式",
+      "condition": "两台主循环泵的变频器都出现故障",
+      "constraint": "实现水泵的工频电源切换",
+      "related_entities": [
+        "主泵",
+        "变频器",
+        "工频电源"
+      ]
+    },
+    {
+      "content": "对于站用电电压波动频繁及电能质量差的换流站，为避免变频器频繁出现故障，可以采用工频电源直接启动的方式。",
+      "type": "建议",
+      "subject": "主泵",
+      "action": "启动方式",
+      "condition": "站用电电压波动频繁及电能质量差",
+      "constraint": "采用工频电源直接启动的方式",
+      "related_entities": [
+        "主泵",
+        "变频器",
+        "工频电源",
+        "站用电"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "变频器",
+      "type": "使用"
+    },
+    {
+      "source": "主泵",
+      "target": "工频电源",
+      "type": "备用"
+    },
+    {
+      "source": "主泵",
+      "target": "站用电",
+      "type": "供电"
+    },
+    {
+      "source": "变频器",
+      "target": "主泵",
+      "type": "控制"
+    },
+    {
+      "source": "工频电源",
+      "target": "主泵",
+      "type": "备用控制"
+    },
+    {
+      "source": "站用电",
+      "target": "变频器",
+      "type": "供电"
+    },
+    {
+      "source": "站用电",
+      "target": "工频电源",
+      "type": "备用供电"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1624,
+      "source_row_id": "1624",
+      "clause_index": 2,
+      "source_text": "主泵若采用变频调速启动，应按照以下原则配置主泵启动方式：（1）在主泵启动成功后，应保持通过变频器方式运行，禁止采用变频器启动经延时转工频的运行方式。（2）保留工频运行的应急运行方式，在两台主循环泵的变频器都出现故障的情况下，实现水泵的工频电源切换。（3）对于站用电电压波动频繁及电能质量差的换流站，为避免变频器频繁出现故障，可以采用工频电源直接启动的方式"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.583161+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

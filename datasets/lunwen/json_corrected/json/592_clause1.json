@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "额定容性开合电流",
+      "type": "电气参数",
+      "desc": "设备在额定条件下开断容性电流的能力"
+    },
+    {
+      "name": "12kV额定电缆充电开断电流",
+      "type": "电气参数",
+      "desc": "12kV电缆在充电状态下的开断电流能力"
+    },
+    {
+      "name": "25A",
+      "type": "数值",
+      "desc": "12kV额定电缆充电开断电流的优选值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定容性开合电流中12kV额定电缆充电开断电流的优选值为25A",
+      "type": "强制",
+      "subject": "电力系统设计与运行人员",
+      "action": "选择12kV额定电缆充电开断电流的优选值",
+      "condition": "电力系统设计与运行过程中，涉及12kV电缆开断操作时",
+      "constraint": "12kV额定电缆充电开断电流的优选值为25A",
+      "related_entities": [
+        "额定容性开合电流",
+        "12kV额定电缆充电开断电流",
+        "25A"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定容性开合电流",
+      "target": "12kV额定电缆充电开断电流",
+      "type": "包含"
+    },
+    {
+      "source": "12kV额定电缆充电开断电流",
+      "target": "25A",
+      "type": "取值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 592,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "921d3ce82f71da32",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\592_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

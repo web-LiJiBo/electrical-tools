@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "变电所内用于电压变换的电气设备"
+    },
+    {
+      "name": "中性点",
+      "type": "电气参数",
+      "desc": "三相系统中性点位置"
+    },
+    {
+      "name": "接地引下线",
+      "type": "电气设备",
+      "desc": "将电气设备接地部分与接地网连接的导体"
+    },
+    {
+      "name": "地网",
+      "type": "电气设备",
+      "desc": "变电站内用于接地的金属网状结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器中性点应有两根与地网主网格的不同边连接的接地引下线",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "设置接地引下线",
+      "condition": "变压器运行时",
+      "constraint": "每根接地引下线均应符合热稳定校核的要求",
+      "related_entities": [
+        "变压器",
+        "中性点",
+        "接地引下线",
+        "地网"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "中性点",
+      "type": "包含"
+    },
+    {
+      "source": "中性点",
+      "target": "接地引下线",
+      "type": "连接"
+    },
+    {
+      "source": "接地引下线",
+      "target": "地网",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2083,
+      "source_row_id": "2083",
+      "clause_index": 2,
+      "source_text": "：“变压器中性点应有两根与地网主网格的不同边连接的接地引下线，并且每根接地引下线均应符合热稳定校核的要求”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.114969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

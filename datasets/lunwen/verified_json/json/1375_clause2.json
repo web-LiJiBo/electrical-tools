@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "电缆护层",
+      "type": "电力设备",
+      "desc": "保护电缆内部结构的外层"
+    },
+    {
+      "name": "管路",
+      "type": "电力设施",
+      "desc": "用于电缆敷设的管道"
+    },
+    {
+      "name": "杂物",
+      "type": "电力设施",
+      "desc": "管路内的非电缆相关物质"
+    },
+    {
+      "name": "钢管",
+      "type": "电力工具",
+      "desc": "用于疏通管路的金属管件"
+    },
+    {
+      "name": "钢丝刷",
+      "type": "电力工具",
+      "desc": "用于清理管路内杂物的工具"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆敷设前疏通管路并清除杂物",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "施工",
+      "condition": "电缆敷设前",
+      "constraint": "确保电缆能顺利穿管而不损伤电缆护层",
+      "related_entities": [
+        "电缆",
+        "电缆护层",
+        "管路",
+        "杂物"
+      ]
+    },
+    {
+      "content": "疏通管路时使用直径不小于0.85倍管孔直径、长度约600mm的钢管",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "施工",
+      "condition": "电缆敷设前",
+      "constraint": "确保管路畅通无阻",
+      "related_entities": [
+        "电缆",
+        "管路",
+        "钢管"
+      ]
+    },
+    {
+      "content": "使用与管孔等直径的钢丝刷清除管内杂物",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "施工",
+      "condition": "电缆敷设前",
+      "constraint": "确保管路清洁无杂物",
+      "related_entities": [
+        "电缆",
+        "管路",
+        "钢丝刷"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "电缆护层",
+      "type": "保护"
+    },
+    {
+      "source": "电缆",
+      "target": "管路",
+      "type": "敷设"
+    },
+    {
+      "source": "管路",
+      "target": "杂物",
+      "type": "存在"
+    },
+    {
+      "source": "钢管",
+      "target": "管路",
+      "type": "疏通"
+    },
+    {
+      "source": "钢丝刷",
+      "target": "管路",
+      "type": "清理"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1375,
+      "source_row_id": "1375",
+      "clause_index": 2,
+      "source_text": "为了确保电缆能顺利穿管并不损伤电缆护层，在电缆敷设前疏通管路并清除杂物是必要的。疏通时可用直径不小于0.85倍管孔直径、长度约600mm的钢管来回疏通，再用与管孔等直径的钢丝刷清除管内杂物"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9377,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.303547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

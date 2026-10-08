@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "接地极址",
+      "type": "电力设施",
+      "desc": "用于直流输电系统接地极的选址"
+    },
+    {
+      "name": "有中性点有效接地的变电站",
+      "type": "电力设施",
+      "desc": "采用中性点直接接地方式的变电站"
+    },
+    {
+      "name": "发电厂",
+      "type": "电力设施",
+      "desc": "生产电能的场所"
+    },
+    {
+      "name": "换流站",
+      "type": "电力设施",
+      "desc": "实现交流电与直流电之间转换的变电站"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极址与有中性点有效接地的变电站、发电厂的直线距离不宜小于10km",
+      "type": "强制",
+      "subject": "接地极址",
+      "action": "选址",
+      "condition": "与有中性点有效接地的变电站、发电厂",
+      "constraint": "直线距离不宜小于10km",
+      "related_entities": [
+        "接地极址",
+        "有中性点有效接地的变电站",
+        "发电厂"
+      ]
+    },
+    {
+      "content": "距换流站的距离宜不小于30km",
+      "type": "强制",
+      "subject": "接地极址",
+      "action": "选址",
+      "condition": "与换流站",
+      "constraint": "直线距离不宜小于30km",
+      "related_entities": [
+        "接地极址",
+        "换流站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极址",
+      "target": "有中性点有效接地的变电站",
+      "type": "远离"
+    },
+    {
+      "source": "接地极址",
+      "target": "发电厂",
+      "type": "远离"
+    },
+    {
+      "source": "接地极址",
+      "target": "换流站",
+      "type": "远离"
+    }
+  ],
+  "metadata": {
+    "pair_id": 412,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e255a7127fe8e1a9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\412_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

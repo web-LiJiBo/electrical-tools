@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "电容器单元",
+      "type": "电力设备",
+      "desc": "电力系统中用于无功补偿的电容器组的基本组成单元"
+    },
+    {
+      "name": "实测电容值",
+      "type": "测量参数",
+      "desc": "通过测试得到的电容器单元实际电容量"
+    },
+    {
+      "name": "额定值",
+      "type": "设计参数",
+      "desc": "电容器单元在设计时确定的标称电容量"
+    },
+    {
+      "name": "电容误差范围",
+      "type": "技术指标",
+      "desc": "电容器单元实测电容值与额定值允许的最大偏差范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电容器单元的实测电容值与额定值之差不应超过额定值的-3%～5%",
+      "type": "强制",
+      "subject": "电容器单元",
+      "action": "运行维护",
+      "condition": "电容器单元投入运行后",
+      "constraint": "-3%～5%",
+      "related_entities": [
+        "电容器单元",
+        "实测电容值",
+        "额定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容器单元",
+      "target": "实测电容值",
+      "type": "测量对象"
+    },
+    {
+      "source": "电容器单元",
+      "target": "额定值",
+      "type": "设计依据"
+    },
+    {
+      "source": "实测电容值",
+      "target": "额定值",
+      "type": "对比基准"
+    },
+    {
+      "source": "电容器单元",
+      "target": "电容误差范围",
+      "type": "技术指标"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3207,
+      "source_row_id": "3216",
+      "clause_index": 2,
+      "source_text": "电容器单元的实测电容值与额定值之差不应超过额定值的-3%～5%。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9583,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.515365+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

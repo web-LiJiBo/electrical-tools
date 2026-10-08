@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "330kV变压器",
+      "type": "电力设备",
+      "desc": "额定电压为330kV的电力变压器"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "用于电力设备绝缘和冷却的矿物油"
+    },
+    {
+      "name": "水分",
+      "type": "物理参数",
+      "desc": "绝缘油中含有的水分子数量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "330kV变压器投运前绝缘油水分限值要求：≤10mg/L",
+      "type": "强制",
+      "subject": "330kV变压器",
+      "action": "投运前绝缘油水分检测",
+      "condition": "330kV变压器投运前",
+      "constraint": "绝缘油水分含量≤10mg/L",
+      "related_entities": [
+        "330kV变压器",
+        "绝缘油"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "330kV变压器",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "绝缘油",
+      "target": "水分",
+      "type": "含有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2162,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8be2b0f3672643fa",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2162_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "SF6新气",
+      "type": "电力物资",
+      "desc": "六氟化硫气体"
+    },
+    {
+      "name": "GB12022《工业六氟化硫》",
+      "type": "国家标准",
+      "desc": "工业六氟化硫气体质量标准"
+    },
+    {
+      "name": "气瓶",
+      "type": "电力物资",
+      "desc": "六氟化硫气体储存容器"
+    },
+    {
+      "name": "含水量",
+      "type": "检测指标",
+      "desc": "六氟化硫气体中水分含量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6新气到货后，充入设备前应按国家标准GB12022《工业六氟化硫》验收",
+      "type": "强制",
+      "subject": "SF6新气",
+      "action": "验收",
+      "condition": "SF6新气到货后，充入设备前",
+      "constraint": "按国家标准GB12022《工业六氟化硫》",
+      "related_entities": [
+        "SF6新气",
+        "GB12022《工业六氟化硫》"
+      ]
+    },
+    {
+      "content": "对气瓶的抽检率为10%",
+      "type": "强制",
+      "subject": "SF6新气",
+      "action": "抽检",
+      "condition": "SF6新气到货后，充入设备前",
+      "constraint": "气瓶的抽检率为10%",
+      "related_entities": [
+        "SF6新气",
+        "气瓶"
+      ]
+    },
+    {
+      "content": "其他每瓶只测定含水量",
+      "type": "强制",
+      "subject": "SF6新气",
+      "action": "测定含水量",
+      "condition": "SF6新气到货后，充入设备前",
+      "constraint": "其他每瓶只测定含水量",
+      "related_entities": [
+        "SF6新气",
+        "含水量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6新气",
+      "target": "GB12022《工业六氟化硫》",
+      "type": "符合标准"
+    },
+    {
+      "source": "SF6新气",
+      "target": "气瓶",
+      "type": "存储于"
+    },
+    {
+      "source": "SF6新气",
+      "target": "含水量",
+      "type": "检测指标"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1298,
+      "source_row_id": "1298",
+      "clause_index": 2,
+      "source_text": "SF6新气到货后，充入设备前应按国家标准GB12022《工业六氟化硫》验收，对气瓶的抽检率为10%，其他每瓶只测定含水量"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.215547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

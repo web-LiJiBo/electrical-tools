@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制电路通断的设备"
+    },
+    {
+      "name": "噪声水平",
+      "type": "物理量",
+      "desc": "开关设备运行时产生的声音强度"
+    },
+    {
+      "name": "用户",
+      "type": "电力用户",
+      "desc": "电力系统的终端使用者"
+    },
+    {
+      "name": "制造厂",
+      "type": "电力设备制造商",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "户外设备",
+      "type": "电力设备",
+      "desc": "安装在室外的电力设备"
+    },
+    {
+      "name": "户内设备",
+      "type": "电力设备",
+      "desc": "安装在室内的电力设备"
+    },
+    {
+      "name": "GB/T3785.1",
+      "type": "国家标准",
+      "desc": "噪声测量方法标准之一"
+    },
+    {
+      "name": "GB/T3785.2",
+      "type": "国家标准",
+      "desc": "噪声测量方法标准之二"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关设备发出的噪声水平不应超过规定的数值",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "设计与制造开关设备",
+      "condition": "开关设备运行期间",
+      "constraint": "噪声水平≤规定值",
+      "related_entities": [
+        "开关设备",
+        "噪声水平"
+      ]
+    },
+    {
+      "content": "验证程序应根据用户和制造厂之间的协议",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "制定验证程序",
+      "condition": "开关设备出厂前",
+      "constraint": "验证程序符合用户和制造厂协议",
+      "related_entities": [
+        "制造厂",
+        "用户",
+        "开关设备",
+        "验证程序"
+      ]
+    },
+    {
+      "content": "GIS的噪音水平不应超过规定值，该值由制造厂和用户协商",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "确定GIS噪音水平限值",
+      "condition": "GIS设备运行期间",
+      "constraint": "GIS噪音水平≤规定值",
+      "related_entities": [
+        "制造厂",
+        "用户",
+        "GIS",
+        "噪声水平"
+      ]
+    },
+    {
+      "content": "户外设备不得超过110dB（A）；户内设备不得超过90dB(A)",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "确定户外/户内设备噪音限值",
+      "condition": "户外/户内设备运行期间",
+      "constraint": "户外设备噪音水平≤110dB（A）；户内设备噪音水平≤90dB(A)",
+      "related_entities": [
+        "户外设备",
+        "户内设备",
+        "噪声水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关设备",
+      "target": "噪声水平",
+      "type": "产生"
+    },
+    {
+      "source": "制造厂",
+      "target": "用户",
+      "type": "服务对象"
+    },
+    {
+      "source": "制造厂",
+      "target": "开关设备",
+      "type": "生产者"
+    },
+    {
+      "source": "用户",
+      "target": "制造厂",
+      "type": "需求方"
+    },
+    {
+      "source": "户外设备",
+      "target": "噪声水平",
+      "type": "产生"
+    },
+    {
+      "source": "户内设备",
+      "target": "噪声水平",
+      "type": "产生"
+    },
+    {
+      "source": "GB/T3785.1",
+      "target": "噪声水平",
+      "type": "测量依据"
+    },
+    {
+      "source": "GB/T3785.2",
+      "target": "噪声水平",
+      "type": "测量依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2738,
+      "source_row_id": "2747",
+      "clause_index": 1,
+      "source_text": "操作期间，开关设备发出的噪声水平不应超过规定的数值。验证程序应根据用户和制造厂之间的协议（见GB/T3785.1和GB/T3785.2）。开关操作时，GIS的噪音水平不应超过规定值，该值由制造厂和用户协商。一般对户外设备不得超过110dB（A）；对户内设备不得超过90dB(A)。噪声水平的测点应在距声源水平距离2m、对地高1.5m处测定。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.9097,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.929315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

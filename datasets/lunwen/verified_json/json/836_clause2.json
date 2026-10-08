@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "内水冷系统",
+      "type": "电力系统",
+      "desc": "电力系统中采用的内水冷冷却方式"
+    },
+    {
+      "name": "冷却塔出水温度传感器",
+      "type": "监测装置",
+      "desc": "用于监测冷却塔出水温度的传感器"
+    },
+    {
+      "name": "水冷保护",
+      "type": "保护装置",
+      "desc": "对内水冷系统进行保护的装置"
+    },
+    {
+      "name": "直流系统",
+      "type": "电力系统",
+      "desc": "电力系统中的直流供电部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内水冷系统应装设双重化的冷却塔出水温度传感器",
+      "type": "强制",
+      "subject": "内水冷系统",
+      "action": "安装双重化冷却塔出水温度传感器",
+      "condition": "内水冷系统运行期间",
+      "constraint": "双重化",
+      "related_entities": [
+        "内水冷系统",
+        "冷却塔出水温度传感器"
+      ]
+    },
+    {
+      "content": "在每套水冷保护内，冷却塔出水温度保护按二取二原则出口",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "按二取二原则出口",
+      "condition": "冷却塔出水温度保护动作时",
+      "constraint": "二取二原则",
+      "related_entities": [
+        "水冷保护",
+        "冷却塔出水温度传感器"
+      ]
+    },
+    {
+      "content": "动作后延时3秒闭锁直流系统",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "闭锁直流系统",
+      "condition": "冷却塔出水温度保护动作时",
+      "constraint": "延时3秒",
+      "related_entities": [
+        "水冷保护",
+        "直流系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内水冷系统",
+      "target": "冷却塔出水温度传感器",
+      "type": "安装"
+    },
+    {
+      "source": "水冷保护",
+      "target": "冷却塔出水温度传感器",
+      "type": "监测"
+    },
+    {
+      "source": "水冷保护",
+      "target": "直流系统",
+      "type": "闭锁"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 836,
+      "source_row_id": "836",
+      "clause_index": 2,
+      "source_text": "C）细则:内水冷系统应装设双重化的冷却塔出水温度传感器，在每套水冷保护内，冷却塔出水温度保护按二取二原则出口，动作后延时3秒闭锁直流系统"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.693084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

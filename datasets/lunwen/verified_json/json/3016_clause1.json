@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "换流变压器",
+      "type": "电力设备",
+      "desc": "用于电力系统中进行交流电与直流电转换的变压器"
+    },
+    {
+      "name": "有载分接开关",
+      "type": "电力设备部件",
+      "desc": "换流变压器内部实现电压调节的装置"
+    },
+    {
+      "name": "油流继电器",
+      "type": "保护装置",
+      "desc": "检测变压器油流状态的继电器"
+    },
+    {
+      "name": "速动压力继电器",
+      "type": "保护装置",
+      "desc": "检测变压器内部压力变化的继电器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "换流变压器有载分接开关仅配置了油流或速动压力继电器一种的，应投跳闸",
+      "type": "强制",
+      "subject": "换流变压器有载分接开关",
+      "action": "投入跳闸",
+      "condition": "仅配置了油流或速动压力继电器一种",
+      "constraint": "无",
+      "related_entities": [
+        "换流变压器",
+        "有载分接开关",
+        "油流继电器",
+        "速动压力继电器"
+      ]
+    },
+    {
+      "content": "同时配置了油流和速动压力继电器的，油流继电器应投跳闸，速动压力继电器应投报警",
+      "type": "强制",
+      "subject": "换流变压器有载分接开关",
+      "action": "油流继电器投跳闸，速动压力继电器投报警",
+      "condition": "同时配置了油流和速动压力继电器",
+      "constraint": "无",
+      "related_entities": [
+        "换流变压器",
+        "有载分接开关",
+        "油流继电器",
+        "速动压力继电器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流变压器",
+      "target": "有载分接开关",
+      "type": "包含"
+    },
+    {
+      "source": "有载分接开关",
+      "target": "油流继电器",
+      "type": "配置"
+    },
+    {
+      "source": "有载分接开关",
+      "target": "速动压力继电器",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3007,
+      "source_row_id": "3016",
+      "clause_index": 1,
+      "source_text": "换流变压器有载分接开关仅配置了油流或速动压力继电器一种的，应投跳闸；同时配置了油流和速动压力继电器的，油流继电器应投跳闸，速动压力继电器应投报警。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.269314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

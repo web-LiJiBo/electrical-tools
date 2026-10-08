@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "266kV高压配电网",
+      "type": "电力系统",
+      "desc": "266kV的高压配电网"
+    },
+    {
+      "name": "单相接地故障电容电流",
+      "type": "电气参数",
+      "desc": "单相接地故障时流经系统的电容电流"
+    },
+    {
+      "name": "不接地方式",
+      "type": "接地方式",
+      "desc": "系统发生单相接地故障时不进行接地处理的方式"
+    },
+    {
+      "name": "经消弧线圈接地方式",
+      "type": "接地方式",
+      "desc": "系统发生单相接地故障时通过消弧线圈接地的方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当单相接地故障电容电流不超过10A时，应采用不接地方式",
+      "type": "强制",
+      "subject": "266kV高压配电网",
+      "action": "采用不接地方式",
+      "condition": "单相接地故障电容电流≤10A",
+      "constraint": "单相接地故障电容电流≤10A",
+      "related_entities": [
+        "266kV高压配电网",
+        "单相接地故障电容电流",
+        "不接地方式"
+      ]
+    },
+    {
+      "content": "当超过10A时，宜采用经消弧线圈接地方式",
+      "type": "强制",
+      "subject": "266kV高压配电网",
+      "action": "采用经消弧线圈接地方式",
+      "condition": "单相接地故障电容电流＞10A",
+      "constraint": "单相接地故障电容电流＞10A",
+      "related_entities": [
+        "266kV高压配电网",
+        "单相接地故障电容电流",
+        "经消弧线圈接地方式"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "266kV高压配电网",
+      "target": "单相接地故障电容电流",
+      "type": "影响"
+    },
+    {
+      "source": "266kV高压配电网",
+      "target": "不接地方式",
+      "type": "采用"
+    },
+    {
+      "source": "266kV高压配电网",
+      "target": "经消弧线圈接地方式",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 631,
+      "source_row_id": "631",
+      "clause_index": 1,
+      "source_text": "266kV高压配电网，当单相接地故障电容电流不超过10A时，应采用不接地方式；当超过10A时，宜采用经消弧线圈接地方式；"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.451483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

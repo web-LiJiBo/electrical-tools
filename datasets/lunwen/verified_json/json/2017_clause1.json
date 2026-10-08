@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "在2km进线保护段和大跨越段500kV及以上线路为1年，其他线路为2年。其它为投运3年进行首次测试，以后500kV及以上线路为4年，其他线路为8年，除2km进线保护段和大跨越外，一般采用每隔3基（500kV及以上）或每隔7基（其它）检测1基的轮试方式。对于地形复杂、难以到达的区段，轮式方式可酌情自行掌握。如某基杆塔的测量值超过设计值时，补测与此相邻的2基杆塔。如果连续2次检测的结果低于设计值（或要求值）的50%，则轮式周期可延长50%-100%",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2017,
+      "source_row_id": "2017",
+      "clause_index": 1,
+      "source_text": "在2km进线保护段和大跨越段500kV及以上线路为1年，其他线路为2年。其它为投运3年进行首次测试，以后500kV及以上线路为4年，其他线路为8年，除2km进线保护段和大跨越外，一般采用每隔3基（500kV及以上）或每隔7基（其它）检测1基的轮试方式。对于地形复杂、难以到达的区段，轮式方式可酌情自行掌握。如某基杆塔的测量值超过设计值时，补测与此相邻的2基杆塔。如果连续2次检测的结果低于设计值（或要求值）的50%，则轮式周期可延长50%-100%"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:01.029968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "电力系统中用于支持导体并提供电气隔离的元件"
+    },
+    {
+      "name": "X射线探伤检查",
+      "type": "检测方法",
+      "desc": "利用X射线穿透材料时强度衰减特性进行无损检测的方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个绝缘子应进行X射线探伤检查",
+      "type": "强制",
+      "subject": "绝缘子",
+      "action": "进行X射线探伤检查",
+      "condition": "在安装前或定期维护时",
+      "constraint": "每个绝缘子",
+      "related_entities": [
+        "绝缘子",
+        "X射线探伤检查"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘子",
+      "target": "X射线探伤检查",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1712,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9668e037ebbdebe3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1712_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

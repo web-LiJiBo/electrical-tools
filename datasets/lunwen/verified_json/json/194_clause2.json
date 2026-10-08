@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "晶闸管换流阀厅",
+      "type": "电力设备",
+      "desc": "电力系统中用于整流的换流阀安装场所"
+    },
+    {
+      "name": "相对湿度",
+      "type": "环境参数",
+      "desc": "空气中的水蒸气含量与同温度下饱和水蒸气含量之比的百分数"
+    },
+    {
+      "name": "检修",
+      "type": "操作活动",
+      "desc": "对电力设备进行检查、维修或试验的过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "晶闸管换流阀厅内的相对湿度在60%以下",
+      "type": "强制",
+      "subject": "晶闸管换流阀厅",
+      "action": "保持相对湿度",
+      "condition": "正常运行",
+      "constraint": "≤60%",
+      "related_entities": [
+        "晶闸管换流阀厅",
+        "相对湿度"
+      ]
+    },
+    {
+      "content": "检修期间相对湿度超过60%应采取相应措施",
+      "type": "强制",
+      "subject": "晶闸管换流阀厅",
+      "action": "采取措施降低湿度",
+      "condition": "检修期间且相对湿度>60%",
+      "constraint": "≤60%",
+      "related_entities": [
+        "晶闸管换流阀厅",
+        "相对湿度",
+        "检修"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "晶闸管换流阀厅",
+      "target": "相对湿度",
+      "type": "监测对象"
+    },
+    {
+      "source": "晶闸管换流阀厅",
+      "target": "检修",
+      "type": "操作环境"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 194,
+      "source_row_id": "194",
+      "clause_index": 2,
+      "source_text": "维护说明晶闸管换流阀厅内的相对湿度在60%以下。如果检修期间相对湿度超过60%应采取相应措施，保证检修期间相对湿度应控制在60%以下"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.963600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

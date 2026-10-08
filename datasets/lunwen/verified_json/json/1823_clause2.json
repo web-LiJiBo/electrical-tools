@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "高压开关柜",
+      "type": "电力设备",
+      "desc": "40.5kV高压配电装置"
+    },
+    {
+      "name": "触头盒",
+      "type": "电力设备部件",
+      "desc": "高压开关柜内部触头保护装置"
+    },
+    {
+      "name": "穿墙套管",
+      "type": "电力设备部件",
+      "desc": "高压开关柜穿墙绝缘导体装置"
+    },
+    {
+      "name": "局部放电",
+      "type": "电气参数",
+      "desc": "电力设备绝缘系统中局部放电现象"
+    },
+    {
+      "name": "绝缘件",
+      "type": "电力设备部件",
+      "desc": "电力设备中绝缘材料构成的部件"
+    },
+    {
+      "name": "电压互感器",
+      "type": "电力设备",
+      "desc": "测量电压的电力设备"
+    },
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "测量电流的电力设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "40.5kV高压开关柜内的触头盒、穿墙套管采用双屏蔽结构，局部放电水平小于3pC",
+      "type": "强制",
+      "subject": "高压开关柜",
+      "action": "设计制造",
+      "condition": "40.5kV高压开关柜",
+      "constraint": "触头盒、穿墙套管采用双屏蔽结构，局部放电水平小于3pC",
+      "related_entities": [
+        "高压开关柜",
+        "触头盒",
+        "穿墙套管",
+        "局部放电"
+      ]
+    },
+    {
+      "content": "单个绝缘件的局部放电≤3pC",
+      "type": "强制",
+      "subject": "绝缘件",
+      "action": "设计制造",
+      "condition": "电力设备",
+      "constraint": "局部放电≤3pC",
+      "related_entities": [
+        "绝缘件",
+        "局部放电"
+      ]
+    },
+    {
+      "content": "电压互感器、电流互感器局部放电≤10pC",
+      "type": "强制",
+      "subject": "电压互感器、电流互感器",
+      "action": "设计制造",
+      "condition": "电力设备",
+      "constraint": "局部放电≤10pC",
+      "related_entities": [
+        "电压互感器",
+        "电流互感器",
+        "局部放电"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高压开关柜",
+      "target": "触头盒",
+      "type": "包含"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "穿墙套管",
+      "type": "包含"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "绝缘件",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘件",
+      "target": "局部放电",
+      "type": "产生"
+    },
+    {
+      "source": "电压互感器",
+      "target": "局部放电",
+      "type": "产生"
+    },
+    {
+      "source": "电流互感器",
+      "target": "局部放电",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1823,
+      "source_row_id": "1823",
+      "clause_index": 2,
+      "source_text": "各元件应符合各自的有关标准。40.5kV高压开关柜内的触头盒、穿墙套管采用双屏蔽结构，局部放电水平小于3pC。4标准技术参数表1技术参数特性表，单个绝缘件的局部放电≤3pC，电压互感器、电流互感器局部放电≤10pC"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.807969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

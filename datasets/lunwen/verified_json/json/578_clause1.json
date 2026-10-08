@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "谐振电路",
+      "type": "电力设备",
+      "desc": "一种通过电感和电容构成的电路"
+    },
+    {
+      "name": "试验电压",
+      "type": "电力参数",
+      "desc": "对电力设备进行耐压试验时施加的电压值"
+    },
+    {
+      "name": "介质损耗因数",
+      "type": "电力参数",
+      "desc": "反映绝缘材料在交流电压作用下能量损耗的参数"
+    },
+    {
+      "name": "局部放电",
+      "type": "电力参数",
+      "desc": "电力设备内部或表面产生的局部放电现象"
+    },
+    {
+      "name": "主绝缘强度",
+      "type": "电力参数",
+      "desc": "电力设备主绝缘承受的电气强度"
+    },
+    {
+      "name": "300Hz",
+      "type": "频率",
+      "desc": "谐振电路的谐振频率上限"
+    },
+    {
+      "name": "220kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级之一"
+    },
+    {
+      "name": "349110kV/66kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级之一"
+    },
+    {
+      "name": "1.36U0",
+      "type": "电压倍数",
+      "desc": "220kV及以上电力设备耐压试验电压倍数"
+    },
+    {
+      "name": "1.6U0",
+      "type": "电压倍数",
+      "desc": "349110kV/66kV电力设备耐压试验电压倍数"
+    },
+    {
+      "name": "5min",
+      "type": "时间",
+      "desc": "耐压试验持续时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用谐振电路，谐振频率应在300Hz以下",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "选择谐振电路",
+      "condition": "电力设备耐压试验",
+      "constraint": "谐振频率≤300Hz",
+      "related_entities": [
+        "谐振电路",
+        "300Hz"
+      ]
+    },
+    {
+      "content": "220kV及以上，试验电压为1.36U0；349110kV/66kV，试验电压为1.6U0，时间5min",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行耐压试验",
+      "condition": "电力设备耐压试验",
+      "constraint": "试验电压=1.36U0(220kV及以上)；试验电压=1.6U0(349110kV/66kV)，试验时间=5min",
+      "related_entities": [
+        "试验电压",
+        "220kV",
+        "349110kV/66kV",
+        "1.36U0",
+        "1.6U0",
+        "5min"
+      ]
+    },
+    {
+      "content": "如试验条件许可，宜同时测量介质损耗因数和局部放电",
+      "type": "建议",
+      "subject": "电力设备",
+      "action": "进行耐压试验",
+      "condition": "电力设备耐压试验",
+      "constraint": "试验条件许可",
+      "related_entities": [
+        "试验电压",
+        "介质损耗因数",
+        "局部放电"
+      ]
+    },
+    {
+      "content": "新做终端、接头或受其它试验项目警示，需要检验主绝缘强度时，也应进行本项目",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行耐压试验",
+      "condition": "电力设备耐压试验",
+      "constraint": "新做终端、接头或受其它试验项目警示，需要检验主绝缘强度",
+      "related_entities": [
+        "试验电压",
+        "主绝缘强度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "谐振电路",
+      "target": "试验电压",
+      "type": "影响"
+    },
+    {
+      "source": "试验电压",
+      "target": "主绝缘强度",
+      "type": "测试"
+    },
+    {
+      "source": "试验电压",
+      "target": "介质损耗因数",
+      "type": "测试"
+    },
+    {
+      "source": "试验电压",
+      "target": "局部放电",
+      "type": "测试"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 578,
+      "source_row_id": "578",
+      "clause_index": 1,
+      "source_text": "采用谐振电路，谐振频率应在300Hz以下。220kV及以上，试验电压为1.36U0；349110kV/66kV，试验电压为1.6U0，时间5min。如试验条件许可，宜同时测量介质损耗因数和局部放电。新做终端、接头或受其它试验项目警示，需要检验主绝缘强度时，也应进行本项目"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.382484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

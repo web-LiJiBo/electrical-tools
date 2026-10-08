@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "小电感电流",
+      "type": "电气参数",
+      "desc": "隔离开关开合时产生的小电感电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "126kV及以上隔离开关开合小电感电流值为126kV~363kV0.5A，550~1100kV1A",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "开合操作",
+      "condition": "隔离开关额定电压126kV及以上",
+      "constraint": "小电感电流值126kV~363kV0.5A，550~1100kV1A",
+      "related_entities": [
+        "隔离开关",
+        "小电感电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "小电感电流",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 381,
+      "source_row_id": "381",
+      "clause_index": 1,
+      "source_text": "126kV及以上隔离开关开合小电感电流值为126kV~363kV0.5A，550~1100kV1A"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.162486+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

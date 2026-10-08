@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "特高压充油设备",
+      "type": "电力设备",
+      "desc": "特高压输电系统中的充油电气设备"
+    },
+    {
+      "name": "绝缘耐受试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行的耐压试验"
+    },
+    {
+      "name": "静置时间",
+      "type": "试验参数",
+      "desc": "设备在试验前的静置时长"
+    }
+  ],
+  "rules": [
+    {
+      "content": "特高压充油设备绝缘耐受试验前静置时间不少于168h",
+      "type": "强制",
+      "subject": "特高压充油设备",
+      "action": "进行绝缘耐受试验",
+      "condition": "试验前",
+      "constraint": "静置时间≥168小时",
+      "related_entities": [
+        "特高压充油设备",
+        "绝缘耐受试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "特高压充油设备",
+      "target": "绝缘耐受试验",
+      "type": "进行"
+    },
+    {
+      "source": "绝缘耐受试验",
+      "target": "静置时间",
+      "type": "需要"
+    }
+  ],
+  "metadata": {
+    "pair_id": 809,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ae36774bde2acda6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\809_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

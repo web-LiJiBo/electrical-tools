@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "并联电抗器",
+      "type": "电力设备",
+      "desc": "电力系统中用于补偿线路感性无功功率的电抗器"
+    },
+    {
+      "name": "总损耗",
+      "type": "技术参数",
+      "desc": "并联电抗器在运行过程中产生的各种损耗之和"
+    },
+    {
+      "name": "保证值",
+      "type": "技术参数",
+      "desc": "并联电抗器在设计或制造时规定的损耗限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "并联电抗器的总损耗容许偏差不应超过保证值的+15%",
+      "type": "强制",
+      "subject": "并联电抗器",
+      "action": "运行维护",
+      "condition": "并联电抗器在额定电压下运行",
+      "constraint": "+15%",
+      "related_entities": [
+        "并联电抗器",
+        "总损耗",
+        "保证值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "并联电抗器",
+      "target": "总损耗",
+      "type": "包含"
+    },
+    {
+      "source": "总损耗",
+      "target": "保证值",
+      "type": "对比"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2099,
+      "source_row_id": "2099",
+      "clause_index": 1,
+      "source_text": "并联电抗器的总损耗容许偏差不应超过保证值的＋15％"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.137547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

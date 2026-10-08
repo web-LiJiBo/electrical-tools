@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "无油箱",
+      "type": "电力设备",
+      "desc": "电力系统中的一种储油设备"
+    },
+    {
+      "name": "密封性试验",
+      "type": "试验方法",
+      "desc": "检查电力设备密封性能的试验方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "无油箱密封性试验应按照GB/T 7596-2017《运行中变压器油质量指标及检验方法》进行",
+      "type": "强制",
+      "subject": "电力设备检修人员",
+      "action": "进行无油箱密封性试验",
+      "condition": "在电力设备检修过程中",
+      "constraint": "试验应在设备停运后进行，试验压力为0.05MPa，持续时间不少于24小时",
+      "related_entities": [
+        "无油箱",
+        "密封性试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "无油箱",
+      "target": "密封性试验",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2552,
+      "source_row_id": "2552",
+      "clause_index": 1,
+      "source_text": "无油箱密封性试验。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.4,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.707314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

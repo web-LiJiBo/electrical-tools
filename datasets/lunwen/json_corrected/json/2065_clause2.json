@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "导、地线",
+      "type": "电力设备",
+      "desc": "输电线路中的导线或地线"
+    },
+    {
+      "name": "弧垂",
+      "type": "电气参数",
+      "desc": "导线或地线在自然下垂状态下的弧度大小"
+    },
+    {
+      "name": "设计允许偏差",
+      "type": "技术指标",
+      "desc": "导线或地线弧垂的设计允许偏差范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "导、地线弧垂不应超过设计允许偏差：110kV允许偏差：+6.0%，-2.5%；220kV及以上允许偏差：+3.0%，-2.5%",
+      "type": "强制",
+      "subject": "导、地线",
+      "action": "安装、运行维护",
+      "condition": "新建或改造110kV及以上的输电线路",
+      "constraint": "导、地线弧垂不应超过设计允许偏差：110kV允许偏差：+6.0%，-2.5%；220kV及以上允许偏差：+3.0%，-2.5%",
+      "related_entities": [
+        "导、地线",
+        "弧垂",
+        "设计允许偏差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导、地线",
+      "target": "弧垂",
+      "type": "包含"
+    },
+    {
+      "source": "设计允许偏差",
+      "target": "弧垂",
+      "type": "限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2065,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d4d8e0fbd4881fc1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2065_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "噪声水平",
+      "type": "技术参数",
+      "desc": "变压器在特定工况下的噪声大小"
+    },
+    {
+      "name": "强迫油循环(导向)冷却方式",
+      "type": "冷却方式",
+      "desc": "变压器的冷却方式之一，通过油泵强制油流过散热器进行冷却"
+    },
+    {
+      "name": "满载运行",
+      "type": "运行状态",
+      "desc": "变压器在额定负载下运行的状态"
+    },
+    {
+      "name": "距变压器本体2m处",
+      "type": "测量位置",
+      "desc": "测量噪声的位置距离变压器本体2米处"
+    },
+    {
+      "name": "噪声不大于80dB",
+      "type": "噪声限值",
+      "desc": "变压器在满载运行状态下，距本体2米处的噪声水平要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "噪声水平：100%强迫油循环(导向)冷却方式下满载运行，距变压器本体2m处，噪声不大于80dB",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "100%强迫油循环(导向)冷却方式下满载运行",
+      "constraint": "距变压器本体2m处，噪声不大于80dB",
+      "related_entities": [
+        "噪声水平",
+        "强迫油循环(导向)冷却方式",
+        "满载运行",
+        "距变压器本体2m处",
+        "噪声不大于80dB"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "噪声水平",
+      "target": "噪声不大于80dB",
+      "type": "包含"
+    },
+    {
+      "source": "噪声水平",
+      "target": "强迫油循环(导向)冷却方式",
+      "type": "适用于"
+    },
+    {
+      "source": "噪声水平",
+      "target": "满载运行",
+      "type": "适用于"
+    },
+    {
+      "source": "噪声水平",
+      "target": "距变压器本体2m处",
+      "type": "测量位置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2393,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "425b7078dcd49251",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2393_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

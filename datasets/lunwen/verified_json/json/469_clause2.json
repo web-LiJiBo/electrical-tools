@@ -1,0 +1,126 @@
+{
+  "entities": [
+    {
+      "name": "分布式故障诊断装置",
+      "type": "电力设备",
+      "desc": "用于检测电力线路故障的装置"
+    },
+    {
+      "name": "图像在线监测装置",
+      "type": "电力设备",
+      "desc": "通过图像采集技术对电力线路进行实时监控的装置"
+    },
+    {
+      "name": "视频在线监测装置",
+      "type": "电力设备",
+      "desc": "通过视频采集技术对电力线路进行实时监控的装置"
+    },
+    {
+      "name": "高铁线路",
+      "type": "电力线路",
+      "desc": "跨越高铁的电力线路"
+    },
+    {
+      "name": "高速公路线路",
+      "type": "电力线路",
+      "desc": "跨越高速公路的电力线路"
+    },
+    {
+      "name": "高铁档",
+      "type": "电力线路区段",
+      "desc": "跨越高铁的电力线路区段"
+    },
+    {
+      "name": "高速公路档",
+      "type": "电力线路区段",
+      "desc": "跨越高速公路的电力线路区段"
+    }
+  ],
+  "rules": [
+    {
+      "content": "跨越高铁线路应安装分布式故障诊断装置",
+      "type": "强制",
+      "subject": "电力线路运维部门",
+      "action": "安装分布式故障诊断装置",
+      "condition": "跨越高铁线路",
+      "constraint": "无",
+      "related_entities": [
+        "分布式故障诊断装置",
+        "高铁线路"
+      ]
+    },
+    {
+      "content": "跨越高铁档应安装图像或视频在线监测装置",
+      "type": "强制",
+      "subject": "电力线路运维部门",
+      "action": "安装图像或视频在线监测装置",
+      "condition": "跨越高铁档",
+      "constraint": "无",
+      "related_entities": [
+        "图像在线监测装置",
+        "视频在线监测装置",
+        "高铁档"
+      ]
+    },
+    {
+      "content": "跨越高速公路档视被跨越物重要程度安装",
+      "type": "强制",
+      "subject": "电力线路运维部门",
+      "action": "安装图像或视频在线监测装置",
+      "condition": "跨越高速公路档",
+      "constraint": "视被跨越物重要程度",
+      "related_entities": [
+        "图像在线监测装置",
+        "视频在线监测装置",
+        "高速公路档"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "分布式故障诊断装置",
+      "target": "高铁线路",
+      "type": "安装于"
+    },
+    {
+      "source": "图像在线监测装置",
+      "target": "高铁档",
+      "type": "安装于"
+    },
+    {
+      "source": "视频在线监测装置",
+      "target": "高铁档",
+      "type": "安装于"
+    },
+    {
+      "source": "图像在线监测装置",
+      "target": "高速公路档",
+      "type": "安装于"
+    },
+    {
+      "source": "视频在线监测装置",
+      "target": "高速公路档",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 469,
+      "source_row_id": "469",
+      "clause_index": 2,
+      "source_text": "第十一条跨越高铁线路应安装分布式故障诊断装置；跨越高铁档应安装图像或视频在线监测装置，跨越高速公路档视被跨越物重要程度安装"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9792,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.260483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

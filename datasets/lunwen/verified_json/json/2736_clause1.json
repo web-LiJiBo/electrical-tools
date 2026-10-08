@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "硅橡17胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的硅橡胶制品"
+    },
+    {
+      "name": "氟橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的氟橡胶制品"
+    },
+    {
+      "name": "氟硅橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的氟硅橡胶制品"
+    },
+    {
+      "name": "氢化丁脂橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的氢化丁脂橡胶制品"
+    },
+    {
+      "name": "丙烯酸酯橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的丙烯酸酯橡胶制品"
+    },
+    {
+      "name": "丁腈橡胶",
+      "type": "橡胶制品",
+      "desc": "一种特定类型的丁腈橡胶制品"
+    }
+  ],
+  "rules": [
+    {
+      "content": "硅橡17胶、氟橡胶、氟硅橡胶制品贮存期为5年",
+      "type": "强制",
+      "subject": "硅橡17胶、氟橡胶、氟硅橡胶制品",
+      "action": "贮存",
+      "condition": "自生产日计",
+      "constraint": "贮存期为5年",
+      "related_entities": [
+        "硅橡17胶",
+        "氟橡胶",
+        "氟硅橡胶"
+      ]
+    },
+    {
+      "content": "氢化丁脂橡胶、丙烯酸酯橡胶贮存期为3年",
+      "type": "强制",
+      "subject": "氢化丁脂橡胶、丙烯酸酯橡胶",
+      "action": "贮存",
+      "condition": "自生产日计",
+      "constraint": "贮存期为3年",
+      "related_entities": [
+        "氢化丁脂橡胶",
+        "丙烯酸酯橡胶"
+      ]
+    },
+    {
+      "content": "丁腈橡胶制品贮存期为1年",
+      "type": "强制",
+      "subject": "丁腈橡胶",
+      "action": "贮存",
+      "condition": "自生产日计",
+      "constraint": "贮存期为1年",
+      "related_entities": [
+        "丁腈橡胶"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "硅橡17胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "氟橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "氟硅橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "氢化丁脂橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "丙烯酸酯橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    },
+    {
+      "source": "丁腈橡胶",
+      "target": "贮存",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2727,
+      "source_row_id": "2736",
+      "clause_index": 1,
+      "source_text": "自生产日计，硅橡17胶、氟橡胶、氟硅橡胶制品贮存期为5年，氢化丁脂橡胶、丙烯酸酯橡胶贮存期为3年，丁腈橡胶制品贮存期为1年。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.916314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

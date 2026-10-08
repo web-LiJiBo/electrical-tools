@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "排管",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的地下管道"
+    },
+    {
+      "name": "工作井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中设置的工作坑"
+    },
+    {
+      "name": "管枕",
+      "type": "电力设施",
+      "desc": "电力电缆敷设时用于支撑排管的构件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "排管在选择路径时，应尽可能取直线，在转弯和折角处，应增设工作井。",
+      "type": "强制",
+      "subject": "排管敷设设计人员",
+      "action": "敷设排管路径设计",
+      "condition": "排管敷设路径选择",
+      "constraint": "转弯和折角处增设工作井",
+      "related_entities": [
+        "排管",
+        "工作井"
+      ]
+    },
+    {
+      "content": "在直线部分，两工作井之间的距离不宜大于150m，排管连接处应设立管枕。",
+      "type": "强制",
+      "subject": "排管敷设施工人员",
+      "action": "敷设排管",
+      "condition": "排管敷设直线段",
+      "constraint": "两工作井间距≤150m，排管连接处设立管枕",
+      "related_entities": [
+        "排管",
+        "工作井",
+        "管枕"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "排管",
+      "target": "工作井",
+      "type": "敷设路径"
+    },
+    {
+      "source": "排管",
+      "target": "管枕",
+      "type": "敷设支撑"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 342,
+      "source_row_id": "342",
+      "clause_index": 2,
+      "source_text": "排管技术要求：a)排管在选择路径时，应尽可能取直线，在转弯和折角处，应增设工作井。在直线部分，两工作井之间的距离不宜大于150m，排管连接处应设立管枕；"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.120485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

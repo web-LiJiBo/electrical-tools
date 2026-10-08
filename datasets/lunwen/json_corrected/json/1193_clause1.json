@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "配电站",
+      "type": "电力设施",
+      "desc": "电力系统中用于汇集和分配电能的场所"
+    },
+    {
+      "name": "油浸变压器",
+      "type": "电力设备",
+      "desc": "一种将交流电压升高或降低的电气设备，内部含有绝缘油"
+    },
+    {
+      "name": "干式变压器",
+      "type": "电力设备",
+      "desc": "一种将交流电压升高或降低的电气设备，内部不含绝缘油"
+    },
+    {
+      "name": "容量",
+      "type": "技术参数",
+      "desc": "电力设备能够承载的最大功率值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电站内油浸变压器不宜大于630kVA",
+      "type": "强制",
+      "subject": "配电站",
+      "action": "安装油浸变压器",
+      "condition": "在配电站内",
+      "constraint": "变压器容量不大于630kVA",
+      "related_entities": [
+        "配电站",
+        "油浸变压器"
+      ]
+    },
+    {
+      "content": "配电站内干式变压器不宜大于1000kVA",
+      "type": "强制",
+      "subject": "配电站",
+      "action": "安装干式变压器",
+      "condition": "在配电站内",
+      "constraint": "变压器容量不大于1000kVA",
+      "related_entities": [
+        "配电站",
+        "干式变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电站",
+      "target": "油浸变压器",
+      "type": "安装"
+    },
+    {
+      "source": "配电站",
+      "target": "干式变压器",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1193,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bde39b3af73fe33f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1193_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

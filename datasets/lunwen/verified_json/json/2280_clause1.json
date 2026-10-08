@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于接通或断开电路的电气装置"
+    },
+    {
+      "name": "控制设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制开关设备操作的电气装置"
+    },
+    {
+      "name": "额定短时耐受电流",
+      "type": "电气参数",
+      "desc": "开关设备在合闸位置下能承受的短时电流值"
+    },
+    {
+      "name": "额定短路持续时间",
+      "type": "电气参数",
+      "desc": "开关设备在合闸位置下能承受的短路电流持续时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关设备和控制设备在合闸位置能够承载额定短时耐受电流的时间。",
+      "type": "强制",
+      "subject": "开关设备和控制设备",
+      "action": "承载额定短时耐受电流",
+      "condition": "在合闸位置",
+      "constraint": "额定短路持续时间标准为2s",
+      "related_entities": [
+        "开关设备",
+        "控制设备",
+        "额定短时耐受电流"
+      ]
+    },
+    {
+      "content": "若需要大于2s，推荐3s和4s",
+      "type": "建议",
+      "subject": "开关设备和控制设备",
+      "action": "承载额定短时耐受电流",
+      "condition": "在合闸位置且额定短路持续时间大于2s",
+      "constraint": "额定短路持续时间为3s或4s",
+      "related_entities": [
+        "开关设备",
+        "控制设备",
+        "额定短时耐受电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关设备",
+      "target": "控制设备",
+      "type": "控制"
+    },
+    {
+      "source": "额定短时耐受电流",
+      "target": "开关设备",
+      "type": "承载"
+    },
+    {
+      "source": "额定短路持续时间",
+      "target": "开关设备",
+      "type": "承载"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2280,
+      "source_row_id": "2280",
+      "clause_index": 1,
+      "source_text": "“开关设备和控制设备在合闸位置能够承载额定短时耐受电流的时间。额定短路持续时间标准为2s，若需要大于2s，推荐3s和4s”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.359546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

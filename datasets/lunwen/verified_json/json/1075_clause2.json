@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "严重覆冰地段",
+      "type": "地理环境",
+      "desc": "覆冰厚度超过10mm的区域"
+    },
+    {
+      "name": "稀有覆冰厚度",
+      "type": "设计参数",
+      "desc": "罕见情况下出现的覆冰厚度值"
+    },
+    {
+      "name": "概率极小重冰",
+      "type": "气象条件",
+      "desc": "出现概率极低的极端覆冰情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在严重覆冰地段如调查中出现概率极小重冰，宜按稀有的覆冰厚度进行验算",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "进行验算",
+      "condition": "严重覆冰地段且出现概率极小重冰",
+      "constraint": "稀有覆冰厚度",
+      "related_entities": [
+        "严重覆冰地段",
+        "稀有覆冰厚度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "严重覆冰地段",
+      "target": "概率极小重冰",
+      "type": "包含"
+    },
+    {
+      "source": "严重覆冰地段",
+      "target": "稀有覆冰厚度",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1075,
+      "source_row_id": "1075",
+      "clause_index": 2,
+      "source_text": "严重覆冰地段（大于10mm）如调查中出现概率极小重冰，宜按稀有的覆冰厚度进行验算"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.8082,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.960949+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

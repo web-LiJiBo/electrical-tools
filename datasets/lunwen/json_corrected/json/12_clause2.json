@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "直线杆塔",
+      "type": "电力设备",
+      "desc": "架空输电线路中用于支撑导线的杆塔"
+    },
+    {
+      "name": "绝缘子串",
+      "type": "电力设备",
+      "desc": "悬挂在直线杆塔上，用于绝缘导线与杆塔的电气设备"
+    },
+    {
+      "name": "绝缘横担",
+      "type": "电力设备",
+      "desc": "悬挂在直线杆塔上，用于支撑绝缘子串的横担"
+    },
+    {
+      "name": "偏斜角",
+      "type": "技术参数",
+      "desc": "绝缘子串在顺线路方向上的倾斜角度"
+    },
+    {
+      "name": "偏移值",
+      "type": "技术参数",
+      "desc": "绝缘子串在顺线路方向上的位移距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直线杆塔绝缘子串顺线路方向偏斜角（除设计要求的预偏外）不应大于7.5°",
+      "type": "强制",
+      "subject": "直线杆塔绝缘子串",
+      "action": "安装、检修",
+      "condition": "直线杆塔绝缘子串顺线路方向安装",
+      "constraint": "偏斜角≤7.5°",
+      "related_entities": [
+        "直线杆塔",
+        "绝缘子串"
+      ]
+    },
+    {
+      "content": "直线杆塔绝缘子串顺线路方向偏移值不应大于300mm",
+      "type": "强制",
+      "subject": "直线杆塔绝缘子串",
+      "action": "安装、检修",
+      "condition": "直线杆塔绝缘子串顺线路方向安装",
+      "constraint": "偏移值≤300mm",
+      "related_entities": [
+        "直线杆塔",
+        "绝缘子串"
+      ]
+    },
+    {
+      "content": "绝缘横担端部偏移不应大于100mm",
+      "type": "强制",
+      "subject": "绝缘横担",
+      "action": "安装、检修",
+      "condition": "绝缘横担安装",
+      "constraint": "偏移值≤100mm",
+      "related_entities": [
+        "绝缘横担",
+        "绝缘子串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直线杆塔",
+      "target": "绝缘子串",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "绝缘横担",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "偏斜角",
+      "type": "参数"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "偏移值",
+      "type": "参数"
+    },
+    {
+      "source": "绝缘横担",
+      "target": "偏移值",
+      "type": "参数"
+    }
+  ],
+  "metadata": {
+    "pair_id": 12,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bd8067a298fd2f11",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\12_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

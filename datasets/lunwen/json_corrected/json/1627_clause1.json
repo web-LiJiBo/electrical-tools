@@ -1,0 +1,53 @@
+{
+  "entities": [
+    {
+      "name": "海拔高度",
+      "type": "环境参数",
+      "desc": "设备安装地点的海拔高度"
+    },
+    {
+      "name": "1000米",
+      "type": "高度值",
+      "desc": "设备安装地点的最大海拔高度限制"
+    }
+  ],
+  "rules": [
+    {
+      "content": "海拔高度不超过1000米",
+      "type": "强制",
+      "subject": "设备安装地点",
+      "action": "安装设备",
+      "condition": "海拔高度",
+      "constraint": "≤1000米",
+      "related_entities": [
+        "海拔高度",
+        "1000米"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设备安装地点",
+      "target": "海拔高度",
+      "type": "安装条件"
+    },
+    {
+      "source": "设备安装地点",
+      "target": "1000米",
+      "type": "安装限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1627,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "69651b02f55d6f0e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1627_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

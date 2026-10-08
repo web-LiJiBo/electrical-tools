@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "串联电抗器",
+      "type": "电力设备",
+      "desc": "用于电力系统中限制短路电流的电感元件"
+    },
+    {
+      "name": "干式电抗器",
+      "type": "电力设备",
+      "desc": "不使用油作为绝缘介质的电抗器"
+    },
+    {
+      "name": "户内",
+      "type": "环境",
+      "desc": "电力设备安装于室内的环境"
+    },
+    {
+      "name": "干式铁心电抗器",
+      "type": "电力设备",
+      "desc": "具有铁心结构且不使用油作为绝缘介质的电抗器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "串联电抗器一般采用干式电抗器",
+      "type": "强制",
+      "subject": "串联电抗器",
+      "action": "采用",
+      "condition": "无特殊要求",
+      "constraint": "一般采用",
+      "related_entities": [
+        "串联电抗器",
+        "干式电抗器"
+      ]
+    },
+    {
+      "content": "安装在户内的串联电抗器宜采用干式铁心电抗器",
+      "type": "强制",
+      "subject": "户内串联电抗器",
+      "action": "采用",
+      "condition": "安装在户内",
+      "constraint": "宜采用",
+      "related_entities": [
+        "户内",
+        "串联电抗器",
+        "干式铁心电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "串联电抗器",
+      "target": "干式电抗器",
+      "type": "采用"
+    },
+    {
+      "source": "户内",
+      "target": "串联电抗器",
+      "type": "安装环境"
+    },
+    {
+      "source": "户内串联电抗器",
+      "target": "干式铁心电抗器",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1514,
+      "source_row_id": "1514",
+      "clause_index": 1,
+      "source_text": "串联电抗器一般采用干式电抗器，安装在户内的串联电抗器宜采用干式铁心电抗器"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.464958+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

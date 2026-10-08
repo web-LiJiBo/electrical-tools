@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "界面张力",
+      "type": "物理量",
+      "desc": "油品表面张力"
+    },
+    {
+      "name": "油",
+      "type": "介质",
+      "desc": "电力设备用油"
+    },
+    {
+      "name": "温度",
+      "type": "物理量",
+      "desc": "测试温度"
+    },
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "新设备投运前的试验"
+    },
+    {
+      "name": "预防性试验",
+      "type": "试验",
+      "desc": "运行设备定期试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "界面张力（25℃）/（mN/m）质量指标: 1）投入运行前油：≥35；2）运行油：≥25。",
+      "type": "强制",
+      "subject": "油",
+      "action": "检测界面张力",
+      "condition": "油品在25℃条件下",
+      "constraint": "≥35 mN/m (投入运行前油)，≥25 mN/m (运行油)",
+      "related_entities": [
+        "界面张力",
+        "油"
+      ]
+    },
+    {
+      "content": "DL/T1798-2018《换流变压器交接及预防性试验规程》表1规定：界面张力交接时≥35，运行中≥19。",
+      "type": "强制",
+      "subject": "油",
+      "action": "检测界面张力",
+      "condition": "油品在25℃条件下",
+      "constraint": "≥35 mN/m (交接试验)，≥19 mN/m (预防性试验)",
+      "related_entities": [
+        "界面张力",
+        "油"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "界面张力",
+      "target": "油",
+      "type": "属性"
+    },
+    {
+      "source": "交接试验",
+      "target": "界面张力",
+      "type": "属性"
+    },
+    {
+      "source": "预防性试验",
+      "target": "界面张力",
+      "type": "属性"
+    },
+    {
+      "source": "油",
+      "target": "温度",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3013,
+      "source_row_id": "3022",
+      "clause_index": 1,
+      "source_text": "界面张力（25℃）/（mN/m）质量指标:\n1）投入运行前油：≥35；\n2）运行油：≥25。\nDL/T1798-2018《换流变压器交接及预防性试验规程》表1规定：界面张力交接时≥35，运行中≥19。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.925,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.275316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

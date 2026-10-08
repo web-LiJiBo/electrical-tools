@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "铝绞线",
+      "type": "导地线",
+      "desc": "一种由多股铝线绞合而成的导线"
+    },
+    {
+      "name": "铝合金绞线",
+      "type": "导地线",
+      "desc": "一种由多股铝合金线绞合而成的导线"
+    },
+    {
+      "name": "断股损伤",
+      "type": "缺陷",
+      "desc": "导地线在运行过程中出现的断股现象"
+    },
+    {
+      "name": "减少截面",
+      "type": "处理措施",
+      "desc": "对导地线断股损伤进行处理以减小其截面积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铝绞线与铝合金绞线：断股损伤截面占总面积7%～25%",
+      "type": "强制",
+      "subject": "铝绞线与铝合金绞线",
+      "action": "断股损伤截面处理",
+      "condition": "导地线运行中出现断股损伤",
+      "constraint": "断股损伤截面占总面积7%～25%",
+      "related_entities": [
+        "铝绞线",
+        "铝合金绞线",
+        "断股损伤",
+        "减少截面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铝绞线",
+      "target": "断股损伤",
+      "type": "发生于"
+    },
+    {
+      "source": "铝合金绞线",
+      "target": "断股损伤",
+      "type": "发生于"
+    },
+    {
+      "source": "断股损伤",
+      "target": "减少截面",
+      "type": "处理方式"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 653,
+      "source_row_id": "653",
+      "clause_index": 1,
+      "source_text": "导地线断股损伤减少截面的处理中：铝绞线与铝合金绞线：断股损伤截面占总面积7%～25%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.475482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

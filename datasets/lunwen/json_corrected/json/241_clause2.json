@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "构筑物",
+      "type": "电力设施",
+      "desc": "供敷设电缆用的建筑物或构筑物"
+    },
+    {
+      "name": "管线",
+      "type": "电力设施",
+      "desc": "供敷设电缆用的地下管道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "供敷设电缆用的构筑物或直埋敷设的电缆不应平行敷设于其他管线的正上方或正下方",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "在构筑物内或直埋敷设时",
+      "constraint": "不应平行敷设于其他管线的正上方或正下方",
+      "related_entities": [
+        "构筑物",
+        "管线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "构筑物",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆",
+      "target": "管线",
+      "type": "不应平行敷设于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 241,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e2421ef2144d5e0e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\241_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

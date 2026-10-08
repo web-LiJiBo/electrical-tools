@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "线路",
+      "type": "电力设施",
+      "desc": "架设在空中的输电导线及其支撑结构"
+    },
+    {
+      "name": "保护区内",
+      "type": "电力保护区",
+      "desc": "为保障电力设施安全运行划定的区域"
+    },
+    {
+      "name": "房屋",
+      "type": "建筑物",
+      "desc": "供人居住或使用的建筑"
+    },
+    {
+      "name": "运行单位",
+      "type": "电力企业",
+      "desc": "负责电力设施运行维护的单位"
+    },
+    {
+      "name": "违章建筑",
+      "type": "违规建筑",
+      "desc": "未按规划许可建设的建筑"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路保护区内不能新建房屋",
+      "type": "强制",
+      "subject": "运行单位",
+      "action": "禁止新建房屋",
+      "condition": "在保护区内",
+      "constraint": "不得新建房屋",
+      "related_entities": [
+        "线路",
+        "保护区内",
+        "房屋"
+      ]
+    },
+    {
+      "content": "运行单位应对违章建筑及时制止并下发违章通知书",
+      "type": "强制",
+      "subject": "运行单位",
+      "action": "制止违章建筑并下发违章通知书",
+      "condition": "发现违章建筑",
+      "constraint": "及时制止并下发违章通知书",
+      "related_entities": [
+        "运行单位",
+        "违章建筑",
+        "房屋"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路",
+      "target": "保护区内",
+      "type": "位于"
+    },
+    {
+      "source": "保护区内",
+      "target": "房屋",
+      "type": "禁止新建"
+    },
+    {
+      "source": "运行单位",
+      "target": "违章建筑",
+      "type": "发现并制止"
+    },
+    {
+      "source": "运行单位",
+      "target": "房屋",
+      "type": "下发违章通知书"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3078,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "585f786eba68a2af",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3078_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

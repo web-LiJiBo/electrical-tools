@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "排管路径",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的排管路径"
+    },
+    {
+      "name": "工井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中设置的检查井"
+    },
+    {
+      "name": "直线段",
+      "type": "电力设施",
+      "desc": "排管路径中无转弯或折角的部分"
+    },
+    {
+      "name": "转弯和折角处",
+      "type": "电力设施",
+      "desc": "排管路径中的转弯或折角位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "选择排管路径时，尽可能取直线，在转弯和折角处，应增设工井。",
+      "type": "强制",
+      "subject": "排管路径设计者",
+      "action": "选择排管路径",
+      "condition": "排管路径设计阶段",
+      "constraint": "在转弯和折角处增设工井",
+      "related_entities": [
+        "排管路径",
+        "工井"
+      ]
+    },
+    {
+      "content": "在直线部分，两工井之间的距离不宜大于150m",
+      "type": "强制",
+      "subject": "排管路径设计者",
+      "action": "确定工井间距",
+      "condition": "排管路径设计阶段",
+      "constraint": "两工井间距≤150m",
+      "related_entities": [
+        "排管路径",
+        "工井"
+      ]
+    },
+    {
+      "content": "排管在工井处的管口应封堵",
+      "type": "强制",
+      "subject": "排管施工人员",
+      "action": "封堵管口",
+      "condition": "排管敷设完成后",
+      "constraint": "管口封堵",
+      "related_entities": [
+        "排管路径",
+        "工井"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "排管路径",
+      "target": "工井",
+      "type": "包含"
+    },
+    {
+      "source": "直线段",
+      "target": "排管路径",
+      "type": "组成"
+    },
+    {
+      "source": "转弯和折角处",
+      "target": "排管路径",
+      "type": "组成"
+    },
+    {
+      "source": "工井",
+      "target": "转弯和折角处",
+      "type": "位于"
+    },
+    {
+      "source": "工井",
+      "target": "直线段",
+      "type": "位于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1951,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "72d93cc0dcc73808",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1951_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

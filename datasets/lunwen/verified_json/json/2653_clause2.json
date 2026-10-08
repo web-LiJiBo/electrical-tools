@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "直流控制保护系统",
+      "type": "电力系统设备",
+      "desc": "直流输电系统的控制保护装置"
+    },
+    {
+      "name": "合并单元",
+      "type": "电力系统设备",
+      "desc": "实现模拟量采集与数字信号转换的装置"
+    },
+    {
+      "name": "电子式测量设备",
+      "type": "电力系统设备",
+      "desc": "采用电子技术进行数据采集与处理的设备"
+    },
+    {
+      "name": "IEC60044-8总线",
+      "type": "通信协议",
+      "desc": "一种用于电力系统数字化采样的通信协议"
+    },
+    {
+      "name": "TDM总线",
+      "type": "通信协议",
+      "desc": "时分复用总线，用于同步传输数据"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流控制保护系统与合并单元的接口方式应采用光纤方式",
+      "type": "强制",
+      "subject": "直流控制保护系统",
+      "action": "与合并单元接口",
+      "condition": "直流控制保护系统与合并单元之间数据传输",
+      "constraint": "光纤方式",
+      "related_entities": [
+        "直流控制保护系统",
+        "合并单元"
+      ]
+    },
+    {
+      "content": "直流控制保护系统与合并单元的通信协议应采用IEC60044-8总线或TDM总线",
+      "type": "强制",
+      "subject": "直流控制保护系统",
+      "action": "与合并单元通信",
+      "condition": "直流控制保护系统与合并单元之间数据传输",
+      "constraint": "IEC60044-8总线或TDM总线",
+      "related_entities": [
+        "直流控制保护系统",
+        "合并单元"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流控制保护系统",
+      "target": "合并单元",
+      "type": "接口"
+    },
+    {
+      "source": "直流控制保护系统",
+      "target": "电子式测量设备",
+      "type": "间接接口"
+    },
+    {
+      "source": "合并单元",
+      "target": "电子式测量设备",
+      "type": "直接接口"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2644,
+      "source_row_id": "2653",
+      "clause_index": 2,
+      "source_text": "与电子式测量设备接口直流控制保护系统通过合并单元与一次电子式测量设备接口。直流控制保护系统与合并单元的接口方式应采用光纤方式，通信协议应采用IEC60044-8总线、TDM总线等标准协议。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8026,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.810315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

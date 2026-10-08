@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "柜体",
+      "type": "电力设备",
+      "desc": "电力系统中用于安装电气元件的封闭式装置"
+    },
+    {
+      "name": "敷铝锌钢板",
+      "type": "材料",
+      "desc": "一种表面镀有铝锌合金的钢板，具有良好的耐腐蚀性能"
+    },
+    {
+      "name": "冷轧钢板",
+      "type": "材料",
+      "desc": "通过冷轧工艺生产的钢板，具有较高的强度和韧性"
+    },
+    {
+      "name": "防锈处理",
+      "type": "工艺",
+      "desc": "防止金属生锈的表面处理工艺"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柜体应采用敷铝锌钢板弯折后拴接而成或采用优质防锈处理的冷轧钢板制成，板厚不应小于2mm",
+      "type": "强制",
+      "subject": "柜体制造厂家",
+      "action": "制造柜体",
+      "condition": "电力系统户外环境",
+      "constraint": "柜体板厚≥2mm",
+      "related_entities": [
+        "柜体",
+        "敷铝锌钢板",
+        "冷轧钢板"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柜体",
+      "target": "敷铝锌钢板",
+      "type": "使用"
+    },
+    {
+      "source": "柜体",
+      "target": "冷轧钢板",
+      "type": "使用"
+    },
+    {
+      "source": "柜体",
+      "target": "防锈处理",
+      "type": "工艺"
+    }
+  ],
+  "metadata": {
+    "pair_id": 432,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3cde1c9039c6c7f4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\432_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

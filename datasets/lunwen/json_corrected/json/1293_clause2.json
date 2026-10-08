@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于接通或断开电路的电气装置"
+    },
+    {
+      "name": "控制设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制电路状态的电气装置"
+    },
+    {
+      "name": "额定电流(Ir)",
+      "type": "电气参数",
+      "desc": "设备正常工作时允许通过的最大电流值"
+    },
+    {
+      "name": "试验",
+      "type": "测试",
+      "desc": "对电力设备进行的功能性验证过程"
+    },
+    {
+      "name": "电源电流",
+      "type": "电气参数",
+      "desc": "供电系统向电力设备提供的电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应该在开关设备和控制设备的额定电流（Ir）下进行试验",
+      "type": "强制",
+      "subject": "电力设备试验人员",
+      "action": "进行电力设备试验",
+      "condition": "电力设备安装调试完成后",
+      "constraint": "试验应在额定电流（Ir）下进行",
+      "related_entities": [
+        "开关设备",
+        "控制设备",
+        "额定电流(Ir)",
+        "试验"
+      ]
+    },
+    {
+      "content": "电源电流应该几乎是正弦的",
+      "type": "强制",
+      "subject": "电力设备试验人员",
+      "action": "确保试验电源电流特性",
+      "condition": "进行电力设备试验时",
+      "constraint": "电源电流应接近正弦波形",
+      "related_entities": [
+        "电源电流",
+        "试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关设备",
+      "target": "试验",
+      "type": "进行"
+    },
+    {
+      "source": "控制设备",
+      "target": "试验",
+      "type": "进行"
+    },
+    {
+      "source": "额定电流(Ir)",
+      "target": "试验",
+      "type": "依据"
+    },
+    {
+      "source": "电源电流",
+      "target": "试验",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1293,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b388abfe7da2c601",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1293_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

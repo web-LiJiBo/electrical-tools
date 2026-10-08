@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "机械强度试验",
+      "type": "试验项目",
+      "desc": "对互感器进行机械强度测试"
+    },
+    {
+      "name": "传递过电压测量",
+      "type": "试验项目",
+      "desc": "测量互感器在传递过电压情况下的性能"
+    },
+    {
+      "name": "户内式互感器",
+      "type": "设备类型",
+      "desc": "安装在室内的互感器"
+    },
+    {
+      "name": "凝露试验",
+      "type": "试验项目",
+      "desc": "模拟互感器在潮湿环境中的运行状态"
+    },
+    {
+      "name": "污秽试验",
+      "type": "试验项目",
+      "desc": "模拟互感器在污染环境中的运行状态"
+    },
+    {
+      "name": "耐震试验",
+      "type": "试验项目",
+      "desc": "测试互感器在震动环境下的稳定性"
+    },
+    {
+      "name": "Um",
+      "type": "电气参数",
+      "desc": "最大工作电压, 单位kV"
+    }
+  ],
+  "rules": [
+    {
+      "content": "户内式互感器的凝露试验适用于7.2kV≤Um≤40.5kV",
+      "type": "强制",
+      "subject": "户内式互感器",
+      "action": "进行凝露试验",
+      "condition": "7.2kV≤Um≤40.5kV",
+      "constraint": "试验应在模拟潮湿环境下进行",
+      "related_entities": [
+        "户内式互感器",
+        "凝露试验"
+      ]
+    },
+    {
+      "content": "户内式互感器的污秽试验适用于7.2kV≤Um≤40.5kV",
+      "type": "强制",
+      "subject": "户内式互感器",
+      "action": "进行污秽试验",
+      "condition": "7.2kV≤Um≤40.5kV",
+      "constraint": "试验应在模拟污染环境下进行",
+      "related_entities": [
+        "户内式互感器",
+        "污秽试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户内式互感器",
+      "target": "机械强度试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "户内式互感器",
+      "target": "传递过电压测量",
+      "type": "需要进行"
+    },
+    {
+      "source": "户内式互感器",
+      "target": "耐震试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "户内式互感器",
+      "target": "凝露试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "户内式互感器",
+      "target": "污秽试验",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3336,
+      "source_row_id": "3345",
+      "clause_index": 2,
+      "source_text": "特殊试验项目包括：机械强度试验、传递过电压测量、户内式互感器的凝露试验（电压范围7.2kV≤Um≤40.5kV）、户内式互感器的污秽试验（电压范围7.2kV≤Um≤40.5kV）、耐震试验。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.58,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.672362+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "绝缘厚度",
+      "type": "技术参数",
+      "desc": "绝缘材料的厚度"
+    },
+    {
+      "name": "标称厚度",
+      "type": "技术参数",
+      "desc": "设计或规定使用的绝缘材料厚度"
+    },
+    {
+      "name": "最小测量厚度",
+      "type": "技术参数",
+      "desc": "实际测量得到的最小绝缘厚度"
+    },
+    {
+      "name": "绝缘偏心度",
+      "type": "技术参数",
+      "desc": "绝缘层在圆周方向上的最大偏差率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘厚度最小测量值应不低于标称厚度的90%",
+      "type": "强制",
+      "subject": "绝缘材料",
+      "action": "测量",
+      "condition": "所有绝缘材料",
+      "constraint": "tmin≥0.90tn",
+      "related_entities": [
+        "绝缘厚度",
+        "标称厚度"
+      ]
+    },
+    {
+      "content": "绝缘偏心度应不超过8%",
+      "type": "强制",
+      "subject": "绝缘材料",
+      "action": "检测",
+      "condition": "所有绝缘材料",
+      "constraint": "≤8%",
+      "related_entities": [
+        "绝缘偏心度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘厚度",
+      "target": "标称厚度",
+      "type": "依据"
+    },
+    {
+      "source": "最小测量厚度",
+      "target": "绝缘厚度",
+      "type": "测量结果"
+    },
+    {
+      "source": "绝缘偏心度",
+      "target": "绝缘厚度",
+      "type": "特性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1839,
+      "source_row_id": "1839",
+      "clause_index": 2,
+      "source_text": "绝缘要求，最小测量厚度应不小于标称厚度的90%：tmin≥0.90tn绝缘偏心度应不大于8%"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.6313,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.825968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

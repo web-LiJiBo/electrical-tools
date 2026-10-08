@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "直流分压器",
+      "type": "电力设备",
+      "desc": "一种用于测量直流电压的电力设备"
+    },
+    {
+      "name": "外观检查",
+      "type": "巡检项目",
+      "desc": "对电力设备进行目视检查的项目"
+    },
+    {
+      "name": "巡检",
+      "type": "运维活动",
+      "desc": "对电力设备进行定期检查的活动"
+    },
+    {
+      "name": "例行试验",
+      "type": "检测活动",
+      "desc": "对电力设备进行定期检测的活动"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流分压器外观检查基准周期为2周",
+      "type": "强制",
+      "subject": "直流分压器",
+      "action": "外观检查",
+      "condition": "直流分压器投运后",
+      "constraint": "每2周一次",
+      "related_entities": [
+        "直流分压器",
+        "外观检查"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流分压器",
+      "target": "外观检查",
+      "type": "包含"
+    },
+    {
+      "source": "巡检",
+      "target": "外观检查",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "外观检查",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 606,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d9e452093e37ee88",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\606_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

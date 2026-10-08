@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "保护间隙",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中过电压保护的装置"
+    },
+    {
+      "name": "设定值",
+      "type": "技术参数",
+      "desc": "保护间隙在正常运行时的最大允许距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "保护间隙设定值为1.3m",
+      "type": "强制",
+      "subject": "保护间隙",
+      "action": "设定",
+      "condition": "新建或改造电力系统",
+      "constraint": "设定值为1.3m",
+      "related_entities": [
+        "保护间隙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "保护间隙",
+      "target": "设定值",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2011,
+      "source_row_id": "2011",
+      "clause_index": 2,
+      "source_text": "保护间隙设定值为1.3m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.024970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

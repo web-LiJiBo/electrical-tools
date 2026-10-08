@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "220kV变压器",
+      "type": "电力设备",
+      "desc": "220kV电压等级的变压器"
+    },
+    {
+      "name": "330kV变压器",
+      "type": "电力设备",
+      "desc": "330kV电压等级的变压器"
+    },
+    {
+      "name": "500kV变压器",
+      "type": "电力设备",
+      "desc": "500kV电压等级的变压器"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录运输过程中变压器受力情况的仪器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "220kV、330kV、500kV变压器在运输中应装三维冲撞记录仪",
+      "type": "强制",
+      "subject": "220kV、330kV、500kV变压器",
+      "action": "运输时安装三维冲撞记录仪",
+      "condition": "变压器运输过程",
+      "constraint": "必须安装三维冲撞记录仪",
+      "related_entities": [
+        "220kV变压器",
+        "330kV变压器",
+        "500kV变压器",
+        "三维冲撞记录仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "220kV变压器",
+      "target": "三维冲撞记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "330kV变压器",
+      "target": "三维冲撞记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "500kV变压器",
+      "target": "三维冲撞记录仪",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2685,
+      "source_row_id": "2694",
+      "clause_index": 2,
+      "source_text": "220kV、330kV、500kV变压器在运输中应装三维冲撞记录仪。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9688,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.862315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

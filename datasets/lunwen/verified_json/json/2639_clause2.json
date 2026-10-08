@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "地震烈度",
+      "type": "自然灾害强度",
+      "desc": "地震发生时地面受到的影响程度"
+    },
+    {
+      "name": "7度及以下地区",
+      "type": "地理区域",
+      "desc": "地震烈度在7度及以下的地区范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "正常运行条件g）地震烈度7度及以下地区。",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "设计与建设",
+      "condition": "电力系统在地震烈度7度及以下地区的正常运行",
+      "constraint": "地震烈度7度及以下地区",
+      "related_entities": [
+        "地震烈度",
+        "7度及以下地区"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地震烈度",
+      "target": "7度及以下地区",
+      "type": "属于"
+    },
+    {
+      "source": "电力系统",
+      "target": "地震烈度",
+      "type": "受制于"
+    },
+    {
+      "source": "电力系统",
+      "target": "7度及以下地区",
+      "type": "运行于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2630,
+      "source_row_id": "2639",
+      "clause_index": 2,
+      "source_text": "正常运行条件g）地震烈度7度及以下地区。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.796315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

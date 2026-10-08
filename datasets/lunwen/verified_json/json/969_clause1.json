@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "伸缩节",
+      "type": "电力设备",
+      "desc": "用于吸收基础间相对位移或热胀冷缩的电力设备"
+    },
+    {
+      "name": "制造厂",
+      "type": "组织机构",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "用户",
+      "type": "组织机构",
+      "desc": "电力设备的使用者"
+    },
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘开关设备"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "变换电压等级的电力设备"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "限制短路电流的电力设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制造厂应根据使用的目的、允许的位移量等来选定伸缩节的结构。",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "选定伸缩节结构",
+      "condition": "使用目的、允许的位移量",
+      "constraint": "伸缩节结构",
+      "related_entities": [
+        "伸缩节",
+        "制造厂"
+      ]
+    },
+    {
+      "content": "GIS分开的基础间允许的相对位移(不均匀下沉)应由制造厂和用户商定。",
+      "type": "强制",
+      "subject": "制造厂和用户",
+      "action": "商定允许的相对位移",
+      "condition": "GIS分开的基础间",
+      "constraint": "允许的相对位移(不均匀下沉)",
+      "related_entities": [
+        "GIS",
+        "制造厂",
+        "用户"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "伸缩节",
+      "target": "制造厂",
+      "type": "设计制造"
+    },
+    {
+      "source": "伸缩节",
+      "target": "GIS",
+      "type": "配套安装"
+    },
+    {
+      "source": "伸缩节",
+      "target": "变压器",
+      "type": "配套安装"
+    },
+    {
+      "source": "伸缩节",
+      "target": "电抗器",
+      "type": "配套安装"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 969,
+      "source_row_id": "969",
+      "clause_index": 1,
+      "source_text": "缩节主要用于装配调整，吸收基础间的相对位移或热胀冷缩的伸缩量等。制造厂应根据使用的目的、允许的位移量等来选定伸缩节的结构。在GIS分开的基础间允许的相对位移(不均匀下沉)应由制造厂和用户商定。GIS与变压器(电抗器)等的连接处应设置伸缩节"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.840950+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

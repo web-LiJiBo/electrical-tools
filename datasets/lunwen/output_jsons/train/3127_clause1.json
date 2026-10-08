@@ -1,0 +1,35 @@
+{
+  "entities": [
+    {
+      "name": "设备",
+      "type": "电力设备",
+      "desc": "电力系统中使用的各种电气设备"
+    },
+    {
+      "name": "使用期限",
+      "type": "时间",
+      "desc": "设备从投入使用到报废的时间周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般情况下，设备使用期限不低于15年",
+      "type": "强制",
+      "subject": "设备",
+      "action": "使用期限",
+      "condition": "一般情况下",
+      "constraint": "使用期限≥15年",
+      "related_entities": [
+        "设备",
+        "使用期限"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设备",
+      "target": "使用期限",
+      "type": "包含"
+    }
+  ]
+}

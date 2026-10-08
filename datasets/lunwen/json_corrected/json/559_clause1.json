@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "保护管",
+      "type": "电力设施",
+      "desc": "电力电缆或光缆穿过的保护管道"
+    },
+    {
+      "name": "工井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设中用于电缆接头安装、检修等操作的地下构筑物"
+    },
+    {
+      "name": "底板",
+      "type": "电力设施",
+      "desc": "工井底部的混凝土结构层"
+    },
+    {
+      "name": "集水坑",
+      "type": "电力设施",
+      "desc": "工井底板上设置的用于汇集并排出积水的凹槽"
+    },
+    {
+      "name": "拉环坑",
+      "type": "电力设施",
+      "desc": "工井底板上预留的用于固定电缆拉环的凹槽"
+    },
+    {
+      "name": "泄水坡度",
+      "type": "技术参数",
+      "desc": "集水坑底部向集水坑中心方向的倾斜角度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每座工井的底板应设有集水坑，拉环坑，向集水坑泄水坡度不应小于0.5%",
+      "type": "强制",
+      "subject": "工井",
+      "action": "施工",
+      "condition": "工井建设",
+      "constraint": "泄水坡度≥0.5%",
+      "related_entities": [
+        "保护管",
+        "工井",
+        "底板",
+        "集水坑",
+        "拉环坑"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "保护管",
+      "target": "工井",
+      "type": "敷设于"
+    },
+    {
+      "source": "工井",
+      "target": "底板",
+      "type": "包含"
+    },
+    {
+      "source": "底板",
+      "target": "集水坑",
+      "type": "包含"
+    },
+    {
+      "source": "底板",
+      "target": "拉环坑",
+      "type": "包含"
+    },
+    {
+      "source": "集水坑",
+      "target": "泄水坡度",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 559,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9ea788e911f87dbc",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\559_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

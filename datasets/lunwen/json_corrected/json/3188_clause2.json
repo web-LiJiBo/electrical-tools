@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "电气设备的绝缘性能指标"
+    },
+    {
+      "name": "运行状态",
+      "type": "设备状态",
+      "desc": "设备在运行中的工作状态"
+    },
+    {
+      "name": "检修状态",
+      "type": "设备状态",
+      "desc": "设备在检修过程中的工作状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行中≥25，检修后≥35",
+      "type": "强制",
+      "subject": "绝缘电阻",
+      "action": "测量",
+      "condition": "电气设备在运行或检修后",
+      "constraint": "运行中≥25MΩ，检修后≥35MΩ",
+      "related_entities": [
+        "绝缘电阻",
+        "运行状态",
+        "检修状态"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘电阻",
+      "target": "运行状态",
+      "type": "测量于"
+    },
+    {
+      "source": "绝缘电阻",
+      "target": "检修状态",
+      "type": "测量于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3188,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "850be9c70ea703f4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3188_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

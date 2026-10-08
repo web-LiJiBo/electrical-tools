@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "最大日温差",
+      "type": "气象参数",
+      "desc": "一天中最高温度与最低温度之差"
+    },
+    {
+      "name": "32K",
+      "type": "数值约束",
+      "desc": "最大日温差的上限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "最大日温差不应超过32K",
+      "type": "强制",
+      "subject": "电力系统设计与运行",
+      "action": "控制最大日温差不超过32K",
+      "condition": "在电力系统设计与运行过程中",
+      "constraint": "最大日温差≤32K",
+      "related_entities": [
+        "最大日温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最大日温差",
+      "target": "32K",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2131,
+      "source_row_id": "2131",
+      "clause_index": 1,
+      "source_text": "最大日温差：32K"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5625,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.175545+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

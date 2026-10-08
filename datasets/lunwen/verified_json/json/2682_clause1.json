@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "复合支柱绝缘子",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中的绝缘支撑装置"
+    },
+    {
+      "name": "外观检查",
+      "type": "检测方法",
+      "desc": "对电力设备进行目视检查的方法"
+    },
+    {
+      "name": "金属附件",
+      "type": "电力设备部件",
+      "desc": "复合支柱绝缘子两端部的金属连接件"
+    },
+    {
+      "name": "绝缘件",
+      "type": "电力设备部件",
+      "desc": "复合支柱绝缘子的绝缘部分"
+    },
+    {
+      "name": "缺陷",
+      "type": "电力设备缺陷",
+      "desc": "复合支柱绝缘子表面存在的异常情况"
+    },
+    {
+      "name": "缺胶",
+      "type": "缺陷类型",
+      "desc": "绝缘材料中存在未填充完全的情况"
+    },
+    {
+      "name": "杂质",
+      "type": "缺陷类型",
+      "desc": "绝缘材料中混入的非预期物质"
+    },
+    {
+      "name": "突起",
+      "type": "缺陷类型",
+      "desc": "绝缘材料表面的凸起物"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对每支出厂的复合支柱绝缘子，均应进行外观检查",
+      "type": "强制",
+      "subject": "复合支柱绝缘子",
+      "action": "出厂前进行外观检查",
+      "condition": "所有出厂的复合支柱绝缘子",
+      "constraint": "必须进行外观检查",
+      "related_entities": [
+        "复合支柱绝缘子",
+        "外观检查"
+      ]
+    },
+    {
+      "content": "绝缘件两端部金属附件的安装应符合产品图样要求",
+      "type": "强制",
+      "subject": "复合支柱绝缘子",
+      "action": "安装金属附件",
+      "condition": "复合支柱绝缘子",
+      "constraint": "安装时应符合产品图样要求",
+      "related_entities": [
+        "复合支柱绝缘子",
+        "金属附件"
+      ]
+    },
+    {
+      "content": "绝缘子外套表面单个缺陷面积应不超过25mm2，深度应不大于1mm",
+      "type": "强制",
+      "subject": "复合支柱绝缘子",
+      "action": "控制缺陷尺寸",
+      "condition": "复合支柱绝缘子",
+      "constraint": "单个缺陷面积≤25mm2，深度≤1mm",
+      "related_entities": [
+        "复合支柱绝缘子",
+        "缺陷"
+      ]
+    },
+    {
+      "content": "突起表面及合模缝应清理平整，突起高度应不超过0.8mm",
+      "type": "强制",
+      "subject": "复合支柱绝缘子",
+      "action": "清理突起",
+      "condition": "复合支柱绝缘子",
+      "constraint": "突起高度≤0.8mm，清理平整",
+      "related_entities": [
+        "复合支柱绝缘子",
+        "突起"
+      ]
+    },
+    {
+      "content": "总缺陷面积应不超过绝缘子总面积的0.1%",
+      "type": "强制",
+      "subject": "复合支柱绝缘子",
+      "action": "控制总缺陷面积",
+      "condition": "复合支柱绝缘子",
+      "constraint": "总缺陷面积≤绝缘子总面积的0.1%",
+      "related_entities": [
+        "复合支柱绝缘子",
+        "缺陷"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "复合支柱绝缘子",
+      "target": "外观检查",
+      "type": "接受"
+    },
+    {
+      "source": "复合支柱绝缘子",
+      "target": "金属附件",
+      "type": "包含"
+    },
+    {
+      "source": "复合支柱绝缘子",
+      "target": "绝缘件",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘件",
+      "target": "缺陷",
+      "type": "包含"
+    },
+    {
+      "source": "缺陷",
+      "target": "突起",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2673,
+      "source_row_id": "2682",
+      "clause_index": 1,
+      "source_text": "对每支出厂的复合支柱绝缘子，均应进行外观检查，绝缘件两端部金属附件的安装应符合产品图样要求，绝缘子外套表面单个缺陷（如缺胶、杂质、突起等）面积应不超过25mm2，深度应不大于1mm，突起表面及合模缝应清理平整，突起高度应不超过0.8mm，总缺陷面积应不超过绝缘子总面积的0.1%"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.9468,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.845315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

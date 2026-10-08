@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "防水等级：适用范围一级：人员长期停留的场所；因有少量湿迹会使物品变质、失效的贮物场所及严重影响设备正常运转和危机工程安全运营的部位；极重要的战备工程、地铁车站；二级：人员经常活动的场所；在有少量湿迹的情况下不会使物品变质、失效的贮物场所及基本不影响设备正常运转和危机工程安全运营的部位；重要的战备工程；三级：人员临时活动的场所；一般战备工程；四级：对渗漏水严格要求的工程",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1924,
+      "source_row_id": "1924",
+      "clause_index": 2,
+      "source_text": "防水等级：适用范围一级：人员长期停留的场所；因有少量湿迹会使物品变质、失效的贮物场所及严重影响设备正常运转和危机工程安全运营的部位；极重要的战备工程、地铁车站；二级：人员经常活动的场所；在有少量湿迹的情况下不会使物品变质、失效的贮物场所及基本不影响设备正常运转和危机工程安全运营的部位；重要的战备工程；三级：人员临时活动的场所；一般战备工程；四级：对渗漏水严格要求的工程"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:00.922970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "电容器组",
+      "type": "电力设备",
+      "desc": "电力系统中用于补偿无功功率的设备"
+    },
+    {
+      "name": "回路导体截面",
+      "type": "电力参数",
+      "desc": "电力回路中导体的截面积"
+    },
+    {
+      "name": "汇流母线",
+      "type": "电力设备",
+      "desc": "连接多个电容器组的公共导体"
+    },
+    {
+      "name": "均压线",
+      "type": "电力设备",
+      "desc": "用于平衡电容器组间电压的导体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装置的总回路和分组回路，应按1.37倍电容器组额定电流选择回路导体截面",
+      "type": "强制",
+      "subject": "电容器组",
+      "action": "选择回路导体截面",
+      "condition": "电容器组额定电流",
+      "constraint": "1.37倍电容器组额定电流",
+      "related_entities": [
+        "电容器组",
+        "回路导体截面"
+      ]
+    },
+    {
+      "content": "电容器组的汇流母线和均压线截面应与分组回路的导体截面相同",
+      "type": "强制",
+      "subject": "电容器组",
+      "action": "选择汇流母线和均压线截面",
+      "condition": "分组回路的导体截面",
+      "constraint": "与分组回路的导体截面相同",
+      "related_entities": [
+        "电容器组",
+        "汇流母线",
+        "均压线",
+        "回路导体截面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容器组",
+      "target": "回路导体截面",
+      "type": "选择依据"
+    },
+    {
+      "source": "电容器组",
+      "target": "汇流母线",
+      "type": "组成部分"
+    },
+    {
+      "source": "电容器组",
+      "target": "均压线",
+      "type": "组成部分"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3117,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "16e706a618a223bd",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3117_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

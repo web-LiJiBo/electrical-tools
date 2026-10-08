@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "三相共箱式GIS",
+      "type": "设备",
+      "desc": "三相共箱式气体绝缘开关设备"
+    },
+    {
+      "name": "额定电流",
+      "type": "参数",
+      "desc": "设备正常运行时的最大允许电流值"
+    },
+    {
+      "name": "三相试验",
+      "type": "试验",
+      "desc": "对三相共箱式GIS进行的电气性能测试"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三相共箱式的GIS应进行三相试验，试验电流等于额定电流",
+      "type": "强制",
+      "subject": "三相共箱式GIS",
+      "action": "进行三相试验",
+      "condition": "在出厂或交接验收时",
+      "constraint": "试验电流=额定电流",
+      "related_entities": [
+        "三相共箱式GIS",
+        "额定电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三相共箱式GIS",
+      "target": "额定电流",
+      "type": "包含"
+    },
+    {
+      "source": "三相共箱式GIS",
+      "target": "三相试验",
+      "type": "执行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 325,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "29ecc341b157cd17",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\325_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

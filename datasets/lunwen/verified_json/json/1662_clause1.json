@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "电容器",
+      "type": "电力设备",
+      "desc": "一种储能元件"
+    },
+    {
+      "name": "温度类别",
+      "type": "技术参数",
+      "desc": "电容器工作环境温度分类"
+    },
+    {
+      "name": "温度范围",
+      "type": "技术参数",
+      "desc": "电容器允许的工作温度区间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电容器按温度类别分类，每一类别用一个数字后跟一个字母来表示。",
+      "type": "强制",
+      "subject": "电容器",
+      "action": "分类",
+      "condition": "电容器在不同温度环境下使用",
+      "constraint": "每一类别用一个数字后跟一个字母来表示",
+      "related_entities": [
+        "电容器",
+        "温度类别"
+      ]
+    },
+    {
+      "content": "温度类别覆盖的温度范围为：‐50℃～+55℃",
+      "type": "强制",
+      "subject": "电容器",
+      "action": "确定温度范围",
+      "condition": "电容器在不同温度环境下使用",
+      "constraint": "‐50℃～+55℃",
+      "related_entities": [
+        "电容器",
+        "温度范围"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容器",
+      "target": "温度类别",
+      "type": "分类依据"
+    },
+    {
+      "source": "电容器",
+      "target": "温度范围",
+      "type": "适用范围"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1662,
+      "source_row_id": "1662",
+      "clause_index": 1,
+      "source_text": "电容器按温度类别分类，每一类别用一个数字后跟一个字母来表示。……温度类别覆盖的温度范围为：‐50℃～+55℃"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.626157+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

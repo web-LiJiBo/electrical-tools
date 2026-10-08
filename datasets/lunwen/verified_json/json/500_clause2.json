@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "绝缘纸（板）",
+      "type": "电力材料",
+      "desc": "用于电力设备中的绝缘材料"
+    },
+    {
+      "name": "含水量",
+      "type": "物理参数",
+      "desc": "绝缘纸（板）中水分的质量占比"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘纸（板）含水量要求：含水量（质量分数）一般不大于1%",
+      "type": "强制",
+      "subject": "绝缘纸（板）",
+      "action": "控制含水量",
+      "condition": "应用于电力设备的绝缘纸（板）",
+      "constraint": "含水量≤1%",
+      "related_entities": [
+        "绝缘纸（板）",
+        "含水量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘纸（板）",
+      "target": "含水量",
+      "type": "属性-值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 500,
+      "source_row_id": "500",
+      "clause_index": 2,
+      "source_text": "绝缘纸（板）含水量要求：含水量（质量分数）一般不大于1%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.297485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

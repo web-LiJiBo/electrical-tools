@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "接地体",
+      "type": "电力设备",
+      "desc": "埋入地中并直接与大地接触的金属导体"
+    },
+    {
+      "name": "水平接地体",
+      "type": "电力设备",
+      "desc": "接地体的一种，沿地面水平敷设的接地体"
+    },
+    {
+      "name": "垂直接地体",
+      "type": "电力设备",
+      "desc": "接地体的一种，垂直埋入地中的接地体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地体分为水平接地体和垂直接地体",
+      "type": "强制",
+      "subject": "接地体",
+      "action": "分类",
+      "condition": "无",
+      "constraint": "无",
+      "related_entities": [
+        "接地体",
+        "水平接地体",
+        "垂直接地体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地体",
+      "target": "水平接地体",
+      "type": "包含"
+    },
+    {
+      "source": "接地体",
+      "target": "垂直接地体",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 928,
+      "source_row_id": "928",
+      "clause_index": 2,
+      "source_text": "埋入地中并直接与大地接触的金属导体，称为接地体（极）。接地体分为水平接地体和垂直接地体"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.792081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

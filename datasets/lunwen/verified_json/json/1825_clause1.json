@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "内部故障",
+      "type": "电力故障",
+      "desc": "电力系统内部发生的故障"
+    },
+    {
+      "name": "开关设备",
+      "type": "电力设备",
+      "desc": "用于接通或断开电路的电气设备"
+    },
+    {
+      "name": "IAC级金属封闭开关设备和控制设备",
+      "type": "电力设备",
+      "desc": "具有较高防护等级的金属封闭开关设备和控制设备"
+    },
+    {
+      "name": "危险",
+      "type": "电力安全",
+      "desc": "电力系统运行中可能对人员或设备造成危害的情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在产生的危险可以不计的场合：没有必要选择IAC级金属封闭开关设备和控制设备",
+      "type": "强制",
+      "subject": "开关设备选择",
+      "action": "选择开关设备",
+      "condition": "内部故障，产生的危险可以不计",
+      "constraint": "不需要选择IAC级金属封闭开关设备和控制设备",
+      "related_entities": [
+        "内部故障",
+        "开关设备",
+        "IAC级金属封闭开关设备和控制设备"
+      ]
+    },
+    {
+      "content": "在需要考虑产生的危险时：只能使用IAC级金属封闭开关设备和控制设备",
+      "type": "强制",
+      "subject": "开关设备选择",
+      "action": "选择开关设备",
+      "condition": "内部故障，需要考虑产生的危险",
+      "constraint": "必须选择IAC级金属封闭开关设备和控制设备",
+      "related_entities": [
+        "内部故障",
+        "开关设备",
+        "IAC级金属封闭开关设备和控制设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内部故障",
+      "target": "开关设备选择",
+      "type": "影响"
+    },
+    {
+      "source": "危险",
+      "target": "开关设备选择",
+      "type": "影响"
+    },
+    {
+      "source": "IAC级金属封闭开关设备和控制设备",
+      "target": "开关设备选择",
+      "type": "选择依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1825,
+      "source_row_id": "1825",
+      "clause_index": 1,
+      "source_text": "在内部故障方面，如何选择开关设备，可以采用下述判据：在产生的危险可以不计的场合：没有必要选择IAC级金属封闭开关设备和控制设备；在需要考虑产生的危险时：只能使用IAC级金属封闭开关设备和控制设备"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.808967+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

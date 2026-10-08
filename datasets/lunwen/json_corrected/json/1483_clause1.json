@@ -1,0 +1,133 @@
+{
+  "entities": [
+    {
+      "name": "乙炔",
+      "type": "气体组分",
+      "desc": "变压器油中的一种气体组分"
+    },
+    {
+      "name": "氢气",
+      "type": "气体组分",
+      "desc": "变压器油中的一种气体组分"
+    },
+    {
+      "name": "总烃",
+      "type": "气体组分",
+      "desc": "变压器油中多种烃类气体的总和"
+    },
+    {
+      "name": "110(66)kV",
+      "type": "电压等级",
+      "desc": "电力系统中的一个电压等级"
+    },
+    {
+      "name": "220kV及以上",
+      "type": "电压等级",
+      "desc": "电力系统中的一个电压等级"
+    },
+    {
+      "name": "150µL/L",
+      "type": "浓度单位",
+      "desc": "气体在变压器油中的体积浓度单位"
+    },
+    {
+      "name": "100µL/L",
+      "type": "浓度单位",
+      "desc": "气体在变压器油中的体积浓度单位"
+    },
+    {
+      "name": "2µL/L",
+      "type": "浓度单位",
+      "desc": "气体在变压器油中的体积浓度单位"
+    },
+    {
+      "name": "1µL/L",
+      "type": "浓度单位",
+      "desc": "气体在变压器油中的体积浓度单位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "乙炔≤2µL/L（110（66）kV）,≤1µL/L（220kV及以上）",
+      "type": "强制",
+      "subject": "变压器油中乙炔含量",
+      "action": "控制乙炔含量不超过规定值",
+      "condition": "运行中的110（66）kV及以下电压等级变压器",
+      "constraint": "乙炔≤2µL/L（110（66）kV）,≤1µL/L（220kV及以上）",
+      "related_entities": [
+        "乙炔",
+        "110(66)kV",
+        "220kV及以上"
+      ]
+    },
+    {
+      "content": "氢气≤150µL/L（110（66）kV及以上）",
+      "type": "强制",
+      "subject": "变压器油中氢气含量",
+      "action": "控制氢气含量不超过规定值",
+      "condition": "运行中的110（66）kV及以上电压等级变压器",
+      "constraint": "氢气≤150µL/L（110（66）kV及以上）",
+      "related_entities": [
+        "氢气",
+        "110(66)kV",
+        "220kV及以上"
+      ]
+    },
+    {
+      "content": "总烃≤100µL/L（110（66）kV及以上）",
+      "type": "强制",
+      "subject": "变压器油中总烃含量",
+      "action": "控制总烃含量不超过规定值",
+      "condition": "运行中的110（66）kV及以上电压等级变压器",
+      "constraint": "总烃≤100µL/L（110（66）kV及以上）",
+      "related_entities": [
+        "总烃",
+        "110(66)kV",
+        "220kV及以上"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "乙炔",
+      "target": "110(66)kV",
+      "type": "适用于电压等级"
+    },
+    {
+      "source": "乙炔",
+      "target": "220kV及以上",
+      "type": "适用于电压等级"
+    },
+    {
+      "source": "氢气",
+      "target": "110(66)kV",
+      "type": "适用于电压等级"
+    },
+    {
+      "source": "氢气",
+      "target": "220kV及以上",
+      "type": "适用于电压等级"
+    },
+    {
+      "source": "总烃",
+      "target": "110(66)kV",
+      "type": "适用于电压等级"
+    },
+    {
+      "source": "总烃",
+      "target": "220kV及以上",
+      "type": "适用于电压等级"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1483,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6430e57db0522c4e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1483_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

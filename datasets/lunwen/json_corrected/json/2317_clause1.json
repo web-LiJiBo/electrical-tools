@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "管道",
+      "type": "电力设施",
+      "desc": "输送流体介质的管状结构"
+    },
+    {
+      "name": "道路",
+      "type": "电力设施",
+      "desc": "供车辆行人通行的交通线路"
+    },
+    {
+      "name": "建筑物",
+      "type": "电力设施",
+      "desc": "供人们居住或进行各种活动的建筑"
+    },
+    {
+      "name": "杆基础",
+      "type": "电力设施",
+      "desc": "支撑架空电力线路杆塔的基础部分"
+    },
+    {
+      "name": "电缆平行和交叉最小净距",
+      "type": "技术参数",
+      "desc": "电缆与其他设施平行或交叉时的安全距离"
+    },
+    {
+      "name": "电缆与杆基础最小净距",
+      "type": "技术参数",
+      "desc": "电缆与杆基础之间的安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆之间，电缆与管道、道路、建筑物之间平行和交叉时的最小净距不应小于0.75m",
+      "type": "强制",
+      "subject": "电力设施设计、施工、运行维护单位",
+      "action": "设计、施工、运行维护",
+      "condition": "新建、改建、扩建电力设施",
+      "constraint": "0.75m",
+      "related_entities": [
+        "电缆",
+        "管道",
+        "道路",
+        "建筑物",
+        "电缆平行和交叉最小净距"
+      ]
+    },
+    {
+      "content": "杆基础（边线）与电缆最小净距不应小于1.0m",
+      "type": "强制",
+      "subject": "电力设施设计、施工、运行维护单位",
+      "action": "设计、施工、运行维护",
+      "condition": "新建、改建、扩建电力设施",
+      "constraint": "1.0m",
+      "related_entities": [
+        "杆基础",
+        "电缆",
+        "电缆与杆基础最小净距"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "电缆平行和交叉最小净距",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "电缆与杆基础最小净距",
+      "type": "包含"
+    },
+    {
+      "source": "电缆平行和交叉最小净距",
+      "target": "电缆",
+      "type": "约束"
+    },
+    {
+      "source": "电缆平行和交叉最小净距",
+      "target": "管道",
+      "type": "约束"
+    },
+    {
+      "source": "电缆平行和交叉最小净距",
+      "target": "道路",
+      "type": "约束"
+    },
+    {
+      "source": "电缆平行和交叉最小净距",
+      "target": "建筑物",
+      "type": "约束"
+    },
+    {
+      "source": "电缆与杆基础最小净距",
+      "target": "杆基础",
+      "type": "约束"
+    },
+    {
+      "source": "电缆与杆基础最小净距",
+      "target": "电缆",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2317,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7d695e278b73ce80",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2317_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

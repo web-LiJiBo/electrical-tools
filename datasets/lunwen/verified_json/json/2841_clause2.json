@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "冷却回路检查",
+      "type": "操作",
+      "desc": "对水冷系统的冷却回路进行检查"
+    },
+    {
+      "name": "水冷系统",
+      "type": "设备",
+      "desc": "采用水作为冷却介质的冷却系统"
+    },
+    {
+      "name": "额定静态压力",
+      "type": "参数",
+      "desc": "水冷系统在正常工作状态下的静态压力值"
+    },
+    {
+      "name": "施加压力",
+      "type": "操作",
+      "desc": "对水冷系统施加一定压力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "冷却回路检查对水冷系统施加110%～120%额定静态压力30分钟",
+      "type": "强制",
+      "subject": "冷却回路检查",
+      "action": "对水冷系统施加压力",
+      "condition": "冷却回路检查",
+      "constraint": "110%～120%额定静态压力",
+      "related_entities": [
+        "冷却回路检查",
+        "水冷系统",
+        "额定静态压力"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "冷却回路检查",
+      "target": "水冷系统",
+      "type": "针对"
+    },
+    {
+      "source": "冷却回路检查",
+      "target": "额定静态压力",
+      "type": "依据"
+    },
+    {
+      "source": "施加压力",
+      "target": "水冷系统",
+      "type": "作用于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2832,
+      "source_row_id": "2841",
+      "clause_index": 2,
+      "source_text": "冷却回路检查对水冷系统施加110%～120%额定静态压力30分钟（如制造商有明确要求，按要求执行）。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9688,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.048315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

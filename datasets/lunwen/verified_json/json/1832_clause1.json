@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "箱门",
+      "type": "电力设备部件",
+      "desc": "配电箱的门"
+    },
+    {
+      "name": "开启灵活",
+      "type": "技术要求",
+      "desc": "箱门开闭顺畅无卡滞现象"
+    },
+    {
+      "name": "开启角度",
+      "type": "技术参数",
+      "desc": "箱门开启的最大角度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "箱门应开启灵活，开启角度应大于90°",
+      "type": "强制",
+      "subject": "箱门",
+      "action": "开启灵活且开启角度大于90°",
+      "condition": "配电箱安装完毕后",
+      "constraint": "开启角度>90°",
+      "related_entities": [
+        "箱门"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "箱门",
+      "target": "开启灵活",
+      "type": "满足"
+    },
+    {
+      "source": "箱门",
+      "target": "开启角度",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1832,
+      "source_row_id": "1832",
+      "clause_index": 1,
+      "source_text": "箱体：箱门应开启灵活，开启角度应大于90°"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.817966+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

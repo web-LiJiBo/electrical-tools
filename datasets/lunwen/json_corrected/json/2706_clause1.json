@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "用于变换电压等级的电气设备"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验项目",
+      "desc": "检测变压器内部局部放电量的试验"
+    },
+    {
+      "name": "现场局部放电试验",
+      "type": "试验项目",
+      "desc": "在变压器现场进行的局部放电试验"
+    },
+    {
+      "name": "新安装",
+      "type": "设备状态",
+      "desc": "设备首次安装完成并准备投入运行的状态"
+    },
+    {
+      "name": "电压等级220kV",
+      "type": "技术参数",
+      "desc": "变压器额定电压等级为220kV"
+    },
+    {
+      "name": "电压等级110kV",
+      "type": "技术参数",
+      "desc": "变压器额定电压等级为110kV"
+    },
+    {
+      "name": "绝缘",
+      "type": "技术参数",
+      "desc": "变压器绕组及绝缘材料的性能指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电压等级220kV及以上变压器在新安装时，应进行现场局部放电试验。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行局部放电试验",
+      "condition": "电压等级220kV及以上且新安装",
+      "constraint": "现场局部放电试验",
+      "related_entities": [
+        "变压器",
+        "现场局部放电试验"
+      ]
+    },
+    {
+      "content": "电压等级为110kV的变压器，当对绝缘有怀疑时，应进行局部放电试验。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行局部放电试验",
+      "condition": "电压等级110kV且绝缘有怀疑",
+      "constraint": "局部放电试验",
+      "related_entities": [
+        "变压器",
+        "局部放电试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "局部放电试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "变压器",
+      "target": "现场局部放电试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "变压器",
+      "target": "绝缘",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2706,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0c36e2933655d799",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2706_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

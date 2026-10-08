@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "接地装置",
+      "type": "电力设备",
+      "desc": "用于将电气设备或线路与大地连接的装置"
+    },
+    {
+      "name": "热镀锌钢材",
+      "type": "材料",
+      "desc": "经过热镀锌处理的钢材"
+    },
+    {
+      "name": "圆钢",
+      "type": "材料",
+      "desc": "圆形截面的钢材"
+    },
+    {
+      "name": "扁钢",
+      "type": "材料",
+      "desc": "扁平截面的钢材"
+    },
+    {
+      "name": "角钢",
+      "type": "材料",
+      "desc": "具有两个直角边的钢材"
+    },
+    {
+      "name": "钢管",
+      "type": "材料",
+      "desc": "中空圆柱形的钢材"
+    }
+  ],
+  "rules": [
+    {
+      "content": "除临时接地装置外，接地装置应采用热镀锌钢材",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采用",
+      "condition": "除临时接地装置外",
+      "constraint": "热镀锌钢材",
+      "related_entities": [
+        "接地装置",
+        "热镀锌钢材"
+      ]
+    },
+    {
+      "content": "水平敷设的可采用圆钢和扁钢",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采用",
+      "condition": "水平敷设",
+      "constraint": "圆钢和扁钢",
+      "related_entities": [
+        "接地装置",
+        "圆钢",
+        "扁钢"
+      ]
+    },
+    {
+      "content": "垂直敷设的可采用角钢和钢管",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "采用",
+      "condition": "垂直敷设",
+      "constraint": "角钢和钢管",
+      "related_entities": [
+        "接地装置",
+        "角钢",
+        "钢管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地装置",
+      "target": "热镀锌钢材",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "圆钢",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "扁钢",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "角钢",
+      "type": "采用"
+    },
+    {
+      "source": "接地装置",
+      "target": "钢管",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2407,
+      "source_row_id": "2407",
+      "clause_index": 2,
+      "source_text": "除临时接地装置外，接地装置应采用热镀锌钢材，水平敷设的可采用圆钢和扁钢，垂直敷设的可采用角钢和钢管。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.519314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

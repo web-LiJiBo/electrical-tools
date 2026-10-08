@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "发电厂",
+      "type": "电力设施",
+      "desc": "发电厂是生产电能的场所"
+    },
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "变电站是变换电压、接受和分配电能的场所"
+    },
+    {
+      "name": "直流、UPS、保安电源系统电缆",
+      "type": "电力电缆",
+      "desc": "直流、UPS、保安电源系统专用的电力电缆"
+    },
+    {
+      "name": "耐火电缆",
+      "type": "电力电缆",
+      "desc": "具有耐火性能的电力电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "发电厂、变电站直流、UPS、保安电源系统电缆应选用耐火电缆",
+      "type": "强制",
+      "subject": "发电厂、变电站",
+      "action": "选用电缆",
+      "condition": "直流、UPS、保安电源系统",
+      "constraint": "耐火电缆",
+      "related_entities": [
+        "发电厂",
+        "变电站",
+        "直流、UPS、保安电源系统电缆",
+        "耐火电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "发电厂",
+      "target": "直流、UPS、保安电源系统电缆",
+      "type": "使用"
+    },
+    {
+      "source": "变电站",
+      "target": "直流、UPS、保安电源系统电缆",
+      "type": "使用"
+    },
+    {
+      "source": "直流、UPS、保安电源系统电缆",
+      "target": "耐火电缆",
+      "type": "选用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3337,
+      "source_row_id": "3346",
+      "clause_index": 2,
+      "source_text": "电缆耐火及阻燃的选择应符合下列规定：2发电厂、变电站直流、UPS、保安电源系统电缆应选用耐火电缆。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.673363+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

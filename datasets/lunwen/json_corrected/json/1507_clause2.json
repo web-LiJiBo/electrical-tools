@@ -1,0 +1,145 @@
+{
+  "entities": [
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流的电气设备"
+    },
+    {
+      "name": "运输过程",
+      "type": "操作过程",
+      "desc": "将电流互感器从一地运送到另一地的过程"
+    },
+    {
+      "name": "振动",
+      "type": "物理现象",
+      "desc": "物体在空间中位置的快速变化"
+    },
+    {
+      "name": "颠簸",
+      "type": "物理现象",
+      "desc": "物体在空间中位置的不规则变化"
+    },
+    {
+      "name": "撞击",
+      "type": "物理现象",
+      "desc": "两个物体接触并产生力的作用"
+    },
+    {
+      "name": "卧倒运输",
+      "type": "运输方式",
+      "desc": "将电流互感器水平放置进行运输的方式"
+    },
+    {
+      "name": "振动记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录运输过程中电流互感器振动情况的仪器"
+    },
+    {
+      "name": "制造厂允许值",
+      "type": "技术参数",
+      "desc": "制造厂规定的振动记录仪数值允许范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电流互感器在运输过程中应无严重振动、颠簸和撞击现象",
+      "type": "强制",
+      "subject": "电流互感器",
+      "action": "运输",
+      "condition": "运输过程中",
+      "constraint": "无严重振动、颠簸和撞击现象",
+      "related_entities": [
+        "电流互感器",
+        "振动",
+        "颠簸",
+        "撞击"
+      ]
+    },
+    {
+      "content": "220kV及以上产品应卧倒运输",
+      "type": "强制",
+      "subject": "220kV及以上电流互感器",
+      "action": "运输",
+      "condition": "运输过程中",
+      "constraint": "卧倒运输",
+      "related_entities": [
+        "电流互感器",
+        "卧倒运输"
+      ]
+    },
+    {
+      "content": "对于SF6气体绝缘电流互感器，应安装振动记录仪，220kV-330kV电流互感器一般安装1个；500kV、750kV电流互感器一般安装2个",
+      "type": "强制",
+      "subject": "SF6气体绝缘电流互感器",
+      "action": "安装振动记录仪",
+      "condition": "运输过程中",
+      "constraint": "220kV-330kV电流互感器安装1个振动记录仪；500kV、750kV电流互感器安装2个振动记录仪",
+      "related_entities": [
+        "电流互感器",
+        "振动记录仪"
+      ]
+    },
+    {
+      "content": "若记录数值超过制造厂允许值，则互感器应返厂检查",
+      "type": "强制",
+      "subject": "电流互感器",
+      "action": "返厂检查",
+      "condition": "运输过程中振动记录仪记录数值超过制造厂允许值",
+      "constraint": "振动记录仪记录数值超过制造厂允许值",
+      "related_entities": [
+        "电流互感器",
+        "振动记录仪",
+        "制造厂允许值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电流互感器",
+      "target": "运输过程",
+      "type": "参与"
+    },
+    {
+      "source": "电流互感器",
+      "target": "振动",
+      "type": "经历"
+    },
+    {
+      "source": "电流互感器",
+      "target": "颠簸",
+      "type": "经历"
+    },
+    {
+      "source": "电流互感器",
+      "target": "撞击",
+      "type": "经历"
+    },
+    {
+      "source": "电流互感器",
+      "target": "卧倒运输",
+      "type": "经历"
+    },
+    {
+      "source": "电流互感器",
+      "target": "振动记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "电流互感器",
+      "target": "制造厂允许值",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1507,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b1ad8d422206e8fe",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1507_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

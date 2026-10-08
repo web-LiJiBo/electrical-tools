@@ -1,0 +1,50 @@
+{
+  "entities": [
+    {
+      "name": "表面平整度",
+      "type": "技术参数",
+      "desc": "电力设备表面的平整程度"
+    },
+    {
+      "name": "立面垂直度",
+      "type": "技术参数",
+      "desc": "电力设备立面上下垂直的程度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "表面平整度不大于4mm",
+      "type": "强制",
+      "subject": "电力设备制造企业",
+      "action": "生产制造",
+      "condition": "电力设备制造过程",
+      "constraint": "表面平整度≤4mm",
+      "related_entities": [
+        "表面平整度"
+      ]
+    },
+    {
+      "content": "立面垂直度不大于5mm",
+      "type": "强制",
+      "subject": "电力设备制造企业",
+      "action": "生产制造",
+      "condition": "电力设备制造过程",
+      "constraint": "立面垂直度≤5mm",
+      "related_entities": [
+        "立面垂直度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "表面平整度",
+      "target": "电力设备",
+      "type": "技术参数要求"
+    },
+    {
+      "source": "立面垂直度",
+      "target": "电力设备",
+      "type": "技术参数要求"
+    }
+  ]
+}

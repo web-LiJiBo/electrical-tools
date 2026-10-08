@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "试验程序可根据试品状况和现场条件，由用户和制造厂商定，从下列程序中选择，但拟优先选用程序A。程序A：按5.1条和7.1条的交流电压试验，在规定的电压值下耐压1min。在特殊情况下，可增加冲击电压试验，按5.2条和7.2条试验，在规定的电压值下进行，正负极性各三次；程序B：按5.1条的交流电压试验，在电压值不低于Um/√3(对中性点有效接地系统)或Um(对中性点非有效接地系统)下耐压5min(Um为系统最高电压)。同时应补充进行冲击电压试验，按5.2条和7.2条试验，在规定的电压值下进行，正负极性各三次",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1756,
+      "source_row_id": "1756",
+      "clause_index": 2,
+      "source_text": "试验程序可根据试品状况和现场条件，由用户和制造厂商定，从下列程序中选择，但拟优先选用程序A。程序A：按5.1条和7.1条的交流电压试验，在规定的电压值下耐压1min。在特殊情况下，可增加冲击电压试验，按5.2条和7.2条试验，在规定的电压值下进行，正负极性各三次；程序B：按5.1条的交流电压试验，在电压值不低于Um/√3(对中性点有效接地系统)或Um(对中性点非有效接地系统)下耐压5min(Um为系统最高电压)。同时应补充进行冲击电压试验，按5.2条和7.2条试验，在规定的电压值下进行，正负极性各三次"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:00.733217+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

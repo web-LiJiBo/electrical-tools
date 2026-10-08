@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "管的内径",
+      "type": "物理参数",
+      "desc": "管道内部直径尺寸"
+    },
+    {
+      "name": "电缆外径",
+      "type": "物理参数",
+      "desc": "单根电缆外部直径尺寸"
+    },
+    {
+      "name": "多根电缆包络外径",
+      "type": "物理参数",
+      "desc": "多根电缆排列后最外侧电缆与最内侧电缆之间的最大距离"
+    },
+    {
+      "name": "排管",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的地下管道系统"
+    },
+    {
+      "name": "管孔内径",
+      "type": "物理参数",
+      "desc": "排管内部孔洞直径尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "管的内径不宜小于电缆外径或多根电缆包络外径的1.5倍",
+      "type": "强制",
+      "subject": "管的内径",
+      "action": "设计",
+      "condition": "电缆敷设于排管内",
+      "constraint": "管的内径≥1.5×(电缆外径或多根电缆包络外径)",
+      "related_entities": [
+        "电缆",
+        "管的内径",
+        "电缆外径",
+        "多根电缆包络外径"
+      ]
+    },
+    {
+      "content": "排管的管孔内径不宜小于75mm",
+      "type": "强制",
+      "subject": "排管的管孔内径",
+      "action": "设计",
+      "condition": "电缆敷设于排管内",
+      "constraint": "管孔内径≥75mm",
+      "related_entities": [
+        "排管",
+        "管孔内径"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "管的内径",
+      "type": "影响"
+    },
+    {
+      "source": "电缆",
+      "target": "电缆外径",
+      "type": "属性"
+    },
+    {
+      "source": "电缆",
+      "target": "多根电缆包络外径",
+      "type": "属性"
+    },
+    {
+      "source": "排管",
+      "target": "管孔内径",
+      "type": "属性"
+    },
+    {
+      "source": "管的内径",
+      "target": "排管",
+      "type": "包含"
+    },
+    {
+      "source": "管孔内径",
+      "target": "排管",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2419,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fe149eecfff712f1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2419_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

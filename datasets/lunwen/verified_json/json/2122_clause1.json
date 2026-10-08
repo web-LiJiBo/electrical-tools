@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "绕组频率响应分析",
+      "type": "试验项目",
+      "desc": "变压器绕组的频率响应特性分析"
+    },
+    {
+      "name": "投运前",
+      "type": "时间点",
+      "desc": "设备投入运行前的时间点"
+    },
+    {
+      "name": "大修后",
+      "type": "时间点",
+      "desc": "设备进行大修后的检修时间点"
+    },
+    {
+      "name": "必要时",
+      "type": "时间点",
+      "desc": "根据实际情况需要进行试验的时间点"
+    },
+    {
+      "name": "历史测试结果",
+      "type": "数据",
+      "desc": "设备以往的试验数据"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绕组频率响应分析应在投运前、大修后及必要时进行",
+      "type": "强制",
+      "subject": "设备",
+      "action": "进行绕组频率响应分析",
+      "condition": "设备投运前、大修后或必要时",
+      "constraint": "周期：投运前，大修后，必要时",
+      "related_entities": [
+        "绕组频率响应分析",
+        "投运前",
+        "大修后",
+        "必要时"
+      ]
+    },
+    {
+      "content": "绕组频率响应分析结果应与历史测试结果进行比较，无明显变化",
+      "type": "强制",
+      "subject": "设备",
+      "action": "与历史测试结果进行比较",
+      "condition": "进行绕组频率响应分析",
+      "constraint": "与历史测试结果比较无明显变化",
+      "related_entities": [
+        "绕组频率响应分析",
+        "历史测试结果"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绕组频率响应分析",
+      "target": "投运前",
+      "type": "在...前进行"
+    },
+    {
+      "source": "绕组频率响应分析",
+      "target": "大修后",
+      "type": "在...后进行"
+    },
+    {
+      "source": "绕组频率响应分析",
+      "target": "必要时",
+      "type": "在...时进行"
+    },
+    {
+      "source": "绕组频率响应分析",
+      "target": "历史测试结果",
+      "type": "与...进行比较"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2122,
+      "source_row_id": "2122",
+      "clause_index": 1,
+      "source_text": "绕组频率响应分析，周期：投运前，大修后，必要时。要求：与历史测试结果比较无明显变化"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.4975,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.165550+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

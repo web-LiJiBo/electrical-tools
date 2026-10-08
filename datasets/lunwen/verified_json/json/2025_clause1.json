@@ -1,0 +1,54 @@
+{
+  "entities": [
+    {
+      "name": "承载索",
+      "type": "电力设备",
+      "desc": "用于架空输电线路的承力索"
+    },
+    {
+      "name": "安全系数",
+      "type": "技术参数",
+      "desc": "承载索设计时的安全系数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "承载索安全系数2.6~2.8",
+      "type": "强制",
+      "subject": "承载索",
+      "action": "设计与使用",
+      "condition": "架空输电线路工程",
+      "constraint": "安全系数≥2.6且≤2.8",
+      "related_entities": [
+        "承载索"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "承载索",
+      "target": "安全系数",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2025,
+      "source_row_id": "2025",
+      "clause_index": 1,
+      "source_text": "承载索安全系数2.6~2.8"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.039967+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

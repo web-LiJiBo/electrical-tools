@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "避雷器",
+      "type": "电力设备",
+      "desc": "用于保护电力系统免受雷击损害的设备"
+    },
+    {
+      "name": "标称放电电流",
+      "type": "技术参数",
+      "desc": "避雷器在额定电压下的放电电流值"
+    },
+    {
+      "name": "Ur",
+      "type": "技术参数",
+      "desc": "避雷器的残压，即避雷器在额定放电电流下的残压值"
+    },
+    {
+      "name": "电站",
+      "type": "电力设施",
+      "desc": "发电站或变电站等电力设施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电站用避雷器，标称放电电流为20kA时，420≤Ur≤648kV。",
+      "type": "强制",
+      "subject": "电站用避雷器",
+      "action": "选择和安装",
+      "condition": "电站用避雷器应用于电站",
+      "constraint": "当标称放电电流为20kA时，Ur应在420至648kV之间",
+      "related_entities": [
+        "避雷器",
+        "Ur"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "避雷器",
+      "target": "Ur",
+      "type": "包含"
+    },
+    {
+      "source": "避雷器",
+      "target": "标称放电电流",
+      "type": "包含"
+    },
+    {
+      "source": "电站",
+      "target": "避雷器",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2956,
+      "source_row_id": "2965",
+      "clause_index": 2,
+      "source_text": "电站用避雷器，标称放电电流为20kA时，420≤Ur≤648kV。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.210315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

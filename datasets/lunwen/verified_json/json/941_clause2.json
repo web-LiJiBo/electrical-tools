@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备部件",
+      "desc": "变压器内部的磁性材料"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器的外壳，用于容纳绝缘油"
+    },
+    {
+      "name": "结构表面",
+      "type": "电力设备部件",
+      "desc": "变压器外部的金属结构面"
+    },
+    {
+      "name": "温升限值",
+      "type": "技术参数",
+      "desc": "设备在运行过程中允许的最大温升"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心、油箱及结构表面温升限值：75K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "正常运行条件下",
+      "constraint": "温升限值≤75K",
+      "related_entities": [
+        "铁心",
+        "油箱",
+        "结构表面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "油箱",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "结构表面",
+      "target": "温升限值",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 941,
+      "source_row_id": "941",
+      "clause_index": 2,
+      "source_text": "表1技术参数特性表中规定，铁心、油箱及结构表面温升限值：75K"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.809948+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

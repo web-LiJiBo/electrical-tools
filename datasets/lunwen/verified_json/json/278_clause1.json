@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "渗水井",
+      "type": "电力设施",
+      "desc": "电力工程中用于排水的设施"
+    },
+    {
+      "name": "监测井",
+      "type": "电力设施",
+      "desc": "电力工程中用于监测的设施"
+    },
+    {
+      "name": "引流井",
+      "type": "电力设施",
+      "desc": "电力工程中用于引流的设施"
+    },
+    {
+      "name": "表面平整度",
+      "type": "技术参数",
+      "desc": "电力设施表面平整程度的技术指标"
+    },
+    {
+      "name": "立面垂直度",
+      "type": "技术参数",
+      "desc": "电力设施立面垂直程度的技术指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "渗水井施工和5.8条监测井、引流井施工要求表面平整度不大于3mm，立面垂直度不大于4mm",
+      "type": "强制",
+      "subject": "渗水井、监测井、引流井",
+      "action": "施工",
+      "condition": "电力工程施工过程",
+      "constraint": "表面平整度≤3mm，立面垂直度≤4mm",
+      "related_entities": [
+        "渗水井",
+        "监测井",
+        "引流井"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "渗水井",
+      "target": "表面平整度",
+      "type": "满足"
+    },
+    {
+      "source": "渗水井",
+      "target": "立面垂直度",
+      "type": "满足"
+    },
+    {
+      "source": "监测井",
+      "target": "表面平整度",
+      "type": "满足"
+    },
+    {
+      "source": "监测井",
+      "target": "立面垂直度",
+      "type": "满足"
+    },
+    {
+      "source": "引流井",
+      "target": "表面平整度",
+      "type": "满足"
+    },
+    {
+      "source": "引流井",
+      "target": "立面垂直度",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 278,
+      "source_row_id": "278",
+      "clause_index": 1,
+      "source_text": "渗水井施工和5.8条监测井、引流井施工要求表面平整度不大于3mm，立面垂直度不大于4mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.051603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

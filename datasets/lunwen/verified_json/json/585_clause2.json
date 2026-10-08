@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "电压互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电压的电气设备"
+    },
+    {
+      "name": "额定一次电压",
+      "type": "电力参数",
+      "desc": "电压互感器一次侧的额定电压值"
+    },
+    {
+      "name": "N端",
+      "type": "电力设备部件",
+      "desc": "电压互感器的一端，通常接地"
+    },
+    {
+      "name": "等级",
+      "type": "电力参数",
+      "desc": "电压互感器的电压等级"
+    },
+    {
+      "name": "35kV",
+      "type": "电力参数",
+      "desc": "电压等级35kV"
+    },
+    {
+      "name": "66kV",
+      "type": "电力参数",
+      "desc": "电压等级66kV"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般升到额定一次电压的120％",
+      "type": "强制",
+      "subject": "电压互感器",
+      "action": "进行空载试验",
+      "condition": "N端接地且等级在35kV及以下",
+      "constraint": "额定一次电压的120％",
+      "related_entities": [
+        "电压互感器",
+        "额定一次电压",
+        "N端"
+      ]
+    },
+    {
+      "content": "升到额定一次电压的190％",
+      "type": "强制",
+      "subject": "电压互感器",
+      "action": "进行空载试验",
+      "condition": "N端接地且等级在35kV及以下",
+      "constraint": "额定一次电压的190％",
+      "related_entities": [
+        "电压互感器",
+        "额定一次电压",
+        "N端"
+      ]
+    },
+    {
+      "content": "升到额定电压的150％",
+      "type": "强制",
+      "subject": "电压互感器",
+      "action": "进行空载试验",
+      "condition": "等级在66kV及以上",
+      "constraint": "额定电压的150％",
+      "related_entities": [
+        "电压互感器",
+        "额定一次电压",
+        "N端"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电压互感器",
+      "target": "额定一次电压",
+      "type": "具有"
+    },
+    {
+      "source": "电压互感器",
+      "target": "N端",
+      "type": "具有"
+    },
+    {
+      "source": "电压互感器",
+      "target": "等级",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 585,
+      "source_row_id": "585",
+      "clause_index": 2,
+      "source_text": "电压互感器空载试验：一般升到额定一次电压的120％，N端接地且等级在35kV及以下时升到额定一次电压的190％，66kV及以上时升到额定电压的150％。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.391484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

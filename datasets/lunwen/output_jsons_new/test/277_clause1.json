@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "name": "焊缝余高",
+      "type": "焊接参数",
+      "desc": "焊接完成后焊缝超出母材表面的高度"
+    },
+    {
+      "name": "b20",
+      "type": "焊接位置",
+      "desc": "焊缝在工件上的位置，此处指板厚20mm的对接焊缝"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b20时，焊缝余高0—3.5mm均合格",
+      "type": "强制",
+      "subject": "焊接工艺",
+      "action": "控制焊缝余高",
+      "condition": "b20对接焊缝",
+      "constraint": "焊缝余高0—3.5mm",
+      "related_entities": [
+        "焊缝余高",
+        "b20"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "焊缝余高",
+      "target": "b20",
+      "type": "适用于"
+    },
+    {
+      "source": "焊接工艺",
+      "target": "焊缝余高",
+      "type": "控制"
+    }
+  ]
+}

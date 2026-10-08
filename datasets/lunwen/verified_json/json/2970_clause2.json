@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "注油完毕",
+      "type": "操作",
+      "desc": "变压器注油完成"
+    },
+    {
+      "name": "施加电压",
+      "type": "操作",
+      "desc": "对变压器进行耐压试验"
+    },
+    {
+      "name": "静置时间",
+      "type": "参数",
+      "desc": "变压器注油后静置的时间"
+    },
+    {
+      "name": "500kV变压器",
+      "type": "设备",
+      "desc": "500kV等级的变压器"
+    },
+    {
+      "name": "750kV变压器",
+      "type": "设备",
+      "desc": "750kV等级的变压器"
+    },
+    {
+      "name": "表4.11.4",
+      "type": "标准",
+      "desc": "变压器静置时间规定表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注油完毕后，在施加电压前，其静置时间应符合表4.11.4的规定",
+      "type": "强制",
+      "subject": "注油完毕后的变压器",
+      "action": "施加电压前的静置",
+      "condition": "注油完毕后",
+      "constraint": "静置时间应符合表4.11.4的规定",
+      "related_entities": [
+        "注油完毕",
+        "施加电压",
+        "静置时间",
+        "表4.11.4"
+      ]
+    },
+    {
+      "content": "500kV及750kV变压器静置时间要求为72h",
+      "type": "强制",
+      "subject": "500kV及750kV变压器",
+      "action": "施加电压前的静置",
+      "condition": "注油完毕后",
+      "constraint": "静置时间为72小时",
+      "related_entities": [
+        "500kV变压器",
+        "750kV变压器",
+        "施加电压",
+        "静置时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "注油完毕",
+      "target": "施加电压",
+      "type": "前置条件"
+    },
+    {
+      "source": "注油完毕",
+      "target": "静置时间",
+      "type": "影响因素"
+    },
+    {
+      "source": "施加电压",
+      "target": "静置时间",
+      "type": "约束条件"
+    },
+    {
+      "source": "500kV变压器",
+      "target": "施加电压",
+      "type": "适用对象"
+    },
+    {
+      "source": "750kV变压器",
+      "target": "施加电压",
+      "type": "适用对象"
+    },
+    {
+      "source": "表4.11.4",
+      "target": "静置时间",
+      "type": "依据标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2961,
+      "source_row_id": "2970",
+      "clause_index": 2,
+      "source_text": "注油完毕后，在施加电压前，其静置时间应符合表4.11.4的规定，500kV及750kV变压器静置时间要求为72h。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9896,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.216313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

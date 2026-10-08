@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "油浸式真空有载分接开关",
+      "type": "电力设备",
+      "desc": "一种用于电力变压器的有载调压装置"
+    },
+    {
+      "name": "轻瓦斯保护",
+      "type": "保护装置",
+      "desc": "一种变压器内部故障的保护措施"
+    },
+    {
+      "name": "油色谱分析",
+      "type": "检测方法",
+      "desc": "一种变压器油中溶解气体成分分析的方法"
+    },
+    {
+      "name": "气体监测器",
+      "type": "保护装置",
+      "desc": "一种变压器内部气体含量监测装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "有轻瓦斯保护的油浸式真空有载分接开关运行正常时无油色谱分析的要求",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "运行",
+      "condition": "有轻瓦斯保护且运行正常",
+      "constraint": "无需进行油色谱分析",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "轻瓦斯保护"
+      ]
+    },
+    {
+      "content": "无轻瓦斯保护(或气体监测器)的油浸式真空有载分接开关应按照开关制造商规定的周期进行油色谱分析",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "运行",
+      "condition": "无轻瓦斯保护(或气体监测器)",
+      "constraint": "应按照制造商规定周期进行油色谱分析",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "轻瓦斯保护",
+        "气体监测器",
+        "油色谱分析"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "轻瓦斯保护",
+      "type": "配置"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "油色谱分析",
+      "type": "检测"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "气体监测器",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2527,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "aeed401373654107",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2527_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

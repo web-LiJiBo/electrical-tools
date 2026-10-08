@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "1000kV油浸电容式套管",
+      "type": "电力设备",
+      "desc": "1000kV等级的油浸电容式套管"
+    },
+    {
+      "name": "试验项目",
+      "type": "试验方法",
+      "desc": "对电力设备进行的检测或试验"
+    },
+    {
+      "name": "试验周期",
+      "type": "试验周期",
+      "desc": "电力设备试验项目的定期检查时间间隔"
+    },
+    {
+      "name": "tanδ值",
+      "type": "电气参数",
+      "desc": "介质损耗角正切值，用于评估绝缘材料性能"
+    },
+    {
+      "name": "主绝缘",
+      "type": "绝缘材料",
+      "desc": "电力设备内部主要绝缘部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "20℃时的tanδ值，主绝缘应不大于0.006",
+      "type": "强制",
+      "subject": "1000kV油浸电容式套管",
+      "action": "试验",
+      "condition": "在20℃条件下进行tanδ值测试",
+      "constraint": "tanδ值≤0.006",
+      "related_entities": [
+        "1000kV油浸电容式套管",
+        "试验项目",
+        "试验周期",
+        "tanδ值",
+        "主绝缘"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "1000kV油浸电容式套管",
+      "target": "试验项目",
+      "type": "包含"
+    },
+    {
+      "source": "试验项目",
+      "target": "试验周期",
+      "type": "关联"
+    },
+    {
+      "source": "试验项目",
+      "target": "tanδ值",
+      "type": "测量"
+    },
+    {
+      "source": "试验项目",
+      "target": "主绝缘",
+      "type": "检测对象"
+    },
+    {
+      "source": "1000kV油浸电容式套管",
+      "target": "tanδ值",
+      "type": "属性"
+    },
+    {
+      "source": "1000kV油浸电容式套管",
+      "target": "主绝缘",
+      "type": "组成部分"
+    }
+  ],
+  "metadata": {
+    "pair_id": 814,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ef7cf10ad2258255",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\814_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

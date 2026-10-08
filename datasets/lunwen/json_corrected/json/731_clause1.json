@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "严重覆冰地段",
+      "type": "地理环境",
+      "desc": "覆冰厚度超过10mm的区域"
+    },
+    {
+      "name": "稀有覆冰厚度",
+      "type": "设计参数",
+      "desc": "罕见情况下出现的覆冰厚度值"
+    },
+    {
+      "name": "概率极小重冰",
+      "type": "气象条件",
+      "desc": "出现概率极低的极端覆冰情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在严重覆冰地段如调查中出现概率极小重冰，宜按稀有的覆冰厚度进行验算",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "进行验算",
+      "condition": "严重覆冰地段且出现概率极小重冰",
+      "constraint": "稀有覆冰厚度",
+      "related_entities": [
+        "严重覆冰地段",
+        "稀有覆冰厚度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "严重覆冰地段",
+      "target": "概率极小重冰",
+      "type": "包含"
+    },
+    {
+      "source": "严重覆冰地段",
+      "target": "稀有覆冰厚度",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 731,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "570abf48720db941",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\731_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

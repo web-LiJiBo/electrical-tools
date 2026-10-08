@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "快速接地开关",
+      "type": "电力设备",
+      "desc": "一种用于快速接地的开关设备"
+    },
+    {
+      "name": "小电流",
+      "type": "电气参数",
+      "desc": "小于规定值的电流"
+    },
+    {
+      "name": "感性小电流",
+      "type": "电气参数",
+      "desc": "由电感元件产生的小电流"
+    },
+    {
+      "name": "容性小电流",
+      "type": "电气参数",
+      "desc": "由电容元件产生的小电流"
+    },
+    {
+      "name": "母线转移电流",
+      "type": "电气参数",
+      "desc": "母线间转移的电流"
+    },
+    {
+      "name": "环流",
+      "type": "电气参数",
+      "desc": "在环网中流动的电流"
+    },
+    {
+      "name": "感应电流",
+      "type": "电气参数",
+      "desc": "由电磁感应产生的电流"
+    },
+    {
+      "name": "二次额定短路电流",
+      "type": "电气参数",
+      "desc": "二次侧额定短路电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔离开关应具有开、合小电流(包括感性小电流和容性小电流)和母线转移电流(即环流)的能力。",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "开、合小电流和母线转移电流",
+      "condition": "在正常运行条件下",
+      "constraint": "小电流≤规定值, 母线转移电流≤规定值",
+      "related_entities": [
+        "隔离开关",
+        "小电流",
+        "感性小电流",
+        "容性小电流",
+        "母线转移电流"
+      ]
+    },
+    {
+      "content": "快速接地开关应其有开、合感应电流的能力；具有关、合二次额定短路电流的能力，具体要求由制造厂和用户商定。",
+      "type": "强制",
+      "subject": "快速接地开关",
+      "action": "开、合感应电流和二次额定短路电流",
+      "condition": "在故障或异常运行条件下",
+      "constraint": "感应电流≤规定值, 二次额定短路电流≤规定值",
+      "related_entities": [
+        "快速接地开关",
+        "感应电流",
+        "二次额定短路电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "小电流",
+      "type": "开、合能力"
+    },
+    {
+      "source": "隔离开关",
+      "target": "感性小电流",
+      "type": "开、合能力"
+    },
+    {
+      "source": "隔离开关",
+      "target": "容性小电流",
+      "type": "开、合能力"
+    },
+    {
+      "source": "隔离开关",
+      "target": "母线转移电流",
+      "type": "开、合能力"
+    },
+    {
+      "source": "快速接地开关",
+      "target": "感应电流",
+      "type": "开、合能力"
+    },
+    {
+      "source": "快速接地开关",
+      "target": "二次额定短路电流",
+      "type": "开、合能力"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 599,
+      "source_row_id": "599",
+      "clause_index": 2,
+      "source_text": "隔离开关应具有开、合小电流(包括感性小电流和容性小电流)和母线转移电流(即环流)的能力。快速接地开关应其有开、合感应电流的能力；具有关、合二次额定短路电流的能力，具体要求由制造厂和用户商定"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.405485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

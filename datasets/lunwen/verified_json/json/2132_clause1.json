@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "最大日温差",
+      "type": "运行参数",
+      "desc": "变压器在一天内最高温度与最低温度之差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器应能在最大日温差25K的条件下正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "在最大日温差25K的条件下",
+      "constraint": "最大日温差25K",
+      "related_entities": [
+        "变压器",
+        "最大日温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "最大日温差",
+      "type": "满足条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2132,
+      "source_row_id": "2132",
+      "clause_index": 1,
+      "source_text": "变压器应能在下列条件下正常使用：--最大日温差25K"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5227,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.176547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

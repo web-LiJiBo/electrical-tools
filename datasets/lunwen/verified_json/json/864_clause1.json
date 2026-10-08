@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "110(66)kV及以上变压器",
+      "type": "电力设备",
+      "desc": "110kV或66kV及以上的电力变压器"
+    },
+    {
+      "name": "频响法",
+      "type": "检测方法",
+      "desc": "一种用于检测变压器绕组变形的测试方法"
+    },
+    {
+      "name": "低电压短路阻抗法",
+      "type": "检测方法",
+      "desc": "一种用于检测变压器绕组变形的测试方法"
+    },
+    {
+      "name": "绕组变形",
+      "type": "故障现象",
+      "desc": "变压器绕组在运行中受到冲击后发生的变形现象"
+    },
+    {
+      "name": "投产前",
+      "type": "时间点",
+      "desc": "变压器投入运行之前的时间段"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110(66)kV及以上变压器，在投产前，应用频响法和低电压短路阻抗法测试绕组变形以留原始记录",
+      "type": "强制",
+      "subject": "110(66)kV及以上变压器",
+      "action": "进行绕组变形测试并记录",
+      "condition": "变压器投产前",
+      "constraint": "使用频响法和低电压短路阻抗法",
+      "related_entities": [
+        "110(66)kV及以上变压器",
+        "频响法",
+        "低电压短路阻抗法",
+        "绕组变形"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110(66)kV及以上变压器",
+      "target": "频响法",
+      "type": "采用"
+    },
+    {
+      "source": "110(66)kV及以上变压器",
+      "target": "低电压短路阻抗法",
+      "type": "采用"
+    },
+    {
+      "source": "110(66)kV及以上变压器",
+      "target": "绕组变形",
+      "type": "检测对象"
+    },
+    {
+      "source": "频响法",
+      "target": "绕组变形",
+      "type": "检测手段"
+    },
+    {
+      "source": "低电压短路阻抗法",
+      "target": "绕组变形",
+      "type": "检测手段"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 864,
+      "source_row_id": "864",
+      "clause_index": 1,
+      "source_text": "110（66）kV及以上变压器，在投产前，应用频响法和低电压短路阻抗法测试绕组变形以留原始记录"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.723088+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

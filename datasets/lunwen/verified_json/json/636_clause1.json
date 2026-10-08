@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "重要电力用户",
+      "type": "用电客户",
+      "desc": "对供电可靠性要求较高的电力用户"
+    },
+    {
+      "name": "自备应急电源",
+      "type": "发电设备",
+      "desc": "用户自行配置的备用电源"
+    },
+    {
+      "name": "保安负荷",
+      "type": "用电负荷",
+      "desc": "确保人身安全、财产安全的重要负荷"
+    },
+    {
+      "name": "国家有关技术规范和标准",
+      "type": "技术文件",
+      "desc": "国家发布的相关技术规范和标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "重要电力用户应自备应急电源，电源容量至少应满足全部保安负荷正常供电的要求",
+      "type": "强制",
+      "subject": "重要电力用户",
+      "action": "配置自备应急电源",
+      "condition": "供电可靠性要求较高",
+      "constraint": "电源容量≥保安负荷容量",
+      "related_entities": [
+        "重要电力用户",
+        "自备应急电源",
+        "保安负荷"
+      ]
+    },
+    {
+      "content": "并应符合国家有关技术规范和标准要求",
+      "type": "强制",
+      "subject": "重要电力用户",
+      "action": "按照国家技术规范和标准配置自备应急电源",
+      "condition": "供电可靠性要求较高",
+      "constraint": "符合国家技术规范和标准",
+      "related_entities": [
+        "重要电力用户",
+        "自备应急电源",
+        "国家有关技术规范和标准"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "重要电力用户",
+      "target": "自备应急电源",
+      "type": "配置"
+    },
+    {
+      "source": "自备应急电源",
+      "target": "保安负荷",
+      "type": "供电保障"
+    },
+    {
+      "source": "重要电力用户",
+      "target": "国家有关技术规范和标准",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 636,
+      "source_row_id": "636",
+      "clause_index": 1,
+      "source_text": "重要电力用户应自备应急电源，电源容量至少应满足全部保安负荷正常供电的要求，并应符合国家有关技术规范和标准要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.457482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

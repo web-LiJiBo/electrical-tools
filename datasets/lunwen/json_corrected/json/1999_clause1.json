@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "导线",
+      "type": "电力设备",
+      "desc": "架空输电线路中的主要传输导体"
+    },
+    {
+      "name": "地线",
+      "type": "电力设备",
+      "desc": "架空输电线路中的保护导体"
+    },
+    {
+      "name": "覆冰厚度",
+      "type": "物理量",
+      "desc": "导线或地线在覆冰情况下的冰层厚度"
+    },
+    {
+      "name": "冰区",
+      "type": "地理环境",
+      "desc": "覆冰现象发生的地理区域"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10mm及以下冰区不考虑覆冰验算",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "进行覆冰验算",
+      "condition": "覆冰厚度≤10mm",
+      "constraint": "无需进行覆冰验算",
+      "related_entities": [
+        "导线",
+        "地线"
+      ]
+    },
+    {
+      "content": "15mm及以上冰区，导线验算覆冰厚度增加10mm，地线验算覆冰厚度增加15mm",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "进行覆冰验算",
+      "condition": "覆冰厚度≥15mm",
+      "constraint": "导线覆冰厚度取10mm+实际覆冰厚度，地线覆冰厚度取15mm+实际覆冰厚度",
+      "related_entities": [
+        "导线",
+        "地线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "覆冰厚度",
+      "target": "导线",
+      "type": "影响"
+    },
+    {
+      "source": "覆冰厚度",
+      "target": "地线",
+      "type": "影响"
+    },
+    {
+      "source": "冰区",
+      "target": "覆冰厚度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1999,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c9d9231fadb61cf2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1999_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "红外热像检测",
+      "type": "检测方法",
+      "desc": "利用红外热像仪对设备进行温度检测的方法"
+    },
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "直流输电系统中用于控制电流方向的电力电子器件"
+    },
+    {
+      "name": "异常温升",
+      "type": "检测结果",
+      "desc": "设备局部温度超出正常范围的现象"
+    },
+    {
+      "name": "异常温差",
+      "type": "检测结果",
+      "desc": "设备不同部位之间温度差异超出正常范围的现象"
+    },
+    {
+      "name": "相对温差",
+      "type": "检测结果",
+      "desc": "同一设备不同部位之间的温度差异与其中较高温度的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "红外热像检测条件许可时，对换流阀可视部分进行检测，红外热像图显示应无异常温升、温差和/或相对温差。",
+      "type": "强制",
+      "subject": "红外热像检测人员",
+      "action": "检测换流阀并记录红外热像图",
+      "condition": "红外热像检测条件许可时",
+      "constraint": "红外热像图显示应无异常温升、温差和/或相对温差",
+      "related_entities": [
+        "红外热像检测",
+        "换流阀",
+        "异常温升",
+        "异常温差",
+        "相对温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "红外热像检测",
+      "target": "换流阀",
+      "type": "检测对象"
+    },
+    {
+      "source": "红外热像检测",
+      "target": "异常温升",
+      "type": "检测结果"
+    },
+    {
+      "source": "红外热像检测",
+      "target": "异常温差",
+      "type": "检测结果"
+    },
+    {
+      "source": "红外热像检测",
+      "target": "相对温差",
+      "type": "检测结果"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1006,
+      "source_row_id": "1006",
+      "clause_index": 2,
+      "source_text": "红外热像检测条件许可时，对换流阀可视部分进行检测，红外热像图显示应无异常温升、温差和/或相对温差。检测和分析方法参考DL/T664"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9875,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.883949+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "闭口销",
+      "type": "电力设备配件",
+      "desc": "用于防止螺栓松动的金属环状部件"
+    },
+    {
+      "name": "开口销",
+      "type": "电力设备配件",
+      "desc": "用于防止螺栓松动的金属条形部件"
+    },
+    {
+      "name": "螺栓",
+      "type": "电力设备连接件",
+      "desc": "用于固定电力设备的紧固件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用的闭口销或开口销不应有折断、裂纹等现象。",
+      "type": "强制",
+      "subject": "电力设备安装人员",
+      "action": "安装电力设备",
+      "condition": "电力设备安装过程中",
+      "constraint": "闭口销或开口销无折断、裂纹等现象",
+      "related_entities": [
+        "闭口销",
+        "开口销"
+      ]
+    },
+    {
+      "content": "当采用开口销时应对称开口，开口角度应为30°～60°。",
+      "type": "强制",
+      "subject": "电力设备安装人员",
+      "action": "安装电力设备",
+      "condition": "电力设备安装过程中，采用开口销",
+      "constraint": "开口角度30°～60°",
+      "related_entities": [
+        "开口销",
+        "螺栓"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "闭口销",
+      "target": "螺栓",
+      "type": "防止松动"
+    },
+    {
+      "source": "开口销",
+      "target": "螺栓",
+      "type": "防止松动"
+    }
+  ],
+  "metadata": {
+    "pair_id": 969,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3431bd992b3230f9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\969_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

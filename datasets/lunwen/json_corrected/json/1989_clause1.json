@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "运行线路",
+      "type": "电力线路",
+      "desc": "正在运行的输电线路"
+    },
+    {
+      "name": "重要跨越档",
+      "type": "线路区段",
+      "desc": "跨越重要设施或区域的线路区段"
+    },
+    {
+      "name": "接头",
+      "type": "电气连接",
+      "desc": "导线连接点，用于连接不同导线段"
+    },
+    {
+      "name": "预绞式金具",
+      "type": "金具",
+      "desc": "一种用于导线保护和加固的金具"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行线路的重要跨越档内接头应采用预绞式金具加固",
+      "type": "强制",
+      "subject": "运行线路的重要跨越档",
+      "action": "接头加固",
+      "condition": "运行线路的重要跨越档",
+      "constraint": "接头采用预绞式金具加固",
+      "related_entities": [
+        "运行线路",
+        "重要跨越档",
+        "接头",
+        "预绞式金具"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "运行线路",
+      "target": "重要跨越档",
+      "type": "包含"
+    },
+    {
+      "source": "重要跨越档",
+      "target": "接头",
+      "type": "包含"
+    },
+    {
+      "source": "重要跨越档",
+      "target": "预绞式金具",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1989,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3fdffe6f57530c10",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1989_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

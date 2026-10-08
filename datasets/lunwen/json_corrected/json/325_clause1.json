@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "交流试验电压",
+      "type": "试验参数",
+      "desc": "交流耐压试验中施加的电压值"
+    },
+    {
+      "name": "出厂耐压试验",
+      "type": "试验项目",
+      "desc": "产品出厂前进行的耐压试验"
+    },
+    {
+      "name": "相对地电压",
+      "type": "电气参数",
+      "desc": "设备对地之间的电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场交流耐压试验（相对地）电压值为出厂耐压试验时施加电压值的80%",
+      "type": "强制",
+      "subject": "交流试验电压",
+      "action": "施加电压",
+      "condition": "现场交流耐压试验",
+      "constraint": "相对地电压值为出厂耐压试验电压值的80%",
+      "related_entities": [
+        "交流试验电压",
+        "出厂耐压试验",
+        "相对地电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂耐压试验",
+      "target": "交流试验电压",
+      "type": "依据"
+    },
+    {
+      "source": "交流试验电压",
+      "target": "相对地电压",
+      "type": "测试对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 325,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7d16ac2774d62925",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\325_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

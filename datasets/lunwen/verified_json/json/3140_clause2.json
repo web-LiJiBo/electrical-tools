@@ -1,0 +1,152 @@
+{
+  "entities": [
+    {
+      "name": "金具紧固件",
+      "type": "电力设备",
+      "desc": "电力系统中用于连接和固定其他部件的金属制品"
+    },
+    {
+      "name": "外螺纹",
+      "type": "结构特征",
+      "desc": "金具紧固件外部的螺纹结构"
+    },
+    {
+      "name": "热镀锌",
+      "type": "表面处理",
+      "desc": "通过电镀方法在金属表面形成一层锌层的工艺"
+    },
+    {
+      "name": "滚压螺纹工艺",
+      "type": "制造工艺",
+      "desc": "利用滚压工具将材料塑形为螺纹的制造方法"
+    },
+    {
+      "name": "内螺纹",
+      "type": "结构特征",
+      "desc": "金具紧固件内部的螺纹结构"
+    },
+    {
+      "name": "热浸镀锌",
+      "type": "表面处理",
+      "desc": "将金属完全浸入熔融锌液中形成锌层的工艺"
+    },
+    {
+      "name": "防腐油脂",
+      "type": "防护材料",
+      "desc": "用于防止金属腐蚀的油脂类防护材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "金具紧固件的外螺纹应在热镀锌前加工或辗制，应采用滚压螺纹工艺制造，然后进行热浸镀锌",
+      "type": "强制",
+      "subject": "金具紧固件",
+      "action": "制造",
+      "condition": "外螺纹加工或辗制",
+      "constraint": "热镀锌前",
+      "related_entities": [
+        "金具紧固件",
+        "外螺纹",
+        "热镀锌",
+        "滚压螺纹工艺"
+      ]
+    },
+    {
+      "content": "内螺纹在热浸镀锌后进行攻丝，不允许重复攻丝",
+      "type": "强制",
+      "subject": "金具紧固件",
+      "action": "制造",
+      "condition": "内螺纹攻丝",
+      "constraint": "热浸镀锌后",
+      "related_entities": [
+        "金具紧固件",
+        "内螺纹",
+        "热浸镀锌"
+      ]
+    },
+    {
+      "content": "内螺纹不允许重复攻丝",
+      "type": "强制",
+      "subject": "金具紧固件",
+      "action": "制造",
+      "condition": "内螺纹攻丝",
+      "constraint": "不允许重复攻丝",
+      "related_entities": [
+        "金具紧固件",
+        "内螺纹"
+      ]
+    },
+    {
+      "content": "内螺纹应涂防腐油脂",
+      "type": "强制",
+      "subject": "金具紧固件",
+      "action": "制造",
+      "condition": "内螺纹涂覆",
+      "constraint": "涂防腐油脂",
+      "related_entities": [
+        "金具紧固件",
+        "内螺纹",
+        "防腐油脂"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "金具紧固件",
+      "target": "外螺纹",
+      "type": "具有"
+    },
+    {
+      "source": "金具紧固件",
+      "target": "内螺纹",
+      "type": "具有"
+    },
+    {
+      "source": "外螺纹",
+      "target": "热镀锌",
+      "type": "加工于"
+    },
+    {
+      "source": "外螺纹",
+      "target": "滚压螺纹工艺",
+      "type": "加工工艺"
+    },
+    {
+      "source": "外螺纹",
+      "target": "热浸镀锌",
+      "type": "加工于"
+    },
+    {
+      "source": "内螺纹",
+      "target": "热浸镀锌",
+      "type": "加工于"
+    },
+    {
+      "source": "内螺纹",
+      "target": "防腐油脂",
+      "type": "涂覆"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3131,
+      "source_row_id": "3140",
+      "clause_index": 2,
+      "source_text": "金具紧固件的外螺纹应在热镀锌前加工或辗制，应采用滚压螺纹工艺制造，然后进行热浸镀锌；内螺纹在热浸镀锌后进行攻丝，不允许重复攻丝，并且应涂防腐油脂。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8812,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.420313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

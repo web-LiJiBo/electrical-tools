@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "开关装置",
+      "type": "电力设备",
+      "desc": "一种能够关合、承载和开断直流运行电流，并能在规定的时间内关合、承载和开断异常回路条件（如短路条件）下的电流的电力设备"
+    },
+    {
+      "name": "直流运行电流",
+      "type": "电力参数",
+      "desc": "直流电路中正常运行时的电流"
+    },
+    {
+      "name": "异常回路条件",
+      "type": "电力状态",
+      "desc": "包括短路等非正常运行状态下的电路条件"
+    },
+    {
+      "name": "短路条件",
+      "type": "电力状态",
+      "desc": "电路中出现的短路故障状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关装置应能关合、承载和开断直流运行电流，并能在规定的时间内关合、承载和开断异常回路条件（如短路条件）下的电流",
+      "type": "强制",
+      "subject": "开关装置",
+      "action": "关合、承载和开断电流",
+      "condition": "在直流运行电流及异常回路条件下",
+      "constraint": "关合、承载和开断电流",
+      "related_entities": [
+        "开关装置",
+        "直流运行电流",
+        "异常回路条件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关装置",
+      "target": "直流运行电流",
+      "type": "关合、承载和开断"
+    },
+    {
+      "source": "开关装置",
+      "target": "异常回路条件",
+      "type": "关合、承载和开断"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2647,
+      "source_row_id": "2656",
+      "clause_index": 1,
+      "source_text": "能够关合、承载和开断直流运行电流，并能在规定的时间内关合、承载和开断异常回路条件（如短路条件）下的电流的开关装置。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.91,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.813316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

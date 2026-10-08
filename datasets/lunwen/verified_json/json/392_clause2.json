@@ -1,0 +1,125 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "用于电能传输与分配的电气设备"
+    },
+    {
+      "name": "三维冲击记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录运输过程中的三维加速度冲击值的仪器"
+    },
+    {
+      "name": "运输过程",
+      "type": "过程",
+      "desc": "变压器从制造厂到安装现场的运输过程"
+    },
+    {
+      "name": "制造厂",
+      "type": "组织机构",
+      "desc": "变压器的生产制造单位"
+    },
+    {
+      "name": "运输部门",
+      "type": "组织机构",
+      "desc": "负责变压器运输的部门或单位"
+    },
+    {
+      "name": "用户",
+      "type": "组织机构",
+      "desc": "变压器的最终使用单位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110（66）kV及以上变压器在运输过程中，应按照相应规范安装具有时标且有合适量程的三维冲击记录仪。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运输",
+      "condition": "110（66）kV及以上变压器",
+      "constraint": "按照相应规范安装具有时标且有合适量程的三维冲击记录仪",
+      "related_entities": [
+        "变压器",
+        "三维冲击记录仪",
+        "运输过程"
+      ]
+    },
+    {
+      "content": "主变就位后，制造厂、运输部门、用户三方人员应共同验收，记录纸和押运记录应提供用户留存。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "验收",
+      "condition": "主变就位后",
+      "constraint": "制造厂、运输部门、用户三方人员共同验收，记录纸和押运记录提供用户留存",
+      "related_entities": [
+        "变压器",
+        "制造厂",
+        "运输部门",
+        "用户"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "变压器",
+      "target": "运输过程",
+      "type": "经历"
+    },
+    {
+      "source": "变压器",
+      "target": "制造厂",
+      "type": "制造"
+    },
+    {
+      "source": "变压器",
+      "target": "运输部门",
+      "type": "运输"
+    },
+    {
+      "source": "变压器",
+      "target": "用户",
+      "type": "交付"
+    },
+    {
+      "source": "制造厂",
+      "target": "运输部门",
+      "type": "协作"
+    },
+    {
+      "source": "运输部门",
+      "target": "用户",
+      "type": "协作"
+    },
+    {
+      "source": "用户",
+      "target": "变压器",
+      "type": "验收"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 392,
+      "source_row_id": "392",
+      "clause_index": 2,
+      "source_text": "110（66）kV及以上变压器在运输过程中，应按照相应规范安装具有时标且有合适量程的三维冲击记录仪。主变就位后，制造厂、运输部门、用户三方人员应共同验收，记录纸和押运记录应提供用户留存"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.173481+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

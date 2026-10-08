@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "局部放电试验",
+      "type": "试验",
+      "desc": "电力设备局部放电的检测方法"
+    },
+    {
+      "name": "局部放电量",
+      "type": "参数",
+      "desc": "电力设备局部放电的量化指标"
+    },
+    {
+      "name": "测量时间",
+      "type": "参数",
+      "desc": "局部放电试验中进行测量的时间长度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "各电压等级专用技术规范内局部放电试验要求中，对局部放电量进行了规定，未明确测量时间",
+      "type": "强制",
+      "subject": "各电压等级专用技术规范",
+      "action": "规定局部放电量，未规定测量时间",
+      "condition": "局部放电试验",
+      "constraint": "局部放电量应符合相关技术规范要求，测量时间未作明确规定",
+      "related_entities": [
+        "局部放电试验",
+        "局部放电量",
+        "测量时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "局部放电试验",
+      "target": "局部放电量",
+      "type": "测量对象"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "测量时间",
+      "type": "测量参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 32,
+      "source_row_id": "32",
+      "clause_index": 1,
+      "source_text": "各电压等级专用技术规范内局部放电试验要求中，对局部放电量进行了规定，未明确测量时间"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.785790+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

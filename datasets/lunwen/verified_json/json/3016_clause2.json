@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送和分配电能的设备"
+    },
+    {
+      "name": "主泵失电切换",
+      "type": "操作",
+      "desc": "当主泵发生失电情况时，进行切换的操作"
+    },
+    {
+      "name": "10kV站用电备自投切换",
+      "type": "操作",
+      "desc": "10kV站用电备用电源自动投入切换操作"
+    },
+    {
+      "name": "切换时间",
+      "type": "参数",
+      "desc": "主泵失电切换或10kV站用电备自投切换所需的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵失电切换时间应躲过10kV站用电备自投切换时间。",
+      "type": "强制",
+      "subject": "主泵失电切换",
+      "action": "切换",
+      "condition": "主泵失电情况下",
+      "constraint": "主泵失电切换时间 > 10kV站用电备自投切换时间",
+      "related_entities": [
+        "主泵",
+        "主泵失电切换",
+        "10kV站用电备自投切换"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "主泵失电切换",
+      "type": "执行"
+    },
+    {
+      "source": "10kV站用电备自投切换",
+      "target": "主泵失电切换",
+      "type": "避免同时发生"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3007,
+      "source_row_id": "3016",
+      "clause_index": 2,
+      "source_text": "主泵失电切换时间应躲过10kV站用电备自投切换时间。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.270316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

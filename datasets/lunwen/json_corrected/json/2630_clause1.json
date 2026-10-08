@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "例行试验",
+      "type": "试验",
+      "desc": "电力设备定期进行的检查与测试"
+    },
+    {
+      "name": "端子标志检验",
+      "type": "试验项目",
+      "desc": "检查端子标识是否正确无误"
+    },
+    {
+      "name": "一次电压端的工频耐压试验",
+      "type": "试验项目",
+      "desc": "对一次电压端施加工频电压进行耐压试验"
+    },
+    {
+      "name": "局部放电测量",
+      "type": "试验项目",
+      "desc": "检测电力设备内部局部放电量"
+    },
+    {
+      "name": "低压器件的工频耐压试验",
+      "type": "试验项目",
+      "desc": "对低压器件施加工频电压进行耐压试验"
+    },
+    {
+      "name": "准确度试验",
+      "type": "试验项目",
+      "desc": "检测电力设备的测量准确度"
+    },
+    {
+      "name": "电容量和介质损耗因数测量",
+      "type": "试验项目",
+      "desc": "测量电力设备的电容量及介质损耗因数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "例行试验项目包括：端子标志检验、一次电压端的工频耐压试验、局部放电测量、低压器件的工频耐压试验、准确度试验、电容量和介质损耗因数测量。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "例行试验",
+      "condition": "电力设备运行周期内",
+      "constraint": "必须包含上述所有试验项目",
+      "related_entities": [
+        "例行试验",
+        "端子标志检验",
+        "一次电压端的工频耐压试验",
+        "局部放电测量",
+        "低压器件的工频耐压试验",
+        "准确度试验",
+        "电容量和介质损耗因数测量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "例行试验",
+      "target": "端子标志检验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "一次电压端的工频耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "局部放电测量",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "低压器件的工频耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "准确度试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "电容量和介质损耗因数测量",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2630,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "142f8f1de116f86a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2630_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

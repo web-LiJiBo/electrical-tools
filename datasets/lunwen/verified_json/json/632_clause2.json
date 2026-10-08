@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "直埋敷设的电缆",
+      "type": "电力设施",
+      "desc": "直接埋设于地下的电缆"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "铁路线路"
+    },
+    {
+      "name": "公路",
+      "type": "交通设施",
+      "desc": "公路线路"
+    },
+    {
+      "name": "街道",
+      "type": "城市设施",
+      "desc": "城市道路"
+    },
+    {
+      "name": "路基",
+      "type": "交通设施",
+      "desc": "铁路或公路路基"
+    },
+    {
+      "name": "街道路面",
+      "type": "城市设施",
+      "desc": "城市道路路面"
+    },
+    {
+      "name": "排水沟",
+      "type": "城市设施",
+      "desc": "城市排水沟"
+    },
+    {
+      "name": "保护管",
+      "type": "电力设施",
+      "desc": "用于保护电缆的管道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋敷设的电缆与铁路、公路或街道交叉时，应穿保护管，保护范围应超出路基、街道路面两边及排水沟边0.5m以上",
+      "type": "强制",
+      "subject": "直埋敷设的电缆",
+      "action": "敷设",
+      "condition": "与铁路、公路或街道交叉时",
+      "constraint": "保护范围应超出路基、街道路面两边及排水沟边0.5m以上",
+      "related_entities": [
+        "直埋敷设的电缆",
+        "铁路",
+        "公路",
+        "街道",
+        "路基",
+        "街道路面",
+        "排水沟",
+        "保护管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋敷设的电缆",
+      "target": "铁路",
+      "type": "交叉"
+    },
+    {
+      "source": "直埋敷设的电缆",
+      "target": "公路",
+      "type": "交叉"
+    },
+    {
+      "source": "直埋敷设的电缆",
+      "target": "街道",
+      "type": "交叉"
+    },
+    {
+      "source": "直埋敷设的电缆",
+      "target": "路基",
+      "type": "保护"
+    },
+    {
+      "source": "直埋敷设的电缆",
+      "target": "街道路面",
+      "type": "保护"
+    },
+    {
+      "source": "直埋敷设的电缆",
+      "target": "排水沟",
+      "type": "保护"
+    },
+    {
+      "source": "直埋敷设的电缆",
+      "target": "保护管",
+      "type": "穿设"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 632,
+      "source_row_id": "632",
+      "clause_index": 2,
+      "source_text": "直埋敷设的电缆与铁路、公路或街道交叉时，应穿保护管，保护范围应超出路基、街道路面两边及排水沟边0.5m以上"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.453486+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

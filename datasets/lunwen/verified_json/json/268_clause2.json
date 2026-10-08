@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "金属封闭开关设备",
+      "type": "电力设备",
+      "desc": "一种具有金属外壳的开关设备"
+    },
+    {
+      "name": "内外绝缘件",
+      "type": "电力设备部件",
+      "desc": "开关设备内部和外部的绝缘材料"
+    },
+    {
+      "name": "爬电比距",
+      "type": "电气参数",
+      "desc": "绝缘件沿表面的爬电路径长度与额定电压之比"
+    },
+    {
+      "name": "瓷质绝缘件",
+      "type": "电力设备部件",
+      "desc": "以瓷质材料制成的绝缘件"
+    },
+    {
+      "name": "有机绝缘件",
+      "type": "电力设备部件",
+      "desc": "以有机材料制成的绝缘件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "金属封闭开关设备内外绝缘件的最小标称爬电比距为：lt≥18mm/kV（瓷质）、lt≥20mm/kV（有机）",
+      "type": "强制",
+      "subject": "金属封闭开关设备",
+      "action": "设计制造",
+      "condition": "在海拔不超过1000m的地区运行",
+      "constraint": "瓷质绝缘件≥18mm/kV；有机绝缘件≥20mm/kV",
+      "related_entities": [
+        "金属封闭开关设备",
+        "内外绝缘件",
+        "瓷质绝缘件",
+        "有机绝缘件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "金属封闭开关设备",
+      "target": "内外绝缘件",
+      "type": "包含"
+    },
+    {
+      "source": "瓷质绝缘件",
+      "target": "内外绝缘件",
+      "type": "组成"
+    },
+    {
+      "source": "有机绝缘件",
+      "target": "内外绝缘件",
+      "type": "组成"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 268,
+      "source_row_id": "268",
+      "clause_index": 2,
+      "source_text": "爬电距离:按DL/T593中5.14.2的规定，金属封闭开关设备内外绝缘件的最小标称爬电比距为：lt≥18mm/kV（瓷质）、lt≥20mm/kV（有机）"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.96,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.041601+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

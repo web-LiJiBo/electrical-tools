@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "顶层油温升",
+      "type": "温升限值",
+      "desc": "变压器顶层油温升限值"
+    },
+    {
+      "name": "绕组平均温升",
+      "type": "温升限值",
+      "desc": "变压器绕组平均温升限值"
+    },
+    {
+      "name": "绕组热点温升",
+      "type": "温升限值",
+      "desc": "变压器绕组热点温升限值"
+    },
+    {
+      "name": "铁芯和金属结构件温升",
+      "type": "温升限值",
+      "desc": "变压器铁芯和金属结构件温升限值"
+    },
+    {
+      "name": "油箱表面温升",
+      "type": "温升限值",
+      "desc": "变压器油箱表面温升限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三侧同时满负载时，顶层油温升限值为55K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "三侧同时满负载",
+      "constraint": "顶层油温升≤55K",
+      "related_entities": [
+        "顶层油温升"
+      ]
+    },
+    {
+      "content": "三侧同时满负载时，绕组平均温升限值为65K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "三侧同时满负载",
+      "constraint": "绕组平均温升≤65K",
+      "related_entities": [
+        "绕组平均温升"
+      ]
+    },
+    {
+      "content": "三侧同时满负载时，绕组热点温升限值为78K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "三侧同时满负载",
+      "constraint": "绕组热点温升≤78K",
+      "related_entities": [
+        "绕组热点温升"
+      ]
+    },
+    {
+      "content": "三侧同时满负载时，铁芯和金属结构件温升限值为78K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "三侧同时满负载",
+      "constraint": "铁芯和金属结构件温升≤78K",
+      "related_entities": [
+        "铁芯和金属结构件温升"
+      ]
+    },
+    {
+      "content": "三侧同时满负载时，油箱表面温升限值为80K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行",
+      "condition": "三侧同时满负载",
+      "constraint": "油箱表面温升≤80K",
+      "related_entities": [
+        "油箱表面温升"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "顶层油温升",
+      "target": "变压器",
+      "type": "属于"
+    },
+    {
+      "source": "绕组平均温升",
+      "target": "变压器",
+      "type": "属于"
+    },
+    {
+      "source": "绕组热点温升",
+      "target": "变压器",
+      "type": "属于"
+    },
+    {
+      "source": "铁芯和金属结构件温升",
+      "target": "变压器",
+      "type": "属于"
+    },
+    {
+      "source": "油箱表面温升",
+      "target": "变压器",
+      "type": "属于"
+    }
+  ]
+}

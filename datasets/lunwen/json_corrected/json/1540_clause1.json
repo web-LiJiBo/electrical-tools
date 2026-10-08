@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "柱上变压器",
+      "type": "电力设备",
+      "desc": "安装在电杆上的变压器"
+    },
+    {
+      "name": "负荷中心",
+      "type": "电力负荷",
+      "desc": "电力负荷集中区域"
+    },
+    {
+      "name": "普通居民负荷",
+      "type": "电力负荷",
+      "desc": "居民用电负荷"
+    },
+    {
+      "name": "三相变压器",
+      "type": "电力设备",
+      "desc": "具有三个绕组的变压器"
+    },
+    {
+      "name": "单相变压器",
+      "type": "电力设备",
+      "desc": "具有一个绕组的变压器"
+    },
+    {
+      "name": "供电",
+      "type": "电力服务",
+      "desc": "电力公司向用户提供的电力服务"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上变压器应靠近负荷中心",
+      "type": "强制",
+      "subject": "柱上变压器",
+      "action": "安装位置",
+      "condition": "靠近负荷中心",
+      "constraint": "无具体距离要求",
+      "related_entities": [
+        "柱上变压器",
+        "负荷中心"
+      ]
+    },
+    {
+      "content": "对于普通居民负荷，根据需求及发展可采用三相或单相变压器靠近供电",
+      "type": "强制",
+      "subject": "普通居民负荷",
+      "action": "选择变压器类型",
+      "condition": "根据需求及发展",
+      "constraint": "三相变压器容量不宜超过400(315)kVA，单相变压器容量不宜超过100kVA",
+      "related_entities": [
+        "普通居民负荷",
+        "三相变压器",
+        "单相变压器",
+        "供电"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上变压器",
+      "target": "负荷中心",
+      "type": "靠近"
+    },
+    {
+      "source": "普通居民负荷",
+      "target": "三相变压器",
+      "type": "使用"
+    },
+    {
+      "source": "普通居民负荷",
+      "target": "单相变压器",
+      "type": "使用"
+    },
+    {
+      "source": "三相变压器",
+      "target": "供电",
+      "type": "提供电力"
+    },
+    {
+      "source": "单相变压器",
+      "target": "供电",
+      "type": "提供电力"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1540,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c3dea0c729c8c86f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1540_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

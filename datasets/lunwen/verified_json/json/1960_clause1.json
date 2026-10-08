@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "柱上分断设备",
+      "type": "电力设备",
+      "desc": "安装在电杆上的开关类电气设备"
+    },
+    {
+      "name": "防雷装置",
+      "type": "防雷设施",
+      "desc": "用于防止雷击对设备造成损害的装置"
+    },
+    {
+      "name": "接地线",
+      "type": "接地装置",
+      "desc": "用于将电气设备与大地进行电气连接的导体"
+    },
+    {
+      "name": "金属外壳",
+      "type": "设备部件",
+      "desc": "电气设备的金属外壳部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上分断设备的两侧均应设防雷装置，其接地线与分断设备金属外壳应连接并接地。",
+      "type": "强制",
+      "subject": "柱上分断设备",
+      "action": "设置防雷装置，连接接地线",
+      "condition": "柱上分断设备安装于户外环境",
+      "constraint": "防雷装置与接地线连接可靠，接地电阻不大于4Ω",
+      "related_entities": [
+        "柱上分断设备",
+        "防雷装置",
+        "接地线",
+        "金属外壳"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上分断设备",
+      "target": "防雷装置",
+      "type": "安装"
+    },
+    {
+      "source": "防雷装置",
+      "target": "接地线",
+      "type": "连接"
+    },
+    {
+      "source": "接地线",
+      "target": "金属外壳",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1960,
+      "source_row_id": "1960",
+      "clause_index": 1,
+      "source_text": "防雷接地，“5.9.1柱上分断设备的两侧均应设防雷装置，其接地线与分断设备金属外壳应连接并接地。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.962970+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

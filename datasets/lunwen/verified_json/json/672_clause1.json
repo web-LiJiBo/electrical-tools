@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "砍伐通道",
+      "type": "作业活动",
+      "desc": "在电力线路通道内进行树木砍伐的作业活动"
+    },
+    {
+      "name": "线路宽度",
+      "type": "技术参数",
+      "desc": "电力线路通道的宽度"
+    },
+    {
+      "name": "通道净宽度",
+      "type": "技术参数",
+      "desc": "砍伐后通道的最小宽度"
+    },
+    {
+      "name": "主要树种自然生长高度",
+      "type": "技术参数",
+      "desc": "通道附近主要树种自然生长的最大高度"
+    },
+    {
+      "name": "非主要树种",
+      "type": "作业对象",
+      "desc": "通道附近除主要树种外的其他树木"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当砍伐通道时，通道净宽度不应小于线路宽度加通道附近主要树种自然生长高度的2倍。",
+      "type": "强制",
+      "subject": "砍伐通道",
+      "action": "砍伐通道",
+      "condition": "砍伐通道前",
+      "constraint": "通道净宽度≥线路宽度+2*主要树种自然生长高度",
+      "related_entities": [
+        "砍伐通道",
+        "线路宽度",
+        "通道净宽度",
+        "主要树种自然生长高度"
+      ]
+    },
+    {
+      "content": "通道附近超过主要树种自然生长高度的非主要树种树木应砍伐。",
+      "type": "强制",
+      "subject": "砍伐通道",
+      "action": "砍伐非主要树种",
+      "condition": "砍伐通道前",
+      "constraint": "非主要树种高度>主要树种自然生长高度",
+      "related_entities": [
+        "砍伐通道",
+        "非主要树种",
+        "主要树种自然生长高度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "砍伐通道",
+      "target": "线路宽度",
+      "type": "依赖于"
+    },
+    {
+      "source": "砍伐通道",
+      "target": "通道净宽度",
+      "type": "影响"
+    },
+    {
+      "source": "砍伐通道",
+      "target": "主要树种自然生长高度",
+      "type": "参考依据"
+    },
+    {
+      "source": "砍伐通道",
+      "target": "非主要树种",
+      "type": "作业对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 672,
+      "source_row_id": "672",
+      "clause_index": 1,
+      "source_text": "当砍伐通道时，通道净宽度不应小于线路宽度加通道附近主要树种自然生长高度的2倍。通道附近超过主要树种自然生长高度的非主要树种树木应砍伐"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.496482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

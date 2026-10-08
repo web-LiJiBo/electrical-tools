@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "最大覆冰厚度",
+      "type": "技术参数",
+      "desc": "输电线路在覆冰条件下所能承受的最大冰层厚度"
+    },
+    {
+      "name": "20mm",
+      "type": "数值",
+      "desc": "最大覆冰厚度的具体数值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "最大覆冰厚度不应超过20mm",
+      "type": "强制",
+      "subject": "输电线路设计与施工",
+      "action": "设计与施工",
+      "condition": "在覆冰条件下运行的输电线路",
+      "constraint": "最大覆冰厚度≤20mm",
+      "related_entities": [
+        "最大覆冰厚度",
+        "20mm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最大覆冰厚度",
+      "target": "20mm",
+      "type": "等于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1534,
+      "source_row_id": "1534",
+      "clause_index": 1,
+      "source_text": "最大覆冰厚度：20mm"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5714,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.485962+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "电力系统中用于直流输电的换流装置"
+    },
+    {
+      "name": "水冷却",
+      "type": "冷却方式",
+      "desc": "利用水作为冷却介质进行散热的方式"
+    },
+    {
+      "name": "额定工况",
+      "type": "运行状态",
+      "desc": "设备正常运行的工作状态"
+    },
+    {
+      "name": "连续过负荷",
+      "type": "运行状态",
+      "desc": "设备在超过额定功率的情况下持续运行的状态"
+    },
+    {
+      "name": "5s过负荷",
+      "type": "运行状态",
+      "desc": "设备在超过额定功率的情况下短时间运行的状态"
+    },
+    {
+      "name": "损耗",
+      "type": "电气参数",
+      "desc": "设备在运行过程中产生的能量损失"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水冷却带走的热量应取换流阀在额定工况连续过负荷或5s过负荷时的损耗两者中的较大值",
+      "type": "强制",
+      "subject": "换流阀冷却设计",
+      "action": "确定冷却带走的热量",
+      "condition": "换流阀在额定工况连续过负荷或5s过负荷运行",
+      "constraint": "取换流阀在上述两种工况下损耗的最大值",
+      "related_entities": [
+        "换流阀",
+        "水冷却",
+        "额定工况",
+        "连续过负荷",
+        "5s过负荷",
+        "损耗"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流阀",
+      "target": "水冷却",
+      "type": "采用"
+    },
+    {
+      "source": "换流阀",
+      "target": "损耗",
+      "type": "产生"
+    },
+    {
+      "source": "换流阀",
+      "target": "额定工况",
+      "type": "运行状态"
+    },
+    {
+      "source": "换流阀",
+      "target": "连续过负荷",
+      "type": "运行状态"
+    },
+    {
+      "source": "换流阀",
+      "target": "5s过负荷",
+      "type": "运行状态"
+    }
+  ],
+  "metadata": {
+    "pair_id": 827,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0ad793e253d5f268",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\827_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "“户外设备的箱体应选用不锈钢、铸铝或具有防腐措施的材料，应具有防潮、防腐、防小动物进入等功能，防护等级最低位IP4XW，应采取可靠措施保证箱体的密封性能，不得用防水胶或密封胶等临时密封材料。”",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 282,
+      "source_row_id": "282",
+      "clause_index": 2,
+      "source_text": "“户外设备的箱体应选用不锈钢、铸铝或具有防腐措施的材料，应具有防潮、防腐、防小动物进入等功能，防护等级最低位IP4XW，应采取可靠措施保证箱体的密封性能，不得用防水胶或密封胶等临时密封材料。”"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.057603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

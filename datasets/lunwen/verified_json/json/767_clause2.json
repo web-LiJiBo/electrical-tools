@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "输变电设备",
+      "type": "电力设备",
+      "desc": "输变电系统中的电气设备"
+    },
+    {
+      "name": "状态检修试验",
+      "type": "检修试验",
+      "desc": "针对设备状态进行的定期检查与测试"
+    },
+    {
+      "name": "例行试验",
+      "type": "检修试验",
+      "desc": "设备正常运行周期内的例行检查与测试"
+    },
+    {
+      "name": "带电检测",
+      "type": "检修试验",
+      "desc": "在设备带电状态下进行的检测活动"
+    },
+    {
+      "name": "核心部件",
+      "type": "电力设备",
+      "desc": "构成设备主要功能的关键组件"
+    },
+    {
+      "name": "解体性检修",
+      "type": "检修维护",
+      "desc": "对设备进行拆卸并全面检查与维修"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110（66）kV及以上新设备投运满1至2年，以及停运6个月以上重新投运前的设备，应进行例行试验",
+      "type": "强制",
+      "subject": "输变电设备",
+      "action": "进行例行试验",
+      "condition": "110（66）kV及以上新设备投运满1至2年，以及停运6个月以上重新投运前",
+      "constraint": "110（66）kV及以上新设备投运满1至2年，以及停运6个月以上重新投运前",
+      "related_entities": [
+        "输变电设备",
+        "例行试验"
+      ]
+    },
+    {
+      "content": "1个月内开展带电检测",
+      "type": "强制",
+      "subject": "输变电设备",
+      "action": "开展带电检测",
+      "condition": "110（66）kV及以上新设备投运满1至2年，以及停运6个月以上重新投运前",
+      "constraint": "1个月内",
+      "related_entities": [
+        "输变电设备",
+        "带电检测"
+      ]
+    },
+    {
+      "content": "对核心部件或主体进行解体性检修后重新投运的设备，可参照新设备要求执行",
+      "type": "强制",
+      "subject": "输变电设备",
+      "action": "参照新设备要求执行",
+      "condition": "对核心部件或主体进行解体性检修后重新投运",
+      "constraint": "对核心部件或主体进行解体性检修后重新投运",
+      "related_entities": [
+        "输变电设备",
+        "解体性检修",
+        "例行试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "输变电设备",
+      "target": "状态检修试验",
+      "type": "包含"
+    },
+    {
+      "source": "输变电设备",
+      "target": "例行试验",
+      "type": "包含"
+    },
+    {
+      "source": "输变电设备",
+      "target": "带电检测",
+      "type": "包含"
+    },
+    {
+      "source": "输变电设备",
+      "target": "核心部件",
+      "type": "包含"
+    },
+    {
+      "source": "输变电设备",
+      "target": "解体性检修",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 767,
+      "source_row_id": "767",
+      "clause_index": 2,
+      "source_text": "试验说明开展输变电设备状态检修试验，应注意以下事项：b）110（66）kV及以上新设备投运满1至2年，以及停运6个月以上重新投运前的设备，应进行例行试验，1个月内开展带电检测。对核心部件或主体进行解体性检修后重新投运的设备，可参照新设备要求执行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.598080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

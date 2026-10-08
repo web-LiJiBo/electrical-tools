@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "设备正常工作时的电流值"
+    },
+    {
+      "name": "过载电流",
+      "type": "电气参数",
+      "desc": "设备超过额定电流的电流值"
+    },
+    {
+      "name": "连续运行时间",
+      "type": "运行参数",
+      "desc": "设备在额定电流下持续工作的最长时间"
+    },
+    {
+      "name": "过载时间",
+      "type": "运行参数",
+      "desc": "设备在过载电流下持续工作的最短时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.1倍额定电流应能连续运行",
+      "type": "强制",
+      "subject": "设备",
+      "action": "连续运行",
+      "condition": "额定电流为Ie",
+      "constraint": "I=1.1Ie, 运行时间≥Tc",
+      "related_entities": [
+        "额定电流",
+        "连续运行时间"
+      ]
+    },
+    {
+      "content": "1.2倍过载时间应不低于2s",
+      "type": "强制",
+      "subject": "设备",
+      "action": "过载运行",
+      "condition": "过载电流为1.2Ie",
+      "constraint": "过载时间≥2s",
+      "related_entities": [
+        "过载电流",
+        "过载时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定电流",
+      "target": "连续运行时间",
+      "type": "影响"
+    },
+    {
+      "source": "过载电流",
+      "target": "过载时间",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2479,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "424cdc943a70241f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2479_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "entities": [
+    {
+      "name": "油浸式电力变压器",
+      "type": "电力设备",
+      "desc": "一种将电能从一个电压等级转换到另一个电压等级的静止电器"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种用于限制短路电流或吸收系统无功功率的电力设备"
+    },
+    {
+      "name": "试验项目",
+      "type": "试验方法",
+      "desc": "对电力设备进行检测和验证其性能的方法"
+    },
+    {
+      "name": "试验周期",
+      "type": "试验周期",
+      "desc": "电力设备进行试验的时间间隔"
+    },
+    {
+      "name": "试验要求",
+      "type": "试验要求",
+      "desc": "电力设备试验应满足的技术指标和要求"
+    },
+    {
+      "name": "运行中接地电流",
+      "type": "电气参数",
+      "desc": "电力设备在正常运行状态下流经接地装置的电流值"
+    },
+    {
+      "name": "两点接地现象",
+      "type": "故障现象",
+      "desc": "电力设备内部或外部存在两个不同点同时发生接地的情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油浸式电力变压器、电抗器的试验项目、周期和要求见表5-1中第8项要求",
+      "type": "强制",
+      "subject": "油浸式电力变压器、电抗器",
+      "action": "试验",
+      "condition": "定期试验",
+      "constraint": "试验项目、周期和要求见表5-1中第8项要求",
+      "related_entities": [
+        "油浸式电力变压器",
+        "电抗器",
+        "试验项目",
+        "试验周期",
+        "试验要求"
+      ]
+    },
+    {
+      "content": "出现两点接地现象时，运行中接地电流一般不大于0.1A",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "运行",
+      "condition": "出现两点接地现象",
+      "constraint": "运行中接地电流一般不大于0.1A",
+      "related_entities": [
+        "电力设备",
+        "运行中接地电流",
+        "两点接地现象"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式电力变压器",
+      "target": "试验项目",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "试验项目",
+      "type": "包含"
+    },
+    {
+      "source": "试验项目",
+      "target": "试验周期",
+      "type": "包含"
+    },
+    {
+      "source": "试验项目",
+      "target": "试验要求",
+      "type": "包含"
+    },
+    {
+      "source": "试验项目",
+      "target": "运行中接地电流",
+      "type": "影响"
+    },
+    {
+      "source": "试验项目",
+      "target": "两点接地现象",
+      "type": "影响"
+    },
+    {
+      "source": "运行中接地电流",
+      "target": "两点接地现象",
+      "type": "反映"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 812,
+      "source_row_id": "812",
+      "clause_index": 1,
+      "source_text": "油浸式电力变压器、电抗器的试验项目、周期和要求见表5-1中第8项要求：出现两点接地现象时，运行中接地电流一般不大于0.1A"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9643,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.667080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

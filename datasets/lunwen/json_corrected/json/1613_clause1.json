@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "光电流互感器",
+      "type": "电力设备",
+      "desc": "一种光电式电流互感器"
+    },
+    {
+      "name": "直流分压器",
+      "type": "电力设备",
+      "desc": "一种直流电压测量装置"
+    },
+    {
+      "name": "零磁通电流互感器",
+      "type": "电力设备",
+      "desc": "一种高精度电流互感器"
+    },
+    {
+      "name": "合并单元",
+      "type": "电力设备",
+      "desc": "一种数据采集与处理装置"
+    },
+    {
+      "name": "模拟量输出模块",
+      "type": "电力设备",
+      "desc": "一种模拟信号输出装置"
+    },
+    {
+      "name": "差分放大器",
+      "type": "电力设备",
+      "desc": "一种信号放大装置"
+    },
+    {
+      "name": "两路独立电源",
+      "type": "电力设备",
+      "desc": "两路不直接连接的电源"
+    },
+    {
+      "name": "DC/DC转换耦合",
+      "type": "电力设备",
+      "desc": "一种电源隔离耦合装置"
+    },
+    {
+      "name": "监视功能",
+      "type": "功能",
+      "desc": "对电源状态进行监测的功能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "光电流互感器、直流分压器、零磁通电流互感器等设备测量传输环节中的模块，如合并单元、模拟量输出模块、差分放大器等，应由两路独立电源或两路电源经DC/DC转换耦合后供电，每路电源具有监视功能",
+      "type": "强制",
+      "subject": "光电流互感器、直流分压器、零磁通电流互感器等设备测量传输环节中的模块",
+      "action": "供电",
+      "condition": "在电力系统中运行",
+      "constraint": "必须采用两路独立电源或两路电源经DC/DC转换耦合后供电，并且每路电源具有监视功能",
+      "related_entities": [
+        "光电流互感器",
+        "直流分压器",
+        "零磁通电流互感器",
+        "合并单元",
+        "模拟量输出模块",
+        "差分放大器",
+        "两路独立电源",
+        "DC/DC转换耦合",
+        "监视功能"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "光电流互感器",
+      "target": "合并单元",
+      "type": "包含"
+    },
+    {
+      "source": "直流分压器",
+      "target": "模拟量输出模块",
+      "type": "包含"
+    },
+    {
+      "source": "零磁通电流互感器",
+      "target": "差分放大器",
+      "type": "包含"
+    },
+    {
+      "source": "两路独立电源",
+      "target": "光电流互感器",
+      "type": "供电"
+    },
+    {
+      "source": "两路独立电源",
+      "target": "直流分压器",
+      "type": "供电"
+    },
+    {
+      "source": "两路独立电源",
+      "target": "零磁通电流互感器",
+      "type": "供电"
+    },
+    {
+      "source": "DC/DC转换耦合",
+      "target": "两路独立电源",
+      "type": "耦合"
+    },
+    {
+      "source": "监视功能",
+      "target": "两路独立电源",
+      "type": "监控"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1613,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "63495204ce575d13",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1613_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

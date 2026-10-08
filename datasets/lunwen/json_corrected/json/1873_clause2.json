@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "水底电缆",
+      "type": "电力设施",
+      "desc": "埋设在水下的电缆"
+    },
+    {
+      "name": "岸上部分",
+      "type": "电力设施",
+      "desc": "从水中引出的电缆部分"
+    },
+    {
+      "name": "穿管",
+      "type": "保护措施",
+      "desc": "将电缆穿入管道内进行保护"
+    },
+    {
+      "name": "保护盖板",
+      "type": "保护措施",
+      "desc": "铺设在电缆上方的保护盖板"
+    },
+    {
+      "name": "最低水位",
+      "type": "环境参数",
+      "desc": "河流或湖泊的最低水位线"
+    },
+    {
+      "name": "船只搁浅",
+      "type": "环境事件",
+      "desc": "船只因水位低而搁浅"
+    },
+    {
+      "name": "撑篙",
+      "type": "工具",
+      "desc": "用于支撑或测量的竹竿"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水底电缆引到岸上的部分应采取穿管或加保护盖板等保护措施",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "采取保护措施",
+      "condition": "电缆引到岸上的部分",
+      "constraint": "穿管或加保护盖板",
+      "related_entities": [
+        "水底电缆",
+        "穿管",
+        "保护盖板"
+      ]
+    },
+    {
+      "content": "其保护范围，下端应为最低水位时船只搁浅及撑篙达不到之处",
+      "type": "强制",
+      "subject": "电缆保护范围",
+      "action": "设置保护范围",
+      "condition": "最低水位时",
+      "constraint": "船只搁浅及撑篙达不到之处",
+      "related_entities": [
+        "水底电缆",
+        "最低水位",
+        "船只搁浅",
+        "撑篙"
+      ]
+    },
+    {
+      "content": "上端应直接进入护岸或河堤1m以上",
+      "type": "强制",
+      "subject": "电缆上端",
+      "action": "进入护岸或河堤",
+      "condition": "电缆上端",
+      "constraint": "1m以上",
+      "related_entities": [
+        "水底电缆",
+        "护岸",
+        "河堤"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水底电缆",
+      "target": "穿管",
+      "type": "采取保护措施"
+    },
+    {
+      "source": "水底电缆",
+      "target": "保护盖板",
+      "type": "采取保护措施"
+    },
+    {
+      "source": "水底电缆",
+      "target": "最低水位",
+      "type": "保护范围下限"
+    },
+    {
+      "source": "水底电缆",
+      "target": "船只搁浅",
+      "type": "保护范围下限"
+    },
+    {
+      "source": "水底电缆",
+      "target": "撑篙",
+      "type": "保护范围下限"
+    },
+    {
+      "source": "水底电缆",
+      "target": "护岸",
+      "type": "保护范围上限"
+    },
+    {
+      "source": "水底电缆",
+      "target": "河堤",
+      "type": "保护范围上限"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1873,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "21b5988b6282059d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1873_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

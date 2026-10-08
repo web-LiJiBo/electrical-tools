@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "服务器",
+      "type": "硬件",
+      "desc": "用于处理电力系统数据的计算机"
+    },
+    {
+      "name": "操作员工作站",
+      "type": "软件",
+      "desc": "供操作员进行日常操作的终端"
+    },
+    {
+      "name": "工程师工作站",
+      "type": "软件",
+      "desc": "供工程师进行维护和管理的终端"
+    },
+    {
+      "name": "站长工作站",
+      "type": "软件",
+      "desc": "供站长进行管理和监控的终端"
+    },
+    {
+      "name": "培训工作站",
+      "type": "软件",
+      "desc": "供培训人员进行学习和模拟操作的终端"
+    },
+    {
+      "name": "远动工作站",
+      "type": "软件",
+      "desc": "负责与上级调度中心通信的终端"
+    },
+    {
+      "name": "网络设备",
+      "type": "硬件",
+      "desc": "包括交换机、路由器等网络基础设施"
+    },
+    {
+      "name": "站局域网",
+      "type": "网络",
+      "desc": "电力系统内部的局域网络"
+    },
+    {
+      "name": "计算机节点",
+      "type": "硬件",
+      "desc": "网络中独立的计算单元"
+    },
+    {
+      "name": "冗余配置",
+      "type": "配置",
+      "desc": "关键应用的计算机节点采用冗余配置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "系统由服务器、操作员工作站、工程师工作站、站长工作站、培训工作站、远动工作站以及网络设备等组成。",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "组成",
+      "condition": "电力系统正常运行",
+      "constraint": "无",
+      "related_entities": [
+        "服务器",
+        "操作员工作站",
+        "工程师工作站",
+        "站长工作站",
+        "培训工作站",
+        "远动工作站",
+        "网络设备"
+      ]
+    },
+    {
+      "content": "站局域网上连接的若干台服务器、工作站应为分布式结构，不同的应用分布于不同的计算机节点上。",
+      "type": "强制",
+      "subject": "站局域网",
+      "action": "连接",
+      "condition": "电力系统正常运行",
+      "constraint": "分布式结构",
+      "related_entities": [
+        "站局域网",
+        "服务器",
+        "工作站",
+        "计算机节点"
+      ]
+    },
+    {
+      "content": "有关键应用的计算机节点硬座冗余配置。",
+      "type": "强制",
+      "subject": "计算机节点",
+      "action": "冗余配置",
+      "condition": "关键应用正常运行",
+      "constraint": "冗余配置",
+      "related_entities": [
+        "计算机节点",
+        "冗余配置"
+      ]
+    },
+    {
+      "content": "整个局域网应按双网配置，以保证系统的稳定运行。",
+      "type": "强制",
+      "subject": "站局域网",
+      "action": "双网配置",
+      "condition": "电力系统正常运行",
+      "constraint": "双网配置",
+      "related_entities": [
+        "站局域网"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "服务器",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "操作员工作站",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "工程师工作站",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "站长工作站",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "培训工作站",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "远动工作站",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "网络设备",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "计算机节点",
+      "target": "站局域网",
+      "type": "连接"
+    },
+    {
+      "source": "冗余配置",
+      "target": "计算机节点",
+      "type": "配置"
+    },
+    {
+      "source": "站局域网",
+      "target": "冗余配置",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 846,
+      "source_row_id": "846",
+      "clause_index": 2,
+      "source_text": "系统由服务器、操作员工作站、工程师工作站、站长工作站、培训工作站、远动工作站以及网络设备等组成。站局域网上连接的若干台服务器、工作站应为分布式结构，不同的应用分布于不同的计算机节点上，有关键应用的计算机节点硬座冗余配置。整个局域网应按双网配置，以保证系统的稳定运行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.705083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

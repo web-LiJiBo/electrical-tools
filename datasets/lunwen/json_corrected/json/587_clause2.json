@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "变电站",
+      "type": "设施",
+      "desc": "电力系统中汇集、分配和控制电能的场所"
+    },
+    {
+      "name": "分段",
+      "type": "电气参数",
+      "desc": "变电站中母线的划分部分"
+    },
+    {
+      "name": "母线",
+      "type": "电气参数",
+      "desc": "变电站中用于连接不同电气设备的导电线路"
+    },
+    {
+      "name": "隔离开关",
+      "type": "设备",
+      "desc": "一种无灭弧装置的开关电器，用于隔离带电部分"
+    },
+    {
+      "name": "接地开关",
+      "type": "设备",
+      "desc": "用于将电气设备接地的开关电器"
+    },
+    {
+      "name": "就地工作电源",
+      "type": "设备",
+      "desc": "为现场操作提供电源的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用GIS的变电站，其同一分段的同侧GIS母线原则上一次建成。",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "建设",
+      "condition": "采用GIS",
+      "constraint": "同一分段的同侧GIS母线",
+      "related_entities": [
+        "GIS",
+        "变电站",
+        "分段",
+        "母线"
+      ]
+    },
+    {
+      "content": "如计划扩建母线，宜在扩建接口处预装一个内有隔离开关（配置有就地工作电源）或可拆卸导体的独立隔室。",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "扩建",
+      "condition": "计划扩建母线",
+      "constraint": "在扩建接口处预装隔离开关或可拆卸导体的独立隔室",
+      "related_entities": [
+        "GIS",
+        "变电站",
+        "分段",
+        "母线",
+        "隔离开关",
+        "就地工作电源"
+      ]
+    },
+    {
+      "content": "如计划扩建出线间隔，宜将母线隔离开关、接地开关与就地工作电源一次上全。",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "扩建",
+      "condition": "计划扩建出线间隔",
+      "constraint": "将母线隔离开关、接地开关与就地工作电源一次上全",
+      "related_entities": [
+        "GIS",
+        "变电站",
+        "分段",
+        "母线",
+        "隔离开关",
+        "接地开关",
+        "就地工作电源"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "变电站",
+      "type": "位于"
+    },
+    {
+      "source": "分段",
+      "target": "变电站",
+      "type": "属于"
+    },
+    {
+      "source": "母线",
+      "target": "变电站",
+      "type": "属于"
+    },
+    {
+      "source": "母线",
+      "target": "分段",
+      "type": "属于"
+    },
+    {
+      "source": "隔离开关",
+      "target": "GIS",
+      "type": "安装于"
+    },
+    {
+      "source": "接地开关",
+      "target": "GIS",
+      "type": "安装于"
+    },
+    {
+      "source": "就地工作电源",
+      "target": "GIS",
+      "type": "供电给"
+    }
+  ],
+  "metadata": {
+    "pair_id": 587,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a04f4fa4d7453c3d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\587_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

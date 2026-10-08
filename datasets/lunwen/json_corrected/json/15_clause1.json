@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体湿度检测",
+      "type": "检测项目",
+      "desc": "对SF6气体中的水分含量进行测量"
+    },
+    {
+      "name": "3年一次",
+      "type": "检测周期",
+      "desc": "每三年进行一次检测"
+    },
+    {
+      "name": "≤500μL/L",
+      "type": "注意值",
+      "desc": "SF6气体中水分含量的注意值"
+    },
+    {
+      "name": "110（66）kV及以上",
+      "type": "电压等级",
+      "desc": "适用于110kV及以上的电力设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6气体湿度检测110（66）kV及以上3年一次，≤500μL/L（注意值）",
+      "type": "强制",
+      "subject": "电力设备运维人员",
+      "action": "定期检测SF6气体湿度",
+      "condition": "110（66）kV及以上电压等级的电力设备",
+      "constraint": "每3年进行一次检测，检测结果不超过500μL/L",
+      "related_entities": [
+        "SF6气体湿度检测",
+        "3年一次",
+        "≤500μL/L",
+        "110（66）kV及以上"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体湿度检测",
+      "target": "3年一次",
+      "type": "检测周期"
+    },
+    {
+      "source": "SF6气体湿度检测",
+      "target": "≤500μL/L",
+      "type": "注意值"
+    },
+    {
+      "source": "SF6气体湿度检测",
+      "target": "110（66）kV及以上",
+      "type": "适用范围"
+    }
+  ],
+  "metadata": {
+    "pair_id": 15,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ef80ff33f7d7dc7d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\15_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

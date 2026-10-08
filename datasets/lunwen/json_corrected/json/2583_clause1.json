@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "直线型交叉跨越塔",
+      "type": "电力设施",
+      "desc": "用于跨越重要线路、交通要道及河流的直线型杆塔"
+    },
+    {
+      "name": "110kV及以上线路",
+      "type": "电力线路",
+      "desc": "电压等级在110kV及以上的输电线路"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "国家或地区的重要铁路运输线路"
+    },
+    {
+      "name": "高等级公路",
+      "type": "交通设施",
+      "desc": "国家或地区的重要公路运输线路"
+    },
+    {
+      "name": "高速公路",
+      "type": "交通设施",
+      "desc": "国家或地区的重要高速公路运输线路"
+    },
+    {
+      "name": "通航河流",
+      "type": "水体",
+      "desc": "具有通航功能的河流"
+    },
+    {
+      "name": "双悬垂串",
+      "type": "绝缘子串结构",
+      "desc": "由两个悬垂绝缘子组成的绝缘子串结构"
+    },
+    {
+      "name": "V型绝缘子串",
+      "type": "绝缘子串结构",
+      "desc": "呈V字形布置的绝缘子串结构"
+    },
+    {
+      "name": "八字型绝缘子串",
+      "type": "绝缘子串结构",
+      "desc": "呈八字形布置的绝缘子串结构"
+    },
+    {
+      "name": "双独立挂点",
+      "type": "挂点结构",
+      "desc": "由两个独立挂点组成的挂点结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于重要的直线型交叉跨越塔，包括跨越110kV及以上线路、铁路、高等级公路和高速公路、通航河流等，应采用双悬垂串、V型或八字型绝缘子串结构，并尽可能采用双独立挂点。",
+      "type": "强制",
+      "subject": "直线型交叉跨越塔设计与施工人员",
+      "action": "设计与施工",
+      "condition": "跨越110kV及以上线路、铁路、高等级公路和高速公路、通航河流等重要线路或设施",
+      "constraint": "采用双悬垂串、V型或八字型绝缘子串结构，并尽可能采用双独立挂点",
+      "related_entities": [
+        "直线型交叉跨越塔",
+        "110kV及以上线路",
+        "铁路",
+        "高等级公路",
+        "高速公路",
+        "通航河流",
+        "双悬垂串",
+        "V型绝缘子串",
+        "八字型绝缘子串",
+        "双独立挂点"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "110kV及以上线路",
+      "type": "跨越"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "铁路",
+      "type": "跨越"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "高等级公路",
+      "type": "跨越"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "高速公路",
+      "type": "跨越"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "通航河流",
+      "type": "跨越"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "双悬垂串",
+      "type": "采用"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "V型绝缘子串",
+      "type": "采用"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "八字型绝缘子串",
+      "type": "采用"
+    },
+    {
+      "source": "直线型交叉跨越塔",
+      "target": "双独立挂点",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2583,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "af413dac8cc21173",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2583_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

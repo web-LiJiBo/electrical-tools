@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "电缆支架",
+      "type": "电力设备",
+      "desc": "用于支撑电缆的装置"
+    },
+    {
+      "name": "电缆隧道",
+      "type": "电力设施",
+      "desc": "专门用于敷设电缆的地下空间"
+    },
+    {
+      "name": "净通道",
+      "type": "电力设施",
+      "desc": "电缆隧道内电缆支架之间的有效通行空间"
+    },
+    {
+      "name": "单列支架",
+      "type": "电力设备",
+      "desc": "电缆隧道一侧的电缆支架"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆隧道两侧支架间净通道1000",
+      "type": "强制",
+      "subject": "电缆隧道",
+      "action": "设置净通道宽度",
+      "condition": "电缆隧道两侧支架间",
+      "constraint": "1000mm",
+      "related_entities": [
+        "电缆隧道",
+        "净通道"
+      ]
+    },
+    {
+      "content": "单列支架与壁间通道900",
+      "type": "强制",
+      "subject": "电缆隧道",
+      "action": "设置净通道宽度",
+      "condition": "单列支架与墙壁之间",
+      "constraint": "900mm",
+      "related_entities": [
+        "电缆隧道",
+        "净通道",
+        "单列支架"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆隧道",
+      "target": "净通道",
+      "type": "包含"
+    },
+    {
+      "source": "电缆隧道",
+      "target": "单列支架",
+      "type": "包含"
+    },
+    {
+      "source": "净通道",
+      "target": "单列支架",
+      "type": "相邻"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 527,
+      "source_row_id": "527",
+      "clause_index": 1,
+      "source_text": "电缆支架配置及通道特征电缆隧道两侧支架间净通道1000单列支架与壁间通道900"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.328482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

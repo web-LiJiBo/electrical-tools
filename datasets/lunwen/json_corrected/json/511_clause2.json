@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "一次侧端子",
+      "type": "电力设备",
+      "desc": "电力系统中的一次设备端子"
+    },
+    {
+      "name": "直流电压",
+      "type": "电气参数",
+      "desc": "电力系统中的直流电参数"
+    },
+    {
+      "name": "试验电压值",
+      "type": "电气参数",
+      "desc": "电力设备进行试验时所施加的电压值"
+    },
+    {
+      "name": "型式试验",
+      "type": "试验方法",
+      "desc": "电力设备出厂前的例行试验"
+    },
+    {
+      "name": "Un",
+      "type": "电气参数",
+      "desc": "额定电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在一次侧端子上施加直流电压，试验电压值为型式试验中试验电压值的0.8倍，持续时间5min。",
+      "type": "强制",
+      "subject": "电力设备制造商",
+      "action": "进行电力设备出厂前的例行试验",
+      "condition": "电力设备完成制造后",
+      "constraint": "试验电压值=1.5Un×0.8, 试验持续时间5min",
+      "related_entities": [
+        "一次侧端子",
+        "直流电压",
+        "试验电压值",
+        "型式试验",
+        "Un"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一次侧端子",
+      "target": "直流电压",
+      "type": "施加"
+    },
+    {
+      "source": "直流电压",
+      "target": "试验电压值",
+      "type": "计算依据"
+    },
+    {
+      "source": "试验电压值",
+      "target": "型式试验",
+      "type": "参考标准"
+    },
+    {
+      "source": "型式试验",
+      "target": "Un",
+      "type": "额定电压值参考"
+    }
+  ],
+  "metadata": {
+    "pair_id": 511,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b22b8f615f4d18e3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\511_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

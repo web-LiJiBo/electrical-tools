@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "焊接接头",
+      "type": "电力设备",
+      "desc": "电力系统中的焊接连接部位"
+    },
+    {
+      "name": "射线检验",
+      "type": "检测方法",
+      "desc": "利用X射线对焊接接头进行无损检测的方法"
+    },
+    {
+      "name": "超声检验",
+      "type": "检测方法",
+      "desc": "利用超声波对焊接接头进行无损检测的方法"
+    },
+    {
+      "name": "工作压力",
+      "type": "技术参数",
+      "desc": "管道在正常运行时的压力值"
+    },
+    {
+      "name": "汽、水、油、气管道",
+      "type": "电力设备",
+      "desc": "输送蒸汽、水、油、气体的管道系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工作压力为（0.1~1.6）MPa的汽、水、油、气管道射线或超声检验比例为1%",
+      "type": "强制",
+      "subject": "焊接接头",
+      "action": "射线或超声检验",
+      "condition": "工作压力为（0.1~1.6）MPa的汽、水、油、气管道",
+      "constraint": "检验比例为1%",
+      "related_entities": [
+        "焊接接头",
+        "射线检验",
+        "超声检验",
+        "工作压力",
+        "汽、水、油、气管道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "焊接接头",
+      "target": "射线检验",
+      "type": "采用"
+    },
+    {
+      "source": "焊接接头",
+      "target": "超声检验",
+      "type": "采用"
+    },
+    {
+      "source": "焊接接头",
+      "target": "工作压力",
+      "type": "满足"
+    },
+    {
+      "source": "焊接接头",
+      "target": "汽、水、油、气管道",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2871,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "19aeeb7904bddce8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2871_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

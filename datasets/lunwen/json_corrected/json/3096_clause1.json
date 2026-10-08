@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "MOV冗余单元",
+      "type": "电力设备",
+      "desc": "用于保护电力系统中电容器组的金属氧化物避雷器冗余单元"
+    },
+    {
+      "name": "额定能量",
+      "type": "电力参数",
+      "desc": "电力系统中电容器组的额定储能能力"
+    },
+    {
+      "name": "MOV单元",
+      "type": "电力设备",
+      "desc": "金属氧化物避雷器的基本单元"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个平台应有MOV冗余单元，冗余单元的总容量不应小于额定能量的10%，且不少于2个MOV单元。",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "设计电力系统",
+      "condition": "电容器组存在MOV冗余需求",
+      "constraint": "MOV冗余单元总容量≥额定能量*10%且≥2个MOV单元",
+      "related_entities": [
+        "MOV冗余单元",
+        "额定能量",
+        "MOV单元"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "MOV冗余单元",
+      "target": "额定能量",
+      "type": "基于"
+    },
+    {
+      "source": "MOV冗余单元",
+      "target": "MOV单元",
+      "type": "由...组成"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3096,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "551513bf5c0f656d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3096_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "重覆冰地区",
+      "type": "地理区域",
+      "desc": "覆冰严重且持续时间较长的地区"
+    },
+    {
+      "name": "高速铁路跨越档",
+      "type": "输电线路区段",
+      "desc": "跨越高速铁路的输电线路区段"
+    },
+    {
+      "name": "覆冰状态监测装置",
+      "type": "监测设备",
+      "desc": "用于监测输电线路覆冰情况的装置"
+    },
+    {
+      "name": "不均匀沉降地质区域",
+      "type": "地理区域",
+      "desc": "地质结构不稳定，存在不均匀沉降现象的区域"
+    },
+    {
+      "name": "采空区",
+      "type": "地理区域",
+      "desc": "因地下开采导致地面塌陷形成的区域"
+    },
+    {
+      "name": "杆塔倾斜状态监测装置",
+      "type": "监测设备",
+      "desc": "用于监测杆塔倾斜情况的装置"
+    },
+    {
+      "name": "导地线",
+      "type": "输电线路元件",
+      "desc": "输电线路中的导线或地线"
+    },
+    {
+      "name": "舞动监测系统",
+      "type": "监测设备",
+      "desc": "用于监测输电线路舞动情况的系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在重覆冰地区宜在高速铁路跨越档安装覆冰状态监测装置",
+      "type": "强制",
+      "subject": "重覆冰地区的输电线路运维单位",
+      "action": "安装覆冰状态监测装置",
+      "condition": "在重覆冰地区且跨越高速铁路的输电线路区段",
+      "constraint": "在高速铁路跨越档安装覆冰状态监测装置",
+      "related_entities": [
+        "重覆冰地区",
+        "高速铁路跨越档",
+        "覆冰状态监测装置"
+      ]
+    },
+    {
+      "content": "位于不均匀沉降地质区域、采空区等特殊区域的杆塔，安装杆塔倾斜状态监测装置",
+      "type": "强制",
+      "subject": "特殊区域的输电线路运维单位",
+      "action": "安装杆塔倾斜状态监测装置",
+      "condition": "位于不均匀沉降地质区域、采空区等特殊区域的杆塔",
+      "constraint": "安装杆塔倾斜状态监测装置",
+      "related_entities": [
+        "不均匀沉降地质区域",
+        "采空区",
+        "杆塔",
+        "杆塔倾斜状态监测装置"
+      ]
+    },
+    {
+      "content": "在高速铁路跨越档不宜在导地线上安装舞动监测系统",
+      "type": "强制",
+      "subject": "高速铁路跨越档的输电线路运维单位",
+      "action": "不安装舞动监测系统",
+      "condition": "在高速铁路跨越档",
+      "constraint": "不宜在导地线上安装舞动监测系统",
+      "related_entities": [
+        "高速铁路跨越档",
+        "导地线",
+        "舞动监测系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "重覆冰地区",
+      "target": "高速铁路跨越档",
+      "type": "跨越"
+    },
+    {
+      "source": "重覆冰地区",
+      "target": "覆冰状态监测装置",
+      "type": "安装"
+    },
+    {
+      "source": "不均匀沉降地质区域",
+      "target": "杆塔",
+      "type": "位于"
+    },
+    {
+      "source": "采空区",
+      "target": "杆塔",
+      "type": "位于"
+    },
+    {
+      "source": "杆塔",
+      "target": "杆塔倾斜状态监测装置",
+      "type": "安装"
+    },
+    {
+      "source": "高速铁路跨越档",
+      "target": "导地线",
+      "type": "跨越"
+    },
+    {
+      "source": "高速铁路跨越档",
+      "target": "舞动监测系统",
+      "type": "不安装"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2002,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b6f23d954bf2eecf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2002_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

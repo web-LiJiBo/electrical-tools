@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "绝缘工具",
+      "type": "电力设备",
+      "desc": "用于电力系统中绝缘的工具"
+    },
+    {
+      "name": "金属工具",
+      "type": "电力设备",
+      "desc": "用于电力系统中非绝缘的工具"
+    },
+    {
+      "name": "机械试验",
+      "type": "试验检测",
+      "desc": "对电力设备进行机械性能测试"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘工具两年一次，金属工具每年一次",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "定期进行机械试验",
+      "condition": "电力设备使用过程中",
+      "constraint": "绝缘工具每2年1次，金属工具每年1次",
+      "related_entities": [
+        "绝缘工具",
+        "金属工具",
+        "机械试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘工具",
+      "target": "机械试验",
+      "type": "需要"
+    },
+    {
+      "source": "金属工具",
+      "target": "机械试验",
+      "type": "需要"
+    }
+  ],
+  "metadata": {
+    "pair_id": 873,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a63ab657b3a9cef9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\873_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

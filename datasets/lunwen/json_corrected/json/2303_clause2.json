@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "接地导体",
+      "type": "电力设备",
+      "desc": "用于接地的导体"
+    },
+    {
+      "name": "铜质导体",
+      "type": "材料",
+      "desc": "由铜制成的导体"
+    },
+    {
+      "name": "接地故障",
+      "type": "电力故障",
+      "desc": "电力系统中出现的接地故障情况"
+    },
+    {
+      "name": "额定短路持续时间",
+      "type": "参数",
+      "desc": "短路发生后允许导体持续承载电流的时间"
+    },
+    {
+      "name": "电流密度",
+      "type": "参数",
+      "desc": "单位截面积上的电流强度"
+    },
+    {
+      "name": "截面积",
+      "type": "参数",
+      "desc": "导体的横截面积"
+    },
+    {
+      "name": "铜质端子",
+      "type": "材料",
+      "desc": "由铜制成的端子"
+    },
+    {
+      "name": "电气接触面积",
+      "type": "参数",
+      "desc": "端子与导体接触的面积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地导体应采用铜质导体",
+      "type": "强制",
+      "subject": "接地导体",
+      "action": "采用",
+      "condition": "在规定的接地故障条件下",
+      "constraint": "铜质导体",
+      "related_entities": [
+        "接地导体",
+        "铜质导体"
+      ]
+    },
+    {
+      "content": "在额定短路持续时间为4s时，其电流密度不应超过110A/mm2",
+      "type": "强制",
+      "subject": "接地导体",
+      "action": "承载电流",
+      "condition": "在规定的接地故障条件下",
+      "constraint": "额定短路持续时间为4s时，电流密度≤110A/mm2",
+      "related_entities": [
+        "接地导体",
+        "电流密度",
+        "额定短路持续时间"
+      ]
+    },
+    {
+      "content": "其最小截面积不应小于240mm2",
+      "type": "强制",
+      "subject": "接地导体",
+      "action": "承载电流",
+      "condition": "在规定的接地故障条件下",
+      "constraint": "最小截面积≥240mm2",
+      "related_entities": [
+        "接地导体",
+        "截面积"
+      ]
+    },
+    {
+      "content": "接地导体的末端应用铜质端子与设备的接地系统相连接",
+      "type": "强制",
+      "subject": "接地导体",
+      "action": "连接",
+      "condition": "在规定的接地故障条件下",
+      "constraint": "使用铜质端子",
+      "related_entities": [
+        "接地导体",
+        "铜质端子"
+      ]
+    },
+    {
+      "content": "端子的电气接触面积应与接地导体的截面相适应",
+      "type": "强制",
+      "subject": "铜质端子",
+      "action": "连接",
+      "condition": "在规定的接地故障条件下",
+      "constraint": "电气接触面积与接地导体截面相适应",
+      "related_entities": [
+        "铜质端子",
+        "接地导体"
+      ]
+    },
+    {
+      "content": "但最小电气接触面积不应小于160mm2",
+      "type": "强制",
+      "subject": "铜质端子",
+      "action": "连接",
+      "condition": "在规定的接地故障条件下",
+      "constraint": "最小电气接触面积≥160mm2",
+      "related_entities": [
+        "铜质端子",
+        "电气接触面积"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地导体",
+      "target": "铜质导体",
+      "type": "采用"
+    },
+    {
+      "source": "接地导体",
+      "target": "接地故障",
+      "type": "在...条件下"
+    },
+    {
+      "source": "接地导体",
+      "target": "额定短路持续时间",
+      "type": "在...条件下"
+    },
+    {
+      "source": "接地导体",
+      "target": "电流密度",
+      "type": "不应超过"
+    },
+    {
+      "source": "接地导体",
+      "target": "截面积",
+      "type": "不应小于"
+    },
+    {
+      "source": "接地导体",
+      "target": "铜质端子",
+      "type": "连接"
+    },
+    {
+      "source": "铜质端子",
+      "target": "接地导体",
+      "type": "连接"
+    },
+    {
+      "source": "铜质端子",
+      "target": "电气接触面积",
+      "type": "不应小于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2303,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d1f73c3d8b1a92eb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2303_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

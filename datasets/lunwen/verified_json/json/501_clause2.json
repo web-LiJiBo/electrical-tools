@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "覆冰",
+      "type": "气象条件",
+      "desc": "输电线路在运行过程中可能遇到的覆冰现象"
+    },
+    {
+      "name": "无冰",
+      "type": "覆冰厚度",
+      "desc": "输电线路未覆冰的情况"
+    },
+    {
+      "name": "5mm～10mm覆冰",
+      "type": "覆冰厚度",
+      "desc": "输电线路覆冰厚度介于5mm至10mm之间的覆冰情况"
+    },
+    {
+      "name": "15mm覆冰",
+      "type": "覆冰厚度",
+      "desc": "输电线路覆冰厚度达到15mm的覆冰情况"
+    },
+    {
+      "name": "稀有覆冰",
+      "type": "覆冰厚度",
+      "desc": "极小概率出现的覆冰情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "设计覆冰宜按无冰、5mm～10mm和15mm覆冰厚度设计",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "设计覆冰条件",
+      "condition": "输电线路设计阶段",
+      "constraint": "覆冰厚度分别为无冰、5mm～10mm和15mm",
+      "related_entities": [
+        "覆冰",
+        "无冰",
+        "5mm～10mm覆冰",
+        "15mm覆冰"
+      ]
+    },
+    {
+      "content": "必要时还宜按稀有覆冰条件进行验算",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "验算覆冰条件",
+      "condition": "输电线路设计阶段且覆冰条件复杂或特殊地区",
+      "constraint": "覆冰厚度为稀有覆冰",
+      "related_entities": [
+        "覆冰",
+        "稀有覆冰"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "覆冰",
+      "target": "无冰",
+      "type": "包含"
+    },
+    {
+      "source": "覆冰",
+      "target": "5mm～10mm覆冰",
+      "type": "包含"
+    },
+    {
+      "source": "覆冰",
+      "target": "15mm覆冰",
+      "type": "包含"
+    },
+    {
+      "source": "覆冰",
+      "target": "稀有覆冰",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 501,
+      "source_row_id": "501",
+      "clause_index": 2,
+      "source_text": "设计覆冰宜按无冰、5mm～10mm和15mm覆冰厚度设计，必要时还宜按稀有覆冰条件进行验算"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9889,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.299485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

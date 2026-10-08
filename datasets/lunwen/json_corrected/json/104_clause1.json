@@ -1,0 +1,117 @@
+{
+  "entities": [
+    {
+      "name": "杆架式配电变压器",
+      "type": "设备",
+      "desc": "一种安装在杆架上的配电变压器"
+    },
+    {
+      "name": "台式配电变压器",
+      "type": "设备",
+      "desc": "一种安装在台架上的配电变压器"
+    },
+    {
+      "name": "户外安装配电变压器",
+      "type": "设备",
+      "desc": "一种安装在户外环境中的配电变压器"
+    },
+    {
+      "name": "负荷中心",
+      "type": "位置",
+      "desc": "负荷密度较高的区域"
+    },
+    {
+      "name": "单相变压器",
+      "type": "设备",
+      "desc": "三相绕组中只有一相绕组的变压器"
+    },
+    {
+      "name": "配电变压器容量",
+      "type": "参数",
+      "desc": "配电变压器的额定容量"
+    },
+    {
+      "name": "负荷需要",
+      "type": "需求",
+      "desc": "实际用电负荷的需求情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用杆架式或台式、户外安装的配电变压器应尽量布置于负荷中心",
+      "type": "强制",
+      "subject": "配电变压器",
+      "action": "布置",
+      "condition": "采用杆架式或台式、户外安装方式",
+      "constraint": "尽量布置于负荷中心",
+      "related_entities": [
+        "杆架式配电变压器",
+        "台式配电变压器",
+        "户外安装配电变压器",
+        "负荷中心"
+      ]
+    },
+    {
+      "content": "根据需要也可采用单相变压器",
+      "type": "建议",
+      "subject": "配电变压器",
+      "action": "选择",
+      "condition": "负荷需要",
+      "constraint": "可采用单相变压器",
+      "related_entities": [
+        "单相变压器",
+        "负荷需要"
+      ]
+    },
+    {
+      "content": "配电变压器容量应根据负荷需要选取，容量一般不宜大于500kVA",
+      "type": "强制",
+      "subject": "配电变压器",
+      "action": "选取容量",
+      "condition": "负荷需要",
+      "constraint": "容量一般不宜大于500kVA",
+      "related_entities": [
+        "配电变压器容量",
+        "负荷需要"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "杆架式配电变压器",
+      "target": "负荷中心",
+      "type": "布置于"
+    },
+    {
+      "source": "台式配电变压器",
+      "target": "负荷中心",
+      "type": "布置于"
+    },
+    {
+      "source": "户外安装配电变压器",
+      "target": "负荷中心",
+      "type": "布置于"
+    },
+    {
+      "source": "单相变压器",
+      "target": "配电变压器",
+      "type": "可选型"
+    },
+    {
+      "source": "配电变压器容量",
+      "target": "负荷需要",
+      "type": "匹配度"
+    }
+  ],
+  "metadata": {
+    "pair_id": 104,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9316f28b6bb24576",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\104_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流或电压的电气设备"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备施加交流高压以检验其绝缘性能的试验方法"
+    },
+    {
+      "name": "出厂试验电压",
+      "type": "试验参数",
+      "desc": "设备出厂时规定的耐压值"
+    },
+    {
+      "name": "电压等级220kV以上SF6气体绝缘互感器",
+      "type": "电力设备",
+      "desc": "特定电压等级和绝缘方式的互感器"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备施加交流高压以检验其绝缘性能的试验方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应按出厂试验电压的80％进行",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "交流耐压试验",
+      "condition": "互感器交流耐压试验",
+      "constraint": "出厂试验电压的80%",
+      "related_entities": [
+        "互感器",
+        "出厂试验电压"
+      ]
+    },
+    {
+      "content": "电压等级220kV以上的SF6气体绝缘互感器宜在安装完毕的情况下进行交流耐压试验",
+      "type": "强制",
+      "subject": "电压等级220kV以上的SF6气体绝缘互感器",
+      "action": "交流耐压试验",
+      "condition": "互感器交流耐压试验",
+      "constraint": "安装完毕",
+      "related_entities": [
+        "电压等级220kV以上的SF6气体绝缘互感器",
+        "互感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "交流耐压试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "出厂试验电压",
+      "target": "互感器",
+      "type": "参考依据"
+    },
+    {
+      "source": "电压等级220kV以上的SF6气体绝缘互感器",
+      "target": "交流耐压试验",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1499,
+      "source_row_id": "1499",
+      "clause_index": 2,
+      "source_text": "互感器交流耐压试验，应符合下列规定：1、应按出厂试验电压的80％进行；2、电压等级220kV以上的SF6气体绝缘互感器（特别是电压等级为500kV的互感器）宜在安装完毕的情况下进行交流耐压试验"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8074,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.450368+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

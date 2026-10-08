@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "波纹式油箱",
+      "type": "电力设备",
+      "desc": "一种变压器油箱结构形式"
+    },
+    {
+      "name": "315KVA",
+      "type": "容量等级",
+      "desc": "变压器额定容量为315KVA"
+    },
+    {
+      "name": "400KVA",
+      "type": "容量等级",
+      "desc": "变压器额定容量为400KVA"
+    },
+    {
+      "name": "20kPa",
+      "type": "压力等级",
+      "desc": "试验压力为20kPa"
+    },
+    {
+      "name": "15kPa",
+      "type": "压力等级",
+      "desc": "试验压力为15kPa"
+    },
+    {
+      "name": "60kPa",
+      "type": "压力等级",
+      "desc": "试验压力为60kPa"
+    },
+    {
+      "name": "12h",
+      "type": "时间",
+      "desc": "试验持续时间为12小时"
+    }
+  ],
+  "rules": [
+    {
+      "content": "315KVA及以下者应能承受20kPa试验压力",
+      "type": "强制",
+      "subject": "波纹式油箱",
+      "action": "承受试验压力",
+      "condition": "315KVA及以下",
+      "constraint": "20kPa",
+      "related_entities": [
+        "波纹式油箱",
+        "20kPa"
+      ]
+    },
+    {
+      "content": "400KVA及以上者应能承受15kPa试验压力",
+      "type": "强制",
+      "subject": "波纹式油箱",
+      "action": "承受试验压力",
+      "condition": "400KVA及以上",
+      "constraint": "15kPa",
+      "related_entities": [
+        "波纹式油箱",
+        "15kPa"
+      ]
+    },
+    {
+      "content": "历经12h应无泄漏",
+      "type": "强制",
+      "subject": "波纹式油箱",
+      "action": "无泄漏",
+      "condition": "试验压力下",
+      "constraint": "12h",
+      "related_entities": [
+        "波纹式油箱",
+        "12h"
+      ]
+    },
+    {
+      "content": "油面上部应能承受60kPa试验压力（波纹式油箱除外）",
+      "type": "强制",
+      "subject": "密封式变压器",
+      "action": "承受试验压力",
+      "condition": "油面上部",
+      "constraint": "60kPa",
+      "related_entities": [
+        "密封式变压器",
+        "60kPa"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "波纹式油箱",
+      "target": "315KVA",
+      "type": "适用于"
+    },
+    {
+      "source": "波纹式油箱",
+      "target": "400KVA",
+      "type": "适用于"
+    },
+    {
+      "source": "波纹式油箱",
+      "target": "20kPa",
+      "type": "承受试验压力"
+    },
+    {
+      "source": "波纹式油箱",
+      "target": "15kPa",
+      "type": "承受试验压力"
+    },
+    {
+      "source": "波纹式油箱",
+      "target": "12h",
+      "type": "试验持续时间"
+    },
+    {
+      "source": "密封式变压器",
+      "target": "60kPa",
+      "type": "承受试验压力"
+    }
+  ],
+  "metadata": {
+    "pair_id": 894,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "80bf4675c2fae6cb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\894_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

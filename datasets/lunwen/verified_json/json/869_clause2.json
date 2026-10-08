@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "用于测量电压或电流的电气设备"
+    },
+    {
+      "name": "出厂试验",
+      "type": "试验项目",
+      "desc": "产品出厂前进行的质量检测"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验项目",
+      "desc": "检测互感器内部局部放电量的试验"
+    },
+    {
+      "name": "测量时间",
+      "type": "试验参数",
+      "desc": "局部放电试验中持续测量的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "互感器在出厂试验时，局部放电试验的测量时间延长到5min",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "进行局部放电试验",
+      "condition": "互感器出厂试验时",
+      "constraint": "局部放电试验的测量时间为5min",
+      "related_entities": [
+        "互感器",
+        "出厂试验",
+        "局部放电试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "出厂试验",
+      "type": "包含"
+    },
+    {
+      "source": "出厂试验",
+      "target": "局部放电试验",
+      "type": "包含"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "测量时间",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 869,
+      "source_row_id": "869",
+      "clause_index": 2,
+      "source_text": "110kV（66kV）～500kV互感器在出厂试验时，局部放电试验的测量时间延长到5min"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.729083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

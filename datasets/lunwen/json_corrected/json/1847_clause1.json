@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中用于传输电能的导体"
+    },
+    {
+      "name": "可交联聚乙烯料",
+      "type": "材料",
+      "desc": "一种用于制造电缆绝缘层的高分子材料"
+    },
+    {
+      "name": "超净可交联聚乙烯料",
+      "type": "材料",
+      "desc": "一种具有更高纯净度的可交联聚乙烯料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "35kV及以下电缆应采用可交联聚乙烯料",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "使用",
+      "condition": "电压等级≤35kV",
+      "constraint": "必须使用可交联聚乙烯料",
+      "related_entities": [
+        "电缆",
+        "可交联聚乙烯料"
+      ]
+    },
+    {
+      "content": "66kV及以上的电缆应采用超净可交联聚乙烯料",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "使用",
+      "condition": "电压等级≥66kV",
+      "constraint": "必须使用超净可交联聚乙烯料",
+      "related_entities": [
+        "电缆",
+        "超净可交联聚乙烯料"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "可交联聚乙烯料",
+      "type": "使用"
+    },
+    {
+      "source": "电缆",
+      "target": "超净可交联聚乙烯料",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1847,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "92990b7beb00b4e3",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1847_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

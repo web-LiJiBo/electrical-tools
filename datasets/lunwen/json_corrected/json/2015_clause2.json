@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "绝缘工具",
+      "type": "电力设备",
+      "desc": "用于带电作业的绝缘工具"
+    },
+    {
+      "name": "承力工具",
+      "type": "电力设备",
+      "desc": "用于带电作业的承力工具"
+    },
+    {
+      "name": "机械试验周期",
+      "type": "试验周期",
+      "desc": "对绝缘工具和承力工具进行机械性能试验的时间间隔"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘工具机械试验周期:24个月",
+      "type": "强制",
+      "subject": "绝缘工具",
+      "action": "机械试验",
+      "condition": "投入使用后",
+      "constraint": "24个月",
+      "related_entities": [
+        "绝缘工具",
+        "机械试验周期"
+      ]
+    },
+    {
+      "content": "承力工具机械试验周期:12个月",
+      "type": "强制",
+      "subject": "承力工具",
+      "action": "机械试验",
+      "condition": "投入使用后",
+      "constraint": "12个月",
+      "related_entities": [
+        "承力工具",
+        "机械试验周期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘工具",
+      "target": "机械试验周期",
+      "type": "适用对象"
+    },
+    {
+      "source": "承力工具",
+      "target": "机械试验周期",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2015,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3cf581d972c60f98",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2015_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

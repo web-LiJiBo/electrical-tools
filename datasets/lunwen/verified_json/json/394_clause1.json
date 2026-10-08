@@ -1,0 +1,140 @@
+{
+  "entities": [
+    {
+      "name": "220kV变电站",
+      "type": "电力设施",
+      "desc": "一座220kV电压等级的变电站"
+    },
+    {
+      "name": "220kV配电装置",
+      "type": "电力设备",
+      "desc": "220kV电压等级的配电装置"
+    },
+    {
+      "name": "双母线接线",
+      "type": "电气接线方式",
+      "desc": "一种母线接线方式，具有两组母线"
+    },
+    {
+      "name": "分段断路器",
+      "type": "电力设备",
+      "desc": "用于母线分段的断路器"
+    },
+    {
+      "name": "出线回路数",
+      "type": "电力参数",
+      "desc": "变电站出线回路的数量"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "变电站中的变压器设备"
+    },
+    {
+      "name": "系统",
+      "type": "电力系统",
+      "desc": "电力系统的整体架构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当在系统中居重要地位、出线回路数为4回及以上时，宜采用双母线接线",
+      "type": "强制",
+      "subject": "220kV变电站",
+      "action": "采用双母线接线",
+      "condition": "系统中居重要地位且出线回路数≥4回",
+      "constraint": "无",
+      "related_entities": [
+        "220kV变电站",
+        "220kV配电装置",
+        "双母线接线"
+      ]
+    },
+    {
+      "content": "当出线和变压器等连接元件总数为10-14回时，可在一条母线上装设分段断路器",
+      "type": "强制",
+      "subject": "220kV变电站",
+      "action": "装设分段断路器",
+      "condition": "出线和变压器等连接元件总数为10-14回",
+      "constraint": "无",
+      "related_entities": [
+        "220kV变电站",
+        "220kV配电装置",
+        "分段断路器"
+      ]
+    },
+    {
+      "content": "15回及以上时，在两条母线上装设分段断路器",
+      "type": "强制",
+      "subject": "220kV变电站",
+      "action": "装设分段断路器",
+      "condition": "出线和变压器等连接元件总数≥15回",
+      "constraint": "无",
+      "related_entities": [
+        "220kV变电站",
+        "220kV配电装置",
+        "分段断路器"
+      ]
+    },
+    {
+      "content": "也可根据系统需要将母线分段",
+      "type": "建议",
+      "subject": "220kV变电站",
+      "action": "分段母线",
+      "condition": "系统需要",
+      "constraint": "无",
+      "related_entities": [
+        "220kV变电站",
+        "220kV配电装置",
+        "分段断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "220kV变电站",
+      "target": "220kV配电装置",
+      "type": "包含"
+    },
+    {
+      "source": "220kV变电站",
+      "target": "双母线接线",
+      "type": "采用"
+    },
+    {
+      "source": "220kV变电站",
+      "target": "分段断路器",
+      "type": "装设"
+    },
+    {
+      "source": "220kV变电站",
+      "target": "出线回路数",
+      "type": "具有"
+    },
+    {
+      "source": "220kV变电站",
+      "target": "变压器",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 394,
+      "source_row_id": "394",
+      "clause_index": 1,
+      "source_text": "220kV变电站中的220kV配电装置，当在系统中居重要地位、出线回路数为4回及以上时，宜采用双母线接线；当出线和变压器等连接元件总数为10-14回时，可在一条母线上装设分段断路器，15回及以上时，在两条母线上装设分段断路器；也可根据系统需要将母线分段"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.175483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

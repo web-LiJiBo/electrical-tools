@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "电缆支架的层间垂直距离，应满足电缆能方便地敷设和固定，在多根电缆同层支架敷设时，有更换或增设任意电缆的可能，电缆支架之间最小净距不宜小于表4.1.2规定",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 470,
+      "source_row_id": "470",
+      "clause_index": 1,
+      "source_text": "电缆支架的层间垂直距离，应满足电缆能方便地敷设和固定，在多根电缆同层支架敷设时，有更换或增设任意电缆的可能，电缆支架之间最小净距不宜小于表4.1.2规定"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.260483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "油",
+      "type": "介质",
+      "desc": "变压器等电气设备中的绝缘油"
+    },
+    {
+      "name": "颗粒",
+      "type": "污染物",
+      "desc": "油中悬浮的固体颗粒物"
+    },
+    {
+      "name": "过滤",
+      "type": "操作",
+      "desc": "对油进行净化处理"
+    }
+  ],
+  "rules": [
+    {
+      "content": "过滤以后的油中大于5μm的颗粒不多于2000个/100mL",
+      "type": "强制",
+      "subject": "油",
+      "action": "过滤",
+      "condition": "在设备运行过程中",
+      "constraint": "过滤后的油中大于5μm的颗粒数不超过2000个/100mL",
+      "related_entities": [
+        "油",
+        "颗粒"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油",
+      "target": "颗粒",
+      "type": "含有"
+    },
+    {
+      "source": "过滤",
+      "target": "油",
+      "type": "作用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1467,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fa77cc2e3d8791f2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1467_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

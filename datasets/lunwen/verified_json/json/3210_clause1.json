@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "气体继电器",
+      "type": "电力设备",
+      "desc": "变压器保护装置"
+    },
+    {
+      "name": "接线端子",
+      "type": "电力设备部件",
+      "desc": "气体继电器内部连接线路的端点"
+    },
+    {
+      "name": "绝缘电阻表",
+      "type": "检测仪器",
+      "desc": "测量电气设备绝缘性能的仪表"
+    },
+    {
+      "name": "工频耐压测试仪",
+      "type": "检测仪器",
+      "desc": "用于进行工频耐压试验的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体继电器的检修要求见表27",
+      "type": "强制",
+      "subject": "检修人员",
+      "action": "检修气体继电器",
+      "condition": "气体继电器检修前",
+      "constraint": "无",
+      "related_entities": [
+        "气体继电器"
+      ]
+    },
+    {
+      "content": "接线端子绝缘：2500V绝缘电阻表测量绝缘电阻应大于1MΩ，或用工频耐压试验AC2000V试验电压，持续1min，不应击穿。",
+      "type": "强制",
+      "subject": "检修人员",
+      "action": "测量接线端子绝缘电阻或进行工频耐压试验",
+      "condition": "气体继电器检修时",
+      "constraint": "绝缘电阻大于1MΩ或工频耐压试验AC2000V，持续1min，不应击穿",
+      "related_entities": [
+        "气体继电器",
+        "接线端子",
+        "绝缘电阻表",
+        "工频耐压测试仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体继电器",
+      "target": "接线端子",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘电阻表",
+      "target": "接线端子",
+      "type": "测量工具"
+    },
+    {
+      "source": "工频耐压测试仪",
+      "target": "接线端子",
+      "type": "测量工具"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3201,
+      "source_row_id": "3210",
+      "clause_index": 1,
+      "source_text": "气体继电器的检修要求见表27。接线端子绝缘：2500V绝缘电阻表测量绝缘电阻应大于1MΩ，或用工频耐压试验AC2000V试验电压，持续1min，不应击穿。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9732,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.507315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

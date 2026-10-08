@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "阀厅火灾报警系统",
+      "type": "电力设备",
+      "desc": "用于检测阀厅内火灾情况并发出报警信号的系统"
+    },
+    {
+      "name": "直流系统",
+      "type": "电力系统",
+      "desc": "连接整流站与逆变站之间的高压直流输电系统"
+    },
+    {
+      "name": "报警",
+      "type": "操作模式",
+      "desc": "阀厅火灾报警系统在检测到火灾时仅发出报警信号，不直接切断电源"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀厅火灾报警系统由报警改投跳闸",
+      "type": "强制",
+      "subject": "阀厅火灾报警系统",
+      "action": "由报警改为跳闸",
+      "condition": "阀厅出现火情时",
+      "constraint": "尽快停运直流",
+      "related_entities": [
+        "阀厅火灾报警系统",
+        "直流系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀厅火灾报警系统",
+      "target": "直流系统",
+      "type": "保护"
+    },
+    {
+      "source": "阀厅火灾报警系统",
+      "target": "阀厅火灾报警系统",
+      "type": "变更"
+    }
+  ],
+  "metadata": {
+    "pair_id": 918,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6049174876713108",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\918_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "同一通道",
+      "type": "电力设施",
+      "desc": "电力系统中电缆敷设的通道"
+    },
+    {
+      "name": "电缆数量",
+      "type": "电力设施参数",
+      "desc": "同一通道内电缆的数量"
+    },
+    {
+      "name": "电缆支架",
+      "type": "电力设施",
+      "desc": "用于支撑电缆的结构"
+    },
+    {
+      "name": "电力电缆",
+      "type": "电力设施",
+      "desc": "传输电力的电缆"
+    },
+    {
+      "name": "控制和信号电缆",
+      "type": "电力设施",
+      "desc": "传输控制和信号的电缆"
+    },
+    {
+      "name": "通讯电缆",
+      "type": "电力设施",
+      "desc": "传输通信信息的电缆"
+    },
+    {
+      "name": "35kV高压电缆",
+      "type": "电力设施",
+      "desc": "35kV及以上的高压电缆"
+    },
+    {
+      "name": "柜盘",
+      "type": "电力设施",
+      "desc": "电力系统中的配电装置"
+    },
+    {
+      "name": "允许弯曲半径",
+      "type": "电力设施参数",
+      "desc": "电缆在弯曲时的最小半径要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "同一通道内电缆数量较多时，若在同一侧的多层支架上敷设，应符合下列规定：1应按电压等级由高至低的电力电缆、强电至弱电的控制和信号电缆、通讯电缆“由上而下”的顺序排列。",
+      "type": "强制",
+      "subject": "同一通道内的电缆",
+      "action": "敷设排列",
+      "condition": "同一通道内电缆数量较多且在同一侧的多层支架上敷设",
+      "constraint": "电力电缆按电压等级由高至低、控制和信号电缆按强电至弱电、通讯电缆按由上而下的顺序排列",
+      "related_entities": [
+        "同一通道",
+        "电缆数量",
+        "电缆支架",
+        "电力电缆",
+        "控制和信号电缆",
+        "通讯电缆"
+      ]
+    },
+    {
+      "content": "当水平通道中含有35kV以上高压电缆，或为满足引入柜盘的电缆符合允许弯曲半径要求时，宜按“由下而上”的顺序排列。",
+      "type": "强制",
+      "subject": "同一通道内的电缆",
+      "action": "敷设排列",
+      "condition": "水平通道中含有35kV以上高压电缆或为满足引入柜盘的电缆符合允许弯曲半径要求",
+      "constraint": "电缆按由下而上的顺序排列",
+      "related_entities": [
+        "同一通道",
+        "电缆数量",
+        "电缆支架",
+        "35kV高压电缆",
+        "柜盘",
+        "允许弯曲半径"
+      ]
+    },
+    {
+      "content": "在同一工程中或电缆通道延伸于不同工程的情况，均应按相同的上下排列顺序配置。",
+      "type": "强制",
+      "subject": "同一工程或不同工程的电缆通道",
+      "action": "敷设排列",
+      "condition": "在同一工程中或电缆通道延伸于不同工程的情况",
+      "constraint": "按相同的上下排列顺序配置",
+      "related_entities": [
+        "同一通道",
+        "电缆数量",
+        "电缆支架",
+        "电力电缆",
+        "控制和信号电缆",
+        "通讯电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "同一通道",
+      "target": "电缆数量",
+      "type": "包含"
+    },
+    {
+      "source": "电缆数量",
+      "target": "电缆支架",
+      "type": "支撑"
+    },
+    {
+      "source": "电力电缆",
+      "target": "电缆支架",
+      "type": "敷设"
+    },
+    {
+      "source": "控制和信号电缆",
+      "target": "电缆支架",
+      "type": "敷设"
+    },
+    {
+      "source": "通讯电缆",
+      "target": "电缆支架",
+      "type": "敷设"
+    },
+    {
+      "source": "35kV高压电缆",
+      "target": "电缆支架",
+      "type": "敷设"
+    },
+    {
+      "source": "柜盘",
+      "target": "电缆支架",
+      "type": "引入"
+    },
+    {
+      "source": "电缆支架",
+      "target": "允许弯曲半径",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 851,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "db9dc3dc3244b3a1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\851_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "110kV及以上高压电缆终端",
+      "type": "电力设备",
+      "desc": "110kV及以上的高压电缆终端"
+    },
+    {
+      "name": "110kV及以上高压电缆接头",
+      "type": "电力设备",
+      "desc": "110kV及以上的高压电缆接头"
+    },
+    {
+      "name": "临时工棚",
+      "type": "施工设施",
+      "desc": "施工时搭建的临时工棚"
+    },
+    {
+      "name": "环境湿度",
+      "type": "施工环境参数",
+      "desc": "施工时的环境湿度"
+    },
+    {
+      "name": "温度",
+      "type": "施工环境参数",
+      "desc": "施工时的环境温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110kV及以上高压电缆终端与接头施工时，应搭临时工棚",
+      "type": "强制",
+      "subject": "110kV及以上高压电缆终端与接头",
+      "action": "施工时搭建临时工棚",
+      "condition": "110kV及以上高压电缆终端与接头施工时",
+      "constraint": "无",
+      "related_entities": [
+        "110kV及以上高压电缆终端",
+        "110kV及以上高压电缆接头",
+        "临时工棚"
+      ]
+    },
+    {
+      "content": "环境湿度应严格控制",
+      "type": "强制",
+      "subject": "110kV及以上高压电缆终端与接头",
+      "action": "控制施工时的环境湿度",
+      "condition": "110kV及以上高压电缆终端与接头施工时",
+      "constraint": "无",
+      "related_entities": [
+        "110kV及以上高压电缆终端",
+        "110kV及以上高压电缆接头",
+        "环境湿度"
+      ]
+    },
+    {
+      "content": "温度宜为10～30℃",
+      "type": "建议",
+      "subject": "110kV及以上高压电缆终端与接头",
+      "action": "控制施工时的环境温度",
+      "condition": "110kV及以上高压电缆终端与接头施工时",
+      "constraint": "无",
+      "related_entities": [
+        "110kV及以上高压电缆终端",
+        "110kV及以上高压电缆接头",
+        "温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110kV及以上高压电缆终端",
+      "target": "临时工棚",
+      "type": "施工环境"
+    },
+    {
+      "source": "110kV及以上高压电缆接头",
+      "target": "临时工棚",
+      "type": "施工环境"
+    },
+    {
+      "source": "110kV及以上高压电缆终端",
+      "target": "环境湿度",
+      "type": "施工环境参数"
+    },
+    {
+      "source": "110kV及以上高压电缆接头",
+      "target": "环境湿度",
+      "type": "施工环境参数"
+    },
+    {
+      "source": "110kV及以上高压电缆终端",
+      "target": "温度",
+      "type": "施工环境参数"
+    },
+    {
+      "source": "110kV及以上高压电缆接头",
+      "target": "温度",
+      "type": "施工环境参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1874,
+      "source_row_id": "1874",
+      "clause_index": 1,
+      "source_text": "110kV及以上高压电缆终端与接头施工时，应搭临时工棚，环境湿度应严格控制，温度宜为10～30℃"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9929,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.866971+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

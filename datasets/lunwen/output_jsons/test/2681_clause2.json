@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "涂层",
+      "type": "材料",
+      "desc": "电力设备表面的保护层"
+    },
+    {
+      "name": "厚度",
+      "type": "物理量",
+      "desc": "涂层的厚度值"
+    },
+    {
+      "name": "0.5mm",
+      "type": "数值",
+      "desc": "涂层最小厚度要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "涂层厚度应不小于0.5mm。",
+      "type": "强制",
+      "subject": "涂层",
+      "action": "施工",
+      "condition": "电力设备表面处理",
+      "constraint": "厚度≥0.5mm",
+      "related_entities": [
+        "涂层",
+        "0.5mm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "涂层",
+      "target": "0.5mm",
+      "type": "满足"
+    },
+    {
+      "source": "0.5mm",
+      "target": "涂层",
+      "type": "约束"
+    }
+  ]
+}

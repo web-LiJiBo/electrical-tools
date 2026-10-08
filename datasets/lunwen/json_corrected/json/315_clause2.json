@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "铁塔",
+      "type": "电力设施",
+      "desc": "电力系统中用于支撑导线的杆塔"
+    },
+    {
+      "name": "高度",
+      "type": "技术参数",
+      "desc": "铁塔的高度，影响其稳定性与风荷载"
+    },
+    {
+      "name": "风偏角",
+      "type": "技术参数",
+      "desc": "导线在风力作用下偏离垂直位置的角度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁塔的风偏角限值为1.0%（适用于50米以下高度铁塔）；0.5%（适用于50米及以上高度铁塔）",
+      "type": "强制",
+      "subject": "设计单位",
+      "action": "设计铁塔时应考虑风偏角限值",
+      "condition": "新建或改造输电线路工程",
+      "constraint": "铁塔高度50米以下为1.0%，50米及以上为0.5%",
+      "related_entities": [
+        "铁塔",
+        "高度",
+        "风偏角"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁塔",
+      "target": "高度",
+      "type": "属性"
+    },
+    {
+      "source": "铁塔",
+      "target": "风偏角",
+      "type": "技术要求"
+    },
+    {
+      "source": "高度",
+      "target": "风偏角",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 315,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b47280d834466b16",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\315_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

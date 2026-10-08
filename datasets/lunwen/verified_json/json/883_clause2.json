@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "开断单元",
+      "type": "电力设备",
+      "desc": "电力系统中用于开断电路的设备"
+    },
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路导电部分的电阻值"
+    },
+    {
+      "name": "现场装配",
+      "type": "施工方式",
+      "desc": "在安装现场进行设备组装的方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开断单元在现场装配时，应进行主回路电阻测量",
+      "type": "强制",
+      "subject": "开断单元",
+      "action": "进行主回路电阻测量",
+      "condition": "开断单元在现场装配",
+      "constraint": "无",
+      "related_entities": [
+        "开断单元",
+        "主回路电阻"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开断单元",
+      "target": "主回路电阻",
+      "type": "测量对象"
+    },
+    {
+      "source": "开断单元",
+      "target": "现场装配",
+      "type": "施工方式"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 883,
+      "source_row_id": "883",
+      "clause_index": 2,
+      "source_text": "如果开断单元是在现场装配的，才应进行主回路电阻测量"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.625,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.743085+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

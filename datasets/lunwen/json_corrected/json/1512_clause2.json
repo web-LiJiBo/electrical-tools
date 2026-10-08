@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "低压并联电抗器",
+      "type": "电力设备",
+      "desc": "安装在电力系统中用于补偿线路容性无功功率的电抗器"
+    },
+    {
+      "name": "单相干式空心电抗器",
+      "type": "电力设备",
+      "desc": "一种无油、无铁心的电抗器，适用于低压并联电抗器"
+    },
+    {
+      "name": "半铁心式电抗器",
+      "type": "电力设备",
+      "desc": "具有部分铁心结构的电抗器，适用于低压并联电抗器"
+    },
+    {
+      "name": "油浸铁心式电抗器",
+      "type": "电力设备",
+      "desc": "带有油箱和铁心的电抗器，适用于低压并联电抗器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "低压并联电抗器可采用单相干式空心、半铁心式或油浸铁心式",
+      "type": "强制",
+      "subject": "低压并联电抗器",
+      "action": "选择电抗器类型",
+      "condition": "低压并联电抗器安装于电力系统中",
+      "constraint": "低压并联电抗器可采用单相干式空心、半铁心式或油浸铁心式",
+      "related_entities": [
+        "低压并联电抗器",
+        "单相干式空心电抗器",
+        "半铁心式电抗器",
+        "油浸铁心式电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "低压并联电抗器",
+      "target": "单相干式空心电抗器",
+      "type": "可选配"
+    },
+    {
+      "source": "低压并联电抗器",
+      "target": "半铁心式电抗器",
+      "type": "可选配"
+    },
+    {
+      "source": "低压并联电抗器",
+      "target": "油浸铁心式电抗器",
+      "type": "可选配"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1512,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "55a2c2dce835ae3e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1512_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

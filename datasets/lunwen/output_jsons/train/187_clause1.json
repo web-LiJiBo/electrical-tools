@@ -1,0 +1,35 @@
+{
+  "entities": [
+    {
+      "name": "拉桩杆",
+      "type": "电力设施",
+      "desc": "用于支撑导线的电杆"
+    },
+    {
+      "name": "倾斜角度",
+      "type": "技术参数",
+      "desc": "拉桩杆与地面的夹角"
+    }
+  ],
+  "rules": [
+    {
+      "content": "拉桩杆应向受力反方向倾斜10°～20°",
+      "type": "强制",
+      "subject": "拉桩杆",
+      "action": "安装",
+      "condition": "拉桩杆承受水平方向的拉力",
+      "constraint": "倾斜角度10°～20°",
+      "related_entities": [
+        "拉桩杆",
+        "倾斜角度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "拉桩杆",
+      "target": "倾斜角度",
+      "type": "具有"
+    }
+  ]
+}

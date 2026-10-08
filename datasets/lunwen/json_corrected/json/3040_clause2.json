@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "顶轴油管道",
+      "type": "管道",
+      "desc": "用于顶轴油的管道"
+    },
+    {
+      "name": "润滑油管道",
+      "type": "管道",
+      "desc": "用于润滑油的管道"
+    },
+    {
+      "name": "冷却系统管道",
+      "type": "管道",
+      "desc": "用于冷却系统的管道"
+    },
+    {
+      "name": "焊缝",
+      "type": "焊缝",
+      "desc": "管道连接处的焊接部位"
+    },
+    {
+      "name": "检测",
+      "type": "检测",
+      "desc": "对焊缝进行无损检测"
+    },
+    {
+      "name": "抽样检测",
+      "type": "检测",
+      "desc": "对焊缝进行部分无损检测"
+    },
+    {
+      "name": "全检",
+      "type": "检测",
+      "desc": "对焊缝进行全面无损检测"
+    }
+  ],
+  "rules": [
+    {
+      "content": "顶轴油管道环缝（包括管道制造焊缝和现场安装焊缝）应按照100％比例进行检测",
+      "type": "强制",
+      "subject": "顶轴油管道",
+      "action": "检测",
+      "condition": "所有焊缝",
+      "constraint": "100%",
+      "related_entities": [
+        "顶轴油管道",
+        "焊缝",
+        "检测"
+      ]
+    },
+    {
+      "content": "除顶轴油外的润滑油管道环缝（包括管道制造焊缝和现场安装焊缝）应按照20％比例进行抽样检测",
+      "type": "强制",
+      "subject": "润滑油管道",
+      "action": "抽样检测",
+      "condition": "所有焊缝",
+      "constraint": "20%",
+      "related_entities": [
+        "润滑油管道",
+        "焊缝",
+        "抽样检测"
+      ]
+    },
+    {
+      "content": "对除顶轴油外的润滑油管道和冷却系统管道焊缝抽检发现存在不合格时，应扩大1倍抽检比例检测",
+      "type": "强制",
+      "subject": "润滑油管道和冷却系统管道",
+      "action": "抽样检测",
+      "condition": "焊缝抽检不合格",
+      "constraint": "20%*2=40%",
+      "related_entities": [
+        "润滑油管道",
+        "冷却系统管道",
+        "焊缝",
+        "抽样检测"
+      ]
+    },
+    {
+      "content": "对除顶轴油外的润滑油管道和冷却系统管道焊缝抽检发现存在不合格时，仍存在不合格焊缝时应对该管道焊缝进行100%全检",
+      "type": "强制",
+      "subject": "润滑油管道和冷却系统管道",
+      "action": "全检",
+      "condition": "焊缝抽检不合格且仍有不合格焊缝",
+      "constraint": "100%",
+      "related_entities": [
+        "润滑油管道",
+        "冷却系统管道",
+        "焊缝",
+        "全检"
+      ]
+    },
+    {
+      "content": "对发现的不合格焊缝进行返修消缺，复测合格后方可投入使用",
+      "type": "强制",
+      "subject": "不合格焊缝",
+      "action": "返修消缺并复测",
+      "condition": "焊缝检测不合格",
+      "constraint": "复测合格",
+      "related_entities": [
+        "焊缝",
+        "返修消缺",
+        "复测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "顶轴油管道",
+      "target": "焊缝",
+      "type": "包含"
+    },
+    {
+      "source": "润滑油管道",
+      "target": "焊缝",
+      "type": "包含"
+    },
+    {
+      "source": "冷却系统管道",
+      "target": "焊缝",
+      "type": "包含"
+    },
+    {
+      "source": "焊缝",
+      "target": "检测",
+      "type": "接受"
+    },
+    {
+      "source": "焊缝",
+      "target": "抽样检测",
+      "type": "接受"
+    },
+    {
+      "source": "焊缝",
+      "target": "全检",
+      "type": "接受"
+    },
+    {
+      "source": "焊缝",
+      "target": "返修消缺",
+      "type": "接受"
+    },
+    {
+      "source": "焊缝",
+      "target": "复测",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3040,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "08a60e0e3105eb82",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3040_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

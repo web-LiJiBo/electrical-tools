@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "电力系统中用于直流输电的换流装置"
+    },
+    {
+      "name": "内循环介质水",
+      "type": "冷却介质",
+      "desc": "用于换流阀散热的冷却水"
+    },
+    {
+      "name": "额定工况",
+      "type": "运行状态",
+      "desc": "换流阀正常运行的工作状态"
+    },
+    {
+      "name": "连续过负荷",
+      "type": "运行状态",
+      "desc": "换流阀长时间超出额定功率运行的状态"
+    },
+    {
+      "name": "暂态过负荷",
+      "type": "运行状态",
+      "desc": "换流阀短时间超出额定功率运行的状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "换流阀散发到内循环介质水中的热量取换流阀在额定工况、连续过负荷或暂态过负荷中的较大值",
+      "type": "强制",
+      "subject": "换流阀",
+      "action": "散发热量",
+      "condition": "换流阀在额定工况、连续过负荷或暂态过负荷运行时",
+      "constraint": "取换流阀在上述三种工况下散发热量的最大值",
+      "related_entities": [
+        "换流阀",
+        "内循环介质水"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流阀",
+      "target": "内循环介质水",
+      "type": "散热介质"
+    },
+    {
+      "source": "换流阀",
+      "target": "额定工况",
+      "type": "运行状态"
+    },
+    {
+      "source": "换流阀",
+      "target": "连续过负荷",
+      "type": "运行状态"
+    },
+    {
+      "source": "换流阀",
+      "target": "暂态过负荷",
+      "type": "运行状态"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3297,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d59b7ed207f66d50",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3297_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

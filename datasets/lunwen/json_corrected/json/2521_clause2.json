@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "油浸式真空有载分接开关",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中进行电压调节的电气设备"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "用于变压器等电力设备中的绝缘介质"
+    },
+    {
+      "name": "检测周期",
+      "type": "检测参数",
+      "desc": "对电力设备进行定期检查的时间间隔"
+    },
+    {
+      "name": "检测项目",
+      "type": "检测参数",
+      "desc": "对电力设备进行检查的具体内容"
+    },
+    {
+      "name": "DL/T574-2010",
+      "type": "技术标准",
+      "desc": "国家电网公司发布的电力行业标准"
+    },
+    {
+      "name": "表1",
+      "type": "技术标准条款",
+      "desc": "DL/T574-2010标准中的具体规定"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油浸式真空有载分接开关的绝缘油检测周期、项目与标准按照DL/T574-2010表1的规定。",
+      "type": "强制",
+      "subject": "油浸式真空有载分接开关",
+      "action": "进行绝缘油检测",
+      "condition": "在运行维护过程中",
+      "constraint": "检测周期、项目与标准应遵循DL/T574-2010表1的规定",
+      "related_entities": [
+        "油浸式真空有载分接开关",
+        "绝缘油",
+        "检测周期",
+        "检测项目",
+        "DL/T574-2010",
+        "表1"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "检测周期",
+      "type": "遵循"
+    },
+    {
+      "source": "油浸式真空有载分接开关",
+      "target": "检测项目",
+      "type": "遵循"
+    },
+    {
+      "source": "检测周期",
+      "target": "DL/T574-2010",
+      "type": "依据"
+    },
+    {
+      "source": "检测项目",
+      "target": "DL/T574-2010",
+      "type": "依据"
+    },
+    {
+      "source": "DL/T574-2010",
+      "target": "表1",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2521,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fe5ef6046ae078f9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2521_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "接地极",
+      "type": "电力设备",
+      "desc": "用于将电力系统中的电流引入大地的装置"
+    },
+    {
+      "name": "地下金属管道",
+      "type": "地下金属构件",
+      "desc": "埋设于地下的金属管道"
+    },
+    {
+      "name": "地下电缆",
+      "type": "地下金属构件",
+      "desc": "埋设于地下的电缆"
+    },
+    {
+      "name": "非电气化铁路",
+      "type": "地下金属构件",
+      "desc": "未电气化的铁路线路"
+    },
+    {
+      "name": "地电流",
+      "type": "物理量",
+      "desc": "通过接地极流入大地的电流"
+    },
+    {
+      "name": "地电流对地下金属构件的影响",
+      "type": "影响",
+      "desc": "地电流对地下金属管道、地下电缆、非电气化铁路等地下金属构件的影响"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极与地下金属管道、地下电缆、非电气化铁路等地下金属构件的最小距离（d）小于10km，或者地下金属管道、地下电缆、非电气化铁路等地下金属构件的长度大于d的情况下，应计算接地极地电流对这些设施产生的不良影响",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "计算地电流对地下金属构件的影响",
+      "condition": "接地极与地下金属管道、地下电缆、非电气化铁路等地下金属构件的最小距离（d）小于10km，或者地下金属管道、地下电缆、非电气化铁路等地下金属构件的长度大于d",
+      "constraint": "无",
+      "related_entities": [
+        "接地极",
+        "地下金属管道",
+        "地下电缆",
+        "非电气化铁路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极",
+      "target": "地电流",
+      "type": "产生"
+    },
+    {
+      "source": "地电流",
+      "target": "地下金属管道",
+      "type": "影响"
+    },
+    {
+      "source": "地电流",
+      "target": "地下电缆",
+      "type": "影响"
+    },
+    {
+      "source": "地电流",
+      "target": "非电气化铁路",
+      "type": "影响"
+    },
+    {
+      "source": "地电流",
+      "target": "地电流对地下金属构件的影响",
+      "type": "产生不良影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 431,
+      "source_row_id": "431",
+      "clause_index": 2,
+      "source_text": "要求：在接地极与地下金属管道、地下电缆、非电气化铁路等地下金属构件的最小距离（d）小于10km，或者地下金属管道、地下电缆、非电气化铁路等地下金属构件的长度大于d的情况下，应计算接地极地电流对这些设施产生的不良影响"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9808,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.216482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

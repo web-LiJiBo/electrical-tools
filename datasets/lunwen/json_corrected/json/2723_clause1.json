@@ -1,0 +1,192 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "绕组",
+      "type": "电力设备部件",
+      "desc": "变压器中产生感应电动势的部分"
+    },
+    {
+      "name": "顶层油",
+      "type": "电力设备部件",
+      "desc": "变压器内部绝缘油层的上层部分"
+    },
+    {
+      "name": "铁心",
+      "type": "电力设备部件",
+      "desc": "变压器磁路的主要组成部分"
+    },
+    {
+      "name": "油箱金属部件",
+      "type": "电力设备部件",
+      "desc": "变压器油箱内壁等金属部件"
+    },
+    {
+      "name": "温升限值",
+      "type": "技术参数",
+      "desc": "变压器运行时各部件允许的最大温升值"
+    },
+    {
+      "name": "电阻法",
+      "type": "测量方法",
+      "desc": "通过测量绕组电阻变化来推算温升的方法"
+    },
+    {
+      "name": "温度计",
+      "type": "测量工具",
+      "desc": "用于直接测量顶层油温的温度测量仪器"
+    },
+    {
+      "name": "光纤测量",
+      "type": "测量方法",
+      "desc": "利用光纤传感器测量绕组热点温升的方法"
+    },
+    {
+      "name": "热耦测量",
+      "type": "测量方法",
+      "desc": "利用热电偶测量金属结构件和铁心温升的方法"
+    },
+    {
+      "name": "红外热像仪",
+      "type": "测量工具",
+      "desc": "用于非接触式测量油箱表面温升的仪器"
+    },
+    {
+      "name": "DL/T272",
+      "type": "标准文件",
+      "desc": "国家电网公司发布的变压器温升限值标准"
+    },
+    {
+      "name": "GB/T1094.2",
+      "type": "标准文件",
+      "desc": "国家标准规定的变压器温升限值修正方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在各种冷却方式下额定负载时的变压器绕组、顶层油、铁心和油箱金属部件的温升限值及考核应符合DL/T272的规定。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "温升限值考核",
+      "condition": "额定负载，各种冷却方式",
+      "constraint": "DL/T272",
+      "related_entities": [
+        "变压器",
+        "绕组",
+        "顶层油",
+        "铁心",
+        "油箱金属部件",
+        "温升限值",
+        "DL/T272"
+      ]
+    },
+    {
+      "content": "在特殊使用条件下，变压器的温升限值应按GB/T1094.2的规定进行修正。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "温升限值修正",
+      "condition": "特殊使用条件",
+      "constraint": "GB/T1094.2",
+      "related_entities": [
+        "变压器",
+        "温升限值",
+        "GB/T1094.2"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "绕组",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "顶层油",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "铁心",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "油箱金属部件",
+      "type": "包含"
+    },
+    {
+      "source": "绕组",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "顶层油",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "铁心",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "油箱金属部件",
+      "target": "温升限值",
+      "type": "满足"
+    },
+    {
+      "source": "温升限值",
+      "target": "DL/T272",
+      "type": "依据"
+    },
+    {
+      "source": "温升限值",
+      "target": "GB/T1094.2",
+      "type": "修正依据"
+    },
+    {
+      "source": "绕组",
+      "target": "电阻法",
+      "type": "测量方法"
+    },
+    {
+      "source": "顶层油",
+      "target": "温度计",
+      "type": "测量方法"
+    },
+    {
+      "source": "绕组热点",
+      "target": "光纤测量",
+      "type": "测量方法"
+    },
+    {
+      "source": "金属结构件和铁心",
+      "target": "热耦测量",
+      "type": "测量方法"
+    },
+    {
+      "source": "油箱表面",
+      "target": "红外热像仪",
+      "type": "测量方法"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2723,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "03589c41dadf62b9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2723_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

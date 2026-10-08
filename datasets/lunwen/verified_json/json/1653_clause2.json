@@ -1,0 +1,108 @@
+{
+  "entities": [
+    {
+      "name": "操作机构箱",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制和保护电气设备的装置"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "衡量设备防尘防水性能的技术指标"
+    },
+    {
+      "name": "户外设备",
+      "type": "电力设备",
+      "desc": "安装在室外环境中的电力设备"
+    },
+    {
+      "name": "户内设备",
+      "type": "电力设备",
+      "desc": "安装在室内环境中的电力设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "户外设备的操作机构箱的防护等级不得低于IP4XDW",
+      "type": "强制",
+      "subject": "户外设备的操作机构箱",
+      "action": "设置防护等级",
+      "condition": "户外环境",
+      "constraint": "IP4XDW",
+      "related_entities": [
+        "操作机构箱",
+        "户外设备"
+      ]
+    },
+    {
+      "content": "户内不得低于IP2XD",
+      "type": "强制",
+      "subject": "户内设备的操作机构箱",
+      "action": "设置防护等级",
+      "condition": "户内环境",
+      "constraint": "IP2XD",
+      "related_entities": [
+        "操作机构箱",
+        "户内设备"
+      ]
+    },
+    {
+      "content": "通常不要求在外壳打开后阻止人员偶然触及危险部位的防护",
+      "type": "建议",
+      "subject": "操作机构箱",
+      "action": "防护设计",
+      "condition": "外壳打开后",
+      "constraint": "不强制要求",
+      "related_entities": [
+        "操作机构箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户外设备",
+      "target": "操作机构箱",
+      "type": "包含"
+    },
+    {
+      "source": "户内设备",
+      "target": "操作机构箱",
+      "type": "包含"
+    },
+    {
+      "source": "防护等级",
+      "target": "操作机构箱",
+      "type": "属性"
+    },
+    {
+      "source": "防护等级",
+      "target": "户外设备",
+      "type": "属性"
+    },
+    {
+      "source": "防护等级",
+      "target": "户内设备",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1653,
+      "source_row_id": "1653",
+      "clause_index": 2,
+      "source_text": "户外设备的操作机构箱的防护等级不得低于IP4XDW，户内不得低于IP2XD。此外，通常不要求在外壳打开后阻止人员偶然触及危险部位的防护"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9688,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.616159+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

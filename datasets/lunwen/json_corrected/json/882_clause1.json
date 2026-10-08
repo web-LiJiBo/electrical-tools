@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "闭口闪点",
+      "type": "试验参数",
+      "desc": "绝缘油在密闭容器中加热至遇火即闪的最低温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油闭口闪点值要求：≥135℃",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "闭口闪点试验",
+      "condition": "新油或再生油",
+      "constraint": "闭口闪点≥135℃",
+      "related_entities": [
+        "绝缘油",
+        "闭口闪点"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油",
+      "target": "闭口闪点",
+      "type": "测试项目"
+    }
+  ],
+  "metadata": {
+    "pair_id": 882,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a04df788bd24bcaa",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\882_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

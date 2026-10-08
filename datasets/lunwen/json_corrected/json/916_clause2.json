@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "name": "户内开关设备",
+      "type": "电力设备",
+      "desc": "安装在室内环境中的开关设备"
+    },
+    {
+      "name": "外绝缘",
+      "type": "电力设备部件",
+      "desc": "开关设备外部绝缘部分"
+    },
+    {
+      "name": "爬电距离",
+      "type": "电气参数",
+      "desc": "绝缘材料表面沿固体介质表面的最短距离"
+    },
+    {
+      "name": "最小标称爬电比距lr",
+      "type": "电气参数",
+      "desc": "最小爬电距离与额定电压的比值"
+    },
+    {
+      "name": "瓷质",
+      "type": "材料类型",
+      "desc": "以瓷为主要成分的绝缘材料"
+    },
+    {
+      "name": "有机",
+      "type": "材料类型",
+      "desc": "以合成树脂为主要成分的绝缘材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "户内开关设备外绝缘的最小标称爬电比距lr应该不小于3×18mm/kV(瓷质)和3×20mm/kV(有机)",
+      "type": "强制",
+      "subject": "设计人员/制造厂家",
+      "action": "确定外绝缘爬电距离",
+      "condition": "户内开关设备",
+      "constraint": "最小标称爬电比距lr≥3×18mm/kV(瓷质)和3×20mm/kV(有机)",
+      "related_entities": [
+        "户内开关设备",
+        "外绝缘",
+        "最小标称爬电比距lr",
+        "瓷质",
+        "有机"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户内开关设备",
+      "target": "外绝缘",
+      "type": "包含"
+    },
+    {
+      "source": "外绝缘",
+      "target": "最小标称爬电比距lr",
+      "type": "包含"
+    },
+    {
+      "source": "最小标称爬电比距lr",
+      "target": "瓷质",
+      "type": "适用于"
+    },
+    {
+      "source": "最小标称爬电比距lr",
+      "target": "有机",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 916,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "036898da58a20153",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\916_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

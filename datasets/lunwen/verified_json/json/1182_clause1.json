@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "箱式变电站",
+      "type": "电力设备",
+      "desc": "一种将高压开关设备、配电变压器和低压配电装置等组合在一起的成套配电装置"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压和电流"
+    },
+    {
+      "name": "单台变压器容量",
+      "type": "技术参数",
+      "desc": "单台变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "箱式变电站单台变压器容量一般不宜超过630kVA",
+      "type": "强制",
+      "subject": "箱式变电站",
+      "action": "配置变压器",
+      "condition": "新建或改造箱式变电站",
+      "constraint": "单台变压器容量≤630kVA",
+      "related_entities": [
+        "箱式变电站",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "箱式变电站",
+      "target": "变压器",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "单台变压器容量",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1182,
+      "source_row_id": "1182",
+      "clause_index": 1,
+      "source_text": "箱式变电站单台变压器容量一般不宜超过630kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.082948+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

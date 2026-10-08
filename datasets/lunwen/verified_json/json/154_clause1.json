@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "高压直流输电系统中的关键设备"
+    },
+    {
+      "name": "阀控系统",
+      "type": "电力控制系统",
+      "desc": "控制换流阀工作的系统"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力电子器件",
+      "desc": "可控硅整流元件"
+    },
+    {
+      "name": "冗余晶闸管",
+      "type": "电力电子器件",
+      "desc": "用于提高系统可靠性的备用晶闸管"
+    },
+    {
+      "name": "单阀",
+      "type": "电力设备",
+      "desc": "换流阀的基本单元"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个单阀中必须增加一定数量的冗余晶闸管",
+      "type": "强制",
+      "subject": "换流阀",
+      "action": "增加冗余晶闸管",
+      "condition": "在阀控系统的控制下",
+      "constraint": "冗余晶闸管数不小于12个月运行周期内损坏的晶闸管数的期望值的2.5倍，也不应少于2至3个",
+      "related_entities": [
+        "换流阀",
+        "阀控系统",
+        "晶闸管",
+        "冗余晶闸管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流阀",
+      "target": "阀控系统",
+      "type": "控制"
+    },
+    {
+      "source": "阀控系统",
+      "target": "冗余晶闸管",
+      "type": "控制"
+    },
+    {
+      "source": "冗余晶闸管",
+      "target": "晶闸管",
+      "type": "替代"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 154,
+      "source_row_id": "154",
+      "clause_index": 1,
+      "source_text": "防止换流阀及阀控系统故障6.1.2每个单阀中必须增加一定数量的冗余晶闸管。各单阀中的冗余晶闸管数，应不小于12个月运行周期内损坏的晶闸管数的期望值的2.5倍，也不应少于2至3个晶闸管"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.919600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

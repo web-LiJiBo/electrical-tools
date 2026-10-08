@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "交接试验",
+      "type": "试验项目",
+      "desc": "新安装的电气设备在投入运行前进行的试验"
+    },
+    {
+      "name": "例行试验",
+      "type": "试验项目",
+      "desc": "对已投运的电气设备定期进行的试验"
+    },
+    {
+      "name": "行程曲线",
+      "type": "试验参数",
+      "desc": "断路器动触头运动轨迹的曲线图"
+    },
+    {
+      "name": "分闸线圈",
+      "type": "电力设备部件",
+      "desc": "断路器分闸操作时使用的电磁线圈"
+    },
+    {
+      "name": "合闸线圈",
+      "type": "电力设备部件",
+      "desc": "断路器合闸操作时使用的电磁线圈"
+    },
+    {
+      "name": "电流波形",
+      "type": "试验参数",
+      "desc": "通过线圈的电流随时间变化的图形"
+    }
+  ],
+  "rules": [
+    {
+      "content": "断路器交接试验及例行试验中，应进行行程曲线测试，并同时测量分、合闸线圈电流波形。",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "进行行程曲线测试并测量分、合闸线圈电流波形",
+      "condition": "交接试验或例行试验",
+      "constraint": "无具体数值约束",
+      "related_entities": [
+        "断路器",
+        "交接试验",
+        "例行试验",
+        "行程曲线",
+        "分闸线圈",
+        "合闸线圈",
+        "电流波形"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "交接试验",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "例行试验",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "行程曲线",
+      "type": "测试对象"
+    },
+    {
+      "source": "断路器",
+      "target": "分闸线圈",
+      "type": "部件"
+    },
+    {
+      "source": "断路器",
+      "target": "合闸线圈",
+      "type": "部件"
+    },
+    {
+      "source": "行程曲线",
+      "target": "分闸线圈",
+      "type": "测试对象"
+    },
+    {
+      "source": "行程曲线",
+      "target": "合闸线圈",
+      "type": "测试对象"
+    },
+    {
+      "source": "分闸线圈",
+      "target": "电流波形",
+      "type": "测试对象"
+    },
+    {
+      "source": "合闸线圈",
+      "target": "电流波形",
+      "type": "测试对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2791,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "647f182d0bf2acce",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2791_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

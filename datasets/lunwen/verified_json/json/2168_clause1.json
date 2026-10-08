@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "箱壁",
+      "type": "电力设备",
+      "desc": "电力设备的外壳部分"
+    },
+    {
+      "name": "最高工作电压",
+      "type": "运行参数",
+      "desc": "设备在正常运行状态下的最高允许电压值"
+    },
+    {
+      "name": "振幅",
+      "type": "物理量",
+      "desc": "物体在振动过程中偏离平衡位置的最大距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在最高工作电压运行时，箱壁最大振幅<100μm(峰一峰值)",
+      "type": "强制",
+      "subject": "箱壁",
+      "action": "振动控制",
+      "condition": "最高工作电压运行时",
+      "constraint": "振幅<100μm(峰一峰值)",
+      "related_entities": [
+        "箱壁",
+        "最高工作电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "箱壁",
+      "target": "最高工作电压",
+      "type": "运行参数依赖"
+    },
+    {
+      "source": "箱壁",
+      "target": "振幅",
+      "type": "物理量测量"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2168,
+      "source_row_id": "2168",
+      "clause_index": 1,
+      "source_text": "振动：在最高工作电压运行时，箱壁最大振幅<100μm(峰一峰值)"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.225547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

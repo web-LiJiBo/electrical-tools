@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "无线电干扰水平",
+      "type": "电磁兼容指标",
+      "desc": "设备在特定条件下产生的无线电干扰强度"
+    },
+    {
+      "name": "最高直流运行电压",
+      "type": "电气参数",
+      "desc": "设备在正常运行状态下的最高直流电压值"
+    },
+    {
+      "name": "夜晚",
+      "type": "时间",
+      "desc": "夜间时段，通常指日落后至次日日出前的时间段"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在分、合闸状态下，分别施加最高直流运行电压时，无线电干扰水平应不大于2000μV",
+      "type": "强制",
+      "subject": "设备",
+      "action": "产生无线电干扰",
+      "condition": "分、合闸状态下，施加最高直流运行电压",
+      "constraint": "无线电干扰水平≤2000μV",
+      "related_entities": [
+        "无线电干扰水平",
+        "最高直流运行电压"
+      ]
+    },
+    {
+      "content": "且在夜晚无可见电晕",
+      "type": "强制",
+      "subject": "设备",
+      "action": "产生电晕现象",
+      "condition": "夜晚时段，施加最高直流运行电压",
+      "constraint": "无可见电晕现象",
+      "related_entities": [
+        "夜晚",
+        "无线电干扰水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "无线电干扰水平",
+      "target": "最高直流运行电压",
+      "type": "受控于"
+    },
+    {
+      "source": "无线电干扰水平",
+      "target": "夜晚",
+      "type": "发生于"
+    },
+    {
+      "source": "夜晚",
+      "target": "无线电干扰水平",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 571,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d38476e8241fa8e6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\571_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

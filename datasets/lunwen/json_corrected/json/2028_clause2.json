@@ -1,0 +1,144 @@
+{
+  "entities": [
+    {
+      "name": "憎水性",
+      "type": "电气性能",
+      "desc": "绝缘子表面憎水性特性"
+    },
+    {
+      "name": "静态接触角",
+      "type": "电气参数",
+      "desc": "绝缘子表面憎水性测试参数之一"
+    },
+    {
+      "name": "HC值",
+      "type": "电气参数",
+      "desc": "绝缘子表面憎水性测试参数之一"
+    },
+    {
+      "name": "试品",
+      "type": "试验样品",
+      "desc": "用于测试憎水性的绝缘子试样"
+    },
+    {
+      "name": "实验室标准环境条件",
+      "type": "试验条件",
+      "desc": "规定的试验环境条件"
+    },
+    {
+      "name": "容器",
+      "type": "试验设备",
+      "desc": "盛放试品进行测试的容器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在实验室标准环境条件下，将5片清洁试品置于盛有水的容器中浸泡96h，保证试品被水完全浸没。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "浸泡",
+      "condition": "实验室标准环境条件",
+      "constraint": "96h",
+      "related_entities": [
+        "试品",
+        "实验室标准环境条件",
+        "容器"
+      ]
+    },
+    {
+      "content": "将试品取出后，甩掉表面的水珠，用滤纸吸干残余水分。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "处理",
+      "condition": "浸泡96h后",
+      "constraint": "无",
+      "related_entities": [
+        "试品"
+      ]
+    },
+    {
+      "content": "任选3个试品，测量其静态接触角θ及HC值，其余2个试品仅测HC值。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "测量",
+      "condition": "处理后",
+      "constraint": "3个试品测静态接触角θ及HC值，2个试品仅测HC值",
+      "related_entities": [
+        "试品",
+        "静态接触角",
+        "HC值"
+      ]
+    },
+    {
+      "content": "每个试品的测量过程在10min内完成。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "测量",
+      "condition": "处理后",
+      "constraint": "10min",
+      "related_entities": [
+        "试品",
+        "静态接触角",
+        "HC值"
+      ]
+    },
+    {
+      "content": "试品应满足：a）静态接触角θAV≥90°、θmin≥85°。b）一般为HC3~HC4级，且HC5级的试品不多于1个。c）对已运行的绝缘子一般应为HC4~HC6级。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "满足",
+      "condition": "测量后",
+      "constraint": "静态接触角θAV≥90°、θmin≥85°；HC3~HC4级，HC5级的试品不多于1个；HC4~HC6级",
+      "related_entities": [
+        "试品",
+        "静态接触角",
+        "HC值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "静态接触角",
+      "target": "试品",
+      "type": "测试参数"
+    },
+    {
+      "source": "HC值",
+      "target": "试品",
+      "type": "测试参数"
+    },
+    {
+      "source": "实验室标准环境条件",
+      "target": "试品",
+      "type": "试验条件"
+    },
+    {
+      "source": "容器",
+      "target": "试品",
+      "type": "试验设备"
+    },
+    {
+      "source": "试品",
+      "target": "静态接触角",
+      "type": "测试对象"
+    },
+    {
+      "source": "试品",
+      "target": "HC值",
+      "type": "测试对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2028,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a7a548a85789e50a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2028_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

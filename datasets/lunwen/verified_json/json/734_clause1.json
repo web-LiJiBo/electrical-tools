@@ -1,0 +1,153 @@
+{
+  "entities": [
+    {
+      "name": "绝缘工器具",
+      "type": "电力设备",
+      "desc": "用于电力系统中进行电气操作或安全防护的绝缘工具"
+    },
+    {
+      "name": "防护用具",
+      "type": "电力设备",
+      "desc": "用于电力系统中进行电气操作或安全防护的个人防护装备"
+    },
+    {
+      "name": "型式试验报告",
+      "type": "技术文件",
+      "desc": "证明绝缘工器具和防护用具性能符合标准的检测报告"
+    },
+    {
+      "name": "出厂试验",
+      "type": "试验项目",
+      "desc": "检验绝缘工器具和防护用具出厂前的电气性能和机械性能的试验"
+    },
+    {
+      "name": "产品合格证",
+      "type": "技术文件",
+      "desc": "证明绝缘工器具和防护用具符合出厂标准的合格证书"
+    },
+    {
+      "name": "专用库房",
+      "type": "设施",
+      "desc": "专门存放带电作业工具的仓库"
+    },
+    {
+      "name": "带电作业工具库房",
+      "type": "设施",
+      "desc": "存放带电作业工具的专业仓库"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有购置的绝缘工器具和防护用具均应有近5年内的型式试验报告",
+      "type": "强制",
+      "subject": "绝缘工器具和防护用具",
+      "action": "购置",
+      "condition": "购置",
+      "constraint": "近5年内",
+      "related_entities": [
+        "绝缘工器具",
+        "防护用具",
+        "型式试验报告"
+      ]
+    },
+    {
+      "content": "每件工器具须经出厂试验合格并附有产品合格证",
+      "type": "强制",
+      "subject": "绝缘工器具和防护用具",
+      "action": "出厂",
+      "condition": "出厂",
+      "constraint": "合格",
+      "related_entities": [
+        "绝缘工器具",
+        "防护用具",
+        "出厂试验",
+        "产品合格证"
+      ]
+    },
+    {
+      "content": "带电作业用工具应存放在专用库房里",
+      "type": "强制",
+      "subject": "带电作业工具",
+      "action": "存放",
+      "condition": "带电作业",
+      "constraint": "专用库房",
+      "related_entities": [
+        "带电作业工具",
+        "专用库房"
+      ]
+    },
+    {
+      "content": "带电作业工具库房应满足DL/T974的规定",
+      "type": "强制",
+      "subject": "带电作业工具库房",
+      "action": "建设与管理",
+      "condition": "带电作业",
+      "constraint": "DL/T974",
+      "related_entities": [
+        "带电作业工具库房"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘工器具",
+      "target": "型式试验报告",
+      "type": "包含"
+    },
+    {
+      "source": "防护用具",
+      "target": "型式试验报告",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘工器具",
+      "target": "出厂试验",
+      "type": "包含"
+    },
+    {
+      "source": "防护用具",
+      "target": "出厂试验",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘工器具",
+      "target": "产品合格证",
+      "type": "包含"
+    },
+    {
+      "source": "防护用具",
+      "target": "产品合格证",
+      "type": "包含"
+    },
+    {
+      "source": "带电作业工具",
+      "target": "专用库房",
+      "type": "存放于"
+    },
+    {
+      "source": "带电作业工具库房",
+      "target": "带电作业工具",
+      "type": "存放"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 734,
+      "source_row_id": "734",
+      "clause_index": 1,
+      "source_text": "所有购置的绝缘工器具和防护用具均应有近5年内的型式试验报告，每件工器具须经出厂试验合格并附有产品合格证。第10.4条，带电作业用工具应存放在专用库房里，带电作业工具库房应满足DL/T974的规定"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.563085+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

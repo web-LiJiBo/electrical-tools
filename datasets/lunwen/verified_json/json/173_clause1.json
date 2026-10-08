@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "光电流互感器",
+      "type": "设备",
+      "desc": "一种光电式电流互感器"
+    },
+    {
+      "name": "光纤传输的直流分压器",
+      "type": "设备",
+      "desc": "一种通过光纤传输信号的直流分压器"
+    },
+    {
+      "name": "二次回路",
+      "type": "电气回路",
+      "desc": "光电流互感器和光纤传输的直流分压器二次侧的电气连接路径"
+    },
+    {
+      "name": "备用光纤",
+      "type": "元器件",
+      "desc": "用于提高光纤传输系统可靠性的冗余光纤"
+    },
+    {
+      "name": "在用光纤",
+      "type": "元器件",
+      "desc": "正在使用的光纤"
+    }
+  ],
+  "rules": [
+    {
+      "content": "光电流互感器、光纤传输的直流分压器二次回路应有充足的备用光纤",
+      "type": "强制",
+      "subject": "光电流互感器、光纤传输的直流分压器二次回路",
+      "action": "配置备用光纤",
+      "condition": "二次回路中存在光电流互感器、光纤传输的直流分压器",
+      "constraint": "备用光纤数量不低于在用光纤数量的100%，且不得少于3根",
+      "related_entities": [
+        "光电流互感器",
+        "光纤传输的直流分压器",
+        "二次回路",
+        "备用光纤",
+        "在用光纤"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "光电流互感器",
+      "target": "二次回路",
+      "type": "属于"
+    },
+    {
+      "source": "光纤传输的直流分压器",
+      "target": "二次回路",
+      "type": "属于"
+    },
+    {
+      "source": "二次回路",
+      "target": "备用光纤",
+      "type": "包含"
+    },
+    {
+      "source": "二次回路",
+      "target": "在用光纤",
+      "type": "包含"
+    },
+    {
+      "source": "备用光纤",
+      "target": "在用光纤",
+      "type": "冗余于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 173,
+      "source_row_id": "173",
+      "clause_index": 1,
+      "source_text": "光电流互感器、光纤传输的直流分压器二次回路应有充足的备用光纤，备用光纤一般不低于在用光纤数量的100%，且不得少于3根，防止由于备用光纤数量不足导致测量系统运行可靠性降低"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.941602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "继电器",
+      "type": "电力设备",
+      "desc": "一种根据输入信号变化来接通或断开电路的自动电器"
+    },
+    {
+      "name": "密封性能",
+      "type": "技术参数",
+      "desc": "设备防止外部有害物质侵入的能力"
+    },
+    {
+      "name": "IP55防护等级",
+      "type": "防护等级",
+      "desc": "国际电工委员会制定的电气设备防护等级标准之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "继电器防喷水的密封性能，在无特别指明时一般应满足IP55防护等级的要求。",
+      "type": "强制",
+      "subject": "继电器",
+      "action": "满足密封性能要求",
+      "condition": "无特别指明",
+      "constraint": "IP55防护等级",
+      "related_entities": [
+        "继电器",
+        "密封性能",
+        "IP55防护等级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "继电器",
+      "target": "密封性能",
+      "type": "具有"
+    },
+    {
+      "source": "密封性能",
+      "target": "IP55防护等级",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2546,
+      "source_row_id": "2546",
+      "clause_index": 1,
+      "source_text": "继电器防喷水的密封性能，在无特别指明时一般应满足IP55防护等级的要求。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.699315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

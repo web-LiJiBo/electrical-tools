@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "水底电缆线",
+      "type": "电力设施",
+      "desc": "架设于水下的电缆线路"
+    },
+    {
+      "name": "河床",
+      "type": "地理环境",
+      "desc": "河流底部的沉积物层"
+    },
+    {
+      "name": "浅水区",
+      "type": "地理环境",
+      "desc": "水深较浅的区域"
+    },
+    {
+      "name": "深水航道",
+      "type": "地理环境",
+      "desc": "水深较深的通航航道"
+    },
+    {
+      "name": "悬空",
+      "type": "施工状态",
+      "desc": "电缆未与河床接触，漂浮于水中"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水底电缆线347路敷设必须平放水底，不得悬空。",
+      "type": "强制",
+      "subject": "水底电缆线347路",
+      "action": "敷设",
+      "condition": "敷设于水底",
+      "constraint": "不得悬空",
+      "related_entities": [
+        "水底电缆线",
+        "河床"
+      ]
+    },
+    {
+      "content": "条件允许时，应尽可能埋设在河床下。",
+      "type": "强制",
+      "subject": "水底电缆线347路",
+      "action": "敷设",
+      "condition": "敷设于水底且条件允许",
+      "constraint": "尽可能埋设在河床下",
+      "related_entities": [
+        "水底电缆线",
+        "河床"
+      ]
+    },
+    {
+      "content": "浅水区的埋深不宜小于0.5m。",
+      "type": "强制",
+      "subject": "水底电缆线347路",
+      "action": "敷设",
+      "condition": "敷设于浅水区",
+      "constraint": "埋深不宜小于0.5m",
+      "related_entities": [
+        "水底电缆线",
+        "浅水区"
+      ]
+    },
+    {
+      "content": "深水航道的埋深不宜小于2m。",
+      "type": "强制",
+      "subject": "水底电缆线347路",
+      "action": "敷设",
+      "condition": "敷设于深水航道",
+      "constraint": "埋深不宜小于2m",
+      "related_entities": [
+        "水底电缆线",
+        "深水航道"
+      ]
+    },
+    {
+      "content": "不能深埋时，应有防止外力破坏措施。",
+      "type": "强制",
+      "subject": "水底电缆线347路",
+      "action": "敷设",
+      "condition": "敷设于浅水区且不能深埋",
+      "constraint": "应有防止外力破坏措施",
+      "related_entities": [
+        "水底电缆线",
+        "浅水区"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水底电缆线",
+      "target": "河床",
+      "type": "敷设于"
+    },
+    {
+      "source": "水底电缆线",
+      "target": "浅水区",
+      "type": "敷设于"
+    },
+    {
+      "source": "水底电缆线",
+      "target": "深水航道",
+      "type": "敷设于"
+    },
+    {
+      "source": "水底电缆线",
+      "target": "悬空",
+      "type": "敷设状态为"
+    }
+  ]
+}

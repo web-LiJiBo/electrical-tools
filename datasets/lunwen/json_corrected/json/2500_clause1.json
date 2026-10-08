@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "接触电位差",
+      "type": "电气参数",
+      "desc": "接地故障时，地面上某点与设备外壳间电位差"
+    },
+    {
+      "name": "接地故障电流",
+      "type": "电气参数",
+      "desc": "接地故障时通过接地装置的电流"
+    },
+    {
+      "name": "大地表面分布电位",
+      "type": "电气参数",
+      "desc": "接地故障时，大地表面形成的电位分布"
+    },
+    {
+      "name": "设备外壳",
+      "type": "设备部件",
+      "desc": "设备的外露金属部分"
+    },
+    {
+      "name": "设备架构",
+      "type": "设备部件",
+      "desc": "支撑设备的金属结构"
+    },
+    {
+      "name": "墙壁",
+      "type": "建筑结构",
+      "desc": "建筑物的墙体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接触电位差接地故障电流流过接地装置时，大地表面形成分布电位，在地面上到设备水平距离为1.0m处与设备外壳、架构或墙壁离地面的垂直距离2.0m处两点间的电位差。",
+      "type": "强制",
+      "subject": "设备外壳、架构或墙壁",
+      "action": "测量接触电位差",
+      "condition": "发生接地故障时",
+      "constraint": "在地面上到设备水平距离为1.0m处与设备外壳、架构或墙壁离地面的垂直距离2.0m处两点间",
+      "related_entities": [
+        "接触电位差",
+        "接地故障电流",
+        "大地表面分布电位",
+        "设备外壳",
+        "设备架构",
+        "墙壁"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接触电位差",
+      "target": "大地表面分布电位",
+      "type": "形成于"
+    },
+    {
+      "source": "大地表面分布电位",
+      "target": "接触电位差",
+      "type": "由...产生"
+    },
+    {
+      "source": "接地故障电流",
+      "target": "大地表面分布电位",
+      "type": "引起"
+    },
+    {
+      "source": "大地表面分布电位",
+      "target": "接触电位差",
+      "type": "导致"
+    },
+    {
+      "source": "设备外壳",
+      "target": "接触电位差",
+      "type": "测量点之一"
+    },
+    {
+      "source": "设备架构",
+      "target": "接触电位差",
+      "type": "测量点之一"
+    },
+    {
+      "source": "墙壁",
+      "target": "接触电位差",
+      "type": "测量点之一"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2500,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "149e9f1bd1fdd5ae",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2500_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力材料",
+      "desc": "变压器和电抗器内部绝缘介质，具有绝缘和散热功能"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备部件",
+      "desc": "变压器和电抗器外部绝缘部件，用于引出线与外部电路连接"
+    },
+    {
+      "name": "升高座",
+      "type": "电力设备部件",
+      "desc": "变压器内部结构，用于支撑绕组和引线"
+    },
+    {
+      "name": "冷却装置",
+      "type": "电力设备部件",
+      "desc": "变压器和电抗器内部冷却系统，用于散热降温"
+    },
+    {
+      "name": "气体继电器",
+      "type": "电力设备部件",
+      "desc": "变压器内部保护装置，用于检测内部故障气体"
+    },
+    {
+      "name": "压力释放装置",
+      "type": "电力设备部件",
+      "desc": "变压器内部保护装置，用于释放内部压力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器、电抗器注油完毕后，在施加电压前，静置时间不应少于120h，且绝缘油合格",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "注油并静置",
+      "condition": "注油完毕后，在施加电压前",
+      "constraint": "静置时间不应少于120h，且绝缘油合格",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "绝缘油"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "电抗器",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "变压器",
+      "target": "套管",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "升高座",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "冷却装置",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "气体继电器",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "压力释放装置",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "套管",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "升高座",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "冷却装置",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "气体继电器",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "压力释放装置",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2716,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5b6b5536557842cb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2716_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

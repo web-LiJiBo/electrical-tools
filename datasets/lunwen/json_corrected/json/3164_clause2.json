@@ -1,0 +1,133 @@
+{
+  "entities": [
+    {
+      "name": "220kV及以上线路",
+      "type": "电力线路",
+      "desc": "电压等级220kV及以上的输电线路"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "国家铁路系统中的主要运输线路"
+    },
+    {
+      "name": "高速公路",
+      "type": "交通设施",
+      "desc": "国家高速公路网中的主要运输线路"
+    },
+    {
+      "name": "一级公路",
+      "type": "交通设施",
+      "desc": "国家公路网中的一级干线公路"
+    },
+    {
+      "name": "一二级通航河流",
+      "type": "水体",
+      "desc": "具有I级或II级通航能力的河流"
+    },
+    {
+      "name": "特殊管道",
+      "type": "工业设施",
+      "desc": "具有特殊用途的地下或地上输送管道"
+    },
+    {
+      "name": "绝缘子串",
+      "type": "电气设备",
+      "desc": "输电线路中用于绝缘的多片组合结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当跨越220kV及以上线路、铁路、高速公路、一级公路、一二级通航河流及特殊管道时，绝缘子串宜采用双挂点、双联'I'串或'V'串型式。",
+      "type": "强制",
+      "subject": "输电线路设计与施工人员",
+      "action": "选择绝缘子串型式",
+      "condition": "跨越220kV及以上线路、铁路、高速公路、一级公路、一二级通航河流及特殊管道",
+      "constraint": "绝缘子串宜采用双挂点、双联'I'串或'V'串型式",
+      "related_entities": [
+        "220kV及以上线路",
+        "铁路",
+        "高速公路",
+        "一级公路",
+        "一二级通航河流",
+        "特殊管道",
+        "绝缘子串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "220kV及以上线路",
+      "target": "绝缘子串",
+      "type": "跨越"
+    },
+    {
+      "source": "铁路",
+      "target": "绝缘子串",
+      "type": "跨越"
+    },
+    {
+      "source": "高速公路",
+      "target": "绝缘子串",
+      "type": "跨越"
+    },
+    {
+      "source": "一级公路",
+      "target": "绝缘子串",
+      "type": "跨越"
+    },
+    {
+      "source": "一二级通航河流",
+      "target": "绝缘子串",
+      "type": "跨越"
+    },
+    {
+      "source": "特殊管道",
+      "target": "绝缘子串",
+      "type": "跨越"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "220kV及以上线路",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "铁路",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "高速公路",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "一级公路",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "一二级通航河流",
+      "type": "支撑"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "特殊管道",
+      "type": "支撑"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3164,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "21db4d1f8808cd1e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3164_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

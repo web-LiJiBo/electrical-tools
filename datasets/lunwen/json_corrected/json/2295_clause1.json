@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "额定短时持续时间",
+      "type": "电气参数",
+      "desc": "设备在额定条件下允许持续的时间"
+    },
+    {
+      "name": "550kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "126kV-363kV",
+      "type": "电压等级",
+      "desc": "中压输电系统电压等级"
+    },
+    {
+      "name": "72.5kV",
+      "type": "电压等级",
+      "desc": "中压输电系统电压等级"
+    },
+    {
+      "name": "2s",
+      "type": "时间",
+      "desc": "额定短时持续时间推荐值"
+    },
+    {
+      "name": "3s",
+      "type": "时间",
+      "desc": "额定短时持续时间推荐值"
+    },
+    {
+      "name": "4s",
+      "type": "时间",
+      "desc": "额定短时持续时间推荐值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定短时持续时间的额定值推荐：550kV及以上：2s；126kV-363kV：3s；72.5kV：4s",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "设计选型",
+      "condition": "额定短时持续时间",
+      "constraint": "550kV及以上：2s；126kV-363kV：3s；72.5kV：4s",
+      "related_entities": [
+        "额定短时持续时间",
+        "550kV",
+        "126kV-363kV",
+        "72.5kV",
+        "2s",
+        "3s",
+        "4s"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "550kV",
+      "target": "额定短时持续时间",
+      "type": "对应"
+    },
+    {
+      "source": "126kV-363kV",
+      "target": "额定短时持续时间",
+      "type": "对应"
+    },
+    {
+      "source": "72.5kV",
+      "target": "额定短时持续时间",
+      "type": "对应"
+    },
+    {
+      "source": "2s",
+      "target": "额定短时持续时间",
+      "type": "对应"
+    },
+    {
+      "source": "3s",
+      "target": "额定短时持续时间",
+      "type": "对应"
+    },
+    {
+      "source": "4s",
+      "target": "额定短时持续时间",
+      "type": "对应"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2295,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "35a98dfb6e2abce8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2295_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

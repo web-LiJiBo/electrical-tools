@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "导电回路电阻",
+      "type": "电气参数",
+      "desc": "反映导电回路接触状态的重要参数"
+    },
+    {
+      "name": "制造厂规定值",
+      "type": "技术指标",
+      "desc": "厂家提供的产品性能指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔离开关大修后导电回路电阻测量值不大于制造厂规定值的1.5倍",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "大修后进行导电回路电阻测量",
+      "condition": "隔离开关大修后",
+      "constraint": "导电回路电阻≤制造厂规定值×1.5",
+      "related_entities": [
+        "隔离开关",
+        "导电回路电阻",
+        "制造厂规定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "导电回路电阻",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "制造厂规定值",
+      "type": "依据"
+    },
+    {
+      "source": "导电回路电阻",
+      "target": "制造厂规定值",
+      "type": "对比"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1280,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "99f3522205882b8c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1280_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

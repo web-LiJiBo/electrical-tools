@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "直流断路器",
+      "type": "设备",
+      "desc": "一种用于直流电路的开关装置"
+    },
+    {
+      "name": "分闸指令",
+      "type": "信号",
+      "desc": "控制直流断路器进行分闸操作的指令"
+    },
+    {
+      "name": "主回路电流",
+      "type": "参数",
+      "desc": "直流电路中主回路的电流值"
+    },
+    {
+      "name": "剩余电流时刻",
+      "type": "时间点",
+      "desc": "主回路电流降至预设阈值的时刻"
+    }
+  ],
+  "rules": [
+    {
+      "content": "从直流断路器收到分闸指令开始时刻，到主回路电流降到剩余电流时刻的时间间隔。",
+      "type": "强制",
+      "subject": "直流断路器",
+      "action": "分闸操作",
+      "condition": "直流断路器接收到分闸指令时",
+      "constraint": "时间间隔≤0.5s",
+      "related_entities": [
+        "直流断路器",
+        "分闸指令",
+        "主回路电流",
+        "剩余电流时刻"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流断路器",
+      "target": "分闸指令",
+      "type": "接收"
+    },
+    {
+      "source": "直流断路器",
+      "target": "主回路电流",
+      "type": "监测"
+    },
+    {
+      "source": "主回路电流",
+      "target": "剩余电流时刻",
+      "type": "降至"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3132,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9082bb465d60ae5e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3132_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

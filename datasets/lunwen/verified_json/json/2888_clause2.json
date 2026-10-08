@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "额定直流电压",
+      "type": "电气参数",
+      "desc": "直流输电系统或设备的额定运行电压"
+    },
+    {
+      "name": "kV",
+      "type": "电压单位",
+      "desc": "千伏，电压单位"
+    },
+    {
+      "name": "供需双方",
+      "type": "组织机构",
+      "desc": "电力系统中的供电方与用电方"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定直流电压从下列值中选取：6、10、20、25、35、50、100、160、200、320、400、500",
+      "type": "强制",
+      "subject": "额定直流电压",
+      "action": "选取",
+      "condition": "新建或扩建直流输电工程",
+      "constraint": "额定直流电压必须在上述范围内选取",
+      "related_entities": [
+        "额定直流电压",
+        "kV"
+      ]
+    },
+    {
+      "content": "对于直流电压有特殊要求时，由供需双方协商确定",
+      "type": "强制",
+      "subject": "额定直流电压",
+      "action": "协商确定",
+      "condition": "直流电压有特殊要求",
+      "constraint": "协商确定的额定直流电压需满足电网安全稳定运行要求",
+      "related_entities": [
+        "额定直流电压",
+        "供需双方"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定直流电压",
+      "target": "kV",
+      "type": "单位"
+    },
+    {
+      "source": "额定直流电压",
+      "target": "供需双方",
+      "type": "协商确定"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2879,
+      "source_row_id": "2888",
+      "clause_index": 2,
+      "source_text": "额定直流电压从下列值中选取(kV)：6、10、20、25、35、50、100、160、200、320、400、500。注：对于直流电压有特殊要求时，由供需双方协商确定。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8839,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.104314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

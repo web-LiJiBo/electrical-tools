@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流的电力设备"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备",
+      "desc": "一种用于绝缘和连接电力设备的部件"
+    },
+    {
+      "name": "油色谱",
+      "type": "试验项目",
+      "desc": "一种检测变压器油中溶解气体成分的技术"
+    },
+    {
+      "name": "微水",
+      "type": "试验项目",
+      "desc": "一种检测变压器油中水分含量的技术"
+    },
+    {
+      "name": "取油样",
+      "type": "操作行为",
+      "desc": "从电力设备中取出一定量的油样进行检测"
+    },
+    {
+      "name": "厂家",
+      "type": "组织机构",
+      "desc": "生产电力设备的企业或单位"
+    },
+    {
+      "name": "制造厂",
+      "type": "组织机构",
+      "desc": "生产电力设备的企业或单位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对新投运的220kV及以上电压等级电流互感器和套管，一年内应取油样进行油色谱、微水分析",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "取油样并进行油色谱、微水分析",
+      "condition": "新投运的220kV及以上电压等级电流互感器和套管",
+      "constraint": "一年内",
+      "related_entities": [
+        "电流互感器",
+        "套管",
+        "油色谱",
+        "微水"
+      ]
+    },
+    {
+      "content": "取油样时间在投运后3～6个月为宜",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "取油样",
+      "condition": "新投运的220kV及以上电压等级电流互感器和套管",
+      "constraint": "投运后3～6个月",
+      "related_entities": [
+        "电流互感器",
+        "套管"
+      ]
+    },
+    {
+      "content": "对于厂家明确要求不取油样的产品，确需取样或补油时应由制造厂配合进行",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "取油样或补油",
+      "condition": "厂家明确要求不取油样的产品",
+      "constraint": "确需取样或补油时",
+      "related_entities": [
+        "厂家",
+        "制造厂",
+        "电力设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电流互感器",
+      "target": "取油样",
+      "type": "需要"
+    },
+    {
+      "source": "套管",
+      "target": "取油样",
+      "type": "需要"
+    },
+    {
+      "source": "取油样",
+      "target": "油色谱",
+      "type": "包含"
+    },
+    {
+      "source": "取油样",
+      "target": "微水",
+      "type": "包含"
+    },
+    {
+      "source": "厂家",
+      "target": "制造厂",
+      "type": "所属"
+    },
+    {
+      "source": "制造厂",
+      "target": "电力设备",
+      "type": "生产"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 391,
+      "source_row_id": "391",
+      "clause_index": 2,
+      "source_text": "对新投运的220kV及以上电压等级电流互感器和套管，一年内应取油样进行油色谱、微水分析，取油样时间在投运后3～6个月为宜；对于厂家明确要求不取油样的产品，确需取样或补油时应由制造厂配合进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.172483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

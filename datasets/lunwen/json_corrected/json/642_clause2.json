@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "高压室",
+      "type": "电力设备",
+      "desc": "高压电气设备安装的房间"
+    },
+    {
+      "name": "自然采光窗",
+      "type": "建筑结构",
+      "desc": "通过自然光线进行照明的窗户"
+    },
+    {
+      "name": "窗台",
+      "type": "建筑结构",
+      "desc": "窗户下沿与地面的水平距离"
+    },
+    {
+      "name": "室外地坪",
+      "type": "建筑结构",
+      "desc": "建筑物外部地面基准面"
+    },
+    {
+      "name": "低压室",
+      "type": "电力设备",
+      "desc": "低压电气设备安装的房间"
+    },
+    {
+      "name": "自然采光窗(低压)",
+      "type": "建筑结构",
+      "desc": "低压电气设备安装房间的自然采光窗户"
+    },
+    {
+      "name": "配电站房",
+      "type": "电力设备",
+      "desc": "配电变压器等电气设备安装的房间"
+    },
+    {
+      "name": "临街面",
+      "type": "建筑结构",
+      "desc": "建筑物面向街道的一侧"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高压室宜设不能开启的自然采光窗，窗台距室外地坪不宜低于1.8m",
+      "type": "强制",
+      "subject": "高压室",
+      "action": "设置自然采光窗",
+      "condition": "高压室",
+      "constraint": "窗台距室外地坪不宜低于1.8m",
+      "related_entities": [
+        "高压室",
+        "自然采光窗",
+        "窗台",
+        "室外地坪"
+      ]
+    },
+    {
+      "content": "低压室可设能开启的自然采光窗",
+      "type": "强制",
+      "subject": "低压室",
+      "action": "设置自然采光窗",
+      "condition": "低压室",
+      "constraint": "自然采光窗可开启",
+      "related_entities": [
+        "低压室",
+        "自然采光窗(低压)"
+      ]
+    },
+    {
+      "content": "配电站房临街的一面不宜开窗",
+      "type": "强制",
+      "subject": "配电站房",
+      "action": "不设置临街面窗户",
+      "condition": "配电站房临街一面",
+      "constraint": "不宜开窗",
+      "related_entities": [
+        "配电站房",
+        "临街面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高压室",
+      "target": "自然采光窗",
+      "type": "安装"
+    },
+    {
+      "source": "自然采光窗",
+      "target": "窗台",
+      "type": "连接"
+    },
+    {
+      "source": "窗台",
+      "target": "室外地坪",
+      "type": "连接"
+    },
+    {
+      "source": "低压室",
+      "target": "自然采光窗(低压)",
+      "type": "安装"
+    },
+    {
+      "source": "配电站房",
+      "target": "临街面",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 642,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1e8134dce3306c47",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\642_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

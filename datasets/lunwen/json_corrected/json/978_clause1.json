@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "GIS配电装置",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "间隔",
+      "type": "电力设备",
+      "desc": "GIS内部独立的电气单元"
+    },
+    {
+      "name": "隔室",
+      "type": "电力设备",
+      "desc": "间隔内用于分隔不同电气元件的封闭空间"
+    },
+    {
+      "name": "正常运行条件",
+      "type": "运行状态",
+      "desc": "设备在额定电压、电流等参数下的工作状态"
+    },
+    {
+      "name": "间隔元件设备检修",
+      "type": "检修维护",
+      "desc": "间隔内电气元件的定期检查与维修"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS配电装置每间隔应分为若干个隔室，隔室的分隔应满足正常运行条件和间隔元件设备检修要求",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "分隔成隔室",
+      "condition": "GIS配电装置的间隔",
+      "constraint": "每个隔室应能独立满足正常运行条件和间隔元件设备检修要求",
+      "related_entities": [
+        "GIS配电装置",
+        "间隔",
+        "隔室",
+        "正常运行条件",
+        "间隔元件设备检修"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS配电装置",
+      "target": "间隔",
+      "type": "包含"
+    },
+    {
+      "source": "间隔",
+      "target": "隔室",
+      "type": "包含"
+    },
+    {
+      "source": "隔室",
+      "target": "正常运行条件",
+      "type": "满足"
+    },
+    {
+      "source": "隔室",
+      "target": "间隔元件设备检修",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 978,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "cdd1f978b15c24f4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\978_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

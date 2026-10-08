@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "363kV设备",
+      "type": "电力设备",
+      "desc": "额定电压为363kV的电力设备"
+    },
+    {
+      "name": "520kV",
+      "type": "电压等级",
+      "desc": "363kV设备的工频耐压试验值"
+    },
+    {
+      "name": "550kV设备",
+      "type": "电力设备",
+      "desc": "额定电压为550kV的电力设备"
+    },
+    {
+      "name": "710kV",
+      "type": "电压等级",
+      "desc": "550kV设备的工频耐压试验值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "363kV设备的工频耐压试验值为520kV",
+      "type": "强制",
+      "subject": "363kV设备",
+      "action": "进行工频耐压试验",
+      "condition": "在额定电压下",
+      "constraint": "试验值为520kV",
+      "related_entities": [
+        "363kV设备",
+        "520kV"
+      ]
+    },
+    {
+      "content": "550kV设备的工频耐压试验值为710kV",
+      "type": "强制",
+      "subject": "550kV设备",
+      "action": "进行工频耐压试验",
+      "condition": "在额定电压下",
+      "constraint": "试验值为710kV",
+      "related_entities": [
+        "550kV设备",
+        "710kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "363kV设备",
+      "target": "520kV",
+      "type": "工频耐压试验值"
+    },
+    {
+      "source": "550kV设备",
+      "target": "710kV",
+      "type": "工频耐压试验值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 960,
+      "source_row_id": "960",
+      "clause_index": 1,
+      "source_text": "363kV设备的工频耐压试验值为520kV，550kV设备的工频耐压试验值为710kV"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.829953+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

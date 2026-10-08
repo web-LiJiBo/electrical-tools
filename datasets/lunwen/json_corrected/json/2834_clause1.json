@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "主循环泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送冷却水的泵"
+    },
+    {
+      "name": "喷淋泵",
+      "type": "设备",
+      "desc": "电力系统中用于喷淋冷却的泵"
+    },
+    {
+      "name": "轴承",
+      "type": "部件",
+      "desc": "主循环泵和喷淋泵的关键转动部件"
+    },
+    {
+      "name": "L10",
+      "type": "技术参数",
+      "desc": "轴承设计寿命，指在相同条件下，10%的同一批次轴承失效前的累计运转时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主循环泵和喷淋泵轴承设计使用寿命L10不低于50000h",
+      "type": "强制",
+      "subject": "主循环泵和喷淋泵",
+      "action": "稳定、安全、经济地连续运行",
+      "condition": "在使用范围内",
+      "constraint": "轴承设计使用寿命L10≥50000h",
+      "related_entities": [
+        "主循环泵",
+        "喷淋泵",
+        "轴承"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主循环泵",
+      "target": "轴承",
+      "type": "包含"
+    },
+    {
+      "source": "喷淋泵",
+      "target": "轴承",
+      "type": "包含"
+    },
+    {
+      "source": "轴承",
+      "target": "主循环泵",
+      "type": "属于"
+    },
+    {
+      "source": "轴承",
+      "target": "喷淋泵",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2834,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b4c7c5265c8b6e66",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2834_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

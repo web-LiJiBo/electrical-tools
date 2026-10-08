@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "直流电源",
+      "type": "设备",
+      "desc": "用于电力系统试验的直流电源设备"
+    },
+    {
+      "name": "辅助电流极",
+      "type": "设备",
+      "desc": "电力系统试验中用于产生电流的辅助设备"
+    },
+    {
+      "name": "接地极",
+      "type": "设备",
+      "desc": "电力系统试验中用于接地的金属棒或板"
+    },
+    {
+      "name": "接地极任意两点间最大距离",
+      "type": "参数",
+      "desc": "接地极上任意两点之间的最大距离"
+    },
+    {
+      "name": "电压极",
+      "type": "设备",
+      "desc": "电力系统试验中用于测量电压的辅助设备"
+    },
+    {
+      "name": "试验布线",
+      "type": "方法",
+      "desc": "电力系统试验中连接设备的布线方式"
+    },
+    {
+      "name": "电力行业标准DL/T475",
+      "type": "标准",
+      "desc": "电力行业关于接地电阻测试的标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在采用试验用直流电源时，辅助电流极与接地极的最小距离应大于接地极任意两点间最大距离的10倍",
+      "type": "强制",
+      "subject": "直流电源试验",
+      "action": "布置辅助电流极与接地极",
+      "condition": "采用试验用直流电源进行接地电阻测试",
+      "constraint": "辅助电流极与接地极的最小距离应大于接地极任意两点间最大距离的10倍",
+      "related_entities": [
+        "直流电源",
+        "辅助电流极",
+        "接地极",
+        "接地极任意两点间最大距离"
+      ]
+    },
+    {
+      "content": "当采用实际运行中的接地极入地电流测试接地电阻时，对于电压极的布置方向没有限制，电压极与接地极的距离应大于接地极任意两点间最大距离的10倍",
+      "type": "强制",
+      "subject": "接地电阻测试",
+      "action": "布置电压极与接地极",
+      "condition": "采用实际运行中的接地极进行接地电阻测试",
+      "constraint": "电压极与接地极的距离应大于接地极任意两点间最大距离的10倍",
+      "related_entities": [
+        "接地极",
+        "电压极",
+        "接地极任意两点间最大距离"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电源",
+      "target": "辅助电流极",
+      "type": "使用"
+    },
+    {
+      "source": "直流电源",
+      "target": "接地极",
+      "type": "使用"
+    },
+    {
+      "source": "直流电源",
+      "target": "试验布线",
+      "type": "使用"
+    },
+    {
+      "source": "直流电源",
+      "target": "电力行业标准DL/T475",
+      "type": "遵循"
+    },
+    {
+      "source": "接地极",
+      "target": "接地极任意两点间最大距离",
+      "type": "参数"
+    },
+    {
+      "source": "电压极",
+      "target": "接地极",
+      "type": "使用"
+    },
+    {
+      "source": "电压极",
+      "target": "试验布线",
+      "type": "使用"
+    },
+    {
+      "source": "电压极",
+      "target": "电力行业标准DL/T475",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2667,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dea0e8a4dc8ac1ca",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2667_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

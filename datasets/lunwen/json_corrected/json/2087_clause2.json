@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "额定负载",
+      "type": "运行参数",
+      "desc": "变压器在规定条件下允许长期连续运行的最大负载"
+    },
+    {
+      "name": "温升限值",
+      "type": "技术指标",
+      "desc": "变压器在特定运行条件下允许的最大温升值"
+    },
+    {
+      "name": "顶层油",
+      "type": "部件",
+      "desc": "变压器内部绝缘油层的上层部分"
+    },
+    {
+      "name": "铁心",
+      "type": "部件",
+      "desc": "变压器磁路的主要组成部分"
+    },
+    {
+      "name": "油箱",
+      "type": "部件",
+      "desc": "变压器的外壳，用于容纳变压器内部组件和绝缘油"
+    },
+    {
+      "name": "金属部件",
+      "type": "部件",
+      "desc": "变压器中所有金属材质的组件"
+    },
+    {
+      "name": "DL/T272",
+      "type": "标准",
+      "desc": "《电力变压器温升试验方法》"
+    },
+    {
+      "name": "GB/T1094.2",
+      "type": "标准",
+      "desc": "《电力变压器 第2部分：温升》"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在各种冷却方式下额定负载时的变压器绕组、顶层油、铁心和油箱、金属部件的温升限值及考核应符合DL/T272的规定",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "温升限值考核",
+      "condition": "额定负载运行，各种冷却方式",
+      "constraint": "DL/T272",
+      "related_entities": [
+        "变压器",
+        "额定负载",
+        "温升限值",
+        "顶层油",
+        "铁心",
+        "油箱",
+        "金属部件",
+        "DL/T272"
+      ]
+    },
+    {
+      "content": "在特殊使用条件下，变压器的温升限值应按GB/T1094.2的规定进行修正",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "温升限值修正",
+      "condition": "特殊使用条件",
+      "constraint": "GB/T1094.2",
+      "related_entities": [
+        "变压器",
+        "温升限值",
+        "GB/T1094.2"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "顶层油",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "铁心",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "金属部件",
+      "type": "包含"
+    },
+    {
+      "source": "温升限值",
+      "target": "顶层油",
+      "type": "针对"
+    },
+    {
+      "source": "温升限值",
+      "target": "铁心",
+      "type": "针对"
+    },
+    {
+      "source": "温升限值",
+      "target": "油箱",
+      "type": "针对"
+    },
+    {
+      "source": "温升限值",
+      "target": "金属部件",
+      "type": "针对"
+    },
+    {
+      "source": "温升限值",
+      "target": "额定负载",
+      "type": "针对"
+    },
+    {
+      "source": "温升限值",
+      "target": "DL/T272",
+      "type": "依据"
+    },
+    {
+      "source": "温升限值",
+      "target": "GB/T1094.2",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2087,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d313c36d0d502784",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2087_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

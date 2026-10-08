@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "绝缘电阻试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行绝缘性能测试的试验"
+    },
+    {
+      "name": "绝缘底座",
+      "type": "设备部件",
+      "desc": "电气设备中用于支撑和隔离带电部分的绝缘材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "没有绝缘底座绝缘电阻试验。",
+      "type": "强制",
+      "subject": "电气设备制造与安装单位",
+      "action": "进行绝缘电阻试验",
+      "condition": "电气设备制造或安装过程中",
+      "constraint": "必须在设备具有绝缘底座的情况下进行绝缘电阻试验",
+      "related_entities": [
+        "绝缘电阻试验",
+        "绝缘底座"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘底座",
+      "target": "绝缘电阻试验",
+      "type": "试验前提条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3115,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "060dac8a5a92242e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3115_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

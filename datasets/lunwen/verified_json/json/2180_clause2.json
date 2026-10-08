@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器或电抗器内部装油的容器"
+    },
+    {
+      "name": "气体压力",
+      "type": "物理量",
+      "desc": "气体在油箱内所受的压力"
+    },
+    {
+      "name": "干燥气体",
+      "type": "介质",
+      "desc": "用于变压器、电抗器运输过程中的干燥气体"
+    },
+    {
+      "name": "露点",
+      "type": "物理量",
+      "desc": "干燥气体中水蒸气饱和时的温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "充干燥气体运输的变压器、电抗器油箱内的气体压力应保持在0.01MPa-0.03MPa",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "运输",
+      "condition": "充干燥气体运输",
+      "constraint": "油箱内的气体压力保持在0.01MPa-0.03MPa",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "油箱",
+        "干燥气体"
+      ]
+    },
+    {
+      "content": "干燥气体露点必须低于-40℃",
+      "type": "强制",
+      "subject": "干燥气体",
+      "action": "运输",
+      "condition": "充干燥气体运输",
+      "constraint": "干燥气体露点必须低于-40℃",
+      "related_entities": [
+        "干燥气体",
+        "变压器",
+        "电抗器",
+        "油箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "电抗器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "干燥气体",
+      "type": "填充"
+    },
+    {
+      "source": "干燥气体",
+      "target": "油箱",
+      "type": "填充"
+    },
+    {
+      "source": "干燥气体",
+      "target": "气体压力",
+      "type": "影响"
+    },
+    {
+      "source": "干燥气体",
+      "target": "露点",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2180,
+      "source_row_id": "2180",
+      "clause_index": 2,
+      "source_text": "充干燥气体运输的变压器、电抗器油箱内的气体压力应保持在0.01MPa-0.03MPa；干燥气体露点必须低于-40℃"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.239546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

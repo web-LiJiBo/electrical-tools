@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "例行巡视",
+      "type": "巡视方式",
+      "desc": "电力设备定期检查方式"
+    },
+    {
+      "name": "正常巡视",
+      "type": "巡视类型",
+      "desc": "日常例行巡视检查"
+    },
+    {
+      "name": "熄灯巡视",
+      "type": "巡视类型",
+      "desc": "夜间熄灯状态下进行的巡视检查"
+    },
+    {
+      "name": "全面巡视",
+      "type": "巡视类型",
+      "desc": "对设备进行全面检查的巡视方式"
+    },
+    {
+      "name": "设备",
+      "type": "巡视对象",
+      "desc": "电力系统中的各类电气设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每天至少一次正常巡视",
+      "type": "强制",
+      "subject": "运维人员",
+      "action": "巡视设备",
+      "condition": "每日",
+      "constraint": "每天至少一次",
+      "related_entities": [
+        "例行巡视",
+        "正常巡视"
+      ]
+    },
+    {
+      "content": "每周至少进行一次熄灯巡视",
+      "type": "强制",
+      "subject": "运维人员",
+      "action": "巡视设备",
+      "condition": "每周",
+      "constraint": "每周至少一次",
+      "related_entities": [
+        "例行巡视",
+        "熄灯巡视"
+      ]
+    },
+    {
+      "content": "每月进行一次全面巡视",
+      "type": "强制",
+      "subject": "运维人员",
+      "action": "巡视设备",
+      "condition": "每月",
+      "constraint": "每月至少一次",
+      "related_entities": [
+        "例行巡视",
+        "全面巡视"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "例行巡视",
+      "target": "正常巡视",
+      "type": "包含"
+    },
+    {
+      "source": "例行巡视",
+      "target": "熄灯巡视",
+      "type": "包含"
+    },
+    {
+      "source": "例行巡视",
+      "target": "全面巡视",
+      "type": "包含"
+    },
+    {
+      "source": "正常巡视",
+      "target": "设备",
+      "type": "巡视对象"
+    },
+    {
+      "source": "熄灯巡视",
+      "target": "设备",
+      "type": "巡视对象"
+    },
+    {
+      "source": "全面巡视",
+      "target": "设备",
+      "type": "巡视对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1656,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "153e97607426ca1a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1656_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

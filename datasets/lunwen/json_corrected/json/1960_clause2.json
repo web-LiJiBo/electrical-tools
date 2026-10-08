@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "柱上开关",
+      "type": "电力设备",
+      "desc": "安装在电杆上的开关设备"
+    },
+    {
+      "name": "防雷装置",
+      "type": "电力保护装置",
+      "desc": "用于防止雷击对电力系统造成损害的装置"
+    },
+    {
+      "name": "经常开路运行",
+      "type": "运行状态",
+      "desc": "开关长期处于断开状态"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上开关应装设防雷装置",
+      "type": "强制",
+      "subject": "柱上开关",
+      "action": "装设防雷装置",
+      "condition": "所有柱上开关",
+      "constraint": "必须安装",
+      "related_entities": [
+        "柱上开关",
+        "防雷装置"
+      ]
+    },
+    {
+      "content": "经常开路运行的柱上开关两侧，均应装设防雷装置",
+      "type": "强制",
+      "subject": "经常开路运行的柱上开关",
+      "action": "装设防雷装置",
+      "condition": "经常开路运行的柱上开关两侧",
+      "constraint": "必须安装",
+      "related_entities": [
+        "柱上开关",
+        "防雷装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上开关",
+      "target": "防雷装置",
+      "type": "安装"
+    },
+    {
+      "source": "经常开路运行",
+      "target": "柱上开关",
+      "type": "运行状态"
+    },
+    {
+      "source": "柱上开关",
+      "target": "经常开路运行",
+      "type": "运行状态"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1960,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6ace32870d873fb7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1960_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

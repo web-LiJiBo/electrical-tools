@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "非循环油工作方式",
+      "type": "电力作业方式",
+      "desc": "一种不将油样回注主油箱的变压器油样检测方法"
+    },
+    {
+      "name": "油样",
+      "type": "电力检测样本",
+      "desc": "从变压器中取出用于检测的油液样本"
+    },
+    {
+      "name": "主油箱",
+      "type": "电力设备部件",
+      "desc": "变压器内部储存油液的主要容器"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "一次排放油量",
+      "type": "电力作业参数",
+      "desc": "单次油样检测后排放的油液体积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "非循环油工作方式下，分析完的油样不允许回注主油箱。",
+      "type": "强制",
+      "subject": "变压器油样检测人员",
+      "action": "检测油样",
+      "condition": "采用非循环油工作方式",
+      "constraint": "油样不得回注主油箱",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样",
+        "主油箱"
+      ]
+    },
+    {
+      "content": "应单独收集处理，一次排放油量不大于100mL。",
+      "type": "强制",
+      "subject": "变压器油样检测人员",
+      "action": "处理油样",
+      "condition": "采用非循环油工作方式",
+      "constraint": "一次排放油量≤100mL",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样",
+        "主油箱"
+      ]
+    },
+    {
+      "content": "所取油样应能代表变压器中油的真实情况，取样方式不影响被监测设备的安全运行。",
+      "type": "强制",
+      "subject": "变压器油样检测人员",
+      "action": "取油样",
+      "condition": "采用非循环油工作方式",
+      "constraint": "油样真实反映变压器油状况且不影响设备安全运行",
+      "related_entities": [
+        "非循环油工作方式",
+        "油样",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非循环油工作方式",
+      "target": "油样",
+      "type": "采用"
+    },
+    {
+      "source": "非循环油工作方式",
+      "target": "主油箱",
+      "type": "不回注"
+    },
+    {
+      "source": "油样",
+      "target": "变压器",
+      "type": "取自"
+    },
+    {
+      "source": "油样",
+      "target": "变压器",
+      "type": "代表油液状况"
+    },
+    {
+      "source": "油样",
+      "target": "主油箱",
+      "type": "不回注"
+    },
+    {
+      "source": "油样",
+      "target": "变压器",
+      "type": "影响设备安全运行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3276,
+      "source_row_id": "3285",
+      "clause_index": 2,
+      "source_text": "b）非循环油工作方式∶分析完的油样不允许回注主油箱。应单独收集处理，一次排放油量不大于100mL。所取油样应能代表变压器中油的真实情况，取样方式不影响被监测设备的安全运行。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.9022,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.603366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

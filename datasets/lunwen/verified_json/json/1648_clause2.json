@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "隔离开关在正常工作条件下允许通过的最大电流值"
+    },
+    {
+      "name": "最大长时直流运行电流",
+      "type": "运行参数",
+      "desc": "隔离开关在长时间直流运行条件下允许通过的最大电流值"
+    },
+    {
+      "name": "额定输送容量",
+      "type": "电气参数",
+      "desc": "隔离开关额定输送容量对应的直流电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔离开关的额定电流为最大长时直流运行电流",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "选取额定电流",
+      "condition": "隔离开关在最大长时直流运行条件下",
+      "constraint": "额定电流=最大长时直流运行电流",
+      "related_entities": [
+        "隔离开关",
+        "额定电流",
+        "最大长时直流运行电流"
+      ]
+    },
+    {
+      "content": "隔离开关的额定电流通常按额定输送容量对应的直流电流的1.25倍选取",
+      "type": "建议",
+      "subject": "隔离开关",
+      "action": "选取额定电流",
+      "condition": "隔离开关在正常工作条件下",
+      "constraint": "额定电流≤1.25×额定输送容量对应的直流电流",
+      "related_entities": [
+        "隔离开关",
+        "额定电流",
+        "额定输送容量",
+        "直流电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "额定电流",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "最大长时直流运行电流",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "额定输送容量",
+      "type": "包含"
+    },
+    {
+      "source": "额定电流",
+      "target": "最大长时直流运行电流",
+      "type": "等于"
+    },
+    {
+      "source": "额定电流",
+      "target": "额定输送容量对应的直流电流",
+      "type": "小于等于1.25倍"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1648,
+      "source_row_id": "1648",
+      "clause_index": 2,
+      "source_text": "隔离开关的额定电流为最大长时直流运行电流。应该注意，隔离开关的额定电流通常按额定输送容量对应的直流电流的1.25倍选取"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.611157+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "故障电流分流系数",
+      "type": "电力参数",
+      "desc": "接地网入地对称电流与接地故障对称电流的比值"
+    },
+    {
+      "name": "接地网入地对称电流Ig",
+      "type": "电力参数",
+      "desc": "接地网入地的对称电流"
+    },
+    {
+      "name": "接地故障对称电流If",
+      "type": "电力参数",
+      "desc": "接地故障时的对称电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地网入地对称电流Ig与接地故障对称电流If的比值",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "计算并设定故障电流分流系数",
+      "condition": "电力系统设计阶段",
+      "constraint": "故障电流分流系数应满足电力系统安全稳定运行的要求",
+      "related_entities": [
+        "故障电流分流系数",
+        "接地网入地对称电流Ig",
+        "接地故障对称电流If"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "故障电流分流系数",
+      "target": "接地网入地对称电流Ig",
+      "type": "计算依据"
+    },
+    {
+      "source": "故障电流分流系数",
+      "target": "接地故障对称电流If",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2975,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d1688da31df6de20",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2975_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

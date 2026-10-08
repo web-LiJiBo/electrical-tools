@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "制造厂",
+      "type": "企业",
+      "desc": "生产制造电力设备的企业"
+    },
+    {
+      "name": "突发短路试验报告",
+      "type": "技术文件",
+      "desc": "记录变压器在突发短路情况下的性能测试结果的文件"
+    },
+    {
+      "name": "抗短路能力计算报告",
+      "type": "技术文件",
+      "desc": "基于理论分析和模型试验计算得出的变压器抗短路能力的文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "240MVA及以下容量变压器，制造厂应提供同类产品突发短路试验报告",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供突发短路试验报告",
+      "condition": "240MVA及以下容量变压器",
+      "constraint": "同类产品突发短路试验报告",
+      "related_entities": [
+        "变压器",
+        "制造厂",
+        "突发短路试验报告"
+      ]
+    },
+    {
+      "content": "500kV变压器和240MVA以上容量变压器，制造厂应提供同类产品突发短路试验报告或抗短路能力计算报告，计算报告应有相关理论和模型试验的技术支持",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供突发短路试验报告或抗短路能力计算报告",
+      "condition": "500kV变压器和240MVA以上容量变压器",
+      "constraint": "同类产品突发短路试验报告或抗短路能力计算报告，计算报告应有相关理论和模型试验的技术支持",
+      "related_entities": [
+        "变压器",
+        "制造厂",
+        "突发短路试验报告",
+        "抗短路能力计算报告"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制造厂",
+      "target": "变压器",
+      "type": "制造"
+    },
+    {
+      "source": "制造厂",
+      "target": "突发短路试验报告",
+      "type": "提供"
+    },
+    {
+      "source": "制造厂",
+      "target": "抗短路能力计算报告",
+      "type": "提供"
+    },
+    {
+      "source": "突发短路试验报告",
+      "target": "变压器",
+      "type": "对应"
+    },
+    {
+      "source": "抗短路能力计算报告",
+      "target": "变压器",
+      "type": "对应"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 780,
+      "source_row_id": "780",
+      "clause_index": 1,
+      "source_text": "240MVA及以下容量变压器，制造厂应提供同类产品突发短路试验报告；500kV变压器和240MVA以上容量变压器，制造厂应提供同类产品突发短路试验报告或抗短路能力计算报告，计算报告应有相关理论和模型试验的技术支持"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.612080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

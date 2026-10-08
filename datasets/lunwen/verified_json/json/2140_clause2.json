@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换交流电压和电流"
+    },
+    {
+      "name": "视在放电量",
+      "type": "电气参数",
+      "desc": "变压器在试验电压下产生的总电荷量"
+    },
+    {
+      "name": "1.5Um/3电压",
+      "type": "试验电压",
+      "desc": "变压器在特定条件下施加的试验电压"
+    },
+    {
+      "name": "110(66)kV",
+      "type": "电压等级",
+      "desc": "变压器的额定电压等级"
+    },
+    {
+      "name": "自耦变压器",
+      "type": "电力设备",
+      "desc": "变压器的一种类型，具有公共绕组"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1．5Um/3电压下，变压器(110(66)kV及以上电压等级绕组)视在放电量的连续水平应不大于100pC（自耦变压器中压端不大于200pC）",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行出厂试验或交接试验",
+      "condition": "110(66)kV及以上电压等级变压器",
+      "constraint": "视在放电量≤100pC（自耦变压器中压端≤200pC）",
+      "related_entities": [
+        "变压器",
+        "视在放电量",
+        "1.5Um/3电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "视在放电量",
+      "type": "产生"
+    },
+    {
+      "source": "1.5Um/3电压",
+      "target": "变压器",
+      "type": "施加于"
+    },
+    {
+      "source": "变压器",
+      "target": "1.5Um/3电压",
+      "type": "承受"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2140,
+      "source_row_id": "2140",
+      "clause_index": 2,
+      "source_text": "在1．5Um/3电压下，变压器(110(66)kV及以上电压等级绕组)视在放电量的连续水平应不大于100pC（自耦变压器中压端不大于200pC）"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.188545+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

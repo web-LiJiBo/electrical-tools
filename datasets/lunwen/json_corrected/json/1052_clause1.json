@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "新安装的互感器",
+      "type": "电力设备",
+      "desc": "新安装的电压或电流互感器"
+    },
+    {
+      "name": "交流耐压",
+      "type": "试验项目",
+      "desc": "对电气设备施加交流电压以检验其绝缘性能的试验"
+    },
+    {
+      "name": "老练试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行长时间低电压运行以消除内部缺陷的试验"
+    },
+    {
+      "name": "现场局部放电试验",
+      "type": "试验项目",
+      "desc": "在现场条件下检测电气设备局部放电量的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新安装的互感器在投运前必须进行交流耐压、老练试验",
+      "type": "强制",
+      "subject": "新安装的互感器",
+      "action": "投运前进行交流耐压、老练试验",
+      "condition": "新安装的互感器",
+      "constraint": "交流耐压、老练试验",
+      "related_entities": [
+        "新安装的互感器",
+        "交流耐压",
+        "老练试验"
+      ]
+    },
+    {
+      "content": "有条件时宜进行现场局部放电试验",
+      "type": "建议",
+      "subject": "新安装的互感器",
+      "action": "进行现场局部放电试验",
+      "condition": "新安装的互感器",
+      "constraint": "有条件时",
+      "related_entities": [
+        "新安装的互感器",
+        "现场局部放电试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "新安装的互感器",
+      "target": "交流耐压",
+      "type": "包含"
+    },
+    {
+      "source": "新安装的互感器",
+      "target": "老练试验",
+      "type": "包含"
+    },
+    {
+      "source": "新安装的互感器",
+      "target": "现场局部放电试验",
+      "type": "可选包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1052,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2ee7fc683e35ebde",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1052_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

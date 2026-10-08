@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "管",
+      "type": "电力设备",
+      "desc": "用于保护电缆的管道"
+    },
+    {
+      "name": "电缆外径",
+      "type": "电力参数",
+      "desc": "单根电缆的外径尺寸"
+    },
+    {
+      "name": "多根电缆包络外径",
+      "type": "电力参数",
+      "desc": "多根电缆排列时的最外围尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "管的内径不宜小于电缆外径或多根电缆包络外径的1.5倍，一般不宜小于100mm",
+      "type": "强制",
+      "subject": "电力设计人员",
+      "action": "选择管径大小",
+      "condition": "电力电缆敷设工程",
+      "constraint": "管的内径≥1.5*电缆外径或1.5*多根电缆包络外径，且≥100mm",
+      "related_entities": [
+        "电缆",
+        "管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "管",
+      "type": "保护"
+    },
+    {
+      "source": "电缆外径",
+      "target": "管",
+      "type": "尺寸匹配"
+    },
+    {
+      "source": "多根电缆包络外径",
+      "target": "管",
+      "type": "尺寸匹配"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2309,
+      "source_row_id": "2309",
+      "clause_index": 1,
+      "source_text": "管的内径不宜小于电缆外径或多根电缆包络外径的1.5倍，一般不宜小于100mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.395547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

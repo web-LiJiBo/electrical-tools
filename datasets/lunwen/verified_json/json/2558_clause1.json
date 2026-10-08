@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "电力系统中用于限制短路电流的设备"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "电抗器内部装油的容器"
+    },
+    {
+      "name": "真空度",
+      "type": "物理量",
+      "desc": "油箱在抽真空状态下的压力值"
+    },
+    {
+      "name": "正压力",
+      "type": "物理量",
+      "desc": "油箱承受的压力值"
+    },
+    {
+      "name": "机械强度试验",
+      "type": "试验方法",
+      "desc": "检验油箱机械强度的试验方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电抗器油箱应承受真空度为133Pa和正压力为98kPa的机械强度试验，不得有损伤和不允许的永久变形。",
+      "type": "强制",
+      "subject": "电抗器油箱",
+      "action": "进行机械强度试验",
+      "condition": "电抗器油箱制造完成后",
+      "constraint": "真空度133Pa, 正压力98kPa",
+      "related_entities": [
+        "电抗器",
+        "油箱",
+        "真空度",
+        "正压力",
+        "机械强度试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电抗器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "真空度",
+      "type": "承受"
+    },
+    {
+      "source": "油箱",
+      "target": "正压力",
+      "type": "承受"
+    },
+    {
+      "source": "油箱",
+      "target": "机械强度试验",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2558,
+      "source_row_id": "2558",
+      "clause_index": 1,
+      "source_text": "电抗器油箱应承受真空度为133Pa和正压力为98kPa的机械强度试验，不得有损伤和不允许的永久变形。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.713319+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "接地装置",
+      "type": "电力设备",
+      "desc": "用于将电气设备的电位与大地电位相连接的装置"
+    },
+    {
+      "name": "架空避雷线",
+      "type": "电力线路",
+      "desc": "架设在杆塔上，用于防雷保护的导线"
+    },
+    {
+      "name": "电缆",
+      "type": "电力电缆",
+      "desc": "用于传输电能的导体组合成缆芯的电缆"
+    },
+    {
+      "name": "金属屏蔽",
+      "type": "电力电缆结构",
+      "desc": "电力电缆中用于屏蔽电磁干扰的金属层"
+    },
+    {
+      "name": "地网",
+      "type": "接地网",
+      "desc": "用于分散接地装置中流入的地电流的网状接地系统"
+    },
+    {
+      "name": "故障电流",
+      "type": "电力参数",
+      "desc": "电力系统发生故障时流过的电流"
+    },
+    {
+      "name": "分流",
+      "type": "电力参数",
+      "desc": "接地短路故障时，部分故障电流通过架空避雷线和电缆向地网外流出的现象"
+    },
+    {
+      "name": "地网分流系数",
+      "type": "电力参数",
+      "desc": "接地短路故障时，经地网散流的故障电流与总的接地短路故障电流之间的比值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地装置内发生接地短路故障时，通过架空避雷线和电缆两端接地的金属屏蔽向地网外流出的部分故障电流称为分流",
+      "type": "强制",
+      "subject": "接地装置",
+      "action": "发生接地短路故障时，分流",
+      "condition": "接地装置内发生接地短路故障",
+      "constraint": "架空避雷线和电缆两端接地的金属屏蔽向地网外流出故障电流",
+      "related_entities": [
+        "接地装置",
+        "架空避雷线",
+        "电缆",
+        "金属屏蔽",
+        "地网"
+      ]
+    },
+    {
+      "content": "经接地网散流的故障电流与总的接地短路故障电流之间的比值称为地网分流系数",
+      "type": "强制",
+      "subject": "地网",
+      "action": "分流",
+      "condition": "接地装置内发生接地短路故障",
+      "constraint": "经接地网散流的故障电流与总的接地短路故障电流之间的比值",
+      "related_entities": [
+        "地网",
+        "故障电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地装置",
+      "target": "架空避雷线",
+      "type": "包含"
+    },
+    {
+      "source": "接地装置",
+      "target": "电缆",
+      "type": "包含"
+    },
+    {
+      "source": "接地装置",
+      "target": "金属屏蔽",
+      "type": "包含"
+    },
+    {
+      "source": "接地装置",
+      "target": "地网",
+      "type": "连接"
+    },
+    {
+      "source": "架空避雷线",
+      "target": "金属屏蔽",
+      "type": "连接"
+    },
+    {
+      "source": "电缆",
+      "target": "金属屏蔽",
+      "type": "连接"
+    },
+    {
+      "source": "金属屏蔽",
+      "target": "地网",
+      "type": "连接"
+    },
+    {
+      "source": "地网",
+      "target": "故障电流",
+      "type": "承载"
+    },
+    {
+      "source": "地网",
+      "target": "分流",
+      "type": "承载"
+    },
+    {
+      "source": "地网",
+      "target": "地网分流系数",
+      "type": "计算结果"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2501,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6cec4ae8d3c7f885",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2501_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

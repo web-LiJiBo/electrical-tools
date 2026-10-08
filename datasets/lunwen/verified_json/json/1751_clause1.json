@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "六氟化硫气体",
+      "type": "气体",
+      "desc": "SF6气体"
+    },
+    {
+      "name": "含水量",
+      "type": "物理量",
+      "desc": "气体中水分含量"
+    },
+    {
+      "name": "电弧分解隔室",
+      "type": "设备部件",
+      "desc": "有电弧分解的隔室"
+    },
+    {
+      "name": "无电弧分解隔室",
+      "type": "设备部件",
+      "desc": "无电弧分解的隔室"
+    },
+    {
+      "name": "封闭式组合电器",
+      "type": "电气设备",
+      "desc": "GIS设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "有电弧分解的隔室，应小于150μL/L",
+      "type": "强制",
+      "subject": "电弧分解隔室",
+      "action": "控制含水量",
+      "condition": "有电弧分解的隔室",
+      "constraint": "含水量<150μL/L",
+      "related_entities": [
+        "六氟化硫气体",
+        "电弧分解隔室"
+      ]
+    },
+    {
+      "content": "无电弧分解的隔室，应小于250μL/L",
+      "type": "强制",
+      "subject": "无电弧分解隔室",
+      "action": "控制含水量",
+      "condition": "无电弧分解的隔室",
+      "constraint": "含水量<250μL/L",
+      "related_entities": [
+        "六氟化硫气体",
+        "无电弧分解隔室"
+      ]
+    },
+    {
+      "content": "气体含水量的测量应在封闭式组合电器充气48h后进行",
+      "type": "强制",
+      "subject": "封闭式组合电器",
+      "action": "测量含水量",
+      "condition": "封闭式组合电器充气后",
+      "constraint": "测量时间≥48h",
+      "related_entities": [
+        "六氟化硫气体",
+        "封闭式组合电器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "六氟化硫气体",
+      "target": "含水量",
+      "type": "包含"
+    },
+    {
+      "source": "电弧分解隔室",
+      "target": "含水量",
+      "type": "控制"
+    },
+    {
+      "source": "无电弧分解隔室",
+      "target": "含水量",
+      "type": "控制"
+    },
+    {
+      "source": "封闭式组合电器",
+      "target": "电弧分解隔室",
+      "type": "包含"
+    },
+    {
+      "source": "封闭式组合电器",
+      "target": "无电弧分解隔室",
+      "type": "包含"
+    },
+    {
+      "source": "封闭式组合电器",
+      "target": "六氟化硫气体",
+      "type": "充气"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1751,
+      "source_row_id": "1751",
+      "clause_index": 1,
+      "source_text": "测量六氟化硫气体含水量（20℃的体积分数），应符合下列规定：1有电弧分解的隔室，应小于150μL/L；2无电弧分解的隔室，应小于250μL/L；3气体含水量的测量应在封闭式组合电器充气48h后进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.969,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.726579+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

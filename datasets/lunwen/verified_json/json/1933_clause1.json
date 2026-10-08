@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "地下管道",
+      "type": "电力设施",
+      "desc": "埋设在地下的输水、输气等管道"
+    },
+    {
+      "name": "平行敷设",
+      "type": "施工工艺",
+      "desc": "电缆与地下管道在同一水平面内并行铺设"
+    }
+  ],
+  "rules": [
+    {
+      "content": "严禁将电缆平行敷设于地下管道的正上方或正下方",
+      "type": "强制",
+      "subject": "电缆敷设施工单位",
+      "action": "敷设电缆",
+      "condition": "电缆与地下管道平行敷设",
+      "constraint": "电缆与地下管道垂直距离不得小于0.5m",
+      "related_entities": [
+        "电缆",
+        "地下管道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "地下管道",
+      "type": "平行敷设"
+    },
+    {
+      "source": "电缆敷设施工单位",
+      "target": "电缆",
+      "type": "敷设"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1933,
+      "source_row_id": "1933",
+      "clause_index": 1,
+      "source_text": "严禁将电缆平行敷设于地下管道的正上方或正下方"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.931968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

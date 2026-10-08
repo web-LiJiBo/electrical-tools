@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "绝缘试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行绝缘性能测试"
+    },
+    {
+      "name": "无线电干扰电压试验",
+      "type": "试验项目",
+      "desc": "测试设备在无线电干扰电压下的性能"
+    },
+    {
+      "name": "主回路电阻测量",
+      "type": "试验项目",
+      "desc": "测量主回路电阻值"
+    },
+    {
+      "name": "温升试验",
+      "type": "试验项目",
+      "desc": "测试设备在运行状态下的温升情况"
+    },
+    {
+      "name": "额定过负荷耐受试验",
+      "type": "试验项目",
+      "desc": "测试设备在额定过负荷条件下的耐受能力"
+    },
+    {
+      "name": "峰值耐受电流试验",
+      "type": "试验项目",
+      "desc": "测试设备在峰值耐受电流条件下的耐受能力"
+    },
+    {
+      "name": "机械试验",
+      "type": "试验项目",
+      "desc": "测试设备的机械强度和运动部件的可靠性"
+    },
+    {
+      "name": "端子静拉力试验",
+      "type": "试验项目",
+      "desc": "测试端子的静拉力强度"
+    },
+    {
+      "name": "防雨试验（户外操动机构）",
+      "type": "试验项目",
+      "desc": "测试户外操动机构的防雨性能"
+    },
+    {
+      "name": "抗震试验",
+      "type": "试验项目",
+      "desc": "测试设备在地震条件下的抗震性能"
+    },
+    {
+      "name": "防护等级检验",
+      "type": "试验项目",
+      "desc": "测试设备的防护等级"
+    },
+    {
+      "name": "直流滤波器高压端隔离开关开合谐波电流能力试验",
+      "type": "试验项目",
+      "desc": "测试直流滤波器高压端隔离开关在开合谐波电流条件下的能力"
+    },
+    {
+      "name": "严重冰冻条件下的操作",
+      "type": "试验项目",
+      "desc": "测试设备在严重冰冻条件下的操作性能"
+    },
+    {
+      "name": "户外隔离开关",
+      "type": "设备",
+      "desc": "安装在户外环境中的隔离开关"
+    },
+    {
+      "name": "接地开关",
+      "type": "设备",
+      "desc": "用于接地保护的开关"
+    }
+  ],
+  "rules": [
+    {
+      "content": "根据供需双方协议进行的型式试验项目：严重冰冻条件下的操作-仅适用于户外隔离开关和接地开关",
+      "type": "强制",
+      "subject": "供需双方",
+      "action": "进行型式试验",
+      "condition": "供需双方协议中明确规定的试验项目",
+      "constraint": "仅适用于户外隔离开关和接地开关",
+      "related_entities": [
+        "严重冰冻条件下的操作",
+        "户外隔离开关",
+        "接地开关"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户外隔离开关",
+      "target": "严重冰冻条件下的操作",
+      "type": "适用"
+    },
+    {
+      "source": "接地开关",
+      "target": "严重冰冻条件下的操作",
+      "type": "适用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1647,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e474cdaff72bdf91",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1647_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

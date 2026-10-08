@@ -1,0 +1,114 @@
+{
+  "entities": [
+    {
+      "name": "外观检查",
+      "type": "试验项目",
+      "desc": "对设备外观进行检查"
+    },
+    {
+      "name": "端子与外壳间绝缘电阻测量",
+      "type": "试验项目",
+      "desc": "测量端子与外壳间的绝缘电阻值"
+    },
+    {
+      "name": "电容测量",
+      "type": "试验项目",
+      "desc": "测量电容器的电容量"
+    },
+    {
+      "name": "端子与外壳间交流电压试验",
+      "type": "试验项目",
+      "desc": "对端子与外壳间施加交流电压进行耐压试验"
+    },
+    {
+      "name": "验收试验",
+      "type": "试验类别",
+      "desc": "对电力设备进行的验收试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "外观检查",
+      "type": "强制",
+      "subject": "验收试验",
+      "action": "进行外观检查",
+      "condition": "所有电力设备",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "外观检查",
+        "验收试验"
+      ]
+    },
+    {
+      "content": "端子与外壳间绝缘电阻测量",
+      "type": "强制",
+      "subject": "验收试验",
+      "action": "测量端子与外壳间的绝缘电阻值",
+      "condition": "所有电力设备",
+      "constraint": "绝缘电阻值≥10MΩ",
+      "related_entities": [
+        "端子与外壳间绝缘电阻测量",
+        "验收试验"
+      ]
+    },
+    {
+      "content": "电容测量",
+      "type": "强制",
+      "subject": "验收试验",
+      "action": "测量电容器的电容量",
+      "condition": "所有电力设备",
+      "constraint": "电容量误差≤±5%",
+      "related_entities": [
+        "电容测量",
+        "验收试验"
+      ]
+    },
+    {
+      "content": "端子与外壳间交流电压试验",
+      "type": "强制",
+      "subject": "验收试验",
+      "action": "对端子与外壳间施加交流电压进行耐压试验",
+      "condition": "所有电力设备",
+      "constraint": "试验电压值≥2倍额定电压，持续时间1min",
+      "related_entities": [
+        "端子与外壳间交流电压试验",
+        "验收试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "验收试验",
+      "target": "外观检查",
+      "type": "包含"
+    },
+    {
+      "source": "验收试验",
+      "target": "端子与外壳间绝缘电阻测量",
+      "type": "包含"
+    },
+    {
+      "source": "验收试验",
+      "target": "电容测量",
+      "type": "包含"
+    },
+    {
+      "source": "验收试验",
+      "target": "端子与外壳间交流电压试验",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1672,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "99bfd430dea7259a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1672_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

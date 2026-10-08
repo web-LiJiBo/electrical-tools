@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "继电器",
+      "type": "电力设备",
+      "desc": "一种根据输入信号变化来接通或断开电路的自动电器"
+    },
+    {
+      "name": "工频试验电压",
+      "type": "试验参数",
+      "desc": "继电器在工频条件下进行耐压试验所施加的电压值"
+    },
+    {
+      "name": "触点间隙",
+      "type": "电气参数",
+      "desc": "继电器触点之间的空气间隙距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "继电器应能承受表2要求的工频试验电压",
+      "type": "强制",
+      "subject": "继电器",
+      "action": "承受工频试验电压",
+      "condition": "继电器出厂前",
+      "constraint": "表2要求的工频试验电压",
+      "related_entities": [
+        "继电器",
+        "工频试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "继电器",
+      "target": "工频试验电压",
+      "type": "承受"
+    },
+    {
+      "source": "继电器",
+      "target": "触点间隙",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2545,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a1cad8e1aa99d3ce",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2545_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

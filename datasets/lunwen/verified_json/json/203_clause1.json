@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送和分配电能的设备"
+    },
+    {
+      "name": "过热保护",
+      "type": "保护装置",
+      "desc": "当主泵温度超过设定值时，发出信号或切断电源的保护装置"
+    },
+    {
+      "name": "报警",
+      "type": "操作",
+      "desc": "通过声光等方式提醒运行人员注意的信号"
+    },
+    {
+      "name": "跳闸",
+      "type": "操作",
+      "desc": "切断主泵电源，停止其运行的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵过热保护应只投报警，不投跳闸",
+      "type": "强制",
+      "subject": "主泵过热保护",
+      "action": "投入",
+      "condition": "主泵运行过程中出现过热现象",
+      "constraint": "仅报警，不跳闸",
+      "related_entities": [
+        "主泵",
+        "过热保护",
+        "报警",
+        "跳闸"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "过热保护",
+      "type": "配置"
+    },
+    {
+      "source": "过热保护",
+      "target": "报警",
+      "type": "触发"
+    },
+    {
+      "source": "过热保护",
+      "target": "跳闸",
+      "type": "触发"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 203,
+      "source_row_id": "203",
+      "clause_index": 1,
+      "source_text": "主泵过热保护应只投报警，不投跳闸"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.973603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

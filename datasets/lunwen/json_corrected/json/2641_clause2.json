@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "避雷器",
+      "type": "电力设备",
+      "desc": "一种用于保护电气系统免受过电压损害的设备"
+    },
+    {
+      "name": "铭牌",
+      "type": "设备标识",
+      "desc": "设备上用于标识设备信息的金属板或标签"
+    },
+    {
+      "name": "直流参考电压",
+      "type": "技术参数",
+      "desc": "避雷器在直流电压下的参考电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "避雷器铭牌至少应标明无直流参考电压",
+      "type": "强制",
+      "subject": "避雷器制造商/安装人员",
+      "action": "在避雷器铭牌上标注直流参考电压信息",
+      "condition": "所有避雷器",
+      "constraint": "铭牌上必须明确标注无直流参考电压",
+      "related_entities": [
+        "避雷器",
+        "铭牌"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "避雷器",
+      "target": "铭牌",
+      "type": "包含"
+    },
+    {
+      "source": "铭牌",
+      "target": "直流参考电压",
+      "type": "标明"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2641,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ba403a804c64eea7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2641_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

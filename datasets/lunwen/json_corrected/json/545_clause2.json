@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "农村人流密集地方",
+      "type": "地点",
+      "desc": "农村中人口较多的区域"
+    },
+    {
+      "name": "树（竹）线矛盾较突出地段",
+      "type": "地点",
+      "desc": "树木或竹子与电力线路冲突严重的区域"
+    },
+    {
+      "name": "绝缘导线",
+      "type": "设备",
+      "desc": "具有绝缘层的电力传输线缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "农村人流密集的地方、树（竹）线矛盾较突出的地段，可选用绝缘导线",
+      "type": "强制",
+      "subject": "电力设计人员",
+      "action": "选择导线类型",
+      "condition": "在农村人流密集的地方、树（竹）线矛盾较突出的地段进行电力线路设计时",
+      "constraint": "应优先选用绝缘导线",
+      "related_entities": [
+        "农村人流密集地方",
+        "树（竹）线矛盾较突出地段",
+        "绝缘导线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "农村人流密集地方",
+      "target": "绝缘导线",
+      "type": "适用场景"
+    },
+    {
+      "source": "树（竹）线矛盾较突出地段",
+      "target": "绝缘导线",
+      "type": "适用场景"
+    }
+  ],
+  "metadata": {
+    "pair_id": 545,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1b0276f5bc40a556",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\545_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

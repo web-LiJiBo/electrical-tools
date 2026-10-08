@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "气体继电器",
+      "type": "电力设备",
+      "desc": "变压器保护装置"
+    },
+    {
+      "name": "触点容量",
+      "type": "技术参数",
+      "desc": "触点能承受的最大电流值"
+    },
+    {
+      "name": "交流220V",
+      "type": "电压等级",
+      "desc": "交流电电压等级"
+    },
+    {
+      "name": "交流110V",
+      "type": "电压等级",
+      "desc": "交流电电压等级"
+    },
+    {
+      "name": "66kVA",
+      "type": "电流值",
+      "desc": "触点容量交流220V或110V时的最小值"
+    },
+    {
+      "name": "直流有感负载",
+      "type": "负载类型",
+      "desc": "直流负载特性"
+    },
+    {
+      "name": "15W",
+      "type": "功率值",
+      "desc": "触点容量直流有感负载时的最小值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体继电器的触点容量在交流220V或110V时应不小于66kVA",
+      "type": "强制",
+      "subject": "气体继电器",
+      "action": "设计制造",
+      "condition": "交流220V或110V",
+      "constraint": "触点容量≥66kVA",
+      "related_entities": [
+        "气体继电器",
+        "交流220V",
+        "交流110V",
+        "66kVA"
+      ]
+    },
+    {
+      "content": "气体继电器的触点容量在直流有感负载时，应不小于15W",
+      "type": "强制",
+      "subject": "气体继电器",
+      "action": "设计制造",
+      "condition": "直流有感负载",
+      "constraint": "触点容量≥15W",
+      "related_entities": [
+        "气体继电器",
+        "直流有感负载",
+        "15W"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体继电器",
+      "target": "触点容量",
+      "type": "包含"
+    },
+    {
+      "source": "交流220V",
+      "target": "触点容量",
+      "type": "约束条件"
+    },
+    {
+      "source": "交流110V",
+      "target": "触点容量",
+      "type": "约束条件"
+    },
+    {
+      "source": "66kVA",
+      "target": "触点容量",
+      "type": "约束条件"
+    },
+    {
+      "source": "直流有感负载",
+      "target": "触点容量",
+      "type": "约束条件"
+    },
+    {
+      "source": "15W",
+      "target": "触点容量",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1581,
+      "source_row_id": "1581",
+      "clause_index": 1,
+      "source_text": "气体继电器的触点容量在交流220V或110V时应不小于66kVA，直流有感负载时，应不小于15W"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8231,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.536161+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "单个绝缘子",
+      "type": "电力设备",
+      "desc": "电力系统中用于电气绝缘的设备"
+    },
+    {
+      "name": "10kV试验电压",
+      "type": "电力参数",
+      "desc": "电力设备进行试验时所施加的电压值"
+    },
+    {
+      "name": "1MHz测量频率",
+      "type": "电力参数",
+      "desc": "无线电干扰测量时使用的频率"
+    },
+    {
+      "name": "无线电干扰水平",
+      "type": "电力参数",
+      "desc": "电力设备在特定条件下产生的无线电干扰强度"
+    },
+    {
+      "name": "50μV",
+      "type": "电力参数",
+      "desc": "无线电干扰水平限值"
+    },
+    {
+      "name": "1.1倍最高运行相电压",
+      "type": "电力参数",
+      "desc": "电力设备在1.1倍最高运行相电压下的工作状态"
+    },
+    {
+      "name": "330kV及以上电压等级的绝缘子串",
+      "type": "电力设备",
+      "desc": "330kV及以上电压等级的多片绝缘子串联组合"
+    }
+  ],
+  "rules": [
+    {
+      "content": "单个绝缘子在10kV试验电压和1MHz测量频率下，无线电干扰水平不大于50μV",
+      "type": "强制",
+      "subject": "单个绝缘子",
+      "action": "产生无线电干扰",
+      "condition": "10kV试验电压和1MHz测量频率下",
+      "constraint": "无线电干扰水平不大于50μV",
+      "related_entities": [
+        "单个绝缘子",
+        "10kV试验电压",
+        "1MHz测量频率",
+        "无线电干扰水平",
+        "50μV"
+      ]
+    },
+    {
+      "content": "在规定1.1倍最高运行相电压下，330kV及以上电压等级的绝缘子串无线电干扰水平不大于500μV",
+      "type": "强制",
+      "subject": "330kV及以上电压等级的绝缘子串",
+      "action": "产生无线电干扰",
+      "condition": "1.1倍最高运行相电压下",
+      "constraint": "无线电干扰水平不大于500μV",
+      "related_entities": [
+        "330kV及以上电压等级的绝缘子串",
+        "1.1倍最高运行相电压",
+        "无线电干扰水平",
+        "500μV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "单个绝缘子",
+      "target": "10kV试验电压",
+      "type": "施加电压"
+    },
+    {
+      "source": "单个绝缘子",
+      "target": "1MHz测量频率",
+      "type": "测量频率"
+    },
+    {
+      "source": "单个绝缘子",
+      "target": "无线电干扰水平",
+      "type": "产生干扰"
+    },
+    {
+      "source": "单个绝缘子",
+      "target": "50μV",
+      "type": "干扰限值"
+    },
+    {
+      "source": "330kV及以上电压等级的绝缘子串",
+      "target": "1.1倍最高运行相电压",
+      "type": "运行电压"
+    },
+    {
+      "source": "330kV及以上电压等级的绝缘子串",
+      "target": "无线电干扰水平",
+      "type": "产生干扰"
+    },
+    {
+      "source": "330kV及以上电压等级的绝缘子串",
+      "target": "500μV",
+      "type": "干扰限值"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 701,
+      "source_row_id": "701",
+      "clause_index": 1,
+      "source_text": "单个绝缘子在10kV试验电压和1MHz测量频率下，无线电干扰水平不大于50μV。在规定1.1倍最高运行相电压下，330kV及以上电压等级的绝缘子串无线电干扰水平不大于500μV"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.527084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

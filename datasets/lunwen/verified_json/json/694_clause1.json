@@ -1,0 +1,143 @@
+{
+  "entities": [
+    {
+      "name": "憎水性",
+      "type": "电气性能",
+      "desc": "绝缘子表面的憎水性特性"
+    },
+    {
+      "name": "静态接触角",
+      "type": "电气参数",
+      "desc": "绝缘子表面与水滴接触时的接触角度"
+    },
+    {
+      "name": "HC值",
+      "type": "电气参数",
+      "desc": "绝缘子表面憎水性等级值"
+    },
+    {
+      "name": "试品",
+      "type": "试验样品",
+      "desc": "用于测试憎水性的绝缘子样本"
+    },
+    {
+      "name": "实验室标准环境条件",
+      "type": "试验环境",
+      "desc": "规定的实验室温度、湿度等条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在实验室标准环境条件下，将5片清洁试品置于盛有水的容器中浸泡96h，保证试品被水完全浸没。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "浸泡",
+      "condition": "实验室标准环境条件",
+      "constraint": "96h",
+      "related_entities": [
+        "试品",
+        "实验室标准环境条件"
+      ]
+    },
+    {
+      "content": "将试品取出后，甩掉表面的水珠，用滤纸吸干残余水分。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "干燥处理",
+      "condition": "试品取出后",
+      "constraint": "无",
+      "related_entities": [
+        "试品"
+      ]
+    },
+    {
+      "content": "任选3个试品，测量其静态接触角θ及HC值，其余两个试品仅测HC值。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "测量",
+      "condition": "试品干燥处理后",
+      "constraint": "3个试品测量静态接触角θ及HC值，2个试品仅测HC值",
+      "related_entities": [
+        "试品",
+        "静态接触角",
+        "HC值"
+      ]
+    },
+    {
+      "content": "每个试品的测量过程在10min内完成。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "测量",
+      "condition": "试品干燥处理后",
+      "constraint": "10min",
+      "related_entities": [
+        "试品"
+      ]
+    },
+    {
+      "content": "试品应满足：a）静态接触角θAV≥90°、θmin≥85°。b）一般为HC3~HC4级，且HC5级的试品不多于1个。对已运行的绝缘子一般应为HC4~HC5级。",
+      "type": "强制",
+      "subject": "试品",
+      "action": "满足要求",
+      "condition": "试品测量后",
+      "constraint": "静态接触角θAV≥90°、θmin≥85°；HC3~HC4级，HC5级≤1个；运行绝缘子HC4~HC5级",
+      "related_entities": [
+        "试品",
+        "静态接触角",
+        "HC值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "静态接触角",
+      "target": "试品",
+      "type": "测量结果"
+    },
+    {
+      "source": "HC值",
+      "target": "试品",
+      "type": "测量结果"
+    },
+    {
+      "source": "实验室标准环境条件",
+      "target": "试品",
+      "type": "试验条件"
+    },
+    {
+      "source": "试品",
+      "target": "静态接触角",
+      "type": "测量对象"
+    },
+    {
+      "source": "试品",
+      "target": "HC值",
+      "type": "测量对象"
+    },
+    {
+      "source": "试品",
+      "target": "实验室标准环境条件",
+      "type": "试验环境"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 694,
+      "source_row_id": "694",
+      "clause_index": 1,
+      "source_text": "憎水性的减弱特性要求：在实验室标准环境条件下，将5片清洁试品置于盛有水的容器中浸泡96h，保证试品被水完全浸没。将试品取出后，甩掉表面的水珠，用滤纸吸干残余水分。然后任选3个试品，测量其静态接触角θ及HC值，其余两个试品仅测HC值。每个试品的测量过程在10min内完成。试品应满足：a）静态接触角θAV≥90°、θmin≥85°。b）一般为HC3~HC4级，且HC5级的试品不多于1个。对已运行的绝缘子一般应为HC4~HC5级"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.519484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

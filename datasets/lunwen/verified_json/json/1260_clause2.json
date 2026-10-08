@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "外观检查",
+      "type": "试验项目",
+      "desc": "对设备外观进行检查"
+    },
+    {
+      "name": "绝缘电阻测量",
+      "type": "试验项目",
+      "desc": "测量设备的绝缘电阻"
+    },
+    {
+      "name": "不平衡电流校正",
+      "type": "试验项目",
+      "desc": "对设备的不平衡电流进行校正"
+    },
+    {
+      "name": "电容测量",
+      "type": "试验项目",
+      "desc": "测量设备的电容值"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验项目",
+      "desc": "对设备进行交流耐压试验"
+    },
+    {
+      "name": "耐压后复测电容值",
+      "type": "试验项目",
+      "desc": "在耐压试验后复测设备的电容值"
+    },
+    {
+      "name": "工频耐压",
+      "type": "试验项目",
+      "desc": "对设备进行工频耐压试验"
+    },
+    {
+      "name": "整组滤波器投切试验",
+      "type": "试验项目",
+      "desc": "对整组滤波器进行投切试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "验收试验：a)外观检查；b)绝缘电阻测量；c)不平衡电流校正。d)电容测量；e)交流耐压试验；f)耐压后复测电容值；g)工频耐压；h)整组滤波器投切试验",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": [
+        "外观检查",
+        "绝缘电阻测量",
+        "不平衡电流校正",
+        "电容测量",
+        "交流耐压试验",
+        "耐压后复测电容值",
+        "工频耐压",
+        "整组滤波器投切试验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1260,
+      "source_row_id": "1260",
+      "clause_index": 2,
+      "source_text": "验收试验：a)外观检查；b)绝缘电阻测量；c)不平衡电流校正。d)电容测量；e)交流耐压试验；f)耐压后复测电容值；g)工频耐压；h)整组滤波器投切试验"
+    },
+    "audit": {
+      "status": "corrected_to_source_faithful_rule",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": false,
+      "reasons": [
+        "rule_content_unrelated_to_excel_source"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.169551+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

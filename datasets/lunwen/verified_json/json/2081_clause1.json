@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "3/2接线方式",
+      "type": "电气接线方式",
+      "desc": "一种高压输电系统中常用的接线方式"
+    },
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "进行电力变换、分配和控制的场所"
+    },
+    {
+      "name": "主变压器",
+      "type": "电力设备",
+      "desc": "用于改变电压等级的电力设备"
+    },
+    {
+      "name": "母线",
+      "type": "电力设备",
+      "desc": "连接不同电气设备的导体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3/2接线方式的变电站，应避免主变直接接在母线上",
+      "type": "强制",
+      "subject": "3/2接线方式的变电站",
+      "action": "避免主变直接接在母线上",
+      "condition": "3/2接线方式的变电站",
+      "constraint": "无",
+      "related_entities": [
+        "3/2接线方式",
+        "变电站",
+        "主变压器",
+        "母线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "3/2接线方式",
+      "target": "变电站",
+      "type": "适用于"
+    },
+    {
+      "source": "变电站",
+      "target": "主变压器",
+      "type": "配置"
+    },
+    {
+      "source": "变电站",
+      "target": "母线",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2081,
+      "source_row_id": "2081",
+      "clause_index": 1,
+      "source_text": "3/2接线方式的变电站，应避免主变直接接在母线上"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9688,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.111969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

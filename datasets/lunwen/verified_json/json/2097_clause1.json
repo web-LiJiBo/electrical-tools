@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "电压等级",
+      "type": "电力系统参数",
+      "desc": "电力系统中不同等级的电压"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验方法",
+      "desc": "检测电气设备内部局部放电现象的试验方法"
+    },
+    {
+      "name": "新安装",
+      "type": "设备状态",
+      "desc": "设备首次安装完成后的状态"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "用于变换电压等级的电气设备"
+    },
+    {
+      "name": "现场局部放电试验",
+      "type": "试验方法",
+      "desc": "在设备现场进行的局部放电试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电压等级220kV及以上，在新安装时，必须进行现场局部放电试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行局部放电试验",
+      "condition": "电压等级220kV及以上且新安装",
+      "constraint": "无",
+      "related_entities": [
+        "电压等级",
+        "局部放电试验",
+        "新安装"
+      ]
+    },
+    {
+      "content": "对于电压等级为110kV的变压器，当对绝缘有怀疑时，应进行局部放电试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行局部放电试验",
+      "condition": "电压等级110kV且变压器绝缘有怀疑",
+      "constraint": "无",
+      "related_entities": [
+        "电压等级",
+        "局部放电试验",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电压等级",
+      "target": "局部放电试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "电压等级",
+      "target": "新安装",
+      "type": "状态"
+    },
+    {
+      "source": "电压等级",
+      "target": "变压器",
+      "type": "设备类型"
+    },
+    {
+      "source": "变压器",
+      "target": "局部放电试验",
+      "type": "试验对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2097,
+      "source_row_id": "2097",
+      "clause_index": 1,
+      "source_text": "电压等级220kV及以上，在新安装时，必须进行现场局部放电试验。对于电压等级为110kV的变压器，当对绝缘有怀疑时，应进行局部放电试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.134968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

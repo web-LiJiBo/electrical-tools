@@ -1,0 +1,147 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的地下通道"
+    },
+    {
+      "name": "电缆隧道",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的地下空间"
+    },
+    {
+      "name": "纵向排水坡度",
+      "type": "技术参数",
+      "desc": "电缆沟或隧道纵向排水的倾斜角度"
+    },
+    {
+      "name": "集水井",
+      "type": "电力设施",
+      "desc": "电缆沟内用于汇集和排放积水的设施"
+    },
+    {
+      "name": "流水沟",
+      "type": "电力设施",
+      "desc": "电缆隧道底部用于排放积水的通道"
+    },
+    {
+      "name": "排水泵",
+      "type": "设备",
+      "desc": "用于排出电缆沟或隧道内积水的机械装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆沟和隧道应有不小于0.5%的纵向排水坡度",
+      "type": "强制",
+      "subject": "电缆沟和隧道",
+      "action": "设置纵向排水坡度",
+      "condition": "电缆沟和隧道敷设电缆",
+      "constraint": "纵向排水坡度≥0.5%",
+      "related_entities": [
+        "电缆沟",
+        "电缆隧道",
+        "纵向排水坡度"
+      ]
+    },
+    {
+      "content": "电缆沟沿排水方向适当距离设置集水井",
+      "type": "强制",
+      "subject": "电缆沟",
+      "action": "设置集水井",
+      "condition": "电缆沟敷设电缆且存在排水需求",
+      "constraint": "集水井间距合理",
+      "related_entities": [
+        "电缆沟",
+        "集水井"
+      ]
+    },
+    {
+      "content": "电缆隧道底部应有流水沟",
+      "type": "强制",
+      "subject": "电缆隧道",
+      "action": "设置流水沟",
+      "condition": "电缆隧道敷设电缆且存在排水需求",
+      "constraint": "流水沟设计合理",
+      "related_entities": [
+        "电缆隧道",
+        "流水沟"
+      ]
+    },
+    {
+      "content": "必要时设置排水泵",
+      "type": "强制",
+      "subject": "电缆沟或隧道",
+      "action": "设置排水泵",
+      "condition": "电缆沟或隧道存在严重积水问题",
+      "constraint": "排水泵配置合理",
+      "related_entities": [
+        "电缆沟",
+        "电缆隧道",
+        "排水泵"
+      ]
+    },
+    {
+      "content": "排水泵应有自动启闭装置",
+      "type": "强制",
+      "subject": "排水泵",
+      "action": "安装自动启闭装置",
+      "condition": "电缆沟或隧道设置排水泵",
+      "constraint": "自动启闭装置功能正常",
+      "related_entities": [
+        "排水泵",
+        "电缆沟",
+        "电缆隧道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "纵向排水坡度",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "集水井",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "流水沟",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "排水泵",
+      "type": "包含"
+    },
+    {
+      "source": "电缆隧道",
+      "target": "纵向排水坡度",
+      "type": "包含"
+    },
+    {
+      "source": "电缆隧道",
+      "target": "流水沟",
+      "type": "包含"
+    },
+    {
+      "source": "电缆隧道",
+      "target": "排水泵",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1922,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8d7ca507ae07a342",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1922_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

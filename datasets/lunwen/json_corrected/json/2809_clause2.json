@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "雷电冲击波形",
+      "type": "电力波形",
+      "desc": "电力系统中雷电冲击波的波形特性"
+    },
+    {
+      "name": "波峰",
+      "type": "波形特征",
+      "desc": "雷电冲击波的峰值电压"
+    },
+    {
+      "name": "波前时间",
+      "type": "波形特征",
+      "desc": "雷电冲击波从起始点到波峰的时间"
+    },
+    {
+      "name": "半波峰时间",
+      "type": "波形特征",
+      "desc": "雷电冲击波从波峰到波谷的时间一半"
+    }
+  ],
+  "rules": [
+    {
+      "content": "波峰偏差为±3%",
+      "type": "强制",
+      "subject": "雷电冲击波形",
+      "action": "设计与制造",
+      "condition": "电力设备雷电冲击试验",
+      "constraint": "波峰偏差≤±3%",
+      "related_entities": [
+        "雷电冲击波形",
+        "波峰"
+      ]
+    },
+    {
+      "content": "波前及半波峰时间为1.2±30%/50±20%μs",
+      "type": "强制",
+      "subject": "雷电冲击波形",
+      "action": "设计与制造",
+      "condition": "电力设备雷电冲击试验",
+      "constraint": "波前时间=1.2±30%μs; 半波峰时间=50±20%μs",
+      "related_entities": [
+        "雷电冲击波形",
+        "波前时间",
+        "半波峰时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "雷电冲击波形",
+      "target": "波峰",
+      "type": "包含"
+    },
+    {
+      "source": "雷电冲击波形",
+      "target": "波前时间",
+      "type": "包含"
+    },
+    {
+      "source": "雷电冲击波形",
+      "target": "半波峰时间",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2809,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "5a75663d04d87436",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2809_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "电力设备材料",
+      "desc": "六氟化硫气体"
+    },
+    {
+      "name": "湿度测量",
+      "type": "试验检测",
+      "desc": "SF6气体湿度测量"
+    },
+    {
+      "name": "额定气体压力",
+      "type": "技术参数",
+      "desc": "SF6气体充气至的额定压力值"
+    },
+    {
+      "name": "环境相对湿度",
+      "type": "试验环境",
+      "desc": "试验时的环境相对湿度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6气体湿度测量必须在充气至额定气体压力下至少静止24h后进行。",
+      "type": "强制",
+      "subject": "SF6气体湿度测量",
+      "action": "测量",
+      "condition": "充气至额定气体压力下至少静止24h后",
+      "constraint": "无",
+      "related_entities": [
+        "SF6气体",
+        "湿度测量",
+        "额定气体压力"
+      ]
+    },
+    {
+      "content": "测量时，环境相对湿度一般不大于85%。",
+      "type": "强制",
+      "subject": "湿度测量",
+      "action": "测量",
+      "condition": "测量时",
+      "constraint": "环境相对湿度≤85%",
+      "related_entities": [
+        "湿度测量",
+        "环境相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体",
+      "target": "湿度测量",
+      "type": "被测对象"
+    },
+    {
+      "source": "额定气体压力",
+      "target": "湿度测量",
+      "type": "测量条件"
+    },
+    {
+      "source": "环境相对湿度",
+      "target": "湿度测量",
+      "type": "测量环境"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3246,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3149b6ccaa6f307c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3246_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "去离子罐",
+      "type": "电力设备",
+      "desc": "电力系统中用于去除水或气体中离子杂质的装置"
+    },
+    {
+      "name": "树脂",
+      "type": "电力材料",
+      "desc": "离子交换树脂，用于吸附去除水中离子杂质"
+    },
+    {
+      "name": "厂家",
+      "type": "电力企业",
+      "desc": "生产电力设备及材料的企业"
+    }
+  ],
+  "rules": [
+    {
+      "content": "去离子罐树脂更换按厂家要求",
+      "type": "强制",
+      "subject": "厂家",
+      "action": "规定树脂更换周期与方法",
+      "condition": "去离子罐运行期间",
+      "constraint": "厂家提供的技术文件",
+      "related_entities": [
+        "去离子罐",
+        "树脂",
+        "厂家"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "去离子罐",
+      "target": "树脂",
+      "type": "使用"
+    },
+    {
+      "source": "厂家",
+      "target": "去离子罐",
+      "type": "提供"
+    },
+    {
+      "source": "厂家",
+      "target": "树脂",
+      "type": "提供"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2856,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c28a8e5ace9c994c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2856_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

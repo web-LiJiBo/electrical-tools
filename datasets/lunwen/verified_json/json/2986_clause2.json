@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "接地极",
+      "type": "电力设备",
+      "desc": "电力系统中用于接地的金属结构"
+    },
+    {
+      "name": "接地电阻",
+      "type": "电气参数",
+      "desc": "接地极与大地之间的电阻值"
+    },
+    {
+      "name": "电位降法",
+      "type": "测试方法",
+      "desc": "通过测量接地极电位变化来计算接地电阻的方法"
+    },
+    {
+      "name": "电流-电压表三极法",
+      "type": "测试方法",
+      "desc": "通过测量接地极、电流极、电位极之间的电流和电压来计算接地电阻的方法"
+    },
+    {
+      "name": "dCG",
+      "type": "几何参数",
+      "desc": "接地极与电流极之间的距离"
+    },
+    {
+      "name": "dPG",
+      "type": "几何参数",
+      "desc": "接地极与电位极之间的距离"
+    },
+    {
+      "name": "DJ",
+      "type": "几何参数",
+      "desc": "接地极的直径或半径"
+    },
+    {
+      "name": "UJ",
+      "type": "电气参数",
+      "desc": "接地极的电位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极的接地电阻测试可采用电位降法或电流-电压表三极法",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "接地电阻测试",
+      "condition": "无特殊要求",
+      "constraint": "可采用电位降法或电流-电压表三极法",
+      "related_entities": [
+        "接地极",
+        "接地电阻",
+        "电位降法",
+        "电流-电压表三极法"
+      ]
+    },
+    {
+      "content": "dCG和dPG的夹角一般在30°-45°或更大",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "接地电阻测试",
+      "condition": "采用电流-电压表三极法",
+      "constraint": "dCG和dPG的夹角一般在30°-45°或更大",
+      "related_entities": [
+        "接地极",
+        "dCG",
+        "dPG"
+      ]
+    },
+    {
+      "content": "采用电流-电压表三极法时，电位极的位置距接地极心距离dPG宜在10DJ以上",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "接地电阻测试",
+      "condition": "采用电流-电压表三极法",
+      "constraint": "dPG宜在10DJ以上",
+      "related_entities": [
+        "接地极",
+        "dPG",
+        "DJ"
+      ]
+    },
+    {
+      "content": "如利用接地极线路作为电位线，则在换流站至接地极大约中间距离，方便接线位置引下以测试电位UJ",
+      "type": "建议",
+      "subject": "接地极",
+      "action": "接地电阻测试",
+      "condition": "采用电流-电压表三极法且利用接地极线路作为电位线",
+      "constraint": "在换流站至接地极大约中间距离，方便接线位置引下以测试电位UJ",
+      "related_entities": [
+        "接地极",
+        "UJ"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极",
+      "target": "接地电阻",
+      "type": "测量对象"
+    },
+    {
+      "source": "接地极",
+      "target": "电位降法",
+      "type": "测试方法"
+    },
+    {
+      "source": "接地极",
+      "target": "电流-电压表三极法",
+      "type": "测试方法"
+    },
+    {
+      "source": "接地极",
+      "target": "dCG",
+      "type": "几何参数"
+    },
+    {
+      "source": "接地极",
+      "target": "dPG",
+      "type": "几何参数"
+    },
+    {
+      "source": "接地极",
+      "target": "DJ",
+      "type": "几何参数"
+    },
+    {
+      "source": "接地极",
+      "target": "UJ",
+      "type": "电气参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2977,
+      "source_row_id": "2986",
+      "clause_index": 2,
+      "source_text": "要求：接地极的接地电阻测试可采用电位降法或电流-电压表三极法，参见6.2.1.1和6.2.1.2；dCG和dPG的夹角一般在30°-45°或更大；采用电流-电压表三极法时，电位极的位置距接地极心距离dPG宜在10DJ以上；如利用接地极线路作为电位线，则在换流站至接地极大约中间距离，方便接线位置引下以测试电位UJ。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.235315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

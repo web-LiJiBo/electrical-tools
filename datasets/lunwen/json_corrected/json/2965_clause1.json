@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "明敷电缆",
+      "type": "电力设备",
+      "desc": "直接暴露于空气中的电缆"
+    },
+    {
+      "name": "防火分隔",
+      "type": "技术措施",
+      "desc": "防止火灾蔓延的技术手段"
+    },
+    {
+      "name": "耐火电缆",
+      "type": "电力设备",
+      "desc": "具有耐火性能的电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在外部火势作用一定时间内需要维持通电的下列场所或回路，明敷的电缆应实施防火分隔或采用耐火电缆。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "实施防火分隔或采用耐火电缆",
+      "condition": "在外部火势作用一定时间内需要维持通电的场所或回路",
+      "constraint": "明敷电缆",
+      "related_entities": [
+        "电缆",
+        "防火分隔",
+        "耐火电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "明敷电缆",
+      "type": "实例化"
+    },
+    {
+      "source": "电缆",
+      "target": "防火分隔",
+      "type": "实施"
+    },
+    {
+      "source": "电缆",
+      "target": "耐火电缆",
+      "type": "替代"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2965,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "240ccdb8ee386ac8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2965_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

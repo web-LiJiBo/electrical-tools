@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "330千伏及以上电缆",
+      "type": "电力电缆",
+      "desc": "电压等级330kV及以上的高压电缆"
+    },
+    {
+      "name": "分布式光纤测温",
+      "type": "电缆监测设备",
+      "desc": "用于电缆温度监测的分布式光纤测温系统"
+    },
+    {
+      "name": "护层接地电流监测",
+      "type": "电缆监测设备",
+      "desc": "用于监测电缆护层接地电流的装置"
+    },
+    {
+      "name": "局放在线监测",
+      "type": "电缆监测设备",
+      "desc": "用于监测电缆局部放电情况的在线监测系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在隧道内敷设的330千伏及以上电缆本体应配置分布式光纤测温、护层接地电流监测，可配置局放在线监测。",
+      "type": "强制",
+      "subject": "330千伏及以上电缆",
+      "action": "配置",
+      "condition": "在隧道内敷设",
+      "constraint": "分布式光纤测温、护层接地电流监测必须配置，局放在线监测可选配",
+      "related_entities": [
+        "330千伏及以上电缆",
+        "分布式光纤测温",
+        "护层接地电流监测",
+        "局放在线监测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "330千伏及以上电缆",
+      "target": "分布式光纤测温",
+      "type": "配置"
+    },
+    {
+      "source": "330千伏及以上电缆",
+      "target": "护层接地电流监测",
+      "type": "配置"
+    },
+    {
+      "source": "330千伏及以上电缆",
+      "target": "局放在线监测",
+      "type": "可配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3141,
+      "source_row_id": "3150",
+      "clause_index": 2,
+      "source_text": "在隧道内敷设的330千伏及以上电缆本体应配置分布式光纤测温、护层接地电流监测，可配置局放在线监测。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.432319+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

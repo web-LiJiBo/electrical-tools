@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "252kV",
+      "type": "电压等级",
+      "desc": "252kV及以下电压等级"
+    },
+    {
+      "name": "363kV",
+      "type": "电压等级",
+      "desc": "363kV及以上电压等级"
+    },
+    {
+      "name": "工频耐压电压试验",
+      "type": "试验项目",
+      "desc": "工频耐压电压试验"
+    },
+    {
+      "name": "局部放电测量",
+      "type": "试验项目",
+      "desc": "局部放电测量"
+    },
+    {
+      "name": "雷电冲击电压试验",
+      "type": "试验项目",
+      "desc": "雷电冲击电压试验"
+    },
+    {
+      "name": "程序A",
+      "type": "试验程序",
+      "desc": "推荐用于252kV及以下电压等级的试验程序"
+    },
+    {
+      "name": "程序B",
+      "type": "试验程序",
+      "desc": "推荐用于363kV及以上电压等级的试验程序"
+    },
+    {
+      "name": "程序C",
+      "type": "试验程序",
+      "desc": "推荐用于363kV及以上电压等级的试验程序，替代程序B"
+    }
+  ],
+  "rules": [
+    {
+      "content": "程序A(推荐对于252kV及以下)，进行工频耐压电压试验并持续1min",
+      "type": "强制",
+      "subject": "252kV及以下电压等级设备",
+      "action": "进行工频耐压电压试验并持续1min",
+      "condition": "在设备出厂或大修后",
+      "constraint": "试验电压为额定电压的1.1倍，持续时间1min",
+      "related_entities": [
+        "252kV",
+        "工频耐压电压试验",
+        "程序A"
+      ]
+    },
+    {
+      "content": "程序B(推荐对于363kV及以上)，进行工频耐压电压试验并持续1min，并按表7进行局部放电测量",
+      "type": "强制",
+      "subject": "363kV及以上电压等级设备",
+      "action": "进行工频耐压电压试验并持续1min，进行局部放电测量",
+      "condition": "在设备出厂或大修后",
+      "constraint": "试验电压为额定电压的1.1倍，持续时间1min，局部放电测量按表7规定",
+      "related_entities": [
+        "363kV",
+        "工频耐压电压试验",
+        "局部放电测量",
+        "程序B"
+      ]
+    },
+    {
+      "content": "程序C(推荐对于363kV及以上，程序B的替代)，进行工频耐压电压试验并持续1min，并对每一极性进行3次雷电冲击电压试验",
+      "type": "强制",
+      "subject": "363kV及以上电压等级设备",
+      "action": "进行工频耐压电压试验并持续1min，进行雷电冲击电压试验",
+      "condition": "在设备出厂或大修后",
+      "constraint": "试验电压为额定电压的1.1倍，持续时间1min，雷电冲击电压试验每极性3次",
+      "related_entities": [
+        "363kV",
+        "工频耐压电压试验",
+        "雷电冲击电压试验",
+        "程序C"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "252kV",
+      "target": "程序A",
+      "type": "适用电压等级"
+    },
+    {
+      "source": "363kV",
+      "target": "程序B",
+      "type": "适用电压等级"
+    },
+    {
+      "source": "363kV",
+      "target": "程序C",
+      "type": "适用电压等级"
+    },
+    {
+      "source": "程序A",
+      "target": "工频耐压电压试验",
+      "type": "包含试验项目"
+    },
+    {
+      "source": "程序B",
+      "target": "工频耐压电压试验",
+      "type": "包含试验项目"
+    },
+    {
+      "source": "程序B",
+      "target": "局部放电测量",
+      "type": "包含试验项目"
+    },
+    {
+      "source": "程序C",
+      "target": "工频耐压电压试验",
+      "type": "包含试验项目"
+    },
+    {
+      "source": "程序C",
+      "target": "雷电冲击电压试验",
+      "type": "包含试验项目"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 347,
+      "source_row_id": "347",
+      "clause_index": 1,
+      "source_text": "a)程序A(推荐对于252kV及以下)，进行工频耐压电压试验并持续1min；b)程序B(推荐对于363kV及以上)，进行工频耐压电压试验并持续1min，并按表7进行局部放电测量；c)程序C(推荐对于363kV及以上，程序B的替代)，进行工频耐压电压试验并持续1min，并对每一极性进行3次雷电冲击电压试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.125485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

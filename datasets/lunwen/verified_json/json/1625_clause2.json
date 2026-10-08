@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "内冷水保护",
+      "type": "电力保护装置",
+      "desc": "用于监测和保护内冷水系统运行状态的保护装置"
+    },
+    {
+      "name": "内冷水传感器",
+      "type": "电力传感器",
+      "desc": "用于监测内冷水系统参数的传感器"
+    },
+    {
+      "name": "跳闸",
+      "type": "电力操作",
+      "desc": "断开电路的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "作用于跳闸的内冷水传感器应按照三套独立冗余配置",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中",
+      "constraint": "三套独立冗余配置",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    },
+    {
+      "content": "每个系统的内冷水保护对传感器采集量按照“三取二”原则出口",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中且无传感器故障",
+      "constraint": "三取二逻辑出口",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    },
+    {
+      "content": "当一套传感器故障时，出口采用“二取一”逻辑",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中且一套传感器故障",
+      "constraint": "二取一逻辑出口",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    },
+    {
+      "content": "当两套传感器故障时，出口采用“一取一”逻辑",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中且两套传感器故障",
+      "constraint": "一取一逻辑出口",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内冷水保护",
+      "target": "内冷水传感器",
+      "type": "监测"
+    },
+    {
+      "source": "内冷水保护",
+      "target": "跳闸",
+      "type": "出口"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1625,
+      "source_row_id": "1625",
+      "clause_index": 2,
+      "source_text": "作用于跳闸的内冷水传感器应按照三套独立冗余配置，每个系统的内冷水保护对传感器采集量按照“三取二”原则出口；当一套传感器故障时，出口采用“二取一”逻辑；当两套传感器故障时，出口采用“一取一”逻辑出口"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.585161+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

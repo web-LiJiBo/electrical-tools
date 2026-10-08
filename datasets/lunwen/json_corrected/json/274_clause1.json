@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "入地电流Im",
+      "type": "电气参数",
+      "desc": "接地极入地电流"
+    },
+    {
+      "name": "跨步电压Usm",
+      "type": "电气参数",
+      "desc": "测量得到的跨步电压"
+    },
+    {
+      "name": "折算入地电流IC",
+      "type": "电气参数",
+      "desc": "折算后的入地电流"
+    },
+    {
+      "name": "跨步电压Usc",
+      "type": "电气参数",
+      "desc": "折算后的跨步电压"
+    },
+    {
+      "name": "直流接地极",
+      "type": "设备",
+      "desc": "直流输电系统中用于接地的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在入地电流Im下测量得到跨步电压Usm后，需按式（3）将其换算成折算入地电流IC下的跨步电压Usc。",
+      "type": "强制",
+      "subject": "直流接地极",
+      "action": "进行跨步电压换算",
+      "condition": "直流接地极运行过程中",
+      "constraint": "Usc=IC/Im×Usm",
+      "related_entities": [
+        "入地电流Im",
+        "跨步电压Usm",
+        "折算入地电流IC",
+        "跨步电压Usc"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "入地电流Im",
+      "target": "折算入地电流IC",
+      "type": "计算依据"
+    },
+    {
+      "source": "跨步电压Usm",
+      "target": "跨步电压Usc",
+      "type": "计算依据"
+    },
+    {
+      "source": "直流接地极",
+      "target": "入地电流Im",
+      "type": "产生主体"
+    },
+    {
+      "source": "直流接地极",
+      "target": "跨步电压Usm",
+      "type": "产生主体"
+    },
+    {
+      "source": "直流接地极",
+      "target": "折算入地电流IC",
+      "type": "计算结果"
+    },
+    {
+      "source": "直流接地极",
+      "target": "跨步电压Usc",
+      "type": "计算结果"
+    }
+  ],
+  "metadata": {
+    "pair_id": 274,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2612297a075d50d6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\274_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

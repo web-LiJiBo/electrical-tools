@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "外观检查",
+      "type": "试验项目",
+      "desc": "对设备外观进行检查"
+    },
+    {
+      "name": "绝缘电阻测量",
+      "type": "试验项目",
+      "desc": "测量设备的绝缘电阻"
+    },
+    {
+      "name": "电容测量",
+      "type": "试验项目",
+      "desc": "测量设备的电容值"
+    },
+    {
+      "name": "耐压试验",
+      "type": "试验项目",
+      "desc": "对设备施加一定电压以检验其耐压性能"
+    },
+    {
+      "name": "电容器损耗角正切测量",
+      "type": "试验项目",
+      "desc": "测量电容器的损耗角正切值"
+    },
+    {
+      "name": "耐压后复测电容值",
+      "type": "试验项目",
+      "desc": "在耐压试验后再次测量设备的电容值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "验收试验：a)外观检查；b)绝缘电阻测量；c)电容测量；d)耐压试验；e)电容器损耗角正切测量；f)耐压后复测电容值",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": [
+        "外观检查",
+        "绝缘电阻测量",
+        "电容测量",
+        "耐压试验",
+        "电容器损耗角正切测量",
+        "耐压后复测电容值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1672,
+      "source_row_id": "1672",
+      "clause_index": 1,
+      "source_text": "验收试验：a)外观检查；b)绝缘电阻测量；c)电容测量；d)耐压试验；e)电容器损耗角正切测量；f)耐压后复测电容值"
+    },
+    "audit": {
+      "status": "corrected_to_source_faithful_rule",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": false,
+      "reasons": [
+        "rule_content_unrelated_to_excel_source"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.638157+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

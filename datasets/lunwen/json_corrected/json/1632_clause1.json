@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "主水",
+      "type": "水质",
+      "desc": "进入过滤系统的原水"
+    },
+    {
+      "name": "436滤器",
+      "type": "过滤设备",
+      "desc": "用于主水初步过滤的设备"
+    },
+    {
+      "name": "过滤精度",
+      "type": "技术参数",
+      "desc": "过滤设备对水中杂质的去除能力"
+    },
+    {
+      "name": "去离子过滤装置",
+      "type": "过滤设备",
+      "desc": "用于进一步净化水质的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主水过436滤器过滤精度不宜低于600μm",
+      "type": "强制",
+      "subject": "主水",
+      "action": "过滤",
+      "condition": "通过436滤器",
+      "constraint": "过滤精度≥600μm",
+      "related_entities": [
+        "主水",
+        "436滤器"
+      ]
+    },
+    {
+      "content": "去离子过滤装置过滤精度不宜低于10μm",
+      "type": "强制",
+      "subject": "去离子过滤装置",
+      "action": "过滤",
+      "condition": "过滤去离子水",
+      "constraint": "过滤精度≥10μm",
+      "related_entities": [
+        "去离子过滤装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主水",
+      "target": "436滤器",
+      "type": "经过"
+    },
+    {
+      "source": "436滤器",
+      "target": "过滤精度",
+      "type": "影响"
+    },
+    {
+      "source": "过滤精度",
+      "target": "去离子过滤装置",
+      "type": "影响"
+    },
+    {
+      "source": "去离子过滤装置",
+      "target": "过滤精度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1632,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d324a10dfa41c9b7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1632_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

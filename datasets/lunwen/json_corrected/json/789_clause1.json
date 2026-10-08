@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "铁心",
+      "type": "电力设备",
+      "desc": "变压器内部磁路系统"
+    },
+    {
+      "name": "绕组",
+      "type": "电力设备",
+      "desc": "变压器线圈"
+    },
+    {
+      "name": "电气连接件",
+      "type": "电力设备",
+      "desc": "变压器外部导电部件"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器储油容器"
+    },
+    {
+      "name": "顶层油温升限值",
+      "type": "技术参数",
+      "desc": "变压器顶层油温升限值"
+    },
+    {
+      "name": "绕组（平均）温升限值",
+      "type": "技术参数",
+      "desc": "变压器绕组平均温升限值"
+    },
+    {
+      "name": "温升",
+      "type": "技术参数",
+      "desc": "设备温度升高值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁心、绕组外部的电气连接件或油箱中的结构件，不规定温升限值，但要求温升不能过高，通常不超过80K",
+      "type": "强制",
+      "subject": "铁心、绕组外部的电气连接件或油箱中的结构件",
+      "action": "温升控制",
+      "condition": "运行中",
+      "constraint": "温升≤80K",
+      "related_entities": [
+        "铁心",
+        "绕组",
+        "电气连接件",
+        "油箱"
+      ]
+    },
+    {
+      "content": "条文4.2，顶层油温升限值60K",
+      "type": "强制",
+      "subject": "顶层油温升限值",
+      "action": "温升控制",
+      "condition": "运行中",
+      "constraint": "顶层油温升≤60K",
+      "related_entities": [
+        "顶层油温升限值"
+      ]
+    },
+    {
+      "content": "条文4.2，绕组（平均）温升限值65K",
+      "type": "强制",
+      "subject": "绕组（平均）温升限值",
+      "action": "温升控制",
+      "condition": "运行中",
+      "constraint": "绕组（平均）温升≤65K",
+      "related_entities": [
+        "绕组（平均）温升限值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心",
+      "target": "顶层油温升限值",
+      "type": "影响"
+    },
+    {
+      "source": "绕组",
+      "target": "绕组（平均）温升限值",
+      "type": "影响"
+    },
+    {
+      "source": "电气连接件",
+      "target": "温升",
+      "type": "影响"
+    },
+    {
+      "source": "油箱",
+      "target": "温升",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 789,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "91abf0b0727b0997",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\789_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

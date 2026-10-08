@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "水冷系统",
+      "type": "设备",
+      "desc": "电力系统中用于冷却的水循环系统"
+    },
+    {
+      "name": "额定压力",
+      "type": "参数",
+      "desc": "水冷系统正常运行时的压力值"
+    },
+    {
+      "name": "压力试验",
+      "type": "试验",
+      "desc": "对水冷系统进行压力测试的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在额定压力下进行压力试验，试验过程中整个水冷系统应无水滴泄漏现象",
+      "type": "强制",
+      "subject": "水冷系统",
+      "action": "进行压力试验",
+      "condition": "额定压力下",
+      "constraint": "试验过程中整个水冷系统应无水滴泄漏现象",
+      "related_entities": [
+        "水冷系统",
+        "额定压力",
+        "压力试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水冷系统",
+      "target": "额定压力",
+      "type": "参数依赖"
+    },
+    {
+      "source": "水冷系统",
+      "target": "压力试验",
+      "type": "试验执行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3302,
+      "source_row_id": "3311",
+      "clause_index": 1,
+      "source_text": "水冷系统的试验b）“在额定压力下进行压力试验，试验过程中整个水冷系统应无水滴泄漏现象”。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.633366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

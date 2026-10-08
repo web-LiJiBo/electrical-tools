@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设电缆的沟道"
+    },
+    {
+      "name": "纵向排水坡度",
+      "type": "技术参数",
+      "desc": "电缆沟纵向排水的倾斜角度"
+    },
+    {
+      "name": "集水坑",
+      "type": "电力设施",
+      "desc": "电缆沟内用于汇集并排出积水的坑洞"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆沟的纵向排水坡度，不宜小于0.3%；沿排水方向在标高最低部位宜设集水坑。",
+      "type": "强制",
+      "subject": "电缆沟设计与施工人员",
+      "action": "设计与施工电缆沟时",
+      "condition": "电缆沟纵向排水",
+      "constraint": "纵向排水坡度≥0.3%，标高最低部位设置集水坑",
+      "related_entities": [
+        "电缆沟",
+        "纵向排水坡度",
+        "集水坑"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "纵向排水坡度",
+      "type": "包含"
+    },
+    {
+      "source": "电缆沟",
+      "target": "集水坑",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3316,
+      "source_row_id": "3325",
+      "clause_index": 2,
+      "source_text": "电缆沟的纵向排水坡度，不宜小于0.3%；沿排水方向在标高最低部位宜设集水坑。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.648367+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体绝缘母线",
+      "type": "电力设备",
+      "desc": "采用SF6气体作为绝缘介质的母线"
+    },
+    {
+      "name": "隔室",
+      "type": "电力设备部件",
+      "desc": "SF6气体绝缘母线内部的独立空间"
+    },
+    {
+      "name": "气体服务小车",
+      "type": "电力设备",
+      "desc": "用于运输和储存SF6气体的小车"
+    },
+    {
+      "name": "储气罐",
+      "type": "电力设备部件",
+      "desc": "气体服务小车上用于储存SF6气体的容器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6气体绝缘母线应划分成若干隔室",
+      "type": "强制",
+      "subject": "SF6气体绝缘母线",
+      "action": "划分隔室",
+      "condition": "满足正常使用条件和限制隔室内部电弧影响的要求",
+      "constraint": "",
+      "related_entities": [
+        "SF6气体绝缘母线",
+        "隔室"
+      ]
+    },
+    {
+      "content": "隔室的划分应有利于维修和气体管理",
+      "type": "强制",
+      "subject": "SF6气体绝缘母线",
+      "action": "隔室划分",
+      "condition": "便于维护和气体管理",
+      "constraint": "",
+      "related_entities": [
+        "SF6气体绝缘母线",
+        "隔室"
+      ]
+    },
+    {
+      "content": "最大气体隔室的容积应和气体服务小车的储气罐容量相匹配",
+      "type": "强制",
+      "subject": "SF6气体绝缘母线",
+      "action": "隔室容积设计",
+      "condition": "与气体服务小车储气罐容量相匹配",
+      "constraint": "最大气体隔室容积≤储气罐容量",
+      "related_entities": [
+        "SF6气体绝缘母线",
+        "隔室",
+        "气体服务小车",
+        "储气罐"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体绝缘母线",
+      "target": "隔室",
+      "type": "包含"
+    },
+    {
+      "source": "气体服务小车",
+      "target": "储气罐",
+      "type": "包含"
+    },
+    {
+      "source": "SF6气体绝缘母线",
+      "target": "气体服务小车",
+      "type": "使用"
+    },
+    {
+      "source": "SF6气体绝缘母线",
+      "target": "储气罐",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 367,
+      "source_row_id": "367",
+      "clause_index": 1,
+      "source_text": "SF6气体绝缘母线应划分成若干隔室，以达到满足正常使用条件和限制隔室内部电弧影响的要求。SF6气体绝缘母线隔室的划分应有利于维修和气体管理。最大气体隔室的容积应和气体服务小车的储气罐容量相匹配"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.148482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

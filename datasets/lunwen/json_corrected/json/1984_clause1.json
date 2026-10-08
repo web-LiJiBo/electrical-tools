@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "电力系统中汇集和分配电能的场所"
+    },
+    {
+      "name": "出线",
+      "type": "电力线路",
+      "desc": "变电站向负荷侧输送电能的输电线路"
+    },
+    {
+      "name": "绝缘线",
+      "type": "电力电缆",
+      "desc": "具有绝缘层的电力电缆"
+    },
+    {
+      "name": "沿海地区",
+      "type": "地理环境",
+      "desc": "靠近海洋的区域"
+    },
+    {
+      "name": "化工污秽地区",
+      "type": "地理环境",
+      "desc": "存在化学污染的区域"
+    },
+    {
+      "name": "防腐蚀",
+      "type": "技术措施",
+      "desc": "防止设备腐蚀的技术手段"
+    },
+    {
+      "name": "绝缘水平",
+      "type": "技术参数",
+      "desc": "电力设备绝缘性能的量化指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变电站出线2000m范围内应采用绝缘线。",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "出线",
+      "condition": "距离变电站2000m范围内",
+      "constraint": "采用绝缘线",
+      "related_entities": [
+        "变电站",
+        "出线",
+        "绝缘线"
+      ]
+    },
+    {
+      "content": "沿海及化工污秽地区宜采用防腐蚀和绝缘措施，绝缘水平应增大一级。",
+      "type": "建议",
+      "subject": "沿海及化工污秽地区",
+      "action": "采用防腐蚀和绝缘措施",
+      "condition": "沿海及化工污秽地区",
+      "constraint": "绝缘水平增大一级",
+      "related_entities": [
+        "沿海地区",
+        "化工污秽地区",
+        "防腐蚀",
+        "绝缘水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变电站",
+      "target": "出线",
+      "type": "供电"
+    },
+    {
+      "source": "出线",
+      "target": "绝缘线",
+      "type": "使用"
+    },
+    {
+      "source": "沿海地区",
+      "target": "变电站",
+      "type": "地理位置"
+    },
+    {
+      "source": "化工污秽地区",
+      "target": "变电站",
+      "type": "地理位置"
+    },
+    {
+      "source": "沿海地区",
+      "target": "防腐蚀",
+      "type": "采用"
+    },
+    {
+      "source": "化工污秽地区",
+      "target": "防腐蚀",
+      "type": "采用"
+    },
+    {
+      "source": "沿海地区",
+      "target": "绝缘水平",
+      "type": "提高"
+    },
+    {
+      "source": "化工污秽地区",
+      "target": "绝缘水平",
+      "type": "提高"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1984,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "515560dac2435a36",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1984_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

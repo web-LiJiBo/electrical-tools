@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "内冷水保护",
+      "type": "电力保护装置",
+      "desc": "用于监测和保护内冷水系统运行状态的保护装置"
+    },
+    {
+      "name": "内冷水传感器",
+      "type": "电力传感器",
+      "desc": "用于监测内冷水系统参数的传感器"
+    },
+    {
+      "name": "跳闸",
+      "type": "电力操作",
+      "desc": "断开电路的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "作用于跳闸的内冷水传感器应按照三套独立冗余配置",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中",
+      "constraint": "三套独立冗余配置",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    },
+    {
+      "content": "每个系统的内冷水保护对传感器采集量按照“三取二”原则出口",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中且无传感器故障",
+      "constraint": "三取二逻辑出口",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    },
+    {
+      "content": "当一套传感器故障时，出口采用“二取一”逻辑",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中且一套传感器故障",
+      "constraint": "二取一逻辑出口",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    },
+    {
+      "content": "当两套传感器故障时，出口采用“一取一”逻辑",
+      "type": "强制",
+      "subject": "内冷水保护",
+      "action": "出口",
+      "condition": "内冷水系统运行中且两套传感器故障",
+      "constraint": "一取一逻辑出口",
+      "related_entities": [
+        "内冷水保护",
+        "内冷水传感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内冷水保护",
+      "target": "内冷水传感器",
+      "type": "监测"
+    },
+    {
+      "source": "内冷水保护",
+      "target": "跳闸",
+      "type": "出口"
+    }
+  ],
+  "metadata": {
+    "pair_id": 196,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e49dbe0a810b0817",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\196_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

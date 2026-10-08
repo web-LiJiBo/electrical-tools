@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "例行试验",
+      "type": "试验",
+      "desc": "电力设备定期进行的检查与测试"
+    },
+    {
+      "name": "端子标志检验",
+      "type": "试验项目",
+      "desc": "检查端子标识是否正确无误"
+    },
+    {
+      "name": "一次电压端的工频耐压试验",
+      "type": "试验项目",
+      "desc": "对一次电压端施加工频电压进行耐压试验"
+    },
+    {
+      "name": "局部放电测量",
+      "type": "试验项目",
+      "desc": "检测电力设备内部局部放电量"
+    },
+    {
+      "name": "低压器件的工频耐压试验",
+      "type": "试验项目",
+      "desc": "对低压器件施加工频电压进行耐压试验"
+    },
+    {
+      "name": "准确度试验",
+      "type": "试验项目",
+      "desc": "检测电力设备的测量准确度"
+    },
+    {
+      "name": "电容量和介质损耗因数测量",
+      "type": "试验项目",
+      "desc": "测量电力设备的电容量及介质损耗因数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "例行试验项目包括：端子标志检验、一次电压端的工频耐压试验、局部放电测量、低压器件的工频耐压试验、准确度试验、电容量和介质损耗因数测量。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "例行试验",
+      "condition": "电力设备运行周期内",
+      "constraint": "必须包含上述所有试验项目",
+      "related_entities": [
+        "例行试验",
+        "端子标志检验",
+        "一次电压端的工频耐压试验",
+        "局部放电测量",
+        "低压器件的工频耐压试验",
+        "准确度试验",
+        "电容量和介质损耗因数测量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "例行试验",
+      "target": "端子标志检验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "一次电压端的工频耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "局部放电测量",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "低压器件的工频耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "准确度试验",
+      "type": "包含"
+    },
+    {
+      "source": "例行试验",
+      "target": "电容量和介质损耗因数测量",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3094,
+      "source_row_id": "3103",
+      "clause_index": 1,
+      "source_text": "例行试验项目包括：端子标志检验、一次电压端的工频耐压试验、局部放电测量、低压器件的工频耐压试验、准确度试验、电容量和介质损耗因数测量。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.376315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

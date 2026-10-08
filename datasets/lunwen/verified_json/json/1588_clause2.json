@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "三相变压器",
+      "type": "电力设备",
+      "desc": "三相交流电用的变压器"
+    },
+    {
+      "name": "绕组直流电阻",
+      "type": "电气参数",
+      "desc": "变压器绕组在直流电压下的电阻值"
+    },
+    {
+      "name": "相",
+      "type": "电气参数",
+      "desc": "变压器绕组的一个分支"
+    },
+    {
+      "name": "线",
+      "type": "电气参数",
+      "desc": "变压器绕组的两个分支之间的连接方式"
+    },
+    {
+      "name": "变压器容量",
+      "type": "电气参数",
+      "desc": "变压器额定容量，单位kVA"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三相变压器，绕组直流电阻不平衡率：相为不大于4%，线为不大于2%",
+      "type": "强制",
+      "subject": "三相变压器",
+      "action": "测量绕组直流电阻",
+      "condition": "变压器安装或大修后",
+      "constraint": "相不平衡率≤4%，线不平衡率≤2%",
+      "related_entities": [
+        "三相变压器",
+        "绕组直流电阻"
+      ]
+    },
+    {
+      "content": "变压器是指30-2500kVA",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "确定变压器容量范围",
+      "condition": "无特定条件限制",
+      "constraint": "变压器容量范围为30-2500kVA",
+      "related_entities": [
+        "变压器",
+        "变压器容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三相变压器",
+      "target": "绕组直流电阻",
+      "type": "包含"
+    },
+    {
+      "source": "绕组直流电阻",
+      "target": "相",
+      "type": "属于"
+    },
+    {
+      "source": "绕组直流电阻",
+      "target": "线",
+      "type": "属于"
+    },
+    {
+      "source": "三相变压器",
+      "target": "变压器容量",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1588,
+      "source_row_id": "1588",
+      "clause_index": 2,
+      "source_text": "对于三相变压器，绕组直流电阻不平衡率：相为不大于4%，线为不大于2%；”变压器是指30-2500kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.98,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.543158+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

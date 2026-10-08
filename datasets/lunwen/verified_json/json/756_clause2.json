@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "测量设备",
+      "type": "电力设备",
+      "desc": "用于电力系统中测量各种参数的装置"
+    },
+    {
+      "name": "控制和保护系统",
+      "type": "电力系统",
+      "desc": "实现电力系统控制与保护功能的系统"
+    },
+    {
+      "name": "测量通道",
+      "type": "电力系统",
+      "desc": "传输测量数据的通道"
+    },
+    {
+      "name": "远端模块",
+      "type": "电力设备",
+      "desc": "测量通道中的远端数据采集装置"
+    },
+    {
+      "name": "光纤通道",
+      "type": "电力系统",
+      "desc": "利用光纤传输信号的通道"
+    },
+    {
+      "name": "数字式光电互感器合并单元",
+      "type": "电力设备",
+      "desc": "将模拟量转换为数字量的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对多重的控制和保护系统，各重系统应配置独立的测量通道。",
+      "type": "强制",
+      "subject": "多重的控制和保护系统",
+      "action": "配置独立的测量通道",
+      "condition": "多重的控制和保护系统",
+      "constraint": "各重系统应配置独立的测量通道",
+      "related_entities": [
+        "测量设备",
+        "控制和保护系统",
+        "测量通道"
+      ]
+    },
+    {
+      "content": "在测量精度满足要求的情况下，控制和保护系统可共用同一测量通道。",
+      "type": "强制",
+      "subject": "控制和保护系统",
+      "action": "共用同一测量通道",
+      "condition": "测量精度满足要求",
+      "constraint": "控制和保护系统可共用同一测量通道",
+      "related_entities": [
+        "测量设备",
+        "控制和保护系统",
+        "测量通道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "测量设备",
+      "target": "控制和保护系统",
+      "type": "服务于"
+    },
+    {
+      "source": "测量设备",
+      "target": "测量通道",
+      "type": "包含"
+    },
+    {
+      "source": "测量通道",
+      "target": "远端模块",
+      "type": "包含"
+    },
+    {
+      "source": "测量通道",
+      "target": "光纤通道",
+      "type": "包含"
+    },
+    {
+      "source": "测量通道",
+      "target": "数字式光电互感器合并单元",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 756,
+      "source_row_id": "756",
+      "clause_index": 2,
+      "source_text": "一般规定：对测量设备按照以下原则进行配置：对多重的控制和保护系统，各重系统应配置独立的测量通道。在测量精度满足要求的情况下，控制和保护系统可共用同一测量通道。对于光线测量设备，测量通道包括远端模块、光纤通道和数字式光电互感器合并单元"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.587085+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

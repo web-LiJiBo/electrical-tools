@@ -1,0 +1,183 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "出厂试验",
+      "type": "试验项目",
+      "desc": "产品制造完成后进行的检验试验"
+    },
+    {
+      "name": "交接试验",
+      "type": "试验项目",
+      "desc": "设备安装调试后进行的检验试验"
+    },
+    {
+      "name": "例行试验",
+      "type": "试验项目",
+      "desc": "设备运行一段时间后定期进行的检验试验"
+    },
+    {
+      "name": "主触头",
+      "type": "电力设备部件",
+      "desc": "断路器用于接通或断开电路的主触点"
+    },
+    {
+      "name": "合闸电阻",
+      "type": "电力设备部件",
+      "desc": "断路器合闸过程中用于限制合闸涌流的电阻"
+    },
+    {
+      "name": "时间配合关系",
+      "type": "技术参数",
+      "desc": "主触头与合闸电阻触头的动作时间协调关系"
+    },
+    {
+      "name": "阻值",
+      "type": "技术参数",
+      "desc": "合闸电阻的电气参数之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "断路器产品出厂试验、交接试验及例行试验中，应对断路器主触头与合闸电阻触头的时间配合关系进行测试",
+      "type": "强制",
+      "subject": "断路器生产厂家、设备安装调试单位、设备运维单位",
+      "action": "进行断路器主触头与合闸电阻触头的时间配合关系测试",
+      "condition": "断路器产品出厂试验、交接试验及例行试验",
+      "constraint": "无具体数值要求，但需确保时间配合关系满足设计要求",
+      "related_entities": [
+        "断路器",
+        "出厂试验",
+        "交接试验",
+        "例行试验",
+        "主触头",
+        "合闸电阻触头"
+      ]
+    },
+    {
+      "content": "应选用合适测量方法测量合闸电阻的阻值",
+      "type": "强制",
+      "subject": "断路器生产厂家、设备安装调试单位、设备运维单位",
+      "action": "选用合适测量方法测量合闸电阻的阻值",
+      "condition": "断路器产品出厂试验、交接试验及例行试验",
+      "constraint": "无具体数值要求，但需确保测量方法科学合理",
+      "related_entities": [
+        "断路器",
+        "出厂试验",
+        "交接试验",
+        "例行试验",
+        "合闸电阻",
+        "阻值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "出厂试验",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "交接试验",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "例行试验",
+      "type": "包含"
+    },
+    {
+      "source": "出厂试验",
+      "target": "主触头",
+      "type": "测试对象"
+    },
+    {
+      "source": "出厂试验",
+      "target": "合闸电阻触头",
+      "type": "测试对象"
+    },
+    {
+      "source": "出厂试验",
+      "target": "时间配合关系",
+      "type": "测试参数"
+    },
+    {
+      "source": "出厂试验",
+      "target": "合闸电阻",
+      "type": "测试对象"
+    },
+    {
+      "source": "出厂试验",
+      "target": "阻值",
+      "type": "测试参数"
+    },
+    {
+      "source": "交接试验",
+      "target": "主触头",
+      "type": "测试对象"
+    },
+    {
+      "source": "交接试验",
+      "target": "合闸电阻触头",
+      "type": "测试对象"
+    },
+    {
+      "source": "交接试验",
+      "target": "时间配合关系",
+      "type": "测试参数"
+    },
+    {
+      "source": "交接试验",
+      "target": "合闸电阻",
+      "type": "测试对象"
+    },
+    {
+      "source": "交接试验",
+      "target": "阻值",
+      "type": "测试参数"
+    },
+    {
+      "source": "例行试验",
+      "target": "主触头",
+      "type": "测试对象"
+    },
+    {
+      "source": "例行试验",
+      "target": "合闸电阻触头",
+      "type": "测试对象"
+    },
+    {
+      "source": "例行试验",
+      "target": "时间配合关系",
+      "type": "测试参数"
+    },
+    {
+      "source": "例行试验",
+      "target": "合闸电阻",
+      "type": "测试对象"
+    },
+    {
+      "source": "例行试验",
+      "target": "阻值",
+      "type": "测试参数"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2800,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "eb7054f077a8b7d0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2800_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

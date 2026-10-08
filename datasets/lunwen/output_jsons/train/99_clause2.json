@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "防火墙",
+      "type": "电力设备",
+      "desc": "电力系统中用于防火隔离的墙体"
+    },
+    {
+      "name": "耐火极限",
+      "type": "技术参数",
+      "desc": "防火墙在火灾条件下保持结构完整性的持续时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "防火墙的耐火极限不宜小于4h",
+      "type": "强制",
+      "subject": "防火墙",
+      "action": "设置耐火极限",
+      "condition": "电力系统防火隔离",
+      "constraint": "耐火极限≥4h",
+      "related_entities": [
+        "防火墙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "防火墙",
+      "target": "耐火极限",
+      "type": "具有"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体湿度",
+      "type": "电力设备状态参数",
+      "desc": "六氟化硫气体的湿度含量"
+    },
+    {
+      "name": "新充（补）气",
+      "type": "操作行为",
+      "desc": "向电气设备中充入或补充六氟化硫气体"
+    },
+    {
+      "name": "48小时之后至2周之内",
+      "type": "时间范围",
+      "desc": "从新充（补）气后48小时开始到2周内的时间段"
+    },
+    {
+      "name": "测量",
+      "type": "检测行为",
+      "desc": "对电力设备进行检测以获取其状态参数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新充（补）气48小时之后至2周之内应测量一次",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "测量SF6气体湿度",
+      "condition": "新充（补）气后48小时至2周内",
+      "constraint": "至少测量一次",
+      "related_entities": [
+        "SF6气体湿度",
+        "新充（补）气"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体湿度",
+      "target": "新充（补）气",
+      "type": "检测对象"
+    },
+    {
+      "source": "SF6气体湿度",
+      "target": "测量",
+      "type": "检测行为"
+    },
+    {
+      "source": "新充（补）气",
+      "target": "测量",
+      "type": "触发事件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1749,
+      "source_row_id": "1749",
+      "clause_index": 2,
+      "source_text": "SF6气体湿度：新充（补）气48小时之后至2周之内应测量一次"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.725579+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

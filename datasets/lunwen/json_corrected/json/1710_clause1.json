@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "隔板",
+      "type": "电力设备",
+      "desc": "电力设备中的隔板部件"
+    },
+    {
+      "name": "制造厂技术条件",
+      "type": "技术文档",
+      "desc": "制造厂提供的技术条件文件"
+    },
+    {
+      "name": "压力试验",
+      "type": "试验方法",
+      "desc": "对隔板施加压力进行的试验"
+    },
+    {
+      "name": "绝缘试验",
+      "type": "试验方法",
+      "desc": "对隔板进行绝缘性能的测试"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验方法",
+      "desc": "检测隔板局部放电情况的试验"
+    },
+    {
+      "name": "X射线探伤试验",
+      "type": "试验方法",
+      "desc": "利用X射线对隔板内部缺陷进行检测的试验"
+    },
+    {
+      "name": "超声波探伤试验",
+      "type": "试验方法",
+      "desc": "利用超声波对隔板内部缺陷进行检测的试验"
+    },
+    {
+      "name": "550kV及以上电压",
+      "type": "电压等级",
+      "desc": "高压输电系统中使用的电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔板应按制造厂技术条件进行压力试验、绝缘试验和局部放电试验，必要时还需作X射线或超声波探伤试验，以保证质量。",
+      "type": "强制",
+      "subject": "隔板",
+      "action": "进行试验",
+      "condition": "隔板制造完成后",
+      "constraint": "压力试验、绝缘试验、局部放电试验、X射线或超声波探伤试验",
+      "related_entities": [
+        "隔板",
+        "制造厂技术条件",
+        "压力试验",
+        "绝缘试验",
+        "局部放电试验",
+        "X射线探伤试验",
+        "超声波探伤试验"
+      ]
+    },
+    {
+      "content": "550kV及以上电压，应作X-射线或超声波探伤实验",
+      "type": "强制",
+      "subject": "隔板",
+      "action": "进行X射线或超声波探伤试验",
+      "condition": "隔板应用于550kV及以上电压等级的电力设备",
+      "constraint": "X射线或超声波探伤试验",
+      "related_entities": [
+        "隔板",
+        "550kV及以上电压",
+        "X射线探伤试验",
+        "超声波探伤试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔板",
+      "target": "制造厂技术条件",
+      "type": "依据"
+    },
+    {
+      "source": "隔板",
+      "target": "压力试验",
+      "type": "执行"
+    },
+    {
+      "source": "隔板",
+      "target": "绝缘试验",
+      "type": "执行"
+    },
+    {
+      "source": "隔板",
+      "target": "局部放电试验",
+      "type": "执行"
+    },
+    {
+      "source": "隔板",
+      "target": "X射线探伤试验",
+      "type": "执行"
+    },
+    {
+      "source": "隔板",
+      "target": "超声波探伤试验",
+      "type": "执行"
+    },
+    {
+      "source": "隔板",
+      "target": "550kV及以上电压",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1710,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "25c0d52d745c8b09",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1710_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "entities": [
+    {
+      "name": "钢材",
+      "type": "材料",
+      "desc": "用于电力设备制造的金属材料"
+    },
+    {
+      "name": "冷加工",
+      "type": "工艺",
+      "desc": "钢材在低温下进行的机械加工过程"
+    },
+    {
+      "name": "金具",
+      "type": "电力设备",
+      "desc": "电力系统中用于连接导线、绝缘子等部件的金属构件"
+    },
+    {
+      "name": "低冷脆性材料",
+      "type": "材料",
+      "desc": "在低温环境下具有较好韧性的金属材料"
+    },
+    {
+      "name": "耐磨型材料",
+      "type": "材料",
+      "desc": "具有较高抗磨损性能的金属材料"
+    },
+    {
+      "name": "重冰区",
+      "type": "环境",
+      "desc": "覆冰厚度较大的地区"
+    },
+    {
+      "name": "脱冰跳跃",
+      "type": "现象",
+      "desc": "覆冰导线在风力作用下发生剧烈摆动的现象"
+    },
+    {
+      "name": "舞动",
+      "type": "现象",
+      "desc": "输电线路在强风作用下产生的周期性振动现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "尽可能采用不敏感的钢材，如采用敏感性的钢材，则要避免严重的冷加工。",
+      "type": "强制",
+      "subject": "钢材",
+      "action": "使用",
+      "condition": "电力设备制造",
+      "constraint": "避免严重冷加工",
+      "related_entities": [
+        "钢材",
+        "冷加工"
+      ]
+    },
+    {
+      "content": "在高寒地区使用的金具应采用低冷脆性材料。",
+      "type": "强制",
+      "subject": "金具",
+      "action": "选用",
+      "condition": "高寒地区",
+      "constraint": "采用低冷脆性材料",
+      "related_entities": [
+        "金具",
+        "低冷脆性材料"
+      ]
+    },
+    {
+      "content": "大风频发区域连接金具应采用耐磨型材料。",
+      "type": "强制",
+      "subject": "金具",
+      "action": "选用",
+      "condition": "大风频发区域",
+      "constraint": "采用耐磨型材料",
+      "related_entities": [
+        "金具",
+        "耐磨型材料"
+      ]
+    },
+    {
+      "content": "重冰区应考虑脱冰跳跃对金具的影响。",
+      "type": "强制",
+      "subject": "金具",
+      "action": "设计",
+      "condition": "重冰区",
+      "constraint": "考虑脱冰跳跃影响",
+      "related_entities": [
+        "金具",
+        "脱冰跳跃"
+      ]
+    },
+    {
+      "content": "舞动区应考虑舞动对金具的影响。",
+      "type": "强制",
+      "subject": "金具",
+      "action": "设计",
+      "condition": "舞动区",
+      "constraint": "考虑舞动影响",
+      "related_entities": [
+        "金具",
+        "舞动"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢材",
+      "target": "冷加工",
+      "type": "工艺"
+    },
+    {
+      "source": "金具",
+      "target": "低冷脆性材料",
+      "type": "材料"
+    },
+    {
+      "source": "金具",
+      "target": "耐磨型材料",
+      "type": "材料"
+    },
+    {
+      "source": "金具",
+      "target": "脱冰跳跃",
+      "type": "影响因素"
+    },
+    {
+      "source": "金具",
+      "target": "舞动",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3174,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a9e60aa5d4146ed5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3174_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

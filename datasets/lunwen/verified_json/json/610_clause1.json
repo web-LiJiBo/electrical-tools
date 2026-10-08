@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "木质",
+      "type": "材料",
+      "desc": "一种不良导电材料"
+    },
+    {
+      "name": "沥青",
+      "type": "材料",
+      "desc": "一种不良导电材料"
+    },
+    {
+      "name": "电气装置外壳",
+      "type": "设备",
+      "desc": "电气设备的外露金属部分"
+    },
+    {
+      "name": "维护人员",
+      "type": "人员",
+      "desc": "进行电气设备维护的工作人员"
+    },
+    {
+      "name": "接地物件",
+      "type": "设备",
+      "desc": "电气设备的接地部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在木质、沥青等不良导电地面的干燥房间内，交流标称电压380V及以下、直流标称电压220V及以下的电气装置外壳，当维护人员可能同时触及电气装置外壳和接地物件时除外",
+      "type": "强制",
+      "subject": "电气装置外壳",
+      "action": "接地",
+      "condition": "在木质、沥青等不良导电地面的干燥房间内，交流标称电压380V及以下、直流标称电压220V及以下",
+      "constraint": "当维护人员可能同时触及电气装置外壳和接地物件时除外",
+      "related_entities": [
+        "木质",
+        "沥青",
+        "电气装置外壳",
+        "维护人员",
+        "接地物件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "木质",
+      "target": "电气装置外壳",
+      "type": "安装环境"
+    },
+    {
+      "source": "沥青",
+      "target": "电气装置外壳",
+      "type": "安装环境"
+    },
+    {
+      "source": "电气装置外壳",
+      "target": "维护人员",
+      "type": "接触对象"
+    },
+    {
+      "source": "电气装置外壳",
+      "target": "接地物件",
+      "type": "接地对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 610,
+      "source_row_id": "610",
+      "clause_index": 1,
+      "source_text": "在木质、沥青等不良导电地面的干燥房间内，交流标称电压380V及以下、直流标称电压220V及以下的电气装置外壳，当维护人员可能同时触及电气装置外壳和接地物件时除外"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.417482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "Q460材质",
+      "type": "材料",
+      "desc": "一种特定牌号的钢材"
+    },
+    {
+      "name": "冲孔",
+      "type": "工艺",
+      "desc": "在板材上冲出孔洞的加工过程"
+    },
+    {
+      "name": "最大厚度",
+      "type": "尺寸参数",
+      "desc": "材料的最大允许厚度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Q460材质冲孔最大厚度≤10mm",
+      "type": "强制",
+      "subject": "Q460材质冲孔件",
+      "action": "加工",
+      "condition": "冲孔加工",
+      "constraint": "最大厚度≤10mm",
+      "related_entities": [
+        "Q460材质",
+        "冲孔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "Q460材质",
+      "target": "冲孔",
+      "type": "适用材料"
+    },
+    {
+      "source": "最大厚度",
+      "target": "冲孔",
+      "type": "限制条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 358,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ea1f9413b60d6070",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\358_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

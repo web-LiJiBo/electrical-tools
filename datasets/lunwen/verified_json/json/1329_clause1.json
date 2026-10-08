@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "220kV变电站",
+      "type": "电力设施",
+      "desc": "一座220kV电压等级的变电站"
+    },
+    {
+      "name": "110kV",
+      "type": "电压等级",
+      "desc": "电力系统中的一种电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "220kV变电站应配置110kV电压等级的主变压器",
+      "type": "强制",
+      "subject": "220kV变电站",
+      "action": "配置110kV主变压器",
+      "condition": "新建或扩建220kV变电站",
+      "constraint": "主变压器容量≥50MVA",
+      "related_entities": [
+        "220kV变电站",
+        "110kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "220kV变电站",
+      "target": "110kV",
+      "type": "包含电压等级"
+    },
+    {
+      "source": "220kV变电站",
+      "target": "110kV主变压器",
+      "type": "配置设备"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1329,
+      "source_row_id": "1329",
+      "clause_index": 1,
+      "source_text": "220kV变电站中的110kV"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.49,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.249549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

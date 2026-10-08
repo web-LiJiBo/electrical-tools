@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "边导线",
+      "type": "电力线路",
+      "desc": "电力系统中架设在杆塔上的输电导线"
+    },
+    {
+      "name": "建筑物",
+      "type": "电力设施",
+      "desc": "电力系统中各类建筑物，如变电站、配电房等"
+    },
+    {
+      "name": "水平距离",
+      "type": "电力参数",
+      "desc": "边导线与建筑物之间水平方向的距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "无风情况下，边导线与建筑物之间的水平距离应不小于7米",
+      "type": "强制",
+      "subject": "边导线与建筑物",
+      "action": "保持安全距离",
+      "condition": "无风情况",
+      "constraint": "水平距离≥7米",
+      "related_entities": [
+        "边导线",
+        "建筑物"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "边导线",
+      "target": "建筑物",
+      "type": "安全距离"
+    },
+    {
+      "source": "建筑物",
+      "target": "边导线",
+      "type": "安全距离"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1394,
+      "source_row_id": "1394",
+      "clause_index": 2,
+      "source_text": "无风情况下，边导线与建筑物之间的水平距离应不小于7米"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.331547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

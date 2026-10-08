@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "阀进水温度传感器",
+      "type": "设备",
+      "desc": "用于监测阀进水温度的传感器"
+    },
+    {
+      "name": "水冷保护",
+      "type": "系统",
+      "desc": "用于保护直流输电系统中水冷却系统的保护装置"
+    },
+    {
+      "name": "闭锁",
+      "type": "操作",
+      "desc": "断开或禁止某项功能或设备的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三重化配置的阀进水温度传感器全部接入两套水冷保护",
+      "type": "强制",
+      "subject": "阀进水温度传感器",
+      "action": "接入",
+      "condition": "三重化配置",
+      "constraint": "两套水冷保护",
+      "related_entities": [
+        "阀进水温度传感器",
+        "水冷保护"
+      ]
+    },
+    {
+      "content": "在每套保护内采用三取二方式出口",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "出口",
+      "condition": "阀进水温度传感器正常",
+      "constraint": "三取二",
+      "related_entities": [
+        "水冷保护",
+        "阀进水温度传感器"
+      ]
+    },
+    {
+      "content": "当自检到其中一个阀进水温度传感器故障后，在每套保护内采用二取二方式出口",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "出口",
+      "condition": "一个阀进水温度传感器故障",
+      "constraint": "二取二",
+      "related_entities": [
+        "水冷保护",
+        "阀进水温度传感器"
+      ]
+    },
+    {
+      "content": "当自检到两个阀进水温度传感器故障后，在每套保护内采用一取一方式出口",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "出口",
+      "condition": "两个阀进水温度传感器故障",
+      "constraint": "一取一",
+      "related_entities": [
+        "水冷保护",
+        "阀进水温度传感器"
+      ]
+    },
+    {
+      "content": "当三个阀进水温度传感器均故障后，应闭锁整套水冷保护",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "闭锁",
+      "condition": "三个阀进水温度传感器故障",
+      "constraint": "闭锁",
+      "related_entities": [
+        "水冷保护",
+        "阀进水温度传感器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀进水温度传感器",
+      "target": "水冷保护",
+      "type": "接入"
+    },
+    {
+      "source": "水冷保护",
+      "target": "阀进水温度传感器",
+      "type": "出口"
+    },
+    {
+      "source": "水冷保护",
+      "target": "闭锁",
+      "type": "闭锁"
+    }
+  ]
+}

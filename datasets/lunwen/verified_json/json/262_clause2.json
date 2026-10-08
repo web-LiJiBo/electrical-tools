@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "阀基电子单元",
+      "type": "电力设备",
+      "desc": "换流器控制系统与晶闸管之间的接口电子单元"
+    },
+    {
+      "name": "地电位",
+      "type": "电气参数",
+      "desc": "设备所处的参考电位"
+    },
+    {
+      "name": "换流器控制系统",
+      "type": "电力系统",
+      "desc": "控制换流器运行的控制系统"
+    },
+    {
+      "name": "晶闸管",
+      "type": "电力设备",
+      "desc": "可控硅整流元件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀基电子单元处于地电位",
+      "type": "强制",
+      "subject": "阀基电子单元",
+      "action": "安装",
+      "condition": "在换流站内",
+      "constraint": "地电位",
+      "related_entities": [
+        "阀基电子单元",
+        "地电位"
+      ]
+    },
+    {
+      "content": "阀基电子单元是换流器控制系统与晶闸管之间的接口",
+      "type": "强制",
+      "subject": "阀基电子单元",
+      "action": "连接",
+      "condition": "在换流站内",
+      "constraint": "换流器控制系统与晶闸管",
+      "related_entities": [
+        "阀基电子单元",
+        "换流器控制系统",
+        "晶闸管"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀基电子单元",
+      "target": "地电位",
+      "type": "位于"
+    },
+    {
+      "source": "阀基电子单元",
+      "target": "换流器控制系统",
+      "type": "连接"
+    },
+    {
+      "source": "阀基电子单元",
+      "target": "晶闸管",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 262,
+      "source_row_id": "262",
+      "clause_index": 2,
+      "source_text": "阀基电子单元valvebaseelectronics，处于地电位，是换流器控制系统与晶闸管之间接口的电子单元"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.6828,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.035604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

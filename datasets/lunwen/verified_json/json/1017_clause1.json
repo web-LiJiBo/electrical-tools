@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "一次绕组",
+      "type": "电气设备",
+      "desc": "变压器的一次侧绕组"
+    },
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "电气设备绝缘材料的电阻值"
+    },
+    {
+      "name": "末屏对地",
+      "type": "电气连接",
+      "desc": "变压器末屏与地之间的电气连接方式"
+    },
+    {
+      "name": "电容型",
+      "type": "电气设备结构",
+      "desc": "变压器内部采用电容式套管的结构形式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一次绕组的绝缘电阻应大于3000MΩ，或与上次测量值对比无显著变化",
+      "type": "强制",
+      "subject": "一次绕组",
+      "action": "进行绝缘电阻测试",
+      "condition": "新安装或大修后",
+      "constraint": "绝缘电阻≥3000MΩ，或与上次测量值对比无显著变化",
+      "related_entities": [
+        "一次绕组",
+        "绝缘电阻"
+      ]
+    },
+    {
+      "content": "末屏对地（电容型）的绝缘电阻应大于1000MΩ（注意值）",
+      "type": "强制",
+      "subject": "末屏对地（电容型）",
+      "action": "进行绝缘电阻测试",
+      "condition": "新安装或大修后",
+      "constraint": "绝缘电阻≥1000MΩ",
+      "related_entities": [
+        "末屏对地",
+        "绝缘电阻",
+        "电容型"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一次绕组",
+      "target": "绝缘电阻",
+      "type": "测量对象"
+    },
+    {
+      "source": "末屏对地",
+      "target": "绝缘电阻",
+      "type": "测量对象"
+    },
+    {
+      "source": "一次绕组",
+      "target": "电容型",
+      "type": "结构组成"
+    },
+    {
+      "source": "末屏对地",
+      "target": "电容型",
+      "type": "结构组成"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1017,
+      "source_row_id": "1017",
+      "clause_index": 1,
+      "source_text": "绝缘电阻1.一次绕组：一次绕组的绝缘电阻应大于3000MΩ，或与上次测量值对比无显著变化；2.末屏对地（电容型）：＞1000MΩ（注意值）"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.7554,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.895947+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

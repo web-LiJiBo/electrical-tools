@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "出厂绝缘试验",
+      "type": "试验项目",
+      "desc": "产品出厂前的电气性能测试"
+    },
+    {
+      "name": "装配完整的间隔",
+      "type": "试验环境",
+      "desc": "GIS设备装配完成后整体状态"
+    },
+    {
+      "name": "252kV及以上设备",
+      "type": "设备等级",
+      "desc": "额定电压252kV及以上的GIS设备"
+    },
+    {
+      "name": "正负极性雷电冲击耐压试验",
+      "type": "试验项目",
+      "desc": "对GIS设备进行正负极性雷电冲击耐压试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS出厂绝缘试验宜在装配完整的间隔上进行",
+      "type": "强制",
+      "subject": "GIS出厂绝缘试验",
+      "action": "进行",
+      "condition": "装配完整的间隔",
+      "constraint": "宜在装配完整的间隔上进行",
+      "related_entities": [
+        "GIS",
+        "出厂绝缘试验",
+        "装配完整的间隔"
+      ]
+    },
+    {
+      "content": "252kV及以上设备还应进行正负极性各3次雷电冲击耐压试验",
+      "type": "强制",
+      "subject": "252kV及以上设备",
+      "action": "进行正负极性雷电冲击耐压试验",
+      "condition": "出厂绝缘试验",
+      "constraint": "正负极性各3次",
+      "related_entities": [
+        "252kV及以上设备",
+        "出厂绝缘试验",
+        "正负极性雷电冲击耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "出厂绝缘试验",
+      "type": "包含"
+    },
+    {
+      "source": "装配完整的间隔",
+      "target": "出厂绝缘试验",
+      "type": "执行环境"
+    },
+    {
+      "source": "252kV及以上设备",
+      "target": "出厂绝缘试验",
+      "type": "执行对象"
+    },
+    {
+      "source": "252kV及以上设备",
+      "target": "正负极性雷电冲击耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "出厂绝缘试验",
+      "target": "正负极性雷电冲击耐压试验",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2808,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "13e6ccf5f8abde2e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2808_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

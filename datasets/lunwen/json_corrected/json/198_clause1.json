@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "内水冷系统",
+      "type": "电力系统",
+      "desc": "电力系统中采用的内水冷冷却方式"
+    },
+    {
+      "name": "冷却塔出水温度传感器",
+      "type": "监测装置",
+      "desc": "用于监测冷却塔出水温度的传感器"
+    },
+    {
+      "name": "水冷保护",
+      "type": "保护装置",
+      "desc": "对内水冷系统进行保护的装置"
+    },
+    {
+      "name": "直流系统",
+      "type": "电力系统",
+      "desc": "电力系统中的直流供电部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内水冷系统应装设双重化的冷却塔出水温度传感器",
+      "type": "强制",
+      "subject": "内水冷系统",
+      "action": "安装双重化冷却塔出水温度传感器",
+      "condition": "内水冷系统运行期间",
+      "constraint": "双重化",
+      "related_entities": [
+        "内水冷系统",
+        "冷却塔出水温度传感器"
+      ]
+    },
+    {
+      "content": "在每套水冷保护内，冷却塔出水温度保护按二取二原则出口",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "按二取二原则出口",
+      "condition": "冷却塔出水温度保护动作时",
+      "constraint": "二取二原则",
+      "related_entities": [
+        "水冷保护",
+        "冷却塔出水温度传感器"
+      ]
+    },
+    {
+      "content": "动作后延时3秒闭锁直流系统",
+      "type": "强制",
+      "subject": "水冷保护",
+      "action": "闭锁直流系统",
+      "condition": "冷却塔出水温度保护动作时",
+      "constraint": "延时3秒",
+      "related_entities": [
+        "水冷保护",
+        "直流系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内水冷系统",
+      "target": "冷却塔出水温度传感器",
+      "type": "安装"
+    },
+    {
+      "source": "水冷保护",
+      "target": "冷却塔出水温度传感器",
+      "type": "监测"
+    },
+    {
+      "source": "水冷保护",
+      "target": "直流系统",
+      "type": "闭锁"
+    }
+  ],
+  "metadata": {
+    "pair_id": 198,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "56107e9453c991a9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\198_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

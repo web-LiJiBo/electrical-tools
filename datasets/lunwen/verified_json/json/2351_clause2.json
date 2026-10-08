@@ -1,0 +1,140 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "变电所中用于电压变换的电气设备"
+    },
+    {
+      "name": "铁心",
+      "type": "电力设备部件",
+      "desc": "变压器内部磁路的主要组成部分"
+    },
+    {
+      "name": "夹件",
+      "type": "电力设备部件",
+      "desc": "变压器铁心的支撑结构"
+    },
+    {
+      "name": "接地引下线",
+      "type": "电力设备部件",
+      "desc": "用于将变压器接地的导体"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器的外壳，内含变压器油"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备部件",
+      "desc": "变压器高压侧的绝缘装置"
+    },
+    {
+      "name": "螺栓",
+      "type": "电力设备部件",
+      "desc": "用于紧固变压器接地引下线的金属零件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器铁心、夹件的接地引下线应与油箱绝缘",
+      "type": "强制",
+      "subject": "变压器铁心、夹件的接地引下线",
+      "action": "与油箱绝缘",
+      "condition": "变压器运行期间",
+      "constraint": "绝缘材料应满足GB/T 6570-2019《电力设备绝缘材料》的要求",
+      "related_entities": [
+        "变压器",
+        "铁心",
+        "夹件",
+        "接地引下线",
+        "油箱"
+      ]
+    },
+    {
+      "content": "从装在油箱上的套管引出后一并在油箱下部与油箱螺栓连接接地",
+      "type": "强制",
+      "subject": "接地引下线",
+      "action": "与油箱螺栓连接接地",
+      "condition": "变压器安装调试阶段及运行期间",
+      "constraint": "接地电阻应不大于4Ω，且接地引下线截面应满足GB/T 11032-2000《电力系统用开关设备和控制设备》的要求",
+      "related_entities": [
+        "变压器",
+        "接地引下线",
+        "油箱",
+        "套管",
+        "螺栓"
+      ]
+    },
+    {
+      "content": "接地处应有明显的接地符号或“接地”字样",
+      "type": "强制",
+      "subject": "接地引下线",
+      "action": "设置明显的接地标识",
+      "condition": "变压器安装调试阶段及运行期间",
+      "constraint": "接地标识应符合DL/T 5161.1-2018《电气装置安装工程质量检验及评定规程 第1部分：通则》的要求",
+      "related_entities": [
+        "接地引下线",
+        "油箱"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "铁心",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "夹件",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "接地引下线",
+      "type": "包含"
+    },
+    {
+      "source": "变压器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "接地引下线",
+      "target": "油箱",
+      "type": "连接"
+    },
+    {
+      "source": "接地引下线",
+      "target": "套管",
+      "type": "连接"
+    },
+    {
+      "source": "接地引下线",
+      "target": "螺栓",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2351,
+      "source_row_id": "2351",
+      "clause_index": 2,
+      "source_text": "变压器铁心、夹件的接地引下线应与油箱绝缘，从装在油箱上的套管引出后一并在油箱下部与油箱螺栓连接接地，接地处应有明显的接地符号或“接地”字样"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.448551+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

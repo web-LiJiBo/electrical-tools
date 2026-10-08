@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "水分",
+      "type": "电力设备状态参数",
+      "desc": "绝缘油中含有的水份含量"
+    },
+    {
+      "name": "限值",
+      "type": "技术指标",
+      "desc": "对绝缘油中水分含量的限定值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油水分限值要求：≤10mg/L",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "控制水分含量",
+      "condition": "应用于电力设备中",
+      "constraint": "水分含量≤10mg/L",
+      "related_entities": [
+        "绝缘油",
+        "水分"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油",
+      "target": "水分",
+      "type": "含有"
+    },
+    {
+      "source": "水分",
+      "target": "限值",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2184,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1e2b433e2c9bb5a2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2184_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

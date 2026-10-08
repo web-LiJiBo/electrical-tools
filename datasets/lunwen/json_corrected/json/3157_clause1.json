@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "用于电力系统中支撑导线并保持电气绝缘的设备"
+    },
+    {
+      "name": "缺陷",
+      "type": "电力设备缺陷",
+      "desc": "电力设备在运行过程中出现的异常状态"
+    },
+    {
+      "name": "面积",
+      "type": "物理量",
+      "desc": "缺陷覆盖的区域大小"
+    },
+    {
+      "name": "深度",
+      "type": "物理量",
+      "desc": "缺陷的垂直高度"
+    },
+    {
+      "name": "合模缝",
+      "type": "缺陷类型",
+      "desc": "绝缘子制造过程中模具接缝处的缺陷"
+    }
+  ],
+  "rules": [
+    {
+      "content": "不允许有面积大于25mm2或深度大于1mm的表面缺陷",
+      "type": "强制",
+      "subject": "绝缘子",
+      "action": "安装、检修",
+      "condition": "绝缘子表面存在缺陷",
+      "constraint": "缺陷总面积不得超过绝缘子总表面积的0.2%，缺陷深度不得超过1mm",
+      "related_entities": [
+        "绝缘子",
+        "缺陷",
+        "面积",
+        "深度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘子",
+      "target": "缺陷",
+      "type": "包含"
+    },
+    {
+      "source": "缺陷",
+      "target": "面积",
+      "type": "属性"
+    },
+    {
+      "source": "缺陷",
+      "target": "深度",
+      "type": "属性"
+    },
+    {
+      "source": "绝缘子",
+      "target": "合模缝",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3157,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0814dfbde66bfe42",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3157_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

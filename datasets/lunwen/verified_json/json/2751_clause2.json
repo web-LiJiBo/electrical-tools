@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "噪声水平",
+      "type": "技术参数",
+      "desc": "设备运行时产生的噪声大小"
+    },
+    {
+      "name": "GIS断路器",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备中的断路器"
+    },
+    {
+      "name": "机器操动机构",
+      "type": "电力设备部件",
+      "desc": "断路器的机械操作机构"
+    },
+    {
+      "name": "户内",
+      "type": "环境",
+      "desc": "室内环境"
+    },
+    {
+      "name": "户外",
+      "type": "环境",
+      "desc": "室外环境"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在距GIS断路器机器操动机构水平距离2m，对地高1.2m处噪声：户内不大于90dB，户外不大于110dB。",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "运行",
+      "condition": "在距GIS断路器机器操动机构水平距离2m，对地高1.2m处",
+      "constraint": "户内不大于90dB，户外不大于110dB",
+      "related_entities": [
+        "断路器",
+        "噪声水平",
+        "GIS断路器",
+        "机器操动机构",
+        "户内",
+        "户外"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "噪声水平",
+      "type": "产生"
+    },
+    {
+      "source": "GIS断路器",
+      "target": "断路器",
+      "type": "包含"
+    },
+    {
+      "source": "机器操动机构",
+      "target": "断路器",
+      "type": "组成部件"
+    },
+    {
+      "source": "户内",
+      "target": "环境",
+      "type": "所属环境"
+    },
+    {
+      "source": "户外",
+      "target": "环境",
+      "type": "所属环境"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2742,
+      "source_row_id": "2751",
+      "clause_index": 2,
+      "source_text": "断路器噪声水平：在距GIS断路器机器操动机构水平距离2m，对地高1.2m处噪声：户内不大于90dB，户外不大于110dB。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.935315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

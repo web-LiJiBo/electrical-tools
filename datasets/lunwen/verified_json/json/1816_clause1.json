@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "对最小空气间隙的要求：a）单纯以空气作为绝缘介质的开关柜，相间和相对地的最小空气间隙应满足下列要求。1）12kV：相间和相对地125mm，带电体至门155mm。2）40.5kV：相间和相对地300mm，带电体至门330mm。b）以空气和绝缘隔板组成的复合绝缘作为绝缘介质的开关柜，绝缘隔板应选用耐电弧、耐高温、阻燃、低毒、不吸潮且具有优良机械强度和电气绝缘性能的材料。带电体与绝缘板之间的最小空气间隙应满足下述要求：1）对12kV设备不应小于30mm。2）对40.5kV设备不应小于60mm",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1816,
+      "source_row_id": "1816",
+      "clause_index": 1,
+      "source_text": "对最小空气间隙的要求：a）单纯以空气作为绝缘介质的开关柜，相间和相对地的最小空气间隙应满足下列要求。1）12kV：相间和相对地125mm，带电体至门155mm。2）40.5kV：相间和相对地300mm，带电体至门330mm。b）以空气和绝缘隔板组成的复合绝缘作为绝缘介质的开关柜，绝缘隔板应选用耐电弧、耐高温、阻燃、低毒、不吸潮且具有优良机械强度和电气绝缘性能的材料。带电体与绝缘板之间的最小空气间隙应满足下述要求：1）对12kV设备不应小于30mm。2）对40.5kV设备不应小于60mm"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:00.796968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

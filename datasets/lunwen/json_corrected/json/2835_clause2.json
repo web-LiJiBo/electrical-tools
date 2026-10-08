@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "主循环泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送冷却水的泵"
+    },
+    {
+      "name": "喷淋泵",
+      "type": "设备",
+      "desc": "电力系统中用于喷淋冷却水的泵"
+    },
+    {
+      "name": "轴承",
+      "type": "部件",
+      "desc": "主循环泵和喷淋泵的关键部件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主循环和喷淋泵应能稳定、安全、经济地连续运行",
+      "type": "强制",
+      "subject": "主循环泵和喷淋泵",
+      "action": "连续运行",
+      "condition": "在使用范围内",
+      "constraint": "稳定、安全、经济",
+      "related_entities": [
+        "主循环泵",
+        "喷淋泵"
+      ]
+    },
+    {
+      "content": "主循环泵和喷淋泵轴承设计使用寿命L10不低于131000h",
+      "type": "强制",
+      "subject": "主循环泵和喷淋泵轴承",
+      "action": "设计使用寿命",
+      "condition": "在使用范围内",
+      "constraint": "L10≥131000h",
+      "related_entities": [
+        "主循环泵",
+        "喷淋泵"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主循环泵",
+      "target": "轴承",
+      "type": "包含"
+    },
+    {
+      "source": "喷淋泵",
+      "target": "轴承",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2835,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "08f4c447a29b91d2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2835_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

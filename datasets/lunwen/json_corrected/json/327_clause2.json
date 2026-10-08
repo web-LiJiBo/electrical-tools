@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送和分配电能的设备"
+    },
+    {
+      "name": "过热保护",
+      "type": "保护装置",
+      "desc": "当主泵温度超过设定值时，发出信号或切断电源的保护装置"
+    },
+    {
+      "name": "报警",
+      "type": "操作",
+      "desc": "通过声光等方式提醒运行人员注意的信号"
+    },
+    {
+      "name": "跳闸",
+      "type": "操作",
+      "desc": "切断主泵电源，停止其运行的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵过热保护应只投报警，不投跳闸",
+      "type": "强制",
+      "subject": "主泵过热保护",
+      "action": "投入",
+      "condition": "主泵运行过程中出现过热现象",
+      "constraint": "仅报警，不跳闸",
+      "related_entities": [
+        "主泵",
+        "过热保护",
+        "报警",
+        "跳闸"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "过热保护",
+      "type": "配置"
+    },
+    {
+      "source": "过热保护",
+      "target": "报警",
+      "type": "触发"
+    },
+    {
+      "source": "过热保护",
+      "target": "跳闸",
+      "type": "触发"
+    }
+  ],
+  "metadata": {
+    "pair_id": 327,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "08c65ff2b612b5e1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\327_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

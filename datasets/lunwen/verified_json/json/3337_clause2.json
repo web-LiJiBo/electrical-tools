@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "工井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设工程中用于电缆进出的构筑物"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电能的导体组合件"
+    },
+    {
+      "name": "坠落物体",
+      "type": "危险因素",
+      "desc": "可能从高处坠落的物体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工井正下方的电缆，宜采取防止坠落物体打击的保护措施。",
+      "type": "强制",
+      "subject": "工井正下方的电缆",
+      "action": "采取防止坠落物体打击的保护措施",
+      "condition": "工井正下方存在电缆",
+      "constraint": "无",
+      "related_entities": [
+        "工井",
+        "电缆",
+        "坠落物体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "工井",
+      "target": "电缆",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆",
+      "target": "坠落物体",
+      "type": "受保护对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3328,
+      "source_row_id": "3337",
+      "clause_index": 2,
+      "source_text": "工井正下方的电缆，宜采取防止坠落物体打击的保护措施。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.663367+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

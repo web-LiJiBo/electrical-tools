@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "气体湿度",
+      "type": "电力设备状态参数",
+      "desc": "电力设备中气体的湿度值"
+    },
+    {
+      "name": "额定压力",
+      "type": "电力设备运行参数",
+      "desc": "电力设备在正常工作状态下应保持的压力值"
+    },
+    {
+      "name": "气体",
+      "type": "电力设备介质",
+      "desc": "电力设备内部填充的气体介质"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体湿度应在充入额定压力的气体至少五天后进行检查",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "检查气体湿度",
+      "condition": "电力设备充入额定压力的气体",
+      "constraint": "至少五天后",
+      "related_entities": [
+        "气体湿度",
+        "额定压力",
+        "气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体湿度",
+      "target": "气体",
+      "type": "检测对象"
+    },
+    {
+      "source": "气体湿度",
+      "target": "额定压力",
+      "type": "检测条件"
+    },
+    {
+      "source": "气体",
+      "target": "额定压力",
+      "type": "检测对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3240,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3548f5e4b8ef7293",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3240_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

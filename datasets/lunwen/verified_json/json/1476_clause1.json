@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "等效声级Leq",
+      "type": "物理量",
+      "desc": "规定测量时间内A级计权网络测得的声压级能量平均值"
+    },
+    {
+      "name": "GB3096",
+      "type": "标准",
+      "desc": "中国国家标准，关于声环境质量标准"
+    },
+    {
+      "name": "GB/T1094.10",
+      "type": "标准",
+      "desc": "中国国家标准，关于电力变压器的试验方法和参数"
+    },
+    {
+      "name": "GB12348《工业企业厂界环境噪声排放标准》",
+      "type": "标准",
+      "desc": "中国国家标准，关于工业企业厂界环境噪声排放限值"
+    },
+    {
+      "name": "额定分接电流",
+      "type": "电气参数",
+      "desc": "变压器在额定运行状态下的电流值"
+    },
+    {
+      "name": "励磁噪声",
+      "type": "噪声类型",
+      "desc": "变压器在空载状态下产生的噪声"
+    },
+    {
+      "name": "负载噪声",
+      "type": "噪声类型",
+      "desc": "变压器在带负载状态下产生的噪声"
+    },
+    {
+      "name": "环保要求",
+      "type": "要求",
+      "desc": "对噪声排放的环境保护要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器的噪声应在额定分接电流下测量变压器励磁噪声和负载噪声的合成噪声",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "测量噪声",
+      "condition": "额定分接电流下",
+      "constraint": "励磁噪声+负载噪声",
+      "related_entities": [
+        "额定分接电流",
+        "励磁噪声",
+        "负载噪声"
+      ]
+    },
+    {
+      "content": "变压器噪声满足GB12348《工业企业厂界环境噪声排放标准》Ⅲ类以下等级的环保要求",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "噪声排放",
+      "condition": "GB12348《工业企业厂界环境噪声排放标准》",
+      "constraint": "Ⅲ类以下等级",
+      "related_entities": [
+        "GB12348《工业企业厂界环境噪声排放标准》",
+        "环保要求"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "等效声级Leq",
+      "target": "GB3096",
+      "type": "定义依据"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "GB/T1094.10",
+      "type": "测量依据"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "额定分接电流",
+      "type": "测量条件"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "励磁噪声",
+      "type": "组成成分"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "负载噪声",
+      "type": "组成成分"
+    },
+    {
+      "source": "等效声级Leq",
+      "target": "环保要求",
+      "type": "合规要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1476,
+      "source_row_id": "1476",
+      "clause_index": 1,
+      "source_text": "噪声：等效声级Leq是指在规定测量时间内用A级计权网络测得的声压级的能量平均值，是GB3096的指定计量单位。GB/T1094.10规定变压器的噪声应在额定分接电流下测量变压器励磁噪声和负载噪声的合成噪声，变压器噪声满足GB12348《工业企业厂界环境噪声排放标准》Ⅲ类以下等级的环保要求，用户可根据具体变电站的环保要求提出更高要求值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.422547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

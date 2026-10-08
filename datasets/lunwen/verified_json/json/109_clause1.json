@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "箱式变电站",
+      "type": "电力设备",
+      "desc": "一种将高压开关设备、变压器、低压开关设备等组合在一起的成套配电装置"
+    },
+    {
+      "name": "施工用电",
+      "type": "用电类型",
+      "desc": "临时性的用电需求，通常用于建筑施工等场合"
+    },
+    {
+      "name": "暂时用电",
+      "type": "用电类型",
+      "desc": "非永久性的用电需求，如临时活动、展会等"
+    },
+    {
+      "name": "架空线路入地改造",
+      "type": "工程类型",
+      "desc": "将架空线路改造为地下电缆线路的工程"
+    },
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "安装有高低压配电设备的建筑物或房间"
+    },
+    {
+      "name": "扩容改造",
+      "type": "工程类型",
+      "desc": "对现有电力设施进行增容或升级的工程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "箱式变电站一般用于施工用电、暂时用电场合、架空线路入地改造地区，以及现有配电室无法扩容改造的场所",
+      "type": "强制",
+      "subject": "箱式变电站",
+      "action": "使用",
+      "condition": "施工用电、暂时用电场合、架空线路入地改造地区，以及现有配电室无法扩容改造的场所",
+      "constraint": "无",
+      "related_entities": [
+        "箱式变电站",
+        "施工用电",
+        "暂时用电",
+        "架空线路入地改造",
+        "配电室",
+        "扩容改造"
+      ]
+    },
+    {
+      "content": "箱式变电站容量一般不超过630kVA",
+      "type": "强制",
+      "subject": "箱式变电站",
+      "action": "配置",
+      "condition": "一般情况下",
+      "constraint": "容量≤630kVA",
+      "related_entities": [
+        "箱式变电站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "箱式变电站",
+      "target": "施工用电",
+      "type": "适用于"
+    },
+    {
+      "source": "箱式变电站",
+      "target": "暂时用电",
+      "type": "适用于"
+    },
+    {
+      "source": "箱式变电站",
+      "target": "架空线路入地改造",
+      "type": "适用于"
+    },
+    {
+      "source": "箱式变电站",
+      "target": "配电室",
+      "type": "替代于"
+    },
+    {
+      "source": "箱式变电站",
+      "target": "扩容改造",
+      "type": "替代于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 109,
+      "source_row_id": "109",
+      "clause_index": 1,
+      "source_text": "箱式变电站一般用于施工用电、暂时用电场合、架空线路入地改造地区，以及现有配电室无法扩容改造的场所，容量一般不超过630kVA"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8958,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.872604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

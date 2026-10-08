@@ -1,0 +1,149 @@
+{
+  "entities": [
+    {
+      "name": "耐压试验",
+      "type": "试验",
+      "desc": "对电气设备进行耐压测试"
+    },
+    {
+      "name": "击穿放电",
+      "type": "现象",
+      "desc": "电气设备在高电压作用下发生的放电现象"
+    },
+    {
+      "name": "自恢复放电",
+      "type": "现象",
+      "desc": "放电后能自行恢复的放电现象"
+    },
+    {
+      "name": "重复试验",
+      "type": "试验",
+      "desc": "对同一设备或气隔进行多次耐压试验"
+    },
+    {
+      "name": "试验电压",
+      "type": "参数",
+      "desc": "耐压试验中施加的电压值"
+    },
+    {
+      "name": "放电气室",
+      "type": "部位",
+      "desc": "发生放电的电气设备内部空间"
+    },
+    {
+      "name": "故障部位",
+      "type": "部位",
+      "desc": "电气设备中出现故障的具体位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "如果该设备或气隔还能经受规定的试验电压，则该放电为自恢复放电，认为耐压试验通过",
+      "type": "强制",
+      "subject": "耐压试验",
+      "action": "判定试验结果",
+      "condition": "耐压试验过程中发生击穿放电且重复试验成功",
+      "constraint": "试验电压",
+      "related_entities": [
+        "耐压试验",
+        "自恢复放电",
+        "试验电压"
+      ]
+    },
+    {
+      "content": "如果重复试验失败，则耐压试验不通过，应进一步检查",
+      "type": "强制",
+      "subject": "耐压试验",
+      "action": "判定试验结果",
+      "condition": "耐压试验过程中发生击穿放电且重复试验失败",
+      "constraint": "试验电压",
+      "related_entities": [
+        "耐压试验",
+        "试验电压"
+      ]
+    },
+    {
+      "content": "根据放电能量和放电引起的声、光、电、化学等各种效应及耐压过程中进行的其他故障诊断技术所提供的资料，综合判断放电气室",
+      "type": "强制",
+      "subject": "耐压试验",
+      "action": "判定放电气室状态",
+      "condition": "耐压试验过程中发生击穿放电",
+      "constraint": "放电能量、放电引起的声、光、电、化学效应",
+      "related_entities": [
+        "耐压试验",
+        "放电气室",
+        "放电能量"
+      ]
+    },
+    {
+      "content": "打开放电气室进行检查，确定故障部位，修复后，再进行规定的耐压试验",
+      "type": "强制",
+      "subject": "耐压试验",
+      "action": "处理故障并重新试验",
+      "condition": "耐压试验过程中发生击穿放电且未通过试验",
+      "constraint": "放电气室、故障部位",
+      "related_entities": [
+        "耐压试验",
+        "放电气室",
+        "故障部位"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "耐压试验",
+      "target": "击穿放电",
+      "type": "发生于"
+    },
+    {
+      "source": "耐压试验",
+      "target": "自恢复放电",
+      "type": "判定为"
+    },
+    {
+      "source": "耐压试验",
+      "target": "重复试验",
+      "type": "包含"
+    },
+    {
+      "source": "耐压试验",
+      "target": "试验电压",
+      "type": "施加"
+    },
+    {
+      "source": "耐压试验",
+      "target": "放电气室",
+      "type": "涉及"
+    },
+    {
+      "source": "耐压试验",
+      "target": "故障部位",
+      "type": "涉及"
+    },
+    {
+      "source": "放电气室",
+      "target": "故障部位",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 563,
+      "source_row_id": "563",
+      "clause_index": 2,
+      "source_text": "在试验过程中如果发生击穿放电，可采用下述步骤：a）进行重复试验。如果该设备或气隔还能经受规定的试验电压，则该放电为自恢复放电，认为耐压试验通过；如果重复试验失败，则耐压试验不通过，应进一步检查。b）根据放电能量和放电引起的声、光、电、化学等各种效应及耐压过程中进行的其他故障诊断技术所提供的资料，综合判断放电气室。c）打开放电气室进行检查，确定故障部位，修复后，再进行规定的耐压试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.366482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

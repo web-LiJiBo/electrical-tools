@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "额定增量电感值",
+      "type": "电气参数",
+      "desc": "电力系统中元件的额定增量电感值"
+    },
+    {
+      "name": "允许偏差",
+      "type": "技术指标",
+      "desc": "额定增量电感值允许的最大偏差范围"
+    },
+    {
+      "name": "用户",
+      "type": "主体",
+      "desc": "电力系统运行维护单位或电力用户"
+    },
+    {
+      "name": "制造单位",
+      "type": "主体",
+      "desc": "电力设备制造企业"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定增量电感值的允许偏差为0%~＋10%",
+      "type": "强制",
+      "subject": "额定增量电感值",
+      "action": "允许偏差",
+      "condition": "电力系统运行维护单位或电力用户",
+      "constraint": "0%~＋10%",
+      "related_entities": [
+        "额定增量电感值",
+        "允许偏差"
+      ]
+    },
+    {
+      "content": "用户与制造单位协商确定其他增量电感的允许偏差",
+      "type": "强制",
+      "subject": "用户",
+      "action": "与制造单位协商确定允许偏差",
+      "condition": "电力系统运行维护单位或电力用户",
+      "constraint": "协商确定",
+      "related_entities": [
+        "用户",
+        "制造单位",
+        "允许偏差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定增量电感值",
+      "target": "允许偏差",
+      "type": "包含"
+    },
+    {
+      "source": "用户",
+      "target": "额定增量电感值",
+      "type": "使用"
+    },
+    {
+      "source": "用户",
+      "target": "制造单位",
+      "type": "协商"
+    },
+    {
+      "source": "制造单位",
+      "target": "额定增量电感值",
+      "type": "提供"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2551,
+      "source_row_id": "2551",
+      "clause_index": 2,
+      "source_text": "额定增量电感值的允许偏差为0%~＋10%。用户与制造单位协商确定其他增量电感的允许偏差。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.707314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

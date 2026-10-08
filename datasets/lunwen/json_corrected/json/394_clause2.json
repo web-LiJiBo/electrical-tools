@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "用于测量电压、电流的电气设备"
+    },
+    {
+      "name": "检测",
+      "type": "电力试验",
+      "desc": "对电力设备进行性能测试"
+    },
+    {
+      "name": "投运",
+      "type": "电力运行状态",
+      "desc": "电力设备正式投入运行"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新的或大修后的66kV及以上的互感器，宜在投运后3个月内做一次检测。",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "检测",
+      "condition": "新的或大修后的66kV及以上",
+      "constraint": "投运后3个月内",
+      "related_entities": [
+        "互感器",
+        "检测"
+      ]
+    },
+    {
+      "content": "制造厂规定不取样的全密封互感器可不做检测。",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "检测",
+      "condition": "制造厂规定不取样且全密封",
+      "constraint": "无需检测",
+      "related_entities": [
+        "互感器",
+        "检测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "检测",
+      "type": "需要"
+    },
+    {
+      "source": "投运",
+      "target": "互感器",
+      "type": "状态变化"
+    }
+  ],
+  "metadata": {
+    "pair_id": 394,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "40af38f555d361a6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\394_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

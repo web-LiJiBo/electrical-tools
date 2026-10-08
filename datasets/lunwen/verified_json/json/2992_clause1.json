@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油介质损耗因数",
+      "type": "电气参数",
+      "desc": "绝缘油在特定温度下的介质损耗特性"
+    },
+    {
+      "name": "90℃",
+      "type": "温度",
+      "desc": "绝缘油介质损耗因数测试的温度条件"
+    },
+    {
+      "name": "0.007",
+      "type": "数值约束",
+      "desc": "绝缘油介质损耗因数的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油介质损耗因数（90℃）标准检修后：≤0.007",
+      "type": "强制",
+      "subject": "绝缘油介质损耗因数",
+      "action": "检修后应满足介质损耗因数要求",
+      "condition": "绝缘油介质损耗因数（90℃）",
+      "constraint": "≤0.007",
+      "related_entities": [
+        "绝缘油介质损耗因数",
+        "90℃"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油介质损耗因数",
+      "target": "90℃",
+      "type": "测试条件"
+    },
+    {
+      "source": "绝缘油介质损耗因数",
+      "target": "0.007",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2983,
+      "source_row_id": "2992",
+      "clause_index": 1,
+      "source_text": "绝缘油介质损耗因数（90℃）标准检修后：≤0.007。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.241315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

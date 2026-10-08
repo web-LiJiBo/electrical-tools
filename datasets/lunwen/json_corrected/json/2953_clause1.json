@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "链式STATCOM",
+      "type": "电力设备",
+      "desc": "一种新型的静止无功补偿装置"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "设备正常工作时的最大允许电流值"
+    },
+    {
+      "name": "1.1倍额定电流",
+      "type": "电气参数",
+      "desc": "额定电流的1.1倍"
+    },
+    {
+      "name": "1.2倍额定电流",
+      "type": "电气参数",
+      "desc": "额定电流的1.2倍"
+    }
+  ],
+  "rules": [
+    {
+      "content": "链式STATCOM在1.1倍额定电流下应能长期运行",
+      "type": "强制",
+      "subject": "链式STATCOM",
+      "action": "长期运行",
+      "condition": "在1.1倍额定电流下",
+      "constraint": "长期运行",
+      "related_entities": [
+        "链式STATCOM",
+        "额定电流"
+      ]
+    },
+    {
+      "content": "链式STATCOM在1.2倍额定电流下运行时间应不低于2s",
+      "type": "强制",
+      "subject": "链式STATCOM",
+      "action": "运行",
+      "condition": "在1.2倍额定电流下",
+      "constraint": "运行时间应不低于2s",
+      "related_entities": [
+        "链式STATCOM",
+        "额定电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "链式STATCOM",
+      "target": "额定电流",
+      "type": "依赖"
+    },
+    {
+      "source": "1.1倍额定电流",
+      "target": "额定电流",
+      "type": "倍数关系"
+    },
+    {
+      "source": "1.2倍额定电流",
+      "target": "额定电流",
+      "type": "倍数关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2953,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "aa4772fe93c529a8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2953_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

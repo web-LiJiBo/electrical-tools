@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "气体封闭压力系统",
+      "type": "设备",
+      "desc": "一种将气体封闭在特定压力下的电力设备"
+    },
+    {
+      "name": "隔室",
+      "type": "部件",
+      "desc": "气体封闭压力系统内部的独立空间"
+    },
+    {
+      "name": "SF6",
+      "type": "气体",
+      "desc": "六氟化硫气体，常用于高压开关设备中"
+    },
+    {
+      "name": "SF6混合气体",
+      "type": "气体",
+      "desc": "含有多种气体成分的SF6混合物"
+    },
+    {
+      "name": "相对漏气率",
+      "type": "参数",
+      "desc": "隔室相对于初始压力的年度泄漏量比例"
+    },
+    {
+      "name": "预期工作寿命",
+      "type": "参数",
+      "desc": "密封压力系统在正常运行条件下可维持的年限"
+    },
+    {
+      "name": "漏气率",
+      "type": "参数",
+      "desc": "密封压力系统整体的年度泄漏量比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体封闭压力系统的密封性由每个隔室的相对漏气率来规定，标准值为:对于SF6和SF6混合气体，标准值为每年0.5%和1%",
+      "type": "强制",
+      "subject": "气体封闭压力系统",
+      "action": "进行密封性测试",
+      "condition": "每年进行一次",
+      "constraint": "对于SF6，相对漏气率≤0.5%，对于SF6混合气体，相对漏气率≤1%",
+      "related_entities": [
+        "气体封闭压力系统",
+        "隔室",
+        "SF6",
+        "SF6混合气体",
+        "相对漏气率"
+      ]
+    },
+    {
+      "content": "密封压力系统的密封性能以其预期的工作寿命来表示。由制造厂规定的预期工作寿命与漏气性能有关，推荐值是20年、30年和40年。",
+      "type": "强制",
+      "subject": "密封压力系统",
+      "action": "确定预期工作寿命",
+      "condition": "在设计阶段",
+      "constraint": "推荐值为20年、30年或40年",
+      "related_entities": [
+        "密封压力系统",
+        "预期工作寿命"
+      ]
+    },
+    {
+      "content": "注：为了达到使用寿命的要求，SF6系统的漏气率应该小于每年0.1%",
+      "type": "建议",
+      "subject": "SF6系统",
+      "action": "控制漏气率",
+      "condition": "在设计和制造阶段",
+      "constraint": "漏气率<0.1%",
+      "related_entities": [
+        "SF6系统",
+        "漏气率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体封闭压力系统",
+      "target": "隔室",
+      "type": "包含"
+    },
+    {
+      "source": "气体封闭压力系统",
+      "target": "SF6",
+      "type": "使用"
+    },
+    {
+      "source": "气体封闭压力系统",
+      "target": "SF6混合气体",
+      "type": "使用"
+    },
+    {
+      "source": "气体封闭压力系统",
+      "target": "相对漏气率",
+      "type": "测量"
+    },
+    {
+      "source": "密封压力系统",
+      "target": "预期工作寿命",
+      "type": "表征"
+    },
+    {
+      "source": "密封压力系统",
+      "target": "漏气率",
+      "type": "测量"
+    },
+    {
+      "source": "SF6系统",
+      "target": "漏气率",
+      "type": "测量"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2251,
+      "source_row_id": "2251",
+      "clause_index": 1,
+      "source_text": "气体封闭压力系统的密封性由每个隔室的相对漏气率来规定，标准值为:对于SF6和SF6混合气体，标准值为每年0.5%和1%”；第5.15.4条规定，“密封压力系统的密封性能以其预期的工作寿命来表示。由制造厂规定的预期工作寿命与漏气性能有关，推荐值是20年、30年和40年。注：为了达到使用寿命的要求，SF6系统的漏气率应该小于每年0.1%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.326549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

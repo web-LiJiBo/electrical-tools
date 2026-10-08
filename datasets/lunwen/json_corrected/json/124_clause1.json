@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "干式变压器",
+      "type": "电力设备",
+      "desc": "一种不使用油作为绝缘介质的变压器"
+    },
+    {
+      "name": "室内",
+      "type": "安装环境",
+      "desc": "变压器安装在室内的环境"
+    },
+    {
+      "name": "墙壁",
+      "type": "建筑结构",
+      "desc": "建筑物内部的墙体结构"
+    },
+    {
+      "name": "外廓",
+      "type": "设备尺寸",
+      "desc": "变压器外部轮廓尺寸"
+    }
+  ],
+  "rules": [
+    {
+      "content": "设置于室内无外壳干式变压器，其外廓与四周墙壁的净距不应小于600mm。",
+      "type": "强制",
+      "subject": "干式变压器",
+      "action": "安装",
+      "condition": "室内无外壳干式变压器",
+      "constraint": "外廓与四周墙壁的净距不应小于600mm",
+      "related_entities": [
+        "干式变压器",
+        "室内",
+        "墙壁"
+      ]
+    },
+    {
+      "content": "干式变压器之间的距离不应小于1000mm，并应满足巡视检修的要求。",
+      "type": "强制",
+      "subject": "干式变压器",
+      "action": "安装",
+      "condition": "干式变压器之间",
+      "constraint": "距离不应小于1000mm，且满足巡视检修要求",
+      "related_entities": [
+        "干式变压器",
+        "干式变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "干式变压器",
+      "target": "墙壁",
+      "type": "距离"
+    },
+    {
+      "source": "干式变压器",
+      "target": "干式变压器",
+      "type": "间距"
+    }
+  ],
+  "metadata": {
+    "pair_id": 124,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8d163f6dd2b3cdb4",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\124_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

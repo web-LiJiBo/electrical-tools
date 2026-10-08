@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "交流试验电压",
+      "type": "试验参数",
+      "desc": "交流耐压试验中使用的电压值"
+    },
+    {
+      "name": "出厂试验电压",
+      "type": "试验参数",
+      "desc": "产品出厂时进行交流耐压试验所施加的电压值"
+    },
+    {
+      "name": "现场交流耐压试验",
+      "type": "试验项目",
+      "desc": "在实际运行场所进行的交流耐压试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场交流耐压试验应为出厂试验时施加电压的80%",
+      "type": "强制",
+      "subject": "现场交流耐压试验",
+      "action": "施加电压",
+      "condition": "在实际运行场所进行的交流耐压试验",
+      "constraint": "交流试验电压值为出厂试验电压值的80%",
+      "related_entities": [
+        "交流试验电压",
+        "出厂试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂试验电压",
+      "target": "交流试验电压",
+      "type": "参考依据"
+    },
+    {
+      "source": "现场交流耐压试验",
+      "target": "交流试验电压",
+      "type": "执行对象"
+    },
+    {
+      "source": "现场交流耐压试验",
+      "target": "出厂试验电压",
+      "type": "参照标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 904,
+      "source_row_id": "904",
+      "clause_index": 2,
+      "source_text": "交流试验电压值：现场交流耐压试验应为出厂试验时施加电压的80%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9722,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.766080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

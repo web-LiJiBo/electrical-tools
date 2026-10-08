@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "GB/T11022-2011",
+      "type": "标准",
+      "desc": "高压开关设备和控制设备"
+    },
+    {
+      "name": "6.5",
+      "type": "章节",
+      "desc": "开关设备和控制设备的环境条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GB/T11022-2011的6.5适用",
+      "type": "强制",
+      "subject": "高压开关设备和控制设备制造商及使用者",
+      "action": "遵循标准规定",
+      "condition": "适用于所有高压开关设备和控制设备的设计、制造、安装、运行和维护",
+      "constraint": "必须满足6.5章节规定的环境条件要求",
+      "related_entities": [
+        "GB/T11022-2011",
+        "6.5"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GB/T11022-2011",
+      "target": "6.5",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 920,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7d096f583fc5018c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\920_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

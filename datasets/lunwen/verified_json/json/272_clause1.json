@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "最大过负荷电流",
+      "type": "电力参数",
+      "desc": "系统或设备在最大过负荷情况下的电流值"
+    },
+    {
+      "name": "地面任意点最大跨步电位差",
+      "type": "电力参数",
+      "desc": "人员在地面行走时，两脚之间产生的最大电位差"
+    },
+    {
+      "name": "允许值",
+      "type": "电力参数",
+      "desc": "根据安全标准规定的最大跨步电位差限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在最大过负荷电流下，地面任意点最大跨步电位差不得大于其允许值",
+      "type": "强制",
+      "subject": "电力系统设计与运行人员",
+      "action": "确保跨步电位差不超过允许值",
+      "condition": "电力系统处于最大过负荷电流状态",
+      "constraint": "地面任意点最大跨步电位差≤允许值",
+      "related_entities": [
+        "最大过负荷电流",
+        "地面任意点最大跨步电位差",
+        "允许值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最大过负荷电流",
+      "target": "地面任意点最大跨步电位差",
+      "type": "影响"
+    },
+    {
+      "source": "地面任意点最大跨步电位差",
+      "target": "允许值",
+      "type": "比较"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 272,
+      "source_row_id": "272",
+      "clause_index": 1,
+      "source_text": "在最大过负荷电流下，地面任意点最大跨步电位差不得大于其允许值；"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.045604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

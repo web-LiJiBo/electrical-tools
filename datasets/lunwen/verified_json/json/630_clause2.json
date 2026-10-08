@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "容性电流开合试验",
+      "type": "试验项目",
+      "desc": "电力系统中对设备进行的容性电流开合能力测试"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中的输电线路组成部分"
+    },
+    {
+      "name": "试验室",
+      "type": "试验环境",
+      "desc": "进行电力设备试验的场所"
+    },
+    {
+      "name": "10A",
+      "type": "电流值",
+      "desc": "电缆充电电流值"
+    },
+    {
+      "name": "1.4*12/1.732kV",
+      "type": "电压值",
+      "desc": "试验电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在试验室内进行容性电流开合试验时，电缆充电电流应为10A",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "进行容性电流开合试验",
+      "condition": "试验室内",
+      "constraint": "电缆充电电流为10A",
+      "related_entities": [
+        "容性电流开合试验",
+        "电缆"
+      ]
+    },
+    {
+      "content": "在试验室内进行容性电流开合试验时，试验电压应为1.4倍额定电压除以根号三",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "进行容性电流开合试验",
+      "condition": "试验室内",
+      "constraint": "试验电压1.4*12/1.732kV",
+      "related_entities": [
+        "容性电流开合试验",
+        "电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "容性电流开合试验",
+      "target": "电缆",
+      "type": "试验对象"
+    },
+    {
+      "source": "容性电流开合试验",
+      "target": "试验室",
+      "type": "试验环境"
+    },
+    {
+      "source": "电缆",
+      "target": "试验室",
+      "type": "试验地点"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 630,
+      "source_row_id": "630",
+      "clause_index": 2,
+      "source_text": "容性电流开合试验(试验室)，电缆充电电流为10A，试验电压1.4*12/1.732kV"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.4493,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.450482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

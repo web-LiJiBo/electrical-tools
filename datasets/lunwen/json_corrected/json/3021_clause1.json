@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "测量重复性",
+      "type": "技术指标",
+      "desc": "测量结果的一致性"
+    },
+    {
+      "name": "A级装置",
+      "type": "设备等级",
+      "desc": "精度较高的测量装置"
+    },
+    {
+      "name": "B级装置",
+      "type": "设备等级",
+      "desc": "精度中等的测量装置"
+    },
+    {
+      "name": "C级装置",
+      "type": "设备等级",
+      "desc": "精度较低的测量装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测量重复性A级装置的测量重复性不大于3%，B级与C级装置的测量重复性不大于5%",
+      "type": "强制",
+      "subject": "测量装置",
+      "action": "进行测量",
+      "condition": "在相同条件下对同一被测量进行多次测量",
+      "constraint": "A级装置≤3%，B级装置≤5%，C级装置≤5%",
+      "related_entities": [
+        "测量重复性",
+        "A级装置",
+        "B级装置",
+        "C级装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "测量重复性",
+      "target": "A级装置",
+      "type": "适用于"
+    },
+    {
+      "source": "测量重复性",
+      "target": "B级装置",
+      "type": "适用于"
+    },
+    {
+      "source": "测量重复性",
+      "target": "C级装置",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3021,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e7958ede1b80823c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3021_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

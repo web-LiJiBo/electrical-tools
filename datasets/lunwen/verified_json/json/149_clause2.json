@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "电力系统中用于分配电能的场所"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "用于改变交流电压的电气设备"
+    },
+    {
+      "name": "单台变压器容量",
+      "type": "技术参数",
+      "desc": "单台变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电室内单台变压器容量不宜超过1000kVA",
+      "type": "强制",
+      "subject": "配电室",
+      "action": "安装变压器",
+      "condition": "新建或改造配电室",
+      "constraint": "单台变压器容量≤1000kVA",
+      "related_entities": [
+        "配电室",
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电室",
+      "target": "变压器",
+      "type": "安装于"
+    },
+    {
+      "source": "单台变压器容量",
+      "target": "变压器",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 149,
+      "source_row_id": "149",
+      "clause_index": 2,
+      "source_text": "配电室内单台变压器容量不宜超过1000kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.914600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

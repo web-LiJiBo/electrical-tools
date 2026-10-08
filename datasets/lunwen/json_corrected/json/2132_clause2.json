@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "最大日温差",
+      "type": "运行参数",
+      "desc": "电力设备在正常运行条件下，一天内温度的最大变化量"
+    },
+    {
+      "name": "32K",
+      "type": "数值约束",
+      "desc": "电力设备在正常运行条件下，一天内允许的最大温度变化量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "正常使用条件——最大日温差32K",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "运行",
+      "condition": "电力设备在正常运行条件下",
+      "constraint": "最大日温差≤32K",
+      "related_entities": [
+        "最大日温差",
+        "32K"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最大日温差",
+      "target": "32K",
+      "type": "约束"
+    },
+    {
+      "source": "电力设备",
+      "target": "最大日温差",
+      "type": "属性"
+    },
+    {
+      "source": "电力设备",
+      "target": "32K",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2132,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "da49b8e367bd5bd9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2132_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

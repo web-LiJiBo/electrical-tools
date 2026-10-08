@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "电压互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电压的电气设备"
+    },
+    {
+      "name": "乙炔",
+      "type": "气体成分",
+      "desc": "一种可燃性气体，化学式C2H2"
+    },
+    {
+      "name": "220kV",
+      "type": "电压等级",
+      "desc": "220千伏电压等级"
+    },
+    {
+      "name": "330kV",
+      "type": "电压等级",
+      "desc": "330千伏电压等级"
+    },
+    {
+      "name": "3µL/L",
+      "type": "浓度单位",
+      "desc": "每升气体中含有的乙炔体积微升数"
+    },
+    {
+      "name": "2µL/L",
+      "type": "浓度单位",
+      "desc": "每升气体中含有的乙炔体积微升数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电压互感器220kV及以下：乙炔≤3µL/L",
+      "type": "强制",
+      "subject": "电压互感器",
+      "action": "运行维护",
+      "condition": "220kV及以下电压等级",
+      "constraint": "乙炔含量≤3µL/L",
+      "related_entities": [
+        "电压互感器",
+        "乙炔"
+      ]
+    },
+    {
+      "content": "330kV及以上：乙炔≤2µL/L",
+      "type": "强制",
+      "subject": "电压互感器",
+      "action": "运行维护",
+      "condition": "330kV及以上电压等级",
+      "constraint": "乙炔含量≤2µL/L",
+      "related_entities": [
+        "电压互感器",
+        "乙炔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电压互感器",
+      "target": "乙炔",
+      "type": "检测指标"
+    },
+    {
+      "source": "220kV",
+      "target": "电压互感器",
+      "type": "适用范围"
+    },
+    {
+      "source": "330kV",
+      "target": "电压互感器",
+      "type": "适用范围"
+    },
+    {
+      "source": "3µL/L",
+      "target": "乙炔",
+      "type": "浓度限制"
+    },
+    {
+      "source": "2µL/L",
+      "target": "乙炔",
+      "type": "浓度限制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3052,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d78bb4acd269af6c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3052_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

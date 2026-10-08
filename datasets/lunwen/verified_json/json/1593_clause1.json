@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "变压器油箱",
+      "type": "电力设备",
+      "desc": "一种用于储存变压器油的密封容器"
+    },
+    {
+      "name": "试验压力",
+      "type": "技术参数",
+      "desc": "变压器油箱在进行密封性测试时所施加的压力值"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "变压器油箱内填充的气体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内部充有气体的密封式变压器油箱的试验压力为100kPa",
+      "type": "强制",
+      "subject": "变压器油箱",
+      "action": "进行密封性测试",
+      "condition": "变压器油箱内部充有气体",
+      "constraint": "试验压力为100kPa",
+      "related_entities": [
+        "变压器油箱",
+        "试验压力",
+        "气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器油箱",
+      "target": "试验压力",
+      "type": "包含"
+    },
+    {
+      "source": "变压器油箱",
+      "target": "气体",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1593,
+      "source_row_id": "1593",
+      "clause_index": 1,
+      "source_text": "内部充有气体的密封式变压器油箱的试验压力为100kPa"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.548161+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

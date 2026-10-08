@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器的储油容器"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "变压器油箱内填充的气体"
+    },
+    {
+      "name": "非晶油变油箱",
+      "type": "电力设备",
+      "desc": "一种特殊的变压器油箱"
+    },
+    {
+      "name": "油面",
+      "type": "电力设备部件",
+      "desc": "变压器油箱内的油面位置"
+    },
+    {
+      "name": "试验压力",
+      "type": "测试参数",
+      "desc": "油箱承受的压力值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油箱内部充有气体的密封式非晶油变油箱，油面上部应承受的试验压力为60kPa",
+      "type": "强制",
+      "subject": "非晶油变油箱",
+      "action": "承受试验压力",
+      "condition": "油箱内部充有气体且为密封式",
+      "constraint": "试验压力为60kPa",
+      "related_entities": [
+        "油箱",
+        "气体",
+        "非晶油变油箱",
+        "油面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油箱",
+      "target": "非晶油变油箱",
+      "type": "组成"
+    },
+    {
+      "source": "气体",
+      "target": "油箱",
+      "type": "填充物"
+    },
+    {
+      "source": "油面",
+      "target": "油箱",
+      "type": "位置"
+    },
+    {
+      "source": "非晶油变油箱",
+      "target": "油面",
+      "type": "承载"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1093,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "38eeefd9d0612a3e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1093_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

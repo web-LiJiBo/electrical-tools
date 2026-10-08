@@ -1,0 +1,168 @@
+{
+  "entities": [
+    {
+      "name": "GIS配电装置",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "外壳",
+      "type": "电力设备部件",
+      "desc": "GIS配电装置的外壳部分"
+    },
+    {
+      "name": "三相短接线",
+      "type": "电力设备部件",
+      "desc": "GIS配电装置外壳三相之间的连接线"
+    },
+    {
+      "name": "接地母线",
+      "type": "电力设备部件",
+      "desc": "用于连接GIS配电装置外壳接地线的母线"
+    },
+    {
+      "name": "感应电流",
+      "type": "电力参数",
+      "desc": "GIS配电装置外壳上产生的感应电流"
+    },
+    {
+      "name": "短路电流",
+      "type": "电力参数",
+      "desc": "GIS配电装置外壳可能承受的短路电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS配电装置宜采用多点接地方式",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "接地方式选择",
+      "condition": "无特殊要求",
+      "constraint": "多点接地",
+      "related_entities": [
+        "GIS配电装置"
+      ]
+    },
+    {
+      "content": "选用分相设备时，应设置外壳三相短接线",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "外壳三相短接线设置",
+      "condition": "选用分相设备",
+      "constraint": "设置外壳三相短接线",
+      "related_entities": [
+        "GIS配电装置",
+        "外壳",
+        "三相短接线"
+      ]
+    },
+    {
+      "content": "外壳三相短接线应在短接线上引出接地线通过接地母线接地",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "接地线引出方式",
+      "condition": "选用分相设备",
+      "constraint": "通过接地母线接地",
+      "related_entities": [
+        "GIS配电装置",
+        "外壳",
+        "三相短接线",
+        "接地母线"
+      ]
+    },
+    {
+      "content": "外壳三相短接线的截面应能承受长期通过的最大感应电流",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "三相短接线截面选择",
+      "condition": "选用分相设备",
+      "constraint": "能承受最大感应电流",
+      "related_entities": [
+        "GIS配电装置",
+        "外壳",
+        "三相短接线",
+        "感应电流"
+      ]
+    },
+    {
+      "content": "外壳三相短接线应按短路电流校验",
+      "type": "强制",
+      "subject": "GIS配电装置",
+      "action": "三相短接线校验",
+      "condition": "选用分相设备",
+      "constraint": "按短路电流校验",
+      "related_entities": [
+        "GIS配电装置",
+        "外壳",
+        "三相短接线",
+        "短路电流"
+      ]
+    },
+    {
+      "content": "铝外壳时，其短接线宜采用铝排",
+      "type": "建议",
+      "subject": "GIS配电装置",
+      "action": "三相短接线材料选择",
+      "condition": "选用分相设备且外壳为铝",
+      "constraint": "铝排",
+      "related_entities": [
+        "GIS配电装置",
+        "外壳",
+        "三相短接线"
+      ]
+    },
+    {
+      "content": "钢外壳时，其短接线宜采用铜排",
+      "type": "建议",
+      "subject": "GIS配电装置",
+      "action": "三相短接线材料选择",
+      "condition": "选用分相设备且外壳为钢",
+      "constraint": "铜排",
+      "related_entities": [
+        "GIS配电装置",
+        "外壳",
+        "三相短接线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS配电装置",
+      "target": "外壳",
+      "type": "包含"
+    },
+    {
+      "source": "外壳",
+      "target": "三相短接线",
+      "type": "包含"
+    },
+    {
+      "source": "三相短接线",
+      "target": "接地母线",
+      "type": "连接"
+    },
+    {
+      "source": "外壳",
+      "target": "感应电流",
+      "type": "产生"
+    },
+    {
+      "source": "外壳",
+      "target": "短路电流",
+      "type": "承受"
+    }
+  ],
+  "metadata": {
+    "pair_id": 973,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7be2903cfb8d9756",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\973_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

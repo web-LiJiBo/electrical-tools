@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "接地开关",
+      "type": "电力设备",
+      "desc": "一种用于接地保护的开关设备"
+    },
+    {
+      "name": "机械寿命",
+      "type": "技术参数",
+      "desc": "开关设备在机械操作下的耐久度指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔离开关和接地开关的机械寿命应不低于3000次",
+      "type": "强制",
+      "subject": "隔离开关和接地开关",
+      "action": "设计制造",
+      "condition": "应用于电力系统中",
+      "constraint": "机械寿命≥3000次",
+      "related_entities": [
+        "隔离开关",
+        "接地开关"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "机械寿命",
+      "type": "包含"
+    },
+    {
+      "source": "接地开关",
+      "target": "机械寿命",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1646,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a69eaac79d8debc0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1646_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

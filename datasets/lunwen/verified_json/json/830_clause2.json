@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "直线杆塔",
+      "type": "电力设备",
+      "desc": "架空输电线路中用于支撑导线的杆塔"
+    },
+    {
+      "name": "绝缘子串",
+      "type": "电力设备",
+      "desc": "悬挂在杆塔上用于绝缘导线与杆塔的电气设备"
+    },
+    {
+      "name": "最大偏移",
+      "type": "技术参数",
+      "desc": "绝缘子串在顺线路方向的最大位移量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直线杆塔的绝缘子串顺线路方向的最大偏移（除设计考虑的预偏外）不应大于300mm或7.5°",
+      "type": "强制",
+      "subject": "直线杆塔",
+      "action": "安装绝缘子串",
+      "condition": "直线杆塔的绝缘子串安装过程中",
+      "constraint": "最大偏移≤300mm或≤7.5°",
+      "related_entities": [
+        "直线杆塔",
+        "绝缘子串"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直线杆塔",
+      "target": "绝缘子串",
+      "type": "安装于"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "直线杆塔",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 830,
+      "source_row_id": "830",
+      "clause_index": 2,
+      "source_text": "直线杆塔的绝缘子串顺线路方向的最大偏移（除设计考虑的预偏外）不应大于300mm或7.5°"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.687084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

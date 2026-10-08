@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "同一通道",
+      "type": "电力设施",
+      "desc": "电力系统中电缆敷设的同一通道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导线"
+    },
+    {
+      "name": "电压等级",
+      "type": "电力参数",
+      "desc": "电力系统中不同等级的电压"
+    },
+    {
+      "name": "电力电缆",
+      "type": "电力设备",
+      "desc": "用于传输电力的电缆"
+    },
+    {
+      "name": "控制和信号电缆",
+      "type": "电力设备",
+      "desc": "用于传输控制信号的电缆"
+    },
+    {
+      "name": "通讯电缆",
+      "type": "电力设备",
+      "desc": "用于传输通信信号的电缆"
+    },
+    {
+      "name": "支架",
+      "type": "电力设施",
+      "desc": "电力系统中支撑电缆的结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "同一通道内电缆数量较多时，若在同一侧的多层支架上敷设，应符合以下规定：1应按电压等级由高到低的电力电缆、强电至弱电的控制和信号电缆、通讯电缆由上而下的顺序排列",
+      "type": "强制",
+      "subject": "同一通道内电缆敷设",
+      "action": "敷设电缆",
+      "condition": "同一通道内电缆数量较多且在同一侧的多层支架上敷设",
+      "constraint": "电力电缆按电压等级由高到低、强电至弱电的控制和信号电缆、通讯电缆由上而下顺序排列",
+      "related_entities": [
+        "同一通道",
+        "电缆",
+        "电压等级",
+        "电力电缆",
+        "控制和信号电缆",
+        "通讯电缆",
+        "支架"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "同一通道",
+      "target": "电缆",
+      "type": "敷设"
+    },
+    {
+      "source": "电缆",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "电力电缆",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "控制和信号电缆",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "通讯电缆",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "电缆",
+      "target": "支架",
+      "type": "敷设于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 512,
+      "source_row_id": "512",
+      "clause_index": 1,
+      "source_text": "同一通道内电缆数量较多时，若在同一侧的多层支架上敷设，应符合以下规定：1应按电压等级由高到低的电力电缆、强电至弱电的控制和信号电缆、通讯电缆由上而下的顺序排列"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.311483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

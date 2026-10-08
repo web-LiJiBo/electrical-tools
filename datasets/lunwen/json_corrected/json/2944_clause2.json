@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "绝缘底座",
+      "type": "电力设备",
+      "desc": "电力系统中用于支撑或固定电气设备的绝缘部件"
+    },
+    {
+      "name": "绝缘电阻试验",
+      "type": "试验方法",
+      "desc": "测量绝缘材料或绝缘结构的绝缘电阻值的试验方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘底座应进行绝缘电阻试验",
+      "type": "强制",
+      "subject": "绝缘底座",
+      "action": "进行绝缘电阻试验",
+      "condition": "新安装或大修后",
+      "constraint": "绝缘电阻值≥500MΩ",
+      "related_entities": [
+        "绝缘底座",
+        "绝缘电阻试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘底座",
+      "target": "绝缘电阻试验",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2944,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dfcc4933521c06f0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2944_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

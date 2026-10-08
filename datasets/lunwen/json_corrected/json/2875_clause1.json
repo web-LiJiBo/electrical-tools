@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "硅橡胶绝缘材料",
+      "type": "材料",
+      "desc": "一种用于电力设备的绝缘材料"
+    },
+    {
+      "name": "抗撕裂强度",
+      "type": "性能指标",
+      "desc": "材料抵抗撕裂的能力"
+    },
+    {
+      "name": "拉伸强度",
+      "type": "性能指标",
+      "desc": "材料在拉伸过程中承受的最大应力"
+    },
+    {
+      "name": "扯断伸长率",
+      "type": "性能指标",
+      "desc": "材料断裂时的伸长率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "硅橡胶绝缘材料抗撕裂强度（直角法）不小于10kN/m",
+      "type": "强制",
+      "subject": "硅橡胶绝缘材料",
+      "action": "使用",
+      "condition": "应用于电力设备",
+      "constraint": "抗撕裂强度≥10kN/m",
+      "related_entities": [
+        "硅橡胶绝缘材料",
+        "抗撕裂强度"
+      ]
+    },
+    {
+      "content": "硅橡胶绝缘材料拉伸强度不小于4MPa",
+      "type": "强制",
+      "subject": "硅橡胶绝缘材料",
+      "action": "使用",
+      "condition": "应用于电力设备",
+      "constraint": "拉伸强度≥4MPa",
+      "related_entities": [
+        "硅橡胶绝缘材料",
+        "拉伸强度"
+      ]
+    },
+    {
+      "content": "硅橡胶绝缘材料扯断伸长率不小于150%",
+      "type": "强制",
+      "subject": "硅橡胶绝缘材料",
+      "action": "使用",
+      "condition": "应用于电力设备",
+      "constraint": "扯断伸长率≥150%",
+      "related_entities": [
+        "硅橡胶绝缘材料",
+        "扯断伸长率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "硅橡胶绝缘材料",
+      "target": "抗撕裂强度",
+      "type": "满足"
+    },
+    {
+      "source": "硅橡胶绝缘材料",
+      "target": "拉伸强度",
+      "type": "满足"
+    },
+    {
+      "source": "硅橡胶绝缘材料",
+      "target": "扯断伸长率",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2875,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "674365440b21ac39",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2875_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

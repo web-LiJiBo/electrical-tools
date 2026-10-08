@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "现场交接试验",
+      "type": "试验",
+      "desc": "电力设备在安装或检修后进行的首次测试"
+    },
+    {
+      "name": "GB50150",
+      "type": "标准",
+      "desc": "电气装置安装工程电气设备交接试验标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场交接试验应遵循GB50150",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行交接试验",
+      "condition": "电力设备安装或检修后",
+      "constraint": "GB50150",
+      "related_entities": [
+        "现场交接试验",
+        "GB50150"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "现场交接试验",
+      "target": "GB50150",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2702,
+      "source_row_id": "2711",
+      "clause_index": 2,
+      "source_text": "现场交接试验，GB50150适用。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5781,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.882316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "拉线",
+      "type": "电力设施",
+      "desc": "用于固定电杆的钢绞线"
+    },
+    {
+      "name": "镀锌钢绞线",
+      "type": "材料",
+      "desc": "表面镀有锌层的钢绞线"
+    },
+    {
+      "name": "强度设计安全系数",
+      "type": "技术参数",
+      "desc": "设计时考虑的安全系数"
+    },
+    {
+      "name": "最小规格",
+      "type": "技术参数",
+      "desc": "最小允许的截面积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "拉线应采用镀锌钢绞线，其强度设计安全系数应不小于2，最小规格不小于35mm2",
+      "type": "强制",
+      "subject": "拉线",
+      "action": "采用",
+      "condition": "新建或改造工程",
+      "constraint": "强度设计安全系数≥2，最小规格≥35mm2",
+      "related_entities": [
+        "拉线",
+        "镀锌钢绞线",
+        "强度设计安全系数",
+        "最小规格"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "拉线",
+      "target": "镀锌钢绞线",
+      "type": "采用"
+    },
+    {
+      "source": "强度设计安全系数",
+      "target": "拉线",
+      "type": "约束"
+    },
+    {
+      "source": "最小规格",
+      "target": "拉线",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1965,
+      "source_row_id": "1965",
+      "clause_index": 1,
+      "source_text": "拉线应采用镀锌钢绞线，其强度设计安全系数应不小于2，最小规格不小于35mm2"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.969969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

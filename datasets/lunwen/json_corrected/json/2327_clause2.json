@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "低压架空线路",
+      "type": "电力设施",
+      "desc": "低压电力系统中用于架设的输电线路"
+    },
+    {
+      "name": "绝缘导线",
+      "type": "电力设备",
+      "desc": "具有绝缘层的导线，用于电力系统的架设与连接"
+    },
+    {
+      "name": "耐候铝芯交联聚乙烯绝缘导线",
+      "type": "电力设备",
+      "desc": "具备耐候性能的铝芯导线，外层采用交联聚乙烯绝缘材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "低压架空线路应采用绝缘导线，一般区域采用耐候铝芯交联聚乙烯绝缘导线",
+      "type": "强制",
+      "subject": "低压架空线路",
+      "action": "采用绝缘导线",
+      "condition": "适用于低压架空线路的架设",
+      "constraint": "一般区域采用耐候铝芯交联聚乙烯绝缘导线",
+      "related_entities": [
+        "低压架空线路",
+        "绝缘导线",
+        "耐候铝芯交联聚乙烯绝缘导线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "低压架空线路",
+      "target": "绝缘导线",
+      "type": "采用"
+    },
+    {
+      "source": "低压架空线路",
+      "target": "耐候铝芯交联聚乙烯绝缘导线",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2327,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c5c7bded044cfdd6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2327_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

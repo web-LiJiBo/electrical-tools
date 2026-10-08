@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "盆式绝缘子",
+      "type": "电力设备",
+      "desc": "用于GIS内部连接的绝缘部件"
+    },
+    {
+      "name": "金属法兰",
+      "type": "材料",
+      "desc": "具有金属材质的法兰结构"
+    },
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "特高频局放检测",
+      "type": "检测方法",
+      "desc": "一种局部放电检测技术"
+    },
+    {
+      "name": "罐体对接处",
+      "type": "电力设备部位",
+      "desc": "GIS内部罐体之间的连接部位"
+    },
+    {
+      "name": "短接排",
+      "type": "电力设备",
+      "desc": "用于电气连接的短接线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS可采用带金属法兰的盆式绝缘子，但应预留窗口便于进行特高频局放检测。",
+      "type": "强制",
+      "subject": "GIS",
+      "action": "采用带金属法兰的盆式绝缘子",
+      "condition": "防止盆式绝缘子老化和绝缘性能下降",
+      "constraint": "预留窗口便于进行特高频局放检测",
+      "related_entities": [
+        "盆式绝缘子",
+        "金属法兰",
+        "GIS",
+        "特高频局放检测"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "盆式绝缘子",
+      "target": "金属法兰",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "盆式绝缘子",
+      "type": "使用"
+    },
+    {
+      "source": "GIS",
+      "target": "罐体对接处",
+      "type": "包含"
+    },
+    {
+      "source": "罐体对接处",
+      "target": "短接排",
+      "type": "连接"
+    },
+    {
+      "source": "GIS",
+      "target": "短接排",
+      "type": "取消"
+    },
+    {
+      "source": "GIS",
+      "target": "特高频局放检测",
+      "type": "支持"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3258,
+      "source_row_id": "3267",
+      "clause_index": 1,
+      "source_text": "为防止盆式绝缘子老化和绝缘性能下降，GIS可采用带金属法兰的盆式绝缘子，但应预留窗口便于进行特高频局放检测。采用此结构的盆式绝缘子可取消罐体对接处的短接排（跨接片）。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.576363+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力传输线缆"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "铁路运输线路"
+    },
+    {
+      "name": "公路",
+      "type": "交通设施",
+      "desc": "公路运输线路"
+    },
+    {
+      "name": "城市街道",
+      "type": "交通设施",
+      "desc": "城市道路"
+    },
+    {
+      "name": "厂区道路",
+      "type": "交通设施",
+      "desc": "工厂内部道路"
+    },
+    {
+      "name": "保护管",
+      "type": "电力设备",
+      "desc": "电缆保护用管材"
+    },
+    {
+      "name": "隧道",
+      "type": "电力设备",
+      "desc": "电缆穿越障碍物的地下通道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆与铁路、公路、城市街道、厂区道路交叉时，应敷设于坚固的保护管或隧道内。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设于保护管或隧道内",
+      "condition": "电缆与铁路、公路、城市街道、厂区道路交叉时",
+      "constraint": "坚固的保护管或隧道",
+      "related_entities": [
+        "电缆",
+        "铁路",
+        "公路",
+        "城市街道",
+        "厂区道路",
+        "保护管",
+        "隧道"
+      ]
+    },
+    {
+      "content": "电缆管的两端宜伸出道路路基两边0.5m以上；",
+      "type": "强制",
+      "subject": "电缆管",
+      "action": "伸出道路路基两边0.5m以上",
+      "condition": "电缆管敷设于铁路、公路、城市街道、厂区道路交叉处",
+      "constraint": "0.5m以上",
+      "related_entities": [
+        "电缆管",
+        "铁路",
+        "公路",
+        "城市街道",
+        "厂区道路"
+      ]
+    },
+    {
+      "content": "电缆管的两端宜伸出排水沟0.5m；",
+      "type": "强制",
+      "subject": "电缆管",
+      "action": "伸出排水沟0.5m",
+      "condition": "电缆管敷设于铁路、公路、城市街道、厂区道路交叉处",
+      "constraint": "0.5m",
+      "related_entities": [
+        "电缆管",
+        "排水沟"
+      ]
+    },
+    {
+      "content": "在城市街道应伸出车道路面。",
+      "type": "强制",
+      "subject": "电缆管",
+      "action": "伸出车道路面",
+      "condition": "电缆管敷设于城市街道交叉处",
+      "constraint": "车道路面",
+      "related_entities": [
+        "电缆管",
+        "城市街道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "铁路",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "公路",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "城市街道",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "厂区道路",
+      "type": "交叉"
+    },
+    {
+      "source": "电缆",
+      "target": "保护管",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆",
+      "target": "隧道",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "铁路",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "公路",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "城市街道",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "厂区道路",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "排水沟",
+      "type": "敷设于"
+    },
+    {
+      "source": "电缆管",
+      "target": "车道路面",
+      "type": "敷设于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1369,
+      "source_row_id": "1369",
+      "clause_index": 1,
+      "source_text": "电缆与铁路、公路、城市街道、厂区道路交叉时，应敷设于坚固的保护管或隧道内。电缆管的两端宜伸出道路路基两边0.5m以上；伸出排水沟0.5m；在城市街道应伸出车道路面"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.925,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.295547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

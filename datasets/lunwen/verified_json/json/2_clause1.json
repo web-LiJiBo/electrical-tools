@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "电容量",
+      "type": "电气参数",
+      "desc": "电容器的电容值"
+    },
+    {
+      "name": "介质损耗因数",
+      "type": "电气参数",
+      "desc": "电容器在交流电压下的功率损耗特性"
+    },
+    {
+      "name": "一次绕组",
+      "type": "电气设备部件",
+      "desc": "变压器或互感器的一次侧绕组"
+    },
+    {
+      "name": "工频耐压试验",
+      "type": "试验方法",
+      "desc": "对电气设备施加工频高压以检验其绝缘性能的试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电容量和介质损耗因数测量应在一次绕组工频耐压试验后进行",
+      "type": "强制",
+      "subject": "电气设备制造与检修人员",
+      "action": "进行电容量和介质损耗因数测量",
+      "condition": "电气设备完成一次绕组工频耐压试验后",
+      "constraint": "电容量和介质损耗因数测量应在一次绕组工频耐压试验后进行",
+      "related_entities": [
+        "电容量",
+        "介质损耗因数",
+        "一次绕组",
+        "工频耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容量",
+      "target": "一次绕组",
+      "type": "测量于"
+    },
+    {
+      "source": "介质损耗因数",
+      "target": "一次绕组",
+      "type": "测量于"
+    },
+    {
+      "source": "工频耐压试验",
+      "target": "一次绕组",
+      "type": "施加于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2,
+      "source_row_id": "2",
+      "clause_index": 1,
+      "source_text": "电容量和介质损耗因数测量应在一次绕组工频耐压试验后进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.753785+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

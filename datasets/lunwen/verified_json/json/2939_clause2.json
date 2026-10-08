@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "无线电干扰电压",
+      "type": "电磁干扰",
+      "desc": "电力系统中由电磁场引起的干扰电压"
+    },
+    {
+      "name": "1.1Um/3电压",
+      "type": "电气参数",
+      "desc": "电力设备在特定试验条件下的额定电压值"
+    },
+    {
+      "name": "2500μV",
+      "type": "限值",
+      "desc": "无线电干扰电压的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1.1Um/3电压下无线电干扰电压应不超过2500μV",
+      "type": "强制",
+      "subject": "电力设备制造商与用户",
+      "action": "设计、制造、使用电力设备时应满足无线电干扰电压限值要求",
+      "condition": "电力设备在1.1Um/3电压下运行",
+      "constraint": "无线电干扰电压≤2500μV",
+      "related_entities": [
+        "无线电干扰电压",
+        "1.1Um/3电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "1.1Um/3电压",
+      "target": "无线电干扰电压",
+      "type": "影响"
+    },
+    {
+      "source": "无线电干扰电压",
+      "target": "1.1Um/3电压",
+      "type": "受控于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2930,
+      "source_row_id": "2939",
+      "clause_index": 2,
+      "source_text": "在1.1Um/3电压下无线电干扰电压应不超过2500μV。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.175315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

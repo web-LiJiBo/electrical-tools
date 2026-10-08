@@ -1,0 +1,72 @@
+{
+  "entities": [
+    {
+      "name": "钢筋混凝土电杆",
+      "type": "电力设备",
+      "desc": "用于电力系统中的输电线路的杆塔"
+    },
+    {
+      "name": "外观检查",
+      "type": "检测方法",
+      "desc": "对电力设备进行目视检查的方法"
+    },
+    {
+      "name": "杆身弯曲",
+      "type": "技术参数",
+      "desc": "电杆在竖直方向上的弯曲程度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "安装钢筋混凝土电杆前应进行外观检查，且杆身弯曲不超过2/1000",
+      "type": "强制",
+      "subject": "钢筋混凝土电杆",
+      "action": "安装前进行外观检查",
+      "condition": "电杆安装前",
+      "constraint": "杆身弯曲≤2/1000",
+      "related_entities": [
+        "钢筋混凝土电杆",
+        "外观检查"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢筋混凝土电杆",
+      "target": "外观检查",
+      "type": "需要"
+    },
+    {
+      "source": "外观检查",
+      "target": "钢筋混凝土电杆",
+      "type": "针对"
+    },
+    {
+      "source": "杆身弯曲",
+      "target": "钢筋混凝土电杆",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 723,
+      "source_row_id": "723",
+      "clause_index": 2,
+      "source_text": "安装钢筋混凝土电杆前应进行外观检查，且符合下列要求：d)杆身弯曲不超过2/1000"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.7,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.552085+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

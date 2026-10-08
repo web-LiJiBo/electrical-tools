@@ -1,0 +1,128 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "局部放电测量",
+      "type": "试验方法",
+      "desc": "检测电力设备内部局部放电现象的试验方法"
+    },
+    {
+      "name": "厂时感应电压试验(ACLD)",
+      "type": "试验方法",
+      "desc": "一种局部放电测量试验方法"
+    },
+    {
+      "name": "短时感应电压试验(ACSD)",
+      "type": "试验方法",
+      "desc": "一种局部放电测量试验方法"
+    },
+    {
+      "name": "视在电荷量",
+      "type": "试验参数",
+      "desc": "局部放电测量中反映局部放电量的参数"
+    },
+    {
+      "name": "连续水平",
+      "type": "试验参数",
+      "desc": "局部放电测量中反映局部放电稳定性的参数"
+    },
+    {
+      "name": "GB1094．3",
+      "type": "标准",
+      "desc": "局部放电测量相关国家标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在施加电压为下，变压器的视在电荷量的连续水平应不大于300pC",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行局部放电测量",
+      "condition": "厂时感应电压试验(ACLD)",
+      "constraint": "视在电荷量连续水平≤300pC",
+      "related_entities": [
+        "变压器",
+        "局部放电测量",
+        "厂时感应电压试验(ACLD)",
+        "视在电荷量",
+        "连续水平"
+      ]
+    },
+    {
+      "content": "变压器的视在电荷量的连续水平应符合GB1094．3的规定",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行局部放电测量",
+      "condition": "厂时感应电压试验(ACLD)或短时感应电压试验(ACSD)",
+      "constraint": "视在电荷量连续水平符合GB1094．3标准",
+      "related_entities": [
+        "变压器",
+        "局部放电测量",
+        "厂时感应电压试验(ACLD)",
+        "短时感应电压试验(ACSD)",
+        "视在电荷量",
+        "连续水平",
+        "GB1094．3"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "局部放电测量",
+      "type": "进行"
+    },
+    {
+      "source": "局部放电测量",
+      "target": "视在电荷量",
+      "type": "测量"
+    },
+    {
+      "source": "局部放电测量",
+      "target": "连续水平",
+      "type": "反映"
+    },
+    {
+      "source": "变压器",
+      "target": "厂时感应电压试验(ACLD)",
+      "type": "进行"
+    },
+    {
+      "source": "变压器",
+      "target": "短时感应电压试验(ACSD)",
+      "type": "进行"
+    },
+    {
+      "source": "厂时感应电压试验(ACLD)",
+      "target": "视在电荷量",
+      "type": "测量"
+    },
+    {
+      "source": "短时感应电压试验(ACSD)",
+      "target": "视在电荷量",
+      "type": "测量"
+    },
+    {
+      "source": "视在电荷量",
+      "target": "连续水平",
+      "type": "反映"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1025,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6ec6b29e80122850",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1025_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

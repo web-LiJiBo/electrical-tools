@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "耐压试验",
+      "type": "试验项目",
+      "desc": "电气设备绝缘性能测试"
+    },
+    {
+      "name": "强制试验项目",
+      "type": "试验项目",
+      "desc": "必须进行的试验项目"
+    }
+  ],
+  "rules": [
+    {
+      "content": "将该耐压试验规定为非强制试验项目",
+      "type": "强制",
+      "subject": "试验项目管理机构",
+      "action": "调整试验项目分类",
+      "condition": "适用于所有电气设备",
+      "constraint": "耐压试验不再作为强制试验项目",
+      "related_entities": [
+        "耐压试验",
+        "强制试验项目"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "耐压试验",
+      "target": "强制试验项目",
+      "type": "非强制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 687,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "246bb18c7f1da68e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\687_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

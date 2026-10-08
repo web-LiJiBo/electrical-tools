@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "罐式断路器",
+      "type": "电力设备",
+      "desc": "一种采用SF6气体作为灭弧介质的断路器"
+    },
+    {
+      "name": "现场耐压",
+      "type": "试验项目",
+      "desc": "在实际安装位置进行的耐压试验"
+    },
+    {
+      "name": "局部放电检测",
+      "type": "试验项目",
+      "desc": "检测耐压过程中产生的局部放电现象"
+    },
+    {
+      "name": "冲击耐压试验",
+      "type": "试验项目",
+      "desc": "模拟雷电冲击电压的耐压试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "严格按有关规定对新装GIS、罐式断路器进行现场耐压",
+      "type": "强制",
+      "subject": "电力设备安装单位",
+      "action": "进行现场耐压试验",
+      "condition": "新装GIS、罐式断路器",
+      "constraint": "按规定要求",
+      "related_entities": [
+        "GIS",
+        "罐式断路器",
+        "现场耐压"
+      ]
+    },
+    {
+      "content": "耐压过程中应进行局部放电检测",
+      "type": "强制",
+      "subject": "电力设备安装单位",
+      "action": "进行局部放电检测",
+      "condition": "新装GIS、罐式断路器进行现场耐压",
+      "constraint": "按规定要求",
+      "related_entities": [
+        "GIS",
+        "罐式断路器",
+        "现场耐压",
+        "局部放电检测"
+      ]
+    },
+    {
+      "content": "有条件时可对GIS设备进行现场冲击耐压试验",
+      "type": "建议",
+      "subject": "电力设备安装单位",
+      "action": "进行现场冲击耐压试验",
+      "condition": "新装GIS设备进行现场耐压",
+      "constraint": "具备相应试验条件",
+      "related_entities": [
+        "GIS",
+        "现场耐压",
+        "冲击耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "现场耐压",
+      "type": "包含"
+    },
+    {
+      "source": "罐式断路器",
+      "target": "现场耐压",
+      "type": "包含"
+    },
+    {
+      "source": "现场耐压",
+      "target": "局部放电检测",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "冲击耐压试验",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2802,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6a3289fb75c57d5e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2802_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

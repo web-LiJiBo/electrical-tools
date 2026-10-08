@@ -1,0 +1,105 @@
+{
+  "entities": [
+    {
+      "name": "气体绝缘的电流互感器",
+      "type": "设备",
+      "desc": "一种采用SF6气体作为绝缘介质的电流互感器"
+    },
+    {
+      "name": "现场老炼试验",
+      "type": "试验",
+      "desc": "对新安装的气体绝缘的电流互感器进行的老炼试验"
+    },
+    {
+      "name": "耐压试验",
+      "type": "试验",
+      "desc": "对气体绝缘的电流互感器进行的耐压测试"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验",
+      "desc": "对气体绝缘的电流互感器进行的局部放电检测"
+    },
+    {
+      "name": "出厂试验值",
+      "type": "参数",
+      "desc": "气体绝缘的电流互感器出厂时的试验电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "气体绝缘的电流互感器安装后应进行现场老炼试验",
+      "type": "强制",
+      "subject": "气体绝缘的电流互感器",
+      "action": "进行现场老炼试验",
+      "condition": "气体绝缘的电流互感器安装后",
+      "constraint": "无",
+      "related_entities": [
+        "气体绝缘的电流互感器",
+        "现场老炼试验"
+      ]
+    },
+    {
+      "content": "老炼试验后进行耐压试验，试验电压为出厂试验值的80％",
+      "type": "强制",
+      "subject": "气体绝缘的电流互感器",
+      "action": "进行耐压试验",
+      "condition": "完成现场老炼试验后",
+      "constraint": "试验电压为出厂试验值的80％",
+      "related_entities": [
+        "气体绝缘的电流互感器",
+        "耐压试验",
+        "出厂试验值"
+      ]
+    },
+    {
+      "content": "条件具152备且必要时还宜进行局部放电试验",
+      "type": "建议",
+      "subject": "气体绝缘的电流互感器",
+      "action": "进行局部放电试验",
+      "condition": "具备条件且必要时",
+      "constraint": "无",
+      "related_entities": [
+        "气体绝缘的电流互感器",
+        "局部放电试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "气体绝缘的电流互感器",
+      "target": "现场老炼试验",
+      "type": "执行"
+    },
+    {
+      "source": "气体绝缘的电流互感器",
+      "target": "耐压试验",
+      "type": "执行"
+    },
+    {
+      "source": "气体绝缘的电流互感器",
+      "target": "局部放电试验",
+      "type": "执行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 40,
+      "source_row_id": "40",
+      "clause_index": 1,
+      "source_text": "气体绝缘的电流互感器安装后应进行现场老炼试验。老炼试验后进行耐压试验，试验电压为出厂试验值的80％。条件具152备且必要时还宜进行局部放电试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.794590+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

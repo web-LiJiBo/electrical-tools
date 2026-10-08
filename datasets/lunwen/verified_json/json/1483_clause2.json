@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "乙炔",
+      "type": "气体组分",
+      "desc": "变压器油中的一种气体组分"
+    },
+    {
+      "name": "氢气",
+      "type": "气体组分",
+      "desc": "变压器油中的一种气体组分"
+    },
+    {
+      "name": "总烃",
+      "type": "气体组分",
+      "desc": "变压器油中多种烃类气体的总和"
+    },
+    {
+      "name": "220kV",
+      "type": "电压等级",
+      "desc": "电力系统中的一个电压等级"
+    },
+    {
+      "name": "330kV",
+      "type": "电压等级",
+      "desc": "电力系统中的一个电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "220kV及以下：乙炔≤2µL/L；氢气≤300µL/L；总烃≤100µL/L",
+      "type": "强制",
+      "subject": "变压器油中气体含量",
+      "action": "监测并控制",
+      "condition": "220kV及以下变压器运行状态",
+      "constraint": "乙炔≤2µL/L；氢气≤300µL/L；总烃≤100µL/L",
+      "related_entities": [
+        "乙炔",
+        "氢气",
+        "总烃",
+        "220kV"
+      ]
+    },
+    {
+      "content": "330kV及以上：乙炔≤1µL/L；氢气≤150µL/L；总烃≤100µL/L",
+      "type": "强制",
+      "subject": "变压器油中气体含量",
+      "action": "监测并控制",
+      "condition": "330kV及以上变压器运行状态",
+      "constraint": "乙炔≤1µL/L；氢气≤150µL/L；总烃≤100µL/L",
+      "related_entities": [
+        "乙炔",
+        "氢气",
+        "总烃",
+        "330kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "乙炔",
+      "target": "220kV",
+      "type": "监测对象"
+    },
+    {
+      "source": "乙炔",
+      "target": "330kV",
+      "type": "监测对象"
+    },
+    {
+      "source": "氢气",
+      "target": "220kV",
+      "type": "监测对象"
+    },
+    {
+      "source": "氢气",
+      "target": "330kV",
+      "type": "监测对象"
+    },
+    {
+      "source": "总烃",
+      "target": "220kV",
+      "type": "监测对象"
+    },
+    {
+      "source": "总烃",
+      "target": "330kV",
+      "type": "监测对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1483,
+      "source_row_id": "1483",
+      "clause_index": 2,
+      "source_text": "220kV及以下：乙炔≤2µL/L；氢气≤300µL/L；总烃≤100µL/L；330kV及以上：乙炔≤1µL/L；氢气≤150µL/L；总烃≤100µL/L"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.431069+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

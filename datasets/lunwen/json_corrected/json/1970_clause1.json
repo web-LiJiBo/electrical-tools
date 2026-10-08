@@ -1,0 +1,163 @@
+{
+  "entities": [
+    {
+      "name": "经济效益",
+      "type": "经济指标",
+      "desc": "电力系统运行带来的经济效益"
+    },
+    {
+      "name": "短路容量",
+      "type": "电气参数",
+      "desc": "电力系统发生短路时的短路电流大小"
+    },
+    {
+      "name": "网络设计",
+      "type": "设计原则",
+      "desc": "电力系统的网络结构设计原则"
+    },
+    {
+      "name": "电压等级",
+      "type": "电气参数",
+      "desc": "电力系统中不同等级的输电电压"
+    },
+    {
+      "name": "变压器容量",
+      "type": "电气参数",
+      "desc": "变压器的额定容量"
+    },
+    {
+      "name": "阻抗选择",
+      "type": "电气参数",
+      "desc": "电力系统中元件的阻抗值选取"
+    },
+    {
+      "name": "运行方式",
+      "type": "运行状态",
+      "desc": "电力系统在不同运行状态下的工作模式"
+    },
+    {
+      "name": "开断电流",
+      "type": "电气参数",
+      "desc": "断路器能够安全切断的最大短路电流"
+    },
+    {
+      "name": "热稳定电流",
+      "type": "电气参数",
+      "desc": "断路器在短路情况下允许通过的最大电流值"
+    },
+    {
+      "name": "短路水平",
+      "type": "电气参数",
+      "desc": "系统母线在发生短路时的短路电流大小"
+    },
+    {
+      "name": "表4-2",
+      "type": "技术标准",
+      "desc": "电力系统短路容量的技术标准表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "城市各级电压的短路容量应该从网络设计、电压等级、变压器容量、阻抗选择、运行方式等方面进行控制",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "控制短路容量",
+      "condition": "城市各级电压的电力系统设计",
+      "constraint": "应考虑网络设计、电压等级、变压器容量、阻抗选择、运行方式等因素",
+      "related_entities": [
+        "经济效益",
+        "短路容量",
+        "网络设计",
+        "电压等级",
+        "变压器容量",
+        "阻抗选择",
+        "运行方式"
+      ]
+    },
+    {
+      "content": "使各级电压断路器的开断电流与相关设动、热稳定电流得到配合",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "配合开断电流与热稳定电流",
+      "condition": "电力系统设计阶段",
+      "constraint": "断路器的开断电流应与相关设备的动稳定电流及热稳定电流相匹配",
+      "related_entities": [
+        "开断电流",
+        "热稳定电流",
+        "断路器"
+      ]
+    },
+    {
+      "content": "变电站内系统母线的短路水平一般不超过表4-2中的数值",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "控制短路水平",
+      "condition": "变电站内系统母线的设计",
+      "constraint": "短路水平不应超过表4-2中的规定值",
+      "related_entities": [
+        "短路水平",
+        "表4-2"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "经济效益",
+      "target": "短路容量",
+      "type": "影响因素"
+    },
+    {
+      "source": "网络设计",
+      "target": "短路容量",
+      "type": "影响因素"
+    },
+    {
+      "source": "电压等级",
+      "target": "短路容量",
+      "type": "影响因素"
+    },
+    {
+      "source": "变压器容量",
+      "target": "短路容量",
+      "type": "影响因素"
+    },
+    {
+      "source": "阻抗选择",
+      "target": "短路容量",
+      "type": "影响因素"
+    },
+    {
+      "source": "运行方式",
+      "target": "短路容量",
+      "type": "影响因素"
+    },
+    {
+      "source": "开断电流",
+      "target": "断路器",
+      "type": "属性"
+    },
+    {
+      "source": "热稳定电流",
+      "target": "断路器",
+      "type": "属性"
+    },
+    {
+      "source": "短路水平",
+      "target": "表4-2",
+      "type": "参考依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1970,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "682aad15a8413e94",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1970_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

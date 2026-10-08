@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "铁心接地电流",
+      "type": "电气参数",
+      "desc": "变压器铁心的接地电流值"
+    },
+    {
+      "name": "1000kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "300mA",
+      "type": "电流值",
+      "desc": "铁心接地电流的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1000kV运行中铁心接地电流不大于300mA",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行维护",
+      "condition": "1000kV运行中",
+      "constraint": "铁心接地电流≤300mA",
+      "related_entities": [
+        "铁心接地电流",
+        "1000kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁心接地电流",
+      "target": "1000kV",
+      "type": "适用范围"
+    },
+    {
+      "source": "铁心接地电流",
+      "target": "300mA",
+      "type": "约束条件"
+    }
+  ]
+}

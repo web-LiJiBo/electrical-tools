@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "顶层油温升",
+      "type": "电气设备参数",
+      "desc": "变压器顶层油温与环境温度之差"
+    },
+    {
+      "name": "绕组平均温升",
+      "type": "电气设备参数",
+      "desc": "变压器绕组平均温度与环境温度之差"
+    },
+    {
+      "name": "绕组热点温升",
+      "type": "电气设备参数",
+      "desc": "变压器绕组热点温度与环境温度之差"
+    },
+    {
+      "name": "油箱表面温度",
+      "type": "电气设备参数",
+      "desc": "变压器油箱表面温度与环境温度之差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器顶层油温升不应超过55K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行维护",
+      "condition": "正常运行",
+      "constraint": "顶层油温升≤55K",
+      "related_entities": [
+        "顶层油温升"
+      ]
+    },
+    {
+      "content": "变压器绕组平均温升不应超过65K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行维护",
+      "condition": "正常运行",
+      "constraint": "绕组平均温升≤65K",
+      "related_entities": [
+        "绕组平均温升"
+      ]
+    },
+    {
+      "content": "变压器绕组热点温升不应超过78K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行维护",
+      "condition": "正常运行",
+      "constraint": "绕组热点温升≤78K",
+      "related_entities": [
+        "绕组热点温升"
+      ]
+    },
+    {
+      "content": "变压器油箱表面温度不应超过80K",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行维护",
+      "condition": "正常运行",
+      "constraint": "油箱表面温度≤80K",
+      "related_entities": [
+        "油箱表面温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "顶层油温升",
+      "target": "变压器",
+      "type": "属性"
+    },
+    {
+      "source": "绕组平均温升",
+      "target": "变压器",
+      "type": "属性"
+    },
+    {
+      "source": "绕组热点温升",
+      "target": "变压器",
+      "type": "属性"
+    },
+    {
+      "source": "油箱表面温度",
+      "target": "变压器",
+      "type": "属性"
+    }
+  ]
+}

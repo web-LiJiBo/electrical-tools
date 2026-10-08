@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "测得的电阻值",
+      "type": "电气参数",
+      "desc": "实际测量得到的电阻值"
+    },
+    {
+      "name": "型式试验测得的最小电阻值",
+      "type": "电气参数",
+      "desc": "产品型式试验时测得的最小电阻值"
+    },
+    {
+      "name": "倍数",
+      "type": "系数",
+      "desc": "倍数关系，用于计算最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测得的电阻值不应超过型式试验测得的最小电阻值的1.2倍",
+      "type": "强制",
+      "subject": "测得的电阻值",
+      "action": "不应超过",
+      "condition": "在产品运行过程中",
+      "constraint": "不超过型式试验测得的最小电阻值的1.2倍",
+      "related_entities": [
+        "测得的电阻值",
+        "型式试验测得的最小电阻值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "测得的电阻值",
+      "target": "型式试验测得的最小电阻值",
+      "type": "基于"
+    },
+    {
+      "source": "测得的电阻值",
+      "target": "倍数",
+      "type": "乘积"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1239,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "871b801f1ac57cdd",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1239_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

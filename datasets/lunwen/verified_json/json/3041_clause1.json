@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "缠绕处理导线",
+      "type": "电力设备",
+      "desc": "电力系统中用于传输电能的导线"
+    },
+    {
+      "name": "损伤最严重处",
+      "type": "电力设备状态",
+      "desc": "导线损伤程度最大的位置"
+    },
+    {
+      "name": "受伤部分",
+      "type": "电力设备状态",
+      "desc": "导线损伤的部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用缠绕处理导线损伤时，其中心应位于损伤最严重处，并应将受伤部分全部覆盖。",
+      "type": "强制",
+      "subject": "电力检修人员",
+      "action": "进行导线损伤修复",
+      "condition": "导线出现损伤情况",
+      "constraint": "缠绕处理导线的中心位于损伤最严重处，受伤部分全部覆盖",
+      "related_entities": [
+        "缠绕处理导线",
+        "损伤最严重处",
+        "受伤部分"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "缠绕处理导线",
+      "target": "损伤最严重处",
+      "type": "位于"
+    },
+    {
+      "source": "缠绕处理导线",
+      "target": "受伤部分",
+      "type": "覆盖"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3032,
+      "source_row_id": "3041",
+      "clause_index": 1,
+      "source_text": "采用缠绕处理导线损伤时，其中心应位于损伤最严重处，并应将受伤部分全部覆盖。其长度不得小于100mm。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.298316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

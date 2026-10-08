@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "非开挖定向钻拖拉管",
+      "type": "电力施工设备",
+      "desc": "用于电力管道铺设的非开挖定向钻具"
+    },
+    {
+      "name": "出入口角度",
+      "type": "电力施工参数",
+      "desc": "非开挖定向钻拖拉管出入口方向与设计方向的夹角"
+    }
+  ],
+  "rules": [
+    {
+      "content": "非开挖定向钻拖拉管出入口角度不应大于15°",
+      "type": "强制",
+      "subject": "非开挖定向钻拖拉管施工过程",
+      "action": "施工",
+      "condition": "电力管道铺设过程中",
+      "constraint": "出入口角度≤15°",
+      "related_entities": [
+        "非开挖定向钻拖拉管",
+        "出入口角度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非开挖定向钻拖拉管",
+      "target": "出入口角度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2462,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2a873e1c0ec45a48",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2462_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

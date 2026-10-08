@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "电导率",
+      "type": "电气参数",
+      "desc": "材料传导电流的能力"
+    },
+    {
+      "name": "温度",
+      "type": "物理量",
+      "desc": "物体冷热程度的度量"
+    },
+    {
+      "name": "电导率限值",
+      "type": "技术指标",
+      "desc": "电导率的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "20℃时的电导率不大于0.5μS/cm。",
+      "type": "强制",
+      "subject": "材料",
+      "action": "控制电导率",
+      "condition": "在20℃条件下",
+      "constraint": "电导率≤0.5μS/cm",
+      "related_entities": [
+        "电导率",
+        "温度",
+        "电导率限值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电导率",
+      "target": "电导率限值",
+      "type": "满足"
+    },
+    {
+      "source": "温度",
+      "target": "电导率",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2810,
+      "source_row_id": "2819",
+      "clause_index": 2,
+      "source_text": "20℃时的电导率不大于0.5μS/cm。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8833,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "entity_grounding_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.024312+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

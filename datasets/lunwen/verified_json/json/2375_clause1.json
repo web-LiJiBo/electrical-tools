@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "变压器套管",
+      "type": "电力设备",
+      "desc": "变压器的套管部件"
+    },
+    {
+      "name": "电抗器套管",
+      "type": "电力设备",
+      "desc": "电抗器的套管部件"
+    },
+    {
+      "name": "主绝缘20℃时的tanδ值",
+      "type": "电气参数",
+      "desc": "变压器或电抗器套管在20℃时的介质损耗角正切值"
+    },
+    {
+      "name": "试验项目",
+      "type": "检测项目",
+      "desc": "对电力设备进行的检测项目"
+    },
+    {
+      "name": "试验周期",
+      "type": "检测周期",
+      "desc": "电力设备检测项目的周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器套管、电抗器套管的试验项目、周期和要求见表8中第2项要求：主绝缘20℃时的tanδ值不应大于0.008",
+      "type": "强制",
+      "subject": "变压器套管、电抗器套管",
+      "action": "进行试验",
+      "condition": "变压器套管、电抗器套管的试验项目、周期和要求",
+      "constraint": "主绝缘20℃时的tanδ值不应大于0.008",
+      "related_entities": [
+        "变压器套管",
+        "电抗器套管",
+        "主绝缘20℃时的tanδ值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器套管",
+      "target": "主绝缘20℃时的tanδ值",
+      "type": "检测对象"
+    },
+    {
+      "source": "电抗器套管",
+      "target": "主绝缘20℃时的tanδ值",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验项目",
+      "target": "变压器套管",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验项目",
+      "target": "电抗器套管",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验周期",
+      "target": "变压器套管",
+      "type": "检测周期"
+    },
+    {
+      "source": "试验周期",
+      "target": "电抗器套管",
+      "type": "检测周期"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2375,
+      "source_row_id": "2375",
+      "clause_index": 1,
+      "source_text": "变压器套管、电抗器套管的试验项目、周期和要求见表8中第2项要求：主绝缘20℃时的tanδ值不应大于0.008"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.975,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.478548+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "entities": [
+    {
+      "name": "地震烈度",
+      "type": "自然灾害等级",
+      "desc": "地震强度的衡量标准"
+    },
+    {
+      "name": "地面水平加速度",
+      "type": "工程参数",
+      "desc": "地震时地面水平方向的加速度值"
+    },
+    {
+      "name": "地面垂直加速度",
+      "type": "工程参数",
+      "desc": "地震时地面垂直方向的加速度值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "地震烈度9度地区，地面水平加速度4m/s2，地面垂直加速度2m/s2。",
+      "type": "强制",
+      "subject": "建筑物设计与施工",
+      "action": "抗震设防",
+      "condition": "位于地震烈度9度地区",
+      "constraint": "地面水平加速度4m/s2，地面垂直加速度2m/s2",
+      "related_entities": [
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "地震烈度8度地区，地面水平加速度2.5m/s2，地面垂直加速度1.25m/s2。",
+      "type": "强制",
+      "subject": "建筑物设计与施工",
+      "action": "抗震设防",
+      "condition": "位于地震烈度8度地区",
+      "constraint": "地面水平加速度2.5m/s2，地面垂直加速度1.25m/s2",
+      "related_entities": [
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "地震烈度7度地区，地面水平加速度2m/s2，地面垂直加速度1m/s2。",
+      "type": "强制",
+      "subject": "建筑物设计与施工",
+      "action": "抗震设防",
+      "condition": "位于地震烈度7度地区",
+      "constraint": "地面水平加速度2m/s2，地面垂直加速度1m/s2",
+      "related_entities": [
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地震烈度",
+      "target": "地面水平加速度",
+      "type": "对应关系"
+    },
+    {
+      "source": "地震烈度",
+      "target": "地面垂直加速度",
+      "type": "对应关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2718,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d27a954acfdcf9dd",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2718_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

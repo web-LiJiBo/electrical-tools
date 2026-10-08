@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "一级电缆隧道",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设高压电缆的地下通道"
+    },
+    {
+      "name": "温度监测",
+      "type": "安全监测设备",
+      "desc": "用于实时监测电缆隧道内温度变化的装置"
+    },
+    {
+      "name": "火灾报警及自动灭火",
+      "type": "消防设备",
+      "desc": "用于检测火灾并自动启动灭火装置的系统"
+    },
+    {
+      "name": "井盖监控",
+      "type": "安全监测设备",
+      "desc": "用于监控电缆隧道内井盖状态的装置"
+    },
+    {
+      "name": "视频监控",
+      "type": "安全监测设备",
+      "desc": "用于实时监控电缆隧道内环境的摄像设备"
+    },
+    {
+      "name": "防外破监测",
+      "type": "安全监测设备",
+      "desc": "用于监测电缆隧道外部破坏行为的装置"
+    },
+    {
+      "name": "沉降监测",
+      "type": "安全监测设备",
+      "desc": "用于监测电缆隧道结构沉降情况的装置"
+    },
+    {
+      "name": "水位监测",
+      "type": "安全监测设备",
+      "desc": "用于监测电缆隧道内积水情况的装置"
+    },
+    {
+      "name": "自动排水",
+      "type": "安全设备",
+      "desc": "用于自动排出电缆隧道内积水的装置"
+    },
+    {
+      "name": "门禁监控",
+      "type": "安全监测设备",
+      "desc": "用于监控电缆隧道入口门禁状态的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一级电缆隧道应配置温度监测或火灾报警及自动灭火、井盖监控、视频监控",
+      "type": "强制",
+      "subject": "一级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造",
+      "constraint": "必须配置至少一种安全监测设备",
+      "related_entities": [
+        "一级电缆隧道",
+        "温度监测",
+        "火灾报警及自动灭火",
+        "井盖监控",
+        "视频监控"
+      ]
+    },
+    {
+      "content": "可配置防外破监测、沉降监测、水位监测及自动排水、门禁监控等",
+      "type": "建议",
+      "subject": "一级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造",
+      "constraint": "根据实际需求选择配置",
+      "related_entities": [
+        "一级电缆隧道",
+        "防外破监测",
+        "沉降监测",
+        "水位监测",
+        "自动排水",
+        "门禁监控"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一级电缆隧道",
+      "target": "温度监测",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "火灾报警及自动灭火",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "井盖监控",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "视频监控",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "防外破监测",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "沉降监测",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "水位监测",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "自动排水",
+      "type": "配置"
+    },
+    {
+      "source": "一级电缆隧道",
+      "target": "门禁监控",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2450,
+      "source_row_id": "2450",
+      "clause_index": 1,
+      "source_text": "一级电缆隧道应配置温度监测或火灾报警及自动灭火、井盖监控、视频监控；可配置防外破监测、沉降监测、水位监测及自动排水、门禁监控等。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.578313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "终端支架",
+      "type": "电力设备",
+      "desc": "用于固定电缆终端的支撑结构"
+    },
+    {
+      "name": "型钢",
+      "type": "材料",
+      "desc": "一种截面形状为特定几何图形的钢材"
+    },
+    {
+      "name": "户外终端支架",
+      "type": "电力设备",
+      "desc": "安装在室外环境下的终端支架"
+    },
+    {
+      "name": "单芯电缆",
+      "type": "电力电缆",
+      "desc": "由一根导体和绝缘层组成的电缆"
+    },
+    {
+      "name": "接地网",
+      "type": "电力系统",
+      "desc": "用于将电气设备接地的金属网状结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "终端支架必须坚固耐用，符合工程防火和防腐蚀要求。以型钢制成的户外终端支架应热浸镀锌。",
+      "type": "强制",
+      "subject": "终端支架",
+      "action": "设计制造",
+      "condition": "户外环境",
+      "constraint": "坚固耐用、防火防腐蚀、热浸镀锌",
+      "related_entities": [
+        "终端支架",
+        "型钢"
+      ]
+    },
+    {
+      "content": "单芯电缆的终端支架不得构成铁磁回路。",
+      "type": "强制",
+      "subject": "终端支架",
+      "action": "设计制造",
+      "condition": "单芯电缆",
+      "constraint": "不构成铁磁回路",
+      "related_entities": [
+        "终端支架",
+        "单芯电缆"
+      ]
+    },
+    {
+      "content": "终端支架必须与接地网可靠连接。",
+      "type": "强制",
+      "subject": "终端支架",
+      "action": "安装",
+      "condition": "所有终端支架",
+      "constraint": "可靠连接",
+      "related_entities": [
+        "终端支架",
+        "接地网"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "终端支架",
+      "target": "型钢",
+      "type": "使用材料"
+    },
+    {
+      "source": "户外终端支架",
+      "target": "终端支架",
+      "type": "子类"
+    },
+    {
+      "source": "单芯电缆",
+      "target": "终端支架",
+      "type": "安装对象"
+    },
+    {
+      "source": "接地网",
+      "target": "终端支架",
+      "type": "连接对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 435,
+      "source_row_id": "435",
+      "clause_index": 2,
+      "source_text": "终端支架340的材料和结构：1.终端支架必须坚固耐用，符合工程防火和防腐蚀要求。以型钢制成的户外终端支架应热浸镀锌。2单芯电缆的终端支架不得构成铁磁回路。3终端支架必须与接地网可靠连接"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.221486+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

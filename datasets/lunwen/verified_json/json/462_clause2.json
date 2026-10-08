@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "电动机操动机构",
+      "type": "电力设备",
+      "desc": "一种通过电动机驱动操作机构进行开关分合闸的装置"
+    },
+    {
+      "name": "电动机接线端子",
+      "type": "电气元件",
+      "desc": "连接电动机与外部电路的接口部件"
+    },
+    {
+      "name": "额定电压",
+      "type": "电气参数",
+      "desc": "设备在正常工作条件下应施加的电压值"
+    },
+    {
+      "name": "电压",
+      "type": "电气参数",
+      "desc": "电路中两点之间的电位差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当电动机接线端子的电压在其额定电压的80%-110%范围内时",
+      "type": "强制",
+      "subject": "电动机操动机构",
+      "action": "正常运行",
+      "condition": "电动机接线端子的电压",
+      "constraint": "80%~110%额定电压",
+      "related_entities": [
+        "电动机操动机构",
+        "电动机接线端子",
+        "额定电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电动机操动机构",
+      "target": "电动机接线端子",
+      "type": "连接"
+    },
+    {
+      "source": "电动机接线端子",
+      "target": "额定电压",
+      "type": "关联"
+    },
+    {
+      "source": "电动机操动机构",
+      "target": "额定电压",
+      "type": "关联"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 462,
+      "source_row_id": "462",
+      "clause_index": 2,
+      "source_text": "“电动机操动机构：当电动机接线端子的电压在其额定电压的的80%－110%范围内时”"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.75,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.251485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

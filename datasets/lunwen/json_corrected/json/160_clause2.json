@@ -1,0 +1,124 @@
+{
+  "entities": [
+    {
+      "name": "电磁式电压互感器",
+      "type": "电力设备",
+      "desc": "一种通过电磁感应原理将高电压转换为低电压的电气设备"
+    },
+    {
+      "name": "交接试验",
+      "type": "试验项目",
+      "desc": "新安装或检修后的电气设备投入运行前的检测"
+    },
+    {
+      "name": "空载电流测量",
+      "type": "试验项目",
+      "desc": "测量电磁式电压互感器在无负载状态下的电流值"
+    },
+    {
+      "name": "励磁特性",
+      "type": "电气特性",
+      "desc": "电压互感器在不同电压下的励磁电流特性"
+    },
+    {
+      "name": "拐点电压",
+      "type": "电气参数",
+      "desc": "励磁特性曲线上的拐点对应的电压值"
+    },
+    {
+      "name": "Um",
+      "type": "额定电压",
+      "desc": "电气设备的额定电压值"
+    },
+    {
+      "name": "中性点有效接地系统",
+      "type": "电网结构",
+      "desc": "中性点直接接地或经小电阻接地的电力系统"
+    },
+    {
+      "name": "中性点非有效接地系统",
+      "type": "电网结构",
+      "desc": "中性点不接地或经消弧线圈接地的电力系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电磁式电压互感器在交接试验时，应进行空载电流测量",
+      "type": "强制",
+      "subject": "电磁式电压互感器",
+      "action": "进行空载电流测量",
+      "condition": "交接试验",
+      "constraint": "无",
+      "related_entities": [
+        "电磁式电压互感器",
+        "交接试验",
+        "空载电流测量"
+      ]
+    },
+    {
+      "content": "励磁特性的拐点电压应大于1.5Um/3（中性点有效接地系统）或1.9Um/3（中性点非有效接地系统）",
+      "type": "强制",
+      "subject": "电磁式电压互感器",
+      "action": "满足励磁特性要求",
+      "condition": "交接试验",
+      "constraint": "拐点电压 > 1.5Um/3 或 拐点电压 > 1.9Um/3",
+      "related_entities": [
+        "电磁式电压互感器",
+        "交接试验",
+        "励磁特性",
+        "拐点电压",
+        "Um",
+        "中性点有效接地系统",
+        "中性点非有效接地系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电磁式电压互感器",
+      "target": "交接试验",
+      "type": "包含"
+    },
+    {
+      "source": "电磁式电压互感器",
+      "target": "空载电流测量",
+      "type": "包含"
+    },
+    {
+      "source": "电磁式电压互感器",
+      "target": "励磁特性",
+      "type": "包含"
+    },
+    {
+      "source": "电磁式电压互感器",
+      "target": "拐点电压",
+      "type": "包含"
+    },
+    {
+      "source": "电磁式电压互感器",
+      "target": "Um",
+      "type": "包含"
+    },
+    {
+      "source": "电磁式电压互感器",
+      "target": "中性点有效接地系统",
+      "type": "包含"
+    },
+    {
+      "source": "电磁式电压互感器",
+      "target": "中性点非有效接地系统",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 160,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7bf7464230a1ef38",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\160_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

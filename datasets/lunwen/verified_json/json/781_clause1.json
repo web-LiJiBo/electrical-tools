@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "温升限值",
+      "type": "技术参数",
+      "desc": "设备在运行过程中允许的最大温升值"
+    },
+    {
+      "name": "油箱",
+      "type": "设备部件",
+      "desc": "变压器的油箱部分"
+    },
+    {
+      "name": "心及金属结构件表面",
+      "type": "设备部件",
+      "desc": "变压器铁芯及金属结构件的表面部位"
+    },
+    {
+      "name": "订货条件",
+      "type": "技术要求",
+      "desc": "设备采购时必须满足的技术条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器油箱、铁芯及金属结构件表面的温升限值为75K",
+      "type": "强制",
+      "subject": "变压器制造企业",
+      "action": "设计与制造",
+      "condition": "变压器运行过程中",
+      "constraint": "温升限值≤75K",
+      "related_entities": [
+        "温升限值",
+        "油箱",
+        "心及金属结构件表面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "温升限值",
+      "target": "油箱",
+      "type": "适用于"
+    },
+    {
+      "source": "温升限值",
+      "target": "心及金属结构件表面",
+      "type": "适用于"
+    },
+    {
+      "source": "订货条件",
+      "target": "温升限值",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 781,
+      "source_row_id": "781",
+      "clause_index": 1,
+      "source_text": "技术参数名称：温升限值（K），技术参数项目：油箱、心及金属结构件表面，订货条件内容：75"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.612080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

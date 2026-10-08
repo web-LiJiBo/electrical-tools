@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "高压绕组",
+      "type": "电气设备",
+      "desc": "变压器高压侧的绕组"
+    },
+    {
+      "name": "中压绕组",
+      "type": "电气设备",
+      "desc": "变压器中压侧的绕组"
+    },
+    {
+      "name": "低压绕组",
+      "type": "电气设备",
+      "desc": "变压器低压侧的绕组"
+    },
+    {
+      "name": "1.5Um/3电压",
+      "type": "试验电压",
+      "desc": "特定条件下施加的试验电压"
+    },
+    {
+      "name": "100pC",
+      "type": "试验结果",
+      "desc": "高压绕组、中压绕组的局部放电量上限值"
+    },
+    {
+      "name": "300pC",
+      "type": "试验结果",
+      "desc": "低压绕组的局部放电量上限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在1．5Um/3电压下，高压绕组、中压绕组小于100pC；低压绕组小于300pC",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行局部放电试验",
+      "condition": "变压器出厂或交接试验时",
+      "constraint": "高压绕组≤100pC，中压绕组≤100pC，低压绕组≤300pC",
+      "related_entities": [
+        "高压绕组",
+        "中压绕组",
+        "低压绕组",
+        "1.5Um/3电压",
+        "100pC",
+        "300pC"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "1.5Um/3电压",
+      "target": "高压绕组",
+      "type": "施加于"
+    },
+    {
+      "source": "1.5Um/3电压",
+      "target": "中压绕组",
+      "type": "施加于"
+    },
+    {
+      "source": "1.5Um/3电压",
+      "target": "低压绕组",
+      "type": "施加于"
+    },
+    {
+      "source": "高压绕组",
+      "target": "100pC",
+      "type": "局部放电量小于"
+    },
+    {
+      "source": "中压绕组",
+      "target": "100pC",
+      "type": "局部放电量小于"
+    },
+    {
+      "source": "低压绕组",
+      "target": "300pC",
+      "type": "局部放电量小于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2144,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "05bd2f2ad7cc1846",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2144_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

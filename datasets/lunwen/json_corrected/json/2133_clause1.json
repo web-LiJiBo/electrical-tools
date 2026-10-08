@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "最大日温差",
+      "type": "运行参数",
+      "desc": "变压器在一天内最高温度与最低温度之差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器应能在最大日温差25K的条件下正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "在最大日温差25K的条件下",
+      "constraint": "最大日温差25K",
+      "related_entities": [
+        "变压器",
+        "最大日温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "最大日温差",
+      "type": "满足条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2133,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0fabe4729fc1d49e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2133_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

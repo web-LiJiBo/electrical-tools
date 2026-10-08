@@ -1,0 +1,135 @@
+{
+  "entities": [
+    {
+      "name": "开关站",
+      "type": "电力设施",
+      "desc": "电力系统中用于变电、配电的场所"
+    },
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "电力系统中用于配电的场所"
+    },
+    {
+      "name": "10kV配电室",
+      "type": "电力设施",
+      "desc": "配电室内用于10kV电压等级配电的区域"
+    },
+    {
+      "name": "低压配电室",
+      "type": "电力设施",
+      "desc": "配电室内用于低压电压等级配电的区域"
+    },
+    {
+      "name": "自然采光高窗",
+      "type": "建筑结构",
+      "desc": "安装在较高位置的自然采光窗户"
+    },
+    {
+      "name": "自然采光窗",
+      "type": "建筑结构",
+      "desc": "用于自然采光的窗户"
+    },
+    {
+      "name": "防盗栅栏",
+      "type": "安全防护设备",
+      "desc": "防止非法入侵的安全防护装置"
+    },
+    {
+      "name": "临街面",
+      "type": "建筑方位",
+      "desc": "建筑物面向街道的一侧"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关站、配电室的10kV配电室宜设不能开启的自然采光高窗",
+      "type": "强制",
+      "subject": "开关站、配电室",
+      "action": "设置自然采光高窗",
+      "condition": "10kV配电室",
+      "constraint": "不能开启",
+      "related_entities": [
+        "开关站",
+        "配电室",
+        "10kV配电室",
+        "自然采光高窗"
+      ]
+    },
+    {
+      "content": "低压配电室应设能开启的自然采光窗并配纱窗",
+      "type": "强制",
+      "subject": "低压配电室",
+      "action": "设置自然采光窗并配纱窗",
+      "condition": "无",
+      "constraint": "能开启",
+      "related_entities": [
+        "低压配电室",
+        "自然采光窗",
+        "纱窗"
+      ]
+    },
+    {
+      "content": "窗户下沿距室外地面高度不宜小于1.8m",
+      "type": "强制",
+      "subject": "自然采光窗",
+      "action": "设置窗户下沿距室外地面高度",
+      "condition": "无",
+      "constraint": "≥1.8m",
+      "related_entities": [
+        "自然采光窗"
+      ]
+    },
+    {
+      "content": "窗户外侧应装365有防盗栅栏",
+      "type": "强制",
+      "subject": "自然采光窗",
+      "action": "安装防盗栅栏",
+      "condition": "无",
+      "constraint": "365天",
+      "related_entities": [
+        "自然采光窗",
+        "防盗栅栏"
+      ]
+    },
+    {
+      "content": "临街的一面不宜开窗",
+      "type": "强制",
+      "subject": "低压配电室",
+      "action": "不设置临街面窗户",
+      "condition": "无",
+      "constraint": "无",
+      "related_entities": [
+        "低压配电室",
+        "临街面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关站",
+      "target": "10kV配电室",
+      "type": "包含"
+    },
+    {
+      "source": "10kV配电室",
+      "target": "自然采光高窗",
+      "type": "配置"
+    },
+    {
+      "source": "低压配电室",
+      "target": "自然采光窗",
+      "type": "配置"
+    },
+    {
+      "source": "自然采光窗",
+      "target": "防盗栅栏",
+      "type": "配置"
+    },
+    {
+      "source": "低压配电室",
+      "target": "临街面",
+      "type": "方位"
+    }
+  ]
+}

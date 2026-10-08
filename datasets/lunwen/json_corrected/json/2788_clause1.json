@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通和断开电路"
+    },
+    {
+      "name": "分、合闸时间",
+      "type": "电气参数",
+      "desc": "断路器从接收到分闸或合闸指令到所有触头完全分开或接触的时间"
+    },
+    {
+      "name": "分、合闸速度",
+      "type": "电气参数",
+      "desc": "断路器在分闸或合闸过程中动触头的速度变化率"
+    },
+    {
+      "name": "额定操作电压",
+      "type": "电气参数",
+      "desc": "断路器正常工作时允许的最大操作电压"
+    },
+    {
+      "name": "气压或液压",
+      "type": "电气参数",
+      "desc": "断路器操作机构中气体或液体的压力状态"
+    },
+    {
+      "name": "产品技术条件",
+      "type": "技术文件",
+      "desc": "制造厂家提供的产品技术规范和质量保证文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测量断路器的分、合闸时间，应在断路器的额定操作电压、气压或液压下进行",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量分、合闸时间",
+      "condition": "断路器处于额定操作电压、气压或液压状态",
+      "constraint": "在额定操作条件下进行测量",
+      "related_entities": [
+        "断路器",
+        "额定操作电压",
+        "气压或液压"
+      ]
+    },
+    {
+      "content": "实测数值应符合产品技术条件的规定",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量分、合闸时间",
+      "condition": "断路器处于额定操作电压、气压或液压状态",
+      "constraint": "测量结果需满足产品技术条件",
+      "related_entities": [
+        "断路器",
+        "产品技术条件"
+      ]
+    },
+    {
+      "content": "测量断路器的分、合闸速度，应在断路器的额定操作电压、气压或液压下进行",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量分、合闸速度",
+      "condition": "断路器处于额定操作电压、气压或液压状态",
+      "constraint": "在额定操作条件下进行测量",
+      "related_entities": [
+        "断路器",
+        "额定操作电压",
+        "气压或液压"
+      ]
+    },
+    {
+      "content": "实测数值应符合产品技术条件的规定",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量分、合闸速度",
+      "condition": "断路器处于额定操作电压、气压或液压状态",
+      "constraint": "测量结果需满足产品技术条件",
+      "related_entities": [
+        "断路器",
+        "产品技术条件"
+      ]
+    },
+    {
+      "content": "现场无条件安装采样装置的断路器，可不进行本试验",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量分、合闸速度",
+      "condition": "现场不具备安装采样装置条件",
+      "constraint": "可不进行分、合闸速度测量",
+      "related_entities": [
+        "断路器"
+      ]
+    },
+    {
+      "content": "测量断路器主、辅触头三相及同相各断口分、合闸的同期性及配合时间，应符合产品技术条件的规定",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量同期性及配合时间",
+      "condition": "断路器处于额定操作电压、气压或液压状态",
+      "constraint": "测量结果需满足产品技术条件",
+      "related_entities": [
+        "断路器",
+        "产品技术条件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "分、合闸时间",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "分、合闸速度",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "额定操作电压",
+      "type": "工作条件"
+    },
+    {
+      "source": "断路器",
+      "target": "气压或液压",
+      "type": "工作条件"
+    },
+    {
+      "source": "断路器",
+      "target": "产品技术条件",
+      "type": "技术依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2788,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1bdaf08b0dd13e31",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2788_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "预绞式补修条",
+      "type": "电力金具",
+      "desc": "一种用于导线损伤修补的电力金具"
+    },
+    {
+      "name": "损伤部位",
+      "type": "电力设备状态",
+      "desc": "导线或金具出现损伤的位置"
+    },
+    {
+      "name": "补修条端部",
+      "type": "电力金具部件",
+      "desc": "预绞式补修条的末端部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "预绞式补修条（护线条）补修，补修条（护线条）端部距损伤部位边缘的单边长度不得小于100mm",
+      "type": "强制",
+      "subject": "预绞式补修条安装人员",
+      "action": "安装预绞式补修条",
+      "condition": "导线或金具出现损伤需要修补时",
+      "constraint": "补修条端部距损伤部位边缘的单边长度不得小于100mm",
+      "related_entities": [
+        "预绞式补修条",
+        "损伤部位",
+        "补修条端部"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "预绞式补修条",
+      "target": "损伤部位",
+      "type": "修补对象"
+    },
+    {
+      "source": "补修条端部",
+      "target": "损伤部位",
+      "type": "修补距离起点"
+    },
+    {
+      "source": "预绞式补修条",
+      "target": "补修条端部",
+      "type": "组成部分"
+    }
+  ],
+  "metadata": {
+    "pair_id": 725,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e54a723149b9e263",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\725_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

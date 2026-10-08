@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "阀控系统",
+      "type": "电力设备",
+      "desc": "换流站中用于控制晶闸管阀的系统"
+    },
+    {
+      "name": "直流控制保护系统",
+      "type": "电力控制系统",
+      "desc": "实现直流输电系统控制与保护功能的系统"
+    },
+    {
+      "name": "联调试验",
+      "type": "测试活动",
+      "desc": "联合调试与试验，确保系统间协调工作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀控系统应全程参与直流控制保护系统联调试验",
+      "type": "强制",
+      "subject": "阀控系统",
+      "action": "参与联调试验",
+      "condition": "在直流控制保护系统联调试验期间",
+      "constraint": "全程参与",
+      "related_entities": [
+        "阀控系统",
+        "直流控制保护系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀控系统",
+      "target": "直流控制保护系统",
+      "type": "参与"
+    },
+    {
+      "source": "直流控制保护系统",
+      "target": "联调试验",
+      "type": "对象"
+    },
+    {
+      "source": "阀控系统",
+      "target": "联调试验",
+      "type": "对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1605,
+      "source_row_id": "1605",
+      "clause_index": 2,
+      "source_text": "阀控系统应全程参与直流控制保护系统联调试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.562159+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

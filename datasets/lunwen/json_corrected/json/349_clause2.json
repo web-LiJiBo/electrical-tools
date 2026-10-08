@@ -1,0 +1,144 @@
+{
+  "entities": [
+    {
+      "name": "放电",
+      "type": "试验现象",
+      "desc": "设备在耐压试验中出现的异常放电现象"
+    },
+    {
+      "name": "重复试验",
+      "type": "试验方法",
+      "desc": "对同一设备或气隔进行多次耐压试验"
+    },
+    {
+      "name": "规定试验电压",
+      "type": "试验参数",
+      "desc": "耐压试验中规定的最大允许电压值"
+    },
+    {
+      "name": "自恢复放电",
+      "type": "试验现象",
+      "desc": "放电现象在试验电压撤除后自行消失的情况"
+    },
+    {
+      "name": "耐压试验",
+      "type": "试验方法",
+      "desc": "对设备施加一定电压以检测其绝缘性能的试验"
+    },
+    {
+      "name": "设备解体",
+      "type": "检修方法",
+      "desc": "将设备拆卸成各个部件以便于检查和维修"
+    },
+    {
+      "name": "气隔",
+      "type": "设备部件",
+      "desc": "高压电器设备中的一个独立封闭空间，用于隔离不同部分的带电体"
+    },
+    {
+      "name": "绝缘情况",
+      "type": "检修对象",
+      "desc": "设备内部绝缘材料的状态和性能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "进行重复试验。如果该设备或气隔还能经受规定的试验电压，则该放电是自恢复放电，认为耐压试验通过。",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "进行重复试验",
+      "condition": "设备或气隔在初次耐压试验中出现放电现象",
+      "constraint": "重复试验次数不少于两次，每次试验间隔时间不少于24小时",
+      "related_entities": [
+        "放电",
+        "重复试验",
+        "规定试验电压",
+        "自恢复放电",
+        "耐压试验"
+      ]
+    },
+    {
+      "content": "如重复试验再次放电，按9.2b)项程序进行。",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "按照9.2b)项程序处理",
+      "condition": "重复试验中再次出现放电现象",
+      "constraint": "无",
+      "related_entities": [
+        "放电",
+        "重复试验",
+        "耐压试验"
+      ]
+    },
+    {
+      "content": "设备解体，打开放电气隔，仔细检查绝缘情况，修复后，再一次进行耐压试验。",
+      "type": "强制",
+      "subject": "检修人员",
+      "action": "解体设备，检查并修复绝缘问题，重新进行耐压试验",
+      "condition": "放电现象为非自恢复放电",
+      "constraint": "解体前应确保设备安全，解体后应做好防护措施",
+      "related_entities": [
+        "放电",
+        "设备解体",
+        "气隔",
+        "绝缘情况",
+        "耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "放电",
+      "target": "耐压试验",
+      "type": "现象-试验"
+    },
+    {
+      "source": "放电",
+      "target": "重复试验",
+      "type": "现象-试验"
+    },
+    {
+      "source": "放电",
+      "target": "自恢复放电",
+      "type": "现象-现象"
+    },
+    {
+      "source": "重复试验",
+      "target": "规定试验电压",
+      "type": "试验-参数"
+    },
+    {
+      "source": "重复试验",
+      "target": "耐压试验",
+      "type": "试验-试验"
+    },
+    {
+      "source": "设备解体",
+      "target": "气隔",
+      "type": "操作-部件"
+    },
+    {
+      "source": "设备解体",
+      "target": "绝缘情况",
+      "type": "操作-检修对象"
+    },
+    {
+      "source": "设备解体",
+      "target": "耐压试验",
+      "type": "操作-试验"
+    }
+  ],
+  "metadata": {
+    "pair_id": 349,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a7a49ee4f00d3e47",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\349_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

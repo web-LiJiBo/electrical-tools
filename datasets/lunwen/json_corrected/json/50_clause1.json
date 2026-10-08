@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体绝缘互感器",
+      "type": "设备",
+      "desc": "一种使用SF6气体作为绝缘介质的互感器"
+    },
+    {
+      "name": "密封性能检查",
+      "type": "检测项目",
+      "desc": "对设备密封性能进行检查的项目"
+    },
+    {
+      "name": "定性检漏",
+      "type": "检测方法",
+      "desc": "通过观察或嗅觉等手段初步判断是否存在泄漏的方法"
+    },
+    {
+      "name": "定量检漏",
+      "type": "检测方法",
+      "desc": "通过精确仪器测量泄漏量的方法"
+    },
+    {
+      "name": "年泄漏率",
+      "type": "参数",
+      "desc": "一年内设备泄漏的气体体积占初始充气量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SF6气体绝缘互感器定性检漏无泄漏点，有怀疑时进行定量检漏",
+      "type": "强制",
+      "subject": "SF6气体绝缘互感器",
+      "action": "进行密封性能检查",
+      "condition": "设备投运前或定期检修时",
+      "constraint": "定性检漏无泄漏点，有怀疑时进行定量检漏",
+      "related_entities": [
+        "SF6气体绝缘互感器",
+        "定性检漏",
+        "定量检漏"
+      ]
+    },
+    {
+      "content": "年泄漏应小于1%",
+      "type": "强制",
+      "subject": "SF6气体绝缘互感器",
+      "action": "控制年泄漏率",
+      "condition": "设备投运后每年定期检测",
+      "constraint": "年泄漏率<1%",
+      "related_entities": [
+        "SF6气体绝缘互感器",
+        "年泄漏率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体绝缘互感器",
+      "target": "密封性能检查",
+      "type": "包含"
+    },
+    {
+      "source": "密封性能检查",
+      "target": "定性检漏",
+      "type": "包含"
+    },
+    {
+      "source": "密封性能检查",
+      "target": "定量检漏",
+      "type": "包含"
+    },
+    {
+      "source": "SF6气体绝缘互感器",
+      "target": "定性检漏",
+      "type": "执行"
+    },
+    {
+      "source": "SF6气体绝缘互感器",
+      "target": "定量检漏",
+      "type": "执行"
+    },
+    {
+      "source": "SF6气体绝缘互感器",
+      "target": "年泄漏率",
+      "type": "监控"
+    }
+  ],
+  "metadata": {
+    "pair_id": 50,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c1474aa6ea0dbbff",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\50_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

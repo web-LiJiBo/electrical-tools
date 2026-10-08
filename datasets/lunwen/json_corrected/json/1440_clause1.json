@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "绝缘子串",
+      "type": "电力设备",
+      "desc": "电力系统中用于支撑导线并保持电气绝缘的装置"
+    },
+    {
+      "name": "结构高度",
+      "type": "技术参数",
+      "desc": "绝缘子串在垂直方向上的总高度"
+    },
+    {
+      "name": "偏差",
+      "type": "技术参数",
+      "desc": "实际值与规定值之间的差异"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘子串的结构高度偏差为±0.024nH（n表示6只绝缘子）",
+      "type": "强制",
+      "subject": "绝缘子串",
+      "action": "制造/安装",
+      "condition": "绝缘子串的结构高度偏差",
+      "constraint": "±0.024nH",
+      "related_entities": [
+        "绝缘子串",
+        "结构高度"
+      ]
+    },
+    {
+      "content": "6个绝缘子串的结构高度偏差应不超过±19mm",
+      "type": "强制",
+      "subject": "绝缘子串",
+      "action": "制造/安装",
+      "condition": "6个绝缘子串的结构高度偏差",
+      "constraint": "±19mm",
+      "related_entities": [
+        "绝缘子串",
+        "结构高度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘子串",
+      "target": "结构高度",
+      "type": "包含"
+    },
+    {
+      "source": "结构高度",
+      "target": "偏差",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘子串",
+      "target": "偏差",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1440,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fc3a7126c3cd7c5a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1440_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

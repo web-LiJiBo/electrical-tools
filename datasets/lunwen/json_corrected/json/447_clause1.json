@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "EPR",
+      "type": "绝缘材料",
+      "desc": "交联聚乙烯绝缘"
+    },
+    {
+      "name": "HEPR",
+      "type": "绝缘材料",
+      "desc": "热塑性弹性体绝缘"
+    },
+    {
+      "name": "XLPE",
+      "type": "绝缘材料",
+      "desc": "交联聚乙烯绝缘"
+    },
+    {
+      "name": "SE1护套",
+      "type": "护套材料",
+      "desc": "聚氯乙烯护套"
+    },
+    {
+      "name": "表18",
+      "type": "技术要求",
+      "desc": "EPR、HEPR和XLPE绝缘的试验结果要求"
+    },
+    {
+      "name": "表19",
+      "type": "技术要求",
+      "desc": "SE1护套的技术要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "EPR、HEPR和XLPE绝缘的试验结果应符合表18要求",
+      "type": "强制",
+      "subject": "EPR、HEPR和XLPE绝缘",
+      "action": "进行试验并满足要求",
+      "condition": "电力电缆制造过程",
+      "constraint": "表18",
+      "related_entities": [
+        "EPR",
+        "HEPR",
+        "XLPE",
+        "表18"
+      ]
+    },
+    {
+      "content": "SE1护套应符合表19要求",
+      "type": "强制",
+      "subject": "SE1护套",
+      "action": "进行试验并满足要求",
+      "condition": "电力电缆制造过程",
+      "constraint": "表19",
+      "related_entities": [
+        "SE1护套",
+        "表19"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "EPR",
+      "target": "表18",
+      "type": "符合要求"
+    },
+    {
+      "source": "HEPR",
+      "target": "表18",
+      "type": "符合要求"
+    },
+    {
+      "source": "XLPE",
+      "target": "表18",
+      "type": "符合要求"
+    },
+    {
+      "source": "SE1护套",
+      "target": "表19",
+      "type": "符合要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 447,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "346ccbb3239593b1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\447_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

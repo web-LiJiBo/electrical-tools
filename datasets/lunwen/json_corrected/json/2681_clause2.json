@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "涂层",
+      "type": "材料",
+      "desc": "电力设备表面的保护层"
+    },
+    {
+      "name": "厚度",
+      "type": "物理量",
+      "desc": "涂层的厚度值"
+    },
+    {
+      "name": "0.5mm",
+      "type": "数值",
+      "desc": "涂层最小厚度要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "涂层厚度应不小于0.5mm。",
+      "type": "强制",
+      "subject": "涂层",
+      "action": "施工",
+      "condition": "电力设备表面处理",
+      "constraint": "厚度≥0.5mm",
+      "related_entities": [
+        "涂层",
+        "0.5mm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "涂层",
+      "target": "0.5mm",
+      "type": "满足"
+    },
+    {
+      "source": "0.5mm",
+      "target": "涂层",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2681,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "ae21100df7c2e0a7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2681_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

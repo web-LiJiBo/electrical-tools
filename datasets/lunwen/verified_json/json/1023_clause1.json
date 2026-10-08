@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "局部放电试验",
+      "type": "试验",
+      "desc": "电力设备局部放电的检测过程"
+    },
+    {
+      "name": "程序A",
+      "type": "试验程序",
+      "desc": "局部放电试验的一种预加电压程序"
+    },
+    {
+      "name": "程序B",
+      "type": "试验程序",
+      "desc": "局部放电试验的另一种预加电压程序"
+    },
+    {
+      "name": "预加电压",
+      "type": "试验步骤",
+      "desc": "局部放电试验中对试品施加的初始电压"
+    },
+    {
+      "name": "局部放电测量电压",
+      "type": "试验参数",
+      "desc": "局部放电试验中用于测量局部放电量的电压值"
+    },
+    {
+      "name": "30s",
+      "type": "时间",
+      "desc": "局部放电测量过程中电压保持的时间长度"
+    },
+    {
+      "name": "局部放电水平",
+      "type": "试验结果",
+      "desc": "局部放电试验中测得的局部放电量大小"
+    }
+  ],
+  "rules": [
+    {
+      "content": "局部放电试验程序在按照程序A或程序B预加电压之后，将电压降到表3规定的局部放电测量电压，在30s内测量相应的局部放电水平",
+      "type": "强制",
+      "subject": "局部放电试验",
+      "action": "进行局部放电测量",
+      "condition": "按照程序A或程序B预加电压之后",
+      "constraint": "在30s内测量相应的局部放电水平",
+      "related_entities": [
+        "局部放电试验",
+        "程序A",
+        "程序B",
+        "预加电压",
+        "局部放电测量电压",
+        "30s",
+        "局部放电水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "局部放电试验",
+      "target": "程序A",
+      "type": "采用"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "程序B",
+      "type": "采用"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "预加电压",
+      "type": "包含"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "局部放电测量电压",
+      "type": "包含"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "30s",
+      "type": "包含"
+    },
+    {
+      "source": "局部放电试验",
+      "target": "局部放电水平",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1023,
+      "source_row_id": "1023",
+      "clause_index": 1,
+      "source_text": "局部放电试验程序在按照程序A或程序B预加电压之后，将电压降到表3规定的局部放电测量电压，在30s内测量相应的局部放电水平"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.903948+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

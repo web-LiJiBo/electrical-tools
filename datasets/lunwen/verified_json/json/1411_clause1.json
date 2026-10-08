@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "配电网",
+      "type": "电力系统",
+      "desc": "由变电站、配电线路及配电设备组成的电力系统"
+    },
+    {
+      "name": "网络节点",
+      "type": "电力系统",
+      "desc": "配电网中的各个连接点或负荷点"
+    },
+    {
+      "name": "电压损失",
+      "type": "电力参数",
+      "desc": "网络中各节点电压相对于基准值的下降程度"
+    },
+    {
+      "name": "用户",
+      "type": "电力用户",
+      "desc": "电力系统的终端用电客户"
+    },
+    {
+      "name": "电压质量",
+      "type": "电力参数",
+      "desc": "用户受电端的电压水平及其波动情况"
+    },
+    {
+      "name": "GB12325",
+      "type": "国家标准",
+      "desc": "《电能质量 供电电压偏差》国家标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "配电网规划要保证网络中各节点满足电压损失及其分配要求",
+      "type": "强制",
+      "subject": "配电网规划者",
+      "action": "规划配电网",
+      "condition": "配电网规划阶段",
+      "constraint": "网络中各节点电压损失不超过规定范围，电压损失分配合理",
+      "related_entities": [
+        "配电网",
+        "网络节点",
+        "电压损失"
+      ]
+    },
+    {
+      "content": "各类用户受电电压质量执行GB12325的规定",
+      "type": "强制",
+      "subject": "电力系统运行维护者",
+      "action": "确保用户电压质量",
+      "condition": "电力系统运行阶段",
+      "constraint": "用户受电端电压偏差符合GB12325标准",
+      "related_entities": [
+        "用户",
+        "电压质量",
+        "GB12325"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电网",
+      "target": "网络节点",
+      "type": "包含"
+    },
+    {
+      "source": "网络节点",
+      "target": "电压损失",
+      "type": "影响"
+    },
+    {
+      "source": "用户",
+      "target": "电压质量",
+      "type": "反映"
+    },
+    {
+      "source": "GB12325",
+      "target": "电压质量",
+      "type": "规定"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1411,
+      "source_row_id": "1411",
+      "clause_index": 1,
+      "source_text": "配电网规划要保证网络中各节点满足电压损失及其分配要求，各类用户受电电压质量执行GB12325的规定。c)220V单相供电电压允许偏差为额定电压的+7%与‐10%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9792,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.348547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

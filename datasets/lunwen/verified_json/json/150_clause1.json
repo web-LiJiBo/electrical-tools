@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "阀",
+      "type": "电力设备",
+      "desc": "电力系统中的重要电气元件"
+    },
+    {
+      "name": "直流耐压试验",
+      "type": "试验方法",
+      "desc": "一种电气设备绝缘性能测试方法"
+    },
+    {
+      "name": "湿态",
+      "type": "试验状态",
+      "desc": "设备在含有冷却液体的状态下进行的试验"
+    },
+    {
+      "name": "泄漏量",
+      "type": "试验参数",
+      "desc": "冷却液体泄漏的体积或质量"
+    },
+    {
+      "name": "泄漏持续时间",
+      "type": "试验参数",
+      "desc": "冷却液体泄漏的时间长度"
+    },
+    {
+      "name": "泄漏物电导率",
+      "type": "试验参数",
+      "desc": "冷却液体泄漏物的电导特性"
+    },
+    {
+      "name": "湿态操作冲击电压耐受试验",
+      "type": "试验项目",
+      "desc": "在湿态条件下进行的操作冲击电压耐受试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流耐压试验应在阀结构顶部的一个组件发生冷却液体泄漏的情况下重复进行",
+      "type": "强制",
+      "subject": "阀",
+      "action": "进行直流耐压试验",
+      "condition": "阀结构顶部的一个组件发生冷却液体泄漏",
+      "constraint": "泄漏量、泄漏持续时间和泄漏物电导率应与湿态操作冲击电压耐受试验中所规定的条件相同",
+      "related_entities": [
+        "阀",
+        "直流耐压试验",
+        "湿态",
+        "泄漏量",
+        "泄漏持续时间",
+        "泄漏物电导率",
+        "湿态操作冲击电压耐受试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀",
+      "target": "直流耐压试验",
+      "type": "需要进行"
+    },
+    {
+      "source": "阀",
+      "target": "湿态",
+      "type": "处于"
+    },
+    {
+      "source": "阀",
+      "target": "泄漏量",
+      "type": "具有"
+    },
+    {
+      "source": "阀",
+      "target": "泄漏持续时间",
+      "type": "具有"
+    },
+    {
+      "source": "阀",
+      "target": "泄漏物电导率",
+      "type": "具有"
+    },
+    {
+      "source": "阀",
+      "target": "湿态操作冲击电压耐受试验",
+      "type": "参照进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 150,
+      "source_row_id": "150",
+      "clause_index": 1,
+      "source_text": "阀应进行湿态直流耐压试验，具体要求如下：直流耐压试验应在阀结构顶部的一个组件发生冷却液体泄漏的情况下重复进行，泄漏量、泄漏持续时间和泄漏物电导率应与阀的湿态操作冲击电压耐受试验中所规定的条件相同，直流耐压试验持续时间按照工程技术规范要求确定。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:58.915600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

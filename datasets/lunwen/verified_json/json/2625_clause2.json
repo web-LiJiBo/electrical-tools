@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "额定雷电冲击耐受电压",
+      "type": "电气参数",
+      "desc": "设备在雷电冲击条件下允许的最大电压值"
+    },
+    {
+      "name": "截断雷电冲击耐受电压",
+      "type": "电气参数",
+      "desc": "设备在雷电冲击条件下允许的最大电压值，但不包括雷电波尾部的电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定雷电冲击耐受电压（峰值）550kV对应的截断雷电冲击耐受电压（峰值）为633kV。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "设计与制造",
+      "condition": "在雷电冲击条件下",
+      "constraint": "额定雷电冲击耐受电压550kV，截断雷电冲击耐受电压633kV",
+      "related_entities": [
+        "额定雷电冲击耐受电压",
+        "截断雷电冲击耐受电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定雷电冲击耐受电压",
+      "target": "截断雷电冲击耐受电压",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2616,
+      "source_row_id": "2625",
+      "clause_index": 2,
+      "source_text": "额定雷电冲击耐受电压（峰值）550kV对应的截断雷电冲击耐受电压（峰值）为633kV。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.781316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

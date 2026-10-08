@@ -1,0 +1,182 @@
+{
+  "entities": [
+    {
+      "name": "过电压",
+      "type": "电气现象",
+      "desc": "电力系统中超过正常工作电压的现象"
+    },
+    {
+      "name": "工频过电压",
+      "type": "过电压类型",
+      "desc": "由工频电压升高引起的过电压"
+    },
+    {
+      "name": "雷电过电压",
+      "type": "过电压类型",
+      "desc": "由雷电放电引起的过电压"
+    },
+    {
+      "name": "操作过电压",
+      "type": "过电压类型",
+      "desc": "由电力系统操作引起的过电压"
+    },
+    {
+      "name": "母线故障",
+      "type": "故障类型",
+      "desc": "电力系统中母线发生的故障"
+    },
+    {
+      "name": "单相对地故障",
+      "type": "故障类型",
+      "desc": "电力系统中单相对地之间的故障"
+    },
+    {
+      "name": "相间故障",
+      "type": "故障类型",
+      "desc": "电力系统中相与相之间的故障"
+    },
+    {
+      "name": "三相短路故障",
+      "type": "故障类型",
+      "desc": "电力系统中三相同时短路的故障"
+    },
+    {
+      "name": "开关重燃",
+      "type": "故障类型",
+      "desc": "电力系统中开关在断开后重新导通的现象"
+    },
+    {
+      "name": "晶闸管阀故障",
+      "type": "故障类型",
+      "desc": "电力系统中晶闸管阀出现的故障"
+    },
+    {
+      "name": "误通",
+      "type": "故障类型",
+      "desc": "电力系统中晶闸管阀错误导通的现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工频、雷电和操作过电压需要研究",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "研究",
+      "condition": "电力系统运行过程中",
+      "constraint": "工频、雷电和操作过电压",
+      "related_entities": [
+        "过电压",
+        "工频过电压",
+        "雷电过电压",
+        "操作过电压"
+      ]
+    },
+    {
+      "content": "母线故障（单相对地、相间和三相短路）需要研究",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "研究",
+      "condition": "电力系统运行过程中",
+      "constraint": "母线故障（单相对地、相间和三相短路）",
+      "related_entities": [
+        "过电压",
+        "母线故障",
+        "单相对地故障",
+        "相间故障",
+        "三相短路故障"
+      ]
+    },
+    {
+      "content": "开关重燃（单相或两相）引起的过电压需要研究",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "研究",
+      "condition": "电力系统运行过程中",
+      "constraint": "开关重燃（单相或两相）引起的过电压",
+      "related_entities": [
+        "过电压",
+        "开关重燃",
+        "单相对地故障",
+        "相间故障"
+      ]
+    },
+    {
+      "content": "晶闸管阀故障（包括可能出现的误通）需要研究",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "研究",
+      "condition": "电力系统运行过程中",
+      "constraint": "晶闸管阀故障（包括可能出现的误通）",
+      "related_entities": [
+        "过电压",
+        "晶闸管阀故障",
+        "误通"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "过电压",
+      "target": "工频过电压",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "雷电过电压",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "操作过电压",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "母线故障",
+      "type": "包含"
+    },
+    {
+      "source": "母线故障",
+      "target": "单相对地故障",
+      "type": "包含"
+    },
+    {
+      "source": "母线故障",
+      "target": "相间故障",
+      "type": "包含"
+    },
+    {
+      "source": "母线故障",
+      "target": "三相短路故障",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "开关重燃",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "晶闸管阀故障",
+      "type": "包含"
+    },
+    {
+      "source": "晶闸管阀故障",
+      "target": "误通",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2962,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "94dcf67508175518",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2962_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

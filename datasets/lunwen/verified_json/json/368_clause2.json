@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "主体变",
+      "type": "电力设备",
+      "desc": "电力系统中的变压器"
+    },
+    {
+      "name": "铁心接地电流",
+      "type": "电气参数",
+      "desc": "变压器铁心对地的泄漏电流"
+    },
+    {
+      "name": "试验项目",
+      "type": "检测项目",
+      "desc": "电力设备的例行试验或诊断试验项目"
+    },
+    {
+      "name": "周期",
+      "type": "时间周期",
+      "desc": "试验项目的定期检查周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "运行中铁心接地电流一般不大于300mA",
+      "type": "强制",
+      "subject": "主体变",
+      "action": "运行维护",
+      "condition": "运行中",
+      "constraint": "铁心接地电流≤300mA",
+      "related_entities": [
+        "铁心接地电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "试验项目",
+      "target": "主体变",
+      "type": "针对"
+    },
+    {
+      "source": "周期",
+      "target": "试验项目",
+      "type": "周期"
+    },
+    {
+      "source": "铁心接地电流",
+      "target": "主体变",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验项目",
+      "target": "铁心接地电流",
+      "type": "检测指标"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 368,
+      "source_row_id": "368",
+      "clause_index": 2,
+      "source_text": "主体变试验项目、周期和要求见表1中第8项要求：运行中铁心接地电流一般不大于300mA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.149482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

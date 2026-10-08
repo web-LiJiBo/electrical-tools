@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "系统",
+      "type": "电力系统",
+      "desc": "电力系统是指由发电厂、输电线路、变电站、配电系统及用户组成的整体"
+    },
+    {
+      "name": "使用期限",
+      "type": "时间",
+      "desc": "系统运行的年限"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般情况下，系统使用期限不低于20年。",
+      "type": "强制",
+      "subject": "系统",
+      "action": "使用",
+      "condition": "一般情况下",
+      "constraint": "使用期限不低于20年",
+      "related_entities": [
+        "系统",
+        "使用期限"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "系统",
+      "target": "使用期限",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2654,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9210384ef37c5df9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2654_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

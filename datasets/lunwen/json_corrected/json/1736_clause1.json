@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "现场测试值",
+      "type": "电力参数",
+      "desc": "在现场进行的电力设备参数测量结果"
+    },
+    {
+      "name": "控制值Rn",
+      "type": "电力参数",
+      "desc": "电力设备在正常运行状态下的允许最大值"
+    },
+    {
+      "name": "出厂值",
+      "type": "电力参数",
+      "desc": "电力设备出厂时的额定参数值"
+    },
+    {
+      "name": "三相测试值",
+      "type": "电力参数",
+      "desc": "电力设备三相之间的参数测量结果"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场测试值不得超过控制值Rn",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "现场测试",
+      "condition": "电力设备运行中",
+      "constraint": "现场测试值≤控制值Rn",
+      "related_entities": [
+        "现场测试值",
+        "控制值Rn"
+      ]
+    },
+    {
+      "content": "注意与出厂值的比较",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "现场测试",
+      "condition": "电力设备运行中",
+      "constraint": "现场测试值与出厂值对比",
+      "related_entities": [
+        "现场测试值",
+        "出厂值"
+      ]
+    },
+    {
+      "content": "注意三相测试值的平衡度",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "现场测试",
+      "condition": "电力设备运行中",
+      "constraint": "三相测试值平衡度良好",
+      "related_entities": [
+        "三相测试值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "现场测试值",
+      "target": "控制值Rn",
+      "type": "不超过"
+    },
+    {
+      "source": "现场测试值",
+      "target": "出厂值",
+      "type": "对比"
+    },
+    {
+      "source": "三相测试值",
+      "target": "现场测试值",
+      "type": "组成"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1736,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4c17576f5c04f19a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1736_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

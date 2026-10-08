@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "控制系统",
+      "type": "电力系统",
+      "desc": "电力系统中用于控制设备运行状态的系统"
+    },
+    {
+      "name": "保护系统",
+      "type": "电力系统",
+      "desc": "电力系统中用于保护设备安全运行的系统"
+    },
+    {
+      "name": "回路",
+      "type": "电力系统",
+      "desc": "电力系统中传输电能的路径"
+    }
+  ],
+  "rules": [
+    {
+      "content": "不同控制系统、不同保护系统所用回路应完全独立，任一回路发生故障，不影响其他回路的运行",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "设计电力系统",
+      "condition": "电力系统设计阶段",
+      "constraint": "控制系统、保护系统回路独立",
+      "related_entities": [
+        "控制系统",
+        "保护系统",
+        "回路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "控制系统",
+      "target": "回路",
+      "type": "使用"
+    },
+    {
+      "source": "保护系统",
+      "target": "回路",
+      "type": "使用"
+    },
+    {
+      "source": "回路",
+      "target": "控制系统",
+      "type": "连接"
+    },
+    {
+      "source": "回路",
+      "target": "保护系统",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 147,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "31b8dae6ffc7b3f0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\147_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

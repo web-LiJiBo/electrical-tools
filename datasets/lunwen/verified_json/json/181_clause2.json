@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换交流电压和电流"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "装卸和运输过程",
+      "type": "操作过程",
+      "desc": "电力设备从生产地到安装地的移动过程"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "安全监测设备",
+      "desc": "用于记录电力设备在运输过程中受到的冲击加速度和方向变化情况的仪器"
+    },
+    {
+      "name": "冲击记录纸",
+      "type": "技术文件",
+      "desc": "三维冲撞记录仪记录的冲击数据的纸质输出"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器、电抗器在装卸和运输过程不应有严重冲击和振动",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "装卸和运输",
+      "condition": "在装卸和运输过程中",
+      "constraint": "不应有严重冲击和振动",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "装卸和运输过程"
+      ]
+    },
+    {
+      "content": "电压在220kV及以上且容量在150MVA及以上的变压器和电压在330kV及以上的电抗器均应装设三维冲撞记录仪",
+      "type": "强制",
+      "subject": "变压器、电抗器",
+      "action": "安装三维冲撞记录仪",
+      "condition": "电压在220kV及以上且容量在150MVA及以上或电压在330kV及以上",
+      "constraint": "均应装设三维冲撞记录仪",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "三维冲撞记录仪"
+      ]
+    },
+    {
+      "content": "冲击记录纸应符合制造厂及合同规定",
+      "type": "强制",
+      "subject": "冲击记录纸",
+      "action": "符合制造厂及合同规定",
+      "condition": "三维冲撞记录仪记录冲击数据后",
+      "constraint": "应符合制造厂及合同规定",
+      "related_entities": [
+        "冲击记录纸",
+        "三维冲撞记录仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "装卸和运输过程",
+      "type": "涉及"
+    },
+    {
+      "source": "电抗器",
+      "target": "装卸和运输过程",
+      "type": "涉及"
+    },
+    {
+      "source": "变压器",
+      "target": "三维冲撞记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "电抗器",
+      "target": "三维冲撞记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "三维冲撞记录仪",
+      "target": "冲击记录纸",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 181,
+      "source_row_id": "181",
+      "clause_index": 2,
+      "source_text": "“变压器、电抗器在装卸和运输过程不应有严重冲击和振动。电压在220kV及以上且容量在150MVA及以上的变压器和电压在330kV及以上的电抗器均应装设三维冲撞记录仪。冲击记录纸应符合制造厂及合同规定。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:58.949603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

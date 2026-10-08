@@ -1,0 +1,134 @@
+{
+  "entities": [
+    {
+      "name": "丁腈基橡胶密封制品",
+      "type": "电力设备材料",
+      "desc": "一种用于电力设备中的橡胶密封材料"
+    },
+    {
+      "name": "低介损减振橡胶密封制品",
+      "type": "电力设备材料",
+      "desc": "一种用于电力设备中的橡胶密封材料，具有低介质损耗特性"
+    },
+    {
+      "name": "丙烯酸酯橡胶密封制品",
+      "type": "电力设备材料",
+      "desc": "一种用于电力设备中的橡胶密封材料"
+    },
+    {
+      "name": "氟橡胶密封制品",
+      "type": "电力设备材料",
+      "desc": "一种用于电力设备中的橡胶密封材料"
+    },
+    {
+      "name": "氟硅橡胶密封制品",
+      "type": "电力设备材料",
+      "desc": "一种用于电力设备中的橡胶密封材料"
+    },
+    {
+      "name": "贮存期",
+      "type": "时间期限",
+      "desc": "密封制品从生产日期开始计算的最长可接受存储时间"
+    },
+    {
+      "name": "重新试验",
+      "type": "试验方法",
+      "desc": "对超过贮存期的密封制品进行再次检测的方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在符合上述条件的情况下，自生产日期算起，丁腈基橡胶密封制品的贮存期一般不应超过一年",
+      "type": "强制",
+      "subject": "丁腈基橡胶密封制品",
+      "action": "贮存",
+      "condition": "自生产日期算起",
+      "constraint": "贮存期一般不应超过一年",
+      "related_entities": [
+        "丁腈基橡胶密封制品",
+        "贮存期"
+      ]
+    },
+    {
+      "content": "低介损减振橡胶密封制品的贮存期一般不应超过两年",
+      "type": "强制",
+      "subject": "低介损减振橡胶密封制品",
+      "action": "贮存",
+      "condition": "自生产日期算起",
+      "constraint": "贮存期一般不应超过两年",
+      "related_entities": [
+        "低介损减振橡胶密封制品",
+        "贮存期"
+      ]
+    },
+    {
+      "content": "丙烯酸酯橡胶、氟橡胶、氟硅橡胶密封制品的贮存期一般不应超过五年",
+      "type": "强制",
+      "subject": "丙烯酸酯橡胶、氟橡胶、氟硅橡胶密封制品",
+      "action": "贮存",
+      "condition": "自生产日期算起",
+      "constraint": "贮存期一般不应超过五年",
+      "related_entities": [
+        "丙烯酸酯橡胶密封制品",
+        "氟橡胶密封制品",
+        "氟硅橡胶密封制品",
+        "贮存期"
+      ]
+    },
+    {
+      "content": "超过贮存期的密封制品应由制造厂重新进行试验，合格后方可出厂",
+      "type": "强制",
+      "subject": "超过贮存期的密封制品",
+      "action": "重新试验",
+      "condition": "超过贮存期",
+      "constraint": "重新试验合格后方可出厂",
+      "related_entities": [
+        "重新试验",
+        "贮存期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "丁腈基橡胶密封制品",
+      "target": "贮存期",
+      "type": "适用范围"
+    },
+    {
+      "source": "低介损减振橡胶密封制品",
+      "target": "贮存期",
+      "type": "适用范围"
+    },
+    {
+      "source": "丙烯酸酯橡胶密封制品",
+      "target": "贮存期",
+      "type": "适用范围"
+    },
+    {
+      "source": "氟橡胶密封制品",
+      "target": "贮存期",
+      "type": "适用范围"
+    },
+    {
+      "source": "氟硅橡胶密封制品",
+      "target": "贮存期",
+      "type": "适用范围"
+    },
+    {
+      "source": "贮存期",
+      "target": "重新试验",
+      "type": "后续处理"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2876,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "deb890963c7262a8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2876_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

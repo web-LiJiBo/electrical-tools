@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "外观检查",
+      "type": "检修维护",
+      "desc": "对电力设备进行的外部检查"
+    },
+    {
+      "name": "330kV及以上",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "220kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "110kV/66kV",
+      "type": "电压等级",
+      "desc": "中压输电系统电压等级"
+    },
+    {
+      "name": "35kV及以下",
+      "type": "电压等级",
+      "desc": "低压输电系统电压等级"
+    },
+    {
+      "name": "电缆终端",
+      "type": "电力设备",
+      "desc": "电缆与其它电气设备连接的部件"
+    },
+    {
+      "name": "可见部分",
+      "type": "检查部位",
+      "desc": "电缆终端可直接观察到的部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "外观检查330kV及以上：2周",
+      "type": "强制",
+      "subject": "330kV及以上电力设备",
+      "action": "定期进行外观检查",
+      "condition": "330kV及以上电力设备运行期间",
+      "constraint": "2周一次",
+      "related_entities": [
+        "外观检查",
+        "330kV及以上"
+      ]
+    },
+    {
+      "content": "220kV：1月",
+      "type": "强制",
+      "subject": "220kV电力设备",
+      "action": "定期进行外观检查",
+      "condition": "220kV电力设备运行期间",
+      "constraint": "1月一次",
+      "related_entities": [
+        "外观检查",
+        "220kV"
+      ]
+    },
+    {
+      "content": "110kV/66kV：3月",
+      "type": "强制",
+      "subject": "110kV/66kV电力设备",
+      "action": "定期进行外观检查",
+      "condition": "110kV/66kV电力设备运行期间",
+      "constraint": "3月一次",
+      "related_entities": [
+        "外观检查",
+        "110kV/66kV"
+      ]
+    },
+    {
+      "content": "35kV及以下：1年",
+      "type": "强制",
+      "subject": "35kV及以下电力设备",
+      "action": "定期进行外观检查",
+      "condition": "35kV及以下电力设备运行期间",
+      "constraint": "1年一次",
+      "related_entities": [
+        "外观检查",
+        "35kV及以下"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外观检查",
+      "target": "330kV及以上",
+      "type": "针对对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "220kV",
+      "type": "针对对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "110kV/66kV",
+      "type": "针对对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "35kV及以下",
+      "type": "针对对象"
+    },
+    {
+      "source": "外观检查",
+      "target": "电缆终端",
+      "type": "检查部位"
+    },
+    {
+      "source": "外观检查",
+      "target": "可见部分",
+      "type": "检查部位"
+    }
+  ]
+}

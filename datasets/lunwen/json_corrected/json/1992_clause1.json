@@ -1,0 +1,147 @@
+{
+  "entities": [
+    {
+      "name": "导地线",
+      "type": "电力设备",
+      "desc": "输电线路中的导线或地线"
+    },
+    {
+      "name": "钢芯铝绞线",
+      "type": "电力设备",
+      "desc": "由钢芯和铝绞线组成的导线"
+    },
+    {
+      "name": "钢芯铝合金绞线",
+      "type": "电力设备",
+      "desc": "由钢芯和铝合金绞线组成的导线"
+    },
+    {
+      "name": "铝绞线",
+      "type": "电力设备",
+      "desc": "由铝绞线组成的导线"
+    },
+    {
+      "name": "铝合金绞线",
+      "type": "电力设备",
+      "desc": "由铝合金绞线组成的导线"
+    },
+    {
+      "name": "导线损伤",
+      "type": "故障现象",
+      "desc": "导线因外力或自然因素造成的损伤"
+    },
+    {
+      "name": "强度损失",
+      "type": "技术参数",
+      "desc": "导线断裂后剩余的抗拉强度"
+    },
+    {
+      "name": "总拉断力",
+      "type": "技术参数",
+      "desc": "导线的最大抗拉强度"
+    },
+    {
+      "name": "截面积损伤",
+      "type": "技术参数",
+      "desc": "导线损伤部分的截面积占总导电部分截面积的比例"
+    },
+    {
+      "name": "导电部分截面积",
+      "type": "技术参数",
+      "desc": "导线中用于传导电流的部分的截面积"
+    },
+    {
+      "name": "断股损伤截面",
+      "type": "故障现象",
+      "desc": "导线因损伤而断裂的部分截面积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "钢芯铝绞线与钢芯铝合金绞线：导线损伤范围导致强度损失在总拉断力的50%以上，且截面积损伤在总导电部分截面积的60%及以上。",
+      "type": "强制",
+      "subject": "导线损伤",
+      "action": "更换或修复",
+      "condition": "导线损伤范围导致强度损失在总拉断力的50%以上，且截面积损伤在总导电部分截面积的60%及以上",
+      "constraint": "导线损伤范围导致强度损失在总拉断力的50%以上，且截面积损伤在总导电部分截面积的60%及以上",
+      "related_entities": [
+        "钢芯铝绞线",
+        "钢芯铝合金绞线",
+        "导线损伤",
+        "强度损失",
+        "总拉断力",
+        "截面积损伤",
+        "导电部分截面积"
+      ]
+    },
+    {
+      "content": "铝绞线与铝合金绞线：断股损伤截面超过总面积60%",
+      "type": "强制",
+      "subject": "导线损伤",
+      "action": "更换或修复",
+      "condition": "铝绞线与铝合金绞线：断股损伤截面超过总面积60%",
+      "constraint": "断股损伤截面超过总面积60%",
+      "related_entities": [
+        "铝绞线",
+        "铝合金绞线",
+        "导线损伤",
+        "断股损伤截面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "导线损伤",
+      "target": "强度损失",
+      "type": "影响"
+    },
+    {
+      "source": "导线损伤",
+      "target": "截面积损伤",
+      "type": "影响"
+    },
+    {
+      "source": "导线损伤",
+      "target": "导电部分截面积",
+      "type": "影响"
+    },
+    {
+      "source": "导线损伤",
+      "target": "断股损伤截面",
+      "type": "影响"
+    },
+    {
+      "source": "导线损伤",
+      "target": "钢芯铝绞线",
+      "type": "涉及"
+    },
+    {
+      "source": "导线损伤",
+      "target": "钢芯铝合金绞线",
+      "type": "涉及"
+    },
+    {
+      "source": "导线损伤",
+      "target": "铝绞线",
+      "type": "涉及"
+    },
+    {
+      "source": "导线损伤",
+      "target": "铝合金绞线",
+      "type": "涉及"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1992,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7dcdcc1bf4d13f7b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1992_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

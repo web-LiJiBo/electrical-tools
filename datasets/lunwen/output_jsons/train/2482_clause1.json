@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "链式STATCOM",
+      "type": "电力设备",
+      "desc": "一种用于电力系统无功功率补偿的装置"
+    },
+    {
+      "name": "实际输出电流",
+      "type": "电气参数",
+      "desc": "链式STATCOM实际输出的电流值"
+    },
+    {
+      "name": "总谐波含量",
+      "type": "电气参数",
+      "desc": "实际输出电流中各次谐波分量的总和占基波分量的比例"
+    },
+    {
+      "name": "IN",
+      "type": "额定值",
+      "desc": "链式STATCOM输出额定电流值"
+    },
+    {
+      "name": "谐波补偿",
+      "type": "功能",
+      "desc": "链式STATCOM对输出电流中的谐波分量进行补偿的功能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当链式STATCOM不进行谐波补偿时，实际输出电流的总谐波含量应不大于2%IN",
+      "type": "强制",
+      "subject": "链式STATCOM",
+      "action": "输出电流",
+      "condition": "未启用谐波补偿功能",
+      "constraint": "总谐波含量≤2%IN",
+      "related_entities": [
+        "链式STATCOM",
+        "实际输出电流",
+        "总谐波含量",
+        "IN"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "链式STATCOM",
+      "target": "实际输出电流",
+      "type": "产生"
+    },
+    {
+      "source": "实际输出电流",
+      "target": "总谐波含量",
+      "type": "计算结果"
+    },
+    {
+      "source": "链式STATCOM",
+      "target": "IN",
+      "type": "额定值"
+    },
+    {
+      "source": "链式STATCOM",
+      "target": "谐波补偿",
+      "type": "功能实现"
+    }
+  ]
+}

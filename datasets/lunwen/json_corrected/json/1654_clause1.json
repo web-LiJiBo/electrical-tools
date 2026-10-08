@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "工频电压",
+      "type": "电气参数",
+      "desc": "电力系统中使用的频率为50Hz或60Hz的交流电压"
+    },
+    {
+      "name": "2kV",
+      "type": "数值量",
+      "desc": "工频电压的具体数值"
+    },
+    {
+      "name": "1min",
+      "type": "时间量",
+      "desc": "持续时间的具体数值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "施加工频电压2kV，持续时间1min",
+      "type": "强制",
+      "subject": "试验设备",
+      "action": "施加电压",
+      "condition": "进行绝缘性能测试时",
+      "constraint": "工频电压2kV，持续时间1min",
+      "related_entities": [
+        "工频电压",
+        "2kV",
+        "1min"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "工频电压",
+      "target": "2kV",
+      "type": "数值对应"
+    },
+    {
+      "source": "工频电压",
+      "target": "1min",
+      "type": "持续时间对应"
+    },
+    {
+      "source": "试验设备",
+      "target": "工频电压",
+      "type": "施加对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1654,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "e5ed415a4a87e23c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1654_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "特高压三跨",
+      "type": "输电线路",
+      "desc": "跨越重要区域的特高压输电线路"
+    },
+    {
+      "name": "常规线路",
+      "type": "输电线路",
+      "desc": "非跨越重要区域的常规输电线路"
+    },
+    {
+      "name": "导线",
+      "type": "输电导线",
+      "desc": "架设在输电杆塔上的输电导体"
+    },
+    {
+      "name": "地线",
+      "type": "输电地线",
+      "desc": "架设在输电杆塔上的输电地线导体"
+    },
+    {
+      "name": "覆冰厚度",
+      "type": "气象参数",
+      "desc": "输电线路覆冰时导线或地线表面的冰层厚度"
+    },
+    {
+      "name": "冰区",
+      "type": "地理环境",
+      "desc": "覆冰现象频繁发生的地理区域"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对15mm及以上冰区的特高压‘三跨’，导线最大设计验算覆冰厚度应比同区域常规线路增加10mm，地线设计验算覆冰厚度增加15mm",
+      "type": "强制",
+      "subject": "特高压三跨",
+      "action": "设计验算覆冰厚度",
+      "condition": "15mm及以上冰区",
+      "constraint": "导线增加10mm，地线增加15mm",
+      "related_entities": [
+        "特高压三跨",
+        "常规线路",
+        "导线",
+        "地线",
+        "覆冰厚度"
+      ]
+    },
+    {
+      "content": "对覆冰区其它电压等级‘三跨’，导线最大设计验算覆冰厚度应比同区域常规线路增加10mm，地线设计验算覆冰厚度增加15mm",
+      "type": "强制",
+      "subject": "覆冰区其它电压等级三跨",
+      "action": "设计验算覆冰厚度",
+      "condition": "覆冰区其它电压等级‘三跨’",
+      "constraint": "导线增加10mm，地线增加15mm",
+      "related_entities": [
+        "覆冰区其它电压等级三跨",
+        "常规线路",
+        "导线",
+        "地线",
+        "覆冰厚度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "特高压三跨",
+      "target": "导线",
+      "type": "包含"
+    },
+    {
+      "source": "特高压三跨",
+      "target": "地线",
+      "type": "包含"
+    },
+    {
+      "source": "常规线路",
+      "target": "导线",
+      "type": "包含"
+    },
+    {
+      "source": "常规线路",
+      "target": "地线",
+      "type": "包含"
+    },
+    {
+      "source": "覆冰区其它电压等级三跨",
+      "target": "导线",
+      "type": "包含"
+    },
+    {
+      "source": "覆冰区其它电压等级三跨",
+      "target": "地线",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1999,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "12f006954e15a151",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1999_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

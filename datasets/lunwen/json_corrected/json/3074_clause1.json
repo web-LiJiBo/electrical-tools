@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "极导线",
+      "type": "电力设施",
+      "desc": "特高压直流输电线路的极导线"
+    },
+    {
+      "name": "建筑物",
+      "type": "建筑",
+      "desc": "长期居住的人类建筑物"
+    },
+    {
+      "name": "5m",
+      "type": "距离",
+      "desc": "极导线与建筑物之间的最小安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "极导线地面投影外侧5m范围内不得有长期住人的建筑物。",
+      "type": "强制",
+      "subject": "极导线",
+      "action": "设置安全防护距离",
+      "condition": "新建或改造特高压直流输电线路工程",
+      "constraint": "极导线与建筑物之间保持至少5m的安全距离",
+      "related_entities": [
+        "极导线",
+        "建筑物"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "极导线",
+      "target": "建筑物",
+      "type": "安全防护距离"
+    },
+    {
+      "source": "建筑物",
+      "target": "极导线",
+      "type": "安全防护距离"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3074,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f015a55aa27e4305",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3074_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

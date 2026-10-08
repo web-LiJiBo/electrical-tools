@@ -1,0 +1,129 @@
+{
+  "entities": [
+    {
+      "name": "开关柜",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中进行电能分配和控制的成套装置"
+    },
+    {
+      "name": "柜体",
+      "type": "电力设备部件",
+      "desc": "开关柜的主体结构部分"
+    },
+    {
+      "name": "互感器外壳",
+      "type": "电力设备部件",
+      "desc": "电流互感器或电压互感器的外部防护壳"
+    },
+    {
+      "name": "底座",
+      "type": "电力设备部件",
+      "desc": "支撑开关柜的底部结构件"
+    },
+    {
+      "name": "可开启屏门",
+      "type": "电力设备部件",
+      "desc": "开关柜内部可打开的屏门"
+    },
+    {
+      "name": "CT",
+      "type": "电力设备部件",
+      "desc": "电流互感器，用于测量电路中的电流"
+    },
+    {
+      "name": "二次短路接地",
+      "type": "电气安全措施",
+      "desc": "在CT二次回路中设置短路点并接地，防止过电压损坏设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柜体、互感器外壳、底座应可靠接地",
+      "type": "强制",
+      "subject": "开关柜",
+      "action": "接地",
+      "condition": "安装完成",
+      "constraint": "接地电阻≤4Ω",
+      "related_entities": [
+        "柜体",
+        "互感器外壳",
+        "底座"
+      ]
+    },
+    {
+      "content": "装有电器可开启屏门的接地用4mm2软铜导线可靠接地",
+      "type": "强制",
+      "subject": "可开启屏门",
+      "action": "接地",
+      "condition": "安装完成",
+      "constraint": "接地电阻≤4Ω",
+      "related_entities": [
+        "可开启屏门",
+        "柜体"
+      ]
+    },
+    {
+      "content": "备用CT二次短路接地",
+      "type": "强制",
+      "subject": "CT",
+      "action": "短路接地",
+      "condition": "安装完成",
+      "constraint": "短路点采用专用短路片或短路线",
+      "related_entities": [
+        "CT",
+        "二次短路接地"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柜体",
+      "target": "开关柜",
+      "type": "组成"
+    },
+    {
+      "source": "互感器外壳",
+      "target": "开关柜",
+      "type": "组成"
+    },
+    {
+      "source": "底座",
+      "target": "开关柜",
+      "type": "组成"
+    },
+    {
+      "source": "可开启屏门",
+      "target": "开关柜",
+      "type": "组成"
+    },
+    {
+      "source": "CT",
+      "target": "开关柜",
+      "type": "组成"
+    },
+    {
+      "source": "柜体",
+      "target": "可开启屏门",
+      "type": "支撑"
+    },
+    {
+      "source": "CT",
+      "target": "二次短路接地",
+      "type": "应用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 5,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b54dcb90dc78038a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\5_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

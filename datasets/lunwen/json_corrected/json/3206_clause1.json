@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "顶层油温温升",
+      "type": "温度",
+      "desc": "主变压器顶层油温的温升值"
+    },
+    {
+      "name": "绕组平均温升",
+      "type": "温度",
+      "desc": "主变压器绕组平均温升值"
+    },
+    {
+      "name": "绕组热点温升",
+      "type": "温度",
+      "desc": "主变压器绕组热点温升值"
+    },
+    {
+      "name": "油箱、铁心及构件表面温升",
+      "type": "温度",
+      "desc": "主变压器油箱、铁心及构件表面温升值"
+    },
+    {
+      "name": "各电压等级主变压器",
+      "type": "设备",
+      "desc": "各电压等级的主变压器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "各电压等级主变压器顶层油温温升不超过55℃",
+      "type": "强制",
+      "subject": "各电压等级主变压器",
+      "action": "顶层油温温升控制",
+      "condition": "运行中",
+      "constraint": "顶层油温温升≤55℃",
+      "related_entities": [
+        "顶层油温温升"
+      ]
+    },
+    {
+      "content": "各电压等级主变压器绕组平均温升不超过65℃",
+      "type": "强制",
+      "subject": "各电压等级主变压器",
+      "action": "绕组平均温升控制",
+      "condition": "运行中",
+      "constraint": "绕组平均温升≤65℃",
+      "related_entities": [
+        "绕组平均温升"
+      ]
+    },
+    {
+      "content": "各电压等级主变压器绕组热点温升不超过78℃",
+      "type": "强制",
+      "subject": "各电压等级主变压器",
+      "action": "绕组热点温升控制",
+      "condition": "运行中",
+      "constraint": "绕组热点温升≤78℃",
+      "related_entities": [
+        "绕组热点温升"
+      ]
+    },
+    {
+      "content": "各电压等级主变压器油箱、铁心及构件表面温升不超过80℃",
+      "type": "强制",
+      "subject": "各电压等级主变压器",
+      "action": "油箱、铁心及构件表面温升控制",
+      "condition": "运行中",
+      "constraint": "油箱、铁心及构件表面温升≤80℃",
+      "related_entities": [
+        "油箱、铁心及构件表面温升"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "顶层油温温升",
+      "target": "各电压等级主变压器",
+      "type": "监控"
+    },
+    {
+      "source": "绕组平均温升",
+      "target": "各电压等级主变压器",
+      "type": "监控"
+    },
+    {
+      "source": "绕组热点温升",
+      "target": "各电压等级主变压器",
+      "type": "监控"
+    },
+    {
+      "source": "油箱、铁心及构件表面温升",
+      "target": "各电压等级主变压器",
+      "type": "监控"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3206,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fd1f0e315b0e26ba",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3206_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

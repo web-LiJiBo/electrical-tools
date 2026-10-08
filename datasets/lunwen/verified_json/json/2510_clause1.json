@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "接地线",
+      "type": "电力设备",
+      "desc": "用于将电气设备与大地连接的导体"
+    },
+    {
+      "name": "接地极",
+      "type": "电力设备",
+      "desc": "埋设在地下的金属导体，用于提供接地通路"
+    },
+    {
+      "name": "电弧焊",
+      "type": "焊接工艺",
+      "desc": "利用电弧热能进行焊接的方法"
+    },
+    {
+      "name": "搭接焊接",
+      "type": "焊接方式",
+      "desc": "将两根或多根金属条通过焊接形成搭接结构的焊接方式"
+    },
+    {
+      "name": "扁钢",
+      "type": "材料",
+      "desc": "一种截面为矩形的金属板材"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地线、接地极采用电弧焊连接时应采用搭接焊接，其搭接长度应符合下列规定：1扁钢应为其宽度的2倍且不得少于3个棱边焊接。",
+      "type": "强制",
+      "subject": "接地线、接地极",
+      "action": "焊接连接",
+      "condition": "采用电弧焊连接",
+      "constraint": "搭接焊接，扁钢搭接长度为其宽度的2倍且不得少于3个棱边焊接",
+      "related_entities": [
+        "接地线",
+        "接地极",
+        "电弧焊",
+        "搭接焊接",
+        "扁钢"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地线",
+      "target": "接地极",
+      "type": "连接"
+    },
+    {
+      "source": "接地线",
+      "target": "电弧焊",
+      "type": "焊接工艺"
+    },
+    {
+      "source": "接地极",
+      "target": "电弧焊",
+      "type": "焊接工艺"
+    },
+    {
+      "source": "电弧焊",
+      "target": "搭接焊接",
+      "type": "焊接方式"
+    },
+    {
+      "source": "扁钢",
+      "target": "搭接焊接",
+      "type": "焊接对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2510,
+      "source_row_id": "2510",
+      "clause_index": 1,
+      "source_text": "接地线、接地极采用电弧焊连接时应采用搭接焊接，其搭接长度应符合下列规定：1扁钢应为其宽度的2倍且不得少于3个棱边焊接。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.656314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "受电电压",
+      "type": "电力参数",
+      "desc": "用户终端设备接入电网的电压等级"
+    },
+    {
+      "name": "城网允许的最大电压损失",
+      "type": "电力参数",
+      "desc": "城市配电网允许的最大电压降值"
+    },
+    {
+      "name:": "220V单相供电电压",
+      "type": "电力参数",
+      "desc": "用户终端设备接入电网的220V单相供电电压"
+    },
+    {
+      "name": "电压允许偏差",
+      "type": "电力参数",
+      "desc": "用户终端设备接入电网的电压允许波动范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "保证各类用户受电电压质量合格是确定各级城网允许的最大电压损失的前提",
+      "type": "强制",
+      "subject": "各级城网",
+      "action": "确定允许的最大电压损失",
+      "condition": "保证各类用户受电电压质量合格",
+      "constraint": "无",
+      "related_entities": [
+        "受电电压",
+        "城网允许的最大电压损失"
+      ]
+    },
+    {
+      "content": "220V单相供电电压允许偏差为额定电压的+7.5％与‐10％",
+      "type": "强制",
+      "subject": "220V单相供电用户",
+      "action": "确保电压质量合格",
+      "condition": "220V单相供电",
+      "constraint": "电压允许偏差为额定电压的+7.5％与‐10％",
+      "related_entities": [
+        "220V单相供电电压",
+        "电压允许偏差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "受电电压",
+      "target": "城网允许的最大电压损失",
+      "type": "影响"
+    },
+    {
+      "source": "220V单相供电电压",
+      "target": "电压允许偏差",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1980,
+      "source_row_id": "1980",
+      "clause_index": 2,
+      "source_text": "保证各类用户受电电压质量合格是确定各级城网允许的最大电压损失的前提。（3）220V单相供电电压允许偏差为额定电压的+7.5％与‐10％"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.987969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "光电式电流互感器",
+      "type": "设备",
+      "desc": "一种利用光电效应原理测量电流的互感器"
+    },
+    {
+      "name": "巡检",
+      "type": "操作",
+      "desc": "对设备进行定期检查和维护"
+    },
+    {
+      "name": "例行试验",
+      "type": "操作",
+      "desc": "对设备进行定期的功能测试和性能评估"
+    }
+  ],
+  "rules": [
+    {
+      "content": "光电式电流互感器巡检基准周期为1月",
+      "type": "强制",
+      "subject": "光电式电流互感器",
+      "action": "巡检",
+      "condition": "设备运行期间",
+      "constraint": "每月一次",
+      "related_entities": [
+        "光电式电流互感器",
+        "巡检"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "光电式电流互感器",
+      "target": "巡检",
+      "type": "接受"
+    },
+    {
+      "source": "光电式电流互感器",
+      "target": "例行试验",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1655,
+      "source_row_id": "1655",
+      "clause_index": 2,
+      "source_text": "光电式电流互感器巡检及例行试验规定：巡检基准周期为1月"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.6912,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.619158+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

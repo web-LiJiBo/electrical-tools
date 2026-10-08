@@ -1,0 +1,35 @@
+{
+  "entities": [
+    {
+      "name": "链式STATCOM",
+      "type": "电力设备",
+      "desc": "一种串联补偿的静止无功补偿装置"
+    },
+    {
+      "name": "过负荷能力",
+      "type": "电力性能参数",
+      "desc": "设备在超过额定负载情况下的运行能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应与链式STATCOM过负荷能力相适应",
+      "type": "强制",
+      "subject": "链式STATCOM",
+      "action": "设计与配置",
+      "condition": "系统运行方式",
+      "constraint": "过负荷能力",
+      "related_entities": [
+        "链式STATCOM",
+        "过负荷能力"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "链式STATCOM",
+      "target": "过负荷能力",
+      "type": "匹配"
+    }
+  ]
+}

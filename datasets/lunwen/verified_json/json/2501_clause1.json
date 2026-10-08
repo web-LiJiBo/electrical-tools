@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "故障电流分流系数",
+      "type": "电力参数",
+      "desc": "接地网入地对称电流与接地故障对称电流的比值"
+    },
+    {
+      "name": "接地网入地对称电流Ig",
+      "type": "电力参数",
+      "desc": "接地网入地的对称电流"
+    },
+    {
+      "name": "接地故障对称电流If",
+      "type": "电力参数",
+      "desc": "接地故障时的对称电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地网入地对称电流Ig与接地故障对称电流If的比值",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "计算并设定故障电流分流系数",
+      "condition": "电力系统设计阶段",
+      "constraint": "故障电流分流系数应满足电力系统安全稳定运行的要求",
+      "related_entities": [
+        "故障电流分流系数",
+        "接地网入地对称电流Ig",
+        "接地故障对称电流If"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "故障电流分流系数",
+      "target": "接地网入地对称电流Ig",
+      "type": "计算依据"
+    },
+    {
+      "source": "故障电流分流系数",
+      "target": "接地故障对称电流If",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2501,
+      "source_row_id": "2501",
+      "clause_index": 1,
+      "source_text": "故障电流分流系数：接地网入地对称电流Ig与接地故障对称电流If的比值。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.644315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

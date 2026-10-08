@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "最大日温差",
+      "type": "运行参数",
+      "desc": "电网设备在一天内最高温度与最低温度之差"
+    },
+    {
+      "name": "32K",
+      "type": "数值约束",
+      "desc": "最大日温差的上限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "最大日温差不应超过32K",
+      "type": "强制",
+      "subject": "电网设备",
+      "action": "运行维护",
+      "condition": "各电压等级",
+      "constraint": "32K",
+      "related_entities": [
+        "最大日温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最大日温差",
+      "target": "32K",
+      "type": "约束条件"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "杆塔接地电阻",
+      "type": "电力设备",
+      "desc": "电力系统中用于接地的杆塔结构"
+    },
+    {
+      "name": "一般地段",
+      "type": "地理环境",
+      "desc": "电力线路经过的一般区域"
+    },
+    {
+      "name": "雷击多发区",
+      "type": "地理环境",
+      "desc": "电力线路经过的雷电活动频繁的区域"
+    },
+    {
+      "name": "变电站进山线段",
+      "type": "地理环境",
+      "desc": "变电站至山区的输电线路段"
+    },
+    {
+      "name": "换流站进出线段",
+      "type": "地理环境",
+      "desc": "换流站至外部电网的输电线路段"
+    },
+    {
+      "name": "特殊地点",
+      "type": "地理环境",
+      "desc": "电力线路经过的特殊地理环境或气候条件区域"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般地段杆塔接地电阻检测周期为每5年检测一次",
+      "type": "强制",
+      "subject": "电力企业",
+      "action": "定期检测杆塔接地电阻",
+      "condition": "在一般地段的电力线路运行期间",
+      "constraint": "每5年进行一次",
+      "related_entities": [
+        "杆塔接地电阻",
+        "一般地段"
+      ]
+    },
+    {
+      "content": "雷击多发区杆塔接地检测周期为每2~3年检测一次",
+      "type": "强制",
+      "subject": "电力企业",
+      "action": "定期检测杆塔接地电阻",
+      "condition": "在雷击多发区的电力线路运行期间",
+      "constraint": "每2~3年进行一次",
+      "related_entities": [
+        "杆塔接地电阻",
+        "雷击多发区"
+      ]
+    },
+    {
+      "content": "变电站进山线段3km、换流站进出线段3km及特殊地点，杆塔接地电阻检测周期为每1年一次",
+      "type": "强制",
+      "subject": "电力企业",
+      "action": "定期检测杆塔接地电阻",
+      "condition": "在变电站进山线段3km、换流站进出线段3km及特殊地点的电力线路运行期间",
+      "constraint": "每年进行一次",
+      "related_entities": [
+        "杆塔接地电阻",
+        "变电站进山线段",
+        "换流站进出线段",
+        "特殊地点"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "杆塔接地电阻",
+      "target": "一般地段",
+      "type": "检测周期"
+    },
+    {
+      "source": "杆塔接地电阻",
+      "target": "雷击多发区",
+      "type": "检测周期"
+    },
+    {
+      "source": "杆塔接地电阻",
+      "target": "变电站进山线段",
+      "type": "检测周期"
+    },
+    {
+      "source": "杆塔接地电阻",
+      "target": "换流站进出线段",
+      "type": "检测周期"
+    },
+    {
+      "source": "杆塔接地电阻",
+      "target": "特殊地点",
+      "type": "检测周期"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 682,
+      "source_row_id": "682",
+      "clause_index": 1,
+      "source_text": "一般地段杆塔接地电阻检测周期为每5年检测一次，雷击多发区杆塔接地检测周期为每2~3年检测一次，变电站进山线段3km、换流站进出线段3km及特殊地点，杆塔接地电阻检测周期为每1年一次"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.506485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

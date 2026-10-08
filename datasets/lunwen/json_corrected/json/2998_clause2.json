@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "接地极",
+      "type": "电力设备",
+      "desc": "电力系统中用于接地的金属构件"
+    },
+    {
+      "name": "水的沸点",
+      "type": "物理参数",
+      "desc": "水在一定压力下的沸腾温度"
+    },
+    {
+      "name": "海拔",
+      "type": "地理参数",
+      "desc": "地面相对于海平面的高度"
+    },
+    {
+      "name": "水压",
+      "type": "物理参数",
+      "desc": "作用于水面上的压力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极任意点的最高温度不得超过所在位置的水的沸点",
+      "type": "强制",
+      "subject": "接地极",
+      "action": "运行",
+      "condition": "任何情况下",
+      "constraint": "最高温度≤水的沸点",
+      "related_entities": [
+        "接地极",
+        "水的沸点"
+      ]
+    },
+    {
+      "content": "设计时应计及海拔和水压对水沸点的影响",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "设计",
+      "condition": "设计接地极时",
+      "constraint": "考虑海拔和水压影响",
+      "related_entities": [
+        "接地极",
+        "水的沸点",
+        "海拔",
+        "水压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极",
+      "target": "水的沸点",
+      "type": "温度限制"
+    },
+    {
+      "source": "设计人员",
+      "target": "接地极",
+      "type": "设计对象"
+    },
+    {
+      "source": "设计人员",
+      "target": "水的沸点",
+      "type": "参考依据"
+    },
+    {
+      "source": "设计人员",
+      "target": "海拔",
+      "type": "参考依据"
+    },
+    {
+      "source": "设计人员",
+      "target": "水压",
+      "type": "参考依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2998,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "042f3715706f5bd5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2998_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

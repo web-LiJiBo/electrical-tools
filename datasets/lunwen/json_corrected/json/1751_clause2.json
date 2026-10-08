@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体湿度",
+      "type": "电力设备状态参数",
+      "desc": "六氟化硫气体的湿度含量"
+    },
+    {
+      "name": "新充（补）气",
+      "type": "操作行为",
+      "desc": "向电气设备中充入或补充六氟化硫气体"
+    },
+    {
+      "name": "48小时之后至2周之内",
+      "type": "时间范围",
+      "desc": "从新充（补）气后48小时开始到2周内的时间段"
+    },
+    {
+      "name": "测量",
+      "type": "检测行为",
+      "desc": "对电力设备进行检测以获取其状态参数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "新充（补）气48小时之后至2周之内应测量一次",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "测量SF6气体湿度",
+      "condition": "新充（补）气后48小时至2周内",
+      "constraint": "至少测量一次",
+      "related_entities": [
+        "SF6气体湿度",
+        "新充（补）气"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体湿度",
+      "target": "新充（补）气",
+      "type": "检测对象"
+    },
+    {
+      "source": "SF6气体湿度",
+      "target": "测量",
+      "type": "检测行为"
+    },
+    {
+      "source": "新充（补）气",
+      "target": "测量",
+      "type": "触发事件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1751,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b033a9426ed9db3d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1751_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

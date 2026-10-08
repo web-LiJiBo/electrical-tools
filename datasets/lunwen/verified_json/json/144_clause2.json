@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "电压互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电压的电力设备"
+    },
+    {
+      "name": "一次端子",
+      "type": "电力设备部件",
+      "desc": "电压互感器的一次侧接线端子"
+    },
+    {
+      "name": "机械强度",
+      "type": "技术参数",
+      "desc": "设备抵抗外力破坏的能力"
+    },
+    {
+      "name": "试验载荷",
+      "type": "技术参数",
+      "desc": "对设备进行机械强度试验时施加的力"
+    },
+    {
+      "name": "最高电压",
+      "type": "技术参数",
+      "desc": "设备能够承受的最大电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "机械强度要求设备最高电压为72.5kV的电压互感器一次端子的任意方向静态承受试验载荷为500N",
+      "type": "强制",
+      "subject": "电压互感器",
+      "action": "承受试验载荷",
+      "condition": "最高电压为72.5kV",
+      "constraint": "任意方向静态承受试验载荷为500N",
+      "related_entities": [
+        "电压互感器",
+        "一次端子",
+        "机械强度",
+        "试验载荷"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电压互感器",
+      "target": "一次端子",
+      "type": "包含"
+    },
+    {
+      "source": "一次端子",
+      "target": "机械强度",
+      "type": "体现"
+    },
+    {
+      "source": "一次端子",
+      "target": "试验载荷",
+      "type": "承受"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 144,
+      "source_row_id": "144",
+      "clause_index": 2,
+      "source_text": "机械强度要求设备最高电压为72.5kV的电压互感器一次端子的任意方向静态承受试验载荷为500N"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.909600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

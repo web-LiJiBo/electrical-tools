@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "“隔离开关导电回路的设计应能耐受1.1倍额定电流而不超过允许温升”",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 313,
+      "source_row_id": "313",
+      "clause_index": 1,
+      "source_text": "“隔离开关导电回路的设计应能耐受1.1倍额定电流而不超过允许温升”"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.088604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

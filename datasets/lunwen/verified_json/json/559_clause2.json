@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "锚孔直径D",
+      "type": "尺寸参数",
+      "desc": "锚孔的直径大小"
+    },
+    {
+      "name": "锚筋或地脚螺栓直径d",
+      "type": "尺寸参数",
+      "desc": "锚筋或地脚螺栓的直径大小"
+    },
+    {
+      "name": "2倍~3倍",
+      "type": "倍数范围",
+      "desc": "锚孔直径D与锚筋或地脚螺栓直径d的倍数范围"
+    },
+    {
+      "name": "d+50mm",
+      "type": "最小值",
+      "desc": "锚孔直径D的最小值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "锚孔直径D，宜取锚筋或地脚螺栓直径d的2倍~3倍，并不应小于d+50mm",
+      "type": "强制",
+      "subject": "锚孔直径D",
+      "action": "设计",
+      "condition": "锚筋或地脚螺栓直径d确定后",
+      "constraint": "2倍~3倍, d+50mm",
+      "related_entities": [
+        "锚孔直径D",
+        "锚筋或地脚螺栓直径d"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "锚孔直径D",
+      "target": "锚筋或地脚螺栓直径d",
+      "type": "参考依据"
+    },
+    {
+      "source": "锚孔直径D",
+      "target": "2倍~3倍",
+      "type": "倍数关系"
+    },
+    {
+      "source": "锚孔直径D",
+      "target": "d+50mm",
+      "type": "最小值关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 559,
+      "source_row_id": "559",
+      "clause_index": 2,
+      "source_text": "锚孔直径D，宜取锚筋或地脚螺栓直径d的2倍~3倍，并不应小于d+50mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.362482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

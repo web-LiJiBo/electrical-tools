@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "MOV冗余单元",
+      "type": "电力设备",
+      "desc": "用于保护电力系统中电容器组的金属氧化物避雷器冗余单元"
+    },
+    {
+      "name": "额定能量",
+      "type": "电力参数",
+      "desc": "电力系统中电容器组的额定储能能力"
+    },
+    {
+      "name": "MOV单元",
+      "type": "电力设备",
+      "desc": "金属氧化物避雷器的基本单元"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个平台应有MOV冗余单元，冗余单元的总容量不应小于额定能量的10%，且不少于2个MOV单元。",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "设计电力系统",
+      "condition": "电容器组存在MOV冗余需求",
+      "constraint": "MOV冗余单元总容量≥额定能量*10%且≥2个MOV单元",
+      "related_entities": [
+        "MOV冗余单元",
+        "额定能量",
+        "MOV单元"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "MOV冗余单元",
+      "target": "额定能量",
+      "type": "基于"
+    },
+    {
+      "source": "MOV冗余单元",
+      "target": "MOV单元",
+      "type": "由...组成"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3087,
+      "source_row_id": "3096",
+      "clause_index": 1,
+      "source_text": "每个平台应有MOV冗余单元，冗余单元的总容量不应小于额定能量的10%，且不少于2个MOV单元。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.368315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

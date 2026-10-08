@@ -1,0 +1,120 @@
+{
+  "entities": [
+    {
+      "name": "阀冷系统",
+      "type": "电力设备",
+      "desc": "阀冷却系统"
+    },
+    {
+      "name": "供电电源",
+      "type": "电力系统",
+      "desc": "为阀冷系统提供电能的电源"
+    },
+    {
+      "name": "电压",
+      "type": "电气参数",
+      "desc": "供电电源提供的电能参数之一"
+    },
+    {
+      "name": "频率",
+      "type": "电气参数",
+      "desc": "供电电源提供的电能参数之一"
+    },
+    {
+      "name": "过电压",
+      "type": "电气参数",
+      "desc": "供电电源在暂态过程中的异常电压值"
+    },
+    {
+      "name": "电机",
+      "type": "电力设备",
+      "desc": "阀冷系统中使用的电动机"
+    },
+    {
+      "name": "开关",
+      "type": "电力设备",
+      "desc": "阀冷系统中使用的断路器或接触器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "稳态条件下，阀冷系统供电电源电压和频率变化范围±10%",
+      "type": "强制",
+      "subject": "阀冷系统",
+      "action": "运行",
+      "condition": "稳态条件下",
+      "constraint": "供电电源电压变化范围±10%，供电电源频率变化范围±10%",
+      "related_entities": [
+        "阀冷系统",
+        "供电电源",
+        "电压",
+        "频率"
+      ]
+    },
+    {
+      "content": "暂态过程中，阀冷系统供电电源最大过电压为1.5倍100ms",
+      "type": "强制",
+      "subject": "阀冷系统",
+      "action": "运行",
+      "condition": "暂态过程中",
+      "constraint": "供电电源最大过电压为1.5倍额定电压，持续时间100ms",
+      "related_entities": [
+        "阀冷系统",
+        "供电电源",
+        "过电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀冷系统",
+      "target": "供电电源",
+      "type": "供电"
+    },
+    {
+      "source": "供电电源",
+      "target": "电压",
+      "type": "提供"
+    },
+    {
+      "source": "供电电源",
+      "target": "频率",
+      "type": "提供"
+    },
+    {
+      "source": "供电电源",
+      "target": "过电压",
+      "type": "提供"
+    },
+    {
+      "source": "阀冷系统",
+      "target": "电机",
+      "type": "使用"
+    },
+    {
+      "source": "阀冷系统",
+      "target": "开关",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2828,
+      "source_row_id": "2837",
+      "clause_index": 2,
+      "source_text": "稳态条件下，阀冷系统供电电源电压和频率变化范围±10%。暂态过程中，阀冷系统供电电源最大过电压为1.5倍100ms。上述情况下，阀冷系统各类电机及开关都应正常运行。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.044314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

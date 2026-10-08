@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于接通或断开电路"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验方法",
+      "desc": "检测电气设备在特定电压下局部放电量的方法"
+    },
+    {
+      "name": "套管",
+      "type": "电力设备部件",
+      "desc": "连接电缆与高压电气设备的绝缘部件"
+    },
+    {
+      "name": "GB/T4109",
+      "type": "国家标准",
+      "desc": "中国国家标准，规定了电力设备局部放电测量方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "完整的断路器一般不需要进行局部放电试验。",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "不进行局部放电试验",
+      "condition": "断路器未采用任何需要局部放电试验的元件",
+      "constraint": "无",
+      "related_entities": [
+        "断路器",
+        "局部放电试验"
+      ]
+    },
+    {
+      "content": "如果断路器采用的某些元件有相关的标准，且包括有局部放电测量(例如套管，见GB/T4109)时，制造厂应提供证据，说明这些元件已按相关标准通过了规定的局部放电试验。",
+      "type": "强制",
+      "subject": "断路器制造厂",
+      "action": "提供局部放电试验合格证明",
+      "condition": "断路器采用的元件有GB/T4109等标准要求进行局部放电试验",
+      "constraint": "GB/T4109",
+      "related_entities": [
+        "断路器",
+        "局部放电试验",
+        "套管",
+        "GB/T4109"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "局部放电试验",
+      "type": "无需进行"
+    },
+    {
+      "source": "断路器",
+      "target": "套管",
+      "type": "包含"
+    },
+    {
+      "source": "断路器制造厂",
+      "target": "断路器",
+      "type": "制造"
+    },
+    {
+      "source": "断路器制造厂",
+      "target": "局部放电试验",
+      "type": "提供证明"
+    },
+    {
+      "source": "套管",
+      "target": "GB/T4109",
+      "type": "符合标准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1686,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a1ac44291c50dbdb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1686_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

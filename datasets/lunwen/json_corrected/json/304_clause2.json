@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "直流电子式电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量直流电流的电子式互感器"
+    },
+    {
+      "name": "直流电流标准装置",
+      "type": "计量设备",
+      "desc": "用于产生标准直流电流的装置"
+    },
+    {
+      "name": "额定电流",
+      "type": "参数值",
+      "desc": "直流电子式电流互感器的额定工作电流"
+    },
+    {
+      "name": "电流比误差",
+      "type": "测量结果",
+      "desc": "直流电子式电流互感器与标准装置之间的电流比差异"
+    },
+    {
+      "name": "测量电流",
+      "type": "参数值",
+      "desc": "实际注入直流电子式电流互感器的一次侧电流值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "采用直接比较法校准直流电子式电流互感器电流比误差",
+      "type": "强制",
+      "subject": "直流电子式电流互感器校准人员",
+      "action": "进行校准",
+      "condition": "在一次侧注入额定电流的10％、20％、50％、80％、100％",
+      "constraint": "同时读取直流电流标准装置和被校准直流电子式电流互感器的输出",
+      "related_entities": [
+        "直流电子式电流互感器",
+        "直流电流标准装置"
+      ]
+    },
+    {
+      "content": "现场条件或测试设备无法满足试验要求时，可以适当减小测量电流及减少测量点",
+      "type": "强制",
+      "subject": "直流电子式电流互感器校准人员",
+      "action": "调整校准方案",
+      "condition": "现场条件或测试设备无法满足试验要求",
+      "constraint": "适当减小测量电流及减少测量点",
+      "related_entities": [
+        "直流电子式电流互感器",
+        "直流电流标准装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电子式电流互感器",
+      "target": "直流电流标准装置",
+      "type": "测量参考"
+    },
+    {
+      "source": "直流电子式电流互感器",
+      "target": "额定电流",
+      "type": "参数依赖"
+    },
+    {
+      "source": "直流电子式电流互感器",
+      "target": "电流比误差",
+      "type": "测量结果"
+    },
+    {
+      "source": "直流电子式电流互感器",
+      "target": "测量电流",
+      "type": "测量参数"
+    },
+    {
+      "source": "直流电流标准装置",
+      "target": "测量电流",
+      "type": "提供标准值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 304,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d6af7cce342daaa7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\304_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

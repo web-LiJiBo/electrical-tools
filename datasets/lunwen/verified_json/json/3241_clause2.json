@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "主要主部件",
+      "type": "电力设备",
+      "desc": "电力系统中的关键设备"
+    },
+    {
+      "name": "密封件",
+      "type": "电力设备零部件",
+      "desc": "电力设备中用于密封的部件"
+    },
+    {
+      "name": "隔膜胶囊",
+      "type": "电力设备零部件",
+      "desc": "电力设备中用于隔离或密封的弹性元件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主要主部件的运行寿命，密封件及隔膜胶囊：30年及以上。",
+      "type": "强制",
+      "subject": "电力设备制造商",
+      "action": "设计与制造",
+      "condition": "电力设备的设计与制造阶段",
+      "constraint": "主要主部件、密封件及隔膜胶囊的运行寿命均需达到30年及以上",
+      "related_entities": [
+        "主要主部件",
+        "密封件",
+        "隔膜胶囊"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主要主部件",
+      "target": "密封件",
+      "type": "包含"
+    },
+    {
+      "source": "主要主部件",
+      "target": "隔膜胶囊",
+      "type": "包含"
+    },
+    {
+      "source": "密封件",
+      "target": "隔膜胶囊",
+      "type": "并列"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3232,
+      "source_row_id": "3241",
+      "clause_index": 2,
+      "source_text": "主要主部件的运行寿命，密封件及隔膜胶囊：30年及以上。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.544364+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

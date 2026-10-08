@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压"
+    },
+    {
+      "name": "油箱",
+      "type": "电力设备部件",
+      "desc": "变压器中装有绝缘油的容器"
+    },
+    {
+      "name": "气体",
+      "type": "电力设备介质",
+      "desc": "变压器油箱内填充的气体"
+    },
+    {
+      "name": "试验压力",
+      "type": "技术参数",
+      "desc": "变压器油箱内部气体的压力值"
+    },
+    {
+      "name": "剩余压力",
+      "type": "技术参数",
+      "desc": "试验后油箱内部气体的压力值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油箱内部充有气体的密封式变压器应承受76kPa的试验压力。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "承受试验压力",
+      "condition": "油箱内部充有气体且为密封式",
+      "constraint": "试验压力为76kPa",
+      "related_entities": [
+        "变压器",
+        "油箱",
+        "气体"
+      ]
+    },
+    {
+      "content": "其剩余压力不得小于规定值的70%",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "保持剩余压力",
+      "condition": "油箱内部充有气体且为密封式",
+      "constraint": "剩余压力不得小于试验压力的70%",
+      "related_entities": [
+        "变压器",
+        "油箱",
+        "气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "油箱",
+      "type": "包含"
+    },
+    {
+      "source": "油箱",
+      "target": "气体",
+      "type": "填充"
+    },
+    {
+      "source": "试验压力",
+      "target": "变压器",
+      "type": "作用于"
+    },
+    {
+      "source": "剩余压力",
+      "target": "变压器",
+      "type": "作用于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 28,
+      "source_row_id": "28",
+      "clause_index": 2,
+      "source_text": "油箱内部充有气体的密封式变压器应承受76kPa的试验压力。其剩余压力不得小于规定值的70%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.782786+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

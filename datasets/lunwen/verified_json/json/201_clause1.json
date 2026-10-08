@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "海拔",
+      "type": "地理环境",
+      "desc": "电力设备安装地点的海拔高度"
+    },
+    {
+      "name": "冷却设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于散热的设备"
+    },
+    {
+      "name": "1000m",
+      "type": "海拔高度",
+      "desc": "海拔限制值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "海拔不超过1000m",
+      "type": "强制",
+      "subject": "冷却设备",
+      "action": "安装",
+      "condition": "海拔不超过1000m",
+      "constraint": "海拔不超过1000m",
+      "related_entities": [
+        "海拔",
+        "冷却设备"
+      ]
+    },
+    {
+      "content": "当冷却设备在高于1000m海拔的地区使用时，应考虑海拔的影响",
+      "type": "强制",
+      "subject": "冷却设备",
+      "action": "使用",
+      "condition": "海拔高于1000m",
+      "constraint": "海拔高于1000m",
+      "related_entities": [
+        "海拔",
+        "冷却设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "海拔",
+      "target": "冷却设备",
+      "type": "安装位置"
+    },
+    {
+      "source": "海拔",
+      "target": "冷却设备",
+      "type": "使用环境"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 201,
+      "source_row_id": "201",
+      "clause_index": 1,
+      "source_text": "户外环境e）海拔不超过1000m。当冷却设备在高于1000m海拔的地区使用时，应考虑海拔的影响"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.970602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

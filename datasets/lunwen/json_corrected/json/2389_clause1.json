@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压和电流"
+    },
+    {
+      "name": "地震烈度",
+      "type": "自然灾害强度",
+      "desc": "地震发生时，对地面及建筑物影响的程度"
+    },
+    {
+      "name": "地面水平加速度",
+      "type": "物理量",
+      "desc": "地震时地面水平方向的加速度"
+    },
+    {
+      "name": "地面垂直加速度",
+      "type": "物理量",
+      "desc": "地震时地面垂直方向的加速度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器应在地震烈度9度地区正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "地震烈度9度地区",
+      "constraint": "地面水平加速度4m/s2；地面垂直加速度2m/s2",
+      "related_entities": [
+        "变压器",
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "变压器应在地震烈度8度地区正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "地震烈度8度地区",
+      "constraint": "地面水平加速度2.5m/s2；地面垂直加速度1.25m/s2",
+      "related_entities": [
+        "变压器",
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "变压器应在地震烈度7度地区正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "地震烈度7度地区",
+      "constraint": "地面水平加速度2m/s2；地面垂直加速度1m/s2",
+      "related_entities": [
+        "变压器",
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "地震烈度",
+      "type": "适应性"
+    },
+    {
+      "source": "变压器",
+      "target": "地面水平加速度",
+      "type": "适应性"
+    },
+    {
+      "source": "变压器",
+      "target": "地面垂直加速度",
+      "type": "适应性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2389,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c1f41c212e04c0df",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2389_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "entities": [
+    {
+      "name": "冷却介质水",
+      "type": "介质",
+      "desc": "用于换流阀冷却的水"
+    },
+    {
+      "name": "换流阀",
+      "type": "设备",
+      "desc": "电力系统中用于直流输电的换流装置"
+    },
+    {
+      "name": "电导率",
+      "type": "参数",
+      "desc": "水中离子迁移能力的度量"
+    },
+    {
+      "name": "pH值",
+      "type": "参数",
+      "desc": "水溶液酸碱性的度量"
+    },
+    {
+      "name": "水压",
+      "type": "参数",
+      "desc": "水流动时的压力"
+    },
+    {
+      "name": "流速",
+      "type": "参数",
+      "desc": "水在管道中的流动速度"
+    },
+    {
+      "name": "水温",
+      "type": "参数",
+      "desc": "水的温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "冷却介质水应满足换流阀对水质、水压、流速及水温的要求",
+      "type": "强制",
+      "subject": "冷却介质水",
+      "action": "满足换流阀要求",
+      "condition": "应用于换流阀冷却系统",
+      "constraint": "水质、水压、流速、水温",
+      "related_entities": [
+        "冷却介质水",
+        "换流阀"
+      ]
+    },
+    {
+      "content": "电导率为0.1μS/m～0.5μS/m",
+      "type": "强制",
+      "subject": "冷却介质水",
+      "action": "控制电导率",
+      "condition": "应用于换流阀冷却系统",
+      "constraint": "0.1μS/m～0.5μS/m",
+      "related_entities": [
+        "冷却介质水",
+        "换流阀"
+      ]
+    },
+    {
+      "content": "pH值为6～8",
+      "type": "强制",
+      "subject": "冷却介质水",
+      "action": "控制pH值",
+      "condition": "应用于换流阀冷却系统",
+      "constraint": "6～8",
+      "related_entities": [
+        "冷却介质水",
+        "换流阀"
+      ]
+    },
+    {
+      "content": "水压为0.4Mpa～0.9Mpa",
+      "type": "强制",
+      "subject": "冷却介质水",
+      "action": "控制水压",
+      "condition": "应用于换流阀冷却系统",
+      "constraint": "0.4Mpa～0.9Mpa",
+      "related_entities": [
+        "冷却介质水",
+        "换流阀"
+      ]
+    },
+    {
+      "content": "进水水温为30℃～50℃",
+      "type": "强制",
+      "subject": "冷却介质水",
+      "action": "控制水温",
+      "condition": "应用于换流阀冷却系统",
+      "constraint": "30℃～50℃",
+      "related_entities": [
+        "冷却介质水",
+        "换流阀"
+      ]
+    },
+    {
+      "content": "最低流速应满足阀体内防止电腐蚀所必须的最低允许流速的要求",
+      "type": "强制",
+      "subject": "冷却介质水",
+      "action": "控制流速",
+      "condition": "应用于换流阀冷却系统",
+      "constraint": "满足阀体内防止电腐蚀所必须的最低允许流速的要求",
+      "related_entities": [
+        "冷却介质水",
+        "换流阀"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "冷却介质水",
+      "target": "换流阀",
+      "type": "冷却"
+    },
+    {
+      "source": "电导率",
+      "target": "冷却介质水",
+      "type": "参数控制"
+    },
+    {
+      "source": "pH值",
+      "target": "冷却介质水",
+      "type": "参数控制"
+    },
+    {
+      "source": "水压",
+      "target": "冷却介质水",
+      "type": "参数控制"
+    },
+    {
+      "source": "流速",
+      "target": "冷却介质水",
+      "type": "参数控制"
+    },
+    {
+      "source": "水温",
+      "target": "冷却介质水",
+      "type": "参数控制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1636,
+      "source_row_id": "1636",
+      "clause_index": 1,
+      "source_text": "冷却介质水应满足换流阀对水质、水压、流速及水温的要求。一般情况下，电导率为0.1μS/m～0.5μS/m，pH值为6～8，水压为0.4Mpa～0.9Mpa，进水水温为30℃～50℃，最低流速应满足阀体内防止电腐蚀所必须的最低允许流速的要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.598161+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

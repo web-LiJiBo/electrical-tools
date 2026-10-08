@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种开关电器，用于切断或接通电路"
+    },
+    {
+      "name": "分、合闸线圈",
+      "type": "电力设备部件",
+      "desc": "断路器操作机构中的电磁线圈，用于驱动断路器分闸或合闸"
+    },
+    {
+      "name": "绝缘电阻值",
+      "type": "电气参数",
+      "desc": "反映绝缘材料绝缘性能的参数，以兆欧为单位"
+    },
+    {
+      "name": "兆欧表",
+      "type": "测试仪器",
+      "desc": "用于测量高阻值电阻的仪表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测量断路器分、合闸线圈的绝缘电阻值，不应低于10MΩ",
+      "type": "强制",
+      "subject": "断路器分、合闸线圈",
+      "action": "测量绝缘电阻值",
+      "condition": "在安装、检修或定期试验过程中",
+      "constraint": "绝缘电阻值≥10MΩ",
+      "related_entities": [
+        "断路器",
+        "分、合闸线圈",
+        "绝缘电阻值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "分、合闸线圈",
+      "type": "包含"
+    },
+    {
+      "source": "分、合闸线圈",
+      "target": "绝缘电阻值",
+      "type": "测量结果"
+    },
+    {
+      "source": "兆欧表",
+      "target": "绝缘电阻值",
+      "type": "测量工具"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 281,
+      "source_row_id": "281",
+      "clause_index": 1,
+      "source_text": "测量断路器分、合闸线圈的绝缘电阻值，不应低于10MΩ。未规定采用兆欧表的电压值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.056604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

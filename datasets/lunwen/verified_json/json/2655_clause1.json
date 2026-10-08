@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "机械操作次数",
+      "type": "运行参数",
+      "desc": "机械设备在运行过程中进行的操作次数"
+    },
+    {
+      "name": "2000次",
+      "type": "数值",
+      "desc": "机械设备允许的最大操作次数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "机械操作次数不得超过2000次",
+      "type": "强制",
+      "subject": "机械设备",
+      "action": "操作",
+      "condition": "机械设备运行期间",
+      "constraint": "机械操作次数≤2000次",
+      "related_entities": [
+        "机械操作次数",
+        "2000次"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "机械操作次数",
+      "target": "2000次",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2646,
+      "source_row_id": "2655",
+      "clause_index": 1,
+      "source_text": "机械操作次数：2000次。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.55,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.812313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "柱上变压器",
+      "type": "电力设备",
+      "desc": "安装在电杆上的变压器"
+    },
+    {
+      "name": "低压负荷中心",
+      "type": "电力负荷",
+      "desc": "低压电力系统中负荷集中的区域"
+    },
+    {
+      "name": "三相变压器",
+      "type": "电力设备",
+      "desc": "具有三个绕组的变压器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上变压器宜设于低压负荷中心",
+      "type": "强制",
+      "subject": "柱上变压器",
+      "action": "安装位置选择",
+      "condition": "柱上变压器安装",
+      "constraint": "低压负荷中心",
+      "related_entities": [
+        "柱上变压器",
+        "低压负荷中心"
+      ]
+    },
+    {
+      "content": "三相变压器容量不宜超过400kVA",
+      "type": "强制",
+      "subject": "三相变压器",
+      "action": "容量选择",
+      "condition": "三相变压器选型",
+      "constraint": "400kVA",
+      "related_entities": [
+        "三相变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上变压器",
+      "target": "低压负荷中心",
+      "type": "安装位置"
+    },
+    {
+      "source": "三相变压器",
+      "target": "柱上变压器",
+      "type": "组成部件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1125,
+      "source_row_id": "1125",
+      "clause_index": 1,
+      "source_text": "柱上变压器宜设于低压负荷中心，三相变压器容量不宜超过400kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.017947+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

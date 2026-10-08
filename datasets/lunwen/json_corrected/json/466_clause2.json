@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "塑料绝缘电缆",
+      "type": "电力设备",
+      "desc": "具有塑料绝缘层的电缆"
+    },
+    {
+      "name": "最小弯曲半径",
+      "type": "技术参数",
+      "desc": "电缆在弯曲时允许的最小弯曲半径"
+    },
+    {
+      "name": "无铠装多芯电缆",
+      "type": "电力设备",
+      "desc": "没有金属铠装层的多芯电缆"
+    },
+    {
+      "name": "单芯电缆",
+      "type": "电力设备",
+      "desc": "由一根或多根绝缘导线组成的电缆"
+    },
+    {
+      "name": "有铠装多芯电缆",
+      "type": "电力设备",
+      "desc": "具有金属铠装层的多芯电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "塑料绝缘电缆无铠装多芯15D单芯20D有铠装多芯12D单芯15D",
+      "type": "强制",
+      "subject": "电缆安装与敷设人员",
+      "action": "选择电缆最小弯曲半径",
+      "condition": "电缆敷设安装过程中",
+      "constraint": "无铠装多芯电缆最小弯曲半径15D,单芯电缆最小弯曲半径20D,有铠装多芯电缆最小弯曲半径12D,单芯电缆最小弯曲半径15D",
+      "related_entities": [
+        "电缆",
+        "塑料绝缘电缆",
+        "最小弯曲半径",
+        "无铠装多芯电缆",
+        "单芯电缆",
+        "有铠装多芯电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "塑料绝缘电缆",
+      "type": "属于"
+    },
+    {
+      "source": "电缆",
+      "target": "最小弯曲半径",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "无铠装多芯电缆",
+      "type": "属于"
+    },
+    {
+      "source": "电缆",
+      "target": "单芯电缆",
+      "type": "属于"
+    },
+    {
+      "source": "电缆",
+      "target": "有铠装多芯电缆",
+      "type": "属于"
+    },
+    {
+      "source": "塑料绝缘电缆",
+      "target": "最小弯曲半径",
+      "type": "包含"
+    },
+    {
+      "source": "无铠装多芯电缆",
+      "target": "最小弯曲半径",
+      "type": "包含"
+    },
+    {
+      "source": "单芯电缆",
+      "target": "最小弯曲半径",
+      "type": "包含"
+    },
+    {
+      "source": "有铠装多芯电缆",
+      "target": "最小弯曲半径",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 466,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fa80fe0809156f5f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\466_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

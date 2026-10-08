@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "水分含量",
+      "type": "电力设备状态参数",
+      "desc": "电力设备中气体的水分含量"
+    },
+    {
+      "name": "最终充入气体",
+      "type": "电力设备状态参数",
+      "desc": "电力设备中充入的气体"
+    },
+    {
+      "name": "五天",
+      "type": "时间间隔",
+      "desc": "水分含量检测的时间间隔"
+    }
+  ],
+  "rules": [
+    {
+      "content": "为了获得可靠的测量结果，水分含量应在最终充入气体至少五天后进行检查",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "进行水分含量检测",
+      "condition": "电力设备完成最终充气",
+      "constraint": "水分含量检测应在充气后至少五天进行",
+      "related_entities": [
+        "水分含量",
+        "最终充入气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水分含量",
+      "target": "最终充入气体",
+      "type": "检测对象"
+    },
+    {
+      "source": "五天",
+      "target": "水分含量",
+      "type": "检测时间间隔"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 340,
+      "source_row_id": "340",
+      "clause_index": 1,
+      "source_text": "为了获得可靠的测量结果，水分含量应在最终充入气体至少五天后进行检查"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.117484+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

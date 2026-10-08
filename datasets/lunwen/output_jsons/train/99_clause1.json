@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "覆冰厚度",
+      "type": "气象参数",
+      "desc": "输电线路覆冰时导线表面的冰层厚度"
+    },
+    {
+      "name": "10mm",
+      "type": "数值约束",
+      "desc": "覆冰厚度的最大值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "覆冰厚度应不大于10mm",
+      "type": "强制",
+      "subject": "输电线路",
+      "action": "设计与运行维护",
+      "condition": "覆冰天气条件下",
+      "constraint": "覆冰厚度≤10mm",
+      "related_entities": [
+        "覆冰厚度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "覆冰厚度",
+      "target": "10mm",
+      "type": "小于等于"
+    }
+  ]
+}

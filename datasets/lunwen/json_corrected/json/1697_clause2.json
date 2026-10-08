@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路的直流电阻"
+    },
+    {
+      "name": "制造厂规定值",
+      "type": "技术指标",
+      "desc": "设备制造商规定的主回路电阻最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主回路电阻≤制造厂规定值（注意值）",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "测量与校验",
+      "condition": "电力设备投运前或检修后",
+      "constraint": "主回路电阻≤制造厂规定值",
+      "related_entities": [
+        "主回路电阻",
+        "制造厂规定值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主回路电阻",
+      "target": "制造厂规定值",
+      "type": "符合"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1697,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "69aafdd0e7dfdb52",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1697_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

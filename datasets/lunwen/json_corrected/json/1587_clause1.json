@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "三相变压器",
+      "type": "电力设备",
+      "desc": "三相交流电用的变压器"
+    },
+    {
+      "name": "绕组直流电阻",
+      "type": "电气参数",
+      "desc": "变压器绕组在直流电流作用下的电阻值"
+    },
+    {
+      "name": "相",
+      "type": "电气参数",
+      "desc": "变压器绕组的一个分支"
+    },
+    {
+      "name": "线",
+      "type": "电气参数",
+      "desc": "变压器绕组的两个分支之间的连接方式"
+    },
+    {
+      "name": "变压器容量",
+      "type": "电气参数",
+      "desc": "变压器一次侧额定电压与二次侧额定电流的乘积"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三相变压器，绕组直流电阻不平衡率：相为不大于4%，线为不大于2%",
+      "type": "强制",
+      "subject": "三相变压器",
+      "action": "设计、制造、验收",
+      "condition": "变压器出厂前",
+      "constraint": "相≤4%，线≤2%",
+      "related_entities": [
+        "三相变压器",
+        "绕组直流电阻"
+      ]
+    },
+    {
+      "content": "变压器是指30-2500kVA的",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "设计、制造、验收",
+      "condition": "变压器出厂前",
+      "constraint": "30-2500kVA",
+      "related_entities": [
+        "变压器",
+        "变压器容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三相变压器",
+      "target": "绕组直流电阻",
+      "type": "包含"
+    },
+    {
+      "source": "绕组直流电阻",
+      "target": "相",
+      "type": "属于"
+    },
+    {
+      "source": "绕组直流电阻",
+      "target": "线",
+      "type": "属于"
+    },
+    {
+      "source": "三相变压器",
+      "target": "变压器容量",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1587,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "87bace4ede81c571",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1587_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

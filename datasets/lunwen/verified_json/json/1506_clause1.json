@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电压或电流的电气设备"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录运输过程中设备受到冲击加速度的仪器"
+    },
+    {
+      "name": "厂家",
+      "type": "组织机构",
+      "desc": "生产制造互感器的企业"
+    }
+  ],
+  "rules": [
+    {
+      "content": "220kV及以上互感器运输全过程厂家应装设三维冲撞记录仪",
+      "type": "强制",
+      "subject": "厂家",
+      "action": "装设三维冲撞记录仪",
+      "condition": "220kV及以上互感器运输全过程",
+      "constraint": "全程",
+      "related_entities": [
+        "互感器",
+        "三维冲撞记录仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "厂家",
+      "target": "互感器",
+      "type": "生产制造"
+    },
+    {
+      "source": "厂家",
+      "target": "三维冲撞记录仪",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1506,
+      "source_row_id": "1506",
+      "clause_index": 1,
+      "source_text": "第四条配电装置安装质量管理措施（二）一次设备安装第1条220kV及以上互感器运输全过程厂家应装设三维冲撞记录仪"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.457366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

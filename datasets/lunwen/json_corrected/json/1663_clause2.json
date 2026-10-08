@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "风速",
+      "type": "气象参数",
+      "desc": "安装地区风速大小"
+    },
+    {
+      "name": "安装地区",
+      "type": "地理区域",
+      "desc": "电力设备安装的具体地理位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "安装地区的风速应不超过34m/s",
+      "type": "强制",
+      "subject": "安装地区",
+      "action": "安装电力设备",
+      "condition": "在风速超过34m/s的地区安装电力设备",
+      "constraint": "风速≤34m/s",
+      "related_entities": [
+        "风速",
+        "安装地区"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "安装地区",
+      "target": "风速",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1663,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "97cee01129f6065a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1663_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

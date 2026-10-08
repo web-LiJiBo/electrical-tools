@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电力系统中用于输送液体介质的泵"
+    },
+    {
+      "name": "冗余配置",
+      "type": "设计原则",
+      "desc": "在关键设备上设置备用设备，以提高系统的可靠性和可用性"
+    },
+    {
+      "name": "定期自动切换",
+      "type": "设计原则",
+      "desc": "按照预定周期自动进行主备设备之间的切换测试"
+    },
+    {
+      "name": "切换不成功",
+      "type": "故障状态",
+      "desc": "主备设备切换过程中，备用设备未能正常启动或运行"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵应冗余配置",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "冗余配置",
+      "condition": "主泵发生故障",
+      "constraint": "至少两台主泵",
+      "related_entities": [
+        "主泵"
+      ]
+    },
+    {
+      "content": "采用定期自动切换设计方案",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "定期自动切换",
+      "condition": "主泵定期维护",
+      "constraint": "每季度一次",
+      "related_entities": [
+        "主泵",
+        "冗余配置"
+      ]
+    },
+    {
+      "content": "切换不成功时应能自动切回",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "自动切回",
+      "condition": "主泵切换不成功",
+      "constraint": "立即切回原主泵",
+      "related_entities": [
+        "主泵",
+        "切换不成功"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "冗余配置",
+      "type": "遵循"
+    },
+    {
+      "source": "主泵",
+      "target": "定期自动切换",
+      "type": "遵循"
+    },
+    {
+      "source": "主泵",
+      "target": "切换不成功",
+      "type": "导致"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 799,
+      "source_row_id": "799",
+      "clause_index": 2,
+      "source_text": "主泵应冗余配置，并采用定期自动切换设计方案，在切换不成功时应能自动切回"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.654082+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

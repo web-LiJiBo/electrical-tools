@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "基准周期",
+      "type": "时间周期",
+      "desc": "设备检测或检修的周期"
+    },
+    {
+      "name": "330kV及以上",
+      "type": "电压等级",
+      "desc": "电力系统中330kV及以上电压等级的输电线路"
+    },
+    {
+      "name": "220kV及以下",
+      "type": "电压等级",
+      "desc": "电力系统中220kV及以下电压等级的输电线路"
+    },
+    {
+      "name": "500kV及以上直线连接管",
+      "type": "电力设备",
+      "desc": "500kV及以上电压等级的输电线路中使用的直线连接管"
+    },
+    {
+      "name": "500kV及以上耐张引流线",
+      "type": "电力设备",
+      "desc": "500kV及以上电压等级的输电线路中使用的耐张引流线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "基准周期330kV及以上为1年，220kV及以下为3年。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "检测或检修",
+      "condition": "电力设备运行状态",
+      "constraint": "330kV及以上为1年，220kV及以下为3年",
+      "related_entities": [
+        "基准周期",
+        "330kV及以上",
+        "220kV及以下"
+      ]
+    },
+    {
+      "content": "500kV及以上直线连接管、耐张引流线1年测量一次，其他3年测量一次。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "检测或检修",
+      "condition": "电力设备运行状态",
+      "constraint": "500kV及以上直线连接管、耐张引流线1年测量一次，其他3年测量一次",
+      "related_entities": [
+        "基准周期",
+        "500kV及以上直线连接管",
+        "500kV及以上耐张引流线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "基准周期",
+      "target": "330kV及以上",
+      "type": "适用于"
+    },
+    {
+      "source": "基准周期",
+      "target": "220kV及以下",
+      "type": "适用于"
+    },
+    {
+      "source": "基准周期",
+      "target": "500kV及以上直线连接管",
+      "type": "适用于"
+    },
+    {
+      "source": "基准周期",
+      "target": "500kV及以上耐张引流线",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 684,
+      "source_row_id": "684",
+      "clause_index": 1,
+      "source_text": "基准周期330kV及以上为1年，220kV及以下为3年。500kV及以上直线连接管、耐张引流线1年测量一次，其他3年测量一次"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9808,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.508485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

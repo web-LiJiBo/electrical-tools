@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "金属单丝缠绕层",
+      "type": "材料",
+      "desc": "用于电力设备绝缘修复的金属单丝缠绕材料"
+    },
+    {
+      "name": "损伤部位",
+      "type": "缺陷",
+      "desc": "电力设备绝缘层破损或老化区域"
+    },
+    {
+      "name": "边缘",
+      "type": "位置",
+      "desc": "损伤部位与正常绝缘层交界处"
+    }
+  ],
+  "rules": [
+    {
+      "content": "金属单丝缠绕层全部覆盖损伤部位",
+      "type": "强制",
+      "subject": "金属单丝缠绕层",
+      "action": "缠绕",
+      "condition": "在电力设备绝缘修复时",
+      "constraint": "必须完全覆盖损伤部位",
+      "related_entities": [
+        "金属单丝缠绕层",
+        "损伤部位"
+      ]
+    },
+    {
+      "content": "缠绕层距损伤部位边缘的长度不得小于50mm",
+      "type": "强制",
+      "subject": "金属单丝缠绕层",
+      "action": "缠绕",
+      "condition": "在电力设备绝缘修复时",
+      "constraint": "距离损伤部位边缘至少50mm",
+      "related_entities": [
+        "金属单丝缠绕层",
+        "损伤部位",
+        "边缘"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "金属单丝缠绕层",
+      "target": "损伤部位",
+      "type": "覆盖"
+    },
+    {
+      "source": "金属单丝缠绕层",
+      "target": "边缘",
+      "type": "距离"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 746,
+      "source_row_id": "746",
+      "clause_index": 1,
+      "source_text": "金属单丝缠绕层全部覆盖损伤部位，且缠绕层距损伤部位边缘的长度不得小于50mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.576084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

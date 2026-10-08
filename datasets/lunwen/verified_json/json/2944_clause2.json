@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "绝缘底座",
+      "type": "电力设备",
+      "desc": "电力系统中用于支撑或固定电气设备的绝缘部件"
+    },
+    {
+      "name": "绝缘电阻试验",
+      "type": "试验方法",
+      "desc": "测量绝缘材料或绝缘结构的绝缘电阻值的试验方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘底座应进行绝缘电阻试验",
+      "type": "强制",
+      "subject": "绝缘底座",
+      "action": "进行绝缘电阻试验",
+      "condition": "新安装或大修后",
+      "constraint": "绝缘电阻值≥500MΩ",
+      "related_entities": [
+        "绝缘底座",
+        "绝缘电阻试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘底座",
+      "target": "绝缘电阻试验",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2935,
+      "source_row_id": "2944",
+      "clause_index": 2,
+      "source_text": "包括绝缘底座绝缘电阻试验。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5962,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.183314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

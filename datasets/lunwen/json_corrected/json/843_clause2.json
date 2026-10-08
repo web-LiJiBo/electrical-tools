@@ -1,0 +1,62 @@
+{
+  "entities": [
+    {
+      "name": "环境温度",
+      "type": "物理量",
+      "desc": "仲裁试验时的环境温度"
+    },
+    {
+      "name": "大气压力",
+      "type": "物理量",
+      "desc": "仲裁试验时的大气压力"
+    },
+    {
+      "name": "相对湿度",
+      "type": "物理量",
+      "desc": "仲裁试验时的相对湿度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "仲裁试验的标准大气条件：a）环境温度：20℃±2℃；b）大气压力：86kPa~106kPa；c）相对湿度：45%~75%",
+      "type": "强制",
+      "subject": "仲裁试验",
+      "action": "进行",
+      "condition": "在电力设备或元件的仲裁试验中",
+      "constraint": "环境温度20℃±2℃，大气压力86kPa~106kPa，相对湿度45%~75%",
+      "related_entities": [
+        "环境温度",
+        "大气压力",
+        "相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "环境温度",
+      "target": "仲裁试验",
+      "type": "适用条件"
+    },
+    {
+      "source": "大气压力",
+      "target": "仲裁试验",
+      "type": "适用条件"
+    },
+    {
+      "source": "相对湿度",
+      "target": "仲裁试验",
+      "type": "适用条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 843,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7e161c761ce02168",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\843_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "entities": [
+    {
+      "name": "连接点",
+      "type": "电力设备",
+      "desc": "电力系统中不同电压等级之间的连接点"
+    },
+    {
+      "name": "谐波电压畸变率",
+      "type": "电力参数",
+      "desc": "电力系统中谐波电压相对于基波电压的畸变程度"
+    },
+    {
+      "name": "注入系统的谐波电流",
+      "type": "电力参数",
+      "desc": "电力系统中注入系统的谐波电流值"
+    },
+    {
+      "name": "GB/T14549",
+      "type": "国家标准",
+      "desc": "电力系统谐波限值标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "连接点的谐波电压畸变率和注入系统的谐波电流应满足GB/T14549的要求",
+      "type": "强制",
+      "subject": "连接点",
+      "action": "满足GB/T14549的要求",
+      "condition": "在电力系统运行过程中",
+      "constraint": "谐波电压畸变率≤5%，注入系统的谐波电流≤电力系统额定电流的5%",
+      "related_entities": [
+        "连接点",
+        "谐波电压畸变率",
+        "注入系统的谐波电流",
+        "GB/T14549"
+      ]
+    },
+    {
+      "content": "特殊情况由供方和需方共同商定",
+      "type": "强制",
+      "subject": "供方和需方",
+      "action": "协商解决",
+      "condition": "当连接点的谐波电压畸变率或注入系统的谐波电流超出GB/T14549的要求时",
+      "constraint": "供方和需方需协商确定新的技术方案或协议",
+      "related_entities": [
+        "连接点",
+        "谐波电压畸变率",
+        "注入系统的谐波电流",
+        "GB/T14549",
+        "供方",
+        "需方"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "连接点",
+      "target": "谐波电压畸变率",
+      "type": "包含"
+    },
+    {
+      "source": "连接点",
+      "target": "注入系统的谐波电流",
+      "type": "包含"
+    },
+    {
+      "source": "GB/T14549",
+      "target": "谐波电压畸变率",
+      "type": "规定"
+    },
+    {
+      "source": "GB/T14549",
+      "target": "注入系统的谐波电流",
+      "type": "规定"
+    },
+    {
+      "source": "供方",
+      "target": "需方",
+      "type": "合作"
+    },
+    {
+      "source": "连接点",
+      "target": "供方",
+      "type": "连接"
+    },
+    {
+      "source": "连接点",
+      "target": "需方",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3154,
+      "source_row_id": "3163",
+      "clause_index": 2,
+      "source_text": "连接点的谐波电压畸变率和注入系统的谐波电流应满足GB/T14549的要求，特殊情况由供方和需方共同商定。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.448314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

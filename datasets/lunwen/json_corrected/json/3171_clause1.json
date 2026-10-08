@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "变电站中用于变换电压的电气设备"
+    },
+    {
+      "name": "变压器油电气强度",
+      "type": "技术参数",
+      "desc": "变压器油在特定电场下的击穿电压值"
+    },
+    {
+      "name": "750kV电压等级",
+      "type": "电压等级",
+      "desc": "高压输电系统中的最高电压等级之一"
+    },
+    {
+      "name": "500kV电压等级",
+      "type": "电压等级",
+      "desc": "高压输电系统中的较高电压等级"
+    },
+    {
+      "name": "330kV电压等级",
+      "type": "电压等级",
+      "desc": "高压输电系统中的较低电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "750kV、500kV、330kV电压等级变压器油电气强度分别不小于70kV、60kkV、50kV。",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "使用",
+      "condition": "750kV、500kV、330kV电压等级",
+      "constraint": "变压器油电气强度分别不小于70kV、60kV、50kV",
+      "related_entities": [
+        "变压器",
+        "变压器油电气强度",
+        "750kV电压等级",
+        "500kV电压等级",
+        "330kV电压等级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "变压器油电气强度",
+      "type": "具有"
+    },
+    {
+      "source": "变压器",
+      "target": "750kV电压等级",
+      "type": "适用于"
+    },
+    {
+      "source": "变压器",
+      "target": "500kV电压等级",
+      "type": "适用于"
+    },
+    {
+      "source": "变压器",
+      "target": "330kV电压等级",
+      "type": "适用于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3171,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bc7542b0e84d31b6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3171_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

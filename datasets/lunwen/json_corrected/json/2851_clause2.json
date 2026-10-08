@@ -1,0 +1,21 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "进行水冷系统静态加压试验，分2次～3次加压到运行水压的1.1倍后持续至少1h，合格标准为加压结束时压力降低不超过5%，且没有渗漏。阀冷与极控通讯信号：“阀冷与极控间采用光传输接口方式，通讯信号如下：a)直流控制保护系统下发至阀冷控制保护系统的开关量应包括但不限于以下信号：1）系统ACTIVE（ACTIVE）；2）远方切换主泵（SWITCHPUMP）；3）换流阀解锁/闭锁（DEBLOCK/BLOCK）。b）阀冷控制保护系统上传至直流控制保护系统的开关量应包括但不限于以下信号：1）阀冷系统请求跳闸（TRIP）；2）阀冷系统请求功率回降（RUNBACK）；3）阀冷系统可用（OK）；4）阀冷系统具备运行条件（RFO）；5）阀冷系统具有冗余冷却能力（REDCOOLING）；6）SYS-ACTIVE（ACTIVE）。”",
+      "type": "未标注",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "进行水冷系统静态加压试验，分2次～3次加压到运行水压的1.1倍后持续至少1h，合格标准为加压结束时压力降低不超过5%，且没有渗漏。阀冷与极控通讯信号：“阀冷与极控间采用光传输接口方式，通讯信号如下：a)直流控制保护系统下发至阀冷控制保护系统的开关量应包括但不限于以下信号：1）系统ACTIVE（ACTIVE）；2）远方切换主泵（SWITCHPUMP）；3）换流阀解锁/闭锁（DEBLOCK/BLOCK）。b）阀冷控制保护系统上传至直流控制保护系统的开关量应包括但不限于以下信号：1）阀冷系统请求跳闸（TRIP）；2）阀冷系统请求功率回降（RUNBACK）；3）阀冷系统可用（OK）；4）阀冷系统具备运行条件（RFO）；5）阀冷系统具有冗余冷却能力（REDCOOLING）；6）SYS-ACTIVE（ACTIVE）。”",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "pair_id": 2851,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "audit_status": "generated_from_source_pending_semantic_review"
+  }
+}

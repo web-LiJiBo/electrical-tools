@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "装置",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换、传输、分配电能的设备"
+    },
+    {
+      "name": "额定电压",
+      "type": "电气参数",
+      "desc": "设备正常运行时的标称电压值"
+    },
+    {
+      "name": "额定短时工频耐受电压",
+      "type": "电气参数",
+      "desc": "设备在规定时间内承受工频电压的最大值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装置额定电压20kV时，额定短时工频耐受电压值为65kV。",
+      "type": "强制",
+      "subject": "电力设备制造企业",
+      "action": "设计与制造电力设备",
+      "condition": "电力设备额定电压为20kV",
+      "constraint": "额定短时工频耐受电压值为65kV",
+      "related_entities": [
+        "装置",
+        "额定电压",
+        "额定短时工频耐受电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "装置",
+      "target": "额定电压",
+      "type": "具有"
+    },
+    {
+      "source": "装置",
+      "target": "额定短时工频耐受电压",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3119,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "19ea06c5cd3f5ec5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3119_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

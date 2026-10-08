@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "800kVA油浸式变压器",
+      "type": "电力设备",
+      "desc": "800kVA容量的油浸式变压器"
+    },
+    {
+      "name": "1250kVA油浸式变压器",
+      "type": "电力设备",
+      "desc": "1250kVA容量的油浸式变压器"
+    },
+    {
+      "name": "噪声水平",
+      "type": "技术参数",
+      "desc": "变压器运行时产生的噪声大小"
+    },
+    {
+      "name": "声功率",
+      "type": "技术参数",
+      "desc": "变压器噪声能量的度量值"
+    },
+    {
+      "name": "62dB",
+      "type": "数值约束",
+      "desc": "800kVA油浸式变压器噪声水平声功率"
+    },
+    {
+      "name": "65dB",
+      "type": "数值约束",
+      "desc": "1250kVA油浸式变压器噪声水平声功率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "800kVA油浸式变压器噪声水平声功率不大于62dB",
+      "type": "强制",
+      "subject": "800kVA油浸式变压器",
+      "action": "运行",
+      "condition": "在额定负载下",
+      "constraint": "62dB",
+      "related_entities": [
+        "800kVA油浸式变压器",
+        "噪声水平",
+        "声功率"
+      ]
+    },
+    {
+      "content": "1250kVA油浸式变压器噪声水平声功率不大于65dB",
+      "type": "强制",
+      "subject": "1250kVA油浸式变压器",
+      "action": "运行",
+      "condition": "在额定负载下",
+      "constraint": "65dB",
+      "related_entities": [
+        "1250kVA油浸式变压器",
+        "噪声水平",
+        "声功率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "800kVA油浸式变压器",
+      "target": "噪声水平",
+      "type": "具有"
+    },
+    {
+      "source": "800kVA油浸式变压器",
+      "target": "声功率",
+      "type": "具有"
+    },
+    {
+      "source": "1250kVA油浸式变压器",
+      "target": "噪声水平",
+      "type": "具有"
+    },
+    {
+      "source": "1250kVA油浸式变压器",
+      "target": "声功率",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1099,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8484cba72d2ed0d1",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1099_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

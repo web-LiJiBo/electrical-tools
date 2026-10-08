@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "柱上三相变压器",
+      "type": "电力设备",
+      "desc": "安装在电杆上的三相变压器"
+    },
+    {
+      "name": "柱上单相变压器",
+      "type": "电力设备",
+      "desc": "安装在电杆上的单相变压器"
+    },
+    {
+      "name": "变压器容量",
+      "type": "技术参数",
+      "desc": "变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上三相变压器容量不宜大于400kVA",
+      "type": "强制",
+      "subject": "柱上三相变压器",
+      "action": "选择或安装",
+      "condition": "新建或改造",
+      "constraint": "容量不大于400kVA",
+      "related_entities": [
+        "柱上三相变压器",
+        "变压器容量"
+      ]
+    },
+    {
+      "content": "柱上单相变压器容量不宜大于100kVA",
+      "type": "强制",
+      "subject": "柱上单相变压器",
+      "action": "选择或安装",
+      "condition": "新建或改造",
+      "constraint": "容量不大于100kVA",
+      "related_entities": [
+        "柱上单相变压器",
+        "变压器容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上三相变压器",
+      "target": "变压器容量",
+      "type": "具有"
+    },
+    {
+      "source": "柱上单相变压器",
+      "target": "变压器容量",
+      "type": "具有"
+    }
+  ]
+}

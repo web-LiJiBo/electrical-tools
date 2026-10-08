@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "变压器套管",
+      "type": "电力设备",
+      "desc": "变压器的套管部件"
+    },
+    {
+      "name": "电抗器套管",
+      "type": "电力设备",
+      "desc": "电抗器的套管部件"
+    },
+    {
+      "name": "主绝缘20℃时的tanδ值",
+      "type": "电气参数",
+      "desc": "变压器或电抗器套管在20℃时的介质损耗角正切值"
+    },
+    {
+      "name": "试验项目",
+      "type": "检测项目",
+      "desc": "对电力设备进行的检测项目"
+    },
+    {
+      "name": "试验周期",
+      "type": "检测周期",
+      "desc": "电力设备检测项目的周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器套管、电抗器套管的试验项目、周期和要求见表8中第2项要求：主绝缘20℃时的tanδ值不应大于0.008",
+      "type": "强制",
+      "subject": "变压器套管、电抗器套管",
+      "action": "进行试验",
+      "condition": "变压器套管、电抗器套管的试验项目、周期和要求",
+      "constraint": "主绝缘20℃时的tanδ值不应大于0.008",
+      "related_entities": [
+        "变压器套管",
+        "电抗器套管",
+        "主绝缘20℃时的tanδ值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器套管",
+      "target": "主绝缘20℃时的tanδ值",
+      "type": "检测对象"
+    },
+    {
+      "source": "电抗器套管",
+      "target": "主绝缘20℃时的tanδ值",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验项目",
+      "target": "变压器套管",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验项目",
+      "target": "电抗器套管",
+      "type": "检测对象"
+    },
+    {
+      "source": "试验周期",
+      "target": "变压器套管",
+      "type": "检测周期"
+    },
+    {
+      "source": "试验周期",
+      "target": "电抗器套管",
+      "type": "检测周期"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2117,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2895f9666e3a8170",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2117_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

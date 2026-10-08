@@ -1,0 +1,58 @@
+{
+  "entities": [
+    {
+      "name": "开断单元",
+      "type": "电力设备",
+      "desc": "电力系统中用于开断电路的设备"
+    },
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路导电部分的电阻值"
+    },
+    {
+      "name": "现场装配",
+      "type": "施工方式",
+      "desc": "在安装现场进行设备组装的方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开断单元在现场装配时，应进行主回路电阻测量",
+      "type": "强制",
+      "subject": "开断单元",
+      "action": "进行主回路电阻测量",
+      "condition": "开断单元在现场装配",
+      "constraint": "无",
+      "related_entities": [
+        "开断单元",
+        "主回路电阻"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开断单元",
+      "target": "主回路电阻",
+      "type": "测量对象"
+    },
+    {
+      "source": "开断单元",
+      "target": "现场装配",
+      "type": "施工方式"
+    }
+  ],
+  "metadata": {
+    "pair_id": 771,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "73baca5a8aa812b5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\771_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

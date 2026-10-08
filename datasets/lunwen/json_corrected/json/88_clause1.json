@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "污秽等级",
+      "type": "电力设备状态",
+      "desc": "电力设备表面污秽程度的分类"
+    },
+    {
+      "name": "a",
+      "type": "污秽等级",
+      "desc": "很轻污秽等级"
+    },
+    {
+      "name": "b",
+      "type": "污秽等级",
+      "desc": "轻污秽等级"
+    },
+    {
+      "name": "c",
+      "type": "污秽等级",
+      "desc": "中等污秽等级"
+    },
+    {
+      "name": "d",
+      "type": "污秽等级",
+      "desc": "重污秽等级"
+    },
+    {
+      "name": "e",
+      "type": "污秽等级",
+      "desc": "很重污秽等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "为了标准化的目的，定性地定义了5个污秽等级，表征污秽度从很轻到很重：a----很轻；b----轻；c----中等；d----重；e----很重。",
+      "type": "强制",
+      "subject": "电力设备污秽等级定义",
+      "action": "定义污秽等级",
+      "condition": "电力设备表面污秽程度的分类",
+      "constraint": "无",
+      "related_entities": [
+        "污秽等级",
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "a",
+      "target": "污秽等级",
+      "type": "属于"
+    },
+    {
+      "source": "b",
+      "target": "污秽等级",
+      "type": "属于"
+    },
+    {
+      "source": "c",
+      "target": "污秽等级",
+      "type": "属于"
+    },
+    {
+      "source": "d",
+      "target": "污秽等级",
+      "type": "属于"
+    },
+    {
+      "source": "e",
+      "target": "污秽等级",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 88,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "22f0b2513c25b58e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\88_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

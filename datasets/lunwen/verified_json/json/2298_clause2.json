@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "开关柜",
+      "type": "电力设备",
+      "desc": "一种用于配电系统中，具有控制、保护和分配功能的成套电器设备"
+    },
+    {
+      "name": "绝缘件",
+      "type": "电力设备部件",
+      "desc": "开关柜内部或外部用于电气隔离的绝缘材料制成的部件"
+    },
+    {
+      "name": "爬电距离",
+      "type": "技术参数",
+      "desc": "绝缘件表面沿固体介质表面从一个导体到另一个导体之间的最短路径长度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "开关柜的绝缘件爬电距离应不小于300mm",
+      "type": "强制",
+      "subject": "开关柜",
+      "action": "设计制造",
+      "condition": "在额定电压下运行",
+      "constraint": "爬电距离≥300mm",
+      "related_entities": [
+        "开关柜",
+        "绝缘件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "开关柜",
+      "target": "绝缘件",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘件",
+      "target": "爬电距离",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2298,
+      "source_row_id": "2298",
+      "clause_index": 2,
+      "source_text": "开关柜的绝缘件爬电距离应不小于300mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.383544+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "施工现场",
+      "type": "施工环境",
+      "desc": "电缆接头安装作业现场"
+    },
+    {
+      "name": "温度",
+      "type": "施工参数",
+      "desc": "施工现场温度"
+    },
+    {
+      "name": "湿度",
+      "type": "施工参数",
+      "desc": "施工现场湿度"
+    },
+    {
+      "name": "清洁程度",
+      "type": "施工参数",
+      "desc": "施工现场清洁度"
+    },
+    {
+      "name": "电缆接头",
+      "type": "施工对象",
+      "desc": "电缆接头安装对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆接头安装时必须严格控制施工现场的温度、湿度与清洁程度。",
+      "type": "强制",
+      "subject": "施工现场",
+      "action": "控制",
+      "condition": "电缆接头安装",
+      "constraint": "温度、湿度、清洁程度",
+      "related_entities": [
+        "施工现场",
+        "温度",
+        "湿度",
+        "清洁程度",
+        "电缆接头"
+      ]
+    },
+    {
+      "content": "温度宜控制在10℃～30℃，当温度超出允许范围时，应采取适当措施。",
+      "type": "强制",
+      "subject": "施工现场",
+      "action": "控制",
+      "condition": "电缆接头安装",
+      "constraint": "温度10℃～30℃",
+      "related_entities": [
+        "施工现场",
+        "温度",
+        "电缆接头"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "施工现场",
+      "target": "温度",
+      "type": "控制"
+    },
+    {
+      "source": "施工现场",
+      "target": "湿度",
+      "type": "控制"
+    },
+    {
+      "source": "施工现场",
+      "target": "清洁程度",
+      "type": "控制"
+    },
+    {
+      "source": "施工现场",
+      "target": "电缆接头",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1225,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c4551bc98cc5071d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1225_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

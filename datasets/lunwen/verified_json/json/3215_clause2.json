@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "接触电压",
+      "type": "电气参数",
+      "desc": "人体接触带电体时的电压"
+    },
+    {
+      "name": "金属结构",
+      "type": "设备设施",
+      "desc": "电力系统中接地的金属部件"
+    },
+    {
+      "name": "地面",
+      "type": "环境因素",
+      "desc": "电力设施周围土壤或地面"
+    },
+    {
+      "name": "水平伸臂距离",
+      "type": "物理参数",
+      "desc": "人体与带电体之间的最大安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接触电压接地的金属结构和地面上相隔一定距离处一点间的电位差。此距离通道等于最大的水平伸臂距离，约为1m。",
+      "type": "强制",
+      "subject": "电力设施设计与施工人员",
+      "action": "确保接触电压符合安全标准",
+      "condition": "电力设施设计与施工过程中",
+      "constraint": "接触电压≤50V，水平伸臂距离≥1m",
+      "related_entities": [
+        "接触电压",
+        "金属结构",
+        "地面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接触电压",
+      "target": "金属结构",
+      "type": "作用于"
+    },
+    {
+      "source": "接触电压",
+      "target": "地面",
+      "type": "作用于"
+    },
+    {
+      "source": "金属结构",
+      "target": "地面",
+      "type": "连接于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3206,
+      "source_row_id": "3215",
+      "clause_index": 2,
+      "source_text": "接触电压接地的金属结构和地面上相隔一定距离处一点间的电位差。此距离通道等于最大的水平伸臂距离，约为1m。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.514364+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

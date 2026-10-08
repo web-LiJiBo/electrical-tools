@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "涂层",
+      "type": "材料",
+      "desc": "电力设备表面的保护层"
+    },
+    {
+      "name": "厚度",
+      "type": "物理量",
+      "desc": "涂层的厚度值"
+    },
+    {
+      "name": "0.4mm",
+      "type": "数值",
+      "desc": "涂层厚度的中心值"
+    },
+    {
+      "name": "0.1mm",
+      "type": "数值",
+      "desc": "涂层厚度的公差值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "涂层厚度为0.4mm±0.1mm",
+      "type": "强制",
+      "subject": "电力设备制造商",
+      "action": "生产电力设备",
+      "condition": "电力设备需要进行防腐蚀处理",
+      "constraint": "涂层厚度范围为0.3mm至0.5mm",
+      "related_entities": [
+        "涂层",
+        "厚度",
+        "0.4mm",
+        "0.1mm"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "涂层",
+      "target": "厚度",
+      "type": "属性"
+    },
+    {
+      "source": "0.4mm",
+      "target": "厚度",
+      "type": "属性"
+    },
+    {
+      "source": "0.1mm",
+      "target": "厚度",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2672,
+      "source_row_id": "2681",
+      "clause_index": 1,
+      "source_text": "涂层厚度为0.4mm±0.1mm。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.844315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

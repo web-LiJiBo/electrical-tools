@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "低电压短路阻抗法",
+      "type": "试验方法",
+      "desc": "一种检测变压器绕组变形的方法"
+    },
+    {
+      "name": "频率响应法",
+      "type": "试验方法",
+      "desc": "一种检测变压器绕组变形的方法"
+    },
+    {
+      "name": "局部放电试验",
+      "type": "试验项目",
+      "desc": "检测变压器内部绝缘状况的试验"
+    },
+    {
+      "name": "现场局部放电试验",
+      "type": "试验项目",
+      "desc": "在变压器现场进行的局部放电试验"
+    },
+    {
+      "name": "新安装",
+      "type": "试验条件",
+      "desc": "变压器首次安装并投入运行前的试验"
+    },
+    {
+      "name": "35kV及以下变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压35kV及以下的变压器"
+    },
+    {
+      "name": "66kV及以上变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压66kV及以上的变压器"
+    },
+    {
+      "name": "220kV及以上变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压220kV及以上的变压器"
+    },
+    {
+      "name": "110kV变压器",
+      "type": "电力设备分类",
+      "desc": "额定电压110kV的变压器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于35kV及以下变压器，宜采用低电压短路阻抗法",
+      "type": "强制",
+      "subject": "35kV及以下变压器",
+      "action": "进行绕组变形试验",
+      "condition": "新安装或定期检修",
+      "constraint": "宜采用低电压短路阻抗法",
+      "related_entities": [
+        "变压器",
+        "低电压短路阻抗法"
+      ]
+    },
+    {
+      "content": "对于66kV及以上变压器，直采用频率响应法测量绕组特征图谱",
+      "type": "强制",
+      "subject": "66kV及以上变压器",
+      "action": "进行绕组变形试验",
+      "condition": "新安装或定期检修",
+      "constraint": "直采用频率响应法",
+      "related_entities": [
+        "变压器",
+        "频率响应法"
+      ]
+    },
+    {
+      "content": "电压等级220kV及以上，在新安装时，必须进行现场局部放电试验",
+      "type": "强制",
+      "subject": "220kV及以上变压器",
+      "action": "进行局部放电试验",
+      "condition": "新安装",
+      "constraint": "必须进行现场局部放电试验",
+      "related_entities": [
+        "变压器",
+        "局部放电试验"
+      ]
+    },
+    {
+      "content": "对于电压等级为110kV的变压器，当对绝缘有怀疑时，应进行局部放电试验",
+      "type": "强制",
+      "subject": "110kV变压器",
+      "action": "进行局部放电试验",
+      "condition": "对绝缘有怀疑",
+      "constraint": "应进行局部放电试验",
+      "related_entities": [
+        "变压器",
+        "局部放电试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "低电压短路阻抗法",
+      "type": "适用试验方法"
+    },
+    {
+      "source": "变压器",
+      "target": "频率响应法",
+      "type": "适用试验方法"
+    },
+    {
+      "source": "变压器",
+      "target": "局部放电试验",
+      "type": "适用试验项目"
+    },
+    {
+      "source": "35kV及以下变压器",
+      "target": "变压器",
+      "type": "分类"
+    },
+    {
+      "source": "66kV及以上变压器",
+      "target": "变压器",
+      "type": "分类"
+    },
+    {
+      "source": "220kV及以上变压器",
+      "target": "变压器",
+      "type": "分类"
+    },
+    {
+      "source": "110kV变压器",
+      "target": "变压器",
+      "type": "分类"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 355,
+      "source_row_id": "355",
+      "clause_index": 2,
+      "source_text": "变压器绕组变形试验，应符合下列规定:l.对于35kV及以下变压器，宜采用低电压短路阻抗法；2.对于66kV及以上变压器，直采用频率响应法测量绕组特征图谱。第7.0.14条，电压等级220kV及以上，在新安装时，必须进行现场局部放电试验。对于电压等级为110kV的变压器，当对绝缘有怀疑时，应进行局部放电试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9838,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.135482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

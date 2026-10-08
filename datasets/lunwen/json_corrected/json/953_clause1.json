@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种能关合、承载、开断运行回路正常电流，也能在规定时间内关合、承载及开断规定的过载电流（包括短路电流）的开关装置"
+    },
+    {
+      "name": "行程-时间特性曲线",
+      "type": "技术参数",
+      "desc": "断路器在分闸和合闸过程中，动触头移动的距离与时间的关系曲线"
+    },
+    {
+      "name": "辅助开关",
+      "type": "电力设备",
+      "desc": "安装在断路器内部，用于检测断路器状态并发出信号的开关"
+    },
+    {
+      "name": "主触头",
+      "type": "电力设备",
+      "desc": "断路器中直接接通和断开电路的触头"
+    }
+  ],
+  "rules": [
+    {
+      "content": "断路器应测量行程-时间特性曲线",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量行程-时间特性曲线",
+      "condition": "断路器投运前或检修后",
+      "constraint": "符合开关装置的技术要求",
+      "related_entities": [
+        "断路器",
+        "行程-时间特性曲线"
+      ]
+    },
+    {
+      "content": "断路器应测量机构内辅助开关与断路器主触头动作时间的配合情况",
+      "type": "强制",
+      "subject": "断路器",
+      "action": "测量辅助开关与主触头动作时间的配合情况",
+      "condition": "断路器投运前或检修后",
+      "constraint": "符合开关装置的技术要求",
+      "related_entities": [
+        "断路器",
+        "辅助开关",
+        "主触头"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "断路器",
+      "target": "行程-时间特性曲线",
+      "type": "测量"
+    },
+    {
+      "source": "断路器",
+      "target": "辅助开关",
+      "type": "包含"
+    },
+    {
+      "source": "断路器",
+      "target": "主触头",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 953,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "52d3066b31a8e780",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\953_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

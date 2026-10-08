@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "金属管",
+      "type": "电力设备",
+      "desc": "电力系统中使用的金属管道"
+    },
+    {
+      "name": "穿孔",
+      "type": "缺陷",
+      "desc": "金属管壁上存在的穿透性损伤"
+    },
+    {
+      "name": "裂缝",
+      "type": "缺陷",
+      "desc": "金属管壁上的裂纹损伤"
+    },
+    {
+      "name": "凹凸不平",
+      "type": "缺陷",
+      "desc": "金属管外表面的不平整现象"
+    },
+    {
+      "name": "锈蚀",
+      "type": "缺陷",
+      "desc": "金属管表面氧化物的积累"
+    },
+    {
+      "name": "镀锌层",
+      "type": "防护层",
+      "desc": "金属管表面的锌镀层"
+    }
+  ],
+  "rules": [
+    {
+      "content": "金属管外表面无穿孔、裂缝、显著的凹凸不平及锈蚀",
+      "type": "强制",
+      "subject": "金属管",
+      "action": "安装、检修",
+      "condition": "金属管在电力系统中的使用过程中",
+      "constraint": "金属管外表面无穿孔、裂缝、显著的凹凸不平及锈蚀",
+      "related_entities": [
+        "金属管",
+        "穿孔",
+        "裂缝",
+        "凹凸不平",
+        "锈蚀"
+      ]
+    },
+    {
+      "content": "镀锌管镀锌层应完整",
+      "type": "强制",
+      "subject": "镀锌管",
+      "action": "安装、检修",
+      "condition": "镀锌管在电力系统中的使用过程中",
+      "constraint": "镀锌层完整",
+      "related_entities": [
+        "镀锌管",
+        "镀锌层"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "金属管",
+      "target": "穿孔",
+      "type": "存在缺陷"
+    },
+    {
+      "source": "金属管",
+      "target": "裂缝",
+      "type": "存在缺陷"
+    },
+    {
+      "source": "金属管",
+      "target": "凹凸不平",
+      "type": "存在缺陷"
+    },
+    {
+      "source": "金属管",
+      "target": "锈蚀",
+      "type": "存在缺陷"
+    },
+    {
+      "source": "镀锌管",
+      "target": "镀锌层",
+      "type": "具有防护层"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1851,
+      "source_row_id": "1851",
+      "clause_index": 2,
+      "source_text": "金属管外表面无穿孔、裂缝、显著的凹凸不平及锈蚀。镀锌管镀锌层应完整"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.839969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

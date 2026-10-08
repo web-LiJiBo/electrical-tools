@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "隔离开关",
+      "type": "电力设备",
+      "desc": "一种用于隔离电路的开关设备"
+    },
+    {
+      "name": "分、合闸时间",
+      "type": "技术参数",
+      "desc": "隔离开关分、合闸所需的时间"
+    },
+    {
+      "name": "分、合闸速度",
+      "type": "技术参数",
+      "desc": "隔离开关分、合闸的速度"
+    },
+    {
+      "name": "开断母线转移电流能力",
+      "type": "技术参数",
+      "desc": "隔离开关开断母线转移电流的能力"
+    },
+    {
+      "name": "开断容性感性电流能力",
+      "type": "技术参数",
+      "desc": "隔离开关开断容性感性电流的能力"
+    },
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "一种用于开断电路的开关设备"
+    },
+    {
+      "name": "特高频过电压",
+      "type": "电气现象",
+      "desc": "一种在电力系统中产生的高频率过电压现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "分、合闸时间和分、合闸速度由制造厂提供",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "提供分、合闸时间和分、合闸速度",
+      "condition": "隔离开关出厂前",
+      "constraint": "无",
+      "related_entities": [
+        "隔离开关"
+      ]
+    },
+    {
+      "content": "开断母线转移电流能力：见DL/T486-2010中的附录B",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "满足开断母线转移电流能力要求",
+      "condition": "隔离开关设计阶段",
+      "constraint": "参考DL/T486-2010中的附录B",
+      "related_entities": [
+        "隔离开关"
+      ]
+    },
+    {
+      "content": "开断容性感性电流能力：363kV以下一般不用考虑；500kV超过0.5A，由用户提出要求",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "满足开断容性感性电流能力要求",
+      "condition": "隔离开关设计阶段",
+      "constraint": "363kV以下一般不用考虑；500kV超过0.5A，由用户提出要求",
+      "related_entities": [
+        "隔离开关"
+      ]
+    },
+    {
+      "content": "当断路器分闸时，隔离开关操作，不应因断路器端口间电容而产生危机变压器端部绝缘的特高频过电压",
+      "type": "强制",
+      "subject": "隔离开关",
+      "action": "避免产生危及变压器端部绝缘的特高频过电压",
+      "condition": "隔离开关与断路器配合使用时",
+      "constraint": "避免因断路器端口间电容而产生特高频过电压",
+      "related_entities": [
+        "隔离开关",
+        "断路器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔离开关",
+      "target": "分、合闸时间",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "分、合闸速度",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "开断母线转移电流能力",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "开断容性感性电流能力",
+      "type": "包含"
+    },
+    {
+      "source": "隔离开关",
+      "target": "断路器",
+      "type": "配合使用"
+    },
+    {
+      "source": "隔离开关",
+      "target": "特高频过电压",
+      "type": "避免产生"
+    }
+  ],
+  "metadata": {
+    "pair_id": 380,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a5c8f3014050e087",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\380_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

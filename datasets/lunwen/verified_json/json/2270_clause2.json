@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "制造厂",
+      "type": "制造企业",
+      "desc": "生产电力设备的企业"
+    },
+    {
+      "name": "元件",
+      "type": "电力设备部件",
+      "desc": "电力设备中的基本组成单元"
+    },
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路中导体的电阻值"
+    },
+    {
+      "name": "控制值Rn",
+      "type": "技术指标",
+      "desc": "产品技术条件规定的元件主回路电阻值"
+    },
+    {
+      "name": "出厂实测值",
+      "type": "检测数据",
+      "desc": "元件主回路电阻的实际测量值"
+    },
+    {
+      "name": "测试区间",
+      "type": "测试范围",
+      "desc": "元件主回路电阻测试时的电压电流范围"
+    },
+    {
+      "name": "测试点示意图",
+      "type": "技术图纸",
+      "desc": "元件主回路电阻测试点的布置图"
+    }
+  ],
+  "rules": [
+    {
+      "content": "制造厂应提供每个元件或每个单元主回路电阻的控制值Rn，(Rn是产品技术条件规定值)和出厂实值",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供元件主回路电阻的控制值和实测值",
+      "condition": "元件或单元制造完成",
+      "constraint": "控制值Rn是产品技术条件规定值，实测值应在测试区间内",
+      "related_entities": [
+        "制造厂",
+        "元件",
+        "主回路电阻",
+        "控制值Rn",
+        "出厂实测值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制造厂",
+      "target": "元件",
+      "type": "制造"
+    },
+    {
+      "source": "制造厂",
+      "target": "主回路电阻",
+      "type": "检测"
+    },
+    {
+      "source": "制造厂",
+      "target": "控制值Rn",
+      "type": "规定"
+    },
+    {
+      "source": "制造厂",
+      "target": "出厂实测值",
+      "type": "检测结果"
+    },
+    {
+      "source": "元件",
+      "target": "主回路电阻",
+      "type": "包含"
+    },
+    {
+      "source": "元件",
+      "target": "控制值Rn",
+      "type": "包含"
+    },
+    {
+      "source": "元件",
+      "target": "出厂实测值",
+      "type": "包含"
+    },
+    {
+      "source": "测试区间",
+      "target": "主回路电阻",
+      "type": "测试对象"
+    },
+    {
+      "source": "测试点示意图",
+      "target": "主回路电阻",
+      "type": "测试依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2270,
+      "source_row_id": "2270",
+      "clause_index": 2,
+      "source_text": "制造厂应提供每个元件或每个单元主回路电阻的控制值Rn，(Rn是产品技术条件规定值)和出厂实值，并应提供测试区间的测试点示意图以及电阻值"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9857,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.349546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

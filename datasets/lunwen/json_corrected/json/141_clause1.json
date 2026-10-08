@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "阀控室",
+      "type": "电力设施",
+      "desc": "安装有阀控屏柜的房间"
+    },
+    {
+      "name": "通风管道",
+      "type": "电力设备",
+      "desc": "用于室内空气流通的管道"
+    },
+    {
+      "name": "阀控屏柜",
+      "type": "电力设备",
+      "desc": "安装于阀控室内的控制屏柜"
+    },
+    {
+      "name": "屏柜顶部",
+      "type": "电力设备",
+      "desc": "阀控屏柜的顶部位置"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "连接屏柜内部元件的导线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀控室内的通风管道禁止设计在阀控屏柜顶部",
+      "type": "强制",
+      "subject": "阀控室设计人员",
+      "action": "设计阀控室通风系统",
+      "condition": "阀控室存在阀控屏柜",
+      "constraint": "通风管道不得位于阀控屏柜顶部",
+      "related_entities": [
+        "阀控室",
+        "通风管道",
+        "阀控屏柜"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀控室",
+      "target": "通风管道",
+      "type": "包含"
+    },
+    {
+      "source": "阀控室",
+      "target": "阀控屏柜",
+      "type": "包含"
+    },
+    {
+      "source": "通风管道",
+      "target": "屏柜顶部",
+      "type": "连接"
+    },
+    {
+      "source": "屏柜顶部",
+      "target": "电缆",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 141,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9db618b0413f776f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\141_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

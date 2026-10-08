@@ -1,0 +1,67 @@
+{
+  "entities": [
+    {
+      "name": "油箱",
+      "type": "电力设备",
+      "desc": "变压器油箱"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "变压器油箱内填充的气体"
+    },
+    {
+      "name": "压力",
+      "type": "物理量",
+      "desc": "油箱内气体的压力"
+    },
+    {
+      "name": "波纹油箱",
+      "type": "电力设备",
+      "desc": "变压器的一种特殊油箱结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油箱内部充有气体的密封式变压器油面上部应承受60kPa压力（波纹油箱除外）。",
+      "type": "强制",
+      "subject": "油箱",
+      "action": "承受压力",
+      "condition": "油箱内部充有气体且为密封式变压器",
+      "constraint": "60kPa",
+      "related_entities": [
+        "油箱",
+        "气体"
+      ]
+    },
+    {
+      "content": "其剩余压力应不小于规定值的70%",
+      "type": "强制",
+      "subject": "油箱",
+      "action": "保持压力",
+      "condition": "油箱内部充有气体且为密封式变压器",
+      "constraint": "规定值的70%",
+      "related_entities": [
+        "油箱",
+        "气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油箱",
+      "target": "气体",
+      "type": "含有"
+    },
+    {
+      "source": "油箱",
+      "target": "压力",
+      "type": "承受"
+    },
+    {
+      "source": "压力",
+      "target": "气体",
+      "type": "作用于"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "排管路径",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的排管路径"
+    },
+    {
+      "name": "工井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中设置的检查井"
+    },
+    {
+      "name": "直线段",
+      "type": "电力设施",
+      "desc": "排管路径中无转弯或折角的部分"
+    },
+    {
+      "name": "转弯和折角处",
+      "type": "电力设施",
+      "desc": "排管路径中的转弯或折角位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "选择排管路径时，尽可能取直线，在转弯和折角处，应增设工井。",
+      "type": "强制",
+      "subject": "排管路径设计者",
+      "action": "选择排管路径",
+      "condition": "排管路径设计阶段",
+      "constraint": "在转弯和折角处增设工井",
+      "related_entities": [
+        "排管路径",
+        "工井"
+      ]
+    },
+    {
+      "content": "在直线部分，两工井之间的距离不宜大于150m",
+      "type": "强制",
+      "subject": "排管路径设计者",
+      "action": "确定工井间距",
+      "condition": "排管路径设计阶段",
+      "constraint": "两工井间距≤150m",
+      "related_entities": [
+        "排管路径",
+        "工井"
+      ]
+    },
+    {
+      "content": "排管在工井处的管口应封堵",
+      "type": "强制",
+      "subject": "排管施工人员",
+      "action": "封堵管口",
+      "condition": "排管敷设完成后",
+      "constraint": "管口封堵",
+      "related_entities": [
+        "排管路径",
+        "工井"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "排管路径",
+      "target": "工井",
+      "type": "包含"
+    },
+    {
+      "source": "直线段",
+      "target": "排管路径",
+      "type": "组成"
+    },
+    {
+      "source": "转弯和折角处",
+      "target": "排管路径",
+      "type": "组成"
+    },
+    {
+      "source": "工井",
+      "target": "转弯和折角处",
+      "type": "位于"
+    },
+    {
+      "source": "工井",
+      "target": "直线段",
+      "type": "位于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1364,
+      "source_row_id": "1364",
+      "clause_index": 2,
+      "source_text": "选择排管路径时，尽可能取直线，在转弯和折角处，应增设工井。在直线部分，两工井之间的距离不宜大于150m，排管在工井处的管口应封堵"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9792,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.290547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

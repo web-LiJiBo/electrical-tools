@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "直埋管",
+      "type": "电力设施",
+      "desc": "电力电缆或光缆等地下敷设的管道"
+    },
+    {
+      "name": "建筑物散水坡",
+      "type": "建筑结构",
+      "desc": "建筑物周围用于排水的斜坡部分"
+    },
+    {
+      "name": "道路路基",
+      "type": "道路结构",
+      "desc": "道路底部支撑路面的部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋管伸出建筑物散水坡的长度≥250mm",
+      "type": "强制",
+      "subject": "直埋管",
+      "action": "伸出建筑物散水坡",
+      "condition": "直埋管敷设于建筑物散水坡附近",
+      "constraint": "伸出长度≥250mm",
+      "related_entities": [
+        "直埋管",
+        "建筑物散水坡"
+      ]
+    },
+    {
+      "content": "直埋管伸出道路路基长度≥2m",
+      "type": "强制",
+      "subject": "直埋管",
+      "action": "伸出道路路基",
+      "condition": "直埋管敷设于道路路基附近",
+      "constraint": "伸出长度≥2m",
+      "related_entities": [
+        "直埋管",
+        "道路路基"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋管",
+      "target": "建筑物散水坡",
+      "type": "伸出"
+    },
+    {
+      "source": "直埋管",
+      "target": "道路路基",
+      "type": "伸出"
+    }
+  ],
+  "metadata": {
+    "pair_id": 896,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "29b9cad2a8dc4b74",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\896_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

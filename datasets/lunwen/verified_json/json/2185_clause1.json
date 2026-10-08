@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "地震设防烈度",
+      "type": "电力系统运行环境",
+      "desc": "电力系统在设计和建设时考虑的地震强度等级"
+    },
+    {
+      "name": "地面水平加速度",
+      "type": "电力系统运行环境",
+      "desc": "地震作用下地面水平方向的加速度值"
+    },
+    {
+      "name": "地面垂直加速度",
+      "type": "电力系统运行环境",
+      "desc": "地震作用下地面垂直方向的加速度值"
+    },
+    {
+      "name": "0.2g",
+      "type": "数值约束",
+      "desc": "地面水平加速度的限值"
+    },
+    {
+      "name": "0.13g",
+      "type": "数值约束",
+      "desc": "地面垂直加速度的限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "地面水平加速度：0.2g",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "设计与建设",
+      "condition": "地震设防烈度",
+      "constraint": "地面水平加速度≤0.2g",
+      "related_entities": [
+        "地震设防烈度",
+        "地面水平加速度"
+      ]
+    },
+    {
+      "content": "地面垂直加速度：0.13g",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "设计与建设",
+      "condition": "地震设防烈度",
+      "constraint": "地面垂直加速度≤0.13g",
+      "related_entities": [
+        "地震设防烈度",
+        "地面垂直加速度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地震设防烈度",
+      "target": "地面水平加速度",
+      "type": "包含"
+    },
+    {
+      "source": "地震设防烈度",
+      "target": "地面垂直加速度",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2185,
+      "source_row_id": "2185",
+      "clause_index": 1,
+      "source_text": "地震设防烈度a)地面水平加速度：0．2g。b)地面垂直加速度：0．13g"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.244548+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

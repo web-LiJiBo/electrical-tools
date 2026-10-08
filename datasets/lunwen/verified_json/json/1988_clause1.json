@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "输电线路",
+      "type": "电力设施",
+      "desc": "架设于地面上的高压输电导线及其支撑结构"
+    },
+    {
+      "name": "铁路",
+      "type": "交通设施",
+      "desc": "供火车行驶的轨道系统"
+    },
+    {
+      "name": "高速公路",
+      "type": "交通设施",
+      "desc": "高等级公路，供汽车高速行驶"
+    },
+    {
+      "name": "一级公路",
+      "type": "交通设施",
+      "desc": "高等级公路，供汽车行驶"
+    },
+    {
+      "name": "电车道",
+      "type": "交通设施",
+      "desc": "供电动车辆行驶的道路"
+    },
+    {
+      "name": "一、二级通航河流",
+      "type": "水体",
+      "desc": "具有航运价值的一、二级河流"
+    },
+    {
+      "name": "110kV及以上线路",
+      "type": "电力设施",
+      "desc": "电压等级110kV及以上的输电线路"
+    },
+    {
+      "name": "特殊管道",
+      "type": "工业设施",
+      "desc": "具有特殊用途的输油、输气管道"
+    },
+    {
+      "name": "索道",
+      "type": "交通设施",
+      "desc": "用于运输人员或货物的缆车系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "输电线路跨越铁路、高速公路、一级公路、电车道、一、二级通航河流、110kV及以上线路、特殊管道、索道时在跨越档内不得接头",
+      "type": "强制",
+      "subject": "输电线路",
+      "action": "跨越",
+      "condition": "跨越铁路、高速公路、一级公路、电车道、一、二级通航河流、110kV及以上线路、特殊管道、索道",
+      "constraint": "跨越档内不得接头",
+      "related_entities": [
+        "输电线路",
+        "铁路",
+        "高速公路",
+        "一级公路",
+        "电车道",
+        "一、二级通航河流",
+        "110kV及以上线路",
+        "特殊管道",
+        "索道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "输电线路",
+      "target": "铁路",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "高速公路",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "一级公路",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "电车道",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "一、二级通航河流",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "110kV及以上线路",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "特殊管道",
+      "type": "跨越"
+    },
+    {
+      "source": "输电线路",
+      "target": "索道",
+      "type": "跨越"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1988,
+      "source_row_id": "1988",
+      "clause_index": 1,
+      "source_text": "输电线路跨越铁路、高速公路、一级公路、电车道、一、二级通航河流、110kV及以上线路、特殊管道、索道时在跨越档内不得接头"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.994969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

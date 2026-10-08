@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "高处作业人员",
+      "type": "人员",
+      "desc": "进行高空作业的工作人员"
+    },
+    {
+      "name": "安全带",
+      "type": "设备",
+      "desc": "用于防止高空作业人员坠落的安全装备"
+    },
+    {
+      "name": "钢管杆塔",
+      "type": "设施",
+      "desc": "由钢管构成的电力杆塔"
+    },
+    {
+      "name": "30m以上杆塔",
+      "type": "设施",
+      "desc": "高度超过30米的电力杆塔"
+    },
+    {
+      "name": "220kV及以上线路杆塔",
+      "type": "设施",
+      "desc": "电压等级220kV及以上的输电线路杆塔"
+    },
+    {
+      "name": "防坠安全保护装置",
+      "type": "设备",
+      "desc": "用于防止高空作业人员坠落的安全装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高处作业人员在作业过程中，应随时检查安全带是否拴牢。",
+      "type": "强制",
+      "subject": "高处作业人员",
+      "action": "检查安全带",
+      "condition": "作业过程中",
+      "constraint": "安全带拴牢",
+      "related_entities": [
+        "高处作业人员",
+        "安全带"
+      ]
+    },
+    {
+      "content": "高处作业人员在转移作业位置时不准失去安全保护。",
+      "type": "强制",
+      "subject": "高处作业人员",
+      "action": "转移作业位置",
+      "condition": "作业过程中",
+      "constraint": "始终有安全保护措施",
+      "related_entities": [
+        "高处作业人员",
+        "安全带"
+      ]
+    },
+    {
+      "content": "钢管杆塔、30m以上杆塔和220kV及以上线路杆塔宜设置作业人员上下杆塔和杆塔上水平移动的防坠安全保护装置。",
+      "type": "建议",
+      "subject": "电力杆塔",
+      "action": "设置防坠安全保护装置",
+      "condition": "钢管杆塔、30m以上杆塔和220kV及以上线路杆塔",
+      "constraint": "作业人员上下杆塔和杆塔上水平移动",
+      "related_entities": [
+        "钢管杆塔",
+        "30m以上杆塔",
+        "220kV及以上线路杆塔",
+        "防坠安全保护装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高处作业人员",
+      "target": "安全带",
+      "type": "使用"
+    },
+    {
+      "source": "高处作业人员",
+      "target": "钢管杆塔",
+      "type": "作业对象"
+    },
+    {
+      "source": "高处作业人员",
+      "target": "30m以上杆塔",
+      "type": "作业对象"
+    },
+    {
+      "source": "高处作业人员",
+      "target": "220kV及以上线路杆塔",
+      "type": "作业对象"
+    },
+    {
+      "source": "钢管杆塔",
+      "target": "防坠安全保护装置",
+      "type": "安装"
+    },
+    {
+      "source": "30m以上杆塔",
+      "target": "防坠安全保护装置",
+      "type": "安装"
+    },
+    {
+      "source": "220kV及以上线路杆塔",
+      "target": "防坠安全保护装置",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2035,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f70c727833cdc191",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2035_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

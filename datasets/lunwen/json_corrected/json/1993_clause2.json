@@ -1,0 +1,167 @@
+{
+  "entities": [
+    {
+      "name": "张力放线",
+      "type": "施工工艺",
+      "desc": "电力线路架设过程中的一种施工方法"
+    },
+    {
+      "name": "紧线",
+      "type": "施工工艺",
+      "desc": "电力线路架设过程中紧固导线的操作"
+    },
+    {
+      "name": "附件安装",
+      "type": "施工工艺",
+      "desc": "电力线路架设过程中安装导线附件的操作"
+    },
+    {
+      "name": "导线",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "金钩",
+      "type": "缺陷",
+      "desc": "导线表面出现的金属钩状物缺陷"
+    },
+    {
+      "name": "破股",
+      "type": "缺陷",
+      "desc": "导线内部出现的断裂现象"
+    },
+    {
+      "name": "钢芯",
+      "type": "电力设备",
+      "desc": "导线内部的钢芯部分"
+    },
+    {
+      "name": "补修管",
+      "type": "电力设备",
+      "desc": "用于修补导线损伤的专用工具"
+    },
+    {
+      "name": "预绞丝",
+      "type": "电力设备",
+      "desc": "用于修补导线损伤的预绞制金属丝"
+    }
+  ],
+  "rules": [
+    {
+      "content": "强度损失超过保证计算拉断力的8.5％",
+      "type": "强制",
+      "subject": "导线",
+      "action": "损伤",
+      "condition": "张力放线、紧线及附件安装时",
+      "constraint": "强度损失超过保证计算拉断力的8.5％",
+      "related_entities": [
+        "导线"
+      ]
+    },
+    {
+      "content": "截面积损伤超过导电部分截面积的12.5％",
+      "type": "强制",
+      "subject": "导线",
+      "action": "损伤",
+      "condition": "张力放线、紧线及附件安装时",
+      "constraint": "截面积损伤超过导电部分截面积的12.5％",
+      "related_entities": [
+        "导线"
+      ]
+    },
+    {
+      "content": "损伤的范围超过一个补修管允许补修的范围",
+      "type": "强制",
+      "subject": "导线",
+      "action": "损伤",
+      "condition": "张力放线、紧线及附件安装时",
+      "constraint": "损伤的范围超过一个补修管允许补修的范围",
+      "related_entities": [
+        "导线",
+        "补修管"
+      ]
+    },
+    {
+      "content": "钢芯有断股",
+      "type": "强制",
+      "subject": "导线",
+      "action": "损伤",
+      "condition": "张力放线、紧线及附件安装时",
+      "constraint": "钢芯有断股",
+      "related_entities": [
+        "导线",
+        "钢芯"
+      ]
+    },
+    {
+      "content": "金钩、破股已使钢芯或内层线股形成无法修复的永久变形",
+      "type": "强制",
+      "subject": "导线",
+      "action": "损伤",
+      "condition": "张力放线、紧线及附件安装时",
+      "constraint": "金钩、破股已使钢芯或内层线股形成无法修复的永久变形",
+      "related_entities": [
+        "导线",
+        "钢芯",
+        "金钩",
+        "破股"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "张力放线",
+      "target": "导线",
+      "type": "施工对象"
+    },
+    {
+      "source": "紧线",
+      "target": "导线",
+      "type": "施工对象"
+    },
+    {
+      "source": "附件安装",
+      "target": "导线",
+      "type": "施工对象"
+    },
+    {
+      "source": "导线",
+      "target": "金钩",
+      "type": "缺陷表现"
+    },
+    {
+      "source": "导线",
+      "target": "破股",
+      "type": "缺陷表现"
+    },
+    {
+      "source": "导线",
+      "target": "钢芯",
+      "type": "组成部分"
+    },
+    {
+      "source": "导线",
+      "target": "补修管",
+      "type": "修补工具"
+    },
+    {
+      "source": "导线",
+      "target": "预绞丝",
+      "type": "修补材料"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1993,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b9061a527802ac85",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1993_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "设备正常工作时的电流值"
+    },
+    {
+      "name": "1.1倍额定电流",
+      "type": "电气参数",
+      "desc": "额定电流的1.1倍值"
+    },
+    {
+      "name": "1.2倍额定电流",
+      "type": "电气参数",
+      "desc": "额定电流的1.2倍值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.1倍额定电流应能长期运行",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "长期运行",
+      "condition": "在额定电压下",
+      "constraint": "1.1倍额定电流",
+      "related_entities": [
+        "额定电流",
+        "1.1倍额定电流"
+      ]
+    },
+    {
+      "content": "1.2倍额定电流下运行时间应不低于30s",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "短时运行",
+      "condition": "在额定电压下",
+      "constraint": "1.2倍额定电流，持续时间≥30s",
+      "related_entities": [
+        "额定电流",
+        "1.2倍额定电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定电流",
+      "target": "1.1倍额定电流",
+      "type": "倍数关系"
+    },
+    {
+      "source": "额定电流",
+      "target": "1.2倍额定电流",
+      "type": "倍数关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2480,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dad45101c4de28cf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2480_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "制造厂",
+      "type": "企业",
+      "desc": "生产制造电力设备的企业"
+    },
+    {
+      "name": "突发短路试验报告",
+      "type": "技术文件",
+      "desc": "记录变压器在突发短路情况下的性能测试结果的报告"
+    },
+    {
+      "name": "抗短路能力计算报告",
+      "type": "技术文件",
+      "desc": "基于理论分析和模型试验计算得出的变压器抗短路能力的报告"
+    }
+  ],
+  "rules": [
+    {
+      "content": "240MVA及以下容量变压器，制造厂应提供同类产品突发短路试验报告",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供突发短路试验报告",
+      "condition": "240MVA及以下容量变压器",
+      "constraint": "同类产品突发短路试验报告",
+      "related_entities": [
+        "变压器",
+        "制造厂",
+        "突发短路试验报告"
+      ]
+    },
+    {
+      "content": "500kV变压器和240MVA以上容量变压器，制造厂应提供同类产品突发短路试验报告或抗短路能力计算报告，计算报告应有相关理论和模型试验的技术支持",
+      "type": "强制",
+      "subject": "制造厂",
+      "action": "提供突发短路试验报告或抗短路能力计算报告",
+      "condition": "500kV变压器和240MVA以上容量变压器",
+      "constraint": "同类产品突发短路试验报告或抗短路能力计算报告，计算报告应有相关理论和模型试验的技术支持",
+      "related_entities": [
+        "变压器",
+        "制造厂",
+        "突发短路试验报告",
+        "抗短路能力计算报告"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "制造厂",
+      "target": "变压器",
+      "type": "制造"
+    },
+    {
+      "source": "制造厂",
+      "target": "突发短路试验报告",
+      "type": "提供"
+    },
+    {
+      "source": "制造厂",
+      "target": "抗短路能力计算报告",
+      "type": "提供"
+    },
+    {
+      "source": "突发短路试验报告",
+      "target": "变压器",
+      "type": "对应"
+    },
+    {
+      "source": "抗短路能力计算报告",
+      "target": "变压器",
+      "type": "对应"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1459,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6334aa0ffb0eb517",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1459_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

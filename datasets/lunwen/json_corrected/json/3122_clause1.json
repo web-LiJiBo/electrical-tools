@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "电容器组",
+      "type": "电力设备",
+      "desc": "电力系统中用于补偿无功功率的电容装置"
+    },
+    {
+      "name": "电容量",
+      "type": "技术参数",
+      "desc": "电容器组的电容值大小"
+    },
+    {
+      "name": "电容器单元",
+      "type": "电力设备",
+      "desc": "构成电容器组的基本电容器单元"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于电容量在3Mvar及以下的电容器组，-5%～+5%",
+      "type": "强制",
+      "subject": "电容器组",
+      "action": "投切",
+      "condition": "电容量在3Mvar及以下",
+      "constraint": "-5%～+5%",
+      "related_entities": [
+        "电容器组",
+        "电容器单元"
+      ]
+    },
+    {
+      "content": "对于电容量在3Mvar以上的电容器组，0～+5%",
+      "type": "强制",
+      "subject": "电容器组",
+      "action": "投切",
+      "condition": "电容量在3Mvar以上",
+      "constraint": "0～+5%",
+      "related_entities": [
+        "电容器组",
+        "电容器单元"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电容器组",
+      "target": "电容器单元",
+      "type": "组成"
+    },
+    {
+      "source": "电容器单元",
+      "target": "电容器组",
+      "type": "组成"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3122,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "1eeaae3bd8ecbd82",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3122_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

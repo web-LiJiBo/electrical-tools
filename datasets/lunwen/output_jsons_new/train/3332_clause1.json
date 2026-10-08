@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "内冷却系统",
+      "type": "电力设备",
+      "desc": "电力系统中用于冷却的内部循环水系统"
+    },
+    {
+      "name": "补充水",
+      "type": "电力设备用水",
+      "desc": "向内冷却系统补充的水"
+    },
+    {
+      "name": "GB/T12145",
+      "type": "国家标准",
+      "desc": "水质标准，规定了电力工业用水水质要求"
+    },
+    {
+      "name": "电导率",
+      "type": "水质参数",
+      "desc": "水中可溶性物质含量的指标，以微西门子每厘米表示"
+    },
+    {
+      "name": "pH值",
+      "type": "水质参数",
+      "desc": "溶液酸碱度的指标，以无量纲的pH值表示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内冷却系统补充水水质应满足GB/T12145要求",
+      "type": "强制",
+      "subject": "内冷却系统",
+      "action": "补充水",
+      "condition": "内冷却系统运行期间",
+      "constraint": "GB/T12145",
+      "related_entities": [
+        "内冷却系统",
+        "补充水",
+        "GB/T12145"
+      ]
+    },
+    {
+      "content": "电导率应小于10μS/cm",
+      "type": "强制",
+      "subject": "补充水",
+      "action": "补充",
+      "condition": "内冷却系统运行期间",
+      "constraint": "电导率<10μS/cm",
+      "related_entities": [
+        "补充水",
+        "电导率"
+      ]
+    },
+    {
+      "content": "pH介于6.5～8.0之间",
+      "type": "强制",
+      "subject": "补充水",
+      "action": "补充",
+      "condition": "内冷却系统运行期间",
+      "constraint": "6.5≤pH≤8.0",
+      "related_entities": [
+        "补充水",
+        "pH值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内冷却系统",
+      "target": "补充水",
+      "type": "使用"
+    },
+    {
+      "source": "补充水",
+      "target": "GB/T12145",
+      "type": "符合"
+    },
+    {
+      "source": "补充水",
+      "target": "电导率",
+      "type": "具有"
+    },
+    {
+      "source": "补充水",
+      "target": "pH值",
+      "type": "具有"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "液浸式电抗器",
+      "type": "电力设备",
+      "desc": "一种将电能转换为磁场能量的电力设备"
+    },
+    {
+      "name": "箱壁",
+      "type": "电力设备部件",
+      "desc": "液浸式电抗器的外壳组成部分"
+    },
+    {
+      "name": "最大振幅",
+      "type": "技术参数",
+      "desc": "液浸式电抗器箱壁在运行过程中产生的最大位移量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于液浸式电抗器，箱壁的最大振幅不应大于200μm(峰一峰值)",
+      "type": "强制",
+      "subject": "液浸式电抗器",
+      "action": "运行维护",
+      "condition": "液浸式电抗器在运行过程中",
+      "constraint": "最大振幅≤200μm(峰一峰值)",
+      "related_entities": [
+        "液浸式电抗器",
+        "箱壁"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "液浸式电抗器",
+      "target": "箱壁",
+      "type": "包含"
+    },
+    {
+      "source": "最大振幅",
+      "target": "箱壁",
+      "type": "测量于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 874,
+      "source_row_id": "874",
+      "clause_index": 1,
+      "source_text": "振动水平：对于液浸式电抗器，箱壁的最大振幅不应大于200μm(峰一峰值)"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.733080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

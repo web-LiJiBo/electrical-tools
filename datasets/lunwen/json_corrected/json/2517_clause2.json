@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油介质损耗因数",
+      "type": "电气参数",
+      "desc": "绝缘油在特定温度下的介质损耗特性"
+    },
+    {
+      "name": "90℃",
+      "type": "温度",
+      "desc": "绝缘油介质损耗因数测试的温度条件"
+    },
+    {
+      "name": "0.007",
+      "type": "数值约束",
+      "desc": "绝缘油介质损耗因数的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油介质损耗因数（90℃）标准检修后：≤0.007",
+      "type": "强制",
+      "subject": "绝缘油介质损耗因数",
+      "action": "检修后应满足介质损耗因数要求",
+      "condition": "绝缘油介质损耗因数（90℃）",
+      "constraint": "≤0.007",
+      "related_entities": [
+        "绝缘油介质损耗因数",
+        "90℃"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油介质损耗因数",
+      "target": "90℃",
+      "type": "测试条件"
+    },
+    {
+      "source": "绝缘油介质损耗因数",
+      "target": "0.007",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2517,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b1ad7d5dea2bd1fb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2517_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

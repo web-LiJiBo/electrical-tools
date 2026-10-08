@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "爬电距离",
+      "type": "电气参数",
+      "desc": "电气设备中带电体与接地体之间沿绝缘材料表面的最短路径长度"
+    },
+    {
+      "name": "瓷质材料",
+      "type": "绝缘材料",
+      "desc": "以天然或合成的硅酸盐为主要成分的无机非金属材料"
+    },
+    {
+      "name": "有机材料",
+      "type": "绝缘材料",
+      "desc": "以碳氢化合物为主要成分的有机高分子材料"
+    }
+  ],
+  "rules": [
+    {
+      "content": "瓷质材料（对地）≥216mm，有机材料（对地）≥240mm",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "设计制造",
+      "condition": "电气设备的爬电距离要求",
+      "constraint": "瓷质材料≥216mm，有机材料≥240mm",
+      "related_entities": [
+        "爬电距离",
+        "瓷质材料",
+        "有机材料"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "爬电距离",
+      "target": "瓷质材料",
+      "type": "满足条件"
+    },
+    {
+      "source": "爬电距离",
+      "target": "有机材料",
+      "type": "满足条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 245,
+      "source_row_id": "245",
+      "clause_index": 2,
+      "source_text": "爬电距离：瓷质材料（对地）≥216mm，有机材料（对地）≥240mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.016600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

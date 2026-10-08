@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "水冷装置",
+      "type": "电力设备",
+      "desc": "电力系统中用于冷却的装置"
+    },
+    {
+      "name": "环境温度",
+      "type": "物理参数",
+      "desc": "水冷装置周围空气的温度"
+    },
+    {
+      "name": "相对湿度",
+      "type": "物理参数",
+      "desc": "水冷装置周围空气的湿度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水冷装置的其他室内部分的环境温度为+5℃～+35℃，相对湿度不大于90%",
+      "type": "强制",
+      "subject": "水冷装置",
+      "action": "运行维护",
+      "condition": "在室内环境下",
+      "constraint": "环境温度+5℃～+35℃，相对湿度≤90%",
+      "related_entities": [
+        "水冷装置",
+        "环境温度",
+        "相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水冷装置",
+      "target": "环境温度",
+      "type": "影响"
+    },
+    {
+      "source": "水冷装置",
+      "target": "相对湿度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2491,
+      "source_row_id": "2491",
+      "clause_index": 1,
+      "source_text": "b）水冷装置的其他室内部分的环境温度为+5℃～+35℃，相对湿度不大于90%。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.633316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

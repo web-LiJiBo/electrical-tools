@@ -1,0 +1,148 @@
+{
+  "entities": [
+    {
+      "name": "杆塔",
+      "type": "电力设施",
+      "desc": "输电线路的支撑结构"
+    },
+    {
+      "name": "主材",
+      "type": "电力设施部件",
+      "desc": "杆塔的主要承重构件"
+    },
+    {
+      "name": "相邻节点间弯曲度",
+      "type": "技术参数",
+      "desc": "杆塔主材相邻节点间的弯曲程度"
+    },
+    {
+      "name": "电压等级",
+      "type": "电力系统参数",
+      "desc": "输电线路的额定电压等级"
+    },
+    {
+      "name": "±500kV",
+      "type": "电压等级",
+      "desc": "输电线路额定电压为±500kV"
+    },
+    {
+      "name": "±660kV",
+      "type": "电压等级",
+      "desc": "输电线路额定电压为±660kV"
+    },
+    {
+      "name": "角钢杆塔",
+      "type": "杆塔类型",
+      "desc": "采用角钢作为主材的杆塔"
+    },
+    {
+      "name": "钢管塔",
+      "type": "杆塔类型",
+      "desc": "采用钢管作为主材的杆塔"
+    }
+  ],
+  "rules": [
+    {
+      "content": "杆塔主材相邻节点间弯曲度±500kV及以下电压等级不应超过1/500",
+      "type": "强制",
+      "subject": "杆塔主材相邻节点间弯曲度",
+      "action": "不应超过1/500",
+      "condition": "±500kV及以下电压等级",
+      "constraint": "≤1/500",
+      "related_entities": [
+        "杆塔",
+        "主材",
+        "相邻节点间弯曲度",
+        "电压等级",
+        "±500kV"
+      ]
+    },
+    {
+      "content": "±660kV及以上电压等级角钢杆塔不应超过1/750",
+      "type": "强制",
+      "subject": "杆塔主材相邻节点间弯曲度",
+      "action": "不应超过1/750",
+      "condition": "±660kV及以上电压等级且为角钢杆塔",
+      "constraint": "≤1/750",
+      "related_entities": [
+        "杆塔",
+        "主材",
+        "相邻节点间弯曲度",
+        "电压等级",
+        "±660kV",
+        "角钢杆塔"
+      ]
+    },
+    {
+      "content": "±660kV及以上电压等级钢管塔不应超过1/800",
+      "type": "强制",
+      "subject": "杆塔主材相邻节点间弯曲度",
+      "action": "不应超过1/800",
+      "condition": "±660kV及以上电压等级且为钢管塔",
+      "constraint": "≤1/800",
+      "related_entities": [
+        "杆塔",
+        "主材",
+        "相邻节点间弯曲度",
+        "电压等级",
+        "±660kV",
+        "钢管塔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "杆塔",
+      "target": "主材",
+      "type": "包含"
+    },
+    {
+      "source": "主材",
+      "target": "相邻节点间弯曲度",
+      "type": "包含"
+    },
+    {
+      "source": "相邻节点间弯曲度",
+      "target": "杆塔",
+      "type": "属于"
+    },
+    {
+      "source": "相邻节点间弯曲度",
+      "target": "电压等级",
+      "type": "适用于"
+    },
+    {
+      "source": "±500kV",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "±660kV",
+      "target": "电压等级",
+      "type": "属于"
+    },
+    {
+      "source": "角钢杆塔",
+      "target": "杆塔",
+      "type": "属于"
+    },
+    {
+      "source": "钢管塔",
+      "target": "杆塔",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 755,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "197fde8f8f691648",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\755_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

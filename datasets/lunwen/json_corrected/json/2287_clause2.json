@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "噪声水平",
+      "type": "技术参数",
+      "desc": "风冷却设备投入运行时的噪声水平"
+    },
+    {
+      "name": "风冷却设备",
+      "type": "设备",
+      "desc": "用于电力系统中冷却的通风设备"
+    },
+    {
+      "name": "75dB",
+      "type": "噪声水平",
+      "desc": "风冷却设备投入运行时的噪声水平上限"
+    }
+  ],
+  "rules": [
+    {
+      "content": "<75dB",
+      "type": "强制",
+      "subject": "风冷却设备",
+      "action": "噪声控制",
+      "condition": "风冷却设备投入运行",
+      "constraint": "≤75dB",
+      "related_entities": [
+        "噪声水平",
+        "风冷却设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "噪声水平",
+      "target": "风冷却设备",
+      "type": "属于"
+    },
+    {
+      "source": "风冷却设备",
+      "target": "噪声水平",
+      "type": "产生"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2287,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a3efca4973c200f2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2287_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

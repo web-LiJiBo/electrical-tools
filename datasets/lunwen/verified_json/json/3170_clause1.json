@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "750kV",
+      "type": "电压等级",
+      "desc": "高压输电系统电压等级"
+    },
+    {
+      "name": "参数",
+      "type": "技术参数",
+      "desc": "电力设备的技术指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油参数750kV≥70",
+      "type": "强制",
+      "subject": "电力设备制造企业",
+      "action": "生产、检验绝缘油",
+      "condition": "应用于750kV及以上电压等级的电力设备",
+      "constraint": "绝缘油参数≥70",
+      "related_entities": [
+        "绝缘油",
+        "750kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油",
+      "target": "750kV",
+      "type": "适用于"
+    },
+    {
+      "source": "绝缘油",
+      "target": "参数",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3161,
+      "source_row_id": "3170",
+      "clause_index": 1,
+      "source_text": "表7绝缘油参数750kV≥70。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.456313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

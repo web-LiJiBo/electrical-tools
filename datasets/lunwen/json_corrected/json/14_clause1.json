@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "油中溶解气体色谱分析",
+      "type": "试验方法",
+      "desc": "一种用于检测变压器等电气设备内部故障的试验方法"
+    },
+    {
+      "name": "检测周期",
+      "type": "时间周期",
+      "desc": "进行某项试验或检查的间隔时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "油中溶解气体色谱分析的检测周期为必要时",
+      "type": "强制",
+      "subject": "油中溶解气体色谱分析",
+      "action": "检测周期",
+      "condition": "必要时",
+      "constraint": "无具体周期规定",
+      "related_entities": [
+        "油中溶解气体色谱分析",
+        "检测周期"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油中溶解气体色谱分析",
+      "target": "检测周期",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 14,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "768265a3903eb396",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\14_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

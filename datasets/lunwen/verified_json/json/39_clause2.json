@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "铝绞线",
+      "type": "导线类型",
+      "desc": "由铝线绞合而成的导线"
+    },
+    {
+      "name": "铝合金绞线",
+      "type": "导线类型",
+      "desc": "由铝合金线绞合而成的导线"
+    },
+    {
+      "name": "导线损伤",
+      "type": "故障类型",
+      "desc": "导线在运行过程中出现的物理损伤"
+    },
+    {
+      "name": "强度损失",
+      "type": "技术参数",
+      "desc": "导线损伤后剩余的抗拉强度与原强度之比"
+    },
+    {
+      "name": "总拉断力",
+      "type": "技术参数",
+      "desc": "导线的最大抗拉强度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铝绞线与铝合金绞线：导线在同一处损伤的强度损失超过总拉断力的5％，但不足17％时",
+      "type": "强制",
+      "subject": "导线损伤",
+      "action": "进行补修处理",
+      "condition": "铝绞线或铝合金绞线导线在同一处损伤",
+      "constraint": "强度损失超过总拉断力的5％，但不足17％",
+      "related_entities": [
+        "铝绞线",
+        "铝合金绞线",
+        "导线损伤",
+        "强度损失",
+        "总拉断力"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铝绞线",
+      "target": "导线损伤",
+      "type": "包含"
+    },
+    {
+      "source": "铝合金绞线",
+      "target": "导线损伤",
+      "type": "包含"
+    },
+    {
+      "source": "导线损伤",
+      "target": "强度损失",
+      "type": "导致"
+    },
+    {
+      "source": "导线损伤",
+      "target": "总拉断力",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 39,
+      "source_row_id": "39",
+      "clause_index": 2,
+      "source_text": "导线损伤补修处理标准中：铝绞线与铝合金绞线：导线在同一处损伤的强度损失超过总拉断力的5％，但不足17％时"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.794590+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

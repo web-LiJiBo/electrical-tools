@@ -1,0 +1,128 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "铅套",
+      "type": "电力设备部件",
+      "desc": "电缆外层保护套管，由铅材料制成"
+    },
+    {
+      "name": "皱纹铝套",
+      "type": "电力设备部件",
+      "desc": "电缆外层保护套管，由皱纹铝材料制成"
+    },
+    {
+      "name": "标称值",
+      "type": "技术参数",
+      "desc": "设计时确定的电缆套管厚度标准值"
+    },
+    {
+      "name": "平均值",
+      "type": "技术参数",
+      "desc": "电缆套管厚度的算术平均值"
+    },
+    {
+      "name": "最小厚度",
+      "type": "技术参数",
+      "desc": "电缆套管厚度的最小值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "66kV及以上电缆铅套厚度的平均值不得小于标称值，任一处的最小厚度不得小于标称值的95%",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "制造/验收",
+      "condition": "66kV及以上电压等级电缆",
+      "constraint": "铅套厚度平均值≥标称值，最小厚度≥标称值×95%",
+      "related_entities": [
+        "电缆",
+        "铅套",
+        "标称值",
+        "平均值",
+        "最小厚度"
+      ]
+    },
+    {
+      "content": "皱纹铝套厚度的平均值不得小于标称值，任一处的最小厚度不得小于标称值的90%",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "制造/验收",
+      "condition": "66kV及以上电压等级电缆",
+      "constraint": "皱纹铝套厚度平均值≥标称值，最小厚度≥标称值×90%",
+      "related_entities": [
+        "电缆",
+        "皱纹铝套",
+        "标称值",
+        "平均值",
+        "最小厚度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "铅套",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "皱纹铝套",
+      "type": "包含"
+    },
+    {
+      "source": "铅套",
+      "target": "标称值",
+      "type": "依据"
+    },
+    {
+      "source": "皱纹铝套",
+      "target": "标称值",
+      "type": "依据"
+    },
+    {
+      "source": "铅套",
+      "target": "平均值",
+      "type": "计算依据"
+    },
+    {
+      "source": "皱纹铝套",
+      "target": "平均值",
+      "type": "计算依据"
+    },
+    {
+      "source": "铅套",
+      "target": "最小厚度",
+      "type": "计算依据"
+    },
+    {
+      "source": "皱纹铝套",
+      "target": "最小厚度",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1841,
+      "source_row_id": "1841",
+      "clause_index": 1,
+      "source_text": "66kV及以上电缆铅套厚度的平均值不得小于标称值，任一处的最小厚度不得小于标称值的95%。皱纹铝套厚度的平均值不得小于标称值，任一处的最小厚度不得小于标称值的90%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.826967+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

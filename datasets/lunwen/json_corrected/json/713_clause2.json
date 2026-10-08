@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电压或电流的电气设备"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录运输过程中设备受到冲击加速度的仪器"
+    },
+    {
+      "name": "厂家",
+      "type": "组织机构",
+      "desc": "生产制造互感器的企业"
+    }
+  ],
+  "rules": [
+    {
+      "content": "220kV及以上互感器运输全过程厂家应装设三维冲撞记录仪",
+      "type": "强制",
+      "subject": "厂家",
+      "action": "装设三维冲撞记录仪",
+      "condition": "220kV及以上互感器运输全过程",
+      "constraint": "全程",
+      "related_entities": [
+        "互感器",
+        "三维冲撞记录仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "厂家",
+      "target": "互感器",
+      "type": "生产制造"
+    },
+    {
+      "source": "厂家",
+      "target": "三维冲撞记录仪",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 713,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b4ff84b5072a9b11",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\713_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

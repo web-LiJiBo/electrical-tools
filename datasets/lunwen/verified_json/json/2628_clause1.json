@@ -1,0 +1,166 @@
+{
+  "entities": [
+    {
+      "name": "一次端多次截断冲击试验",
+      "type": "试验项目",
+      "desc": "对一次端进行多次截断冲击的试验"
+    },
+    {
+      "name": "传递过电压试验",
+      "type": "试验项目",
+      "desc": "测试设备在传递过电压情况下的耐受能力"
+    },
+    {
+      "name": "机械强度试验",
+      "type": "试验项目",
+      "desc": "测试设备在机械应力作用下的强度"
+    },
+    {
+      "name": "内部电弧故障试验",
+      "type": "试验项目",
+      "desc": "模拟内部电弧故障的试验"
+    },
+    {
+      "name": "低温和高温下的密封性能试验",
+      "type": "试验项目",
+      "desc": "测试设备在不同温度下的密封性能"
+    },
+    {
+      "name": "腐蚀试验",
+      "type": "试验项目",
+      "desc": "测试设备在腐蚀环境中的耐受能力"
+    },
+    {
+      "name": "着火危险试验",
+      "type": "试验项目",
+      "desc": "测试设备在火灾情况下的安全性能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有电力设备都应进行一次端多次截断冲击试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行一次端多次截断冲击试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "一次端多次截断冲击试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行传递过电压试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行传递过电压试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "传递过电压试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行机械强度试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行机械强度试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "机械强度试验"
+      ]
+    },
+    {
+      "content": "所有气体绝缘产品都应进行低温和高温下的密封性能试验",
+      "type": "强制",
+      "subject": "气体绝缘产品",
+      "action": "进行低温和高温下的密封性能试验",
+      "condition": "所有气体绝缘产品",
+      "constraint": "无",
+      "related_entities": [
+        "低温和高温下的密封性能试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行腐蚀试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行腐蚀试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "腐蚀试验"
+      ]
+    },
+    {
+      "content": "所有电力设备都应进行着火危险试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行着火危险试验",
+      "condition": "所有电力设备",
+      "constraint": "无",
+      "related_entities": [
+        "着火危险试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一次端多次截断冲击试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "传递过电压试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "机械强度试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "内部电弧故障试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "低温和高温下的密封性能试验",
+      "target": "气体绝缘产品",
+      "type": "适用对象"
+    },
+    {
+      "source": "腐蚀试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "着火危险试验",
+      "target": "电力设备",
+      "type": "适用对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2619,
+      "source_row_id": "2628",
+      "clause_index": 1,
+      "source_text": "特殊试验项目包括：一次端多次截断冲击试验、传递过电压试验、机械强度试验、内部电弧故障试验、低温和高温下的密封性能试验（适用于气体绝缘产品）、腐蚀试验、着火危险试验。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5614,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.784315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "entities": [
+    {
+      "name": "厂房",
+      "type": "建筑物",
+      "desc": "工业生产用房"
+    },
+    {
+      "name": "仓库",
+      "type": "建筑物",
+      "desc": "储存物品的场所"
+    },
+    {
+      "name": "防火墙",
+      "type": "建筑构件",
+      "desc": "用于防火分隔的墙体"
+    },
+    {
+      "name": "耐火极限",
+      "type": "技术参数",
+      "desc": "建筑构件在火灾条件下保持完整性和隔热性的持续时间"
+    },
+    {
+      "name": "燃烧性能",
+      "type": "技术参数",
+      "desc": "建筑材料在火灾条件下抵抗燃烧的能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "厂房和仓库相应建筑构件的燃烧性能和耐火极限，除本规范另有规定者外，不应低于表3．2．1的规定。",
+      "type": "强制",
+      "subject": "厂房和仓库",
+      "action": "设置建筑构件的燃烧性能和耐火极限",
+      "condition": "除本规范另有规定者外",
+      "constraint": "不低于表3．2．1的规定",
+      "related_entities": [
+        "厂房",
+        "仓库",
+        "防火墙",
+        "耐火极限",
+        "燃烧性能"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "防火墙",
+      "target": "耐火极限",
+      "type": "满足"
+    },
+    {
+      "source": "防火墙",
+      "target": "燃烧性能",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 353,
+      "source_row_id": "353",
+      "clause_index": 2,
+      "source_text": "厂房和仓库…相应建筑构件的燃烧性能和耐火极限，除本规范另有规定者外，不应低于表3．2．1的规定。（表格中防火墙耐火极限3h）"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.132485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

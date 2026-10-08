@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "一般裸导体",
+      "type": "电力设备",
+      "desc": "未包覆绝缘材料的导电体"
+    },
+    {
+      "name": "正常最高工作温度",
+      "type": "技术参数",
+      "desc": "导体在正常运行状态下的最高允许温度"
+    },
+    {
+      "name": "钢芯铝绞线",
+      "type": "电力设备",
+      "desc": "由钢芯和铝绞线组成的复合导体"
+    },
+    {
+      "name": "管形导体",
+      "type": "电力设备",
+      "desc": "具有管状结构的导体"
+    },
+    {
+      "name": "特种耐热导体",
+      "type": "电力设备",
+      "desc": "具有较高耐热性能的导体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一般裸导体的正常最高工作温度不应大于70℃",
+      "type": "强制",
+      "subject": "一般裸导体",
+      "action": "运行",
+      "condition": "正常运行状态",
+      "constraint": "≤70℃",
+      "related_entities": [
+        "一般裸导体",
+        "正常最高工作温度"
+      ]
+    },
+    {
+      "content": "在计及日照影响时，钢芯铝绞线及管形导体不宜大于80℃",
+      "type": "强制",
+      "subject": "钢芯铝绞线及管形导体",
+      "action": "运行",
+      "condition": "正常运行状态且考虑日照影响",
+      "constraint": "≤80℃",
+      "related_entities": [
+        "钢芯铝绞线",
+        "管形导体",
+        "正常最高工作温度"
+      ]
+    },
+    {
+      "content": "特种耐热导体的最高工作温度可根据制造厂提供的数据选择使用，但要考虑高温导体对连接设备的影响，并采取防护措施",
+      "type": "建议",
+      "subject": "特种耐热导体",
+      "action": "运行",
+      "condition": "正常运行状态",
+      "constraint": "根据制造厂提供的数据选择使用，考虑高温导体对连接设备的影响并采取防护措施",
+      "related_entities": [
+        "特种耐热导体",
+        "正常最高工作温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一般裸导体",
+      "target": "正常最高工作温度",
+      "type": "包含"
+    },
+    {
+      "source": "钢芯铝绞线",
+      "target": "正常最高工作温度",
+      "type": "包含"
+    },
+    {
+      "source": "管形导体",
+      "target": "正常最高工作温度",
+      "type": "包含"
+    },
+    {
+      "source": "特种耐热导体",
+      "target": "正常最高工作温度",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 967,
+      "source_row_id": "967",
+      "clause_index": 1,
+      "source_text": "一般裸导体的正常最高工作温度不应大于70℃，在计及日照影响时，钢芯铝经线及管形导体不宜大于80℃。特种耐热导体的最高工作温度可根据制造厂提供的数据选择使用，但要考虑高温导体对连接设备的影响，并采取防护措施"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.855,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.838950+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

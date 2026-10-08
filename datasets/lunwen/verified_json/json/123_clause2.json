@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "不通航河流",
+      "type": "地理环境",
+      "desc": "不通航的河流"
+    },
+    {
+      "name": "冬季",
+      "type": "季节",
+      "desc": "一年中气温最低的季节"
+    },
+    {
+      "name": "冰面",
+      "type": "自然现象",
+      "desc": "河流结冰后的表面层"
+    },
+    {
+      "name": "66kV线路",
+      "type": "电力设施",
+      "desc": "额定电压为66kV的输电线路"
+    },
+    {
+      "name": "6m",
+      "type": "距离",
+      "desc": "线路与冰面之间的最小安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对不通航河流冬季至冰面距离66kV线路为6m",
+      "type": "强制",
+      "subject": "66kV线路",
+      "action": "架设",
+      "condition": "不通航河流冬季",
+      "constraint": "6m",
+      "related_entities": [
+        "不通航河流",
+        "冬季",
+        "冰面",
+        "66kV线路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "不通航河流",
+      "target": "66kV线路",
+      "type": "距离要求"
+    },
+    {
+      "source": "冬季",
+      "target": "66kV线路",
+      "type": "施工季节限制"
+    },
+    {
+      "source": "冰面",
+      "target": "66kV线路",
+      "type": "安全距离要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 123,
+      "source_row_id": "123",
+      "clause_index": 2,
+      "source_text": "对不通航河流冬季至冰面距离66kV线路为6m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.887602+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

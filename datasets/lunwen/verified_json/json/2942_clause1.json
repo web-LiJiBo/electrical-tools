@@ -1,0 +1,131 @@
+{
+  "entities": [
+    {
+      "name": "主航道",
+      "type": "地理区域",
+      "desc": "电力电缆敷设的主要水域通道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "电力传输用的电缆线"
+    },
+    {
+      "name": "平均最大水深",
+      "type": "物理量",
+      "desc": "主航道内最深的水深值"
+    },
+    {
+      "name": "引至岸边时间距",
+      "type": "距离",
+      "desc": "电缆从主航道引至岸边的距离"
+    },
+    {
+      "name": "非通航小河",
+      "type": "地理区域",
+      "desc": "不通航且流速不超过1m/s的小河流域"
+    },
+    {
+      "name": "同回路单芯电缆",
+      "type": "电力设施",
+      "desc": "同一回路中的单根电缆"
+    },
+    {
+      "name": "不同回路电缆",
+      "type": "电力设施",
+      "desc": "不同回路中的电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主航道内，电缆间距不宜小于平均最大水深的1.2倍。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "主航道内",
+      "constraint": "间距≥1.2×平均最大水深",
+      "related_entities": [
+        "主航道",
+        "电缆",
+        "平均最大水深"
+      ]
+    },
+    {
+      "content": "引至岸边时间距可适当缩小。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "引至岸边",
+      "constraint": "间距≤适当缩小值",
+      "related_entities": [
+        "电缆",
+        "引至岸边时间距"
+      ]
+    },
+    {
+      "content": "在非通航的流速未超过1m/s的小河中，同回路单芯电缆间距不得小于0.5m，不同回路电缆间距不得小于5m。",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "敷设",
+      "condition": "非通航小河中",
+      "constraint": "同回路单芯电缆间距≥0.5m，不同回路电缆间距≥5m",
+      "related_entities": [
+        "非通航小河",
+        "同回路单芯电缆",
+        "不同回路电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主航道",
+      "target": "电缆",
+      "type": "敷设路径"
+    },
+    {
+      "source": "电缆",
+      "target": "平均最大水深",
+      "type": "间距依据"
+    },
+    {
+      "source": "电缆",
+      "target": "引至岸边时间距",
+      "type": "敷设路径"
+    },
+    {
+      "source": "非通航小河",
+      "target": "电缆",
+      "type": "敷设路径"
+    },
+    {
+      "source": "同回路单芯电缆",
+      "target": "电缆",
+      "type": "同回路敷设"
+    },
+    {
+      "source": "不同回路电缆",
+      "target": "电缆",
+      "type": "不同回路敷设"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2933,
+      "source_row_id": "2942",
+      "clause_index": 1,
+      "source_text": "主航道内，电缆间距不宜小于平均最大水深的1.2倍。引至岸边时间距可适当缩小。在非通航的流速未超过1m/s的小河中，同回路单芯电缆间距不得小于0.5m，不同回路电缆间距不得小于5m。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9857,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.179318+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

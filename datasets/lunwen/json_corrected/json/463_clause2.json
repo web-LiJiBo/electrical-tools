@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "杆身",
+      "type": "电力设施",
+      "desc": "电力线路中的杆塔部件"
+    },
+    {
+      "name": "杆长",
+      "type": "物理量",
+      "desc": "杆身长度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "杆身弯曲不超过杆长的1/1000",
+      "type": "强制",
+      "subject": "杆身",
+      "action": "弯曲控制",
+      "condition": "新建或改造架空电力线路工程",
+      "constraint": "弯曲度≤杆长的1/1000",
+      "related_entities": [
+        "杆身",
+        "杆长"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "杆身",
+      "target": "杆长",
+      "type": "属性-值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 463,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a40968712ede66a5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\463_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

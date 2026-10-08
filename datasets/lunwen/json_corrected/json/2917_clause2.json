@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "电力系统中用于电气绝缘的设备"
+    },
+    {
+      "name": "端部转配件",
+      "type": "电力设备部件",
+      "desc": "连接绝缘子与导线的转接件"
+    },
+    {
+      "name": "图样",
+      "type": "技术文件",
+      "desc": "设计图纸或技术文件"
+    },
+    {
+      "name": "颜色",
+      "type": "物理属性",
+      "desc": "绝缘子的颜色特性"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对每只绝缘子均应进行检查。",
+      "type": "强制",
+      "subject": "绝缘子",
+      "action": "检查",
+      "condition": "所有绝缘子",
+      "constraint": "无",
+      "related_entities": [
+        "绝缘子"
+      ]
+    },
+    {
+      "content": "端部转配件的安装应符合图样要求。",
+      "type": "强制",
+      "subject": "端部转配件",
+      "action": "安装",
+      "condition": "所有端部转配件",
+      "constraint": "图样要求",
+      "related_entities": [
+        "端部转配件",
+        "图样"
+      ]
+    },
+    {
+      "content": "绝缘子的颜色应和图样规定大致相同。",
+      "type": "强制",
+      "subject": "绝缘子",
+      "action": "涂色",
+      "condition": "所有绝缘子",
+      "constraint": "图样规定",
+      "related_entities": [
+        "绝缘子",
+        "图样"
+      ]
+    },
+    {
+      "content": "允许绝缘子表面有下述缺陷：单个面积小于25mm2的缺陷（总缺陷面积不应超过绝缘子表面总面积的0.2%），深度或高度小于1mm。",
+      "type": "强制",
+      "subject": "绝缘子",
+      "action": "允许缺陷",
+      "condition": "所有绝缘子",
+      "constraint": "单个面积<25mm2，总缺陷面积≤0.2%，深度或高度<1mm",
+      "related_entities": [
+        "绝缘子"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘子",
+      "target": "端部转配件",
+      "type": "连接"
+    },
+    {
+      "source": "绝缘子",
+      "target": "图样",
+      "type": "依据"
+    },
+    {
+      "source": "绝缘子",
+      "target": "颜色",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2917,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9c34ef43ed77add8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2917_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

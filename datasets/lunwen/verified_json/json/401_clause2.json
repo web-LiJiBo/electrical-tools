@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "冷却介质水回路",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于冷却的水循环系统"
+    },
+    {
+      "name": "去离子处理旁路",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于去离子处理的旁路管道"
+    },
+    {
+      "name": "过滤装置",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于过滤冷却介质水的装置"
+    },
+    {
+      "name": "过滤精度",
+      "type": "技术参数",
+      "desc": "过滤装置对冷却介质水中的杂质颗粒大小的过滤能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "冷却介质水回路及其去离子处理旁路应设置过滤装置，过滤精度不宜低于500µm",
+      "type": "强制",
+      "subject": "冷却介质水回路及其去离子处理旁路",
+      "action": "设置过滤装置",
+      "condition": "冷却介质水回路及其去离子处理旁路存在",
+      "constraint": "过滤精度不宜低于500µm",
+      "related_entities": [
+        "冷却介质水回路",
+        "去离子处理旁路",
+        "过滤装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "冷却介质水回路",
+      "target": "过滤装置",
+      "type": "包含"
+    },
+    {
+      "source": "去离子处理旁路",
+      "target": "过滤装置",
+      "type": "包含"
+    },
+    {
+      "source": "过滤装置",
+      "target": "冷却介质水回路",
+      "type": "服务于"
+    },
+    {
+      "source": "过滤装置",
+      "target": "去离子处理旁路",
+      "type": "服务于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 401,
+      "source_row_id": "401",
+      "clause_index": 2,
+      "source_text": "冷却介质水回路及其去离子处理旁路应设置过滤装置，过滤精度不宜低于500µm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.183482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

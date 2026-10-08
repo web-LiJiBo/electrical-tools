@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "工井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设工程中用于电缆进出、接头安装等操作的地下构筑物"
+    },
+    {
+      "name": "电缆弯曲半径",
+      "type": "技术参数",
+      "desc": "电缆在敷设过程中允许的最大弯曲程度，影响电缆敷设质量与寿命"
+    },
+    {
+      "name": "接头",
+      "type": "电力设备",
+      "desc": "电缆线路中连接两段电缆的电气装置，保证电缆线路连续通电"
+    },
+    {
+      "name": "工作人员",
+      "type": "人员",
+      "desc": "参与电力电缆敷设及维护工作的人员"
+    },
+    {
+      "name": "集水坑",
+      "type": "电力设施",
+      "desc": "工井底部设置的用于汇集并排出工井内积水的凹槽或坑道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工井尺寸应考虑电缆弯曲半径和满足接头安装的需要",
+      "type": "强制",
+      "subject": "工井设计者",
+      "action": "设计工井尺寸",
+      "condition": "电缆敷设工程",
+      "constraint": "工井宽度≥电缆弯曲半径+接头宽度，工井长度≥电缆弯曲半径+接头长度",
+      "related_entities": [
+        "工井",
+        "电缆弯曲半径",
+        "接头"
+      ]
+    },
+    {
+      "content": "工井高度应使工作人员能站立操作",
+      "type": "强制",
+      "subject": "工井设计者",
+      "action": "确定工井高度",
+      "condition": "电缆敷设工程",
+      "constraint": "工井净高≥1.8m",
+      "related_entities": [
+        "工井",
+        "工作人员"
+      ]
+    },
+    {
+      "content": "工井底应有集水坑，向集水坑泄水坡度不应小于0.3%",
+      "type": "强制",
+      "subject": "工井设计者",
+      "action": "设置集水坑及泄水坡度",
+      "condition": "电缆敷设工程",
+      "constraint": "集水坑深度≥0.5m，泄水坡度≥0.3%",
+      "related_entities": [
+        "工井",
+        "集水坑"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "工井",
+      "target": "电缆弯曲半径",
+      "type": "考虑因素"
+    },
+    {
+      "source": "工井",
+      "target": "接头",
+      "type": "考虑因素"
+    },
+    {
+      "source": "工井",
+      "target": "工作人员",
+      "type": "服务对象"
+    },
+    {
+      "source": "工井",
+      "target": "集水坑",
+      "type": "包含结构"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1929,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a2198809ae8b8cf5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1929_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

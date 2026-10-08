@@ -1,0 +1,121 @@
+{
+  "entities": [
+    {
+      "name": "工作井",
+      "type": "电力设施",
+      "desc": "电力电缆敷设过程中设置的工作井"
+    },
+    {
+      "name": "电缆弯曲半径",
+      "type": "技术参数",
+      "desc": "电缆在敷设过程中允许的最大弯曲程度"
+    },
+    {
+      "name": "接头安装",
+      "type": "施工工艺",
+      "desc": "电缆接头的安装过程"
+    },
+    {
+      "name": "工作井高度",
+      "type": "技术参数",
+      "desc": "工作井的高度，保证工作人员能站立操作"
+    },
+    {
+      "name": "集水坑",
+      "type": "电力设施",
+      "desc": "工作井底部设置的用于汇集和排放积水的坑洞"
+    },
+    {
+      "name": "泄水坡度",
+      "type": "技术参数",
+      "desc": "集水坑底部向集水坑泄水的方向的倾斜角度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工作井尺寸应考虑电缆弯曲半径和满足接头安装的需要",
+      "type": "强制",
+      "subject": "工作井设计者",
+      "action": "设计工作井尺寸",
+      "condition": "电缆敷设工程",
+      "constraint": "电缆弯曲半径、接头安装需求",
+      "related_entities": [
+        "工作井",
+        "电缆弯曲半径",
+        "接头安装"
+      ]
+    },
+    {
+      "content": "工作井高度应使工作人员能站立操作",
+      "type": "强制",
+      "subject": "工作井设计者",
+      "action": "确定工作井高度",
+      "condition": "电缆敷设工程",
+      "constraint": "工作人员站立操作",
+      "related_entities": [
+        "工作井",
+        "工作井高度"
+      ]
+    },
+    {
+      "content": "工作井底应有集水坑，向集水坑泄水坡度不应小于0.5%",
+      "type": "强制",
+      "subject": "工作井设计者",
+      "action": "设置集水坑及泄水坡度",
+      "condition": "电缆敷设工程",
+      "constraint": "泄水坡度不小于0.5%",
+      "related_entities": [
+        "工作井",
+        "集水坑",
+        "泄水坡度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "工作井",
+      "target": "电缆弯曲半径",
+      "type": "考虑因素"
+    },
+    {
+      "source": "工作井",
+      "target": "接头安装",
+      "type": "考虑因素"
+    },
+    {
+      "source": "工作井",
+      "target": "工作井高度",
+      "type": "技术参数"
+    },
+    {
+      "source": "工作井",
+      "target": "集水坑",
+      "type": "包含设施"
+    },
+    {
+      "source": "集水坑",
+      "target": "泄水坡度",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2880,
+      "source_row_id": "2889",
+      "clause_index": 1,
+      "source_text": "工作井技术要求：（e）工作井尺寸应考虑电缆弯曲半径和满足接头安装的需要，工作井高度应使工作人员能站立操作，工作井底应有集水坑，向集水坑泄水坡度不应小于0.5%。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.105314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

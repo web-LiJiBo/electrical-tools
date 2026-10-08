@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "name": "非晶油变",
+      "type": "电力设备",
+      "desc": "非晶合金铁芯油浸式变压器"
+    },
+    {
+      "name": "非晶干变",
+      "type": "电力设备",
+      "desc": "非晶合金铁芯干式变压器"
+    },
+    {
+      "name": "户外安装",
+      "type": "安装方式",
+      "desc": "变压器在室外环境中安装"
+    },
+    {
+      "name": "户内安装",
+      "type": "安装方式",
+      "desc": "变压器在室内环境中安装"
+    },
+    {
+      "name": "最高气温",
+      "type": "环境参数",
+      "desc": "变压器运行时的最高环境温度"
+    },
+    {
+      "name": "最低气温",
+      "type": "环境参数",
+      "desc": "变压器运行时的最低环境温度"
+    },
+    {
+      "name": "最大日温差",
+      "type": "环境参数",
+      "desc": "变压器运行时的最大日间温差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "非晶油变和非晶干变应满足下列环境条件使用",
+      "type": "强制",
+      "subject": "非晶油变和非晶干变",
+      "action": "使用",
+      "condition": "户外安装或户内安装",
+      "constraint": "最高气温+40℃, 最低气温户外安装-25℃, 户内安装-5℃, 最大日温差30K",
+      "related_entities": [
+        "非晶油变",
+        "非晶干变",
+        "户外安装",
+        "户内安装",
+        "最高气温",
+        "最低气温",
+        "最大日温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非晶油变",
+      "target": "最高气温",
+      "type": "满足条件"
+    },
+    {
+      "source": "非晶油变",
+      "target": "最低气温",
+      "type": "满足条件"
+    },
+    {
+      "source": "非晶油变",
+      "target": "最大日温差",
+      "type": "满足条件"
+    },
+    {
+      "source": "非晶干变",
+      "target": "最高气温",
+      "type": "满足条件"
+    },
+    {
+      "source": "非晶干变",
+      "target": "最低气温",
+      "type": "满足条件"
+    },
+    {
+      "source": "非晶干变",
+      "target": "最大日温差",
+      "type": "满足条件"
+    },
+    {
+      "source": "户外安装",
+      "target": "最高气温",
+      "type": "适用条件"
+    },
+    {
+      "source": "户外安装",
+      "target": "最低气温",
+      "type": "适用条件"
+    },
+    {
+      "source": "户内安装",
+      "target": "最高气温",
+      "type": "适用条件"
+    },
+    {
+      "source": "户内安装",
+      "target": "最低气温",
+      "type": "适用条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1083,
+      "source_row_id": "1083",
+      "clause_index": 1,
+      "source_text": "正常使用条件本标准所规定的非晶油变和非晶干变，应满足下列环境条件使用：4.1.1最高气温：+40℃最低气温：−25℃（适用于户外安装）−5℃（适用于户内安装）最大日温差：30K"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.969954+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

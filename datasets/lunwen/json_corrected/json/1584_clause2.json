@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "室内油浸变压器",
+      "type": "电力设备",
+      "desc": "安装在室内的油浸式变压器"
+    },
+    {
+      "name": "变压器室四壁",
+      "type": "电力设施",
+      "desc": "变压器安装房间的墙壁"
+    },
+    {
+      "name": "净距",
+      "type": "技术参数",
+      "desc": "变压器外廓与变压器室四壁之间的最小距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "室内油浸变压器外廓与变压器室四壁的净距不应小于表8.3.6所列数值",
+      "type": "强制",
+      "subject": "室内油浸变压器",
+      "action": "安装",
+      "condition": "室内环境",
+      "constraint": "净距不小于表8.3.6所列数值",
+      "related_entities": [
+        "室内油浸变压器",
+        "变压器室四壁"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "室内油浸变压器",
+      "target": "变压器室四壁",
+      "type": "空间位置关系"
+    },
+    {
+      "source": "变压器室四壁",
+      "target": "室内油浸变压器",
+      "type": "空间位置关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1584,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "58fb38c8051dc771",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1584_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

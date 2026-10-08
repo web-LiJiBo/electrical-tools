@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "水分含量",
+      "type": "电力参数",
+      "desc": "SF6气体中的水分含量"
+    },
+    {
+      "name": "最终充入气体时间",
+      "type": "电力参数",
+      "desc": "SF6气体充入设备后的持续时间"
+    },
+    {
+      "name": "SF6气体",
+      "type": "电力材料",
+      "desc": "六氟化硫气体"
+    },
+    {
+      "name": "限值",
+      "type": "电力参数",
+      "desc": "水分含量的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水分含量应在最终充入气体120h后进行检查。",
+      "type": "强制",
+      "subject": "SF6气体",
+      "action": "检查水分含量",
+      "condition": "最终充入气体120h后",
+      "constraint": "无",
+      "related_entities": [
+        "水分含量",
+        "最终充入气体时间"
+      ]
+    },
+    {
+      "content": "SF6水分含量不应超5.2规定的限值。",
+      "type": "强制",
+      "subject": "SF6气体",
+      "action": "控制水分含量",
+      "condition": "充入设备前",
+      "constraint": "水分含量≤5.2",
+      "related_entities": [
+        "水分含量",
+        "限值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水分含量",
+      "target": "最终充入气体时间",
+      "type": "在...后"
+    },
+    {
+      "source": "水分含量",
+      "target": "限值",
+      "type": "不超过"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2772,
+      "source_row_id": "2781",
+      "clause_index": 1,
+      "source_text": "为了获得可靠的测量结果，水分含量应在最终充入气体120h后进行检查。SF6水分含量不应超5.2规定的限值。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9594,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.974317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

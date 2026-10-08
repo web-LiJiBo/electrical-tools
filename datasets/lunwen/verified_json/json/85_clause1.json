@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "name": "使用环境",
+      "type": "环境",
+      "desc": "电力设备运行的外部环境条件"
+    },
+    {
+      "name": "污秽等级",
+      "type": "环境参数",
+      "desc": "电力设备周围环境的污秽程度分类"
+    }
+  ],
+  "rules": [
+    {
+      "content": "表2使用环境条件表，污秽等级：IV",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": [
+        "使用环境",
+        "污秽等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 85,
+      "source_row_id": "85",
+      "clause_index": 1,
+      "source_text": "表2使用环境条件表，污秽等级：IV"
+    },
+    "audit": {
+      "status": "corrected_to_source_faithful_rule",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": false,
+      "reasons": [
+        "rule_content_unrelated_to_excel_source"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.846605+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

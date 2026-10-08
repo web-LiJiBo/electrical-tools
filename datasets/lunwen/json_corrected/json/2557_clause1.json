@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种电力系统中用于限制短路电流的设备"
+    },
+    {
+      "name": "顶层油温升",
+      "type": "温度参数",
+      "desc": "电抗器顶层油温升限值"
+    },
+    {
+      "name": "绕组温升",
+      "type": "温度参数",
+      "desc": "电抗器绕组温升限值"
+    },
+    {
+      "name": "铁心温升",
+      "type": "温度参数",
+      "desc": "电抗器铁心温升限值"
+    },
+    {
+      "name": "油箱及结构件温升",
+      "type": "温度参数",
+      "desc": "电抗器油箱及结构件温升限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电抗器的温升限值应符合以下要求：顶层油55K、绕组平均（电阻法）60K、铁心75K、油箱及结构件80K。",
+      "type": "强制",
+      "subject": "电抗器",
+      "action": "温升控制",
+      "condition": "电抗器运行过程中",
+      "constraint": "顶层油55K、绕组平均（电阻法）60K、铁心75K、油箱及结构件80K",
+      "related_entities": [
+        "电抗器",
+        "顶层油温升",
+        "绕组温升",
+        "铁心温升",
+        "油箱及结构件温升"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "顶层油温升",
+      "target": "电抗器",
+      "type": "温升限值"
+    },
+    {
+      "source": "绕组温升",
+      "target": "电抗器",
+      "type": "温升限值"
+    },
+    {
+      "source": "铁心温升",
+      "target": "电抗器",
+      "type": "温升限值"
+    },
+    {
+      "source": "油箱及结构件温升",
+      "target": "电抗器",
+      "type": "温升限值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2557,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2591a17079d7ffee",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2557_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

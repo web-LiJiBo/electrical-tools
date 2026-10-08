@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换电压的电气设备"
+    },
+    {
+      "name": "出厂",
+      "type": "事件",
+      "desc": "电力设备制造完成后出厂前的检验过程"
+    },
+    {
+      "name": "交接",
+      "type": "事件",
+      "desc": "电力设备安装到电力系统后进行的首次检验过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器出厂时",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "出厂检验",
+      "condition": "变压器制造完成",
+      "constraint": "出厂检验合格",
+      "related_entities": [
+        "变压器"
+      ]
+    },
+    {
+      "content": "变压器交接时",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "交接检验",
+      "condition": "变压器安装到电力系统",
+      "constraint": "交接检验合格",
+      "related_entities": [
+        "变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "出厂",
+      "type": "发生于"
+    },
+    {
+      "source": "变压器",
+      "target": "交接",
+      "type": "发生于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3183,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "65dc84c324648d9e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3183_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

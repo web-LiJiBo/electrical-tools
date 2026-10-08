@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "110(66)kV及以上电压等级变压器",
+      "type": "电力设备",
+      "desc": "110kV或66kV及以上的电力变压器"
+    },
+    {
+      "name": "三维冲击记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录变压器运输过程中的三维冲击加速度和加速度冲量的仪器"
+    },
+    {
+      "name": "运输过程",
+      "type": "过程",
+      "desc": "变压器从制造厂到安装现场的运输过程"
+    },
+    {
+      "name": "四方人员",
+      "type": "人员",
+      "desc": "制造厂、运输部门、监理单位、用户四方代表"
+    },
+    {
+      "name": "记录纸",
+      "type": "文件",
+      "desc": "记录变压器运输过程中三维冲击记录仪数据的纸质文件"
+    },
+    {
+      "name": "押运记录",
+      "type": "文件",
+      "desc": "记录变压器运输过程中的相关事项的文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110(66)kV及以上电压等级变压器在运输过程中，应按照相应规范安装具有时标且有合适量程的三维冲击记录仪。",
+      "type": "强制",
+      "subject": "110(66)kV及以上电压等级变压器",
+      "action": "运输",
+      "condition": "运输过程",
+      "constraint": "按照相应规范安装具有时标且有合适量程的三维冲击记录仪",
+      "related_entities": [
+        "110(66)kV及以上电压等级变压器",
+        "三维冲击记录仪"
+      ]
+    },
+    {
+      "content": "变压器就位后，制造厂、运输部门、监理单位、用户四方人员应共同验收，记录纸和押运记录应提供给用户留存。",
+      "type": "强制",
+      "subject": "四方人员",
+      "action": "验收",
+      "condition": "变压器就位后",
+      "constraint": "四方人员共同验收，记录纸和押运记录提供给用户留存",
+      "related_entities": [
+        "四方人员",
+        "记录纸",
+        "押运记录"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110(66)kV及以上电压等级变压器",
+      "target": "三维冲击记录仪",
+      "type": "安装"
+    },
+    {
+      "source": "四方人员",
+      "target": "110(66)kV及以上电压等级变压器",
+      "type": "验收"
+    },
+    {
+      "source": "四方人员",
+      "target": "记录纸",
+      "type": "验收依据"
+    },
+    {
+      "source": "四方人员",
+      "target": "押运记录",
+      "type": "验收依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2689,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0c339763a0f0b018",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2689_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "中压配电网",
+      "type": "电力系统",
+      "desc": "中压电力网络"
+    },
+    {
+      "name": "主干线路",
+      "type": "电力线路",
+      "desc": "中压配电网中的主要输电线路"
+    },
+    {
+      "name": "导线截面",
+      "type": "电力参数",
+      "desc": "导线的横截面积"
+    },
+    {
+      "name": "供电区域饱和负荷值",
+      "type": "电力负荷",
+      "desc": "供电区域内最大负荷值"
+    },
+    {
+      "name": "经济电流密度",
+      "type": "电力参数",
+      "desc": "导线在经济运行状态下的单位面积电流强度"
+    },
+    {
+      "name": "县城电网",
+      "type": "电力系统",
+      "desc": "城市郊区或县城的电力网络"
+    },
+    {
+      "name": "乡村电网",
+      "type": "电力系统",
+      "desc": "农村地区的电力网络"
+    }
+  ],
+  "rules": [
+    {
+      "content": "中压配电网主干线路导线截面选择应参考供电区域饱和负荷值，按经济电流密度选取。",
+      "type": "强制",
+      "subject": "中压配电网主干线路导线截面选择",
+      "action": "选择导线截面",
+      "condition": "中压配电网主干线路导线截面选择",
+      "constraint": "参考供电区域饱和负荷值，按经济电流密度选取",
+      "related_entities": [
+        "中压配电网",
+        "主干线路",
+        "导线截面",
+        "供电区域饱和负荷值",
+        "经济电流密度"
+      ]
+    },
+    {
+      "content": "县城电网架空主干线截面不宜小于120mm2，乡村电网主干线不宜小于95mm2。",
+      "type": "强制",
+      "subject": "县城电网和乡村电网主干线导线截面选择",
+      "action": "选择导线截面",
+      "condition": "县城电网和乡村电网主干线导线截面选择",
+      "constraint": "县城电网架空主干线截面不宜小于120mm2，乡村电网主干线不宜小于95mm2",
+      "related_entities": [
+        "县城电网",
+        "乡村电网",
+        "主干线",
+        "导线截面"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "中压配电网",
+      "target": "主干线路",
+      "type": "包含"
+    },
+    {
+      "source": "主干线路",
+      "target": "导线截面",
+      "type": "具有"
+    },
+    {
+      "source": "供电区域饱和负荷值",
+      "target": "主干线路",
+      "type": "影响"
+    },
+    {
+      "source": "经济电流密度",
+      "target": "导线截面",
+      "type": "依据"
+    },
+    {
+      "source": "县城电网",
+      "target": "主干线",
+      "type": "包含"
+    },
+    {
+      "source": "乡村电网",
+      "target": "主干线",
+      "type": "包含"
+    },
+    {
+      "source": "主干线",
+      "target": "导线截面",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 630,
+      "source_row_id": "630",
+      "clause_index": 1,
+      "source_text": "中压配电网主干线路导线截面选择应参考供电区域饱和负荷值，按经济电流密度选取。县城电网架空主干线截面不宜小于120mm2，乡村电网主干线不宜小于95mm2"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.449483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

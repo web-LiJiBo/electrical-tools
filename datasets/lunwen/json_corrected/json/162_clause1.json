@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "阀避雷器",
+      "type": "电力设备",
+      "desc": "一种用于换流阀过电压保护的无间隙金属氧化物避雷器"
+    },
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "高压直流输电系统中的关键设备，用于交流与直流之间的转换"
+    },
+    {
+      "name": "过电压",
+      "type": "电气现象",
+      "desc": "电力系统中超过正常工作电压的异常电压现象"
+    },
+    {
+      "name": "金属氧化物避雷器",
+      "type": "电力设备",
+      "desc": "一种非线性电阻元件，用于限制过电压保护电力设备"
+    },
+    {
+      "name": "计数器",
+      "type": "电力设备",
+      "desc": "用于记录阀避雷器冲击放电次数的电子计数装置"
+    },
+    {
+      "name": "事件顺序记录器",
+      "type": "电力设备",
+      "desc": "用于记录电力系统中事件发生顺序的电子记录装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀避雷器应采用无间隙金属氧化物避雷器",
+      "type": "强制",
+      "subject": "阀避雷器",
+      "action": "采用",
+      "condition": "应用于换流阀中",
+      "constraint": "无间隙金属氧化物避雷器",
+      "related_entities": [
+        "阀避雷器",
+        "金属氧化物避雷器"
+      ]
+    },
+    {
+      "content": "选择阀避雷器参数时应保证换流阀的各种运行工况不会导致阀避雷器的加速老化或其它损伤",
+      "type": "强制",
+      "subject": "阀避雷器",
+      "action": "选择参数",
+      "condition": "应用于换流阀中",
+      "constraint": "换流阀各种运行工况下不导致阀避雷器加速老化或损伤",
+      "related_entities": [
+        "阀避雷器",
+        "换流阀"
+      ]
+    },
+    {
+      "content": "阀避雷器应在各种过电压条件下有效保护换流阀",
+      "type": "强制",
+      "subject": "阀避雷器",
+      "action": "保护",
+      "condition": "应用于换流阀中",
+      "constraint": "在各种过电压条件下有效保护换流阀",
+      "related_entities": [
+        "阀避雷器",
+        "换流阀",
+        "过电压"
+      ]
+    },
+    {
+      "content": "阀避雷器应带有用于记录阀避雷器冲击放电次数的计数器",
+      "type": "强制",
+      "subject": "阀避雷器",
+      "action": "安装计数器",
+      "condition": "应用于换流阀中",
+      "constraint": "带有用于记录阀避雷器冲击放电次数的计数器",
+      "related_entities": [
+        "阀避雷器",
+        "计数器"
+      ]
+    },
+    {
+      "content": "计数器的动作信号应通过光纤传至事件顺序记录器进行记录",
+      "type": "强制",
+      "subject": "计数器",
+      "action": "传输信号",
+      "condition": "应用于阀避雷器中",
+      "constraint": "通过光纤将动作信号传至事件顺序记录器进行记录",
+      "related_entities": [
+        "计数器",
+        "事件顺序记录器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀避雷器",
+      "target": "换流阀",
+      "type": "保护"
+    },
+    {
+      "source": "阀避雷器",
+      "target": "金属氧化物避雷器",
+      "type": "采用"
+    },
+    {
+      "source": "阀避雷器",
+      "target": "计数器",
+      "type": "安装"
+    },
+    {
+      "source": "计数器",
+      "target": "事件顺序记录器",
+      "type": "传输信号"
+    }
+  ],
+  "metadata": {
+    "pair_id": 162,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "98a1bac622b780b7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\162_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

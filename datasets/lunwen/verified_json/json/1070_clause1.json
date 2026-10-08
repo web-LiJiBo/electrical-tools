@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "电气设备或线路的绝缘材料在施加直流电压时测得的电阻值"
+    },
+    {
+      "name": "2500MΩ",
+      "type": "数值约束",
+      "desc": "绝缘电阻的最小允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘电阻不能低于2500MΩ",
+      "type": "强制",
+      "subject": "电气设备或线路",
+      "action": "测量绝缘电阻",
+      "condition": "安装、检修或定期维护",
+      "constraint": "绝缘电阻≥2500MΩ",
+      "related_entities": [
+        "绝缘电阻",
+        "2500MΩ"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘电阻",
+      "target": "2500MΩ",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1070,
+      "source_row_id": "1070",
+      "clause_index": 1,
+      "source_text": "绝缘电阻不能低于2500MΩ"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.955949+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

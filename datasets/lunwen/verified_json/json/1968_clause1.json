@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "低压架空绝缘导线",
+      "type": "电力设备",
+      "desc": "低压架空绝缘导线是用于低压配电线路中的绝缘导线"
+    },
+    {
+      "name": "电杆",
+      "type": "电力设施",
+      "desc": "电杆是用于支撑架空线路的杆塔"
+    },
+    {
+      "name": "拉线",
+      "type": "电力设施",
+      "desc": "拉线是用于稳定电杆的钢绞线或钢丝绳"
+    },
+    {
+      "name": "构架",
+      "type": "电力设施",
+      "desc": "构架是用于支撑架空线路的金属结构"
+    }
+  ],
+  "rules": [
+    {
+      "content": "低压架空绝缘导线与电杆、拉线或构架的净空距离不应小于0.05m",
+      "type": "强制",
+      "subject": "低压架空绝缘导线",
+      "action": "与电杆、拉线或构架保持净空距离",
+      "condition": "在低压架空绝缘导线安装过程中",
+      "constraint": "净空距离不小于0.05m",
+      "related_entities": [
+        "低压架空绝缘导线",
+        "电杆",
+        "拉线",
+        "构架"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "低压架空绝缘导线",
+      "target": "电杆",
+      "type": "与...保持净空距离"
+    },
+    {
+      "source": "低压架空绝缘导线",
+      "target": "拉线",
+      "type": "与...保持净空距离"
+    },
+    {
+      "source": "低压架空绝缘导线",
+      "target": "构架",
+      "type": "与...保持净空距离"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1968,
+      "source_row_id": "1968",
+      "clause_index": 1,
+      "source_text": "低压架空绝缘导线与电杆、拉线或构架的净空距离不应小于0.05m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.973969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

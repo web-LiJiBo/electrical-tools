@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "电缆沟",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的沟道"
+    },
+    {
+      "name": "隧道",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的地下通道"
+    },
+    {
+      "name": "工井",
+      "type": "电力设施",
+      "desc": "用于敷设电缆的地下构筑物"
+    },
+    {
+      "name": "通道净宽",
+      "type": "技术参数",
+      "desc": "电缆沟、隧道或工井内可供电缆通行的空间宽度"
+    },
+    {
+      "name": "电缆支架配置方式",
+      "type": "技术参数",
+      "desc": "电缆在沟、隧道或工井内的支撑布置方式"
+    },
+    {
+      "name": "开挖式隧道",
+      "type": "电力设施",
+      "desc": "通过挖掘地层形成的电缆隧道"
+    },
+    {
+      "name": "封闭式工作井",
+      "type": "电力设施",
+      "desc": "具有封闭结构的电缆工井"
+    },
+    {
+      "name": "非开挖式隧道",
+      "type": "电力设施",
+      "desc": "不采用挖掘方式形成的电缆隧道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆沟、隧道或工井内通道净宽,不宜小于电缆支架配置方式开挖式隧道或封闭式工作井非开挖式隧道两侧1000800单侧900800",
+      "type": "强制",
+      "subject": "设计单位",
+      "action": "确定电缆沟、隧道或工井内通道净宽",
+      "condition": "电缆沟、隧道或工井内敷设电缆",
+      "constraint": "开挖式隧道或封闭式工作井两侧1000mm,单侧900mm;非开挖式隧道两侧800mm,单侧800mm",
+      "related_entities": [
+        "电缆沟",
+        "隧道",
+        "工井",
+        "通道净宽",
+        "电缆支架配置方式",
+        "开挖式隧道",
+        "封闭式工作井",
+        "非开挖式隧道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆沟",
+      "target": "通道净宽",
+      "type": "包含"
+    },
+    {
+      "source": "隧道",
+      "target": "通道净宽",
+      "type": "包含"
+    },
+    {
+      "source": "工井",
+      "target": "通道净宽",
+      "type": "包含"
+    },
+    {
+      "source": "电缆支架配置方式",
+      "target": "通道净宽",
+      "type": "影响"
+    },
+    {
+      "source": "开挖式隧道",
+      "target": "通道净宽",
+      "type": "满足"
+    },
+    {
+      "source": "封闭式工作井",
+      "target": "通道净宽",
+      "type": "满足"
+    },
+    {
+      "source": "非开挖式隧道",
+      "target": "通道净宽",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 978,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "389e27a62b3e98e6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\978_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

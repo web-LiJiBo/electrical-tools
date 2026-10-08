@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "直流远动系统",
+      "type": "电力系统自动化设备",
+      "desc": "用于实现对直流输电系统的监视与控制的自动化系统"
+    },
+    {
+      "name": "极",
+      "type": "电力系统元件",
+      "desc": "直流输电系统中的一个传输方向"
+    },
+    {
+      "name": "双重化配置",
+      "type": "系统配置方式",
+      "desc": "采用两套完全独立的系统进行配置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "两个极的直流远动系统应独立",
+      "type": "强制",
+      "subject": "直流远动系统",
+      "action": "独立配置",
+      "condition": "直流输电系统运行中",
+      "constraint": "两个极的直流远动系统应独立",
+      "related_entities": [
+        "直流远动系统",
+        "极"
+      ]
+    },
+    {
+      "content": "每个极的直流远动系统应双重化配置",
+      "type": "强制",
+      "subject": "直流远动系统",
+      "action": "双重化配置",
+      "condition": "直流输电系统运行中",
+      "constraint": "每个极的直流远动系统应双重化配置",
+      "related_entities": [
+        "直流远动系统",
+        "极"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流远动系统",
+      "target": "极",
+      "type": "应用于"
+    },
+    {
+      "source": "极",
+      "target": "直流远动系统",
+      "type": "被监控与控制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2642,
+      "source_row_id": "2651",
+      "clause_index": 2,
+      "source_text": "两个极的直流远动系统应独立，每个极的直流远动系统应双重化配置。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.809313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

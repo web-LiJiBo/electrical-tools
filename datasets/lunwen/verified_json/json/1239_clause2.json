@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电力设备主回路的直流电阻"
+    },
+    {
+      "name": "制造商规定值",
+      "type": "技术指标",
+      "desc": "制造厂家规定的主回路电阻允许值"
+    },
+    {
+      "name": "注意值",
+      "type": "技术指标",
+      "desc": "主回路电阻超过该值可能引起设备故障或安全隐患"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主回路电阻试验要求≤制造商规定值（注意值）",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行主回路电阻试验",
+      "condition": "电力设备投运前或检修后",
+      "constraint": "主回路电阻试验结果≤制造商规定值（注意值）",
+      "related_entities": [
+        "主回路电阻",
+        "制造商规定值",
+        "注意值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主回路电阻",
+      "target": "制造商规定值",
+      "type": "符合"
+    },
+    {
+      "source": "主回路电阻",
+      "target": "注意值",
+      "type": "不超过"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1239,
+      "source_row_id": "1239",
+      "clause_index": 2,
+      "source_text": "主回路电阻试验要求≤制造商规定值（注意值）"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.146549+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

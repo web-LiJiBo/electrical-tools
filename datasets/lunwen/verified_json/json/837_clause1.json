@@ -1,0 +1,112 @@
+{
+  "entities": [
+    {
+      "name": "温升限值",
+      "type": "电气参数",
+      "desc": "电气设备在运行过程中允许的最大温升"
+    },
+    {
+      "name": "年平均温度",
+      "type": "环境参数",
+      "desc": "一年中各月平均温度的算术平均值"
+    },
+    {
+      "name": "油顶层温升限值",
+      "type": "电气参数",
+      "desc": "变压器油顶层在特定环境温度下的温升限值"
+    },
+    {
+      "name": "绕组平均温升限值",
+      "type": "电气参数",
+      "desc": "变压器绕组在特定环境温度下的平均温升限值"
+    },
+    {
+      "name": "绕组热点温升限值",
+      "type": "电气参数",
+      "desc": "变压器绕组在特定环境温度下的热点温升限值"
+    },
+    {
+      "name": "油箱温升限值",
+      "type": "电气参数",
+      "desc": "变压器油箱在特定环境温度下的温升限值"
+    },
+    {
+      "name": "铁心及结构件表面温升限值",
+      "type": "电气参数",
+      "desc": "变压器铁心及结构件表面在特定环境温度下的温升限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "温升限值，在年平均温度20℃时的温升限值，油顶层55K，绕组平均65K，绕组热点78K，油箱80K，铁心及结构件表面80K",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "运行",
+      "condition": "在年平均温度20℃时",
+      "constraint": "油顶层温升限值55K，绕组平均温升限值65K，绕组热点温升限值78K，油箱温升限值80K，铁心及结构件表面温升限值80K",
+      "related_entities": [
+        "温升限值",
+        "年平均温度",
+        "油顶层温升限值",
+        "绕组平均温升限值",
+        "绕组热点温升限值",
+        "油箱温升限值",
+        "铁心及结构件表面温升限值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "温升限值",
+      "target": "年平均温度",
+      "type": "适用条件"
+    },
+    {
+      "source": "温升限值",
+      "target": "油顶层温升限值",
+      "type": "具体参数"
+    },
+    {
+      "source": "温升限值",
+      "target": "绕组平均温升限值",
+      "type": "具体参数"
+    },
+    {
+      "source": "温升限值",
+      "target": "绕组热点温升限值",
+      "type": "具体参数"
+    },
+    {
+      "source": "温升限值",
+      "target": "油箱温升限值",
+      "type": "具体参数"
+    },
+    {
+      "source": "温升限值",
+      "target": "铁心及结构件表面温升限值",
+      "type": "具体参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 837,
+      "source_row_id": "837",
+      "clause_index": 1,
+      "source_text": "温升限值，在年平均温度20℃时的温升限值，油顶层55K，绕组平均65K，绕组热点78K，油箱80K，铁心及结构件表面80K"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.9252,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "entity_grounding_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.694081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

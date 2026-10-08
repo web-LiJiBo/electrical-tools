@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "工作井",
+      "type": "电力设施",
+      "desc": "电力系统中用于电缆敷设的地下空间"
+    },
+    {
+      "name": "钢筋混凝土结构",
+      "type": "材料结构",
+      "desc": "以钢筋和混凝土为主要材料的建筑结构形式"
+    },
+    {
+      "name": "设计使用年限",
+      "type": "技术参数",
+      "desc": "工程设计时预期的使用寿命期限"
+    },
+    {
+      "name": "防水等级",
+      "type": "技术参数",
+      "desc": "防水工程的质量等级划分"
+    },
+    {
+      "name": "隧道",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的地下通道"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工作井应采用钢筋混凝土结构，设计使用年限不应低于50年",
+      "type": "强制",
+      "subject": "工作井",
+      "action": "采用钢筋混凝土结构并设计使用年限",
+      "condition": "新建或改造工作井",
+      "constraint": "设计使用年限≥50年",
+      "related_entities": [
+        "工作井",
+        "钢筋混凝土结构",
+        "设计使用年限"
+      ]
+    },
+    {
+      "content": "防水等级不应低于二级，隧道工作井按隧道建设标准执行",
+      "type": "强制",
+      "subject": "工作井",
+      "action": "设置防水等级并按隧道标准建设",
+      "condition": "新建或改造工作井",
+      "constraint": "防水等级≥二级",
+      "related_entities": [
+        "工作井",
+        "防水等级",
+        "隧道",
+        "隧道建设标准"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "工作井",
+      "target": "钢筋混凝土结构",
+      "type": "采用"
+    },
+    {
+      "source": "工作井",
+      "target": "设计使用年限",
+      "type": "满足"
+    },
+    {
+      "source": "工作井",
+      "target": "防水等级",
+      "type": "满足"
+    },
+    {
+      "source": "工作井",
+      "target": "隧道",
+      "type": "参照建设标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 522,
+      "source_row_id": "522",
+      "clause_index": 1,
+      "source_text": "工作井应采用钢筋混凝土结构，设计使用年限不应低于50年；防水等级不应低于二级，隧道工作井按隧道建设标准执行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.322483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

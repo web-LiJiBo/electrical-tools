@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "铝包钢绞线",
+      "type": "材料",
+      "desc": "一种以钢绞线为基础，外层包裹铝材料的导线"
+    },
+    {
+      "name": "OPGW光缆",
+      "type": "通信设备",
+      "desc": "一种集输电线路与通信功能于一体的光缆"
+    },
+    {
+      "name": "导地线",
+      "type": "电力设施",
+      "desc": "架空输电线路中的导线和地线"
+    },
+    {
+      "name": "接头",
+      "type": "电力设施",
+      "desc": "连接导地线的电气连接装置"
+    },
+    {
+      "name": "特高压",
+      "type": "电压等级",
+      "desc": "指1000kV及以上的交流输电电压等级"
+    },
+    {
+      "name": "三跨",
+      "type": "电力设施",
+      "desc": "指跨越重要输电通道、高速公路、一级公路或重要河流的输电线路区段"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三跨地线宜采用铝包钢绞线，光缆宜选用全铝包钢结构的OPGW光缆。",
+      "type": "强制",
+      "subject": "三跨工程",
+      "action": "选择导地线和光缆",
+      "condition": "新建或改造工程",
+      "constraint": "铝包钢绞线、全铝包钢结构的OPGW光缆",
+      "related_entities": [
+        "铝包钢绞线",
+        "OPGW光缆"
+      ]
+    },
+    {
+      "content": "对特高压三跨，跨越档内导地线不允许有接头；对其它电压等级三跨，耐张段内导、地线不允许有接头。",
+      "type": "强制",
+      "subject": "三跨工程",
+      "action": "施工安装",
+      "condition": "特高压三跨工程",
+      "constraint": "跨越档内无接头；其它电压等级三跨工程，耐张段内无接头",
+      "related_entities": [
+        "导地线",
+        "接头",
+        "特高压",
+        "三跨"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铝包钢绞线",
+      "target": "三跨工程",
+      "type": "适用对象"
+    },
+    {
+      "source": "OPGW光缆",
+      "target": "三跨工程",
+      "type": "适用对象"
+    },
+    {
+      "source": "导地线",
+      "target": "三跨工程",
+      "type": "适用对象"
+    },
+    {
+      "source": "接头",
+      "target": "三跨工程",
+      "type": "适用对象"
+    },
+    {
+      "source": "特高压",
+      "target": "三跨工程",
+      "type": "电压等级限制"
+    },
+    {
+      "source": "三跨",
+      "target": "铝包钢绞线",
+      "type": "材料选择"
+    },
+    {
+      "source": "三跨",
+      "target": "OPGW光缆",
+      "type": "材料选择"
+    },
+    {
+      "source": "三跨",
+      "target": "导地线",
+      "type": "材料选择"
+    },
+    {
+      "source": "三跨",
+      "target": "接头",
+      "type": "施工要求"
+    },
+    {
+      "source": "特高压",
+      "target": "三跨",
+      "type": "电压等级分类"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1989,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c5cc65131ae56d5e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1989_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

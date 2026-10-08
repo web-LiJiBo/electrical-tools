@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "线路",
+      "type": "电力设施",
+      "desc": "架设在空中或地面上的输电导线及其支撑结构"
+    },
+    {
+      "name": "不通航河流",
+      "type": "地理环境",
+      "desc": "不用于水上交通的河流"
+    },
+    {
+      "name": "百年一遇洪水位",
+      "type": "水文参数",
+      "desc": "百年一遇洪水发生时的最高水位"
+    },
+    {
+      "name": "最小垂直距离",
+      "type": "技术参数",
+      "desc": "线路与不通航河流之间的垂直距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路跨越不通航河流时最小垂直距离以百年一遇洪水位为基准",
+      "type": "强制",
+      "subject": "电力设施设计与施工方",
+      "action": "设计与施工",
+      "condition": "线路跨越不通航河流",
+      "constraint": "最小垂直距离≥百年一遇洪水位",
+      "related_entities": [
+        "线路",
+        "不通航河流",
+        "百年一遇洪水位"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路",
+      "target": "不通航河流",
+      "type": "跨越"
+    },
+    {
+      "source": "线路",
+      "target": "百年一遇洪水位",
+      "type": "参照基准"
+    },
+    {
+      "source": "最小垂直距离",
+      "target": "百年一遇洪水位",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 821,
+      "source_row_id": "821",
+      "clause_index": 2,
+      "source_text": "线路跨越不通航河流时最小垂直距离以百年一遇洪水位为基准"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.677080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

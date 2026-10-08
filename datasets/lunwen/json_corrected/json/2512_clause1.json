@@ -1,0 +1,59 @@
+{
+  "entities": [
+    {
+      "name": "接地网",
+      "type": "电力系统接地",
+      "desc": "电力系统中用于将电气设备与大地连接的网络"
+    },
+    {
+      "name": "相邻设备接地线",
+      "type": "电力设备接地",
+      "desc": "电力设备与接地网连接的接地线"
+    },
+    {
+      "name": "直流电阻值",
+      "type": "电气参数",
+      "desc": "直流电流通过接地线时产生的电阻值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应测量同一接地网的各相邻设备接地线之间的电气导通情况，以直流电阻值表示。",
+      "type": "强制",
+      "subject": "电力系统运行维护人员",
+      "action": "测量接地网相邻设备接地线间的导通情况",
+      "condition": "电力系统运行维护",
+      "constraint": "直流电阻值",
+      "related_entities": [
+        "接地网",
+        "相邻设备接地线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地网",
+      "target": "相邻设备接地线",
+      "type": "连接"
+    },
+    {
+      "source": "相邻设备接地线",
+      "target": "直流电阻值",
+      "type": "表征"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2512,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b8ca91252995637e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2512_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

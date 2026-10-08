@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "市区中压架空配电线路",
+      "type": "配电线路",
+      "desc": "城市区域内的中压架空配电线路"
+    },
+    {
+      "name": "低压架空配电线路",
+      "type": "配电线路",
+      "desc": "城市区域内的低压架空配电线路"
+    },
+    {
+      "name": "主干导线",
+      "type": "导线",
+      "desc": "配电线路中的主要输电导线"
+    },
+    {
+      "name": "绝缘导线",
+      "type": "导线",
+      "desc": "具有绝缘层的配电线路导线"
+    },
+    {
+      "name": "表5-3",
+      "type": "表格",
+      "desc": "导线选择参考表"
+    }
+  ],
+  "rules": [
+    {
+      "content": "市区中压架空配电线路宜采用绝缘导线",
+      "type": "强制",
+      "subject": "市区中压架空配电线路",
+      "action": "采用绝缘导线",
+      "condition": "在城市区域内的中压架空配电线路设计与建设过程中",
+      "constraint": "宜采用",
+      "related_entities": [
+        "市区中压架空配电线路",
+        "绝缘导线"
+      ]
+    },
+    {
+      "content": "低压架空配电线路应采用绝缘导线",
+      "type": "强制",
+      "subject": "低压架空配电线路",
+      "action": "采用绝缘导线",
+      "condition": "在城市区域内的低压架空配电线路设计与建设过程中",
+      "constraint": "应采用",
+      "related_entities": [
+        "低压架空配电线路",
+        "绝缘导线"
+      ]
+    },
+    {
+      "content": "主干导线不宜超过2-3种，并按远期规划考虑",
+      "type": "强制",
+      "subject": "主干导线",
+      "action": "选择种类数量",
+      "condition": "在城市区域内的配电线路设计与建设过程中",
+      "constraint": "不宜超过2-3种，并按远期规划考虑",
+      "related_entities": [
+        "主干导线",
+        "表5-3"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "市区中压架空配电线路",
+      "target": "绝缘导线",
+      "type": "采用"
+    },
+    {
+      "source": "低压架空配电线路",
+      "target": "绝缘导线",
+      "type": "采用"
+    },
+    {
+      "source": "主干导线",
+      "target": "表5-3",
+      "type": "参考"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 624,
+      "source_row_id": "624",
+      "clause_index": 1,
+      "source_text": "市区中压架空配电线路宜采用绝缘导线，低压架空配电线路应采用绝缘导线。主干导线不宜超过2-3种，并按远期规划考虑，一般可参考表5-3选择"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.437487+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

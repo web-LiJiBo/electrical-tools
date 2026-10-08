@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "厂房",
+      "type": "建筑物",
+      "desc": "工业生产用房"
+    },
+    {
+      "name": "仓库",
+      "type": "建筑物",
+      "desc": "储存物品的场所"
+    },
+    {
+      "name": "防火墙",
+      "type": "建筑构件",
+      "desc": "用于防火分隔的墙体"
+    },
+    {
+      "name": "耐火极限",
+      "type": "技术参数",
+      "desc": "建筑构件在火灾条件下保持完整性和隔热性的持续时间"
+    },
+    {
+      "name": "燃烧性能",
+      "type": "技术参数",
+      "desc": "建筑材料在火灾条件下抵抗燃烧的能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "厂房和仓库相应建筑构件的燃烧性能和耐火极限，除本规范另有规定者外，不应低于表3．2．1的规定。",
+      "type": "强制",
+      "subject": "厂房和仓库",
+      "action": "设置建筑构件的燃烧性能和耐火极限",
+      "condition": "除本规范另有规定者外",
+      "constraint": "不低于表3．2．1的规定",
+      "related_entities": [
+        "厂房",
+        "仓库",
+        "防火墙",
+        "耐火极限",
+        "燃烧性能"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "防火墙",
+      "target": "耐火极限",
+      "type": "满足"
+    },
+    {
+      "source": "防火墙",
+      "target": "燃烧性能",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 353,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3a0e7e7ca2771e8b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\353_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

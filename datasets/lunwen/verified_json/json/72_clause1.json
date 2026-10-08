@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "交流耐压试验",
+      "type": "试验项目",
+      "desc": "电气设备绝缘性能测试"
+    },
+    {
+      "name": "额定电压",
+      "type": "技术参数",
+      "desc": "电气设备正常运行时的电压等级"
+    },
+    {
+      "name": "消弧线圈",
+      "type": "电力设备",
+      "desc": "用于补偿系统电容电流的设备"
+    },
+    {
+      "name": "干式电抗器",
+      "type": "电力设备",
+      "desc": "铁芯或非铁芯的无油干式电抗器"
+    },
+    {
+      "name": "油浸式电抗器",
+      "type": "电力设备",
+      "desc": "含有油介质的电抗器"
+    },
+    {
+      "name": "试验电压",
+      "type": "技术参数",
+      "desc": "交流耐压试验中施加的电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定电压在110kV以下的消弧线圈、干式或油浸式电抗器均应进行交流耐压试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行交流耐压试验",
+      "condition": "额定电压在110kV以下的消弧线圈、干式或油浸式电抗器",
+      "constraint": "试验电压应符合附录表D.0.1的规定",
+      "related_entities": [
+        "交流耐压试验",
+        "额定电压",
+        "消弧线圈",
+        "干式电抗器",
+        "油浸式电抗器",
+        "试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交流耐压试验",
+      "target": "消弧线圈",
+      "type": "适用于"
+    },
+    {
+      "source": "交流耐压试验",
+      "target": "干式电抗器",
+      "type": "适用于"
+    },
+    {
+      "source": "交流耐压试验",
+      "target": "油浸式电抗器",
+      "type": "适用于"
+    },
+    {
+      "source": "试验电压",
+      "target": "交流耐压试验",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 72,
+      "source_row_id": "72",
+      "clause_index": 1,
+      "source_text": "绕组连同套管的交流耐压试验规定：额定电压在110kV以下的消弧线圈、干式或油浸式电抗器均应进行交流耐压试验，试验电压应符合附录表D.0.1的规定"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9917,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.831600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

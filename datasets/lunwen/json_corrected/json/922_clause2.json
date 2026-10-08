@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "安装地区",
+      "type": "地点",
+      "desc": "风力发电机组安装的具体地理位置"
+    },
+    {
+      "name": "风速",
+      "type": "气象参数",
+      "desc": "安装地区风力发电机组运行时的风速大小"
+    }
+  ],
+  "rules": [
+    {
+      "content": "安装地区的风速应不超过150km/h",
+      "type": "强制",
+      "subject": "风力发电机组",
+      "action": "安装",
+      "condition": "在风速超过150km/h的地区安装风力发电机组",
+      "constraint": "风速≤150km/h",
+      "related_entities": [
+        "安装地区",
+        "风速"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "安装地区",
+      "target": "风速",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 922,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6c55c4337c5052a0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\922_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

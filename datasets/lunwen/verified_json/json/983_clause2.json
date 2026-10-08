@@ -1,0 +1,98 @@
+{
+  "entities": [
+    {
+      "name": "主回路",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的主要电路"
+    },
+    {
+      "name": "交流耐压试验",
+      "type": "试验方法",
+      "desc": "检测电气设备绝缘性能的一种试验方法"
+    },
+    {
+      "name": "产品技术条件",
+      "type": "技术文件",
+      "desc": "规定产品设计、制造、检验等技术要求的文件"
+    },
+    {
+      "name": "国家现行标准《气体绝缘金属封闭电器现场耐压试验导则》DL/T555",
+      "type": "技术标准",
+      "desc": "规定气体绝缘金属封闭电器现场耐压试验方法的技术标准"
+    },
+    {
+      "name": "出厂试验电压",
+      "type": "试验参数",
+      "desc": "设备出厂时进行耐压试验所使用的电压值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主回路的交流耐压试验程序和方法，应按产品技术条件或国家现行标准《气体绝缘金属封闭电器现场耐压试验导则》DL/T555的规定进行",
+      "type": "强制",
+      "subject": "主回路",
+      "action": "进行交流耐压试验",
+      "condition": "主回路的交流耐压试验",
+      "constraint": "应按产品技术条件或国家现行标准《气体绝缘金属封闭电器现场耐压试验导则》DL/T555的规定进行",
+      "related_entities": [
+        "主回路",
+        "产品技术条件",
+        "国家现行标准《气体绝缘金属封闭电器现场耐压试验导则》DL/T555"
+      ]
+    },
+    {
+      "content": "试验电压值为出厂试验电压的80%",
+      "type": "强制",
+      "subject": "主回路",
+      "action": "进行交流耐压试验",
+      "condition": "主回路的交流耐压试验",
+      "constraint": "试验电压值为出厂试验电压的80%",
+      "related_entities": [
+        "主回路",
+        "出厂试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主回路",
+      "target": "交流耐压试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "产品技术条件",
+      "target": "主回路",
+      "type": "依据文件"
+    },
+    {
+      "source": "国家现行标准《气体绝缘金属封闭电器现场耐压试验导则》DL/T555",
+      "target": "主回路",
+      "type": "依据文件"
+    },
+    {
+      "source": "出厂试验电压",
+      "target": "主回路",
+      "type": "试验参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 983,
+      "source_row_id": "983",
+      "clause_index": 2,
+      "source_text": "主回路的交流耐压试验程序和方法，应按产品技术条件或国家现行标准《气体绝缘金属封闭电器现场耐压试验导则》DL/T555的规定进行，试验电压值为出厂试验电压的80%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.857949+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "远动工作站",
+      "type": "电力系统设备",
+      "desc": "电力系统中用于远距离数据采集与控制的计算机系统"
+    },
+    {
+      "name": "站LAN网",
+      "type": "电力系统网络",
+      "desc": "变电站内部局域网络"
+    },
+    {
+      "name": "控制保护设备",
+      "type": "电力系统设备",
+      "desc": "变电站内用于控制和保护电力系统的设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "双重化的每一台远动工作站均应配置两路网络接口分别接入双重化的站LAN网",
+      "type": "强制",
+      "subject": "远动工作站",
+      "action": "配置网络接口",
+      "condition": "双重化",
+      "constraint": "两路网络接口分别接入双重化的站LAN网",
+      "related_entities": [
+        "远动工作站",
+        "站LAN网"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "远动工作站",
+      "target": "站LAN网",
+      "type": "接入"
+    },
+    {
+      "source": "远动工作站",
+      "target": "控制保护设备",
+      "type": "通信"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2642,
+      "source_row_id": "2651",
+      "clause_index": 1,
+      "source_text": "一般要求双重化的每一台远动工作站均应配置两路网络接口分别接入双重化的站LAN网，实现与站内控制保护的设备直接通信。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9722,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.808316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

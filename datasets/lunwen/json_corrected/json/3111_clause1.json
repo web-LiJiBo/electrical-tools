@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "正常使用条件",
+      "type": "运行环境",
+      "desc": "设备正常运行的环境条件"
+    },
+    {
+      "name": "地震烈度",
+      "type": "自然灾害",
+      "desc": "地震对地面及建筑物影响的程度"
+    },
+    {
+      "name": "8度",
+      "type": "数值约束",
+      "desc": "地震烈度等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "正常使用条件地震烈度≤8度",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "设计与安装",
+      "condition": "在地震多发区域",
+      "constraint": "地震烈度≤8度",
+      "related_entities": [
+        "正常使用条件",
+        "地震烈度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "正常使用条件",
+      "target": "地震烈度",
+      "type": "约束条件"
+    },
+    {
+      "source": "地震烈度",
+      "target": "8度",
+      "type": "具体数值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3111,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2156cbbfeaaad2bb",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3111_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

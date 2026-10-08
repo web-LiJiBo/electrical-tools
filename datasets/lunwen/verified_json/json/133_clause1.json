@@ -1,0 +1,118 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "绝缘电阻",
+      "type": "电气参数",
+      "desc": "反映绝缘材料性能的重要参数，表示绝缘材料的电阻特性"
+    },
+    {
+      "name": "单相变压器",
+      "type": "电力设备",
+      "desc": "一次侧和二次侧绕组各有一个绕组的变压器"
+    },
+    {
+      "name": "三相变压器",
+      "type": "电力设备",
+      "desc": "一次侧和二次侧绕组各有三个绕组的变压器"
+    },
+    {
+      "name": "实测值",
+      "type": "测量结果",
+      "desc": "通过实际测量得到的数据值"
+    },
+    {
+      "name": "测试温度",
+      "type": "环境参数",
+      "desc": "测试过程中所处的环境温度"
+    },
+    {
+      "name": "相对湿度",
+      "type": "环境参数",
+      "desc": "测试过程中空气中的水蒸气含量与同温度下饱和水蒸气含量之比"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应提供单相、三相变压器绝缘电阻的实测值",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "提供绝缘电阻实测值",
+      "condition": "变压器出厂或检修后",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "绝缘电阻"
+      ]
+    },
+    {
+      "content": "测试通常在5℃~40℃和相对湿度小于85%时进行",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "进行绝缘电阻测试",
+      "condition": "变压器出厂或检修后",
+      "constraint": "测试温度5℃~40℃，相对湿度<85%",
+      "related_entities": [
+        "变压器",
+        "测试温度",
+        "相对湿度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "单相变压器",
+      "target": "变压器",
+      "type": "子类"
+    },
+    {
+      "source": "三相变压器",
+      "target": "变压器",
+      "type": "子类"
+    },
+    {
+      "source": "绝缘电阻",
+      "target": "变压器",
+      "type": "属性"
+    },
+    {
+      "source": "实测值",
+      "target": "绝缘电阻",
+      "type": "属性"
+    },
+    {
+      "source": "测试温度",
+      "target": "变压器",
+      "type": "属性"
+    },
+    {
+      "source": "相对湿度",
+      "target": "变压器",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 133,
+      "source_row_id": "133",
+      "clause_index": 1,
+      "source_text": "应提供单相、三相变压器绝缘电阻的实测值，测试通常在5℃~40℃和相对湿度小于85%时进行"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.975,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.897600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

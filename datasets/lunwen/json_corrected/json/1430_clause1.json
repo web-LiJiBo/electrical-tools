@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "承载索",
+      "type": "电力线路设备",
+      "desc": "用于架空输电的高强度钢绞线或钢芯铝绞线"
+    },
+    {
+      "name": "安全系数",
+      "type": "技术参数",
+      "desc": "承载索在最大张力情况下的安全系数，确保其在极端条件下仍能正常工作"
+    },
+    {
+      "name": "最大张力",
+      "type": "技术参数",
+      "desc": "承载索在特定工况下承受的最大拉力值"
+    },
+    {
+      "name": "重载",
+      "type": "运行状态",
+      "desc": "承载索在满载或接近满载状态下运行的情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在最大张力情况下，承载索强度的安全系数不小于2.5",
+      "type": "强制",
+      "subject": "承载索",
+      "action": "设计与施工",
+      "condition": "在最大张力情况下",
+      "constraint": "安全系数≥2.5",
+      "related_entities": [
+        "承载索",
+        "安全系数",
+        "最大张力"
+      ]
+    },
+    {
+      "content": "在重载（当载运物位于档距中点时）最大张力情况下，承载索强度安全系数不小于2.5",
+      "type": "强制",
+      "subject": "承载索",
+      "action": "设计与施工",
+      "condition": "在重载且最大张力情况下",
+      "constraint": "安全系数≥2.5",
+      "related_entities": [
+        "承载索",
+        "安全系数",
+        "最大张力",
+        "重载"
+      ]
+    },
+    {
+      "content": "承载索的安全系数不小于2.5",
+      "type": "强制",
+      "subject": "承载索",
+      "action": "设计与施工",
+      "condition": "无特殊工况",
+      "constraint": "安全系数≥2.5",
+      "related_entities": [
+        "承载索",
+        "安全系数"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "承载索",
+      "target": "安全系数",
+      "type": "包含"
+    },
+    {
+      "source": "承载索",
+      "target": "最大张力",
+      "type": "受力情况"
+    },
+    {
+      "source": "承载索",
+      "target": "重载",
+      "type": "运行状态"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1430,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "28683e2590afb8fe",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1430_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

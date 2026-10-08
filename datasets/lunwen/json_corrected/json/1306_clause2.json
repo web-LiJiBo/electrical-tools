@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "66kV系统",
+      "type": "电力系统",
+      "desc": "额定电压为66kV的电力系统"
+    },
+    {
+      "name": "消弧线圈接地方式",
+      "type": "接地方式",
+      "desc": "通过消弧线圈进行单相接地保护的方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "66kV系统宜采用经消弧线圈接地方式",
+      "type": "强制",
+      "subject": "66kV系统",
+      "action": "采用接地方式",
+      "condition": "66kV系统",
+      "constraint": "宜采用经消弧线圈接地方式",
+      "related_entities": [
+        "66kV系统",
+        "消弧线圈接地方式"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "66kV系统",
+      "target": "消弧线圈接地方式",
+      "type": "采用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1306,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6f7b0b0a5076a3da",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1306_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

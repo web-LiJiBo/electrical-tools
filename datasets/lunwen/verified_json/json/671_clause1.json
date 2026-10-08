@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "线路",
+      "type": "电力设施",
+      "desc": "架设在空中的输电线路"
+    },
+    {
+      "name": "林区",
+      "type": "地理环境",
+      "desc": "森林覆盖的区域"
+    },
+    {
+      "name": "成片林",
+      "type": "地理环境",
+      "desc": "连片的树林"
+    },
+    {
+      "name": "高跨设计",
+      "type": "技术措施",
+      "desc": "提高线路跨越高度的设计方案"
+    },
+    {
+      "name": "通道",
+      "type": "地理环境",
+      "desc": "线路与林区之间的安全隔离带"
+    },
+    {
+      "name": "树木",
+      "type": "自然环境",
+      "desc": "林区内的树木"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路通过林区及成片林时应采取高跨设计",
+      "type": "强制",
+      "subject": "线路",
+      "action": "采取高跨设计",
+      "condition": "线路通过林区或成片林",
+      "constraint": "无",
+      "related_entities": [
+        "线路",
+        "高跨设计"
+      ]
+    },
+    {
+      "content": "未采取高跨设计时，应砍伐出通道",
+      "type": "强制",
+      "subject": "线路",
+      "action": "砍伐出通道",
+      "condition": "线路通过林区或成片林且未采取高跨设计",
+      "constraint": "通道宽度不应小于线路两边相导线间的距离和林区主要树种自然生长最终高度两倍之和",
+      "related_entities": [
+        "线路",
+        "通道",
+        "林区主要树种自然生长最终高度"
+      ]
+    },
+    {
+      "content": "通道内不得再种植树木",
+      "type": "强制",
+      "subject": "通道",
+      "action": "不得种植树木",
+      "condition": "线路通过林区或成片林且未采取高跨设计",
+      "constraint": "无",
+      "related_entities": [
+        "通道",
+        "树木"
+      ]
+    },
+    {
+      "content": "通道宽度不应小于线路两边相导线间的距离和林区主要树种自然生长最终高度两倍之和",
+      "type": "强制",
+      "subject": "通道",
+      "action": "宽度不应小于规定值",
+      "condition": "线路通过林区或成片林且未采取高跨设计",
+      "constraint": "通道宽度不应小于线路两边相导线间的距离和林区主要树种自然生长最终高度两倍之和",
+      "related_entities": [
+        "通道",
+        "线路两边相导线间的距离",
+        "林区主要树种自然生长最终高度"
+      ]
+    },
+    {
+      "content": "通道附近超过主要树种自然生长最终高度的个别树木，也应砍伐",
+      "type": "强制",
+      "subject": "通道附近树木",
+      "action": "砍伐",
+      "condition": "线路通过林区或成片林且未采取高跨设计",
+      "constraint": "通道附近超过主要树种自然生长最终高度的个别树木",
+      "related_entities": [
+        "通道",
+        "树木",
+        "林区主要树种自然生长最终高度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路",
+      "target": "林区",
+      "type": "穿越"
+    },
+    {
+      "source": "线路",
+      "target": "成片林",
+      "type": "穿越"
+    },
+    {
+      "source": "线路",
+      "target": "高跨设计",
+      "type": "采取"
+    },
+    {
+      "source": "线路",
+      "target": "通道",
+      "type": "设置"
+    },
+    {
+      "source": "通道",
+      "target": "树木",
+      "type": "隔离"
+    },
+    {
+      "source": "通道",
+      "target": "线路两边相导线间的距离",
+      "type": "宽度依据"
+    },
+    {
+      "source": "通道",
+      "target": "林区主要树种自然生长最终高度",
+      "type": "宽度依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 671,
+      "source_row_id": "671",
+      "clause_index": 1,
+      "source_text": "线路通过林区：线路通过林区及成片林时应采取高跨设计，未采取高跨设计时，应砍伐出通道，通道内不得再种植树木。通道宽度不应小于线路两边相导线间的距离和林区主要树种自然生长最终高度两倍之和。通道附近超过主要树种自然生长最终高度的个别树木，也应砍伐"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.495486+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "entities": [
+    {
+      "name": "二级电缆隧道",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设二级电缆的地下通道"
+    },
+    {
+      "name": "温度监测",
+      "type": "安全监测设备",
+      "desc": "用于检测电缆隧道内温度变化的装置"
+    },
+    {
+      "name": "火灾报警",
+      "type": "安全监测设备",
+      "desc": "用于检测电缆隧道内火灾情况并发出警报的装置"
+    },
+    {
+      "name": "自动灭火",
+      "type": "安全防护设备",
+      "desc": "用于在电缆隧道内发生火灾时自动进行灭火的装置"
+    },
+    {
+      "name": "井盖监控",
+      "type": "安全监测设备",
+      "desc": "用于监控电缆隧道内井盖状态的装置"
+    },
+    {
+      "name": "视频监控",
+      "type": "安全监测设备",
+      "desc": "用于实时监控电缆隧道内环境的视频采集装置"
+    },
+    {
+      "name": "水位监测",
+      "type": "安全监测设备",
+      "desc": "用于检测电缆隧道内积水深度的装置"
+    },
+    {
+      "name": "自动排水",
+      "type": "安全防护设备",
+      "desc": "用于在电缆隧道内积水时自动排出积水的装置"
+    },
+    {
+      "name": "门禁监控",
+      "type": "安全监测设备",
+      "desc": "用于监控电缆隧道内人员进出情况的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "二级电缆隧道应配置温度监测或火灾报警及自动灭火",
+      "type": "强制",
+      "subject": "二级电缆隧道",
+      "action": "配置",
+      "condition": "二级电缆隧道内存在电缆",
+      "constraint": "应配置温度监测或火灾报警及自动灭火",
+      "related_entities": [
+        "二级电缆隧道",
+        "温度监测",
+        "火灾报警",
+        "自动灭火"
+      ]
+    },
+    {
+      "content": "宜配置井盖监控",
+      "type": "建议",
+      "subject": "二级电缆隧道",
+      "action": "配置",
+      "condition": "二级电缆隧道内存在电缆",
+      "constraint": "宜配置井盖监控",
+      "related_entities": [
+        "二级电缆隧道",
+        "井盖监控"
+      ]
+    },
+    {
+      "content": "可配置视频监控、水位监测及自动排水、门禁监控等",
+      "type": "建议",
+      "subject": "二级电缆隧道",
+      "action": "配置",
+      "condition": "二级电缆隧道内存在电缆",
+      "constraint": "可配置视频监控、水位监测及自动排水、门禁监控等",
+      "related_entities": [
+        "二级电缆隧道",
+        "视频监控",
+        "水位监测",
+        "自动排水",
+        "门禁监控"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "二级电缆隧道",
+      "target": "温度监测",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "火灾报警",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "自动灭火",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "井盖监控",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "视频监控",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "水位监测",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "自动排水",
+      "type": "配置"
+    },
+    {
+      "source": "二级电缆隧道",
+      "target": "门禁监控",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3121,
+      "source_row_id": "3130",
+      "clause_index": 2,
+      "source_text": "，“二级电缆隧道应配置温度监测或火灾报警及自动灭火；宜配置井盖监控；可配置视频监控、水位监测及自动排水、门禁监控等”。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.407317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

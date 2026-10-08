@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "接地极址",
+      "type": "电力设施",
+      "desc": "用于直流输电系统接地的设施位置"
+    },
+    {
+      "name": "有中性点有效接地变压器的变电站",
+      "type": "电力设施",
+      "desc": "变压器中性点直接接地的变电站"
+    },
+    {
+      "name": "发电厂",
+      "type": "电力设施",
+      "desc": "生产电能的场所"
+    },
+    {
+      "name": "换流站",
+      "type": "电力设施",
+      "desc": "将交流电转换为直流电的变电站"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极址与有中性点有效接地变压器的变电站、发电厂的直线距离宜不小于20km",
+      "type": "强制",
+      "subject": "接地极址",
+      "action": "与有中性点有效接地变压器的变电站、发电厂保持一定距离",
+      "condition": "直流输电系统运行",
+      "constraint": "直线距离不小于20km",
+      "related_entities": [
+        "接地极址",
+        "有中性点有效接地变压器的变电站",
+        "发电厂"
+      ]
+    },
+    {
+      "content": "接地极址与换流站的距离宜不小于30km",
+      "type": "强制",
+      "subject": "接地极址",
+      "action": "与换流站保持一定距离",
+      "condition": "直流输电系统运行",
+      "constraint": "直线距离不小于30km",
+      "related_entities": [
+        "接地极址",
+        "换流站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极址",
+      "target": "有中性点有效接地变压器的变电站",
+      "type": "距离要求"
+    },
+    {
+      "source": "接地极址",
+      "target": "发电厂",
+      "type": "距离要求"
+    },
+    {
+      "source": "接地极址",
+      "target": "换流站",
+      "type": "距离要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 269,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "24ecbe748cd31ef5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\269_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

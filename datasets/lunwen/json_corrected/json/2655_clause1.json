@@ -1,0 +1,48 @@
+{
+  "entities": [
+    {
+      "name": "机械操作次数",
+      "type": "运行参数",
+      "desc": "机械设备在运行过程中进行的操作次数"
+    },
+    {
+      "name": "2000次",
+      "type": "数值",
+      "desc": "机械设备允许的最大操作次数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "机械操作次数不得超过2000次",
+      "type": "强制",
+      "subject": "机械设备",
+      "action": "操作",
+      "condition": "机械设备运行期间",
+      "constraint": "机械操作次数≤2000次",
+      "related_entities": [
+        "机械操作次数",
+        "2000次"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "机械操作次数",
+      "target": "2000次",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2655,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "66d8a65c81e3d02a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2655_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

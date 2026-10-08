@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "接地极",
+      "type": "电力设备",
+      "desc": "用于电力系统中提供接地功能的装置"
+    },
+    {
+      "name": "换流站",
+      "type": "电力设施",
+      "desc": "将交流电转换为直流电或反之的电力设施"
+    },
+    {
+      "name": "设计寿命",
+      "type": "技术参数",
+      "desc": "设备从设计到报废的预期时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "接地极宜按一次性建成投产进行设计，其设计寿命应与使用该接地极的换流站相同。",
+      "type": "强制",
+      "subject": "设计单位",
+      "action": "设计接地极",
+      "condition": "新建换流站",
+      "constraint": "接地极设计寿命与换流站相同",
+      "related_entities": [
+        "接地极",
+        "换流站"
+      ]
+    },
+    {
+      "content": "如无可靠资料，接地极的设计寿命不宜少于40年。",
+      "type": "强制",
+      "subject": "设计单位",
+      "action": "确定接地极设计寿命",
+      "condition": "无可靠资料",
+      "constraint": "接地极设计寿命≥40年",
+      "related_entities": [
+        "接地极"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "接地极",
+      "target": "换流站",
+      "type": "配套使用"
+    },
+    {
+      "source": "设计寿命",
+      "target": "接地极",
+      "type": "技术参数约束"
+    },
+    {
+      "source": "设计寿命",
+      "target": "换流站",
+      "type": "技术参数约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3135,
+      "source_row_id": "3144",
+      "clause_index": 1,
+      "source_text": "接地极宜按一次性建成投产进行设计，其设计寿命应与使用该接地极的换流站相同。如无可靠资料，接地极的设计寿命不宜少于40年。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.424316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "隔板",
+      "type": "电力设备",
+      "desc": "汽轮机转子中的隔板"
+    },
+    {
+      "name": "X-射线探伤",
+      "type": "检测方法",
+      "desc": "利用X射线穿透材料并成像的无损检测技术"
+    }
+  ],
+  "rules": [
+    {
+      "content": "隔板应进行X-射线探伤",
+      "type": "强制",
+      "subject": "隔板",
+      "action": "进行X-射线探伤",
+      "condition": "在制造或检修过程中",
+      "constraint": "无",
+      "related_entities": [
+        "隔板",
+        "X-射线探伤"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔板",
+      "target": "X-射线探伤",
+      "type": "需要进行"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1710,
+      "source_row_id": "1710",
+      "clause_index": 2,
+      "source_text": "隔板应进行X-射线探伤"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:00.680158+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

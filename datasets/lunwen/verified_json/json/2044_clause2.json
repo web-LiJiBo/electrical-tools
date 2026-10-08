@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "钢材",
+      "type": "材料",
+      "desc": "用于电力工程的钢材"
+    },
+    {
+      "name": "Q460",
+      "type": "材料规格",
+      "desc": "一种高强度钢材规格"
+    },
+    {
+      "name": "厚度",
+      "type": "尺寸参数",
+      "desc": "钢材的厚度值"
+    },
+    {
+      "name": "挂线孔",
+      "type": "结构特征",
+      "desc": "电力设备中用于悬挂线路的孔洞"
+    },
+    {
+      "name": "钻孔",
+      "type": "加工工艺",
+      "desc": "在钢材上进行钻孔的加工方式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "钢材材质为Q460的所有厚度及挂线孔均应采用钻孔",
+      "type": "强制",
+      "subject": "钢材",
+      "action": "加工",
+      "condition": "材质为Q460",
+      "constraint": "所有厚度及挂线孔均应采用钻孔",
+      "related_entities": [
+        "钢材",
+        "Q460",
+        "厚度",
+        "挂线孔",
+        "钻孔"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢材",
+      "target": "Q460",
+      "type": "材质"
+    },
+    {
+      "source": "钢材",
+      "target": "厚度",
+      "type": "属性"
+    },
+    {
+      "source": "钢材",
+      "target": "挂线孔",
+      "type": "结构"
+    },
+    {
+      "source": "钢材",
+      "target": "钻孔",
+      "type": "加工工艺"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2044,
+      "source_row_id": "2044",
+      "clause_index": 2,
+      "source_text": "钢材材质为Q460的所有厚度及挂线孔均应采用钻孔"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.062968+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

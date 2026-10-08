@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "合并单元",
+      "type": "电力设备",
+      "desc": "电力系统中用于采集和处理传感器数据的装置"
+    },
+    {
+      "name": "信号",
+      "type": "电力信息",
+      "desc": "电力系统运行状态或故障信息的表示"
+    },
+    {
+      "name": "IEC60044-8",
+      "type": "通信协议",
+      "desc": "国际电工委员会制定的电力系统通信规约"
+    }
+  ],
+  "rules": [
+    {
+      "content": "合并单元输出的信号应采用IEC60044-8国际标准通信规约",
+      "type": "强制",
+      "subject": "合并单元",
+      "action": "输出信号",
+      "condition": "电力系统运行过程中",
+      "constraint": "采用IEC60044-8通信规约",
+      "related_entities": [
+        "合并单元",
+        "信号",
+        "IEC60044-8"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "合并单元",
+      "target": "信号",
+      "type": "产生"
+    },
+    {
+      "source": "信号",
+      "target": "IEC60044-8",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3126,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "afa8024901f36015",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3126_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

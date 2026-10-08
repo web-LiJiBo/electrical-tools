@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "水底电缆",
+      "type": "电力设施",
+      "desc": "埋设于水下的电缆"
+    },
+    {
+      "name": "岸上部分",
+      "type": "电力设施",
+      "desc": "从水底引出至岸边的电缆段"
+    },
+    {
+      "name": "船只搁浅处",
+      "type": "地理环境",
+      "desc": "船只可能搁浅的水域位置"
+    },
+    {
+      "name": "最高洪水位",
+      "type": "气象参数",
+      "desc": "河流或湖泊在洪水期达到的最大水位"
+    },
+    {
+      "name": "最低水位",
+      "type": "气象参数",
+      "desc": "河流或湖泊在枯水期达到的最小水位"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水底电缆引到岸上的部分应穿管或加保护盖板等保护措施",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "采取保护措施",
+      "condition": "电缆引到岸上",
+      "constraint": "穿管或加保护盖板",
+      "related_entities": [
+        "水底电缆",
+        "岸上部分"
+      ]
+    },
+    {
+      "content": "其保护范围，下端应为最低水位时船只搁浅及撑篙达不到之处",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "保护范围设置",
+      "condition": "电缆引到岸上",
+      "constraint": "最低水位时船只搁浅及撑篙达不到之处",
+      "related_entities": [
+        "水底电缆",
+        "船只搁浅处",
+        "最低水位"
+      ]
+    },
+    {
+      "content": "上端高于最高洪水位",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "保护范围设置",
+      "condition": "电缆引到岸上",
+      "constraint": "高于最高洪水位",
+      "related_entities": [
+        "水底电缆",
+        "最高洪水位"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水底电缆",
+      "target": "岸上部分",
+      "type": "连接"
+    },
+    {
+      "source": "水底电缆",
+      "target": "船只搁浅处",
+      "type": "保护范围"
+    },
+    {
+      "source": "水底电缆",
+      "target": "最低水位",
+      "type": "保护范围"
+    },
+    {
+      "source": "水底电缆",
+      "target": "最高洪水位",
+      "type": "保护范围"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1871,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "571464a3bc40c560",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1871_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

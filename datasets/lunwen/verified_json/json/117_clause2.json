@@ -1,0 +1,96 @@
+{
+  "entities": [
+    {
+      "name": "非晶合金配电变压器",
+      "type": "设备",
+      "desc": "一种采用非晶合金材料的配电变压器"
+    },
+    {
+      "name": "环境温度",
+      "type": "参数",
+      "desc": "非晶合金配电变压器运行时所处的环境温度"
+    },
+    {
+      "name": "日照强度",
+      "type": "参数",
+      "desc": "非晶合金配电变压器运行时所处的日照强度"
+    },
+    {
+      "name": "最高气温",
+      "type": "参数",
+      "desc": "非晶合金配电变压器运行时的最大允许环境温度"
+    },
+    {
+      "name": "最低气温",
+      "type": "参数",
+      "desc": "非晶合金配电变压器运行时的最小允许环境温度"
+    },
+    {
+      "name": "最大日温差",
+      "type": "参数",
+      "desc": "非晶合金配电变压器运行时的最大允许日温差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "非晶合金配电变压器正常使用条件下的环境温度与日照强度应满足以下要求",
+      "type": "强制",
+      "subject": "非晶合金配电变压器",
+      "action": "正常使用",
+      "condition": "在户外或户内安装条件下",
+      "constraint": "最高气温：+45℃；最低气温：户外安装时为-25℃，户内安装时为-5℃；最大日温差：30K",
+      "related_entities": [
+        "非晶合金配电变压器",
+        "环境温度",
+        "日照强度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "非晶合金配电变压器",
+      "target": "环境温度",
+      "type": "依赖"
+    },
+    {
+      "source": "非晶合金配电变压器",
+      "target": "日照强度",
+      "type": "依赖"
+    },
+    {
+      "source": "环境温度",
+      "target": "最高气温",
+      "type": "属性"
+    },
+    {
+      "source": "环境温度",
+      "target": "最低气温",
+      "type": "属性"
+    },
+    {
+      "source": "环境温度",
+      "target": "最大日温差",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 117,
+      "source_row_id": "117",
+      "clause_index": 2,
+      "source_text": "正常使用条件：非晶合金配电变压器正常使用条件下的环境温度与日照强度应满足以下要求：a)最高气温：+45℃；d)最低气温：‐25℃（适用于户外安装），‐5℃（适用于户内安装）；e)最大日温差：30K"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.881603+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

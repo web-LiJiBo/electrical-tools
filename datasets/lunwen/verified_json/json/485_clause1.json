@@ -1,0 +1,125 @@
+{
+  "entities": [
+    {
+      "name": "水下电缆",
+      "type": "电力设备",
+      "desc": "在水下铺设的电缆"
+    },
+    {
+      "name": "岸边",
+      "type": "地理环境",
+      "desc": "水下电缆上岸的位置"
+    },
+    {
+      "name": "保护管",
+      "type": "电力设备",
+      "desc": "用于保护电缆的管道"
+    },
+    {
+      "name": "沟槽",
+      "type": "电力设备",
+      "desc": "用于敷设电缆的沟槽"
+    },
+    {
+      "name": "工作井",
+      "type": "电力设备",
+      "desc": "电缆敷设过程中设置的工作井"
+    },
+    {
+      "name": "最低水位",
+      "type": "地理环境",
+      "desc": "水体中最低的水面位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "岸边稳定时，应采用保护管、沟槽敷设电缆",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "岸边稳定",
+      "constraint": "采用保护管或沟槽敷设电缆",
+      "related_entities": [
+        "水下电缆",
+        "保护管",
+        "沟槽"
+      ]
+    },
+    {
+      "content": "必要时可设置工作井连接",
+      "type": "强制",
+      "subject": "水下电缆",
+      "action": "敷设",
+      "condition": "岸边稳定且需要连接",
+      "constraint": "设置工作井连接",
+      "related_entities": [
+        "水下电缆",
+        "工作井"
+      ]
+    },
+    {
+      "content": "管沟下端宜置于最低水位下不小于1m处",
+      "type": "强制",
+      "subject": "沟槽",
+      "action": "敷设",
+      "condition": "岸边稳定",
+      "constraint": "管沟下端置于最低水位下不小于1m处",
+      "related_entities": [
+        "沟槽",
+        "最低水位"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水下电缆",
+      "target": "保护管",
+      "type": "使用"
+    },
+    {
+      "source": "水下电缆",
+      "target": "沟槽",
+      "type": "使用"
+    },
+    {
+      "source": "水下电缆",
+      "target": "工作井",
+      "type": "连接"
+    },
+    {
+      "source": "保护管",
+      "target": "水下电缆",
+      "type": "保护"
+    },
+    {
+      "source": "沟槽",
+      "target": "水下电缆",
+      "type": "保护"
+    },
+    {
+      "source": "工作井",
+      "target": "水下电缆",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 485,
+      "source_row_id": "485",
+      "clause_index": 1,
+      "source_text": "水下电缆引至岸上的区段，应采取适合敷设条件的防护措施，且应符合下列规定：岸边稳定时，应采用保护管、沟槽敷设电缆，必要时可设置工作井连接，管沟下端宜置于最低水位下不小于1m处"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.280482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

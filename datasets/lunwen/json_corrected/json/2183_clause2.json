@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "闭口闪点",
+      "type": "试验参数",
+      "desc": "绝缘油在密闭容器中加热至遇火即燃的最低温度"
+    },
+    {
+      "name": "10号绝缘油",
+      "type": "电力设备材料",
+      "desc": "特定牌号的绝缘油"
+    },
+    {
+      "name": "25号绝缘油",
+      "type": "电力设备材料",
+      "desc": "特定牌号的绝缘油"
+    },
+    {
+      "name": "45号绝缘油",
+      "type": "电力设备材料",
+      "desc": "特定牌号的绝缘油"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于10号、25号绝缘油，不低于135℃；对于45号绝缘油，不低于130℃",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "闭口闪点试验",
+      "condition": "新油或再生油",
+      "constraint": "闭口闪点≥135℃(10号、25号)；闭口闪点≥130℃(45号)",
+      "related_entities": [
+        "绝缘油",
+        "闭口闪点"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "10号绝缘油",
+      "target": "闭口闪点",
+      "type": "满足条件"
+    },
+    {
+      "source": "25号绝缘油",
+      "target": "闭口闪点",
+      "type": "满足条件"
+    },
+    {
+      "source": "45号绝缘油",
+      "target": "闭口闪点",
+      "type": "满足条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2183,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3a669cc069531c15",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2183_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

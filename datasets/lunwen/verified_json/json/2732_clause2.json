@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "顶层油温",
+      "type": "温度",
+      "desc": "变压器顶层油的温度"
+    },
+    {
+      "name": "绕组（平均）温升",
+      "type": "温升",
+      "desc": "变压器绕组平均温度与环境温度之差"
+    },
+    {
+      "name": "绕组（热点）温升",
+      "type": "温升",
+      "desc": "变压器绕组热点温度与环境温度之差"
+    },
+    {
+      "name": "油箱、铁心、金属件温升",
+      "type": "温升",
+      "desc": "变压器油箱、铁心、金属件温度与环境温度之差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "顶层油温50K",
+      "type": "强制",
+      "subject": "顶层油温",
+      "action": "控制",
+      "condition": "运行中的变压器",
+      "constraint": "顶层油温≤50K",
+      "related_entities": [
+        "顶层油温"
+      ]
+    },
+    {
+      "content": "绕组（平均）温升65K",
+      "type": "强制",
+      "subject": "绕组（平均）温升",
+      "action": "控制",
+      "condition": "运行中的变压器",
+      "constraint": "绕组（平均）温升≤65K",
+      "related_entities": [
+        "绕组（平均）温升"
+      ]
+    },
+    {
+      "content": "绕组（热点）温升78K",
+      "type": "强制",
+      "subject": "绕组（热点）温升",
+      "action": "控制",
+      "condition": "运行中的变压器",
+      "constraint": "绕组（热点）温升≤78K",
+      "related_entities": [
+        "绕组（热点）温升"
+      ]
+    },
+    {
+      "content": "油箱、铁心、金属件75K",
+      "type": "强制",
+      "subject": "油箱、铁心、金属件温升",
+      "action": "控制",
+      "condition": "运行中的变压器",
+      "constraint": "油箱、铁心、金属件温升≤75K",
+      "related_entities": [
+        "油箱、铁心、金属件温升"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "顶层油温",
+      "target": "绕组（平均）温升",
+      "type": "影响"
+    },
+    {
+      "source": "顶层油温",
+      "target": "绕组（热点）温升",
+      "type": "影响"
+    },
+    {
+      "source": "顶层油温",
+      "target": "油箱、铁心、金属件温升",
+      "type": "影响"
+    },
+    {
+      "source": "绕组（平均）温升",
+      "target": "顶层油温",
+      "type": "影响"
+    },
+    {
+      "source": "绕组（热点）温升",
+      "target": "顶层油温",
+      "type": "影响"
+    },
+    {
+      "source": "绕组（热点）温升",
+      "target": "绕组（平均）温升",
+      "type": "影响"
+    },
+    {
+      "source": "油箱、铁心、金属件温升",
+      "target": "顶层油温",
+      "type": "影响"
+    },
+    {
+      "source": "油箱、铁心、金属件温升",
+      "target": "绕组（平均）温升",
+      "type": "影响"
+    },
+    {
+      "source": "油箱、铁心、金属件温升",
+      "target": "绕组（热点）温升",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2723,
+      "source_row_id": "2732",
+      "clause_index": 2,
+      "source_text": "顶层油温50K，绕组（平均）温升65K，绕组（热点）温升78K，油箱、铁心、金属件75K。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9861,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.911316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "entities": [
+    {
+      "name": "IV级污秽地区",
+      "type": "地理环境",
+      "desc": "电力系统中污秽等级为IV级的地区"
+    },
+    {
+      "name": "大城市中心地区",
+      "type": "地理环境",
+      "desc": "城市人口密集、建筑物密集的中心区域"
+    },
+    {
+      "name": "土石方开挖工程量大的山区",
+      "type": "地理环境",
+      "desc": "山地地形且土石方开挖工程量较大的区域"
+    },
+    {
+      "name": "110kV配电装置",
+      "type": "电气设备",
+      "desc": "额定电压为110kV的配电装置"
+    },
+    {
+      "name": "220kV配电装置",
+      "type": "电气设备",
+      "desc": "额定电压为220kV的配电装置"
+    },
+    {
+      "name": "屋内配电装置",
+      "type": "电气设备",
+      "desc": "安装在建筑物内的配电装置"
+    },
+    {
+      "name": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "电气设备",
+      "desc": "全封闭气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "技术经济合理性",
+      "type": "技术经济指标",
+      "desc": "技术可行性和经济效益的综合评价"
+    }
+  ],
+  "rules": [
+    {
+      "content": "IV级污秽地区、大城市中心地区、土石方开挖工程量大的山区的110kV和220kV配电装置，宜采用屋内配电装置",
+      "type": "强制",
+      "subject": "110kV和220kV配电装置",
+      "action": "采用屋内配电装置",
+      "condition": "在IV级污秽地区、大城市中心地区、土石方开挖工程量大的山区",
+      "constraint": "无具体约束条件",
+      "related_entities": [
+        "IV级污秽地区",
+        "大城市中心地区",
+        "土石方开挖工程量大的山区",
+        "110kV配电装置",
+        "220kV配电装置",
+        "屋内配电装置"
+      ]
+    },
+    {
+      "content": "当技术经济合理时，可采用气体绝缘金属封闭开关设备(GIS)配电装置",
+      "type": "强制",
+      "subject": "110kV和220kV配电装置",
+      "action": "采用气体绝缘金属封闭开关设备(GIS)配电装置",
+      "condition": "在IV级污秽地区、大城市中心地区、土石方开挖工程量大的山区",
+      "constraint": "技术经济合理性",
+      "related_entities": [
+        "IV级污秽地区",
+        "大城市中心地区",
+        "土石方开挖工程量大的山区",
+        "110kV配电装置",
+        "220kV配电装置",
+        "气体绝缘金属封闭开关设备(GIS)"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "IV级污秽地区",
+      "target": "110kV配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "IV级污秽地区",
+      "target": "220kV配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "大城市中心地区",
+      "target": "110kV配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "大城市中心地区",
+      "target": "220kV配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "土石方开挖工程量大的山区",
+      "target": "110kV配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "土石方开挖工程量大的山区",
+      "target": "220kV配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "110kV配电装置",
+      "target": "屋内配电装置",
+      "type": "推荐采用"
+    },
+    {
+      "source": "220kV配电装置",
+      "target": "屋内配电装置",
+      "type": "推荐采用"
+    },
+    {
+      "source": "110kV配电装置",
+      "target": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "可采用"
+    },
+    {
+      "source": "220kV配电装置",
+      "target": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "可采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 403,
+      "source_row_id": "403",
+      "clause_index": 1,
+      "source_text": "IV级污秽地区、大城市中心地区、土石方开挖工程量大的山区的110kV和220kV配电装置，宜采用屋内配电装置，当技术经济合理时，可采用气体绝缘金属封闭开关设备(GIS)配电装置"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9886,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.184483+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

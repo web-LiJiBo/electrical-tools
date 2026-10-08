@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "换流站内用于循环冷却水的泵"
+    },
+    {
+      "name": "变频器",
+      "type": "设备",
+      "desc": "用于调节电机转速的电子装置"
+    },
+    {
+      "name": "工频电源",
+      "type": "电源",
+      "desc": "50Hz或60Hz的交流电源"
+    },
+    {
+      "name": "站用电",
+      "type": "电源",
+      "desc": "换流站内部使用的交流电源"
+    },
+    {
+      "name": "换流站",
+      "type": "场所",
+      "desc": "高压直流输电系统中的关键设施"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在主泵启动成功后，应保持通过变频器方式运行，禁止采用变频器启动经延时转工频的运行方式。",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "启动方式",
+      "condition": "主泵启动成功",
+      "constraint": "禁止采用变频器启动经延时转工频的运行方式",
+      "related_entities": [
+        "主泵",
+        "变频器",
+        "工频电源"
+      ]
+    },
+    {
+      "content": "保留工频运行的应急运行方式，在两台主循环泵的变频器都出现故障的情况下，实现水泵的工频电源切换。",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "启动方式",
+      "condition": "两台主循环泵的变频器都出现故障",
+      "constraint": "实现水泵的工频电源切换",
+      "related_entities": [
+        "主泵",
+        "变频器",
+        "工频电源"
+      ]
+    },
+    {
+      "content": "对于站用电电压波动频繁及电能质量差的换流站，为避免变频器频繁出现故障，可以采用工频电源直接启动的方式。",
+      "type": "建议",
+      "subject": "主泵",
+      "action": "启动方式",
+      "condition": "站用电电压波动频繁及电能质量差",
+      "constraint": "采用工频电源直接启动的方式",
+      "related_entities": [
+        "主泵",
+        "变频器",
+        "工频电源",
+        "站用电"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵",
+      "target": "变频器",
+      "type": "使用"
+    },
+    {
+      "source": "主泵",
+      "target": "工频电源",
+      "type": "备用"
+    },
+    {
+      "source": "主泵",
+      "target": "站用电",
+      "type": "供电"
+    },
+    {
+      "source": "变频器",
+      "target": "主泵",
+      "type": "控制"
+    },
+    {
+      "source": "工频电源",
+      "target": "主泵",
+      "type": "备用控制"
+    },
+    {
+      "source": "站用电",
+      "target": "变频器",
+      "type": "供电"
+    },
+    {
+      "source": "站用电",
+      "target": "工频电源",
+      "type": "备用供电"
+    }
+  ],
+  "metadata": {
+    "pair_id": 192,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9947e0d928e9942d",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\192_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

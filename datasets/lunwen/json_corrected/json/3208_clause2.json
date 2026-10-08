@@ -1,0 +1,64 @@
+{
+  "entities": [
+    {
+      "name": "电压分布试验",
+      "type": "试验项目",
+      "desc": "对电力设备进行的电压分布测试"
+    },
+    {
+      "name": "抗震试验",
+      "type": "试验项目",
+      "desc": "对电力设备进行的抗震性能测试"
+    },
+    {
+      "name": "绝缘底座绝缘电阻试验",
+      "type": "试验项目",
+      "desc": "对电力设备绝缘底座进行的绝缘电阻测试"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电力设备应进行电压分布试验、抗震试验和绝缘底座绝缘电阻试验",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行试验",
+      "condition": "电力设备安装前或定期维护时",
+      "constraint": "试验合格后方可投入使用",
+      "related_entities": [
+        "电压分布试验",
+        "抗震试验",
+        "绝缘底座绝缘电阻试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电压分布试验",
+      "target": "电力设备",
+      "type": "针对"
+    },
+    {
+      "source": "抗震试验",
+      "target": "电力设备",
+      "type": "针对"
+    },
+    {
+      "source": "绝缘底座绝缘电阻试验",
+      "target": "电力设备",
+      "type": "针对"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3208,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "62f97f841ca1443c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3208_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

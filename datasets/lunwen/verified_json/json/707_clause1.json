@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "线路",
+      "type": "电力设施",
+      "desc": "架空输电线路"
+    },
+    {
+      "name": "易舞动区",
+      "type": "地理环境",
+      "desc": "易发生导线舞动的区域"
+    },
+    {
+      "name": "金具",
+      "type": "电力设备",
+      "desc": "用于连接和固定导线的金属构件"
+    },
+    {
+      "name": "绝缘子",
+      "type": "电力设备",
+      "desc": "用于绝缘和支持导线的绝缘元件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路经过易舞动区应适当提高金具和绝缘子的机械强度",
+      "type": "强制",
+      "subject": "设计单位",
+      "action": "提高金具和绝缘子的机械强度",
+      "condition": "线路经过易舞动区",
+      "constraint": "无具体数值要求",
+      "related_entities": [
+        "线路",
+        "易舞动区",
+        "金具",
+        "绝缘子"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路",
+      "target": "易舞动区",
+      "type": "经过"
+    },
+    {
+      "source": "线路",
+      "target": "金具",
+      "type": "使用"
+    },
+    {
+      "source": "线路",
+      "target": "绝缘子",
+      "type": "使用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 707,
+      "source_row_id": "707",
+      "clause_index": 1,
+      "source_text": "线路经过易舞动区应适当提高金具和绝缘子的机械强度"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.533085+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

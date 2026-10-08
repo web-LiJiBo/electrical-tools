@@ -1,0 +1,69 @@
+{
+  "entities": [
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "变电所或变电站是电力系统中变换电压、接受和分配电能的场所"
+    },
+    {
+      "name": "站用电源",
+      "type": "电力设备",
+      "desc": "变电站内用于站内设备运行的交流电源"
+    },
+    {
+      "name": "上级变电站",
+      "type": "电力设施",
+      "desc": "位于变电站上级的变电站，通常具有更高的电压等级"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变电站应至少配置两路不同的站用电源",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "配置站用电源",
+      "condition": "新建或改造",
+      "constraint": "至少两路",
+      "related_entities": [
+        "变电站",
+        "站用电源"
+      ]
+    },
+    {
+      "content": "不同外接站用电源不能取至同一个上级变电站",
+      "type": "强制",
+      "subject": "变电站",
+      "action": "选择站用电源接入点",
+      "condition": "新建或改造",
+      "constraint": "不同上级变电站",
+      "related_entities": [
+        "变电站",
+        "上级变电站",
+        "站用电源"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变电站",
+      "target": "站用电源",
+      "type": "配置"
+    },
+    {
+      "source": "变电站",
+      "target": "上级变电站",
+      "type": "隶属于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 76,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2f9a2d64adf81b85",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\76_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

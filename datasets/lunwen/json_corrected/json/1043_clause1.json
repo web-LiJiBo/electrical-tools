@@ -1,0 +1,97 @@
+{
+  "entities": [
+    {
+      "name": "互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流或电压的电气设备"
+    },
+    {
+      "name": "绝缘介质",
+      "type": "电力材料",
+      "desc": "用于提高电气设备绝缘性能的物质"
+    },
+    {
+      "name": "SF6气体",
+      "type": "电力气体",
+      "desc": "六氟化硫气体，常用于高压电气设备中"
+    },
+    {
+      "name": "SF6气体水分含量",
+      "type": "检测参数",
+      "desc": "SF6气体中的水分含量，以体积分数表示"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对绝缘性能有怀疑的互感器应检测绝缘介质性能",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "检测绝缘介质性能",
+      "condition": "互感器绝缘性能有怀疑",
+      "constraint": "",
+      "related_entities": [
+        "互感器",
+        "绝缘介质"
+      ]
+    },
+    {
+      "content": "SF6气体充入设备24小时后取样",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "取样",
+      "condition": "SF6气体充入设备",
+      "constraint": "充气时间≥24h",
+      "related_entities": [
+        "互感器",
+        "SF6气体"
+      ]
+    },
+    {
+      "content": "SF6气体水分含量不得大于250µL/L（20℃体积分数）",
+      "type": "强制",
+      "subject": "互感器",
+      "action": "控制SF6气体水分含量",
+      "condition": "SF6气体充入设备",
+      "constraint": "≤250µL/L（20℃体积分数）",
+      "related_entities": [
+        "互感器",
+        "SF6气体"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "互感器",
+      "target": "绝缘介质",
+      "type": "检测对象"
+    },
+    {
+      "source": "互感器",
+      "target": "SF6气体",
+      "type": "充气介质"
+    },
+    {
+      "source": "SF6气体",
+      "target": "互感器",
+      "type": "充气对象"
+    },
+    {
+      "source": "SF6气体",
+      "target": "SF6气体水分含量",
+      "type": "检测参数"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1043,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6f4ebb66a5433eaf",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1043_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

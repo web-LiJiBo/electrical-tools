@@ -1,0 +1,159 @@
+{
+  "entities": [
+    {
+      "name": "交流电压试验",
+      "type": "试验方法",
+      "desc": "采用交流电压进行电气设备的耐压试验"
+    },
+    {
+      "name": "冲击电压试验",
+      "type": "试验方法",
+      "desc": "采用冲击电压进行电气设备的耐压试验"
+    },
+    {
+      "name": "耐压时间",
+      "type": "试验参数",
+      "desc": "电气设备在规定电压下的耐压持续时间"
+    },
+    {
+      "name": "耐压电压",
+      "type": "试验参数",
+      "desc": "电气设备在规定时间内承受的电压值"
+    },
+    {
+      "name": "Um",
+      "type": "系统参数",
+      "desc": "系统最高电压值"
+    },
+    {
+      "name": "Um/√3",
+      "type": "系统参数",
+      "desc": "中性点有效接地系统的系统最高电压值"
+    },
+    {
+      "name": "程序A",
+      "type": "试验程序",
+      "desc": "优先选用的试验程序"
+    },
+    {
+      "name": "程序B",
+      "type": "试验程序",
+      "desc": "备用的试验程序"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试验程序可根据试品状况和现场条件，由用户和制造厂商定，从下列程序中选择，但拟优先选用程序A。",
+      "type": "强制",
+      "subject": "试验程序",
+      "action": "确定",
+      "condition": "试品状况和现场条件",
+      "constraint": "优先选用程序A",
+      "related_entities": [
+        "程序A",
+        "程序B"
+      ]
+    },
+    {
+      "content": "程序A：按5.1条和7.1条的交流电压试验，在规定的电压值下耐压1min。",
+      "type": "强制",
+      "subject": "程序A",
+      "action": "实施",
+      "condition": "一般情况",
+      "constraint": "交流电压试验，1min耐压",
+      "related_entities": [
+        "交流电压试验",
+        "耐压时间"
+      ]
+    },
+    {
+      "content": "在特殊情况下，可增加冲击电压试验，按5.2条和7.2条试验，在规定的电压值下进行，正负极性各三次。",
+      "type": "强制",
+      "subject": "程序A",
+      "action": "实施",
+      "condition": "特殊情况下",
+      "constraint": "冲击电压试验，正负极性各三次",
+      "related_entities": [
+        "冲击电压试验"
+      ]
+    },
+    {
+      "content": "程序B：按5.1条的交流电压试验，在电压值不低于Um/√3(对中性点有效接地系统)或Um(对中性点非有效接地系统)下耐压5min(Um为系统最高电压)。同时应补充进行冲击电压试验，按5.2条和7.2条试验，在规定的电压值下进行，正负极性各三次。",
+      "type": "强制",
+      "subject": "程序B",
+      "action": "实施",
+      "condition": "特殊情况下",
+      "constraint": "交流电压试验，5min耐压；冲击电压试验，正负极性各三次",
+      "related_entities": [
+        "交流电压试验",
+        "冲击电压试验",
+        "耐压电压",
+        "Um",
+        "Um/√3"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "程序A",
+      "target": "交流电压试验",
+      "type": "包含"
+    },
+    {
+      "source": "程序A",
+      "target": "耐压时间",
+      "type": "包含"
+    },
+    {
+      "source": "程序A",
+      "target": "耐压电压",
+      "type": "包含"
+    },
+    {
+      "source": "程序A",
+      "target": "冲击电压试验",
+      "type": "包含"
+    },
+    {
+      "source": "程序B",
+      "target": "交流电压试验",
+      "type": "包含"
+    },
+    {
+      "source": "程序B",
+      "target": "耐压时间",
+      "type": "包含"
+    },
+    {
+      "source": "程序B",
+      "target": "耐压电压",
+      "type": "包含"
+    },
+    {
+      "source": "程序B",
+      "target": "Um",
+      "type": "包含"
+    },
+    {
+      "source": "程序B",
+      "target": "Um/√3",
+      "type": "包含"
+    },
+    {
+      "source": "程序B",
+      "target": "冲击电压试验",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 348,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c7e666432e5e56e6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\348_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

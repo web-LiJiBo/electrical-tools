@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "弧垂",
+      "type": "电气参数",
+      "desc": "导线或地线在悬挂点之间的水平距离"
+    },
+    {
+      "name": "110kV线路",
+      "type": "电力系统设备",
+      "desc": "额定电压为110kV的输电线路"
+    },
+    {
+      "name": "220kV及以上线路",
+      "type": "电力系统设备",
+      "desc": "额定电压为220kV及以上的输电线路"
+    }
+  ],
+  "rules": [
+    {
+      "content": "110kV线路弧垂允许偏差：+5%，-2.5%",
+      "type": "强制",
+      "subject": "110kV线路",
+      "action": "安装、检修",
+      "condition": "新建或检修110kV线路",
+      "constraint": "弧垂偏差范围为+5%，-2.5%",
+      "related_entities": [
+        "弧垂",
+        "110kV线路"
+      ]
+    },
+    {
+      "content": "220kV及以上线路弧垂允许偏差：±2.5%",
+      "type": "强制",
+      "subject": "220kV及以上线路",
+      "action": "安装、检修",
+      "condition": "新建或检修220kV及以上线路",
+      "constraint": "弧垂偏差范围为±2.5%",
+      "related_entities": [
+        "弧垂",
+        "220kV及以上线路"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "110kV线路",
+      "target": "弧垂",
+      "type": "包含"
+    },
+    {
+      "source": "220kV及以上线路",
+      "target": "弧垂",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 74,
+      "source_row_id": "74",
+      "clause_index": 2,
+      "source_text": "弧垂允许偏差，110kV允许偏差：+5%，-2.5%；220kV及以上允许偏差：±2.5%"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.5403,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:58.833600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

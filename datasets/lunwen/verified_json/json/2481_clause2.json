@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "设备正常工作时的电流值"
+    },
+    {
+      "name": "1.1倍额定电流",
+      "type": "电气参数",
+      "desc": "额定电流的1.1倍值"
+    },
+    {
+      "name": "1.2倍额定电流",
+      "type": "电气参数",
+      "desc": "额定电流的1.2倍值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.1倍额定电流应能长期运行",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "长期运行",
+      "condition": "在额定电压下",
+      "constraint": "1.1倍额定电流",
+      "related_entities": [
+        "额定电流",
+        "1.1倍额定电流"
+      ]
+    },
+    {
+      "content": "1.2倍额定电流下运行时间应不低于30s",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "短时运行",
+      "condition": "在额定电压下",
+      "constraint": "1.2倍额定电流，持续时间≥30s",
+      "related_entities": [
+        "额定电流",
+        "1.2倍额定电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定电流",
+      "target": "1.1倍额定电流",
+      "type": "倍数关系"
+    },
+    {
+      "source": "额定电流",
+      "target": "1.2倍额定电流",
+      "type": "倍数关系"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2481,
+      "source_row_id": "2481",
+      "clause_index": 2,
+      "source_text": "1.1倍额定电流应能长期运行，1.2倍额定电流下运行时间应不低于30s。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.621315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

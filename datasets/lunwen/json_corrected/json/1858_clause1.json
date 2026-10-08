@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "电缆两端",
+      "type": "电力设施",
+      "desc": "电缆的起始与终止点"
+    },
+    {
+      "name": "电缆直线段",
+      "type": "电力设施",
+      "desc": "电缆无转弯的直线部分"
+    },
+    {
+      "name": "电缆接头",
+      "type": "电力设施",
+      "desc": "连接两段电缆的中间接续点"
+    },
+    {
+      "name:": "弯角处",
+      "type": "电力设施",
+      "desc": "电缆转向的拐角位置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆两端、电缆直线段50m～100m处，电缆接头及电缆改变方向的弯角处应装设方位标志（桩）",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "装设方位标志（桩）",
+      "condition": "电缆敷设过程中",
+      "constraint": "电缆敷设长度大于50m且小于等于100m时，每50m～100m处应装设方位标志（桩）；电缆接头及电缆改变方向的弯角处必须装设方位标志（桩）",
+      "related_entities": [
+        "电缆",
+        "电缆两端",
+        "电缆直线段",
+        "电缆接头",
+        "弯角处"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "电缆两端",
+      "type": "起点终点"
+    },
+    {
+      "source": "电缆",
+      "target": "电缆直线段",
+      "type": "直线部分"
+    },
+    {
+      "source": "电缆",
+      "target": "电缆接头",
+      "type": "连接点"
+    },
+    {
+      "source": "电缆",
+      "target": "弯角处",
+      "type": "转向点"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1858,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "91c6689b13005d43",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1858_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

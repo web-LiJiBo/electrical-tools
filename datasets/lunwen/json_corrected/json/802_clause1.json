@@ -1,0 +1,83 @@
+{
+  "entities": [
+    {
+      "name": "卖方",
+      "type": "电力企业",
+      "desc": "提供电力设备或服务的一方"
+    },
+    {
+      "name": "买方",
+      "type": "电力企业",
+      "desc": "购买电力设备或服务的一方"
+    },
+    {
+      "name": "试验报告",
+      "type": "技术文件",
+      "desc": "对电力设备进行检测后形成的书面报告"
+    },
+    {
+      "name": "变压器油试验报告",
+      "type": "技术文件",
+      "desc": "对变压器油进行检测后形成的书面报告"
+    }
+  ],
+  "rules": [
+    {
+      "content": "卖方向买方提供的试验、测试报告",
+      "type": "强制",
+      "subject": "卖方",
+      "action": "提供试验、测试报告",
+      "condition": "卖方向买方提供电力设备",
+      "constraint": "试验、测试报告应真实有效，符合相关标准和技术要求",
+      "related_entities": [
+        "卖方",
+        "买方",
+        "试验报告"
+      ]
+    },
+    {
+      "content": "零部件试验1）变压器油试验报告",
+      "type": "强制",
+      "subject": "卖方",
+      "action": "提供变压器油试验报告",
+      "condition": "卖方向买方提供变压器设备",
+      "constraint": "变压器油试验报告应包括变压器油的物理性能、化学性能等检测结果，符合相关标准和技术要求",
+      "related_entities": [
+        "卖方",
+        "买方",
+        "试验报告",
+        "变压器油试验报告"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "卖方",
+      "target": "买方",
+      "type": "交易关系"
+    },
+    {
+      "source": "卖方",
+      "target": "试验报告",
+      "type": "提供关系"
+    },
+    {
+      "source": "试验报告",
+      "target": "变压器油试验报告",
+      "type": "包含关系"
+    }
+  ],
+  "metadata": {
+    "pair_id": 802,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "673bacc1db84d4df",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\802_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

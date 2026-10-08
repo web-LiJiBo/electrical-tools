@@ -1,0 +1,161 @@
+{
+  "entities": [
+    {
+      "name": "高压开关柜",
+      "type": "电力设备",
+      "desc": "一种用于电力系统中控制和保护电路的电气设备"
+    },
+    {
+      "name": "断路器室",
+      "type": "电力设备隔室",
+      "desc": "高压开关柜内部用于安装断路器的隔室"
+    },
+    {
+      "name": "母线室",
+      "type": "电力设备隔室",
+      "desc": "高压开关柜内部用于安装母线的隔室"
+    },
+    {
+      "name": "电缆室",
+      "type": "电力设备隔室",
+      "desc": "高压开关柜内部用于安装电缆终端的隔室"
+    },
+    {
+      "name": "内部故障电弧",
+      "type": "电力故障现象",
+      "desc": "高压开关柜内部发生电弧故障的现象"
+    },
+    {
+      "name": "额定短时耐受电流",
+      "type": "电气参数",
+      "desc": "断路器在规定时间内能承受的最大短路电流"
+    },
+    {
+      "name": "额定短路开断电流",
+      "type": "电气参数",
+      "desc": "断路器能可靠切断的最大短路电流"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高压开关柜应满足IAC级的要求",
+      "type": "强制",
+      "subject": "高压开关柜",
+      "action": "设计制造",
+      "condition": "高压开关柜",
+      "constraint": "IAC级",
+      "related_entities": [
+        "高压开关柜"
+      ]
+    },
+    {
+      "content": "断路器室、母线室、电缆室等隔室的内部故障电弧允许持续时间不应小于0.5s",
+      "type": "强制",
+      "subject": "高压开关柜隔室",
+      "action": "设计制造",
+      "condition": "高压开关柜隔室",
+      "constraint": "内部故障电弧允许持续时间≥0.5s",
+      "related_entities": [
+        "高压开关柜",
+        "断路器室",
+        "母线室",
+        "电缆室",
+        "内部故障电弧"
+      ]
+    },
+    {
+      "content": "试验电流为额定短时耐受电流",
+      "type": "强制",
+      "subject": "高压开关柜隔室",
+      "action": "设计制造",
+      "condition": "高压开关柜隔室",
+      "constraint": "试验电流=额定短时耐受电流",
+      "related_entities": [
+        "高压开关柜",
+        "断路器室",
+        "母线室",
+        "电缆室",
+        "内部故障电弧",
+        "额定短时耐受电流"
+      ]
+    },
+    {
+      "content": "对于额定短路开断电流31.5kA以上产品可按照31.5kA进行内部故障电弧试验",
+      "type": "强制",
+      "subject": "高压开关柜隔室",
+      "action": "设计制造",
+      "condition": "高压开关柜隔室且额定短路开断电流>31.5kA",
+      "constraint": "试验电流=31.5kA",
+      "related_entities": [
+        "高压开关柜",
+        "断路器室",
+        "母线室",
+        "电缆室",
+        "内部故障电弧",
+        "额定短路开断电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "高压开关柜",
+      "target": "断路器室",
+      "type": "包含"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "母线室",
+      "type": "包含"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "电缆室",
+      "type": "包含"
+    },
+    {
+      "source": "断路器室",
+      "target": "内部故障电弧",
+      "type": "产生"
+    },
+    {
+      "source": "母线室",
+      "target": "内部故障电弧",
+      "type": "产生"
+    },
+    {
+      "source": "电缆室",
+      "target": "内部故障电弧",
+      "type": "产生"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "额定短时耐受电流",
+      "type": "参数对应"
+    },
+    {
+      "source": "高压开关柜",
+      "target": "额定短路开断电流",
+      "type": "参数对应"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 424,
+      "source_row_id": "424",
+      "clause_index": 1,
+      "source_text": "高压开关柜应满足IAC级的要求，断路器室、母线室、电缆室等隔室的内部故障电弧允许持续时间不应小于0.5s，试验电流为额定短时耐受电流，对于额定短路开断电流31.5kA以上产品可按照31.5kA进行内部故障电弧试验"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.208482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

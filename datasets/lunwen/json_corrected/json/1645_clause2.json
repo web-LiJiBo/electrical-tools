@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "name": "主泵切换延时",
+      "type": "继电保护装置参数",
+      "desc": "主泵在备用电源切换过程中所需的时间"
+    },
+    {
+      "name": "400V备自投整定延时",
+      "type": "继电保护装置参数",
+      "desc": "400V备用电源自动投入装置的动作延时时间"
+    },
+    {
+      "name": "主泵切换不成功判据延时",
+      "type": "继电保护装置参数",
+      "desc": "主泵切换不成功后判断是否需要回切至原供电方式的延时时间"
+    },
+    {
+      "name": "回切时间",
+      "type": "继电保护装置参数",
+      "desc": "主泵切换不成功后回切至原供电方式所需的时间"
+    },
+    {
+      "name": "流量低保护动作时间",
+      "type": "继电保护装置参数",
+      "desc": "当系统流量低于设定值时保护装置动作的时间"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵切换延时整定时间应长于400V备自投整定延时",
+      "type": "强制",
+      "subject": "主泵切换延时",
+      "action": "整定",
+      "condition": "主泵切换延时整定时间",
+      "constraint": "大于400V备自投整定延时",
+      "related_entities": [
+        "主泵切换延时",
+        "400V备自投整定延时"
+      ]
+    },
+    {
+      "content": "主泵切换不成功判据延时与回切时间的总延时应小于流量低保护动作时间",
+      "type": "强制",
+      "subject": "主泵切换不成功判据延时与回切时间",
+      "action": "整定",
+      "condition": "主泵切换不成功判据延时与回切时间的总延时",
+      "constraint": "小于流量低保护动作时间",
+      "related_entities": [
+        "主泵切换不成功判据延时",
+        "回切时间",
+        "流量低保护动作时间"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵切换延时",
+      "target": "400V备自投整定延时",
+      "type": "大于"
+    },
+    {
+      "source": "主泵切换不成功判据延时",
+      "target": "回切时间",
+      "type": "加法运算"
+    },
+    {
+      "source": "主泵切换不成功判据延时与回切时间的总延时",
+      "target": "流量低保护动作时间",
+      "type": "小于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1645,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "7ce1aa2c82292bc9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1645_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

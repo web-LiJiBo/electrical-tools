@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "使用环境条件",
+      "type": "电力设备运行环境",
+      "desc": "电力设备在实际运行中的外部环境参数"
+    },
+    {
+      "name": "最高日温度",
+      "type": "环境参数",
+      "desc": "一天中最高温度值"
+    },
+    {
+      "name": "最低日温度",
+      "type": "环境参数",
+      "desc": "一天中最低温度值"
+    },
+    {
+      "name": "最大日温差",
+      "type": "环境参数",
+      "desc": "一天中最高温度与最低温度之差"
+    }
+  ],
+  "rules": [
+    {
+      "content": "使用环境条件表中规定,最高日温度：+45℃；最低日温度：‐25℃；最大日温差：25K",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "运行",
+      "condition": "在设计选型及运行维护过程中",
+      "constraint": "最高日温度：+45℃；最低日温度：‐25℃；最大日温差：25K",
+      "related_entities": [
+        "使用环境条件",
+        "最高日温度",
+        "最低日温度",
+        "最大日温差"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "使用环境条件",
+      "target": "最高日温度",
+      "type": "包含"
+    },
+    {
+      "source": "使用环境条件",
+      "target": "最低日温度",
+      "type": "包含"
+    },
+    {
+      "source": "使用环境条件",
+      "target": "最大日温差",
+      "type": "包含"
+    },
+    {
+      "source": "最高日温度",
+      "target": "使用环境条件",
+      "type": "被包含于"
+    },
+    {
+      "source": "最低日温度",
+      "target": "使用环境条件",
+      "type": "被包含于"
+    },
+    {
+      "source": "最大日温差",
+      "target": "使用环境条件",
+      "type": "被包含于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 84,
+      "source_row_id": "84",
+      "clause_index": 1,
+      "source_text": "使用环境条件表中规定,“最高日温度：+45℃；最低日温度：‐25℃；最大日温差：25K"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.845600+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "金具紧固件的外螺纹应在热镀锌前加工或辗制，然后进行热浸镀锌，内螺纹在热浸镀锌前后均可加工，如果在热浸镀锌后加工应涂防腐油脂，应符合GB/T41、GB/T93、GB/T95、GB/T5780、GB/T5781、GB/T4056、DL/T764及DL/T1343等标准。",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2403,
+      "source_row_id": "2403",
+      "clause_index": 1,
+      "source_text": "金具紧固件的外螺纹应在热镀锌前加工或辗制，然后进行热浸镀锌，内螺纹在热浸镀锌前后均可加工，如果在热浸镀锌后加工应涂防腐油脂，应符合GB/T41、GB/T93、GB/T95、GB/T5780、GB/T5781、GB/T4056、DL/T764及DL/T1343等标准。"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:01.512546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

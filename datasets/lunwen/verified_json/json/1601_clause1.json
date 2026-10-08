@@ -1,0 +1,86 @@
+{
+  "entities": [
+    {
+      "name": "阀控室",
+      "type": "电力设施",
+      "desc": "安装有阀控屏柜的房间"
+    },
+    {
+      "name": "通风管道",
+      "type": "电力设备",
+      "desc": "用于室内空气流通的管道"
+    },
+    {
+      "name": "阀控屏柜",
+      "type": "电力设备",
+      "desc": "安装于阀控室内的控制屏柜"
+    },
+    {
+      "name": "屏柜顶部",
+      "type": "电力设备",
+      "desc": "阀控屏柜的顶部位置"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "连接屏柜内部元件的导线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "阀控室内的通风管道禁止设计在阀控屏柜顶部",
+      "type": "强制",
+      "subject": "阀控室设计人员",
+      "action": "设计阀控室通风系统",
+      "condition": "阀控室存在阀控屏柜",
+      "constraint": "通风管道不得位于阀控屏柜顶部",
+      "related_entities": [
+        "阀控室",
+        "通风管道",
+        "阀控屏柜"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "阀控室",
+      "target": "通风管道",
+      "type": "包含"
+    },
+    {
+      "source": "阀控室",
+      "target": "阀控屏柜",
+      "type": "包含"
+    },
+    {
+      "source": "通风管道",
+      "target": "屏柜顶部",
+      "type": "连接"
+    },
+    {
+      "source": "屏柜顶部",
+      "target": "电缆",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1601,
+      "source_row_id": "1601",
+      "clause_index": 1,
+      "source_text": "阀控室内的通风管道禁止设计在阀控屏柜顶部，以防冷凝水顺着屏柜顶部电缆流入阀控屏柜"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.556157+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

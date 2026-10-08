@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "充气运输",
+      "type": "运输方式",
+      "desc": "变压器在运输过程中采用充气保护的方式"
+    },
+    {
+      "name": "气体压力",
+      "type": "技术参数",
+      "desc": "充气运输过程中气体的压力值"
+    },
+    {
+      "name": "干燥气体",
+      "type": "技术参数",
+      "desc": "充气运输过程中补充的气体，具有干燥特性"
+    },
+    {
+      "name": "现场存放",
+      "type": "存放方式",
+      "desc": "变压器到达现场后的存放方式"
+    },
+    {
+      "name": "6个月",
+      "type": "时间",
+      "desc": "变压器现场存放的时间上限"
+    },
+    {
+      "name": "充油保存",
+      "type": "存放方式",
+      "desc": "变压器现场存放超过一定时间后的处理方式"
+    },
+    {
+      "name": "绝缘受潮",
+      "type": "故障状态",
+      "desc": "变压器内部绝缘材料因水分侵入而受潮的现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器(电抗器)存放时，必须密封良好。",
+      "type": "强制",
+      "subject": "变压器(电抗器)",
+      "action": "存放",
+      "condition": "存放期间",
+      "constraint": "密封良好",
+      "related_entities": [
+        "变压器",
+        "电抗器"
+      ]
+    },
+    {
+      "content": "充气运输的变压器运抵现场后，要密切监视气体压力，压力过低时要补干燥气体。",
+      "type": "强制",
+      "subject": "充气运输的变压器",
+      "action": "监视气体压力并补干燥气体",
+      "condition": "充气运输到现场后",
+      "constraint": "气体压力正常，压力过低时补干燥气体",
+      "related_entities": [
+        "充气运输",
+        "气体压力",
+        "干燥气体"
+      ]
+    },
+    {
+      "content": "现场存放时间超过6个月的变压器(电抗器)要充油保存，严防进水受潮。",
+      "type": "强制",
+      "subject": "变压器(电抗器)",
+      "action": "充油保存",
+      "condition": "现场存放时间超过6个月",
+      "constraint": "防止进水受潮",
+      "related_entities": [
+        "现场存放",
+        "6个月",
+        "充油保存"
+      ]
+    },
+    {
+      "content": "如发现绝缘受潮，应及时采取相应措施。",
+      "type": "强制",
+      "subject": "变压器(电抗器)",
+      "action": "采取相应措施",
+      "condition": "绝缘受潮",
+      "constraint": "及时处理",
+      "related_entities": [
+        "绝缘受潮"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "充气运输",
+      "type": "采用"
+    },
+    {
+      "source": "变压器",
+      "target": "气体压力",
+      "type": "监控"
+    },
+    {
+      "source": "变压器",
+      "target": "干燥气体",
+      "type": "补充"
+    },
+    {
+      "source": "变压器",
+      "target": "现场存放",
+      "type": "存放方式"
+    },
+    {
+      "source": "变压器",
+      "target": "6个月",
+      "type": "存放时间上限"
+    },
+    {
+      "source": "变压器",
+      "target": "充油保存",
+      "type": "存放方式"
+    },
+    {
+      "source": "变压器",
+      "target": "绝缘受潮",
+      "type": "故障状态"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2100,
+      "source_row_id": "2100",
+      "clause_index": 1,
+      "source_text": "变压器(电抗器)存放时，必须密封良好。充气运输的变压器运抵现场后，要密切监视气体压力，压力过低时要补干燥气体。现场存放时间超过6个月的变压器(电抗器)要充油保存，严防进水受潮。如发现绝缘受潮，应及时采取相应措施"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.138547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

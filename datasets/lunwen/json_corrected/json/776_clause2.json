@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "电流互感器",
+      "type": "电力设备",
+      "desc": "一种用于测量电流的电力设备"
+    },
+    {
+      "name": "二次额定电流",
+      "type": "技术参数",
+      "desc": "电流互感器二次侧的额定电流值"
+    },
+    {
+      "name": "下限负荷",
+      "type": "技术参数",
+      "desc": "电流互感器在特定误差范围内的最小负载"
+    },
+    {
+      "name": "3.75VA",
+      "type": "数值",
+      "desc": "电流互感器下限负荷值，适用于二次额定电流5A的情况"
+    },
+    {
+      "name": "1VA",
+      "type": "数值",
+      "desc": "电流互感器下限负荷值，适用于二次额定电流1A的情况"
+    }
+  ],
+  "rules": [
+    {
+      "content": "除非用户有要求，二次额定电流5A的电流互感器，下限负荷按3.75VA选取；二次额定电流1A的电流互感器，下限负荷按1VA选取",
+      "type": "强制",
+      "subject": "电流互感器",
+      "action": "选取下限负荷值",
+      "condition": "除非用户有要求",
+      "constraint": "二次额定电流5A时，下限负荷≥3.75VA；二次额定电流1A时，下限负荷≥1VA",
+      "related_entities": [
+        "电流互感器",
+        "二次额定电流",
+        "下限负荷"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电流互感器",
+      "target": "二次额定电流",
+      "type": "具有"
+    },
+    {
+      "source": "电流互感器",
+      "target": "下限负荷",
+      "type": "具有"
+    },
+    {
+      "source": "二次额定电流",
+      "target": "下限负荷",
+      "type": "决定"
+    }
+  ],
+  "metadata": {
+    "pair_id": 776,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "100c1f99714aa4af",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\776_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

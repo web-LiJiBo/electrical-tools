@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "封闭压力系统",
+      "type": "电力设备",
+      "desc": "电力系统中具有密封结构的压力容器"
+    },
+    {
+      "name": "隔室",
+      "type": "电力设备",
+      "desc": "电力设备内部的独立压力空间"
+    },
+    {
+      "name": "相对年漏气率",
+      "type": "技术参数",
+      "desc": "封闭压力系统或隔室在一年内的气体泄漏量占初始气体总量的比例"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每个封闭压力系统或隔室允许的相对年漏气率应不大于0.5%",
+      "type": "强制",
+      "subject": "封闭压力系统或隔室",
+      "action": "控制相对年漏气率",
+      "condition": "电力设备运行期间",
+      "constraint": "≤0.5%",
+      "related_entities": [
+        "封闭压力系统",
+        "隔室"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "封闭压力系统",
+      "target": "隔室",
+      "type": "包含"
+    },
+    {
+      "source": "相对年漏气率",
+      "target": "封闭压力系统",
+      "type": "反映"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2258,
+      "source_row_id": "2258",
+      "clause_index": 2,
+      "source_text": "每个封闭压力系统或隔室允许的相对年漏气率应不大于0.5%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.335547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "entities": [
+    {
+      "name": "施加试验电压",
+      "type": "试验操作",
+      "desc": "对电力设备进行耐压试验"
+    },
+    {
+      "name": "网侧绕组线端电压",
+      "type": "试验参数",
+      "desc": "试验过程中施加在网侧绕组线端的电压值"
+    },
+    {
+      "name": "1.5Um/√3",
+      "type": "电压值",
+      "desc": "试验电压值，Um为额定电压值"
+    },
+    {
+      "name": "60min",
+      "type": "时间",
+      "desc": "试验持续时间"
+    },
+    {
+      "name": "局部放电",
+      "type": "试验结果",
+      "desc": "试验过程中检测到的局部放电现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "施加试验电压，使网侧绕组线端电压为1.5Um/√3，并维持60min",
+      "type": "强制",
+      "subject": "施加试验电压",
+      "action": "施加试验电压",
+      "condition": "试验前确保设备处于安全状态",
+      "constraint": "网侧绕组线端电压=1.5Um/√3, 试验持续时间≥60min",
+      "related_entities": [
+        "施加试验电压",
+        "网侧绕组线端电压",
+        "1.5Um/√3",
+        "60min"
+      ]
+    },
+    {
+      "content": "期间连续观察测量局部放电",
+      "type": "强制",
+      "subject": "试验人员",
+      "action": "观察测量局部放电",
+      "condition": "试验过程中",
+      "constraint": "试验人员需具备相应资质",
+      "related_entities": [
+        "试验人员",
+        "局部放电"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "施加试验电压",
+      "target": "网侧绕组线端电压",
+      "type": "施加于"
+    },
+    {
+      "source": "施加试验电压",
+      "target": "1.5Um/√3",
+      "type": "施加电压值"
+    },
+    {
+      "source": "施加试验电压",
+      "target": "60min",
+      "type": "持续时间"
+    },
+    {
+      "source": "网侧绕组线端电压",
+      "target": "局部放电",
+      "type": "产生条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2550,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a125013b48b3b3a8",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2550_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

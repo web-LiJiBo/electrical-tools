@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "回路电阻",
+      "type": "电气参数",
+      "desc": "电路中导体的电阻值"
+    },
+    {
+      "name": "制造厂规定值",
+      "type": "技术指标",
+      "desc": "设备制造商规定的最大允许值"
+    },
+    {
+      "name": "注意值",
+      "type": "技术指标",
+      "desc": "设备运行时应关注的最大允许值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "回路电阻试验要求≤制造厂规定值（注意值）",
+      "type": "强制",
+      "subject": "回路电阻试验",
+      "action": "测试回路电阻值",
+      "condition": "在设备安装或检修后进行",
+      "constraint": "回路电阻值≤制造厂规定值（注意值）",
+      "related_entities": [
+        "回路电阻",
+        "制造厂规定值",
+        "注意值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "回路电阻",
+      "target": "制造厂规定值",
+      "type": "符合"
+    },
+    {
+      "source": "回路电阻",
+      "target": "注意值",
+      "type": "符合"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1735,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "067f0cfa2b226d07",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1735_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

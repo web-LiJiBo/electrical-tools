@@ -1,0 +1,174 @@
+{
+  "entities": [
+    {
+      "name": "电缆终端",
+      "type": "电力设备",
+      "desc": "电缆的末端连接装置"
+    },
+    {
+      "name": "电缆中间接头",
+      "type": "电力设备",
+      "desc": "电缆中间的连接装置"
+    },
+    {
+      "name": "电缆分支处",
+      "type": "电力设备",
+      "desc": "电缆分叉的地方"
+    },
+    {
+      "name": "接地线",
+      "type": "电力设备",
+      "desc": "用于接地的导线"
+    },
+    {
+      "name": "红外热像图",
+      "type": "检测结果",
+      "desc": "通过红外热像仪获取的图像"
+    },
+    {
+      "name": "电缆线路",
+      "type": "电力系统",
+      "desc": "由电缆构成的输电线路"
+    },
+    {
+      "name": "环境温度",
+      "type": "环境参数",
+      "desc": "检测时的环境温度"
+    },
+    {
+      "name": "负荷",
+      "type": "运行参数",
+      "desc": "电缆线路的负载情况"
+    },
+    {
+      "name": "遮挡物",
+      "type": "物理因素",
+      "desc": "电缆与测温仪之间的障碍物"
+    }
+  ],
+  "rules": [
+    {
+      "content": "红外热像图显示应无异常温升、温差和/或相对温差",
+      "type": "强制",
+      "subject": "电缆终端、电缆中间接头、电缆分支处及接地线",
+      "action": "检测",
+      "condition": "电缆带电运行时间在24小时以上且在设备负荷高峰状态下进行",
+      "constraint": "红外热像图显示无异常温升、温差和/或相对温差",
+      "related_entities": [
+        "电缆终端",
+        "电缆中间接头",
+        "电缆分支处",
+        "接地线",
+        "红外热像图"
+      ]
+    },
+    {
+      "content": "电缆带电运行时间应该在24小时以上，最好在设备负荷高峰状态下进行",
+      "type": "强制",
+      "subject": "电缆线路",
+      "action": "带电运行",
+      "condition": "电缆带电运行",
+      "constraint": "电缆带电运行时间≥24小时，最好在设备负荷高峰状态下进行",
+      "related_entities": [
+        "电缆线路",
+        "负荷"
+      ]
+    },
+    {
+      "content": "尽量移开或避开电缆与测温仪之间的遮挡物",
+      "type": "强制",
+      "subject": "电缆线路",
+      "action": "检测",
+      "condition": "电缆带电运行且进行红外热像检测",
+      "constraint": "移开或避开电缆与测温仪之间的遮挡物",
+      "related_entities": [
+        "电缆线路",
+        "遮挡物",
+        "红外热像图"
+      ]
+    },
+    {
+      "content": "记录环境温度、负荷及其近3小时内的变化情况，以便分析参考",
+      "type": "强制",
+      "subject": "电缆线路",
+      "action": "检测",
+      "condition": "电缆带电运行且进行红外热像检测",
+      "constraint": "记录环境温度、负荷及其近3小时内的变化情况",
+      "related_entities": [
+        "电缆线路",
+        "环境温度",
+        "负荷",
+        "红外热像图"
+      ]
+    },
+    {
+      "content": "当电缆线路负荷较重（超过50%）时，应适当缩短红外热像检测周期",
+      "type": "强制",
+      "subject": "电缆线路",
+      "action": "检测",
+      "condition": "电缆线路负荷较重（超过50%）",
+      "constraint": "适当缩短红外热像检测周期",
+      "related_entities": [
+        "电缆线路",
+        "负荷",
+        "红外热像图"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆终端",
+      "target": "红外热像图",
+      "type": "检测对象"
+    },
+    {
+      "source": "电缆中间接头",
+      "target": "红外热像图",
+      "type": "检测对象"
+    },
+    {
+      "source": "电缆分支处",
+      "target": "红外热像图",
+      "type": "检测对象"
+    },
+    {
+      "source": "接地线",
+      "target": "红外热像图",
+      "type": "检测对象"
+    },
+    {
+      "source": "电缆线路",
+      "target": "负荷",
+      "type": "运行参数"
+    },
+    {
+      "source": "电缆线路",
+      "target": "环境温度",
+      "type": "环境参数"
+    },
+    {
+      "source": "电缆线路",
+      "target": "遮挡物",
+      "type": "物理因素"
+    },
+    {
+      "source": "电缆线路",
+      "target": "红外热像图",
+      "type": "检测结果"
+    }
+  ],
+  "metadata": {
+    "pair_id": 580,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "48b4b73805b7ae28",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\580_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

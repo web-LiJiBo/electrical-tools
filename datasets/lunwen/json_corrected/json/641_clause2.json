@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "机械寿命",
+      "type": "电力设备寿命",
+      "desc": "电力设备在正常工作条件下能够承受的最大操作循环次数"
+    },
+    {
+      "name": "操作循环次数",
+      "type": "电力设备运行参数",
+      "desc": "电力设备在实际运行中经历的操作循环次数"
+    }
+  ],
+  "rules": [
+    {
+      "content": "延长的机械寿命的操作循环次数为3000次",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "延长机械寿命",
+      "condition": "电力设备在正常工作条件下",
+      "constraint": "操作循环次数为3000次",
+      "related_entities": [
+        "机械寿命",
+        "操作循环次数"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "机械寿命",
+      "target": "操作循环次数",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 641,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f7fe94f6eb4b55e2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\641_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

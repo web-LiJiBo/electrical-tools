@@ -1,0 +1,123 @@
+{
+  "entities": [
+    {
+      "name": "三级电缆隧道",
+      "type": "电力设施",
+      "desc": "电力系统中用于敷设电缆的地下通道"
+    },
+    {
+      "name": "温度监测",
+      "type": "监控设备",
+      "desc": "用于检测电缆隧道内温度变化的装置"
+    },
+    {
+      "name": "井盖监控",
+      "type": "监控设备",
+      "desc": "用于监控电缆隧道内井盖状态的装置"
+    },
+    {
+      "name": "水位监测",
+      "type": "监控设备",
+      "desc": "用于检测电缆隧道内积水深度的装置"
+    },
+    {
+      "name": "自动排水",
+      "type": "自动化设备",
+      "desc": "用于自动排出电缆隧道内积水的装置"
+    },
+    {
+      "name": "门禁监控",
+      "type": "监控设备",
+      "desc": "用于监控电缆隧道内人员进出情况的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三级电缆隧道宜配置温度监测、井盖监控",
+      "type": "强制",
+      "subject": "三级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造",
+      "constraint": "必须配置温度监测和井盖监控",
+      "related_entities": [
+        "三级电缆隧道",
+        "温度监测",
+        "井盖监控"
+      ]
+    },
+    {
+      "content": "可配置水位监测及自动排水（易积水区域应安装）",
+      "type": "建议",
+      "subject": "三级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造且位于易积水区域",
+      "constraint": "建议配置水位监测及自动排水",
+      "related_entities": [
+        "三级电缆隧道",
+        "水位监测",
+        "自动排水"
+      ]
+    },
+    {
+      "content": "可配置门禁监控",
+      "type": "建议",
+      "subject": "三级电缆隧道",
+      "action": "配置",
+      "condition": "新建或改造",
+      "constraint": "建议配置门禁监控",
+      "related_entities": [
+        "三级电缆隧道",
+        "门禁监控"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三级电缆隧道",
+      "target": "温度监测",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "井盖监控",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "水位监测",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "自动排水",
+      "type": "配置"
+    },
+    {
+      "source": "三级电缆隧道",
+      "target": "门禁监控",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2917,
+      "source_row_id": "2926",
+      "clause_index": 1,
+      "source_text": "三级电缆隧道宜配置温度监测、井盖监控；可配置水位监测及自动排水（易积水区域应安装）、门禁监控等。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8929,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.152315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

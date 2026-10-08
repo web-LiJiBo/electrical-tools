@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "GB/T11022-2011",
+      "type": "标准",
+      "desc": "高压开关设备和控制设备"
+    },
+    {
+      "name": "6.5",
+      "type": "章节",
+      "desc": "开关设备和控制设备的环境条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GB/T11022-2011的6.5适用",
+      "type": "强制",
+      "subject": "高压开关设备和控制设备制造商及使用者",
+      "action": "遵循标准规定",
+      "condition": "适用于所有高压开关设备和控制设备的设计、制造、安装、运行和维护",
+      "constraint": "必须满足6.5章节规定的环境条件要求",
+      "related_entities": [
+        "GB/T11022-2011",
+        "6.5"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GB/T11022-2011",
+      "target": "6.5",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 920,
+      "source_row_id": "920",
+      "clause_index": 1,
+      "source_text": "“GB/T11022-2011的6.5适用”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.782080+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

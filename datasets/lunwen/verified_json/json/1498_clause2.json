@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "SF6气体",
+      "type": "介质",
+      "desc": "六氟化硫气体，用于高压开关设备中"
+    },
+    {
+      "name": "含水含量",
+      "type": "参数",
+      "desc": "SF6气体中的水分含量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交接时SF6气体含水含量小于250μL/L",
+      "type": "强制",
+      "subject": "SF6气体",
+      "action": "交接验收",
+      "condition": "高压开关设备安装或检修后",
+      "constraint": "含水含量<250μL/L",
+      "related_entities": [
+        "SF6气体",
+        "高压开关设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SF6气体",
+      "target": "含水含量",
+      "type": "包含"
+    },
+    {
+      "source": "含水含量",
+      "target": "交接时",
+      "type": "时间点"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1498,
+      "source_row_id": "1498",
+      "clause_index": 2,
+      "source_text": "交接时SF6气体含水含量小于250μL/L"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.449366+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

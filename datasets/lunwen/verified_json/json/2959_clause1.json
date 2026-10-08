@@ -1,0 +1,87 @@
+{
+  "entities": [
+    {
+      "name": "SVC控制室",
+      "type": "电力设备",
+      "desc": "静止无功补偿装置控制室"
+    },
+    {
+      "name": "阀厅",
+      "type": "电力设备",
+      "desc": "换流站内高压直流阀组所在区域"
+    },
+    {
+      "name": "冷却机室",
+      "type": "电力设备",
+      "desc": "换流阀冷却系统所在房间"
+    },
+    {
+      "name": "采暖系统",
+      "type": "建筑设施",
+      "desc": "用于供暖的系统"
+    },
+    {
+      "name": "室内采暖计算温度",
+      "type": "环境参数",
+      "desc": "室内供暖设计温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "位于集中采暖区的SVC控制室、阀厅和冷却机室应设置采暖系统，室内采暖计算温度取10ºC。",
+      "type": "强制",
+      "subject": "SVC控制室、阀厅和冷却机室",
+      "action": "设置采暖系统",
+      "condition": "位于集中采暖区",
+      "constraint": "室内采暖计算温度取10ºC",
+      "related_entities": [
+        "SVC控制室",
+        "阀厅",
+        "冷却机室",
+        "采暖系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "SVC控制室",
+      "target": "采暖系统",
+      "type": "配置"
+    },
+    {
+      "source": "阀厅",
+      "target": "采暖系统",
+      "type": "配置"
+    },
+    {
+      "source": "冷却机室",
+      "target": "采暖系统",
+      "type": "配置"
+    },
+    {
+      "source": "采暖系统",
+      "target": "室内采暖计算温度",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2950,
+      "source_row_id": "2959",
+      "clause_index": 1,
+      "source_text": "采暖通风d）位于集中采暖区的SVC控制室、阀厅和冷却机室应设置采暖系统，室内采暖计算温度取10ºC。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.202314+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

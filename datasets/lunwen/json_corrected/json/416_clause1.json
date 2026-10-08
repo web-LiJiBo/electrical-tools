@@ -1,0 +1,137 @@
+{
+  "entities": [
+    {
+      "name": "微机继电保护装置",
+      "type": "电力设备",
+      "desc": "用于电力系统保护的微机化继电保护装置"
+    },
+    {
+      "name": "开关柜",
+      "type": "电力设备",
+      "desc": "用于电力系统开关操作的封闭式配电装置"
+    },
+    {
+      "name": "环境温度",
+      "type": "物理参数",
+      "desc": "微机继电保护装置运行时所处的温度环境"
+    },
+    {
+      "name": "相对湿度",
+      "type": "物理参数",
+      "desc": "微机继电保护装置运行时所处的空气湿度环境"
+    },
+    {
+      "name": "灰尘",
+      "type": "物理因素",
+      "desc": "影响微机继电保护装置正常运行的固体颗粒物"
+    },
+    {
+      "name": "不良气体",
+      "type": "物理因素",
+      "desc": "影响微机继电保护装置正常运行的有害气体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "微机继电保护装置要求环境温度在−5℃～45℃范围内",
+      "type": "强制",
+      "subject": "微机继电保护装置",
+      "action": "运行",
+      "condition": "安装在开关柜中",
+      "constraint": "-5℃～45℃",
+      "related_entities": [
+        "微机继电保护装置",
+        "环境温度"
+      ]
+    },
+    {
+      "content": "微机继电保护装置最大相对湿度不应超过95％",
+      "type": "强制",
+      "subject": "微机继电保护装置",
+      "action": "运行",
+      "condition": "安装在开关柜中",
+      "constraint": "<=95%",
+      "related_entities": [
+        "微机继电保护装置",
+        "相对湿度"
+      ]
+    },
+    {
+      "content": "微机继电保护装置室内月最大相对湿度不应超过75％",
+      "type": "强制",
+      "subject": "微机继电保护装置",
+      "action": "运行",
+      "condition": "安装在开关柜中",
+      "constraint": "<=75%",
+      "related_entities": [
+        "微机继电保护装置",
+        "相对湿度"
+      ]
+    },
+    {
+      "content": "微机继电保护装置室内环境温度应在5℃～30℃范围内",
+      "type": "强制",
+      "subject": "微机继电保护装置",
+      "action": "运行",
+      "condition": "安装在开关柜中",
+      "constraint": "5℃～30℃",
+      "related_entities": [
+        "微机继电保护装置",
+        "环境温度"
+      ]
+    },
+    {
+      "content": "若超过此范围应装设空调",
+      "type": "强制",
+      "subject": "微机继电保护装置",
+      "action": "运行",
+      "condition": "安装在开关柜中且环境温度超出5℃～30℃范围",
+      "constraint": ">30℃ or <5℃",
+      "related_entities": [
+        "微机继电保护装置",
+        "环境温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "微机继电保护装置",
+      "target": "环境温度",
+      "type": "依赖"
+    },
+    {
+      "source": "微机继电保护装置",
+      "target": "相对湿度",
+      "type": "依赖"
+    },
+    {
+      "source": "微机继电保护装置",
+      "target": "灰尘",
+      "type": "防护"
+    },
+    {
+      "source": "微机继电保护装置",
+      "target": "不良气体",
+      "type": "防护"
+    },
+    {
+      "source": "微机继电保护装置",
+      "target": "开关柜",
+      "type": "安装于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 416,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f56aa5089ebaa8c0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\416_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

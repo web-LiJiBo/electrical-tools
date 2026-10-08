@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "钢材",
+      "type": "材料",
+      "desc": "用于电力设备制造的金属材料"
+    },
+    {
+      "name": "冷加工",
+      "type": "工艺",
+      "desc": "对钢材进行的冷态塑性变形加工过程"
+    },
+    {
+      "name": "冷脆性",
+      "type": "性能",
+      "desc": "材料在低温下出现脆性断裂的特性"
+    },
+    {
+      "name": "金具",
+      "type": "部件",
+      "desc": "电力系统中用于连接或固定导线、绝缘子等的金属构件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "宜采用不敏感的钢材，如采用敏感性的钢材，则要避免严重的冷加工。",
+      "type": "强制",
+      "subject": "钢材",
+      "action": "使用",
+      "condition": "在电力设备制造过程中",
+      "constraint": "不敏感的钢材优先选用，若选用敏感性钢材，则避免严重冷加工",
+      "related_entities": [
+        "钢材",
+        "冷加工"
+      ]
+    },
+    {
+      "content": "在高寒地区使用的金具应采用低冷脆性材料。",
+      "type": "强制",
+      "subject": "金具",
+      "action": "选用",
+      "condition": "在高寒地区电力系统应用中",
+      "constraint": "选用低冷脆性材料",
+      "related_entities": [
+        "金具",
+        "冷脆性"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "钢材",
+      "target": "冷加工",
+      "type": "适用工艺"
+    },
+    {
+      "source": "金具",
+      "target": "冷脆性",
+      "type": "性能要求"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2404,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d5b957c5048dcfa9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2404_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

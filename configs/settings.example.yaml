@@ -1,0 +1,114 @@
+project:
+  name: standard-knowledge-service-v2
+  maturity_target: "machine-readable -> explainable -> actionable"
+  root_dir: "."
+
+model_paths:
+  # 以下路径均相对于项目工具目录，不引用 ../../lunwen 或 ../../代码/xiangmu/lunwen。
+  llm: "models/llm/qwen--Qwen-7B-Chat/snapshots/master"
+  # 可选LoRA/PEFT微调适配器；留空时使用基础Qwen，目录不存在时触发安全降级。
+  llm_adapter: ""
+  embedding: "models/embedding/finetuned_sbert"
+  embedding_baseline: "models/embedding/sbert"
+  consistency_classifier: "models/consistency/classifier_model/attention_model.pt"
+  consistency_classifier_candidates:
+    without_numeric_constraint: "models/consistency/classifier_model/attention_w/o_numeric_constraint_sim.pt"
+    without_rule_set_similarity: "models/consistency/classifier_model/attention_w/o_rule_set_sim.pt"
+  manifests: "models/manifests"
+
+dataset_paths:
+  source_excel: "datasets/lunwen/data/2017.xlsx"
+  decomposed_json_original:
+    train: "datasets/lunwen/output_jsons/train"
+    test: "datasets/lunwen/output_jsons/test"
+  decomposed_json_redistributed:
+    train: "datasets/lunwen/output_jsons_new/train"
+    test: "datasets/lunwen/output_jsons_new/test"
+  # 已以2017.xlsx第一列条款对编号逐条校核；工具主流程优先读取本目录。
+  decomposed_json_verified: "datasets/lunwen/verified_json/json"
+  correction_mapping: "datasets/lunwen/verified_json/修正对照表.xlsx"
+
+safety:
+  reject_on_missing_evidence: true
+  reject_on_unparsed_rule: true
+  human_confirmation_for_control: true
+
+retrieval:
+  primary_backend: lunwen_entity_rule_pipeline
+  embedding_model: "models/embedding/finetuned_sbert"
+  graph_backend: neo4j
+  use_entity_linking: true
+  entity_similarity_threshold: 0.3
+  top_k_entities: 26
+  top_k_rules: 22
+  use_rule_content_similarity: true
+  vector_weight: 0.8
+  structural_weight: 0.2
+  # 一致性评价和混合推理参与最终候选选择的参数。
+  selection_top_k: 5
+  minimum_rule_score: 0.0
+  retrieval_selection_weight: 0.65
+  consistency_selection_weight: 0.25
+  reasoning_selection_weight: 0.10
+  optional_baseline: standard_mnemis
+  require_version_filter_when_provided: true
+
+llm_decomposition:
+  enabled: true
+  # 临时测试使用DeepSeek；切回本地千问时改为local_transformers。
+  backend: deepseek_api
+  remote_model: deepseek-chat
+  api_base: "https://api.deepseek.com"
+  api_key_env: DEEPSEEK_API_KEY
+  timeout_seconds: 30
+  model: "models/llm/qwen--Qwen-7B-Chat/snapshots/master"
+  max_new_tokens: 1024
+  repetition_penalty: 1.05
+  lazy_load: true
+  temperature: 0.1
+  do_sample: false
+  strict_json_schema: true
+  normalize_domain_terms: true
+  fallback: raw_text_sbert_entity_linking
+
+knowledge:
+  standard_repository: json_postgresql
+  graph_backend: neo4j
+  offline_graph_backend: memory
+  json_build_source: "datasets/lunwen/verified_json/json"
+  build_summary: "artifacts/knowledge_graph/verified_build_summary.json"
+  neo4j_uri: "bolt://localhost:7687"
+  neo4j_user: "neo4j"
+  # 密码必须由环境变量或密钥服务注入，不能写入配置库。
+  neo4j_password_env: "STANDARD_KNOWLEDGE_NEO4J_PASSWORD"
+  business_data_backend: adapter
+
+consistency:
+  fixed_split_required: true
+  fallback_threshold: 0.62
+  fallback_weights: [0.30, 0.35, 0.20, 0.15]
+  metrics: [accuracy, precision, recall, f1, auc]
+
+hybrid_reasoning:
+  graph_max_depth: 2
+  condition_mode: all
+  unparsed_condition_status: uncertain
+  missing_fact_status: uncertain
+  direct_eval_enabled: false
+
+feedback:
+  store: "data/feedback/business_feedback.jsonl"
+  proposal_output: "artifacts/optimization/proposals.json"
+  minimum_samples: 5
+  production_auto_apply: false
+  monitor_metrics: [acceptance_rate, average_rating, average_latency_ms, error_distribution]
+
+instruction:
+  protocols: [IEC61850, Modbus]
+  validation_layers: [semantic, protocol, logic]
+  direct_device_dispatch_enabled: false
+
+audit:
+  store: "data/audit/audit.jsonl"
+  retention_days: 365
+  record_model_and_config_fingerprint: true

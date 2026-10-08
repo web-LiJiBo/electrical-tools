@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "主泵电机",
+      "type": "设备",
+      "desc": "电力系统中用于驱动主泵的电动机"
+    },
+    {
+      "name": "热敏电阻",
+      "type": "传感器",
+      "desc": "一种温度敏感元件，能将温度变化转换为电信号"
+    },
+    {
+      "name": "过热监视",
+      "type": "功能",
+      "desc": "监测主泵电机运行过程中是否出现过热现象的功能"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵电机可装设热敏电阻并构成过热监视，只报警",
+      "type": "强制",
+      "subject": "主泵电机",
+      "action": "安装热敏电阻并构成过热监视",
+      "condition": "主泵电机运行过程中",
+      "constraint": "过热监视仅报警，不采取其他措施",
+      "related_entities": [
+        "主泵电机",
+        "热敏电阻",
+        "过热监视"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵电机",
+      "target": "热敏电阻",
+      "type": "安装"
+    },
+    {
+      "source": "热敏电阻",
+      "target": "过热监视",
+      "type": "构成"
+    },
+    {
+      "source": "过热监视",
+      "target": "主泵电机",
+      "type": "监控"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 202,
+      "source_row_id": "202",
+      "clause_index": 1,
+      "source_text": "主泵保护d）主泵电机可装设热敏电阻并构成过热监视，只报警"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.971605+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "entities": [
+    {
+      "name": "用电信息采集终端",
+      "type": "设备"
+    },
+    {
+      "name": "电能数据采集",
+      "type": "功能"
+    },
+    {
+      "name": "数据存储",
+      "type": "功能"
+    },
+    {
+      "name": "数据处理",
+      "type": "功能"
+    },
+    {
+      "name": "数据传输",
+      "type": "功能"
+    },
+    {
+      "name": "事件记录",
+      "type": "功能"
+    },
+    {
+      "name": "本地通信",
+      "type": "功能"
+    },
+    {
+      "name": "远程通信",
+      "type": "功能"
+    },
+    {
+      "name": "日冻结数据",
+      "type": "数据类型"
+    },
+    {
+      "name": "重点用户",
+      "type": "用户类别"
+    },
+    {
+      "name": "历史结算日数据",
+      "type": "数据类型"
+    },
+    {
+      "name": "采集终端",
+      "type": "设备"
+    },
+    {
+      "name": "主站",
+      "type": "设备"
+    },
+    {
+      "name": "AES128加密算法",
+      "type": "加密算法"
+    },
+    {
+      "name": "数据传输",
+      "type": "过程"
+    },
+    {
+      "name": "电压测量误差",
+      "type": "指标"
+    },
+    {
+      "name": "电流测量误差",
+      "type": "指标"
+    },
+    {
+      "name": "有功电能测量误差",
+      "type": "指标"
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "1",
+      "description": "用电信息采集终端应具备电能数据采集、数据存储、数据处理、数据传输、事件记录、本地和远程通信功能。",
+      "entity_relations": [
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "电能数据采集"
+        },
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "数据存储"
+        },
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "数据处理"
+        },
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "数据传输"
+        },
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "事件记录"
+        },
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "本地通信"
+        },
+        {
+          "subject": "用电信息采集终端",
+          "predicate": "具备",
+          "object": "远程通信"
+        }
+      ]
+    },
+    {
+      "rule_id": "2",
+      "description": "采集终端日冻结数据存储容量不应小于40个日冻结数据周期，重点用户应存储不少于10个历史结算日数据。",
+      "entity_relations": [
+        {
+          "subject": "采集终端",
+          "predicate": "不应小于",
+          "object": "40个日冻结数据周期"
+        },
+        {
+          "subject": "重点用户",
+          "predicate": "应存储不少于",
+          "object": "10个历史结算日数据"
+        }
+      ]
+    },
+    {
+      "rule_id": "3",
+      "description": "采集终端与主站通信应采用AES128加密算法，数据传输必须进行加密和完整性校验。",
+      "entity_relations": [
+        {
+          "subject": "采集终端",
+          "predicate": "与",
+          "object": "主站通信"
+        },
+        {
+          "subject": "采集终端与主站通信",
+          "predicate": "应采用",
+          "object": "AES128加密算法"
+        },
+        {
+          "subject": "数据传输",
+          "predicate": "必须进行",
+          "object": "加密和完整性校验"
+        }
+      ]
+    },
+    {
+      "rule_id": "4",
+      "description": "采集终端电压测量误差不应超过±0.5%，电流测量误差不应超过±0.5%，有功电能测量误差不应超过±0.5%。",
+      "entity_relations": [
+        {
+          "subject": "采集终端",
+          "predicate": "电压测量误差不应超过",
+          "object": "±0.5%"
+        },
+        {
+          "subject": "采集终端",
+          "predicate": "电流测量误差不应超过",
+          "object": "±0.5%"
+        },
+        {
+          "subject": "采集终端",
+          "predicate": "有功电能测量误差不应超过",
+          "object": "±0.5%"
+        }
+      ]
+    }
+  ]
+}

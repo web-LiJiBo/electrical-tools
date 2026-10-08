@@ -1,0 +1,93 @@
+{
+  "entities": [
+    {
+      "name": "动稳定能力",
+      "type": "电气设备性能",
+      "desc": "电气设备在承受短路电流时的机械强度特性"
+    },
+    {
+      "name": "短路热稳定电流",
+      "type": "电气参数",
+      "desc": "电气设备在短路情况下能承受的最大热效应电流值"
+    },
+    {
+      "name": "短路后温度",
+      "type": "电气参数",
+      "desc": "电气设备在短路后各绕组的平均温度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "承受外部短路的动稳定能力应符合DL/T272和GB1094.5的规定",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "设计制造",
+      "condition": "在任何分接位置",
+      "constraint": "符合DL/T272和GB1094.5的规定",
+      "related_entities": [
+        "动稳定能力"
+      ]
+    },
+    {
+      "content": "在任何分接位置都应该能够承受短路热稳定电流3秒",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "运行",
+      "condition": "在任何分接位置",
+      "constraint": "短路热稳定电流3秒",
+      "related_entities": [
+        "短路热稳定电流"
+      ]
+    },
+    {
+      "content": "各部位无损坏和明显变形",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "运行",
+      "condition": "在任何分接位置",
+      "constraint": "各部位无损坏和明显变形",
+      "related_entities": [
+        "动稳定能力"
+      ]
+    },
+    {
+      "content": "短路后各绕组的平均温度最高不超过250℃",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "运行",
+      "condition": "在任何分接位置",
+      "constraint": "短路后各绕组的平均温度最高不超过250℃",
+      "related_entities": [
+        "短路后温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "动稳定能力",
+      "target": "短路热稳定电流",
+      "type": "满足条件"
+    },
+    {
+      "source": "动稳定能力",
+      "target": "短路后温度",
+      "type": "影响因素"
+    },
+    {
+      "source": "短路热稳定电流",
+      "target": "短路后温度",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1348,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "62f05f1842e9b4bc",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1348_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

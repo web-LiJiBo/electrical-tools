@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "螺栓",
+      "type": "电力设备",
+      "desc": "用于连接电力设备的紧固件"
+    },
+    {
+      "name": "螺栓规格",
+      "type": "技术参数",
+      "desc": "螺栓的尺寸规格"
+    },
+    {
+      "name": "构件",
+      "type": "电力设备",
+      "desc": "电力系统中的基本组成单元"
+    },
+    {
+      "name": "螺栓孔",
+      "type": "技术参数",
+      "desc": "构件上用于安装螺栓的孔洞"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试组装时所用螺栓规格应与实际所用规格相同",
+      "type": "强制",
+      "subject": "螺栓规格",
+      "action": "使用",
+      "condition": "试组装",
+      "constraint": "规格一致",
+      "related_entities": [
+        "螺栓",
+        "螺栓规格"
+      ]
+    },
+    {
+      "content": "螺栓数目能保证构件的定位需要",
+      "type": "强制",
+      "subject": "螺栓数目",
+      "action": "使用",
+      "condition": "试组装",
+      "constraint": "满足定位需求",
+      "related_entities": [
+        "螺栓",
+        "构件"
+      ]
+    },
+    {
+      "content": "每组孔不少于螺栓孔总数的30%，并不少于3个",
+      "type": "强制",
+      "subject": "螺栓孔",
+      "action": "设置",
+      "condition": "试组装",
+      "constraint": "数量≥30%总数且≥3个",
+      "related_entities": [
+        "螺栓孔",
+        "螺栓"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "螺栓",
+      "target": "螺栓规格",
+      "type": "符合"
+    },
+    {
+      "source": "螺栓",
+      "target": "构件",
+      "type": "安装于"
+    },
+    {
+      "source": "螺栓孔",
+      "target": "螺栓",
+      "type": "配合安装"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 727,
+      "source_row_id": "727",
+      "clause_index": 1,
+      "source_text": "试组装：试组装时所用螺栓规格应与实际所用规格相同，螺栓数目能保证构件的定位需要，且每组孔不少于螺栓孔总数的30%，并不少于3个"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.556084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

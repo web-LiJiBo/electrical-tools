@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "500kV线路",
+      "type": "电力线路",
+      "desc": "500kV等级的输电线路"
+    },
+    {
+      "name": "保护间隙",
+      "type": "继电保护装置",
+      "desc": "一种用于保护输电线路免受雷击损害的装置"
+    },
+    {
+      "name": "整定值",
+      "type": "技术参数",
+      "desc": "保护间隙设定的动作距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "500kV线路保护间隙整定值为1.3m",
+      "type": "强制",
+      "subject": "500kV线路保护间隙",
+      "action": "整定",
+      "condition": "新建或改造500kV线路时",
+      "constraint": "整定值为1.3m",
+      "related_entities": [
+        "500kV线路",
+        "保护间隙"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "500kV线路",
+      "target": "保护间隙",
+      "type": "配置"
+    },
+    {
+      "source": "保护间隙",
+      "target": "整定值",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2010,
+      "source_row_id": "2010",
+      "clause_index": 1,
+      "source_text": "保护间隙整定值要求：500kV线路保护间隙整定值为1.3m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.023967+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

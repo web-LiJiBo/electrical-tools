@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "控制及辅助回路",
+      "type": "电力设备",
+      "desc": "电力系统中用于控制和辅助功能的电气回路"
+    },
+    {
+      "name": "工频耐压试验",
+      "type": "试验方法",
+      "desc": "通过施加工频电压来检测电气设备绝缘性能的方法"
+    },
+    {
+      "name": "绝缘试验",
+      "type": "试验项目",
+      "desc": "对电力设备进行绝缘性能检测的试验项目"
+    }
+  ],
+  "rules": [
+    {
+      "content": "控制及辅助回路应耐受工频耐2000V，时间1分钟",
+      "type": "强制",
+      "subject": "控制及辅助回路",
+      "action": "耐受工频耐压试验",
+      "condition": "在绝缘试验过程中",
+      "constraint": "工频耐压2000V，持续时间1分钟",
+      "related_entities": [
+        "控制及辅助回路",
+        "工频耐压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "控制及辅助回路",
+      "target": "绝缘试验",
+      "type": "包含"
+    },
+    {
+      "source": "绝缘试验",
+      "target": "工频耐压试验",
+      "type": "包含"
+    },
+    {
+      "source": "控制及辅助回路",
+      "target": "工频耐压试验",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 910,
+      "source_row_id": "910",
+      "clause_index": 1,
+      "source_text": "“控制及辅助回路绝缘试验”控制及辅助回路应耐受工频耐2000V，时间1分钟"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9583,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.772083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

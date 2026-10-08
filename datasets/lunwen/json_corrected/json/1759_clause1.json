@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "name": "363kV开关",
+      "type": "电力设备",
+      "desc": "额定电压为363kV的开关设备"
+    },
+    {
+      "name": "460kV",
+      "type": "电压等级",
+      "desc": "363kV开关工频耐压试验值之一"
+    },
+    {
+      "name": "510kV",
+      "type": "电压等级",
+      "desc": "363kV开关工频耐压试验值之一"
+    },
+    {
+      "name": "550kV开关",
+      "type": "电力设备",
+      "desc": "额定电压为550kV的开关设备"
+    },
+    {
+      "name": "680kV",
+      "type": "电压等级",
+      "desc": "550kV开关工频耐压试验值之一"
+    },
+    {
+      "name": "740kV",
+      "type": "电压等级",
+      "desc": "550kV开关工频耐压试验值之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "363kV开关的工频耐压试验值为460kV、510kV",
+      "type": "强制",
+      "subject": "363kV开关",
+      "action": "进行工频耐压试验",
+      "condition": "在出厂或交接验收时",
+      "constraint": "试验值为460kV、510kV",
+      "related_entities": [
+        "363kV开关",
+        "460kV",
+        "510kV"
+      ]
+    },
+    {
+      "content": "550kV开关的工频耐压试验值为680kV、740kV",
+      "type": "强制",
+      "subject": "550kV开关",
+      "action": "进行工频耐压试验",
+      "condition": "在出厂或交接验收时",
+      "constraint": "试验值为680kV、740kV",
+      "related_entities": [
+        "550kV开关",
+        "680kV",
+        "740kV"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "363kV开关",
+      "target": "460kV",
+      "type": "工频耐压试验值"
+    },
+    {
+      "source": "363kV开关",
+      "target": "510kV",
+      "type": "工频耐压试验值"
+    },
+    {
+      "source": "550kV开关",
+      "target": "680kV",
+      "type": "工频耐压试验值"
+    },
+    {
+      "source": "550kV开关",
+      "target": "740kV",
+      "type": "工频耐压试验值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1759,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "af39456b360501a7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1759_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

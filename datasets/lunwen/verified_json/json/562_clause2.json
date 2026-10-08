@@ -1,0 +1,125 @@
+{
+  "entities": [
+    {
+      "name": "海拔高度",
+      "type": "地理环境",
+      "desc": "电力设备安装或作业地点的海拔高度"
+    },
+    {
+      "name": "带电作业",
+      "type": "作业方式",
+      "desc": "在带电设备上进行检修、维护等作业的方式"
+    },
+    {
+      "name": "带电部分",
+      "type": "电气设备",
+      "desc": "电力系统中带电运行的部分"
+    },
+    {
+      "name": "杆塔",
+      "type": "电力设施",
+      "desc": "架空输电线路中的支撑结构"
+    },
+    {
+      "name": "接地部分",
+      "type": "电气设备",
+      "desc": "电力系统中直接与大地连接的导体或装置"
+    },
+    {
+      "name": "校验间隙",
+      "type": "技术参数",
+      "desc": "带电部分与杆塔、接地部分之间的最小安全距离"
+    },
+    {
+      "name": "表7.0.10",
+      "type": "技术标准",
+      "desc": "具体规定带电作业间隙的技术文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在海拔高度1000m以下地区带电作业时，带电部分对杆塔与接地部分的校验间隙应符合表7.0.10的规定。500kV取值3.2米，在考虑操作人员需要停留工作的部位，还应考虑人体活动范围0.5米",
+      "type": "强制",
+      "subject": "带电作业人员",
+      "action": "进行带电作业",
+      "condition": "海拔高度1000m以下，500kV及以上电压等级",
+      "constraint": "带电部分对杆塔与接地部分的校验间隙不得小于3.2米+0.5米=3.7米",
+      "related_entities": [
+        "海拔高度",
+        "带电作业",
+        "带电部分",
+        "杆塔",
+        "接地部分",
+        "校验间隙",
+        "表7.0.10"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "海拔高度",
+      "target": "带电作业",
+      "type": "影响因素"
+    },
+    {
+      "source": "带电作业",
+      "target": "带电部分",
+      "type": "作业对象"
+    },
+    {
+      "source": "带电作业",
+      "target": "杆塔",
+      "type": "作业对象"
+    },
+    {
+      "source": "带电作业",
+      "target": "接地部分",
+      "type": "作业对象"
+    },
+    {
+      "source": "带电部分",
+      "target": "杆塔",
+      "type": "关联设备"
+    },
+    {
+      "source": "带电部分",
+      "target": "接地部分",
+      "type": "关联设备"
+    },
+    {
+      "source": "带电部分",
+      "target": "校验间隙",
+      "type": "技术参数"
+    },
+    {
+      "source": "杆塔",
+      "target": "接地部分",
+      "type": "关联设备"
+    },
+    {
+      "source": "校验间隙",
+      "target": "表7.0.10",
+      "type": "依据标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 562,
+      "source_row_id": "562",
+      "clause_index": 2,
+      "source_text": "在海拔高度1000m以下地区带电作业时，带电部分对杆塔与接地部分的校验间隙应符合表7.0.10的规定。500kV取值3.2米，在考虑操作人员需要停留工作的部位，还应考虑人体活动范围0.5米"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.365485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

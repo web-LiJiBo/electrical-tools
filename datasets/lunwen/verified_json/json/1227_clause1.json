@@ -1,0 +1,109 @@
+{
+  "entities": [
+    {
+      "name": "基坑施工",
+      "type": "施工活动",
+      "desc": "电力工程中基础开挖与支护的施工过程"
+    },
+    {
+      "name": "定位",
+      "type": "施工工序",
+      "desc": "确定电力线路杆塔位置的测量工作"
+    },
+    {
+      "name": "电力线路",
+      "type": "电力设施",
+      "desc": "架设在地面上的输电线路"
+    },
+    {
+      "name": "直线杆",
+      "type": "电力设施",
+      "desc": "沿电力线路方向设置的直线型杆塔"
+    },
+    {
+      "name": "设计档距",
+      "type": "技术参数",
+      "desc": "电力线路设计时确定的相邻两杆塔之间的水平距离"
+    },
+    {
+      "name": "位移",
+      "type": "技术参数",
+      "desc": "电力线路杆塔偏离设计位置的距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "基坑施工前的定位应符合下列规定",
+      "type": "强制",
+      "subject": "施工单位",
+      "action": "进行基坑施工前的定位",
+      "condition": "基坑施工前",
+      "constraint": "符合规定",
+      "related_entities": [
+        "基坑施工",
+        "定位"
+      ]
+    },
+    {
+      "content": "10kV及以下电力线路直线杆顺线路方向位移不超过设计档距的3%",
+      "type": "强制",
+      "subject": "施工单位",
+      "action": "控制直线杆的位移",
+      "condition": "基坑施工前的定位",
+      "constraint": "位移≤设计档距×3%",
+      "related_entities": [
+        "电力线路",
+        "直线杆",
+        "设计档距",
+        "位移"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "基坑施工",
+      "target": "定位",
+      "type": "包含"
+    },
+    {
+      "source": "定位",
+      "target": "电力线路",
+      "type": "涉及对象"
+    },
+    {
+      "source": "定位",
+      "target": "直线杆",
+      "type": "涉及对象"
+    },
+    {
+      "source": "定位",
+      "target": "设计档距",
+      "type": "依据参数"
+    },
+    {
+      "source": "定位",
+      "target": "位移",
+      "type": "结果参数"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1227,
+      "source_row_id": "1227",
+      "clause_index": 1,
+      "source_text": "基坑施工前的定位应符合下列规定，10kV及以下电力线路直线杆顺线路方向位移不超过设计档距的3%"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.133551+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "entities": [
+    {
+      "name": "直流参考电压实测值",
+      "type": "电气参数",
+      "desc": "直流参考电压的测量结果"
+    },
+    {
+      "name": "国家标准《交流无间隙金属氧化物避雷器》(GB11032)",
+      "type": "标准文件",
+      "desc": "交流无间隙金属氧化物避雷器的技术标准"
+    },
+    {
+      "name": "产品技术条件",
+      "type": "技术文档",
+      "desc": "设备制造商提供的技术规范书"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流参考电压实测值不应低于现行国家标准《交流无间隙金属氧化物避雷器》（GB11032）的规定，并符合产品技术条件的规定。",
+      "type": "强制",
+      "subject": "直流参考电压实测值",
+      "action": "测试并记录",
+      "condition": "在设备安装或检修后进行",
+      "constraint": "不低于GB11032标准及产品技术条件要求",
+      "related_entities": [
+        "直流参考电压实测值",
+        "国家标准《交流无间隙金属氧化物避雷器》(GB11032)",
+        "产品技术条件"
+      ]
+    },
+    {
+      "content": "实测值与制造厂规定值比较，变化不应大于±5%。",
+      "type": "强制",
+      "subject": "直流参考电压实测值",
+      "action": "与制造厂规定值对比",
+      "condition": "在设备安装或检修后进行",
+      "constraint": "变化范围不超过±5%",
+      "related_entities": [
+        "直流参考电压实测值",
+        "产品技术条件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流参考电压实测值",
+      "target": "国家标准《交流无间隙金属氧化物避雷器》(GB11032)",
+      "type": "符合"
+    },
+    {
+      "source": "直流参考电压实测值",
+      "target": "产品技术条件",
+      "type": "符合"
+    },
+    {
+      "source": "直流参考电压实测值",
+      "target": "直流参考电压实测值",
+      "type": "对比"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2636,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0fc34fd1e35fa58b",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2636_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

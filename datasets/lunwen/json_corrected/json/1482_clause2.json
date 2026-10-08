@@ -1,0 +1,132 @@
+{
+  "entities": [
+    {
+      "name": "铁磁谐振",
+      "type": "电力现象",
+      "desc": "电力系统中的一种暂态过电压现象"
+    },
+    {
+      "name": "暂态振荡",
+      "type": "电力现象",
+      "desc": "电力系统中的一种瞬态波动现象"
+    },
+    {
+      "name": "中性点有效接地系统",
+      "type": "电力系统结构",
+      "desc": "电力系统中中性点直接接地的系统结构"
+    },
+    {
+      "name": "中性点非有效接地系统",
+      "type": "电力系统结构",
+      "desc": "电力系统中中性点不直接接地的系统结构"
+    },
+    {
+      "name": "中性点绝缘系统",
+      "type": "电力系统结构",
+      "desc": "电力系统中中性点绝缘的系统结构"
+    },
+    {
+      "name": "一次试验电压UP",
+      "type": "试验参数",
+      "desc": "电力设备耐压试验中的一次试验电压"
+    },
+    {
+      "name": "U1n",
+      "type": "额定电压",
+      "desc": "电力设备的额定电压值"
+    },
+    {
+      "name": "0.8U1n",
+      "type": "电压等级",
+      "desc": "一次试验电压UP的80%"
+    },
+    {
+      "name": "1.0U1n",
+      "type": "电压等级",
+      "desc": "一次试验电压UP的100%"
+    },
+    {
+      "name": "1.2U1n",
+      "type": "电压等级",
+      "desc": "一次试验电压UP的120%"
+    },
+    {
+      "name": "1.5U1n",
+      "type": "电压等级",
+      "desc": "一次试验电压UP的150%"
+    },
+    {
+      "name": "1.9U1n",
+      "type": "电压等级",
+      "desc": "一次试验电压UP的190%"
+    }
+  ],
+  "rules": [
+    {
+      "content": "铁磁谐振的暂态振荡，中性点有效接地系统，一次试验电压UP为0.8U1n、1.0U1n、1.2U1n和1.5U1n",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行耐压试验",
+      "condition": "电力设备在中性点有效接地系统中运行",
+      "constraint": "一次试验电压UP为0.8U1n、1.0U1n、1.2U1n和1.5U1n",
+      "related_entities": [
+        "铁磁谐振",
+        "暂态振荡",
+        "中性点有效接地系统",
+        "一次试验电压UP",
+        "U1n"
+      ]
+    },
+    {
+      "content": "铁磁谐振的暂态振荡，中性点非有效接地系统或中性点绝缘系统，一次试验电压UP为0.8U1n、1.0U1n、1.2U1n和1.9U1n",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行耐压试验",
+      "condition": "电力设备在中性点非有效接地系统或中性点绝缘系统中运行",
+      "constraint": "一次试验电压UP为0.8U1n、1.0U1n、1.2U1n和1.9U1n",
+      "related_entities": [
+        "铁磁谐振",
+        "暂态振荡",
+        "中性点非有效接地系统",
+        "中性点绝缘系统",
+        "一次试验电压UP",
+        "U1n"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "铁磁谐振",
+      "target": "暂态振荡",
+      "type": "包含"
+    },
+    {
+      "source": "中性点有效接地系统",
+      "target": "一次试验电压UP",
+      "type": "适用"
+    },
+    {
+      "source": "中性点非有效接地系统",
+      "target": "一次试验电压UP",
+      "type": "适用"
+    },
+    {
+      "source": "中性点绝缘系统",
+      "target": "一次试验电压UP",
+      "type": "适用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1482,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d7f7a800b2a6a796",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1482_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

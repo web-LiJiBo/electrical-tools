@@ -1,0 +1,94 @@
+{
+  "entities": [
+    {
+      "name": "有载开关",
+      "type": "电力设备",
+      "desc": "一种可以带负荷调节变压器抽头的开关"
+    },
+    {
+      "name": "油室",
+      "type": "电力设备部件",
+      "desc": "有载开关内部装有绝缘油的密封空间"
+    },
+    {
+      "name": "绝缘油",
+      "type": "电力设备介质",
+      "desc": "有载开关油室内使用的绝缘油"
+    },
+    {
+      "name": "微水",
+      "type": "试验项目",
+      "desc": "绝缘油中水分含量的检测项目"
+    },
+    {
+      "name": "击穿电压试验",
+      "type": "试验项目",
+      "desc": "绝缘油耐压强度的检测项目"
+    },
+    {
+      "name": "分接变换",
+      "type": "操作动作",
+      "desc": "有载开关调节变压器抽头的操作"
+    }
+  ],
+  "rules": [
+    {
+      "content": "有载开关运行中油室内的绝缘油，每6个月至1年或分接变换2000次-4000次至少采样1次进行微水和击穿电压试验。",
+      "type": "强制",
+      "subject": "有载开关",
+      "action": "运行维护",
+      "condition": "有载开关运行中",
+      "constraint": "每6个月至1年或分接变换2000次-4000次",
+      "related_entities": [
+        "有载开关",
+        "油室",
+        "绝缘油",
+        "微水",
+        "击穿电压试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "有载开关",
+      "target": "油室",
+      "type": "包含"
+    },
+    {
+      "source": "油室",
+      "target": "绝缘油",
+      "type": "装有"
+    },
+    {
+      "source": "有载开关",
+      "target": "绝缘油",
+      "type": "使用"
+    },
+    {
+      "source": "有载开关",
+      "target": "分接变换",
+      "type": "操作"
+    },
+    {
+      "source": "绝缘油",
+      "target": "微水",
+      "type": "检测项目"
+    },
+    {
+      "source": "绝缘油",
+      "target": "击穿电压试验",
+      "type": "检测项目"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2535,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "48169174c7e15cd6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2535_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "直埋通道",
+      "type": "电力设施",
+      "desc": "电缆直接埋设于地下的敷设方式"
+    },
+    {
+      "name": "覆土深度",
+      "type": "技术参数",
+      "desc": "电缆上方覆盖土壤的厚度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆直埋通道覆土深度不应小于0.7m，穿越绿化带时不应小于1m",
+      "type": "强制",
+      "subject": "电缆直埋通道",
+      "action": "敷设",
+      "condition": "电缆直埋敷设",
+      "constraint": "覆土深度≥0.7m; 穿越绿化带时覆土深度≥1m",
+      "related_entities": [
+        "电缆",
+        "直埋通道"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "直埋通道",
+      "type": "敷设于"
+    },
+    {
+      "source": "覆土深度",
+      "target": "直埋通道",
+      "type": "技术参数"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1916,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "63519b56058f4ba0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1916_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "entities": [
+    {
+      "name": "水底电缆",
+      "type": "电力设备",
+      "desc": "水下电力传输线路"
+    },
+    {
+      "name": "水深",
+      "type": "物理量",
+      "desc": "水体垂直深度"
+    },
+    {
+      "name": "最高水位",
+      "type": "物理量",
+      "desc": "水体最高水面高度"
+    },
+    {
+      "name": "间距",
+      "type": "物理量",
+      "desc": "两根电缆中心线之间的距离"
+    },
+    {
+      "name": "埋设方式",
+      "type": "施工方法",
+      "desc": "电缆埋设的具体技术手段"
+    },
+    {
+      "name": "埋设机",
+      "type": "施工机械",
+      "desc": "用于电缆埋设的机械设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "水底电缆平行敷设时的间距不宜小于最高水位水深的2倍",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "敷设",
+      "condition": "水底电缆平行敷设",
+      "constraint": "间距≥2*最高水位水深",
+      "related_entities": [
+        "水底电缆",
+        "水深",
+        "最高水位"
+      ]
+    },
+    {
+      "content": "埋入河床（海底）以下时，其间距按埋设方式或埋设机的工作活动能力确定",
+      "type": "强制",
+      "subject": "水底电缆",
+      "action": "敷设",
+      "condition": "埋入河床（海底）以下",
+      "constraint": "间距=埋设方式或埋设机工作活动能力",
+      "related_entities": [
+        "水底电缆",
+        "埋设方式",
+        "埋设机"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水底电缆",
+      "target": "水深",
+      "type": "影响"
+    },
+    {
+      "source": "水底电缆",
+      "target": "最高水位",
+      "type": "影响"
+    },
+    {
+      "source": "水底电缆",
+      "target": "间距",
+      "type": "属性"
+    },
+    {
+      "source": "水底电缆",
+      "target": "埋设方式",
+      "type": "属性"
+    },
+    {
+      "source": "水底电缆",
+      "target": "埋设机",
+      "type": "属性"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2472,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3e01c5e0d5f23877",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2472_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

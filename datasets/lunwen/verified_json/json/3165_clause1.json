@@ -1,0 +1,65 @@
+{
+  "entities": [
+    {
+      "name": "66kV变压器",
+      "type": "电力设备",
+      "desc": "66kV电压等级的变压器"
+    },
+    {
+      "name": "31500kV•A",
+      "type": "电力容量",
+      "desc": "变压器额定容量为31500kVA"
+    },
+    {
+      "name": "三维冲撞记录仪",
+      "type": "检测仪器",
+      "desc": "用于记录运输过程中变压器受力情况的仪器"
+    }
+  ],
+  "rules": [
+    {
+      "content": "31500kV•A及以上的66kV变压器在运输中应装三维冲撞记录仪",
+      "type": "强制",
+      "subject": "66kV变压器",
+      "action": "运输",
+      "condition": "额定容量≥31500kV•A",
+      "constraint": "必须安装三维冲撞记录仪",
+      "related_entities": [
+        "66kV变压器",
+        "三维冲撞记录仪"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "66kV变压器",
+      "target": "三维冲撞记录仪",
+      "type": "安装要求"
+    },
+    {
+      "source": "三维冲撞记录仪",
+      "target": "66kV变压器",
+      "type": "被安装于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3156,
+      "source_row_id": "3165",
+      "clause_index": 1,
+      "source_text": "31500kV•A及以上的66kV变压器在运输中应装三维冲撞记录仪。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.450313+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

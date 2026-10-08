@@ -1,0 +1,133 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "油",
+      "type": "介质",
+      "desc": "变压器内部绝缘介质，具有散热和绝缘作用"
+    },
+    {
+      "name": "气体",
+      "type": "介质",
+      "desc": "变压器内部替代油的绝缘介质，如氮气、干燥空气等"
+    },
+    {
+      "name": "露点",
+      "type": "技术参数",
+      "desc": "气体中水蒸气分压对应的饱和温度，用于衡量气体干燥程度"
+    },
+    {
+      "name": "密封试验",
+      "type": "试验方法",
+      "desc": "检查变压器密封性能的方法"
+    },
+    {
+      "name": "20kPa-30kPa",
+      "type": "压力值",
+      "desc": "气体充入变压器时的压力范围"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器通常为带油运输",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运输方式",
+      "condition": "无特殊运输条件限制",
+      "constraint": "带油运输",
+      "related_entities": [
+        "变压器",
+        "油"
+      ]
+    },
+    {
+      "content": "如受运输条件限制，可不带油运输但需充以干燥的气体（露点低于-40℃）",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运输方式",
+      "condition": "受运输条件限制",
+      "constraint": "不带油运输，充以干燥气体，露点低于-40℃",
+      "related_entities": [
+        "变压器",
+        "气体",
+        "露点"
+      ]
+    },
+    {
+      "content": "运输前应进行密封试验",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运输前试验",
+      "condition": "无论是否带油或充气运输",
+      "constraint": "密封试验合格",
+      "related_entities": [
+        "变压器",
+        "密封试验"
+      ]
+    },
+    {
+      "content": "以确保充以20kPa-30kPa压力的气体时密封良好",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "充气压力控制",
+      "condition": "采用充气运输方式",
+      "constraint": "充气压力20kPa-30kPa，密封良好",
+      "related_entities": [
+        "变压器",
+        "气体",
+        "20kPa-30kPa"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "油",
+      "type": "使用介质"
+    },
+    {
+      "source": "变压器",
+      "target": "气体",
+      "type": "替代介质"
+    },
+    {
+      "source": "变压器",
+      "target": "密封试验",
+      "type": "运输前试验"
+    },
+    {
+      "source": "气体",
+      "target": "露点",
+      "type": "技术参数"
+    },
+    {
+      "source": "变压器",
+      "target": "20kPa-30kPa",
+      "type": "充气压力范围"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2359,
+      "source_row_id": "2359",
+      "clause_index": 2,
+      "source_text": "变压器通常为带油运输。如受运输条件限制，可不带油运输但需充以干燥的气体（露点低于-40℃）。运输前应进行密封试验。以确保充以20kPa-30kPa压力的气体时密封良好"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.458547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

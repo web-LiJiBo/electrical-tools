@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "XLPE绝缘",
+      "type": "材料",
+      "desc": "交联聚乙烯绝缘材料"
+    },
+    {
+      "name": "热延伸试验",
+      "type": "试验方法",
+      "desc": "用于检测XLPE绝缘材料在高温下的机械性能"
+    },
+    {
+      "name": "表9",
+      "type": "技术指标",
+      "desc": "规定了XLPE绝缘材料热延伸试验的具体技术要求"
+    }
+  ],
+  "rules": [
+    {
+      "content": "XLPE绝缘的热延伸试验要求，试验结果应符合表9要求",
+      "type": "强制",
+      "subject": "XLPE绝缘材料制造商/供应商",
+      "action": "进行热延伸试验并确保试验结果符合表9要求",
+      "condition": "产品生产过程",
+      "constraint": "试验温度、拉伸速度等参数需严格遵循GB/T 16955-2008《额定电压110kV（Um=126kV）交联聚乙烯绝缘电力电缆及其附件》标准",
+      "related_entities": [
+        "XLPE绝缘",
+        "热延伸试验",
+        "表9"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "XLPE绝缘",
+      "target": "热延伸试验",
+      "type": "适用对象"
+    },
+    {
+      "source": "热延伸试验",
+      "target": "表9",
+      "type": "依据标准"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 448,
+      "source_row_id": "448",
+      "clause_index": 1,
+      "source_text": "XLPE绝缘的热延伸试验要求，试验结果应符合表9要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.235482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "entities": [
+    {
+      "name": "电压互感器",
+      "type": "电力设备",
+      "desc": "用于测量电压的电气设备"
+    },
+    {
+      "name": "二次线圈",
+      "type": "电力设备部件",
+      "desc": "电压互感器二次侧绕组"
+    },
+    {
+      "name": "放电间隙",
+      "type": "电力设备部件",
+      "desc": "用于限制过电压的保护装置"
+    },
+    {
+      "name": "氧化锌阀片",
+      "type": "电力设备部件",
+      "desc": "用于限制过电压的保护装置"
+    },
+    {
+      "name": "开关场",
+      "type": "电力设施",
+      "desc": "高压电气设备安装场所"
+    },
+    {
+      "name": "控制室",
+      "type": "电力设施",
+      "desc": "电力系统运行监控中心"
+    },
+    {
+      "name": "电网",
+      "type": "电力系统",
+      "desc": "电力网络"
+    },
+    {
+      "name": "接地故障",
+      "type": "电力故障",
+      "desc": "电力系统中发生接地现象的故障"
+    },
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "电力系统中汇集和分配电力的场所"
+    },
+    {
+      "name": "接地电流",
+      "type": "电力参数",
+      "desc": "电力系统中流经接地装置的电流"
+    },
+    {
+      "name": "Imax",
+      "type": "电力参数",
+      "desc": "电网接地故障时通过变电站的最大接地电流有效值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在控制室一点接地的电压互感器二次线圈，宜在开关场将二次线圈中性点经放电间隙或氧化锌阀片接地",
+      "type": "强制",
+      "subject": "电压互感器二次线圈",
+      "action": "接地",
+      "condition": "控制室一点接地",
+      "constraint": "在开关场将二次线圈中性点经放电间隙或氧化锌阀片接地",
+      "related_entities": [
+        "电压互感器",
+        "二次线圈",
+        "放电间隙",
+        "氧化锌阀片",
+        "开关场"
+      ]
+    },
+    {
+      "content": "其击穿电压峰值应大于30∙Imax伏",
+      "type": "强制",
+      "subject": "放电间隙或氧化锌阀片",
+      "action": "限制过电压",
+      "condition": "电网接地故障时通过变电站的可能最大接地电流有效值为Imax",
+      "constraint": "击穿电压峰值应大于30∙Imax伏",
+      "related_entities": [
+        "放电间隙",
+        "氧化锌阀片",
+        "Imax"
+      ]
+    },
+    {
+      "content": "应定期检查放电间隙或氧化锌阀片",
+      "type": "强制",
+      "subject": "放电间隙或氧化锌阀片",
+      "action": "检查",
+      "condition": "防止造成电压二次回路多点接地的现象",
+      "constraint": "定期检查",
+      "related_entities": [
+        "放电间隙",
+        "氧化锌阀片"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电压互感器",
+      "target": "二次线圈",
+      "type": "包含"
+    },
+    {
+      "source": "二次线圈",
+      "target": "放电间隙",
+      "type": "连接"
+    },
+    {
+      "source": "二次线圈",
+      "target": "氧化锌阀片",
+      "type": "连接"
+    },
+    {
+      "source": "控制室",
+      "target": "电压互感器",
+      "type": "监控"
+    },
+    {
+      "source": "开关场",
+      "target": "电压互感器",
+      "type": "安装"
+    },
+    {
+      "source": "电网",
+      "target": "变电站",
+      "type": "连接"
+    },
+    {
+      "source": "变电站",
+      "target": "电压互感器",
+      "type": "安装"
+    },
+    {
+      "source": "放电间隙",
+      "target": "氧化锌阀片",
+      "type": "并联"
+    },
+    {
+      "source": "放电间隙",
+      "target": "Imax",
+      "type": "限制"
+    },
+    {
+      "source": "氧化锌阀片",
+      "target": "Imax",
+      "type": "限制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 903,
+      "source_row_id": "903",
+      "clause_index": 1,
+      "source_text": "己在控制室一点接地的电压互感器二次线圈，宜在开关场将二次线圈中性点经放电间隙或氧化锌阀片接地，其击穿电压峰值应大于30∙Imax伏（Imax为电网接地故障时通过变电站的可能最大接地电流有效值，单位为kA）。应定期检查放电间隙或氧化锌阀片，防止造成电压二次回路多点接地的现象。”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.765084+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "3/2接线",
+      "type": "电力接线方式",
+      "desc": "三台断路器双母线接线"
+    },
+    {
+      "name": "4/3接线",
+      "type": "电力接线方式",
+      "desc": "四台断路器双母线接线"
+    },
+    {
+      "name": "角形接线",
+      "type": "电力接线方式",
+      "desc": "两台断路器双母线接线"
+    },
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "开关设备，用于开断和闭合电路"
+    },
+    {
+      "name": "电流互感器(CT)",
+      "type": "电力设备",
+      "desc": "测量电流的电气设备"
+    },
+    {
+      "name": "二次绕组",
+      "type": "电力设备",
+      "desc": "电流互感器内部绕组，用于二次侧电流测量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于3/2、4/3、角形接线等多断路器接线型式，应在开关两侧均配置CT",
+      "type": "强制",
+      "subject": "电力系统设计人员",
+      "action": "在开关两侧配置CT",
+      "condition": "3/2、4/3、角形接线等多断路器接线型式",
+      "constraint": "无",
+      "related_entities": [
+        "3/2接线",
+        "4/3接线",
+        "角形接线",
+        "断路器",
+        "电流互感器(CT)"
+      ]
+    },
+    {
+      "content": "CT二次绕组应合理配置，以消除开关与CT间死区",
+      "type": "强制",
+      "subject": "电力系统设计人员",
+      "action": "合理配置CT二次绕组",
+      "condition": "3/2、4/3、角形接线等多断路器接线型式",
+      "constraint": "无",
+      "related_entities": [
+        "3/2接线",
+        "4/3接线",
+        "角形接线",
+        "断路器",
+        "电流互感器(CT)",
+        "二次绕组"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "3/2接线",
+      "target": "断路器",
+      "type": "采用"
+    },
+    {
+      "source": "4/3接线",
+      "target": "断路器",
+      "type": "采用"
+    },
+    {
+      "source": "角形接线",
+      "target": "断路器",
+      "type": "采用"
+    },
+    {
+      "source": "断路器",
+      "target": "电流互感器(CT)",
+      "type": "配置"
+    },
+    {
+      "source": "电流互感器(CT)",
+      "target": "二次绕组",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 60,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "32826ac51bdfdfc0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\60_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

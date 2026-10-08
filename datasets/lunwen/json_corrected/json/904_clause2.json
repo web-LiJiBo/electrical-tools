@@ -1,0 +1,63 @@
+{
+  "entities": [
+    {
+      "name": "交流试验电压",
+      "type": "试验参数",
+      "desc": "交流耐压试验中使用的电压值"
+    },
+    {
+      "name": "出厂试验电压",
+      "type": "试验参数",
+      "desc": "产品出厂时进行交流耐压试验所施加的电压值"
+    },
+    {
+      "name": "现场交流耐压试验",
+      "type": "试验项目",
+      "desc": "在实际运行场所进行的交流耐压试验"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场交流耐压试验应为出厂试验时施加电压的80%",
+      "type": "强制",
+      "subject": "现场交流耐压试验",
+      "action": "施加电压",
+      "condition": "在实际运行场所进行的交流耐压试验",
+      "constraint": "交流试验电压值为出厂试验电压值的80%",
+      "related_entities": [
+        "交流试验电压",
+        "出厂试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "出厂试验电压",
+      "target": "交流试验电压",
+      "type": "参考依据"
+    },
+    {
+      "source": "现场交流耐压试验",
+      "target": "交流试验电压",
+      "type": "执行对象"
+    },
+    {
+      "source": "现场交流耐压试验",
+      "target": "出厂试验电压",
+      "type": "参照标准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 904,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "94dd60e73208b052",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\904_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

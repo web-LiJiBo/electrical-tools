@@ -1,0 +1,68 @@
+{
+  "entities": [
+    {
+      "name": "额定短路持续时间",
+      "type": "电气参数",
+      "desc": "电气设备在额定短路电流下允许持续的时间"
+    },
+    {
+      "name": "2s",
+      "type": "时间",
+      "desc": "额定短路持续时间的标准值"
+    },
+    {
+      "name": "3s",
+      "type": "时间",
+      "desc": "额定短路持续时间的推荐值之一"
+    },
+    {
+      "name": "4s",
+      "type": "时间",
+      "desc": "额定短路持续时间的推荐值之一"
+    }
+  ],
+  "rules": [
+    {
+      "content": "额定短路持续时间的标准值为2s。如果需要，可以选取大于2s的值。推荐值为3s和4s",
+      "type": "强制",
+      "subject": "电气设备制造商与用户",
+      "action": "选择额定短路持续时间",
+      "condition": "电气设备设计制造或选型时",
+      "constraint": "额定短路持续时间≥2s，推荐值为3s或4s",
+      "related_entities": [
+        "额定短路持续时间",
+        "2s",
+        "3s",
+        "4s"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "额定短路持续时间",
+      "target": "2s",
+      "type": "等于"
+    },
+    {
+      "source": "额定短路持续时间",
+      "target": "3s",
+      "type": "推荐值"
+    },
+    {
+      "source": "额定短路持续时间",
+      "target": "4s",
+      "type": "推荐值"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1338,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2a58d77f431960ff",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1338_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

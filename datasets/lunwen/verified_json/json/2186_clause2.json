@@ -1,0 +1,107 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压和电流"
+    },
+    {
+      "name": "地震烈度",
+      "type": "自然灾害等级",
+      "desc": "地震发生时，对不同地区的破坏程度进行分级的指标"
+    },
+    {
+      "name": "地面水平加速度",
+      "type": "物理量",
+      "desc": "地震波在地面上产生的水平方向上的加速度"
+    },
+    {
+      "name": "地面垂直加速度",
+      "type": "物理量",
+      "desc": "地震波在地面上产生的垂直方向上的加速度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器应在地震烈度9度地区正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "地震烈度9度地区",
+      "constraint": "地面水平加速度0.4g；地面垂直加速度0.2g",
+      "related_entities": [
+        "变压器",
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "变压器应在地震烈度8度地区正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "地震烈度8度地区",
+      "constraint": "地面水平加速度0.25g；地面垂直加速度0.125g",
+      "related_entities": [
+        "变压器",
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    },
+    {
+      "content": "变压器应在地震烈度7度地区正常使用",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "正常使用",
+      "condition": "地震烈度7度地区",
+      "constraint": "地面水平加速度0.2g；地面垂直加速度0.1g",
+      "related_entities": [
+        "变压器",
+        "地震烈度",
+        "地面水平加速度",
+        "地面垂直加速度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "地震烈度",
+      "type": "适应性"
+    },
+    {
+      "source": "变压器",
+      "target": "地面水平加速度",
+      "type": "适应性"
+    },
+    {
+      "source": "变压器",
+      "target": "地面垂直加速度",
+      "type": "适应性"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2186,
+      "source_row_id": "2186",
+      "clause_index": 2,
+      "source_text": "变压器应能在下列条件下正常使用：--耐震能力：a)地震烈度9度地区：(1)地面水平加速度0.4g；(2)地面垂直加速度0.2g。b)地震烈度8度地区：(1)地面水平加速度0.25g；(2)地面垂直加速度0.125g。c)地震烈度7度地区：(1)地面水平加速度0.2g；(2)地面垂直加速度0.1g"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.6029,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.246546+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

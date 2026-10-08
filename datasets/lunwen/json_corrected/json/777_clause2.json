@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "直流避雷器",
+      "type": "电力设备",
+      "desc": "用于直流系统中的过电压保护"
+    },
+    {
+      "name": "CIGRE 33/4-05工作组报告",
+      "type": "技术报告",
+      "desc": "高压直流输电换流站用无间隙金属氧化物避雷器应用导则"
+    },
+    {
+      "name": "IEC60099-4",
+      "type": "国际标准",
+      "desc": "高压直流输电换流站用无间隙金属氧化物避雷器应用导则"
+    },
+    {
+      "name": "DL/T605",
+      "type": "国家标准",
+      "desc": "高压直流输电换流站用无间隙金属氧化物避雷器应用导则"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流避雷器直流侧所有避雷器的选择应满足下列文件的最新版本的相应条款",
+      "type": "强制",
+      "subject": "直流避雷器",
+      "action": "选择",
+      "condition": "直流系统中",
+      "constraint": "CIGRE 33/4-05工作组报告、IEC60099-4、DL/T605",
+      "related_entities": [
+        "直流避雷器",
+        "CIGRE 33/4-05工作组报告",
+        "IEC60099-4",
+        "DL/T605"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流避雷器",
+      "target": "CIGRE 33/4-05工作组报告",
+      "type": "遵循"
+    },
+    {
+      "source": "直流避雷器",
+      "target": "IEC60099-4",
+      "type": "遵循"
+    },
+    {
+      "source": "直流避雷器",
+      "target": "DL/T605",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "pair_id": 777,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "0ea8dbdf7c45be07",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\777_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

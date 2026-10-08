@@ -1,0 +1,60 @@
+{
+  "entities": [
+    {
+      "name": "入土角",
+      "type": "施工参数",
+      "desc": "电缆敷设时的入土角度"
+    },
+    {
+      "name": "出土角",
+      "type": "施工参数",
+      "desc": "电缆敷设时的出土角度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "入土角宜8°~20°、出土角为5°~12°。",
+      "type": "强制",
+      "subject": "电缆敷设工程",
+      "action": "选择合适的入土角和出土角",
+      "condition": "电缆敷设工程中",
+      "constraint": "入土角8°~20°，出土角5°~12°",
+      "related_entities": [
+        "入土角",
+        "出土角"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "入土角",
+      "target": "出土角",
+      "type": "范围相关"
+    },
+    {
+      "source": "出土角",
+      "target": "入土角",
+      "type": "范围相关"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2462,
+      "source_row_id": "2462",
+      "clause_index": 2,
+      "source_text": "入土角宜8°~20°、出土角为5°~12°。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.596315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

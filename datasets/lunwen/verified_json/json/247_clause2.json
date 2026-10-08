@@ -1,0 +1,119 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "变电所中用于电压变换的电气设备"
+    },
+    {
+      "name": "本体保护",
+      "type": "保护装置",
+      "desc": "变压器本体的保护措施"
+    },
+    {
+      "name": "压力释放阀",
+      "type": "保护装置",
+      "desc": "变压器内部故障时释放压力的装置"
+    },
+    {
+      "name": "气体继电器",
+      "type": "保护装置",
+      "desc": "变压器内部故障时检测气体的装置"
+    },
+    {
+      "name": "油流速动继电器",
+      "type": "保护装置",
+      "desc": "变压器内部故障时检测油流速度的装置"
+    },
+    {
+      "name": "防雨罩",
+      "type": "防护装置",
+      "desc": "防止雨水进入保护装置的装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器本体保护应加强防雨、防震措施",
+      "type": "强制",
+      "subject": "变压器本体保护",
+      "action": "加强防雨、防震措施",
+      "condition": "变压器本体保护",
+      "constraint": "无",
+      "related_entities": [
+        "变压器",
+        "本体保护"
+      ]
+    },
+    {
+      "content": "户外布置的压力释放阀、气体继电器和油流速动继电器应加装防雨罩",
+      "type": "强制",
+      "subject": "户外布置的压力释放阀、气体继电器和油流速动继电器",
+      "action": "加装防雨罩",
+      "condition": "户外布置的压力释放阀、气体继电器和油流速动继电器",
+      "constraint": "无",
+      "related_entities": [
+        "压力释放阀",
+        "气体继电器",
+        "油流速动继电器",
+        "防雨罩"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "本体保护",
+      "type": "包含"
+    },
+    {
+      "source": "本体保护",
+      "target": "压力释放阀",
+      "type": "包含"
+    },
+    {
+      "source": "本体保护",
+      "target": "气体继电器",
+      "type": "包含"
+    },
+    {
+      "source": "本体保护",
+      "target": "油流速动继电器",
+      "type": "包含"
+    },
+    {
+      "source": "压力释放阀",
+      "target": "防雨罩",
+      "type": "安装"
+    },
+    {
+      "source": "气体继电器",
+      "target": "防雨罩",
+      "type": "安装"
+    },
+    {
+      "source": "油流速动继电器",
+      "target": "防雨罩",
+      "type": "安装"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 247,
+      "source_row_id": "247",
+      "clause_index": 2,
+      "source_text": "变压器本体保护应加强防雨、防震措施，户外布置的压力释放阀、气体继电器和油流速动继电器应加装防雨罩"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.018601+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

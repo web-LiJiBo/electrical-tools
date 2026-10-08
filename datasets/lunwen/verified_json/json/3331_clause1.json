@@ -1,0 +1,88 @@
+{
+  "entities": [
+    {
+      "name": "整机连续运行试验",
+      "type": "试验",
+      "desc": "对整个设备进行连续运行测试"
+    },
+    {
+      "name": "阀冷却系统",
+      "type": "系统",
+      "desc": "用于冷却电力电子设备的水冷系统"
+    },
+    {
+      "name": "阀冷却系统运行参数",
+      "type": "参数",
+      "desc": "阀冷却系统运行时的各项指标数据"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在各单项试验合格之后，应进行整机连续运行试验",
+      "type": "强制",
+      "subject": "设备制造商或安装调试单位",
+      "action": "进行整机连续运行试验",
+      "condition": "各单项试验合格",
+      "constraint": "",
+      "related_entities": [
+        "整机连续运行试验",
+        "阀冷却系统"
+      ]
+    },
+    {
+      "content": "试验时间应不低于48h",
+      "type": "强制",
+      "subject": "设备制造商或安装调试单位",
+      "action": "确定试验时间",
+      "condition": "进行整机连续运行试验",
+      "constraint": "试验时间≥48h",
+      "related_entities": [
+        "整机连续运行试验"
+      ]
+    },
+    {
+      "content": "试验期间应记录阀冷却系统运行参数",
+      "type": "强制",
+      "subject": "设备制造商或安装调试单位",
+      "action": "记录阀冷却系统运行参数",
+      "condition": "进行整机连续运行试验",
+      "constraint": "",
+      "related_entities": [
+        "整机连续运行试验",
+        "阀冷却系统运行参数"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "整机连续运行试验",
+      "target": "阀冷却系统",
+      "type": "包含"
+    },
+    {
+      "source": "整机连续运行试验",
+      "target": "阀冷却系统运行参数",
+      "type": "记录"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3322,
+      "source_row_id": "3331",
+      "clause_index": 1,
+      "source_text": "在各单项试验合格之后，应进行整机连续运行试验。试验时间应不低于48h，试验期间应记录阀冷却系统运行参数。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.655365+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

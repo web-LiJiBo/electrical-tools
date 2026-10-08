@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "水冷系统",
+      "type": "设备",
+      "desc": "电力系统中用于冷却的水循环系统"
+    },
+    {
+      "name": "压力试验",
+      "type": "试验",
+      "desc": "对水冷系统进行的压力测试"
+    },
+    {
+      "name": "出厂试验压力",
+      "type": "参数",
+      "desc": "水冷系统在出厂时规定的最大工作压力"
+    },
+    {
+      "name": "水滴泄漏",
+      "type": "故障",
+      "desc": "水冷系统在试验过程中出现的漏水现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "进行压力试验，施加压力为出厂试验压力的80%，持续时间1h，整个水冷系统应无水滴泄漏现象",
+      "type": "强制",
+      "subject": "水冷系统",
+      "action": "进行压力试验",
+      "condition": "水冷系统安装完毕后",
+      "constraint": "试验压力为出厂试验压力的80%，持续时间为1小时",
+      "related_entities": [
+        "水冷系统",
+        "压力试验",
+        "出厂试验压力",
+        "水滴泄漏"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "水冷系统",
+      "target": "压力试验",
+      "type": "接受"
+    },
+    {
+      "source": "出厂试验压力",
+      "target": "压力试验",
+      "type": "依据"
+    },
+    {
+      "source": "水冷系统",
+      "target": "水滴泄漏",
+      "type": "避免"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 219,
+      "source_row_id": "219",
+      "clause_index": 1,
+      "source_text": "水冷系统的试验b）“进行压力试验，施加压力为出厂试验压力的80%，持续时间1h，整个水冷系统应无水滴泄漏现象”"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:58.990604+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

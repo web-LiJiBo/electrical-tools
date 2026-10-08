@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "试验电流",
+      "type": "电气参数",
+      "desc": "用于检测电气设备性能的电流值"
+    },
+    {
+      "name": "额定电流",
+      "type": "电气参数",
+      "desc": "电气设备正常工作时允许的最大电流值"
+    },
+    {
+      "name": "主回路电阻",
+      "type": "电气参数",
+      "desc": "电气设备主回路中的总电阻值"
+    },
+    {
+      "name": "触头",
+      "type": "电气部件",
+      "desc": "电气设备中用于接通或断开电路的可动部分"
+    },
+    {
+      "name": "联结",
+      "type": "电气部件",
+      "desc": "电气设备中用于连接导线或元件的固定部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "试验电流应该取100A到额定电流之间的任一方便的值",
+      "type": "强制",
+      "subject": "试验电流",
+      "action": "取值",
+      "condition": "电气设备检测",
+      "constraint": "100A~额定电流",
+      "related_entities": [
+        "试验电流",
+        "额定电流"
+      ]
+    },
+    {
+      "content": "单凭主回路电阻增大不能看作是触头或联结不好的可靠证据",
+      "type": "强制",
+      "subject": "主回路电阻",
+      "action": "判断",
+      "condition": "电气设备检测",
+      "constraint": "主回路电阻增大",
+      "related_entities": [
+        "主回路电阻",
+        "触头",
+        "联结"
+      ]
+    },
+    {
+      "content": "试验应当在更大的（尽可能接近额定电流的）电流下重复进行",
+      "type": "强制",
+      "subject": "试验电流",
+      "action": "重复试验",
+      "condition": "主回路电阻增大且无法确定原因",
+      "constraint": "接近额定电流",
+      "related_entities": [
+        "试验电流",
+        "额定电流"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "试验电流",
+      "target": "额定电流",
+      "type": "范围"
+    },
+    {
+      "source": "主回路电阻",
+      "target": "触头",
+      "type": "反映状态"
+    },
+    {
+      "source": "主回路电阻",
+      "target": "联结",
+      "type": "反映状态"
+    },
+    {
+      "source": "试验电流",
+      "target": "主回路电阻",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1274,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "34f436a2c60e6f60",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1274_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

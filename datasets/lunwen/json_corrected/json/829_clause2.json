@@ -1,0 +1,136 @@
+{
+  "entities": [
+    {
+      "name": "一类变电站",
+      "type": "变电站级别",
+      "desc": "电力系统中最高级别的变电站"
+    },
+    {
+      "name": "二类变电站",
+      "type": "变电站级别",
+      "desc": "电力系统中的较高级别变电站"
+    },
+    {
+      "name": "三类变电站",
+      "type": "变电站级别",
+      "desc": "电力系统中的中等级别变电站"
+    },
+    {
+      "name": "四类变电站",
+      "type": "变电站级别",
+      "desc": "电力系统中的较低级别变电站"
+    },
+    {
+      "name": "例行巡视",
+      "type": "巡视方式",
+      "desc": "变电站日常检查方式"
+    },
+    {
+      "name": "智能机器人巡检系统",
+      "type": "设备设施",
+      "desc": "采用智能机器人进行变电站巡检的系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "例行巡视一类变电站每2天不少于1次",
+      "type": "强制",
+      "subject": "一类变电站",
+      "action": "例行巡视",
+      "condition": "每日",
+      "constraint": "每2天不少于1次",
+      "related_entities": [
+        "一类变电站",
+        "例行巡视"
+      ]
+    },
+    {
+      "content": "例行巡视二类变电站每3天不少于1次",
+      "type": "强制",
+      "subject": "二类变电站",
+      "action": "例行巡视",
+      "condition": "每日",
+      "constraint": "每3天不少于1次",
+      "related_entities": [
+        "二类变电站",
+        "例行巡视"
+      ]
+    },
+    {
+      "content": "例行巡视三类变电站每周不少于1次",
+      "type": "强制",
+      "subject": "三类变电站",
+      "action": "例行巡视",
+      "condition": "每周",
+      "constraint": "每周不少于1次",
+      "related_entities": [
+        "三类变电站",
+        "例行巡视"
+      ]
+    },
+    {
+      "content": "例行巡视四类变电站每两周不少于1次",
+      "type": "强制",
+      "subject": "四类变电站",
+      "action": "例行巡视",
+      "condition": "每周",
+      "constraint": "每两周不少于1次",
+      "related_entities": [
+        "四类变电站",
+        "例行巡视"
+      ]
+    },
+    {
+      "content": "配置智能机器人巡检系统的变电站可降低例行巡视频次",
+      "type": "建议",
+      "subject": "配置智能机器人巡检系统的变电站",
+      "action": "降低例行巡视频次",
+      "condition": "配置智能机器人巡检系统",
+      "constraint": "根据实际运行情况调整",
+      "related_entities": [
+        "智能机器人巡检系统",
+        "例行巡视"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "一类变电站",
+      "target": "例行巡视",
+      "type": "适用对象"
+    },
+    {
+      "source": "二类变电站",
+      "target": "例行巡视",
+      "type": "适用对象"
+    },
+    {
+      "source": "三类变电站",
+      "target": "例行巡视",
+      "type": "适用对象"
+    },
+    {
+      "source": "四类变电站",
+      "target": "例行巡视",
+      "type": "适用对象"
+    },
+    {
+      "source": "智能机器人巡检系统",
+      "target": "例行巡视",
+      "type": "替代手段"
+    }
+  ],
+  "metadata": {
+    "pair_id": 829,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a7e065909cc25b11",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\829_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

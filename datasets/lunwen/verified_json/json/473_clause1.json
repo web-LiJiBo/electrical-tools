@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "直埋电缆",
+      "type": "电力设施",
+      "desc": "直接埋设于地下的电缆"
+    },
+    {
+      "name": "直线段",
+      "type": "电力设施位置",
+      "desc": "电缆无转弯的直线敷设段落"
+    },
+    {
+      "name": "电缆接头",
+      "type": "电力设施部件",
+      "desc": "连接两段电缆的电气连接装置"
+    },
+    {
+      "name": "转弯处",
+      "type": "电力设施位置",
+      "desc": "电缆走向发生改变的位置"
+    },
+    {
+      "name": "建筑物",
+      "type": "电力设施位置",
+      "desc": "电缆进入建筑物的入口处"
+    },
+    {
+      "name": "方位标志",
+      "type": "电力设施标识",
+      "desc": "用于指示电缆位置的地面标志"
+    },
+    {
+      "name": "标桩",
+      "type": "电力设施标识",
+      "desc": "用于标记电缆位置的地面标志桩"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直埋电缆在直线段每隔50～100m处、电缆接头处、转弯处、进入建筑物等处，应设置明显的方位标志或标桩",
+      "type": "强制",
+      "subject": "直埋电缆",
+      "action": "设置方位标志或标桩",
+      "condition": "敷设于地下且长度超过50米",
+      "constraint": "每隔50～100m处、电缆接头处、转弯处、进入建筑物等处",
+      "related_entities": [
+        "直埋电缆",
+        "直线段",
+        "电缆接头",
+        "转弯处",
+        "建筑物",
+        "方位标志",
+        "标桩"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直埋电缆",
+      "target": "直线段",
+      "type": "位于"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "电缆接头",
+      "type": "连接"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "转弯处",
+      "type": "经过"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "建筑物",
+      "type": "进入"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "方位标志",
+      "type": "设置"
+    },
+    {
+      "source": "直埋电缆",
+      "target": "标桩",
+      "type": "设置"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 473,
+      "source_row_id": "473",
+      "clause_index": 1,
+      "source_text": "直埋电缆在直线段每隔50～100m处、电缆接头处、转弯处、进入建筑物等处，应设置明显的方位标志或标桩"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.264485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

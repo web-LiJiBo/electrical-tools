@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "柱上三相变压器",
+      "type": "电力设备",
+      "desc": "安装在电杆上的三相变压器"
+    },
+    {
+      "name": "柱上单相变压器",
+      "type": "电力设备",
+      "desc": "安装在电杆上的单相变压器"
+    },
+    {
+      "name": "变压器容量",
+      "type": "技术参数",
+      "desc": "变压器的额定容量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "柱上三相变压器容量不宜大于400kVA",
+      "type": "强制",
+      "subject": "柱上三相变压器",
+      "action": "选择或安装",
+      "condition": "新建或改造",
+      "constraint": "容量不大于400kVA",
+      "related_entities": [
+        "柱上三相变压器",
+        "变压器容量"
+      ]
+    },
+    {
+      "content": "柱上单相变压器容量不宜大于100kVA",
+      "type": "强制",
+      "subject": "柱上单相变压器",
+      "action": "选择或安装",
+      "condition": "新建或改造",
+      "constraint": "容量不大于100kVA",
+      "related_entities": [
+        "柱上单相变压器",
+        "变压器容量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "柱上三相变压器",
+      "target": "变压器容量",
+      "type": "具有"
+    },
+    {
+      "source": "柱上单相变压器",
+      "target": "变压器容量",
+      "type": "具有"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1536,
+      "source_row_id": "1536",
+      "clause_index": 2,
+      "source_text": "柱上三相变压器容量不宜大于400kVA，单相变压器容量不宜大于100kVA"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9367,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.488958+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

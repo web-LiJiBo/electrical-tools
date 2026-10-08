@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "滤油机",
+      "type": "设备",
+      "desc": "用于变压器油的过滤和净化"
+    },
+    {
+      "name": "脱水缸",
+      "type": "设备",
+      "desc": "滤油机中用于加热和脱水的容器"
+    },
+    {
+      "name": "热油循环过程",
+      "type": "工艺",
+      "desc": "变压器油加热后进行循环处理的过程"
+    },
+    {
+      "name": "变压器",
+      "type": "设备",
+      "desc": "电力系统中用于变换电压等级的电气设备"
+    },
+    {
+      "name": "电抗器",
+      "type": "设备",
+      "desc": "电力系统中用于限制短路电流的电气设备"
+    }
+  ],
+  "rules": [
+    {
+      "content": "滤油机加热脱水缸中的温度应控制在65℃±5℃范围内",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "加热脱水缸中的油温",
+      "condition": "热油循环过程中",
+      "constraint": "65℃±5℃",
+      "related_entities": [
+        "滤油机",
+        "脱水缸"
+      ]
+    },
+    {
+      "content": "热油循环时间不应少于48h",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "进行热油循环",
+      "condition": "热油循环过程中",
+      "constraint": "48h",
+      "related_entities": [
+        "滤油机",
+        "变压器",
+        "电抗器"
+      ]
+    },
+    {
+      "content": "热油循环油量不应少于3倍变压器（电抗器）总油量",
+      "type": "强制",
+      "subject": "滤油机",
+      "action": "进行热油循环",
+      "condition": "热油循环过程中",
+      "constraint": "3倍变压器（电抗器）总油量",
+      "related_entities": [
+        "滤油机",
+        "变压器",
+        "电抗器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "滤油机",
+      "target": "脱水缸",
+      "type": "使用"
+    },
+    {
+      "source": "滤油机",
+      "target": "变压器",
+      "type": "处理对象"
+    },
+    {
+      "source": "滤油机",
+      "target": "电抗器",
+      "type": "处理对象"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2714,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6dba993e282bcf0a",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2714_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

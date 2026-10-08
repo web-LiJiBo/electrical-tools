@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于变换电压等级"
+    },
+    {
+      "name": "空载",
+      "type": "运行状态",
+      "desc": "变压器不带负荷运行的状态"
+    },
+    {
+      "name": "额定电流负载",
+      "type": "运行状态",
+      "desc": "变压器按照铭牌规定的额定电流运行的状态"
+    },
+    {
+      "name": "声级水平",
+      "type": "物理量",
+      "desc": "指声波的能量密度随时间变化的平均值，以声压级表示"
+    },
+    {
+      "name": "声压级",
+      "type": "物理量",
+      "desc": "声波压力与参考声压之比的对数，单位为分贝（dB）"
+    },
+    {
+      "name": "声功率级",
+      "type": "物理量",
+      "desc": "表征声源总声能辐射能力的物理量，单位为分贝（dB）"
+    },
+    {
+      "name": "GB/T1094．10",
+      "type": "标准",
+      "desc": "中国国家标准，规定了变压器噪声测量方法"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在变压器空载及额定电流负载条件下，距变压器基准发射面2m处测得的声级水平(声压级)均应不超过80dB(A)",
+      "type": "强制",
+      "subject": "变压器",
+      "action": "运行时的噪声控制",
+      "condition": "变压器空载或额定电流负载运行",
+      "constraint": "声级水平≤80dB(A)",
+      "related_entities": [
+        "变压器",
+        "空载",
+        "额定电流负载",
+        "声级水平",
+        "声压级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "空载",
+      "type": "运行状态-运行方式"
+    },
+    {
+      "source": "变压器",
+      "target": "额定电流负载",
+      "type": "运行状态-运行方式"
+    },
+    {
+      "source": "变压器",
+      "target": "声级水平",
+      "type": "物理量-测量结果"
+    },
+    {
+      "source": "变压器",
+      "target": "声压级",
+      "type": "物理量-测量结果"
+    },
+    {
+      "source": "变压器",
+      "target": "声功率级",
+      "type": "物理量-计算结果"
+    },
+    {
+      "source": "声级水平",
+      "target": "声压级",
+      "type": "物理量-组成成分"
+    },
+    {
+      "source": "声级水平",
+      "target": "声功率级",
+      "type": "物理量-计算依据"
+    },
+    {
+      "source": "变压器",
+      "target": "GB/T1094．10",
+      "type": "设备-标准依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1102,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a28f3a56b4eb7b50",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1102_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

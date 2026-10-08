@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "配电室",
+      "type": "电力设施",
+      "desc": "城市配电网中的供电设施"
+    },
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "城市配电网中用于电压变换的设备"
+    },
+    {
+      "name": "电源",
+      "type": "电力系统",
+      "desc": "城市配电网中提供电能的来源"
+    }
+  ],
+  "rules": [
+    {
+      "content": "城市配电网中配电室宜按照两台变压器、双路电源设计",
+      "type": "强制",
+      "subject": "配电室",
+      "action": "设计",
+      "condition": "城市配电网中",
+      "constraint": "宜按照两台变压器、双路电源设计",
+      "related_entities": [
+        "配电室",
+        "变压器",
+        "电源"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "配电室",
+      "target": "变压器",
+      "type": "配置"
+    },
+    {
+      "source": "配电室",
+      "target": "电源",
+      "type": "供电"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1138,
+      "source_row_id": "1138",
+      "clause_index": 2,
+      "source_text": "城市配电网中配电室宜按照两台变压器、双路电源设计"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.031949+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

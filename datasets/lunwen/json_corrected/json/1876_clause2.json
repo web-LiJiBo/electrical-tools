@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "电缆户外终端",
+      "type": "电力设备",
+      "desc": "电力系统中用于连接电缆与架空线路的电气设备"
+    },
+    {
+      "name": "施工现场",
+      "type": "施工环境",
+      "desc": "进行电缆户外终端安装的工作场所"
+    },
+    {
+      "name": "温度",
+      "type": "物理参数",
+      "desc": "施工现场的温度条件"
+    },
+    {
+      "name": "相对湿度",
+      "type": "物理参数",
+      "desc": "施工现场的空气湿度条件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆户外终端安装时应按照供应商提供的标准控制施工现场的温度和相对湿度",
+      "type": "强制",
+      "subject": "电缆户外终端安装人员",
+      "action": "安装电缆户外终端",
+      "condition": "施工现场",
+      "constraint": "按照供应商提供的标准控制施工现场的温度和相对湿度",
+      "related_entities": [
+        "电缆户外终端",
+        "施工现场"
+      ]
+    },
+    {
+      "content": "供应商未规定时，温度宜控制在0℃～35℃",
+      "type": "强制",
+      "subject": "电缆户外终端安装人员",
+      "action": "安装电缆户外终端",
+      "condition": "施工现场且供应商未规定温度范围",
+      "constraint": "温度宜控制在0℃～35℃",
+      "related_entities": [
+        "电缆户外终端",
+        "施工现场",
+        "温度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆户外终端",
+      "target": "施工现场",
+      "type": "安装于"
+    },
+    {
+      "source": "施工现场",
+      "target": "温度",
+      "type": "影响"
+    },
+    {
+      "source": "施工现场",
+      "target": "相对湿度",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1876,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "dcb94881bcf68c02",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1876_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

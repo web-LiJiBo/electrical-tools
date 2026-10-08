@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "无人值班变电站",
+      "type": "电力设施",
+      "desc": "无需人员值守的变电站"
+    },
+    {
+      "name": "10天",
+      "type": "时间周期",
+      "desc": "10天一次的周期"
+    }
+  ],
+  "rules": [
+    {
+      "content": "无人值班变电站内一般每10天一次",
+      "type": "强制",
+      "subject": "无人值班变电站",
+      "action": "巡视检查",
+      "condition": "无人值班变电站运行期间",
+      "constraint": "10天",
+      "related_entities": [
+        "无人值班变电站"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "无人值班变电站",
+      "target": "10天",
+      "type": "周期性检查"
+    }
+  ]
+}

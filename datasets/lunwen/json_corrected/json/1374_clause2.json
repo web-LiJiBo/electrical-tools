@@ -1,0 +1,91 @@
+{
+  "entities": [
+    {
+      "name": "电缆管",
+      "type": "电力设施",
+      "desc": "电力系统中用于保护电缆的管道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设施",
+      "desc": "传输电能的导体"
+    },
+    {
+      "name": "电缆外径",
+      "type": "电力参数",
+      "desc": "电缆外部直径尺寸"
+    },
+    {
+      "name": "管内径",
+      "type": "电力参数",
+      "desc": "电缆管内部直径尺寸"
+    },
+    {
+      "name": "拉线球",
+      "type": "检测工具",
+      "desc": "用于检查管道内径是否通畅的工具"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆管内径按设计规定，且不小于1.5倍电缆外径用尺检查",
+      "type": "强制",
+      "subject": "电缆管安装人员",
+      "action": "安装电缆管",
+      "condition": "电缆管安装前",
+      "constraint": "电缆管内径≥1.5倍电缆外径",
+      "related_entities": [
+        "电缆管",
+        "电缆",
+        "电缆外径"
+      ]
+    },
+    {
+      "content": "管内畅通检查光滑，无积水、杂物用0.85倍管内径拉线球检查",
+      "type": "强制",
+      "subject": "电缆管安装人员",
+      "action": "检查电缆管内径",
+      "condition": "电缆管安装后",
+      "constraint": "管内径≥0.85倍管内径",
+      "related_entities": [
+        "电缆管",
+        "拉线球"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆管",
+      "target": "电缆",
+      "type": "保护"
+    },
+    {
+      "source": "电缆管",
+      "target": "电缆外径",
+      "type": "匹配"
+    },
+    {
+      "source": "电缆管",
+      "target": "管内径",
+      "type": "属性"
+    },
+    {
+      "source": "电缆管",
+      "target": "拉线球",
+      "type": "检测工具"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1374,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6169c5edce99bfe9",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1374_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

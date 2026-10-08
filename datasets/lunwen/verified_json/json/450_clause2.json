@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "型式试验：a)热稳定性试验；b)高温下电容器损耗角正切测量；c)端子与外壳间交流电压试验；d)端子与外壳间雷电冲击电压试验；e)短路放电试验；f)内部熔丝的隔离试验；g)电容随频率和温度的变化曲线测量；h)套管及导电杆受力试验",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 450,
+      "source_row_id": "450",
+      "clause_index": 2,
+      "source_text": "型式试验：a)热稳定性试验；b)高温下电容器损耗角正切测量；c)端子与外壳间交流电压试验；d)端子与外壳间雷电冲击电压试验；e)短路放电试验；f)内部熔丝的隔离试验；g)电容随频率和温度的变化曲线测量；h)套管及导电杆受力试验"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:54:59.238486+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

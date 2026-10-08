@@ -1,0 +1,155 @@
+{
+  "entities": [
+    {
+      "name": "传递过电压试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行过电压耐受能力测试"
+    },
+    {
+      "name": "机械强度试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行机械应力耐受能力测试"
+    },
+    {
+      "name": "低温和高温下的密封性能试验",
+      "type": "试验项目",
+      "desc": "对气体绝缘产品在极端温度下密封性能测试"
+    },
+    {
+      "name": "腐蚀试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行抗腐蚀能力测试"
+    },
+    {
+      "name": "着火危险试验",
+      "type": "试验项目",
+      "desc": "对电气设备进行火灾风险评估"
+    },
+    {
+      "name": "温度系数(Tc)测定",
+      "type": "试验项目",
+      "desc": "测量电气设备温度特性参数"
+    },
+    {
+      "name": "电容器单元的密封设计试验",
+      "type": "试验项目",
+      "desc": "对电容器单元密封设计进行验证"
+    }
+  ],
+  "rules": [
+    {
+      "content": "所有电气设备必须进行传递过电压试验",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行传递过电压试验",
+      "condition": "所有电气设备",
+      "constraint": "无",
+      "related_entities": [
+        "传递过电压试验"
+      ]
+    },
+    {
+      "content": "所有电气设备必须进行机械强度试验",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行机械强度试验",
+      "condition": "所有电气设备",
+      "constraint": "无",
+      "related_entities": [
+        "机械强度试验"
+      ]
+    },
+    {
+      "content": "气体绝缘产品必须进行低温和高温下的密封性能试验",
+      "type": "强制",
+      "subject": "气体绝缘产品",
+      "action": "进行低温和高温下的密封性能试验",
+      "condition": "气体绝缘产品",
+      "constraint": "无",
+      "related_entities": [
+        "低温和高温下的密封性能试验"
+      ]
+    },
+    {
+      "content": "所有电气设备必须进行腐蚀试验",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行腐蚀试验",
+      "condition": "所有电气设备",
+      "constraint": "无",
+      "related_entities": [
+        "腐蚀试验"
+      ]
+    },
+    {
+      "content": "所有电气设备必须进行着火危险试验",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行着火危险试验",
+      "condition": "所有电气设备",
+      "constraint": "无",
+      "related_entities": [
+        "着火危险试验"
+      ]
+    },
+    {
+      "content": "所有电气设备必须进行温度系数(Tc)测定",
+      "type": "强制",
+      "subject": "电气设备",
+      "action": "进行温度系数(Tc)测定",
+      "condition": "所有电气设备",
+      "constraint": "无",
+      "related_entities": [
+        "温度系数(Tc)测定"
+      ]
+    },
+    {
+      "content": "所有电容器单元必须进行密封设计试验",
+      "type": "强制",
+      "subject": "电容器单元",
+      "action": "进行密封设计试验",
+      "condition": "所有电容器单元",
+      "constraint": "无",
+      "related_entities": [
+        "电容器单元的密封设计试验"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "传递过电压试验",
+      "target": "电气设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "机械强度试验",
+      "target": "电气设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "低温和高温下的密封性能试验",
+      "target": "气体绝缘产品",
+      "type": "适用对象"
+    },
+    {
+      "source": "腐蚀试验",
+      "target": "电气设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "着火危险试验",
+      "target": "电气设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "温度系数(Tc)测定",
+      "target": "电气设备",
+      "type": "适用对象"
+    },
+    {
+      "source": "电容器单元的密封设计试验",
+      "target": "电容器单元",
+      "type": "适用对象"
+    }
+  ]
+}

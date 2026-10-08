@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "地震烈度",
+      "type": "自然灾害等级",
+      "desc": "地震强度的衡量标准"
+    },
+    {
+      "name": "地区",
+      "type": "地理区域",
+      "desc": "特定地理范围内的区域"
+    }
+  ],
+  "rules": [
+    {
+      "content": "正常运行条件g）地震烈度Ⅶ度及以下地区。",
+      "type": "强制",
+      "subject": "电力系统",
+      "action": "运行维护",
+      "condition": "在地震烈度Ⅶ度及以下地区的电力系统",
+      "constraint": "地震烈度Ⅶ度及以下",
+      "related_entities": [
+        "地震烈度",
+        "地区"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "地震烈度",
+      "target": "地区",
+      "type": "影响"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2628,
+      "source_row_id": "2637",
+      "clause_index": 2,
+      "source_text": "正常运行条件g）地震烈度Ⅶ度及以下地区。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.794315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

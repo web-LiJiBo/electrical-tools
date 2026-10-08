@@ -1,0 +1,81 @@
+{
+  "entities": [
+    {
+      "name": "绝缘线芯",
+      "type": "电力设备",
+      "desc": "电力系统中用于绝缘的导体线芯"
+    },
+    {
+      "name": "标称值",
+      "type": "技术参数",
+      "desc": "设计时确定的绝缘线芯的理论尺寸"
+    },
+    {
+      "name": "最小测量值",
+      "type": "技术参数",
+      "desc": "实际测量得到的绝缘线芯的最小尺寸"
+    },
+    {
+      "name": "tmin",
+      "type": "技术参数",
+      "desc": "最小测量值的具体数值"
+    },
+    {
+      "name": "tn",
+      "type": "技术参数",
+      "desc": "标称值的具体数值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "每一段绝缘线芯，最小测量值应不低于标称值的90%再减0.1mm",
+      "type": "强制",
+      "subject": "绝缘线芯",
+      "action": "测量",
+      "condition": "在制造或安装过程中",
+      "constraint": "tmin≥0.90tn‐0.1",
+      "related_entities": [
+        "绝缘线芯",
+        "标称值",
+        "最小测量值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘线芯",
+      "target": "标称值",
+      "type": "依据"
+    },
+    {
+      "source": "绝缘线芯",
+      "target": "最小测量值",
+      "type": "测量结果"
+    },
+    {
+      "source": "最小测量值",
+      "target": "标称值",
+      "type": "计算依据"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1837,
+      "source_row_id": "1837",
+      "clause_index": 1,
+      "source_text": "对绝缘的要求，每一段绝缘线芯，最小测量值应不低于标称值的90%再减0.1mm，即：tmin≥0.90tn‐0.1"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.822966+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

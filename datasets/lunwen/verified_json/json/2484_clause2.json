@@ -1,0 +1,49 @@
+{
+  "entities": [
+    {
+      "name": "GB/T1094.6",
+      "type": "标准",
+      "desc": "电力变压器第6部分：绝缘水平、绝缘试验和外绝缘空气间隙"
+    }
+  ],
+  "rules": [
+    {
+      "content": "需满足GB/T1094.6的要求。",
+      "type": "强制",
+      "subject": "电力变压器",
+      "action": "设计、制造、检验",
+      "condition": "电力变压器的绝缘水平、绝缘试验和外绝缘空气间隙的设计与制造",
+      "constraint": "GB/T1094.6",
+      "related_entities": [
+        "电力变压器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GB/T1094.6",
+      "target": "电力变压器",
+      "type": "约束"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2484,
+      "source_row_id": "2484",
+      "clause_index": 2,
+      "source_text": "e）需满足GB/T1094.6的要求。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.624315+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "1kV以上架空线",
+      "type": "电力线路",
+      "desc": "电压等级在1kV以上的架空输电线路"
+    },
+    {
+      "name": "杆塔基础",
+      "type": "电力设施",
+      "desc": "支撑架空线杆塔的地基部分"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆与1kV以上架空线杆塔基础最小净距4.0米",
+      "type": "强制",
+      "subject": "电力设计人员",
+      "action": "设计电力线路时",
+      "condition": "新建或改建1kV以上架空线与电缆线路",
+      "constraint": "电缆与1kV以上架空线杆塔基础最小净距4.0米",
+      "related_entities": [
+        "电缆",
+        "1kV以上架空线",
+        "杆塔基础"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "1kV以上架空线",
+      "type": "平行"
+    },
+    {
+      "source": "电缆",
+      "target": "杆塔基础",
+      "type": "垂直"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2321,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "51b61c80be897e5f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2321_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

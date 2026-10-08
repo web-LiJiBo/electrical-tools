@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "低压接户线",
+      "type": "电力线路",
+      "desc": "低压配电系统中的接户线"
+    },
+    {
+      "name": "中压接户线",
+      "type": "电力线路",
+      "desc": "中压配电系统中的接户线"
+    },
+    {
+      "name": "档距",
+      "type": "技术参数",
+      "desc": "两电杆之间的水平距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "低压接户线档距不宜超过25m",
+      "type": "强制",
+      "subject": "低压接户线",
+      "action": "设计安装",
+      "condition": "新建或改造低压配电系统",
+      "constraint": "低压接户线档距≤25m",
+      "related_entities": [
+        "低压接户线",
+        "档距"
+      ]
+    },
+    {
+      "content": "中压接户线档距不宜大于30m",
+      "type": "强制",
+      "subject": "中压接户线",
+      "action": "设计安装",
+      "condition": "新建或改造中压配电系统",
+      "constraint": "中压接户线档距≤30m",
+      "related_entities": [
+        "中压接户线",
+        "档距"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "低压接户线",
+      "target": "档距",
+      "type": "限制"
+    },
+    {
+      "source": "中压接户线",
+      "target": "档距",
+      "type": "限制"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1619,
+      "source_row_id": "1619",
+      "clause_index": 1,
+      "source_text": "低压接户线档距不宜超过25m，中压接户线档距不宜大于30m"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.577160+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

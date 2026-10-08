@@ -1,0 +1,101 @@
+{
+  "entities": [
+    {
+      "name": "硅橡胶绝缘材料",
+      "type": "材料",
+      "desc": "一种用于电力设备的绝缘材料"
+    },
+    {
+      "name": "抗撕裂强度",
+      "type": "性能指标",
+      "desc": "材料抵抗撕裂的能力"
+    },
+    {
+      "name": "拉伸强度",
+      "type": "性能指标",
+      "desc": "材料在拉伸过程中承受的最大应力"
+    },
+    {
+      "name": "扯断伸长率",
+      "type": "性能指标",
+      "desc": "材料断裂时的伸长率"
+    }
+  ],
+  "rules": [
+    {
+      "content": "硅橡胶绝缘材料抗撕裂强度（直角法）不小于10kN/m",
+      "type": "强制",
+      "subject": "硅橡胶绝缘材料",
+      "action": "使用",
+      "condition": "应用于电力设备",
+      "constraint": "抗撕裂强度≥10kN/m",
+      "related_entities": [
+        "硅橡胶绝缘材料",
+        "抗撕裂强度"
+      ]
+    },
+    {
+      "content": "硅橡胶绝缘材料拉伸强度不小于4MPa",
+      "type": "强制",
+      "subject": "硅橡胶绝缘材料",
+      "action": "使用",
+      "condition": "应用于电力设备",
+      "constraint": "拉伸强度≥4MPa",
+      "related_entities": [
+        "硅橡胶绝缘材料",
+        "拉伸强度"
+      ]
+    },
+    {
+      "content": "硅橡胶绝缘材料扯断伸长率不小于150%",
+      "type": "强制",
+      "subject": "硅橡胶绝缘材料",
+      "action": "使用",
+      "condition": "应用于电力设备",
+      "constraint": "扯断伸长率≥150%",
+      "related_entities": [
+        "硅橡胶绝缘材料",
+        "扯断伸长率"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "硅橡胶绝缘材料",
+      "target": "抗撕裂强度",
+      "type": "满足"
+    },
+    {
+      "source": "硅橡胶绝缘材料",
+      "target": "拉伸强度",
+      "type": "满足"
+    },
+    {
+      "source": "硅橡胶绝缘材料",
+      "target": "扯断伸长率",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2402,
+      "source_row_id": "2402",
+      "clause_index": 1,
+      "source_text": "硅橡胶绝缘材料抗撕裂强度（直角法）不小于10kN/m，拉伸强度不小于4MPa，扯断伸长率不小于150%。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.8056,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:01.511547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

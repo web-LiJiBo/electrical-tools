@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "主泵",
+      "type": "设备",
+      "desc": "电站中的主要水泵设备"
+    },
+    {
+      "name": "主泵电机",
+      "type": "设备部件",
+      "desc": "驱动主泵工作的电动机"
+    },
+    {
+      "name": "软启动装置",
+      "type": "设备部件",
+      "desc": "用于控制电动机启动过程的装置"
+    },
+    {
+      "name": "变频器",
+      "type": "设备部件",
+      "desc": "用于调节电动机转速的电子装置"
+    },
+    {
+      "name": "400V站用电",
+      "type": "电源",
+      "desc": "电站内400V等级的交流电系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主泵电机应具备软启动功能",
+      "type": "强制",
+      "subject": "主泵电机",
+      "action": "具备软启动功能",
+      "condition": "主泵启动时",
+      "constraint": "无特殊限制",
+      "related_entities": [
+        "主泵电机",
+        "软启动装置"
+      ]
+    },
+    {
+      "content": "完成启动后主泵电源切换到400V站用电供电",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "电源切换",
+      "condition": "主泵启动完成后",
+      "constraint": "无特殊限制",
+      "related_entities": [
+        "主泵",
+        "400V站用电"
+      ]
+    },
+    {
+      "content": "退出软启动装置，避免变频器或者软启动器在长期运行期间发生故障引起主泵停运",
+      "type": "强制",
+      "subject": "主泵",
+      "action": "退出软启动装置",
+      "condition": "主泵启动完成后",
+      "constraint": "无特殊限制",
+      "related_entities": [
+        "主泵",
+        "软启动装置",
+        "变频器"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主泵电机",
+      "target": "主泵",
+      "type": "驱动"
+    },
+    {
+      "source": "软启动装置",
+      "target": "主泵电机",
+      "type": "控制启动"
+    },
+    {
+      "source": "400V站用电",
+      "target": "主泵",
+      "type": "供电"
+    },
+    {
+      "source": "变频器",
+      "target": "主泵",
+      "type": "调节转速"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1624,
+      "source_row_id": "1624",
+      "clause_index": 1,
+      "source_text": "“主泵保护”中b）细则:主泵电机应具备软启动功能。完成启动后主泵电源切换到400V站用电供电，退出软启动装置，避免变频器或者软启动器在长期运行期间发生故障引起主泵停运"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.582157+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "entities": [
+    {
+      "name": "同一通道",
+      "type": "电力设施",
+      "desc": "电力系统中同一条电缆沟或隧道"
+    },
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "传输电力的导线装置"
+    },
+    {
+      "name": "电压等级",
+      "type": "电力参数",
+      "desc": "电力系统中不同等级的电能输送电压"
+    }
+  ],
+  "rules": [
+    {
+      "content": "同一通道不同电压等级的电缆，应按照电压等级的高低从下向上排列",
+      "type": "强制",
+      "subject": "电缆敷设设计人员",
+      "action": "进行电缆敷设设计",
+      "condition": "在电力系统中敷设多条不同电压等级的电缆于同一通道内",
+      "constraint": "电缆按电压等级高低从下向上排列",
+      "related_entities": [
+        "同一通道",
+        "电缆",
+        "电压等级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "同一通道",
+      "target": "电缆",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "电压等级",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 660,
+      "source_row_id": "660",
+      "clause_index": 2,
+      "source_text": "同一通道不同电压等级的电缆，应按照电压等级的高低从下向上排列"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.484485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

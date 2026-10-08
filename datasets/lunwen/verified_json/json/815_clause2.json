@@ -1,0 +1,99 @@
+{
+  "entities": [
+    {
+      "name": "IV级污秽地区",
+      "type": "地理环境",
+      "desc": "电力系统中污秽程度达到IV级的地区"
+    },
+    {
+      "name": "海拔高度大于2000m地区",
+      "type": "地理环境",
+      "desc": "电力系统中海拔高度超过2000米的地区"
+    },
+    {
+      "name": "330kV及以上电压等级",
+      "type": "电气参数",
+      "desc": "电力系统中330kV及以上的输电电压等级"
+    },
+    {
+      "name": "配电装置",
+      "type": "电力设备",
+      "desc": "电力系统中用于分配电能的设备总称"
+    },
+    {
+      "name": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "电力设备",
+      "desc": "一种高压开关设备，内部充有SF6气体"
+    },
+    {
+      "name": "HGIS配电装置",
+      "type": "电力设备",
+      "desc": "一种高压开关设备，结合了GIS和敞开式开关设备的特点"
+    }
+  ],
+  "rules": [
+    {
+      "content": "IV级污秽地区、海拔高度大于2000m地区的330kV及以上电压等级的配电装置，当技术经济合理时，可采用气体绝缘金属封闭开关设备(GIS)配电装置或HGIS配电装置",
+      "type": "强制",
+      "subject": "电力系统设计者",
+      "action": "选择配电装置",
+      "condition": "在IV级污秽地区、海拔高度大于2000m地区，且330kV及以上电压等级的配电装置设计",
+      "constraint": "技术经济合理",
+      "related_entities": [
+        "IV级污秽地区",
+        "海拔高度大于2000m地区",
+        "330kV及以上电压等级",
+        "配电装置",
+        "气体绝缘金属封闭开关设备(GIS)",
+        "HGIS配电装置"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "IV级污秽地区",
+      "target": "配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "海拔高度大于2000m地区",
+      "target": "配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "330kV及以上电压等级",
+      "target": "配电装置",
+      "type": "适用于"
+    },
+    {
+      "source": "配电装置",
+      "target": "气体绝缘金属封闭开关设备(GIS)",
+      "type": "可选配"
+    },
+    {
+      "source": "配电装置",
+      "target": "HGIS配电装置",
+      "type": "可选配"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 815,
+      "source_row_id": "815",
+      "clause_index": 2,
+      "source_text": "IV级污秽地区、海拔高度大于2000m地区的330kV及以上电压等级的配电装置，当技术经济合理时，可采用气体绝缘金属封闭开关设备(GIS)配电装置或HGIS配电装置"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.671083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

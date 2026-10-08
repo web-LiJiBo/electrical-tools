@@ -1,0 +1,169 @@
+{
+  "entities": [
+    {
+      "name": "三级电力隧道",
+      "type": "电力设施",
+      "desc": "电力电缆敷设的地下通道"
+    },
+    {
+      "name": "测温系统",
+      "type": "安全监控设备",
+      "desc": "用于实时监测隧道内温度变化的系统"
+    },
+    {
+      "name": "火灾报警",
+      "type": "安全监控设备",
+      "desc": "用于检测并报警隧道内火灾的系统"
+    },
+    {
+      "name": "双层防盗井盖",
+      "type": "安全防护设备",
+      "desc": "具有防盗功能的井盖，分为内外两层"
+    },
+    {
+      "name": "水位监测",
+      "type": "环境监测设备",
+      "desc": "用于实时监测隧道内积水情况的系统"
+    },
+    {
+      "name": "自动排水",
+      "type": "环境控制设备",
+      "desc": "用于自动排出隧道内积水的系统"
+    },
+    {
+      "name": "有毒有害气体监测",
+      "type": "环境监测设备",
+      "desc": "用于实时监测隧道内有毒有害气体浓度的系统"
+    },
+    {
+      "name": "通风系统",
+      "type": "环境控制设备",
+      "desc": "用于维持隧道内空气流通的系统"
+    }
+  ],
+  "rules": [
+    {
+      "content": "三级电力隧道可配置测温系统",
+      "type": "强制",
+      "subject": "三级电力隧道",
+      "action": "配置测温系统",
+      "condition": "三级电力隧道",
+      "constraint": "无",
+      "related_entities": [
+        "三级电力隧道",
+        "测温系统"
+      ]
+    },
+    {
+      "content": "三级电力隧道可配置火灾报警",
+      "type": "强制",
+      "subject": "三级电力隧道",
+      "action": "配置火灾报警",
+      "condition": "三级电力隧道",
+      "constraint": "无",
+      "related_entities": [
+        "三级电力隧道",
+        "火灾报警"
+      ]
+    },
+    {
+      "content": "三级电力隧道可配置双层防盗井盖",
+      "type": "强制",
+      "subject": "三级电力隧道",
+      "action": "配置双层防盗井盖",
+      "condition": "三级电力隧道",
+      "constraint": "无",
+      "related_entities": [
+        "三级电力隧道",
+        "双层防盗井盖"
+      ]
+    },
+    {
+      "content": "三级电力隧道易积水区域应安装水位监测及自动排水",
+      "type": "强制",
+      "subject": "三级电力隧道",
+      "action": "安装水位监测及自动排水",
+      "condition": "三级电力隧道易积水区域",
+      "constraint": "无",
+      "related_entities": [
+        "三级电力隧道",
+        "水位监测",
+        "自动排水"
+      ]
+    },
+    {
+      "content": "三级电力隧道应配置有毒有害气体监测",
+      "type": "强制",
+      "subject": "三级电力隧道",
+      "action": "配置有毒有害气体监测",
+      "condition": "三级电力隧道",
+      "constraint": "无",
+      "related_entities": [
+        "三级电力隧道",
+        "有毒有害气体监测"
+      ]
+    },
+    {
+      "content": "三级电力隧道应配置通风系统",
+      "type": "强制",
+      "subject": "三级电力隧道",
+      "action": "配置通风系统",
+      "condition": "三级电力隧道",
+      "constraint": "无",
+      "related_entities": [
+        "三级电力隧道",
+        "通风系统"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "三级电力隧道",
+      "target": "测温系统",
+      "type": "配置"
+    },
+    {
+      "source": "三级电力隧道",
+      "target": "火灾报警",
+      "type": "配置"
+    },
+    {
+      "source": "三级电力隧道",
+      "target": "双层防盗井盖",
+      "type": "配置"
+    },
+    {
+      "source": "三级电力隧道",
+      "target": "水位监测",
+      "type": "配置"
+    },
+    {
+      "source": "三级电力隧道",
+      "target": "自动排水",
+      "type": "配置"
+    },
+    {
+      "source": "三级电力隧道",
+      "target": "有毒有害气体监测",
+      "type": "配置"
+    },
+    {
+      "source": "三级电力隧道",
+      "target": "通风系统",
+      "type": "配置"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2912,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "a3d88c81cdd376e5",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2912_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

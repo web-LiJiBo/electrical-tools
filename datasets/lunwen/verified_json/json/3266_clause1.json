@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "全封闭组合电器",
+      "type": "电力设备",
+      "desc": "一种高压开关柜，内部元件全部封闭在金属壳体内"
+    },
+    {
+      "name": "外壳",
+      "type": "电力设备部件",
+      "desc": "全封闭组合电器的金属外壳"
+    },
+    {
+      "name": "法兰片",
+      "type": "电力设备部件",
+      "desc": "全封闭组合电器连接处的金属法兰片"
+    },
+    {
+      "name": "跨接线",
+      "type": "电力设备部件",
+      "desc": "用于连接法兰片间的导电连接线"
+    }
+  ],
+  "rules": [
+    {
+      "content": "全封闭组合电器的外壳应按制造厂规定接地",
+      "type": "强制",
+      "subject": "全封闭组合电器",
+      "action": "接地",
+      "condition": "全封闭组合电器安装完毕后",
+      "constraint": "接地电阻不大于4Ω",
+      "related_entities": [
+        "全封闭组合电器",
+        "外壳"
+      ]
+    },
+    {
+      "content": "法兰片间应采用跨接线连接，并应保证良好通路",
+      "type": "强制",
+      "subject": "全封闭组合电器",
+      "action": "跨接线连接",
+      "condition": "全封闭组合电器安装过程中",
+      "constraint": "跨接线材质为铜或铜合金，截面积不小于50mm²",
+      "related_entities": [
+        "全封闭组合电器",
+        "法兰片",
+        "跨接线"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "全封闭组合电器",
+      "target": "外壳",
+      "type": "包含"
+    },
+    {
+      "source": "全封闭组合电器",
+      "target": "法兰片",
+      "type": "包含"
+    },
+    {
+      "source": "全封闭组合电器",
+      "target": "跨接线",
+      "type": "包含"
+    },
+    {
+      "source": "外壳",
+      "target": "全封闭组合电器",
+      "type": "所属"
+    },
+    {
+      "source": "法兰片",
+      "target": "全封闭组合电器",
+      "type": "所属"
+    },
+    {
+      "source": "跨接线",
+      "target": "法兰片",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3257,
+      "source_row_id": "3266",
+      "clause_index": 1,
+      "source_text": "全封闭组合电器的外壳应按制造厂规定接地；法兰片间应采用跨接线连接，并应保证良好通路。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.574363+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

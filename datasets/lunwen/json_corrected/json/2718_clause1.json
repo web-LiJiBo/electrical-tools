@@ -1,0 +1,46 @@
+{
+  "entities": [
+    {
+      "name": "设计基本地震加速度",
+      "type": "技术参数",
+      "desc": "用于确定建筑物抗震设防烈度的地震加速度值"
+    },
+    {
+      "name": "抗震设防烈度",
+      "type": "技术参数",
+      "desc": "根据地震动参数和建筑抗震设防类别确定的地震烈度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "设计基本地震加速度（抗震设防烈度）0.2g。",
+      "type": "强制",
+      "subject": "设计人员",
+      "action": "进行抗震设计时",
+      "condition": "在抗震设防烈度为7度地区",
+      "constraint": "设计基本地震加速度为0.2g",
+      "related_entities": [
+        "设计基本地震加速度",
+        "抗震设防烈度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设计基本地震加速度",
+      "target": "抗震设防烈度",
+      "type": "依据"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2718,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "90f477b66345bc8f",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2718_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

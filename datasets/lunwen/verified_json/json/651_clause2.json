@@ -1,0 +1,70 @@
+{
+  "entities": [
+    {
+      "name": "线路",
+      "type": "电力设施",
+      "desc": "架空输电线路"
+    },
+    {
+      "name": "房屋",
+      "type": "建筑物",
+      "desc": "跨越或邻近的建筑物"
+    },
+    {
+      "name": "交叉限距",
+      "type": "技术参数",
+      "desc": "线路与房屋之间最小安全距离"
+    }
+  ],
+  "rules": [
+    {
+      "content": "线路对跨越或邻近的房屋要满足规定的交叉限距",
+      "type": "强制",
+      "subject": "线路",
+      "action": "保持与房屋的安全距离",
+      "condition": "线路跨越或邻近房屋",
+      "constraint": "交叉限距",
+      "related_entities": [
+        "线路",
+        "房屋"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "线路",
+      "target": "房屋",
+      "type": "跨越/邻近"
+    },
+    {
+      "source": "线路",
+      "target": "交叉限距",
+      "type": "满足要求"
+    },
+    {
+      "source": "房屋",
+      "target": "交叉限距",
+      "type": "满足要求"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 651,
+      "source_row_id": "651",
+      "clause_index": 2,
+      "source_text": "线路对跨越或邻近的房屋要满足规定的交叉限距，其具体数据应符合附表B的要求"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:54:59.474482+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

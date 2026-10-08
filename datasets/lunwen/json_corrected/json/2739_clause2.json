@@ -1,0 +1,157 @@
+{
+  "entities": [
+    {
+      "name": "GIS",
+      "type": "电力设备",
+      "desc": "气体绝缘金属封闭开关设备"
+    },
+    {
+      "name": "操动机构",
+      "type": "电力设备部件",
+      "desc": "GIS操作机构"
+    },
+    {
+      "name": "二次设备外壳",
+      "type": "电力设备部件",
+      "desc": "GIS二次设备外壳"
+    },
+    {
+      "name": "防护等级",
+      "type": "技术参数",
+      "desc": "电气设备防护等级"
+    },
+    {
+      "name": "IP44",
+      "type": "技术参数",
+      "desc": "防护等级IP44"
+    },
+    {
+      "name": "IP54",
+      "type": "技术参数",
+      "desc": "防护等级IP54"
+    },
+    {
+      "name": "撞击水平",
+      "type": "技术参数",
+      "desc": "电气设备撞击防护等级"
+    },
+    {
+      "name": "IK10",
+      "type": "技术参数",
+      "desc": "撞击防护等级IK10"
+    },
+    {
+      "name": "智能终端",
+      "type": "电力设备部件",
+      "desc": "智能变电站中用于采集和发送数据的装置"
+    },
+    {
+      "name": "合并单元",
+      "type": "电力设备部件",
+      "desc": "智能变电站中用于合并多个互感器信号的装置"
+    },
+    {
+      "name": "智能控制柜",
+      "type": "电力设备",
+      "desc": "智能变电站中用于安装智能终端、合并单元等二次设备的柜体"
+    }
+  ],
+  "rules": [
+    {
+      "content": "GIS的操动机构和二次设备外壳的防护等级应不低于IP44，撞击水平应不低于IK10（20J）。",
+      "type": "强制",
+      "subject": "GIS操动机构和二次设备外壳",
+      "action": "设计制造",
+      "condition": "应用于户外环境",
+      "constraint": "防护等级不低于IP44，撞击水平不低于IK10（20J）",
+      "related_entities": [
+        "GIS",
+        "操动机构",
+        "二次设备外壳",
+        "防护等级",
+        "IP44",
+        "IP54",
+        "撞击水平",
+        "IK10"
+      ]
+    },
+    {
+      "content": "带有智能终端、合并单元的智能控制柜防护等级不低于IP54。",
+      "type": "强制",
+      "subject": "智能控制柜",
+      "action": "设计制造",
+      "condition": "应用于智能变电站",
+      "constraint": "防护等级不低于IP54",
+      "related_entities": [
+        "智能控制柜",
+        "智能终端",
+        "合并单元",
+        "防护等级",
+        "IP54"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "GIS",
+      "target": "操动机构",
+      "type": "包含"
+    },
+    {
+      "source": "GIS",
+      "target": "二次设备外壳",
+      "type": "包含"
+    },
+    {
+      "source": "操动机构",
+      "target": "防护等级",
+      "type": "满足"
+    },
+    {
+      "source": "二次设备外壳",
+      "target": "防护等级",
+      "type": "满足"
+    },
+    {
+      "source": "操动机构",
+      "target": "撞击水平",
+      "type": "满足"
+    },
+    {
+      "source": "二次设备外壳",
+      "target": "撞击水平",
+      "type": "满足"
+    },
+    {
+      "source": "智能控制柜",
+      "target": "智能终端",
+      "type": "包含"
+    },
+    {
+      "source": "智能控制柜",
+      "target": "合并单元",
+      "type": "包含"
+    },
+    {
+      "source": "智能终端",
+      "target": "防护等级",
+      "type": "满足"
+    },
+    {
+      "source": "合并单元",
+      "target": "防护等级",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2739,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "b3ea0070a57d20b6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2739_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

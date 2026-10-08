@@ -1,0 +1,82 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "工厂监造",
+      "type": "质量控制",
+      "desc": "在生产过程中对产品进行监督和检查的过程"
+    },
+    {
+      "name": "验收",
+      "type": "质量控制",
+      "desc": "对产品完成后的质量进行检验和确认的过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器(电抗器)在制造期间应进行工厂监造及验收",
+      "type": "强制",
+      "subject": "变压器(电抗器)生产厂家",
+      "action": "进行工厂监造及验收",
+      "condition": "适用于110（66）kV～500kV变压器",
+      "constraint": "在制造期间",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "工厂监造",
+        "验收"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "工厂监造",
+      "type": "接受"
+    },
+    {
+      "source": "变压器",
+      "target": "验收",
+      "type": "接受"
+    },
+    {
+      "source": "电抗器",
+      "target": "工厂监造",
+      "type": "接受"
+    },
+    {
+      "source": "电抗器",
+      "target": "验收",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 798,
+      "source_row_id": "798",
+      "clause_index": 1,
+      "source_text": "变压器(电抗器)在制造期间应进行工厂监造及验收（适用于110（66）kV～500kV变压器）"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.652083+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

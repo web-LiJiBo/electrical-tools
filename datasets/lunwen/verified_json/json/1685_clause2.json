@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "name": "交接试验",
+      "type": "试验",
+      "desc": "电力设备在安装或检修后进行的首次电气性能检测"
+    },
+    {
+      "name": "导电回路",
+      "type": "电气部件",
+      "desc": "电力设备中用于传导电流的部分"
+    },
+    {
+      "name": "电阻值",
+      "type": "物理量",
+      "desc": "导电回路的电阻大小"
+    },
+    {
+      "name": "直流压降法",
+      "type": "试验方法",
+      "desc": "通过测量直流电压降来计算电阻的方法"
+    },
+    {
+      "name": "产品技术条件",
+      "type": "技术文档",
+      "desc": "规定电力设备技术参数和性能指标的技术文件"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交接试验中应进行每相导电回路的电阻值测量，宜采用电流不小于100A的直流压降法。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行导电回路电阻值测量",
+      "condition": "交接试验",
+      "constraint": "电流不小于100A",
+      "related_entities": [
+        "交接试验",
+        "导电回路",
+        "直流压降法"
+      ]
+    },
+    {
+      "content": "测试结果应符合产品技术条件的规定。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "满足技术条件",
+      "condition": "交接试验",
+      "constraint": "电阻值符合产品技术条件",
+      "related_entities": [
+        "交接试验",
+        "导电回路",
+        "产品技术条件"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交接试验",
+      "target": "导电回路",
+      "type": "涉及"
+    },
+    {
+      "source": "交接试验",
+      "target": "直流压降法",
+      "type": "使用"
+    },
+    {
+      "source": "交接试验",
+      "target": "产品技术条件",
+      "type": "依据"
+    },
+    {
+      "source": "导电回路",
+      "target": "电阻值",
+      "type": "属性"
+    },
+    {
+      "source": "直流压降法",
+      "target": "电阻值",
+      "type": "测量对象"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1685,
+      "source_row_id": "1685",
+      "clause_index": 2,
+      "source_text": "交接试验中应进行每相导电回路的电阻值测量，宜采用电流不小于100A的直流压降法。测试结果应符合产品技术条件的规定"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:00.653159+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

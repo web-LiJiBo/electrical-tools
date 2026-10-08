@@ -1,0 +1,45 @@
+{
+  "entities": [
+    {
+      "name": "装置",
+      "type": "电力设备",
+      "desc": "电力系统中用于实现特定功能的设备"
+    },
+    {
+      "name": "门",
+      "type": "装置部件",
+      "desc": "装置上可开启的部分"
+    },
+    {
+      "name": "打开角度",
+      "type": "装置参数",
+      "desc": "装置门开启的角度大小"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装置的门打开角度不应小于135°",
+      "type": "强制",
+      "subject": "装置",
+      "action": "设置装置门打开角度",
+      "condition": "装置安装完毕后",
+      "constraint": "打开角度≥135°",
+      "related_entities": [
+        "装置",
+        "门"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "装置",
+      "target": "门",
+      "type": "包含"
+    },
+    {
+      "source": "门",
+      "target": "打开角度",
+      "type": "属性"
+    }
+  ]
+}

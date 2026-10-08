@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "过电压",
+      "type": "电气现象",
+      "desc": "电力系统中出现的电压异常升高现象"
+    },
+    {
+      "name": "雷电",
+      "type": "自然现象",
+      "desc": "大气中的放电现象"
+    },
+    {
+      "name": "开关操作过电压",
+      "type": "电气现象",
+      "desc": "断路器等开关设备操作过程中产生的过电压现象"
+    },
+    {
+      "name": "母线故障",
+      "type": "电气故障",
+      "desc": "电力系统中母线部分发生的故障现象"
+    },
+    {
+      "name": "晶闸管阀故障",
+      "type": "电气故障",
+      "desc": "电力系统中晶闸管阀元件发生的故障现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "雷电和开关操作过电压需要研究",
+      "type": "强制",
+      "subject": "电力系统设计与运行人员",
+      "action": "进行过电压研究",
+      "condition": "电力系统设计与运行阶段",
+      "constraint": "雷电和开关操作过电压现象",
+      "related_entities": [
+        "过电压",
+        "雷电",
+        "开关操作过电压"
+      ]
+    },
+    {
+      "content": "母线故障需要研究",
+      "type": "强制",
+      "subject": "电力系统设计与运行人员",
+      "action": "进行过电压研究",
+      "condition": "电力系统设计与运行阶段",
+      "constraint": "母线故障现象",
+      "related_entities": [
+        "过电压",
+        "母线故障"
+      ]
+    },
+    {
+      "content": "晶闸管阀故障需要研究",
+      "type": "强制",
+      "subject": "电力系统设计与运行人员",
+      "action": "进行过电压研究",
+      "condition": "电力系统设计与运行阶段",
+      "constraint": "晶闸管阀故障现象",
+      "related_entities": [
+        "过电压",
+        "晶闸管阀故障"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "过电压",
+      "target": "雷电",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "开关操作过电压",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "母线故障",
+      "type": "包含"
+    },
+    {
+      "source": "过电压",
+      "target": "晶闸管阀故障",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2489,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "d90ed4c8afd32f5c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2489_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

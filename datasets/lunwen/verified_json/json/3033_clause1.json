@@ -1,0 +1,76 @@
+{
+  "entities": [
+    {
+      "name": "直流电阻",
+      "type": "电气参数",
+      "desc": "直流电路中的电阻值"
+    },
+    {
+      "name": "直流损耗",
+      "type": "电气参数",
+      "desc": "直流电路中因电阻导致的能量损失"
+    },
+    {
+      "name": "例行试验项目",
+      "type": "试验项目",
+      "desc": "设备定期进行的常规检测项目"
+    },
+    {
+      "name": "直流电阻测量值",
+      "type": "测量结果",
+      "desc": "直流电阻的实际测量数值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "直流电阻与直流损耗的例行试验项目测试中，未对直流电阻的测量值标准进行数值的量化规定。",
+      "type": "强制",
+      "subject": "电力设备制造商及运维人员",
+      "action": "制定直流电阻测量值标准",
+      "condition": "直流电阻与直流损耗的例行试验项目测试",
+      "constraint": "无具体数值量化规定",
+      "related_entities": [
+        "直流电阻",
+        "直流损耗",
+        "例行试验项目"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "直流电阻",
+      "target": "直流损耗",
+      "type": "引起"
+    },
+    {
+      "source": "直流电阻",
+      "target": "例行试验项目",
+      "type": "包含于"
+    },
+    {
+      "source": "直流电阻测量值",
+      "target": "直流电阻",
+      "type": "测量结果对应"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3024,
+      "source_row_id": "3033",
+      "clause_index": 1,
+      "source_text": "直流电阻与直流损耗的例行试验项目测试中，未对直流电阻的测量值标准进行数值的量化规定。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9732,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.288316+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

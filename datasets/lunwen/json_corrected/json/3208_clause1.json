@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "有载分接开关",
+      "type": "电力设备部件",
+      "desc": "变压器中用于调节电压的装置"
+    },
+    {
+      "name": "制造厂",
+      "type": "企业",
+      "desc": "生产变压器的企业"
+    },
+    {
+      "name": "DL/T574",
+      "type": "行业标准",
+      "desc": "《电力变压器有载分接开关》行业标准"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器有载分接开关的维护，应按照制造厂的规定进行，无制造厂规定者可参照DL/T574的相关规定。",
+      "type": "强制",
+      "subject": "变压器有载分接开关维护人员",
+      "action": "维护",
+      "condition": "变压器有载分接开关维护",
+      "constraint": "应按照制造厂的规定进行，无制造厂规定者可参照DL/T574的相关规定",
+      "related_entities": [
+        "变压器",
+        "有载分接开关",
+        "制造厂",
+        "DL/T574"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "有载分接开关",
+      "type": "包含"
+    },
+    {
+      "source": "制造厂",
+      "target": "变压器",
+      "type": "生产"
+    },
+    {
+      "source": "制造厂",
+      "target": "有载分接开关",
+      "type": "生产"
+    },
+    {
+      "source": "DL/T574",
+      "target": "有载分接开关",
+      "type": "规定"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3208,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "3aabe9bc75aeadb6",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\3208_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

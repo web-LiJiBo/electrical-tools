@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "程序A",
+      "type": "操作规程",
+      "desc": "一种预加电压的规程"
+    },
+    {
+      "name": "程序B",
+      "type": "操作规程",
+      "desc": "另一种预加电压的规程"
+    },
+    {
+      "name": "表7",
+      "type": "技术标准",
+      "desc": "规定了局部放电测量电压的技术文件"
+    },
+    {
+      "name": "局部放电测量电压",
+      "type": "技术参数",
+      "desc": "进行局部放电测量时所施加的电压值"
+    },
+    {
+      "name": "局部放电水平",
+      "type": "技术参数",
+      "desc": "局部放电测量结果的量化指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在按程序A或程序B预加电压之后，当达到表7规定的局部放电测量电压时，在30s内测量局部放电水平",
+      "type": "强制",
+      "subject": "电力设备维护人员",
+      "action": "进行局部放电测量",
+      "condition": "电力设备维护过程中",
+      "constraint": "按照程序A或程序B预加电压后，达到表7规定的局部放电测量电压时",
+      "related_entities": [
+        "程序A",
+        "程序B",
+        "表7",
+        "局部放电测量电压",
+        "局部放电水平"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "程序A",
+      "target": "局部放电测量电压",
+      "type": "规定"
+    },
+    {
+      "source": "程序B",
+      "target": "局部放电测量电压",
+      "type": "规定"
+    },
+    {
+      "source": "表7",
+      "target": "局部放电测量电压",
+      "type": "规定"
+    },
+    {
+      "source": "局部放电测量电压",
+      "target": "局部放电水平",
+      "type": "测量结果"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1038,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "f2e9a822d02e1527",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1038_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

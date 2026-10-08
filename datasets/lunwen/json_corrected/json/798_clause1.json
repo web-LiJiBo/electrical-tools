@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "变压器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于改变交流电压等级"
+    },
+    {
+      "name": "电抗器",
+      "type": "电力设备",
+      "desc": "一种静止的电气设备，用于限制短路电流和吸收无功功率"
+    },
+    {
+      "name": "工厂监造",
+      "type": "质量控制",
+      "desc": "在生产过程中对产品进行监督和检查的过程"
+    },
+    {
+      "name": "验收",
+      "type": "质量控制",
+      "desc": "对产品完成后的质量进行检验和确认的过程"
+    }
+  ],
+  "rules": [
+    {
+      "content": "变压器(电抗器)在制造期间应进行工厂监造及验收",
+      "type": "强制",
+      "subject": "变压器(电抗器)生产厂家",
+      "action": "进行工厂监造及验收",
+      "condition": "适用于110（66）kV～500kV变压器",
+      "constraint": "在制造期间",
+      "related_entities": [
+        "变压器",
+        "电抗器",
+        "工厂监造",
+        "验收"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "变压器",
+      "target": "工厂监造",
+      "type": "接受"
+    },
+    {
+      "source": "变压器",
+      "target": "验收",
+      "type": "接受"
+    },
+    {
+      "source": "电抗器",
+      "target": "工厂监造",
+      "type": "接受"
+    },
+    {
+      "source": "电抗器",
+      "target": "验收",
+      "type": "接受"
+    }
+  ],
+  "metadata": {
+    "pair_id": 798,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "795b44eb59df9b89",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\798_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "entities": [],
+  "rules": [
+    {
+      "content": "套接的短套管或带螺纹的管接头的长度，不应小于电缆管外径的2.2倍",
+      "type": "待人工复核",
+      "subject": "",
+      "action": "",
+      "condition": "",
+      "constraint": "",
+      "related_entities": []
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1357,
+      "source_row_id": "1357",
+      "clause_index": 1,
+      "source_text": "套接的短套管或带螺纹的管接头的长度，不应小于电缆管外径的2.2倍"
+    },
+    "audit": {
+      "status": "created_missing_decomposition",
+      "quality_score": 1.0,
+      "corrected": true,
+      "manual_review_required": true,
+      "reasons": [
+        "missing_in_all_original_json_splits"
+      ],
+      "selected_source": "",
+      "audited_at": "2026-08-28T08:55:00.282550+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

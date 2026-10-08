@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "户外",
+      "type": "环境",
+      "desc": "户外设备安装环境"
+    },
+    {
+      "name": "户内",
+      "type": "环境",
+      "desc": "户内设备安装环境"
+    },
+    {
+      "name": "C级",
+      "type": "污秽等级",
+      "desc": "户内设备的污秽等级分类"
+    },
+    {
+      "name": "E级",
+      "type": "污秽等级",
+      "desc": "户外设备的污秽等级分类"
+    }
+  ],
+  "rules": [
+    {
+      "content": "污秽等级：户内≥C级，户外≥E级",
+      "type": "强制",
+      "subject": "设备",
+      "action": "安装",
+      "condition": "设备安装在户内或户外环境中",
+      "constraint": "户内≥C级，户外≥E级",
+      "related_entities": [
+        "户外",
+        "户内",
+        "C级",
+        "E级"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "户外",
+      "target": "设备",
+      "type": "安装环境"
+    },
+    {
+      "source": "户内",
+      "target": "设备",
+      "type": "安装环境"
+    },
+    {
+      "source": "C级",
+      "target": "户内",
+      "type": "污秽等级分类"
+    },
+    {
+      "source": "E级",
+      "target": "户外",
+      "type": "污秽等级分类"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1526,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "4d90228b86ad2251",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\1526_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

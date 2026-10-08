@@ -1,0 +1,106 @@
+{
+  "entities": [
+    {
+      "name": "交流耐压试验",
+      "type": "试验项目",
+      "desc": "在电力设备中进行的交流耐压试验"
+    },
+    {
+      "name": "段间绝缘试验",
+      "type": "试验项目",
+      "desc": "电力设备中各段间的绝缘性能测试"
+    },
+    {
+      "name": "设备绝缘介质强度",
+      "type": "技术参数",
+      "desc": "电力设备绝缘材料承受的最大电场强度"
+    },
+    {
+      "name": "一次绕组",
+      "type": "电力设备部件",
+      "desc": "电力变压器的一次侧绕组"
+    },
+    {
+      "name": "二次绕组",
+      "type": "电力设备部件",
+      "desc": "电力变压器的二次侧绕组"
+    },
+    {
+      "name": "末屏",
+      "type": "电力设备部件",
+      "desc": "电力变压器高压绕组的接地引出端子"
+    }
+  ],
+  "rules": [
+    {
+      "content": "没有规定段间绝缘试验项目",
+      "type": "强制",
+      "subject": "电力设备制造商",
+      "action": "制定段间绝缘试验项目",
+      "condition": "电力设备制造过程",
+      "constraint": "必须包含段间绝缘试验项目",
+      "related_entities": [
+        "段间绝缘试验",
+        "电力设备"
+      ]
+    },
+    {
+      "content": "需要确认设备绝缘介质强度时进行本项目",
+      "type": "强制",
+      "subject": "电力设备制造商",
+      "action": "进行交流耐压试验",
+      "condition": "电力设备制造过程",
+      "constraint": "当需要确认设备绝缘介质强度时",
+      "related_entities": [
+        "交流耐压试验",
+        "设备绝缘介质强度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "交流耐压试验",
+      "target": "设备绝缘介质强度",
+      "type": "确认"
+    },
+    {
+      "source": "一次绕组",
+      "target": "交流耐压试验",
+      "type": "对象"
+    },
+    {
+      "source": "二次绕组",
+      "target": "交流耐压试验",
+      "type": "对象"
+    },
+    {
+      "source": "末屏",
+      "target": "交流耐压试验",
+      "type": "对象"
+    },
+    {
+      "source": "一次绕组",
+      "target": "二次绕组",
+      "type": "连接"
+    },
+    {
+      "source": "一次绕组",
+      "target": "末屏",
+      "type": "连接"
+    }
+  ],
+  "metadata": {
+    "pair_id": 26,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2e095b3cca81ee4c",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\26_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

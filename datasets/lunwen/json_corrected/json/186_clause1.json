@@ -1,0 +1,116 @@
+{
+  "entities": [
+    {
+      "name": "拉线",
+      "type": "电力设施",
+      "desc": "用于固定电杆的钢绞线或镀锌铁线"
+    },
+    {
+      "name": "拉线弯曲部分",
+      "type": "电力设施",
+      "desc": "拉线的弯曲部位"
+    },
+    {
+      "name": "拉线断头处",
+      "type": "电力设施",
+      "desc": "拉线与主线连接处的末端"
+    },
+    {
+      "name": "拉线主线",
+      "type": "电力设施",
+      "desc": "拉线的主体部分"
+    },
+    {
+      "name": "线夹",
+      "type": "电力设施",
+      "desc": "固定拉线断头处的金具"
+    }
+  ],
+  "rules": [
+    {
+      "content": "拉线弯曲部分不应有明显松股",
+      "type": "强制",
+      "subject": "拉线弯曲部分",
+      "action": "不应有明显松股",
+      "condition": "拉线安装完成后",
+      "constraint": "无松股现象",
+      "related_entities": [
+        "拉线"
+      ]
+    },
+    {
+      "content": "拉线断头处与拉线主线应固定可靠",
+      "type": "强制",
+      "subject": "拉线断头处",
+      "action": "与拉线主线固定可靠",
+      "condition": "拉线安装过程中",
+      "constraint": "固定可靠",
+      "related_entities": [
+        "拉线断头处",
+        "拉线主线"
+      ]
+    },
+    {
+      "content": "线夹处露出的尾线长度为300～500mm",
+      "type": "强制",
+      "subject": "线夹",
+      "action": "露出的尾线长度为300～500mm",
+      "condition": "拉线安装过程中",
+      "constraint": "300～500mm",
+      "related_entities": [
+        "线夹",
+        "拉线断头处"
+      ]
+    },
+    {
+      "content": "尾线回头后与本线应扎牢",
+      "type": "强制",
+      "subject": "线夹",
+      "action": "尾线回头后与本线扎牢",
+      "condition": "拉线安装过程中",
+      "constraint": "扎牢",
+      "related_entities": [
+        "线夹",
+        "拉线断头处"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "拉线弯曲部分",
+      "target": "拉线",
+      "type": "组成部分"
+    },
+    {
+      "source": "拉线断头处",
+      "target": "拉线",
+      "type": "组成部分"
+    },
+    {
+      "source": "拉线断头处",
+      "target": "拉线主线",
+      "type": "连接"
+    },
+    {
+      "source": "线夹",
+      "target": "拉线断头处",
+      "type": "固定"
+    },
+    {
+      "source": "线夹",
+      "target": "拉线",
+      "type": "固定"
+    }
+  ],
+  "metadata": {
+    "pair_id": 186,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "fa5a7580022e3d8e",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\186_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

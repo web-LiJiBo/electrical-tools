@@ -1,0 +1,89 @@
+{
+  "entities": [
+    {
+      "name": "内冷却水",
+      "type": "电力设备",
+      "desc": "发电机组内部冷却用水"
+    },
+    {
+      "name": "补充水",
+      "type": "电力设备",
+      "desc": "用于补充内冷却水的水源"
+    },
+    {
+      "name": "电导率",
+      "type": "物理参数",
+      "desc": "水中离子迁移能力的度量"
+    },
+    {
+      "name": "PH值",
+      "type": "物理参数",
+      "desc": "溶液酸碱性的度量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "内冷却水的补充水，电导率≤5.0μS/cm",
+      "type": "强制",
+      "subject": "内冷却水",
+      "action": "补充水",
+      "condition": "内冷却水系统运行中",
+      "constraint": "电导率≤5.0μS/cm",
+      "related_entities": [
+        "内冷却水",
+        "补充水"
+      ]
+    },
+    {
+      "content": "内冷却水的补充水，PH值介于6.5～8.5之间（在水温25℃时）",
+      "type": "强制",
+      "subject": "内冷却水",
+      "action": "补充水",
+      "condition": "内冷却水系统运行中",
+      "constraint": "PH值介于6.5～8.5之间（在水温25℃时）",
+      "related_entities": [
+        "内冷却水",
+        "补充水"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "内冷却水",
+      "target": "补充水",
+      "type": "补充"
+    },
+    {
+      "source": "电导率",
+      "target": "内冷却水",
+      "type": "检测指标"
+    },
+    {
+      "source": "PH值",
+      "target": "内冷却水",
+      "type": "检测指标"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2850,
+      "source_row_id": "2859",
+      "clause_index": 2,
+      "source_text": "内冷却水的补充水，电导率≤5.0μS/cm，PH值介于6.5～8.5之间（在水温25℃时）。"
+    },
+    "audit": {
+      "status": "needs_manual_review",
+      "quality_score": 0.88,
+      "corrected": false,
+      "manual_review_required": true,
+      "reasons": [
+        "rule_content_requires_manual_review"
+      ],
+      "selected_source": "output_jsons_new/test",
+      "audited_at": "2026-08-28T08:55:02.067317+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

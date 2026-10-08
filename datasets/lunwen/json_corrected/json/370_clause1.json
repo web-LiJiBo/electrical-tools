@@ -1,0 +1,171 @@
+{
+  "entities": [
+    {
+      "name": "隔室",
+      "type": "电力设备",
+      "desc": "GIS中的气室"
+    },
+    {
+      "name": "间隔元件设备",
+      "type": "电力设备",
+      "desc": "GIS中需要检修的元件设备"
+    },
+    {
+      "name": "主母线",
+      "type": "电力设备",
+      "desc": "GIS中的主母线"
+    },
+    {
+      "name": "断路器",
+      "type": "电力设备",
+      "desc": "GIS中的断路器"
+    },
+    {
+      "name": "电压互感器",
+      "type": "电力设备",
+      "desc": "GIS中的电压互感器"
+    },
+    {
+      "name": "避雷器",
+      "type": "电力设备",
+      "desc": "GIS中的避雷器"
+    },
+    {
+      "name": "气体回收装置",
+      "type": "电力设备",
+      "desc": "GIS中的气体回收装置"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当间隔元件设备检修时，不应影响未检修间隔的正常运行",
+      "type": "强制",
+      "subject": "隔室",
+      "action": "隔室划分",
+      "condition": "间隔元件设备检修",
+      "constraint": "检修间隔与未检修间隔之间应有效隔离",
+      "related_entities": [
+        "隔室",
+        "间隔元件设备"
+      ]
+    },
+    {
+      "content": "应将内部故障限制在故障隔室内",
+      "type": "强制",
+      "subject": "隔室",
+      "action": "隔室划分",
+      "condition": "发生内部故障",
+      "constraint": "故障隔室内的设备应能承受故障电流并限制故障影响范围",
+      "related_entities": [
+        "隔室",
+        "内部故障"
+      ]
+    },
+    {
+      "content": "断路器宜设置单独隔室",
+      "type": "强制",
+      "subject": "隔室",
+      "action": "隔室划分",
+      "condition": "断路器检修或故障",
+      "constraint": "断路器隔室与其他隔室之间应有效隔离",
+      "related_entities": [
+        "隔室",
+        "断路器"
+      ]
+    },
+    {
+      "content": "主母线隔室划分应考虑气体回收装置的容量和分期安装的方便",
+      "type": "强制",
+      "subject": "隔室",
+      "action": "隔室划分",
+      "condition": "主母线安装",
+      "constraint": "主母线隔室应满足气体回收装置的容量需求，并便于分期安装",
+      "related_entities": [
+        "隔室",
+        "主母线",
+        "气体回收装置"
+      ]
+    },
+    {
+      "content": "连接在母线上的设备，如电压互感器、避雷器等应分隔",
+      "type": "强制",
+      "subject": "隔室",
+      "action": "隔室划分",
+      "condition": "连接在母线上的设备检修或故障",
+      "constraint": "连接在母线上的设备与主母线之间应有效隔离",
+      "related_entities": [
+        "隔室",
+        "主母线",
+        "电压互感器",
+        "避雷器"
+      ]
+    },
+    {
+      "content": "与GIS外连的设备应分隔",
+      "type": "强制",
+      "subject": "隔室",
+      "action": "隔室划分",
+      "condition": "与GIS外连的设备检修或故障",
+      "constraint": "与GIS外连的设备与GIS隔室之间应有效隔离",
+      "related_entities": [
+        "隔室",
+        "与GIS外连的设备"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "隔室",
+      "target": "间隔元件设备",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "内部故障",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "断路器",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "主母线",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "电压互感器",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "避雷器",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "气体回收装置",
+      "type": "隔离"
+    },
+    {
+      "source": "隔室",
+      "target": "与GIS外连的设备",
+      "type": "隔离"
+    }
+  ],
+  "metadata": {
+    "pair_id": 370,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bf60185b7190c784",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\370_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

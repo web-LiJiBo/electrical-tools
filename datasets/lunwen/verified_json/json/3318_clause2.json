@@ -1,0 +1,77 @@
+{
+  "entities": [
+    {
+      "name": "平波电抗器",
+      "type": "电力设备",
+      "desc": "用于电力系统中平滑直流电流的电抗器"
+    },
+    {
+      "name": "总损耗值",
+      "type": "技术参数",
+      "desc": "平波电抗器在运行过程中产生的总能量损失"
+    },
+    {
+      "name": "允许偏差",
+      "type": "技术指标",
+      "desc": "平波电抗器总损耗值允许的最大偏差范围"
+    },
+    {
+      "name": "具体工程规范",
+      "type": "技术文件",
+      "desc": "针对特定电力工程项目的技术规范文档"
+    }
+  ],
+  "rules": [
+    {
+      "content": "按本规范6.17计算的平波电抗器总损耗值，不得超过具体工程规范规定的允许偏差。",
+      "type": "强制",
+      "subject": "平波电抗器",
+      "action": "损耗值计算",
+      "condition": "平波电抗器在运行过程中",
+      "constraint": "总损耗值≤允许偏差",
+      "related_entities": [
+        "平波电抗器",
+        "总损耗值",
+        "允许偏差",
+        "具体工程规范"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "平波电抗器",
+      "target": "总损耗值",
+      "type": "产生"
+    },
+    {
+      "source": "具体工程规范",
+      "target": "允许偏差",
+      "type": "规定"
+    },
+    {
+      "source": "平波电抗器",
+      "target": "具体工程规范",
+      "type": "遵循"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3309,
+      "source_row_id": "3318",
+      "clause_index": 2,
+      "source_text": "按本规范6.17计算的平波电抗器总损耗值，不得超过具体工程规范规定的允许偏差。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.640363+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

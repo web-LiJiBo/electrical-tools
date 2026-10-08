@@ -1,0 +1,79 @@
+{
+  "entities": [
+    {
+      "name": "换流阀",
+      "type": "电力设备",
+      "desc": "高压直流输电系统中的关键设备"
+    },
+    {
+      "name": "内冷系统",
+      "type": "电力系统",
+      "desc": "用于冷却换流阀的水冷系统"
+    },
+    {
+      "name": "主泵",
+      "type": "电力设备",
+      "desc": "内冷系统中提供冷却水的主要动力设备"
+    },
+    {
+      "name": "流量",
+      "type": "物理量",
+      "desc": "单位时间内通过管道的液体体积"
+    },
+    {
+      "name": "最小流量",
+      "type": "物理量",
+      "desc": "换流阀运行所需的最低冷却水量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "换流阀内冷系统主泵切换延时引起的流量变化应满足换流阀对水冷系统最小流量的要求",
+      "type": "强制",
+      "subject": "换流阀内冷系统主泵切换过程",
+      "action": "切换主泵",
+      "condition": "主泵切换过程中",
+      "constraint": "流量变化应满足换流阀对水冷系统最小流量的要求",
+      "related_entities": [
+        "换流阀",
+        "内冷系统",
+        "主泵",
+        "流量",
+        "最小流量"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "换流阀",
+      "target": "内冷系统",
+      "type": "使用"
+    },
+    {
+      "source": "内冷系统",
+      "target": "主泵",
+      "type": "驱动"
+    },
+    {
+      "source": "主泵",
+      "target": "流量",
+      "type": "影响"
+    },
+    {
+      "source": "流量",
+      "target": "最小流量",
+      "type": "满足"
+    }
+  ],
+  "metadata": {
+    "pair_id": 1645,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "27d4b1e48769a9e2",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\1645_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

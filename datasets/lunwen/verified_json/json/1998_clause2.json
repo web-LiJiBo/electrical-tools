@@ -1,0 +1,110 @@
+{
+  "entities": [
+    {
+      "name": "预应力混凝土电杆",
+      "type": "电力设备",
+      "desc": "采用预应力技术制造的混凝土电杆"
+    },
+    {
+      "name": "普通钢筋混凝土电杆",
+      "type": "电力设备",
+      "desc": "采用普通钢筋混凝土材料制造的电杆"
+    },
+    {
+      "name": "细长构件",
+      "type": "电力设备",
+      "desc": "电杆或电杆上的细长结构件"
+    },
+    {
+      "name": "纵向裂缝",
+      "type": "缺陷",
+      "desc": "沿电杆轴向方向的裂缝"
+    },
+    {
+      "name": "横向裂缝",
+      "type": "缺陷",
+      "desc": "垂直于电杆轴向方向的裂缝"
+    }
+  ],
+  "rules": [
+    {
+      "content": "预应力混凝土电杆及构件不得有纵向、横向裂缝",
+      "type": "强制",
+      "subject": "预应力混凝土电杆及构件",
+      "action": "制造、安装、验收",
+      "condition": "所有预应力混凝土电杆及构件",
+      "constraint": "无纵向、横向裂缝",
+      "related_entities": [
+        "预应力混凝土电杆",
+        "纵向裂缝",
+        "横向裂缝"
+      ]
+    },
+    {
+      "content": "普通钢筋混凝土电杆及细长构件不得有纵向裂纹，横向裂缝宽度不应超过0.05mm",
+      "type": "强制",
+      "subject": "普通钢筋混凝土电杆及细长构件",
+      "action": "制造、安装、验收",
+      "condition": "所有普通钢筋混凝土电杆及细长构件",
+      "constraint": "无纵向裂纹，横向裂缝宽度≤0.05mm",
+      "related_entities": [
+        "普通钢筋混凝土电杆",
+        "细长构件",
+        "纵向裂纹",
+        "横向裂缝"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "预应力混凝土电杆",
+      "target": "纵向裂缝",
+      "type": "不允许存在"
+    },
+    {
+      "source": "预应力混凝土电杆",
+      "target": "横向裂缝",
+      "type": "不允许存在"
+    },
+    {
+      "source": "普通钢筋混凝土电杆",
+      "target": "纵向裂纹",
+      "type": "不允许存在"
+    },
+    {
+      "source": "普通钢筋混凝土电杆",
+      "target": "横向裂缝",
+      "type": "不允许存在，且宽度≤0.05mm"
+    },
+    {
+      "source": "细长构件",
+      "target": "纵向裂纹",
+      "type": "不允许存在"
+    },
+    {
+      "source": "细长构件",
+      "target": "横向裂缝",
+      "type": "不允许存在，且宽度≤0.05mm"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 1998,
+      "source_row_id": "1998",
+      "clause_index": 2,
+      "source_text": "预应力混凝土电杆及构件不得有纵向、横向裂缝；普通钢筋混凝土电杆及细长构件不得有纵向裂纹，横向裂缝宽度不应超过0.05mm"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9875,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.009969+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

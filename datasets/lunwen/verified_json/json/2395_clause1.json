@@ -1,0 +1,138 @@
+{
+  "entities": [
+    {
+      "name": "油浸式变压器",
+      "type": "电力设备",
+      "desc": "一种将电能进行变换的电气设备"
+    },
+    {
+      "name": "换流变",
+      "type": "电力设备",
+      "desc": "一种用于直流输电系统中的变压器"
+    },
+    {
+      "name": "并联电抗器",
+      "type": "电力设备",
+      "desc": "一种用于电力系统无功补偿的设备"
+    },
+    {
+      "name": "平波电抗器",
+      "type": "电力设备",
+      "desc": "一种用于直流输电系统中平滑电流波动的设备"
+    },
+    {
+      "name": "红外热象检测",
+      "type": "检测方法",
+      "desc": "通过红外成像技术对设备进行温度检测的方法"
+    },
+    {
+      "name": "新安及A、B类检修",
+      "type": "检修类别",
+      "desc": "电力设备的一种检修类别"
+    },
+    {
+      "name": "220kV及以下",
+      "type": "电压等级",
+      "desc": "电力系统中的一个电压等级范围"
+    },
+    {
+      "name": "迎峰度夏",
+      "type": "季节活动",
+      "desc": "电力系统在夏季用电高峰期间的保障活动"
+    }
+  ],
+  "rules": [
+    {
+      "content": "红外热象检测周期为：新安及A、B类检修重新投运后1周内。",
+      "type": "强制",
+      "subject": "油浸式变压器、换流变、并联电抗器、平波电抗器",
+      "action": "红外热象检测",
+      "condition": "新安及A、B类检修重新投运后",
+      "constraint": "1周内",
+      "related_entities": [
+        "油浸式变压器",
+        "换流变",
+        "并联电抗器",
+        "平波电抗器",
+        "红外热象检测"
+      ]
+    },
+    {
+      "content": "220kV及以下，迎峰度夏前和迎峰度夏中各开展1次精确测温。",
+      "type": "强制",
+      "subject": "油浸式变压器、换流变、并联电抗器、平波电抗器",
+      "action": "精确测温",
+      "condition": "220kV及以下，迎峰度夏期间",
+      "constraint": "各开展1次",
+      "related_entities": [
+        "油浸式变压器",
+        "换流变",
+        "并联电抗器",
+        "平波电抗器",
+        "精确测温"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "油浸式变压器",
+      "target": "红外热象检测",
+      "type": "需要"
+    },
+    {
+      "source": "换流变",
+      "target": "红外热象检测",
+      "type": "需要"
+    },
+    {
+      "source": "并联电抗器",
+      "target": "红外热象检测",
+      "type": "需要"
+    },
+    {
+      "source": "平波电抗器",
+      "target": "红外热象检测",
+      "type": "需要"
+    },
+    {
+      "source": "油浸式变压器",
+      "target": "精确测温",
+      "type": "需要"
+    },
+    {
+      "source": "换流变",
+      "target": "精确测温",
+      "type": "需要"
+    },
+    {
+      "source": "并联电抗器",
+      "target": "精确测温",
+      "type": "需要"
+    },
+    {
+      "source": "平波电抗器",
+      "target": "精确测温",
+      "type": "需要"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 2395,
+      "source_row_id": "2395",
+      "clause_index": 1,
+      "source_text": "油浸式变压器、换流变、并联电抗器、平波电抗器带电检测项目、周期及技术要求：红外热象检测周期为：新安及A、B类检修重新投运后1周内。220kV及以下，迎峰度夏前和迎峰度夏中各开展1次精确测温"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:01.503547+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

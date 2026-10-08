@@ -1,0 +1,127 @@
+{
+  "entities": [
+    {
+      "name": "电缆",
+      "type": "电力设备",
+      "desc": "电力系统中传输电能的导体"
+    },
+    {
+      "name": "铅套",
+      "type": "电力设备",
+      "desc": "电缆外层保护材料，由铅制成"
+    },
+    {
+      "name": "铝合金套",
+      "type": "电力设备",
+      "desc": "电缆外层保护材料，由铝合金制成"
+    },
+    {
+      "name": "平铝套",
+      "type": "电力设备",
+      "desc": "电缆外层保护材料，表面平整的铝合金套"
+    },
+    {
+      "name": "皱纹铝套",
+      "type": "电力设备",
+      "desc": "电缆外层保护材料，表面有皱纹的铝合金套"
+    },
+    {
+      "name": "金属套",
+      "type": "电力设备",
+      "desc": "电缆外层保护材料，包括铅套和铝合金套"
+    },
+    {
+      "name": "标称厚度",
+      "type": "电力参数",
+      "desc": "电缆金属套设计时确定的厚度值"
+    },
+    {
+      "name": "最小厚度",
+      "type": "电力参数",
+      "desc": "电缆金属套实际安装时的最小允许厚度"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆有铅和铝合金套，其金属套的最小厚度应不小于标称厚度的95%‐0.01，即tmin≥0.95tn‐0.1",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "安装",
+      "condition": "电缆有铅和铝合金套",
+      "constraint": "最小厚度tmin≥0.95tn‐0.1",
+      "related_entities": [
+        "电缆",
+        "铅套",
+        "铝合金套",
+        "金属套"
+      ]
+    },
+    {
+      "content": "平铝套的最小厚度加上0.1mm后，应不小于标称厚度的90%，即tmin≥0.90tn‐0.1",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "安装",
+      "condition": "电缆有平铝套",
+      "constraint": "最小厚度tmin≥0.90tn‐0.1",
+      "related_entities": [
+        "电缆",
+        "铝合金套",
+        "平铝套"
+      ]
+    },
+    {
+      "content": "皱纹铝套的最小厚度加上0.1mm后，应不小于标称厚度的85%，即tmin≥0.85tn‐0.1",
+      "type": "强制",
+      "subject": "电缆",
+      "action": "安装",
+      "condition": "电缆有皱纹铝套",
+      "constraint": "最小厚度tmin≥0.85tn‐0.1",
+      "related_entities": [
+        "电缆",
+        "铝合金套",
+        "皱纹铝套"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆",
+      "target": "铅套",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "铝合金套",
+      "type": "包含"
+    },
+    {
+      "source": "电缆",
+      "target": "金属套",
+      "type": "包含"
+    },
+    {
+      "source": "金属套",
+      "target": "标称厚度",
+      "type": "基于"
+    },
+    {
+      "source": "金属套",
+      "target": "最小厚度",
+      "type": "基于"
+    }
+  ],
+  "metadata": {
+    "pair_id": 188,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6b0ddac349a1aed0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\188_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

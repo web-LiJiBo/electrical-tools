@@ -1,0 +1,73 @@
+{
+  "entities": [
+    {
+      "name": "绝缘油",
+      "type": "电力设备材料",
+      "desc": "用于电力设备中的绝缘介质"
+    },
+    {
+      "name": "闭口闪点",
+      "type": "试验参数",
+      "desc": "绝缘油在密闭容器中加热至遇火即燃的最低温度"
+    },
+    {
+      "name": "新油",
+      "type": "电力设备材料",
+      "desc": "未使用过的绝缘油"
+    },
+    {
+      "name": "测量值",
+      "type": "试验数据",
+      "desc": "绝缘油闭口闪点的实际测量结果"
+    }
+  ],
+  "rules": [
+    {
+      "content": "绝缘油闭口闪点值要求：与新油原始测量值相比不低于10℃",
+      "type": "强制",
+      "subject": "绝缘油",
+      "action": "闭口闪点测试",
+      "condition": "新油投入运行前或定期检测时",
+      "constraint": "闭口闪点值≥新油闭口闪点测量值+10℃",
+      "related_entities": [
+        "绝缘油",
+        "闭口闪点",
+        "新油",
+        "测量值"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "绝缘油",
+      "target": "闭口闪点",
+      "type": "测试对象"
+    },
+    {
+      "source": "闭口闪点",
+      "target": "测量值",
+      "type": "测试结果"
+    },
+    {
+      "source": "新油",
+      "target": "闭口闪点",
+      "type": "参考基准"
+    },
+    {
+      "source": "闭口闪点",
+      "target": "测量值",
+      "type": "比较基准"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2181,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "6dfffd652d1511e0",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2181_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

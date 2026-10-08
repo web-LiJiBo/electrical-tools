@@ -1,0 +1,103 @@
+{
+  "entities": [
+    {
+      "name": "现场局部放电试验",
+      "type": "试验",
+      "desc": "电力设备局部放电的现场检测"
+    },
+    {
+      "name": "额定运行油泵",
+      "type": "设备",
+      "desc": "电力变压器运行时使用的油泵"
+    },
+    {
+      "name": "工厂试验电压",
+      "type": "参数",
+      "desc": "电力设备出厂试验时施加的电压值"
+    },
+    {
+      "name": "工厂试验时间",
+      "type": "参数",
+      "desc": "电力设备出厂试验持续的时间"
+    },
+    {
+      "name": "220kV及以上变压器",
+      "type": "设备",
+      "desc": "220kV及以上的电力变压器"
+    },
+    {
+      "name": "放电量",
+      "type": "参数",
+      "desc": "电力设备局部放电产生的电荷量"
+    },
+    {
+      "name": "100pC",
+      "type": "参数",
+      "desc": "局部放电试验中允许的最大放电量"
+    }
+  ],
+  "rules": [
+    {
+      "content": "现场局部放电试验验收，应在所有额定运行油泵启动以及工厂试验电压和时间下，220kV及以上变压器放电量不大于100pC",
+      "type": "强制",
+      "subject": "220kV及以上变压器",
+      "action": "进行局部放电试验",
+      "condition": "所有额定运行油泵启动以及工厂试验电压和时间下",
+      "constraint": "放电量不大于100pC",
+      "related_entities": [
+        "现场局部放电试验",
+        "额定运行油泵",
+        "工厂试验电压",
+        "工厂试验时间",
+        "220kV及以上变压器",
+        "放电量",
+        "100pC"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "现场局部放电试验",
+      "target": "220kV及以上变压器",
+      "type": "针对"
+    },
+    {
+      "source": "额定运行油泵",
+      "target": "220kV及以上变压器",
+      "type": "配套"
+    },
+    {
+      "source": "工厂试验电压",
+      "target": "220kV及以上变压器",
+      "type": "试验条件"
+    },
+    {
+      "source": "工厂试验时间",
+      "target": "220kV及以上变压器",
+      "type": "试验条件"
+    },
+    {
+      "source": "放电量",
+      "target": "220kV及以上变压器",
+      "type": "试验结果"
+    },
+    {
+      "source": "100pC",
+      "target": "放电量",
+      "type": "约束条件"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2370,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "2c17c3b3d079d6b7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\2370_clause1.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解"
+    ]
+  }
+}

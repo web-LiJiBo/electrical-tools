@@ -1,0 +1,111 @@
+{
+  "entities": [
+    {
+      "name": "基础型式",
+      "type": "电力工程基础",
+      "desc": "电力工程中杆塔的基础形式"
+    },
+    {
+      "name": "原状土基础",
+      "type": "电力工程基础",
+      "desc": "直接利用现场天然地基作为杆塔基础的结构形式"
+    },
+    {
+      "name": "台阶式基础",
+      "type": "电力工程基础",
+      "desc": "在原状土基础上设置台阶形结构的杆塔基础形式"
+    },
+    {
+      "name": "板式基础",
+      "type": "电力工程基础",
+      "desc": "在原状土基础上设置平板形结构的杆塔基础形式"
+    },
+    {
+      "name": "桩基础",
+      "type": "电力工程基础",
+      "desc": "通过桩体将荷载传递到深层稳定地层的杆塔基础形式"
+    }
+  ],
+  "rules": [
+    {
+      "content": "基础型式选择，当有条件时应优先采用原状土基础",
+      "type": "强制",
+      "subject": "电力工程设计人员",
+      "action": "选择基础型式",
+      "condition": "有条件时",
+      "constraint": "优先采用原状土基础",
+      "related_entities": [
+        "基础型式",
+        "原状土基础"
+      ]
+    },
+    {
+      "content": "当采用原状土基础不经济或施工受限时可采用台阶式基础或板式基础",
+      "type": "强制",
+      "subject": "电力工程设计人员",
+      "action": "选择基础型式",
+      "condition": "采用原状土基础不经济或施工受限时",
+      "constraint": "可采用台阶式基础或板式基础",
+      "related_entities": [
+        "基础型式",
+        "原状土基础",
+        "台阶式基础",
+        "板式基础"
+      ]
+    },
+    {
+      "content": "必要时可采用桩基础",
+      "type": "强制",
+      "subject": "电力工程设计人员",
+      "action": "选择基础型式",
+      "condition": "必要时",
+      "constraint": "可采用桩基础",
+      "related_entities": [
+        "基础型式",
+        "桩基础"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "基础型式",
+      "target": "原状土基础",
+      "type": "优先采用"
+    },
+    {
+      "source": "基础型式",
+      "target": "台阶式基础",
+      "type": "可采用"
+    },
+    {
+      "source": "基础型式",
+      "target": "板式基础",
+      "type": "可采用"
+    },
+    {
+      "source": "基础型式",
+      "target": "桩基础",
+      "type": "可采用"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 712,
+      "source_row_id": "712",
+      "clause_index": 1,
+      "source_text": "基础型式选择，当有条件时应优先采用原状土（不含桩基础）基础；当采用原状土基础不经济或施工受限时可采用台阶式基础或板式基础，必要时可采用桩基础"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 0.9762,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.540081+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

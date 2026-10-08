@@ -1,0 +1,156 @@
+{
+  "entities": [
+    {
+      "name": "外风冷系统",
+      "type": "电力设备",
+      "desc": "一种采用自然空气冷却的换流阀冷却系统"
+    },
+    {
+      "name": "换流阀厂家",
+      "type": "生产厂家",
+      "desc": "提供换流阀及其冷却系统相关技术参数的厂家"
+    },
+    {
+      "name": "冷却容量",
+      "type": "技术参数",
+      "desc": "换流阀冷却系统能够提供的最大冷却能力"
+    },
+    {
+      "name": "介质类型",
+      "type": "技术参数",
+      "desc": "冷却系统使用的冷却介质种类"
+    },
+    {
+      "name": "介质流量",
+      "type": "技术参数",
+      "desc": "冷却系统中冷却介质的流动速率"
+    },
+    {
+      "name": "极端最高环境温度",
+      "type": "环境参数",
+      "desc": "设计时考虑的极端最高环境温度值"
+    },
+    {
+      "name": "热岛效应",
+      "type": "环境因素",
+      "desc": "城市化导致局部区域温度升高的现象"
+    },
+    {
+      "name": "最高环温",
+      "type": "环境参数",
+      "desc": "设计时考虑的最高环境温度值"
+    },
+    {
+      "name": "气象统计最高环温",
+      "type": "环境参数",
+      "desc": "基于历史气象数据统计得出的最高环境温度值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "外风冷系统应以换流阀厂家提供的冷却容量为依据",
+      "type": "强制",
+      "subject": "外风冷系统设计者",
+      "action": "设计",
+      "condition": "外风冷系统设计",
+      "constraint": "冷却容量",
+      "related_entities": [
+        "外风冷系统",
+        "换流阀厂家",
+        "冷却容量"
+      ]
+    },
+    {
+      "content": "结合介质类型、介质流量、极端最高环境温度等进行设计",
+      "type": "强制",
+      "subject": "外风冷系统设计者",
+      "action": "设计",
+      "condition": "外风冷系统设计",
+      "constraint": "介质类型、介质流量、极端最高环境温度",
+      "related_entities": [
+        "外风冷系统",
+        "介质类型",
+        "介质流量",
+        "极端最高环境温度"
+      ]
+    },
+    {
+      "content": "同时应考虑空冷器周围环境造成的热岛效应",
+      "type": "强制",
+      "subject": "外风冷系统设计者",
+      "action": "设计",
+      "condition": "外风冷系统设计",
+      "constraint": "热岛效应",
+      "related_entities": [
+        "外风冷系统",
+        "热岛效应"
+      ]
+    },
+    {
+      "content": "设计使用最高环温应在气象统计最高环温的基础上增加3℃或5℃",
+      "type": "强制",
+      "subject": "外风冷系统设计者",
+      "action": "设计",
+      "condition": "外风冷系统设计",
+      "constraint": "最高环温=气象统计最高环温+3℃或5℃",
+      "related_entities": [
+        "外风冷系统",
+        "最高环温",
+        "气象统计最高环温"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "外风冷系统",
+      "target": "换流阀厂家",
+      "type": "依据"
+    },
+    {
+      "source": "外风冷系统",
+      "target": "冷却容量",
+      "type": "依据"
+    },
+    {
+      "source": "外风冷系统",
+      "target": "介质类型",
+      "type": "依据"
+    },
+    {
+      "source": "外风冷系统",
+      "target": "介质流量",
+      "type": "依据"
+    },
+    {
+      "source": "外风冷系统",
+      "target": "极端最高环境温度",
+      "type": "依据"
+    },
+    {
+      "source": "外风冷系统",
+      "target": "热岛效应",
+      "type": "考虑"
+    },
+    {
+      "source": "外风冷系统",
+      "target": "最高环温",
+      "type": "设计依据"
+    },
+    {
+      "source": "最高环温",
+      "target": "气象统计最高环温",
+      "type": "计算公式"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2863,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "bae97c1ebf912490",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2863_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

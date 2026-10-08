@@ -1,0 +1,80 @@
+{
+  "entities": [
+    {
+      "name": "最大牵引力",
+      "type": "电力设备参数",
+      "desc": "牵引机在规定时间内允许的最大牵引能力"
+    },
+    {
+      "name": "牵引机",
+      "type": "电力设备",
+      "desc": "用于牵引作业的机械设备"
+    },
+    {
+      "name": "额定牵引力",
+      "type": "电力设备参数",
+      "desc": "牵引机在正常工作条件下应达到的牵引能力"
+    },
+    {
+      "name": "连续工作牵引力",
+      "type": "电力设备参数",
+      "desc": "牵引机在连续工作状态下允许的最大牵引能力"
+    }
+  ],
+  "rules": [
+    {
+      "content": "最大牵引力牵引机在15min内允许的连续工作牵引力。",
+      "type": "强制",
+      "subject": "牵引机",
+      "action": "允许的连续工作牵引力",
+      "condition": "额定牵引力的1.2倍",
+      "constraint": "15min",
+      "related_entities": [
+        "最大牵引力",
+        "额定牵引力"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "最大牵引力",
+      "target": "牵引机",
+      "type": "属于"
+    },
+    {
+      "source": "额定牵引力",
+      "target": "牵引机",
+      "type": "属于"
+    },
+    {
+      "source": "连续工作牵引力",
+      "target": "最大牵引力",
+      "type": "包含"
+    },
+    {
+      "source": "连续工作牵引力",
+      "target": "牵引机",
+      "type": "属于"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 693,
+      "source_row_id": "693",
+      "clause_index": 1,
+      "source_text": "最大牵引力牵引机在15min内允许的连续工作牵引力。最大牵引力一般不低于额定牵引力的1.2倍"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:54:59.517485+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

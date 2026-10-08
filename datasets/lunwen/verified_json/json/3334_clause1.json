@@ -1,0 +1,55 @@
+{
+  "entities": [
+    {
+      "name": "主过滤器",
+      "type": "电力设备",
+      "desc": "电力系统中用于过滤介质的装置"
+    },
+    {
+      "name": "过滤精度",
+      "type": "技术参数",
+      "desc": "主过滤器过滤介质的能力指标"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主过滤器过滤精度应不大于100µm",
+      "type": "强制",
+      "subject": "主过滤器",
+      "action": "过滤精度控制",
+      "condition": "电力系统运行过程中",
+      "constraint": "过滤精度≤100µm",
+      "related_entities": [
+        "主过滤器",
+        "过滤精度"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "主过滤器",
+      "target": "过滤精度",
+      "type": "包含"
+    }
+  ],
+  "metadata": {
+    "source": {
+      "excel_file": "2017.xlsx",
+      "excel_sheet": "Sheet1",
+      "excel_row": 3325,
+      "source_row_id": "3334",
+      "clause_index": 1,
+      "source_text": "主过滤器过滤精度应不大于100µm。"
+    },
+    "audit": {
+      "status": "passed_source_grounding",
+      "quality_score": 1.0,
+      "corrected": false,
+      "manual_review_required": false,
+      "reasons": [],
+      "selected_source": "output_jsons_new/train",
+      "audited_at": "2026-08-28T08:55:02.658373+00:00",
+      "audit_version": "1.0"
+    }
+  }
+}

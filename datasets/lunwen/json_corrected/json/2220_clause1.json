@@ -1,0 +1,56 @@
+{
+  "entities": [
+    {
+      "name": "无线电干扰电压",
+      "type": "电磁干扰",
+      "desc": "电力系统中产生的非电能信号对电力系统的正常运行造成影响的电压"
+    },
+    {
+      "name": "最高试验电压",
+      "type": "电气试验",
+      "desc": "电力设备进行耐压试验时所施加的最大电压值"
+    },
+    {
+      "name": "2000μV",
+      "type": "电压值",
+      "desc": "无线电干扰电压水平的上限值"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在施加最高试验电压时，无线电干扰电压水平不超过2000μV",
+      "type": "强制",
+      "subject": "电力设备制造商与用户",
+      "action": "确保无线电干扰电压水平不超过2000μV",
+      "condition": "电力设备进行耐压试验时",
+      "constraint": "最高试验电压",
+      "related_entities": [
+        "无线电干扰电压",
+        "最高试验电压"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "无线电干扰电压",
+      "target": "最高试验电压",
+      "type": "受控于"
+    },
+    {
+      "source": "最高试验电压",
+      "target": "无线电干扰电压",
+      "type": "控制"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2220,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "cf926a7e72780783",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2220_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

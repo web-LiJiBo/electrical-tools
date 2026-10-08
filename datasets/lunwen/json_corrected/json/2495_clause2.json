@@ -1,0 +1,71 @@
+{
+  "entities": [
+    {
+      "name": "发电厂",
+      "type": "电力设施",
+      "desc": "发电厂是生产电能的场所"
+    },
+    {
+      "name": "变电站",
+      "type": "电力设施",
+      "desc": "变电站是变换电压、接受和分配电能的场所"
+    },
+    {
+      "name": "直流、UPS、保安电源系统电缆",
+      "type": "电力电缆",
+      "desc": "直流、UPS、保安电源系统专用的电力电缆"
+    },
+    {
+      "name": "耐火电缆",
+      "type": "电力电缆",
+      "desc": "具有耐火性能的电力电缆"
+    }
+  ],
+  "rules": [
+    {
+      "content": "发电厂、变电站直流、UPS、保安电源系统电缆应选用耐火电缆",
+      "type": "强制",
+      "subject": "发电厂、变电站",
+      "action": "选用电缆",
+      "condition": "直流、UPS、保安电源系统",
+      "constraint": "耐火电缆",
+      "related_entities": [
+        "发电厂",
+        "变电站",
+        "直流、UPS、保安电源系统电缆",
+        "耐火电缆"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "发电厂",
+      "target": "直流、UPS、保安电源系统电缆",
+      "type": "使用"
+    },
+    {
+      "source": "变电站",
+      "target": "直流、UPS、保安电源系统电缆",
+      "type": "使用"
+    },
+    {
+      "source": "直流、UPS、保安电源系统电缆",
+      "target": "耐火电缆",
+      "type": "选用"
+    }
+  ],
+  "metadata": {
+    "pair_id": 2495,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "c039228eb39ba980",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\2495_clause2.json",
+    "audit_status": "pending_semantic_review",
+    "auto_corrections": [],
+    "manual_review_reason": [
+      "全部规则内容合并后不能覆盖Excel原文，需人工复核语义分解",
+      "原文数值未完整出现在结构化分解中"
+    ]
+  }
+}

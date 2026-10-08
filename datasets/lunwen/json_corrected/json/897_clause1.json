@@ -1,0 +1,145 @@
+{
+  "entities": [
+    {
+      "name": "设备",
+      "type": "电力设备",
+      "desc": "电力系统中用于变换、传输、分配电能的装置"
+    },
+    {
+      "name": "绝缘介质强度",
+      "type": "电气参数",
+      "desc": "电力设备绝缘材料承受的最高电压能力"
+    },
+    {
+      "name": "试验电压",
+      "type": "电气参数",
+      "desc": "对电力设备进行耐压试验时所加的电压值"
+    },
+    {
+      "name": "出厂试验值",
+      "type": "电气参数",
+      "desc": "电力设备出厂时规定的耐压试验电压值"
+    },
+    {
+      "name": "感应耐压试验",
+      "type": "试验方法",
+      "desc": "通过感应方式施加交流电压的耐压试验方法"
+    },
+    {
+      "name": "外施耐压试验",
+      "type": "试验方法",
+      "desc": "直接施加交流电压的耐压试验方法"
+    },
+    {
+      "name": "容升现象",
+      "type": "电气现象",
+      "desc": "电力设备在交流电压作用下，由于电容效应导致实际耐受电压升高的现象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "需要确认设备绝缘介质强度时进行本项目。试验电压为出厂试验值的80%，时间为60s。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行绝缘介质强度试验",
+      "condition": "需要确认设备绝缘介质强度",
+      "constraint": "试验电压为出厂试验值的80%，时间为60s",
+      "related_entities": [
+        "设备",
+        "绝缘介质强度",
+        "试验电压",
+        "出厂试验值"
+      ]
+    },
+    {
+      "content": "一次绕组采用感应耐压，二次绕组采用外施耐压。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行耐压试验",
+      "condition": "需要确认设备绝缘介质强度",
+      "constraint": "一次绕组采用感应耐压，二次绕组采用外施耐压",
+      "related_entities": [
+        "设备",
+        "绝缘介质强度",
+        "试验电压",
+        "出厂试验值",
+        "感应耐压试验",
+        "外施耐压试验"
+      ]
+    },
+    {
+      "content": "对于感应耐压试验，当频率在100Hz～300Hz时，持续时间应按式（3）确定，但不少于15s。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行感应耐压试验",
+      "condition": "需要确认设备绝缘介质强度且试验频率在100Hz～300Hz",
+      "constraint": "持续时间应按式（3）确定，但不少于15s",
+      "related_entities": [
+        "设备",
+        "绝缘介质强度",
+        "试验电压",
+        "出厂试验值",
+        "感应耐压试验"
+      ]
+    },
+    {
+      "content": "进行感应耐压试验时应考虑容升现象。",
+      "type": "强制",
+      "subject": "电力设备",
+      "action": "进行感应耐压试验",
+      "condition": "需要确认设备绝缘介质强度",
+      "constraint": "应考虑容升现象",
+      "related_entities": [
+        "设备",
+        "绝缘介质强度",
+        "试验电压",
+        "出厂试验值",
+        "感应耐压试验",
+        "容升现象"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "设备",
+      "target": "绝缘介质强度",
+      "type": "测试对象"
+    },
+    {
+      "source": "设备",
+      "target": "试验电压",
+      "type": "测试参数"
+    },
+    {
+      "source": "设备",
+      "target": "出厂试验值",
+      "type": "参考依据"
+    },
+    {
+      "source": "设备",
+      "target": "感应耐压试验",
+      "type": "试验方法"
+    },
+    {
+      "source": "设备",
+      "target": "外施耐压试验",
+      "type": "试验方法"
+    },
+    {
+      "source": "设备",
+      "target": "容升现象",
+      "type": "影响因素"
+    }
+  ],
+  "metadata": {
+    "pair_id": 897,
+    "clause_index": 1,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "8a8e8096ad7b0938",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\test\\897_clause1.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}

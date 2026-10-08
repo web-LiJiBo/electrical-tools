@@ -1,0 +1,102 @@
+{
+  "entities": [
+    {
+      "name": "电缆GIS终端",
+      "type": "电力设备",
+      "desc": "一种高压电缆与GIS设备连接的终端装置"
+    },
+    {
+      "name": "施工现场",
+      "type": "施工场所",
+      "desc": "进行电缆GIS终端安装的现场区域"
+    },
+    {
+      "name": "消防灭火要求",
+      "type": "安全标准",
+      "desc": "施工过程中必须遵守的消防安全标准"
+    },
+    {
+      "name": "消防器材",
+      "type": "消防设施",
+      "desc": "用于火灾预防和扑救的设备工具"
+    },
+    {
+      "name": "动火作业",
+      "type": "施工活动",
+      "desc": "需要使用明火或产生高温的施工活动"
+    }
+  ],
+  "rules": [
+    {
+      "content": "电缆GIS终端安装消防措施应满足施工所处环境的消防灭火要求",
+      "type": "强制",
+      "subject": "电缆GIS终端安装工程",
+      "action": "安装电缆GIS终端",
+      "condition": "在施工现场进行电缆GIS终端安装",
+      "constraint": "应满足施工所处环境的消防灭火要求",
+      "related_entities": [
+        "电缆GIS终端",
+        "施工现场",
+        "消防灭火要求"
+      ]
+    },
+    {
+      "content": "施工现场应配备足够的消防器材",
+      "type": "强制",
+      "subject": "电缆GIS终端安装工程",
+      "action": "配备消防器材",
+      "condition": "在施工现场进行电缆GIS终端安装",
+      "constraint": "应配备足够的消防器材",
+      "related_entities": [
+        "施工现场",
+        "消防器材"
+      ]
+    },
+    {
+      "content": "施工现场如需动火应严格按照有关动火作业消防管理规定执行",
+      "type": "强制",
+      "subject": "电缆GIS终端安装工程",
+      "action": "动火作业",
+      "condition": "在施工现场进行电缆GIS终端安装且需要动火",
+      "constraint": "应严格按照有关动火作业消防管理规定执行",
+      "related_entities": [
+        "施工现场",
+        "动火作业",
+        "动火作业消防管理规定"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "电缆GIS终端",
+      "target": "施工现场",
+      "type": "安装于"
+    },
+    {
+      "source": "施工现场",
+      "target": "消防灭火要求",
+      "type": "满足"
+    },
+    {
+      "source": "施工现场",
+      "target": "消防器材",
+      "type": "配备"
+    },
+    {
+      "source": "施工现场",
+      "target": "动火作业",
+      "type": "可能涉及"
+    }
+  ],
+  "metadata": {
+    "pair_id": 3232,
+    "clause_index": 2,
+    "source_excel": "2017.xlsx",
+    "source_text_hash": "9dd0df3ad2ebbca7",
+    "source_dataset": "output_jsons_new",
+    "source_file": "D:\\攻关项目\\06-工具\\standard_knowledge_service_outline\\datasets\\lunwen\\output_jsons_new\\train\\3232_clause2.json",
+    "audit_status": "verified_structural",
+    "auto_corrections": [],
+    "manual_review_reason": []
+  }
+}
