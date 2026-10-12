@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028447",
+  "entities": [
+    {
+      "name": "组织的各层领导应经常与带级人员沟通 ,解决在推进过程中遇到的困难和问题 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织的各层领导应经常与带级人员沟通 ,解决在推进过程中遇到的困难和问题 ,沟通渠道可以是正\n式的或非正式的 ;精益六西格玛项目团队应有共同的交流与分享平台 , 以提高团队成员的知识水平和问\n题解决能力 ,解决项目进展中需协调的问题 。",
+      "type": "语义分解",
+      "subject": "组织的各层领导应经常与带级人员沟通 ,解决在推进过程中遇到的困难和问题 ",
+      "action": "",
+      "operation": "组织的各层领导应经常与带级人员沟通 ,解决在推进过程中遇到的困难和问题 ,沟通渠道可以是正 式的或非正式的 ;精益六西格玛项目团队应有共同的交流与分享平台 , 以提高团队成员的知识水平和问 题解决能力 ,解决项目进展中需协调的问题 。",
+      "condition": "",
+      "constraint": "      组织的各层领导应经常与带级人员沟通 ,解决在推进过程中遇到的困难和问题 ,沟通渠道可以是正\n式的或非正式的 ;精益六西格玛项目团队应有共同的交流与分享平台 , 以提高团队成员的知识水平和问\n题解决能力 ,解决项目进展中需协调的问题 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织的各层领导应经常与带级人员沟通 ,解决在推进过程中遇到的困难和问题 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28447,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

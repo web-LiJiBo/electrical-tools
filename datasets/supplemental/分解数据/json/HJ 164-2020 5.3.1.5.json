@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "5.3.1.5",
+  "entities": [
+    {
+      "name": "井口标志和保护帽",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1.5 井口固定点标志和孔口保护帽等发生移位或损坏肘, 必须及时修复。",
+      "type": "语义分解",
+      "subject": "井口标志和保护帽",
+      "action": "",
+      "operation": "移位损坏时及时修复",
+      "condition": "井口固定点标志和孔口保护帽等发生移位或损坏肘",
+      "constraint": "5.3.1.5 井口固定点标志和孔口保护帽等发生移位或损坏肘, 必须及时修复。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井口标志和保护帽"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2077,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

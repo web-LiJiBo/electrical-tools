@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049678",
+  "entities": [
+    {
+      "name": "性好、重现性好的特点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "性好、重现性好的特点。实际工程中发现 Cu/CuSO₄   参比电极在\n不同季节电极电位偏差较大， Cu/CuSO₄   参比电极中的电解液外\n渗，还会导致使用寿命大大减少。罐底参比电极埋设是一次性\n的，在电极埋设完成后储罐基础还需要施工，这也易造成参比电\n极的破坏。所以，采用双电极体系是有意义的。",
+      "type": "语义分解",
+      "subject": "性好、重现性好的特点",
+      "action": "",
+      "operation": "性好、重现性好的特点。实际工程中发现 Cu/CuSO₄ 参比电极在 不同季节电极电位偏差较大， Cu/CuSO₄ 参比电极中的电解液外 渗，还会导致使用寿命大大减少。罐底参比电极埋设是一次性 的，在电极埋设完成后储罐基础还需要施工，这也易造成参比电 极的破坏。所以，采用双电极体系是有意义的。",
+      "condition": "",
+      "constraint": "性好、重现性好的特点。实际工程中发现 Cu/CuSO₄   参比电极在\n不同季节电极电位偏差较大， Cu/CuSO₄   参比电极中的电解液外\n渗，还会导致使用寿命大大减少。罐底参比电极埋设是一次性\n的，在电极埋设完成后储罐基础还需要施工，这也易造成参比电\n极的破坏。所以，采用双电极体系是有意义的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "性好、重现性好的特点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49678,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

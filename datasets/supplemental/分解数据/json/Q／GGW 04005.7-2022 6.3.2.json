@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "生活污水排放量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2 生活污水无再生水利用量的,生活污水产生量等于排放量; 存在再生水利用量应进行相应扣减, 即排放量等于产生量减去利用量。连续排放的以流量计读数计,非连续排放的,可通过公式 (21)核算。",
+      "type": "语义分解",
+      "subject": "生活污水排放量",
+      "action": "",
+      "operation": "产生量扣回用连续流量计否则式21",
+      "condition": "",
+      "constraint": "6.3.2 生活污水无再生水利用量的,生活污水产生量等于排放量; 存在再生水利用量应进行相应扣减, 即排放量等于产生量减去利用量。连续排放的以流量计读数计,非连续排放的,可通过公式 (21)核算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生活污水排放量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 669,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺式21"
+      ]
+    }
+  }
+}

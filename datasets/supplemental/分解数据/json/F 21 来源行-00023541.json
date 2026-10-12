@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023541",
+  "entities": [
+    {
+      "name": "AGC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "AGC: 自动增益控制(Auto Gain Control)\nAS:应用服务器(Application Server)",
+      "type": "语义分解",
+      "subject": "AGC",
+      "action": "",
+      "operation": "AGC: 自动增益控制(Auto Gain Control) AS:应用服务器(Application Server)",
+      "condition": "",
+      "constraint": "AGC: 自动增益控制(Auto Gain Control)\nAS:应用服务器(Application Server)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "AGC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23541,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "5.3.10",
+  "entities": [
+    {
+      "name": "在交流干扰环境下，采用记录仪直流通道记录试片断电 电位响应曲线时，根据断",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.10   在交流干扰环境下，采用记录仪直流通道记录试片断电\n电位响应曲线时，根据断电时刻在真实电压波形上位置的不同，\n记录仪的滤波功能可能导致响应曲线上出现正向或负向冲击峰。\n适当延长试片断电电位读取时间，可以规避冲击峰可能对读数\n造成的负面影响。",
+      "type": "语义分解",
+      "subject": "在交流干扰环境下，采用记录仪直流通道记录试片断电 电位响应曲线时，根据断",
+      "action": "",
+      "operation": "在交流干扰环境下，采用记录仪直流通道记录试片断电 电位响应曲线时，根据断电时刻在真实电压波形上位置的不同， 记录仪的滤波功能可能导致响应曲线上出现正向或负向冲击峰。 适当延长试片断电电位读取时间，可以规避冲击峰可能对读数 造成的负面影响。",
+      "condition": "",
+      "constraint": "5.3.10   在交流干扰环境下，采用记录仪直流通道记录试片断电\n电位响应曲线时，根据断电时刻在真实电压波形上位置的不同，\n记录仪的滤波功能可能导致响应曲线上出现正向或负向冲击峰。\n适当延长试片断电电位读取时间，可以规避冲击峰可能对读数\n造成的负面影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在交流干扰环境下，采用记录仪直流通道记录试片断电 电位响应曲线时，根据断"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49017,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

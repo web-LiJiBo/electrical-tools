@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.19.4",
+  "entities": [
+    {
+      "name": "风险意识培养",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.19.4 企业应通过安全教育培训 制度执~员丢为规菹等芹式持续提升全员风险意识 ,增强员工 对作业过程和作业环境中可能存在的危害的敏感程度。",
+      "type": "语义分解",
+      "subject": "风险意识培养",
+      "action": "",
+      "operation": "通过培训制度等增强风险意识",
+      "condition": "",
+      "constraint": "4.19.4 企业应通过安全教育培训 制度执~员丢为规菹等芹式持续提升全员风险意识 ,增强员工 对作业过程和作业环境中可能存在的危害的敏感程度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险意识培养"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5339,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文识别异常，需核对原版"
+      ]
+    }
+  }
+}

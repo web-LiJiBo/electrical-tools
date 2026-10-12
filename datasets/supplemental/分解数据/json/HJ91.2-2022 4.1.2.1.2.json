@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.2.1.2",
+  "entities": [
+    {
+      "name": "河流对照断面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2.1.2 对照断面 应设置在河流流经本区域主要污染源之前,便于了解该水体在主要污染源汇入之前的水质状况,避开废水。污水流入或回流处=",
+      "type": "语义分解",
+      "subject": "河流对照断面",
+      "action": "",
+      "operation": "设在主要污染源汇入前并避污水回流",
+      "condition": "",
+      "constraint": "4.1.2.1.2 对照断面 应设置在河流流经本区域主要污染源之前,便于了解该水体在主要污染源汇入之前的水质状况,避开废水。污水流入或回流处=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "河流对照断面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2942,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.1.5",
+  "entities": [
+    {
+      "name": "距离绿洲边缘1 km范围内的干扰区域，应采用人工恢复植被，植被恢复类型应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1.5  距离绿洲边缘1 km范围内的干扰区域，应采用人工恢复植被，植被恢复类型应与绿洲的防护\n林体系相协调。",
+      "type": "语义分解",
+      "subject": "距离绿洲边缘1 km范围内的干扰区域，应采用人工恢复植被，植被恢复类型应",
+      "action": "",
+      "operation": "距离绿洲边缘1 km范围内的干扰区域，应采用人工恢复植被，植被恢复类型应与绿洲的防护 林体系相协调。",
+      "condition": "",
+      "constraint": "6.3.1.5  距离绿洲边缘1 km范围内的干扰区域，应采用人工恢复植被，植被恢复类型应与绿洲的防护\n林体系相协调。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "距离绿洲边缘1 km范围内的干扰区域，应采用人工恢复植被，植被恢复类型应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40746,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

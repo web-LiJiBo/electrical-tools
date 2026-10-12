@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046086",
+  "entities": [
+    {
+      "name": "选用的内腐蚀预测模型宜能识别不同管段由于温度、压 力、CO₂ 、H₂S ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5   选用的内腐蚀预测模型宜能识别不同管段由于温度、压\n力、CO₂ 、H₂S 、pH值、Cl- 、矿化度、流速(或壁面剪切力)\n等因素而引起的管道内腐蚀风险的差异。",
+      "type": "语义分解",
+      "subject": "选用的内腐蚀预测模型宜能识别不同管段由于温度、压 力、CO₂ 、H₂S ",
+      "action": "",
+      "operation": "选用的内腐蚀预测模型宜能识别不同管段由于温度、压 力、CO₂ 、H₂S 、pH值、Cl- 、矿化度、流速(或壁面剪切力) 等因素而引起的管道内腐蚀风险的差异。",
+      "condition": "",
+      "constraint": "5.5.5   选用的内腐蚀预测模型宜能识别不同管段由于温度、压\n力、CO₂ 、H₂S 、pH值、Cl- 、矿化度、流速(或壁面剪切力)\n等因素而引起的管道内腐蚀风险的差异。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "选用的内腐蚀预测模型宜能识别不同管段由于温度、压 力、CO₂ 、H₂S "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46086,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

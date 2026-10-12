@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.8.3",
+  "entities": [
+    {
+      "name": "机房接地标签布线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.8.3      机房内接地排及所有的接地线应用不易脱落、不怕受潮的\n标签注明接地线名称及接地线两端所连接设备的名称；接地线宜\n采用黄绿双色电缆，并应绑扎牢固、整齐，且应避免折弯。",
+      "type": "语义分解",
+      "subject": "机房接地标签布线",
+      "action": "",
+      "operation": "标签牢固防潮注明两端设备黄绿线绑扎齐避免折弯",
+      "condition": "",
+      "constraint": "6.8.3      机房内接地排及所有的接地线应用不易脱落、不怕受潮的\n标签注明接地线名称及接地线两端所连接设备的名称；接地线宜\n采用黄绿双色电缆，并应绑扎牢固、整齐，且应避免折弯。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房接地标签布线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

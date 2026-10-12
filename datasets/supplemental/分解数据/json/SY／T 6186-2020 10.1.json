@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "10.1",
+  "entities": [
+    {
+      "name": "法定定检申请",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1 运菅单位应及时安排符合法定检验范畴管道的检验工作,制订年度检验计划并上报主管部门, 在定期检验有效期届满的1个月以前向特种设备检验机构申报定期检验。",
+      "type": "语义分解",
+      "subject": "法定定检申请",
+      "action": "",
+      "operation": "年度计划上报到期前一个月申报",
+      "condition": "",
+      "constraint": "10.1 运菅单位应及时安排符合法定检验范畴管道的检验工作,制订年度检验计划并上报主管部门, 在定期检验有效期届满的1个月以前向特种设备检验机构申报定期检验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "法定定检申请"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7389,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

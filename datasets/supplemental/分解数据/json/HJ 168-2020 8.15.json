@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.15",
+  "entities": [
+    {
+      "name": "方法结果计算表示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.15 结果计算与表示",
+      "type": "语义分解",
+      "subject": "方法结果计算表示",
+      "action": "",
+      "operation": "规定章节",
+      "condition": "",
+      "constraint": "8.15 结果计算与表示",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法结果计算表示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2412,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题"
+      ]
+    }
+  }
+}

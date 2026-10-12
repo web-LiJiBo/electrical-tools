@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "7.2.3",
+  "entities": [
+    {
+      "name": "救援车辆及气体防护车物资",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3 企业应急救援队伍主要抢险救援车辆的技术性能应符合表5的要求 ,气体防护车内应急救援物资配备应符合表 G的要求。",
+      "type": "语义分解",
+      "subject": "救援车辆及气体防护车物资",
+      "action": "",
+      "operation": "按表满足性能及配置要求",
+      "condition": "",
+      "constraint": "7.2.3 企业应急救援队伍主要抢险救援车辆的技术性能应符合表5的要求 ,气体防护车内应急救援物资配备应符合表 G的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "救援车辆及气体防护车物资"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3810,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺表5及表G，G标号疑似识别错误"
+      ]
+    }
+  }
+}

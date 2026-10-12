@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.8.4.1.1",
+  "entities": [
+    {
+      "name": "站区防火及压力附件管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8.4.1.1 站区严禁吸烟和使用明火。各种压力容器的安全阀,液面计,压力表应由专人负责定期检验,有记录并存档。",
+      "type": "语义分解",
+      "subject": "站区防火及压力附件管理",
+      "action": "",
+      "operation": "禁烟明火专人定检附件并归档",
+      "condition": "",
+      "constraint": "5.8.4.1.1 站区严禁吸烟和使用明火。各种压力容器的安全阀,液面计,压力表应由专人负责定期检验,有记录并存档。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站区防火及压力附件管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4552,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

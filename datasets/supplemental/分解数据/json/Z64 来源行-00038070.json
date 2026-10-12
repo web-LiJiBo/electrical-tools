@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "来源行-00038070",
+  "entities": [
+    {
+      "name": "为贯彻落实《中华人民共和国环境保护法》,保护农用地土壤环境，管控农用地土",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   为贯彻落实《中华人民共和国环境保护法》,保护农用地土壤环境，管控农用地土壤污染风险，保\n障农产品质量安全、农作物正常生长和土壤生态环境，制定本标准。",
+      "type": "语义分解",
+      "subject": "为贯彻落实《中华人民共和国环境保护法》,保护农用地土壤环境，管控农用地土",
+      "action": "",
+      "operation": "为贯彻落实《中华人民共和国环境保护法》,保护农用地土壤环境，管控农用地土壤污染风险，保 障农产品质量安全、农作物正常生长和土壤生态环境，制定本标准。",
+      "condition": "",
+      "constraint": "   为贯彻落实《中华人民共和国环境保护法》,保护农用地土壤环境，管控农用地土壤污染风险，保\n障农产品质量安全、农作物正常生长和土壤生态环境，制定本标准。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为贯彻落实《中华人民共和国环境保护法》,保护农用地土壤环境，管控农用地土"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38070,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

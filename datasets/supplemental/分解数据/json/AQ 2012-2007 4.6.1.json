@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.6.1",
+  "entities": [
+    {
+      "name": "潜在突发事件应急预案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.1 应系统地识别和确定潜在突发事件 ,并充分考虑作业内容,环境条件 ,设施类型 ,应急救援资源等因素 ,编制应急预案。",
+      "type": "语义分解",
+      "subject": "潜在突发事件应急预案",
+      "action": "",
+      "operation": "系统识别并综合作业环境设施资源编制",
+      "condition": "",
+      "constraint": "4.6.1 应系统地识别和确定潜在突发事件 ,并充分考虑作业内容,环境条件 ,设施类型 ,应急救援资源等因素 ,编制应急预案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "潜在突发事件应急预案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4241,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

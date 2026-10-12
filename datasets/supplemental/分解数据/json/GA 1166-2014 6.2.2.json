@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "管道沿线标识",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 应根据《中华人民共和国石油天然气管道保护法》和有关标谁规范的规定.在管道沿线设置里程 桩 .标志桩 .警示牌=",
+      "type": "语义分解",
+      "subject": "管道沿线标识",
+      "action": "",
+      "operation": "依法设置里程桩标志桩警示牌",
+      "condition": "",
+      "constraint": "6.2.2 应根据《中华人民共和国石油天然气管道保护法》和有关标谁规范的规定.在管道沿线设置里程 桩 .标志桩 .警示牌=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道沿线标识"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5434,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文存在识别异常"
+      ]
+    }
+  }
+}

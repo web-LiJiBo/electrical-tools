@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.1.1.4",
+  "entities": [
+    {
+      "name": "大气气象参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1.4 气象参数 8) 一级评价, 需选取最不利气象条件及事故发生地的最常见气象条件分别进行后果预测。 其中最不利气象条件取F类稳定度, 1.5 ms 风速。温度 25C,相对湿度509;  最常见气象条件由当地近3年内的至少连续1年气象观测资料统计分析得出,包括出现频率最高的稳定度,该稳定度下的平均风速(非静风) 日最高平均气温,年平均湿度。 b)二级评价, 需选取最不利气象条件进行后果预测 _ 最不利气象条件取F类稳定度。风速1.5 mls, 温度25C, 相对湿度500。",
+      "type": "语义分解",
+      "subject": "大气气象参数",
+      "action": "",
+      "operation": "一级最不利与常见分别预测二级最不利历史资料统计常见条件",
+      "condition": "",
+      "constraint": "9.1.1.4 气象参数 8) 一级评价, 需选取最不利气象条件及事故发生地的最常见气象条件分别进行后果预测。 其中最不利气象条件取F类稳定度, 1.5 ms 风速。温度 25C,相对湿度509;  最常见气象条件由当地近3年内的至少连续1年气象观测资料统计分析得出,包括出现频率最高的稳定度,该稳定度下的平均风速(非静风) 日最高平均气温,年平均湿度。 b)二级评价, 需选取最不利气象条件进行后果预测 _ 最不利气象条件取F类稳定度。风速1.5 mls, 温度25C, 相对湿度500。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气气象参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2504,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；湿度509和500及单位异常不得猜测"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003336",
+  "entities": [
+    {
+      "name": "第十五条 SIS设计应遵循安全完整性原则,独立原则,故障安全原则,优先原",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十五条 SIS设计应遵循安全完整性原则,独立原则,故障安全原则,优先原则,简化原则,应通过仪表设备选择,冗余设置及故障自诊断等手段优化SIS设计,确保SIS实现必要的风险降低要求。油气管道站库,LNG接收站,储气库SIS设计宜满足GB/21109的相关要求,油气管道站库SIS设计还应满足SY/T 6966的相关要求,LNG接收站SIS设计还应满足GB/50770的相关要求,储气库SIS设计还应满足SY/T 7351的相关要求。",
+      "type": "语义分解",
+      "subject": "第十五条 SIS设计应遵循安全完整性原则,独立原则,故障安全原则,优先原",
+      "action": "",
+      "operation": "第十五条 SIS设计应遵循安全完整性原则,独立原则,故障安全原则,优先原则,简化原则,应通过仪表设备选择,冗余设置及故障自诊断等手段优化SIS设计,确保SIS实现必要的风险降低要求。油气管道站库,LNG接收站,储气库SIS设计宜满足GB/21109的相关要求,油气管道站库SIS设计还应满足SY/T 6966的相关要求,LNG接收站SIS设计还应满足GB/50770的相关要求,储气库SIS设计还应满足SY/T 7351的相关要求。",
+      "condition": "",
+      "constraint": "第十五条 SIS设计应遵循安全完整性原则,独立原则,故障安全原则,优先原则,简化原则,应通过仪表设备选择,冗余设置及故障自诊断等手段优化SIS设计,确保SIS实现必要的风险降低要求。油气管道站库,LNG接收站,储气库SIS设计宜满足GB/21109的相关要求,油气管道站库SIS设计还应满足SY/T 6966的相关要求,LNG接收站SIS设计还应满足GB/50770的相关要求,储气库SIS设计还应满足SY/T 7351的相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十五条 SIS设计应遵循安全完整性原则,独立原则,故障安全原则,优先原"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3336,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

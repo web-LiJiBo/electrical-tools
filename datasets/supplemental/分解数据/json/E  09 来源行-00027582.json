@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027582",
+  "entities": [
+    {
+      "name": "AQ2037—2012 石油行业安全生产标准化 导则 SY 0007 钢",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "AQ2037—2012     石油行业安全生产标准化  导则\n\nSY 0007    钢质管道及储罐腐蚀控制工程设计规范\n\nSY/ T  0043    油气田地面管线和设备涂色规范\n\nSY/T   6064  管道干线标记设置技术规定",
+      "type": "语义分解",
+      "subject": "AQ2037—2012 石油行业安全生产标准化 导则 SY 0007 钢",
+      "action": "",
+      "operation": "AQ2037—2012 石油行业安全生产标准化 导则 SY 0007 钢质管道及储罐腐蚀控制工程设计规范 SY/ T 0043 油气田地面管线和设备涂色规范 SY/T 6064 管道干线标记设置技术规定",
+      "condition": "",
+      "constraint": "AQ2037—2012     石油行业安全生产标准化  导则\n\nSY 0007    钢质管道及储罐腐蚀控制工程设计规范\n\nSY/ T  0043    油气田地面管线和设备涂色规范\n\nSY/T   6064  管道干线标记设置技术规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "AQ2037—2012 石油行业安全生产标准化 导则 SY 0007 钢"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27582,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.1.3",
+  "entities": [
+    {
+      "name": "有线主备通信路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.3    主 、备传输系统均为有线传输方式时 ,  为尽可能避免在\n地震 、洪水等地面自然灾害中主备电路同时失效 ,  则主备电路\n宜避免大范围相同的线路路由 ,  无法避免时则备用电路建议采\n用 VSAT 卫星或其他无线方式 。",
+      "type": "语义分解",
+      "subject": "有线主备通信路由",
+      "action": "",
+      "operation": "宜避免大范围相同无法避免建议备用VSAT或其他无线",
+      "condition": "",
+      "constraint": "4.1.3    主 、备传输系统均为有线传输方式时 ,  为尽可能避免在\n地震 、洪水等地面自然灾害中主备电路同时失效 ,  则主备电路\n宜避免大范围相同的线路路由 ,  无法避免时则备用电路建议采\n用 VSAT 卫星或其他无线方式 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "有线主备通信路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12340,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明性内容"
+      ]
+    }
+  }
+}

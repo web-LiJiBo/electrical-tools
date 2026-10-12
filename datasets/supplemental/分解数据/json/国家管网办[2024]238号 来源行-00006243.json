@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006243",
+  "entities": [
+    {
+      "name": "第十九条 {作业前通用管理 ] (八)自制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十九条 {作业前通用管理 ] (八)自制。改造的设备机具,必须经具有检验资质的机构检验合格后方可使用 ,禁止擅自改装 ,相关设计资料 (包括图纸 计算书等 )存档备查。",
+      "type": "语义分解",
+      "subject": "第十九条 {作业前通用管理 ] (八)自制",
+      "action": "",
+      "operation": "第十九条 {作业前通用管理 ] (八)自制。改造的设备机具,必须经具有检验资质的机构检验合格后方可使用 ,禁止擅自改装 ,相关设计资料 (包括图纸 计算书等 )存档备查。",
+      "condition": "",
+      "constraint": "第十九条 {作业前通用管理 ] (八)自制。改造的设备机具,必须经具有检验资质的机构检验合格后方可使用 ,禁止擅自改装 ,相关设计资料 (包括图纸 计算书等 )存档备查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十九条 {作业前通用管理 ] (八)自制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

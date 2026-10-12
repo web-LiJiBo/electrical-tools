@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042555",
+  "entities": [
+    {
+      "name": "a 阴极电位限制应同时确保阴极保护系统对管道涂层不产生不良影响",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a     阴极电位限制应同时确保阴极保护系统对管道涂层不产生不良影响 。\nb    对于高强钢管道系统(SMYS> 550 MPa) ,应确定不产生氢脆的最负阴极保护电位 。\n                        C,          .       [           .                          。氧条件 。\ne    根据强度 、特殊金相条件和服役环境中承受的压力等级不同 ,合金易发生氢脆和开裂 。如果存在氢脆 风 险 ,则\n宜避免阴极电位低于 -0. 8 V。\nf    考虑了 SRB菌作用和管道温度 >60 ℃的情况 。\ng    如果不锈钢材料的金相结构不完全为奥氏体 ,则该不锈钢易发生氢致开裂 (HISC)  ,宜避免阴极电位过负 。",
+      "type": "语义分解",
+      "subject": "a 阴极电位限制应同时确保阴极保护系统对管道涂层不产生不良影响",
+      "action": "",
+      "operation": "a 阴极电位限制应同时确保阴极保护系统对管道涂层不产生不良影响 。 b 对于高强钢管道系统(SMYS> 550 MPa) ,应确定不产生氢脆的最负阴极保护电位 。 C, . [ . 。氧条件 。 e 根据强度 、特殊金相条件和服役环境中承受的压力等级不同 ,合金易发生氢脆和开裂 。如果存在氢脆 风 险 ,则 宜避免阴极电位低于 -0. 8 V。 f 考虑了 SRB菌作用和管道温度 >60 ℃的情况 。 g 如果不锈钢材料的金相结构不完全为奥氏体 ,则该不锈钢易发生氢致开裂 (",
+      "condition": "",
+      "constraint": "a     阴极电位限制应同时确保阴极保护系统对管道涂层不产生不良影响 。\nb    对于高强钢管道系统(SMYS> 550 MPa) ,应确定不产生氢脆的最负阴极保护电位 。\n                        C,          .       [           .                          。氧条件 。\ne    根据强度 、特殊金相条件和服役环境中承受的压力等级不同 ,合金易发生氢脆和开裂 。如果存在氢脆 风 险 ,则\n宜避免阴极电位低于 -0. 8 V。\nf    考虑了 SRB菌作用和管道温度 >60 ℃的情况 。\ng    如果不锈钢材料的金相结构不完全为奥氏体 ,则该不锈钢易发生氢致开裂 (HISC)  ,宜避免阴极电位过负 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a 阴极电位限制应同时确保阴极保护系统对管道涂层不产生不良影响"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42555,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041443",
+  "entities": [
+    {
+      "name": "应关闭和回填所有的坑和地表蓄留设施，记录报废坑的位置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   应关闭和回填所有的坑和地表蓄留设施，记录报废坑的位置。从坑内清出的物质应进行回收、重\n复利用或处置，其他内容参见《API 环境指南：陆上石油勘探和开发固体废物管理》。\n7.9.4  土壤恢复",
+      "type": "语义分解",
+      "subject": "应关闭和回填所有的坑和地表蓄留设施，记录报废坑的位置",
+      "action": "",
+      "operation": "应关闭和回填所有的坑和地表蓄留设施，记录报废坑的位置。从坑内清出的物质应进行回收、重 复利用或处置，其他内容参见《API 环境指南：陆上石油勘探和开发固体废物管理》。 7.9.4 土壤恢复",
+      "condition": "",
+      "constraint": "   应关闭和回填所有的坑和地表蓄留设施，记录报废坑的位置。从坑内清出的物质应进行回收、重\n复利用或处置，其他内容参见《API 环境指南：陆上石油勘探和开发固体废物管理》。\n7.9.4  土壤恢复",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应关闭和回填所有的坑和地表蓄留设施，记录报废坑的位置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41443,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

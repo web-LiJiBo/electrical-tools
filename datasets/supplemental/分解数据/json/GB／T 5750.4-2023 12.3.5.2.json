@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.3.5.2",
+  "entities": [
+    {
+      "name": "连续流动酚仪器调试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.5.2 仪器操作 按照仪器说明书流程图安装挥发酚模块，依次将管路放入对应的试剂瓶中，并按照给出的最佳工作参数进行仪器调试，使仪器基线、峰高等各项指标达到测定要求，待基线平稳之后，自动进样。仪器参考条件见表14。(表格删除)",
+      "type": "语义分解",
+      "subject": "连续流动酚仪器调试",
+      "action": "",
+      "operation": "依说明书安装模块对应试剂调基线峰高达要求稳定后进样",
+      "condition": "",
+      "constraint": "12.3.5.2 仪器操作 按照仪器说明书流程图安装挥发酚模块，依次将管路放入对应的试剂瓶中，并按照给出的最佳工作参数进行仪器调试，使仪器基线、峰高等各项指标达到测定要求，待基线平稳之后，自动进样。仪器参考条件见表14。(表格删除)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续流动酚仪器调试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1514,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表14删除"
+      ]
+    }
+  }
+}

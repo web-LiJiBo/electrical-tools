@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "10.3.5",
+  "entities": [
+    {
+      "name": "混合废气监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.5  当执行不同排放控制要求的废气合并排气筒排放时，应在废气混合前进行监测，并执行相应的\n排放控制要求；若可选择的监控位置只能对混合后的废气进行监测，则应按各排放控制要求中最严格的\n规定执行。",
+      "type": "语义分解",
+      "subject": "混合废气监测",
+      "action": "",
+      "operation": "混前按各要求仅能混后按最严",
+      "condition": "",
+      "constraint": "10.3.5  当执行不同排放控制要求的废气合并排气筒排放时，应在废气混合前进行监测，并执行相应的\n排放控制要求；若可选择的监控位置只能对混合后的废气进行监测，则应按各排放控制要求中最严格的\n规定执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "混合废气监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33450,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

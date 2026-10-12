@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037882",
+  "entities": [
+    {
+      "name": "应包括报告主体名称、组织架构、经营地址、通讯地址、联系人、核算边界、输送",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   应包括报告主体名称、组织架构、经营地址、通讯地址、联系人、核算边界、输送产品及工\n\n艺流程简述、以及排放源识别情况的详细说明（必要时可附表和附图）。",
+      "type": "语义分解",
+      "subject": "应包括报告主体名称、组织架构、经营地址、通讯地址、联系人、核算边界、输送",
+      "action": "",
+      "operation": "应包括报告主体名称、组织架构、经营地址、通讯地址、联系人、核算边界、输送产品及工 艺流程简述、以及排放源识别情况的详细说明（必要时可附表和附图）。",
+      "condition": "",
+      "constraint": "   应包括报告主体名称、组织架构、经营地址、通讯地址、联系人、核算边界、输送产品及工\n\n艺流程简述、以及排放源识别情况的详细说明（必要时可附表和附图）。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应包括报告主体名称、组织架构、经营地址、通讯地址、联系人、核算边界、输送"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37882,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.3.6",
+  "entities": [
+    {
+      "name": "机架抗震及告警单元",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.6      机架、列架安装必须按工程设计的抗震要求进行加固，并\n且符合 YD 5059《电信设备安装抗震设计规范》的有关规定。\n3.3.7     告警显示单元安装位置端正合理，告警标示清楚。",
+      "type": "语义分解",
+      "subject": "机架抗震及告警单元",
+      "action": "",
+      "operation": "按设计及YD5059加固告警单元端正标识清楚",
+      "condition": "",
+      "constraint": "3.3.6      机架、列架安装必须按工程设计的抗震要求进行加固，并\n且符合 YD 5059《电信设备安装抗震设计规范》的有关规定。\n3.3.7     告警显示单元安装位置端正合理，告警标示清楚。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机架抗震及告警单元"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26694,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含3.3.6及3.3.7"
+      ]
+    }
+  }
+}

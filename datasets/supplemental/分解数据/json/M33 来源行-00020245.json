@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020245",
+  "entities": [
+    {
+      "name": "● 调整控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "●  调整控制：该功能在每个子块基于调整判决(负调整或无调整)产生调整判决调整控\n   制比特，产生调整时将调整控制信息插入五个J 字节比特8,其余J 字节比特置为全\n    “0”,五个J 字节在一个子块有相同值。",
+      "type": "语义分解",
+      "subject": "● 调整控制",
+      "action": "",
+      "operation": "● 调整控制：该功能在每个子块基于调整判决(负调整或无调整)产生调整判决调整控 制比特，产生调整时将调整控制信息插入五个J 字节比特8,其余J 字节比特置为全 “0”,五个J 字节在一个子块有相同值。",
+      "condition": "",
+      "constraint": "●  调整控制：该功能在每个子块基于调整判决(负调整或无调整)产生调整判决调整控\n   制比特，产生调整时将调整控制信息插入五个J 字节比特8,其余J 字节比特置为全\n    “0”,五个J 字节在一个子块有相同值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "● 调整控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20245,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.4.5",
+  "entities": [
+    {
+      "name": "共用机房线缆路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.4.5    共用机房的通信线缆布放方式应与其他专业的线缆布放\n方式保持一致 ,  走线路由应与其他专业走线路由统筹规划 。\n14.4.6    带活动地板的机房内通信光  (电)  缆可采用带盖板的金\n属线槽 ,  在活动地板下走线。",
+      "type": "语义分解",
+      "subject": "共用机房线缆路由",
+      "action": "",
+      "operation": "与其他专业统筹一致活动地板下可用带盖金属槽",
+      "condition": "",
+      "constraint": "14.4.5    共用机房的通信线缆布放方式应与其他专业的线缆布放\n方式保持一致 ,  走线路由应与其他专业走线路由统筹规划 。\n14.4.6    带活动地板的机房内通信光  (电)  缆可采用带盖板的金\n属线槽 ,  在活动地板下走线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "共用机房线缆路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12087,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含14.4.5及14.4.6保留"
+      ]
+    }
+  }
+}

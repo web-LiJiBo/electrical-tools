@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.2.4.7",
+  "entities": [
+    {
+      "name": "采样结束核查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4.7 采样结束前核查 采样结束前,应核对采样计划 记录与水样, 如有错误或遗漏 应立即重新采样或补采。",
+      "type": "语义分解",
+      "subject": "采样结束核查",
+      "action": "",
+      "operation": "核对计划记录水样并补采错误遗漏",
+      "condition": "采样结束前",
+      "constraint": "4.2.4.7 采样结束前核查 采样结束前,应核对采样计划 记录与水样, 如有错误或遗漏 应立即重新采样或补采。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样结束核查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2966,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

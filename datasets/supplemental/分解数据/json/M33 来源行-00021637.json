@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021637",
+  "entities": [
+    {
+      "name": "— dLOA",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—  dLOA:  如果同步处理不能将独立的 Sm 同步进公共的复帧起始(即如果延时差超过同步\n    缓存器规格)应检出dLOA。详细过程待定。",
+      "type": "语义分解",
+      "subject": "— dLOA",
+      "action": "",
+      "operation": "— dLOA: 如果同步处理不能将独立的 Sm 同步进公共的复帧起始(即如果延时差超过同步 缓存器规格)应检出dLOA。详细过程待定。",
+      "condition": "",
+      "constraint": "—  dLOA:  如果同步处理不能将独立的 Sm 同步进公共的复帧起始(即如果延时差超过同步\n    缓存器规格)应检出dLOA。详细过程待定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— dLOA"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21637,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

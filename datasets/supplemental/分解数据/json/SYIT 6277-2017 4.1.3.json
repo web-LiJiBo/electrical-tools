@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "4.1.3",
+  "entities": [
+    {
+      "name": "疑似职业病",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.3 对疑似职业病患者应到政府卫生行政主管部门认可的机构进行确诊。",
+      "type": "语义分解",
+      "subject": "疑似职业病",
+      "action": "",
+      "operation": "政府认可机构确诊",
+      "condition": "",
+      "constraint": "4.1.3 对疑似职业病患者应到政府卫生行政主管部门认可的机构进行确诊。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "疑似职业病"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

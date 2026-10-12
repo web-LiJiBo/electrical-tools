@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "7.3.3",
+  "entities": [
+    {
+      "name": "硫化氢超限响应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3 遇到下列情况时,应立即采取以下措施 : a) 当空气中检测到硫化氢肘,应立即进行告知。 b) 当空气中浓度超过阈限值时,应及肘通知现场人员,加密观察和检测空气中硫化氢浓度。检查泄漏点,并准备好正压式空气呼吸器 C ) 当空气中浓度超过安全临界浓度但小于危险临界浓度时, 无防护的人员应按第8章的规定进行应急撤离 ;在海上作业时 应通知守护船在平台上风向海域起锚待命。 d) 当空气中含硫化氢浓度达到危险临界浓度时。有防护的现场工作人员应按第8章的规定进行应急撤离",
+      "type": "语义分解",
+      "subject": "硫化氢超限响应",
+      "action": "",
+      "operation": "告知人员加密检测查漏备呼吸器超安全临界无防护撤离达到危险临界有防护也撤离",
+      "condition": "",
+      "constraint": "7.3.3 遇到下列情况时,应立即采取以下措施 : a) 当空气中检测到硫化氢肘,应立即进行告知。 b) 当空气中浓度超过阈限值时,应及肘通知现场人员,加密观察和检测空气中硫化氢浓度。检查泄漏点,并准备好正压式空气呼吸器 C ) 当空气中浓度超过安全临界浓度但小于危险临界浓度时, 无防护的人员应按第8章的规定进行应急撤离 ;在海上作业时 应通知守护船在平台上风向海域起锚待命。 d) 当空气中含硫化氢浓度达到危险临界浓度时。有防护的现场工作人员应按第8章的规定进行应急撤离",
+      "constraint_role": "informational",
+      "related_entities": [
+        "硫化氢超限响应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7479,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

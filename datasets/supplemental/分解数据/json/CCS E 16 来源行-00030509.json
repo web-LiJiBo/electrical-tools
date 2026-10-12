@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00030509",
+  "entities": [
+    {
+      "name": "d) 跨越下部结构技术状况的评估应逐墩(台)进行，然后再计算整个跨越下部",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "d)  跨越下部结构技术状况的评估应逐墩(台)进行，然后再计算整个跨越下部结构的技术状况\n   指数BCI,   并可按公式( D.11)～ 公式(D.15) 计算：",
+      "type": "语义分解",
+      "subject": "d) 跨越下部结构技术状况的评估应逐墩(台)进行，然后再计算整个跨越下部",
+      "action": "",
+      "operation": "d) 跨越下部结构技术状况的评估应逐墩(台)进行，然后再计算整个跨越下部结构的技术状况 指数BCI, 并可按公式( D.11)～ 公式(D.15) 计算",
+      "condition": "",
+      "constraint": "d)  跨越下部结构技术状况的评估应逐墩(台)进行，然后再计算整个跨越下部结构的技术状况\n   指数BCI,   并可按公式( D.11)～ 公式(D.15) 计算：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 跨越下部结构技术状况的评估应逐墩(台)进行，然后再计算整个跨越下部"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30509,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

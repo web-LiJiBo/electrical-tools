@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.1.2",
+  "entities": [
+    {
+      "name": "测井人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.1.2 测井作业时 ,测井人员应正确穿戴劳动防护用品。作业区域内应戴安全帽 ,应遵守井场防火防爆安全制度 ,不动用钻井队(作业队,采油队)设备或不攀登高层平台。",
+      "type": "语义分解",
+      "subject": "测井人员",
+      "action": "",
+      "operation": "正确防护戴安全帽遵守防火爆制度不得动用他队设备攀高台",
+      "condition": "",
+      "constraint": "5.4.2.1.2 测井作业时 ,测井人员应正确穿戴劳动防护用品。作业区域内应戴安全帽 ,应遵守井场防火防爆安全制度 ,不动用钻井队(作业队,采油队)设备或不攀登高层平台。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测井人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4375,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

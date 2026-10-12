@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043518",
+  "entities": [
+    {
+      "name": "注 1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注 1 ：参比电极—饱和甘汞电极。\n注 2：介质—海水介质采用人造海水或天然海水；土壤介质采用潮湿土壤，且阳极周围添加填充料；海泥采用天\n            然海泥或模拟电解液。  介质温度为常温。\n注 3：工作电流密度—海水和海泥介质中取 1 mA/ cm2 ,土壤介质中为 0 . 03 mA/ cm2 。",
+      "type": "语义分解",
+      "subject": "注 1",
+      "action": "",
+      "operation": "注 1 ：参比电极—饱和甘汞电极。 注 2：介质—海水介质采用人造海水或天然海水；土壤介质采用潮湿土壤，且阳极周围添加填充料；海泥采用天 然海泥或模拟电解液。 介质温度为常温。 注 3：工作电流密度—海水和海泥介质中取 1 mA/ cm2 ,土壤介质中为 0 . 03 mA/ cm2 。",
+      "condition": "",
+      "constraint": "注 1 ：参比电极—饱和甘汞电极。\n注 2：介质—海水介质采用人造海水或天然海水；土壤介质采用潮湿土壤，且阳极周围添加填充料；海泥采用天\n            然海泥或模拟电解液。  介质温度为常温。\n注 3：工作电流密度—海水和海泥介质中取 1 mA/ cm2 ,土壤介质中为 0 . 03 mA/ cm2 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注 1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43518,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

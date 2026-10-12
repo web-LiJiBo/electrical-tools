@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.2.1.2",
+  "entities": [
+    {
+      "name": "污染物实际排放量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.2 对于排污许可证未要求采用自动监测的污染物项目,可采用自动监测数据按照式(1) 或手工监测数据按照式(2)核算污染物实际排放量:",
+      "type": "语义分解",
+      "subject": "污染物实际排放量",
+      "action": "",
+      "operation": "按自动或手工监测数据和对应公式核算",
+      "condition": "对于排污许可证未要求采用自动监测的污染物项目",
+      "constraint": "5.2.1.2 对于排污许可证未要求采用自动监测的污染物项目,可采用自动监测数据按照式(1) 或手工监测数据按照式(2)核算污染物实际排放量:",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染物实际排放量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 628,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺式1、2"
+      ]
+    }
+  }
+}

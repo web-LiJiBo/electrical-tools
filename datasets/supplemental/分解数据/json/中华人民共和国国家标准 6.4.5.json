@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.4.5",
+  "entities": [
+    {
+      "name": "高风险基站馈线防雷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.5        建在城市内孤立的高大建筑物或建在郊区及山区地处中\n雷区以上的基站，当馈线较长时，应在机房入口处安装馈线SPD, 也\n可在设备中内置SPD, 馈线 SPD 的接地线应连接到馈线窗接地排。\n6.4.6       基站设在办公大楼、大型宾馆、高层建筑和居民楼内时，\n其天(馈)线接地应充分利用楼顶避雷带、避雷网、预留的接地端子\n以及建筑物楼顶的各类可能与地构成回路的金属管道。",
+      "type": "语义分解",
+      "subject": "高风险基站馈线防雷",
+      "action": "",
+      "operation": "长馈线入口或内置SPD接馈线窗排楼内基站利用屋顶接地构件",
+      "condition": "",
+      "constraint": "6.4.5        建在城市内孤立的高大建筑物或建在郊区及山区地处中\n雷区以上的基站，当馈线较长时，应在机房入口处安装馈线SPD, 也\n可在设备中内置SPD, 馈线 SPD 的接地线应连接到馈线窗接地排。\n6.4.6       基站设在办公大楼、大型宾馆、高层建筑和居民楼内时，\n其天(馈)线接地应充分利用楼顶避雷带、避雷网、预留的接地端子\n以及建筑物楼顶的各类可能与地构成回路的金属管道。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高风险基站馈线防雷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22714,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含6.4.5及6.4.6完整条件须复核"
+      ]
+    }
+  }
+}

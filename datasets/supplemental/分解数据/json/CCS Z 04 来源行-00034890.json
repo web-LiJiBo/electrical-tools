@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034890",
+  "entities": [
+    {
+      "name": "报告主体如有不可忽略的其他间接排放 ,包括但不限于交通运输环节产生排放 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      报告主体如有不可忽略的其他间接排放 ,包括但不限于交通运输环节产生排放 、所使用的产品和服\n务隐含的排放 、所生产的产品和服务的排放以及其他排放四种主要类别 , 宜单独核算并在报告中给予\n说明 。",
+      "type": "语义分解",
+      "subject": "报告主体如有不可忽略的其他间接排放 ,包括但不限于交通运输环节产生排放 ",
+      "action": "",
+      "operation": "报告主体如有不可忽略的其他间接排放 ,包括但不限于交通运输环节产生排放 、所使用的产品和服 务隐含的排放 、所生产的产品和服务的排放以及其他排放四种主要类别 , 宜单独核算并在报告中给予 说明 。",
+      "condition": "",
+      "constraint": "      报告主体如有不可忽略的其他间接排放 ,包括但不限于交通运输环节产生排放 、所使用的产品和服\n务隐含的排放 、所生产的产品和服务的排放以及其他排放四种主要类别 , 宜单独核算并在报告中给予\n说明 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报告主体如有不可忽略的其他间接排放 ,包括但不限于交通运输环节产生排放 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34890,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023309",
+  "entities": [
+    {
+      "name": "基站的地网作为复合接地体(以水平接地体为主，且边缘闭 合)的接地电阻",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   基站的地网作为复合接地体(以水平接地体为主，且边缘闭\n合)的接地电阻：",
+      "type": "语义分解",
+      "subject": "基站的地网作为复合接地体(以水平接地体为主，且边缘闭 合)的接地电阻",
+      "action": "",
+      "operation": "基站的地网作为复合接地体(以水平接地体为主，且边缘闭 合)的接地电阻",
+      "condition": "",
+      "constraint": "   基站的地网作为复合接地体(以水平接地体为主，且边缘闭\n合)的接地电阻：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基站的地网作为复合接地体(以水平接地体为主，且边缘闭 合)的接地电阻"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23309,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

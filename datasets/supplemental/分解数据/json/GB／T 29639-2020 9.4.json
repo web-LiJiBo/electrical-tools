@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "9.4",
+  "entities": [
+    {
+      "name": "应急物资装备清单",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.4 应急物资装备的名录或清单 列出应急预案涉及的主要物资和装备名称、型号、性能、数量、存放地点、运输和使用条件、管理责任人和联系电话等。",
+      "type": "语义分解",
+      "subject": "应急物资装备清单",
+      "action": "",
+      "operation": "列出型号性能数量地点使用条件责任人",
+      "condition": "",
+      "constraint": "9.4 应急物资装备的名录或清单 列出应急预案涉及的主要物资和装备名称、型号、性能、数量、存放地点、运输和使用条件、管理责任人和联系电话等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急物资装备清单"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4194,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

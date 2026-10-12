@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "8.1.3",
+  "entities": [
+    {
+      "name": "水实验室原始记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.3 实验室原始记录 实验室各种原始记录至少包括: 样品编号。采样日期和时间 分析方法。分析仪器名称及型号。测定项目 分析日期和时间一 标准溶液名称和浓度及配制日期,取样体积。计量单位,测定值,计算公式 校准曲线。质控措施。分析人员 校核人员。审核人员等信息",
+      "type": "语义分解",
+      "subject": "水实验室原始记录",
+      "action": "",
+      "operation": "至少样采分析仪器标准体积单位值公式曲线质控及人员",
+      "condition": "",
+      "constraint": "8.1.3 实验室原始记录 实验室各种原始记录至少包括: 样品编号。采样日期和时间 分析方法。分析仪器名称及型号。测定项目 分析日期和时间一 标准溶液名称和浓度及配制日期,取样体积。计量单位,测定值,计算公式 校准曲线。质控措施。分析人员 校核人员。审核人员等信息",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水实验室原始记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3013,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

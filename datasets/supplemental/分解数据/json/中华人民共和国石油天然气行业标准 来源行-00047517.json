@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047517",
+  "entities": [
+    {
+      "name": "试片通断周期宜大于5s, 其中断电时间不宜超过1s, 试 片断电电位读取",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   3 试片通断周期宜大于5s, 其中断电时间不宜超过1s,  试\n片断电电位读取延迟时间宜为100ms～200ms;",
+      "type": "语义分解",
+      "subject": "试片通断周期宜大于5s, 其中断电时间不宜超过1s, 试 片断电电位读取",
+      "action": "",
+      "operation": "试片通断周期宜大于5s, 其中断电时间不宜超过1s, 试 片断电电位读取延迟时间宜为100ms～200ms",
+      "condition": "",
+      "constraint": "   3 试片通断周期宜大于5s, 其中断电时间不宜超过1s,  试\n片断电电位读取延迟时间宜为100ms～200ms;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试片通断周期宜大于5s, 其中断电时间不宜超过1s, 试 片断电电位读取"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47517,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

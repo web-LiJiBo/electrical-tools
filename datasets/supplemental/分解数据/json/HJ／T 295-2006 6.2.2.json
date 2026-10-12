@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "监察档案借阅保密",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 建立环境监察档案的借阅 . 保密等制度。借阅。查阅环境监察档案必须履行档案借阅和归还手续。凡查阅涉及国家机密的环境监察档案时,必须经过分管档案工作的行政领导批准; 查阅未公开的档案,必须经过有关业务部门负责人的批准; 摘录和复制档案,必须经过环境监察档案管理机构负责人的批推。档案利用者应对所借档案负安全和保密责任。不得泄密,遗失。擅自转借。严禁剪裁。勾画。涂抹。污损档案。",
+      "type": "语义分解",
+      "subject": "监察档案借阅保密",
+      "action": "",
+      "operation": "建制度履手续秘密未公开复制分级批准利用者保安全不损档案",
+      "condition": "",
+      "constraint": "6.2.2 建立环境监察档案的借阅 . 保密等制度。借阅。查阅环境监察档案必须履行档案借阅和归还手续。凡查阅涉及国家机密的环境监察档案时,必须经过分管档案工作的行政领导批准; 查阅未公开的档案,必须经过有关业务部门负责人的批准; 摘录和复制档案,必须经过环境监察档案管理机构负责人的批推。档案利用者应对所借档案负安全和保密责任。不得泄密,遗失。擅自转借。严禁剪裁。勾画。涂抹。污损档案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监察档案借阅保密"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3114,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

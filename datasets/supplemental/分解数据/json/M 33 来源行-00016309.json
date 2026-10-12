@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016309",
+  "entities": [
+    {
+      "name": "c) 对于现网测试和其他一些单台业务分析仪无法连接被保护业务两端等情形，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      c) 对于现网测试和其他一些单台业务分析仪无法连接被保护业务两端等情形，应采用两端挂表或者\n\n远端环回的方式进行测试。基于环回测试配置的实际业务受损时间应为仪表测试业务受损时间减去环回\n本身产生的时延值。",
+      "type": "语义分解",
+      "subject": "c) 对于现网测试和其他一些单台业务分析仪无法连接被保护业务两端等情形，",
+      "action": "",
+      "operation": "c) 对于现网测试和其他一些单台业务分析仪无法连接被保护业务两端等情形，应采用两端挂表或者 远端环回的方式进行测试。基于环回测试配置的实际业务受损时间应为仪表测试业务受损时间减去环回 本身产生的时延值。",
+      "condition": "",
+      "constraint": "      c) 对于现网测试和其他一些单台业务分析仪无法连接被保护业务两端等情形，应采用两端挂表或者\n\n远端环回的方式进行测试。基于环回测试配置的实际业务受损时间应为仪表测试业务受损时间减去环回\n本身产生的时延值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 对于现网测试和其他一些单台业务分析仪无法连接被保护业务两端等情形，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16309,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

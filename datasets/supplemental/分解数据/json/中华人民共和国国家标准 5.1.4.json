@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "废气治理方案应优先选择避免产生二次污染的工艺和技 术，有二次污染产生时应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4       废气治理方案应优先选择避免产生二次污染的工艺和技\n术，有二次污染产生时应对二次污染物进行治理。",
+      "type": "语义分解",
+      "subject": "废气治理方案应优先选择避免产生二次污染的工艺和技 术，有二次污染产生时应",
+      "action": "",
+      "operation": "废气治理方案应优先选择避免产生二次污染的工艺和技 术，有二次污染产生时应对二次污染物进行治理。",
+      "condition": "",
+      "constraint": "5.1.4       废气治理方案应优先选择避免产生二次污染的工艺和技\n术，有二次污染产生时应对二次污染物进行治理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废气治理方案应优先选择避免产生二次污染的工艺和技 术，有二次污染产生时应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40040,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

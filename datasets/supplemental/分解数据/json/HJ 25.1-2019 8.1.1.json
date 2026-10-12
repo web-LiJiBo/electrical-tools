@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "第一阶段报告格式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1 报告内容和格式 对第一阶段调查过程和结果进行分析,总结和评价。 内容主要包括土壤污染状况调查的概述。地块的描述。资料分析。现场踏勘。人员访谈。结果和分析,调查结论与建议。附件等。报告格式可参照附录 A。",
+      "type": "语义分解",
+      "subject": "第一阶段报告格式",
+      "action": "",
+      "operation": "分析评价过程结果含地块资料踏勘访谈分析结论建议附件",
+      "condition": "",
+      "constraint": "8.1.1 报告内容和格式 对第一阶段调查过程和结果进行分析,总结和评价。 内容主要包括土壤污染状况调查的概述。地块的描述。资料分析。现场踏勘。人员访谈。结果和分析,调查结论与建议。附件等。报告格式可参照附录 A。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第一阶段报告格式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2670,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录A未提供"
+      ]
+    }
+  }
+}

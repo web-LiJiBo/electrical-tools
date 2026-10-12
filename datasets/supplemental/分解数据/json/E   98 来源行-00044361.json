@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044361",
+  "entities": [
+    {
+      "name": "绝缘短管的长度应根据输送介质的体积占比、电阻率和 管径确定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.3   绝缘短管的长度应根据输送介质的体积占比、电阻率和\n管径确定。输送介质的电阻率大于1Ω ·m 或输送介质的体积小\n于管道容量的5%时，绝缘短管的长度应为管径的4倍；输送介\n质的电阻率不大于1Ω ·m,   且介质的体积超过管道容量的5%\n时，绝缘短管的长度应按照公式(4.4.3)计算；任何情况下绝\n缘短管的长度不应短于1m:",
+      "type": "语义分解",
+      "subject": "绝缘短管的长度应根据输送介质的体积占比、电阻率和 管径确定",
+      "action": "",
+      "operation": "绝缘短管的长度应根据输送介质的体积占比、电阻率和 管径确定。输送介质的电阻率大于1Ω ·m 或输送介质的体积小 于管道容量的5%时，绝缘短管的长度应为管径的4倍；输送介 质的电阻率不大于1Ω ·m, 且介质的体积超过管道容量的5% 时，绝缘短管的长度应按照公式(4.4.3)计算；任何情况下绝 缘短管的长度不应短于1m",
+      "condition": "",
+      "constraint": "4.4.3   绝缘短管的长度应根据输送介质的体积占比、电阻率和\n管径确定。输送介质的电阻率大于1Ω ·m 或输送介质的体积小\n于管道容量的5%时，绝缘短管的长度应为管径的4倍；输送介\n质的电阻率不大于1Ω ·m,   且介质的体积超过管道容量的5%\n时，绝缘短管的长度应按照公式(4.4.3)计算；任何情况下绝\n缘短管的长度不应短于1m:",
+      "constraint_role": "informational",
+      "related_entities": [
+        "绝缘短管的长度应根据输送介质的体积占比、电阻率和 管径确定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44361,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "3.5",
+  "entities": [
+    {
+      "name": "离散多点平均基准温度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5 离散多点平均法 average temperature method of multi-discrete points 当具备0.5 c潜排区边界线肘,以该边界线为参考,否则以当前影像不少于 100 km 范围内高于遥 感反演平均温度0.5 C区域的边界线为参考,在参考边界线外 200皿~500 n 缓冲区内,按相等间距布设基准参考位置,将此基准参考位置内遥感反演的平均温度作为基准温度的方法,称为离散多点平均法。 注:  离散多点平均法属于位置参考类型的方法,每景影像独立提取。",
+      "type": "语义分解",
+      "subject": "离散多点平均基准温度",
+      "action": "",
+      "operation": "按温排边界外缓冲区等间距参考点平均反演温度每景独立提取",
+      "condition": "",
+      "constraint": "3.5 离散多点平均法 average temperature method of multi-discrete points 当具备0.5 c潜排区边界线肘,以该边界线为参考,否则以当前影像不少于 100 km 范围内高于遥 感反演平均温度0.5 C区域的边界线为参考,在参考边界线外 200皿~500 n 缓冲区内,按相等间距布设基准参考位置,将此基准参考位置内遥感反演的平均温度作为基准温度的方法,称为离散多点平均法。 注:  离散多点平均法属于位置参考类型的方法,每景影像独立提取。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "离散多点平均基准温度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1937,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；距离单位温排字样识别异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016119",
+  "entities": [
+    {
+      "name": "c) 根据10GE LAN 映射方式选择OTN 被测设备和OTN 分析仪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      c) 根据10GE LAN 映射方式选择OTN 被测设备和OTN 分析仪之间的OTUk(k=2,2e,1e   等)接口；\n      d)  10GE 数据分析仪发送100%流量，检查10GE 数据分析仪是否有告警和丢包，OTN 分析仪是否\n有告警和误码。",
+      "type": "语义分解",
+      "subject": "c) 根据10GE LAN 映射方式选择OTN 被测设备和OTN 分析仪",
+      "action": "",
+      "operation": "c) 根据10GE LAN 映射方式选择OTN 被测设备和OTN 分析仪之间的OTUk(k=2,2e,1e 等)接口； d) 10GE 数据分析仪发送100%流量，检查10GE 数据分析仪是否有告警和丢包，OTN 分析仪是否 有告警和误码。",
+      "condition": "",
+      "constraint": "      c) 根据10GE LAN 映射方式选择OTN 被测设备和OTN 分析仪之间的OTUk(k=2,2e,1e   等)接口；\n      d)  10GE 数据分析仪发送100%流量，检查10GE 数据分析仪是否有告警和丢包，OTN 分析仪是否\n有告警和误码。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 根据10GE LAN 映射方式选择OTN 被测设备和OTN 分析仪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

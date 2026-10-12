@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.5.1",
+  "entities": [
+    {
+      "name": "危险物运输及测井现场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.5.1 危险物品的运输应设下列警示标志: 运输放射源和火工品的车辆(船舶)应设置相应的警示标志; 测井施工作业使用放射源和火工品的现场应设置相应的安全标志。",
+      "type": "语义分解",
+      "subject": "危险物运输及测井现场",
+      "action": "",
+      "operation": "放射源火工品设置对应警示标志",
+      "condition": "",
+      "constraint": "5.4.2.5.1 危险物品的运输应设下列警示标志: 运输放射源和火工品的车辆(船舶)应设置相应的警示标志; 测井施工作业使用放射源和火工品的现场应设置相应的安全标志。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危险物运输及测井现场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4404,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

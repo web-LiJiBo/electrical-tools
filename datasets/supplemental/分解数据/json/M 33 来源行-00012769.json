@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012769",
+  "entities": [
+    {
+      "name": "还应注意，性能指标的评估周期是一个月，所以上述 DOm的评估周期也是一个",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   还应注意，性能指标的评估周期是一个月，所以上述 DOm的评估周期也是一个月。设计指标若要采\n\n用较短的评估周期，特别是对随机性很大的误码性能，应考虑留有足够测量置信度的余量。",
+      "type": "语义分解",
+      "subject": "还应注意，性能指标的评估周期是一个月，所以上述 DOm的评估周期也是一个",
+      "action": "",
+      "operation": "还应注意，性能指标的评估周期是一个月，所以上述 DOm的评估周期也是一个月。设计指标若要采 用较短的评估周期，特别是对随机性很大的误码性能，应考虑留有足够测量置信度的余量。",
+      "condition": "",
+      "constraint": "   还应注意，性能指标的评估周期是一个月，所以上述 DOm的评估周期也是一个月。设计指标若要采\n\n用较短的评估周期，特别是对随机性很大的误码性能，应考虑留有足够测量置信度的余量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "还应注意，性能指标的评估周期是一个月，所以上述 DOm的评估周期也是一个"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12769,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

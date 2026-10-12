@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "10.1",
+  "entities": [
+    {
+      "name": "环境条件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1 作业环境与条件 企业应明确生产经营活动所涉及的所有环节和区域，确保作业环境与条件符合规章制度和操作规程的要求。宜对生产作业全过程进行监测和控制。企业应落实建(构)筑物、生产区域道路、安全标志标识、照明、通风等生产现场环境的安全要求，满足消防安全和职业健康的管理要求，保持作业环境整洁。企业应及时获取自然灾害预警预报信息，分析研判对安全生产的影响，采取防范应对措施。",
+      "type": "语义分解",
+      "subject": "环境条件",
+      "action": "",
+      "operation": "全环区域合制度规程宜监控整洁建路标照通风消防健康自然预警应对",
+      "condition": "",
+      "constraint": "10.1 作业环境与条件 企业应明确生产经营活动所涉及的所有环节和区域，确保作业环境与条件符合规章制度和操作规程的要求。宜对生产作业全过程进行监测和控制。企业应落实建(构)筑物、生产区域道路、安全标志标识、照明、通风等生产现场环境的安全要求，满足消防安全和职业健康的管理要求，保持作业环境整洁。企业应及时获取自然灾害预警预报信息，分析研判对安全生产的影响，采取防范应对措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境条件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7270,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

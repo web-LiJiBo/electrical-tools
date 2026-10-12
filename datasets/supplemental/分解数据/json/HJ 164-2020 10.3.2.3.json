@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "10.3.2.3",
+  "entities": [
+    {
+      "name": "仪器校准曲线制作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.2.3 原子吸收分光光度法。气相色谱法。离子色谱法。等离子发射光谱法。原子荧光法。气相色谱-质谱法和等离子体质谱法等仪器分析方法校准曲线的制作必须与样品测定同肘进行",
+      "type": "语义分解",
+      "subject": "仪器校准曲线制作",
+      "action": "",
+      "operation": "所列仪器方法曲线与样品测定同时制作",
+      "condition": "",
+      "constraint": "10.3.2.3 原子吸收分光光度法。气相色谱法。离子色谱法。等离子发射光谱法。原子荧光法。气相色谱-质谱法和等离子体质谱法等仪器分析方法校准曲线的制作必须与样品测定同肘进行",
+      "constraint_role": "informational",
+      "related_entities": [
+        "仪器校准曲线制作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2183,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

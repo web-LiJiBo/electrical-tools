@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041253",
+  "entities": [
+    {
+      "name": "废水处理装置通常位于生产装置附近或其中，对一个油田的处理装置的早期规划应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   废水处理装置通常位于生产装置附近或其中，对一个油田的处理装置的早期规划应考虑矿区未来\n的发展潜力，以最大限度减少布局混乱。从实际和经济的角度出发，应考虑中心油田的位置，避免装\n置的重复使用。装置的规模还应考虑未来产量的增加对储罐容量和处理容器的要求。",
+      "type": "语义分解",
+      "subject": "废水处理装置通常位于生产装置附近或其中，对一个油田的处理装置的早期规划应",
+      "action": "",
+      "operation": "废水处理装置通常位于生产装置附近或其中，对一个油田的处理装置的早期规划应考虑矿区未来 的发展潜力，以最大限度减少布局混乱。从实际和经济的角度出发，应考虑中心油田的位置，避免装 置的重复使用。装置的规模还应考虑未来产量的增加对储罐容量和处理容器的要求。",
+      "condition": "",
+      "constraint": "   废水处理装置通常位于生产装置附近或其中，对一个油田的处理装置的早期规划应考虑矿区未来\n的发展潜力，以最大限度减少布局混乱。从实际和经济的角度出发，应考虑中心油田的位置，避免装\n置的重复使用。装置的规模还应考虑未来产量的增加对储罐容量和处理容器的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水处理装置通常位于生产装置附近或其中，对一个油田的处理装置的早期规划应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41253,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

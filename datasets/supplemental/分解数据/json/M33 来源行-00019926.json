@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019926",
+  "entities": [
+    {
+      "name": "● 在可回复操作模式中，工作通路应被恢复，也就是说，当工作(子)网连接 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "●  在可回复操作模式中，工作通路应被恢复，也就是说，当工作(子)网连接\n\n    的故障被排除时，应把保护(子)网连接上的信号倒换回工作(子)网；\n\n●  为预防间断性故障导致频繁的保护倒换操作，有故障的(子)网连接应该变\n\n   为无故障状态。在有故障的子网连接符合该判据之后，应在重新使用工作通\n    路之前持续一个固定的时间周期，该周期称为等待恢复(WTR)  时间，该\n   时间为1min～12min, 并能够设定。SSF 、TSF或TSD 优先于WTR",
+      "type": "语义分解",
+      "subject": "● 在可回复操作模式中，工作通路应被恢复，也就是说，当工作(子)网连接 ",
+      "action": "",
+      "operation": "● 在可回复操作模式中，工作通路应被恢复，也就是说，当工作(子)网连接 的故障被排除时，应把保护(子)网连接上的信号倒换回工作(子)网； ● 为预防间断性故障导致频繁的保护倒换操作，有故障的(子)网连接应该变 为无故障状态。在有故障的子网连接符合该判据之后，应在重新使用工作通 路之前持续一个固定的时间周期，该周期称为等待恢复(WTR) 时间，该 时间为1min～12min, 并能够设定。SSF 、TSF或TSD 优先于WTR",
+      "condition": "",
+      "constraint": "●  在可回复操作模式中，工作通路应被恢复，也就是说，当工作(子)网连接\n\n    的故障被排除时，应把保护(子)网连接上的信号倒换回工作(子)网；\n\n●  为预防间断性故障导致频繁的保护倒换操作，有故障的(子)网连接应该变\n\n   为无故障状态。在有故障的子网连接符合该判据之后，应在重新使用工作通\n    路之前持续一个固定的时间周期，该周期称为等待恢复(WTR)  时间，该\n   时间为1min～12min, 并能够设定。SSF 、TSF或TSD 优先于WTR",
+      "constraint_role": "informational",
+      "related_entities": [
+        "● 在可回复操作模式中，工作通路应被恢复，也就是说，当工作(子)网连接 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19926,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

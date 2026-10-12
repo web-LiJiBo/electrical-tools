@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.3.7",
+  "entities": [
+    {
+      "name": "安装监理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.7 项目监理机构应根据深化设计文件、相关施工规范和本标准第7.2.5条、第7.2.6条的要求，对实体防护、入侵和紧急报警、视频监控、出入口控制、停车库(场)安全管理、楼寓对讲、电子巡查、防爆安全检查以及监控中心等设备的安装位置、安装工艺、安装质量等进行监督检查。",
+      "type": "语义分解",
+      "subject": "安装监理",
+      "action": "",
+      "operation": "按设计规范各系统设备位置工艺质量监督检查",
+      "condition": "",
+      "constraint": "8.3.7 项目监理机构应根据深化设计文件、相关施工规范和本标准第7.2.5条、第7.2.6条的要求，对实体防护、入侵和紧急报警、视频监控、出入口控制、停车库(场)安全管理、楼寓对讲、电子巡查、防爆安全检查以及监控中心等设备的安装位置、安装工艺、安装质量等进行监督检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安装监理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7106,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

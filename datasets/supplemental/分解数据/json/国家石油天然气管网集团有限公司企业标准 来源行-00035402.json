@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035402",
+  "entities": [
+    {
+      "name": "化石燃料燃烧排放、火炬燃烧排放、工艺放空排放、逸散排放、净购入电力和热力",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   化石燃料燃烧排放、火炬燃烧排放、工艺放空排放、逸散排放、净购入电力和热力产生的排放、甲\n烷回收量的核算，分别按照7.2～7.7所阐述的相关方法进行核算。",
+      "type": "语义分解",
+      "subject": "化石燃料燃烧排放、火炬燃烧排放、工艺放空排放、逸散排放、净购入电力和热力",
+      "action": "",
+      "operation": "化石燃料燃烧排放、火炬燃烧排放、工艺放空排放、逸散排放、净购入电力和热力产生的排放、甲 烷回收量的核算，分别按照7.2～7.7所阐述的相关方法进行核算。",
+      "condition": "",
+      "constraint": "   化石燃料燃烧排放、火炬燃烧排放、工艺放空排放、逸散排放、净购入电力和热力产生的排放、甲\n烷回收量的核算，分别按照7.2～7.7所阐述的相关方法进行核算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化石燃料燃烧排放、火炬燃烧排放、工艺放空排放、逸散排放、净购入电力和热力"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35402,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

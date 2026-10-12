@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040374",
+  "entities": [
+    {
+      "name": "《固定源废气监测技术规范》HJ/T 397 的规定设置监测采 样孔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "16157、《固定源废气监测技术规范》HJ/T   397 的规定设置监测采\n样孔；按照现行国家、地方有关规定，废气排气筒需要设置烟气排\n放连续监测系统时，尚应按现行行业标准《固定污染源烟气( SO₂、\nNOx、颗粒物)排放连续监测技术规范》HJ  75的规定安装烟气排\n放连续监测系统。",
+      "type": "语义分解",
+      "subject": "《固定源废气监测技术规范》HJ/T 397 的规定设置监测采 样孔",
+      "action": "",
+      "operation": "《固定源废气监测技术规范》HJ/T 397 的规定设置监测采 样孔；按照现行国家、地方有关规定，废气排气筒需要设置烟气排 放连续监测系统时，尚应按现行行业标准《固定污染源烟气( SO₂、 NOx、颗粒物)排放连续监测技术规范》HJ 75的规定安装烟气排 放连续监测系统。",
+      "condition": "",
+      "constraint": "16157、《固定源废气监测技术规范》HJ/T   397 的规定设置监测采\n样孔；按照现行国家、地方有关规定，废气排气筒需要设置烟气排\n放连续监测系统时，尚应按现行行业标准《固定污染源烟气( SO₂、\nNOx、颗粒物)排放连续监测技术规范》HJ  75的规定安装烟气排\n放连续监测系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "《固定源废气监测技术规范》HJ/T 397 的规定设置监测采 样孔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40374,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全生产管理办法",
+  "standard_id": "国家管网办〔2025〕26号",
+  "version": "",
+  "chapter_path": "来源行-00003435",
+  "entities": [
+    {
+      "name": "第五十八条 所属企业与其他生产经营单位在同一作业区域内进行生产经营活动,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十八条 所属企业与其他生产经营单位在同一作业区域内进行生产经营活动,可能危及对方生产安全的,应当签订安全生产管理协议,明确各自的安全生产管理职责和应当采取的安全措施,并指定专职安全生产管理人员进行安全检查与协调。具备条件的应对关键场所实施硬隔离及视频监控。",
+      "type": "语义分解",
+      "subject": "第五十八条 所属企业与其他生产经营单位在同一作业区域内进行生产经营活动,",
+      "action": "",
+      "operation": "第五十八条 所属企业与其他生产经营单位在同一作业区域内进行生产经营活动,可能危及对方生产安全的,应当签订安全生产管理协议,明确各自的安全生产管理职责和应当采取的安全措施,并指定专职安全生产管理人员进行安全检查与协调。具备条件的应对关键场所实施硬隔离及视频监控。",
+      "condition": "",
+      "constraint": "第五十八条 所属企业与其他生产经营单位在同一作业区域内进行生产经营活动,可能危及对方生产安全的,应当签订安全生产管理协议,明确各自的安全生产管理职责和应当采取的安全措施,并指定专职安全生产管理人员进行安全检查与协调。具备条件的应对关键场所实施硬隔离及视频监控。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十八条 所属企业与其他生产经营单位在同一作业区域内进行生产经营活动,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3435,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

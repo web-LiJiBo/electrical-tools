@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "全员责任保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 责任保障 企业应建立健全全员安全生产责任制，明确各层级、各岗位的职责、范围和考核标准等内容，并按规定进行培训。企业应定期对全员安全生产责任制的落实情况进行监督考核。",
+      "type": "语义分解",
+      "subject": "全员责任保障",
+      "action": "",
+      "operation": "明确层岗职责范围考核培训定期监督",
+      "condition": "",
+      "constraint": "5.2 责任保障 企业应建立健全全员安全生产责任制，明确各层级、各岗位的职责、范围和考核标准等内容，并按规定进行培训。企业应定期对全员安全生产责任制的落实情况进行监督考核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "全员责任保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

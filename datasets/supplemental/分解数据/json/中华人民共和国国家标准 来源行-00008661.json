@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008661",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.1 波分复用( WDM)系统应分为密集波分复用( DWDM)系\n统和粗波分复用( CWDM)系统。DWDM 系统的通路间隔宜为\n0.4nm或0.8nm, 在1530nm~1565nm  波段的光通路数量可采用\n40通路或80 通路；CWDM 系统的通路间隔宜为20nm, 在\n1270nm～1610nm 波段的光通路数量可采用4通路、8通路或16\t   2    光线路放大设备应包括光放大器；",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "3.1.1 波分复用( WDM)系统应分为密集波分复用( DWDM)系\n统和粗波分复用( CWDM)系统。DWDM 系统的通路间隔宜为\n0.4nm或0.8nm, 在1530nm~1565nm  波段的光通路数量可采用\n40通路或80 通路；CWDM 系统的通路间隔宜为20nm, 在\n1270nm～1610nm 波段的光通路数量可采用4通路、8通路或16\t   2    光线路放大设备应包括光放大器；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8661,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

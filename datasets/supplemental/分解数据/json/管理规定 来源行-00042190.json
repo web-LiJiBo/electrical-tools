@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042190",
+  "entities": [
+    {
+      "name": "较大生产安全事件和一般生产安全事件中涉及生产运维异 常事件的报告，按集团",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   较大生产安全事件和一般生产安全事件中涉及生产运维异\n\n常事件的报告，按集团公司生产运维异常事件相关规定执行。\n\n      第二十二条  任何单位和个人未经批准不得擅自对外披露未",
+      "type": "语义分解",
+      "subject": "较大生产安全事件和一般生产安全事件中涉及生产运维异 常事件的报告，按集团",
+      "action": "",
+      "operation": "较大生产安全事件和一般生产安全事件中涉及生产运维异 常事件的报告，按集团公司生产运维异常事件相关规定执行。 第二十二条 任何单位和个人未经批准不得擅自对外披露未",
+      "condition": "",
+      "constraint": "   较大生产安全事件和一般生产安全事件中涉及生产运维异\n\n常事件的报告，按集团公司生产运维异常事件相关规定执行。\n\n      第二十二条  任何单位和个人未经批准不得擅自对外披露未",
+      "constraint_role": "informational",
+      "related_entities": [
+        "较大生产安全事件和一般生产安全事件中涉及生产运维异 常事件的报告，按集团"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42190,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

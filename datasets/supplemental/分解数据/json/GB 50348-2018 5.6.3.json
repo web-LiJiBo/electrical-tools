@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "5.6.3",
+  "entities": [
+    {
+      "name": "工程检验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.3 高风险保护对象以及按照相关法律法规、工程合同等要求需进行工程检验的安全防范工程，应在工程竣工验收前，由检验机构对工程质量进行检验并出具检验报告。工程检验的依据、程序及检验项目、检验要求及方法等应按本标准第9章执行。",
+      "type": "语义分解",
+      "subject": "工程检验",
+      "action": "",
+      "operation": "高风险及按法规合同需检验的竣验前机构检验报告按第9章",
+      "condition": "",
+      "constraint": "5.6.3 高风险保护对象以及按照相关法律法规、工程合同等要求需进行工程检验的安全防范工程，应在工程竣工验收前，由检验机构对工程质量进行检验并出具检验报告。工程检验的依据、程序及检验项目、检验要求及方法等应按本标准第9章执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程检验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6932,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

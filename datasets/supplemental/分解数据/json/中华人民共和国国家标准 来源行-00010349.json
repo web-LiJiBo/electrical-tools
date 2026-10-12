@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010349",
+  "entities": [
+    {
+      "name": "②对于G.653 光纤， 一些发送机波长和光纤零色散波长的组合可能会导致",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "②对于G.653   光纤， 一些发送机波长和光纤零色散波长的组合可能会导致负的链路色散。 此应用中给定功率下还未充分验\n  证此类现象。在这种情况下，需要在链路提供商和系统运营商之间采取结合工艺以避免出现这类情况。",
+      "type": "语义分解",
+      "subject": "②对于G.653 光纤， 一些发送机波长和光纤零色散波长的组合可能会导致",
+      "action": "",
+      "operation": "②对于G.653 光纤， 一些发送机波长和光纤零色散波长的组合可能会导致负的链路色散。 此应用中给定功率下还未充分验 证此类现象。在这种情况下，需要在链路提供商和系统运营商之间采取结合工艺以避免出现这类情况。",
+      "condition": "",
+      "constraint": "②对于G.653   光纤， 一些发送机波长和光纤零色散波长的组合可能会导致负的链路色散。 此应用中给定功率下还未充分验\n  证此类现象。在这种情况下，需要在链路提供商和系统运营商之间采取结合工艺以避免出现这类情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "②对于G.653 光纤， 一些发送机波长和光纤零色散波长的组合可能会导致"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10349,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

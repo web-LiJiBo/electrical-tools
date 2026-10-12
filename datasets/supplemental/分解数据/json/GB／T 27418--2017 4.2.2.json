@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "实验标准差",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 由于影响量的随机娈化或随机效应 ,每次独立观测值4k亦不同 = 观测值的实验方差即 g的概率 分布的方差6的估计值为: $2(9k)=一 与( -可 4 ) 11 这个方差的估计值及其正平方根 $(4k )表征了被观测值 4的娈异性 ,或更确切地说 ,表征了它们在 平均值q附近的分散性。 $(4)称为实验标准差。",
+      "type": "语义分解",
+      "subject": "实验标准差",
+      "action": "",
+      "operation": "描述观测值离散程度",
+      "condition": "",
+      "constraint": "表征了被观测值 4的娈异性",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实验标准差"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "方差公式和符号损坏"
+      ]
+    }
+  }
+}

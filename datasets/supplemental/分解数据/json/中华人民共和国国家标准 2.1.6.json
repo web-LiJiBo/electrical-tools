@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "2.1.6",
+  "entities": [
+    {
+      "name": "光监控通路 optical supervisory channel(OS",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.1.6  光监控通路    optical    supervisory    channel(OSC)\n   传送 OTM  开销信号的物理光路，不经过光放大器。",
+      "type": "语义分解",
+      "subject": "光监控通路 optical supervisory channel(OS",
+      "action": "",
+      "operation": "光监控通路 optical supervisory channel(OSC) 传送 OTM 开销信号的物理光路，不经过光放大器。",
+      "condition": "",
+      "constraint": "2.1.6  光监控通路    optical    supervisory    channel(OSC)\n   传送 OTM  开销信号的物理光路，不经过光放大器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光监控通路 optical supervisory channel(OS"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9538,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

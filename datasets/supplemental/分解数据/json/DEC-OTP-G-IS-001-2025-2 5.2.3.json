@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "人工能耗填报",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3 人工填报是以现场人工抄表的方式获取能耗数据 =",
+      "type": "语义分解",
+      "subject": "人工能耗填报",
+      "action": "",
+      "operation": "以人工现场抄表获取数据",
+      "condition": "",
+      "constraint": "5.2.3 人工填报是以现场人工抄表的方式获取能耗数据 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "人工能耗填报"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009935",
+  "entities": [
+    {
+      "name": "应避免或减少一个局站或节点内不同子架间的业务调度， 在必须进行跨子架业务",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    应避免或减少一个局站或节点内不同子架间的业务调度，\n在必须进行跨子架业务调度时，子架间的互联宜采用客户侧接口，\n在客户侧接口不支持 ODUk 的复用和解复用功能时，也可采用线\n路侧接口，接口速率宜采用设备支持的最高速率；",
+      "type": "语义分解",
+      "subject": "应避免或减少一个局站或节点内不同子架间的业务调度， 在必须进行跨子架业务",
+      "action": "",
+      "operation": "应避免或减少一个局站或节点内不同子架间的业务调度， 在必须进行跨子架业务调度时，子架间的互联宜采用客户侧接口， 在客户侧接口不支持 ODUk 的复用和解复用功能时，也可采用线 路侧接口，接口速率宜采用设备支持的最高速率",
+      "condition": "",
+      "constraint": "      2    应避免或减少一个局站或节点内不同子架间的业务调度，\n在必须进行跨子架业务调度时，子架间的互联宜采用客户侧接口，\n在客户侧接口不支持 ODUk 的复用和解复用功能时，也可采用线\n路侧接口，接口速率宜采用设备支持的最高速率；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应避免或减少一个局站或节点内不同子架间的业务调度， 在必须进行跨子架业务"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9935,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

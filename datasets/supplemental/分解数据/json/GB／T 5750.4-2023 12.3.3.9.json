@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.3.3.9",
+  "entities": [
+    {
+      "name": "挥发酚储备液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.3.9 挥发酚标准储备溶液[ρ(C6H5OH)=500 mg/L]:称取0.500 g苯酚于500 mL纯水中，完全溶解后，加入5 mL浓盐酸作保护，定容至1000 mL。",
+      "type": "语义分解",
+      "subject": "挥发酚储备液",
+      "action": "",
+      "operation": "苯酚溶解加盐酸保护定容一升制备五百毫克每升",
+      "condition": "",
+      "constraint": "12.3.3.9 挥发酚标准储备溶液[ρ(C6H5OH)=500 mg/L]:称取0.500 g苯酚于500 mL纯水中，完全溶解后，加入5 mL浓盐酸作保护，定容至1000 mL。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发酚储备液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1504,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

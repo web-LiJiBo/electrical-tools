@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022287",
+  "entities": [
+    {
+      "name": "将一个易遭雷击的区域，按通信局(站)建筑物内外、通信机房 及被保护设备所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   将一个易遭雷击的区域，按通信局(站)建筑物内外、通信机房\n及被保护设备所处环境的不同进行被保护区域划分，被保护区域\n称为防雷区。",
+      "type": "语义分解",
+      "subject": "将一个易遭雷击的区域，按通信局(站)建筑物内外、通信机房 及被保护设备所",
+      "action": "",
+      "operation": "将一个易遭雷击的区域，按通信局(站)建筑物内外、通信机房 及被保护设备所处环境的不同进行被保护区域划分，被保护区域 称为防雷区。",
+      "condition": "",
+      "constraint": "   将一个易遭雷击的区域，按通信局(站)建筑物内外、通信机房\n及被保护设备所处环境的不同进行被保护区域划分，被保护区域\n称为防雷区。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "将一个易遭雷击的区域，按通信局(站)建筑物内外、通信机房 及被保护设备所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22287,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011879",
+  "entities": [
+    {
+      "name": ". 1 .4 同 一 区域管理中心会议电视系统的容量设置和网络结构 应统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6. 1 .4    同 一 区域管理中心会议电视系统的容量设置和网络结构\n应统筹设计 ,   系统容量除满足当前实际需求外 ,  还应兼顾企业\n发展规划 ,  按远期需求配置。",
+      "type": "语义分解",
+      "subject": ". 1 .4 同 一 区域管理中心会议电视系统的容量设置和网络结构 应统",
+      "action": "",
+      "operation": ". 1 .4 同 一 区域管理中心会议电视系统的容量设置和网络结构 应统筹设计 , 系统容量除满足当前实际需求外 , 还应兼顾企业 发展规划 , 按远期需求配置。",
+      "condition": "",
+      "constraint": "6. 1 .4    同 一 区域管理中心会议电视系统的容量设置和网络结构\n应统筹设计 ,   系统容量除满足当前实际需求外 ,  还应兼顾企业\n发展规划 ,  按远期需求配置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 .4 同 一 区域管理中心会议电视系统的容量设置和网络结构 应统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11879,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

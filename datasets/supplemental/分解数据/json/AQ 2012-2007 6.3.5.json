@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.3.5",
+  "entities": [
+    {
+      "name": "移动钻井平台就位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5 移动式钻井平台就位前 应完成井场海洋工程地质调查与情况调查; 应成立拖航小组 ,制定拖航计划 ,召开拖航会议 ,进行安全分析; 拖航前应进行拖航安全检查; 应按拖航计划要求定时收听海况,天气预报,与拖船保持联系 ;巡回检查被拖钻井平台 ,随时处理可能出现的问题; 遇到台风或恶劣天气,应就近选择避风海湾避风; 进入井位前 ,应根据海流 ,风等情况确定进井场以及锚泊定位的方法; 海洋插桩时应考虑季节主导风向; 坐底式平台应有防滑移措施。",
+      "type": "语义分解",
+      "subject": "移动钻井平台就位",
+      "action": "",
+      "operation": "地质调查拖航计划安全会议检查天气通信巡检避风定定位方法插桩风向坐底防滑",
+      "condition": "",
+      "constraint": "6.3.5 移动式钻井平台就位前 应完成井场海洋工程地质调查与情况调查; 应成立拖航小组 ,制定拖航计划 ,召开拖航会议 ,进行安全分析; 拖航前应进行拖航安全检查; 应按拖航计划要求定时收听海况,天气预报,与拖船保持联系 ;巡回检查被拖钻井平台 ,随时处理可能出现的问题; 遇到台风或恶劣天气,应就近选择避风海湾避风; 进入井位前 ,应根据海流 ,风等情况确定进井场以及锚泊定位的方法; 海洋插桩时应考虑季节主导风向; 坐底式平台应有防滑移措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "移动钻井平台就位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4608,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

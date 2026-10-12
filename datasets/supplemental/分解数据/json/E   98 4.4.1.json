@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "ICDA管段划分应按收集的数据，在管内工况发生突变点 划分管段",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 ICDA管段划分应按收集的数据，在管内工况发生突变点\n划分管段；对于双向输送的管道，应分别在两个方向上划分管段。\n4.4.2  下列位置处宜为一个独立的ICDA管段划分点：",
+      "type": "语义分解",
+      "subject": "ICDA管段划分应按收集的数据，在管内工况发生突变点 划分管段",
+      "action": "",
+      "operation": "ICDA管段划分应按收集的数据，在管内工况发生突变点 划分管段；对于双向输送的管道，应分别在两个方向上划分管段。 4.4.2 下列位置处宜为一个独立的ICDA管段划分点",
+      "condition": "",
+      "constraint": "4.4.1 ICDA管段划分应按收集的数据，在管内工况发生突变点\n划分管段；对于双向输送的管道，应分别在两个方向上划分管段。\n4.4.2  下列位置处宜为一个独立的ICDA管段划分点：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ICDA管段划分应按收集的数据，在管内工况发生突变点 划分管段"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46036,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

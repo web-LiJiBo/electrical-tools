@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "7.1.4",
+  "entities": [
+    {
+      "name": "固体及危险废物记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.4 固体废物 (危险废物)产生与处理状况 记录监测期间各类固体废物和危险废物的产生量 综合利用量。处置量。贮存量 倾倒丢弃量。危险废物还应详细记录其具体去向",
+      "type": "语义分解",
+      "subject": "固体及危险废物记录",
+      "action": "",
+      "operation": "记录产生利用处置贮存弃置及危废去向",
+      "condition": "监测期间",
+      "constraint": "7.1.4 固体废物 (危险废物)产生与处理状况 记录监测期间各类固体废物和危险废物的产生量 综合利用量。处置量。贮存量 倾倒丢弃量。危险废物还应详细记录其具体去向",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固体及危险废物记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2889,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

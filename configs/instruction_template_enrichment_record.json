@@ -1,0 +1,16 @@
+{
+  "scope": "模拟指令模板补充；当前流程为generation_only",
+  "device_count_before": 7,
+  "device_count_after": 11,
+  "action_template_count_before": 7,
+  "action_template_count_after": 19,
+  "added_templates": ["IEC61850/Modbus冷却风机启动停止", "IEC61850/Modbus油泵启动停止", "IEC61850/Modbus逆变器无功调节", "IEC61850/Modbus逆变器电压调节"],
+  "test_parameter_ranges": {"reactive_power_kvar": [0, 500], "voltage_v": [380, 420], "modbus_scale": 10},
+  "changes": ["新增动作独立协议点位，Modbus模拟无功及电压使用FC06寄存器而非FC05线圈", "启停补充电源、故障、检修闭锁及冗余冷却许可校验", "新增参数字段白名单及预期状态反馈", "建议模型输入增加范围、来源范围及反馈描述", "保持唯一已复核来源动作绑定要求", "提供6条固定测试输入"],
+  "source_binding": "新增模板均为空来源绑定，范围与条件为软件测试预设；来源绑定主流程会阻止它们转换为条款授权指令，需补齐适用动作正文后启用。",
+  "execution_status": "现有主流程没有confirm入口；所有候选dispatch_allowed=false，生成不会改变模拟状态。用户确认执行闭环未在本次补充实现。",
+  "verification": "93 passed in 5.07s",
+  "test_files": ["test_enriched_simulation_templates.py", "test_simulation_protocols.py", "test_action_preconditions.py", "test_valve_runback.py", "test_grounded_advice.py", "test_typical_scenarios.py"],
+  "files": ["configs/simulation_devices.json", "configs/instruction_template_examples.json", "configs/instruction_template_backlog.json", "src/standard_knowledge_service_v2/instruction_engine/simulation.py", "src/standard_knowledge_service_v2/instruction_engine/template_library.py", "src/standard_knowledge_service_v2/application/grounded_advice.py"],
+  "repository_update": "本地文件更新"
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036203",
+  "entities": [
+    {
+      "name": "A.5.1.1 报告正文内容的章、节标题分别采用三号黑体字、楷体字，项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A.5.1.1      报告正文内容的章、节标题分别采用三号黑体字、楷体字，项目标题采用四号黑体字；章节\n标题居左，项目标题空两格。内容文字表述部分采用四号宋体字，1.5倍行距。文中阿拉伯数字均采用\nTimes   New Roman 字体。",
+      "type": "语义分解",
+      "subject": "A.5.1.1 报告正文内容的章、节标题分别采用三号黑体字、楷体字，项目",
+      "action": "",
+      "operation": "A.5.1.1 报告正文内容的章、节标题分别采用三号黑体字、楷体字，项目标题采用四号黑体字；章节 标题居左，项目标题空两格。内容文字表述部分采用四号宋体字，1.5倍行距。文中阿拉伯数字均采用 Times New Roman 字体。",
+      "condition": "",
+      "constraint": "A.5.1.1      报告正文内容的章、节标题分别采用三号黑体字、楷体字，项目标题采用四号黑体字；章节\n标题居左，项目标题空两格。内容文字表述部分采用四号宋体字，1.5倍行距。文中阿拉伯数字均采用\nTimes   New Roman 字体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A.5.1.1 报告正文内容的章、节标题分别采用三号黑体字、楷体字，项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36203,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

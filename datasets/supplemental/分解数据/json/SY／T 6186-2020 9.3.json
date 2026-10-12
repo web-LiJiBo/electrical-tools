@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "9.3",
+  "entities": [
+    {
+      "name": "操作巡检规程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.3 管道运营单位制定并遵守的安全技术操作规程和巡检制度,其内容至少包括 a) 管道工艺流程图。操作工艺指标。运行和维护规程,并明确管道的安全操作要求。 b)  启停操作程序。 C ) 异常情祝处理措施及汇报程序 d)  防冻。防堵。防凝操作处理程序。 C) 清管操作程序。 f)  巡检流程图和紧急疏散路线。",
+      "type": "语义分解",
+      "subject": "操作巡检规程",
+      "action": "",
+      "operation": "流程指标运维启停异常汇报防冻堵凝清管巡检疏散",
+      "condition": "",
+      "constraint": "9.3 管道运营单位制定并遵守的安全技术操作规程和巡检制度,其内容至少包括 a) 管道工艺流程图。操作工艺指标。运行和维护规程,并明确管道的安全操作要求。 b)  启停操作程序。 C ) 异常情祝处理措施及汇报程序 d)  防冻。防堵。防凝操作处理程序。 C) 清管操作程序。 f)  巡检流程图和紧急疏散路线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "操作巡检规程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7384,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

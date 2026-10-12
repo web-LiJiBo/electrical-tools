@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012361",
+  "entities": [
+    {
+      "name": "调度电话分机主要设置在有人值守工艺站场的控制室和 主管生产的正副领导办公",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.3    调度电话分机主要设置在有人值守工艺站场的控制室和\n主管生产的正副领导办公室 ,  一般工艺站场设置2 部分机 ,  较",
+      "type": "语义分解",
+      "subject": "调度电话分机主要设置在有人值守工艺站场的控制室和 主管生产的正副领导办公",
+      "action": "",
+      "operation": "调度电话分机主要设置在有人值守工艺站场的控制室和 主管生产的正副领导办公室 , 一般工艺站场设置2 部分机 , 较",
+      "condition": "",
+      "constraint": "5.4.3    调度电话分机主要设置在有人值守工艺站场的控制室和\n主管生产的正副领导办公室 ,  一般工艺站场设置2 部分机 ,  较",
+      "constraint_role": "informational",
+      "related_entities": [
+        "调度电话分机主要设置在有人值守工艺站场的控制室和 主管生产的正副领导办公"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12361,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.3.1",
+  "entities": [
+    {
+      "name": "标准不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1 当输入量X;的估计值-;不由重复观测得到时 ,估计方差 u (工;)或标准不确定度 u (r; )可根据 孓;可能娈化的全部有关信息的判断来评定 ,信息来源可能包括: 以前的测量数据; 对有关材料和仪器特性的经验或了解; 生产厂提供的技术说明书; 校准证书或其他证书提供的数据 ; 手册给出的参考数据的不确定度。 为方便起见,用这种方法估计的 u? (Ti )和 U (ci )有时分别称为 B类方差和 B类标准不确定度。 注: 当-;由一个先验分布得到时 ,其方差恰当的写法是 u? (X;) ,但为简单起见 ,本标准中都写成 u (r; )和 u (x; )。",
+      "type": "语义分解",
+      "subject": "标准不确定度",
+      "action": "",
+      "operation": "利用全部有关信息作B类评定",
+      "condition": "不由重复观测得到时",
+      "constraint": "校准证书或其他证书提供的数据",
+      "constraint_role": "informational",
+      "related_entities": [
+        "标准不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "输入量符号识别错误"
+      ]
+    }
+  }
+}

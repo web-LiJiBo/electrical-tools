@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020852",
+  "entities": [
+    {
+      "name": ") B3",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 9) B3: 对 VC-4-Xv每个VC-4 的 n-1 帧进行BIP-8计算，它与n 帧相应的B3 比较以确定每\n    个VC-4 比特误码个数，如图140所示。VC-4-Xv每个单独的VC-4 误码数加在一起结果\n\n    不能超过8。对VC-4-Xcn-1 帧进行BIP-8计算，在第n 帧插入相应B3 前应将 VC-4-Xv\n    所有VC-4 校验结果之和在BIP-8 比特上作相应反转。",
+      "type": "语义分解",
+      "subject": ") B3",
+      "action": "",
+      "operation": ") B3: 对 VC-4-Xv每个VC-4 的 n-1 帧进行BIP-8计算，它与n 帧相应的B3 比较以确定每 个VC-4 比特误码个数，如图140所示。VC-4-Xv每个单独的VC-4 误码数加在一起结果 不能超过8。对VC-4-Xcn-1 帧进行BIP-8计算，在第n 帧插入相应B3 前应将 VC-4-Xv 所有VC-4 校验结果之和在BIP-8 比特上作相应反转。",
+      "condition": "",
+      "constraint": " 9) B3: 对 VC-4-Xv每个VC-4 的 n-1 帧进行BIP-8计算，它与n 帧相应的B3 比较以确定每\n    个VC-4 比特误码个数，如图140所示。VC-4-Xv每个单独的VC-4 误码数加在一起结果\n\n    不能超过8。对VC-4-Xcn-1 帧进行BIP-8计算，在第n 帧插入相应B3 前应将 VC-4-Xv\n    所有VC-4 校验结果之和在BIP-8 比特上作相应反转。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") B3"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20852,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

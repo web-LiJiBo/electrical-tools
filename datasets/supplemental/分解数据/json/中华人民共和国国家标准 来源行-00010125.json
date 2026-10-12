@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010125",
+  "entities": [
+    {
+      "name": "对于40Gb/s 及以上速率的波道，需对 Rn 点纠错前误码 性能测试，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   4  对于40Gb/s  及以上速率的波道，需对 Rn 点纠错前误码\n性能测试，对系统中的每个波道，记录网管中的纠错前误码率读\n数，关闭 FEC, 再通过仪表测试误码率，40Gb/s  波道测试时间不\n少于4分钟，100Gb/s  波道测试时间不少于2分钟，仪表测试结果\n应符合设计指标要求；",
+      "type": "语义分解",
+      "subject": "对于40Gb/s 及以上速率的波道，需对 Rn 点纠错前误码 性能测试，",
+      "action": "",
+      "operation": "对于40Gb/s 及以上速率的波道，需对 Rn 点纠错前误码 性能测试，对系统中的每个波道，记录网管中的纠错前误码率读 数，关闭 FEC, 再通过仪表测试误码率，40Gb/s 波道测试时间不 少于4分钟，100Gb/s 波道测试时间不少于2分钟，仪表测试结果 应符合设计指标要求",
+      "condition": "",
+      "constraint": "   4  对于40Gb/s  及以上速率的波道，需对 Rn 点纠错前误码\n性能测试，对系统中的每个波道，记录网管中的纠错前误码率读\n数，关闭 FEC, 再通过仪表测试误码率，40Gb/s  波道测试时间不\n少于4分钟，100Gb/s  波道测试时间不少于2分钟，仪表测试结果\n应符合设计指标要求；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于40Gb/s 及以上速率的波道，需对 Rn 点纠错前误码 性能测试，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10125,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

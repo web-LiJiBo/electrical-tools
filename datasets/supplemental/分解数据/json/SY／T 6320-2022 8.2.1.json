@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "8.2.1",
+  "entities": [
+    {
+      "name": "气柜报警和高度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1 气柜应设置高低气位。温度。压力报警参数, 上限高度为气柜设计容积高度的 &5%,`下限高度 为设计容积高度的 159。雷雨天气气柜液位应在上限高度的 2/3  以下。",
+      "type": "语义分解",
+      "subject": "气柜报警和高度",
+      "action": "",
+      "operation": "设置气位温度压力报警雷雨液位低于上限的三分之二",
+      "condition": "",
+      "constraint": "8.2.1 气柜应设置高低气位。温度。压力报警参数, 上限高度为气柜设计容积高度的 &5%,`下限高度 为设计容积高度的 159。雷雨天气气柜液位应在上限高度的 2/3  以下。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气柜报警和高度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7615,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；上下限百分比识别缺损待核对"
+      ]
+    }
+  }
+}

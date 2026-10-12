@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023689",
+  "entities": [
+    {
+      "name": "指从软交换机收到呼叫建立请求开始 ,直至完成相应的号码及路由分析 ,并将",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      指从软交换机收到呼叫建立请求开始 ,直至完成相应的号码及路由分析 ,并将相应的呼叫建立请求\n传送至另一设备的瞬间为止的时间 。平均呼叫建立时延应小于 600 ms,95%概率不超过 800 ms。",
+      "type": "语义分解",
+      "subject": "指从软交换机收到呼叫建立请求开始 ,直至完成相应的号码及路由分析 ,并将",
+      "action": "",
+      "operation": "指从软交换机收到呼叫建立请求开始 ,直至完成相应的号码及路由分析 ,并将相应的呼叫建立请求 传送至另一设备的瞬间为止的时间 。平均呼叫建立时延应小于 600 ms,95%概率不超过 800 ms。",
+      "condition": "",
+      "constraint": "      指从软交换机收到呼叫建立请求开始 ,直至完成相应的号码及路由分析 ,并将相应的呼叫建立请求\n传送至另一设备的瞬间为止的时间 。平均呼叫建立时延应小于 600 ms,95%概率不超过 800 ms。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指从软交换机收到呼叫建立请求开始 ,直至完成相应的号码及路由分析 ,并将"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23689,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012666",
+  "entities": [
+    {
+      "name": "中间国 终端国 (例如海缆 PEP° IG IG IG 国内部分 国际部",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "                                中间国\n    终端国\n                                                                                (例如海缆\nPEP°\n                                      IG                                             IG         IG\n\n\n    国内部分                                 国际部分                                        国内部分\n\n                                         假设参考通道",
+      "type": "语义分解",
+      "subject": "中间国 终端国 (例如海缆 PEP° IG IG IG 国内部分 国际部",
+      "action": "",
+      "operation": "中间国 终端国 (例如海缆 PEP° IG IG IG 国内部分 国际部分 国内部分 假设参考通道",
+      "condition": "",
+      "constraint": "                                中间国\n    终端国\n                                                                                (例如海缆\nPEP°\n                                      IG                                             IG         IG\n\n\n    国内部分                                 国际部分                                        国内部分\n\n                                         假设参考通道",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中间国 终端国 (例如海缆 PEP° IG IG IG 国内部分 国际部"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12666,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "11.2.2",
+  "entities": [
+    {
+      "name": "试运行组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.2       试运行应由建设单位组织维护人员执行，可定期对设备\n进行指标抽测，可通过网管对工程复用段长期误码性能进行连续\n30日的稳定观测，可试开通部分非重要业务。",
+      "type": "语义分解",
+      "subject": "试运行组织",
+      "action": "",
+      "operation": "维护人员执行抽测连续30日观测误码可开非重要业务",
+      "condition": "",
+      "constraint": "11.2.2       试运行应由建设单位组织维护人员执行，可定期对设备\n进行指标抽测，可通过网管对工程复用段长期误码性能进行连续\n30日的稳定观测，可试开通部分非重要业务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运行组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10239,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

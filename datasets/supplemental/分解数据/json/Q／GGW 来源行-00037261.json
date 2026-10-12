@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037261",
+  "entities": [
+    {
+      "name": "企业应监测甲烷的回收量及其甲烷纯度，并做好原始记录、质量控制和文件存档工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    企业应监测甲烷的回收量及其甲烷纯度，并做好原始记录、质量控制和文件存档工作。计算时非标\n准状况下的气体体积应换算为标准状况下的气体体积。甲烷浓度的检测应遵循GB/T   13610相关标准。\n    甲烷回收利用量的计量器具要求应符合GB/T     32201,具体应符合表4的要求。",
+      "type": "语义分解",
+      "subject": "企业应监测甲烷的回收量及其甲烷纯度，并做好原始记录、质量控制和文件存档工",
+      "action": "",
+      "operation": "企业应监测甲烷的回收量及其甲烷纯度，并做好原始记录、质量控制和文件存档工作。计算时非标 准状况下的气体体积应换算为标准状况下的气体体积。甲烷浓度的检测应遵循GB/T 13610相关标准。 甲烷回收利用量的计量器具要求应符合GB/T 32201,具体应符合表4的要求。",
+      "condition": "",
+      "constraint": "    企业应监测甲烷的回收量及其甲烷纯度，并做好原始记录、质量控制和文件存档工作。计算时非标\n准状况下的气体体积应换算为标准状况下的气体体积。甲烷浓度的检测应遵循GB/T   13610相关标准。\n    甲烷回收利用量的计量器具要求应符合GB/T     32201,具体应符合表4的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业应监测甲烷的回收量及其甲烷纯度，并做好原始记录、质量控制和文件存档工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37261,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

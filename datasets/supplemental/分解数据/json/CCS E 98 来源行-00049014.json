@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00049014",
+  "entities": [
+    {
+      "name": "在试片周围填埋原生细土，并压实",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      6   在试片周围填埋原生细土，并压实。在土壤干燥的环境\n下，可以考虑适当喷洒蒸馏水或去离子水，一般湿润到手握成\n团即可。",
+      "type": "语义分解",
+      "subject": "在试片周围填埋原生细土，并压实",
+      "action": "",
+      "operation": "在试片周围填埋原生细土，并压实。在土壤干燥的环境 下，可以考虑适当喷洒蒸馏水或去离子水，一般湿润到手握成 团即可。",
+      "condition": "",
+      "constraint": "      6   在试片周围填埋原生细土，并压实。在土壤干燥的环境\n下，可以考虑适当喷洒蒸馏水或去离子水，一般湿润到手握成\n团即可。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在试片周围填埋原生细土，并压实"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49014,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.17.1.1",
+  "entities": [
+    {
+      "name": "事故管理制度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.17.1.1 企业应制定事故事件管理制度,管理范围为政府未组织调查的事故和企业发生的安全事件。 事故事件管理制度应包括管理职责 .管理范围 .管理程序 ,工作流程 ,分类分级标准 ,调查要求 _措施跟踪 等内容。政府负责组织调查处理的事故 ,企业应认真配合事故调查 积极落实整改措施 ,配合做好相关 工作。",
+      "type": "语义分解",
+      "subject": "事故管理制度",
+      "action": "",
+      "operation": "政府未调查事故企业安全事件明确职责流程分类调查跟踪政府调查配合整改",
+      "condition": "",
+      "constraint": "4.17.1.1 企业应制定事故事件管理制度,管理范围为政府未组织调查的事故和企业发生的安全事件。 事故事件管理制度应包括管理职责 .管理范围 .管理程序 ,工作流程 ,分类分级标准 ,调查要求 _措施跟踪 等内容。政府负责组织调查处理的事故 ,企业应认真配合事故调查 积极落实整改措施 ,配合做好相关 工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故管理制度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5305,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "4.3.1.1",
+  "entities": [
+    {
+      "name": "安全管理人员再培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1.1 凡已取得安全生产管理人员安全资格的人员，若继续从事原岗位的工作，在资格证书有效期内，每年应进行一次再培训。再培训的内容按本标准4.3.2的要求进行。",
+      "type": "语义分解",
+      "subject": "安全管理人员再培训",
+      "action": "",
+      "operation": "原岗有效资格期间每年培训",
+      "condition": "若继续从事原岗位的工作",
+      "constraint": "4.3.1.1 凡已取得安全生产管理人员安全资格的人员，若继续从事原岗位的工作，在资格证书有效期内，每年应进行一次再培训。再培训的内容按本标准4.3.2的要求进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全管理人员再培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5004,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺4.3.2内容"
+      ]
+    }
+  }
+}

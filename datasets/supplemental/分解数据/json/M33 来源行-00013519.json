@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013519",
+  "entities": [
+    {
+      "name": "ODU 和 OTU 提供客户信号的复用和相应维护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "        ODU 和 OTU 提供客户信号的复用和相应维护。一 个OTSiA 支持一个OTU 。OTSiA 包含OTSiG\n和非关联开销OTSiG-0 。OTSiG 可代表1个或多个OTSi, OTSi 是以中心频率和应用标识符为特征的。\nOTSi由光复用/解复用器描述，每个OTSi 通过独立的网络媒质信道引导到它的目的地。",
+      "type": "语义分解",
+      "subject": "ODU 和 OTU 提供客户信号的复用和相应维护",
+      "action": "",
+      "operation": "ODU 和 OTU 提供客户信号的复用和相应维护。一 个OTSiA 支持一个OTU 。OTSiA 包含OTSiG 和非关联开销OTSiG-0 。OTSiG 可代表1个或多个OTSi, OTSi 是以中心频率和应用标识符为特征的。 OTSi由光复用/解复用器描述，每个OTSi 通过独立的网络媒质信道引导到它的目的地。",
+      "condition": "",
+      "constraint": "        ODU 和 OTU 提供客户信号的复用和相应维护。一 个OTSiA 支持一个OTU 。OTSiA 包含OTSiG\n和非关联开销OTSiG-0 。OTSiG 可代表1个或多个OTSi, OTSi 是以中心频率和应用标识符为特征的。\nOTSi由光复用/解复用器描述，每个OTSi 通过独立的网络媒质信道引导到它的目的地。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ODU 和 OTU 提供客户信号的复用和相应维护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13519,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

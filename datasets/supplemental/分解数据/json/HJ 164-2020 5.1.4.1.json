@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "5.1.4.1",
+  "entities": [
+    {
+      "name": "环境井竣工验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4.1 监测井竣工后,应填写环境监测井建设记录表 (参见附录B表B.1),并按设计规范进行验收。验收肘,施工方应提供环境监测井施工验收记录表和设施验收记录表 (参见附录B表B.2表B3)。以及钻探班报表,物探测井。下管。填砾 止水。抽水试验等原始记录及代表性岩芯。",
+      "type": "语义分解",
+      "subject": "环境井竣工验收",
+      "action": "",
+      "operation": "填建设表依设计验收提供设施施工原始记录岩芯",
+      "condition": "",
+      "constraint": "5.1.4.1 监测井竣工后,应填写环境监测井建设记录表 (参见附录B表B.1),并按设计规范进行验收。验收肘,施工方应提供环境监测井施工验收记录表和设施验收记录表 (参见附录B表B.2表B3)。以及钻探班报表,物探测井。下管。填砾 止水。抽水试验等原始记录及代表性岩芯。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境井竣工验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2065,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录B表未随条款提供"
+      ]
+    }
+  }
+}

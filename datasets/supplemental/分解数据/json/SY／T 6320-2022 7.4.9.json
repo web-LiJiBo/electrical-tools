@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "7.4.9",
+  "entities": [
+    {
+      "name": "含硫容器内作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.9 在含硫容器内作业。应进行硫化氢气体及氧气含量检测。迸入容器应按规定佩戴正压式空气呼 吸器或长管呼吸器 不应无监督单独作业。",
+      "type": "语义分解",
+      "subject": "含硫容器内作业",
+      "action": "",
+      "operation": "检测硫化氢和氧配规定呼吸器不得无监督单独作业",
+      "condition": "",
+      "constraint": "7.4.9 在含硫容器内作业。应进行硫化氢气体及氧气含量检测。迸入容器应按规定佩戴正压式空气呼 吸器或长管呼吸器 不应无监督单独作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含硫容器内作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7598,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

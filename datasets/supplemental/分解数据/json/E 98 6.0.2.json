@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "6.0.2",
+  "entities": [
+    {
+      "name": "绝缘装置应采用绝缘法兰、绝缘接头或其他专门设计的 绝缘装置，绝缘装置不宜",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.0.2       绝缘装置应采用绝缘法兰、绝缘接头或其他专门设计的\n绝缘装置，绝缘装置不宜安装在存在爆炸可能性的密闭区域内。\n6.0.3       绝缘装置应根据工艺温度、压力、介质及管道参数进行\n设计。",
+      "type": "语义分解",
+      "subject": "绝缘装置应采用绝缘法兰、绝缘接头或其他专门设计的 绝缘装置，绝缘装置不宜",
+      "action": "",
+      "operation": "绝缘装置应采用绝缘法兰、绝缘接头或其他专门设计的 绝缘装置，绝缘装置不宜安装在存在爆炸可能性的密闭区域内。 6.0.3 绝缘装置应根据工艺温度、压力、介质及管道参数进行 设计。",
+      "condition": "",
+      "constraint": "6.0.2       绝缘装置应采用绝缘法兰、绝缘接头或其他专门设计的\n绝缘装置，绝缘装置不宜安装在存在爆炸可能性的密闭区域内。\n6.0.3       绝缘装置应根据工艺温度、压力、介质及管道参数进行\n设计。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "绝缘装置应采用绝缘法兰、绝缘接头或其他专门设计的 绝缘装置，绝缘装置不宜"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49441,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

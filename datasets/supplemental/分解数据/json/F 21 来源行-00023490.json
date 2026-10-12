@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023490",
+  "entities": [
+    {
+      "name": "IETF RFC 3960 会话初始协议的早期媒体与振铃音产生(Earl",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       IETF RFC 3960   会话初始协议的早期媒体与振铃音产生(EarlyMedia and Ringing ToneGener-\nationin the Session Initiation Protocol)",
+      "type": "语义分解",
+      "subject": "IETF RFC 3960 会话初始协议的早期媒体与振铃音产生(Earl",
+      "action": "",
+      "operation": "IETF RFC 3960 会话初始协议的早期媒体与振铃音产生(EarlyMedia and Ringing ToneGener- ationin the Session Initiation Protocol)",
+      "condition": "",
+      "constraint": "       IETF RFC 3960   会话初始协议的早期媒体与振铃音产生(EarlyMedia and Ringing ToneGener-\nationin the Session Initiation Protocol)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "IETF RFC 3960 会话初始协议的早期媒体与振铃音产生(Earl"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23490,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

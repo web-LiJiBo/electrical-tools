@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.5.4",
+  "entities": [
+    {
+      "name": "试运行计划审核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.4 总监理工程师应组织专业监理工程师审查施工单位报送的试运行计划，并签署审核意见，经项目管理机构批准后方可实施。",
+      "type": "语义分解",
+      "subject": "试运行计划审核",
+      "action": "",
+      "operation": "总监组织审查签意见批准后实施",
+      "condition": "",
+      "constraint": "8.5.4 总监理工程师应组织专业监理工程师审查施工单位报送的试运行计划，并签署审核意见，经项目管理机构批准后方可实施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运行计划审核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

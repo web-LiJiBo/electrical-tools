@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "7.3.2",
+  "entities": [
+    {
+      "name": "作业防护设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2 在硫化氢环境中作业期间应迸行以下安全检查 : a) 人身防护用品。设施设备均应处于可用状态。 b) 风向标完好无损,警示标志清晰。 c) 给正压式空气呼吸器供气的空气压缩机布置在安全区域内=",
+      "type": "语义分解",
+      "subject": "作业防护设施",
+      "action": "",
+      "operation": "保证可用标识清晰呼吸气源设备位于安全区",
+      "condition": "",
+      "constraint": "7.3.2 在硫化氢环境中作业期间应迸行以下安全检查 : a) 人身防护用品。设施设备均应处于可用状态。 b) 风向标完好无损,警示标志清晰。 c) 给正压式空气呼吸器供气的空气压缩机布置在安全区域内=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业防护设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7478,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022309",
+  "entities": [
+    {
+      "name": "雷电电磁脉冲 lightning electromagnetic pul",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.14  雷电电磁脉冲   lightning   electromagnetic   pulse(LEMP)\n   与雷电放电相联系的电磁辐射。所产生的电场和磁场能够耦",
+      "type": "语义分解",
+      "subject": "雷电电磁脉冲 lightning electromagnetic pul",
+      "action": "",
+      "operation": "雷电电磁脉冲 lightning electromagnetic pulse(LEMP) 与雷电放电相联系的电磁辐射。所产生的电场和磁场能够耦",
+      "condition": "",
+      "constraint": "2.0.14  雷电电磁脉冲   lightning   electromagnetic   pulse(LEMP)\n   与雷电放电相联系的电磁辐射。所产生的电场和磁场能够耦",
+      "constraint_role": "informational",
+      "related_entities": [
+        "雷电电磁脉冲 lightning electromagnetic pul"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22309,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

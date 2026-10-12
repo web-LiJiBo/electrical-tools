@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034592",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注 :  应当注意 , 与空气可能渗入烟道系统(见 6. 1)一样 , 空气泄漏进入测量系统亦可能发生 , 这会导致结果无效。  因\n       此 , 建议在做任何试验前 , 先对样品处理系统做泄漏试验。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注 : 应当注意 , 与空气可能渗入烟道系统(见 6. 1)一样 , 空气泄漏进入测量系统亦可能发生 , 这会导致结果无效。 因 此 , 建议在做任何试验前 , 先对样品处理系统做泄漏试验。",
+      "condition": "",
+      "constraint": "注 :  应当注意 , 与空气可能渗入烟道系统(见 6. 1)一样 , 空气泄漏进入测量系统亦可能发生 , 这会导致结果无效。  因\n       此 , 建议在做任何试验前 , 先对样品处理系统做泄漏试验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34592,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

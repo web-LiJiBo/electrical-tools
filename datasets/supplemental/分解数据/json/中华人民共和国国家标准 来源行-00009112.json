@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009112",
+  "entities": [
+    {
+      "name": "同的用词说明如下",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "同的用词说明如下：                                                                 《电信网络设备的电磁兼容性要求及测量方法》GB19286\n     1)表示很严格，非这样做不可的：                                         《同步数字体系设备和系统的光接口技术要求》GB/T  20185\n       正面词采用“必须”,反面词采用“严禁”;                                《光波分复用系统( WDM) 技术要求——32×2.5Gbit/s  部分》",
+      "type": "语义分解",
+      "subject": "同的用词说明如下",
+      "action": "",
+      "operation": "同的用词说明如下： 《电信网络设备的电磁兼容性要求及测量方法》GB19286 1)表示很严格，非这样做不可的： 《同步数字体系设备和系统的光接口技术要求》GB/T 20185 正面词采用“必须”,反面词采用“严禁”; 《光波分复用系统( WDM) 技术要求——32×2.5Gbit/s 部分》",
+      "condition": "",
+      "constraint": "同的用词说明如下：                                                                 《电信网络设备的电磁兼容性要求及测量方法》GB19286\n     1)表示很严格，非这样做不可的：                                         《同步数字体系设备和系统的光接口技术要求》GB/T  20185\n       正面词采用“必须”,反面词采用“严禁”;                                《光波分复用系统( WDM) 技术要求——32×2.5Gbit/s  部分》",
+      "constraint_role": "informational",
+      "related_entities": [
+        "同的用词说明如下"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9112,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

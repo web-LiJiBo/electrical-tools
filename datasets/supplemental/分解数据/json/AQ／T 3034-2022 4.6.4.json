@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.6.4",
+  "entities": [
+    {
+      "name": "危害辨识范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.4 危害辨识应涵盖但不限 工艺技术的本质安全性; 厂区选址和平面布局不合理导致的危害; 企业潜在的风险对相关人员安全的影响; 工艺系统可能存在的危害; 操作过程可能存在的危害; 设备设施失效可能存在的危害 作业过程可能存在的危害; 娈更所引入的危害; 建(构)筑物潜在的危害 自然灾害对企业带来的危 企业潜在的风险对厂外相关方的影响 。 外部环境对企业安全的影响",
+      "type": "语义分解",
+      "subject": "危害辨识范围",
+      "action": "",
+      "operation": "涵盖本质工艺布局人员操作设备作业变更建筑自然灾害内外影响",
+      "condition": "",
+      "constraint": "4.6.4 危害辨识应涵盖但不限 工艺技术的本质安全性; 厂区选址和平面布局不合理导致的危害; 企业潜在的风险对相关人员安全的影响; 工艺系统可能存在的危害; 操作过程可能存在的危害; 设备设施失效可能存在的危害 作业过程可能存在的危害; 娈更所引入的危害; 建(构)筑物潜在的危害 自然灾害对企业带来的危 企业潜在的风险对厂外相关方的影响 。 外部环境对企业安全的影响",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危害辨识范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5095,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

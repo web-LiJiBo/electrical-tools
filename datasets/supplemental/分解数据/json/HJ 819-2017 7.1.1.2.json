@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "7.1.1.2",
+  "entities": [
+    {
+      "name": "样保存交接记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1.2 样品保存和交接: 样品保存方式 样品传输交接记录",
+      "type": "语义分解",
+      "subject": "样保存交接记录",
+      "action": "",
+      "operation": "记保存方式传输交接",
+      "condition": "",
+      "constraint": "7.1.1.2 样品保存和交接: 样品保存方式 样品传输交接记录",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样保存交接记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2884,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

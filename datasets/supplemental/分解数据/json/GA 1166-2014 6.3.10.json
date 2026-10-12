@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "6.3.10",
+  "entities": [
+    {
+      "name": "安防传输布线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.10 技术防范系统的传输与布线应符合 GB 50348一2004中3.11的规定。 不适宜采用有线传输的 区域和部位 ,可采用无线传输方式 ,并应保证传输停息的有效性 ,安全性及抗干扰性能=",
+      "type": "语义分解",
+      "subject": "安防传输布线",
+      "action": "",
+      "operation": "合引用标准不宜有线可无线确保有效安全抗干扰",
+      "condition": "",
+      "constraint": "6.3.10 技术防范系统的传输与布线应符合 GB 50348一2004中3.11的规定。 不适宜采用有线传输的 区域和部位 ,可采用无线传输方式 ,并应保证传输停息的有效性 ,安全性及抗干扰性能=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防传输布线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5445,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

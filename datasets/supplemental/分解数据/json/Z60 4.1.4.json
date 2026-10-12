@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.1.4",
+  "entities": [
+    {
+      "name": "汽车油气快接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.4    汽车罐车油气回收耦合阀、底部装卸油密封式快速接头应集中放置在管路箱内。多仓汽车罐车\n应将各仓油气回收管路在罐顶并联后进入管路箱。",
+      "type": "语义分解",
+      "subject": "汽车油气快接",
+      "action": "",
+      "operation": "集中管路箱多仓顶并联入箱",
+      "condition": "",
+      "constraint": "4.1.4    汽车罐车油气回收耦合阀、底部装卸油密封式快速接头应集中放置在管路箱内。多仓汽车罐车\n应将各仓油气回收管路在罐顶并联后进入管路箱。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "汽车油气快接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32893,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

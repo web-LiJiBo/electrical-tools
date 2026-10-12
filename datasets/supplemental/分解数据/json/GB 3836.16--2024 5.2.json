@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "防爆检查等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 检查等级 检查等级分为目视检查 一般检查和详细检查。 附录 A中表 A.1 .表 A.2,表 A.3 和表 A.4 按电气 设备一般项目和具体项目，详细地列出了对这三个检查等级所要求的检查项目 目视检查和一般检查可在设备带电时进行，详细检查一般要求设备断电。 对于具有一种以上防爆型式的电气设备(例如 Ex\" db eb'型) ，检查等级和检查项目的选择应为 表 A.1,表 A.2,表 A.3和表 A.4中相关栏目的组合;如果与所检查的设备类型无关，则应注明，必要时 增加",
+      "type": "语义分解",
+      "subject": "防爆检查等级",
+      "action": "",
+      "operation": "目视一般详细按附表多型式组合通常详细断电",
+      "condition": "",
+      "constraint": "5.2 检查等级 检查等级分为目视检查 一般检查和详细检查。 附录 A中表 A.1 .表 A.2,表 A.3 和表 A.4 按电气 设备一般项目和具体项目，详细地列出了对这三个检查等级所要求的检查项目 目视检查和一般检查可在设备带电时进行，详细检查一般要求设备断电。 对于具有一种以上防爆型式的电气设备(例如 Ex\" db eb'型) ，检查等级和检查项目的选择应为 表 A.1,表 A.2,表 A.3和表 A.4中相关栏目的组合;如果与所检查的设备类型无关，则应注明，必要时 增加",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆检查等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录A表未提供"
+      ]
+    }
+  }
+}

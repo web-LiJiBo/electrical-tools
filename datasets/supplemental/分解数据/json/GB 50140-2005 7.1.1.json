@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "7.1.1",
+  "entities": [
+    {
+      "name": "灭火器配置计算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1 灭火器配置的设计与计算应按计算单元进行。灭火器最小需配灭火级别和最少需配数量的计算值应进位取整。",
+      "type": "语义分解",
+      "subject": "灭火器配置计算",
+      "action": "",
+      "operation": "按计算单元并对级别数量进位取整",
+      "condition": "",
+      "constraint": "7.1.1 灭火器配置的设计与计算应按计算单元进行。灭火器最小需配灭火级别和最少需配数量的计算值应进位取整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器配置计算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4073,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

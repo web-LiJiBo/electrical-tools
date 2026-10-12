@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "5.3.1",
+  "entities": [
+    {
+      "name": "应按管道材质、施工因素、管道腐蚀泄漏事故发生频率 等运行中发现的问题、间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1   应按管道材质、施工因素、管道腐蚀泄漏事故发生频率\n等运行中发现的问题、间接检测方法、管段风险、自然地理位\n置、地貌环境特点、土壤类别等因素确定ECDA管段划分原则。\nECDA管段可为连续的，也可为不连续的。宜根据间接检测与\n评价及直接检测与评价的结果对管段的划分进行修正。\n5.3.2 下列管段宜划分为单独管段：",
+      "type": "语义分解",
+      "subject": "应按管道材质、施工因素、管道腐蚀泄漏事故发生频率 等运行中发现的问题、间",
+      "action": "",
+      "operation": "应按管道材质、施工因素、管道腐蚀泄漏事故发生频率 等运行中发现的问题、间接检测方法、管段风险、自然地理位 置、地貌环境特点、土壤类别等因素确定ECDA管段划分原则。 ECDA管段可为连续的，也可为不连续的。宜根据间接检测与 评价及直接检测与评价的结果对管段的划分进行修正。 5.3.2 下列管段宜划分为单独管段",
+      "condition": "",
+      "constraint": "5.3.1   应按管道材质、施工因素、管道腐蚀泄漏事故发生频率\n等运行中发现的问题、间接检测方法、管段风险、自然地理位\n置、地貌环境特点、土壤类别等因素确定ECDA管段划分原则。\nECDA管段可为连续的，也可为不连续的。宜根据间接检测与\n评价及直接检测与评价的结果对管段的划分进行修正。\n5.3.2 下列管段宜划分为单独管段：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应按管道材质、施工因素、管道腐蚀泄漏事故发生频率 等运行中发现的问题、间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44945,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

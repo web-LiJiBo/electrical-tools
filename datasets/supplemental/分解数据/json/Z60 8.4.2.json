@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "8.4.2",
+  "entities": [
+    {
+      "name": "延迟修复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.2    符合下列条件之一的设备与管线组件可延迟修复。企业应将延迟修复方案报生态环境主管部门\n备案，并于下次停车(工)检修期间完成修复。\n      a) 装置停车(工)条件下才能修复；\n      b)  立即修复存在安全风险；\n      c)  其他特殊情况。",
+      "type": "语义分解",
+      "subject": "延迟修复",
+      "action": "",
+      "operation": "需停工安全风险等方案备案下停检完成",
+      "condition": "",
+      "constraint": "8.4.2    符合下列条件之一的设备与管线组件可延迟修复。企业应将延迟修复方案报生态环境主管部门\n备案，并于下次停车(工)检修期间完成修复。\n      a) 装置停车(工)条件下才能修复；\n      b)  立即修复存在安全风险；\n      c)  其他特殊情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "延迟修复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33403,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

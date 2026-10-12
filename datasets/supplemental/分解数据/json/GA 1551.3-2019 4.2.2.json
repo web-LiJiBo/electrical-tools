@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "储库重点部位范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 储油(气)库治安反恐防范的重点部位包括但不限于以下部位: 库区周界出人口; 库区周界; 油(气)储罐区; 接卸油(气)作业区; 油(气)发货作业区; 监控中心(控制室)。",
+      "type": "语义分解",
+      "subject": "储库重点部位范围",
+      "action": "",
+      "operation": "周界出入口罐区接卸发货监控中心",
+      "condition": "",
+      "constraint": "4.2.2 储油(气)库治安反恐防范的重点部位包括但不限于以下部位: 库区周界出人口; 库区周界; 油(气)储罐区; 接卸油(气)作业区; 油(气)发货作业区; 监控中心(控制室)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储库重点部位范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5690,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；分类清单"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018570",
+  "entities": [
+    {
+      "name": "——101",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——101:恢复扩展开销复帧。如果复帧恢复处理进入0OM 状态，应宣告 dPLM。复帧恢复处理\n    进入IM 状态，信号标记应从K4 比特1复帧序列的第12到19帧中恢复，如果接受的信号标\n    记与预期的信号标记不匹配应宣告dPLM;",
+      "type": "语义分解",
+      "subject": "——101",
+      "action": "",
+      "operation": "——101:恢复扩展开销复帧。如果复帧恢复处理进入0OM 状态，应宣告 dPLM。复帧恢复处理 进入IM 状态，信号标记应从K4 比特1复帧序列的第12到19帧中恢复，如果接受的信号标 记与预期的信号标记不匹配应宣告dPLM",
+      "condition": "",
+      "constraint": "——101:恢复扩展开销复帧。如果复帧恢复处理进入0OM 状态，应宣告 dPLM。复帧恢复处理\n    进入IM 状态，信号标记应从K4 比特1复帧序列的第12到19帧中恢复，如果接受的信号标\n    记与预期的信号标记不匹配应宣告dPLM;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——101"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18570,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

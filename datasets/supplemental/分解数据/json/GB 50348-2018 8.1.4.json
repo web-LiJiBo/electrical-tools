@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.1.4",
+  "entities": [
+    {
+      "name": "监理人员能力",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.4 监理人员应包括总监理工程师、专业监理工程师、监理员，可设总监理工程师代表。总监理工程师、总监理工程师代表、专业监理工程师应具有相应的技术能力，同时，负责安全防范工程监理的总监理工程师代表应具有5年及以上的安全防范工程实践经验，负责安全防范工程监理的专业监理工程师应具有3年及以上的安全防范工程实践经验。",
+      "type": "语义分解",
+      "subject": "监理人员能力",
+      "action": "",
+      "operation": "总专监理及监理员相应技术总监代表至少五年专业至少三年安防实践",
+      "condition": "",
+      "constraint": "8.1.4 监理人员应包括总监理工程师、专业监理工程师、监理员，可设总监理工程师代表。总监理工程师、总监理工程师代表、专业监理工程师应具有相应的技术能力，同时，负责安全防范工程监理的总监理工程师代表应具有5年及以上的安全防范工程实践经验，负责安全防范工程监理的专业监理工程师应具有3年及以上的安全防范工程实践经验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监理人员能力"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7089,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

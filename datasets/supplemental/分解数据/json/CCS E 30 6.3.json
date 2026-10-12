@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "6.3",
+  "entities": [
+    {
+      "name": "点火线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3   点火线 :直径不大于 0. 2 mm 的镍铬合金 、铁丝 、铜线或其他点火线 ,截成长 60 mm~ 120 mm(视\n氧弹内附件结构及点火线系统而定)的等分线段 ,称量由 10根 ~ 15根组成的线束 , 以测定每一根金属",
+      "type": "语义分解",
+      "subject": "点火线",
+      "action": "",
+      "operation": "径不超0.2毫米截60至120毫米称10至15根束",
+      "condition": "",
+      "constraint": "6.3   点火线 :直径不大于 0. 2 mm 的镍铬合金 、铁丝 、铜线或其他点火线 ,截成长 60 mm~ 120 mm(视\n氧弹内附件结构及点火线系统而定)的等分线段 ,称量由 10根 ~ 15根组成的线束 , 以测定每一根金属",
+      "constraint_role": "informational",
+      "related_entities": [
+        "点火线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34969,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；句末截断"
+      ]
+    }
+  }
+}

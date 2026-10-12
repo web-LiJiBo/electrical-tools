@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "3.2",
+  "entities": [
+    {
+      "name": "火爆危险场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.2 火灾爆炸危险场所 fire and explosive area 能够与空气形成爆炸性混合物的气体.蒸气.粉尘等介质环境以及在高温 .受热 .摩擦 .撞击 .自燃等 情况下可能引发火灾 .爆炸的场所。",
+      "type": "语义分解",
+      "subject": "火爆危险场所",
+      "action": "",
+      "operation": "易形成爆炸混合物或高温摩擦撞击自燃引火爆的场所",
+      "condition": "",
+      "constraint": "3.2 火灾爆炸危险场所 fire and explosive area 能够与空气形成爆炸性混合物的气体.蒸气.粉尘等介质环境以及在高温 .受热 .摩擦 .撞击 .自燃等 情况下可能引发火灾 .爆炸的场所。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "火爆危险场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6684,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；术语定义"
+      ]
+    }
+  }
+}

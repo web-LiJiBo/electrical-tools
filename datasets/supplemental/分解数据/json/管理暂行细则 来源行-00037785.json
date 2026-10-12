@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037785",
+  "entities": [
+    {
+      "name": "指报告主体在报告期内净购入（外购减去输出）的电力或热力（蒸汽、 热水、高",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   指报告主体在报告期内净购入（外购减去输出）的电力或热力（蒸汽、\n\n热水、高压气体）所对应的生产过程中燃料燃烧产生的 CO2 排放。该部分\n排放实际发生在生产这些电力或热力的企业，但由报告主体的消费活动引",
+      "type": "语义分解",
+      "subject": "指报告主体在报告期内净购入（外购减去输出）的电力或热力（蒸汽、 热水、高",
+      "action": "",
+      "operation": "指报告主体在报告期内净购入（外购减去输出）的电力或热力（蒸汽、 热水、高压气体）所对应的生产过程中燃料燃烧产生的 CO2 排放。该部分 排放实际发生在生产这些电力或热力的企业，但由报告主体的消费活动引",
+      "condition": "",
+      "constraint": "   指报告主体在报告期内净购入（外购减去输出）的电力或热力（蒸汽、\n\n热水、高压气体）所对应的生产过程中燃料燃烧产生的 CO2 排放。该部分\n排放实际发生在生产这些电力或热力的企业，但由报告主体的消费活动引",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指报告主体在报告期内净购入（外购减去输出）的电力或热力（蒸汽、 热水、高"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37785,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

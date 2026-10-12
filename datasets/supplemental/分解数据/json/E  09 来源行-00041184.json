@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041184",
+  "entities": [
+    {
+      "name": "在油井报废时应考虑有关的环保要求，首要的是保护地下清水蓄水层和地下饮用水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在油井报废时应考虑有关的环保要求，首要的是保护地下清水蓄水层和地下饮用水源，并与井下\n含油气层或在用注水层保持隔离。其他保护措施的结果，包括表层土壤和地表水保护、土地的恢复使\n用、报废井情况的永久性证明材料等也应进行评估。\n5.4.1.1  封堵",
+      "type": "语义分解",
+      "subject": "在油井报废时应考虑有关的环保要求，首要的是保护地下清水蓄水层和地下饮用水",
+      "action": "",
+      "operation": "在油井报废时应考虑有关的环保要求，首要的是保护地下清水蓄水层和地下饮用水源，并与井下 含油气层或在用注水层保持隔离。其他保护措施的结果，包括表层土壤和地表水保护、土地的恢复使 用、报废井情况的永久性证明材料等也应进行评估。 5.4.1.1 封堵",
+      "condition": "",
+      "constraint": "   在油井报废时应考虑有关的环保要求，首要的是保护地下清水蓄水层和地下饮用水源，并与井下\n含油气层或在用注水层保持隔离。其他保护措施的结果，包括表层土壤和地表水保护、土地的恢复使\n用、报废井情况的永久性证明材料等也应进行评估。\n5.4.1.1  封堵",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在油井报废时应考虑有关的环保要求，首要的是保护地下清水蓄水层和地下饮用水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41184,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

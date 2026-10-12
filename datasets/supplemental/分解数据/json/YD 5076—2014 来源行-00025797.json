@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025797",
+  "entities": [
+    {
+      "name": ") IAD 宜设置在用户端",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   3) IAD  宜设置在用户端。设置数量应根据需要接入的\nPOTS 、PC等用户数确定。为集团客户提供接入服务的IAD 宜设\n置在接入机房，其他 IAD 可根据用户的性质确定安装方式，无需专\n门的机房，一般放置于离用户较近的地方。",
+      "type": "语义分解",
+      "subject": ") IAD 宜设置在用户端",
+      "action": "",
+      "operation": ") IAD 宜设置在用户端。设置数量应根据需要接入的 POTS 、PC等用户数确定。为集团客户提供接入服务的IAD 宜设 置在接入机房，其他 IAD 可根据用户的性质确定安装方式，无需专 门的机房，一般放置于离用户较近的地方。",
+      "condition": "",
+      "constraint": "   3) IAD  宜设置在用户端。设置数量应根据需要接入的\nPOTS 、PC等用户数确定。为集团客户提供接入服务的IAD 宜设\n置在接入机房，其他 IAD 可根据用户的性质确定安装方式，无需专\n门的机房，一般放置于离用户较近的地方。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") IAD 宜设置在用户端"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25797,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

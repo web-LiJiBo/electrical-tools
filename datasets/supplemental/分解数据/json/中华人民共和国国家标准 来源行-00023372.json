@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023372",
+  "entities": [
+    {
+      "name": "在建筑物遭受雷击时，避雷带和避雷网上会有较大的雷 电流通过，当GPS 馈",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.4       在建筑物遭受雷击时，避雷带和避雷网上会有较大的雷\n电流通过，当GPS 馈线系挂在避雷网或避雷带上时，会在馈线上\n感应较大的过电压侵入机房造成设备损坏。本条为强制性条文，\n必须严格执行。",
+      "type": "语义分解",
+      "subject": "在建筑物遭受雷击时，避雷带和避雷网上会有较大的雷 电流通过，当GPS 馈",
+      "action": "",
+      "operation": "在建筑物遭受雷击时，避雷带和避雷网上会有较大的雷 电流通过，当GPS 馈线系挂在避雷网或避雷带上时，会在馈线上 感应较大的过电压侵入机房造成设备损坏。本条为强制性条文， 必须严格执行。",
+      "condition": "",
+      "constraint": "6.6.4       在建筑物遭受雷击时，避雷带和避雷网上会有较大的雷\n电流通过，当GPS 馈线系挂在避雷网或避雷带上时，会在馈线上\n感应较大的过电压侵入机房造成设备损坏。本条为强制性条文，\n必须严格执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在建筑物遭受雷击时，避雷带和避雷网上会有较大的雷 电流通过，当GPS 馈"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23372,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

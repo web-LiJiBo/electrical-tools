@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "生产能耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 生产能耗测算 输油气场站、LNG接收站、库区、阀室、维修队、消防队其他生产设备能耗(无单体计量) 可利用近3年的实际能耗量平均值确定。 输油气场站、LNG接收站、库区、阀室、维修队、消防队主要耗能设备能耗(有单体计量)与其他生产设备能耗(无单体计量)相加确定生产能耗。",
+      "type": "语义分解",
+      "subject": "生产能耗",
+      "action": "",
+      "operation": "主要设备与其他生产设备能耗相加",
+      "condition": "无单体计量",
+      "constraint": "近3年的实际能耗量平均值",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "生产能耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

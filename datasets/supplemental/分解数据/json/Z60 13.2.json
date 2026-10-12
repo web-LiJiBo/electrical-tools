@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "13.2",
+  "entities": [
+    {
+      "name": "企业排放责任",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2    企业是实施排放标准的责任主体，应采取必要措施，达到本标准规定的污染物排放控制要求。\n13.3     企业未遵守本标准规定的措施性控制要求，属于违法行为，依照法律法规等有关规定予以处理。\n13.4  对于设备与管线组件VOCs 泄漏控制，如发现下列情况之一，属于违法行为，依照法律法规等有\n关规定予以处理：",
+      "type": "语义分解",
+      "subject": "企业排放责任",
+      "action": "",
+      "operation": "采取措施达标违反按法规处理",
+      "condition": "",
+      "constraint": "13.2    企业是实施排放标准的责任主体，应采取必要措施，达到本标准规定的污染物排放控制要求。\n13.3     企业未遵守本标准规定的措施性控制要求，属于违法行为，依照法律法规等有关规定予以处理。\n13.4  对于设备与管线组件VOCs 泄漏控制，如发现下列情况之一，属于违法行为，依照法律法规等有\n关规定予以处理：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业排放责任"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33462,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；泄漏违法清单缺失非现行法律认证"
+      ]
+    }
+  }
+}

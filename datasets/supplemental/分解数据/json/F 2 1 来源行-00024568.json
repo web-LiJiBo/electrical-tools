@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024568",
+  "entities": [
+    {
+      "name": "点名功能应符合 GB/T 31998—2015 中 7 . 3 . 2 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      点名功能应符合 GB/T 31998—2015  中 7 . 3 . 2 . 17 要求，调度台 1 支持对选择的多个用户进行点名，\n被选中的用户按被选择的先后顺序振铃。  先被选中的用户先振铃、摘机、挂机后，依次下一个被选中的\n用户振铃、摘机、挂机，直到最后一个用户摘机，挂机，点名操作结束。",
+      "type": "语义分解",
+      "subject": "点名功能应符合 GB/T 31998—2015 中 7 . 3 . 2 ",
+      "action": "",
+      "operation": "点名功能应符合 GB/T 31998—2015 中 7 . 3 . 2 . 17 要求，调度台 1 支持对选择的多个用户进行点名， 被选中的用户按被选择的先后顺序振铃。 先被选中的用户先振铃、摘机、挂机后，依次下一个被选中的 用户振铃、摘机、挂机，直到最后一个用户摘机，挂机，点名操作结束。",
+      "condition": "",
+      "constraint": "      点名功能应符合 GB/T 31998—2015  中 7 . 3 . 2 . 17 要求，调度台 1 支持对选择的多个用户进行点名，\n被选中的用户按被选择的先后顺序振铃。  先被选中的用户先振铃、摘机、挂机后，依次下一个被选中的\n用户振铃、摘机、挂机，直到最后一个用户摘机，挂机，点名操作结束。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "点名功能应符合 GB/T 31998—2015 中 7 . 3 . 2 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24568,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

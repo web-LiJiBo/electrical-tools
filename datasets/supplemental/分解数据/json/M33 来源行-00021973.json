@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021973",
+  "entities": [
+    {
+      "name": "——A1、A2 、J0和Z0 字节既可以产生也可以接力传送",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——A1、A2 、J0和Z0 字节既可以产生也可以接力传送。接力传送帧字节可以在检测到 OOF和从\n   故障恢复时减少中继器链延时，因为B1 在每个再生段进行计算区分段故障的能力不会受影响。\n\n   从管理角度看，一个线性系统中的所有中继器遵从其中一个方法是较为可取的。",
+      "type": "语义分解",
+      "subject": "——A1、A2 、J0和Z0 字节既可以产生也可以接力传送",
+      "action": "",
+      "operation": "——A1、A2 、J0和Z0 字节既可以产生也可以接力传送。接力传送帧字节可以在检测到 OOF和从 故障恢复时减少中继器链延时，因为B1 在每个再生段进行计算区分段故障的能力不会受影响。 从管理角度看，一个线性系统中的所有中继器遵从其中一个方法是较为可取的。",
+      "condition": "",
+      "constraint": "——A1、A2 、J0和Z0 字节既可以产生也可以接力传送。接力传送帧字节可以在检测到 OOF和从\n   故障恢复时减少中继器链延时，因为B1 在每个再生段进行计算区分段故障的能力不会受影响。\n\n   从管理角度看，一个线性系统中的所有中继器遵从其中一个方法是较为可取的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——A1、A2 、J0和Z0 字节既可以产生也可以接力传送"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21973,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

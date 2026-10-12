@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "综合通信大楼应设立电缆入口设施，并应通过接地排将电 缆入口设施各个户外电",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1      综合通信大楼应设立电缆入口设施，并应通过接地排将电\n缆入口设施各个户外电缆与主接地排或环形接地汇集线连接。可\n按图4.5.1设计，并应符合下列规定：",
+      "type": "语义分解",
+      "subject": "综合通信大楼应设立电缆入口设施，并应通过接地排将电 缆入口设施各个户外电",
+      "action": "",
+      "operation": "综合通信大楼应设立电缆入口设施，并应通过接地排将电 缆入口设施各个户外电缆与主接地排或环形接地汇集线连接。可 按图4.5.1设计，并应符合下列规定",
+      "condition": "",
+      "constraint": "4.5.1      综合通信大楼应设立电缆入口设施，并应通过接地排将电\n缆入口设施各个户外电缆与主接地排或环形接地汇集线连接。可\n按图4.5.1设计，并应符合下列规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "综合通信大楼应设立电缆入口设施，并应通过接地排将电 缆入口设施各个户外电"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22563,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

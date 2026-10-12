@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "制药验收前言",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 前言 简述制药项目立项、环境影响评价、初步设计、环境影响评价批复、试生产等审批过程, 以及工程开工、建设、试运行等情况; 根据现场勘查期间的生产工况，明确项目验收是否为分期验收或阶段性验收等; 叙述验收技术工作承担单位及现场勘查时间。",
+      "type": "语义分解",
+      "subject": "制药验收前言",
+      "action": "",
+      "operation": "概述审批建设试运行工况分期阶段验收承担单位勘查时间",
+      "condition": "",
+      "constraint": "6.1 前言 简述制药项目立项、环境影响评价、初步设计、环境影响评价批复、试生产等审批过程, 以及工程开工、建设、试运行等情况; 根据现场勘查期间的生产工况，明确项目验收是否为分期验收或阶段性验收等; 叙述验收技术工作承担单位及现场勘查时间。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药验收前言"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2735,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

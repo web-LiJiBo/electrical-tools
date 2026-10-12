@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025917",
+  "entities": [
+    {
+      "name": ")当一个长途交换区设置长途交换系统时，若端局与长途交 换系统之间设有高效",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1)当一个长途交换区设置长途交换系统时，若端局与长途交\n换系统之间设有高效直达路由，则首选该高效直达路由，次选经汇\n接局的迂回路由；若端局与长途交换系统之间为低呼损路由时，则\n正常情况下该路由上的话务不允许溢出，当发生话务异常时，方可\n选择至汇接局的迂回路由。关口局的路由选择同端局。",
+      "type": "语义分解",
+      "subject": ")当一个长途交换区设置长途交换系统时，若端局与长途交 换系统之间设有高效",
+      "action": "",
+      "operation": ")当一个长途交换区设置长途交换系统时，若端局与长途交 换系统之间设有高效直达路由，则首选该高效直达路由，次选经汇 接局的迂回路由；若端局与长途交换系统之间为低呼损路由时，则 正常情况下该路由上的话务不允许溢出，当发生话务异常时，方可 选择至汇接局的迂回路由。关口局的路由选择同端局。",
+      "condition": "",
+      "constraint": "   1)当一个长途交换区设置长途交换系统时，若端局与长途交\n换系统之间设有高效直达路由，则首选该高效直达路由，次选经汇\n接局的迂回路由；若端局与长途交换系统之间为低呼损路由时，则\n正常情况下该路由上的话务不允许溢出，当发生话务异常时，方可\n选择至汇接局的迂回路由。关口局的路由选择同端局。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")当一个长途交换区设置长途交换系统时，若端局与长途交 换系统之间设有高效"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25917,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

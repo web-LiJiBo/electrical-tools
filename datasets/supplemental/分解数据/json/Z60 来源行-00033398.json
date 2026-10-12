@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033398",
+  "entities": [
+    {
+      "name": "d) 采用屏蔽搅拌机、磁力搅拌机、密封隔离液所受压力高于工艺压力的双端面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      d)  采用屏蔽搅拌机、磁力搅拌机、密封隔离液所受压力高于工艺压力的双端面机械密封搅拌机或\n具有同等效能的搅拌机；",
+      "type": "语义分解",
+      "subject": "d) 采用屏蔽搅拌机、磁力搅拌机、密封隔离液所受压力高于工艺压力的双端面",
+      "action": "",
+      "operation": "d) 采用屏蔽搅拌机、磁力搅拌机、密封隔离液所受压力高于工艺压力的双端面机械密封搅拌机或 具有同等效能的搅拌机",
+      "condition": "",
+      "constraint": "      d)  采用屏蔽搅拌机、磁力搅拌机、密封隔离液所受压力高于工艺压力的双端面机械密封搅拌机或\n具有同等效能的搅拌机；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 采用屏蔽搅拌机、磁力搅拌机、密封隔离液所受压力高于工艺压力的双端面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33398,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

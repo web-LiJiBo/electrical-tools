@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "8.2.3.2",
+  "entities": [
+    {
+      "name": "系统工作日志 、 报警日志保存时间应满足法律法规要求 , 没有其他要求的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.3.2    系统工作日志 、  报警日志保存时间应满足法律法规要求 ,   没有其他要求的应保存30d 以上。\n8.2.3.3    报警信息应定期进行统计和分析。",
+      "type": "语义分解",
+      "subject": "系统工作日志 、 报警日志保存时间应满足法律法规要求 , 没有其他要求的",
+      "action": "",
+      "operation": "系统工作日志 、 报警日志保存时间应满足法律法规要求 , 没有其他要求的应保存30d 以上。 8.2.3.3 报警信息应定期进行统计和分析。",
+      "condition": "",
+      "constraint": "8.2.3.2    系统工作日志 、  报警日志保存时间应满足法律法规要求 ,   没有其他要求的应保存30d 以上。\n8.2.3.3    报警信息应定期进行统计和分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统工作日志 、 报警日志保存时间应满足法律法规要求 , 没有其他要求的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41737,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

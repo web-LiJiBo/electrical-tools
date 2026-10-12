@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "9.2.3.1",
+  "entities": [
+    {
+      "name": "近似加减",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.3.1 加法和减法 近似值相加减计算时,其和或差的有效数字位数,与各近似值中小数点后位数最少者相同。 运算过程中,可以多保留一位小数, 计算结果按数值修约规则处理。",
+      "type": "语义分解",
+      "subject": "近似加减",
+      "action": "",
+      "operation": "结果小数位按最少者运算可多留一位最后修约",
+      "condition": "",
+      "constraint": "9.2.3.1 加法和减法 近似值相加减计算时,其和或差的有效数字位数,与各近似值中小数点后位数最少者相同。 运算过程中,可以多保留一位小数, 计算结果按数值修约规则处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "近似加减"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2167,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

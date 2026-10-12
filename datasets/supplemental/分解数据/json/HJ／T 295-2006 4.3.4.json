@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.3.4",
+  "entities": [
+    {
+      "name": "项目现场监察组卷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4 建设项目现场监察文件材料,按建设项目执行环境影响评价制度情祝和建设项目执行 \"三同时\" 制度情况的现场监督检查一并按项目组卷。",
+      "type": "语义分解",
+      "subject": "项目现场监察组卷",
+      "action": "",
+      "operation": "环评三同时检查按项目组卷",
+      "condition": "",
+      "constraint": "4.3.4 建设项目现场监察文件材料,按建设项目执行环境影响评价制度情祝和建设项目执行 \"三同时\" 制度情况的现场监督检查一并按项目组卷。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "项目现场监察组卷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3080,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

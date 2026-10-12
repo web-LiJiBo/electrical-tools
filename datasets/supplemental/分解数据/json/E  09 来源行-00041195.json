@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041195",
+  "entities": [
+    {
+      "name": "钻井液池应清空、填筑到与缓冲带相一致的水平",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   钻井液池应清空、填筑到与缓冲带相一致的水平。在填埋之前钻井液池应被允许风干或就地固\n化；钻井液沉降时，坑的周围可以筑堤围护。在管线拆除或废弃之前，应考虑流体驱替和管线吹扫，\n并根据流体类型对流体进行回收、重复利用或妥善处置。",
+      "type": "语义分解",
+      "subject": "钻井液池应清空、填筑到与缓冲带相一致的水平",
+      "action": "",
+      "operation": "钻井液池应清空、填筑到与缓冲带相一致的水平。在填埋之前钻井液池应被允许风干或就地固 化；钻井液沉降时，坑的周围可以筑堤围护。在管线拆除或废弃之前，应考虑流体驱替和管线吹扫， 并根据流体类型对流体进行回收、重复利用或妥善处置。",
+      "condition": "",
+      "constraint": "   钻井液池应清空、填筑到与缓冲带相一致的水平。在填埋之前钻井液池应被允许风干或就地固\n化；钻井液沉降时，坑的周围可以筑堤围护。在管线拆除或废弃之前，应考虑流体驱替和管线吹扫，\n并根据流体类型对流体进行回收、重复利用或妥善处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "钻井液池应清空、填筑到与缓冲带相一致的水平"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41195,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

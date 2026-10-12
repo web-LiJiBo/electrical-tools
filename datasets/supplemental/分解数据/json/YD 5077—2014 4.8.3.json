@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.8.3",
+  "entities": [
+    {
+      "name": "信令维护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.3  信令网关及SDB 信令链路维护管理测试：应能支持根据指\n定信令链路、链路组或信令点编码进行信令消息过滤和消息跟踪\n功能。",
+      "type": "语义分解",
+      "subject": "信令维护",
+      "action": "",
+      "operation": "支持指定链路组信令点消息过滤跟踪",
+      "condition": "",
+      "constraint": "4.8.3  信令网关及SDB 信令链路维护管理测试：应能支持根据指\n定信令链路、链路组或信令点编码进行信令消息过滤和消息跟踪\n功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "信令维护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27004,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

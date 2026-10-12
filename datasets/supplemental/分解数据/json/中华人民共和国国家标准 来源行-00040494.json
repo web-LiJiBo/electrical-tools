@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040494",
+  "entities": [
+    {
+      "name": "废水回用处理过程中产生的污泥、废催化剂、废母液、吸附 剂、结晶物等应根据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.7      废水回用处理过程中产生的污泥、废催化剂、废母液、吸附\n剂、结晶物等应根据性质的不同，分类收集、储存或利用，在符合\n“减量化、稳定化、无害化”原则的前提下，可采用浓缩、脱水、焚烧、\n填埋或综合利用等措施，处理(置)过程中二次污染防治措施应充\n分、有效，处理(置)设施的安全、职业卫生防护设计应符合现行相\n关标准的规定。",
+      "type": "语义分解",
+      "subject": "废水回用处理过程中产生的污泥、废催化剂、废母液、吸附 剂、结晶物等应根据",
+      "action": "",
+      "operation": "废水回用处理过程中产生的污泥、废催化剂、废母液、吸附 剂、结晶物等应根据性质的不同，分类收集、储存或利用，在符合 “减量化、稳定化、无害化”原则的前提下，可采用浓缩、脱水、焚烧、 填埋或综合利用等措施，处理(置)过程中二次污染防治措施应充 分、有效，处理(置)设施的安全、职业卫生防护设计应符合现行相 关标准的规定。",
+      "condition": "",
+      "constraint": "7.4.7      废水回用处理过程中产生的污泥、废催化剂、废母液、吸附\n剂、结晶物等应根据性质的不同，分类收集、储存或利用，在符合\n“减量化、稳定化、无害化”原则的前提下，可采用浓缩、脱水、焚烧、\n填埋或综合利用等措施，处理(置)过程中二次污染防治措施应充\n分、有效，处理(置)设施的安全、职业卫生防护设计应符合现行相\n关标准的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水回用处理过程中产生的污泥、废催化剂、废母液、吸附 剂、结晶物等应根据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40494,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

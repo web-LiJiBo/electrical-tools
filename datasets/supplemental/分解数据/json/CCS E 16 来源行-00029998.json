@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00029998",
+  "entities": [
+    {
+      "name": "b) 洞口或井口周围地面是否局部隆起、沉降或其他变化",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)  洞口或井口周围地面是否局部隆起、沉降或其他变化；\n c) 墙体、门洞、明洞部分是否损坏、冻融或腐蚀劣化；\nd) 洞门或井盖梁、板是否破损或缺失；\n e )边仰坡支护工程是否完整、有效；\n f)  集水沟、排水沟是否完整、有效；",
+      "type": "语义分解",
+      "subject": "b) 洞口或井口周围地面是否局部隆起、沉降或其他变化",
+      "action": "",
+      "operation": "b) 洞口或井口周围地面是否局部隆起、沉降或其他变化； c) 墙体、门洞、明洞部分是否损坏、冻融或腐蚀劣化； d) 洞门或井盖梁、板是否破损或缺失； e )边仰坡支护工程是否完整、有效； f) 集水沟、排水沟是否完整、有效",
+      "condition": "",
+      "constraint": "b)  洞口或井口周围地面是否局部隆起、沉降或其他变化；\n c) 墙体、门洞、明洞部分是否损坏、冻融或腐蚀劣化；\nd) 洞门或井盖梁、板是否破损或缺失；\n e )边仰坡支护工程是否完整、有效；\n f)  集水沟、排水沟是否完整、有效；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 洞口或井口周围地面是否局部隆起、沉降或其他变化"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29998,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

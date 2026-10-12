@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037722",
+  "entities": [
+    {
+      "name": "至少包括如下内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "\n 至少包括如下内容：\n     a)温室气体数据质量控制计划制定、温室气体报告专门人员的指定情况；\n     b)数据质量控制计划的制定、修订、审批以及执行等的管理程序；\n     c)温室气体排放报告的编写、内部评估以及审批等管理程序；\n     d)温室气体数据文件的归档管理程序等内容。\n\n  (如不能全部描述可增加附件说明)",
+      "type": "语义分解",
+      "subject": "至少包括如下内容",
+      "action": "",
+      "operation": "至少包括如下内容： a)温室气体数据质量控制计划制定、温室气体报告专门人员的指定情况； b)数据质量控制计划的制定、修订、审批以及执行等的管理程序； c)温室气体排放报告的编写、内部评估以及审批等管理程序； d)温室气体数据文件的归档管理程序等内容。 (如不能全部描述可增加附件说明)",
+      "condition": "",
+      "constraint": "\n 至少包括如下内容：\n     a)温室气体数据质量控制计划制定、温室气体报告专门人员的指定情况；\n     b)数据质量控制计划的制定、修订、审批以及执行等的管理程序；\n     c)温室气体排放报告的编写、内部评估以及审批等管理程序；\n     d)温室气体数据文件的归档管理程序等内容。\n\n  (如不能全部描述可增加附件说明)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "至少包括如下内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37722,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "5.1.2.4",
+  "entities": [
+    {
+      "name": "生化需氧量磷酸盐缓冲液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.4 磷酸盐缓冲溶液 ( DH 7.2):称取 &.5 &磷酸二氢钾 (KHPO ) , 21.75 &磷酸氢二钾 (KHPO) ,33.4 &磷酸氢二钠 (Vaz HPO )和 1.7 &氯化铵 ( NH CI)溶于纯水中 ,稀释至1 000 mI。",
+      "type": "语义分解",
+      "subject": "生化需氧量磷酸盐缓冲液",
+      "action": "",
+      "operation": "按磷酸盐氯化铵原文配方定容",
+      "condition": "",
+      "constraint": "5.1.2.4 磷酸盐缓冲溶液 ( DH 7.2):称取 &.5 &磷酸二氢钾 (KHPO ) , 21.75 &磷酸氢二钾 (KHPO) ,33.4 &磷酸氢二钠 (Vaz HPO )和 1.7 &氯化铵 ( NH CI)溶于纯水中 ,稀释至1 000 mI。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生化需氧量磷酸盐缓冲液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1743,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；首质量&.5及单位化学符号异常不得猜值"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014476",
+  "entities": [
+    {
+      "name": "光复用段层 ( OMS) 是在接入点之间通过光复用段路径提供光通道传送的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   光复用段层 ( OMS)  是在接入点之间通过光复用段路径提供光通道传送的层网络，系统中体现为\n光波长复用/解复用子系统。在OTN 设备中通过传统的WDM 设备中的波分复用器件提供光复用段路径\n的物理载体。OTN 设备中承载OMS 层的物理载体的波分复用器件的参数应满足YD/T 1274—2003 中第\n\n5章波分复用器件参数要求。",
+      "type": "语义分解",
+      "subject": "光复用段层 ( OMS) 是在接入点之间通过光复用段路径提供光通道传送的",
+      "action": "",
+      "operation": "光复用段层 ( OMS) 是在接入点之间通过光复用段路径提供光通道传送的层网络，系统中体现为 光波长复用/解复用子系统。在OTN 设备中通过传统的WDM 设备中的波分复用器件提供光复用段路径 的物理载体。OTN 设备中承载OMS 层的物理载体的波分复用器件的参数应满足YD/T 1274—2003 中第 5章波分复用器件参数要求。",
+      "condition": "",
+      "constraint": "   光复用段层 ( OMS)  是在接入点之间通过光复用段路径提供光通道传送的层网络，系统中体现为\n光波长复用/解复用子系统。在OTN 设备中通过传统的WDM 设备中的波分复用器件提供光复用段路径\n的物理载体。OTN 设备中承载OMS 层的物理载体的波分复用器件的参数应满足YD/T 1274—2003 中第\n\n5章波分复用器件参数要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光复用段层 ( OMS) 是在接入点之间通过光复用段路径提供光通道传送的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14476,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

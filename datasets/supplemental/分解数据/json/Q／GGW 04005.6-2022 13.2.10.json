@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "13.2.10",
+  "entities": [
+    {
+      "name": "独立生活污水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.10 单位生产污水和生活污水完全隔绝, 并且采取了有效的措施防止二者混排等风险, 这类的生 活污水可以按照- 般生活污水管理。",
+      "type": "语义分解",
+      "subject": "独立生活污水",
+      "action": "",
+      "operation": "完全隔绝并防混排时按一般生活污水管理",
+      "condition": "单位生产污水和生活污水完全隔绝",
+      "constraint": "13.2.10 单位生产污水和生活污水完全隔绝, 并且采取了有效的措施防止二者混排等风险, 这类的生 活污水可以按照- 般生活污水管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "独立生活污水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 555,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019813",
+  "entities": [
+    {
+      "name": ") VC3 级联路径可以通过VC3 虚级联( VC-3-Xv) 连接，X",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5) VC3 级联路径可以通过VC3 虚级联( VC-3-Xv)  连接，X  取值范围1～256。 VC-3-Xv的\n        CI(S3-Xv_CI_D)     由 X 倍的S3_CI 组成，如图83所示。 H4 字节按 ITU-T G.707 规定产\n\n    生。",
+      "type": "语义分解",
+      "subject": ") VC3 级联路径可以通过VC3 虚级联( VC-3-Xv) 连接，X",
+      "action": "",
+      "operation": ") VC3 级联路径可以通过VC3 虚级联( VC-3-Xv) 连接，X 取值范围1～256。 VC-3-Xv的 CI(S3-Xv_CI_D) 由 X 倍的S3_CI 组成，如图83所示。 H4 字节按 ITU-T G.707 规定产 生。",
+      "condition": "",
+      "constraint": "5) VC3 级联路径可以通过VC3 虚级联( VC-3-Xv)  连接，X  取值范围1～256。 VC-3-Xv的\n        CI(S3-Xv_CI_D)     由 X 倍的S3_CI 组成，如图83所示。 H4 字节按 ITU-T G.707 规定产\n\n    生。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") VC3 级联路径可以通过VC3 虚级联( VC-3-Xv) 连接，X"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19813,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

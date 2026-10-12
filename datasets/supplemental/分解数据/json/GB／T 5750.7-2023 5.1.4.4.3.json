@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "5.1.4.4.3",
+  "entities": [
+    {
+      "name": "溶解氧滴定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4.4.3 滴定 将上述溶液倒人250 ml 碘量瓶中 ,用纯水洗涤溶解氧瓶 2次~3次,并将洗液全部倾入碘量瓶中 ,用硫代硫酸钠标准溶液滴定至溶液呈淡黄色 ,加人1 mI 淀粉溶液 ,继续至蓝色刚好褪去为止。记录用量(V) =",
+      "type": "语义分解",
+      "subject": "溶解氧滴定",
+      "action": "",
+      "operation": "转碘量瓶合并洗液硫代硫酸钠滴定加淀粉至蓝刚褪记录",
+      "condition": "",
+      "constraint": "5.1.4.4.3 滴定 将上述溶液倒人250 ml 碘量瓶中 ,用纯水洗涤溶解氧瓶 2次~3次,并将洗液全部倾入碘量瓶中 ,用硫代硫酸钠标准溶液滴定至溶液呈淡黄色 ,加人1 mI 淀粉溶液 ,继续至蓝色刚好褪去为止。记录用量(V) =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "溶解氧滴定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1775,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.8.5.1",
+  "entities": [
+    {
+      "name": "码头安全设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.8.5.1 油气码头应具备以下条件: 油气船安全系泊的码头和指定锚地; 有安全可靠的港口水域和航道; 按规定备有消防设施; 船岸间有畅通的无线或有线通信系统; 码头设置专用安全通道,并为作业划定相应的安全区域。",
+      "type": "语义分解",
+      "subject": "码头安全设施",
+      "action": "",
+      "operation": "安全系泊水域航道消防船岸通信专用通道划安全区",
+      "condition": "",
+      "constraint": "6.8.5.1 油气码头应具备以下条件: 油气船安全系泊的码头和指定锚地; 有安全可靠的港口水域和航道; 按规定备有消防设施; 船岸间有畅通的无线或有线通信系统; 码头设置专用安全通道,并为作业划定相应的安全区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "码头安全设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4678,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

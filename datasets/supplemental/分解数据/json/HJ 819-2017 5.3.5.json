@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.3.5",
+  "entities": [
+    {
+      "name": "废水采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.5 采样方法 废水手工采样方法的选择参照相关污染物排放标准及 HJIT 91 HJIT 92, HJ493 HJ494, HJ 495 等执行，根据监测指标的特点确定采样方法为混合采样方法或瞬时采样的方法，单次监测采样频次按相关污染物排放标准和 HJIT 91 执行。污水自动监测采样方法参照 HJIT 353, HJIT 354, HJIT 355, HJIT 356 执行=",
+      "type": "语义分解",
+      "subject": "废水采样",
+      "action": "",
+      "operation": "按因子选混合瞬时单次频次自动按相关规范",
+      "condition": "",
+      "constraint": "5.3.5 采样方法 废水手工采样方法的选择参照相关污染物排放标准及 HJIT 91 HJIT 92, HJ493 HJ494, HJ 495 等执行，根据监测指标的特点确定采样方法为混合采样方法或瞬时采样的方法，单次监测采样频次按相关污染物排放标准和 HJIT 91 执行。污水自动监测采样方法参照 HJIT 353, HJIT 354, HJIT 355, HJIT 356 执行=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2850,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.19.9",
+  "entities": [
+    {
+      "name": "学习型组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.19.9 企业应构建学习型组织 ,形成总结成功经验 ,分析失败教训 ,持续学习的文化氛围;应及时收 集 ,分析 ,分享自身或其他企业的经验教训 .定期组织对安全生产问题的全员交流研讨,通过开展安全观 察与沟通 ,安全技能培训 ,危害感知训练等活动 ,培养企业员工在安全生产方面持续学习 ,不断提高的 能力。",
+      "type": "语义分解",
+      "subject": "学习型组织",
+      "action": "",
+      "operation": "总结成败分享经验全员研讨观察沟通技能危害训练持续学习",
+      "condition": "",
+      "constraint": "4.19.9 企业应构建学习型组织 ,形成总结成功经验 ,分析失败教训 ,持续学习的文化氛围;应及时收 集 ,分析 ,分享自身或其他企业的经验教训 .定期组织对安全生产问题的全员交流研讨,通过开展安全观 察与沟通 ,安全技能培训 ,危害感知训练等活动 ,培养企业员工在安全生产方面持续学习 ,不断提高的 能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "学习型组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5344,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023572",
+  "entities": [
+    {
+      "name": "b) DTMF信号承载符合 IETF RFC 2833",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    DTMF信号承载符合 IETF RFC 2833;\nc)    MPEG4协议符合 ISO/IEC 14496;\nd)    No. 7信令符合 GB/T 28505—2012;\ne)    TFTP协议符合 IETF RFC 1350;\nf)    INAP协议符合 ITU-T Q. 1218;\ng)    ISUP消息符合 ITU-T Q. 762;\nh)    IUA协议符合 IETF RFC 3057;\ni)     M3UA协议符合 IETF RFC 3332;\nj)     MAP协议符合 3GPP TS29. 002;\nk)    MGCP协议符合 IETF RFC 3435;\nl)     RADIUS协议符合 IETF RFC 2865;",
+      "type": "语义分解",
+      "subject": "b) DTMF信号承载符合 IETF RFC 2833",
+      "action": "",
+      "operation": "b) DTMF信号承载符合 IETF RFC 2833; c) MPEG4协议符合 ISO/IEC 14496; d) No. 7信令符合 GB/T 28505—2012; e) TFTP协议符合 IETF RFC 1350; f) INAP协议符合 ITU-T Q. 1218; g) ISUP消息符合 ITU-T Q. 762; h) IUA协议符合 IETF RFC 3057; i) M3UA协议符合 IETF RFC 3332; j) MAP协议符合 3GPP TS29",
+      "condition": "",
+      "constraint": "b)    DTMF信号承载符合 IETF RFC 2833;\nc)    MPEG4协议符合 ISO/IEC 14496;\nd)    No. 7信令符合 GB/T 28505—2012;\ne)    TFTP协议符合 IETF RFC 1350;\nf)    INAP协议符合 ITU-T Q. 1218;\ng)    ISUP消息符合 ITU-T Q. 762;\nh)    IUA协议符合 IETF RFC 3057;\ni)     M3UA协议符合 IETF RFC 3332;\nj)     MAP协议符合 3GPP TS29. 002;\nk)    MGCP协议符合 IETF RFC 3435;\nl)     RADIUS协议符合 IETF RFC 2865;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) DTMF信号承载符合 IETF RFC 2833"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23572,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

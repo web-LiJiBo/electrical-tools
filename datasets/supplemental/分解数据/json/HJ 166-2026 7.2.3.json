@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.2.3",
+  "entities": [
+    {
+      "name": "土壤补采复采",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3 补充采样或复采 正式采样的样品分析测试后,若有下列情形之一, 应补充采样或复采: 点位布设。采样位置。采样方式或采样数量等未完全满足监测方案要求; 样品采集。运输或制备过程中出现质量问题; 分析过程中出现质量问题且无法开展复测; 需进一步确定污染影响范围等_ 土壤污染纠纷的法律仲裁调查应适当增加点位数量。根据土壤污染事故处置情况动态及时更新调整布设点位。",
+      "type": "语义分解",
+      "subject": "土壤补采复采",
+      "action": "",
+      "operation": "方案未满足采运制样质量分析无法复测或需确定范围时补采复采",
+      "condition": "",
+      "constraint": "7.2.3 补充采样或复采 正式采样的样品分析测试后,若有下列情形之一, 应补充采样或复采: 点位布设。采样位置。采样方式或采样数量等未完全满足监测方案要求; 样品采集。运输或制备过程中出现质量问题; 分析过程中出现质量问题且无法开展复测; 需进一步确定污染影响范围等_ 土壤污染纠纷的法律仲裁调查应适当增加点位数量。根据土壤污染事故处置情况动态及时更新调整布设点位。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤补采复采"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2234,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

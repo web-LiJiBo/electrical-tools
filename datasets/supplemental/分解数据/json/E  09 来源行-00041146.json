@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041146",
+  "entities": [
+    {
+      "name": "根据物质组分和当地环境敏感程度，废液池中的全部液体和其他物品均应回收、重",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    根据物质组分和当地环境敏感程度，废液池中的全部液体和其他物品均应回收、重复利用或采取\n环境可接受的方式进行处置。",
+      "type": "语义分解",
+      "subject": "根据物质组分和当地环境敏感程度，废液池中的全部液体和其他物品均应回收、重",
+      "action": "",
+      "operation": "根据物质组分和当地环境敏感程度，废液池中的全部液体和其他物品均应回收、重复利用或采取 环境可接受的方式进行处置。",
+      "condition": "",
+      "constraint": "    根据物质组分和当地环境敏感程度，废液池中的全部液体和其他物品均应回收、重复利用或采取\n环境可接受的方式进行处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据物质组分和当地环境敏感程度，废液池中的全部液体和其他物品均应回收、重"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41146,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

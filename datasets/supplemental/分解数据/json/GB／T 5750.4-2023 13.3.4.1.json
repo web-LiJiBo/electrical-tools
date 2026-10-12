@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.3.4.1",
+  "entities": [
+    {
+      "name": "流动注射洗涤剂分析仪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.3.4.1 流动注射分析仪:阴离子合成洗涤剂分析模块、10 mm比色池、650 nm滤光片，自动进样器、多通道蠕动泵、工作站和数据处理系统。",
+      "type": "语义分解",
+      "subject": "流动注射洗涤剂分析仪",
+      "action": "",
+      "operation": "配置模块光路进样泵及处理系统",
+      "condition": "",
+      "constraint": "13.3.4.1 流动注射分析仪:阴离子合成洗涤剂分析模块、10 mm比色池、650 nm滤光片，自动进样器、多通道蠕动泵、工作站和数据处理系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "流动注射洗涤剂分析仪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1592,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

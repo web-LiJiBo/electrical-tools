@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043768",
+  "entities": [
+    {
+      "name": "m1 —从工作曲线上查得的分析试液中的铜量，单位为毫克(mg)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "m1 —从工作曲线上查得的分析试液中的铜量，单位为毫克(mg) ;\nm2 —从工作曲线上查得的空白试验中的铜量，单位为毫克(mg) ;\nV1 — 移取试液的体积，单位为毫升(mL) ;\nV0 —试液总体积，单位为毫升(mL) ;\nm0 —试料的质量，单位为克(g) 。",
+      "type": "语义分解",
+      "subject": "m1 —从工作曲线上查得的分析试液中的铜量，单位为毫克(mg)",
+      "action": "",
+      "operation": "m1 —从工作曲线上查得的分析试液中的铜量，单位为毫克(mg) ; m2 —从工作曲线上查得的空白试验中的铜量，单位为毫克(mg) ; V1 — 移取试液的体积，单位为毫升(mL) ; V0 —试液总体积，单位为毫升(mL) ; m0 —试料的质量，单位为克(g) 。",
+      "condition": "",
+      "constraint": "m1 —从工作曲线上查得的分析试液中的铜量，单位为毫克(mg) ;\nm2 —从工作曲线上查得的空白试验中的铜量，单位为毫克(mg) ;\nV1 — 移取试液的体积，单位为毫升(mL) ;\nV0 —试液总体积，单位为毫升(mL) ;\nm0 —试料的质量，单位为克(g) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "m1 —从工作曲线上查得的分析试液中的铜量，单位为毫克(mg)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43768,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

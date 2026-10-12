@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "7.2",
+  "entities": [
+    {
+      "name": "温室核算方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2   选择核算方法\n\n7.2. 1   通则\n\n      应选择能得出准确 、一致 、可再现的结果的核算方法 。  报告主体应参照行业确定的核算方法进行核\n算 ;如果行业无确定的核算方法 ,则应在报告中对所采用的核算方法加以说明 。  如果核算方法有变化 ,\n报告主体应在报告中对变化进行说明 ,并解释变化原因 。\n      核算方法包括两种类型 :\n      a)    计算 :\n             1)    排放因子法 ;",
+      "type": "语义分解",
+      "subject": "温室核算方法",
+      "action": "",
+      "operation": "准确一致再现依行业无方法说明变更说明因由",
+      "condition": "",
+      "constraint": "7.2   选择核算方法\n\n7.2. 1   通则\n\n      应选择能得出准确 、一致 、可再现的结果的核算方法 。  报告主体应参照行业确定的核算方法进行核\n算 ;如果行业无确定的核算方法 ,则应在报告中对所采用的核算方法加以说明 。  如果核算方法有变化 ,\n报告主体应在报告中对变化进行说明 ,并解释变化原因 。\n      核算方法包括两种类型 :\n      a)    计算 :\n             1)    排放因子法 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "温室核算方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34796,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；方法分类清单截断"
+      ]
+    }
+  }
+}

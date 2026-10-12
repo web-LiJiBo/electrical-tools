@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "来源行-00038105",
+  "entities": [
+    {
+      "name": "农用地土壤污染风险筛选值risk screening values fo",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   农用地土壤污染风险筛选值risk screening values for soil contamination of agricultural land\n   指农用地土壤中污染物含量等于或者低于该值的，对农产品质量安全、农作物生长或土壤生态环境\n的风险低，一般情况下可以忽略；超过该值的，对农产品质量安全、农作物生长或土壤生态环境可能存\n在风险，应当加强土壤环境监测和农产品协同监测，原则上应当采取安全利用措施。\n3.5",
+      "type": "语义分解",
+      "subject": "农用地土壤污染风险筛选值risk screening values fo",
+      "action": "",
+      "operation": "农用地土壤污染风险筛选值risk screening values for soil contamination of agricultural land 指农用地土壤中污染物含量等于或者低于该值的，对农产品质量安全、农作物生长或土壤生态环境 的风险低，一般情况下可以忽略；超过该值的，对农产品质量安全、农作物生长或土壤生态环境可能存 在风险，应当加强土壤环境监测和农产品协同监测，原则上应当采取安全利用措施。 3.5",
+      "condition": "",
+      "constraint": "   农用地土壤污染风险筛选值risk screening values for soil contamination of agricultural land\n   指农用地土壤中污染物含量等于或者低于该值的，对农产品质量安全、农作物生长或土壤生态环境\n的风险低，一般情况下可以忽略；超过该值的，对农产品质量安全、农作物生长或土壤生态环境可能存\n在风险，应当加强土壤环境监测和农产品协同监测，原则上应当采取安全利用措施。\n3.5",
+      "constraint_role": "informational",
+      "related_entities": [
+        "农用地土壤污染风险筛选值risk screening values fo"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38105,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

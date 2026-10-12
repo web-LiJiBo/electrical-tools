@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041435",
+  "entities": [
+    {
+      "name": "购置或出售现有油田和矿区之前，应准备好环境现状的证明资料，这些资料能够证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   购置或出售现有油田和矿区之前，应准备好环境现状的证明资料，这些资料能够证明地表、地下\n或地下水是否受到污染，以及作业公司将来在环境方面需要注意的问题。可行时，提供或参考相关的\n航空照片。",
+      "type": "语义分解",
+      "subject": "购置或出售现有油田和矿区之前，应准备好环境现状的证明资料，这些资料能够证",
+      "action": "",
+      "operation": "购置或出售现有油田和矿区之前，应准备好环境现状的证明资料，这些资料能够证明地表、地下 或地下水是否受到污染，以及作业公司将来在环境方面需要注意的问题。可行时，提供或参考相关的 航空照片。",
+      "condition": "",
+      "constraint": "   购置或出售现有油田和矿区之前，应准备好环境现状的证明资料，这些资料能够证明地表、地下\n或地下水是否受到污染，以及作业公司将来在环境方面需要注意的问题。可行时，提供或参考相关的\n航空照片。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "购置或出售现有油田和矿区之前，应准备好环境现状的证明资料，这些资料能够证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41435,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

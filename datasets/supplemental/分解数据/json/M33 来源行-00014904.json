@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014904",
+  "entities": [
+    {
+      "name": ") STM-64 客户信号AMP 或BMP 映射到ODU2, 再 AMP",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2) STM-64 客户信号AMP 或BMP 映射到ODU2,  再 AMP 映射到ODTU23,  再复用到\n       ODU3通道信号，其中支路时隙可选择2.5G 和1.25G,  最后到OTU3(V)    接口；\n3)  STM-64 客户信号AMP 或BMP 映射到ODU2,  再GMP 映射到ODTU4.8,  再复用到\n       ODU4通道信号，最后到OTU4( V)  接口；",
+      "type": "语义分解",
+      "subject": ") STM-64 客户信号AMP 或BMP 映射到ODU2, 再 AMP",
+      "action": "",
+      "operation": ") STM-64 客户信号AMP 或BMP 映射到ODU2, 再 AMP 映射到ODTU23, 再复用到 ODU3通道信号，其中支路时隙可选择2.5G 和1.25G, 最后到OTU3(V) 接口； 3) STM-64 客户信号AMP 或BMP 映射到ODU2, 再GMP 映射到ODTU4.8, 再复用到 ODU4通道信号，最后到OTU4( V) 接口",
+      "condition": "",
+      "constraint": "2) STM-64 客户信号AMP 或BMP 映射到ODU2,  再 AMP 映射到ODTU23,  再复用到\n       ODU3通道信号，其中支路时隙可选择2.5G 和1.25G,  最后到OTU3(V)    接口；\n3)  STM-64 客户信号AMP 或BMP 映射到ODU2,  再GMP 映射到ODTU4.8,  再复用到\n       ODU4通道信号，最后到OTU4( V)  接口；",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") STM-64 客户信号AMP 或BMP 映射到ODU2, 再 AMP"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14904,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

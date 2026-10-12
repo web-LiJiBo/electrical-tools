@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034685",
+  "entities": [
+    {
+      "name": "掌握工业企业的温室气体排放现状",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    掌握工业企业的温室气体排放现状 ;发现工业企业减少温室气体排放的关键环节 ;设定工业企\n    业未来的温室气体排放目标等 ;",
+      "type": "语义分解",
+      "subject": "掌握工业企业的温室气体排放现状",
+      "action": "",
+      "operation": "掌握工业企业的温室气体排放现状 ;发现工业企业减少温室气体排放的关键环节 ;设定工业企 业未来的温室气体排放目标等",
+      "condition": "",
+      "constraint": "    掌握工业企业的温室气体排放现状 ;发现工业企业减少温室气体排放的关键环节 ;设定工业企\n    业未来的温室气体排放目标等 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "掌握工业企业的温室气体排放现状"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34685,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

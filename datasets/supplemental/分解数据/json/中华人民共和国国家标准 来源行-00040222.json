@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040222",
+  "entities": [
+    {
+      "name": "化工建设项目的竖向布置应充分利用地形，主要噪声源宜 低位布置，噪声敏感的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.3       化工建设项目的竖向布置应充分利用地形，主要噪声源宜\n低位布置，噪声敏感的建筑宜布置在隔声屏障的声影区中。\n8.3.4      生产装置、作业场所及不同功能区噪声卫生限值应按现行\n国家标准《工业企业设计卫生标准》GBZ1  执行，并宜采取下列控\n制措施：",
+      "type": "语义分解",
+      "subject": "化工建设项目的竖向布置应充分利用地形，主要噪声源宜 低位布置，噪声敏感的",
+      "action": "",
+      "operation": "化工建设项目的竖向布置应充分利用地形，主要噪声源宜 低位布置，噪声敏感的建筑宜布置在隔声屏障的声影区中。 8.3.4 生产装置、作业场所及不同功能区噪声卫生限值应按现行 国家标准《工业企业设计卫生标准》GBZ1 执行，并宜采取下列控 制措施",
+      "condition": "",
+      "constraint": "8.3.3       化工建设项目的竖向布置应充分利用地形，主要噪声源宜\n低位布置，噪声敏感的建筑宜布置在隔声屏障的声影区中。\n8.3.4      生产装置、作业场所及不同功能区噪声卫生限值应按现行\n国家标准《工业企业设计卫生标准》GBZ1  执行，并宜采取下列控\n制措施：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化工建设项目的竖向布置应充分利用地形，主要噪声源宜 低位布置，噪声敏感的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40222,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

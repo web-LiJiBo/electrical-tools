@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.3.13",
+  "entities": [
+    {
+      "name": "楼外供电及多配电室SPD",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.3.13     对建筑物上的彩灯、航空障碍灯以及其他楼外供电线路，\n应在机房输出配电箱(柜)内加装最大通流容量为50kA 的 SPD。\n9.3.14      当低压配电系统采用多个配电室配电，且总配电屏与分\n配电屏之间的电缆长度大于50m 时，应在分配电室电源入口处安\n装最大通流容量不小于60kA 的限压型 SPD。",
+      "type": "语义分解",
+      "subject": "楼外供电及多配电室SPD",
+      "action": "",
+      "operation": "楼外输出箱设50kA多室总分屏缆长超50米分室入口设至少60kA限压SPD",
+      "condition": "",
+      "constraint": "9.3.13     对建筑物上的彩灯、航空障碍灯以及其他楼外供电线路，\n应在机房输出配电箱(柜)内加装最大通流容量为50kA 的 SPD。\n9.3.14      当低压配电系统采用多个配电室配电，且总配电屏与分\n配电屏之间的电缆长度大于50m 时，应在分配电室电源入口处安\n装最大通流容量不小于60kA 的限压型 SPD。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "楼外供电及多配电室SPD"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22950,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含9.3.13及9.3.14"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.3.1.1",
+  "entities": [
+    {
+      "name": "潜在污染源流域监测断面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1.1 对于潜在污染源 (管道穿越区。油库 站场等)所在流域(水系)可设立对照断面(若千) 控制断面(若干) 但至少应设置3 个监测断面 (上游, 巾游和下游)",
+      "type": "语义分解",
+      "subject": "潜在污染源流域监测断面",
+      "action": "",
+      "operation": "设置对照和控制断面并满足最少数量",
+      "condition": "",
+      "constraint": "7.3.1.1 对于潜在污染源 (管道穿越区。油库 站场等)所在流域(水系)可设立对照断面(若千) 控制断面(若干) 但至少应设置3 个监测断面 (上游, 巾游和下游)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "潜在污染源流域监测断面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 452,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；若千、巾游等识别异常"
+      ]
+    }
+  }
+}

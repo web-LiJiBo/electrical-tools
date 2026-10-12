@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017698",
+  "entities": [
+    {
+      "name": "系统告警应实时通过告警界面反映，具有可闻、可视提示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1     系统告警应实时通过告警界面反映，具有可闻、可视提示；\n       2    具备识别故障并定位至单板(盘)功能，并对告警进行确\n认、核对；",
+      "type": "语义分解",
+      "subject": "系统告警应实时通过告警界面反映，具有可闻、可视提示",
+      "action": "",
+      "operation": "系统告警应实时通过告警界面反映，具有可闻、可视提示； 2 具备识别故障并定位至单板(盘)功能，并对告警进行确 认、核对",
+      "condition": "",
+      "constraint": "       1     系统告警应实时通过告警界面反映，具有可闻、可视提示；\n       2    具备识别故障并定位至单板(盘)功能，并对告警进行确\n认、核对；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统告警应实时通过告警界面反映，具有可闻、可视提示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17698,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

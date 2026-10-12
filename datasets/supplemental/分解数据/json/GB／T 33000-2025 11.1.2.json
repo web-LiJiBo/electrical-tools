@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "11.1.2",
+  "entities": [
+    {
+      "name": "应急队伍物资",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.2 应急队伍和物资 企业应按规定建立专(兼)职应急救援队伍，并与当地政府及其有关部门、邻近企业建立联动机制。不具备建立条件的，应与邻近的应急救援队伍签订应急救援协议。应明确应急物资配备要求，设置应急设施、配备应急装备，储备应急物资，并定期检查、维护、保养，确保其完好、可靠。",
+      "type": "语义分解",
+      "subject": "应急队伍物资",
+      "action": "",
+      "operation": "队伍联动不具条件签邻队协议设施装备物资定维护可靠",
+      "condition": "",
+      "constraint": "11.1.2 应急队伍和物资 企业应按规定建立专(兼)职应急救援队伍，并与当地政府及其有关部门、邻近企业建立联动机制。不具备建立条件的，应与邻近的应急救援队伍签订应急救援协议。应明确应急物资配备要求，设置应急设施、配备应急装备，储备应急物资，并定期检查、维护、保养，确保其完好、可靠。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急队伍物资"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7286,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

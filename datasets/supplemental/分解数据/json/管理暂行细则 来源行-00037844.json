@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037844",
+  "entities": [
+    {
+      "name": "气体逃逸主要来自原油和天然气输送过程中的逸散和泄漏损失，对于 原油气体逃",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   气体逃逸主要来自原油和天然气输送过程中的逸散和泄漏损失，对于\n\n原油气体逃逸应统计原油的输送量；对于天然气逃逸应记录压气站/增压\n\n站、管线（逆止阀）、计量站/分输站、清管站等设施的数量。",
+      "type": "语义分解",
+      "subject": "气体逃逸主要来自原油和天然气输送过程中的逸散和泄漏损失，对于 原油气体逃",
+      "action": "",
+      "operation": "气体逃逸主要来自原油和天然气输送过程中的逸散和泄漏损失，对于 原油气体逃逸应统计原油的输送量；对于天然气逃逸应记录压气站/增压 站、管线（逆止阀）、计量站/分输站、清管站等设施的数量。",
+      "condition": "",
+      "constraint": "   气体逃逸主要来自原油和天然气输送过程中的逸散和泄漏损失，对于\n\n原油气体逃逸应统计原油的输送量；对于天然气逃逸应记录压气站/增压\n\n站、管线（逆止阀）、计量站/分输站、清管站等设施的数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体逃逸主要来自原油和天然气输送过程中的逸散和泄漏损失，对于 原油气体逃"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37844,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.1.1.5",
+  "entities": [
+    {
+      "name": "管道巡线管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1.5 输油气管道管理单位应设专人定期对管道进行巡线检查 ,及时处理输油气管道沿线的异常情况 ,并依据石油天然气管道保护有关法律法规保护管道。",
+      "type": "语义分解",
+      "subject": "管道巡线管理",
+      "action": "",
+      "operation": "专人定巡及时处理异常依法保护",
+      "condition": "",
+      "constraint": "7.1.1.5 输油气管道管理单位应设专人定期对管道进行巡线检查 ,及时处理输油气管道沿线的异常情况 ,并依据石油天然气管道保护有关法律法规保护管道。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道巡线管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4771,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

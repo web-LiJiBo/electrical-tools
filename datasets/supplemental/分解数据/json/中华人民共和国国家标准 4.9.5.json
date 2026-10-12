@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.9.5",
+  "entities": [
+    {
+      "name": "避雷均压网",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.5      暗装避雷网、各均压网(含基础底层)可利用该层梁或楼板\n内的两根主钢筋按网格尺寸不大于10m×10m   相互焊接成周边\n为封闭式的环形带。网格交叉点及钢筋自身连接均应焊接牢靠。\n均压网可按图4.9.5设计，交叉点应采用对角线焊接方式。",
+      "type": "语义分解",
+      "subject": "避雷均压网",
+      "action": "",
+      "operation": "可两根主筋按不大于10乘10米焊成闭环交叉连接牢靠交点对角焊",
+      "condition": "",
+      "constraint": "4.9.5      暗装避雷网、各均压网(含基础底层)可利用该层梁或楼板\n内的两根主钢筋按网格尺寸不大于10m×10m   相互焊接成周边\n为封闭式的环形带。网格交叉点及钢筋自身连接均应焊接牢靠。\n均压网可按图4.9.5设计，交叉点应采用对角线焊接方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "避雷均压网"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22619,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用图未提供"
+      ]
+    }
+  }
+}

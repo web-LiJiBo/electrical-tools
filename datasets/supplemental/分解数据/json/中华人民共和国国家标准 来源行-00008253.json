@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008253",
+  "entities": [
+    {
+      "name": "设备功能检查及测试项目可按表7.1.4执行，当抽测数量 不足一个单位时，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.4      设备功能检查及测试项目可按表7.1.4执行，当抽测数量\n不足一个单位时，应按一个单位抽测。当抽测的项目不合格时，应\n对该项目加倍测试，当结果仍不合格时，该项目应全部测试。",
+      "type": "语义分解",
+      "subject": "设备功能检查及测试项目可按表7.1.4执行，当抽测数量 不足一个单位时，",
+      "action": "",
+      "operation": "设备功能检查及测试项目可按表7.1.4执行，当抽测数量 不足一个单位时，应按一个单位抽测。当抽测的项目不合格时，应 对该项目加倍测试，当结果仍不合格时，该项目应全部测试。",
+      "condition": "",
+      "constraint": "7.1.4      设备功能检查及测试项目可按表7.1.4执行，当抽测数量\n不足一个单位时，应按一个单位抽测。当抽测的项目不合格时，应\n对该项目加倍测试，当结果仍不合格时，该项目应全部测试。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备功能检查及测试项目可按表7.1.4执行，当抽测数量 不足一个单位时，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8253,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "管理知识考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 危险化学品经营单位的安全生产管理 危险化学品经营单位的安全生产管理内容包括: a) 了解危险化学品经营管理的重要意义; b) 了解安全生产管理体系; c) 熟悉安全生产责任制和熟悉安全管理规章制度; d) 掌握生产安全事故的分类、事故报告、调查处理的基本程序和要求; e) 熟悉危险化学品经营单位安全标准化的要点。",
+      "type": "语义分解",
+      "subject": "管理知识考核",
+      "action": "",
+      "operation": "了解意义体系熟悉责任制度标准化掌握事故分类报告调查",
+      "condition": "",
+      "constraint": "5.2.2 危险化学品经营单位的安全生产管理 危险化学品经营单位的安全生产管理内容包括: a) 了解危险化学品经营管理的重要意义; b) 了解安全生产管理体系; c) 熟悉安全生产责任制和熟悉安全管理规章制度; d) 掌握生产安全事故的分类、事故报告、调查处理的基本程序和要求; e) 熟悉危险化学品经营单位安全标准化的要点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管理知识考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5019,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；考核内容"
+      ]
+    }
+  }
+}

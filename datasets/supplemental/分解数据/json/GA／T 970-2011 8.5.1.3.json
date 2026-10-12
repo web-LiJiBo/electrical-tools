@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "8.5.1.3",
+  "entities": [
+    {
+      "name": "碱性介质洗消",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.1.3 对于碱性腐蚀性泄漏介质 ,可利用约 40 %温水(可加中性肥皂水或冼涤剂)冲冼;局部洗消可用清水 ,硼酸 专用洗消液等冼消剂清冼。",
+      "type": "语义分解",
+      "subject": "碱性介质洗消",
+      "action": "",
+      "operation": "按污染对象选择洗消措施",
+      "condition": "",
+      "constraint": "8.5.1.3 对于碱性腐蚀性泄漏介质 ,可利用约 40 %温水(可加中性肥皂水或冼涤剂)冲冼;局部洗消可用清水 ,硼酸 专用洗消液等冼消剂清冼。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "碱性介质洗消"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5959,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；40%温水疑似识别异常，不修正温度"
+      ]
+    }
+  }
+}

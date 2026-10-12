@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "4.2.6",
+  "entities": [
+    {
+      "name": "重大危险源危化品仓库",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.6 构成危险化学品重大危险源的危险化学品仓库应符合国家法律法规 ,标准规范关于危险化学品重大危险源的技术要求。",
+      "type": "语义分解",
+      "subject": "重大危险源危化品仓库",
+      "action": "",
+      "operation": "满足法律标准技术要求",
+      "condition": "构成危险化学品重大危险源的危险化学品仓库",
+      "constraint": "4.2.6 构成危险化学品重大危险源的危险化学品仓库应符合国家法律法规 ,标准规范关于危险化学品重大危险源的技术要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大危险源危化品仓库"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3760,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

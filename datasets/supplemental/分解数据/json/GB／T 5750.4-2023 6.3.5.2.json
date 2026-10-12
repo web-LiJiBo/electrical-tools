@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.3.5.2",
+  "entities": [
+    {
+      "name": "异臭样品准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.2 样品准备 量取200 mL水样至样品瓶中，置于45 ℃水浴中加热10 min～15 min。",
+      "type": "语义分解",
+      "subject": "异臭样品准备",
+      "action": "",
+      "operation": "按取样量水浴温度时长加热",
+      "condition": "",
+      "constraint": "6.3.5.2 样品准备 量取200 mL水样至样品瓶中，置于45 ℃水浴中加热10 min～15 min。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "异臭样品准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1323,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

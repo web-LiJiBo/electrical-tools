@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033778",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      由技术委员会正怯通过的国际标准草案在被 12O理事会批准为国际标准之前 , 提交各成员团体表\n决 。  根据 12O程序规定 , 国际标准需要取得至少 75%参加表决的成员团体的同意才能正怯通过。\n      国际标准 12O11042_1 是由国际标准化组织燃气轮机技术委员会 12O/TC192 制订的。\n      12O11042 的总题目《燃气轮机    烟气排放 》由下列部分组成:\n      _____第 1 部分 :测量与评估",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "      由技术委员会正怯通过的国际标准草案在被 12O理事会批准为国际标准之前 , 提交各成员团体表\n决 。  根据 12O程序规定 , 国际标准需要取得至少 75%参加表决的成员团体的同意才能正怯通过。\n      国际标准 12O11042_1 是由国际标准化组织燃气轮机技术委员会 12O/TC192 制订的。\n      12O11042 的总题目《燃气轮机    烟气排放 》由下列部分组成:\n      _____第 1 部分 :测量与评估",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33778,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

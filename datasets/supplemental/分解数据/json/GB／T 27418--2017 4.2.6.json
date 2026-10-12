@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.6",
+  "entities": [
+    {
+      "name": "自由度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.6 在简单情况下,u (工;) (见e.3)的自由度 v; 等于n一1 ,此时 ,T; =孓;和 u (Ti) =d (孓;)由 n 次独 立观测值按 4.2.1和 4.2.3 方法计算得到 ,当以文件形式说明不确定度分量的 A 类评定时 ,通常应该给 出其自由度。",
+      "type": "语义分解",
+      "subject": "自由度",
+      "action": "",
+      "operation": "记录A类评定分量自由度",
+      "condition": "当以文件形式说明不确定度分量的 A 类评定时",
+      "constraint": "通常应该给 出其自由度",
+      "constraint_role": "informational",
+      "related_entities": [
+        "自由度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "自由度公式和变量识别错误"
+      ]
+    }
+  }
+}

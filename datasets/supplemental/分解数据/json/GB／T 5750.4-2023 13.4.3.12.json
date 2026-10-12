@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.4.3.12",
+  "entities": [
+    {
+      "name": "亚甲基蓝缓冲液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.4.3.12 亚甲基蓝缓冲溶液:移取20 mL亚甲基蓝溶液和100 mL硼酸盐溶液混匀后用三氯甲烷进行洗涤，弃去三氯甲烷并用新的三氯甲烷反复洗涤，直至三氯甲烷层中没有蓝色或红色为止(通常需要2次～3次)。储存于棕色试剂瓶中，于0 ℃～4 ℃冷藏可保存30 d。临用前过0.22 μm微孔滤膜，超声脱气10 min。",
+      "type": "语义分解",
+      "subject": "亚甲基蓝缓冲液",
+      "action": "",
+      "operation": "染料硼酸盐混合反复三氯甲烷洗至无蓝红冷藏临用过滤脱气",
+      "condition": "",
+      "constraint": "13.4.3.12 亚甲基蓝缓冲溶液:移取20 mL亚甲基蓝溶液和100 mL硼酸盐溶液混匀后用三氯甲烷进行洗涤，弃去三氯甲烷并用新的三氯甲烷反复洗涤，直至三氯甲烷层中没有蓝色或红色为止(通常需要2次～3次)。储存于棕色试剂瓶中，于0 ℃～4 ℃冷藏可保存30 d。临用前过0.22 μm微孔滤膜，超声脱气10 min。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "亚甲基蓝缓冲液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1626,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

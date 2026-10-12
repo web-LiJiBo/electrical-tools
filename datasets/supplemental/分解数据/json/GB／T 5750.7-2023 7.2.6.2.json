@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.2.6.2",
+  "entities": [
+    {
+      "name": "膜电导标准系列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.6.2 标准曲线的配制:吸取 0 II 0.20 mI, 0.50 II, 1.00 II, 3.00 mI, 5.00 II , 7.00 II , 10.00 ml 邻苯二甲酸氢钾标准使用溶液分别移入100 ml 容量瓶内 ,加纯水至刻度,混匀 ,分别配制成 m8/I,0.20 mg/I  0.50 mg/I, 1.00 mg/I, 3.00 mg/I 5.00 mg/I 7.00 Mg/I 10.00 m8/1 的标准系列",
+      "type": "语义分解",
+      "subject": "膜电导标准系列",
+      "action": "",
+      "operation": "八个指定体积标准使用液定容一百毫升配系列",
+      "condition": "",
+      "constraint": "7.2.6.2 标准曲线的配制:吸取 0 II 0.20 mI, 0.50 II, 1.00 II, 3.00 mI, 5.00 II , 7.00 II , 10.00 ml 邻苯二甲酸氢钾标准使用溶液分别移入100 ml 容量瓶内 ,加纯水至刻度,混匀 ,分别配制成 m8/I,0.20 mg/I  0.50 mg/I, 1.00 mg/I, 3.00 mg/I 5.00 mg/I 7.00 Mg/I 10.00 m8/1 的标准系列",
+      "constraint_role": "informational",
+      "related_entities": [
+        "膜电导标准系列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1926,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；零点浓度缺数字部分单位异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "3.0.3",
+  "entities": [
+    {
+      "name": "强调检测与评价工作应由专业人员完成，外腐蚀检测评 价工作要求专业化程度较",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.3   强调检测与评价工作应由专业人员完成，外腐蚀检测评\n价工作要求专业化程度较高，需由经过专业培训和相关实际经\n验的人员方可胜任，有利于保证检测和评价工作的准确性和可\n靠性。",
+      "type": "语义分解",
+      "subject": "强调检测与评价工作应由专业人员完成，外腐蚀检测评 价工作要求专业化程度较",
+      "action": "",
+      "operation": "强调检测与评价工作应由专业人员完成，外腐蚀检测评 价工作要求专业化程度较高，需由经过专业培训和相关实际经 验的人员方可胜任，有利于保证检测和评价工作的准确性和可 靠性。",
+      "condition": "",
+      "constraint": "3.0.3   强调检测与评价工作应由专业人员完成，外腐蚀检测评\n价工作要求专业化程度较高，需由经过专业培训和相关实际经\n验的人员方可胜任，有利于保证检测和评价工作的准确性和可\n靠性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "强调检测与评价工作应由专业人员完成，外腐蚀检测评 价工作要求专业化程度较"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45663,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

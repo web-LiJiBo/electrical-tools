@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015183",
+  "entities": [
+    {
+      "name": "本标准规定了光传送网 (OTN) 的测试方法，主要包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   本标准规定了光传送网 (OTN)   的测试方法，主要包括：系统参考点定义、开销及维护信号测试、\n光接口测试、抖动测试、网络性能测试、 OTN 设备功能测试、保护倒换测试、网管功能验证和控制平面\n测试等。",
+      "type": "语义分解",
+      "subject": "本标准规定了光传送网 (OTN) 的测试方法，主要包括",
+      "action": "",
+      "operation": "本标准规定了光传送网 (OTN) 的测试方法，主要包括：系统参考点定义、开销及维护信号测试、 光接口测试、抖动测试、网络性能测试、 OTN 设备功能测试、保护倒换测试、网管功能验证和控制平面 测试等。",
+      "condition": "",
+      "constraint": "   本标准规定了光传送网 (OTN)   的测试方法，主要包括：系统参考点定义、开销及维护信号测试、\n光接口测试、抖动测试、网络性能测试、 OTN 设备功能测试、保护倒换测试、网管功能验证和控制平面\n测试等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本标准规定了光传送网 (OTN) 的测试方法，主要包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15183,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

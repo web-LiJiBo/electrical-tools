@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "14.1.1",
+  "entities": [
+    {
+      "name": "交换时钟同步",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.1.1           各级交换设备需要时钟同步，同步方式应采用主从同步\n方式。从外部提取的时钟同步应至少为一主一备两路。时钟同步\n接 口 可 以 是 2 Mbit/s  或2 MHz, 优选2 Mbit/s。",
+      "type": "语义分解",
+      "subject": "交换时钟同步",
+      "action": "",
+      "operation": "主从外时钟至少主备两路接口2Mbit/s或2MHz优先前者",
+      "condition": "",
+      "constraint": "14.1.1           各级交换设备需要时钟同步，同步方式应采用主从同步\n方式。从外部提取的时钟同步应至少为一主一备两路。时钟同步\n接 口 可 以 是 2 Mbit/s  或2 MHz, 优选2 Mbit/s。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交换时钟同步"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26337,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

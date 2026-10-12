@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024052",
+  "entities": [
+    {
+      "name": "c) 目的终端用户正在通话 ,反馈 486用户忙",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)     目的终端用户正在通话 ,反馈 486用户忙 ;\nd)    软交换向 目的终端反馈 ACK确认消息 。",
+      "type": "语义分解",
+      "subject": "c) 目的终端用户正在通话 ,反馈 486用户忙",
+      "action": "",
+      "operation": "c) 目的终端用户正在通话 ,反馈 486用户忙 ; d) 软交换向 目的终端反馈 ACK确认消息 。",
+      "condition": "",
+      "constraint": "c)     目的终端用户正在通话 ,反馈 486用户忙 ;\nd)    软交换向 目的终端反馈 ACK确认消息 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 目的终端用户正在通话 ,反馈 486用户忙"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24052,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

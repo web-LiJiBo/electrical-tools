@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.4.6",
+  "entities": [
+    {
+      "name": "接地引入线与楼柱钢筋",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.4.6  接地引入线应避免从作为雷电引下线的柱子附近引入。\n3.4.7  作为接地引入点的楼柱钢筋应选取全程焊接连通的\n钢筋。",
+      "type": "语义分解",
+      "subject": "接地引入线与楼柱钢筋",
+      "action": "",
+      "operation": "避雷电引下柱附近引入引入点钢筋全程焊连",
+      "condition": "",
+      "constraint": "3.4.6  接地引入线应避免从作为雷电引下线的柱子附近引入。\n3.4.7  作为接地引入点的楼柱钢筋应选取全程焊接连通的\n钢筋。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "接地引入线与楼柱钢筋"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22398,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含3.4.6及3.4.7"
+      ]
+    }
+  }
+}

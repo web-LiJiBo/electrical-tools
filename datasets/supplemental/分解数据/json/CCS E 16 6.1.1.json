@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "跨越初始检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1   跨越结构应按年度检查要求进行初始检查，初始检查宜与交工同时进行，最迟不宜超过交付使\n用后一年。",
+      "type": "语义分解",
+      "subject": "跨越初始检查",
+      "action": "",
+      "operation": "按年度要求宜交工时最迟交付一年内",
+      "condition": "",
+      "constraint": "6.1.1   跨越结构应按年度检查要求进行初始检查，初始检查宜与交工同时进行，最迟不宜超过交付使\n用后一年。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "跨越初始检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29788,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

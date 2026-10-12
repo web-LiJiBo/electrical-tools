@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.14.1",
+  "entities": [
+    {
+      "name": "分析步骤表达",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.14.1 一般要求 应按分析操作顺序列出分析过程中的所有步骤, 一般包括试料制备。仪器调试与校准测定。空自试验等内容= 应对分析步骤进行必要的细分,表达应简明扼要。如其他标准中已有对某分析步骤的规定。可直接引用该标准的相关条款。 可在使用的试剂和材料。仪器和设备名称后的括号内注明其相应的编号,以避免重复说明其特性",
+      "type": "语义分解",
+      "subject": "分析步骤表达",
+      "action": "",
+      "operation": "按操作顺序列全步骤适当细分简明可引用已有标准及试剂编号",
+      "condition": "",
+      "constraint": "8.14.1 一般要求 应按分析操作顺序列出分析过程中的所有步骤, 一般包括试料制备。仪器调试与校准测定。空自试验等内容= 应对分析步骤进行必要的细分,表达应简明扼要。如其他标准中已有对某分析步骤的规定。可直接引用该标准的相关条款。 可在使用的试剂和材料。仪器和设备名称后的括号内注明其相应的编号,以避免重复说明其特性",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分析步骤表达"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2406,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

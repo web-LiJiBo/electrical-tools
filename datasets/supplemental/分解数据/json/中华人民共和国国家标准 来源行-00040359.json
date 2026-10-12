@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040359",
+  "entities": [
+    {
+      "name": "国家现行标准《危险废物填埋污染控制标准》GB 18598 和 《化工危险",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.0.6  国家现行标准《危险废物填埋污染控制标准》GB  18598 和\n《化工危险废物填埋场设计规定》HG/T    20504对危险废物的处置\n场地有严格的要求，为了防止危险废物处置场渗滤液污染地下水，\n危险废物处置场地应与江河、湖泊、水库、水井等水体以及生活居\n住区保持一定的距离。对易随风扬散的危险废物处理和处置设\n施，也应按前述相关标准选择合适的场地。",
+      "type": "语义分解",
+      "subject": "国家现行标准《危险废物填埋污染控制标准》GB 18598 和 《化工危险",
+      "action": "",
+      "operation": "国家现行标准《危险废物填埋污染控制标准》GB 18598 和 《化工危险废物填埋场设计规定》HG/T 20504对危险废物的处置 场地有严格的要求，为了防止危险废物处置场渗滤液污染地下水， 危险废物处置场地应与江河、湖泊、水库、水井等水体以及生活居 住区保持一定的距离。对易随风扬散的危险废物处理和处置设 施，也应按前述相关标准选择合适的场地。",
+      "condition": "",
+      "constraint": "4.0.6  国家现行标准《危险废物填埋污染控制标准》GB  18598 和\n《化工危险废物填埋场设计规定》HG/T    20504对危险废物的处置\n场地有严格的要求，为了防止危险废物处置场渗滤液污染地下水，\n危险废物处置场地应与江河、湖泊、水库、水井等水体以及生活居\n住区保持一定的距离。对易随风扬散的危险废物处理和处置设\n施，也应按前述相关标准选择合适的场地。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "国家现行标准《危险废物填埋污染控制标准》GB 18598 和 《化工危险"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40359,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

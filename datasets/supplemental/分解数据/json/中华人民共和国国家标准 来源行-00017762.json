@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017762",
+  "entities": [
+    {
+      "name": "主要安装工程项目基本达到施工质量标准，其余项目稍有 偏差，但不影响设备使",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    主要安装工程项目基本达到施工质量标准，其余项目稍有\n偏差，但不影响设备使用寿命应为合格等级；",
+      "type": "语义分解",
+      "subject": "主要安装工程项目基本达到施工质量标准，其余项目稍有 偏差，但不影响设备使",
+      "action": "",
+      "operation": "主要安装工程项目基本达到施工质量标准，其余项目稍有 偏差，但不影响设备使用寿命应为合格等级",
+      "condition": "",
+      "constraint": "       1    主要安装工程项目基本达到施工质量标准，其余项目稍有\n偏差，但不影响设备使用寿命应为合格等级；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主要安装工程项目基本达到施工质量标准，其余项目稍有 偏差，但不影响设备使"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17762,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

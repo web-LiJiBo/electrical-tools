@@ -6,6 +6,8 @@ from .validation_models import ValidationStatus
 
 class ProtocolValidator:
     def validate(self, instruction: CandidateInstruction) -> tuple[ValidationStatus, list[str]]:
+        if not instruction.payload and instruction.precondition_status != "pass":
+            return ValidationStatus(instruction.precondition_status), [instruction.explanation or "动作前置条件未通过，未生成控制载荷"]
         if instruction.missing_fields:
             return ValidationStatus.UNCERTAIN, ["协议映射字段不完整"]
         if instruction.protocol == "IEC61850":
@@ -16,3 +18,4 @@ class ProtocolValidator:
             return ValidationStatus.FAIL, [f"不支持的协议: {instruction.protocol}"]
         missing = [name for name in needed if name not in instruction.payload]
         return (ValidationStatus.FAIL if missing else ValidationStatus.PASS), ([f"协议帧字段缺失: {', '.join(missing)}"] if missing else [])
+

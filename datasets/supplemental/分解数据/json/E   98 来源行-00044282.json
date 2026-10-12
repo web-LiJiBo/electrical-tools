@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044282",
+  "entities": [
+    {
+      "name": "用于隔离金属间电连续专用的配件、加工件等设施，包括 绝缘接头、绝缘法兰、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   用于隔离金属间电连续专用的配件、加工件等设施，包括\n绝缘接头、绝缘法兰、绝缘短管、绝缘支撑块和绝缘垫片等。",
+      "type": "语义分解",
+      "subject": "用于隔离金属间电连续专用的配件、加工件等设施，包括 绝缘接头、绝缘法兰、",
+      "action": "",
+      "operation": "用于隔离金属间电连续专用的配件、加工件等设施，包括 绝缘接头、绝缘法兰、绝缘短管、绝缘支撑块和绝缘垫片等。",
+      "condition": "",
+      "constraint": "   用于隔离金属间电连续专用的配件、加工件等设施，包括\n绝缘接头、绝缘法兰、绝缘短管、绝缘支撑块和绝缘垫片等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "用于隔离金属间电连续专用的配件、加工件等设施，包括 绝缘接头、绝缘法兰、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44282,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

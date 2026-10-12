@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.4.1",
+  "entities": [
+    {
+      "name": "样品采集保存研究",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1 样品采集及保存条件试验研究 在相关环境监测技术规范要求的基础上,研究提出方法对样品采集的特殊要求, 包括采样方法。采样设备。试剂材料等,必要时开展采样效率或穿透试验研究; 研究提出方法对样品保存器具`保存剂,保存时间和温度等条件的要求; 研究提出标准溶液及其他相关试剂和材料的配制及保存时间等条件的要求; 必要时研究提出采样现场对样品预处理的要求。",
+      "type": "语义分解",
+      "subject": "样品采集保存研究",
+      "action": "",
+      "operation": "研究特殊采样器具效率保存剂时温标准液现场预处理要求",
+      "condition": "",
+      "constraint": "5.4.1 样品采集及保存条件试验研究 在相关环境监测技术规范要求的基础上,研究提出方法对样品采集的特殊要求, 包括采样方法。采样设备。试剂材料等,必要时开展采样效率或穿透试验研究; 研究提出方法对样品保存器具`保存剂,保存时间和温度等条件的要求; 研究提出标准溶液及其他相关试剂和材料的配制及保存时间等条件的要求; 必要时研究提出采样现场对样品预处理的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样品采集保存研究"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2311,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

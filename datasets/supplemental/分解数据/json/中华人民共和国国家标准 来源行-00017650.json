@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017650",
+  "entities": [
+    {
+      "name": "MAC 层功能测试，应通过网络管理终端配置，并应使用 数据网络分析仪测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2  MAC 层功能测试，应通过网络管理终端配置，并应使用\n数据网络分析仪测试，内嵌弹性分组环应具备拓扑自动发现、自动\n环选择、空间重用协议、公平协议、业务隔离、业务分类、服务质量、\n环路带宽分配、PASS    through 模式、环回保护、定向保护等主要功\n能，结果应满足设计要求。",
+      "type": "语义分解",
+      "subject": "MAC 层功能测试，应通过网络管理终端配置，并应使用 数据网络分析仪测试",
+      "action": "",
+      "operation": "MAC 层功能测试，应通过网络管理终端配置，并应使用 数据网络分析仪测试，内嵌弹性分组环应具备拓扑自动发现、自动 环选择、空间重用协议、公平协议、业务隔离、业务分类、服务质量、 环路带宽分配、PASS through 模式、环回保护、定向保护等主要功 能，结果应满足设计要求。",
+      "condition": "",
+      "constraint": "4.5.2  MAC 层功能测试，应通过网络管理终端配置，并应使用\n数据网络分析仪测试，内嵌弹性分组环应具备拓扑自动发现、自动\n环选择、空间重用协议、公平协议、业务隔离、业务分类、服务质量、\n环路带宽分配、PASS    through 模式、环回保护、定向保护等主要功\n能，结果应满足设计要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "MAC 层功能测试，应通过网络管理终端配置，并应使用 数据网络分析仪测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17650,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

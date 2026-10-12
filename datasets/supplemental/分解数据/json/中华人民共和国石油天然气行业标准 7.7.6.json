@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.7.6",
+  "entities": [
+    {
+      "name": "离线巡查信息装置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7.6    离线式电子巡查系统的信息装置应安装在站场主干道路\n拐弯处 、道路交叉口处 、重要设施  (如压缩机厂房外 、变电所\n外 、  机柜间外) 、工艺装置区周围等应巡查的地方。",
+      "type": "语义分解",
+      "subject": "离线巡查信息装置",
+      "action": "",
+      "operation": "安装在主路转弯交叉重要设施工艺区等巡查点",
+      "condition": "",
+      "constraint": "7.7.6    离线式电子巡查系统的信息装置应安装在站场主干道路\n拐弯处 、道路交叉口处 、重要设施  (如压缩机厂房外 、变电所\n外 、  机柜间外) 、工艺装置区周围等应巡查的地方。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "离线巡查信息装置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

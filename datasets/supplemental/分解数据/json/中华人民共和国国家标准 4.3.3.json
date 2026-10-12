@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.3.3",
+  "entities": [
+    {
+      "name": "建筑物采取等电位连接措施后，各等电位连接网络均应与 共用接地系统有直通大",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3      建筑物采取等电位连接措施后，各等电位连接网络均应与\n共用接地系统有直通大地的可靠连接，每个通信子系统的等电位\n连接系统不宜再设单独的引下线接至总接地排，而宜将各个等电\n位连接系统用接地线引至本楼层接地排。",
+      "type": "语义分解",
+      "subject": "建筑物采取等电位连接措施后，各等电位连接网络均应与 共用接地系统有直通大",
+      "action": "",
+      "operation": "建筑物采取等电位连接措施后，各等电位连接网络均应与 共用接地系统有直通大地的可靠连接，每个通信子系统的等电位 连接系统不宜再设单独的引下线接至总接地排，而宜将各个等电 位连接系统用接地线引至本楼层接地排。",
+      "condition": "",
+      "constraint": "4.3.3      建筑物采取等电位连接措施后，各等电位连接网络均应与\n共用接地系统有直通大地的可靠连接，每个通信子系统的等电位\n连接系统不宜再设单独的引下线接至总接地排，而宜将各个等电\n位连接系统用接地线引至本楼层接地排。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "建筑物采取等电位连接措施后，各等电位连接网络均应与 共用接地系统有直通大"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22553,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

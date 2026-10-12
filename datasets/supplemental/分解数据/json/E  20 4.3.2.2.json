@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.3.2.2",
+  "entities": [
+    {
+      "name": "穿越农田时，应加深管道埋深至耕作深度以下，避免农田耕作对管道的破坏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2.2   穿越农田时，应加深管道埋深至耕作深度以下，避免农田耕作对管道的破坏。",
+      "type": "语义分解",
+      "subject": "穿越农田时，应加深管道埋深至耕作深度以下，避免农田耕作对管道的破坏",
+      "action": "",
+      "operation": "穿越农田时，应加深管道埋深至耕作深度以下，避免农田耕作对管道的破坏。",
+      "condition": "",
+      "constraint": "4.3.2.2   穿越农田时，应加深管道埋深至耕作深度以下，避免农田耕作对管道的破坏。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "穿越农田时，应加深管道埋深至耕作深度以下，避免农田耕作对管道的破坏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41976,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

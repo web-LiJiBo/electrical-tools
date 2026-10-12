@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "10.3.3",
+  "entities": [
+    {
+      "name": "燃烧排放折算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.3 进入VOCs 燃烧(焚烧、氧化)装置的废气需要补充空气进行燃烧、氧化反应的，排气筒中实\n测大气污染物排放浓度，应按式(1)换算为基准含氧量为3%的大气污染物基准排放浓度。利用锅炉、\n工业炉窑、固废焚烧炉焚烧处理有机废气的，烟气基准含氧量按其排放标准规定执行。",
+      "type": "语义分解",
+      "subject": "燃烧排放折算",
+      "action": "",
+      "operation": "需补空气折算基准氧3%炉按相应标准",
+      "condition": "",
+      "constraint": "10.3.3 进入VOCs 燃烧(焚烧、氧化)装置的废气需要补充空气进行燃烧、氧化反应的，排气筒中实\n测大气污染物排放浓度，应按式(1)换算为基准含氧量为3%的大气污染物基准排放浓度。利用锅炉、\n工业炉窑、固废焚烧炉焚烧处理有机废气的，烟气基准含氧量按其排放标准规定执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "燃烧排放折算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33443,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式缺失"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "2.0.26",
+  "entities": [
+    {
+      "name": "接地参考点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.26 接地参考点    earthing    reference    point(ERP)\n   共用接地系统和系统的等电位连接网络之间的唯一连接点。\n2.0.27  接地汇集线    mail   earthing   conductor",
+      "type": "语义分解",
+      "subject": "接地参考点",
+      "action": "",
+      "operation": "共用接地与系统等电位网络唯一连接点",
+      "condition": "",
+      "constraint": "2.0.26 接地参考点    earthing    reference    point(ERP)\n   共用接地系统和系统的等电位连接网络之间的唯一连接点。\n2.0.27  接地汇集线    mail   earthing   conductor",
+      "constraint_role": "informational",
+      "related_entities": [
+        "接地参考点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22328,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含2.0.27接地汇集线标题英文mail疑似识别异常"
+      ]
+    }
+  }
+}

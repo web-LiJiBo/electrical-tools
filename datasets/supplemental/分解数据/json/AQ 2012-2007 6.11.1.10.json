@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.1.10",
+  "entities": [
+    {
+      "name": "两栖设备发动机及载荷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.1.10 水陆两栖设备的发动机运转正常 ,无异响。装载不超过额定载荷。活动载荷应在货台中心线两侧均匀分布并固定。货台四周应设防护栏杆。",
+      "type": "语义分解",
+      "subject": "两栖设备发动机及载荷",
+      "action": "",
+      "operation": "正常无异响限额定载荷均布固定防护",
+      "condition": "",
+      "constraint": "6.11.1.10 水陆两栖设备的发动机运转正常 ,无异响。装载不超过额定载荷。活动载荷应在货台中心线两侧均匀分布并固定。货台四周应设防护栏杆。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "两栖设备发动机及载荷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4728,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

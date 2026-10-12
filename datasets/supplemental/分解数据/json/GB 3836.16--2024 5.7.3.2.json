@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.3.2",
+  "entities": [
+    {
+      "name": "本安系统说明文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.3.2 文件 表A.2中提到的文件至少包括: 系统描述文件(适用时); b) 制造商，设备类型和防爆合格证号，保护等级，设备类别，温度组别或最高表面温度; 电气参数(适用时)，例如:电缆的电容和电感，长度型号和路径; 特殊使用条件及满足条件采取的措施; 每个部件在装置上的实际位置",
+      "type": "语义分解",
+      "subject": "本安系统说明文件",
+      "action": "",
+      "operation": "记录制造商型号认证等级温度电缆参数路径特殊条件措施及组件位置",
+      "condition": "",
+      "constraint": "5.7.3.2 文件 表A.2中提到的文件至少包括: 系统描述文件(适用时); b) 制造商，设备类型和防爆合格证号，保护等级，设备类别，温度组别或最高表面温度; 电气参数(适用时)，例如:电缆的电容和电感，长度型号和路径; 特殊使用条件及满足条件采取的措施; 每个部件在装置上的实际位置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本安系统说明文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4006,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046550",
+  "entities": [
+    {
+      "name": "刘觉非 黄留群 陈长风 马凯军 程梦鹏 石 磊 郑安升 王萌萌 李迎超 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "刘觉非 黄留群 陈长风 马凯军\n程梦鹏 石  磊 郑安升 王萌萌\n李迎超  于浩波 万红霞 金 栋\n钱晓龙 赵 巍",
+      "type": "语义分解",
+      "subject": "刘觉非 黄留群 陈长风 马凯军 程梦鹏 石 磊 郑安升 王萌萌 李迎超 ",
+      "action": "",
+      "operation": "刘觉非 黄留群 陈长风 马凯军 程梦鹏 石 磊 郑安升 王萌萌 李迎超 于浩波 万红霞 金 栋 钱晓龙 赵 巍",
+      "condition": "",
+      "constraint": "刘觉非 黄留群 陈长风 马凯军\n程梦鹏 石  磊 郑安升 王萌萌\n李迎超  于浩波 万红霞 金 栋\n钱晓龙 赵 巍",
+      "constraint_role": "informational",
+      "related_entities": [
+        "刘觉非 黄留群 陈长风 马凯军 程梦鹏 石 磊 郑安升 王萌萌 李迎超 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46550,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

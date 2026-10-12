@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035026",
+  "entities": [
+    {
+      "name": "为了克服毛细管妨碍水银凸面的均匀上升 , 除主期温度迅速上升阶段外 ,应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      为了克服毛细管妨碍水银凸面的均匀上升 , 除主期温度迅速上升阶段外 ,应在每次读温之前开动温\n度计振动器振动或用末端套有橡皮管的细棒轻敲温度计 。",
+      "type": "语义分解",
+      "subject": "为了克服毛细管妨碍水银凸面的均匀上升 , 除主期温度迅速上升阶段外 ,应",
+      "action": "",
+      "operation": "为了克服毛细管妨碍水银凸面的均匀上升 , 除主期温度迅速上升阶段外 ,应在每次读温之前开动温 度计振动器振动或用末端套有橡皮管的细棒轻敲温度计 。",
+      "condition": "",
+      "constraint": "      为了克服毛细管妨碍水银凸面的均匀上升 , 除主期温度迅速上升阶段外 ,应在每次读温之前开动温\n度计振动器振动或用末端套有橡皮管的细棒轻敲温度计 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为了克服毛细管妨碍水银凸面的均匀上升 , 除主期温度迅速上升阶段外 ,应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35026,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

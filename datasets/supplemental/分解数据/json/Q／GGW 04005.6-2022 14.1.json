@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "14.1",
+  "entities": [
+    {
+      "name": "监测机构人员设备质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.1 从事监测的组织机构, 监测人员 - 现场监测仪器 实验室分析仪器与设备等应满足 RB/T 214, HJ 630和 HJ/T 373有关质量保证和质量控制的要求。",
+      "type": "语义分解",
+      "subject": "监测机构人员设备质控",
+      "action": "",
+      "operation": "符合所列质量保证控制标准",
+      "condition": "",
+      "constraint": "14.1 从事监测的组织机构, 监测人员 - 现场监测仪器 实验室分析仪器与设备等应满足 RB/T 214, HJ 630和 HJ/T 373有关质量保证和质量控制的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测机构人员设备质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 557,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

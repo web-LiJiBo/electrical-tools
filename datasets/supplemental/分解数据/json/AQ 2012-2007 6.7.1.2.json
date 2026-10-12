@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.7.1.2",
+  "entities": [
+    {
+      "name": "海洋采油前安全准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.1.2 进行采油作业前 ,应制定专门的安全措施 ,落实安全应急岗位职责 ,并进行消防,弃平台 ,救生和有毒有害气体防护等演习。",
+      "type": "语义分解",
+      "subject": "海洋采油前安全准备",
+      "action": "",
+      "operation": "制定措施落实职责并多类应急演习",
+      "condition": "进行采油作业前",
+      "constraint": "6.7.1.2 进行采油作业前 ,应制定专门的安全措施 ,落实安全应急岗位职责 ,并进行消防,弃平台 ,救生和有毒有害气体防护等演习。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海洋采油前安全准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4644,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

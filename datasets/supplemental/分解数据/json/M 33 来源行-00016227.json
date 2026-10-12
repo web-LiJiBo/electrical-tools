@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016227",
+  "entities": [
+    {
+      "name": "g) 修改业务1在OTN 网络中的路径为 NE1<-②->NE2, 在 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      g)  修改业务1在OTN 网络中的路径为 NE1<-②->NE2,      在 NE2 业务接口处环回，检查业务1\n是否正常工作，是否对于已有业务2产生影响。",
+      "type": "语义分解",
+      "subject": "g) 修改业务1在OTN 网络中的路径为 NE1<-②->NE2, 在 ",
+      "action": "",
+      "operation": "g) 修改业务1在OTN 网络中的路径为 NE1<-②->NE2, 在 NE2 业务接口处环回，检查业务1 是否正常工作，是否对于已有业务2产生影响。",
+      "condition": "",
+      "constraint": "      g)  修改业务1在OTN 网络中的路径为 NE1<-②->NE2,      在 NE2 业务接口处环回，检查业务1\n是否正常工作，是否对于已有业务2产生影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 修改业务1在OTN 网络中的路径为 NE1<-②->NE2, 在 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16227,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

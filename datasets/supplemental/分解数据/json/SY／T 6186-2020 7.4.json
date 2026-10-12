@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "7.4",
+  "entities": [
+    {
+      "name": "管道施工准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4 施工前应进行现场调查 图纸会审。设计文件交底及技术和安全交底。应根据设计和标淮规范 编制施工组织设计及专项施工方案。措施并获得批准,进行资源淮备。",
+      "type": "语义分解",
+      "subject": "管道施工准备",
+      "action": "",
+      "operation": "调查会审设计技术安全交底组织专项方案批准资源",
+      "condition": "",
+      "constraint": "7.4 施工前应进行现场调查 图纸会审。设计文件交底及技术和安全交底。应根据设计和标淮规范 编制施工组织设计及专项施工方案。措施并获得批准,进行资源淮备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道施工准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7366,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

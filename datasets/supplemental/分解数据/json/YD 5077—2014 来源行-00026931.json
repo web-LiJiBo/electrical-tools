@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026931",
+  "entities": [
+    {
+      "name": ")用模拟呼叫器接30对用户做自环测试20000次以上，在长 途入中继上从",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   5)用模拟呼叫器接30对用户做自环测试20000次以上，在长\n途入中继上从收到应答信号并开始计数，漏计指标应不大于10⁻⁵。\n   6)国际话务台测试。",
+      "type": "语义分解",
+      "subject": ")用模拟呼叫器接30对用户做自环测试20000次以上，在长 途入中继上从",
+      "action": "",
+      "operation": ")用模拟呼叫器接30对用户做自环测试20000次以上，在长 途入中继上从收到应答信号并开始计数，漏计指标应不大于10⁻⁵。 6)国际话务台测试。",
+      "condition": "",
+      "constraint": "   5)用模拟呼叫器接30对用户做自环测试20000次以上，在长\n途入中继上从收到应答信号并开始计数，漏计指标应不大于10⁻⁵。\n   6)国际话务台测试。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")用模拟呼叫器接30对用户做自环测试20000次以上，在长 途入中继上从"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26931,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

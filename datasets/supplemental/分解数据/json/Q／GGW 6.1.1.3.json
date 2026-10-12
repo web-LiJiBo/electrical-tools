@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.1.1.3",
+  "entities": [
+    {
+      "name": "正常检测频次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1.3  正常运行生产设施检测频次应按照政府相关要求进行，或参照附录A 执行。",
+      "type": "语义分解",
+      "subject": "正常检测频次",
+      "action": "",
+      "operation": "依政府要求或附录A",
+      "condition": "",
+      "constraint": "6.1.1.3  正常运行生产设施检测频次应按照政府相关要求进行，或参照附录A 执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "正常检测频次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36542,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录缺失"
+      ]
+    }
+  }
+}

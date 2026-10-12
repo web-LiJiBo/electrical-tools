@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.2.4",
+  "entities": [
+    {
+      "name": "道路的选址和由此产生的环境影响应进行环境影响评价，应最大限度地避免对下列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4     道路的选址和由此产生的环境影响应进行环境影响评价，应最大限度地避免对下列重要区域\n\n的环境影响，这些区域包括：",
+      "type": "语义分解",
+      "subject": "道路的选址和由此产生的环境影响应进行环境影响评价，应最大限度地避免对下列",
+      "action": "",
+      "operation": "道路的选址和由此产生的环境影响应进行环境影响评价，应最大限度地避免对下列重要区域 的环境影响，这些区域包括",
+      "condition": "",
+      "constraint": "4.2.4     道路的选址和由此产生的环境影响应进行环境影响评价，应最大限度地避免对下列重要区域\n\n的环境影响，这些区域包括：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "道路的选址和由此产生的环境影响应进行环境影响评价，应最大限度地避免对下列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41075,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

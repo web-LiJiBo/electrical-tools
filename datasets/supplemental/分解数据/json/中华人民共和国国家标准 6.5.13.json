@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.5.13",
+  "entities": [
+    {
+      "name": "污水回用装置产生的浓盐水在蒸发和结晶处理时，存在 高蒸汽消耗、高含盐、高",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.13       污水回用装置产生的浓盐水在蒸发和结晶处理时，存在\n高蒸汽消耗、高含盐、高有机物浓度等因素，常常因全厂蒸汽平衡\n影响、蒸发结晶设备腐蚀、污堵和结垢等原因，而使蒸发和结晶装\n置不能稳定连续运行，因此应配套设置浓盐水暂存池。",
+      "type": "语义分解",
+      "subject": "污水回用装置产生的浓盐水在蒸发和结晶处理时，存在 高蒸汽消耗、高含盐、高",
+      "action": "",
+      "operation": "污水回用装置产生的浓盐水在蒸发和结晶处理时，存在 高蒸汽消耗、高含盐、高有机物浓度等因素，常常因全厂蒸汽平衡 影响、蒸发结晶设备腐蚀、污堵和结垢等原因，而使蒸发和结晶装 置不能稳定连续运行，因此应配套设置浓盐水暂存池。",
+      "condition": "",
+      "constraint": "6.5.13       污水回用装置产生的浓盐水在蒸发和结晶处理时，存在\n高蒸汽消耗、高含盐、高有机物浓度等因素，常常因全厂蒸汽平衡\n影响、蒸发结晶设备腐蚀、污堵和结垢等原因，而使蒸发和结晶装\n置不能稳定连续运行，因此应配套设置浓盐水暂存池。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污水回用装置产生的浓盐水在蒸发和结晶处理时，存在 高蒸汽消耗、高含盐、高"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40450,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019911",
+  "entities": [
+    {
+      "name": ")两端的 Sn_C 功能以同样的方式工作，监测VC-n 子网连接的缺陷，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4)两端的 Sn_C 功能以同样的方式工作，监测VC-n 子网连接的缺陷，按缺陷状况和外部倒换请\n\n   求的优先次序评估系统状态，并把适当的通路倒换至保护(子)网连接。",
+      "type": "语义分解",
+      "subject": ")两端的 Sn_C 功能以同样的方式工作，监测VC-n 子网连接的缺陷，",
+      "action": "",
+      "operation": ")两端的 Sn_C 功能以同样的方式工作，监测VC-n 子网连接的缺陷，按缺陷状况和外部倒换请 求的优先次序评估系统状态，并把适当的通路倒换至保护(子)网连接。",
+      "condition": "",
+      "constraint": "4)两端的 Sn_C 功能以同样的方式工作，监测VC-n 子网连接的缺陷，按缺陷状况和外部倒换请\n\n   求的优先次序评估系统状态，并把适当的通路倒换至保护(子)网连接。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")两端的 Sn_C 功能以同样的方式工作，监测VC-n 子网连接的缺陷，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19911,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

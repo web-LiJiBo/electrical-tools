@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "污染洗消原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1 原则 受到有毒或腐蚀性泄漏介质污染的人员 装备和环境都应冼消 ,冼消应坚持合理防护 ,及时彻底 ,保障重点.保护环境 ,避免洗消过度的原则",
+      "type": "语义分解",
+      "subject": "污染洗消原则",
+      "action": "",
+      "operation": "合理防护及时彻底兼顾环境避免过度",
+      "condition": "",
+      "constraint": "8.1 原则 受到有毒或腐蚀性泄漏介质污染的人员 装备和环境都应冼消 ,冼消应坚持合理防护 ,及时彻底 ,保障重点.保护环境 ,避免洗消过度的原则",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染洗消原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5945,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

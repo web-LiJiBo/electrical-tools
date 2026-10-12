@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035107",
+  "entities": [
+    {
+      "name": "b — 温度上升至总温升 60%的时间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b — 温度上升至总温升 60%的时间 ;\na — 燃烧时间 ;",
+      "type": "语义分解",
+      "subject": "b — 温度上升至总温升 60%的时间",
+      "action": "",
+      "operation": "b — 温度上升至总温升 60%的时间 ; a — 燃烧时间",
+      "condition": "",
+      "constraint": "b — 温度上升至总温升 60%的时间 ;\na — 燃烧时间 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b — 温度上升至总温升 60%的时间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35107,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

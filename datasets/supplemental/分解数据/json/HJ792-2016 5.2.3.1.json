@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.2.3.1",
+  "entities": [
+    {
+      "name": "制药废气勘查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3.1 废气 有组织排放废气: 废气量、主要污染因子、处理设施工艺流程及设计处理效率、排气筒数量/高度、相同类型排气筒间距,处理设施出入口、排气筒尺寸、规范化监测孔和监测平台设置情况。 无组织排放废气主要污染因子、排放控制措施、无组织监测的地理条件和气象条件。",
+      "type": "语义分解",
+      "subject": "制药废气勘查",
+      "action": "",
+      "operation": "查有组织量因子效率排筒孔台及无组织措施地理气象",
+      "condition": "",
+      "constraint": "5.2.3.1 废气 有组织排放废气: 废气量、主要污染因子、处理设施工艺流程及设计处理效率、排气筒数量/高度、相同类型排气筒间距,处理设施出入口、排气筒尺寸、规范化监测孔和监测平台设置情况。 无组织排放废气主要污染因子、排放控制措施、无组织监测的地理条件和气象条件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药废气勘查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2722,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

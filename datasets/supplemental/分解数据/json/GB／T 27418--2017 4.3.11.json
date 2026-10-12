@@ -1,0 +1,37 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.3.11",
+  "entities": [
+    {
+      "name": "不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.11 在 4.3.3到4.3.9中对B类标准不确定度评定的讨论仅仅是指导性的 _ 如在3.4.1和3.4.2中所 强调的 ,不确定度的评定应该尽最大可能以定量的数据为根据 =。",
+      "type": "语义分解",
+      "subject": "不确定度",
+      "action": "",
+      "operation": "以定量数据为评定依据",
+      "condition": "",
+      "constraint": "应该尽最大可能以定量的数据为根据",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

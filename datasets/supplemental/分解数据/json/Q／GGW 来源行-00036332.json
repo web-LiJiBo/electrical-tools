@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036332",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "储罐抽气技术\t  目前，储罐顶部均配备了呼吸阀和阻火阀，可自行调节呼吸阀的\n真空度和压力值，当储罐进油时，随着罐内液位的不断上升，储罐\n上方的油气空间不断减小，挥发气被压缩，当储罐挥发气正压力高\n于呼吸阀启动压力，则挥发气从呼吸阀溢出；同理，当储罐卸油时，\n随着罐内液位的不断下降，油气空间不断增大，压力降低，当压力\n达到呼吸阀的真空度时，呼吸阀打开，吸入新鲜空气与罐内气体混\n合形成新的平衡状态。抽气技术主要是将原油储罐中挥发出的轻烃\n成分进行收集、压缩，再送到天然气站处理或燃气加热炉，以达到\n节约能源，防止空气污染，实现原油密闭集输的目的",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "储罐抽气技术\t  目前，储罐顶部均配备了呼吸阀和阻火阀，可自行调节呼吸阀的\n真空度和压力值，当储罐进油时，随着罐内液位的不断上升，储罐\n上方的油气空间不断减小，挥发气被压缩，当储罐挥发气正压力高\n于呼吸阀启动压力，则挥发气从呼吸阀溢出；同理，当储罐卸油时，\n随着罐内液位的不断下降，油气空间不断增大，压力降低，当压力\n达到呼吸阀的真空度时，呼吸阀打开，吸入新鲜空气与罐内气体混\n合形成新的平衡状态。抽气技术主要是将原油储罐中挥发出的轻烃\n成分进行收集、压缩，再送到天然气站处理或燃气加热炉，以达到\n节约能源，防止空气污染，实现原油密闭集输的目的",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36332,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

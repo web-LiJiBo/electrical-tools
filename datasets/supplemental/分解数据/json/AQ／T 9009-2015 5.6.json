@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "5.6",
+  "entities": [
+    {
+      "name": "评估人员培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6 培训评估人员 演练评估人员应听取演练组织或策划人员介绍演练方案以及组织和实施流程，并可进行交互式讨论，进一步明晰演练流程和内容。同时，评估组内部应围绕以下内容开展内部专题培训: a) 演练组织和实施的相关文件; b) 演练评估方案; c) 演练单位的应急预案和相关管理文件; d) 熟悉演练场地，了解有关参演部门和人员的基本情况，相关演练设施，掌握相关技术处置标准和方法; e) 其他有关内容。",
+      "type": "语义分解",
+      "subject": "评估人员培训",
+      "action": "",
+      "operation": "听方案流程讨论专题培训文件预案场地人员设施技术方法",
+      "condition": "",
+      "constraint": "5.6 培训评估人员 演练评估人员应听取演练组织或策划人员介绍演练方案以及组织和实施流程，并可进行交互式讨论，进一步明晰演练流程和内容。同时，评估组内部应围绕以下内容开展内部专题培训: a) 演练组织和实施的相关文件; b) 演练评估方案; c) 演练单位的应急预案和相关管理文件; d) 熟悉演练场地，了解有关参演部门和人员的基本情况，相关演练设施，掌握相关技术处置标准和方法; e) 其他有关内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "评估人员培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5383,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

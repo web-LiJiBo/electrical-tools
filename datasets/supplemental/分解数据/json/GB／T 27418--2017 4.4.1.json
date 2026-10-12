@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 图1表示了由一个输人量x;可能测得值的未知分布 ,或用重复观测的方法采样获得的X;的概 率分布得到X;的估计值及其不确定度。",
+      "type": "语义分解",
+      "subject": "不确定度",
+      "action": "",
+      "operation": "说明未知分布与重复观测获得估计值",
+      "condition": "",
+      "constraint": "用重复观测的方法采样",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "图1缺失且变量损坏"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037804",
+  "entities": [
+    {
+      "name": "b）组织制订集团公司温室气体排放核算与统计管理规章制度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   b）组织制订集团公司温室气体排放核算与统计管理规章制度；\n\n   c）核查、指导、考核所属单位温室气体排放核算与统计管理工作。\n\n6.2 集团公司相关部门负责制订统一的生产能源消耗、火炬、放空、车辆\n\n汽柴油消耗、机关及矿区后勤等用能统计管理办法，贯彻落实相关数据统\n\n计要求。",
+      "type": "语义分解",
+      "subject": "b）组织制订集团公司温室气体排放核算与统计管理规章制度",
+      "action": "",
+      "operation": "b）组织制订集团公司温室气体排放核算与统计管理规章制度； c）核查、指导、考核所属单位温室气体排放核算与统计管理工作。 6.2 集团公司相关部门负责制订统一的生产能源消耗、火炬、放空、车辆 汽柴油消耗、机关及矿区后勤等用能统计管理办法，贯彻落实相关数据统 计要求。",
+      "condition": "",
+      "constraint": "   b）组织制订集团公司温室气体排放核算与统计管理规章制度；\n\n   c）核查、指导、考核所属单位温室气体排放核算与统计管理工作。\n\n6.2 集团公司相关部门负责制订统一的生产能源消耗、火炬、放空、车辆\n\n汽柴油消耗、机关及矿区后勤等用能统计管理办法，贯彻落实相关数据统\n\n计要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b）组织制订集团公司温室气体排放核算与统计管理规章制度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37804,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

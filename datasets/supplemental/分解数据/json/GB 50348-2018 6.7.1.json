@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.7.1",
+  "entities": [
+    {
+      "name": "电磁兼容设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.1 安全防范系统的电磁兼容性设计应综合考虑现场的电磁环境、系统电磁敏感度、电磁骚扰和周边其他系统的电磁敏感度等因素。",
+      "type": "语义分解",
+      "subject": "电磁兼容设计",
+      "action": "",
+      "operation": "综合现场环境敏感度骚扰因素",
+      "condition": "",
+      "constraint": "6.7.1 安全防范系统的电磁兼容性设计应综合考虑现场的电磁环境、系统电磁敏感度、电磁骚扰和周边其他系统的电磁敏感度等因素。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电磁兼容设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7009,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

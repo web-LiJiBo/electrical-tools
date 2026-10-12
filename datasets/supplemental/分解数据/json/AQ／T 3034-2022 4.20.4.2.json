@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.20.4.2",
+  "entities": [
+    {
+      "name": "过程绩效",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.20.4.2 企业应明确安全管理各要素的过程性指标和目标并纳人绩效考核 过程性指标包括培训完 成率 .隐患整改完成率 隐患检查按计划完成率正确 行的娈更率 ,设备按计划检测率等。",
+      "type": "语义分解",
+      "subject": "过程绩效",
+      "action": "",
+      "operation": "明确各要素指标目标纳入考核培训整改检查变更设备检测完成率",
+      "condition": "",
+      "constraint": "4.20.4.2 企业应明确安全管理各要素的过程性指标和目标并纳人绩效考核 过程性指标包括培训完 成率 .隐患整改完成率 隐患检查按计划完成率正确 行的娈更率 ,设备按计划检测率等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "过程绩效"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5361,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

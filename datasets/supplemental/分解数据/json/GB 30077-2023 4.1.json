@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "应急物资针对性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 针对性 应急救援物资根据本单位生产工艺,危险化学品的种类 .数量,危险化学品事故特征和事故风险评估结果进行配置。本文件范围内的危险化学品单位分为 3类 ,分别为第一类 .第二类和第三类 ,类别划分方法符合附录 A 要求。",
+      "type": "语义分解",
+      "subject": "应急物资针对性",
+      "action": "",
+      "operation": "按工艺危化类量事故评估配置单位依附录分三类",
+      "condition": "",
+      "constraint": "4.1 针对性 应急救援物资根据本单位生产工艺,危险化学品的种类 .数量,危险化学品事故特征和事故风险评估结果进行配置。本文件范围内的危险化学品单位分为 3类 ,分别为第一类 .第二类和第三类 ,类别划分方法符合附录 A 要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急物资针对性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3800,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录A未提供"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境监测与环境信息管理细则",
+  "standard_id": "国家管网办[2025]241号",
+  "version": "",
+  "chapter_path": "来源行-00000910",
+  "entities": [
+    {
+      "name": "第二十七条 各所属单位污染源自动监控设施操作和运维管理人员,应取得国家认",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十七条 各所属单位污染源自动监控设施操作和运维管理人员,应取得国家认可的相应机构颁发的环境污染治理设施运营人员考试合格证书,持证上岗。化验分析人员应取得化验员职业资格证。",
+      "type": "语义分解",
+      "subject": "第二十七条 各所属单位污染源自动监控设施操作和运维管理人员,应取得国家认",
+      "action": "",
+      "operation": "第二十七条 各所属单位污染源自动监控设施操作和运维管理人员,应取得国家认可的相应机构颁发的环境污染治理设施运营人员考试合格证书,持证上岗。化验分析人员应取得化验员职业资格证。",
+      "condition": "",
+      "constraint": "第二十七条 各所属单位污染源自动监控设施操作和运维管理人员,应取得国家认可的相应机构颁发的环境污染治理设施运营人员考试合格证书,持证上岗。化验分析人员应取得化验员职业资格证。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十七条 各所属单位污染源自动监控设施操作和运维管理人员,应取得国家认"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 910,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

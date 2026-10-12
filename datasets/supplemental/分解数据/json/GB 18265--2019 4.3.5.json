@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "4.3.5",
+  "entities": [
+    {
+      "name": "易燃液体和剧毒品库房",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.5 储存易燃液体的危险化学品库房应设置防液体流散措施。剧毒物品的危险化学品库房应安装通风设备。",
+      "type": "语义分解",
+      "subject": "易燃液体和剧毒品库房",
+      "action": "",
+      "operation": "分别设防流散措施和通风设备",
+      "condition": "",
+      "constraint": "4.3.5 储存易燃液体的危险化学品库房应设置防液体流散措施。剧毒物品的危险化学品库房应安装通风设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "易燃液体和剧毒品库房"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3771,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

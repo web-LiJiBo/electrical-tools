@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042739",
+  "entities": [
+    {
+      "name": "R— 理想标准气体常数 ,取 8. 314Pa · m3/(K · mo",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "R— 理想标准气体常数 ,取 8. 314Pa · m3/(K · mol) ;\nS— 管道内截面积 ,单位为平方毫米(mm2 ) ;\nT— 介质操作温度 ,单位为摄氏度( ℃) ;\nTSTP— 气体标准状态温度 ,取 0 ℃ ;\nVg— 表观气速 ,单位为米每秒(m/s) ;",
+      "type": "语义分解",
+      "subject": "R— 理想标准气体常数 ,取 8. 314Pa · m3/(K · mo",
+      "action": "",
+      "operation": "R— 理想标准气体常数 ,取 8. 314Pa · m3/(K · mol) ; S— 管道内截面积 ,单位为平方毫米(mm2 ) ; T— 介质操作温度 ,单位为摄氏度( ℃) ; TSTP— 气体标准状态温度 ,取 0 ℃ ; Vg— 表观气速 ,单位为米每秒(m/s)",
+      "condition": "",
+      "constraint": "R— 理想标准气体常数 ,取 8. 314Pa · m3/(K · mol) ;\nS— 管道内截面积 ,单位为平方毫米(mm2 ) ;\nT— 介质操作温度 ,单位为摄氏度( ℃) ;\nTSTP— 气体标准状态温度 ,取 0 ℃ ;\nVg— 表观气速 ,单位为米每秒(m/s) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "R— 理想标准气体常数 ,取 8. 314Pa · m3/(K · mo"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42739,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

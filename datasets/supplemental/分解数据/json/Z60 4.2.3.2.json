@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.2.3.2",
+  "entities": [
+    {
+      "name": "外浮顶罐修复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3.2 外浮顶罐不符合4.2.2规定的，应在90d 内完成修复或排空储罐停止使用；若延迟修复或排空\n储罐，应将相关方案报生态环境主管部门确定。\n4.2.3.3    编制检查与修复记录。",
+      "type": "语义分解",
+      "subject": "外浮顶罐修复",
+      "action": "",
+      "operation": "不合格90日修或排空停用延迟报主管编检查修复记录",
+      "condition": "",
+      "constraint": "4.2.3.2 外浮顶罐不符合4.2.2规定的，应在90d 内完成修复或排空储罐停止使用；若延迟修复或排空\n储罐，应将相关方案报生态环境主管部门确定。\n4.2.3.3    编制检查与修复记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外浮顶罐修复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32740,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

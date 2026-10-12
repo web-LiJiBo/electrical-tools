@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.2.5.8",
+  "entities": [
+    {
+      "name": "压缩机保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5.8 每台压缩机组至少应设置下列安全保护: 进出口压力超限保护; 原动机转速超限保护; 启动气和燃料气限流超压保护; 振动及喘振超限保护; 润滑保护系统; 轴承位移超限保护; 干气密封系统超限保护; 机组温度保护。",
+      "type": "语义分解",
+      "subject": "压缩机保护",
+      "action": "",
+      "operation": "至少设置压力转速燃料启动气振喘润滑轴位干封温度保护",
+      "condition": "",
+      "constraint": "7.2.5.8 每台压缩机组至少应设置下列安全保护: 进出口压力超限保护; 原动机转速超限保护; 启动气和燃料气限流超压保护; 振动及喘振超限保护; 润滑保护系统; 轴承位移超限保护; 干气密封系统超限保护; 机组温度保护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压缩机保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4811,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

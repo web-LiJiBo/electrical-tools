@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.2.4",
+  "entities": [
+    {
+      "name": "主要用能设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4 单体设备级中配置有主要用能设备, 主要用能设备能源计量器具配备率应达 到  1000, 其他设备宜配备能源计量器具。 用能单元级和用能单位级宜配备能源计量 器具。",
+      "type": "语义分解",
+      "subject": "主要用能设备",
+      "action": "",
+      "operation": "配备能源计量器具",
+      "condition": "单体设备级中配置有主要用能设备",
+      "constraint": "配备率应达 到  1000",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主要用能设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "1000疑似识别错误且缺少百分号，禁止改写为100%"
+      ]
+    }
+  }
+}

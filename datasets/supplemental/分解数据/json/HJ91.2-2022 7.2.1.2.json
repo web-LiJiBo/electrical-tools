@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "7.2.1.2",
+  "entities": [
+    {
+      "name": "水采样器具质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1.2 水环境质量监测采样器具和污染源监测采样器具应分架存放, 不得混用 _ 采样前对清洗干净的采样器具进行空白本底抽检,每个采样批次每种器具至少抽取3%, 检测结果应低于方法检出限或方法规定的限值。",
+      "type": "语义分解",
+      "subject": "水采样器具质控",
+      "action": "",
+      "operation": "环境与源器具分架不混用每批每种至少百分之三空白低限",
+      "condition": "",
+      "constraint": "7.2.1.2 水环境质量监测采样器具和污染源监测采样器具应分架存放, 不得混用 _ 采样前对清洗干净的采样器具进行空白本底抽检,每个采样批次每种器具至少抽取3%, 检测结果应低于方法检出限或方法规定的限值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水采样器具质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2995,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

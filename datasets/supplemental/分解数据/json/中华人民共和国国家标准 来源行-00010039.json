@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010039",
+  "entities": [
+    {
+      "name": "光纤连接线活接头处应留富余，余长应依据接头位置等情 况确定，不宜超过2m",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      6    光纤连接线活接头处应留富余，余长应依据接头位置等情\n况确定，不宜超过2m; 光纤连接线余长部分应整齐盘放，曲率半径\n不应小于40mm;",
+      "type": "语义分解",
+      "subject": "光纤连接线活接头处应留富余，余长应依据接头位置等情 况确定，不宜超过2m",
+      "action": "",
+      "operation": "光纤连接线活接头处应留富余，余长应依据接头位置等情 况确定，不宜超过2m; 光纤连接线余长部分应整齐盘放，曲率半径 不应小于40mm",
+      "condition": "",
+      "constraint": "      6    光纤连接线活接头处应留富余，余长应依据接头位置等情\n况确定，不宜超过2m; 光纤连接线余长部分应整齐盘放，曲率半径\n不应小于40mm;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光纤连接线活接头处应留富余，余长应依据接头位置等情 况确定，不宜超过2m"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10039,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

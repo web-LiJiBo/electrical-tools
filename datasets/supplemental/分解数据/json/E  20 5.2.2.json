@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "新建管道应按照SY/T 5922的规定，在1年内进行一般性检测，3年内进",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 新建管道应按照SY/T 5922的规定，在1年内进行一般性检测，3年内进行全面检测；以后至\n少每3年进行一次一般性检测，每8年进行一次全面检测。",
+      "type": "语义分解",
+      "subject": "新建管道应按照SY/T 5922的规定，在1年内进行一般性检测，3年内进",
+      "action": "",
+      "operation": "新建管道应按照SY/T 5922的规定，在1年内进行一般性检测，3年内进行全面检测；以后至 少每3年进行一次一般性检测，每8年进行一次全面检测。",
+      "condition": "",
+      "constraint": "5.2.2 新建管道应按照SY/T 5922的规定，在1年内进行一般性检测，3年内进行全面检测；以后至\n少每3年进行一次一般性检测，每8年进行一次全面检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "新建管道应按照SY/T 5922的规定，在1年内进行一般性检测，3年内进"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42015,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

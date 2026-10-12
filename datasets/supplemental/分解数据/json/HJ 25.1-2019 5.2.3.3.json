@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.2.3.3",
+  "entities": [
+    {
+      "name": "周边历史现状",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3.3 周围区域的现状与历史情况:  对于周围区域目前或过去土地利用的类型,如住宅。商店和工厂等,应尽可能观察和记录;  周围区域的废弃和正在使用的各类井,如水井等;  污水处理和排放系统; 化学品和废弃物的储存和处置设施; 地面上的沟。河。池;  地表水体。雨水排放和径流以及道路和公用设施=",
+      "type": "语义分解",
+      "subject": "周边历史现状",
+      "action": "",
+      "operation": "观察记录土地利用各类井排水储存处置水体道路公用设施",
+      "condition": "",
+      "constraint": "5.2.3.3 周围区域的现状与历史情况:  对于周围区域目前或过去土地利用的类型,如住宅。商店和工厂等,应尽可能观察和记录;  周围区域的废弃和正在使用的各类井,如水井等;  污水处理和排放系统; 化学品和废弃物的储存和处置设施; 地面上的沟。河。池;  地表水体。雨水排放和径流以及道路和公用设施=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "周边历史现状"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2620,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

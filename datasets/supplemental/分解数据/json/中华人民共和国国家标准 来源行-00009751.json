@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009751",
+  "entities": [
+    {
+      "name": "Ss (单通路)一参考点位于用户网元发射机光连接器之后",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Ss (单通路)一参考点位于用户网元发射机光连接器之后；\nRs ( 单通路)一参考点位于用户网元接收机光连接器之前；\n       MPI-S ( 单通路)—参考点位于每个光网元单通路",
+      "type": "语义分解",
+      "subject": "Ss (单通路)一参考点位于用户网元发射机光连接器之后",
+      "action": "",
+      "operation": "Ss (单通路)一参考点位于用户网元发射机光连接器之后； Rs ( 单通路)一参考点位于用户网元接收机光连接器之前； MPI-S ( 单通路)—参考点位于每个光网元单通路",
+      "condition": "",
+      "constraint": "Ss (单通路)一参考点位于用户网元发射机光连接器之后；\nRs ( 单通路)一参考点位于用户网元接收机光连接器之前；\n       MPI-S ( 单通路)—参考点位于每个光网元单通路",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Ss (单通路)一参考点位于用户网元发射机光连接器之后"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9751,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

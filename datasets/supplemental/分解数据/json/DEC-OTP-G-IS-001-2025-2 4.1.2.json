@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.1.2",
+  "entities": [
+    {
+      "name": "能耗计量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2 能耗计量范围包括用能单位。用能单元和用能设备使用(消耗)的能源及载 能工质=",
+      "type": "语义分解",
+      "subject": "能耗计量",
+      "action": "",
+      "operation": "界定计量范围",
+      "condition": "",
+      "constraint": "用能设备使用(消耗)的能源",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "能耗计量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

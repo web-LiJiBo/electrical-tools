@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "6.0.3",
+  "entities": [
+    {
+      "name": "考虑到大部分案例的交流干扰机理为感应干扰，当缓解 一个位置的交流干扰电压",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.0.3   考虑到大部分案例的交流干扰机理为感应干扰，当缓解\n一个位置的交流干扰电压时，有可能导致非缓解段交流干扰电\n压发生连带变化，因此建议根据实际情况，在非缓解段选取一\n定数量点进行延伸评价。",
+      "type": "语义分解",
+      "subject": "考虑到大部分案例的交流干扰机理为感应干扰，当缓解 一个位置的交流干扰电压",
+      "action": "",
+      "operation": "考虑到大部分案例的交流干扰机理为感应干扰，当缓解 一个位置的交流干扰电压时，有可能导致非缓解段交流干扰电 压发生连带变化，因此建议根据实际情况，在非缓解段选取一 定数量点进行延伸评价。",
+      "condition": "",
+      "constraint": "6.0.3   考虑到大部分案例的交流干扰机理为感应干扰，当缓解\n一个位置的交流干扰电压时，有可能导致非缓解段交流干扰电\n压发生连带变化，因此建议根据实际情况，在非缓解段选取一\n定数量点进行延伸评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "考虑到大部分案例的交流干扰机理为感应干扰，当缓解 一个位置的交流干扰电压"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49021,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.1.2.3.1",
+  "entities": [
+    {
+      "name": "营地用电",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.3.1 用电安全,应符合下列要求: 应配备持证电工负责营地电气线路 ,电气设备的安装 ,接地 ,检查和故障维修; 电气线路应有过载 ,短路,漏电保护装置; 各种开关 插头及配电装置应符合绝缘要求 ,无破损 ,裸露和老化等隐患 ; 所有营房车及用电设备应有接地装置 ,且接地电阻应小于4Ω; 不应在营房 ,帐篷内私接各种临时用电线路。",
+      "type": "语义分解",
+      "subject": "营地用电",
+      "action": "",
+      "operation": "持证电工安装维修过载短路漏保绝缘完整设备接地小于4欧禁室内私接临时线",
+      "condition": "",
+      "constraint": "5.1.2.3.1 用电安全,应符合下列要求: 应配备持证电工负责营地电气线路 ,电气设备的安装 ,接地 ,检查和故障维修; 电气线路应有过载 ,短路,漏电保护装置; 各种开关 插头及配电装置应符合绝缘要求 ,无破损 ,裸露和老化等隐患 ; 所有营房车及用电设备应有接地装置 ,且接地电阻应小于4Ω; 不应在营房 ,帐篷内私接各种临时用电线路。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "营地用电"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4257,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

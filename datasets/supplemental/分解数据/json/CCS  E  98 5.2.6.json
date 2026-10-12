@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "5.2.6",
+  "entities": [
+    {
+      "name": "本条规定了无溶剂环氧树脂材料、玻璃纤维布及玻璃钢 防护层在使用前及以后的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.6   本条规定了无溶剂环氧树脂材料、玻璃纤维布及玻璃钢\n防护层在使用前及以后的每批(无溶剂环氧树脂材料不超过\n10t,  玻璃纤维布不超过2t)  应进行全部项目检验，如有一项\n不合格，则加倍检验，若仍有不合格项，则该批产品判定为不\n合格。",
+      "type": "语义分解",
+      "subject": "本条规定了无溶剂环氧树脂材料、玻璃纤维布及玻璃钢 防护层在使用前及以后的",
+      "action": "",
+      "operation": "本条规定了无溶剂环氧树脂材料、玻璃纤维布及玻璃钢 防护层在使用前及以后的每批(无溶剂环氧树脂材料不超过 10t, 玻璃纤维布不超过2t) 应进行全部项目检验，如有一项 不合格，则加倍检验，若仍有不合格项，则该批产品判定为不 合格。",
+      "condition": "",
+      "constraint": "5.2.6   本条规定了无溶剂环氧树脂材料、玻璃纤维布及玻璃钢\n防护层在使用前及以后的每批(无溶剂环氧树脂材料不超过\n10t,  玻璃纤维布不超过2t)  应进行全部项目检验，如有一项\n不合格，则加倍检验，若仍有不合格项，则该批产品判定为不\n合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条规定了无溶剂环氧树脂材料、玻璃纤维布及玻璃钢 防护层在使用前及以后的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50211,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "2.1.5",
+  "entities": [
+    {
+      "name": "多业务传送平台 multi-service transport plat",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.1.5       多业务传送平台    multi-service    transport    platform\n   基于SDH 技术，同时实现时分复用( Time  Division  Multiple-\nxing)、异步转移模式( Asynchronous   Transfer   Mode)、以太网等\n业务接人、处理和传送功能，并提供统一网管的网络。\n2.1.6       异步传输模式    asynchronous   transfer   mode",
+      "type": "语义分解",
+      "subject": "多业务传送平台 multi-service transport plat",
+      "action": "",
+      "operation": "多业务传送平台 multi-service transport platform 基于SDH 技术，同时实现时分复用( Time Division Multiple- xing)、异步转移模式( Asynchronous Transfer Mode)、以太网等 业务接人、处理和传送功能，并提供统一网管的网络。 2.1.6 异步传输模式 asynchronous transfer mode",
+      "condition": "",
+      "constraint": "2.1.5       多业务传送平台    multi-service    transport    platform\n   基于SDH 技术，同时实现时分复用( Time  Division  Multiple-\nxing)、异步转移模式( Asynchronous   Transfer   Mode)、以太网等\n业务接人、处理和传送功能，并提供统一网管的网络。\n2.1.6       异步传输模式    asynchronous   transfer   mode",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多业务传送平台 multi-service transport plat"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17309,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

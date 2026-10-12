@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "二级库站人防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1 人力防范除符合6.1的规定外 ,还应符合以下规定: a ) 在周界主出入口设置门卫值班室; b) 配备专职或兼职治安保卫人员或巡查 .巡护人员 ,对油气调控申心 ,库(站)区及其周边进行月 常巡查 .巡护 ,24h内巡查 .巡护不少于3次; c) 特殊时期 ,符合7.1.1 d)的规定; d) 安防监控中心接收一级风险部位技术防范系统信息的 ,符合7.1.1c)的规定",
+      "type": "语义分解",
+      "subject": "二级库站人防",
+      "action": "",
+      "operation": "主口门卫室保卫日巡至少三次特殊期加强接一级信息中心24小时值机",
+      "condition": "",
+      "constraint": "8.1.1 人力防范除符合6.1的规定外 ,还应符合以下规定: a ) 在周界主出入口设置门卫值班室; b) 配备专职或兼职治安保卫人员或巡查 .巡护人员 ,对油气调控申心 ,库(站)区及其周边进行月 常巡查 .巡护 ,24h内巡查 .巡护不少于3次; c) 特殊时期 ,符合7.1.1 d)的规定; d) 安防监控中心接收一级风险部位技术防范系统信息的 ,符合7.1.1c)的规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级库站人防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

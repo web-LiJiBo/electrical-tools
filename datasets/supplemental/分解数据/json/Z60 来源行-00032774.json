@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032774",
+  "entities": [
+    {
+      "name": "在不少于50%发油鹤管处于发油时段对油气处理装置进口和出口油气进行采样，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3    在不少于50%发油鹤管处于发油时段对油气处理装置进口和出口油气进行采样，其中连接油船的\n油气处理装置应在发油时段中后期进行采样，对于包含吸附工艺的油气处理装置，采样应包括每个吸附\n塔的工作过程。监测采样按GB/T16157 、HJ/T 397 、HJ 732以及HJ 38的规定执行。",
+      "type": "语义分解",
+      "subject": "在不少于50%发油鹤管处于发油时段对油气处理装置进口和出口油气进行采样，",
+      "action": "",
+      "operation": "在不少于50%发油鹤管处于发油时段对油气处理装置进口和出口油气进行采样，其中连接油船的 油气处理装置应在发油时段中后期进行采样，对于包含吸附工艺的油气处理装置，采样应包括每个吸附 塔的工作过程。监测采样按GB/T16157 、HJ/T 397 、HJ 732以及HJ 38的规定执行。",
+      "condition": "",
+      "constraint": "6.3    在不少于50%发油鹤管处于发油时段对油气处理装置进口和出口油气进行采样，其中连接油船的\n油气处理装置应在发油时段中后期进行采样，对于包含吸附工艺的油气处理装置，采样应包括每个吸附\n塔的工作过程。监测采样按GB/T16157 、HJ/T 397 、HJ 732以及HJ 38的规定执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在不少于50%发油鹤管处于发油时段对油气处理装置进口和出口油气进行采样，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32774,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

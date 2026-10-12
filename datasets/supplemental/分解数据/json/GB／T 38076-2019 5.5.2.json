@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "5.5.2",
+  "entities": [
+    {
+      "name": "最大可能泄漏量等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.2 最大可能泄漏量(0)分级 将最大可能泄漏量分为:<1000 t,>1000 t~<10 000 t,>10 000 t三种情况，并分别以Q1,02_ Q3表示",
+      "type": "语义分解",
+      "subject": "最大可能泄漏量等级",
+      "action": "",
+      "operation": "按泄漏量划分三级",
+      "condition": "",
+      "constraint": "5.5.2 最大可能泄漏量(0)分级 将最大可能泄漏量分为:<1000 t,>1000 t~<10 000 t,>10 000 t三种情况，并分别以Q1,02_ Q3表示",
+      "constraint_role": "informational",
+      "related_entities": [
+        "最大可能泄漏量等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1163,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；不等号边界及0、02等级字符需核对"
+      ]
+    }
+  }
+}

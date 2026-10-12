@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "12.2.1",
+  "entities": [
+    {
+      "name": "立项咨询",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.1 立项阶段的咨询服务包括下列内容: 1 协助建设单位确定安全需求; 2 对保护对象进行风险评估; 3 对项目建议书、可行性研究报告和设计任务书的编制等提供咨询服务。项目建议书、可行性研究报告和设计任务书的编制咨询工作应依据风险评估结果，在安全防范措施、系统设计要求、投资额度、效益分析等方面提出建议。",
+      "type": "语义分解",
+      "subject": "立项咨询",
+      "action": "",
+      "operation": "协助需求评风险可研任务投资效益措施设计建议",
+      "condition": "",
+      "constraint": "12.2.1 立项阶段的咨询服务包括下列内容: 1 协助建设单位确定安全需求; 2 对保护对象进行风险评估; 3 对项目建议书、可行性研究报告和设计任务书的编制等提供咨询服务。项目建议书、可行性研究报告和设计任务书的编制咨询工作应依据风险评估结果，在安全防范措施、系统设计要求、投资额度、效益分析等方面提出建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "立项咨询"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7227,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

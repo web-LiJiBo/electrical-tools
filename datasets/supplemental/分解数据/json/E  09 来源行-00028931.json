@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028931",
+  "entities": [
+    {
+      "name": "到达事故现场，组织成立现场指挥部",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2   到达事故现场，组织成立现场指挥部。现场指挥部负责事故现场的救援工作，全面掌控现场\n情况，制定科学、合理的救援方案，按照“属地为主、系统指导，先到先行、有序衔接”的原则\n实施。",
+      "type": "语义分解",
+      "subject": "到达事故现场，组织成立现场指挥部",
+      "action": "",
+      "operation": "到达事故现场，组织成立现场指挥部。现场指挥部负责事故现场的救援工作，全面掌控现场 情况，制定科学、合理的救援方案，按照“属地为主、系统指导，先到先行、有序衔接”的原则 实施。",
+      "condition": "",
+      "constraint": "6.2.2   到达事故现场，组织成立现场指挥部。现场指挥部负责事故现场的救援工作，全面掌控现场\n情况，制定科学、合理的救援方案，按照“属地为主、系统指导，先到先行、有序衔接”的原则\n实施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "到达事故现场，组织成立现场指挥部"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28931,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

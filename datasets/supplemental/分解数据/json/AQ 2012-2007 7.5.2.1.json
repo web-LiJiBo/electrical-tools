@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.5.2.1",
+  "entities": [
+    {
+      "name": "原油管道投产方式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.2.1 应根据管道设备配置,管道原油的物性,管道沿线地温 ,管道敷设状况及社会依托情况确定投产方式。",
+      "type": "语义分解",
+      "subject": "原油管道投产方式",
+      "action": "",
+      "operation": "按设备物性地温敷设及依托确定",
+      "condition": "",
+      "constraint": "7.5.2.1 应根据管道设备配置,管道原油的物性,管道沿线地温 ,管道敷设状况及社会依托情况确定投产方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原油管道投产方式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4847,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032919",
+  "entities": [
+    {
+      "name": "对于运输工具油气密封点的泄漏检测，按照检测规范要求现场测得的泄漏检测值超",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4    对于运输工具油气密封点的泄漏检测，按照检测规范要求现场测得的泄漏检测值超过本标准规定\n的限值，判定为超标。",
+      "type": "语义分解",
+      "subject": "对于运输工具油气密封点的泄漏检测，按照检测规范要求现场测得的泄漏检测值超",
+      "action": "",
+      "operation": "对于运输工具油气密封点的泄漏检测，按照检测规范要求现场测得的泄漏检测值超过本标准规定 的限值，判定为超标。",
+      "condition": "",
+      "constraint": "7.4    对于运输工具油气密封点的泄漏检测，按照检测规范要求现场测得的泄漏检测值超过本标准规定\n的限值，判定为超标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于运输工具油气密封点的泄漏检测，按照检测规范要求现场测得的泄漏检测值超"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32919,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

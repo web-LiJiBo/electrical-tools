@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033677",
+  "entities": [
+    {
+      "name": "a) 将一张清洁过滤纸夹入取样泵，并保证牢牢的夹住",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    将一张清洁过滤纸夹入取样泵，并保证牢牢的夹住；\nb)    打开阀 B , 并将取样泵联到取样箱上；\nc)    关闭阀 C , 切断空气逆吹系统；\nd)    全开阀 A , 使样气流动；",
+      "type": "语义分解",
+      "subject": "a) 将一张清洁过滤纸夹入取样泵，并保证牢牢的夹住",
+      "action": "",
+      "operation": "a) 将一张清洁过滤纸夹入取样泵，并保证牢牢的夹住； b) 打开阀 B , 并将取样泵联到取样箱上； c) 关闭阀 C , 切断空气逆吹系统； d) 全开阀 A , 使样气流动",
+      "condition": "",
+      "constraint": "a)    将一张清洁过滤纸夹入取样泵，并保证牢牢的夹住；\nb)    打开阀 B , 并将取样泵联到取样箱上；\nc)    关闭阀 C , 切断空气逆吹系统；\nd)    全开阀 A , 使样气流动；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 将一张清洁过滤纸夹入取样泵，并保证牢牢的夹住"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33677,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

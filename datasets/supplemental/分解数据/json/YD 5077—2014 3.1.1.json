@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.1.1",
+  "entities": [
+    {
+      "name": "机房环境的检查内容，在设备安装前就应检验合格，但往 往由于经过施工后，有",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.1      机房环境的检查内容，在设备安装前就应检验合格，但往\n往由于经过施工后，有可能受到一些损坏，例如活动地板个别破损\n不平、通风管道积尘需要清理等。总之，在验收通电调测前，应对\n机房环境进行一次清理整治，并进行检查。",
+      "type": "语义分解",
+      "subject": "机房环境的检查内容，在设备安装前就应检验合格，但往 往由于经过施工后，有",
+      "action": "",
+      "operation": "机房环境的检查内容，在设备安装前就应检验合格，但往 往由于经过施工后，有可能受到一些损坏，例如活动地板个别破损 不平、通风管道积尘需要清理等。总之，在验收通电调测前，应对 机房环境进行一次清理整治，并进行检查。",
+      "condition": "",
+      "constraint": "3.1.1      机房环境的检查内容，在设备安装前就应检验合格，但往\n往由于经过施工后，有可能受到一些损坏，例如活动地板个别破损\n不平、通风管道积尘需要清理等。总之，在验收通电调测前，应对\n机房环境进行一次清理整治，并进行检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房环境的检查内容，在设备安装前就应检验合格，但往 往由于经过施工后，有"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27221,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

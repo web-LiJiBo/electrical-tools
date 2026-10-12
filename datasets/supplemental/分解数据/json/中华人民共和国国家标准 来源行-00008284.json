@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008284",
+  "entities": [
+    {
+      "name": "试运行结束，工程遗留问题解决后，应进行工程终验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1      试运行结束，工程遗留问题解决后，应进行工程终验。\n7.3.2      终验应对投资进行初步决算，综合评定工程设计和工程施\n工质量。在工程同时满足下列要求时，工程终验应通过：\n       1     主要传输性能满足设计要求；\n       2    系统试运行稳定可靠；",
+      "type": "语义分解",
+      "subject": "试运行结束，工程遗留问题解决后，应进行工程终验",
+      "action": "",
+      "operation": "试运行结束，工程遗留问题解决后，应进行工程终验。 7.3.2 终验应对投资进行初步决算，综合评定工程设计和工程施 工质量。在工程同时满足下列要求时，工程终验应通过： 1 主要传输性能满足设计要求； 2 系统试运行稳定可靠",
+      "condition": "",
+      "constraint": "7.3.1      试运行结束，工程遗留问题解决后，应进行工程终验。\n7.3.2      终验应对投资进行初步决算，综合评定工程设计和工程施\n工质量。在工程同时满足下列要求时，工程终验应通过：\n       1     主要传输性能满足设计要求；\n       2    系统试运行稳定可靠；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运行结束，工程遗留问题解决后，应进行工程终验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8284,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

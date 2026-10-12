@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046419",
+  "entities": [
+    {
+      "name": "直接检测与评价内容包括对识别出来的内腐蚀按严重程度 进行详细检查，具体在",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   直接检测与评价内容包括对识别出来的内腐蚀按严重程度\n进行详细检查，具体在本规范第6章论述。检测与评价的内容\n要包括判断是否存在腐蚀、腐蚀的程度和范围。可采用无损检\n测方法 (NDE) 识别内部缺陷或壁厚损失。通过检测，再对间\n接检测的评价结果重新进行排序。还可以通过长距离超声检测\n(LRUT) 、自动超声检测 (AUT) 、手动超声检测 (UT) 、 内检\n测及内腐蚀监测设备进行详细检查。",
+      "type": "语义分解",
+      "subject": "直接检测与评价内容包括对识别出来的内腐蚀按严重程度 进行详细检查，具体在",
+      "action": "",
+      "operation": "直接检测与评价内容包括对识别出来的内腐蚀按严重程度 进行详细检查，具体在本规范第6章论述。检测与评价的内容 要包括判断是否存在腐蚀、腐蚀的程度和范围。可采用无损检 测方法 (NDE) 识别内部缺陷或壁厚损失。通过检测，再对间 接检测的评价结果重新进行排序。还可以通过长距离超声检测 (LRUT) 、自动超声检测 (AUT) 、手动超声检测 (UT) 、 内检 测及内腐蚀监测设备进行详细检查。",
+      "condition": "",
+      "constraint": "   直接检测与评价内容包括对识别出来的内腐蚀按严重程度\n进行详细检查，具体在本规范第6章论述。检测与评价的内容\n要包括判断是否存在腐蚀、腐蚀的程度和范围。可采用无损检\n测方法 (NDE) 识别内部缺陷或壁厚损失。通过检测，再对间\n接检测的评价结果重新进行排序。还可以通过长距离超声检测\n(LRUT) 、自动超声检测 (AUT) 、手动超声检测 (UT) 、 内检\n测及内腐蚀监测设备进行详细检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "直接检测与评价内容包括对识别出来的内腐蚀按严重程度 进行详细检查，具体在"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46419,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

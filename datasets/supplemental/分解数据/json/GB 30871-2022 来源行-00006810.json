@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006810",
+  "entities": [
+    {
+      "name": "作业前 ,作业单位应会同危险化学品企业相关部门制定交通组织方案 ,应能保",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.1 作业前 ,作业单位应会同危险化学品企业相关部门制定交通组织方案 ,应能保证消防车和其他重 要车辆的通行 ,并满足应急救援要求。",
+      "type": "语义分解",
+      "subject": "作业前 ,作业单位应会同危险化学品企业相关部门制定交通组织方案 ,应能保",
+      "action": "",
+      "operation": "作业前 ,作业单位应会同危险化学品企业相关部门制定交通组织方案 ,应能保证消防车和其他重 要车辆的通行 ,并满足应急救援要求。",
+      "condition": "",
+      "constraint": "12.1 作业前 ,作业单位应会同危险化学品企业相关部门制定交通组织方案 ,应能保证消防车和其他重 要车辆的通行 ,并满足应急救援要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业前 ,作业单位应会同危险化学品企业相关部门制定交通组织方案 ,应能保"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6810,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_completed_record"
+      ]
+    }
+  }
+}

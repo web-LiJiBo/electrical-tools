@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.3.2",
+  "entities": [
+    {
+      "name": "连续流动酚原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.2 原理 连续流动分析仪是利用连续流，通过蠕动泵将样品和试剂泵入分析模块中混合、反应，并泵入气泡将流体分割成片段，使反应达到完全的稳态，然后进入流通检测池进行分析测定。在酸化条件下，样品通过在线蒸馏，释放出的酚在有碱性铁氰化钾氧化剂存在的溶液中，与4-氨基安替比林反应，生成红色的络合物，然后进入50 mm流通池中在505 nm处进行比色测定。",
+      "type": "语义分解",
+      "subject": "连续流动酚原理",
+      "action": "",
+      "operation": "泵入分段混合在线蒸馏显色五十毫米池505纳米测定",
+      "condition": "",
+      "constraint": "12.3.2 原理 连续流动分析仪是利用连续流，通过蠕动泵将样品和试剂泵入分析模块中混合、反应，并泵入气泡将流体分割成片段，使反应达到完全的稳态，然后进入流通检测池进行分析测定。在酸化条件下，样品通过在线蒸馏，释放出的酚在有碱性铁氰化钾氧化剂存在的溶液中，与4-氨基安替比林反应，生成红色的络合物，然后进入50 mm流通池中在505 nm处进行比色测定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续流动酚原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1494,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

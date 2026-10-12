@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "正压通风",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 受限空间的通风应符合以下要求 : a) 正压式通风。 b) 进风口应位于安全区。 C) 通风设备的防爆等级应与其安装位置的危险区域级别相适应。",
+      "type": "语义分解",
+      "subject": "正压通风",
+      "action": "",
+      "operation": "进气位于安全区防爆等级匹配危险区",
+      "condition": "",
+      "constraint": "6.2.2 受限空间的通风应符合以下要求 : a) 正压式通风。 b) 进风口应位于安全区。 C) 通风设备的防爆等级应与其安装位置的危险区域级别相适应。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "正压通风"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7454,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "7.2",
+  "entities": [
+    {
+      "name": "不达标区域建设项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2 环境质量不达标的区域,应采取围内外先进可行的环境保护措施,纬合区域限期达标规划及实施 情况,分析建设项目实施对区域环境质量改善目标的贡献和影响。",
+      "type": "语义分解",
+      "subject": "不达标区域建设项目",
+      "action": "",
+      "operation": "采取可行保护措施并分析改善贡献",
+      "condition": "环境质量不达标的区域",
+      "constraint": "7.2 环境质量不达标的区域,应采取围内外先进可行的环境保护措施,纬合区域限期达标规划及实施 情况,分析建设项目实施对区域环境质量改善目标的贡献和影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不达标区域建设项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2583,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

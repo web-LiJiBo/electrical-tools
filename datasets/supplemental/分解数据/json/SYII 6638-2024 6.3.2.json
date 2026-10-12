@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "储气库采气系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2 充分利用地下储气库地层压力能;通过工艺计算和技术经济对比。地上与地下相结合。确定采气系统压力级制及采出气处理运行参数。",
+      "type": "语义分解",
+      "subject": "储气库采气系统",
+      "action": "",
+      "operation": "利用地层压力比选级制与处理参数",
+      "condition": "",
+      "constraint": "6.3.2 充分利用地下储气库地层压力能;通过工艺计算和技术经济对比。地上与地下相结合。确定采气系统压力级制及采出气处理运行参数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储气库采气系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 287,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

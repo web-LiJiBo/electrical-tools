@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.2.4",
+  "entities": [
+    {
+      "name": "管缆井楼墙孔洞",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.2.4      建筑内的管道井、电缆井应在每层楼板处采用不低于楼板\n耐火极限的非燃烧体或防火封堵材料封堵。楼板或墙上的预留孔\n洞及布放过缆线后的孔洞应用非燃烧材料封堵。",
+      "type": "语义分解",
+      "subject": "管缆井楼墙孔洞",
+      "action": "",
+      "operation": "每层封堵耐火不低楼板预留及穿线孔非燃封堵",
+      "condition": "",
+      "constraint": "3.2.4      建筑内的管道井、电缆井应在每层楼板处采用不低于楼板\n耐火极限的非燃烧体或防火封堵材料封堵。楼板或墙上的预留孔\n洞及布放过缆线后的孔洞应用非燃烧材料封堵。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管缆井楼墙孔洞"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26687,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

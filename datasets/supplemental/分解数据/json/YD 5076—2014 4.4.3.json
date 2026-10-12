@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "4.4.3",
+  "entities": [
+    {
+      "name": "边境出入口局和范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.3      边境出入口局宜设置在与境外接壤的地市级以上(含地市\n级)城市，用于所在区域与境外相应的区域间点对点的通信。\n4.4.4      区域性出入口局或边境出入口局的设置和通达范围执行\n工信部相关部门的规定，至非本地区和非本地区国家的电话业务\n应经相关国际出入口局疏通。",
+      "type": "语义分解",
+      "subject": "边境出入口局和范围",
+      "action": "",
+      "operation": "宜接壤地市以上点对点通信通达范围按主管规定非本地国际经国际局",
+      "condition": "",
+      "constraint": "4.4.3      边境出入口局宜设置在与境外接壤的地市级以上(含地市\n级)城市，用于所在区域与境外相应的区域间点对点的通信。\n4.4.4      区域性出入口局或边境出入口局的设置和通达范围执行\n工信部相关部门的规定，至非本地区和非本地区国家的电话业务\n应经相关国际出入口局疏通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "边境出入口局和范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25818,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含4.4.3及4.4.4"
+      ]
+    }
+  }
+}

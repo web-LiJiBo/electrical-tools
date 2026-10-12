@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021335",
+  "entities": [
+    {
+      "name": ")两端的SmP_C 功能以同样的方式工作，监测VC-m信号缺陷，按缺陷状",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)两端的SmP_C 功能以同样的方式工作，监测VC-m信号缺陷，按缺陷状态和外部及远端倒换\n   请求的优先级评估系统状态，并从适当的通道选择信号。两个 SmP_C 功能可通过 SmP_C 特\n   性信息字节(保护通道的POH 中的K4 字节)面向比特的协议相互联络。该协议在ITU-TG.841\n\n   中说明。",
+      "type": "语义分解",
+      "subject": ")两端的SmP_C 功能以同样的方式工作，监测VC-m信号缺陷，按缺陷状",
+      "action": "",
+      "operation": ")两端的SmP_C 功能以同样的方式工作，监测VC-m信号缺陷，按缺陷状态和外部及远端倒换 请求的优先级评估系统状态，并从适当的通道选择信号。两个 SmP_C 功能可通过 SmP_C 特 性信息字节(保护通道的POH 中的K4 字节)面向比特的协议相互联络。该协议在ITU-TG.841 中说明。",
+      "condition": "",
+      "constraint": "3)两端的SmP_C 功能以同样的方式工作，监测VC-m信号缺陷，按缺陷状态和外部及远端倒换\n   请求的优先级评估系统状态，并从适当的通道选择信号。两个 SmP_C 功能可通过 SmP_C 特\n   性信息字节(保护通道的POH 中的K4 字节)面向比特的协议相互联络。该协议在ITU-TG.841\n\n   中说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")两端的SmP_C 功能以同样的方式工作，监测VC-m信号缺陷，按缺陷状"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21335,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

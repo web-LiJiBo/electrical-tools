@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "7.2.3",
+  "entities": [
+    {
+      "name": "压缩机电动机能效",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3 高压电动机能效等级应不低于 GB 30254-2013 中的2级要求。低压电动机能效应不低于 GB 18613-2020 中的2级要求。单台电动机功萃在 2O0kW 及以上时。宜采用高压电动机。在配电电压允许情况下, 宜优先采用 IokV 电动机。",
+      "type": "语义分解",
+      "subject": "压缩机电动机能效",
+      "action": "",
+      "operation": "高低压满足二级要求并按功率选电压",
+      "condition": "",
+      "constraint": "7.2.3 高压电动机能效等级应不低于 GB 30254-2013 中的2级要求。低压电动机能效应不低于 GB 18613-2020 中的2级要求。单台电动机功萃在 2O0kW 及以上时。宜采用高压电动机。在配电电压允许情况下, 宜优先采用 IokV 电动机。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压缩机电动机能效"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 311,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；2O0kW IokV原文识别异常"
+      ]
+    }
+  }
+}

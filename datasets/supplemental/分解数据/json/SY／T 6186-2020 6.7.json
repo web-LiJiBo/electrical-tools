@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "6.7",
+  "entities": [
+    {
+      "name": "材料复验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7 对材料有复验要求或对材料质量有疑问时,应按照相关规范的规定对材料进行复验。 牌号及质 量性能不明的材料不应用于管道组成件",
+      "type": "语义分解",
+      "subject": "材料复验",
+      "action": "",
+      "operation": "要求或质量疑问按规范复验牌号质量不明禁用",
+      "condition": "",
+      "constraint": "6.7 对材料有复验要求或对材料质量有疑问时,应按照相关规范的规定对材料进行复验。 牌号及质 量性能不明的材料不应用于管道组成件",
+      "constraint_role": "informational",
+      "related_entities": [
+        "材料复验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7359,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

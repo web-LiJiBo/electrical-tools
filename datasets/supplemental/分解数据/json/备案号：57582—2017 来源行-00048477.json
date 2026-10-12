@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048477",
+  "entities": [
+    {
+      "name": "总里程差是指整个管道经焊缝对齐获得的里程差",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.5    总里程差是指整个管道经焊缝对齐获得的里程差。分段\n里程差是指经弯头1三通/阀分段的各区间段的累计里程差。\n6.2.6    制管焊缝包括直焊缝或螺旋焊缝。针对无缝钢管，通过\n钢管变壁厚点和管长验证对齐结果。",
+      "type": "语义分解",
+      "subject": "总里程差是指整个管道经焊缝对齐获得的里程差",
+      "action": "",
+      "operation": "总里程差是指整个管道经焊缝对齐获得的里程差。分段 里程差是指经弯头1三通/阀分段的各区间段的累计里程差。 6.2.6 制管焊缝包括直焊缝或螺旋焊缝。针对无缝钢管，通过 钢管变壁厚点和管长验证对齐结果。",
+      "condition": "",
+      "constraint": "6.2.5    总里程差是指整个管道经焊缝对齐获得的里程差。分段\n里程差是指经弯头1三通/阀分段的各区间段的累计里程差。\n6.2.6    制管焊缝包括直焊缝或螺旋焊缝。针对无缝钢管，通过\n钢管变壁厚点和管长验证对齐结果。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总里程差是指整个管道经焊缝对齐获得的里程差"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48477,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

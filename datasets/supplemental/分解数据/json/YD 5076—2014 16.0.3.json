@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "16.0.3",
+  "entities": [
+    {
+      "name": "机房面积利用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "16.0.3       设计中应最大限度地提高机房面积的使用率，除有特殊\n要求外，一般情况安装各种设备的机房不作分隔。",
+      "type": "语义分解",
+      "subject": "机房面积利用",
+      "action": "",
+      "operation": "提高使用率无特殊要求一般不分隔",
+      "condition": "",
+      "constraint": "16.0.3       设计中应最大限度地提高机房面积的使用率，除有特殊\n要求外，一般情况安装各种设备的机房不作分隔。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房面积利用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26354,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

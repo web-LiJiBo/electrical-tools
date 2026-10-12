@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "6.5.4",
+  "entities": [
+    {
+      "name": "其他应急保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.4 其他保障 根据应急工作需求而确定的其他相关保障措施(如：能源保障、经费保障、交通运输保障、治安保障、技术保障、医疗保障及后勤保障)。注：6.5.1~6.5.4的相关内容，尽可能在应急预案的附件中体现。",
+      "type": "语义分解",
+      "subject": "其他应急保障",
+      "action": "",
+      "operation": "按需求确定能源经费交通治安技术医疗后勤保障尽量在附件体现",
+      "condition": "",
+      "constraint": "6.5.4 其他保障 根据应急工作需求而确定的其他相关保障措施(如：能源保障、经费保障、交通运输保障、治安保障、技术保障、医疗保障及后勤保障)。注：6.5.1~6.5.4的相关内容，尽可能在应急预案的附件中体现。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他应急保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4178,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "土壤制样场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1 制样场所 制样场所应整洁。通风良好且无直吹风。无酸 碱。尘和挥发性化学物质,避免阳光直射样品并维 持适宜的温湿度环境;  设置专用的土壤干燥区域 (可分为风干。烘干和冷冻干燥区域等)和研磨区域, 两者应有效隔离。必要时可以设置恒温恒湿间 =",
+      "type": "语义分解",
+      "subject": "土壤制样场所",
+      "action": "",
+      "operation": "整洁通风无直吹无化学干扰避直晒温湿适宜干燥研磨区隔离",
+      "condition": "",
+      "constraint": "8.1.1 制样场所 制样场所应整洁。通风良好且无直吹风。无酸 碱。尘和挥发性化学物质,避免阳光直射样品并维 持适宜的温湿度环境;  设置专用的土壤干燥区域 (可分为风干。烘干和冷冻干燥区域等)和研磨区域, 两者应有效隔离。必要时可以设置恒温恒湿间 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤制样场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2258,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

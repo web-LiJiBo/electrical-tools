@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "4.11",
+  "entities": [
+    {
+      "name": "I及II等架空工程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.11 对于维护等级I 、Ⅱ  等的架空工程，管理部门应与有关水文、气象部门建立预报联系，每年汛\n期前、后及时沟通。",
+      "type": "语义分解",
+      "subject": "I及II等架空工程",
+      "action": "",
+      "operation": "联系水文气象预报汛前后沟通",
+      "condition": "",
+      "constraint": "4.11 对于维护等级I 、Ⅱ  等的架空工程，管理部门应与有关水文、气象部门建立预报联系，每年汛\n期前、后及时沟通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "I及II等架空工程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29712,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

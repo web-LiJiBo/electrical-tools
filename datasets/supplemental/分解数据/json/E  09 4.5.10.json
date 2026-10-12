@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.5.10",
+  "entities": [
+    {
+      "name": "在道路建设施工和维护作业时，应制定环境保护应急计划，该计划应包括主要排水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.10     在道路建设施工和维护作业时，应制定环境保护应急计划，该计划应包括主要排水系统在特\n大暴雨时出现堵塞、损坏或不能正常发挥作用的情况下的应急程序。",
+      "type": "语义分解",
+      "subject": "在道路建设施工和维护作业时，应制定环境保护应急计划，该计划应包括主要排水",
+      "action": "",
+      "operation": "在道路建设施工和维护作业时，应制定环境保护应急计划，该计划应包括主要排水系统在特 大暴雨时出现堵塞、损坏或不能正常发挥作用的情况下的应急程序。",
+      "condition": "",
+      "constraint": "4.5.10     在道路建设施工和维护作业时，应制定环境保护应急计划，该计划应包括主要排水系统在特\n大暴雨时出现堵塞、损坏或不能正常发挥作用的情况下的应急程序。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在道路建设施工和维护作业时，应制定环境保护应急计划，该计划应包括主要排水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41116,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

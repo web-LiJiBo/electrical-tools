@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029327",
+  "entities": [
+    {
+      "name": "g) 规范化格式文本(列出应急信息接收、处理、上报和记录等文本格式和主要",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " g)  规范化格式文本(列出应急信息接收、处理、上报和记录等文本格式和主要内容);\n h)  所辖管线高后果区与高风险段列表；\n i)  所辖输油管道河流穿越信息；\n j)  所辖管线穿越公路信息；\n k)  所辖管线穿越铁路信息；",
+      "type": "语义分解",
+      "subject": "g) 规范化格式文本(列出应急信息接收、处理、上报和记录等文本格式和主要",
+      "action": "",
+      "operation": "g) 规范化格式文本(列出应急信息接收、处理、上报和记录等文本格式和主要内容); h) 所辖管线高后果区与高风险段列表； i) 所辖输油管道河流穿越信息； j) 所辖管线穿越公路信息； k) 所辖管线穿越铁路信息",
+      "condition": "",
+      "constraint": " g)  规范化格式文本(列出应急信息接收、处理、上报和记录等文本格式和主要内容);\n h)  所辖管线高后果区与高风险段列表；\n i)  所辖输油管道河流穿越信息；\n j)  所辖管线穿越公路信息；\n k)  所辖管线穿越铁路信息；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 规范化格式文本(列出应急信息接收、处理、上报和记录等文本格式和主要"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29327,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

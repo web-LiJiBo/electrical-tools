@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046409",
+  "entities": [
+    {
+      "name": "受测量方法及其他相关因素的影响，管道高程测量数据 可能存在误差，计算得到",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4   受测量方法及其他相关因素的影响，管道高程测量数据\n可能存在误差，计算得到的管道实际倾角也存在误差，故需估\n算管道实际倾角不确定度，并对预测过程中使用的管道高程数\n据、管道实际倾角计算条件、管道实际倾角不确定度等相关参\n数和信息如实记录。",
+      "type": "语义分解",
+      "subject": "受测量方法及其他相关因素的影响，管道高程测量数据 可能存在误差，计算得到",
+      "action": "",
+      "operation": "受测量方法及其他相关因素的影响，管道高程测量数据 可能存在误差，计算得到的管道实际倾角也存在误差，故需估 算管道实际倾角不确定度，并对预测过程中使用的管道高程数 据、管道实际倾角计算条件、管道实际倾角不确定度等相关参 数和信息如实记录。",
+      "condition": "",
+      "constraint": "5.2.4   受测量方法及其他相关因素的影响，管道高程测量数据\n可能存在误差，计算得到的管道实际倾角也存在误差，故需估\n算管道实际倾角不确定度，并对预测过程中使用的管道高程数\n据、管道实际倾角计算条件、管道实际倾角不确定度等相关参\n数和信息如实记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "受测量方法及其他相关因素的影响，管道高程测量数据 可能存在误差，计算得到"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46409,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

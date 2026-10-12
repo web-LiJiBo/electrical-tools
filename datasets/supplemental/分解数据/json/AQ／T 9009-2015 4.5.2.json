@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "4.5.2",
+  "entities": [
+    {
+      "name": "评估组职责",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2 职责 负责对演练准备、组织与实施等进行全过程、全方位地跟踪评估。演练结束后，及时向演练单位或演练领导小组及其他相关专业工作组提出评估意见建议，并撰写演练评估报告。",
+      "type": "语义分解",
+      "subject": "评估组职责",
+      "action": "",
+      "operation": "全过程跟踪结束提意见建议撰评估报告",
+      "condition": "",
+      "constraint": "4.5.2 职责 负责对演练准备、组织与实施等进行全过程、全方位地跟踪评估。演练结束后，及时向演练单位或演练领导小组及其他相关专业工作组提出评估意见建议，并撰写演练评估报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "评估组职责"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5374,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

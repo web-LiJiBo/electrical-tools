@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "13.2.5",
+  "entities": [
+    {
+      "name": "无线设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.5    设置无线网络设施时 ,   无线收发设备的选用和安装位置",
+      "type": "语义分解",
+      "subject": "无线设备",
+      "action": "",
+      "operation": "保留选用安装位置要求残文",
+      "condition": "",
+      "constraint": "13.2.5    设置无线网络设施时 ,   无线收发设备的选用和安装位置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无线设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12060,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；正文截断不推定具体位置"
+      ]
+    }
+  }
+}

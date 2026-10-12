@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "4.0.2",
+  "entities": [
+    {
+      "name": "由于定向钻(直铺管)弯管部分的施工通常被划分到穿 越段项目，本条说明了冷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.0.2    由于定向钻(直铺管)弯管部分的施工通常被划分到穿\n越段项目，本条说明了冷弯弯管和热煨弯管防腐层类型条件许\n可时首先建议与一般线路段弯管防腐层类型一致。",
+      "type": "语义分解",
+      "subject": "由于定向钻(直铺管)弯管部分的施工通常被划分到穿 越段项目，本条说明了冷",
+      "action": "",
+      "operation": "由于定向钻(直铺管)弯管部分的施工通常被划分到穿 越段项目，本条说明了冷弯弯管和热煨弯管防腐层类型条件许 可时首先建议与一般线路段弯管防腐层类型一致。",
+      "condition": "",
+      "constraint": "4.0.2    由于定向钻(直铺管)弯管部分的施工通常被划分到穿\n越段项目，本条说明了冷弯弯管和热煨弯管防腐层类型条件许\n可时首先建议与一般线路段弯管防腐层类型一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "由于定向钻(直铺管)弯管部分的施工通常被划分到穿 越段项目，本条说明了冷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50199,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

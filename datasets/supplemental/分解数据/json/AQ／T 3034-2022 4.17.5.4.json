@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.17.5.4",
+  "entities": [
+    {
+      "name": "事故数据库",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.17.5.4 企业应建立事故事件数据库 ,每半年对发生的事故事件进行统计分析 ,找出发生的规律 ,制 定系统性的防范措施;发现管理体系存在缺陷和不足时 ,应及时对管理体系进行修正和完善",
+      "type": "语义分解",
+      "subject": "事故数据库",
+      "action": "",
+      "operation": "每半年统计分析规律系统防范发现体系缺陷及时完善",
+      "condition": "",
+      "constraint": "4.17.5.4 企业应建立事故事件数据库 ,每半年对发生的事故事件进行统计分析 ,找出发生的规律 ,制 定系统性的防范措施;发现管理体系存在缺陷和不足时 ,应及时对管理体系进行修正和完善",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故数据库"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5323,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

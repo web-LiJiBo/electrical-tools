@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022518",
+  "entities": [
+    {
+      "name": "在每层设施或相应楼层的机房沿建筑物的内部一周安装 环形接地汇集线，环形接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1     在每层设施或相应楼层的机房沿建筑物的内部一周安装\n环形接地汇集线，环形接地汇集线应与建筑物柱内钢筋的预留接\n地端连接，环形接地汇集线的高度应依据机房情况选取。\n      2     垂直连接导体应与每一层或相应楼层机房环形接地汇集\n线相连接，垂直连接导体的数量和间距应符合下列规定：",
+      "type": "语义分解",
+      "subject": "在每层设施或相应楼层的机房沿建筑物的内部一周安装 环形接地汇集线，环形接",
+      "action": "",
+      "operation": "在每层设施或相应楼层的机房沿建筑物的内部一周安装 环形接地汇集线，环形接地汇集线应与建筑物柱内钢筋的预留接 地端连接，环形接地汇集线的高度应依据机房情况选取。 2 垂直连接导体应与每一层或相应楼层机房环形接地汇集 线相连接，垂直连接导体的数量和间距应符合下列规定",
+      "condition": "",
+      "constraint": "       1     在每层设施或相应楼层的机房沿建筑物的内部一周安装\n环形接地汇集线，环形接地汇集线应与建筑物柱内钢筋的预留接\n地端连接，环形接地汇集线的高度应依据机房情况选取。\n      2     垂直连接导体应与每一层或相应楼层机房环形接地汇集\n线相连接，垂直连接导体的数量和间距应符合下列规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在每层设施或相应楼层的机房沿建筑物的内部一周安装 环形接地汇集线，环形接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22518,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

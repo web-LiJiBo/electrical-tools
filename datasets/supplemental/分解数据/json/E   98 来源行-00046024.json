@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046024",
+  "entities": [
+    {
+      "name": "调查、检测中需要室内分析、化验的样品应按规定取样， 并应由专业实验室按相",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.4   调查、检测中需要室内分析、化验的样品应按规定取样，\n并应由专业实验室按相关标准规定的试验方法进行分析、化验。\n3.0.5   管道内检测数据可作为确定直接检测开挖点位置的参考\n值，也可作为间接评价选点结果的验证对比数据。",
+      "type": "语义分解",
+      "subject": "调查、检测中需要室内分析、化验的样品应按规定取样， 并应由专业实验室按相",
+      "action": "",
+      "operation": "调查、检测中需要室内分析、化验的样品应按规定取样， 并应由专业实验室按相关标准规定的试验方法进行分析、化验。 3.0.5 管道内检测数据可作为确定直接检测开挖点位置的参考 值，也可作为间接评价选点结果的验证对比数据。",
+      "condition": "",
+      "constraint": "3.0.4   调查、检测中需要室内分析、化验的样品应按规定取样，\n并应由专业实验室按相关标准规定的试验方法进行分析、化验。\n3.0.5   管道内检测数据可作为确定直接检测开挖点位置的参考\n值，也可作为间接评价选点结果的验证对比数据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "调查、检测中需要室内分析、化验的样品应按规定取样， 并应由专业实验室按相"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46024,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

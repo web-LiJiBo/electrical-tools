@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024735",
+  "entities": [
+    {
+      "name": "b) 在网络管理维护软件（网管）上配置网元拓扑图，添加新网元并保存",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    在网络管理维护软件（网管）上配置网元拓扑图，添加新网元并保存；\nc)    在网络管理维护软件上修改一个网元名称并保存；\nd)    在网络管理维护软件上删除一个网元并保存；\ne)    在网络管理维护软件上查看网元拓扑图。",
+      "type": "语义分解",
+      "subject": "b) 在网络管理维护软件（网管）上配置网元拓扑图，添加新网元并保存",
+      "action": "",
+      "operation": "b) 在网络管理维护软件（网管）上配置网元拓扑图，添加新网元并保存； c) 在网络管理维护软件上修改一个网元名称并保存； d) 在网络管理维护软件上删除一个网元并保存； e) 在网络管理维护软件上查看网元拓扑图。",
+      "condition": "",
+      "constraint": "b)    在网络管理维护软件（网管）上配置网元拓扑图，添加新网元并保存；\nc)    在网络管理维护软件上修改一个网元名称并保存；\nd)    在网络管理维护软件上删除一个网元并保存；\ne)    在网络管理维护软件上查看网元拓扑图。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 在网络管理维护软件（网管）上配置网元拓扑图，添加新网元并保存"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24735,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

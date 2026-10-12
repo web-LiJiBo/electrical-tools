@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "10.1",
+  "entities": [
+    {
+      "name": "爆炸危险场所临时电源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1 在运行的火灾爆炸危险性生产装置、罐区和具有火灾爆炸危险场所内不应接临时电源，确需时应对周围环境进行可燃气体检测分析，分析结果应符合5.3.2的规定。",
+      "type": "语义分解",
+      "subject": "爆炸危险场所临时电源",
+      "action": "",
+      "operation": "原则禁接确需时检测气体并达要求",
+      "condition": "在运行的火灾爆炸危险性生产装置、罐区和具有火灾爆炸危险场所内",
+      "constraint": "10.1 在运行的火灾爆炸危险性生产装置、罐区和具有火灾爆炸危险场所内不应接临时电源，确需时应对周围环境进行可燃气体检测分析，分析结果应符合5.3.2的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆炸危险场所临时电源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3936,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺5.3.2限值"
+      ]
+    }
+  }
+}

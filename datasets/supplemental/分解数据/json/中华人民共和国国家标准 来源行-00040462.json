@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040462",
+  "entities": [
+    {
+      "name": "在污染区生产单元设置围堰或环沟可防止跑、冒、滴、漏， 防止初期雨水、冲洗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.4       在污染区生产单元设置围堰或环沟可防止跑、冒、滴、漏，\n防止初期雨水、冲洗水、事故废水等漫流、外泄至非污染区(如道\n路、碎石地坪、草地等),进而下渗污染地下水。",
+      "type": "语义分解",
+      "subject": "在污染区生产单元设置围堰或环沟可防止跑、冒、滴、漏， 防止初期雨水、冲洗",
+      "action": "",
+      "operation": "在污染区生产单元设置围堰或环沟可防止跑、冒、滴、漏， 防止初期雨水、冲洗水、事故废水等漫流、外泄至非污染区(如道 路、碎石地坪、草地等),进而下渗污染地下水。",
+      "condition": "",
+      "constraint": "6.6.4       在污染区生产单元设置围堰或环沟可防止跑、冒、滴、漏，\n防止初期雨水、冲洗水、事故废水等漫流、外泄至非污染区(如道\n路、碎石地坪、草地等),进而下渗污染地下水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在污染区生产单元设置围堰或环沟可防止跑、冒、滴、漏， 防止初期雨水、冲洗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40462,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

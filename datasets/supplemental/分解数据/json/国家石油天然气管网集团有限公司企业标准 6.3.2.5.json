@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.2.5",
+  "entities": [
+    {
+      "name": "缓坡区沙地采用生物沙障+人工补播草种+苇帘铺设的方式进行恢复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2.5        缓坡区沙地采用生物沙障+人工补播草种+苇帘铺设的方式进行恢复。利用黄柳、羊柴和沙蒿\n等灌木和半灌木进行条播形成生物沙障。在沙障间混播人工草种，并将芦苇帘用竹签等固定于沙地上方，\n起到防风作用。",
+      "type": "语义分解",
+      "subject": "缓坡区沙地采用生物沙障+人工补播草种+苇帘铺设的方式进行恢复",
+      "action": "",
+      "operation": "缓坡区沙地采用生物沙障+人工补播草种+苇帘铺设的方式进行恢复。利用黄柳、羊柴和沙蒿 等灌木和半灌木进行条播形成生物沙障。在沙障间混播人工草种，并将芦苇帘用竹签等固定于沙地上方， 起到防风作用。",
+      "condition": "",
+      "constraint": "6.3.2.5        缓坡区沙地采用生物沙障+人工补播草种+苇帘铺设的方式进行恢复。利用黄柳、羊柴和沙蒿\n等灌木和半灌木进行条播形成生物沙障。在沙障间混播人工草种，并将芦苇帘用竹签等固定于沙地上方，\n起到防风作用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "缓坡区沙地采用生物沙障+人工补播草种+苇帘铺设的方式进行恢复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40754,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

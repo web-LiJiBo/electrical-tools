@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.5.1.1",
+  "entities": [
+    {
+      "name": "管道下沟后应立即采用原土进行回填，回填土中含有大粒径石块等容易造成管道损",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1.1 管道下沟后应立即采用原土进行回填，回填土中含有大粒径石块等容易造成管道损坏或加速",
+      "type": "语义分解",
+      "subject": "管道下沟后应立即采用原土进行回填，回填土中含有大粒径石块等容易造成管道损",
+      "action": "",
+      "operation": "管道下沟后应立即采用原土进行回填，回填土中含有大粒径石块等容易造成管道损坏或加速",
+      "condition": "",
+      "constraint": "4.5.1.1 管道下沟后应立即采用原土进行回填，回填土中含有大粒径石块等容易造成管道损坏或加速",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道下沟后应立即采用原土进行回填，回填土中含有大粒径石块等容易造成管道损"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41988,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

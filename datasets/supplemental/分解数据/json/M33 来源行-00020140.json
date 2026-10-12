@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020140",
+  "entities": [
+    {
+      "name": "Sn/Pqx_A(n=3 或 4 ,q=31、4) 工作于同步网或子网的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       Sn/Pqx_A(n=3 或 4 ,q=31、4) 工作于同步网或子网的接入口，并将用户数据适配进同步域进行\n传送。Sn/Pq_A功能也起与净荷信息相关的POH 源和宿的作用。Sn/Pqx_A功能把符合ITU-TG.703PDH\n要求的信号映射进VC-n 容器。",
+      "type": "语义分解",
+      "subject": "Sn/Pqx_A(n=3 或 4 ,q=31、4) 工作于同步网或子网的",
+      "action": "",
+      "operation": "Sn/Pqx_A(n=3 或 4 ,q=31、4) 工作于同步网或子网的接入口，并将用户数据适配进同步域进行 传送。Sn/Pq_A功能也起与净荷信息相关的POH 源和宿的作用。Sn/Pqx_A功能把符合ITU-TG.703PDH 要求的信号映射进VC-n 容器。",
+      "condition": "",
+      "constraint": "       Sn/Pqx_A(n=3 或 4 ,q=31、4) 工作于同步网或子网的接入口，并将用户数据适配进同步域进行\n传送。Sn/Pq_A功能也起与净荷信息相关的POH 源和宿的作用。Sn/Pqx_A功能把符合ITU-TG.703PDH\n要求的信号映射进VC-n 容器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Sn/Pqx_A(n=3 或 4 ,q=31、4) 工作于同步网或子网的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

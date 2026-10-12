@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "危化救援原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 坚持救人第一 ,防止灾害扩大的原则 在保障施救人员安全的前提下 ,果断抢救受困人员的生命 迅速控制危险化学品事故现场 ,防止灾害扩大。",
+      "type": "语义分解",
+      "subject": "危化救援原则",
+      "action": "",
+      "operation": "保障施救安全救人优先防灾扩大",
+      "condition": "在保障施救人员安全的前提下",
+      "constraint": "4.1 坚持救人第一 ,防止灾害扩大的原则 在保障施救人员安全的前提下 ,果断抢救受困人员的生命 迅速控制危险化学品事故现场 ,防止灾害扩大。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化救援原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5968,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

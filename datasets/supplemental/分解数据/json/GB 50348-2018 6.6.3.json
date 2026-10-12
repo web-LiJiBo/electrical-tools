@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.6.3",
+  "entities": [
+    {
+      "name": "特殊防御实体装置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.3 具有特殊防御功能的实体防护装置，如具有锐利边缘或触碰时对人体具有一定伤害的，应在安装区域显著位置设置警示标识。",
+      "type": "语义分解",
+      "subject": "特殊防御实体装置",
+      "action": "",
+      "operation": "伤害性装置安装区显著警示",
+      "condition": "",
+      "constraint": "6.6.3 具有特殊防御功能的实体防护装置，如具有锐利边缘或触碰时对人体具有一定伤害的，应在安装区域显著位置设置警示标识。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊防御实体装置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7002,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "8.1.2.3",
+  "entities": [
+    {
+      "name": "事故情形可能性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.2.3 设定的风险事故情形发生可能性应处于合理的区间,并与经济技术发展水平相适应。一般而言, 发生频率小于1061年的事件是极小概率事件,可作为代表性事故情形中最大可信事故设定的参考",
+      "type": "语义分解",
+      "subject": "事故情形可能性",
+      "action": "",
+      "operation": "设合理概率与技术经济相适应极小概率作最大可信参考",
+      "condition": "",
+      "constraint": "8.1.2.3 设定的风险事故情形发生可能性应处于合理的区间,并与经济技术发展水平相适应。一般而言, 发生频率小于1061年的事件是极小概率事件,可作为代表性事故情形中最大可信事故设定的参考",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故情形可能性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2489,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；1061年指数单位破损不得猜值"
+      ]
+    }
+  }
+}

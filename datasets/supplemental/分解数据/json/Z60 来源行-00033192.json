@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033192",
+  "entities": [
+    {
+      "name": "为贯彻《中华人民共和国环境保护法》和《中华人民共和国大气污染防治法》,防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   为贯彻《中华人民共和国环境保护法》和《中华人民共和国大气污染防治法》,防治大气污染，改\n善环境空气质量，现批准《挥发性有机物无组织排放控制标准》等三项标准为国家大气污染物排放标准，\n并由生态环境部与国家市场监督管理总局联合发布。",
+      "type": "语义分解",
+      "subject": "为贯彻《中华人民共和国环境保护法》和《中华人民共和国大气污染防治法》,防",
+      "action": "",
+      "operation": "为贯彻《中华人民共和国环境保护法》和《中华人民共和国大气污染防治法》,防治大气污染，改 善环境空气质量，现批准《挥发性有机物无组织排放控制标准》等三项标准为国家大气污染物排放标准， 并由生态环境部与国家市场监督管理总局联合发布。",
+      "condition": "",
+      "constraint": "   为贯彻《中华人民共和国环境保护法》和《中华人民共和国大气污染防治法》,防治大气污染，改\n善环境空气质量，现批准《挥发性有机物无组织排放控制标准》等三项标准为国家大气污染物排放标准，\n并由生态环境部与国家市场监督管理总局联合发布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为贯彻《中华人民共和国环境保护法》和《中华人民共和国大气污染防治法》,防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33192,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035473",
+  "entities": [
+    {
+      "name": "——为 tC/10'Nm³ 、kg/kmol 以 及 Nm³/kmol ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 10 ——为 tC/10'Nm³ 、kg/kmol     以 及 Nm³/kmol  之间的量级转变系数；\n  n ——火炬气的各种气体组分，二氧化碳除外。",
+      "type": "语义分解",
+      "subject": "——为 tC/10'Nm³ 、kg/kmol 以 及 Nm³/kmol ",
+      "action": "",
+      "operation": "——为 tC/10'Nm³ 、kg/kmol 以 及 Nm³/kmol 之间的量级转变系数； n ——火炬气的各种气体组分，二氧化碳除外。",
+      "condition": "",
+      "constraint": " 10 ——为 tC/10'Nm³ 、kg/kmol     以 及 Nm³/kmol  之间的量级转变系数；\n  n ——火炬气的各种气体组分，二氧化碳除外。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——为 tC/10'Nm³ 、kg/kmol 以 及 Nm³/kmol "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35473,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013745",
+  "entities": [
+    {
+      "name": "OTUk( k=1,2,3, 4) 的帧结构与OTUk 帧结构紧密相关，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTUk( k=1,2,3,      4) 的帧结构与OTUk 帧结构紧密相关，OTUk帧结构基于OTUk, 另外还附加\n了 FEC 字段。它是以8比特字节为基本单元的块状帧结构，由4行4080列字节数据组成。OTUk 与\nOTUk相比，增加了256列FEC 字节，另外第1行的第1～6列的字节被OTUk 用作FAS 帧定位。\n      OTUk 信号包括RS(255,239)       编码，如果FEC不使用，填充全“0”码。当支持FEC 功能与不支\n持FEC 功能的设备互通时(在FEC 区域全部填充“0”),FEC 功能的设备应具备关掉此功能的能力，即\n对 FEC  区域的字节不作处理。OTU4 应支持FEC,  具体编码方式待研究。",
+      "type": "语义分解",
+      "subject": "OTUk( k=1,2,3, 4) 的帧结构与OTUk 帧结构紧密相关，",
+      "action": "",
+      "operation": "OTUk( k=1,2,3, 4) 的帧结构与OTUk 帧结构紧密相关，OTUk帧结构基于OTUk, 另外还附加 了 FEC 字段。它是以8比特字节为基本单元的块状帧结构，由4行4080列字节数据组成。OTUk 与 OTUk相比，增加了256列FEC 字节，另外第1行的第1～6列的字节被OTUk 用作FAS 帧定位。 OTUk 信号包括RS(255,239) 编码，如果FEC不使用，填充全“0”码。当支持FEC 功能与不支 持FEC 功能的设备互通时(在FEC 区域全部填充“",
+      "condition": "",
+      "constraint": "      OTUk( k=1,2,3,      4) 的帧结构与OTUk 帧结构紧密相关，OTUk帧结构基于OTUk, 另外还附加\n了 FEC 字段。它是以8比特字节为基本单元的块状帧结构，由4行4080列字节数据组成。OTUk 与\nOTUk相比，增加了256列FEC 字节，另外第1行的第1～6列的字节被OTUk 用作FAS 帧定位。\n      OTUk 信号包括RS(255,239)       编码，如果FEC不使用，填充全“0”码。当支持FEC 功能与不支\n持FEC 功能的设备互通时(在FEC 区域全部填充“0”),FEC 功能的设备应具备关掉此功能的能力，即\n对 FEC  区域的字节不作处理。OTU4 应支持FEC,  具体编码方式待研究。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTUk( k=1,2,3, 4) 的帧结构与OTUk 帧结构紧密相关，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13745,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

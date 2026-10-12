@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020262",
+  "entities": [
+    {
+      "name": "——解扰码",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——解扰码：该功能用多项式为x43+1的自同步解扰器对ODUk信号进行解扰码。\n\n——帧和复帧同步：该功能按ITU-T G.798-20108.2.3规定产生帧和复帧同步。",
+      "type": "语义分解",
+      "subject": "——解扰码",
+      "action": "",
+      "operation": "——解扰码：该功能用多项式为x43+1的自同步解扰器对ODUk信号进行解扰码。 ——帧和复帧同步：该功能按ITU-T G.798-20108.2.3规定产生帧和复帧同步。",
+      "condition": "",
+      "constraint": "——解扰码：该功能用多项式为x43+1的自同步解扰器对ODUk信号进行解扰码。\n\n——帧和复帧同步：该功能按ITU-T G.798-20108.2.3规定产生帧和复帧同步。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——解扰码"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20262,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

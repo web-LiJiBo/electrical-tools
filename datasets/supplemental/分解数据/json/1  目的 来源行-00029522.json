@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "来源行-00029522",
+  "entities": [
+    {
+      "name": "j） 负责建立健全本中心的管理实施细则和具体工作程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "j） 负责建立健全本中心的管理实施细则和具体工作程序。\n\nk） 负责完成集团安全环保监督中心交办的其他工作。",
+      "type": "语义分解",
+      "subject": "j） 负责建立健全本中心的管理实施细则和具体工作程序",
+      "action": "",
+      "operation": "j） 负责建立健全本中心的管理实施细则和具体工作程序。 k） 负责完成集团安全环保监督中心交办的其他工作。",
+      "condition": "",
+      "constraint": "j） 负责建立健全本中心的管理实施细则和具体工作程序。\n\nk） 负责完成集团安全环保监督中心交办的其他工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "j） 负责建立健全本中心的管理实施细则和具体工作程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29522,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

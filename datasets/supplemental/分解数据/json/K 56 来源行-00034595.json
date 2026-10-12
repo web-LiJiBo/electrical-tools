@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034595",
+  "entities": [
+    {
+      "name": "通路怯非提取监测器应该按制造厂的推荐来校准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      通路怯非提取监测器应该按制造厂的推荐来校准。  这种监测器可能需要参比室 , 即有这样一个布\n置 :在仪器的样品通路中放置包含气体的小室且遮挡烟气的影响。作为替换可以利用电子校准方法。如\n8. 2 中所述 , 这样的系统需要对照提取系统进行检查 , 至少一年一次。",
+      "type": "语义分解",
+      "subject": "通路怯非提取监测器应该按制造厂的推荐来校准",
+      "action": "",
+      "operation": "通路怯非提取监测器应该按制造厂的推荐来校准。 这种监测器可能需要参比室 , 即有这样一个布 置 :在仪器的样品通路中放置包含气体的小室且遮挡烟气的影响。作为替换可以利用电子校准方法。如 8. 2 中所述 , 这样的系统需要对照提取系统进行检查 , 至少一年一次。",
+      "condition": "",
+      "constraint": "      通路怯非提取监测器应该按制造厂的推荐来校准。  这种监测器可能需要参比室 , 即有这样一个布\n置 :在仪器的样品通路中放置包含气体的小室且遮挡烟气的影响。作为替换可以利用电子校准方法。如\n8. 2 中所述 , 这样的系统需要对照提取系统进行检查 , 至少一年一次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通路怯非提取监测器应该按制造厂的推荐来校准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34595,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

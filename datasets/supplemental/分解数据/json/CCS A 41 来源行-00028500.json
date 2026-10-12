@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028500",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A(分析)\t   ●       问题分析报告\n   ●      CTQ与 CTP 的测量数据\n   ●      分层次的工艺流程图\n   ●      功能/设计要素展开\t   ●      原因分析\n   ●      FTA\n   ●      概念设计\n   ●      生成方案\n   ●      评价与筛选方案\n   ●      可靠性分析\n   ●      价值分析\n   ●      CTQ展开\t   ●       问题根因分析报告\n   ●      概念设计方案\n   ●      方案选择评估表\n   ●      风险分析报告\n   ●      CTQ展开图",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "A(分析)\t   ●       问题分析报告\n   ●      CTQ与 CTP 的测量数据\n   ●      分层次的工艺流程图\n   ●      功能/设计要素展开\t   ●      原因分析\n   ●      FTA\n   ●      概念设计\n   ●      生成方案\n   ●      评价与筛选方案\n   ●      可靠性分析\n   ●      价值分析\n   ●      CTQ展开\t   ●       问题根因分析报告\n   ●      概念设计方案\n   ●      方案选择评估表\n   ●      风险分析报告\n   ●      CTQ展开图",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28500,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "风向标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 在硫化氢环境的工作场所应设置白天和夜晚都能看清风向的风向标,风向标的设置应符合以下要求 a) 风斗(风向袋) 或其他适用的彩带。旗帜。 b) 根据工作场所的大小设置一个或多个风向标。 c) 安装在不会影响风向指示且易于看到的地方。",
+      "type": "语义分解",
+      "subject": "风向标",
+      "action": "",
+      "operation": "按场地布置昼夜可见不受干扰",
+      "condition": "",
+      "constraint": "6.3.3 在硫化氢环境的工作场所应设置白天和夜晚都能看清风向的风向标,风向标的设置应符合以下要求 a) 风斗(风向袋) 或其他适用的彩带。旗帜。 b) 根据工作场所的大小设置一个或多个风向标。 c) 安装在不会影响风向指示且易于看到的地方。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风向标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7459,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

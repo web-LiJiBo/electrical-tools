@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00034918",
+  "entities": [
+    {
+      "name": "c) 更改了总热值测定法和净热值测定法的原理(见第 4 章 , 1981",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  c)    更改了总热值测定法和净热值测定法的原理(见第 4 章 , 1981年版的总热值测定法第一段和\n        净热值测定法的第一段) ,删除了弹热值测定法的原理(见 1981年版的弹热值测定法第一段) ;\n  d)    更改了试剂或材料(见第 5 章 ,1981年版的第 2 章 、第 24章 、第 32章)\n  e)    更改了仪器设备(见第 6 章 ,1981年版的第 1 章 、第 23章 、第 31章)\n f)    增加了取样要求(见 8. 1) ;",
+      "type": "语义分解",
+      "subject": "c) 更改了总热值测定法和净热值测定法的原理(见第 4 章 , 1981",
+      "action": "",
+      "operation": "c) 更改了总热值测定法和净热值测定法的原理(见第 4 章 , 1981年版的总热值测定法第一段和 净热值测定法的第一段) ,删除了弹热值测定法的原理(见 1981年版的弹热值测定法第一段) ; d) 更改了试剂或材料(见第 5 章 ,1981年版的第 2 章 、第 24章 、第 32章) e) 更改了仪器设备(见第 6 章 ,1981年版的第 1 章 、第 23章 、第 31章) f) 增加了取样要求(见 8. 1)",
+      "condition": "",
+      "constraint": "  c)    更改了总热值测定法和净热值测定法的原理(见第 4 章 , 1981年版的总热值测定法第一段和\n        净热值测定法的第一段) ,删除了弹热值测定法的原理(见 1981年版的弹热值测定法第一段) ;\n  d)    更改了试剂或材料(见第 5 章 ,1981年版的第 2 章 、第 24章 、第 32章)\n  e)    更改了仪器设备(见第 6 章 ,1981年版的第 1 章 、第 23章 、第 31章)\n f)    增加了取样要求(见 8. 1) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 更改了总热值测定法和净热值测定法的原理(见第 4 章 , 1981"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34918,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

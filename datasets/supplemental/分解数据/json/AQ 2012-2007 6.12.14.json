@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.12.14",
+  "entities": [
+    {
+      "name": "大型运输搬迁",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.14 大型施工作业运输 ,井队搬迁及多车辆进入滩海陆岸油田施工作业时 ,车队负责人或指派专人到现场组织 ,指挥车辆通行。",
+      "type": "语义分解",
+      "subject": "大型运输搬迁",
+      "action": "",
+      "operation": "安排现场指挥通行",
+      "condition": "",
+      "constraint": "6.12.14 大型施工作业运输 ,井队搬迁及多车辆进入滩海陆岸油田施工作业时 ,车队负责人或指派专人到现场组织 ,指挥车辆通行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大型运输搬迁"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4761,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

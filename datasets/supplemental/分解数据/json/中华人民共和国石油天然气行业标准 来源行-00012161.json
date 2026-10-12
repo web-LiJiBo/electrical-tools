@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012161",
+  "entities": [
+    {
+      "name": "站 内独立安装 的光纤配线架 (ODF) 、 数字配线架 (DDF) 、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4    站 内独立安装 的光纤配线架  (ODF) 、   数字配线架\n(DDF) 、  音频配线架  (VDF)  机架应就近接地 ,   与设备共用机\n柜时 ,   应将接地线引至机柜内接地汇流排后 ,   从机柜内接地汇\n流排统一就近接至接地汇流排 .",
+      "type": "语义分解",
+      "subject": "站 内独立安装 的光纤配线架 (ODF) 、 数字配线架 (DDF) 、",
+      "action": "",
+      "operation": "站 内独立安装 的光纤配线架 (ODF) 、 数字配线架 (DDF) 、 音频配线架 (VDF) 机架应就近接地 , 与设备共用机 柜时 , 应将接地线引至机柜内接地汇流排后 , 从机柜内接地汇 流排统一就近接至接地汇流排 .",
+      "condition": "",
+      "constraint": "      4    站 内独立安装 的光纤配线架  (ODF) 、   数字配线架\n(DDF) 、  音频配线架  (VDF)  机架应就近接地 ,   与设备共用机\n柜时 ,   应将接地线引至机柜内接地汇流排后 ,   从机柜内接地汇\n流排统一就近接至接地汇流排 .",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站 内独立安装 的光纤配线架 (ODF) 、 数字配线架 (DDF) 、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12161,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

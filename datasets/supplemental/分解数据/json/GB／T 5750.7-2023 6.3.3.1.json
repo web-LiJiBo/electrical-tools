@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.3.3.1",
+  "entities": [
+    {
+      "name": "二氯甲烷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3.1 二氯甲烷:如含荧光物质 ,应于每500 mL 溶液中加入数克活性炭,混匀,在水浴上重蒸馏精制 ,收集39 %C~41 %C沸程的馏出液",
+      "type": "语义分解",
+      "subject": "二氯甲烷",
+      "action": "",
+      "operation": "含荧光物时活性炭处理并重蒸馏",
+      "condition": "如含荧光物质",
+      "constraint": "6.3.3.1 二氯甲烷:如含荧光物质 ,应于每500 mL 溶液中加入数克活性炭,混匀,在水浴上重蒸馏精制 ,收集39 %C~41 %C沸程的馏出液",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二氯甲烷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1829,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；沸程%C单位识别异常"
+      ]
+    }
+  }
+}

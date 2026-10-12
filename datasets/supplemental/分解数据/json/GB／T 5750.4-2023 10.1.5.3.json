@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "10.1.5.3",
+  "entities": [
+    {
+      "name": "金属干扰水样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.5.3 若水样中含有金属干扰离子，使滴定终点延迟或颜色变暗，可另取水样，加入0.5 mL盐酸羟胺溶液(10 g/L)及1 mL硫化钠溶液或0.5 mL氰化钾溶液再行滴定。",
+      "type": "语义分解",
+      "subject": "金属干扰水样",
+      "action": "",
+      "operation": "按规定加入还原掩蔽试剂另取样滴定",
+      "condition": "若水样中含有金属干扰离子",
+      "constraint": "10.1.5.3 若水样中含有金属干扰离子，使滴定终点延迟或颜色变暗，可另取水样，加入0.5 mL盐酸羟胺溶液(10 g/L)及1 mL硫化钠溶液或0.5 mL氰化钾溶液再行滴定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "金属干扰水样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1409,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；剧毒试剂条款仅归档非现场操作授权"
+      ]
+    }
+  }
+}

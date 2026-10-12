@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035877",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "相关参数\t参数描述\t单位\t数据的计算方法及获取方式\n选取以下获取方式：\n   a)实测值(如是，请具体填\n报时，采用在表下加备注的方式\n写明具体方法和标准);\n   b)推荐值(如是，请填写具\n体 数 值 ) ;\n   c)相关方结算凭证(如是，\n请具体填报时，采用在表下加备\n注的方式填写如何确保供应商数\n据 质 量 ) ;\n   d)其他方式(如是，请具体\n填报时，采用在表下加备注的方\n式详细描述)。\t测量设备(适用于数据获取方式来源于\n实测值)\t数据记录频次\t数据缺失时的处理方式\t数据获取负责部门",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "相关参数\t参数描述\t单位\t数据的计算方法及获取方式\n选取以下获取方式：\n   a)实测值(如是，请具体填\n报时，采用在表下加备注的方式\n写明具体方法和标准);\n   b)推荐值(如是，请填写具\n体 数 值 ) ;\n   c)相关方结算凭证(如是，\n请具体填报时，采用在表下加备\n注的方式填写如何确保供应商数\n据 质 量 ) ;\n   d)其他方式(如是，请具体\n填报时，采用在表下加备注的方\n式详细描述)。\t测量设备(适用于数据获取方式来源于\n实测值)\t数据记录频次\t数据缺失时的处理方式\t数据获取负责部门",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35877,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

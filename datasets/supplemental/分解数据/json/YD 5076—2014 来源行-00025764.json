@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025764",
+  "entities": [
+    {
+      "name": ")同一城市内， 一个电信业务经营者有多个长途交换系统时， 一般以设置两个",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2)同一城市内， 一个电信业务经营者有多个长途交换系统时，\n一般以设置两个长途交换局址为宜。同一局址内(一个长途电信\n楼内)设置的长途交换系统数量一般不应超过两个。多个长途局\n址设置的位置必须与该城市的网络布局相结合，其间必须相距一\n定距离。",
+      "type": "语义分解",
+      "subject": ")同一城市内， 一个电信业务经营者有多个长途交换系统时， 一般以设置两个",
+      "action": "",
+      "operation": ")同一城市内， 一个电信业务经营者有多个长途交换系统时， 一般以设置两个长途交换局址为宜。同一局址内(一个长途电信 楼内)设置的长途交换系统数量一般不应超过两个。多个长途局 址设置的位置必须与该城市的网络布局相结合，其间必须相距一 定距离。",
+      "condition": "",
+      "constraint": "   2)同一城市内， 一个电信业务经营者有多个长途交换系统时，\n一般以设置两个长途交换局址为宜。同一局址内(一个长途电信\n楼内)设置的长途交换系统数量一般不应超过两个。多个长途局\n址设置的位置必须与该城市的网络布局相结合，其间必须相距一\n定距离。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")同一城市内， 一个电信业务经营者有多个长途交换系统时， 一般以设置两个"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25764,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

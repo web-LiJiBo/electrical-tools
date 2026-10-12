@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.16.4",
+  "entities": [
+    {
+      "name": "方法正确度统计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.16.4 实验室内的正确度通过对有证标准物质1标准样品进行测定的相对误差和实际样品加标回收率来表示。实验室间的正确度应对验证实验数据进行汇总统计分析,采用统一样品的,用实验室间相对误差均值和加标回收率最终值表示; 采用非统一样品的,给出各验证实验室对各类型样品的相对误差和加标回收率范围。",
+      "type": "语义分解",
+      "subject": "方法正确度统计",
+      "action": "",
+      "operation": "用标准相对误差实际加标回收率按统一性汇总范围最终值",
+      "condition": "",
+      "constraint": "8.16.4 实验室内的正确度通过对有证标准物质1标准样品进行测定的相对误差和实际样品加标回收率来表示。实验室间的正确度应对验证实验数据进行汇总统计分析,采用统一样品的,用实验室间相对误差均值和加标回收率最终值表示; 采用非统一样品的,给出各验证实验室对各类型样品的相对误差和加标回收率范围。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法正确度统计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2422,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

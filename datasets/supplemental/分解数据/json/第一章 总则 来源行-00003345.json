@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003345",
+  "entities": [
+    {
+      "name": "第二十三条 根据功能安全评估报告,对不满足要求的SIF回路应及时整改后投",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十三条 根据功能安全评估报告,对不满足要求的SIF回路应及时整改后投用;确实不能及时整改的,应采取措施降低风险,制定整改计划,并在下一个停产检修周期内完成整改。",
+      "type": "语义分解",
+      "subject": "第二十三条 根据功能安全评估报告,对不满足要求的SIF回路应及时整改后投",
+      "action": "",
+      "operation": "第二十三条 根据功能安全评估报告,对不满足要求的SIF回路应及时整改后投用;确实不能及时整改的,应采取措施降低风险,制定整改计划,并在下一个停产检修周期内完成整改。",
+      "condition": "",
+      "constraint": "第二十三条 根据功能安全评估报告,对不满足要求的SIF回路应及时整改后投用;确实不能及时整改的,应采取措施降低风险,制定整改计划,并在下一个停产检修周期内完成整改。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十三条 根据功能安全评估报告,对不满足要求的SIF回路应及时整改后投"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3345,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

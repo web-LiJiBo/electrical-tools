@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014019",
+  "entities": [
+    {
+      "name": "用户信号或光通路数据单元支路单元群( ODTUG) 被映射到OPU,OP",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   用户信号或光通路数据单元支路单元群( ODTUG) 被映射到OPU,OPU   被映射到ODU,ODU  映\n射到OTU,OTU   映射到 OCh-P 或OTSiG。OTUk 也可映射到OTLk.n,O  TLk.n再映射到OTSiG。",
+      "type": "语义分解",
+      "subject": "用户信号或光通路数据单元支路单元群( ODTUG) 被映射到OPU,OP",
+      "action": "",
+      "operation": "用户信号或光通路数据单元支路单元群( ODTUG) 被映射到OPU,OPU 被映射到ODU,ODU 映 射到OTU,OTU 映射到 OCh-P 或OTSiG。OTUk 也可映射到OTLk.n,O TLk.n再映射到OTSiG。",
+      "condition": "",
+      "constraint": "   用户信号或光通路数据单元支路单元群( ODTUG) 被映射到OPU,OPU   被映射到ODU,ODU  映\n射到OTU,OTU   映射到 OCh-P 或OTSiG。OTUk 也可映射到OTLk.n,O  TLk.n再映射到OTSiG。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "用户信号或光通路数据单元支路单元群( ODTUG) 被映射到OPU,OP"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14019,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

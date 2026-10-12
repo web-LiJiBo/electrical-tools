@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.4.4",
+  "entities": [
+    {
+      "name": "地形不规则入侵探测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.4    地形不规则 、  地势差异较大时 ,   站场围墙会出现多边及\n高低起伏的情况 ,   此时采用对射型设备时 ,   前端设备的数量会\n加大 ,   并且对射器的收发端难以对正 ,   安装和调试难度较大 ,\n后期使用也容易出现收发器偏离的情况 ,   因此不宜采用对射型\n探测器。",
+      "type": "语义分解",
+      "subject": "地形不规则入侵探测",
+      "action": "",
+      "operation": "不宜对射型避免对准困难偏离",
+      "condition": "",
+      "constraint": "7.4.4    地形不规则 、  地势差异较大时 ,   站场围墙会出现多边及\n高低起伏的情况 ,   此时采用对射型设备时 ,   前端设备的数量会\n加大 ,   并且对射器的收发端难以对正 ,   安装和调试难度较大 ,\n后期使用也容易出现收发器偏离的情况 ,   因此不宜采用对射型\n探测器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地形不规则入侵探测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12381,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明性内容"
+      ]
+    }
+  }
+}

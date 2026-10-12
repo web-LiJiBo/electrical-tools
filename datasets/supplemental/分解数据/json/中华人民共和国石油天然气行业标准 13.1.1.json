@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "13.1.1",
+  "entities": [
+    {
+      "name": "综合布线插座",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.1.1    综合布线信息插座的设置应与建筑内安防系统 、广播系\n统等设施的需求统筹设计。",
+      "type": "语义分解",
+      "subject": "综合布线插座",
+      "action": "",
+      "operation": "统筹安防广播设施需求设计",
+      "condition": "",
+      "constraint": "13.1.1    综合布线信息插座的设置应与建筑内安防系统 、广播系\n统等设施的需求统筹设计。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "综合布线插座"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12051,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

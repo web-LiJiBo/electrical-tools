@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.2.2",
+  "entities": [
+    {
+      "name": "地质设计资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2.2 应提供邻井的油 ,气,水显示和复杂情况资料 ,并特别注明含硫化氢,二氧化碳地层深度和预计含量 ,已钻井的电测解释成果 地层测试及试油 ,气资料 ,探井应提供相应的预测资料(含硫化氢和二氧化碳预测资料)。",
+      "type": "语义分解",
+      "subject": "地质设计资料",
+      "action": "",
+      "operation": "提供邻井显示复杂情况标注硫化氢二氧化碳深度含量测试探井预测",
+      "condition": "",
+      "constraint": "5.2.2.2 应提供邻井的油 ,气,水显示和复杂情况资料 ,并特别注明含硫化氢,二氧化碳地层深度和预计含量 ,已钻井的电测解释成果 地层测试及试油 ,气资料 ,探井应提供相应的预测资料(含硫化氢和二氧化碳预测资料)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地质设计资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4280,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.3.2",
+  "entities": [
+    {
+      "name": "机架垂直度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.2       用吊垂测量，机架安装垂直度偏差应不大于机架高度\n的1‰。",
+      "type": "语义分解",
+      "subject": "机架垂直度",
+      "action": "",
+      "operation": "吊垂测偏差不大于架高千分之一",
+      "condition": "",
+      "constraint": "3.3.2       用吊垂测量，机架安装垂直度偏差应不大于机架高度\n的1‰。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机架垂直度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26692,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

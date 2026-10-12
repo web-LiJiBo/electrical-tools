@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013648",
+  "entities": [
+    {
+      "name": "这些接口通过物理层承载数字和管理信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   这些接口通过物理层承载数字和管理信息。每个接口可以有一个或多个应用标识，每个应用标识代\n表一个标准应用代码或设备商特定标识。一个带应用代码的接口可以用来互联不同设备商 OTN  设备；\n\n一个带设备商特定标识的则用来互通同一设备商的OTN 设备。",
+      "type": "语义分解",
+      "subject": "这些接口通过物理层承载数字和管理信息",
+      "action": "",
+      "operation": "这些接口通过物理层承载数字和管理信息。每个接口可以有一个或多个应用标识，每个应用标识代 表一个标准应用代码或设备商特定标识。一个带应用代码的接口可以用来互联不同设备商 OTN 设备； 一个带设备商特定标识的则用来互通同一设备商的OTN 设备。",
+      "condition": "",
+      "constraint": "   这些接口通过物理层承载数字和管理信息。每个接口可以有一个或多个应用标识，每个应用标识代\n表一个标准应用代码或设备商特定标识。一个带应用代码的接口可以用来互联不同设备商 OTN  设备；\n\n一个带设备商特定标识的则用来互通同一设备商的OTN 设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "这些接口通过物理层承载数字和管理信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13648,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

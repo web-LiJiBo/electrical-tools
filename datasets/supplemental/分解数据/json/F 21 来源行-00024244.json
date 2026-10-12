@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024244",
+  "entities": [
+    {
+      "name": "b) 当被叫方超时未应答 ,被叫侧发送的失败响应 480 中封装的 RE",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    当被叫方超时未应答 ,被叫侧发送的失败响应 480 中封装的 REL消息原因值为 19;如果被叫\n       用户拒绝正在等待的呼叫 ,被叫侧发送的失败响应 480 中封装的 REL消息原因值为 21。\nc)    当互通软交换与网内的传统电路交换网络相连时 ,互通软交换需要按照上述的要求生成 SIP-I\n       消息 ;如果互通软交换与网内的软交换网络相连 ,则互通软交换转发的 SIP-I消息也需要满足\n       封装的 ISUP消息的要求 。",
+      "type": "语义分解",
+      "subject": "b) 当被叫方超时未应答 ,被叫侧发送的失败响应 480 中封装的 RE",
+      "action": "",
+      "operation": "b) 当被叫方超时未应答 ,被叫侧发送的失败响应 480 中封装的 REL消息原因值为 19;如果被叫 用户拒绝正在等待的呼叫 ,被叫侧发送的失败响应 480 中封装的 REL消息原因值为 21。 c) 当互通软交换与网内的传统电路交换网络相连时 ,互通软交换需要按照上述的要求生成 SIP-I 消息 ;如果互通软交换与网内的软交换网络相连 ,则互通软交换转发的 SIP-I消息也需要满足 封装的 ISUP消息的要求 。",
+      "condition": "",
+      "constraint": "b)    当被叫方超时未应答 ,被叫侧发送的失败响应 480 中封装的 REL消息原因值为 19;如果被叫\n       用户拒绝正在等待的呼叫 ,被叫侧发送的失败响应 480 中封装的 REL消息原因值为 21。\nc)    当互通软交换与网内的传统电路交换网络相连时 ,互通软交换需要按照上述的要求生成 SIP-I\n       消息 ;如果互通软交换与网内的软交换网络相连 ,则互通软交换转发的 SIP-I消息也需要满足\n       封装的 ISUP消息的要求 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 当被叫方超时未应答 ,被叫侧发送的失败响应 480 中封装的 RE"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24244,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

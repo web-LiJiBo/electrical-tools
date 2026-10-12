@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010984",
+  "entities": [
+    {
+      "name": "(1)光通路层( Och) 网络通过光通路路径实现接入点之间的 数字客户",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   (1)光通路层( Och) 网络通过光通路路径实现接入点之间的\n数字客户信号的传送，其特征信息包括与光通路连接相关联并定\n义了带宽及信噪比的光信号和实现通路外开销的数据流，均为逻\n辑信号。",
+      "type": "语义分解",
+      "subject": "(1)光通路层( Och) 网络通过光通路路径实现接入点之间的 数字客户",
+      "action": "",
+      "operation": "(1)光通路层( Och) 网络通过光通路路径实现接入点之间的 数字客户信号的传送，其特征信息包括与光通路连接相关联并定 义了带宽及信噪比的光信号和实现通路外开销的数据流，均为逻 辑信号。",
+      "condition": "",
+      "constraint": "   (1)光通路层( Och) 网络通过光通路路径实现接入点之间的\n数字客户信号的传送，其特征信息包括与光通路连接相关联并定\n义了带宽及信噪比的光信号和实现通路外开销的数据流，均为逻\n辑信号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "(1)光通路层( Och) 网络通过光通路路径实现接入点之间的 数字客户"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

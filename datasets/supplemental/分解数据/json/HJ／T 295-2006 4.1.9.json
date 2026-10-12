@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.1.9",
+  "entities": [
+    {
+      "name": "环境纠纷热线材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.9 环境监察部门负责调查处理环境民事纠纷行政调解过程中的调查报告,双方协议书。调解处理结果。履行情况。结案说明等文件材料,环保热线及人民群众来信来访处理工作所形成的文件材料 由环境监察部门负责收集积累。",
+      "type": "语义分解",
+      "subject": "环境纠纷热线材料",
+      "action": "",
+      "operation": "监察收民事调解调查协议履行结案热线来访材料",
+      "condition": "",
+      "constraint": "4.1.9 环境监察部门负责调查处理环境民事纠纷行政调解过程中的调查报告,双方协议书。调解处理结果。履行情况。结案说明等文件材料,环保热线及人民群众来信来访处理工作所形成的文件材料 由环境监察部门负责收集积累。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境纠纷热线材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3055,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

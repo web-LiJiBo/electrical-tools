@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00032082",
+  "entities": [
+    {
+      "name": "油气管道危险作业种类繁多，管控要求也不尽一致，为保障规范的可用性、易用性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    油气管道危险作业种类繁多，管控要求也不尽一致，为保障规范的可用性、易用性，需分别对各部\n分内容进行规范。其中，作业许可部分的目的在于确定作业许可安全管控的总体要求及作业许可的管控\n流程；其他各部分根据各自的作业风险辨识结果和管控要求进行制定。",
+      "type": "语义分解",
+      "subject": "油气管道危险作业种类繁多，管控要求也不尽一致，为保障规范的可用性、易用性",
+      "action": "",
+      "operation": "油气管道危险作业种类繁多，管控要求也不尽一致，为保障规范的可用性、易用性，需分别对各部 分内容进行规范。其中，作业许可部分的目的在于确定作业许可安全管控的总体要求及作业许可的管控 流程；其他各部分根据各自的作业风险辨识结果和管控要求进行制定。",
+      "condition": "",
+      "constraint": "    油气管道危险作业种类繁多，管控要求也不尽一致，为保障规范的可用性、易用性，需分别对各部\n分内容进行规范。其中，作业许可部分的目的在于确定作业许可安全管控的总体要求及作业许可的管控\n流程；其他各部分根据各自的作业风险辨识结果和管控要求进行制定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气管道危险作业种类繁多，管控要求也不尽一致，为保障规范的可用性、易用性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32082,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

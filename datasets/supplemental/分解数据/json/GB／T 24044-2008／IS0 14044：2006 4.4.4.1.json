@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.4.1",
+  "entities": [
+    {
+      "name": "进一步质量分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4.1 为更好的认识 LCIA 结果的重要性 ,不确定性和敏感性 ,可能需要更多的有关方法和信息, 以便: -判别是否存在重要差异; 确定可忽略的 LCI 结果; 指导 LCIA 的反复性过程 对方法的需求和选择取决于实现 LCA 研究目的和范围所需的雄确性和详尽程度。",
+      "type": "语义分解",
+      "subject": "进一步质量分析",
+      "action": "",
+      "operation": "依精确详尽需求识别重大差异可忽略结果指导反复研究",
+      "condition": "",
+      "constraint": "4.4.4.1 为更好的认识 LCIA 结果的重要性 ,不确定性和敏感性 ,可能需要更多的有关方法和信息, 以便: -判别是否存在重要差异; 确定可忽略的 LCI 结果; 指导 LCIA 的反复性过程 对方法的需求和选择取决于实现 LCA 研究目的和范围所需的雄确性和详尽程度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "进一步质量分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1123,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

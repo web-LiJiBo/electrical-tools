@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.8.3",
+  "entities": [
+    {
+      "name": "防漏源头控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.8.3 企业应从源头采取防止泄漏的措施;包括: 选用先进的工艺路线降低操作压才 ,温度等工艺条件 ,诚少泄漏的可能性 按照标准进行设备 件选型 ,采用合适的设备材质和密封型式 ,减少设备密封 ,管道连接等 易泄漏点; 根据物料特性选用符合要求的优质垫片 ,金属软管等配件,合理选择动设备的密封配件和密 封介质; 制定防腐蚀管理制度,涉及腐蚀性介质的设备设施应采取适当的防腐蚀措施 ,加强检测",
+      "type": "语义分解",
+      "subject": "防漏源头控制",
+      "action": "",
+      "operation": "优工艺降温压合材密封减连接优垫软管密封介质腐蚀制度防护检测",
+      "condition": "",
+      "constraint": "4.10.8.3 企业应从源头采取防止泄漏的措施;包括: 选用先进的工艺路线降低操作压才 ,温度等工艺条件 ,诚少泄漏的可能性 按照标准进行设备 件选型 ,采用合适的设备材质和密封型式 ,减少设备密封 ,管道连接等 易泄漏点; 根据物料特性选用符合要求的优质垫片 ,金属软管等配件,合理选择动设备的密封配件和密 封介质; 制定防腐蚀管理制度,涉及腐蚀性介质的设备设施应采取适当的防腐蚀措施 ,加强检测",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防漏源头控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5203,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

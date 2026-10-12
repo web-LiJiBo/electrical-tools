@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "5.2.5",
+  "entities": [
+    {
+      "name": "输入量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.5 如果输入量之间存在显著相关性时,则不能忽略。 如果改娈相关输入量的方法可行的话 ,应该 采用实验方法评定相关方差 ,或者使用可获得的有关量的相关娈异性停息(协方差的 B类评定)进行评 定。当估计由常有的影响量如环境温度 ,大气压力和湿度引起的输人量间的相关程度时 ,就特别需要经 验和常识(见4.3.1和 4.3.2) 。幸而在很多情况下 ,这些影响量之间的相关性很小 ,足以假设被影响的输 入量是不相关的 = 然而 ,如果不能假设为不相关,则如5.2.4所指出的那样 ,把常有的影响量作为独立 输入量引人 ,被影响的输入量本身之间的相关性就可避免了 =。",
+      "type": "语义分解",
+      "subject": "输入量",
+      "action": "",
+      "operation": "评定显著相关性或重新定义输入量",
+      "condition": "输入量之间存在显著相关性时",
+      "constraint": "不能忽略",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式和引用未提供，不构造协方差数值"
+      ]
+    }
+  }
+}

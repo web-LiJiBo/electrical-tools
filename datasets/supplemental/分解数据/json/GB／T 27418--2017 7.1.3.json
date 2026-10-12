@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "7.1.3",
+  "entities": [
+    {
+      "name": "器具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.3 工业和商业活动中每天都在进行大量的测量 ,但并没有明确地报告不确定度。然而 ,很多测量 所用的器具是需要定期经过周期校准或依法检定的。 如果知道仪器是符合其规范或符合现行标准文件 的要求 ,其示值的不确定度可以由其规范或标准文件推断。",
+      "type": "语义分解",
+      "subject": "器具",
+      "action": "",
+      "operation": "按校准检定规范推断示值不确定度",
+      "condition": "符合现行标准文件 的要求",
+      "constraint": "需要定期经过周期校准或依法检定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "器具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "校雄及标点识别错误，不编造校准周期"
+      ]
+    }
+  }
+}

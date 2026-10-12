@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.12.2",
+  "entities": [
+    {
+      "name": "滩海陆岸作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.2 滩海陆岸油田钻井,井下(试油),录井,测井 ,采油等作业应符合第5章(5.2.3.4和5.5.4.5除外)的相关规定 ,而5.2.3.4和5.5.4.5应参照6.3.4和6.5.2第二项的要求。",
+      "type": "语义分解",
+      "subject": "滩海陆岸作业",
+      "action": "",
+      "operation": "按第5章相关规定除外项参照6.3.4及6.5.2第二项",
+      "condition": "",
+      "constraint": "6.12.2 滩海陆岸油田钻井,井下(试油),录井,测井 ,采油等作业应符合第5章(5.2.3.4和5.5.4.5除外)的相关规定 ,而5.2.3.4和5.5.4.5应参照6.3.4和6.5.2第二项的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "滩海陆岸作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4749,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；需关联引用及例外"
+      ]
+    }
+  }
+}

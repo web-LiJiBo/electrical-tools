@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.1.4",
+  "entities": [
+    {
+      "name": "初验指标不达标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.4      初验测试的主要指标(如可靠性、接通率、计费准确率等)\n和性能达不到要求时，应重新进行系统调测，由责任单位负责及时\n处理发现的问题，直到验收合格。",
+      "type": "语义分解",
+      "subject": "初验指标不达标",
+      "action": "",
+      "operation": "责任单位处理重调测直到合格",
+      "condition": "",
+      "constraint": "4.1.4      初验测试的主要指标(如可靠性、接通率、计费准确率等)\n和性能达不到要求时，应重新进行系统调测，由责任单位负责及时\n处理发现的问题，直到验收合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "初验指标不达标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26797,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

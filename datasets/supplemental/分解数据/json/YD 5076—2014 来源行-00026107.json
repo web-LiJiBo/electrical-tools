@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026107",
+  "entities": [
+    {
+      "name": ". IAD 、SIP 终端等用户端设备间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    2. IAD 、SIP 终端等用户端设备间：丢包率不大于2%,网络抖\n动 不 大 于 3 0ms, 时延不大于150 ms。",
+      "type": "语义分解",
+      "subject": ". IAD 、SIP 终端等用户端设备间",
+      "action": "",
+      "operation": ". IAD 、SIP 终端等用户端设备间：丢包率不大于2%,网络抖 动 不 大 于 3 0ms, 时延不大于150 ms。",
+      "condition": "",
+      "constraint": "    2. IAD 、SIP 终端等用户端设备间：丢包率不大于2%,网络抖\n动 不 大 于 3 0ms, 时延不大于150 ms。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". IAD 、SIP 终端等用户端设备间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26107,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

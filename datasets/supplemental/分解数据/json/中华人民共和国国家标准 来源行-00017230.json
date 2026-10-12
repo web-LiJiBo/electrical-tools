@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017230",
+  "entities": [
+    {
+      "name": "本标准由住房城乡建设部负责管理，由工业和信息化部负责 日常管理，由中国通",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   本标准由住房城乡建设部负责管理，由工业和信息化部负责\n日常管理，由中国通信建设集团有限公司负责具体技术内容的解\n释 ，执行过程中如有意见或建议，请与中国通信建设集团有限公司\n联系，并将补充或修改意见寄送中国通信建设集团有限公司(地\n址：北京市丰台区南方庄甲56号，邮政编码：100079)。",
+      "type": "语义分解",
+      "subject": "本标准由住房城乡建设部负责管理，由工业和信息化部负责 日常管理，由中国通",
+      "action": "",
+      "operation": "本标准由住房城乡建设部负责管理，由工业和信息化部负责 日常管理，由中国通信建设集团有限公司负责具体技术内容的解 释 ，执行过程中如有意见或建议，请与中国通信建设集团有限公司 联系，并将补充或修改意见寄送中国通信建设集团有限公司(地 址：北京市丰台区南方庄甲56号，邮政编码：100079)。",
+      "condition": "",
+      "constraint": "   本标准由住房城乡建设部负责管理，由工业和信息化部负责\n日常管理，由中国通信建设集团有限公司负责具体技术内容的解\n释 ，执行过程中如有意见或建议，请与中国通信建设集团有限公司\n联系，并将补充或修改意见寄送中国通信建设集团有限公司(地\n址：北京市丰台区南方庄甲56号，邮政编码：100079)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本标准由住房城乡建设部负责管理，由工业和信息化部负责 日常管理，由中国通"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17230,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

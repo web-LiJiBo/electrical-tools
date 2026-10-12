@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026060",
+  "entities": [
+    {
+      "name": ". PSTN/ISDN 与 IP 电话网的互通在固定网的电话交换系 统与",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   6. PSTN/ISDN   与 IP 电话网的互通在固定网的电话交换系\n统与IP 电话网的网关设备之间进行，固定电话交换系统与IP 网关\n设备采用数字中继连接，信令要求符合 YD/T 1263《基于IP 的网\n络与传统电信网互通的技术要求》。",
+      "type": "语义分解",
+      "subject": ". PSTN/ISDN 与 IP 电话网的互通在固定网的电话交换系 统与",
+      "action": "",
+      "operation": ". PSTN/ISDN 与 IP 电话网的互通在固定网的电话交换系 统与IP 电话网的网关设备之间进行，固定电话交换系统与IP 网关 设备采用数字中继连接，信令要求符合 YD/T 1263《基于IP 的网 络与传统电信网互通的技术要求》。",
+      "condition": "",
+      "constraint": "   6. PSTN/ISDN   与 IP 电话网的互通在固定网的电话交换系\n统与IP 电话网的网关设备之间进行，固定电话交换系统与IP 网关\n设备采用数字中继连接，信令要求符合 YD/T 1263《基于IP 的网\n络与传统电信网互通的技术要求》。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". PSTN/ISDN 与 IP 电话网的互通在固定网的电话交换系 统与"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26060,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

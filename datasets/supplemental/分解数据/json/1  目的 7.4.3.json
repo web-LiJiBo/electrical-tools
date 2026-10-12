@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "7.4.3",
+  "entities": [
+    {
+      "name": "监督区域分中心每月 20 日前以安全环保监督月报、季 报、半年报和年度监",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     7.4.3  监督区域分中心每月 20  日前以安全环保监督月报、季\n\n报、半年报和年度监督总结的形式向集团公司安全环保监督中心\n\n反馈常规监督计划的监督结果。",
+      "type": "语义分解",
+      "subject": "监督区域分中心每月 20 日前以安全环保监督月报、季 报、半年报和年度监",
+      "action": "",
+      "operation": "监督区域分中心每月 20 日前以安全环保监督月报、季 报、半年报和年度监督总结的形式向集团公司安全环保监督中心 反馈常规监督计划的监督结果。",
+      "condition": "",
+      "constraint": "     7.4.3  监督区域分中心每月 20  日前以安全环保监督月报、季\n\n报、半年报和年度监督总结的形式向集团公司安全环保监督中心\n\n反馈常规监督计划的监督结果。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监督区域分中心每月 20 日前以安全环保监督月报、季 报、半年报和年度监"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29559,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "5.3.16",
+  "entities": [
+    {
+      "name": "宜在管道受干扰段选取电位长时间偏正的管道防腐层破 损点位置，或内检测发现",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.16   宜在管道受干扰段选取电位长时间偏正的管道防腐层破\n损点位置，或内检测发现外部金属损失的位置进行开挖检测。\n5.3.17   失重检查片的开挖调查宜在埋设12个月后进行，最短\n埋设周期不宜少于6个月。",
+      "type": "语义分解",
+      "subject": "宜在管道受干扰段选取电位长时间偏正的管道防腐层破 损点位置，或内检测发现",
+      "action": "",
+      "operation": "宜在管道受干扰段选取电位长时间偏正的管道防腐层破 损点位置，或内检测发现外部金属损失的位置进行开挖检测。 5.3.17 失重检查片的开挖调查宜在埋设12个月后进行，最短 埋设周期不宜少于6个月。",
+      "condition": "",
+      "constraint": "5.3.16   宜在管道受干扰段选取电位长时间偏正的管道防腐层破\n损点位置，或内检测发现外部金属损失的位置进行开挖检测。\n5.3.17   失重检查片的开挖调查宜在埋设12个月后进行，最短\n埋设周期不宜少于6个月。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜在管道受干扰段选取电位长时间偏正的管道防腐层破 损点位置，或内检测发现"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47525,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

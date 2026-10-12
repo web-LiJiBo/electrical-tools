@@ -5,13 +5,13 @@ from __future__ import annotations
 import json
 import os
 from dataclasses import dataclass
-from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 from ..llm_decomposition import SYSTEM_PROMPT, extract_json_object, validate_decomposition
 from .fallback import RawTextFallback
 from .models import DecompositionResult, MissingField
 from .normalizer import DomainTermNormalizer
+from .model_errors import ModelCallError, model_error_code
 
 
 @dataclass(frozen=True, slots=True)
@@ -53,18 +53,22 @@ class DeepSeekDecomposer:
             )
 
     def _request(self, query: str, scenario_hint: str, conversation_context: list[dict[str, str]]) -> str:
-        api_key = os.getenv(self.config.api_key_env, "").strip()
-        if not api_key:
-            raise RuntimeError(f"环境变量{self.config.api_key_env}未配置")
         context = json.dumps(conversation_context[-4:], ensure_ascii=False)
         user_prompt = (
             f"场景提示：{scenario_hint or '无'}\n最近上下文：{context}\n"
             f"用户问题：{query.strip()}\n请严格输出一个JSON对象。"
         )
+        return self.complete(SYSTEM_PROMPT, user_prompt)
+
+    def complete(self, system_prompt: str, user_prompt: str) -> str:
+        """Shared structured completion transport; never log keys or response errors."""
+        api_key = os.getenv(self.config.api_key_env, "").strip()
+        if not api_key:
+            raise ModelCallError('missing_api_key')
         body = json.dumps({
             "model": self.config.model,
             "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
             "temperature": self.config.temperature,
@@ -78,17 +82,22 @@ class DeepSeekDecomposer:
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
             method="POST",
         )
-        with urlopen(request, timeout=self.config.timeout_seconds) as response:
-            payload = json.loads(response.read().decode("utf-8"))
         try:
-            return str(payload["choices"][0]["message"]["content"])
-        except (KeyError, IndexError, TypeError) as exc:
-            raise ValueError("DeepSeek响应缺少choices[0].message.content") from exc
+            with urlopen(request, timeout=self.config.timeout_seconds) as response:
+                payload = json.loads(response.read().decode("utf-8"))
+        except (ValueError, UnicodeError) as exc:
+            raise ModelCallError('invalid_response') from exc
+        except Exception as exc:
+            raise ModelCallError(model_error_code(exc)) from exc
+        try:
+            content = payload["choices"][0]["message"]["content"]
+            if not isinstance(content, str) or not content.strip():
+                raise ValueError('empty content')
+            return content
+        except (KeyError, IndexError, TypeError, ValueError) as exc:
+            raise ModelCallError('invalid_response') from exc
 
-    @staticmethod
-    def _safe_error(exc: Exception) -> str:
-        if isinstance(exc, HTTPError):
-            return f"HTTP {exc.code}"
-        if isinstance(exc, URLError):
-            return f"网络错误: {exc.reason}"
-        return str(exc)
+    def _safe_error(self, exc: Exception) -> str:
+        error = ModelCallError(model_error_code(exc))
+        detail = f"（环境变量名：{self.config.api_key_env}）" if error.code == 'missing_api_key' else ''
+        return f"[{error.code}] {error}{detail}"

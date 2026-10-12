@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009802",
+  "entities": [
+    {
+      "name": "OTN 传输系统应主要包括终端站、再生站、分路站和光放 站等四种类型，具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4  OTN  传输系统应主要包括终端站、再生站、分路站和光放\n站等四种类型，具体的局站设置应根据网络拓扑、网络组织、维护\n体制和维护条件、系统设备性能、光纤性能情况合理选择并设定。\n4.2.5  OTN  系统的波道组织应符合下列规定：",
+      "type": "语义分解",
+      "subject": "OTN 传输系统应主要包括终端站、再生站、分路站和光放 站等四种类型，具",
+      "action": "",
+      "operation": "OTN 传输系统应主要包括终端站、再生站、分路站和光放 站等四种类型，具体的局站设置应根据网络拓扑、网络组织、维护 体制和维护条件、系统设备性能、光纤性能情况合理选择并设定。 4.2.5 OTN 系统的波道组织应符合下列规定",
+      "condition": "",
+      "constraint": "4.2.4  OTN  传输系统应主要包括终端站、再生站、分路站和光放\n站等四种类型，具体的局站设置应根据网络拓扑、网络组织、维护\n体制和维护条件、系统设备性能、光纤性能情况合理选择并设定。\n4.2.5  OTN  系统的波道组织应符合下列规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 传输系统应主要包括终端站、再生站、分路站和光放 站等四种类型，具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9802,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

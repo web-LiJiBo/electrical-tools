@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "5.3.1",
+  "entities": [
+    {
+      "name": "LCI概述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1 概述 清单分析包括数据的收集和计算，以此来量化产品系统中相关输入和输出。进行清单分析是一个反复的过程。当取得了一批数据，并对系统有进一步的认识后，可能会出现新的数据要求，或发现原有的局限性，因而要求对数据收集程序做出修改，以适应研究目的。有时也会要求对研究目的和范围加以修改。",
+      "type": "语义分解",
+      "subject": "LCI概述",
+      "action": "",
+      "operation": "反复收集计算量化输入输出调整范围",
+      "condition": "",
+      "constraint": "5.3.1 概述 清单分析包括数据的收集和计算，以此来量化产品系统中相关输入和输出。进行清单分析是一个反复的过程。当取得了一批数据，并对系统有进一步的认识后，可能会出现新的数据要求，或发现原有的局限性，因而要求对数据收集程序做出修改，以适应研究目的。有时也会要求对研究目的和范围加以修改。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCI概述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1044,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

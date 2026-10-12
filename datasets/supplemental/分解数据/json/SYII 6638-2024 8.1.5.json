@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "8.1.5",
+  "entities": [
+    {
+      "name": "供电系统及变压器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.5 应根据负荷性质。运行工况选择合理的供电方式和娈压器容量。台数。并合理调整注气期和采气期的负荷变化。实现娈压器的经济运行。",
+      "type": "语义分解",
+      "subject": "供电系统及变压器",
+      "action": "",
+      "operation": "按负荷工况配置容量台数并经济运行",
+      "condition": "",
+      "constraint": "8.1.5 应根据负荷性质。运行工况选择合理的供电方式和娈压器容量。台数。并合理调整注气期和采气期的负荷变化。实现娈压器的经济运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "供电系统及变压器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 323,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

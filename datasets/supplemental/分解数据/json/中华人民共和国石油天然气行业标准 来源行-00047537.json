@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047537",
+  "entities": [
+    {
+      "name": "未实施阴极保护的管道，宜采用管地电位相对于自然 电位正向偏移的指标进行评",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2   未实施阴极保护的管道，宜采用管地电位相对于自然\n电位正向偏移的指标进行评价，实施阴极保护后应进行再评价。\n自然电位宜采用试片或在干扰源停运期间直接测试。当任意点\n上的管地电位正向偏移超出表5.4.4的指标时，应及时采取干扰\n防护措施。",
+      "type": "语义分解",
+      "subject": "未实施阴极保护的管道，宜采用管地电位相对于自然 电位正向偏移的指标进行评",
+      "action": "",
+      "operation": "未实施阴极保护的管道，宜采用管地电位相对于自然 电位正向偏移的指标进行评价，实施阴极保护后应进行再评价。 自然电位宜采用试片或在干扰源停运期间直接测试。当任意点 上的管地电位正向偏移超出表5.4.4的指标时，应及时采取干扰 防护措施。",
+      "condition": "",
+      "constraint": "      2   未实施阴极保护的管道，宜采用管地电位相对于自然\n电位正向偏移的指标进行评价，实施阴极保护后应进行再评价。\n自然电位宜采用试片或在干扰源停运期间直接测试。当任意点\n上的管地电位正向偏移超出表5.4.4的指标时，应及时采取干扰\n防护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "未实施阴极保护的管道，宜采用管地电位相对于自然 电位正向偏移的指标进行评"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47537,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

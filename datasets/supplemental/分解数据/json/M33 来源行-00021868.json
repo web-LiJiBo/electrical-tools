@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021868",
+  "entities": [
+    {
+      "name": "——Incr_ind",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——Incr_ind:   正常 NDF  且 ss  比特匹配且多数 I  比特反转且非多数 D  比特反转且前次的\n         NDF_enable、incr_ind或 decr_ind多于3帧。",
+      "type": "语义分解",
+      "subject": "——Incr_ind",
+      "action": "",
+      "operation": "——Incr_ind: 正常 NDF 且 ss 比特匹配且多数 I 比特反转且非多数 D 比特反转且前次的 NDF_enable、incr_ind或 decr_ind多于3帧。",
+      "condition": "",
+      "constraint": "——Incr_ind:   正常 NDF  且 ss  比特匹配且多数 I  比特反转且非多数 D  比特反转且前次的\n         NDF_enable、incr_ind或 decr_ind多于3帧。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——Incr_ind"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21868,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

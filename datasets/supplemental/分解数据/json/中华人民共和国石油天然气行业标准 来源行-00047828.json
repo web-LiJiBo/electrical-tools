@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047828",
+  "entities": [
+    {
+      "name": "为减小试片基座效应、边缘效应和屏蔽效应等对测试结果 的影响，推荐采用的试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    为减小试片基座效应、边缘效应和屏蔽效应等对测试结果\n的影响，推荐采用的试片形状为圆形和矩形，并采用单面裸露\n的封装方式。已有研究统计了国内不同地区数万公里长输管道\n上所发现的防腐层破损点面积，3PE、环氧粉末、石油沥青和煤\n焦油瓷漆的破损点面积分布规律见表1和表2。",
+      "type": "语义分解",
+      "subject": "为减小试片基座效应、边缘效应和屏蔽效应等对测试结果 的影响，推荐采用的试",
+      "action": "",
+      "operation": "为减小试片基座效应、边缘效应和屏蔽效应等对测试结果 的影响，推荐采用的试片形状为圆形和矩形，并采用单面裸露 的封装方式。已有研究统计了国内不同地区数万公里长输管道 上所发现的防腐层破损点面积，3PE、环氧粉末、石油沥青和煤 焦油瓷漆的破损点面积分布规律见表1和表2。",
+      "condition": "",
+      "constraint": "    为减小试片基座效应、边缘效应和屏蔽效应等对测试结果\n的影响，推荐采用的试片形状为圆形和矩形，并采用单面裸露\n的封装方式。已有研究统计了国内不同地区数万公里长输管道\n上所发现的防腐层破损点面积，3PE、环氧粉末、石油沥青和煤\n焦油瓷漆的破损点面积分布规律见表1和表2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为减小试片基座效应、边缘效应和屏蔽效应等对测试结果 的影响，推荐采用的试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47828,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

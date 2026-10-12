@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "3.2",
+  "entities": [
+    {
+      "name": "预案体系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.2   应急预案所针对的突发事件类型应涵盖自然灾害、事故灾难、公共卫生和社会安全四个类别。\n3.3   经风险识别、评估后，认定突发事件类型、工作程序及响应、处置方案等比较简单的单位，可\n结合管理实际适当简化应急预案体系。",
+      "type": "语义分解",
+      "subject": "预案体系",
+      "action": "",
+      "operation": "四类事件风险简单单位可简化",
+      "condition": "",
+      "constraint": "3.2   应急预案所针对的突发事件类型应涵盖自然灾害、事故灾难、公共卫生和社会安全四个类别。\n3.3   经风险识别、评估后，认定突发事件类型、工作程序及响应、处置方案等比较简单的单位，可\n结合管理实际适当简化应急预案体系。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预案体系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29098,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

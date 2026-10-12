@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.10.2",
+  "entities": [
+    {
+      "name": "数据接口SPD",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.10.2  计算机接口、控制终端、网络数据线的 SPD 应满足各类\n接口设备传输速率的要求，SPD 接口的线位、线排、线序应与被保\n护设备接口兼容。",
+      "type": "语义分解",
+      "subject": "数据接口SPD",
+      "action": "",
+      "operation": "满足速率接口线位排列序与受保护设备兼容",
+      "condition": "",
+      "constraint": "3.10.2  计算机接口、控制终端、网络数据线的 SPD 应满足各类\n接口设备传输速率的要求，SPD 接口的线位、线排、线序应与被保\n护设备接口兼容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据接口SPD"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22440,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

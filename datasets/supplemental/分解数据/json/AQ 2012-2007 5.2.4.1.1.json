@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.4.1.1",
+  "entities": [
+    {
+      "name": "井场布置原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4.1.1 井场布置应遵循下列原则: 根据自然环境 ,钻机类型及钻井工艺要求确定钻井设备安放位置; 充分利用地形 ,节约用地 ,方便施工; 满足防喷,防爆 ,防火 ,防毒 防冻等安全要求; 在环境有特殊要求的井场布置时 ,应有防护措施; 有废弃物回收,利用 处理设施或措施。",
+      "type": "语义分解",
+      "subject": "井场布置原则",
+      "action": "",
+      "operation": "按环境钻机工艺确定位置节地满足防喷爆火毒冻环境保护废物处理",
+      "condition": "",
+      "constraint": "5.2.4.1.1 井场布置应遵循下列原则: 根据自然环境 ,钻机类型及钻井工艺要求确定钻井设备安放位置; 充分利用地形 ,节约用地 ,方便施工; 满足防喷,防爆 ,防火 ,防毒 防冻等安全要求; 在环境有特殊要求的井场布置时 ,应有防护措施; 有废弃物回收,利用 处理设施或措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井场布置原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035423",
+  "entities": [
+    {
+      "name": "目按式(3)计算含碳量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "目按式(3)计算含碳量。如果某种燃料的含碳量变动范围较大，则应每月至少进行一次检测，并按月\n\n消费量加权平均作为该种燃料的含碳量。",
+      "type": "语义分解",
+      "subject": "目按式(3)计算含碳量",
+      "action": "",
+      "operation": "目按式(3)计算含碳量。如果某种燃料的含碳量变动范围较大，则应每月至少进行一次检测，并按月 消费量加权平均作为该种燃料的含碳量。",
+      "condition": "",
+      "constraint": "目按式(3)计算含碳量。如果某种燃料的含碳量变动范围较大，则应每月至少进行一次检测，并按月\n\n消费量加权平均作为该种燃料的含碳量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "目按式(3)计算含碳量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35423,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

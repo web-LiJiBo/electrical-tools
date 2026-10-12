@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046650",
+  "entities": [
+    {
+      "name": "宜收集储罐基础信息、历年的日常运行参数、大气环境 参数、土壤腐蚀性、腐蚀",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1   宜收集储罐基础信息、历年的日常运行参数、大气环境\n参数、土壤腐蚀性、腐蚀泄漏事故记录及维修记录、储罐腐蚀\n记录、介质中腐蚀性物质的含量及阴极保护资料等。",
+      "type": "语义分解",
+      "subject": "宜收集储罐基础信息、历年的日常运行参数、大气环境 参数、土壤腐蚀性、腐蚀",
+      "action": "",
+      "operation": "宜收集储罐基础信息、历年的日常运行参数、大气环境 参数、土壤腐蚀性、腐蚀泄漏事故记录及维修记录、储罐腐蚀 记录、介质中腐蚀性物质的含量及阴极保护资料等。",
+      "condition": "",
+      "constraint": "4.2.1   宜收集储罐基础信息、历年的日常运行参数、大气环境\n参数、土壤腐蚀性、腐蚀泄漏事故记录及维修记录、储罐腐蚀\n记录、介质中腐蚀性物质的含量及阴极保护资料等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜收集储罐基础信息、历年的日常运行参数、大气环境 参数、土壤腐蚀性、腐蚀"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46650,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

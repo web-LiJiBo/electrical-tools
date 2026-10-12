@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014824",
+  "entities": [
+    {
+      "name": "b) 保护类型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    保护类型：OTUk SNCP保护、OTUk 共享保护环( OTUk SPRing)、光通道1+1( OCh SNCP)、\n    光通道1:N 保护、光通道M:N 保护、光通道共享保护 (OCh SPRing)、OMS 线性保护、OMS\n\n    环网保护；",
+      "type": "语义分解",
+      "subject": "b) 保护类型",
+      "action": "",
+      "operation": "b) 保护类型：OTUk SNCP保护、OTUk 共享保护环( OTUk SPRing)、光通道1+1( OCh SNCP)、 光通道1:N 保护、光通道M:N 保护、光通道共享保护 (OCh SPRing)、OMS 线性保护、OMS 环网保护",
+      "condition": "",
+      "constraint": "b)    保护类型：OTUk SNCP保护、OTUk 共享保护环( OTUk SPRing)、光通道1+1( OCh SNCP)、\n    光通道1:N 保护、光通道M:N 保护、光通道共享保护 (OCh SPRing)、OMS 线性保护、OMS\n\n    环网保护；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 保护类型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14824,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.1.1.1",
+  "entities": [
+    {
+      "name": "大气风险模型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1.1 预测模型筛选 a)  预测计算时, 应区分重质气体与轻质气体排放选择合适的大气风险预测模型 其中重质气体和轻质气体的判断依据可采用附录G中62推荐的理查德森数进行判定。 b)  采用附录G中的推荐模型进行气体扩散后果预测,模型选择应结合模型的适用范围。参数要求等说明模型选择的依据 C) 选用推荐模型以外的其他技术成熟的大气风险预测模型时,需说明模型选择理由及适用性。",
+      "type": "语义分解",
+      "subject": "大气风险模型",
+      "action": "",
+      "operation": "区分重轻气体依适用范围参数选推荐或说明其他成熟模型理由",
+      "condition": "",
+      "constraint": "9.1.1.1 预测模型筛选 a)  预测计算时, 应区分重质气体与轻质气体排放选择合适的大气风险预测模型 其中重质气体和轻质气体的判断依据可采用附录G中62推荐的理查德森数进行判定。 b)  采用附录G中的推荐模型进行气体扩散后果预测,模型选择应结合模型的适用范围。参数要求等说明模型选择的依据 C) 选用推荐模型以外的其他技术成熟的大气风险预测模型时,需说明模型选择理由及适用性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气风险模型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2501,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录G未提供引用62疑似异常"
+      ]
+    }
+  }
+}

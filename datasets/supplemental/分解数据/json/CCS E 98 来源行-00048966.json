@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048966",
+  "entities": [
+    {
+      "name": "阴极保护系统的设计、安装和维护应确保交流电压水平不 会引起交流腐蚀",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   阴极保护系统的设计、安装和维护应确保交流电压水平不\n会引起交流腐蚀。鉴于实际工况的复杂多变性，单一的评判参\n数阈值难以对交流腐蚀风险进行准确的评判。可以通过如下所\n述降低管道交流电压和电流密度来实现将交流腐蚀风险降至较\n低的水平：",
+      "type": "语义分解",
+      "subject": "阴极保护系统的设计、安装和维护应确保交流电压水平不 会引起交流腐蚀",
+      "action": "",
+      "operation": "阴极保护系统的设计、安装和维护应确保交流电压水平不 会引起交流腐蚀。鉴于实际工况的复杂多变性，单一的评判参 数阈值难以对交流腐蚀风险进行准确的评判。可以通过如下所 述降低管道交流电压和电流密度来实现将交流腐蚀风险降至较 低的水平",
+      "condition": "",
+      "constraint": "   阴极保护系统的设计、安装和维护应确保交流电压水平不\n会引起交流腐蚀。鉴于实际工况的复杂多变性，单一的评判参\n数阈值难以对交流腐蚀风险进行准确的评判。可以通过如下所\n述降低管道交流电压和电流密度来实现将交流腐蚀风险降至较\n低的水平：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阴极保护系统的设计、安装和维护应确保交流电压水平不 会引起交流腐蚀"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48966,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022072",
+  "entities": [
+    {
+      "name": "Code for design of lightning protect",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Code for design of lightning protection and earthing\n\nengineering  for  telecommunication  bureaus  (stations)",
+      "type": "语义分解",
+      "subject": "Code for design of lightning protect",
+      "action": "",
+      "operation": "Code for design of lightning protection and earthing engineering for telecommunication bureaus (stations)",
+      "condition": "",
+      "constraint": "Code for design of lightning protection and earthing\n\nengineering  for  telecommunication  bureaus  (stations)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Code for design of lightning protect"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22072,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

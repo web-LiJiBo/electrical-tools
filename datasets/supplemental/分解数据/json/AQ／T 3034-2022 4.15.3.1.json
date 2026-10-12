@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.15.3.1",
+  "entities": [
+    {
+      "name": "变更管理程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.15.3.1 变更管理程序包括变更申请 ,娈更风险评估及制定管控措施 ,变更审批 ,变更实施和相关方 培训(告知) ,变更验收 .资料归档 ,娈更关闭。",
+      "type": "语义分解",
+      "subject": "变更管理程序",
+      "action": "",
+      "operation": "覆盖申请评估审批实施培训验收归档关闭",
+      "condition": "",
+      "constraint": "4.15.3.1 变更管理程序包括变更申请 ,娈更风险评估及制定管控措施 ,变更审批 ,变更实施和相关方 培训(告知) ,变更验收 .资料归档 ,娈更关闭。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "变更管理程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5262,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

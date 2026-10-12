@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.1.2.2",
+  "entities": [
+    {
+      "name": "营地布置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.2 营地布置,应符合下列要求: 营房车,帐篷摆放整齐,间距不小于3 m ,营区道路畅通; 营地应合理设置垃圾收集箱和污水处理站(坑); 发配电站设在距离居住区50 m以外; 设置专门的临时停车场 ,并设置安全标志; 临时加油点设在距离居住地100 m 以外; 营区设置标志旗(灯) ,设有\"紧急集合点\" ,设置应急报警装置。",
+      "type": "语义分解",
+      "subject": "营地布置",
+      "action": "",
+      "operation": "营房帐篷间距不少于3米发配电距居住区50米外加油点100米外设卫生停车报警集合标志",
+      "condition": "",
+      "constraint": "5.1.2.2 营地布置,应符合下列要求: 营房车,帐篷摆放整齐,间距不小于3 m ,营区道路畅通; 营地应合理设置垃圾收集箱和污水处理站(坑); 发配电站设在距离居住区50 m以外; 设置专门的临时停车场 ,并设置安全标志; 临时加油点设在距离居住地100 m 以外; 营区设置标志旗(灯) ,设有\"紧急集合点\" ,设置应急报警装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "营地布置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4255,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

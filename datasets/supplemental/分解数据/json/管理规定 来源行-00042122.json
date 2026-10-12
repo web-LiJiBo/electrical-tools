@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042122",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2 ．一般 B 级突发环境事件，是指因环境污染直接导致3 人\n\n以下中毒或重伤的 ，或因环境污染疏散、转移人员 100 人以上\n\n1000 人以下的，或因环境污染造成直接经济损失 50 万元以上200\n\n万元以下的，或海上、河流、湖泊、饮用水源地等环境敏感区内\n\n溢油量 0.5 吨以下；其他区域溢油量 5 吨以上 10 吨以下的，或\n\n对环境造成一定影响，尚未达到一般 A 级突发环境事件级别的。\n\n   3 ．一般 C 级突发环境事件，是指因环境污染疏散、转移人",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   2 ．一般 B 级突发环境事件，是指因环境污染直接导致3 人\n\n以下中毒或重伤的 ，或因环境污染疏散、转移人员 100 人以上\n\n1000 人以下的，或因环境污染造成直接经济损失 50 万元以上200\n\n万元以下的，或海上、河流、湖泊、饮用水源地等环境敏感区内\n\n溢油量 0.5 吨以下；其他区域溢油量 5 吨以上 10 吨以下的，或\n\n对环境造成一定影响，尚未达到一般 A 级突发环境事件级别的。\n\n   3 ．一般 C 级突发环境事件，是指因环境污染疏散、转移人",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42122,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

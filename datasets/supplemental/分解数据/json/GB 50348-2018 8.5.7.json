@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.5.7",
+  "entities": [
+    {
+      "name": "监理档案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.7 系统试运行完成后，项目监理机构应对试运行记录、试运行报告及初验报告存档管理。工程竣工后，项目管理机构应编制工程项目管理总结报告，整理工程管理全部过程文件并移交项目管理机构。",
+      "type": "语义分解",
+      "subject": "监理档案",
+      "action": "",
+      "operation": "试运记录报告初验存档竣工编总结整理移交过程文件",
+      "condition": "",
+      "constraint": "8.5.7 系统试运行完成后，项目监理机构应对试运行记录、试运行报告及初验报告存档管理。工程竣工后，项目管理机构应编制工程项目管理总结报告，整理工程管理全部过程文件并移交项目管理机构。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监理档案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7122,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文管理机构移交对象表述需核查"
+      ]
+    }
+  }
+}

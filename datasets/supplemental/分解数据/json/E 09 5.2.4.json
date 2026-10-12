@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E 09",
+  "version": "",
+  "chapter_path": "5.2.4",
+  "entities": [
+    {
+      "name": "实操项目4",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4  项目4",
+      "type": "语义分解",
+      "subject": "实操项目4",
+      "action": "",
+      "operation": "仅课程标题",
+      "condition": "",
+      "constraint": "5.2.4  项目4",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实操项目4"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

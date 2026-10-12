@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "制药公辅勘查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 公辅工程勘查 调查供电方式; 供水方式、供水量; 供汽方式, 包括锅炉型号、蒸发量、锅炉数量及运行负荷, 烟囱数量及高度、废气处理方式、处理量及排放方式。 燃料的种类、质量、产地、用量。",
+      "type": "语义分解",
+      "subject": "制药公辅勘查",
+      "action": "",
+      "operation": "查供电供水供汽锅炉负荷烟囱废气处理燃料",
+      "condition": "",
+      "constraint": "5.2.2 公辅工程勘查 调查供电方式; 供水方式、供水量; 供汽方式, 包括锅炉型号、蒸发量、锅炉数量及运行负荷, 烟囱数量及高度、废气处理方式、处理量及排放方式。 燃料的种类、质量、产地、用量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药公辅勘查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2720,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

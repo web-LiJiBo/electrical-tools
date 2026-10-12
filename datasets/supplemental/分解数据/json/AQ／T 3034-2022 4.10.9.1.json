@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.9.1",
+  "entities": [
+    {
+      "name": "设备数据库",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.9.1 企业应建立设备设施数据库 ,与设备全生命周期管理相关的文件 .档案 ,信息 ,数据应纳入数 据库统一管理。数据库还应涉及设备的基础数据 ,运行参数 .检验测试数据 .维修数据 ,失效数据等_",
+      "type": "语义分解",
+      "subject": "设备数据库",
+      "action": "",
+      "operation": "全周期文件档案信息统一管理含基础运行检验维修失效数据",
+      "condition": "",
+      "constraint": "4.10.9.1 企业应建立设备设施数据库 ,与设备全生命周期管理相关的文件 .档案 ,信息 ,数据应纳入数 据库统一管理。数据库还应涉及设备的基础数据 ,运行参数 .检验测试数据 .维修数据 ,失效数据等_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备数据库"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5209,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

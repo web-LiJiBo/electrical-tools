@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048354",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "序号\t测试桩编号\t基线里程\t坐标\t阴极保\n护电流\n密度\t阴极保护电位\n(V  vs.CSE)\t管道电\n位交流\n电压\n(V)\t土壤\n电阻\n率\n(Ω)\t测试时间\t备注",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "序号\t测试桩编号\t基线里程\t坐标\t阴极保\n护电流\n密度\t阴极保护电位\n(V  vs.CSE)\t管道电\n位交流\n电压\n(V)\t土壤\n电阻\n率\n(Ω)\t测试时间\t备注",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48354,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

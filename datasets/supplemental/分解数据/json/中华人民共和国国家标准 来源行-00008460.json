@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008460",
+  "entities": [
+    {
+      "name": "输入抖动容限测试，若传输分析仪不支持 FEC 功能，采取 一对同时都有F",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.8 输入抖动容限测试，若传输分析仪不支持 FEC 功能，采取\n一对同时都有FEC 功能的收端和发端 OTU,  串联到仪表中间测\n试。验收时只对发送端 OTU 测试，对接收端OTU  考虑到其输入\n端口在系统内，只要不对系统造成影响即可。不同速率设备应至",
+      "type": "语义分解",
+      "subject": "输入抖动容限测试，若传输分析仪不支持 FEC 功能，采取 一对同时都有F",
+      "action": "",
+      "operation": "输入抖动容限测试，若传输分析仪不支持 FEC 功能，采取 一对同时都有FEC 功能的收端和发端 OTU, 串联到仪表中间测 试。验收时只对发送端 OTU 测试，对接收端OTU 考虑到其输入 端口在系统内，只要不对系统造成影响即可。不同速率设备应至",
+      "condition": "",
+      "constraint": "4.6.8 输入抖动容限测试，若传输分析仪不支持 FEC 功能，采取\n一对同时都有FEC 功能的收端和发端 OTU,  串联到仪表中间测\n试。验收时只对发送端 OTU 测试，对接收端OTU  考虑到其输入\n端口在系统内，只要不对系统造成影响即可。不同速率设备应至",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入抖动容限测试，若传输分析仪不支持 FEC 功能，采取 一对同时都有F"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8460,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

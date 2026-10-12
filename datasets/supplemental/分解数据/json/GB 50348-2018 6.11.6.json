@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.11.6",
+  "entities": [
+    {
+      "name": "重要设备电涌保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.6 安全防范系统的重要设备应安装电涌保护器。电涌保护器接地端和防雷接地装置应作防雷等电位连接。防雷等电位连接带应采用铜导体，其截面积不应小于16mm²。",
+      "type": "语义分解",
+      "subject": "重要设备电涌保护",
+      "action": "",
+      "operation": "等电位连接铜导体至少16平方毫米",
+      "condition": "",
+      "constraint": "6.11.6 安全防范系统的重要设备应安装电涌保护器。电涌保护器接地端和防雷接地装置应作防雷等电位连接。防雷等电位连接带应采用铜导体，其截面积不应小于16mm²。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重要设备电涌保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7039,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

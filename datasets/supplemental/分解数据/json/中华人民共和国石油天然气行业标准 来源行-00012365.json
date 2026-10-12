@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012365",
+  "entities": [
+    {
+      "name": "调度交换网独立组网时 , 可根据终期用户数量确定编码 位数 , 与行政电",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.4    调度交换网独立组网时 ,   可根据终期用户数量确定编码\n位数 ,   与行政电话系统合并组网时 ,   应与行政电话系统统一编\n号位数。",
+      "type": "语义分解",
+      "subject": "调度交换网独立组网时 , 可根据终期用户数量确定编码 位数 , 与行政电",
+      "action": "",
+      "operation": "调度交换网独立组网时 , 可根据终期用户数量确定编码 位数 , 与行政电话系统合并组网时 , 应与行政电话系统统一编 号位数。",
+      "condition": "",
+      "constraint": "5.5.4    调度交换网独立组网时 ,   可根据终期用户数量确定编码\n位数 ,   与行政电话系统合并组网时 ,   应与行政电话系统统一编\n号位数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "调度交换网独立组网时 , 可根据终期用户数量确定编码 位数 , 与行政电"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12365,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

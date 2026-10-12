@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023079",
+  "entities": [
+    {
+      "name": "电流极与接地网边缘之间的距离 d13, 应取接地网最大对 角 线 长 度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     1   电流极与接地网边缘之间的距离 d13,   应取接地网最大对\n\n角 线 长 度 D  的4倍～5倍，电压极到接地网的距离 d₁₂   宜为电流极\n\n到接地网距离的50%～60%。测量时，沿接地网和电流极的连线\n应移动三次，每次移动距离宜为d₁₃    的 5 % 。",
+      "type": "语义分解",
+      "subject": "电流极与接地网边缘之间的距离 d13, 应取接地网最大对 角 线 长 度",
+      "action": "",
+      "operation": "电流极与接地网边缘之间的距离 d13, 应取接地网最大对 角 线 长 度 D 的4倍～5倍，电压极到接地网的距离 d₁₂ 宜为电流极 到接地网距离的50%～60%。测量时，沿接地网和电流极的连线 应移动三次，每次移动距离宜为d₁₃ 的 5 % 。",
+      "condition": "",
+      "constraint": "     1   电流极与接地网边缘之间的距离 d13,   应取接地网最大对\n\n角 线 长 度 D  的4倍～5倍，电压极到接地网的距离 d₁₂   宜为电流极\n\n到接地网距离的50%～60%。测量时，沿接地网和电流极的连线\n应移动三次，每次移动距离宜为d₁₃    的 5 % 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电流极与接地网边缘之间的距离 d13, 应取接地网最大对 角 线 长 度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23079,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011941",
+  "entities": [
+    {
+      "name": "宜具有目标检测 、 绊线监测 、入侵监测 、 目标分类图像 智能分析功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       6    宜具有目标检测 、  绊线监测 、入侵监测 、   目标分类图像\n智能分析功能 。各类智能分析功能的功能和性能要求应满足现\n行国家标准  《安防监控视频实时智能分析设备技术要求》  GB T\n30147 的相关规定。",
+      "type": "语义分解",
+      "subject": "宜具有目标检测 、 绊线监测 、入侵监测 、 目标分类图像 智能分析功能",
+      "action": "",
+      "operation": "宜具有目标检测 、 绊线监测 、入侵监测 、 目标分类图像 智能分析功能 。各类智能分析功能的功能和性能要求应满足现 行国家标准 《安防监控视频实时智能分析设备技术要求》 GB T 30147 的相关规定。",
+      "condition": "",
+      "constraint": "       6    宜具有目标检测 、  绊线监测 、入侵监测 、   目标分类图像\n智能分析功能 。各类智能分析功能的功能和性能要求应满足现\n行国家标准  《安防监控视频实时智能分析设备技术要求》  GB T\n30147 的相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜具有目标检测 、 绊线监测 、入侵监测 、 目标分类图像 智能分析功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11941,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "销售企业目标信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2 重点目标的管理单位应根据公安机关 .有关部门的要求 ,依法提供重点目标的相关信息和重要动态。",
+      "type": "语义分解",
+      "subject": "销售企业目标信息",
+      "action": "",
+      "operation": "依法提供信息及动态",
+      "condition": "",
+      "constraint": "6.2 重点目标的管理单位应根据公安机关 .有关部门的要求 ,依法提供重点目标的相关信息和重要动态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "销售企业目标信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5697,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

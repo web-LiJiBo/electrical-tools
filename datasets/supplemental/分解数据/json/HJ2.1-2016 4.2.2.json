@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "生态影响因素",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 生态影响因素分析 结合建设项目特点和区域环境特征,分析建设项目建设和运行过程 (包括施工方式。施工时序。运 行方式。调度调节方式等)对生态环境的作用因素与影响源,影响方式。影响范围和影响程度。重点为 影响程度大。范围广。历时长或涉及环境敏感区的作用因素和影响源,关注间接性影响。区域性影响, 长期性影响以及累积性影响等特有生态影响因素的分析。",
+      "type": "语义分解",
+      "subject": "生态影响因素",
+      "action": "",
+      "operation": "依施工运行环境分析作用源方式范围重点长期广泛敏感累积影响",
+      "condition": "",
+      "constraint": "4.2.2 生态影响因素分析 结合建设项目特点和区域环境特征,分析建设项目建设和运行过程 (包括施工方式。施工时序。运 行方式。调度调节方式等)对生态环境的作用因素与影响源,影响方式。影响范围和影响程度。重点为 影响程度大。范围广。历时长或涉及环境敏感区的作用因素和影响源,关注间接性影响。区域性影响, 长期性影响以及累积性影响等特有生态影响因素的分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态影响因素"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2552,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

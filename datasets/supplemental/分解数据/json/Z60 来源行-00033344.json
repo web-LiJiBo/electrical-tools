@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033344",
+  "entities": [
+    {
+      "name": "b) 粉状、粒状 VOCs 物料应采用气力输送方式或采用密闭固体投料器等",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      b)  粉状、粒状 VOCs 物料应采用气力输送方式或采用密闭固体投料器等给料方式密闭投加。无法\n密闭投加的，应在密闭空间内操作，或进行局部气体收集，废气应排至除尘设施、 VOCs 废气收集处理\n系统。",
+      "type": "语义分解",
+      "subject": "b) 粉状、粒状 VOCs 物料应采用气力输送方式或采用密闭固体投料器等",
+      "action": "",
+      "operation": "b) 粉状、粒状 VOCs 物料应采用气力输送方式或采用密闭固体投料器等给料方式密闭投加。无法 密闭投加的，应在密闭空间内操作，或进行局部气体收集，废气应排至除尘设施、 VOCs 废气收集处理 系统。",
+      "condition": "",
+      "constraint": "      b)  粉状、粒状 VOCs 物料应采用气力输送方式或采用密闭固体投料器等给料方式密闭投加。无法\n密闭投加的，应在密闭空间内操作，或进行局部气体收集，废气应排至除尘设施、 VOCs 废气收集处理\n系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 粉状、粒状 VOCs 物料应采用气力输送方式或采用密闭固体投料器等"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33344,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

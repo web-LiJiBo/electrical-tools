@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产应急维抢修管理规定",
+  "standard_id": "无",
+  "version": "",
+  "chapter_path": "来源行-00003570",
+  "entities": [
+    {
+      "name": "第三十七条 一日生活制是指维抢修队伍为保障执勤战备工作需要,而对在岗人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第三十七条 一日生活制是指维抢修队伍为保障执勤战备工作需要,而对在岗人员每天操课和课外活动的作息时间,内容和要求等所作的规定。",
+      "type": "语义分解",
+      "subject": "第三十七条 一日生活制是指维抢修队伍为保障执勤战备工作需要,而对在岗人员",
+      "action": "",
+      "operation": "第三十七条 一日生活制是指维抢修队伍为保障执勤战备工作需要,而对在岗人员每天操课和课外活动的作息时间,内容和要求等所作的规定。",
+      "condition": "",
+      "constraint": "第三十七条 一日生活制是指维抢修队伍为保障执勤战备工作需要,而对在岗人员每天操课和课外活动的作息时间,内容和要求等所作的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三十七条 一日生活制是指维抢修队伍为保障执勤战备工作需要,而对在岗人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3570,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

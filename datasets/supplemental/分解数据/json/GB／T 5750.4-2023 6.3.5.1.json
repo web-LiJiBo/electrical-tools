@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.3.5.1",
+  "entities": [
+    {
+      "name": "嗅觉灵敏度评测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.1 嗅觉评测 以2-甲基异莰醇标准使用溶液[ρ(2-MIB)=0.04 μg/L]对分析人员进行嗅觉灵敏度测试，按照6.3.5.2和6.3.5.3进行样品准备及分析，测试结果为土霉味异臭强度等级为4～6时方可进行样品分析。",
+      "type": "语义分解",
+      "subject": "嗅觉灵敏度评测",
+      "action": "",
+      "operation": "标准液测得土霉味强度四至六级方可分析样品",
+      "condition": "",
+      "constraint": "6.3.5.1 嗅觉评测 以2-甲基异莰醇标准使用溶液[ρ(2-MIB)=0.04 μg/L]对分析人员进行嗅觉灵敏度测试，按照6.3.5.2和6.3.5.3进行样品准备及分析，测试结果为土霉味异臭强度等级为4～6时方可进行样品分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "嗅觉灵敏度评测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1322,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

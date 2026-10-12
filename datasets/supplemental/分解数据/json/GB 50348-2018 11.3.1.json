@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.3.1",
+  "entities": [
+    {
+      "name": "维护范围优先级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.3.1 系统维护应包括日常维护、故障处理、特殊时期保障、维护评价等。日常维护中遇故障报修时，应优先按故障处理程序对故障进行处理。特殊时期保障应根据需要加强维护人员、备件的配置。",
+      "type": "语义分解",
+      "subject": "维护范围优先级",
+      "action": "",
+      "operation": "日维故障特保评价遇故障优先处理特殊期增员备件",
+      "condition": "",
+      "constraint": "11.3.1 系统维护应包括日常维护、故障处理、特殊时期保障、维护评价等。日常维护中遇故障报修时，应优先按故障处理程序对故障进行处理。特殊时期保障应根据需要加强维护人员、备件的配置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "维护范围优先级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7211,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

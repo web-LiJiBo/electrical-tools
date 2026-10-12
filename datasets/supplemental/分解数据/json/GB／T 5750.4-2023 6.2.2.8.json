@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.2.2.8",
+  "entities": [
+    {
+      "name": "土臭素使用液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2.8 土臭素标准使用溶液[ρ(GSM)=25.0 ng/L]:取1.00 mL土臭素标准储备溶液于容量瓶中，用无臭水定容至100 mL，从中吸取1.00 mL，用无臭水定容至200 mL，再从中吸取1.00 mL，用无臭水定容至200 mL。此标准使用溶液现用现配。",
+      "type": "语义分解",
+      "subject": "土臭素使用液",
+      "action": "",
+      "operation": "逐级按规定体积稀释制备二十五纳克每升现用现配",
+      "condition": "",
+      "constraint": "6.2.2.8 土臭素标准使用溶液[ρ(GSM)=25.0 ng/L]:取1.00 mL土臭素标准储备溶液于容量瓶中，用无臭水定容至100 mL，从中吸取1.00 mL，用无臭水定容至200 mL，再从中吸取1.00 mL，用无臭水定容至200 mL。此标准使用溶液现用现配。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土臭素使用液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1284,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

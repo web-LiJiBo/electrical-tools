@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023364",
+  "entities": [
+    {
+      "name": "图 3 最大接触系数 Kjm和网孔个数N 的关系曲线 (接地网面积A=4",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "          图 3  最大接触系数 Kjm和网孔个数N  的关系曲线\n      (接地网面积A=40m×40m,    接地体直径 d=0.02m,  埋深h=0.6m)\n\n   由此可见，最大接触系数随网孔个数增加而下降的梯度和接\n地电阻随网孔个数增加而下降的梯度是相似的，这说明了用增加\n网孔个数而减小接触系数和减小接地电阻一样，不能作为主要方\n法。一般地网网孔可采用3m×3m   或 者 5m×5m 。  当然，最好能\n利用冲击电流进行现场实际测量和校核。",
+      "type": "语义分解",
+      "subject": "图 3 最大接触系数 Kjm和网孔个数N 的关系曲线 (接地网面积A=4",
+      "action": "",
+      "operation": "图 3 最大接触系数 Kjm和网孔个数N 的关系曲线 (接地网面积A=40m×40m, 接地体直径 d=0.02m, 埋深h=0.6m) 由此可见，最大接触系数随网孔个数增加而下降的梯度和接 地电阻随网孔个数增加而下降的梯度是相似的，这说明了用增加 网孔个数而减小接触系数和减小接地电阻一样，不能作为主要方 法。一般地网网孔可采用3m×3m 或 者 5m×5m 。 当然，最好能 利用冲击电流进行现场实际测量和校核。",
+      "condition": "",
+      "constraint": "          图 3  最大接触系数 Kjm和网孔个数N  的关系曲线\n      (接地网面积A=40m×40m,    接地体直径 d=0.02m,  埋深h=0.6m)\n\n   由此可见，最大接触系数随网孔个数增加而下降的梯度和接\n地电阻随网孔个数增加而下降的梯度是相似的，这说明了用增加\n网孔个数而减小接触系数和减小接地电阻一样，不能作为主要方\n法。一般地网网孔可采用3m×3m   或 者 5m×5m 。  当然，最好能\n利用冲击电流进行现场实际测量和校核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "图 3 最大接触系数 Kjm和网孔个数N 的关系曲线 (接地网面积A=4"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23364,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "4.8.1",
+  "entities": [
+    {
+      "name": "应急预案评审形式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.1 评审形式 应急预案编制完成后，生产经营单位应按法律法规有关规定组织评审或论证。参加应急预案评审的人员可包括有关安全生产及应急管理方面的、有现场处置经验的专家。应急预案论证可通过推演的方式开展。",
+      "type": "语义分解",
+      "subject": "应急预案评审形式",
+      "action": "",
+      "operation": "编制完成依法组织评审或论证可邀有经验专家论证可推演",
+      "condition": "",
+      "constraint": "4.8.1 评审形式 应急预案编制完成后，生产经营单位应按法律法规有关规定组织评审或论证。参加应急预案评审的人员可包括有关安全生产及应急管理方面的、有现场处置经验的专家。应急预案论证可通过推演的方式开展。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急预案评审形式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4144,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

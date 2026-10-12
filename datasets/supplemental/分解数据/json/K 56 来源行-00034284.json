@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034284",
+  "entities": [
+    {
+      "name": "二氧化碳是燃料中碳氢化合物完全燃烧的产物",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      二氧化碳是燃料中碳氢化合物完全燃烧的产物 。而一氧化碳则是不完全燃烧的产物 , 这可能是由于\n燃料 /空气不完全混合(雾化 、蒸发及混合不良 )和燃烧结束过早的冷区而引起的。  空气供给不足和燃料\n在燃烧区域滞留时间太短也是原因之一 。",
+      "type": "语义分解",
+      "subject": "二氧化碳是燃料中碳氢化合物完全燃烧的产物",
+      "action": "",
+      "operation": "二氧化碳是燃料中碳氢化合物完全燃烧的产物 。而一氧化碳则是不完全燃烧的产物 , 这可能是由于 燃料 /空气不完全混合(雾化 、蒸发及混合不良 )和燃烧结束过早的冷区而引起的。 空气供给不足和燃料 在燃烧区域滞留时间太短也是原因之一 。",
+      "condition": "",
+      "constraint": "      二氧化碳是燃料中碳氢化合物完全燃烧的产物 。而一氧化碳则是不完全燃烧的产物 , 这可能是由于\n燃料 /空气不完全混合(雾化 、蒸发及混合不良 )和燃烧结束过早的冷区而引起的。  空气供给不足和燃料\n在燃烧区域滞留时间太短也是原因之一 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二氧化碳是燃料中碳氢化合物完全燃烧的产物"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34284,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022633",
+  "entities": [
+    {
+      "name": "mm×4mm 镀锌扁钢 环形接地体 电缆金属护套 低压配电埋地穿管引入 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "                                                   40mm×4mm 镀锌扁钢\n\n\n                   环形接地体\n\n             电缆金属护套\n          低压配电埋地穿管引入\n   变压器\n\n40mm×4mm 镀锌扁钢\n             干线自来水管",
+      "type": "语义分解",
+      "subject": "mm×4mm 镀锌扁钢 环形接地体 电缆金属护套 低压配电埋地穿管引入 ",
+      "action": "",
+      "operation": "mm×4mm 镀锌扁钢 环形接地体 电缆金属护套 低压配电埋地穿管引入 变压器 40mm×4mm 镀锌扁钢 干线自来水管",
+      "condition": "",
+      "constraint": "                                                   40mm×4mm 镀锌扁钢\n\n\n                   环形接地体\n\n             电缆金属护套\n          低压配电埋地穿管引入\n   变压器\n\n40mm×4mm 镀锌扁钢\n             干线自来水管",
+      "constraint_role": "informational",
+      "related_entities": [
+        "mm×4mm 镀锌扁钢 环形接地体 电缆金属护套 低压配电埋地穿管引入 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22633,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "4.1.2",
+  "entities": [
+    {
+      "name": "生命周期观点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2 生命周期的观点 LCA 考虑产品的整个生命周期，即从原材料的获取、能源和材料的生产、产品制造和使用、到产品生命末期的处理以及最终处置。通过这种系统的观点，就可以识别并可能避免整个生命周期各阶段或各环节的潜在环境负荷的转移。",
+      "type": "语义分解",
+      "subject": "生命周期观点",
+      "action": "",
+      "operation": "考虑全周期避免负荷转移",
+      "condition": "",
+      "constraint": "4.1.2 生命周期的观点 LCA 考虑产品的整个生命周期，即从原材料的获取、能源和材料的生产、产品制造和使用、到产品生命末期的处理以及最终处置。通过这种系统的观点，就可以识别并可能避免整个生命周期各阶段或各环节的潜在环境负荷的转移。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生命周期观点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1021,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

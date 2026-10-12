@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "46",
+  "entities": [
+    {
+      "name": "停用、未投用系统、流程、设备解锁要求如下",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "46 停用、未投用系统、流程、设备解锁要求如下:(一)生产部门根据运行需要,以书面通知形式要求站(库、作业区)解除锁定,站(库、作业区)按要求执行。(二)因生产运行或作业情况需恢复使用,站(库、作业区)提前以书面形式向生产部门上报投用方案,经审核同意后解除锁定。",
+      "type": "语义分解",
+      "subject": "停用、未投用系统、流程、设备解锁要求如下",
+      "action": "",
+      "operation": "停用、未投用系统、流程、设备解锁要求如下:(一)生产部门根据运行需要,以书面通知形式要求站(库、作业区)解除锁定,站(库、作业区)按要求执行。(二)因生产运行或作业情况需恢复使用,站(库、作业区)提前以书面形式向生产部门上报投用方案,经审核同意后解除锁定。",
+      "condition": "",
+      "constraint": "46 停用、未投用系统、流程、设备解锁要求如下:(一)生产部门根据运行需要,以书面通知形式要求站(库、作业区)解除锁定,站(库、作业区)按要求执行。(二)因生产运行或作业情况需恢复使用,站(库、作业区)提前以书面形式向生产部门上报投用方案,经审核同意后解除锁定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "停用、未投用系统、流程、设备解锁要求如下"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6663,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

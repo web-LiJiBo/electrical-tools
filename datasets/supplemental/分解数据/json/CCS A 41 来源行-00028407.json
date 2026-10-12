@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028407",
+  "entities": [
+    {
+      "name": "团队成员应分工明确又融洽合作 ,相互沟通和学习 ,坦诚地提出或接受其所在",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      团队成员应分工明确又融洽合作 ,相互沟通和学习 ,坦诚地提出或接受其所在职能部门或业务单元\n的问题 ,共同完成项 目 ,达成目标 。\n\n4.4.3   技术路线和工具方法\n\n4.4.3. 1   技术路线",
+      "type": "语义分解",
+      "subject": "团队成员应分工明确又融洽合作 ,相互沟通和学习 ,坦诚地提出或接受其所在",
+      "action": "",
+      "operation": "团队成员应分工明确又融洽合作 ,相互沟通和学习 ,坦诚地提出或接受其所在职能部门或业务单元 的问题 ,共同完成项 目 ,达成目标 。 4.4.3 技术路线和工具方法 4.4.3. 1 技术路线",
+      "condition": "",
+      "constraint": "      团队成员应分工明确又融洽合作 ,相互沟通和学习 ,坦诚地提出或接受其所在职能部门或业务单元\n的问题 ,共同完成项 目 ,达成目标 。\n\n4.4.3   技术路线和工具方法\n\n4.4.3. 1   技术路线",
+      "constraint_role": "informational",
+      "related_entities": [
+        "团队成员应分工明确又融洽合作 ,相互沟通和学习 ,坦诚地提出或接受其所在"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28407,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

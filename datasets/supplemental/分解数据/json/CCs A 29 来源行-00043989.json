@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043989",
+  "entities": [
+    {
+      "name": "差值不大于再现性限（R），超过再现性限（R）的情况不超过 5%,再现性限",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "差值不大于再现性限（R），超过再现性限（R）的情况不超过 5%,再现性限（R）按表 A. 18 数据采用线性\n内插法求得。",
+      "type": "语义分解",
+      "subject": "差值不大于再现性限（R），超过再现性限（R）的情况不超过 5%,再现性限",
+      "action": "",
+      "operation": "差值不大于再现性限（R），超过再现性限（R）的情况不超过 5%,再现性限（R）按表 A. 18 数据采用线性 内插法求得。",
+      "condition": "",
+      "constraint": "差值不大于再现性限（R），超过再现性限（R）的情况不超过 5%,再现性限（R）按表 A. 18 数据采用线性\n内插法求得。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "差值不大于再现性限（R），超过再现性限（R）的情况不超过 5%,再现性限"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43989,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

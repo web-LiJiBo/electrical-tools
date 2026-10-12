@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "4.2.4.1",
+  "entities": [
+    {
+      "name": "说明书标签培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4.1 化学品安全技术说明书 ,安全标签: a) 化学品安全技术说明书 ,GB/T 16483 的相关规定; b) 化学品安全标签,GB 15258 的相关规定; c) 经营过程中对安全技术说明书和安全标签的使用与管理。",
+      "type": "语义分解",
+      "subject": "说明书标签培训",
+      "action": "",
+      "operation": "讲授GB/T16483及GB15258使用管理",
+      "condition": "",
+      "constraint": "4.2.4.1 化学品安全技术说明书 ,安全标签: a) 化学品安全技术说明书 ,GB/T 16483 的相关规定; b) 化学品安全标签,GB 15258 的相关规定; c) 经营过程中对安全技术说明书和安全标签的使用与管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "说明书标签培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4902,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；课程内容"
+      ]
+    }
+  }
+}

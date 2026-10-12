@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036324",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "监测地下储气库\t  储气库完整性管理系统的制定基于国际标准，例如\nNORSOKD-2016 ISO 165307,EN 19188,APIRP 11719。储气库完\n整性管理的主要目标是安全，同时还可以防止甲烷排放。管理系\n统标明了权责、标准、政策以及操作和程序，以保证操作安全并\n将环境风险最小化",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "监测地下储气库\t  储气库完整性管理系统的制定基于国际标准，例如\nNORSOKD-2016 ISO 165307,EN 19188,APIRP 11719。储气库完\n整性管理的主要目标是安全，同时还可以防止甲烷排放。管理系\n统标明了权责、标准、政策以及操作和程序，以保证操作安全并\n将环境风险最小化",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36324,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

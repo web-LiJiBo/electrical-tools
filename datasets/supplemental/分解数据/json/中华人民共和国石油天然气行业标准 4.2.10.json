@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.2.10",
+  "entities": [
+    {
+      "name": "网管硬件配置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.10   各级网络管理系统的硬件配置应与网管系统软件的可扩\n容能力相适配 ,  宜按照远期需求设置 ,   留有充足余量。\n4.2. 11    同步系统应符合下列规定 :",
+      "type": "语义分解",
+      "subject": "网管硬件配置",
+      "action": "",
+      "operation": "匹配软件扩容能力宜按远期留余量",
+      "condition": "",
+      "constraint": "4.2.10   各级网络管理系统的硬件配置应与网管系统软件的可扩\n容能力相适配 ,  宜按照远期需求设置 ,   留有充足余量。\n4.2. 11    同步系统应符合下列规定 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "网管硬件配置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11728,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含4.2.11同步引导句无清单"
+      ]
+    }
+  }
+}

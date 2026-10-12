@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第3部分: 动火作业",
+  "standard_id": "Q/GGW 04003.3-2022",
+  "version": "2022",
+  "chapter_path": "5.6.2",
+  "entities": [
+    {
+      "name": "动火方案许可审批",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.2 动火方案的编制、审查与审批、动火作业许可证的申请与审批的内容如表1所示。",
+      "type": "语义分解",
+      "subject": "动火方案许可审批",
+      "action": "",
+      "operation": "按表1分工内容执行",
+      "condition": "",
+      "constraint": "5.6.2 动火方案的编制、审查与审批、动火作业许可证的申请与审批的内容如表1所示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火方案许可审批"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6117,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺表1"
+      ]
+    }
+  }
+}

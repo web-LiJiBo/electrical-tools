@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034898",
+  "entities": [
+    {
+      "name": "c) 全国电力平均二氧化碳排放因子(不包括市场化交易的非化石能源电量)应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    全国电力平均二氧化碳排放因子(不包括市场化交易的非化石能源电量)应采用生态环境部和\n        国家统计局发布的数据 ,如有更新 ,采用其最新发布的数值 。",
+      "type": "语义分解",
+      "subject": "c) 全国电力平均二氧化碳排放因子(不包括市场化交易的非化石能源电量)应",
+      "action": "",
+      "operation": "c) 全国电力平均二氧化碳排放因子(不包括市场化交易的非化石能源电量)应采用生态环境部和 国家统计局发布的数据 ,如有更新 ,采用其最新发布的数值 。",
+      "condition": "",
+      "constraint": "c)    全国电力平均二氧化碳排放因子(不包括市场化交易的非化石能源电量)应采用生态环境部和\n        国家统计局发布的数据 ,如有更新 ,采用其最新发布的数值 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 全国电力平均二氧化碳排放因子(不包括市场化交易的非化石能源电量)应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34898,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

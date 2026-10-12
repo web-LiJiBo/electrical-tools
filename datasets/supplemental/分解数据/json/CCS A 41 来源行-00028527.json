@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028527",
+  "entities": [
+    {
+      "name": "表 C. 1 用于项目评审和项目发布的参考",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      表 C. 1 用于项目评审和项目发布的参考 。  如果仅进行项目评审 ,则仅使用表 C. 1 中的以下六个评\n价维度 :项目选择 、项目的逻辑方法 、项目收益 、项目的标准化和推广应用 、项 目 的创新性 、申报资料 ,满\n分为 100分 。  如果需要对项目进行发布 ,则在上述六个评价维度的基础上 ,增加 “发表效果 ”这一评价维\n度 ,满分为 110分 。",
+      "type": "语义分解",
+      "subject": "表 C. 1 用于项目评审和项目发布的参考",
+      "action": "",
+      "operation": "表 C. 1 用于项目评审和项目发布的参考 。 如果仅进行项目评审 ,则仅使用表 C. 1 中的以下六个评 价维度 :项目选择 、项目的逻辑方法 、项目收益 、项目的标准化和推广应用 、项 目 的创新性 、申报资料 ,满 分为 100分 。 如果需要对项目进行发布 ,则在上述六个评价维度的基础上 ,增加 “发表效果 ”这一评价维 度 ,满分为 110分 。",
+      "condition": "",
+      "constraint": "      表 C. 1 用于项目评审和项目发布的参考 。  如果仅进行项目评审 ,则仅使用表 C. 1 中的以下六个评\n价维度 :项目选择 、项目的逻辑方法 、项目收益 、项目的标准化和推广应用 、项 目 的创新性 、申报资料 ,满\n分为 100分 。  如果需要对项目进行发布 ,则在上述六个评价维度的基础上 ,增加 “发表效果 ”这一评价维\n度 ,满分为 110分 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "表 C. 1 用于项目评审和项目发布的参考"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28527,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "采气井口加热炉",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 为保证开井初期井口湛度。采气井口设加热炉时。宜多口井共用一台加热炉。采用顺序开井方式。",
+      "type": "语义分解",
+      "subject": "采气井口加热炉",
+      "action": "",
+      "operation": "多井共用并采用顺序开井",
+      "condition": "采气井口设加热炉时",
+      "constraint": "6.2.2 为保证开井初期井口湛度。采气井口设加热炉时。宜多口井共用一台加热炉。采用顺序开井方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采气井口加热炉"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 284,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；井口温度文字识别异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050076",
+  "entities": [
+    {
+      "name": "A.2.5 接通临时阴极保护电源，测量并记录穿越段两端通电 (Von) ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A.2.5   接通临时阴极保护电源，测量并记录穿越段两端通电\n(Von) 和断电 ( Vof)  电位。调整电流输出，将两端断电电位\n(Voff) 控制在-850mV~-1100mV,     待两端断电电位稳定后记",
+      "type": "语义分解",
+      "subject": "A.2.5 接通临时阴极保护电源，测量并记录穿越段两端通电 (Von) ",
+      "action": "",
+      "operation": "A.2.5 接通临时阴极保护电源，测量并记录穿越段两端通电 (Von) 和断电 ( Vof) 电位。调整电流输出，将两端断电电位 (Voff) 控制在-850mV~-1100mV, 待两端断电电位稳定后记",
+      "condition": "",
+      "constraint": "A.2.5   接通临时阴极保护电源，测量并记录穿越段两端通电\n(Von) 和断电 ( Vof)  电位。调整电流输出，将两端断电电位\n(Voff) 控制在-850mV~-1100mV,     待两端断电电位稳定后记",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A.2.5 接通临时阴极保护电源，测量并记录穿越段两端通电 (Von) "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50076,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

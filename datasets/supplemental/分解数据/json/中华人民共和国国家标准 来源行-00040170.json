@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040170",
+  "entities": [
+    {
+      "name": "装置区、罐区未受污染的雨水应由切换阀门切换到清净雨 水系统，切换阀应设置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.5      装置区、罐区未受污染的雨水应由切换阀门切换到清净雨\n水系统，切换阀应设置在安全地带，应采用地面操作方式，宜远程\n控制。",
+      "type": "语义分解",
+      "subject": "装置区、罐区未受污染的雨水应由切换阀门切换到清净雨 水系统，切换阀应设置",
+      "action": "",
+      "operation": "装置区、罐区未受污染的雨水应由切换阀门切换到清净雨 水系统，切换阀应设置在安全地带，应采用地面操作方式，宜远程 控制。",
+      "condition": "",
+      "constraint": "6.6.5      装置区、罐区未受污染的雨水应由切换阀门切换到清净雨\n水系统，切换阀应设置在安全地带，应采用地面操作方式，宜远程\n控制。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "装置区、罐区未受污染的雨水应由切换阀门切换到清净雨 水系统，切换阀应设置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40170,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

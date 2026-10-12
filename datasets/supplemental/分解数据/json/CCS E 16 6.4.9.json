@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "6.4.9",
+  "entities": [
+    {
+      "name": "定检记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.9   定期检测应有现场记录，填写结构状态记录表、特殊构件信息表和照片记录表，并应符合下列\n规定：",
+      "type": "语义分解",
+      "subject": "定检记录",
+      "action": "",
+      "operation": "结构状态特殊构件照片记录",
+      "condition": "",
+      "constraint": "6.4.9   定期检测应有现场记录，填写结构状态记录表、特殊构件信息表和照片记录表，并应符合下列\n规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "定检记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29902,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附加规定缺失"
+      ]
+    }
+  }
+}

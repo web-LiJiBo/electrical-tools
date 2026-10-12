@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022811",
+  "entities": [
+    {
+      "name": "环形接地装置应由水平接地体和垂直接地体组成，水平接 地体周边应为封闭式，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       6    环形接地装置应由水平接地体和垂直接地体组成，水平接\n地体周边应为封闭式，水平接地体与地网宜在同一水平面上，环形\n接地体与地网之间应每间隔3m～5m 相互焊接连通一次。\n       7    环形接地体的周边可根据地形、地理状况确定形状。当垂\n直接地体埋设深度困难时，可根据地理环境减少其埋设数量。",
+      "type": "语义分解",
+      "subject": "环形接地装置应由水平接地体和垂直接地体组成，水平接 地体周边应为封闭式，",
+      "action": "",
+      "operation": "环形接地装置应由水平接地体和垂直接地体组成，水平接 地体周边应为封闭式，水平接地体与地网宜在同一水平面上，环形 接地体与地网之间应每间隔3m～5m 相互焊接连通一次。 7 环形接地体的周边可根据地形、地理状况确定形状。当垂 直接地体埋设深度困难时，可根据地理环境减少其埋设数量。",
+      "condition": "",
+      "constraint": "       6    环形接地装置应由水平接地体和垂直接地体组成，水平接\n地体周边应为封闭式，水平接地体与地网宜在同一水平面上，环形\n接地体与地网之间应每间隔3m～5m 相互焊接连通一次。\n       7    环形接地体的周边可根据地形、地理状况确定形状。当垂\n直接地体埋设深度困难时，可根据地理环境减少其埋设数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环形接地装置应由水平接地体和垂直接地体组成，水平接 地体周边应为封闭式，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22811,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "6.6.1",
+  "entities": [
+    {
+      "name": "气体探测量程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.1 探测器测量范围应符合下列规定 : a) 点型可燃气体探测l的测量范围应为 OLEL 100%LEL b 有毒气体探测器的测量范围宜在二级报瞥设定值的2~ 4倍之间,但不应超过 30%IDLH c) 线型可燃气体探测器的测量范围宜为 OLEL 皿 SLEL 皿 ; d) 二氧化碳探测器的测量范围宜为 0VOL S SOVOL e) 氧气探测器的测量范围宜为 OVOL 25%VOL。",
+      "type": "语义分解",
+      "subject": "气体探测量程",
+      "action": "",
+      "operation": "按点型毒气线型二氧化碳氧气类别设量程",
+      "condition": "",
+      "constraint": "6.6.1 探测器测量范围应符合下列规定 : a) 点型可燃气体探测l的测量范围应为 OLEL 100%LEL b 有毒气体探测器的测量范围宜在二级报瞥设定值的2~ 4倍之间,但不应超过 30%IDLH c) 线型可燃气体探测器的测量范围宜为 OLEL 皿 SLEL 皿 ; d) 二氧化碳探测器的测量范围宜为 0VOL S SOVOL e) 氧气探测器的测量范围宜为 OVOL 25%VOL。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体探测量程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5833,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；多个数字单位区间OCR缺损不得用于自动阈值"
+      ]
+    }
+  }
+}

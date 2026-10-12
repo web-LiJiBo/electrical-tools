@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035552",
+  "entities": [
+    {
+      "name": "En,—— 蒸汽所对应的温度、压力下每千克蒸汽的热焓，单位为千焦每千克 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "En,——    蒸汽所对应的温度、压力下每千克蒸汽的热焓，单位为千焦每千克 ( kJ/kg),        饱和蒸\n汽和过热蒸汽的热焓可分别参考表 B.3   和 表 B.4,   表中未列明的温度、压力状态下的蒸汽热焓应\n按照邻近温度、压力下的蒸汽热焓采用内插法计算；",
+      "type": "语义分解",
+      "subject": "En,—— 蒸汽所对应的温度、压力下每千克蒸汽的热焓，单位为千焦每千克 ",
+      "action": "",
+      "operation": "En,—— 蒸汽所对应的温度、压力下每千克蒸汽的热焓，单位为千焦每千克 ( kJ/kg), 饱和蒸 汽和过热蒸汽的热焓可分别参考表 B.3 和 表 B.4, 表中未列明的温度、压力状态下的蒸汽热焓应 按照邻近温度、压力下的蒸汽热焓采用内插法计算",
+      "condition": "",
+      "constraint": "En,——    蒸汽所对应的温度、压力下每千克蒸汽的热焓，单位为千焦每千克 ( kJ/kg),        饱和蒸\n汽和过热蒸汽的热焓可分别参考表 B.3   和 表 B.4,   表中未列明的温度、压力状态下的蒸汽热焓应\n按照邻近温度、压力下的蒸汽热焓采用内插法计算；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "En,—— 蒸汽所对应的温度、压力下每千克蒸汽的热焓，单位为千焦每千克 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35552,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

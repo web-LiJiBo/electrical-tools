@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016002",
+  "entities": [
+    {
+      "name": "c) 对于OTN 被测设备与OTN 分析仪对接接口为 OTUk(k=3,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    c)  对于OTN 被测设备与OTN 分析仪对接接口为 OTUk(k=3,4)   的情形，测试方法见9.2节。",
+      "type": "语义分解",
+      "subject": "c) 对于OTN 被测设备与OTN 分析仪对接接口为 OTUk(k=3,",
+      "action": "",
+      "operation": "c) 对于OTN 被测设备与OTN 分析仪对接接口为 OTUk(k=3,4) 的情形，测试方法见9.2节。",
+      "condition": "",
+      "constraint": "    c)  对于OTN 被测设备与OTN 分析仪对接接口为 OTUk(k=3,4)   的情形，测试方法见9.2节。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 对于OTN 被测设备与OTN 分析仪对接接口为 OTUk(k=3,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16002,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

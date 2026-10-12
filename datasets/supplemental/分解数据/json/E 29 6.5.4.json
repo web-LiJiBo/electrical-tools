@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "6.5.4",
+  "entities": [
+    {
+      "name": "位于较短上升斜坡段(如穿公路等) ,可能发生内腐蚀的管段较短",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.4   位于较短上升斜坡段(如穿公路等) ,可能发生内腐蚀的管段较短 。   当管道经过较长上坡段(如\n穿山丘或山脉等) ,该段管道的积液位置难以判断 ,整段均可能存在积液 。\n6.5.5   宜将集液包或其他聚积液体的附件部位识别为内腐蚀位置 。",
+      "type": "语义分解",
+      "subject": "位于较短上升斜坡段(如穿公路等) ,可能发生内腐蚀的管段较短",
+      "action": "",
+      "operation": "位于较短上升斜坡段(如穿公路等) ,可能发生内腐蚀的管段较短 。 当管道经过较长上坡段(如 穿山丘或山脉等) ,该段管道的积液位置难以判断 ,整段均可能存在积液 。 6.5.5 宜将集液包或其他聚积液体的附件部位识别为内腐蚀位置 。",
+      "condition": "",
+      "constraint": "6.5.4   位于较短上升斜坡段(如穿公路等) ,可能发生内腐蚀的管段较短 。   当管道经过较长上坡段(如\n穿山丘或山脉等) ,该段管道的积液位置难以判断 ,整段均可能存在积液 。\n6.5.5   宜将集液包或其他聚积液体的附件部位识别为内腐蚀位置 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "位于较短上升斜坡段(如穿公路等) ,可能发生内腐蚀的管段较短"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42801,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

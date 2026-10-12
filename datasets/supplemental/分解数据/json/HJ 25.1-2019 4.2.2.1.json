@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "4.2.2.1",
+  "entities": [
+    {
+      "name": "第二阶段启动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.1 第二阶段土壤污染状况调查是以采样与分析为主的污染证实阶段。若第一阶段土壤污染状况调查表明地块内或周围区域存在可能的污染源,如化工厂。农药厂 冶炼厂,加油站。化学品储罐。固体废物处理等可能产生有毒有害物质的设施或活动;以及由于资料缺失等原因造成无法排除地块内外存在污染源时,进行第二阶段土壤污染状况调查,确定污染物种类。浓度(程度)和空间分布。",
+      "type": "语义分解",
+      "subject": "第二阶段启动",
+      "action": "",
+      "operation": "潜污染源或资料不足无法排除时采分析定污染种类程度空间",
+      "condition": "",
+      "constraint": "4.2.2.1 第二阶段土壤污染状况调查是以采样与分析为主的污染证实阶段。若第一阶段土壤污染状况调查表明地块内或周围区域存在可能的污染源,如化工厂。农药厂 冶炼厂,加油站。化学品储罐。固体废物处理等可能产生有毒有害物质的设施或活动;以及由于资料缺失等原因造成无法排除地块内外存在污染源时,进行第二阶段土壤污染状况调查,确定污染物种类。浓度(程度)和空间分布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二阶段启动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2601,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

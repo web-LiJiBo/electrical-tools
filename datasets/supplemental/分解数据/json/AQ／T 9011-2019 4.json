@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案评估指南",
+  "standard_id": "AQ/T 9011-2019",
+  "version": "2019",
+  "chapter_path": "4",
+  "entities": [
+    {
+      "name": "基本要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4 基本要求",
+      "type": "语义分解",
+      "subject": "基本要求",
+      "action": "",
+      "operation": "基本要求",
+      "condition": "",
+      "constraint": "4 基本要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基本要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5397,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

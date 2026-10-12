@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "5.18",
+  "entities": [
+    {
+      "name": "锅水相对碱度测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.18 锅水相对碱度的测定按附录卫分别测定酚酞碱度 (JDp ) 和全碱度(JD) ,再按附录 B 或附录 C测 定溶解固形物 c 锅水相对碱度按式(1)计算: 式中: JDxo 锅水相对碱度; JDp 锅水酚酞碱度 ,单位为毫摩尔每升 (mmol/L ) = JD 锅水全碱度,单位为毫摩尔每升 (mmol/L) ; RG 锅水溶解固形物 ,单位为毫克每升 (m8/) ; 40 氢氧化钠 (NaOH)的摩尔质量,40 g/mol。",
+      "type": "语义分解",
+      "subject": "锅水相对碱度测定",
+      "action": "",
+      "operation": "测酚酞全碱度及溶解固形物后按公式计算",
+      "condition": "",
+      "constraint": "5.18 锅水相对碱度的测定按附录卫分别测定酚酞碱度 (JDp ) 和全碱度(JD) ,再按附录 B 或附录 C测 定溶解固形物 c 锅水相对碱度按式(1)计算: 式中: JDxo 锅水相对碱度; JDp 锅水酚酞碱度 ,单位为毫摩尔每升 (mmol/L ) = JD 锅水全碱度,单位为毫摩尔每升 (mmol/L) ; RG 锅水溶解固形物 ,单位为毫克每升 (m8/) ; 40 氢氧化钠 (NaOH)的摩尔质量,40 g/mol。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锅水相对碱度测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4132,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录卫单位及公式缺损不可据此自动计算"
+      ]
+    }
+  }
+}

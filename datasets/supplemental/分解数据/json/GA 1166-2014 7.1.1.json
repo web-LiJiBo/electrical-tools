@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "7.1.1",
+  "entities": [
+    {
+      "name": "一级库站人防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1 人力防范除符合6.1的规定外 ,还应符合以下规定: a ) 在周界主出入口设置门卫值班室 ,并配备专职门卫值班人员 24 h值守; b) 配备专职或兼职治安保卫人员 .对油气调控中心 ,库(站)区及其周边进行月常巡查.巡护 ,24h 内巡查 .巡护不少于4次; c) 安防监控中心配备24 h值机人员 ,值机人员应接受专门培训; d) 特殊时期 ,增加巡查 .巡护次数 ,增加巡查 .巡护人员配备数量。",
+      "type": "语义分解",
+      "subject": "一级库站人防",
+      "action": "",
+      "operation": "主口专职24小时门卫日巡不少于四次监控24小时培训值机特殊期增员增次",
+      "condition": "",
+      "constraint": "7.1.1 人力防范除符合6.1的规定外 ,还应符合以下规定: a ) 在周界主出入口设置门卫值班室 ,并配备专职门卫值班人员 24 h值守; b) 配备专职或兼职治安保卫人员 .对油气调控中心 ,库(站)区及其周边进行月常巡查.巡护 ,24h 内巡查 .巡护不少于4次; c) 安防监控中心配备24 h值机人员 ,值机人员应接受专门培训; d) 特殊时期 ,增加巡查 .巡护次数 ,增加巡查 .巡护人员配备数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一级库站人防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5453,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

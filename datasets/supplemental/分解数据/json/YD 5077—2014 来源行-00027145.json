@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00027145",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    注：可针对主、被叫分别为普通用户和混合放号用户的不同情况组合，以及网内、网\n外、长途、本地呼叫的不同类型组合进行测试。 此处的汇接局Tm  可以是 TDM  交换机，\n也可以是软交换设备。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：可针对主、被叫分别为普通用户和混合放号用户的不同情况组合，以及网内、网 外、长途、本地呼叫的不同类型组合进行测试。 此处的汇接局Tm 可以是 TDM 交换机， 也可以是软交换设备。",
+      "condition": "",
+      "constraint": "    注：可针对主、被叫分别为普通用户和混合放号用户的不同情况组合，以及网内、网\n外、长途、本地呼叫的不同类型组合进行测试。 此处的汇接局Tm  可以是 TDM  交换机，\n也可以是软交换设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27145,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

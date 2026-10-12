@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "6.3.5",
+  "entities": [
+    {
+      "name": "任意端局间路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5  在话务量较大且经济合理的情况下，任意两端局之间都可\n设置直达路由。该路由可以是低呼损直达路由，也可以是高效直\n达路由。",
+      "type": "语义分解",
+      "subject": "任意端局间路由",
+      "action": "",
+      "operation": "大话量经济合理可设低呼损或高效直达",
+      "condition": "",
+      "constraint": "6.3.5  在话务量较大且经济合理的情况下，任意两端局之间都可\n设置直达路由。该路由可以是低呼损直达路由，也可以是高效直\n达路由。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "任意端局间路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25904,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

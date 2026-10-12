@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.1.6",
+  "entities": [
+    {
+      "name": "挂机艇乘员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.1.6 乘坐挂机艇的所有人员应穿好救生服坐稳 ,不应在艇上打闹 ,随意走动。",
+      "type": "语义分解",
+      "subject": "挂机艇乘员",
+      "action": "",
+      "operation": "穿救生服坐稳禁打闹走动",
+      "condition": "",
+      "constraint": "6.11.1.6 乘坐挂机艇的所有人员应穿好救生服坐稳 ,不应在艇上打闹 ,随意走动。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挂机艇乘员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4724,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

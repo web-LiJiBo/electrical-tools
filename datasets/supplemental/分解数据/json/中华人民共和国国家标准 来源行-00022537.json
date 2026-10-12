@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022537",
+  "entities": [
+    {
+      "name": "垂直主干接地线间应每隔两层或三层进行互连",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4   垂直主干接地线间应每隔两层或三层进行互连。\n   5  每一层应建立一个或多个楼层接地排，各楼层接地排应就\n近连接到附近的垂直主干接地线，且各楼层接地排应设置在各子\n通信系统需要提供通信设备接地连接的中央。",
+      "type": "语义分解",
+      "subject": "垂直主干接地线间应每隔两层或三层进行互连",
+      "action": "",
+      "operation": "垂直主干接地线间应每隔两层或三层进行互连。 5 每一层应建立一个或多个楼层接地排，各楼层接地排应就 近连接到附近的垂直主干接地线，且各楼层接地排应设置在各子 通信系统需要提供通信设备接地连接的中央。",
+      "condition": "",
+      "constraint": "      4   垂直主干接地线间应每隔两层或三层进行互连。\n   5  每一层应建立一个或多个楼层接地排，各楼层接地排应就\n近连接到附近的垂直主干接地线，且各楼层接地排应设置在各子\n通信系统需要提供通信设备接地连接的中央。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "垂直主干接地线间应每隔两层或三层进行互连"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22537,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

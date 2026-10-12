@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水卫生标准",
+  "standard_id": "GB 5749-2022",
+  "version": "2022",
+  "chapter_path": "6",
+  "entities": [
+    {
+      "name": "集中式供水单位卫生要求 集中式供水单位卫生要求应符合《生活饮用水集中式供",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6 集中式供水单位卫生要求 集中式供水单位卫生要求应符合《生活饮用水集中式供水单位卫生规范》规定。",
+      "type": "语义分解",
+      "subject": "集中式供水单位卫生要求 集中式供水单位卫生要求应符合《生活饮用水集中式供",
+      "action": "",
+      "operation": "集中式供水单位卫生要求 集中式供水单位卫生要求应符合《生活饮用水集中式供水单位卫生规范》规定。",
+      "condition": "",
+      "constraint": "6 集中式供水单位卫生要求 集中式供水单位卫生要求应符合《生活饮用水集中式供水单位卫生规范》规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集中式供水单位卫生要求 集中式供水单位卫生要求应符合《生活饮用水集中式供"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

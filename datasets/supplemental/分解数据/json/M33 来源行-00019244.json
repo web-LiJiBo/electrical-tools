@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019244",
+  "entities": [
+    {
+      "name": ") M0、M1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2) M0、M1:由功能宿检出的B2 误码数经由aREI传送到源，并按ITU-T G.707编码成MS-REI\n    ( MSO 、MS1 、MS4 、MS16和MS64使用字节M1,MS64   和 MS256 使用M0 和 M1)。\n    一旦终端宿功能检测到误码个数，终端源应将相应值在1ms 内插入REI 比特。",
+      "type": "语义分解",
+      "subject": ") M0、M1",
+      "action": "",
+      "operation": ") M0、M1:由功能宿检出的B2 误码数经由aREI传送到源，并按ITU-T G.707编码成MS-REI ( MSO 、MS1 、MS4 、MS16和MS64使用字节M1,MS64 和 MS256 使用M0 和 M1)。 一旦终端宿功能检测到误码个数，终端源应将相应值在1ms 内插入REI 比特。",
+      "condition": "",
+      "constraint": "2) M0、M1:由功能宿检出的B2 误码数经由aREI传送到源，并按ITU-T G.707编码成MS-REI\n    ( MSO 、MS1 、MS4 、MS16和MS64使用字节M1,MS64   和 MS256 使用M0 和 M1)。\n    一旦终端宿功能检测到误码个数，终端源应将相应值在1ms 内插入REI 比特。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") M0、M1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19244,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

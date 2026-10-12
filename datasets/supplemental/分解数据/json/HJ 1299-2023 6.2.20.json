@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.20",
+  "entities": [
+    {
+      "name": "附图附件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.20 附图附件 依据排污许可证申请与核发技术规范及地方有关要求进行判定。",
+      "type": "语义分解",
+      "subject": "附图附件",
+      "action": "",
+      "operation": "按许可技术规范地方要求判定",
+      "condition": "",
+      "constraint": "6.2.20 附图附件 依据排污许可证申请与核发技术规范及地方有关要求进行判定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "附图附件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2013,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

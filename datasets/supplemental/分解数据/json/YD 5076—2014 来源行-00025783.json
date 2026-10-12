@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025783",
+  "entities": [
+    {
+      "name": ")省内软交换网中的软交换机( SS) 称为省内SS, 省内 SS 应 以",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1)省内软交换网中的软交换机( SS) 称为省内SS, 省内 SS 应\n以省为单位设置，负责提供本地业务，同时还可以负责转接省内不\n同本地网之间的省内长途业务。",
+      "type": "语义分解",
+      "subject": ")省内软交换网中的软交换机( SS) 称为省内SS, 省内 SS 应 以",
+      "action": "",
+      "operation": ")省内软交换网中的软交换机( SS) 称为省内SS, 省内 SS 应 以省为单位设置，负责提供本地业务，同时还可以负责转接省内不 同本地网之间的省内长途业务。",
+      "condition": "",
+      "constraint": "   1)省内软交换网中的软交换机( SS) 称为省内SS, 省内 SS 应\n以省为单位设置，负责提供本地业务，同时还可以负责转接省内不\n同本地网之间的省内长途业务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")省内软交换网中的软交换机( SS) 称为省内SS, 省内 SS 应 以"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25783,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

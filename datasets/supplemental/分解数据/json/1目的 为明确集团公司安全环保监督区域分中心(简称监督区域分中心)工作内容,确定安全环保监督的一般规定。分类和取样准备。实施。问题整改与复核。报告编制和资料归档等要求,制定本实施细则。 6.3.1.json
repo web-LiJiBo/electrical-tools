@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "6.3.1",
+  "entities": [
+    {
+      "name": "监督形式种类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1 监督形式种类包括:动态监督。常规监督。专项监督解剖式监督。联合监督，QHSE体系审核和内部安全评价七类。",
+      "type": "语义分解",
+      "subject": "监督形式种类",
+      "action": "",
+      "operation": "分动态常规专项解剖联合体系内部评价",
+      "condition": "",
+      "constraint": "6.3.1 监督形式种类包括:动态监督。常规监督。专项监督解剖式监督。联合监督，QHSE体系审核和内部安全评价七类。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监督形式种类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 682,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

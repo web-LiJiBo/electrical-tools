@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.3.4.3.1",
+  "entities": [
+    {
+      "name": "再生分配原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4.3.1 在4.3.4.1和 4.3.4.2中述及的分配原则和程序也适用于再使用和再生利用 应考虑物质固有属性的娈化。另外 ,特别对于在初始和后续的产品系统之间的回收利用过程 ,系统 边界应被界定并对其进行解释 ,以确保遵循在 4.3.4.2中的分配原则",
+      "type": "语义分解",
+      "subject": "再生分配原则",
+      "action": "",
+      "operation": "考虑物性变化并界定初后系统边界",
+      "condition": "",
+      "constraint": "4.3.4.3.1 在4.3.4.1和 4.3.4.2中述及的分配原则和程序也适用于再使用和再生利用 应考虑物质固有属性的娈化。另外 ,特别对于在初始和后续的产品系统之间的回收利用过程 ,系统 边界应被界定并对其进行解释 ,以确保遵循在 4.3.4.2中的分配原则",
+      "constraint_role": "informational",
+      "related_entities": [
+        "再生分配原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1096,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

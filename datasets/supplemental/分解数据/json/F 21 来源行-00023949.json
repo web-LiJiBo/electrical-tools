@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023949",
+  "entities": [
+    {
+      "name": "b) IP地址的管理和分配宜采用动态及静态结合方式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    IP地址的管理和分配宜采用动态及静态结合方式 。  SS、AS、TG、SG、AG、BAC/SBC及网管等\n       设备应分配静态 IP地址 ,个人用户终端可通过 DHCP 服务器分配动态 IP地址 , 对于重要及\n       特殊用户应配置静态 IP地址 ,并在网络设备上启用 IP+MAC+端口绑定功能 。",
+      "type": "语义分解",
+      "subject": "b) IP地址的管理和分配宜采用动态及静态结合方式",
+      "action": "",
+      "operation": "b) IP地址的管理和分配宜采用动态及静态结合方式 。 SS、AS、TG、SG、AG、BAC/SBC及网管等 设备应分配静态 IP地址 ,个人用户终端可通过 DHCP 服务器分配动态 IP地址 , 对于重要及 特殊用户应配置静态 IP地址 ,并在网络设备上启用 IP+MAC+端口绑定功能 。",
+      "condition": "",
+      "constraint": "b)    IP地址的管理和分配宜采用动态及静态结合方式 。  SS、AS、TG、SG、AG、BAC/SBC及网管等\n       设备应分配静态 IP地址 ,个人用户终端可通过 DHCP 服务器分配动态 IP地址 , 对于重要及\n       特殊用户应配置静态 IP地址 ,并在网络设备上启用 IP+MAC+端口绑定功能 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) IP地址的管理和分配宜采用动态及静态结合方式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23949,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

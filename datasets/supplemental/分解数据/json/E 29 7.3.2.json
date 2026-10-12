@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "7.3.2",
+  "entities": [
+    {
+      "name": "当集液包或其他设施部件的几何形状抑制了内部积液的蒸发时 ,应在管道实际倾",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2   当集液包或其他设施部件的几何形状抑制了内部积液的蒸发时 ,应在管道实际倾角大于临界倾\n角的可积液的下游段 ,至少检测一个类似装置 。",
+      "type": "语义分解",
+      "subject": "当集液包或其他设施部件的几何形状抑制了内部积液的蒸发时 ,应在管道实际倾",
+      "action": "",
+      "operation": "当集液包或其他设施部件的几何形状抑制了内部积液的蒸发时 ,应在管道实际倾角大于临界倾 角的可积液的下游段 ,至少检测一个类似装置 。",
+      "condition": "",
+      "constraint": "7.3.2   当集液包或其他设施部件的几何形状抑制了内部积液的蒸发时 ,应在管道实际倾角大于临界倾\n角的可积液的下游段 ,至少检测一个类似装置 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当集液包或其他设施部件的几何形状抑制了内部积液的蒸发时 ,应在管道实际倾"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42824,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

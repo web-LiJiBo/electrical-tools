@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040180",
+  "entities": [
+    {
+      "name": "固体废物防治应符合资源化、无害化、减量化的原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 固体废物防治应符合资源化、无害化、减量化的原则。生\n产装置及辅助设施排出的固体废物应按其性质和特点分类，并应\n采取回收或其他处理措施；对没有回收利用价值的固体废物可采\n取焚烧、填埋等处置措施；对暂不回收利用的固体废物宜采取储\n存、填埋等处理(置)措施。",
+      "type": "语义分解",
+      "subject": "固体废物防治应符合资源化、无害化、减量化的原则",
+      "action": "",
+      "operation": "固体废物防治应符合资源化、无害化、减量化的原则。生 产装置及辅助设施排出的固体废物应按其性质和特点分类，并应 采取回收或其他处理措施；对没有回收利用价值的固体废物可采 取焚烧、填埋等处置措施；对暂不回收利用的固体废物宜采取储 存、填埋等处理(置)措施。",
+      "condition": "",
+      "constraint": "7.1.2 固体废物防治应符合资源化、无害化、减量化的原则。生\n产装置及辅助设施排出的固体废物应按其性质和特点分类，并应\n采取回收或其他处理措施；对没有回收利用价值的固体废物可采\n取焚烧、填埋等处置措施；对暂不回收利用的固体废物宜采取储\n存、填埋等处理(置)措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固体废物防治应符合资源化、无害化、减量化的原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40180,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

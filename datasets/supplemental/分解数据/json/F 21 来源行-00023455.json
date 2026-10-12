@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023455",
+  "entities": [
+    {
+      "name": "本标准规定了电力软交换系统的组成 , 明确了各部分的主要功能 、性能以及",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "本标准规定了电力软交换系统的组成 , 明确了各部分的主要功能 、性能以及基本接口等要求 。\n本标准适用于电力软交换系统的规划设计 、工程建设及设备研制 。",
+      "type": "语义分解",
+      "subject": "本标准规定了电力软交换系统的组成 , 明确了各部分的主要功能 、性能以及",
+      "action": "",
+      "operation": "本标准规定了电力软交换系统的组成 , 明确了各部分的主要功能 、性能以及基本接口等要求 。 本标准适用于电力软交换系统的规划设计 、工程建设及设备研制 。",
+      "condition": "",
+      "constraint": "本标准规定了电力软交换系统的组成 , 明确了各部分的主要功能 、性能以及基本接口等要求 。\n本标准适用于电力软交换系统的规划设计 、工程建设及设备研制 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本标准规定了电力软交换系统的组成 , 明确了各部分的主要功能 、性能以及"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23455,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

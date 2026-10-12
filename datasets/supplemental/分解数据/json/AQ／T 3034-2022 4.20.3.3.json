@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.20.3.3",
+  "entities": [
+    {
+      "name": "体系变化评审",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.20.3.3 当出现下列情祝时 ,应由企业主要负责人及时组织进行评审: 组织机构 ,管理体系发生重大娈化; 发生安全事故和重大安企事件; 法律 ,法规及其他外部要求变更。",
+      "type": "语义分解",
+      "subject": "体系变化评审",
+      "action": "",
+      "operation": "重大组织体系变化事故事件法规外部要求变更主要负责人及时组织评审",
+      "condition": "",
+      "constraint": "4.20.3.3 当出现下列情祝时 ,应由企业主要负责人及时组织进行评审: 组织机构 ,管理体系发生重大娈化; 发生安全事故和重大安企事件; 法律 ,法规及其他外部要求变更。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "体系变化评审"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5357,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

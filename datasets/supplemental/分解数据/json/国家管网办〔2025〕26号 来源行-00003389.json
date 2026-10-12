@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全生产管理办法",
+  "standard_id": "国家管网办〔2025〕26号",
+  "version": "",
+  "chapter_path": "来源行-00003389",
+  "entities": [
+    {
+      "name": "第二十条 集团公司财务部负责履行以下安全生产职责",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十条 集团公司财务部负责履行以下安全生产职责:(一)负责制定集团公司安全生产费用财务管理制度并组织实施,保障集团公司安全生产所需资金投入;(二)负责组织将所属企业安全生产业务管理各项费用纳入年度预算;(三)负责组织所属企业安全生产责任险的投保和理赔;(四)负责本部门职责范围内的其他安全生产工作。",
+      "type": "语义分解",
+      "subject": "第二十条 集团公司财务部负责履行以下安全生产职责",
+      "action": "",
+      "operation": "第二十条 集团公司财务部负责履行以下安全生产职责:(一)负责制定集团公司安全生产费用财务管理制度并组织实施,保障集团公司安全生产所需资金投入;(二)负责组织将所属企业安全生产业务管理各项费用纳入年度预算;(三)负责组织所属企业安全生产责任险的投保和理赔;(四)负责本部门职责范围内的其他安全生产工作。",
+      "condition": "",
+      "constraint": "第二十条 集团公司财务部负责履行以下安全生产职责:(一)负责制定集团公司安全生产费用财务管理制度并组织实施,保障集团公司安全生产所需资金投入;(二)负责组织将所属企业安全生产业务管理各项费用纳入年度预算;(三)负责组织所属企业安全生产责任险的投保和理赔;(四)负责本部门职责范围内的其他安全生产工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十条 集团公司财务部负责履行以下安全生产职责"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3389,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

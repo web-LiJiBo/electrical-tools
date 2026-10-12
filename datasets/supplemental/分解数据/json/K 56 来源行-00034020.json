@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034020",
+  "entities": [
+    {
+      "name": "可用烟气试验探头去对环境空气采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "可用烟气试验探头去对环境空气采样。在给出重要读数且希望同时读数的地方 , 在燃气轮机进气口附近的位置\n处 可另外加一条采 样 管 线。   由 于 碳 氢 化 合 物 是 湿 的 , 且 样 品 温 度 与 未 加 热 管 线 温 度 相 一 致 , 采 样 管 线 不 需 要\n加热。",
+      "type": "语义分解",
+      "subject": "可用烟气试验探头去对环境空气采样",
+      "action": "",
+      "operation": "可用烟气试验探头去对环境空气采样。在给出重要读数且希望同时读数的地方 , 在燃气轮机进气口附近的位置 处 可另外加一条采 样 管 线。 由 于 碳 氢 化 合 物 是 湿 的 , 且 样 品 温 度 与 未 加 热 管 线 温 度 相 一 致 , 采 样 管 线 不 需 要 加热。",
+      "condition": "",
+      "constraint": "可用烟气试验探头去对环境空气采样。在给出重要读数且希望同时读数的地方 , 在燃气轮机进气口附近的位置\n处 可另外加一条采 样 管 线。   由 于 碳 氢 化 合 物 是 湿 的 , 且 样 品 温 度 与 未 加 热 管 线 温 度 相 一 致 , 采 样 管 线 不 需 要\n加热。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可用烟气试验探头去对环境空气采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34020,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

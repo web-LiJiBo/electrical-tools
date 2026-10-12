@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "4.4.4.2",
+  "entities": [
+    {
+      "name": "地表水风险预测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4.2 地表水环境风险预测。 一级。二级评价应选择适用的数值方法预测地表水环境风险,给出风险事故情形下可能造成的影响范围与程度;  三级评价应定性分析说明地表水环境影响后果。",
+      "type": "语义分解",
+      "subject": "地表水风险预测",
+      "action": "",
+      "operation": "一二级数值预测范围程度三级定性后果",
+      "condition": "",
+      "constraint": "4.4.4.2 地表水环境风险预测。 一级。二级评价应选择适用的数值方法预测地表水环境风险,给出风险事故情形下可能造成的影响范围与程度;  三级评价应定性分析说明地表水环境影响后果。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地表水风险预测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2450,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

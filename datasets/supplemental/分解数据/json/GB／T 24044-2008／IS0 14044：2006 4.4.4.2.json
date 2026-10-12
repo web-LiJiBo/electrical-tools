@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.4.2",
+  "entities": [
+    {
+      "name": "影响评价质量分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4.2 有关方法及其作用如下: a ) 重要度分析(例如帕雷托分析 )是一种用来识别对参数结果具有最重要影响的数据的统计流 程。将识别的数据进行优先研究 ,以确保做出正确决定。 6) 不确定性分析是一个用来确定在计算中数据和假设的不确定程度及其对 LCIA 结果可信度的 影响程度的流程。 敏感性分析是一个确定变化(例如在数据和方法学的选择上发生的变化)对 LCIA 结果的影响 程度的流程。 与 LCA 反复性的本质相一致 , LCIA 数据质量分析的结果可以导致对 LCI 阶段的重新修订。",
+      "type": "语义分解",
+      "subject": "影响评价质量分析",
+      "action": "",
+      "operation": "采用重要度不确定性敏感性分析并据结果修订清单",
+      "condition": "",
+      "constraint": "4.4.4.2 有关方法及其作用如下: a ) 重要度分析(例如帕雷托分析 )是一种用来识别对参数结果具有最重要影响的数据的统计流 程。将识别的数据进行优先研究 ,以确保做出正确决定。 6) 不确定性分析是一个用来确定在计算中数据和假设的不确定程度及其对 LCIA 结果可信度的 影响程度的流程。 敏感性分析是一个确定变化(例如在数据和方法学的选择上发生的变化)对 LCIA 结果的影响 程度的流程。 与 LCA 反复性的本质相一致 , LCIA 数据质量分析的结果可以导致对 LCI 阶段的重新修订。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "影响评价质量分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1124,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

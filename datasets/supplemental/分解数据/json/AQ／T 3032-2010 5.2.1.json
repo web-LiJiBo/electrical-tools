@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "法规知识考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 危险化学品安全生产法律法规 危险化学品安全生产法律法规有: a) 了解法律法规基本知识，安全生产立法的必要性和意义; b) 熟悉我国安全生产方针、政策，了解有关安全生产的主要法律、法规、规章、标准和规范; 了解我国危险化学品安全生产监管体制; c) 熟悉危险化学品经营的法律法规和标准; d) 了解危险化学品经营的法律责任; e) 了解从业人员安全生产的权利和义务。",
+      "type": "语义分解",
+      "subject": "法规知识考核",
+      "action": "",
+      "operation": "了解基本立法监管责任权利义务熟悉政策经营法规",
+      "condition": "",
+      "constraint": "5.2.1 危险化学品安全生产法律法规 危险化学品安全生产法律法规有: a) 了解法律法规基本知识，安全生产立法的必要性和意义; b) 熟悉我国安全生产方针、政策，了解有关安全生产的主要法律、法规、规章、标准和规范; 了解我国危险化学品安全生产监管体制; c) 熟悉危险化学品经营的法律法规和标准; d) 了解危险化学品经营的法律责任; e) 了解从业人员安全生产的权利和义务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "法规知识考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5018,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；考核内容"
+      ]
+    }
+  }
+}

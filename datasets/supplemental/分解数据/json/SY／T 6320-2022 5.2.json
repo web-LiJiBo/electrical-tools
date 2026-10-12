@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "管线运行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 集输管线",
+      "type": "语义分解",
+      "subject": "管线运行",
+      "action": "",
+      "operation": "规定章节",
+      "condition": "",
+      "constraint": "5.2 集输管线",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管线运行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7543,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题"
+      ]
+    }
+  }
+}

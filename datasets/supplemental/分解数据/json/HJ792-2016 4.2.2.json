@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "制药验收工作范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 验收技术工作范围原则上与环境影响评价范围一致。当实际工程内容或环境发生变化，或者环境影响评价未能全面反映环境影响时，工作范围应相应调整；当实际建设内容发生重大变更时，应在补充环评批复后再进行验收。",
+      "type": "语义分解",
+      "subject": "制药验收工作范围",
+      "action": "",
+      "operation": "原则与环评一致变化影响不全调整重大变更补环评批复后验收",
+      "condition": "",
+      "constraint": "4.2.2 验收技术工作范围原则上与环境影响评价范围一致。当实际工程内容或环境发生变化，或者环境影响评价未能全面反映环境影响时，工作范围应相应调整；当实际建设内容发生重大变更时，应在补充环评批复后再进行验收。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药验收工作范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2684,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

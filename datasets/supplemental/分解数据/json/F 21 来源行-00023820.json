@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023820",
+  "entities": [
+    {
+      "name": "可支持对一个调度对象设置多个号码(宜不少于四个) ,实现只需按一个快捷键",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      可支持对一个调度对象设置多个号码(宜不少于四个) ,实现只需按一个快捷键 ,就能对此调度对象\n一呼到底 。  当此调度对象应答时建立通话 ,停止继续呼叫 ; 当此调度对象未应答时 , 自动呼叫此调度对\n象的下一个号码 ,直至其应答或所有号码均未应答结束呼叫 。",
+      "type": "语义分解",
+      "subject": "可支持对一个调度对象设置多个号码(宜不少于四个) ,实现只需按一个快捷键",
+      "action": "",
+      "operation": "可支持对一个调度对象设置多个号码(宜不少于四个) ,实现只需按一个快捷键 ,就能对此调度对象 一呼到底 。 当此调度对象应答时建立通话 ,停止继续呼叫 ; 当此调度对象未应答时 , 自动呼叫此调度对 象的下一个号码 ,直至其应答或所有号码均未应答结束呼叫 。",
+      "condition": "",
+      "constraint": "      可支持对一个调度对象设置多个号码(宜不少于四个) ,实现只需按一个快捷键 ,就能对此调度对象\n一呼到底 。  当此调度对象应答时建立通话 ,停止继续呼叫 ; 当此调度对象未应答时 , 自动呼叫此调度对\n象的下一个号码 ,直至其应答或所有号码均未应答结束呼叫 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可支持对一个调度对象设置多个号码(宜不少于四个) ,实现只需按一个快捷键"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23820,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

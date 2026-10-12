@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022860",
+  "entities": [
+    {
+      "name": ")SPD 劣化指示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)SPD 劣化指示；\n4)热熔和过流保护；\n5)雷电记数。",
+      "type": "语义分解",
+      "subject": ")SPD 劣化指示",
+      "action": "",
+      "operation": ")SPD 劣化指示； 4)热熔和过流保护； 5)雷电记数。",
+      "condition": "",
+      "constraint": "3)SPD 劣化指示；\n4)热熔和过流保护；\n5)雷电记数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")SPD 劣化指示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22860,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

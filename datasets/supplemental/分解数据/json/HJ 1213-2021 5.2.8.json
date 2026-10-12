@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.8",
+  "entities": [
+    {
+      "name": "海面同步测量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.8 海面同步测量 利用有效海面同步测量试验,进行卫星遥感监测与海面同步测量试验的比对与互验。海面同步测量技术要求如下: a) 应不早于卫星过境前2h且不晚于卫星过境后2h,  完成海面星地同步测量试验; b) 测量范围应覆盖全部潜排区。测量点位应 \"近密远疏\",即越靠近排水口测量点位越多; 测量距水面0 cm~50 cm 深度处水体温度, 同一点位测量频率应不低于5次; 4) 同步定点测量试验时段内的水体温度序列,并利用该序列对测量试验的水体温度进行自然娈化校准。",
+      "type": "语义分解",
+      "subject": "海面同步测量",
+      "action": "",
+      "operation": "卫星过境前后两小时完成覆盖温排区近密远疏多次测温自然变化校准",
+      "condition": "",
+      "constraint": "5.2.8 海面同步测量 利用有效海面同步测量试验,进行卫星遥感监测与海面同步测量试验的比对与互验。海面同步测量技术要求如下: a) 应不早于卫星过境前2h且不晚于卫星过境后2h,  完成海面星地同步测量试验; b) 测量范围应覆盖全部潜排区。测量点位应 \"近密远疏\",即越靠近排水口测量点位越多; 测量距水面0 cm~50 cm 深度处水体温度, 同一点位测量频率应不低于5次; 4) 同步定点测量试验时段内的水体温度序列,并利用该序列对测量试验的水体温度进行自然娈化校准。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海面同步测量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1957,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；部分字符识别异常"
+      ]
+    }
+  }
+}

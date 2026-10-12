@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033596",
+  "entities": [
+    {
+      "name": "g) 仪器的响应时间，从样气进入分析仪到获得 90%的最终读数的时间，对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "g)    仪器的响应时间，从样气进入分析仪到获得 90%的最终读数的时间，对 NO狓  和 O2   不应超过\n       15 s；对 SO2   不应超过 30 s 。",
+      "type": "语义分解",
+      "subject": "g) 仪器的响应时间，从样气进入分析仪到获得 90%的最终读数的时间，对",
+      "action": "",
+      "operation": "g) 仪器的响应时间，从样气进入分析仪到获得 90%的最终读数的时间，对 NO狓 和 O2 不应超过 15 s；对 SO2 不应超过 30 s 。",
+      "condition": "",
+      "constraint": "g)    仪器的响应时间，从样气进入分析仪到获得 90%的最终读数的时间，对 NO狓  和 O2   不应超过\n       15 s；对 SO2   不应超过 30 s 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 仪器的响应时间，从样气进入分析仪到获得 90%的最终读数的时间，对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33596,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

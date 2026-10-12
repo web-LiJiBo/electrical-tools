@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "9.2.1",
+  "entities": [
+    {
+      "name": "生态恢复效果评估应主要包括原有植被保护效果评估、生态恢复效果评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.1       生态恢复效果评估应主要包括原有植被保护效果评估、生态恢复效果评估。\n9.2.2       原有植被保护效果评估应主要包括迁地保护后的植物成活率、长势。",
+      "type": "语义分解",
+      "subject": "生态恢复效果评估应主要包括原有植被保护效果评估、生态恢复效果评估",
+      "action": "",
+      "operation": "生态恢复效果评估应主要包括原有植被保护效果评估、生态恢复效果评估。 9.2.2 原有植被保护效果评估应主要包括迁地保护后的植物成活率、长势。",
+      "condition": "",
+      "constraint": "9.2.1       生态恢复效果评估应主要包括原有植被保护效果评估、生态恢复效果评估。\n9.2.2       原有植被保护效果评估应主要包括迁地保护后的植物成活率、长势。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态恢复效果评估应主要包括原有植被保护效果评估、生态恢复效果评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40865,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

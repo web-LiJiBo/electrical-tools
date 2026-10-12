@@ -1,0 +1,41 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "5",
+  "entities": [
+    {
+      "name": "能效限定值 空气压缩机能效限定值应不大于表1~表6中的3 级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5 能效限定值 空气压缩机能效限定值应不大于表1~表6中的3 级。",
+      "type": "语义分解",
+      "subject": "能效限定值 空气压缩机能效限定值应不大于表1~表6中的3 级",
+      "action": "",
+      "operation": "能效限定值 空气压缩机能效限定值应不大于表1~表6中的3 级。",
+      "condition": "",
+      "constraint": "5 能效限定值 空气压缩机能效限定值应不大于表1~表6中的3 级。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能效限定值 空气压缩机能效限定值应不大于表1~表6中的3 级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 128,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

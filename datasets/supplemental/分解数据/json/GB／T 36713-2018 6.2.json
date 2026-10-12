@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "能源绩效参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2 识别能源绩效参数的使用者 能源绩效参数应易于使用者理解 组织可建立多层次的能源绩效参数以满足不同使用者对其类型和复杂程度的不同需求 不同人员使用能源绩效参数的目的通常是不同的= 内部使用者通常使用能源绩效参数来管理能源绩效的改进 外部使用者通常使用能源绩效参数来检查是否满足法律法规和相关要求。表3列举了能源绩效参数的一些常见的使用者。能源绩效参数可在组织或设备的不同层面进行建立 ,可按层级排列 ,也可根据组织内部使用者的需求形成不同的类型",
+      "type": "语义分解",
+      "subject": "能源绩效参数",
+      "action": "",
+      "operation": "按使用者需求建立层次类型",
+      "condition": "",
+      "constraint": "应易于使用者理解",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源绩效参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "表3未提供，示例不转为控制规则"
+      ]
+    }
+  }
+}

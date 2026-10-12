@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "8.1.4",
+  "entities": [
+    {
+      "name": "污染源监测项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.4 污染源的地下水监测项目以污染源特征项目为主, 同时根据污染源的特征项目的种类,适当增加或删减有关监测项目 不同行业的特征项目可根据附录F确定,但不仅限于附录F中表 &1所列监测项目。",
+      "type": "语义分解",
+      "subject": "污染源监测项目",
+      "action": "",
+      "operation": "以特征项目为主适当增减不限于附录项目",
+      "condition": "",
+      "constraint": "8.1.4 污染源的地下水监测项目以污染源特征项目为主, 同时根据污染源的特征项目的种类,适当增加或删减有关监测项目 不同行业的特征项目可根据附录F确定,但不仅限于附录F中表 &1所列监测项目。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染源监测项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2132,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录F需查证"
+      ]
+    }
+  }
+}

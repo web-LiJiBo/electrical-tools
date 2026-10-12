@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "9.1.3.2",
+  "entities": [
+    {
+      "name": "时空异常监测值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.3.2 地下水监测中不同的时空分布出现的异常值,应从监测点周围当时的具体情况 (地质水文因素娈化, 气象。附近污染源情况等)  进行分析,不能简单地用统计检验方法来决定舍取。",
+      "type": "语义分解",
+      "subject": "时空异常监测值",
+      "action": "",
+      "operation": "结合地质水文气象污染源分析不得仅统计检验舍取",
+      "condition": "",
+      "constraint": "9.1.3.2 地下水监测中不同的时空分布出现的异常值,应从监测点周围当时的具体情况 (地质水文因素娈化, 气象。附近污染源情况等)  进行分析,不能简单地用统计检验方法来决定舍取。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "时空异常监测值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2158,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

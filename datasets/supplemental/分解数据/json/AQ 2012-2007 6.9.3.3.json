@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.9.3.3",
+  "entities": [
+    {
+      "name": "拖航过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9.3.3 拖航作业过程中应按以下规定执行: 风速和浪高等海况气象条件应不超过被拖物设计要求; 拖航的随船人数不应超过主管机关核准的额定人数; 拖航过程中 ,每天至少应接收两次天气预报 ,根据天气预报的状况采取相应的拖航安全措施; 拖航船舶应经常观察被拖物的情况 ,拖航船舶,被拖物 ,岸基之间应建立报告制度; 拖航船舶和被拖物应做好定期巡回检查工作 ,保障拖航设备和用具的安全状态。",
+      "type": "语义分解",
+      "subject": "拖航过程",
+      "action": "",
+      "operation": "海况不超设计人数不超核定每天至少两次天气预报观察报告定巡设备安全",
+      "condition": "",
+      "constraint": "6.9.3.3 拖航作业过程中应按以下规定执行: 风速和浪高等海况气象条件应不超过被拖物设计要求; 拖航的随船人数不应超过主管机关核准的额定人数; 拖航过程中 ,每天至少应接收两次天气预报 ,根据天气预报的状况采取相应的拖航安全措施; 拖航船舶应经常观察被拖物的情况 ,拖航船舶,被拖物 ,岸基之间应建立报告制度; 拖航船舶和被拖物应做好定期巡回检查工作 ,保障拖航设备和用具的安全状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "拖航过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4694,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

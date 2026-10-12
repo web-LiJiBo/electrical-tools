@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.7.1",
+  "entities": [
+    {
+      "name": "通信等电位网络",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7.1  通信系统网状(M)、星 形( S) 和星-网状混合型等电位连接\n可按图3.7.1设计。",
+      "type": "语义分解",
+      "subject": "通信等电位网络",
+      "action": "",
+      "operation": "网状星形混合可按引用图设计",
+      "condition": "",
+      "constraint": "3.7.1  通信系统网状(M)、星 形( S) 和星-网状混合型等电位连接\n可按图3.7.1设计。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信等电位网络"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22417,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；图未提供"
+      ]
+    }
+  }
+}

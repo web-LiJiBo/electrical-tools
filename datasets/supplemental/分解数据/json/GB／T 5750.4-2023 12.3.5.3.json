@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.3.5.3",
+  "entities": [
+    {
+      "name": "连续流动酚测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.5.3 测定 流路系统稳定大约5 min后，进行标准曲线系列的测定。建立校准曲线之后，本方法使用50 mm比色池，进行样品及质控样品等的测定。注:所列参考条件受不同型号仪器的灵敏度及操作条件的影响而变化时，可酌情改变上述测量条件。",
+      "type": "语义分解",
+      "subject": "连续流动酚测定",
+      "action": "",
+      "operation": "流路稳定约五分钟建曲线五十毫米池测样及质控样",
+      "condition": "",
+      "constraint": "12.3.5.3 测定 流路系统稳定大约5 min后，进行标准曲线系列的测定。建立校准曲线之后，本方法使用50 mm比色池，进行样品及质控样品等的测定。注:所列参考条件受不同型号仪器的灵敏度及操作条件的影响而变化时，可酌情改变上述测量条件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续流动酚测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1515,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

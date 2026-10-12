@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006240",
+  "entities": [
+    {
+      "name": "第十九条 {作业前通用管理 ] (五)现场严格控制作业人数 ,作业风险区",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十九条 {作业前通用管理 ] (五)现场严格控制作业人数 ,作业风险区域原则上不超 6 人,非必要人员禁止进入作业现场。在动火。受限空间。高处 吊装等高风险作业时 ,各企业应按照《高风险作业区域作业人员数量指引表》(附件1-21 )合理安排现场作业人员,控制现场作业人数,管控人员聚集风险。",
+      "type": "语义分解",
+      "subject": "第十九条 {作业前通用管理 ] (五)现场严格控制作业人数 ,作业风险区",
+      "action": "",
+      "operation": "第十九条 {作业前通用管理 ] (五)现场严格控制作业人数 ,作业风险区域原则上不超 6 人,非必要人员禁止进入作业现场。在动火。受限空间。高处 吊装等高风险作业时 ,各企业应按照《高风险作业区域作业人员数量指引表》(附件1-21 )合理安排现场作业人员,控制现场作业人数,管控人员聚集风险。",
+      "condition": "",
+      "constraint": "第十九条 {作业前通用管理 ] (五)现场严格控制作业人数 ,作业风险区域原则上不超 6 人,非必要人员禁止进入作业现场。在动火。受限空间。高处 吊装等高风险作业时 ,各企业应按照《高风险作业区域作业人员数量指引表》(附件1-21 )合理安排现场作业人员,控制现场作业人数,管控人员聚集风险。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十九条 {作业前通用管理 ] (五)现场严格控制作业人数 ,作业风险区"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6240,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

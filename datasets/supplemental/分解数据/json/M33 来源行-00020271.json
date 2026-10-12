@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020271",
+  "entities": [
+    {
+      "name": "一 当宣告aAIS 时，该功能应在两帧之内输出全“1”信号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一  当宣告aAIS 时，该功能应在两帧之内输出全“1”信号。当该aAIS 终止时，应在两帧之\n    内取消全“1”信号且输出正常信号。AIS 时钟、帧起始和复帧起始独立于输入的时钟、\n    帧起始和复帧起始。AIS时钟频率应在239/(239-k)×4(<-1)×2488320kHz×(1±20×10⁶)\n    内，抖动和飘移要求在ITU-T G8251-2001附录 A 中规定。",
+      "type": "语义分解",
+      "subject": "一 当宣告aAIS 时，该功能应在两帧之内输出全“1”信号",
+      "action": "",
+      "operation": "一 当宣告aAIS 时，该功能应在两帧之内输出全“1”信号。当该aAIS 终止时，应在两帧之 内取消全“1”信号且输出正常信号。AIS 时钟、帧起始和复帧起始独立于输入的时钟、 帧起始和复帧起始。AIS时钟频率应在239/(239-k)×4(<-1)×2488320kHz×(1±20×10⁶) 内，抖动和飘移要求在ITU-T G8251-2001附录 A 中规定。",
+      "condition": "",
+      "constraint": "一  当宣告aAIS 时，该功能应在两帧之内输出全“1”信号。当该aAIS 终止时，应在两帧之\n    内取消全“1”信号且输出正常信号。AIS 时钟、帧起始和复帧起始独立于输入的时钟、\n    帧起始和复帧起始。AIS时钟频率应在239/(239-k)×4(<-1)×2488320kHz×(1±20×10⁶)\n    内，抖动和飘移要求在ITU-T G8251-2001附录 A 中规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一 当宣告aAIS 时，该功能应在两帧之内输出全“1”信号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20271,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00027141",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测试过程\t①LS1向Tm发起呼叫，其中主叫号码为物理号码，被叫号码为逻\n辑 号 码 ；\n②Tm将该呼叫转发到SDB,其中主叫号码为物理号码，被叫号码为\n逻辑号码；\n③SDB进行主叫号码分析，将主叫逻辑号码返回到Tm;\n④SDB进行被叫号码分析，将被叫物理号码返回到Tm;\n⑤Tm向SDB发送RLC;\n⑥Tm将根据被叫物理号码寻址到落地局，向落地局发送IAM消\n息，IAM消息中主叫号码为逻辑号码，被叫号码为物理号码；\n⑦落地局向Tm回ACM;\n⑧ T m 向 L S 1 回 A C M",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "测试过程\t①LS1向Tm发起呼叫，其中主叫号码为物理号码，被叫号码为逻\n辑 号 码 ；\n②Tm将该呼叫转发到SDB,其中主叫号码为物理号码，被叫号码为\n逻辑号码；\n③SDB进行主叫号码分析，将主叫逻辑号码返回到Tm;\n④SDB进行被叫号码分析，将被叫物理号码返回到Tm;\n⑤Tm向SDB发送RLC;\n⑥Tm将根据被叫物理号码寻址到落地局，向落地局发送IAM消\n息，IAM消息中主叫号码为逻辑号码，被叫号码为物理号码；\n⑦落地局向Tm回ACM;\n⑧ T m 向 L S 1 回 A C M",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27141,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018750",
+  "entities": [
+    {
+      "name": "——时钟产生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——时钟产生：应从输入的通路时钟中产生OSM256.4 AP 时钟，从4个STL 时钟中选取\n   一个输出到OSM256.4 AP。",
+      "type": "语义分解",
+      "subject": "——时钟产生",
+      "action": "",
+      "operation": "——时钟产生：应从输入的通路时钟中产生OSM256.4 AP 时钟，从4个STL 时钟中选取 一个输出到OSM256.4 AP。",
+      "condition": "",
+      "constraint": "——时钟产生：应从输入的通路时钟中产生OSM256.4 AP 时钟，从4个STL 时钟中选取\n   一个输出到OSM256.4 AP。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——时钟产生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023980",
+  "entities": [
+    {
+      "name": "装在机柜内的设备在 GB/T 4798. 3—2007规定的 3K5级气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "装在机柜内的设备在 GB/T 4798. 3—2007规定的 3K5级气候条件下工作应能达到本标准的要求 。\n3K5级气候条件的环境参数如表 3所示 。",
+      "type": "语义分解",
+      "subject": "装在机柜内的设备在 GB/T 4798. 3—2007规定的 3K5级气",
+      "action": "",
+      "operation": "装在机柜内的设备在 GB/T 4798. 3—2007规定的 3K5级气候条件下工作应能达到本标准的要求 。 3K5级气候条件的环境参数如表 3所示 。",
+      "condition": "",
+      "constraint": "装在机柜内的设备在 GB/T 4798. 3—2007规定的 3K5级气候条件下工作应能达到本标准的要求 。\n3K5级气候条件的环境参数如表 3所示 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "装在机柜内的设备在 GB/T 4798. 3—2007规定的 3K5级气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23980,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

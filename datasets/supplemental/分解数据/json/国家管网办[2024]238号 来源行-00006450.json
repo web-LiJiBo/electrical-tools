@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006450",
+  "entities": [
+    {
+      "name": "第六十一条 [临时用电作业管理要求 ] (七)临时用电应设置保护开关,使",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十一条 [临时用电作业管理要求 ] (七)临时用电应设置保护开关,使用前应检查电气装置和保护设施的可靠性。潮湿区域。户外的临时用电设备及临时建筑内的电源插座应安装漏电保护器 ,在每次使用之前应利用试验按钮进行测试。所有的临时用电均应设置接地保护。",
+      "type": "语义分解",
+      "subject": "第六十一条 [临时用电作业管理要求 ] (七)临时用电应设置保护开关,使",
+      "action": "",
+      "operation": "第六十一条 [临时用电作业管理要求 ] (七)临时用电应设置保护开关,使用前应检查电气装置和保护设施的可靠性。潮湿区域。户外的临时用电设备及临时建筑内的电源插座应安装漏电保护器 ,在每次使用之前应利用试验按钮进行测试。所有的临时用电均应设置接地保护。",
+      "condition": "",
+      "constraint": "第六十一条 [临时用电作业管理要求 ] (七)临时用电应设置保护开关,使用前应检查电气装置和保护设施的可靠性。潮湿区域。户外的临时用电设备及临时建筑内的电源插座应安装漏电保护器 ,在每次使用之前应利用试验按钮进行测试。所有的临时用电均应设置接地保护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十一条 [临时用电作业管理要求 ] (七)临时用电应设置保护开关,使"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6450,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

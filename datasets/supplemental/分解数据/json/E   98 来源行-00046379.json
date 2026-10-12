@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046379",
+  "entities": [
+    {
+      "name": "内腐蚀直接评价可识别发生内腐蚀可能性最大的位置，其 影响因素包括水含量、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   内腐蚀直接评价可识别发生内腐蚀可能性最大的位置，其\n影响因素包括水含量、流态、持液率、流速、温度和压力变化。",
+      "type": "语义分解",
+      "subject": "内腐蚀直接评价可识别发生内腐蚀可能性最大的位置，其 影响因素包括水含量、",
+      "action": "",
+      "operation": "内腐蚀直接评价可识别发生内腐蚀可能性最大的位置，其 影响因素包括水含量、流态、持液率、流速、温度和压力变化。",
+      "condition": "",
+      "constraint": "   内腐蚀直接评价可识别发生内腐蚀可能性最大的位置，其\n影响因素包括水含量、流态、持液率、流速、温度和压力变化。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "内腐蚀直接评价可识别发生内腐蚀可能性最大的位置，其 影响因素包括水含量、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46379,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

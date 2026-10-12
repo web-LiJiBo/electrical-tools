@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034089",
+  "entities": [
+    {
+      "name": "光学方法 , 通常用于连续排放控制情形 , 例如对光的传播或散射光进行连",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      光学方法 , 通常用于连续排放控制情形 , 例如对光的传播或散射光进行连续测量。  但就质量相关的\n颗粒荷重而言 , 这些方法遇到了与颗粒大小 、尺寸分布 、颗粒形状 、颗粒密度及颗粒材料的某些光学性质\n有关的传播 /散射方面的问题。  经适当的校准后 , 并在假定相关的性质一旦确立并经过检查后是稳定的\n情况下 , 这些方法是可以采用的。",
+      "type": "语义分解",
+      "subject": "光学方法 , 通常用于连续排放控制情形 , 例如对光的传播或散射光进行连",
+      "action": "",
+      "operation": "光学方法 , 通常用于连续排放控制情形 , 例如对光的传播或散射光进行连续测量。 但就质量相关的 颗粒荷重而言 , 这些方法遇到了与颗粒大小 、尺寸分布 、颗粒形状 、颗粒密度及颗粒材料的某些光学性质 有关的传播 /散射方面的问题。 经适当的校准后 , 并在假定相关的性质一旦确立并经过检查后是稳定的 情况下 , 这些方法是可以采用的。",
+      "condition": "",
+      "constraint": "      光学方法 , 通常用于连续排放控制情形 , 例如对光的传播或散射光进行连续测量。  但就质量相关的\n颗粒荷重而言 , 这些方法遇到了与颗粒大小 、尺寸分布 、颗粒形状 、颗粒密度及颗粒材料的某些光学性质\n有关的传播 /散射方面的问题。  经适当的校准后 , 并在假定相关的性质一旦确立并经过检查后是稳定的\n情况下 , 这些方法是可以采用的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光学方法 , 通常用于连续排放控制情形 , 例如对光的传播或散射光进行连"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34089,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

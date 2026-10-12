@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036691",
+  "entities": [
+    {
+      "name": "使用固定式连续监测风速计测试逸散口截面中心位置平均气体逸散速度或使用普通",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   使用固定式连续监测风速计测试逸散口截面中心位置平均气体逸散速度或使用普通风速计测量逸\n散口截面中心位置气体逸散流速，稳定测试不少于2h,  每 间 隔 1min 记录一次测试值，取平均值作为取\n样点呼出气的呼吸速度。测试过程中应使用挡风工具排除环境因素干扰。",
+      "type": "语义分解",
+      "subject": "使用固定式连续监测风速计测试逸散口截面中心位置平均气体逸散速度或使用普通",
+      "action": "",
+      "operation": "使用固定式连续监测风速计测试逸散口截面中心位置平均气体逸散速度或使用普通风速计测量逸 散口截面中心位置气体逸散流速，稳定测试不少于2h, 每 间 隔 1min 记录一次测试值，取平均值作为取 样点呼出气的呼吸速度。测试过程中应使用挡风工具排除环境因素干扰。",
+      "condition": "",
+      "constraint": "   使用固定式连续监测风速计测试逸散口截面中心位置平均气体逸散速度或使用普通风速计测量逸\n散口截面中心位置气体逸散流速，稳定测试不少于2h,  每 间 隔 1min 记录一次测试值，取平均值作为取\n样点呼出气的呼吸速度。测试过程中应使用挡风工具排除环境因素干扰。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "使用固定式连续监测风速计测试逸散口截面中心位置平均气体逸散速度或使用普通"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36691,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

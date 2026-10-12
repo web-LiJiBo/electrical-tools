@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042503",
+  "entities": [
+    {
+      "name": ". 1. 1.3 阴极保护工程应与主体工程同时勘察 、设计 、施工和投运",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6. 1. 1.3   阴极保护工程应与主体工程同时勘察 、设计 、施工和投运 , 当阴极保护系统在管道埋地三个月\n内不能投入运行时 ,应采取临时性阴极保护措施 ;在强腐蚀性土壤环境中 ,应在管道埋地时施加临时阴\n极保护措施 ; 临时阴极保护措施应维持至永久阴极保护系统投运 ;对于受到直流杂散电流干扰影响的管\n道 , 阴极保护(含排流保护)应在三个月之内投入运行 。",
+      "type": "语义分解",
+      "subject": ". 1. 1.3 阴极保护工程应与主体工程同时勘察 、设计 、施工和投运",
+      "action": "",
+      "operation": ". 1. 1.3 阴极保护工程应与主体工程同时勘察 、设计 、施工和投运 , 当阴极保护系统在管道埋地三个月 内不能投入运行时 ,应采取临时性阴极保护措施 ;在强腐蚀性土壤环境中 ,应在管道埋地时施加临时阴 极保护措施 ; 临时阴极保护措施应维持至永久阴极保护系统投运 ;对于受到直流杂散电流干扰影响的管 道 , 阴极保护(含排流保护)应在三个月之内投入运行 。",
+      "condition": "",
+      "constraint": "6. 1. 1.3   阴极保护工程应与主体工程同时勘察 、设计 、施工和投运 , 当阴极保护系统在管道埋地三个月\n内不能投入运行时 ,应采取临时性阴极保护措施 ;在强腐蚀性土壤环境中 ,应在管道埋地时施加临时阴\n极保护措施 ; 临时阴极保护措施应维持至永久阴极保护系统投运 ;对于受到直流杂散电流干扰影响的管\n道 , 阴极保护(含排流保护)应在三个月之内投入运行 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1. 1.3 阴极保护工程应与主体工程同时勘察 、设计 、施工和投运"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42503,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

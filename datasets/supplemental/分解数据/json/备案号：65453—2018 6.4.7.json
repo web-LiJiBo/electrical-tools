@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "6.4.7",
+  "entities": [
+    {
+      "name": "采用其他的间接检测方法仍不适用或不能解决结果差异 问题时，宜重新评价EC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.7   采用其他的间接检测方法仍不适用或不能解决结果差异\n问题时，宜重新评价ECDA可行性。",
+      "type": "语义分解",
+      "subject": "采用其他的间接检测方法仍不适用或不能解决结果差异 问题时，宜重新评价EC",
+      "action": "",
+      "operation": "采用其他的间接检测方法仍不适用或不能解决结果差异 问题时，宜重新评价ECDA可行性。",
+      "condition": "",
+      "constraint": "6.4.7   采用其他的间接检测方法仍不适用或不能解决结果差异\n问题时，宜重新评价ECDA可行性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采用其他的间接检测方法仍不适用或不能解决结果差异 问题时，宜重新评价EC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45050,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

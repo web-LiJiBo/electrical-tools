@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "7.2.3",
+  "entities": [
+    {
+      "name": "救援安全员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3   设立现场安全员，确定撤离信号并告知相关人员，实施全程动态仪器检测。一旦险情加剧，危\n及救援人员安全时，及时发出撤离信号，下达紧急撤离命令。",
+      "type": "语义分解",
+      "subject": "救援安全员",
+      "action": "",
+      "operation": "撤离信号告知动态检测危及人员紧急撤离",
+      "condition": "",
+      "constraint": "7.2.3   设立现场安全员，确定撤离信号并告知相关人员，实施全程动态仪器检测。一旦险情加剧，危\n及救援人员安全时，及时发出撤离信号，下达紧急撤离命令。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "救援安全员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28986,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

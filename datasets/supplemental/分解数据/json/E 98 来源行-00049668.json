@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049668",
+  "entities": [
+    {
+      "name": "本条明确了带防渗膜的储罐罐底阴极保护阳极的位置， 确保了保护电流不被屏蔽",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.5       本条明确了带防渗膜的储罐罐底阴极保护阳极的位置，\n确保了保护电流不被屏蔽。网状阳极或线性阳极更易布设于罐\n底，因此推荐采用这两种阳极。",
+      "type": "语义分解",
+      "subject": "本条明确了带防渗膜的储罐罐底阴极保护阳极的位置， 确保了保护电流不被屏蔽",
+      "action": "",
+      "operation": "本条明确了带防渗膜的储罐罐底阴极保护阳极的位置， 确保了保护电流不被屏蔽。网状阳极或线性阳极更易布设于罐 底，因此推荐采用这两种阳极。",
+      "condition": "",
+      "constraint": "5.3.5       本条明确了带防渗膜的储罐罐底阴极保护阳极的位置，\n确保了保护电流不被屏蔽。网状阳极或线性阳极更易布设于罐\n底，因此推荐采用这两种阳极。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条明确了带防渗膜的储罐罐底阴极保护阳极的位置， 确保了保护电流不被屏蔽"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49668,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

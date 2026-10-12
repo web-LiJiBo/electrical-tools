@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.2.2.1",
+  "entities": [
+    {
+      "name": "锅炉二氧化硫衡算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2.1 排污许可证中规定要求采用自动监测的排放口或污染物项目而未采用的, 应采用物料衡算法根据不同燃料按照式(3) 式(4)核算二氧化硫的实际排放量, 按直接排放进行核算。使用固体/液体燃料采用式(3)计算实际排放量。使用气体燃料采用式(4)计算实际排放量。燃料中硫分在燃烧后生成二氧化硫的份额K按表1选取。锅炉机械不完全燃烧热损失可根据实测资料或锅炉生产商热平衡计算资料取值, 也可参考表 2取值。",
+      "type": "语义分解",
+      "subject": "锅炉二氧化硫衡算",
+      "action": "",
+      "operation": "未按许可自动监测按燃料公式直排核算",
+      "condition": "",
+      "constraint": "5.2.2.1 排污许可证中规定要求采用自动监测的排放口或污染物项目而未采用的, 应采用物料衡算法根据不同燃料按照式(3) 式(4)核算二氧化硫的实际排放量, 按直接排放进行核算。使用固体/液体燃料采用式(3)计算实际排放量。使用气体燃料采用式(4)计算实际排放量。燃料中硫分在燃烧后生成二氧化硫的份额K按表1选取。锅炉机械不完全燃烧热损失可根据实测资料或锅炉生产商热平衡计算资料取值, 也可参考表 2取值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锅炉二氧化硫衡算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 630,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺式3式4及参数表"
+      ]
+    }
+  }
+}

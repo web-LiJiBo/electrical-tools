@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042720",
+  "entities": [
+    {
+      "name": "本标准主 要 起 草 人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      本标准主 要 起 草 人 : 杨 永 、何 仁 洋 、马 红 莲 、兰 惠 清 、李 晓 刚 、吴 亚 滨 、单 洪 翔 、王 良 军 、陈 秋 雄 、\n王笑梅 、周卫军 、党晓峰 、田一华 、郭强 、徐昌学 、王力 、王善江 。",
+      "type": "语义分解",
+      "subject": "本标准主 要 起 草 人",
+      "action": "",
+      "operation": "本标准主 要 起 草 人 : 杨 永 、何 仁 洋 、马 红 莲 、兰 惠 清 、李 晓 刚 、吴 亚 滨 、单 洪 翔 、王 良 军 、陈 秋 雄 、 王笑梅 、周卫军 、党晓峰 、田一华 、郭强 、徐昌学 、王力 、王善江 。",
+      "condition": "",
+      "constraint": "      本标准主 要 起 草 人 : 杨 永 、何 仁 洋 、马 红 莲 、兰 惠 清 、李 晓 刚 、吴 亚 滨 、单 洪 翔 、王 良 军 、陈 秋 雄 、\n王笑梅 、周卫军 、党晓峰 、田一华 、郭强 、徐昌学 、王力 、王善江 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本标准主 要 起 草 人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42720,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

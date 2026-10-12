@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014548",
+  "entities": [
+    {
+      "name": "对于单向倒换类型，源端与宿端的选择器操作独立",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于单向倒换类型，源端与宿端的选择器操作独立；对于双向倒换类型，源端与宿端需要进行一定\n的协调确保两端的桥接、倒换操作是一致的。双向倒换需要使用APS 信令通道进行协议报文交互。\n\n10.1.7  倒换性能",
+      "type": "语义分解",
+      "subject": "对于单向倒换类型，源端与宿端的选择器操作独立",
+      "action": "",
+      "operation": "对于单向倒换类型，源端与宿端的选择器操作独立；对于双向倒换类型，源端与宿端需要进行一定 的协调确保两端的桥接、倒换操作是一致的。双向倒换需要使用APS 信令通道进行协议报文交互。 10.1.7 倒换性能",
+      "condition": "",
+      "constraint": "   对于单向倒换类型，源端与宿端的选择器操作独立；对于双向倒换类型，源端与宿端需要进行一定\n的协调确保两端的桥接、倒换操作是一致的。双向倒换需要使用APS 信令通道进行协议报文交互。\n\n10.1.7  倒换性能",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于单向倒换类型，源端与宿端的选择器操作独立"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14548,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

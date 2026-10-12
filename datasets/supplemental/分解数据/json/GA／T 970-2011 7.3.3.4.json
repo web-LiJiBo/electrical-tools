@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.3.3.4",
+  "entities": [
+    {
+      "name": "爆炸性泄漏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3.4 爆炸性泄漏介质的处置 爆炸性泄漏介质的处置方法为: 8) 小量泄漏。 使用无火花工具将泄漏介质收集于干燥,洁挣,有盖的防爆容器中 ,转移至安全场所; 6) 大量泄漏 用水润湿 ,然后收集 .转移 回收或运至废物处理场所处置。",
+      "type": "语义分解",
+      "subject": "爆炸性泄漏",
+      "action": "",
+      "operation": "按量无火花防爆干燥容器收集或所述大量处理",
+      "condition": "",
+      "constraint": "7.3.3.4 爆炸性泄漏介质的处置 爆炸性泄漏介质的处置方法为: 8) 小量泄漏。 使用无火花工具将泄漏介质收集于干燥,洁挣,有盖的防爆容器中 ,转移至安全场所; 6) 大量泄漏 用水润湿 ,然后收集 .转移 回收或运至废物处理场所处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆炸性泄漏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5923,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；大量润湿需核对介质相容条件不作通用建议"
+      ]
+    }
+  }
+}

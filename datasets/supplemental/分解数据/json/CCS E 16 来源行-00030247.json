@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00030247",
+  "entities": [
+    {
+      "name": "A.10 隧道内可能存在当前资料中未显示的其他设备设施，能在检查过程中予",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A.10   隧道内可能存在当前资料中未显示的其他设备设施，能在检查过程中予以辨别并及时向管道运\n营单位反馈，根据管道运营单位要求及时调整检测路线或安排相关检测。",
+      "type": "语义分解",
+      "subject": "A.10 隧道内可能存在当前资料中未显示的其他设备设施，能在检查过程中予",
+      "action": "",
+      "operation": "A.10 隧道内可能存在当前资料中未显示的其他设备设施，能在检查过程中予以辨别并及时向管道运 营单位反馈，根据管道运营单位要求及时调整检测路线或安排相关检测。",
+      "condition": "",
+      "constraint": "A.10   隧道内可能存在当前资料中未显示的其他设备设施，能在检查过程中予以辨别并及时向管道运\n营单位反馈，根据管道运营单位要求及时调整检测路线或安排相关检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A.10 隧道内可能存在当前资料中未显示的其他设备设施，能在检查过程中予"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30247,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

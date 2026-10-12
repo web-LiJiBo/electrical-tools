@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023531",
+  "entities": [
+    {
+      "name": "实现调度业务的应用服务器 , 向调度台提供呼叫 、接听 、转移 、代接 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      实现调度业务的应用服务器 , 向调度台提供呼叫 、接听 、转移 、代接 、强插 、强拆 、会议等调度业务 ,负\n责与软交换机进行通信 、控制 ,实现各种类型的调度业务 。\n3. 11",
+      "type": "语义分解",
+      "subject": "实现调度业务的应用服务器 , 向调度台提供呼叫 、接听 、转移 、代接 ",
+      "action": "",
+      "operation": "实现调度业务的应用服务器 , 向调度台提供呼叫 、接听 、转移 、代接 、强插 、强拆 、会议等调度业务 ,负 责与软交换机进行通信 、控制 ,实现各种类型的调度业务 。 3. 11",
+      "condition": "",
+      "constraint": "      实现调度业务的应用服务器 , 向调度台提供呼叫 、接听 、转移 、代接 、强插 、强拆 、会议等调度业务 ,负\n责与软交换机进行通信 、控制 ,实现各种类型的调度业务 。\n3. 11",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实现调度业务的应用服务器 , 向调度台提供呼叫 、接听 、转移 、代接 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23531,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

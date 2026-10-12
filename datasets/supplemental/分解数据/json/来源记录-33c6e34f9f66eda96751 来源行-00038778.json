@@ -1,0 +1,41 @@
+{
+  "standard_name": "前    言",
+  "standard_id": "根据住房和城乡建设部《关于印发2014年工程建设标准规范\n制订修订计划的通知》(建标〔2013〕169号)的要求，标准编制组经\n广泛调查研究，认真总结工程实践经验，参考有关国际标准和国外\n先进标准，并在广泛征求意见的基础上，修订了本标准。",
+  "version": "",
+  "chapter_path": "来源行-00038778",
+  "entities": [
+    {
+      "name": "h———承压水含水层自顶板算起的压力水头高度、潜水含水 层在抽水试验时的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "h———承压水含水层自顶板算起的压力水头高度、潜水含水\n     层在抽水试验时的厚度、潜水含水层在降水前观测孔\n      中的水位高度、水位恢复时的潜水含水层的厚度；\nh——潜水含水层在自然情况下和抽水试验时的厚度平\n     均值；",
+      "type": "语义分解",
+      "subject": "h———承压水含水层自顶板算起的压力水头高度、潜水含水 层在抽水试验时的",
+      "action": "",
+      "operation": "h———承压水含水层自顶板算起的压力水头高度、潜水含水 层在抽水试验时的厚度、潜水含水层在降水前观测孔 中的水位高度、水位恢复时的潜水含水层的厚度； h——潜水含水层在自然情况下和抽水试验时的厚度平 均值",
+      "condition": "",
+      "constraint": "h———承压水含水层自顶板算起的压力水头高度、潜水含水\n     层在抽水试验时的厚度、潜水含水层在降水前观测孔\n      中的水位高度、水位恢复时的潜水含水层的厚度；\nh——潜水含水层在自然情况下和抽水试验时的厚度平\n     均值；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "h———承压水含水层自顶板算起的压力水头高度、潜水含水 层在抽水试验时的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_037",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38778,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；存储文件名使用哈希别名，原始standard_id保留在JSON"
+      ]
+    }
+  }
+}

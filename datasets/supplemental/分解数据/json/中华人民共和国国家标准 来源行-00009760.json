@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009760",
+  "entities": [
+    {
+      "name": "OTN 域间接口应包括单通路和多通路域间接口，域间单 通路和多通路域间接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.6  OTN 域间接口应包括单通路和多通路域间接口，域间单\n通路和多通路域间接口分类及代码参数应符合现行行业标准《光\n传送网( OTN) 物理层接口》YD/T   1634的有关规定。相对应的各\n种光接口参数应符合本标准附录 A 中表 A.0.1-1～ 表 A.0.1-12\n和表A.0.2-1～ 表 A.0.2-5   的有关规定。",
+      "type": "语义分解",
+      "subject": "OTN 域间接口应包括单通路和多通路域间接口，域间单 通路和多通路域间接",
+      "action": "",
+      "operation": "OTN 域间接口应包括单通路和多通路域间接口，域间单 通路和多通路域间接口分类及代码参数应符合现行行业标准《光 传送网( OTN) 物理层接口》YD/T 1634的有关规定。相对应的各 种光接口参数应符合本标准附录 A 中表 A.0.1-1～ 表 A.0.1-12 和表A.0.2-1～ 表 A.0.2-5 的有关规定。",
+      "condition": "",
+      "constraint": "3.3.6  OTN 域间接口应包括单通路和多通路域间接口，域间单\n通路和多通路域间接口分类及代码参数应符合现行行业标准《光\n传送网( OTN) 物理层接口》YD/T   1634的有关规定。相对应的各\n种光接口参数应符合本标准附录 A 中表 A.0.1-1～ 表 A.0.1-12\n和表A.0.2-1～ 表 A.0.2-5   的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 域间接口应包括单通路和多通路域间接口，域间单 通路和多通路域间接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9760,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

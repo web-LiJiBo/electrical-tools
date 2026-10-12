@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.1.7",
+  "entities": [
+    {
+      "name": "监测断面档案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1.7 监测断面布设后应在地图上标明准确位置, 在岸边设置固定标志。 同时,以文字说明断面周围环境的详细情况。并配以照片,相关图文资料均应存入断面档案=",
+      "type": "语义分解",
+      "subject": "监测断面档案",
+      "action": "",
+      "operation": "标明位置设固定标志并存图文环境描述",
+      "condition": "监测断面布设后",
+      "constraint": "4.1.1.7 监测断面布设后应在地图上标明准确位置, 在岸边设置固定标志。 同时,以文字说明断面周围环境的详细情况。并配以照片,相关图文资料均应存入断面档案=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测断面档案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2936,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

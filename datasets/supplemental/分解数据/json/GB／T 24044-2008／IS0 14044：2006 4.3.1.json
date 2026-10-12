@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.3.1",
+  "entities": [
+    {
+      "name": "LCI步骤概述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1 概述 研究目的和范围的确定提供了进行 LCA 中生命周期清单阶段的初始计划。图1列出了生命周期 清单分析宜包括的步骤(注意:一 些反复进行的步骤并没有显示在图1中) = 目的和范围的确定 数据收巢糇备 调檠的数据收集裘 数据收集裘 数据收集 所收集的数据 数据审定 被审定的数据 将数据关联到单兀过程 分配。包括再使用 和再尘利用 每个单元过矬审定的数据 将数据关联到功能单位 每个功能单位审定的数据 数据合并 计算的清单 数据再收集或单 元过程再调整 系统边界的调整 完成的清单 清单分析的简化流程",
+      "type": "语义分解",
+      "subject": "LCI步骤概述",
+      "action": "",
+      "operation": "准备收集审定关联分配合并调整边界清单",
+      "condition": "",
+      "constraint": "4.3.1 概述 研究目的和范围的确定提供了进行 LCA 中生命周期清单阶段的初始计划。图1列出了生命周期 清单分析宜包括的步骤(注意:一 些反复进行的步骤并没有显示在图1中) = 目的和范围的确定 数据收巢糇备 调檠的数据收集裘 数据收集裘 数据收集 所收集的数据 数据审定 被审定的数据 将数据关联到单兀过程 分配。包括再使用 和再尘利用 每个单元过矬审定的数据 将数据关联到功能单位 每个功能单位审定的数据 数据合并 计算的清单 数据再收集或单 元过程再调整 系统边界的调整 完成的清单 清单分析的简化流程",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCI步骤概述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1082,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；流程图文字识别异常"
+      ]
+    }
+  }
+}

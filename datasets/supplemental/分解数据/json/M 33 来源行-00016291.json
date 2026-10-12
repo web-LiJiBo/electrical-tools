@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016291",
+  "entities": [
+    {
+      "name": "个或者多个工作通道共享1个保护通道资源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1个或者多个工作通道共享1个保护通道资源。当超过1个工作通道处于故障状态时，OCh   1:N保\n护类型只能对其中优先级最高的工作通道进行保护。OCh    1:N 保护支持可返回与不可返回两种操作类\n型，并允许用户进行配置。OCh     1:N 保护支持单向倒换与双向倒换，并允许用户进行配置。不管对于\n单向倒换还是双向倒换，OCh1:N    保护都需要在保护组内进行APS 协议交互。OCh1:N   保护可以支持\n额外业务。",
+      "type": "语义分解",
+      "subject": "个或者多个工作通道共享1个保护通道资源",
+      "action": "",
+      "operation": "个或者多个工作通道共享1个保护通道资源。当超过1个工作通道处于故障状态时，OCh 1:N保 护类型只能对其中优先级最高的工作通道进行保护。OCh 1:N 保护支持可返回与不可返回两种操作类 型，并允许用户进行配置。OCh 1:N 保护支持单向倒换与双向倒换，并允许用户进行配置。不管对于 单向倒换还是双向倒换，OCh1:N 保护都需要在保护组内进行APS 协议交互。OCh1:N 保护可以支持 额外业务。",
+      "condition": "",
+      "constraint": "   1个或者多个工作通道共享1个保护通道资源。当超过1个工作通道处于故障状态时，OCh   1:N保\n护类型只能对其中优先级最高的工作通道进行保护。OCh    1:N 保护支持可返回与不可返回两种操作类\n型，并允许用户进行配置。OCh     1:N 保护支持单向倒换与双向倒换，并允许用户进行配置。不管对于\n单向倒换还是双向倒换，OCh1:N    保护都需要在保护组内进行APS 协议交互。OCh1:N   保护可以支持\n额外业务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "个或者多个工作通道共享1个保护通道资源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16291,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

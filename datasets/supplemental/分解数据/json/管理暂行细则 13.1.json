@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "13.1",
+  "entities": [
+    {
+      "name": "温室气体排放核查工作按照国家发布的《企业温室气体核查指南 （试行）》规定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.1 温室气体排放核查工作按照国家发布的《企业温室气体核查指南\n\n（试行）》规定的核查程序组织实施。",
+      "type": "语义分解",
+      "subject": "温室气体排放核查工作按照国家发布的《企业温室气体核查指南 （试行）》规定",
+      "action": "",
+      "operation": "温室气体排放核查工作按照国家发布的《企业温室气体核查指南 （试行）》规定的核查程序组织实施。",
+      "condition": "",
+      "constraint": "13.1 温室气体排放核查工作按照国家发布的《企业温室气体核查指南\n\n（试行）》规定的核查程序组织实施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "温室气体排放核查工作按照国家发布的《企业温室气体核查指南 （试行）》规定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37856,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

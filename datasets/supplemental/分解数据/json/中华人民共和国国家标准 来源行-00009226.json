@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009226",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   高通路速率波分复用系统一般可以支持低速率通路的混传，\n但不推荐无 DCM 的 N×100Gbit/    s DWDM 系统与N×10Gbit/s\nDWDM系统以及非相干接收N×40Gbit/s      DWDM系统混传，不\n推荐有 DCM 的 N×100Gbit/s       DWDM 系统与 N×10Gbit/s\nDWDM 系统以及非相位调制的N×40Gbit/s     DWDM系统混传。\n3.3.3、3.3.4  这两条引自现行行业标准《粗波分复用( CWDM)\n系统技术要求》YD/T     1326—2013,由 于CWDM  均 为NRZ 信号，\t3.6.1  DWDM 系统的收发一体型 OTU  可接入相同速率级别的\n业务，子速率复用型 OTU   可接入低速率级别的业务，中继型\nOTU  实现电中继。收发分离、多收/发合一、多中继合一，线路侧\n(OMU/ODU   侧)和支路侧(客户侧)分离等多种类型OTU  的S/R\n接口和 S,/R„  接口参数点定义同典型 OTU。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   高通路速率波分复用系统一般可以支持低速率通路的混传，\n但不推荐无 DCM 的 N×100Gbit/    s DWDM 系统与N×10Gbit/s\nDWDM系统以及非相干接收N×40Gbit/s      DWDM系统混传，不\n推荐有 DCM 的 N×100Gbit/s       DWDM 系统与 N×10Gbit/s\nDWDM 系统以及非相位调制的N×40Gbit/s     DWDM系统混传。\n3.3.3、3.3.4  这两条引自现行行业标准《粗波分复用( CWDM)\n系统技术要求》YD/T     1326—2013,由 于CWDM  均 为NRZ 信号，\t3.6.1  DWDM 系统的收发一体型 OTU  可接入相同速率级别的\n业务，子速率复用型 OTU   可接入低速率级别的业务，中继型\nOTU  实现电中继。收发分离、多收/发合一、多中继合一，线路侧\n(OMU/ODU   侧)和支路侧(客户侧)分离等多种类型OTU  的S/R\n接口和 S,/R„  接口参数点定义同典型 OTU。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9226,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

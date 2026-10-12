@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "16.2.5",
+  "entities": [
+    {
+      "name": "直埋光电缆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "16.2.5    采用直埋敷设方式时 ,   光  ( 电)  缆应敷设在冻土层以\n下 ,   且不应小于 0. 8m 。  直埋光  ( 电)   缆上方 100mm 处应铺砖\n或水泥盖板保护 。",
+      "type": "语义分解",
+      "subject": "直埋光电缆",
+      "action": "",
+      "operation": "冻土层下深度至少0.8米上方100毫米铺砖或水泥板",
+      "condition": "",
+      "constraint": "16.2.5    采用直埋敷设方式时 ,   光  ( 电)  缆应敷设在冻土层以\n下 ,   且不应小于 0. 8m 。  直埋光  ( 电)   缆上方 100mm 处应铺砖\n或水泥盖板保护 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "直埋光电缆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12190,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

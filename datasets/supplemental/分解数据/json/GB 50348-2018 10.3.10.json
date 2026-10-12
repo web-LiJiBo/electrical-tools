@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "10.3.10",
+  "entities": [
+    {
+      "name": "停车验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.10 停车库(场)安全管理系统应重点检查下列内容: 1 应检查出入控制、车辆识别、行车疏导(车位引导)等功能; 2 应检查停车库(场)内部紧急报警、视频监控、电子巡查等安全防范措施。",
+      "type": "语义分解",
+      "subject": "停车验收",
+      "action": "",
+      "operation": "控制识别引导内部报警视频巡查",
+      "condition": "",
+      "constraint": "10.3.10 停车库(场)安全管理系统应重点检查下列内容: 1 应检查出入控制、车辆识别、行车疏导(车位引导)等功能; 2 应检查停车库(场)内部紧急报警、视频监控、电子巡查等安全防范措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "停车验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7176,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

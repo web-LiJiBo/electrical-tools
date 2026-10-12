@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022849",
+  "entities": [
+    {
+      "name": "交流电源供电系统第一级SPD 的最大通流容量应根据通 信局(站)性质、地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2  交流电源供电系统第一级SPD 的最大通流容量应根据通\n信局(站)性质、地理环境和当地雷暴日大小确定。雷暴日可按本\n规范附录 A 的规定确定，全国年平均雷暴日数区划图可按本规范\n附录 B 的规定确定。",
+      "type": "语义分解",
+      "subject": "交流电源供电系统第一级SPD 的最大通流容量应根据通 信局(站)性质、地",
+      "action": "",
+      "operation": "交流电源供电系统第一级SPD 的最大通流容量应根据通 信局(站)性质、地理环境和当地雷暴日大小确定。雷暴日可按本 规范附录 A 的规定确定，全国年平均雷暴日数区划图可按本规范 附录 B 的规定确定。",
+      "condition": "",
+      "constraint": "   2  交流电源供电系统第一级SPD 的最大通流容量应根据通\n信局(站)性质、地理环境和当地雷暴日大小确定。雷暴日可按本\n规范附录 A 的规定确定，全国年平均雷暴日数区划图可按本规范\n附录 B 的规定确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交流电源供电系统第一级SPD 的最大通流容量应根据通 信局(站)性质、地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22849,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

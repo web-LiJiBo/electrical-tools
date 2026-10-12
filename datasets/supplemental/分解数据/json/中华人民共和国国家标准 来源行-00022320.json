@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022320",
+  "entities": [
+    {
+      "name": "系统、装置和设备的接地所包含的所有电气连接和器件，包括 埋在地中的接地体",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   系统、装置和设备的接地所包含的所有电气连接和器件，包括\n埋在地中的接地体、接地线、与接地体相连的电缆屏蔽层及与接地\n\n体相连的设备外壳或裸露金属部分、建筑物钢筋、构架在内的复杂\n系统。",
+      "type": "语义分解",
+      "subject": "系统、装置和设备的接地所包含的所有电气连接和器件，包括 埋在地中的接地体",
+      "action": "",
+      "operation": "系统、装置和设备的接地所包含的所有电气连接和器件，包括 埋在地中的接地体、接地线、与接地体相连的电缆屏蔽层及与接地 体相连的设备外壳或裸露金属部分、建筑物钢筋、构架在内的复杂 系统。",
+      "condition": "",
+      "constraint": "   系统、装置和设备的接地所包含的所有电气连接和器件，包括\n埋在地中的接地体、接地线、与接地体相连的电缆屏蔽层及与接地\n\n体相连的设备外壳或裸露金属部分、建筑物钢筋、构架在内的复杂\n系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统、装置和设备的接地所包含的所有电气连接和器件，包括 埋在地中的接地体"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22320,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

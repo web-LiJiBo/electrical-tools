@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013200",
+  "entities": [
+    {
+      "name": "C.2 传输性能指标与误码率的特性和限制 C.2.1 传输性能指标特性和",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "C.2    传输性能指标与误码率的特性和限制\n\nC.2.1   传输性能指标特性和限制",
+      "type": "语义分解",
+      "subject": "C.2 传输性能指标与误码率的特性和限制 C.2.1 传输性能指标特性和",
+      "action": "",
+      "operation": "C.2 传输性能指标与误码率的特性和限制 C.2.1 传输性能指标特性和限制",
+      "condition": "",
+      "constraint": "C.2    传输性能指标与误码率的特性和限制\n\nC.2.1   传输性能指标特性和限制",
+      "constraint_role": "informational",
+      "related_entities": [
+        "C.2 传输性能指标与误码率的特性和限制 C.2.1 传输性能指标特性和"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13200,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

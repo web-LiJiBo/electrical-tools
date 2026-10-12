@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040062",
+  "entities": [
+    {
+      "name": "挥发性有机液体装卸栈桥对铁路罐车、汽车罐车进行装载 的设施，挥发性有机液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    挥发性有机液体装卸栈桥对铁路罐车、汽车罐车进行装载\n的设施，挥发性有机液体装卸码头对船(驳)进行装载的设施，以及\n把挥发性有机液体分装到较小容器的分装设施，应密闭并设置有\n机废气收集、回收或处理装置；",
+      "type": "语义分解",
+      "subject": "挥发性有机液体装卸栈桥对铁路罐车、汽车罐车进行装载 的设施，挥发性有机液",
+      "action": "",
+      "operation": "挥发性有机液体装卸栈桥对铁路罐车、汽车罐车进行装载 的设施，挥发性有机液体装卸码头对船(驳)进行装载的设施，以及 把挥发性有机液体分装到较小容器的分装设施，应密闭并设置有 机废气收集、回收或处理装置",
+      "condition": "",
+      "constraint": "       1    挥发性有机液体装卸栈桥对铁路罐车、汽车罐车进行装载\n的设施，挥发性有机液体装卸码头对船(驳)进行装载的设施，以及\n把挥发性有机液体分装到较小容器的分装设施，应密闭并设置有\n机废气收集、回收或处理装置；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发性有机液体装卸栈桥对铁路罐车、汽车罐车进行装载 的设施，挥发性有机液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40062,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

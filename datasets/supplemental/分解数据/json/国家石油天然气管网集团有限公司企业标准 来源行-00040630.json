@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040630",
+  "entities": [
+    {
+      "name": "管道、站场、阀室，施工作业带，伴行路及施工道路修筑，临时设施占压，弃土弃",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   管道、站场、阀室，施工作业带，伴行路及施工道路修筑，临时设施占压，弃土弃渣堆放场、取土\n场开挖等施工扰动或间接影响原有生态系统的区域。",
+      "type": "语义分解",
+      "subject": "管道、站场、阀室，施工作业带，伴行路及施工道路修筑，临时设施占压，弃土弃",
+      "action": "",
+      "operation": "管道、站场、阀室，施工作业带，伴行路及施工道路修筑，临时设施占压，弃土弃渣堆放场、取土 场开挖等施工扰动或间接影响原有生态系统的区域。",
+      "condition": "",
+      "constraint": "   管道、站场、阀室，施工作业带，伴行路及施工道路修筑，临时设施占压，弃土弃渣堆放场、取土\n场开挖等施工扰动或间接影响原有生态系统的区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道、站场、阀室，施工作业带，伴行路及施工道路修筑，临时设施占压，弃土弃"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40630,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

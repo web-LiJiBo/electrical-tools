@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "6.2.4",
+  "entities": [
+    {
+      "name": "管道壁厚应进行定量检测，腐蚀严重部位应进行腐蚀深 度、轴向长度和环向长度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.4   管道壁厚应进行定量检测，腐蚀严重部位应进行腐蚀深\n度、轴向长度和环向长度的测量。采用超声波检测方法进行腐\n蚀深度和面积测量时，宜按附录E 进行。",
+      "type": "语义分解",
+      "subject": "管道壁厚应进行定量检测，腐蚀严重部位应进行腐蚀深 度、轴向长度和环向长度",
+      "action": "",
+      "operation": "管道壁厚应进行定量检测，腐蚀严重部位应进行腐蚀深 度、轴向长度和环向长度的测量。采用超声波检测方法进行腐 蚀深度和面积测量时，宜按附录E 进行。",
+      "condition": "",
+      "constraint": "6.2.4   管道壁厚应进行定量检测，腐蚀严重部位应进行腐蚀深\n度、轴向长度和环向长度的测量。采用超声波检测方法进行腐\n蚀深度和面积测量时，宜按附录E 进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道壁厚应进行定量检测，腐蚀严重部位应进行腐蚀深 度、轴向长度和环向长度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46105,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

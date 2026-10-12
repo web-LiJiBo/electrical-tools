@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "8.5.1.1",
+  "entities": [
+    {
+      "name": "人体有毒沾染",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.1.1 对于有毒泄漏介质 ,先用纱布或棉布吸去人体表面沾粱的可见毒液或可疑液滴;然后根据有毒性泄漏介质的特性,选用相应的洗消剂对皮肤进行清洗;再利用约 40 %温水 (可加中性肥皂水或冼涤剂)冲冼",
+      "type": "语义分解",
+      "subject": "人体有毒沾染",
+      "action": "",
+      "operation": "吸去可见液按介质选洗消剂再适当温水冲洗",
+      "condition": "",
+      "constraint": "8.5.1.1 对于有毒泄漏介质 ,先用纱布或棉布吸去人体表面沾粱的可见毒液或可疑液滴;然后根据有毒性泄漏介质的特性,选用相应的洗消剂对皮肤进行清洗;再利用约 40 %温水 (可加中性肥皂水或冼涤剂)冲冼",
+      "constraint_role": "informational",
+      "related_entities": [
+        "人体有毒沾染"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5957,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；约40%温水单位异常不得换为温度或直接医疗建议"
+      ]
+    }
+  }
+}

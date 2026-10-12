@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "3.1.1",
+  "entities": [
+    {
+      "name": "施加阴极保护的管道宜与未施加阴极保护的金属构筑物 电绝缘",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.1   施加阴极保护的管道宜与未施加阴极保护的金属构筑物\n电绝缘；不同阴极保护系统间宜进行电绝缘；不同金属材质之\n间宜电绝缘。",
+      "type": "语义分解",
+      "subject": "施加阴极保护的管道宜与未施加阴极保护的金属构筑物 电绝缘",
+      "action": "",
+      "operation": "施加阴极保护的管道宜与未施加阴极保护的金属构筑物 电绝缘；不同阴极保护系统间宜进行电绝缘；不同金属材质之 间宜电绝缘。",
+      "condition": "",
+      "constraint": "3.1.1   施加阴极保护的管道宜与未施加阴极保护的金属构筑物\n电绝缘；不同阴极保护系统间宜进行电绝缘；不同金属材质之\n间宜电绝缘。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施加阴极保护的管道宜与未施加阴极保护的金属构筑物 电绝缘"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44285,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

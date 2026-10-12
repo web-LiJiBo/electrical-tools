@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048208",
+  "entities": [
+    {
+      "name": "一种采用结构化过程的完整性评价方法，即通过整合管道 物理特性、系统的运行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   一种采用结构化过程的完整性评价方法，即通过整合管道\n物理特性、系统的运行记录或检测、检查和评价结果的管段等\n信息，给出预测性的管道完整性评价结论。",
+      "type": "语义分解",
+      "subject": "一种采用结构化过程的完整性评价方法，即通过整合管道 物理特性、系统的运行",
+      "action": "",
+      "operation": "一种采用结构化过程的完整性评价方法，即通过整合管道 物理特性、系统的运行记录或检测、检查和评价结果的管段等 信息，给出预测性的管道完整性评价结论。",
+      "condition": "",
+      "constraint": "   一种采用结构化过程的完整性评价方法，即通过整合管道\n物理特性、系统的运行记录或检测、检查和评价结果的管段等\n信息，给出预测性的管道完整性评价结论。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一种采用结构化过程的完整性评价方法，即通过整合管道 物理特性、系统的运行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48208,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

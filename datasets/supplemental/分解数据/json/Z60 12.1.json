@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "12.1",
+  "entities": [
+    {
+      "name": "企业自行监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.1 企业应按照有关法律、《环境监测管理办法》和HJ 819等规定，建立企业监测制度，制订监测方\n案，对污染物排放状况及其对周边环境质量的影响开展自行监测，保存原始监测记录，并公布监测结果。\n12.2    新建企业和现有企业安装污染物排放自动监控设备的要求，按有关法律和《污染源自动监控管理\n办法》等规定执行。",
+      "type": "语义分解",
+      "subject": "企业自行监测",
+      "action": "",
+      "operation": "制度方案排放周边影响记录公布自动监控按规定",
+      "condition": "",
+      "constraint": "12.1 企业应按照有关法律、《环境监测管理办法》和HJ 819等规定，建立企业监测制度，制订监测方\n案，对污染物排放状况及其对周边环境质量的影响开展自行监测，保存原始监测记录，并公布监测结果。\n12.2    新建企业和现有企业安装污染物排放自动监控设备的要求，按有关法律和《污染源自动监控管理\n办法》等规定执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业自行监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33457,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

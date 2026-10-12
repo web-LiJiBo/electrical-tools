@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034572",
+  "entities": [
+    {
+      "name": "一探头",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1一探头 ; 2一系统检查的气体进 口 ; 3一样品管道 ; 4一过滤器 ; 5一样品泵 ; 6一背压调节器 ;\n7一NO2 → NO转换器 ; 8一仪器校准的气体进 口 ; 9一冷凝器 /分离器(运行温度 ≤3℃) ;\n10一分析器 ; 11一加热部分 ; 12一至通风口的抽吸泵(如果要求 ) ; 13一sO工→ sO2  转换器 ;",
+      "type": "语义分解",
+      "subject": "一探头",
+      "action": "",
+      "operation": "一探头 ; 2一系统检查的气体进 口 ; 3一样品管道 ; 4一过滤器 ; 5一样品泵 ; 6一背压调节器 ; 7一NO2 → NO转换器 ; 8一仪器校准的气体进 口 ; 9一冷凝器 /分离器(运行温度 ≤3℃) ; 10一分析器 ; 11一加热部分 ; 12一至通风口的抽吸泵(如果要求 ) ; 13一sO工→ sO2 转换器",
+      "condition": "",
+      "constraint": "1一探头 ; 2一系统检查的气体进 口 ; 3一样品管道 ; 4一过滤器 ; 5一样品泵 ; 6一背压调节器 ;\n7一NO2 → NO转换器 ; 8一仪器校准的气体进 口 ; 9一冷凝器 /分离器(运行温度 ≤3℃) ;\n10一分析器 ; 11一加热部分 ; 12一至通风口的抽吸泵(如果要求 ) ; 13一sO工→ sO2  转换器 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一探头"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34572,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

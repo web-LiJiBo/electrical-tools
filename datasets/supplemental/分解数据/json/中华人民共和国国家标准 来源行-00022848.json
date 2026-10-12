@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022848",
+  "entities": [
+    {
+      "name": "通信局(站)各级保护点可根据实际情况选择在变压器低 压侧、低压配电室(柜",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1     通信局(站)各级保护点可根据实际情况选择在变压器低\n压侧、低压配电室(柜)、楼内(层)配电室(井)、交流配电屏(箱)、用\n电设备配电柜及精细用电设备端口等处。多级保护应根据当地的\n雷电环境因素、供电系统的分布范围、分布特点及站内等电位连接\n情况确定。",
+      "type": "语义分解",
+      "subject": "通信局(站)各级保护点可根据实际情况选择在变压器低 压侧、低压配电室(柜",
+      "action": "",
+      "operation": "通信局(站)各级保护点可根据实际情况选择在变压器低 压侧、低压配电室(柜)、楼内(层)配电室(井)、交流配电屏(箱)、用 电设备配电柜及精细用电设备端口等处。多级保护应根据当地的 雷电环境因素、供电系统的分布范围、分布特点及站内等电位连接 情况确定。",
+      "condition": "",
+      "constraint": "       1     通信局(站)各级保护点可根据实际情况选择在变压器低\n压侧、低压配电室(柜)、楼内(层)配电室(井)、交流配电屏(箱)、用\n电设备配电柜及精细用电设备端口等处。多级保护应根据当地的\n雷电环境因素、供电系统的分布范围、分布特点及站内等电位连接\n情况确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信局(站)各级保护点可根据实际情况选择在变压器低 压侧、低压配电室(柜"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22848,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

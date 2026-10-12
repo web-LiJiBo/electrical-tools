@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "3.5",
+  "entities": [
+    {
+      "name": "救援管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5   应急救援机构应建立队伍管理、训练、演练、物资(车辆、器材、人身防护器具、通信设施)\n等方面的管理制度，编制设备操作、器材维护、训练、救援等规程，做好日常训练、接处警、现场处\n置、演练等文字、影像资料管理。",
+      "type": "语义分解",
+      "subject": "救援管理",
+      "action": "",
+      "operation": "建队伍训练物资制度操作维护救援规程管理资料",
+      "condition": "",
+      "constraint": "3.5   应急救援机构应建立队伍管理、训练、演练、物资(车辆、器材、人身防护器具、通信设施)\n等方面的管理制度，编制设备操作、器材维护、训练、救援等规程，做好日常训练、接处警、现场处\n置、演练等文字、影像资料管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "救援管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28822,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

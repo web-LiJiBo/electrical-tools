@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "7.2",
+  "entities": [
+    {
+      "name": "温排水遥感监测数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2 监测数据应包括原始遥感数据,预处理后遥感数据,海表温度反演结果数据和温升监测结果数据, 相关要求见 GBII 34514和5.2.7表1。",
+      "type": "语义分解",
+      "subject": "温排水遥感监测数据",
+      "action": "",
+      "operation": "保存原始预处理反演温升结果",
+      "condition": "",
+      "constraint": "7.2 监测数据应包括原始遥感数据,预处理后遥感数据,海表温度反演结果数据和温升监测结果数据, 相关要求见 GBII 34514和5.2.7表1。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "温排水遥感监测数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1962,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用标准号识别异常；缺表1"
+      ]
+    }
+  }
+}

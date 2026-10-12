@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003848",
+  "entities": [
+    {
+      "name": "二级动火作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 二级动火作业:除特级动火作业和一级动火作业以外的动火作业。生产装置或系统全部停车，装置经清洗、置换、分析合格并采取安全隔离措施后，根据其火灾、爆炸危险性大小，经危险化学品企业生产负责人或安全管理负责人批准，动火作业可按二级动火作业管理。",
+      "type": "语义分解",
+      "subject": "二级动火作业",
+      "action": "",
+      "operation": "二级动火作业:除特级动火作业和一级动火作业以外的动火作业。生产装置或系统全部停车，装置经清洗、置换、分析合格并采取安全隔离措施后，根据其火灾、爆炸危险性大小，经危险化学品企业生产负责人或安全管理负责人批准，动火作业可按二级动火作业管理。",
+      "condition": "",
+      "constraint": "5.1.4 二级动火作业:除特级动火作业和一级动火作业以外的动火作业。生产装置或系统全部停车，装置经清洗、置换、分析合格并采取安全隔离措施后，根据其火灾、爆炸危险性大小，经危险化学品企业生产负责人或安全管理负责人批准，动火作业可按二级动火作业管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级动火作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3848,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

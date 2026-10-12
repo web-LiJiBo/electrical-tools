@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第3部分: 动火作业",
+  "standard_id": "Q/GGW 04003.3-2022",
+  "version": "2022",
+  "chapter_path": "4.7",
+  "entities": [
+    {
+      "name": "油气储罐动火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7 不应在运行的油气储罐罐体上动火,储罐动火作业前应清除罐内油品及可燃物,完成置换通风并使罐内气体检测合格。",
+      "type": "语义分解",
+      "subject": "油气储罐动火",
+      "action": "",
+      "operation": "禁止运行罐体动火且作业前清除置换检测",
+      "condition": "",
+      "constraint": "4.7 不应在运行的油气储罐罐体上动火,储罐动火作业前应清除罐内油品及可燃物,完成置换通风并使罐内气体检测合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气储罐动火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6079,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

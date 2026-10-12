@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.7.2.9",
+  "entities": [
+    {
+      "name": "控制室及办公布置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.2.9 涉及爆炸性危险化学品的生产装置控制室 ,交接班室不应布置在装置区内;涉及甲 ,乙类火灾 危险性的生产装置控制室 ,交接班室不宜布置在装置区内 ,确需布置的 ,应按照 GB 50779 进行抗爆设 计。具有甲 ,乙类火灾危险性 .粉尘爆炸危险性 .中毒危险性的厂房(含装置或车间 )和仓库内 ,不应设置 办公室 .休息室 .外操室 .巡检室",
+      "type": "语义分解",
+      "subject": "控制室及办公布置",
+      "action": "",
+      "operation": "爆炸性装置控制交班室禁区内甲乙不宜确需抗爆危险厂仓禁办公休息外操巡检室",
+      "condition": "",
+      "constraint": "4.7.2.9 涉及爆炸性危险化学品的生产装置控制室 ,交接班室不应布置在装置区内;涉及甲 ,乙类火灾 危险性的生产装置控制室 ,交接班室不宜布置在装置区内 ,确需布置的 ,应按照 GB 50779 进行抗爆设 计。具有甲 ,乙类火灾危险性 .粉尘爆炸危险性 .中毒危险性的厂房(含装置或车间 )和仓库内 ,不应设置 办公室 .休息室 .外操室 .巡检室",
+      "constraint_role": "informational",
+      "related_entities": [
+        "控制室及办公布置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

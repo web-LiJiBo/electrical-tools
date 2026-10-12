@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "4.1.7",
+  "entities": [
+    {
+      "name": "集输设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.7 油气集输站场使用的电气设备应符合防火防爆安全技术要求 ;配备消防设施。器材,制订防火 防爆应急预案。站场平面布置和防火间距应符合防火设计规范的要求",
+      "type": "语义分解",
+      "subject": "集输设施",
+      "action": "",
+      "operation": "电气防火防爆消防预案及平面间距符合规定",
+      "condition": "",
+      "constraint": "4.1.7 油气集输站场使用的电气设备应符合防火防爆安全技术要求 ;配备消防设施。器材,制订防火 防爆应急预案。站场平面布置和防火间距应符合防火设计规范的要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集输设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

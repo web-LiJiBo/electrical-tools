@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.2.2.7",
+  "entities": [
+    {
+      "name": "浮盘通气呼吸阀",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.7 自动通气阀在浮盘处于漂浮状态时应关闭且密封良好，仅在浮盘处于支座支撑状态时可开启。\n4.2.2.8    边缘呼吸阀在浮盘处于漂浮状态时应密封良好，并定期检查定压是否符合设定要求。",
+      "type": "语义分解",
+      "subject": "浮盘通气呼吸阀",
+      "action": "",
+      "operation": "漂浮关闭密封支撑时可开呼吸阀密封定压定检",
+      "condition": "",
+      "constraint": "4.2.2.7 自动通气阀在浮盘处于漂浮状态时应关闭且密封良好，仅在浮盘处于支座支撑状态时可开启。\n4.2.2.8    边缘呼吸阀在浮盘处于漂浮状态时应密封良好，并定期检查定压是否符合设定要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "浮盘通气呼吸阀"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32736,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

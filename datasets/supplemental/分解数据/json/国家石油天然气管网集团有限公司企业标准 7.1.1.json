@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "7.1.1",
+  "entities": [
+    {
+      "name": "生态恢复施工组织应结合工程实际情况，提出施工组织的实施方案，明确相应的施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1      生态恢复施工组织应结合工程实际情况，提出施工组织的实施方案，明确相应的施工材料、施\n工方法和要求、施工场地布置与施工进度，做好施工管理。",
+      "type": "语义分解",
+      "subject": "生态恢复施工组织应结合工程实际情况，提出施工组织的实施方案，明确相应的施",
+      "action": "",
+      "operation": "生态恢复施工组织应结合工程实际情况，提出施工组织的实施方案，明确相应的施工材料、施 工方法和要求、施工场地布置与施工进度，做好施工管理。",
+      "condition": "",
+      "constraint": "7.1.1      生态恢复施工组织应结合工程实际情况，提出施工组织的实施方案，明确相应的施工材料、施\n工方法和要求、施工场地布置与施工进度，做好施工管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态恢复施工组织应结合工程实际情况，提出施工组织的实施方案，明确相应的施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40786,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

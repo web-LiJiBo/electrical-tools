@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "5.2.5.1",
+  "entities": [
+    {
+      "name": "防火爆考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.5.1 防火防爆: a) 了解基本概念; b) 了解燃烧的条件，燃烧过程及形成; 熟悉爆炸的分类，爆炸极限及影响因素，可燃气体爆炸，蒸气爆炸，粉尘爆炸; c) 掌握火灾爆炸的基本预防措施。",
+      "type": "语义分解",
+      "subject": "防火爆考核",
+      "action": "",
+      "operation": "了解燃烧概念条件过程熟悉爆炸掌握预防措施",
+      "condition": "",
+      "constraint": "5.2.5.1 防火防爆: a) 了解基本概念; b) 了解燃烧的条件，燃烧过程及形成; 熟悉爆炸的分类，爆炸极限及影响因素，可燃气体爆炸，蒸气爆炸，粉尘爆炸; c) 掌握火灾爆炸的基本预防措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防火爆考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；考核内容"
+      ]
+    }
+  }
+}

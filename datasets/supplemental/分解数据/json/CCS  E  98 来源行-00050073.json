@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050073",
+  "entities": [
+    {
+      "name": "A.2.2 按图A.2.2 连接临时阴极保护装置，临时阳极地床距管 道距",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A.2.2   按图A.2.2 连接临时阴极保护装置，临时阳极地床距管\n道距离不小于100m,  应使恒电位仪或直流电源正极接地床，负\n极接管道；当采用直流电源时将变阻箱串联接入直流电源正极\n与临时阳极地床电路中。",
+      "type": "语义分解",
+      "subject": "A.2.2 按图A.2.2 连接临时阴极保护装置，临时阳极地床距管 道距",
+      "action": "",
+      "operation": "A.2.2 按图A.2.2 连接临时阴极保护装置，临时阳极地床距管 道距离不小于100m, 应使恒电位仪或直流电源正极接地床，负 极接管道；当采用直流电源时将变阻箱串联接入直流电源正极 与临时阳极地床电路中。",
+      "condition": "",
+      "constraint": "A.2.2   按图A.2.2 连接临时阴极保护装置，临时阳极地床距管\n道距离不小于100m,  应使恒电位仪或直流电源正极接地床，负\n极接管道；当采用直流电源时将变阻箱串联接入直流电源正极\n与临时阳极地床电路中。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A.2.2 按图A.2.2 连接临时阴极保护装置，临时阳极地床距管 道距"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50073,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

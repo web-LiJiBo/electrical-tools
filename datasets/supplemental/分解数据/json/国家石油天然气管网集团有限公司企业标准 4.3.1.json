@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.3.1",
+  "entities": [
+    {
+      "name": "生态恢复工作程序主要包括调查与评价、生态恢复设计、组织实施、管理维护、监",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1        生态恢复工作程序主要包括调查与评价、生态恢复设计、组织实施、管理维护、监测评估与持\n续改进、验收，基本工作流程见图1。各阶段主要工作内容如下：",
+      "type": "语义分解",
+      "subject": "生态恢复工作程序主要包括调查与评价、生态恢复设计、组织实施、管理维护、监",
+      "action": "",
+      "operation": "生态恢复工作程序主要包括调查与评价、生态恢复设计、组织实施、管理维护、监测评估与持 续改进、验收，基本工作流程见图1。各阶段主要工作内容如下",
+      "condition": "",
+      "constraint": "4.3.1        生态恢复工作程序主要包括调查与评价、生态恢复设计、组织实施、管理维护、监测评估与持\n续改进、验收，基本工作流程见图1。各阶段主要工作内容如下：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态恢复工作程序主要包括调查与评价、生态恢复设计、组织实施、管理维护、监"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40663,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

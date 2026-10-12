@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009926",
+  "entities": [
+    {
+      "name": "应符合技术先进、安全可靠、经济适用、节能环保的原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    应符合技术先进、安全可靠、经济适用、节能环保的原则；\n      2    设备应具有灵活的、最少品种的硬件配置，有利于系统扩\n\n容及升级；",
+      "type": "语义分解",
+      "subject": "应符合技术先进、安全可靠、经济适用、节能环保的原则",
+      "action": "",
+      "operation": "应符合技术先进、安全可靠、经济适用、节能环保的原则； 2 设备应具有灵活的、最少品种的硬件配置，有利于系统扩 容及升级",
+      "condition": "",
+      "constraint": "       1    应符合技术先进、安全可靠、经济适用、节能环保的原则；\n      2    设备应具有灵活的、最少品种的硬件配置，有利于系统扩\n\n容及升级；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应符合技术先进、安全可靠、经济适用、节能环保的原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9926,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

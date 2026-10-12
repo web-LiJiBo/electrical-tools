@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "10.5.1",
+  "entities": [
+    {
+      "name": "工程竣工文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.5.1       工程完工后，施工单位应及时编制竣工文件。\n10.5.2     竣工文件应包含下列内容：",
+      "type": "语义分解",
+      "subject": "工程竣工文件",
+      "action": "",
+      "operation": "施工单位完工后及时编制并包含所列内容",
+      "condition": "",
+      "constraint": "10.5.1       工程完工后，施工单位应及时编制竣工文件。\n10.5.2     竣工文件应包含下列内容：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程竣工文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10173,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含10.5.1及10.5.2内容清单缺失"
+      ]
+    }
+  }
+}

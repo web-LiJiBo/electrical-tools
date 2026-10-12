@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021824",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a括号内的频率值仅用于某些国内接口，更多的滤波器特性信息见ITU-T0.172。\n\nb该限值与图191a)、b)、c)指针序列相关， T2>0.75s,T3=2ms。\nc 0.4UI和0.075 UI限值与图190 a、b、c指针序列相关。0.75 UI限值与图191d指针序列相关。 T2和T3值待\n定，假定相反极性指针调整在时间上充分分开，也就是调整周期大于去同步器时间常数。\n注：图191g指针序列仅用于AU-4等级，抖动和漂移值待定。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "a括号内的频率值仅用于某些国内接口，更多的滤波器特性信息见ITU-T0.172。\n\nb该限值与图191a)、b)、c)指针序列相关， T2>0.75s,T3=2ms。\nc 0.4UI和0.075 UI限值与图190 a、b、c指针序列相关。0.75 UI限值与图191d指针序列相关。 T2和T3值待\n定，假定相反极性指针调整在时间上充分分开，也就是调整周期大于去同步器时间常数。\n注：图191g指针序列仅用于AU-4等级，抖动和漂移值待定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21824,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

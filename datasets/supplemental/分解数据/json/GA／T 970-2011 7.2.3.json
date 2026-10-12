@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.2.3",
+  "entities": [
+    {
+      "name": "泄漏气体放空点燃",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3 放空点燃 无法处理的且能被点燃以降低危险的泄漏气体 ,可通过临时设置导管 ,采用自然方式或用排风机将其送至空旷地方 ,利用装设适当喷头烧掉。",
+      "type": "语义分解",
+      "subject": "泄漏气体放空点燃",
+      "action": "",
+      "operation": "符合原文特定条件可采用处置方案",
+      "condition": "",
+      "constraint": "7.2.3 放空点燃 无法处理的且能被点燃以降低危险的泄漏气体 ,可通过临时设置导管 ,采用自然方式或用排风机将其送至空旷地方 ,利用装设适当喷头烧掉。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泄漏气体放空点燃"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5912,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；高风险处置需专业指挥，不转为自动控制"
+      ]
+    }
+  }
+}

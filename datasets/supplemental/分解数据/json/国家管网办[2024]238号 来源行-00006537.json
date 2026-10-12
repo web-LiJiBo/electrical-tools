@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006537",
+  "entities": [
+    {
+      "name": "第七十九条 [管线打开作业实施要求 ] (五)作业人员应在上风向作业,不",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第七十九条 [管线打开作业实施要求 ] (五)作业人员应在上风向作业,不得正对法兰缝隙; 在拆除螺栓时,应按对称。夹花拆除,拆除最后两条对称螺栓前应再次确认管道或设备内无压力。如需拆卸法兰的管道距离支架较远 ,应加临时支架或吊架,防止拆开法兰螺栓后管线下垂。",
+      "type": "语义分解",
+      "subject": "第七十九条 [管线打开作业实施要求 ] (五)作业人员应在上风向作业,不",
+      "action": "",
+      "operation": "第七十九条 [管线打开作业实施要求 ] (五)作业人员应在上风向作业,不得正对法兰缝隙; 在拆除螺栓时,应按对称。夹花拆除,拆除最后两条对称螺栓前应再次确认管道或设备内无压力。如需拆卸法兰的管道距离支架较远 ,应加临时支架或吊架,防止拆开法兰螺栓后管线下垂。",
+      "condition": "",
+      "constraint": "第七十九条 [管线打开作业实施要求 ] (五)作业人员应在上风向作业,不得正对法兰缝隙; 在拆除螺栓时,应按对称。夹花拆除,拆除最后两条对称螺栓前应再次确认管道或设备内无压力。如需拆卸法兰的管道距离支架较远 ,应加临时支架或吊架,防止拆开法兰螺栓后管线下垂。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第七十九条 [管线打开作业实施要求 ] (五)作业人员应在上风向作业,不"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6537,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

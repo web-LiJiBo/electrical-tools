@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.1.6",
+  "entities": [
+    {
+      "name": "排污许可监察材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.6 排污许可证监察工作中形成的对排污许可证的审核发证。监察管理。吊销。现场调耷。询问笔录等文件材料 , 由形成文件材料的责任者负责收集积累",
+      "type": "语义分解",
+      "subject": "排污许可监察材料",
+      "action": "",
+      "operation": "形成责任者收集审核监察调查记录",
+      "condition": "",
+      "constraint": "4.1.6 排污许可证监察工作中形成的对排污许可证的审核发证。监察管理。吊销。现场调耷。询问笔录等文件材料 , 由形成文件材料的责任者负责收集积累",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污许可监察材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3052,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

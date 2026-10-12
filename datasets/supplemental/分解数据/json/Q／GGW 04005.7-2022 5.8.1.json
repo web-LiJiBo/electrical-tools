@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.8.1",
+  "entities": [
+    {
+      "name": "储库VOCs核算方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8.1 挥发性有机物可参照 《石化行业 VOCs 污染源排查工作指南》 ,利用 《石化行业 VOCs 污染源排查参考计算表格》进行计算, 也可参照 《工业源挥发性有机物通用源项产排污核算系数手册》 ,按 5.8.2 5.8.5 计算。",
+      "type": "语义分解",
+      "subject": "储库VOCs核算方法",
+      "action": "",
+      "operation": "选排查指南表格或源项系数法",
+      "condition": "",
+      "constraint": "5.8.1 挥发性有机物可参照 《石化行业 VOCs 污染源排查工作指南》 ,利用 《石化行业 VOCs 污染源排查参考计算表格》进行计算, 也可参照 《工业源挥发性有机物通用源项产排污核算系数手册》 ,按 5.8.2 5.8.5 计算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储库VOCs核算方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 645,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037278",
+  "entities": [
+    {
+      "name": "AD购入热 ——报告期间内购入热量，单位为吉焦 (GJ)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "AD购入热 ——报告期间内购入热量，单位为吉焦 (GJ);\nAD输出热——报告期间内输出热量，单位为吉焦 (GJ);",
+      "type": "语义分解",
+      "subject": "AD购入热 ——报告期间内购入热量，单位为吉焦 (GJ)",
+      "action": "",
+      "operation": "AD购入热 ——报告期间内购入热量，单位为吉焦 (GJ); AD输出热——报告期间内输出热量，单位为吉焦 (GJ)",
+      "condition": "",
+      "constraint": "AD购入热 ——报告期间内购入热量，单位为吉焦 (GJ);\nAD输出热——报告期间内输出热量，单位为吉焦 (GJ);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "AD购入热 ——报告期间内购入热量，单位为吉焦 (GJ)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37278,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

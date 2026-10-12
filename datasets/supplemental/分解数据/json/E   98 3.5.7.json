@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "3.5.7",
+  "entities": [
+    {
+      "name": "完全屏蔽阴极保护电流的套管目前使用的很少，此种方 式的目的就是通过在管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5.7    完全屏蔽阴极保护电流的套管目前使用的很少，此种方\n式的目的就是通过在管道外侧提供足够大的绝缘层来消除管道\n的腐蚀。因此，不但填充的材料需要是高绝缘型材料，而且套\n管的两端需要非常完好的密封，避免水、泥等导电介质渗入引\n起套管内管道的腐蚀。",
+      "type": "语义分解",
+      "subject": "完全屏蔽阴极保护电流的套管目前使用的很少，此种方 式的目的就是通过在管道",
+      "action": "",
+      "operation": "完全屏蔽阴极保护电流的套管目前使用的很少，此种方 式的目的就是通过在管道外侧提供足够大的绝缘层来消除管道 的腐蚀。因此，不但填充的材料需要是高绝缘型材料，而且套 管的两端需要非常完好的密封，避免水、泥等导电介质渗入引 起套管内管道的腐蚀。",
+      "condition": "",
+      "constraint": "3.5.7    完全屏蔽阴极保护电流的套管目前使用的很少，此种方\n式的目的就是通过在管道外侧提供足够大的绝缘层来消除管道\n的腐蚀。因此，不但填充的材料需要是高绝缘型材料，而且套\n管的两端需要非常完好的密封，避免水、泥等导电介质渗入引\n起套管内管道的腐蚀。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "完全屏蔽阴极保护电流的套管目前使用的很少，此种方 式的目的就是通过在管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44538,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

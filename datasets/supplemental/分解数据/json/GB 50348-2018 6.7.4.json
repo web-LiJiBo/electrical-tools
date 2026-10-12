@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.7.4",
+  "entities": [
+    {
+      "name": "线路抗干扰",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.4 传输线路的抗干扰设计应符合下列规定: 1 安全防范系统线缆宜单独管槽敷设，可与相同信号电压等级的其他线路合用管槽; 2 220VAC以上的供电电缆与信号传输电缆宜分开敷设，当受条件限制必须并行靠近敷设时，应采取屏蔽或隔离措施; 3 室内信号传输线缆、电梯安防专用电缆宜采取屏蔽措施。",
+      "type": "语义分解",
+      "subject": "线路抗干扰",
+      "action": "",
+      "operation": "宜独槽同电压可共槽220VAC以上供电信号宜分开近并则屏隔室内电梯宜屏蔽",
+      "condition": "",
+      "constraint": "6.7.4 传输线路的抗干扰设计应符合下列规定: 1 安全防范系统线缆宜单独管槽敷设，可与相同信号电压等级的其他线路合用管槽; 2 220VAC以上的供电电缆与信号传输电缆宜分开敷设，当受条件限制必须并行靠近敷设时，应采取屏蔽或隔离措施; 3 室内信号传输线缆、电梯安防专用电缆宜采取屏蔽措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "线路抗干扰"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7012,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

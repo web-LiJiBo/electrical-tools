@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014537",
+  "entities": [
+    {
+      "name": "对于可返回操作类型，当倒换请求终止时候，业务总是返回到(保持在)工作通道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于可返回操作类型，当倒换请求终止时候，业务总是返回到(保持在)工作通道上。对于外部命\n令清除的情况，回复操作将立即执行。对于故障消失的情况，回复操作将等待WTR 时间后进行。\n\n   对于不可返回操作类型，当倒换请求终止的时候，业务不需要返回到工作通道上。",
+      "type": "语义分解",
+      "subject": "对于可返回操作类型，当倒换请求终止时候，业务总是返回到(保持在)工作通道",
+      "action": "",
+      "operation": "对于可返回操作类型，当倒换请求终止时候，业务总是返回到(保持在)工作通道上。对于外部命 令清除的情况，回复操作将立即执行。对于故障消失的情况，回复操作将等待WTR 时间后进行。 对于不可返回操作类型，当倒换请求终止的时候，业务不需要返回到工作通道上。",
+      "condition": "",
+      "constraint": "   对于可返回操作类型，当倒换请求终止时候，业务总是返回到(保持在)工作通道上。对于外部命\n令清除的情况，回复操作将立即执行。对于故障消失的情况，回复操作将等待WTR 时间后进行。\n\n   对于不可返回操作类型，当倒换请求终止的时候，业务不需要返回到工作通道上。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于可返回操作类型，当倒换请求终止时候，业务总是返回到(保持在)工作通道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14537,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

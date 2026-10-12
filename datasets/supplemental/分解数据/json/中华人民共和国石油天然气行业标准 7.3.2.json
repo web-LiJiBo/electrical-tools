@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.3.2",
+  "entities": [
+    {
+      "name": "站内摄像机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2    站内工业电视摄像机应根据工艺站场安全防范管理的需\n要设置 。压缩机厂房 、输油泵棚  (房)  等重要建筑内及工艺装\n置区 、  主要道路 、  主要出入口等场所应设置摄像机 。  无人值守\n的控制室 、机柜间 、变电所等建筑内应设置摄像机。",
+      "type": "语义分解",
+      "subject": "站内摄像机",
+      "action": "",
+      "operation": "按需求在重要工艺建筑道路出入口及无人控制电气建筑设置",
+      "condition": "",
+      "constraint": "7.3.2    站内工业电视摄像机应根据工艺站场安全防范管理的需\n要设置 。压缩机厂房 、输油泵棚  (房)  等重要建筑内及工艺装\n置区 、  主要道路 、  主要出入口等场所应设置摄像机 。  无人值守\n的控制室 、机柜间 、变电所等建筑内应设置摄像机。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站内摄像机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11930,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

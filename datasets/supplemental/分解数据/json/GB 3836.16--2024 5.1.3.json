@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.1.3",
+  "entities": [
+    {
+      "name": "无防爆标志设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.3 无标志设备的验证 防爆设备上的铭牌或标志缺失或难以辨认时，应溯源至该设备的防爆合格证书。 可采用识别标 牌，识别标牌不应降低设备防爆型式的完整性。 注: 识别标牌包括唯一标签号，序列号或对装置数据库的引用。 设备档案和识别标记应能跟踪设备的更换或修理状态，更换或修理的设备应与原始设备认证标志 和具体要求相适应。",
+      "type": "语义分解",
+      "subject": "无防爆标志设备",
+      "action": "",
+      "operation": "溯源证书识别标牌不损防爆档案追踪替修与原认证一致",
+      "condition": "",
+      "constraint": "5.1.3 无标志设备的验证 防爆设备上的铭牌或标志缺失或难以辨认时，应溯源至该设备的防爆合格证书。 可采用识别标 牌，识别标牌不应降低设备防爆型式的完整性。 注: 识别标牌包括唯一标签号，序列号或对装置数据库的引用。 设备档案和识别标记应能跟踪设备的更换或修理状态，更换或修理的设备应与原始设备认证标志 和具体要求相适应。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无防爆标志设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3982,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

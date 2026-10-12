@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027933",
+  "entities": [
+    {
+      "name": "施工单位 engineering construction unit",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "施工单位  engineering    construction    unit",
+      "type": "语义分解",
+      "subject": "施工单位 engineering construction unit",
+      "action": "",
+      "operation": "施工单位 engineering construction unit",
+      "condition": "",
+      "constraint": "施工单位  engineering    construction    unit",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工单位 engineering construction unit"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27933,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

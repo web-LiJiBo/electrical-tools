@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.1.2.2",
+  "entities": [
+    {
+      "name": "水环境风险模型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2.2 预测模型 8)  地表水 根据风险识别结果,有毒有害物质进入水体的方式,水体类别及特征,以及有毒有害物质的溶解性,选择适用的预测模型 1)  对于油品类泄漏事故。流场计算按 HJ 2.3  中的相关要求。选取适用的预测模型, 溢油漂移扩散过程按 GB/T 19485 中的溢油粒子模型进行溢油轨迹预测 2)  其他事故。地表水风险预测模型及参数参照 HJ 2.3 2 b)  地下水 地下水风险预测模型及参数参照 HJ 610。",
+      "type": "语义分解",
+      "subject": "水环境风险模型",
+      "action": "",
+      "operation": "依入水方式类别溶解性选模型油轨迹粒子模型地下水按导则",
+      "condition": "",
+      "constraint": "9.1.2.2 预测模型 8)  地表水 根据风险识别结果,有毒有害物质进入水体的方式,水体类别及特征,以及有毒有害物质的溶解性,选择适用的预测模型 1)  对于油品类泄漏事故。流场计算按 HJ 2.3  中的相关要求。选取适用的预测模型, 溢油漂移扩散过程按 GB/T 19485 中的溢油粒子模型进行溢油轨迹预测 2)  其他事故。地表水风险预测模型及参数参照 HJ 2.3 2 b)  地下水 地下水风险预测模型及参数参照 HJ 610。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水环境风险模型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2509,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

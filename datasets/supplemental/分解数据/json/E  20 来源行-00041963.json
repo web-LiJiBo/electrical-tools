@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "来源行-00041963",
+  "entities": [
+    {
+      "name": "施工作业范围内胸径在5cm 以下的幼树，能移栽的应就近选择类似生长环境移",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "施工作业范围内胸径在5cm 以下的幼树，能移栽的应就近选择类似生长环境移栽。",
+      "type": "语义分解",
+      "subject": "施工作业范围内胸径在5cm 以下的幼树，能移栽的应就近选择类似生长环境移",
+      "action": "",
+      "operation": "施工作业范围内胸径在5cm 以下的幼树，能移栽的应就近选择类似生长环境移栽。",
+      "condition": "",
+      "constraint": "施工作业范围内胸径在5cm 以下的幼树，能移栽的应就近选择类似生长环境移栽。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工作业范围内胸径在5cm 以下的幼树，能移栽的应就近选择类似生长环境移"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41963,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

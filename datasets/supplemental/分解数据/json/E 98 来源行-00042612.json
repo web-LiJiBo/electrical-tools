@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042612",
+  "entities": [
+    {
+      "name": "a) 牺牲阳极的布局 、位置和数量应符合设计要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    牺牲阳极的布局 、位置和数量应符合设计要求 ;非预包装牺牲阳极应除去牺牲阳极的所有防水\n      包装材料 , 阳极周围应填充填包料 ,并置于填包料中心位置 ,填包料应混合均匀并完整包覆阳\n      极 ;采用预包装牺牲阳极时 ,填包料应采用麻袋或棉质布袋包装 ,不应采用化纤类包装袋包装 。\n      牺牲阳极就位后应浇水浸泡 。",
+      "type": "语义分解",
+      "subject": "a) 牺牲阳极的布局 、位置和数量应符合设计要求",
+      "action": "",
+      "operation": "a) 牺牲阳极的布局 、位置和数量应符合设计要求 ;非预包装牺牲阳极应除去牺牲阳极的所有防水 包装材料 , 阳极周围应填充填包料 ,并置于填包料中心位置 ,填包料应混合均匀并完整包覆阳 极 ;采用预包装牺牲阳极时 ,填包料应采用麻袋或棉质布袋包装 ,不应采用化纤类包装袋包装 。 牺牲阳极就位后应浇水浸泡 。",
+      "condition": "",
+      "constraint": "a)    牺牲阳极的布局 、位置和数量应符合设计要求 ;非预包装牺牲阳极应除去牺牲阳极的所有防水\n      包装材料 , 阳极周围应填充填包料 ,并置于填包料中心位置 ,填包料应混合均匀并完整包覆阳\n      极 ;采用预包装牺牲阳极时 ,填包料应采用麻袋或棉质布袋包装 ,不应采用化纤类包装袋包装 。\n      牺牲阳极就位后应浇水浸泡 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 牺牲阳极的布局 、位置和数量应符合设计要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42612,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

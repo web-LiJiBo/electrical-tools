@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036680",
+  "entities": [
+    {
+      "name": "b) 气体采样袋，至少为1L",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)     气体采样袋，至少为1L;\nc)     钢卷尺；\nd)    橡皮导管；\ne)     铜制连接件；",
+      "type": "语义分解",
+      "subject": "b) 气体采样袋，至少为1L",
+      "action": "",
+      "operation": "b) 气体采样袋，至少为1L; c) 钢卷尺； d) 橡皮导管； e) 铜制连接件",
+      "condition": "",
+      "constraint": "b)     气体采样袋，至少为1L;\nc)     钢卷尺；\nd)    橡皮导管；\ne)     铜制连接件；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 气体采样袋，至少为1L"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36680,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

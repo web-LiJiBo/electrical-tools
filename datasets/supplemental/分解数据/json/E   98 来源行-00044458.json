@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044458",
+  "entities": [
+    {
+      "name": "雷电与过电压保护器的性能检测应符合现行国家标准 《建筑物防雷装置检测技术",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3   雷电与过电压保护器的性能检测应符合现行国家标准\n《建筑物防雷装置检测技术规范》GB/T 21431的相关要求，宜\n与电气检测同时进行。",
+      "type": "语义分解",
+      "subject": "雷电与过电压保护器的性能检测应符合现行国家标准 《建筑物防雷装置检测技术",
+      "action": "",
+      "operation": "雷电与过电压保护器的性能检测应符合现行国家标准 《建筑物防雷装置检测技术规范》GB/T 21431的相关要求，宜 与电气检测同时进行。",
+      "condition": "",
+      "constraint": "6.2.3   雷电与过电压保护器的性能检测应符合现行国家标准\n《建筑物防雷装置检测技术规范》GB/T 21431的相关要求，宜\n与电气检测同时进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "雷电与过电压保护器的性能检测应符合现行国家标准 《建筑物防雷装置检测技术"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44458,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

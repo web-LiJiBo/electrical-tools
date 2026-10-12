@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046711",
+  "entities": [
+    {
+      "name": ")外防腐涂层评价结果为差或者无防腐涂层，且接触 的大气环境腐蚀性评价结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)外防腐涂层评价结果为差或者无防腐涂层，且接触\n  的大气环境腐蚀性评价结果为C5 以上，或接触的土\n  壤环境腐蚀性评价结果为强的；",
+      "type": "语义分解",
+      "subject": ")外防腐涂层评价结果为差或者无防腐涂层，且接触 的大气环境腐蚀性评价结果",
+      "action": "",
+      "operation": ")外防腐涂层评价结果为差或者无防腐涂层，且接触 的大气环境腐蚀性评价结果为C5 以上，或接触的土 壤环境腐蚀性评价结果为强的",
+      "condition": "",
+      "constraint": "1)外防腐涂层评价结果为差或者无防腐涂层，且接触\n  的大气环境腐蚀性评价结果为C5 以上，或接触的土\n  壤环境腐蚀性评价结果为强的；",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")外防腐涂层评价结果为差或者无防腐涂层，且接触 的大气环境腐蚀性评价结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46711,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "11.1.4.1.5",
+  "entities": [
+    {
+      "name": "蒸发皿恒重测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.4.1.5 将称过质量的蒸发皿再放入105 ℃±3 ℃烘箱内30 min，干燥器内冷却30 min，称量，直至恒定质量。",
+      "type": "语义分解",
+      "subject": "蒸发皿恒重测定",
+      "action": "",
+      "operation": "反复烘冷称至恒定质量",
+      "condition": "",
+      "constraint": "11.1.4.1.5 将称过质量的蒸发皿再放入105 ℃±3 ℃烘箱内30 min，干燥器内冷却30 min，称量，直至恒定质量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "蒸发皿恒重测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1433,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

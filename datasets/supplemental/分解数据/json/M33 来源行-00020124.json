@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020124",
+  "entities": [
+    {
+      "name": "—H 4",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—H   4: 在净荷要求复帧同步的情况下，由H4 字节导出复帧指示。复帧同步在7.2.2中\n\n     定义。",
+      "type": "语义分解",
+      "subject": "—H 4",
+      "action": "",
+      "operation": "—H 4: 在净荷要求复帧同步的情况下，由H4 字节导出复帧指示。复帧同步在7.2.2中 定义。",
+      "condition": "",
+      "constraint": "—H   4: 在净荷要求复帧同步的情况下，由H4 字节导出复帧指示。复帧同步在7.2.2中\n\n     定义。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—H 4"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20124,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

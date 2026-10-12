@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017378",
+  "entities": [
+    {
+      "name": "吊挂安装应垂直、牢固，膨胀螺栓孔位宜避开主承重梁，当 不能避开时，孔位应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       5   吊挂安装应垂直、牢固，膨胀螺栓孔位宜避开主承重梁，当\n不能避开时，孔位应选在距主承重梁下沿120mm 以上的侧面\n位置。",
+      "type": "语义分解",
+      "subject": "吊挂安装应垂直、牢固，膨胀螺栓孔位宜避开主承重梁，当 不能避开时，孔位应",
+      "action": "",
+      "operation": "吊挂安装应垂直、牢固，膨胀螺栓孔位宜避开主承重梁，当 不能避开时，孔位应选在距主承重梁下沿120mm 以上的侧面 位置。",
+      "condition": "",
+      "constraint": "       5   吊挂安装应垂直、牢固，膨胀螺栓孔位宜避开主承重梁，当\n不能避开时，孔位应选在距主承重梁下沿120mm 以上的侧面\n位置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "吊挂安装应垂直、牢固，膨胀螺栓孔位宜避开主承重梁，当 不能避开时，孔位应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17378,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "8.2",
+  "entities": [
+    {
+      "name": "隐患治理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2 事故隐患治理 安全生产管理机构应组织业务部门及时采取“人防、技防、工程防、管理防”等措施治理事故隐患；对不能立即治理的，应采取必要的紧急处置措施，在规定期限内消除。按规定对治理情况进行评估、验收。企业应定期对事故隐患排查治理情况进行统计分析，并向从业人员通报治理情况。",
+      "type": "语义分解",
+      "subject": "隐患治理",
+      "action": "",
+      "operation": "多防措施不能立治紧急处置限期消除评估验收统计通报",
+      "condition": "",
+      "constraint": "8.2 事故隐患治理 安全生产管理机构应组织业务部门及时采取“人防、技防、工程防、管理防”等措施治理事故隐患；对不能立即治理的，应采取必要的紧急处置措施，在规定期限内消除。按规定对治理情况进行评估、验收。企业应定期对事故隐患排查治理情况进行统计分析，并向从业人员通报治理情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "隐患治理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7260,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

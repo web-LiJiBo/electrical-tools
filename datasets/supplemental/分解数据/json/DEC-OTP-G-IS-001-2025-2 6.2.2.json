@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "耗电数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 耗气数据采用体积计量。耗油数据采用质量计量。耗电数据采用有功电量,蒸汽 用量采用质量计量。 典型能耗数据计量方式及单位参考表3。",
+      "type": "语义分解",
+      "subject": "耗电数据",
+      "action": "",
+      "operation": "按有功电量计量",
+      "condition": "",
+      "constraint": "耗电数据采用有功电量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "耗电数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "具体单位引用表3，本行未提供"
+      ]
+    }
+  }
+}

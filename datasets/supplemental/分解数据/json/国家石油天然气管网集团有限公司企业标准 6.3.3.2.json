@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.3.2",
+  "entities": [
+    {
+      "name": "根据立地条件，植被恢复应采用不同植被类型、不同树种间的混交搭配，包括乔木",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3.2        根据立地条件，植被恢复应采用不同植被类型、不同树种间的混交搭配，包括乔木和灌木、\n灌木和草本等不同配置方式。",
+      "type": "语义分解",
+      "subject": "根据立地条件，植被恢复应采用不同植被类型、不同树种间的混交搭配，包括乔木",
+      "action": "",
+      "operation": "根据立地条件，植被恢复应采用不同植被类型、不同树种间的混交搭配，包括乔木和灌木、 灌木和草本等不同配置方式。",
+      "condition": "",
+      "constraint": "6.3.3.2        根据立地条件，植被恢复应采用不同植被类型、不同树种间的混交搭配，包括乔木和灌木、\n灌木和草本等不同配置方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据立地条件，植被恢复应采用不同植被类型、不同树种间的混交搭配，包括乔木"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40761,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

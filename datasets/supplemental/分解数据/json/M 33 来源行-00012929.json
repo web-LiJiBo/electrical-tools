@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012929",
+  "entities": [
+    {
+      "name": "a) 对 L<5000km 的通道，其BIS 指标将严于ITU-T M.",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      a)  对 L<5000km  的通道，其BIS 指标将严于ITU-T M.2101.1 对国际转接通道的要求，而实际通道\n长度L 绝大部分是<5000km的。",
+      "type": "语义分解",
+      "subject": "a) 对 L<5000km 的通道，其BIS 指标将严于ITU-T M.",
+      "action": "",
+      "operation": "a) 对 L<5000km 的通道，其BIS 指标将严于ITU-T M.2101.1 对国际转接通道的要求，而实际通道 长度L 绝大部分是<5000km的。",
+      "condition": "",
+      "constraint": "      a)  对 L<5000km  的通道，其BIS 指标将严于ITU-T M.2101.1 对国际转接通道的要求，而实际通道\n长度L 绝大部分是<5000km的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 对 L<5000km 的通道，其BIS 指标将严于ITU-T M."
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12929,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

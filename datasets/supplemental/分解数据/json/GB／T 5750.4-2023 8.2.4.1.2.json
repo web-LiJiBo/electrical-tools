@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.2.4.1.2",
+  "entities": [
+    {
+      "name": "pH标准色列封存",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.4.1.2 取10.0 mL配成的各种标准缓冲溶液，分别置于内径一致的安瓿中，向pH 4.8～pH 6.4的标准缓冲溶液中各加0.5 mL氯酚红指示剂;向pH 6.0～pH 7.6标准缓冲溶液中各加0.5 mL溴百里酚蓝指示剂;向pH 7.0～pH 8.4标准缓冲溶液中各加0.5 mL酚红指示剂;向pH 8.0～pH 9.6标准缓冲溶液中各加0.5 mL百里酚蓝指示剂。用喷灯迅速封口，然后放入铁丝筐中，将铁丝筐放在沸水浴内消毒30 min，每隔24 h消毒一次，共3次，置于暗处保存。",
+      "type": "语义分解",
+      "subject": "pH标准色列封存",
+      "action": "",
+      "operation": "按pH范围加入相应指示剂封口沸浴三次每隔二十四小时暗存",
+      "condition": "",
+      "constraint": "8.2.4.1.2 取10.0 mL配成的各种标准缓冲溶液，分别置于内径一致的安瓿中，向pH 4.8～pH 6.4的标准缓冲溶液中各加0.5 mL氯酚红指示剂;向pH 6.0～pH 7.6标准缓冲溶液中各加0.5 mL溴百里酚蓝指示剂;向pH 7.0～pH 8.4标准缓冲溶液中各加0.5 mL酚红指示剂;向pH 8.0～pH 9.6标准缓冲溶液中各加0.5 mL百里酚蓝指示剂。用喷灯迅速封口，然后放入铁丝筐中，将铁丝筐放在沸水浴内消毒30 min，每隔24 h消毒一次，共3次，置于暗处保存。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "pH标准色列封存"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1375,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

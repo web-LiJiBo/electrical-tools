@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "5.3.3",
+  "entities": [
+    {
+      "name": "LCI数据计算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.3 数据计算 数据收集后，计算程序包括：对所收集数据的审定；数据与单元过程的关联；数据与功能单位的基准流的关联。对该模拟的产品系统中每一单元过程和功能单位求得清单结果。对能量流的计算应对不同的燃料或电力来源、能量转换和传输的效率，以及产生和使用上述能量流时的输入和输出予以考虑。",
+      "type": "语义分解",
+      "subject": "LCI数据计算",
+      "action": "",
+      "operation": "审定关联单元功能单位考虑能源转换传输",
+      "condition": "",
+      "constraint": "5.3.3 数据计算 数据收集后，计算程序包括：对所收集数据的审定；数据与单元过程的关联；数据与功能单位的基准流的关联。对该模拟的产品系统中每一单元过程和功能单位求得清单结果。对能量流的计算应对不同的燃料或电力来源、能量转换和传输的效率，以及产生和使用上述能量流时的输入和输出予以考虑。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCI数据计算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1046,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

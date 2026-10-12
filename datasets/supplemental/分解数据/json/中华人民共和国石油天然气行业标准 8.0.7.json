@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "8.0.7",
+  "entities": [
+    {
+      "name": "办公互联网接入和规划",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.0.7    办公用计算机网络系统接入因特网的出 口位置应符合企\n业统一规划 ,  宜通过核心节点或汇聚节点统一接入因特网 。\n8.0.8    办公用计算机网络的网络结构 、  IP地址规划应符合管道\n运行管理单位相关规划或规定 。  生活 、  娱乐用计算机网络的设\n置应根据工程实际需求和企业管理规定设置。",
+      "type": "语义分解",
+      "subject": "办公互联网接入和规划",
+      "action": "",
+      "operation": "按统一规划宜核心汇聚统一出口结构IP和生活娱乐网按企业需求规定",
+      "condition": "",
+      "constraint": "8.0.7    办公用计算机网络系统接入因特网的出 口位置应符合企\n业统一规划 ,  宜通过核心节点或汇聚节点统一接入因特网 。\n8.0.8    办公用计算机网络的网络结构 、  IP地址规划应符合管道\n运行管理单位相关规划或规定 。  生活 、  娱乐用计算机网络的设\n置应根据工程实际需求和企业管理规定设置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "办公互联网接入和规划"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12005,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含8.0.7及8.0.8保留"
+      ]
+    }
+  }
+}

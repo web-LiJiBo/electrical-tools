@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.3.5.2",
+  "entities": [
+    {
+      "name": "石油荧光标准系列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.2 取石油标准溶液0 mL 0.50 mL 1.00 mL 2.00 mL, 4.00 mL 8.00 m 及10.0 m 于 25 mL 比色管中 ,加二氯甲烷至15.0 mL。",
+      "type": "语义分解",
+      "subject": "石油荧光标准系列",
+      "action": "",
+      "operation": "七个规定体积标准液用二氯甲烷补至十五毫升",
+      "condition": "",
+      "constraint": "6.3.5.2 取石油标准溶液0 mL 0.50 mL 1.00 mL 2.00 mL, 4.00 mL 8.00 m 及10.0 m 于 25 mL 比色管中 ,加二氯甲烷至15.0 mL。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油荧光标准系列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1842,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；末两体积单位异常"
+      ]
+    }
+  }
+}

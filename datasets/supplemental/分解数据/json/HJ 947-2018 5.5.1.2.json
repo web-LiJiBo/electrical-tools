@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 石油化学工业",
+  "standard_id": "HJ 947-2018",
+  "version": "2018",
+  "chapter_path": "5.5.1.2",
+  "entities": [
+    {
+      "name": "石化实际毒害指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1.2 排污单位根据生产过程的原辅用料。生产工艺。中间及最终产品类型。监测结果确定实际排放的，在相关有毒有害或优先控制污染物名录中的污染物指标，或其他有毒污染物指标。",
+      "type": "语义分解",
+      "subject": "石化实际毒害指标",
+      "action": "",
+      "operation": "按原料工艺产品监测确定实际毒害优先或其他有毒指标",
+      "condition": "",
+      "constraint": "5.5.1.2 排污单位根据生产过程的原辅用料。生产工艺。中间及最终产品类型。监测结果确定实际排放的，在相关有毒有害或优先控制污染物名录中的污染物指标，或其他有毒污染物指标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石化实际毒害指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3032,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "7.4.1",
+  "entities": [
+    {
+      "name": "应对每个开挖点探坑中的土壤剖面进行分层描述，内容 宜包括土壤颜色、土层干",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.1   应对每个开挖点探坑中的土壤剖面进行分层描述，内容\n宜包括土壤颜色、土层干湿度、土壤质地、土壤松紧度、植物根\n系、地下水位野外观察，并应按本标准附录A 中表A.3.1填写。\n7.4.2   可根据现场情况收集开挖点探坑处的土壤样品送实验室\n分析，土壤理化性质分析宜包括以下项目：",
+      "type": "语义分解",
+      "subject": "应对每个开挖点探坑中的土壤剖面进行分层描述，内容 宜包括土壤颜色、土层干",
+      "action": "",
+      "operation": "应对每个开挖点探坑中的土壤剖面进行分层描述，内容 宜包括土壤颜色、土层干湿度、土壤质地、土壤松紧度、植物根 系、地下水位野外观察，并应按本标准附录A 中表A.3.1填写。 7.4.2 可根据现场情况收集开挖点探坑处的土壤样品送实验室 分析，土壤理化性质分析宜包括以下项目",
+      "condition": "",
+      "constraint": "7.4.1   应对每个开挖点探坑中的土壤剖面进行分层描述，内容\n宜包括土壤颜色、土层干湿度、土壤质地、土壤松紧度、植物根\n系、地下水位野外观察，并应按本标准附录A 中表A.3.1填写。\n7.4.2   可根据现场情况收集开挖点探坑处的土壤样品送实验室\n分析，土壤理化性质分析宜包括以下项目：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应对每个开挖点探坑中的土壤剖面进行分层描述，内容 宜包括土壤颜色、土层干"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45094,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.11.2.3",
+  "entities": [
+    {
+      "name": "SIS安装确认",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.11.2.3 企业应制定完善的安装调试与联合确认计划并保证有效实施 ,详细记录调试(单台仪表调试 与回路调试) .确认的经过和结果 ,并建立管理档案;投运前应依据安全要求技术文件 ,组织审查和联合 确认 ,确保具备既定的功能和满足完整性要求,具备安全投用条件。",
+      "type": "语义分解",
+      "subject": "SIS安装确认",
+      "action": "",
+      "operation": "有效计划记录调试确认建档投用前审查联合确认功能完整性安全条件",
+      "condition": "",
+      "constraint": "4.11.2.3 企业应制定完善的安装调试与联合确认计划并保证有效实施 ,详细记录调试(单台仪表调试 与回路调试) .确认的经过和结果 ,并建立管理档案;投运前应依据安全要求技术文件 ,组织审查和联合 确认 ,确保具备既定的功能和满足完整性要求,具备安全投用条件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SIS安装确认"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5218,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.4.2",
+  "entities": [
+    {
+      "name": "安全信息内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2 安全生产信息包括化学品危险性信甚 艺危险性信息!皂技术信息 .设备设施信息和其他信 息 包括但不限于: 相关化学品(包括废弃物 )信息; 规划及工艺技术信息 工程建设及安装调试有关停息; 设备设施停息; 自控及安全仪表信息; 相关公用(辅助)工程系统停息; 同行业事故事件信息; 同行业企业良好安全管理实践; 企业需要收集的其他相关安全生产信息。",
+      "type": "语义分解",
+      "subject": "安全信息内容",
+      "action": "",
+      "operation": "涵盖化学工艺设备自控公用工程事故良好实践等",
+      "condition": "",
+      "constraint": "4.4.2 安全生产信息包括化学品危险性信甚 艺危险性信息!皂技术信息 .设备设施信息和其他信 息 包括但不限于: 相关化学品(包括废弃物 )信息; 规划及工艺技术信息 工程建设及安装调试有关停息; 设备设施停息; 自控及安全仪表信息; 相关公用(辅助)工程系统停息; 同行业事故事件信息; 同行业企业良好安全管理实践; 企业需要收集的其他相关安全生产信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全信息内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5073,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；工艺分类字符缺损需复核"
+      ]
+    }
+  }
+}

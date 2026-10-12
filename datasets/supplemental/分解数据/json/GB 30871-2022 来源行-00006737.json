@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006737",
+  "entities": [
+    {
+      "name": "特级动火作业还应符合以下规定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 特级动火作业还应符合以下规定: a) 应预先制定作业方案 ,落实安全防火防爆及应急措施; b) 在设备或管道上进行特级动火作业时 ,设备或管道内应保持微正压; c) 存在受热分解爆炸 ,自爆物料的管道和设备设施上不应进行动火作业; d) 生产装置运行不稳定时 ,不应进行带压不置换动火作业。",
+      "type": "语义分解",
+      "subject": "特级动火作业还应符合以下规定",
+      "action": "",
+      "operation": "特级动火作业还应符合以下规定: a) 应预先制定作业方案 ,落实安全防火防爆及应急措施; b) 在设备或管道上进行特级动火作业时 ,设备或管道内应保持微正压; c) 存在受热分解爆炸 ,自爆物料的管道和设备设施上不应进行动火作业; d) 生产装置运行不稳定时 ,不应进行带压不置换动火作业。",
+      "condition": "",
+      "constraint": "5.4.2 特级动火作业还应符合以下规定: a) 应预先制定作业方案 ,落实安全防火防爆及应急措施; b) 在设备或管道上进行特级动火作业时 ,设备或管道内应保持微正压; c) 存在受热分解爆炸 ,自爆物料的管道和设备设施上不应进行动火作业; d) 生产装置运行不稳定时 ,不应进行带压不置换动火作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特级动火作业还应符合以下规定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6737,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

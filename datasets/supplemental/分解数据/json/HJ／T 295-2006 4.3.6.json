@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.3.6",
+  "entities": [
+    {
+      "name": "事故纠纷材料组卷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.6 环境污染 海洋与生态破坏事故调查处理。环境污染纠纷调查处理文件材料按地区或事由(问题) 组卷。水污染事故。大气污染事故。噪声污染事故, 固体废物污染事故。放射性污染事故。国家重点保护的野生动植物与自然保护区等生态破坏事故也可按违法污染事故和意外污染事故组卷。",
+      "type": "语义分解",
+      "subject": "事故纠纷材料组卷",
+      "action": "",
+      "operation": "按地区事由或违法意外污染事故组卷",
+      "condition": "",
+      "constraint": "4.3.6 环境污染 海洋与生态破坏事故调查处理。环境污染纠纷调查处理文件材料按地区或事由(问题) 组卷。水污染事故。大气污染事故。噪声污染事故, 固体废物污染事故。放射性污染事故。国家重点保护的野生动植物与自然保护区等生态破坏事故也可按违法污染事故和意外污染事故组卷。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故纠纷材料组卷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3082,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

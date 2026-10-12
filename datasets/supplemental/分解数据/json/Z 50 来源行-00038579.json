@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 060",
+  "standard_id": "Z 50",
+  "version": "",
+  "chapter_path": "来源行-00038579",
+  "entities": [
+    {
+      "name": "注 1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  注 1: 45号 ~ 66号为挥发性有机物 ,可采用吹扫-捕集/气相色谱-质谱法或顶空/气相色谱-质谱法同时测定 。\n  注 2: 67号 ~ 83号 、86号 ~ 92号可采用气相色谱-质谱法同时测定 。\n  注 3: 83号 ~ 92号可采用液相色谱-质谱法同时测定 。\n  注 4: 草甘膦需要衍生化 ,应单独一个分析流程 。",
+      "type": "语义分解",
+      "subject": "注 1",
+      "action": "",
+      "operation": "注 1: 45号 ~ 66号为挥发性有机物 ,可采用吹扫-捕集/气相色谱-质谱法或顶空/气相色谱-质谱法同时测定 。 注 2: 67号 ~ 83号 、86号 ~ 92号可采用气相色谱-质谱法同时测定 。 注 3: 83号 ~ 92号可采用液相色谱-质谱法同时测定 。 注 4: 草甘膦需要衍生化 ,应单独一个分析流程 。",
+      "condition": "",
+      "constraint": "  注 1: 45号 ~ 66号为挥发性有机物 ,可采用吹扫-捕集/气相色谱-质谱法或顶空/气相色谱-质谱法同时测定 。\n  注 2: 67号 ~ 83号 、86号 ~ 92号可采用气相色谱-质谱法同时测定 。\n  注 3: 83号 ~ 92号可采用液相色谱-质谱法同时测定 。\n  注 4: 草甘膦需要衍生化 ,应单独一个分析流程 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注 1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38579,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.5.4",
+  "entities": [
+    {
+      "name": "严重腐蚀设备管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.5.4 企业应对腐蚀严重设备和管道设置在线腐蚀监测系统和采用离线检测措施 ,定期分析监测 结果;对重点部位应加大检测检查频次 ,定期评估防腐效果和核算设备剩余使用寿命",
+      "type": "语义分解",
+      "subject": "严重腐蚀设备管道",
+      "action": "",
+      "operation": "在线监测离线检测定析重点加频评防腐核剩余寿命",
+      "condition": "",
+      "constraint": "4.10.5.4 企业应对腐蚀严重设备和管道设置在线腐蚀监测系统和采用离线检测措施 ,定期分析监测 结果;对重点部位应加大检测检查频次 ,定期评估防腐效果和核算设备剩余使用寿命",
+      "constraint_role": "informational",
+      "related_entities": [
+        "严重腐蚀设备管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5193,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

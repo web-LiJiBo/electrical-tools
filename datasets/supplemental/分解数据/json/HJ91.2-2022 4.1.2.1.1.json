@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.2.1.1",
+  "entities": [
+    {
+      "name": "河流背景断面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2.1.1 背景断面 原则上设置在水系源头。 未受或很少受人类活动影响,远离城市居民区 工业区,农药化肥施用区及主要交通路线。 如果拟定断面处于地球化学异常区,应在地球化学异常区上,下游分别设置;如果水土流失情况较严重, 应设置在水土流失区_",
+      "type": "语义分解",
+      "subject": "河流背景断面",
+      "action": "",
+      "operation": "源头少人类影响远离干扰地化异常上下游及流失区适当设置",
+      "condition": "",
+      "constraint": "4.1.2.1.1 背景断面 原则上设置在水系源头。 未受或很少受人类活动影响,远离城市居民区 工业区,农药化肥施用区及主要交通路线。 如果拟定断面处于地球化学异常区,应在地球化学异常区上,下游分别设置;如果水土流失情况较严重, 应设置在水土流失区_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "河流背景断面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2941,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

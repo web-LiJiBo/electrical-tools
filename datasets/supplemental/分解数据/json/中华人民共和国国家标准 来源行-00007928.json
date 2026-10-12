@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00007928",
+  "entities": [
+    {
+      "name": "设备告警功能项目检查应符合设备技术规定，并应具备向 外部发送集中告警信号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5      设备告警功能项目检查应符合设备技术规定，并应具备向\n外部发送集中告警信号功能。集中告警方式应满足设计要求。",
+      "type": "语义分解",
+      "subject": "设备告警功能项目检查应符合设备技术规定，并应具备向 外部发送集中告警信号",
+      "action": "",
+      "operation": "设备告警功能项目检查应符合设备技术规定，并应具备向 外部发送集中告警信号功能。集中告警方式应满足设计要求。",
+      "condition": "",
+      "constraint": "4.1.5      设备告警功能项目检查应符合设备技术规定，并应具备向\n外部发送集中告警信号功能。集中告警方式应满足设计要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备告警功能项目检查应符合设备技术规定，并应具备向 外部发送集中告警信号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7928,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

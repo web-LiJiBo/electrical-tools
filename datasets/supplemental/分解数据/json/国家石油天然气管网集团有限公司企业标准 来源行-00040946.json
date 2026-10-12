@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040946",
+  "entities": [
+    {
+      "name": "在坡度小于25°、立地条件较好的地块，可采用带状整地方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在坡度小于25°、立地条件较好的地块，可采用带状整地方法。山地丘陵带状整地要沿等高线进行，\n其形式有水平阶、水平槽、反坡梯田等。整地规格：带状整地规格为带宽0.6 m以上，深度0 .4 m以上。\n带长根据地形确定，每隔一定距离应保留长为0.5m～1m  自然植被。",
+      "type": "语义分解",
+      "subject": "在坡度小于25°、立地条件较好的地块，可采用带状整地方法",
+      "action": "",
+      "operation": "在坡度小于25°、立地条件较好的地块，可采用带状整地方法。山地丘陵带状整地要沿等高线进行， 其形式有水平阶、水平槽、反坡梯田等。整地规格：带状整地规格为带宽0.6 m以上，深度0 .4 m以上。 带长根据地形确定，每隔一定距离应保留长为0.5m～1m 自然植被。",
+      "condition": "",
+      "constraint": "   在坡度小于25°、立地条件较好的地块，可采用带状整地方法。山地丘陵带状整地要沿等高线进行，\n其形式有水平阶、水平槽、反坡梯田等。整地规格：带状整地规格为带宽0.6 m以上，深度0 .4 m以上。\n带长根据地形确定，每隔一定距离应保留长为0.5m～1m  自然植被。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在坡度小于25°、立地条件较好的地块，可采用带状整地方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40946,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

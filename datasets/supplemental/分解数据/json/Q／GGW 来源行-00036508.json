@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036508",
+  "entities": [
+    {
+      "name": "b) 工艺流程图( PFD) 、 管 道 仪 表 图( P&ID) 、 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)     工艺流程图( PFD) 、 管 道 仪 表 图( P&ID) 、  操作规程、装置平面布置图和工艺简介等内容，\n   工艺变更资料不全，应补充完整；",
+      "type": "语义分解",
+      "subject": "b) 工艺流程图( PFD) 、 管 道 仪 表 图( P&ID) 、 ",
+      "action": "",
+      "operation": "b) 工艺流程图( PFD) 、 管 道 仪 表 图( P&ID) 、 操作规程、装置平面布置图和工艺简介等内容， 工艺变更资料不全，应补充完整",
+      "condition": "",
+      "constraint": "b)     工艺流程图( PFD) 、 管 道 仪 表 图( P&ID) 、  操作规程、装置平面布置图和工艺简介等内容，\n   工艺变更资料不全，应补充完整；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 工艺流程图( PFD) 、 管 道 仪 表 图( P&ID) 、 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36508,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

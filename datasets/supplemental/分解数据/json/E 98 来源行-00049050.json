@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049050",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   依据《国家能源局关于印发能源领域行业标准化管理办法\n(试行)>及实施细则的通知》(国能局科技〔2009〕52号)有关\n规定，经审查，国家能源局批准《核电厂常规岛及辅助配套设施\n建设施工技术规范  第5部分：水处理及制氢系统》等345项行\n业标准，其中能源标准 ( NB)54   项、电力标准 ( DL)125    项和\n石油天然气标准 ( SY)166    项，现予以发布。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   依据《国家能源局关于印发能源领域行业标准化管理办法\n(试行)>及实施细则的通知》(国能局科技〔2009〕52号)有关\n规定，经审查，国家能源局批准《核电厂常规岛及辅助配套设施\n建设施工技术规范  第5部分：水处理及制氢系统》等345项行\n业标准，其中能源标准 ( NB)54   项、电力标准 ( DL)125    项和\n石油天然气标准 ( SY)166    项，现予以发布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49050,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

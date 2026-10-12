@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.1.5",
+  "entities": [
+    {
+      "name": "非正常废气排放核算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5 非正常情况下的实际排放量宜采用实测法核算。无法采用实测法核算的, 可采用物料衡算法核算二氧化硫排放量 产污系数法核算其他污染物排放量,按直接排放进行核算。常用行业产排污系数见附录 A。",
+      "type": "语义分解",
+      "subject": "非正常废气排放核算",
+      "action": "",
+      "operation": "优先实测否则衡算系数按直排",
+      "condition": "",
+      "constraint": "5.1.5 非正常情况下的实际排放量宜采用实测法核算。无法采用实测法核算的, 可采用物料衡算法核算二氧化硫排放量 产污系数法核算其他污染物排放量,按直接排放进行核算。常用行业产排污系数见附录 A。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非正常废气排放核算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 622,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.7.5",
+  "entities": [
+    {
+      "name": "输入抖动容限测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.5      输入抖动容限测试(图4.6.2),应调节设备和仪表接收光\n功率在动态范围的中间，且应保持设备和仪表工作处于稳定状态\n下，设备输入抖动容限应符合本规范第4.6.8条对应的速率口指\n\n标规定。",
+      "type": "语义分解",
+      "subject": "输入抖动容限测试",
+      "action": "",
+      "operation": "接收光功率置动态范围中间稳定运行符合引用速率指标",
+      "condition": "",
+      "constraint": "4.7.5      输入抖动容限测试(图4.6.2),应调节设备和仪表接收光\n功率在动态范围的中间，且应保持设备和仪表工作处于稳定状态\n下，设备输入抖动容限应符合本规范第4.6.8条对应的速率口指\n\n标规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入抖动容限测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8130,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

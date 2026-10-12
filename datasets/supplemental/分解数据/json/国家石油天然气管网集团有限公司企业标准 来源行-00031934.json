@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/  GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00031934",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2\t系统电压、接地测试检查记录，冗余控制器、服务器等主备切换记录，系统定期维护、检修、测\n试计划及记录，包括系统培训记录，工程师站操作记录，联锁切除恢复记录，巡检记录，回路测\n试记录，SIL评估报告，设备(回路)台账、档案，设定值、逻辑图、接线图、变更记录等，资\n料完整。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "2\t系统电压、接地测试检查记录，冗余控制器、服务器等主备切换记录，系统定期维护、检修、测\n试计划及记录，包括系统培训记录，工程师站操作记录，联锁切除恢复记录，巡检记录，回路测\n试记录，SIL评估报告，设备(回路)台账、档案，设定值、逻辑图、接线图、变更记录等，资\n料完整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 31934,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021603",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "— 分发过程对输入信号进行8比特间插操作，8比特字节映射入信号 Ti 净荷，下一个8比\n    特字节映射入信号Ti+1  等 。Ti 、Ti+1等属于实际组且不能临时撤销。V5_X 比特5到比\n    特 7( PSL)  拷贝到每个独立的Ti 信号。K3_X 比特3到比特4( APS)  比拷贝到每个独\n\n    立的Ti 信号。如果 K4_X比特1代表了扩展信号标记，它也拷贝到每个独立的Ti 信号。\n一  处理K4 比特1到比特2:复帧同步和顺序见7.2.5.2。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "— 分发过程对输入信号进行8比特间插操作，8比特字节映射入信号 Ti 净荷，下一个8比\n    特字节映射入信号Ti+1  等 。Ti 、Ti+1等属于实际组且不能临时撤销。V5_X 比特5到比\n    特 7( PSL)  拷贝到每个独立的Ti 信号。K3_X 比特3到比特4( APS)  比拷贝到每个独\n\n    立的Ti 信号。如果 K4_X比特1代表了扩展信号标记，它也拷贝到每个独立的Ti 信号。\n一  处理K4 比特1到比特2:复帧同步和顺序见7.2.5.2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21603,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

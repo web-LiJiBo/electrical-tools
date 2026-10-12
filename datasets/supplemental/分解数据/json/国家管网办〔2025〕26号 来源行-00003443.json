@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全生产管理办法",
+  "standard_id": "国家管网办〔2025〕26号",
+  "version": "",
+  "chapter_path": "来源行-00003443",
+  "entities": [
+    {
+      "name": "第六十三条 集团公司应当将政府有关部门对所属企业较大事故重大事故的事故调",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十三条 集团公司应当将政府有关部门对所属企业较大事故重大事故的事故调查报告及批复及时向国务院国资委报告,并将责任追究落实情况报告国务院国资委。每年1月底前将上一年度的单位增加值生产安全责任事故率情况报送国务院国资委,报送内容含年度单位增加值情况。生产安全事故起数及死亡人数情况等。",
+      "type": "语义分解",
+      "subject": "第六十三条 集团公司应当将政府有关部门对所属企业较大事故重大事故的事故调",
+      "action": "",
+      "operation": "第六十三条 集团公司应当将政府有关部门对所属企业较大事故重大事故的事故调查报告及批复及时向国务院国资委报告,并将责任追究落实情况报告国务院国资委。每年1月底前将上一年度的单位增加值生产安全责任事故率情况报送国务院国资委,报送内容含年度单位增加值情况。生产安全事故起数及死亡人数情况等。",
+      "condition": "",
+      "constraint": "第六十三条 集团公司应当将政府有关部门对所属企业较大事故重大事故的事故调查报告及批复及时向国务院国资委报告,并将责任追究落实情况报告国务院国资委。每年1月底前将上一年度的单位增加值生产安全责任事故率情况报送国务院国资委,报送内容含年度单位增加值情况。生产安全事故起数及死亡人数情况等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十三条 集团公司应当将政府有关部门对所属企业较大事故重大事故的事故调"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3443,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

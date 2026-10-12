@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014570",
+  "entities": [
+    {
+      "name": "a) ESC实现方式主要采用GCC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  a)    ESC实现方式主要采用GCC 。GCC利用ITU-T G.709 规定的OTN 帧格式中的GCC0/GCC1/\n         GCC2 承载监控信息，其具体格式不在本标准规定范围内。DCC 利用SDH 帧结构的空闲开销\n\n     字节传送监控信息；",
+      "type": "语义分解",
+      "subject": "a) ESC实现方式主要采用GCC",
+      "action": "",
+      "operation": "a) ESC实现方式主要采用GCC 。GCC利用ITU-T G.709 规定的OTN 帧格式中的GCC0/GCC1/ GCC2 承载监控信息，其具体格式不在本标准规定范围内。DCC 利用SDH 帧结构的空闲开销 字节传送监控信息",
+      "condition": "",
+      "constraint": "  a)    ESC实现方式主要采用GCC 。GCC利用ITU-T G.709 规定的OTN 帧格式中的GCC0/GCC1/\n         GCC2 承载监控信息，其具体格式不在本标准规定范围内。DCC 利用SDH 帧结构的空闲开销\n\n     字节传送监控信息；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) ESC实现方式主要采用GCC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14570,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

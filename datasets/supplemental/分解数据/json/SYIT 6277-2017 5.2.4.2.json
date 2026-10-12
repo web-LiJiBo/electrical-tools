@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.2.4.2",
+  "entities": [
+    {
+      "name": "预测硫工作场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4.2 在预测含有硫化氢的工作场所 (如钻井场所。井下作业场所) 内至少有一人携带便携式硫化氢检测仪。定肘进行巡回检测= 录井仪应能进行连续检测。",
+      "type": "语义分解",
+      "subject": "预测硫工作场所",
+      "action": "",
+      "operation": "至少一人携仪定时巡检录井连续检测",
+      "condition": "",
+      "constraint": "5.2.4.2 在预测含有硫化氢的工作场所 (如钻井场所。井下作业场所) 内至少有一人携带便携式硫化氢检测仪。定肘进行巡回检测= 录井仪应能进行连续检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预测硫工作场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7439,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

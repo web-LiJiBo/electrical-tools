@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014692",
+  "entities": [
+    {
+      "name": "当光终端复用设备、光交叉或光电混合交叉设备配备光谱分析模块时，网管系统应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    当光终端复用设备、光交叉或光电混合交叉设备配备光谱分析模块时，网管系统应能通过该模块，\n实时监测OTN系统各节点中每波长的输入/输出光功率、光信噪比(可选)、中心波长值(或波长偏移)\n等性能数据，并提供图形化的光谱分析功能，实时反映配置波长的工作状态。",
+      "type": "语义分解",
+      "subject": "当光终端复用设备、光交叉或光电混合交叉设备配备光谱分析模块时，网管系统应",
+      "action": "",
+      "operation": "当光终端复用设备、光交叉或光电混合交叉设备配备光谱分析模块时，网管系统应能通过该模块， 实时监测OTN系统各节点中每波长的输入/输出光功率、光信噪比(可选)、中心波长值(或波长偏移) 等性能数据，并提供图形化的光谱分析功能，实时反映配置波长的工作状态。",
+      "condition": "",
+      "constraint": "    当光终端复用设备、光交叉或光电混合交叉设备配备光谱分析模块时，网管系统应能通过该模块，\n实时监测OTN系统各节点中每波长的输入/输出光功率、光信噪比(可选)、中心波长值(或波长偏移)\n等性能数据，并提供图形化的光谱分析功能，实时反映配置波长的工作状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当光终端复用设备、光交叉或光电混合交叉设备配备光谱分析模块时，网管系统应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14692,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

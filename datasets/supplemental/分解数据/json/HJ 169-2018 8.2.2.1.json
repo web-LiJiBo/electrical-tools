@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "8.2.2.1",
+  "entities": [
+    {
+      "name": "物质泄漏蒸发量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.1 物质泄漏量的计算 液体。气体和两相流泄漏速率的计算参见附录F推荐的方法。 泄漏时间应结合建设项目探测和隔离系统的设计原则确定。一般情况下,设置紧急隔离系统的单元, 泄漏时间可设定为 10 min;  未设置紧急隔离系统的单元。泄漏时间可设定为30 min。 泄漏液体的蒸发速率计算可采用附录 F  推荐的方法。蒸发时间应结合物质特性。气象条件 工况等综合考虑, 一般情况下,可按 15~30 min 计;  泄漏物质形成的液池面积以不超过泄漏单元的围堰 (或堤) 内面积计。",
+      "type": "语义分解",
+      "subject": "物质泄漏蒸发量",
+      "action": "",
+      "operation": "依探测隔离设计确定泄漏时间依物性气象工况算蒸发液池受围堰限制",
+      "condition": "",
+      "constraint": "8.2.2.1 物质泄漏量的计算 液体。气体和两相流泄漏速率的计算参见附录F推荐的方法。 泄漏时间应结合建设项目探测和隔离系统的设计原则确定。一般情况下,设置紧急隔离系统的单元, 泄漏时间可设定为 10 min;  未设置紧急隔离系统的单元。泄漏时间可设定为30 min。 泄漏液体的蒸发速率计算可采用附录 F  推荐的方法。蒸发时间应结合物质特性。气象条件 工况等综合考虑, 一般情况下,可按 15~30 min 计;  泄漏物质形成的液池面积以不超过泄漏单元的围堰 (或堤) 内面积计。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "物质泄漏蒸发量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2494,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；所列时间为风险预测设定非设备响应许可附录F未提供"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "B类火灾灭火器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 B类火灾场所应选择泡沫灭火器 .碳酸氢钠千粉灭火器.磷酸铵盐千粉灭火器 ,二氧化碳灭火器,灭 B类火灾的水型灭火器或卤代烷灭火器。极性溶剂的B类火灾场所应选择灭 B类火灾的抗溶性灭火器。",
+      "type": "语义分解",
+      "subject": "B类火灾灭火器",
+      "action": "",
+      "operation": "按液体火灾适用类型选择极性溶剂火灾使用抗溶性灭火器",
+      "condition": "",
+      "constraint": "4.2.2 B类火灾场所应选择泡沫灭火器 .碳酸氢钠千粉灭火器.磷酸铵盐千粉灭火器 ,二氧化碳灭火器,灭 B类火灾的水型灭火器或卤代烷灭火器。极性溶剂的B类火灾场所应选择灭 B类火灾的抗溶性灭火器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "B类火灾灭火器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4052,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；千粉等OCR需核查卤代烷为历史来源列举不代表当前推荐"
+      ]
+    }
+  }
+}

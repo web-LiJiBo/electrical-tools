@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.2.1",
+  "entities": [
+    {
+      "name": "影响评价必备内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2.1 概述 LCIA 阶段应包括下列必备要素: 影响类型 ,类型参数和特征化模型的选择; 将 LCI 结果划分到所选的影响类型中(分类) ; 类型参数结果的计算(特征化) <",
+      "type": "语义分解",
+      "subject": "影响评价必备内容",
+      "action": "",
+      "operation": "选择类型参数模型分类及特征化计算",
+      "condition": "",
+      "constraint": "4.4.2.1 概述 LCIA 阶段应包括下列必备要素: 影响类型 ,类型参数和特征化模型的选择; 将 LCI 结果划分到所选的影响类型中(分类) ; 类型参数结果的计算(特征化) <",
+      "constraint_role": "informational",
+      "related_entities": [
+        "影响评价必备内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1103,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

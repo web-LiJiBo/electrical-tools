@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019934",
+  "entities": [
+    {
+      "name": "Sn_AP处的数据是一个VC-n(n=3 、4), 其有如ITU-T G",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      Sn_AP处的数据是一个VC-n(n=3 、4),   其有如ITU-T G707 所述的净荷，但VC-314 POH 字节J1、\nB3 、G1是不确定的。设置这些POH 字节是Sn_TT功能的组成部分，完整的VC-n 被送往Sn_CP。\n\n   该功能通过以下内容进行描述：",
+      "type": "语义分解",
+      "subject": "Sn_AP处的数据是一个VC-n(n=3 、4), 其有如ITU-T G",
+      "action": "",
+      "operation": "Sn_AP处的数据是一个VC-n(n=3 、4), 其有如ITU-T G707 所述的净荷，但VC-314 POH 字节J1、 B3 、G1是不确定的。设置这些POH 字节是Sn_TT功能的组成部分，完整的VC-n 被送往Sn_CP。 该功能通过以下内容进行描述",
+      "condition": "",
+      "constraint": "      Sn_AP处的数据是一个VC-n(n=3 、4),   其有如ITU-T G707 所述的净荷，但VC-314 POH 字节J1、\nB3 、G1是不确定的。设置这些POH 字节是Sn_TT功能的组成部分，完整的VC-n 被送往Sn_CP。\n\n   该功能通过以下内容进行描述：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Sn_AP处的数据是一个VC-n(n=3 、4), 其有如ITU-T G"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19934,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

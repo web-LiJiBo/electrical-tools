@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036449",
+  "entities": [
+    {
+      "name": "本文件规定了油气储运设施甲烷逸散排放检测量化与修复的工作步骤、项目建立、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    本文件规定了油气储运设施甲烷逸散排放检测量化与修复的工作步骤、项目建立、排放检测、泄漏\n确认与标识、泄漏排放量化、储罐逸散甲烷排放测量、泄漏修复及效果评价、质量保证与控制、检测报\n告等技术内容。",
+      "type": "语义分解",
+      "subject": "本文件规定了油气储运设施甲烷逸散排放检测量化与修复的工作步骤、项目建立、",
+      "action": "",
+      "operation": "本文件规定了油气储运设施甲烷逸散排放检测量化与修复的工作步骤、项目建立、排放检测、泄漏 确认与标识、泄漏排放量化、储罐逸散甲烷排放测量、泄漏修复及效果评价、质量保证与控制、检测报 告等技术内容。",
+      "condition": "",
+      "constraint": "    本文件规定了油气储运设施甲烷逸散排放检测量化与修复的工作步骤、项目建立、排放检测、泄漏\n确认与标识、泄漏排放量化、储罐逸散甲烷排放测量、泄漏修复及效果评价、质量保证与控制、检测报\n告等技术内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本文件规定了油气储运设施甲烷逸散排放检测量化与修复的工作步骤、项目建立、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36449,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023518",
+  "entities": [
+    {
+      "name": "连接 PSTN 和软交换网络的设备 , 实现 IP包转 TDM 的功能 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      连接 PSTN 和软交换网络的设备 , 实现 IP包转 TDM 的功能 , 承 载 IP 域 与 电 路 域 的 语 音 汇 接 任\n务 ,具备语音处理 、呼叫处理与控制 、维护和管理等功能 。\n3.6",
+      "type": "语义分解",
+      "subject": "连接 PSTN 和软交换网络的设备 , 实现 IP包转 TDM 的功能 ",
+      "action": "",
+      "operation": "连接 PSTN 和软交换网络的设备 , 实现 IP包转 TDM 的功能 , 承 载 IP 域 与 电 路 域 的 语 音 汇 接 任 务 ,具备语音处理 、呼叫处理与控制 、维护和管理等功能 。 3.6",
+      "condition": "",
+      "constraint": "      连接 PSTN 和软交换网络的设备 , 实现 IP包转 TDM 的功能 , 承 载 IP 域 与 电 路 域 的 语 音 汇 接 任\n务 ,具备语音处理 、呼叫处理与控制 、维护和管理等功能 。\n3.6",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连接 PSTN 和软交换网络的设备 , 实现 IP包转 TDM 的功能 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23518,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

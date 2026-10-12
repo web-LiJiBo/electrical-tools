@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "8.3.2.2",
+  "entities": [
+    {
+      "name": "有混凝土配重层的管道 ,应避免牺牲阳极与混凝土加强筋之间的电连接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.2.2   有混凝土配重层的管道 ,应避免牺牲阳极与混凝土加强筋之间的电连接 。\n8.3.2.3   海底管道牺牲阳极安装检验应包括焊缝外观和电连接检验 。",
+      "type": "语义分解",
+      "subject": "有混凝土配重层的管道 ,应避免牺牲阳极与混凝土加强筋之间的电连接",
+      "action": "",
+      "operation": "有混凝土配重层的管道 ,应避免牺牲阳极与混凝土加强筋之间的电连接 。 8.3.2.3 海底管道牺牲阳极安装检验应包括焊缝外观和电连接检验 。",
+      "condition": "",
+      "constraint": "8.3.2.2   有混凝土配重层的管道 ,应避免牺牲阳极与混凝土加强筋之间的电连接 。\n8.3.2.3   海底管道牺牲阳极安装检验应包括焊缝外观和电连接检验 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "有混凝土配重层的管道 ,应避免牺牲阳极与混凝土加强筋之间的电连接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42616,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

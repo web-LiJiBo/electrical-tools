@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.5.4",
+  "entities": [
+    {
+      "name": "电气装置维护文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.4 文件 装置的文件包括维护活动的历史记录及其维护原因，发现的缺陷和采取的补救措施，以及验证连续 监督方法的有效性资料=",
+      "type": "语义分解",
+      "subject": "电气装置维护文件",
+      "action": "",
+      "operation": "保存历史原因缺陷补救和有效性证据",
+      "condition": "",
+      "constraint": "5.5.4 文件 装置的文件包括维护活动的历史记录及其维护原因，发现的缺陷和采取的补救措施，以及验证连续 监督方法的有效性资料=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电气装置维护文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3996,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

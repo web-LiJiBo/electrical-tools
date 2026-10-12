@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.13.2",
+  "entities": [
+    {
+      "name": "高压终端及变压器防雷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.13.2       在架空高压电力线终端杆与铠装电缆的接头处，三相电\n力线应分别就近对地加装额定电压为12.7kV ( 系统额定电压\n10kV) 或7 .6kV(系统额定电压6.6kV)的交流无间隙氧化锌避雷\n器。建在郊区或山区，地处中雷区以上的通信局(站),应采用标称\n放电电流不小于20kA 的交流无间隙氧化锌强雷电避雷器。\n3.13.3      配电变压器高压侧应在靠近变压器处装设相应系统额定\n电压等级的交流无间隙氧化锌避雷器，变压器低压侧应加装\nSPD。",
+      "type": "语义分解",
+      "subject": "高压终端及变压器防雷",
+      "action": "",
+      "operation": "终端各相按系统额定电压装氧化锌避雷器郊山区中雷以上至少20kA变压器高侧避雷器低侧SPD",
+      "condition": "",
+      "constraint": "3.13.2       在架空高压电力线终端杆与铠装电缆的接头处，三相电\n力线应分别就近对地加装额定电压为12.7kV ( 系统额定电压\n10kV) 或7 .6kV(系统额定电压6.6kV)的交流无间隙氧化锌避雷\n器。建在郊区或山区，地处中雷区以上的通信局(站),应采用标称\n放电电流不小于20kA 的交流无间隙氧化锌强雷电避雷器。\n3.13.3      配电变压器高压侧应在靠近变压器处装设相应系统额定\n电压等级的交流无间隙氧化锌避雷器，变压器低压侧应加装\nSPD。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高压终端及变压器防雷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22458,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含3.13.2及3.13.3多电压参数须完整复核"
+      ]
+    }
+  }
+}

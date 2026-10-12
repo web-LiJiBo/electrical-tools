@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "0.18",
+  "entities": [
+    {
+      "name": "参数表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "0.18\t116.93\t2702.1\t11.0\t318.04\t2705.4",
+      "type": "语义分解",
+      "subject": "参数表",
+      "action": "",
+      "operation": "保留原始六列数值",
+      "condition": "",
+      "constraint": "0.18\t116.93\t2702.1\t11.0\t318.04\t2705.4",
+      "constraint_role": "informational",
+      "related_entities": [
+        "参数表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35744,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头单位缺失首列数值非条款编号"
+      ]
+    }
+  }
+}

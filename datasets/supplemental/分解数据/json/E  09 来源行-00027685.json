@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027685",
+  "entities": [
+    {
+      "name": "d) 管道沿线设置“三桩”、警示牌，标明管道具体走向、穿跨越具体型式、参",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "d)     管道沿线设置“三桩”、警示牌，标明管道具体走向、穿跨越具体型式、参数；“三桩”、警示牌上",
+      "type": "语义分解",
+      "subject": "d) 管道沿线设置“三桩”、警示牌，标明管道具体走向、穿跨越具体型式、参",
+      "action": "",
+      "operation": "d) 管道沿线设置“三桩”、警示牌，标明管道具体走向、穿跨越具体型式、参数；“三桩”、警示牌上",
+      "condition": "",
+      "constraint": "d)     管道沿线设置“三桩”、警示牌，标明管道具体走向、穿跨越具体型式、参数；“三桩”、警示牌上",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 管道沿线设置“三桩”、警示牌，标明管道具体走向、穿跨越具体型式、参"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27685,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

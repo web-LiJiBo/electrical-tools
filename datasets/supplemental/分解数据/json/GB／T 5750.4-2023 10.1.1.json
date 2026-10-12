@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "10.1.1",
+  "entities": [
+    {
+      "name": "硬度最低检测及干扰",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.1 最低检测质量浓度 本方法最低检测质量0.05 mg，若取50 mL水样测定，则最低检测质量浓度为1.0 mg/L。本方法主要干扰元素铁、锰、铝、铜、镍、钴等金属离子能使指示剂褪色或终点不明显。硫化钠及氰化钾可隐蔽重金属的干扰，盐酸羟胺可使高铁离子及高价锰离子还原为低价离子而消除其干扰。",
+      "type": "语义分解",
+      "subject": "硬度最低检测及干扰",
+      "action": "",
+      "operation": "记录0.05毫克检出质量及金属干扰掩蔽还原原理",
+      "condition": "",
+      "constraint": "10.1.1 最低检测质量浓度 本方法最低检测质量0.05 mg，若取50 mL水样测定，则最低检测质量浓度为1.0 mg/L。本方法主要干扰元素铁、锰、铝、铜、镍、钴等金属离子能使指示剂褪色或终点不明显。硫化钠及氰化钾可隐蔽重金属的干扰，盐酸羟胺可使高铁离子及高价锰离子还原为低价离子而消除其干扰。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "硬度最低检测及干扰"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1394,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；涉及剧毒试剂仅归档不作为现场操作授权"
+      ]
+    }
+  }
+}

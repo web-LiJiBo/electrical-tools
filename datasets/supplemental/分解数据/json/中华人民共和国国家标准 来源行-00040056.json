@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040056",
+  "entities": [
+    {
+      "name": "储存真实蒸汽压大于或等于5.2kPa 但小于27.6kPa 的 设计容积",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2  储存真实蒸汽压大于或等于5.2kPa 但小于27.6kPa 的\n设计容积大于或等于150m³的挥发性有机液体储罐，以及储存真\n实蒸汽压大于或等于27.6kPa 但小于76.6kPa 的设计容积大于\n或等于75m³的挥发性有机液体储罐应符合下列规定之一：\n     1)采用内浮顶罐，内浮顶罐的浮盘与罐壁之间应采用液体\n       镶嵌式、机械式鞋形、双封式等高效密封方式；",
+      "type": "语义分解",
+      "subject": "储存真实蒸汽压大于或等于5.2kPa 但小于27.6kPa 的 设计容积",
+      "action": "",
+      "operation": "储存真实蒸汽压大于或等于5.2kPa 但小于27.6kPa 的 设计容积大于或等于150m³的挥发性有机液体储罐，以及储存真 实蒸汽压大于或等于27.6kPa 但小于76.6kPa 的设计容积大于 或等于75m³的挥发性有机液体储罐应符合下列规定之一： 1)采用内浮顶罐，内浮顶罐的浮盘与罐壁之间应采用液体 镶嵌式、机械式鞋形、双封式等高效密封方式",
+      "condition": "",
+      "constraint": "   2  储存真实蒸汽压大于或等于5.2kPa 但小于27.6kPa 的\n设计容积大于或等于150m³的挥发性有机液体储罐，以及储存真\n实蒸汽压大于或等于27.6kPa 但小于76.6kPa 的设计容积大于\n或等于75m³的挥发性有机液体储罐应符合下列规定之一：\n     1)采用内浮顶罐，内浮顶罐的浮盘与罐壁之间应采用液体\n       镶嵌式、机械式鞋形、双封式等高效密封方式；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储存真实蒸汽压大于或等于5.2kPa 但小于27.6kPa 的 设计容积"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40056,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

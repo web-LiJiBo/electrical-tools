@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025149",
+  "entities": [
+    {
+      "name": "b) 电路交换信令测试仪模拟标准电路交换系统及其 POTS用户 C、D,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    电路交换信令测试仪模拟标准电路交换系统及其 POTS用户 C、D,用户 A注册至待测软交换\n       机，用户 B 为 SIP话机，但号码未在软交换机注册，用户 C配置为电路交换信令测试仪模拟的\n        电路交换系统的用户；用户 D 为 POTS话机，但号码未在电路交换信令测试仪模拟的电路交\n       换系统进行登记；",
+      "type": "语义分解",
+      "subject": "b) 电路交换信令测试仪模拟标准电路交换系统及其 POTS用户 C、D,",
+      "action": "",
+      "operation": "b) 电路交换信令测试仪模拟标准电路交换系统及其 POTS用户 C、D,用户 A注册至待测软交换 机，用户 B 为 SIP话机，但号码未在软交换机注册，用户 C配置为电路交换信令测试仪模拟的 电路交换系统的用户；用户 D 为 POTS话机，但号码未在电路交换信令测试仪模拟的电路交 换系统进行登记",
+      "condition": "",
+      "constraint": "b)    电路交换信令测试仪模拟标准电路交换系统及其 POTS用户 C、D,用户 A注册至待测软交换\n       机，用户 B 为 SIP话机，但号码未在软交换机注册，用户 C配置为电路交换信令测试仪模拟的\n        电路交换系统的用户；用户 D 为 POTS话机，但号码未在电路交换信令测试仪模拟的电路交\n       换系统进行登记；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 电路交换信令测试仪模拟标准电路交换系统及其 POTS用户 C、D,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25149,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

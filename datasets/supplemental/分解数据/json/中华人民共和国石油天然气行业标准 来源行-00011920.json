@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011920",
+  "entities": [
+    {
+      "name": "应能对系统用户进行创建 、修改 、删除和查询 , 对系统 用户划分不同的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3    应能对系统用户进行创建 、修改 、删除和查询 ,  对系统\n用户划分不同的操作和控制权限。",
+      "type": "语义分解",
+      "subject": "应能对系统用户进行创建 、修改 、删除和查询 , 对系统 用户划分不同的",
+      "action": "",
+      "operation": "应能对系统用户进行创建 、修改 、删除和查询 , 对系统 用户划分不同的操作和控制权限。",
+      "condition": "",
+      "constraint": "      3    应能对系统用户进行创建 、修改 、删除和查询 ,  对系统\n用户划分不同的操作和控制权限。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应能对系统用户进行创建 、修改 、删除和查询 , 对系统 用户划分不同的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11920,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

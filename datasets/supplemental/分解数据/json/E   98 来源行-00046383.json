@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046383",
+  "entities": [
+    {
+      "name": "ICDA的目的是识别腐蚀的可能性，通过ICDA 方法可评 价判断哪一段管",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.1 ICDA的目的是识别腐蚀的可能性，通过ICDA 方法可评\n价判断哪一段管段的潜在内腐蚀最为严重，评价出来的位置就\n是内腐蚀损坏的位置，通过历史信息整合评估及流动模型计算\n确定液体积聚和流态，采用内腐蚀模型预测或计算内腐蚀速率。\n      ICDA方法还可以作为已经实施内检测的补充评价方法，同\n时为已经实施内检测的管道进行选择或调整的优化方法。",
+      "type": "语义分解",
+      "subject": "ICDA的目的是识别腐蚀的可能性，通过ICDA 方法可评 价判断哪一段管",
+      "action": "",
+      "operation": "ICDA的目的是识别腐蚀的可能性，通过ICDA 方法可评 价判断哪一段管段的潜在内腐蚀最为严重，评价出来的位置就 是内腐蚀损坏的位置，通过历史信息整合评估及流动模型计算 确定液体积聚和流态，采用内腐蚀模型预测或计算内腐蚀速率。 ICDA方法还可以作为已经实施内检测的补充评价方法，同 时为已经实施内检测的管道进行选择或调整的优化方法。",
+      "condition": "",
+      "constraint": "3.0.1 ICDA的目的是识别腐蚀的可能性，通过ICDA 方法可评\n价判断哪一段管段的潜在内腐蚀最为严重，评价出来的位置就\n是内腐蚀损坏的位置，通过历史信息整合评估及流动模型计算\n确定液体积聚和流态，采用内腐蚀模型预测或计算内腐蚀速率。\n      ICDA方法还可以作为已经实施内检测的补充评价方法，同\n时为已经实施内检测的管道进行选择或调整的优化方法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ICDA的目的是识别腐蚀的可能性，通过ICDA 方法可评 价判断哪一段管"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46383,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035428",
+  "entities": [
+    {
+      "name": "——标准状况下理想气体摩尔体积，单位为标立方米每千摩尔 (Nm³/kmo",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "22.4 ——标准状况下理想气体摩尔体积，单位为标立方米每千摩尔 (Nm³/kmol);\n10 ——为 tC/10⁴Nm³ 、 kg/kmol    以 及 Nm³/kmol  之间的量级转变系数；\n\n   ——待测气体中的各种气体组分。",
+      "type": "语义分解",
+      "subject": "——标准状况下理想气体摩尔体积，单位为标立方米每千摩尔 (Nm³/kmo",
+      "action": "",
+      "operation": "——标准状况下理想气体摩尔体积，单位为标立方米每千摩尔 (Nm³/kmol); 10 ——为 tC/10⁴Nm³ 、 kg/kmol 以 及 Nm³/kmol 之间的量级转变系数； ——待测气体中的各种气体组分。",
+      "condition": "",
+      "constraint": "22.4 ——标准状况下理想气体摩尔体积，单位为标立方米每千摩尔 (Nm³/kmol);\n10 ——为 tC/10⁴Nm³ 、 kg/kmol    以 及 Nm³/kmol  之间的量级转变系数；\n\n   ——待测气体中的各种气体组分。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——标准状况下理想气体摩尔体积，单位为标立方米每千摩尔 (Nm³/kmo"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35428,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

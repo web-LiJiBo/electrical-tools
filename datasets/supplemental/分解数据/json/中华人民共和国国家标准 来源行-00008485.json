@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008485",
+  "entities": [
+    {
+      "name": "(2)优良等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   (2)优良等级：在合格基础上，传输性能全部满足设计要求，系\n统运行稳定可靠，主要安装项目全部达到施工质量标准，其余项目\n稍有偏差，但不影响设备使用寿命。",
+      "type": "语义分解",
+      "subject": "(2)优良等级",
+      "action": "",
+      "operation": "(2)优良等级：在合格基础上，传输性能全部满足设计要求，系 统运行稳定可靠，主要安装项目全部达到施工质量标准，其余项目 稍有偏差，但不影响设备使用寿命。",
+      "condition": "",
+      "constraint": "   (2)优良等级：在合格基础上，传输性能全部满足设计要求，系\n统运行稳定可靠，主要安装项目全部达到施工质量标准，其余项目\n稍有偏差，但不影响设备使用寿命。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "(2)优良等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8485,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

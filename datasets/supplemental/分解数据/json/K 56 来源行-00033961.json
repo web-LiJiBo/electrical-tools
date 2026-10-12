@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033961",
+  "entities": [
+    {
+      "name": "氮氧化合物浓度测量应采用化学发光技术 , 按照此方法 , 可测量通过 N",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      氮氧化合物浓度测量应采用化学发光技术 , 按照此方法 , 可测量通过 NO和 O3   的反应所产生的辐\n射量 。这种方法对 NO2  不敏感 , 因此 , 使样品通过转换器 , 在其中产生 NO。测量时 , 应记录初始的 NO和\n总的 NOx  浓度 , 可通过相减获得 NO2  测量值。  仅 NOx  的测定是强制性的。\n7. 2. 2    NOx  分析器的主要性能规范",
+      "type": "语义分解",
+      "subject": "氮氧化合物浓度测量应采用化学发光技术 , 按照此方法 , 可测量通过 N",
+      "action": "",
+      "operation": "氮氧化合物浓度测量应采用化学发光技术 , 按照此方法 , 可测量通过 NO和 O3 的反应所产生的辐 射量 。这种方法对 NO2 不敏感 , 因此 , 使样品通过转换器 , 在其中产生 NO。测量时 , 应记录初始的 NO和 总的 NOx 浓度 , 可通过相减获得 NO2 测量值。 仅 NOx 的测定是强制性的。 7. 2. 2 NOx 分析器的主要性能规范",
+      "condition": "",
+      "constraint": "      氮氧化合物浓度测量应采用化学发光技术 , 按照此方法 , 可测量通过 NO和 O3   的反应所产生的辐\n射量 。这种方法对 NO2  不敏感 , 因此 , 使样品通过转换器 , 在其中产生 NO。测量时 , 应记录初始的 NO和\n总的 NOx  浓度 , 可通过相减获得 NO2  测量值。  仅 NOx  的测定是强制性的。\n7. 2. 2    NOx  分析器的主要性能规范",
+      "constraint_role": "informational",
+      "related_entities": [
+        "氮氧化合物浓度测量应采用化学发光技术 , 按照此方法 , 可测量通过 N"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33961,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

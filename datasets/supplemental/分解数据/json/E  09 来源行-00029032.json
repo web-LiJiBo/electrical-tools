@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00029032",
+  "entities": [
+    {
+      "name": "×1230毫米16开本1印张25千字印1—1000 2017年8月北京第",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "880×1230毫米16开本1印张25千字印1—1000\n2017年8月北京第1版2017年8月北京第1次印刷\n      书号：155021 ·7652 定价：20.00元\n           版权专有 不得翻印",
+      "type": "语义分解",
+      "subject": "×1230毫米16开本1印张25千字印1—1000 2017年8月北京第",
+      "action": "",
+      "operation": "×1230毫米16开本1印张25千字印1—1000 2017年8月北京第1版2017年8月北京第1次印刷 书号：155021 ·7652 定价：20.00元 版权专有 不得翻印",
+      "condition": "",
+      "constraint": "880×1230毫米16开本1印张25千字印1—1000\n2017年8月北京第1版2017年8月北京第1次印刷\n      书号：155021 ·7652 定价：20.00元\n           版权专有 不得翻印",
+      "constraint_role": "informational",
+      "related_entities": [
+        "×1230毫米16开本1印张25千字印1—1000 2017年8月北京第"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29032,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024166",
+  "entities": [
+    {
+      "name": "e) PSTN 收端局收到 IAM 消息 ,分析被叫用户号码 ,检查被叫",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "e)    PSTN 收端局收到 IAM 消息 ,分析被叫用户号码 ,检查被叫的情况 , 向软交换发送地址全消息\n       (ACM) ,ACM 消息中含有关被叫的当前状态等附加信息 ;",
+      "type": "语义分解",
+      "subject": "e) PSTN 收端局收到 IAM 消息 ,分析被叫用户号码 ,检查被叫",
+      "action": "",
+      "operation": "e) PSTN 收端局收到 IAM 消息 ,分析被叫用户号码 ,检查被叫的情况 , 向软交换发送地址全消息 (ACM) ,ACM 消息中含有关被叫的当前状态等附加信息",
+      "condition": "",
+      "constraint": "e)    PSTN 收端局收到 IAM 消息 ,分析被叫用户号码 ,检查被叫的情况 , 向软交换发送地址全消息\n       (ACM) ,ACM 消息中含有关被叫的当前状态等附加信息 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) PSTN 收端局收到 IAM 消息 ,分析被叫用户号码 ,检查被叫"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24166,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

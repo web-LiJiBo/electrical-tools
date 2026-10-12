@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041350",
+  "entities": [
+    {
+      "name": "a) 在施工期间，有资质的人员应依据设计规范进行相应的检查，确保施工满足",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)  在施工期间，有资质的人员应依据设计规范进行相应的检查，确保施工满足设计规范。\nb)  完工后，应对设备和装置的可能泄漏情况进行检查。如果需要，应依据适用规范对设备进行\n  加压测试。对用做加压测试液体的收集和处置参见《API 环境指南：陆上石油勘探和开发固\n  体废物管理》。",
+      "type": "语义分解",
+      "subject": "a) 在施工期间，有资质的人员应依据设计规范进行相应的检查，确保施工满足",
+      "action": "",
+      "operation": "a) 在施工期间，有资质的人员应依据设计规范进行相应的检查，确保施工满足设计规范。 b) 完工后，应对设备和装置的可能泄漏情况进行检查。如果需要，应依据适用规范对设备进行 加压测试。对用做加压测试液体的收集和处置参见《API 环境指南：陆上石油勘探和开发固 体废物管理》。",
+      "condition": "",
+      "constraint": "a)  在施工期间，有资质的人员应依据设计规范进行相应的检查，确保施工满足设计规范。\nb)  完工后，应对设备和装置的可能泄漏情况进行检查。如果需要，应依据适用规范对设备进行\n  加压测试。对用做加压测试液体的收集和处置参见《API 环境指南：陆上石油勘探和开发固\n  体废物管理》。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 在施工期间，有资质的人员应依据设计规范进行相应的检查，确保施工满足"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41350,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

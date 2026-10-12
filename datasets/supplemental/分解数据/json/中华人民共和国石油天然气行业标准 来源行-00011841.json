@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011841",
+  "entities": [
+    {
+      "name": "系统应支持以全自动 、半自动等各种方式接入公网",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4   系统应支持以全自动 、半自动等各种方式接入公网 。\n 5    应支持主叫控制 、被叫控制 、互不控制等控制复原方式。\n 6    应支持本交换机分机 、  外部用户的三方以上通话功能。\n 7    应支持 SIP协议。",
+      "type": "语义分解",
+      "subject": "系统应支持以全自动 、半自动等各种方式接入公网",
+      "action": "",
+      "operation": "系统应支持以全自动 、半自动等各种方式接入公网 。 5 应支持主叫控制 、被叫控制 、互不控制等控制复原方式。 6 应支持本交换机分机 、 外部用户的三方以上通话功能。 7 应支持 SIP协议。",
+      "condition": "",
+      "constraint": "4   系统应支持以全自动 、半自动等各种方式接入公网 。\n 5    应支持主叫控制 、被叫控制 、互不控制等控制复原方式。\n 6    应支持本交换机分机 、  外部用户的三方以上通话功能。\n 7    应支持 SIP协议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统应支持以全自动 、半自动等各种方式接入公网"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11841,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

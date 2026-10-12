@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.5.9",
+  "entities": [
+    {
+      "name": "循环冷却水排污水、脱盐水站排水、锅炉排水等水质较为 清净，可优先作为回用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.9       循环冷却水排污水、脱盐水站排水、锅炉排水等水质较为\n清净，可优先作为回用水水源；污水处理场出水由于流量稳定、回",
+      "type": "语义分解",
+      "subject": "循环冷却水排污水、脱盐水站排水、锅炉排水等水质较为 清净，可优先作为回用",
+      "action": "",
+      "operation": "循环冷却水排污水、脱盐水站排水、锅炉排水等水质较为 清净，可优先作为回用水水源；污水处理场出水由于流量稳定、回",
+      "condition": "",
+      "constraint": "6.5.9       循环冷却水排污水、脱盐水站排水、锅炉排水等水质较为\n清净，可优先作为回用水水源；污水处理场出水由于流量稳定、回",
+      "constraint_role": "informational",
+      "related_entities": [
+        "循环冷却水排污水、脱盐水站排水、锅炉排水等水质较为 清净，可优先作为回用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40446,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.4.5",
+  "entities": [
+    {
+      "name": "输入量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.5 在图 2a)中 ,如果对于输入量t几乎没有可利用的信息 ,唯一可假设的是t可用一个对称矩形的 先验概率分布来描述 ,其下限a_=96 %C,上限 a+ =104 C ,因而半宽度a = (a+一a_ )/2=4 % (见 4.3.7 ) 则 t的概率密度函数为: b(t)=1/(2a ) ,当a _<t<a +肘; p(t)=0 ,当t取其他值时 正如在 4.3.7指出的 ,t的最佳估计值是它的期望值4 = (a++4_)/2=100 %C= 这个估计值的标 准不确定度为 u(u )=a/3~2.3 %C ,这是由式(7)得出的。",
+      "type": "语义分解",
+      "subject": "输入量",
+      "action": "",
+      "operation": "说明对称矩形先验分布示例",
+      "condition": "几乎没有可利用的信息",
+      "constraint": "",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "温度单位及公式损坏，不补成96℃或104℃设备限值"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008478",
+  "entities": [
+    {
+      "name": "时延",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   时延：测试过程要调整光衰耗器使设备和测试仪表在正常的\n接收光功率工作状态。用网管配置一个点到点的双向以太网业\n务，确认设备工程配置的所有各通路工作正常，设置数据网络分析\n仪为时延测试功能，采用64字节、128字节、256字节、512字节、\n1024字节、1280字节、1518字节等7个典型包长，数据网络分析\n仪发送流量为吞吐量90%的固定流量，测试时间设定为10s。",
+      "type": "语义分解",
+      "subject": "时延",
+      "action": "",
+      "operation": "时延：测试过程要调整光衰耗器使设备和测试仪表在正常的 接收光功率工作状态。用网管配置一个点到点的双向以太网业 务，确认设备工程配置的所有各通路工作正常，设置数据网络分析 仪为时延测试功能，采用64字节、128字节、256字节、512字节、 1024字节、1280字节、1518字节等7个典型包长，数据网络分析 仪发送流量为吞吐量90%的固定流量，测试时间设定为10s。",
+      "condition": "",
+      "constraint": "   时延：测试过程要调整光衰耗器使设备和测试仪表在正常的\n接收光功率工作状态。用网管配置一个点到点的双向以太网业\n务，确认设备工程配置的所有各通路工作正常，设置数据网络分析\n仪为时延测试功能，采用64字节、128字节、256字节、512字节、\n1024字节、1280字节、1518字节等7个典型包长，数据网络分析\n仪发送流量为吞吐量90%的固定流量，测试时间设定为10s。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "时延"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8478,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

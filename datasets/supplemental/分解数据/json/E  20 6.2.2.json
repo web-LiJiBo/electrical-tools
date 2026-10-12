@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "天然气管道停用1年后再启用的，应进行全面检测，对管道腐蚀状况进行调查，对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 天然气管道停用1年后再启用的，应进行全面检测，对管道腐蚀状况进行调查，对管道剩余强\n度进行评价。",
+      "type": "语义分解",
+      "subject": "天然气管道停用1年后再启用的，应进行全面检测，对管道腐蚀状况进行调查，对",
+      "action": "",
+      "operation": "天然气管道停用1年后再启用的，应进行全面检测，对管道腐蚀状况进行调查，对管道剩余强 度进行评价。",
+      "condition": "",
+      "constraint": "6.2.2 天然气管道停用1年后再启用的，应进行全面检测，对管道腐蚀状况进行调查，对管道剩余强\n度进行评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "天然气管道停用1年后再启用的，应进行全面检测，对管道腐蚀状况进行调查，对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

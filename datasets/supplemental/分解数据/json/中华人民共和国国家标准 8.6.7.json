@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "8.6.7",
+  "entities": [
+    {
+      "name": "未涉及的电源防雷接地设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.6.7       本标准未涉及的局站的电源设计部分应符合现行行业标\n准《通信电源设备安装工程设计规范》GB51194  中的有关规定。\n8.6.8       本规范未涉及的局(站)防雷与接地部分应符合现行行业\n标准《通信局(站)站防雷与接地工程设计规范》GB   50689 的有关\n规定。",
+      "type": "语义分解",
+      "subject": "未涉及的电源防雷接地设计",
+      "action": "",
+      "operation": "分别符合GB51194和GB50689",
+      "condition": "",
+      "constraint": "8.6.7       本标准未涉及的局站的电源设计部分应符合现行行业标\n准《通信电源设备安装工程设计规范》GB51194  中的有关规定。\n8.6.8       本规范未涉及的局(站)防雷与接地部分应符合现行行业\n标准《通信局(站)站防雷与接地工程设计规范》GB   50689 的有关\n规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "未涉及的电源防雷接地设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10059,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含8.6.7和8.6.8完整保留"
+      ]
+    }
+  }
+}

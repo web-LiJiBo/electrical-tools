@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "7.3.1",
+  "entities": [
+    {
+      "name": "第7.3节人防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1 人力防范除符合6.1的规定外 ,还应符合以下规定: a ) 配备巡查.巡护人员进行月常巡查.巡护 ,24h内巡查 .巡护不少于1次; b) 特殊时期 ,增加巡查.巡护次数 ,增加巡查 .巡护人员配备数量",
+      "type": "语义分解",
+      "subject": "第7.3节人防",
+      "action": "",
+      "operation": "日巡至少一次特殊期增加人员次数",
+      "condition": "",
+      "constraint": "7.3.1 人力防范除符合6.1的规定外 ,还应符合以下规定: a ) 配备巡查.巡护人员进行月常巡查.巡护 ,24h内巡查 .巡护不少于1次; b) 特殊时期 ,增加巡查.巡护次数 ,增加巡查 .巡护人员配备数量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第7.3节人防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5461,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；具体部位需关联上级标题"
+      ]
+    }
+  }
+}

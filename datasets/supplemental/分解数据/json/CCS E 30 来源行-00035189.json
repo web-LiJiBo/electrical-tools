@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035189",
+  "entities": [
+    {
+      "name": "氧弹的内部体积不大于 400mL",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      氧弹的内部体积不大于 400mL。使用的全部材料应不受燃烧过程或产物影响 ,不会引入可以测量\n的热输入或引起最终产物的变化 。  如果氧弹内衬有铂或金 ,则所有通路应密封 , 以防止燃烧产物影响基\n础金属 。  在测试期间不应有气体泄漏 。  氧弹在室温下应能承受 9. 18 MPa的静压试验 , 而不引起任何\n部件超过其弹性极限 。",
+      "type": "语义分解",
+      "subject": "氧弹的内部体积不大于 400mL",
+      "action": "",
+      "operation": "氧弹的内部体积不大于 400mL。使用的全部材料应不受燃烧过程或产物影响 ,不会引入可以测量 的热输入或引起最终产物的变化 。 如果氧弹内衬有铂或金 ,则所有通路应密封 , 以防止燃烧产物影响基 础金属 。 在测试期间不应有气体泄漏 。 氧弹在室温下应能承受 9. 18 MPa的静压试验 , 而不引起任何 部件超过其弹性极限 。",
+      "condition": "",
+      "constraint": "      氧弹的内部体积不大于 400mL。使用的全部材料应不受燃烧过程或产物影响 ,不会引入可以测量\n的热输入或引起最终产物的变化 。  如果氧弹内衬有铂或金 ,则所有通路应密封 , 以防止燃烧产物影响基\n础金属 。  在测试期间不应有气体泄漏 。  氧弹在室温下应能承受 9. 18 MPa的静压试验 , 而不引起任何\n部件超过其弹性极限 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "氧弹的内部体积不大于 400mL"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35189,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "5.5.5",
+  "entities": [
+    {
+      "name": "电话及网络设备地址",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5    IP 电话交换机 、  IP 终端 、   内网路由器 、   内网交换机等 IP\n设备宜采用私网 IP地址 ,   并符合企业管理规定 。接入公用数据\n网络的路由器或网络交换机 、  防火墙设备应采用公网 IP地址。\n5.5.6     网络设备应支持 IPV4 和 IPV6 标准 。",
+      "type": "语义分解",
+      "subject": "电话及网络设备地址",
+      "action": "",
+      "operation": "内部宜私网公网接入设备公网网络支持IPv4和IPv6",
+      "condition": "",
+      "constraint": "5.5.5    IP 电话交换机 、  IP 终端 、   内网路由器 、   内网交换机等 IP\n设备宜采用私网 IP地址 ,   并符合企业管理规定 。接入公用数据\n网络的路由器或网络交换机 、  防火墙设备应采用公网 IP地址。\n5.5.6     网络设备应支持 IPV4 和 IPV6 标准 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电话及网络设备地址"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11866,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含5.5.5和5.5.6保留"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "7.1.2",
+  "entities": [
+    {
+      "name": "净化厂搬迁范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 单列脱硫装置处理能力为300 X 104m/D 级的天然气净化厂搬迁区域应符合以下要求 : a) 硫化氢体积分数为13% 15% 的单列脱硫装置处理能力为 300 x IOmID 级的天然气净化厂 搬迂区域边缘距最外脱硫装置边缘宜不小于 400m。 b) 硫化氢体积分数低于 13%或高于15%的单列脱硫装置处理能力为小于或大于300 X IO4mDD 级的天然气净化厂 建设单位参考本条a) 的规定。在组织专家技术论证后。可适当增大或碱小搬迁区域。",
+      "type": "语义分解",
+      "subject": "净化厂搬迁范围",
+      "action": "",
+      "operation": "按单列处理能力和含硫量确定距离必要时专家调整",
+      "condition": "",
+      "constraint": "7.1.2 单列脱硫装置处理能力为300 X 104m/D 级的天然气净化厂搬迁区域应符合以下要求 : a) 硫化氢体积分数为13% 15% 的单列脱硫装置处理能力为 300 x IOmID 级的天然气净化厂 搬迂区域边缘距最外脱硫装置边缘宜不小于 400m。 b) 硫化氢体积分数低于 13%或高于15%的单列脱硫装置处理能力为小于或大于300 X IO4mDD 级的天然气净化厂 建设单位参考本条a) 的规定。在组织专家技术论证后。可适当增大或碱小搬迁区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "净化厂搬迁范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7473,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；处理能力单位和范围符号识别缺损待核对"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022326",
+  "entities": [
+    {
+      "name": "将分开的装置、诸导电物体用等电位连接导体或防雷器连接 起来以减小雷电流在",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   将分开的装置、诸导电物体用等电位连接导体或防雷器连接\n起来以减小雷电流在它们之间产生的电位差。\n2.0.25  等电位连接网络    bonding  network",
+      "type": "语义分解",
+      "subject": "将分开的装置、诸导电物体用等电位连接导体或防雷器连接 起来以减小雷电流在",
+      "action": "",
+      "operation": "将分开的装置、诸导电物体用等电位连接导体或防雷器连接 起来以减小雷电流在它们之间产生的电位差。 2.0.25 等电位连接网络 bonding network",
+      "condition": "",
+      "constraint": "   将分开的装置、诸导电物体用等电位连接导体或防雷器连接\n起来以减小雷电流在它们之间产生的电位差。\n2.0.25  等电位连接网络    bonding  network",
+      "constraint_role": "informational",
+      "related_entities": [
+        "将分开的装置、诸导电物体用等电位连接导体或防雷器连接 起来以减小雷电流在"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22326,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "灭火器选择",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1 灭火器的选择应考虑下列因素: 1 灭火器配置场所的火灾种类; 2 灭火器配置场所的危险等级; 灭火器的灭火效能和通用性; 灭火剂对保护物品的污损程度; 5 灭火器设置点的环境温度; 使用灭火器人员的体能。",
+      "type": "语义分解",
+      "subject": "灭火器选择",
+      "action": "",
+      "operation": "综合火灾类别危险等级灭火效能通用性污损环境温度及人员体能",
+      "condition": "",
+      "constraint": "4.1.1 灭火器的选择应考虑下列因素: 1 灭火器配置场所的火灾种类; 2 灭火器配置场所的危险等级; 灭火器的灭火效能和通用性; 灭火剂对保护物品的污损程度; 5 灭火器设置点的环境温度; 使用灭火器人员的体能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器选择"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4047,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

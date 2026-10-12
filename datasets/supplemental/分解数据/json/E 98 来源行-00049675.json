@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049675",
+  "entities": [
+    {
+      "name": "储罐周围测得的罐/地电位数据并不代表储罐中心的实际 保护水平，为了准确检",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1      储罐周围测得的罐/地电位数据并不代表储罐中心的实际\n保护水平，为了准确检测分析出阴极保护系统是否有效，应更多\n地考虑对储罐中心位置保护电位进行检测。因此，在罐底中心安\n装长效参比电极是必要的，同时为了避免数据的单一性，可适当\n增加参比电极安装数量。",
+      "type": "语义分解",
+      "subject": "储罐周围测得的罐/地电位数据并不代表储罐中心的实际 保护水平，为了准确检",
+      "action": "",
+      "operation": "储罐周围测得的罐/地电位数据并不代表储罐中心的实际 保护水平，为了准确检测分析出阴极保护系统是否有效，应更多 地考虑对储罐中心位置保护电位进行检测。因此，在罐底中心安 装长效参比电极是必要的，同时为了避免数据的单一性，可适当 增加参比电极安装数量。",
+      "condition": "",
+      "constraint": "5.5.1      储罐周围测得的罐/地电位数据并不代表储罐中心的实际\n保护水平，为了准确检测分析出阴极保护系统是否有效，应更多\n地考虑对储罐中心位置保护电位进行检测。因此，在罐底中心安\n装长效参比电极是必要的，同时为了避免数据的单一性，可适当\n增加参比电极安装数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储罐周围测得的罐/地电位数据并不代表储罐中心的实际 保护水平，为了准确检"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49675,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

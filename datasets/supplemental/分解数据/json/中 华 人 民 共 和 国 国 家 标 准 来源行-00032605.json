@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032605",
+  "entities": [
+    {
+      "name": "C3 . 3 按上述参考方案的监测结果 , 以 4 个监控点中的浓度最高",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "C3 . 3    按上述参考方案的监测结果 , 以 4 个监控点中的浓度最高点测值与参照点浓度之差计值。",
+      "type": "语义分解",
+      "subject": "C3 . 3 按上述参考方案的监测结果 , 以 4 个监控点中的浓度最高",
+      "action": "",
+      "operation": "C3 . 3 按上述参考方案的监测结果 , 以 4 个监控点中的浓度最高点测值与参照点浓度之差计值。",
+      "condition": "",
+      "constraint": "C3 . 3    按上述参考方案的监测结果 , 以 4 个监控点中的浓度最高点测值与参照点浓度之差计值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "C3 . 3 按上述参考方案的监测结果 , 以 4 个监控点中的浓度最高"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32605,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

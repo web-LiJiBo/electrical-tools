@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00032153",
+  "entities": [
+    {
+      "name": "a) 让参与此项工作的每个人理解完成该工作任务所涉及的活动细节及相应的风",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)     让参与此项工作的每个人理解完成该工作任务所涉及的活动细节及相应的风险、控制措施和\n    每个人的职责；",
+      "type": "语义分解",
+      "subject": "a) 让参与此项工作的每个人理解完成该工作任务所涉及的活动细节及相应的风",
+      "action": "",
+      "operation": "a) 让参与此项工作的每个人理解完成该工作任务所涉及的活动细节及相应的风险、控制措施和 每个人的职责",
+      "condition": "",
+      "constraint": "a)     让参与此项工作的每个人理解完成该工作任务所涉及的活动细节及相应的风险、控制措施和\n    每个人的职责；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 让参与此项工作的每个人理解完成该工作任务所涉及的活动细节及相应的风"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32153,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

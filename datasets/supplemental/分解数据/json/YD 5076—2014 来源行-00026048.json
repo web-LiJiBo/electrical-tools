@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026048",
+  "entities": [
+    {
+      "name": ". PSTN 与ISDN 互通时，向 PSTN 用户提供的业务范围仅 限",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1. PSTN 与ISDN 互通时，向 PSTN 用户提供的业务范围仅\n限于PSTN 所能提供的业务范围。PSTN 与ISDN 之间通过ISUP\n中继相连。",
+      "type": "语义分解",
+      "subject": ". PSTN 与ISDN 互通时，向 PSTN 用户提供的业务范围仅 限",
+      "action": "",
+      "operation": ". PSTN 与ISDN 互通时，向 PSTN 用户提供的业务范围仅 限于PSTN 所能提供的业务范围。PSTN 与ISDN 之间通过ISUP 中继相连。",
+      "condition": "",
+      "constraint": "   1. PSTN 与ISDN 互通时，向 PSTN 用户提供的业务范围仅\n限于PSTN 所能提供的业务范围。PSTN 与ISDN 之间通过ISUP\n中继相连。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". PSTN 与ISDN 互通时，向 PSTN 用户提供的业务范围仅 限"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26048,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

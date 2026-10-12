@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018529",
+  "entities": [
+    {
+      "name": "如果复帧同步处理处于OOM 状态，而且在m 个 VC3/4帧之内没有收到",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   如果复帧同步处理处于OOM 状态，而且在m 个 VC3/4帧之内没有收到H4 复帧，那么就应宣告\ndLOM缺陷。一旦进人dLOM状态，当复帧恢复时(复帧同步处理进人IM 状态)就应退出该状态。m\n\n值应在8～40范围之内，不可配置。\n\n5.3.6.4  指针丢失缺陷 ( dLOP)",
+      "type": "语义分解",
+      "subject": "如果复帧同步处理处于OOM 状态，而且在m 个 VC3/4帧之内没有收到",
+      "action": "",
+      "operation": "如果复帧同步处理处于OOM 状态，而且在m 个 VC3/4帧之内没有收到H4 复帧，那么就应宣告 dLOM缺陷。一旦进人dLOM状态，当复帧恢复时(复帧同步处理进人IM 状态)就应退出该状态。m 值应在8～40范围之内，不可配置。 5.3.6.4 指针丢失缺陷 ( dLOP)",
+      "condition": "",
+      "constraint": "   如果复帧同步处理处于OOM 状态，而且在m 个 VC3/4帧之内没有收到H4 复帧，那么就应宣告\ndLOM缺陷。一旦进人dLOM状态，当复帧恢复时(复帧同步处理进人IM 状态)就应退出该状态。m\n\n值应在8～40范围之内，不可配置。\n\n5.3.6.4  指针丢失缺陷 ( dLOP)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "如果复帧同步处理处于OOM 状态，而且在m 个 VC3/4帧之内没有收到"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18529,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

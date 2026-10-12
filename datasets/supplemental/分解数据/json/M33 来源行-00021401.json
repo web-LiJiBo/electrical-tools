@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021401",
+  "entities": [
+    {
+      "name": ") K4比特1到比特4",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    2) K4比特1到比特4:插入APS 信号待定，只有保护路径才要求这种处理。\n   d)    缺陷：无。",
+      "type": "语义分解",
+      "subject": ") K4比特1到比特4",
+      "action": "",
+      "operation": ") K4比特1到比特4:插入APS 信号待定，只有保护路径才要求这种处理。 d) 缺陷：无。",
+      "condition": "",
+      "constraint": "    2) K4比特1到比特4:插入APS 信号待定，只有保护路径才要求这种处理。\n   d)    缺陷：无。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") K4比特1到比特4"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21401,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

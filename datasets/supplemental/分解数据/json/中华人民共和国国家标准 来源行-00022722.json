@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022722",
+  "entities": [
+    {
+      "name": "室外防雷箱与射频拉远单元固定在墙体或女儿墙上时，应 引入接地线与防雷箱和",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.6      室外防雷箱与射频拉远单元固定在墙体或女儿墙上时，应\n引入接地线与防雷箱和射频拉远单元的外壳连接。",
+      "type": "语义分解",
+      "subject": "室外防雷箱与射频拉远单元固定在墙体或女儿墙上时，应 引入接地线与防雷箱和",
+      "action": "",
+      "operation": "室外防雷箱与射频拉远单元固定在墙体或女儿墙上时，应 引入接地线与防雷箱和射频拉远单元的外壳连接。",
+      "condition": "",
+      "constraint": "6.5.6      室外防雷箱与射频拉远单元固定在墙体或女儿墙上时，应\n引入接地线与防雷箱和射频拉远单元的外壳连接。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "室外防雷箱与射频拉远单元固定在墙体或女儿墙上时，应 引入接地线与防雷箱和"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22722,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

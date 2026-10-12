@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "6.5",
+  "entities": [
+    {
+      "name": "自行监测设备试剂",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5 监测仪器设备和实验试剂 应配备数量充足。技术指标符合相关监测方法要求的各类监测仪器设备。标堆物质和实验试剂= 监测仪器性能应符合相应方法标推或技术规范要求，根据仪器性能实施自校准或者检定1校准。运行和维护 定期检查 标准物质 试剂`耗材的购买和使用情况应建立台账予以记录。",
+      "type": "语义分解",
+      "subject": "自行监测设备试剂",
+      "action": "",
+      "operation": "充足性能合方法按性能校检维护试剂标物耗材购买使用台账",
+      "condition": "",
+      "constraint": "6.5 监测仪器设备和实验试剂 应配备数量充足。技术指标符合相关监测方法要求的各类监测仪器设备。标堆物质和实验试剂= 监测仪器性能应符合相应方法标推或技术规范要求，根据仪器性能实施自校准或者检定1校准。运行和维护 定期检查 标准物质 试剂`耗材的购买和使用情况应建立台账予以记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "自行监测设备试剂"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2876,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

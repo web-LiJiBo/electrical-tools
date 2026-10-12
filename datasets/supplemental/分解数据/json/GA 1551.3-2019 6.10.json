@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "6.10",
+  "entities": [
+    {
+      "name": "目标岗位责任",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.10 重点目标的管理单位应建立\"一岗双责\"制度.做好重点目标的治安反恐防范工作。",
+      "type": "语义分解",
+      "subject": "目标岗位责任",
+      "action": "",
+      "operation": "建立一岗双责制度",
+      "condition": "",
+      "constraint": "6.10 重点目标的管理单位应建立\"一岗双责\"制度.做好重点目标的治安反恐防范工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "目标岗位责任"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5705,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035020",
+  "entities": [
+    {
+      "name": "引火时用低于 12V 的电压",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      引火时用低于 12V 的电压 。  通电时间不应超过 1 s。   电路上宜串联指示灯 , 以便观察点火情况 ,在\n电路上的电压有很大波动时 ,量热计上的电源宜用直流电 。",
+      "type": "语义分解",
+      "subject": "引火时用低于 12V 的电压",
+      "action": "",
+      "operation": "引火时用低于 12V 的电压 。 通电时间不应超过 1 s。 电路上宜串联指示灯 , 以便观察点火情况 ,在 电路上的电压有很大波动时 ,量热计上的电源宜用直流电 。",
+      "condition": "",
+      "constraint": "      引火时用低于 12V 的电压 。  通电时间不应超过 1 s。   电路上宜串联指示灯 , 以便观察点火情况 ,在\n电路上的电压有很大波动时 ,量热计上的电源宜用直流电 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "引火时用低于 12V 的电压"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35020,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

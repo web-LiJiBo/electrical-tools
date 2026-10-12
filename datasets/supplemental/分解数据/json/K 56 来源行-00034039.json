@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034039",
+  "entities": [
+    {
+      "name": "这类仪器是由一台 自动气相色谱仪且带一个 FⅠD组成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      这类仪器是由一台 自动气相色谱仪且带一个 FⅠD组成。  样品分为两部分 :空气 、甲烷和乙烷之和。\n然后将柱管逆流冲洗 , 从而给出由所有 VOCS组成的第三部分。  由于甲烷 、乙烷及 VOCS已从空气中分\n离出来 , 不受氧气的影响。  可能要用两个柱子适当流动互换以改善分离并加速分析。",
+      "type": "语义分解",
+      "subject": "这类仪器是由一台 自动气相色谱仪且带一个 FⅠD组成",
+      "action": "",
+      "operation": "这类仪器是由一台 自动气相色谱仪且带一个 FⅠD组成。 样品分为两部分 :空气 、甲烷和乙烷之和。 然后将柱管逆流冲洗 , 从而给出由所有 VOCS组成的第三部分。 由于甲烷 、乙烷及 VOCS已从空气中分 离出来 , 不受氧气的影响。 可能要用两个柱子适当流动互换以改善分离并加速分析。",
+      "condition": "",
+      "constraint": "      这类仪器是由一台 自动气相色谱仪且带一个 FⅠD组成。  样品分为两部分 :空气 、甲烷和乙烷之和。\n然后将柱管逆流冲洗 , 从而给出由所有 VOCS组成的第三部分。  由于甲烷 、乙烷及 VOCS已从空气中分\n离出来 , 不受氧气的影响。  可能要用两个柱子适当流动互换以改善分离并加速分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "这类仪器是由一台 自动气相色谱仪且带一个 FⅠD组成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34039,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

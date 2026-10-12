@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.3.4",
+  "entities": [
+    {
+      "name": "关联设备安全接口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.3.4 本质安全型电路和非本质安全型电路之间关联装置(安全接口) 检查关联装置，保证正确选择符合系统描述文件规定的型号和额定值。 如果关联装置是二极管安 全栅，还应检查整体装置的安全接地连接件(见5.7.3.8)",
+      "type": "语义分解",
+      "subject": "关联设备安全接口",
+      "action": "",
+      "operation": "型号额定值与系统文件一致二极管安全栅接地按规定检查",
+      "condition": "",
+      "constraint": "5.7.3.4 本质安全型电路和非本质安全型电路之间关联装置(安全接口) 检查关联装置，保证正确选择符合系统描述文件规定的型号和额定值。 如果关联装置是二极管安 全栅，还应检查整体装置的安全接地连接件(见5.7.3.8)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "关联设备安全接口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4008,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

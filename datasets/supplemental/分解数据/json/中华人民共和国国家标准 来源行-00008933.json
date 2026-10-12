@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008933",
+  "entities": [
+    {
+      "name": "波分复用系统宜设置公务联络系统，用于系统各局站的联络",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1       波分复用系统宜设置公务联络系统，用于系统各局站的联络。\n5.2.2       当配置两条公务联络系统时，宜一条用于光终端站、光分\n路站间的联络，另一条用于系统所有局站间的联络。对于设置有\nEMS 及 SNMS  的局站，第一条公务联络系统应延伸至网管机房。\n5.2.3      公务联络系统应具备选址呼叫方式、群址呼叫方式和广播\n呼叫方式。",
+      "type": "语义分解",
+      "subject": "波分复用系统宜设置公务联络系统，用于系统各局站的联络",
+      "action": "",
+      "operation": "波分复用系统宜设置公务联络系统，用于系统各局站的联络。 5.2.2 当配置两条公务联络系统时，宜一条用于光终端站、光分 路站间的联络，另一条用于系统所有局站间的联络。对于设置有 EMS 及 SNMS 的局站，第一条公务联络系统应延伸至网管机房。 5.2.3 公务联络系统应具备选址呼叫方式、群址呼叫方式和广播 呼叫方式。",
+      "condition": "",
+      "constraint": "5.2.1       波分复用系统宜设置公务联络系统，用于系统各局站的联络。\n5.2.2       当配置两条公务联络系统时，宜一条用于光终端站、光分\n路站间的联络，另一条用于系统所有局站间的联络。对于设置有\nEMS 及 SNMS  的局站，第一条公务联络系统应延伸至网管机房。\n5.2.3      公务联络系统应具备选址呼叫方式、群址呼叫方式和广播\n呼叫方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "波分复用系统宜设置公务联络系统，用于系统各局站的联络"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8933,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

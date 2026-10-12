@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "23",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "23\t7.1.6\t电话网的编号计划应符\n合中华人民共和国工业\n和信息化部2003年4月\n7日颁布的《电信网编号\n计划(2003年版)》的相\n关规定\t修改为：电话网的编\n号计划应符合中华\n人民共和国工业和\n信息化部2009年12\n月颁布的《电信网编\n号 计 划 ( 2 0 0 9 年\n版)》的相关规定\t更新《电信网编\n号计划》为2009\n年版",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "23\t7.1.6\t电话网的编号计划应符\n合中华人民共和国工业\n和信息化部2003年4月\n7日颁布的《电信网编号\n计划(2003年版)》的相\n关规定\t修改为：电话网的编\n号计划应符合中华\n人民共和国工业和\n信息化部2009年12\n月颁布的《电信网编\n号 计 划 ( 2 0 0 9 年\n版)》的相关规定\t更新《电信网编\n号计划》为2009\n年版",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26486,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

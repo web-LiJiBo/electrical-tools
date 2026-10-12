@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.16.1.3",
+  "entities": [
+    {
+      "name": "应急预案处置卡",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.16.1.3 企业应根据风险评估的结果 ,辨识可能发生的突发事件和异常情祝 ,结合运行经验和事故教 训 ,按规定要求编制针对性的综合应急预案 专项应急预案 ,现场处置方案 基层岗位应在现场处置方 案的基础上 ,针对工作场所_岗位特点 ,编制简明的应急处置卡 ,明确报告 ,处置 .救援和避险等事故初期 应急处置要求。",
+      "type": "语义分解",
+      "subject": "应急预案处置卡",
+      "action": "",
+      "operation": "按风险经验事故编综合专项现场预案基层简卡明确报告处置救援避险",
+      "condition": "",
+      "constraint": "4.16.1.3 企业应根据风险评估的结果 ,辨识可能发生的突发事件和异常情祝 ,结合运行经验和事故教 训 ,按规定要求编制针对性的综合应急预案 专项应急预案 ,现场处置方案 基层岗位应在现场处置方 案的基础上 ,针对工作场所_岗位特点 ,编制简明的应急处置卡 ,明确报告 ,处置 .救援和避险等事故初期 应急处置要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急预案处置卡"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5288,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048312",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注：1所有的位置数据应在统一基准下，如里程数据，均为基线里程；XYZ如\n\n       为84坐标系，则其他的坐标数据必须统一为84坐标。坐标精度应达到\n\n       厘米级定位精度。以下表格要求与此一致。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：1所有的位置数据应在统一基准下，如里程数据，均为基线里程；XYZ如 为84坐标系，则其他的坐标数据必须统一为84坐标。坐标精度应达到 厘米级定位精度。以下表格要求与此一致。",
+      "condition": "",
+      "constraint": "注：1所有的位置数据应在统一基准下，如里程数据，均为基线里程；XYZ如\n\n       为84坐标系，则其他的坐标数据必须统一为84坐标。坐标精度应达到\n\n       厘米级定位精度。以下表格要求与此一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48312,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

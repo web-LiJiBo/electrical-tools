@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020099",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3) PP 功能对所接收信号相对于同步设备定时参考的偏移和准同步频差进行调节。PP 功能模\n   型化为一个数据缓存器，该缓存器用接收VC 时钟写入数据，通过从参考点T0 导出的VC\n\n   时钟读出。当写入时钟速率超过读出时钟速率时，缓存器被逐渐填满，反之亦然。缓存器\n\n   占用门限的上限和下限决定何时进行指针调整。需要用缓存器来降低网络指针调整频率。\n   指针滞后阈值间隔对TU-3 至少4个字节，对 TU-12至少2个字节。当缓存器中的数据上\n   升至特定VC 的阈值以上时，相关帧偏移减少一个字节，多出的字节由缓存器读出。当缓\n   存器中的数据下降至特定VC的阈值以下时，相关帧偏移增多一个字节，缓存器丧失读出\n   机会。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "3) PP 功能对所接收信号相对于同步设备定时参考的偏移和准同步频差进行调节。PP 功能模\n   型化为一个数据缓存器，该缓存器用接收VC 时钟写入数据，通过从参考点T0 导出的VC\n\n   时钟读出。当写入时钟速率超过读出时钟速率时，缓存器被逐渐填满，反之亦然。缓存器\n\n   占用门限的上限和下限决定何时进行指针调整。需要用缓存器来降低网络指针调整频率。\n   指针滞后阈值间隔对TU-3 至少4个字节，对 TU-12至少2个字节。当缓存器中的数据上\n   升至特定VC 的阈值以上时，相关帧偏移减少一个字节，多出的字节由缓存器读出。当缓\n   存器中的数据下降至特定VC的阈值以下时，相关帧偏移增多一个字节，缓存器丧失读出\n   机会。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20099,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

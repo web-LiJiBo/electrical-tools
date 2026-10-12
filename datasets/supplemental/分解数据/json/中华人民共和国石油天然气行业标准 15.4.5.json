@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "15.4.5",
+  "entities": [
+    {
+      "name": "高频开关电源机柜",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "15.4.5    通信高频开关组合电源机柜内的交流电源电缆和直流电\n源电缆应分两侧进出 。",
+      "type": "语义分解",
+      "subject": "高频开关电源机柜",
+      "action": "",
+      "operation": "交直流电缆分两侧进出",
+      "condition": "",
+      "constraint": "15.4.5    通信高频开关组合电源机柜内的交流电源电缆和直流电\n源电缆应分两侧进出 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高频开关电源机柜"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12145,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

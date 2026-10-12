@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00022059",
+  "entities": [
+    {
+      "name": "中继器相同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "中继器相同。另外，STM-64 和 OTU2 抖动网络极限相同。那么,如果 STM-64(A   型)中继器抖动转\n移函数带宽和增益选择与OTU23R 中继器一样的话(即1MHz,0.1dB),    经过各个相同中继数的HRM\n抖动累积应近似相同。因为OTU2 经过一个50个中继器的HRM 抖动累积是可接受的，STM-64经过一\n个50个中继器的HRM 抖动累积也是可接受的。",
+      "type": "语义分解",
+      "subject": "中继器相同",
+      "action": "",
+      "operation": "中继器相同。另外，STM-64 和 OTU2 抖动网络极限相同。那么,如果 STM-64(A 型)中继器抖动转 移函数带宽和增益选择与OTU23R 中继器一样的话(即1MHz,0.1dB), 经过各个相同中继数的HRM 抖动累积应近似相同。因为OTU2 经过一个50个中继器的HRM 抖动累积是可接受的，STM-64经过一 个50个中继器的HRM 抖动累积也是可接受的。",
+      "condition": "",
+      "constraint": "中继器相同。另外，STM-64 和 OTU2 抖动网络极限相同。那么,如果 STM-64(A   型)中继器抖动转\n移函数带宽和增益选择与OTU23R 中继器一样的话(即1MHz,0.1dB),    经过各个相同中继数的HRM\n抖动累积应近似相同。因为OTU2 经过一个50个中继器的HRM 抖动累积是可接受的，STM-64经过一\n个50个中继器的HRM 抖动累积也是可接受的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中继器相同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22059,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

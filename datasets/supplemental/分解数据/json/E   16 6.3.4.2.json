@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "6.3.4.2",
+  "entities": [
+    {
+      "name": "系统带云台设备的应支持云台的旋转和自动扫描、 镜头的变焦、 预置点的设置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4.2   系统带云台设备的应支持云台的旋转和自动扫描、  镜头的变焦、  预置点的设置和调用、  巡航\n路径的设定和调用、  轨迹的录制和调用。",
+      "type": "语义分解",
+      "subject": "系统带云台设备的应支持云台的旋转和自动扫描、 镜头的变焦、 预置点的设置",
+      "action": "",
+      "operation": "系统带云台设备的应支持云台的旋转和自动扫描、 镜头的变焦、 预置点的设置和调用、 巡航 路径的设定和调用、 轨迹的录制和调用。",
+      "condition": "",
+      "constraint": "6.3.4.2   系统带云台设备的应支持云台的旋转和自动扫描、  镜头的变焦、  预置点的设置和调用、  巡航\n路径的设定和调用、  轨迹的录制和调用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统带云台设备的应支持云台的旋转和自动扫描、 镜头的变焦、 预置点的设置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41680,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.13.1",
+  "entities": [
+    {
+      "name": "传输方式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.13.1 传输方式的选择应符合下列规定: 1 传输方式分为有线传输和无线传输两种方式;应根据系统规模、系统功能、现场环境和管理要求选择合适的传输方式;应优先选用有线传输方式; 2 选用的传输方式应保证信号传输的稳定、准确、安全、可靠; 3 报警主干线宜采用有线传输为主、无线传输为辅的双重报警传输方式; 4 高风险保护对象的安全防范工程应采用专用传输网络[专线和(或)虚拟专用网]。",
+      "type": "语义分解",
+      "subject": "传输方式",
+      "action": "",
+      "operation": "优有线按规模环境管理稳定安全主干宜双重高风险专网",
+      "condition": "",
+      "constraint": "6.13.1 传输方式的选择应符合下列规定: 1 传输方式分为有线传输和无线传输两种方式;应根据系统规模、系统功能、现场环境和管理要求选择合适的传输方式;应优先选用有线传输方式; 2 选用的传输方式应保证信号传输的稳定、准确、安全、可靠; 3 报警主干线宜采用有线传输为主、无线传输为辅的双重报警传输方式; 4 高风险保护对象的安全防范工程应采用专用传输网络[专线和(或)虚拟专用网]。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "传输方式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7051,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

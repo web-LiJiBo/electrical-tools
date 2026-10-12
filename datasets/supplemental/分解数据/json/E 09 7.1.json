@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E 09",
+  "version": "",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "考核发证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1   生产经营单位上级安全主管部门组织考核工作，对理论考试和实际操作考试成绩均达到合格者\n发证。",
+      "type": "语义分解",
+      "subject": "考核发证",
+      "action": "",
+      "operation": "上级安全主管组织理论实操均合格发证",
+      "condition": "",
+      "constraint": "7.1   生产经营单位上级安全主管部门组织考核工作，对理论考试和实际操作考试成绩均达到合格者\n发证。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "考核发证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28756,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

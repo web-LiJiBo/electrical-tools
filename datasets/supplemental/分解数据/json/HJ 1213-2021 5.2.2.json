@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "遥感几何校正",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 几何校正  几何校正技术处理要求如下: 9) 宜采用 WGS84 UTM 西安80 CGCS2OOO 等常用的投影二 式; 6) 宜采用参考影像或空间点位坐标信息进行几何校正。校正精度应控制在1个像元以内",
+      "type": "语义分解",
+      "subject": "遥感几何校正",
+      "action": "",
+      "operation": "宜常用投影参考影像或坐标校正精度控制一像元内",
+      "condition": "",
+      "constraint": "5.2.2 几何校正  几何校正技术处理要求如下: 9) 宜采用 WGS84 UTM 西安80 CGCS2OOO 等常用的投影二 式; 6) 宜采用参考影像或空间点位坐标信息进行几何校正。校正精度应控制在1个像元以内",
+      "constraint_role": "informational",
+      "related_entities": [
+        "遥感几何校正"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1948,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；投影名称字符识别异常"
+      ]
+    }
+  }
+}

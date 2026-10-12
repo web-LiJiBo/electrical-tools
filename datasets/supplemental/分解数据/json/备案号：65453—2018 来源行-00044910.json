@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00044910",
+  "entities": [
+    {
+      "name": "对于干扰源复杂且难以评价干扰腐蚀程度的管段，可在 埋设腐蚀试片后根据本标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3   对于干扰源复杂且难以评价干扰腐蚀程度的管段，可在\n埋设腐蚀试片后根据本标准表4.1.1-1中的试片平均腐蚀速率指\n标进行评价。",
+      "type": "语义分解",
+      "subject": "对于干扰源复杂且难以评价干扰腐蚀程度的管段，可在 埋设腐蚀试片后根据本标",
+      "action": "",
+      "operation": "对于干扰源复杂且难以评价干扰腐蚀程度的管段，可在 埋设腐蚀试片后根据本标准表4.1.1-1中的试片平均腐蚀速率指 标进行评价。",
+      "condition": "",
+      "constraint": "      3   对于干扰源复杂且难以评价干扰腐蚀程度的管段，可在\n埋设腐蚀试片后根据本标准表4.1.1-1中的试片平均腐蚀速率指\n标进行评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于干扰源复杂且难以评价干扰腐蚀程度的管段，可在 埋设腐蚀试片后根据本标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44910,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

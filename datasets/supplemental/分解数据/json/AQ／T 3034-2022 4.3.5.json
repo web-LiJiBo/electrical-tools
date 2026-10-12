@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.3.5",
+  "entities": [
+    {
+      "name": "适用安全法定要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.5 企业应将适用的相关法律 ,法规 ,标谁 ,规范及其他法定要求应用于企业的全生命周期安全管 理中。",
+      "type": "语义分解",
+      "subject": "适用安全法定要求",
+      "action": "",
+      "operation": "应用于全生命周期安全管理",
+      "condition": "",
+      "constraint": "4.3.5 企业应将适用的相关法律 ,法规 ,标谁 ,规范及其他法定要求应用于企业的全生命周期安全管 理中。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "适用安全法定要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5068,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

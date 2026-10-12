@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "8.4.2",
+  "entities": [
+    {
+      "name": "列架布置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.2      列架可按区域安装，应满足工程近期需要。高度应根据设\n备高度设计，列架与设备架顶宜相距50mm。",
+      "type": "语义分解",
+      "subject": "列架布置",
+      "action": "",
+      "operation": "满足近期需求按设备定高度架顶宜相距50毫米",
+      "condition": "",
+      "constraint": "8.4.2      列架可按区域安装，应满足工程近期需要。高度应根据设\n备高度设计，列架与设备架顶宜相距50mm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "列架布置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9985,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

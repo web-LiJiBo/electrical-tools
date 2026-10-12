@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产应急维抢修管理规定",
+  "standard_id": "无",
+  "version": "",
+  "chapter_path": "来源行-00003594",
+  "entities": [
+    {
+      "name": "第五十八条 维抢修基地各区域划分明确,整齐规范,符合集团公司维抢修队伍标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十八条 维抢修基地各区域划分明确,整齐规范,符合集团公司维抢修队伍标准化管理要求;车辆停放指定地点,整齐统一;严禁将基地内房屋出租或借给外部人员;严禁在基地院内长期存放外部车辆,物资,设备等物品。未经批准,严禁悬挂(张贴)外部企业相关信息。",
+      "type": "语义分解",
+      "subject": "第五十八条 维抢修基地各区域划分明确,整齐规范,符合集团公司维抢修队伍标",
+      "action": "",
+      "operation": "第五十八条 维抢修基地各区域划分明确,整齐规范,符合集团公司维抢修队伍标准化管理要求;车辆停放指定地点,整齐统一;严禁将基地内房屋出租或借给外部人员;严禁在基地院内长期存放外部车辆,物资,设备等物品。未经批准,严禁悬挂(张贴)外部企业相关信息。",
+      "condition": "",
+      "constraint": "第五十八条 维抢修基地各区域划分明确,整齐规范,符合集团公司维抢修队伍标准化管理要求;车辆停放指定地点,整齐统一;严禁将基地内房屋出租或借给外部人员;严禁在基地院内长期存放外部车辆,物资,设备等物品。未经批准,严禁悬挂(张贴)外部企业相关信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十八条 维抢修基地各区域划分明确,整齐规范,符合集团公司维抢修队伍标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3594,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "演练观察记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2 观察记录和收集数据、信息和资料 演练开始后，演练评估人员通过观察、记录和收集演练信息和相关数据、信息和资料，观察演练实施及进展、参演人员表现等情况，及时记录演练过程中出现的问题。在不影响演练进程的情况下，评估人员可进行现场提问并做好记录。",
+      "type": "语义分解",
+      "subject": "演练观察记录",
+      "action": "",
+      "operation": "观察收集数据进展表现问题不影响进程可提问记录",
+      "condition": "",
+      "constraint": "6.2 观察记录和收集数据、信息和资料 演练开始后，演练评估人员通过观察、记录和收集演练信息和相关数据、信息和资料，观察演练实施及进展、参演人员表现等情况，及时记录演练过程中出现的问题。在不影响演练进程的情况下，评估人员可进行现场提问并做好记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "演练观察记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5387,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

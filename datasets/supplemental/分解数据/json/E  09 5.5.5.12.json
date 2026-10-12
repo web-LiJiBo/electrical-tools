@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.5.12",
+  "entities": [
+    {
+      "name": "泄放废液泄漏系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5.12        应落实输油、气泄放系统管理制度要求，进行维护检查，并保留记录。\n\n5.5.5. 13  应落实管道污油、废液处理管理制度，按要求进行处理，并保留记录。\n\n5.5.5.14  应配置泄漏监测系统，并进行实时监测。",
+      "type": "语义分解",
+      "subject": "泄放废液泄漏系统",
+      "action": "",
+      "operation": "维护检查留记录按制度处理污油废液配泄漏实时监测",
+      "condition": "",
+      "constraint": "5.5.5.12        应落实输油、气泄放系统管理制度要求，进行维护检查，并保留记录。\n\n5.5.5. 13  应落实管道污油、废液处理管理制度，按要求进行处理，并保留记录。\n\n5.5.5.14  应配置泄漏监测系统，并进行实时监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泄放废液泄漏系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27793,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；含5.5.5.12至14"
+      ]
+    }
+  }
+}

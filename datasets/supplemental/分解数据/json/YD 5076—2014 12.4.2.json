@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "12.4.2",
+  "entities": [
+    {
+      "name": "附属维护和数据设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.4.2       备品备件、工具、测试仪表等应按工程的实际需求配置。\n交换设备机房应配置操作维护终端，用于设备的近端维护，数量应\n根据机房维护需求及设备厂家所提供的近端维护机制共同确定。\n12.4.3  配套数据设备主要包括局域网交换机、路由器和防火墙\n等，具体的设备数量、背板带宽、端口及功能等应根据组网结构、IP\n带宽需求、安全性要求等因素计算后确定，同时应充分考虑设备的\n可扩展性及良好的交换和路由特性。",
+      "type": "语义分解",
+      "subject": "附属维护和数据设备",
+      "action": "",
+      "operation": "按需求配工具终端按维护机制配置数据设备按组网带宽安全计算留扩展",
+      "condition": "",
+      "constraint": "12.4.2       备品备件、工具、测试仪表等应按工程的实际需求配置。\n交换设备机房应配置操作维护终端，用于设备的近端维护，数量应\n根据机房维护需求及设备厂家所提供的近端维护机制共同确定。\n12.4.3  配套数据设备主要包括局域网交换机、路由器和防火墙\n等，具体的设备数量、背板带宽、端口及功能等应根据组网结构、IP\n带宽需求、安全性要求等因素计算后确定，同时应充分考虑设备的\n可扩展性及良好的交换和路由特性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "附属维护和数据设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26301,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含12.4.2及12.4.3"
+      ]
+    }
+  }
+}

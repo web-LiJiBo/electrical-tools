@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.3.7.8",
+  "entities": [
+    {
+      "name": "洗井及清洗废水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.7.8 冼井及设备清洗废水应使用固定容器进行收集,  不应任意排放。",
+      "type": "语义分解",
+      "subject": "洗井及清洗废水",
+      "action": "",
+      "operation": "固定容器收集且不得任意排放",
+      "condition": "",
+      "constraint": "6.3.7.8 冼井及设备清洗废水应使用固定容器进行收集,  不应任意排放。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "洗井及清洗废水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

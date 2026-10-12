@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "6.2.3.1",
+  "entities": [
+    {
+      "name": "计量器具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3.1 耗气数据, 耗油数据。蒸汽数据的累积量宜通过计量器具 (流量计。流量 积算仪。流量计算机等)换算后上传至站控制系统,不具备换算功能的计量器具。由 站控制系统根据总累积量换算出小时累积量和日累积量。",
+      "type": "语义分解",
+      "subject": "计量器具",
+      "action": "",
+      "operation": "换算累积量并上传",
+      "condition": "不具备换算功能的计量器具",
+      "constraint": "由 站控制系统根据总累积量换算出小时累积量和日累积量",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "计量器具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

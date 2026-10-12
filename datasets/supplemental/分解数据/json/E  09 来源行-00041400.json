@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041400",
+  "entities": [
+    {
+      "name": "事故溢出(包括油和含盐水溢漏)除了可能危害环境外，还可能直接影响生产、违",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   事故溢出(包括油和含盐水溢漏)除了可能危害环境外，还可能直接影响生产、违反法律或影响\n公众。采用有效方式最大限度地减少未经许可的溢泄事故非常重要。作业者可以采用下面的推荐作\n法，以最大限度地减少废物的数量和对环境的影响。\n7.7.1  预防",
+      "type": "语义分解",
+      "subject": "事故溢出(包括油和含盐水溢漏)除了可能危害环境外，还可能直接影响生产、违",
+      "action": "",
+      "operation": "事故溢出(包括油和含盐水溢漏)除了可能危害环境外，还可能直接影响生产、违反法律或影响 公众。采用有效方式最大限度地减少未经许可的溢泄事故非常重要。作业者可以采用下面的推荐作 法，以最大限度地减少废物的数量和对环境的影响。 7.7.1 预防",
+      "condition": "",
+      "constraint": "   事故溢出(包括油和含盐水溢漏)除了可能危害环境外，还可能直接影响生产、违反法律或影响\n公众。采用有效方式最大限度地减少未经许可的溢泄事故非常重要。作业者可以采用下面的推荐作\n法，以最大限度地减少废物的数量和对环境的影响。\n7.7.1  预防",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故溢出(包括油和含盐水溢漏)除了可能危害环境外，还可能直接影响生产、违"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41400,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

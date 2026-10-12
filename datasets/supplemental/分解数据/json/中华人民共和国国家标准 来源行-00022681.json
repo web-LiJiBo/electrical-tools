@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022681",
+  "entities": [
+    {
+      "name": "铁塔四角包含机房时，接地系统应利用建筑物基础和铁塔 四角外设的环形地网作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    铁塔四角包含机房时，接地系统应利用建筑物基础和铁塔\n四角外设的环形地网作为其接地装置，接地网面积应大于15m×\n15m。",
+      "type": "语义分解",
+      "subject": "铁塔四角包含机房时，接地系统应利用建筑物基础和铁塔 四角外设的环形地网作",
+      "action": "",
+      "operation": "铁塔四角包含机房时，接地系统应利用建筑物基础和铁塔 四角外设的环形地网作为其接地装置，接地网面积应大于15m× 15m。",
+      "condition": "",
+      "constraint": "       2    铁塔四角包含机房时，接地系统应利用建筑物基础和铁塔\n四角外设的环形地网作为其接地装置，接地网面积应大于15m×\n15m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铁塔四角包含机房时，接地系统应利用建筑物基础和铁塔 四角外设的环形地网作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22681,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

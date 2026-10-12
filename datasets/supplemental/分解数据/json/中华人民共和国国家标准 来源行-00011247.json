@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011247",
+  "entities": [
+    {
+      "name": "单个光复用段组成的光通道指标见相应的光复用段要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2      单个光复用段组成的光通道指标见相应的光复用段要求。\n5.1.5      本条是关于速率光通道最大纠前误码率的规定。",
+      "type": "语义分解",
+      "subject": "单个光复用段组成的光通道指标见相应的光复用段要求",
+      "action": "",
+      "operation": "单个光复用段组成的光通道指标见相应的光复用段要求。 5.1.5 本条是关于速率光通道最大纠前误码率的规定。",
+      "condition": "",
+      "constraint": "5.1.2      单个光复用段组成的光通道指标见相应的光复用段要求。\n5.1.5      本条是关于速率光通道最大纠前误码率的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "单个光复用段组成的光通道指标见相应的光复用段要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11247,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

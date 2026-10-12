@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.2.2",
+  "entities": [
+    {
+      "name": "ec保护等级检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.2.2 保护等级\"\" ec\" 保护等级\"ec\" 的检查项目按照表 A.1中的 Ex\"n\"栏 注: 保护等级\"ec\"和早期防爆型式\"14 \"在技术上等效。",
+      "type": "语义分解",
+      "subject": "ec保护等级检查",
+      "action": "",
+      "operation": "按表对应防爆类型检查",
+      "condition": "",
+      "constraint": "5.7.2.2 保护等级\"\" ec\" 保护等级\"ec\" 的检查项目按照表 A.1中的 Ex\"n\"栏 注: 保护等级\"ec\"和早期防爆型式\"14 \"在技术上等效。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ec保护等级检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4003,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺表A.1且早期防爆型式字符损坏"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "8.2.10",
+  "entities": [
+    {
+      "name": "脚手架防护棚拆除",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.10 拆除脚手架、防护棚时，应设警戒区并派专人监护，不应上下同时施工。",
+      "type": "语义分解",
+      "subject": "脚手架防护棚拆除",
+      "action": "",
+      "operation": "警戒监护且不上下同时施工",
+      "condition": "拆除脚手架、防护棚时",
+      "constraint": "8.2.10 拆除脚手架、防护棚时，应设警戒区并派专人监护，不应上下同时施工。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "脚手架防护棚拆除"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3915,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

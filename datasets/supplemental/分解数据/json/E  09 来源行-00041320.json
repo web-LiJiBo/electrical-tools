@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041320",
+  "entities": [
+    {
+      "name": ")应考虑安装安全设备和系统，即在装置故障或意外释放情况下，紧急关闭 ( ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 1)应考虑安装安全设备和系统，即在装置故障或意外释放情况下，紧急关闭 ( ESD)  系统有\n    能力封闭油井、关闭压缩机或其他发动机，或自动切换生产流程。在适当的地方应安装报\n    警系统，当出现设备故障或意外释放时，可以向公众或公司主管报警。应安装和维护火灾\n    防护设备，例如灭火器、水枪、消防泵、水罐和自动灭火器。\n 2)在安全系统的设计上，应参考 API RP 2350。",
+      "type": "语义分解",
+      "subject": ")应考虑安装安全设备和系统，即在装置故障或意外释放情况下，紧急关闭 ( ",
+      "action": "",
+      "operation": ")应考虑安装安全设备和系统，即在装置故障或意外释放情况下，紧急关闭 ( ESD) 系统有 能力封闭油井、关闭压缩机或其他发动机，或自动切换生产流程。在适当的地方应安装报 警系统，当出现设备故障或意外释放时，可以向公众或公司主管报警。应安装和维护火灾 防护设备，例如灭火器、水枪、消防泵、水罐和自动灭火器。 2)在安全系统的设计上，应参考 API RP 2350。",
+      "condition": "",
+      "constraint": " 1)应考虑安装安全设备和系统，即在装置故障或意外释放情况下，紧急关闭 ( ESD)  系统有\n    能力封闭油井、关闭压缩机或其他发动机，或自动切换生产流程。在适当的地方应安装报\n    警系统，当出现设备故障或意外释放时，可以向公众或公司主管报警。应安装和维护火灾\n    防护设备，例如灭火器、水枪、消防泵、水罐和自动灭火器。\n 2)在安全系统的设计上，应参考 API RP 2350。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")应考虑安装安全设备和系统，即在装置故障或意外释放情况下，紧急关闭 ( "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41320,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "4.0.3",
+  "entities": [
+    {
+      "name": "本条规定对收集到的数据应进行初步质量审核，目的在 于确保综合分析的输入数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.0.3   本条规定对收集到的数据应进行初步质量审核，目的在\n\n于确保综合分析的输入数据的准确性。例如：检查是否存在单\n根管节长度超过13m 或小于0.5m 、管道埋深为负或过正等非正\n常数据，如果发现异常数据，应及时修正。",
+      "type": "语义分解",
+      "subject": "本条规定对收集到的数据应进行初步质量审核，目的在 于确保综合分析的输入数",
+      "action": "",
+      "operation": "本条规定对收集到的数据应进行初步质量审核，目的在 于确保综合分析的输入数据的准确性。例如：检查是否存在单 根管节长度超过13m 或小于0.5m 、管道埋深为负或过正等非正 常数据，如果发现异常数据，应及时修正。",
+      "condition": "",
+      "constraint": "4.0.3   本条规定对收集到的数据应进行初步质量审核，目的在\n\n于确保综合分析的输入数据的准确性。例如：检查是否存在单\n根管节长度超过13m 或小于0.5m 、管道埋深为负或过正等非正\n常数据，如果发现异常数据，应及时修正。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条规定对收集到的数据应进行初步质量审核，目的在 于确保综合分析的输入数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48451,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

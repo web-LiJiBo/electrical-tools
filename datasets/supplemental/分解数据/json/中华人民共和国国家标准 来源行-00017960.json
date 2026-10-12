@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017960",
+  "entities": [
+    {
+      "name": "wrapping 保护模式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       wrapping 保护模式：当RPR 环网上的某段链路或某个节点\n发生故障时，故障点临近的两个节点处自动环回，即把外环和内\n环连在一起，形成一个闭合单环。如图1所示，原来从 Station  B\n到 Station  A的0环上的流量，将在故障邻节点处环回到1环\n传输。",
+      "type": "语义分解",
+      "subject": "wrapping 保护模式",
+      "action": "",
+      "operation": "wrapping 保护模式：当RPR 环网上的某段链路或某个节点 发生故障时，故障点临近的两个节点处自动环回，即把外环和内 环连在一起，形成一个闭合单环。如图1所示，原来从 Station B 到 Station A的0环上的流量，将在故障邻节点处环回到1环 传输。",
+      "condition": "",
+      "constraint": "       wrapping 保护模式：当RPR 环网上的某段链路或某个节点\n发生故障时，故障点临近的两个节点处自动环回，即把外环和内\n环连在一起，形成一个闭合单环。如图1所示，原来从 Station  B\n到 Station  A的0环上的流量，将在故障邻节点处环回到1环\n传输。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "wrapping 保护模式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17960,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

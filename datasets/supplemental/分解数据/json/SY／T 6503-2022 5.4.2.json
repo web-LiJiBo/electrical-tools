@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "5.4.2",
+  "entities": [
+    {
+      "name": "液体装卸检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 甲。。甲8 乙4类液体的装卸设施。可燃气体探测器的设置应符合下列规定 : a) 铁路装卸栈台,在地面上每一个车位宜设1台探测器。且探测器与装卸车口的水平距离不应大于 ISm ; b) 汽车装卸站的装卸车鹤位与探测器的水平距离不应大于 1Sm,当汽车装卸站内设有缓冲罐时,按5.2.3 的规定执行 ; c) 探测器安装高度应距地面或不透风楼地/底板0.3m 0.Gm。",
+      "type": "语义分解",
+      "subject": "液体装卸检测",
+      "action": "",
+      "operation": "铁路车位汽车鹤位按规定距离高度布点缓冲罐按引用",
+      "condition": "",
+      "constraint": "5.4.2 甲。。甲8 乙4类液体的装卸设施。可燃气体探测器的设置应符合下列规定 : a) 铁路装卸栈台,在地面上每一个车位宜设1台探测器。且探测器与装卸车口的水平距离不应大于 ISm ; b) 汽车装卸站的装卸车鹤位与探测器的水平距离不应大于 1Sm,当汽车装卸站内设有缓冲罐时,按5.2.3 的规定执行 ; c) 探测器安装高度应距地面或不透风楼地/底板0.3m 0.Gm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "液体装卸检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5806,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；类别ISm等数值缺损不能猜测"
+      ]
+    }
+  }
+}

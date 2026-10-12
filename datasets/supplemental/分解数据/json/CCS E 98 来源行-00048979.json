@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048979",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   总而言之，《金属和合金金属 交流腐蚀评价 保护准则》\nISO    18086:2019没有考虑到低阴极保护下的交流腐蚀，即当\n阴极电流密度低于1A/m²,  国内外已有的研究结果表明，在高\n交流电流密度(大于100A/m²)  下会存在较高的交流腐蚀风险，\n即存在一个交流电流密度限值，当交流干扰超过该限值时，无\n论如何调整阴保水平都不能有效抑制交流腐蚀。针对《金属和\n合金金属 交流腐蚀评价 保护准则》ISO    18086:2019 存在\n的问题，特别是关于交流电流密度限值的问题，《阴极保护管道",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   总而言之，《金属和合金金属 交流腐蚀评价 保护准则》\nISO    18086:2019没有考虑到低阴极保护下的交流腐蚀，即当\n阴极电流密度低于1A/m²,  国内外已有的研究结果表明，在高\n交流电流密度(大于100A/m²)  下会存在较高的交流腐蚀风险，\n即存在一个交流电流密度限值，当交流干扰超过该限值时，无\n论如何调整阴保水平都不能有效抑制交流腐蚀。针对《金属和\n合金金属 交流腐蚀评价 保护准则》ISO    18086:2019 存在\n的问题，特别是关于交流电流密度限值的问题，《阴极保护管道",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48979,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

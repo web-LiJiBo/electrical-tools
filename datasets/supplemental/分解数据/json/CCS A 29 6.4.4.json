@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "6.4.4",
+  "entities": [
+    {
+      "name": "铝阳极的工作面允许有铸造缩孔 ,最大深度应不超过 10 mm ,且不超过",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.4   铝阳极的工作面允许有铸造缩孔 ,最大深度应不超过 10 mm ,且不超过铝阳极厚度的 10% 。\n6.4.5   铝阳极的冷隔深度不应超过 10 mm ,冷隔长度不应超过铝阳极宽度的 3倍 。  镯式铝阳极冷隔长\n度不应大于 150 mm。",
+      "type": "语义分解",
+      "subject": "铝阳极的工作面允许有铸造缩孔 ,最大深度应不超过 10 mm ,且不超过",
+      "action": "",
+      "operation": "铝阳极的工作面允许有铸造缩孔 ,最大深度应不超过 10 mm ,且不超过铝阳极厚度的 10% 。 6.4.5 铝阳极的冷隔深度不应超过 10 mm ,冷隔长度不应超过铝阳极宽度的 3倍 。 镯式铝阳极冷隔长 度不应大于 150 mm。",
+      "condition": "",
+      "constraint": "6.4.4   铝阳极的工作面允许有铸造缩孔 ,最大深度应不超过 10 mm ,且不超过铝阳极厚度的 10% 。\n6.4.5   铝阳极的冷隔深度不应超过 10 mm ,冷隔长度不应超过铝阳极宽度的 3倍 。  镯式铝阳极冷隔长\n度不应大于 150 mm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铝阳极的工作面允许有铸造缩孔 ,最大深度应不超过 10 mm ,且不超过"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43197,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

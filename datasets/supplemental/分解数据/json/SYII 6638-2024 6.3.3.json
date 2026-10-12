@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "采气站管道布局",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 优化站场设备平面布局及管道走向。减少压力损失。",
+      "type": "语义分解",
+      "subject": "采气站管道布局",
+      "action": "",
+      "operation": "优化布局走向减少压力损失",
+      "condition": "",
+      "constraint": "6.3.3 优化站场设备平面布局及管道走向。减少压力损失。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采气站管道布局"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 288,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

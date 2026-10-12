@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "5.4",
+  "entities": [
+    {
+      "name": "现场处置方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4 现场处置方案 现场处置方案是生产经营单位根据不同生产安全事故类型，针对具体场所、装置或者设施所制定的应急处置措施。现场处置方案重点规范事故风险描述、应急工作职责、应急处置措施和注意事项，应体现自救互救、信息报告和先期处置的特点。事故风险单一、危险性小的生产经营单位，可只编制现场处置方案。",
+      "type": "语义分解",
+      "subject": "现场处置方案",
+      "action": "",
+      "operation": "针对场所装置设施规范风险职责措施注意事项体现自互救报告先期处置风险单一危险小可仅编现场方案",
+      "condition": "",
+      "constraint": "5.4 现场处置方案 现场处置方案是生产经营单位根据不同生产安全事故类型，针对具体场所、装置或者设施所制定的应急处置措施。现场处置方案重点规范事故风险描述、应急工作职责、应急处置措施和注意事项，应体现自救互救、信息报告和先期处置的特点。事故风险单一、危险性小的生产经营单位，可只编制现场处置方案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场处置方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4152,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

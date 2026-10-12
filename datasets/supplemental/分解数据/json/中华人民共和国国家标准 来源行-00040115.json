@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040115",
+  "entities": [
+    {
+      "name": "与其他污水混合时发生化学反应，产生有毒或易燃易爆气 体、产生结垢或沉淀物",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3    与其他污水混合时发生化学反应，产生有毒或易燃易爆气\n体、产生结垢或沉淀物质而堵塞管道，产生腐蚀性物质而损坏管道\n的污水；",
+      "type": "语义分解",
+      "subject": "与其他污水混合时发生化学反应，产生有毒或易燃易爆气 体、产生结垢或沉淀物",
+      "action": "",
+      "operation": "与其他污水混合时发生化学反应，产生有毒或易燃易爆气 体、产生结垢或沉淀物质而堵塞管道，产生腐蚀性物质而损坏管道 的污水",
+      "condition": "",
+      "constraint": "      3    与其他污水混合时发生化学反应，产生有毒或易燃易爆气\n体、产生结垢或沉淀物质而堵塞管道，产生腐蚀性物质而损坏管道\n的污水；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "与其他污水混合时发生化学反应，产生有毒或易燃易爆气 体、产生结垢或沉淀物"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40115,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

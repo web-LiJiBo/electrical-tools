@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.3.3",
+  "entities": [
+    {
+      "name": "开停车方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.3.3 企业应组织专业技术人员在危害辨识和风险评估基础上制定开停车方案 ,经审批后实施。对 临时 .紧急停车后恢复开车时的潜在风险应重点分析 。",
+      "type": "语义分解",
+      "subject": "开停车方案",
+      "action": "",
+      "operation": "风险评估编制审批重点分析恢复开车风险",
+      "condition": "",
+      "constraint": "4.9.3.3 企业应组织专业技术人员在危害辨识和风险评估基础上制定开停车方案 ,经审批后实施。对 临时 .紧急停车后恢复开车时的潜在风险应重点分析 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开停车方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5164,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

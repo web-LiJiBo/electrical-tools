@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "11.2.5",
+  "entities": [
+    {
+      "name": "污水污染物分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.5 污水主要污染物的分析方法标谁按照F.1执行。",
+      "type": "语义分解",
+      "subject": "污水污染物分析",
+      "action": "",
+      "operation": "按F.1执行",
+      "condition": "",
+      "constraint": "11.2.5 污水主要污染物的分析方法标谁按照F.1执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污水污染物分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 527,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺附录"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044534",
+  "entities": [
+    {
+      "name": "穿越时导致防腐层破损严重的管道，此时必须要施加特殊的保 护措施，由于可能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "穿越时导致防腐层破损严重的管道，此时必须要施加特殊的保\n护措施，由于可能需要采用与邻近线路管道不相同的阴极保护\n方式，此时推荐穿越管道与邻近线路管道实施电绝缘。",
+      "type": "语义分解",
+      "subject": "穿越时导致防腐层破损严重的管道，此时必须要施加特殊的保 护措施，由于可能",
+      "action": "",
+      "operation": "穿越时导致防腐层破损严重的管道，此时必须要施加特殊的保 护措施，由于可能需要采用与邻近线路管道不相同的阴极保护 方式，此时推荐穿越管道与邻近线路管道实施电绝缘。",
+      "condition": "",
+      "constraint": "穿越时导致防腐层破损严重的管道，此时必须要施加特殊的保\n护措施，由于可能需要采用与邻近线路管道不相同的阴极保护\n方式，此时推荐穿越管道与邻近线路管道实施电绝缘。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "穿越时导致防腐层破损严重的管道，此时必须要施加特殊的保 护措施，由于可能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44534,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

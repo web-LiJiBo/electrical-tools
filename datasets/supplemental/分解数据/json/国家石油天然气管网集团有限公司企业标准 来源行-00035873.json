@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035873",
+  "entities": [
+    {
+      "name": "填报时请列明具体的燃料名称，同一燃料品种仅需填报一次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  填报时请列明具体的燃料名称，同一燃料品种仅需填报一次；如果有多个设施消耗同一种燃料，请在“数据的计算方\n法及获取方式”中对“消耗量”、“低位发热量”、“单位热值含碳量”、“含碳量”、“碳氧化率”等参数进行详细\n描述，不同设施的同一燃料相关信息应分别列明。",
+      "type": "语义分解",
+      "subject": "填报时请列明具体的燃料名称，同一燃料品种仅需填报一次",
+      "action": "",
+      "operation": "填报时请列明具体的燃料名称，同一燃料品种仅需填报一次；如果有多个设施消耗同一种燃料，请在“数据的计算方 法及获取方式”中对“消耗量”、“低位发热量”、“单位热值含碳量”、“含碳量”、“碳氧化率”等参数进行详细 描述，不同设施的同一燃料相关信息应分别列明。",
+      "condition": "",
+      "constraint": "  填报时请列明具体的燃料名称，同一燃料品种仅需填报一次；如果有多个设施消耗同一种燃料，请在“数据的计算方\n法及获取方式”中对“消耗量”、“低位发热量”、“单位热值含碳量”、“含碳量”、“碳氧化率”等参数进行详细\n描述，不同设施的同一燃料相关信息应分别列明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "填报时请列明具体的燃料名称，同一燃料品种仅需填报一次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35873,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

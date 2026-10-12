@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014677",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "OTU子层SM段性能\t一SM背景块误码(SM-BBE);\n—SM背景块误码比(SM-BBER)(可选);\n一SM后向输入定位误码秒(SM-BIAES)(可选);\n一SM误码秒(SM-ES);\n一SM严重误码秒(SM-SES);\n一SM严重误码秒比(SM-SESR)(可选);\n一SM不可用秒(SM-UAS);\n一SM远端背景块误码(SM-FEBBE);\n一SM远端背景块误码比(SM-FEBBER)(可选);\n  SM输入定位误码秒(SM-IAES)(可选);\n一SM远端误码秒(SM-FEES);\n一SM远端严重误码秒(SM-FESES);\n一SM远端严重误码秒比(SM-FESESR)(可选);\n一SM远端不可用秒(SM-FEUAS);\n一纠错前FEC误码率(支持FEC的OTU);\n一纠错后FEC误码率(支持FEC的OTU)",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "OTU子层SM段性能\t一SM背景块误码(SM-BBE);\n—SM背景块误码比(SM-BBER)(可选);\n一SM后向输入定位误码秒(SM-BIAES)(可选);\n一SM误码秒(SM-ES);\n一SM严重误码秒(SM-SES);\n一SM严重误码秒比(SM-SESR)(可选);\n一SM不可用秒(SM-UAS);\n一SM远端背景块误码(SM-FEBBE);\n一SM远端背景块误码比(SM-FEBBER)(可选);\n  SM输入定位误码秒(SM-IAES)(可选);\n一SM远端误码秒(SM-FEES);\n一SM远端严重误码秒(SM-FESES);\n一SM远端严重误码秒比(SM-FESESR)(可选);\n一SM远端不可用秒(SM-FEUAS);\n一纠错前FEC误码率(支持FEC的OTU);\n一纠错后FEC误码率(支持FEC的OTU)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14677,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

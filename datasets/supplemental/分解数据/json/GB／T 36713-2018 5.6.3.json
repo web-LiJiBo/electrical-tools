@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.6.3",
+  "entities": [
+    {
+      "name": "数据采集",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.3 数据收集频率的选择 数据收集期可以比基准期和报告期更长。可以定期收集数据(例如每小时 ,每天或每星期 ) 组织应为能源绩效参数和相应能源基准所包含的每一项能源消耗和相关变量的数据确定其收集频率。数据采集的时期和频率应满足操作条件 ,并能提供足够多的数据点来进行分析 = 为了便于理解和评估相关变量对能源绩效的影响 ,数据收集频率宜高于报告频率。例如 ,为找到对能源绩效具有重大影响的相关变量 ,需在操作层面进行每小时 ,每天或每周的数据采集.而采集的数据和相关变量可以只在组织层面的月度评审中进行汇总c 如果安装了新的测量系统 ,组织就应考虑所需数据的频率是否符合能源绩效的测量需求。",
+      "type": "语义分解",
+      "subject": "数据采集",
+      "action": "",
+      "operation": "根据工况与报告需求确定频率",
+      "condition": "",
+      "constraint": "数据收集频率宜高于报告频率",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据采集"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "小时日周为示例，不设定统一采样周期"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019662",
+  "entities": [
+    {
+      "name": "注3",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注3: ITU-T   G841  规定保护AUs  没有使用时(对额外业务或工作业务)可以发送VC未装载信号， 这将\n\n      导致MSnP2fsh_C 功能将Sn_C(S4-4c_C)    矩阵固定连接到保护时隙上。该保护是MS 层上的保护\n\n      策略不应影响客户层。从功能模型上看， MSn 层知道HOVC 通道复用结构，可以控制HOVC 未装载\n\n      信号插入。",
+      "type": "语义分解",
+      "subject": "注3",
+      "action": "",
+      "operation": "注3: ITU-T G841 规定保护AUs 没有使用时(对额外业务或工作业务)可以发送VC未装载信号， 这将 导致MSnP2fsh_C 功能将Sn_C(S4-4c_C) 矩阵固定连接到保护时隙上。该保护是MS 层上的保护 策略不应影响客户层。从功能模型上看， MSn 层知道HOVC 通道复用结构，可以控制HOVC 未装载 信号插入。",
+      "condition": "",
+      "constraint": "注3: ITU-T   G841  规定保护AUs  没有使用时(对额外业务或工作业务)可以发送VC未装载信号， 这将\n\n      导致MSnP2fsh_C 功能将Sn_C(S4-4c_C)    矩阵固定连接到保护时隙上。该保护是MS 层上的保护\n\n      策略不应影响客户层。从功能模型上看， MSn 层知道HOVC 通道复用结构，可以控制HOVC 未装载\n\n      信号插入。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注3"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19662,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

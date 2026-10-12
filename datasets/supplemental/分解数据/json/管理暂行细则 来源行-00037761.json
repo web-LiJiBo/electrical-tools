@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037761",
+  "entities": [
+    {
+      "name": "大气层中自然存在的和由于人类活动产生的能够吸收和散发由地球 表面、大气层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   大气层中自然存在的和由于人类活动产生的能够吸收和散发由地球\n\n表面、大气层和云层所产生的、波长在红外光谱内的辐射的气态成份。本\n\n细则中，温室气体排放与碳排放含义相同，涉及的温室气体种类为二氧化\n\n碳（CO2）和甲烷（CH4）。",
+      "type": "语义分解",
+      "subject": "大气层中自然存在的和由于人类活动产生的能够吸收和散发由地球 表面、大气层",
+      "action": "",
+      "operation": "大气层中自然存在的和由于人类活动产生的能够吸收和散发由地球 表面、大气层和云层所产生的、波长在红外光谱内的辐射的气态成份。本 细则中，温室气体排放与碳排放含义相同，涉及的温室气体种类为二氧化 碳（CO2）和甲烷（CH4）。",
+      "condition": "",
+      "constraint": "   大气层中自然存在的和由于人类活动产生的能够吸收和散发由地球\n\n表面、大气层和云层所产生的、波长在红外光谱内的辐射的气态成份。本\n\n细则中，温室气体排放与碳排放含义相同，涉及的温室气体种类为二氧化\n\n碳（CO2）和甲烷（CH4）。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气层中自然存在的和由于人类活动产生的能够吸收和散发由地球 表面、大气层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37761,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

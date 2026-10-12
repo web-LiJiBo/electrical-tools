@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "4.2.3.1",
+  "entities": [
+    {
+      "name": "防爆能力类别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3.1 通则 不同的防爆类别要求其备的防爆知识不同,人员能力应与需要掌握的防爆技术的类别相符，应明确 相关人员具体能力要求。 注: 有人可能只胜任 Ex\"i\" 设备的检查和维护 .但不能完全胜任 Ex\" d\"设备或 Ex\"e'设备的检查和维护=",
+      "type": "语义分解",
+      "subject": "防爆能力类别",
+      "action": "",
+      "operation": "能力与具体防爆技术类别相符明确范围不能跨类别推定胜任",
+      "condition": "",
+      "constraint": "4.2.3.1 通则 不同的防爆类别要求其备的防爆知识不同,人员能力应与需要掌握的防爆技术的类别相符，应明确 相关人员具体能力要求。 注: 有人可能只胜任 Ex\"i\" 设备的检查和维护 .但不能完全胜任 Ex\" d\"设备或 Ex\"e'设备的检查和维护=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆能力类别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3970,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

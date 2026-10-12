@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "9.1",
+  "entities": [
+    {
+      "name": "管道安全技术管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1 管道运营单位应加强管道系统安全技术管理工作,主要包括 a)  制定管道安全管理规章制度 b)  开展安全技术培训。 开展年度检查和定期检验. 维修改造等技术工作。 d)  开展管道安全风险评价及完整性管理工作。 e)建立完善油气输送管道地理信息系统。 f)  应用管道泄漏检测技术。",
+      "type": "语义分解",
+      "subject": "管道安全技术管理",
+      "action": "",
+      "operation": "制度培训年度定检改造风险完整性地理系统漏检技术",
+      "condition": "",
+      "constraint": "9.1 管道运营单位应加强管道系统安全技术管理工作,主要包括 a)  制定管道安全管理规章制度 b)  开展安全技术培训。 开展年度检查和定期检验. 维修改造等技术工作。 d)  开展管道安全风险评价及完整性管理工作。 e)建立完善油气输送管道地理信息系统。 f)  应用管道泄漏检测技术。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道安全技术管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7382,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

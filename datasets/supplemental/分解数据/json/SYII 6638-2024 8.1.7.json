@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "8.1.7",
+  "entities": [
+    {
+      "name": "站场无功补偿",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.7 站场无功补偿应满足下列要求 : a) 3SkV 及以上娈电所。在变压器最大负荷时 高压侧功率因数不低于095 b) 10 (6) kV 娈电所 当娈压器容量在 IookV A 及以上时 高压侧功率因数不低于095 其他配电系统的功率因数不低于090。",
+      "type": "语义分解",
+      "subject": "站场无功补偿",
+      "action": "",
+      "operation": "按电压容量负荷满足功率因数",
+      "condition": "",
+      "constraint": "8.1.7 站场无功补偿应满足下列要求 : a) 3SkV 及以上娈电所。在变压器最大负荷时 高压侧功率因数不低于095 b) 10 (6) kV 娈电所 当娈压器容量在 IookV A 及以上时 高压侧功率因数不低于095 其他配电系统的功率因数不低于090。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站场无功补偿"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 325,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；电压容量及功率因数识别异常，不编译阈值"
+      ]
+    }
+  }
+}

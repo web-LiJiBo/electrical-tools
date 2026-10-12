@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012918",
+  "entities": [
+    {
+      "name": "注1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注1:本表适用于HRX高级部分，即省际干线平面上的终端/转接通道。省内干线可有较多配额。\n注2:一个通道若由多个通道段组成时，各段配额总和不应超过该通道的配额",
+      "type": "语义分解",
+      "subject": "注1",
+      "action": "",
+      "operation": "注1:本表适用于HRX高级部分，即省际干线平面上的终端/转接通道。省内干线可有较多配额。 注2:一个通道若由多个通道段组成时，各段配额总和不应超过该通道的配额",
+      "condition": "",
+      "constraint": "注1:本表适用于HRX高级部分，即省际干线平面上的终端/转接通道。省内干线可有较多配额。\n注2:一个通道若由多个通道段组成时，各段配额总和不应超过该通道的配额",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12918,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.4.6",
+  "entities": [
+    {
+      "name": "人员安全信息获取",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.6 企业应保证相关人员(包括承包商人员 )及时获取最新的安全生产信息 ,使其与岗位控制风险需 求相匹配",
+      "type": "语义分解",
+      "subject": "人员安全信息获取",
+      "action": "",
+      "operation": "保证含承包商获取最新岗位风险信息",
+      "condition": "",
+      "constraint": "4.4.6 企业应保证相关人员(包括承包商人员 )及时获取最新的安全生产信息 ,使其与岗位控制风险需 求相匹配",
+      "constraint_role": "informational",
+      "related_entities": [
+        "人员安全信息获取"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5077,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

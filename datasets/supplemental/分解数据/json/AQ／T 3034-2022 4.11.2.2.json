@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.11.2.2",
+  "entities": [
+    {
+      "name": "安全仪表功能实现",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.11.2.2 企业应按照安全要求技术文件设计与实现安全仪表功能通过仪表设备合理选择 ,结构约束 (冗余容错) ,检验测试周期以及诊断技术等手段 ,确保满是风险降低要求;应合理确定安全仪表功能(或 子系统)检验测试周期 .需要在线测试时.应设计在线测试于段与相芙措施。",
+      "type": "语义分解",
+      "subject": "安全仪表功能实现",
+      "action": "",
+      "operation": "按安全要求选择冗余诊断测试周期满足降险在线测试设计措施",
+      "condition": "",
+      "constraint": "4.11.2.2 企业应按照安全要求技术文件设计与实现安全仪表功能通过仪表设备合理选择 ,结构约束 (冗余容错) ,检验测试周期以及诊断技术等手段 ,确保满是风险降低要求;应合理确定安全仪表功能(或 子系统)检验测试周期 .需要在线测试时.应设计在线测试于段与相芙措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全仪表功能实现"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5217,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

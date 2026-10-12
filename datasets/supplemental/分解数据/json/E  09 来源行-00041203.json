@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041203",
+  "entities": [
+    {
+      "name": "在油气集输、处理系统管线以及配电系统规划时，应考虑施工作业和维护活动对人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在油气集输、处理系统管线以及配电系统规划时，应考虑施工作业和维护活动对人、动植物和土\n壤本身的影响，对当前及随着装置用途的扩展产生的环境影响均应进行评估。",
+      "type": "语义分解",
+      "subject": "在油气集输、处理系统管线以及配电系统规划时，应考虑施工作业和维护活动对人",
+      "action": "",
+      "operation": "在油气集输、处理系统管线以及配电系统规划时，应考虑施工作业和维护活动对人、动植物和土 壤本身的影响，对当前及随着装置用途的扩展产生的环境影响均应进行评估。",
+      "condition": "",
+      "constraint": "   在油气集输、处理系统管线以及配电系统规划时，应考虑施工作业和维护活动对人、动植物和土\n壤本身的影响，对当前及随着装置用途的扩展产生的环境影响均应进行评估。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在油气集输、处理系统管线以及配电系统规划时，应考虑施工作业和维护活动对人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41203,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

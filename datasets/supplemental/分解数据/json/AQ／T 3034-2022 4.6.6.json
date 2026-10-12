@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.6.6",
+  "entities": [
+    {
+      "name": "风险管控措施清单",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.6 企业应依据风险评估的结果建立风险管控措施清单 ,包括可接受风险的管控措施清单和不可接 受风险的管控措施清单(见 A.4)",
+      "type": "语义分解",
+      "subject": "风险管控措施清单",
+      "action": "",
+      "operation": "按评估区分可接受不可接受清单",
+      "condition": "",
+      "constraint": "4.6.6 企业应依据风险评估的结果建立风险管控措施清单 ,包括可接受风险的管控措施清单和不可接 受风险的管控措施清单(见 A.4)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险管控措施清单"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5097,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺A.4"
+      ]
+    }
+  }
+}

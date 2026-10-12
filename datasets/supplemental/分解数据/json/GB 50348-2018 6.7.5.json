@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.7.5",
+  "entities": [
+    {
+      "name": "电磁骚扰防护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.5 防电磁骚扰设计应符合下列规定: 1 系统配置的设备保护柜/箱外壳开口应尽可能小，开口数量应尽可能少; 2 系统中的无线发射设备的电磁辐射频率、功率，非无线发射设备对外的杂散电磁辐射功率均应符合国家现行有关法规与技术标准的要求; 3 电源线进入屏蔽空间时应设置电源滤波器，控制线和信号线进入屏蔽空间时应设置信号滤波器，滤波器性能参数应符合现行国家标准《电磁屏蔽室工程技术规范》GB/T 50719的要求。",
+      "type": "语义分解",
+      "subject": "电磁骚扰防护",
+      "action": "",
+      "operation": "柜开口少小发射频功杂散合规入屏空间电信号滤波满足GB/T50719",
+      "condition": "",
+      "constraint": "6.7.5 防电磁骚扰设计应符合下列规定: 1 系统配置的设备保护柜/箱外壳开口应尽可能小，开口数量应尽可能少; 2 系统中的无线发射设备的电磁辐射频率、功率，非无线发射设备对外的杂散电磁辐射功率均应符合国家现行有关法规与技术标准的要求; 3 电源线进入屏蔽空间时应设置电源滤波器，控制线和信号线进入屏蔽空间时应设置信号滤波器，滤波器性能参数应符合现行国家标准《电磁屏蔽室工程技术规范》GB/T 50719的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电磁骚扰防护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7013,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.4.4",
+  "entities": [
+    {
+      "name": "视频监控系统功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.4 视频监控系统应对监控区域和目标进行实时、有效的视频采集和监视，对视频采集设备及其信息进行控制，对视频信息进行记录与回放，监视效果应满足实际应用需求。",
+      "type": "语义分解",
+      "subject": "视频监控系统功能",
+      "action": "",
+      "operation": "实时采集监视控制记录回放满足需求",
+      "condition": "",
+      "constraint": "6.4.4 视频监控系统应对监控区域和目标进行实时、有效的视频采集和监视，对视频采集设备及其信息进行控制，对视频信息进行记录与回放，监视效果应满足实际应用需求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "视频监控系统功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6969,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

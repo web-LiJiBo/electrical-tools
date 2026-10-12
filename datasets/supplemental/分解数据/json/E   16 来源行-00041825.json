@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "来源行-00041825",
+  "entities": [
+    {
+      "name": "C.4.3.2.1 在管道正上方进行人工挖掘, 管道安全预警技术报警响应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "C.4.3.2.1    在管道正上方进行人工挖掘,  管道安全预警技术报警响应时停止挖掘,  记录挖掘深度。  将\n埋深减去挖掘深度即为预警技术对于人工挖掘的预警范围。 若无响应,  继续挖掘直至光缆埋深,停止\n挖掘,判定人工挖掘作业测试未通过。",
+      "type": "语义分解",
+      "subject": "C.4.3.2.1 在管道正上方进行人工挖掘, 管道安全预警技术报警响应",
+      "action": "",
+      "operation": "C.4.3.2.1 在管道正上方进行人工挖掘, 管道安全预警技术报警响应时停止挖掘, 记录挖掘深度。 将 埋深减去挖掘深度即为预警技术对于人工挖掘的预警范围。 若无响应, 继续挖掘直至光缆埋深,停止 挖掘,判定人工挖掘作业测试未通过。",
+      "condition": "",
+      "constraint": "C.4.3.2.1    在管道正上方进行人工挖掘,  管道安全预警技术报警响应时停止挖掘,  记录挖掘深度。  将\n埋深减去挖掘深度即为预警技术对于人工挖掘的预警范围。 若无响应,  继续挖掘直至光缆埋深,停止\n挖掘,判定人工挖掘作业测试未通过。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "C.4.3.2.1 在管道正上方进行人工挖掘, 管道安全预警技术报警响应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41825,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

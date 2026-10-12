@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040519",
+  "entities": [
+    {
+      "name": "目前化工建设项目中污水总排放口、锅炉烟囱等排放口或 设施上基本安装了在线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.7      目前化工建设项目中污水总排放口、锅炉烟囱等排放口或\n设施上基本安装了在线监控设施，但由于各项目所处地区不同，地\n区或化工园区的要求也略有不同，为此，本条强调了设置污染源在\n线监控设施应依据项目环境影响评价的要求进行。",
+      "type": "语义分解",
+      "subject": "目前化工建设项目中污水总排放口、锅炉烟囱等排放口或 设施上基本安装了在线",
+      "action": "",
+      "operation": "目前化工建设项目中污水总排放口、锅炉烟囱等排放口或 设施上基本安装了在线监控设施，但由于各项目所处地区不同，地 区或化工园区的要求也略有不同，为此，本条强调了设置污染源在 线监控设施应依据项目环境影响评价的要求进行。",
+      "condition": "",
+      "constraint": "9.0.7      目前化工建设项目中污水总排放口、锅炉烟囱等排放口或\n设施上基本安装了在线监控设施，但由于各项目所处地区不同，地\n区或化工园区的要求也略有不同，为此，本条强调了设置污染源在\n线监控设施应依据项目环境影响评价的要求进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "目前化工建设项目中污水总排放口、锅炉烟囱等排放口或 设施上基本安装了在线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40519,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008459",
+  "entities": [
+    {
+      "name": "抖动产生测试，若传输分析仪不支持 FEC 功能，可采取一 对同时都有FE",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.7  抖动产生测试，若传输分析仪不支持 FEC 功能，可采取一\n对同时都有FEC 功能的收端和发端 OTU,  串联到仪表中间测试，\n只对接收端 OTU 测试，对发送端OTU 考虑到其输出端口在系统\n内，只要系统抖动指标合格即可。测试过程中要注意衰耗器应采\n用非空气介质型光可调衰耗器，保证传输分析仪接收的光功率位\n于其测试抖动指标时要求的光功率范围内。",
+      "type": "语义分解",
+      "subject": "抖动产生测试，若传输分析仪不支持 FEC 功能，可采取一 对同时都有FE",
+      "action": "",
+      "operation": "抖动产生测试，若传输分析仪不支持 FEC 功能，可采取一 对同时都有FEC 功能的收端和发端 OTU, 串联到仪表中间测试， 只对接收端 OTU 测试，对发送端OTU 考虑到其输出端口在系统 内，只要系统抖动指标合格即可。测试过程中要注意衰耗器应采 用非空气介质型光可调衰耗器，保证传输分析仪接收的光功率位 于其测试抖动指标时要求的光功率范围内。",
+      "condition": "",
+      "constraint": "4.6.7  抖动产生测试，若传输分析仪不支持 FEC 功能，可采取一\n对同时都有FEC 功能的收端和发端 OTU,  串联到仪表中间测试，\n只对接收端 OTU 测试，对发送端OTU 考虑到其输出端口在系统\n内，只要系统抖动指标合格即可。测试过程中要注意衰耗器应采\n用非空气介质型光可调衰耗器，保证传输分析仪接收的光功率位\n于其测试抖动指标时要求的光功率范围内。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "抖动产生测试，若传输分析仪不支持 FEC 功能，可采取一 对同时都有FE"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8459,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

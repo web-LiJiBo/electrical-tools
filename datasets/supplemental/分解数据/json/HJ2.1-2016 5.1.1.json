@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "5.1.1",
+  "entities": [
+    {
+      "name": "建设项目相关环境要素",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1 对与建设项目有密切关系的环境要素应全面。详细调查,给出定量的数据并作出分析或评价. 对于自然环境的现状调查, 可根据建设项目情况进行必要说明。",
+      "type": "语义分解",
+      "subject": "建设项目相关环境要素",
+      "action": "",
+      "operation": "详细调查并定量分析评价",
+      "condition": "",
+      "constraint": "5.1.1 对与建设项目有密切关系的环境要素应全面。详细调查,给出定量的数据并作出分析或评价. 对于自然环境的现状调查, 可根据建设项目情况进行必要说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "建设项目相关环境要素"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2559,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045660",
+  "entities": [
+    {
+      "name": "“试片断电法”定义是参考《埋地或水下金属管道上密 间距和直流表面电位梯度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.13“试片断电法”定义是参考《埋地或水下金属管道上密\n间距和直流表面电位梯度测量的实施》NACE   SP0207:2007中\n的瞬时断电电位(instant-off potential)定义和现行行业标准《埋\n地钢质检查片应用技术规范》SY/T 0029的相关内容确定的。\n2.0.14 “皮尔逊法”是以该技术的发明者J.M.Pearson 的名字来\n命名，主要用于涂层漏点的定位。《地上检测技术评价地下管道\n涂层情况的测试方法》NACE  TM0109:2009中给出的“皮尔逊\n法”定义为：一种用于埋地管道漏点位置定位的地上测量方法，\n电位梯度来源于涂层漏点处交流信号向大地的泄漏。本标准主\n要参考NACE的定义。",
+      "type": "语义分解",
+      "subject": "“试片断电法”定义是参考《埋地或水下金属管道上密 间距和直流表面电位梯度",
+      "action": "",
+      "operation": "“试片断电法”定义是参考《埋地或水下金属管道上密 间距和直流表面电位梯度测量的实施》NACE SP0207:2007中 的瞬时断电电位(instant-off potential)定义和现行行业标准《埋 地钢质检查片应用技术规范》SY/T 0029的相关内容确定的。 2.0.14 “皮尔逊法”是以该技术的发明者J.M.Pearson 的名字来 命名，主要用于涂层漏点的定位。《地上检测技术评价地下管道 涂层情况的测试方法》NACE TM0109:2009中给出的“皮尔逊 法”定",
+      "condition": "",
+      "constraint": "2.0.13“试片断电法”定义是参考《埋地或水下金属管道上密\n间距和直流表面电位梯度测量的实施》NACE   SP0207:2007中\n的瞬时断电电位(instant-off potential)定义和现行行业标准《埋\n地钢质检查片应用技术规范》SY/T 0029的相关内容确定的。\n2.0.14 “皮尔逊法”是以该技术的发明者J.M.Pearson 的名字来\n命名，主要用于涂层漏点的定位。《地上检测技术评价地下管道\n涂层情况的测试方法》NACE  TM0109:2009中给出的“皮尔逊\n法”定义为：一种用于埋地管道漏点位置定位的地上测量方法，\n电位梯度来源于涂层漏点处交流信号向大地的泄漏。本标准主\n要参考NACE的定义。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "“试片断电法”定义是参考《埋地或水下金属管道上密 间距和直流表面电位梯度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45660,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

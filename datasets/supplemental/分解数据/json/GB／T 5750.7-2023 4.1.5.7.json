@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.1.5.7",
+  "entities": [
+    {
+      "name": "纯水空白滴定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5.7 如水样用纯水稀释 ,则另取 lO0 mL 纯水 ,同上述步骤滴定,记录高锰酸钾标准使用溶液消耗量 Vo(ml )C",
+      "type": "语义分解",
+      "subject": "纯水空白滴定",
+      "action": "",
+      "operation": "稀释样另做纯水滴定记录消耗",
+      "condition": "如水样用纯水稀释",
+      "constraint": "4.1.5.7 如水样用纯水稀释 ,则另取 lO0 mL 纯水 ,同上述步骤滴定,记录高锰酸钾标准使用溶液消耗量 Vo(ml )C",
+      "constraint_role": "informational",
+      "related_entities": [
+        "纯水空白滴定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1667,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；容量字样识别异常"
+      ]
+    }
+  }
+}

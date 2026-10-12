@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.1.1.1",
+  "entities": [
+    {
+      "name": "未获得有效环境影响评价批复的环境敏感区天然气管道穿跨越工程不得施工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1.1   未获得有效环境影响评价批复的环境敏感区天然气管道穿跨越工程不得施工。涉及环境敏感\n区穿跨越路由、施工工艺发生变更的，应按规定履行环评变更手续。",
+      "type": "语义分解",
+      "subject": "未获得有效环境影响评价批复的环境敏感区天然气管道穿跨越工程不得施工",
+      "action": "",
+      "operation": "未获得有效环境影响评价批复的环境敏感区天然气管道穿跨越工程不得施工。涉及环境敏感 区穿跨越路由、施工工艺发生变更的，应按规定履行环评变更手续。",
+      "condition": "",
+      "constraint": "4.1.1.1   未获得有效环境影响评价批复的环境敏感区天然气管道穿跨越工程不得施工。涉及环境敏感\n区穿跨越路由、施工工艺发生变更的，应按规定履行环评变更手续。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "未获得有效环境影响评价批复的环境敏感区天然气管道穿跨越工程不得施工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41942,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

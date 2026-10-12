@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.16",
+  "entities": [
+    {
+      "name": "许可执行报告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.16 排污许可执行报告上报要求 依据《排污许可管理条例》 排污许可证申请与核'发技术规范和 HJ 944 等要求进行判定 对于排 污许可证申请与核发技术规范中未明确上报截止时间的,年报可于次年1月底前提交; 月报和季报可于 下一周期首月15  日之前提交 执行报告的上报要求待排污单位环境管理台账及排污许可证执行报告技 术规范总则修订发布后,从其规定。",
+      "type": "语义分解",
+      "subject": "许可执行报告",
+      "action": "",
+      "operation": "依法规范核报送时间未明确时按原文年季月报建议执行",
+      "condition": "",
+      "constraint": "6.2.16 排污许可执行报告上报要求 依据《排污许可管理条例》 排污许可证申请与核'发技术规范和 HJ 944 等要求进行判定 对于排 污许可证申请与核发技术规范中未明确上报截止时间的,年报可于次年1月底前提交; 月报和季报可于 下一周期首月15  日之前提交 执行报告的上报要求待排污单位环境管理台账及排污许可证执行报告技 术规范总则修订发布后,从其规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可执行报告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2009,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；后续规范修订适用性需复核"
+      ]
+    }
+  }
+}

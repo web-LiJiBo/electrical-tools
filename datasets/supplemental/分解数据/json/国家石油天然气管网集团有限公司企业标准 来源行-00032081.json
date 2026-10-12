@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00032081",
+  "entities": [
+    {
+      "name": "油气长输管道日常运行过程中，维检修作业、施工建设项目涉及的作业类型众多且",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   油气长输管道日常运行过程中，维检修作业、施工建设项目涉及的作业类型众多且均存在较大风险，\n为规范现场作业行为，明确风险管控要求，确保现场的不安全行为和不安全状态得到有效控制。特编制\nQ/GGW 04003《油气管道作业安全管理规范》。",
+      "type": "语义分解",
+      "subject": "油气长输管道日常运行过程中，维检修作业、施工建设项目涉及的作业类型众多且",
+      "action": "",
+      "operation": "油气长输管道日常运行过程中，维检修作业、施工建设项目涉及的作业类型众多且均存在较大风险， 为规范现场作业行为，明确风险管控要求，确保现场的不安全行为和不安全状态得到有效控制。特编制 Q/GGW 04003《油气管道作业安全管理规范》。",
+      "condition": "",
+      "constraint": "   油气长输管道日常运行过程中，维检修作业、施工建设项目涉及的作业类型众多且均存在较大风险，\n为规范现场作业行为，明确风险管控要求，确保现场的不安全行为和不安全状态得到有效控制。特编制\nQ/GGW 04003《油气管道作业安全管理规范》。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气长输管道日常运行过程中，维检修作业、施工建设项目涉及的作业类型众多且"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32081,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

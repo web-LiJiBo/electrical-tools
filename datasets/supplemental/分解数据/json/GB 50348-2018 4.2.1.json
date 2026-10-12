@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.1",
+  "entities": [
+    {
+      "name": "系统架构要素",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1 安全防范系统架构规划应按照安全可控、开放共享的原则，统筹考虑子系统组成、信息资源、集成/联网方式、传输网络、安全防范管理平台、信息共享应用模式、存储管理模式、系统供电、接口协议、智能应用、系统运行维护、系统安全等要素。",
+      "type": "语义分解",
+      "subject": "系统架构要素",
+      "action": "",
+      "operation": "安全可控开放共享统筹子系统资源网络平台共享存储供电接口智能运维安全",
+      "condition": "",
+      "constraint": "4.2.1 安全防范系统架构规划应按照安全可控、开放共享的原则，统筹考虑子系统组成、信息资源、集成/联网方式、传输网络、安全防范管理平台、信息共享应用模式、存储管理模式、系统供电、接口协议、智能应用、系统运行维护、系统安全等要素。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统架构要素"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6879,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

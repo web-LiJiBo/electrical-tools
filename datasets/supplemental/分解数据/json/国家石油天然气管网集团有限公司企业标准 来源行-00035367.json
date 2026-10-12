@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035367",
+  "entities": [
+    {
+      "name": "排放单位核算与报告温室气体排放及相关信息的具体安排与规划，包括排放设施基",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   排放单位核算与报告温室气体排放及相关信息的具体安排与规划，包括排放设施基本信息、核算边\n界、核算方法、活动数据、排放因子及其他相关信息的确定和获取方式，内部质量控制和质量保证相关\n\n规定等。\n\n3.15",
+      "type": "语义分解",
+      "subject": "排放单位核算与报告温室气体排放及相关信息的具体安排与规划，包括排放设施基",
+      "action": "",
+      "operation": "排放单位核算与报告温室气体排放及相关信息的具体安排与规划，包括排放设施基本信息、核算边 界、核算方法、活动数据、排放因子及其他相关信息的确定和获取方式，内部质量控制和质量保证相关 规定等。 3.15",
+      "condition": "",
+      "constraint": "   排放单位核算与报告温室气体排放及相关信息的具体安排与规划，包括排放设施基本信息、核算边\n界、核算方法、活动数据、排放因子及其他相关信息的确定和获取方式，内部质量控制和质量保证相关\n\n规定等。\n\n3.15",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排放单位核算与报告温室气体排放及相关信息的具体安排与规划，包括排放设施基"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35367,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

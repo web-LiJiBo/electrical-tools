@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041187",
+  "entities": [
+    {
+      "name": "当油井封堵恰当时，可以避免上述污染的产生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   当油井封堵恰当时，可以避免上述污染的产生。不仅在封堵作业时应防止报废井变成污染发生的\n通道，而且在油井施工和完井的方式上也应防止污染。",
+      "type": "语义分解",
+      "subject": "当油井封堵恰当时，可以避免上述污染的产生",
+      "action": "",
+      "operation": "当油井封堵恰当时，可以避免上述污染的产生。不仅在封堵作业时应防止报废井变成污染发生的 通道，而且在油井施工和完井的方式上也应防止污染。",
+      "condition": "",
+      "constraint": "   当油井封堵恰当时，可以避免上述污染的产生。不仅在封堵作业时应防止报废井变成污染发生的\n通道，而且在油井施工和完井的方式上也应防止污染。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当油井封堵恰当时，可以避免上述污染的产生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41187,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

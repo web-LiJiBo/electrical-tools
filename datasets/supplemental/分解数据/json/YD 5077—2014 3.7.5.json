@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.7.5",
+  "entities": [
+    {
+      "name": "槽道电缆绑扎",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7.5      布放槽道电缆宜绑扎，槽内电缆应顺直，尽量不交叉，电缆\n不溢出槽道侧板高度，不侧翻。在电缆进出槽道部位和电缆转弯\n处应绑扎或用塑料卡捆扎固定。",
+      "type": "语义分解",
+      "subject": "槽道电缆绑扎",
+      "action": "",
+      "operation": "宜绑扎顺直少交叉不超侧板不侧翻出入转弯固定",
+      "condition": "",
+      "constraint": "3.7.5      布放槽道电缆宜绑扎，槽内电缆应顺直，尽量不交叉，电缆\n不溢出槽道侧板高度，不侧翻。在电缆进出槽道部位和电缆转弯\n处应绑扎或用塑料卡捆扎固定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "槽道电缆绑扎"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26728,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

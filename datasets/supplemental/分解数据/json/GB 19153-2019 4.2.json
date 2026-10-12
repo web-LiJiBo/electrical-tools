@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 各类空气压缩机的能效等级均应符合表1~表6的规定。其中: a) 一般用喷油回转空气压缩机的能效等级应符合表1的规定; b) 一般用变转速喷油回转空气压缩机的能效等级应符合表2的规定; c) 一般用往复活塞空气压缩机的能效等级应符合表 3的规定; d) 全无油润滑往复活塞空气压缩机能效等级应符合表 4的规定; e) 直联便携式往复活塞空气压缩机的能效等级应符合表5 和表6的规定。",
+      "type": "语义分解",
+      "subject": "空气压缩机",
+      "action": "",
+      "operation": "按类型选择能效等级表",
+      "condition": "",
+      "constraint": "均应符合表1~表6的规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行缺表格数值；不同机型不得合并为一个阈值"
+      ]
+    }
+  }
+}

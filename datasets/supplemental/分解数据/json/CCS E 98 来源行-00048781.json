@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048781",
+  "entities": [
+    {
+      "name": "交流腐蚀试片的选用宜综合考虑试片形状、土壤电阻率、 安装方式、埋设时间和",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.4   交流腐蚀试片的选用宜综合考虑试片形状、土壤电阻率、\n安装方式、埋设时间和数据测量等因素，试片使用时应评估各\n因素对测试结果的影响。",
+      "type": "语义分解",
+      "subject": "交流腐蚀试片的选用宜综合考虑试片形状、土壤电阻率、 安装方式、埋设时间和",
+      "action": "",
+      "operation": "交流腐蚀试片的选用宜综合考虑试片形状、土壤电阻率、 安装方式、埋设时间和数据测量等因素，试片使用时应评估各 因素对测试结果的影响。",
+      "condition": "",
+      "constraint": "5.3.4   交流腐蚀试片的选用宜综合考虑试片形状、土壤电阻率、\n安装方式、埋设时间和数据测量等因素，试片使用时应评估各\n因素对测试结果的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交流腐蚀试片的选用宜综合考虑试片形状、土壤电阻率、 安装方式、埋设时间和"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48781,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

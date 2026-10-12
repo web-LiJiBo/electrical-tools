@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048206",
+  "entities": [
+    {
+      "name": "对于多次检测，在同一位置，缺陷的类型或在管内外壁的 分布无法对应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于多次检测，在同一位置，缺陷的类型或在管内外壁的\n分布无法对应。",
+      "type": "语义分解",
+      "subject": "对于多次检测，在同一位置，缺陷的类型或在管内外壁的 分布无法对应",
+      "action": "",
+      "operation": "对于多次检测，在同一位置，缺陷的类型或在管内外壁的 分布无法对应。",
+      "condition": "",
+      "constraint": "   对于多次检测，在同一位置，缺陷的类型或在管内外壁的\n分布无法对应。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于多次检测，在同一位置，缺陷的类型或在管内外壁的 分布无法对应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48206,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

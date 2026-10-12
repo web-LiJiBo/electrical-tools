@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.1.5",
+  "entities": [
+    {
+      "name": "运维保密",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.5 系统运行与维护工作应落实保密责任与措施。",
+      "type": "语义分解",
+      "subject": "运维保密",
+      "action": "",
+      "operation": "落实责任措施",
+      "condition": "",
+      "constraint": "11.1.5 系统运行与维护工作应落实保密责任与措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "运维保密"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7199,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

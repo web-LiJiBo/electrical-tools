@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028454",
+  "entities": [
+    {
+      "name": "组织应基于顾客需求和关键绩效指标的分解 ,建立适宜的数据收集系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织应基于顾客需求和关键绩效指标的分解 ,建立适宜的数据收集系统 ;数据的原始记录应完整 、\n真实可靠 ,其测量系统 能 力 应 符 合 要 求 。  组 织 应 根 据 需 要 及 时 从 互 联 网 或 工 业 互 联 网 等 渠 道 采 集 数\n据 ,保证数据可溯源 ,并对不同层次的数据建立数据治理体系 。",
+      "type": "语义分解",
+      "subject": "组织应基于顾客需求和关键绩效指标的分解 ,建立适宜的数据收集系统",
+      "action": "",
+      "operation": "组织应基于顾客需求和关键绩效指标的分解 ,建立适宜的数据收集系统 ;数据的原始记录应完整 、 真实可靠 ,其测量系统 能 力 应 符 合 要 求 。 组 织 应 根 据 需 要 及 时 从 互 联 网 或 工 业 互 联 网 等 渠 道 采 集 数 据 ,保证数据可溯源 ,并对不同层次的数据建立数据治理体系 。",
+      "condition": "",
+      "constraint": "      组织应基于顾客需求和关键绩效指标的分解 ,建立适宜的数据收集系统 ;数据的原始记录应完整 、\n真实可靠 ,其测量系统 能 力 应 符 合 要 求 。  组 织 应 根 据 需 要 及 时 从 互 联 网 或 工 业 互 联 网 等 渠 道 采 集 数\n据 ,保证数据可溯源 ,并对不同层次的数据建立数据治理体系 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织应基于顾客需求和关键绩效指标的分解 ,建立适宜的数据收集系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28454,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

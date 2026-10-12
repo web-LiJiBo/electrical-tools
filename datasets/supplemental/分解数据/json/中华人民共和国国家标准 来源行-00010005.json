@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010005",
+  "entities": [
+    {
+      "name": "列内机架应相互靠拢，机架间隙不应大于3mm 并应保持 机架门开关顺畅",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   3  列内机架应相互靠拢，机架间隙不应大于3mm 并应保持\n机架门开关顺畅；机面应平直，每米偏差不应大于3mm,全列偏差\n不应大于15mm;",
+      "type": "语义分解",
+      "subject": "列内机架应相互靠拢，机架间隙不应大于3mm 并应保持 机架门开关顺畅",
+      "action": "",
+      "operation": "列内机架应相互靠拢，机架间隙不应大于3mm 并应保持 机架门开关顺畅；机面应平直，每米偏差不应大于3mm,全列偏差 不应大于15mm",
+      "condition": "",
+      "constraint": "   3  列内机架应相互靠拢，机架间隙不应大于3mm 并应保持\n机架门开关顺畅；机面应平直，每米偏差不应大于3mm,全列偏差\n不应大于15mm;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "列内机架应相互靠拢，机架间隙不应大于3mm 并应保持 机架门开关顺畅"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10005,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

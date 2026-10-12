@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011747",
+  "entities": [
+    {
+      "name": "OTN设备客户信号接口的基本信号结构 、 光通路帧结构 , 以及 OTN",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3    OTN设备客户信号接口的基本信号结构 、  光通路帧结构 ,\n以及 OTN各级速率信号的复用和映射结构应满足现行行业标准\n《光传送网  (OTN)   网络总体技术要求》  YD/T  1990 的有关规定。\n4.3.4    OTN设备通路信号光接口 的标称波长 、   中心频率 、  光通\n路接口参数 、  主光通道光接口参数应符合现行国家标准  《波分\n复用   (WDM)   光纤传输系统工程设计规范》  GB/T  51152 的有\n关规定。",
+      "type": "语义分解",
+      "subject": "OTN设备客户信号接口的基本信号结构 、 光通路帧结构 , 以及 OTN",
+      "action": "",
+      "operation": "OTN设备客户信号接口的基本信号结构 、 光通路帧结构 , 以及 OTN各级速率信号的复用和映射结构应满足现行行业标准 《光传送网 (OTN) 网络总体技术要求》 YD/T 1990 的有关规定。 4.3.4 OTN设备通路信号光接口 的标称波长 、 中心频率 、 光通 路接口参数 、 主光通道光接口参数应符合现行国家标准 《波分 复用 (WDM) 光纤传输系统工程设计规范》 GB/T 51152 的有 关规定。",
+      "condition": "",
+      "constraint": "4.3.3    OTN设备客户信号接口的基本信号结构 、  光通路帧结构 ,\n以及 OTN各级速率信号的复用和映射结构应满足现行行业标准\n《光传送网  (OTN)   网络总体技术要求》  YD/T  1990 的有关规定。\n4.3.4    OTN设备通路信号光接口 的标称波长 、   中心频率 、  光通\n路接口参数 、  主光通道光接口参数应符合现行国家标准  《波分\n复用   (WDM)   光纤传输系统工程设计规范》  GB/T  51152 的有\n关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN设备客户信号接口的基本信号结构 、 光通路帧结构 , 以及 OTN"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11747,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

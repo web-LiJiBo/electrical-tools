@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046116",
+  "entities": [
+    {
+      "name": "后评价内容应包括ICDA 有效性评价、再评价时间间隔 的确定、原因分析、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1 后评价内容应包括ICDA 有效性评价、再评价时间间隔\n\n的确定、原因分析、提出维修维护建议等。",
+      "type": "语义分解",
+      "subject": "后评价内容应包括ICDA 有效性评价、再评价时间间隔 的确定、原因分析、",
+      "action": "",
+      "operation": "后评价内容应包括ICDA 有效性评价、再评价时间间隔 的确定、原因分析、提出维修维护建议等。",
+      "condition": "",
+      "constraint": "7.1.1 后评价内容应包括ICDA 有效性评价、再评价时间间隔\n\n的确定、原因分析、提出维修维护建议等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "后评价内容应包括ICDA 有效性评价、再评价时间间隔 的确定、原因分析、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46116,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

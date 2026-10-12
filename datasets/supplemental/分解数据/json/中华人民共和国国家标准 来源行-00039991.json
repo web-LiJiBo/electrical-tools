@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00039991",
+  "entities": [
+    {
+      "name": "放射性物质的计量单位，描述单位时间内放射性元素或同位 素的核衰变数目，表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   放射性物质的计量单位，描述单位时间内放射性元素或同位\n素的核衰变数目，表示放射源衰变的强弱程度。\n2.0.11     回用水    reused   water",
+      "type": "语义分解",
+      "subject": "放射性物质的计量单位，描述单位时间内放射性元素或同位 素的核衰变数目，表",
+      "action": "",
+      "operation": "放射性物质的计量单位，描述单位时间内放射性元素或同位 素的核衰变数目，表示放射源衰变的强弱程度。 2.0.11 回用水 reused water",
+      "condition": "",
+      "constraint": "   放射性物质的计量单位，描述单位时间内放射性元素或同位\n素的核衰变数目，表示放射源衰变的强弱程度。\n2.0.11     回用水    reused   water",
+      "constraint_role": "informational",
+      "related_entities": [
+        "放射性物质的计量单位，描述单位时间内放射性元素或同位 素的核衰变数目，表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 39991,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

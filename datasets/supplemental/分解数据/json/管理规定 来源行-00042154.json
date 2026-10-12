@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042154",
+  "entities": [
+    {
+      "name": "（ 三）财务部负责协调所属单位事故事件的索赔工作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 三）财务部负责协调所属单位事故事件的索赔工作；\n\n    （ 四）综合监督部负责集团公司总部层面发生的事故事件纠\n\n纷案件处理，指导和监督所属企业妥善处理涉及事故事件的重大\n\n纠纷案件；",
+      "type": "语义分解",
+      "subject": "（ 三）财务部负责协调所属单位事故事件的索赔工作",
+      "action": "",
+      "operation": "（ 三）财务部负责协调所属单位事故事件的索赔工作； （ 四）综合监督部负责集团公司总部层面发生的事故事件纠 纷案件处理，指导和监督所属企业妥善处理涉及事故事件的重大 纠纷案件",
+      "condition": "",
+      "constraint": "    （ 三）财务部负责协调所属单位事故事件的索赔工作；\n\n    （ 四）综合监督部负责集团公司总部层面发生的事故事件纠\n\n纷案件处理，指导和监督所属企业妥善处理涉及事故事件的重大\n\n纠纷案件；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 三）财务部负责协调所属单位事故事件的索赔工作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42154,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

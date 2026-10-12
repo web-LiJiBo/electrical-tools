@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.2.3.2",
+  "entities": [
+    {
+      "name": "制药废水勘查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3.2 废水 生产废水和生活污水: 排放量、主要污染因子及排放去向,污水处理站的建设规模和处理工艺; 清污分流、雨污分流落实情况; 污水回用情况、初期雨水收集、事故应急池建设情况和切换措施; 废水排口规范化整治情况、在线监控的安装情况、日常运维管理情况。",
+      "type": "语义分解",
+      "subject": "制药废水勘查",
+      "action": "",
+      "operation": "查量因子去向规模工艺分流回用雨水应急池切换排口在线运维",
+      "condition": "",
+      "constraint": "5.2.3.2 废水 生产废水和生活污水: 排放量、主要污染因子及排放去向,污水处理站的建设规模和处理工艺; 清污分流、雨污分流落实情况; 污水回用情况、初期雨水收集、事故应急池建设情况和切换措施; 废水排口规范化整治情况、在线监控的安装情况、日常运维管理情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药废水勘查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2723,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

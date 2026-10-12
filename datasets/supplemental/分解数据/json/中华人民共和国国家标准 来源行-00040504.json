@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040504",
+  "entities": [
+    {
+      "name": "从设计角度，现行国家标准主要为《工业企业噪声控制设 计规范》GB/T 5",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.1       从设计角度，现行国家标准主要为《工业企业噪声控制设\n计规范》GB/T    50087;从噪声控制限值角度，现行国家标准主要为\n《声环境质量标准》GB 3096、《工业企业厂界环境噪声排放标准》\nGB   12348等 。",
+      "type": "语义分解",
+      "subject": "从设计角度，现行国家标准主要为《工业企业噪声控制设 计规范》GB/T 5",
+      "action": "",
+      "operation": "从设计角度，现行国家标准主要为《工业企业噪声控制设 计规范》GB/T 50087;从噪声控制限值角度，现行国家标准主要为 《声环境质量标准》GB 3096、《工业企业厂界环境噪声排放标准》 GB 12348等 。",
+      "condition": "",
+      "constraint": "8.3.1       从设计角度，现行国家标准主要为《工业企业噪声控制设\n计规范》GB/T    50087;从噪声控制限值角度，现行国家标准主要为\n《声环境质量标准》GB 3096、《工业企业厂界环境噪声排放标准》\nGB   12348等 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "从设计角度，现行国家标准主要为《工业企业噪声控制设 计规范》GB/T 5"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40504,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011232",
+  "entities": [
+    {
+      "name": "OTN 在本地网和干线网的应用一方面是满足业务对带宽 不断增加的需求，另",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1  OTN 在本地网和干线网的应用一方面是满足业务对带宽\n不断增加的需求，另一方面是满足业务安全的需求，建议新建OTN\n系统线路侧采用10Gb/s 及以上速率，但一般不采用40Gb/s  速率。\n4.2.5       当采用不同速率的波道在线路侧混传时，不同速率的波道\n宜安排在不同的波段。主要目的是避免或降低不同速率的波道混\n传时波道间的非线性效应对系统性能的影响。",
+      "type": "语义分解",
+      "subject": "OTN 在本地网和干线网的应用一方面是满足业务对带宽 不断增加的需求，另",
+      "action": "",
+      "operation": "OTN 在本地网和干线网的应用一方面是满足业务对带宽 不断增加的需求，另一方面是满足业务安全的需求，建议新建OTN 系统线路侧采用10Gb/s 及以上速率，但一般不采用40Gb/s 速率。 4.2.5 当采用不同速率的波道在线路侧混传时，不同速率的波道 宜安排在不同的波段。主要目的是避免或降低不同速率的波道混 传时波道间的非线性效应对系统性能的影响。",
+      "condition": "",
+      "constraint": "4.2.1  OTN 在本地网和干线网的应用一方面是满足业务对带宽\n不断增加的需求，另一方面是满足业务安全的需求，建议新建OTN\n系统线路侧采用10Gb/s 及以上速率，但一般不采用40Gb/s  速率。\n4.2.5       当采用不同速率的波道在线路侧混传时，不同速率的波道\n宜安排在不同的波段。主要目的是避免或降低不同速率的波道混\n传时波道间的非线性效应对系统性能的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 在本地网和干线网的应用一方面是满足业务对带宽 不断增加的需求，另"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11232,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

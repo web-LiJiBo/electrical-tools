@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "11.1",
+  "entities": [
+    {
+      "name": "维护施工HSE",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1   油气管道架空部分及附属设施维护工程施工应遵循国家和行业有关健康、安全与环境的法律、\n法规及相关规定。",
+      "type": "语义分解",
+      "subject": "维护施工HSE",
+      "action": "",
+      "operation": "遵循国家行业法规规定",
+      "condition": "",
+      "constraint": "11.1   油气管道架空部分及附属设施维护工程施工应遵循国家和行业有关健康、安全与环境的法律、\n法规及相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "维护施工HSE"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30222,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.3.1.3",
+  "entities": [
+    {
+      "name": "特殊区域管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1.3 在土壤侵蚀，地表沉降等特殊区域采取预防和减缓措施。",
+      "type": "语义分解",
+      "subject": "特殊区域管道",
+      "action": "",
+      "operation": "采取预防和减缓措施",
+      "condition": "在土壤侵蚀，地表沉降等特殊区域",
+      "constraint": "7.3.1.3 在土壤侵蚀，地表沉降等特殊区域采取预防和减缓措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊区域管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1209,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

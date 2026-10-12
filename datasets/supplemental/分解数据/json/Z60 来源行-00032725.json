@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032725",
+  "entities": [
+    {
+      "name": "通过铁路罐车收油，除拆装灌装鹤管之外的时段，收油鹤管与铁路罐车灌装口(人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2     通过铁路罐车收油，除拆装灌装鹤管之外的时段，收油鹤管与铁路罐车灌装口(人孔)应密闭。\n从泵站扫仓罐中产生的油气应密闭收集，并送入油气处理装置进行回收处理。",
+      "type": "语义分解",
+      "subject": "通过铁路罐车收油，除拆装灌装鹤管之外的时段，收油鹤管与铁路罐车灌装口(人",
+      "action": "",
+      "operation": "通过铁路罐车收油，除拆装灌装鹤管之外的时段，收油鹤管与铁路罐车灌装口(人孔)应密闭。 从泵站扫仓罐中产生的油气应密闭收集，并送入油气处理装置进行回收处理。",
+      "condition": "",
+      "constraint": "4.1.2     通过铁路罐车收油，除拆装灌装鹤管之外的时段，收油鹤管与铁路罐车灌装口(人孔)应密闭。\n从泵站扫仓罐中产生的油气应密闭收集，并送入油气处理装置进行回收处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通过铁路罐车收油，除拆装灌装鹤管之外的时段，收油鹤管与铁路罐车灌装口(人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32725,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

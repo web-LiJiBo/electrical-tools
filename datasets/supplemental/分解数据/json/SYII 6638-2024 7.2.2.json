@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "压缩机原动机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 原动机功率应与压缩机匹配。且应采用适当的调速方式或其他措施。以适应气量的变化。采用燃气轮机或燃气发动机为原动机时 应采用苴接驱动方式。",
+      "type": "语义分解",
+      "subject": "压缩机原动机",
+      "action": "",
+      "operation": "匹配功率并适应气量变化选择驱动方式",
+      "condition": "采用燃气轮机或燃气发动机为原动机时",
+      "constraint": "7.2.2 原动机功率应与压缩机匹配。且应采用适当的调速方式或其他措施。以适应气量的变化。采用燃气轮机或燃气发动机为原动机时 应采用苴接驱动方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压缩机原动机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 310,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

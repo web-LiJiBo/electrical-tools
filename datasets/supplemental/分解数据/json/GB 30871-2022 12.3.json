@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "12.3",
+  "entities": [
+    {
+      "name": "道路短时定点作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3 在道路上进行定点作业，白天不超过 2h、夜间不超过1h即可完工的，在有现场交通指挥人员指挥交通的情况下，只要作业区域设置了相应的交通警示设施，可不设标志牌。",
+      "type": "语义分解",
+      "subject": "道路短时定点作业",
+      "action": "",
+      "operation": "满足时长现场指挥和警示条件可免标牌",
+      "condition": "在道路上进行定点作业",
+      "constraint": "12.3 在道路上进行定点作业，白天不超过 2h、夜间不超过1h即可完工的，在有现场交通指挥人员指挥交通的情况下，只要作业区域设置了相应的交通警示设施，可不设标志牌。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "道路短时定点作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3959,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条件须同时满足，不单凭工期免标志牌"
+      ]
+    }
+  }
+}

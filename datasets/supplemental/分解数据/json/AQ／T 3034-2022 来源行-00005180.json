@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00005180",
+  "entities": [
+    {
+      "name": "企业应要求设计单位做好本质安全设计根据风险评估结果合理选择设备和管道的材",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "企业应要求设计单位做好本质安全设计根据风险评估结果合理选择设备和管道的材质 ,设备规 格 ,关键设备应留有足够的安全裕量 ,为装置长周期运衍提供基础保障",
+      "type": "语义分解",
+      "subject": "企业应要求设计单位做好本质安全设计根据风险评估结果合理选择设备和管道的材",
+      "action": "",
+      "operation": "企业应要求设计单位做好本质安全设计根据风险评估结果合理选择设备和管道的材质 ,设备规 格 ,关键设备应留有足够的安全裕量 ,为装置长周期运衍提供基础保障",
+      "condition": "",
+      "constraint": "企业应要求设计单位做好本质安全设计根据风险评估结果合理选择设备和管道的材质 ,设备规 格 ,关键设备应留有足够的安全裕量 ,为装置长周期运衍提供基础保障",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业应要求设计单位做好本质安全设计根据风险评估结果合理选择设备和管道的材"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5180,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

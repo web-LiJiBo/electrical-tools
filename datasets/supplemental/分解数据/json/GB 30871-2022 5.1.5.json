@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "5.1.5",
+  "entities": [
+    {
+      "name": "动火作业票有效期",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5 特级、一级动火安全作业票有效期不应超过 8 h;二级动火安全作业票有效期不应超过 72 h。",
+      "type": "语义分解",
+      "subject": "动火作业票有效期",
+      "action": "",
+      "operation": "分别限制特级一级及二级有效时长",
+      "condition": "",
+      "constraint": "5.1.5 特级、一级动火安全作业票有效期不应超过 8 h;二级动火安全作业票有效期不应超过 72 h。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火作业票有效期"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3849,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

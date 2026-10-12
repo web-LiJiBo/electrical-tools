@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.3.12.1",
+  "entities": [
+    {
+      "name": "弃井封堵",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.12.1 弃井作业应满足以下条件: 同压力体系地层应经充分封堵;防止地层内的流体进入井眼,井内流体流出海底泥面; 封堵地层或井眼的水泥塞和桥塞的位置应避开自由套管段 ,并经检测合格。",
+      "type": "语义分解",
+      "subject": "弃井封堵",
+      "action": "",
+      "operation": "同压力体系充分封堵防进井出海底塞避自由套管段检测合格",
+      "condition": "",
+      "constraint": "6.3.12.1 弃井作业应满足以下条件: 同压力体系地层应经充分封堵;防止地层内的流体进入井眼,井内流体流出海底泥面; 封堵地层或井眼的水泥塞和桥塞的位置应避开自由套管段 ,并经检测合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "弃井封堵"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4624,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

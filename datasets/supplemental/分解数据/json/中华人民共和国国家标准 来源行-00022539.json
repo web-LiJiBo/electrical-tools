@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022539",
+  "entities": [
+    {
+      "name": "楼层接地排 钢筋 通 信 设备 楼层接地排 垂直主干 接地线 通信 设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "            楼层接地排\n                                  钢筋\n\n                    通 信\n                 设备\n\n           楼层接地排\n\n垂直主干\n接地线              通信\n                 设备\n\n          楼层接地排\n                                             MDF\n\n             非金属光缆\n交流柜(屏)\n        主接地排\n                           登   -\n                                  市话电缆",
+      "type": "语义分解",
+      "subject": "楼层接地排 钢筋 通 信 设备 楼层接地排 垂直主干 接地线 通信 设备",
+      "action": "",
+      "operation": "楼层接地排 钢筋 通 信 设备 楼层接地排 垂直主干 接地线 通信 设备 楼层接地排 MDF 非金属光缆 交流柜(屏) 主接地排 登 - 市话电缆",
+      "condition": "",
+      "constraint": "            楼层接地排\n                                  钢筋\n\n                    通 信\n                 设备\n\n           楼层接地排\n\n垂直主干\n接地线              通信\n                 设备\n\n          楼层接地排\n                                             MDF\n\n             非金属光缆\n交流柜(屏)\n        主接地排\n                           登   -\n                                  市话电缆",
+      "constraint_role": "informational",
+      "related_entities": [
+        "楼层接地排 钢筋 通 信 设备 楼层接地排 垂直主干 接地线 通信 设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22539,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

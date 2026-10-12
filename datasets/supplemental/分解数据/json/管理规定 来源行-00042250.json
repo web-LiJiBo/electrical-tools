@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042250",
+  "entities": [
+    {
+      "name": "（ 二）所属企业事故调查组组长由所属企业领导或者委托 安全环保部门负责人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 二）所属企业事故调查组组长由所属企业领导或者委托\n\n安全环保部门负责人担任，成员由安全环保和相关部门的业务人\n\n员或指派人员（各部门至少 1 人），以及相关领域技术专家组成\n\n（不少于 2 人） ，工会视情况参与。",
+      "type": "语义分解",
+      "subject": "（ 二）所属企业事故调查组组长由所属企业领导或者委托 安全环保部门负责人",
+      "action": "",
+      "operation": "（ 二）所属企业事故调查组组长由所属企业领导或者委托 安全环保部门负责人担任，成员由安全环保和相关部门的业务人 员或指派人员（各部门至少 1 人），以及相关领域技术专家组成 （不少于 2 人） ，工会视情况参与。",
+      "condition": "",
+      "constraint": "    （ 二）所属企业事故调查组组长由所属企业领导或者委托\n\n安全环保部门负责人担任，成员由安全环保和相关部门的业务人\n\n员或指派人员（各部门至少 1 人），以及相关领域技术专家组成\n\n（不少于 2 人） ，工会视情况参与。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 二）所属企业事故调查组组长由所属企业领导或者委托 安全环保部门负责人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42250,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

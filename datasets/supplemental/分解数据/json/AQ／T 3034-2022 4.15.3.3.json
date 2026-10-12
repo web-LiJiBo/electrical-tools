@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.15.3.3",
+  "entities": [
+    {
+      "name": "变更审批",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.15.3.3 一般娈更由需求单位提出申请 .并实施危害辨识和风险评估 ,主管部门负责审批和验收;重 要变更在需求单位实施危害辨识和风险评估的基础上 .由主管部门组织相关专家对需求单位的风险评 估结果进行审核 .审批",
+      "type": "语义分解",
+      "subject": "变更审批",
+      "action": "",
+      "operation": "一般需求申请评估主管审批验收重要主管组织专家审核评估审批",
+      "condition": "",
+      "constraint": "4.15.3.3 一般娈更由需求单位提出申请 .并实施危害辨识和风险评估 ,主管部门负责审批和验收;重 要变更在需求单位实施危害辨识和风险评估的基础上 .由主管部门组织相关专家对需求单位的风险评 估结果进行审核 .审批",
+      "constraint_role": "informational",
+      "related_entities": [
+        "变更审批"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5264,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

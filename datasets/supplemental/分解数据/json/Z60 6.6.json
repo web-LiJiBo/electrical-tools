@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "6.6",
+  "entities": [
+    {
+      "name": "边界NMHC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6 企业边界NMHC的监测采样和测定方法按HJ/T 55和HJ 604的规定执行，监测采样不应在向铁路\n罐车收发油时进行。",
+      "type": "语义分解",
+      "subject": "边界NMHC",
+      "action": "",
+      "operation": "按引用方法不在铁路收发油时采样",
+      "condition": "",
+      "constraint": "6.6 企业边界NMHC的监测采样和测定方法按HJ/T 55和HJ 604的规定执行，监测采样不应在向铁路\n罐车收发油时进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "边界NMHC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32779,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

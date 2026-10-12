@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "12.4.6",
+  "entities": [
+    {
+      "name": "测量维护终端",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.4.6      端局的测量室内应配置维护终端(测量台)。在采用非集\n中维护的本地网内，维护终端(测量台)数量原则上按10000门左\n右一台N+1   方 式( N  为维护终端数量)配置，小于10000 门局按\n10000门计。远端用户模块局可配置可携式的测量箱。在采用集\n中维护的本地网内，应对网内所有端局、模块局、接入网节点配置\n外接测试设备。对于未设外接测试设备的端局，可采用仿真测量\n方式，配置维护终端，并接入本地网集中测试系统。",
+      "type": "语义分解",
+      "subject": "测量维护终端",
+      "action": "",
+      "operation": "非集中原则每万门N+1不足万门按万门远端可便携集中全节点外测未设可仿真接集中系统",
+      "condition": "",
+      "constraint": "12.4.6      端局的测量室内应配置维护终端(测量台)。在采用非集\n中维护的本地网内，维护终端(测量台)数量原则上按10000门左\n右一台N+1   方 式( N  为维护终端数量)配置，小于10000 门局按\n10000门计。远端用户模块局可配置可携式的测量箱。在采用集\n中维护的本地网内，应对网内所有端局、模块局、接入网节点配置\n外接测试设备。对于未设外接测试设备的端局，可采用仿真测量\n方式，配置维护终端，并接入本地网集中测试系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量维护终端"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26304,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；多维护模式配置须完整复核"
+      ]
+    }
+  }
+}

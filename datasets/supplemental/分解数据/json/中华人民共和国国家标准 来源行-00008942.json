@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008942",
+  "entities": [
+    {
+      "name": "实际工程中若部分通路不满足 MPI-RM 点每通路最小光信噪比要求，可采",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3  实际工程中若部分通路不满足 MPI-RM 点每通路最小光信噪比要求，可采\n用接收机光信噪比容限( EOL)  ( 即实际测试的 BTB   ONSR   BOL 值加上",
+      "type": "语义分解",
+      "subject": "实际工程中若部分通路不满足 MPI-RM 点每通路最小光信噪比要求，可采",
+      "action": "",
+      "operation": "实际工程中若部分通路不满足 MPI-RM 点每通路最小光信噪比要求，可采 用接收机光信噪比容限( EOL) ( 即实际测试的 BTB ONSR BOL 值加上",
+      "condition": "",
+      "constraint": "3  实际工程中若部分通路不满足 MPI-RM 点每通路最小光信噪比要求，可采\n用接收机光信噪比容限( EOL)  ( 即实际测试的 BTB   ONSR   BOL 值加上",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实际工程中若部分通路不满足 MPI-RM 点每通路最小光信噪比要求，可采"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8942,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

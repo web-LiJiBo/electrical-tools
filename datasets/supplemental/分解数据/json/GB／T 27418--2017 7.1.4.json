@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "7.1.4",
+  "entities": [
+    {
+      "name": "测量结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.4 虽然实际中 ,可以根据测量结果的预期用途确定随测量结果提供哪些必要的信息 ,但对报告测 量结果的基本的原则是不娈的:当报告测量结果及其不确定度时 ,宁可提供过多信息而不要太少_ 如应 该包括: a) 清楚地描述由实验观测值和输人数据计算测量结果及其不确定度的方法; b) 将所有的不确定度分量列出 ,并将各分量如何评定的方法形成文件; c) 详细描述数据分析的方法 ,使其每个重要步骤易于遵照执行 ,必要时报告中结果的计算能独立 重复; d) 给出在分析中所用的所有修正值和常数以及来源。 检查上述清单是否完备的方法就是自问 ,\"我是否以足够清晰的方式提供了充分的停息 ,确保将来 如果得到新的信息或数据 ,可以更新我的结果吗?\"",
+      "type": "语义分解",
+      "subject": "测量结果",
+      "action": "",
+      "operation": "报告方法分量修正常数及来源",
+      "condition": "报告测量结果及其不确定度时",
+      "constraint": "给出在分析中所用的所有修正值和常数以及来源",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "多个报告要素保留全文，本批不改写公式"
+      ]
+    }
+  }
+}

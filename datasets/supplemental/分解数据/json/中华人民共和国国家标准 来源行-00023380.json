@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023380",
+  "entities": [
+    {
+      "name": "室外站、边际站、无线市话站所处的地理环境非常恶劣， 与典型正规站相比，各",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2   室外站、边际站、无线市话站所处的地理环境非常恶劣，\n与典型正规站相比，各类自然环境条件更加严酷，常年遇到的雷害\n频次更多，为了保障在雷击基站时正常运行，因此需要在设计时特\n\n别强调防雷与接地的重要性。",
+      "type": "语义分解",
+      "subject": "室外站、边际站、无线市话站所处的地理环境非常恶劣， 与典型正规站相比，各",
+      "action": "",
+      "operation": "室外站、边际站、无线市话站所处的地理环境非常恶劣， 与典型正规站相比，各类自然环境条件更加严酷，常年遇到的雷害 频次更多，为了保障在雷击基站时正常运行，因此需要在设计时特 别强调防雷与接地的重要性。",
+      "condition": "",
+      "constraint": "7.1.2   室外站、边际站、无线市话站所处的地理环境非常恶劣，\n与典型正规站相比，各类自然环境条件更加严酷，常年遇到的雷害\n频次更多，为了保障在雷击基站时正常运行，因此需要在设计时特\n\n别强调防雷与接地的重要性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "室外站、边际站、无线市话站所处的地理环境非常恶劣， 与典型正规站相比，各"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23380,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

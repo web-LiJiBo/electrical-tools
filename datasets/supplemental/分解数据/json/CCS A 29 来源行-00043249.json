@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00043249",
+  "entities": [
+    {
+      "name": ". 4 进行电化学性能检验时 , 每次电化学性能试验应至少使用 3 个试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.4. 4   进行电化学性能检验时 , 每次电化学性能试验应至少使用 3 个试样 。  试样 从 产 品 上 切 割 取\n样 ,也可于浇铸前从熔炼炉取铝液单独制作 ,试样可分别取自不同炉次的铝阳极 。",
+      "type": "语义分解",
+      "subject": ". 4 进行电化学性能检验时 , 每次电化学性能试验应至少使用 3 个试",
+      "action": "",
+      "operation": ". 4 进行电化学性能检验时 , 每次电化学性能试验应至少使用 3 个试样 。 试样 从 产 品 上 切 割 取 样 ,也可于浇铸前从熔炼炉取铝液单独制作 ,试样可分别取自不同炉次的铝阳极 。",
+      "condition": "",
+      "constraint": "8.3.4. 4   进行电化学性能检验时 , 每次电化学性能试验应至少使用 3 个试样 。  试样 从 产 品 上 切 割 取\n样 ,也可于浇铸前从熔炼炉取铝液单独制作 ,试样可分别取自不同炉次的铝阳极 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 4 进行电化学性能检验时 , 每次电化学性能试验应至少使用 3 个试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43249,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

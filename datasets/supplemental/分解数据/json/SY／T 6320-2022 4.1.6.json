@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "4.1.6",
+  "entities": [
+    {
+      "name": "承包商",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.6 在工程建设项目投标。签约时,建设单位应对承包商的资质和安全生产业绩进行审查。明确安 全生产要求。在项目实施中对承包商的安全生产进行监督管理。符合 SYIT 6276 的要求。",
+      "type": "语义分解",
+      "subject": "承包商",
+      "action": "",
+      "operation": "审查资质业绩安全要求并监督",
+      "condition": "",
+      "constraint": "4.1.6 在工程建设项目投标。签约时,建设单位应对承包商的资质和安全生产业绩进行审查。明确安 全生产要求。在项目实施中对承包商的安全生产进行监督管理。符合 SYIT 6276 的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "承包商"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7504,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

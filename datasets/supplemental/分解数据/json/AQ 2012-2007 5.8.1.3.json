@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.8.1.3",
+  "entities": [
+    {
+      "name": "注水泵及出口管件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8.1.3 注水泵出口弯头应定期进行测厚。法兰,阀门等连接要牢固 ,发现刺,渗,漏应及时停泵处理。严禁超压注水。",
+      "type": "语义分解",
+      "subject": "注水泵及出口管件",
+      "action": "",
+      "operation": "定测厚紧固连接泄漏停泵禁超压",
+      "condition": "发现刺,渗,漏",
+      "constraint": "5.8.1.3 注水泵出口弯头应定期进行测厚。法兰,阀门等连接要牢固 ,发现刺,渗,漏应及时停泵处理。严禁超压注水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注水泵及出口管件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4520,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；刺含义需核对，超压额定值及泵绑定待补"
+      ]
+    }
+  }
+}

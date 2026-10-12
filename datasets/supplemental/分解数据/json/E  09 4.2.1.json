@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.2.1",
+  "entities": [
+    {
+      "name": "道路规划和征借用地是一个复杂的过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1     道路规划和征借用地是一个复杂的过程。在规划过程中，应考虑政府机构、土地使用者及其\n他用户的意见。",
+      "type": "语义分解",
+      "subject": "道路规划和征借用地是一个复杂的过程",
+      "action": "",
+      "operation": "道路规划和征借用地是一个复杂的过程。在规划过程中，应考虑政府机构、土地使用者及其 他用户的意见。",
+      "condition": "",
+      "constraint": "4.2.1     道路规划和征借用地是一个复杂的过程。在规划过程中，应考虑政府机构、土地使用者及其\n他用户的意见。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "道路规划和征借用地是一个复杂的过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41068,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

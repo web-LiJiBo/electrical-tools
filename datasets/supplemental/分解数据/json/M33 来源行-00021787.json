@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021787",
+  "entities": [
+    {
+      "name": "b) 由于数据变化格式中数据过渡区域包含较少的定时信息造成定时再生电路故",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    由于数据变化格式中数据过渡区域包含较少的定时信息造成定时再生电路故障引起的误码；\nc)    类似上述b)  定时故障引起的误码，但是是由于STM-N 第一行段开销字节出现一段低定时内\n    容(这些字节具有低定时内容，特别是N 较大时)。",
+      "type": "语义分解",
+      "subject": "b) 由于数据变化格式中数据过渡区域包含较少的定时信息造成定时再生电路故",
+      "action": "",
+      "operation": "b) 由于数据变化格式中数据过渡区域包含较少的定时信息造成定时再生电路故障引起的误码； c) 类似上述b) 定时故障引起的误码，但是是由于STM-N 第一行段开销字节出现一段低定时内 容(这些字节具有低定时内容，特别是N 较大时)。",
+      "condition": "",
+      "constraint": "b)    由于数据变化格式中数据过渡区域包含较少的定时信息造成定时再生电路故障引起的误码；\nc)    类似上述b)  定时故障引起的误码，但是是由于STM-N 第一行段开销字节出现一段低定时内\n    容(这些字节具有低定时内容，特别是N 较大时)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 由于数据变化格式中数据过渡区域包含较少的定时信息造成定时再生电路故"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21787,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

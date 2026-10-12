@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "10.1",
+  "entities": [
+    {
+      "name": "地下水质量保证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1 质量保证 从事地下水监测的组织机构 监测入员。现场监测仪器 实验室分析仪器与设备等按 RB/T214 和 HJ 630  的有关内容执行= 采样入员必须通过岗前培训,考核合格后上岗,切实掌握地下水采样技术, 熟知采样器具的使用和样品固定。保存和运输条件等。",
+      "type": "语义分解",
+      "subject": "地下水质量保证",
+      "action": "",
+      "operation": "组织人员仪器依标准采样人员培训考核合格掌握采样保存运输",
+      "condition": "",
+      "constraint": "10.1 质量保证 从事地下水监测的组织机构 监测入员。现场监测仪器 实验室分析仪器与设备等按 RB/T214 和 HJ 630  的有关内容执行= 采样入员必须通过岗前培训,考核合格后上岗,切实掌握地下水采样技术, 熟知采样器具的使用和样品固定。保存和运输条件等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水质量保证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2176,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

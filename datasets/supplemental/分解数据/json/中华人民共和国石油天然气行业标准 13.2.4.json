@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "13.2.4",
+  "entities": [
+    {
+      "name": "光纤配线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.4    室内采用光纤配线时宜采用 G. 657a 类光纤 ,   楼间配线\n光缆宜采用 G. 652 单模光纤。",
+      "type": "语义分解",
+      "subject": "光纤配线",
+      "action": "",
+      "operation": "室内宜G.657a楼间宜G.652单模",
+      "condition": "",
+      "constraint": "13.2.4    室内采用光纤配线时宜采用 G. 657a 类光纤 ,   楼间配线\n光缆宜采用 G. 652 单模光纤。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光纤配线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12059,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

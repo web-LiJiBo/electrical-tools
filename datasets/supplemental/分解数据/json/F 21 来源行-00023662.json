@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023662",
+  "entities": [
+    {
+      "name": "a) DTMF信号的采集与解码",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    DTMF信号的采集与解码 :按照控制设备发来的相关操作参数的规定 ,从 DTMF话机上接收\n       DTMF信号 ,按照 IETF RFC 2833规范封装在信令中传给控制设备 ;",
+      "type": "语义分解",
+      "subject": "a) DTMF信号的采集与解码",
+      "action": "",
+      "operation": "a) DTMF信号的采集与解码 :按照控制设备发来的相关操作参数的规定 ,从 DTMF话机上接收 DTMF信号 ,按照 IETF RFC 2833规范封装在信令中传给控制设备",
+      "condition": "",
+      "constraint": "a)    DTMF信号的采集与解码 :按照控制设备发来的相关操作参数的规定 ,从 DTMF话机上接收\n       DTMF信号 ,按照 IETF RFC 2833规范封装在信令中传给控制设备 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) DTMF信号的采集与解码"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23662,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

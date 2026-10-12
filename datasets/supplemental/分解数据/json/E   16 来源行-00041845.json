@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "来源行-00041845",
+  "entities": [
+    {
+      "name": "n——正确报警次数 (只有对测试做出响应的报警才是正确报警)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "n——正确报警次数  (只有对测试做出响应的报警才是正确报警) ;\nN——测试次数。",
+      "type": "语义分解",
+      "subject": "n——正确报警次数 (只有对测试做出响应的报警才是正确报警)",
+      "action": "",
+      "operation": "n——正确报警次数 (只有对测试做出响应的报警才是正确报警) ; N——测试次数。",
+      "condition": "",
+      "constraint": "n——正确报警次数  (只有对测试做出响应的报警才是正确报警) ;\nN——测试次数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "n——正确报警次数 (只有对测试做出响应的报警才是正确报警)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41845,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

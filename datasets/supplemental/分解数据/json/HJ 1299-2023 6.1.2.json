@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.1.2",
+  "entities": [
+    {
+      "name": "许可非现场核查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2 非现场核查:  非现场核查事项清单见附录B。非现场核查重点关注排污许可证记载内容是否按 照排污许可证申请与核'发技术规范要求填报完整。记载内容与法律法规,污染物排放标准。排污许可证 申请与核发技术规范。自行监测技术指南等相关文件要求是否相符。记载内容与环境影响报告书(表) 及其批复文件或竣工环境保护验收文件及验收意见等内容是否一致。",
+      "type": "语义分解",
+      "subject": "许可非现场核查",
+      "action": "",
+      "operation": "核完整性法规标准规范符合性及环评验收一致性",
+      "condition": "",
+      "constraint": "6.1.2 非现场核查:  非现场核查事项清单见附录B。非现场核查重点关注排污许可证记载内容是否按 照排污许可证申请与核'发技术规范要求填报完整。记载内容与法律法规,污染物排放标准。排污许可证 申请与核发技术规范。自行监测技术指南等相关文件要求是否相符。记载内容与环境影响报告书(表) 及其批复文件或竣工环境保护验收文件及验收意见等内容是否一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可非现场核查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1986,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录B未提供"
+      ]
+    }
+  }
+}

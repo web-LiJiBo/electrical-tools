@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022892",
+  "entities": [
+    {
+      "name": "移动通信基站系统防雷接地采取的措施，应根据下列主要因素确定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2  移动通信基站系统防雷接地采取的措施，应根据下列主要因素确定：基站\n  所处的地理环境在城市、郊区、山区，或易遭受雷击的地区；基站所处地区\n  的年雷暴日；雷电保护区的划分；基站的分类(机房建筑物与铁塔的关系);\n  铁塔或桅杆；公共建筑物或民用建筑物；基站内所配置的设备与系统；供 电\n   方式；所在地的供电电压波动情况。",
+      "type": "语义分解",
+      "subject": "移动通信基站系统防雷接地采取的措施，应根据下列主要因素确定",
+      "action": "",
+      "operation": "移动通信基站系统防雷接地采取的措施，应根据下列主要因素确定：基站 所处的地理环境在城市、郊区、山区，或易遭受雷击的地区；基站所处地区 的年雷暴日；雷电保护区的划分；基站的分类(机房建筑物与铁塔的关系); 铁塔或桅杆；公共建筑物或民用建筑物；基站内所配置的设备与系统；供 电 方式；所在地的供电电压波动情况。",
+      "condition": "",
+      "constraint": "2  移动通信基站系统防雷接地采取的措施，应根据下列主要因素确定：基站\n  所处的地理环境在城市、郊区、山区，或易遭受雷击的地区；基站所处地区\n  的年雷暴日；雷电保护区的划分；基站的分类(机房建筑物与铁塔的关系);\n  铁塔或桅杆；公共建筑物或民用建筑物；基站内所配置的设备与系统；供 电\n   方式；所在地的供电电压波动情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "移动通信基站系统防雷接地采取的措施，应根据下列主要因素确定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22892,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

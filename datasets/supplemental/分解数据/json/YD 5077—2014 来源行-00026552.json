@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026552",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工业和信息化部批准《不干胶标签印刷机》等1208项行业标\n\n准(标准编号、名称、主要内容及起始实施日期见附件1),其中机械\n\n行业标准471项，汽车行业标准32项，船舶行业标准70项，航空行\n\n业标准111项，化工行业标准137项，冶金行业标准69项，建材行\n业标准30项，石化行业标准14项，有色金属行业标准6项，轻工行\n业标准89项，纺织行业标准49项，兵工民品行业标准79项，核行\n\n业标准15项，电子行业标准2项，通信行业标准34项。批准《锰硅\n合金( FeMn68Si16)》等39项冶金行业标准样品(标准样品目录及\n\n成分含量见附件2)。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "工业和信息化部批准《不干胶标签印刷机》等1208项行业标\n\n准(标准编号、名称、主要内容及起始实施日期见附件1),其中机械\n\n行业标准471项，汽车行业标准32项，船舶行业标准70项，航空行\n\n业标准111项，化工行业标准137项，冶金行业标准69项，建材行\n业标准30项，石化行业标准14项，有色金属行业标准6项，轻工行\n业标准89项，纺织行业标准49项，兵工民品行业标准79项，核行\n\n业标准15项，电子行业标准2项，通信行业标准34项。批准《锰硅\n合金( FeMn68Si16)》等39项冶金行业标准样品(标准样品目录及\n\n成分含量见附件2)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26552,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

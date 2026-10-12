@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023256",
+  "entities": [
+    {
+      "name": "各垂直主干接地线连接系统为处于有限区域内的通信设备提 供服务",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   各垂直主干接地线连接系统为处于有限区域内的通信设备提\n供服务。这一区域通常为一个长边为30m 的矩形，以垂直主干接\n地线连接系统为中心，处于这一区域外的设备由另外的垂直主干\n接地线连接系统提供服务。",
+      "type": "语义分解",
+      "subject": "各垂直主干接地线连接系统为处于有限区域内的通信设备提 供服务",
+      "action": "",
+      "operation": "各垂直主干接地线连接系统为处于有限区域内的通信设备提 供服务。这一区域通常为一个长边为30m 的矩形，以垂直主干接 地线连接系统为中心，处于这一区域外的设备由另外的垂直主干 接地线连接系统提供服务。",
+      "condition": "",
+      "constraint": "   各垂直主干接地线连接系统为处于有限区域内的通信设备提\n供服务。这一区域通常为一个长边为30m 的矩形，以垂直主干接\n地线连接系统为中心，处于这一区域外的设备由另外的垂直主干\n接地线连接系统提供服务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "各垂直主干接地线连接系统为处于有限区域内的通信设备提 供服务"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23256,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

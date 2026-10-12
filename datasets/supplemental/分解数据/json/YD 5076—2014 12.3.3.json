@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "12.3.3",
+  "entities": [
+    {
+      "name": "信令中继接口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.3  承载信令的中继应支持 E1 、STM-1接口和10/100 Mbit/s\nIP 自适应接口，STM-1  接口、10/100 Mbit/s    IP自适应接口应支持\n1+1的自动保护功能。",
+      "type": "语义分解",
+      "subject": "信令中继接口",
+      "action": "",
+      "operation": "支持E1及STM-1及10/100Mbit/sIP自适应后两者支持1+1自动保护",
+      "condition": "",
+      "constraint": "12.3.3  承载信令的中继应支持 E1 、STM-1接口和10/100 Mbit/s\nIP 自适应接口，STM-1  接口、10/100 Mbit/s    IP自适应接口应支持\n1+1的自动保护功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "信令中继接口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26296,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

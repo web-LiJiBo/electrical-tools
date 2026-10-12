@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.3.4",
+  "entities": [
+    {
+      "name": "受高压直流接地极干扰时，评估宜优先采用区域内其他管 道类似工况的实测数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4   受高压直流接地极干扰时，评估宜优先采用区域内其他管\n道类似工况的实测数据，若无实测数据时可计算管道腐蚀速率，\n建设期进行计算评估时可接受的腐蚀速率宜不超过0.1mm/a。\n除应分析腐蚀危害外，还应对管道系统设备设施的损毁或失效、\n管道防腐层的剥离或烧蚀等危害进行分析。",
+      "type": "语义分解",
+      "subject": "受高压直流接地极干扰时，评估宜优先采用区域内其他管 道类似工况的实测数据",
+      "action": "",
+      "operation": "受高压直流接地极干扰时，评估宜优先采用区域内其他管 道类似工况的实测数据，若无实测数据时可计算管道腐蚀速率， 建设期进行计算评估时可接受的腐蚀速率宜不超过0.1mm/a。 除应分析腐蚀危害外，还应对管道系统设备设施的损毁或失效、 管道防腐层的剥离或烧蚀等危害进行分析。",
+      "condition": "",
+      "constraint": "4.3.4   受高压直流接地极干扰时，评估宜优先采用区域内其他管\n道类似工况的实测数据，若无实测数据时可计算管道腐蚀速率，\n建设期进行计算评估时可接受的腐蚀速率宜不超过0.1mm/a。\n除应分析腐蚀危害外，还应对管道系统设备设施的损毁或失效、\n管道防腐层的剥离或烧蚀等危害进行分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "受高压直流接地极干扰时，评估宜优先采用区域内其他管 道类似工况的实测数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47415,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

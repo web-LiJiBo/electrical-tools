@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.3.7",
+  "entities": [
+    {
+      "name": "海洋钻井前",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.7 钻井作业前 应完成地质设计和工程设计; 应对钻井设备 ,安全消防设备等进行检验和测试,确认其是否符合钻井作业安全要求;开钻前应再进行一次安全检查; 钻井作业前应召开安全技术交底会; 应对应急预案内容进行演练。",
+      "type": "语义分解",
+      "subject": "海洋钻井前",
+      "action": "",
+      "operation": "完成设计设备消防检验测试再查安全交底应急演练",
+      "condition": "",
+      "constraint": "6.3.7 钻井作业前 应完成地质设计和工程设计; 应对钻井设备 ,安全消防设备等进行检验和测试,确认其是否符合钻井作业安全要求;开钻前应再进行一次安全检查; 钻井作业前应召开安全技术交底会; 应对应急预案内容进行演练。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海洋钻井前"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4610,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.5.2.2",
+  "entities": [
+    {
+      "name": "重大问题类型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2.2 重大问题的示例 清单数据 ,例如能源 ,排放'物 ,废物 ; 影响类型 ,例如资源使用 气候变化; 生命周期各阶段对 LCI 或 LCIA 结果的主要贡献 ,例如运输 .能源生产等单一单元过程或过程 组_ 现有各种具体的途径 ,方法和工具来识别环境问题并确定其重要性。 注: 示例参见B.2。",
+      "type": "语义分解",
+      "subject": "重大问题类型",
+      "action": "",
+      "operation": "以清单数据影响类型阶段贡献识别重大问题",
+      "condition": "",
+      "constraint": "4.5.2.2 重大问题的示例 清单数据 ,例如能源 ,排放'物 ,废物 ; 影响类型 ,例如资源使用 气候变化; 生命周期各阶段对 LCI 或 LCIA 结果的主要贡献 ,例如运输 .能源生产等单一单元过程或过程 组_ 现有各种具体的途径 ,方法和工具来识别环境问题并确定其重要性。 注: 示例参见B.2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大问题类型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1132,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

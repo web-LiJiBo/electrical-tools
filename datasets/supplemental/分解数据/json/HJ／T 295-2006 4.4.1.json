@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "同事由文件排列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 同一事由内归档文件排列 同一事由内归档文件的排列,应遵循事由原则 , 可选择以下两种方式之一: 1) 可按文件形成时间的先后顺序排列。先将同一事由的文件材料集中,然后按文件材料形成时间的先后顺序,形成月期在前的文件排列在前,形成日期在后的文件排列在后。 2) 可按归档文件的重要程度排列。在同一事由的文件材料中按文件材料重要程度顺序排列,将重要性。结论性的文件排在前面,其他文件排在后面。",
+      "type": "语义分解",
+      "subject": "同事由文件排列",
+      "action": "",
+      "operation": "集中同事由按形成时间或重要结论优先排列",
+      "condition": "",
+      "constraint": "4.4.1 同一事由内归档文件排列 同一事由内归档文件的排列,应遵循事由原则 , 可选择以下两种方式之一: 1) 可按文件形成时间的先后顺序排列。先将同一事由的文件材料集中,然后按文件材料形成时间的先后顺序,形成月期在前的文件排列在前,形成日期在后的文件排列在后。 2) 可按归档文件的重要程度排列。在同一事由的文件材料中按文件材料重要程度顺序排列,将重要性。结论性的文件排在前面,其他文件排在后面。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "同事由文件排列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3087,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

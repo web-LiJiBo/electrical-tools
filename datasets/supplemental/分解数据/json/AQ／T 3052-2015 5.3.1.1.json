@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.3.1.1",
+  "entities": [
+    {
+      "name": "现场救援人员防护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1.1 调集所需安全防护装备。 现场应急救援人员应针对不同的危险特性 ,采取相应安全防护措施后 ,方可进入现场救援。",
+      "type": "语义分解",
+      "subject": "现场救援人员防护",
+      "action": "",
+      "operation": "落实相应防护后进入现场",
+      "condition": "",
+      "constraint": "5.3.1.1 调集所需安全防护装备。 现场应急救援人员应针对不同的危险特性 ,采取相应安全防护措施后 ,方可进入现场救援。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场救援人员防护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5991,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

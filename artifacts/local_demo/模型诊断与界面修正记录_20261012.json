@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-12",
+  "scope": "完整仓库本地：模型失败诊断、流程状态、结果页和在线启动预检查；未推送GitHub",
+  "baseline": "9f4671796b9790d27f301345b9df77bc7f48b4de",
+  "changes": [
+    "增加稳定脱敏错误码，不回显密钥、服务商错误正文或异常原文",
+    "建议调用失败与输出校验失败分别记录；失败清空旧载荷",
+    "增加data.processing与partial状态，清空载荷后不得保留generated",
+    "generate-instruction返回处理进度、建议和警告",
+    "界面分开展示查询、模型建议和指令转换，删除知识查询无需指令的错误提示",
+    "在线启动从已配置环境读取密钥并预检查模型列表接口，失败不启动服务",
+    "更新统一修改说明，保留历史与当前验证范围"
+  ],
+  "verification": {
+    "focused_pytest": "75 passed in 4.07s，包含路由函数单元检查；不是在线HTTP或真实模型联调",
+    "browser": "通过：模型失败、知识查询转指令、阻止原因、窄屏布局、无页面脚本错误；API为拦截的确定性测试数据",
+    "startup_powershell_syntax": "passed",
+    "restricted_network_preflight": "unavailable / network_permission_denied",
+    "approved_network_preflight": "reachable / configured_model_listed=false；模型列表接口可访问，不证明生成调用成功，未更换模型",
+    "real_clause_llm_validation": "被自动安全审查拒绝：缺少具体检索条款和模拟设备事实发送到DeepSeek的明确授权；未绕过、未完成新建议或指令生成",
+    "full_non_model_suite": "未完成，已中止；历史批次条款来源校核阶段耗时较长，不记为通过",
+    "extended_related_regression": "165 passed in 91.88s；包含前述75项，以及当前数据集温升条款状态判定、协议示例、模板管理和补充模板；不重复相加。另一次不含数据集温升测试的重跑为164 passed in 4.04s",
+    "reader_test": "通过：初始查询意图、partial状态、接口可访问与业务成功、外网权限与数据外发授权的区别均可独立理解"
+  },
+  "safety": {
+    "generation_only": true,
+    "dispatch_allowed": false,
+    "execution_features_added": false,
+    "firewall_or_system_permissions_changed": false,
+    "clause_data_or_model_weights_changed": false,
+    "runtime_service_restarted": false
+  },
+  "known_limits": [
+    "需要用户明确授权问题、检索条款和模拟设备事实发送到DeepSeek才能再次真实联调，可能消耗API额度",
+    "启动检查仅验证模型列表接口，不证明具体模型生成、账户余额或全部模板可用",
+    "旧服务须在有外网权限且获授权的执行环境重新启动才能加载修正，代码无法绕过沙箱限制",
+    "全部非模型测试未完成，不宣称全量通过"
+  ]
+}

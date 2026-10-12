@@ -13,4 +13,4 @@ class IEC61850Adapter:
         if missing:
             return CandidateInstruction(protocol=self.protocol, target=str(config.get("device_id", "")), missing_fields=missing, evidence=program.evidence, explanation="IEC 61850配置不完整，仅返回待补充信息")
         payload = {"service": "MMS", "logical_node": config["logical_node"], "data_object": config["data_object"], "requested_action": action.get("action", ""), "ilr_program_id": program.program_id}
-        return CandidateInstruction(protocol=self.protocol, target=str(config["device_id"]), payload=payload, evidence=program.evidence, explanation="IEC 61850候选指令，需通过验证和人工确认", dispatch_allowed=False)
+        return CandidateInstruction(protocol=self.protocol, target=str(config["device_id"]), payload=payload, evidence=program.evidence, explanation="IEC 61850候选指令，仅用于指令生成", dispatch_allowed=False)

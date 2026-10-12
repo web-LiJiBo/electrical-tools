@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境保护管理办法",
+  "standard_id": "国家管网办[2025]262号",
+  "version": "",
+  "chapter_path": "来源行-00000850",
+  "entities": [
+    {
+      "name": "第六十七条 管道临时停用的,企业应对管道内油品和其他输送介质进行清扫,采",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十七条 管道临时停用的,企业应对管道内油品和其他输送介质进行清扫,采取措施进行封存。封存管道重新投运前,企业应对管道及附属设施进行检测。维修和试压,按照完整性管理要求出具评价报告,并按投运环节环境风险防控要求采取环境风险防控措施。",
+      "type": "语义分解",
+      "subject": "第六十七条 管道临时停用的,企业应对管道内油品和其他输送介质进行清扫,采",
+      "action": "",
+      "operation": "第六十七条 管道临时停用的,企业应对管道内油品和其他输送介质进行清扫,采取措施进行封存。封存管道重新投运前,企业应对管道及附属设施进行检测。维修和试压,按照完整性管理要求出具评价报告,并按投运环节环境风险防控要求采取环境风险防控措施。",
+      "condition": "",
+      "constraint": "第六十七条 管道临时停用的,企业应对管道内油品和其他输送介质进行清扫,采取措施进行封存。封存管道重新投运前,企业应对管道及附属设施进行检测。维修和试压,按照完整性管理要求出具评价报告,并按投运环节环境风险防控要求采取环境风险防控措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十七条 管道临时停用的,企业应对管道内油品和其他输送介质进行清扫,采"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 850,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

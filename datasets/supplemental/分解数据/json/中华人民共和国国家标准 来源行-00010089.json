@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010089",
+  "entities": [
+    {
+      "name": "最小边模抑制比测试，在线路侧光接口的 Sn 点测试各线 路侧端口的最小边",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   5  最小边模抑制比测试，在线路侧光接口的 Sn 点测试各线\n路侧端口的最小边模抑制比，测试结果应符合设计指标要求；\n   6   -20dB 谱宽测试，在线路侧光接口的Sn 点分别测试各线\n路侧端口的—20dB 谱宽，测试结果应符合设计指标要求；\n   7  抖动产生测试，在参考点R 测量无输入抖动的最大输出\n抖动(测试60秒),测试结果应符合表10.1.4-1中的规定；",
+      "type": "语义分解",
+      "subject": "最小边模抑制比测试，在线路侧光接口的 Sn 点测试各线 路侧端口的最小边",
+      "action": "",
+      "operation": "最小边模抑制比测试，在线路侧光接口的 Sn 点测试各线 路侧端口的最小边模抑制比，测试结果应符合设计指标要求； 6 -20dB 谱宽测试，在线路侧光接口的Sn 点分别测试各线 路侧端口的—20dB 谱宽，测试结果应符合设计指标要求； 7 抖动产生测试，在参考点R 测量无输入抖动的最大输出 抖动(测试60秒),测试结果应符合表10.1.4-1中的规定",
+      "condition": "",
+      "constraint": "   5  最小边模抑制比测试，在线路侧光接口的 Sn 点测试各线\n路侧端口的最小边模抑制比，测试结果应符合设计指标要求；\n   6   -20dB 谱宽测试，在线路侧光接口的Sn 点分别测试各线\n路侧端口的—20dB 谱宽，测试结果应符合设计指标要求；\n   7  抖动产生测试，在参考点R 测量无输入抖动的最大输出\n抖动(测试60秒),测试结果应符合表10.1.4-1中的规定；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "最小边模抑制比测试，在线路侧光接口的 Sn 点测试各线 路侧端口的最小边"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10089,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

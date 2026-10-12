@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "7.2.3",
+  "entities": [
+    {
+      "name": "监督仪器工具选用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3 应根据开展不同监督类型适当选用监督仪器。工具，重点选用如下:a)常规监督。解剖式监督。联合监督。QHSE体系审核应选用照相机。录像机。工业智能防爆移动终端。笔记本等;b)专项监督应选用手持测风仪。激光测距仪。四合-可燃气体检测仪。接地电阻检测仪等;c)内部安全评价应选用激光测距仪。手持噪声检测仪。激光甲烷检测仪等。",
+      "type": "语义分解",
+      "subject": "监督仪器工具选用",
+      "action": "",
+      "operation": "按监督类型配置记录检测工具",
+      "condition": "",
+      "constraint": "7.2.3 应根据开展不同监督类型适当选用监督仪器。工具，重点选用如下:a)常规监督。解剖式监督。联合监督。QHSE体系审核应选用照相机。录像机。工业智能防爆移动终端。笔记本等;b)专项监督应选用手持测风仪。激光测距仪。四合-可燃气体检测仪。接地电阻检测仪等;c)内部安全评价应选用激光测距仪。手持噪声检测仪。激光甲烷检测仪等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监督仪器工具选用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 722,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

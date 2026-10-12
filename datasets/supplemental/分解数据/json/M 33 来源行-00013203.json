@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013203",
+  "entities": [
+    {
+      "name": "假设由某个SDH光传输系统构成一个国际数字通道，根据本标准规定的指标分配",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   假设由某个SDH光传输系统构成一个国际数字通道，根据本标准规定的指标分配配额，确定相应的\n传输性能指标值为ESR,  那么ESR与BER之间的换算如公式( C.2)  所示：",
+      "type": "语义分解",
+      "subject": "假设由某个SDH光传输系统构成一个国际数字通道，根据本标准规定的指标分配",
+      "action": "",
+      "operation": "假设由某个SDH光传输系统构成一个国际数字通道，根据本标准规定的指标分配配额，确定相应的 传输性能指标值为ESR, 那么ESR与BER之间的换算如公式( C.2) 所示",
+      "condition": "",
+      "constraint": "   假设由某个SDH光传输系统构成一个国际数字通道，根据本标准规定的指标分配配额，确定相应的\n传输性能指标值为ESR,  那么ESR与BER之间的换算如公式( C.2)  所示：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "假设由某个SDH光传输系统构成一个国际数字通道，根据本标准规定的指标分配"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13203,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

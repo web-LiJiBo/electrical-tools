@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011643",
+  "entities": [
+    {
+      "name": "为规范油气输送管道通信系统的设计 , 保证设计质量 , 做 到安全适用 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.1    为规范油气输送管道通信系统的设计 ,  保证设计质量 ,  做\n到安全适用 、   因地制宜 、  技术先进、经济合理 ,  特制定本规范。\n1.0.2    本规范适用于国内陆上油气输送管道通信系统的新建、\n改建或扩建工程的设计。",
+      "type": "语义分解",
+      "subject": "为规范油气输送管道通信系统的设计 , 保证设计质量 , 做 到安全适用 ",
+      "action": "",
+      "operation": "为规范油气输送管道通信系统的设计 , 保证设计质量 , 做 到安全适用 、 因地制宜 、 技术先进、经济合理 , 特制定本规范。 1.0.2 本规范适用于国内陆上油气输送管道通信系统的新建、 改建或扩建工程的设计。",
+      "condition": "",
+      "constraint": "1.0.1    为规范油气输送管道通信系统的设计 ,  保证设计质量 ,  做\n到安全适用 、   因地制宜 、  技术先进、经济合理 ,  特制定本规范。\n1.0.2    本规范适用于国内陆上油气输送管道通信系统的新建、\n改建或扩建工程的设计。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为规范油气输送管道通信系统的设计 , 保证设计质量 , 做 到安全适用 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11643,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

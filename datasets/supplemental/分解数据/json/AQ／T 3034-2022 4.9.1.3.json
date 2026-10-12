@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.1.3",
+  "entities": [
+    {
+      "name": "规程内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.1.3 操作规程内容应至少包括:开车,正常操作 临时操作异常处置_正常停车和紧急停车的操作 步骤与安全要求;工艺参数的正常控制范围及报警 ,联锁值设置,偏脔正常 况的后果及预防措施和步 骤;操作过程的人身安全保障,职业健康注意事项等。企业应根据操作规程中确定的重要控制指标编制 工艺卡片。",
+      "type": "语义分解",
+      "subject": "规程内容",
+      "action": "",
+      "operation": "含开停临时正常异常紧急步骤参数范围报警联锁偏离后果防护健康重要指标工艺卡",
+      "condition": "",
+      "constraint": "4.9.1.3 操作规程内容应至少包括:开车,正常操作 临时操作异常处置_正常停车和紧急停车的操作 步骤与安全要求;工艺参数的正常控制范围及报警 ,联锁值设置,偏脔正常 况的后果及预防措施和步 骤;操作过程的人身安全保障,职业健康注意事项等。企业应根据操作规程中确定的重要控制指标编制 工艺卡片。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "规程内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5151,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

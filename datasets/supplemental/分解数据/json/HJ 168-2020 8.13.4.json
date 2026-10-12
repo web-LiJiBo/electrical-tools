@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.13.4",
+  "entities": [
+    {
+      "name": "高低浓度样操作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.13.4 如样品浓度〈含量) 较高或较低,在稀释或富集条件试验的基础上,提出样品稀释或富集的操作步骤及要求。样品富集时,必要时应给出富集装置的容量。或给出防止目标物穿透的方法。",
+      "type": "语义分解",
+      "subject": "高低浓度样操作",
+      "action": "",
+      "operation": "基于条件试验规定稀释富集步骤要求容量防穿透",
+      "condition": "",
+      "constraint": "8.13.4 如样品浓度〈含量) 较高或较低,在稀释或富集条件试验的基础上,提出样品稀释或富集的操作步骤及要求。样品富集时,必要时应给出富集装置的容量。或给出防止目标物穿透的方法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高低浓度样操作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2403,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

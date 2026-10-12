@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.16.1.4",
+  "entities": [
+    {
+      "name": "应急联动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.16.1.4 企业应与当地应急体系形成联动机制 企业的预案应与地方政府.相关联单位的预案相互 衔接 ,并向当地政府备案 企业应建立发生事故时逋知周边企业_单位 .社区的倩息通道。",
+      "type": "语义分解",
+      "subject": "应急联动",
+      "action": "",
+      "operation": "与地方相关单位预案衔接备案建立周边通知通道",
+      "condition": "",
+      "constraint": "4.16.1.4 企业应与当地应急体系形成联动机制 企业的预案应与地方政府.相关联单位的预案相互 衔接 ,并向当地政府备案 企业应建立发生事故时逋知周边企业_单位 .社区的倩息通道。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急联动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5289,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

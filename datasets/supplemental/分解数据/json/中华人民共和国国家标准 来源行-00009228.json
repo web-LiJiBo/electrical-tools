@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009228",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.4  中心波长分配\t3.7.1  由于本规定是基于掺铒光纤放大器( EDFA)  技术的高速\n率波分复用系统，EDFA  的增益区为1530nm～1625nm 。  基于光\n监控通路宜位于EDFA  有效增益带宽外并满足上述 OSC 功能要\n求，选用1510nm/1625nm   作为光监控通路波长是比较合理的。\n3.7.2  如果通路波长使用1310nm, 则可以选用其他可利用的波",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "3.4  中心波长分配\t3.7.1  由于本规定是基于掺铒光纤放大器( EDFA)  技术的高速\n率波分复用系统，EDFA  的增益区为1530nm～1625nm 。  基于光\n监控通路宜位于EDFA  有效增益带宽外并满足上述 OSC 功能要\n求，选用1510nm/1625nm   作为光监控通路波长是比较合理的。\n3.7.2  如果通路波长使用1310nm, 则可以选用其他可利用的波",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9228,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

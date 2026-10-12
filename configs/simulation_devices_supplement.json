@@ -1,0 +1,1033 @@
+{
+  "schema_version": "1.1",
+  "simulation_only": true,
+  "devices": [
+    {
+      "device_id": "SIM-IEC-BESS-01",
+      "display_name": "模拟储能变流器（仅放电） · IEC61850",
+      "device_type": "battery_pcs",
+      "scenario": "renewable_grid_integration",
+      "protocol": "IEC61850",
+      "configuration_scope": "软件测试预设；非标准定值、非现场点位；未绑定条款，不接入真实通信。储能功率仅表示非负放电设定，不支持充电。",
+      "initial_state": {
+        "running": false,
+        "alarm_active": false,
+        "active_power_kw": 0,
+        "power_limit_kw": 250
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "start": {
+          "function": "battery_pcs_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "bms_permission",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "soc_percent",
+              "operator": ">=",
+              "value": 20,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_value": true,
+          "state_key": "running",
+          "mapping": {
+            "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "battery_pcs_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_value": false,
+          "state_key": "running",
+          "mapping": {
+            "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        },
+        "alarm": {
+          "function": "battery_pcs_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "state_value": true,
+          "state_key": "alarm_active",
+          "mapping": {
+            "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO2"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "alarm_active",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "adjust_active_power": {
+          "function": "battery_pcs_adjust_active_power",
+          "condition": "control_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "bms_permission",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "soc_percent",
+              "operator": ">=",
+              "value": 20,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "power_kw",
+          "unit": "kW",
+          "minimum": 0,
+          "maximum": 250,
+          "state_key": "active_power_kw",
+          "mapping": {
+            "object_reference": "SIM_BESS/CTRL/GGIO1.AnOut1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "active_power_kw",
+            "parameter": "power_kw",
+            "value": null
+          }
+        },
+        "limit_power": {
+          "function": "battery_pcs_limit_power",
+          "condition": "control_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "bms_permission",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "soc_percent",
+              "operator": ">=",
+              "value": 20,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "power_limit_kw",
+          "unit": "kW",
+          "minimum": 0,
+          "maximum": 250,
+          "state_key": "power_limit_kw",
+          "mapping": {
+            "object_reference": "SIM_BESS/CTRL/GGIO1.AnOut2"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "power_limit_kw",
+            "parameter": "power_limit_kw",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-IEC-CAPACITOR-01",
+      "display_name": "模拟电容器组 · IEC61850",
+      "device_type": "capacitor_bank",
+      "scenario": "substation_maintenance",
+      "protocol": "IEC61850",
+      "configuration_scope": "软件测试预设；非标准定值、非现场点位；未绑定条款，不接入真实通信。储能功率仅表示非负放电设定，不支持充电。",
+      "initial_state": {
+        "running": false,
+        "alarm_active": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "start": {
+          "function": "capacitor_bank_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "voltage_in_range",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "discharge_complete",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "switching_interval_elapsed",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_value": true,
+          "state_key": "running",
+          "mapping": {
+            "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "capacitor_bank_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_value": false,
+          "state_key": "running",
+          "mapping": {
+            "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        },
+        "alarm": {
+          "function": "capacitor_bank_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "state_value": true,
+          "state_key": "alarm_active",
+          "mapping": {
+            "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO2"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "alarm_active",
+            "parameter": null,
+            "value": true
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-IEC-VENT-01",
+      "display_name": "模拟站房通风机 · IEC61850",
+      "device_type": "ventilation_fan",
+      "scenario": "substation_maintenance",
+      "protocol": "IEC61850",
+      "configuration_scope": "软件测试预设；非标准定值、非现场点位；未绑定条款，不接入真实通信。储能功率仅表示非负放电设定，不支持充电。",
+      "initial_state": {
+        "running": false,
+        "alarm_active": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "start": {
+          "function": "ventilation_fan_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_value": true,
+          "state_key": "running",
+          "mapping": {
+            "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "ventilation_fan_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "ventilation_stop_permitted",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_value": false,
+          "state_key": "running",
+          "mapping": {
+            "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        },
+        "alarm": {
+          "function": "ventilation_fan_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "state_value": true,
+          "state_key": "alarm_active",
+          "mapping": {
+            "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO2"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "alarm_active",
+            "parameter": null,
+            "value": true
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-BESS-01",
+      "display_name": "模拟储能变流器（仅放电） · Modbus",
+      "device_type": "battery_pcs",
+      "scenario": "renewable_grid_integration",
+      "protocol": "Modbus",
+      "configuration_scope": "软件测试预设；非标准定值、非现场点位；未绑定条款，不接入真实通信。储能功率仅表示非负放电设定，不支持充电。",
+      "initial_state": {
+        "running": false,
+        "alarm_active": false,
+        "active_power_kw": 0,
+        "power_limit_kw": 250
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 10,
+        "address": 400,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "start": {
+          "function": "battery_pcs_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "bms_permission",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "soc_percent",
+              "operator": ">=",
+              "value": 20,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_value": true,
+          "state_key": "running",
+          "mapping": {
+            "address": 400,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "battery_pcs_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_value": false,
+          "state_key": "running",
+          "mapping": {
+            "address": 400,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        },
+        "alarm": {
+          "function": "battery_pcs_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "state_value": true,
+          "state_key": "alarm_active",
+          "mapping": {
+            "address": 401,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "alarm_active",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "adjust_active_power": {
+          "function": "battery_pcs_adjust_active_power",
+          "condition": "control_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "bms_permission",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "soc_percent",
+              "operator": ">=",
+              "value": 20,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "power_kw",
+          "unit": "kW",
+          "minimum": 0,
+          "maximum": 250,
+          "state_key": "active_power_kw",
+          "mapping": {
+            "address": 410,
+            "function_code": 6,
+            "data_type": "uint16",
+            "scale": 10
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "active_power_kw",
+            "parameter": "power_kw",
+            "value": null
+          }
+        },
+        "limit_power": {
+          "function": "battery_pcs_limit_power",
+          "condition": "control_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "bms_permission",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "soc_percent",
+              "operator": ">=",
+              "value": 20,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "power_limit_kw",
+          "unit": "kW",
+          "minimum": 0,
+          "maximum": 250,
+          "state_key": "power_limit_kw",
+          "mapping": {
+            "address": 411,
+            "function_code": 6,
+            "data_type": "uint16",
+            "scale": 10
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "power_limit_kw",
+            "parameter": "power_limit_kw",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-CAPACITOR-01",
+      "display_name": "模拟电容器组 · Modbus",
+      "device_type": "capacitor_bank",
+      "scenario": "substation_maintenance",
+      "protocol": "Modbus",
+      "configuration_scope": "软件测试预设；非标准定值、非现场点位；未绑定条款，不接入真实通信。储能功率仅表示非负放电设定，不支持充电。",
+      "initial_state": {
+        "running": false,
+        "alarm_active": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 11,
+        "address": 420,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "start": {
+          "function": "capacitor_bank_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "voltage_in_range",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "discharge_complete",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "switching_interval_elapsed",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_value": true,
+          "state_key": "running",
+          "mapping": {
+            "address": 420,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "capacitor_bank_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_value": false,
+          "state_key": "running",
+          "mapping": {
+            "address": 420,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        },
+        "alarm": {
+          "function": "capacitor_bank_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "state_value": true,
+          "state_key": "alarm_active",
+          "mapping": {
+            "address": 421,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "alarm_active",
+            "parameter": null,
+            "value": true
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-VENT-01",
+      "display_name": "模拟站房通风机 · Modbus",
+      "device_type": "ventilation_fan",
+      "scenario": "substation_maintenance",
+      "protocol": "Modbus",
+      "configuration_scope": "软件测试预设；非标准定值、非现场点位；未绑定条款，不接入真实通信。储能功率仅表示非负放电设定，不支持充电。",
+      "initial_state": {
+        "running": false,
+        "alarm_active": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 12,
+        "address": 440,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "start": {
+          "function": "ventilation_fan_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_value": true,
+          "state_key": "running",
+          "mapping": {
+            "address": 440,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "ventilation_fan_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "ventilation_stop_permitted",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_value": false,
+          "state_key": "running",
+          "mapping": {
+            "address": 440,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        },
+        "alarm": {
+          "function": "ventilation_fan_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "state_value": true,
+          "state_key": "alarm_active",
+          "mapping": {
+            "address": 441,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "expected_feedback": {
+            "state_key": "alarm_active",
+            "parameter": null,
+            "value": true
+          }
+        }
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.2.5.1",
+  "entities": [
+    {
+      "name": "二氮杂菲标准系列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.5.1 吸取100 mL水样于250 mL分液漏斗中。另取250 mL分液漏斗8只，各加入50 mL纯水，再分别加入十二烷基苯磺酸钠(DBS)标准使用溶液[ρ(DBS)=10 μg/mL]0 mL、0.25 mL、0.50 mL、1.00 mL、2.00 mL、3.00 mL、4.00 mL和5.00 mL，加纯水至100 mL，质量浓度分别为:0 mg/L、0.025 mg/L、0.050 mg/L、0.100 mg/L、0.200 mg/L、0.300 mg/L、0.400 mg/L、0.500 mg/L。",
+      "type": "语义分解",
+      "subject": "二氮杂菲标准系列",
+      "action": "",
+      "operation": "一百毫升样及八管标准定容制备零至0.5毫克每升",
+      "condition": "",
+      "constraint": "13.2.5.1 吸取100 mL水样于250 mL分液漏斗中。另取250 mL分液漏斗8只，各加入50 mL纯水，再分别加入十二烷基苯磺酸钠(DBS)标准使用溶液[ρ(DBS)=10 μg/mL]0 mL、0.25 mL、0.50 mL、1.00 mL、2.00 mL、3.00 mL、4.00 mL和5.00 mL，加纯水至100 mL，质量浓度分别为:0 mg/L、0.025 mg/L、0.050 mg/L、0.100 mg/L、0.200 mg/L、0.300 mg/L、0.400 mg/L、0.500 mg/L。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二氮杂菲标准系列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1564,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

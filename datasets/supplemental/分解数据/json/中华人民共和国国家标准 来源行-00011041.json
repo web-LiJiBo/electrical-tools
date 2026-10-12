@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011041",
+  "entities": [
+    {
+      "name": "——F 表示传送ITU-T G.709建议规范的 FEC 字节",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——F  表示传送ITU-T    G.709建议规范的 FEC 字节；\n——D 表示本应用代码具有可适应色散补偿能力；\n—  E 表示本应用代码要求接收机具备色散补偿的能力\n    (注：可以是电色散补偿);",
+      "type": "语义分解",
+      "subject": "——F 表示传送ITU-T G.709建议规范的 FEC 字节",
+      "action": "",
+      "operation": "——F 表示传送ITU-T G.709建议规范的 FEC 字节； ——D 表示本应用代码具有可适应色散补偿能力； — E 表示本应用代码要求接收机具备色散补偿的能力 (注：可以是电色散补偿)",
+      "condition": "",
+      "constraint": "——F  表示传送ITU-T    G.709建议规范的 FEC 字节；\n——D 表示本应用代码具有可适应色散补偿能力；\n—  E 表示本应用代码要求接收机具备色散补偿的能力\n    (注：可以是电色散补偿);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——F 表示传送ITU-T G.709建议规范的 FEC 字节"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11041,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

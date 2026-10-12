@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016071",
+  "entities": [
+    {
+      "name": "a) 按图37所示连接好测试配置，选择NE1 和NE2 之间的接口为OT",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     a) 按图37所示连接好测试配置，选择NE1 和NE2 之间的接口为OTUk(k=1,2),   设 置OTN分析\n仪工作模式为透传可介入模式。",
+      "type": "语义分解",
+      "subject": "a) 按图37所示连接好测试配置，选择NE1 和NE2 之间的接口为OT",
+      "action": "",
+      "operation": "a) 按图37所示连接好测试配置，选择NE1 和NE2 之间的接口为OTUk(k=1,2), 设 置OTN分析 仪工作模式为透传可介入模式。",
+      "condition": "",
+      "constraint": "     a) 按图37所示连接好测试配置，选择NE1 和NE2 之间的接口为OTUk(k=1,2),   设 置OTN分析\n仪工作模式为透传可介入模式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 按图37所示连接好测试配置，选择NE1 和NE2 之间的接口为OT"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16071,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

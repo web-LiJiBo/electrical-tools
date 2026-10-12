@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.1.6",
+  "entities": [
+    {
+      "name": "标准不确定度分量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.6 每个输人量的估计值 工;及其相关的标准不确定度 u。(-; )是由输人量X;的可能值的分布获得 的。这个概率分布可能是根据 X;的一系列观测值~.k得到的频率分布 ,或者也可能是一种先验分布。 标准不确定度分量的 A类评定根据的是频率分布 ,而 B类评定根据的是先验分布 无论上述哪一种情 祝 ,分布都只是代表人们对它的认识程度的模型。",
+      "type": "语义分解",
+      "subject": "标准不确定度分量",
+      "action": "",
+      "operation": "按频率或先验分布评定",
+      "condition": "",
+      "constraint": "A类评定根据的是频率分布",
+      "constraint_role": "informational",
+      "related_entities": [
+        "标准不确定度分量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量符号识别错误，B类评定基于先验分布"
+      ]
+    }
+  }
+}

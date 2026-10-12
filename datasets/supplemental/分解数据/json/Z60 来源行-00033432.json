@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033432",
+  "entities": [
+    {
+      "name": "对开式循环冷却水系统，每6个月对流经换热器进口和出口的循环冷却水中的总有",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对开式循环冷却水系统，每6个月对流经换热器进口和出口的循环冷却水中的总有机碳(TOC)  浓\n度进行检测，若出口浓度大于进口浓度10%,则认定发生了泄漏，应按照8.4条、8.5条规定进行泄漏\n源修复与记录。",
+      "type": "语义分解",
+      "subject": "对开式循环冷却水系统，每6个月对流经换热器进口和出口的循环冷却水中的总有",
+      "action": "",
+      "operation": "对开式循环冷却水系统，每6个月对流经换热器进口和出口的循环冷却水中的总有机碳(TOC) 浓 度进行检测，若出口浓度大于进口浓度10%,则认定发生了泄漏，应按照8.4条、8.5条规定进行泄漏 源修复与记录。",
+      "condition": "",
+      "constraint": "   对开式循环冷却水系统，每6个月对流经换热器进口和出口的循环冷却水中的总有机碳(TOC)  浓\n度进行检测，若出口浓度大于进口浓度10%,则认定发生了泄漏，应按照8.4条、8.5条规定进行泄漏\n源修复与记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对开式循环冷却水系统，每6个月对流经换热器进口和出口的循环冷却水中的总有"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33432,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022746",
+  "entities": [
+    {
+      "name": "机房采用两个接地排时，第一个接地排宜与第一级防雷 器、配电箱、光缆金属加",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.4       机房采用两个接地排时，第一个接地排宜与第一级防雷\n器、配电箱、光缆金属加强芯和金属外护层连接，第二个接地排宜\n与设备地、直流电源地、机壳、走线架等连接。第一个接地排应直\n接与地网连通，所有接地线应短、直。",
+      "type": "语义分解",
+      "subject": "机房采用两个接地排时，第一个接地排宜与第一级防雷 器、配电箱、光缆金属加",
+      "action": "",
+      "operation": "机房采用两个接地排时，第一个接地排宜与第一级防雷 器、配电箱、光缆金属加强芯和金属外护层连接，第二个接地排宜 与设备地、直流电源地、机壳、走线架等连接。第一个接地排应直 接与地网连通，所有接地线应短、直。",
+      "condition": "",
+      "constraint": "6.7.4       机房采用两个接地排时，第一个接地排宜与第一级防雷\n器、配电箱、光缆金属加强芯和金属外护层连接，第二个接地排宜\n与设备地、直流电源地、机壳、走线架等连接。第一个接地排应直\n接与地网连通，所有接地线应短、直。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房采用两个接地排时，第一个接地排宜与第一级防雷 器、配电箱、光缆金属加"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22746,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

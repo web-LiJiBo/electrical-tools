@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00027136",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测试过程\t①主叫发起呼叫，交换局向SDB发送IAM消息；\n②SDB进行主叫号码查询，主叫号码是物理号码，则需要将主叫物\n理号码变换成主叫逻辑号码，向交换局回ACM消息，ACM消息里带\n主叫逻辑号码，交换局收到该改发号码后，进行主叫号码替换；\n③SDB进行被叫号码查询，将被叫逻辑号码变换成被叫物理号码，\n向交换局回REL消息，REL消息中带改发标识及被叫物理号码，交换\n局收到REL消息后，变换被叫号码，重新按照正常的路由进行选路\n出 局 ；\n④交换局收到SDB发送的REL消息，向SDB发送RLC消息；\n⑤发交换局根据被叫物理号码向落地局发送IAM消息，其中主叫\n号码是逻辑号码，被叫号码是物理号码；\n⑥落地局向发交换局回ACM消息",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "测试过程\t①主叫发起呼叫，交换局向SDB发送IAM消息；\n②SDB进行主叫号码查询，主叫号码是物理号码，则需要将主叫物\n理号码变换成主叫逻辑号码，向交换局回ACM消息，ACM消息里带\n主叫逻辑号码，交换局收到该改发号码后，进行主叫号码替换；\n③SDB进行被叫号码查询，将被叫逻辑号码变换成被叫物理号码，\n向交换局回REL消息，REL消息中带改发标识及被叫物理号码，交换\n局收到REL消息后，变换被叫号码，重新按照正常的路由进行选路\n出 局 ；\n④交换局收到SDB发送的REL消息，向SDB发送RLC消息；\n⑤发交换局根据被叫物理号码向落地局发送IAM消息，其中主叫\n号码是逻辑号码，被叫号码是物理号码；\n⑥落地局向发交换局回ACM消息",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27136,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.1.4.4",
+  "entities": [
+    {
+      "name": "爆破器材使用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4.4 取得有效的《民用爆破器材使用许可证》,方准施工,应按规定程序和安全要求进行雷管测试,炸药包制作下井 激发及善后处理等工作,并符合国家现行标准关于地震勘探民用爆破器材安全管理的要求。",
+      "type": "语义分解",
+      "subject": "爆破器材使用",
+      "action": "",
+      "operation": "取得有效许可依安全程序及引用标准施工处理",
+      "condition": "",
+      "constraint": "5.1.4.4 取得有效的《民用爆破器材使用许可证》,方准施工,应按规定程序和安全要求进行雷管测试,炸药包制作下井 激发及善后处理等工作,并符合国家现行标准关于地震勘探民用爆破器材安全管理的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆破器材使用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4272,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；非实际爆破操作授权"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "4.2.5",
+  "entities": [
+    {
+      "name": "火灾场所灭火器选型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5 区类火灾场所应选择磷酸铵盐干粉灭火器 ,碳酸氢钠干粉灭火器 卤代烷灭火器或二氧化碳灭火器 ,但不得选用装有金属喇叭喷筒的二氧化碳灭火器。",
+      "type": "语义分解",
+      "subject": "火灾场所灭火器选型",
+      "action": "",
+      "operation": "按原文选型并排除金属喇叭二氧化碳型",
+      "condition": "",
+      "constraint": "4.2.5 区类火灾场所应选择磷酸铵盐干粉灭火器 ,碳酸氢钠干粉灭火器 卤代烷灭火器或二氧化碳灭火器 ,但不得选用装有金属喇叭喷筒的二氧化碳灭火器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "火灾场所灭火器选型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4055,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；区类标号损坏不得补成E类"
+      ]
+    }
+  }
+}

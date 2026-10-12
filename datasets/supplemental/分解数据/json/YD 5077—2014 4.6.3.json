@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.6.3",
+  "entities": [
+    {
+      "name": "关于信令协议的测试，如 SIP 测试、SIP-I 测试、H.248 测 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.3  关于信令协议的测试，如 SIP 测试、SIP-I  测试、H.248   测\n试、SCTP 测试、M3UA 测试/M2UA 测试、ISUP 测试等，应参照工\n业和信息化部相关协议的规范以及协议的测试规范进行；具体测\n试项目和内容应根据工程的组网等实际情况进行适当选择。\n4.6.4 第 2 款 level4 指 No. 7 信令系统功能结构中的应用层用户\n功能。",
+      "type": "语义分解",
+      "subject": "关于信令协议的测试，如 SIP 测试、SIP-I 测试、H.248 测 ",
+      "action": "",
+      "operation": "关于信令协议的测试，如 SIP 测试、SIP-I 测试、H.248 测 试、SCTP 测试、M3UA 测试/M2UA 测试、ISUP 测试等，应参照工 业和信息化部相关协议的规范以及协议的测试规范进行；具体测 试项目和内容应根据工程的组网等实际情况进行适当选择。 4.6.4 第 2 款 level4 指 No. 7 信令系统功能结构中的应用层用户 功能。",
+      "condition": "",
+      "constraint": "4.6.3  关于信令协议的测试，如 SIP 测试、SIP-I  测试、H.248   测\n试、SCTP 测试、M3UA 测试/M2UA 测试、ISUP 测试等，应参照工\n业和信息化部相关协议的规范以及协议的测试规范进行；具体测\n试项目和内容应根据工程的组网等实际情况进行适当选择。\n4.6.4 第 2 款 level4 指 No. 7 信令系统功能结构中的应用层用户\n功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "关于信令协议的测试，如 SIP 测试、SIP-I 测试、H.248 测 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27228,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

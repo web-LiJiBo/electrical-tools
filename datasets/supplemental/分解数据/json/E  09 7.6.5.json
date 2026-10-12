@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "7.6.5",
+  "entities": [
+    {
+      "name": "带火清障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6.5   开展带火井口清障，暴露井口，可采用先易后难、由远及近的方法开展清障。同时对清障作业\n人员进行保护。",
+      "type": "语义分解",
+      "subject": "带火清障",
+      "action": "",
+      "operation": "先易后难远至近保护人员",
+      "condition": "",
+      "constraint": "7.6.5   开展带火井口清障，暴露井口，可采用先易后难、由远及近的方法开展清障。同时对清障作业\n人员进行保护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "带火清障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29011,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；高危专业操作"
+      ]
+    }
+  }
+}

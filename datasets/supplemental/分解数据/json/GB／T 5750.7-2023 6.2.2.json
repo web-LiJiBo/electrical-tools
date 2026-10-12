@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "石油紫外测定原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 原理 石油组成中所含的具有共轭体系的物质在紫外区有特征吸收。 具苯环的芳烃化合物主要吸收波长位于250 nm~ 260 nm;具共轭双键的化合物主要吸收波长位于215 nm~ 230 nm;一般原油的两个吸收峰位于 225 nm 和 256 nm ;其他油品如燃料油润滑油的吸收峰与原油相近 ,部分油品仅一个吸收峰。经精炼的一些油品如汽油则无吸收 = 因此在测量中应注意选择合适的标准 ,原油和重质油可选 256 nm;轻质油可选 225 nm , 有条件时可从污染的水体中萃取或从污染源中取得测定的标准物 =",
+      "type": "语义分解",
+      "subject": "石油紫外测定原理",
+      "action": "",
+      "operation": "按油品共轭吸收选合适标准和波长可取污染源标准",
+      "condition": "",
+      "constraint": "6.2.2 原理 石油组成中所含的具有共轭体系的物质在紫外区有特征吸收。 具苯环的芳烃化合物主要吸收波长位于250 nm~ 260 nm;具共轭双键的化合物主要吸收波长位于215 nm~ 230 nm;一般原油的两个吸收峰位于 225 nm 和 256 nm ;其他油品如燃料油润滑油的吸收峰与原油相近 ,部分油品仅一个吸收峰。经精炼的一些油品如汽油则无吸收 = 因此在测量中应注意选择合适的标准 ,原油和重质油可选 256 nm;轻质油可选 225 nm , 有条件时可从污染的水体中萃取或从污染源中取得测定的标准物 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油紫外测定原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1807,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

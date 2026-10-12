@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023629",
+  "entities": [
+    {
+      "name": "b) 对未通过认证的用户终端发起的呼叫请求予以丢弃",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    对未通过认证的用户终端发起的呼叫请求予以丢弃 ;\nc)    支持对动态 IP地址配置的用户终端的认证与授权 ;\nd)    应支持本地认证功能 。",
+      "type": "语义分解",
+      "subject": "b) 对未通过认证的用户终端发起的呼叫请求予以丢弃",
+      "action": "",
+      "operation": "b) 对未通过认证的用户终端发起的呼叫请求予以丢弃 ; c) 支持对动态 IP地址配置的用户终端的认证与授权 ; d) 应支持本地认证功能 。",
+      "condition": "",
+      "constraint": "b)    对未通过认证的用户终端发起的呼叫请求予以丢弃 ;\nc)    支持对动态 IP地址配置的用户终端的认证与授权 ;\nd)    应支持本地认证功能 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 对未通过认证的用户终端发起的呼叫请求予以丢弃"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23629,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "许可核查要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 核查要求",
+      "type": "语义分解",
+      "subject": "许可核查要求",
+      "action": "",
+      "operation": "规定要求章节",
+      "condition": "",
+      "constraint": "4.2 核查要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可核查要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1967,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题"
+      ]
+    }
+  }
+}

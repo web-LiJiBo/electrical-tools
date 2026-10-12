@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 15",
+  "version": "",
+  "chapter_path": "来源行-00017113",
+  "entities": [
+    {
+      "name": "——承载业务速率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——承载业务速率：支持2.5Gbit/s ( 可选)、10Gbit/s 、40Gbit/s和100Gbit/s ( 可选);\n\n——业务方向：支持单向、双向、多播和环回。\ne)  OCh和ODUk的保护管理",
+      "type": "语义分解",
+      "subject": "——承载业务速率",
+      "action": "",
+      "operation": "——承载业务速率：支持2.5Gbit/s ( 可选)、10Gbit/s 、40Gbit/s和100Gbit/s ( 可选); ——业务方向：支持单向、双向、多播和环回。 e) OCh和ODUk的保护管理",
+      "condition": "",
+      "constraint": "——承载业务速率：支持2.5Gbit/s ( 可选)、10Gbit/s 、40Gbit/s和100Gbit/s ( 可选);\n\n——业务方向：支持单向、双向、多播和环回。\ne)  OCh和ODUk的保护管理",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——承载业务速率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17113,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

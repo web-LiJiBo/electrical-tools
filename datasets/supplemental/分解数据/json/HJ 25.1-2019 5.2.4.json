@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.2.4",
+  "entities": [
+    {
+      "name": "地块踏勘重点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4 现场踏勘的重点 重点踏勘对象一般应包括:  有毒有害物质的使用。处理。储存 处置;  生产过程和设备,储槽与管线;  恶臭。化学品味道和刺激性气味,污染和腐蚀的痕迹;  排水管或渠污水池或其他地表水体。废物堆放地。井等 同时应该观察和记录地块及周围是否有可能受污染物影响的居民区,学校。医院。饮用水水源保护区以及其他公共场所等,并在报告中明确其与地块的位置关系。",
+      "type": "语义分解",
+      "subject": "地块踏勘重点",
+      "action": "",
+      "operation": "危险物过程设备气味腐蚀排污废物井及周边敏感场所位置",
+      "condition": "",
+      "constraint": "5.2.4 现场踏勘的重点 重点踏勘对象一般应包括:  有毒有害物质的使用。处理。储存 处置;  生产过程和设备,储槽与管线;  恶臭。化学品味道和刺激性气味,污染和腐蚀的痕迹;  排水管或渠污水池或其他地表水体。废物堆放地。井等 同时应该观察和记录地块及周围是否有可能受污染物影响的居民区,学校。医院。饮用水水源保护区以及其他公共场所等,并在报告中明确其与地块的位置关系。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地块踏勘重点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2622,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

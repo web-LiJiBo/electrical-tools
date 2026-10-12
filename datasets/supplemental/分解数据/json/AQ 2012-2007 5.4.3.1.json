@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.3.1",
+  "entities": [
+    {
+      "name": "测井放射源运输",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.3.1 放射源的领取和运输应符合下列要求: 测井队应配备押源工; 押源工负责放射源的领取,押运,使用,现场保管及交还; 押源工将放射源装入运源车,检查无误后锁闭车门; 运源车应采用适当专用车; 运源车应按指定路线行驶,不应搭乘无关人员;不应在人口稠密区和危险区段停留。中途停车,住宿时应有专人监护。",
+      "type": "语义分解",
+      "subject": "测井放射源运输",
+      "action": "",
+      "operation": "配押源工负责领运用管还专用车锁闭指定路线无关人员禁乘停留限制专人监护",
+      "condition": "",
+      "constraint": "5.4.3.1 放射源的领取和运输应符合下列要求: 测井队应配备押源工; 押源工负责放射源的领取,押运,使用,现场保管及交还; 押源工将放射源装入运源车,检查无误后锁闭车门; 运源车应采用适当专用车; 运源车应按指定路线行驶,不应搭乘无关人员;不应在人口稠密区和危险区段停留。中途停车,住宿时应有专人监护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测井放射源运输"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4408,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

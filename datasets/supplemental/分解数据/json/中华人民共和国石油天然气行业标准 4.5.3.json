@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.5.3",
+  "entities": [
+    {
+      "name": "数据传输链路",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.3    数据传输链路的误码率不应大于 1 x 10-6。\n4.5.4    天线选型及安装应符合下列规定 :",
+      "type": "语义分解",
+      "subject": "数据传输链路",
+      "action": "",
+      "operation": "误码率不大于1乘10的负6次方",
+      "condition": "",
+      "constraint": "4.5.3    数据传输链路的误码率不应大于 1 x 10-6。\n4.5.4    天线选型及安装应符合下列规定 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据传输链路"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11801,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含4.5.4天线引导句无清单"
+      ]
+    }
+  }
+}

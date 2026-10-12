@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027431",
+  "entities": [
+    {
+      "name": "生产经营单位应对生产设施相关方进行调查，陆上生产经营单位应与周边厂矿、居",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.3.1      生产经营单位应对生产设施相关方进行调查，陆上生产经营单位应与周边厂矿、居民等建立\n\n联系；海上生产经营单位应与渔业、海事、环保等部门建立联系。",
+      "type": "语义分解",
+      "subject": "生产经营单位应对生产设施相关方进行调查，陆上生产经营单位应与周边厂矿、居",
+      "action": "",
+      "operation": "生产经营单位应对生产设施相关方进行调查，陆上生产经营单位应与周边厂矿、居民等建立 联系；海上生产经营单位应与渔业、海事、环保等部门建立联系。",
+      "condition": "",
+      "constraint": "5.5.3.1      生产经营单位应对生产设施相关方进行调查，陆上生产经营单位应与周边厂矿、居民等建立\n\n联系；海上生产经营单位应与渔业、海事、环保等部门建立联系。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产经营单位应对生产设施相关方进行调查，陆上生产经营单位应与周边厂矿、居"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27431,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

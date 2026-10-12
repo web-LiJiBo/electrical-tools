@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "11.1.3",
+  "entities": [
+    {
+      "name": "应急培训演练",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.3 应急培训和演练 企业应定期组织覆盖一线从业人员的应急预案、应急知识、自救互救和避险逃生技能等培训，确保从业人员了解应急预案内容，熟悉应急处置流程，掌握自救技能，提升安全避险及现场应急能力。企业应定期组织开展综合应急预案、专项应急预案、现场处置方案演练，并对演练情况进行评估。企业宜采取不预先通知的方式开展应急演练。",
+      "type": "语义分解",
+      "subject": "应急培训演练",
+      "action": "",
+      "operation": "覆盖一线预案自救逃生定综合专项现场演练评估宜不预告",
+      "condition": "",
+      "constraint": "11.1.3 应急培训和演练 企业应定期组织覆盖一线从业人员的应急预案、应急知识、自救互救和避险逃生技能等培训，确保从业人员了解应急预案内容，熟悉应急处置流程，掌握自救技能，提升安全避险及现场应急能力。企业应定期组织开展综合应急预案、专项应急预案、现场处置方案演练，并对演练情况进行评估。企业宜采取不预先通知的方式开展应急演练。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急培训演练"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7287,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

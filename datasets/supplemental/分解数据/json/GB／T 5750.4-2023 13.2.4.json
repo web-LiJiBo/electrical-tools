@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.2.4",
+  "entities": [
+    {
+      "name": "二氮杂菲法仪器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.4 仪器设备",
+      "type": "语义分解",
+      "subject": "二氮杂菲法仪器",
+      "action": "",
+      "operation": "规定仪器章节",
+      "condition": "",
+      "constraint": "13.2.4 仪器设备",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二氮杂菲法仪器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1560,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题"
+      ]
+    }
+  }
+}

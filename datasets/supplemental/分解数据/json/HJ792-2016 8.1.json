@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "制药验收报告内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1 验收技术报告主要内容 验收技术报告中除包括方案中6.1~6.7的内容。重点补充监测期间工况分析、监测分析质量控制与质量保证、监测结果分析与评价、验收调查结果分析评价、验收监测结论及建议、验收技术报告附件等内容。",
+      "type": "语义分解",
+      "subject": "制药验收报告内容",
+      "action": "",
+      "operation": "在方案内容上补工况质控结果调查评价结论建议附件",
+      "condition": "",
+      "constraint": "8.1 验收技术报告主要内容 验收技术报告中除包括方案中6.1~6.7的内容。重点补充监测期间工况分析、监测分析质量控制与质量保证、监测结果分析与评价、验收调查结果分析评价、验收监测结论及建议、验收技术报告附件等内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药验收报告内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2798,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

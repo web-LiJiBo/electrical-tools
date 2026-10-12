@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.3.3.10",
+  "entities": [
+    {
+      "name": "挥发酚中间液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.3.10 挥发酚标准中间储备溶液[ρ(C6H5OH)=5 mg/L]:吸取1.0 mL挥发酚标准储备溶液[ρ(C6H5OH)=500 mg/L]于100 mL容量瓶中，用氢氧化钠溶液[c(NaOH)=0.01 mol/L]定容至100 mL。",
+      "type": "语义分解",
+      "subject": "挥发酚中间液",
+      "action": "",
+      "operation": "一毫升储备液用稀碱定容一百毫升",
+      "condition": "",
+      "constraint": "12.3.3.10 挥发酚标准中间储备溶液[ρ(C6H5OH)=5 mg/L]:吸取1.0 mL挥发酚标准储备溶液[ρ(C6H5OH)=500 mg/L]于100 mL容量瓶中，用氢氧化钠溶液[c(NaOH)=0.01 mol/L]定容至100 mL。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发酚中间液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

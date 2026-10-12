@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.2.8",
+  "entities": [
+    {
+      "name": "根据立地条件及土地利用现状，选择合理的生态恢复方式，合理配置适宜的植物种",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.8   根据立地条件及土地利用现状，选择合理的生态恢复方式，合理配置适宜的植物种类，注重物\n种多样性，优先选用稳定性好、抗病虫害能力强的乡土植物，不应种植助燃、入侵物种植物。管道线路\n中心线两侧各5 m地域范围内生态恢复不应选用深根植物。",
+      "type": "语义分解",
+      "subject": "根据立地条件及土地利用现状，选择合理的生态恢复方式，合理配置适宜的植物种",
+      "action": "",
+      "operation": "根据立地条件及土地利用现状，选择合理的生态恢复方式，合理配置适宜的植物种类，注重物 种多样性，优先选用稳定性好、抗病虫害能力强的乡土植物，不应种植助燃、入侵物种植物。管道线路 中心线两侧各5 m地域范围内生态恢复不应选用深根植物。",
+      "condition": "",
+      "constraint": "4.2.8   根据立地条件及土地利用现状，选择合理的生态恢复方式，合理配置适宜的植物种类，注重物\n种多样性，优先选用稳定性好、抗病虫害能力强的乡土植物，不应种植助燃、入侵物种植物。管道线路\n中心线两侧各5 m地域范围内生态恢复不应选用深根植物。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据立地条件及土地利用现状，选择合理的生态恢复方式，合理配置适宜的植物种"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40658,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

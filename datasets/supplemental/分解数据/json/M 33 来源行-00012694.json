@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012694",
+  "entities": [
+    {
+      "name": "对于高比特率的应用，ESR指标的重要性趋于减小，因而对工作在160 Mb",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "对于高比特率的应用，ESR指标的重要性趋于减小，因而对工作在160 Mbit/s以上比特率的通道不作规范。然而，要认\n识到即使在Gbit/s速率工作的同步数字通道，在长时间间隔观测的性能应是无误码的和显著的ESR能指出劣化的传输系统。\n因而，出于维护的考虑，任何工作在这些速率的误码性能测量设备内都应实现ES监视。\nb BBER指标相当于8.3×10-10的等效误码率，比VC-4速率的5.3×10-9的比特误码比有所改善。作为与速率无关的误码性\n能指示等效误码率是有价值的，因为当块的尺寸变大时BBER的指标不可能保持不变。\nSEPI指标有待研究",
+      "type": "语义分解",
+      "subject": "对于高比特率的应用，ESR指标的重要性趋于减小，因而对工作在160 Mb",
+      "action": "",
+      "operation": "对于高比特率的应用，ESR指标的重要性趋于减小，因而对工作在160 Mbit/s以上比特率的通道不作规范。然而，要认 识到即使在Gbit/s速率工作的同步数字通道，在长时间间隔观测的性能应是无误码的和显著的ESR能指出劣化的传输系统。 因而，出于维护的考虑，任何工作在这些速率的误码性能测量设备内都应实现ES监视。 b BBER指标相当于8.3×10-10的等效误码率，比VC-4速率的5.3×10-9的比特误码比有所改善。作为与速率无关的误码性 能指示等效误码率是有价值的，因为",
+      "condition": "",
+      "constraint": "对于高比特率的应用，ESR指标的重要性趋于减小，因而对工作在160 Mbit/s以上比特率的通道不作规范。然而，要认\n识到即使在Gbit/s速率工作的同步数字通道，在长时间间隔观测的性能应是无误码的和显著的ESR能指出劣化的传输系统。\n因而，出于维护的考虑，任何工作在这些速率的误码性能测量设备内都应实现ES监视。\nb BBER指标相当于8.3×10-10的等效误码率，比VC-4速率的5.3×10-9的比特误码比有所改善。作为与速率无关的误码性\n能指示等效误码率是有价值的，因为当块的尺寸变大时BBER的指标不可能保持不变。\nSEPI指标有待研究",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于高比特率的应用，ESR指标的重要性趋于减小，因而对工作在160 Mb"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12694,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "10.1.5",
+  "entities": [
+    {
+      "name": "软交换视频量化质量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.5      软交换网内视频业务的服务质量量化指标主要为分辨率\n和帧频，应满足如下指标，另外视频业务的时延应小于400 ms, 抖\n动应小于80 ms。",
+      "type": "语义分解",
+      "subject": "软交换视频量化质量",
+      "action": "",
+      "operation": "时延小于400毫秒抖动小于80毫秒",
+      "condition": "",
+      "constraint": "10.1.5      软交换网内视频业务的服务质量量化指标主要为分辨率\n和帧频，应满足如下指标，另外视频业务的时延应小于400 ms, 抖\n动应小于80 ms。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "软交换视频量化质量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26092,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；分辨率帧频清单缺失"
+      ]
+    }
+  }
+}

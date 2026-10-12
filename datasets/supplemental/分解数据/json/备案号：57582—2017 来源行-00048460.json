@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048460",
+  "entities": [
+    {
+      "name": ")在管线探管时，应连续、密集地探点，重点探出管 线的拐点，探管同时采集坐",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)在管线探管时，应连续、密集地探点，重点探出管\n  线的拐点，探管同时采集坐标，获取管道路由。\n2)将管道路由与内检测数据比对。比对时应先比对阀\n\n  门和三通，再用热煨弯头、磁力盒等明显特征进行\n  分段，分段之后进行其他特征点比对。",
+      "type": "语义分解",
+      "subject": ")在管线探管时，应连续、密集地探点，重点探出管 线的拐点，探管同时采集坐",
+      "action": "",
+      "operation": ")在管线探管时，应连续、密集地探点，重点探出管 线的拐点，探管同时采集坐标，获取管道路由。 2)将管道路由与内检测数据比对。比对时应先比对阀 门和三通，再用热煨弯头、磁力盒等明显特征进行 分段，分段之后进行其他特征点比对。",
+      "condition": "",
+      "constraint": "1)在管线探管时，应连续、密集地探点，重点探出管\n  线的拐点，探管同时采集坐标，获取管道路由。\n2)将管道路由与内检测数据比对。比对时应先比对阀\n\n  门和三通，再用热煨弯头、磁力盒等明显特征进行\n  分段，分段之后进行其他特征点比对。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")在管线探管时，应连续、密集地探点，重点探出管 线的拐点，探管同时采集坐"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48460,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

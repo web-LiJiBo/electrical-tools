@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025776",
+  "entities": [
+    {
+      "name": ")省际 TG 宜以省为单位设置，网络建设初期采用省内集中 设置的方式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2)省际 TG 宜以省为单位设置，网络建设初期采用省内集中\n设置的方式。应设置在能提供优质可靠数字传输电路的传输节点\n及 IP 承载网节点上， 一般情况下宜设置在省会城市。随着业务量\n的增长，省际 TG 可逐渐下放至省内中心城市。",
+      "type": "语义分解",
+      "subject": ")省际 TG 宜以省为单位设置，网络建设初期采用省内集中 设置的方式",
+      "action": "",
+      "operation": ")省际 TG 宜以省为单位设置，网络建设初期采用省内集中 设置的方式。应设置在能提供优质可靠数字传输电路的传输节点 及 IP 承载网节点上， 一般情况下宜设置在省会城市。随着业务量 的增长，省际 TG 可逐渐下放至省内中心城市。",
+      "condition": "",
+      "constraint": "   2)省际 TG 宜以省为单位设置，网络建设初期采用省内集中\n设置的方式。应设置在能提供优质可靠数字传输电路的传输节点\n及 IP 承载网节点上， 一般情况下宜设置在省会城市。随着业务量\n的增长，省际 TG 可逐渐下放至省内中心城市。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")省际 TG 宜以省为单位设置，网络建设初期采用省内集中 设置的方式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25776,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

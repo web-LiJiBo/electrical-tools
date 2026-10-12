@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.8.1",
+  "entities": [
+    {
+      "name": "泄漏管理制度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.8.1 企业应制定泄漏管理制度 ;明确泄漏管理工作目标和计划 ,责任落实到人 ,保证资金投人;不 断完善泄漏检测 ,报告 ,处理 ,消除的闭环管理流稷}建}设备泄漏篱理省账。",
+      "type": "语义分解",
+      "subject": "泄漏管理制度",
+      "action": "",
+      "operation": "明确目标计划责任资金检测报告处理消除闭环建立台账",
+      "condition": "",
+      "constraint": "4.10.8.1 企业应制定泄漏管理制度 ;明确泄漏管理工作目标和计划 ,责任落实到人 ,保证资金投人;不 断完善泄漏检测 ,报告 ,处理 ,消除的闭环管理流稷}建}设备泄漏篱理省账。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泄漏管理制度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5201,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；台账语句OCR缺损需复核"
+      ]
+    }
+  }
+}

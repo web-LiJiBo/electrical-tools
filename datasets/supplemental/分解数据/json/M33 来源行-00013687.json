@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013687",
+  "entities": [
+    {
+      "name": "体，宿适配将n 个OTUC 实体合成为一个OTUCn帧",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "体，宿适配将n 个OTUC 实体合成为一个OTUCn帧。一个OTUCn 信号由m 个绑定的光接口承载，每\n个光接口再分离成k 个通道，每个通道对应一个OTSi 。FlexO接口规范见ITU-T G.709.1。",
+      "type": "语义分解",
+      "subject": "体，宿适配将n 个OTUC 实体合成为一个OTUCn帧",
+      "action": "",
+      "operation": "体，宿适配将n 个OTUC 实体合成为一个OTUCn帧。一个OTUCn 信号由m 个绑定的光接口承载，每 个光接口再分离成k 个通道，每个通道对应一个OTSi 。FlexO接口规范见ITU-T G.709.1。",
+      "condition": "",
+      "constraint": "体，宿适配将n 个OTUC 实体合成为一个OTUCn帧。一个OTUCn 信号由m 个绑定的光接口承载，每\n个光接口再分离成k 个通道，每个通道对应一个OTSi 。FlexO接口规范见ITU-T G.709.1。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "体，宿适配将n 个OTUC 实体合成为一个OTUCn帧"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13687,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

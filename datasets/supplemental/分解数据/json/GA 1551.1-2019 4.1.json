@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "重点目标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 重点目标 下列目标确定为油气田企业治安反恐防范的重点目标: a ) GB 50183中划分的一,二级油品 ,天然气液化石油气 .天然气凝液站场; b) 油气生产调度中心; 储油(气)库; 4) 民用爆炸物品储存库; 放射源存放场所; f) 危险化学品库; 8) 发电厂; h  总变电站; i) 供热站; j) 重点单井 ,井组; k) 其他经评估应列为重点目标的场所和设施。",
+      "type": "语义分解",
+      "subject": "重点目标",
+      "action": "",
+      "operation": "按站场调度库爆炸放射危化发变电供热重点井等及评估识别",
+      "condition": "",
+      "constraint": "4.1 重点目标 下列目标确定为油气田企业治安反恐防范的重点目标: a ) GB 50183中划分的一,二级油品 ,天然气液化石油气 .天然气凝液站场; b) 油气生产调度中心; 储油(气)库; 4) 民用爆炸物品储存库; 放射源存放场所; f) 危险化学品库; 8) 发电厂; h  总变电站; i) 供热站; j) 重点单井 ,井组; k) 其他经评估应列为重点目标的场所和设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重点目标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5500,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；分类清单"
+      ]
+    }
+  }
+}

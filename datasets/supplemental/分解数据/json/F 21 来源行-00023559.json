@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023559",
+  "entities": [
+    {
+      "name": "RADIUS",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "RADIUS:远程认证拨号用户服务(Remote Authentication DialIn User Service)\nRTCP:实时传输控制协议(RTP ControlProtocol)\nRTP:实时传输协议(Real-time TransportProtocol)\nSBC:会话边缘控制器(Session Border Controller)",
+      "type": "语义分解",
+      "subject": "RADIUS",
+      "action": "",
+      "operation": "RADIUS:远程认证拨号用户服务(Remote Authentication DialIn User Service) RTCP:实时传输控制协议(RTP ControlProtocol) RTP:实时传输协议(Real-time TransportProtocol) SBC:会话边缘控制器(Session Border Controller)",
+      "condition": "",
+      "constraint": "RADIUS:远程认证拨号用户服务(Remote Authentication DialIn User Service)\nRTCP:实时传输控制协议(RTP ControlProtocol)\nRTP:实时传输协议(Real-time TransportProtocol)\nSBC:会话边缘控制器(Session Border Controller)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "RADIUS"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23559,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

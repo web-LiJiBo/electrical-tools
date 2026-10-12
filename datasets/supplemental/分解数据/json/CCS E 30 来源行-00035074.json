@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035074",
+  "entities": [
+    {
+      "name": "mstd — 苯甲酸标准样品或 2,2,4-三甲基戊烷标准样品的质量 ,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "mstd — 苯甲酸标准样品或 2,2,4-三甲基戊烷标准样品的质量 ,单位为克(g) ;\ne1       — 空气硝酸生成热修正 ,单位为兆焦(MJ) ;\ne2       — 点火线燃烧热修正 ,单位为兆焦(MJ) ;",
+      "type": "语义分解",
+      "subject": "mstd — 苯甲酸标准样品或 2,2,4-三甲基戊烷标准样品的质量 ,",
+      "action": "",
+      "operation": "mstd — 苯甲酸标准样品或 2,2,4-三甲基戊烷标准样品的质量 ,单位为克(g) ; e1 — 空气硝酸生成热修正 ,单位为兆焦(MJ) ; e2 — 点火线燃烧热修正 ,单位为兆焦(MJ)",
+      "condition": "",
+      "constraint": "mstd — 苯甲酸标准样品或 2,2,4-三甲基戊烷标准样品的质量 ,单位为克(g) ;\ne1       — 空气硝酸生成热修正 ,单位为兆焦(MJ) ;\ne2       — 点火线燃烧热修正 ,单位为兆焦(MJ) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "mstd — 苯甲酸标准样品或 2,2,4-三甲基戊烷标准样品的质量 ,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35074,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.6.2",
+  "entities": [
+    {
+      "name": "配电室、电力室、发电机室内部主设备的接地线应采用截 面积不小于16mm²",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.6.2      配电室、电力室、发电机室内部主设备的接地线应采用截\n面积不小于16mm² 的多股铜线。",
+      "type": "语义分解",
+      "subject": "配电室、电力室、发电机室内部主设备的接地线应采用截 面积不小于16mm²",
+      "action": "",
+      "operation": "配电室、电力室、发电机室内部主设备的接地线应采用截 面积不小于16mm² 的多股铜线。",
+      "condition": "",
+      "constraint": "3.6.2      配电室、电力室、发电机室内部主设备的接地线应采用截\n面积不小于16mm² 的多股铜线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "配电室、电力室、发电机室内部主设备的接地线应采用截 面积不小于16mm²"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

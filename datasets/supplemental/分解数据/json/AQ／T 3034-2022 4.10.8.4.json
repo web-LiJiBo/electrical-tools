@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.8.4",
+  "entities": [
+    {
+      "name": "泄漏检测报警",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.8.4 涉及易燃易爆有毒有害介质的装置(设施) ,应在现场安装相关气体探测器 ,重点部位应安装 视频监控设备 ,并定期标定各类泄漏检测报警仪表,确保仪表显示准确 ,有效。",
+      "type": "语义分解",
+      "subject": "泄漏检测报警",
+      "action": "",
+      "operation": "易燃爆毒害安装气体探测重点视频定期标定准确有效",
+      "condition": "",
+      "constraint": "4.10.8.4 涉及易燃易爆有毒有害介质的装置(设施) ,应在现场安装相关气体探测器 ,重点部位应安装 视频监控设备 ,并定期标定各类泄漏检测报警仪表,确保仪表显示准确 ,有效。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泄漏检测报警"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5204,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

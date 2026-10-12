@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "8.2.2.3.4",
+  "entities": [
+    {
+      "name": "采样记录保存",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.3.4          记录样品编号、样品采集时的工况条件、环境温度、大气压力和采集时间等信息。\n8.2.2.3.5          采样结束后气袋样品立即放入保温的容器内保存，直至样品分析前取出。",
+      "type": "语义分解",
+      "subject": "采样记录保存",
+      "action": "",
+      "operation": "记录工况温压时间采后立即保温至分析",
+      "condition": "",
+      "constraint": "8.2.2.3.4          记录样品编号、样品采集时的工况条件、环境温度、大气压力和采集时间等信息。\n8.2.2.3.5          采样结束后气袋样品立即放入保温的容器内保存，直至样品分析前取出。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样记录保存"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36651,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

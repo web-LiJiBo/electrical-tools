@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.2.4.4",
+  "entities": [
+    {
+      "name": "其他可能硫场所作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4.4 在输送管道。污油水处理厂(池。沟)。电缆暗沟。排(供〉水管(暗) 道 隧道等其他可能含有硫化氢的场所,作业前应使用便携式硫化氢检测仪进行检测。",
+      "type": "语义分解",
+      "subject": "其他可能硫场所作业",
+      "action": "",
+      "operation": "作业前便携检测",
+      "condition": "",
+      "constraint": "5.2.4.4 在输送管道。污油水处理厂(池。沟)。电缆暗沟。排(供〉水管(暗) 道 隧道等其他可能含有硫化氢的场所,作业前应使用便携式硫化氢检测仪进行检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他可能硫场所作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7441,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

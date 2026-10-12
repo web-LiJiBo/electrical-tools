@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019411",
+  "entities": [
+    {
+      "name": "一 为预防间断失效(例如 BER 在 SD 阈值上下波动)导致频繁的保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一 为预防间断失效(例如 BER 在 SD 阈值上下波动)导致频繁的保护倒换操作，失效\n   段应该变为无故障(即BER 小于恢复阈值)。失效段符合这条判据后，在重新使用\n   作工作通路之前应持续一个固定的时间周期，该周期称为等待恢复( WTR)  时间，\n   其值应在1min～12min 范围内，并能够设定。SF 或 SD 状态级别应高于WTR。",
+      "type": "语义分解",
+      "subject": "一 为预防间断失效(例如 BER 在 SD 阈值上下波动)导致频繁的保护",
+      "action": "",
+      "operation": "一 为预防间断失效(例如 BER 在 SD 阈值上下波动)导致频繁的保护倒换操作，失效 段应该变为无故障(即BER 小于恢复阈值)。失效段符合这条判据后，在重新使用 作工作通路之前应持续一个固定的时间周期，该周期称为等待恢复( WTR) 时间， 其值应在1min～12min 范围内，并能够设定。SF 或 SD 状态级别应高于WTR。",
+      "condition": "",
+      "constraint": "一 为预防间断失效(例如 BER 在 SD 阈值上下波动)导致频繁的保护倒换操作，失效\n   段应该变为无故障(即BER 小于恢复阈值)。失效段符合这条判据后，在重新使用\n   作工作通路之前应持续一个固定的时间周期，该周期称为等待恢复( WTR)  时间，\n   其值应在1min～12min 范围内，并能够设定。SF 或 SD 状态级别应高于WTR。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一 为预防间断失效(例如 BER 在 SD 阈值上下波动)导致频繁的保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19411,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

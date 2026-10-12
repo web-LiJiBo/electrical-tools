@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.8.2",
+  "entities": [
+    {
+      "name": "楼顶的航空障碍灯、彩灯、无线通信系统铁塔上的航空障 碍灯及其他用电设备的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.2      楼顶的航空障碍灯、彩灯、无线通信系统铁塔上的航空障\n碍灯及其他用电设备的电源线应采用有金属护层的电缆。横向布\n设的电缆金属外护层或金属管应每隔5m～10m  与避雷带或接地\n线就近连通，上、下走向的电缆金属外护层应至少在上、下两端就\n近接地一次。",
+      "type": "语义分解",
+      "subject": "楼顶的航空障碍灯、彩灯、无线通信系统铁塔上的航空障 碍灯及其他用电设备的",
+      "action": "",
+      "operation": "楼顶的航空障碍灯、彩灯、无线通信系统铁塔上的航空障 碍灯及其他用电设备的电源线应采用有金属护层的电缆。横向布 设的电缆金属外护层或金属管应每隔5m～10m 与避雷带或接地 线就近连通，上、下走向的电缆金属外护层应至少在上、下两端就 近接地一次。",
+      "condition": "",
+      "constraint": "4.8.2      楼顶的航空障碍灯、彩灯、无线通信系统铁塔上的航空障\n碍灯及其他用电设备的电源线应采用有金属护层的电缆。横向布\n设的电缆金属外护层或金属管应每隔5m～10m  与避雷带或接地\n线就近连通，上、下走向的电缆金属外护层应至少在上、下两端就\n近接地一次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "楼顶的航空障碍灯、彩灯、无线通信系统铁塔上的航空障 碍灯及其他用电设备的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22610,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

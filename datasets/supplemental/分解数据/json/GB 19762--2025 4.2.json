@@ -1,0 +1,39 @@
+{
+  "standard_name": "离心泵能效限定值及能效等级",
+  "standard_id": "GB 19762--2025",
+  "version": "2025",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "清水离心泵",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 各等级清水离心泵的能效应符合表1的规定。表1中，单级清水离心泵的1级、2级、3级能效分别为TBEPS1、TBEPS2、TBEPS3，多级清水离心泵的1级、2级、3级能效分别为TBEP-M1、TBEP-M2、TBEP-M3。注 1: TBEPSI . TBEPS2 和 TBEP S3 按公式(2)计算；注 2: TBEP-Ml. IBBPM2 和 TBEP-M3 按公式(3)计算。",
+      "type": "语义分解",
+      "subject": "清水离心泵",
+      "action": "",
+      "operation": "按等级表和公式计算能效",
+      "condition": "",
+      "constraint": "应符合表1的规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "清水离心泵"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行缺表1及公式(2)(3)，部分符号识别不一致"
+      ]
+    }
+  }
+}

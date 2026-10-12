@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008445",
+  "entities": [
+    {
+      "name": "本条第8款，工程中多余光纤太长时，考虑到 ODF 架是不同 期工程、不同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   本条第8款，工程中多余光纤太长时，考虑到 ODF 架是不同\n期工程、不同专业共用的地方，平时维护调度经常涉及，宜将多余\n光纤盘绕整齐放置到主设备侧。也可考虑在工程设计阶段定制一\n些盘绕光纤的专用空子架，安装在主设备机架的顶部或底部空闲\n位置，以便放置多余的光纤。",
+      "type": "语义分解",
+      "subject": "本条第8款，工程中多余光纤太长时，考虑到 ODF 架是不同 期工程、不同",
+      "action": "",
+      "operation": "本条第8款，工程中多余光纤太长时，考虑到 ODF 架是不同 期工程、不同专业共用的地方，平时维护调度经常涉及，宜将多余 光纤盘绕整齐放置到主设备侧。也可考虑在工程设计阶段定制一 些盘绕光纤的专用空子架，安装在主设备机架的顶部或底部空闲 位置，以便放置多余的光纤。",
+      "condition": "",
+      "constraint": "   本条第8款，工程中多余光纤太长时，考虑到 ODF 架是不同\n期工程、不同专业共用的地方，平时维护调度经常涉及，宜将多余\n光纤盘绕整齐放置到主设备侧。也可考虑在工程设计阶段定制一\n些盘绕光纤的专用空子架，安装在主设备机架的顶部或底部空闲\n位置，以便放置多余的光纤。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条第8款，工程中多余光纤太长时，考虑到 ODF 架是不同 期工程、不同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8445,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

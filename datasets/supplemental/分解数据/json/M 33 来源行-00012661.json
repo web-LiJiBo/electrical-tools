@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012661",
+  "entities": [
+    {
+      "name": "这些性能指标应适用于包括光纤、数字无线接力、金属电缆及卫星传输系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   这些性能指标应适用于包括光纤、数字无线接力、金属电缆及卫星传输系统。为使在线业务\n(In-Service) 测量方便，参数的定义是以块为基础的，并相应定义了误码性能的事件和参数，确定一次\n\n群和高于一次群速率、以及恒定比特率的国际数字通道端到端的误码性能指标。\n7.1.2.2  事件和参数",
+      "type": "语义分解",
+      "subject": "这些性能指标应适用于包括光纤、数字无线接力、金属电缆及卫星传输系统",
+      "action": "",
+      "operation": "这些性能指标应适用于包括光纤、数字无线接力、金属电缆及卫星传输系统。为使在线业务 (In-Service) 测量方便，参数的定义是以块为基础的，并相应定义了误码性能的事件和参数，确定一次 群和高于一次群速率、以及恒定比特率的国际数字通道端到端的误码性能指标。 7.1.2.2 事件和参数",
+      "condition": "",
+      "constraint": "   这些性能指标应适用于包括光纤、数字无线接力、金属电缆及卫星传输系统。为使在线业务\n(In-Service) 测量方便，参数的定义是以块为基础的，并相应定义了误码性能的事件和参数，确定一次\n\n群和高于一次群速率、以及恒定比特率的国际数字通道端到端的误码性能指标。\n7.1.2.2  事件和参数",
+      "constraint_role": "informational",
+      "related_entities": [
+        "这些性能指标应适用于包括光纤、数字无线接力、金属电缆及卫星传输系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12661,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

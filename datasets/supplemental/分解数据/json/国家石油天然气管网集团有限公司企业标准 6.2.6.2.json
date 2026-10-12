@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.2.6.2",
+  "entities": [
+    {
+      "name": "边坡区域施工宜避开雨期，开挖的土石方应集中堆存，施工后及时进行平整，恢复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.6.2        边坡区域施工宜避开雨期，开挖的土石方应集中堆存，施工后及时进行平整，恢复地貌。\n6.2.6.3        复杂的不同坡度、稳定性及不同岩性的不规则边坡，应分解成若干个独立单元，整体规划、\n分别设计施工。",
+      "type": "语义分解",
+      "subject": "边坡区域施工宜避开雨期，开挖的土石方应集中堆存，施工后及时进行平整，恢复",
+      "action": "",
+      "operation": "边坡区域施工宜避开雨期，开挖的土石方应集中堆存，施工后及时进行平整，恢复地貌。 6.2.6.3 复杂的不同坡度、稳定性及不同岩性的不规则边坡，应分解成若干个独立单元，整体规划、 分别设计施工。",
+      "condition": "",
+      "constraint": "6.2.6.2        边坡区域施工宜避开雨期，开挖的土石方应集中堆存，施工后及时进行平整，恢复地貌。\n6.2.6.3        复杂的不同坡度、稳定性及不同岩性的不规则边坡，应分解成若干个独立单元，整体规划、\n分别设计施工。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "边坡区域施工宜避开雨期，开挖的土石方应集中堆存，施工后及时进行平整，恢复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40728,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

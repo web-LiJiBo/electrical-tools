@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "不合格验收项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3      对验收中发现的质量不合格项目，应由验收组查明原因，\n分清责任，提出处理意见。",
+      "type": "语义分解",
+      "subject": "不合格验收项目",
+      "action": "",
+      "operation": "查因分责提处理意见",
+      "condition": "",
+      "constraint": "6.2.3      对验收中发现的质量不合格项目，应由验收组查明原因，\n分清责任，提出处理意见。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不合格验收项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27113,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

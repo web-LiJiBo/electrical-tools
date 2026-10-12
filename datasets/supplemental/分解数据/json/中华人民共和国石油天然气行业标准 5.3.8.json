@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "5.3.8",
+  "entities": [
+    {
+      "name": "试片断电法中所描述的试片包括临时埋设的阴极保护试 片、长期埋设的阴极保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.8   试片断电法中所描述的试片包括临时埋设的阴极保护试\n片、长期埋设的阴极保护试片、极化探头和电阻(ER)  探头，\n也可称之为极化试片法、极化探头法。",
+      "type": "语义分解",
+      "subject": "试片断电法中所描述的试片包括临时埋设的阴极保护试 片、长期埋设的阴极保护",
+      "action": "",
+      "operation": "试片断电法中所描述的试片包括临时埋设的阴极保护试 片、长期埋设的阴极保护试片、极化探头和电阻(ER) 探头， 也可称之为极化试片法、极化探头法。",
+      "condition": "",
+      "constraint": "5.3.8   试片断电法中所描述的试片包括临时埋设的阴极保护试\n片、长期埋设的阴极保护试片、极化探头和电阻(ER)  探头，\n也可称之为极化试片法、极化探头法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试片断电法中所描述的试片包括临时埋设的阴极保护试 片、长期埋设的阴极保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47823,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

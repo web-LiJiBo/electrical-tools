@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015524",
+  "entities": [
+    {
+      "name": "a) OTN 被测设备接口需要配置为标准OTUk 模式，其中设备FEC ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    a)  OTN 被测设备接口需要配置为标准OTUk 模式，其中设备FEC 设置应与仪表相同。\n    b)  对于与复用结构相关开销的测试，根据OTN 设备支持的复用结构类型选择。\n    c)PSI   中与映射和级联相关其他开销的测试待研究。",
+      "type": "语义分解",
+      "subject": "a) OTN 被测设备接口需要配置为标准OTUk 模式，其中设备FEC ",
+      "action": "",
+      "operation": "a) OTN 被测设备接口需要配置为标准OTUk 模式，其中设备FEC 设置应与仪表相同。 b) 对于与复用结构相关开销的测试，根据OTN 设备支持的复用结构类型选择。 c)PSI 中与映射和级联相关其他开销的测试待研究。",
+      "condition": "",
+      "constraint": "    a)  OTN 被测设备接口需要配置为标准OTUk 模式，其中设备FEC 设置应与仪表相同。\n    b)  对于与复用结构相关开销的测试，根据OTN 设备支持的复用结构类型选择。\n    c)PSI   中与映射和级联相关其他开销的测试待研究。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) OTN 被测设备接口需要配置为标准OTUk 模式，其中设备FEC "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15524,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

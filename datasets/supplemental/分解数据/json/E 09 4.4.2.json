@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E 09",
+  "version": "",
+  "chapter_path": "4.4.2",
+  "entities": [
+    {
+      "name": "住宿餐饮饮水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2   满足与培训规模相适应的住宿、餐饮服务场所。\n4.4.3 生活饮用水应符合GB  5749的要求。",
+      "type": "语义分解",
+      "subject": "住宿餐饮饮水",
+      "action": "",
+      "operation": "匹配规模饮水合GB5749",
+      "condition": "",
+      "constraint": "4.4.2   满足与培训规模相适应的住宿、餐饮服务场所。\n4.4.3 生活饮用水应符合GB  5749的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "住宿餐饮饮水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28679,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

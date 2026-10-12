@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.2.2.9",
+  "entities": [
+    {
+      "name": "酚酞指示剂",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.9 酚酞指示剂[ρ(C20H14O4)=0.5 g/L]:称取50 mg酚酞(C20H14O4)，溶于50 mL乙醇[φ(C2H5OH)=95 %]中，再加入50 mL纯水，滴加0.01 mol/L氢氧化钠溶液至溶液刚呈现微红色。",
+      "type": "语义分解",
+      "subject": "酚酞指示剂",
+      "action": "",
+      "operation": "乙醇溶解加水滴稀碱至微红制备规定浓度",
+      "condition": "",
+      "constraint": "8.2.2.9 酚酞指示剂[ρ(C20H14O4)=0.5 g/L]:称取50 mg酚酞(C20H14O4)，溶于50 mL乙醇[φ(C2H5OH)=95 %]中，再加入50 mL纯水，滴加0.01 mol/L氢氧化钠溶液至溶液刚呈现微红色。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "酚酞指示剂"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1366,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

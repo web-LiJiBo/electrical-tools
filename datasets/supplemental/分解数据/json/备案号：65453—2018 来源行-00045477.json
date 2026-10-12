@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045477",
+  "entities": [
+    {
+      "name": "F.1.2 检测设备主要由发射机、接收器、接地极及附件组成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "F.1.2   检测设备主要由发射机、接收器、接地极及附件组成。\nF.1.3    接收器为手持独立的、具备接收信号灵敏度控制的电池\n驱动单元。接地极宜为检测者的靴子钉鞋、镶嵌靴子，或者是\n改进的铝制滑雪杆。",
+      "type": "语义分解",
+      "subject": "F.1.2 检测设备主要由发射机、接收器、接地极及附件组成",
+      "action": "",
+      "operation": "F.1.2 检测设备主要由发射机、接收器、接地极及附件组成。 F.1.3 接收器为手持独立的、具备接收信号灵敏度控制的电池 驱动单元。接地极宜为检测者的靴子钉鞋、镶嵌靴子，或者是 改进的铝制滑雪杆。",
+      "condition": "",
+      "constraint": "F.1.2   检测设备主要由发射机、接收器、接地极及附件组成。\nF.1.3    接收器为手持独立的、具备接收信号灵敏度控制的电池\n驱动单元。接地极宜为检测者的靴子钉鞋、镶嵌靴子，或者是\n改进的铝制滑雪杆。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "F.1.2 检测设备主要由发射机、接收器、接地极及附件组成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45477,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

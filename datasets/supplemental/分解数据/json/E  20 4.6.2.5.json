@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.6.2.5",
+  "entities": [
+    {
+      "name": "隧道施工爆破作业应符合GB 50424的要求，浅打眼，少装药",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.2.5 隧道施工爆破作业应符合GB  50424的要求，浅打眼，少装药。对完整岩质层宜采用光面爆\n破，对破碎岩层宜采用预裂爆破，减少爆破对围岩和破碎岩石的扰动，保证保留岩体免遭破坏，减少\n超、欠挖和支护工作量，增加岩壁的稳定性。",
+      "type": "语义分解",
+      "subject": "隧道施工爆破作业应符合GB 50424的要求，浅打眼，少装药",
+      "action": "",
+      "operation": "隧道施工爆破作业应符合GB 50424的要求，浅打眼，少装药。对完整岩质层宜采用光面爆 破，对破碎岩层宜采用预裂爆破，减少爆破对围岩和破碎岩石的扰动，保证保留岩体免遭破坏，减少 超、欠挖和支护工作量，增加岩壁的稳定性。",
+      "condition": "",
+      "constraint": "4.6.2.5 隧道施工爆破作业应符合GB  50424的要求，浅打眼，少装药。对完整岩质层宜采用光面爆\n破，对破碎岩层宜采用预裂爆破，减少爆破对围岩和破碎岩石的扰动，保证保留岩体免遭破坏，减少\n超、欠挖和支护工作量，增加岩壁的稳定性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "隧道施工爆破作业应符合GB 50424的要求，浅打眼，少装药"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42006,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

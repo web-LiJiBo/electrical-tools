@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "7.3.2",
+  "entities": [
+    {
+      "name": "各监督区域分中心应当根据已备案的高风险特殊作业 计划或隐患治理计划，制定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     7.3.2  各监督区域分中心应当根据已备案的高风险特殊作业\n\n计划或隐患治理计划，制定专项监督任务安排，采取随机抽查与关\n\n键环节全过程监督相结合的方式，  对高风险特殊作业和隐患治理\n\n项目实施全覆盖监督。",
+      "type": "语义分解",
+      "subject": "各监督区域分中心应当根据已备案的高风险特殊作业 计划或隐患治理计划，制定",
+      "action": "",
+      "operation": "各监督区域分中心应当根据已备案的高风险特殊作业 计划或隐患治理计划，制定专项监督任务安排，采取随机抽查与关 键环节全过程监督相结合的方式， 对高风险特殊作业和隐患治理 项目实施全覆盖监督。",
+      "condition": "",
+      "constraint": "     7.3.2  各监督区域分中心应当根据已备案的高风险特殊作业\n\n计划或隐患治理计划，制定专项监督任务安排，采取随机抽查与关\n\n键环节全过程监督相结合的方式，  对高风险特殊作业和隐患治理\n\n项目实施全覆盖监督。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "各监督区域分中心应当根据已备案的高风险特殊作业 计划或隐患治理计划，制定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29555,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

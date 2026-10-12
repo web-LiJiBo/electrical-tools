@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.3.4",
+  "entities": [
+    {
+      "name": "第8.3节推荐技防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.4 技术防范除符合8.3.3的规定外 ,宜符合以下规定: a ) 宜在阀室安装人侵探测器或摄像机; b) 技术防范系统信息宜就近传至管道系统所属企业的安防监控中心 =",
+      "type": "语义分解",
+      "subject": "第8.3节推荐技防",
+      "action": "",
+      "operation": "阀室宜入侵或摄像信息宜近传所属安防中心",
+      "condition": "",
+      "constraint": "8.3.4 技术防范除符合8.3.3的规定外 ,宜符合以下规定: a ) 宜在阀室安装人侵探测器或摄像机; b) 技术防范系统信息宜就近传至管道系统所属企业的安防监控中心 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第8.3节推荐技防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5484,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

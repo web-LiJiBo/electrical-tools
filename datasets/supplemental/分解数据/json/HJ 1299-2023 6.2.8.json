@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.8",
+  "entities": [
+    {
+      "name": "许可排放量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.8 废气(废水) 许可排放量 依据排污许可证申请与核发技术规范要求进行判定。应根据排污许可证申请与核发技术规范中规定 的许可排放量核算方法和依法分解落实到排污单位的重点污染物控制指标,从严确定许可排放量。2015 年1月1日(含)后取得环境影响文件批复的排污单位。许可排放量还应同时满足环境影响报告书(表) 及其批复文件要求。地方生态环境主管部门有更严格要求的。从其规定。",
+      "type": "语义分解",
+      "subject": "许可排放量",
+      "action": "",
+      "operation": "依核算方法控制指标从严确定适用时同时满足环评及更严地方要求",
+      "condition": "",
+      "constraint": "6.2.8 废气(废水) 许可排放量 依据排污许可证申请与核发技术规范要求进行判定。应根据排污许可证申请与核发技术规范中规定 的许可排放量核算方法和依法分解落实到排污单位的重点污染物控制指标,从严确定许可排放量。2015 年1月1日(含)后取得环境影响文件批复的排污单位。许可排放量还应同时满足环境影响报告书(表) 及其批复文件要求。地方生态环境主管部门有更严格要求的。从其规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可排放量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2001,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

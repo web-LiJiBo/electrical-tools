@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.2.2.6",
+  "entities": [
+    {
+      "name": "溴百里酚蓝指示剂",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.6 溴百里酚蓝指示剂[ρ(C27H28Br2O5S)=0.4 g/L]:称取100 mg溴百里酚蓝(C27H28Br2O5S，又称溴麝香草酚蓝)，置于玛瑙研钵中，加入16.0 mL 0.01 mol/L氢氧化钠溶液，研磨至完全溶解后，用纯水定容至250 mL。此指示剂适用的pH范围为6.2～7.6。",
+      "type": "语义分解",
+      "subject": "溴百里酚蓝指示剂",
+      "action": "",
+      "operation": "按质量碱液量研磨定容适用pH6.2至7.6",
+      "condition": "",
+      "constraint": "8.2.2.6 溴百里酚蓝指示剂[ρ(C27H28Br2O5S)=0.4 g/L]:称取100 mg溴百里酚蓝(C27H28Br2O5S，又称溴麝香草酚蓝)，置于玛瑙研钵中，加入16.0 mL 0.01 mol/L氢氧化钠溶液，研磨至完全溶解后，用纯水定容至250 mL。此指示剂适用的pH范围为6.2～7.6。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "溴百里酚蓝指示剂"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1363,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

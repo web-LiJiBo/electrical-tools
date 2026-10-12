@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.3.3.1",
+  "entities": [
+    {
+      "name": "JSA步骤",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3.1   将作业按先后顺序划分为工作步骤，填写作业前安全分析表，作业前安全分析表见附录A。\n4.3.3.2        工作步骤通常以5~8步为宜，超过8步，则应将该作业分为不同的阶段，并分别做不同阶段\n的安全分析。",
+      "type": "语义分解",
+      "subject": "JSA步骤",
+      "action": "",
+      "operation": "依顺序填表宜5至8超过8分阶段分析",
+      "condition": "",
+      "constraint": "4.3.3.1   将作业按先后顺序划分为工作步骤，填写作业前安全分析表，作业前安全分析表见附录A。\n4.3.3.2        工作步骤通常以5~8步为宜，超过8步，则应将该作业分为不同的阶段，并分别做不同阶段\n的安全分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "JSA步骤"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32133,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022627",
+  "entities": [
+    {
+      "name": "机房可采用星-网混合型等电位连接的方式，程控交换机 宜采用星形接地方式，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    机房可采用星-网混合型等电位连接的方式，程控交换机\n宜采用星形接地方式，其他通信设备宜采用网状接地方式。\n   2  对容量较大、机房长度超过30m 的交换局、数据局，宜在\n机房内设置环形接地汇集线。",
+      "type": "语义分解",
+      "subject": "机房可采用星-网混合型等电位连接的方式，程控交换机 宜采用星形接地方式，",
+      "action": "",
+      "operation": "机房可采用星-网混合型等电位连接的方式，程控交换机 宜采用星形接地方式，其他通信设备宜采用网状接地方式。 2 对容量较大、机房长度超过30m 的交换局、数据局，宜在 机房内设置环形接地汇集线。",
+      "condition": "",
+      "constraint": "       1    机房可采用星-网混合型等电位连接的方式，程控交换机\n宜采用星形接地方式，其他通信设备宜采用网状接地方式。\n   2  对容量较大、机房长度超过30m 的交换局、数据局，宜在\n机房内设置环形接地汇集线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房可采用星-网混合型等电位连接的方式，程控交换机 宜采用星形接地方式，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22627,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

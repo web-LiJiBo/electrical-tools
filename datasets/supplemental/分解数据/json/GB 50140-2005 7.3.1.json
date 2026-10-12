@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "7.3.1",
+  "entities": [
+    {
+      "name": "单元需配灭火级别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1 计算单元的最小需配灭火级别应按下式计算: s Q=K苛 (7.3.1) 式中 Q计算单元的最小需配灭火级别(A 或B); S一计算单元的保护面积(m); UA 类或 B类火灾场所单位灭火级别最大保护面积 (m/ A 或 m /) ; K-修正系数。",
+      "type": "语义分解",
+      "subject": "单元需配灭火级别",
+      "action": "",
+      "operation": "按保护面积单位级别最大保护面积及修正系数计算",
+      "condition": "",
+      "constraint": "7.3.1 计算单元的最小需配灭火级别应按下式计算: s Q=K苛 (7.3.1) 式中 Q计算单元的最小需配灭火级别(A 或B); S一计算单元的保护面积(m); UA 类或 B类火灾场所单位灭火级别最大保护面积 (m/ A 或 m /) ; K-修正系数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "单元需配灭火级别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4078,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式及单位OCR缺损需原件核查不得据此自动计算"
+      ]
+    }
+  }
+}

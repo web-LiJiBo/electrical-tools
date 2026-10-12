@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "废水排放口污染物",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1 排污单位应核算所有废水排放口污染物实际排放量, 实际排放量为正常情况和非正常情况实际排放量之和。",
+      "type": "语义分解",
+      "subject": "废水排放口污染物",
+      "action": "",
+      "operation": "合计正常和非正常情况实际排放量",
+      "condition": "",
+      "constraint": "6.1.1 排污单位应核算所有废水排放口污染物实际排放量, 实际排放量为正常情况和非正常情况实际排放量之和。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水排放口污染物"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 655,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

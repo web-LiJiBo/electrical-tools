@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.10",
+  "entities": [
+    {
+      "name": "许可工业噪声信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.10 工业噪声排放信息 依据 GB 3096, GB 12348。环境影响报告书 (表 及其批复文件。声环境功能区划等相关要求进行 判定。待《排污许可证申请与核发技术规范 工业噪声》发布后, 从其规定。",
+      "type": "语义分解",
+      "subject": "许可工业噪声信息",
+      "action": "",
+      "operation": "按声环境排放标准环评区划及后续适用规范判定",
+      "condition": "",
+      "constraint": "6.2.10 工业噪声排放信息 依据 GB 3096, GB 12348。环境影响报告书 (表 及其批复文件。声环境功能区划等相关要求进行 判定。待《排污许可证申请与核发技术规范 工业噪声》发布后, 从其规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可工业噪声信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2003,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；后续规范适用性需复核不声称现行有效性"
+      ]
+    }
+  }
+}

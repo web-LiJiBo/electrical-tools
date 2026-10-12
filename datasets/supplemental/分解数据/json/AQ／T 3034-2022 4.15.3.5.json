@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.15.3.5",
+  "entities": [
+    {
+      "name": "紧急变更",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.15.3.5 企业应尽可能减少和避免紧急变更 如需紧急娈更 .现场负责人在采取必要的风险控制措 施后 ,经相关负责人审批后实施。 紧急娈更实施盾娈更负责人应及时组织对变更风险的控制措施进行 检查确认。 企业应当做好相关记录.并尽快按临时娈更流程补办娈更手续,一般不应超过 48h。",
+      "type": "语义分解",
+      "subject": "紧急变更",
+      "action": "",
+      "operation": "尽量避免风险措施负责人审批实施后检查记录尽快补手续一般不超48小时",
+      "condition": "",
+      "constraint": "4.15.3.5 企业应尽可能减少和避免紧急变更 如需紧急娈更 .现场负责人在采取必要的风险控制措 施后 ,经相关负责人审批后实施。 紧急娈更实施盾娈更负责人应及时组织对变更风险的控制措施进行 检查确认。 企业应当做好相关记录.并尽快按临时娈更流程补办娈更手续,一般不应超过 48h。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "紧急变更"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5266,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003346",
+  "entities": [
+    {
+      "name": "第二十四条 SIS应定期检验测试,验证全部SIF(包括检测元件,逻辑控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十四条 SIS应定期检验测试,验证全部SIF(包括检测元件,逻辑控制单元,执行元件),检验测试频率的选取应确保要求时PFDavg计算结果满足SIL要求。其中,站场ESD功能实际动作测试原则上每年不少于1次,每个测试周期内,最终元件应至少在一个SIF里以端到端形式测试一次,测试过程和结果应详细记录;确实不具备实际动作测试条件的,应在完成模拟测试的基础上,制定风险降低措施。",
+      "type": "语义分解",
+      "subject": "第二十四条 SIS应定期检验测试,验证全部SIF(包括检测元件,逻辑控制",
+      "action": "",
+      "operation": "第二十四条 SIS应定期检验测试,验证全部SIF(包括检测元件,逻辑控制单元,执行元件),检验测试频率的选取应确保要求时PFDavg计算结果满足SIL要求。其中,站场ESD功能实际动作测试原则上每年不少于1次,每个测试周期内,最终元件应至少在一个SIF里以端到端形式测试一次,测试过程和结果应详细记录;确实不具备实际动作测试条件的,应在完成模拟测试的基础上,制定风险降低措施。",
+      "condition": "",
+      "constraint": "第二十四条 SIS应定期检验测试,验证全部SIF(包括检测元件,逻辑控制单元,执行元件),检验测试频率的选取应确保要求时PFDavg计算结果满足SIL要求。其中,站场ESD功能实际动作测试原则上每年不少于1次,每个测试周期内,最终元件应至少在一个SIF里以端到端形式测试一次,测试过程和结果应详细记录;确实不具备实际动作测试条件的,应在完成模拟测试的基础上,制定风险降低措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十四条 SIS应定期检验测试,验证全部SIF(包括检测元件,逻辑控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3346,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

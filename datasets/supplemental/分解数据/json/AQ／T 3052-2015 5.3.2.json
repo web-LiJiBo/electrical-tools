@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.3.2",
+  "entities": [
+    {
+      "name": "遇险救护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.2 遇险人员救护",
+      "type": "语义分解",
+      "subject": "遇险救护",
+      "action": "",
+      "operation": "规定章节",
+      "condition": "",
+      "constraint": "5.3.2 遇险人员救护",
+      "constraint_role": "informational",
+      "related_entities": [
+        "遇险救护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题"
+      ]
+    }
+  }
+}

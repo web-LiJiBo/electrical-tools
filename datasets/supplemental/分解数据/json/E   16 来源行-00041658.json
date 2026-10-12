@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "来源行-00041658",
+  "entities": [
+    {
+      "name": "单防区防护范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "         单防区防护范围  :  5m  -  200m 范围内可调  ;\n        定位精度 :  ≤ 5m  (分布式) 。",
+      "type": "语义分解",
+      "subject": "单防区防护范围",
+      "action": "",
+      "operation": "单防区防护范围 : 5m - 200m 范围内可调 ; 定位精度 : ≤ 5m (分布式) 。",
+      "condition": "",
+      "constraint": "         单防区防护范围  :  5m  -  200m 范围内可调  ;\n        定位精度 :  ≤ 5m  (分布式) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "单防区防护范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41658,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

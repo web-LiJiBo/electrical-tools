@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "6.3.3.1",
+  "entities": [
+    {
+      "name": "土壤网格划分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3.1 网格划分方法 区域点位布设方法采取网格布点方法,网格布点法适用于监测单元内土壤性质单一和污染分布均匀 或特征不明显的情况。布设点位前,应在监测单元内划分网格,为避免过多破碎网格或网格落在商业服 务业用地。居住用地- 公共管理与公共服务用地 特殊用地。工矿用地。仓储用地。交通运输用地或河 流等区域。可根据实际情况适当调整网格的起始位置。 监测网格间距取决于监测单元面积和拟定点位数量= 网格间距按公式(3)计算: 注: A的单位是L的导出单位, 如L的单位为 km, 则A的单位是 km2。",
+      "type": "语义分解",
+      "subject": "土壤网格划分",
+      "action": "",
+      "operation": "适用于单一均匀区域依面积点数设网格起点避不适区域",
+      "condition": "",
+      "constraint": "6.3.3.1 网格划分方法 区域点位布设方法采取网格布点方法,网格布点法适用于监测单元内土壤性质单一和污染分布均匀 或特征不明显的情况。布设点位前,应在监测单元内划分网格,为避免过多破碎网格或网格落在商业服 务业用地。居住用地- 公共管理与公共服务用地 特殊用地。工矿用地。仓储用地。交通运输用地或河 流等区域。可根据实际情况适当调整网格的起始位置。 监测网格间距取决于监测单元面积和拟定点位数量= 网格间距按公式(3)计算: 注: A的单位是L的导出单位, 如L的单位为 km, 则A的单位是 km2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤网格划分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2208,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；网格间距公式3缺失"
+      ]
+    }
+  }
+}

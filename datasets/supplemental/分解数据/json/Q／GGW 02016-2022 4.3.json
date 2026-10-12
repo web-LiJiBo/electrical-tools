@@ -1,0 +1,37 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "耗能工质",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 耗能工质消耗的能源应纳入综合能耗计算。耗能工质主要包括新水。软化水。压缩空气 氧气和氮气等。",
+      "type": "语义分解",
+      "subject": "耗能工质",
+      "action": "",
+      "operation": "纳入综合能耗计算",
+      "condition": "",
+      "constraint": "应纳入综合能耗计算",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "耗能工质"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

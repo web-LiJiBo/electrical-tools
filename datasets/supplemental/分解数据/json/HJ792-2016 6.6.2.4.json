@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.6.2.4",
+  "entities": [
+    {
+      "name": "集中污水厂接纳项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.2.4 废水排入集中的污水处理厂的建设项目根据实际情况的需要对污水处理厂的进口、出口进行监测并对运行期间进口出口数据进行收集和分析;",
+      "type": "语义分解",
+      "subject": "集中污水厂接纳项目",
+      "action": "",
+      "operation": "按需监测进出并收集运行数据",
+      "condition": "废水排入集中的污水处理厂的建设项目",
+      "constraint": "6.6.2.4 废水排入集中的污水处理厂的建设项目根据实际情况的需要对污水处理厂的进口、出口进行监测并对运行期间进口出口数据进行收集和分析;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集中污水厂接纳项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2760,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

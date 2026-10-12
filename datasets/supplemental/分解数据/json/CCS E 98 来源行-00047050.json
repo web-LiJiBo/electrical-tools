@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00047050",
+  "entities": [
+    {
+      "name": "主要针对罐壁钢板的最低屈服强度大于390MPa, 或厚度大于25mm 的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "主要针对罐壁钢板的最低屈服强度大于390MPa,  或厚度大于25mm 的碳素\n钢及低合金钢罐壁。",
+      "type": "语义分解",
+      "subject": "主要针对罐壁钢板的最低屈服强度大于390MPa, 或厚度大于25mm 的",
+      "action": "",
+      "operation": "主要针对罐壁钢板的最低屈服强度大于390MPa, 或厚度大于25mm 的碳素 钢及低合金钢罐壁。",
+      "condition": "",
+      "constraint": "主要针对罐壁钢板的最低屈服强度大于390MPa,  或厚度大于25mm 的碳素\n钢及低合金钢罐壁。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主要针对罐壁钢板的最低屈服强度大于390MPa, 或厚度大于25mm 的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47050,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

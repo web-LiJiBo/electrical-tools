@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011858",
+  "entities": [
+    {
+      "name": "调度电话交换系统容量应根据工程规模和远期发展规划 确定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.3    调度电话交换系统容量应根据工程规模和远期发展规划\n确定 。每个有人值守工艺站场宜设置2    3 门调度分机。\n5.4.4    电话交换系统与公网中继线数量及与专网内部交换机间\n中继线数量 、  IP 电话及 IP 中继电路的带宽计算方法应满足现行\n国家标准  《用户电话交换系统工程设计规范》  GB/rT  50622 的相\n关规定。",
+      "type": "语义分解",
+      "subject": "调度电话交换系统容量应根据工程规模和远期发展规划 确定",
+      "action": "",
+      "operation": "调度电话交换系统容量应根据工程规模和远期发展规划 确定 。每个有人值守工艺站场宜设置2 3 门调度分机。 5.4.4 电话交换系统与公网中继线数量及与专网内部交换机间 中继线数量 、 IP 电话及 IP 中继电路的带宽计算方法应满足现行 国家标准 《用户电话交换系统工程设计规范》 GB/rT 50622 的相 关规定。",
+      "condition": "",
+      "constraint": "5.4.3    调度电话交换系统容量应根据工程规模和远期发展规划\n确定 。每个有人值守工艺站场宜设置2    3 门调度分机。\n5.4.4    电话交换系统与公网中继线数量及与专网内部交换机间\n中继线数量 、  IP 电话及 IP 中继电路的带宽计算方法应满足现行\n国家标准  《用户电话交换系统工程设计规范》  GB/rT  50622 的相\n关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "调度电话交换系统容量应根据工程规模和远期发展规划 确定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11858,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

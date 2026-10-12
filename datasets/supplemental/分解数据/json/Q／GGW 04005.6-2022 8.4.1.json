@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "8.4.1",
+  "entities": [
+    {
+      "name": "地表水监测项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.1 地表水监测项目应按照 GB 3838 的基本项目。补充项目利特定项目选择。监测项目以C.1规定 的项日为主。不同单位可在此基础匕, 根据实际情况选择其他项日。",
+      "type": "语义分解",
+      "subject": "地表水监测项目",
+      "action": "",
+      "operation": "按基本补充特定及附录项目选择",
+      "condition": "",
+      "constraint": "8.4.1 地表水监测项目应按照 GB 3838 的基本项目。补充项目利特定项目选择。监测项目以C.1规定 的项日为主。不同单位可在此基础匕, 根据实际情况选择其他项日。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地表水监测项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 475,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺C.1内容"
+      ]
+    }
+  }
+}

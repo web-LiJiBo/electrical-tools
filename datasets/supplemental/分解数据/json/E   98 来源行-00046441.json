@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046441",
+  "entities": [
+    {
+      "name": "根据前期对管道腐蚀情况的调查结果，如果预判管道内壁 腐蚀情况较为严重，可",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   根据前期对管道腐蚀情况的调查结果，如果预判管道内壁\n腐蚀情况较为严重，可减小测试截面的间距，进行加密测量。\nE.3.2    截面不均匀布点主要是考虑管道内腐蚀多位于管道下半\n部分，因此对管道的下半部分进行加密测量，以找到腐蚀严重\n部位；如果根据现场腐蚀状况及运行管理人员经验，判断管道\n内腐蚀比较均匀，也可采用均匀布点的方式。",
+      "type": "语义分解",
+      "subject": "根据前期对管道腐蚀情况的调查结果，如果预判管道内壁 腐蚀情况较为严重，可",
+      "action": "",
+      "operation": "根据前期对管道腐蚀情况的调查结果，如果预判管道内壁 腐蚀情况较为严重，可减小测试截面的间距，进行加密测量。 E.3.2 截面不均匀布点主要是考虑管道内腐蚀多位于管道下半 部分，因此对管道的下半部分进行加密测量，以找到腐蚀严重 部位；如果根据现场腐蚀状况及运行管理人员经验，判断管道 内腐蚀比较均匀，也可采用均匀布点的方式。",
+      "condition": "",
+      "constraint": "   根据前期对管道腐蚀情况的调查结果，如果预判管道内壁\n腐蚀情况较为严重，可减小测试截面的间距，进行加密测量。\nE.3.2    截面不均匀布点主要是考虑管道内腐蚀多位于管道下半\n部分，因此对管道的下半部分进行加密测量，以找到腐蚀严重\n部位；如果根据现场腐蚀状况及运行管理人员经验，判断管道\n内腐蚀比较均匀，也可采用均匀布点的方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据前期对管道腐蚀情况的调查结果，如果预判管道内壁 腐蚀情况较为严重，可"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46441,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

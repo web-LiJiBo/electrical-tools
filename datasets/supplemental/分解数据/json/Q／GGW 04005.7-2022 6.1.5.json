@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "6.1.5",
+  "entities": [
+    {
+      "name": "废水系数选择",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5 排污许可证要求采用自动监测的排放口或污染物项目而未采用的以及自动监测设备不符合规定的采用产污系数,未要求采用自动监测的排放口或污染物项目但废水污染治理设施未正常运行的应采用产污系数核算,未要求采用自动监测的排放口或污染物项目且废水污染治理设施正常运行但无有效监测数据的采用排污系数核算。",
+      "type": "语义分解",
+      "subject": "废水系数选择",
+      "action": "",
+      "operation": "按自动要求运行有效性选择产污排污系数",
+      "condition": "",
+      "constraint": "6.1.5 排污许可证要求采用自动监测的排放口或污染物项目而未采用的以及自动监测设备不符合规定的采用产污系数,未要求采用自动监测的排放口或污染物项目但废水污染治理设施未正常运行的应采用产污系数核算,未要求采用自动监测的排放口或污染物项目且废水污染治理设施正常运行但无有效监测数据的采用排污系数核算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水系数选择"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 659,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010155",
+  "entities": [
+    {
+      "name": "具有实时告警监视功能，故障定位到单板(盘)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  1    具有实时告警监视功能，故障定位到单板(盘);\n  2    具有可闻、可视告警提示；\n  3    具有告警收集和显示功能；\n  4    具有告警清除和确认功能；\n  5    具有告警过滤和屏蔽功能；\n  6    具有告警级别设置功能；\n  7    具有告警查询和统计功能；",
+      "type": "语义分解",
+      "subject": "具有实时告警监视功能，故障定位到单板(盘)",
+      "action": "",
+      "operation": "具有实时告警监视功能，故障定位到单板(盘); 2 具有可闻、可视告警提示； 3 具有告警收集和显示功能； 4 具有告警清除和确认功能； 5 具有告警过滤和屏蔽功能； 6 具有告警级别设置功能； 7 具有告警查询和统计功能",
+      "condition": "",
+      "constraint": "  1    具有实时告警监视功能，故障定位到单板(盘);\n  2    具有可闻、可视告警提示；\n  3    具有告警收集和显示功能；\n  4    具有告警清除和确认功能；\n  5    具有告警过滤和屏蔽功能；\n  6    具有告警级别设置功能；\n  7    具有告警查询和统计功能；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "具有实时告警监视功能，故障定位到单板(盘)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10155,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025495",
+  "entities": [
+    {
+      "name": "在试验的标准大气条件下，用冲击波发生器在系统的各导电回路对地之间进行测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      在试验的标准大气条件下，用冲击波发生器在系统的各导电回路对地之间进行测试。  对于额定绝\n缘电压＞60 V 的回路应能承受 1 . 2 μ/50 s、开路试验电压为 5 kV 的标准雷电波的短时冲击电压试验；\n对于额定绝缘电压≤60 V 的回路应能承受 1 . 2 μ/50 s、开路试验电压为 1 kV 的标准雷电波的短时冲击\n电压试验，装置允许闪络，但不应出现绝缘击穿或损坏现象。",
+      "type": "语义分解",
+      "subject": "在试验的标准大气条件下，用冲击波发生器在系统的各导电回路对地之间进行测试",
+      "action": "",
+      "operation": "在试验的标准大气条件下，用冲击波发生器在系统的各导电回路对地之间进行测试。 对于额定绝 缘电压＞60 V 的回路应能承受 1 . 2 μ/50 s、开路试验电压为 5 kV 的标准雷电波的短时冲击电压试验； 对于额定绝缘电压≤60 V 的回路应能承受 1 . 2 μ/50 s、开路试验电压为 1 kV 的标准雷电波的短时冲击 电压试验，装置允许闪络，但不应出现绝缘击穿或损坏现象。",
+      "condition": "",
+      "constraint": "      在试验的标准大气条件下，用冲击波发生器在系统的各导电回路对地之间进行测试。  对于额定绝\n缘电压＞60 V 的回路应能承受 1 . 2 μ/50 s、开路试验电压为 5 kV 的标准雷电波的短时冲击电压试验；\n对于额定绝缘电压≤60 V 的回路应能承受 1 . 2 μ/50 s、开路试验电压为 1 kV 的标准雷电波的短时冲击\n电压试验，装置允许闪络，但不应出现绝缘击穿或损坏现象。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在试验的标准大气条件下，用冲击波发生器在系统的各导电回路对地之间进行测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25495,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.3.5.2",
+  "entities": [
+    {
+      "name": "地下水采样建设记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.2 监测井建设记录和地下水采样记录的要求参照 HJIT 164。样品保存。容器和采样体积的要求参照 HJIT 164 附录 A。",
+      "type": "语义分解",
+      "subject": "地下水采样建设记录",
+      "action": "",
+      "operation": "按引用标准记录保存容器体积",
+      "condition": "",
+      "constraint": "6.3.5.2 监测井建设记录和地下水采样记录的要求参照 HJIT 164。样品保存。容器和采样体积的要求参照 HJIT 164 附录 A。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水采样建设记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2657,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用附录未提供"
+      ]
+    }
+  }
+}

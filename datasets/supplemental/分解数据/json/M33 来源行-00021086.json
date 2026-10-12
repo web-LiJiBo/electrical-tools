@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021086",
+  "entities": [
+    {
+      "name": "一 为预防间歇性故障导致频繁的保护倒换操作，已出现故障的(子)网连接应该",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一 为预防间歇性故障导致频繁的保护倒换操作，已出现故障的(子)网连接应该变为无故障。\n\n   当有故障的(子)网连接满足该判据，应在工作通路重新使用前持续一个固定的时间周期，\n   该周期称为等待恢复时间 ( WTR), 它 在 1min～12min 范围之内，并能设置。SSF 、TSF\n\n   或TSD状态级别应高于WTR。",
+      "type": "语义分解",
+      "subject": "一 为预防间歇性故障导致频繁的保护倒换操作，已出现故障的(子)网连接应该",
+      "action": "",
+      "operation": "一 为预防间歇性故障导致频繁的保护倒换操作，已出现故障的(子)网连接应该变为无故障。 当有故障的(子)网连接满足该判据，应在工作通路重新使用前持续一个固定的时间周期， 该周期称为等待恢复时间 ( WTR), 它 在 1min～12min 范围之内，并能设置。SSF 、TSF 或TSD状态级别应高于WTR。",
+      "condition": "",
+      "constraint": "一 为预防间歇性故障导致频繁的保护倒换操作，已出现故障的(子)网连接应该变为无故障。\n\n   当有故障的(子)网连接满足该判据，应在工作通路重新使用前持续一个固定的时间周期，\n   该周期称为等待恢复时间 ( WTR), 它 在 1min～12min 范围之内，并能设置。SSF 、TSF\n\n   或TSD状态级别应高于WTR。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一 为预防间歇性故障导致频繁的保护倒换操作，已出现故障的(子)网连接应该"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21086,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

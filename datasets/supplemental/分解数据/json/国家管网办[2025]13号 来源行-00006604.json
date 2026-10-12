@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全风险分级管控与隐患排查治理管理规定",
+  "standard_id": "国家管网办[2025]13号",
+  "version": "",
+  "chapter_path": "来源行-00006604",
+  "entities": [
+    {
+      "name": "第三十八条 集团公司控股公司",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第三十八条 集团公司控股公司。实际控制企业应通过法定程序执行本规定,参股公司参照执行;全资子公司。分公司应当按照业务要求并结合实际,在流程中细化完善安全风险隐患管理要求,不再制定本单位安全风险隐患管理制度。",
+      "type": "语义分解",
+      "subject": "第三十八条 集团公司控股公司",
+      "action": "",
+      "operation": "第三十八条 集团公司控股公司。实际控制企业应通过法定程序执行本规定,参股公司参照执行;全资子公司。分公司应当按照业务要求并结合实际,在流程中细化完善安全风险隐患管理要求,不再制定本单位安全风险隐患管理制度。",
+      "condition": "",
+      "constraint": "第三十八条 集团公司控股公司。实际控制企业应通过法定程序执行本规定,参股公司参照执行;全资子公司。分公司应当按照业务要求并结合实际,在流程中细化完善安全风险隐患管理要求,不再制定本单位安全风险隐患管理制度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三十八条 集团公司控股公司"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6604,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "5.3.1",
+  "entities": [
+    {
+      "name": "监察档案动态管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1 根据污染物的产生与排放都是非恒定的特点,对环境监察档案实行动态管理。定期或随时将发生娈化的数据进行补充和调整。",
+      "type": "语义分解",
+      "subject": "监察档案动态管理",
+      "action": "",
+      "operation": "按数据变化及时补充调整",
+      "condition": "",
+      "constraint": "5.3.1 根据污染物的产生与排放都是非恒定的特点,对环境监察档案实行动态管理。定期或随时将发生娈化的数据进行补充和调整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监察档案动态管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

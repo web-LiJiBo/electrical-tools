@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "4.2.2.3",
+  "entities": [
+    {
+      "name": "第二阶段结束判定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.3 根据初步采样分析结果。如果污染物浓度均未超过 GB 36600 等国家和地方相关标准以及清洁对照点浓度 (有土壤环境背景的无机物),并且经过不确定性分析确认不需要进一步调查后,第二阶段土壤污染状况调查工作可以结束;  否则认为可能存在环境风险,须进行详细调查。标准中没有涉及的污染物,可根据专业知识和经验综合判断。详细采样分析是在初步采样分析的基础上,进一步采样和分析,确定土壤污染程度和范围",
+      "type": "语义分解",
+      "subject": "第二阶段结束判定",
+      "action": "",
+      "operation": "浓度不超标准对照且不确定分析无需继续可结束否则详细调查",
+      "condition": "",
+      "constraint": "4.2.2.3 根据初步采样分析结果。如果污染物浓度均未超过 GB 36600 等国家和地方相关标准以及清洁对照点浓度 (有土壤环境背景的无机物),并且经过不确定性分析确认不需要进一步调查后,第二阶段土壤污染状况调查工作可以结束;  否则认为可能存在环境风险,须进行详细调查。标准中没有涉及的污染物,可根据专业知识和经验综合判断。详细采样分析是在初步采样分析的基础上,进一步采样和分析,确定土壤污染程度和范围",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二阶段结束判定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2603,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

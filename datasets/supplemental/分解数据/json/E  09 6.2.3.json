@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "现场指挥",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3   现场指挥部根据情况，组织实施交通管制、监测、侦检、抢救、撤离遇险人员、医疗救护、应\n急保障等方面工作，落实工程抢险、防范次生衍生事故等现场处置措施。\n6.2.4   现场指挥部应及时了解事故现场情况，主要了解以下内容：",
+      "type": "语义分解",
+      "subject": "现场指挥",
+      "action": "",
+      "operation": "交通监测救援撤离救护保障防次生事故",
+      "condition": "",
+      "constraint": "6.2.3   现场指挥部根据情况，组织实施交通管制、监测、侦检、抢救、撤离遇险人员、医疗救护、应\n急保障等方面工作，落实工程抢险、防范次生衍生事故等现场处置措施。\n6.2.4   现场指挥部应及时了解事故现场情况，主要了解以下内容：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场指挥"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28932,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；了解情况清单缺失"
+      ]
+    }
+  }
+}

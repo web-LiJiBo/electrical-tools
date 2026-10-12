@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.3.5.4.1",
+  "entities": [
+    {
+      "name": "异臭强度等级记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.4.1 异臭强度分为7个等级，按表4记录闻测得到的异臭类型和异臭强度等级。(表格删除)",
+      "type": "语义分解",
+      "subject": "异臭强度等级记录",
+      "action": "",
+      "operation": "分等级按表记录类型强度",
+      "condition": "",
+      "constraint": "6.3.5.4.1 异臭强度分为7个等级，按表4记录闻测得到的异臭类型和异臭强度等级。(表格删除)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "异臭强度等级记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1326,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表4删除"
+      ]
+    }
+  }
+}

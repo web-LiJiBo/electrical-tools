@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048755",
+  "entities": [
+    {
+      "name": "d——管道涂层缺陷直径 ( m), 宜 取d=0.0113m",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "         d——管道涂层缺陷直径 ( m), 宜 取d=0.0113m。\n4.2.2 建设期管道交流干扰的缓解目标宜为交流电流密度小于\n100A/m²。",
+      "type": "语义分解",
+      "subject": "d——管道涂层缺陷直径 ( m), 宜 取d=0.0113m",
+      "action": "",
+      "operation": "d——管道涂层缺陷直径 ( m), 宜 取d=0.0113m。 4.2.2 建设期管道交流干扰的缓解目标宜为交流电流密度小于 100A/m²。",
+      "condition": "",
+      "constraint": "         d——管道涂层缺陷直径 ( m), 宜 取d=0.0113m。\n4.2.2 建设期管道交流干扰的缓解目标宜为交流电流密度小于\n100A/m²。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d——管道涂层缺陷直径 ( m), 宜 取d=0.0113m"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48755,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

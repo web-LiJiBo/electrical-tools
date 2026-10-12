@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019772",
+  "entities": [
+    {
+      "name": "VC-3-X 净荷可以用X 个 VC3 通过虚级联承载，所涉及的全体VC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      VC-3-X 净荷可以用X 个 VC3 通过虚级联承载，所涉及的全体VC3 作为一个VC-3-Xv。在 S3-Xv\n适配源功能后，每个 VC-3 单独承载直到全部VC-3 到达S3-Xv 适配宿功能。VC-4-X  净荷可以用X\n个 VC4 通过虚级联或单独的VC-4-Xc(X=4,16,64,256)             承载。在虚级联情况下，所涉及的全体\nVC4作为一个VC-4-Xv。在 S4-Xv 适配源功能后，每个VC-4 单独承载直到全部VC-4 到达S4-Xv 适\n配宿功能。",
+      "type": "语义分解",
+      "subject": "VC-3-X 净荷可以用X 个 VC3 通过虚级联承载，所涉及的全体VC",
+      "action": "",
+      "operation": "VC-3-X 净荷可以用X 个 VC3 通过虚级联承载，所涉及的全体VC3 作为一个VC-3-Xv。在 S3-Xv 适配源功能后，每个 VC-3 单独承载直到全部VC-3 到达S3-Xv 适配宿功能。VC-4-X 净荷可以用X 个 VC4 通过虚级联或单独的VC-4-Xc(X=4,16,64,256) 承载。在虚级联情况下，所涉及的全体 VC4作为一个VC-4-Xv。在 S4-Xv 适配源功能后，每个VC-4 单独承载直到全部VC-4 到达S4-Xv 适 配宿功能。",
+      "condition": "",
+      "constraint": "      VC-3-X 净荷可以用X 个 VC3 通过虚级联承载，所涉及的全体VC3 作为一个VC-3-Xv。在 S3-Xv\n适配源功能后，每个 VC-3 单独承载直到全部VC-3 到达S3-Xv 适配宿功能。VC-4-X  净荷可以用X\n个 VC4 通过虚级联或单独的VC-4-Xc(X=4,16,64,256)             承载。在虚级联情况下，所涉及的全体\nVC4作为一个VC-4-Xv。在 S4-Xv 适配源功能后，每个VC-4 单独承载直到全部VC-4 到达S4-Xv 适\n配宿功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VC-3-X 净荷可以用X 个 VC3 通过虚级联承载，所涉及的全体VC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19772,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

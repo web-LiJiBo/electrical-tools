@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023239",
+  "entities": [
+    {
+      "name": "中讯邮电咨询设计院有限公司在对全国各个运营商通信 局(站)改造时一般都是",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       5    中讯邮电咨询设计院有限公司在对全国各个运营商通信\n局(站)改造时一般都是将原有局(站)内建筑物地网及机房进行连\n接，构成环形地网，接地电阻值没有检测过，也不考虑局方提供的\n接地电阻值(仅仅作为参考),防雷接地改造后的局(站)经过多年\n的统计基本上没有雷击发生设备被击坏的记录。",
+      "type": "语义分解",
+      "subject": "中讯邮电咨询设计院有限公司在对全国各个运营商通信 局(站)改造时一般都是",
+      "action": "",
+      "operation": "中讯邮电咨询设计院有限公司在对全国各个运营商通信 局(站)改造时一般都是将原有局(站)内建筑物地网及机房进行连 接，构成环形地网，接地电阻值没有检测过，也不考虑局方提供的 接地电阻值(仅仅作为参考),防雷接地改造后的局(站)经过多年 的统计基本上没有雷击发生设备被击坏的记录。",
+      "condition": "",
+      "constraint": "       5    中讯邮电咨询设计院有限公司在对全国各个运营商通信\n局(站)改造时一般都是将原有局(站)内建筑物地网及机房进行连\n接，构成环形地网，接地电阻值没有检测过，也不考虑局方提供的\n接地电阻值(仅仅作为参考),防雷接地改造后的局(站)经过多年\n的统计基本上没有雷击发生设备被击坏的记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中讯邮电咨询设计院有限公司在对全国各个运营商通信 局(站)改造时一般都是"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23239,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

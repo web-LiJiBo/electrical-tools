@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009872",
+  "entities": [
+    {
+      "name": "客户侧为SDH 信号的3R OTU 的抖动产生指标应符合现 行行业标准《",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1  客户侧为SDH 信号的3R OTU 的抖动产生指标应符合现\n行行业标准《光波分复用系统(WDM)技术要求——160×10Gb/s、\n80×10Gb/s  部分》YD/T   1274 和《N×40Gbit/s     光波分复用\n(WDM)系统技术要求》YD/T  1991中的有关规定；",
+      "type": "语义分解",
+      "subject": "客户侧为SDH 信号的3R OTU 的抖动产生指标应符合现 行行业标准《",
+      "action": "",
+      "operation": "客户侧为SDH 信号的3R OTU 的抖动产生指标应符合现 行行业标准《光波分复用系统(WDM)技术要求——160×10Gb/s、 80×10Gb/s 部分》YD/T 1274 和《N×40Gbit/s 光波分复用 (WDM)系统技术要求》YD/T 1991中的有关规定",
+      "condition": "",
+      "constraint": "   1  客户侧为SDH 信号的3R OTU 的抖动产生指标应符合现\n行行业标准《光波分复用系统(WDM)技术要求——160×10Gb/s、\n80×10Gb/s  部分》YD/T   1274 和《N×40Gbit/s     光波分复用\n(WDM)系统技术要求》YD/T  1991中的有关规定；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "客户侧为SDH 信号的3R OTU 的抖动产生指标应符合现 行行业标准《"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9872,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

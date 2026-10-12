@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00015024",
+  "entities": [
+    {
+      "name": "CPRI Optionl 到 Option3 的映射方式见 YD/T 1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       CPRI  Optionl 到 Option3 的映射方式见 YD/T 1462-2011 第17.6 节规定的通用映射过程；CPRI\nOption4 到 Option6 的映射方式见 YD/T 1462-2011 第17.8节规定的比特同步映射过程。与 CPRI\nOptionl 到Option3 信号相关的GMP Cm 和 Cn(n=1)值见YD/T1462-2011 附录N 表N.1 和N2。\n    当OTN  网络中产生OTUk 告警时(如：OTUk    AIS,OTUk-LCK,OTUk-OCI), 或收到OPUk CSF\n\n时 ，OTN  设备应向客户端设备发送链路故障信号LF。\n\nB.5.2  CPRI Option 1 业务(614.4 Mbit/s)",
+      "type": "语义分解",
+      "subject": "CPRI Optionl 到 Option3 的映射方式见 YD/T 1",
+      "action": "",
+      "operation": "CPRI Optionl 到 Option3 的映射方式见 YD/T 1462-2011 第17.6 节规定的通用映射过程；CPRI Option4 到 Option6 的映射方式见 YD/T 1462-2011 第17.8节规定的比特同步映射过程。与 CPRI Optionl 到Option3 信号相关的GMP Cm 和 Cn(n=1)值见YD/T1462-2011 附录N 表N.1 和N2。 当OTN 网络中产生OTUk 告警时(如：OTUk AIS,OTUk-LCK,O",
+      "condition": "",
+      "constraint": "       CPRI  Optionl 到 Option3 的映射方式见 YD/T 1462-2011 第17.6 节规定的通用映射过程；CPRI\nOption4 到 Option6 的映射方式见 YD/T 1462-2011 第17.8节规定的比特同步映射过程。与 CPRI\nOptionl 到Option3 信号相关的GMP Cm 和 Cn(n=1)值见YD/T1462-2011 附录N 表N.1 和N2。\n    当OTN  网络中产生OTUk 告警时(如：OTUk    AIS,OTUk-LCK,OTUk-OCI), 或收到OPUk CSF\n\n时 ，OTN  设备应向客户端设备发送链路故障信号LF。\n\nB.5.2  CPRI Option 1 业务(614.4 Mbit/s)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "CPRI Optionl 到 Option3 的映射方式见 YD/T 1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15024,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

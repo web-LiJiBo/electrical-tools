@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012482",
+  "entities": [
+    {
+      "name": "ITU-T G.821 工作在低于一次群速率的比特率并构成综合业务数字网",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       ITU-T  G.821  工作在低于一次群速率的比特率并构成综合业务数字网的一部分的国际数字连接的\n误码性能 ( Error performance of an international digital connection operating at a bit rate below the primary\nrate and forming part of an integrated services digital network)",
+      "type": "语义分解",
+      "subject": "ITU-T G.821 工作在低于一次群速率的比特率并构成综合业务数字网",
+      "action": "",
+      "operation": "ITU-T G.821 工作在低于一次群速率的比特率并构成综合业务数字网的一部分的国际数字连接的 误码性能 ( Error performance of an international digital connection operating at a bit rate below the primary rate and forming part of an integrated services digital network)",
+      "condition": "",
+      "constraint": "       ITU-T  G.821  工作在低于一次群速率的比特率并构成综合业务数字网的一部分的国际数字连接的\n误码性能 ( Error performance of an international digital connection operating at a bit rate below the primary\nrate and forming part of an integrated services digital network)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ITU-T G.821 工作在低于一次群速率的比特率并构成综合业务数字网"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12482,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

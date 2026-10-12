@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "玻璃电极测pH",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1 原理 用本方法测定pH值可准确到0.01。pH值是水中氢离子活度倒数的对数值。水的色度、浑浊度、余氯、氧化剂、还原剂、较高含盐量均不干扰测定，但在较强的碱性溶液中，当有大量钠离子存在时会产生误差，使读数偏低。以玻璃电极为指示电极，饱和甘汞电极为参比电极，插入溶液中组成原电池。当氢离子浓度发生变化时，玻璃电极和甘汞电极之间的电动势也随之变化，在25 ℃时，每单位pH标度相当于59.1 mV电动势变化值，在仪器上直接以pH的读数表示。仪器配有温度差异补偿装置。",
+      "type": "语义分解",
+      "subject": "玻璃电极测pH",
+      "action": "",
+      "operation": "以电极电动势测定并温度补偿注意高碱高钠负偏差",
+      "condition": "",
+      "constraint": "8.1.1 原理 用本方法测定pH值可准确到0.01。pH值是水中氢离子活度倒数的对数值。水的色度、浑浊度、余氯、氧化剂、还原剂、较高含盐量均不干扰测定，但在较强的碱性溶液中，当有大量钠离子存在时会产生误差，使读数偏低。以玻璃电极为指示电极，饱和甘汞电极为参比电极，插入溶液中组成原电池。当氢离子浓度发生变化时，玻璃电极和甘汞电极之间的电动势也随之变化，在25 ℃时，每单位pH标度相当于59.1 mV电动势变化值，在仪器上直接以pH的读数表示。仪器配有温度差异补偿装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "玻璃电极测pH"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1338,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

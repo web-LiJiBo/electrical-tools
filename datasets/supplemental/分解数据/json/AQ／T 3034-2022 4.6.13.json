@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.6.13",
+  "entities": [
+    {
+      "name": "风险管理档案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.13 风险管理报告或档案内容至少应包括风险分析的分析依据 ,分析范围 ,分析时间 ,参加人员 ,分 析方法 ,分析内容 ,分析结论 ,不可接受风险削减措施的落实和跟踪情况等",
+      "type": "语义分解",
+      "subject": "风险管理档案",
+      "action": "",
+      "operation": "记录依据范围时间人员方法内容结论削减落实跟踪",
+      "condition": "",
+      "constraint": "4.6.13 风险管理报告或档案内容至少应包括风险分析的分析依据 ,分析范围 ,分析时间 ,参加人员 ,分 析方法 ,分析内容 ,分析结论 ,不可接受风险削减措施的落实和跟踪情况等",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险管理档案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

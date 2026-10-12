@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.5.3",
+  "entities": [
+    {
+      "name": "周边质量频次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.3 监测频次 若环境影响评价文件及其批复等管理文件有明确要求的，排污单位周边环境质量监测频次按照要求执行。 否则。涉水重点排污单位地表水每年丰。平。枯水期至少各监测一次，涉气重点排污单位空气质量每半年至少监测一次，涉重金属，难降解类有机污染物等重点排污单位土壤 地下水每年至少监测一次。 发生突发环境事故对周边环境质量造成明显影响的，或周边环境质量相关污染物超标的，应适当增加监测频次。",
+      "type": "语义分解",
+      "subject": "周边质量频次",
+      "action": "",
+      "operation": "明确要求优先否则按水气重金属有机源类别定频事故超标增频",
+      "condition": "",
+      "constraint": "5.5.3 监测频次 若环境影响评价文件及其批复等管理文件有明确要求的，排污单位周边环境质量监测频次按照要求执行。 否则。涉水重点排污单位地表水每年丰。平。枯水期至少各监测一次，涉气重点排污单位空气质量每半年至少监测一次，涉重金属，难降解类有机污染物等重点排污单位土壤 地下水每年至少监测一次。 发生突发环境事故对周边环境质量造成明显影响的，或周边环境质量相关污染物超标的，应适当增加监测频次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "周边质量频次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2860,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023209",
+  "entities": [
+    {
+      "name": "年平均雷暴日数无法表达雷电强度的大小，在衡量一个通信 局(站)遭雷击次数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   年平均雷暴日数无法表达雷电强度的大小，在衡量一个通信\n局(站)遭雷击次数的概率分布时，还必须将通信局(站)所处的地\n理环境、通信局(站)建筑物的形式、本地区的雷电活动情况等因素\n进行统筹考虑。",
+      "type": "语义分解",
+      "subject": "年平均雷暴日数无法表达雷电强度的大小，在衡量一个通信 局(站)遭雷击次数",
+      "action": "",
+      "operation": "年平均雷暴日数无法表达雷电强度的大小，在衡量一个通信 局(站)遭雷击次数的概率分布时，还必须将通信局(站)所处的地 理环境、通信局(站)建筑物的形式、本地区的雷电活动情况等因素 进行统筹考虑。",
+      "condition": "",
+      "constraint": "   年平均雷暴日数无法表达雷电强度的大小，在衡量一个通信\n局(站)遭雷击次数的概率分布时，还必须将通信局(站)所处的地\n理环境、通信局(站)建筑物的形式、本地区的雷电活动情况等因素\n进行统筹考虑。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "年平均雷暴日数无法表达雷电强度的大小，在衡量一个通信 局(站)遭雷击次数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23209,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

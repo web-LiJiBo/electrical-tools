@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.6.4",
+  "entities": [
+    {
+      "name": "组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.4 数据的质量保证 计算能源绩效参数和相应的能源基准之前 ,组织应对测量的数值和相关变量进行评审以确定数据的质量是否符合要求。当计量故障,获取数据失败或操作条件不典型可能造成重大异常时需要对数据进行验证。如果存在一些测量异常的数据 ,则应注意不要将这些数据放入能源绩效参数模型中或相关的能源基准中 测量设备数据不准确可能对数据收集的有效性造成不良影响。组织应定期校准测量设备以降低数据不准确的风险 = 在对能源绩效参数数值进行解释和报告时 ,应说明测量的准确度和不确定度。",
+      "type": "语义分解",
+      "subject": "组织",
+      "action": "",
+      "operation": "评审数据质量并验证异常",
+      "condition": "计量故障,获取数据失败或操作条件不典型",
+      "constraint": "需要对数据进行验证",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "组织应定期校准测量设备，但原文未给具体周期"
+      ]
+    }
+  }
+}

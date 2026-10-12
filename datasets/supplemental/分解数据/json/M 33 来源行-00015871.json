@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015871",
+  "entities": [
+    {
+      "name": "a) 对于STM-256或 OTU3 信号，较早生产的仪表可能没有内置满",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      a) 对于STM-256或 OTU3 信号，较早生产的仪表可能没有内置满足ITU-T G.825 或 ITU-T G.8251\n的输入抖动容限模板，需人工编辑符合标准的模板。",
+      "type": "语义分解",
+      "subject": "a) 对于STM-256或 OTU3 信号，较早生产的仪表可能没有内置满",
+      "action": "",
+      "operation": "a) 对于STM-256或 OTU3 信号，较早生产的仪表可能没有内置满足ITU-T G.825 或 ITU-T G.8251 的输入抖动容限模板，需人工编辑符合标准的模板。",
+      "condition": "",
+      "constraint": "      a) 对于STM-256或 OTU3 信号，较早生产的仪表可能没有内置满足ITU-T G.825 或 ITU-T G.8251\n的输入抖动容限模板，需人工编辑符合标准的模板。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 对于STM-256或 OTU3 信号，较早生产的仪表可能没有内置满"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15871,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

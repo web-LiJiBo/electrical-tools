@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042533",
+  "entities": [
+    {
+      "name": ". 1.2.5 可采用具备良好的电位稳定性 、极化小的金属材料或结构 ,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6. 1.2.5   可采用具备良好的电位稳定性 、极化小的金属材料或结构 ,在确认其相对于铜/饱和硫酸铜参\n比电极的电位后 ,代替铜/饱和硫酸铜参比电极 。\n6. 1.2.6   交流干扰下的阴极保护准则",
+      "type": "语义分解",
+      "subject": ". 1.2.5 可采用具备良好的电位稳定性 、极化小的金属材料或结构 ,",
+      "action": "",
+      "operation": ". 1.2.5 可采用具备良好的电位稳定性 、极化小的金属材料或结构 ,在确认其相对于铜/饱和硫酸铜参 比电极的电位后 ,代替铜/饱和硫酸铜参比电极 。 6. 1.2.6 交流干扰下的阴极保护准则",
+      "condition": "",
+      "constraint": "6. 1.2.5   可采用具备良好的电位稳定性 、极化小的金属材料或结构 ,在确认其相对于铜/饱和硫酸铜参\n比电极的电位后 ,代替铜/饱和硫酸铜参比电极 。\n6. 1.2.6   交流干扰下的阴极保护准则",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1.2.5 可采用具备良好的电位稳定性 、极化小的金属材料或结构 ,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42533,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

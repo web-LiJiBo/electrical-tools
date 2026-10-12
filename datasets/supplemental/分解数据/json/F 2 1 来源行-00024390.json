@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024390",
+  "entities": [
+    {
+      "name": "下列缩略语适用于本文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "下列缩略语适用于本文件。\nACK：确认(Acknowledge)",
+      "type": "语义分解",
+      "subject": "下列缩略语适用于本文件",
+      "action": "",
+      "operation": "下列缩略语适用于本文件。 ACK：确认(Acknowledge)",
+      "condition": "",
+      "constraint": "下列缩略语适用于本文件。\nACK：确认(Acknowledge)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "下列缩略语适用于本文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24390,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

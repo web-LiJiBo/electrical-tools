@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027830",
+  "entities": [
+    {
+      "name": "管道储运单位发生事故后，基层单位应在1小时内上报，管道储运单位在接到报告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.3.2  管道储运单位发生事故后，基层单位应在1小时内上报，管道储运单位在接到报告后，2小时\n\n内以书面形式向上级单位和政府主管部门报告，必要时向相关政府部门通报。",
+      "type": "语义分解",
+      "subject": "管道储运单位发生事故后，基层单位应在1小时内上报，管道储运单位在接到报告",
+      "action": "",
+      "operation": "管道储运单位发生事故后，基层单位应在1小时内上报，管道储运单位在接到报告后，2小时 内以书面形式向上级单位和政府主管部门报告，必要时向相关政府部门通报。",
+      "condition": "",
+      "constraint": "5.6.3.2  管道储运单位发生事故后，基层单位应在1小时内上报，管道储运单位在接到报告后，2小时\n\n内以书面形式向上级单位和政府主管部门报告，必要时向相关政府部门通报。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道储运单位发生事故后，基层单位应在1小时内上报，管道储运单位在接到报告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27830,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

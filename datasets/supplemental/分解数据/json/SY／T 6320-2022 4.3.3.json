@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "4.3.3",
+  "entities": [
+    {
+      "name": "高危施工作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3 施工单位应执行施工设计(方案 )或 \"HSE 作业计划书\" 工业动火。高处作业受限空间作 业。挖掘作业。临时用电。盲板抽堵等高风险作业项目应办理作业许可审批。",
+      "type": "语义分解",
+      "subject": "高危施工作业",
+      "action": "",
+      "operation": "按方案HSE执行并办理许可",
+      "condition": "",
+      "constraint": "4.3.3 施工单位应执行施工设计(方案 )或 \"HSE 作业计划书\" 工业动火。高处作业受限空间作 业。挖掘作业。临时用电。盲板抽堵等高风险作业项目应办理作业许可审批。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高危施工作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7515,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

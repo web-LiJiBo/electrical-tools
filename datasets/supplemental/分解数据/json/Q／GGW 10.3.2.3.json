@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "10.3.2.3",
+  "entities": [
+    {
+      "name": "延迟泄漏记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.2.3        对纳入清单的泄漏点持续监测防止泄漏恶化，并记录以下细信息：每个泄漏组件的标识、泄\n漏的位置、组件类型(如开口管线)、测得的泄漏率、发现泄漏日期、预计维修日期、预计年泄漏量、\n预计维修费用、被纳入清单(无法立即进行维修)的原因说明。",
+      "type": "语义分解",
+      "subject": "延迟泄漏记录",
+      "action": "",
+      "operation": "持续监测记录位置类型泄漏率日期年量费用原因",
+      "condition": "",
+      "constraint": "10.3.2.3        对纳入清单的泄漏点持续监测防止泄漏恶化，并记录以下细信息：每个泄漏组件的标识、泄\n漏的位置、组件类型(如开口管线)、测得的泄漏率、发现泄漏日期、预计维修日期、预计年泄漏量、\n预计维修费用、被纳入清单(无法立即进行维修)的原因说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "延迟泄漏记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36707,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00007921",
+  "entities": [
+    {
+      "name": "安装在铜排上的铜鼻子应牢靠端正，采用合适的螺栓连 接，并应安装齐备平垫圈",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      9    安装在铜排上的铜鼻子应牢靠端正，采用合适的螺栓连\n接，并应安装齐备平垫圈和弹簧垫圈；",
+      "type": "语义分解",
+      "subject": "安装在铜排上的铜鼻子应牢靠端正，采用合适的螺栓连 接，并应安装齐备平垫圈",
+      "action": "",
+      "operation": "安装在铜排上的铜鼻子应牢靠端正，采用合适的螺栓连 接，并应安装齐备平垫圈和弹簧垫圈",
+      "condition": "",
+      "constraint": "      9    安装在铜排上的铜鼻子应牢靠端正，采用合适的螺栓连\n接，并应安装齐备平垫圈和弹簧垫圈；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安装在铜排上的铜鼻子应牢靠端正，采用合适的螺栓连 接，并应安装齐备平垫圈"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7921,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

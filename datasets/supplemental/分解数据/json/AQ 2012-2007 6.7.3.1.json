@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.7.3.1",
+  "entities": [
+    {
+      "name": "井架移动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3.1 移井架准备应符合: 清除(拆除)所有妨碍井架移动的障碍(管线),固定钻台及井架上活动物件; 保持液压,液压千斤顶等液压系统处于正常工作状态; 保持轨道润滑良好; 移井架时应有专人指挥。",
+      "type": "语义分解",
+      "subject": "井架移动",
+      "action": "",
+      "operation": "清障固定活动物液压正常轨道润滑专人指挥",
+      "condition": "",
+      "constraint": "6.7.3.1 移井架准备应符合: 清除(拆除)所有妨碍井架移动的障碍(管线),固定钻台及井架上活动物件; 保持液压,液压千斤顶等液压系统处于正常工作状态; 保持轨道润滑良好; 移井架时应有专人指挥。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井架移动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4662,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00034951",
+  "entities": [
+    {
+      "name": "单位质量的试样在恒定压力下完全燃烧 ,其燃烧后的物质组成为气态氧气 、氮",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      单位质量的试样在恒定压力下完全燃烧 ,其燃烧后的物质组成为气态氧气 、氮气 、二氧化碳 、氮氧化\n物 、二氧化硫 、水时所释放出的热量 。\n3.4",
+      "type": "语义分解",
+      "subject": "单位质量的试样在恒定压力下完全燃烧 ,其燃烧后的物质组成为气态氧气 、氮",
+      "action": "",
+      "operation": "单位质量的试样在恒定压力下完全燃烧 ,其燃烧后的物质组成为气态氧气 、氮气 、二氧化碳 、氮氧化 物 、二氧化硫 、水时所释放出的热量 。 3.4",
+      "condition": "",
+      "constraint": "      单位质量的试样在恒定压力下完全燃烧 ,其燃烧后的物质组成为气态氧气 、氮气 、二氧化碳 、氮氧化\n物 、二氧化硫 、水时所释放出的热量 。\n3.4",
+      "constraint_role": "informational",
+      "related_entities": [
+        "单位质量的试样在恒定压力下完全燃烧 ,其燃烧后的物质组成为气态氧气 、氮"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34951,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

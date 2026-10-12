@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021048",
+  "entities": [
+    {
+      "name": "i. 选路",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "i.     选路：该功能通过建立矩阵连接把特定的输入与特定的输出连接起来，应能取消所建\n   立的矩阵连接。Sm_C 功能中的矩阵连接特性见表103。如果提供无保护倒换行为被\n   激活/请求，对连接(的配置)作如下改变应不妨碍通过该连接的CI:\n\n   — 保护的施加和取消；",
+      "type": "语义分解",
+      "subject": "i. 选路",
+      "action": "",
+      "operation": "i. 选路：该功能通过建立矩阵连接把特定的输入与特定的输出连接起来，应能取消所建 立的矩阵连接。Sm_C 功能中的矩阵连接特性见表103。如果提供无保护倒换行为被 激活/请求，对连接(的配置)作如下改变应不妨碍通过该连接的CI: — 保护的施加和取消",
+      "condition": "",
+      "constraint": "i.     选路：该功能通过建立矩阵连接把特定的输入与特定的输出连接起来，应能取消所建\n   立的矩阵连接。Sm_C 功能中的矩阵连接特性见表103。如果提供无保护倒换行为被\n   激活/请求，对连接(的配置)作如下改变应不妨碍通过该连接的CI:\n\n   — 保护的施加和取消；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "i. 选路"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21048,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

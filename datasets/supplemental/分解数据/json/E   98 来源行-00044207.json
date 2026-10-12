@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044207",
+  "entities": [
+    {
+      "name": "孟庆鹏 张 平 刘 军 郭娟丽 王 丽 屠海波白树彬 廖煜焰 邓东花 刘",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "孟庆鹏 张 平 刘  军 郭娟丽\n王 丽 屠海波白树彬 廖煜焰\n邓东花 刘 辉  曹文辉 韩昌柴\n黄留群 王磊磊 刘 勇 吴明畅\n丁 杰 闫明珍 郑安升 付平平",
+      "type": "语义分解",
+      "subject": "孟庆鹏 张 平 刘 军 郭娟丽 王 丽 屠海波白树彬 廖煜焰 邓东花 刘",
+      "action": "",
+      "operation": "孟庆鹏 张 平 刘 军 郭娟丽 王 丽 屠海波白树彬 廖煜焰 邓东花 刘 辉 曹文辉 韩昌柴 黄留群 王磊磊 刘 勇 吴明畅 丁 杰 闫明珍 郑安升 付平平",
+      "condition": "",
+      "constraint": "孟庆鹏 张 平 刘  军 郭娟丽\n王 丽 屠海波白树彬 廖煜焰\n邓东花 刘 辉  曹文辉 韩昌柴\n黄留群 王磊磊 刘 勇 吴明畅\n丁 杰 闫明珍 郑安升 付平平",
+      "constraint_role": "informational",
+      "related_entities": [
+        "孟庆鹏 张 平 刘 军 郭娟丽 王 丽 屠海波白树彬 廖煜焰 邓东花 刘"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44207,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

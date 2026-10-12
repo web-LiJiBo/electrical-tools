@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "7.4.10",
+  "entities": [
+    {
+      "name": "监督区域分中心对检查发现的违章问题， 应当采取纠 正、批评教育、通报等形",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     7.4.10  监督区域分中心对检查发现的违章问题，  应当采取纠\n\n正、批评教育、通报等形式进行处理，或者建议给予责任人以组织\n\n处理或者处分；对发现的安全环保事故隐患，应当采取责令改正、\n\n限期整改、停工等措施进行处理。",
+      "type": "语义分解",
+      "subject": "监督区域分中心对检查发现的违章问题， 应当采取纠 正、批评教育、通报等形",
+      "action": "",
+      "operation": "监督区域分中心对检查发现的违章问题， 应当采取纠 正、批评教育、通报等形式进行处理，或者建议给予责任人以组织 处理或者处分；对发现的安全环保事故隐患，应当采取责令改正、 限期整改、停工等措施进行处理。",
+      "condition": "",
+      "constraint": "     7.4.10  监督区域分中心对检查发现的违章问题，  应当采取纠\n\n正、批评教育、通报等形式进行处理，或者建议给予责任人以组织\n\n处理或者处分；对发现的安全环保事故隐患，应当采取责令改正、\n\n限期整改、停工等措施进行处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监督区域分中心对检查发现的违章问题， 应当采取纠 正、批评教育、通报等形"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29581,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

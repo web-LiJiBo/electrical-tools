@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "4.4.2",
+  "entities": [
+    {
+      "name": "区域国际出入口局址",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2      区域性国际出入口局宜设置在对某些相邻国家(或地区)\n话务量比较大的城市，用于疏通所在区域与这些国家(或地区)间\n的话务。",
+      "type": "语义分解",
+      "subject": "区域国际出入口局址",
+      "action": "",
+      "operation": "宜相邻国家地区话务大城市",
+      "condition": "",
+      "constraint": "4.4.2      区域性国际出入口局宜设置在对某些相邻国家(或地区)\n话务量比较大的城市，用于疏通所在区域与这些国家(或地区)间\n的话务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "区域国际出入口局址"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25817,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

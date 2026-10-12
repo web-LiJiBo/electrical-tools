@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006769",
+  "entities": [
+    {
+      "name": "在邻近排放有毒 有害气体 .粉尘的放空管线或烟囱等场所进行作业时 ,应预",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.5 在邻近排放有毒 有害气体 .粉尘的放空管线或烟囱等场所进行作业时 ,应预先与作业属地生产 人员取得联系 ,并采取有效的安全防护措施 ,作业人员应配备必要的符合国家相关标准的防护装备(如 隔绝式呼吸防护装备 .过滤式防毒面具或口罩等)。",
+      "type": "语义分解",
+      "subject": "在邻近排放有毒 有害气体 .粉尘的放空管线或烟囱等场所进行作业时 ,应预",
+      "action": "",
+      "operation": "在邻近排放有毒 有害气体 .粉尘的放空管线或烟囱等场所进行作业时 ,应预先与作业属地生产 人员取得联系 ,并采取有效的安全防护措施 ,作业人员应配备必要的符合国家相关标准的防护装备(如 隔绝式呼吸防护装备 .过滤式防毒面具或口罩等)。",
+      "condition": "",
+      "constraint": "8.2.5 在邻近排放有毒 有害气体 .粉尘的放空管线或烟囱等场所进行作业时 ,应预先与作业属地生产 人员取得联系 ,并采取有效的安全防护措施 ,作业人员应配备必要的符合国家相关标准的防护装备(如 隔绝式呼吸防护装备 .过滤式防毒面具或口罩等)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在邻近排放有毒 有害气体 .粉尘的放空管线或烟囱等场所进行作业时 ,应预"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6769,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "5.3.4",
+  "entities": [
+    {
+      "name": "试片的测量结果受到试片形状、土壤电阻率、涂层厚度、 安装方式、试片埋设时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.4   试片的测量结果受到试片形状、土壤电阻率、涂层厚度、\n安装方式、试片埋设时间等因素的影响，相关影响规律可参见\nPRCI研究报告：《Guidelines on the selection and application of cathodic\nprotection coupons》Catalog  No.PR469-173604。交流腐蚀试片\n设计和安装时，一般可以考虑如下方面：",
+      "type": "语义分解",
+      "subject": "试片的测量结果受到试片形状、土壤电阻率、涂层厚度、 安装方式、试片埋设时",
+      "action": "",
+      "operation": "试片的测量结果受到试片形状、土壤电阻率、涂层厚度、 安装方式、试片埋设时间等因素的影响，相关影响规律可参见 PRCI研究报告：《Guidelines on the selection and application of cathodic protection coupons》Catalog No.PR469-173604。交流腐蚀试片 设计和安装时，一般可以考虑如下方面",
+      "condition": "",
+      "constraint": "5.3.4   试片的测量结果受到试片形状、土壤电阻率、涂层厚度、\n安装方式、试片埋设时间等因素的影响，相关影响规律可参见\nPRCI研究报告：《Guidelines on the selection and application of cathodic\nprotection coupons》Catalog  No.PR469-173604。交流腐蚀试片\n设计和安装时，一般可以考虑如下方面：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试片的测量结果受到试片形状、土壤电阻率、涂层厚度、 安装方式、试片埋设时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48999,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

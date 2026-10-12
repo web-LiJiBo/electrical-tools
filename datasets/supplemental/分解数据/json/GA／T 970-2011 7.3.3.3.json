@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.3.3.3",
+  "entities": [
+    {
+      "name": "遇湿易燃泄漏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3.3 遇湿易燃泄漏介质的处置 遇湿易燃泄漏介质的处置方法为: a) 小量泄漏。 用无火花工具将泄漏介质收集于千燥 ,洁净 ,有盖的容器中 ,转移回收。 对于化学性质特别活泼的物质须保存在煤油或液体石蜡申; 6) 大量泄漏。不要直接接触泄漏介质 ,禁止向泄漏介质直接喷水。可用塑料布,帆布等进行覆盖。在技术人员和专家措导下清除。",
+      "type": "语义分解",
+      "subject": "遇湿易燃泄漏",
+      "action": "",
+      "operation": "干燥无火花收集活泼物按适配介质保存大量禁直接喷水专家指导清除",
+      "condition": "",
+      "constraint": "7.3.3.3 遇湿易燃泄漏介质的处置 遇湿易燃泄漏介质的处置方法为: a) 小量泄漏。 用无火花工具将泄漏介质收集于千燥 ,洁净 ,有盖的容器中 ,转移回收。 对于化学性质特别活泼的物质须保存在煤油或液体石蜡申; 6) 大量泄漏。不要直接接触泄漏介质 ,禁止向泄漏介质直接喷水。可用塑料布,帆布等进行覆盖。在技术人员和专家措导下清除。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "遇湿易燃泄漏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5922,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

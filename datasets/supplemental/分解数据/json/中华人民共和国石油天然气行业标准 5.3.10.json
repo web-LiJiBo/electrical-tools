@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "5.3.10",
+  "entities": [
+    {
+      "name": "稳态直流干扰测试宜按照本规范附录A 执行，动态直流 干扰测试宜按照本规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.10 稳态直流干扰测试宜按照本规范附录A 执行，动态直流\n干扰测试宜按照本规范附录B 执行，高压直流接地极干扰测试\n宜按照本规范附录C 执行。",
+      "type": "语义分解",
+      "subject": "稳态直流干扰测试宜按照本规范附录A 执行，动态直流 干扰测试宜按照本规范",
+      "action": "",
+      "operation": "稳态直流干扰测试宜按照本规范附录A 执行，动态直流 干扰测试宜按照本规范附录B 执行，高压直流接地极干扰测试 宜按照本规范附录C 执行。",
+      "condition": "",
+      "constraint": "5.3.10 稳态直流干扰测试宜按照本规范附录A 执行，动态直流\n干扰测试宜按照本规范附录B 执行，高压直流接地极干扰测试\n宜按照本规范附录C 执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "稳态直流干扰测试宜按照本规范附录A 执行，动态直流 干扰测试宜按照本规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47509,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

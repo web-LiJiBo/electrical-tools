@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "6.1.2.1",
+  "entities": [
+    {
+      "name": "发酵制药生产记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2.1 生产运行状况记录 按照发酵类制药产品种类, 记录各生产批次以下相关信息: a) 发酵工序: 记录取水量(新鲜水)利主要原辅料使用量等; b) 提取工序: 记录溶剂的使用量和药品粗品的产生量等; c) 精制工序: 记录活性炭。碳纤维滤膜。树脂等过滤物及载体使用量,无机盐 (硫酸钙。碳酸钙。硫酸镁。磷酸二氢钾等)使用量,溶剂(盐酸。乙醇。丙酮。三氯甲烷。二氯甲烷。乙酸丁酯等)使用量等。",
+      "type": "语义分解",
+      "subject": "发酵制药生产记录",
+      "action": "",
+      "operation": "分产品批次记发酵水原辅料提取溶剂粗品精制过滤物盐溶剂",
+      "condition": "",
+      "constraint": "6.1.2.1 生产运行状况记录 按照发酵类制药产品种类, 记录各生产批次以下相关信息: a) 发酵工序: 记录取水量(新鲜水)利主要原辅料使用量等; b) 提取工序: 记录溶剂的使用量和药品粗品的产生量等; c) 精制工序: 记录活性炭。碳纤维滤膜。树脂等过滤物及载体使用量,无机盐 (硫酸钙。碳酸钙。硫酸镁。磷酸二氢钾等)使用量,溶剂(盐酸。乙醇。丙酮。三氯甲烷。二氯甲烷。乙酸丁酯等)使用量等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "发酵制药生产记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2920,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

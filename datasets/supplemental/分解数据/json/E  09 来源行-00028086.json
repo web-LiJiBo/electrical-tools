@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028086",
+  "entities": [
+    {
+      "name": "a) 进行高处作业前，应对安全防护设施进行检查和验收，验收合格后方可进行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)     进行高处作业前，应对安全防护设施进行检查和验收，验收合格后方可进行高处作业。施工",
+      "type": "语义分解",
+      "subject": "a) 进行高处作业前，应对安全防护设施进行检查和验收，验收合格后方可进行",
+      "action": "",
+      "operation": "a) 进行高处作业前，应对安全防护设施进行检查和验收，验收合格后方可进行高处作业。施工",
+      "condition": "",
+      "constraint": "a)     进行高处作业前，应对安全防护设施进行检查和验收，验收合格后方可进行高处作业。施工",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 进行高处作业前，应对安全防护设施进行检查和验收，验收合格后方可进行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28086,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

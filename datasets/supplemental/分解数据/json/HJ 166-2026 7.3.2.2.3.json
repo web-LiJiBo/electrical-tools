@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.3.2.2.3",
+  "entities": [
+    {
+      "name": "土壤分层随机深度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2.2.3 分层随机深度采样 根据土壤的成土因素 土壤粒级。污染程度或地下水埋深等因素将土壤垂直方向分成多层,每层采1个样品,每层的采样深度按公式计算: 式中: hi 采样深度, m; h2 每层土壤总深 m; R 0~1之间的随机数, 按 GB/T 10111 推荐随机数骰子法产生。",
+      "type": "语义分解",
+      "subject": "土壤分层随机深度",
+      "action": "",
+      "operation": "按成土粒级污染水位分层每层随机取一个样",
+      "condition": "",
+      "constraint": "7.3.2.2.3 分层随机深度采样 根据土壤的成土因素 土壤粒级。污染程度或地下水埋深等因素将土壤垂直方向分成多层,每层采1个样品,每层的采样深度按公式计算: 式中: hi 采样深度, m; h2 每层土壤总深 m; R 0~1之间的随机数, 按 GB/T 10111 推荐随机数骰子法产生。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤分层随机深度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2242,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式缺失"
+      ]
+    }
+  }
+}

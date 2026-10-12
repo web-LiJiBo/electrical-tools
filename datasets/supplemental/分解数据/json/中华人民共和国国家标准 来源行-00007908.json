@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00007908",
+  "entities": [
+    {
+      "name": "电缆开剥尺寸应与缆线插头插座的对应部分相适合，成端 完毕的插头插座尾端不",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       4    电缆开剥尺寸应与缆线插头插座的对应部分相适合，成端\n完毕的插头插座尾端不应露铜；",
+      "type": "语义分解",
+      "subject": "电缆开剥尺寸应与缆线插头插座的对应部分相适合，成端 完毕的插头插座尾端不",
+      "action": "",
+      "operation": "电缆开剥尺寸应与缆线插头插座的对应部分相适合，成端 完毕的插头插座尾端不应露铜",
+      "condition": "",
+      "constraint": "       4    电缆开剥尺寸应与缆线插头插座的对应部分相适合，成端\n完毕的插头插座尾端不应露铜；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电缆开剥尺寸应与缆线插头插座的对应部分相适合，成端 完毕的插头插座尾端不"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7908,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

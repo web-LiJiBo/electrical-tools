@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "4.5.4",
+  "entities": [
+    {
+      "name": "环境风险范围综合确定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.4 环境风险评价范围应根据环境敏感目标分布情况。事故后果预测可能对环境产生危害的范围等综合确定。项目周边所在区域。评价范围外存在需要特别关注的环境敏感目标;评价范围需延伸至所关心的目标。",
+      "type": "语义分解",
+      "subject": "环境风险范围综合确定",
+      "action": "",
+      "operation": "依敏感目标事故后果危害范围确定外部特别目标延伸纳入",
+      "condition": "",
+      "constraint": "4.5.4 环境风险评价范围应根据环境敏感目标分布情况。事故后果预测可能对环境产生危害的范围等综合确定。项目周边所在区域。评价范围外存在需要特别关注的环境敏感目标;评价范围需延伸至所关心的目标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境风险范围综合确定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2458,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

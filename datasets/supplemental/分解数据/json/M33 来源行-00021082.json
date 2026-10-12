@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021082",
+  "entities": [
+    {
+      "name": "一 自动保护倒换以工作和保护(子)网连接的缺陷状态为依据，缺陷状态是 S",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一  自动保护倒换以工作和保护(子)网连接的缺陷状态为依据，缺陷状态是 SNC/I 服务者\n    信号失效( SSF) 和 SNC/N 路径信号失效( TSF)  或路径信号劣化( TSD) 。这些状态的\n    检出在8.3.1关于Sn/Sm_A 和9.2.2关于Smm_TT_Sk中描述。",
+      "type": "语义分解",
+      "subject": "一 自动保护倒换以工作和保护(子)网连接的缺陷状态为依据，缺陷状态是 S",
+      "action": "",
+      "operation": "一 自动保护倒换以工作和保护(子)网连接的缺陷状态为依据，缺陷状态是 SNC/I 服务者 信号失效( SSF) 和 SNC/N 路径信号失效( TSF) 或路径信号劣化( TSD) 。这些状态的 检出在8.3.1关于Sn/Sm_A 和9.2.2关于Smm_TT_Sk中描述。",
+      "condition": "",
+      "constraint": "一  自动保护倒换以工作和保护(子)网连接的缺陷状态为依据，缺陷状态是 SNC/I 服务者\n    信号失效( SSF) 和 SNC/N 路径信号失效( TSF)  或路径信号劣化( TSD) 。这些状态的\n    检出在8.3.1关于Sn/Sm_A 和9.2.2关于Smm_TT_Sk中描述。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一 自动保护倒换以工作和保护(子)网连接的缺陷状态为依据，缺陷状态是 S"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21082,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

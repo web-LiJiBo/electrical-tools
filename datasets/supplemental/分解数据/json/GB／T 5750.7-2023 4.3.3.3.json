@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.3.3.3",
+  "entities": [
+    {
+      "name": "邻菲罗啉溶液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3.3 邻菲罗啉溶液(1.374 &/) :称取1.374 &一水合邻菲罗啉 ,加入5 ml 95 %乙醇,搅拌使之溶解 ,转移至1 O00 ml 容量瓶中用纯水定容。 或购买商品化预制试剂",
+      "type": "语义分解",
+      "subject": "邻菲罗啉溶液",
+      "action": "",
+      "operation": "乙醇溶解定容或购买商品预制试剂",
+      "condition": "",
+      "constraint": "4.3.3.3 邻菲罗啉溶液(1.374 &/) :称取1.374 &一水合邻菲罗啉 ,加入5 ml 95 %乙醇,搅拌使之溶解 ,转移至1 O00 ml 容量瓶中用纯水定容。 或购买商品化预制试剂",
+      "constraint_role": "informational",
+      "related_entities": [
+        "邻菲罗啉溶液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1690,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；质量单位识别异常"
+      ]
+    }
+  }
+}

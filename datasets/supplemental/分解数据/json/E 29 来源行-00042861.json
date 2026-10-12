@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042861",
+  "entities": [
+    {
+      "name": "计算实际倾角 ,通过与临界倾角比较以确定开挖检测的初步位置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      计算实际倾角 ,通过与临界倾角比较以确定开挖检测的初步位置 。  海拔高度剖面可由全球卫星定\n位系统 GPS和管道检测仪共同确定 。  GPS可确定具体位置和地面海拔 ,管道检测仪可确定管道埋深 。\n管道实际倾角大小可由这些数据计算得来 。对于每一段 ,实际倾角可由式(4)计算得到 ,结果见表 A. 2。",
+      "type": "语义分解",
+      "subject": "计算实际倾角 ,通过与临界倾角比较以确定开挖检测的初步位置",
+      "action": "",
+      "operation": "计算实际倾角 ,通过与临界倾角比较以确定开挖检测的初步位置 。 海拔高度剖面可由全球卫星定 位系统 GPS和管道检测仪共同确定 。 GPS可确定具体位置和地面海拔 ,管道检测仪可确定管道埋深 。 管道实际倾角大小可由这些数据计算得来 。对于每一段 ,实际倾角可由式(4)计算得到 ,结果见表 A. 2。",
+      "condition": "",
+      "constraint": "      计算实际倾角 ,通过与临界倾角比较以确定开挖检测的初步位置 。  海拔高度剖面可由全球卫星定\n位系统 GPS和管道检测仪共同确定 。  GPS可确定具体位置和地面海拔 ,管道检测仪可确定管道埋深 。\n管道实际倾角大小可由这些数据计算得来 。对于每一段 ,实际倾角可由式(4)计算得到 ,结果见表 A. 2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "计算实际倾角 ,通过与临界倾角比较以确定开挖检测的初步位置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42861,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

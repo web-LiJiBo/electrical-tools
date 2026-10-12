@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.2.1",
+  "entities": [
+    {
+      "name": "生态恢复的总体目标应满足项目水土保持方案、环境影响评价报告及涉及的国家公",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1       生态恢复的总体目标应满足项目水土保持方案、环境影响评价报告及涉及的国家公园、自然保\n护区、自然公园、世界自然遗产、生态保护红线等环境敏感区要求编制的专题报告及其批复的要求，应\n恢复至工程施工前生态系统。",
+      "type": "语义分解",
+      "subject": "生态恢复的总体目标应满足项目水土保持方案、环境影响评价报告及涉及的国家公",
+      "action": "",
+      "operation": "生态恢复的总体目标应满足项目水土保持方案、环境影响评价报告及涉及的国家公园、自然保 护区、自然公园、世界自然遗产、生态保护红线等环境敏感区要求编制的专题报告及其批复的要求，应 恢复至工程施工前生态系统。",
+      "condition": "",
+      "constraint": "4.2.1       生态恢复的总体目标应满足项目水土保持方案、环境影响评价报告及涉及的国家公园、自然保\n护区、自然公园、世界自然遗产、生态保护红线等环境敏感区要求编制的专题报告及其批复的要求，应\n恢复至工程施工前生态系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态恢复的总体目标应满足项目水土保持方案、环境影响评价报告及涉及的国家公"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40651,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

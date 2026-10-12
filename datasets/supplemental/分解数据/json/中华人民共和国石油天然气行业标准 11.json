@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "11",
+  "entities": [
+    {
+      "name": "管道与其他相邻、交叉的管道或其他埋地金属构筑物 间的电位差，以及其他相邻",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       11   管道与其他相邻、交叉的管道或其他埋地金属构筑物\n间的电位差，以及其他相邻、交叉的管道或其他埋地金属构筑\n物的阴极保护和干扰防护系统的运行参数和运行状态；",
+      "type": "语义分解",
+      "subject": "管道与其他相邻、交叉的管道或其他埋地金属构筑物 间的电位差，以及其他相邻",
+      "action": "",
+      "operation": "管道与其他相邻、交叉的管道或其他埋地金属构筑物 间的电位差，以及其他相邻、交叉的管道或其他埋地金属构筑 物的阴极保护和干扰防护系统的运行参数和运行状态",
+      "condition": "",
+      "constraint": "       11   管道与其他相邻、交叉的管道或其他埋地金属构筑物\n间的电位差，以及其他相邻、交叉的管道或其他埋地金属构筑\n物的阴极保护和干扰防护系统的运行参数和运行状态；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道与其他相邻、交叉的管道或其他埋地金属构筑物 间的电位差，以及其他相邻"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47493,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

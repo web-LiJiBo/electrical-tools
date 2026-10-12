@@ -13,4 +13,4 @@ class ModbusAdapter:
         if missing:
             return CandidateInstruction(protocol=self.protocol, target=str(config.get("device_id", "")), missing_fields=missing, evidence=program.evidence, explanation="Modbus配置不完整，仅返回待补充信息")
         payload = {"function_code": 5, "slave_id": config["slave_id"], "coil_address": config["coil_address"], "value": bool(config.get("value", True)), "requested_action": action.get("action", ""), "ilr_program_id": program.program_id}
-        return CandidateInstruction(protocol=self.protocol, target=str(config["device_id"]), payload=payload, evidence=program.evidence, explanation="Modbus候选帧，需通过验证和人工确认", dispatch_allowed=False)
+        return CandidateInstruction(protocol=self.protocol, target=str(config["device_id"]), payload=payload, evidence=program.evidence, explanation="Modbus候选帧，仅用于指令生成", dispatch_allowed=False)

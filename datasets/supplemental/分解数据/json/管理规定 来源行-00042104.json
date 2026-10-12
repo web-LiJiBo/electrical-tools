@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042104",
+  "entities": [
+    {
+      "name": "（ 七 ）一般生产安全事件，是指造成 1 人以上 3 人以下轻微 伤，或",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 七 ）一般生产安全事件，是指造成 1 人以上 3 人以下轻微\n\n伤，或者造成 10 万元以下直接经济损失的事件。按严重程度可\n\n分为一般工作受限事件、一般医疗处置事件、一般财产损失事件、",
+      "type": "语义分解",
+      "subject": "（ 七 ）一般生产安全事件，是指造成 1 人以上 3 人以下轻微 伤，或",
+      "action": "",
+      "operation": "（ 七 ）一般生产安全事件，是指造成 1 人以上 3 人以下轻微 伤，或者造成 10 万元以下直接经济损失的事件。按严重程度可 分为一般工作受限事件、一般医疗处置事件、一般财产损失事件",
+      "condition": "",
+      "constraint": "    （ 七 ）一般生产安全事件，是指造成 1 人以上 3 人以下轻微\n\n伤，或者造成 10 万元以下直接经济损失的事件。按严重程度可\n\n分为一般工作受限事件、一般医疗处置事件、一般财产损失事件、",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 七 ）一般生产安全事件，是指造成 1 人以上 3 人以下轻微 伤，或"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

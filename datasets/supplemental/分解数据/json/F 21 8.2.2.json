@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "8.2.2",
+  "entities": [
+    {
+      "name": "视频业务质量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2   视频业务服务质量要求\n\n      软交换网内视频图像的帧频应不小于 15f/s,视频质量评价方法参考 ITU-T P. 910。\n\n8.2.3   传真业务服务质量要求\n\n      传真业务服务质量应满足以下要求 :",
+      "type": "语义分解",
+      "subject": "视频业务质量",
+      "action": "",
+      "operation": "帧频至少15帧每秒评价参考ITU-TP.910",
+      "condition": "",
+      "constraint": "8.2.2   视频业务服务质量要求\n\n      软交换网内视频图像的帧频应不小于 15f/s,视频质量评价方法参考 ITU-T P. 910。\n\n8.2.3   传真业务服务质量要求\n\n      传真业务服务质量应满足以下要求 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "视频业务质量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23917,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含8.2.3传真引导句无要求清单"
+      ]
+    }
+  }
+}

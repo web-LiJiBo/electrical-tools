@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006388",
+  "entities": [
+    {
+      "name": "第五十一条 [吊装作业票申请 ] (二)吊装安全作业票有效期一般为8小时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十一条 [吊装作业票申请 ] (二)吊装安全作业票有效期一般为8小时, 一级。二级吊装安全作业票有效期最长不超过3 日,三级吊装安全作业票有效期最长不超过7 日。吊装作业当日无法完成的,从第二日起每日作业前应进行安全检查 ,填写《吊装作业安全检查表丫附件 4-9 ),并由双方监护人签字确认。",
+      "type": "语义分解",
+      "subject": "第五十一条 [吊装作业票申请 ] (二)吊装安全作业票有效期一般为8小时",
+      "action": "",
+      "operation": "第五十一条 [吊装作业票申请 ] (二)吊装安全作业票有效期一般为8小时, 一级。二级吊装安全作业票有效期最长不超过3 日,三级吊装安全作业票有效期最长不超过7 日。吊装作业当日无法完成的,从第二日起每日作业前应进行安全检查 ,填写《吊装作业安全检查表丫附件 4-9 ),并由双方监护人签字确认。",
+      "condition": "",
+      "constraint": "第五十一条 [吊装作业票申请 ] (二)吊装安全作业票有效期一般为8小时, 一级。二级吊装安全作业票有效期最长不超过3 日,三级吊装安全作业票有效期最长不超过7 日。吊装作业当日无法完成的,从第二日起每日作业前应进行安全检查 ,填写《吊装作业安全检查表丫附件 4-9 ),并由双方监护人签字确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十一条 [吊装作业票申请 ] (二)吊装安全作业票有效期一般为8小时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6388,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

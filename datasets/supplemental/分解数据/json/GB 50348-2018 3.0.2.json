@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "3.0.2",
+  "entities": [
+    {
+      "name": "安防建设原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.2 安全防范工程的建设应遵循下列原则: 1 人防、物防、技防相结合，探测、延迟、反应相协调; 2 保护对象的防护级别与风险等级相适应; 3 系统和设备的安全等级与防范对象及其攻击手段相适应; 4 满足防护的纵深性、均衡性、抗易损性要求; 5 满足系统的安全性、可靠性要求; 6 满足系统的电磁兼容性、环境适应性要求; 7 满足系统的实时性和原始完整性要求; 8 满足系统的兼容性、可扩展性、可维护性要求; 9 满足系统的经济性、适用性要求。",
+      "type": "语义分解",
+      "subject": "安防建设原则",
+      "action": "",
+      "operation": "三防协调风险等级匹配纵深均衡安全可靠兼容适应实时完整扩展运维经济适用",
+      "condition": "",
+      "constraint": "3.0.2 安全防范工程的建设应遵循下列原则: 1 人防、物防、技防相结合，探测、延迟、反应相协调; 2 保护对象的防护级别与风险等级相适应; 3 系统和设备的安全等级与防范对象及其攻击手段相适应; 4 满足防护的纵深性、均衡性、抗易损性要求; 5 满足系统的安全性、可靠性要求; 6 满足系统的电磁兼容性、环境适应性要求; 7 满足系统的实时性和原始完整性要求; 8 满足系统的兼容性、可扩展性、可维护性要求; 9 满足系统的经济性、适用性要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防建设原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6863,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "6.3.1.2.1",
+  "entities": [
+    {
+      "name": "响应启动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1.2.1 明确响应启动的程序和方式。根据事故性质、严重程度、影响范围和可控性，结合响应分级明确的条件，可由应急领导小组作出响应启动的决策并宣布，或者依据事故信息是否达到响应启动的条件自动启动。",
+      "type": "语义分解",
+      "subject": "响应启动",
+      "action": "",
+      "operation": "明确程序按性质程度范围可控性及分级条件由领导决策宣布或条件满足自动启动",
+      "condition": "",
+      "constraint": "6.3.1.2.1 明确响应启动的程序和方式。根据事故性质、严重程度、影响范围和可控性，结合响应分级明确的条件，可由应急领导小组作出响应启动的决策并宣布，或者依据事故信息是否达到响应启动的条件自动启动。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "响应启动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4162,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；预案机制描述不是模拟控制授权"
+      ]
+    }
+  }
+}

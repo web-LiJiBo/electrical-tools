@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.3.7",
+  "entities": [
+    {
+      "name": "故障处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.3.7 故障处理应符合下列规定: 1 应根据安全防范管理要求和(或)服务合同确定故障处理响应时间，并应符合国家现行有关标准的规定; 2 应对系统和设备故障进行分级，并优先对高等级故障进行处理; 3 应对故障维修情况进行详细记录，并对故障设备后续运行情况进行跟踪; 4 应编制故障处理报告。",
+      "type": "语义分解",
+      "subject": "故障处理",
+      "action": "",
+      "operation": "按规范合同定响应分级高等级优先详细记录后续跟踪报告",
+      "condition": "",
+      "constraint": "11.3.7 故障处理应符合下列规定: 1 应根据安全防范管理要求和(或)服务合同确定故障处理响应时间，并应符合国家现行有关标准的规定; 2 应对系统和设备故障进行分级，并优先对高等级故障进行处理; 3 应对故障维修情况进行详细记录，并对故障设备后续运行情况进行跟踪; 4 应编制故障处理报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "故障处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7217,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

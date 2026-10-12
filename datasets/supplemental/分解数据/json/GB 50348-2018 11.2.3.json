@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.2.3",
+  "entities": [
+    {
+      "name": "作业内容确认",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.3 系统运行单位应确认系统运行作业内容，并符合下列规定: 1 应确认系统运行中需要管理的事件、报警信息类型清单等内容; 2 应根据事件、报警信息类型清单，结合保护对象所在的周边、道路、人流密集区域、案(事)件多发地段等情况，确认相应运行作业的报警和接收、监视和录像、授权和控制等要求。",
+      "type": "语义分解",
+      "subject": "作业内容确认",
+      "action": "",
+      "operation": "事件报警清单结合周边人流多案等明确接报监录像授权控制",
+      "condition": "",
+      "constraint": "11.2.3 系统运行单位应确认系统运行作业内容，并符合下列规定: 1 应确认系统运行中需要管理的事件、报警信息类型清单等内容; 2 应根据事件、报警信息类型清单，结合保护对象所在的周边、道路、人流密集区域、案(事)件多发地段等情况，确认相应运行作业的报警和接收、监视和录像、授权和控制等要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业内容确认"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7205,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

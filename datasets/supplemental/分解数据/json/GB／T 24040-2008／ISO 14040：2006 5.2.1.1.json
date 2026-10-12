@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "5.2.1.1",
+  "entities": [
+    {
+      "name": "LCA研究目的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.1 LCA 的目的 应用意图；开展该项研究的理由；沟通对象(即研究结果的接受者)；结果是否将被用在对比论断中，并向公众发布。宜对范围做出很好的规定以确保该研究的广度、深度和详尽程度能满足所制定的目的。",
+      "type": "语义分解",
+      "subject": "LCA研究目的",
+      "action": "",
+      "operation": "明确意图理由受众公开比较及研究广深",
+      "condition": "",
+      "constraint": "5.2.1.1 LCA 的目的 应用意图；开展该项研究的理由；沟通对象(即研究结果的接受者)；结果是否将被用在对比论断中，并向公众发布。宜对范围做出很好的规定以确保该研究的广度、深度和详尽程度能满足所制定的目的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCA研究目的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1038,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026059",
+  "entities": [
+    {
+      "name": "ISDN 通过接入设备( ISDN 拨号服务器)接入公众互联网， ISD",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      ISDN 通过接入设备( ISDN 拨号服务器)接入公众互联网，\nISDN与公众互联网接入设备(拨号服务器)间通过一个或多个\n2 Mbit/s 的 PRA  接口(30B+D)    相连接，它们之间的信令采\n用DSS1。",
+      "type": "语义分解",
+      "subject": "ISDN 通过接入设备( ISDN 拨号服务器)接入公众互联网， ISD",
+      "action": "",
+      "operation": "ISDN 通过接入设备( ISDN 拨号服务器)接入公众互联网， ISDN与公众互联网接入设备(拨号服务器)间通过一个或多个 2 Mbit/s 的 PRA 接口(30B+D) 相连接，它们之间的信令采 用DSS1。",
+      "condition": "",
+      "constraint": "      ISDN 通过接入设备( ISDN 拨号服务器)接入公众互联网，\nISDN与公众互联网接入设备(拨号服务器)间通过一个或多个\n2 Mbit/s 的 PRA  接口(30B+D)    相连接，它们之间的信令采\n用DSS1。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ISDN 通过接入设备( ISDN 拨号服务器)接入公众互联网， ISD"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26059,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028098",
+  "entities": [
+    {
+      "name": "c) 受限空间作业时有专人监护，并与作业者保持联系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    受限空间作业时有专人监护，并与作业者保持联系。\nd)    具体执行SY 6444 的规定。",
+      "type": "语义分解",
+      "subject": "c) 受限空间作业时有专人监护，并与作业者保持联系",
+      "action": "",
+      "operation": "c) 受限空间作业时有专人监护，并与作业者保持联系。 d) 具体执行SY 6444 的规定。",
+      "condition": "",
+      "constraint": "c)    受限空间作业时有专人监护，并与作业者保持联系。\nd)    具体执行SY 6444 的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 受限空间作业时有专人监护，并与作业者保持联系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28098,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-10",
+  "flow": ["问题输入及只读设备状态", "条款检索", "大模型梳理与建议", "自然语言指令", "模板转换与生成前校验", "输出生成结果，结束"],
+  "removed": [
+    "模拟确认和执行方法、任务队列、有效期、重复确认及执行反馈",
+    "simulation/confirm、simulation/run、simulation/reset、simulation/tasks和simulation/cases接口",
+    "前端确认按钮、重置按钮、执行状态变化展示及devices.html独立状态页面",
+    "执行专用测试test_simulation_confirmation.py、test_unified_simulation_control.py、test_simulation_status_questions.py",
+    "测试与真实验证脚本中的确认、执行和状态更新步骤"
+  ],
+  "retained": ["来源引用、条件与参数校验", "DeepSeek建议和自然语言指令", "专用runback_power模板及80MW测试配置", "只读模拟设备输入", "协议字段生成", "历史JSON验证记录，作为旧流程记录不参与当前运行"],
+  "status": "生成成功返回generated，不返回pending_confirmation或创建task_id",
+  "verification": {
+    "targeted_suite": "61 passed，包含生成结果、只读状态、已移除接口及条款条件校验",
+    "full_non_model_suite": "149 passed，10 failed；失败仍为缺少本地Qwen模型文件和openpyxl环境依赖",
+    "frontend_static": "脚本语法通过；无确认、重置、执行状态页面和执行请求代码",
+    "live_model": "DeepSeek真实分解与建议成功，生成runback_power指令，target_power_mw=80，IEC示例ctlVal=80",
+    "device_inputs_unchanged": true,
+    "input_state": {"active_power_mw": 100, "dc_blocked": false},
+    "no_execution_methods_or_routes": "测试通过"
+  },
+  "scope": "仅当前完整仓库本地修改；原始数据库未改，未推送GitHub；未启动新的前后端服务",
+  "historical_records": "旧确认执行JSON记录仅保留历史含义，不代表当前流程"
+}

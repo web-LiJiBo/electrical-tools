@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036284",
+  "entities": [
+    {
+      "name": "E二氧化碳——建设项目实施后年度二氧化碳排放量，单位为吨二氧化碳( tC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E二氧化碳——建设项目实施后年度二氧化碳排放量，单位为吨二氧化碳( tCO₂/y);\nE峰值  ——达峰年二氧化碳排放总量，单位为吨二氧化碳 (tCO₂)。",
+      "type": "语义分解",
+      "subject": "E二氧化碳——建设项目实施后年度二氧化碳排放量，单位为吨二氧化碳( tC",
+      "action": "",
+      "operation": "E二氧化碳——建设项目实施后年度二氧化碳排放量，单位为吨二氧化碳( tCO₂/y); E峰值 ——达峰年二氧化碳排放总量，单位为吨二氧化碳 (tCO₂)。",
+      "condition": "",
+      "constraint": "E二氧化碳——建设项目实施后年度二氧化碳排放量，单位为吨二氧化碳( tCO₂/y);\nE峰值  ——达峰年二氧化碳排放总量，单位为吨二氧化碳 (tCO₂)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E二氧化碳——建设项目实施后年度二氧化碳排放量，单位为吨二氧化碳( tC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36284,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

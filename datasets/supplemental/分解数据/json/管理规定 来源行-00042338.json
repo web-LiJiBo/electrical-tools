@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042338",
+  "entities": [
+    {
+      "name": "次发生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "次发生。 防范和整改措施的落实情况应当接受工会和员工的监\n\n督。被约谈的应将整改措施落实情况书面报送约谈方。在集团总\n\n部组织的 QHSE 管理体系审核和监督检查中发现整改措施落实不\n\n到位、事故责任追究不到位，或者事故教训吸取不到位导致事故\n\n再次发生的，对主要责任人按照集团公司有关规定严肃处理。",
+      "type": "语义分解",
+      "subject": "次发生",
+      "action": "",
+      "operation": "次发生。 防范和整改措施的落实情况应当接受工会和员工的监 督。被约谈的应将整改措施落实情况书面报送约谈方。在集团总 部组织的 QHSE 管理体系审核和监督检查中发现整改措施落实不 到位、事故责任追究不到位，或者事故教训吸取不到位导致事故 再次发生的，对主要责任人按照集团公司有关规定严肃处理。",
+      "condition": "",
+      "constraint": "次发生。 防范和整改措施的落实情况应当接受工会和员工的监\n\n督。被约谈的应将整改措施落实情况书面报送约谈方。在集团总\n\n部组织的 QHSE 管理体系审核和监督检查中发现整改措施落实不\n\n到位、事故责任追究不到位，或者事故教训吸取不到位导致事故\n\n再次发生的，对主要责任人按照集团公司有关规定严肃处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "次发生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42338,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

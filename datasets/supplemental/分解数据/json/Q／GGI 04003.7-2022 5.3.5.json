@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第7部分: 管线打开作业",
+  "standard_id": "Q/GGI 04003.7-2022",
+  "version": "2022",
+  "chapter_path": "5.3.5",
+  "entities": [
+    {
+      "name": "作业现场条件变化",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.5 管线打开作业过程中发现现场工作条件与作业方案内容下一致时,应停止作业。并进行风险再评估。重新制定作业方案, 办理许可票证。",
+      "type": "语义分解",
+      "subject": "作业现场条件变化",
+      "action": "",
+      "operation": "停工再评估重编方案办理票证",
+      "condition": "",
+      "constraint": "5.3.5 管线打开作业过程中发现现场工作条件与作业方案内容下一致时,应停止作业。并进行风险再评估。重新制定作业方案, 办理许可票证。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业现场条件变化"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6139,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文下一致疑似不一致识别异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "5.3.2",
+  "entities": [
+    {
+      "name": "环境监察档案补调",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.2 环境监察档案需要补充和调整时 应由环境监察部门负责人填写修改申报单,经档案主管部门批准后,方可进行补充或调整。",
+      "type": "语义分解",
+      "subject": "环境监察档案补调",
+      "action": "",
+      "operation": "填报修改申报并经主管批准",
+      "condition": "环境监察档案需要补充和调整时",
+      "constraint": "5.3.2 环境监察档案需要补充和调整时 应由环境监察部门负责人填写修改申报单,经档案主管部门批准后,方可进行补充或调整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境监察档案补调"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3105,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

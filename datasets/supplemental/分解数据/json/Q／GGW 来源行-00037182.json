@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037182",
+  "entities": [
+    {
+      "name": "企业核算工艺放空甲烷排放核算应优先采用工程计算法，不具备工程计算的条件时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   企业核算工艺放空甲烷排放核算应优先采用工程计算法，不具备工程计算的条件时可采用排放因子\n法。",
+      "type": "语义分解",
+      "subject": "企业核算工艺放空甲烷排放核算应优先采用工程计算法，不具备工程计算的条件时",
+      "action": "",
+      "operation": "企业核算工艺放空甲烷排放核算应优先采用工程计算法，不具备工程计算的条件时可采用排放因子 法。",
+      "condition": "",
+      "constraint": "   企业核算工艺放空甲烷排放核算应优先采用工程计算法，不具备工程计算的条件时可采用排放因子\n法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业核算工艺放空甲烷排放核算应优先采用工程计算法，不具备工程计算的条件时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37182,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

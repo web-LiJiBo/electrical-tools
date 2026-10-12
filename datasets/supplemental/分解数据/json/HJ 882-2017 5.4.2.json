@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "5.4.2",
+  "entities": [
+    {
+      "name": "制药自主周边监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 无明确要求的,若排污单位认为有必要的 , 可对周边地表水,海水和土壤开展监测。对于废水直接排入地表水。海水的排污单位, 可按照 HJIT 2.3 HJIT 91, HJ 442 及受纳水体环境管理要求设置监测断面和监测点位; 开展土壤监测的排污单位, 可按照 HJII 166 及土壤环境管理要求设置监测点位。监测指标及最低频次按照表5执行。注: 地表水。海水。土壤的具体监测指标根据生产过程的原辅用料。产品和副产物确定。",
+      "type": "语义分解",
+      "subject": "制药自主周边监测",
+      "action": "",
+      "operation": "无明确可按必要水海土按规范点位因物料产品定指标",
+      "condition": "",
+      "constraint": "5.4.2 无明确要求的,若排污单位认为有必要的 , 可对周边地表水,海水和土壤开展监测。对于废水直接排入地表水。海水的排污单位, 可按照 HJIT 2.3 HJIT 91, HJ 442 及受纳水体环境管理要求设置监测断面和监测点位; 开展土壤监测的排污单位, 可按照 HJII 166 及土壤环境管理要求设置监测点位。监测指标及最低频次按照表5执行。注: 地表水。海水。土壤的具体监测指标根据生产过程的原辅用料。产品和副产物确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药自主周边监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2907,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表5未提供"
+      ]
+    }
+  }
+}

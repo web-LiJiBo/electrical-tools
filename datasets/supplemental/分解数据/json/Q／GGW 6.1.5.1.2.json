@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.1.5.1.2",
+  "entities": [
+    {
+      "name": "流量气密检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5.1.2          按照说明书给出的方法，用流量计检查仪器采样管路的气密与流量。检查结果应符合说明\n书要求。",
+      "type": "语义分解",
+      "subject": "流量气密检查",
+      "action": "",
+      "operation": "按说明检查流量符合要求",
+      "condition": "",
+      "constraint": "6.1.5.1.2          按照说明书给出的方法，用流量计检查仪器采样管路的气密与流量。检查结果应符合说明\n书要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "流量气密检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36569,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

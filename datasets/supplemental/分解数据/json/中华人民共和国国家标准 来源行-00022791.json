@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022791",
+  "entities": [
+    {
+      "name": "室外站、边界站与地网连接的接地排应设置在防雷箱内， 接地排的大小和螺柱孔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.2        室外站、边界站与地网连接的接地排应设置在防雷箱内，\n接地排的大小和螺柱孔的数目应根据实际使用情况确定。\n7.4.3        出入小型通信站的缆线应选用具有金属护层的电缆，也\n可将缆线穿入金属管内布放，电缆金属护层或金属管应与接地排\n或基站金属支架进行可靠的电气连接。",
+      "type": "语义分解",
+      "subject": "室外站、边界站与地网连接的接地排应设置在防雷箱内， 接地排的大小和螺柱孔",
+      "action": "",
+      "operation": "室外站、边界站与地网连接的接地排应设置在防雷箱内， 接地排的大小和螺柱孔的数目应根据实际使用情况确定。 7.4.3 出入小型通信站的缆线应选用具有金属护层的电缆，也 可将缆线穿入金属管内布放，电缆金属护层或金属管应与接地排 或基站金属支架进行可靠的电气连接。",
+      "condition": "",
+      "constraint": "7.4.2        室外站、边界站与地网连接的接地排应设置在防雷箱内，\n接地排的大小和螺柱孔的数目应根据实际使用情况确定。\n7.4.3        出入小型通信站的缆线应选用具有金属护层的电缆，也\n可将缆线穿入金属管内布放，电缆金属护层或金属管应与接地排\n或基站金属支架进行可靠的电气连接。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "室外站、边界站与地网连接的接地排应设置在防雷箱内， 接地排的大小和螺柱孔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22791,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

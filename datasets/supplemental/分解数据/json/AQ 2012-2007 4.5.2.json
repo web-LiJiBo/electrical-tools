@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.5.2",
+  "entities": [
+    {
+      "name": "硫化氢监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2 含硫化氢生产作业现场应安装硫化氢监测系统 ,进行硫化氢监测,符合以下要求: 含硫化氢作业环境应配备固定式和携带式硫化氢监测仪; 重点监测区应设置醒目的标志 ,硫化氢监测探头 ,报警器; 硫化氢监测仪报警值设定:阈限值为1级报警值;安全临界浓度为 2 级报警值;危险临界浓度为3级报警值; 硫化氢监测仪应定期校验 ,并进行检定。",
+      "type": "语义分解",
+      "subject": "硫化氢监测",
+      "action": "",
+      "operation": "配固定便携监测仪重点区标识探头报警分三级设定并定期校验检定",
+      "condition": "",
+      "constraint": "4.5.2 含硫化氢生产作业现场应安装硫化氢监测系统 ,进行硫化氢监测,符合以下要求: 含硫化氢作业环境应配备固定式和携带式硫化氢监测仪; 重点监测区应设置醒目的标志 ,硫化氢监测探头 ,报警器; 硫化氢监测仪报警值设定:阈限值为1级报警值;安全临界浓度为 2 级报警值;危险临界浓度为3级报警值; 硫化氢监测仪应定期校验 ,并进行检定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "硫化氢监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4231,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；三级浓度引用定义需关联不得猜测数值"
+      ]
+    }
+  }
+}

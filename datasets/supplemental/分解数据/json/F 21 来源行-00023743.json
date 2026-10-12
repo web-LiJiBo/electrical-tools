@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023743",
+  "entities": [
+    {
+      "name": "f) 支持按照时间 、操作人 、操作对象 、操作内容等多种条件的定制信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "f)    支持按照时间 、操作人 、操作对象 、操作内容等多种条件的定制信息查询 ;\ng)    支持自动化管理功能 ,在规定的时间点或时间段完成定制的任务 。",
+      "type": "语义分解",
+      "subject": "f) 支持按照时间 、操作人 、操作对象 、操作内容等多种条件的定制信息",
+      "action": "",
+      "operation": "f) 支持按照时间 、操作人 、操作对象 、操作内容等多种条件的定制信息查询 ; g) 支持自动化管理功能 ,在规定的时间点或时间段完成定制的任务 。",
+      "condition": "",
+      "constraint": "f)    支持按照时间 、操作人 、操作对象 、操作内容等多种条件的定制信息查询 ;\ng)    支持自动化管理功能 ,在规定的时间点或时间段完成定制的任务 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 支持按照时间 、操作人 、操作对象 、操作内容等多种条件的定制信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23743,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

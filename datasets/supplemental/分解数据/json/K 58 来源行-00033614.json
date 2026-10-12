@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033614",
+  "entities": [
+    {
+      "name": "c) 如果用单点移位式取样感头取样时，则应按预先确定的取样点位置进行移位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    如果用单点移位式取样感头取样时，则应按预先确定的取样点位置进行移位测量，确定每一点\n       上稳定的 NOx 、SO2   和 O2   的浓度 。  在每个点上的停留时间应是取样系统的平均响应时间加\n       上 3 s ;",
+      "type": "语义分解",
+      "subject": "c) 如果用单点移位式取样感头取样时，则应按预先确定的取样点位置进行移位",
+      "action": "",
+      "operation": "c) 如果用单点移位式取样感头取样时，则应按预先确定的取样点位置进行移位测量，确定每一点 上稳定的 NOx 、SO2 和 O2 的浓度 。 在每个点上的停留时间应是取样系统的平均响应时间加 上 3 s",
+      "condition": "",
+      "constraint": "c)    如果用单点移位式取样感头取样时，则应按预先确定的取样点位置进行移位测量，确定每一点\n       上稳定的 NOx 、SO2   和 O2   的浓度 。  在每个点上的停留时间应是取样系统的平均响应时间加\n       上 3 s ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 如果用单点移位式取样感头取样时，则应按预先确定的取样点位置进行移位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33614,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

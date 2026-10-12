@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "试运前管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1 管道已按相关标准完成了试压 干燥等工作, 并经验收合格。",
+      "type": "语义分解",
+      "subject": "试运前管道",
+      "action": "",
+      "operation": "完成试压干燥验收合格",
+      "condition": "",
+      "constraint": "8.1 管道已按相关标准完成了试压 干燥等工作, 并经验收合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运前管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7377,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

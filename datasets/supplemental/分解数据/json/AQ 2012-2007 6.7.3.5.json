@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.7.3.5",
+  "entities": [
+    {
+      "name": "电泵下井",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3.5 下电泵作业应符合: 电泵机组安装后应进行运转试验; 通井深度应下到电机以下30 m~50 m, 无卡阻现象; 吊放连接机组各部件时 ,应保持操作平稳 ,禁止二节机组(电机或泵)同时起吊和下放; 每根油管中间应打一个电缆卡子,接箍上下1 m 处各打一个电缆保护器 ,并将其卡紧; 座井口时 ,钢圈和密封胶皮应放平; 安装电缆时 ,垫板要打倒角 ;螺丝要对角上紧。",
+      "type": "语义分解",
+      "subject": "电泵下井",
+      "action": "",
+      "operation": "安装试运通井超电机30至50米平稳禁双节吊放配电缆卡保护器密封放平倒角对角紧固",
+      "condition": "",
+      "constraint": "6.7.3.5 下电泵作业应符合: 电泵机组安装后应进行运转试验; 通井深度应下到电机以下30 m~50 m, 无卡阻现象; 吊放连接机组各部件时 ,应保持操作平稳 ,禁止二节机组(电机或泵)同时起吊和下放; 每根油管中间应打一个电缆卡子,接箍上下1 m 处各打一个电缆保护器 ,并将其卡紧; 座井口时 ,钢圈和密封胶皮应放平; 安装电缆时 ,垫板要打倒角 ;螺丝要对角上紧。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电泵下井"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4666,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009031",
+  "entities": [
+    {
+      "name": "机架式设备的机架高度宜为2600mm 、2200mm或2000mm, 厚",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.2  机架式设备的机架高度宜为2600mm 、2200mm或2000mm,\n厚度宜为300mm 或600mm, 宽度宜为600mm 。同一机房内宜保持\n机架高度一致。",
+      "type": "语义分解",
+      "subject": "机架式设备的机架高度宜为2600mm 、2200mm或2000mm, 厚",
+      "action": "",
+      "operation": "机架式设备的机架高度宜为2600mm 、2200mm或2000mm, 厚度宜为300mm 或600mm, 宽度宜为600mm 。同一机房内宜保持 机架高度一致。",
+      "condition": "",
+      "constraint": "8.1.2  机架式设备的机架高度宜为2600mm 、2200mm或2000mm,\n厚度宜为300mm 或600mm, 宽度宜为600mm 。同一机房内宜保持\n机架高度一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机架式设备的机架高度宜为2600mm 、2200mm或2000mm, 厚"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9031,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

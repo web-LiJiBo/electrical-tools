@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "8.3",
+  "entities": [
+    {
+      "name": "临时作业气体检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3 在现场有临时作业需求时,在固定式探测器未覆盖。覆盖不全或无法工作时。可配置移动式可燃探测l和 /或有毒气体探测器。",
+      "type": "语义分解",
+      "subject": "临时作业气体检测",
+      "action": "",
+      "operation": "固定探测不足时可配置移动探测器",
+      "condition": "在现场有临时作业需求时",
+      "constraint": "8.3 在现场有临时作业需求时,在固定式探测器未覆盖。覆盖不全或无法工作时。可配置移动式可燃探测l和 /或有毒气体探测器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "临时作业气体检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5847,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.7.3.2",
+  "entities": [
+    {
+      "name": "天然气脱水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.3.2 天然气脱水 天然气原料气进脱水之前应设置分离器。原料气进脱水器之前及天然气容积式压缩机和泵的出口管线上 ,截断阀前应设置安全阀; 天然气脱水装置中 ,气体应选用全启式安全阀 ,液体应选用微启式安全阀。安全阀弹簧应具有可靠的防腐蚀性能或必要的防腐保护措施。",
+      "type": "语义分解",
+      "subject": "天然气脱水",
+      "action": "",
+      "operation": "原料设分离器阀前安全阀气全启液微启弹簧防腐",
+      "condition": "",
+      "constraint": "5.7.3.2 天然气脱水 天然气原料气进脱水之前应设置分离器。原料气进脱水器之前及天然气容积式压缩机和泵的出口管线上 ,截断阀前应设置安全阀; 天然气脱水装置中 ,气体应选用全启式安全阀 ,液体应选用微启式安全阀。安全阀弹簧应具有可靠的防腐蚀性能或必要的防腐保护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "天然气脱水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4513,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

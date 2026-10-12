@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040472",
+  "entities": [
+    {
+      "name": "废渣的处理或综合利用应视为化工工艺过程的延续，本条 将废渣与反应物和生成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1      废渣的处理或综合利用应视为化工工艺过程的延续，本条\n将废渣与反应物和生成物同等对待并列入生产控制指标，在工艺\n流程图上标明其数量、成分、排放点、排放方式等，以便于监测、管\n理和污染防治。",
+      "type": "语义分解",
+      "subject": "废渣的处理或综合利用应视为化工工艺过程的延续，本条 将废渣与反应物和生成",
+      "action": "",
+      "operation": "废渣的处理或综合利用应视为化工工艺过程的延续，本条 将废渣与反应物和生成物同等对待并列入生产控制指标，在工艺 流程图上标明其数量、成分、排放点、排放方式等，以便于监测、管 理和污染防治。",
+      "condition": "",
+      "constraint": "7.1.1      废渣的处理或综合利用应视为化工工艺过程的延续，本条\n将废渣与反应物和生成物同等对待并列入生产控制指标，在工艺\n流程图上标明其数量、成分、排放点、排放方式等，以便于监测、管\n理和污染防治。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废渣的处理或综合利用应视为化工工艺过程的延续，本条 将废渣与反应物和生成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40472,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

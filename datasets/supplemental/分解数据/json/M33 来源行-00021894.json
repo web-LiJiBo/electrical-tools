@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021894",
+  "entities": [
+    {
+      "name": "级联净荷的一个或多个AU 和 TU中的缺陷会导致级联净荷中检出缺陷，报告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "级联净荷的一个或多个AU 和 TU中的缺陷会导致级联净荷中检出缺陷，报告两类缺陷：\n\n——指针丢失；\n——通 道AIS。",
+      "type": "语义分解",
+      "subject": "级联净荷的一个或多个AU 和 TU中的缺陷会导致级联净荷中检出缺陷，报告",
+      "action": "",
+      "operation": "级联净荷的一个或多个AU 和 TU中的缺陷会导致级联净荷中检出缺陷，报告两类缺陷： ——指针丢失； ——通 道AIS。",
+      "condition": "",
+      "constraint": "级联净荷的一个或多个AU 和 TU中的缺陷会导致级联净荷中检出缺陷，报告两类缺陷：\n\n——指针丢失；\n——通 道AIS。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "级联净荷的一个或多个AU 和 TU中的缺陷会导致级联净荷中检出缺陷，报告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21894,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

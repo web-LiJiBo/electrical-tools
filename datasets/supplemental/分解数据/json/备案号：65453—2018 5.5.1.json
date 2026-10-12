@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "5.5.1",
+  "entities": [
+    {
+      "name": "受到检测现场环境和检测方法的限制，本条所列条件 下ECDA不宜使用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1    受到检测现场环境和检测方法的限制，本条所列条件\n下ECDA不宜使用。因此在出具ECDA 报告时，应注明开展\nECDA受限的管段和原因。",
+      "type": "语义分解",
+      "subject": "受到检测现场环境和检测方法的限制，本条所列条件 下ECDA不宜使用",
+      "action": "",
+      "operation": "受到检测现场环境和检测方法的限制，本条所列条件 下ECDA不宜使用。因此在出具ECDA 报告时，应注明开展 ECDA受限的管段和原因。",
+      "condition": "",
+      "constraint": "5.5.1    受到检测现场环境和检测方法的限制，本条所列条件\n下ECDA不宜使用。因此在出具ECDA 报告时，应注明开展\nECDA受限的管段和原因。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "受到检测现场环境和检测方法的限制，本条所列条件 下ECDA不宜使用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45679,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "能源绩效参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 总则 当确定能源绩效参数时 ,组织应理解能源消耗的基本特点 ,例如基本负荷(固定的能源消耗等)的大小与哪些因素相关 ,变负荷是否与产量 .房屋入住率 .天气或其他因素相关等。能源绩效应通过能源绩效参数的数值来描述 组织可通过能源绩效参数确定其能源绩效是否发生了变化以及是否满足指标要求。适宜的能源绩效参数应能全面 ,系统 ,准确地反映组织的能源绩效情况 ,选择时要考虑信息的使用者及其需求 能源绩效参数的主要类型有: a ) 可直接测量的能量值 ,如能耗总量或用计量器具测量的一种或多种能源消耗和能源使用; b) 测量值的比率 ,如能源效率; 统计模型 ,如用线性或非线性回归表征能源消耗和相关变量的关系模型; 工程模型",
+      "type": "语义分解",
+      "subject": "能源绩效参数",
+      "action": "",
+      "operation": "按能源消耗特点全面描述绩效",
+      "condition": "",
+      "constraint": "适宜的能源绩效参数应能全面 ,系统 ,准确地反映",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源绩效参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "未给设备能效数值阈值"
+      ]
+    }
+  }
+}

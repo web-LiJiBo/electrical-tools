@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012038",
+  "entities": [
+    {
+      "name": ".0.3 有线电视接收系统的传输方式应根据当地电视系统的信 号传输方式确",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11 .0.3    有线电视接收系统的传输方式应根据当地电视系统的信\n号传输方式确定 。",
+      "type": "语义分解",
+      "subject": ".0.3 有线电视接收系统的传输方式应根据当地电视系统的信 号传输方式确",
+      "action": "",
+      "operation": ".0.3 有线电视接收系统的传输方式应根据当地电视系统的信 号传输方式确定 。",
+      "condition": "",
+      "constraint": "11 .0.3    有线电视接收系统的传输方式应根据当地电视系统的信\n号传输方式确定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ".0.3 有线电视接收系统的传输方式应根据当地电视系统的信 号传输方式确"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12038,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

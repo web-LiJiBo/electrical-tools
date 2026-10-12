@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022476",
+  "entities": [
+    {
+      "name": ")p₁ 为100Ω ·m～500Ω·m 的地段，设一条防雷线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2)p₁  为100Ω ·m～500Ω·m     的地段，设一条防雷线；\n3)p  >500Ω · m 的地段，设两条防雷线；\n4)防雷线的连续布放长度不应小于2km。",
+      "type": "语义分解",
+      "subject": ")p₁ 为100Ω ·m～500Ω·m 的地段，设一条防雷线",
+      "action": "",
+      "operation": ")p₁ 为100Ω ·m～500Ω·m 的地段，设一条防雷线； 3)p >500Ω · m 的地段，设两条防雷线； 4)防雷线的连续布放长度不应小于2km。",
+      "condition": "",
+      "constraint": "2)p₁  为100Ω ·m～500Ω·m     的地段，设一条防雷线；\n3)p  >500Ω · m 的地段，设两条防雷线；\n4)防雷线的连续布放长度不应小于2km。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")p₁ 为100Ω ·m～500Ω·m 的地段，设一条防雷线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22476,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

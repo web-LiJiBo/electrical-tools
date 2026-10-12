@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "10.3.1",
+  "entities": [
+    {
+      "name": "环境事件预案内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.1 按照囤家。地方和相关部门要求,提出企业突发环境事件应急预案编制或完善的原则要求。包括预案适用范围。环境事件分类与分级。组织机构与职责。监控和预警。应急响应。应急保障。善后处置。预案管理与演练等内容。",
+      "type": "语义分解",
+      "subject": "环境事件预案内容",
+      "action": "",
+      "operation": "按各级要求提出范围分级职责预警响应保障善后演练等",
+      "condition": "",
+      "constraint": "10.3.1 按照囤家。地方和相关部门要求,提出企业突发环境事件应急预案编制或完善的原则要求。包括预案适用范围。环境事件分类与分级。组织机构与职责。监控和预警。应急响应。应急保障。善后处置。预案管理与演练等内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境事件预案内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2524,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

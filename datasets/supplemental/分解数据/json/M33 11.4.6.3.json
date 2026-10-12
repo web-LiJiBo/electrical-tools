@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "11.4.6.3",
+  "entities": [
+    {
+      "name": "VC-4-X至ODUk宿",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.4.6.3 VC-4-X到ODUk 适配功能宿 S4-XIODUk_A_Sk",
+      "type": "语义分解",
+      "subject": "VC-4-X至ODUk宿",
+      "action": "",
+      "operation": "仅标题无正文",
+      "condition": "",
+      "constraint": "11.4.6.3 VC-4-X到ODUk 适配功能宿 S4-XIODUk_A_Sk",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VC-4-X至ODUk宿"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20249,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标识中I疑似识别异常"
+      ]
+    }
+  }
+}

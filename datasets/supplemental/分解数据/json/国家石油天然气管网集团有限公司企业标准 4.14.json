@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/  GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.14",
+  "entities": [
+    {
+      "name": "防雷静电防爆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.14     防爆电气、防雷防静电接地安全检查\n\n4.14.1    防雷防静电安全检查",
+      "type": "语义分解",
+      "subject": "防雷静电防爆",
+      "action": "",
+      "operation": "仅检查标题",
+      "condition": "",
+      "constraint": "4.14     防爆电气、防雷防静电接地安全检查\n\n4.14.1    防雷防静电安全检查",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防雷静电防爆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 31809,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003341",
+  "entities": [
+    {
+      "name": "第二十条 运行单位应参与SIL定级,SIS设计,SIF验证及SIS安装调",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十条 运行单位应参与SIL定级,SIS设计,SIF验证及SIS安装调试等建设期相关工作。SIS投产前,建设单位和运行单位应共同完成SIS阶段性验收及功能安全确认,SIS验收应满足GB/32203及集团公司DEC文件《油气管道工程施工质量验收技术规定》自动化仪表工程部分相关要求。",
+      "type": "语义分解",
+      "subject": "第二十条 运行单位应参与SIL定级,SIS设计,SIF验证及SIS安装调",
+      "action": "",
+      "operation": "第二十条 运行单位应参与SIL定级,SIS设计,SIF验证及SIS安装调试等建设期相关工作。SIS投产前,建设单位和运行单位应共同完成SIS阶段性验收及功能安全确认,SIS验收应满足GB/32203及集团公司DEC文件《油气管道工程施工质量验收技术规定》自动化仪表工程部分相关要求。",
+      "condition": "",
+      "constraint": "第二十条 运行单位应参与SIL定级,SIS设计,SIF验证及SIS安装调试等建设期相关工作。SIS投产前,建设单位和运行单位应共同完成SIS阶段性验收及功能安全确认,SIS验收应满足GB/32203及集团公司DEC文件《油气管道工程施工质量验收技术规定》自动化仪表工程部分相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十条 运行单位应参与SIL定级,SIS设计,SIF验证及SIS安装调"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3341,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

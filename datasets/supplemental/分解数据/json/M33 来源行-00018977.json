@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018977",
+  "entities": [
+    {
+      "name": "a",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a:支持OSM256.4接口选用RSn_CI_Fs(RSn帧起始信号)前传给OSM256.4_TT_So,一般接口不需要",
+      "type": "语义分解",
+      "subject": "a",
+      "action": "",
+      "operation": "a:支持OSM256.4接口选用RSn_CI_Fs(RSn帧起始信号)前传给OSM256.4_TT_So,一般接口不需要",
+      "condition": "",
+      "constraint": "a:支持OSM256.4接口选用RSn_CI_Fs(RSn帧起始信号)前传给OSM256.4_TT_So,一般接口不需要",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18977,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

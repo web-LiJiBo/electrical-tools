@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "10.3.4",
+  "entities": [
+    {
+      "name": "实验室准确度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.4 准确度控制 采用标推物质和样品同步测试的方法作为推确度控制手段,每批样品带一个己知浓度的标堆物质或质控样品。如果实验室自行配制质控样,要注意与国家标推物质比对,并且不得使用与绘制校准曲线相同的标推溶液配制,必须另行配制< 对于受污粱的或样品性质复杂的地下水,也可采用测定加标回收率作为雅确度控制手段。 相对误差和加标回收率的计算参照 HJ 168 相关要求。",
+      "type": "语义分解",
+      "subject": "实验室准确度",
+      "action": "",
+      "operation": "每批带标准或质控样同步测试自配质控另配并比对可加标",
+      "condition": "",
+      "constraint": "10.3.4 准确度控制 采用标推物质和样品同步测试的方法作为推确度控制手段,每批样品带一个己知浓度的标堆物质或质控样品。如果实验室自行配制质控样,要注意与国家标推物质比对,并且不得使用与绘制校准曲线相同的标推溶液配制,必须另行配制< 对于受污粱的或样品性质复杂的地下水,也可采用测定加标回收率作为雅确度控制手段。 相对误差和加标回收率的计算参照 HJ 168 相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实验室准确度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2185,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

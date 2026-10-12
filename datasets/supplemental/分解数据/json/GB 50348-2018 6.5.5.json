@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.5.5",
+  "entities": [
+    {
+      "name": "网络性能任务调度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.5 应对网络性能和任务调度策略进行规划和优化，确保系统对各类事件的信息快速传递和有效响应。",
+      "type": "语义分解",
+      "subject": "网络性能任务调度",
+      "action": "",
+      "operation": "规划优化快速传递有效响应",
+      "condition": "",
+      "constraint": "6.5.5 应对网络性能和任务调度策略进行规划和优化，确保系统对各类事件的信息快速传递和有效响应。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "网络性能任务调度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6987,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023906",
+  "entities": [
+    {
+      "name": "基于 ITU-T P. 800、ITU-T P. 861和 ITU-T ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      基于 ITU-T P. 800、ITU-T P. 861和 ITU-T P. 862语音质量度量标准的一般原则 , 软交换网内端\n到端语音业务需满足表 1所示的指标 , 网络质量等级定义见表 2。",
+      "type": "语义分解",
+      "subject": "基于 ITU-T P. 800、ITU-T P. 861和 ITU-T ",
+      "action": "",
+      "operation": "基于 ITU-T P. 800、ITU-T P. 861和 ITU-T P. 862语音质量度量标准的一般原则 , 软交换网内端 到端语音业务需满足表 1所示的指标 , 网络质量等级定义见表 2。",
+      "condition": "",
+      "constraint": "      基于 ITU-T P. 800、ITU-T P. 861和 ITU-T P. 862语音质量度量标准的一般原则 , 软交换网内端\n到端语音业务需满足表 1所示的指标 , 网络质量等级定义见表 2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基于 ITU-T P. 800、ITU-T P. 861和 ITU-T "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23906,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

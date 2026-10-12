@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "4.3.2.2",
+  "entities": [
+    {
+      "name": "岩溶水源布点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2.2 岩瘠水 地下水饮用水水源保护区和补给区岩溶主管道上水质监测点不少于 3 个, 一级支流管道长度大于 2 km 布设2个监测点, 一级支流管逍长度小于2 km 布设1个监测点。",
+      "type": "语义分解",
+      "subject": "岩溶水源布点",
+      "action": "",
+      "operation": "主管不少三点一级支流依两公里分界设点",
+      "condition": "",
+      "constraint": "4.3.2.2 岩瘠水 地下水饮用水水源保护区和补给区岩溶主管道上水质监测点不少于 3 个, 一级支流管道长度大于 2 km 布设2个监测点, 一级支流管逍长度小于2 km 布设1个监测点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "岩溶水源布点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2037,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；岩溶文字异常且等于两公里未明确"
+      ]
+    }
+  }
+}

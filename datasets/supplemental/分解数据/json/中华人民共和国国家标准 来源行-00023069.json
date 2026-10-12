@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023069",
+  "entities": [
+    {
+      "name": "另一部分对交流和杂音较为敏感的设备的接地应采用星 形布置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "        2    另一部分对交流和杂音较为敏感的设备的接地应采用星\n形布置。",
+      "type": "语义分解",
+      "subject": "另一部分对交流和杂音较为敏感的设备的接地应采用星 形布置",
+      "action": "",
+      "operation": "另一部分对交流和杂音较为敏感的设备的接地应采用星 形布置。",
+      "condition": "",
+      "constraint": "        2    另一部分对交流和杂音较为敏感的设备的接地应采用星\n形布置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "另一部分对交流和杂音较为敏感的设备的接地应采用星 形布置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23069,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

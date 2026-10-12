@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "7.6.11",
+  "entities": [
+    {
+      "name": "挤注压井",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6.11 试压合格后，将流程倒为压井流程，启动压裂车，打背压高于井口关井压力，以0.5m³/min的\n排量挤注压井。",
+      "type": "语义分解",
+      "subject": "挤注压井",
+      "action": "",
+      "operation": "试压合格背压高于关井压0.5立方米每分",
+      "condition": "",
+      "constraint": "7.6.11 试压合格后，将流程倒为压井流程，启动压裂车，打背压高于井口关井压力，以0.5m³/min的\n排量挤注压井。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挤注压井"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29017,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；高危操作"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023331",
+  "entities": [
+    {
+      "name": "地网与冲击半径及移动通信基站地网最佳面积大小",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      5    地网与冲击半径及移动通信基站地网最佳面积大小。\n   对于建在山上的移动通信基站，由于所处的位置往往比周围\n的山地显得突出，地理位置又与雷电的活动区域有着一定的联系，\n加之山上一般多为岩石或多石土壤，要使防雷接地电阻在有限的",
+      "type": "语义分解",
+      "subject": "地网与冲击半径及移动通信基站地网最佳面积大小",
+      "action": "",
+      "operation": "地网与冲击半径及移动通信基站地网最佳面积大小。 对于建在山上的移动通信基站，由于所处的位置往往比周围 的山地显得突出，地理位置又与雷电的活动区域有着一定的联系， 加之山上一般多为岩石或多石土壤，要使防雷接地电阻在有限的",
+      "condition": "",
+      "constraint": "      5    地网与冲击半径及移动通信基站地网最佳面积大小。\n   对于建在山上的移动通信基站，由于所处的位置往往比周围\n的山地显得突出，地理位置又与雷电的活动区域有着一定的联系，\n加之山上一般多为岩石或多石土壤，要使防雷接地电阻在有限的",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地网与冲击半径及移动通信基站地网最佳面积大小"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23331,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

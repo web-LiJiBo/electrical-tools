@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040190",
+  "entities": [
+    {
+      "name": "两种及以上固体废物混合运输时，应符合下列规定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2      两种及以上固体废物混合运输时，应符合下列规定：\n      1    不应产生新的有毒有害物质、爆炸及其他有毒有害化学\n反应；",
+      "type": "语义分解",
+      "subject": "两种及以上固体废物混合运输时，应符合下列规定",
+      "action": "",
+      "operation": "两种及以上固体废物混合运输时，应符合下列规定： 1 不应产生新的有毒有害物质、爆炸及其他有毒有害化学 反应",
+      "condition": "",
+      "constraint": "7.3.2      两种及以上固体废物混合运输时，应符合下列规定：\n      1    不应产生新的有毒有害物质、爆炸及其他有毒有害化学\n反应；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "两种及以上固体废物混合运输时，应符合下列规定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40190,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

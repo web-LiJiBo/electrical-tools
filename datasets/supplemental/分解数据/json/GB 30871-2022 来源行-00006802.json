@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006802",
+  "entities": [
+    {
+      "name": "作业前 ,作业单位应了解地下隐蔽设施的分布情况 ,作业临近地下隐蔽设施时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.4 作业前 ,作业单位应了解地下隐蔽设施的分布情况 ,作业临近地下隐蔽设施时 ,应使用适当工具 人工挖掘 ,避免损坏地下隐蔽设施;如暴露出电缆 管线以及不能辨认的物品时 ,应立即停止作业,妥善 加以保护 ,报告动土审批单位 ,经采取保护措施后方可继续作业。",
+      "type": "语义分解",
+      "subject": "作业前 ,作业单位应了解地下隐蔽设施的分布情况 ,作业临近地下隐蔽设施时",
+      "action": "",
+      "operation": "作业前 ,作业单位应了解地下隐蔽设施的分布情况 ,作业临近地下隐蔽设施时 ,应使用适当工具 人工挖掘 ,避免损坏地下隐蔽设施;如暴露出电缆 管线以及不能辨认的物品时 ,应立即停止作业,妥善 加以保护 ,报告动土审批单位 ,经采取保护措施后方可继续作业。",
+      "condition": "",
+      "constraint": "11.4 作业前 ,作业单位应了解地下隐蔽设施的分布情况 ,作业临近地下隐蔽设施时 ,应使用适当工具 人工挖掘 ,避免损坏地下隐蔽设施;如暴露出电缆 管线以及不能辨认的物品时 ,应立即停止作业,妥善 加以保护 ,报告动土审批单位 ,经采取保护措施后方可继续作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业前 ,作业单位应了解地下隐蔽设施的分布情况 ,作业临近地下隐蔽设施时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6802,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

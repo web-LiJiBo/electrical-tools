@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040745",
+  "entities": [
+    {
+      "name": "e) 移栽苗源地应选择在自然植被盖度不低于15 %的地段，移栽个体应选择",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "e)     移栽苗源地应选择在自然植被盖度不低于15 %的地段，移栽个体应选择幼年植株；移栽植株\n    的获取应采取相对分散的原则，移栽后苗源次群落植被总盖度不应低于10 %,且不应有显著\n    的斑秃；移栽过程中形成的土坑应及时填平，并在上部覆盖10 cm 的砾石或浇水压实；\n f)     移栽密度参照干扰区域周边的植被密度。",
+      "type": "语义分解",
+      "subject": "e) 移栽苗源地应选择在自然植被盖度不低于15 %的地段，移栽个体应选择",
+      "action": "",
+      "operation": "e) 移栽苗源地应选择在自然植被盖度不低于15 %的地段，移栽个体应选择幼年植株；移栽植株 的获取应采取相对分散的原则，移栽后苗源次群落植被总盖度不应低于10 %,且不应有显著 的斑秃；移栽过程中形成的土坑应及时填平，并在上部覆盖10 cm 的砾石或浇水压实； f) 移栽密度参照干扰区域周边的植被密度。",
+      "condition": "",
+      "constraint": "e)     移栽苗源地应选择在自然植被盖度不低于15 %的地段，移栽个体应选择幼年植株；移栽植株\n    的获取应采取相对分散的原则，移栽后苗源次群落植被总盖度不应低于10 %,且不应有显著\n    的斑秃；移栽过程中形成的土坑应及时填平，并在上部覆盖10 cm 的砾石或浇水压实；\n f)     移栽密度参照干扰区域周边的植被密度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 移栽苗源地应选择在自然植被盖度不低于15 %的地段，移栽个体应选择"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40745,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

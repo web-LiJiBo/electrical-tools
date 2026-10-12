@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "终验条件组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1  试运行结束，设备运行稳定，各项技术指标满足技术规范\n和设计要求，工程遗留问题已解决，可进行工程终验，工程终验由\n上级主管部门或委托建设单位组织。",
+      "type": "语义分解",
+      "subject": "终验条件组织",
+      "action": "",
+      "operation": "试运稳定指标合格遗留解决上级或委托建设组织",
+      "condition": "",
+      "constraint": "6.2.1  试运行结束，设备运行稳定，各项技术指标满足技术规范\n和设计要求，工程遗留问题已解决，可进行工程终验，工程终验由\n上级主管部门或委托建设单位组织。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "终验条件组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27109,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

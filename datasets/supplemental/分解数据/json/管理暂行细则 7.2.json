@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "7.2",
+  "entities": [
+    {
+      "name": "所属单位应严格按照本细则开展监测计划（模板见附件2）和数据统 计，定期对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2 所属单位应严格按照本细则开展监测计划（模板见附件2）和数据统\n\n计，定期对监测设备进行检定或校准，确保监测结果的准确性和可重复性。\n\n7.3 集团公司安全环保部每年制定所属单位温室气体排放核查计划，所属\n\n单位主管部门应定期组织温室气体排放内部核查。",
+      "type": "语义分解",
+      "subject": "所属单位应严格按照本细则开展监测计划（模板见附件2）和数据统 计，定期对",
+      "action": "",
+      "operation": "所属单位应严格按照本细则开展监测计划（模板见附件2）和数据统 计，定期对监测设备进行检定或校准，确保监测结果的准确性和可重复性。 7.3 集团公司安全环保部每年制定所属单位温室气体排放核查计划，所属 单位主管部门应定期组织温室气体排放内部核查。",
+      "condition": "",
+      "constraint": "7.2 所属单位应严格按照本细则开展监测计划（模板见附件2）和数据统\n\n计，定期对监测设备进行检定或校准，确保监测结果的准确性和可重复性。\n\n7.3 集团公司安全环保部每年制定所属单位温室气体排放核查计划，所属\n\n单位主管部门应定期组织温室气体排放内部核查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "所属单位应严格按照本细则开展监测计划（模板见附件2）和数据统 计，定期对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37812,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

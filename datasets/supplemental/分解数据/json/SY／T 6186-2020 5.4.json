@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "5.4",
+  "entities": [
+    {
+      "name": "线路截断阀",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4 输油气管道应根据管道所经过地区的地形 人口稠密度及重要建构筑物等情祝设置线路截断阀。 在河流大型穿跨越及饮用水水源保护区两端应设置线路截断阀,做好水体污染防控。必要时应设数据 远传。控制及报警功能。 进出天然气站场的天然气管道应设置截断阀,进站截断阀的上游和出站截断 阀的下游应设置泄压放空设施。",
+      "type": "语义分解",
+      "subject": "线路截断阀",
+      "action": "",
+      "operation": "依地形人密建筑设置河跨水源保护两端站进出阀上下游放空必要远控报警",
+      "condition": "",
+      "constraint": "5.4 输油气管道应根据管道所经过地区的地形 人口稠密度及重要建构筑物等情祝设置线路截断阀。 在河流大型穿跨越及饮用水水源保护区两端应设置线路截断阀,做好水体污染防控。必要时应设数据 远传。控制及报警功能。 进出天然气站场的天然气管道应设置截断阀,进站截断阀的上游和出站截断 阀的下游应设置泄压放空设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "线路截断阀"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7346,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

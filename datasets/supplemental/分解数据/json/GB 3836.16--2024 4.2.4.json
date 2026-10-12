@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "4.2.4",
+  "entities": [
+    {
+      "name": "防爆人员能力评定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4 评定 应每隔不超过 3年对负责人，其有管理职能的技术人员和专业人员的能力进行评定.以充分证明其 符合下列条件: a) 具备工作范围要求的必要技能; 6) 超出特定的工作范围时能够发挥作用; 其备相关知识和理解巩固的能力。",
+      "type": "语义分解",
+      "subject": "防爆人员能力评定",
+      "action": "",
+      "operation": "不超三年评定证明范围技能超范围作用知识巩固",
+      "condition": "",
+      "constraint": "4.2.4 评定 应每隔不超过 3年对负责人，其有管理职能的技术人员和专业人员的能力进行评定.以充分证明其 符合下列条件: a) 具备工作范围要求的必要技能; 6) 超出特定的工作范围时能够发挥作用; 其备相关知识和理解巩固的能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆人员能力评定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3973,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

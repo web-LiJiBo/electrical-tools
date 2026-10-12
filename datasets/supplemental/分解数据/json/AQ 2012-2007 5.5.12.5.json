@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.5.12.5",
+  "entities": [
+    {
+      "name": "油气层改造压力",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.12.5 进行油气层改造时 ,施工的最高压力不能超过井口等设施的最小安全许可压力 ;若油管注入泵压高于套管承压,应下入封隔器 ,并在采油(气)树上安装安全阀限定套管压力。",
+      "type": "语义分解",
+      "subject": "油气层改造压力",
+      "action": "",
+      "operation": "最高施工压力不超设施最小许可压力油管泵压高于套管承压用封隔器安全阀限压",
+      "condition": "",
+      "constraint": "5.5.12.5 进行油气层改造时 ,施工的最高压力不能超过井口等设施的最小安全许可压力 ;若油管注入泵压高于套管承压,应下入封隔器 ,并在采油(气)树上安装安全阀限定套管压力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气层改造压力"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4475,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

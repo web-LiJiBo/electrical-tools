@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "会议室终端选型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3    会议室终端包括大型会议室终端 、   中型会议室终端及小\n型会议室终端 。   中小型会议室终端还包括一体化终端 ,   其组成\n形态包含编解码处理 、  摄像头 、  麦克 、  显示设备和扬声器 。  一\n般工艺站场宜选用中小型会议终端。",
+      "type": "语义分解",
+      "subject": "会议室终端选型",
+      "action": "",
+      "operation": "按规模组成选型一般工艺站宜中小型",
+      "condition": "",
+      "constraint": "6.2.3    会议室终端包括大型会议室终端 、   中型会议室终端及小\n型会议室终端 。   中小型会议室终端还包括一体化终端 ,   其组成\n形态包含编解码处理 、  摄像头 、  麦克 、  显示设备和扬声器 。  一\n般工艺站场宜选用中小型会议终端。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "会议室终端选型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12371,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明性内容"
+      ]
+    }
+  }
+}

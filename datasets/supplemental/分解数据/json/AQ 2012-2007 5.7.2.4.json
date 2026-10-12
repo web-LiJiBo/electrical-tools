@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.7.2.4",
+  "entities": [
+    {
+      "name": "电脱水器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.2.4 原油脱水 梯子口应有醒目的安全警示标志; 电脱水器高压部分应有围栅 ,安全门应有锁,并有电气连锁自动断电装置; 绝缘棒应定期进行耐压试验 ,建立试验台账 ,有耐压合格证; 高压部分应每年检修一次,及时更换极板; 油水界面自动控制设施及安全附件应完好可靠 ,安全阀应定期检查保养; 脱水投产前应进行强度试验和气密试验。",
+      "type": "语义分解",
+      "subject": "电脱水器",
+      "action": "",
+      "operation": "警示围栅锁门断电联锁绝缘棒试验建账高压每年检修界面控制安全附件可靠投产前强度气密试验",
+      "condition": "",
+      "constraint": "5.7.2.4 原油脱水 梯子口应有醒目的安全警示标志; 电脱水器高压部分应有围栅 ,安全门应有锁,并有电气连锁自动断电装置; 绝缘棒应定期进行耐压试验 ,建立试验台账 ,有耐压合格证; 高压部分应每年检修一次,及时更换极板; 油水界面自动控制设施及安全附件应完好可靠 ,安全阀应定期检查保养; 脱水投产前应进行强度试验和气密试验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电脱水器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.1.3.1",
+  "entities": [
+    {
+      "name": "呼吸器可用记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.3.1 正压式空气呼吸器应处于随时可用状态,每次检查应有记录, 记录至少保存-年。",
+      "type": "语义分解",
+      "subject": "呼吸器可用记录",
+      "action": "",
+      "operation": "随时可用每检记录留存",
+      "condition": "",
+      "constraint": "5.1.3.1 正压式空气呼吸器应处于随时可用状态,每次检查应有记录, 记录至少保存-年。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "呼吸器可用记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7415,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；保存-年数词缺损需核查"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "安防工程技术设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1 安全防范工程的设计应运用传感、通信、计算机、信息处理及其控制、生物特征识别、实体防护等技术，构成安全可靠、先进成熟、经济适用的安全防范系统。",
+      "type": "语义分解",
+      "subject": "安防工程技术设计",
+      "action": "",
+      "operation": "综合技术构建安全可靠成熟经济系统",
+      "condition": "",
+      "constraint": "6.1.1 安全防范工程的设计应运用传感、通信、计算机、信息处理及其控制、生物特征识别、实体防护等技术，构成安全可靠、先进成熟、经济适用的安全防范系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防工程技术设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6941,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

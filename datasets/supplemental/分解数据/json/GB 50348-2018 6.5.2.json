@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.5.2",
+  "entities": [
+    {
+      "name": "安防集成平台形式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.2 安全防范系统可通过独立设置的安全防范管理平台进行集成，也可基于某一子系统的管理平台进行集成。",
+      "type": "语义分解",
+      "subject": "安防集成平台形式",
+      "action": "",
+      "operation": "可独立平台或子系统平台集成",
+      "condition": "",
+      "constraint": "6.5.2 安全防范系统可通过独立设置的安全防范管理平台进行集成，也可基于某一子系统的管理平台进行集成。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防集成平台形式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

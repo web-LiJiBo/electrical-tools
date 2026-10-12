@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.9.4",
+  "entities": [
+    {
+      "name": "备品备件软件备份",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9.4 备品备件应符合下列规定: 1 系统所用设备、部件、材料等，宜有足够的备件和维修保障能力; 2 系统软件应有备份和维护保障能力。",
+      "type": "语义分解",
+      "subject": "备品备件软件备份",
+      "action": "",
+      "operation": "具足够备件及软件备份维护能力",
+      "condition": "",
+      "constraint": "6.9.4 备品备件应符合下列规定: 1 系统所用设备、部件、材料等，宜有足够的备件和维修保障能力; 2 系统软件应有备份和维护保障能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "备品备件软件备份"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7024,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

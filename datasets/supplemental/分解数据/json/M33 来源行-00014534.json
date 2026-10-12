@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014534",
+  "entities": [
+    {
+      "name": "SF 持续性定时器用于级联的OTUk SNC/S 多域级联保护的场景下，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      SF 持续性定时器用于级联的OTUk SNC/S 多域级联保护的场景下，协调各保护域在发生保护倒换\n时的时序关系。此定时器可以避免在级联配置中由于上游保护倒换而引起的下游的OTUk SNC/S保护域\n的非正常倒换，也可以避免在未保护输入端口上信号失效情况下引起的下游非正常倒换。",
+      "type": "语义分解",
+      "subject": "SF 持续性定时器用于级联的OTUk SNC/S 多域级联保护的场景下，",
+      "action": "",
+      "operation": "SF 持续性定时器用于级联的OTUk SNC/S 多域级联保护的场景下，协调各保护域在发生保护倒换 时的时序关系。此定时器可以避免在级联配置中由于上游保护倒换而引起的下游的OTUk SNC/S保护域 的非正常倒换，也可以避免在未保护输入端口上信号失效情况下引起的下游非正常倒换。",
+      "condition": "",
+      "constraint": "      SF 持续性定时器用于级联的OTUk SNC/S 多域级联保护的场景下，协调各保护域在发生保护倒换\n时的时序关系。此定时器可以避免在级联配置中由于上游保护倒换而引起的下游的OTUk SNC/S保护域\n的非正常倒换，也可以避免在未保护输入端口上信号失效情况下引起的下游非正常倒换。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SF 持续性定时器用于级联的OTUk SNC/S 多域级联保护的场景下，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14534,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

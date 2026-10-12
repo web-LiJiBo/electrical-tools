@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009762",
+  "entities": [
+    {
+      "name": "OTS 、OMS和 OCh 等光层开销、0OS 的逻辑组成应符合 现行行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.4.1  OTS 、OMS和 OCh 等光层开销、0OS 的逻辑组成应符合\n现行行业标准《光传送网( OTN)   网络总体技术要求》YD/T\n\n1990—2009第6章的有关规定(图3.4.1)。光层开销映射和复用\n到 OTM 开销信号( OOS) 后应通过OSC 来传送。",
+      "type": "语义分解",
+      "subject": "OTS 、OMS和 OCh 等光层开销、0OS 的逻辑组成应符合 现行行",
+      "action": "",
+      "operation": "OTS 、OMS和 OCh 等光层开销、0OS 的逻辑组成应符合 现行行业标准《光传送网( OTN) 网络总体技术要求》YD/T 1990—2009第6章的有关规定(图3.4.1)。光层开销映射和复用 到 OTM 开销信号( OOS) 后应通过OSC 来传送。",
+      "condition": "",
+      "constraint": "3.4.1  OTS 、OMS和 OCh 等光层开销、0OS 的逻辑组成应符合\n现行行业标准《光传送网( OTN)   网络总体技术要求》YD/T\n\n1990—2009第6章的有关规定(图3.4.1)。光层开销映射和复用\n到 OTM 开销信号( OOS) 后应通过OSC 来传送。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTS 、OMS和 OCh 等光层开销、0OS 的逻辑组成应符合 现行行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9762,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.5.11.2",
+  "entities": [
+    {
+      "name": "暂不能投产或无开采价值井",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.11.2 应对暂时无条件投产的,无工业开采价值的井在试油(气)结束后 ,按封井设计要求封堵。",
+      "type": "语义分解",
+      "subject": "暂不能投产或无开采价值井",
+      "action": "",
+      "operation": "试油气后按封井设计封堵",
+      "condition": "",
+      "constraint": "5.5.11.2 应对暂时无条件投产的,无工业开采价值的井在试油(气)结束后 ,按封井设计要求封堵。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "暂不能投产或无开采价值井"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "8.2.7",
+  "entities": [
+    {
+      "name": "内部评价程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.7 内部安全评价的评价依据为相关的法律法规。国家标准与行业标准，关键程序包括但不限于以下内容:a)危险。有害因素辨识与评价;b)评价单元划分与评价方法选择;c)定性定量安全评价;d)安全管理现状评价;e)安全对策措施及建议;f)安全评价结论;g)编制安全评价报告。",
+      "type": "语义分解",
+      "subject": "内部评价程序",
+      "action": "",
+      "operation": "辨识划单元选方法定性定量提出对策报告",
+      "condition": "",
+      "constraint": "8.2.7 内部安全评价的评价依据为相关的法律法规。国家标准与行业标准，关键程序包括但不限于以下内容:a)危险。有害因素辨识与评价;b)评价单元划分与评价方法选择;c)定性定量安全评价;d)安全管理现状评价;e)安全对策措施及建议;f)安全评价结论;g)编制安全评价报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "内部评价程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 739,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

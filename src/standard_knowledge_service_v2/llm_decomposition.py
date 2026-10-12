@@ -264,20 +264,20 @@ class QwenTextDecomposer:
             "请输出JSON："
         )
 
-    def _generate(self, prompt: str) -> str:
+    def _generate(self, prompt: str, system_prompt: str = SYSTEM_PROMPT) -> str:
         if hasattr(self._model, "chat"):
             response, _ = self._model.chat(
                 self._tokenizer,
                 prompt,
                 history=None,
-                system=SYSTEM_PROMPT,
+                system=system_prompt,
                 generation_config=self._model.generation_config,
             )
             return str(response)
 
         import torch
 
-        full_prompt = f"{SYSTEM_PROMPT}\n{prompt}"
+        full_prompt = f"{system_prompt}\n{prompt}"
         inputs = self._tokenizer(full_prompt, return_tensors="pt").to(self._model.device)
         with torch.no_grad():
             outputs = self._model.generate(**inputs, generation_config=self._model.generation_config)

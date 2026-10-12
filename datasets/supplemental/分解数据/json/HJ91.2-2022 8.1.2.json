@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "8.1.2",
+  "entities": [
+    {
+      "name": "样品交接记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.2 样品交接记录 样品交接记录至少包括: 交接样品日期和时间。样品编号 测定项目。保存方式。交样人员。接样人员等信息",
+      "type": "语义分解",
+      "subject": "样品交接记录",
+      "action": "",
+      "operation": "记录时间编号项目保存及交接人员",
+      "condition": "",
+      "constraint": "8.1.2 样品交接记录 样品交接记录至少包括: 交接样品日期和时间。样品编号 测定项目。保存方式。交样人员。接样人员等信息",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样品交接记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3012,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

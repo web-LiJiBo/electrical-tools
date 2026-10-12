@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.1.2.2",
+  "entities": [
+    {
+      "name": "环境监理工作应符合 SY/T 4116的规定，并按照环境影响评价文件及其",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2.2 环境监理工作应符合 SY/T  4116的规定，并按照环境影响评价文件及其批复要求对环境保护\n措施落实情况进行监督检查。",
+      "type": "语义分解",
+      "subject": "环境监理工作应符合 SY/T 4116的规定，并按照环境影响评价文件及其",
+      "action": "",
+      "operation": "环境监理工作应符合 SY/T 4116的规定，并按照环境影响评价文件及其批复要求对环境保护 措施落实情况进行监督检查。",
+      "condition": "",
+      "constraint": "4.1.2.2 环境监理工作应符合 SY/T  4116的规定，并按照环境影响评价文件及其批复要求对环境保护\n措施落实情况进行监督检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境监理工作应符合 SY/T 4116的规定，并按照环境影响评价文件及其"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41948,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

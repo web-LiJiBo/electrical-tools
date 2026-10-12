@@ -57,8 +57,17 @@ class AnalysisPipeline:
         self.consistency = consistency or ConsistencyEvaluationService()
         self.reasoner = reasoner or HybridReasoningEngine()
         self.audit_store = audit_store
+        from ..instruction_engine.simulation_control import SimulationControlSession
+        self.simulation_session = SimulationControlSession()
+        self.advisor = None
 
     def analyze(self, request: AnalysisRequest) -> AnalysisResponse:
+        if request.parameters.get("simulation_mode") is True:
+            if self.simulation_session.is_status_question(request.query):
+                from .real_clause_assessment import assess_real_clause
+                status,data,evidence = assess_real_clause(self,request)
+                return self._respond(request,status,data,evidence,["阈值取自库内来源条款，不用预设测试阈值；缺少动作依据时禁止控制"])
+            # 明确控制请求也必须继续经过真实条款链路，不再走预设规则捷径。
         decomposed = self.decomposer.decompose(request.query, request.scenario_hint, request.conversation_context)
         intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions)
         decomposed.intent = intent.intent
@@ -69,6 +78,9 @@ class AnalysisPipeline:
             parsed_query["scenario_topics"] = built.definition.standard_topics
             parsed_query["scenario_devices"] = built.definition.device_types
         parsed_query["context_device_type"] = built.context.device_type
+        for key in ("standard_id", "chapter_path"):
+            if request.parameters.get(key):
+                parsed_query["requested_" + key] = str(request.parameters[key])
         matched = self.retriever.match(LunwenMatchingInput(
             request.query,
             parsed_query,
@@ -82,7 +94,7 @@ class AnalysisPipeline:
         warnings = list(built.warnings)
         if not matched.rules:
             return self._respond(request, "uncertain", {"decomposition": decomposed.to_dict(), "intent_classification": intent.to_dict(), "context": asdict(built.context), "missing_fields": [asdict(item) for item in built.missing_fields], "diagnostics": diagnostics}, [], warnings + matched.warnings)
-        selected, assessments = self._select_rule(request, matched.rules, decomposed.actions if intent.intent == "instruction" else [])
+        selected, assessments = self._select_rule(request, matched.rules, decomposed.actions if intent.intent == "instruction" else [], for_control=intent.intent == "instruction")
         if selected is None:
             data = {
                 "decomposition": decomposed.to_dict(),
@@ -103,7 +115,7 @@ class AnalysisPipeline:
             if request.parameters.get(key) not in (None, "") and key not in device_config:
                 device_config[key] = request.parameters[key]
         is_instruction_request = intent.intent == "instruction"
-        candidate = self.generator.generate(semantic, built.context, device_config, request.target_protocol) if is_instruction_request else None
+        candidate = self.generator.generate(semantic, built.context, device_config, request.target_protocol, facts=request.parameters) if is_instruction_request else None
         program = self.generator.compiler.compile(semantic)
         static_parameters, dynamic_behaviors, constraint_rules = self.generator.compiler.framework.to_three_layers(semantic)
         app_status, app_errors = self.applicability.validate(unit, built.context)
@@ -112,11 +124,22 @@ class AnalysisPipeline:
         if is_instruction_request:
             pair_status, pair_errors = self.clause_instruction_validator.validate(semantic, candidate)
             protocol_status, protocol_errors = self.protocol_validator.validate(candidate)
-            summary = self.safety_gate.decide({"applicability": app_status, "semantic": sem_status, "clause_instruction": pair_status, "protocol": protocol_status, "logic": logic_status}, app_errors + sem_errors + pair_errors + protocol_errors + logic_errors, warnings)
-        elif app_status is not ValidationStatus.FAIL and sem_status is ValidationStatus.PASS and logic_status is ValidationStatus.PASS:
-            summary = ValidationSummary(ValidationStatus.ANSWERED, {"applicability": app_status, "semantic": sem_status, "logic": logic_status}, sem_errors + logic_errors, warnings, dispatch_allowed=False)
+            precondition_status = ValidationStatus(candidate.precondition_status)
+            precondition_errors = [] if precondition_status is ValidationStatus.PASS else [candidate.explanation]
+            summary = self.safety_gate.decide({"applicability": app_status, "semantic": sem_status, "clause_instruction": pair_status, "protocol": protocol_status, "logic": logic_status, "action_preconditions": precondition_status}, app_errors + sem_errors + pair_errors + protocol_errors + logic_errors + precondition_errors, warnings)
+        elif app_status is not ValidationStatus.FAIL:
+            # Quoting a knowledge clause requires neither a control action nor
+            # executable action preconditions. Control validation stays unchanged.
+            if app_status is ValidationStatus.UNCERTAIN:
+                warnings.extend(app_errors)
+            if unit.metadata.get("audit", {}).get("manual_review_required") is True:
+                warnings.append("该条款为待复核语义初稿，仅供来源查阅，不代表已确认适用或可下发控制")
+                warnings.extend(str(reason) for reason in unit.metadata["audit"].get("reasons", []))
+            summary = ValidationSummary(ValidationStatus.ANSWERED,
+                {"applicability": app_status, "source_quote": ValidationStatus.PASS},
+                [], warnings, dispatch_allowed=False)
         else:
-            summary = self.safety_gate.decide({"semantic": sem_status, "logic": logic_status}, sem_errors + logic_errors, warnings)
+            summary = self.safety_gate.decide({"applicability": app_status}, app_errors, warnings)
         evidence = [EvidenceBuilder().build(type("Hit", (), {"rule": selected.rule, "clause": unit})())]
         facts = {"context": asdict(built.context), "clauses": [asdict(item) for item in evidence], "instruction": asdict(candidate) if candidate else None, "validation": summary.to_dict(), "warnings": summary.warnings}
         report = self.report_generator.generate(facts)
@@ -125,7 +148,6 @@ class AnalysisPipeline:
                 "text": f"根据检索到的标准条款：{selected.rule.content}" if not is_instruction_request else candidate.explanation,
                 "conclusion": selected.rule.content,
                 "source_rule_id": selected.rule.rule_id,
-                "requires_human_confirmation": is_instruction_request,
             },
             "decomposition": decomposed.to_dict(),
             "intent_classification": intent.to_dict(),
@@ -166,6 +188,8 @@ class AnalysisPipeline:
         request: AnalysisRequest,
         matches: list[Any],
         requested_actions: list[str] | None = None,
+        *,
+        for_control: bool = False,
     ) -> tuple[Any | None, list[dict[str, Any]]]:
         """对Top-K候选执行一致性评价与混合推理，再按配置权重选择最终条款。"""
         settings = self.retrieval_settings
@@ -183,6 +207,7 @@ class AnalysisPipeline:
             conditions = [match.rule.condition] if match.rule.condition else []
             conditions.extend(str(item.value) for item in match.rule.constraints if str(item.value).strip())
             reasoning = self.reasoner.decide(conditions, facts, match.rule.subject, consistency)
+            precondition = self.generator.preconditions.evaluate(match.rule.condition, facts, self.extractor.extract_rule(match.rule).constraints)
             reasoning_score = {
                 ReasoningStatus.PASS: 1.0,
                 ReasoningStatus.UNCERTAIN: 0.5,
@@ -200,6 +225,10 @@ class AnalysisPipeline:
             ) / total_weight
             action_matches = not action_set or match.rule.action in action_set
             rejection_reasons: list[str] = []
+            if ("标题" in match.rule.operation and "仅" in match.rule.operation
+                    or match.rule.operation == "清单缺失"
+                    or match.rule.operation.startswith("保留原始") and "数值" in match.rule.operation):
+                rejection_reasons.append("heading_or_uninterpreted_table_not_decision_evidence")
             if retrieval_score < settings.minimum_rule_score:
                 rejection_reasons.append("retrieval_score_below_minimum")
             if not action_matches:
@@ -211,6 +240,8 @@ class AnalysisPipeline:
                 "retrieval_score": retrieval_score,
                 "consistency": consistency.to_dict(),
                 "reasoning": reasoning.to_dict(),
+                "action_preconditions": precondition.to_dict(),
+                "control_eligible": precondition.status is ReasoningStatus.PASS,
                 "selection_score": selection_score,
                 "rule_action": match.rule.action,
                 "requested_actions": sorted(action_set),
@@ -221,11 +252,55 @@ class AnalysisPipeline:
             assessments.append((selection_score, match, detail))
         assessments.sort(key=lambda item: item[0], reverse=True)
         eligible = [item for item in assessments if item[2]["eligible"]]
-        return (eligible[0][1] if eligible else None, [item[2] for item in assessments])
+        actionable = [item for item in eligible if item[2]["control_eligible"]] if for_control else eligible
+        # 条件失败的条款仅保留作解释与溯源，生成器仍会阻止其控制载荷。
+        selected = actionable[0][1] if actionable else (eligible[0][1] if eligible else None)
+        return (selected, [item[2] for item in assessments])
 
     def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str]) -> AnalysisResponse:
+        source_result_status = status
+        if self.advisor is not None:
+            status = self.advisor.enrich(self, request, data) or status
+            if data.get('advice', {}).get('instruction'):
+                warnings.append('模型自然语言指令不是下发授权，必须通过来源绑定与前置条件校验')
+            if 'report' in data:
+                data['report'] = self.report_generator.generate({'context': data.get('context', {}),
+                    'clauses': evidence, 'instruction': data.get('candidate_instruction'),
+                    'advice': data.get('advice'), 'validation': data.get('validation', {}), 'warnings': warnings}).to_dict()
+        advice = data.get('advice', {})
+        candidate = data.get('candidate_instruction') or {}
+        conversion = advice.get('conversion', {})
+        if candidate.get('payload'):
+            instruction_status, instruction_reason = 'generated', '已生成候选协议字段；不下发、不改变设备状态'
+        elif advice.get('error_code'):
+            instruction_status, instruction_reason = 'unavailable', advice['notice']
+            status = 'partial'
+            warnings.append(advice['notice'])
+        elif conversion:
+            instruction_status, instruction_reason = conversion['status'], conversion['reason']
+        elif candidate:
+            instruction_status, instruction_reason = 'blocked', candidate.get('explanation', '生成条件不足')
+        else:
+            instruction_status, instruction_reason = 'not_generated', advice.get('notice') or data.get('control_block_reason') or '本次未形成设备指令，请查看来源、建议及生成条件'
+        # An old pre-model success must never survive when advice removed its payload.
+        if status == 'generated' and not candidate.get('payload'):
+            status = 'uncertain'
+        data['processing'] = {
+            'query_intent': data.get('intent_classification', {}).get('intent', 'assessment'),
+            'source_result_status': source_result_status,
+            'decomposition_source': data.get('decomposition', {}).get('source'),
+            'advice_status': advice.get('status', 'not_requested'),
+            'advice_reason_code': advice.get('reason_code', ''),
+            'instruction_status': instruction_status, 'instruction_reason': instruction_reason,
+        }
+        data['generation_only'] = True
+        graph = getattr(self, "knowledge_graph", None)
+        rule_id = data.get("selected_rule", {}).get("rule_id")
+        if graph is not None and rule_id:
+            data["knowledge_graph_evidence"] = graph.evidence_path(rule_id)
         response = AnalysisResponse(request.meta.request_id, status, data, evidence, warnings)
         if self.audit_store:
             scenario = str(data.get("context", {}).get("scenario", ""))
             self.audit_store.append(AuditRecord(request.meta.request_id, "analyze", asdict(request), response.to_dict(), scenario))
         return response
+

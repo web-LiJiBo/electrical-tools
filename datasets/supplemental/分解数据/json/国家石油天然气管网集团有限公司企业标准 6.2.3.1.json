@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.2.3.1",
+  "entities": [
+    {
+      "name": "梯田、台田或坡地地段农田恢复，应在管沟内修筑截渗墙，恢复田坎",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3.1        梯田、台田或坡地地段农田恢复，应在管沟内修筑截渗墙，恢复田坎。梯田、台田地为黏性\n土或沙质土时，可采用素土、袋装土、干砌石或浆砌石修筑田坎。\n6.2.3.2  坡地整治，应符合GB/T     16453.1的规定。",
+      "type": "语义分解",
+      "subject": "梯田、台田或坡地地段农田恢复，应在管沟内修筑截渗墙，恢复田坎",
+      "action": "",
+      "operation": "梯田、台田或坡地地段农田恢复，应在管沟内修筑截渗墙，恢复田坎。梯田、台田地为黏性 土或沙质土时，可采用素土、袋装土、干砌石或浆砌石修筑田坎。 6.2.3.2 坡地整治，应符合GB/T 16453.1的规定。",
+      "condition": "",
+      "constraint": "6.2.3.1        梯田、台田或坡地地段农田恢复，应在管沟内修筑截渗墙，恢复田坎。梯田、台田地为黏性\n土或沙质土时，可采用素土、袋装土、干砌石或浆砌石修筑田坎。\n6.2.3.2  坡地整治，应符合GB/T     16453.1的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "梯田、台田或坡地地段农田恢复，应在管沟内修筑截渗墙，恢复田坎"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40713,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

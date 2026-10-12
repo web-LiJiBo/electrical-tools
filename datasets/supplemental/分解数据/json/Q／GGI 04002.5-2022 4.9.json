@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全生产检查规范 第5部分:油气输送场站",
+  "standard_id": "Q/GGI 04002.5-2022",
+  "version": "2022",
+  "chapter_path": "4.9",
+  "entities": [
+    {
+      "name": "气体检测报警装置安全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9 气体检测报警装置安全检查 气体检测报警装置安全检查的内容应符合表16的规定。",
+      "type": "语义分解",
+      "subject": "气体检测报警装置安全",
+      "action": "",
+      "operation": "按表检查",
+      "condition": "",
+      "constraint": "4.9 气体检测报警装置安全检查 气体检测报警装置安全检查的内容应符合表16的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体检测报警装置安全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3134,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺表16；标准编号需复核"
+      ]
+    }
+  }
+}

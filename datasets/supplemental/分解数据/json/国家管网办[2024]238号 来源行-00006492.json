@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006492",
+  "entities": [
+    {
+      "name": "第六十九条 [动土作业实施要求 ] (四)动土作业人员在沟 ,坑下作业应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十九条 [动土作业实施要求 ] (四)动土作业人员在沟 ,坑下作业应按规定坡度顺序进行,动土土方应自上而下逐层动土,不应采用挖底脚的办法动土。作业人员应正确穿戴安全帽。防护鞋。手套等个人防护装备,不应在坑。井。沟内休息; 不应在土壁上挖洞攀登; 不应在坑井沟上端边沿站立 行走。",
+      "type": "语义分解",
+      "subject": "第六十九条 [动土作业实施要求 ] (四)动土作业人员在沟 ,坑下作业应",
+      "action": "",
+      "operation": "第六十九条 [动土作业实施要求 ] (四)动土作业人员在沟 ,坑下作业应按规定坡度顺序进行,动土土方应自上而下逐层动土,不应采用挖底脚的办法动土。作业人员应正确穿戴安全帽。防护鞋。手套等个人防护装备,不应在坑。井。沟内休息; 不应在土壁上挖洞攀登; 不应在坑井沟上端边沿站立 行走。",
+      "condition": "",
+      "constraint": "第六十九条 [动土作业实施要求 ] (四)动土作业人员在沟 ,坑下作业应按规定坡度顺序进行,动土土方应自上而下逐层动土,不应采用挖底脚的办法动土。作业人员应正确穿戴安全帽。防护鞋。手套等个人防护装备,不应在坑。井。沟内休息; 不应在土壁上挖洞攀登; 不应在坑井沟上端边沿站立 行走。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十九条 [动土作业实施要求 ] (四)动土作业人员在沟 ,坑下作业应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6492,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

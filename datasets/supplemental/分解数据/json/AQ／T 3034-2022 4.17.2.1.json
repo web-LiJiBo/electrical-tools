@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.17.2.1",
+  "entities": [
+    {
+      "name": "事故事件分类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.17.2.1 事故事件按专业可分为工艺事故事件.设备事故事件.电气事故事件,仪表事故事件及其他 事故事件;按后果类型可分为人身伤害事故事件 泄漏事故事件 灾事故事件,爆炸事故事件 ,中毒事 故事件(见 A.11 )。",
+      "type": "语义分解",
+      "subject": "事故事件分类",
+      "action": "",
+      "operation": "按专业工艺设备电气仪表等按后果伤害泄漏火灾爆炸中毒",
+      "condition": "",
+      "constraint": "4.17.2.1 事故事件按专业可分为工艺事故事件.设备事故事件.电气事故事件,仪表事故事件及其他 事故事件;按后果类型可分为人身伤害事故事件 泄漏事故事件 灾事故事件,爆炸事故事件 ,中毒事 故事件(见 A.11 )。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故事件分类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5308,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；災字前缺火疑似OCR需复核"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009841",
+  "entities": [
+    {
+      "name": ")当需要对同步以太类型的数据业务速率进行频率透传 时 ，OTN 将数据封",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 4)当需要对同步以太类型的数据业务速率进行频率透传\n   时 ，OTN  将数据封装适配到 ODUk  时应采用GMP  或\n       BMP 方式，不应采用GFP  的方式。",
+      "type": "语义分解",
+      "subject": ")当需要对同步以太类型的数据业务速率进行频率透传 时 ，OTN 将数据封",
+      "action": "",
+      "operation": ")当需要对同步以太类型的数据业务速率进行频率透传 时 ，OTN 将数据封装适配到 ODUk 时应采用GMP 或 BMP 方式，不应采用GFP 的方式。",
+      "condition": "",
+      "constraint": " 4)当需要对同步以太类型的数据业务速率进行频率透传\n   时 ，OTN  将数据封装适配到 ODUk  时应采用GMP  或\n       BMP 方式，不应采用GFP  的方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")当需要对同步以太类型的数据业务速率进行频率透传 时 ，OTN 将数据封"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9841,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

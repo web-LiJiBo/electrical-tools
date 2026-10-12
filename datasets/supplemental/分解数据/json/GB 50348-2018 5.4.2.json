@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "5.4.2",
+  "entities": [
+    {
+      "name": "深化设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 深化设计应在审查通过的施工图设计文件基础上，对施工图设计的内容进行审查、核算和修订，量化、准确地表达设计内容及设备、材料、工艺要求等，对施工方、施工作业的特殊要求等进行详尽说明。",
+      "type": "语义分解",
+      "subject": "深化设计",
+      "action": "",
+      "operation": "以通过图为基审算修订量化内容设备材料工艺特殊施工要求",
+      "condition": "",
+      "constraint": "5.4.2 深化设计应在审查通过的施工图设计文件基础上，对施工图设计的内容进行审查、核算和修订，量化、准确地表达设计内容及设备、材料、工艺要求等，对施工方、施工作业的特殊要求等进行详尽说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "深化设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6917,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

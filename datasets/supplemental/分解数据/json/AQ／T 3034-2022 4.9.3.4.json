@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.3.4",
+  "entities": [
+    {
+      "name": "开停车安全条件确认",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.3.4 企业应根据不同类型的开停车方案编制相应的安全条件确认表 ,并组织专业技术人员按照安 全条件确认表(见 A.6)逐项确认 ,确保安全措施有效落实。",
+      "type": "语义分解",
+      "subject": "开停车安全条件确认",
+      "action": "",
+      "operation": "按类型编表专业人员逐项确认措施",
+      "condition": "",
+      "constraint": "4.9.3.4 企业应根据不同类型的开停车方案编制相应的安全条件确认表 ,并组织专业技术人员按照安 全条件确认表(见 A.6)逐项确认 ,确保安全措施有效落实。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开停车安全条件确认"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5165,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺A.6"
+      ]
+    }
+  }
+}

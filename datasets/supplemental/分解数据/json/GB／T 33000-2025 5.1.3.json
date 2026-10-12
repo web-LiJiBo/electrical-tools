@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "5.1.3",
+  "entities": [
+    {
+      "name": "业务部门安全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.3 业务部门 企业应明确各业务部门的安全生产职责。业务部门应将安全生产职责分解到相应岗位，将安全生产工作融入本部门业务决策、执行和考核的全过程。",
+      "type": "语义分解",
+      "subject": "业务部门安全",
+      "action": "",
+      "operation": "职责分解岗位融业务决策执行考核",
+      "condition": "",
+      "constraint": "5.1.3 业务部门 企业应明确各业务部门的安全生产职责。业务部门应将安全生产职责分解到相应岗位，将安全生产工作融入本部门业务决策、执行和考核的全过程。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "业务部门安全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7241,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

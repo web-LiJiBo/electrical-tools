@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013793",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "BDI:  后向缺陷指示\nBEI:   后向误码指示\nBIAE: 后向输入定位误码\nBIP8:8   位比特间插奇偶校验\nDAPI: 目的接入点标识\nFA: 帧定位\nFAS: 帧定位信号\t      GCC:  通用通信通道\n     STAT: 状态\n     MFAS: 复帧定位信号\n      OSMC: OTN 同步信息通路\n      RES:  为将来国际标准预留\n     SAPI: 源接入点标识\n     SM: 段监测\n      TTI:  路径踪迹标识\tSM #2～#n",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "BDI:  后向缺陷指示\nBEI:   后向误码指示\nBIAE: 后向输入定位误码\nBIP8:8   位比特间插奇偶校验\nDAPI: 目的接入点标识\nFA: 帧定位\nFAS: 帧定位信号\t      GCC:  通用通信通道\n     STAT: 状态\n     MFAS: 复帧定位信号\n      OSMC: OTN 同步信息通路\n      RES:  为将来国际标准预留\n     SAPI: 源接入点标识\n     SM: 段监测\n      TTI:  路径踪迹标识\tSM #2～#n",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13793,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

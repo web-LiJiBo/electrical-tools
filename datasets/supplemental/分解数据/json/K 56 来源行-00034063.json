@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034063",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      两种气体中的一种是样品气 , 另一种是标准气。  对于燃气轮机烟气测量来讲 , 在 N2   中带 20. 95%\n02   的气体被用作标准气 , 气体经过两个通道被引入到测量室(见图 3) 。  在磁场区两个通道中的一个把\n标准气与样品气混合。由于两个通道是连接的 , 与样品气中 02  含量成比例的压力差 Δp产生一个流动 ,\n该流动通过微流动传感器转变成电信号。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "      两种气体中的一种是样品气 , 另一种是标准气。  对于燃气轮机烟气测量来讲 , 在 N2   中带 20. 95%\n02   的气体被用作标准气 , 气体经过两个通道被引入到测量室(见图 3) 。  在磁场区两个通道中的一个把\n标准气与样品气混合。由于两个通道是连接的 , 与样品气中 02  含量成比例的压力差 Δp产生一个流动 ,\n该流动通过微流动传感器转变成电信号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34063,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

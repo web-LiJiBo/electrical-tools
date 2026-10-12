@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024274",
+  "entities": [
+    {
+      "name": "b) 系统 B 收到后向系统 A 返回 100Trying消息 ,表明呼",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    系统 B 收到后向系统 A 返回 100Trying消息 ,表明呼叫处理中 ;\nc)    系统 B 向系统 A发送 180Ringing振铃消息 ;",
+      "type": "语义分解",
+      "subject": "b) 系统 B 收到后向系统 A 返回 100Trying消息 ,表明呼",
+      "action": "",
+      "operation": "b) 系统 B 收到后向系统 A 返回 100Trying消息 ,表明呼叫处理中 ; c) 系统 B 向系统 A发送 180Ringing振铃消息",
+      "condition": "",
+      "constraint": "b)    系统 B 收到后向系统 A 返回 100Trying消息 ,表明呼叫处理中 ;\nc)    系统 B 向系统 A发送 180Ringing振铃消息 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 系统 B 收到后向系统 A 返回 100Trying消息 ,表明呼"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24274,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

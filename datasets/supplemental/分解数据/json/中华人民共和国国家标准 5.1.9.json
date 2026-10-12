@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "5.1.9",
+  "entities": [
+    {
+      "name": "EMS或SNMS互连",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.9  可采用 EMS 与 NMS 互连或 SNMS 与 NMS 互连，互连\t经济性等因素确定。",
+      "type": "语义分解",
+      "subject": "EMS或SNMS互连",
+      "action": "",
+      "operation": "可与NMS互连",
+      "condition": "",
+      "constraint": "5.1.9  可采用 EMS 与 NMS 互连或 SNMS 与 NMS 互连，互连\t经济性等因素确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "EMS或SNMS互连"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8920,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；混入另一条款经济性残文原行保留编号待核对"
+      ]
+    }
+  }
+}

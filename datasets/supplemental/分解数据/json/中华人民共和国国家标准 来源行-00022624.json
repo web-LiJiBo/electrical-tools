@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022624",
+  "entities": [
+    {
+      "name": "地处少雷区和中雷区的交换局总配线架，可采用由气体 放电管或半导体保护器件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    地处少雷区和中雷区的交换局总配线架，可采用由气体\n放电管或半导体保护器件与正温度系数热敏电阻组成的保安\n单元。",
+      "type": "语义分解",
+      "subject": "地处少雷区和中雷区的交换局总配线架，可采用由气体 放电管或半导体保护器件",
+      "action": "",
+      "operation": "地处少雷区和中雷区的交换局总配线架，可采用由气体 放电管或半导体保护器件与正温度系数热敏电阻组成的保安 单元。",
+      "condition": "",
+      "constraint": "       1    地处少雷区和中雷区的交换局总配线架，可采用由气体\n放电管或半导体保护器件与正温度系数热敏电阻组成的保安\n单元。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地处少雷区和中雷区的交换局总配线架，可采用由气体 放电管或半导体保护器件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22624,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

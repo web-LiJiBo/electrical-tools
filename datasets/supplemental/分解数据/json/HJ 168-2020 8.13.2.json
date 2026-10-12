@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.13.2",
+  "entities": [
+    {
+      "name": "样品采集保存说明",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.13.2 应明确采样器具,采样量。样品的保存方法。保存时间等。如有特殊要求, 应具体说明 =",
+      "type": "语义分解",
+      "subject": "样品采集保存说明",
+      "action": "",
+      "operation": "明确器具采样量保存方式时间及特殊要求",
+      "condition": "",
+      "constraint": "8.13.2 应明确采样器具,采样量。样品的保存方法。保存时间等。如有特殊要求, 应具体说明 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样品采集保存说明"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2401,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

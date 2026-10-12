@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "10.1.2",
+  "entities": [
+    {
+      "name": "工程验收分组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.2 工程验收时，应组成工程验收组。工程验收组可根据实际情况下设施工验收组、技术验收组和资料审查组。",
+      "type": "语义分解",
+      "subject": "工程验收分组",
+      "action": "",
+      "operation": "成立验收组可分施工技术资料组",
+      "condition": "工程验收时",
+      "constraint": "10.1.2 工程验收时，应组成工程验收组。工程验收组可根据实际情况下设施工验收组、技术验收组和资料审查组。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程验收分组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7158,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

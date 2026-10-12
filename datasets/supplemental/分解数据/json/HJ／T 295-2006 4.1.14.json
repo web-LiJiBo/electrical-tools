@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.1.14",
+  "entities": [
+    {
+      "name": "环保处罚材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.14 环境保护行政处罚工作中形成的违法案件立案审批表。调查询问笔录。证据。给予处罚建议书。陈述。申辩笔录。听证笔录。行政处罚告知书及其送达回执。罚款收据。解缴国库的票据, 行政处罚失定书及其送达回执。申请法院强制执行回执。结案说明等文件材料,由形成文件材料的责任者负责收集积累",
+      "type": "语义分解",
+      "subject": "环保处罚材料",
+      "action": "",
+      "operation": "形成者收立案证据建议听证告知处罚送达缴款执行结案材料",
+      "condition": "",
+      "constraint": "4.1.14 环境保护行政处罚工作中形成的违法案件立案审批表。调查询问笔录。证据。给予处罚建议书。陈述。申辩笔录。听证笔录。行政处罚告知书及其送达回执。罚款收据。解缴国库的票据, 行政处罚失定书及其送达回执。申请法院强制执行回执。结案说明等文件材料,由形成文件材料的责任者负责收集积累",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环保处罚材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3060,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

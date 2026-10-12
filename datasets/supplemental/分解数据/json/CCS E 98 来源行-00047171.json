@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00047171",
+  "entities": [
+    {
+      "name": "分析储罐腐蚀原因是整体掌握储罐腐蚀情况，并防范严重 腐蚀进一步发生的有效",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   分析储罐腐蚀原因是整体掌握储罐腐蚀情况，并防范严重\n腐蚀进一步发生的有效手段，因此应在完成直接检测与评价后，\n结合腐蚀产物信息、环境分析结果、介质分析结果，并结合内\n外检测情况，分析储罐发生腐蚀的原因，并评价内外防腐措施\n是否有效。",
+      "type": "语义分解",
+      "subject": "分析储罐腐蚀原因是整体掌握储罐腐蚀情况，并防范严重 腐蚀进一步发生的有效",
+      "action": "",
+      "operation": "分析储罐腐蚀原因是整体掌握储罐腐蚀情况，并防范严重 腐蚀进一步发生的有效手段，因此应在完成直接检测与评价后， 结合腐蚀产物信息、环境分析结果、介质分析结果，并结合内 外检测情况，分析储罐发生腐蚀的原因，并评价内外防腐措施 是否有效。",
+      "condition": "",
+      "constraint": "   分析储罐腐蚀原因是整体掌握储罐腐蚀情况，并防范严重\n腐蚀进一步发生的有效手段，因此应在完成直接检测与评价后，\n结合腐蚀产物信息、环境分析结果、介质分析结果，并结合内\n外检测情况，分析储罐发生腐蚀的原因，并评价内外防腐措施\n是否有效。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分析储罐腐蚀原因是整体掌握储罐腐蚀情况，并防范严重 腐蚀进一步发生的有效"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47171,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

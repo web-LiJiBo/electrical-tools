@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "9.1.5",
+  "entities": [
+    {
+      "name": "设备抽样检验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.5 工程检验应对系统设备按产品类型及型号进行抽样，抽样数量应符合下列规定: 1 同型号产品数量≤5时，应全数检验; 2 同型号产品数量＞5时，应根据现行国家标准《计数抽样检验程序 第1部分:按接收质量限(AQL)检索的逐批检验抽样计划》GB/T 2828.1-2012中的一般检验水平Ⅰ进行抽样，且抽样数量不应少于5; 3 高风险保护对象安全防范工程的检验，可加大抽样数量。",
+      "type": "语义分解",
+      "subject": "设备抽样检验",
+      "action": "",
+      "operation": "同型号不超五全检超五按GB/T2828.1一般I且不少五高风险可增量",
+      "condition": "",
+      "constraint": "9.1.5 工程检验应对系统设备按产品类型及型号进行抽样，抽样数量应符合下列规定: 1 同型号产品数量≤5时，应全数检验; 2 同型号产品数量＞5时，应根据现行国家标准《计数抽样检验程序 第1部分:按接收质量限(AQL)检索的逐批检验抽样计划》GB/T 2828.1-2012中的一般检验水平Ⅰ进行抽样，且抽样数量不应少于5; 3 高风险保护对象安全防范工程的检验，可加大抽样数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备抽样检验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7129,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

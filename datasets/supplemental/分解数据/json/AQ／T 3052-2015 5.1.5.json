@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.1.5",
+  "entities": [
+    {
+      "name": "总指挥部救援协调",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5 总指挥部根据现场指挥部提供的情祝对应急救援进行指导 ,划定事故单位周边警戒隔离区域 根据现场指挥部请求调集有关资源 ,下达应急疏散指令",
+      "type": "语义分解",
+      "subject": "总指挥部救援协调",
+      "action": "",
+      "operation": "指导警戒调资源发布疏散指令",
+      "condition": "",
+      "constraint": "5.1.5 总指挥部根据现场指挥部提供的情祝对应急救援进行指导 ,划定事故单位周边警戒隔离区域 根据现场指挥部请求调集有关资源 ,下达应急疏散指令",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总指挥部救援协调"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5979,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

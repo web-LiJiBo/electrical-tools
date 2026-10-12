@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042436",
+  "entities": [
+    {
+      "name": "含有在电场中可以迁移离子的化学物质 ,在本规范中指邻近和接触埋地或水下金",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      含有在电场中可以迁移离子的化学物质 ,在本规范中指邻近和接触埋地或水下金属管道系统的土\n壤或液体 ,其中包括水分和所含有的其他化学物质 。\n3.3",
+      "type": "语义分解",
+      "subject": "含有在电场中可以迁移离子的化学物质 ,在本规范中指邻近和接触埋地或水下金",
+      "action": "",
+      "operation": "含有在电场中可以迁移离子的化学物质 ,在本规范中指邻近和接触埋地或水下金属管道系统的土 壤或液体 ,其中包括水分和所含有的其他化学物质 。 3.3",
+      "condition": "",
+      "constraint": "      含有在电场中可以迁移离子的化学物质 ,在本规范中指邻近和接触埋地或水下金属管道系统的土\n壤或液体 ,其中包括水分和所含有的其他化学物质 。\n3.3",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含有在电场中可以迁移离子的化学物质 ,在本规范中指邻近和接触埋地或水下金"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42436,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

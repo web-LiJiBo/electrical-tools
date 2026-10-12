@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021811",
+  "entities": [
+    {
+      "name": "当输入PDH 接口频率与标称频率频差在规定±a×10⁶ 内应满足要求，a",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   当输入PDH 接口频率与标称频率频差在规定±a×10⁶  内应满足要求，a 值在ITU-T G703 中规定。\n\n14.2.3.2   指针调整抖动和漂移",
+      "type": "语义分解",
+      "subject": "当输入PDH 接口频率与标称频率频差在规定±a×10⁶ 内应满足要求，a",
+      "action": "",
+      "operation": "当输入PDH 接口频率与标称频率频差在规定±a×10⁶ 内应满足要求，a 值在ITU-T G703 中规定。 14.2.3.2 指针调整抖动和漂移",
+      "condition": "",
+      "constraint": "   当输入PDH 接口频率与标称频率频差在规定±a×10⁶  内应满足要求，a 值在ITU-T G703 中规定。\n\n14.2.3.2   指针调整抖动和漂移",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当输入PDH 接口频率与标称频率频差在规定±a×10⁶ 内应满足要求，a"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21811,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

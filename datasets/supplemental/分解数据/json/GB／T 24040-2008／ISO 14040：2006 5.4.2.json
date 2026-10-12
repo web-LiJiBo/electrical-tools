@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "5.4.2",
+  "entities": [
+    {
+      "name": "LCIA要素",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 LCIA 的要素 注: 关于 LCIA 术语更多的解释见 GB/T 24044。将 LCIA 阶段划分为不同的要素是十分有必要的，也是十分有帮助的，原因如下：LCIA 的每种要素都有不同特点并能明确定义；便于在 LCA 研究目的和范围的确定阶段对每种要素分别加以考虑；便于对每项要素的 LCIA 方法、假设以及其他决定分别进行质量评价；能使每项要素中的 LCIA 程序、假设以及其他操作具有透明度，以便进行鉴定性评审和编写报告；能使每项要素中对价值的选用和主观性(以下称价值选择)具有透明度，以便进行鉴定性评审和编写报告。评价的详细程度 评价哪些影响以及采用的方法是由研究的目的和范围决定的。",
+      "type": "语义分解",
+      "subject": "LCIA要素",
+      "action": "",
+      "operation": "分要素考虑方法假设价值选择质量透明性",
+      "condition": "",
+      "constraint": "5.4.2 LCIA 的要素 注: 关于 LCIA 术语更多的解释见 GB/T 24044。将 LCIA 阶段划分为不同的要素是十分有必要的，也是十分有帮助的，原因如下：LCIA 的每种要素都有不同特点并能明确定义；便于在 LCA 研究目的和范围的确定阶段对每种要素分别加以考虑；便于对每项要素的 LCIA 方法、假设以及其他决定分别进行质量评价；能使每项要素中的 LCIA 程序、假设以及其他操作具有透明度，以便进行鉴定性评审和编写报告；能使每项要素中对价值的选用和主观性(以下称价值选择)具有透明度，以便进行鉴定性评审和编写报告。评价的详细程度 评价哪些影响以及采用的方法是由研究的目的和范围决定的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCIA要素"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1050,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

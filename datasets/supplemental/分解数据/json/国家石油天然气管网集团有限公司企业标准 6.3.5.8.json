@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.5.8",
+  "entities": [
+    {
+      "name": "在高寒区采用撒播草籽进行生态恢复，宜选用乡土草种在夏季播种，并铺设无纺布",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.8        在高寒区采用撒播草籽进行生态恢复，宜选用乡土草种在夏季播种，并铺设无纺布、草席等\n覆盖材料保湿保温。播种当年越冬时，应覆盖以保障植物安全越冬。",
+      "type": "语义分解",
+      "subject": "在高寒区采用撒播草籽进行生态恢复，宜选用乡土草种在夏季播种，并铺设无纺布",
+      "action": "",
+      "operation": "在高寒区采用撒播草籽进行生态恢复，宜选用乡土草种在夏季播种，并铺设无纺布、草席等 覆盖材料保湿保温。播种当年越冬时，应覆盖以保障植物安全越冬。",
+      "condition": "",
+      "constraint": "6.3.5.8        在高寒区采用撒播草籽进行生态恢复，宜选用乡土草种在夏季播种，并铺设无纺布、草席等\n覆盖材料保湿保温。播种当年越冬时，应覆盖以保障植物安全越冬。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在高寒区采用撒播草籽进行生态恢复，宜选用乡土草种在夏季播种，并铺设无纺布"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40783,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

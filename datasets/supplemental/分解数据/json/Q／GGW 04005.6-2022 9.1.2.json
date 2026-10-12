@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "9.1.2",
+  "entities": [
+    {
+      "name": "水土环境监测频次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2 排污单位地表水每年丰。平。枯水期至少各监测一次, 排污单位土壤。地下水每年至少监测 次。发生突发环境事故对周边环境质量造成明显影响的,或周边环境质量相关污染物超标的,应适当增 加监测频次。",
+      "type": "语义分解",
+      "subject": "水土环境监测频次",
+      "action": "",
+      "operation": "地表水丰平枯各年一次异常时加频",
+      "condition": "",
+      "constraint": "9.1.2 排污单位地表水每年丰。平。枯水期至少各监测一次, 排污单位土壤。地下水每年至少监测 次。发生突发环境事故对周边环境质量造成明显影响的,或周边环境质量相关污染物超标的,应适当增 加监测频次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水土环境监测频次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 488,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；土壤地下水每年次数原文缺失"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.9.2",
+  "entities": [
+    {
+      "name": "每波光功率网管读数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.2  从网管上读取每波光功率与仪表在MPI-RM点所测光功\n率比较，允许偏差应为±1.5dB。",
+      "type": "语义分解",
+      "subject": "每波光功率网管读数",
+      "action": "",
+      "operation": "与MPI-RM仪表测值偏差允许正负1.5dB",
+      "condition": "",
+      "constraint": "4.9.2  从网管上读取每波光功率与仪表在MPI-RM点所测光功\n率比较，允许偏差应为±1.5dB。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "每波光功率网管读数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8137,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

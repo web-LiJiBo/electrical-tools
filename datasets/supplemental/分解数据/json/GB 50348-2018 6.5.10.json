@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.5.10",
+  "entities": [
+    {
+      "name": "视频联网",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.10 进行视频监控系统集成联网时，应能通过管理平台实现设备的集中管理和资源共享，可有下列方式: 1 模拟视频多级汇聚方式; 2 数字视频逐级汇聚方式; 3 基于云平台的视频统一管理方式; 4 视频监控系统与公共安全视频监控联网系统集成联网时，其传输、交换、控制协议应符合现行国家标准《公共安全视频监控联网系统信息传输、交换、控制技术要求》GB/T 28181的要求。",
+      "type": "语义分解",
+      "subject": "视频联网",
+      "action": "",
+      "operation": "集中管理共享模拟数字云多级公共联网协议GB/T28181",
+      "condition": "",
+      "constraint": "6.5.10 进行视频监控系统集成联网时，应能通过管理平台实现设备的集中管理和资源共享，可有下列方式: 1 模拟视频多级汇聚方式; 2 数字视频逐级汇聚方式; 3 基于云平台的视频统一管理方式; 4 视频监控系统与公共安全视频监控联网系统集成联网时，其传输、交换、控制协议应符合现行国家标准《公共安全视频监控联网系统信息传输、交换、控制技术要求》GB/T 28181的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "视频联网"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6992,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

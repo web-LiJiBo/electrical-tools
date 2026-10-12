@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "15",
+  "entities": [
+    {
+      "name": "使用驱动器控制的阀门,在作业开始之前,应对阀门的驱动装置进行隔离,以确保",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "15 使用驱动器控制的阀门,在作业开始之前,应对阀门的驱动装置进行隔离,以确保任何外来动力源都无法驱动其驱动装置。",
+      "type": "语义分解",
+      "subject": "使用驱动器控制的阀门,在作业开始之前,应对阀门的驱动装置进行隔离,以确保",
+      "action": "",
+      "operation": "使用驱动器控制的阀门,在作业开始之前,应对阀门的驱动装置进行隔离,以确保任何外来动力源都无法驱动其驱动装置。",
+      "condition": "",
+      "constraint": "15 使用驱动器控制的阀门,在作业开始之前,应对阀门的驱动装置进行隔离,以确保任何外来动力源都无法驱动其驱动装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "使用驱动器控制的阀门,在作业开始之前,应对阀门的驱动装置进行隔离,以确保"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6625,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "10.1.1.1",
+  "entities": [
+    {
+      "name": "未污染事故土壤采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.1.1 未发生污染事故的情况,采样深度及采样点个数需要根据重点关注区域的具体情况确定。如 潜在污染物排放设施在地面以上,则重点采集地表浅层土样 0 cm ~ 50 cm, 至少采集 2 个土壤样品; 若 潜任污染设施压地层以下, 如地下储罐。管道污油罐等 需根据设施的埋深情况,设置土壤采样深度, 采样深度至少与疑似污染设施埋深平行,根据士层分布情况, 至少采集 3 个士壤样品。",
+      "type": "语义分解",
+      "subject": "未污染事故土壤采样",
+      "action": "",
+      "operation": "按地上地下设施确定深度及样品数",
+      "condition": "未发生污染事故的情况",
+      "constraint": "10.1.1.1 未发生污染事故的情况,采样深度及采样点个数需要根据重点关注区域的具体情况确定。如 潜在污染物排放设施在地面以上,则重点采集地表浅层土样 0 cm ~ 50 cm, 至少采集 2 个土壤样品; 若 潜任污染设施压地层以下, 如地下储罐。管道污油罐等 需根据设施的埋深情况,设置土壤采样深度, 采样深度至少与疑似污染设施埋深平行,根据士层分布情况, 至少采集 3 个士壤样品。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "未污染事故土壤采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 500,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

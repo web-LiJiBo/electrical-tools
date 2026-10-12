@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.21",
+  "entities": [
+    {
+      "name": "其他许可管理内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.21 其他控制管理要求及许可内容 大气环境管理要求。水环境管理要求 壤污染防治要求。固体废物污染环境防治要求。工业噪声 污染环境防治要求等内容依据大气污染防治法。水污染防治法 土壤污染防治法。固体废物污染环境防 治法。噪声污染防治法等相应法律法规 标准规范。以及地方生态环境主管部门的相关规定进行判定。",
+      "type": "语义分解",
+      "subject": "其他许可管理内容",
+      "action": "",
+      "operation": "依据相应污染防治法律标准及地方规定判定",
+      "condition": "",
+      "constraint": "6.2.21 其他控制管理要求及许可内容 大气环境管理要求。水环境管理要求 壤污染防治要求。固体废物污染环境防治要求。工业噪声 污染环境防治要求等内容依据大气污染防治法。水污染防治法 土壤污染防治法。固体废物污染环境防 治法。噪声污染防治法等相应法律法规 标准规范。以及地方生态环境主管部门的相关规定进行判定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他许可管理内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2014,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

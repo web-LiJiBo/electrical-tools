@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018516",
+  "entities": [
+    {
+      "name": "● 选项1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "●  选项1:当输入信号“无过渡”,也就是在N 个连续的脉冲间隔内(10≤N≤255)       当\n   信号电平低于或等于标称值下35dB 检出LOS 缺陷。当输入信号有过渡，也就是在N 个\n   连续的脉冲间隔内(10≤ N≤255)      当信号电平高于或等于标称值下15dB应清除LOS\n   缺陷。信号“过渡”与CMI 编码信号相关。",
+      "type": "语义分解",
+      "subject": "● 选项1",
+      "action": "",
+      "operation": "● 选项1:当输入信号“无过渡”,也就是在N 个连续的脉冲间隔内(10≤N≤255) 当 信号电平低于或等于标称值下35dB 检出LOS 缺陷。当输入信号有过渡，也就是在N 个 连续的脉冲间隔内(10≤ N≤255) 当信号电平高于或等于标称值下15dB应清除LOS 缺陷。信号“过渡”与CMI 编码信号相关。",
+      "condition": "",
+      "constraint": "●  选项1:当输入信号“无过渡”,也就是在N 个连续的脉冲间隔内(10≤N≤255)       当\n   信号电平低于或等于标称值下35dB 检出LOS 缺陷。当输入信号有过渡，也就是在N 个\n   连续的脉冲间隔内(10≤ N≤255)      当信号电平高于或等于标称值下15dB应清除LOS\n   缺陷。信号“过渡”与CMI 编码信号相关。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "● 选项1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18516,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

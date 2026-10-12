@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036633",
+  "entities": [
+    {
+      "name": "采样气袋应选择低吸附性和低气体渗透率，不释放干扰物质的氟聚合物薄膜气袋",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   采样气袋应选择低吸附性和低气体渗透率，不释放干扰物质的氟聚合物薄膜气袋。采样气袋的容积\n至少1L,   根据分析方法所需的最少样品体积来选择采样气袋的容积规格。采样前应观察气袋外观，检\n查是否有破裂损坏等可能漏气的情况，如发现则弃用。",
+      "type": "语义分解",
+      "subject": "采样气袋应选择低吸附性和低气体渗透率，不释放干扰物质的氟聚合物薄膜气袋",
+      "action": "",
+      "operation": "采样气袋应选择低吸附性和低气体渗透率，不释放干扰物质的氟聚合物薄膜气袋。采样气袋的容积 至少1L, 根据分析方法所需的最少样品体积来选择采样气袋的容积规格。采样前应观察气袋外观，检 查是否有破裂损坏等可能漏气的情况，如发现则弃用。",
+      "condition": "",
+      "constraint": "   采样气袋应选择低吸附性和低气体渗透率，不释放干扰物质的氟聚合物薄膜气袋。采样气袋的容积\n至少1L,   根据分析方法所需的最少样品体积来选择采样气袋的容积规格。采样前应观察气袋外观，检\n查是否有破裂损坏等可能漏气的情况，如发现则弃用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样气袋应选择低吸附性和低气体渗透率，不释放干扰物质的氟聚合物薄膜气袋"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36633,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

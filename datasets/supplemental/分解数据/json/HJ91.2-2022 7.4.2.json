@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "7.4.2",
+  "entities": [
+    {
+      "name": "水采样人员安全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.2 为了保证采样人员安全, 现场应考虑采样方式和气象条件,使用救生衣和救生绳; 船只采样, 应选用坚固的船只, 在航道上采样时, 应悬挂信号旗; 桥上采样时 应放置安全警示牌; 涉水采样时, 应注意河流水位变化; 结冰期。封冻期。解冻期采样时,应检查冰层的位置和范围=",
+      "type": "语义分解",
+      "subject": "水采样人员安全",
+      "action": "",
+      "operation": "依方式气象用救生衣绳船坚固航道旗桥警示涉水注意冰期检查",
+      "condition": "",
+      "constraint": "7.4.2 为了保证采样人员安全, 现场应考虑采样方式和气象条件,使用救生衣和救生绳; 船只采样, 应选用坚固的船只, 在航道上采样时, 应悬挂信号旗; 桥上采样时 应放置安全警示牌; 涉水采样时, 应注意河流水位变化; 结冰期。封冻期。解冻期采样时,应检查冰层的位置和范围=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水采样人员安全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3002,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

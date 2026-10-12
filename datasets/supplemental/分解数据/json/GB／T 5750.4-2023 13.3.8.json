@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.3.8",
+  "entities": [
+    {
+      "name": "洗涤剂流注性能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.3.8 精密度和准确度 6个实验室分别用水源水、生活饮用水进行低、中、高加标回收试验，重复测定6次。水源水中阴离子合成洗涤剂测定结果相对标准偏差为0.33 %～3.1 %，回收率为87.8 %～106 %;生活饮用水相对标准偏差为0.32 %～2.9 %，回收率为82.0 %～107 %。",
+      "type": "语义分解",
+      "subject": "洗涤剂流注性能",
+      "action": "",
+      "operation": "记录六实验室不同水源偏差和加标回收率",
+      "condition": "",
+      "constraint": "13.3.8 精密度和准确度 6个实验室分别用水源水、生活饮用水进行低、中、高加标回收试验，重复测定6次。水源水中阴离子合成洗涤剂测定结果相对标准偏差为0.33 %～3.1 %，回收率为87.8 %～106 %;生活饮用水相对标准偏差为0.32 %～2.9 %，回收率为82.0 %～107 %。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "洗涤剂流注性能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1610,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；性能数据非合格阈值"
+      ]
+    }
+  }
+}

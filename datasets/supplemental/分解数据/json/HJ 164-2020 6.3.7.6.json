@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.3.7.6",
+  "entities": [
+    {
+      "name": "封闭生产井采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.7.6 对封闭的生产井可在抽水时从泵房出水管放水阀处采样,采样前应将抽水管中存水放净。",
+      "type": "语义分解",
+      "subject": "封闭生产井采样",
+      "action": "",
+      "operation": "抽水时在阀处采样并预先排净存水",
+      "condition": "对封闭的生产井",
+      "constraint": "6.3.7.6 对封闭的生产井可在抽水时从泵房出水管放水阀处采样,采样前应将抽水管中存水放净。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "封闭生产井采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2102,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

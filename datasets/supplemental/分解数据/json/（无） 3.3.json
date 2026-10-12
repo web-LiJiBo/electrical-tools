@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "3.3",
+  "entities": [
+    {
+      "name": "自动化能量隔离锁定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3 自动化系统能量隔离和锁定要求",
+      "type": "语义分解",
+      "subject": "自动化能量隔离锁定",
+      "action": "",
+      "operation": "规定章节",
+      "condition": "",
+      "constraint": "3.3 自动化系统能量隔离和锁定要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "自动化能量隔离锁定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6630,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题标准编号无待核对"
+      ]
+    }
+  }
+}

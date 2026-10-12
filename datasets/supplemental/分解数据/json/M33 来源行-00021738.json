@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021738",
+  "entities": [
+    {
+      "name": "e) 后续动作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "e)    后续动作：见ITU-T  G806-2006的10.1.1.2。一旦宣告aAIS,  该功能应250μs 内输出全'“1”\n   信号；撤销在aAIS,  应250μs内输出正常信号。全“1”信号比特率应与XAR值一致。\nf)    缺陷关联：见ITU-T G.806-2006的10.1.1.2。\ng)    性能监测：见 ITU-T  G.806-2006的10.1.1.2。",
+      "type": "语义分解",
+      "subject": "e) 后续动作",
+      "action": "",
+      "operation": "e) 后续动作：见ITU-T G806-2006的10.1.1.2。一旦宣告aAIS, 该功能应250μs 内输出全'“1” 信号；撤销在aAIS, 应250μs内输出正常信号。全“1”信号比特率应与XAR值一致。 f) 缺陷关联：见ITU-T G.806-2006的10.1.1.2。 g) 性能监测：见 ITU-T G.806-2006的10.1.1.2。",
+      "condition": "",
+      "constraint": "e)    后续动作：见ITU-T  G806-2006的10.1.1.2。一旦宣告aAIS,  该功能应250μs 内输出全'“1”\n   信号；撤销在aAIS,  应250μs内输出正常信号。全“1”信号比特率应与XAR值一致。\nf)    缺陷关联：见ITU-T G.806-2006的10.1.1.2。\ng)    性能监测：见 ITU-T  G.806-2006的10.1.1.2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 后续动作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21738,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

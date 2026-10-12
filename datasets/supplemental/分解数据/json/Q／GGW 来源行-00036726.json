@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036726",
+  "entities": [
+    {
+      "name": "指标体系建立 确定分级方法 收集项目数据 数据指标计算处理 确定指标等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "指标体系建立\n\n确定分级方法\n\n收集项目数据\n\n数据指标计算处理\n\n确定指标等级\n\n输出评价结果\n\n完成评价体系",
+      "type": "语义分解",
+      "subject": "指标体系建立 确定分级方法 收集项目数据 数据指标计算处理 确定指标等级",
+      "action": "",
+      "operation": "指标体系建立 确定分级方法 收集项目数据 数据指标计算处理 确定指标等级 输出评价结果 完成评价体系",
+      "condition": "",
+      "constraint": "指标体系建立\n\n确定分级方法\n\n收集项目数据\n\n数据指标计算处理\n\n确定指标等级\n\n输出评价结果\n\n完成评价体系",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指标体系建立 确定分级方法 收集项目数据 数据指标计算处理 确定指标等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36726,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

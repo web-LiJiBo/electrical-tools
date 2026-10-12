@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012387",
+  "entities": [
+    {
+      "name": "为实现人性化管理 , 站场宿舍 、活动室等职工业余生活 场所需要实现因特",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.0.2    为实现人性化管理 ,  站场宿舍 、活动室等职工业余生活\n场所需要实现因特网接入 ,   企业具有明确的管理规定时 ,   应遵\n循企业管理规定设置 ; 企业没有明确管理规定时 ,   可根据实际\n需要租用当地运营商宽带服务 。但是为了生产安全 ,  路由器、\n交换机 、  无线收发设备等网络设备应独立组网设置。",
+      "type": "语义分解",
+      "subject": "为实现人性化管理 , 站场宿舍 、活动室等职工业余生活 场所需要实现因特",
+      "action": "",
+      "operation": "为实现人性化管理 , 站场宿舍 、活动室等职工业余生活 场所需要实现因特网接入 , 企业具有明确的管理规定时 , 应遵 循企业管理规定设置 ; 企业没有明确管理规定时 , 可根据实际 需要租用当地运营商宽带服务 。但是为了生产安全 , 路由器、 交换机 、 无线收发设备等网络设备应独立组网设置。",
+      "condition": "",
+      "constraint": "8.0.2    为实现人性化管理 ,  站场宿舍 、活动室等职工业余生活\n场所需要实现因特网接入 ,   企业具有明确的管理规定时 ,   应遵\n循企业管理规定设置 ; 企业没有明确管理规定时 ,   可根据实际\n需要租用当地运营商宽带服务 。但是为了生产安全 ,  路由器、\n交换机 、  无线收发设备等网络设备应独立组网设置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为实现人性化管理 , 站场宿舍 、活动室等职工业余生活 场所需要实现因特"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12387,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

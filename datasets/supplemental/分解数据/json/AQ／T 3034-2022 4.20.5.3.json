@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.20.5.3",
+  "entities": [
+    {
+      "name": "外审配合",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.20.5.3 企业应本着实事求是的原则配合外部审计工作 ,充分暴露企业安全管理中的根源性问题 ,依 照审计结果和建议 ,借助外部力量推动企业安全管理体系的改善",
+      "type": "语义分解",
+      "subject": "外审配合",
+      "action": "",
+      "operation": "暴露问题根源并借助外力改进体系",
+      "condition": "",
+      "constraint": "4.20.5.3 企业应本着实事求是的原则配合外部审计工作 ,充分暴露企业安全管理中的根源性问题 ,依 照审计结果和建议 ,借助外部力量推动企业安全管理体系的改善",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外审配合"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5366,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

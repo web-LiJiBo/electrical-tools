@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.2.5.2",
+  "entities": [
+    {
+      "name": "石油紫外标准测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.5.2 于 &支10 ml 具塞比色管中 ,分别加入石油标准使用溶液 0.20 mI, 0.50 II, 1.00 II, 2.00 mL  3.00 mL, 5.00 ml, 7.00 ml, 10.0 mI , 用石油醚稀释至刻度,配成含石油为 0.20 ng/I 0.50 mg/L,1.00 mg/L 2.00 mg/L 3.00 mg/L. 5.00 mg/L, 7.00 mg/L  10.0 I8/ 的标准系列  于 256 nm 波长,1 cm 石英比色皿 ,以石油醚为参比 ,测量样品管和标准系列的吸光度 注: 每次测量 ,包括标准液配制 ,萃取样品和参比溶剂均使用同批石油醚_",
+      "type": "语义分解",
+      "subject": "石油紫外标准测定",
+      "action": "",
+      "operation": "按八体积配系列256纳米一厘米池测吸光度全程同批石油醚",
+      "condition": "",
+      "constraint": "6.2.5.2 于 &支10 ml 具塞比色管中 ,分别加入石油标准使用溶液 0.20 mI, 0.50 II, 1.00 II, 2.00 mL  3.00 mL, 5.00 ml, 7.00 ml, 10.0 mI , 用石油醚稀释至刻度,配成含石油为 0.20 ng/I 0.50 mg/L,1.00 mg/L 2.00 mg/L 3.00 mg/L. 5.00 mg/L, 7.00 mg/L  10.0 I8/ 的标准系列  于 256 nm 波长,1 cm 石英比色皿 ,以石油醚为参比 ,测量样品管和标准系列的吸光度 注: 每次测量 ,包括标准液配制 ,萃取样品和参比溶剂均使用同批石油醚_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油紫外标准测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1821,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；管数&及部分浓度单位识别异常"
+      ]
+    }
+  }
+}

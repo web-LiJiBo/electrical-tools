@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042742",
+  "entities": [
+    {
+      "name": "ρg— 气体密度 ,单位为千克每立方米(kg/m3 )",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "ρg— 气体密度 ,单位为千克每立方米(kg/m3 ) ;\nρl— 液体密度 ,单位为千克每立方米(kg/m3 ) ;\nΔH— 测点间的高程差 ,单位为米(m) ;\nΔL— 测点间的直线距离 ,单位为米(m) 。",
+      "type": "语义分解",
+      "subject": "ρg— 气体密度 ,单位为千克每立方米(kg/m3 )",
+      "action": "",
+      "operation": "ρg— 气体密度 ,单位为千克每立方米(kg/m3 ) ; ρl— 液体密度 ,单位为千克每立方米(kg/m3 ) ; ΔH— 测点间的高程差 ,单位为米(m) ; ΔL— 测点间的直线距离 ,单位为米(m) 。",
+      "condition": "",
+      "constraint": "ρg— 气体密度 ,单位为千克每立方米(kg/m3 ) ;\nρl— 液体密度 ,单位为千克每立方米(kg/m3 ) ;\nΔH— 测点间的高程差 ,单位为米(m) ;\nΔL— 测点间的直线距离 ,单位为米(m) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ρg— 气体密度 ,单位为千克每立方米(kg/m3 )"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42742,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

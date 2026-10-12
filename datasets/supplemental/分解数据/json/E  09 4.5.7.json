@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.5.7",
+  "entities": [
+    {
+      "name": "路堑上的野草和矮树篱的生长对道路的安全具有潜在危害，除草作业应使用轻便工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.7     路堑上的野草和矮树篱的生长对道路的安全具有潜在危害，除草作业应使用轻便工具；使用\n除草剂或其他化学物质除草时，应对其进行严格评估。",
+      "type": "语义分解",
+      "subject": "路堑上的野草和矮树篱的生长对道路的安全具有潜在危害，除草作业应使用轻便工",
+      "action": "",
+      "operation": "路堑上的野草和矮树篱的生长对道路的安全具有潜在危害，除草作业应使用轻便工具；使用 除草剂或其他化学物质除草时，应对其进行严格评估。",
+      "condition": "",
+      "constraint": "4.5.7     路堑上的野草和矮树篱的生长对道路的安全具有潜在危害，除草作业应使用轻便工具；使用\n除草剂或其他化学物质除草时，应对其进行严格评估。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "路堑上的野草和矮树篱的生长对道路的安全具有潜在危害，除草作业应使用轻便工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41114,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

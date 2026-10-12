@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013319",
+  "entities": [
+    {
+      "name": "ITU-T G.698.1 具有单路光接口的多路 DWDM 应用 ( M",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       ITU-T G.698.1   具有单路光接口的多路 DWDM 应用 ( Muletichannel DWDM applications with\n\nsingle-channel optical interfaces)",
+      "type": "语义分解",
+      "subject": "ITU-T G.698.1 具有单路光接口的多路 DWDM 应用 ( M",
+      "action": "",
+      "operation": "ITU-T G.698.1 具有单路光接口的多路 DWDM 应用 ( Muletichannel DWDM applications with single-channel optical interfaces)",
+      "condition": "",
+      "constraint": "       ITU-T G.698.1   具有单路光接口的多路 DWDM 应用 ( Muletichannel DWDM applications with\n\nsingle-channel optical interfaces)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ITU-T G.698.1 具有单路光接口的多路 DWDM 应用 ( M"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13319,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

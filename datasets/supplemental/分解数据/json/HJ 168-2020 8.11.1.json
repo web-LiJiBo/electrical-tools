@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.11.1",
+  "entities": [
+    {
+      "name": "试剂材料导语",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.11.1 一般采用如下表达作为导语, 除非另有说明,分析时均使用符合国家标准的分析纯试剂,实验用水为蒸馏水。",
+      "type": "语义分解",
+      "subject": "试剂材料导语",
+      "action": "",
+      "operation": "规定分析纯试剂及蒸馏实验用水",
+      "condition": "除非另有说明",
+      "constraint": "8.11.1 一般采用如下表达作为导语, 除非另有说明,分析时均使用符合国家标准的分析纯试剂,实验用水为蒸馏水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试剂材料导语"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2386,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

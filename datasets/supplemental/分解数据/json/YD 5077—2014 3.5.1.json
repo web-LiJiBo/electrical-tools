@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.5.1",
+  "entities": [
+    {
+      "name": "总及数字配线架",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5.1  总配线架安装应符合YD/T  694《总配线架》的有关规定。\n3.5.2 数字配线架安装应符合YD/T 1437《数字配线架》的有关\n规定。",
+      "type": "语义分解",
+      "subject": "总及数字配线架",
+      "action": "",
+      "operation": "分别符合YD/T694及YD/T1437",
+      "condition": "",
+      "constraint": "3.5.1  总配线架安装应符合YD/T  694《总配线架》的有关规定。\n3.5.2 数字配线架安装应符合YD/T 1437《数字配线架》的有关\n规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总及数字配线架"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26699,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含3.5.1及3.5.2"
+      ]
+    }
+  }
+}

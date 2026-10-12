@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016729",
+  "entities": [
+    {
+      "name": "OTN设备类型包括电交叉OTN 设备、光交叉OTN 设备和光电混合交叉O",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   OTN设备类型包括电交叉OTN 设备、光交叉OTN 设备和光电混合交叉OTN 设备。",
+      "type": "语义分解",
+      "subject": "OTN设备类型包括电交叉OTN 设备、光交叉OTN 设备和光电混合交叉O",
+      "action": "",
+      "operation": "OTN设备类型包括电交叉OTN 设备、光交叉OTN 设备和光电混合交叉OTN 设备。",
+      "condition": "",
+      "constraint": "   OTN设备类型包括电交叉OTN 设备、光交叉OTN 设备和光电混合交叉OTN 设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN设备类型包括电交叉OTN 设备、光交叉OTN 设备和光电混合交叉O"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16729,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

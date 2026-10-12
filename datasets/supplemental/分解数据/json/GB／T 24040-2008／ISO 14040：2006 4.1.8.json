@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "4.1.8",
+  "entities": [
+    {
+      "name": "LCA决策科学优先",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.8 科学方法的优先性 LCA 中的决策更适宜以自然科学为基础。如果不可能，则可以应用其他的科学方法(例如社会和经济科学)或者是参考国际惯例。如果既没有科学基础存在，也没有基于其他科学方法的理由，同时也没有国际惯例可以遵循，那么所做的决策可建立在价值选择的基础之上。",
+      "type": "语义分解",
+      "subject": "LCA决策科学优先",
+      "action": "",
+      "operation": "自然科学优先再其他科学惯例价值选择",
+      "condition": "",
+      "constraint": "4.1.8 科学方法的优先性 LCA 中的决策更适宜以自然科学为基础。如果不可能，则可以应用其他的科学方法(例如社会和经济科学)或者是参考国际惯例。如果既没有科学基础存在，也没有基于其他科学方法的理由，同时也没有国际惯例可以遵循，那么所做的决策可建立在价值选择的基础之上。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCA决策科学优先"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "11.1",
+  "entities": [
+    {
+      "name": "土壤分析方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1 分析方法选用 按照相关标准或技术规范要求,选择能满足监测工作需求和质量要求的分析方法实施监测活动。分 析方法选择 验证和确认符合 HJ 630要求_ 土壤风险管控标准 (如 GB 15618和 GB 36600)  或评价标 准中对分析方法有明确规定时,按相关标准执行。",
+      "type": "语义分解",
+      "subject": "土壤分析方法",
+      "action": "",
+      "operation": "按标准规范选满足目的质量方法验证确认符合HJ630",
+      "condition": "",
+      "constraint": "11.1 分析方法选用 按照相关标准或技术规范要求,选择能满足监测工作需求和质量要求的分析方法实施监测活动。分 析方法选择 验证和确认符合 HJ 630要求_ 土壤风险管控标准 (如 GB 15618和 GB 36600)  或评价标 准中对分析方法有明确规定时,按相关标准执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤分析方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2285,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

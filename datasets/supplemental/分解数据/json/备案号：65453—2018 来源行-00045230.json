@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045230",
+  "entities": [
+    {
+      "name": "选择间接检测工具的方法和步骤",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  2   选择间接检测工具的方法和步骤。          。\n 3 划分各ECDA 管段的范围、特点、检测的可行性分析。",
+      "type": "语义分解",
+      "subject": "选择间接检测工具的方法和步骤",
+      "action": "",
+      "operation": "选择间接检测工具的方法和步骤。 。 3 划分各ECDA 管段的范围、特点、检测的可行性分析。",
+      "condition": "",
+      "constraint": "  2   选择间接检测工具的方法和步骤。          。\n 3 划分各ECDA 管段的范围、特点、检测的可行性分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "选择间接检测工具的方法和步骤"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45230,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.3.3",
+  "entities": [
+    {
+      "name": "加热炉无有效手工监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.3 未按照相关规范文件等要求进行手工监测 (无有效监测数据)的排放口或污染物。采用产排污系数法核算颗粒物等其他污染物实际排放量,根据单位产品污染物的产生量。按直排进行核算,核算方法见式 (5) , 式 (6) ,参照工业锅炉产排污系数法选取。",
+      "type": "语义分解",
+      "subject": "加热炉无有效手工监测",
+      "action": "",
+      "operation": "按产排污系数参照锅炉直排核算",
+      "condition": "",
+      "constraint": "5.3.3 未按照相关规范文件等要求进行手工监测 (无有效监测数据)的排放口或污染物。采用产排污系数法核算颗粒物等其他污染物实际排放量,根据单位产品污染物的产生量。按直排进行核算,核算方法见式 (5) , 式 (6) ,参照工业锅炉产排污系数法选取。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "加热炉无有效手工监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 636,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺式5和6"
+      ]
+    }
+  }
+}

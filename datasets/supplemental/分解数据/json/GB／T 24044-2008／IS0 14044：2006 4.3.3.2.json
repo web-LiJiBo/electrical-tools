@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.3.3.2",
+  "entities": [
+    {
+      "name": "数据有效性审定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3.2 数据审定 在数据收集的过程中应对数据的有效性进行检查 ,以确保数据的质量要求符合其应用意图 ,并可以 提供相应的证据予以证实= 有效性的确认可以包括建立如物质平衡 .能量平衡和(或)进行排放因子的比较分析。由于每个单 元过程都遵循物质和能量守恒定律 ,因此物质和能量的平衡能为单元过程的有效性提供有用的检查 通过该程序发现的明显异常的数据需用其他数据替换 ,这些数据的选择应符合4.2.3.5中的规定。",
+      "type": "语义分解",
+      "subject": "数据有效性审定",
+      "action": "",
+      "operation": "质检物能平衡排放因子异常替换",
+      "condition": "",
+      "constraint": "4.3.3.2 数据审定 在数据收集的过程中应对数据的有效性进行检查 ,以确保数据的质量要求符合其应用意图 ,并可以 提供相应的证据予以证实= 有效性的确认可以包括建立如物质平衡 .能量平衡和(或)进行排放因子的比较分析。由于每个单 元过程都遵循物质和能量守恒定律 ,因此物质和能量的平衡能为单元过程的有效性提供有用的检查 通过该程序发现的明显异常的数据需用其他数据替换 ,这些数据的选择应符合4.2.3.5中的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据有效性审定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1089,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047835",
+  "entities": [
+    {
+      "name": "目前管网主要安装的腐蚀速率试片以1cm²为主，且管道上 存在一定比例的小",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   目前管网主要安装的腐蚀速率试片以1cm²为主，且管道上\n存在一定比例的小于1cm²的破损点，直流干扰腐蚀情况下，小\n破损点的腐蚀速率更快，若按较大尺寸进行评价则可能导致管\n道腐蚀泄漏风险没有得到充分评估。",
+      "type": "语义分解",
+      "subject": "目前管网主要安装的腐蚀速率试片以1cm²为主，且管道上 存在一定比例的小",
+      "action": "",
+      "operation": "目前管网主要安装的腐蚀速率试片以1cm²为主，且管道上 存在一定比例的小于1cm²的破损点，直流干扰腐蚀情况下，小 破损点的腐蚀速率更快，若按较大尺寸进行评价则可能导致管 道腐蚀泄漏风险没有得到充分评估。",
+      "condition": "",
+      "constraint": "   目前管网主要安装的腐蚀速率试片以1cm²为主，且管道上\n存在一定比例的小于1cm²的破损点，直流干扰腐蚀情况下，小\n破损点的腐蚀速率更快，若按较大尺寸进行评价则可能导致管\n道腐蚀泄漏风险没有得到充分评估。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "目前管网主要安装的腐蚀速率试片以1cm²为主，且管道上 存在一定比例的小"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47835,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046427",
+  "entities": [
+    {
+      "name": "后评价的目的是评价前三个步骤的有效性、减缓措施的 执行状况、制定腐蚀控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1   后评价的目的是评价前三个步骤的有效性、减缓措施的\n执行状况、制定腐蚀控制和减缓计划及确定下次评价时间间隔。\nICDA是一个连续改进的过程，通过将ICDA 和运行数据整合，\n识别确定已经和正在发生腐蚀的位置，以及将来的腐蚀趋势。",
+      "type": "语义分解",
+      "subject": "后评价的目的是评价前三个步骤的有效性、减缓措施的 执行状况、制定腐蚀控制",
+      "action": "",
+      "operation": "后评价的目的是评价前三个步骤的有效性、减缓措施的 执行状况、制定腐蚀控制和减缓计划及确定下次评价时间间隔。 ICDA是一个连续改进的过程，通过将ICDA 和运行数据整合， 识别确定已经和正在发生腐蚀的位置，以及将来的腐蚀趋势。",
+      "condition": "",
+      "constraint": "7.1.1   后评价的目的是评价前三个步骤的有效性、减缓措施的\n执行状况、制定腐蚀控制和减缓计划及确定下次评价时间间隔。\nICDA是一个连续改进的过程，通过将ICDA 和运行数据整合，\n识别确定已经和正在发生腐蚀的位置，以及将来的腐蚀趋势。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "后评价的目的是评价前三个步骤的有效性、减缓措施的 执行状况、制定腐蚀控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46427,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "6.1.2.4",
+  "entities": [
+    {
+      "name": "废气处理运行记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2.4 废气处理设施运行状况记录 按日记录废气处理使用的吸附剂。过滤材料等耗材的名称及用量; 记录废气处理设施运行参数。故障及维护情况等。",
+      "type": "语义分解",
+      "subject": "废气处理运行记录",
+      "action": "",
+      "operation": "逐日耗材及参数故障维护记录",
+      "condition": "",
+      "constraint": "6.1.2.4 废气处理设施运行状况记录 按日记录废气处理使用的吸附剂。过滤材料等耗材的名称及用量; 记录废气处理设施运行参数。故障及维护情况等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废气处理运行记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2923,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

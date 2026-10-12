@@ -1,0 +1,41 @@
+{
+  "standard_name": "海洋石油设施热工(动火)作业安全规程",
+  "standard_id": "SY 6303-2016",
+  "version": "2016",
+  "chapter_path": "4.7",
+  "entities": [
+    {
+      "name": "紧急动火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7 在井喷。谥油等紧急情况下热工(动火)作业时。应按照企业制定的应急预案相关内容组织实施。",
+      "type": "语义分解",
+      "subject": "紧急动火",
+      "action": "",
+      "operation": "按企业应急预案实施",
+      "condition": "",
+      "constraint": "4.7 在井喷。谥油等紧急情况下热工(动火)作业时。应按照企业制定的应急预案相关内容组织实施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "紧急动火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7302,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；紧急情形字谥油疑似异常需核查非免审批授权"
+      ]
+    }
+  }
+}

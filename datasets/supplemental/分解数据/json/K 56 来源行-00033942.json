@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033942",
+  "entities": [
+    {
+      "name": "当要求提供协商一致的准确度时 , 颗粒测量的试验时间应延长",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "当要求提供协商一致的准确度时 , 颗粒测量的试验时间应延长。\n应准备如表 A1 中所示的试验报告。",
+      "type": "语义分解",
+      "subject": "当要求提供协商一致的准确度时 , 颗粒测量的试验时间应延长",
+      "action": "",
+      "operation": "当要求提供协商一致的准确度时 , 颗粒测量的试验时间应延长。 应准备如表 A1 中所示的试验报告。",
+      "condition": "",
+      "constraint": "当要求提供协商一致的准确度时 , 颗粒测量的试验时间应延长。\n应准备如表 A1 中所示的试验报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当要求提供协商一致的准确度时 , 颗粒测量的试验时间应延长"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33942,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1 总则 能源评审能够为确定能源绩效参数和能源基准提供有用的能源绩效相关停息 ,组织需对能源绩效相关停息进行收集 ,分析和处理 ,以此为基础开展能源绩效的测量和量化= 附录 B阐述了如何利用能源评审的结果及相关停息确定能源绩效参数并建立能源基准=",
+      "type": "语义分解",
+      "subject": "组织",
+      "action": "",
+      "operation": "收集分析处理能源绩效信息",
+      "condition": "",
+      "constraint": "组织需对能源绩效相关停息进行收集",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "信息文字识别成停息；附录B未提供"
+      ]
+    }
+  }
+}

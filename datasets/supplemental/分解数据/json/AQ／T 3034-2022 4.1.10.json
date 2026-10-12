@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.1.10",
+  "entities": [
+    {
+      "name": "主要负责人安全量化评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.10 企业主要负责人应定期组织开展化T过程安金管理要萦考核 .安全管理体系评审 ,安全生产绩 效考核 ,外部安全审计等活动 ,实现安全管理量化评估诺核",
+      "type": "语义分解",
+      "subject": "主要负责人安全量化评估",
+      "action": "",
+      "operation": "定期组织管理绩效考核评审审计",
+      "condition": "",
+      "constraint": "4.1.10 企业主要负责人应定期组织开展化T过程安金管理要萦考核 .安全管理体系评审 ,安全生产绩 效考核 ,外部安全审计等活动 ,实现安全管理量化评估诺核",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主要负责人安全量化评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5051,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；化T、安金、要萦、诺核等识别异常"
+      ]
+    }
+  }
+}

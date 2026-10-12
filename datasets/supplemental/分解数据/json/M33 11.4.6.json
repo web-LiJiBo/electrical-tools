@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "11.4.6",
+  "entities": [
+    {
+      "name": "VC-4-X至ODUk适配",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.4.6 VC-4-X到ODUk 适配功能 (S4-X/ODUk_A)(X=17,k=1 or X=68,k=2)",
+      "type": "语义分解",
+      "subject": "VC-4-X至ODUk适配",
+      "action": "",
+      "operation": "标题列X17对应k1及X68对应k2",
+      "condition": "",
+      "constraint": "11.4.6 VC-4-X到ODUk 适配功能 (S4-X/ODUk_A)(X=17,k=1 or X=68,k=2)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VC-4-X至ODUk适配"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20213,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；无具体适配正文"
+      ]
+    }
+  }
+}

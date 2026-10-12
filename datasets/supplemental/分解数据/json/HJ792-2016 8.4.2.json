@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "8.4.2",
+  "entities": [
+    {
+      "name": "制药敏感目标评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.2 敏感目标环境质量监测结果与评价 (环评批复有要求时) 以文字和表格的形式对敏感目标地表水、地下水、环境空气和声环境等环境质量监测结果分别进行叙述和表示,并对照验收评价标准或环评的本底值进行评价,分析试生产以来环境质量的变化趋势。出现超标或不符合环评要求时 ,应进行必要的原因分析。",
+      "type": "语义分解",
+      "subject": "制药敏感目标评价",
+      "action": "",
+      "operation": "环评要求时对标准本底评质量趋势不符查因",
+      "condition": "",
+      "constraint": "8.4.2 敏感目标环境质量监测结果与评价 (环评批复有要求时) 以文字和表格的形式对敏感目标地表水、地下水、环境空气和声环境等环境质量监测结果分别进行叙述和表示,并对照验收评价标准或环评的本底值进行评价,分析试生产以来环境质量的变化趋势。出现超标或不符合环评要求时 ,应进行必要的原因分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药敏感目标评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2803,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

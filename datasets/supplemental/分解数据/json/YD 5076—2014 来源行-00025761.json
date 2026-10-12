@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025761",
+  "entities": [
+    {
+      "name": ". 特大及省会城市长途交换系统的数量和设置位置应在预测 该城市本地电话网",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1.  特大及省会城市长途交换系统的数量和设置位置应在预测\n该城市本地电话网的基本饱和期和长途终端业务的规模容量，并\n考虑转话业务进行总的长话电路规模预测的基础上，考虑市场份\n额，保证网络安全，按照技术经济原则，统一规划，分期建设和\n实施。",
+      "type": "语义分解",
+      "subject": ". 特大及省会城市长途交换系统的数量和设置位置应在预测 该城市本地电话网",
+      "action": "",
+      "operation": ". 特大及省会城市长途交换系统的数量和设置位置应在预测 该城市本地电话网的基本饱和期和长途终端业务的规模容量，并 考虑转话业务进行总的长话电路规模预测的基础上，考虑市场份 额，保证网络安全，按照技术经济原则，统一规划，分期建设和 实施。",
+      "condition": "",
+      "constraint": "       1.  特大及省会城市长途交换系统的数量和设置位置应在预测\n该城市本地电话网的基本饱和期和长途终端业务的规模容量，并\n考虑转话业务进行总的长话电路规模预测的基础上，考虑市场份\n额，保证网络安全，按照技术经济原则，统一规划，分期建设和\n实施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 特大及省会城市长途交换系统的数量和设置位置应在预测 该城市本地电话网"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25761,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

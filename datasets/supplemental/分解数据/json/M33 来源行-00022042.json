@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00022042",
+  "entities": [
+    {
+      "name": "STM-64中继器抖动累计假想参考模型如图G.1所示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      STM-64中继器抖动累计假想参考模型如图G.1所示。HRM由50个串行的中继器组成，假设每个\n满足 STM-64(A   型)中继器抖动和转移函数要求。50个中继器之前加上一个SDH 设备时钟 ( SEC,\n见ITU-TG.813),    假设它也满足抖动要求 (ITU-TG.813没有规定STM-64的 SEC 抖动产生要求；它规\n定的SEC 抖动产生要求的最高速率是STM-16)。在这种情况下，50个中继器链的末端输出抖动预计在\nITU-T G.8251-2001表11规定的STM-16 输出抖动限定值之内(即网络抖动极限)。",
+      "type": "语义分解",
+      "subject": "STM-64中继器抖动累计假想参考模型如图G.1所示",
+      "action": "",
+      "operation": "STM-64中继器抖动累计假想参考模型如图G.1所示。HRM由50个串行的中继器组成，假设每个 满足 STM-64(A 型)中继器抖动和转移函数要求。50个中继器之前加上一个SDH 设备时钟 ( SEC, 见ITU-TG.813), 假设它也满足抖动要求 (ITU-TG.813没有规定STM-64的 SEC 抖动产生要求；它规 定的SEC 抖动产生要求的最高速率是STM-16)。在这种情况下，50个中继器链的末端输出抖动预计在 ITU-T G.8251-2001表11规定的S",
+      "condition": "",
+      "constraint": "      STM-64中继器抖动累计假想参考模型如图G.1所示。HRM由50个串行的中继器组成，假设每个\n满足 STM-64(A   型)中继器抖动和转移函数要求。50个中继器之前加上一个SDH 设备时钟 ( SEC,\n见ITU-TG.813),    假设它也满足抖动要求 (ITU-TG.813没有规定STM-64的 SEC 抖动产生要求；它规\n定的SEC 抖动产生要求的最高速率是STM-16)。在这种情况下，50个中继器链的末端输出抖动预计在\nITU-T G.8251-2001表11规定的STM-16 输出抖动限定值之内(即网络抖动极限)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "STM-64中继器抖动累计假想参考模型如图G.1所示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22042,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

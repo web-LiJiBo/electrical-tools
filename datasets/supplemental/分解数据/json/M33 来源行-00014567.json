@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014567",
+  "entities": [
+    {
+      "name": "f) 光监控通道主要是用来监控OTN 设备间的工作状态及保护状态，信号速",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  f)    光监控通道主要是用来监控OTN 设备间的工作状态及保护状态，信号速率可选择STM-1\n     (155.520Mb/s)、E1(2Mb/s)、E2(8Mb/s)    或10Mb/s、100Mb/s 以太网或其他速率；\n\n  g) 可提供公务通道和使用者通道接口(可选)。",
+      "type": "语义分解",
+      "subject": "f) 光监控通道主要是用来监控OTN 设备间的工作状态及保护状态，信号速",
+      "action": "",
+      "operation": "f) 光监控通道主要是用来监控OTN 设备间的工作状态及保护状态，信号速率可选择STM-1 (155.520Mb/s)、E1(2Mb/s)、E2(8Mb/s) 或10Mb/s、100Mb/s 以太网或其他速率； g) 可提供公务通道和使用者通道接口(可选)。",
+      "condition": "",
+      "constraint": "  f)    光监控通道主要是用来监控OTN 设备间的工作状态及保护状态，信号速率可选择STM-1\n     (155.520Mb/s)、E1(2Mb/s)、E2(8Mb/s)    或10Mb/s、100Mb/s 以太网或其他速率；\n\n  g) 可提供公务通道和使用者通道接口(可选)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 光监控通道主要是用来监控OTN 设备间的工作状态及保护状态，信号速"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14567,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

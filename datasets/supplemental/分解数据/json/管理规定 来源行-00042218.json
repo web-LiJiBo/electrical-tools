@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042218",
+  "entities": [
+    {
+      "name": "（ 一 ）一般质量事故由所属企业录入集团公司事故事件管 理系统进行报告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 一 ）一般质量事故由所属企业录入集团公司事故事件管\n\n理系统进行报告；直接经济损失 500 万元（含）以上的一般质量\n\n事故，以及较大及以上质量事故上报集团公司安全环保部及业务\n\n主管部门，集团公司安全环保部应向集团公司分管质量工作的副\n\n总经理报告。",
+      "type": "语义分解",
+      "subject": "（ 一 ）一般质量事故由所属企业录入集团公司事故事件管 理系统进行报告",
+      "action": "",
+      "operation": "（ 一 ）一般质量事故由所属企业录入集团公司事故事件管 理系统进行报告；直接经济损失 500 万元（含）以上的一般质量 事故，以及较大及以上质量事故上报集团公司安全环保部及业务 主管部门，集团公司安全环保部应向集团公司分管质量工作的副 总经理报告。",
+      "condition": "",
+      "constraint": "    （ 一 ）一般质量事故由所属企业录入集团公司事故事件管\n\n理系统进行报告；直接经济损失 500 万元（含）以上的一般质量\n\n事故，以及较大及以上质量事故上报集团公司安全环保部及业务\n\n主管部门，集团公司安全环保部应向集团公司分管质量工作的副\n\n总经理报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 一 ）一般质量事故由所属企业录入集团公司事故事件管 理系统进行报告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42218,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

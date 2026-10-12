@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "13.1.7",
+  "entities": [
+    {
+      "name": "数据及软交换计费点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.1.7  数据接入业务的计费点在接入设备上。在 SAC 设备上\n应设立计费点，用于记录数据流量、用户占用的带宽等信息。\n13.1.8       软交换网内各计费点应能将不同业务类型的呼叫记录分\n别存放，并能根据要求准确、及时将呼叫记录采用主动或被动方式\n自动传送到计费结算账务中心或计费网关设备，且计费信息的传\n送地点可以灵活配置，呼叫记录可以按要求传送到 一 个或多个\n地点。",
+      "type": "语义分解",
+      "subject": "数据及软交换计费点",
+      "action": "",
+      "operation": "接入设备SAC记录流量带宽分类呼叫记录准确及时自动传中心或网关位置可配",
+      "condition": "",
+      "constraint": "13.1.7  数据接入业务的计费点在接入设备上。在 SAC 设备上\n应设立计费点，用于记录数据流量、用户占用的带宽等信息。\n13.1.8       软交换网内各计费点应能将不同业务类型的呼叫记录分\n别存放，并能根据要求准确、及时将呼叫记录采用主动或被动方式\n自动传送到计费结算账务中心或计费网关设备，且计费信息的传\n送地点可以灵活配置，呼叫记录可以按要求传送到 一 个或多个\n地点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据及软交换计费点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26319,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含13.1.7及13.1.8"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "8.0.4",
+  "entities": [
+    {
+      "name": "办公网络节点布局",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.0.4    办公用计算机网络核心节点宜设置在管道运行管理单位\n总部或区域管理中心 ,  各工艺站场 、维抢修机构 、  区域管理中\n心等站点作为接入节点或汇聚节点接入核心节点。",
+      "type": "语义分解",
+      "subject": "办公网络节点布局",
+      "action": "",
+      "operation": "核心宜总部或区域中心其他站点接入或汇聚",
+      "condition": "",
+      "constraint": "8.0.4    办公用计算机网络核心节点宜设置在管道运行管理单位\n总部或区域管理中心 ,  各工艺站场 、维抢修机构 、  区域管理中\n心等站点作为接入节点或汇聚节点接入核心节点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "办公网络节点布局"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12002,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019760",
+  "entities": [
+    {
+      "name": ")在承载保护通道光纤上",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)在承载保护通道光纤上：该功能提取MSn 净荷(也就是n 个 AUG 时隙),n 个保护AUG\n    输出到MSnP2fsh_CI_Dp。该功能从MSn_AI_D 信号中提取16个APS 比特K1 比特1到\n    比特8和K2比特1到比特8。如果连续3帧值相同应接受新值，该值通过MSnP2fsh_CI_APS",
+      "type": "语义分解",
+      "subject": ")在承载保护通道光纤上",
+      "action": "",
+      "operation": ")在承载保护通道光纤上：该功能提取MSn 净荷(也就是n 个 AUG 时隙),n 个保护AUG 输出到MSnP2fsh_CI_Dp。该功能从MSn_AI_D 信号中提取16个APS 比特K1 比特1到 比特8和K2比特1到比特8。如果连续3帧值相同应接受新值，该值通过MSnP2fsh_CI_APS",
+      "condition": "",
+      "constraint": "1)在承载保护通道光纤上：该功能提取MSn 净荷(也就是n 个 AUG 时隙),n 个保护AUG\n    输出到MSnP2fsh_CI_Dp。该功能从MSn_AI_D 信号中提取16个APS 比特K1 比特1到\n    比特8和K2比特1到比特8。如果连续3帧值相同应接受新值，该值通过MSnP2fsh_CI_APS",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")在承载保护通道光纤上"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19760,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

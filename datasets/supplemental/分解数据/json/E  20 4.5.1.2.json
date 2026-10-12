@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.5.1.2",
+  "entities": [
+    {
+      "name": "施工完成后应及时进行场地平整和地貌恢复，并根据所在敏感区保护对象特性制定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1.2   施工完成后应及时进行场地平整和地貌恢复，并根据所在敏感区保护对象特性制定针对性的\n保护方案。",
+      "type": "语义分解",
+      "subject": "施工完成后应及时进行场地平整和地貌恢复，并根据所在敏感区保护对象特性制定",
+      "action": "",
+      "operation": "施工完成后应及时进行场地平整和地貌恢复，并根据所在敏感区保护对象特性制定针对性的 保护方案。",
+      "condition": "",
+      "constraint": "4.5.1.2   施工完成后应及时进行场地平整和地貌恢复，并根据所在敏感区保护对象特性制定针对性的\n保护方案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工完成后应及时进行场地平整和地貌恢复，并根据所在敏感区保护对象特性制定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41990,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

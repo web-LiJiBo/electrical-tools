@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.5",
+  "entities": [
+    {
+      "name": "验收评价标准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5 验收评价标准 列出验收评价标准,格式参见附录 C 表C.10~表 C.14,污染物排放总量控制指标参见附录 C 表 C.15。",
+      "type": "语义分解",
+      "subject": "验收评价标准",
+      "action": "",
+      "operation": "按附录格式列标准及总量指标",
+      "condition": "",
+      "constraint": "6.5 验收评价标准 列出验收评价标准,格式参见附录 C 表C.10~表 C.14,污染物排放总量控制指标参见附录 C 表 C.15。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "验收评价标准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2753,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺附录表C.10至C.15"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.6.4",
+  "entities": [
+    {
+      "name": "范围补充说明",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.6.4 标准名称中没有包括, 但需要说明的内容",
+      "type": "语义分解",
+      "subject": "范围补充说明",
+      "action": "",
+      "operation": "说明名称未包括但需要内容",
+      "condition": "",
+      "constraint": "8.6.4 标准名称中没有包括, 但需要说明的内容",
+      "constraint_role": "informational",
+      "related_entities": [
+        "范围补充说明"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2368,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

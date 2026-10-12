@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.7",
+  "entities": [
+    {
+      "name": "许可排放标准限值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.7 废气(废水)污染物排放标准及限值 依据现行有效的国家或地方污染物排放标准及其修改单中的排放浓度,排放速率。污染物去除效率 等要求进行判定。应严格按照标准适用范围选用污染物排放标准,不应执行行政规范性文件等=",
+      "type": "语义分解",
+      "subject": "许可排放标准限值",
+      "action": "",
+      "operation": "按有效标准修改单适用范围核浓度速率效率不以行政文件替代",
+      "condition": "",
+      "constraint": "6.2.7 废气(废水)污染物排放标准及限值 依据现行有效的国家或地方污染物排放标准及其修改单中的排放浓度,排放速率。污染物去除效率 等要求进行判定。应严格按照标准适用范围选用污染物排放标准,不应执行行政规范性文件等=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可排放标准限值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2000,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

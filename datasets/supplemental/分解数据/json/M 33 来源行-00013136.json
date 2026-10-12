@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013136",
+  "entities": [
+    {
+      "name": "每个块由一个固有的比特差错校验( BIP) 方法的差错检测码 ( EDC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   每个块由一个固有的比特差错校验( BIP) 方法的差错检测码 ( EDC)  进行检测。EDC比特与其所在\n块是物理分离的。通常不可能确定是块还是其控制的EDC存在差错。如果一个块和其控制的EDC存在差\n异，通常会认为控制块是错的。",
+      "type": "语义分解",
+      "subject": "每个块由一个固有的比特差错校验( BIP) 方法的差错检测码 ( EDC",
+      "action": "",
+      "operation": "每个块由一个固有的比特差错校验( BIP) 方法的差错检测码 ( EDC) 进行检测。EDC比特与其所在 块是物理分离的。通常不可能确定是块还是其控制的EDC存在差错。如果一个块和其控制的EDC存在差 异，通常会认为控制块是错的。",
+      "condition": "",
+      "constraint": "   每个块由一个固有的比特差错校验( BIP) 方法的差错检测码 ( EDC)  进行检测。EDC比特与其所在\n块是物理分离的。通常不可能确定是块还是其控制的EDC存在差错。如果一个块和其控制的EDC存在差\n异，通常会认为控制块是错的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "每个块由一个固有的比特差错校验( BIP) 方法的差错检测码 ( EDC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13136,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

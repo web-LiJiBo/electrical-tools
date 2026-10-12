@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.6",
+  "entities": [
+    {
+      "name": "安全管理平台功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.6 应根据安全防范系统集成、联网与管理的实际需要，合理规划设计安全防范管理平台的具体功能，且应符合本标准第6.4.1条的相关规定。",
+      "type": "语义分解",
+      "subject": "安全管理平台功能",
+      "action": "",
+      "operation": "按集成联网管理需求规划",
+      "condition": "",
+      "constraint": "4.2.6 应根据安全防范系统集成、联网与管理的实际需要，合理规划设计安全防范管理平台的具体功能，且应符合本标准第6.4.1条的相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全管理平台功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6884,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；需结合6.4.1"
+      ]
+    }
+  }
+}

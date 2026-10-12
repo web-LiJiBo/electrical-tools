@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003881",
+  "entities": [
+    {
+      "name": "作业时，作业现场应配置移动式气体检测报警仪，连续检测受限空间内可燃气体、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5 作业时，作业现场应配置移动式气体检测报警仪，连续检测受限空间内可燃气体、有毒气体及氧气浓度，并2h记录1次;气体浓度超限报警时，应立即停止作业、撤离人员、对现场进行处理，重新检测合格后方可恢复作业。",
+      "type": "语义分解",
+      "subject": "作业时，作业现场应配置移动式气体检测报警仪，连续检测受限空间内可燃气体、",
+      "action": "",
+      "operation": "作业时，作业现场应配置移动式气体检测报警仪，连续检测受限空间内可燃气体、有毒气体及氧气浓度，并2h记录1次;气体浓度超限报警时，应立即停止作业、撤离人员、对现场进行处理，重新检测合格后方可恢复作业。",
+      "condition": "",
+      "constraint": "6.5 作业时，作业现场应配置移动式气体检测报警仪，连续检测受限空间内可燃气体、有毒气体及氧气浓度，并2h记录1次;气体浓度超限报警时，应立即停止作业、撤离人员、对现场进行处理，重新检测合格后方可恢复作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业时，作业现场应配置移动式气体检测报警仪，连续检测受限空间内可燃气体、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3881,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

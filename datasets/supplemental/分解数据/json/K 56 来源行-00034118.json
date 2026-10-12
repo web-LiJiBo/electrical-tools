@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034118",
+  "entities": [
+    {
+      "name": "ppa_____颗粒材料的密度 , kg/m3",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   ppa_____颗粒材料的密度 , kg/m3 ;\n     μ _____气体动力粘度 , pa . s;\n    w_____气体速度 , m/s;\ndeff_____探头有效直径 , m ;",
+      "type": "语义分解",
+      "subject": "ppa_____颗粒材料的密度 , kg/m3",
+      "action": "",
+      "operation": "ppa_____颗粒材料的密度 , kg/m3 ; μ _____气体动力粘度 , pa . s; w_____气体速度 , m/s; deff_____探头有效直径 , m",
+      "condition": "",
+      "constraint": "   ppa_____颗粒材料的密度 , kg/m3 ;\n     μ _____气体动力粘度 , pa . s;\n    w_____气体速度 , m/s;\ndeff_____探头有效直径 , m ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ppa_____颗粒材料的密度 , kg/m3"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34118,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

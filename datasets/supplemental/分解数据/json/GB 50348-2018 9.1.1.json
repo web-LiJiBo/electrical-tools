@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "9.1.1",
+  "entities": [
+    {
+      "name": "竣验前检验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1 安全防范工程竣工验收前，应由符合条件的检验机构对安全防范工程的系统架构、实体和电子防护的功能性能、系统安全性、电磁兼容性、防雷与接地、系统供电、信号传输、设备安装及监控中心等项目进行检验。",
+      "type": "语义分解",
+      "subject": "竣验前检验",
+      "action": "",
+      "operation": "合条件机构检架构实体电子安全EMC防雷电源传输安装中心",
+      "condition": "",
+      "constraint": "9.1.1 安全防范工程竣工验收前，应由符合条件的检验机构对安全防范工程的系统架构、实体和电子防护的功能性能、系统安全性、电磁兼容性、防雷与接地、系统供电、信号传输、设备安装及监控中心等项目进行检验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "竣验前检验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7125,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

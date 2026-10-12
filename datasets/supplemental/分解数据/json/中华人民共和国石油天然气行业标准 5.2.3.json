@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "稳态直流干扰应根据管道沿线管地电位的分布情况确定 干扰的范围及管道阳极区",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3   稳态直流干扰应根据管道沿线管地电位的分布情况确定\n干扰的范围及管道阳极区、管道阴极区和管道交变区的位置。\n5.2.4   应根据管地电位随时间的变化规律与干扰源运行状态的\n对应关系识别动态直流干扰。",
+      "type": "语义分解",
+      "subject": "稳态直流干扰应根据管道沿线管地电位的分布情况确定 干扰的范围及管道阳极区",
+      "action": "",
+      "operation": "稳态直流干扰应根据管道沿线管地电位的分布情况确定 干扰的范围及管道阳极区、管道阴极区和管道交变区的位置。 5.2.4 应根据管地电位随时间的变化规律与干扰源运行状态的 对应关系识别动态直流干扰。",
+      "condition": "",
+      "constraint": "5.2.3   稳态直流干扰应根据管道沿线管地电位的分布情况确定\n干扰的范围及管道阳极区、管道阴极区和管道交变区的位置。\n5.2.4   应根据管地电位随时间的变化规律与干扰源运行状态的\n对应关系识别动态直流干扰。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "稳态直流干扰应根据管道沿线管地电位的分布情况确定 干扰的范围及管道阳极区"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47425,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

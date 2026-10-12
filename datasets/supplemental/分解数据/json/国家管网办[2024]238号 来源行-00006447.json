@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006447",
+  "entities": [
+    {
+      "name": "第六十一条 [临时用电作业管理要求 ] (四)使用生产区内构建筑物经过正",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十一条 [临时用电作业管理要求 ] (四)使用生产区内构建筑物经过正规功率设计,规范施工验收合格后投入使用的墙壁插座。工业防爆式快接插座等电气设备设施 , 可不作为临时用电作业管理。使用前要经过所属单位同意并由专业人员指导。检查后方可使用。",
+      "type": "语义分解",
+      "subject": "第六十一条 [临时用电作业管理要求 ] (四)使用生产区内构建筑物经过正",
+      "action": "",
+      "operation": "第六十一条 [临时用电作业管理要求 ] (四)使用生产区内构建筑物经过正规功率设计,规范施工验收合格后投入使用的墙壁插座。工业防爆式快接插座等电气设备设施 , 可不作为临时用电作业管理。使用前要经过所属单位同意并由专业人员指导。检查后方可使用。",
+      "condition": "",
+      "constraint": "第六十一条 [临时用电作业管理要求 ] (四)使用生产区内构建筑物经过正规功率设计,规范施工验收合格后投入使用的墙壁插座。工业防爆式快接插座等电气设备设施 , 可不作为临时用电作业管理。使用前要经过所属单位同意并由专业人员指导。检查后方可使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十一条 [临时用电作业管理要求 ] (四)使用生产区内构建筑物经过正"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6447,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

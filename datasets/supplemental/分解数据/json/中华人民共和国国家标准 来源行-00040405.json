@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040405",
+  "entities": [
+    {
+      "name": "的水(含初期污染雨水)不得在厂区内与雨水管网合并，排污口应 设置在线监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "的水(含初期污染雨水)不得在厂区内与雨水管网合并，排污口应\n设置在线监测。同时本条对规范化排污口进行了规定。流量、pH\n值 、COD 等指标是排污口在线监测的基本指标，当项目排污具有\n其他特征污染物时，尚应增设相应的在线监测指标，例如合成氨项\n目的氨氮等。",
+      "type": "语义分解",
+      "subject": "的水(含初期污染雨水)不得在厂区内与雨水管网合并，排污口应 设置在线监测",
+      "action": "",
+      "operation": "的水(含初期污染雨水)不得在厂区内与雨水管网合并，排污口应 设置在线监测。同时本条对规范化排污口进行了规定。流量、pH 值 、COD 等指标是排污口在线监测的基本指标，当项目排污具有 其他特征污染物时，尚应增设相应的在线监测指标，例如合成氨项 目的氨氮等。",
+      "condition": "",
+      "constraint": "的水(含初期污染雨水)不得在厂区内与雨水管网合并，排污口应\n设置在线监测。同时本条对规范化排污口进行了规定。流量、pH\n值 、COD 等指标是排污口在线监测的基本指标，当项目排污具有\n其他特征污染物时，尚应增设相应的在线监测指标，例如合成氨项\n目的氨氮等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "的水(含初期污染雨水)不得在厂区内与雨水管网合并，排污口应 设置在线监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

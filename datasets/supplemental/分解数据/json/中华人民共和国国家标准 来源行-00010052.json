@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010052",
+  "entities": [
+    {
+      "name": "列头柜应能够实时显示电源电压和实际用电电流",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3    列头柜应能够实时显示电源电压和实际用电电流；\n      4    列头柜的二级熔丝应方便带电更换，带电更换列柜二级熔\n丝时不应影响列柜中其他电源系统的工作。",
+      "type": "语义分解",
+      "subject": "列头柜应能够实时显示电源电压和实际用电电流",
+      "action": "",
+      "operation": "列头柜应能够实时显示电源电压和实际用电电流； 4 列头柜的二级熔丝应方便带电更换，带电更换列柜二级熔 丝时不应影响列柜中其他电源系统的工作。",
+      "condition": "",
+      "constraint": "      3    列头柜应能够实时显示电源电压和实际用电电流；\n      4    列头柜的二级熔丝应方便带电更换，带电更换列柜二级熔\n丝时不应影响列柜中其他电源系统的工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "列头柜应能够实时显示电源电压和实际用电电流"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10052,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

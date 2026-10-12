@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022769",
+  "entities": [
+    {
+      "name": "在建筑基础结构质量差的民用建筑物中，当建筑物没有合 格的避雷带或建筑物为",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       3    在建筑基础结构质量差的民用建筑物中，当建筑物没有合\n格的避雷带或建筑物为砖混结构时，应在楼下设置接地体(网),并\n应根据周围环境和地质条件，选择不同的接地方式或采用专用接\n地体。新设地网中的接地线应与建筑物基础钢筋混凝土内的钢筋\n相连，并应引至楼顶接地排。",
+      "type": "语义分解",
+      "subject": "在建筑基础结构质量差的民用建筑物中，当建筑物没有合 格的避雷带或建筑物为",
+      "action": "",
+      "operation": "在建筑基础结构质量差的民用建筑物中，当建筑物没有合 格的避雷带或建筑物为砖混结构时，应在楼下设置接地体(网),并 应根据周围环境和地质条件，选择不同的接地方式或采用专用接 地体。新设地网中的接地线应与建筑物基础钢筋混凝土内的钢筋 相连，并应引至楼顶接地排。",
+      "condition": "",
+      "constraint": "       3    在建筑基础结构质量差的民用建筑物中，当建筑物没有合\n格的避雷带或建筑物为砖混结构时，应在楼下设置接地体(网),并\n应根据周围环境和地质条件，选择不同的接地方式或采用专用接\n地体。新设地网中的接地线应与建筑物基础钢筋混凝土内的钢筋\n相连，并应引至楼顶接地排。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在建筑基础结构质量差的民用建筑物中，当建筑物没有合 格的避雷带或建筑物为"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22769,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

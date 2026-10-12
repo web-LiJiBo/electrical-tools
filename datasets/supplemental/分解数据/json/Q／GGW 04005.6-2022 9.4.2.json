@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "9.4.2",
+  "entities": [
+    {
+      "name": "废水出口监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.4.2 原则上, 外排口监测点位最低监测频次按照表1执行。各排放口废水流量和污染物浓度同步监 测。 注: 主要监测项目利其他监测项目的界定各排污单位可根据排放废水的污染物情况迸行调整。",
+      "type": "语义分解",
+      "subject": "废水出口监测",
+      "action": "",
+      "operation": "按表1最低频次流量浓度同步监测",
+      "condition": "",
+      "constraint": "9.4.2 原则上, 外排口监测点位最低监测频次按照表1执行。各排放口废水流量和污染物浓度同步监 测。 注: 主要监测项目利其他监测项目的界定各排污单位可根据排放废水的污染物情况迸行调整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水出口监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 493,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺表1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.4.1",
+  "entities": [
+    {
+      "name": "许可排口参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.4.1 结合己收集排污单位的环境影响报告书(表)及其批复文件 环境影响登记表及备案材料 竣工环境保护验收文件及验收意见 排污口和监测孔规范化设置情况说明材料,平面布置图。监测点位 示意图,生产工艺流程图等资料,依据排污许可证申请与核发技术规范对排污许可证记载的废气排放口 的数量,类型,排气筒高度。出口内径 排气温度,废水排放口的废水排放去向,排放方式。排放规律, 雨水排放口(如涉及)基本信息等内容进行判定。",
+      "type": "语义分解",
+      "subject": "许可排口参数",
+      "action": "",
+      "operation": "依环评验收图纸资料技术规范核数量类型尺寸温度去向规律",
+      "condition": "",
+      "constraint": "6.2.4.1 结合己收集排污单位的环境影响报告书(表)及其批复文件 环境影响登记表及备案材料 竣工环境保护验收文件及验收意见 排污口和监测孔规范化设置情况说明材料,平面布置图。监测点位 示意图,生产工艺流程图等资料,依据排污许可证申请与核发技术规范对排污许可证记载的废气排放口 的数量,类型,排气筒高度。出口内径 排气温度,废水排放口的废水排放去向,排放方式。排放规律, 雨水排放口(如涉及)基本信息等内容进行判定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可排口参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

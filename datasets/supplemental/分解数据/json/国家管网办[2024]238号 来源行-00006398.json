@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006398",
+  "entities": [
+    {
+      "name": "第五十三条 [吊装作业实施要求 ] (六)应按规定负荷进行吊装,臂杆的最",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十三条 [吊装作业实施要求 ] (六)应按规定负荷进行吊装,臂杆的最大仰角不得超过该机臂杆长度时仰角的规定。吊具。索具应经计算选择使用 ,起重机单机吊装作业时,吊装载荷应小于起重机规定工况下的额定起重能力,不应超负荷吊装。",
+      "type": "语义分解",
+      "subject": "第五十三条 [吊装作业实施要求 ] (六)应按规定负荷进行吊装,臂杆的最",
+      "action": "",
+      "operation": "第五十三条 [吊装作业实施要求 ] (六)应按规定负荷进行吊装,臂杆的最大仰角不得超过该机臂杆长度时仰角的规定。吊具。索具应经计算选择使用 ,起重机单机吊装作业时,吊装载荷应小于起重机规定工况下的额定起重能力,不应超负荷吊装。",
+      "condition": "",
+      "constraint": "第五十三条 [吊装作业实施要求 ] (六)应按规定负荷进行吊装,臂杆的最大仰角不得超过该机臂杆长度时仰角的规定。吊具。索具应经计算选择使用 ,起重机单机吊装作业时,吊装载荷应小于起重机规定工况下的额定起重能力,不应超负荷吊装。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十三条 [吊装作业实施要求 ] (六)应按规定负荷进行吊装,臂杆的最"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6398,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

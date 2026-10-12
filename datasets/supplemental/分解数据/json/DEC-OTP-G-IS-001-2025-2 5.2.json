@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "能耗数据采集模式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 采集模式",
+      "type": "语义分解",
+      "subject": "能耗数据采集模式",
+      "action": "",
+      "operation": "规定采集模式章节",
+      "condition": "",
+      "constraint": "5.2 采集模式",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能耗数据采集模式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅标题"
+      ]
+    }
+  }
+}

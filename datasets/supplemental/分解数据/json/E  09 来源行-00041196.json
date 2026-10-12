@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041196",
+  "entities": [
+    {
+      "name": "在有些地区，可以采用露天燃烧方式处置无害的、不适合回收的含烃废物",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在有些地区，可以采用露天燃烧方式处置无害的、不适合回收的含烃废物。有害废物只能按照主\n管部门批准的方式处理。燃烧处理应在白天进行，还应考虑风向和风速，燃烧不能产生黑烟或烟尘危\n害。",
+      "type": "语义分解",
+      "subject": "在有些地区，可以采用露天燃烧方式处置无害的、不适合回收的含烃废物",
+      "action": "",
+      "operation": "在有些地区，可以采用露天燃烧方式处置无害的、不适合回收的含烃废物。有害废物只能按照主 管部门批准的方式处理。燃烧处理应在白天进行，还应考虑风向和风速，燃烧不能产生黑烟或烟尘危 害。",
+      "condition": "",
+      "constraint": "   在有些地区，可以采用露天燃烧方式处置无害的、不适合回收的含烃废物。有害废物只能按照主\n管部门批准的方式处理。燃烧处理应在白天进行，还应考虑风向和风速，燃烧不能产生黑烟或烟尘危\n害。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在有些地区，可以采用露天燃烧方式处置无害的、不适合回收的含烃废物"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41196,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

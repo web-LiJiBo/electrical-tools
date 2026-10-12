@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017690",
+  "entities": [
+    {
+      "name": "应对外部、线路、支路、内部等时钟源设置不同优先级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    应对外部、线路、支路、内部等时钟源设置不同优先级；\n       2    当首选同步时钟源丢失时，应自动选择下一优先级同步时\n钟源，当首选优先级时钟恢复后，应自动或手动返回首选优先级\n时钟。",
+      "type": "语义分解",
+      "subject": "应对外部、线路、支路、内部等时钟源设置不同优先级",
+      "action": "",
+      "operation": "应对外部、线路、支路、内部等时钟源设置不同优先级； 2 当首选同步时钟源丢失时，应自动选择下一优先级同步时 钟源，当首选优先级时钟恢复后，应自动或手动返回首选优先级 时钟。",
+      "condition": "",
+      "constraint": "       1    应对外部、线路、支路、内部等时钟源设置不同优先级；\n       2    当首选同步时钟源丢失时，应自动选择下一优先级同步时\n钟源，当首选优先级时钟恢复后，应自动或手动返回首选优先级\n时钟。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应对外部、线路、支路、内部等时钟源设置不同优先级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17690,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

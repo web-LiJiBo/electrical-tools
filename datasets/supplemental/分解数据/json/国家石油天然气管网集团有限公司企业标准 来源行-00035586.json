@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035586",
+  "entities": [
+    {
+      "name": "核查组应对受核查方提交的温室气体排放报告和相关支持性材料(排放设施清单、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   核查组应对受核查方提交的温室气体排放报告和相关支持性材料(排放设施清单、排放源清单、活\n动数据和排放因子的相关信息等)进行文件评审。通过文件评审，核查组初步确认温室气体排放情况，\n并确定现场核查思路、识别现场核查重点。\n10.3.2      现场核查",
+      "type": "语义分解",
+      "subject": "核查组应对受核查方提交的温室气体排放报告和相关支持性材料(排放设施清单、",
+      "action": "",
+      "operation": "核查组应对受核查方提交的温室气体排放报告和相关支持性材料(排放设施清单、排放源清单、活 动数据和排放因子的相关信息等)进行文件评审。通过文件评审，核查组初步确认温室气体排放情况， 并确定现场核查思路、识别现场核查重点。 10.3.2 现场核查",
+      "condition": "",
+      "constraint": "   核查组应对受核查方提交的温室气体排放报告和相关支持性材料(排放设施清单、排放源清单、活\n动数据和排放因子的相关信息等)进行文件评审。通过文件评审，核查组初步确认温室气体排放情况，\n并确定现场核查思路、识别现场核查重点。\n10.3.2      现场核查",
+      "constraint_role": "informational",
+      "related_entities": [
+        "核查组应对受核查方提交的温室气体排放报告和相关支持性材料(排放设施清单、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35586,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

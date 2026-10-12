@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团站场设备设施泄漏管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003718",
+  "entities": [
+    {
+      "name": "第十一条 密封点合账基本信息包含",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十一条 密封点合账基本信息包含:  站场1阀室名称。位 置描述。密封点位置级别。区域级别。密封点泄漏风险等级 , 密封形式。工艺介质。运行压力。运行温度。维修记录等。当 密封点的信息发生变化时 ,应及时完成密封点合帐信息的更新。",
+      "type": "语义分解",
+      "subject": "第十一条 密封点合账基本信息包含",
+      "action": "",
+      "operation": "第十一条 密封点合账基本信息包含: 站场1阀室名称。位 置描述。密封点位置级别。区域级别。密封点泄漏风险等级 , 密封形式。工艺介质。运行压力。运行温度。维修记录等。当 密封点的信息发生变化时 ,应及时完成密封点合帐信息的更新。",
+      "condition": "",
+      "constraint": "第十一条 密封点合账基本信息包含:  站场1阀室名称。位 置描述。密封点位置级别。区域级别。密封点泄漏风险等级 , 密封形式。工艺介质。运行压力。运行温度。维修记录等。当 密封点的信息发生变化时 ,应及时完成密封点合帐信息的更新。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十一条 密封点合账基本信息包含"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3718,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "4.12",
+  "entities": [
+    {
+      "name": "超设计洪水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.12   当发生超越设计洪水频率的洪水时，应重新收集河段水文参数，实测穿跨越断面的冲刷深度与\n宽度，校核架空管道与其附属设施及相应工程结构的安全。",
+      "type": "语义分解",
+      "subject": "超设计洪水",
+      "action": "",
+      "operation": "收水文实测冲刷深宽校核管道附属结构安全",
+      "condition": "",
+      "constraint": "4.12   当发生超越设计洪水频率的洪水时，应重新收集河段水文参数，实测穿跨越断面的冲刷深度与\n宽度，校核架空管道与其附属设施及相应工程结构的安全。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "超设计洪水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29713,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

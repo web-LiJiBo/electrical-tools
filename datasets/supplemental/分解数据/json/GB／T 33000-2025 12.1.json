@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "12.1",
+  "entities": [
+    {
+      "name": "安全检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.1 检查 企业应对安全生产工作的合规性、安全风险管控的有效性、安全生产管理体系运行的符合性进行检查，对发现的问题及时整改。",
+      "type": "语义分解",
+      "subject": "安全检查",
+      "action": "",
+      "operation": "合规风险有效体系符合问题整改",
+      "condition": "",
+      "constraint": "12.1 检查 企业应对安全生产工作的合规性、安全风险管控的有效性、安全生产管理体系运行的符合性进行检查，对发现的问题及时整改。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7290,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

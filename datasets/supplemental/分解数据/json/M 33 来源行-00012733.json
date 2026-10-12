@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012733",
+  "entities": [
+    {
+      "name": "ITU-T G.8201 对27500km ODUk HROP 端到端误",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      ITU-T G.8201 对27500km ODUk HROP 端到端误码性能指标的规定见表5。适用于真实通道的实际指\n\n标根据7.1.3.3详细介绍的指标分配原则进行制定。每个方向的通道将独立满足全部参数的分配指标，即\n\n在评价期间(连续30天为一个典型周期)任一方向的任何参数超出了分配目标，则此通道不满足要求。",
+      "type": "语义分解",
+      "subject": "ITU-T G.8201 对27500km ODUk HROP 端到端误",
+      "action": "",
+      "operation": "ITU-T G.8201 对27500km ODUk HROP 端到端误码性能指标的规定见表5。适用于真实通道的实际指 标根据7.1.3.3详细介绍的指标分配原则进行制定。每个方向的通道将独立满足全部参数的分配指标，即 在评价期间(连续30天为一个典型周期)任一方向的任何参数超出了分配目标，则此通道不满足要求。",
+      "condition": "",
+      "constraint": "      ITU-T G.8201 对27500km ODUk HROP 端到端误码性能指标的规定见表5。适用于真实通道的实际指\n\n标根据7.1.3.3详细介绍的指标分配原则进行制定。每个方向的通道将独立满足全部参数的分配指标，即\n\n在评价期间(连续30天为一个典型周期)任一方向的任何参数超出了分配目标，则此通道不满足要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ITU-T G.8201 对27500km ODUk HROP 端到端误"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12733,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

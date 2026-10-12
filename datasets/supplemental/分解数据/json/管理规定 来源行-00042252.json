@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042252",
+  "entities": [
+    {
+      "name": "事故事件调查组成员应当具有事故事件调查所需要的专业 知识和专长，在调查过",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   事故事件调查组成员应当具有事故事件调查所需要的专业\n\n知识和专长，在调查过程中应当诚信公正、恪尽职守，遵守调查\n\n组的纪律，不得擅自发布或透露有关事故事件调查的有关信息，\n\n并与所调查的事故事件及企业主要当事人（ 即企业的法定代表\n\n人、主要负责人、直接负责的主管人员和其他责任人员）没有直\n\n接利害关系，否则应当回避。",
+      "type": "语义分解",
+      "subject": "事故事件调查组成员应当具有事故事件调查所需要的专业 知识和专长，在调查过",
+      "action": "",
+      "operation": "事故事件调查组成员应当具有事故事件调查所需要的专业 知识和专长，在调查过程中应当诚信公正、恪尽职守，遵守调查 组的纪律，不得擅自发布或透露有关事故事件调查的有关信息， 并与所调查的事故事件及企业主要当事人（ 即企业的法定代表 人、主要负责人、直接负责的主管人员和其他责任人员）没有直 接利害关系，否则应当回避。",
+      "condition": "",
+      "constraint": "   事故事件调查组成员应当具有事故事件调查所需要的专业\n\n知识和专长，在调查过程中应当诚信公正、恪尽职守，遵守调查\n\n组的纪律，不得擅自发布或透露有关事故事件调查的有关信息，\n\n并与所调查的事故事件及企业主要当事人（ 即企业的法定代表\n\n人、主要负责人、直接负责的主管人员和其他责任人员）没有直\n\n接利害关系，否则应当回避。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故事件调查组成员应当具有事故事件调查所需要的专业 知识和专长，在调查过"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42252,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "抢险车辆品种",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 企业应急救援队伍抢险救援车品种 ,应符合表 4 的要求 ,生产,贮存剧毒或高毒危险化学品的单位应配备气体防护车。在此基础上 ,企业视实际需要增加车辆配备 ,车辆名录参见附录B中表B.1",
+      "type": "语义分解",
+      "subject": "抢险车辆品种",
+      "action": "",
+      "operation": "按表队伍品种剧高毒单位配气防车可按需增车",
+      "condition": "",
+      "constraint": "7.2.2 企业应急救援队伍抢险救援车品种 ,应符合表 4 的要求 ,生产,贮存剧毒或高毒危险化学品的单位应配备气体防护车。在此基础上 ,企业视实际需要增加车辆配备 ,车辆名录参见附录B中表B.1",
+      "constraint_role": "informational",
+      "related_entities": [
+        "抢险车辆品种"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3809,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表4附录B未提供"
+      ]
+    }
+  }
+}

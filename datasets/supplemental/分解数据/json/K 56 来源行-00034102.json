@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034102",
+  "entities": [
+    {
+      "name": "固体颗粒分析系统(SPAS)的性能取决于典型样品合适地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "固体颗粒分析系统(SPAS)的性能取决于典型样品合适地:\n一一采集\n一一输送\n一一分离\n一一计量",
+      "type": "语义分解",
+      "subject": "固体颗粒分析系统(SPAS)的性能取决于典型样品合适地",
+      "action": "",
+      "operation": "固体颗粒分析系统(SPAS)的性能取决于典型样品合适地: 一一采集 一一输送 一一分离 一一计量",
+      "condition": "",
+      "constraint": "固体颗粒分析系统(SPAS)的性能取决于典型样品合适地:\n一一采集\n一一输送\n一一分离\n一一计量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固体颗粒分析系统(SPAS)的性能取决于典型样品合适地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34102,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

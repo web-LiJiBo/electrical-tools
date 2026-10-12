@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.2.2",
+  "entities": [
+    {
+      "name": "湖库监测垂线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2.2 湖泊和水库监测垂线 湖泊和水库监测垂线的设置方法按照以下要求执行: 湖泊和水库通常只设置监测垂线。如有特殊情况可按照河流的有关规定设置监测断面; 湖泊和水库的不同水域,如进水区, 出水区, 深水区 浅水区 湖心区,岸边区等,按水体类别设置监测垂线; 湖泊和水库若无明显功能区别, 可用网格法均匀设置监测垂线; 受污染物影响较大的重要湖泊和水库, 应在污染物主要迁途径上设置控制断面。",
+      "type": "语义分解",
+      "subject": "湖库监测垂线",
+      "action": "",
+      "operation": "一般垂线分水区无功能差网格重要污染湖库迁移路设控制断面",
+      "condition": "",
+      "constraint": "4.1.2.2 湖泊和水库监测垂线 湖泊和水库监测垂线的设置方法按照以下要求执行: 湖泊和水库通常只设置监测垂线。如有特殊情况可按照河流的有关规定设置监测断面; 湖泊和水库的不同水域,如进水区, 出水区, 深水区 浅水区 湖心区,岸边区等,按水体类别设置监测垂线; 湖泊和水库若无明显功能区别, 可用网格法均匀设置监测垂线; 受污染物影响较大的重要湖泊和水库, 应在污染物主要迁途径上设置控制断面。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "湖库监测垂线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2950,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

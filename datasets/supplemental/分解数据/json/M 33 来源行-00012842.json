@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012842",
+  "entities": [
+    {
+      "name": "c) 明确通道的长度 L",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      c)  明确通道的长度 L 。该长度是实际通道长度或由通道终点间空间路由距离乘以表14中适当路系\n数(rf)  来计算的。",
+      "type": "语义分解",
+      "subject": "c) 明确通道的长度 L",
+      "action": "",
+      "operation": "c) 明确通道的长度 L 。该长度是实际通道长度或由通道终点间空间路由距离乘以表14中适当路系 数(rf) 来计算的。",
+      "condition": "",
+      "constraint": "      c)  明确通道的长度 L 。该长度是实际通道长度或由通道终点间空间路由距离乘以表14中适当路系\n数(rf)  来计算的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 明确通道的长度 L"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12842,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

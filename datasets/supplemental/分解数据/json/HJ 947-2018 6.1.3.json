@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 石油化学工业",
+  "standard_id": "HJ 947-2018",
+  "version": "2018",
+  "chapter_path": "6.1.3",
+  "entities": [
+    {
+      "name": "石化固危废记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.3 一般工业固体废物和危险废物记录 记录一般工业固体废物的产生量。综合利用量。处置量，贮存量；按照危险废物管理的相关要求，按日记录危险废物的产生量。综合利用量。处置量。贮存量及其具体去向。原料或辅助工序中产生的其他危险废物的情况也应记录。一般工业固体废物及危险废物产生情况见表5。",
+      "type": "语义分解",
+      "subject": "石化固危废记录",
+      "action": "",
+      "operation": "一般废物各量危险每日产利用处存去向含辅助工序",
+      "condition": "",
+      "constraint": "6.1.3 一般工业固体废物和危险废物记录 记录一般工业固体废物的产生量。综合利用量。处置量，贮存量；按照危险废物管理的相关要求，按日记录危险废物的产生量。综合利用量。处置量。贮存量及其具体去向。原料或辅助工序中产生的其他危险废物的情况也应记录。一般工业固体废物及危险废物产生情况见表5。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石化固危废记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3042,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表5未提供"
+      ]
+    }
+  }
+}

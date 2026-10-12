@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.2.3.1",
+  "entities": [
+    {
+      "name": "硫酸亚铁铵液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.3.1 硫酸亚铁铵溶液{ρ[(NH4)2Fe(SO4)2·6H2O]=1.1 g/L}:称取0.55 g六水合硫酸亚铁铵[(NH4)2Fe(SO4)2·6H2O]于含有0.5 mL浓硫酸(ρ20=1.84 g/mL)的250 mL纯水中，冷却后用纯水稀释至500 mL，混匀。密闭保存。",
+      "type": "语义分解",
+      "subject": "硫酸亚铁铵液",
+      "action": "",
+      "operation": "按酸量盐量配制1.1克每升冷却稀释密闭保存",
+      "condition": "",
+      "constraint": "12.2.3.1 硫酸亚铁铵溶液{ρ[(NH4)2Fe(SO4)2·6H2O]=1.1 g/L}:称取0.55 g六水合硫酸亚铁铵[(NH4)2Fe(SO4)2·6H2O]于含有0.5 mL浓硫酸(ρ20=1.84 g/mL)的250 mL纯水中，冷却后用纯水稀释至500 mL，混匀。密闭保存。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "硫酸亚铁铵液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1474,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

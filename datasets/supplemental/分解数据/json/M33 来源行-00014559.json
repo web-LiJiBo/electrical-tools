@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014559",
+  "entities": [
+    {
+      "name": "在OTN 设备中，DCN用于传递OAM&P所需的管理信息，能够实现监控信",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在OTN 设备中，DCN用于传递OAM&P所需的管理信息，能够实现监控信息和自动保护倒换(APS)\n协议的传送。DCN的具体实现有光监控通道( OSC) 、电监控通道(ESC) 和带外DCN三种可选方式。\n其中OSC 在全光信号处理的节点设备是应配置，如光中继设备、ROADM设备(无OEO 转换)等。",
+      "type": "语义分解",
+      "subject": "在OTN 设备中，DCN用于传递OAM&P所需的管理信息，能够实现监控信",
+      "action": "",
+      "operation": "在OTN 设备中，DCN用于传递OAM&P所需的管理信息，能够实现监控信息和自动保护倒换(APS) 协议的传送。DCN的具体实现有光监控通道( OSC) 、电监控通道(ESC) 和带外DCN三种可选方式。 其中OSC 在全光信号处理的节点设备是应配置，如光中继设备、ROADM设备(无OEO 转换)等。",
+      "condition": "",
+      "constraint": "   在OTN 设备中，DCN用于传递OAM&P所需的管理信息，能够实现监控信息和自动保护倒换(APS)\n协议的传送。DCN的具体实现有光监控通道( OSC) 、电监控通道(ESC) 和带外DCN三种可选方式。\n其中OSC 在全光信号处理的节点设备是应配置，如光中继设备、ROADM设备(无OEO 转换)等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在OTN 设备中，DCN用于传递OAM&P所需的管理信息，能够实现监控信"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14559,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

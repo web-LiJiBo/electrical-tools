@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040499",
+  "entities": [
+    {
+      "name": "工业炉的主要噪声源是燃料喷射与空气混合在炉内燃烧 时产生的噪声，还有就是",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1       工业炉的主要噪声源是燃料喷射与空气混合在炉内燃烧\n时产生的噪声，还有就是放空噪声。在选择消声设备时，要针对其\n特性，以达到消声的目的。",
+      "type": "语义分解",
+      "subject": "工业炉的主要噪声源是燃料喷射与空气混合在炉内燃烧 时产生的噪声，还有就是",
+      "action": "",
+      "operation": "工业炉的主要噪声源是燃料喷射与空气混合在炉内燃烧 时产生的噪声，还有就是放空噪声。在选择消声设备时，要针对其 特性，以达到消声的目的。",
+      "condition": "",
+      "constraint": "8.2.1       工业炉的主要噪声源是燃料喷射与空气混合在炉内燃烧\n时产生的噪声，还有就是放空噪声。在选择消声设备时，要针对其\n特性，以达到消声的目的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工业炉的主要噪声源是燃料喷射与空气混合在炉内燃烧 时产生的噪声，还有就是"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40499,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

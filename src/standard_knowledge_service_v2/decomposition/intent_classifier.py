@@ -21,6 +21,9 @@ class IntentClassifier:
     """用确定性业务规则校正模型意图，控制类采用明确授权原则。"""
 
     _command_patterns = (
+        r"请(?:立即|马上)?(?:将|把)?.*(?:分闸|合闸|跳闸)",
+        r"(?:请|将|把).*(?:功率).*(?:设定|设置|调整|调节)",
+        r"(?:请|将|把).*(?:设定|设置|调整|调节).*功率",
         r"请(?:立即|马上)?(?:执行|下发|生成|发送)",
         r"(?:执行|下发|发送|生成)(?:一条|一个|该|此)?(?:控制|操作|调度|跳闸|合闸|隔离)?指令",
         r"(?:执行|下发|发送|生成).+指令",
@@ -36,6 +39,8 @@ class IntentClassifier:
         text = "".join(str(query).split())
         command_hits = [pattern for pattern in self._command_patterns if re.search(pattern, text)]
         query_hits = [pattern for pattern in self._query_patterns if re.search(pattern, text)]
+        if query_hits and not re.search(r"请(?:立即|马上)?(?:执行|下发|生成|发送)", text):
+            return IntentClassification("search", 0.92, ("检测到咨询表达，不按设备控制执行",), model_intent)
         if command_hits:
             return IntentClassification("instruction", 0.95, ("检测到明确执行或指令生成语气",), model_intent)
         if query_hits or text.endswith(("?", "？")):

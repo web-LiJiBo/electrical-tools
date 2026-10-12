@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015243",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "OPUk          Optical Channel Payload Unit-k\nOPUk-Xv X virtually concatenated OPUk's\nOSC            Optical Supervisory Channel\nOTH           Optical Transport Hierarchy\nOTM           Optical Terminal Mutiplexer\nOTN           Optical Transport Network\nOTS            Optical Transmission Section\nOTS-OH     Optical Transmission Section Overhead\nOTU          Optical Channel Transport Unit\nOTUk          Completely standardized Optical Channel Transport Unit-k\nPCC          Protection Communication Channel\nPM             Path Monitoring\nPMI            Payload Missing Indication\nPRBS         Pseudo Random Binary Sequence\nPSI             Payload Structure Identifier\nPT            Payload Type\nR                Client Interface Source Reference Point\nRM             Multichannel Receive Reference Point\nR                The n-th Channel Receive Reference Point\nRES            Reserved for future international standardization\nS               Client Interface Receive Reference Point\nSM              Multichannel Source Reference Point\nSₙ                The n-th Channel Source Reference Point\nSAPI           Source Access Point Identifier\nSDH           Synchronous Digital Hierarchy\nSLM           Single Longitudinal Mode\nSM             Section Monitoring\nSNC           Subnetwork Connection\nTC              Tandem Connection\nTCM          Tandem Connection Monitoring\nTDM         Time Division Multiplexing\nTS              Tributary Slot\t光通路净荷单元k\nX个OPUk的虚级联\n光监控信道\n光传送系列\n终端复用设备\n光传送网络\n光传送段\n光传送段开销\n光通路传送单元\n完全标准化光通路传送单元-k\n保护通信通路\n通道监测\n净荷丢失指示\n伪随机比特序列\n净荷结构标识\n净荷类型\n客户侧接口发送参考点\n多通路接收参考点\n第n 路通路接收参考点\n为将来国际标准预留\n客户侧接口接收参考点\n多通路源参考点\n第n 路通路源参考点\n源接入点标识\n同步数字体系\n单纵模\n段监测\n子网连接\n串联连接\n串联连接监测\n时分复用\n支路时隙",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "OPUk          Optical Channel Payload Unit-k\nOPUk-Xv X virtually concatenated OPUk's\nOSC            Optical Supervisory Channel\nOTH           Optical Transport Hierarchy\nOTM           Optical Terminal Mutiplexer\nOTN           Optical Transport Network\nOTS            Optical Transmission Section\nOTS-OH     Optical Transmission Section Overhead\nOTU          Optical Channel Transport Unit\nOTUk          Completely standardized Optical Channel Transport Unit-k\nPCC          Protection Communication Channel\nPM             Path Monitoring\nPMI            Payload Missing Indication\nPRBS         Pseudo Random Binary Sequence\nPSI             Payload Structure Identifier\nPT            Payload Type\nR                Client Interface Source Reference Point\nRM             Multichannel Receive Reference Point\nR                The n-th Channel Receive Reference Point\nRES            Reserved for future international standardization\nS               Client Interface Receive Reference Point\nSM              Multichannel Source Reference Point\nSₙ                The n-th Channel Source Reference Point\nSAPI           Source Access Point Identifier\nSDH           Synchronous Digital Hierarchy\nSLM           Single Longitudinal Mode\nSM             Section Monitoring\nSNC           Subnetwork Connection\nTC              Tandem Connection\nTCM          Tandem Connection Monitoring\nTDM         Time Division Multiplexing\nTS              Tributary Slot\t光通路净荷单元k\nX个OPUk的虚级联\n光监控信道\n光传送系列\n终端复用设备\n光传送网络\n光传送段\n光传送段开销\n光通路传送单元\n完全标准化光通路传送单元-k\n保护通信通路\n通道监测\n净荷丢失指示\n伪随机比特序列\n净荷结构标识\n净荷类型\n客户侧接口发送参考点\n多通路接收参考点\n第n 路通路接收参考点\n为将来国际标准预留\n客户侧接口接收参考点\n多通路源参考点\n第n 路通路源参考点\n源接入点标识\n同步数字体系\n单纵模\n段监测\n子网连接\n串联连接\n串联连接监测\n时分复用\n支路时隙",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

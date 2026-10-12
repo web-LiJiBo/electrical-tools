@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "7.6",
+  "entities": [
+    {
+      "name": "措施控制违法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6    企业未遵守本标准规定的措施性控制要求，构成违法行为的，依照法律法规等有关规定予以处理。",
+      "type": "语义分解",
+      "subject": "措施控制违法",
+      "action": "",
+      "operation": "依原文法规处理",
+      "condition": "",
+      "constraint": "7.6    企业未遵守本标准规定的措施性控制要求，构成违法行为的，依照法律法规等有关规定予以处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "措施控制违法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32785,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；非法律意见现行性待核对"
+      ]
+    }
+  }
+}

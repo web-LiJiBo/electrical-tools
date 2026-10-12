@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "能源计量器具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 在线采集是利用能源计量器具在线自动采集能耗数据并传输至站控制系统, 再通过站控制系统将能耗数据上传至控制中心管理系统或者地区公司管理系统。",
+      "type": "语义分解",
+      "subject": "能源计量器具",
+      "action": "",
+      "operation": "在线自动采集并传输",
+      "condition": "",
+      "constraint": "上传至控制中心管理系统或者地区公司管理系统",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "能源计量器具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

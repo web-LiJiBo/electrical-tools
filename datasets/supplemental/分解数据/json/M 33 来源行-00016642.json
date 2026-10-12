@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016642",
+  "entities": [
+    {
+      "name": "b) 网络级(或者子网级)网管系统应支持网络级管理功能，包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      b) 网络级(或者子网级)网管系统应支持网络级管理功能，包括：支持各层次路径路由的图形显示，\n用户可以看到路径经过的每一个节点以及相应的资源信息；对于OTN 网络，网管支持OTS、OMS、OCh、\nOTUk、ODUk、Client 六个层次的路径。\n11.3.2 端到端电路管理",
+      "type": "语义分解",
+      "subject": "b) 网络级(或者子网级)网管系统应支持网络级管理功能，包括",
+      "action": "",
+      "operation": "b) 网络级(或者子网级)网管系统应支持网络级管理功能，包括：支持各层次路径路由的图形显示， 用户可以看到路径经过的每一个节点以及相应的资源信息；对于OTN 网络，网管支持OTS、OMS、OCh、 OTUk、ODUk、Client 六个层次的路径。 11.3.2 端到端电路管理",
+      "condition": "",
+      "constraint": "      b) 网络级(或者子网级)网管系统应支持网络级管理功能，包括：支持各层次路径路由的图形显示，\n用户可以看到路径经过的每一个节点以及相应的资源信息；对于OTN 网络，网管支持OTS、OMS、OCh、\nOTUk、ODUk、Client 六个层次的路径。\n11.3.2 端到端电路管理",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 网络级(或者子网级)网管系统应支持网络级管理功能，包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16642,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

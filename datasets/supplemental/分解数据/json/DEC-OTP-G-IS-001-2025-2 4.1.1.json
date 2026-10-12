@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "能耗计量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1 能耗计量的能源种类包括天然气 电力,原油。成品油。液化石油气 可回 收的余能。生物质能和其他直接或者通过加工,转换而取得有用能的各种资源,以及 蒸汽。热水。氮气等载能工质",
+      "type": "语义分解",
+      "subject": "能耗计量",
+      "action": "",
+      "operation": "界定能源种类",
+      "condition": "",
+      "constraint": "能源种类包括天然气 电力,原油",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "能耗计量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

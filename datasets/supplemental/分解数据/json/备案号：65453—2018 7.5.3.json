@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "7.5.3",
+  "entities": [
+    {
+      "name": "管道补口处防腐层检查内容应包括表面有无破损、褶皱、 剥离情况，并应测量并",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.3   管道补口处防腐层检查内容应包括表面有无破损、褶皱、\n剥离情况，并应测量并记录补口防腐层与管体及管道防腐层搭\n接处的粘结力。",
+      "type": "语义分解",
+      "subject": "管道补口处防腐层检查内容应包括表面有无破损、褶皱、 剥离情况，并应测量并",
+      "action": "",
+      "operation": "管道补口处防腐层检查内容应包括表面有无破损、褶皱、 剥离情况，并应测量并记录补口防腐层与管体及管道防腐层搭 接处的粘结力。",
+      "condition": "",
+      "constraint": "7.5.3   管道补口处防腐层检查内容应包括表面有无破损、褶皱、\n剥离情况，并应测量并记录补口防腐层与管体及管道防腐层搭\n接处的粘结力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道补口处防腐层检查内容应包括表面有无破损、褶皱、 剥离情况，并应测量并"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45103,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

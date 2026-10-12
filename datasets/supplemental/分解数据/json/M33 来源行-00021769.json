@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021769",
+  "entities": [
+    {
+      "name": "抖动转移函数定义为 STM-N 输出抖动和 STM-N 输入信号在不同频",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   抖动转移函数定义为 STM-N 输出抖动和 STM-N 输入信号在不同频点施加的抖动的比率。当输入\n正弦抖动在图189模版之下，A 型和B 型 SDH 中继器抖动转移函数应在图190曲线之下，参数在表133\n\n中规定。",
+      "type": "语义分解",
+      "subject": "抖动转移函数定义为 STM-N 输出抖动和 STM-N 输入信号在不同频",
+      "action": "",
+      "operation": "抖动转移函数定义为 STM-N 输出抖动和 STM-N 输入信号在不同频点施加的抖动的比率。当输入 正弦抖动在图189模版之下，A 型和B 型 SDH 中继器抖动转移函数应在图190曲线之下，参数在表133 中规定。",
+      "condition": "",
+      "constraint": "   抖动转移函数定义为 STM-N 输出抖动和 STM-N 输入信号在不同频点施加的抖动的比率。当输入\n正弦抖动在图189模版之下，A 型和B 型 SDH 中继器抖动转移函数应在图190曲线之下，参数在表133\n\n中规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "抖动转移函数定义为 STM-N 输出抖动和 STM-N 输入信号在不同频"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21769,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

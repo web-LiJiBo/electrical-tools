@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "5.3.1.1",
+  "entities": [
+    {
+      "name": "具有同沟敷设光缆的管道宜采用管道光纤安全预警技术",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1.1    具有同沟敷设光缆的管道宜采用管道光纤安全预警技术 ;对于无同沟敷设通信光缆管道或对\n预警有特殊需要的,  可敷设专用光缆进行安全预警。",
+      "type": "语义分解",
+      "subject": "具有同沟敷设光缆的管道宜采用管道光纤安全预警技术",
+      "action": "",
+      "operation": "具有同沟敷设光缆的管道宜采用管道光纤安全预警技术 ;对于无同沟敷设通信光缆管道或对 预警有特殊需要的, 可敷设专用光缆进行安全预警。",
+      "condition": "",
+      "constraint": "5.3.1.1    具有同沟敷设光缆的管道宜采用管道光纤安全预警技术 ;对于无同沟敷设通信光缆管道或对\n预警有特殊需要的,  可敷设专用光缆进行安全预警。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "具有同沟敷设光缆的管道宜采用管道光纤安全预警技术"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41607,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

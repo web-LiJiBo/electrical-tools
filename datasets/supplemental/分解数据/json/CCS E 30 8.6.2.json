@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "8.6.2",
+  "entities": [
+    {
+      "name": "高挥发样密封",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.6.2   将一块压敏胶带盖在小皿顶部 ,用刀片修正边缘 ,并密封 。  另取一条 3 mm × 12 mm 的胶带条\n对折 ,将一半胶带条黏在密封层中心 ,另一半用于之后密封针孔 。  记录胶带质量 mp 。  用镊子从天平上\n取下 。",
+      "type": "语义分解",
+      "subject": "高挥发样密封",
+      "action": "",
+      "operation": "胶带封皿折3乘12毫米条留封孔称胶带镊取",
+      "condition": "",
+      "constraint": "8.6.2   将一块压敏胶带盖在小皿顶部 ,用刀片修正边缘 ,并密封 。  另取一条 3 mm × 12 mm 的胶带条\n对折 ,将一半胶带条黏在密封层中心 ,另一半用于之后密封针孔 。  记录胶带质量 mp 。  用镊子从天平上\n取下 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高挥发样密封"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35000,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

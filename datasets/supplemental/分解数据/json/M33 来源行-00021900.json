@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021900",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注：应在该点解释级联指示(CI),    根据ITU-TG707中的规则，应按流程图解释AU-4-Xc的第一个AU-4的指针，其\n   他AU-4指针包含CI比特，其指针处理器应执行与第一个AU-4相同的操作。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：应在该点解释级联指示(CI), 根据ITU-TG707中的规则，应按流程图解释AU-4-Xc的第一个AU-4的指针，其 他AU-4指针包含CI比特，其指针处理器应执行与第一个AU-4相同的操作。",
+      "condition": "",
+      "constraint": "注：应在该点解释级联指示(CI),    根据ITU-TG707中的规则，应按流程图解释AU-4-Xc的第一个AU-4的指针，其\n   他AU-4指针包含CI比特，其指针处理器应执行与第一个AU-4相同的操作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21900,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

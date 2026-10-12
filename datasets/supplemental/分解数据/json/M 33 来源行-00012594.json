@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012594",
+  "entities": [
+    {
+      "name": "研究设备实体设计指标应在其参考模型如“假设参考电路”和“假设参考数字段”",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   研究设备实体设计指标应在其参考模型如“假设参考电路”和“假设参考数字段”等上进行。 ITU-TG\n\n系列建议中有关设备性能的建议都是设备设计指标的例子。装备进网技术要求中列入的都应是设计指标。",
+      "type": "语义分解",
+      "subject": "研究设备实体设计指标应在其参考模型如“假设参考电路”和“假设参考数字段”",
+      "action": "",
+      "operation": "研究设备实体设计指标应在其参考模型如“假设参考电路”和“假设参考数字段”等上进行。 ITU-TG 系列建议中有关设备性能的建议都是设备设计指标的例子。装备进网技术要求中列入的都应是设计指标。",
+      "condition": "",
+      "constraint": "   研究设备实体设计指标应在其参考模型如“假设参考电路”和“假设参考数字段”等上进行。 ITU-TG\n\n系列建议中有关设备性能的建议都是设备设计指标的例子。装备进网技术要求中列入的都应是设计指标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "研究设备实体设计指标应在其参考模型如“假设参考电路”和“假设参考数字段”"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12594,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

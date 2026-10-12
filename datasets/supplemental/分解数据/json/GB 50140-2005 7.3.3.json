@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "7.3.3",
+  "entities": [
+    {
+      "name": "特殊公共场所灭火级别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3 歌舞娱乐放映游艺场所 ,网吧,商场 ,寺庙以及地下场所等的计算单元的最小需配灭火级别应按下式计算: 5 Q=1.3下岢 (7.3.3)",
+      "type": "语义分解",
+      "subject": "特殊公共场所灭火级别",
+      "action": "",
+      "operation": "按指定公式计算最低需配级别",
+      "condition": "",
+      "constraint": "7.3.3 歌舞娱乐放映游艺场所 ,网吧,商场 ,寺庙以及地下场所等的计算单元的最小需配灭火级别应按下式计算: 5 Q=1.3下岢 (7.3.3)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊公共场所灭火级别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4080,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式字符损坏，不复原计算式"
+      ]
+    }
+  }
+}

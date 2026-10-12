@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037083",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    注：本部分中的气体标准状况是大气压力为101.325 kPa,  温度为273.15K(0℃)。\n\n7.2.2  活动数据监测与获取\n\n7.2.2.1  总体要求",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：本部分中的气体标准状况是大气压力为101.325 kPa, 温度为273.15K(0℃)。 7.2.2 活动数据监测与获取 7.2.2.1 总体要求",
+      "condition": "",
+      "constraint": "    注：本部分中的气体标准状况是大气压力为101.325 kPa,  温度为273.15K(0℃)。\n\n7.2.2  活动数据监测与获取\n\n7.2.2.1  总体要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37083,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

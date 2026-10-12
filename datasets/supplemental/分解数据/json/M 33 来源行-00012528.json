@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012528",
+  "entities": [
+    {
+      "name": "注1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    注1: SEPI 参数的单位为(1/s) 。   这就使SEPI 指标能够容易地转换成在特定测量时间间隔内等效的SEP 事件数。应当\n指出：时间间隔小于3s时 ，SEP事件就不重要了。",
+      "type": "语义分解",
+      "subject": "注1",
+      "action": "",
+      "operation": "注1: SEPI 参数的单位为(1/s) 。 这就使SEPI 指标能够容易地转换成在特定测量时间间隔内等效的SEP 事件数。应当 指出：时间间隔小于3s时 ，SEP事件就不重要了。",
+      "condition": "",
+      "constraint": "    注1: SEPI 参数的单位为(1/s) 。   这就使SEPI 指标能够容易地转换成在特定测量时间间隔内等效的SEP 事件数。应当\n指出：时间间隔小于3s时 ，SEP事件就不重要了。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12528,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

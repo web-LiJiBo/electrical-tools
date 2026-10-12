@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.1.7",
+  "entities": [
+    {
+      "name": "排污费征收材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.7 征收排污费过程中形成的污染物排放情祝申报登记表。监督性监测报告书。污染物排放情况或者缴纳排污费核定通知书。征收排污费通知书。排污收费票据。强制执行申请# 一般缴款通知书。排污费收人财务账目。排污费征收情祝统计表等有关文件材料,由环境监察机构收集积累。年度央算由规划财务部门收集积累",
+      "type": "语义分解",
+      "subject": "排污费征收材料",
+      "action": "",
+      "operation": "监察收申报监测核定收费票据强执行财务统计年度决算财务收",
+      "condition": "",
+      "constraint": "4.1.7 征收排污费过程中形成的污染物排放情祝申报登记表。监督性监测报告书。污染物排放情况或者缴纳排污费核定通知书。征收排污费通知书。排污收费票据。强制执行申请# 一般缴款通知书。排污费收人财务账目。排污费征收情祝统计表等有关文件材料,由环境监察机构收集积累。年度央算由规划财务部门收集积累",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污费征收材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3053,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；历史制度内容当前适用性未核实且字符异常"
+      ]
+    }
+  }
+}

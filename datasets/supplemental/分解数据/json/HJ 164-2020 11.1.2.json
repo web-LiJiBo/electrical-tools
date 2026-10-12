@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "11.1.2",
+  "entities": [
+    {
+      "name": "监测报表原始依据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.2 收集。核查。整理好的原始资料及时提交监测报表(或报告)编制入, 作为编制监测报表 (或报告)的唯一依据c",
+      "type": "语义分解",
+      "subject": "监测报表原始依据",
+      "action": "",
+      "operation": "整理核查资料交编制人作唯一依据",
+      "condition": "",
+      "constraint": "11.1.2 收集。核查。整理好的原始资料及时提交监测报表(或报告)编制入, 作为编制监测报表 (或报告)的唯一依据c",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测报表原始依据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2191,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

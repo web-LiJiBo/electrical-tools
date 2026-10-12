@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034565",
+  "entities": [
+    {
+      "name": "气体采样系统的目的是提取有代表性的一部分烟气 ’并将在组成上无变化或有一",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      气体采样系统的目的是提取有代表性的一部分烟气 ’并将在组成上无变化或有一已知变化的样品\n输送到测量仪器。   由于显而易见的原因 ’样品气体的物理性质一定要为测量仪器所接受。   因此 ’样品气\n体一定要通过除尘和除去或保持水分含量(如果需要 )进行处理。",
+      "type": "语义分解",
+      "subject": "气体采样系统的目的是提取有代表性的一部分烟气 ’并将在组成上无变化或有一",
+      "action": "",
+      "operation": "气体采样系统的目的是提取有代表性的一部分烟气 ’并将在组成上无变化或有一已知变化的样品 输送到测量仪器。 由于显而易见的原因 ’样品气体的物理性质一定要为测量仪器所接受。 因此 ’样品气 体一定要通过除尘和除去或保持水分含量(如果需要 )进行处理。",
+      "condition": "",
+      "constraint": "      气体采样系统的目的是提取有代表性的一部分烟气 ’并将在组成上无变化或有一已知变化的样品\n输送到测量仪器。   由于显而易见的原因 ’样品气体的物理性质一定要为测量仪器所接受。   因此 ’样品气\n体一定要通过除尘和除去或保持水分含量(如果需要 )进行处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体采样系统的目的是提取有代表性的一部分烟气 ’并将在组成上无变化或有一"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34565,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

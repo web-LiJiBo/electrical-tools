@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "量热氧气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5   氧气 :其中不应含有氢气及其他易燃杂物 ,不应使用电解氧气 。   由液态空气生产的市售氧气无需\n净化即可使用 。",
+      "type": "语义分解",
+      "subject": "量热氧气",
+      "action": "",
+      "operation": "不含氢及易燃不用电解氧液空市售无需净化",
+      "condition": "",
+      "constraint": "5.5   氧气 :其中不应含有氢气及其他易燃杂物 ,不应使用电解氧气 。   由液态空气生产的市售氧气无需\n净化即可使用 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "量热氧气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34963,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

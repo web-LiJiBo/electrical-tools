@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023966",
+  "entities": [
+    {
+      "name": "d) 软交换系统主处理系统 、调度软交换系统 、其他重要应用系统 、电源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "d)    软交换系统主处理系统 、调度软交换系统 、其他重要应用系统 、电源等应具有热备份冗余 ;\ne)    SS、TG、BAC/SBC设备应支持以主备用的方式与分组承载网的网络设备相连接 , 即要求支持",
+      "type": "语义分解",
+      "subject": "d) 软交换系统主处理系统 、调度软交换系统 、其他重要应用系统 、电源",
+      "action": "",
+      "operation": "d) 软交换系统主处理系统 、调度软交换系统 、其他重要应用系统 、电源等应具有热备份冗余 ; e) SS、TG、BAC/SBC设备应支持以主备用的方式与分组承载网的网络设备相连接 , 即要求支持",
+      "condition": "",
+      "constraint": "d)    软交换系统主处理系统 、调度软交换系统 、其他重要应用系统 、电源等应具有热备份冗余 ;\ne)    SS、TG、BAC/SBC设备应支持以主备用的方式与分组承载网的网络设备相连接 , 即要求支持",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 软交换系统主处理系统 、调度软交换系统 、其他重要应用系统 、电源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23966,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "3.6",
+  "entities": [
+    {
+      "name": "环评等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.6 环境影晌评价等级的划分 按建设项目的特点,所在地区的环境特征。相关法律法规,标准及规划,环境功能区划等划分各环 境要素。各专题评价工作等级。具体由环境要素或专题环境影响评价技术导则规定。",
+      "type": "语义分解",
+      "subject": "环评等级",
+      "action": "",
+      "operation": "按项目环境法规规划区划依各要素专题导则分级",
+      "condition": "",
+      "constraint": "3.6 环境影晌评价等级的划分 按建设项目的特点,所在地区的环境特征。相关法律法规,标准及规划,环境功能区划等划分各环 境要素。各专题评价工作等级。具体由环境要素或专题环境影响评价技术导则规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环评等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2542,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

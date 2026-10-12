@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "9.4.2",
+  "entities": [
+    {
+      "name": "量热初温",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.4.2   对能量当量约为 10. 2 kJ/℃的量热计 ,为确保最终温度略高于量热计夹套温度 ,称量前调整量热\n计水温低于夹套温度 1. 6 ℃ ~ 2. 0 ℃ 。  也可选择较低的初始温度 ,使最终温度略低于夹套的温度 。所有\n测试(包括标定)在相同的温度条件下进行 。",
+      "type": "语义分解",
+      "subject": "量热初温",
+      "action": "",
+      "operation": "约10.2千焦每度水低夹套1.6至2度所有标定同温条件",
+      "condition": "",
+      "constraint": "9.4.2   对能量当量约为 10. 2 kJ/℃的量热计 ,为确保最终温度略高于量热计夹套温度 ,称量前调整量热\n计水温低于夹套温度 1. 6 ℃ ~ 2. 0 ℃ 。  也可选择较低的初始温度 ,使最终温度略低于夹套的温度 。所有\n测试(包括标定)在相同的温度条件下进行 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "量热初温"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35016,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

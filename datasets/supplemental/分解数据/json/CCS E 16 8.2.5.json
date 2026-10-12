@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "8.2.5",
+  "entities": [
+    {
+      "name": "防水层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.5   管道在防腐保温后应进行防水处理。防水层应表面平整、结合牢固、不渗水。",
+      "type": "语义分解",
+      "subject": "防水层",
+      "action": "",
+      "operation": "防腐保温后防水平整牢固不渗",
+      "condition": "",
+      "constraint": "8.2.5   管道在防腐保温后应进行防水处理。防水层应表面平整、结合牢固、不渗水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防水层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30078,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

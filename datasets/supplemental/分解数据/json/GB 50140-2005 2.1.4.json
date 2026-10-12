@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "2.1.4",
+  "entities": [
+    {
+      "name": "灭火级别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.1.4 灭火级别 fire rating 表示灭火器能够扑灭不同种类火灾的效能。由表示灭火效能的数字和灭火种类的字母组成。建筑灭火器配置类型,规格和灭火级别基本参数举例见本规范附录 A。",
+      "type": "语义分解",
+      "subject": "灭火级别",
+      "action": "",
+      "operation": "说明数字灭火能力和字母火灾种类的含义",
+      "condition": "",
+      "constraint": "2.1.4 灭火级别 fire rating 表示灭火器能够扑灭不同种类火灾的效能。由表示灭火效能的数字和灭火种类的字母组成。建筑灭火器配置类型,规格和灭火级别基本参数举例见本规范附录 A。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火级别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4040,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；术语定义附录示例未提供"
+      ]
+    }
+  }
+}

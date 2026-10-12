@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020230",
+  "entities": [
+    {
+      "name": "— 激活",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "— 激活：S4-X/ODUk_A_So功能激活( MI_Active 为真)时可以在接入点接入，否则不接入。\n——FAS/MFAS 插入：该功能将帧同步开销(FAS 和 MFAS) 加到第一行1到7字节，第一\n    行字节8-14设为全“0”。",
+      "type": "语义分解",
+      "subject": "— 激活",
+      "action": "",
+      "operation": "— 激活：S4-X/ODUk_A_So功能激活( MI_Active 为真)时可以在接入点接入，否则不接入。 ——FAS/MFAS 插入：该功能将帧同步开销(FAS 和 MFAS) 加到第一行1到7字节，第一 行字节8-14设为全“0”。",
+      "condition": "",
+      "constraint": "— 激活：S4-X/ODUk_A_So功能激活( MI_Active 为真)时可以在接入点接入，否则不接入。\n——FAS/MFAS 插入：该功能将帧同步开销(FAS 和 MFAS) 加到第一行1到7字节，第一\n    行字节8-14设为全“0”。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— 激活"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20230,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

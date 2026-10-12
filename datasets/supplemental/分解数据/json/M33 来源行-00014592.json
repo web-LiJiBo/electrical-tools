@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014592",
+  "entities": [
+    {
+      "name": "客户侧输出信号支持同步以太，其SSM 信息的承载发送满足ITU-T G.",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   客户侧输出信号支持同步以太，其SSM 信息的承载发送满足ITU-T G.8264要求。除BMP映射路\n径(例如STM64 通过BMP映射到ODU2 、10GE通过BMP映射到ODU2e) 外，网络侧 OTUk业务可\n以用物理层承载时钟同步信息；采用BMP 映射的业务路径，OTUk 的物理层时钟直接跟踪客户侧的物\n理层时钟。",
+      "type": "语义分解",
+      "subject": "客户侧输出信号支持同步以太，其SSM 信息的承载发送满足ITU-T G.",
+      "action": "",
+      "operation": "客户侧输出信号支持同步以太，其SSM 信息的承载发送满足ITU-T G.8264要求。除BMP映射路 径(例如STM64 通过BMP映射到ODU2 、10GE通过BMP映射到ODU2e) 外，网络侧 OTUk业务可 以用物理层承载时钟同步信息；采用BMP 映射的业务路径，OTUk 的物理层时钟直接跟踪客户侧的物 理层时钟。",
+      "condition": "",
+      "constraint": "   客户侧输出信号支持同步以太，其SSM 信息的承载发送满足ITU-T G.8264要求。除BMP映射路\n径(例如STM64 通过BMP映射到ODU2 、10GE通过BMP映射到ODU2e) 外，网络侧 OTUk业务可\n以用物理层承载时钟同步信息；采用BMP 映射的业务路径，OTUk 的物理层时钟直接跟踪客户侧的物\n理层时钟。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "客户侧输出信号支持同步以太，其SSM 信息的承载发送满足ITU-T G."
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14592,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

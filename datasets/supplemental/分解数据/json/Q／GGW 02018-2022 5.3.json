@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "5.3",
+  "entities": [
+    {
+      "name": "附属系统能耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3 附属系统能耗测算 管理机构、服务机构、科研院所和培训基地等场所的附属系统能耗可利用近3年的实际能耗量平均值确定。",
+      "type": "语义分解",
+      "subject": "附属系统能耗",
+      "action": "",
+      "operation": "采用历史实际能耗平均值",
+      "condition": "",
+      "constraint": "近3年的实际能耗量平均值",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "附属系统能耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

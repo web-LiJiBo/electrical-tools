@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011840",
+  "entities": [
+    {
+      "name": "应支持直接拨入业务 、 多用户号码业务 、 经共有数据网 传输通道实现 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       3    应支持直接拨入业务 、  多用户号码业务 、  经共有数据网\n传输通道实现 IP  VPN业务 、  补充业务按用户需求和比例进行\n设置 、WEB 业务 、H. 323 业务 、  呼叫保持等补充业务。",
+      "type": "语义分解",
+      "subject": "应支持直接拨入业务 、 多用户号码业务 、 经共有数据网 传输通道实现 ",
+      "action": "",
+      "operation": "应支持直接拨入业务 、 多用户号码业务 、 经共有数据网 传输通道实现 IP VPN业务 、 补充业务按用户需求和比例进行 设置 、WEB 业务 、H. 323 业务 、 呼叫保持等补充业务。",
+      "condition": "",
+      "constraint": "       3    应支持直接拨入业务 、  多用户号码业务 、  经共有数据网\n传输通道实现 IP  VPN业务 、  补充业务按用户需求和比例进行\n设置 、WEB 业务 、H. 323 业务 、  呼叫保持等补充业务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应支持直接拨入业务 、 多用户号码业务 、 经共有数据网 传输通道实现 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11840,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

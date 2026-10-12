@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "低值超量程处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2  检测时，仪器读数小于1μmol/mol,    则净检测值以0 μmol/mol   处理；检测时，仪器检测值超\n出量程，或者浓度太高而熄火，在条件具备情况下通过稀释等方法测定，稀释气体以洁净空气为主，不\n应采用高纯氮气等惰性气体。",
+      "type": "语义分解",
+      "subject": "低值超量程处理",
+      "action": "",
+      "operation": "低于1微摩每摩净值零超量程熄火可用洁净空气稀释不得用纯氮惰气",
+      "condition": "",
+      "constraint": "6.4.2  检测时，仪器读数小于1μmol/mol,    则净检测值以0 μmol/mol   处理；检测时，仪器检测值超\n出量程，或者浓度太高而熄火，在条件具备情况下通过稀释等方法测定，稀释气体以洁净空气为主，不\n应采用高纯氮气等惰性气体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "低值超量程处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36601,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

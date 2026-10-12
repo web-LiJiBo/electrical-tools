@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "3.7",
+  "entities": [
+    {
+      "name": "海湾平均基准温度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7 海湾平均温度法 aVerage temperature method of gulf area 在海湾空间范围内,将扣除潜排区范围后遥感反演的平均温度作为基准温度的方法,称为海湾平均温度法。 1 注:  海湾平均温度法属于数值统计类型的方法, 每景影像独立提取。",
+      "type": "语义分解",
+      "subject": "海湾平均基准温度",
+      "action": "",
+      "operation": "扣除温排范围后取海湾反演平均温度每景独立提取",
+      "condition": "",
+      "constraint": "3.7 海湾平均温度法 aVerage temperature method of gulf area 在海湾空间范围内,将扣除潜排区范围后遥感反演的平均温度作为基准温度的方法,称为海湾平均温度法。 1 注:  海湾平均温度法属于数值统计类型的方法, 每景影像独立提取。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海湾平均基准温度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1939,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温排字样识别异常"
+      ]
+    }
+  }
+}

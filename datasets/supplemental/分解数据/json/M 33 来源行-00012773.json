@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012773",
+  "entities": [
+    {
+      "name": "工程交付是以系统为对象，可是系统中的通道，交付后可能构成更长运行通道的一",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   工程交付是以系统为对象，可是系统中的通道，交付后可能构成更长运行通道的一部分。例如一个\n500km 系统中的通道，可能作为今后5000km 通道的一段来投入业务。而投入业务指标是随通道的长度\n增加其单位长度的指标趋向于严格。因此，应考虑在我国可能出现的最长通道也能满足投入业务要求。\n目前可选择5000km作为交付指标的计算长度。",
+      "type": "语义分解",
+      "subject": "工程交付是以系统为对象，可是系统中的通道，交付后可能构成更长运行通道的一",
+      "action": "",
+      "operation": "工程交付是以系统为对象，可是系统中的通道，交付后可能构成更长运行通道的一部分。例如一个 500km 系统中的通道，可能作为今后5000km 通道的一段来投入业务。而投入业务指标是随通道的长度 增加其单位长度的指标趋向于严格。因此，应考虑在我国可能出现的最长通道也能满足投入业务要求。 目前可选择5000km作为交付指标的计算长度。",
+      "condition": "",
+      "constraint": "   工程交付是以系统为对象，可是系统中的通道，交付后可能构成更长运行通道的一部分。例如一个\n500km 系统中的通道，可能作为今后5000km 通道的一段来投入业务。而投入业务指标是随通道的长度\n增加其单位长度的指标趋向于严格。因此，应考虑在我国可能出现的最长通道也能满足投入业务要求。\n目前可选择5000km作为交付指标的计算长度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程交付是以系统为对象，可是系统中的通道，交付后可能构成更长运行通道的一"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12773,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

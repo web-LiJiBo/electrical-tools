@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023274",
+  "entities": [
+    {
+      "name": "当接人网站内部的设备如 MDF 架和接入网机架相距较 远时，此时 MDF",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2  当接人网站内部的设备如 MDF  架和接入网机架相距较\n远时，此时 MDF  架就近与环形接地网连接，使通过用户线进入站\n内 MDF 架上的保安单元的雷电流能迅速入地。",
+      "type": "语义分解",
+      "subject": "当接人网站内部的设备如 MDF 架和接入网机架相距较 远时，此时 MDF",
+      "action": "",
+      "operation": "当接人网站内部的设备如 MDF 架和接入网机架相距较 远时，此时 MDF 架就近与环形接地网连接，使通过用户线进入站 内 MDF 架上的保安单元的雷电流能迅速入地。",
+      "condition": "",
+      "constraint": "   2  当接人网站内部的设备如 MDF  架和接入网机架相距较\n远时，此时 MDF  架就近与环形接地网连接，使通过用户线进入站\n内 MDF 架上的保安单元的雷电流能迅速入地。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当接人网站内部的设备如 MDF 架和接入网机架相距较 远时，此时 MDF"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23274,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

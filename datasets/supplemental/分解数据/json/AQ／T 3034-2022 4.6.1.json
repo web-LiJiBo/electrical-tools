@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.6.1",
+  "entities": [
+    {
+      "name": "风险制度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.1 企业应制定风险管理制度,明确风险管理的职责 .范围,方法及风险管控要求等 ,将安全风险分 级管控和隐患排查治理双重预防T作机制融人风险管理工作 ,通过危害辨识 ,风险评估 ,风险控制及风 险监控 ,保证风险处于受控状态 _",
+      "type": "语义分解",
+      "subject": "风险制度",
+      "action": "",
+      "operation": "明确职责范围方法控制融合双重预防辨识评估控制监控保持受控",
+      "condition": "",
+      "constraint": "4.6.1 企业应制定风险管理制度,明确风险管理的职责 .范围,方法及风险管控要求等 ,将安全风险分 级管控和隐患排查治理双重预防T作机制融人风险管理工作 ,通过危害辨识 ,风险评估 ,风险控制及风 险监控 ,保证风险处于受控状态 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险制度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5092,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

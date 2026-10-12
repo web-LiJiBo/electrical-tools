@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019289",
+  "entities": [
+    {
+      "name": ")通过监测指针的增减就能够检测到网络同步劣化",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)通过监测指针的增减就能够检测到网络同步劣化。对输出指针调整事件( PJE)  即对指针\n   值增加或减小进行计数，并在参考点MSn/Sn_A_MP处报告，用于性能监测过滤。分别报\n   告指针的增加(正调整事件)和减少(负调整事件)PJE 计数。只需要报告一个选定 STM-N",
+      "type": "语义分解",
+      "subject": ")通过监测指针的增减就能够检测到网络同步劣化",
+      "action": "",
+      "operation": ")通过监测指针的增减就能够检测到网络同步劣化。对输出指针调整事件( PJE) 即对指针 值增加或减小进行计数，并在参考点MSn/Sn_A_MP处报告，用于性能监测过滤。分别报 告指针的增加(正调整事件)和减少(负调整事件)PJE 计数。只需要报告一个选定 STM-N",
+      "condition": "",
+      "constraint": "3)通过监测指针的增减就能够检测到网络同步劣化。对输出指针调整事件( PJE)  即对指针\n   值增加或减小进行计数，并在参考点MSn/Sn_A_MP处报告，用于性能监测过滤。分别报\n   告指针的增加(正调整事件)和减少(负调整事件)PJE 计数。只需要报告一个选定 STM-N",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")通过监测指针的增减就能够检测到网络同步劣化"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19289,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

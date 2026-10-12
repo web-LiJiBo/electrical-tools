@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025493",
+  "entities": [
+    {
+      "name": "在试验的标准大气条件下，用耐压测试仪在系统的各导电回路对地之间进行测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      在试验的标准大气条件下，用耐压测试仪在系统的各导电回路对地之间进行测试。  对于额定绝缘\n电压＞60 V 的回路施加 2 . 0 kV 的工频电压或 2 . 8 kV 的直流电压，历时 1  min,应无击穿、闪络及元器\n件损坏现象；对于额定绝缘电压≤ 60  V 的回路施加 500  V 的工频电压或 710  V 的直流电压，历时\n1 min,应无击穿、闪络及元器件损坏现象。",
+      "type": "语义分解",
+      "subject": "在试验的标准大气条件下，用耐压测试仪在系统的各导电回路对地之间进行测试",
+      "action": "",
+      "operation": "在试验的标准大气条件下，用耐压测试仪在系统的各导电回路对地之间进行测试。 对于额定绝缘 电压＞60 V 的回路施加 2 . 0 kV 的工频电压或 2 . 8 kV 的直流电压，历时 1 min,应无击穿、闪络及元器 件损坏现象；对于额定绝缘电压≤ 60 V 的回路施加 500 V 的工频电压或 710 V 的直流电压，历时 1 min,应无击穿、闪络及元器件损坏现象。",
+      "condition": "",
+      "constraint": "      在试验的标准大气条件下，用耐压测试仪在系统的各导电回路对地之间进行测试。  对于额定绝缘\n电压＞60 V 的回路施加 2 . 0 kV 的工频电压或 2 . 8 kV 的直流电压，历时 1  min,应无击穿、闪络及元器\n件损坏现象；对于额定绝缘电压≤ 60  V 的回路施加 500  V 的工频电压或 710  V 的直流电压，历时\n1 min,应无击穿、闪络及元器件损坏现象。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在试验的标准大气条件下，用耐压测试仪在系统的各导电回路对地之间进行测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25493,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

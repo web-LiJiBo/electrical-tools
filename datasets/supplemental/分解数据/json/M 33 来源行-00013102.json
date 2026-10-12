@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013102",
+  "entities": [
+    {
+      "name": "UNEO缺陷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "UNEO缺陷。高级(版本2)型的检出过程是在与类型1相同的UNEO状态时再用核对踪迹识别符内容的办法证实这个状态",
+      "type": "语义分解",
+      "subject": "UNEO缺陷",
+      "action": "",
+      "operation": "UNEO缺陷。高级(版本2)型的检出过程是在与类型1相同的UNEO状态时再用核对踪迹识别符内容的办法证实这个状态",
+      "condition": "",
+      "constraint": "UNEO缺陷。高级(版本2)型的检出过程是在与类型1相同的UNEO状态时再用核对踪迹识别符内容的办法证实这个状态",
+      "constraint_role": "informational",
+      "related_entities": [
+        "UNEO缺陷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13102,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

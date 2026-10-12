@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "入侵紧急报警探测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2 入侵和紧急报警系统应对保护区域的非法隐蔽进入、强行闯入以及撬、挖、凿等破坏行为进行实时有效的探测与报警。应结合风险防范要求和现场环境条件等因素，选择适当类型的设备和安装位置，构成点、线、面、空间或其组合的综合防护系统。",
+      "type": "语义分解",
+      "subject": "入侵紧急报警探测",
+      "action": "",
+      "operation": "按风险现场设备位置组合点线面空间实时有效探非法隐入闯撬挖凿",
+      "condition": "",
+      "constraint": "6.4.2 入侵和紧急报警系统应对保护区域的非法隐蔽进入、强行闯入以及撬、挖、凿等破坏行为进行实时有效的探测与报警。应结合风险防范要求和现场环境条件等因素，选择适当类型的设备和安装位置，构成点、线、面、空间或其组合的综合防护系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "入侵紧急报警探测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6967,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

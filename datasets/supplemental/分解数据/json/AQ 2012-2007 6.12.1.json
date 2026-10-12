@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.12.1",
+  "entities": [
+    {
+      "name": "滩海勘探设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.1 滩海陆岸油田在勘探阶段建设的滩海陆岸石油设施 ,实行业主委托第三方检验 ,政府安全作业许可的管理制度。",
+      "type": "语义分解",
+      "subject": "滩海勘探设施",
+      "action": "",
+      "operation": "实施业主第三方检验及许可管理",
+      "condition": "",
+      "constraint": "6.12.1 滩海陆岸油田在勘探阶段建设的滩海陆岸石油设施 ,实行业主委托第三方检验 ,政府安全作业许可的管理制度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "滩海勘探设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4748,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

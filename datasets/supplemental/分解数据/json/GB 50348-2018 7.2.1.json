@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "施工工程变更",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 应按深化设计文件和施工图纸进行施工，不得随意更改。当工程变更时，应填写更改审核单并经批准。更改审核单应对更改内容、更改原因、更改情况等进行详细说明。",
+      "type": "语义分解",
+      "subject": "施工工程变更",
+      "action": "",
+      "operation": "按图施工变更填审核单批准",
+      "condition": "当工程变更时",
+      "constraint": "7.2.1 应按深化设计文件和施工图纸进行施工，不得随意更改。当工程变更时，应填写更改审核单并经批准。更改审核单应对更改内容、更改原因、更改情况等进行详细说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工工程变更"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7069,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

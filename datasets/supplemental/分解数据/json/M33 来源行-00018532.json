@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018532",
+  "entities": [
+    {
+      "name": "如果两个复帧同步处理中出现 OOM1或 OOM2中任何一个，且在m 个 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   如果两个复帧同步处理中出现 OOM1或 OOM2中任何一个，且在m 个 VC3/4 帧内H4 两阶复帧未\n恢复应宣告 dLOM 缺陷。一旦进入dLOM 状态，当两个复帧同步处理进入IM 应当退出该状态。m 值\n\n应在40～80范围之内，不可配置。",
+      "type": "语义分解",
+      "subject": "如果两个复帧同步处理中出现 OOM1或 OOM2中任何一个，且在m 个 ",
+      "action": "",
+      "operation": "如果两个复帧同步处理中出现 OOM1或 OOM2中任何一个，且在m 个 VC3/4 帧内H4 两阶复帧未 恢复应宣告 dLOM 缺陷。一旦进入dLOM 状态，当两个复帧同步处理进入IM 应当退出该状态。m 值 应在40～80范围之内，不可配置。",
+      "condition": "",
+      "constraint": "   如果两个复帧同步处理中出现 OOM1或 OOM2中任何一个，且在m 个 VC3/4 帧内H4 两阶复帧未\n恢复应宣告 dLOM 缺陷。一旦进入dLOM 状态，当两个复帧同步处理进入IM 应当退出该状态。m 值\n\n应在40～80范围之内，不可配置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "如果两个复帧同步处理中出现 OOM1或 OOM2中任何一个，且在m 个 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18532,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

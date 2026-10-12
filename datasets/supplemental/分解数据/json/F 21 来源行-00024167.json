@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024167",
+  "entities": [
+    {
+      "name": "f) 收端软交换收到 ACM 消息 ,利用 SIP-I协议生成 SIP ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "f)     收端软交换收到 ACM 消息 ,利用 SIP-I协议生成 SIP 18x 响应送给发端软交换 ;\ng)    发端软交换收到 18x 将其转换成对应的 ACM 消息发给 PSTN 发端局 ;\nh)    发端软交换回 PRACK 响应给收端软交换 ;",
+      "type": "语义分解",
+      "subject": "f) 收端软交换收到 ACM 消息 ,利用 SIP-I协议生成 SIP ",
+      "action": "",
+      "operation": "f) 收端软交换收到 ACM 消息 ,利用 SIP-I协议生成 SIP 18x 响应送给发端软交换 ; g) 发端软交换收到 18x 将其转换成对应的 ACM 消息发给 PSTN 发端局 ; h) 发端软交换回 PRACK 响应给收端软交换",
+      "condition": "",
+      "constraint": "f)     收端软交换收到 ACM 消息 ,利用 SIP-I协议生成 SIP 18x 响应送给发端软交换 ;\ng)    发端软交换收到 18x 将其转换成对应的 ACM 消息发给 PSTN 发端局 ;\nh)    发端软交换回 PRACK 响应给收端软交换 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 收端软交换收到 ACM 消息 ,利用 SIP-I协议生成 SIP "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24167,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028984",
+  "entities": [
+    {
+      "name": "救援车辆应选择上风方向的入口、通道进入现场，停靠在上风方向或侧风方向，进",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1   救援车辆应选择上风方向的入口、通道进入现场，停靠在上风方向或侧风方向，进入警戒区的\n车辆应戴防火罩。在上风、侧上风方向选择进入路线，并设立水枪阵地。",
+      "type": "语义分解",
+      "subject": "救援车辆应选择上风方向的入口、通道进入现场，停靠在上风方向或侧风方向，进",
+      "action": "",
+      "operation": "救援车辆应选择上风方向的入口、通道进入现场，停靠在上风方向或侧风方向，进入警戒区的 车辆应戴防火罩。在上风、侧上风方向选择进入路线，并设立水枪阵地。",
+      "condition": "",
+      "constraint": "7.2.1   救援车辆应选择上风方向的入口、通道进入现场，停靠在上风方向或侧风方向，进入警戒区的\n车辆应戴防火罩。在上风、侧上风方向选择进入路线，并设立水枪阵地。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "救援车辆应选择上风方向的入口、通道进入现场，停靠在上风方向或侧风方向，进"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "7.3.6",
+  "entities": [
+    {
+      "name": "电源防雷检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.6 供电、防雷与接地设施的检查应至少包括下列内容: 1 检查系统的主电源和备用电源的容量; 2 分别用主电源和备用电源供电，检查电源自动转换和备用电源的自动充电功能; 3 当系统采用稳压电源时，检查其稳压特性;当采用UPS作为备用电源时，检查其自动切换的可靠性、切换电压值及容量; 4 检查配电箱的配出回路数量、零线对地的电压峰值; 5 检查防雷与接地装置的连接情况，系统设备的等电位连接情况，测试室外设备和监控中心的接地电阻。",
+      "type": "语义分解",
+      "subject": "电源防雷检查",
+      "action": "",
+      "operation": "容量主备切换充电稳压UPS配电回路零地峰压接地联结阻值",
+      "condition": "",
+      "constraint": "7.3.6 供电、防雷与接地设施的检查应至少包括下列内容: 1 检查系统的主电源和备用电源的容量; 2 分别用主电源和备用电源供电，检查电源自动转换和备用电源的自动充电功能; 3 当系统采用稳压电源时，检查其稳压特性;当采用UPS作为备用电源时，检查其自动切换的可靠性、切换电压值及容量; 4 检查配电箱的配出回路数量、零线对地的电压峰值; 5 检查防雷与接地装置的连接情况，系统设备的等电位连接情况，测试室外设备和监控中心的接地电阻。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电源防雷检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7083,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

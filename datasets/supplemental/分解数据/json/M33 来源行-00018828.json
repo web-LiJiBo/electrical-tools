@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018828",
+  "entities": [
+    {
+      "name": "c) 处理过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    处理过程：在OSn_AP 处接收从OSn_TT_Sk来的 OSn_AI_Data 信号以及携带的定时。OSn/\n       RS功能在RSn_CP 处将该信号处理成数据和相关的定时。该功能重新进行帧同步并标明RSn _C\n       P 数据中的帧起始位置，定帧后的数据和定时送至RSn_CP。它包括下面几个部分：\n   1)再生：",
+      "type": "语义分解",
+      "subject": "c) 处理过程",
+      "action": "",
+      "operation": "c) 处理过程：在OSn_AP 处接收从OSn_TT_Sk来的 OSn_AI_Data 信号以及携带的定时。OSn/ RS功能在RSn_CP 处将该信号处理成数据和相关的定时。该功能重新进行帧同步并标明RSn _C P 数据中的帧起始位置，定帧后的数据和定时送至RSn_CP。它包括下面几个部分： 1)再生",
+      "condition": "",
+      "constraint": "c)    处理过程：在OSn_AP 处接收从OSn_TT_Sk来的 OSn_AI_Data 信号以及携带的定时。OSn/\n       RS功能在RSn_CP 处将该信号处理成数据和相关的定时。该功能重新进行帧同步并标明RSn _C\n       P 数据中的帧起始位置，定帧后的数据和定时送至RSn_CP。它包括下面几个部分：\n   1)再生：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 处理过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18828,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

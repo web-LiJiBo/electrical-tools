@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.2.3",
+  "entities": [
+    {
+      "name": "基础河床",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.3 跨越的基础及地基应完整、稳定。跨河跨越上下游50m～500m 范围内的河床应稳定。\n9.2.4   基础的维修与加固应符合下列规定：",
+      "type": "语义分解",
+      "subject": "基础河床",
+      "action": "",
+      "operation": "完整稳定上下游50至500米河床稳定",
+      "condition": "",
+      "constraint": "9.2.3 跨越的基础及地基应完整、稳定。跨河跨越上下游50m～500m 范围内的河床应稳定。\n9.2.4   基础的维修与加固应符合下列规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基础河床"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30107,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；基础加固清单缺失"
+      ]
+    }
+  }
+}

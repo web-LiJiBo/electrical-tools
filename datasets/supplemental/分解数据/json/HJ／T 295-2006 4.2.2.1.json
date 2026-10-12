@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.2.2.1",
+  "entities": [
+    {
+      "name": "监察业务归档时间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.1 污染源监察。污染防治设施监察。建设项目 '三同时' 监察。限期治理项目监察。排污许可证监察。征收排污费。环境保护专项资金管理和使用。环境监察稽查等文件材料于次年的第一季度内归档",
+      "type": "语义分解",
+      "subject": "监察业务归档时间",
+      "action": "",
+      "operation": "所列监察收费资金稽查材料次年第一季度归档",
+      "condition": "",
+      "constraint": "4.2.2.1 污染源监察。污染防治设施监察。建设项目 '三同时' 监察。限期治理项目监察。排污许可证监察。征收排污费。环境保护专项资金管理和使用。环境监察稽查等文件材料于次年的第一季度内归档",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监察业务归档时间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3066,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；历史制度当前适用性未核实"
+      ]
+    }
+  }
+}

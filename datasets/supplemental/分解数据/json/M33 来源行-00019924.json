@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019924",
+  "entities": [
+    {
+      "name": "● 保护倒换也可由同步设备管功能接收的倒换命令来启动，见ITU-T G.",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "●  保护倒换也可由同步设备管功能接收的倒换命令来启动，见ITU-T G.841 所\n\n   述的倒换启动判据。",
+      "type": "语义分解",
+      "subject": "● 保护倒换也可由同步设备管功能接收的倒换命令来启动，见ITU-T G.",
+      "action": "",
+      "operation": "● 保护倒换也可由同步设备管功能接收的倒换命令来启动，见ITU-T G.841 所 述的倒换启动判据。",
+      "condition": "",
+      "constraint": "●  保护倒换也可由同步设备管功能接收的倒换命令来启动，见ITU-T G.841 所\n\n   述的倒换启动判据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "● 保护倒换也可由同步设备管功能接收的倒换命令来启动，见ITU-T G."
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19924,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

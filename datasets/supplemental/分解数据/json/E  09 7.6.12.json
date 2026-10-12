@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "7.6.12",
+  "entities": [
+    {
+      "name": "压井观察",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6.12 当井口压力显示为0后，暂停压井观察，2h内压力无变化，压井成功；如果压力上升，继续\n压井。",
+      "type": "语义分解",
+      "subject": "压井观察",
+      "action": "",
+      "operation": "零压暂停2小时无变化成功升压续压",
+      "condition": "",
+      "constraint": "7.6.12 当井口压力显示为0后，暂停压井观察，2h内压力无变化，压井成功；如果压力上升，继续\n压井。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压井观察"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29018,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；高危操作不授权自动执行"
+      ]
+    }
+  }
+}

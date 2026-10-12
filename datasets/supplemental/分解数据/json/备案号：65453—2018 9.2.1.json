@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "9.2.1",
+  "entities": [
+    {
+      "name": "ECDA 项目报告应详细记录检测和评价的整个过程，报 告内容应涵盖预评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.1 ECDA 项目报告应详细记录检测和评价的整个过程，报\n告内容应涵盖预评价、间接检测、直接检测、后评价等各个环\n节，可分阶段提交。",
+      "type": "语义分解",
+      "subject": "ECDA 项目报告应详细记录检测和评价的整个过程，报 告内容应涵盖预评价",
+      "action": "",
+      "operation": "ECDA 项目报告应详细记录检测和评价的整个过程，报 告内容应涵盖预评价、间接检测、直接检测、后评价等各个环 节，可分阶段提交。",
+      "condition": "",
+      "constraint": "9.2.1 ECDA 项目报告应详细记录检测和评价的整个过程，报\n告内容应涵盖预评价、间接检测、直接检测、后评价等各个环\n节，可分阶段提交。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ECDA 项目报告应详细记录检测和评价的整个过程，报 告内容应涵盖预评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45227,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

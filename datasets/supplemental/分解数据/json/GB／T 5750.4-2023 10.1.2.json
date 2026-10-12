@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "10.1.2",
+  "entities": [
+    {
+      "name": "硬度滴定原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.2 原理 水样中的钙、镁离子与铬黑T指示剂形成紫红色螯合物，这些螯合物的不稳定常数大于乙二胺四乙酸钙和镁螯合物的不稳定常数。当pH=10时，乙二胺四乙酸二钠先与钙离子，再与镁离子形成螯合物，滴定至终点时，溶液呈现出铬黑T指示剂的纯蓝色。",
+      "type": "语义分解",
+      "subject": "硬度滴定原理",
+      "action": "",
+      "operation": "pH十EDTA络合钙镁终点铬黑T变纯蓝",
+      "condition": "",
+      "constraint": "10.1.2 原理 水样中的钙、镁离子与铬黑T指示剂形成紫红色螯合物，这些螯合物的不稳定常数大于乙二胺四乙酸钙和镁螯合物的不稳定常数。当pH=10时，乙二胺四乙酸二钠先与钙离子，再与镁离子形成螯合物，滴定至终点时，溶液呈现出铬黑T指示剂的纯蓝色。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "硬度滴定原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1395,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

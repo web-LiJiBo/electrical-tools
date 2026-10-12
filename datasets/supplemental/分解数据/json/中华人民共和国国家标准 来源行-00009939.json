@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009939",
+  "entities": [
+    {
+      "name": "客户侧的维护备件宜选择可通过网管配置支持多种接口 的板卡，线路侧维护备件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       8    客户侧的维护备件宜选择可通过网管配置支持多种接口\n\n的板卡，线路侧维护备件宜选择全波段频率可调的板卡；\n       9    交叉连接调度矩阵应具备冗余保护能力；",
+      "type": "语义分解",
+      "subject": "客户侧的维护备件宜选择可通过网管配置支持多种接口 的板卡，线路侧维护备件",
+      "action": "",
+      "operation": "客户侧的维护备件宜选择可通过网管配置支持多种接口 的板卡，线路侧维护备件宜选择全波段频率可调的板卡； 9 交叉连接调度矩阵应具备冗余保护能力",
+      "condition": "",
+      "constraint": "       8    客户侧的维护备件宜选择可通过网管配置支持多种接口\n\n的板卡，线路侧维护备件宜选择全波段频率可调的板卡；\n       9    交叉连接调度矩阵应具备冗余保护能力；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "客户侧的维护备件宜选择可通过网管配置支持多种接口 的板卡，线路侧维护备件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9939,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

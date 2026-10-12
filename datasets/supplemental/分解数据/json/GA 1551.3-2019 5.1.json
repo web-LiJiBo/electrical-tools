@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "销售企业目标等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1 成品油和天然气销售企业重点目标的等级由低到高分为三级重点目标 ,二级重点目标 一级重点目标 ,由公安机关会同有关部门 .相关企业依据国家有关规定共同确定。",
+      "type": "语义分解",
+      "subject": "销售企业目标等级",
+      "action": "",
+      "operation": "有关部门企业共同确定三级等级",
+      "condition": "",
+      "constraint": "5.1 成品油和天然气销售企业重点目标的等级由低到高分为三级重点目标 ,二级重点目标 一级重点目标 ,由公安机关会同有关部门 .相关企业依据国家有关规定共同确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "销售企业目标等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5692,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

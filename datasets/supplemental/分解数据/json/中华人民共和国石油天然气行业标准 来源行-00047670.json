@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047670",
+  "entities": [
+    {
+      "name": "通过管地电位时间分布曲线与干扰源变化曲线(直流牵 引系统运行时刻表、潮汐",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   3 通过管地电位时间分布曲线与干扰源变化曲线(直流牵\n引系统运行时刻表、潮汐涨落曲线、地磁暴K,指数变化曲线)\n进行对比分析，获得管道与干扰源在干扰时间、干扰强度上的\n关联性。",
+      "type": "语义分解",
+      "subject": "通过管地电位时间分布曲线与干扰源变化曲线(直流牵 引系统运行时刻表、潮汐",
+      "action": "",
+      "operation": "通过管地电位时间分布曲线与干扰源变化曲线(直流牵 引系统运行时刻表、潮汐涨落曲线、地磁暴K,指数变化曲线) 进行对比分析，获得管道与干扰源在干扰时间、干扰强度上的 关联性。",
+      "condition": "",
+      "constraint": "   3 通过管地电位时间分布曲线与干扰源变化曲线(直流牵\n引系统运行时刻表、潮汐涨落曲线、地磁暴K,指数变化曲线)\n进行对比分析，获得管道与干扰源在干扰时间、干扰强度上的\n关联性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通过管地电位时间分布曲线与干扰源变化曲线(直流牵 引系统运行时刻表、潮汐"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47670,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

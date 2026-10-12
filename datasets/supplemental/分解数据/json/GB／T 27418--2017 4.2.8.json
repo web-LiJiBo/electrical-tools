@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.8",
+  "entities": [
+    {
+      "name": "不确定度分量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.8 4.2.1到 4.2.7对标谁不确定度的 A 类评定并没有详尽论述;还有许多情况 ,有些甚至是很复杂 的情况 ,可以用统计方法处理 < 校准设计方案的应用是一个很好的例子 ,通常用最小二乘法评定未知值 的实物量具(如量块和标准砝码)与已知值的参考标准比较结果的短期和长期随机娈化引入的不确定 度。在这种相对简单的测量情形下,不确定度分量通常通过数据的统计分析来评定 ,这些数据是在一套 测量程序中将与其有关的量设计许多不同值来获得 ,这就是所谓的方差分析(见F.5)。 注:在溯源链较低端的校谁 ,通常假设参考标准的值是谁确巳知的 ,因为是经过国家或原级标准实验室校准过的 校准结果的不确定度可以是从表征测量的合并实验标准差评定得到的单一 A 类标准不确定度=。",
+      "type": "语义分解",
+      "subject": "不确定度分量",
+      "action": "",
+      "operation": "使用统计分析评定",
+      "condition": "",
+      "constraint": "数据的统计分析来评定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不确定度分量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行是说明和示例，公式引用及文字识别错误"
+      ]
+    }
+  }
+}

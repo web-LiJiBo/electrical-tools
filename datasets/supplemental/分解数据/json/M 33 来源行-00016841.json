@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016841",
+  "entities": [
+    {
+      "name": "f) 通过OTN 分析仪产生信号劣化( SD) 条件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      f)  通过OTN 分析仪产生信号劣化( SD)  条件。对于不同的保护方式，具体SD 要求见第10章，对\n于恢复的SD 条件同ODUk SPRing 保护要求，记录业务1受损时间，同时通过网管查看业务路径。SD\n条件消失且过了等待恢复时间( WTR)  后，通过网管查看业务是否回到初始路径，并记录业务返回时受\n损时间。",
+      "type": "语义分解",
+      "subject": "f) 通过OTN 分析仪产生信号劣化( SD) 条件",
+      "action": "",
+      "operation": "f) 通过OTN 分析仪产生信号劣化( SD) 条件。对于不同的保护方式，具体SD 要求见第10章，对 于恢复的SD 条件同ODUk SPRing 保护要求，记录业务1受损时间，同时通过网管查看业务路径。SD 条件消失且过了等待恢复时间( WTR) 后，通过网管查看业务是否回到初始路径，并记录业务返回时受 损时间。",
+      "condition": "",
+      "constraint": "      f)  通过OTN 分析仪产生信号劣化( SD)  条件。对于不同的保护方式，具体SD 要求见第10章，对\n于恢复的SD 条件同ODUk SPRing 保护要求，记录业务1受损时间，同时通过网管查看业务路径。SD\n条件消失且过了等待恢复时间( WTR)  后，通过网管查看业务是否回到初始路径，并记录业务返回时受\n损时间。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 通过OTN 分析仪产生信号劣化( SD) 条件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16841,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

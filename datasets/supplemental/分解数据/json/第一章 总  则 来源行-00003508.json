@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产安全视频监控系统管理细则",
+  "standard_id": "第一章 总  则",
+  "version": "",
+  "chapter_path": "来源行-00003508",
+  "entities": [
+    {
+      "name": "第三十六条 各级管理单位应对系统数据负有安全管理责任,可采取数据水印",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第三十六条 各级管理单位应对系统数据负有安全管理责任,可采取数据水印。加密存储等数据安全管理措施,数据未经许可严禁拷贝和扩散。",
+      "type": "语义分解",
+      "subject": "第三十六条 各级管理单位应对系统数据负有安全管理责任,可采取数据水印",
+      "action": "",
+      "operation": "第三十六条 各级管理单位应对系统数据负有安全管理责任,可采取数据水印。加密存储等数据安全管理措施,数据未经许可严禁拷贝和扩散。",
+      "condition": "",
+      "constraint": "第三十六条 各级管理单位应对系统数据负有安全管理责任,可采取数据水印。加密存储等数据安全管理措施,数据未经许可严禁拷贝和扩散。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三十六条 各级管理单位应对系统数据负有安全管理责任,可采取数据水印"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3508,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

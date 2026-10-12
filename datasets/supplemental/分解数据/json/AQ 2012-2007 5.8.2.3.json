@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.8.2.3",
+  "entities": [
+    {
+      "name": "湿蒸汽发生器生命周期管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8.2.3 湿蒸汽发生器的修理 ,改造 ,定期检验,报废 ,及安全附件与仪表应符合规定程序并满足国家现行标准油田专用湿蒸汽发生器安全规定的要求。",
+      "type": "语义分解",
+      "subject": "湿蒸汽发生器生命周期管理",
+      "action": "",
+      "operation": "按程序及引用标准修改检报和附件管理",
+      "condition": "",
+      "constraint": "5.8.2.3 湿蒸汽发生器的修理 ,改造 ,定期检验,报废 ,及安全附件与仪表应符合规定程序并满足国家现行标准油田专用湿蒸汽发生器安全规定的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "湿蒸汽发生器生命周期管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4530,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

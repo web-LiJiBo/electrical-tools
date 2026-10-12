@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013619",
+  "entities": [
+    {
+      "name": "a) 非OTN 域通过非OTN IrDI和OTN 域互联",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " a)    非OTN 域通过非OTN IrDI和OTN 域互联：非OTN 域(如 SDH、以太网等)通过非OTN IrDI\n\n    接口(如 SDH 接口、以太网接口等)和 OTN 域实现互联，在非OTN IrDI 接口的客户层实现\n    互通。",
+      "type": "语义分解",
+      "subject": "a) 非OTN 域通过非OTN IrDI和OTN 域互联",
+      "action": "",
+      "operation": "a) 非OTN 域通过非OTN IrDI和OTN 域互联：非OTN 域(如 SDH、以太网等)通过非OTN IrDI 接口(如 SDH 接口、以太网接口等)和 OTN 域实现互联，在非OTN IrDI 接口的客户层实现 互通。",
+      "condition": "",
+      "constraint": " a)    非OTN 域通过非OTN IrDI和OTN 域互联：非OTN 域(如 SDH、以太网等)通过非OTN IrDI\n\n    接口(如 SDH 接口、以太网接口等)和 OTN 域实现互联，在非OTN IrDI 接口的客户层实现\n    互通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 非OTN 域通过非OTN IrDI和OTN 域互联"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13619,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

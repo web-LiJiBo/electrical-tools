@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.3.3.1",
+  "entities": [
+    {
+      "name": "一般固体泄漏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3.1 固体泄漏介质的一般处置措施 固体泄漏介质的一般处置措施为: a) 收集。小量泄漏或现场残留的固体介质 ,可用洁净的铲子将泄漏介质收集到浩挣 ,干燥 ,有盖的容器中; 6) 筑堤收容。如大量泄漏 ,构筑围堤收容 ,然后收集 ,转移 ,回收或无害化处理后废弃; C) 覆盖。 无法及时回收需要避光 干燥保存的物质,可用帆布临时覆盖; 4) 固化。无法回收或回收价值不大的介质 ,可以用水泥 ,沥青 .热塑性材料固化后废弃。",
+      "type": "语义分解",
+      "subject": "一般固体泄漏",
+      "action": "",
+      "operation": "按量收集围收转移回收适当覆盖固化处置",
+      "condition": "",
+      "constraint": "7.3.3.1 固体泄漏介质的一般处置措施 固体泄漏介质的一般处置措施为: a) 收集。小量泄漏或现场残留的固体介质 ,可用洁净的铲子将泄漏介质收集到浩挣 ,干燥 ,有盖的容器中; 6) 筑堤收容。如大量泄漏 ,构筑围堤收容 ,然后收集 ,转移 ,回收或无害化处理后废弃; C) 覆盖。 无法及时回收需要避光 干燥保存的物质,可用帆布临时覆盖; 4) 固化。无法回收或回收价值不大的介质 ,可以用水泥 ,沥青 .热塑性材料固化后废弃。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一般固体泄漏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5920,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；材料兼容与废弃要求专家核查"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047750",
+  "entities": [
+    {
+      "name": "以第一个数据点的采集时间为原点，得出每个数据点与 第一个数据点的采集间隔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      6   以第一个数据点的采集时间为原点，得出每个数据点与\n第一个数据点的采集间隔时间，通过倒数转换得到频率。\n      7   以频率为横坐标，功率谱密度分布为纵坐标，绘制频谱\n分析图，得到动态直流干扰频率分布图。",
+      "type": "语义分解",
+      "subject": "以第一个数据点的采集时间为原点，得出每个数据点与 第一个数据点的采集间隔",
+      "action": "",
+      "operation": "以第一个数据点的采集时间为原点，得出每个数据点与 第一个数据点的采集间隔时间，通过倒数转换得到频率。 7 以频率为横坐标，功率谱密度分布为纵坐标，绘制频谱 分析图，得到动态直流干扰频率分布图。",
+      "condition": "",
+      "constraint": "      6   以第一个数据点的采集时间为原点，得出每个数据点与\n第一个数据点的采集间隔时间，通过倒数转换得到频率。\n      7   以频率为横坐标，功率谱密度分布为纵坐标，绘制频谱\n分析图，得到动态直流干扰频率分布图。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "以第一个数据点的采集时间为原点，得出每个数据点与 第一个数据点的采集间隔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "第三阶段调查参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 主要工作内容 主要工作内容包括地块特征参数和受体暴露参数的调查。 调查地块特征参数 地块特征参数包括:  不同代表位置和土层或选定土层的土壤样品的理化性质分析数据,如土壤 pH 值。容重。有机碳含量。含水率和质地等;  地块(所在地)气候。水文。地质特征信息和数据,如地表年平均风速和水力传导系数等。根据风险评估和地块修复实际需要, 选取适当的参数进行调查。 受体暴露参数包括:  地块及周边地区土地利用方式,人群及建筑物等相关信息。",
+      "type": "语义分解",
+      "subject": "第三阶段调查参数",
+      "action": "",
+      "operation": "按风险修复需调查土层理化气候水文地质及土地人群建筑受体信息",
+      "condition": "",
+      "constraint": "7.1 主要工作内容 主要工作内容包括地块特征参数和受体暴露参数的调查。 调查地块特征参数 地块特征参数包括:  不同代表位置和土层或选定土层的土壤样品的理化性质分析数据,如土壤 pH 值。容重。有机碳含量。含水率和质地等;  地块(所在地)气候。水文。地质特征信息和数据,如地表年平均风速和水力传导系数等。根据风险评估和地块修复实际需要, 选取适当的参数进行调查。 受体暴露参数包括:  地块及周边地区土地利用方式,人群及建筑物等相关信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三阶段调查参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2665,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

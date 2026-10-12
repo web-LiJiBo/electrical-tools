@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037840",
+  "entities": [
+    {
+      "name": "进行统计，对于正常工况下的火炬系统，可根据流量监测系统、工程计算 或类似",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "进行统计，对于正常工况下的火炬系统，可根据流量监测系统、工程计算\n\n或类似估算方法获取火炬气流量；对事故导致的火炬气如无具体监测，可\n\n根据火炬的平均气体流量、事故持续时间为基础进行估算。火炬气中 CH4、\n\nCO2 的体积含量可根据气体组分分析仪或火炬气来源获取。",
+      "type": "语义分解",
+      "subject": "进行统计，对于正常工况下的火炬系统，可根据流量监测系统、工程计算 或类似",
+      "action": "",
+      "operation": "进行统计，对于正常工况下的火炬系统，可根据流量监测系统、工程计算 或类似估算方法获取火炬气流量；对事故导致的火炬气如无具体监测，可 根据火炬的平均气体流量、事故持续时间为基础进行估算。火炬气中 CH4、 CO2 的体积含量可根据气体组分分析仪或火炬气来源获取。",
+      "condition": "",
+      "constraint": "进行统计，对于正常工况下的火炬系统，可根据流量监测系统、工程计算\n\n或类似估算方法获取火炬气流量；对事故导致的火炬气如无具体监测，可\n\n根据火炬的平均气体流量、事故持续时间为基础进行估算。火炬气中 CH4、\n\nCO2 的体积含量可根据气体组分分析仪或火炬气来源获取。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "进行统计，对于正常工况下的火炬系统，可根据流量监测系统、工程计算 或类似"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37840,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

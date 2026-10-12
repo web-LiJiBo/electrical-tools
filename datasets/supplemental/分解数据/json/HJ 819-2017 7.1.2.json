@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "7.1.2",
+  "entities": [
+    {
+      "name": "自动监测运维记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 自动监测运维记录 包括自动监测系统运行状况。系统辅助设备运行状况。系统校准。校验工作等; 仪器说明书及相关标准规范中规定的其他检查项目; 校准。维护保养 维修记录等。",
+      "type": "语义分解",
+      "subject": "自动监测运维记录",
+      "action": "",
+      "operation": "记系统辅助运行校准校验检查维护维修",
+      "condition": "",
+      "constraint": "7.1.2 自动监测运维记录 包括自动监测系统运行状况。系统辅助设备运行状况。系统校准。校验工作等; 仪器说明书及相关标准规范中规定的其他检查项目; 校准。维护保养 维修记录等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "自动监测运维记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

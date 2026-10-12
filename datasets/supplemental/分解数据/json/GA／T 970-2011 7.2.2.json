@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "不能有效堵漏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 倒罐输转 不能有效堵漏时 ,采取下列方法进行倒罐输转: a) 装置泄漏宜采用压缩机倒罐; 6) 罐区泄漏宜采用烃泵倒罐或压缩气体倒罐; 移动容器泄漏宜采用压力差倒罐; 无法倒罐的液态或固态泄漏介质 ,可将介质转移到其他容器或人工池中。",
+      "type": "语义分解",
+      "subject": "不能有效堵漏",
+      "action": "",
+      "operation": "按装置罐区移动容器选择倒罐或转移容器池",
+      "condition": "",
+      "constraint": "7.2.2 倒罐输转 不能有效堵漏时 ,采取下列方法进行倒罐输转: a) 装置泄漏宜采用压缩机倒罐; 6) 罐区泄漏宜采用烃泵倒罐或压缩气体倒罐; 移动容器泄漏宜采用压力差倒罐; 无法倒罐的液态或固态泄漏介质 ,可将介质转移到其他容器或人工池中。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不能有效堵漏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5911,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；历史方法须专业复核非实操授权"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "5.5.2",
+  "entities": [
+    {
+      "name": "制药监测频次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.2 各指标的监测频次在满足本标准的基础上,可根据HJ819中监测频次的确定原则提高监测频次=",
+      "type": "语义分解",
+      "subject": "制药监测频次",
+      "action": "",
+      "operation": "满足本标准后按原则提高",
+      "condition": "",
+      "constraint": "5.5.2 各指标的监测频次在满足本标准的基础上,可根据HJ819中监测频次的确定原则提高监测频次=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药监测频次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2912,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

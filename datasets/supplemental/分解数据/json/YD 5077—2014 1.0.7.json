@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "1.0.7",
+  "entities": [
+    {
+      "name": "未配满终端板局所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.7      对于未配满终端电路板的局所，应按照设计能力进行验收\n测试。",
+      "type": "语义分解",
+      "subject": "未配满终端板局所",
+      "action": "",
+      "operation": "按设计能力验收测试",
+      "condition": "",
+      "constraint": "1.0.7      对于未配满终端电路板的局所，应按照设计能力进行验收\n测试。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "未配满终端板局所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26617,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

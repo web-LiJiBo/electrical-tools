@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012696",
+  "entities": [
+    {
+      "name": "HRP国内和国际部分的边界规定在国际接口局(IG), 对一次群速率以上通",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       HRP国内和国际部分的边界规定在国际接口局(IG),    对一次群速率以上通道相应于 IDTC(国际数字\n传输中心)或PEP(通道终点)。IG 可用于计算通道的长度及其配额。IG 总是以陆地为基础的设备，在物\n\n理上存在于终端国家和中间国家之间。分配的方法考虑了通道的长度和复杂性两方面，分配方法适用于\n每一个参数。",
+      "type": "语义分解",
+      "subject": "HRP国内和国际部分的边界规定在国际接口局(IG), 对一次群速率以上通",
+      "action": "",
+      "operation": "HRP国内和国际部分的边界规定在国际接口局(IG), 对一次群速率以上通道相应于 IDTC(国际数字 传输中心)或PEP(通道终点)。IG 可用于计算通道的长度及其配额。IG 总是以陆地为基础的设备，在物 理上存在于终端国家和中间国家之间。分配的方法考虑了通道的长度和复杂性两方面，分配方法适用于 每一个参数。",
+      "condition": "",
+      "constraint": "       HRP国内和国际部分的边界规定在国际接口局(IG),    对一次群速率以上通道相应于 IDTC(国际数字\n传输中心)或PEP(通道终点)。IG 可用于计算通道的长度及其配额。IG 总是以陆地为基础的设备，在物\n\n理上存在于终端国家和中间国家之间。分配的方法考虑了通道的长度和复杂性两方面，分配方法适用于\n每一个参数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "HRP国内和国际部分的边界规定在国际接口局(IG), 对一次群速率以上通"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12696,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

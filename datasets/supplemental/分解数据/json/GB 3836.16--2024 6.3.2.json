@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "永久拆除设备导线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2 电气设备永久拆除时，与之相关的导线均应按下列方式之一进行处理: a) 拆除; b) 正确端接到适当外壳内的端子上; 在电源端接地，且在电缆的另一端，导线应连接在一起，然后通过安全的方式(例如环氧树脂罐 端)进行绝缘。 注: 单独使用自黏胶带不视为一种安全的绝缘方式。",
+      "type": "语义分解",
+      "subject": "永久拆除设备导线",
+      "action": "",
+      "operation": "移除或安全端接或电源侧接地其余绝缘处理胶带单独不得作为安全措施",
+      "condition": "",
+      "constraint": "6.3.2 电气设备永久拆除时，与之相关的导线均应按下列方式之一进行处理: a) 拆除; b) 正确端接到适当外壳内的端子上; 在电源端接地，且在电缆的另一端，导线应连接在一起，然后通过安全的方式(例如环氧树脂罐 端)进行绝缘。 注: 单独使用自黏胶带不视为一种安全的绝缘方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "永久拆除设备导线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4028,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

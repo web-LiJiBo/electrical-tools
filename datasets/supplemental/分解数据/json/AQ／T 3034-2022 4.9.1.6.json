@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.1.6",
+  "entities": [
+    {
+      "name": "操作规程培训考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.1.6 企业应定期开展操作规程培训 .并对操作规程执衍情况进1蓿核。",
+      "type": "语义分解",
+      "subject": "操作规程培训考核",
+      "action": "",
+      "operation": "定期培训并考核执行情况",
+      "condition": "",
+      "constraint": "4.9.1.6 企业应定期开展操作规程培训 .并对操作规程执衍情况进1蓿核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "操作规程培训考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5154,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；执衍、进1蓿核识别损坏"
+      ]
+    }
+  }
+}

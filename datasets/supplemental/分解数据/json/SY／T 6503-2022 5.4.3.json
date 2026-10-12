@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "5.4.3",
+  "entities": [
+    {
+      "name": "液化气灌装检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.3 液化石油气灌装站的可燃气体探测器设置, 应符合下列规定 a) 属封闭场所的灌瓶间灌装口与探测器的距离宜为5m S 7.Sm b) 属封闭场所储瓶库,应符合5.3.2的规定。敞开式储瓶间四周每 ISm 3Om 设1台探测器,当四周边长总和小于 ISm 时。应设1台探测器 ; c) 缓冲罐排水口或阀组与探测器的距离。宜为 Sm 一 7.5皿 d) 探测器安装高度应距地面 0.3m 0.6m。",
+      "type": "语义分解",
+      "subject": "液化气灌装检测",
+      "action": "",
+      "operation": "灌瓶口储瓶库开式周界缓冲排水阀组按距离高度布点",
+      "condition": "",
+      "constraint": "5.4.3 液化石油气灌装站的可燃气体探测器设置, 应符合下列规定 a) 属封闭场所的灌瓶间灌装口与探测器的距离宜为5m S 7.Sm b) 属封闭场所储瓶库,应符合5.3.2的规定。敞开式储瓶间四周每 ISm 3Om 设1台探测器,当四周边长总和小于 ISm 时。应设1台探测器 ; c) 缓冲罐排水口或阀组与探测器的距离。宜为 Sm 一 7.5皿 d) 探测器安装高度应距地面 0.3m 0.6m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "液化气灌装检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5807,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；多个距离范围OCR缺损需原件复核"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.6.3",
+  "entities": [
+    {
+      "name": "制药验收点位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.3 监测点位 根据现场勘查情况及相关的技术规范确定各项监测内容的具体监测点位并绘制各监测点所在的厂区位置图。各监测点位的平面布设图; 对于废气排气筒, 应给出测点所在截面的几何尺寸。对产污工艺相同、污染物排放因子也相同的多个排放口,可采用随机抽测的方式监测, 随机抽测设施数量比例应不小于同样设施总数量的50%。对于安全防护措施无法落实的排放口可不布点监测。监测点位一览表参见附录C中表C.16-C.20。",
+      "type": "语义分解",
+      "subject": "制药验收点位",
+      "action": "",
+      "operation": "按勘查规范绘图记排筒截面同源可随机至少半数不具安全可不布点",
+      "condition": "",
+      "constraint": "6.6.3 监测点位 根据现场勘查情况及相关的技术规范确定各项监测内容的具体监测点位并绘制各监测点所在的厂区位置图。各监测点位的平面布设图; 对于废气排气筒, 应给出测点所在截面的几何尺寸。对产污工艺相同、污染物排放因子也相同的多个排放口,可采用随机抽测的方式监测, 随机抽测设施数量比例应不小于同样设施总数量的50%。对于安全防护措施无法落实的排放口可不布点监测。监测点位一览表参见附录C中表C.16-C.20。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药验收点位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2763,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录C未提供"
+      ]
+    }
+  }
+}

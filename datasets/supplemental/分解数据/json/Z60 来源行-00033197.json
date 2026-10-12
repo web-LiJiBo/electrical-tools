@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033197",
+  "entities": [
+    {
+      "name": "以上标准自2019年7月1日起实施，自实施之日起，制药、涂料、油墨和胶粘",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   以上标准自2019年7月1日起实施，自实施之日起，制药、涂料、油墨和胶粘剂工业大气污染物\n排放控制不再执行《大气污染物综合排放标准》( GB 16297—1996) 相关规定。",
+      "type": "语义分解",
+      "subject": "以上标准自2019年7月1日起实施，自实施之日起，制药、涂料、油墨和胶粘",
+      "action": "",
+      "operation": "以上标准自2019年7月1日起实施，自实施之日起，制药、涂料、油墨和胶粘剂工业大气污染物 排放控制不再执行《大气污染物综合排放标准》( GB 16297—1996) 相关规定。",
+      "condition": "",
+      "constraint": "   以上标准自2019年7月1日起实施，自实施之日起，制药、涂料、油墨和胶粘剂工业大气污染物\n排放控制不再执行《大气污染物综合排放标准》( GB 16297—1996) 相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "以上标准自2019年7月1日起实施，自实施之日起，制药、涂料、油墨和胶粘"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33197,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

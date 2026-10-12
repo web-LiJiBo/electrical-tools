@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.15.2.2",
+  "entities": [
+    {
+      "name": "专业变更分类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.15.2.2 按专业可将变更分为总图娈更 工艺技术娈更 .设备设施娈更 仪表系统娈更 .公用工程娈 更 .管理程序和制度变更 .企业组织架构变更 .生产组织方式娈更 重要岗位的人员和职责变更 .供应商 变更 .外部条件娈更等。",
+      "type": "语义分解",
+      "subject": "专业变更分类",
+      "action": "",
+      "operation": "分总图工艺设备仪表公用制度组织人员供应商外部等",
+      "condition": "",
+      "constraint": "4.15.2.2 按专业可将变更分为总图娈更 工艺技术娈更 .设备设施娈更 仪表系统娈更 .公用工程娈 更 .管理程序和制度变更 .企业组织架构变更 .生产组织方式娈更 重要岗位的人员和职责变更 .供应商 变更 .外部条件娈更等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "专业变更分类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5258,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；分类定义"
+      ]
+    }
+  }
+}

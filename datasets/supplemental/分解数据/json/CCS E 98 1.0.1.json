@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "1.0.1",
+  "entities": [
+    {
+      "name": "为规范埋地钢质管道交流腐蚀评价工作，制定本规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.1   为规范埋地钢质管道交流腐蚀评价工作，制定本规范。\n1.0.2   本规范适用于陆上埋地钢质管道交流腐蚀检测、评价和\n监测。本规范不适用于因交流输电线路系统故障和杆塔雷击造\n成的管道相关危害的评价。",
+      "type": "语义分解",
+      "subject": "为规范埋地钢质管道交流腐蚀评价工作，制定本规范",
+      "action": "",
+      "operation": "为规范埋地钢质管道交流腐蚀评价工作，制定本规范。 1.0.2 本规范适用于陆上埋地钢质管道交流腐蚀检测、评价和 监测。本规范不适用于因交流输电线路系统故障和杆塔雷击造 成的管道相关危害的评价。",
+      "condition": "",
+      "constraint": "1.0.1   为规范埋地钢质管道交流腐蚀评价工作，制定本规范。\n1.0.2   本规范适用于陆上埋地钢质管道交流腐蚀检测、评价和\n监测。本规范不适用于因交流输电线路系统故障和杆塔雷击造\n成的管道相关危害的评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为规范埋地钢质管道交流腐蚀评价工作，制定本规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48728,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

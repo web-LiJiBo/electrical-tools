@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021363",
+  "entities": [
+    {
+      "name": "—倒换恢复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—倒换恢复：当工作通道故障被排除时，可回复操作需要使用倒换恢复功能。只支\n   持非可回复操作的VC-m路径保护不能使用倒换恢复，见ITU-T G.841关于可回\n\n   复1+1单向保护倒换的描述。",
+      "type": "语义分解",
+      "subject": "—倒换恢复",
+      "action": "",
+      "operation": "—倒换恢复：当工作通道故障被排除时，可回复操作需要使用倒换恢复功能。只支 持非可回复操作的VC-m路径保护不能使用倒换恢复，见ITU-T G.841关于可回 复1+1单向保护倒换的描述。",
+      "condition": "",
+      "constraint": "—倒换恢复：当工作通道故障被排除时，可回复操作需要使用倒换恢复功能。只支\n   持非可回复操作的VC-m路径保护不能使用倒换恢复，见ITU-T G.841关于可回\n\n   复1+1单向保护倒换的描述。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—倒换恢复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21363,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

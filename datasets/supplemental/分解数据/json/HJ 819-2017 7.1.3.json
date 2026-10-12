@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "7.1.3",
+  "entities": [
+    {
+      "name": "生产治理运行记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.3 生产和污染治理设施运行状况 记录监测期间企业及各主要生产设施 (至少涵盖废气主要污染源相关生产设施二 运行状况 (包括停机。启动情况)。产品产量 主要原辅料使用量。取水量。主要燃料消耗量。燃料主要成分。污染治理设施主要运行状态参数，污染治理主要药剂消耗情况等。日常生产中上述信息也需整理成合账保存备查。",
+      "type": "语义分解",
+      "subject": "生产治理运行记录",
+      "action": "",
+      "operation": "记监测期间停启产量原辅料水燃料成分治理参数药剂日常建台账",
+      "condition": "",
+      "constraint": "7.1.3 生产和污染治理设施运行状况 记录监测期间企业及各主要生产设施 (至少涵盖废气主要污染源相关生产设施二 运行状况 (包括停机。启动情况)。产品产量 主要原辅料使用量。取水量。主要燃料消耗量。燃料主要成分。污染治理设施主要运行状态参数，污染治理主要药剂消耗情况等。日常生产中上述信息也需整理成合账保存备查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产治理运行记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2888,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

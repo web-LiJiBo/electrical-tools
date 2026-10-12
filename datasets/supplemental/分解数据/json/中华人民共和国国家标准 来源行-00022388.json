@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022388",
+  "entities": [
+    {
+      "name": "角钢不应小于50mm×50mm×5mm",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 2  角钢不应小于50mm×50mm×5mm。\n 3  扁钢不应小于40mm×4mm。\n 4  圆钢直径不应小于10mm。",
+      "type": "语义分解",
+      "subject": "角钢不应小于50mm×50mm×5mm",
+      "action": "",
+      "operation": "角钢不应小于50mm×50mm×5mm。 3 扁钢不应小于40mm×4mm。 4 圆钢直径不应小于10mm。",
+      "condition": "",
+      "constraint": " 2  角钢不应小于50mm×50mm×5mm。\n 3  扁钢不应小于40mm×4mm。\n 4  圆钢直径不应小于10mm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "角钢不应小于50mm×50mm×5mm"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22388,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

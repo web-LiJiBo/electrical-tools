@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010031",
+  "entities": [
+    {
+      "name": "电缆屏蔽网剥头长度应一致，并应保证与连接插头的接线 端子外导体接触良好",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       6   电缆屏蔽网剥头长度应一致，并应保证与连接插头的接线\n端子外导体接触良好；",
+      "type": "语义分解",
+      "subject": "电缆屏蔽网剥头长度应一致，并应保证与连接插头的接线 端子外导体接触良好",
+      "action": "",
+      "operation": "电缆屏蔽网剥头长度应一致，并应保证与连接插头的接线 端子外导体接触良好",
+      "condition": "",
+      "constraint": "       6   电缆屏蔽网剥头长度应一致，并应保证与连接插头的接线\n端子外导体接触良好；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电缆屏蔽网剥头长度应一致，并应保证与连接插头的接线 端子外导体接触良好"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10031,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "当土壤中镉、汞、砷、铅、铬的含量高于表1规定的风险筛选值、等于或者低于表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2     当土壤中镉、汞、砷、铅、铬的含量高于表1规定的风险筛选值、等于或者低于表3规定的风险\n管制值时，可能存在食用农产品不符合质量安全标准等土壤污染风险，原则上应当采取农艺调控、替代\n种植等安全利用措施。",
+      "type": "语义分解",
+      "subject": "当土壤中镉、汞、砷、铅、铬的含量高于表1规定的风险筛选值、等于或者低于表",
+      "action": "",
+      "operation": "当土壤中镉、汞、砷、铅、铬的含量高于表1规定的风险筛选值、等于或者低于表3规定的风险 管制值时，可能存在食用农产品不符合质量安全标准等土壤污染风险，原则上应当采取农艺调控、替代 种植等安全利用措施。",
+      "condition": "",
+      "constraint": "6.2     当土壤中镉、汞、砷、铅、铬的含量高于表1规定的风险筛选值、等于或者低于表3规定的风险\n管制值时，可能存在食用农产品不符合质量安全标准等土壤污染风险，原则上应当采取农艺调控、替代\n种植等安全利用措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当土壤中镉、汞、砷、铅、铬的含量高于表1规定的风险筛选值、等于或者低于表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38152,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

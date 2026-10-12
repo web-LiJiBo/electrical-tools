@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "4.2.4.2",
+  "entities": [
+    {
+      "name": "危化经营安全培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4.2 危险化学品经营的安全管理: a) 经营单位的条件和要求 ,包括危险化学品经营许可制度和 GB 18265 中关于经营条件 ,经营危险化学品的相关规定; b) 剧毒化学品的经营 ,包括购买剧毒化学品应遵守的规定 ,销售剧毒化学品应遵守的规定; c) 经营许可证的管理办法; d) 危险化学品登记办法。",
+      "type": "语义分解",
+      "subject": "危化经营安全培训",
+      "action": "",
+      "operation": "讲授许可条件剧毒购销登记管理",
+      "condition": "",
+      "constraint": "4.2.4.2 危险化学品经营的安全管理: a) 经营单位的条件和要求 ,包括危险化学品经营许可制度和 GB 18265 中关于经营条件 ,经营危险化学品的相关规定; b) 剧毒化学品的经营 ,包括购买剧毒化学品应遵守的规定 ,销售剧毒化学品应遵守的规定; c) 经营许可证的管理办法; d) 危险化学品登记办法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化经营安全培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4903,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；课程内容非行政许可核定"
+      ]
+    }
+  }
+}

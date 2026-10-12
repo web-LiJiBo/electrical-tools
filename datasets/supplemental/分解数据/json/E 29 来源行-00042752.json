@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042752",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注 : 真实性表示报告 、结论以客观事实为 基 础 , 不 作 假 证 ; 准 确 性 表 示 报 告 、结 论 所 涉 及 到 的 检 测 数 据 符 合 相 关 要\n       求 ;有效性表示检验机构的资质 、检验人员的资格符合要求 ,所使用的仪器设备在检定校准有效期内 ,检验依据\n       合法 ,报告审批程序符合要求 。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注 : 真实性表示报告 、结论以客观事实为 基 础 , 不 作 假 证 ; 准 确 性 表 示 报 告 、结 论 所 涉 及 到 的 检 测 数 据 符 合 相 关 要 求 ;有效性表示检验机构的资质 、检验人员的资格符合要求 ,所使用的仪器设备在检定校准有效期内 ,检验依据 合法 ,报告审批程序符合要求 。",
+      "condition": "",
+      "constraint": "注 : 真实性表示报告 、结论以客观事实为 基 础 , 不 作 假 证 ; 准 确 性 表 示 报 告 、结 论 所 涉 及 到 的 检 测 数 据 符 合 相 关 要\n       求 ;有效性表示检验机构的资质 、检验人员的资格符合要求 ,所使用的仪器设备在检定校准有效期内 ,检验依据\n       合法 ,报告审批程序符合要求 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42752,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

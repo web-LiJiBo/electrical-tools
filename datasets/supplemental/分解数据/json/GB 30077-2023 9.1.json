@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "9.1",
+  "entities": [
+    {
+      "name": "应急物资制度记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1 危险化学品单位应建立应急救援物资的有关制度和记录: 物资清单; 物资使用管理制度; 物资测试检修制度; 物资租用制度; 资料管理制度; 物资调用和使用记录; 物资检查维护 ,报废及更新记录。",
+      "type": "语义分解",
+      "subject": "应急物资制度记录",
+      "action": "",
+      "operation": "建清单使用测试检修租用资料制度调用维护报废更新记录",
+      "condition": "",
+      "constraint": "9.1 危险化学品单位应建立应急救援物资的有关制度和记录: 物资清单; 物资使用管理制度; 物资测试检修制度; 物资租用制度; 资料管理制度; 物资调用和使用记录; 物资检查维护 ,报废及更新记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急物资制度记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3820,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/  GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00031970",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "24\t固定式低倍数泡沫灭火系统设置应符合GB 50151的设计要求，泡沫灭火系统管线连接牢固、支\n座可靠、标识清晰、无泄漏、无变形；消防泡沫站设施完好无泄漏，安全附件、控制系统完好，\n阀门开关状态应挂牌标识固定式低倍数泡沫灭火系统设置应符合GB 50151的设计要求，泡沫灭\n火系统管线连接牢固、支座可靠、标识清晰、无泄漏、无变形；消防泡沫站设施完好无泄漏，安\n全附件、控制系统完好，阀门开关状态应挂牌标识。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "24\t固定式低倍数泡沫灭火系统设置应符合GB 50151的设计要求，泡沫灭火系统管线连接牢固、支\n座可靠、标识清晰、无泄漏、无变形；消防泡沫站设施完好无泄漏，安全附件、控制系统完好，\n阀门开关状态应挂牌标识固定式低倍数泡沫灭火系统设置应符合GB 50151的设计要求，泡沫灭\n火系统管线连接牢固、支座可靠、标识清晰、无泄漏、无变形；消防泡沫站设施完好无泄漏，安\n全附件、控制系统完好，阀门开关状态应挂牌标识。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 31970,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

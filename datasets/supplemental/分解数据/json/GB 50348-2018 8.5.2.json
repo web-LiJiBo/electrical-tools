@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.5.2",
+  "entities": [
+    {
+      "name": "工程初验小组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.2 项目监理机构应组织项目管理机构、设计单位、施工单位等成立初步验收小组，根据设计任务书或工程合同提出的设计、使用要求对工程进行初步验收，并形成初步验收报告。",
+      "type": "语义分解",
+      "subject": "工程初验小组",
+      "action": "",
+      "operation": "组织各方按要求初验形成报告",
+      "condition": "",
+      "constraint": "8.5.2 项目监理机构应组织项目管理机构、设计单位、施工单位等成立初步验收小组，根据设计任务书或工程合同提出的设计、使用要求对工程进行初步验收，并形成初步验收报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程初验小组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7117,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

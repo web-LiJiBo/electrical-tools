@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "9.5",
+  "entities": [
+    {
+      "name": "应急联系信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.5 有关应急部门、机构或人员的联系方式 列出应急工作中需要联系的部门、机构或人员及其多种联系方式。",
+      "type": "语义分解",
+      "subject": "应急联系信息",
+      "action": "",
+      "operation": "列出部门机构人员多种联系方式",
+      "condition": "",
+      "constraint": "9.5 有关应急部门、机构或人员的联系方式 列出应急工作中需要联系的部门、机构或人员及其多种联系方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急联系信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4195,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

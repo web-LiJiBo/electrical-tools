@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040007",
+  "entities": [
+    {
+      "name": "建设项目主要污染源和主要污染物",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  3    建设项目主要污染源和主要污染物；\n  4    控制污染和生态影响的初步技术方案；\n  5    环境及生态影响初步分析；\n  6    环境保护投资估算；\n  7    存在的问题及建议。",
+      "type": "语义分解",
+      "subject": "建设项目主要污染源和主要污染物",
+      "action": "",
+      "operation": "建设项目主要污染源和主要污染物； 4 控制污染和生态影响的初步技术方案； 5 环境及生态影响初步分析； 6 环境保护投资估算； 7 存在的问题及建议。",
+      "condition": "",
+      "constraint": "  3    建设项目主要污染源和主要污染物；\n  4    控制污染和生态影响的初步技术方案；\n  5    环境及生态影响初步分析；\n  6    环境保护投资估算；\n  7    存在的问题及建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "建设项目主要污染源和主要污染物"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40007,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

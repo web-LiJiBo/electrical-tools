@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "压气站",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5 压气站总压降不宜大于 0.25MPa, 应综合环境条件。压气站系统配置等因素合理确定气体出站湛度 压缩机后衿器宜采用空衿器。",
+      "type": "语义分解",
+      "subject": "压气站",
+      "action": "",
+      "operation": "控制总压降并合理确定出站温度与冷却形式",
+      "condition": "",
+      "constraint": "5.5 压气站总压降不宜大于 0.25MPa, 应综合环境条件。压气站系统配置等因素合理确定气体出站湛度 压缩机后衿器宜采用空衿器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压气站"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 270,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温度及冷却设备名称存在识别错误"
+      ]
+    }
+  }
+}

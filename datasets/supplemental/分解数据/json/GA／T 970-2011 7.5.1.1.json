@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.5.1.1",
+  "entities": [
+    {
+      "name": "现场进入及停车",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.1.1 应选择上风或侧上风方向进人现场 ,车停在上风或侧上风方向 ,避开低洼地带 ,车头朝向撤退方向。",
+      "type": "语义分解",
+      "subject": "现场进入及停车",
+      "action": "",
+      "operation": "选择上风侧上风并避低洼朝撤退方向",
+      "condition": "",
+      "constraint": "7.5.1.1 应选择上风或侧上风方向进人现场 ,车停在上风或侧上风方向 ,避开低洼地带 ,车头朝向撤退方向。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场进入及停车"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5932,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

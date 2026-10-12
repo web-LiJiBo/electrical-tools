@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041193",
+  "entities": [
+    {
+      "name": "假设土地使用者决定不把废井用作清水水源，业主也应按要求安排地表的填塞，移",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   假设土地使用者决定不把废井用作清水水源，业主也应按要求安排地表的填塞，移走井口装置；\n必要时，在地面套管的残端焊接上钢板；填充井口的方井、大小鼠洞；以及平整井场。留在井中的套\n管应从地面向下截去1m～2m(3ft～6ft),     或是按土地使用者的要求截去更深。",
+      "type": "语义分解",
+      "subject": "假设土地使用者决定不把废井用作清水水源，业主也应按要求安排地表的填塞，移",
+      "action": "",
+      "operation": "假设土地使用者决定不把废井用作清水水源，业主也应按要求安排地表的填塞，移走井口装置； 必要时，在地面套管的残端焊接上钢板；填充井口的方井、大小鼠洞；以及平整井场。留在井中的套 管应从地面向下截去1m～2m(3ft～6ft), 或是按土地使用者的要求截去更深。",
+      "condition": "",
+      "constraint": "   假设土地使用者决定不把废井用作清水水源，业主也应按要求安排地表的填塞，移走井口装置；\n必要时，在地面套管的残端焊接上钢板；填充井口的方井、大小鼠洞；以及平整井场。留在井中的套\n管应从地面向下截去1m～2m(3ft～6ft),     或是按土地使用者的要求截去更深。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "假设土地使用者决定不把废井用作清水水源，业主也应按要求安排地表的填塞，移"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41193,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

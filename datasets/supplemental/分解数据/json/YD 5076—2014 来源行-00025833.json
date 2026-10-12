@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025833",
+  "entities": [
+    {
+      "name": ". 端局、关口局的长市中继电路可以直达长途局，也可经汇接 局汇接至长途局",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1.  端局、关口局的长市中继电路可以直达长途局，也可经汇接\n局汇接至长途局，视本地电话网络状况由经济技术比较确定。\n      2.  长途局应对查号台及必要的特种业务平台设直达中继。",
+      "type": "语义分解",
+      "subject": ". 端局、关口局的长市中继电路可以直达长途局，也可经汇接 局汇接至长途局",
+      "action": "",
+      "operation": ". 端局、关口局的长市中继电路可以直达长途局，也可经汇接 局汇接至长途局，视本地电话网络状况由经济技术比较确定。 2. 长途局应对查号台及必要的特种业务平台设直达中继。",
+      "condition": "",
+      "constraint": "       1.  端局、关口局的长市中继电路可以直达长途局，也可经汇接\n局汇接至长途局，视本地电话网络状况由经济技术比较确定。\n      2.  长途局应对查号台及必要的特种业务平台设直达中继。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 端局、关口局的长市中继电路可以直达长途局，也可经汇接 局汇接至长途局"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25833,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

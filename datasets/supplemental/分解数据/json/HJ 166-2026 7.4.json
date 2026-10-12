@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.4",
+  "entities": [
+    {
+      "name": "土壤记录标签",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4 采样记录和标签 采样现场填写样品标签和采样记录, 内容参考 GB/T 32724,字迹清晰- 填写规范; 采样记录归档 保存。样品标签一式两份,分别置于样品内,外层包装上。标签上包含样品唯一性标识- 监测项目和采 样日期等信息 应防止标签脱落或破损导致样品混淆_ 离开采样现场前。逐项检查采样记 录和样品标签。有缺项和错误时, 及时补齐更正。",
+      "type": "语义分解",
+      "subject": "土壤记录标签",
+      "action": "",
+      "operation": "按标准规范填写双标签内外包装唯一标识离场检查补正归档",
+      "condition": "",
+      "constraint": "7.4 采样记录和标签 采样现场填写样品标签和采样记录, 内容参考 GB/T 32724,字迹清晰- 填写规范; 采样记录归档 保存。样品标签一式两份,分别置于样品内,外层包装上。标签上包含样品唯一性标识- 监测项目和采 样日期等信息 应防止标签脱落或破损导致样品混淆_ 离开采样现场前。逐项检查采样记 录和样品标签。有缺项和错误时, 及时补齐更正。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤记录标签"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2253,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

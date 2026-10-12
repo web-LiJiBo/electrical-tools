@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014989",
+  "entities": [
+    {
+      "name": "e)m 个100G FlexE组信号可通过删除未使用时隙、填充、交织等处",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "e)m     个100G FlexE组信号可通过删除未使用时隙、填充、交织等处理映射到一个ODUflex ( 见\n      ITU-T G.709 的17.12节要求),再GMP映射到ODTUCn.ts, 再复用到ODUCn 通道信号，最\n\n   后到OTUCn 接口。",
+      "type": "语义分解",
+      "subject": "e)m 个100G FlexE组信号可通过删除未使用时隙、填充、交织等处",
+      "action": "",
+      "operation": "e)m 个100G FlexE组信号可通过删除未使用时隙、填充、交织等处理映射到一个ODUflex ( 见 ITU-T G.709 的17.12节要求),再GMP映射到ODTUCn.ts, 再复用到ODUCn 通道信号，最 后到OTUCn 接口。",
+      "condition": "",
+      "constraint": "e)m     个100G FlexE组信号可通过删除未使用时隙、填充、交织等处理映射到一个ODUflex ( 见\n      ITU-T G.709 的17.12节要求),再GMP映射到ODTUCn.ts, 再复用到ODUCn 通道信号，最\n\n   后到OTUCn 接口。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e)m 个100G FlexE组信号可通过删除未使用时隙、填充、交织等处"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14989,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

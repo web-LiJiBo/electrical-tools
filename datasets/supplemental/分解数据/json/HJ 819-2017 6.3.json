@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "6.3",
+  "entities": [
+    {
+      "name": "自行监测人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3 监测人员 应配备数量充足。技术水平满足工作要求的技术人员，规范监测人员录用。培训教育和能力确认1考核等活动，建立人员档案，并对监测人员实施监督和管理。规避人员因素对监测数据正确性和可靠性的影响。",
+      "type": "语义分解",
+      "subject": "自行监测人员",
+      "action": "",
+      "operation": "配充足合技能人员规范录用培训考核档案监督",
+      "condition": "",
+      "constraint": "6.3 监测人员 应配备数量充足。技术水平满足工作要求的技术人员，规范监测人员录用。培训教育和能力确认1考核等活动，建立人员档案，并对监测人员实施监督和管理。规避人员因素对监测数据正确性和可靠性的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "自行监测人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2874,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.2.4",
+  "entities": [
+    {
+      "name": "物料加料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.2.4 物料加料应严格按照规定的先后顺序和数量进行。涉及易燃易爆物料的加料应有可靠的静 电导除设施 .涉及毒性物料的加料应有可靠的安全防护措施 _",
+      "type": "语义分解",
+      "subject": "物料加料",
+      "action": "",
+      "operation": "按规定顺序数量并做好静电有毒防护",
+      "condition": "",
+      "constraint": "4.9.2.4 物料加料应严格按照规定的先后顺序和数量进行。涉及易燃易爆物料的加料应有可靠的静 电导除设施 .涉及毒性物料的加料应有可靠的安全防护措施 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "物料加料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5159,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

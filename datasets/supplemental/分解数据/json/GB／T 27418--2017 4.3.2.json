@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.3.2",
+  "entities": [
+    {
+      "name": "B类标准不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2 在 B类标准不确定度的评定中 ,合理使用所得到的停息需要经验以及知识 ,这是一种可以在实 践申掌握的技能。 应该认识到 .标准不确定度的 B类评定可以与 A 类评定一样可靠 ,特别是当 A类评 定基于的统计独立观测次数较少时 = 注: 如果 4.2.3的注1中q的概率分布为正态分布 ,那么 $(9)的标准差与 。(9)之比 。_s(4)]/(9)近似为[2(1 一 1)]-172 因此 ,取 a[s(q)]为 $(q)的不确定度 ,当观测坎数 n =10时 ,$(9)的相对不确定度为 24 % ,当n=50时 则为10%(其他值在附录C的表C.1中给出 )。",
+      "type": "语义分解",
+      "subject": "B类标准不确定度",
+      "action": "",
+      "operation": "说明评定可靠性与经验要求",
+      "condition": "",
+      "constraint": "A类评 定基于的统计独立观测次数较少时",
+      "constraint_role": "informational",
+      "related_entities": [
+        "B类标准不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "注中公式和观测次数示例损坏，不能用24%或10%作设备限值"
+      ]
+    }
+  }
+}

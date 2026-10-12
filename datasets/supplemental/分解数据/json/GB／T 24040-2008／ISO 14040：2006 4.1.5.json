@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "4.1.5",
+  "entities": [
+    {
+      "name": "LCA反复方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5 反复的方法 LCA 是一种反复的技术。LCA 的每个阶段都使用其他阶段的结果。在每个阶段中以及各阶段之间应用这种反复的方法将使研究工作以及报告结果具有全面性和一致性。",
+      "type": "语义分解",
+      "subject": "LCA反复方法",
+      "action": "",
+      "operation": "各阶段互用结果保证全面一致",
+      "condition": "",
+      "constraint": "4.1.5 反复的方法 LCA 是一种反复的技术。LCA 的每个阶段都使用其他阶段的结果。在每个阶段中以及各阶段之间应用这种反复的方法将使研究工作以及报告结果具有全面性和一致性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCA反复方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1024,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

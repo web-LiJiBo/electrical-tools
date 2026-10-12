@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "7.1.2",
+  "entities": [
+    {
+      "name": "储气库注气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 地下储气库注气压缩机的设计选型和台数, 应能适应不阿注气阶段地层压力。地层吸气能力的变化。宜确保在整个注气压力区间内高效运行。当注气压缩机与采气外输增压共用压缩机时。应满足采气增压工况需求 注气压缩机可采用离心式或往复式。具体形式及数量应根据注气规模。注气量娈化范围。操作参数经技术比选确定。",
+      "type": "语义分解",
+      "subject": "储气库注气压缩机",
+      "action": "",
+      "operation": "适应地层压力吸气能力及共用工况",
+      "condition": "",
+      "constraint": "7.1.2 地下储气库注气压缩机的设计选型和台数, 应能适应不阿注气阶段地层压力。地层吸气能力的变化。宜确保在整个注气压力区间内高效运行。当注气压缩机与采气外输增压共用压缩机时。应满足采气增压工况需求 注气压缩机可采用离心式或往复式。具体形式及数量应根据注气规模。注气量娈化范围。操作参数经技术比选确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储气库注气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 307,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

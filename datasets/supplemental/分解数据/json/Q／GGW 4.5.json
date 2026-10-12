@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "4.5",
+  "entities": [
+    {
+      "name": "参数表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5\t1.175\t1.1612\t1.1488\t1.1375\t1.1272\t1.1178\t1.1092\t1.1014\t1.0942\t1.0876\t1.0815\t1.0759\t1.0708\t1.0661\t1.0617",
+      "type": "语义分解",
+      "subject": "参数表",
+      "action": "",
+      "operation": "保留原始数值",
+      "condition": "",
+      "constraint": "4.5\t1.175\t1.1612\t1.1488\t1.1375\t1.1272\t1.1178\t1.1092\t1.1014\t1.0942\t1.0876\t1.0815\t1.0759\t1.0708\t1.0661\t1.0617",
+      "constraint_role": "informational",
+      "related_entities": [
+        "参数表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37489,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头单位缺失首列非条款编号"
+      ]
+    }
+  }
+}

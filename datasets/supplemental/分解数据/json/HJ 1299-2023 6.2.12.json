@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.12",
+  "entities": [
+    {
+      "name": "许可特殊时段要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.12 废气(废水)特殊时段排放要求 依据排污许可证申请与核发技术规范。 家或所在地区人民政府制定的重污染天气应急预案。环境 质量限期达标规划。其他相关环境管理文件等进行判定",
+      "type": "语义分解",
+      "subject": "许可特殊时段要求",
+      "action": "",
+      "operation": "依技术规范应急预案达标规划管理文件判定",
+      "condition": "",
+      "constraint": "6.2.12 废气(废水)特殊时段排放要求 依据排污许可证申请与核发技术规范。 家或所在地区人民政府制定的重污染天气应急预案。环境 质量限期达标规划。其他相关环境管理文件等进行判定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可特殊时段要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2005,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；国家字样识别缺失"
+      ]
+    }
+  }
+}

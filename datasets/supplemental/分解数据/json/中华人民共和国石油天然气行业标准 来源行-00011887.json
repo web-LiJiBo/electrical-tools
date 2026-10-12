@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011887",
+  "entities": [
+    {
+      "name": "图像显示设备 、音频输入 (输出) 设备的规格 、数量应 根据会议室大小",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    图像显示设备 、音频输入  (输出)  设备的规格 、数量应\n根据会议室大小确定。",
+      "type": "语义分解",
+      "subject": "图像显示设备 、音频输入 (输出) 设备的规格 、数量应 根据会议室大小",
+      "action": "",
+      "operation": "图像显示设备 、音频输入 (输出) 设备的规格 、数量应 根据会议室大小确定。",
+      "condition": "",
+      "constraint": "      2    图像显示设备 、音频输入  (输出)  设备的规格 、数量应\n根据会议室大小确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "图像显示设备 、音频输入 (输出) 设备的规格 、数量应 根据会议室大小"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

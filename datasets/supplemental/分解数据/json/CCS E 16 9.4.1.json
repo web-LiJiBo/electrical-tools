@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.4.1",
+  "entities": [
+    {
+      "name": "受弯构件锚固区缺陷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.4.1   受弯构件持续下挠或挠度超过设计规定的允许值时，应进行专项检测评估并及时加固处置。\n9.4.2   钢结构主梁在斜拉索锚固区，钢构件出现裂纹、变形、锈蚀、渗水时，应进行专项检测评估并\n及时加固处置。",
+      "type": "语义分解",
+      "subject": "受弯构件锚固区缺陷",
+      "action": "",
+      "operation": "持续超挠裂变锈渗专项评估加固",
+      "condition": "",
+      "constraint": "9.4.1   受弯构件持续下挠或挠度超过设计规定的允许值时，应进行专项检测评估并及时加固处置。\n9.4.2   钢结构主梁在斜拉索锚固区，钢构件出现裂纹、变形、锈蚀、渗水时，应进行专项检测评估并\n及时加固处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "受弯构件锚固区缺陷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30133,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

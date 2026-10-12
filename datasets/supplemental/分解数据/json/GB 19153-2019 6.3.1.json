@@ -1,0 +1,41 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "6.3.1",
+  "entities": [
+    {
+      "name": "机组比功率试验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1 机组比功率试验计算方法按 GB/T 3853 的规定。",
+      "type": "语义分解",
+      "subject": "机组比功率试验",
+      "action": "",
+      "operation": "按GB/T3853试验计算",
+      "condition": "",
+      "constraint": "6.3.1 机组比功率试验计算方法按 GB/T 3853 的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机组比功率试验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 133,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

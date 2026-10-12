@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019405",
+  "entities": [
+    {
+      "name": ")在正常条件下， MSnP_C在参考点MSn_AP把来自工作MSn_TT",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)在正常条件下， MSnP_C在参考点MSn_AP把来自工作MSn_TT功能的数据和定时送至\n   其相应的工作MSn/Sn_A功能。如果1:n MSP 体制中设置了额外业务功能的话，来自保\n   护段的数据和定时送至额外业务MSn/Sn_A, 否则就将其终结。",
+      "type": "语义分解",
+      "subject": ")在正常条件下， MSnP_C在参考点MSn_AP把来自工作MSn_TT",
+      "action": "",
+      "operation": ")在正常条件下， MSnP_C在参考点MSn_AP把来自工作MSn_TT功能的数据和定时送至 其相应的工作MSn/Sn_A功能。如果1:n MSP 体制中设置了额外业务功能的话，来自保 护段的数据和定时送至额外业务MSn/Sn_A, 否则就将其终结。",
+      "condition": "",
+      "constraint": "3)在正常条件下， MSnP_C在参考点MSn_AP把来自工作MSn_TT功能的数据和定时送至\n   其相应的工作MSn/Sn_A功能。如果1:n MSP 体制中设置了额外业务功能的话，来自保\n   护段的数据和定时送至额外业务MSn/Sn_A, 否则就将其终结。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")在正常条件下， MSnP_C在参考点MSn_AP把来自工作MSn_TT"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

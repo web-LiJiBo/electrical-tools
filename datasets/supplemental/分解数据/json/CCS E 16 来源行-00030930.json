@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00030930",
+  "entities": [
+    {
+      "name": "e) 隧道穿越的技术状况指数SCI可根据洞口、洞身、管道的技术状况指数，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "e)  隧道穿越的技术状况指数SCI可根据洞口、洞身、管道的技术状况指数，由公式(E.15) 计算。",
+      "type": "语义分解",
+      "subject": "e) 隧道穿越的技术状况指数SCI可根据洞口、洞身、管道的技术状况指数，",
+      "action": "",
+      "operation": "e) 隧道穿越的技术状况指数SCI可根据洞口、洞身、管道的技术状况指数，由公式(E.15) 计算。",
+      "condition": "",
+      "constraint": "e)  隧道穿越的技术状况指数SCI可根据洞口、洞身、管道的技术状况指数，由公式(E.15) 计算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 隧道穿越的技术状况指数SCI可根据洞口、洞身、管道的技术状况指数，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30930,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

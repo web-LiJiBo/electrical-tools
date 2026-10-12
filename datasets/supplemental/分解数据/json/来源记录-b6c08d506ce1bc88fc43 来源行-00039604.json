@@ -1,0 +1,41 @@
+{
+  "standard_name": "前    言",
+  "standard_id": "根据住房和城乡建设部《关于印发2014年工程建设标准规范\n制订修订计划的通知》(建标〔2013〕169号)的要求，标准编制组经\n广泛调查研究，认真总结工程实践经验，参考有关国际标准和国外\n先进标准，并在广泛征求意见的基础上，修订了本标准。",
+  "version": "",
+  "chapter_path": "来源行-00039604",
+  "entities": [
+    {
+      "name": "对涉密勘察资料，档案管理单位应配置专门的保密计算 机和保密存储介质专门用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.8       对涉密勘察资料，档案管理单位应配置专门的保密计算\n机和保密存储介质专门用于电子文件的管理，并应执行国家相关\n涉密管理要求。",
+      "type": "语义分解",
+      "subject": "对涉密勘察资料，档案管理单位应配置专门的保密计算 机和保密存储介质专门用",
+      "action": "",
+      "operation": "对涉密勘察资料，档案管理单位应配置专门的保密计算 机和保密存储介质专门用于电子文件的管理，并应执行国家相关 涉密管理要求。",
+      "condition": "",
+      "constraint": "12.3.8       对涉密勘察资料，档案管理单位应配置专门的保密计算\n机和保密存储介质专门用于电子文件的管理，并应执行国家相关\n涉密管理要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对涉密勘察资料，档案管理单位应配置专门的保密计算 机和保密存储介质专门用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 39604,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_not_valid；存储文件名使用哈希别名，原始standard_id保留在JSON"
+      ]
+    }
+  }
+}

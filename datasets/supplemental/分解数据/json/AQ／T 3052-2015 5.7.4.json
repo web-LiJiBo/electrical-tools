@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.7.4",
+  "entities": [
+    {
+      "name": "现场环境污染监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.4 对事故现场空气.水源 ,土壤污染情况进行动态监测 ,并将监测信息及时报告现场指挥部和总指挥部。",
+      "type": "语义分解",
+      "subject": "现场环境污染监测",
+      "action": "",
+      "operation": "动态监测空气水土并报告指挥部",
+      "condition": "",
+      "constraint": "5.7.4 对事故现场空气.水源 ,土壤污染情况进行动态监测 ,并将监测信息及时报告现场指挥部和总指挥部。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场环境污染监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6036,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

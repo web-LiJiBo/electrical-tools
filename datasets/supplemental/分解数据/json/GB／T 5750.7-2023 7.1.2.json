@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.1.2",
+  "entities": [
+    {
+      "name": "总有机碳直接测定原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 原理 向水样中加入适当的氧化剂 ,或紫外催化 (T0)等方法 ,使水中有机碳转为二氧化碳(C0。)。无机碳经酸化和吹脱被除去 ,或单独测定。 生成的 CO。 可直接测定 ,或还原为 CH  后再测定。 CO。 的测定方法包括:非色散红外光谱法 .滴定法(最好在非水溶液中) ,热导池检测器(TCD)  电导滴定法 ,电量滴定法 CO。 敏感电极法和把 CO。 还原为 CH; 后氢火焰离子化检测器(FID) =",
+      "type": "语义分解",
+      "subject": "总有机碳直接测定原理",
+      "action": "",
+      "operation": "有机碳氧化除或单测无机碳按所列检测方式测产物",
+      "condition": "",
+      "constraint": "7.1.2 原理 向水样中加入适当的氧化剂 ,或紫外催化 (T0)等方法 ,使水中有机碳转为二氧化碳(C0。)。无机碳经酸化和吹脱被除去 ,或单独测定。 生成的 CO。 可直接测定 ,或还原为 CH  后再测定。 CO。 的测定方法包括:非色散红外光谱法 .滴定法(最好在非水溶液中) ,热导池检测器(TCD)  电导滴定法 ,电量滴定法 CO。 敏感电极法和把 CO。 还原为 CH; 后氢火焰离子化检测器(FID) =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总有机碳直接测定原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1888,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；化学符号识别异常"
+      ]
+    }
+  }
+}

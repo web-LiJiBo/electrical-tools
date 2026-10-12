@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035244",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "C.2.3   硫酸修正系数为 94. 2 J/g,基于假设 :0. 17 mol/L硫酸的燃烧热为 -301. 4 kJ/mol(恒定体积和\n3 MPa下) 。\n   注 : 5. 80 kJ/g的修正基于燃料油含有较多的硫 ,经验比例是硫含量 0. 8% ,碳氢含量 99. 2% 。修正值随着硫含量减\n            小 ,但误差能接受 。如 果 一 个 0. 6 g 的 燃 料 油 样 品 在 一 个 含 有 1 mL 的 水 的 氧 弹 中 燃 烧 , 形 成 的 硫 酸 约 有\n            0. 17 mol/L。\nC.2.4   配件生成热按配件燃烧热与配件质量乘积计算 。\nC.2.5   测试试样时 ,试样含氮生成硝酸修正系数为 41. 3 J/g,基于假设 :试验条件下 0. 1 mol/L硝酸的\n形成热为 57. 8 kJ/mol。  氧弹残留氮气形成硝酸的形成热按 0. 001 2倍弹热值估计 。\nC.2.6   配件燃烧热的修正按 10. 2 确定 ,假设燃烧完全 。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "C.2.3   硫酸修正系数为 94. 2 J/g,基于假设 :0. 17 mol/L硫酸的燃烧热为 -301. 4 kJ/mol(恒定体积和\n3 MPa下) 。\n   注 : 5. 80 kJ/g的修正基于燃料油含有较多的硫 ,经验比例是硫含量 0. 8% ,碳氢含量 99. 2% 。修正值随着硫含量减\n            小 ,但误差能接受 。如 果 一 个 0. 6 g 的 燃 料 油 样 品 在 一 个 含 有 1 mL 的 水 的 氧 弹 中 燃 烧 , 形 成 的 硫 酸 约 有\n            0. 17 mol/L。\nC.2.4   配件生成热按配件燃烧热与配件质量乘积计算 。\nC.2.5   测试试样时 ,试样含氮生成硝酸修正系数为 41. 3 J/g,基于假设 :试验条件下 0. 1 mol/L硝酸的\n形成热为 57. 8 kJ/mol。  氧弹残留氮气形成硝酸的形成热按 0. 001 2倍弹热值估计 。\nC.2.6   配件燃烧热的修正按 10. 2 确定 ,假设燃烧完全 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35244,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

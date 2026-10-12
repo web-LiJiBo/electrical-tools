@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "10.8",
+  "entities": [
+    {
+      "name": "检验机构方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.8 检验机构接到运营单位的管道定期检验申报后, 应及时进行检验。定期检验工作开展前,检验 机构应制订检验方案。方案应符合相关安全技术规范的要求。",
+      "type": "语义分解",
+      "subject": "检验机构方案",
+      "action": "",
+      "operation": "接申请及时检验前制合安全规范方案",
+      "condition": "",
+      "constraint": "10.8 检验机构接到运营单位的管道定期检验申报后, 应及时进行检验。定期检验工作开展前,检验 机构应制订检验方案。方案应符合相关安全技术规范的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "检验机构方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7396,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

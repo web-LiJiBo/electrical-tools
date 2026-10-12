@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006767",
+  "entities": [
+    {
+      "name": "应根据实际需要配备符合安全要求的作业平台吊笼 梯子 挡脚板 .跳板等",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.3 应根据实际需要配备符合安全要求的作业平台吊笼 梯子 挡脚板 .跳板等;脚手架的搭设 拆 除和使用应符合 GB 51210 等有关标准要求。",
+      "type": "语义分解",
+      "subject": "应根据实际需要配备符合安全要求的作业平台吊笼 梯子 挡脚板 .跳板等",
+      "action": "",
+      "operation": "应根据实际需要配备符合安全要求的作业平台吊笼 梯子 挡脚板 .跳板等;脚手架的搭设 拆 除和使用应符合 GB 51210 等有关标准要求。",
+      "condition": "",
+      "constraint": "8.2.3 应根据实际需要配备符合安全要求的作业平台吊笼 梯子 挡脚板 .跳板等;脚手架的搭设 拆 除和使用应符合 GB 51210 等有关标准要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应根据实际需要配备符合安全要求的作业平台吊笼 梯子 挡脚板 .跳板等"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6767,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_completed_record"
+      ]
+    }
+  }
+}

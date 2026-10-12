@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.3.5.1",
+  "entities": [
+    {
+      "name": "连续流动酚标准系列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.5.1 标准系列的制备 分别吸取挥发酚标准使用溶液[ρ(C6H5OH)=0.2 μg/L]0 mL、0.9 mL、2.0 mL、5.0 mL、10.0 mL、25.0 mL、50 mL和100 mL置于8个100 mL容量瓶中，用氢氧化钠溶液[c(NaOH)=0.01 mol/L]稀释至刻度。其质量浓度分别为:0 μg/L、1.8 μg/L、4.0 μg/L、10.0 μg/L、20.0 μg/L、50.0 μg/L、100 μg/L和200 μg/L。",
+      "type": "语义分解",
+      "subject": "连续流动酚标准系列",
+      "action": "",
+      "operation": "按八个指定体积稀碱定容制备浓度系列",
+      "condition": "",
+      "constraint": "12.3.5.1 标准系列的制备 分别吸取挥发酚标准使用溶液[ρ(C6H5OH)=0.2 μg/L]0 mL、0.9 mL、2.0 mL、5.0 mL、10.0 mL、25.0 mL、50 mL和100 mL置于8个100 mL容量瓶中，用氢氧化钠溶液[c(NaOH)=0.01 mol/L]稀释至刻度。其质量浓度分别为:0 μg/L、1.8 μg/L、4.0 μg/L、10.0 μg/L、20.0 μg/L、50.0 μg/L、100 μg/L和200 μg/L。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续流动酚标准系列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1513,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；使用液0.2微克每升与12.3.3.11及结果浓度矛盾需原件复核"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "1.0.1",
+  "entities": [
+    {
+      "name": "电话交换安装验收规范目的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.1      为了适应电话通信建设发展的需要，加强工程的技术管\n理，认真做好验收工作，保证工程质量，制定本规范。本规范对\nYD/T    5077—2005《程控电话交换设备安装工程验收规范》、\nYD/T   5154—2007《固定软交换设备安装工程验收暂行规定》,\nYD/T   5156—2007《固定电话网智能化设备安装工程验收规范》进\n行了合并修订。",
+      "type": "语义分解",
+      "subject": "电话交换安装验收规范目的",
+      "action": "",
+      "operation": "说明工程质量目标及三规范合并修订来源",
+      "condition": "",
+      "constraint": "1.0.1      为了适应电话通信建设发展的需要，加强工程的技术管\n理，认真做好验收工作，保证工程质量，制定本规范。本规范对\nYD/T    5077—2005《程控电话交换设备安装工程验收规范》、\nYD/T   5154—2007《固定软交换设备安装工程验收暂行规定》,\nYD/T   5156—2007《固定电话网智能化设备安装工程验收规范》进\n行了合并修订。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电话交换安装验收规范目的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26612,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

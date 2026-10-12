@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "甲烷设备密封点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1       分析设备组件及装置是否涉及甲烷组分，涉甲烷组分的装置应纳入检测量化与修复实施范围。\n5.2.2       符合以下条件的受控设备组件可以豁免：",
+      "type": "语义分解",
+      "subject": "甲烷设备密封点",
+      "action": "",
+      "operation": "识别设备装置甲烷管控范围",
+      "condition": "",
+      "constraint": "5.2.1       分析设备组件及装置是否涉及甲烷组分，涉甲烷组分的装置应纳入检测量化与修复实施范围。\n5.2.2       符合以下条件的受控设备组件可以豁免：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "甲烷设备密封点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36511,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；豁免清单缺失"
+      ]
+    }
+  }
+}

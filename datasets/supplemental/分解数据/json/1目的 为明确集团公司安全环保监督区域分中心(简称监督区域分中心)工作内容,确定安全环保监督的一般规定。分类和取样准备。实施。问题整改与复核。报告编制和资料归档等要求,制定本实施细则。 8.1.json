@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "现场监督安全要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1 开展监督时应遵守以下要求:a)进站前应主动接受属地管理人员的安全教育，由属地人员陪同进入;b)雷雨。大雾。五级以上大风等极端天气，严禁进入生产工艺区进行检查;c)按照既定的监督计划和选定的路线逐项进行;d)对现场发现的不安全行为，应给予制止并纠正;e)对现场发现的不安全条件，应立即责成相关人员采取控制行动或临时风险削减措施。",
+      "type": "语义分解",
+      "subject": "现场监督安全要求",
+      "action": "",
+      "operation": "教育陪同禁极端天气入工艺区制止不安全",
+      "condition": "",
+      "constraint": "8.1 开展监督时应遵守以下要求:a)进站前应主动接受属地管理人员的安全教育，由属地人员陪同进入;b)雷雨。大雾。五级以上大风等极端天气，严禁进入生产工艺区进行检查;c)按照既定的监督计划和选定的路线逐项进行;d)对现场发现的不安全行为，应给予制止并纠正;e)对现场发现的不安全条件，应立即责成相关人员采取控制行动或临时风险削减措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场监督安全要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 731,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

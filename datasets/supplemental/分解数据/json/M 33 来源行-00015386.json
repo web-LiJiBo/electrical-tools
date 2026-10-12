@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015386",
+  "entities": [
+    {
+      "name": "ODUk开销及维护信号测试 5.4.1 ODUk开销及维护信号组成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4  ODUk开销及维护信号测试\n5.4.1  ODUk开销及维护信号组成",
+      "type": "语义分解",
+      "subject": "ODUk开销及维护信号测试 5.4.1 ODUk开销及维护信号组成",
+      "action": "",
+      "operation": "ODUk开销及维护信号测试 5.4.1 ODUk开销及维护信号组成",
+      "condition": "",
+      "constraint": "5.4  ODUk开销及维护信号测试\n5.4.1  ODUk开销及维护信号组成",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ODUk开销及维护信号测试 5.4.1 ODUk开销及维护信号组成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15386,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

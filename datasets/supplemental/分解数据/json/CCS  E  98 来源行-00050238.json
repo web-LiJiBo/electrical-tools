@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050238",
+  "entities": [
+    {
+      "name": "本章推荐了水平定向钻(直辅管)穿越施工完毕后对穿越 管道防腐层质量的检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   本章推荐了水平定向钻(直辅管)穿越施工完毕后对穿越\n管道防腐层质量的检测和评价方法，以及该法的使用条件。方\n法来源于《油气输送管道穿越工程施工规范》GB 50424—2015\n和《埋地管道防腐层电导率的测试》NACE  TM  0102:2002。",
+      "type": "语义分解",
+      "subject": "本章推荐了水平定向钻(直辅管)穿越施工完毕后对穿越 管道防腐层质量的检测",
+      "action": "",
+      "operation": "本章推荐了水平定向钻(直辅管)穿越施工完毕后对穿越 管道防腐层质量的检测和评价方法，以及该法的使用条件。方 法来源于《油气输送管道穿越工程施工规范》GB 50424—2015 和《埋地管道防腐层电导率的测试》NACE TM 0102:2002。",
+      "condition": "",
+      "constraint": "   本章推荐了水平定向钻(直辅管)穿越施工完毕后对穿越\n管道防腐层质量的检测和评价方法，以及该法的使用条件。方\n法来源于《油气输送管道穿越工程施工规范》GB 50424—2015\n和《埋地管道防腐层电导率的测试》NACE  TM  0102:2002。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本章推荐了水平定向钻(直辅管)穿越施工完毕后对穿越 管道防腐层质量的检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50238,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

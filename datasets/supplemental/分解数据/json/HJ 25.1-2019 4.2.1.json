@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "4.2.1",
+  "entities": [
+    {
+      "name": "第一阶段土壤调查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1 第一阶段土壤污染状况调查 第一阶段土壤污染状况调查是以资料收集。现场踏勘和人员访谈为主的污染识别阶段,原则上不进行现场采样分析。若第一阶段调查确认地块内及周围区域当前和历史上均无可能的污染源,则认为地块的环境状况可以接受,调查活动可以结束。",
+      "type": "语义分解",
+      "subject": "第一阶段土壤调查",
+      "action": "",
+      "operation": "资料踏勘访谈识别原则不采样确认现历史无潜源可结束",
+      "condition": "",
+      "constraint": "4.2.1 第一阶段土壤污染状况调查 第一阶段土壤污染状况调查是以资料收集。现场踏勘和人员访谈为主的污染识别阶段,原则上不进行现场采样分析。若第一阶段调查确认地块内及周围区域当前和历史上均无可能的污染源,则认为地块的环境状况可以接受,调查活动可以结束。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第一阶段土壤调查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2599,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

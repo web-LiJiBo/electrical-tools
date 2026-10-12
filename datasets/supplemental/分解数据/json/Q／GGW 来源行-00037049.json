@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037049",
+  "entities": [
+    {
+      "name": "包括但不限于加热用原油和天然气(含煤制气、煤层气，下同)、燃驱机组燃料气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   包括但不限于加热用原油和天然气(含煤制气、煤层气，下同)、燃驱机组燃料气、供暖用天然气、\n食堂用天然气和液化石油气、车用汽柴油、备用发电机用柴油或天然气等燃烧过程产生的CO₂排放。",
+      "type": "语义分解",
+      "subject": "包括但不限于加热用原油和天然气(含煤制气、煤层气，下同)、燃驱机组燃料气",
+      "action": "",
+      "operation": "包括但不限于加热用原油和天然气(含煤制气、煤层气，下同)、燃驱机组燃料气、供暖用天然气、 食堂用天然气和液化石油气、车用汽柴油、备用发电机用柴油或天然气等燃烧过程产生的CO₂排放。",
+      "condition": "",
+      "constraint": "   包括但不限于加热用原油和天然气(含煤制气、煤层气，下同)、燃驱机组燃料气、供暖用天然气、\n食堂用天然气和液化石油气、车用汽柴油、备用发电机用柴油或天然气等燃烧过程产生的CO₂排放。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包括但不限于加热用原油和天然气(含煤制气、煤层气，下同)、燃驱机组燃料气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37049,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

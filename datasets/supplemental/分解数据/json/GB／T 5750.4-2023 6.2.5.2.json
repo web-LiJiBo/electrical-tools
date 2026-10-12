@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.2.5.2",
+  "entities": [
+    {
+      "name": "嗅阈水样试验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.5.2 取150 mL水样置于250 mL具塞锥形瓶中，将具塞锥形瓶放入电热恒温水浴锅内水浴加热至60 ℃，恒温5 min后取出锥形瓶，轻轻振荡2 s～3 s，去塞闻其气味。同时做一无臭水空白试验。与无臭水对比，如水样未闻出气味，记录水样嗅阈值为1。",
+      "type": "语义分解",
+      "subject": "嗅阈水样试验",
+      "action": "",
+      "operation": "一百五十毫升样六十度恒温五分钟振荡嗅气并做空白无臭记一",
+      "condition": "",
+      "constraint": "6.2.5.2 取150 mL水样置于250 mL具塞锥形瓶中，将具塞锥形瓶放入电热恒温水浴锅内水浴加热至60 ℃，恒温5 min后取出锥形瓶，轻轻振荡2 s～3 s，去塞闻其气味。同时做一无臭水空白试验。与无臭水对比，如水样未闻出气味，记录水样嗅阈值为1。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "嗅阈水样试验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

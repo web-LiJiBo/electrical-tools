@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.16.2.2",
+  "entities": [
+    {
+      "name": "应急演练计划",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.16.2.2 企业应制定本单位的应急预案潢练讦划 ,根据本单位的事故风险特点 ,每年至少组织一次综 合应急预案演练或者 项应急预案演练 ,每半年至少组织一次现场处置方案演练;应急演练结束后应及 时对演练效果进行评估 ,对存在的问题及时整改 ,并持续完善应急预案",
+      "type": "语义分解",
+      "subject": "应急演练计划",
+      "action": "",
+      "operation": "每年至少综合或专项一次每半年现场一次评估整改持续完善",
+      "condition": "",
+      "constraint": "4.16.2.2 企业应制定本单位的应急预案潢练讦划 ,根据本单位的事故风险特点 ,每年至少组织一次综 合应急预案演练或者 项应急预案演练 ,每半年至少组织一次现场处置方案演练;应急演练结束后应及 时对演练效果进行评估 ,对存在的问题及时整改 ,并持续完善应急预案",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急演练计划"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

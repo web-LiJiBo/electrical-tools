@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.17.4.2",
+  "entities": [
+    {
+      "name": "事故调查分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.17.4.2 调查组应借助相关工期方法 ;在查清事故事件-接原困的基础上 ,深入剖析事故发生的管 理原因及深层次原因 ,提出事故事件防范的技术措施和管理措施",
+      "type": "语义分解",
+      "subject": "事故调查分析",
+      "action": "",
+      "operation": "调查直接及管理深层原因提出改进",
+      "condition": "",
+      "constraint": "4.17.4.2 调查组应借助相关工期方法 ;在查清事故事件-接原困的基础上 ,深入剖析事故发生的管 理原因及深层次原因 ,提出事故事件防范的技术措施和管理措施",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故调查分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5315,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文识别异常，需核对原版"
+      ]
+    }
+  }
+}

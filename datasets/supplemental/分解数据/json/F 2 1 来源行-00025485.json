@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025485",
+  "entities": [
+    {
+      "name": "按照 GB/T 9254 中规定的方法进行，被测设备应符合 GB/T 3",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      按照 GB/T 9254 中规定的方法进行，被测设备应符合 GB/T 31998—2015  中 10 . 3 . 2 . 2  中规定的无\n线电骚扰限值，见表 2 。",
+      "type": "语义分解",
+      "subject": "按照 GB/T 9254 中规定的方法进行，被测设备应符合 GB/T 3",
+      "action": "",
+      "operation": "按照 GB/T 9254 中规定的方法进行，被测设备应符合 GB/T 31998—2015 中 10 . 3 . 2 . 2 中规定的无 线电骚扰限值，见表 2 。",
+      "condition": "",
+      "constraint": "      按照 GB/T 9254 中规定的方法进行，被测设备应符合 GB/T 31998—2015  中 10 . 3 . 2 . 2  中规定的无\n线电骚扰限值，见表 2 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "按照 GB/T 9254 中规定的方法进行，被测设备应符合 GB/T 3"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25485,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.4.3",
+  "entities": [
+    {
+      "name": "测井仪器遇卡",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.4.3 仪器遇卡时,应立即通告井队并报主管部门,在解卡过程中 ,测井队允许的最大净拉力值不应超过拉力棒额定拉断力的 75% ;如仍不能解卡 ,应用同等张力拉紧电缆 ,进一步研究解卡措施。",
+      "type": "语义分解",
+      "subject": "测井仪器遇卡",
+      "action": "",
+      "operation": "立即通告上报最大净拉力不超额定拉断力75%未解保持张力研究措施",
+      "condition": "",
+      "constraint": "5.4.2.4.3 仪器遇卡时,应立即通告井队并报主管部门,在解卡过程中 ,测井队允许的最大净拉力值不应超过拉力棒额定拉断力的 75% ;如仍不能解卡 ,应用同等张力拉紧电缆 ,进一步研究解卡措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测井仪器遇卡"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4399,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

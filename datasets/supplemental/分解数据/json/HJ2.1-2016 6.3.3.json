@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "服务期满后环境评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 可根据工程特点,规模,环境敏感程度。影响特征等选择开展建设项月服务期满后的环境影响 预测和评价",
+      "type": "语义分解",
+      "subject": "服务期满后环境评价",
+      "action": "",
+      "operation": "按工程规模敏感程度选择开展",
+      "condition": "",
+      "constraint": "6.3.3 可根据工程特点,规模,环境敏感程度。影响特征等选择开展建设项月服务期满后的环境影响 预测和评价",
+      "constraint_role": "informational",
+      "related_entities": [
+        "服务期满后环境评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2577,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

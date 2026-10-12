@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037779",
+  "entities": [
+    {
+      "name": "出于工艺条件变化调节或安全等因素，通过工艺装置泄放口或安全阀 门有意释放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   出于工艺条件变化调节或安全等因素，通过工艺装置泄放口或安全阀\n\n门有意释放到大气中的 CH4 和 CO2 气体。",
+      "type": "语义分解",
+      "subject": "出于工艺条件变化调节或安全等因素，通过工艺装置泄放口或安全阀 门有意释放",
+      "action": "",
+      "operation": "出于工艺条件变化调节或安全等因素，通过工艺装置泄放口或安全阀 门有意释放到大气中的 CH4 和 CO2 气体。",
+      "condition": "",
+      "constraint": "   出于工艺条件变化调节或安全等因素，通过工艺装置泄放口或安全阀\n\n门有意释放到大气中的 CH4 和 CO2 气体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "出于工艺条件变化调节或安全等因素，通过工艺装置泄放口或安全阀 门有意释放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37779,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

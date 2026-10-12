@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036498",
+  "entities": [
+    {
+      "name": "非首次开展甲烷逸散排放检测量化与修复工作包括但不限于排放检测、量化数据处",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2     非首次开展甲烷逸散排放检测量化与修复工作包括但不限于排放检测、量化数据处理、泄漏确认\n与标示、泄漏修复和修复效果评价5个步骤。若企业因开停工、检维修以及改扩建等原因发生密封点变\n更的，应重新对变更部分进行项目建档信息修订，并开展现场检测量化和泄漏修复等工作。",
+      "type": "语义分解",
+      "subject": "非首次开展甲烷逸散排放检测量化与修复工作包括但不限于排放检测、量化数据处",
+      "action": "",
+      "operation": "非首次开展甲烷逸散排放检测量化与修复工作包括但不限于排放检测、量化数据处理、泄漏确认 与标示、泄漏修复和修复效果评价5个步骤。若企业因开停工、检维修以及改扩建等原因发生密封点变 更的，应重新对变更部分进行项目建档信息修订，并开展现场检测量化和泄漏修复等工作。",
+      "condition": "",
+      "constraint": "4.2     非首次开展甲烷逸散排放检测量化与修复工作包括但不限于排放检测、量化数据处理、泄漏确认\n与标示、泄漏修复和修复效果评价5个步骤。若企业因开停工、检维修以及改扩建等原因发生密封点变\n更的，应重新对变更部分进行项目建档信息修订，并开展现场检测量化和泄漏修复等工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非首次开展甲烷逸散排放检测量化与修复工作包括但不限于排放检测、量化数据处"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36498,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "3.0.1",
+  "entities": [
+    {
+      "name": "埋地钢质管道应定期开展外腐蚀直接评价 (ECDA)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.1 埋地钢质管道应定期开展外腐蚀直接评价 (ECDA)。\n3.0.2 ECDA 评价应为一个连续、循环、不断修正趋准的检测\n和评价过程，应包括预评价、间接检测与评价、直接检测与评\n价、后评价四个环节。",
+      "type": "语义分解",
+      "subject": "埋地钢质管道应定期开展外腐蚀直接评价 (ECDA)",
+      "action": "",
+      "operation": "埋地钢质管道应定期开展外腐蚀直接评价 (ECDA)。 3.0.2 ECDA 评价应为一个连续、循环、不断修正趋准的检测 和评价过程，应包括预评价、间接检测与评价、直接检测与评 价、后评价四个环节。",
+      "condition": "",
+      "constraint": "3.0.1 埋地钢质管道应定期开展外腐蚀直接评价 (ECDA)。\n3.0.2 ECDA 评价应为一个连续、循环、不断修正趋准的检测\n和评价过程，应包括预评价、间接检测与评价、直接检测与评\n价、后评价四个环节。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "埋地钢质管道应定期开展外腐蚀直接评价 (ECDA)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44894,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

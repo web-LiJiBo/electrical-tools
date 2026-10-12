@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028396",
+  "entities": [
+    {
+      "name": "为确保推进目标的实现 ,应设定涵盖职能部门和业务单元的精益六西格玛推进绩",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      为确保推进目标的实现 ,应设定涵盖职能部门和业务单元的精益六西格玛推进绩效指标 。  这些指\n标的实现应支撑职能部门和业务单元关键业务指标的达成 。",
+      "type": "语义分解",
+      "subject": "为确保推进目标的实现 ,应设定涵盖职能部门和业务单元的精益六西格玛推进绩",
+      "action": "",
+      "operation": "为确保推进目标的实现 ,应设定涵盖职能部门和业务单元的精益六西格玛推进绩效指标 。 这些指 标的实现应支撑职能部门和业务单元关键业务指标的达成 。",
+      "condition": "",
+      "constraint": "      为确保推进目标的实现 ,应设定涵盖职能部门和业务单元的精益六西格玛推进绩效指标 。  这些指\n标的实现应支撑职能部门和业务单元关键业务指标的达成 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为确保推进目标的实现 ,应设定涵盖职能部门和业务单元的精益六西格玛推进绩"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28396,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

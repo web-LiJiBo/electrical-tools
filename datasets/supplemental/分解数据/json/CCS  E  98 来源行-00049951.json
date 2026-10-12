@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00049951",
+  "entities": [
+    {
+      "name": "无溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层在使 用前及每批(无溶剂环氧",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.6   无溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层在使\n用前及每批(无溶剂环氧树脂材料不超过10t,  玻璃纤维布不超\n过 1t)  到货应对本规范表5.2.2、表5.2.3和表5.2.4的全部项目\n进行检验，有不合格时，应加倍检查；仍有不合格时，该批无\n溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层应为不合格。",
+      "type": "语义分解",
+      "subject": "无溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层在使 用前及每批(无溶剂环氧",
+      "action": "",
+      "operation": "无溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层在使 用前及每批(无溶剂环氧树脂材料不超过10t, 玻璃纤维布不超 过 1t) 到货应对本规范表5.2.2、表5.2.3和表5.2.4的全部项目 进行检验，有不合格时，应加倍检查；仍有不合格时，该批无 溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层应为不合格。",
+      "condition": "",
+      "constraint": "5.2.6   无溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层在使\n用前及每批(无溶剂环氧树脂材料不超过10t,  玻璃纤维布不超\n过 1t)  到货应对本规范表5.2.2、表5.2.3和表5.2.4的全部项目\n进行检验，有不合格时，应加倍检查；仍有不合格时，该批无\n溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层应为不合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无溶剂环氧树脂材料、玻璃纤维布及玻璃钢防护层在使 用前及每批(无溶剂环氧"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49951,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

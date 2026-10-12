@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "来源行-00038137",
+  "entities": [
+    {
+      "name": "六六六总量为α-六六六、β-六六六、γ六六六、δ-六六六四种异构体的含量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "六六六总量为α-六六六、β-六六六、γ六六六、δ-六六六四种异构体的含量总和。\n滴滴涕总量为pp'-滴滴伊、p.p'-滴滴滴、op'-滴滴涕、p.p′-滴滴涕四种衍生物的含量总和。",
+      "type": "语义分解",
+      "subject": "六六六总量为α-六六六、β-六六六、γ六六六、δ-六六六四种异构体的含量",
+      "action": "",
+      "operation": "六六六总量为α-六六六、β-六六六、γ六六六、δ-六六六四种异构体的含量总和。 滴滴涕总量为pp'-滴滴伊、p.p'-滴滴滴、op'-滴滴涕、p.p′-滴滴涕四种衍生物的含量总和。",
+      "condition": "",
+      "constraint": "六六六总量为α-六六六、β-六六六、γ六六六、δ-六六六四种异构体的含量总和。\n滴滴涕总量为pp'-滴滴伊、p.p'-滴滴滴、op'-滴滴涕、p.p′-滴滴涕四种衍生物的含量总和。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "六六六总量为α-六六六、β-六六六、γ六六六、δ-六六六四种异构体的含量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38137,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

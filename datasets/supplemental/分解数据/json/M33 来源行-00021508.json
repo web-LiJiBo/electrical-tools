@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021508",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Sm_CI_Data\nSm_CI_Clock\nSm_CI_FrameStart\nSm_CI_SSF\nSmDm_TT_Sk_MI_ExTI\nSmDm_TT_Sk_MI_RDI_Reported\nSmDm_TT_Sk_MI_ODI_Reported\nSmDm_TT_Sk_MI_SSF_Reported\nSmDm_TT_Sk_MI_AIS_Reported\nSmDm_TT_Sk_MI_TIMdis\nSmDm_TT_Sk_MI_DEGM\nSmDm_TT_Sk_MI_DEGTHR\nSmDm_TT_Sk_MI_1second\nSmDm_TT_Sk_MI_Tpmode\tSmD_AI_TSF\nSmD_AI_TSD\nSmDm_TT_Sk_MI_cLTC\nSmDm_TT_Sk_MI_cTIM\nSmDm_TT_Sk_MI_cUNEQ\nSmDm_TT_Sk_MI_cDEG\nSmDm_TT_Sk_MI_cRDI\nSmDm_TT_Sk_MI_cODI\nSmDm_TT_Sk_MI_cSSF\nSmDm_TT_Sk_MI_cIncAIS\nSmDm_TT_Sk_MI_AcTI\nSmDm_TT_Sk_MI_pN_EBC\nSmim_TT_Sk_MI_pF_EBC\nSmDm_TT_Sk_MI_pN_DS\nSmDm_TT_Sk_MI_pF_DS\nSmDm_TT_Sk_MI_pON_DS\nSmDm_TT_Sk_MIpON_EBC\nSmDm_TT_Sk_MI_pOF_EBC\nSmDm_TT_Sk_MI_pOF_DS",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "Sm_CI_Data\nSm_CI_Clock\nSm_CI_FrameStart\nSm_CI_SSF\nSmDm_TT_Sk_MI_ExTI\nSmDm_TT_Sk_MI_RDI_Reported\nSmDm_TT_Sk_MI_ODI_Reported\nSmDm_TT_Sk_MI_SSF_Reported\nSmDm_TT_Sk_MI_AIS_Reported\nSmDm_TT_Sk_MI_TIMdis\nSmDm_TT_Sk_MI_DEGM\nSmDm_TT_Sk_MI_DEGTHR\nSmDm_TT_Sk_MI_1second\nSmDm_TT_Sk_MI_Tpmode\tSmD_AI_TSF\nSmD_AI_TSD\nSmDm_TT_Sk_MI_cLTC\nSmDm_TT_Sk_MI_cTIM\nSmDm_TT_Sk_MI_cUNEQ\nSmDm_TT_Sk_MI_cDEG\nSmDm_TT_Sk_MI_cRDI\nSmDm_TT_Sk_MI_cODI\nSmDm_TT_Sk_MI_cSSF\nSmDm_TT_Sk_MI_cIncAIS\nSmDm_TT_Sk_MI_AcTI\nSmDm_TT_Sk_MI_pN_EBC\nSmim_TT_Sk_MI_pF_EBC\nSmDm_TT_Sk_MI_pN_DS\nSmDm_TT_Sk_MI_pF_DS\nSmDm_TT_Sk_MI_pON_DS\nSmDm_TT_Sk_MIpON_EBC\nSmDm_TT_Sk_MI_pOF_EBC\nSmDm_TT_Sk_MI_pOF_DS",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21508,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

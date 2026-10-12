@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011226",
+  "entities": [
+    {
+      "name": "交叉功能，为 OTN 网络提供灵活的电路调度和保护能力",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "交叉功能，为 OTN 网络提供灵活的电路调度和保护能力。 OTN\n电交叉设备可以独立存在，对外提供各种业务接口和OTUk  接口\n(包括IrDI 接口);也可以与OTN 终端复用功能集成在一起，除了\n提供各种业务接口和OTUk  接口(包括 IrDI 接口)以外，同时提\n供光复用段和光传输段功能，支持WDM 传输。OTN 光交叉设备\n( 即ROADM/PXC)  提供OCh 光层调度能力，实现波长级别业务\n的调度和保护恢复。 OTN  光电混合交叉设备是OTN  电交叉设\n备可以与 OTN  光交叉设备的结合，同时提供 ODUk  电层和 OCh\n光层调度能力，波长级别的业务可以直接通过 OCh 交叉，其他需\n要调度的业务经过ODUk 交叉。",
+      "type": "语义分解",
+      "subject": "交叉功能，为 OTN 网络提供灵活的电路调度和保护能力",
+      "action": "",
+      "operation": "交叉功能，为 OTN 网络提供灵活的电路调度和保护能力。 OTN 电交叉设备可以独立存在，对外提供各种业务接口和OTUk 接口 (包括IrDI 接口);也可以与OTN 终端复用功能集成在一起，除了 提供各种业务接口和OTUk 接口(包括 IrDI 接口)以外，同时提 供光复用段和光传输段功能，支持WDM 传输。OTN 光交叉设备 ( 即ROADM/PXC) 提供OCh 光层调度能力，实现波长级别业务 的调度和保护恢复。 OTN 光电混合交叉设备是OTN 电交叉设 备可以与 O",
+      "condition": "",
+      "constraint": "交叉功能，为 OTN 网络提供灵活的电路调度和保护能力。 OTN\n电交叉设备可以独立存在，对外提供各种业务接口和OTUk  接口\n(包括IrDI 接口);也可以与OTN 终端复用功能集成在一起，除了\n提供各种业务接口和OTUk  接口(包括 IrDI 接口)以外，同时提\n供光复用段和光传输段功能，支持WDM 传输。OTN 光交叉设备\n( 即ROADM/PXC)  提供OCh 光层调度能力，实现波长级别业务\n的调度和保护恢复。 OTN  光电混合交叉设备是OTN  电交叉设\n备可以与 OTN  光交叉设备的结合，同时提供 ODUk  电层和 OCh\n光层调度能力，波长级别的业务可以直接通过 OCh 交叉，其他需\n要调度的业务经过ODUk 交叉。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交叉功能，为 OTN 网络提供灵活的电路调度和保护能力"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11226,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

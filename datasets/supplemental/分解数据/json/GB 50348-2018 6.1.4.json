@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.1.4",
+  "entities": [
+    {
+      "name": "工程设计组织方式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.4 安全防范工程的设计应以结构化、规范化、模块化、集成化的方式实现，应能适应系统维护和技术发展的需要。",
+      "type": "语义分解",
+      "subject": "工程设计组织方式",
+      "action": "",
+      "operation": "结构规范模块集成适应维护发展",
+      "condition": "",
+      "constraint": "6.1.4 安全防范工程的设计应以结构化、规范化、模块化、集成化的方式实现，应能适应系统维护和技术发展的需要。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程设计组织方式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6944,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

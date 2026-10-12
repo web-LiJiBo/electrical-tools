@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 空气压缩机能效等级判定时 ,应按驱动电动机额定功率栏的对应能效指标考核,且应符合下列规定: a) 回转空气压缩机的机组功率试验值 ,应小于驱动电动机额定功率大一挡的值。机组功率试验值按式(4)计算; b) 微型 ,全无油润滑和一般用固定的往复活塞空气压缩机的轴功率 ,计及传动效率后 ,应不超过驱动电动机额定功率; c) 直联便携式往复活塞空气压缩机的实际输入功率应符合表5~表6的规定。",
+      "type": "语义分解",
+      "subject": "空气压缩机",
+      "action": "",
+      "operation": "按驱动电动机额定功率对应指标考核",
+      "condition": "能效等级判定时",
+      "constraint": "轴功率 ,计及传动效率后 ,应不超过驱动电动机额定功率",
+      "constraint_role": "informational",
+      "related_entities": [
+        "空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "机组功率大一挡值和表5至表6、公式(4)未提供"
+      ]
+    }
+  }
+}

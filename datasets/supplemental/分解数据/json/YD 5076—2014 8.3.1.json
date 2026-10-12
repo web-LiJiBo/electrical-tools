@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "8.3.1",
+  "entities": [
+    {
+      "name": "SDB与交换机信令",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.1  SDB 和交换机之间可采用No.7  信令，如果交换机采用软\n交换设备，SDB 与软交换之间也可以采用IP 信令。",
+      "type": "语义分解",
+      "subject": "SDB与交换机信令",
+      "action": "",
+      "operation": "可No.7软交换也可IP信令",
+      "condition": "",
+      "constraint": "8.3.1  SDB 和交换机之间可采用No.7  信令，如果交换机采用软\n交换设备，SDB 与软交换之间也可以采用IP 信令。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDB与交换机信令"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26042,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040369",
+  "entities": [
+    {
+      "name": "在工艺流程图上标出废气排放点位置，并列出相应的图表 注明其排放量、组分、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1      在工艺流程图上标出废气排放点位置，并列出相应的图表\n注明其排放量、组分、排放去向等，一是可对整个工艺流程中废气\n排放有一个清晰的标识，二是有利于对废气进行监测、管理和\n治理。",
+      "type": "语义分解",
+      "subject": "在工艺流程图上标出废气排放点位置，并列出相应的图表 注明其排放量、组分、",
+      "action": "",
+      "operation": "在工艺流程图上标出废气排放点位置，并列出相应的图表 注明其排放量、组分、排放去向等，一是可对整个工艺流程中废气 排放有一个清晰的标识，二是有利于对废气进行监测、管理和 治理。",
+      "condition": "",
+      "constraint": "5.1.1      在工艺流程图上标出废气排放点位置，并列出相应的图表\n注明其排放量、组分、排放去向等，一是可对整个工艺流程中废气\n排放有一个清晰的标识，二是有利于对废气进行监测、管理和\n治理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在工艺流程图上标出废气排放点位置，并列出相应的图表 注明其排放量、组分、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40369,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

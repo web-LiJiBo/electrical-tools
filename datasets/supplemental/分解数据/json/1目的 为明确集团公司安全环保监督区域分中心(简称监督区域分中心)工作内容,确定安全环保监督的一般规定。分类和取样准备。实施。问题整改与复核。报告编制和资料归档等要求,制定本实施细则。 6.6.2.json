@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "6.6.2",
+  "entities": [
+    {
+      "name": "必备监督仪器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.2 应配备监督仪器。工具主要包括:激光甲烷检测仪四合-可燃气体检测仪。笔记本电脑，防爆监督记录仪。防爆照相机。工业智能防爆移动终端等，并按要求定期检定。维护。维修。",
+      "type": "语义分解",
+      "subject": "必备监督仪器",
+      "action": "",
+      "operation": "配置气体检测防爆记录等并定期检维",
+      "condition": "",
+      "constraint": "6.6.2 应配备监督仪器。工具主要包括:激光甲烷检测仪四合-可燃气体检测仪。笔记本电脑，防爆监督记录仪。防爆照相机。工业智能防爆移动终端等，并按要求定期检定。维护。维修。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "必备监督仪器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 706,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

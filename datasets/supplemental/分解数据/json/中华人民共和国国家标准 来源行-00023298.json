@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023298",
+  "entities": [
+    {
+      "name": "一个由多接地体组成的地网可以近似地当作一块孤立的平 板，它的电容主要是由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   一个由多接地体组成的地网可以近似地当作一块孤立的平\n板，它的电容主要是由它的面积尺寸来决定的，附加于这个平板上\n的有限长度(2m~3m)   的垂直接地体，不足以改变决定电容大小\n的几何尺寸，因而是电容增加不大，亦即接地电阻减小不多。这里\n接地电阻R 为：",
+      "type": "语义分解",
+      "subject": "一个由多接地体组成的地网可以近似地当作一块孤立的平 板，它的电容主要是由",
+      "action": "",
+      "operation": "一个由多接地体组成的地网可以近似地当作一块孤立的平 板，它的电容主要是由它的面积尺寸来决定的，附加于这个平板上 的有限长度(2m~3m) 的垂直接地体，不足以改变决定电容大小 的几何尺寸，因而是电容增加不大，亦即接地电阻减小不多。这里 接地电阻R 为",
+      "condition": "",
+      "constraint": "   一个由多接地体组成的地网可以近似地当作一块孤立的平\n板，它的电容主要是由它的面积尺寸来决定的，附加于这个平板上\n的有限长度(2m~3m)   的垂直接地体，不足以改变决定电容大小\n的几何尺寸，因而是电容增加不大，亦即接地电阻减小不多。这里\n接地电阻R 为：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一个由多接地体组成的地网可以近似地当作一块孤立的平 板，它的电容主要是由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23298,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

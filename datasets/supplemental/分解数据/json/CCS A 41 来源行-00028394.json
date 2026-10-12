@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028394",
+  "entities": [
+    {
+      "name": "推进规划应在组织内部自上而下展开 ,推进规划的实施过程应有明确的阶段和阶",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      推进规划应在组织内部自上而下展开 ,推进规划的实施过程应有明确的阶段和阶段目标 ,精益六西\n格玛推进目标应被合理地分解到职能部门和业务单元 ,并确定相关责任人 。",
+      "type": "语义分解",
+      "subject": "推进规划应在组织内部自上而下展开 ,推进规划的实施过程应有明确的阶段和阶",
+      "action": "",
+      "operation": "推进规划应在组织内部自上而下展开 ,推进规划的实施过程应有明确的阶段和阶段目标 ,精益六西 格玛推进目标应被合理地分解到职能部门和业务单元 ,并确定相关责任人 。",
+      "condition": "",
+      "constraint": "      推进规划应在组织内部自上而下展开 ,推进规划的实施过程应有明确的阶段和阶段目标 ,精益六西\n格玛推进目标应被合理地分解到职能部门和业务单元 ,并确定相关责任人 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "推进规划应在组织内部自上而下展开 ,推进规划的实施过程应有明确的阶段和阶"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28394,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

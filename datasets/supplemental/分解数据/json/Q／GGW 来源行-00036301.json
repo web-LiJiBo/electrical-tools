@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036301",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "仪 表\t更换管道时进行阀门泄漏修复\t  进行管道维修时，需关闭截断阀，这时腐蚀碎屑可能会积聚在阀\n座中，阻止阀门的紧密关闭并导致气体泄漏。由于维修阀门通常也\n需要将管道进行停运，因此在更换或维修管道的同时，应进行管道\n阀门内部和外部组件的检查和维护",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "仪 表\t更换管道时进行阀门泄漏修复\t  进行管道维修时，需关闭截断阀，这时腐蚀碎屑可能会积聚在阀\n座中，阻止阀门的紧密关闭并导致气体泄漏。由于维修阀门通常也\n需要将管道进行停运，因此在更换或维修管道的同时，应进行管道\n阀门内部和外部组件的检查和维护",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36301,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

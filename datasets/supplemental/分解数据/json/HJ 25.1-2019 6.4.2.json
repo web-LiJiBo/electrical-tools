@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "调查检测数据评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2 数据评估 整理调查信息和检测结果。评估检测数据的质量,分析数据的有效性和充分性,确定是否需要补充采样分析等",
+      "type": "语义分解",
+      "subject": "调查检测数据评估",
+      "action": "",
+      "operation": "判断质量有效充分性及补采需求",
+      "condition": "",
+      "constraint": "6.4.2 数据评估 整理调查信息和检测结果。评估检测数据的质量,分析数据的有效性和充分性,确定是否需要补充采样分析等",
+      "constraint_role": "informational",
+      "related_entities": [
+        "调查检测数据评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2662,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

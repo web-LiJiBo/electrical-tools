@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041182",
+  "entities": [
+    {
+      "name": "当井眼永久报废不再进一步利用时，应实施永久性封闭以防止液体窜层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   当井眼永久报废不再进一步利用时，应实施永久性封闭以防止液体窜层。当井眼今后还有用处，\n可以进行临时性的封堵作业，但必须予以维护，使得常规的修井作业就可以恢复井眼的使用。上述两\n种情况的环境要求是一致的。对这两种作业的环境要求参见油气勘探开发地表作业标准及API Bull\nE3。",
+      "type": "语义分解",
+      "subject": "当井眼永久报废不再进一步利用时，应实施永久性封闭以防止液体窜层",
+      "action": "",
+      "operation": "当井眼永久报废不再进一步利用时，应实施永久性封闭以防止液体窜层。当井眼今后还有用处， 可以进行临时性的封堵作业，但必须予以维护，使得常规的修井作业就可以恢复井眼的使用。上述两 种情况的环境要求是一致的。对这两种作业的环境要求参见油气勘探开发地表作业标准及API Bull E3。",
+      "condition": "",
+      "constraint": "   当井眼永久报废不再进一步利用时，应实施永久性封闭以防止液体窜层。当井眼今后还有用处，\n可以进行临时性的封堵作业，但必须予以维护，使得常规的修井作业就可以恢复井眼的使用。上述两\n种情况的环境要求是一致的。对这两种作业的环境要求参见油气勘探开发地表作业标准及API Bull\nE3。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当井眼永久报废不再进一步利用时，应实施永久性封闭以防止液体窜层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41182,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

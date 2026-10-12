@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00043217",
+  "entities": [
+    {
+      "name": ". 1 出厂检验的化学成分分析按 GB/T 4949或 GB/T 799",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2. 1   出厂检验的化学成分分析按 GB/T 4949或 GB/T 7999的规定进行 。",
+      "type": "语义分解",
+      "subject": ". 1 出厂检验的化学成分分析按 GB/T 4949或 GB/T 799",
+      "action": "",
+      "operation": ". 1 出厂检验的化学成分分析按 GB/T 4949或 GB/T 7999的规定进行 。",
+      "condition": "",
+      "constraint": "7.2. 1   出厂检验的化学成分分析按 GB/T 4949或 GB/T 7999的规定进行 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 出厂检验的化学成分分析按 GB/T 4949或 GB/T 799"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43217,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

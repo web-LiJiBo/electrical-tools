@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第3部分: 动火作业",
+  "standard_id": "Q/GGW 04003.3-2022",
+  "version": "2022",
+  "chapter_path": "5.3.3",
+  "entities": [
+    {
+      "name": "露天动火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.3 如遇有5级(含5级)以上大风不宜进行露天动火作业。",
+      "type": "语义分解",
+      "subject": "露天动火",
+      "action": "",
+      "operation": "五级及以上大风不宜进行",
+      "condition": "",
+      "constraint": "5.3.3 如遇有5级(含5级)以上大风不宜进行露天动火作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "露天动火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6094,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

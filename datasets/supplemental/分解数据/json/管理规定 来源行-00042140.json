@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042140",
+  "entities": [
+    {
+      "name": "（ 二 ）重大质量事故，是指直接经济损失在 5000 万元及以 上 1 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 二 ）重大质量事故，是指直接经济损失在 5000 万元及以\n\n上 1 亿元以下的质量事故，或在社会上造成重大影响、损害公司\n\n形象的质量事故，或因施工过程中出现系统性缺陷，造成大量工\n\n程返工，严重影响施工工期或已投产工程因施工质量造成停产，\n\n严重影响正常生产的质量事故。",
+      "type": "语义分解",
+      "subject": "（ 二 ）重大质量事故，是指直接经济损失在 5000 万元及以 上 1 ",
+      "action": "",
+      "operation": "（ 二 ）重大质量事故，是指直接经济损失在 5000 万元及以 上 1 亿元以下的质量事故，或在社会上造成重大影响、损害公司 形象的质量事故，或因施工过程中出现系统性缺陷，造成大量工 程返工，严重影响施工工期或已投产工程因施工质量造成停产， 严重影响正常生产的质量事故。",
+      "condition": "",
+      "constraint": "    （ 二 ）重大质量事故，是指直接经济损失在 5000 万元及以\n\n上 1 亿元以下的质量事故，或在社会上造成重大影响、损害公司\n\n形象的质量事故，或因施工过程中出现系统性缺陷，造成大量工\n\n程返工，严重影响施工工期或已投产工程因施工质量造成停产，\n\n严重影响正常生产的质量事故。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 二 ）重大质量事故，是指直接经济损失在 5000 万元及以 上 1 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

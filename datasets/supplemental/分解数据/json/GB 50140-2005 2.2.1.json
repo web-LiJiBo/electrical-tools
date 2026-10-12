@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "2.2.1",
+  "entities": [
+    {
+      "name": "灭火器设计符号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.2.1 灭火器配置设计计算符号: Q 计算单元的最小需配灭火级别(A 或B); S- 计算单元的保护面积(m) ; U--A 类或 B类火灾场所单位灭火级别最大保护面积(m /A 或 m? /8); K一 修正系数; 计算单元中每个灭火器设置点的最小需配灭火级别 (A 或B); N- 计算单元中的灭火器设置点数(个)",
+      "type": "语义分解",
+      "subject": "灭火器设计符号",
+      "action": "",
+      "operation": "说明总级别面积单位面积保护限值修正系数点数等计算符号",
+      "condition": "",
+      "constraint": "2.2.1 灭火器配置设计计算符号: Q 计算单元的最小需配灭火级别(A 或B); S- 计算单元的保护面积(m) ; U--A 类或 B类火灾场所单位灭火级别最大保护面积(m /A 或 m? /8); K一 修正系数; 计算单元中每个灭火器设置点的最小需配灭火级别 (A 或B); N- 计算单元中的灭火器设置点数(个)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器设计符号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4041,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；部分符号单位OCR异常不得据此计算"
+      ]
+    }
+  }
+}

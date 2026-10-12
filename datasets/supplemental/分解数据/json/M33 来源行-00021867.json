@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021867",
+  "entities": [
+    {
+      "name": "——Norm_point",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——Norm_point:  正常NDF 且 ss 比特匹配且范偏移值在围内的；\n——NDF_enable:  使能的NDF 且 ss 比特匹配且偏移值在范围内；\nAIS_ind:    11111111    11111111;",
+      "type": "语义分解",
+      "subject": "——Norm_point",
+      "action": "",
+      "operation": "——Norm_point: 正常NDF 且 ss 比特匹配且范偏移值在围内的； ——NDF_enable: 使能的NDF 且 ss 比特匹配且偏移值在范围内； AIS_ind: 11111111 11111111",
+      "condition": "",
+      "constraint": "——Norm_point:  正常NDF 且 ss 比特匹配且范偏移值在围内的；\n——NDF_enable:  使能的NDF 且 ss 比特匹配且偏移值在范围内；\nAIS_ind:    11111111    11111111;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——Norm_point"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21867,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

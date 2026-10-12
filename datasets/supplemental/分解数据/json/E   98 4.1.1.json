@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "预评价主要工作内容应包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1   预评价主要工作内容应包括：资料收集、可行性分析、\nICDA管段划分等。",
+      "type": "语义分解",
+      "subject": "预评价主要工作内容应包括",
+      "action": "",
+      "operation": "预评价主要工作内容应包括：资料收集、可行性分析、 ICDA管段划分等。",
+      "condition": "",
+      "constraint": "4.1.1   预评价主要工作内容应包括：资料收集、可行性分析、\nICDA管段划分等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预评价主要工作内容应包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

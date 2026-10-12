@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "16.0.4",
+  "entities": [
+    {
+      "name": "机房装机准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "16.0.4      机房的室内装修、空调设备和电器照明的安装应在交换\n网设备装机之前完成。室内装修应满足工艺要求，经济实用。各\n\n类线缆应采用上走线方式，应分开敷设。",
+      "type": "语义分解",
+      "subject": "机房装机准备",
+      "action": "",
+      "operation": "装修空调照明先完成装修经济满足工艺缆线上走分开敷设",
+      "condition": "",
+      "constraint": "16.0.4      机房的室内装修、空调设备和电器照明的安装应在交换\n网设备装机之前完成。室内装修应满足工艺要求，经济实用。各\n\n类线缆应采用上走线方式，应分开敷设。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房装机准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26355,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

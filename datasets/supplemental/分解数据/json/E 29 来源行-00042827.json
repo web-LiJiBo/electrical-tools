@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042827",
+  "entities": [
+    {
+      "name": "a) 按一定周期连续监测同一位置的管道壁厚损失确定腐蚀速率(即监测管道的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " a)    按一定周期连续监测同一位置的管道壁厚损失确定腐蚀速率(即监测管道的腐蚀量) ;\n b)    在基于流动模型预测出的积水管道位置或典型的管道位置 ,安装腐蚀监测装置 ;\n c)    基于操作条件 、气体质量 、液体组分和其他关键因素 ,建立模型计算腐蚀速率 ;",
+      "type": "语义分解",
+      "subject": "a) 按一定周期连续监测同一位置的管道壁厚损失确定腐蚀速率(即监测管道的",
+      "action": "",
+      "operation": "a) 按一定周期连续监测同一位置的管道壁厚损失确定腐蚀速率(即监测管道的腐蚀量) ; b) 在基于流动模型预测出的积水管道位置或典型的管道位置 ,安装腐蚀监测装置 ; c) 基于操作条件 、气体质量 、液体组分和其他关键因素 ,建立模型计算腐蚀速率",
+      "condition": "",
+      "constraint": " a)    按一定周期连续监测同一位置的管道壁厚损失确定腐蚀速率(即监测管道的腐蚀量) ;\n b)    在基于流动模型预测出的积水管道位置或典型的管道位置 ,安装腐蚀监测装置 ;\n c)    基于操作条件 、气体质量 、液体组分和其他关键因素 ,建立模型计算腐蚀速率 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 按一定周期连续监测同一位置的管道壁厚损失确定腐蚀速率(即监测管道的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42827,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

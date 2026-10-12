@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.2.4.2",
+  "entities": [
+    {
+      "name": "水样pH比色",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.4.2 水样测定 吸取10.0 mL澄清水样，置于与标准系列同型的试管中，加入0.5 mL指示剂(指示剂种类与标准色列相同)，混匀后放入比色架(图1)中的5号孔内。另取2支试管，各加入10 mL水样，插入1号与3号孔内。再取标准管2支，插入4号及6号孔内。在2号孔内放入1支纯水管。从比色架前面迎光观察，记录与水样相近似的标准管的pH值。",
+      "type": "语义分解",
+      "subject": "水样pH比色",
+      "action": "",
+      "operation": "十毫升澄清样加半毫升指示剂按比色架孔位对照记录近似pH",
+      "condition": "",
+      "constraint": "8.2.4.2 水样测定 吸取10.0 mL澄清水样，置于与标准系列同型的试管中，加入0.5 mL指示剂(指示剂种类与标准色列相同)，混匀后放入比色架(图1)中的5号孔内。另取2支试管，各加入10 mL水样，插入1号与3号孔内。再取标准管2支，插入4号及6号孔内。在2号孔内放入1支纯水管。从比色架前面迎光观察，记录与水样相近似的标准管的pH值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水样pH比色"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1376,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；图1需原件查证"
+      ]
+    }
+  }
+}

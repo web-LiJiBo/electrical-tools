@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "8.7",
+  "entities": [
+    {
+      "name": "土壤制样质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.7 制样质量保证和质量控制 制样过程中应采取有效措施。确保样品制备质量: 通过现场或查阅资料等方式。检查制样过程的技术符合性; 根据质量管理目标确定样品损失率和过筛率检查比例; 长期使用的土壤筛, 根据磨损情况或过筛率检验结果。定期更换; 采用机械制样 应满足手工制样技术要求和质量控制要求, 重点关注全量过筛。逐级磨制。样 品间交叉污染及温度和磨具材质对待检测项目的干扰等。",
+      "type": "语义分解",
+      "subject": "土壤制样质控",
+      "action": "",
+      "operation": "检查技术损失过筛定期换筛机械满足手工要求防污染温度材质干扰",
+      "condition": "",
+      "constraint": "8.7 制样质量保证和质量控制 制样过程中应采取有效措施。确保样品制备质量: 通过现场或查阅资料等方式。检查制样过程的技术符合性; 根据质量管理目标确定样品损失率和过筛率检查比例; 长期使用的土壤筛, 根据磨损情况或过筛率检验结果。定期更换; 采用机械制样 应满足手工制样技术要求和质量控制要求, 重点关注全量过筛。逐级磨制。样 品间交叉污染及温度和磨具材质对待检测项目的干扰等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤制样质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2273,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

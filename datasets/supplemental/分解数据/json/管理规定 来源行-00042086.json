@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042086",
+  "entities": [
+    {
+      "name": ".供应商是指为集团公司及所属企业提供物资的经营者",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2.供应商是指为集团公司及所属企业提供物资的经营者。\n\n   3.服务商是指集团公司及所属企业除工程建设及检维修承\n\n包商、供应商之外的，提供技术咨询、劳务外包及业务支持等服",
+      "type": "语义分解",
+      "subject": ".供应商是指为集团公司及所属企业提供物资的经营者",
+      "action": "",
+      "operation": ".供应商是指为集团公司及所属企业提供物资的经营者。 3.服务商是指集团公司及所属企业除工程建设及检维修承 包商、供应商之外的，提供技术咨询、劳务外包及业务支持等服",
+      "condition": "",
+      "constraint": "   2.供应商是指为集团公司及所属企业提供物资的经营者。\n\n   3.服务商是指集团公司及所属企业除工程建设及检维修承\n\n包商、供应商之外的，提供技术咨询、劳务外包及业务支持等服",
+      "constraint_role": "informational",
+      "related_entities": [
+        ".供应商是指为集团公司及所属企业提供物资的经营者"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42086,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

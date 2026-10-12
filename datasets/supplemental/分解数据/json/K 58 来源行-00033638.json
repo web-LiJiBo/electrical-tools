@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033638",
+  "entities": [
+    {
+      "name": "— 排气管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1 — 排气管道；\n2 — 取样管道；\n3 — 阀 C ;\n4 — 阀 A ;",
+      "type": "语义分解",
+      "subject": "— 排气管道",
+      "action": "",
+      "operation": "— 排气管道； 2 — 取样管道； 3 — 阀 C ; 4 — 阀 A",
+      "condition": "",
+      "constraint": "1 — 排气管道；\n2 — 取样管道；\n3 — 阀 C ;\n4 — 阀 A ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— 排气管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33638,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

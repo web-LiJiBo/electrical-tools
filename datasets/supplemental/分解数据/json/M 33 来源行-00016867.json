@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016867",
+  "entities": [
+    {
+      "name": "e) 通过OTN 分析仪、拔纤、掉电等在NE3-NE4之间的链路产生如下",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      e)  通过OTN 分析仪、拔纤、掉电等在NE3-NE4之间的链路产生如下信号失效( SF)  条件：LOS、\nOTUk_LOF、OTUk_LOM、OTUk_AIS、OTUk_TIM、ODUk_LOFLOM、ODUk_PM_AIS、ODUk_PM_LCK、\nODUk_PM_OCI、ODUk_PM_TIM 等 。对于不同的保护方式，具体SF 要求见第10章，对于恢复的 SF\n条件同ODUk SPRing 保护要求。记录业务1和业务2受损时间，同时通过网管查看业务路径。SF 条件\n消失且过了等待恢复时间 ( WTR)  后，通过网管查看业务是否回到初始路径，并记录业务返回时受损时\n\n间。",
+      "type": "语义分解",
+      "subject": "e) 通过OTN 分析仪、拔纤、掉电等在NE3-NE4之间的链路产生如下",
+      "action": "",
+      "operation": "e) 通过OTN 分析仪、拔纤、掉电等在NE3-NE4之间的链路产生如下信号失效( SF) 条件：LOS、 OTUk_LOF、OTUk_LOM、OTUk_AIS、OTUk_TIM、ODUk_LOFLOM、ODUk_PM_AIS、ODUk_PM_LCK、 ODUk_PM_OCI、ODUk_PM_TIM 等 。对于不同的保护方式，具体SF 要求见第10章，对于恢复的 SF 条件同ODUk SPRing 保护要求。记录业务1和业务2受损时间，同时通过网管查看业务路径。SF 条件 消",
+      "condition": "",
+      "constraint": "      e)  通过OTN 分析仪、拔纤、掉电等在NE3-NE4之间的链路产生如下信号失效( SF)  条件：LOS、\nOTUk_LOF、OTUk_LOM、OTUk_AIS、OTUk_TIM、ODUk_LOFLOM、ODUk_PM_AIS、ODUk_PM_LCK、\nODUk_PM_OCI、ODUk_PM_TIM 等 。对于不同的保护方式，具体SF 要求见第10章，对于恢复的 SF\n条件同ODUk SPRing 保护要求。记录业务1和业务2受损时间，同时通过网管查看业务路径。SF 条件\n消失且过了等待恢复时间 ( WTR)  后，通过网管查看业务是否回到初始路径，并记录业务返回时受损时\n\n间。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 通过OTN 分析仪、拔纤、掉电等在NE3-NE4之间的链路产生如下"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16867,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

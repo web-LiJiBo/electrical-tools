@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "10.3.15",
+  "entities": [
+    {
+      "name": "中心验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.15 监控中心应重点检查下列内容: 1 应检查监控中心的选址、功能区划分和设备的布局; 2 应检查监控中心的通信手段、紧急报警、视频监控、出入口控制和实体防护等自身防护措施; 3 应检查监控中心的温湿度、照度、噪声、地面等环境情况。",
+      "type": "语义分解",
+      "subject": "中心验收",
+      "action": "",
+      "operation": "位置分区布局通信报警视频门控物防温湿照噪地面",
+      "condition": "",
+      "constraint": "10.3.15 监控中心应重点检查下列内容: 1 应检查监控中心的选址、功能区划分和设备的布局; 2 应检查监控中心的通信手段、紧急报警、视频监控、出入口控制和实体防护等自身防护措施; 3 应检查监控中心的温湿度、照度、噪声、地面等环境情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中心验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7181,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

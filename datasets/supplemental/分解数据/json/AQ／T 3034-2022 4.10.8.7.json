@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.8.7",
+  "entities": [
+    {
+      "name": "高风险泄漏部位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.8.7 在高风险的泄漏部位 .应配备必要的现场应急处置设施和物资 _",
+      "type": "语义分解",
+      "subject": "高风险泄漏部位",
+      "action": "",
+      "operation": "配置现场应急设施物资",
+      "condition": "",
+      "constraint": "4.10.8.7 在高风险的泄漏部位 .应配备必要的现场应急处置设施和物资 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高风险泄漏部位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5207,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "9.1.2",
+  "entities": [
+    {
+      "name": "OTN电交叉连接设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2 OTN 交叉连接设备\n\n9.1.2.1   OTN电交叉设备",
+      "type": "语义分解",
+      "subject": "OTN电交叉连接设备",
+      "action": "",
+      "operation": "章节标题",
+      "condition": "",
+      "constraint": "9.1.2 OTN 交叉连接设备\n\n9.1.2.1   OTN电交叉设备",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN电交叉连接设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14429,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；含两个标题无正文"
+      ]
+    }
+  }
+}

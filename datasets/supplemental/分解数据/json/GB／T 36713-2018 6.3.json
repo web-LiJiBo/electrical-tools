@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "6.3",
+  "entities": [
+    {
+      "name": "组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3 选择能源绩效参数的类型 组织应根据用户需求和应用的复杂程度来选择能源绩效参数的类型。表 4描述了不同能源绩效参数类型及其特点。附录E进一步提供了选择能源绩效参数的原则和示例",
+      "type": "语义分解",
+      "subject": "组织",
+      "action": "",
+      "operation": "按需求和复杂程度选择绩效参数类型",
+      "condition": "根据用户需求和应用的复杂程度",
+      "constraint": "选择能源绩效参数的类型",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "表4和附录E未提供"
+      ]
+    }
+  }
+}

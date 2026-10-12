@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.9.5",
+  "entities": [
+    {
+      "name": "施工技术文档",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9.5 工程施工技术文档应符合下列规定: 1 应编制与安全防范工程现场一致的施工图; 2 应整理和归档与安全防范工程项目一致的系统的前端设备、系统主机和安全管理等的软硬件产品说明书、安装手册、维护手册等。",
+      "type": "语义分解",
+      "subject": "施工技术文档",
+      "action": "",
+      "operation": "图现场一致产品说明安装维护资料归档",
+      "condition": "",
+      "constraint": "6.9.5 工程施工技术文档应符合下列规定: 1 应编制与安全防范工程现场一致的施工图; 2 应整理和归档与安全防范工程项目一致的系统的前端设备、系统主机和安全管理等的软硬件产品说明书、安装手册、维护手册等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工技术文档"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7025,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

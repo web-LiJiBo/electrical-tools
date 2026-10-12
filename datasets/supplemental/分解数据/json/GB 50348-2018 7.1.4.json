@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "7.1.4",
+  "entities": [
+    {
+      "name": "施工人员资料熟悉",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.4 进场施工前施工人员应熟悉施工图纸及有关资料，包括工程特点、施工方案、工艺要求、施工质量标准及验收标准等。",
+      "type": "语义分解",
+      "subject": "施工人员资料熟悉",
+      "action": "",
+      "operation": "进场前熟悉图纸方案工艺验收标准",
+      "condition": "进场施工前",
+      "constraint": "7.1.4 进场施工前施工人员应熟悉施工图纸及有关资料，包括工程特点、施工方案、工艺要求、施工质量标准及验收标准等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工人员资料熟悉"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7066,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

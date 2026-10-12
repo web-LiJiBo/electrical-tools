@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023237",
+  "entities": [
+    {
+      "name": "原邮电部标准交换设备允许的接地电阻值是沿用前苏联 的标准，随着通信技术的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       3    原邮电部标准交换设备允许的接地电阻值是沿用前苏联\n的标准，随着通信技术的发展，模拟技术的交换系统在中国已经被\n数字交换系统所代替，原有基于模拟技术的交换系统局间金属实\n线连接已经被光缆所代替，因此局间接地电阻引起的电位差引起\n的问题已经不复存在。故对于现代通信局(站)仍旧沿用原模拟系\n统对接地电阻的要求是没有必要的。",
+      "type": "语义分解",
+      "subject": "原邮电部标准交换设备允许的接地电阻值是沿用前苏联 的标准，随着通信技术的",
+      "action": "",
+      "operation": "原邮电部标准交换设备允许的接地电阻值是沿用前苏联 的标准，随着通信技术的发展，模拟技术的交换系统在中国已经被 数字交换系统所代替，原有基于模拟技术的交换系统局间金属实 线连接已经被光缆所代替，因此局间接地电阻引起的电位差引起 的问题已经不复存在。故对于现代通信局(站)仍旧沿用原模拟系 统对接地电阻的要求是没有必要的。",
+      "condition": "",
+      "constraint": "       3    原邮电部标准交换设备允许的接地电阻值是沿用前苏联\n的标准，随着通信技术的发展，模拟技术的交换系统在中国已经被\n数字交换系统所代替，原有基于模拟技术的交换系统局间金属实\n线连接已经被光缆所代替，因此局间接地电阻引起的电位差引起\n的问题已经不复存在。故对于现代通信局(站)仍旧沿用原模拟系\n统对接地电阻的要求是没有必要的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原邮电部标准交换设备允许的接地电阻值是沿用前苏联 的标准，随着通信技术的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23237,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

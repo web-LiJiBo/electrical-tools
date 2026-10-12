@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "11.3.4",
+  "entities": [
+    {
+      "name": "公共区域视频",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.3.4 重点目标涉及公共区域的视频图像停息的采集要求应符合 GB 37300  的相关规定 ,系统应留有与公共安全视频图像信息共享交换平台联网的接口 ,联网停息传输 ,交换 ,控制协议应符合 GB/T 28181的相关规定。",
+      "type": "语义分解",
+      "subject": "公共区域视频",
+      "action": "",
+      "operation": "采集符合GB37300留共享平台接口协议符合GB/T28181",
+      "condition": "",
+      "constraint": "11.3.4 重点目标涉及公共区域的视频图像停息的采集要求应符合 GB 37300  的相关规定 ,系统应留有与公共安全视频图像信息共享交换平台联网的接口 ,联网停息传输 ,交换 ,控制协议应符合 GB/T 28181的相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "公共区域视频"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5585,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

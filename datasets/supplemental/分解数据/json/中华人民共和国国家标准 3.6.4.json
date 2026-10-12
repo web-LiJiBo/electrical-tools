@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.6.4",
+  "entities": [
+    {
+      "name": "各层接地汇集线与楼层接地排或设备之间相连接的接 地线，距离较短时，宜采用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.6.4     各层接地汇集线与楼层接地排或设备之间相连接的接\n地线，距离较短时，宜采用截面积不小于16mm² 的多股铜线；\n距离较长时，宜采用不小于35mm² 的多股铜线或增加一个楼\n层接地排，应先将其与设备间用不小于16mm²的多股铜线连\n接，再用不小于35mm² 的多股铜线与各层楼层接地排进行",
+      "type": "语义分解",
+      "subject": "各层接地汇集线与楼层接地排或设备之间相连接的接 地线，距离较短时，宜采用",
+      "action": "",
+      "operation": "各层接地汇集线与楼层接地排或设备之间相连接的接 地线，距离较短时，宜采用截面积不小于16mm² 的多股铜线； 距离较长时，宜采用不小于35mm² 的多股铜线或增加一个楼 层接地排，应先将其与设备间用不小于16mm²的多股铜线连 接，再用不小于35mm² 的多股铜线与各层楼层接地排进行",
+      "condition": "",
+      "constraint": "3.6.4     各层接地汇集线与楼层接地排或设备之间相连接的接\n地线，距离较短时，宜采用截面积不小于16mm² 的多股铜线；\n距离较长时，宜采用不小于35mm² 的多股铜线或增加一个楼\n层接地排，应先将其与设备间用不小于16mm²的多股铜线连\n接，再用不小于35mm² 的多股铜线与各层楼层接地排进行",
+      "constraint_role": "informational",
+      "related_entities": [
+        "各层接地汇集线与楼层接地排或设备之间相连接的接 地线，距离较短时，宜采用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22407,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.6.2.1",
+  "entities": [
+    {
+      "name": "管道检测周期",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6.2.1 应按照国家有关规定对管道进行检测 ,并根据检测结果和管道运行安全状况 ,合理确定管道检测周期。",
+      "type": "语义分解",
+      "subject": "管道检测周期",
+      "action": "",
+      "operation": "按规定检测结合结果和安全确定周期",
+      "condition": "",
+      "constraint": "7.6.2.1 应按照国家有关规定对管道进行检测 ,并根据检测结果和管道运行安全状况 ,合理确定管道检测周期。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道检测周期"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4861,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

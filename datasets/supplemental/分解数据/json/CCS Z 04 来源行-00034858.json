@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034858",
+  "entities": [
+    {
+      "name": "EF电 — 电力生产排放因子 , 以吨二氧化碳每兆瓦时[tCO2/(MW",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "EF电           — 电力生产排放因子 , 以吨二氧化碳每兆瓦时[tCO2/(MW · h)]计 ;\nE输 出 热        — 输出的热力所产生的二氧化碳排放 , 以吨二氧化碳(tCO2)计 ;\nAD输 出 热  — 输出的热力量 ,单位为吉焦(GJ) ;",
+      "type": "语义分解",
+      "subject": "EF电 — 电力生产排放因子 , 以吨二氧化碳每兆瓦时[tCO2/(MW",
+      "action": "",
+      "operation": "EF电 — 电力生产排放因子 , 以吨二氧化碳每兆瓦时[tCO2/(MW · h)]计 ; E输 出 热 — 输出的热力所产生的二氧化碳排放 , 以吨二氧化碳(tCO2)计 ; AD输 出 热 — 输出的热力量 ,单位为吉焦(GJ)",
+      "condition": "",
+      "constraint": "EF电           — 电力生产排放因子 , 以吨二氧化碳每兆瓦时[tCO2/(MW · h)]计 ;\nE输 出 热        — 输出的热力所产生的二氧化碳排放 , 以吨二氧化碳(tCO2)计 ;\nAD输 出 热  — 输出的热力量 ,单位为吉焦(GJ) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "EF电 — 电力生产排放因子 , 以吨二氧化碳每兆瓦时[tCO2/(MW"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34858,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

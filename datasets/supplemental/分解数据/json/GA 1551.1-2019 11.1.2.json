@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "11.1.2",
+  "entities": [
+    {
+      "name": "技防计时设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.2 应对安全防范系统内具有计时功能的设备进行校时 ,设备的时钟与北京时间误差应小于或等于10 $。",
+      "type": "语义分解",
+      "subject": "技防计时设备",
+      "action": "",
+      "operation": "校时至北京时间并限制误差",
+      "condition": "",
+      "constraint": "11.1.2 应对安全防范系统内具有计时功能的设备进行校时 ,设备的时钟与北京时间误差应小于或等于10 $。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "技防计时设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5574,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；误差单位原文为$，需核对"
+      ]
+    }
+  }
+}

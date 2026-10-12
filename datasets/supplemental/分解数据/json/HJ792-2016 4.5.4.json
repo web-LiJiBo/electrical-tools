@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "4.5.4",
+  "entities": [
+    {
+      "name": "验收技术报告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.4 编制验收技术报告阶段 汇总监测数据、检查及调查结果，分析评价得出结论，以验收技术报告书(表)形式反映建设项目竣工环境保护验收监测、调查的结果。作为建设项目竣工环境保护验收的技术依据。",
+      "type": "语义分解",
+      "subject": "验收技术报告",
+      "action": "",
+      "operation": "汇监测检查调查分析评价结论以报告表提供验收依据",
+      "condition": "",
+      "constraint": "4.5.4 编制验收技术报告阶段 汇总监测数据、检查及调查结果，分析评价得出结论，以验收技术报告书(表)形式反映建设项目竣工环境保护验收监测、调查的结果。作为建设项目竣工环境保护验收的技术依据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "验收技术报告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2698,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

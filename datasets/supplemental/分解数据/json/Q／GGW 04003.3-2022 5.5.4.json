@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第3部分: 动火作业",
+  "standard_id": "Q/GGW 04003.3-2022",
+  "version": "2022",
+  "chapter_path": "5.5.4",
+  "entities": [
+    {
+      "name": "动火浓度监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.4 对于用明火、角磨机修口和管道对口焊接等关键工序之前应进行可燃气体浓度检测,在动火作业过程中,应连续监测动火作业点周围可燃气体浓度,发现可燃气体浓度超限报警,须立即停止作业。填写检测记录,注明检测时间和结果。动火作业中断的,再次动火前应重新开展气体检测。",
+      "type": "语义分解",
+      "subject": "动火浓度监测",
+      "action": "",
+      "operation": "关键工序前检测作业连续监测超限立即停工记录时间结果中断再动火重新检测",
+      "condition": "",
+      "constraint": "5.5.4 对于用明火、角磨机修口和管道对口焊接等关键工序之前应进行可燃气体浓度检测,在动火作业过程中,应连续监测动火作业点周围可燃气体浓度,发现可燃气体浓度超限报警,须立即停止作业。填写检测记录,注明检测时间和结果。动火作业中断的,再次动火前应重新开展气体检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火浓度监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6113,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

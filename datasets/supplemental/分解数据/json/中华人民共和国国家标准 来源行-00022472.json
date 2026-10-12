@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022472",
+  "entities": [
+    {
+      "name": "孤立杆塔及拉线，高耸建筑物及其接地保护装置附近",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   6  孤立杆塔及拉线，高耸建筑物及其接地保护装置附近。\n3.15.2      光缆线路在中雷区以上的地区，以及有雷击历史的地段\n应采取防雷保护措施。",
+      "type": "语义分解",
+      "subject": "孤立杆塔及拉线，高耸建筑物及其接地保护装置附近",
+      "action": "",
+      "operation": "孤立杆塔及拉线，高耸建筑物及其接地保护装置附近。 3.15.2 光缆线路在中雷区以上的地区，以及有雷击历史的地段 应采取防雷保护措施。",
+      "condition": "",
+      "constraint": "   6  孤立杆塔及拉线，高耸建筑物及其接地保护装置附近。\n3.15.2      光缆线路在中雷区以上的地区，以及有雷击历史的地段\n应采取防雷保护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "孤立杆塔及拉线，高耸建筑物及其接地保护装置附近"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22472,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

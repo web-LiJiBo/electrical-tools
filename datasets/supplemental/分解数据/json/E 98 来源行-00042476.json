@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042476",
+  "entities": [
+    {
+      "name": "a) 大 气 腐 蚀 性 等 级 划 分 应 符 合 表 1 的 规 定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    大 气 腐 蚀 性 等 级 划 分 应 符 合 表  1 的 规 定 。   当 大 气 的 年 腐 蚀 速 率 难 以 获 取 时 , 应 按\n      GB/T 19292. 1有关规定划分大气腐蚀性等级 。",
+      "type": "语义分解",
+      "subject": "a) 大 气 腐 蚀 性 等 级 划 分 应 符 合 表 1 的 规 定",
+      "action": "",
+      "operation": "a) 大 气 腐 蚀 性 等 级 划 分 应 符 合 表 1 的 规 定 。 当 大 气 的 年 腐 蚀 速 率 难 以 获 取 时 , 应 按 GB/T 19292. 1有关规定划分大气腐蚀性等级 。",
+      "condition": "",
+      "constraint": "a)    大 气 腐 蚀 性 等 级 划 分 应 符 合 表  1 的 规 定 。   当 大 气 的 年 腐 蚀 速 率 难 以 获 取 时 , 应 按\n      GB/T 19292. 1有关规定划分大气腐蚀性等级 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 大 气 腐 蚀 性 等 级 划 分 应 符 合 表 1 的 规 定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42476,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

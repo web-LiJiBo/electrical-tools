@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040301",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   《化工建设项目环境保护工程设计标准》GB/T 50483—2019,经\n住房和城乡建设部2019年11月22日以第319号公告批准发布。\n   本标准是在《化工建设项目环境保护设计规范》GB 50483—\n2009的基础上修订而成的，上一版的主编单位是中国石油和化工\n勘察设计协会全国化工环境保护设计技术中心站，参编单位是中\n蓝连海设计院、中国天辰工程公司、上海化工设计院、中国华陆工\n程公司、安徽省化工设计院，主要起草人是孙效平、程新源、季惠\n良、俞守业、宋晓铭、陈金思。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   《化工建设项目环境保护工程设计标准》GB/T 50483—2019,经\n住房和城乡建设部2019年11月22日以第319号公告批准发布。\n   本标准是在《化工建设项目环境保护设计规范》GB 50483—\n2009的基础上修订而成的，上一版的主编单位是中国石油和化工\n勘察设计协会全国化工环境保护设计技术中心站，参编单位是中\n蓝连海设计院、中国天辰工程公司、上海化工设计院、中国华陆工\n程公司、安徽省化工设计院，主要起草人是孙效平、程新源、季惠\n良、俞守业、宋晓铭、陈金思。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40301,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

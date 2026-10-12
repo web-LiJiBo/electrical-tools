@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012507",
+  "entities": [
+    {
+      "name": "含有≥30%的SDH 误码块或至少一个缺陷的一秒时间间隔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "含有≥30%的SDH 误码块或至少一个缺陷的一秒时间间隔。SES 是ES 的子集。\n含有≥15%的OTN 误码块或至少一个缺陷的一秒时间间隔。\n\n注1:缺陷和相关性能判据列于附录A和附录B。",
+      "type": "语义分解",
+      "subject": "含有≥30%的SDH 误码块或至少一个缺陷的一秒时间间隔",
+      "action": "",
+      "operation": "含有≥30%的SDH 误码块或至少一个缺陷的一秒时间间隔。SES 是ES 的子集。 含有≥15%的OTN 误码块或至少一个缺陷的一秒时间间隔。 注1:缺陷和相关性能判据列于附录A和附录B。",
+      "condition": "",
+      "constraint": "含有≥30%的SDH 误码块或至少一个缺陷的一秒时间间隔。SES 是ES 的子集。\n含有≥15%的OTN 误码块或至少一个缺陷的一秒时间间隔。\n\n注1:缺陷和相关性能判据列于附录A和附录B。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含有≥30%的SDH 误码块或至少一个缺陷的一秒时间间隔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12507,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

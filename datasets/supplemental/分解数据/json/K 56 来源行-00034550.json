@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034550",
+  "entities": [
+    {
+      "name": "a) 完全在距烟囱或烟道壁 1 . 0 m 的测量管线所限定的内部区域内",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)  完全在距烟囱或烟道壁 1 . 0 m 的测量管线所限定的内部区域内 ; 或者\nb)  至少有 70%的通路在位于烟囱或烟道横截面内部的 50%区域 ; 或者",
+      "type": "语义分解",
+      "subject": "a) 完全在距烟囱或烟道壁 1 . 0 m 的测量管线所限定的内部区域内",
+      "action": "",
+      "operation": "a) 完全在距烟囱或烟道壁 1 . 0 m 的测量管线所限定的内部区域内 ; 或者 b) 至少有 70%的通路在位于烟囱或烟道横截面内部的 50%区域 ; 或者",
+      "condition": "",
+      "constraint": "a)  完全在距烟囱或烟道壁 1 . 0 m 的测量管线所限定的内部区域内 ; 或者\nb)  至少有 70%的通路在位于烟囱或烟道横截面内部的 50%区域 ; 或者",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 完全在距烟囱或烟道壁 1 . 0 m 的测量管线所限定的内部区域内"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34550,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

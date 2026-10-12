@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015856",
+  "entities": [
+    {
+      "name": "指参考点S 或R, 处光接口可容忍的最低水平的相位噪声，应满足无告警、失",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   指参考点S 或R, 处光接口可容忍的最低水平的相位噪声，应满足无告警、失锁和滑码，无误码，和\n\n功率代价小于1dB 等三个条件。\n7.1.2  测试配置",
+      "type": "语义分解",
+      "subject": "指参考点S 或R, 处光接口可容忍的最低水平的相位噪声，应满足无告警、失",
+      "action": "",
+      "operation": "指参考点S 或R, 处光接口可容忍的最低水平的相位噪声，应满足无告警、失锁和滑码，无误码，和 功率代价小于1dB 等三个条件。 7.1.2 测试配置",
+      "condition": "",
+      "constraint": "   指参考点S 或R, 处光接口可容忍的最低水平的相位噪声，应满足无告警、失锁和滑码，无误码，和\n\n功率代价小于1dB 等三个条件。\n7.1.2  测试配置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指参考点S 或R, 处光接口可容忍的最低水平的相位噪声，应满足无告警、失"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15856,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

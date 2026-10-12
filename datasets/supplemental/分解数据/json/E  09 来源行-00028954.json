@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028954",
+  "entities": [
+    {
+      "name": "b) 硫化氢气体的泄漏部位、蔓延方向、燃烧时间、形式、火势范围与阶段、对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  b)  硫化氢气体的泄漏部位、蔓延方向、燃烧时间、形式、火势范围与阶段、对毗邻威胁程度。\n  c)  生产装置、控制路线、建(构)筑物损坏程度。\n  d)  确定攻防路线、阵地。\n  e)  现场及周边污染情况。",
+      "type": "语义分解",
+      "subject": "b) 硫化氢气体的泄漏部位、蔓延方向、燃烧时间、形式、火势范围与阶段、对",
+      "action": "",
+      "operation": "b) 硫化氢气体的泄漏部位、蔓延方向、燃烧时间、形式、火势范围与阶段、对毗邻威胁程度。 c) 生产装置、控制路线、建(构)筑物损坏程度。 d) 确定攻防路线、阵地。 e) 现场及周边污染情况。",
+      "condition": "",
+      "constraint": "  b)  硫化氢气体的泄漏部位、蔓延方向、燃烧时间、形式、火势范围与阶段、对毗邻威胁程度。\n  c)  生产装置、控制路线、建(构)筑物损坏程度。\n  d)  确定攻防路线、阵地。\n  e)  现场及周边污染情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 硫化氢气体的泄漏部位、蔓延方向、燃烧时间、形式、火势范围与阶段、对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28954,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

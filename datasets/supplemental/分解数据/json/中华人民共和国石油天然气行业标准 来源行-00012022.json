@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012022",
+  "entities": [
+    {
+      "name": "应根据不同场所选用不同类型的扬声器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1    应根据不同场所选用不同类型的扬声器 。室外露天场所\n和压缩机厂房 、  泵房等高噪声场所宜选用号角式扬声器 ; 办公\n楼 、机柜间 、变配电室等室内场所宜选用音箱。",
+      "type": "语义分解",
+      "subject": "应根据不同场所选用不同类型的扬声器",
+      "action": "",
+      "operation": "应根据不同场所选用不同类型的扬声器 。室外露天场所 和压缩机厂房 、 泵房等高噪声场所宜选用号角式扬声器 ; 办公 楼 、机柜间 、变配电室等室内场所宜选用音箱。",
+      "condition": "",
+      "constraint": "      1    应根据不同场所选用不同类型的扬声器 。室外露天场所\n和压缩机厂房 、  泵房等高噪声场所宜选用号角式扬声器 ; 办公\n楼 、机柜间 、变配电室等室内场所宜选用音箱。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应根据不同场所选用不同类型的扬声器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12022,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

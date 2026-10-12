@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021288",
+  "entities": [
+    {
+      "name": "一 Pqx_CP ( 或 Pqs_CP) 处的数据是用户信息流，导出数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一 Pqx_CP ( 或 Pqs_CP)  处的数据是用户信息流，导出数据的定时作为CP 处的定时。按照\n    上述的适配功能进行数据适配，包括把信息流同步或映射至ITU-T G.707 规定的容器和添\n\n    加与净荷相关的功能。",
+      "type": "语义分解",
+      "subject": "一 Pqx_CP ( 或 Pqs_CP) 处的数据是用户信息流，导出数据",
+      "action": "",
+      "operation": "一 Pqx_CP ( 或 Pqs_CP) 处的数据是用户信息流，导出数据的定时作为CP 处的定时。按照 上述的适配功能进行数据适配，包括把信息流同步或映射至ITU-T G.707 规定的容器和添 加与净荷相关的功能。",
+      "condition": "",
+      "constraint": "一 Pqx_CP ( 或 Pqs_CP)  处的数据是用户信息流，导出数据的定时作为CP 处的定时。按照\n    上述的适配功能进行数据适配，包括把信息流同步或映射至ITU-T G.707 规定的容器和添\n\n    加与净荷相关的功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一 Pqx_CP ( 或 Pqs_CP) 处的数据是用户信息流，导出数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21288,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

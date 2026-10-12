@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.2.1.6",
+  "entities": [
+    {
+      "name": "混装制剂勘查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.6 混装制剂类生产工艺 a) 粉碎混合分装: 调查粉碎、混合、分装过程的废气产生及处理方式; 粉碎机械噪声防治措施。 b) 过滤配制: 调查生产废料、过滤过程产生的废滤渣、废滤液、废活性炭、废滤纸的产生及处理方式。 c) 纯水制备: 调查纯水制备产生的酸碱废水、洗涤废水的产生量及处理方式。 d) 灭菌消毒: 调查无菌室等级, 灭菌装置类型。 e) 制剂: 调查药物剂型及制剂工艺。 f) 包装: 调查废包装材料等的产生及处理方式。",
+      "type": "语义分解",
+      "subject": "混装制剂勘查",
+      "action": "",
+      "operation": "查粉碎过滤纯水灭菌剂型包装产废废气噪声处理设施",
+      "condition": "",
+      "constraint": "5.2.1.6 混装制剂类生产工艺 a) 粉碎混合分装: 调查粉碎、混合、分装过程的废气产生及处理方式; 粉碎机械噪声防治措施。 b) 过滤配制: 调查生产废料、过滤过程产生的废滤渣、废滤液、废活性炭、废滤纸的产生及处理方式。 c) 纯水制备: 调查纯水制备产生的酸碱废水、洗涤废水的产生量及处理方式。 d) 灭菌消毒: 调查无菌室等级, 灭菌装置类型。 e) 制剂: 调查药物剂型及制剂工艺。 f) 包装: 调查废包装材料等的产生及处理方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "混装制剂勘查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2719,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "5.4.1",
+  "entities": [
+    {
+      "name": "应根据调查与测试的结果，对直流干扰进行评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1   应根据调查与测试的结果，对直流干扰进行评价。\n5.4.2    管道直流干扰腐蚀评价应采用腐蚀速率评价；当无法获\n取腐蚀速率时，宜根据干扰类型按本规范规定的准则进行评价。\n5.4.3   腐蚀速率评价宜按照表5.4.3的指标进行，可接受的腐蚀\n速率指标应为“低”。",
+      "type": "语义分解",
+      "subject": "应根据调查与测试的结果，对直流干扰进行评价",
+      "action": "",
+      "operation": "应根据调查与测试的结果，对直流干扰进行评价。 5.4.2 管道直流干扰腐蚀评价应采用腐蚀速率评价；当无法获 取腐蚀速率时，宜根据干扰类型按本规范规定的准则进行评价。 5.4.3 腐蚀速率评价宜按照表5.4.3的指标进行，可接受的腐蚀 速率指标应为“低”。",
+      "condition": "",
+      "constraint": "5.4.1   应根据调查与测试的结果，对直流干扰进行评价。\n5.4.2    管道直流干扰腐蚀评价应采用腐蚀速率评价；当无法获\n取腐蚀速率时，宜根据干扰类型按本规范规定的准则进行评价。\n5.4.3   腐蚀速率评价宜按照表5.4.3的指标进行，可接受的腐蚀\n速率指标应为“低”。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应根据调查与测试的结果，对直流干扰进行评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47530,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

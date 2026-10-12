@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "管道设计前",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1 管道设计之前应进行建设项目可行性研究。应委托安全评价机构对建设项目进行安全预评价, 管道安全设施设计应按有关规定进行审查。",
+      "type": "语义分解",
+      "subject": "管道设计前",
+      "action": "",
+      "operation": "可研委托安全预评价安全设施设计审查",
+      "condition": "",
+      "constraint": "5.1 管道设计之前应进行建设项目可行性研究。应委托安全评价机构对建设项目进行安全预评价, 管道安全设施设计应按有关规定进行审查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道设计前"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7343,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

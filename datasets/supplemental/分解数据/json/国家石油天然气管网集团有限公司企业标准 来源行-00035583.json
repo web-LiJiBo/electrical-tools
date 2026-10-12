@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035583",
+  "entities": [
+    {
+      "name": "确定核查任务后，应选择具备能力的核查组长和核查员组成核查组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   确定核查任务后，应选择具备能力的核查组长和核查员组成核查组。核查组的组成应根据核查员的\n专业领域、技术能力与经验、规模及排放设施的数量等确定，核查组至少由2名成员组成，其中1名\n为核查组长、1 名为核查员。",
+      "type": "语义分解",
+      "subject": "确定核查任务后，应选择具备能力的核查组长和核查员组成核查组",
+      "action": "",
+      "operation": "确定核查任务后，应选择具备能力的核查组长和核查员组成核查组。核查组的组成应根据核查员的 专业领域、技术能力与经验、规模及排放设施的数量等确定，核查组至少由2名成员组成，其中1名 为核查组长、1 名为核查员。",
+      "condition": "",
+      "constraint": "   确定核查任务后，应选择具备能力的核查组长和核查员组成核查组。核查组的组成应根据核查员的\n专业领域、技术能力与经验、规模及排放设施的数量等确定，核查组至少由2名成员组成，其中1名\n为核查组长、1 名为核查员。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "确定核查任务后，应选择具备能力的核查组长和核查员组成核查组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35583,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

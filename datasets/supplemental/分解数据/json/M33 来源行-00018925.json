@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018925",
+  "entities": [
+    {
+      "name": "● 光功率在ITU-T G.957 或ITU-T G.691规定的范围内",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "●  光功率在ITU-T G.957 或ITU-T G.691规定的范围内；\n●  施加于输入信号的抖动调制如 YD/T 1299—2016规定；",
+      "type": "语义分解",
+      "subject": "● 光功率在ITU-T G.957 或ITU-T G.691规定的范围内",
+      "action": "",
+      "operation": "● 光功率在ITU-T G.957 或ITU-T G.691规定的范围内； ● 施加于输入信号的抖动调制如 YD/T 1299—2016规定",
+      "condition": "",
+      "constraint": "●  光功率在ITU-T G.957 或ITU-T G.691规定的范围内；\n●  施加于输入信号的抖动调制如 YD/T 1299—2016规定；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "● 光功率在ITU-T G.957 或ITU-T G.691规定的范围内"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18925,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

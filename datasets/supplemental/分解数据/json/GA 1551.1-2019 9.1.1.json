@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "9.1.1",
+  "entities": [
+    {
+      "name": "第9章巡逻周期",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1 巡逻周期间隔应小于或等于 4he。",
+      "type": "语义分解",
+      "subject": "第9章巡逻周期",
+      "action": "",
+      "operation": "间隔不超过所列上限",
+      "condition": "",
+      "constraint": "9.1.1 巡逻周期间隔应小于或等于 4he。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第9章巡逻周期"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5549,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；4he单位异常需原件核查"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019044",
+  "entities": [
+    {
+      "name": "c) 处理过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " c)    处理过程：DCC 数据连续放置于RSOH的 D1～D3 字节位置。这些字节分配给数据通信，使\n    用一条192kbit/s 面向消息的通路用于用于告警、维护、控制、监测、管理和RSn_TT功能之\n    间所需的其他通信。该通路可用于内部产生的、外部产生的以及制造商的特定信息，采用IT\n        U-T G.784规定的协议框架。附录C 给出了DCC应用的一种实例。",
+      "type": "语义分解",
+      "subject": "c) 处理过程",
+      "action": "",
+      "operation": "c) 处理过程：DCC 数据连续放置于RSOH的 D1～D3 字节位置。这些字节分配给数据通信，使 用一条192kbit/s 面向消息的通路用于用于告警、维护、控制、监测、管理和RSn_TT功能之 间所需的其他通信。该通路可用于内部产生的、外部产生的以及制造商的特定信息，采用IT U-T G.784规定的协议框架。附录C 给出了DCC应用的一种实例。",
+      "condition": "",
+      "constraint": " c)    处理过程：DCC 数据连续放置于RSOH的 D1～D3 字节位置。这些字节分配给数据通信，使\n    用一条192kbit/s 面向消息的通路用于用于告警、维护、控制、监测、管理和RSn_TT功能之\n    间所需的其他通信。该通路可用于内部产生的、外部产生的以及制造商的特定信息，采用IT\n        U-T G.784规定的协议框架。附录C 给出了DCC应用的一种实例。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 处理过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19044,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

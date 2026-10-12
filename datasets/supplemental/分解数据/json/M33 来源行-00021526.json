@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021526",
+  "entities": [
+    {
+      "name": "该功能起Sm 层到SmD 子层适配源和宿的作用，适用于ITU-T G70",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   该功能起Sm 层到SmD 子层适配源和宿的作用，适用于ITU-T G707-2006 附录 E 所述 VC-m串接\n\n连接监测规约选项2的网络。",
+      "type": "语义分解",
+      "subject": "该功能起Sm 层到SmD 子层适配源和宿的作用，适用于ITU-T G70",
+      "action": "",
+      "operation": "该功能起Sm 层到SmD 子层适配源和宿的作用，适用于ITU-T G707-2006 附录 E 所述 VC-m串接 连接监测规约选项2的网络。",
+      "condition": "",
+      "constraint": "   该功能起Sm 层到SmD 子层适配源和宿的作用，适用于ITU-T G707-2006 附录 E 所述 VC-m串接\n\n连接监测规约选项2的网络。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "该功能起Sm 层到SmD 子层适配源和宿的作用，适用于ITU-T G70"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21526,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00022037",
+  "entities": [
+    {
+      "name": "本附录详细描述STM-64(A 型)中继器假想参考模型和抖动分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   本附录详细描述STM-64(A  型)中继器假想参考模型和抖动分析。该分析表示的抖动产生和转移\n函数要求以及与STM-64输出抖动HRM ( 即网络接口抖动)在ITU-T G.8251-2001表1中规范。\n   抖动累积分析实际也符合 OTN   OTU23R  中继器链要求，仿真模型和抖动累积分析是 ITU-T\nG.8251-2001附录IV 扩充文档。OTU23R 中继器链结果可用于STM-64中继链因为如下原因：",
+      "type": "语义分解",
+      "subject": "本附录详细描述STM-64(A 型)中继器假想参考模型和抖动分析",
+      "action": "",
+      "operation": "本附录详细描述STM-64(A 型)中继器假想参考模型和抖动分析。该分析表示的抖动产生和转移 函数要求以及与STM-64输出抖动HRM ( 即网络接口抖动)在ITU-T G.8251-2001表1中规范。 抖动累积分析实际也符合 OTN OTU23R 中继器链要求，仿真模型和抖动累积分析是 ITU-T G.8251-2001附录IV 扩充文档。OTU23R 中继器链结果可用于STM-64中继链因为如下原因",
+      "condition": "",
+      "constraint": "   本附录详细描述STM-64(A  型)中继器假想参考模型和抖动分析。该分析表示的抖动产生和转移\n函数要求以及与STM-64输出抖动HRM ( 即网络接口抖动)在ITU-T G.8251-2001表1中规范。\n   抖动累积分析实际也符合 OTN   OTU23R  中继器链要求，仿真模型和抖动累积分析是 ITU-T\nG.8251-2001附录IV 扩充文档。OTU23R 中继器链结果可用于STM-64中继链因为如下原因：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本附录详细描述STM-64(A 型)中继器假想参考模型和抖动分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22037,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.7.2",
+  "entities": [
+    {
+      "name": "管道抢修物资",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7.2 应合理储备管道抢修物资。管材储备数量不应少于同规格管道中最大一个跨越段长度;对管道的阀门,法兰,堵漏工(卡)具等物资应视具体情况应进行相应的储备。",
+      "type": "语义分解",
+      "subject": "管道抢修物资",
+      "action": "",
+      "operation": "管材按最大跨越长度其他物资按需储备",
+      "condition": "",
+      "constraint": "7.7.2 应合理储备管道抢修物资。管材储备数量不应少于同规格管道中最大一个跨越段长度;对管道的阀门,法兰,堵漏工(卡)具等物资应视具体情况应进行相应的储备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道抢修物资"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4867,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

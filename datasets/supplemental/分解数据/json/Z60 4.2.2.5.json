@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.2.2.5",
+  "entities": [
+    {
+      "name": "穿盘套筒浮盘",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.5    支柱、导向装置等储罐附件穿过浮盘时，其套筒底端应插入油品中并采取密封措施。\n4.2.2.6    除储罐排空作业外，浮盘应始终漂浮于油品的表面。",
+      "type": "语义分解",
+      "subject": "穿盘套筒浮盘",
+      "action": "",
+      "operation": "套筒浸油密封除排空外盘始终浮油面",
+      "condition": "",
+      "constraint": "4.2.2.5    支柱、导向装置等储罐附件穿过浮盘时，其套筒底端应插入油品中并采取密封措施。\n4.2.2.6    除储罐排空作业外，浮盘应始终漂浮于油品的表面。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "穿盘套筒浮盘"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32735,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

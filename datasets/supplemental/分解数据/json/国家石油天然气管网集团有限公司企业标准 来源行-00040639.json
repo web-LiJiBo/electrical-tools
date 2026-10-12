@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040639",
+  "entities": [
+    {
+      "name": "生态脆弱区是指抗外界干扰能力低、自身稳定性差的生态环境区域",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    生态脆弱区是指抗外界干扰能力低、自身稳定性差的生态环境区域。其显著的特点是对外力作用的\n承受力差，生态环境遭破坏后自身不易恢复。本文件中的生态脆弱区包括干旱荒漠区、风沙区、黄土高\n原区、喀斯特地区、高寒区。",
+      "type": "语义分解",
+      "subject": "生态脆弱区是指抗外界干扰能力低、自身稳定性差的生态环境区域",
+      "action": "",
+      "operation": "生态脆弱区是指抗外界干扰能力低、自身稳定性差的生态环境区域。其显著的特点是对外力作用的 承受力差，生态环境遭破坏后自身不易恢复。本文件中的生态脆弱区包括干旱荒漠区、风沙区、黄土高 原区、喀斯特地区、高寒区。",
+      "condition": "",
+      "constraint": "    生态脆弱区是指抗外界干扰能力低、自身稳定性差的生态环境区域。其显著的特点是对外力作用的\n承受力差，生态环境遭破坏后自身不易恢复。本文件中的生态脆弱区包括干旱荒漠区、风沙区、黄土高\n原区、喀斯特地区、高寒区。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态脆弱区是指抗外界干扰能力低、自身稳定性差的生态环境区域"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40639,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

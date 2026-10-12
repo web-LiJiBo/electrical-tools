@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041144",
+  "entities": [
+    {
+      "name": "进行完井和修井作业时，应充分利用油罐或原有泥浆池储存废液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   进行完井和修井作业时，应充分利用油罐或原有泥浆池储存废液。盐水完井液和其他潜在污染物\n应储存在防渗废液池、钢槽或储罐内。如果使用新的废液池，在修建、使用过程中以及废弃后，应避\n免对土地、地表水、地下水造成污染。储存盐水或油基废液应使用油罐和防渗废液池，以保护土壤和\n地下水免受污染。",
+      "type": "语义分解",
+      "subject": "进行完井和修井作业时，应充分利用油罐或原有泥浆池储存废液",
+      "action": "",
+      "operation": "进行完井和修井作业时，应充分利用油罐或原有泥浆池储存废液。盐水完井液和其他潜在污染物 应储存在防渗废液池、钢槽或储罐内。如果使用新的废液池，在修建、使用过程中以及废弃后，应避 免对土地、地表水、地下水造成污染。储存盐水或油基废液应使用油罐和防渗废液池，以保护土壤和 地下水免受污染。",
+      "condition": "",
+      "constraint": "   进行完井和修井作业时，应充分利用油罐或原有泥浆池储存废液。盐水完井液和其他潜在污染物\n应储存在防渗废液池、钢槽或储罐内。如果使用新的废液池，在修建、使用过程中以及废弃后，应避\n免对土地、地表水、地下水造成污染。储存盐水或油基废液应使用油罐和防渗废液池，以保护土壤和\n地下水免受污染。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "进行完井和修井作业时，应充分利用油罐或原有泥浆池储存废液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41144,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

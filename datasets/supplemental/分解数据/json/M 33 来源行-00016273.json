@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016273",
+  "entities": [
+    {
+      "name": "OCh 1+1保护是采用OCh 信号并发选收的原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OCh 1+1保护是采用OCh 信号并发选收的原理。保护倒换动作只发生在宿端，在源端进行永久桥接。\n一般情况下，OCh  1+1保护工作于不可返回操作类型，但同时支持可返回操作，并且允许用户进行配置。\n10.1.1.1.2   测试配置",
+      "type": "语义分解",
+      "subject": "OCh 1+1保护是采用OCh 信号并发选收的原理",
+      "action": "",
+      "operation": "OCh 1+1保护是采用OCh 信号并发选收的原理。保护倒换动作只发生在宿端，在源端进行永久桥接。 一般情况下，OCh 1+1保护工作于不可返回操作类型，但同时支持可返回操作，并且允许用户进行配置。 10.1.1.1.2 测试配置",
+      "condition": "",
+      "constraint": "      OCh 1+1保护是采用OCh 信号并发选收的原理。保护倒换动作只发生在宿端，在源端进行永久桥接。\n一般情况下，OCh  1+1保护工作于不可返回操作类型，但同时支持可返回操作，并且允许用户进行配置。\n10.1.1.1.2   测试配置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OCh 1+1保护是采用OCh 信号并发选收的原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16273,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

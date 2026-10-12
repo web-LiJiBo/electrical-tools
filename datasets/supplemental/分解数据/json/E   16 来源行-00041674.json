@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "来源行-00041674",
+  "entities": [
+    {
+      "name": "a 监视环境处于低环境照度、 尘雾、 雨雪、 逆光等光照度变化范围大等情",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a   监视环境处于低环境照度、  尘雾、  雨雪、  逆光等光照度变化范围大等情况时,  采集的视频应\n     能分清目标的外观特征、  人员的体貌特征、  机动车号牌等信息,  采集视频不宜有晕光。\nb   监视目标的照度变化范围大或必须逆光摄像时,  应采用宽动态摄像机,  必要时采取补光措施。\n     视频采集设备的灵敏度和动态范围应满足现场图像采集的要求。",
+      "type": "语义分解",
+      "subject": "a 监视环境处于低环境照度、 尘雾、 雨雪、 逆光等光照度变化范围大等情",
+      "action": "",
+      "operation": "a 监视环境处于低环境照度、 尘雾、 雨雪、 逆光等光照度变化范围大等情况时, 采集的视频应 能分清目标的外观特征、 人员的体貌特征、 机动车号牌等信息, 采集视频不宜有晕光。 b 监视目标的照度变化范围大或必须逆光摄像时, 应采用宽动态摄像机, 必要时采取补光措施。 视频采集设备的灵敏度和动态范围应满足现场图像采集的要求。",
+      "condition": "",
+      "constraint": "a   监视环境处于低环境照度、  尘雾、  雨雪、  逆光等光照度变化范围大等情况时,  采集的视频应\n     能分清目标的外观特征、  人员的体貌特征、  机动车号牌等信息,  采集视频不宜有晕光。\nb   监视目标的照度变化范围大或必须逆光摄像时,  应采用宽动态摄像机,  必要时采取补光措施。\n     视频采集设备的灵敏度和动态范围应满足现场图像采集的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a 监视环境处于低环境照度、 尘雾、 雨雪、 逆光等光照度变化范围大等情"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41674,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

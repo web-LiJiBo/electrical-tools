@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040974",
+  "entities": [
+    {
+      "name": "[6]冯雨峰，孔繁德 .生态恢复与生态工程技术 [ M]. 北京",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "[6]冯雨峰，孔繁德 .生态恢复与生态工程技术 [ M].     北京：中国环境科学出版社，2008\n[7]  李洪远，莫训强 .生态恢复的原理与实践(第二版) [M].     北京：化学工业出版社，2016",
+      "type": "语义分解",
+      "subject": "[6]冯雨峰，孔繁德 .生态恢复与生态工程技术 [ M]. 北京",
+      "action": "",
+      "operation": "[6]冯雨峰，孔繁德 .生态恢复与生态工程技术 [ M]. 北京：中国环境科学出版社，2008 [7] 李洪远，莫训强 .生态恢复的原理与实践(第二版) [M]. 北京：化学工业出版社，2016",
+      "condition": "",
+      "constraint": "[6]冯雨峰，孔繁德 .生态恢复与生态工程技术 [ M].     北京：中国环境科学出版社，2008\n[7]  李洪远，莫训强 .生态恢复的原理与实践(第二版) [M].     北京：化学工业出版社，2016",
+      "constraint_role": "informational",
+      "related_entities": [
+        "[6]冯雨峰，孔繁德 .生态恢复与生态工程技术 [ M]. 北京"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40974,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

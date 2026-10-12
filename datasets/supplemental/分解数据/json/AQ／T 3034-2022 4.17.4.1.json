@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.17.4.1",
+  "entities": [
+    {
+      "name": "企业调查组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.17.4.1 企业应对事故事件(包括政府委托企业调查的安金事故)及时成立调查组进行调查 调查组 应由具备相关专业知识的人员和有调查及分析事故事件经验的大员组成 .事件涉及承包商时应包括承 包商员工 必要时可邀请外部专家参与调查以保证事故事件调查的客观公正性",
+      "type": "语义分解",
+      "subject": "企业调查组",
+      "action": "",
+      "operation": "及时组织专业有经验人员涉及承包商含其员工必要外部专家保公正",
+      "condition": "",
+      "constraint": "4.17.4.1 企业应对事故事件(包括政府委托企业调查的安金事故)及时成立调查组进行调查 调查组 应由具备相关专业知识的人员和有调查及分析事故事件经验的大员组成 .事件涉及承包商时应包括承 包商员工 必要时可邀请外部专家参与调查以保证事故事件调查的客观公正性",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业调查组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5314,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

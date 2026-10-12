@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "7.4.2",
+  "entities": [
+    {
+      "name": "监督区域分中心应当与被监督单位建立工作沟通协调 机制，对发现的安全环保问",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     7.4.2  监督区域分中心应当与被监督单位建立工作沟通协调\n\n机制，对发现的安全环保问题和隐患，及时通知被监督单位，并督\n\n促限期整改。",
+      "type": "语义分解",
+      "subject": "监督区域分中心应当与被监督单位建立工作沟通协调 机制，对发现的安全环保问",
+      "action": "",
+      "operation": "监督区域分中心应当与被监督单位建立工作沟通协调 机制，对发现的安全环保问题和隐患，及时通知被监督单位，并督 促限期整改。",
+      "condition": "",
+      "constraint": "     7.4.2  监督区域分中心应当与被监督单位建立工作沟通协调\n\n机制，对发现的安全环保问题和隐患，及时通知被监督单位，并督\n\n促限期整改。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监督区域分中心应当与被监督单位建立工作沟通协调 机制，对发现的安全环保问"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29558,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

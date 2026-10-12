@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041272",
+  "entities": [
+    {
+      "name": "a) 生产设备应按一定规模建造和设计，保证适当的安全性和实用性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  a)  生产设备应按一定规模建造和设计，保证适当的安全性和实用性。确定设备规模时，应考虑\n   将来发展和勘探规划。可能时，根据现在和将来生产的处理需要确定装置的规模，以最大限\n   度地减少设备的改型和用途的不匹配。为了提高安全性能和保护环境，设备还应设计采用适\n   当的溢出控制设备，例如高/低液位指示器、高/低压力指示器。",
+      "type": "语义分解",
+      "subject": "a) 生产设备应按一定规模建造和设计，保证适当的安全性和实用性",
+      "action": "",
+      "operation": "a) 生产设备应按一定规模建造和设计，保证适当的安全性和实用性。确定设备规模时，应考虑 将来发展和勘探规划。可能时，根据现在和将来生产的处理需要确定装置的规模，以最大限 度地减少设备的改型和用途的不匹配。为了提高安全性能和保护环境，设备还应设计采用适 当的溢出控制设备，例如高/低液位指示器、高/低压力指示器。",
+      "condition": "",
+      "constraint": "  a)  生产设备应按一定规模建造和设计，保证适当的安全性和实用性。确定设备规模时，应考虑\n   将来发展和勘探规划。可能时，根据现在和将来生产的处理需要确定装置的规模，以最大限\n   度地减少设备的改型和用途的不匹配。为了提高安全性能和保护环境，设备还应设计采用适\n   当的溢出控制设备，例如高/低液位指示器、高/低压力指示器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 生产设备应按一定规模建造和设计，保证适当的安全性和实用性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41272,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

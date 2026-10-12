@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "有保温层的储罐应首先检测保温层，再检测外防腐层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2   有保温层的储罐应首先检测保温层，再检测外防腐层。\n6.3.3   保温层检测宜包括外观、材质和结构、厚度、保温层吸\n水情况及水膜的pH 值。",
+      "type": "语义分解",
+      "subject": "有保温层的储罐应首先检测保温层，再检测外防腐层",
+      "action": "",
+      "operation": "有保温层的储罐应首先检测保温层，再检测外防腐层。 6.3.3 保温层检测宜包括外观、材质和结构、厚度、保温层吸 水情况及水膜的pH 值。",
+      "condition": "",
+      "constraint": "6.3.2   有保温层的储罐应首先检测保温层，再检测外防腐层。\n6.3.3   保温层检测宜包括外观、材质和结构、厚度、保温层吸\n水情况及水膜的pH 值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "有保温层的储罐应首先检测保温层，再检测外防腐层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46746,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050138",
+  "entities": [
+    {
+      "name": "《涂覆涂料前钢材表面处理 表面清洁度的目视评 定 第1部分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   16《涂覆涂料前钢材表面处理  表面清洁度的目视评\n定 第1部分：未涂覆过的钢材表面和全面清除原有涂层后的\n钢材表面的锈蚀等级和处理等级》GB/T 8923.1",
+      "type": "语义分解",
+      "subject": "《涂覆涂料前钢材表面处理 表面清洁度的目视评 定 第1部分",
+      "action": "",
+      "operation": "《涂覆涂料前钢材表面处理 表面清洁度的目视评 定 第1部分：未涂覆过的钢材表面和全面清除原有涂层后的 钢材表面的锈蚀等级和处理等级》GB/T 8923.1",
+      "condition": "",
+      "constraint": "   16《涂覆涂料前钢材表面处理  表面清洁度的目视评\n定 第1部分：未涂覆过的钢材表面和全面清除原有涂层后的\n钢材表面的锈蚀等级和处理等级》GB/T 8923.1",
+      "constraint_role": "informational",
+      "related_entities": [
+        "《涂覆涂料前钢材表面处理 表面清洁度的目视评 定 第1部分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50138,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

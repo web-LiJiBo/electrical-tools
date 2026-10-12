@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.2.1",
+  "entities": [
+    {
+      "name": "运行团队制度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.1 系统运行单位应组建系统运行工作团队，制定日常管理、值机、现场处置、例会、安全保密、培训和考核等制度，统筹协调与系统运行有关的机构、人员等各项资源。",
+      "type": "语义分解",
+      "subject": "运行团队制度",
+      "action": "",
+      "operation": "组团队管理值机处置例会保密培训考核协调资源",
+      "condition": "",
+      "constraint": "11.2.1 系统运行单位应组建系统运行工作团队，制定日常管理、值机、现场处置、例会、安全保密、培训和考核等制度，统筹协调与系统运行有关的机构、人员等各项资源。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "运行团队制度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7203,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

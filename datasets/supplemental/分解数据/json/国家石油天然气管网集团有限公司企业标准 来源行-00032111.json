@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00032111",
+  "entities": [
+    {
+      "name": "b) 输油气站场运行操作、维护、检修、施工已有规程的可不进行作业前安全分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)     输油气站场运行操作、维护、检修、施工已有规程的可不进行作业前安全分析，没有规程涵盖\n   或现有的规程不能有效控制风险时，应针对该项作业进行作业前安全分析；",
+      "type": "语义分解",
+      "subject": "b) 输油气站场运行操作、维护、检修、施工已有规程的可不进行作业前安全分",
+      "action": "",
+      "operation": "b) 输油气站场运行操作、维护、检修、施工已有规程的可不进行作业前安全分析，没有规程涵盖 或现有的规程不能有效控制风险时，应针对该项作业进行作业前安全分析",
+      "condition": "",
+      "constraint": "b)     输油气站场运行操作、维护、检修、施工已有规程的可不进行作业前安全分析，没有规程涵盖\n   或现有的规程不能有效控制风险时，应针对该项作业进行作业前安全分析；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 输油气站场运行操作、维护、检修、施工已有规程的可不进行作业前安全分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32111,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

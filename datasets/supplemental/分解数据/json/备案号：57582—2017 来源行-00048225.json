@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048225",
+  "entities": [
+    {
+      "name": "管道在建设期未采集管道中心线或采集的管道中心线不 准确，宜在实施管道内检",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4   管道在建设期未采集管道中心线或采集的管道中心线不\n准确，宜在实施管道内检测时开展内检测惯性测绘后，计算得\n出管道中心线，或者采用地面定位后直接测量的方法测量管道\n中心线。管道中心线的位置准确度应达到±1.0m 以内。",
+      "type": "语义分解",
+      "subject": "管道在建设期未采集管道中心线或采集的管道中心线不 准确，宜在实施管道内检",
+      "action": "",
+      "operation": "管道在建设期未采集管道中心线或采集的管道中心线不 准确，宜在实施管道内检测时开展内检测惯性测绘后，计算得 出管道中心线，或者采用地面定位后直接测量的方法测量管道 中心线。管道中心线的位置准确度应达到±1.0m 以内。",
+      "condition": "",
+      "constraint": "5.2.4   管道在建设期未采集管道中心线或采集的管道中心线不\n准确，宜在实施管道内检测时开展内检测惯性测绘后，计算得\n出管道中心线，或者采用地面定位后直接测量的方法测量管道\n中心线。管道中心线的位置准确度应达到±1.0m 以内。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道在建设期未采集管道中心线或采集的管道中心线不 准确，宜在实施管道内检"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48225,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046385",
+  "entities": [
+    {
+      "name": "强调ICDA 检测与评价工作应由工艺、腐蚀、检测等专 业人员共同完成，执",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.4  强调ICDA 检测与评价工作应由工艺、腐蚀、检测等专\n业人员共同完成，执行本规范的人员需要具备一定物理学、工\n程学和数学理论知识或相应的实践经验，具有管道腐蚀控制或\n风险评价专业知识，或在这些人的指导下进行。检测评价过程\n中的流态识别、分析及模型计算等需由工艺专业人员进行较为\n有利，有助于保证检测和评价工作的准确性和可靠性。",
+      "type": "语义分解",
+      "subject": "强调ICDA 检测与评价工作应由工艺、腐蚀、检测等专 业人员共同完成，执",
+      "action": "",
+      "operation": "强调ICDA 检测与评价工作应由工艺、腐蚀、检测等专 业人员共同完成，执行本规范的人员需要具备一定物理学、工 程学和数学理论知识或相应的实践经验，具有管道腐蚀控制或 风险评价专业知识，或在这些人的指导下进行。检测评价过程 中的流态识别、分析及模型计算等需由工艺专业人员进行较为 有利，有助于保证检测和评价工作的准确性和可靠性。",
+      "condition": "",
+      "constraint": "3.0.4  强调ICDA 检测与评价工作应由工艺、腐蚀、检测等专\n业人员共同完成，执行本规范的人员需要具备一定物理学、工\n程学和数学理论知识或相应的实践经验，具有管道腐蚀控制或\n风险评价专业知识，或在这些人的指导下进行。检测评价过程\n中的流态识别、分析及模型计算等需由工艺专业人员进行较为\n有利，有助于保证检测和评价工作的准确性和可靠性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "强调ICDA 检测与评价工作应由工艺、腐蚀、检测等专 业人员共同完成，执"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46385,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

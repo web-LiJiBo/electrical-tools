@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.1.5.2.2",
+  "entities": [
+    {
+      "name": "探头校气调整",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5.2.2          仪器校准时，向采样探头通入参照的校准气体，按标准值来调节仪器读数。若仪器无法调\n整到合适的浓度，表明仪器有故障，在使用前必须排除。",
+      "type": "语义分解",
+      "subject": "探头校气调整",
+      "action": "",
+      "operation": "依标气调整无法达到浓度则使用前排故",
+      "condition": "",
+      "constraint": "6.1.5.2.2          仪器校准时，向采样探头通入参照的校准气体，按标准值来调节仪器读数。若仪器无法调\n整到合适的浓度，表明仪器有故障，在使用前必须排除。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "探头校气调整"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36577,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037282",
+  "entities": [
+    {
+      "name": "企业购入和输出热力数据，应以结算热力表或计量表为准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    企业购入和输出热力数据，应以结算热力表或计量表为准。如果没有，可采用供应商提供的供热量\n发票或者结算单等结算凭证上的数据。非热量单位可分别按如下方法换算为热量单位：",
+      "type": "语义分解",
+      "subject": "企业购入和输出热力数据，应以结算热力表或计量表为准",
+      "action": "",
+      "operation": "企业购入和输出热力数据，应以结算热力表或计量表为准。如果没有，可采用供应商提供的供热量 发票或者结算单等结算凭证上的数据。非热量单位可分别按如下方法换算为热量单位",
+      "condition": "",
+      "constraint": "    企业购入和输出热力数据，应以结算热力表或计量表为准。如果没有，可采用供应商提供的供热量\n发票或者结算单等结算凭证上的数据。非热量单位可分别按如下方法换算为热量单位：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业购入和输出热力数据，应以结算热力表或计量表为准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37282,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

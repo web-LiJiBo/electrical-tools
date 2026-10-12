@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013335",
+  "entities": [
+    {
+      "name": "ITU-T G.873.1(2017)光传送网(OTN)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "        ITU-T G.873.1(2017)光传送网(OTN): 线性保护(Optical Transport Network(OTN):Linear protection)\n        ITU-TG.874   光传送网( OTN)网元的管理( Management aspects of optical transport network elements)\n        ITU-T G.959.1  光传送网( OTN)  物理层接口( Optical transport network physical layer interfaces)\n        ITU-T G.975   高比特率DWDM 海底光缆系统前向纠错 ( Forward error correction for high bit-rate\n\nDWDM submarine systems)",
+      "type": "语义分解",
+      "subject": "ITU-T G.873.1(2017)光传送网(OTN)",
+      "action": "",
+      "operation": "ITU-T G.873.1(2017)光传送网(OTN): 线性保护(Optical Transport Network(OTN):Linear protection) ITU-TG.874 光传送网( OTN)网元的管理( Management aspects of optical transport network elements) ITU-T G.959.1 光传送网( OTN) 物理层接口( Optical transport network physical la",
+      "condition": "",
+      "constraint": "        ITU-T G.873.1(2017)光传送网(OTN): 线性保护(Optical Transport Network(OTN):Linear protection)\n        ITU-TG.874   光传送网( OTN)网元的管理( Management aspects of optical transport network elements)\n        ITU-T G.959.1  光传送网( OTN)  物理层接口( Optical transport network physical layer interfaces)\n        ITU-T G.975   高比特率DWDM 海底光缆系统前向纠错 ( Forward error correction for high bit-rate\n\nDWDM submarine systems)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ITU-T G.873.1(2017)光传送网(OTN)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13335,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016989",
+  "entities": [
+    {
+      "name": "c) 通过网管配置NE1和NE3 的GE 业务适配选择相同的方式，观察N",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      c) 通过网管配置NE1和NE3 的GE 业务适配选择相同的方式，观察NE1 和 NE3 接收到PT 类型是\n\n否一致。",
+      "type": "语义分解",
+      "subject": "c) 通过网管配置NE1和NE3 的GE 业务适配选择相同的方式，观察N",
+      "action": "",
+      "operation": "c) 通过网管配置NE1和NE3 的GE 业务适配选择相同的方式，观察NE1 和 NE3 接收到PT 类型是 否一致。",
+      "condition": "",
+      "constraint": "      c) 通过网管配置NE1和NE3 的GE 业务适配选择相同的方式，观察NE1 和 NE3 接收到PT 类型是\n\n否一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 通过网管配置NE1和NE3 的GE 业务适配选择相同的方式，观察N"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16989,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

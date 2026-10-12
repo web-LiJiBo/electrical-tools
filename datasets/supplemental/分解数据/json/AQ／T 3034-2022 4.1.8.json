@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.1.8",
+  "entities": [
+    {
+      "name": "主要负责人重大危险源管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.8 企业主要负责人应重视重大危险源安全风险管控 ,及时消除隐患 ,加大风险管控措施投入力度 完善监管机制 ,落实管理责任。",
+      "type": "语义分解",
+      "subject": "主要负责人重大危险源管理",
+      "action": "",
+      "operation": "消隐患增投入完善监管落实责任",
+      "condition": "",
+      "constraint": "4.1.8 企业主要负责人应重视重大危险源安全风险管控 ,及时消除隐患 ,加大风险管控措施投入力度 完善监管机制 ,落实管理责任。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主要负责人重大危险源管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5049,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

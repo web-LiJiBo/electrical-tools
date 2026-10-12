@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.7.3.4",
+  "entities": [
+    {
+      "name": "压洗井",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3.4 压,洗井作业应符合下列要求: 应保持压井液性能稳定,清洁均匀,计量准确,密度合适; 压井前对管线进行试压,试压值为工作压力的1.5倍; 按规程循环压井 ,进出口密度相差不超过2%,不喷不漏;停泵后按设计技术标准观察30min,井口无溢流无气泡为压井合格; 洗井后应做到无死油,蜡块等其他杂物。",
+      "type": "语义分解",
+      "subject": "压洗井",
+      "action": "",
+      "operation": "液性能密度均匀准确管线试压1.5倍进出口密度差不超2%停泵观测30分钟无溢气洗净杂物",
+      "condition": "",
+      "constraint": "6.7.3.4 压,洗井作业应符合下列要求: 应保持压井液性能稳定,清洁均匀,计量准确,密度合适; 压井前对管线进行试压,试压值为工作压力的1.5倍; 按规程循环压井 ,进出口密度相差不超过2%,不喷不漏;停泵后按设计技术标准观察30min,井口无溢流无气泡为压井合格; 洗井后应做到无死油,蜡块等其他杂物。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压洗井"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4665,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

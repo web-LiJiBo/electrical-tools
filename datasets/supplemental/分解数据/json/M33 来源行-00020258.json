@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020258",
+  "entities": [
+    {
+      "name": "—调整控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—调整控制：该功能解释J 字节比特8调整控制信息C 以确定子块的调整行为，使用5中\n    取3多数判决法，J 字节中的R 比特忽略。",
+      "type": "语义分解",
+      "subject": "—调整控制",
+      "action": "",
+      "operation": "—调整控制：该功能解释J 字节比特8调整控制信息C 以确定子块的调整行为，使用5中 取3多数判决法，J 字节中的R 比特忽略。",
+      "condition": "",
+      "constraint": "—调整控制：该功能解释J 字节比特8调整控制信息C 以确定子块的调整行为，使用5中\n    取3多数判决法，J 字节中的R 比特忽略。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—调整控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20258,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "11.1.4.2.2",
+  "entities": [
+    {
+      "name": "碳酸钠辅助称量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.4.2.2 吸取100 mL水样于蒸发皿中，精确加入25.0 mL碳酸钠溶液于蒸发皿内，混匀。同时做一个只加25.0 mL碳酸钠溶液的空白。计算水样结果时应减去碳酸钠空白的质量。",
+      "type": "语义分解",
+      "subject": "碳酸钠辅助称量",
+      "action": "",
+      "operation": "一百毫升样加二十五毫升碳酸钠液同时做试剂空白扣质量",
+      "condition": "",
+      "constraint": "11.1.4.2.2 吸取100 mL水样于蒸发皿中，精确加入25.0 mL碳酸钠溶液于蒸发皿内，混匀。同时做一个只加25.0 mL碳酸钠溶液的空白。计算水样结果时应减去碳酸钠空白的质量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "碳酸钠辅助称量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1436,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

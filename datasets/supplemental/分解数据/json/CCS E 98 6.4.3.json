@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "6.4.3",
+  "entities": [
+    {
+      "name": "应目视检查抗风圈有无腐蚀、裂缝、开焊现象",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.3   应目视检查抗风圈有无腐蚀、裂缝、开焊现象。检查盘\n梯、走台、防护栏杆是否牢固、有无腐蚀。",
+      "type": "语义分解",
+      "subject": "应目视检查抗风圈有无腐蚀、裂缝、开焊现象",
+      "action": "",
+      "operation": "应目视检查抗风圈有无腐蚀、裂缝、开焊现象。检查盘 梯、走台、防护栏杆是否牢固、有无腐蚀。",
+      "condition": "",
+      "constraint": "6.4.3   应目视检查抗风圈有无腐蚀、裂缝、开焊现象。检查盘\n梯、走台、防护栏杆是否牢固、有无腐蚀。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应目视检查抗风圈有无腐蚀、裂缝、开焊现象"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46751,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "风险识别资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 资料收集和推备 根据危险物质泄漏,火灾。爆炸等突发性事故可能造成的环境风险类型。收集和推备建设项目工程资料,周边环境资料, 国内外同行业。同类型事故统计分析及典型事故案例资料。对己建工程应收集环境管理制度,操作和维护手册,突发环境事件应急预案,应急培训,演练记录,历史突发环境事件及生产安全事故调查资料。设备失效统计数据等。",
+      "type": "语义分解",
+      "subject": "风险识别资料",
+      "action": "",
+      "operation": "收集工程环境同类事故已建制度维护预案培训演练历史失效资料",
+      "condition": "",
+      "constraint": "7.2.1 资料收集和推备 根据危险物质泄漏,火灾。爆炸等突发性事故可能造成的环境风险类型。收集和推备建设项目工程资料,周边环境资料, 国内外同行业。同类型事故统计分析及典型事故案例资料。对己建工程应收集环境管理制度,操作和维护手册,突发环境事件应急预案,应急培训,演练记录,历史突发环境事件及生产安全事故调查资料。设备失效统计数据等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险识别资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2473,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

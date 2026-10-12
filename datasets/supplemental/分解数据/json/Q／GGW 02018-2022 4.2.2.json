@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "主要耗能设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 模拟法适用于油气管网中输油泵机组, 压缩机组。加热炉和锅炉等主要耗能设备能耗的测算, 也可作为趋势分析法的补充和参考。新建,改扩建或输送工艺发生重大变化的油气管道主要耗能设备的 能耗测算宜采用模拟法。",
+      "type": "语义分解",
+      "subject": "主要耗能设备",
+      "action": "",
+      "operation": "采用模拟法测算能耗",
+      "condition": "新建,改扩建或输送工艺发生重大变化",
+      "constraint": "宜采用模拟法",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "主要耗能设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

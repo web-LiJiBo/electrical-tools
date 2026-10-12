@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.2.7",
+  "entities": [
+    {
+      "name": "二氮杂菲法性能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.7 精密度和准确度 8个实验室重复测定阴离子合成洗涤剂质量浓度为0.050 mg/L～0.400 mg/L，相对标准偏差为0.4 %～13 %。8个实验室分别用地表水、地下水、生活饮用水做回收试验，加入标准0.05 mg/L～0.50 mg/L，回收率范围为92 %～110 %，平均回收率为99.7 %。",
+      "type": "语义分解",
+      "subject": "二氮杂菲法性能",
+      "action": "",
+      "operation": "记录八实验室偏差不同水源加标回收率",
+      "condition": "",
+      "constraint": "13.2.7 精密度和准确度 8个实验室重复测定阴离子合成洗涤剂质量浓度为0.050 mg/L～0.400 mg/L，相对标准偏差为0.4 %～13 %。8个实验室分别用地表水、地下水、生活饮用水做回收试验，加入标准0.05 mg/L～0.50 mg/L，回收率范围为92 %～110 %，平均回收率为99.7 %。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二氮杂菲法性能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1569,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；性能数据非合格阈值"
+      ]
+    }
+  }
+}

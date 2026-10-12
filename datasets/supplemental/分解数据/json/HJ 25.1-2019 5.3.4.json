@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.3.4",
+  "entities": [
+    {
+      "name": "访谈内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.4 内容整理 应对访谈内容进行整理。并对照已有资料,对其中可疑处和不完善处进行核实和补充。作为调查报告的附件。",
+      "type": "语义分解",
+      "subject": "访谈内容",
+      "action": "",
+      "operation": "整理核实补充并附于调查报告",
+      "condition": "",
+      "constraint": "5.3.4 内容整理 应对访谈内容进行整理。并对照已有资料,对其中可疑处和不完善处进行核实和补充。作为调查报告的附件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "访谈内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2628,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "5.1.3",
+  "entities": [
+    {
+      "name": "安全人员技能考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.3 安全管理技能考核可由安全生产监管部门进行，采用实地考核、写论文、答辩等方式。考核内容应符合本标准5.3规定的范围，成绩评定分为合格、不合格。",
+      "type": "语义分解",
+      "subject": "安全人员技能考核",
+      "action": "",
+      "operation": "按范围采用实地论文答辩判成绩",
+      "condition": "",
+      "constraint": "5.1.3 安全管理技能考核可由安全生产监管部门进行，采用实地考核、写论文、答辩等方式。考核内容应符合本标准5.3规定的范围，成绩评定分为合格、不合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全人员技能考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5014,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺5.3范围"
+      ]
+    }
+  }
+}

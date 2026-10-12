@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041262",
+  "entities": [
+    {
+      "name": "场地的选择应最大限度地减少地表地形改变的程度，以减小对周围环境的破坏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   场地的选择应最大限度地减少地表地形改变的程度，以减小对周围环境的破坏。应避免挖掘和筑\n路造成可能的坍塌和塌陷问题。适用时，考虑储存表层土。",
+      "type": "语义分解",
+      "subject": "场地的选择应最大限度地减少地表地形改变的程度，以减小对周围环境的破坏",
+      "action": "",
+      "operation": "场地的选择应最大限度地减少地表地形改变的程度，以减小对周围环境的破坏。应避免挖掘和筑 路造成可能的坍塌和塌陷问题。适用时，考虑储存表层土。",
+      "condition": "",
+      "constraint": "   场地的选择应最大限度地减少地表地形改变的程度，以减小对周围环境的破坏。应避免挖掘和筑\n路造成可能的坍塌和塌陷问题。适用时，考虑储存表层土。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "场地的选择应最大限度地减少地表地形改变的程度，以减小对周围环境的破坏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41262,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

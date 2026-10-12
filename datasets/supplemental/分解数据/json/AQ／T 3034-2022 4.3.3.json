@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.3.3",
+  "entities": [
+    {
+      "name": "法规标准管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3 企业应建立法规标准管理工作程序 .明确定期获取和识别相关法律 ,法规 .标准 ,规范及其他法 定要求的渠道 ,定期进行适用性评估 ,及时更新法律 ,法规 ,标准清单 ,并将新要求转化为企业的安全生 产管理制度或规程。识别范围包括但不限于: 国家有关法律 ,法规和地方性法规; 相关部门规章; 国家标准 行业标准 ,地方标准; 各级负有安全生产监督管理职责部门发布的政策性文件; 上级公司的有关规章制",
+      "type": "语义分解",
+      "subject": "法规标准管理",
+      "action": "",
+      "operation": "建程序定期获取识别评估更新清单转化制度覆盖法律规章标准政策上级要求",
+      "condition": "",
+      "constraint": "4.3.3 企业应建立法规标准管理工作程序 .明确定期获取和识别相关法律 ,法规 .标准 ,规范及其他法 定要求的渠道 ,定期进行适用性评估 ,及时更新法律 ,法规 ,标准清单 ,并将新要求转化为企业的安全生 产管理制度或规程。识别范围包括但不限于: 国家有关法律 ,法规和地方性法规; 相关部门规章; 国家标准 行业标准 ,地方标准; 各级负有安全生产监督管理职责部门发布的政策性文件; 上级公司的有关规章制",
+      "constraint_role": "informational",
+      "related_entities": [
+        "法规标准管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5066,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；末句截断需核查"
+      ]
+    }
+  }
+}

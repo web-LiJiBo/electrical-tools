@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "8.3",
+  "entities": [
+    {
+      "name": "重大隐患",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3 重大事故隐患管理 企业主要负责人应掌握本企业所涉及相关行业领域的重大事故隐患判定标准，定期组织开展排查，研究整改重大事故隐患，督促、检查重大事故隐患治理工作，及时消除重大事故隐患。企业应按规定报告重大事故隐患，跟踪治理情况，评估治理效果，及时验收、销号。",
+      "type": "语义分解",
+      "subject": "重大隐患",
+      "action": "",
+      "operation": "负责人掌握标准定查研究督促治理报告跟踪评估验销号",
+      "condition": "",
+      "constraint": "8.3 重大事故隐患管理 企业主要负责人应掌握本企业所涉及相关行业领域的重大事故隐患判定标准，定期组织开展排查，研究整改重大事故隐患，督促、检查重大事故隐患治理工作，及时消除重大事故隐患。企业应按规定报告重大事故隐患，跟踪治理情况，评估治理效果，及时验收、销号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大隐患"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7261,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

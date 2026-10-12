@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037281",
+  "entities": [
+    {
+      "name": "企业购入和输出或转供的电量数据，应以结算电表为准，且记录时间节点应与生产",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    企业购入和输出或转供的电量数据，应以结算电表为准，且记录时间节点应与生产周期保持一致。\n如果没有，可采用供应商提供的电费发票或者结算单等结算凭证上的数据。在电力统计中应注意转供电\n的情况，若向外单位供电且有转供量的凭证，则应将转供电量从总用电量中扣除；若用电由外单位转供\n且有转供电量凭证，则应将转供电量计入总用电量。",
+      "type": "语义分解",
+      "subject": "企业购入和输出或转供的电量数据，应以结算电表为准，且记录时间节点应与生产",
+      "action": "",
+      "operation": "企业购入和输出或转供的电量数据，应以结算电表为准，且记录时间节点应与生产周期保持一致。 如果没有，可采用供应商提供的电费发票或者结算单等结算凭证上的数据。在电力统计中应注意转供电 的情况，若向外单位供电且有转供量的凭证，则应将转供电量从总用电量中扣除；若用电由外单位转供 且有转供电量凭证，则应将转供电量计入总用电量。",
+      "condition": "",
+      "constraint": "    企业购入和输出或转供的电量数据，应以结算电表为准，且记录时间节点应与生产周期保持一致。\n如果没有，可采用供应商提供的电费发票或者结算单等结算凭证上的数据。在电力统计中应注意转供电\n的情况，若向外单位供电且有转供量的凭证，则应将转供电量从总用电量中扣除；若用电由外单位转供\n且有转供电量凭证，则应将转供电量计入总用电量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业购入和输出或转供的电量数据，应以结算电表为准，且记录时间节点应与生产"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37281,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.5.2",
+  "entities": [
+    {
+      "name": "不装订案卷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2 不装订的案卷 , 应在卷内每份文件首页的右上方空白处加盖档号章,并逐件填写件号和其他相关内容",
+      "type": "语义分解",
+      "subject": "不装订案卷",
+      "action": "",
+      "operation": "逐件首页盖档号章填件号及相关内容",
+      "condition": "",
+      "constraint": "4.5.2 不装订的案卷 , 应在卷内每份文件首页的右上方空白处加盖档号章,并逐件填写件号和其他相关内容",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不装订案卷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3092,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012035",
+  "entities": [
+    {
+      "name": ". 10 时钟同步设备应采用模块化结构 , 单板可热插拔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.0. 10    时钟同步设备应采用模块化结构 ,  单板可热插拔。\n10.0. 11     时钟同步设备的时钟输入 、  卫星信号接收 、   振荡器、\n电源等关键板卡宜按 1+1 冗余配置 。  时钟输出板宜按 1+1 冗余\n配置 ,   并应设置适当的接口余量 。",
+      "type": "语义分解",
+      "subject": ". 10 时钟同步设备应采用模块化结构 , 单板可热插拔",
+      "action": "",
+      "operation": ". 10 时钟同步设备应采用模块化结构 , 单板可热插拔。 10.0. 11 时钟同步设备的时钟输入 、 卫星信号接收 、 振荡器、 电源等关键板卡宜按 1+1 冗余配置 。 时钟输出板宜按 1+1 冗余 配置 , 并应设置适当的接口余量 。",
+      "condition": "",
+      "constraint": "10.0. 10    时钟同步设备应采用模块化结构 ,  单板可热插拔。\n10.0. 11     时钟同步设备的时钟输入 、  卫星信号接收 、   振荡器、\n电源等关键板卡宜按 1+1 冗余配置 。  时钟输出板宜按 1+1 冗余\n配置 ,   并应设置适当的接口余量 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 10 时钟同步设备应采用模块化结构 , 单板可热插拔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12035,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "4.8.3",
+  "entities": [
+    {
+      "name": "软水器再生出水氯离子",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.3 软水器再生后出水氯离子含量不得大于进水氯离子含量1.1倍。",
+      "type": "语义分解",
+      "subject": "软水器再生出水氯离子",
+      "action": "",
+      "operation": "不大于进水含量的原文倍数",
+      "condition": "软水器再生后",
+      "constraint": "4.8.3 软水器再生后出水氯离子含量不得大于进水氯离子含量1.1倍。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "软水器再生出水氯离子"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4113,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.20",
+  "standard_id": "CCS Z50",
+  "version": "",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "监测连续完整",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1  应采取措施保证监测数据的准确性、连续性和完整性，确保全面、客观地反映监测结果。\n6.2 采用自动监测设备监测时，监测仪器应全年365天(闰年366天)连续运行。在监测仪器校准、\n\n停电和设备故障，以及其他不可抗拒的因素导致不能获得连续监测数据时，应采取有效措施及时恢复设\n备正常运行。",
+      "type": "语义分解",
+      "subject": "监测连续完整",
+      "action": "",
+      "operation": "准确连续完整全年运行校准停电故障及时恢复",
+      "condition": "",
+      "constraint": "6.1  应采取措施保证监测数据的准确性、连续性和完整性，确保全面、客观地反映监测结果。\n6.2 采用自动监测设备监测时，监测仪器应全年365天(闰年366天)连续运行。在监测仪器校准、\n\n停电和设备故障，以及其他不可抗拒的因素导致不能获得连续监测数据时，应采取有效措施及时恢复设\n备正常运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测连续完整"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33151,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

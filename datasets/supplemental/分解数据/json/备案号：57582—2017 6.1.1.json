@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "开展管道腐蚀数据综合分析之前，应将管道腐蚀相关数 据对齐到基线上，包括管",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1    开展管道腐蚀数据综合分析之前，应将管道腐蚀相关数\n据对齐到基线上，包括管道本体缺陷数据、直接评价数据、高\n程数据及重点关注管段位置数据等。",
+      "type": "语义分解",
+      "subject": "开展管道腐蚀数据综合分析之前，应将管道腐蚀相关数 据对齐到基线上，包括管",
+      "action": "",
+      "operation": "开展管道腐蚀数据综合分析之前，应将管道腐蚀相关数 据对齐到基线上，包括管道本体缺陷数据、直接评价数据、高 程数据及重点关注管段位置数据等。",
+      "condition": "",
+      "constraint": "6.1.1    开展管道腐蚀数据综合分析之前，应将管道腐蚀相关数\n据对齐到基线上，包括管道本体缺陷数据、直接评价数据、高\n程数据及重点关注管段位置数据等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开展管道腐蚀数据综合分析之前，应将管道腐蚀相关数 据对齐到基线上，包括管"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48232,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

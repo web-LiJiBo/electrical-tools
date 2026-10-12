@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "9.2.13",
+  "entities": [
+    {
+      "name": "定型起重机械吊装",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.13 用定型起重机械(例如履带吊车、轮胎吊车、桥式吊车等)进行吊装作业时，除遵守本文件外，还应遵守该定型起重机械的操作规程。",
+      "type": "语义分解",
+      "subject": "定型起重机械吊装",
+      "action": "",
+      "operation": "同时遵守标准及机械操作规程",
+      "condition": "用定型起重机械(例如履带吊车、轮胎吊车、桥式吊车等)进行吊装作业时",
+      "constraint": "9.2.13 用定型起重机械(例如履带吊车、轮胎吊车、桥式吊车等)进行吊装作业时，除遵守本文件外，还应遵守该定型起重机械的操作规程。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "定型起重机械吊装"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3933,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

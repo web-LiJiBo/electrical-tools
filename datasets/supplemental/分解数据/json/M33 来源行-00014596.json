@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014596",
+  "entities": [
+    {
+      "name": "OTN 设备在对客户信号采用透传映射封装方式(在映射过程中不改变客户信号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTN 设备在对客户信号采用透传映射封装方式(在映射过程中不改变客户信号)时，支持对客户\n信号物理层同步信号的透明传送，其中客户GE 信号应采用GMP 方式映射，10GE信号应采用BMP 方\n式映射，25GE信号应采用BMP 方式映射，100GE信号应采用GMP 方式映射。对于采用透传方式实现\n频率同步传送的OTN 设备，其输出性能应满足ITU-T G.8261 EEC接口网络限值要求。",
+      "type": "语义分解",
+      "subject": "OTN 设备在对客户信号采用透传映射封装方式(在映射过程中不改变客户信号",
+      "action": "",
+      "operation": "OTN 设备在对客户信号采用透传映射封装方式(在映射过程中不改变客户信号)时，支持对客户 信号物理层同步信号的透明传送，其中客户GE 信号应采用GMP 方式映射，10GE信号应采用BMP 方 式映射，25GE信号应采用BMP 方式映射，100GE信号应采用GMP 方式映射。对于采用透传方式实现 频率同步传送的OTN 设备，其输出性能应满足ITU-T G.8261 EEC接口网络限值要求。",
+      "condition": "",
+      "constraint": "      OTN 设备在对客户信号采用透传映射封装方式(在映射过程中不改变客户信号)时，支持对客户\n信号物理层同步信号的透明传送，其中客户GE 信号应采用GMP 方式映射，10GE信号应采用BMP 方\n式映射，25GE信号应采用BMP 方式映射，100GE信号应采用GMP 方式映射。对于采用透传方式实现\n频率同步传送的OTN 设备，其输出性能应满足ITU-T G.8261 EEC接口网络限值要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 设备在对客户信号采用透传映射封装方式(在映射过程中不改变客户信号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14596,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

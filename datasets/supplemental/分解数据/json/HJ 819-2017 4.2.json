@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "排污监测设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 设置和维护监测设施 排污单位应按照规定设置满足开展监测所需要的监测设施。废水排放口，废气(采样)监测平合 监测断面和监测孔的设置应符合监测规范要求。监测平台应便于开展监测活动，应能保证监测人员的安 废水排放量大于 100 td 的。应安装自动测流设施并开展流量自动监测。",
+      "type": "语义分解",
+      "subject": "排污监测设施",
+      "action": "",
+      "operation": "按规范设维护排口平台孔断面大流量安装自动测流",
+      "condition": "",
+      "constraint": "4.2 设置和维护监测设施 排污单位应按照规定设置满足开展监测所需要的监测设施。废水排放口，废气(采样)监测平合 监测断面和监测孔的设置应符合监测规范要求。监测平台应便于开展监测活动，应能保证监测人员的安 废水排放量大于 100 td 的。应安装自动测流设施并开展流量自动监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污监测设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2814,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；安全句残缺100td单位破损需复核"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024376",
+  "entities": [
+    {
+      "name": "YD/T 1387 . 1 媒体网关设备测试方法 —IP 中继媒体网关 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "YD/T 1387 . 1    媒体网关设备测试方法 —IP 中继媒体网关\nYD/T 1387 . 3    媒体网关设备测试方法 — 综合接入媒体网关\nYD/T 1389    基于软交换的媒体服务器测试方法",
+      "type": "语义分解",
+      "subject": "YD/T 1387 . 1 媒体网关设备测试方法 —IP 中继媒体网关 ",
+      "action": "",
+      "operation": "YD/T 1387 . 1 媒体网关设备测试方法 —IP 中继媒体网关 YD/T 1387 . 3 媒体网关设备测试方法 — 综合接入媒体网关 YD/T 1389 基于软交换的媒体服务器测试方法",
+      "condition": "",
+      "constraint": "YD/T 1387 . 1    媒体网关设备测试方法 —IP 中继媒体网关\nYD/T 1387 . 3    媒体网关设备测试方法 — 综合接入媒体网关\nYD/T 1389    基于软交换的媒体服务器测试方法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "YD/T 1387 . 1 媒体网关设备测试方法 —IP 中继媒体网关 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24376,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "备货库房窗户",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3 备货库房应设置高窗 ,窗上应安装防护铁栏 ,窗户应采取避光和防雨措施<",
+      "type": "语义分解",
+      "subject": "备货库房窗户",
+      "action": "",
+      "operation": "设置高窗铁栏并避光防雨",
+      "condition": "",
+      "constraint": "5.2.3 备货库房应设置高窗 ,窗上应安装防护铁栏 ,窗户应采取避光和防雨措施<",
+      "constraint_role": "informational",
+      "related_entities": [
+        "备货库房窗户"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3782,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

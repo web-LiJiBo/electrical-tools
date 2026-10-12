@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "6.3.5",
+  "entities": [
+    {
+      "name": "电子巡查系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5 电子巡查系统设计应符合 GA/T 644 的规定。 电子巡查日志应完整 ,不可删改 ,存储肘间应大 于等于180天。",
+      "type": "语义分解",
+      "subject": "电子巡查系统",
+      "action": "",
+      "operation": "完整不可删改日志保存不少于180天",
+      "condition": "",
+      "constraint": "6.3.5 电子巡查系统设计应符合 GA/T 644 的规定。 电子巡查日志应完整 ,不可删改 ,存储肘间应大 于等于180天。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电子巡查系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5440,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文存在识别异常"
+      ]
+    }
+  }
+}

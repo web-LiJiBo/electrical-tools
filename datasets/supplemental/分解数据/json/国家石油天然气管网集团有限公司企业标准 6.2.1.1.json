@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.2.1.1",
+  "entities": [
+    {
+      "name": "油气管道管沟开挖，应进行表土剥离，生熟土分开堆放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1.1        油气管道管沟开挖，应进行表土剥离，生熟土分开堆放；管沟回填，应先回填生土，后回填\n熟土；回填时应将耕作层内直径大于5 cm 的砾石分筛捡出。",
+      "type": "语义分解",
+      "subject": "油气管道管沟开挖，应进行表土剥离，生熟土分开堆放",
+      "action": "",
+      "operation": "油气管道管沟开挖，应进行表土剥离，生熟土分开堆放；管沟回填，应先回填生土，后回填 熟土；回填时应将耕作层内直径大于5 cm 的砾石分筛捡出。",
+      "condition": "",
+      "constraint": "6.2.1.1        油气管道管沟开挖，应进行表土剥离，生熟土分开堆放；管沟回填，应先回填生土，后回填\n熟土；回填时应将耕作层内直径大于5 cm 的砾石分筛捡出。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气管道管沟开挖，应进行表土剥离，生熟土分开堆放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40705,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

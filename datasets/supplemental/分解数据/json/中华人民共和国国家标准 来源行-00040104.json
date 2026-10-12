@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040104",
+  "entities": [
+    {
+      "name": "生产装置、作业场所等污染区域的冲洗水以及受污染的雨 水均应收集并处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.4      生产装置、作业场所等污染区域的冲洗水以及受污染的雨\n\n水均应收集并处理。全厂雨污分流切换阀宜采用远程控制阀。\n6.2.5      化工废液应单独收集处置，不得直接排入生产废水系统。\n6.2.6      循环水系统应配套水质处理设施，应选用无毒或污染小的\n水处理药剂，不得用增大排水量方式维持循环水水质。",
+      "type": "语义分解",
+      "subject": "生产装置、作业场所等污染区域的冲洗水以及受污染的雨 水均应收集并处理",
+      "action": "",
+      "operation": "生产装置、作业场所等污染区域的冲洗水以及受污染的雨 水均应收集并处理。全厂雨污分流切换阀宜采用远程控制阀。 6.2.5 化工废液应单独收集处置，不得直接排入生产废水系统。 6.2.6 循环水系统应配套水质处理设施，应选用无毒或污染小的 水处理药剂，不得用增大排水量方式维持循环水水质。",
+      "condition": "",
+      "constraint": "6.2.4      生产装置、作业场所等污染区域的冲洗水以及受污染的雨\n\n水均应收集并处理。全厂雨污分流切换阀宜采用远程控制阀。\n6.2.5      化工废液应单独收集处置，不得直接排入生产废水系统。\n6.2.6      循环水系统应配套水质处理设施，应选用无毒或污染小的\n水处理药剂，不得用增大排水量方式维持循环水水质。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产装置、作业场所等污染区域的冲洗水以及受污染的雨 水均应收集并处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

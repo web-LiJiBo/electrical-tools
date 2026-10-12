@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "4.2.7",
+  "entities": [
+    {
+      "name": "不同品种爆炸物",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.7 爆炸物宜按不同品种单独存放。 当受条件限制 ,不同品种爆炸物需同库存放时 ,应确保爆炸物之间不是禁忌物品且包装完整无损 =",
+      "type": "语义分解",
+      "subject": "不同品种爆炸物",
+      "action": "",
+      "operation": "优先分库受限同库时不禁忌且包装完整",
+      "condition": "当受条件限制 ,不同品种爆炸物需同库存放时",
+      "constraint": "4.2.7 爆炸物宜按不同品种单独存放。 当受条件限制 ,不同品种爆炸物需同库存放时 ,应确保爆炸物之间不是禁忌物品且包装完整无损 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不同品种爆炸物"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3761,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

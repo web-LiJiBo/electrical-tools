@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 空气压缩机能效等级分为 3 级 ,其中1级能效最高。空气压缩机在规定工况下各等级的能效值应 不大于表1~表6中规定的值。",
+      "type": "语义分解",
+      "subject": "空气压缩机",
+      "action": "",
+      "operation": "按规定工况评价能效等级",
+      "condition": "规定工况下",
+      "constraint": "能效值应 不大于表1~表6中规定的值",
+      "constraint_role": "informational",
+      "related_entities": [
+        "空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行缺表1至表6，不能补造能效阈值"
+      ]
+    }
+  }
+}

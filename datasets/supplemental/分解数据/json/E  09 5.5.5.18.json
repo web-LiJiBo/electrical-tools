@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.5.18",
+  "entities": [
+    {
+      "name": "安全设施检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5.18  应落实安全设备设施的检查制度，对安全设备设施(安全阀、泄压阀、爆破片、防火堤等)进行\n\n检查，并保存检查记录。",
+      "type": "语义分解",
+      "subject": "安全设施检查",
+      "action": "",
+      "operation": "安全阀泄压阀爆破片堤等检查留记录",
+      "condition": "",
+      "constraint": "5.5.5.18  应落实安全设备设施的检查制度，对安全设备设施(安全阀、泄压阀、爆破片、防火堤等)进行\n\n检查，并保存检查记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全设施检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27795,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

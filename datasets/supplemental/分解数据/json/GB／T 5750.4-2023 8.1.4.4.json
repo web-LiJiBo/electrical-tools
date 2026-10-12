@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.1.4.4",
+  "entities": [
+    {
+      "name": "水样pH测量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.4.4 用洗瓶以纯水缓缓淋洗2个电极数次，再以水样淋洗6次～8次，然后插入水样中，1 min后直接从仪器上读出pH值。注1:甘汞电极内为氯化钾的饱和溶液，当室温升高后，溶液可能由饱和状态变为不饱和状态，故保持一定量氯化钾晶体。注2:对于pH值大于9的溶液，测定pH值的电极为高碱玻璃电极。",
+      "type": "语义分解",
+      "subject": "水样pH测量",
+      "action": "",
+      "operation": "纯水洗电极再水样洗六至八次入样一分钟读数高碱换相应电极",
+      "condition": "",
+      "constraint": "8.1.4.4 用洗瓶以纯水缓缓淋洗2个电极数次，再以水样淋洗6次～8次，然后插入水样中，1 min后直接从仪器上读出pH值。注1:甘汞电极内为氯化钾的饱和溶液，当室温升高后，溶液可能由饱和状态变为不饱和状态，故保持一定量氯化钾晶体。注2:对于pH值大于9的溶液，测定pH值的电极为高碱玻璃电极。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水样pH测量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1354,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

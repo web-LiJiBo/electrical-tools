@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023243",
+  "entities": [
+    {
+      "name": "外设环形接地汇集线连接系统近似于一个法拉第笼，第 一层的外设环形接地汇集",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2       外设环形接地汇集线连接系统近似于一个法拉第笼，第\n一层的外设环形接地汇集线作为“扩展的”主接地端子，此时实际\n上不需要单独的MET。",
+      "type": "语义分解",
+      "subject": "外设环形接地汇集线连接系统近似于一个法拉第笼，第 一层的外设环形接地汇集",
+      "action": "",
+      "operation": "外设环形接地汇集线连接系统近似于一个法拉第笼，第 一层的外设环形接地汇集线作为“扩展的”主接地端子，此时实际 上不需要单独的MET。",
+      "condition": "",
+      "constraint": "4.2.2       外设环形接地汇集线连接系统近似于一个法拉第笼，第\n一层的外设环形接地汇集线作为“扩展的”主接地端子，此时实际\n上不需要单独的MET。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外设环形接地汇集线连接系统近似于一个法拉第笼，第 一层的外设环形接地汇集"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

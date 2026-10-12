@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026106",
+  "entities": [
+    {
+      "name": ". AG 、TG 等局端设备间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    1. AG 、TG 等局端设备间：丢包率不大于1%,网络抖动不大\n于 2 0ms,  时延不大于100 ms。",
+      "type": "语义分解",
+      "subject": ". AG 、TG 等局端设备间",
+      "action": "",
+      "operation": ". AG 、TG 等局端设备间：丢包率不大于1%,网络抖动不大 于 2 0ms, 时延不大于100 ms。",
+      "condition": "",
+      "constraint": "    1. AG 、TG 等局端设备间：丢包率不大于1%,网络抖动不大\n于 2 0ms,  时延不大于100 ms。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". AG 、TG 等局端设备间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26106,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

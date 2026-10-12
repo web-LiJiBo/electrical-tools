@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037811",
+  "entities": [
+    {
+      "name": "度报送核算报告（模板见附件 1）",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "度报送核算报告（模板见附件 1）；核算报表和核算报告应由填报人、审\n\n核人及主管部门负责人进行三级审核。季度核算报表应于次季度首月 10\n\n日前报送；半年度报告于当年7 月 15 日前报送，年度报告于次年 1 月底\n\n前报送。所属单位应对温室气体排放核算的完整性、准确性负责。",
+      "type": "语义分解",
+      "subject": "度报送核算报告（模板见附件 1）",
+      "action": "",
+      "operation": "度报送核算报告（模板见附件 1）；核算报表和核算报告应由填报人、审 核人及主管部门负责人进行三级审核。季度核算报表应于次季度首月 10 日前报送；半年度报告于当年7 月 15 日前报送，年度报告于次年 1 月底 前报送。所属单位应对温室气体排放核算的完整性、准确性负责。",
+      "condition": "",
+      "constraint": "度报送核算报告（模板见附件 1）；核算报表和核算报告应由填报人、审\n\n核人及主管部门负责人进行三级审核。季度核算报表应于次季度首月 10\n\n日前报送；半年度报告于当年7 月 15 日前报送，年度报告于次年 1 月底\n\n前报送。所属单位应对温室气体排放核算的完整性、准确性负责。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "度报送核算报告（模板见附件 1）"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37811,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

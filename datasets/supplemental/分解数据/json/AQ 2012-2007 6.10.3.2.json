@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.10.3.2",
+  "entities": [
+    {
+      "name": "海底管道调试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.10.3.2 应编制调试大纲或方案 ,明确主要调试内容;按调试大纲进行调试,记录调试的主要数据。",
+      "type": "语义分解",
+      "subject": "海底管道调试",
+      "action": "",
+      "operation": "编方案按纲调试记录主要数据",
+      "condition": "",
+      "constraint": "6.10.3.2 应编制调试大纲或方案 ,明确主要调试内容;按调试大纲进行调试,记录调试的主要数据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海底管道调试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4709,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

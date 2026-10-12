@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.1.10",
+  "entities": [
+    {
+      "name": "环境指标统计周期",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.10 环境统计指标应按统计周期进行统计,其中: a) 指标 4.2 4.7 统计周期为-月1次; b) 指标 4.8 统计周期为一季度1次; c) 指标 4.9 4.13 统计周期为一年1次。",
+      "type": "语义分解",
+      "subject": "环境指标统计周期",
+      "action": "",
+      "operation": "按各指标分月季年统计",
+      "condition": "",
+      "constraint": "4.1.10 环境统计指标应按统计周期进行统计,其中: a) 指标 4.2 4.7 统计周期为-月1次; b) 指标 4.8 统计周期为一季度1次; c) 指标 4.9 4.13 统计周期为一年1次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境指标统计周期"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 571,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；指标范围连接符原文缺失"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008654",
+  "entities": [
+    {
+      "name": "SDH(Synchronous Digital Hierarchy) 同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SDH(Synchronous   Digital   Hierarchy)    同步数字体系\nSESR(Severely  Errored  Second  Ratio)    严重误块秒比\nSNMS(Sub-network    Management    System)        子网管理系统\nSTM(Synchronous    Transport   Module)    同步传送模块\nWAN(Wide   Area   Network)        广域网",
+      "type": "语义分解",
+      "subject": "SDH(Synchronous Digital Hierarchy) 同",
+      "action": "",
+      "operation": "SDH(Synchronous Digital Hierarchy) 同步数字体系 SESR(Severely Errored Second Ratio) 严重误块秒比 SNMS(Sub-network Management System) 子网管理系统 STM(Synchronous Transport Module) 同步传送模块 WAN(Wide Area Network) 广域网",
+      "condition": "",
+      "constraint": "SDH(Synchronous   Digital   Hierarchy)    同步数字体系\nSESR(Severely  Errored  Second  Ratio)    严重误块秒比\nSNMS(Sub-network    Management    System)        子网管理系统\nSTM(Synchronous    Transport   Module)    同步传送模块\nWAN(Wide   Area   Network)        广域网",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDH(Synchronous Digital Hierarchy) 同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8654,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

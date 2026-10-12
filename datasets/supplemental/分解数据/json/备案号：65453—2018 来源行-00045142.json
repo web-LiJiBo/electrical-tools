@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045142",
+  "entities": [
+    {
+      "name": "当上述方法实施有困难时，工程上可采用考虑安全系 数、管道可能的最大腐蚀坑",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    当上述方法实施有困难时，工程上可采用考虑安全系\n数、管道可能的最大腐蚀坑深近似取实测最大腐蚀坑深值的两\n倍的方法进行估计，并依此计算最小剩余壁厚T。",
+      "type": "语义分解",
+      "subject": "当上述方法实施有困难时，工程上可采用考虑安全系 数、管道可能的最大腐蚀坑",
+      "action": "",
+      "operation": "当上述方法实施有困难时，工程上可采用考虑安全系 数、管道可能的最大腐蚀坑深近似取实测最大腐蚀坑深值的两 倍的方法进行估计，并依此计算最小剩余壁厚T。",
+      "condition": "",
+      "constraint": "      2    当上述方法实施有困难时，工程上可采用考虑安全系\n数、管道可能的最大腐蚀坑深近似取实测最大腐蚀坑深值的两\n倍的方法进行估计，并依此计算最小剩余壁厚T。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当上述方法实施有困难时，工程上可采用考虑安全系 数、管道可能的最大腐蚀坑"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45142,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

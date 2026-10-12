@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.4.2",
+  "entities": [
+    {
+      "name": "安全作业许可内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2 安全作业许可主要内容如下: 作业时间段 ,作业地点和环境 ,作业内容; 作业风险分析; 确定安全措施 ,监护人和监护措施 ,应急措施; 确认作业人员资格 ; 作业负责人.监督人以及批准人 签发人签名; 安全作业许可关闭 ,确认; 其他。",
+      "type": "语义分解",
+      "subject": "安全作业许可内容",
+      "action": "",
+      "operation": "列明时间地点内容风险措施监护应急资格责任批准签名关闭确认",
+      "condition": "",
+      "constraint": "4.4.2 安全作业许可主要内容如下: 作业时间段 ,作业地点和环境 ,作业内容; 作业风险分析; 确定安全措施 ,监护人和监护措施 ,应急措施; 确认作业人员资格 ; 作业负责人.监督人以及批准人 签发人签名; 安全作业许可关闭 ,确认; 其他。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全作业许可内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4226,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.4.4",
+  "entities": [
+    {
+      "name": "多单位共用排放口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.4.4 对于多个排污单位共用一个排放口的,核查其相关排污单位是否在排污许可证中明确各方责 任。",
+      "type": "语义分解",
+      "subject": "多单位共用排放口",
+      "action": "",
+      "operation": "核查许可证明确各方责任",
+      "condition": "对于多个排污单位共用一个排放口的",
+      "constraint": "6.2.4.4 对于多个排污单位共用一个排放口的,核查其相关排污单位是否在排污许可证中明确各方责 任。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多单位共用排放口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1997,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

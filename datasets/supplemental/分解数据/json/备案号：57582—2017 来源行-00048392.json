@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048392",
+  "entities": [
+    {
+      "name": "f₁(x)——第一次内检测缺陷真实尺寸分布的概率密度函数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "          f₁(x)——第一次内检测缺陷真实尺寸分布的概率密度函数；\n          f₂(x)-—- 第二次内检测缺陷真实尺寸分布的概率密度函数。\n      f₁(x),f₂(x)   函数值由返回指定平均值和标准偏差的正态分布\n函 数 ：NORMDIST(x,     mean,standard-dev,       cumulative)  确定。\n   其中，",
+      "type": "语义分解",
+      "subject": "f₁(x)——第一次内检测缺陷真实尺寸分布的概率密度函数",
+      "action": "",
+      "operation": "f₁(x)——第一次内检测缺陷真实尺寸分布的概率密度函数； f₂(x)-—- 第二次内检测缺陷真实尺寸分布的概率密度函数。 f₁(x),f₂(x) 函数值由返回指定平均值和标准偏差的正态分布 函 数 ：NORMDIST(x, mean,standard-dev, cumulative) 确定。 其中，",
+      "condition": "",
+      "constraint": "          f₁(x)——第一次内检测缺陷真实尺寸分布的概率密度函数；\n          f₂(x)-—- 第二次内检测缺陷真实尺寸分布的概率密度函数。\n      f₁(x),f₂(x)   函数值由返回指定平均值和标准偏差的正态分布\n函 数 ：NORMDIST(x,     mean,standard-dev,       cumulative)  确定。\n   其中，",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f₁(x)——第一次内检测缺陷真实尺寸分布的概率密度函数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48392,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

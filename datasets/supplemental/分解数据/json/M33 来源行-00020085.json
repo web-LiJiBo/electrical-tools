@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020085",
+  "entities": [
+    {
+      "name": "TU指针的格式、指针在处理中的作用以及VC的映射在ITU-T G707中",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "TU指针的格式、指针在处理中的作用以及VC的映射在ITU-T G707中描述。\nSn/Sm_A 功能还起字节H4 和 C2的源和宿的作用。",
+      "type": "语义分解",
+      "subject": "TU指针的格式、指针在处理中的作用以及VC的映射在ITU-T G707中",
+      "action": "",
+      "operation": "TU指针的格式、指针在处理中的作用以及VC的映射在ITU-T G707中描述。 Sn/Sm_A 功能还起字节H4 和 C2的源和宿的作用。",
+      "condition": "",
+      "constraint": "TU指针的格式、指针在处理中的作用以及VC的映射在ITU-T G707中描述。\nSn/Sm_A 功能还起字节H4 和 C2的源和宿的作用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "TU指针的格式、指针在处理中的作用以及VC的映射在ITU-T G707中"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20085,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

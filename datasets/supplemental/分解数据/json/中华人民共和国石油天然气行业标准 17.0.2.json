@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "17.0.2",
+  "entities": [
+    {
+      "name": "通信维护工具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "17.0.2    通信系统维护工器具应根据工程维抢修机构的设置地\n点 、  管理方式按需配置。",
+      "type": "语义分解",
+      "subject": "通信维护工具",
+      "action": "",
+      "operation": "按维抢修地点管理方式按需配",
+      "condition": "",
+      "constraint": "17.0.2    通信系统维护工器具应根据工程维抢修机构的设置地\n点 、  管理方式按需配置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信维护工具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12236,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

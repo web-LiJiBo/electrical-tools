@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013703",
+  "entities": [
+    {
+      "name": "OTN 接口信息结构通过信息包含关系和流来表示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       OTN 接口信息结构通过信息包含关系和流来表示。基本信息包含关系如图17、图18、图19、图\n20、图21、图22所示。出于监控目的，对于支持光层开销的OTN 接口，OTN 网络中的OCh 信号终结\n时 ，OTUk/OTUkV 信号也终结；OTSiA 信号终结时，OTUCn 信号可以终结。对于不支持光层开销的\nOTN接口，无论接口信号是否终结，OTUk/OTUKV和 OTUCn 都要终结。",
+      "type": "语义分解",
+      "subject": "OTN 接口信息结构通过信息包含关系和流来表示",
+      "action": "",
+      "operation": "OTN 接口信息结构通过信息包含关系和流来表示。基本信息包含关系如图17、图18、图19、图 20、图21、图22所示。出于监控目的，对于支持光层开销的OTN 接口，OTN 网络中的OCh 信号终结 时 ，OTUk/OTUkV 信号也终结；OTSiA 信号终结时，OTUCn 信号可以终结。对于不支持光层开销的 OTN接口，无论接口信号是否终结，OTUk/OTUKV和 OTUCn 都要终结。",
+      "condition": "",
+      "constraint": "       OTN 接口信息结构通过信息包含关系和流来表示。基本信息包含关系如图17、图18、图19、图\n20、图21、图22所示。出于监控目的，对于支持光层开销的OTN 接口，OTN 网络中的OCh 信号终结\n时 ，OTUk/OTUkV 信号也终结；OTSiA 信号终结时，OTUCn 信号可以终结。对于不支持光层开销的\nOTN接口，无论接口信号是否终结，OTUk/OTUKV和 OTUCn 都要终结。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 接口信息结构通过信息包含关系和流来表示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13703,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

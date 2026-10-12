@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00042930",
+  "entities": [
+    {
+      "name": "h) 更改了三种铝阳极的化学成分及电化学性能要求(见 6. 2 和 6.",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " h)    更改了三种铝阳极的化学成分及电化学性能要求(见 6. 2 和 6. 3,2002年版的 5. 2 和 5. 3) ;\n i)     增加了铝阳极的表面冷隔要求(见 6. 4. 4) ;",
+      "type": "语义分解",
+      "subject": "h) 更改了三种铝阳极的化学成分及电化学性能要求(见 6. 2 和 6.",
+      "action": "",
+      "operation": "h) 更改了三种铝阳极的化学成分及电化学性能要求(见 6. 2 和 6. 3,2002年版的 5. 2 和 5. 3) ; i) 增加了铝阳极的表面冷隔要求(见 6. 4. 4)",
+      "condition": "",
+      "constraint": " h)    更改了三种铝阳极的化学成分及电化学性能要求(见 6. 2 和 6. 3,2002年版的 5. 2 和 5. 3) ;\n i)     增加了铝阳极的表面冷隔要求(见 6. 4. 4) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "h) 更改了三种铝阳极的化学成分及电化学性能要求(见 6. 2 和 6."
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42930,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

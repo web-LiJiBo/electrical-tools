@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "10.5",
+  "entities": [
+    {
+      "name": "变更管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.5 变更管理 企业应明确变更的申请、审批、实施、验收等内容。企业应对变更可能导致的安全风险及其影响进行分析，制定相应的控制措施，履行审批程序，并告知和培训相关从业人员。企业应对组织机构、人员、管理、工艺技术、设备设施、作业环境等变更的安全风险进行过程管控，并组织开展变更验收。变更后，企业应及时修订规章制度、操作规程等文件。",
+      "type": "语义分解",
+      "subject": "变更管理",
+      "action": "",
+      "operation": "申请审批实施验收评险措施告知培训过程控制更新文件",
+      "condition": "",
+      "constraint": "10.5 变更管理 企业应明确变更的申请、审批、实施、验收等内容。企业应对变更可能导致的安全风险及其影响进行分析，制定相应的控制措施，履行审批程序，并告知和培训相关从业人员。企业应对组织机构、人员、管理、工艺技术、设备设施、作业环境等变更的安全风险进行过程管控，并组织开展变更验收。变更后，企业应及时修订规章制度、操作规程等文件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "变更管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7278,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "41",
+  "entities": [
+    {
+      "name": "自动化专业人员负责作业区域逻辑分析、屏蔽",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "41 自动化专业人员负责作业区域逻辑分析、屏蔽;应急值班人员组织设备设施或管道退出运行的工艺隔离操作;电气专业人员切断待维检修设备电源。",
+      "type": "语义分解",
+      "subject": "自动化专业人员负责作业区域逻辑分析、屏蔽",
+      "action": "",
+      "operation": "自动化专业人员负责作业区域逻辑分析、屏蔽;应急值班人员组织设备设施或管道退出运行的工艺隔离操作;电气专业人员切断待维检修设备电源。",
+      "condition": "",
+      "constraint": "41 自动化专业人员负责作业区域逻辑分析、屏蔽;应急值班人员组织设备设施或管道退出运行的工艺隔离操作;电气专业人员切断待维检修设备电源。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "自动化专业人员负责作业区域逻辑分析、屏蔽"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6656,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

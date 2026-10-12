@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "7.4",
+  "entities": [
+    {
+      "name": "排放因子选取",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4   选择或测定温室气体排放因子\n\n      在获取温室气体排放因子时 ,下列因素均应纳入考虑范围 ,获取优先级如表 4所示 :\n      a)    来源明确 ,有公信力 ;\n      b)    适用性 ;\n      c)    时效性 。",
+      "type": "语义分解",
+      "subject": "排放因子选取",
+      "action": "",
+      "operation": "考虑可信来源适用时效",
+      "condition": "",
+      "constraint": "7.4   选择或测定温室气体排放因子\n\n      在获取温室气体排放因子时 ,下列因素均应纳入考虑范围 ,获取优先级如表 4所示 :\n      a)    来源明确 ,有公信力 ;\n      b)    适用性 ;\n      c)    时效性 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排放因子选取"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34838,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；优先表缺失"
+      ]
+    }
+  }
+}

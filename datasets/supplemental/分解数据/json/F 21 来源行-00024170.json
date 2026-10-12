@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024170",
+  "entities": [
+    {
+      "name": "k) 收端软交换收到 ANM 消息 ,利用 SIP-I将 ANM 消息转",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "k)    收端软交换收到 ANM 消息 ,利用 SIP-I将 ANM 消息转换成 200 OK(ANM)响应后发出 ,此\n       消息将按 SIP系统的路由方式发给发端软交换 ;",
+      "type": "语义分解",
+      "subject": "k) 收端软交换收到 ANM 消息 ,利用 SIP-I将 ANM 消息转",
+      "action": "",
+      "operation": "k) 收端软交换收到 ANM 消息 ,利用 SIP-I将 ANM 消息转换成 200 OK(ANM)响应后发出 ,此 消息将按 SIP系统的路由方式发给发端软交换",
+      "condition": "",
+      "constraint": "k)    收端软交换收到 ANM 消息 ,利用 SIP-I将 ANM 消息转换成 200 OK(ANM)响应后发出 ,此\n       消息将按 SIP系统的路由方式发给发端软交换 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "k) 收端软交换收到 ANM 消息 ,利用 SIP-I将 ANM 消息转"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24170,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

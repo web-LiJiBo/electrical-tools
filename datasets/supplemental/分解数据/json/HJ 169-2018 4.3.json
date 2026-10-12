@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "风险评价等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 评价工作等级划分 环境风险评价工作等级划分为一级,二级,三级。根据建设项目涉及的物质及工艺系统危险性和所在地的环境敏感性确定环境风险潸势,按照表1确定评价工作等级。风险潜势为[及以上,进行一级评价;  风险潜势为皿。进行二级评价;  风险潸势为工,进行三级评价;  风险潜势为 [ ,可开展简单分析。",
+      "type": "语义分解",
+      "subject": "风险评价等级",
+      "action": "",
+      "operation": "依物质工艺危险及环境敏感性确定潜势按表划评价等级",
+      "condition": "",
+      "constraint": "4.3 评价工作等级划分 环境风险评价工作等级划分为一级,二级,三级。根据建设项目涉及的物质及工艺系统危险性和所在地的环境敏感性确定环境风险潸势,按照表1确定评价工作等级。风险潜势为[及以上,进行一级评价;  风险潜势为皿。进行二级评价;  风险潸势为工,进行三级评价;  风险潜势为 [ ,可开展简单分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险评价等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2443,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；潜势罗马数字乱码及表1未提供不得自动分级"
+      ]
+    }
+  }
+}

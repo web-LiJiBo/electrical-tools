@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026266",
+  "entities": [
+    {
+      "name": ". AG 的功能和性能应符合原信息产业部发布的 YD/T 1243.3《",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1. AG 的功能和性能应符合原信息产业部发布的 YD/T\n\n1243.3《媒体网关设备技术要求——综合接入媒体网关》。\n   2. AG 应具有TCP/IP  接口，应具备提供POTS 用户接入、IS-\nDN 接入、V5 接入、xDSL接入和 LAN 接入的能力，并根据实际应\n用环境进行配置。",
+      "type": "语义分解",
+      "subject": ". AG 的功能和性能应符合原信息产业部发布的 YD/T 1243.3《",
+      "action": "",
+      "operation": ". AG 的功能和性能应符合原信息产业部发布的 YD/T 1243.3《媒体网关设备技术要求——综合接入媒体网关》。 2. AG 应具有TCP/IP 接口，应具备提供POTS 用户接入、IS- DN 接入、V5 接入、xDSL接入和 LAN 接入的能力，并根据实际应 用环境进行配置。",
+      "condition": "",
+      "constraint": "   1. AG 的功能和性能应符合原信息产业部发布的 YD/T\n\n1243.3《媒体网关设备技术要求——综合接入媒体网关》。\n   2. AG 应具有TCP/IP  接口，应具备提供POTS 用户接入、IS-\nDN 接入、V5 接入、xDSL接入和 LAN 接入的能力，并根据实际应\n用环境进行配置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". AG 的功能和性能应符合原信息产业部发布的 YD/T 1243.3《"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26266,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

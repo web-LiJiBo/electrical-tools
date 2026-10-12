@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.4.2",
+  "entities": [
+    {
+      "name": "设备巡回检查制度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.4.2 企业应建立设备设施巡回检查管理制度 ,明确操作 ,专业技术 _管理等人员的定期检查要求, 及时发现设备异常状况并进行分析 ,处理。",
+      "type": "语义分解",
+      "subject": "设备巡回检查制度",
+      "action": "",
+      "operation": "明确各角色定检发现分析处理异常",
+      "condition": "",
+      "constraint": "4.10.4.2 企业应建立设备设施巡回检查管理制度 ,明确操作 ,专业技术 _管理等人员的定期检查要求, 及时发现设备异常状况并进行分析 ,处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备巡回检查制度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5186,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

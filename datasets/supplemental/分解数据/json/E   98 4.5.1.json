@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "管道采用套管穿越公路、铁路时，管道外应加装绝缘支 撑块",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1   管道采用套管穿越公路、铁路时，管道外应加装绝缘支\n撑块。绝缘支撑块的厚度、安装间隔及构件的尺寸应能避免管\n道和套管的电接触。",
+      "type": "语义分解",
+      "subject": "管道采用套管穿越公路、铁路时，管道外应加装绝缘支 撑块",
+      "action": "",
+      "operation": "管道采用套管穿越公路、铁路时，管道外应加装绝缘支 撑块。绝缘支撑块的厚度、安装间隔及构件的尺寸应能避免管 道和套管的电接触。",
+      "condition": "",
+      "constraint": "4.5.1   管道采用套管穿越公路、铁路时，管道外应加装绝缘支\n撑块。绝缘支撑块的厚度、安装间隔及构件的尺寸应能避免管\n道和套管的电接触。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道采用套管穿越公路、铁路时，管道外应加装绝缘支 撑块"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44377,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

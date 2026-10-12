@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.5.3",
+  "entities": [
+    {
+      "name": "含硫作业防护装备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.3 含硫化氢环境中生产作业时应配备防护装备,符合以下要求: 钻井过程 ,试油(气),修井及井下作业过程 ,以及集输站 ,水处理站 ,天然气净化厂等含硫化氢作业环境应配备正压式空气呼吸器及其匹配的空气压缩机; 配备的硫化氢防护装置应落实人员管理 ,并处于备用状态; 进行检修和抢险作业时,应携带硫化氢监测仪和正压式空气呼吸器。",
+      "type": "语义分解",
+      "subject": "含硫作业防护装备",
+      "action": "",
+      "operation": "配正压呼吸器及匹配压缩机专人管理备用检修抢险携监测仪呼吸器",
+      "condition": "",
+      "constraint": "4.5.3 含硫化氢环境中生产作业时应配备防护装备,符合以下要求: 钻井过程 ,试油(气),修井及井下作业过程 ,以及集输站 ,水处理站 ,天然气净化厂等含硫化氢作业环境应配备正压式空气呼吸器及其匹配的空气压缩机; 配备的硫化氢防护装置应落实人员管理 ,并处于备用状态; 进行检修和抢险作业时,应携带硫化氢监测仪和正压式空气呼吸器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含硫作业防护装备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4232,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

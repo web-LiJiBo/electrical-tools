@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040175",
+  "entities": [
+    {
+      "name": "化工建设项目应根据环境影响评价及其批复文件要求设 置地下水污染监测井，其",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3       化工建设项目应根据环境影响评价及其批复文件要求设\n置地下水污染监测井，其位置应根据地下水流向、污染源分布及污\n染物在地下水中的扩散形式确定。设置在项目界区内的监测井井\n口标高应高于厂区防洪标准0.5m～1.0m,   并应设置地下水污染\n防护设施。监测井服役期满后，应采取可靠的封井措施，防止污染\n地下水。",
+      "type": "语义分解",
+      "subject": "化工建设项目应根据环境影响评价及其批复文件要求设 置地下水污染监测井，其",
+      "action": "",
+      "operation": "化工建设项目应根据环境影响评价及其批复文件要求设 置地下水污染监测井，其位置应根据地下水流向、污染源分布及污 染物在地下水中的扩散形式确定。设置在项目界区内的监测井井 口标高应高于厂区防洪标准0.5m～1.0m, 并应设置地下水污染 防护设施。监测井服役期满后，应采取可靠的封井措施，防止污染 地下水。",
+      "condition": "",
+      "constraint": "6.7.3       化工建设项目应根据环境影响评价及其批复文件要求设\n置地下水污染监测井，其位置应根据地下水流向、污染源分布及污\n染物在地下水中的扩散形式确定。设置在项目界区内的监测井井\n口标高应高于厂区防洪标准0.5m～1.0m,   并应设置地下水污染\n防护设施。监测井服役期满后，应采取可靠的封井措施，防止污染\n地下水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化工建设项目应根据环境影响评价及其批复文件要求设 置地下水污染监测井，其"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40175,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

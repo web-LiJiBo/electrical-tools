@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "手工及自动监测运维记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1 监测信息记录 手工监测记录和自动监测运维记录按照 HJ 819 规定执行",
+      "type": "语义分解",
+      "subject": "手工及自动监测运维记录",
+      "action": "",
+      "operation": "按引用标准记录",
+      "condition": "",
+      "constraint": "6.1.1 监测信息记录 手工监测记录和自动监测运维记录按照 HJ 819 规定执行",
+      "constraint_role": "informational",
+      "related_entities": [
+        "手工及自动监测运维记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2918,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

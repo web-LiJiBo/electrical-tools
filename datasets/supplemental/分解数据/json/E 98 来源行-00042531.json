@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042531",
+  "entities": [
+    {
+      "name": "a 对于高强度非合金钢和屈服强度超过 550 N/mm2 的低合金钢 ,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       a    对于高强度非合金钢和屈服强度超过 550 N/mm2   的低合金钢 , 临界限制电位值应有文件证明或实验确定 。\n       b    温度为 40 ℃ ~ 60 ℃时 ,最小保护电 位 值 可 在 40 ℃的 电 位 值 ( -0. 65 V, -0. 75 V, -0. 85 V 或 -0. 95 V)与\n       60 ℃的电位值( -0. 95 V)之间通过线性插值法确定 。\n       c    高 pH值应力腐蚀开裂风险随温度升高而增加 。\n       d    如果存在马氏体和铁素体相 ,应有文件证明或通过实验确定氢脆危害风险 。\n       e    应由文献或实验确定 。",
+      "type": "语义分解",
+      "subject": "a 对于高强度非合金钢和屈服强度超过 550 N/mm2 的低合金钢 ,",
+      "action": "",
+      "operation": "a 对于高强度非合金钢和屈服强度超过 550 N/mm2 的低合金钢 , 临界限制电位值应有文件证明或实验确定 。 b 温度为 40 ℃ ~ 60 ℃时 ,最小保护电 位 值 可 在 40 ℃的 电 位 值 ( -0. 65 V, -0. 75 V, -0. 85 V 或 -0. 95 V)与 60 ℃的电位值( -0. 95 V)之间通过线性插值法确定 。 c 高 pH值应力腐蚀开裂风险随温度升高而增加 。 d 如果存在马氏体和铁素体相 ,应有文件证明或通过实验确定氢脆危害",
+      "condition": "",
+      "constraint": "       a    对于高强度非合金钢和屈服强度超过 550 N/mm2   的低合金钢 , 临界限制电位值应有文件证明或实验确定 。\n       b    温度为 40 ℃ ~ 60 ℃时 ,最小保护电 位 值 可 在 40 ℃的 电 位 值 ( -0. 65 V, -0. 75 V, -0. 85 V 或 -0. 95 V)与\n       60 ℃的电位值( -0. 95 V)之间通过线性插值法确定 。\n       c    高 pH值应力腐蚀开裂风险随温度升高而增加 。\n       d    如果存在马氏体和铁素体相 ,应有文件证明或通过实验确定氢脆危害风险 。\n       e    应由文献或实验确定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a 对于高强度非合金钢和屈服强度超过 550 N/mm2 的低合金钢 ,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42531,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

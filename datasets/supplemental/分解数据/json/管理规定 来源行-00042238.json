@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042238",
+  "entities": [
+    {
+      "name": "原则，及时、准确地查清事故事件原因，认定事故事件性质，总 结教训，提出整",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "原则，及时、准确地查清事故事件原因，认定事故事件性质，总\n\n结教训，提出整改措施，查清查明各级领导、部门及单位的管理\n\n责任，并按照相关规定对责任者提出处理意见。",
+      "type": "语义分解",
+      "subject": "原则，及时、准确地查清事故事件原因，认定事故事件性质，总 结教训，提出整",
+      "action": "",
+      "operation": "原则，及时、准确地查清事故事件原因，认定事故事件性质，总 结教训，提出整改措施，查清查明各级领导、部门及单位的管理 责任，并按照相关规定对责任者提出处理意见。",
+      "condition": "",
+      "constraint": "原则，及时、准确地查清事故事件原因，认定事故事件性质，总\n\n结教训，提出整改措施，查清查明各级领导、部门及单位的管理\n\n责任，并按照相关规定对责任者提出处理意见。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原则，及时、准确地查清事故事件原因，认定事故事件性质，总 结教训，提出整"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42238,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

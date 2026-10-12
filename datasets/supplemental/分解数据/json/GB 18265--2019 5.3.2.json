@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "5.3.2",
+  "entities": [
+    {
+      "name": "备货库房爆炸危险电力装置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.2 备货库房内的爆炸危险环境电力装置应按 GB 50058 的规定执行。",
+      "type": "语义分解",
+      "subject": "备货库房爆炸危险电力装置",
+      "action": "",
+      "operation": "按引用标准设计",
+      "condition": "",
+      "constraint": "5.3.2 备货库房内的爆炸危险环境电力装置应按 GB 50058 的规定执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "备货库房爆炸危险电力装置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3793,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

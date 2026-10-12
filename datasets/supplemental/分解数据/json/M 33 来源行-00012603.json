@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012603",
+  "entities": [
+    {
+      "name": "维护指标是维护工作的依据，维护工作的主要内容是如何使电信网的各部分投入业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   维护指标是维护工作的依据，维护工作的主要内容是如何使电信网的各部分投入业务、保持业务和\n恢复业务。维护指标是面向实际的电信网和实际的电路而不是参考模型。",
+      "type": "语义分解",
+      "subject": "维护指标是维护工作的依据，维护工作的主要内容是如何使电信网的各部分投入业",
+      "action": "",
+      "operation": "维护指标是维护工作的依据，维护工作的主要内容是如何使电信网的各部分投入业务、保持业务和 恢复业务。维护指标是面向实际的电信网和实际的电路而不是参考模型。",
+      "condition": "",
+      "constraint": "   维护指标是维护工作的依据，维护工作的主要内容是如何使电信网的各部分投入业务、保持业务和\n恢复业务。维护指标是面向实际的电信网和实际的电路而不是参考模型。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "维护指标是维护工作的依据，维护工作的主要内容是如何使电信网的各部分投入业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12603,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

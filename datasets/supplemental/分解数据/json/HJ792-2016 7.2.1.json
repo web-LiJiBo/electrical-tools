@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "制药监测数据整理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 监测数据整理 监测数据的整理严格按照 HJ/T91, HJ/T92, HJ/T373, HJ/T397 有关章节进行, 对监测数据进行整理、分析,结果以表格形式列出。监测结果与评价表参见附录C表C.24~表C.35。应特别注意以下内容: a)按照评价标准，实测的废气污染物排放浓度应换算为规定的过剩空气系数时的值。并以最大小时均值或最大值作为评价值; b) 等效源的合并: 排放同一种污染物的近距离 (距离小于几何高度之和) 排气筒按等效源评价; 异常数据、超标原因的分析。监测数据的修约。",
+      "type": "语义分解",
+      "subject": "制药监测数据整理",
+      "action": "",
+      "operation": "依规范列表评价换算空气系数取最大合近距等效源析异常修约",
+      "condition": "",
+      "constraint": "7.2.1 监测数据整理 监测数据的整理严格按照 HJ/T91, HJ/T92, HJ/T373, HJ/T397 有关章节进行, 对监测数据进行整理、分析,结果以表格形式列出。监测结果与评价表参见附录C表C.24~表C.35。应特别注意以下内容: a)按照评价标准，实测的废气污染物排放浓度应换算为规定的过剩空气系数时的值。并以最大小时均值或最大值作为评价值; b) 等效源的合并: 排放同一种污染物的近距离 (距离小于几何高度之和) 排气筒按等效源评价; 异常数据、超标原因的分析。监测数据的修约。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药监测数据整理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2795,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

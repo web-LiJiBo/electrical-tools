@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "来源行-00038091",
+  "entities": [
+    {
+      "name": "HJ 834 土壤和沉积物 半挥发性有机物的测定 气相色谱-质谱法 HJ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "HJ 834    土壤和沉积物 半挥发性有机物的测定 气相色谱-质谱法\nHJ 835   土壤和沉积物 有机氯农药的测定 气相色谱-质谱法\nHJ 921   土壤和沉积物 有机氯农药的测定 气相色谱法",
+      "type": "语义分解",
+      "subject": "HJ 834 土壤和沉积物 半挥发性有机物的测定 气相色谱-质谱法 HJ",
+      "action": "",
+      "operation": "HJ 834 土壤和沉积物 半挥发性有机物的测定 气相色谱-质谱法 HJ 835 土壤和沉积物 有机氯农药的测定 气相色谱-质谱法 HJ 921 土壤和沉积物 有机氯农药的测定 气相色谱法",
+      "condition": "",
+      "constraint": "HJ 834    土壤和沉积物 半挥发性有机物的测定 气相色谱-质谱法\nHJ 835   土壤和沉积物 有机氯农药的测定 气相色谱-质谱法\nHJ 921   土壤和沉积物 有机氯农药的测定 气相色谱法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "HJ 834 土壤和沉积物 半挥发性有机物的测定 气相色谱-质谱法 HJ"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38091,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

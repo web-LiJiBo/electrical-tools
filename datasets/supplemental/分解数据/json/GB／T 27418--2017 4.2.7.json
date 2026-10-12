@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.7",
+  "entities": [
+    {
+      "name": "输入量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.7 如果一个输入量在多次观测中存在相关的随机效应 ,例如与时间相关,则用4.2.1和 4.2.3的方 法计算的平均值和平均值的实验标准差可能是这些统计量的不恰当估计。 在这种情况下,应该采用专 门为相关的一系列随机娈化测量的数据处理设计的统计方法来分析观测值= 注: 这些专门的方法被用于处理频率标准的测量。但在对其他量的测量巾 ,当测量从短期测量过渡到长期测量时,仍假设为不相关的随机变化可能就不合理了 .这种测量也需要用专门的方法来处理 (见参考文献[9] .例如对阿仑方差的详细讨论) <。",
+      "type": "语义分解",
+      "subject": "输入量",
+      "action": "",
+      "operation": "采用适合相关随机效应的方法分析",
+      "condition": "存在相关的随机效应",
+      "constraint": "采用专 门为相关的一系列随机娈化测量的数据处理设计的统计方法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式引用与变量需核实，禁止套用独立观测假设"
+      ]
+    }
+  }
+}

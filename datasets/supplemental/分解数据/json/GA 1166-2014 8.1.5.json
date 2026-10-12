@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.1.5",
+  "entities": [
+    {
+      "name": "二级库站推荐技防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.5 技术防范除符合8.1.4的规定外 ,宜符合以下规定: a ) 油气调控中心 ,库(站)安防监控中心设置的紧急报警装置宜就近接人当地公安机关; b) 宜在周界主出入口设置出人口控制装置,出入口控制系统与该区域的摄像机联动",
+      "type": "语义分解",
+      "subject": "二级库站推荐技防",
+      "action": "",
+      "operation": "报警宜接当地公安主口宜控制与摄像联动",
+      "condition": "",
+      "constraint": "8.1.5 技术防范除符合8.1.4的规定外 ,宜符合以下规定: a ) 油气调控中心 ,库(站)安防监控中心设置的紧急报警装置宜就近接人当地公安机关; b) 宜在周界主出入口设置出人口控制装置,出入口控制系统与该区域的摄像机联动",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级库站推荐技防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5472,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

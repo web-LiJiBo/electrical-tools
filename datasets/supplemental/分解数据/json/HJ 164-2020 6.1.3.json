@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.1.3",
+  "entities": [
+    {
+      "name": "现场监测仪器准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.3 现场监测仪器摧备 若需对水位。水温 I 值。电导率。辉浊度。溶解氧。氧化还原电位。色。嗅和味等项目进行现场监测, 应在实验室内雅备好所需的仪器设备, 并进行检查和校准。确保性能正常,符合使用要求。",
+      "type": "语义分解",
+      "subject": "现场监测仪器准备",
+      "action": "",
+      "operation": "按监测项目备设备检查校准性能正常",
+      "condition": "",
+      "constraint": "6.1.3 现场监测仪器摧备 若需对水位。水温 I 值。电导率。辉浊度。溶解氧。氧化还原电位。色。嗅和味等项目进行现场监测, 应在实验室内雅备好所需的仪器设备, 并进行检查和校准。确保性能正常,符合使用要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场监测仪器准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2085,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；pH等项目名称文字识别异常"
+      ]
+    }
+  }
+}

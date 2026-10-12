@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018983",
+  "entities": [
+    {
+      "name": "● B1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "●  B1: 误码监测字节B1分配给STM-N 用于再生段比特误码监测。该功能使用比特间\n    隔校验8比特编码( BIP8), 采用偶校验。BIP-8 将RSn_CP 处扰码后的前一帧STM-N\n    所有字节进行计算，结果放在扰码前的RSOH的 B1 字节位置。",
+      "type": "语义分解",
+      "subject": "● B1",
+      "action": "",
+      "operation": "● B1: 误码监测字节B1分配给STM-N 用于再生段比特误码监测。该功能使用比特间 隔校验8比特编码( BIP8), 采用偶校验。BIP-8 将RSn_CP 处扰码后的前一帧STM-N 所有字节进行计算，结果放在扰码前的RSOH的 B1 字节位置。",
+      "condition": "",
+      "constraint": "●  B1: 误码监测字节B1分配给STM-N 用于再生段比特误码监测。该功能使用比特间\n    隔校验8比特编码( BIP8), 采用偶校验。BIP-8 将RSn_CP 处扰码后的前一帧STM-N\n    所有字节进行计算，结果放在扰码前的RSOH的 B1 字节位置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "● B1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18983,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

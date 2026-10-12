@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "10.1",
+  "entities": [
+    {
+      "name": "环境风险管理目标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1 环境风险管理目标 环境风险管理目标是采用最低合理可行原则 (as low as reasonable practicable, ALARP ) 管控环境风险。采取的环境风险防范措施应与社会经济技术发展水平相适应,运用科学的技术手段和管理方法,对环境风险进行有效的预防。监控, 响应。",
+      "type": "语义分解",
+      "subject": "环境风险管理目标",
+      "action": "",
+      "operation": "最低合理可行原则与经济技术适应科学预防监控响应",
+      "condition": "",
+      "constraint": "10.1 环境风险管理目标 环境风险管理目标是采用最低合理可行原则 (as low as reasonable practicable, ALARP ) 管控环境风险。采取的环境风险防范措施应与社会经济技术发展水平相适应,运用科学的技术手段和管理方法,对环境风险进行有效的预防。监控, 响应。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境风险管理目标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2514,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.1.6",
+  "entities": [
+    {
+      "name": "监测断面数量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1.6 监测断面的设置数量, 应考虑人类活动影响, 通过优化以最少的监测断面。垂线和监测点位 获取具有充分代表性的监测数据, 有助于了解污染物时空分布和娈化规律",
+      "type": "语义分解",
+      "subject": "监测断面数量",
+      "action": "",
+      "operation": "优化最少代表性点位反映时空变化",
+      "condition": "",
+      "constraint": "4.1.1.6 监测断面的设置数量, 应考虑人类活动影响, 通过优化以最少的监测断面。垂线和监测点位 获取具有充分代表性的监测数据, 有助于了解污染物时空分布和娈化规律",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测断面数量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2935,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

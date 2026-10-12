@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.3.1",
+  "entities": [
+    {
+      "name": "指数光度法适用性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1 最低检测质量浓度 本方法最低检测质量浓度为 0.50 mg/L (以 O, 计) ,最高可测定高锰酸盐指数(以 O。计)质量浓度为5.0 n8/。 水样中余氯达到 3.5 mg/L 时 ,本方法不适用",
+      "type": "语义分解",
+      "subject": "指数光度法适用性",
+      "action": "",
+      "operation": "检出0.50最高五毫克每升余氯达3.5毫克每升不适用",
+      "condition": "",
+      "constraint": "4.3.1 最低检测质量浓度 本方法最低检测质量浓度为 0.50 mg/L (以 O, 计) ,最高可测定高锰酸盐指数(以 O。计)质量浓度为5.0 n8/。 水样中余氯达到 3.5 mg/L 时 ,本方法不适用",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指数光度法适用性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1685,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；最高浓度单位识别异常"
+      ]
+    }
+  }
+}

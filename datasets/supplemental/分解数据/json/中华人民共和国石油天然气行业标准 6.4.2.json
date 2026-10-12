@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "会议电视协议和组网",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2    系统应支持H.323 、SIP协议 ,  应支持H.329 数据双流协议。\n视频协议宜支持H.263 、  H.264BP/HP及H.265协议。  视频格式宜支\n持720P、   1080P 、  4K分辨率 .  视频帧率宜支持最大60 帧/S。\n6.4.3    应支持任意会场成为主会场并控制会议 ,  可实现分会场\n的增减 ;  应支持不同速率的会议电视终端混合组网  ; 宜支持普\n通固定或移动电话参与会议 ; 宜支持有流媒体会议的会议电视。\n6.4.4    系统应能支持多级级联组网和控制 。",
+      "type": "语义分解",
+      "subject": "会议电视协议和组网",
+      "action": "",
+      "operation": "支持所列信令双流视频和多级级联任意主会场混合速率组网",
+      "condition": "",
+      "constraint": "6.4.2    系统应支持H.323 、SIP协议 ,  应支持H.329 数据双流协议。\n视频协议宜支持H.263 、  H.264BP/HP及H.265协议。  视频格式宜支\n持720P、   1080P 、  4K分辨率 .  视频帧率宜支持最大60 帧/S。\n6.4.3    应支持任意会场成为主会场并控制会议 ,  可实现分会场\n的增减 ;  应支持不同速率的会议电视终端混合组网  ; 宜支持普\n通固定或移动电话参与会议 ; 宜支持有流媒体会议的会议电视。\n6.4.4    系统应能支持多级级联组网和控制 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "会议电视协议和组网"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11895,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含6.4.2至6.4.4协议H.329需原件核对"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "制药调查结果整理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 调查结果整理 a) 环境管理调查结果整理与分析: 根据验收技术方案所列调查内容。逐条进行说明; b) 公众调查结果整理与分析: 逐项分类统计公众调查结果及各类意见。",
+      "type": "语义分解",
+      "subject": "制药调查结果整理",
+      "action": "",
+      "operation": "环境管理逐条说明公众结果意见分类统计",
+      "condition": "",
+      "constraint": "7.2.2 调查结果整理 a) 环境管理调查结果整理与分析: 根据验收技术方案所列调查内容。逐条进行说明; b) 公众调查结果整理与分析: 逐项分类统计公众调查结果及各类意见。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药调查结果整理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2796,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "4.4",
+  "entities": [
+    {
+      "name": "损耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4 能源及耗能工质在存储。转换和输配过程中产生的损耗应纳入综合能耗的计算。",
+      "type": "语义分解",
+      "subject": "损耗",
+      "action": "",
+      "operation": "纳入综合能耗计算",
+      "condition": "存储。转换和输配过程中",
+      "constraint": "应纳入综合能耗的计算",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "损耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

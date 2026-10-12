@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.1.2",
+  "entities": [
+    {
+      "name": "停输封存设施土壤监测点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 对于己停输封存管道。油库。站场,应在不造成安全隐患或二次污染的情况下。将土壤监测点 布设在生产设施。罐槽。污染泄漏点等重点关注区域。",
+      "type": "语义分解",
+      "subject": "停输封存设施土壤监测点",
+      "action": "",
+      "operation": "在安全且无二次污染条件下布设重点区域",
+      "condition": "对于己停输封存管道。油库。站场",
+      "constraint": "7.1.2 对于己停输封存管道。油库。站场,应在不造成安全隐患或二次污染的情况下。将土壤监测点 布设在生产设施。罐槽。污染泄漏点等重点关注区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "停输封存设施土壤监测点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 438,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

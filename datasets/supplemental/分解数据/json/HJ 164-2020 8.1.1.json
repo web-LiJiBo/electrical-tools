@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "地下水项目选取",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1 地下水监测项目主要选择 GB/T 14848 的常规项目和非常规项目 监测项目以常规项目为主。不同地区可在此基础上,根据当地的实际情况选择非常规项自_ 同肘,为便于水化学分析审核。还应补充钾。钙。镁。重碳酸根。碳酸根。游离二氧化碳等项目",
+      "type": "语义分解",
+      "subject": "地下水项目选取",
+      "action": "",
+      "operation": "以常规项目为主依地区加非常规及水化学审核项目",
+      "condition": "",
+      "constraint": "8.1.1 地下水监测项目主要选择 GB/T 14848 的常规项目和非常规项目 监测项目以常规项目为主。不同地区可在此基础上,根据当地的实际情况选择非常规项自_ 同肘,为便于水化学分析审核。还应补充钾。钙。镁。重碳酸根。碳酸根。游离二氧化碳等项目",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水项目选取"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2129,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

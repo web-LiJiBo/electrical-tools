@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023703",
+  "entities": [
+    {
+      "name": "宜采用 ITU-T H. 248协议 ,可采用 MGCP协议",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      宜采用 ITU-T H. 248协议 ,可采用 MGCP协议 。此外 ,如果接入网关连接 V5接入网 ,需要接入网\n关内嵌 V5. 2 用 户 适 配 层 V5UA 协 议 的 设 备 , 此 时 软 交 换 与 接 入 媒 体 网 关 (AG) 之 间 的 接 口 采 用\nV5UA。  如果接入网关连接 PBX,需要接入网关内嵌 ISDN用户适配层(IUA)协议的设备 ,此时软交换\n与接入媒体网关(AG)之间的接口采用 IUA协议 。",
+      "type": "语义分解",
+      "subject": "宜采用 ITU-T H. 248协议 ,可采用 MGCP协议",
+      "action": "",
+      "operation": "宜采用 ITU-T H. 248协议 ,可采用 MGCP协议 。此外 ,如果接入网关连接 V5接入网 ,需要接入网 关内嵌 V5. 2 用 户 适 配 层 V5UA 协 议 的 设 备 , 此 时 软 交 换 与 接 入 媒 体 网 关 (AG) 之 间 的 接 口 采 用 V5UA。 如果接入网关连接 PBX,需要接入网关内嵌 ISDN用户适配层(IUA)协议的设备 ,此时软交换 与接入媒体网关(AG)之间的接口采用 IUA协议 。",
+      "condition": "",
+      "constraint": "      宜采用 ITU-T H. 248协议 ,可采用 MGCP协议 。此外 ,如果接入网关连接 V5接入网 ,需要接入网\n关内嵌 V5. 2 用 户 适 配 层 V5UA 协 议 的 设 备 , 此 时 软 交 换 与 接 入 媒 体 网 关 (AG) 之 间 的 接 口 采 用\nV5UA。  如果接入网关连接 PBX,需要接入网关内嵌 ISDN用户适配层(IUA)协议的设备 ,此时软交换\n与接入媒体网关(AG)之间的接口采用 IUA协议 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜采用 ITU-T H. 248协议 ,可采用 MGCP协议"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23703,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

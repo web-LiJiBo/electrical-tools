@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第7部分: 管线打开作业",
+  "standard_id": "Q/GGI 04003.7-2022",
+  "version": "2022",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "管线打开定义",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1 概述 管线打开是指采取下列方式 (包括但不限于)改娈封闭管线或设备及其附件的完整性: a) 解开法兰; b) 从法兰上拆除一个或多个螺栓; c) 打开阀盖或拆除阀门; d) 调换8字盲板; e) 打开管线连接件; f) 去掉或打开盲板, 盲板法兰 堵头和管帽; g) 断开仪表 润滑。控制系统管线。如引压管润滑油管等; 断开加料和卸料临时管线 (包括任何连接方式的软管 ) ; h) 用机械方法或其他方法穿透管线。设备外壁; j) 开启检查孔; k) 带压开孔; l) 其他。",
+      "type": "语义分解",
+      "subject": "管线打开定义",
+      "action": "",
+      "operation": "法兰螺栓阀盖盲板接件管帽仪表临时管穿壁检查孔带压开孔等改完整性",
+      "condition": "",
+      "constraint": "5.1 概述 管线打开是指采取下列方式 (包括但不限于)改娈封闭管线或设备及其附件的完整性: a) 解开法兰; b) 从法兰上拆除一个或多个螺栓; c) 打开阀盖或拆除阀门; d) 调换8字盲板; e) 打开管线连接件; f) 去掉或打开盲板, 盲板法兰 堵头和管帽; g) 断开仪表 润滑。控制系统管线。如引压管润滑油管等; 断开加料和卸料临时管线 (包括任何连接方式的软管 ) ; h) 用机械方法或其他方法穿透管线。设备外壁; j) 开启检查孔; k) 带压开孔; l) 其他。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管线打开定义"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6129,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；范围定义"
+      ]
+    }
+  }
+}

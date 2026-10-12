@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041376",
+  "entities": [
+    {
+      "name": "生产作业废物和残渣的处理应按照出租方和土地使用者的合同要求予以实施，包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   生产作业废物和残渣的处理应按照出租方和土地使用者的合同要求予以实施，包括固体废物和残\n渣，例如罐底沉积物、钻井液和钻屑；液体废物和残余，例如生产废水和用过的油；以及气态废物，\n例如烃类和二氧化碳。为保护人体健康和环境，以及最大限度地减小对作业者的长期影响，应制定和\n保持一个恰当的废物处理预案。",
+      "type": "语义分解",
+      "subject": "生产作业废物和残渣的处理应按照出租方和土地使用者的合同要求予以实施，包括",
+      "action": "",
+      "operation": "生产作业废物和残渣的处理应按照出租方和土地使用者的合同要求予以实施，包括固体废物和残 渣，例如罐底沉积物、钻井液和钻屑；液体废物和残余，例如生产废水和用过的油；以及气态废物， 例如烃类和二氧化碳。为保护人体健康和环境，以及最大限度地减小对作业者的长期影响，应制定和 保持一个恰当的废物处理预案。",
+      "condition": "",
+      "constraint": "   生产作业废物和残渣的处理应按照出租方和土地使用者的合同要求予以实施，包括固体废物和残\n渣，例如罐底沉积物、钻井液和钻屑；液体废物和残余，例如生产废水和用过的油；以及气态废物，\n例如烃类和二氧化碳。为保护人体健康和环境，以及最大限度地减小对作业者的长期影响，应制定和\n保持一个恰当的废物处理预案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产作业废物和残渣的处理应按照出租方和土地使用者的合同要求予以实施，包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41376,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

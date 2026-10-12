@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.6.4",
+  "entities": [
+    {
+      "name": "比对样品选择",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.4 应对适用的每类环境介质各至少采集1 种实际样品开展方法比对,适用于工业废水和固定污染源废气监测的方法应至少采集2种不同污染源的实际样品开展方法比对。若实际样品未检出目标物的, 可通过实际样品基体加标的方式获得样品=",
+      "type": "语义分解",
+      "subject": "比对样品选择",
+      "action": "",
+      "operation": "每环境介质至少一种工业废水固定废气至少两源未检出可基体加标",
+      "condition": "",
+      "constraint": "5.6.4 应对适用的每类环境介质各至少采集1 种实际样品开展方法比对,适用于工业废水和固定污染源废气监测的方法应至少采集2种不同污染源的实际样品开展方法比对。若实际样品未检出目标物的, 可通过实际样品基体加标的方式获得样品=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "比对样品选择"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2324,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

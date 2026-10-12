@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "7.1.1",
+  "entities": [
+    {
+      "name": "集气站搬迁范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1 天然气集气场站的搬迁区域应符合以下要求 : 8) 硫化氢体积分数为 13% 15%的天然气集气场站,搬迁区域边缘距最近的装置区边缘宜不小于200皿。 b) 硫化氢体积分数低于 13%或高于 15%的天然气集气场站,建设单位参考本条a) 的规定。在组织专家技术论证后,可适当减小或增大搬迂区域。",
+      "type": "语义分解",
+      "subject": "集气站搬迁范围",
+      "action": "",
+      "operation": "按含硫量规定距离其他含硫量由专家调整",
+      "condition": "",
+      "constraint": "7.1.1 天然气集气场站的搬迁区域应符合以下要求 : 8) 硫化氢体积分数为 13% 15%的天然气集气场站,搬迁区域边缘距最近的装置区边缘宜不小于200皿。 b) 硫化氢体积分数低于 13%或高于 15%的天然气集气场站,建设单位参考本条a) 的规定。在组织专家技术论证后,可适当减小或增大搬迂区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集气站搬迁范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7472,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；含硫范围分隔符及距离单位识别缺损待核对"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "6.3.6",
+  "entities": [
+    {
+      "name": "存在环境风险建设项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.6 对存在环境风险的建设项月,  应分析环境风险源项,计算环境风险后果,  开展环境风险评价。 对存在较大潜在人群健康风险的建设项目, 应分析人群主要暴露途径。",
+      "type": "语义分解",
+      "subject": "存在环境风险建设项目",
+      "action": "",
+      "operation": "分析风险源后果及潜在人群暴露途径",
+      "condition": "对存在环境风险的建设项月",
+      "constraint": "6.3.6 对存在环境风险的建设项月,  应分析环境风险源项,计算环境风险后果,  开展环境风险评价。 对存在较大潜在人群健康风险的建设项目, 应分析人群主要暴露途径。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "存在环境风险建设项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2580,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

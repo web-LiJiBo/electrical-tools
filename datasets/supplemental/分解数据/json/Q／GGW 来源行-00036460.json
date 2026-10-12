@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036460",
+  "entities": [
+    {
+      "name": "在阀门、法兰及其他连接件、泵、压缩机、泄压设备开口阀或开口管线等排放源表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在阀门、法兰及其他连接件、泵、压缩机、泄压设备开口阀或开口管线等排放源表面测得甲烷逸散\n浓度超过泄漏定义浓度，表示有甲烷泄漏存在，需采取措施进行控制，本文件中泄漏定义浓度为500μ\nmol/mol。",
+      "type": "语义分解",
+      "subject": "在阀门、法兰及其他连接件、泵、压缩机、泄压设备开口阀或开口管线等排放源表",
+      "action": "",
+      "operation": "在阀门、法兰及其他连接件、泵、压缩机、泄压设备开口阀或开口管线等排放源表面测得甲烷逸散 浓度超过泄漏定义浓度，表示有甲烷泄漏存在，需采取措施进行控制，本文件中泄漏定义浓度为500μ mol/mol。",
+      "condition": "",
+      "constraint": "   在阀门、法兰及其他连接件、泵、压缩机、泄压设备开口阀或开口管线等排放源表面测得甲烷逸散\n浓度超过泄漏定义浓度，表示有甲烷泄漏存在，需采取措施进行控制，本文件中泄漏定义浓度为500μ\nmol/mol。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在阀门、法兰及其他连接件、泵、压缩机、泄压设备开口阀或开口管线等排放源表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36460,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00015056",
+  "entities": [
+    {
+      "name": "对于专用的视频接口，如DVB-ASI、SDI、HD-SDI、3G-SDI",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    对于专用的视频接口，如DVB-ASI、SDI、HD-SDI、3G-SDI等，其标准的映射复用方式为：DVB-ASI、\nSDI、HD-SDI 和 3G-SDI 客户信号通过 BMP 映射复用到 ODUflex 通道信号，再通过 GMP 映射到\nODTU2.ts 、ODTU3.ts、ODTU4.ts, 再复用到ODU2/3/4通道信号，最后到OTU2/3/4(V)   接口。\n    对于IP 化的视频接口，一般采用标准的GE/10GE LAN 接口，其标准映射方式与以太网接口相同。\n在实际 OTN 网络中，对这些视频接口，除了支持传统的点到点传送外，还可基于OTN 架构实现点到\n多点的OTUk组播。",
+      "type": "语义分解",
+      "subject": "对于专用的视频接口，如DVB-ASI、SDI、HD-SDI、3G-SDI",
+      "action": "",
+      "operation": "对于专用的视频接口，如DVB-ASI、SDI、HD-SDI、3G-SDI等，其标准的映射复用方式为：DVB-ASI、 SDI、HD-SDI 和 3G-SDI 客户信号通过 BMP 映射复用到 ODUflex 通道信号，再通过 GMP 映射到 ODTU2.ts 、ODTU3.ts、ODTU4.ts, 再复用到ODU2/3/4通道信号，最后到OTU2/3/4(V) 接口。 对于IP 化的视频接口，一般采用标准的GE/10GE LAN 接口，其标准映射方式与以太网接口相同。 在实际",
+      "condition": "",
+      "constraint": "    对于专用的视频接口，如DVB-ASI、SDI、HD-SDI、3G-SDI等，其标准的映射复用方式为：DVB-ASI、\nSDI、HD-SDI 和 3G-SDI 客户信号通过 BMP 映射复用到 ODUflex 通道信号，再通过 GMP 映射到\nODTU2.ts 、ODTU3.ts、ODTU4.ts, 再复用到ODU2/3/4通道信号，最后到OTU2/3/4(V)   接口。\n    对于IP 化的视频接口，一般采用标准的GE/10GE LAN 接口，其标准映射方式与以太网接口相同。\n在实际 OTN 网络中，对这些视频接口，除了支持传统的点到点传送外，还可基于OTN 架构实现点到\n多点的OTUk组播。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于专用的视频接口，如DVB-ASI、SDI、HD-SDI、3G-SDI"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15056,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

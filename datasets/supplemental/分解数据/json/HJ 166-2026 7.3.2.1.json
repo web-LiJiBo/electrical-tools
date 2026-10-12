@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.3.2.1",
+  "entities": [
+    {
+      "name": "土壤表层采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2.1 表层样采集 表层样取表层 0 cm- 20 cm 土壤,特殊需要也可以适当增加或减少采样深度; 种植果林类植物时可 采集 0 cm~60 cm 土壤。采样时首先清除土壤表面的植物残骸和石块等杂物,取土时尽可能垂直方向 等量取样,避免斜切。表层样可采单点样或混合样。",
+      "type": "语义分解",
+      "subject": "土壤表层采样",
+      "action": "",
+      "operation": "一般零至二十厘米果林可六十厘米清杂垂直等量避免斜切",
+      "condition": "",
+      "constraint": "7.3.2.1 表层样采集 表层样取表层 0 cm- 20 cm 土壤,特殊需要也可以适当增加或减少采样深度; 种植果林类植物时可 采集 0 cm~60 cm 土壤。采样时首先清除土壤表面的植物残骸和石块等杂物,取土时尽可能垂直方向 等量取样,避免斜切。表层样可采单点样或混合样。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤表层采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2238,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

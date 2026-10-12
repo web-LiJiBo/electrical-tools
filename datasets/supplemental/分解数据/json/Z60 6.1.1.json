@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "液VOC转移",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1  液态VOCs 物料应采用密闭管道输送。采用非管道输送方式转移液态VOCs 物料时，应采用密\n闭容器、罐车。",
+      "type": "语义分解",
+      "subject": "液VOC转移",
+      "action": "",
+      "operation": "密闭管非管用密容器罐车",
+      "condition": "",
+      "constraint": "6.1.1  液态VOCs 物料应采用密闭管道输送。采用非管道输送方式转移液态VOCs 物料时，应采用密\n闭容器、罐车。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "液VOC转移"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33327,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

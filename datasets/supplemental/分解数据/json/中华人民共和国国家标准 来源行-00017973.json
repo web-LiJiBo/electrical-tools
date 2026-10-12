@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017973",
+  "entities": [
+    {
+      "name": "系统误码性能测试可采用单向测试，也可采用环回测试方 式连接(见图3),系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1       系统误码性能测试可采用单向测试，也可采用环回测试方\n式连接(见图3),系统误码性能测试采用 SDH 误码分析仪，连续\n测试24h 的系统误码性能要符合设计要求。测试数量可按下列选\n测：",
+      "type": "语义分解",
+      "subject": "系统误码性能测试可采用单向测试，也可采用环回测试方 式连接(见图3),系",
+      "action": "",
+      "operation": "系统误码性能测试可采用单向测试，也可采用环回测试方 式连接(见图3),系统误码性能测试采用 SDH 误码分析仪，连续 测试24h 的系统误码性能要符合设计要求。测试数量可按下列选 测",
+      "condition": "",
+      "constraint": "5.1.1       系统误码性能测试可采用单向测试，也可采用环回测试方\n式连接(见图3),系统误码性能测试采用 SDH 误码分析仪，连续\n测试24h 的系统误码性能要符合设计要求。测试数量可按下列选\n测：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统误码性能测试可采用单向测试，也可采用环回测试方 式连接(见图3),系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17973,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

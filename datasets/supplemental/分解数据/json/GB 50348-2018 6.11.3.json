@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.11.3",
+  "entities": [
+    {
+      "name": "安防接地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.3 安全防范系统的接地母线应采用铜导体，接地端子应有接地标识。采用共用接地装置时，共用接地装置电阻值应满足各种接地最小电阻值的要求。采用专用接地装置时，专用接地装置电阻值不应大于4Ω;安装在室外前端设备的接地电阻值不应大于10Ω;在高山岩石的土壤电阻率大于2000Ω·m时，其接地电阻值不应大于20Ω。",
+      "type": "语义分解",
+      "subject": "安防接地",
+      "action": "",
+      "operation": "铜母线标识共用满足最小要求专用不超4欧室外10欧高山高土阻条件20欧",
+      "condition": "",
+      "constraint": "6.11.3 安全防范系统的接地母线应采用铜导体，接地端子应有接地标识。采用共用接地装置时，共用接地装置电阻值应满足各种接地最小电阻值的要求。采用专用接地装置时，专用接地装置电阻值不应大于4Ω;安装在室外前端设备的接地电阻值不应大于10Ω;在高山岩石的土壤电阻率大于2000Ω·m时，其接地电阻值不应大于20Ω。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防接地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7036,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；2000欧米适用条件及不同接地类型需分辨"
+      ]
+    }
+  }
+}

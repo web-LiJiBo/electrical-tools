@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "来源行-00029519",
+  "entities": [
+    {
+      "name": "g ）负责对区域内的重点工作、重大安全环保事故隐患整治、 检查发现问题整",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     g ）负责对区域内的重点工作、重大安全环保事故隐患整治、\n\n检查发现问题整改的跟踪督办，确认安全环保重点工作，问题隐患\n\n整改落实情况，  并及时向集团公司安全环保监督中心报告。",
+      "type": "语义分解",
+      "subject": "g ）负责对区域内的重点工作、重大安全环保事故隐患整治、 检查发现问题整",
+      "action": "",
+      "operation": "g ）负责对区域内的重点工作、重大安全环保事故隐患整治、 检查发现问题整改的跟踪督办，确认安全环保重点工作，问题隐患 整改落实情况， 并及时向集团公司安全环保监督中心报告。",
+      "condition": "",
+      "constraint": "     g ）负责对区域内的重点工作、重大安全环保事故隐患整治、\n\n检查发现问题整改的跟踪督办，确认安全环保重点工作，问题隐患\n\n整改落实情况，  并及时向集团公司安全环保监督中心报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g ）负责对区域内的重点工作、重大安全环保事故隐患整治、 检查发现问题整"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29519,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

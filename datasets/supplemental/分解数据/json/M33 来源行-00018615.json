@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018615",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注：检测到串接连接输入信号BIP-8 违例为零值时须将IEC编码为非全“0”代码，这样在TC 路经终端使用IEC 域时\n\n     可以区分TC 输入VC未装载和未装载TC。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：检测到串接连接输入信号BIP-8 违例为零值时须将IEC编码为非全“0”代码，这样在TC 路经终端使用IEC 域时 可以区分TC 输入VC未装载和未装载TC。",
+      "condition": "",
+      "constraint": "注：检测到串接连接输入信号BIP-8 违例为零值时须将IEC编码为非全“0”代码，这样在TC 路经终端使用IEC 域时\n\n     可以区分TC 输入VC未装载和未装载TC。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18615,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

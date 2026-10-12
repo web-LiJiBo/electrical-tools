@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "7.2.4",
+  "entities": [
+    {
+      "name": "扩展不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.4 当不确定度用 U 度量时 ,为尽可能清晰 ,按如下示例说明测量结果的数值: Is 一(100.02147士0.00079 )8,其中在\"士\"号后的数为扩展不确定度 U一ku 的数值 ,U 是由u一 0.35 mg 和k一2.26确定的 ,k是基于t分布 ,自由度v=9 得到的。 确定区间估计具有约 95 %的包含 概率\"。",
+      "type": "语义分解",
+      "subject": "扩展不确定度",
+      "action": "",
+      "operation": "举例说明数值报告方式",
+      "condition": "",
+      "constraint": "按如下示例说明",
+      "constraint_role": "informational",
+      "related_entities": [
+        "扩展不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "示例公式和单位损坏，不当作阈值或实测结果"
+      ]
+    }
+  }
+}

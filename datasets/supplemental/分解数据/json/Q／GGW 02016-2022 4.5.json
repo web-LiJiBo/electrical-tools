@@ -1,0 +1,39 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "4.5",
+  "entities": [
+    {
+      "name": "能源计量器具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5 计算综合能耗。生产能耗可采用的原始数据包括能源计量器具读数记录。能耗在线监测系统数据记录 能源统计报表。发货单。能源费用账单等。能源计量器具配备应符合CB17167 的要求。",
+      "type": "语义分解",
+      "subject": "能源计量器具",
+      "action": "",
+      "operation": "规定原始数据来源及配备依据",
+      "condition": "",
+      "constraint": "可采用的原始数据包括能源计量器具读数记录",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源计量器具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "CB17167疑似标准号识别错误，保留不改"
+      ]
+    }
+  }
+}

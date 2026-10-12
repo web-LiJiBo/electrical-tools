@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010807",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注：①这些应用代码的误码率的要求是对误码纠正(如果使用)后的要求。在FEC解码器输入口的误码率可以显著高于10-12\n     ②411-9D1F 的参数允许发射机的参数有两种选择(通过列进行拆分)。两组发射机参数值对同一物理接收机参数值的要求，\n       通过分隔符进行分隔。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：①这些应用代码的误码率的要求是对误码纠正(如果使用)后的要求。在FEC解码器输入口的误码率可以显著高于10-12 ②411-9D1F 的参数允许发射机的参数有两种选择(通过列进行拆分)。两组发射机参数值对同一物理接收机参数值的要求， 通过分隔符进行分隔。",
+      "condition": "",
+      "constraint": "注：①这些应用代码的误码率的要求是对误码纠正(如果使用)后的要求。在FEC解码器输入口的误码率可以显著高于10-12\n     ②411-9D1F 的参数允许发射机的参数有两种选择(通过列进行拆分)。两组发射机参数值对同一物理接收机参数值的要求，\n       通过分隔符进行分隔。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10807,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

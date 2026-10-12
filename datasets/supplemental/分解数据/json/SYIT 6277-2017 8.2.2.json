@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "8.2.2",
+  "entities": [
+    {
+      "name": "现场撤离",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2 撤离 当空气中硫化氢浓度达到应急撤离条件时,应由现场应急指挥组织人员按硫化氢现场应急撤离方案进行撤离。",
+      "type": "语义分解",
+      "subject": "现场撤离",
+      "action": "",
+      "operation": "达到条件时现场指挥按方案组织",
+      "condition": "",
+      "constraint": "8.2.2 撤离 当空气中硫化氢浓度达到应急撤离条件时,应由现场应急指挥组织人员按硫化氢现场应急撤离方案进行撤离。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场撤离"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7489,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

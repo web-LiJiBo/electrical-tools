@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "11.2.2",
+  "entities": [
+    {
+      "name": "液体玻璃温度计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.2   所有玻璃液体温度计都应按 B. 2. 4对温度计证书中给出的数据进行刻度误差修正 。",
+      "type": "语义分解",
+      "subject": "液体玻璃温度计",
+      "action": "",
+      "operation": "按证书数据B2.4刻度误差修正",
+      "condition": "",
+      "constraint": "11.2.2   所有玻璃液体温度计都应按 B. 2. 4对温度计证书中给出的数据进行刻度误差修正 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "液体玻璃温度计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35109,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

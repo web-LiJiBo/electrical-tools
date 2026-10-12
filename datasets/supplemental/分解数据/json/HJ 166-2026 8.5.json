@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "8.5",
+  "entities": [
+    {
+      "name": "制样记录标签",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5 制样记录和标签 制样记录和标签填写应满足以下要求: 及时记录样品编号。干燥方式`时长和环境条件。研磨方式。逐级过筛前后的土壤样品质量 分装质量和弃去杂质的质量等;  样品制备原始记录归档保存; 制备后的样品流转前 可在样品容器外再套一层样品袋; 样品内。外层包装上均应有制备后的样品标签。标签上包含样品编号和粒径等信息。",
+      "type": "语义分解",
+      "subject": "制样记录标签",
+      "action": "",
+      "operation": "记录编号干燥时长条件研磨各级质量内外标签粒径原始记录归档",
+      "condition": "",
+      "constraint": "8.5 制样记录和标签 制样记录和标签填写应满足以下要求: 及时记录样品编号。干燥方式`时长和环境条件。研磨方式。逐级过筛前后的土壤样品质量 分装质量和弃去杂质的质量等;  样品制备原始记录归档保存; 制备后的样品流转前 可在样品容器外再套一层样品袋; 样品内。外层包装上均应有制备后的样品标签。标签上包含样品编号和粒径等信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制样记录标签"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2269,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

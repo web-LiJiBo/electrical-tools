@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全生产检查规范 第8部分: 地下储气库",
+  "standard_id": "Q/GGW 04002.8-2022",
+  "version": "2022",
+  "chapter_path": "4.4.5",
+  "entities": [
+    {
+      "name": "丙烷压缩机组安全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.5 丙烷压缩机组安全检查 丙烷压缩机组安全检查的内容应符合表7的规定。",
+      "type": "语义分解",
+      "subject": "丙烷压缩机组安全",
+      "action": "",
+      "operation": "按表检查",
+      "condition": "",
+      "constraint": "4.4.5 丙烷压缩机组安全检查 丙烷压缩机组安全检查的内容应符合表7的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "丙烷压缩机组安全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3185,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺表7"
+      ]
+    }
+  }
+}

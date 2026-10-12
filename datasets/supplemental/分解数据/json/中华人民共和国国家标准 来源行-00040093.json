@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040093",
+  "entities": [
+    {
+      "name": "对污水中的第一类污染物，应在车间或车间废水处理设施 排放口设置规范的采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    对污水中的第一类污染物，应在车间或车间废水处理设施\n排放口设置规范的采样点位；",
+      "type": "语义分解",
+      "subject": "对污水中的第一类污染物，应在车间或车间废水处理设施 排放口设置规范的采样",
+      "action": "",
+      "operation": "对污水中的第一类污染物，应在车间或车间废水处理设施 排放口设置规范的采样点位",
+      "condition": "",
+      "constraint": "      2    对污水中的第一类污染物，应在车间或车间废水处理设施\n排放口设置规范的采样点位；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对污水中的第一类污染物，应在车间或车间废水处理设施 排放口设置规范的采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40093,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

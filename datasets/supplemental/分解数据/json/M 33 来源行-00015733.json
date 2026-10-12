@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015733",
+  "entities": [
+    {
+      "name": "中心频率(波长)是指在参考点Sn处发出的光信号的实际中心频率(波长)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   中心频率(波长)是指在参考点Sn处发出的光信号的实际中心频率(波长)。中心频率(波长)偏\n移是指标称中心频率与实际中心频率(波长)之差，其中包含了光源啁啾、信号带宽、SPM 的展宽以及\n\n温度和老化的影响。\n\n6.2.4.2  测试配置",
+      "type": "语义分解",
+      "subject": "中心频率(波长)是指在参考点Sn处发出的光信号的实际中心频率(波长)",
+      "action": "",
+      "operation": "中心频率(波长)是指在参考点Sn处发出的光信号的实际中心频率(波长)。中心频率(波长)偏 移是指标称中心频率与实际中心频率(波长)之差，其中包含了光源啁啾、信号带宽、SPM 的展宽以及 温度和老化的影响。 6.2.4.2 测试配置",
+      "condition": "",
+      "constraint": "   中心频率(波长)是指在参考点Sn处发出的光信号的实际中心频率(波长)。中心频率(波长)偏\n移是指标称中心频率与实际中心频率(波长)之差，其中包含了光源啁啾、信号带宽、SPM 的展宽以及\n\n温度和老化的影响。\n\n6.2.4.2  测试配置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中心频率(波长)是指在参考点Sn处发出的光信号的实际中心频率(波长)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15733,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

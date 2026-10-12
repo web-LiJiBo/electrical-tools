@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.5.2",
+  "entities": [
+    {
+      "name": "无人阀室工艺站机房环境",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.5.2    阀室和无人值守工艺站场通信机房的环境条件宜符合下\n列条件 :",
+      "type": "语义分解",
+      "subject": "无人阀室工艺站机房环境",
+      "action": "",
+      "operation": "宜符合所列条件",
+      "condition": "",
+      "constraint": "14.5.2    阀室和无人值守工艺站场通信机房的环境条件宜符合下\n列条件 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无人阀室工艺站机房环境"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12098,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；仅引导句环境条件缺失"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010985",
+  "entities": [
+    {
+      "name": "OCh 层可以被划分为三个子层网络",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       OCh 层可以被划分为三个子层网络：光通路子层网络、光通\n路传送单元( OTUk,k=1,2,3,4)            子层网络和光通路数据单元\n(ODUk  ,k=0,1,2,2e,3,4)         子层网络，其中 OTUk  和 ODUk  子层\n采用数字封装技术实现，相应表示的数字比特速率满足本规范第\n4.2节要求。相邻子层之间具有客户/服务者关系，ODUk  子层若\n支持复用功能，可继续递归进行子层划分。",
+      "type": "语义分解",
+      "subject": "OCh 层可以被划分为三个子层网络",
+      "action": "",
+      "operation": "OCh 层可以被划分为三个子层网络：光通路子层网络、光通 路传送单元( OTUk,k=1,2,3,4) 子层网络和光通路数据单元 (ODUk ,k=0,1,2,2e,3,4) 子层网络，其中 OTUk 和 ODUk 子层 采用数字封装技术实现，相应表示的数字比特速率满足本规范第 4.2节要求。相邻子层之间具有客户/服务者关系，ODUk 子层若 支持复用功能，可继续递归进行子层划分。",
+      "condition": "",
+      "constraint": "       OCh 层可以被划分为三个子层网络：光通路子层网络、光通\n路传送单元( OTUk,k=1,2,3,4)            子层网络和光通路数据单元\n(ODUk  ,k=0,1,2,2e,3,4)         子层网络，其中 OTUk  和 ODUk  子层\n采用数字封装技术实现，相应表示的数字比特速率满足本规范第\n4.2节要求。相邻子层之间具有客户/服务者关系，ODUk  子层若\n支持复用功能，可继续递归进行子层划分。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OCh 层可以被划分为三个子层网络"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10985,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

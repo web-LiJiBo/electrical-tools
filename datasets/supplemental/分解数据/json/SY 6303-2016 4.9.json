@@ -1,0 +1,41 @@
+{
+  "standard_name": "海洋石油设施热工(动火)作业安全规程",
+  "standard_id": "SY 6303-2016",
+  "version": "2016",
+  "chapter_path": "4.9",
+  "entities": [
+    {
+      "name": "移动设施船厂动火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9 移动式海洋石油设施在船厂修理。改造期间热工(动火)作业,应按与船厂签订的合同规定执行",
+      "type": "语义分解",
+      "subject": "移动设施船厂动火",
+      "action": "",
+      "operation": "按船厂合同规定",
+      "condition": "",
+      "constraint": "4.9 移动式海洋石油设施在船厂修理。改造期间热工(动火)作业,应按与船厂签订的合同规定执行",
+      "constraint_role": "informational",
+      "related_entities": [
+        "移动设施船厂动火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7304,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

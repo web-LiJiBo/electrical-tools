@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049452",
+  "entities": [
+    {
+      "name": "阳极引线和电缆敷设应留有一定裕量，线性阳极与电缆 的接头宜设置于储罐基础",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.5      阳极引线和电缆敷设应留有一定裕量，线性阳极与电缆\n的接头宜设置于储罐基础环梁外侧，所有连接接头应进行绝缘密\n封。安装过程中应避免损坏阳极引线和连接电缆的绝缘层。\n7.1.6       储罐罐底埋设有网状阳极或线性阳极时，阳极与储罐罐\n底之间的距离不应小于0.3m,   与储罐基础环梁不小于0 .2m,\n\n且应埋设于砂垫层中。",
+      "type": "语义分解",
+      "subject": "阳极引线和电缆敷设应留有一定裕量，线性阳极与电缆 的接头宜设置于储罐基础",
+      "action": "",
+      "operation": "阳极引线和电缆敷设应留有一定裕量，线性阳极与电缆 的接头宜设置于储罐基础环梁外侧，所有连接接头应进行绝缘密 封。安装过程中应避免损坏阳极引线和连接电缆的绝缘层。 7.1.6 储罐罐底埋设有网状阳极或线性阳极时，阳极与储罐罐 底之间的距离不应小于0.3m, 与储罐基础环梁不小于0 .2m, 且应埋设于砂垫层中。",
+      "condition": "",
+      "constraint": "7.1.5      阳极引线和电缆敷设应留有一定裕量，线性阳极与电缆\n的接头宜设置于储罐基础环梁外侧，所有连接接头应进行绝缘密\n封。安装过程中应避免损坏阳极引线和连接电缆的绝缘层。\n7.1.6       储罐罐底埋设有网状阳极或线性阳极时，阳极与储罐罐\n底之间的距离不应小于0.3m,   与储罐基础环梁不小于0 .2m,\n\n且应埋设于砂垫层中。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阳极引线和电缆敷设应留有一定裕量，线性阳极与电缆 的接头宜设置于储罐基础"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49452,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

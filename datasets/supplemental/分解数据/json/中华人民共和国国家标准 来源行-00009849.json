@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009849",
+  "entities": [
+    {
+      "name": "光信噪比指标应符合现行国家标准《波分复用( WDM) 光 纤传输系统工程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1  光信噪比指标应符合现行国家标准《波分复用( WDM) 光\n纤传输系统工程设计规范》GB/T   51152 的有关规定，详细光接口\n参数满足本标准附录B 中表 B.0.1-1～ 表 B.0.1-9   的规定。\n5.1.2  误码指标应符合现行国家标准《波分复用( WDM) 光纤传\n输系统工程设计规范》GB/T   51152 的有关规定，详细光接口参数\n满足本标准附录B中 表B.0.2-1～ 表 B.0.2-10   的规定。",
+      "type": "语义分解",
+      "subject": "光信噪比指标应符合现行国家标准《波分复用( WDM) 光 纤传输系统工程",
+      "action": "",
+      "operation": "光信噪比指标应符合现行国家标准《波分复用( WDM) 光 纤传输系统工程设计规范》GB/T 51152 的有关规定，详细光接口 参数满足本标准附录B 中表 B.0.1-1～ 表 B.0.1-9 的规定。 5.1.2 误码指标应符合现行国家标准《波分复用( WDM) 光纤传 输系统工程设计规范》GB/T 51152 的有关规定，详细光接口参数 满足本标准附录B中 表B.0.2-1～ 表 B.0.2-10 的规定。",
+      "condition": "",
+      "constraint": "5.1.1  光信噪比指标应符合现行国家标准《波分复用( WDM) 光\n纤传输系统工程设计规范》GB/T   51152 的有关规定，详细光接口\n参数满足本标准附录B 中表 B.0.1-1～ 表 B.0.1-9   的规定。\n5.1.2  误码指标应符合现行国家标准《波分复用( WDM) 光纤传\n输系统工程设计规范》GB/T   51152 的有关规定，详细光接口参数\n满足本标准附录B中 表B.0.2-1～ 表 B.0.2-10   的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光信噪比指标应符合现行国家标准《波分复用( WDM) 光 纤传输系统工程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9849,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

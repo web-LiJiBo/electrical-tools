@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041252",
+  "entities": [
+    {
+      "name": "在选址、设计、施工、油(气)开采、废水产生和处理、处置/回注装置等环节，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在选址、设计、施工、油(气)开采、废水产生和处理、处置/回注装置等环节，应根据采油方\n式的不同，对其累积产量、单位产量及最大可采储量进行预测，尽可能简化流程和设备，以降低这些\n活动或设施对环境产生的不良影响；同时还应考虑对地区人口、土壤、地表水和地下水、空气质量、\n动植物物种及动物栖息地的影响。",
+      "type": "语义分解",
+      "subject": "在选址、设计、施工、油(气)开采、废水产生和处理、处置/回注装置等环节，",
+      "action": "",
+      "operation": "在选址、设计、施工、油(气)开采、废水产生和处理、处置/回注装置等环节，应根据采油方 式的不同，对其累积产量、单位产量及最大可采储量进行预测，尽可能简化流程和设备，以降低这些 活动或设施对环境产生的不良影响；同时还应考虑对地区人口、土壤、地表水和地下水、空气质量、 动植物物种及动物栖息地的影响。",
+      "condition": "",
+      "constraint": "   在选址、设计、施工、油(气)开采、废水产生和处理、处置/回注装置等环节，应根据采油方\n式的不同，对其累积产量、单位产量及最大可采储量进行预测，尽可能简化流程和设备，以降低这些\n活动或设施对环境产生的不良影响；同时还应考虑对地区人口、土壤、地表水和地下水、空气质量、\n动植物物种及动物栖息地的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在选址、设计、施工、油(气)开采、废水产生和处理、处置/回注装置等环节，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41252,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

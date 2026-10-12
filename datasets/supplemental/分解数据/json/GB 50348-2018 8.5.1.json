@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.5.1",
+  "entities": [
+    {
+      "name": "培训监督检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.1 项目监理机构应对施工单位提供的培训计划、培训资料以及最终培训效果进行监督检查。",
+      "type": "语义分解",
+      "subject": "培训监督检查",
+      "action": "",
+      "operation": "核查计划资料及培训效果",
+      "condition": "",
+      "constraint": "8.5.1 项目监理机构应对施工单位提供的培训计划、培训资料以及最终培训效果进行监督检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "培训监督检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7116,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

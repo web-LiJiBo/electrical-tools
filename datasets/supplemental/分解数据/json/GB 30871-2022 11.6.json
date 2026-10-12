@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "11.6",
+  "entities": [
+    {
+      "name": "机械开挖",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.6 机械开挖时，应避开构筑物、管线，在距管道边1 m 范围内应采用人工开挖;在距直埋管线 2 m 范围内宜采用人工开挖，避免对管线或电缆造成影响。",
+      "type": "语义分解",
+      "subject": "机械开挖",
+      "action": "",
+      "operation": "避开结构管线并按距离改人工开挖",
+      "condition": "机械开挖时",
+      "constraint": "11.6 机械开挖时，应避开构筑物、管线，在距管道边1 m 范围内应采用人工开挖;在距直埋管线 2 m 范围内宜采用人工开挖，避免对管线或电缆造成影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机械开挖"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3950,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

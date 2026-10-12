@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "9.2.12",
+  "entities": [
+    {
+      "name": "吊装警戒范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.12 监护人员应确保吊装过程中警戒范围区内没有非作业人员或车辆经过;吊装过程中吊物及起重臂移动区域下方不应有任何人员经过或停留。",
+      "type": "语义分解",
+      "subject": "吊装警戒范围",
+      "action": "",
+      "operation": "监护禁止非作业交通及吊物下人员",
+      "condition": "",
+      "constraint": "9.2.12 监护人员应确保吊装过程中警戒范围区内没有非作业人员或车辆经过;吊装过程中吊物及起重臂移动区域下方不应有任何人员经过或停留。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "吊装警戒范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3932,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

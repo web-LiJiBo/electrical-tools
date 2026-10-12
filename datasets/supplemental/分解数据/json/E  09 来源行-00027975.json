@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027975",
+  "entities": [
+    {
+      "name": "施工单位应按重大危险源安全管理制度，对本单位的危险设施或场所进行重大危险",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1.4       施工单位应按重大危险源安全管理制度，对本单位的危险设施或场所进行重大危险源辨识与\n\n安全评估，制定重大危险源安全监控措施，对确认的重大危险源及时登记建档，并按规定备案。",
+      "type": "语义分解",
+      "subject": "施工单位应按重大危险源安全管理制度，对本单位的危险设施或场所进行重大危险",
+      "action": "",
+      "operation": "施工单位应按重大危险源安全管理制度，对本单位的危险设施或场所进行重大危险源辨识与 安全评估，制定重大危险源安全监控措施，对确认的重大危险源及时登记建档，并按规定备案。",
+      "condition": "",
+      "constraint": "5.3.1.4       施工单位应按重大危险源安全管理制度，对本单位的危险设施或场所进行重大危险源辨识与\n\n安全评估，制定重大危险源安全监控措施，对确认的重大危险源及时登记建档，并按规定备案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工单位应按重大危险源安全管理制度，对本单位的危险设施或场所进行重大危险"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27975,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

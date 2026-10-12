@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040908",
+  "entities": [
+    {
+      "name": "造林前根据树种、苗木特点和土壤墒情，对苗木进行剪梢、截干、修根、修枝、剪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    造林前根据树种、苗木特点和土壤墒情，对苗木进行剪梢、截干、修根、修枝、剪叶、摘芽、苗根\n浸水、蘸泥浆等处理；也可采用促根剂、蒸腾抑制剂和菌根制剂等新技术处理苗木。",
+      "type": "语义分解",
+      "subject": "造林前根据树种、苗木特点和土壤墒情，对苗木进行剪梢、截干、修根、修枝、剪",
+      "action": "",
+      "operation": "造林前根据树种、苗木特点和土壤墒情，对苗木进行剪梢、截干、修根、修枝、剪叶、摘芽、苗根 浸水、蘸泥浆等处理；也可采用促根剂、蒸腾抑制剂和菌根制剂等新技术处理苗木。",
+      "condition": "",
+      "constraint": "    造林前根据树种、苗木特点和土壤墒情，对苗木进行剪梢、截干、修根、修枝、剪叶、摘芽、苗根\n浸水、蘸泥浆等处理；也可采用促根剂、蒸腾抑制剂和菌根制剂等新技术处理苗木。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "造林前根据树种、苗木特点和土壤墒情，对苗木进行剪梢、截干、修根、修枝、剪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40908,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

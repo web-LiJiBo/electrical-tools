@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021714",
+  "entities": [
+    {
+      "name": "— MFI[i] 输出由10比特字组成，其中AI_D[i]K4比特1序列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "— MFI[i] 输出由10比特字组成，其中AI_D[i]K4比特1序列复帧序号(0-31)为MFI\n   的5个最低有效位，而K4 比特2序列第1帧到5帧为MFI 的5个最高有效位。如果\n       AI_TSF[i]为真则MFI[i] 输出10比特全“1”。每个成员检测 dLOM[i]。",
+      "type": "语义分解",
+      "subject": "— MFI[i] 输出由10比特字组成，其中AI_D[i]K4比特1序列",
+      "action": "",
+      "operation": "— MFI[i] 输出由10比特字组成，其中AI_D[i]K4比特1序列复帧序号(0-31)为MFI 的5个最低有效位，而K4 比特2序列第1帧到5帧为MFI 的5个最高有效位。如果 AI_TSF[i]为真则MFI[i] 输出10比特全“1”。每个成员检测 dLOM[i]。",
+      "condition": "",
+      "constraint": "— MFI[i] 输出由10比特字组成，其中AI_D[i]K4比特1序列复帧序号(0-31)为MFI\n   的5个最低有效位，而K4 比特2序列第1帧到5帧为MFI 的5个最高有效位。如果\n       AI_TSF[i]为真则MFI[i] 输出10比特全“1”。每个成员检测 dLOM[i]。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— MFI[i] 输出由10比特字组成，其中AI_D[i]K4比特1序列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21714,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

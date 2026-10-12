@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.1.1",
+  "entities": [
+    {
+      "name": "污染物排放监测范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1 污染物排放监测 包括废气污染物 (以有组织或无组织形式排入环境)。废水污染物 (苴接排入环境或排入公共污水处理系统)  及噪声污染等。",
+      "type": "语义分解",
+      "subject": "污染物排放监测范围",
+      "action": "",
+      "operation": "纳入有无组织废气废水及噪声",
+      "condition": "",
+      "constraint": "5.1.1 污染物排放监测 包括废气污染物 (以有组织或无组织形式排入环境)。废水污染物 (苴接排入环境或排入公共污水处理系统)  及噪声污染等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染物排放监测范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2820,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

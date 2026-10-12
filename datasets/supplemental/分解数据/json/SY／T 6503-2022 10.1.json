@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "10.1",
+  "entities": [
+    {
+      "name": "不合格探测器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1 经检测。维修后不合格的探测器应及时报废更新。",
+      "type": "语义分解",
+      "subject": "不合格探测器",
+      "action": "",
+      "operation": "检测维修后仍不合格及时报废更新",
+      "condition": "",
+      "constraint": "10.1 经检测。维修后不合格的探测器应及时报废更新。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不合格探测器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5853,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "3.4",
+  "entities": [
+    {
+      "name": "动火定义",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.4 动火作业 hot work 在直接或间接产生明火的工艺设旋以外的禁火区内从事可能产生火焰 ,火花或炽热表面的非常规 作业。注:  包括使用电焊 ,气焊(割) ,喷灯 ,电钻 ,砂轮 ,喷砂机等进行的作业。",
+      "type": "语义分解",
+      "subject": "动火定义",
+      "action": "",
+      "operation": "工艺明火设施以外禁火区可能产火花炽热的非常规作业",
+      "condition": "",
+      "constraint": "3.4 动火作业 hot work 在直接或间接产生明火的工艺设旋以外的禁火区内从事可能产生火焰 ,火花或炽热表面的非常规 作业。注:  包括使用电焊 ,气焊(割) ,喷灯 ,电钻 ,砂轮 ,喷砂机等进行的作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火定义"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6686,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；术语定义"
+      ]
+    }
+  }
+}

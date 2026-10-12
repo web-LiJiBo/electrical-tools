@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.6.1",
+  "entities": [
+    {
+      "name": "组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.1 数据收集 组织应详细说明每一个能源绩效参数及其相应的能源基准所需要的数据。能源种类和相关变量也应进行详细说明 应重视包含静态因素在内的所有数据的收集 组织应确定能源绩效参数边界内能源使用的重要性 ,同时确定该能源使用的绩效获得改进机会的可能性。在此基础上判定是否需要增加新仪表 ,分表 ,传感器来计量相关变量 ,并应详细说明新增计量器具在其监控 .测量和分析计划中的作用。当组织使用估计值计算能源绩效参数和相应的能源基准时 ,其假设条件和使用方法宜形成文件。当重要的能源绩效参数无法测量时 ,组织需要评估并修改能源绩效参数 ,或者引入其他仪表或测量方法 =",
+      "type": "语义分解",
+      "subject": "组织",
+      "action": "",
+      "operation": "说明数据需求并配置适当计量方式",
+      "condition": "当重要的能源绩效参数无法测量时",
+      "constraint": "评估并修改能源绩效参数",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "多个条件分支按全文保留，不自动配置真实设备"
+      ]
+    }
+  }
+}

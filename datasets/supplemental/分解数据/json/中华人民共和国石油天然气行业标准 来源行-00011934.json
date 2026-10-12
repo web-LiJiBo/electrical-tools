@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011934",
+  "entities": [
+    {
+      "name": "有人值守站场工业电视系统应以本地监控 、本地存储为 主",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3    有人值守站场工业电视系统应以本地监控 、本地存储为\n主 ;  阀室及无人值守站场应将监控和存储平台设置在就近的有\n人值守站场或区域管理中心 。",
+      "type": "语义分解",
+      "subject": "有人值守站场工业电视系统应以本地监控 、本地存储为 主",
+      "action": "",
+      "operation": "有人值守站场工业电视系统应以本地监控 、本地存储为 主 ; 阀室及无人值守站场应将监控和存储平台设置在就近的有 人值守站场或区域管理中心 。",
+      "condition": "",
+      "constraint": "      3    有人值守站场工业电视系统应以本地监控 、本地存储为\n主 ;  阀室及无人值守站场应将监控和存储平台设置在就近的有\n人值守站场或区域管理中心 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "有人值守站场工业电视系统应以本地监控 、本地存储为 主"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11934,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

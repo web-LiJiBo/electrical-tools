@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "9.1.2.6",
+  "entities": [
+    {
+      "name": "测量数据记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2.6 记录测量数据时,根据计量器具的精度和仪器的刻度, 只保留一位可疑数字,测试数据的有效位数和误差表达方式应符合有关误差理论的规定。",
+      "type": "语义分解",
+      "subject": "测量数据记录",
+      "action": "",
+      "operation": "按精度刻度保留可疑位并符合误差理论",
+      "condition": "",
+      "constraint": "9.1.2.6 记录测量数据时,根据计量器具的精度和仪器的刻度, 只保留一位可疑数字,测试数据的有效位数和误差表达方式应符合有关误差理论的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量数据记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2153,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

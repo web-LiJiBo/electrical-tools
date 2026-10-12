@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.6.4",
+  "entities": [
+    {
+      "name": "事故险情应急响应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.4 当发生事故或出现可能引发事故的险情时 ,应按应急预案的规定实施应急处置和响应 ,防止事态扩大 ,控制衍生的事故,避免人员伤亡和减少财产损失。",
+      "type": "语义分解",
+      "subject": "事故险情应急响应",
+      "action": "",
+      "operation": "按预案处置防扩大衍生及损失",
+      "condition": "当发生事故或出现可能引发事故的险情时",
+      "constraint": "4.6.4 当发生事故或出现可能引发事故的险情时 ,应按应急预案的规定实施应急处置和响应 ,防止事态扩大 ,控制衍生的事故,避免人员伤亡和减少财产损失。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故险情应急响应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4244,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

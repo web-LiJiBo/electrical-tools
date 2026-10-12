@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029084",
+  "entities": [
+    {
+      "name": "针对突发事件险情或突发事件，依据应急预案采取的应急行动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "针对突发事件险情或突发事件，依据应急预案采取的应急行动。",
+      "type": "语义分解",
+      "subject": "针对突发事件险情或突发事件，依据应急预案采取的应急行动",
+      "action": "",
+      "operation": "针对突发事件险情或突发事件，依据应急预案采取的应急行动。",
+      "condition": "",
+      "constraint": "针对突发事件险情或突发事件，依据应急预案采取的应急行动。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "针对突发事件险情或突发事件，依据应急预案采取的应急行动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29084,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

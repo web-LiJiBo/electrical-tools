@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "48",
+  "entities": [
+    {
+      "name": "管线打开的维检修作业解锁要求如下",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "48 管线打开的维检修作业解锁要求如下:(一)作业结束后,由站(库、作业区)组织作业单位开展作业交接验收,验收合格,确认设备、系统符合运行要求。(二)在作业监护人员监护下,解除锁定和危险警示牌,先解除个人锁再解除部门锁。(三)应急值班人员回收锁具、盲板、钥匙、危险警示牌及隔离锁定单。",
+      "type": "语义分解",
+      "subject": "管线打开的维检修作业解锁要求如下",
+      "action": "",
+      "operation": "管线打开的维检修作业解锁要求如下:(一)作业结束后,由站(库、作业区)组织作业单位开展作业交接验收,验收合格,确认设备、系统符合运行要求。(二)在作业监护人员监护下,解除锁定和危险警示牌,先解除个人锁再解除部门锁。(三)应急值班人员回收锁具、盲板、钥匙、危险警示牌及隔离锁定单。",
+      "condition": "",
+      "constraint": "48 管线打开的维检修作业解锁要求如下:(一)作业结束后,由站(库、作业区)组织作业单位开展作业交接验收,验收合格,确认设备、系统符合运行要求。(二)在作业监护人员监护下,解除锁定和危险警示牌,先解除个人锁再解除部门锁。(三)应急值班人员回收锁具、盲板、钥匙、危险警示牌及隔离锁定单。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管线打开的维检修作业解锁要求如下"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6665,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "路由设置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1      路由设置应有利于减少话务转接的级数，在注意经济合理\n的同时，应充分考虑网络的安全、可靠，便于网络管理和维护。\n6.2.2      同 一城市多个长途交换系统之间路由设置应符合以下\n要求。",
+      "type": "语义分解",
+      "subject": "路由设置",
+      "action": "",
+      "operation": "减少转接兼顾经济安全可靠管理维护",
+      "condition": "",
+      "constraint": "6.2.1      路由设置应有利于减少话务转接的级数，在注意经济合理\n的同时，应充分考虑网络的安全、可靠，便于网络管理和维护。\n6.2.2      同 一城市多个长途交换系统之间路由设置应符合以下\n要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "路由设置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含6.2.2同城多长途引导句无清单"
+      ]
+    }
+  }
+}

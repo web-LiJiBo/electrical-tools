@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042216",
+  "entities": [
+    {
+      "name": "（ 六 ）突发环境事件的报告分为初报、续报和处理结果报 告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 六 ）突发环境事件的报告分为初报、续报和处理结果报\n\n告。初报在发现或者得知突发环境事件后首次上报；续报在查清\n\n有关基本情况、事件发展情况后随时上报；处理结果报告在突发\n\n环境事件处理完毕后上报。",
+      "type": "语义分解",
+      "subject": "（ 六 ）突发环境事件的报告分为初报、续报和处理结果报 告",
+      "action": "",
+      "operation": "（ 六 ）突发环境事件的报告分为初报、续报和处理结果报 告。初报在发现或者得知突发环境事件后首次上报；续报在查清 有关基本情况、事件发展情况后随时上报；处理结果报告在突发 环境事件处理完毕后上报。",
+      "condition": "",
+      "constraint": "    （ 六 ）突发环境事件的报告分为初报、续报和处理结果报\n\n告。初报在发现或者得知突发环境事件后首次上报；续报在查清\n\n有关基本情况、事件发展情况后随时上报；处理结果报告在突发\n\n环境事件处理完毕后上报。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 六 ）突发环境事件的报告分为初报、续报和处理结果报 告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42216,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

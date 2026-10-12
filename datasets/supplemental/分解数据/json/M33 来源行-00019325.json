@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019325",
+  "entities": [
+    {
+      "name": "c) 处理过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    处理过程：DCC 数据通信通路被连续地置入D4-D12(STM-1 、STM-4 、STM-16和 STM-64)\n   或D13-D256( 镇字节位置( STM-256), 它是一个576kbit/s或9216kbit/s 面向消息的独立通路，\n\n   用于告警、维护、控制、监测、管理和其他通信需要。它可用于内部产生的、外部产生的和制\n   造商特定的消息。所使用的协议框架应符合ITU-T  G784。附录C 给出了DCC 应用的一种实\n   例。",
+      "type": "语义分解",
+      "subject": "c) 处理过程",
+      "action": "",
+      "operation": "c) 处理过程：DCC 数据通信通路被连续地置入D4-D12(STM-1 、STM-4 、STM-16和 STM-64) 或D13-D256( 镇字节位置( STM-256), 它是一个576kbit/s或9216kbit/s 面向消息的独立通路， 用于告警、维护、控制、监测、管理和其他通信需要。它可用于内部产生的、外部产生的和制 造商特定的消息。所使用的协议框架应符合ITU-T G784。附录C 给出了DCC 应用的一种实 例。",
+      "condition": "",
+      "constraint": "c)    处理过程：DCC 数据通信通路被连续地置入D4-D12(STM-1 、STM-4 、STM-16和 STM-64)\n   或D13-D256( 镇字节位置( STM-256), 它是一个576kbit/s或9216kbit/s 面向消息的独立通路，\n\n   用于告警、维护、控制、监测、管理和其他通信需要。它可用于内部产生的、外部产生的和制\n   造商特定的消息。所使用的协议框架应符合ITU-T  G784。附录C 给出了DCC 应用的一种实\n   例。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 处理过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19325,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

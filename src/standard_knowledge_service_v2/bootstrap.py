@@ -25,6 +25,7 @@ def build_application(config_path: str | Path) -> Application:
     from .hybrid_reasoning import HybridReasoningEngine
     from .llm_decomposition import QwenDecompositionConfig
     from .retrieval_engine.lunwen_adapter import LocalLunwenRetrievalAdapter
+    from .retrieval_engine.clause_retriever import JsonClauseRepository
     from .scenarios.registry import ScenarioRegistry
 
     project_root = Path(__file__).resolve().parents[2]
@@ -35,6 +36,14 @@ def build_application(config_path: str | Path) -> Application:
     retriever = LocalLunwenRetrievalAdapter.from_dataset(
         dataset, threshold=config.retrieval.entity_similarity_threshold
     )
+    if config.data.supplemental_json is not None:
+        if not config.data.supplemental_json.is_dir():
+            raise FileNotFoundError(f"配置的补充条款目录不存在: {config.data.supplemental_json}")
+        supplemental = JsonClauseRepository.from_directory(config.data.supplemental_json)
+        existing_ids = {unit.clause_id for unit in retriever.repository.units}
+        if any(unit.clause_id in existing_ids for unit in supplemental.units):
+            raise ValueError("原库和补充库的条款内部标识发生冲突")
+        retriever.repository.units.extend(supplemental.units)
     audit_store = JsonlAuditStore(config.data.audit_store)
     if config.llm.backend == "deepseek_api":
         decomposer = DeepSeekDecomposer(DeepSeekConfig(
@@ -61,5 +70,12 @@ def build_application(config_path: str | Path) -> Application:
         list(config.consistency.weights),
         config.consistency.threshold,
     )
-    pipeline = AnalysisPipeline(retriever, audit_store, config, decomposer, consistency, HybridReasoningEngine())
+    from .knowledge_graph.current_graph import CurrentKnowledgeGraph
+    from .hybrid_reasoning.semantic_reasoner import SemanticReasoner
+    graph = CurrentKnowledgeGraph(retriever.repository.units)
+    pipeline = AnalysisPipeline(retriever, audit_store, config, decomposer, consistency,
+                                HybridReasoningEngine(semantic_reasoner=SemanticReasoner(graph)))
+    pipeline.knowledge_graph = graph
+    from .application.grounded_advice import GroundedAdviceService
+    pipeline.advisor = GroundedAdviceService(decomposer if config.advice_enabled else None)
     return Application(facade=pipeline, registry=ScenarioRegistry(), audit_store=audit_store)

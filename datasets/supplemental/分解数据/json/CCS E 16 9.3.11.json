@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.3.11",
+  "entities": [
+    {
+      "name": "桥塔缺陷变位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.3.11   混凝土桥塔表面存在侵蚀剥落、蜂窝、麻面、露筋及钢筋锈蚀等缺陷时，应及时修复。\n9.3.12   混凝土桥塔开裂时，应根据裂缝性质和影响程度，及时采取相应处置措施。\n9.3.13  悬索、斜拉索跨越塔顶变位异常时，应进行专项检测评估并及时处置。",
+      "type": "语义分解",
+      "subject": "桥塔缺陷变位",
+      "action": "",
+      "operation": "表面裂缝修复异常塔顶专项评估及时处置",
+      "condition": "",
+      "constraint": "9.3.11   混凝土桥塔表面存在侵蚀剥落、蜂窝、麻面、露筋及钢筋锈蚀等缺陷时，应及时修复。\n9.3.12   混凝土桥塔开裂时，应根据裂缝性质和影响程度，及时采取相应处置措施。\n9.3.13  悬索、斜拉索跨越塔顶变位异常时，应进行专项检测评估并及时处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "桥塔缺陷变位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30131,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028817",
+  "entities": [
+    {
+      "name": "下列文件对于本文件的应用是必不可少的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文\n件。凡是不注日期的引用文件，其最新版本(包括所有的修改单)适用于本文件。",
+      "type": "语义分解",
+      "subject": "下列文件对于本文件的应用是必不可少的",
+      "action": "",
+      "operation": "下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文 件。凡是不注日期的引用文件，其最新版本(包括所有的修改单)适用于本文件。",
+      "condition": "",
+      "constraint": "   下列文件对于本文件的应用是必不可少的。凡是注日期的引用文件，仅注日期的版本适用于本文\n件。凡是不注日期的引用文件，其最新版本(包括所有的修改单)适用于本文件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "下列文件对于本文件的应用是必不可少的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28817,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

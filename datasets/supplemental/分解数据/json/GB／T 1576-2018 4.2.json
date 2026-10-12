@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "锅外处理锅炉水质",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 采用锅外水处理的自然循环蒸汽锅炉和汽水两用锅炉水质 对于供汽轮机用汽的锅炉给水溶解氧应小于或等于0.050 mg/L。 对蒸汽质量要求不高 ,并且无过热器的锅炉 ,锅水全碱度上限值可适当放宽 ,但放宽后锅水的 PH(25 C)不应 超过上限。",
+      "type": "语义分解",
+      "subject": "锅外处理锅炉水质",
+      "action": "",
+      "operation": "汽轮机供汽给水溶解氧不超过0.050mg/L低品质无过热器可放宽碱度但pH不得超上限",
+      "condition": "",
+      "constraint": "4.2 采用锅外水处理的自然循环蒸汽锅炉和汽水两用锅炉水质 对于供汽轮机用汽的锅炉给水溶解氧应小于或等于0.050 mg/L。 对蒸汽质量要求不高 ,并且无过热器的锅炉 ,锅水全碱度上限值可适当放宽 ,但放宽后锅水的 PH(25 C)不应 超过上限。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锅外处理锅炉水质"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4090,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；两种适用条件不得混同pH上限需关联表"
+      ]
+    }
+  }
+}

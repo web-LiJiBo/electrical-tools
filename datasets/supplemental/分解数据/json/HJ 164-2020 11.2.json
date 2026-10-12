@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "11.2",
+  "entities": [
+    {
+      "name": "监测井分布图",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2 绘制监测点(井〉位分布图 监测点(井)位分布图幅面为 A3 或A4,正上方为正北指向 底图应含河流。湖消。水库。城镇 省。市。县界,经纬线等 应标明比例尺和图例 每个监测点(井)旁应注明监测点(井)编号及监测点(井)名称。对某一监测点(井) 如须详细表述周围地质构造 污染源分布等信息时可采用局部放大法。",
+      "type": "语义分解",
+      "subject": "监测井分布图",
+      "action": "",
+      "operation": "A3或A4北向底图要素比例图例标编号名称可局部放大",
+      "condition": "",
+      "constraint": "11.2 绘制监测点(井〉位分布图 监测点(井)位分布图幅面为 A3 或A4,正上方为正北指向 底图应含河流。湖消。水库。城镇 省。市。县界,经纬线等 应标明比例尺和图例 每个监测点(井)旁应注明监测点(井)编号及监测点(井)名称。对某一监测点(井) 如须详细表述周围地质构造 污染源分布等信息时可采用局部放大法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测井分布图"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2193,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

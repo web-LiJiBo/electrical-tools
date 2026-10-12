@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00022040",
+  "entities": [
+    {
+      "name": "由于这个原因，没有必要在此重复细说ITU-T G8251-2001附录I",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   由于这个原因，没有必要在此重复细说ITU-T G8251-2001附录IV 关于仿真模型和抖动累积分析，\n取而代之的是将ITU-T G.8251-2001附录IV 仿真模型结果作为参考，此处的核心是将结果用于STM-64\n\n情形。",
+      "type": "语义分解",
+      "subject": "由于这个原因，没有必要在此重复细说ITU-T G8251-2001附录I",
+      "action": "",
+      "operation": "由于这个原因，没有必要在此重复细说ITU-T G8251-2001附录IV 关于仿真模型和抖动累积分析， 取而代之的是将ITU-T G.8251-2001附录IV 仿真模型结果作为参考，此处的核心是将结果用于STM-64 情形。",
+      "condition": "",
+      "constraint": "   由于这个原因，没有必要在此重复细说ITU-T G8251-2001附录IV 关于仿真模型和抖动累积分析，\n取而代之的是将ITU-T G.8251-2001附录IV 仿真模型结果作为参考，此处的核心是将结果用于STM-64\n\n情形。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "由于这个原因，没有必要在此重复细说ITU-T G8251-2001附录I"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22040,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012348",
+  "entities": [
+    {
+      "name": "将同 一类型业务如 SCADA业务 、 工业电视业务 、 会议 电视业务",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       3    将同 一类型业务如 SCADA业务 、  工业电视业务 、  会议\n电视业务等分别装载在不同的 VC4颗粒里面 ,   可以简化电路管\n理 ,   并且便于后期扩容 .",
+      "type": "语义分解",
+      "subject": "将同 一类型业务如 SCADA业务 、 工业电视业务 、 会议 电视业务",
+      "action": "",
+      "operation": "将同 一类型业务如 SCADA业务 、 工业电视业务 、 会议 电视业务等分别装载在不同的 VC4颗粒里面 , 可以简化电路管 理 , 并且便于后期扩容 .",
+      "condition": "",
+      "constraint": "       3    将同 一类型业务如 SCADA业务 、  工业电视业务 、  会议\n电视业务等分别装载在不同的 VC4颗粒里面 ,   可以简化电路管\n理 ,   并且便于后期扩容 .",
+      "constraint_role": "informational",
+      "related_entities": [
+        "将同 一类型业务如 SCADA业务 、 工业电视业务 、 会议 电视业务"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12348,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

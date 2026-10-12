@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040353",
+  "entities": [
+    {
+      "name": "随着社会的进步和人们对环境质量的要求不断提高，对于 工业园区，国家和地方",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.0.1       随着社会的进步和人们对环境质量的要求不断提高，对于\n工业园区，国家和地方政府均有总体规划，在选择厂址时，首先应\n考虑当地的各类规划和环境保护要求，设立工业园区的区域，在厂\n址选择时应首先选址在工业园区内，并必须符合园区规划环境影\n响评价及其批复文件的要求。",
+      "type": "语义分解",
+      "subject": "随着社会的进步和人们对环境质量的要求不断提高，对于 工业园区，国家和地方",
+      "action": "",
+      "operation": "随着社会的进步和人们对环境质量的要求不断提高，对于 工业园区，国家和地方政府均有总体规划，在选择厂址时，首先应 考虑当地的各类规划和环境保护要求，设立工业园区的区域，在厂 址选择时应首先选址在工业园区内，并必须符合园区规划环境影 响评价及其批复文件的要求。",
+      "condition": "",
+      "constraint": "4.0.1       随着社会的进步和人们对环境质量的要求不断提高，对于\n工业园区，国家和地方政府均有总体规划，在选择厂址时，首先应\n考虑当地的各类规划和环境保护要求，设立工业园区的区域，在厂\n址选择时应首先选址在工业园区内，并必须符合园区规划环境影\n响评价及其批复文件的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "随着社会的进步和人们对环境质量的要求不断提高，对于 工业园区，国家和地方"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40353,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

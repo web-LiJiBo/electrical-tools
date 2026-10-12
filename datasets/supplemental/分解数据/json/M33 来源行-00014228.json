@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014228",
+  "entities": [
+    {
+      "name": "表15规定了27500km HROP的端到端误码性能目标数值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   表15规定了27500km HROP的端到端误码性能目标数值。SESR和BBER假设使用了标准的ITU-T\nG.709/Y.1331 FEC。适用于真实通道的实际目标值根据表15导出，使用后面详细描述的分配原则。通\n\n道的各个方向应独立满足所有参数的分配目标。换句话说，如果在给定评估周期结束时，通道任一方向\n\n的任一参数超过分配的目标，则该通道未能满足要求。本要求应理解为需满足的长期目标值，典型的测\n\n试评估周期是30天(1个月)。",
+      "type": "语义分解",
+      "subject": "表15规定了27500km HROP的端到端误码性能目标数值",
+      "action": "",
+      "operation": "表15规定了27500km HROP的端到端误码性能目标数值。SESR和BBER假设使用了标准的ITU-T G.709/Y.1331 FEC。适用于真实通道的实际目标值根据表15导出，使用后面详细描述的分配原则。通 道的各个方向应独立满足所有参数的分配目标。换句话说，如果在给定评估周期结束时，通道任一方向 的任一参数超过分配的目标，则该通道未能满足要求。本要求应理解为需满足的长期目标值，典型的测 试评估周期是30天(1个月)。",
+      "condition": "",
+      "constraint": "   表15规定了27500km HROP的端到端误码性能目标数值。SESR和BBER假设使用了标准的ITU-T\nG.709/Y.1331 FEC。适用于真实通道的实际目标值根据表15导出，使用后面详细描述的分配原则。通\n\n道的各个方向应独立满足所有参数的分配目标。换句话说，如果在给定评估周期结束时，通道任一方向\n\n的任一参数超过分配的目标，则该通道未能满足要求。本要求应理解为需满足的长期目标值，典型的测\n\n试评估周期是30天(1个月)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "表15规定了27500km HROP的端到端误码性能目标数值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14228,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

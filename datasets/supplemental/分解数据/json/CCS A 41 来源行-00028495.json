@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028495",
+  "entities": [
+    {
+      "name": "DLSS项目的 技 术 路 线 众 多 , 以 DMADV 为 例 , ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      DLSS项目的 技 术 路 线 众 多 , 以 DMADV 为 例 , 给 出了 DLSS项 目 各 阶 段 的 输 入 、主 要 工 作 和 输\n出 ,如表 A. 2所示 。",
+      "type": "语义分解",
+      "subject": "DLSS项目的 技 术 路 线 众 多 , 以 DMADV 为 例 , ",
+      "action": "",
+      "operation": "DLSS项目的 技 术 路 线 众 多 , 以 DMADV 为 例 , 给 出了 DLSS项 目 各 阶 段 的 输 入 、主 要 工 作 和 输 出 ,如表 A. 2所示 。",
+      "condition": "",
+      "constraint": "      DLSS项目的 技 术 路 线 众 多 , 以 DMADV 为 例 , 给 出了 DLSS项 目 各 阶 段 的 输 入 、主 要 工 作 和 输\n出 ,如表 A. 2所示 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "DLSS项目的 技 术 路 线 众 多 , 以 DMADV 为 例 , "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28495,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

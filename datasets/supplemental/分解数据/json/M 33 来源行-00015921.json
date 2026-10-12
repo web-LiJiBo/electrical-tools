@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015921",
+  "entities": [
+    {
+      "name": "a) 选择测试通路，按图28所示连接好测试配置，检查仪表和OTN网络的各",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      a) 选择测试通路，按图28所示连接好测试配置，检查仪表和OTN网络的各个参考点接收功率处于\n\n正常范围。",
+      "type": "语义分解",
+      "subject": "a) 选择测试通路，按图28所示连接好测试配置，检查仪表和OTN网络的各",
+      "action": "",
+      "operation": "a) 选择测试通路，按图28所示连接好测试配置，检查仪表和OTN网络的各个参考点接收功率处于 正常范围。",
+      "condition": "",
+      "constraint": "      a) 选择测试通路，按图28所示连接好测试配置，检查仪表和OTN网络的各个参考点接收功率处于\n\n正常范围。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 选择测试通路，按图28所示连接好测试配置，检查仪表和OTN网络的各"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15921,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

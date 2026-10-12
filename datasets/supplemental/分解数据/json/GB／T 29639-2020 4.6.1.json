@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "4.6.1",
+  "entities": [
+    {
+      "name": "应急预案编制原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.1 应急预案编制应当遵循以人为本、依法依规、符合实际、注重实效的原则，以应急处置为核心，体现自救互救和先期处置的特点，做到职责明确、程序规范、措施科学，尽可能简明化、图表化、流程化。应急预案编制格式和要求参见附录C。",
+      "type": "语义分解",
+      "subject": "应急预案编制原则",
+      "action": "",
+      "operation": "以人为本依法实际实效以处置为核心明确职责科学规范简明图表流程化",
+      "condition": "",
+      "constraint": "4.6.1 应急预案编制应当遵循以人为本、依法依规、符合实际、注重实效的原则，以应急处置为核心，体现自救互救和先期处置的特点，做到职责明确、程序规范、措施科学，尽可能简明化、图表化、流程化。应急预案编制格式和要求参见附录C。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急预案编制原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录C格式未提供"
+      ]
+    }
+  }
+}

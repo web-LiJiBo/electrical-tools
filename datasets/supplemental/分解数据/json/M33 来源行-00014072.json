@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014072",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注1:标称OTUk速率近似为：2666057.143 kbit/s(OTU1),10709225.316 kbit/s(OTU2),43018413.559 kbit/s(OTU3),\n    111809973.568 kbit/s(OTU4)和n×105258138.053 kbit/s(OTUCn)。\n注2:本标准没有定义OTU0,OTU2e和OTUflex。ODUO能够在ODU1,ODU2,ODU3,ODU4或ODUCn上传送，\n    ODU2e能够在ODU3,ODU4和ODUCn上传送。ODUflex能够在ODU2,ODU3,ODU4,ODUCn上传送。\n注3:OTUk(k=1,2,3,4)信号比特速率包含FEC开销区。OTUCn信号比特速率不包含FEC开销区",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "注1:标称OTUk速率近似为：2666057.143 kbit/s(OTU1),10709225.316 kbit/s(OTU2),43018413.559 kbit/s(OTU3),\n    111809973.568 kbit/s(OTU4)和n×105258138.053 kbit/s(OTUCn)。\n注2:本标准没有定义OTU0,OTU2e和OTUflex。ODUO能够在ODU1,ODU2,ODU3,ODU4或ODUCn上传送，\n    ODU2e能够在ODU3,ODU4和ODUCn上传送。ODUflex能够在ODU2,ODU3,ODU4,ODUCn上传送。\n注3:OTUk(k=1,2,3,4)信号比特速率包含FEC开销区。OTUCn信号比特速率不包含FEC开销区",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14072,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

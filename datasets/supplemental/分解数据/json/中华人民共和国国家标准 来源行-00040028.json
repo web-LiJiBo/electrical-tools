@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040028",
+  "entities": [
+    {
+      "name": "排放有毒有害废气的化工建设项目宜布置在当地城镇或 居民区等环境保护目标全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.0.5       排放有毒有害废气的化工建设项目宜布置在当地城镇或\n居民区等环境保护目标全年最小频率风向的上风侧。",
+      "type": "语义分解",
+      "subject": "排放有毒有害废气的化工建设项目宜布置在当地城镇或 居民区等环境保护目标全",
+      "action": "",
+      "operation": "排放有毒有害废气的化工建设项目宜布置在当地城镇或 居民区等环境保护目标全年最小频率风向的上风侧。",
+      "condition": "",
+      "constraint": "4.0.5       排放有毒有害废气的化工建设项目宜布置在当地城镇或\n居民区等环境保护目标全年最小频率风向的上风侧。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排放有毒有害废气的化工建设项目宜布置在当地城镇或 居民区等环境保护目标全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40028,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

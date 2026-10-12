@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "8.3.1",
+  "entities": [
+    {
+      "name": "防腐阴保阳极",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.1   应定期检测管道防腐层、补口、阴极保护、牺牲阳极情况，及时修补损坏的防腐层、补口，调\n整阴极保护参数。",
+      "type": "语义分解",
+      "subject": "防腐阴保阳极",
+      "action": "",
+      "operation": "定检及时修补调参数",
+      "condition": "",
+      "constraint": "8.3.1   应定期检测管道防腐层、补口、阴极保护、牺牲阳极情况，及时修补损坏的防腐层、补口，调\n整阴极保护参数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防腐阴保阳极"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30080,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

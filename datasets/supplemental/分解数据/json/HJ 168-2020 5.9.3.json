@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.9.3",
+  "entities": [
+    {
+      "name": "近似值乘开方",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.9.3 近似值乘方或开方时 , 计算结果的有效数字位数与原近似值有效数字位数相同=",
+      "type": "语义分解",
+      "subject": "近似值乘开方",
+      "action": "",
+      "operation": "保持结果有效数字位数一致",
+      "condition": "",
+      "constraint": "5.9.3 近似值乘方或开方时 , 计算结果的有效数字位数与原近似值有效数字位数相同=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "近似值乘开方"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2334,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

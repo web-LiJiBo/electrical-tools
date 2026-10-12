@@ -34,6 +34,7 @@ class DataPaths:
     feedback_store: Path
     optimization_proposals: Path
     audit_store: Path
+    supplemental_json: Path | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -78,6 +79,7 @@ class AppConfig:
     retrieval: RetrievalSettings
     llm: LLMSettings
     consistency: ConsistencySettings
+    advice_enabled: bool = True
 
 
 def _mapping(value: Any, name: str) -> dict[str, Any]:
@@ -182,6 +184,7 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             feedback_store=_path(root, feedback.get("store"), "feedback.store"),
             optimization_proposals=_path(root, feedback.get("proposal_output"), "feedback.proposal_output"),
             audit_store=_path(root, audit.get("store", "data/audit/audit.jsonl"), "audit.store"),
+            supplemental_json=_optional_path(root, dataset.get("supplemental_json")),
         ),
         retrieval=RetrievalSettings(
             entity_similarity_threshold=_number(retrieval, "entity_similarity_threshold", 0.3),
@@ -210,4 +213,5 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             threshold=_number(consistency, "fallback_threshold", 0.62),
             weights=tuple(float(item) for item in raw_consistency_weights),
         ),
+        advice_enabled=bool(_mapping(payload.get('llm_advice'), 'llm_advice').get('enabled', True)),
     )

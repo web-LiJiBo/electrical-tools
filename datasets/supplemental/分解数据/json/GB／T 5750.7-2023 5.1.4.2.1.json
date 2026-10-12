@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "5.1.4.2.1",
+  "entities": [
+    {
+      "name": "生化需氧量样预处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4.2.1 水样 PH 应为6.5~7.5之间 ,水样呈酸性或含苛性碱 ,余氯 _亚硝酸盐 ,亚铁盐 ,硫化物及某些有毒物质对测定有干扰 ,应分别处理后测定。 饮用水源水受到废水污染时 ,可用硫酸溶液或氢氧化钠溶液予以调整。",
+      "type": "语义分解",
+      "subject": "生化需氧量样预处理",
+      "action": "",
+      "operation": "pH6.5至7.5酸碱余氯亚硝酸盐亚铁硫化物毒物干扰分别处理",
+      "condition": "",
+      "constraint": "5.1.4.2.1 水样 PH 应为6.5~7.5之间 ,水样呈酸性或含苛性碱 ,余氯 _亚硝酸盐 ,亚铁盐 ,硫化物及某些有毒物质对测定有干扰 ,应分别处理后测定。 饮用水源水受到废水污染时 ,可用硫酸溶液或氢氧化钠溶液予以调整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生化需氧量样预处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1766,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

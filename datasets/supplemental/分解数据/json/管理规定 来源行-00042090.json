@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042090",
+  "entities": [
+    {
+      "name": "查清原因，查明性质，认定责任，总结教训，制定整改措施，并 对事故事件责任",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "查清原因，查明性质，认定责任，总结教训，制定整改措施，并\n\n对事故事件责任者提出处理意见。事故事件的报告、调查和处理\n\n过程、整改措施的落实情况均应有完整全面的书面记录。",
+      "type": "语义分解",
+      "subject": "查清原因，查明性质，认定责任，总结教训，制定整改措施，并 对事故事件责任",
+      "action": "",
+      "operation": "查清原因，查明性质，认定责任，总结教训，制定整改措施，并 对事故事件责任者提出处理意见。事故事件的报告、调查和处理 过程、整改措施的落实情况均应有完整全面的书面记录。",
+      "condition": "",
+      "constraint": "查清原因，查明性质，认定责任，总结教训，制定整改措施，并\n\n对事故事件责任者提出处理意见。事故事件的报告、调查和处理\n\n过程、整改措施的落实情况均应有完整全面的书面记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "查清原因，查明性质，认定责任，总结教训，制定整改措施，并 对事故事件责任"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42090,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

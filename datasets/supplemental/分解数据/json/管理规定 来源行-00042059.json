@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042059",
+  "entities": [
+    {
+      "name": "是指使人肢体残废、毁人容貌、丧失听觉、丧失视觉、丧失 其他器官功能或者其",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   是指使人肢体残废、毁人容貌、丧失听觉、丧失视觉、丧失\n\n其他器官功能或者其他对于人身健康有重大伤害的损伤，包括重\n\n伤一级和重伤二级。判定标准按《人体损伤程度鉴定标准》执行。\n\n   2.轻伤",
+      "type": "语义分解",
+      "subject": "是指使人肢体残废、毁人容貌、丧失听觉、丧失视觉、丧失 其他器官功能或者其",
+      "action": "",
+      "operation": "是指使人肢体残废、毁人容貌、丧失听觉、丧失视觉、丧失 其他器官功能或者其他对于人身健康有重大伤害的损伤，包括重 伤一级和重伤二级。判定标准按《人体损伤程度鉴定标准》执行。 2.轻伤",
+      "condition": "",
+      "constraint": "   是指使人肢体残废、毁人容貌、丧失听觉、丧失视觉、丧失\n\n其他器官功能或者其他对于人身健康有重大伤害的损伤，包括重\n\n伤一级和重伤二级。判定标准按《人体损伤程度鉴定标准》执行。\n\n   2.轻伤",
+      "constraint_role": "informational",
+      "related_entities": [
+        "是指使人肢体残废、毁人容貌、丧失听觉、丧失视觉、丧失 其他器官功能或者其"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42059,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

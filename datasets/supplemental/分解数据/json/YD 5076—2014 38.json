@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "38",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "38\t11.5.1\t原规范YD 5153、YD/T\n5155中关于No.7信令.\n的 计 算 引 用 了 Y D / T\n5094《No.7信令网工程\n设计规范》的具体公式\t  删掉引用其他规范\n的内容，对相关内容\n进行整合，改为“交\n换 系 统 间 T U P 、\n  ISUP、INAP信令链\n路的计算应符合\n  YD/T 5094《No.7\n  信令网工程设计规\n范》的要求”\t删除了引用的具体内容",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "38\t11.5.1\t原规范YD 5153、YD/T\n5155中关于No.7信令.\n的 计 算 引 用 了 Y D / T\n5094《No.7信令网工程\n设计规范》的具体公式\t  删掉引用其他规范\n的内容，对相关内容\n进行整合，改为“交\n换 系 统 间 T U P 、\n  ISUP、INAP信令链\n路的计算应符合\n  YD/T 5094《No.7\n  信令网工程设计规\n范》的要求”\t删除了引用的具体内容",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26509,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

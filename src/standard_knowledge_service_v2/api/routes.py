@@ -13,6 +13,46 @@ def register_routes(app, application) -> None:
     def health():
         return {"status": "ok", "dispatch_allowed": False}
 
+    @app.get("/knowledge/summary")
+    def knowledge_summary():
+        return application.facade.knowledge_graph.summary()
+
+    @app.get("/knowledge/questions")
+    def knowledge_questions():
+        from ..knowledge_graph.question_catalog import available_questions
+        return available_questions(application.facade)
+
+    @app.get("/simulation/state")
+    def simulation_state():
+        return application.facade.simulation_session.snapshot()
+
+    @app.get('/simulation/templates')
+    def simulation_templates():
+        from copy import deepcopy
+        session = application.facade.simulation_session
+        with session.lock:
+            return {'simulation_only': True, 'devices': deepcopy(list(session.service.devices.values()))}
+
+    @app.post('/simulation/templates/test')
+    def test_simulation_template(payload: dict):
+        from ..instruction_engine.template_editor import test_template
+        session = application.facade.simulation_session
+        try:
+            with session.lock:
+                return test_template(session.service, payload)
+        except ValueError as exc:
+            raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+    @app.post('/simulation/templates')
+    def save_simulation_template(payload: dict):
+        from ..instruction_engine.template_editor import save_custom
+        session = application.facade.simulation_session
+        try:
+            with session.lock:
+                return save_custom(session.service, payload)
+        except ValueError as exc:
+            raise HTTPException(status_code=422, detail=str(exc)) from exc
+
     @app.post("/analyze")
     def analyze(payload: dict):
         try:
@@ -39,7 +79,8 @@ def register_routes(app, application) -> None:
     @app.post("/generate-instruction")
     def generate_instruction(payload: dict):
         response = application.facade.analyze(analysis_request_from_json(payload))
-        return {"status": response.status, "candidate_instruction": response.data.get("candidate_instruction"), "missing_fields": response.data.get("missing_fields", [])}
+        return {"status": response.status, "candidate_instruction": response.data.get("candidate_instruction"), "missing_fields": response.data.get("missing_fields", []),
+                "processing": response.data.get("processing", {}), "advice": response.data.get("advice", {}), "warnings": response.warnings}
 
     @app.post("/validate")
     def validate(payload: dict):

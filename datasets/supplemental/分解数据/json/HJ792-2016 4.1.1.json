@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "分期制药项目验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1 对分期建设、分期投入生产的制药建设项目，可分期开展验收。对于分期验收的建设项目，环境保护设施的运行应该满足阶段性的要求。",
+      "type": "语义分解",
+      "subject": "分期制药项目验收",
+      "action": "",
+      "operation": "允许分期且设施运行满足阶段要求",
+      "condition": "对分期建设、分期投入生产的制药建设项目",
+      "constraint": "4.1.1 对分期建设、分期投入生产的制药建设项目，可分期开展验收。对于分期验收的建设项目，环境保护设施的运行应该满足阶段性的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分期制药项目验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2680,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "3.11",
+  "entities": [
+    {
+      "name": "多建设方案环境比选",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.11 建设方案的环境比对选择 建设项目有多个建设方案。涉及环境敏感区或环境影响显著时 ,应重点从环境制约因素。环境影响 程度等方面进行建设方案环境比对选择。",
+      "type": "语义分解",
+      "subject": "多建设方案环境比选",
+      "action": "",
+      "operation": "敏感或显著影响时重点比较环境因素",
+      "condition": "建设项目有多个建设方案。涉及环境敏感区或环境影响显著时",
+      "constraint": "3.11 建设方案的环境比对选择 建设项目有多个建设方案。涉及环境敏感区或环境影响显著时 ,应重点从环境制约因素。环境影响 程度等方面进行建设方案环境比对选择。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多建设方案环境比选"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2547,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

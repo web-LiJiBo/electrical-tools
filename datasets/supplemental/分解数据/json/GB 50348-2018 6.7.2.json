@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.7.2",
+  "entities": [
+    {
+      "name": "设备抗扰",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.2 安全防范系统所用设备的静电放电抗扰度、电快速瞬变脉冲群抗扰度、浪涌(冲击)抗扰度应符合现行国家标准《安全防范报警设备电磁兼容抗扰度要求和试验方法》GB/T 30148的相关规定。",
+      "type": "语义分解",
+      "subject": "设备抗扰",
+      "action": "",
+      "operation": "静电脉冲浪涌符合GB/T30148",
+      "condition": "",
+      "constraint": "6.7.2 安全防范系统所用设备的静电放电抗扰度、电快速瞬变脉冲群抗扰度、浪涌(冲击)抗扰度应符合现行国家标准《安全防范报警设备电磁兼容抗扰度要求和试验方法》GB/T 30148的相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备抗扰"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7010,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

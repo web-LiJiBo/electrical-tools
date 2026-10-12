@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037842",
+  "entities": [
+    {
+      "name": "应建立工艺放空相关台账，严格区分冷、热放空",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   应建立工艺放空相关台账，严格区分冷、热放空；定期统计不同类型\n\n站场设施数量，设施包括压气站/增压站、计量站/分输站、管线（逆止阀）、\n\n清管站。",
+      "type": "语义分解",
+      "subject": "应建立工艺放空相关台账，严格区分冷、热放空",
+      "action": "",
+      "operation": "应建立工艺放空相关台账，严格区分冷、热放空；定期统计不同类型 站场设施数量，设施包括压气站/增压站、计量站/分输站、管线（逆止阀）、 清管站。",
+      "condition": "",
+      "constraint": "   应建立工艺放空相关台账，严格区分冷、热放空；定期统计不同类型\n\n站场设施数量，设施包括压气站/增压站、计量站/分输站、管线（逆止阀）、\n\n清管站。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应建立工艺放空相关台账，严格区分冷、热放空"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37842,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

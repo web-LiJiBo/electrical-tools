@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水卫生标准",
+  "standard_id": "GB 5749-2022",
+  "version": "2022",
+  "chapter_path": "5.3",
+  "entities": [
+    {
+      "name": "不达要求的饮用水水源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3 水源水质不能满足5.1或5.2要求 ,不宜作为生活饮用水水源 但限于条件限制需加以利用时 ,应 采用相应的净水工艺进行处理 ,处理后的水质应满足本文件要求。",
+      "type": "语义分解",
+      "subject": "不达要求的饮用水水源",
+      "action": "",
+      "operation": "原则不选用并在受限使用时净化达标",
+      "condition": "水源水质不能满足5.1或5.2要求",
+      "constraint": "5.3 水源水质不能满足5.1或5.2要求 ,不宜作为生活饮用水水源 但限于条件限制需加以利用时 ,应 采用相应的净水工艺进行处理 ,处理后的水质应满足本文件要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不达要求的饮用水水源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 983,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺相关水质限值上下文"
+      ]
+    }
+  }
+}

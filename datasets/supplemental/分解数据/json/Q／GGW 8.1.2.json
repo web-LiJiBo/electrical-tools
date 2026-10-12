@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "8.1.2",
+  "entities": [
+    {
+      "name": "温室数据管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.2       建立健全温室气体数据记录管理体系，包括数据来源、数据获取时间以及相关责任人等信息的\n记录管理；",
+      "type": "语义分解",
+      "subject": "温室数据管理",
+      "action": "",
+      "operation": "健全体系记录来源获取时间责任人",
+      "condition": "",
+      "constraint": "8.1.2       建立健全温室气体数据记录管理体系，包括数据来源、数据获取时间以及相关责任人等信息的\n记录管理；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "温室数据管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37307,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016549",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "光监控通路性能\t一.误码秒(适用于2Mbit/s和STM-1信号);\n一严重误码秒(适用于2Mbit/s和STM-1信号);\n一远端误码秒(适用于2Mbit/s和STM-1信号);\n一远端严重误码秒(适用于2Mbit/s和STM-1信号);\n一不可用秒(适用于2Mbit/s和STM-1信号);(可选)\n一输入光功率；\n一激光器输出光功率；\n一激光器偏置电流；\n一激光器工作温度(可选);\n一激光器制冷电流(可选)",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "光监控通路性能\t一.误码秒(适用于2Mbit/s和STM-1信号);\n一严重误码秒(适用于2Mbit/s和STM-1信号);\n一远端误码秒(适用于2Mbit/s和STM-1信号);\n一远端严重误码秒(适用于2Mbit/s和STM-1信号);\n一不可用秒(适用于2Mbit/s和STM-1信号);(可选)\n一输入光功率；\n一激光器输出光功率；\n一激光器偏置电流；\n一激光器工作温度(可选);\n一激光器制冷电流(可选)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16549,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

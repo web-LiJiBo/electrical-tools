@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040065",
+  "entities": [
+    {
+      "name": "废水、废液、废渣收集、储存、处理或处置过程中，对散发挥 发性有机物和产生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.7      废水、废液、废渣收集、储存、处理或处置过程中，对散发挥\n发性有机物和产生恶臭污染物的主要环节应采取有效的密闭与废\n气收集措施，产生的废气应接入废气回收或处理装置。",
+      "type": "语义分解",
+      "subject": "废水、废液、废渣收集、储存、处理或处置过程中，对散发挥 发性有机物和产生",
+      "action": "",
+      "operation": "废水、废液、废渣收集、储存、处理或处置过程中，对散发挥 发性有机物和产生恶臭污染物的主要环节应采取有效的密闭与废 气收集措施，产生的废气应接入废气回收或处理装置。",
+      "condition": "",
+      "constraint": "5.2.7      废水、废液、废渣收集、储存、处理或处置过程中，对散发挥\n发性有机物和产生恶臭污染物的主要环节应采取有效的密闭与废\n气收集措施，产生的废气应接入废气回收或处理装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水、废液、废渣收集、储存、处理或处置过程中，对散发挥 发性有机物和产生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40065,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

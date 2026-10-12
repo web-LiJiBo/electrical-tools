@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008643",
+  "entities": [
+    {
+      "name": "OMSP(Optical Multiplex Section Prote",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "OMSP(Optical    Multiplex    Section    Protection)    光复用段保护\nOSC(Optical   Supervisory   Channel )    光监控通路\nOSNR(Optical     Signal-to-Noise    Ratio)        光信噪比",
+      "type": "语义分解",
+      "subject": "OMSP(Optical Multiplex Section Prote",
+      "action": "",
+      "operation": "OMSP(Optical Multiplex Section Protection) 光复用段保护 OSC(Optical Supervisory Channel ) 光监控通路 OSNR(Optical Signal-to-Noise Ratio) 光信噪比",
+      "condition": "",
+      "constraint": "OMSP(Optical    Multiplex    Section    Protection)    光复用段保护\nOSC(Optical   Supervisory   Channel )    光监控通路\nOSNR(Optical     Signal-to-Noise    Ratio)        光信噪比",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OMSP(Optical Multiplex Section Prote"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8643,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.16.2",
+  "entities": [
+    {
+      "name": "方法精密度统计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.16.2 实验室内的精密度主要用实验室内相对标准偏差。实验室内 95%置信区间 (必要时 ) 表示。实验室间的精密度应对验证实验数据汇总统计分析,采用统一样品的,用实验室间相对标|偏差。重复性限r和再现性限R (数据呈偏态分布时采用实验室内和实验室间 95%置信区间)表示; 采用非统一样品的,给出各验证实验室对各类型样品的相对标准偏差等参数范围",
+      "type": "语义分解",
+      "subject": "方法精密度统计",
+      "action": "",
+      "operation": "按统一或非统一样给内外偏差重复再现限必要置信区间",
+      "condition": "",
+      "constraint": "8.16.2 实验室内的精密度主要用实验室内相对标准偏差。实验室内 95%置信区间 (必要时 ) 表示。实验室间的精密度应对验证实验数据汇总统计分析,采用统一样品的,用实验室间相对标|偏差。重复性限r和再现性限R (数据呈偏态分布时采用实验室内和实验室间 95%置信区间)表示; 采用非统一样品的,给出各验证实验室对各类型样品的相对标准偏差等参数范围",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法精密度统计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2420,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "11.1.3",
+  "entities": [
+    {
+      "name": "分析方法测定下限",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.3 所选用分析方法的测定下限应低于规定的监测项目的标谁限值。",
+      "type": "语义分解",
+      "subject": "分析方法测定下限",
+      "action": "",
+      "operation": "低于监测项目标准限值",
+      "condition": "",
+      "constraint": "11.1.3 所选用分析方法的测定下限应低于规定的监测项目的标谁限值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分析方法测定下限"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 520,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

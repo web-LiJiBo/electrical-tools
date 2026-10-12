@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00024092",
+  "entities": [
+    {
+      "name": "b) SIP终端 A通过软交换向另一 SIP终端发送Invite请求 ,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    SIP终端 A通过软交换向另一 SIP终端发送Invite请求 ,SIP终端收到最终响应后 ,发送 ACK\n       请求后 。  SIP终端 B发送 Options请求 ,SIP终端 A 收到 Options请求后发送 200响应 。\nc)    SIP终端 B将接收到 Options请求的 200响应 。",
+      "type": "语义分解",
+      "subject": "b) SIP终端 A通过软交换向另一 SIP终端发送Invite请求 ,",
+      "action": "",
+      "operation": "b) SIP终端 A通过软交换向另一 SIP终端发送Invite请求 ,SIP终端收到最终响应后 ,发送 ACK 请求后 。 SIP终端 B发送 Options请求 ,SIP终端 A 收到 Options请求后发送 200响应 。 c) SIP终端 B将接收到 Options请求的 200响应 。",
+      "condition": "",
+      "constraint": "b)    SIP终端 A通过软交换向另一 SIP终端发送Invite请求 ,SIP终端收到最终响应后 ,发送 ACK\n       请求后 。  SIP终端 B发送 Options请求 ,SIP终端 A 收到 Options请求后发送 200响应 。\nc)    SIP终端 B将接收到 Options请求的 200响应 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) SIP终端 A通过软交换向另一 SIP终端发送Invite请求 ,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24092,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

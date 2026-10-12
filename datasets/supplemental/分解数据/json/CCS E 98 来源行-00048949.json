@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048949",
+  "entities": [
+    {
+      "name": ",3.0.3 提出管道交流腐蚀评价应为一个持续、不断改进 的过程，包括监",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.2,3.0.3     提出管道交流腐蚀评价应为一个持续、不断改进\n的过程，包括监检测、评价、缓解效果评价等环节。在开展管\n道交流腐蚀评价前，应编制详细的检测评价方案。",
+      "type": "语义分解",
+      "subject": ",3.0.3 提出管道交流腐蚀评价应为一个持续、不断改进 的过程，包括监",
+      "action": "",
+      "operation": ",3.0.3 提出管道交流腐蚀评价应为一个持续、不断改进 的过程，包括监检测、评价、缓解效果评价等环节。在开展管 道交流腐蚀评价前，应编制详细的检测评价方案。",
+      "condition": "",
+      "constraint": "3.0.2,3.0.3     提出管道交流腐蚀评价应为一个持续、不断改进\n的过程，包括监检测、评价、缓解效果评价等环节。在开展管\n道交流腐蚀评价前，应编制详细的检测评价方案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ",3.0.3 提出管道交流腐蚀评价应为一个持续、不断改进 的过程，包括监"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48949,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

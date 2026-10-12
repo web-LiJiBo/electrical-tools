@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00043282",
+  "entities": [
+    {
+      "name": "c) 前 10 d每天测量一次铝阳极试样的工作电位 ,之后每周测试一次铝",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    前 10 d每天测量一次铝阳极试样的工作电位 ,之后每周测试一次铝阳极试样的工作电位 ;\nd)    至少每周记录一次试验介质的温度和盐度 ;\ne)    总试验周期不小于 12个月 。",
+      "type": "语义分解",
+      "subject": "c) 前 10 d每天测量一次铝阳极试样的工作电位 ,之后每周测试一次铝",
+      "action": "",
+      "operation": "c) 前 10 d每天测量一次铝阳极试样的工作电位 ,之后每周测试一次铝阳极试样的工作电位 ; d) 至少每周记录一次试验介质的温度和盐度 ; e) 总试验周期不小于 12个月 。",
+      "condition": "",
+      "constraint": "c)    前 10 d每天测量一次铝阳极试样的工作电位 ,之后每周测试一次铝阳极试样的工作电位 ;\nd)    至少每周记录一次试验介质的温度和盐度 ;\ne)    总试验周期不小于 12个月 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 前 10 d每天测量一次铝阳极试样的工作电位 ,之后每周测试一次铝"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43282,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

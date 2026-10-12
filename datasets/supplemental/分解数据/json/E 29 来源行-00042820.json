@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042820",
+  "entities": [
+    {
+      "name": ". 8 上游管段的内检测结果用于评估无法进行内检测的下游管道内腐蚀状态时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2. 8   上游管段的内检测结果用于评估无法进行内检测的下游管道内腐蚀状态时 ,应结合开挖检测结\n果对内检测结果进行验证 。",
+      "type": "语义分解",
+      "subject": ". 8 上游管段的内检测结果用于评估无法进行内检测的下游管道内腐蚀状态时",
+      "action": "",
+      "operation": ". 8 上游管段的内检测结果用于评估无法进行内检测的下游管道内腐蚀状态时 ,应结合开挖检测结 果对内检测结果进行验证 。",
+      "condition": "",
+      "constraint": "7.2. 8   上游管段的内检测结果用于评估无法进行内检测的下游管道内腐蚀状态时 ,应结合开挖检测结\n果对内检测结果进行验证 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 8 上游管段的内检测结果用于评估无法进行内检测的下游管道内腐蚀状态时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42820,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

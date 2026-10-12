@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.2.5",
+  "entities": [
+    {
+      "name": "国际交换功能测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5      国际交换设备的功能测试具体要求如下。",
+      "type": "语义分解",
+      "subject": "国际交换功能测试",
+      "action": "",
+      "operation": "清单缺失",
+      "condition": "",
+      "constraint": "4.2.5      国际交换设备的功能测试具体要求如下。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "国际交换功能测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26901,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

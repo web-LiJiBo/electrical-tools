@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.10.3",
+  "entities": [
+    {
+      "name": "制药公众调查内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.10.3 公众意见调查内容 主要针对施工、试生产期出现的环境问题以及污染扰民情况征询当地居民意见、建议。验收阶段尽可能将利益相关方纳入调查。参见附录C中表C.22。问卷内容明确参与调查者对工程环保工作的总体满意程度,若答案为\"影响较重\"或\"不满意\" ,应写明原因,如不注明原因可视为无效问卷。",
+      "type": "语义分解",
+      "subject": "制药公众调查内容",
+      "action": "",
+      "operation": "征施工试生产扰民意见纳利益方负面答案说明原因否则可无效",
+      "condition": "",
+      "constraint": "6.10.3 公众意见调查内容 主要针对施工、试生产期出现的环境问题以及污染扰民情况征询当地居民意见、建议。验收阶段尽可能将利益相关方纳入调查。参见附录C中表C.22。问卷内容明确参与调查者对工程环保工作的总体满意程度,若答案为\"影响较重\"或\"不满意\" ,应写明原因,如不注明原因可视为无效问卷。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药公众调查内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2783,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录C未提供"
+      ]
+    }
+  }
+}

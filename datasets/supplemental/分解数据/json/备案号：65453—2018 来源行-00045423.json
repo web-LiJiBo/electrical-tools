@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045423",
+  "entities": [
+    {
+      "name": "C.2.2 DCVG 测试的地电位梯度值较小时，使用的测试仪表应 能够准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "C.2.2   DCVG 测试的地电位梯度值较小时，使用的测试仪表应\n能够准确测试100mV或更小的电压值。\nC.2.3   DCVG 测试应包括以下步骤：",
+      "type": "语义分解",
+      "subject": "C.2.2 DCVG 测试的地电位梯度值较小时，使用的测试仪表应 能够准",
+      "action": "",
+      "operation": "C.2.2 DCVG 测试的地电位梯度值较小时，使用的测试仪表应 能够准确测试100mV或更小的电压值。 C.2.3 DCVG 测试应包括以下步骤",
+      "condition": "",
+      "constraint": "C.2.2   DCVG 测试的地电位梯度值较小时，使用的测试仪表应\n能够准确测试100mV或更小的电压值。\nC.2.3   DCVG 测试应包括以下步骤：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "C.2.2 DCVG 测试的地电位梯度值较小时，使用的测试仪表应 能够准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45423,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

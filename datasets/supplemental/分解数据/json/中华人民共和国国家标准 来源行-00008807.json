@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008807",
+  "entities": [
+    {
+      "name": "OTU 连接到OMU 的输出接口之后光纤连接处的参考点为 S,ODU 后",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2  OTU 连接到OMU 的输出接口之后光纤连接处的参考点为\nS,ODU   后面连接OTU 的输入接口之前光纤连接处的参考点为R;\n   3  OMU  后面 OA ( 用于光功率放大)光输出接口之后光纤连\n接处的参考点为MPI-SM,ODU   前面 OA (用于前置放大)输入接\n口之前光纤连接处的参考点为 MPI-RM;",
+      "type": "语义分解",
+      "subject": "OTU 连接到OMU 的输出接口之后光纤连接处的参考点为 S,ODU 后",
+      "action": "",
+      "operation": "OTU 连接到OMU 的输出接口之后光纤连接处的参考点为 S,ODU 后面连接OTU 的输入接口之前光纤连接处的参考点为R; 3 OMU 后面 OA ( 用于光功率放大)光输出接口之后光纤连 接处的参考点为MPI-SM,ODU 前面 OA (用于前置放大)输入接 口之前光纤连接处的参考点为 MPI-RM",
+      "condition": "",
+      "constraint": "   2  OTU 连接到OMU 的输出接口之后光纤连接处的参考点为\nS,ODU   后面连接OTU 的输入接口之前光纤连接处的参考点为R;\n   3  OMU  后面 OA ( 用于光功率放大)光输出接口之后光纤连\n接处的参考点为MPI-SM,ODU   前面 OA (用于前置放大)输入接\n口之前光纤连接处的参考点为 MPI-RM;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTU 连接到OMU 的输出接口之后光纤连接处的参考点为 S,ODU 后"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8807,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045453",
+  "entities": [
+    {
+      "name": "在信号馈入点，按仪器的使用说明书连接好发射机的输 出和电源接线，并保证接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1    在信号馈入点，按仪器的使用说明书连接好发射机的输\n出和电源接线，并保证接地良好。",
+      "type": "语义分解",
+      "subject": "在信号馈入点，按仪器的使用说明书连接好发射机的输 出和电源接线，并保证接",
+      "action": "",
+      "operation": "在信号馈入点，按仪器的使用说明书连接好发射机的输 出和电源接线，并保证接地良好。",
+      "condition": "",
+      "constraint": "      1    在信号馈入点，按仪器的使用说明书连接好发射机的输\n出和电源接线，并保证接地良好。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在信号馈入点，按仪器的使用说明书连接好发射机的输 出和电源接线，并保证接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45453,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

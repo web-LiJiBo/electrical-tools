@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "合成标准不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1 根据本标准所依据的测量不确定度声明工作组的建议书 IVC-I (1980 ) (见本标准的引言 )及 CIPM 批准并再次确认的建议书 1(CI-Ig81 )和建议书 l(CI-Ig8G ) (见 A.2 和 A.3) ,提倡用合成标准不 确定度 u(y )作为定量表示测量结果的不确定度的参数。实际上 ,在其笫二次建议中 ,CIPM 已经要求 所有参加 CIPM 及其咨询委员会举办的国际比对及其他T作的参加者在给出结果时使用合成标准不确 定度 U(y)。",
+      "type": "语义分解",
+      "subject": "合成标准不确定度",
+      "action": "",
+      "operation": "用于报告测量结果不确定度",
+      "condition": "",
+      "constraint": "作为定量表示测量结果的不确定度的参数",
+      "constraint_role": "informational",
+      "related_entities": [
+        "合成标准不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "建议书编号及变量存在识别错误"
+      ]
+    }
+  }
+}

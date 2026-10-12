@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033609",
+  "entities": [
+    {
+      "name": "d) 用中值对仪器标定，并将仪器响应值与制造厂给出的或原先标定的曲线对比",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "d)    用中值对仪器标定，并将仪器响应值与制造厂给出的或原先标定的曲线对比，若浓度相对误\n       差超过满量程 ±2%  , 则应检查仪器并重新录取标定曲线 。",
+      "type": "语义分解",
+      "subject": "d) 用中值对仪器标定，并将仪器响应值与制造厂给出的或原先标定的曲线对比",
+      "action": "",
+      "operation": "d) 用中值对仪器标定，并将仪器响应值与制造厂给出的或原先标定的曲线对比，若浓度相对误 差超过满量程 ±2% , 则应检查仪器并重新录取标定曲线 。",
+      "condition": "",
+      "constraint": "d)    用中值对仪器标定，并将仪器响应值与制造厂给出的或原先标定的曲线对比，若浓度相对误\n       差超过满量程 ±2%  , 则应检查仪器并重新录取标定曲线 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 用中值对仪器标定，并将仪器响应值与制造厂给出的或原先标定的曲线对比"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33609,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

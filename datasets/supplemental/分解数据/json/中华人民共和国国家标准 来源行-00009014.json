@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009014",
+  "entities": [
+    {
+      "name": "本地网50km光复用段的长期(测试时间不少于1个月) 误码性能指标不应超",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5本地网50km光复用段的长期(测试时间不少于1个月)\n误码性能指标不应超出表7.2.5-1和表7.2.5-2的指标要求。实\n际光复用段误码性能指标应按表7.2.5-1和表7.2.5-2的指标乘\n以实际光复用段长度与50km之比进行计算，实际复用段长度小\n于30km的应按30km计算。",
+      "type": "语义分解",
+      "subject": "本地网50km光复用段的长期(测试时间不少于1个月) 误码性能指标不应超",
+      "action": "",
+      "operation": "本地网50km光复用段的长期(测试时间不少于1个月) 误码性能指标不应超出表7.2.5-1和表7.2.5-2的指标要求。实 际光复用段误码性能指标应按表7.2.5-1和表7.2.5-2的指标乘 以实际光复用段长度与50km之比进行计算，实际复用段长度小 于30km的应按30km计算。",
+      "condition": "",
+      "constraint": "7.2.5本地网50km光复用段的长期(测试时间不少于1个月)\n误码性能指标不应超出表7.2.5-1和表7.2.5-2的指标要求。实\n际光复用段误码性能指标应按表7.2.5-1和表7.2.5-2的指标乘\n以实际光复用段长度与50km之比进行计算，实际复用段长度小\n于30km的应按30km计算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本地网50km光复用段的长期(测试时间不少于1个月) 误码性能指标不应超"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9014,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水卫生标准",
+  "standard_id": "GB 5749-2022",
+  "version": "2022",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "饮用水处理药剂设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1 处理生活饮用水采用的絮凝_助凝 消莓 ,氧化 吸附  PH 调节 防锈 阻垢等化学处理剂不应污染 生活饮用水 ,应符合 GB/T 17218-1998中第3章的规定;消莓剂和消毒设备应符合《生活饮用水消毒 剂和消莓设备卫生安全评价规范(试行) 》规定。",
+      "type": "语义分解",
+      "subject": "饮用水处理药剂设备",
+      "action": "",
+      "operation": "不得污染水并符合卫生安全引用规范",
+      "condition": "",
+      "constraint": "8.1 处理生活饮用水采用的絮凝_助凝 消莓 ,氧化 吸附  PH 调节 防锈 阻垢等化学处理剂不应污染 生活饮用水 ,应符合 GB/T 17218-1998中第3章的规定;消莓剂和消毒设备应符合《生活饮用水消毒 剂和消莓设备卫生安全评价规范(试行) 》规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "饮用水处理药剂设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 987,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

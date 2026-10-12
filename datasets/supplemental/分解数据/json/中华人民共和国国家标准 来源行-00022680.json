@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022680",
+  "entities": [
+    {
+      "name": "铁塔建在机房顶时，铁塔四脚应与楼(房)顶避雷带就近不 少于两处焊接连通，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    铁塔建在机房顶时，铁塔四脚应与楼(房)顶避雷带就近不\n少于两处焊接连通，除铁塔避雷针外，还应利用建筑物框架结构建\n筑四角的柱内钢筋作为雷电引下线。接地系统除利用建筑物自身\n的基础还应外设环形地网作为其接地装置，同时还应在机房地网\n四角设置20m 左右的水平接地体作为辐射式接地体。",
+      "type": "语义分解",
+      "subject": "铁塔建在机房顶时，铁塔四脚应与楼(房)顶避雷带就近不 少于两处焊接连通，",
+      "action": "",
+      "operation": "铁塔建在机房顶时，铁塔四脚应与楼(房)顶避雷带就近不 少于两处焊接连通，除铁塔避雷针外，还应利用建筑物框架结构建 筑四角的柱内钢筋作为雷电引下线。接地系统除利用建筑物自身 的基础还应外设环形地网作为其接地装置，同时还应在机房地网 四角设置20m 左右的水平接地体作为辐射式接地体。",
+      "condition": "",
+      "constraint": "       1    铁塔建在机房顶时，铁塔四脚应与楼(房)顶避雷带就近不\n少于两处焊接连通，除铁塔避雷针外，还应利用建筑物框架结构建\n筑四角的柱内钢筋作为雷电引下线。接地系统除利用建筑物自身\n的基础还应外设环形地网作为其接地装置，同时还应在机房地网\n四角设置20m 左右的水平接地体作为辐射式接地体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铁塔建在机房顶时，铁塔四脚应与楼(房)顶避雷带就近不 少于两处焊接连通，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22680,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

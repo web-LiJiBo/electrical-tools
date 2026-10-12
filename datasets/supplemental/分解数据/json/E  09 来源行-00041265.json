@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041265",
+  "entities": [
+    {
+      "name": "为预防或控制腐蚀，应评估土壤的腐蚀性和电阻率，以确定集输管线是否需要涂层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   为预防或控制腐蚀，应评估土壤的腐蚀性和电阻率，以确定集输管线是否需要涂层或包裹，在高\n腐蚀状态或敏感地区应考虑采用阴极防护技术。\n7.2.4  防火",
+      "type": "语义分解",
+      "subject": "为预防或控制腐蚀，应评估土壤的腐蚀性和电阻率，以确定集输管线是否需要涂层",
+      "action": "",
+      "operation": "为预防或控制腐蚀，应评估土壤的腐蚀性和电阻率，以确定集输管线是否需要涂层或包裹，在高 腐蚀状态或敏感地区应考虑采用阴极防护技术。 7.2.4 防火",
+      "condition": "",
+      "constraint": "   为预防或控制腐蚀，应评估土壤的腐蚀性和电阻率，以确定集输管线是否需要涂层或包裹，在高\n腐蚀状态或敏感地区应考虑采用阴极防护技术。\n7.2.4  防火",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为预防或控制腐蚀，应评估土壤的腐蚀性和电阻率，以确定集输管线是否需要涂层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41265,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

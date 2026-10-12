@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "4.0.2",
+  "entities": [
+    {
+      "name": "管道基础信息、地理信息、环境信息、运行参数、维护 状况和重点关注管段信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.0.2    管道基础信息、地理信息、环境信息、运行参数、维护\n状况和重点关注管段信息等数据，可按本标准附录A 执行。\n4.0.3   对收集到的数据，应进行数据的质量审核。",
+      "type": "语义分解",
+      "subject": "管道基础信息、地理信息、环境信息、运行参数、维护 状况和重点关注管段信息",
+      "action": "",
+      "operation": "管道基础信息、地理信息、环境信息、运行参数、维护 状况和重点关注管段信息等数据，可按本标准附录A 执行。 4.0.3 对收集到的数据，应进行数据的质量审核。",
+      "condition": "",
+      "constraint": "4.0.2    管道基础信息、地理信息、环境信息、运行参数、维护\n状况和重点关注管段信息等数据，可按本标准附录A 执行。\n4.0.3   对收集到的数据，应进行数据的质量审核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道基础信息、地理信息、环境信息、运行参数、维护 状况和重点关注管段信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48217,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

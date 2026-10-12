@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "7.1.4",
+  "entities": [
+    {
+      "name": "水样装箱核查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.4 同一采样点的样品瓶尽量装在同一箱内,与采样记录或样品交接单逐件核对,检查所采水样是否己全部装箱。",
+      "type": "语义分解",
+      "subject": "水样装箱核查",
+      "action": "",
+      "operation": "同点同箱逐件核对记录确保齐全",
+      "condition": "",
+      "constraint": "7.1.4 同一采样点的样品瓶尽量装在同一箱内,与采样记录或样品交接单逐件核对,检查所采水样是否己全部装箱。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水样装箱核查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2114,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

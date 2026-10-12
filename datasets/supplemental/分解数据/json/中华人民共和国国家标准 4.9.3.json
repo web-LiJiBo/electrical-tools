@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.9.3",
+  "entities": [
+    {
+      "name": "楼高超过30m 时，楼顶宜设暗装避雷网，房顶女儿墙应设 避雷带，塔楼顶应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.3  楼高超过30m 时，楼顶宜设暗装避雷网，房顶女儿墙应设\n避雷带，塔楼顶应设避雷针，且避雷网、避雷带、避雷针应相互多点\n焊接连通。",
+      "type": "语义分解",
+      "subject": "楼高超过30m 时，楼顶宜设暗装避雷网，房顶女儿墙应设 避雷带，塔楼顶应",
+      "action": "",
+      "operation": "楼高超过30m 时，楼顶宜设暗装避雷网，房顶女儿墙应设 避雷带，塔楼顶应设避雷针，且避雷网、避雷带、避雷针应相互多点 焊接连通。",
+      "condition": "",
+      "constraint": "4.9.3  楼高超过30m 时，楼顶宜设暗装避雷网，房顶女儿墙应设\n避雷带，塔楼顶应设避雷针，且避雷网、避雷带、避雷针应相互多点\n焊接连通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "楼高超过30m 时，楼顶宜设暗装避雷网，房顶女儿墙应设 避雷带，塔楼顶应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22617,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

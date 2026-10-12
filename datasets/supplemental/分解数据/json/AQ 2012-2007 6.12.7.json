@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.12.7",
+  "entities": [
+    {
+      "name": "井台避难房",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.7 在滩海陆岸井台上 ,应设置暂避恶劣天气的避难房 ,避难房应至少符合以下要求: 能够容纳生产作业人员; 结构强度应比滩海陆岸井台高一个安全等级; 地面应高出挡浪墙1.0 m; 应采用基础稳定,结构可靠的固定式钢筋混凝土结构或用移动式钢结构。",
+      "type": "语义分解",
+      "subject": "井台避难房",
+      "action": "",
+      "operation": "容全员安全等级高于井台一级地面高挡浪墙1米稳定可靠结构",
+      "condition": "",
+      "constraint": "6.12.7 在滩海陆岸井台上 ,应设置暂避恶劣天气的避难房 ,避难房应至少符合以下要求: 能够容纳生产作业人员; 结构强度应比滩海陆岸井台高一个安全等级; 地面应高出挡浪墙1.0 m; 应采用基础稳定,结构可靠的固定式钢筋混凝土结构或用移动式钢结构。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井台避难房"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4754,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

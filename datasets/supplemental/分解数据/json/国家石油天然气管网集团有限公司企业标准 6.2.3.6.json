@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.2.3.6",
+  "entities": [
+    {
+      "name": "山地陡坡、水蚀和风蚀严重地带适用穴状整地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3.6         山地陡坡、水蚀和风蚀严重地带适用穴状整地；干旱、半干旱地区的坡地及需要蓄水保土的\n石质山地适用鱼鳞坑整地；在坡度小于25°、立地条件较好的地块，可采用带状整地方法；整地规格\n应符合现行国家标准GB/T     18337.3 的有关规定。常用整地方式见附录C。",
+      "type": "语义分解",
+      "subject": "山地陡坡、水蚀和风蚀严重地带适用穴状整地",
+      "action": "",
+      "operation": "山地陡坡、水蚀和风蚀严重地带适用穴状整地；干旱、半干旱地区的坡地及需要蓄水保土的 石质山地适用鱼鳞坑整地；在坡度小于25°、立地条件较好的地块，可采用带状整地方法；整地规格 应符合现行国家标准GB/T 18337.3 的有关规定。常用整地方式见附录C。",
+      "condition": "",
+      "constraint": "6.2.3.6         山地陡坡、水蚀和风蚀严重地带适用穴状整地；干旱、半干旱地区的坡地及需要蓄水保土的\n石质山地适用鱼鳞坑整地；在坡度小于25°、立地条件较好的地块，可采用带状整地方法；整地规格\n应符合现行国家标准GB/T     18337.3 的有关规定。常用整地方式见附录C。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "山地陡坡、水蚀和风蚀严重地带适用穴状整地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40717,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.2.5.1",
+  "entities": [
+    {
+      "name": "膜电导样采集保存",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5.1 水样的采集与保存:用具塞硬质玻璃瓶采集水样 ,取水至满瓶 ,密封。 水样采集后应尽快分析 ,如不能及时分析 ,加硫酸(020 =1.84 &/mL ) , 调节至样品 DH<2 , 可保存7 d。",
+      "type": "语义分解",
+      "subject": "膜电导样采集保存",
+      "action": "",
+      "operation": "硬玻璃瓶满瓶密封尽快分析否则加酸至pH小于二保存七天",
+      "condition": "",
+      "constraint": "7.2.5.1 水样的采集与保存:用具塞硬质玻璃瓶采集水样 ,取水至满瓶 ,密封。 水样采集后应尽快分析 ,如不能及时分析 ,加硫酸(020 =1.84 &/mL ) , 调节至样品 DH<2 , 可保存7 d。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "膜电导样采集保存"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1922,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；pH与密度单位识别异常"
+      ]
+    }
+  }
+}

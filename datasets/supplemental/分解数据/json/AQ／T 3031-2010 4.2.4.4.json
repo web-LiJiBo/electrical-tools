@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "4.2.4.4",
+  "entities": [
+    {
+      "name": "危化运输包装培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4.4 危险化学品运输 ,包装的安全管理: a) 运输安全管理概述; b) 运输安全要求 ,包括资质认定 ,托运人的规定,剧毒化学品的运输要求 ,危险化学品的运输要求; c) 包装 ,包括包装分类与基本要求 ,GB12463对包装的规定。",
+      "type": "语义分解",
+      "subject": "危化运输包装培训",
+      "action": "",
+      "operation": "讲授运输资质托运剧毒要求包装分类GB12463",
+      "condition": "",
+      "constraint": "4.2.4.4 危险化学品运输 ,包装的安全管理: a) 运输安全管理概述; b) 运输安全要求 ,包括资质认定 ,托运人的规定,剧毒化学品的运输要求 ,危险化学品的运输要求; c) 包装 ,包括包装分类与基本要求 ,GB12463对包装的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化运输包装培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4905,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；课程内容"
+      ]
+    }
+  }
+}

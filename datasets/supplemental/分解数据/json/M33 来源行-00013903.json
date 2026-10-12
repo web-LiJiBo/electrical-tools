@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013903",
+  "entities": [
+    {
+      "name": "开放连接指示( OCI) 向下游发送，指示上游信号没有连接到路径源端",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   开放连接指示( OCI) 向下游发送，指示上游信号没有连接到路径源端。OCI 信号由连接功能产生，\n在每一个输出连接点由此连接功能输出，此连接输出点并没有连接到它的输入连接点。OCI 信号由路径\n\n宿端功能检测。",
+      "type": "语义分解",
+      "subject": "开放连接指示( OCI) 向下游发送，指示上游信号没有连接到路径源端",
+      "action": "",
+      "operation": "开放连接指示( OCI) 向下游发送，指示上游信号没有连接到路径源端。OCI 信号由连接功能产生， 在每一个输出连接点由此连接功能输出，此连接输出点并没有连接到它的输入连接点。OCI 信号由路径 宿端功能检测。",
+      "condition": "",
+      "constraint": "   开放连接指示( OCI) 向下游发送，指示上游信号没有连接到路径源端。OCI 信号由连接功能产生，\n在每一个输出连接点由此连接功能输出，此连接输出点并没有连接到它的输入连接点。OCI 信号由路径\n\n宿端功能检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开放连接指示( OCI) 向下游发送，指示上游信号没有连接到路径源端"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13903,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

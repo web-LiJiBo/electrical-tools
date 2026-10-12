@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037790",
+  "entities": [
+    {
+      "name": "量化单位活动水平温室气体排放量或清除量的系数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   量化单位活动水平温室气体排放量或清除量的系数。排放因子通常基\n\n于抽样测量或统计分析获得，表示在给定操作条件下某种活动水平的代表\n\n性排放率或清除率。",
+      "type": "语义分解",
+      "subject": "量化单位活动水平温室气体排放量或清除量的系数",
+      "action": "",
+      "operation": "量化单位活动水平温室气体排放量或清除量的系数。排放因子通常基 于抽样测量或统计分析获得，表示在给定操作条件下某种活动水平的代表 性排放率或清除率。",
+      "condition": "",
+      "constraint": "   量化单位活动水平温室气体排放量或清除量的系数。排放因子通常基\n\n于抽样测量或统计分析获得，表示在给定操作条件下某种活动水平的代表\n\n性排放率或清除率。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "量化单位活动水平温室气体排放量或清除量的系数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37790,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

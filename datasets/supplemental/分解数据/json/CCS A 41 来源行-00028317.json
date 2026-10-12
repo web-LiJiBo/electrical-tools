@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028317",
+  "entities": [
+    {
+      "name": "精益和六西格玛的融合 ,是一套系统化 、结构化的业务改进与创新模式 , ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      精益和六西格玛的融合 ,是一套系统化 、结构化的业务改进与创新模式 , 旨在通过严谨的流程和科\n学的方法实现组织业务流程突破性改进和设计创新 ,减少波动 ,消除浪费 ,提高质量和效率 ,提升顾客和\n相关方满意 , 以利于组织实现战略目标 。",
+      "type": "语义分解",
+      "subject": "精益和六西格玛的融合 ,是一套系统化 、结构化的业务改进与创新模式 , ",
+      "action": "",
+      "operation": "精益和六西格玛的融合 ,是一套系统化 、结构化的业务改进与创新模式 , 旨在通过严谨的流程和科 学的方法实现组织业务流程突破性改进和设计创新 ,减少波动 ,消除浪费 ,提高质量和效率 ,提升顾客和 相关方满意 , 以利于组织实现战略目标 。",
+      "condition": "",
+      "constraint": "      精益和六西格玛的融合 ,是一套系统化 、结构化的业务改进与创新模式 , 旨在通过严谨的流程和科\n学的方法实现组织业务流程突破性改进和设计创新 ,减少波动 ,消除浪费 ,提高质量和效率 ,提升顾客和\n相关方满意 , 以利于组织实现战略目标 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "精益和六西格玛的融合 ,是一套系统化 、结构化的业务改进与创新模式 , "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28317,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

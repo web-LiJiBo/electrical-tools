@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "外部活性腐蚀点增长原因分析应按照下列情况，将内检 测数据与管道基础信息、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2    外部活性腐蚀点增长原因分析应按照下列情况，将内检\n测数据与管道基础信息、防腐层检测、管道阴极保护有效性评\n价、杂散电流干扰检测及土壤环境腐蚀调查、应力腐蚀直接评\n价和开挖直接检测等数据进行比对分析。必要时，可开挖验证\n外部活性腐蚀点的增长原因。",
+      "type": "语义分解",
+      "subject": "外部活性腐蚀点增长原因分析应按照下列情况，将内检 测数据与管道基础信息、",
+      "action": "",
+      "operation": "外部活性腐蚀点增长原因分析应按照下列情况，将内检 测数据与管道基础信息、防腐层检测、管道阴极保护有效性评 价、杂散电流干扰检测及土壤环境腐蚀调查、应力腐蚀直接评 价和开挖直接检测等数据进行比对分析。必要时，可开挖验证 外部活性腐蚀点的增长原因。",
+      "condition": "",
+      "constraint": "7.2.2    外部活性腐蚀点增长原因分析应按照下列情况，将内检\n测数据与管道基础信息、防腐层检测、管道阴极保护有效性评\n价、杂散电流干扰检测及土壤环境腐蚀调查、应力腐蚀直接评\n价和开挖直接检测等数据进行比对分析。必要时，可开挖验证\n外部活性腐蚀点的增长原因。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外部活性腐蚀点增长原因分析应按照下列情况，将内检 测数据与管道基础信息、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48278,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

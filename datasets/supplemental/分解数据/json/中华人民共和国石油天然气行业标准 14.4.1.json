@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.4.1",
+  "entities": [
+    {
+      "name": "机房多专业机柜布局",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.4.1    为保持机房美观 ,  便于运行维护和布线 ,  不同专业 、不\n同机柜宜统筹规划和布局 ,  避免在设备安装过程中不同专业间、\n不同设备间相互冲突 。",
+      "type": "语义分解",
+      "subject": "机房多专业机柜布局",
+      "action": "",
+      "operation": "统筹规划避免安装冲突",
+      "condition": "",
+      "constraint": "14.4.1    为保持机房美观 ,  便于运行维护和布线 ,  不同专业 、不\n同机柜宜统筹规划和布局 ,  避免在设备安装过程中不同专业间、\n不同设备间相互冲突 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房多专业机柜布局"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明性内容"
+      ]
+    }
+  }
+}

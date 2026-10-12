@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041047",
+  "entities": [
+    {
+      "name": "API 环境指南",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "API   环境指南：陆上石油勘探和开发固体废物管理\nAPI    油气生产设施的趋盐性土壤补救\nAPI    商业勘探开发废物管理设施指南",
+      "type": "语义分解",
+      "subject": "API 环境指南",
+      "action": "",
+      "operation": "API 环境指南：陆上石油勘探和开发固体废物管理 API 油气生产设施的趋盐性土壤补救 API 商业勘探开发废物管理设施指南",
+      "condition": "",
+      "constraint": "API   环境指南：陆上石油勘探和开发固体废物管理\nAPI    油气生产设施的趋盐性土壤补救\nAPI    商业勘探开发废物管理设施指南",
+      "constraint_role": "informational",
+      "related_entities": [
+        "API 环境指南"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41047,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

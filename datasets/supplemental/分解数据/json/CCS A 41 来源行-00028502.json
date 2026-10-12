@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028502",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "V(验证)\t   ●      详细设计文档\n   ●      原型机或小批量产品\n   ●      设计要素选定报告\n   ●      零部件/工艺质量特性列表\n   ●      参数设计报告\n   ●      公差分析报告\n   ●      实验计划\n   ●      实验/模拟报告\t   ●      制定验证计划并实施\n   ●      试生产和批量验证\n   ●      供应链确认\n   ●      设计目标验证\n   ●      过程能力验证\n   ●      可靠性验证\n   ●      确定关键控制点及控制计划\n   ●      完成标准化工作\n   ●      项目移交\n   ●      推广固化\n   ●      成果总结和跟进\n   ●      更新设计知识库\t   ●      完整的设计报告\n   ●      试生产和批量验证报告\n   ●      控制计划\n   ●      标准化文档\n   ●      项目移交书\n   ●      成果总结报告",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "V(验证)\t   ●      详细设计文档\n   ●      原型机或小批量产品\n   ●      设计要素选定报告\n   ●      零部件/工艺质量特性列表\n   ●      参数设计报告\n   ●      公差分析报告\n   ●      实验计划\n   ●      实验/模拟报告\t   ●      制定验证计划并实施\n   ●      试生产和批量验证\n   ●      供应链确认\n   ●      设计目标验证\n   ●      过程能力验证\n   ●      可靠性验证\n   ●      确定关键控制点及控制计划\n   ●      完成标准化工作\n   ●      项目移交\n   ●      推广固化\n   ●      成果总结和跟进\n   ●      更新设计知识库\t   ●      完整的设计报告\n   ●      试生产和批量验证报告\n   ●      控制计划\n   ●      标准化文档\n   ●      项目移交书\n   ●      成果总结报告",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28502,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

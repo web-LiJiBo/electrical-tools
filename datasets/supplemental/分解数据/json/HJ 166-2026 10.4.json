@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "10.4",
+  "entities": [
+    {
+      "name": "土壤样保存质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.4 样品保存质量保证和质量控制 样品保存过程中应采取有效措施。确保样品保存质量: 检查样品保存条件和保存记录等技术符合性; 对样品容器选用是否合理,完好,样品标签是否完整。规范等情况进行抽查=",
+      "type": "语义分解",
+      "subject": "土壤样保存质控",
+      "action": "",
+      "operation": "核保存条件记录抽查容器合理完好标签规范完整",
+      "condition": "",
+      "constraint": "10.4 样品保存质量保证和质量控制 样品保存过程中应采取有效措施。确保样品保存质量: 检查样品保存条件和保存记录等技术符合性; 对样品容器选用是否合理,完好,样品标签是否完整。规范等情况进行抽查=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤样保存质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2283,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

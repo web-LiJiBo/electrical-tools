@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "8.3",
+  "entities": [
+    {
+      "name": "互助应急物资",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3 除作业场所的应急救援物资外的其他应急救援物资 ,由危险化学品单位与其周边其他相关单位或应急救援机构签订互助协议 ,并能在这些单位或机构接到报警后 5 min 内到达现场的 .摧许作为本单位的应急救援物资。",
+      "type": "语义分解",
+      "subject": "互助应急物资",
+      "action": "",
+      "operation": "除现场物资可协议互助报警后五分钟内到场计本单位物资",
+      "condition": "",
+      "constraint": "8.3 除作业场所的应急救援物资外的其他应急救援物资 ,由危险化学品单位与其周边其他相关单位或应急救援机构签订互助协议 ,并能在这些单位或机构接到报警后 5 min 内到达现场的 .摧许作为本单位的应急救援物资。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "互助应急物资"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3818,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

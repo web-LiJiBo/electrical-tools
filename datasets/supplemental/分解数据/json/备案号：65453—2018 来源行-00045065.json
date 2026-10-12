@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045065",
+  "entities": [
+    {
+      "name": ")无法判定腐蚀活性严重程度的点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4)无法判定腐蚀活性严重程度的点；或初次开展\n      ECDA评价时，检测结果不能解释的点；或不同间\n   接检测方法测试结果有差异的点。",
+      "type": "语义分解",
+      "subject": ")无法判定腐蚀活性严重程度的点",
+      "action": "",
+      "operation": ")无法判定腐蚀活性严重程度的点；或初次开展 ECDA评价时，检测结果不能解释的点；或不同间 接检测方法测试结果有差异的点。",
+      "condition": "",
+      "constraint": "4)无法判定腐蚀活性严重程度的点；或初次开展\n      ECDA评价时，检测结果不能解释的点；或不同间\n   接检测方法测试结果有差异的点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")无法判定腐蚀活性严重程度的点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45065,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

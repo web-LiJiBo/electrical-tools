@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "6.7.3",
+  "entities": [
+    {
+      "name": "铝阳极每个横切面上阳极体与铁脚间的空隙不应超过铁脚周长的 20% ,多个",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3   铝阳极每个横切面上阳极体与铁脚间的空隙不应超过铁脚周长的 20% ,多个横切面上阳极体与\n铁脚间的空隙的平均长度不超过铁脚周长的 10% 。",
+      "type": "语义分解",
+      "subject": "铝阳极每个横切面上阳极体与铁脚间的空隙不应超过铁脚周长的 20% ,多个",
+      "action": "",
+      "operation": "铝阳极每个横切面上阳极体与铁脚间的空隙不应超过铁脚周长的 20% ,多个横切面上阳极体与 铁脚间的空隙的平均长度不超过铁脚周长的 10% 。",
+      "condition": "",
+      "constraint": "6.7.3   铝阳极每个横切面上阳极体与铁脚间的空隙不应超过铁脚周长的 20% ,多个横切面上阳极体与\n铁脚间的空隙的平均长度不超过铁脚周长的 10% 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铝阳极每个横切面上阳极体与铁脚间的空隙不应超过铁脚周长的 20% ,多个"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43212,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

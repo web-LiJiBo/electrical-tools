@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.2.1",
+  "entities": [
+    {
+      "name": "裸眼井测井速度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.2.1 裸眼井段电缆静止不应超过3 min (特殊施工除外)。仪器起下速度要均匀 ,不应超过4 000 m/h, 距井底200 m 要减速慢下;进套管鞋时 ,起速不应超过600 m/h, 仪器上起离井口约300 m 时 ,应有专人在井口指挥 ,减速慢起。",
+      "type": "语义分解",
+      "subject": "裸眼井测井速度",
+      "action": "",
+      "operation": "非特殊电缆静止不超过3分钟起下不超4000m/h近井底减速套管鞋起速不超600m/h近井口专人指挥",
+      "condition": "",
+      "constraint": "5.4.2.2.1 裸眼井段电缆静止不应超过3 min (特殊施工除外)。仪器起下速度要均匀 ,不应超过4 000 m/h, 距井底200 m 要减速慢下;进套管鞋时 ,起速不应超过600 m/h, 仪器上起离井口约300 m 时 ,应有专人在井口指挥 ,减速慢起。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "裸眼井测井速度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4388,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；距离速度对应多条件需逐项复核"
+      ]
+    }
+  }
+}

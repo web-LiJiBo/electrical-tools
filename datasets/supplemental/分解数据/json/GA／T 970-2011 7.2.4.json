@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.2.4",
+  "entities": [
+    {
+      "name": "储罐惰性气体置换",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.4 惰性气体置换 倒罐输转或放空点燃后应向储罐内充入惰性气体,置换残余气体。对无法堵漏的容器 ,当其泄漏至常压后也应用惰性气体实施置换。",
+      "type": "语义分解",
+      "subject": "储罐惰性气体置换",
+      "action": "",
+      "operation": "在规定处置阶段置换残余气体",
+      "condition": "",
+      "constraint": "7.2.4 惰性气体置换 倒罐输转或放空点燃后应向储罐内充入惰性气体,置换残余气体。对无法堵漏的容器 ,当其泄漏至常压后也应用惰性气体实施置换。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储罐惰性气体置换"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5913,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；需现场专业确认"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034094",
+  "entities": [
+    {
+      "name": "一采样探头",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    1一采样探头 ; 2一分离器 ; 3一弯头 ; 4一温控的输送管 ; 5一开启 /截止阀 ; 6一节流装置    流量计 ; 7一变送器 /\n    指示器    流量计 ; 8一抽气控制 ; 9一引射器 、鼓风机 ; 10一样品气温度测量 ; 11一温控装置 ; 12一温度传感器 ;\n         13一压力传感器 ; 14一气体组分的采样系统 ; 15一速度测量(靠近采样探头处 ) ; 16一分离器预热装置",
+      "type": "语义分解",
+      "subject": "一采样探头",
+      "action": "",
+      "operation": "一采样探头 ; 2一分离器 ; 3一弯头 ; 4一温控的输送管 ; 5一开启 /截止阀 ; 6一节流装置 流量计 ; 7一变送器 / 指示器 流量计 ; 8一抽气控制 ; 9一引射器 、鼓风机 ; 10一样品气温度测量 ; 11一温控装置 ; 12一温度传感器 ; 13一压力传感器 ; 14一气体组分的采样系统 ; 15一速度测量(靠近采样探头处 ) ; 16一分离器预热装置",
+      "condition": "",
+      "constraint": "    1一采样探头 ; 2一分离器 ; 3一弯头 ; 4一温控的输送管 ; 5一开启 /截止阀 ; 6一节流装置    流量计 ; 7一变送器 /\n    指示器    流量计 ; 8一抽气控制 ; 9一引射器 、鼓风机 ; 10一样品气温度测量 ; 11一温控装置 ; 12一温度传感器 ;\n         13一压力传感器 ; 14一气体组分的采样系统 ; 15一速度测量(靠近采样探头处 ) ; 16一分离器预热装置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一采样探头"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34094,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

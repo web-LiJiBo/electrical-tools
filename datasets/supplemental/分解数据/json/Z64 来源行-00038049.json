@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "来源行-00038049",
+  "entities": [
+    {
+      "name": "为贯彻《中华人民共和国环境保护法》,保护土壤环境质量，管控土壤污染风险，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   为贯彻《中华人民共和国环境保护法》,保护土壤环境质量，管控土壤污染风险，现批准《土壤环\n境质量农用地土壤污染风险管控标准(试行)》《土壤环境质量建设用地土壤污染风险管控标准(试\n行)》等两项标准为国家环境质量标准，由生态环境部与国家市场监督管理总局联合发布。",
+      "type": "语义分解",
+      "subject": "为贯彻《中华人民共和国环境保护法》,保护土壤环境质量，管控土壤污染风险，",
+      "action": "",
+      "operation": "为贯彻《中华人民共和国环境保护法》,保护土壤环境质量，管控土壤污染风险，现批准《土壤环 境质量农用地土壤污染风险管控标准(试行)》《土壤环境质量建设用地土壤污染风险管控标准(试 行)》等两项标准为国家环境质量标准，由生态环境部与国家市场监督管理总局联合发布。",
+      "condition": "",
+      "constraint": "   为贯彻《中华人民共和国环境保护法》,保护土壤环境质量，管控土壤污染风险，现批准《土壤环\n境质量农用地土壤污染风险管控标准(试行)》《土壤环境质量建设用地土壤污染风险管控标准(试\n行)》等两项标准为国家环境质量标准，由生态环境部与国家市场监督管理总局联合发布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为贯彻《中华人民共和国环境保护法》,保护土壤环境质量，管控土壤污染风险，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38049,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

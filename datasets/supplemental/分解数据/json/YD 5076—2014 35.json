@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "35",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "35\t10.1.1\t局间中继电路按话务量\n一般负荷计算。各类局\n间中继电路和长途电路\n应符合表10.0.6的呼损\n指标\t 修改为：TDM交换\n 机局间电路服务质\n 量应满足表10.1.1\n 的呼损指标。“局间\n 中继电路按话务量\n 一般负荷计算”调整\n 到“11.1话务模型\n 的取定”\t使结构更清晰",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "35\t10.1.1\t局间中继电路按话务量\n一般负荷计算。各类局\n间中继电路和长途电路\n应符合表10.0.6的呼损\n指标\t 修改为：TDM交换\n 机局间电路服务质\n 量应满足表10.1.1\n 的呼损指标。“局间\n 中继电路按话务量\n 一般负荷计算”调整\n 到“11.1话务模型\n 的取定”\t使结构更清晰",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26504,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

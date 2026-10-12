@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "10.6.3",
+  "entities": [
+    {
+      "name": "外来参访检查人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.6.3 其他外来人员 企业应明确进入企业检查、参观、学习等外来人员的安全管理要求，并通过适宜方式对进入生产作业场所的人员进行安全风险告知，必要时应安排人员陪同。",
+      "type": "语义分解",
+      "subject": "外来参访检查人员",
+      "action": "",
+      "operation": "明确管理风险告知必要陪同",
+      "condition": "",
+      "constraint": "10.6.3 其他外来人员 企业应明确进入企业检查、参观、学习等外来人员的安全管理要求，并通过适宜方式对进入生产作业场所的人员进行安全风险告知，必要时应安排人员陪同。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外来参访检查人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7282,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

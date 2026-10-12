@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047411",
+  "entities": [
+    {
+      "name": "直流干扰评估时，宜根据管道与干扰源的相对位置关系、 管道与干扰源的基本参",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1   直流干扰评估时，宜根据管道与干扰源的相对位置关系、\n管道与干扰源的基本参数等，通过根据区域内其他管道类似工\n况的实测数据或计算分析进行评估。",
+      "type": "语义分解",
+      "subject": "直流干扰评估时，宜根据管道与干扰源的相对位置关系、 管道与干扰源的基本参",
+      "action": "",
+      "operation": "直流干扰评估时，宜根据管道与干扰源的相对位置关系、 管道与干扰源的基本参数等，通过根据区域内其他管道类似工 况的实测数据或计算分析进行评估。",
+      "condition": "",
+      "constraint": "4.3.1   直流干扰评估时，宜根据管道与干扰源的相对位置关系、\n管道与干扰源的基本参数等，通过根据区域内其他管道类似工\n况的实测数据或计算分析进行评估。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "直流干扰评估时，宜根据管道与干扰源的相对位置关系、 管道与干扰源的基本参"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47411,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

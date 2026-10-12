@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045242",
+  "entities": [
+    {
+      "name": "A.1.4 预评价管道历次检测评价情况宜按表A.1.4 填写",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A.1.4   预评价管道历次检测评价情况宜按表A.1.4 填写。\nA.1.5   预评价阴极保护系统运行参数宜按表A.1.5 填写。\nA.1.6   预评价牺牲阳极设施运行概况宜按表A.1.6 填写。\nA.1.7   预评价管道防腐(保温)层概况宜按表A.1.7 填写。\nA.1.8   预评价环境概况宜按表A.1.8填写。\nA.1.9   交直流干扰概况宜按表A.1.9填写。",
+      "type": "语义分解",
+      "subject": "A.1.4 预评价管道历次检测评价情况宜按表A.1.4 填写",
+      "action": "",
+      "operation": "A.1.4 预评价管道历次检测评价情况宜按表A.1.4 填写。 A.1.5 预评价阴极保护系统运行参数宜按表A.1.5 填写。 A.1.6 预评价牺牲阳极设施运行概况宜按表A.1.6 填写。 A.1.7 预评价管道防腐(保温)层概况宜按表A.1.7 填写。 A.1.8 预评价环境概况宜按表A.1.8填写。 A.1.9 交直流干扰概况宜按表A.1.9填写。",
+      "condition": "",
+      "constraint": "A.1.4   预评价管道历次检测评价情况宜按表A.1.4 填写。\nA.1.5   预评价阴极保护系统运行参数宜按表A.1.5 填写。\nA.1.6   预评价牺牲阳极设施运行概况宜按表A.1.6 填写。\nA.1.7   预评价管道防腐(保温)层概况宜按表A.1.7 填写。\nA.1.8   预评价环境概况宜按表A.1.8填写。\nA.1.9   交直流干扰概况宜按表A.1.9填写。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A.1.4 预评价管道历次检测评价情况宜按表A.1.4 填写"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45242,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

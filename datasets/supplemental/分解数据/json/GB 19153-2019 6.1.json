@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 规定工况 空气压缩机的规定工况为: a) 吸气压力:0.1 MPa(绝压); b) 吸气温度:20 ℃; c) 吸气相对湿度:0 %; d) 额定排气压力:按表1~表6中的值选取 ,单位为兆帕(MPa); e) 转速:产品技术文件规定的额定转速 ,单位为转每分(r/min)。",
+      "type": "语义分解",
+      "subject": "空气压缩机",
+      "action": "",
+      "operation": "规定能效试验工况",
+      "condition": "规定工况",
+      "constraint": "吸气压力:0.1 MPa(绝压)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "排气压力及转速依赖表格和产品文件；0.1MPa、20℃、0%是试验工况，不是运行报警阈值"
+      ]
+    }
+  }
+}

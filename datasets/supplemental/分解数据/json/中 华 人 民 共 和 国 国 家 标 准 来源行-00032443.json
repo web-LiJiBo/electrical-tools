@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032443",
+  "entities": [
+    {
+      "name": "若某排气筒 的排放为 间断性排放 , 排放时 间小于 1 h , 应在排",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   若某排气筒 的排放为 间断性排放 , 排放时 间小于 1 h , 应在排放时段 内实行连续采样 , 或在排放时\n段内以等时间间隔采集 2~4 个样品 , 并计平均值 ;",
+      "type": "语义分解",
+      "subject": "若某排气筒 的排放为 间断性排放 , 排放时 间小于 1 h , 应在排",
+      "action": "",
+      "operation": "若某排气筒 的排放为 间断性排放 , 排放时 间小于 1 h , 应在排放时段 内实行连续采样 , 或在排放时 段内以等时间间隔采集 2~4 个样品 , 并计平均值",
+      "condition": "",
+      "constraint": "   若某排气筒 的排放为 间断性排放 , 排放时 间小于 1 h , 应在排放时段 内实行连续采样 , 或在排放时\n段内以等时间间隔采集 2~4 个样品 , 并计平均值 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "若某排气筒 的排放为 间断性排放 , 排放时 间小于 1 h , 应在排"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32443,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

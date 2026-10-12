@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "1.0.4",
+  "entities": [
+    {
+      "name": "安防综合体系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.4 安全防范工程的建设应将人力防范(人防)、实体防范(物防)、电子防范(技防)等手段有机结合，通过科学合理的规划、设计、施工、运行及维护，构建满足安全防范管理要求、具有相应风险防范能力的综合防控体系。",
+      "type": "语义分解",
+      "subject": "安防综合体系",
+      "action": "",
+      "operation": "人防物防技防科学规划运维结合满足管理风险能力",
+      "condition": "",
+      "constraint": "1.0.4 安全防范工程的建设应将人力防范(人防)、实体防范(物防)、电子防范(技防)等手段有机结合，通过科学合理的规划、设计、施工、运行及维护，构建满足安全防范管理要求、具有相应风险防范能力的综合防控体系。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防综合体系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6818,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

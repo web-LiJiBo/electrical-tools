@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018818",
+  "entities": [
+    {
+      "name": "注1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注1: 在使用STM-256接口时，SDH节点间若没有中继器连接，其同步源应为ITU-T G.813等级或更优，产生\n\n     的抖动将更为严格，因此抖动的测量范围按ITU-T    G8251-2001 表A.3规定的带宽80kHz到320MHz。\n注2: 当SDH RSN信号在OTN中传送，再生器产生的抖动不能使用本规范规定的指标，而应采用ITU-T\n         G.8251 相关规定。 ODCp的抖动和漂移转移函数要求在ITU-T G.8251-2001附录A中给出，确保由于\n    客户信号进出OPUk时映射/去映射可能引发抖动数倍增加而又能被接受，同时满足SDH客户层接收\n\n    端的网络要求。 ODCp抖动产生要求在ITU-TG.8251-2001  附录A中给出，确保ODCp所有附加产生\n\n    的抖动在限定范围内。",
+      "type": "语义分解",
+      "subject": "注1",
+      "action": "",
+      "operation": "注1: 在使用STM-256接口时，SDH节点间若没有中继器连接，其同步源应为ITU-T G.813等级或更优，产生 的抖动将更为严格，因此抖动的测量范围按ITU-T G8251-2001 表A.3规定的带宽80kHz到320MHz。 注2: 当SDH RSN信号在OTN中传送，再生器产生的抖动不能使用本规范规定的指标，而应采用ITU-T G.8251 相关规定。 ODCp的抖动和漂移转移函数要求在ITU-T G.8251-2001附录A中给出，确保由于 客户信号进出OPUk",
+      "condition": "",
+      "constraint": "注1: 在使用STM-256接口时，SDH节点间若没有中继器连接，其同步源应为ITU-T G.813等级或更优，产生\n\n     的抖动将更为严格，因此抖动的测量范围按ITU-T    G8251-2001 表A.3规定的带宽80kHz到320MHz。\n注2: 当SDH RSN信号在OTN中传送，再生器产生的抖动不能使用本规范规定的指标，而应采用ITU-T\n         G.8251 相关规定。 ODCp的抖动和漂移转移函数要求在ITU-T G.8251-2001附录A中给出，确保由于\n    客户信号进出OPUk时映射/去映射可能引发抖动数倍增加而又能被接受，同时满足SDH客户层接收\n\n    端的网络要求。 ODCp抖动产生要求在ITU-TG.8251-2001  附录A中给出，确保ODCp所有附加产生\n\n    的抖动在限定范围内。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18818,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

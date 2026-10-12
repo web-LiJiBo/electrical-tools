@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "5.17",
+  "entities": [
+    {
+      "name": "亚硫酸盐测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.17 亚硫酸盐的测定按附录 F规定的方法进行",
+      "type": "语义分解",
+      "subject": "亚硫酸盐测定",
+      "action": "",
+      "operation": "按附录F方法",
+      "condition": "",
+      "constraint": "5.17 亚硫酸盐的测定按附录 F规定的方法进行",
+      "constraint_role": "informational",
+      "related_entities": [
+        "亚硫酸盐测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4131,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录未提供"
+      ]
+    }
+  }
+}

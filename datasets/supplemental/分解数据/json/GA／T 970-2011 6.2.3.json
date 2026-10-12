@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "二级防护适用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3 二级防护 二级防护适用具体情况如下: 泄漏介质的种类和浓度已确定 ,需要最高级别的呼吸保护 ,而对皮肤保护要求不高时; 6) 当空气中氧含量低于19.5 %时; 当侦检仪器检测到蒸气和气体存在,但不能完全确定其性质,仅知不会给皮肤造成严重的化学伤害 ,也不会被皮肤吸收; 4) 当显示有液态或圊态物质存在,而它们不会给皮肤造成严重的化学饬害,边不会被皮肤吸收时<",
+      "type": "语义分解",
+      "subject": "二级防护适用",
+      "action": "",
+      "operation": "已知需最高呼吸皮肤不高氧低19.5%或仅知不伤皮肤不吸收等情形",
+      "condition": "",
+      "constraint": "6.2.3 二级防护 二级防护适用具体情况如下: 泄漏介质的种类和浓度已确定 ,需要最高级别的呼吸保护 ,而对皮肤保护要求不高时; 6) 当空气中氧含量低于19.5 %时; 当侦检仪器检测到蒸气和气体存在,但不能完全确定其性质,仅知不会给皮肤造成严重的化学伤害 ,也不会被皮肤吸收; 4) 当显示有液态或圊态物质存在,而它们不会给皮肤造成严重的化学饬害,边不会被皮肤吸收时<",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级防护适用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5884,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；多个适用条件逐项复核"
+      ]
+    }
+  }
+}

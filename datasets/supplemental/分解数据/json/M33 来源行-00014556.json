@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014556",
+  "entities": [
+    {
+      "name": "OTN 恢复要求主要包括恢复的基本类型、恢复路径的路由计算、恢复机制的启",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTN 恢复要求主要包括恢复的基本类型、恢复路径的路由计算、恢复机制的启动准则、倒换方式\n和返回机制、软重路由、恢复的优先级、保护和恢复结合等方面的要求。具体要求见GB/T 32657.2—2016\n\n第10.3节。",
+      "type": "语义分解",
+      "subject": "OTN 恢复要求主要包括恢复的基本类型、恢复路径的路由计算、恢复机制的启",
+      "action": "",
+      "operation": "OTN 恢复要求主要包括恢复的基本类型、恢复路径的路由计算、恢复机制的启动准则、倒换方式 和返回机制、软重路由、恢复的优先级、保护和恢复结合等方面的要求。具体要求见GB/T 32657.2—2016 第10.3节。",
+      "condition": "",
+      "constraint": "      OTN 恢复要求主要包括恢复的基本类型、恢复路径的路由计算、恢复机制的启动准则、倒换方式\n和返回机制、软重路由、恢复的优先级、保护和恢复结合等方面的要求。具体要求见GB/T 32657.2—2016\n\n第10.3节。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 恢复要求主要包括恢复的基本类型、恢复路径的路由计算、恢复机制的启"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14556,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

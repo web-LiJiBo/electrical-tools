@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "3.6",
+  "entities": [
+    {
+      "name": "临近区域替代基准温度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.6 临近区域替代法 average temperature method of adjacent replaceable area 在遥感反演历史温度数据统计基础之上,选定0.5 .C潜排区之外的最为相近的临近稳定区域作为基准参考位置。将此基准参考位置内遥感反演的平均温度作为基准温度的方法,称为临近区域替代法。 注: 临近区域替代法属于位置参考类型的方法,每景影像独立提取。",
+      "type": "语义分解",
+      "subject": "临近区域替代基准温度",
+      "action": "",
+      "operation": "按历史统计选温排区外相近稳定区每景取平均反演温度",
+      "condition": "",
+      "constraint": "3.6 临近区域替代法 average temperature method of adjacent replaceable area 在遥感反演历史温度数据统计基础之上,选定0.5 .C潜排区之外的最为相近的临近稳定区域作为基准参考位置。将此基准参考位置内遥感反演的平均温度作为基准温度的方法,称为临近区域替代法。 注: 临近区域替代法属于位置参考类型的方法,每景影像独立提取。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "临近区域替代基准温度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1938,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温排字样识别异常"
+      ]
+    }
+  }
+}

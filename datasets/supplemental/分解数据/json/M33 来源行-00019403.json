@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019403",
+  "entities": [
+    {
+      "name": ")在1+1体制的源方向，在MSn_AP处接收的来自MSn/Sn_A功能的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2)在1+1体制的源方向，在MSn_AP处接收的来自MSn/Sn_A功能的信号被永久地桥接至\n    工作和保护MSn_TT功能。当采用1:n体制时，在MSn_AP处接收来自每个工作MSn/Sn_A\n    的信号，通过MSn_AP 送至其相应的MSn_TT。来自额外业务MSn/Sn_A ( 如果有这种功\n    能的话)的信号被连接至保护MSn_TT。当需要桥接以保护工作通路时，在MSn_AP 处\n    接收的来自该工作MSn/Sn_A的信号在MSn_AP处被桥接至保护MSn_TT,  而额外业务\n    通路被终结。在宿方向，已恢复了RSOH 和 MSOH字节的成帧STM-N 信号(数据)与\n    输入参考定时一道送至参考点MSn_AP。失效状态SF 和 SD 也在参考点MSn_AP从所有",
+      "type": "语义分解",
+      "subject": ")在1+1体制的源方向，在MSn_AP处接收的来自MSn/Sn_A功能的",
+      "action": "",
+      "operation": ")在1+1体制的源方向，在MSn_AP处接收的来自MSn/Sn_A功能的信号被永久地桥接至 工作和保护MSn_TT功能。当采用1:n体制时，在MSn_AP处接收来自每个工作MSn/Sn_A 的信号，通过MSn_AP 送至其相应的MSn_TT。来自额外业务MSn/Sn_A ( 如果有这种功 能的话)的信号被连接至保护MSn_TT。当需要桥接以保护工作通路时，在MSn_AP 处 接收的来自该工作MSn/Sn_A的信号在MSn_AP处被桥接至保护MSn_TT, 而额外业务 通路被终",
+      "condition": "",
+      "constraint": "2)在1+1体制的源方向，在MSn_AP处接收的来自MSn/Sn_A功能的信号被永久地桥接至\n    工作和保护MSn_TT功能。当采用1:n体制时，在MSn_AP处接收来自每个工作MSn/Sn_A\n    的信号，通过MSn_AP 送至其相应的MSn_TT。来自额外业务MSn/Sn_A ( 如果有这种功\n    能的话)的信号被连接至保护MSn_TT。当需要桥接以保护工作通路时，在MSn_AP 处\n    接收的来自该工作MSn/Sn_A的信号在MSn_AP处被桥接至保护MSn_TT,  而额外业务\n    通路被终结。在宿方向，已恢复了RSOH 和 MSOH字节的成帧STM-N 信号(数据)与\n    输入参考定时一道送至参考点MSn_AP。失效状态SF 和 SD 也在参考点MSn_AP从所有",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")在1+1体制的源方向，在MSn_AP处接收的来自MSn/Sn_A功能的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19403,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

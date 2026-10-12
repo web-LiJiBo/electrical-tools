@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "水样符合性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 样品管理员对样品进行符合性检查。包括:  样品包装,标识及外观是否完好;  对殿采样记录单检查样品名称,采样地点。样品数量。形态等是否一致;  核对保存剂加入情况;  样品是否冷藏;冷藏温度是否满足要求;  样品是否有损坏或污染。",
+      "type": "语义分解",
+      "subject": "水样符合性",
+      "action": "",
+      "operation": "检查包装标识外观记录保存剂冷藏及污染损坏",
+      "condition": "",
+      "constraint": "7.2.2 样品管理员对样品进行符合性检查。包括:  样品包装,标识及外观是否完好;  对殿采样记录单检查样品名称,采样地点。样品数量。形态等是否一致;  核对保存剂加入情况;  样品是否冷藏;冷藏温度是否满足要求;  样品是否有损坏或污染。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水样符合性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

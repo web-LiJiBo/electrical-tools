@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018970",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   注：在再生器中，A1、A2和J0字节可接力传送(即透明通过该再生器),而不需终接和产生这些字节，见附录D。\n\n9.3.2    STM-N 再生段路径终端源RSn_TT_So",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：在再生器中，A1、A2和J0字节可接力传送(即透明通过该再生器),而不需终接和产生这些字节，见附录D。 9.3.2 STM-N 再生段路径终端源RSn_TT_So",
+      "condition": "",
+      "constraint": "   注：在再生器中，A1、A2和J0字节可接力传送(即透明通过该再生器),而不需终接和产生这些字节，见附录D。\n\n9.3.2    STM-N 再生段路径终端源RSn_TT_So",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18970,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

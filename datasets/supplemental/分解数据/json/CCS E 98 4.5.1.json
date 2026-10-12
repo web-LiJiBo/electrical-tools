@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "缺乏关键性基础数据，原始资料严重不全，且无法进行 补充的，不宜使用本规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1   缺乏关键性基础数据，原始资料严重不全，且无法进行\n补充的，不宜使用本规范规定的检测评价方法进行评价。\n4.5.2   重要罐体部位不可接近或者特殊原因无法取样或检测等\n导致无法开展间接、直接检测的，不宜使用本规范规定的检测\n评价方法进行评价。",
+      "type": "语义分解",
+      "subject": "缺乏关键性基础数据，原始资料严重不全，且无法进行 补充的，不宜使用本规范",
+      "action": "",
+      "operation": "缺乏关键性基础数据，原始资料严重不全，且无法进行 补充的，不宜使用本规范规定的检测评价方法进行评价。 4.5.2 重要罐体部位不可接近或者特殊原因无法取样或检测等 导致无法开展间接、直接检测的，不宜使用本规范规定的检测 评价方法进行评价。",
+      "condition": "",
+      "constraint": "4.5.1   缺乏关键性基础数据，原始资料严重不全，且无法进行\n补充的，不宜使用本规范规定的检测评价方法进行评价。\n4.5.2   重要罐体部位不可接近或者特殊原因无法取样或检测等\n导致无法开展间接、直接检测的，不宜使用本规范规定的检测\n评价方法进行评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "缺乏关键性基础数据，原始资料严重不全，且无法进行 补充的，不宜使用本规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46670,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

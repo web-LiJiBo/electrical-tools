@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "12.3.1",
+  "entities": [
+    {
+      "name": "SDB信令接口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.3.1  SDB 应支持64 kit/s   和2 Mbit/s   高 速 No.7   信令链路\n接口。",
+      "type": "语义分解",
+      "subject": "SDB信令接口",
+      "action": "",
+      "operation": "支持规定低速及2Mbit/s高速No.7接口",
+      "condition": "",
+      "constraint": "12.3.1  SDB 应支持64 kit/s   和2 Mbit/s   高 速 No.7   信令链路\n接口。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDB信令接口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；64kit/s单位疑似识别缺损"
+      ]
+    }
+  }
+}

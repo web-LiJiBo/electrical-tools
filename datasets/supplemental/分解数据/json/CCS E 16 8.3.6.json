@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "8.3.6",
+  "entities": [
+    {
+      "name": "锚墩支墩光缆支持",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.6   管道两侧锚固墩有明显位移或墩身出现破坏时，应及时分析原因并采取相应的维护措施。\n8.3.7   混凝土支墩钢筋外露、混凝土剥落等情况，应及时采取相应的处理措施。\n8.3.8   隧道内光缆套管及光缆支撑件损坏时，应及时采取相应的处理措施。",
+      "type": "语义分解",
+      "subject": "锚墩支墩光缆支持",
+      "action": "",
+      "operation": "位移破坏露筋剥落套管支件损坏及时分析维护",
+      "condition": "",
+      "constraint": "8.3.6   管道两侧锚固墩有明显位移或墩身出现破坏时，应及时分析原因并采取相应的维护措施。\n8.3.7   混凝土支墩钢筋外露、混凝土剥落等情况，应及时采取相应的处理措施。\n8.3.8   隧道内光缆套管及光缆支撑件损坏时，应及时采取相应的处理措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锚墩支墩光缆支持"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30085,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

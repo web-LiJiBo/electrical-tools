@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014601",
+  "entities": [
+    {
+      "name": "通过OTUk 接口开销的OSMC 字节信道传输1588v2 报文",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   通过OTUk 接口开销的OSMC 字节信道传输1588v2 报文。支持1588v2报文的OTN 线路接口包\n括 OTUk光口。OTUk线路接口采用1588v2报文实现时间同步，采用BMC 算法建立同步跟踪路径。\n   对于B100G  OTN,通过FlexO 接口开销的OSMC 字节信道传输1588v2 报文。",
+      "type": "语义分解",
+      "subject": "通过OTUk 接口开销的OSMC 字节信道传输1588v2 报文",
+      "action": "",
+      "operation": "通过OTUk 接口开销的OSMC 字节信道传输1588v2 报文。支持1588v2报文的OTN 线路接口包 括 OTUk光口。OTUk线路接口采用1588v2报文实现时间同步，采用BMC 算法建立同步跟踪路径。 对于B100G OTN,通过FlexO 接口开销的OSMC 字节信道传输1588v2 报文。",
+      "condition": "",
+      "constraint": "   通过OTUk 接口开销的OSMC 字节信道传输1588v2 报文。支持1588v2报文的OTN 线路接口包\n括 OTUk光口。OTUk线路接口采用1588v2报文实现时间同步，采用BMC 算法建立同步跟踪路径。\n   对于B100G  OTN,通过FlexO 接口开销的OSMC 字节信道传输1588v2 报文。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通过OTUk 接口开销的OSMC 字节信道传输1588v2 报文"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14601,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

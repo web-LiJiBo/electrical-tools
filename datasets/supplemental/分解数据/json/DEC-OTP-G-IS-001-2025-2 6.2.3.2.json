@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "6.2.3.2",
+  "entities": [
+    {
+      "name": "耗电数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3.2 耗电数据的总累积量通过电力综保系统或电力计量表计上传至站控制系 统。由站控制系统根据总累积量换算出小时累积量和日累积量。",
+      "type": "语义分解",
+      "subject": "耗电数据",
+      "action": "",
+      "operation": "上传总累积量并换算小时日累计",
+      "condition": "",
+      "constraint": "通过电力综保系统或电力计量表计上传至站控制系 统",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "耗电数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

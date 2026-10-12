@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "5.2.8",
+  "entities": [
+    {
+      "name": "特殊危化商店存储",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.8 经营有机过氧化物 ,遇水放出易燃气体的物质和混合物 ,自热物质和混合物 ,自反应物质和混合物的商店应分别具备4.2.8,4.2.9,4.2.10及4.2.11 的存储要求=",
+      "type": "语义分解",
+      "subject": "特殊危化商店存储",
+      "action": "",
+      "operation": "各反应风险品分别满足对应存储条款",
+      "condition": "",
+      "constraint": "5.2.8 经营有机过氧化物 ,遇水放出易燃气体的物质和混合物 ,自热物质和混合物 ,自反应物质和混合物的商店应分别具备4.2.8,4.2.9,4.2.10及4.2.11 的存储要求=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊危化商店存储"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3787,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用4.2.8至11需关联"
+      ]
+    }
+  }
+}

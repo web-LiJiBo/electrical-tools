@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.5.2.3",
+  "entities": [
+    {
+      "name": "研究结果汇总",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2.3 LCA 前几个阶段要求 包括以下四种类型的信息: a ) LCI 和 LCIA 的发现:应将这些发现与数据质量方面的信息加以汇总并组织; 6) 方法学的选择:诸如 LCI 所规定的分配规则和系统边界以及 LCIA 所使用的类型参数和 模型; 目的和范围的确定中所确定的 LCA 研究使用的价值选择; 4) 目的和范围所确定的与应用有关的不同相关方的作用和职责 ,例如同时实施鉴定性评审过 程 ,则还包括评审结果。 当前面阶段 (LCI,LCIA ) 的结果巳经满足了研究的目的和范围的要求,则这些结果的重要性应被 确定。 应对所有当时可获得的相关结果进行汇总并整合,以便进行更深入的分析 ,包括关于数据质量方面 的信息。",
+      "type": "语义分解",
+      "subject": "研究结果汇总",
+      "action": "",
+      "operation": "汇总质量方法价值选择责任评审后按目的范围确定重要性",
+      "condition": "",
+      "constraint": "4.5.2.3 LCA 前几个阶段要求 包括以下四种类型的信息: a ) LCI 和 LCIA 的发现:应将这些发现与数据质量方面的信息加以汇总并组织; 6) 方法学的选择:诸如 LCI 所规定的分配规则和系统边界以及 LCIA 所使用的类型参数和 模型; 目的和范围的确定中所确定的 LCA 研究使用的价值选择; 4) 目的和范围所确定的与应用有关的不同相关方的作用和职责 ,例如同时实施鉴定性评审过 程 ,则还包括评审结果。 当前面阶段 (LCI,LCIA ) 的结果巳经满足了研究的目的和范围的要求,则这些结果的重要性应被 确定。 应对所有当时可获得的相关结果进行汇总并整合,以便进行更深入的分析 ,包括关于数据质量方面 的信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "研究结果汇总"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1133,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

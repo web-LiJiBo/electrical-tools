@@ -1,0 +1,41 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "输油周转综合能耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5 单位输油周转量综合能耗按式(5)计算:",
+      "type": "语义分解",
+      "subject": "输油周转综合能耗",
+      "action": "",
+      "operation": "按式5计算",
+      "condition": "",
+      "constraint": "5.5 单位输油周转量综合能耗按式(5)计算:",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输油周转综合能耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺公式"
+      ]
+    }
+  }
+}

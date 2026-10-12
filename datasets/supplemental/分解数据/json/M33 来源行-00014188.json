@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014188",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    参考模型使用操作域的观点，而非国内和国际部分。定义的域类型有三种，本地运营商域( LOD)、\n区域运营商域(ROD)和骨干运营商域( BOD)。域之间的边界称为运营商网关( OG)。为与ITU-T G.826\n和ITU-T G.828相一致，LOD 和 ROD 关联于国内部分，而BOD 关联于国际部分。为继续与ITU-T G.826\n和ITU-T G.828保持一致，总共8个运营商域将使用4个BOD ( 每个中继国一个)和2个LOD-ROD\n对。因此，假设参考光通道( HROP)  在本地运营商产生和终结；HROP 经过了区域运营商和骨干运营\n\n商。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "    参考模型使用操作域的观点，而非国内和国际部分。定义的域类型有三种，本地运营商域( LOD)、\n区域运营商域(ROD)和骨干运营商域( BOD)。域之间的边界称为运营商网关( OG)。为与ITU-T G.826\n和ITU-T G.828相一致，LOD 和 ROD 关联于国内部分，而BOD 关联于国际部分。为继续与ITU-T G.826\n和ITU-T G.828保持一致，总共8个运营商域将使用4个BOD ( 每个中继国一个)和2个LOD-ROD\n对。因此，假设参考光通道( HROP)  在本地运营商产生和终结；HROP 经过了区域运营商和骨干运营\n\n商。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14188,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.5.12.7",
+  "entities": [
+    {
+      "name": "中途测试封隔器失效",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.12.7 在钻井中途测试时 ,发现封隔器失效,应立即终止测试,采用反循环压井。",
+      "type": "语义分解",
+      "subject": "中途测试封隔器失效",
+      "action": "",
+      "operation": "立即终止测试并反循环压井",
+      "condition": "发现封隔器失效",
+      "constraint": "5.5.12.7 在钻井中途测试时 ,发现封隔器失效,应立即终止测试,采用反循环压井。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中途测试封隔器失效"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4477,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；失效判据及设备绑定待补"
+      ]
+    }
+  }
+}

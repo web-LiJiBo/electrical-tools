@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.8.2",
+  "entities": [
+    {
+      "name": "机房汇集线与接地排",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.8.2      机房内设置的接地汇集线应与接地引入线可靠连接。接\n地汇集线宜在机房沿内墙或地槽、走线架敷设成环形，宜采用截面\n积不小于90mm²的铜材或160mm² 的热镀锌扁钢。可在接地汇集\n线上设置若干接地排，接地排应为规格不小于400mm×100mm×\n5mm 的铜板，并应预留相应的螺孔。",
+      "type": "语义分解",
+      "subject": "机房汇集线与接地排",
+      "action": "",
+      "operation": "可靠连接宜环敷铜至少90平方毫米或热镀锌钢160平方毫米铜排至少400乘100乘5毫米留孔",
+      "condition": "",
+      "constraint": "6.8.2      机房内设置的接地汇集线应与接地引入线可靠连接。接\n地汇集线宜在机房沿内墙或地槽、走线架敷设成环形，宜采用截面\n积不小于90mm²的铜材或160mm² 的热镀锌扁钢。可在接地汇集\n线上设置若干接地排，接地排应为规格不小于400mm×100mm×\n5mm 的铜板，并应预留相应的螺孔。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房汇集线与接地排"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22749,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

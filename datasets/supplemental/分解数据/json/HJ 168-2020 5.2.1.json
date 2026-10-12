@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "监测控制指标需求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 分析生态环境质量标准。生态环境风险管控标准,污染物排放标准等中对控制指标项目监测要求, 包括控制指标项目内涵。浓度限值等。",
+      "type": "语义分解",
+      "subject": "监测控制指标需求",
+      "action": "",
+      "operation": "分析指标内涵及浓度限值要求",
+      "condition": "",
+      "constraint": "5.2.1 分析生态环境质量标准。生态环境风险管控标准,污染物排放标准等中对控制指标项目监测要求, 包括控制指标项目内涵。浓度限值等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测控制指标需求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2303,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

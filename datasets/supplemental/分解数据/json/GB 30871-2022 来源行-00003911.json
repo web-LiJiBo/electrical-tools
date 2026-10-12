@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003911",
+  "entities": [
+    {
+      "name": "雨天和雪天作业时，应采取可靠的防滑、防寒措施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.6 雨天和雪天作业时，应采取可靠的防滑、防寒措施;遇有五级风以上(含五级风)、浓雾等恶劣天气，不应进行高处作业、露天攀登与悬空高处作业;暴风雪、台风、暴雨后，应对作业安全设施进行检查，发现问题立即处理。",
+      "type": "语义分解",
+      "subject": "雨天和雪天作业时，应采取可靠的防滑、防寒措施",
+      "action": "",
+      "operation": "雨天和雪天作业时，应采取可靠的防滑、防寒措施;遇有五级风以上(含五级风)、浓雾等恶劣天气，不应进行高处作业、露天攀登与悬空高处作业;暴风雪、台风、暴雨后，应对作业安全设施进行检查，发现问题立即处理。",
+      "condition": "",
+      "constraint": "8.2.6 雨天和雪天作业时，应采取可靠的防滑、防寒措施;遇有五级风以上(含五级风)、浓雾等恶劣天气，不应进行高处作业、露天攀登与悬空高处作业;暴风雪、台风、暴雨后，应对作业安全设施进行检查，发现问题立即处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "雨天和雪天作业时，应采取可靠的防滑、防寒措施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3911,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

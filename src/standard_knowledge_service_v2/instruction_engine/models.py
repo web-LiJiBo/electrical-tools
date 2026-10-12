@@ -60,3 +60,6 @@ class CandidateInstruction:
     missing_fields: list[str] = field(default_factory=list)
     evidence: list[EvidenceRef] = field(default_factory=list)
     dispatch_allowed: bool = False
+    precondition_status: str = "uncertain"
+    precondition_trace: list[dict[str, Any]] = field(default_factory=list)
+

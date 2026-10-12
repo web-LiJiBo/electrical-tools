@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014754",
+  "entities": [
+    {
+      "name": "a ) 保护锁定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  a ) 保护锁定；\n  b)    强制倒换；\n  c ) 人工倒换；",
+      "type": "语义分解",
+      "subject": "a ) 保护锁定",
+      "action": "",
+      "operation": "仅保留标题或术语；具体要求须结合相邻正文",
+      "condition": "",
+      "constraint": "  a ) 保护锁定；\n  b)    强制倒换；\n  c ) 人工倒换；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a ) 保护锁定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14754,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似标题或术语，不能单独作为判定依据"
+      ]
+    }
+  }
+}

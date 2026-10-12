@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.14.1",
+  "entities": [
+    {
+      "name": "中心选址空间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.14.1 监控中心的位置和空间布局应符合下列规定: 1 监控中心的位置应远离产生粉尘、油烟、有害气体、强震源和强噪声源以及生产或贮存具有腐蚀性、易燃、易爆物品的场所，应避开发生火灾危险程度高的区域和电磁场干扰区域; 2 监控中心的值守区与设备区宜分隔设置; 3 监控中心的面积应与安防系统的规模相适应，应有保证值班人员正常工作的相应辅助设施。",
+      "type": "语义分解",
+      "subject": "中心选址空间",
+      "action": "",
+      "operation": "远粉尘烟毒震噪腐爆避火高电磁宜分值守设备面积辅助适规模",
+      "condition": "",
+      "constraint": "6.14.1 监控中心的位置和空间布局应符合下列规定: 1 监控中心的位置应远离产生粉尘、油烟、有害气体、强震源和强噪声源以及生产或贮存具有腐蚀性、易燃、易爆物品的场所，应避开发生火灾危险程度高的区域和电磁场干扰区域; 2 监控中心的值守区与设备区宜分隔设置; 3 监控中心的面积应与安防系统的规模相适应，应有保证值班人员正常工作的相应辅助设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中心选址空间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7057,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

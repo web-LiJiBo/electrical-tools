@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014533",
+  "entities": [
+    {
+      "name": "在可返回工作模式下，当失效的工作通道不再处于 SD 或 SF 的情况下，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在可返回工作模式下，当失效的工作通道不再处于 SD 或 SF 的情况下，将激活本地的等待恢复状\n\n态，将正常业务信号保持在保护通道上，并且进行计时，当计时器溢出时将业务信号倒换到工作通道。\n\n当出现任何较高优先级的请求时，等待恢复计时器应该提前失效。此时按照较高优先级的请求进行倒换。\n\n10.1.3  持续性定时器(可选)",
+      "type": "语义分解",
+      "subject": "在可返回工作模式下，当失效的工作通道不再处于 SD 或 SF 的情况下，",
+      "action": "",
+      "operation": "在可返回工作模式下，当失效的工作通道不再处于 SD 或 SF 的情况下，将激活本地的等待恢复状 态，将正常业务信号保持在保护通道上，并且进行计时，当计时器溢出时将业务信号倒换到工作通道。 当出现任何较高优先级的请求时，等待恢复计时器应该提前失效。此时按照较高优先级的请求进行倒换。 10.1.3 持续性定时器(可选)",
+      "condition": "",
+      "constraint": "   在可返回工作模式下，当失效的工作通道不再处于 SD 或 SF 的情况下，将激活本地的等待恢复状\n\n态，将正常业务信号保持在保护通道上，并且进行计时，当计时器溢出时将业务信号倒换到工作通道。\n\n当出现任何较高优先级的请求时，等待恢复计时器应该提前失效。此时按照较高优先级的请求进行倒换。\n\n10.1.3  持续性定时器(可选)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在可返回工作模式下，当失效的工作通道不再处于 SD 或 SF 的情况下，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14533,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

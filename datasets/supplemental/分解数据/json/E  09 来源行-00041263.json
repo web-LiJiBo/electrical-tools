@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041263",
+  "entities": [
+    {
+      "name": "在选址时应考虑土地的自然排水分布",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在选址时应考虑土地的自然排水分布。按照地形要求提供合适的排水管道和排放沟渠，提供草皮\n和草种稳定土壤，防止侵蚀，避免不必要的树木移栽和其他自然特性的改变。\n7.2.3 表层以下的土壤状态",
+      "type": "语义分解",
+      "subject": "在选址时应考虑土地的自然排水分布",
+      "action": "",
+      "operation": "在选址时应考虑土地的自然排水分布。按照地形要求提供合适的排水管道和排放沟渠，提供草皮 和草种稳定土壤，防止侵蚀，避免不必要的树木移栽和其他自然特性的改变。 7.2.3 表层以下的土壤状态",
+      "condition": "",
+      "constraint": "   在选址时应考虑土地的自然排水分布。按照地形要求提供合适的排水管道和排放沟渠，提供草皮\n和草种稳定土壤，防止侵蚀，避免不必要的树木移栽和其他自然特性的改变。\n7.2.3 表层以下的土壤状态",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在选址时应考虑土地的自然排水分布"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41263,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "管理人员资格学时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 危险化学品经营单位安全生产管理人员安全管理资格培训不少于48学时，其中第一单元培训时间为8学时，第二单元培训时间为12学时，第三单元培训时间为20学时，第四单元培训时间为4学时。具体培训内容课时安排见表1。",
+      "type": "语义分解",
+      "subject": "管理人员资格学时",
+      "action": "",
+      "operation": "总不少于48第一8第二12第三20第四4学时",
+      "condition": "",
+      "constraint": "4.4.1 危险化学品经营单位安全生产管理人员安全管理资格培训不少于48学时，其中第一单元培训时间为8学时，第二单元培训时间为12学时，第三单元培训时间为20学时，第四单元培训时间为4学时。具体培训内容课时安排见表1。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管理人员资格学时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5008,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单元合计44非总48需核对表1"
+      ]
+    }
+  }
+}

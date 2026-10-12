@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037102",
+  "entities": [
+    {
+      "name": "a) 企业可自行或委托有资质的专业机构定期检测燃料的含碳量，并遵循表2中",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)      企业可自行或委托有资质的专业机构定期检测燃料的含碳量，并遵循表2中的相关要求。对\n   天然气等气体燃料可根据检测到的气体组分、每种气体组分的摩尔浓度及该组分化学分子式\n   中碳原子的数目按式(4)计算含碳量。如果某种燃料的含碳量变动范围较大，则应每月至少\n   进行一次检测，并按月消费量加权平均作为该种燃料的含碳量。",
+      "type": "语义分解",
+      "subject": "a) 企业可自行或委托有资质的专业机构定期检测燃料的含碳量，并遵循表2中",
+      "action": "",
+      "operation": "a) 企业可自行或委托有资质的专业机构定期检测燃料的含碳量，并遵循表2中的相关要求。对 天然气等气体燃料可根据检测到的气体组分、每种气体组分的摩尔浓度及该组分化学分子式 中碳原子的数目按式(4)计算含碳量。如果某种燃料的含碳量变动范围较大，则应每月至少 进行一次检测，并按月消费量加权平均作为该种燃料的含碳量。",
+      "condition": "",
+      "constraint": "a)      企业可自行或委托有资质的专业机构定期检测燃料的含碳量，并遵循表2中的相关要求。对\n   天然气等气体燃料可根据检测到的气体组分、每种气体组分的摩尔浓度及该组分化学分子式\n   中碳原子的数目按式(4)计算含碳量。如果某种燃料的含碳量变动范围较大，则应每月至少\n   进行一次检测，并按月消费量加权平均作为该种燃料的含碳量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 企业可自行或委托有资质的专业机构定期检测燃料的含碳量，并遵循表2中"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37102,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

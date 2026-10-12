@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.13.3",
+  "entities": [
+    {
+      "name": "分权分域验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.13.3      分权分域管理安全验收测试应包括检查局数据、计费数\n据、统计数据、告警信息的分权分域管理和账户的权限划分，各 项\n内容应符合工程技术规范书的要求。",
+      "type": "语义分解",
+      "subject": "分权分域验收",
+      "action": "",
+      "operation": "局计费统计告警数据账户权限合技术书",
+      "condition": "",
+      "constraint": "4.13.3      分权分域管理安全验收测试应包括检查局数据、计费数\n据、统计数据、告警信息的分权分域管理和账户的权限划分，各 项\n内容应符合工程技术规范书的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分权分域验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27060,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

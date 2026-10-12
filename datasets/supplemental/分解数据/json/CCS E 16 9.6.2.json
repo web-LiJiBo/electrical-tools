@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.6.2",
+  "entities": [
+    {
+      "name": "锚室环境系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.6.2   锚室内的温度、湿度应符合设计要求，应保持锚室内通风、照明、除湿系统运转正常，出现异\n常应及时检查维修。",
+      "type": "语义分解",
+      "subject": "锚室环境系统",
+      "action": "",
+      "operation": "温湿合设计通风照明除湿正常异常维修",
+      "condition": "",
+      "constraint": "9.6.2   锚室内的温度、湿度应符合设计要求，应保持锚室内通风、照明、除湿系统运转正常，出现异\n常应及时检查维修。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锚室环境系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30168,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

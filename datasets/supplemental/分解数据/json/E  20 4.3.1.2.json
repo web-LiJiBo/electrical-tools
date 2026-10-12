@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.3.1.2",
+  "entities": [
+    {
+      "name": "确实需要采用开挖方式穿越地表水体的，应首选不带水开挖方式施工，大、中型河",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1.2 确实需要采用开挖方式穿越地表水体的，应首选不带水开挖方式施工，大、中型河流应采用\n围堰导流方式施工，确保河流不断流。",
+      "type": "语义分解",
+      "subject": "确实需要采用开挖方式穿越地表水体的，应首选不带水开挖方式施工，大、中型河",
+      "action": "",
+      "operation": "确实需要采用开挖方式穿越地表水体的，应首选不带水开挖方式施工，大、中型河流应采用 围堰导流方式施工，确保河流不断流。",
+      "condition": "",
+      "constraint": "4.3.1.2 确实需要采用开挖方式穿越地表水体的，应首选不带水开挖方式施工，大、中型河流应采用\n围堰导流方式施工，确保河流不断流。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "确实需要采用开挖方式穿越地表水体的，应首选不带水开挖方式施工，大、中型河"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41970,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

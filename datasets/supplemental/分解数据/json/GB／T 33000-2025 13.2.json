@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "13.2",
+  "entities": [
+    {
+      "name": "体系评审改进",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2 评审改进 企业主要负责人应按规定对安全生产管理体系的适宜性、充分性和有效性进行评审。评审输入应至少包括检查结果、绩效评价结果、事故情况、上一次管理体系持续改进事项的落实情况等。评审输出应至少包括安全生产目标、安全生产重点工作、管理体系持续改进的事项。企业可采用年度安全工作会议或专项安全工作会议的方式实施评审。当企业外部环境、内部的组织机构和业务性质发生重大变化时，应开展附加评审。",
+      "type": "语义分解",
+      "subject": "体系评审改进",
+      "action": "",
+      "operation": "负责人评适宜充分有效输入检查绩效事故前次措施输出目标重点改进重大变化附评",
+      "condition": "",
+      "constraint": "13.2 评审改进 企业主要负责人应按规定对安全生产管理体系的适宜性、充分性和有效性进行评审。评审输入应至少包括检查结果、绩效评价结果、事故情况、上一次管理体系持续改进事项的落实情况等。评审输出应至少包括安全生产目标、安全生产重点工作、管理体系持续改进的事项。企业可采用年度安全工作会议或专项安全工作会议的方式实施评审。当企业外部环境、内部的组织机构和业务性质发生重大变化时，应开展附加评审。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "体系评审改进"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

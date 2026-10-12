@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043886",
+  "entities": [
+    {
+      "name": "使用经过检定或校准合格的电感耦合等离子体原子发射光谱仪，该仪器应配置耐氢",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "使用经过检定或校准合格的电感耦合等离子体原子发射光谱仪，该仪器应配置耐氢氟酸进样系统。",
+      "type": "语义分解",
+      "subject": "使用经过检定或校准合格的电感耦合等离子体原子发射光谱仪，该仪器应配置耐氢",
+      "action": "",
+      "operation": "使用经过检定或校准合格的电感耦合等离子体原子发射光谱仪，该仪器应配置耐氢氟酸进样系统。",
+      "condition": "",
+      "constraint": "使用经过检定或校准合格的电感耦合等离子体原子发射光谱仪，该仪器应配置耐氢氟酸进样系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "使用经过检定或校准合格的电感耦合等离子体原子发射光谱仪，该仪器应配置耐氢"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43886,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

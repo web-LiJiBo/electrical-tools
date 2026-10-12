@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.3.6",
+  "entities": [
+    {
+      "name": "开停车执行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.3.6 企业应严格执行开停车方案 ,建立重要环节责任人签字确认机制 引进物料时应指定有经验 的人员进行流程确认 ,实时监测物料流量,温度,压力 ,液位等参数变化情祝;严格按方案控制进退物料 的顺序和速率 ,现场应安排专人不间断巡检 ,监控泄漏等异常现象。",
+      "type": "语义分解",
+      "subject": "开停车执行",
+      "action": "",
+      "operation": "依方案关键环节签字引料经验人员确认流程实时监参数控顺序速率不间断现场巡查",
+      "condition": "",
+      "constraint": "4.9.3.6 企业应严格执行开停车方案 ,建立重要环节责任人签字确认机制 引进物料时应指定有经验 的人员进行流程确认 ,实时监测物料流量,温度,压力 ,液位等参数变化情祝;严格按方案控制进退物料 的顺序和速率 ,现场应安排专人不间断巡检 ,监控泄漏等异常现象。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开停车执行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5167,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

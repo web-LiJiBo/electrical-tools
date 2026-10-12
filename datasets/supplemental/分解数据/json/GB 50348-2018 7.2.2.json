@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "隐蔽工程随工验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 工程施工中应做好隐蔽工程的随工验收，并填写隐蔽工程随工验收单，经会签后方可生效。隐蔽工程随工验收单应对隐蔽工程内容、检查结果等进行详细说明。",
+      "type": "语义分解",
+      "subject": "隐蔽工程随工验收",
+      "action": "",
+      "operation": "填写详细验收单会签生效",
+      "condition": "工程施工中",
+      "constraint": "7.2.2 工程施工中应做好隐蔽工程的随工验收，并填写隐蔽工程随工验收单，经会签后方可生效。隐蔽工程随工验收单应对隐蔽工程内容、检查结果等进行详细说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "隐蔽工程随工验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7070,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

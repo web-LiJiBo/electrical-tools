@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.3.5",
+  "entities": [
+    {
+      "name": "土壤采样量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.5 采样量 检测理化特征和无机物的样品采样量一般不低于500g,  用于长期保存的样品一般不低于2 000 g; 检测半挥发性和难挥发性有机物的样品采样量一般为 250 g 检测挥发性有机物的样品采样量一般 为100g;有特殊要求时可以适当增减采样量。分析方法有明确规定时 ,按分析方法执行_ 检测理化特征和无机物的样品取土量超出需求量时 应将样品用堆锥法。翻拌法。提拉法或颠倒 法充分混匀后,按四分法进行1次或多次缩分弃取,最后留下所需的土壤样品量。",
+      "type": "语义分解",
+      "subject": "土壤采样量",
+      "action": "",
+      "operation": "按项目长期保存定质量特殊按方法增减理化无机超量混匀四分缩分",
+      "condition": "",
+      "constraint": "7.3.5 采样量 检测理化特征和无机物的样品采样量一般不低于500g,  用于长期保存的样品一般不低于2 000 g; 检测半挥发性和难挥发性有机物的样品采样量一般为 250 g 检测挥发性有机物的样品采样量一般 为100g;有特殊要求时可以适当增减采样量。分析方法有明确规定时 ,按分析方法执行_ 检测理化特征和无机物的样品取土量超出需求量时 应将样品用堆锥法。翻拌法。提拉法或颠倒 法充分混匀后,按四分法进行1次或多次缩分弃取,最后留下所需的土壤样品量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤采样量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2252,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

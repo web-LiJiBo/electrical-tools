@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "软交换用户号码",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1   本地软交换网内POTS  用户号码需分配 E.164  编码，SIP\n终 端 用 户 需 分 配 E.164   号码和 URI  号码，URI  号码的编号方式\n为：用户名@主机名(或域名)。具体编号原则应遵循电信业务经\n营者的相关规定。",
+      "type": "语义分解",
+      "subject": "软交换用户号码",
+      "action": "",
+      "operation": "POTS分E.164SIP分E.164及用户名@主机名URI按运营商规定",
+      "condition": "",
+      "constraint": "7.2.1   本地软交换网内POTS  用户号码需分配 E.164  编码，SIP\n终 端 用 户 需 分 配 E.164   号码和 URI  号码，URI  号码的编号方式\n为：用户名@主机名(或域名)。具体编号原则应遵循电信业务经\n营者的相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "软交换用户号码"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25964,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

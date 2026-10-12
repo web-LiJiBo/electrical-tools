@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "9.1",
+  "entities": [
+    {
+      "name": "分阶段环境管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1 按建设项目建设阶段。生产运行 服务期满后 (可根据项目情况选择)  等不同阶段,针对不同工 祝。不同环境影响和环境风险特征,提出具体环境管理要求。",
+      "type": "语义分解",
+      "subject": "分阶段环境管理",
+      "action": "",
+      "operation": "按阶段工况影响风险提出要求",
+      "condition": "",
+      "constraint": "9.1 按建设项目建设阶段。生产运行 服务期满后 (可根据项目情况选择)  等不同阶段,针对不同工 祝。不同环境影响和环境风险特征,提出具体环境管理要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分阶段环境管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2588,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

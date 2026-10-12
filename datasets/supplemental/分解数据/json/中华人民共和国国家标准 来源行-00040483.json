@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040483",
+  "entities": [
+    {
+      "name": "鉴于化工产品种类繁多，排放废渣性质复杂，为防止相互 掺混引起燃烧、爆炸、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2       鉴于化工产品种类繁多，排放废渣性质复杂，为防止相互\n掺混引起燃烧、爆炸、产生二次污染等污染环境和伤害人员的事故\n发生，对两种或两种以上废渣在混合堆放时要格外加以注意，不相\n容的化工废渣严禁混堆、混存。",
+      "type": "语义分解",
+      "subject": "鉴于化工产品种类繁多，排放废渣性质复杂，为防止相互 掺混引起燃烧、爆炸、",
+      "action": "",
+      "operation": "鉴于化工产品种类繁多，排放废渣性质复杂，为防止相互 掺混引起燃烧、爆炸、产生二次污染等污染环境和伤害人员的事故 发生，对两种或两种以上废渣在混合堆放时要格外加以注意，不相 容的化工废渣严禁混堆、混存。",
+      "condition": "",
+      "constraint": "7.3.2       鉴于化工产品种类繁多，排放废渣性质复杂，为防止相互\n掺混引起燃烧、爆炸、产生二次污染等污染环境和伤害人员的事故\n发生，对两种或两种以上废渣在混合堆放时要格外加以注意，不相\n容的化工废渣严禁混堆、混存。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "鉴于化工产品种类繁多，排放废渣性质复杂，为防止相互 掺混引起燃烧、爆炸、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40483,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

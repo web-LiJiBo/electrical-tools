@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003863",
+  "entities": [
+    {
+      "name": "使用气焊、气割动火作业时，乙炔瓶应直立放置，不应卧放使用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.13 使用气焊、气割动火作业时，乙炔瓶应直立放置，不应卧放使用;氧气瓶与乙炔瓶的间距不应小于5 m，二者与动火点间距不应小于10 m，并应采取防晒和防倾倒措施;乙炔瓶应安装防回火装置。",
+      "type": "语义分解",
+      "subject": "使用气焊、气割动火作业时，乙炔瓶应直立放置，不应卧放使用",
+      "action": "",
+      "operation": "使用气焊、气割动火作业时，乙炔瓶应直立放置，不应卧放使用;氧气瓶与乙炔瓶的间距不应小于5 m，二者与动火点间距不应小于10 m，并应采取防晒和防倾倒措施;乙炔瓶应安装防回火装置。",
+      "condition": "",
+      "constraint": "5.2.13 使用气焊、气割动火作业时，乙炔瓶应直立放置，不应卧放使用;氧气瓶与乙炔瓶的间距不应小于5 m，二者与动火点间距不应小于10 m，并应采取防晒和防倾倒措施;乙炔瓶应安装防回火装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "使用气焊、气割动火作业时，乙炔瓶应直立放置，不应卧放使用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3863,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

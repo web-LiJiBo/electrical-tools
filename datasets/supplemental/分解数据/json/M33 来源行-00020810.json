@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020810",
+  "entities": [
+    {
+      "name": ") G1比特8",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8) G1比特8: VC-4-Xc 的该字节比特8应被插入VC-4-Xv每一个VC-4 G1字节比特8中。\n9) F2:VC-4-Xc的F2字节应插入VC4-Xv 的第一个VC-4中，对其他的VC-4,F2 字节应置为00h。\n10)F3: VC-4-Xc 的F3字节应插入VC-4-Xv 的第一个VC-4, 对其他的VC-4,F3 字节应置为00h。\n11) K3:VC-4-Xc   的 K3 字节应插入VC-4-Xv 的第一个VC-4,  对其他的 VC-4,K3   字节应\n\n   置为00h。",
+      "type": "语义分解",
+      "subject": ") G1比特8",
+      "action": "",
+      "operation": ") G1比特8: VC-4-Xc 的该字节比特8应被插入VC-4-Xv每一个VC-4 G1字节比特8中。 9) F2:VC-4-Xc的F2字节应插入VC4-Xv 的第一个VC-4中，对其他的VC-4,F2 字节应置为00h。 10)F3: VC-4-Xc 的F3字节应插入VC-4-Xv 的第一个VC-4, 对其他的VC-4,F3 字节应置为00h。 11) K3:VC-4-Xc 的 K3 字节应插入VC-4-Xv 的第一个VC-4, 对其他的 VC-4,K3 字节应 置为00",
+      "condition": "",
+      "constraint": "8) G1比特8: VC-4-Xc 的该字节比特8应被插入VC-4-Xv每一个VC-4 G1字节比特8中。\n9) F2:VC-4-Xc的F2字节应插入VC4-Xv 的第一个VC-4中，对其他的VC-4,F2 字节应置为00h。\n10)F3: VC-4-Xc 的F3字节应插入VC-4-Xv 的第一个VC-4, 对其他的VC-4,F3 字节应置为00h。\n11) K3:VC-4-Xc   的 K3 字节应插入VC-4-Xv 的第一个VC-4,  对其他的 VC-4,K3   字节应\n\n   置为00h。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") G1比特8"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20810,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

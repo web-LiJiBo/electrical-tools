@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.1.5",
+  "entities": [
+    {
+      "name": "合成标准不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5 输出量的估计值或测量结果 J 的标准差估计值称为合成标准不确定度 ,用 u(J )表示 ,它决定 于每个输人量的估计值~;的标准差估计值 ,称为标雄不确定度 ,用 u(x; )表示。",
+      "type": "语义分解",
+      "subject": "合成标准不确定度",
+      "action": "",
+      "operation": "定义为测量结果标准差估计值",
+      "condition": "",
+      "constraint": "标准差估计值称为合成标准不确定度",
+      "constraint_role": "informational",
+      "related_entities": [
+        "合成标准不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量和公式符号识别错误，仅保留定义语义"
+      ]
+    }
+  }
+}

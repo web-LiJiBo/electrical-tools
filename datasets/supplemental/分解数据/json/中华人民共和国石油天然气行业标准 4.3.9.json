@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.3.9",
+  "entities": [
+    {
+      "name": "OTN传输指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.9    当光通路传输 10Gbit/s 及以上速率时 ,   应计算偏振模色\n散  (PMD)  影响因素 ,  确保差分群时延在系统允许范围内 。\n4.3. 10    OTN 网络的光信噪比  (OSNR) 、   网络抖动性能指标和\n误码性能指标计算方法和指标要求应符合现行国家标准  《波分\n复用   (WDM)   光纤传输系统工程设计规范》  GB/T  51152 的有\n关规定 ,  且应符合下列规定 :",
+      "type": "语义分解",
+      "subject": "OTN传输指标",
+      "action": "",
+      "operation": "10G及以上计算PMD确保差分群时延允许范围OSNR抖动误码按GB/T51152",
+      "condition": "",
+      "constraint": "4.3.9    当光通路传输 10Gbit/s 及以上速率时 ,   应计算偏振模色\n散  (PMD)  影响因素 ,  确保差分群时延在系统允许范围内 。\n4.3. 10    OTN 网络的光信噪比  (OSNR) 、   网络抖动性能指标和\n误码性能指标计算方法和指标要求应符合现行国家标准  《波分\n复用   (WDM)   光纤传输系统工程设计规范》  GB/T  51152 的有\n关规定 ,  且应符合下列规定 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN传输指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11759,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含4.3.9及4.3.10附加清单缺失"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029146",
+  "entities": [
+    {
+      "name": "综合应急预案是总体应急预案的支持性文件，为应对各种生产安全事故而制订的工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   综合应急预案是总体应急预案的支持性文件，为应对各种生产安全事故而制订的工作方案，用\n于指导生产安全事故的应急响应、处置等工作，主要包括生产安全事故类应急预案体系、事故风险描\n述、应急组织机构及职责、应急响应、后期处置、保障措施等内容。",
+      "type": "语义分解",
+      "subject": "综合应急预案是总体应急预案的支持性文件，为应对各种生产安全事故而制订的工",
+      "action": "",
+      "operation": "综合应急预案是总体应急预案的支持性文件，为应对各种生产安全事故而制订的工作方案，用 于指导生产安全事故的应急响应、处置等工作，主要包括生产安全事故类应急预案体系、事故风险描 述、应急组织机构及职责、应急响应、后期处置、保障措施等内容。",
+      "condition": "",
+      "constraint": "   综合应急预案是总体应急预案的支持性文件，为应对各种生产安全事故而制订的工作方案，用\n于指导生产安全事故的应急响应、处置等工作，主要包括生产安全事故类应急预案体系、事故风险描\n述、应急组织机构及职责、应急响应、后期处置、保障措施等内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "综合应急预案是总体应急预案的支持性文件，为应对各种生产安全事故而制订的工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29146,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

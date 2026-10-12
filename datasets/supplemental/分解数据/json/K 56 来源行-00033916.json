@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033916",
+  "entities": [
+    {
+      "name": "如果要求横向移动测量去验证探头采样的代表性 , 那么探头应适合于对烟气通",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      如果要求横向移动测量去验证探头采样的代表性 , 那么探头应适合于对烟气通道进行全面评估。\n      探头应足够长 , 以便能完全横越烟气通道。  确定探头位置的步骤应经有关方面协商一致。\n6. 2. 3    输送与处理系统",
+      "type": "语义分解",
+      "subject": "如果要求横向移动测量去验证探头采样的代表性 , 那么探头应适合于对烟气通",
+      "action": "",
+      "operation": "如果要求横向移动测量去验证探头采样的代表性 , 那么探头应适合于对烟气通道进行全面评估。 探头应足够长 , 以便能完全横越烟气通道。 确定探头位置的步骤应经有关方面协商一致。 6. 2. 3 输送与处理系统",
+      "condition": "",
+      "constraint": "      如果要求横向移动测量去验证探头采样的代表性 , 那么探头应适合于对烟气通道进行全面评估。\n      探头应足够长 , 以便能完全横越烟气通道。  确定探头位置的步骤应经有关方面协商一致。\n6. 2. 3    输送与处理系统",
+      "constraint_role": "informational",
+      "related_entities": [
+        "如果要求横向移动测量去验证探头采样的代表性 , 那么探头应适合于对烟气通"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33916,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

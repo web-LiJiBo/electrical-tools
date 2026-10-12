@@ -1,0 +1,41 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "能源绩效归一化",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1 归一化需求和方法的确定 如果相关变量没有较大变化 ,则可将基准期和报告期的能源消耗进行直接比较。为了比较同等条件下两个时期的能源绩效 ,可根据相关变量的情况对能源绩效参数和能源基准进行归一化: 当主要相关变量单一 ,同时基本负荷较小时 ,可使用能源消耗与相关变量的简单比率进行归一化; 当主要相关变量较多或基本负荷较大时 ,可建立能源消耗和相关变量关系的模型进行归一化 附录 F提供了使用相关变量将能源绩效参数和能源基准归一化的典型方法。",
+      "type": "语义分解",
+      "subject": "能源绩效归一化",
+      "action": "",
+      "operation": "按变量负荷选择比率或模型归一化",
+      "condition": "",
+      "constraint": "8.1 归一化需求和方法的确定 如果相关变量没有较大变化 ,则可将基准期和报告期的能源消耗进行直接比较。为了比较同等条件下两个时期的能源绩效 ,可根据相关变量的情况对能源绩效参数和能源基准进行归一化: 当主要相关变量单一 ,同时基本负荷较小时 ,可使用能源消耗与相关变量的简单比率进行归一化; 当主要相关变量较多或基本负荷较大时 ,可建立能源消耗和相关变量关系的模型进行归一化 附录 F提供了使用相关变量将能源绩效参数和能源基准归一化的典型方法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源绩效归一化"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 254,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "浊度测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5 浊度的测定应根据具体条件选择 GB/T 12151 或 GB/T 15893.1规定的方法进行 ,测定结果有争 议时 ,以 GB/T 12151为仲裁方法。",
+      "type": "语义分解",
+      "subject": "浊度测定",
+      "action": "",
+      "operation": "按条件选方法且争议用指定仲裁法",
+      "condition": "测定结果有争 议时",
+      "constraint": "5.5 浊度的测定应根据具体条件选择 GB/T 12151 或 GB/T 15893.1规定的方法进行 ,测定结果有争 议时 ,以 GB/T 12151为仲裁方法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "浊度测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

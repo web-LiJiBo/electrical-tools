@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.9.4",
+  "entities": [
+    {
+      "name": "救援资料总结",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.9.4 事故单位对应急救援资料进行收集整理 ,归档 ,对救援行动进行总结评估 ,并报上级有关部门",
+      "type": "语义分解",
+      "subject": "救援资料总结",
+      "action": "",
+      "operation": "收集归档评估并报上级",
+      "condition": "",
+      "constraint": "5.9.4 事故单位对应急救援资料进行收集整理 ,归档 ,对救援行动进行总结评估 ,并报上级有关部门",
+      "constraint_role": "informational",
+      "related_entities": [
+        "救援资料总结"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6046,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

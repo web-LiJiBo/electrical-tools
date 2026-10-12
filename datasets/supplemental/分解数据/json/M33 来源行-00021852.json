@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021852",
+  "entities": [
+    {
+      "name": "根据连续事件(指示)进行状态之间的转移，例如三个连续的 AIS 指示使 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   根据连续事件(指示)进行状态之间的转移，例如三个连续的 AIS 指示使 NORM_state 转移至\nAIS_state。为使性能稳定并对误码不敏感，要对激活转移的连续指示的类型和数目加以选择。\n   单个事件引起转移只是在收到具有有效指针值的使能NDF 之后，由AIS_state 到NORM_state。\n   由于该算法只包括基于连续指示的转移，非连续接收的无效指示不激活向LOP_state 的转移。\n   定义下面的事件(指示):",
+      "type": "语义分解",
+      "subject": "根据连续事件(指示)进行状态之间的转移，例如三个连续的 AIS 指示使 ",
+      "action": "",
+      "operation": "根据连续事件(指示)进行状态之间的转移，例如三个连续的 AIS 指示使 NORM_state 转移至 AIS_state。为使性能稳定并对误码不敏感，要对激活转移的连续指示的类型和数目加以选择。 单个事件引起转移只是在收到具有有效指针值的使能NDF 之后，由AIS_state 到NORM_state。 由于该算法只包括基于连续指示的转移，非连续接收的无效指示不激活向LOP_state 的转移。 定义下面的事件(指示)",
+      "condition": "",
+      "constraint": "   根据连续事件(指示)进行状态之间的转移，例如三个连续的 AIS 指示使 NORM_state 转移至\nAIS_state。为使性能稳定并对误码不敏感，要对激活转移的连续指示的类型和数目加以选择。\n   单个事件引起转移只是在收到具有有效指针值的使能NDF 之后，由AIS_state 到NORM_state。\n   由于该算法只包括基于连续指示的转移，非连续接收的无效指示不激活向LOP_state 的转移。\n   定义下面的事件(指示):",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据连续事件(指示)进行状态之间的转移，例如三个连续的 AIS 指示使 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21852,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

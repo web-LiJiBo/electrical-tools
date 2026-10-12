@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042424",
+  "entities": [
+    {
+      "name": "SY/T 0087. 1 钢制管道及储罐腐蚀评价标准 埋地钢质管道外腐蚀",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "SY/T 0087. 1   钢制管道及储罐腐蚀评价标准    埋地钢质管道外腐蚀直接评价\nSY/T 0315   钢质管道熔结环氧粉末外涂层技术规范\nSY/T 0407   涂装前钢材表面处理规范",
+      "type": "语义分解",
+      "subject": "SY/T 0087. 1 钢制管道及储罐腐蚀评价标准 埋地钢质管道外腐蚀",
+      "action": "",
+      "operation": "SY/T 0087. 1 钢制管道及储罐腐蚀评价标准 埋地钢质管道外腐蚀直接评价 SY/T 0315 钢质管道熔结环氧粉末外涂层技术规范 SY/T 0407 涂装前钢材表面处理规范",
+      "condition": "",
+      "constraint": "SY/T 0087. 1   钢制管道及储罐腐蚀评价标准    埋地钢质管道外腐蚀直接评价\nSY/T 0315   钢质管道熔结环氧粉末外涂层技术规范\nSY/T 0407   涂装前钢材表面处理规范",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SY/T 0087. 1 钢制管道及储罐腐蚀评价标准 埋地钢质管道外腐蚀"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42424,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

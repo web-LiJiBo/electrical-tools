@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产应急维抢修管理规定",
+  "standard_id": "无",
+  "version": "",
+  "chapter_path": "来源行-00003592",
+  "entities": [
+    {
+      "name": "第五十六条 维抢修队伍严肃会议纪律,参会人员不得无故缺席,迟到或中途离场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十六条 维抢修队伍严肃会议纪律,参会人员不得无故缺席,迟到或中途离场。按照要求统一着装,衣冠整齐,精神饱满,坐姿,站姿端正,不得随意走动,交头接耳,玩手机或打瞌睡。会议期间手机及其他通讯工具应当关机,静音或振动状态,如必须接打电话时应当离开会场,不得影响他人。",
+      "type": "语义分解",
+      "subject": "第五十六条 维抢修队伍严肃会议纪律,参会人员不得无故缺席,迟到或中途离场",
+      "action": "",
+      "operation": "第五十六条 维抢修队伍严肃会议纪律,参会人员不得无故缺席,迟到或中途离场。按照要求统一着装,衣冠整齐,精神饱满,坐姿,站姿端正,不得随意走动,交头接耳,玩手机或打瞌睡。会议期间手机及其他通讯工具应当关机,静音或振动状态,如必须接打电话时应当离开会场,不得影响他人。",
+      "condition": "",
+      "constraint": "第五十六条 维抢修队伍严肃会议纪律,参会人员不得无故缺席,迟到或中途离场。按照要求统一着装,衣冠整齐,精神饱满,坐姿,站姿端正,不得随意走动,交头接耳,玩手机或打瞌睡。会议期间手机及其他通讯工具应当关机,静音或振动状态,如必须接打电话时应当离开会场,不得影响他人。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十六条 维抢修队伍严肃会议纪律,参会人员不得无故缺席,迟到或中途离场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3592,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

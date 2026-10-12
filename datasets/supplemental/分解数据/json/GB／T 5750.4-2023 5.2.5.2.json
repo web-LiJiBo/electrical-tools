@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "5.2.5.2",
+  "entities": [
+    {
+      "name": "目视水样比浊",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.5.2 取50 mL摇匀的水样，置于同样规格的比色管内，与浑浊度标准混悬液系列同时振摇均匀后，由管的侧面观察，进行比较。水样的浑浊度超过40 NTU时，可用纯水稀释后测定。",
+      "type": "语义分解",
+      "subject": "目视水样比浊",
+      "action": "",
+      "operation": "五十毫升摇匀水样与标准同时振摇侧面比较超过四十NTU可稀释",
+      "condition": "",
+      "constraint": "5.2.5.2 取50 mL摇匀的水样，置于同样规格的比色管内，与浑浊度标准混悬液系列同时振摇均匀后，由管的侧面观察，进行比较。水样的浑浊度超过40 NTU时，可用纯水稀释后测定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "目视水样比浊"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1266,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

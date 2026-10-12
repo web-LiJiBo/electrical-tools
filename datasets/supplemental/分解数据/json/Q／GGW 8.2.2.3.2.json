@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "8.2.2.3.2",
+  "entities": [
+    {
+      "name": "气袋采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.3.2          采样前将气袋直接连到抽气泵，将气袋中的气体抽去后装入真空箱，并关闭密封真空箱。\n8.2.2.3.3          将采样管连接流量计后连接到真空箱接入气袋的接口，将调节阀门前的管路连接到真空箱\n的另一接口，开始采样。观察真空箱内的气袋，当气袋内采样体积达到气袋最大容积的80%时采样结\n束，关闭抽气泵及气袋上的阀门，取下气袋，贴上注明样品编号的标签。",
+      "type": "语义分解",
+      "subject": "气袋采样",
+      "action": "",
+      "operation": "抽空密封接系统采至容积80%停止关泵阀取袋标识",
+      "condition": "",
+      "constraint": "8.2.2.3.2          采样前将气袋直接连到抽气泵，将气袋中的气体抽去后装入真空箱，并关闭密封真空箱。\n8.2.2.3.3          将采样管连接流量计后连接到真空箱接入气袋的接口，将调节阀门前的管路连接到真空箱\n的另一接口，开始采样。观察真空箱内的气袋，当气袋内采样体积达到气袋最大容积的80%时采样结\n束，关闭抽气泵及气袋上的阀门，取下气袋，贴上注明样品编号的标签。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气袋采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36650,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

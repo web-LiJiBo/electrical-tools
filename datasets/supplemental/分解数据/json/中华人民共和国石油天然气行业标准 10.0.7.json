@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "10.0.7",
+  "entities": [
+    {
+      "name": "SDH同步和同步网管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.0.7    采用 SDH 系统传送时钟同步信号时 ,   SDH 网元应具有\n同步状态信息  (SSM)  功能 。SDH 网元的时钟性能应满足现行\n国家标准  《数字同步网工程技术规范》  GB/T  51117 的相关规定。\n10.0.8    同步网络应设置同步网网络管理系统 ,  统一管理同 一 网\n内的同步设备。",
+      "type": "语义分解",
+      "subject": "SDH同步和同步网管理",
+      "action": "",
+      "operation": "网元具备SSM时钟符合GB/T51117同步网设统一网管",
+      "condition": "",
+      "constraint": "10.0.7    采用 SDH 系统传送时钟同步信号时 ,   SDH 网元应具有\n同步状态信息  (SSM)  功能 。SDH 网元的时钟性能应满足现行\n国家标准  《数字同步网工程技术规范》  GB/T  51117 的相关规定。\n10.0.8    同步网络应设置同步网网络管理系统 ,  统一管理同 一 网\n内的同步设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDH同步和同步网管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12033,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含10.0.7及10.0.8保留"
+      ]
+    }
+  }
+}

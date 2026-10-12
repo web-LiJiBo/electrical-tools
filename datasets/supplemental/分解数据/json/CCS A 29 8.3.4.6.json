@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "8.3.4.6",
+  "entities": [
+    {
+      "name": "进行横向剖切检查内部缺陷时 , 当单批次铝阳极数量不少于 100个时随机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.4.6   进行横向剖切检查内部缺陷时 , 当单批次铝阳极数量不少于 100个时随机取 2个进行检验 , 当\n单批次铝阳极数量不足 100个时取 1个进行检验或按甲方要求进行抽样检验 。",
+      "type": "语义分解",
+      "subject": "进行横向剖切检查内部缺陷时 , 当单批次铝阳极数量不少于 100个时随机",
+      "action": "",
+      "operation": "进行横向剖切检查内部缺陷时 , 当单批次铝阳极数量不少于 100个时随机取 2个进行检验 , 当 单批次铝阳极数量不足 100个时取 1个进行检验或按甲方要求进行抽样检验 。",
+      "condition": "",
+      "constraint": "8.3.4.6   进行横向剖切检查内部缺陷时 , 当单批次铝阳极数量不少于 100个时随机取 2个进行检验 , 当\n单批次铝阳极数量不足 100个时取 1个进行检验或按甲方要求进行抽样检验 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "进行横向剖切检查内部缺陷时 , 当单批次铝阳极数量不少于 100个时随机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43251,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

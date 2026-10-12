@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022333",
+  "entities": [
+    {
+      "name": "与接地母线相连，并作为各类接地线连接端子的矩形铜排",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    与接地母线相连，并作为各类接地线连接端子的矩形铜排。\n2.0.30  总接地排   main     earthing     terminal(MET)",
+      "type": "语义分解",
+      "subject": "与接地母线相连，并作为各类接地线连接端子的矩形铜排",
+      "action": "",
+      "operation": "与接地母线相连，并作为各类接地线连接端子的矩形铜排。 2.0.30 总接地排 main earthing terminal(MET)",
+      "condition": "",
+      "constraint": "    与接地母线相连，并作为各类接地线连接端子的矩形铜排。\n2.0.30  总接地排   main     earthing     terminal(MET)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "与接地母线相连，并作为各类接地线连接端子的矩形铜排"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22333,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

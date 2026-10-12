@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.2.5.3",
+  "entities": [
+    {
+      "name": "流注酚测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.5.3 测定 流路系统稳定后，依次测定标准系列及样品。测定样品时，如已知有余氯存在，需除去余氯的干扰。取50 mL待测水样，加入0.5 mL硫酸亚铁铵溶液{ρ[(NH4)2Fe(SO4)2·6H2O]=1.1 g/L}混匀后测定。注:所列测量范围受不同型号仪器的灵敏度及操作条件的影响而变化时，可酌情改变上述测量范围。",
+      "type": "语义分解",
+      "subject": "流注酚测定",
+      "action": "",
+      "operation": "流路稳定依次测标准样品余氯样加硫酸亚铁铵去干扰",
+      "condition": "",
+      "constraint": "12.2.5.3 测定 流路系统稳定后，依次测定标准系列及样品。测定样品时，如已知有余氯存在，需除去余氯的干扰。取50 mL待测水样，加入0.5 mL硫酸亚铁铵溶液{ρ[(NH4)2Fe(SO4)2·6H2O]=1.1 g/L}混匀后测定。注:所列测量范围受不同型号仪器的灵敏度及操作条件的影响而变化时，可酌情改变上述测量范围。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "流注酚测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1488,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

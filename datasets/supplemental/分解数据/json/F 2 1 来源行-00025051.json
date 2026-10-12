@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025051",
+  "entities": [
+    {
+      "name": "g) 用户 A先振铃，A摘机通话 10 s 后挂机，A挂机后 B振铃，B",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "g)    用户 A先振铃，A摘机通话 10 s 后挂机，A挂机后 B振铃，B摘机通话 10 s 后挂机；\nh)    用户 C挂机结束点名；",
+      "type": "语义分解",
+      "subject": "g) 用户 A先振铃，A摘机通话 10 s 后挂机，A挂机后 B振铃，B",
+      "action": "",
+      "operation": "g) 用户 A先振铃，A摘机通话 10 s 后挂机，A挂机后 B振铃，B摘机通话 10 s 后挂机； h) 用户 C挂机结束点名",
+      "condition": "",
+      "constraint": "g)    用户 A先振铃，A摘机通话 10 s 后挂机，A挂机后 B振铃，B摘机通话 10 s 后挂机；\nh)    用户 C挂机结束点名；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 用户 A先振铃，A摘机通话 10 s 后挂机，A挂机后 B振铃，B"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25051,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

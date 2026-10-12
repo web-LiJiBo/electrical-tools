@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042119",
+  "entities": [
+    {
+      "name": "射线装置失控导致 10 人以下急性重度放射病、局部器官残疾的， 或造成跨",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "射线装置失控导致 10 人以下急性重度放射病、局部器官残疾的，\n\n或造成跨设区的市级行政区域影响的突发环境事件，或海上、河\n\n流、湖泊、饮用水源地等环境敏感区内溢油量 1 吨以上；其他区\n\n域溢油量 100 吨以上。",
+      "type": "语义分解",
+      "subject": "射线装置失控导致 10 人以下急性重度放射病、局部器官残疾的， 或造成跨",
+      "action": "",
+      "operation": "射线装置失控导致 10 人以下急性重度放射病、局部器官残疾的， 或造成跨设区的市级行政区域影响的突发环境事件，或海上、河 流、湖泊、饮用水源地等环境敏感区内溢油量 1 吨以上；其他区 域溢油量 100 吨以上。",
+      "condition": "",
+      "constraint": "射线装置失控导致 10 人以下急性重度放射病、局部器官残疾的，\n\n或造成跨设区的市级行政区域影响的突发环境事件，或海上、河\n\n流、湖泊、饮用水源地等环境敏感区内溢油量 1 吨以上；其他区\n\n域溢油量 100 吨以上。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "射线装置失控导致 10 人以下急性重度放射病、局部器官残疾的， 或造成跨"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

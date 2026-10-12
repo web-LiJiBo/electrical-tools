@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "1.0.1",
+  "entities": [
+    {
+      "name": "灭火器配置规范目的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.1 为了合理配置建筑灭火器(以下简称灭火器) ,有效地扑救工业与民用建筑初起火灾,碱少火灾损失 ,保护人身和财产的安全 ,制定本规范。",
+      "type": "语义分解",
+      "subject": "灭火器配置规范目的",
+      "action": "",
+      "operation": "合理配置扑救初火保护人财",
+      "condition": "",
+      "constraint": "1.0.1 为了合理配置建筑灭火器(以下简称灭火器) ,有效地扑救工业与民用建筑初起火灾,碱少火灾损失 ,保护人身和财产的安全 ,制定本规范。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器配置规范目的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4033,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "10.2.7",
+  "entities": [
+    {
+      "name": "区域风险防控联动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.2.7 考虑事故触发具有不确定性,厂内环境风险防控系统应纳入园区/区域环境风险防控体系,明确风险防控设施。管理的衔接要求。极端事故风险防控及应急处置应结合所在园区/域环境风险防控体系统筹考虑, 按分级晌应要求及时启动园区/域环境风险防范措施。实现厂内与园区/域环境风险防控设施及管理有效联动。有效防控环境风险。",
+      "type": "语义分解",
+      "subject": "区域风险防控联动",
+      "action": "",
+      "operation": "厂系统纳园区区域明确设施管理衔接极端事故分级响应联动",
+      "condition": "",
+      "constraint": "10.2.7 考虑事故触发具有不确定性,厂内环境风险防控系统应纳入园区/区域环境风险防控体系,明确风险防控设施。管理的衔接要求。极端事故风险防控及应急处置应结合所在园区/域环境风险防控体系统筹考虑, 按分级晌应要求及时启动园区/域环境风险防范措施。实现厂内与园区/域环境风险防控设施及管理有效联动。有效防控环境风险。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "区域风险防控联动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2522,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

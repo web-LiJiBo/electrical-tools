@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.8",
+  "entities": [
+    {
+      "name": "其他防爆型式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.8 浇封型\"m'和\"mD\" , 充砂型\"9\"和光辐射\"Op\" m》o mD\"\"q\"\"op\"型电气设备的检查项目可参照表 A.1做适当的修改，以适应这些防爆型式的保 护外壳和内容的专门检查=",
+      "type": "语义分解",
+      "subject": "其他防爆型式",
+      "action": "",
+      "operation": "按型式及外壳内容调整表A1检查项目",
+      "condition": "",
+      "constraint": "5.7.8 浇封型\"m'和\"mD\" , 充砂型\"9\"和光辐射\"Op\" m》o mD\"\"q\"\"op\"型电气设备的检查项目可参照表 A.1做适当的修改，以适应这些防爆型式的保 护外壳和内容的专门检查=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他防爆型式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4022,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；m或mD及q或9等符号需核查"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "5.7",
+  "entities": [
+    {
+      "name": "评估器材准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7 准备评估材料、器材 根据演练需要，准备评估工作所需的相关材料、器材，主要包括演练评估方案文本、评估表格、记录表、文具、通信设备、计时设备、摄像或录音设备、计算机或相关评估软件等。",
+      "type": "语义分解",
+      "subject": "评估器材准备",
+      "action": "",
+      "operation": "备方案评估记录表文具通信计时摄录电脑软件",
+      "condition": "",
+      "constraint": "5.7 准备评估材料、器材 根据演练需要，准备评估工作所需的相关材料、器材，主要包括演练评估方案文本、评估表格、记录表、文具、通信设备、计时设备、摄像或录音设备、计算机或相关评估软件等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "评估器材准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5384,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

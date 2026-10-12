@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "5.1.1.2",
+  "entities": [
+    {
+      "name": "运行方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1.2 模拟过程 按月度计划油气输量,以能耗最低 经济合理为日标编制运行方案,并选择相应月份下的沿线地温, 在模型中各站进出站主要参数符合调控运行要求的前提下,算出一组稳定的工况,得到不同月份内全线 各站的耗油量。耗气量。耗蒸汽量和耗电量。 当只有年计划油气输量的情况下。根据前3年实际油气输量确定的平均月不均匀系数模拟月度计划 油气输量,编制分月运行方案,并选择相应月份下的沿线地温,在模型中各站进出站主要参数符合调控 运行要求的前提下,算出一组稳定的工况。得到不同月份内全线各站的耗油量。耗气量 耗蒸汽量和耗 电量。",
+      "type": "语义分解",
+      "subject": "运行方案",
+      "action": "",
+      "operation": "模拟月度稳定工况的能耗",
+      "condition": "当只有年计划油气输量的情况下",
+      "constraint": "根据前3年实际油气输量确定的平均月不均匀系数",
+      "constraint_role": "informational",
+      "related_entities": [
+        "运行方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "模拟模型和工况参数未提供，不生成设备设定值"
+      ]
+    }
+  }
+}

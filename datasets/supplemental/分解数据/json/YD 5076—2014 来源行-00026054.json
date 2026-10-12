@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026054",
+  "entities": [
+    {
+      "name": ") PHI 接口可包含 一 个或多个2 Mbit/s 的 PRA 接口，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    2) PHI   接口可包含 一 个或多个2 Mbit/s    的 PRA  接口，同时\n提供方式 A 与 方 式 B 业 务 。ISDN   交换系统的分组终端与 ISDN\n交换系统间采用 DSS1  信令。",
+      "type": "语义分解",
+      "subject": ") PHI 接口可包含 一 个或多个2 Mbit/s 的 PRA 接口，",
+      "action": "",
+      "operation": ") PHI 接口可包含 一 个或多个2 Mbit/s 的 PRA 接口，同时 提供方式 A 与 方 式 B 业 务 。ISDN 交换系统的分组终端与 ISDN 交换系统间采用 DSS1 信令。",
+      "condition": "",
+      "constraint": "    2) PHI   接口可包含 一 个或多个2 Mbit/s    的 PRA  接口，同时\n提供方式 A 与 方 式 B 业 务 。ISDN   交换系统的分组终端与 ISDN\n交换系统间采用 DSS1  信令。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") PHI 接口可包含 一 个或多个2 Mbit/s 的 PRA 接口，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26054,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

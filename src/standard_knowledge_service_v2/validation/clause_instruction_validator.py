@@ -6,6 +6,8 @@ from .validation_models import ValidationStatus
 
 class ClauseInstructionValidator:
     def validate(self, semantic: SemanticTuple, instruction: CandidateInstruction) -> tuple[ValidationStatus, list[str]]:
+        if not instruction.payload and instruction.precondition_status != "pass":
+            return ValidationStatus(instruction.precondition_status), [instruction.explanation or "动作前置条件未通过，未生成控制载荷"]
         issues: list[str] = []
         requested = str(instruction.payload.get("requested_action", ""))
         if instruction.missing_fields:
@@ -15,3 +17,4 @@ class ClauseInstructionValidator:
         if not instruction.evidence:
             issues.append("候选指令缺少条款证据")
         return (ValidationStatus.FAIL if issues else ValidationStatus.PASS), issues
+

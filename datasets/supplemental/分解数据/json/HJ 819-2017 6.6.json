@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "6.6",
+  "entities": [
+    {
+      "name": "监测技能验证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6 监测方法技术能力验证 应组织监测人员按照其所承担监测指标的方法步骤开展实验活动，测试方法的检出浓度。校推 (工作)曲线的相关性。精密度和准确度等指标，实验结果满足方法相应的规定以后，方可确认该人员实际操作技能满足工作需求， 能够承担测试工作。",
+      "type": "语义分解",
+      "subject": "监测技能验证",
+      "action": "",
+      "operation": "实验检出曲线精密准确达方法要求才确认人员可承担",
+      "condition": "",
+      "constraint": "6.6 监测方法技术能力验证 应组织监测人员按照其所承担监测指标的方法步骤开展实验活动，测试方法的检出浓度。校推 (工作)曲线的相关性。精密度和准确度等指标，实验结果满足方法相应的规定以后，方可确认该人员实际操作技能满足工作需求， 能够承担测试工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测技能验证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2877,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

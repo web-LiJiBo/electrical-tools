@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024874",
+  "entities": [
+    {
+      "name": "f) 用户 C 呼叫用户 A,软交换机向协议测试仪发送忙信令，用户 C挂",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " f)     用户 C 呼叫用户 A,软交换机向协议测试仪发送忙信令，用户 C挂机结束呼叫；\ng)    使用协议测试仪分析呼叫请求非 2XX 响应流程。",
+      "type": "语义分解",
+      "subject": "f) 用户 C 呼叫用户 A,软交换机向协议测试仪发送忙信令，用户 C挂",
+      "action": "",
+      "operation": "f) 用户 C 呼叫用户 A,软交换机向协议测试仪发送忙信令，用户 C挂机结束呼叫； g) 使用协议测试仪分析呼叫请求非 2XX 响应流程。",
+      "condition": "",
+      "constraint": " f)     用户 C 呼叫用户 A,软交换机向协议测试仪发送忙信令，用户 C挂机结束呼叫；\ng)    使用协议测试仪分析呼叫请求非 2XX 响应流程。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 用户 C 呼叫用户 A,软交换机向协议测试仪发送忙信令，用户 C挂"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24874,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.1.14",
+  "entities": [
+    {
+      "name": "全道路运输车",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.1.14 全道路式运输车应符合下列要求: 车门密封有效; 排水马达及泵运转正常; 装载不超过吃水线; 下水前,需认真检查前,后车厢放水塞是否安装妥当,并打开前车顶盖。",
+      "type": "语义分解",
+      "subject": "全道路运输车",
+      "action": "",
+      "operation": "密封排水正常不超吃水检查塞打开前车顶盖",
+      "condition": "",
+      "constraint": "6.11.1.14 全道路式运输车应符合下列要求: 车门密封有效; 排水马达及泵运转正常; 装载不超过吃水线; 下水前,需认真检查前,后车厢放水塞是否安装妥当,并打开前车顶盖。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "全道路运输车"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4732,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

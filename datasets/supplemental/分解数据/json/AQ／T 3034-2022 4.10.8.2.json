@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.8.2",
+  "entities": [
+    {
+      "name": "泄漏风险辨识",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.8.2 企业应全面辨识可能发生泄漏的部俭.评估泄漏夙险 ,建垂静动密封点台账,重点关注毒性 物料(硫化氢.光= 氯气等急性毒性类别1 和类别 2 的气体) ,液化烃法兰密封 高温油泵密封 ,可燃气 体的压力管线 .装卸等泄漏风险 ,并明确具体防范措施",
+      "type": "语义分解",
+      "subject": "泄漏风险辨识",
+      "action": "",
+      "operation": "识别部位风险建动静密封台账重点毒性液化烃高温油可燃管卸明确措施",
+      "condition": "",
+      "constraint": "4.10.8.2 企业应全面辨识可能发生泄漏的部俭.评估泄漏夙险 ,建垂静动密封点台账,重点关注毒性 物料(硫化氢.光= 氯气等急性毒性类别1 和类别 2 的气体) ,液化烃法兰密封 高温油泵密封 ,可燃气 体的压力管线 .装卸等泄漏风险 ,并明确具体防范措施",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泄漏风险辨识"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5202,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；光=等物质名缺损不得猜测"
+      ]
+    }
+  }
+}

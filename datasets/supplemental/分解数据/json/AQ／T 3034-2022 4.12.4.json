@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.12.4",
+  "entities": [
+    {
+      "name": "重大源安全评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.12.4 涉及毒性气体_剧毒液体 ,易燃气似甲类易燃液体的重大危险源 ,应采用定量风险评价方法进 行安全评估 ,确定个人和社会风险值;涉及爆(性危险化学品的生产装置和储存设施 ,应采用事故后果 法确定其影响范围。",
+      "type": "语义分解",
+      "subject": "重大源安全评估",
+      "action": "",
+      "operation": "毒气剧毒液可燃气甲液定量评个人社会风险爆炸性用后果法定范围",
+      "condition": "",
+      "constraint": "4.12.4 涉及毒性气体_剧毒液体 ,易燃气似甲类易燃液体的重大危险源 ,应采用定量风险评价方法进 行安全评估 ,确定个人和社会风险值;涉及爆(性危险化学品的生产装置和储存设施 ,应采用事故后果 法确定其影响范围。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大源安全评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5228,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

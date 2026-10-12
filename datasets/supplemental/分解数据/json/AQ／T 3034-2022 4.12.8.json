@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.12.8",
+  "entities": [
+    {
+      "name": "重大危险源周边告知",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.12.8 企业应在重大危险源周边明显处设置安全警示标志 .将重大危险源可能发生事故的危害后果, 紧急情况下的应急处置措施等信息告知相关人员和周边单位",
+      "type": "语义分解",
+      "subject": "重大危险源周边告知",
+      "action": "",
+      "operation": "设警示标志告知后果及应急措施",
+      "condition": "",
+      "constraint": "4.12.8 企业应在重大危险源周边明显处设置安全警示标志 .将重大危险源可能发生事故的危害后果, 紧急情况下的应急处置措施等信息告知相关人员和周边单位",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大危险源周边告知"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5232,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

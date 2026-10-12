@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024408",
+  "entities": [
+    {
+      "name": "b) 查看调度台 1 是否具备呼出区域",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    查看调度台 1 是否具备呼出区域；\nc)    查看调度台 1 是否具备呼入区域；\nd)    查看调度台 1 是否具备功能区域；\ne)    查看调度台 1 是否具备会议区域；",
+      "type": "语义分解",
+      "subject": "b) 查看调度台 1 是否具备呼出区域",
+      "action": "",
+      "operation": "b) 查看调度台 1 是否具备呼出区域； c) 查看调度台 1 是否具备呼入区域； d) 查看调度台 1 是否具备功能区域； e) 查看调度台 1 是否具备会议区域",
+      "condition": "",
+      "constraint": "b)    查看调度台 1 是否具备呼出区域；\nc)    查看调度台 1 是否具备呼入区域；\nd)    查看调度台 1 是否具备功能区域；\ne)    查看调度台 1 是否具备会议区域；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 查看调度台 1 是否具备呼出区域"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24408,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

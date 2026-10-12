@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009066",
+  "entities": [
+    {
+      "name": "铁架的安装应符合现行行业标准《电信机房铁架安装设计 标准》YD/T 50",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    9.3.2      铁架的安装应符合现行行业标准《电信机房铁架安装设计\n  标准》YD/T   5026的有关规定。",
+      "type": "语义分解",
+      "subject": "铁架的安装应符合现行行业标准《电信机房铁架安装设计 标准》YD/T 50",
+      "action": "",
+      "operation": "铁架的安装应符合现行行业标准《电信机房铁架安装设计 标准》YD/T 5026的有关规定。",
+      "condition": "",
+      "constraint": "    9.3.2      铁架的安装应符合现行行业标准《电信机房铁架安装设计\n  标准》YD/T   5026的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铁架的安装应符合现行行业标准《电信机房铁架安装设计 标准》YD/T 50"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9066,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

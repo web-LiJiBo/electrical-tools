@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "4.7.3",
+  "entities": [
+    {
+      "name": "财务收益",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.3   财务收益",
+      "type": "语义分解",
+      "subject": "财务收益",
+      "action": "",
+      "operation": "仅标题",
+      "condition": "",
+      "constraint": "4.7.3   财务收益",
+      "constraint_role": "informational",
+      "related_entities": [
+        "财务收益"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28469,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

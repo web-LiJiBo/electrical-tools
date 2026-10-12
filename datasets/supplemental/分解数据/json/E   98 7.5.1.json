@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "7.5.1",
+  "entities": [
+    {
+      "name": "再评价时间应基于腐蚀发展情况和计划维修实施情况制定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.1   再评价时间应基于腐蚀发展情况和计划维修实施情况制定。\n7.5.2   应根据评价结果和腐蚀原因分析，提出调整工艺参数、\n消减介质腐蚀性、添加缓蚀剂、更换管段、加强清管频次、增\n加管道内涂层、加强监检测等维护建议。",
+      "type": "语义分解",
+      "subject": "再评价时间应基于腐蚀发展情况和计划维修实施情况制定",
+      "action": "",
+      "operation": "再评价时间应基于腐蚀发展情况和计划维修实施情况制定。 7.5.2 应根据评价结果和腐蚀原因分析，提出调整工艺参数、 消减介质腐蚀性、添加缓蚀剂、更换管段、加强清管频次、增 加管道内涂层、加强监检测等维护建议。",
+      "condition": "",
+      "constraint": "7.5.1   再评价时间应基于腐蚀发展情况和计划维修实施情况制定。\n7.5.2   应根据评价结果和腐蚀原因分析，提出调整工艺参数、\n消减介质腐蚀性、添加缓蚀剂、更换管段、加强清管频次、增\n加管道内涂层、加强监检测等维护建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "再评价时间应基于腐蚀发展情况和计划维修实施情况制定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

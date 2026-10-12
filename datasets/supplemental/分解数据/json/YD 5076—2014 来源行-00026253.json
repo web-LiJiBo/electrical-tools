@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026253",
+  "entities": [
+    {
+      "name": ". MS 应具备良好的扩展性，满配置时应提供不少于512个 放音和收号通",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    5. MS 应具备良好的扩展性，满配置时应提供不少于512个\n放音和收号通道，可存储的录音通知及短语的总时长不得小于400\n小时。系统收号器一次可存储的号码位数不少于30位。",
+      "type": "语义分解",
+      "subject": ". MS 应具备良好的扩展性，满配置时应提供不少于512个 放音和收号通",
+      "action": "",
+      "operation": ". MS 应具备良好的扩展性，满配置时应提供不少于512个 放音和收号通道，可存储的录音通知及短语的总时长不得小于400 小时。系统收号器一次可存储的号码位数不少于30位。",
+      "condition": "",
+      "constraint": "    5. MS 应具备良好的扩展性，满配置时应提供不少于512个\n放音和收号通道，可存储的录音通知及短语的总时长不得小于400\n小时。系统收号器一次可存储的号码位数不少于30位。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". MS 应具备良好的扩展性，满配置时应提供不少于512个 放音和收号通"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26253,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

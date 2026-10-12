@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.4.4",
+  "entities": [
+    {
+      "name": "通信机房进缆通道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.4.4    为避免站内不同方向的电缆绕建筑距离过长 ,  增加施工\n难度 ,  增大电缆敷设距离 ,  宜在通信机房不同方向的两墙体基\n础下分别设置室外通信光  (电)  缆引入通道。",
+      "type": "语义分解",
+      "subject": "通信机房进缆通道",
+      "action": "",
+      "operation": "宜不同方向两墙基础下分别设置",
+      "condition": "",
+      "constraint": "14.4.4    为避免站内不同方向的电缆绕建筑距离过长 ,  增加施工\n难度 ,  增大电缆敷设距离 ,  宜在通信机房不同方向的两墙体基\n础下分别设置室外通信光  (电)  缆引入通道。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信机房进缆通道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12407,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明性内容"
+      ]
+    }
+  }
+}

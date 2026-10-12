@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "8.3.2",
+  "entities": [
+    {
+      "name": "地下水现场必测项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.2 地下水环境监测时的气温。地下水水位。水温, pX 溶解氧等监测项且为每次监测的现场必测 项目。",
+      "type": "语义分解",
+      "subject": "地下水现场必测项目",
+      "action": "",
+      "operation": "每次测气温水位水温及相关指标",
+      "condition": "",
+      "constraint": "8.3.2 地下水环境监测时的气温。地下水水位。水温, pX 溶解氧等监测项且为每次监测的现场必测 项目。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水现场必测项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 473,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；pX及项且识别异常"
+      ]
+    }
+  }
+}

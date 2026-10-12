@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "4.2.3",
+  "entities": [
+    {
+      "name": "宜按照本规范表A.1.2 收集历年的日常运行参数，宜包括 起止日期、进出",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3 宜按照本规范表A.1.2 收集历年的日常运行参数，宜包括\n起止日期、进出介质周期、介质名称、液位、温度、加热方式等。\n4.2.4 宜按照本规范表A.1.3 收集典型地理区域及典型储罐部位\n的主要大气环境参数，宜包括平均温度、平均湿度、太阳辐射\n情况、降雨量等。",
+      "type": "语义分解",
+      "subject": "宜按照本规范表A.1.2 收集历年的日常运行参数，宜包括 起止日期、进出",
+      "action": "",
+      "operation": "宜按照本规范表A.1.2 收集历年的日常运行参数，宜包括 起止日期、进出介质周期、介质名称、液位、温度、加热方式等。 4.2.4 宜按照本规范表A.1.3 收集典型地理区域及典型储罐部位 的主要大气环境参数，宜包括平均温度、平均湿度、太阳辐射 情况、降雨量等。",
+      "condition": "",
+      "constraint": "4.2.3 宜按照本规范表A.1.2 收集历年的日常运行参数，宜包括\n起止日期、进出介质周期、介质名称、液位、温度、加热方式等。\n4.2.4 宜按照本规范表A.1.3 收集典型地理区域及典型储罐部位\n的主要大气环境参数，宜包括平均温度、平均湿度、太阳辐射\n情况、降雨量等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜按照本规范表A.1.2 收集历年的日常运行参数，宜包括 起止日期、进出"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46652,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

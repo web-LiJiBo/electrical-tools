@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.1.6",
+  "entities": [
+    {
+      "name": "无有效监测废气核算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.6 未按排污许可证相关规范等要求进行手工监测或无有效监测数据的排放口或污染物项目, 使用产排污系数法核算时 ,有有效治理设施的应按排污系数法核算,无有效治理设施的应按产污系数法核算。",
+      "type": "语义分解",
+      "subject": "无有效监测废气核算",
+      "action": "",
+      "operation": "按有效治理设施选排污或产污系数",
+      "condition": "",
+      "constraint": "5.1.6 未按排污许可证相关规范等要求进行手工监测或无有效监测数据的排放口或污染物项目, 使用产排污系数法核算时 ,有有效治理设施的应按排污系数法核算,无有效治理设施的应按产污系数法核算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无有效监测废气核算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 623,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011038",
+  "entities": [
+    {
+      "name": "— B 表示只使用功率放大器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    —  B 表示只使用功率放大器；\n    ——C 表示只使用前置放大器；\n    -— D  表示不使用放大器。\nz 表示所使用的光源和光纤种类：",
+      "type": "语义分解",
+      "subject": "— B 表示只使用功率放大器",
+      "action": "",
+      "operation": "— B 表示只使用功率放大器； ——C 表示只使用前置放大器； -— D 表示不使用放大器。 z 表示所使用的光源和光纤种类",
+      "condition": "",
+      "constraint": "    —  B 表示只使用功率放大器；\n    ——C 表示只使用前置放大器；\n    -— D  表示不使用放大器。\nz 表示所使用的光源和光纤种类：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— B 表示只使用功率放大器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11038,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.6.4",
+  "entities": [
+    {
+      "name": "采样方法描述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.4 采样方法的描述 对每项监测指标都应注明其选用的采样方法。废水采集混合样品的，应注明混合样采样个数。废气非连续采样的，应注明每次采集的样品个数。废气颗粒物采样，应注明每个监测点位设置的采样孔和采样点个数。",
+      "type": "语义分解",
+      "subject": "采样方法描述",
+      "action": "",
+      "operation": "逐指标注明方法混合非连续样数量颗粒物孔点数",
+      "condition": "",
+      "constraint": "5.6.4 采样方法的描述 对每项监测指标都应注明其选用的采样方法。废水采集混合样品的，应注明混合样采样个数。废气非连续采样的，应注明每次采集的样品个数。废气颗粒物采样，应注明每个监测点位设置的采样孔和采样点个数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样方法描述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2868,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

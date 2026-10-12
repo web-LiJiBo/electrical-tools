@@ -1,0 +1,41 @@
+{
+  "standard_name": "陆上油气田油气集输安全规程",
+  "standard_id": "SY/T 6320-2022",
+  "version": "2022",
+  "chapter_path": "6.2.8",
+  "entities": [
+    {
+      "name": "有毒脱水药剂作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.8 脱水药剂含有对人体有害组分的_ 应采取措施。使工作间内空气中有害组分的含量达到职业卫 生要求 并配备防毒面具 呼吸器  绝缘手套等防护用品。",
+      "type": "语义分解",
+      "subject": "有毒脱水药剂作业",
+      "action": "",
+      "operation": "控制空气浓度并配规定防护用品",
+      "condition": "",
+      "constraint": "6.2.8 脱水药剂含有对人体有害组分的_ 应采取措施。使工作间内空气中有害组分的含量达到职业卫 生要求 并配备防毒面具 呼吸器  绝缘手套等防护用品。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "有毒脱水药剂作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7560,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；防护选型须专业复核不得由本条摘要替代"
+      ]
+    }
+  }
+}

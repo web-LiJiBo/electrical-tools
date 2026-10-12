@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036300",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "仪 表\t用超声波流量计代替双向孔板流量计\t  当双向孔板流量计中的孔板锐边被磨损，应拆除、检查并更换孔\n板。拆除孔板需要关闭孔板流量计两侧的阀门，并将管段内气体排\n放到大气中。对于储气库，冬季储气库抽气期间，可能需要每月进\n行一次孔板检查、在测量直接从储层中排出的天然气时需要更频繁\n地检查和更换孔板。超声波流量计是利用管道上的两个传感器之间\n的高频声音脉冲，从而对气体的流量进行计量",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "仪 表\t用超声波流量计代替双向孔板流量计\t  当双向孔板流量计中的孔板锐边被磨损，应拆除、检查并更换孔\n板。拆除孔板需要关闭孔板流量计两侧的阀门，并将管段内气体排\n放到大气中。对于储气库，冬季储气库抽气期间，可能需要每月进\n行一次孔板检查、在测量直接从储层中排出的天然气时需要更频繁\n地检查和更换孔板。超声波流量计是利用管道上的两个传感器之间\n的高频声音脉冲，从而对气体的流量进行计量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36300,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

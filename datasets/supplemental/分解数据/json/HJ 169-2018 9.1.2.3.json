@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.1.2.3",
+  "entities": [
+    {
+      "name": "水环境终点浓度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2.3 终点浓度值选取 终点浓度即预测评价标准。终点浓度值根据水体分类及预测点水体功能要求。按照 GB 3838 GB 5749 GB 3097 或 GBIT 14848选取。对于未列入上迷标准, 但确需进行分析预测的物质。其终点浓度值选取可参照 HJ 2.3, H 610。 对于难以获取终点浓度值的物质。可按质点运移到达判定。",
+      "type": "语义分解",
+      "subject": "水环境终点浓度",
+      "action": "",
+      "operation": "按水体功能相应标准无列物参导则难获取可按质点到达",
+      "condition": "",
+      "constraint": "9.1.2.3 终点浓度值选取 终点浓度即预测评价标准。终点浓度值根据水体分类及预测点水体功能要求。按照 GB 3838 GB 5749 GB 3097 或 GBIT 14848选取。对于未列入上迷标准, 但确需进行分析预测的物质。其终点浓度值选取可参照 HJ 2.3, H 610。 对于难以获取终点浓度值的物质。可按质点运移到达判定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水环境终点浓度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2510,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用编号识别异常需查证"
+      ]
+    }
+  }
+}

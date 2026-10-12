@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "3.1.2",
+  "entities": [
+    {
+      "name": "火灾种类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.2 灭火器配置场所的火灾种类可划分为以下五类: 1 A 类火灾:固体物质火灾。 2 B类火灾:液体火灾或可熔化固体物质火灾。 3 C 类火灾:气体火灾。 D类火灾:金属火灾。 5 卫类火灾(带电火灾) :物体带电燃烧的火灾。",
+      "type": "语义分解",
+      "subject": "火灾种类",
+      "action": "",
+      "operation": "按固体液体气体金属及带电火灾分类",
+      "condition": "",
+      "constraint": "3.1.2 灭火器配置场所的火灾种类可划分为以下五类: 1 A 类火灾:固体物质火灾。 2 B类火灾:液体火灾或可熔化固体物质火灾。 3 C 类火灾:气体火灾。 D类火灾:金属火灾。 5 卫类火灾(带电火灾) :物体带电燃烧的火灾。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "火灾种类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4044,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；带电类原文卫字符异常需原件复核"
+      ]
+    }
+  }
+}

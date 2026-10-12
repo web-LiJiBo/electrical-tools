@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "23",
+  "entities": [
+    {
+      "name": "能量隔离前应提前屏蔽自动保护系统,设备、阀门操作模式切换至就地状态或停止",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "23 能量隔离前应提前屏蔽自动保护系统,设备、阀门操作模式切换至就地状态或停止位,防止设备自启、阀门误开。",
+      "type": "语义分解",
+      "subject": "能量隔离前应提前屏蔽自动保护系统,设备、阀门操作模式切换至就地状态或停止",
+      "action": "",
+      "operation": "能量隔离前应提前屏蔽自动保护系统,设备、阀门操作模式切换至就地状态或停止位,防止设备自启、阀门误开。",
+      "condition": "",
+      "constraint": "23 能量隔离前应提前屏蔽自动保护系统,设备、阀门操作模式切换至就地状态或停止位,防止设备自启、阀门误开。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能量隔离前应提前屏蔽自动保护系统,设备、阀门操作模式切换至就地状态或停止"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6634,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

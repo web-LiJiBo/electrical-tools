@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "7.4.2",
+  "entities": [
+    {
+      "name": "软交换及SDB网元IP",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.2  软交换网内各网元 SS 、AS、应用网关、MS、TG 、SG、AG、\nSAC 等需分配静态 IPv4 地址，可采用私网地址、公网地址私用或\n公网地址。公网地址空间有限，且分配不均，应优先采用前两种方\n式。SDB 设备可采用私有IP 地址，分配原则同软交换设备。\n7.4.3  各网元的网管、计费等所需的IP 地址，应采用静态 IPv4 地\n址，宜采用私网地址。",
+      "type": "语义分解",
+      "subject": "软交换及SDB网元IP",
+      "action": "",
+      "operation": "静态IPv4优先私网或公网私用网管计费静态宜私网",
+      "condition": "",
+      "constraint": "7.4.2  软交换网内各网元 SS 、AS、应用网关、MS、TG 、SG、AG、\nSAC 等需分配静态 IPv4 地址，可采用私网地址、公网地址私用或\n公网地址。公网地址空间有限，且分配不均，应优先采用前两种方\n式。SDB 设备可采用私有IP 地址，分配原则同软交换设备。\n7.4.3  各网元的网管、计费等所需的IP 地址，应采用静态 IPv4 地\n址，宜采用私网地址。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "软交换及SDB网元IP"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25973,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含7.4.2及7.4.3历史适用性待核对"
+      ]
+    }
+  }
+}

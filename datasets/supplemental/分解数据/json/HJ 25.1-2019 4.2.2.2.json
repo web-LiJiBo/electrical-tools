@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "4.2.2.2",
+  "entities": [
+    {
+      "name": "第二阶段调查步骤",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.2 第二阶段土壤污染状况调查通常可以分为初步采样分析和详细采样分析两步进行 ,每步均包括制定工作计划。现场采样。数据评估和结果分析等步骤。初步采样分析和详细采样分析均可根据实际情况分批次实施。逐步减少调查的不确定性=",
+      "type": "语义分解",
+      "subject": "第二阶段调查步骤",
+      "action": "",
+      "operation": "初步与详细采分析各含计划采样数据评估可分批降不确定性",
+      "condition": "",
+      "constraint": "4.2.2.2 第二阶段土壤污染状况调查通常可以分为初步采样分析和详细采样分析两步进行 ,每步均包括制定工作计划。现场采样。数据评估和结果分析等步骤。初步采样分析和详细采样分析均可根据实际情况分批次实施。逐步减少调查的不确定性=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二阶段调查步骤"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2602,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

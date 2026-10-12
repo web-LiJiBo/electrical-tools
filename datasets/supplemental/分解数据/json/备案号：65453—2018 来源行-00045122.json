@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045122",
+  "entities": [
+    {
+      "name": "目检法鉴定应根据产物颜色按表7.6.4的方法进行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1    目检法鉴定应根据产物颜色按表7.6.4的方法进行。\n      2    化学法鉴定时取少量腐蚀产物于小试管内，加数滴.10%\n的盐酸，若无气泡，可评定腐蚀产物为FeO;  若有气体，但不",
+      "type": "语义分解",
+      "subject": "目检法鉴定应根据产物颜色按表7.6.4的方法进行",
+      "action": "",
+      "operation": "目检法鉴定应根据产物颜色按表7.6.4的方法进行。 2 化学法鉴定时取少量腐蚀产物于小试管内，加数滴.10% 的盐酸，若无气泡，可评定腐蚀产物为FeO; 若有气体，但不",
+      "condition": "",
+      "constraint": "      1    目检法鉴定应根据产物颜色按表7.6.4的方法进行。\n      2    化学法鉴定时取少量腐蚀产物于小试管内，加数滴.10%\n的盐酸，若无气泡，可评定腐蚀产物为FeO;  若有气体，但不",
+      "constraint_role": "informational",
+      "related_entities": [
+        "目检法鉴定应根据产物颜色按表7.6.4的方法进行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45122,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

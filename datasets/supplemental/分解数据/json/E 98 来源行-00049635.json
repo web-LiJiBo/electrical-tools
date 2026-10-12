@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049635",
+  "entities": [
+    {
+      "name": "阴极保护系统的设计寿命应考虑被保护系统的使用年限， 但对于阴极保护系统中",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.3       阴极保护系统的设计寿命应考虑被保护系统的使用年限，\n但对于阴极保护系统中的设备和材料，可不限定使用寿命，在使\n用年限内可进行维修或更换。阳极的设计寿命应高于被保护体的\n使用年限，尤其是埋设于储罐罐底的阳极。",
+      "type": "语义分解",
+      "subject": "阴极保护系统的设计寿命应考虑被保护系统的使用年限， 但对于阴极保护系统中",
+      "action": "",
+      "operation": "阴极保护系统的设计寿命应考虑被保护系统的使用年限， 但对于阴极保护系统中的设备和材料，可不限定使用寿命，在使 用年限内可进行维修或更换。阳极的设计寿命应高于被保护体的 使用年限，尤其是埋设于储罐罐底的阳极。",
+      "condition": "",
+      "constraint": "3.0.3       阴极保护系统的设计寿命应考虑被保护系统的使用年限，\n但对于阴极保护系统中的设备和材料，可不限定使用寿命，在使\n用年限内可进行维修或更换。阳极的设计寿命应高于被保护体的\n使用年限，尤其是埋设于储罐罐底的阳极。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阴极保护系统的设计寿命应考虑被保护系统的使用年限， 但对于阴极保护系统中"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49635,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

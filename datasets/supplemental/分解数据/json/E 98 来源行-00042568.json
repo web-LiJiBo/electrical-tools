@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042568",
+  "entities": [
+    {
+      "name": "c) 已投运阴极保护的管道 , 当干扰导致管道不满足保护准则时 ,应及时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)     已投运阴极保护的管道 , 当干扰导致管道不满足保护准则时 ,应及时采取干扰防护措施 。\nd)    可根据干扰程度和受干扰位置随时间变化的情况 ,判定干扰的形态属动态干扰或静态干扰 。",
+      "type": "语义分解",
+      "subject": "c) 已投运阴极保护的管道 , 当干扰导致管道不满足保护准则时 ,应及时",
+      "action": "",
+      "operation": "c) 已投运阴极保护的管道 , 当干扰导致管道不满足保护准则时 ,应及时采取干扰防护措施 。 d) 可根据干扰程度和受干扰位置随时间变化的情况 ,判定干扰的形态属动态干扰或静态干扰 。",
+      "condition": "",
+      "constraint": "c)     已投运阴极保护的管道 , 当干扰导致管道不满足保护准则时 ,应及时采取干扰防护措施 。\nd)    可根据干扰程度和受干扰位置随时间变化的情况 ,判定干扰的形态属动态干扰或静态干扰 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 已投运阴极保护的管道 , 当干扰导致管道不满足保护准则时 ,应及时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42568,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

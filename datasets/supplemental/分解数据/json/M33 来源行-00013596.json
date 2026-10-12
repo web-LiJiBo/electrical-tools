@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013596",
+  "entities": [
+    {
+      "name": "OMS 层网络通过OMS 路径实现光通路在接入点之间的传送， 其特征信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OMS 层网络通过OMS 路径实现光通路在接入点之间的传送， 其特征信息包括OCh 层适配信息的\n数据流和复用段路径终端开销的数据流，均为逻辑信号，采用n 级光复用单元( OMU-n)    表示，其中n\n\n为光通路个数。光复用段中的光通路可以承载业务，也可以不承载业务，不承载业务的光通路可以配置\n\n或不配置光信号。",
+      "type": "语义分解",
+      "subject": "OMS 层网络通过OMS 路径实现光通路在接入点之间的传送， 其特征信息",
+      "action": "",
+      "operation": "OMS 层网络通过OMS 路径实现光通路在接入点之间的传送， 其特征信息包括OCh 层适配信息的 数据流和复用段路径终端开销的数据流，均为逻辑信号，采用n 级光复用单元( OMU-n) 表示，其中n 为光通路个数。光复用段中的光通路可以承载业务，也可以不承载业务，不承载业务的光通路可以配置 或不配置光信号。",
+      "condition": "",
+      "constraint": "      OMS 层网络通过OMS 路径实现光通路在接入点之间的传送， 其特征信息包括OCh 层适配信息的\n数据流和复用段路径终端开销的数据流，均为逻辑信号，采用n 级光复用单元( OMU-n)    表示，其中n\n\n为光通路个数。光复用段中的光通路可以承载业务，也可以不承载业务，不承载业务的光通路可以配置\n\n或不配置光信号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OMS 层网络通过OMS 路径实现光通路在接入点之间的传送， 其特征信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13596,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

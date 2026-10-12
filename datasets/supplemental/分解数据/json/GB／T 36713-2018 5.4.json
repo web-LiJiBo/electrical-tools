@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.4",
+  "entities": [
+    {
+      "name": "组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4 量化和计算相关变量 组织应根据能源管理体系的需求 ,在每一个能源绩效参数层面定义和量化影响能源绩效的相关变量= 组织应把对能源绩效影响较大的变量与对能源绩效几乎没有影响的其余变量分离 _ 当组织已经识别出了明显的相关变量时 ,通常还要对数据进行分析以确定这些变量的重要性 在确定相关变量后 ,可进一步通过建模来判定相关变量对能源绩效的影响程度 参见附录 D。",
+      "type": "语义分解",
+      "subject": "组织",
+      "action": "",
+      "operation": "定义量化能源绩效相关变量",
+      "condition": "根据能源管理体系的需求",
+      "constraint": "在每一个能源绩效参数层面定义和量化",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "附录D未提供，部分信息文字损坏"
+      ]
+    }
+  }
+}

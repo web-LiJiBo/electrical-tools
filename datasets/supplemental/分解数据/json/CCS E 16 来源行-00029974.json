@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00029974",
+  "entities": [
+    {
+      "name": "a) 套管是否存在开裂、露筋、漏水现象",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " a) 套管是否存在开裂、露筋、漏水现象；\nb) 套管是否存在不均匀抬升、沉降现象；\n c)  套管接口是否存在错边、漏水现象；\nd)  套管密封材料是否有效；",
+      "type": "语义分解",
+      "subject": "a) 套管是否存在开裂、露筋、漏水现象",
+      "action": "",
+      "operation": "a) 套管是否存在开裂、露筋、漏水现象； b) 套管是否存在不均匀抬升、沉降现象； c) 套管接口是否存在错边、漏水现象； d) 套管密封材料是否有效",
+      "condition": "",
+      "constraint": " a) 套管是否存在开裂、露筋、漏水现象；\nb) 套管是否存在不均匀抬升、沉降现象；\n c)  套管接口是否存在错边、漏水现象；\nd)  套管密封材料是否有效；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 套管是否存在开裂、露筋、漏水现象"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29974,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

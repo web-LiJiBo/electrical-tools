@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.4.1.2",
+  "entities": [
+    {
+      "name": "噪声布点原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1.2 噪声布点应遵循以下原则: 8) 根据厂内主要噪声源距厂界位置布点; b) 根据厂界周围敏感目标布点; C ) 《厂中厂》是否需要监测根据内部和外围排污单位协商确定; d) 面临海洋。大江。大河的厂界原则上不布点; e 厂界紧邻交通干线不布点; f)厂界紧邻另一排污单位的。在临近另一排污单位侧是否布点由排污单位协商确定。",
+      "type": "语义分解",
+      "subject": "噪声布点原则",
+      "action": "",
+      "operation": "结合源敏感点厂中厂邻企协商大水面交通侧原则不布",
+      "condition": "",
+      "constraint": "5.4.1.2 噪声布点应遵循以下原则: 8) 根据厂内主要噪声源距厂界位置布点; b) 根据厂界周围敏感目标布点; C ) 《厂中厂》是否需要监测根据内部和外围排污单位协商确定; d) 面临海洋。大江。大河的厂界原则上不布点; e 厂界紧邻交通干线不布点; f)厂界紧邻另一排污单位的。在临近另一排污单位侧是否布点由排污单位协商确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "噪声布点原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2855,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

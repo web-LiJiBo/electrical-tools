@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.7.3",
+  "entities": [
+    {
+      "name": "电缆转弯半径",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7.3  电缆转弯应均匀圆滑，电缆弯的曲率半径应大于6R(R  为\n线缆的截面半径),对于特种软电缆，曲率半径应大于4R。",
+      "type": "语义分解",
+      "subject": "电缆转弯半径",
+      "action": "",
+      "operation": "圆滑均匀一般大于6倍截面半径特种软缆大于4倍",
+      "condition": "",
+      "constraint": "3.7.3  电缆转弯应均匀圆滑，电缆弯的曲率半径应大于6R(R  为\n线缆的截面半径),对于特种软电缆，曲率半径应大于4R。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电缆转弯半径"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26726,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；R为截面半径不得误作直径"
+      ]
+    }
+  }
+}

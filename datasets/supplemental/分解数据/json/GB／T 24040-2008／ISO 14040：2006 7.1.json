@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "鉴定性评审概述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 概述 鉴定性评审是一个核查某个 LCA 是否满足方法学、数据、解释和报告要求的过程，同时也核查它是否符合基本原则。一般情况下，LCA 的鉴定性评审可选用7.3中所列出的任何一种方式。鉴定性评审不能核查或审定 LCA 研究的委托方所选定的目的，也不能核查或审定 LCA 结果应用的途径。",
+      "type": "语义分解",
+      "subject": "鉴定性评审概述",
+      "action": "",
+      "operation": "核查方法数据解释报告原则不审目的应用",
+      "condition": "",
+      "constraint": "7.1 概述 鉴定性评审是一个核查某个 LCA 是否满足方法学、数据、解释和报告要求的过程，同时也核查它是否符合基本原则。一般情况下，LCA 的鉴定性评审可选用7.3中所列出的任何一种方式。鉴定性评审不能核查或审定 LCA 研究的委托方所选定的目的，也不能核查或审定 LCA 结果应用的途径。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "鉴定性评审概述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1055,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

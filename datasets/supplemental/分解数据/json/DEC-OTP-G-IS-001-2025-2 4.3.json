@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "能源计量器具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 能源计量器具的计量性能应满足表1的要求,各能源计量层级能源计量器具计量 性能,采取 “就高不就低》的原则 =",
+      "type": "语义分解",
+      "subject": "能源计量器具",
+      "action": "",
+      "operation": "满足计量性能要求",
+      "condition": "",
+      "constraint": "应满足表1的要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源计量器具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行缺表1；不推断计量性能限值"
+      ]
+    }
+  }
+}

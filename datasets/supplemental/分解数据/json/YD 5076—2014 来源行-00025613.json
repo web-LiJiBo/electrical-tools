@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025613",
+  "entities": [
+    {
+      "name": "在我国抗震设防烈度7烈度以上(含7烈度)地区公用电信 网中使用的主要电信",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.3      在我国抗震设防烈度7烈度以上(含7烈度)地区公用电信\n网中使用的主要电信设备必须经电信设备抗震性能检测合格。\n1.0.4       工程建设应贯彻国家节能减排相关政策和法规规定。\n1.0.5       本规范未涉及的与固定电话网工程建设有关的内容应执\n行国家和行业标准的有关规定。",
+      "type": "语义分解",
+      "subject": "在我国抗震设防烈度7烈度以上(含7烈度)地区公用电信 网中使用的主要电信",
+      "action": "",
+      "operation": "在我国抗震设防烈度7烈度以上(含7烈度)地区公用电信 网中使用的主要电信设备必须经电信设备抗震性能检测合格。 1.0.4 工程建设应贯彻国家节能减排相关政策和法规规定。 1.0.5 本规范未涉及的与固定电话网工程建设有关的内容应执 行国家和行业标准的有关规定。",
+      "condition": "",
+      "constraint": "1.0.3      在我国抗震设防烈度7烈度以上(含7烈度)地区公用电信\n网中使用的主要电信设备必须经电信设备抗震性能检测合格。\n1.0.4       工程建设应贯彻国家节能减排相关政策和法规规定。\n1.0.5       本规范未涉及的与固定电话网工程建设有关的内容应执\n行国家和行业标准的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在我国抗震设防烈度7烈度以上(含7烈度)地区公用电信 网中使用的主要电信"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25613,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010225",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "网管\n功能\n检查\t故障管理\t    1.实时告警监视功能；\n    2.可闻可视告警提示；\n    3.告警收集和显示功能；\n    4.告警清除和确认功能；\n    5.告警过滤和屏蔽功能；\n    6.告警级别设置功能；\n    7.告警查询和统计功能；\n    8.告警类型、严重等级和\n  状 态 ；\n    9.告警输出功能；\n    10.告警参数；\n    11.其他功能\t按设计\n功能检查\t全检",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "网管\n功能\n检查\t故障管理\t    1.实时告警监视功能；\n    2.可闻可视告警提示；\n    3.告警收集和显示功能；\n    4.告警清除和确认功能；\n    5.告警过滤和屏蔽功能；\n    6.告警级别设置功能；\n    7.告警查询和统计功能；\n    8.告警类型、严重等级和\n  状 态 ；\n    9.告警输出功能；\n    10.告警参数；\n    11.其他功能\t按设计\n功能检查\t全检",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10225,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

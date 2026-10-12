@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "6.5.1",
+  "entities": [
+    {
+      "name": "所有有关人员(业主和承包方两者)应接受培训，以保障管线的正确运行和维护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.1     所有有关人员(业主和承包方两者)应接受培训，以保障管线的正确运行和维护。培训应包\n括启动和关闭程序、正常操作程序，以及万一发生有害物体泄漏或溢出时的应急响应程序。\n6.5.2     按照规定的时间间隔对管线和装置进行检查。",
+      "type": "语义分解",
+      "subject": "所有有关人员(业主和承包方两者)应接受培训，以保障管线的正确运行和维护",
+      "action": "",
+      "operation": "所有有关人员(业主和承包方两者)应接受培训，以保障管线的正确运行和维护。培训应包 括启动和关闭程序、正常操作程序，以及万一发生有害物体泄漏或溢出时的应急响应程序。 6.5.2 按照规定的时间间隔对管线和装置进行检查。",
+      "condition": "",
+      "constraint": "6.5.1     所有有关人员(业主和承包方两者)应接受培训，以保障管线的正确运行和维护。培训应包\n括启动和关闭程序、正常操作程序，以及万一发生有害物体泄漏或溢出时的应急响应程序。\n6.5.2     按照规定的时间间隔对管线和装置进行检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "所有有关人员(业主和承包方两者)应接受培训，以保障管线的正确运行和维护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41236,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

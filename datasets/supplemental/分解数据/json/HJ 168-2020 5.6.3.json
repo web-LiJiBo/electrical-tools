@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.6.3",
+  "entities": [
+    {
+      "name": "新方法环境介质比对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.3 按5.6.1的要求选定比对方法标准后,新方法标准适用的环境介质多于比对方法标准的, 还应再选择1个包含该适用环境介质的方法标准进行比对=",
+      "type": "语义分解",
+      "subject": "新方法环境介质比对",
+      "action": "",
+      "operation": "介质多于对照方法时增加适用方法",
+      "condition": "新方法标准适用的环境介质多于比对方法标准的",
+      "constraint": "5.6.3 按5.6.1的要求选定比对方法标准后,新方法标准适用的环境介质多于比对方法标准的, 还应再选择1个包含该适用环境介质的方法标准进行比对=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "新方法环境介质比对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2323,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺5.6.1"
+      ]
+    }
+  }
+}

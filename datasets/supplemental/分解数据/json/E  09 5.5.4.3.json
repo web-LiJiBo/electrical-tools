@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.4.3",
+  "entities": [
+    {
+      "name": "作业许可票证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.4.3       作业许可票证保存期限至少1年，票证填写内容符合相关制度或管理程序要求。\n\n5.5.4.4  临时用电应做到：",
+      "type": "语义分解",
+      "subject": "作业许可票证",
+      "action": "",
+      "operation": "至少存一年填写合制度程序",
+      "condition": "",
+      "constraint": "5.5.4.3       作业许可票证保存期限至少1年，票证填写内容符合相关制度或管理程序要求。\n\n5.5.4.4  临时用电应做到：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业许可票证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28064,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含临电引导句无清单"
+      ]
+    }
+  }
+}

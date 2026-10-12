@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第2部分:炼油与化工企业",
+  "standard_id": "GA 1551.2--2019",
+  "version": "2019",
+  "chapter_path": "8.1.4",
+  "entities": [
+    {
+      "name": "炼化个人防化口罩",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.4 保卫执勤人员应配备防护效果不低于 OPHC2 复合生物酶降解技术的个人一次性防化口罩。",
+      "type": "语义分解",
+      "subject": "炼化个人防化口罩",
+      "action": "",
+      "operation": "防护效果不低于原文技术要求",
+      "condition": "",
+      "constraint": "8.1.4 保卫执勤人员应配备防护效果不低于 OPHC2 复合生物酶降解技术的个人一次性防化口罩。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "炼化个人防化口罩"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5630,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

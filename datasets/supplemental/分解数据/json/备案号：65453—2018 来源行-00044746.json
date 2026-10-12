@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00044746",
+  "entities": [
+    {
+      "name": "——附录中增加了八个测试方法，分别为密间隔电位法、 直流电位梯度法、交流",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   ——附录中增加了八个测试方法，分别为密间隔电位法、\n直流电位梯度法、交流电位梯度法、交流电流衰减测试法、皮\n尔逊法、试片断电法、通/断电位法、防腐层电阻率法；\n   ——删除了原附录A  “日常管理调查”、附录B  “管道腐蚀\n深度和腐蚀面积的测量方法”。",
+      "type": "语义分解",
+      "subject": "——附录中增加了八个测试方法，分别为密间隔电位法、 直流电位梯度法、交流",
+      "action": "",
+      "operation": "——附录中增加了八个测试方法，分别为密间隔电位法、 直流电位梯度法、交流电位梯度法、交流电流衰减测试法、皮 尔逊法、试片断电法、通/断电位法、防腐层电阻率法； ——删除了原附录A “日常管理调查”、附录B “管道腐蚀 深度和腐蚀面积的测量方法”。",
+      "condition": "",
+      "constraint": "   ——附录中增加了八个测试方法，分别为密间隔电位法、\n直流电位梯度法、交流电位梯度法、交流电流衰减测试法、皮\n尔逊法、试片断电法、通/断电位法、防腐层电阻率法；\n   ——删除了原附录A  “日常管理调查”、附录B  “管道腐蚀\n深度和腐蚀面积的测量方法”。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——附录中增加了八个测试方法，分别为密间隔电位法、 直流电位梯度法、交流"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44746,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

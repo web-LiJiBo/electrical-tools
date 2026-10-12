@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048274",
+  "entities": [
+    {
+      "name": "识别为活性的腐蚀点，可通过现场开挖验证结果准确性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       4    识别为活性的腐蚀点，可通过现场开挖验证结果准确性。\n       5    活性腐蚀点的腐蚀增长速率可采用概率统计方法进行计\n算，亦可采用其他腐蚀增长速率计算模型进行计算。",
+      "type": "语义分解",
+      "subject": "识别为活性的腐蚀点，可通过现场开挖验证结果准确性",
+      "action": "",
+      "operation": "识别为活性的腐蚀点，可通过现场开挖验证结果准确性。 5 活性腐蚀点的腐蚀增长速率可采用概率统计方法进行计 算，亦可采用其他腐蚀增长速率计算模型进行计算。",
+      "condition": "",
+      "constraint": "       4    识别为活性的腐蚀点，可通过现场开挖验证结果准确性。\n       5    活性腐蚀点的腐蚀增长速率可采用概率统计方法进行计\n算，亦可采用其他腐蚀增长速率计算模型进行计算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "识别为活性的腐蚀点，可通过现场开挖验证结果准确性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48274,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

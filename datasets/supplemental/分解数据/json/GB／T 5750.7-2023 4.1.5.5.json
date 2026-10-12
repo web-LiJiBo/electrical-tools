@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.1.5.5",
+  "entities": [
+    {
+      "name": "酸性滴定终点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5.5 于白色背景上 ,自滴定管滴入高锰酸铆标准使用溶液 ,至溶液呈微红色即为终点。 记录用量 Vi (ml ) 注: 测定时如水样消耗的高锰酸铆标准使用溶液超过了加入量的-半,由于高锰酸钾标准使用溶液的浓度过低 .影响了氧化能力 ,使测定结果偏低。遇此情况 ,取少量样品稀释后重做。",
+      "type": "语义分解",
+      "subject": "酸性滴定终点",
+      "action": "",
+      "operation": "白背景滴至微红记录体积消耗过半稀释重测",
+      "condition": "",
+      "constraint": "4.1.5.5 于白色背景上 ,自滴定管滴入高锰酸铆标准使用溶液 ,至溶液呈微红色即为终点。 记录用量 Vi (ml ) 注: 测定时如水样消耗的高锰酸铆标准使用溶液超过了加入量的-半,由于高锰酸钾标准使用溶液的浓度过低 .影响了氧化能力 ,使测定结果偏低。遇此情况 ,取少量样品稀释后重做。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "酸性滴定终点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1665,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；字符识别异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "7.2.7",
+  "entities": [
+    {
+      "name": "样品唯一性编号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.7 样品流转过程中,除样品唯一性标识需转移和样品测试状态需标识外,任何人`任何时候都不得随意更改样品唯一性编号。分析原始记录应记录样品唯一性编号。",
+      "type": "语义分解",
+      "subject": "样品唯一性编号",
+      "action": "",
+      "operation": "流转时保持编号并在原始记录引用",
+      "condition": "",
+      "constraint": "7.2.7 样品流转过程中,除样品唯一性标识需转移和样品测试状态需标识外,任何人`任何时候都不得随意更改样品唯一性编号。分析原始记录应记录样品唯一性编号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样品唯一性编号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2124,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

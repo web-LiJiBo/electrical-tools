@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.16.1.1",
+  "entities": [
+    {
+      "name": "应急组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.16.1.1 企业应根据生产经营规模及风险特点 ,建立应急淮备与响应的组织机构和管理制度 .明确相 关单位和人员的职责 ,指挥和运行机制",
+      "type": "语义分解",
+      "subject": "应急组织",
+      "action": "",
+      "operation": "按规模风险建立组织职责指挥机制",
+      "condition": "",
+      "constraint": "4.16.1.1 企业应根据生产经营规模及风险特点 ,建立应急淮备与响应的组织机构和管理制度 .明确相 关单位和人员的职责 ,指挥和运行机制",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5286,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

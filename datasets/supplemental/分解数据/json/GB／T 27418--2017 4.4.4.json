@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.4.4",
+  "entities": [
+    {
+      "name": "输入量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4 图 2所示为由输入量 X;的可能值的先验分布或基于全部可获得信息得到的X;的概率分布获得 的X;的估计值以及评定的该估计值的不确定度。 对这两种情况 ,输入量仍假设为温度t。",
+      "type": "语义分解",
+      "subject": "输入量",
+      "action": "",
+      "operation": "说明先验分布评定估计值和不确定度",
+      "condition": "",
+      "constraint": "可能值的先验分布",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "图2缺失且变量损坏"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012527",
+  "entities": [
+    {
+      "name": "严重误码间隔强度 Severely Errored Period Int",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "严重误码间隔强度 Severely Errored Period Intensity(SEPI)\n可用时间内SEP 事件数与可用时间总秒数之比。",
+      "type": "语义分解",
+      "subject": "严重误码间隔强度 Severely Errored Period Int",
+      "action": "",
+      "operation": "严重误码间隔强度 Severely Errored Period Intensity(SEPI) 可用时间内SEP 事件数与可用时间总秒数之比。",
+      "condition": "",
+      "constraint": "严重误码间隔强度 Severely Errored Period Intensity(SEPI)\n可用时间内SEP 事件数与可用时间总秒数之比。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "严重误码间隔强度 Severely Errored Period Int"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12527,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042593",
+  "entities": [
+    {
+      "name": "a) 在开阔地区 ,埋地管道与高压交流输电线路杆塔基脚间控制的最小距离不",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    在开阔地区 ,埋地管道与高压交流输电线路杆塔基脚间控制的最小距离不宜小于杆塔高度 ;\nb)    在路径受限地区 ,埋地管道与交流输电系统的各种接地装置之间的最小水平距离不宜小于表\n      8 的规定 。  在采取故障屏蔽 、接地 、隔离等防护措施后 ,表 8规定的距离可适当减小 。",
+      "type": "语义分解",
+      "subject": "a) 在开阔地区 ,埋地管道与高压交流输电线路杆塔基脚间控制的最小距离不",
+      "action": "",
+      "operation": "a) 在开阔地区 ,埋地管道与高压交流输电线路杆塔基脚间控制的最小距离不宜小于杆塔高度 ; b) 在路径受限地区 ,埋地管道与交流输电系统的各种接地装置之间的最小水平距离不宜小于表 8 的规定 。 在采取故障屏蔽 、接地 、隔离等防护措施后 ,表 8规定的距离可适当减小 。",
+      "condition": "",
+      "constraint": "a)    在开阔地区 ,埋地管道与高压交流输电线路杆塔基脚间控制的最小距离不宜小于杆塔高度 ;\nb)    在路径受限地区 ,埋地管道与交流输电系统的各种接地装置之间的最小水平距离不宜小于表\n      8 的规定 。  在采取故障屏蔽 、接地 、隔离等防护措施后 ,表 8规定的距离可适当减小 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 在开阔地区 ,埋地管道与高压交流输电线路杆塔基脚间控制的最小距离不"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42593,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

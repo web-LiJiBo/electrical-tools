@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "1.0.3",
+  "entities": [
+    {
+      "name": "竣工验收及测试记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.3      竣工验收的方法和步骤应执行部颁《邮电通信建设工程竣\n工验收办法》的规定，验收项目内容和要求应按本规范办理。\n1.0.4      在工程验收测试过程中，应认真做好各项原始记录，填写\n好各种测试表格，为整理竣工验收文件做好准备。",
+      "type": "语义分解",
+      "subject": "竣工验收及测试记录",
+      "action": "",
+      "operation": "按验收办法方法步骤项目按本规范测试留原始记录表格",
+      "condition": "",
+      "constraint": "1.0.3      竣工验收的方法和步骤应执行部颁《邮电通信建设工程竣\n工验收办法》的规定，验收项目内容和要求应按本规范办理。\n1.0.4      在工程验收测试过程中，应认真做好各项原始记录，填写\n好各种测试表格，为整理竣工验收文件做好准备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "竣工验收及测试记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26614,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含1.0.3及1.0.4"
+      ]
+    }
+  }
+}

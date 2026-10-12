@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033914",
+  "entities": [
+    {
+      "name": "采样探头应能提供有代表性的烟气样品 , 因此建议使用取平均值的多孔探头 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      采样探头应能提供有代表性的烟气样品 , 因此建议使用取平均值的多孔探头 , 这些孔在排气道横切\n面内的分布应有相等的采样面积 。采样形怯应给予论证 , 以确保探头实际测量到具有代表性的主烟气流\n的样品。  无论使用何种采样探头 , 都应做到这点。",
+      "type": "语义分解",
+      "subject": "采样探头应能提供有代表性的烟气样品 , 因此建议使用取平均值的多孔探头 ",
+      "action": "",
+      "operation": "采样探头应能提供有代表性的烟气样品 , 因此建议使用取平均值的多孔探头 , 这些孔在排气道横切 面内的分布应有相等的采样面积 。采样形怯应给予论证 , 以确保探头实际测量到具有代表性的主烟气流 的样品。 无论使用何种采样探头 , 都应做到这点。",
+      "condition": "",
+      "constraint": "      采样探头应能提供有代表性的烟气样品 , 因此建议使用取平均值的多孔探头 , 这些孔在排气道横切\n面内的分布应有相等的采样面积 。采样形怯应给予论证 , 以确保探头实际测量到具有代表性的主烟气流\n的样品。  无论使用何种采样探头 , 都应做到这点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样探头应能提供有代表性的烟气样品 , 因此建议使用取平均值的多孔探头 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33914,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

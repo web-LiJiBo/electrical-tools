@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049552",
+  "entities": [
+    {
+      "name": "A.3.2 线性阳极综合性能应符合表A.3.2-1 的要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A.3.2      线性阳极综合性能应符合表A.3.2-1      的要求。混合金\n属氧化物线性阳极主体性能指标应符合表A.3.2-    2 的要求。导\n电聚合物线性阳极中导电聚合物性能指标应符合表 A.3.2-3      的\n要求。线性阳极外保护层为织物覆盖层，其性能指标应符合表\nA.3.2-4      的要求。线性阳极填料采用焦炭粉，其性能指标应符\n合表 A.3.  2-5 的要求。",
+      "type": "语义分解",
+      "subject": "A.3.2 线性阳极综合性能应符合表A.3.2-1 的要求",
+      "action": "",
+      "operation": "A.3.2 线性阳极综合性能应符合表A.3.2-1 的要求。混合金 属氧化物线性阳极主体性能指标应符合表A.3.2- 2 的要求。导 电聚合物线性阳极中导电聚合物性能指标应符合表 A.3.2-3 的 要求。线性阳极外保护层为织物覆盖层，其性能指标应符合表 A.3.2-4 的要求。线性阳极填料采用焦炭粉，其性能指标应符 合表 A.3. 2-5 的要求。",
+      "condition": "",
+      "constraint": "A.3.2      线性阳极综合性能应符合表A.3.2-1      的要求。混合金\n属氧化物线性阳极主体性能指标应符合表A.3.2-    2 的要求。导\n电聚合物线性阳极中导电聚合物性能指标应符合表 A.3.2-3      的\n要求。线性阳极外保护层为织物覆盖层，其性能指标应符合表\nA.3.2-4      的要求。线性阳极填料采用焦炭粉，其性能指标应符\n合表 A.3.  2-5 的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A.3.2 线性阳极综合性能应符合表A.3.2-1 的要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49552,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

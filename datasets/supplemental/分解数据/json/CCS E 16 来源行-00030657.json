@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00030657",
+  "entities": [
+    {
+      "name": "f) 支座错位、变形、破损严重，已失去正常支撑功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " f)  支座错位、变形、破损严重，已失去正常支撑功能；\ng)  锚固连接件错位、变形、破损，影响安全使用；\nh)  结构承载力下降达20%以上；\n i)  基底冲刷面达到20%以上；",
+      "type": "语义分解",
+      "subject": "f) 支座错位、变形、破损严重，已失去正常支撑功能",
+      "action": "",
+      "operation": "f) 支座错位、变形、破损严重，已失去正常支撑功能； g) 锚固连接件错位、变形、破损，影响安全使用； h) 结构承载力下降达20%以上； i) 基底冲刷面达到20%以上",
+      "condition": "",
+      "constraint": " f)  支座错位、变形、破损严重，已失去正常支撑功能；\ng)  锚固连接件错位、变形、破损，影响安全使用；\nh)  结构承载力下降达20%以上；\n i)  基底冲刷面达到20%以上；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 支座错位、变形、破损严重，已失去正常支撑功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30657,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

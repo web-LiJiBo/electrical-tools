@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025935",
+  "entities": [
+    {
+      "name": "指定的部分国家代码的呼叫，发端的长途交换系统应根据受话国 的国家代码首选",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "指定的部分国家代码的呼叫，发端的长途交换系统应根据受话国\n的国家代码首选至相应的 ISC 的直达路由，次选本汇接区 ISC 的\n路由，最终选国内网迂回路由；对其他国家代码的呼叫，发端长途\n交换系统应首选至本汇接区 ISC  的直达路由，次选国内网迂回\n路由。",
+      "type": "语义分解",
+      "subject": "指定的部分国家代码的呼叫，发端的长途交换系统应根据受话国 的国家代码首选",
+      "action": "",
+      "operation": "指定的部分国家代码的呼叫，发端的长途交换系统应根据受话国 的国家代码首选至相应的 ISC 的直达路由，次选本汇接区 ISC 的 路由，最终选国内网迂回路由；对其他国家代码的呼叫，发端长途 交换系统应首选至本汇接区 ISC 的直达路由，次选国内网迂回 路由。",
+      "condition": "",
+      "constraint": "指定的部分国家代码的呼叫，发端的长途交换系统应根据受话国\n的国家代码首选至相应的 ISC 的直达路由，次选本汇接区 ISC 的\n路由，最终选国内网迂回路由；对其他国家代码的呼叫，发端长途\n交换系统应首选至本汇接区 ISC  的直达路由，次选国内网迂回\n路由。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指定的部分国家代码的呼叫，发端的长途交换系统应根据受话国 的国家代码首选"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25935,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018316",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "ATM          Asynchronous Transfer Mode\nAU                Administrative Unit\nAU-n           Administrative Unit,level n\nAUG           Administrative Unit Group\nBER           Bit Error Ratio\nBIP             Bit Interleaved Parity\nC               Connection function\nCI              Characteristic Information\nCID            Consecutive Identical Digits\nCK            Clock\nCM            Connection Matrix\nCP             Connection Point\nCRC          Cyclic Redundancy Check\nD                 Data\nDCC          Data Communications Channel\nDEC          Decrement\nDEG           Degraded\nDEGTHR Degraded Threshold\nDS             Defect Second\nDXC           Digital Cross Connect\nEBC          Errored Block Count\nEDC           Error Detection Code\nEDCV         Error Detection Code Violation\nES              Electrical Section\nES1            Electrical  Section,level  1\nExSL           Expected Signal Label\nExTI           Expected Trace Identifier\nF  B           Far-end Block\nF_DS          Far-end Defect Second\nF_EBC        Far-end Errored Block Count\nFAS           Frame Alignment Signal\nFEC           Forward Error Correction\nFS               Forced Switch\nFS             Frame Start signal\nFSI              FEC status indication\nHO              Higher Order\t异步传送模块\n管理单元\nn阶管理单元\n管理单元组\n比特误码率\n比特间插奇偶校验\n连接功能\n特征信息\n连续相同数字\n时钟\n连接矩阵\n连接点\n循环冗余校验\n数据\n数据通信通道\n减少\n劣化\n劣化阈值\n缺陷秒\n数字交叉连接\n误码块计数\n误码检测码\n误码检测码违例\n电段\n1 阶电段\n预期的信号标记\n预期的踪迹识别符\n远端块\n远端缺陷秒\n远端误码块计数\n帧同步信号\n前向纠错\n强制倒换\n帧起始信号\nFEC状态指示\n高阶",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "ATM          Asynchronous Transfer Mode\nAU                Administrative Unit\nAU-n           Administrative Unit,level n\nAUG           Administrative Unit Group\nBER           Bit Error Ratio\nBIP             Bit Interleaved Parity\nC               Connection function\nCI              Characteristic Information\nCID            Consecutive Identical Digits\nCK            Clock\nCM            Connection Matrix\nCP             Connection Point\nCRC          Cyclic Redundancy Check\nD                 Data\nDCC          Data Communications Channel\nDEC          Decrement\nDEG           Degraded\nDEGTHR Degraded Threshold\nDS             Defect Second\nDXC           Digital Cross Connect\nEBC          Errored Block Count\nEDC           Error Detection Code\nEDCV         Error Detection Code Violation\nES              Electrical Section\nES1            Electrical  Section,level  1\nExSL           Expected Signal Label\nExTI           Expected Trace Identifier\nF  B           Far-end Block\nF_DS          Far-end Defect Second\nF_EBC        Far-end Errored Block Count\nFAS           Frame Alignment Signal\nFEC           Forward Error Correction\nFS               Forced Switch\nFS             Frame Start signal\nFSI              FEC status indication\nHO              Higher Order\t异步传送模块\n管理单元\nn阶管理单元\n管理单元组\n比特误码率\n比特间插奇偶校验\n连接功能\n特征信息\n连续相同数字\n时钟\n连接矩阵\n连接点\n循环冗余校验\n数据\n数据通信通道\n减少\n劣化\n劣化阈值\n缺陷秒\n数字交叉连接\n误码块计数\n误码检测码\n误码检测码违例\n电段\n1 阶电段\n预期的信号标记\n预期的踪迹识别符\n远端块\n远端缺陷秒\n远端误码块计数\n帧同步信号\n前向纠错\n强制倒换\n帧起始信号\nFEC状态指示\n高阶",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18316,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

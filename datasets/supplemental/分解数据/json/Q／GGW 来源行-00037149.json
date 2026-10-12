@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037149",
+  "entities": [
+    {
+      "name": "Vco₂ — — 第m 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Vco₂        — — 第m 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示；\nVCH₄         ——第 m支火炬系统火炬气中甲烷的平均体积浓度， 2以百分数(%)表示；\n44",
+      "type": "语义分解",
+      "subject": "Vco₂ — — 第m 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分",
+      "action": "",
+      "operation": "Vco₂ — — 第m 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示； VCH₄ ——第 m支火炬系统火炬气中甲烷的平均体积浓度， 2以百分数(%)表示； 44",
+      "condition": "",
+      "constraint": "Vco₂        — — 第m 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示；\nVCH₄         ——第 m支火炬系统火炬气中甲烷的平均体积浓度， 2以百分数(%)表示；\n44",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Vco₂ — — 第m 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37149,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

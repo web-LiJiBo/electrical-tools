@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "安防对象需求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1 安全防范工程建设应明确保护对象及其安全需求，并应符合下列规定: 1 保护对象的确定应考虑保护单位、保护部位和(或)区域、保护目标三个层次;保护目标分为需要保护的物品目标、人员目标以及系统和(或)设备和(或)部件等; 2 保护对象的安全需求应根据治安防范和反恐防范的需求进行分析和确定。",
+      "type": "语义分解",
+      "subject": "安防对象需求",
+      "action": "",
+      "operation": "明确单位部位区域目标层次按治安反恐需求确定",
+      "condition": "",
+      "constraint": "4.1.1 安全防范工程建设应明确保护对象及其安全需求，并应符合下列规定: 1 保护对象的确定应考虑保护单位、保护部位和(或)区域、保护目标三个层次;保护目标分为需要保护的物品目标、人员目标以及系统和(或)设备和(或)部件等; 2 保护对象的安全需求应根据治安防范和反恐防范的需求进行分析和确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防对象需求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6874,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

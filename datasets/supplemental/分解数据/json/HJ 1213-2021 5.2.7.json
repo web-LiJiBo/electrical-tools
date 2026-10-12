@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.7",
+  "entities": [
+    {
+      "name": "温升分布统计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.7 温升区分布提取与统计 依据遥感反演的海表温度,按照公式提取温排水的温升区分布,并通过分级来标识温升强度, 分级规范参见 GB 3097对水温温升的等级要求。温升强度分级及专题图对应的色标 (RGB 值)参见表1。公式中: 4T为温升, T为海表温度, To为基准温度。根据各级温升水体所占的像元数及影像的空间分辨率大小。计算各级温升的分布面积和所占比例。",
+      "type": "语义分解",
+      "subject": "温升分布统计",
+      "action": "",
+      "operation": "依据海温基准提温升分级按像元分辨率算面积比例",
+      "condition": "",
+      "constraint": "5.2.7 温升区分布提取与统计 依据遥感反演的海表温度,按照公式提取温排水的温升区分布,并通过分级来标识温升强度, 分级规范参见 GB 3097对水温温升的等级要求。温升强度分级及专题图对应的色标 (RGB 值)参见表1。公式中: 4T为温升, T为海表温度, To为基准温度。根据各级温升水体所占的像元数及影像的空间分辨率大小。计算各级温升的分布面积和所占比例。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "温升分布统计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1956,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式及表1未提供引用GB3097需查证"
+      ]
+    }
+  }
+}

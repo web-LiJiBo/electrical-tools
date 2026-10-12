@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.1.5.1.1",
+  "entities": [
+    {
+      "name": "检测仪预热",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5.1.1  仪器投入使用前，先进行仪器预热，仪器预热期间应保持FID 点燃，管路、探杆连接完好。\n预热时间按说明书要求，说明书无明确要求的，仪器预热时间不少于30 min 。仪器预热后，将仪器设置\n为自动读取最大值。",
+      "type": "语义分解",
+      "subject": "检测仪预热",
+      "action": "",
+      "operation": "按说明预热点燃FID检查探管无说明至少30分钟后读最大值",
+      "condition": "",
+      "constraint": "6.1.5.1.1  仪器投入使用前，先进行仪器预热，仪器预热期间应保持FID 点燃，管路、探杆连接完好。\n预热时间按说明书要求，说明书无明确要求的，仪器预热时间不少于30 min 。仪器预热后，将仪器设置\n为自动读取最大值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "检测仪预热"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36568,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

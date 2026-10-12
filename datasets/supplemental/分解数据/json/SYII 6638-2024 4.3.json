@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "站场计量仪表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 各站场进出物料及油。气。水 电应设置计量仪表。计量器具的配备应符合GB 17167. GBII 20901, GBIT 24789 的规定。",
+      "type": "语义分解",
+      "subject": "站场计量仪表",
+      "action": "",
+      "operation": "配置物料及能源计量并符合引用标准",
+      "condition": "",
+      "constraint": "4.3 各站场进出物料及油。气。水 电应设置计量仪表。计量器具的配备应符合GB 17167. GBII 20901, GBIT 24789 的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站场计量仪表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 261,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准号有识别异常，引用内容未提供"
+      ]
+    }
+  }
+}

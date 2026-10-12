@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043983",
+  "entities": [
+    {
+      "name": "在重复性条件下获得的两个独立测试结果的测定值，在以下给出的平均值范围内，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      在重复性条件下获得的两个独立测试结果的测定值，在以下给出的平均值范围内，测试结果的绝对\n差值不大于重复性限（r），超过重复性限（r）的情况不超过 5%,重复性限（r）按表 A. 17 数据采用线性内\n插法求得。",
+      "type": "语义分解",
+      "subject": "在重复性条件下获得的两个独立测试结果的测定值，在以下给出的平均值范围内，",
+      "action": "",
+      "operation": "在重复性条件下获得的两个独立测试结果的测定值，在以下给出的平均值范围内，测试结果的绝对 差值不大于重复性限（r），超过重复性限（r）的情况不超过 5%,重复性限（r）按表 A. 17 数据采用线性内 插法求得。",
+      "condition": "",
+      "constraint": "      在重复性条件下获得的两个独立测试结果的测定值，在以下给出的平均值范围内，测试结果的绝对\n差值不大于重复性限（r），超过重复性限（r）的情况不超过 5%,重复性限（r）按表 A. 17 数据采用线性内\n插法求得。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在重复性条件下获得的两个独立测试结果的测定值，在以下给出的平均值范围内，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43983,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

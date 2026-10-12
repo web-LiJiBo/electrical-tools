@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024625",
+  "entities": [
+    {
+      "name": "d) 设置用户 B无应答前转到用户 C,用户 A 呼叫用户 B,用户 B",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "d)    设置用户 B无应答前转到用户 C,用户 A 呼叫用户 B,用户 B振铃后不接听，超时后查看用户\n        C是否振铃，用户 C摘机后是否正常通话；",
+      "type": "语义分解",
+      "subject": "d) 设置用户 B无应答前转到用户 C,用户 A 呼叫用户 B,用户 B",
+      "action": "",
+      "operation": "d) 设置用户 B无应答前转到用户 C,用户 A 呼叫用户 B,用户 B振铃后不接听，超时后查看用户 C是否振铃，用户 C摘机后是否正常通话",
+      "condition": "",
+      "constraint": "d)    设置用户 B无应答前转到用户 C,用户 A 呼叫用户 B,用户 B振铃后不接听，超时后查看用户\n        C是否振铃，用户 C摘机后是否正常通话；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 设置用户 B无应答前转到用户 C,用户 A 呼叫用户 B,用户 B"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24625,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

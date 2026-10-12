@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "能源绩效参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 界定能源绩效参数测量的边界 能源管理体系的范围和边界应将组织管理的能源绩效的相关区域或活动包含在内 _ 测量和量化能源绩效 ,应先确定每一项能源绩效参数的测量边界(即能源绩效参数的边界)。不同能源绩效参数测量的边界有可能会重叠。界定能源绩效参数测量的边界时应考虑以下几点: a ) 与能源管理相关的组织责任; b) 能源绩效参数的边界与组织责任相关联的程度; 能源管理体系边界; 组织设定的优先进行控制和改进的主要能源使用; 组织需要单独管理的特殊的设备,过程或子过程。能源绩效参数测量的边界可分为三个层次 ,即 :组织层面,系统层面和单个设施/设备/过程层面的边界。如表1所示。各层次能源绩效参数边界的确定划分关系及划分过程参见附录 C。",
+      "type": "语义分解",
+      "subject": "能源绩效参数",
+      "action": "",
+      "operation": "界定测量边界",
+      "condition": "测量和量化能源绩效",
+      "constraint": "应先确定每一项能源绩效参数的测量边界",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源绩效参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "表1和附录C未提供，文字有识别错误"
+      ]
+    }
+  }
+}

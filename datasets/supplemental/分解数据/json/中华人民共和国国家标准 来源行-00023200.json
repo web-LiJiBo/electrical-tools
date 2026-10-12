@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023200",
+  "entities": [
+    {
+      "name": "通信局(站)雷电保护区的划分是参照《雷电电磁脉冲的防 护 第一部分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   通信局(站)雷电保护区的划分是参照《雷电电磁脉冲的防\n护 第一部分：一般原则》IEC 1312—1和《雷电电磁脉冲的防护 第\n三部分：电涌保护器的要求》IEC  1312—3中的内容，并根据通信\n局(站)的实际情况进行划分的，主要目的是要确定电涌保护器\n(SPD)多级保护的原则。",
+      "type": "语义分解",
+      "subject": "通信局(站)雷电保护区的划分是参照《雷电电磁脉冲的防 护 第一部分",
+      "action": "",
+      "operation": "通信局(站)雷电保护区的划分是参照《雷电电磁脉冲的防 护 第一部分：一般原则》IEC 1312—1和《雷电电磁脉冲的防护 第 三部分：电涌保护器的要求》IEC 1312—3中的内容，并根据通信 局(站)的实际情况进行划分的，主要目的是要确定电涌保护器 (SPD)多级保护的原则。",
+      "condition": "",
+      "constraint": "   通信局(站)雷电保护区的划分是参照《雷电电磁脉冲的防\n护 第一部分：一般原则》IEC 1312—1和《雷电电磁脉冲的防护 第\n三部分：电涌保护器的要求》IEC  1312—3中的内容，并根据通信\n局(站)的实际情况进行划分的，主要目的是要确定电涌保护器\n(SPD)多级保护的原则。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信局(站)雷电保护区的划分是参照《雷电电磁脉冲的防 护 第一部分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23200,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

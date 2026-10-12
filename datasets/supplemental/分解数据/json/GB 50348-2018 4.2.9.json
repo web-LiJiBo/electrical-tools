@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.9",
+  "entities": [
+    {
+      "name": "安防主备电源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.9 应根据安全防范系统及其设备的空间分布特点、供电条件和安全保障需求，合理选择主电源、备用电源及其供电模式和保障措施。",
+      "type": "语义分解",
+      "subject": "安防主备电源",
+      "action": "",
+      "operation": "按空间供电保障需求选择模式措施",
+      "condition": "",
+      "constraint": "4.2.9 应根据安全防范系统及其设备的空间分布特点、供电条件和安全保障需求，合理选择主电源、备用电源及其供电模式和保障措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防主备电源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

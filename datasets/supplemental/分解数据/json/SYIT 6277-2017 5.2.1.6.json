@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.2.1.6",
+  "entities": [
+    {
+      "name": "其他可能含硫场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.6 在输送管道。污油水处理厂(池。沟)。电缆暗沟。排〈供〉水管(暗)道。隧道等其他可能含有硫化氢的场所,从事相应工作的单位应至少配备探测范围为 Omglm? 30m8/m? (Oppm 2Oppm ) 的便携式硫化氢检测仪1套。",
+      "type": "语义分解",
+      "subject": "其他可能含硫场所",
+      "action": "",
+      "operation": "规定量程检测仪至少一套",
+      "condition": "",
+      "constraint": "5.2.1.6 在输送管道。污油水处理厂(池。沟)。电缆暗沟。排〈供〉水管(暗)道。隧道等其他可能含有硫化氢的场所,从事相应工作的单位应至少配备探测范围为 Omglm? 30m8/m? (Oppm 2Oppm ) 的便携式硫化氢检测仪1套。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他可能含硫场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7432,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；量程单位缺损需核查"
+      ]
+    }
+  }
+}

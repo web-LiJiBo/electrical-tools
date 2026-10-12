@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "8.1.2.1",
+  "entities": [
+    {
+      "name": "多类型事故情形",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.2.1 同一种危险物质可能有多种环境风险类型 风险事故情形应包括危险物质泄漏,以及火灾 爆炸等引发的伴生/次生污染物排放情形。对不同环境要素产生影响的风险事故情形,应分别进行设定。",
+      "type": "语义分解",
+      "subject": "多类型事故情形",
+      "action": "",
+      "operation": "包括泄漏火爆伴次生排放不同环境要素分别设定",
+      "condition": "",
+      "constraint": "8.1.2.1 同一种危险物质可能有多种环境风险类型 风险事故情形应包括危险物质泄漏,以及火灾 爆炸等引发的伴生/次生污染物排放情形。对不同环境要素产生影响的风险事故情形,应分别进行设定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多类型事故情形"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2487,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

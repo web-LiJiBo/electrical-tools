@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "7.1.1",
+  "entities": [
+    {
+      "name": "输气压缩机选型台数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1 应根据压气站输气量。站压比等参数进行技术经济比较后, 确定输气管道压缩机的选型和台数;一般宜选用离心式压绡机多台并联运行 应确保在输量的波动范围内。压气站利压缩机的匹配能使压缩机在高效区内运行。",
+      "type": "语义分解",
+      "subject": "输气压缩机选型台数",
+      "action": "",
+      "operation": "技术经济比较匹配输量并高效运行",
+      "condition": "",
+      "constraint": "7.1.1 应根据压气站输气量。站压比等参数进行技术经济比较后, 确定输气管道压缩机的选型和台数;一般宜选用离心式压绡机多台并联运行 应确保在输量的波动范围内。压气站利压缩机的匹配能使压缩机在高效区内运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输气压缩机选型台数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 306,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

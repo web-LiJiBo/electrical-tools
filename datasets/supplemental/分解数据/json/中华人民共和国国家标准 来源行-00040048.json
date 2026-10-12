@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040048",
+  "entities": [
+    {
+      "name": "下列有机废气应接入有机废气回收或处理装置，其大气污 染物排放应符合现行国",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3       下列有机废气应接入有机废气回收或处理装置，其大气污\n染物排放应符合现行国家和地方排放标准的要求。有机废气收\n集 、传输设施的设置和操作条件应保证被收集的有机气体不得直\n\n接向大气排放：",
+      "type": "语义分解",
+      "subject": "下列有机废气应接入有机废气回收或处理装置，其大气污 染物排放应符合现行国",
+      "action": "",
+      "operation": "下列有机废气应接入有机废气回收或处理装置，其大气污 染物排放应符合现行国家和地方排放标准的要求。有机废气收 集 、传输设施的设置和操作条件应保证被收集的有机气体不得直 接向大气排放",
+      "condition": "",
+      "constraint": "5.2.3       下列有机废气应接入有机废气回收或处理装置，其大气污\n染物排放应符合现行国家和地方排放标准的要求。有机废气收\n集 、传输设施的设置和操作条件应保证被收集的有机气体不得直\n\n接向大气排放：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "下列有机废气应接入有机废气回收或处理装置，其大气污 染物排放应符合现行国"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40048,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

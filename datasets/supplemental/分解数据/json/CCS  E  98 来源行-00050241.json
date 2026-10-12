@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050241",
+  "entities": [
+    {
+      "name": "防腐层标称电导率或防腐层电阻率与GB 50424—2015 的规定一致，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.2 防腐层标称电导率或防腐层电阻率与GB 50424—2015\n的规定一致，但与NACE  TM  0102:2002的指标有所不同，主\n要考虑到一方面NACE   TM   0102:2002来源于对2FBE防腐层\n的检测结果，另一方面为了满足国内穿越防腐层质量的实际情\n况进行了放宽，因此该数据指标与GB 50424—2015保持一致。\n9.0.3   防腐层质量评价为一般或差时，应确认防腐措施是否满\n足要求，不满足要求时应对穿越段管道附加阴极保护措施。",
+      "type": "语义分解",
+      "subject": "防腐层标称电导率或防腐层电阻率与GB 50424—2015 的规定一致，",
+      "action": "",
+      "operation": "防腐层标称电导率或防腐层电阻率与GB 50424—2015 的规定一致，但与NACE TM 0102:2002的指标有所不同，主 要考虑到一方面NACE TM 0102:2002来源于对2FBE防腐层 的检测结果，另一方面为了满足国内穿越防腐层质量的实际情 况进行了放宽，因此该数据指标与GB 50424—2015保持一致。 9.0.3 防腐层质量评价为一般或差时，应确认防腐措施是否满 足要求，不满足要求时应对穿越段管道附加阴极保护措施。",
+      "condition": "",
+      "constraint": "9.0.2 防腐层标称电导率或防腐层电阻率与GB 50424—2015\n的规定一致，但与NACE  TM  0102:2002的指标有所不同，主\n要考虑到一方面NACE   TM   0102:2002来源于对2FBE防腐层\n的检测结果，另一方面为了满足国内穿越防腐层质量的实际情\n况进行了放宽，因此该数据指标与GB 50424—2015保持一致。\n9.0.3   防腐层质量评价为一般或差时，应确认防腐措施是否满\n足要求，不满足要求时应对穿越段管道附加阴极保护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防腐层标称电导率或防腐层电阻率与GB 50424—2015 的规定一致，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50241,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

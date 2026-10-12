@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034468",
+  "entities": [
+    {
+      "name": "指定的空气性质特性值和零样品的仪器读数之间的差值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      指定的空气性质特性值和零样品的仪器读数之间的差值 。按照惯例 , 虽然可以对受影响的各类源加\n以规定 , 这个空气性质特性值被选择为气体浓度测量范围上限的 95% 。\n3. 5. 4    量程不稳定性 (漂移 )    span instability  (drift)",
+      "type": "语义分解",
+      "subject": "指定的空气性质特性值和零样品的仪器读数之间的差值",
+      "action": "",
+      "operation": "指定的空气性质特性值和零样品的仪器读数之间的差值 。按照惯例 , 虽然可以对受影响的各类源加 以规定 , 这个空气性质特性值被选择为气体浓度测量范围上限的 95% 。 3. 5. 4 量程不稳定性 (漂移 ) span instability (drift)",
+      "condition": "",
+      "constraint": "      指定的空气性质特性值和零样品的仪器读数之间的差值 。按照惯例 , 虽然可以对受影响的各类源加\n以规定 , 这个空气性质特性值被选择为气体浓度测量范围上限的 95% 。\n3. 5. 4    量程不稳定性 (漂移 )    span instability  (drift)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指定的空气性质特性值和零样品的仪器读数之间的差值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

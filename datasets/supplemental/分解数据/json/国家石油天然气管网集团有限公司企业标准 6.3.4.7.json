@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.4.7",
+  "entities": [
+    {
+      "name": "生态恢复应通过造林前整地有效拦蓄地表径流，减少土壤流失，并改善土壤墒情",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4.7        生态恢复应通过造林前整地有效拦蓄地表径流，减少土壤流失，并改善土壤墒情。造林整地\n应根据立地条件采取不同的整地方式。播撒种子后采用覆盖材料覆盖。",
+      "type": "语义分解",
+      "subject": "生态恢复应通过造林前整地有效拦蓄地表径流，减少土壤流失，并改善土壤墒情",
+      "action": "",
+      "operation": "生态恢复应通过造林前整地有效拦蓄地表径流，减少土壤流失，并改善土壤墒情。造林整地 应根据立地条件采取不同的整地方式。播撒种子后采用覆盖材料覆盖。",
+      "condition": "",
+      "constraint": "6.3.4.7        生态恢复应通过造林前整地有效拦蓄地表径流，减少土壤流失，并改善土壤墒情。造林整地\n应根据立地条件采取不同的整地方式。播撒种子后采用覆盖材料覆盖。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态恢复应通过造林前整地有效拦蓄地表径流，减少土壤流失，并改善土壤墒情"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40772,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

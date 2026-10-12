@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "新建管道宜在管道设计阶段对可能受到的交流干扰进行 初步判断，对预期交流干",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1 新建管道宜在管道设计阶段对可能受到的交流干扰进行\n初步判断，对预期交流干扰严重的管段应进行交流干扰评估。\n4.1.2 在新建管道建设期进行交流干扰评估时，相关参数宜按\n照本规范附录A 进行收集。",
+      "type": "语义分解",
+      "subject": "新建管道宜在管道设计阶段对可能受到的交流干扰进行 初步判断，对预期交流干",
+      "action": "",
+      "operation": "新建管道宜在管道设计阶段对可能受到的交流干扰进行 初步判断，对预期交流干扰严重的管段应进行交流干扰评估。 4.1.2 在新建管道建设期进行交流干扰评估时，相关参数宜按 照本规范附录A 进行收集。",
+      "condition": "",
+      "constraint": "4.1.1 新建管道宜在管道设计阶段对可能受到的交流干扰进行\n初步判断，对预期交流干扰严重的管段应进行交流干扰评估。\n4.1.2 在新建管道建设期进行交流干扰评估时，相关参数宜按\n照本规范附录A 进行收集。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "新建管道宜在管道设计阶段对可能受到的交流干扰进行 初步判断，对预期交流干"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48747,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

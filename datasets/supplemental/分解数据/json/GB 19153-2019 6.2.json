@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2 试验方法 空气压缩机能效试验按 GB/T 3853 规定 ,且应在吸气温度5 ℃~40 ℃范围进行测量。",
+      "type": "语义分解",
+      "subject": "空气压缩机",
+      "action": "",
+      "operation": "测量能效试验",
+      "condition": "",
+      "constraint": "吸气温度5 ℃~40 ℃范围进行测量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "GB/T 3853具体试验方法需另查；温度范围是试验条件"
+      ]
+    }
+  }
+}

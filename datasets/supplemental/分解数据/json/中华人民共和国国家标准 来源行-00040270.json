@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040270",
+  "entities": [
+    {
+      "name": "定期监测企业内部分级管理指标的实施和达标情况",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 3  定期监测企业内部分级管理指标的实施和达标情况；\n  4    定期监测企业内污染物治理设施的运行情况；\n  5    完成各级环境监测网规定的监测任务；\n  6    配合地方环境监测部门开展应急监测。",
+      "type": "语义分解",
+      "subject": "定期监测企业内部分级管理指标的实施和达标情况",
+      "action": "",
+      "operation": "定期监测企业内部分级管理指标的实施和达标情况； 4 定期监测企业内污染物治理设施的运行情况； 5 完成各级环境监测网规定的监测任务； 6 配合地方环境监测部门开展应急监测。",
+      "condition": "",
+      "constraint": " 3  定期监测企业内部分级管理指标的实施和达标情况；\n  4    定期监测企业内污染物治理设施的运行情况；\n  5    完成各级环境监测网规定的监测任务；\n  6    配合地方环境监测部门开展应急监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "定期监测企业内部分级管理指标的实施和达标情况"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40270,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

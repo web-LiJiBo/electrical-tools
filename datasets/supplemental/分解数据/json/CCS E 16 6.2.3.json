@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "跨越周期",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3   应按跨越工程的等级、分类、维护等级分别制订日常检查周期。如遇恶劣天气、汛期、雨季、\n冰冻等特殊情况，应增加检查频次。检查记录应定期整理归档。",
+      "type": "语义分解",
+      "subject": "跨越周期",
+      "action": "",
+      "operation": "按等级分类维护级恶劣天气汛雨冰增加频次记录归档",
+      "condition": "",
+      "constraint": "6.2.3   应按跨越工程的等级、分类、维护等级分别制订日常检查周期。如遇恶劣天气、汛期、雨季、\n冰冻等特殊情况，应增加检查频次。检查记录应定期整理归档。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "跨越周期"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29793,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

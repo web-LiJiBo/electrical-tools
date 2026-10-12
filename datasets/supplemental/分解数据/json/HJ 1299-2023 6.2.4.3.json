@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.4.3",
+  "entities": [
+    {
+      "name": "排口信息不一致",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.4.3 对于排放口 (废气排放口 废水排放口。雨水排放口及其他可能存在的依法纳入监管的排放 口等)信息与环境影响报告书(表)及其批复文件或竣工环境保护验收文件相比不一致的情形,如附件 中未提供相关证明材料 建议现场核查时予以重点关注",
+      "type": "语义分解",
+      "subject": "排口信息不一致",
+      "action": "",
+      "operation": "无证明材料时建议现场核查重点关注",
+      "condition": "",
+      "constraint": "6.2.4.3 对于排放口 (废气排放口 废水排放口。雨水排放口及其他可能存在的依法纳入监管的排放 口等)信息与环境影响报告书(表)及其批复文件或竣工环境保护验收文件相比不一致的情形,如附件 中未提供相关证明材料 建议现场核查时予以重点关注",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排口信息不一致"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1996,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

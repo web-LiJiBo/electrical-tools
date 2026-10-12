@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025462",
+  "entities": [
+    {
+      "name": "a) 断开软交换机 1 后，软交换机 1 上的业务迁移到软交换机2,切换",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    断开软交换机 1 后，软交换机 1 上的业务迁移到软交换机2,切换时间应小于 60 s,切换过程中\n       用户 A 与 C通话正常，切换后用户 B 呼叫 D正常；",
+      "type": "语义分解",
+      "subject": "a) 断开软交换机 1 后，软交换机 1 上的业务迁移到软交换机2,切换",
+      "action": "",
+      "operation": "a) 断开软交换机 1 后，软交换机 1 上的业务迁移到软交换机2,切换时间应小于 60 s,切换过程中 用户 A 与 C通话正常，切换后用户 B 呼叫 D正常",
+      "condition": "",
+      "constraint": "a)    断开软交换机 1 后，软交换机 1 上的业务迁移到软交换机2,切换时间应小于 60 s,切换过程中\n       用户 A 与 C通话正常，切换后用户 B 呼叫 D正常；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 断开软交换机 1 后，软交换机 1 上的业务迁移到软交换机2,切换"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25462,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

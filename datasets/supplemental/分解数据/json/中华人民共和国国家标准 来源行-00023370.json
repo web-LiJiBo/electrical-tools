@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023370",
+  "entities": [
+    {
+      "name": "室外接地排的主要作用就是将馈线外护层分流的雷电流 尽快地泄放到地网，减小",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.3      室外接地排的主要作用就是将馈线外护层分流的雷电流\n尽快地泄放到地网，减小进入机房的雷电流。而铁塔遭受雷击时\n铁塔塔角是雷电流最集中的泄流渠道，为了施工方便将室外接地\n排连接到铁塔塔角不仅不会使馈线外护层的雷电流尽快泄放到地\n网，而且会增大进入机房的雷电流，造成机房内部设备发生损坏。\n本条为强制性条文，必须严格执行。",
+      "type": "语义分解",
+      "subject": "室外接地排的主要作用就是将馈线外护层分流的雷电流 尽快地泄放到地网，减小",
+      "action": "",
+      "operation": "室外接地排的主要作用就是将馈线外护层分流的雷电流 尽快地泄放到地网，减小进入机房的雷电流。而铁塔遭受雷击时 铁塔塔角是雷电流最集中的泄流渠道，为了施工方便将室外接地 排连接到铁塔塔角不仅不会使馈线外护层的雷电流尽快泄放到地 网，而且会增大进入机房的雷电流，造成机房内部设备发生损坏。 本条为强制性条文，必须严格执行。",
+      "condition": "",
+      "constraint": "6.4.3      室外接地排的主要作用就是将馈线外护层分流的雷电流\n尽快地泄放到地网，减小进入机房的雷电流。而铁塔遭受雷击时\n铁塔塔角是雷电流最集中的泄流渠道，为了施工方便将室外接地\n排连接到铁塔塔角不仅不会使馈线外护层的雷电流尽快泄放到地\n网，而且会增大进入机房的雷电流，造成机房内部设备发生损坏。\n本条为强制性条文，必须严格执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "室外接地排的主要作用就是将馈线外护层分流的雷电流 尽快地泄放到地网，减小"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23370,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

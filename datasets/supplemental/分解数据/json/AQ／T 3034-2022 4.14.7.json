@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.14.7",
+  "entities": [
+    {
+      "name": "承包商全程监管",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.14.7 企业应对承包商作业进行全程安全监管 ,对特级动火作业 .受限空间作业应全程视频监控;应 建立对承包商的监督检查记录 ,保存承包商在本企业作业中的事故事件记录",
+      "type": "语义分解",
+      "subject": "承包商全程监管",
+      "action": "",
+      "operation": "重点作业全视频监控并保存检查事故记录",
+      "condition": "",
+      "constraint": "4.14.7 企业应对承包商作业进行全程安全监管 ,对特级动火作业 .受限空间作业应全程视频监控;应 建立对承包商的监督检查记录 ,保存承包商在本企业作业中的事故事件记录",
+      "constraint_role": "informational",
+      "related_entities": [
+        "承包商全程监管"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5249,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

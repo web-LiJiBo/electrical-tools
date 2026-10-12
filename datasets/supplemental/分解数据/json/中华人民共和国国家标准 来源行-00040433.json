@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040433",
+  "entities": [
+    {
+      "name": "渗井、溶洞、废矿井等场地都具有易渗特征，极易与地下水 相连，有毒有害废水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.7       渗井、溶洞、废矿井等场地都具有易渗特征，极易与地下水\n相连，有毒有害废水如果排入此类场所，会直接污染地下水或地表\n水，是严重的环境违法行为，尤其是私设暗管或利用渗井、渗坑、溶\n洞等排放、倾倒含有毒有害污染物的废水，将对地下水环境造成难\n以治理的污染和危害，环境保护主管部门将严格追责，对构成犯罪\n的，将依法追究刑事责任。",
+      "type": "语义分解",
+      "subject": "渗井、溶洞、废矿井等场地都具有易渗特征，极易与地下水 相连，有毒有害废水",
+      "action": "",
+      "operation": "渗井、溶洞、废矿井等场地都具有易渗特征，极易与地下水 相连，有毒有害废水如果排入此类场所，会直接污染地下水或地表 水，是严重的环境违法行为，尤其是私设暗管或利用渗井、渗坑、溶 洞等排放、倾倒含有毒有害污染物的废水，将对地下水环境造成难 以治理的污染和危害，环境保护主管部门将严格追责，对构成犯罪 的，将依法追究刑事责任。",
+      "condition": "",
+      "constraint": "6.4.7       渗井、溶洞、废矿井等场地都具有易渗特征，极易与地下水\n相连，有毒有害废水如果排入此类场所，会直接污染地下水或地表\n水，是严重的环境违法行为，尤其是私设暗管或利用渗井、渗坑、溶\n洞等排放、倾倒含有毒有害污染物的废水，将对地下水环境造成难\n以治理的污染和危害，环境保护主管部门将严格追责，对构成犯罪\n的，将依法追究刑事责任。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "渗井、溶洞、废矿井等场地都具有易渗特征，极易与地下水 相连，有毒有害废水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40433,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.20.1.1",
+  "entities": [
+    {
+      "name": "过程安全审核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.20.1.1 企业应建立并组织实施化工过程安全管理审核程序 ,包括审核工作的主管部门 ,审核的目 的 ,范围 ,频次 ,审核实施以及审核后的跟踪 ,验证等内容 。",
+      "type": "语义分解",
+      "subject": "过程安全审核",
+      "action": "",
+      "operation": "建立审核程序及跟踪验证",
+      "condition": "",
+      "constraint": "4.20.1.1 企业应建立并组织实施化工过程安全管理审核程序 ,包括审核工作的主管部门 ,审核的目 的 ,范围 ,频次 ,审核实施以及审核后的跟踪 ,验证等内容 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "过程安全审核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5349,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

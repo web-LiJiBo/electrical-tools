@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042808",
+  "entities": [
+    {
+      "name": ". 1.3 通过开挖出管道进行壁厚检测判断内腐蚀情况 ,并以检测结果评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7. 1.3   通过开挖出管道进行壁厚检测判断内腐蚀情况 ,并以检测结果评估管道的整体内腐蚀状况 。\n7. 1.4   管道开挖 、检测及回填过程中 ,应满足规范 、标准的健康安全环保相关要求 。",
+      "type": "语义分解",
+      "subject": ". 1.3 通过开挖出管道进行壁厚检测判断内腐蚀情况 ,并以检测结果评估",
+      "action": "",
+      "operation": ". 1.3 通过开挖出管道进行壁厚检测判断内腐蚀情况 ,并以检测结果评估管道的整体内腐蚀状况 。 7. 1.4 管道开挖 、检测及回填过程中 ,应满足规范 、标准的健康安全环保相关要求 。",
+      "condition": "",
+      "constraint": "7. 1.3   通过开挖出管道进行壁厚检测判断内腐蚀情况 ,并以检测结果评估管道的整体内腐蚀状况 。\n7. 1.4   管道开挖 、检测及回填过程中 ,应满足规范 、标准的健康安全环保相关要求 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1.3 通过开挖出管道进行壁厚检测判断内腐蚀情况 ,并以检测结果评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42808,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

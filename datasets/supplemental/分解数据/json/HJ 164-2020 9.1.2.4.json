@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "9.1.2.4",
+  "entities": [
+    {
+      "name": "原始记录改错",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2.4 原始记录不得涂改。 当记录中出现错误时,应在错误的数据上画一横线 (不得覆盖原有记录的可见程度),如需改正的记录内容较多, 可用框线画出。  在框边处添写 《作废\"  两字。并将正确值填写在其匕方. 所有的改动处应有更改人签名或盖章。",
+      "type": "语义分解",
+      "subject": "原始记录改错",
+      "action": "",
+      "operation": "不得涂改划线保持原记录可见填写正确值改动签名盖章",
+      "condition": "",
+      "constraint": "9.1.2.4 原始记录不得涂改。 当记录中出现错误时,应在错误的数据上画一横线 (不得覆盖原有记录的可见程度),如需改正的记录内容较多, 可用框线画出。  在框边处添写 《作废\"  两字。并将正确值填写在其匕方. 所有的改动处应有更改人签名或盖章。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始记录改错"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2151,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；作废标记字符异常"
+      ]
+    }
+  }
+}

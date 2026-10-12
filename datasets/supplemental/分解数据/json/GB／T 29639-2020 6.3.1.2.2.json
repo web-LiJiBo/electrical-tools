@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "6.3.1.2.2",
+  "entities": [
+    {
+      "name": "应急领导小组预警",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1.2.2 若未达到响应启动条件，应急领导小组可作出预警启动的决策，做好响应准备，实时跟踪事态发展。",
+      "type": "语义分解",
+      "subject": "应急领导小组预警",
+      "action": "",
+      "operation": "未达响应条件时可启动预警并跟踪准备",
+      "condition": "若未达到响应启动条件",
+      "constraint": "6.3.1.2.2 若未达到响应启动条件，应急领导小组可作出预警启动的决策，做好响应准备，实时跟踪事态发展。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急领导小组预警"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4163,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；管理决策不能直接映射设备报警代码"
+      ]
+    }
+  }
+}

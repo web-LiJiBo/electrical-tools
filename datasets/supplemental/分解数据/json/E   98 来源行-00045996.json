@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00045996",
+  "entities": [
+    {
+      "name": "为规范埋地钢质管道内腐蚀直接评价工作，制定本规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.1   为规范埋地钢质管道内腐蚀直接评价工作，制定本规范。\n1.0.2   本规范适用于陆上埋地钢质油、气管道内腐蚀直接评价。\n1.0.3   陆上埋地钢质管道内腐蚀直接评价除执行本规范外，尚\n应符合国家现行有关标准(规范)的规定。",
+      "type": "语义分解",
+      "subject": "为规范埋地钢质管道内腐蚀直接评价工作，制定本规范",
+      "action": "",
+      "operation": "为规范埋地钢质管道内腐蚀直接评价工作，制定本规范。 1.0.2 本规范适用于陆上埋地钢质油、气管道内腐蚀直接评价。 1.0.3 陆上埋地钢质管道内腐蚀直接评价除执行本规范外，尚 应符合国家现行有关标准(规范)的规定。",
+      "condition": "",
+      "constraint": "1.0.1   为规范埋地钢质管道内腐蚀直接评价工作，制定本规范。\n1.0.2   本规范适用于陆上埋地钢质油、气管道内腐蚀直接评价。\n1.0.3   陆上埋地钢质管道内腐蚀直接评价除执行本规范外，尚\n应符合国家现行有关标准(规范)的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为规范埋地钢质管道内腐蚀直接评价工作，制定本规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45996,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

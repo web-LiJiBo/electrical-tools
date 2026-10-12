@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.11",
+  "entities": [
+    {
+      "name": "智能应用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.11 应根据用户对安全防范系统信息、数据深化应用的实际需求，进行安全防范管理平台的智能化模块设计，或在安全防范管理平台之外单独规划设计智能化应用系统，包括视频智能分析系统、大数据分析系统等。",
+      "type": "语义分解",
+      "subject": "智能应用",
+      "action": "",
+      "operation": "按用户数据应用需求设平台模块或独立智能系统",
+      "condition": "",
+      "constraint": "4.2.11 应根据用户对安全防范系统信息、数据深化应用的实际需求，进行安全防范管理平台的智能化模块设计，或在安全防范管理平台之外单独规划设计智能化应用系统，包括视频智能分析系统、大数据分析系统等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "智能应用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6889,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

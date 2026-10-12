@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.7.2",
+  "entities": [
+    {
+      "name": "非锅炉生活源排放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.2 除锅炉外的其他生活源中二氧化硫, 氮氧化物和颗粒物排放量可根据能源消费量和排放系数计算,排放系数可参照《生活污染源产排污系数手册》 如污染物排放量=能源消费量×排放系数。",
+      "type": "语义分解",
+      "subject": "非锅炉生活源排放",
+      "action": "",
+      "operation": "能源消费量乘手册排放系数核算",
+      "condition": "",
+      "constraint": "5.7.2 除锅炉外的其他生活源中二氧化硫, 氮氧化物和颗粒物排放量可根据能源消费量和排放系数计算,排放系数可参照《生活污染源产排污系数手册》 如污染物排放量=能源消费量×排放系数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非锅炉生活源排放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 643,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

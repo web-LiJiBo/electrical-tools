@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "已有防爆设备接受",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 已有装置中设备的接受 对于无法识别是否适用于危险场所的巳有设备(旧设备)，应依据相关国家标谁或法规进行评定以 验证设备的符合性，并确定设备适当的检查和维护要求，或采取置换措施 注: 相关国家标准如 GB/I 3836.1等",
+      "type": "语义分解",
+      "subject": "已有防爆设备接受",
+      "action": "",
+      "operation": "不能识别适用性按标准法规评定定检查维护或置换",
+      "condition": "",
+      "constraint": "5.1.4 已有装置中设备的接受 对于无法识别是否适用于危险场所的巳有设备(旧设备)，应依据相关国家标谁或法规进行评定以 验证设备的符合性，并确定设备适当的检查和维护要求，或采取置换措施 注: 相关国家标准如 GB/I 3836.1等",
+      "constraint_role": "informational",
+      "related_entities": [
+        "已有防爆设备接受"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3983,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.4.2.1.1",
+  "entities": [
+    {
+      "name": "生产泄漏控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.1.1 在生产过程中发生泄漏 ,事故单位应根据生产和事故情况 ,及时采取控制措施 ,防止事故扩大。 采取停车_局部打循环 ,改走副线或降压堵漏等措施。",
+      "type": "语义分解",
+      "subject": "生产泄漏控制",
+      "action": "",
+      "operation": "依据生产事故情况选择控制措施",
+      "condition": "在生产过程中发生泄漏",
+      "constraint": "5.4.2.1.1 在生产过程中发生泄漏 ,事故单位应根据生产和事故情况 ,及时采取控制措施 ,防止事故扩大。 采取停车_局部打循环 ,改走副线或降压堵漏等措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产泄漏控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6010,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；需专业评估，不自动控制"
+      ]
+    }
+  }
+}

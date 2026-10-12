@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "6.12",
+  "entities": [
+    {
+      "name": "散装汽油购销",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12 重点目标的管理单位应落实国家有关部门关于散装汽油购销实名制管控的相关要求 ,加强散装汽油购买单位或人员的审查登记管理。",
+      "type": "语义分解",
+      "subject": "散装汽油购销",
+      "action": "",
+      "operation": "落实实名管控及审查登记",
+      "condition": "",
+      "constraint": "6.12 重点目标的管理单位应落实国家有关部门关于散装汽油购销实名制管控的相关要求 ,加强散装汽油购买单位或人员的审查登记管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "散装汽油购销"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5707,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035013",
+  "entities": [
+    {
+      "name": "初始氧气压 力 控 制 在 2. 5 MPa~ 3. 5 MPa范 围 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      初始氧气压 力 控 制 在 2. 5 MPa~ 3. 5 MPa范 围 内 , 并 且 所 有 测 试(包 括 标 定)都 应 在 相 同 压 力 下\n进行 。",
+      "type": "语义分解",
+      "subject": "初始氧气压 力 控 制 在 2. 5 MPa~ 3. 5 MPa范 围 ",
+      "action": "",
+      "operation": "初始氧气压 力 控 制 在 2. 5 MPa~ 3. 5 MPa范 围 内 , 并 且 所 有 测 试(包 括 标 定)都 应 在 相 同 压 力 下 进行 。",
+      "condition": "",
+      "constraint": "      初始氧气压 力 控 制 在 2. 5 MPa~ 3. 5 MPa范 围 内 , 并 且 所 有 测 试(包 括 标 定)都 应 在 相 同 压 力 下\n进行 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "初始氧气压 力 控 制 在 2. 5 MPa~ 3. 5 MPa范 围 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35013,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

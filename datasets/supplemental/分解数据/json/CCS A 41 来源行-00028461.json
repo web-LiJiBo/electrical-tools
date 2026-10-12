@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028461",
+  "entities": [
+    {
+      "name": "组织应建立系统化的知识管理平台 ,支持精益六西格玛知识的网上培训和学习 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织应建立系统化的知识管理平台 ,支持精益六西格玛知识的网上培训和学习 ,共享项 目成果 ,促\n进员工对精益六西格玛的认同 。  在资源允许的条件下 ,组织宜基于精益六西格玛的改进或创新项 目 ,利\n用人工智能技术 ,构建精益六西格玛知识管理智能化系统 。",
+      "type": "语义分解",
+      "subject": "组织应建立系统化的知识管理平台 ,支持精益六西格玛知识的网上培训和学习 ",
+      "action": "",
+      "operation": "组织应建立系统化的知识管理平台 ,支持精益六西格玛知识的网上培训和学习 ,共享项 目成果 ,促 进员工对精益六西格玛的认同 。 在资源允许的条件下 ,组织宜基于精益六西格玛的改进或创新项 目 ,利 用人工智能技术 ,构建精益六西格玛知识管理智能化系统 。",
+      "condition": "",
+      "constraint": "      组织应建立系统化的知识管理平台 ,支持精益六西格玛知识的网上培训和学习 ,共享项 目成果 ,促\n进员工对精益六西格玛的认同 。  在资源允许的条件下 ,组织宜基于精益六西格玛的改进或创新项 目 ,利\n用人工智能技术 ,构建精益六西格玛知识管理智能化系统 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织应建立系统化的知识管理平台 ,支持精益六西格玛知识的网上培训和学习 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28461,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

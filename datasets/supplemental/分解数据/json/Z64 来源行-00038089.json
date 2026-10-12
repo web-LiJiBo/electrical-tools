@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "来源行-00038089",
+  "entities": [
+    {
+      "name": "HJ 680 土壤和沉积物 汞、砷、硒、铋、锑的测定 微波消解/原子荧光",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "HJ 680   土壤和沉积物 汞、砷、硒、铋、锑的测定 微波消解/原子荧光法\nHJ 780   土壤和沉积物 无机元素的测定 波长色散X 射线荧光光谱法\nHJ 784   土壤和沉积物 多环芳烃的测定 高效液相色谱法",
+      "type": "语义分解",
+      "subject": "HJ 680 土壤和沉积物 汞、砷、硒、铋、锑的测定 微波消解/原子荧光",
+      "action": "",
+      "operation": "HJ 680 土壤和沉积物 汞、砷、硒、铋、锑的测定 微波消解/原子荧光法 HJ 780 土壤和沉积物 无机元素的测定 波长色散X 射线荧光光谱法 HJ 784 土壤和沉积物 多环芳烃的测定 高效液相色谱法",
+      "condition": "",
+      "constraint": "HJ 680   土壤和沉积物 汞、砷、硒、铋、锑的测定 微波消解/原子荧光法\nHJ 780   土壤和沉积物 无机元素的测定 波长色散X 射线荧光光谱法\nHJ 784   土壤和沉积物 多环芳烃的测定 高效液相色谱法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "HJ 680 土壤和沉积物 汞、砷、硒、铋、锑的测定 微波消解/原子荧光"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38089,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

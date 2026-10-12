@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.3.4",
+  "entities": [
+    {
+      "name": "地下水采样方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4 采样方法 地下水采样方法参见附录 C。已有管路监测井采样法适用于地面己连接了提水管路的监测井的采样,普通监测井采样法适用于常规监测井的采样。深层口径监测微洗井法适用于深层地下水的采样 若无同类型仪器设备,可采用经国家或国际标准认定的等效仪器设备。在采样过程中可根据实际情祝选取推荐的采样方法。也可以根据实地情况采用其他能满足质量控制要求的采样方法。",
+      "type": "语义分解",
+      "subject": "地下水采样方法",
+      "action": "",
+      "operation": "按井类选附录或认定等效器具及满足质控方法",
+      "condition": "",
+      "constraint": "6.3.4 采样方法 地下水采样方法参见附录 C。已有管路监测井采样法适用于地面己连接了提水管路的监测井的采样,普通监测井采样法适用于常规监测井的采样。深层口径监测微洗井法适用于深层地下水的采样 若无同类型仪器设备,可采用经国家或国际标准认定的等效仪器设备。在采样过程中可根据实际情祝选取推荐的采样方法。也可以根据实地情况采用其他能满足质量控制要求的采样方法。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水采样方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2093,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录C未提供"
+      ]
+    }
+  }
+}

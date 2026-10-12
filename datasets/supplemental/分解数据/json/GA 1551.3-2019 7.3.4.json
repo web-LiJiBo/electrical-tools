@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "7.3.4",
+  "entities": [
+    {
+      "name": "罐区及接卸发货视频",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.4 加油(气)站储罐区 .储油(气)库储罐区 .储油(气)库接卸油(气)作业区,储油(气)库油(气)发货作业区应安装视频监控装置 ,视频监视及回放图像应能清晰显示罐区人员和车辆活动情况。",
+      "type": "语义分解",
+      "subject": "罐区及接卸发货视频",
+      "action": "",
+      "operation": "安装监控清晰显示人员车辆活动",
+      "condition": "",
+      "constraint": "7.3.4 加油(气)站储罐区 .储油(气)库储罐区 .储油(气)库接卸油(气)作业区,储油(气)库油(气)发货作业区应安装视频监控装置 ,视频监视及回放图像应能清晰显示罐区人员和车辆活动情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "罐区及接卸发货视频"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5721,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

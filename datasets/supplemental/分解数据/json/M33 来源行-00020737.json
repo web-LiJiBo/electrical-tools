@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020737",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Sn-Xv_AID=Sn_AI[1…X]_D\nSn-Xv_AICK=Sn_AI[1.X]_CK\nSn-Xv_AI_FS=Sn_AI[1.X]_FS\nSn-Xv_AI_TSF=Sn_AI[1.X]_TSF\t Sn-X_CI_D\n Sn-X_CI_CK\n Sn-X_CI_FS\n Sn-X_CI_SSF\n Sn-Xv/Sn-X_A_Sk_MI_cLOM[1.X]\n Sn-Xv/Sn-X_A_Sk_MI_cSQM[1..X]\n Sn-Xv/Sn-X_A_Sk_MI_cLOA\n Sn-Xv/Sn-X_A_Sk_MI_AcSQ[1…X]",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "Sn-Xv_AID=Sn_AI[1…X]_D\nSn-Xv_AICK=Sn_AI[1.X]_CK\nSn-Xv_AI_FS=Sn_AI[1.X]_FS\nSn-Xv_AI_TSF=Sn_AI[1.X]_TSF\t Sn-X_CI_D\n Sn-X_CI_CK\n Sn-X_CI_FS\n Sn-X_CI_SSF\n Sn-Xv/Sn-X_A_Sk_MI_cLOM[1.X]\n Sn-Xv/Sn-X_A_Sk_MI_cSQM[1..X]\n Sn-Xv/Sn-X_A_Sk_MI_cLOA\n Sn-Xv/Sn-X_A_Sk_MI_AcSQ[1…X]",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20737,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "7.3.5",
+  "entities": [
+    {
+      "name": "应采用磁性测厚仪或焊缝检验尺对环氧玻璃钢防护层进 行厚度检验，每班至少抽",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.5   应采用磁性测厚仪或焊缝检验尺对环氧玻璃钢防护层进\n行厚度检验，每班至少抽检1次，每次测量圆周方向均匀分布\n的任意四点的防护层厚度，厚度应符合规定值。测厚仪应每班\n至少校正1次。有不合格时，应加倍检查；仍有不合格时，该\n批防护层应为不合格。",
+      "type": "语义分解",
+      "subject": "应采用磁性测厚仪或焊缝检验尺对环氧玻璃钢防护层进 行厚度检验，每班至少抽",
+      "action": "",
+      "operation": "应采用磁性测厚仪或焊缝检验尺对环氧玻璃钢防护层进 行厚度检验，每班至少抽检1次，每次测量圆周方向均匀分布 的任意四点的防护层厚度，厚度应符合规定值。测厚仪应每班 至少校正1次。有不合格时，应加倍检查；仍有不合格时，该 批防护层应为不合格。",
+      "condition": "",
+      "constraint": "7.3.5   应采用磁性测厚仪或焊缝检验尺对环氧玻璃钢防护层进\n行厚度检验，每班至少抽检1次，每次测量圆周方向均匀分布\n的任意四点的防护层厚度，厚度应符合规定值。测厚仪应每班\n至少校正1次。有不合格时，应加倍检查；仍有不合格时，该\n批防护层应为不合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应采用磁性测厚仪或焊缝检验尺对环氧玻璃钢防护层进 行厚度检验，每班至少抽"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50046,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

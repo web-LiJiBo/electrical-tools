@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "环境措施可行性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 明确提出建设项目建设阶段。生产运行阶段和服务期满后 (可根据项目情况选择)  拟采取的具体 污染防治,生态保护。环境风险防范等环境保护措施;  分析论证拟采取措施的技术可行性。经济合理性 长期稳定运行和达标排放的可靠性,满足环境质量改善和排污许可要求的可行性,生态保护和恢复效果 的可达性。 各类措施的有效性判定应以同类或相同措施的实际运行效果为依据,没有实际运行经验的,可提供 工程化实验数据。",
+      "type": "语义分解",
+      "subject": "环境措施可行性",
+      "action": "",
+      "operation": "分阶段提措施论技术经济稳定达标及生态效果依据实际或工程实验",
+      "condition": "",
+      "constraint": "7.1 明确提出建设项目建设阶段。生产运行阶段和服务期满后 (可根据项目情况选择)  拟采取的具体 污染防治,生态保护。环境风险防范等环境保护措施;  分析论证拟采取措施的技术可行性。经济合理性 长期稳定运行和达标排放的可靠性,满足环境质量改善和排污许可要求的可行性,生态保护和恢复效果 的可达性。 各类措施的有效性判定应以同类或相同措施的实际运行效果为依据,没有实际运行经验的,可提供 工程化实验数据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境措施可行性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2582,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

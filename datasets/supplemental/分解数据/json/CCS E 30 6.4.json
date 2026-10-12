@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "6.4",
+  "entities": [
+    {
+      "name": "氧弹压力连接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4   氧 弹 、压 力 表 及 氧 气 连 接 管 : 根 据 需 要 经 静 水 压 检 查 , 每 年 不 少 于 1 次 ; 氧 弹 应 以 9. 81 MPa\n(100kg/cm2 )压力检验 。装压缩氧气用具的连接部分严禁涂润滑油脂 ,如氧弹及氧气连接仪器在试验\n或搬运时沾了润滑油或其他油类而显有油污 ,则应先用汽油小心洗涤 ,再用乙醇或乙醚洗涤 。\n6.5   金属钳 。",
+      "type": "语义分解",
+      "subject": "氧弹压力连接",
+      "action": "",
+      "operation": "按需静水至少年一次氧弹9.81MPa禁油污须清洗",
+      "condition": "",
+      "constraint": "6.4   氧 弹 、压 力 表 及 氧 气 连 接 管 : 根 据 需 要 经 静 水 压 检 查 , 每 年 不 少 于 1 次 ; 氧 弹 应 以 9. 81 MPa\n(100kg/cm2 )压力检验 。装压缩氧气用具的连接部分严禁涂润滑油脂 ,如氧弹及氧气连接仪器在试验\n或搬运时沾了润滑油或其他油类而显有油污 ,则应先用汽油小心洗涤 ,再用乙醇或乙醚洗涤 。\n6.5   金属钳 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "氧弹压力连接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34971,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；试验规程非直接设备授权"
+      ]
+    }
+  }
+}

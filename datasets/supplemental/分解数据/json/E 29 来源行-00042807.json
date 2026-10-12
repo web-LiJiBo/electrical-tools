@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042807",
+  "entities": [
+    {
+      "name": ". 1.2 开挖检测位置包括腐蚀位置预测阶段及开挖检测过程中识别到的潜在",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7. 1.2   开挖检测位置包括腐蚀位置预测阶段及开挖检测过程中识别到的潜在腐蚀位置 。  开挖检测的\n一般流程如图 2所示 。   图中的子区段是指存在腐蚀的两个倾角之间或检测区段起始点与第一个倾角之\n间的管段 。",
+      "type": "语义分解",
+      "subject": ". 1.2 开挖检测位置包括腐蚀位置预测阶段及开挖检测过程中识别到的潜在",
+      "action": "",
+      "operation": ". 1.2 开挖检测位置包括腐蚀位置预测阶段及开挖检测过程中识别到的潜在腐蚀位置 。 开挖检测的 一般流程如图 2所示 。 图中的子区段是指存在腐蚀的两个倾角之间或检测区段起始点与第一个倾角之 间的管段 。",
+      "condition": "",
+      "constraint": "7. 1.2   开挖检测位置包括腐蚀位置预测阶段及开挖检测过程中识别到的潜在腐蚀位置 。  开挖检测的\n一般流程如图 2所示 。   图中的子区段是指存在腐蚀的两个倾角之间或检测区段起始点与第一个倾角之\n间的管段 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1.2 开挖检测位置包括腐蚀位置预测阶段及开挖检测过程中识别到的潜在"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42807,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

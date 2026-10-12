@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043316",
+  "entities": [
+    {
+      "name": "本文件主要起草人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      本文件主要起草人：马力、张海兵、刘攀、孙明先、杜米芳、李威力、李景滨、邢少华、王红锋、许立坤、\n蔺存国、刘钊慧、侯健、闫永贵、鲁统军。",
+      "type": "语义分解",
+      "subject": "本文件主要起草人",
+      "action": "",
+      "operation": "本文件主要起草人：马力、张海兵、刘攀、孙明先、杜米芳、李威力、李景滨、邢少华、王红锋、许立坤、 蔺存国、刘钊慧、侯健、闫永贵、鲁统军。",
+      "condition": "",
+      "constraint": "      本文件主要起草人：马力、张海兵、刘攀、孙明先、杜米芳、李威力、李景滨、邢少华、王红锋、许立坤、\n蔺存国、刘钊慧、侯健、闫永贵、鲁统军。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本文件主要起草人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43316,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

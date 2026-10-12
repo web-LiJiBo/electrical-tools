@@ -1,0 +1,409 @@
+{
+  "simulation_only": true,
+  "scope": "本批22条通过样例；阈值和点位均为测试预设，不用于真实设备。",
+  "examples": [
+    {
+      "device_id": "SIM-IEC-BESS-01",
+      "action": "start",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-BESS-01",
+      "action": "stop",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-BESS-01",
+      "action": "alarm",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-BESS-01",
+      "action": "adjust_active_power",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {
+        "power_kw": 100
+      },
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-BESS-01",
+      "action": "limit_power",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {
+        "power_limit_kw": 100
+      },
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-CAPACITOR-01",
+      "action": "start",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-CAPACITOR-01",
+      "action": "stop",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-CAPACITOR-01",
+      "action": "alarm",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-VENT-01",
+      "action": "start",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-VENT-01",
+      "action": "stop",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-VENT-01",
+      "action": "alarm",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-BESS-01",
+      "action": "start",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-BESS-01",
+      "action": "stop",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-BESS-01",
+      "action": "alarm",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-BESS-01",
+      "action": "adjust_active_power",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {
+        "power_kw": 100
+      },
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-BESS-01",
+      "action": "limit_power",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "grid_connected": 1,
+        "bms_permission": 1,
+        "soc_percent": 60,
+        "control_permission": 1
+      },
+      "parameters": {
+        "power_limit_kw": 100
+      },
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-CAPACITOR-01",
+      "action": "start",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-CAPACITOR-01",
+      "action": "stop",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-CAPACITOR-01",
+      "action": "alarm",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "voltage_in_range": 1,
+        "discharge_complete": 1,
+        "switching_interval_elapsed": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-VENT-01",
+      "action": "start",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-VENT-01",
+      "action": "stop",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-VENT-01",
+      "action": "alarm",
+      "facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "alarm_required": 1,
+        "ventilation_stop_permitted": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    }
+  ]
+}
+

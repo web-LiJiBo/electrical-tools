@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020700",
+  "entities": [
+    {
+      "name": "Sn-X_AI Sn-X Sn-X_Cl Sn-Xv/Sn-X Sn-X",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       Sn-X_AI\n\n                                                      Sn-X\n\n                                                          Sn-X_Cl\n\n                                                  Sn-Xv/Sn-X\n                                             Sn-Xv_Al=Sn_CI[1.X]\n\n                                          Sn\n\nSn-Xv_CI=Sn_CI[1.X]\n                                        Sn_CI                       Sn_Cl",
+      "type": "语义分解",
+      "subject": "Sn-X_AI Sn-X Sn-X_Cl Sn-Xv/Sn-X Sn-X",
+      "action": "",
+      "operation": "Sn-X_AI Sn-X Sn-X_Cl Sn-Xv/Sn-X Sn-Xv_Al=Sn_CI[1.X] Sn Sn-Xv_CI=Sn_CI[1.X] Sn_CI Sn_Cl",
+      "condition": "",
+      "constraint": "       Sn-X_AI\n\n                                                      Sn-X\n\n                                                          Sn-X_Cl\n\n                                                  Sn-Xv/Sn-X\n                                             Sn-Xv_Al=Sn_CI[1.X]\n\n                                          Sn\n\nSn-Xv_CI=Sn_CI[1.X]\n                                        Sn_CI                       Sn_Cl",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Sn-X_AI Sn-X Sn-X_Cl Sn-Xv/Sn-X Sn-X"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20700,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

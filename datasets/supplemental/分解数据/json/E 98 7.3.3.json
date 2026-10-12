@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "7.3.3",
+  "entities": [
+    {
+      "name": "管道侧防护措施应根据调查与测试的结果 ,选择集中接地 、故障屏蔽 、固态",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3   管道侧防护措施应根据调查与测试的结果 ,选择集中接地 、故障屏蔽 、固态去耦合器接地 、接地\n垫等干扰防护措施 ;干扰防护措施不得对管道阴极保护的有效性造成不利影响 。   防护措施的选取应考\n虑下列因素 :",
+      "type": "语义分解",
+      "subject": "管道侧防护措施应根据调查与测试的结果 ,选择集中接地 、故障屏蔽 、固态",
+      "action": "",
+      "operation": "管道侧防护措施应根据调查与测试的结果 ,选择集中接地 、故障屏蔽 、固态去耦合器接地 、接地 垫等干扰防护措施 ;干扰防护措施不得对管道阴极保护的有效性造成不利影响 。 防护措施的选取应考 虑下列因素",
+      "condition": "",
+      "constraint": "7.3.3   管道侧防护措施应根据调查与测试的结果 ,选择集中接地 、故障屏蔽 、固态去耦合器接地 、接地\n垫等干扰防护措施 ;干扰防护措施不得对管道阴极保护的有效性造成不利影响 。   防护措施的选取应考\n虑下列因素 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道侧防护措施应根据调查与测试的结果 ,选择集中接地 、故障屏蔽 、固态"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42584,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

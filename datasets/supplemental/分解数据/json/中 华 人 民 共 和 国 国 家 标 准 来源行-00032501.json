@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032501",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "32\t石 棉 尘\t2 根 (纤维)/cm3\n或\n20 mg/m3\t12\n20\n30\n40\n20\t禁  排\t0 . 62\n1 . 1\n4 . 2\n7 . 2\n11\t0 . 98\n1 . 7\n6 . 4\n11\n17\t生产设备不得有明显\n的无组织排放存在",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "32\t石 棉 尘\t2 根 (纤维)/cm3\n或\n20 mg/m3\t12\n20\n30\n40\n20\t禁  排\t0 . 62\n1 . 1\n4 . 2\n7 . 2\n11\t0 . 98\n1 . 7\n6 . 4\n11\n17\t生产设备不得有明显\n的无组织排放存在",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32501,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

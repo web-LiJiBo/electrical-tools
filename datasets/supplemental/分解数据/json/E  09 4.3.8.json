@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.3.8",
+  "entities": [
+    {
+      "name": "在道路计划和施工建设中，应考虑使用土工布或其他合成材料，以利于道路稳固或",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.8     在道路计划和施工建设中，应考虑使用土工布或其他合成材料，以利于道路稳固或减少基石\n和路面材料的使用量。",
+      "type": "语义分解",
+      "subject": "在道路计划和施工建设中，应考虑使用土工布或其他合成材料，以利于道路稳固或",
+      "action": "",
+      "operation": "在道路计划和施工建设中，应考虑使用土工布或其他合成材料，以利于道路稳固或减少基石 和路面材料的使用量。",
+      "condition": "",
+      "constraint": "4.3.8     在道路计划和施工建设中，应考虑使用土工布或其他合成材料，以利于道路稳固或减少基石\n和路面材料的使用量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在道路计划和施工建设中，应考虑使用土工布或其他合成材料，以利于道路稳固或"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41090,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

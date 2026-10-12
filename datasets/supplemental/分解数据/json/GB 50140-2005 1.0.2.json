@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "1.0.2",
+  "entities": [
+    {
+      "name": "灭火器规范适用范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.2 本规范适用于生产 使用或储存可燃物的新建,改建.扩建的工业与民用建筑工程。本规范不适用于生产或储存炸药 弹药 ,火工品 ,花炮的厂房或库房。",
+      "type": "语义分解",
+      "subject": "灭火器规范适用范围",
+      "action": "",
+      "operation": "可燃工业民用工程适用爆炸品场所除外",
+      "condition": "",
+      "constraint": "1.0.2 本规范适用于生产 使用或储存可燃物的新建,改建.扩建的工业与民用建筑工程。本规范不适用于生产或储存炸药 弹药 ,火工品 ,花炮的厂房或库房。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器规范适用范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4034,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

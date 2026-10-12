@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "3.0.5",
+  "entities": [
+    {
+      "name": "施工初验试运行监理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.5 安全防范工程施工、初验与试运行等阶段宜聘请监理机构进行工程监理。",
+      "type": "语义分解",
+      "subject": "施工初验试运行监理",
+      "action": "",
+      "operation": "宜聘机构进行工程监理",
+      "condition": "",
+      "constraint": "3.0.5 安全防范工程施工、初验与试运行等阶段宜聘请监理机构进行工程监理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工初验试运行监理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6866,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

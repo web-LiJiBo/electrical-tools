@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "土壤前期采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 前期采样 前期采样用于初步验证污染物种类。污染物空间分异性和判断土壤污染程度; 可根据监测目的和监测对象的具体情况选择性实施一 若监测目的明确。可直接进行正式采样 前期采样可与点位现场核查同步开展, 也可借助现场快速检测仪器进行测试",
+      "type": "语义分解",
+      "subject": "土壤前期采样",
+      "action": "",
+      "operation": "选择性初验污染种类空间程度目的明确可直接正式采样",
+      "condition": "",
+      "constraint": "7.2.1 前期采样 前期采样用于初步验证污染物种类。污染物空间分异性和判断土壤污染程度; 可根据监测目的和监测对象的具体情况选择性实施一 若监测目的明确。可直接进行正式采样 前期采样可与点位现场核查同步开展, 也可借助现场快速检测仪器进行测试",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤前期采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2232,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

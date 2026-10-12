@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全生产管理办法",
+  "standard_id": "国家管网办〔2025〕26号",
+  "version": "",
+  "chapter_path": "来源行-00003405",
+  "entities": [
+    {
+      "name": "第三十三条 集团公司应当建立安全生产制程文件,所属企业应当在流程中细化完",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第三十三条 集团公司应当建立安全生产制程文件,所属企业应当在流程中细化完善安全生产管理要求,规范生产经营活动和设备设施全生命周期管理,每三年至少评审和修订一次,发生重大变更应当及时修订。制程文件管控要求应当不低于国家和行业要求。",
+      "type": "语义分解",
+      "subject": "第三十三条 集团公司应当建立安全生产制程文件,所属企业应当在流程中细化完",
+      "action": "",
+      "operation": "第三十三条 集团公司应当建立安全生产制程文件,所属企业应当在流程中细化完善安全生产管理要求,规范生产经营活动和设备设施全生命周期管理,每三年至少评审和修订一次,发生重大变更应当及时修订。制程文件管控要求应当不低于国家和行业要求。",
+      "condition": "",
+      "constraint": "第三十三条 集团公司应当建立安全生产制程文件,所属企业应当在流程中细化完善安全生产管理要求,规范生产经营活动和设备设施全生命周期管理,每三年至少评审和修订一次,发生重大变更应当及时修订。制程文件管控要求应当不低于国家和行业要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三十三条 集团公司应当建立安全生产制程文件,所属企业应当在流程中细化完"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

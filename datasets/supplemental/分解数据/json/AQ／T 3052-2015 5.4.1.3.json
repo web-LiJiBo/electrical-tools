@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.4.1.3",
+  "entities": [
+    {
+      "name": "生产应急保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1.3 有关生产部门监控装置工艺娈化情祝 ,做好应急状态下生产方案的调整和相关装置的生产平衡 ,优先保证应急救援所需的水 .电 .汽 ,交通运输车辆和工程机械",
+      "type": "语义分解",
+      "subject": "生产应急保障",
+      "action": "",
+      "operation": "监控工艺调整生产优先保障救援资源",
+      "condition": "",
+      "constraint": "5.4.1.3 有关生产部门监控装置工艺娈化情祝 ,做好应急状态下生产方案的调整和相关装置的生产平衡 ,优先保证应急救援所需的水 .电 .汽 ,交通运输车辆和工程机械",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产应急保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6006,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文存在识别异常"
+      ]
+    }
+  }
+}

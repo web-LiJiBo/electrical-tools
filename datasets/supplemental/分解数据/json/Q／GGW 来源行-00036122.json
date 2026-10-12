@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036122",
+  "entities": [
+    {
+      "name": "对建设项目温室气体排放水平区域影响程度、技术措施效果、管理体系合理性等方",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对建设项目温室气体排放水平区域影响程度、技术措施效果、管理体系合理性等方面进行综合评价，\n给出温室气体排放综合评价结论。",
+      "type": "语义分解",
+      "subject": "对建设项目温室气体排放水平区域影响程度、技术措施效果、管理体系合理性等方",
+      "action": "",
+      "operation": "对建设项目温室气体排放水平区域影响程度、技术措施效果、管理体系合理性等方面进行综合评价， 给出温室气体排放综合评价结论。",
+      "condition": "",
+      "constraint": "   对建设项目温室气体排放水平区域影响程度、技术措施效果、管理体系合理性等方面进行综合评价，\n给出温室气体排放综合评价结论。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对建设项目温室气体排放水平区域影响程度、技术措施效果、管理体系合理性等方"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36122,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.3.5",
+  "entities": [
+    {
+      "name": "案件多发路口监控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.5 地方结合当地社会治安防控体系建设 .可在打孔盗油等案件多发管道沿线的主要路口安装摄像 机 ,对通过路口的人员和车辆实施  24 h 监控。",
+      "type": "语义分解",
+      "subject": "案件多发路口监控",
+      "action": "",
+      "operation": "可设摄像机24小时监控人员车辆",
+      "condition": "",
+      "constraint": "8.3.5 地方结合当地社会治安防控体系建设 .可在打孔盗油等案件多发管道沿线的主要路口安装摄像 机 ,对通过路口的人员和车辆实施  24 h 监控。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "案件多发路口监控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5485,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

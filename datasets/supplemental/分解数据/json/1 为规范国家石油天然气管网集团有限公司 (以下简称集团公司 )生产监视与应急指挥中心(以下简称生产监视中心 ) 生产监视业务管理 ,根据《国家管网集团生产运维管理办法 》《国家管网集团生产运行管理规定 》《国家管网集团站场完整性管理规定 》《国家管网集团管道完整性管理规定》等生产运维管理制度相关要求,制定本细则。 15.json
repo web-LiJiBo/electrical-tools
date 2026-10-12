@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产监视管理细则",
+  "standard_id": "1 为规范国家石油天然气管网集团有限公司 (以下简称集团公司 )生产监视与应急指挥中心(以下简称生产监视中心 ) 生产监视业务管理 ,根据《国家管网集团生产运维管理办法 》《国家管网集团生产运行管理规定 》《国家管网集团站场完整性管理规定 》《国家管网集团管道完整性管理规定》等生产运维管理制度相关要求,制定本细则。",
+  "version": "",
+  "chapter_path": "15",
+  "entities": [
+    {
+      "name": "油气调控中心 (分控中心 )应通过SCADA系统监视所辖管道生产工艺参数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "15 油气调控中心 (分控中心 )应通过SCADA系统监视所辖管道生产工艺参数。主要工艺设备运行状态,具备在线监测条件的油气质量信息,可燃气体。火焰等安全报警综合信息以及场站与中心间通信状态等信息。",
+      "type": "语义分解",
+      "subject": "油气调控中心 (分控中心 )应通过SCADA系统监视所辖管道生产工艺参数",
+      "action": "",
+      "operation": "油气调控中心 (分控中心 )应通过SCADA系统监视所辖管道生产工艺参数。主要工艺设备运行状态,具备在线监测条件的油气质量信息,可燃气体。火焰等安全报警综合信息以及场站与中心间通信状态等信息。",
+      "condition": "",
+      "constraint": "15 油气调控中心 (分控中心 )应通过SCADA系统监视所辖管道生产工艺参数。主要工艺设备运行状态,具备在线监测条件的油气质量信息,可燃气体。火焰等安全报警综合信息以及场站与中心间通信状态等信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气调控中心 (分控中心 )应通过SCADA系统监视所辖管道生产工艺参数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3662,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

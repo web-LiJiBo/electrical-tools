@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023313",
+  "entities": [
+    {
+      "name": "从式(2)可以看出接地电阻主要取决于接地网的面积，而后一 项说明接地网的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   从式(2)可以看出接地电阻主要取决于接地网的面积，而后一\n项说明接地网的埋深，接地体的直径以及网内的水平和垂直接地\n体的总长度对减少接地电阻的作用很小，通常仅占 R 总 数 的 8 %\n左右。根据《工业与民用电力装置的接地设计规范》GBJ   65—83,\n对于上述复合式接地网的工频接地电阻的计算，上式R 约为：",
+      "type": "语义分解",
+      "subject": "从式(2)可以看出接地电阻主要取决于接地网的面积，而后一 项说明接地网的",
+      "action": "",
+      "operation": "从式(2)可以看出接地电阻主要取决于接地网的面积，而后一 项说明接地网的埋深，接地体的直径以及网内的水平和垂直接地 体的总长度对减少接地电阻的作用很小，通常仅占 R 总 数 的 8 % 左右。根据《工业与民用电力装置的接地设计规范》GBJ 65—83, 对于上述复合式接地网的工频接地电阻的计算，上式R 约为",
+      "condition": "",
+      "constraint": "   从式(2)可以看出接地电阻主要取决于接地网的面积，而后一\n项说明接地网的埋深，接地体的直径以及网内的水平和垂直接地\n体的总长度对减少接地电阻的作用很小，通常仅占 R 总 数 的 8 %\n左右。根据《工业与民用电力装置的接地设计规范》GBJ   65—83,\n对于上述复合式接地网的工频接地电阻的计算，上式R 约为：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "从式(2)可以看出接地电阻主要取决于接地网的面积，而后一 项说明接地网的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23313,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

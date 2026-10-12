@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "3.13",
+  "entities": [
+    {
+      "name": "不可达密封点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.13\t不可达密封点  inaccessible       component",
+      "type": "语义分解",
+      "subject": "不可达密封点",
+      "action": "",
+      "operation": "仅术语名称",
+      "condition": "",
+      "constraint": "3.13\t不可达密封点  inaccessible       component",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不可达密封点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36489,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；定义缺失"
+      ]
+    }
+  }
+}

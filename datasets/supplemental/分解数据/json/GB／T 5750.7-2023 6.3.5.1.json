@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.3.5.1",
+  "entities": [
+    {
+      "name": "石油荧光萃取",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.1 取 200 mL 水样 (若石油含量大于0.1 mg 时 ,可取适量水样 ,加纯水稀释至 200 ml ) 置于 250 mL 分液漏斗中 = 对非中性水样可用稀磷酸或氢氧化钠调节水样 PH 为中性。加 4 ml 磷酸盐缓冲溶液,15 Ml 二氯甲烷 ,猛烈振摇 2 min , 静置分层,用脱脂棉拭去漏斗颈内积水 ,收集二氯甲烷萃取液于石英比色管中",
+      "type": "语义分解",
+      "subject": "石油荧光萃取",
+      "action": "",
+      "operation": "二百毫升样调中性加缓冲液二氯甲烷振摇两分钟分层收萃液",
+      "condition": "",
+      "constraint": "6.3.5.1 取 200 mL 水样 (若石油含量大于0.1 mg 时 ,可取适量水样 ,加纯水稀释至 200 ml ) 置于 250 mL 分液漏斗中 = 对非中性水样可用稀磷酸或氢氧化钠调节水样 PH 为中性。加 4 ml 磷酸盐缓冲溶液,15 Ml 二氯甲烷 ,猛烈振摇 2 min , 静置分层,用脱脂棉拭去漏斗颈内积水 ,收集二氯甲烷萃取液于石英比色管中",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油荧光萃取"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1841,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

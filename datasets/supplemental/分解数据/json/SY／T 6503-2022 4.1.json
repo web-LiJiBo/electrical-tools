@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "气体检测报警配置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 可能积聚可燃气侨和有毒气体的石油天然气站场和储运设施。应按本文件设置气体检测报警系统。",
+      "type": "语义分解",
+      "subject": "气体检测报警配置",
+      "action": "",
+      "operation": "易积聚可燃有毒气体设施设置系统",
+      "condition": "",
+      "constraint": "4.1 可能积聚可燃气侨和有毒气体的石油天然气站场和储运设施。应按本文件设置气体检测报警系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体检测报警配置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5777,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文存在识别异常"
+      ]
+    }
+  }
+}

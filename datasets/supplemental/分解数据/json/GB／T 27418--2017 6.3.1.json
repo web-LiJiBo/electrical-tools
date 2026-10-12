@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.3.1",
+  "entities": [
+    {
+      "name": "包含因子",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1 包含因子k的值是根据 y-U 到 J +U 区间所要求的包含概率而选择的 一般 k在2~3范围 内 ,但在某些应用领域k可能超出这个范围 _ 应根据测量结果的使用的需要选取合适的k值 ,这可能 需要对测量结果的使用具有丰富的经验和渊博的知识。 注: 有时发现 ,系统影响的已知修正量b并未被用于修正报告的测量结果 .而是通过放大结果的\"不确定度\"来将这 种影响考虑在内 ,应该尽可能避免这样做。 只有在非常特殊的情祝下.虽然存在巳知的明晁的系统影响 ,仍不 对测量结果迸行修正(见D.2.4.5 特殊情况及如何处理) 。测量结果不确定度的评定不应该与对某些参数规定 的安全极限相混淆。",
+      "type": "语义分解",
+      "subject": "包含因子",
+      "action": "",
+      "operation": "按测量用途和所需包含概率选择",
+      "condition": "根据测量结果的使用的需要",
+      "constraint": "不确定度的评定不应该与对某些参数规定 的安全极限相混淆",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包含因子"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "2至3为一般范围并有例外，不构造强制上下限"
+      ]
+    }
+  }
+}

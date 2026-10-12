@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "8.3.1",
+  "entities": [
+    {
+      "name": "植被结构调控应主要包括乔灌木修剪、间苗和补植补种",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.1       植被结构调控应主要包括乔灌木修剪、间苗和补植补种。\n8.3.2       乔灌木修剪应满足下列要求：",
+      "type": "语义分解",
+      "subject": "植被结构调控应主要包括乔灌木修剪、间苗和补植补种",
+      "action": "",
+      "operation": "植被结构调控应主要包括乔灌木修剪、间苗和补植补种。 8.3.2 乔灌木修剪应满足下列要求",
+      "condition": "",
+      "constraint": "8.3.1       植被结构调控应主要包括乔灌木修剪、间苗和补植补种。\n8.3.2       乔灌木修剪应满足下列要求：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "植被结构调控应主要包括乔灌木修剪、间苗和补植补种"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40841,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

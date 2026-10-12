@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034882",
+  "entities": [
+    {
+      "name": "报告主体应报告在核算和报告期内温室气体排放总量 ,并分别报告化石燃料燃烧",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      报告主体应报告在核算和报告期内温室气体排放总量 ,并分别报告化石燃料燃烧排放量 、过程排放\n量 、购入的电力 、热力产生的排放量 。此外 ,还宜报告其他重点说明的问题 ,如生物质燃料燃烧产生的二\n氧化碳排放 , 固碳产品隐含碳对应的排放等 。",
+      "type": "语义分解",
+      "subject": "报告主体应报告在核算和报告期内温室气体排放总量 ,并分别报告化石燃料燃烧",
+      "action": "",
+      "operation": "报告主体应报告在核算和报告期内温室气体排放总量 ,并分别报告化石燃料燃烧排放量 、过程排放 量 、购入的电力 、热力产生的排放量 。此外 ,还宜报告其他重点说明的问题 ,如生物质燃料燃烧产生的二 氧化碳排放 , 固碳产品隐含碳对应的排放等 。",
+      "condition": "",
+      "constraint": "      报告主体应报告在核算和报告期内温室气体排放总量 ,并分别报告化石燃料燃烧排放量 、过程排放\n量 、购入的电力 、热力产生的排放量 。此外 ,还宜报告其他重点说明的问题 ,如生物质燃料燃烧产生的二\n氧化碳排放 , 固碳产品隐含碳对应的排放等 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报告主体应报告在核算和报告期内温室气体排放总量 ,并分别报告化石燃料燃烧"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34882,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

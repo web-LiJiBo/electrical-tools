@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013018",
+  "entities": [
+    {
+      "name": "各运营商域外加一个基于通道长度的配额，即每100km配额为0.2%",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   各运营商域外加一个基于通道长度的配额，即每100km配额为0.2%。这是根据路由距离和路由系数\n共同确定的。",
+      "type": "语义分解",
+      "subject": "各运营商域外加一个基于通道长度的配额，即每100km配额为0.2%",
+      "action": "",
+      "operation": "各运营商域外加一个基于通道长度的配额，即每100km配额为0.2%。这是根据路由距离和路由系数 共同确定的。",
+      "condition": "",
+      "constraint": "   各运营商域外加一个基于通道长度的配额，即每100km配额为0.2%。这是根据路由距离和路由系数\n共同确定的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "各运营商域外加一个基于通道长度的配额，即每100km配额为0.2%"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13018,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "10.3.4",
+  "entities": [
+    {
+      "name": "排气筒",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.4  排气筒高度不低于15m ( 因安全考虑或有特殊工艺要求的除外),具体高度以及与周围建筑物\n的相对高度关系应根据环境影响评价文件确定。",
+      "type": "语义分解",
+      "subject": "排气筒",
+      "action": "",
+      "operation": "至少15米安全工艺例外高度相对建筑依环评",
+      "condition": "",
+      "constraint": "10.3.4  排气筒高度不低于15m ( 因安全考虑或有特殊工艺要求的除外),具体高度以及与周围建筑物\n的相对高度关系应根据环境影响评价文件确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排气筒"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33449,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

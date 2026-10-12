@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034620",
+  "entities": [
+    {
+      "name": "particles一performance characteristic",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    particles一performance characteristics , test methods and specifications.\n    静止源排放物 一一粒子质量浓度的 自动监测 一一性能特征 、试验方法和技术规\n    范",
+      "type": "语义分解",
+      "subject": "particles一performance characteristic",
+      "action": "",
+      "operation": "particles一performance characteristics , test methods and specifications. 静止源排放物 一一粒子质量浓度的 自动监测 一一性能特征 、试验方法和技术规 范",
+      "condition": "",
+      "constraint": "    particles一performance characteristics , test methods and specifications.\n    静止源排放物 一一粒子质量浓度的 自动监测 一一性能特征 、试验方法和技术规\n    范",
+      "constraint_role": "informational",
+      "related_entities": [
+        "particles一performance characteristic"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34620,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

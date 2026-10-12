@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "5.4.1",
+  "entities": [
+    {
+      "name": "光缆中继站第一级保护器应安装在配电箱附近，且应就近 接地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1      光缆中继站第一级保护器应安装在配电箱附近，且应就近\n接地。光缆中继站接地系统可按图5.2.4设计。\n5.4.2  站内ODF 、DDF机架应就近接地。",
+      "type": "语义分解",
+      "subject": "光缆中继站第一级保护器应安装在配电箱附近，且应就近 接地",
+      "action": "",
+      "operation": "光缆中继站第一级保护器应安装在配电箱附近，且应就近 接地。光缆中继站接地系统可按图5.2.4设计。 5.4.2 站内ODF 、DDF机架应就近接地。",
+      "condition": "",
+      "constraint": "5.4.1      光缆中继站第一级保护器应安装在配电箱附近，且应就近\n接地。光缆中继站接地系统可按图5.2.4设计。\n5.4.2  站内ODF 、DDF机架应就近接地。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光缆中继站第一级保护器应安装在配电箱附近，且应就近 接地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22660,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

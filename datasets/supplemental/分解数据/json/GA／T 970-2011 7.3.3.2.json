@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.3.3.2",
+  "entities": [
+    {
+      "name": "易燃固体泄漏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3.2 易燃泄漏介质的处置 易燃泄漏介质的处置方祛为: a) 小量泄漏。避免扬尘,并使用无火花工其将泄漏介质收集于袋中或洁挣 ,有盖的容器中后 ,转移至安全场所 ,可在保证安全的情况下,就地焚烧; 6) 大量泄漏。构筑围堤或挖坑收容 ,可用水润湿 ,或用塑料布 ,帆布覆盖 ,减少飞散 ,然后使用无火花工具将泄漏介质收集转移至槽车或专用收集器内 ,回收或运至废物处理场所处置。",
+      "type": "语义分解",
+      "subject": "易燃固体泄漏",
+      "action": "",
+      "operation": "按量避免扬尘无火花收集转移围收覆盖回收处理",
+      "condition": "",
+      "constraint": "7.3.3.2 易燃泄漏介质的处置 易燃泄漏介质的处置方祛为: a) 小量泄漏。避免扬尘,并使用无火花工其将泄漏介质收集于袋中或洁挣 ,有盖的容器中后 ,转移至安全场所 ,可在保证安全的情况下,就地焚烧; 6) 大量泄漏。构筑围堤或挖坑收容 ,可用水润湿 ,或用塑料布 ,帆布覆盖 ,减少飞散 ,然后使用无火花工具将泄漏介质收集转移至槽车或专用收集器内 ,回收或运至废物处理场所处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "易燃固体泄漏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5921,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文润湿焚烧仅历史条件下描述不得自动执行"
+      ]
+    }
+  }
+}

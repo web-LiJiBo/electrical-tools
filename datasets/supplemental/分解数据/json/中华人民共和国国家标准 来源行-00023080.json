@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023080",
+  "entities": [
+    {
+      "name": "若d₁₃ 取 4D～5D 有困难，在土壤电阻率较均匀的地区，可 取 2D",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2  若d₁₃ 取 4D～5D 有困难，在土壤电阻率较均匀的地区，可\n取 2D,d₁₂ 可取D; 在土壤电阻率不均匀的地区或城区，d1₃可取\n3D,d ₁₂ 可取1.7D。",
+      "type": "语义分解",
+      "subject": "若d₁₃ 取 4D～5D 有困难，在土壤电阻率较均匀的地区，可 取 2D",
+      "action": "",
+      "operation": "若d₁₃ 取 4D～5D 有困难，在土壤电阻率较均匀的地区，可 取 2D,d₁₂ 可取D; 在土壤电阻率不均匀的地区或城区，d1₃可取 3D,d ₁₂ 可取1.7D。",
+      "condition": "",
+      "constraint": "   2  若d₁₃ 取 4D～5D 有困难，在土壤电阻率较均匀的地区，可\n取 2D,d₁₂ 可取D; 在土壤电阻率不均匀的地区或城区，d1₃可取\n3D,d ₁₂ 可取1.7D。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "若d₁₃ 取 4D～5D 有困难，在土壤电阻率较均匀的地区，可 取 2D"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23080,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

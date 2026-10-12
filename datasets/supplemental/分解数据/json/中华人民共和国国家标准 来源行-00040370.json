@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040370",
+  "entities": [
+    {
+      "name": "本条强调应遵循清洁生产要求，优先选用无毒或者低毒 性、低挥发性的原料和辅",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2       本条强调应遵循清洁生产要求，优先选用无毒或者低毒\n性、低挥发性的原料和辅助材料，选用密闭的生产工艺，采用资源\n能源利用效率高、污染物排放量少的技术和装备，从源头上减少废\n气污染物产生量，从而减轻或者消除对人类健康和环境的危害，体\n现绿色发展的设计理念。",
+      "type": "语义分解",
+      "subject": "本条强调应遵循清洁生产要求，优先选用无毒或者低毒 性、低挥发性的原料和辅",
+      "action": "",
+      "operation": "本条强调应遵循清洁生产要求，优先选用无毒或者低毒 性、低挥发性的原料和辅助材料，选用密闭的生产工艺，采用资源 能源利用效率高、污染物排放量少的技术和装备，从源头上减少废 气污染物产生量，从而减轻或者消除对人类健康和环境的危害，体 现绿色发展的设计理念。",
+      "condition": "",
+      "constraint": "5.1.2       本条强调应遵循清洁生产要求，优先选用无毒或者低毒\n性、低挥发性的原料和辅助材料，选用密闭的生产工艺，采用资源\n能源利用效率高、污染物排放量少的技术和装备，从源头上减少废\n气污染物产生量，从而减轻或者消除对人类健康和环境的危害，体\n现绿色发展的设计理念。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条强调应遵循清洁生产要求，优先选用无毒或者低毒 性、低挥发性的原料和辅"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40370,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

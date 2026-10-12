@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033224",
+  "entities": [
+    {
+      "name": "新建企业自2019年7月1日起，现有企业自2020年7月1日起，VOCs",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   新建企业自2019年7月1日起，现有企业自2020年7月1日起，VOCs 无组织排放控制按照本标\n准的规定执行。各地可根据当地环境保护需要和经济与技术条件，由省级人民政府批准提前实施本标准。\n   本标准是对VOCs无组织排放控制的基本要求。地方省级人民政府对本标准未作规定的项目，可以\n制定地方污染物排放标准；对本标准已作规定的项目，可以制定严于本标准的地方污染物排放标准。\n   本标准附录A 为资料性附录。",
+      "type": "语义分解",
+      "subject": "新建企业自2019年7月1日起，现有企业自2020年7月1日起，VOCs",
+      "action": "",
+      "operation": "新建企业自2019年7月1日起，现有企业自2020年7月1日起，VOCs 无组织排放控制按照本标 准的规定执行。各地可根据当地环境保护需要和经济与技术条件，由省级人民政府批准提前实施本标准。 本标准是对VOCs无组织排放控制的基本要求。地方省级人民政府对本标准未作规定的项目，可以 制定地方污染物排放标准；对本标准已作规定的项目，可以制定严于本标准的地方污染物排放标准。 本标准附录A 为资料性附录。",
+      "condition": "",
+      "constraint": "   新建企业自2019年7月1日起，现有企业自2020年7月1日起，VOCs 无组织排放控制按照本标\n准的规定执行。各地可根据当地环境保护需要和经济与技术条件，由省级人民政府批准提前实施本标准。\n   本标准是对VOCs无组织排放控制的基本要求。地方省级人民政府对本标准未作规定的项目，可以\n制定地方污染物排放标准；对本标准已作规定的项目，可以制定严于本标准的地方污染物排放标准。\n   本标准附录A 为资料性附录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "新建企业自2019年7月1日起，现有企业自2020年7月1日起，VOCs"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33224,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

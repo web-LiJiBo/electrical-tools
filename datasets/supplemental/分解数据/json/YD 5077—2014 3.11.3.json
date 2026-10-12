@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.11.3",
+  "entities": [
+    {
+      "name": "光尾纤保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.11.3      光尾纤布放时应使用光纤槽道或塑料波纹保护套管，需\n要绑扎时应使用专用扎带。",
+      "type": "语义分解",
+      "subject": "光尾纤保护",
+      "action": "",
+      "operation": "槽道或波纹管需绑扎用专用带",
+      "condition": "",
+      "constraint": "3.11.3      光尾纤布放时应使用光纤槽道或塑料波纹保护套管，需\n要绑扎时应使用专用扎带。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光尾纤保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26751,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

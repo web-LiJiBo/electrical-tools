@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.2.7",
+  "entities": [
+    {
+      "name": "双接警紧急报警",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.7 同时接入监控中心和公安机关接警中心的紧急报警，监控中心值机人员应核实公安机关是否收到报警信息。",
+      "type": "语义分解",
+      "subject": "双接警紧急报警",
+      "action": "",
+      "operation": "值机核实公安收到信息",
+      "condition": "",
+      "constraint": "11.2.7 同时接入监控中心和公安机关接警中心的紧急报警，监控中心值机人员应核实公安机关是否收到报警信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "双接警紧急报警"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7209,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

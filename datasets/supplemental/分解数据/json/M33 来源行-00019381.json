@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019381",
+  "entities": [
+    {
+      "name": "注1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注1: ITU-T G841-1998的7.1所述的MSP协议所述超长距离复用段诸如卫星系统、海缆系统、无线接力系统以及有\n\n    大量再生器或光放大器的传输系统上的使用时，会因物理段引起的附加传播时延而导致较长的倒换时间。因\n\n    此，在某些应用中，可能达不到50ms倒换时间这一网络指标。",
+      "type": "语义分解",
+      "subject": "注1",
+      "action": "",
+      "operation": "注1: ITU-T G841-1998的7.1所述的MSP协议所述超长距离复用段诸如卫星系统、海缆系统、无线接力系统以及有 大量再生器或光放大器的传输系统上的使用时，会因物理段引起的附加传播时延而导致较长的倒换时间。因 此，在某些应用中，可能达不到50ms倒换时间这一网络指标。",
+      "condition": "",
+      "constraint": "注1: ITU-T G841-1998的7.1所述的MSP协议所述超长距离复用段诸如卫星系统、海缆系统、无线接力系统以及有\n\n    大量再生器或光放大器的传输系统上的使用时，会因物理段引起的附加传播时延而导致较长的倒换时间。因\n\n    此，在某些应用中，可能达不到50ms倒换时间这一网络指标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19381,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

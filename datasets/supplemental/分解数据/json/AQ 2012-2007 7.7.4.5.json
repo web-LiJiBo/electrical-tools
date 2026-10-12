@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.7.4.5",
+  "entities": [
+    {
+      "name": "维抢修作业坑",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7.4.5 管道维抢修作业坑应能满足施工人员的操作和施工机具的安装及使用。作业坑与地面之间应有安全逃生通道 ,安全逃生通道应设置在动火点的上风向。",
+      "type": "语义分解",
+      "subject": "维抢修作业坑",
+      "action": "",
+      "operation": "满足安装操作并在动火上风设逃生通道",
+      "condition": "",
+      "constraint": "7.7.4.5 管道维抢修作业坑应能满足施工人员的操作和施工机具的安装及使用。作业坑与地面之间应有安全逃生通道 ,安全逃生通道应设置在动火点的上风向。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "维抢修作业坑"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4874,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

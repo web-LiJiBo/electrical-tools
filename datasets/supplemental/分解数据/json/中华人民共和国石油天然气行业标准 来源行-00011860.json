@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011860",
+  "entities": [
+    {
+      "name": ". 1 行政电话系统采用全自动或半自动中继方式接入当地电 信公网时 , ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5. 1    行政电话系统采用全自动或半自动中继方式接入当地电\n信公网时 ,   电话编号规则应同时符合当地公网和企业内部网的\n编号规则 。",
+      "type": "语义分解",
+      "subject": ". 1 行政电话系统采用全自动或半自动中继方式接入当地电 信公网时 , ",
+      "action": "",
+      "operation": ". 1 行政电话系统采用全自动或半自动中继方式接入当地电 信公网时 , 电话编号规则应同时符合当地公网和企业内部网的 编号规则 。",
+      "condition": "",
+      "constraint": "5.5. 1    行政电话系统采用全自动或半自动中继方式接入当地电\n信公网时 ,   电话编号规则应同时符合当地公网和企业内部网的\n编号规则 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 行政电话系统采用全自动或半自动中继方式接入当地电 信公网时 , "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11860,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

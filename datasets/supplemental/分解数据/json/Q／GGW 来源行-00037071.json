@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037071",
+  "entities": [
+    {
+      "name": "E净购电 —净购入电力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( t",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E净购电 —净购入电力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( tCO₂e);\nE净购热——净购入热力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( tCO₂e);\nRCH₄回收 ——回收且免于排放到大气中的甲烷量，单位为吨二氧化碳当量 ( tCOze)。",
+      "type": "语义分解",
+      "subject": "E净购电 —净购入电力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( t",
+      "action": "",
+      "operation": "E净购电 —净购入电力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( tCO₂e); E净购热——净购入热力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( tCO₂e); RCH₄回收 ——回收且免于排放到大气中的甲烷量，单位为吨二氧化碳当量 ( tCOze)。",
+      "condition": "",
+      "constraint": "E净购电 —净购入电力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( tCO₂e);\nE净购热——净购入热力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( tCO₂e);\nRCH₄回收 ——回收且免于排放到大气中的甲烷量，单位为吨二氧化碳当量 ( tCOze)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E净购电 —净购入电力产生的二氧化碳排放量，单位为吨二氧化碳当量 ( t"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37071,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

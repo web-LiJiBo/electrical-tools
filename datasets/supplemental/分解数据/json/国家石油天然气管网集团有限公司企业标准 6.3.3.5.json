@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.3.5",
+  "entities": [
+    {
+      "name": "无农牧业用地的区域宜按原生态系统类型进行恢复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3.5        无农牧业用地的区域宜按原生态系统类型进行恢复。坡面、坡地宜恢复灌木和草本植被，坡\n度大于25°时，应采取林、草措施恢复植被。",
+      "type": "语义分解",
+      "subject": "无农牧业用地的区域宜按原生态系统类型进行恢复",
+      "action": "",
+      "operation": "无农牧业用地的区域宜按原生态系统类型进行恢复。坡面、坡地宜恢复灌木和草本植被，坡 度大于25°时，应采取林、草措施恢复植被。",
+      "condition": "",
+      "constraint": "6.3.3.5        无农牧业用地的区域宜按原生态系统类型进行恢复。坡面、坡地宜恢复灌木和草本植被，坡\n度大于25°时，应采取林、草措施恢复植被。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无农牧业用地的区域宜按原生态系统类型进行恢复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40764,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

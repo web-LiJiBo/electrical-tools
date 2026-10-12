@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全生产管理办法",
+  "standard_id": "国家管网办〔2025〕26号",
+  "version": "",
+  "chapter_path": "来源行-00003444",
+  "entities": [
+    {
+      "name": "第六十四条 集团公司及所属企业应当建立健全生产安全事故新闻发布和媒体应对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十四条 集团公司及所属企业应当建立健全生产安全事故新闻发布和媒体应对工作机制,及时。主动。准确。客观地向新闻媒体公布事故的有关情况。",
+      "type": "语义分解",
+      "subject": "第六十四条 集团公司及所属企业应当建立健全生产安全事故新闻发布和媒体应对",
+      "action": "",
+      "operation": "第六十四条 集团公司及所属企业应当建立健全生产安全事故新闻发布和媒体应对工作机制,及时。主动。准确。客观地向新闻媒体公布事故的有关情况。",
+      "condition": "",
+      "constraint": "第六十四条 集团公司及所属企业应当建立健全生产安全事故新闻发布和媒体应对工作机制,及时。主动。准确。客观地向新闻媒体公布事故的有关情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十四条 集团公司及所属企业应当建立健全生产安全事故新闻发布和媒体应对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3444,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "snapshot_date": "2026-10-12",
+  "source": "原独立补充条款工作库的分解JSON快照",
+  "repository_directory": "datasets/supplemental/分解数据/json",
+  "original_database_unchanged": true,
+  "file_count": 46466,
+  "total_bytes": 76389178,
+  "rule_count": 46466,
+  "unique_clause_ids": 46466,
+  "manual_review_required_count": 46446,
+  "all_json_valid": true,
+  "source_byte_comparison": true,
+  "sorted_record_hashes_sha256": "fa25cec9afc1de5d8ec91eca11ac164c2ecc8acbb51834fea286b255098284b7",
+  "digest_algorithm": "SHA256(sorted(concatenate(each SHA256(UTF8(filename) + NUL + SHA256(file_bytes)))))；每个记录摘要32字节，按字节排序后拼接",
+  "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+  "retained_fields": ["standard_name", "standard_id", "chapter_path", "原文", "规则", "来源索引", "审查标记"],
+  "excluded": ["原始Excel", "读取中间文件", "连续分批队列", "助手批次标注", "密钥", "本机运行日志和缓存"],
+  "runtime_configuration": ["configs/settings.example.yaml", "configs/settings.offline.yaml"],
+  "instruction_templates": {"device_count": 17, "action_template_count": 41, "simulation_only": true, "dispatch_allowed": false},
+  "precommit_verification": {"related_pytest": "164 passed in 5.93s", "secret_pattern_scan": "no matches", "snapshot_copy": "逐字节一致，文件数量相同"},
+  "publication_status": "本地发布准备；GitHub是否已同步须单独核对远端提交",
+  "limitations": "待复核初稿不等于有效标准或设备控制依据，本快照不是完整分解过程归档"
+}

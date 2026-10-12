@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022412",
+  "entities": [
+    {
+      "name": "通信大楼、交换局和数据局内的光缆金属加强芯和金属护 层应在分线盒内或光纤",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    通信大楼、交换局和数据局内的光缆金属加强芯和金属护\n层应在分线盒内或光纤配线架(ODF 架)的接地排连接，并应采用\n截面积不小于16mm²的多股铜线就近引到该楼层接地排上；当离\n接地排较远时，可就近从传输机房楼柱主钢筋引出接地端子作为\n光缆的接地点。",
+      "type": "语义分解",
+      "subject": "通信大楼、交换局和数据局内的光缆金属加强芯和金属护 层应在分线盒内或光纤",
+      "action": "",
+      "operation": "通信大楼、交换局和数据局内的光缆金属加强芯和金属护 层应在分线盒内或光纤配线架(ODF 架)的接地排连接，并应采用 截面积不小于16mm²的多股铜线就近引到该楼层接地排上；当离 接地排较远时，可就近从传输机房楼柱主钢筋引出接地端子作为 光缆的接地点。",
+      "condition": "",
+      "constraint": "      2    通信大楼、交换局和数据局内的光缆金属加强芯和金属护\n层应在分线盒内或光纤配线架(ODF 架)的接地排连接，并应采用\n截面积不小于16mm²的多股铜线就近引到该楼层接地排上；当离\n接地排较远时，可就近从传输机房楼柱主钢筋引出接地端子作为\n光缆的接地点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信大楼、交换局和数据局内的光缆金属加强芯和金属护 层应在分线盒内或光纤"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22412,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

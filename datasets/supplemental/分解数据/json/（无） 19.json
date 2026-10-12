@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "19",
+  "entities": [
+    {
+      "name": "当采用的隔离措施无法实现安全隔离时,经过安全评估后,应对整个流程系统关断",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "19 当采用的隔离措施无法实现安全隔离时,经过安全评估后,应对整个流程系统关断实施隔离。",
+      "type": "语义分解",
+      "subject": "当采用的隔离措施无法实现安全隔离时,经过安全评估后,应对整个流程系统关断",
+      "action": "",
+      "operation": "当采用的隔离措施无法实现安全隔离时,经过安全评估后,应对整个流程系统关断实施隔离。",
+      "condition": "",
+      "constraint": "19 当采用的隔离措施无法实现安全隔离时,经过安全评估后,应对整个流程系统关断实施隔离。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当采用的隔离措施无法实现安全隔离时,经过安全评估后,应对整个流程系统关断"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6629,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

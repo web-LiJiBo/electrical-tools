@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023673",
+  "entities": [
+    {
+      "name": "e) 提供终端加入和退出会议功能 ,具有动态修改呼叫与连接的能力",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "e)    提供终端加入和退出会议功能 ,具有动态修改呼叫与连接的能力 ;\nf)     当会议过程中出现掉点时 ,MCU 自动进行再连接 ;\ng)    支持会议静音 、混音 、闭音和秘密会商 ;\nh)    在会议中实时统计通话信息 。",
+      "type": "语义分解",
+      "subject": "e) 提供终端加入和退出会议功能 ,具有动态修改呼叫与连接的能力",
+      "action": "",
+      "operation": "e) 提供终端加入和退出会议功能 ,具有动态修改呼叫与连接的能力 ; f) 当会议过程中出现掉点时 ,MCU 自动进行再连接 ; g) 支持会议静音 、混音 、闭音和秘密会商 ; h) 在会议中实时统计通话信息 。",
+      "condition": "",
+      "constraint": "e)    提供终端加入和退出会议功能 ,具有动态修改呼叫与连接的能力 ;\nf)     当会议过程中出现掉点时 ,MCU 自动进行再连接 ;\ng)    支持会议静音 、混音 、闭音和秘密会商 ;\nh)    在会议中实时统计通话信息 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 提供终端加入和退出会议功能 ,具有动态修改呼叫与连接的能力"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23673,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

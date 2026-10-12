@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.080",
+  "standard_id": "Z64",
+  "version": "",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "当土壤中污染物含量等于或者低于表1和表2规定的风险筛选值时，农用地土壤污",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1    当土壤中污染物含量等于或者低于表1和表2规定的风险筛选值时，农用地土壤污染风险低， 一\n般情况下可以忽略；高于表1和表2规定的风险筛选值时，可能存在农用地土壤污染风险，应加强土壤\n环境监测和农产品协同监测。",
+      "type": "语义分解",
+      "subject": "当土壤中污染物含量等于或者低于表1和表2规定的风险筛选值时，农用地土壤污",
+      "action": "",
+      "operation": "当土壤中污染物含量等于或者低于表1和表2规定的风险筛选值时，农用地土壤污染风险低， 一 般情况下可以忽略；高于表1和表2规定的风险筛选值时，可能存在农用地土壤污染风险，应加强土壤 环境监测和农产品协同监测。",
+      "condition": "",
+      "constraint": "6.1    当土壤中污染物含量等于或者低于表1和表2规定的风险筛选值时，农用地土壤污染风险低， 一\n般情况下可以忽略；高于表1和表2规定的风险筛选值时，可能存在农用地土壤污染风险，应加强土壤\n环境监测和农产品协同监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当土壤中污染物含量等于或者低于表1和表2规定的风险筛选值时，农用地土壤污"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38151,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

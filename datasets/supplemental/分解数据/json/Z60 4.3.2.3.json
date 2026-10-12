@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.3.2.3",
+  "entities": [
+    {
+      "name": "铁路灌装密封滴洒",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2.3 向铁路罐车发油时，除拆装灌装鹤管之外的时段，灌装鹤管与铁路罐车灌装口(人孔)应密闭。\n4.3.2.4 底部发油结束并断开快速接头时，油品滴洒量不应超过10ml,  滴洒量取连续3次断开操作的\n平均值。",
+      "type": "语义分解",
+      "subject": "铁路灌装密封滴洒",
+      "action": "",
+      "operation": "拆装外密闭断接三次平均不超10毫升",
+      "condition": "",
+      "constraint": "4.3.2.3 向铁路罐车发油时，除拆装灌装鹤管之外的时段，灌装鹤管与铁路罐车灌装口(人孔)应密闭。\n4.3.2.4 底部发油结束并断开快速接头时，油品滴洒量不应超过10ml,  滴洒量取连续3次断开操作的\n平均值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铁路灌装密封滴洒"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

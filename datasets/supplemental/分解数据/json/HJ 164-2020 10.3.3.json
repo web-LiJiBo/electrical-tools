@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "10.3.3",
+  "entities": [
+    {
+      "name": "实验室精密度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.3 精密度控制 精密度可采用分析平行双样相对偏差和一组测量值的标准偏差或相对标推偏差等来控制。监测项目的精密度控制指标按照分析方法中的要求确定。 平行双样可以采用密码或明码编入。每批水样分析时均须做10%的平行双样,样品数较小时,每批样品应至少儆一份样品的平行双样。 一组测量值的标潍偏差和相对标推偏差的计算参照 HJ 168 相关要求。",
+      "type": "语义分解",
+      "subject": "实验室精密度",
+      "action": "",
+      "operation": "每批百分之十平行双样少样至少一份按方法控制偏差",
+      "condition": "",
+      "constraint": "10.3.3 精密度控制 精密度可采用分析平行双样相对偏差和一组测量值的标准偏差或相对标推偏差等来控制。监测项目的精密度控制指标按照分析方法中的要求确定。 平行双样可以采用密码或明码编入。每批水样分析时均须做10%的平行双样,样品数较小时,每批样品应至少儆一份样品的平行双样。 一组测量值的标潍偏差和相对标推偏差的计算参照 HJ 168 相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实验室精密度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2184,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

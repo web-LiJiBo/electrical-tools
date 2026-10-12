@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028373",
+  "entities": [
+    {
+      "name": "高层领导应学习并正确地认识精益六西格玛 ,营造推进氛围 ,组织制定和部署",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      高层领导应学习并正确地认识精益六西格玛 ,营造推进氛围 ,组织制定和部署推进规划 ,建立推进\n的组织架构及激励机制 ,参与改进机会的识别及相关活动 ,不断排除实施过程中的障碍 ,确保精益六西\n格玛管理有序推进 。",
+      "type": "语义分解",
+      "subject": "高层领导应学习并正确地认识精益六西格玛 ,营造推进氛围 ,组织制定和部署",
+      "action": "",
+      "operation": "高层领导应学习并正确地认识精益六西格玛 ,营造推进氛围 ,组织制定和部署推进规划 ,建立推进 的组织架构及激励机制 ,参与改进机会的识别及相关活动 ,不断排除实施过程中的障碍 ,确保精益六西 格玛管理有序推进 。",
+      "condition": "",
+      "constraint": "      高层领导应学习并正确地认识精益六西格玛 ,营造推进氛围 ,组织制定和部署推进规划 ,建立推进\n的组织架构及激励机制 ,参与改进机会的识别及相关活动 ,不断排除实施过程中的障碍 ,确保精益六西\n格玛管理有序推进 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高层领导应学习并正确地认识精益六西格玛 ,营造推进氛围 ,组织制定和部署"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28373,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

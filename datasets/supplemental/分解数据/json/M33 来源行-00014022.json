@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014022",
+  "entities": [
+    {
+      "name": "在多通道 SOTU 接口，通过波分复用将n 路OTSi 汇聚到一个OPS",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "在多通道 SOTU 接口，通过波分复用将n 路OTSi 汇聚到一个OPS-P的 n 个频率间隙。",
+      "type": "语义分解",
+      "subject": "在多通道 SOTU 接口，通过波分复用将n 路OTSi 汇聚到一个OPS",
+      "action": "",
+      "operation": "在多通道 SOTU 接口，通过波分复用将n 路OTSi 汇聚到一个OPS-P的 n 个频率间隙。",
+      "condition": "",
+      "constraint": "在多通道 SOTU 接口，通过波分复用将n 路OTSi 汇聚到一个OPS-P的 n 个频率间隙。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在多通道 SOTU 接口，通过波分复用将n 路OTSi 汇聚到一个OPS"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14022,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

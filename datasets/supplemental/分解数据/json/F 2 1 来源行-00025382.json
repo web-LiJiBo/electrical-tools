@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025382",
+  "entities": [
+    {
+      "name": "b) 性能测试仪模拟终端用户，性能测试仪按待测软交换机能接受的最大用户数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    性能测试仪模拟终端用户，性能测试仪按待测软交换机能接受的最大用户数配置 SIP 用户，并\n       让 SIP用户注册到软交换机，一半用户作为主叫方，另一半用户作为被叫方；",
+      "type": "语义分解",
+      "subject": "b) 性能测试仪模拟终端用户，性能测试仪按待测软交换机能接受的最大用户数",
+      "action": "",
+      "operation": "b) 性能测试仪模拟终端用户，性能测试仪按待测软交换机能接受的最大用户数配置 SIP 用户，并 让 SIP用户注册到软交换机，一半用户作为主叫方，另一半用户作为被叫方",
+      "condition": "",
+      "constraint": "b)    性能测试仪模拟终端用户，性能测试仪按待测软交换机能接受的最大用户数配置 SIP 用户，并\n       让 SIP用户注册到软交换机，一半用户作为主叫方，另一半用户作为被叫方；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 性能测试仪模拟终端用户，性能测试仪按待测软交换机能接受的最大用户数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25382,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

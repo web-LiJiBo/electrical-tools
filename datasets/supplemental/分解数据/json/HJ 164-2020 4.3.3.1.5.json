@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "4.3.3.1.5",
+  "entities": [
+    {
+      "name": "高尔夫地下水布点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3.1.5 高尔夫球场 8 ) 对照监测点布设1个, 设置在高尔夫球场地下水流向上游边界处; b)  污粱扩散监测点不少于3 个。地下水下游及两侧的地下水监测点均不得少于1个; c) 高尔夫球场内部监测点不少于1个。",
+      "type": "语义分解",
+      "subject": "高尔夫地下水布点",
+      "action": "",
+      "operation": "上游对照一点扩散至少三点下游两侧各点内部至少一点",
+      "condition": "",
+      "constraint": "4.3.3.1.5 高尔夫球场 8 ) 对照监测点布设1个, 设置在高尔夫球场地下水流向上游边界处; b)  污粱扩散监测点不少于3 个。地下水下游及两侧的地下水监测点均不得少于1个; c) 高尔夫球场内部监测点不少于1个。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高尔夫地下水布点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2045,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

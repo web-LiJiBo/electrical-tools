@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036298",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "天然气增压及处理设备\t仪 表\t用安全阀替换爆破板\t  爆破板仅供一次性使用，如果爆破板因气压过高而破裂，大量甲\n   烷、挥发性有机化合物(VOCs)和危险空气污染物(HAP)会直接\n排放到大气中，直到更换新的爆破板。可以在爆破板上安装安全阀\n  (PRV),当爆破板破裂时，安全阀将打开，当气体压力恢复到安\n全水平时，安全阀自动关闭",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "天然气增压及处理设备\t仪 表\t用安全阀替换爆破板\t  爆破板仅供一次性使用，如果爆破板因气压过高而破裂，大量甲\n   烷、挥发性有机化合物(VOCs)和危险空气污染物(HAP)会直接\n排放到大气中，直到更换新的爆破板。可以在爆破板上安装安全阀\n  (PRV),当爆破板破裂时，安全阀将打开，当气体压力恢复到安\n全水平时，安全阀自动关闭",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36298,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

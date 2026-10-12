@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.4",
+  "entities": [
+    {
+      "name": "遥感水陆分离",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4 水陆分离 水陆分离技术处理要求如下: a ) 对于不受潮汐影响的固定水岸, 通过固定边界线进行水陆分离。获取水陆掩膜; 6) 对于易受潮汐影响的水岸, 每景影像单独利用可见光。近红外及热红外影像。通过监督分类 水体指数。角距相似度指数等,获取水陆掩膜",
+      "type": "语义分解",
+      "subject": "遥感水陆分离",
+      "action": "",
+      "operation": "固定岸用固定边界潮汐岸每景利用多谱段分类指数获取掩膜",
+      "condition": "",
+      "constraint": "5.2.4 水陆分离 水陆分离技术处理要求如下: a ) 对于不受潮汐影响的固定水岸, 通过固定边界线进行水陆分离。获取水陆掩膜; 6) 对于易受潮汐影响的水岸, 每景影像单独利用可见光。近红外及热红外影像。通过监督分类 水体指数。角距相似度指数等,获取水陆掩膜",
+      "constraint_role": "informational",
+      "related_entities": [
+        "遥感水陆分离"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1950,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

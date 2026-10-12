@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025352",
+  "entities": [
+    {
+      "name": "f) 软交换机向网关设备发送 INVITE 消息发起监听呼叫，携带主叫号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "f)     软交换机向网关设备发送 INVITE 消息发起监听呼叫，携带主叫号码等级，其中被叫号码为\n       监听码＋ 被监听号码；",
+      "type": "语义分解",
+      "subject": "f) 软交换机向网关设备发送 INVITE 消息发起监听呼叫，携带主叫号",
+      "action": "",
+      "operation": "f) 软交换机向网关设备发送 INVITE 消息发起监听呼叫，携带主叫号码等级，其中被叫号码为 监听码＋ 被监听号码",
+      "condition": "",
+      "constraint": "f)     软交换机向网关设备发送 INVITE 消息发起监听呼叫，携带主叫号码等级，其中被叫号码为\n       监听码＋ 被监听号码；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 软交换机向网关设备发送 INVITE 消息发起监听呼叫，携带主叫号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25352,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

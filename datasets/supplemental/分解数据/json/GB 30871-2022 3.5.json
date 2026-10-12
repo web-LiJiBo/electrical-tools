@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "3.5",
+  "entities": [
+    {
+      "name": "受限空间定义",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5 受限空间 confined space 进出受限 ,通风不良 ,可能存在易燃易爆 有毒有害物质或缺氧 ,对进人人员的身体健康和生命安全 构成威胁的封闭 ,半封闭设施及场所。注:  包括反应器 .塔 .釜 .槽 ,罐 ,炉膛 .锅筒 管道以及地下室 .窨井 ,坑(池) ,管沟或其他封闭 ,半封闭场所。",
+      "type": "语义分解",
+      "subject": "受限空间定义",
+      "action": "",
+      "operation": "进出受限通风差存在毒爆缺氧威胁的封闭半封闭设施场所",
+      "condition": "",
+      "constraint": "3.5 受限空间 confined space 进出受限 ,通风不良 ,可能存在易燃易爆 有毒有害物质或缺氧 ,对进人人员的身体健康和生命安全 构成威胁的封闭 ,半封闭设施及场所。注:  包括反应器 .塔 .釜 .槽 ,罐 ,炉膛 .锅筒 管道以及地下室 .窨井 ,坑(池) ,管沟或其他封闭 ,半封闭场所。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "受限空间定义"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6687,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；术语定义"
+      ]
+    }
+  }
+}

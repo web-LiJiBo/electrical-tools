@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037788",
+  "entities": [
+    {
+      "name": "指报告主体在报告期内导致某种温室气体排放或者清除的人为活动 量，例如各种",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   指报告主体在报告期内导致某种温室气体排放或者清除的人为活动\n\n量，例如各种燃料的消耗量、原油输送量、外购电力量、外购蒸汽量等。",
+      "type": "语义分解",
+      "subject": "指报告主体在报告期内导致某种温室气体排放或者清除的人为活动 量，例如各种",
+      "action": "",
+      "operation": "指报告主体在报告期内导致某种温室气体排放或者清除的人为活动 量，例如各种燃料的消耗量、原油输送量、外购电力量、外购蒸汽量等。",
+      "condition": "",
+      "constraint": "   指报告主体在报告期内导致某种温室气体排放或者清除的人为活动\n\n量，例如各种燃料的消耗量、原油输送量、外购电力量、外购蒸汽量等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指报告主体在报告期内导致某种温室气体排放或者清除的人为活动 量，例如各种"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37788,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "综合应急预案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 综合应急预案 综合应急预案是生产经营单位为应对各种生产安全事故而制定的综合性工作方案，是本单位应对生产安全事故的总体工作程序、措施和应急预案体系的总纲。",
+      "type": "语义分解",
+      "subject": "综合应急预案",
+      "action": "",
+      "operation": "界定综合工作方案及体系总纲",
+      "condition": "",
+      "constraint": "5.2 综合应急预案 综合应急预案是生产经营单位为应对各种生产安全事故而制定的综合性工作方案，是本单位应对生产安全事故的总体工作程序、措施和应急预案体系的总纲。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "综合应急预案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4150,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

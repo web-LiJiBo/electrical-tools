@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020259",
+  "entities": [
+    {
+      "name": "——解映射，产生CBR时钟",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——解映射，产生CBR时钟：该功能提供一个缓存器进行处理。将C-4-X 中的D 和S 字节中\n    的 ODUk_CI_D 数据写进缓存器，需在该子块调整控制信息控制下从每个字块S 字节提\n    取信息，在ODUk 时钟( CI_CK) 控制下从缓存器读出 ODUk 数据( CI_D)。当发生负调\n    整，每次向缓存器中多写入一个的字节，ODUk 数据从S 字节读出。如果没有发生调整，\n    没有ODUk 数据从S 字节出。",
+      "type": "语义分解",
+      "subject": "——解映射，产生CBR时钟",
+      "action": "",
+      "operation": "——解映射，产生CBR时钟：该功能提供一个缓存器进行处理。将C-4-X 中的D 和S 字节中 的 ODUk_CI_D 数据写进缓存器，需在该子块调整控制信息控制下从每个字块S 字节提 取信息，在ODUk 时钟( CI_CK) 控制下从缓存器读出 ODUk 数据( CI_D)。当发生负调 整，每次向缓存器中多写入一个的字节，ODUk 数据从S 字节读出。如果没有发生调整， 没有ODUk 数据从S 字节出。",
+      "condition": "",
+      "constraint": "——解映射，产生CBR时钟：该功能提供一个缓存器进行处理。将C-4-X 中的D 和S 字节中\n    的 ODUk_CI_D 数据写进缓存器，需在该子块调整控制信息控制下从每个字块S 字节提\n    取信息，在ODUk 时钟( CI_CK) 控制下从缓存器读出 ODUk 数据( CI_D)。当发生负调\n    整，每次向缓存器中多写入一个的字节，ODUk 数据从S 字节读出。如果没有发生调整，\n    没有ODUk 数据从S 字节出。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——解映射，产生CBR时钟"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20259,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "灭火器计算单元",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 灭火器配置设计的计算单元应按下列规定划分: 1 当一个楼层或一个水平防火分区内各场所的危险等级和火灾种类相同时 ,可将其作为一个计算单元。 2 当一个楼层或一个水平防火分区内各场所的危险等级和火灾种类不相同时 ,应将其分别作为不同的计算单元。 3 同一计算单元不得跨趑防火分区和楼层。",
+      "type": "语义分解",
+      "subject": "灭火器计算单元",
+      "action": "",
+      "operation": "同层同防火分区同危险等级火灾种类可为一单元不同分别设置不得跨层跨区",
+      "condition": "",
+      "constraint": "7.2.1 灭火器配置设计的计算单元应按下列规定划分: 1 当一个楼层或一个水平防火分区内各场所的危险等级和火灾种类相同时 ,可将其作为一个计算单元。 2 当一个楼层或一个水平防火分区内各场所的危险等级和火灾种类不相同时 ,应将其分别作为不同的计算单元。 3 同一计算单元不得跨趑防火分区和楼层。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器计算单元"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4076,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

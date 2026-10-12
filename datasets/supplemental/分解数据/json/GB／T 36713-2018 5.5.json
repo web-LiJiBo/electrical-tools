@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "静态因素",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5 确定和量化静态因素 影响能源绩效的因素数值可能经常发生变化,因此需要对其进行分析来确定它们是相关变量还是静态因素。例如 ,若制造工厂的产量经常发生变化 ,则产量就是相关变量;若产量不经常变化 ,则就是静态因素。确定能源绩效参数和建立能源基准后 ,应记录静态因素的状态。适时评审静态因素 ,以确保能源绩效参数和能源基准的持续适宜性。静态因素发生重要变化时 ,应记录变化对能源绩效可能生产的影响 = 如果静态因素发生变化 .组织应保持或调整相关的能源绩效参数或能源基准。表2展示了静态因素示例以及何时需要将静态因素转换为相关变量_",
+      "type": "语义分解",
+      "subject": "静态因素",
+      "action": "",
+      "operation": "记录状态并在变化后评审基准",
+      "condition": "静态因素发生重要变化时",
+      "constraint": "应记录变化对能源绩效可能生产的影响",
+      "constraint_role": "informational",
+      "related_entities": [
+        "静态因素"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "表2未提供；保持或调整基准是条件性选择"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018579",
+  "entities": [
+    {
+      "name": "—一阶复帧",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—一阶复帧：该功能将恢复第一阶复帧(16帧),在H4比特5到比特8复帧指示位MFI1 产生\n   复帧同步。一旦检测到MFI1 序列错误将假定一阶复帧失步。当4个连续的VC3/4 帧找到无错\n   误的MFI1 序列，应假定一阶复帧同步恢复并进入定帧状态。",
+      "type": "语义分解",
+      "subject": "—一阶复帧",
+      "action": "",
+      "operation": "—一阶复帧：该功能将恢复第一阶复帧(16帧),在H4比特5到比特8复帧指示位MFI1 产生 复帧同步。一旦检测到MFI1 序列错误将假定一阶复帧失步。当4个连续的VC3/4 帧找到无错 误的MFI1 序列，应假定一阶复帧同步恢复并进入定帧状态。",
+      "condition": "",
+      "constraint": "—一阶复帧：该功能将恢复第一阶复帧(16帧),在H4比特5到比特8复帧指示位MFI1 产生\n   复帧同步。一旦检测到MFI1 序列错误将假定一阶复帧失步。当4个连续的VC3/4 帧找到无错\n   误的MFI1 序列，应假定一阶复帧同步恢复并进入定帧状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—一阶复帧"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18579,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

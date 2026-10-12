@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.4.6.2",
+  "entities": [
+    {
+      "name": "连续流动洗涤剂曲线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.4.6.2 标准曲线的绘制 分别准确吸取十二烷基苯磺酸钠标准使用溶液[ρ(DBS)=10.0 mg/L]0 mL、0.50 mL、1.00 mL、2.00 mL、4.00 mL、6.00 mL、8.00 mL和10.0 mL，加入100 mL容量瓶中，用纯水定容至刻度线。此标准系列的质量浓度分别为0 mg/L、0.050 mg/L、0.100 mg/L、0.200 mg/L、0.400 mg/L、0.600 mg/L、0.800 mg/L和1.000 mg/L，现用现配。标准溶液配制和样品前处理时应使用分析纯或以上等级试剂。每批样品分析均应绘制标准曲线。",
+      "type": "语义分解",
+      "subject": "连续流动洗涤剂曲线",
+      "action": "",
+      "operation": "八点系列现配每批绘曲线用分析纯以上试剂",
+      "condition": "",
+      "constraint": "13.4.6.2 标准曲线的绘制 分别准确吸取十二烷基苯磺酸钠标准使用溶液[ρ(DBS)=10.0 mg/L]0 mL、0.50 mL、1.00 mL、2.00 mL、4.00 mL、6.00 mL、8.00 mL和10.0 mL，加入100 mL容量瓶中，用纯水定容至刻度线。此标准系列的质量浓度分别为0 mg/L、0.050 mg/L、0.100 mg/L、0.200 mg/L、0.400 mg/L、0.600 mg/L、0.800 mg/L和1.000 mg/L，现用现配。标准溶液配制和样品前处理时应使用分析纯或以上等级试剂。每批样品分析均应绘制标准曲线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续流动洗涤剂曲线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1641,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

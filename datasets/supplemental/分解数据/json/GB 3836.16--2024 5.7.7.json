@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.7",
+  "entities": [
+    {
+      "name": "液浸型设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.7 液浸型\"0' \"0\"型防爆电气设备的检查项目按照表 A.4。 设计为敞开式的\"0\"型电气设备应使用所需的保护液重新填充到所需的液位范围内，并根据制造商 的说明重新密封 _",
+      "type": "语义分解",
+      "subject": "液浸型设备",
+      "action": "",
+      "operation": "按表检查开启后补充合适保护液至要求液位按制造商重新密封",
+      "condition": "",
+      "constraint": "5.7.7 液浸型\"0' \"0\"型防爆电气设备的检查项目按照表 A.4。 设计为敞开式的\"0\"型电气设备应使用所需的保护液重新填充到所需的液位范围内，并根据制造商 的说明重新密封 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "液浸型设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4021,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；液浸型符号0疑似OCR异常附表需关联"
+      ]
+    }
+  }
+}

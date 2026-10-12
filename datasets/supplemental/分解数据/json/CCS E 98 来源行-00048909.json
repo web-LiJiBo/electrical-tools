@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048909",
+  "entities": [
+    {
+      "name": "待试片状态趋于稳定后，同步测量一段时间内(如30s) 标准电阻两端交流电",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   3  待试片状态趋于稳定后，同步测量一段时间内(如30s)\n标准电阻两端交流电压平均值Vac,avg(V) 和试片相对于参比电\n极的交流电压平均值Vac,remote(V);",
+      "type": "语义分解",
+      "subject": "待试片状态趋于稳定后，同步测量一段时间内(如30s) 标准电阻两端交流电",
+      "action": "",
+      "operation": "待试片状态趋于稳定后，同步测量一段时间内(如30s) 标准电阻两端交流电压平均值Vac,avg(V) 和试片相对于参比电 极的交流电压平均值Vac,remote(V)",
+      "condition": "",
+      "constraint": "   3  待试片状态趋于稳定后，同步测量一段时间内(如30s)\n标准电阻两端交流电压平均值Vac,avg(V) 和试片相对于参比电\n极的交流电压平均值Vac,remote(V);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "待试片状态趋于稳定后，同步测量一段时间内(如30s) 标准电阻两端交流电"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48909,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

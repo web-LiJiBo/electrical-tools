@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "5.9",
+  "entities": [
+    {
+      "name": "温室气体",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.9 温室气体废气污染物核算 温室气体核算应执行Q/GGI 04005.8的规定。",
+      "type": "语义分解",
+      "subject": "温室气体",
+      "action": "",
+      "operation": "按引用标准核算",
+      "condition": "",
+      "constraint": "5.9 温室气体废气污染物核算 温室气体核算应执行Q/GGI 04005.8的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "温室气体"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 649,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；Q/GGI标准号需复核"
+      ]
+    }
+  }
+}

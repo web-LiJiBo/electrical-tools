@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034126",
+  "entities": [
+    {
+      "name": "弯头与输送管的设计及 SPAS的工作应使得由 Brow\" 扩散 、重力沉",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      弯头与输送管的设计及 SPAS的工作应使得由 Brow\" 扩散 、重力沉降 、惯性沉积 、静电聚积和(或 )\n载热等效应引起的传送损失降至最小。经验表明应把管子尽可能做得短一些 , 在垂直方向布置它们。如\n有可能 , 不带弯头 , 使用接地的金属管且避免温度梯度。管子的直径应不小于 5 mm , 采用主分离器在管\n道内侧技术时 , 探头 、弯头 、管道和分离器的合理布置见图 8 示例。\n7. 9. 3. 4    分离",
+      "type": "语义分解",
+      "subject": "弯头与输送管的设计及 SPAS的工作应使得由 Brow\" 扩散 、重力沉",
+      "action": "",
+      "operation": "弯头与输送管的设计及 SPAS的工作应使得由 Brow\" 扩散 、重力沉降 、惯性沉积 、静电聚积和(或 ) 载热等效应引起的传送损失降至最小。经验表明应把管子尽可能做得短一些 , 在垂直方向布置它们。如 有可能 , 不带弯头 , 使用接地的金属管且避免温度梯度。管子的直径应不小于 5 mm , 采用主分离器在管 道内侧技术时 , 探头 、弯头 、管道和分离器的合理布置见图 8 示例。 7. 9. 3. 4 分离",
+      "condition": "",
+      "constraint": "      弯头与输送管的设计及 SPAS的工作应使得由 Brow\" 扩散 、重力沉降 、惯性沉积 、静电聚积和(或 )\n载热等效应引起的传送损失降至最小。经验表明应把管子尽可能做得短一些 , 在垂直方向布置它们。如\n有可能 , 不带弯头 , 使用接地的金属管且避免温度梯度。管子的直径应不小于 5 mm , 采用主分离器在管\n道内侧技术时 , 探头 、弯头 、管道和分离器的合理布置见图 8 示例。\n7. 9. 3. 4    分离",
+      "constraint_role": "informational",
+      "related_entities": [
+        "弯头与输送管的设计及 SPAS的工作应使得由 Brow\" 扩散 、重力沉"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34126,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

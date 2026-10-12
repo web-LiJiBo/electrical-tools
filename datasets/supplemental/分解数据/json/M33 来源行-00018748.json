@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018748",
+  "entities": [
+    {
+      "name": "——通路去偏差处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——通路去偏差处理：补偿STL-256.4通路间延时差异的处理过程在ITU-TG.707-2007附\n   录 I 中描述。数据通路间的补偿是通过每个通路缓存寄存器实现的，通过标记控制将\n\n   通路数据在正确的时间写进16字节数据块复用器。该缓存寄存器可以补偿通路间延\n   时差异的绝对值至少为180ns 注。为兼容IEEE 802.3, 当它用STM-256 传送时接口使\n   用G695 C4S1-2D1 应用代码。",
+      "type": "语义分解",
+      "subject": "——通路去偏差处理",
+      "action": "",
+      "operation": "——通路去偏差处理：补偿STL-256.4通路间延时差异的处理过程在ITU-TG.707-2007附 录 I 中描述。数据通路间的补偿是通过每个通路缓存寄存器实现的，通过标记控制将 通路数据在正确的时间写进16字节数据块复用器。该缓存寄存器可以补偿通路间延 时差异的绝对值至少为180ns 注。为兼容IEEE 802.3, 当它用STM-256 传送时接口使 用G695 C4S1-2D1 应用代码。",
+      "condition": "",
+      "constraint": "——通路去偏差处理：补偿STL-256.4通路间延时差异的处理过程在ITU-TG.707-2007附\n   录 I 中描述。数据通路间的补偿是通过每个通路缓存寄存器实现的，通过标记控制将\n\n   通路数据在正确的时间写进16字节数据块复用器。该缓存寄存器可以补偿通路间延\n   时差异的绝对值至少为180ns 注。为兼容IEEE 802.3, 当它用STM-256 传送时接口使\n   用G695 C4S1-2D1 应用代码。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——通路去偏差处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18748,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

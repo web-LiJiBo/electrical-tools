@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.1.7",
+  "entities": [
+    {
+      "name": "挥发酚方法性能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.1.7 精密度和准确度 单个实验室取0.5 μg、5.0 μg和7.0 μg酚(以苯酚计)重复测定6次，其相对标准偏差分别为21 %、1.9 %和2.6 %;对12个不同来源水样加入酚标准为10.0 μg/L酚(以苯酚计)，测得回收率为85 %～109 %，平均回收率为96 %。",
+      "type": "语义分解",
+      "subject": "挥发酚方法性能",
+      "action": "",
+      "operation": "记录重复测定偏差及加标回收范围平均值",
+      "condition": "",
+      "constraint": "12.1.7 精密度和准确度 单个实验室取0.5 μg、5.0 μg和7.0 μg酚(以苯酚计)重复测定6次，其相对标准偏差分别为21 %、1.9 %和2.6 %;对12个不同来源水样加入酚标准为10.0 μg/L酚(以苯酚计)，测得回收率为85 %～109 %，平均回收率为96 %。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发酚方法性能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1469,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；性能数据非合格阈值"
+      ]
+    }
+  }
+}

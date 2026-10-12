@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.3.7.1",
+  "entities": [
+    {
+      "name": "地下水采样人员车辆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.7.1 采样过程中采样入员不应有影响采样质量的行为,如使用化妆品,在采样。样品分装及密封现场吸烟等。 监测用车停放应尽量远离监测点; 一般停放茌监测点(井)下风向50n 以外。",
+      "type": "语义分解",
+      "subject": "地下水采样人员车辆",
+      "action": "",
+      "operation": "避免化妆吸烟影响样品车辆尽量远离下风向规定距离",
+      "condition": "",
+      "constraint": "6.3.7.1 采样过程中采样入员不应有影响采样质量的行为,如使用化妆品,在采样。样品分装及密封现场吸烟等。 监测用车停放应尽量远离监测点; 一般停放茌监测点(井)下风向50n 以外。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水采样人员车辆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2097,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；距离单位异常"
+      ]
+    }
+  }
+}

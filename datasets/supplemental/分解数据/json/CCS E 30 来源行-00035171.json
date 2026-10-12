@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035171",
+  "entities": [
+    {
+      "name": "f) 保持表面清洁 , 防止与氧气接触时 ,点火和/或爆炸",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "f)    保持表面清洁 , 防止与氧气接触时 ,点火和/或爆炸 ;\ng)    始终使用压力调节器 ,在打开气瓶阀前释放至常压 ;\nh)    所有使用的设备和容器应适合氧气存在下使用 ;",
+      "type": "语义分解",
+      "subject": "f) 保持表面清洁 , 防止与氧气接触时 ,点火和/或爆炸",
+      "action": "",
+      "operation": "f) 保持表面清洁 , 防止与氧气接触时 ,点火和/或爆炸 ; g) 始终使用压力调节器 ,在打开气瓶阀前释放至常压 ; h) 所有使用的设备和容器应适合氧气存在下使用",
+      "condition": "",
+      "constraint": "f)    保持表面清洁 , 防止与氧气接触时 ,点火和/或爆炸 ;\ng)    始终使用压力调节器 ,在打开气瓶阀前释放至常压 ;\nh)    所有使用的设备和容器应适合氧气存在下使用 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 保持表面清洁 , 防止与氧气接触时 ,点火和/或爆炸"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35171,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

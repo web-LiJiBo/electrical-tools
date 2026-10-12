@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040942",
+  "entities": [
+    {
+      "name": "山地陡坡、水蚀和风蚀严重地带适用穴状整地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   山地陡坡、水蚀和风蚀严重地带适用穴状整地。整地规格：采用圆形或方形坑穴，规格因树种和立\n地条件而异，原则上，种植穴不小于0.5 m³;   场地土层较薄或无土层时，穴间空地应覆土0.2 m以上，\n促进乔灌草生长。",
+      "type": "语义分解",
+      "subject": "山地陡坡、水蚀和风蚀严重地带适用穴状整地",
+      "action": "",
+      "operation": "山地陡坡、水蚀和风蚀严重地带适用穴状整地。整地规格：采用圆形或方形坑穴，规格因树种和立 地条件而异，原则上，种植穴不小于0.5 m³; 场地土层较薄或无土层时，穴间空地应覆土0.2 m以上， 促进乔灌草生长。",
+      "condition": "",
+      "constraint": "   山地陡坡、水蚀和风蚀严重地带适用穴状整地。整地规格：采用圆形或方形坑穴，规格因树种和立\n地条件而异，原则上，种植穴不小于0.5 m³;   场地土层较薄或无土层时，穴间空地应覆土0.2 m以上，\n促进乔灌草生长。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "山地陡坡、水蚀和风蚀严重地带适用穴状整地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40942,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

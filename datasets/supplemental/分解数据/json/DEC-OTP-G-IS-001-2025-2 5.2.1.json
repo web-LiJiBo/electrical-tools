@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "能耗数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 能耗数据的采集模式分为在线采集和入工填报 原则上表2的能耗数据采集 应采用在线采集模式,不具备在线采集条件的站场,其能耗数据采集可采用人工填报 模式。",
+      "type": "语义分解",
+      "subject": "能耗数据",
+      "action": "",
+      "operation": "选择在线或人工采集方式",
+      "condition": "不具备在线采集条件的站场",
+      "constraint": "可采用人工填报 模式",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能耗数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "表2范围未提供；入工等识别错误未改写"
+      ]
+    }
+  }
+}

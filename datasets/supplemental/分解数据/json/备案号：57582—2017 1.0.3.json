@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "1.0.3",
+  "entities": [
+    {
+      "name": "油气管道腐蚀数据综合分析除符合本标准外，尚应符合 国家现行有关标准的规定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.3    油气管道腐蚀数据综合分析除符合本标准外，尚应符合\n国家现行有关标准的规定，管道坐标数据使用应遵循国家相关\n保密法律法规规定。",
+      "type": "语义分解",
+      "subject": "油气管道腐蚀数据综合分析除符合本标准外，尚应符合 国家现行有关标准的规定",
+      "action": "",
+      "operation": "油气管道腐蚀数据综合分析除符合本标准外，尚应符合 国家现行有关标准的规定，管道坐标数据使用应遵循国家相关 保密法律法规规定。",
+      "condition": "",
+      "constraint": "1.0.3    油气管道腐蚀数据综合分析除符合本标准外，尚应符合\n国家现行有关标准的规定，管道坐标数据使用应遵循国家相关\n保密法律法规规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气管道腐蚀数据综合分析除符合本标准外，尚应符合 国家现行有关标准的规定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48181,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

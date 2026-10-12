@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "排污单位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 各排污单位须按照县级以上环境保护部门的要求和环境监测技术规范。开展排污状况自我监测- 不其备环境监测能力的排污单位, 应当委托具备环境监测资质的机构进行监测",
+      "type": "语义分解",
+      "subject": "排污单位",
+      "action": "",
+      "operation": "自行监测或委托有资质机构监测",
+      "condition": "",
+      "constraint": "4.2 各排污单位须按照县级以上环境保护部门的要求和环境监测技术规范。开展排污状况自我监测- 不其备环境监测能力的排污单位, 应当委托具备环境监测资质的机构进行监测",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污单位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 421,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；不具备文字识别异常"
+      ]
+    }
+  }
+}

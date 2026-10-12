@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019526",
+  "entities": [
+    {
+      "name": ") 在源方向工作A 的输出可以连到相关的工作B 输入或相关的NUT 业务",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4) 在源方向工作A 的输出可以连到相关的工作B 输入或相关的NUT 业务，保护A 的输出\n   可以连到本地VC 未装载发生器、额外业务输入、NUT 业务输入或一个工作B 输入。\n5)如果支持非抢占无保护业务( NUT),  选择工作A 带宽和其相应的A 保护通道均可以提供\n   给非抢占无保护通道。其余的A 工作通道仍然可以被A 保护通道保护。选择了非抢占无\n   保护业务的结果是这些通道在环上各处的环倒换均失效。非抢占无保护通道无APS 保护。\n\n    注1: ITU-T  G841 规定保护AU 没有使用时(对额外业务或工作业务)可以发送VC未装载信号，这将",
+      "type": "语义分解",
+      "subject": ") 在源方向工作A 的输出可以连到相关的工作B 输入或相关的NUT 业务",
+      "action": "",
+      "operation": ") 在源方向工作A 的输出可以连到相关的工作B 输入或相关的NUT 业务，保护A 的输出 可以连到本地VC 未装载发生器、额外业务输入、NUT 业务输入或一个工作B 输入。 5)如果支持非抢占无保护业务( NUT), 选择工作A 带宽和其相应的A 保护通道均可以提供 给非抢占无保护通道。其余的A 工作通道仍然可以被A 保护通道保护。选择了非抢占无 保护业务的结果是这些通道在环上各处的环倒换均失效。非抢占无保护通道无APS 保护。 注1: ITU-T G841 规定保护AU 没",
+      "condition": "",
+      "constraint": "4) 在源方向工作A 的输出可以连到相关的工作B 输入或相关的NUT 业务，保护A 的输出\n   可以连到本地VC 未装载发生器、额外业务输入、NUT 业务输入或一个工作B 输入。\n5)如果支持非抢占无保护业务( NUT),  选择工作A 带宽和其相应的A 保护通道均可以提供\n   给非抢占无保护通道。其余的A 工作通道仍然可以被A 保护通道保护。选择了非抢占无\n   保护业务的结果是这些通道在环上各处的环倒换均失效。非抢占无保护通道无APS 保护。\n\n    注1: ITU-T  G841 规定保护AU 没有使用时(对额外业务或工作业务)可以发送VC未装载信号，这将",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") 在源方向工作A 的输出可以连到相关的工作B 输入或相关的NUT 业务"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19526,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

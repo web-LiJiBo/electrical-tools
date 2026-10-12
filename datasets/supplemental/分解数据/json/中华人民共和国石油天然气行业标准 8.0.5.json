@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "8.0.5",
+  "entities": [
+    {
+      "name": "办公链路带宽",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.0.5    链路带宽应根据站点的定员数量估算流量后确定 。  各有\n人值守工艺站场 、  维抢修机构的接入节点与汇聚节点或核心节\n点间的链路带宽不宜小于 10Mbit/s 。",
+      "type": "语义分解",
+      "subject": "办公链路带宽",
+      "action": "",
+      "operation": "按定员估流量有人站场维抢修接入链路宜至少10Mbit/s",
+      "condition": "",
+      "constraint": "8.0.5    链路带宽应根据站点的定员数量估算流量后确定 。  各有\n人值守工艺站场 、  维抢修机构的接入节点与汇聚节点或核心节\n点间的链路带宽不宜小于 10Mbit/s 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "办公链路带宽"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12003,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

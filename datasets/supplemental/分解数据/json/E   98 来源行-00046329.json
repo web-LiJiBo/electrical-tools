@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046329",
+  "entities": [
+    {
+      "name": "E.5.1 每个测点应在同一位置重复测量3～5次，然后取平均 值作为测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E.5.1   每个测点应在同一位置重复测量3～5次，然后取平均\n值作为测试结果。测试结果至少保留至小数点后两位。",
+      "type": "语义分解",
+      "subject": "E.5.1 每个测点应在同一位置重复测量3～5次，然后取平均 值作为测试",
+      "action": "",
+      "operation": "E.5.1 每个测点应在同一位置重复测量3～5次，然后取平均 值作为测试结果。测试结果至少保留至小数点后两位。",
+      "condition": "",
+      "constraint": "E.5.1   每个测点应在同一位置重复测量3～5次，然后取平均\n值作为测试结果。测试结果至少保留至小数点后两位。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E.5.1 每个测点应在同一位置重复测量3～5次，然后取平均 值作为测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46329,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

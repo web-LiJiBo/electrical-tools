@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016861",
+  "entities": [
+    {
+      "name": "c) 通过控制平面为NE1-NE2 之间建立基于ODUk带保护恢复属性的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      c)  通过控制平面为NE1-NE2 之间建立基于ODUk带保护恢复属性的SPC 业务2,其保护恢复方式\n为以下方式之一，保护恢复属性为可返回式，业务2使用 NE4 和 NE3 之间已创建好的波长业务管道一\n业务1:",
+      "type": "语义分解",
+      "subject": "c) 通过控制平面为NE1-NE2 之间建立基于ODUk带保护恢复属性的",
+      "action": "",
+      "operation": "c) 通过控制平面为NE1-NE2 之间建立基于ODUk带保护恢复属性的SPC 业务2,其保护恢复方式 为以下方式之一，保护恢复属性为可返回式，业务2使用 NE4 和 NE3 之间已创建好的波长业务管道一 业务1",
+      "condition": "",
+      "constraint": "      c)  通过控制平面为NE1-NE2 之间建立基于ODUk带保护恢复属性的SPC 业务2,其保护恢复方式\n为以下方式之一，保护恢复属性为可返回式，业务2使用 NE4 和 NE3 之间已创建好的波长业务管道一\n业务1:",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 通过控制平面为NE1-NE2 之间建立基于ODUk带保护恢复属性的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16861,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

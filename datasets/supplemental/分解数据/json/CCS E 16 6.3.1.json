@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "6.3.1",
+  "entities": [
+    {
+      "name": "跨越年度检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1  年度检查应由专业技术人员负责，并应对每个跨越结构制订相应的年度检查计划和实施方案。\n6.3.2   年度检查宜以外观检查为主、调研为辅，并应配备相应的设备仪器。\n6.3.3   年度检查的项目应符合表1的规定。\n6.3.4   场地环境检查应包含下列内容：",
+      "type": "语义分解",
+      "subject": "跨越年度检查",
+      "action": "",
+      "operation": "专业人员计划方案外观调研配仪器按表项目",
+      "condition": "",
+      "constraint": "6.3.1  年度检查应由专业技术人员负责，并应对每个跨越结构制订相应的年度检查计划和实施方案。\n6.3.2   年度检查宜以外观检查为主、调研为辅，并应配备相应的设备仪器。\n6.3.3   年度检查的项目应符合表1的规定。\n6.3.4   场地环境检查应包含下列内容：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "跨越年度检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29795,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表及场地清单缺失"
+      ]
+    }
+  }
+}

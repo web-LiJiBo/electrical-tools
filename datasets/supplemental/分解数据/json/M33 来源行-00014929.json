@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014929",
+  "entities": [
+    {
+      "name": "b) 当 GFP 宿端检测到ODU0 告警(如",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    当 GFP 宿端检测到ODU0 告警(如：ODU0-AIS,ODU0-LCK,ODU0-0CI) 时，应插入IEEE\n   802.3定义的链路故障信号，即重复的/C1/C2/序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/,\n       C2=/K28.5/D2.2/D0.0/D0.0/。",
+      "type": "语义分解",
+      "subject": "b) 当 GFP 宿端检测到ODU0 告警(如",
+      "action": "",
+      "operation": "b) 当 GFP 宿端检测到ODU0 告警(如：ODU0-AIS,ODU0-LCK,ODU0-0CI) 时，应插入IEEE 802.3定义的链路故障信号，即重复的/C1/C2/序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/, C2=/K28.5/D2.2/D0.0/D0.0/。",
+      "condition": "",
+      "constraint": "b)    当 GFP 宿端检测到ODU0 告警(如：ODU0-AIS,ODU0-LCK,ODU0-0CI) 时，应插入IEEE\n   802.3定义的链路故障信号，即重复的/C1/C2/序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/,\n       C2=/K28.5/D2.2/D0.0/D0.0/。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 当 GFP 宿端检测到ODU0 告警(如"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14929,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

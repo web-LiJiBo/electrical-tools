@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.2.5.2",
+  "entities": [
+    {
+      "name": "沼泽湿地干扰区域生态恢复时，应采取局部深挖措施，扩大局部水域面积，增加蓄",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.5.2        沼泽湿地干扰区域生态恢复时，应采取局部深挖措施，扩大局部水域面积，增加蓄水量，修\n筑沟槽，连通各个水域，避免沼泽湿地退化。",
+      "type": "语义分解",
+      "subject": "沼泽湿地干扰区域生态恢复时，应采取局部深挖措施，扩大局部水域面积，增加蓄",
+      "action": "",
+      "operation": "沼泽湿地干扰区域生态恢复时，应采取局部深挖措施，扩大局部水域面积，增加蓄水量，修 筑沟槽，连通各个水域，避免沼泽湿地退化。",
+      "condition": "",
+      "constraint": "6.2.5.2        沼泽湿地干扰区域生态恢复时，应采取局部深挖措施，扩大局部水域面积，增加蓄水量，修\n筑沟槽，连通各个水域，避免沼泽湿地退化。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "沼泽湿地干扰区域生态恢复时，应采取局部深挖措施，扩大局部水域面积，增加蓄"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40723,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

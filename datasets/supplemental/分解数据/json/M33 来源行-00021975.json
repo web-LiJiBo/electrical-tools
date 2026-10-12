@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021975",
+  "entities": [
+    {
+      "name": "——RSOH 中国内使用字节和将来国际标准备用字节既可以接力传送也可以产",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——RSOH 中国内使用字节和将来国际标准备用字节既可以接力传送也可以产生。\n当 RSn_CI_SSF 激活时(也就是帧同步丢失):\n——A1、A2、JO 和 Z0;\n——产 生B1;",
+      "type": "语义分解",
+      "subject": "——RSOH 中国内使用字节和将来国际标准备用字节既可以接力传送也可以产",
+      "action": "",
+      "operation": "——RSOH 中国内使用字节和将来国际标准备用字节既可以接力传送也可以产生。 当 RSn_CI_SSF 激活时(也就是帧同步丢失): ——A1、A2、JO 和 Z0; ——产 生B1",
+      "condition": "",
+      "constraint": "——RSOH 中国内使用字节和将来国际标准备用字节既可以接力传送也可以产生。\n当 RSn_CI_SSF 激活时(也就是帧同步丢失):\n——A1、A2、JO 和 Z0;\n——产 生B1;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——RSOH 中国内使用字节和将来国际标准备用字节既可以接力传送也可以产"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21975,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

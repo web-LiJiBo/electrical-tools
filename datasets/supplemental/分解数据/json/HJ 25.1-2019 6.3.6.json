@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.3.6",
+  "entities": [
+    {
+      "name": "现场采样防污染",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.6 其他注意事项 现场采样时 ,应避免采样设备及外部环境等因素污染样品 ,采取必要措施避免污染物在环境中扩散。现场采样的具体要求参照 HJ25.2。",
+      "type": "语义分解",
+      "subject": "现场采样防污染",
+      "action": "",
+      "operation": "避免设备环境污染样品及污染扩散",
+      "condition": "现场采样时",
+      "constraint": "6.3.6 其他注意事项 现场采样时 ,应避免采样设备及外部环境等因素污染样品 ,采取必要措施避免污染物在环境中扩散。现场采样的具体要求参照 HJ25.2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场采样防污染"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2658,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

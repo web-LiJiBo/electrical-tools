@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "10",
+  "entities": [
+    {
+      "name": "能量隔离实施完成后,应进行隔离有效性确认,确定现场按照隔离方案实施,电气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10 能量隔离实施完成后,应进行隔离有效性确认,确定现场按照隔离方案实施,电气隔离应进行现场启动试验、验电等验证。能量隔离解除前,应由专人进行解除前确认,确保作业已执行,设备及工具已处于安全状态,所有人员离开,具备解除隔离条件。",
+      "type": "语义分解",
+      "subject": "能量隔离实施完成后,应进行隔离有效性确认,确定现场按照隔离方案实施,电气",
+      "action": "",
+      "operation": "能量隔离实施完成后,应进行隔离有效性确认,确定现场按照隔离方案实施,电气隔离应进行现场启动试验、验电等验证。能量隔离解除前,应由专人进行解除前确认,确保作业已执行,设备及工具已处于安全状态,所有人员离开,具备解除隔离条件。",
+      "condition": "",
+      "constraint": "10 能量隔离实施完成后,应进行隔离有效性确认,确定现场按照隔离方案实施,电气隔离应进行现场启动试验、验电等验证。能量隔离解除前,应由专人进行解除前确认,确保作业已执行,设备及工具已处于安全状态,所有人员离开,具备解除隔离条件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能量隔离实施完成后,应进行隔离有效性确认,确定现场按照隔离方案实施,电气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6619,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

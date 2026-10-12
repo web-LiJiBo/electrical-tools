@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "6.3.5",
+  "entities": [
+    {
+      "name": "生态影响为主的建设项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5 对以生态影响为主的建设项目, 应预测生态系统组成和服务功能的变化趋势,重点分析项目建 设和生产运行对环境保护目标的影响。",
+      "type": "语义分解",
+      "subject": "生态影响为主的建设项目",
+      "action": "",
+      "operation": "预测生态服务变化及保护目标影响",
+      "condition": "对以生态影响为主的建设项目",
+      "constraint": "6.3.5 对以生态影响为主的建设项目, 应预测生态系统组成和服务功能的变化趋势,重点分析项目建 设和生产运行对环境保护目标的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态影响为主的建设项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2579,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

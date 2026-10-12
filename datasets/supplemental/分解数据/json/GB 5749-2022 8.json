@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水卫生标准",
+  "standard_id": "GB 5749-2022",
+  "version": "2022",
+  "chapter_path": "8",
+  "entities": [
+    {
+      "name": "涉及饮用水卫生安全的产品卫生要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8 涉及饮用水卫生安全的产品卫生要求",
+      "type": "语义分解",
+      "subject": "涉及饮用水卫生安全的产品卫生要求",
+      "action": "",
+      "operation": "涉及饮用水卫生安全的产品卫生要求",
+      "condition": "",
+      "constraint": "8 涉及饮用水卫生安全的产品卫生要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "涉及饮用水卫生安全的产品卫生要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 986,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.4.5",
+  "entities": [
+    {
+      "name": "高层通信楼地网与垂直接地汇集线连接的接地引人线应 采用截面积不小于240",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.4.5      高层通信楼地网与垂直接地汇集线连接的接地引人线应\n采用截面积不小于240mm²的多股铜线，并应从地网的两个不同\n方向引接。",
+      "type": "语义分解",
+      "subject": "高层通信楼地网与垂直接地汇集线连接的接地引人线应 采用截面积不小于240",
+      "action": "",
+      "operation": "高层通信楼地网与垂直接地汇集线连接的接地引人线应 采用截面积不小于240mm²的多股铜线，并应从地网的两个不同 方向引接。",
+      "condition": "",
+      "constraint": "3.4.5      高层通信楼地网与垂直接地汇集线连接的接地引人线应\n采用截面积不小于240mm²的多股铜线，并应从地网的两个不同\n方向引接。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高层通信楼地网与垂直接地汇集线连接的接地引人线应 采用截面积不小于240"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22397,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水卫生标准",
+  "standard_id": "GB 5749-2022",
+  "version": "2022",
+  "chapter_path": "8.2",
+  "entities": [
+    {
+      "name": "输配水防护及水处理材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2 生活饮用水的输配水设备防护材料和水处理材料不应污染生活饮用水 ,应符合 GB/I 17219 1998中第3章的规定。",
+      "type": "语义分解",
+      "subject": "输配水防护及水处理材料",
+      "action": "",
+      "operation": "不污染饮用水并符合引用标准",
+      "condition": "",
+      "constraint": "8.2 生活饮用水的输配水设备防护材料和水处理材料不应污染生活饮用水 ,应符合 GB/I 17219 1998中第3章的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输配水防护及水处理材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 988,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；GB/I编号识别异常"
+      ]
+    }
+  }
+}

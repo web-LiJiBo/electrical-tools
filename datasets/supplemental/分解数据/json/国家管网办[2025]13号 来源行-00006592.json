@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全风险分级管控与隐患排查治理管理规定",
+  "standard_id": "国家管网办[2025]13号",
+  "version": "",
+  "chapter_path": "来源行-00006592",
+  "entities": [
+    {
+      "name": "第二十八条 对于重大隐患,能够立即排除的,企业应当立即排除",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十八条 对于重大隐患,能够立即排除的,企业应当立即排除;不能立即排除的,应当及时组织制定并实施重大事故隐患治理方案,在规定期限内排除。重大隐患排查治理情况应当及时向负有安全生产监督管理职责的部门和职工大会或者职工代表大会报告。",
+      "type": "语义分解",
+      "subject": "第二十八条 对于重大隐患,能够立即排除的,企业应当立即排除",
+      "action": "",
+      "operation": "第二十八条 对于重大隐患,能够立即排除的,企业应当立即排除;不能立即排除的,应当及时组织制定并实施重大事故隐患治理方案,在规定期限内排除。重大隐患排查治理情况应当及时向负有安全生产监督管理职责的部门和职工大会或者职工代表大会报告。",
+      "condition": "",
+      "constraint": "第二十八条 对于重大隐患,能够立即排除的,企业应当立即排除;不能立即排除的,应当及时组织制定并实施重大事故隐患治理方案,在规定期限内排除。重大隐患排查治理情况应当及时向负有安全生产监督管理职责的部门和职工大会或者职工代表大会报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十八条 对于重大隐患,能够立即排除的,企业应当立即排除"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6592,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

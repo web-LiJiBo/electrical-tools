@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "5",
+  "entities": [
+    {
+      "name": "总体配备要求 危险化学品单位结应结合单位或辖区内典型事故及其他特殊处置场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5 总体配备要求 危险化学品单位结应结合单位或辖区内典型事故及其他特殊处置场景需求 ,选择增配应急救援物资的种类和数量以及本文件中未列出的新型装备。",
+      "type": "语义分解",
+      "subject": "总体配备要求 危险化学品单位结应结合单位或辖区内典型事故及其他特殊处置场",
+      "action": "",
+      "operation": "总体配备要求 危险化学品单位结应结合单位或辖区内典型事故及其他特殊处置场景需求 ,选择增配应急救援物资的种类和数量以及本文件中未列出的新型装备。",
+      "condition": "",
+      "constraint": "5 总体配备要求 危险化学品单位结应结合单位或辖区内典型事故及其他特殊处置场景需求 ,选择增配应急救援物资的种类和数量以及本文件中未列出的新型装备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总体配备要求 危险化学品单位结应结合单位或辖区内典型事故及其他特殊处置场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3803,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

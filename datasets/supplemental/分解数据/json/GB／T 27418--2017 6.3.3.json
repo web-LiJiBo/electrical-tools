@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "包含概率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 建议书 IVC-I(1980 )中并没有规定如何建立k和b的关系。这个问题在附录E中论述 ,在 E.4 中给出的建议是采用近似的方法 ,并在 E.6.4中作了扼要总结。在E.6.6中讨论了一种较简便的方法 , 适用于当y 和 u(y ) 所表征的概率分布近似为正态分布 ,且 U(y )的有效自由度较大时的测量情况。 实际经常发生这种情况 ,可设 R=2 ,所形成的区间具有的包含概率约为 95 % ,设R=3所形成的区间具 有的包含概率约为 99 % _ 注:在E.4巾给出了估计 u.(y)的有效自由度的方法。 附录E巾的表E.2可用于帮助判断这种方法是否适用于特 定的测量(见E.6.6)。",
+      "type": "语义分解",
+      "subject": "包含概率",
+      "action": "",
+      "operation": "以近似正态分布示例选择包含因子",
+      "condition": "概率分布近似为正态分布",
+      "constraint": "",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包含概率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "符号R及自由度需核实；2和3对应概率仅在特定假设下成立"
+      ]
+    }
+  }
+}

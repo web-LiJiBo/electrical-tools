@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "4.2.3",
+  "entities": [
+    {
+      "name": "危化库房地面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3 危险化学品库房应防潮 ,平整 坚实 易于清扫。 可能释放可燃性气体或蒸气 ,在空气中能形成粉尘 ,纤维等爆炸性混合物的危险化学品库房应采用不发生火花的地面= 储存腐蚀性危险化学品的库房的地面 .踢脚应采取防腐材料=",
+      "type": "语义分解",
+      "subject": "危化库房地面",
+      "action": "",
+      "operation": "防潮平整坚实可清扫爆炸混合风险不生火花腐蚀介质防腐材料",
+      "condition": "",
+      "constraint": "4.2.3 危险化学品库房应防潮 ,平整 坚实 易于清扫。 可能释放可燃性气体或蒸气 ,在空气中能形成粉尘 ,纤维等爆炸性混合物的危险化学品库房应采用不发生火花的地面= 储存腐蚀性危险化学品的库房的地面 .踢脚应采取防腐材料=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化库房地面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3757,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

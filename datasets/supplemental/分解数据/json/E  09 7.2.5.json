@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "7.2.5",
+  "entities": [
+    {
+      "name": "救援站位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5   救援人员不得在泄漏区域的下水道或地下空间的顶部、井口处、储罐两端等处滞留。",
+      "type": "语义分解",
+      "subject": "救援站位",
+      "action": "",
+      "operation": "不滞留泄漏地下顶部井口罐两端",
+      "condition": "",
+      "constraint": "7.2.5   救援人员不得在泄漏区域的下水道或地下空间的顶部、井口处、储罐两端等处滞留。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "救援站位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28988,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

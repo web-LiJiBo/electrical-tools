@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "6.3.1.1",
+  "entities": [
+    {
+      "name": "事故信息接报",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1.1 信息接报 明确应急值守电话、事故信息接收内部通报程序、方式和责任人，向上级主管部门、上级单位报告事故信息的流程、内容、时限和责任人，以及向本单位以外的有关部门或单位通报事故信息的方法、程序和责任人。",
+      "type": "语义分解",
+      "subject": "事故信息接报",
+      "action": "",
+      "operation": "明确值守电话内部通报上报及对外通报流程方式内容时限责任人",
+      "condition": "",
+      "constraint": "6.3.1.1 信息接报 明确应急值守电话、事故信息接收内部通报程序、方式和责任人，向上级主管部门、上级单位报告事故信息的流程、内容、时限和责任人，以及向本单位以外的有关部门或单位通报事故信息的方法、程序和责任人。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故信息接报"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4160,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -26,12 +26,13 @@ dataset_paths:
     test: "datasets/lunwen/output_jsons_new/test"
   # 已以2017.xlsx第一列条款对编号逐条校核；工具主流程优先读取本目录。
   decomposed_json_verified: "datasets/lunwen/verified_json/json"
+  # 独立存放，运行时并入检索，不复制或覆盖原标准JSON。
+  supplemental_json: "datasets/supplemental/分解数据/json"
   correction_mapping: "datasets/lunwen/verified_json/修正对照表.xlsx"
 
 safety:
   reject_on_missing_evidence: true
   reject_on_unparsed_rule: true
-  human_confirmation_for_control: true
 
 retrieval:
   primary_backend: lunwen_entity_rule_pipeline
@@ -104,9 +105,14 @@ feedback:
   monitor_metrics: [acceptance_rate, average_rating, average_latency_ms, error_distribution]
 
 instruction:
+  # 流程仅到指令生成，无确认、执行或设备状态更新。
   protocols: [IEC61850, Modbus]
   validation_layers: [semantic, protocol, logic]
-  direct_device_dispatch_enabled: false
+  generation_only: true
+
+llm_advice:
+  enabled: true
+  # 复用llm_decomposition的DeepSeek或本地Qwen；检索后额外调用一次。
 
 audit:
   store: "data/audit/audit.jsonl"

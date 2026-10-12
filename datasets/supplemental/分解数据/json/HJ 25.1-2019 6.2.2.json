@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "详细采样方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 制定采样方案 根据初步采样分析的结果。结合地块分区,制定采样方案。应采用系统布点法加密布设采样点。对于需要划定污染边界范围的区域。采样单元面积不大于 1600 m (40 mx40 m 网格)。垂直方向采样深度和间隔根据初步采样的结果判断_",
+      "type": "语义分解",
+      "subject": "详细采样方案",
+      "action": "",
+      "operation": "依分区系统加密划边界网格最大四十乘四十米垂向依初步结果",
+      "condition": "",
+      "constraint": "6.2.2 制定采样方案 根据初步采样分析的结果。结合地块分区,制定采样方案。应采用系统布点法加密布设采样点。对于需要划定污染边界范围的区域。采样单元面积不大于 1600 m (40 mx40 m 网格)。垂直方向采样深度和间隔根据初步采样的结果判断_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "详细采样方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2643,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；面积单位缺平方需复核"
+      ]
+    }
+  }
+}

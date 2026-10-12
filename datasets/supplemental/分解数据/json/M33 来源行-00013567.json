@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013567",
+  "entities": [
+    {
+      "name": "OTU子层网络通过OTU 路径实现客户信号ODU在OTN 网络3R 再生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTU子层网络通过OTU 路径实现客户信号ODU在OTN 网络3R 再生点之间的传送。其特征信息\n包括传送ODU 客户信号的OTU 净荷区和传送关联开销的OTU 开销区，均为逻辑信号。若OTUCn的\n比特速率不是100Gbit/s的整数倍时，被描述为OTUCn-M 。OTUCn-M 携带 n 个 OTUC 开销、ODUC\n开销、OPUC开销，以及M个 5Gbit/s OPUCn 时隙。ODUCn-M和 OPUCn-M目前没有定义。当OTUCn-M\n用来携带ODUCn时，由于(20n-M) 个时隙不能用来携带客户信号，这些时隙在OPUCn 的 MSI中被",
+      "type": "语义分解",
+      "subject": "OTU子层网络通过OTU 路径实现客户信号ODU在OTN 网络3R 再生",
+      "action": "",
+      "operation": "OTU子层网络通过OTU 路径实现客户信号ODU在OTN 网络3R 再生点之间的传送。其特征信息 包括传送ODU 客户信号的OTU 净荷区和传送关联开销的OTU 开销区，均为逻辑信号。若OTUCn的 比特速率不是100Gbit/s的整数倍时，被描述为OTUCn-M 。OTUCn-M 携带 n 个 OTUC 开销、ODUC 开销、OPUC开销，以及M个 5Gbit/s OPUCn 时隙。ODUCn-M和 OPUCn-M目前没有定义。当OTUCn-M 用来携带ODUCn时，由于(",
+      "condition": "",
+      "constraint": "      OTU子层网络通过OTU 路径实现客户信号ODU在OTN 网络3R 再生点之间的传送。其特征信息\n包括传送ODU 客户信号的OTU 净荷区和传送关联开销的OTU 开销区，均为逻辑信号。若OTUCn的\n比特速率不是100Gbit/s的整数倍时，被描述为OTUCn-M 。OTUCn-M 携带 n 个 OTUC 开销、ODUC\n开销、OPUC开销，以及M个 5Gbit/s OPUCn 时隙。ODUCn-M和 OPUCn-M目前没有定义。当OTUCn-M\n用来携带ODUCn时，由于(20n-M) 个时隙不能用来携带客户信号，这些时隙在OPUCn 的 MSI中被",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTU子层网络通过OTU 路径实现客户信号ODU在OTN 网络3R 再生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13567,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

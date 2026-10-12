@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021269",
+  "entities": [
+    {
+      "name": "Sm/Pqx_A或Sm/Pqs_A( m=12, q=12) 工作于同步",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      Sm/Pqx_A或Sm/Pqs_A(  m=12,  q=12)  工作于同步网络或子网络的接入口，适配用户数据以便在\n同步域中传送。Sm/Pqx_A或Sm/Pqs_A 功能也起净荷信息相关的POH 源和宿的作用。对于异步用户数\n据 ，通道适配还包括比特调整。Sm/Pqx_A 或Sm/Pqs_A 功能把符合ITU-T G.703PDH 要求的信号映射\n至VC-m容器，随后把它映射至高阶容器。适配功能是针对现有准同步体系速率等级确定的，容器的规\n\n模是按便于把各种准同步信号映射进C-m容器而选定的，见表110。",
+      "type": "语义分解",
+      "subject": "Sm/Pqx_A或Sm/Pqs_A( m=12, q=12) 工作于同步",
+      "action": "",
+      "operation": "Sm/Pqx_A或Sm/Pqs_A( m=12, q=12) 工作于同步网络或子网络的接入口，适配用户数据以便在 同步域中传送。Sm/Pqx_A或Sm/Pqs_A 功能也起净荷信息相关的POH 源和宿的作用。对于异步用户数 据 ，通道适配还包括比特调整。Sm/Pqx_A 或Sm/Pqs_A 功能把符合ITU-T G.703PDH 要求的信号映射 至VC-m容器，随后把它映射至高阶容器。适配功能是针对现有准同步体系速率等级确定的，容器的规 模是按便于把各种准同步信号映射进C-m",
+      "condition": "",
+      "constraint": "      Sm/Pqx_A或Sm/Pqs_A(  m=12,  q=12)  工作于同步网络或子网络的接入口，适配用户数据以便在\n同步域中传送。Sm/Pqx_A或Sm/Pqs_A 功能也起净荷信息相关的POH 源和宿的作用。对于异步用户数\n据 ，通道适配还包括比特调整。Sm/Pqx_A 或Sm/Pqs_A 功能把符合ITU-T G.703PDH 要求的信号映射\n至VC-m容器，随后把它映射至高阶容器。适配功能是针对现有准同步体系速率等级确定的，容器的规\n\n模是按便于把各种准同步信号映射进C-m容器而选定的，见表110。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Sm/Pqx_A或Sm/Pqs_A( m=12, q=12) 工作于同步"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21269,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

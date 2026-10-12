@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00049985",
+  "entities": [
+    {
+      "name": "耐化学介质腐蚀指标为试验后的拉伸强度和断裂标称应变的保持率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2    耐化学介质腐蚀指标为试验后的拉伸强度和断裂标称应变的保持率。\n3  搭接剪切强度试验试件采用产品胶层厚度，试验拉伸速度为10mm/min。\n4  试件为胶，试件规格50mm×50mm×   胶层厚度，且不含基材。",
+      "type": "语义分解",
+      "subject": "耐化学介质腐蚀指标为试验后的拉伸强度和断裂标称应变的保持率",
+      "action": "",
+      "operation": "耐化学介质腐蚀指标为试验后的拉伸强度和断裂标称应变的保持率。 3 搭接剪切强度试验试件采用产品胶层厚度，试验拉伸速度为10mm/min。 4 试件为胶，试件规格50mm×50mm× 胶层厚度，且不含基材。",
+      "condition": "",
+      "constraint": "2    耐化学介质腐蚀指标为试验后的拉伸强度和断裂标称应变的保持率。\n3  搭接剪切强度试验试件采用产品胶层厚度，试验拉伸速度为10mm/min。\n4  试件为胶，试件规格50mm×50mm×   胶层厚度，且不含基材。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "耐化学介质腐蚀指标为试验后的拉伸强度和断裂标称应变的保持率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49985,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

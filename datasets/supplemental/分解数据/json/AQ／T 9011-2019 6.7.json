@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案评估指南",
+  "standard_id": "AQ/T 9011-2019",
+  "version": "2019",
+  "chapter_path": "6.7",
+  "entities": [
+    {
+      "name": "其他评估因素",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7 其他 其他可能对应急预案内容的适用性产生影响的因素",
+      "type": "语义分解",
+      "subject": "其他评估因素",
+      "action": "",
+      "operation": "考虑影响预案适用性的其他因素",
+      "condition": "",
+      "constraint": "6.7 其他 其他可能对应急预案内容的适用性产生影响的因素",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他评估因素"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5414,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

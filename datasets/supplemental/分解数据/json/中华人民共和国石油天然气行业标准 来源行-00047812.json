@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047812",
+  "entities": [
+    {
+      "name": "当高压直流接地极干扰引起的管道管地电位正偏移的放电 年累计时间占全年时间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   当高压直流接地极干扰引起的管道管地电位正偏移的放电\n年累计时间占全年时间占比小，腐蚀速率不超过0.1mm/a,  但干\n扰电压高时，还应对管道系统设备设施的损毁或失效、管道防\n腐层的剥离或烧蚀等危害进行分析。",
+      "type": "语义分解",
+      "subject": "当高压直流接地极干扰引起的管道管地电位正偏移的放电 年累计时间占全年时间",
+      "action": "",
+      "operation": "当高压直流接地极干扰引起的管道管地电位正偏移的放电 年累计时间占全年时间占比小，腐蚀速率不超过0.1mm/a, 但干 扰电压高时，还应对管道系统设备设施的损毁或失效、管道防 腐层的剥离或烧蚀等危害进行分析。",
+      "condition": "",
+      "constraint": "   当高压直流接地极干扰引起的管道管地电位正偏移的放电\n年累计时间占全年时间占比小，腐蚀速率不超过0.1mm/a,  但干\n扰电压高时，还应对管道系统设备设施的损毁或失效、管道防\n腐层的剥离或烧蚀等危害进行分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当高压直流接地极干扰引起的管道管地电位正偏移的放电 年累计时间占全年时间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47812,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

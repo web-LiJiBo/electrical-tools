@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011036",
+  "entities": [
+    {
+      "name": "x 表明本应用代码所支持的最大跨段数目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "x 表明本应用代码所支持的最大跨段数目。\ny 表明单通路光信号所支持的最高速率：\n    — — 1表示NRZ    2.5G;\n    — — 2表示 NRZ   10G;\n    — — 3表示NRZ   40G;\n    — — 7表示 RZ  40G。\nt 表示功率等级：",
+      "type": "语义分解",
+      "subject": "x 表明本应用代码所支持的最大跨段数目",
+      "action": "",
+      "operation": "x 表明本应用代码所支持的最大跨段数目。 y 表明单通路光信号所支持的最高速率： — — 1表示NRZ 2.5G; — — 2表示 NRZ 10G; — — 3表示NRZ 40G; — — 7表示 RZ 40G。 t 表示功率等级",
+      "condition": "",
+      "constraint": "x 表明本应用代码所支持的最大跨段数目。\ny 表明单通路光信号所支持的最高速率：\n    — — 1表示NRZ    2.5G;\n    — — 2表示 NRZ   10G;\n    — — 3表示NRZ   40G;\n    — — 7表示 RZ  40G。\nt 表示功率等级：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "x 表明本应用代码所支持的最大跨段数目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11036,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

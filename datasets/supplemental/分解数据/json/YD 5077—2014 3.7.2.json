@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.7.2",
+  "entities": [
+    {
+      "name": "交直流电源通信光纤分隔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7.2      交、直流电源的电力电缆，应分走道或槽道布放；电力电缆\n与通信线缆应分走道或槽道布放，光尾纤与中继缆线应分槽布放。\n各种缆线间距离应符合工程设计要求，若在同一走道、槽道或交叉\n布放，间距应大于50mm。",
+      "type": "语义分解",
+      "subject": "交直流电源通信光纤分隔",
+      "action": "",
+      "operation": "交直流与通信分走槽光尾纤中继分槽同槽交叉间距大于50毫米",
+      "condition": "",
+      "constraint": "3.7.2      交、直流电源的电力电缆，应分走道或槽道布放；电力电缆\n与通信线缆应分走道或槽道布放，光尾纤与中继缆线应分槽布放。\n各种缆线间距离应符合工程设计要求，若在同一走道、槽道或交叉\n布放，间距应大于50mm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交直流电源通信光纤分隔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26725,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

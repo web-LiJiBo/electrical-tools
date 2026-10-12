@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040293",
+  "entities": [
+    {
+      "name": "《一般工业固体废物贮存、处置场污染控制标准》GB 18599 《电离辐射",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "《一般工业固体废物贮存、处置场污染控制标准》GB  18599\n《电离辐射防护与辐射源安全基本标准》GB  18871\n《污水排入城镇下水道水质标准》GB/T   31962\n《工业企业噪声测量规范》GBJ  122\n《工业企业设计卫生标准》GBZ1",
+      "type": "语义分解",
+      "subject": "《一般工业固体废物贮存、处置场污染控制标准》GB 18599 《电离辐射",
+      "action": "",
+      "operation": "《一般工业固体废物贮存、处置场污染控制标准》GB 18599 《电离辐射防护与辐射源安全基本标准》GB 18871 《污水排入城镇下水道水质标准》GB/T 31962 《工业企业噪声测量规范》GBJ 122 《工业企业设计卫生标准》GBZ1",
+      "condition": "",
+      "constraint": "《一般工业固体废物贮存、处置场污染控制标准》GB  18599\n《电离辐射防护与辐射源安全基本标准》GB  18871\n《污水排入城镇下水道水质标准》GB/T   31962\n《工业企业噪声测量规范》GBJ  122\n《工业企业设计卫生标准》GBZ1",
+      "constraint_role": "informational",
+      "related_entities": [
+        "《一般工业固体废物贮存、处置场污染控制标准》GB 18599 《电离辐射"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40293,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "7.3.1",
+  "entities": [
+    {
+      "name": "固网混合放号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1      固网智能化用户编号主要指混合放号的编号方式。\n7.3.2      混合放号主要支持以下两种编号方案：\n       1.  逻辑号码与地址号码的混合编号。",
+      "type": "语义分解",
+      "subject": "固网混合放号",
+      "action": "",
+      "operation": "包含逻辑与地址号码混编",
+      "condition": "",
+      "constraint": "7.3.1      固网智能化用户编号主要指混合放号的编号方式。\n7.3.2      混合放号主要支持以下两种编号方案：\n       1.  逻辑号码与地址号码的混合编号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固网混合放号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25969,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原称两方案仅含第一方案"
+      ]
+    }
+  }
+}

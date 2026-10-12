@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023279",
+  "entities": [
+    {
+      "name": "宽带接入点用户单元的设备是目前受雷害影响较为严重 的一类设备，经常在雷雨",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1        宽带接入点用户单元的设备是目前受雷害影响较为严重\n的一类设备，经常在雷雨天气出现大面积损坏的情况， 一个重要的\n原因就是这些设备未接地。这些未接地的设备即使加装有防雷器\n也无法有效地起到保护作用。",
+      "type": "语义分解",
+      "subject": "宽带接入点用户单元的设备是目前受雷害影响较为严重 的一类设备，经常在雷雨",
+      "action": "",
+      "operation": "宽带接入点用户单元的设备是目前受雷害影响较为严重 的一类设备，经常在雷雨天气出现大面积损坏的情况， 一个重要的 原因就是这些设备未接地。这些未接地的设备即使加装有防雷器 也无法有效地起到保护作用。",
+      "condition": "",
+      "constraint": "5.3.1        宽带接入点用户单元的设备是目前受雷害影响较为严重\n的一类设备，经常在雷雨天气出现大面积损坏的情况， 一个重要的\n原因就是这些设备未接地。这些未接地的设备即使加装有防雷器\n也无法有效地起到保护作用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宽带接入点用户单元的设备是目前受雷害影响较为严重 的一类设备，经常在雷雨"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23279,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

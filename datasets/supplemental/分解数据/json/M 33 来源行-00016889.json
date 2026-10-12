@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016889",
+  "entities": [
+    {
+      "name": "PM-TTI 为通道监视路径踪迹标识，PM 采用1字节通过复帧来传送64",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      PM-TTI 为通道监视路径踪迹标识，PM 采用1字节通过复帧来传送64字节长度的TTI 。PM-BDI\n\n为通道监视后向缺陷指示，采用单个比特来传送在上游方向段终结宿功能处检测到的信号失效状态。\nB.1.1.2     测试配置",
+      "type": "语义分解",
+      "subject": "PM-TTI 为通道监视路径踪迹标识，PM 采用1字节通过复帧来传送64",
+      "action": "",
+      "operation": "PM-TTI 为通道监视路径踪迹标识，PM 采用1字节通过复帧来传送64字节长度的TTI 。PM-BDI 为通道监视后向缺陷指示，采用单个比特来传送在上游方向段终结宿功能处检测到的信号失效状态。 B.1.1.2 测试配置",
+      "condition": "",
+      "constraint": "      PM-TTI 为通道监视路径踪迹标识，PM 采用1字节通过复帧来传送64字节长度的TTI 。PM-BDI\n\n为通道监视后向缺陷指示，采用单个比特来传送在上游方向段终结宿功能处检测到的信号失效状态。\nB.1.1.2     测试配置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "PM-TTI 为通道监视路径踪迹标识，PM 采用1字节通过复帧来传送64"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16889,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

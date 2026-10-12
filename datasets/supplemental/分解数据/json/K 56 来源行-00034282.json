@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034282",
+  "entities": [
+    {
+      "name": "进入设备的硫将在燃烧过程中被氧化形成二氧化硫 so2 及少量三氧化硫 s",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      进入设备的硫将在燃烧过程中被氧化形成二氧化硫 so2  及少量三氧化硫 so3 。因此 , 燃料的硫含量\n影响燃气轮机 sox   的排放。  如本标准所述 , 在确定排放量中把 sox  作为 so2  处置 , 用于所使用的计算\n怯 。两种氧化物(so2  和 so3)之和称为 sox 。在有催化剂或催化反应物质存在的情况下 , 把 so2  转换为\nso3 。so3  溶解于水蒸气中形成硫酸。",
+      "type": "语义分解",
+      "subject": "进入设备的硫将在燃烧过程中被氧化形成二氧化硫 so2 及少量三氧化硫 s",
+      "action": "",
+      "operation": "进入设备的硫将在燃烧过程中被氧化形成二氧化硫 so2 及少量三氧化硫 so3 。因此 , 燃料的硫含量 影响燃气轮机 sox 的排放。 如本标准所述 , 在确定排放量中把 sox 作为 so2 处置 , 用于所使用的计算 怯 。两种氧化物(so2 和 so3)之和称为 sox 。在有催化剂或催化反应物质存在的情况下 , 把 so2 转换为 so3 。so3 溶解于水蒸气中形成硫酸。",
+      "condition": "",
+      "constraint": "      进入设备的硫将在燃烧过程中被氧化形成二氧化硫 so2  及少量三氧化硫 so3 。因此 , 燃料的硫含量\n影响燃气轮机 sox   的排放。  如本标准所述 , 在确定排放量中把 sox  作为 so2  处置 , 用于所使用的计算\n怯 。两种氧化物(so2  和 so3)之和称为 sox 。在有催化剂或催化反应物质存在的情况下 , 把 so2  转换为\nso3 。so3  溶解于水蒸气中形成硫酸。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "进入设备的硫将在燃烧过程中被氧化形成二氧化硫 so2 及少量三氧化硫 s"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34282,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

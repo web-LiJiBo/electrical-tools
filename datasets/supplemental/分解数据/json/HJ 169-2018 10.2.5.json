@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "10.2.5",
+  "entities": [
+    {
+      "name": "改扩建技术改造项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.2.5 对于改建,扩建和技术改造项目,应分析依托企业现有环境风险防范措施的有效性,提出完善意见和建议。",
+      "type": "语义分解",
+      "subject": "改扩建技术改造项目",
+      "action": "",
+      "operation": "分析既有防范措施有效性提出完善意见",
+      "condition": "对于改建,扩建和技术改造项目",
+      "constraint": "10.2.5 对于改建,扩建和技术改造项目,应分析依托企业现有环境风险防范措施的有效性,提出完善意见和建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "改扩建技术改造项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2520,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

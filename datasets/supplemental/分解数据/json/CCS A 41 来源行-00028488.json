@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028488",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "D(界定)\t   ●      组织战略及战略展开\n   ●      VOC(包括潜在需求分析)\n   ●      顾客投诉\n   ●      质保 、返修数据\n   ●      组织的平衡记分卡\n   ●      组织 KPI及其分解\n   ●      竞争对手比较\t   ●      确定改进机会\n   ●      确定团队\n   ●       问题描述\n   ●      确定问题边界\n   ●      绘制流程图\n   ●      确定顾客和关键需求特性\n   ●      制定团队项目任务书 和 团 队\n       工作计划\t   ●      改进机会\n   ●      项 目 目标\n   ●       团队和团队任务书\n   ●      SIPOC 图\n   ●      关键质量 特 征 和 顾 客 的 关 键\n       需求\n   ●      项目计划",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "D(界定)\t   ●      组织战略及战略展开\n   ●      VOC(包括潜在需求分析)\n   ●      顾客投诉\n   ●      质保 、返修数据\n   ●      组织的平衡记分卡\n   ●      组织 KPI及其分解\n   ●      竞争对手比较\t   ●      确定改进机会\n   ●      确定团队\n   ●       问题描述\n   ●      确定问题边界\n   ●      绘制流程图\n   ●      确定顾客和关键需求特性\n   ●      制定团队项目任务书 和 团 队\n       工作计划\t   ●      改进机会\n   ●      项 目 目标\n   ●       团队和团队任务书\n   ●      SIPOC 图\n   ●      关键质量 特 征 和 顾 客 的 关 键\n       需求\n   ●      项目计划",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28488,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

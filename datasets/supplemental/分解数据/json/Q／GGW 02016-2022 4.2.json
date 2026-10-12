@@ -1,0 +1,39 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "综合能耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 输原油业务。输成品油业务。输天然气业务 LNG 接收站业务 基地矿区及其他业务综合能耗计算范围按照附录 A 界定。",
+      "type": "语义分解",
+      "subject": "综合能耗",
+      "action": "",
+      "operation": "界定业务计算范围",
+      "condition": "",
+      "constraint": "按照附录 A 界定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "综合能耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行缺附录A"
+      ]
+    }
+  }
+}

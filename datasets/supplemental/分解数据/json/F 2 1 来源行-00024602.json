@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024602",
+  "entities": [
+    {
+      "name": "c) 调度台 1 按保持键，对本次通话进行保持，查看通话状态",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    调度台 1 按保持键，对本次通话进行保持，查看通话状态；\nd)    调度台 1 按恢复键，对本次通话进行恢复，查看通话状态。",
+      "type": "语义分解",
+      "subject": "c) 调度台 1 按保持键，对本次通话进行保持，查看通话状态",
+      "action": "",
+      "operation": "c) 调度台 1 按保持键，对本次通话进行保持，查看通话状态； d) 调度台 1 按恢复键，对本次通话进行恢复，查看通话状态。",
+      "condition": "",
+      "constraint": "c)    调度台 1 按保持键，对本次通话进行保持，查看通话状态；\nd)    调度台 1 按恢复键，对本次通话进行恢复，查看通话状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 调度台 1 按保持键，对本次通话进行保持，查看通话状态"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24602,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

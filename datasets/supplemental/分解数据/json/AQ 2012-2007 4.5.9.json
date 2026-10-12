@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.5.9",
+  "entities": [
+    {
+      "name": "含硫油气生产处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.9 含硫化氢油气生产和气体处理作业,应符合以下安全要求: 作业人员进入有泄漏的油气井区,气井区,污水区及其他硫化氢易于积聚的区域时 ,以及进入天然气净化厂的脱硫,再生,硫回收,排污放空区进行检修和抢险时 ,应携带正压式空气呼吸器; 应对天然气处理装置的腐蚀进行监测和控制 ,对可能的硫化氢泄漏进行检测 ,制定硫化氢防护措施。",
+      "type": "语义分解",
+      "subject": "含硫油气生产处理",
+      "action": "",
+      "operation": "进入泄漏聚集区检修抢险携正压呼吸器监控腐蚀泄漏制定防护",
+      "condition": "",
+      "constraint": "4.5.9 含硫化氢油气生产和气体处理作业,应符合以下安全要求: 作业人员进入有泄漏的油气井区,气井区,污水区及其他硫化氢易于积聚的区域时 ,以及进入天然气净化厂的脱硫,再生,硫回收,排污放空区进行检修和抢险时 ,应携带正压式空气呼吸器; 应对天然气处理装置的腐蚀进行监测和控制 ,对可能的硫化氢泄漏进行检测 ,制定硫化氢防护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含硫油气生产处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4238,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

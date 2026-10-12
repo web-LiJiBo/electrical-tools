@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021307",
+  "entities": [
+    {
+      "name": "一由容器装载的信息流数据与帧偏移一道被送至Sm_AP处",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "一由容器装载的信息流数据与帧偏移一道被送至Sm_AP处。从容器中恢复用户信息流和适\n    于支路线路的定时，数据和定时送往参考点Pqx_CP,  这包括符合ITU-T G.707 规定的去\n    映射和去同步以及净荷相关信息。",
+      "type": "语义分解",
+      "subject": "一由容器装载的信息流数据与帧偏移一道被送至Sm_AP处",
+      "action": "",
+      "operation": "一由容器装载的信息流数据与帧偏移一道被送至Sm_AP处。从容器中恢复用户信息流和适 于支路线路的定时，数据和定时送往参考点Pqx_CP, 这包括符合ITU-T G.707 规定的去 映射和去同步以及净荷相关信息。",
+      "condition": "",
+      "constraint": "一由容器装载的信息流数据与帧偏移一道被送至Sm_AP处。从容器中恢复用户信息流和适\n    于支路线路的定时，数据和定时送往参考点Pqx_CP,  这包括符合ITU-T G.707 规定的去\n    映射和去同步以及净荷相关信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一由容器装载的信息流数据与帧偏移一道被送至Sm_AP处"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21307,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "测量结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 当用合成标准不确定度 u.(y )报告测量结果的不确定度时 ,应当: a ) 给出被测量Y的定义的充分描述; b) 给出被测量Y的估计值y 及其合成标淮不确定度 u.(Y) ;Y 和U(y )都应当给出单位; c) 适当时 ,给出相对标雄不确定度 u(J) /ly | ,|y | +0 ; d) 给出在7.2.7中所述的信息或包含此信息的公开文件。 如果认为对测量结果的用户有用 ,例如 ,有助于以后计算包含因子 ,或有助于对测量的理解 ,还可以 指出: 估计的有效自由度 veri ( 见E.4) ;  A 类和 B类合成标准不确定度 ucd (y )和 Uc (y) 及其估计的有效自由度 veA 和 VeffB 见 E.4.1 的注 :3)。",
+      "type": "语义分解",
+      "subject": "测量结果",
+      "action": "",
+      "operation": "报告估计值合成不确定度和单位",
+      "condition": "用合成标准不确定度",
+      "constraint": "都应当给出单位",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量及引用7.2.7需核实"
+      ]
+    }
+  }
+}

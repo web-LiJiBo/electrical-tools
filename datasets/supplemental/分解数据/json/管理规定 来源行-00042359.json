@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042359",
+  "entities": [
+    {
+      "name": "及时将可公布的事故事件报告或信息在 HSE 管控一体化平台上 共享 ，定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "及时将可公布的事故事件报告或信息在 HSE 管控一体化平台上\n\n共享 ，定期组织开展事故事件经验分享 ，将事故事件作为改进\n\nHSE 管理绩效的资源，按照“举一反三”的要求推动事故事件的\n\n整改和防范。",
+      "type": "语义分解",
+      "subject": "及时将可公布的事故事件报告或信息在 HSE 管控一体化平台上 共享 ，定",
+      "action": "",
+      "operation": "及时将可公布的事故事件报告或信息在 HSE 管控一体化平台上 共享 ，定期组织开展事故事件经验分享 ，将事故事件作为改进 HSE 管理绩效的资源，按照“举一反三”的要求推动事故事件的 整改和防范。",
+      "condition": "",
+      "constraint": "及时将可公布的事故事件报告或信息在 HSE 管控一体化平台上\n\n共享 ，定期组织开展事故事件经验分享 ，将事故事件作为改进\n\nHSE 管理绩效的资源，按照“举一反三”的要求推动事故事件的\n\n整改和防范。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "及时将可公布的事故事件报告或信息在 HSE 管控一体化平台上 共享 ，定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42359,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团站场设备设施泄漏管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003715",
+  "entities": [
+    {
+      "name": "第八条 所属单位应当对油气管道站场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第八条 所属单位应当对油气管道站场 。阀室。油库。储气 库 , LNG 接收站涉及的油气储存 输送等过程中的静密封点`动 密封点等可能存在的泄漏部位进行识别 ,建立密封点合账,实 行动态分级管理。",
+      "type": "语义分解",
+      "subject": "第八条 所属单位应当对油气管道站场",
+      "action": "",
+      "operation": "第八条 所属单位应当对油气管道站场 。阀室。油库。储气 库 , LNG 接收站涉及的油气储存 输送等过程中的静密封点`动 密封点等可能存在的泄漏部位进行识别 ,建立密封点合账,实 行动态分级管理。",
+      "condition": "",
+      "constraint": "第八条 所属单位应当对油气管道站场 。阀室。油库。储气 库 , LNG 接收站涉及的油气储存 输送等过程中的静密封点`动 密封点等可能存在的泄漏部位进行识别 ,建立密封点合账,实 行动态分级管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第八条 所属单位应当对油气管道站场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3715,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

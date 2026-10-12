@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.3.4",
+  "entities": [
+    {
+      "name": "制药环评要求摘要",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4 环评结论建议及其批复要求 摘录建设项目环境影响评价文件的主要结论和建议。将各级环境保护行政主管部门对建设项目环境影响评价的预审/审批意见、以及有关建设项目环境保护要求的文件作为验收技术报告的附录。环境管理调查情况表格式参见附录C表C.36。",
+      "type": "语义分解",
+      "subject": "制药环评要求摘要",
+      "action": "",
+      "operation": "摘结论建议预审审批环保文件作附录列环境管理调查",
+      "condition": "",
+      "constraint": "6.3.4 环评结论建议及其批复要求 摘录建设项目环境影响评价文件的主要结论和建议。将各级环境保护行政主管部门对建设项目环境影响评价的预审/审批意见、以及有关建设项目环境保护要求的文件作为验收技术报告的附录。环境管理调查情况表格式参见附录C表C.36。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药环评要求摘要"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2746,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录C未提供"
+      ]
+    }
+  }
+}

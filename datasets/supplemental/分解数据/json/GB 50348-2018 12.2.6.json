@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "12.2.6",
+  "entities": [
+    {
+      "name": "验收咨询",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.6 工程验收的咨询服务包括下列内容: 1 协助建设单位对工程验收所需要的文件资料进行复核; 2 对验收通过或基本通过的安全防范工程，咨询机构应协助建设单位、施工单位落实整改意见; 3 对验收不通过的安全防范工程，咨询机构应协助建设单位、施工单位制定整改方案; 4 对竣工文件的规范性、完整性、准确性等进行检查和指导。",
+      "type": "语义分解",
+      "subject": "验收咨询",
+      "action": "",
+      "operation": "协助资料复核整改方案落实竣文件规范完整准确指导",
+      "condition": "",
+      "constraint": "12.2.6 工程验收的咨询服务包括下列内容: 1 协助建设单位对工程验收所需要的文件资料进行复核; 2 对验收通过或基本通过的安全防范工程，咨询机构应协助建设单位、施工单位落实整改意见; 3 对验收不通过的安全防范工程，咨询机构应协助建设单位、施工单位制定整改方案; 4 对竣工文件的规范性、完整性、准确性等进行检查和指导。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "验收咨询"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7232,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

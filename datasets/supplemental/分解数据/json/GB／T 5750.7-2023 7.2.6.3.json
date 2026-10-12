@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.2.6.3",
+  "entities": [
+    {
+      "name": "膜电导测样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.6.3 测定:分别取 30 ml 标准系列溶液及水样至样品管中 ,加 6 mol/l 磷酸调节 PH 至 2.0  以下,加入1.00 mLl5 %过硫酸铵溶液 ,混匀后直接上机测定 以总有机碳的质量浓度 p(m8/1)对仪器的响应值 I绘制标准曲线 ,得到的斜率为校准系数 f (mg/L )  以所测样品的响应值,从标谁曲线中查得样品溶液中总有机碳的质量浓度",
+      "type": "语义分解",
+      "subject": "膜电导测样",
+      "action": "",
+      "operation": "三十毫升样酸化pH二以下加过硫酸铵上机建曲线查浓度",
+      "condition": "",
+      "constraint": "7.2.6.3 测定:分别取 30 ml 标准系列溶液及水样至样品管中 ,加 6 mol/l 磷酸调节 PH 至 2.0  以下,加入1.00 mLl5 %过硫酸铵溶液 ,混匀后直接上机测定 以总有机碳的质量浓度 p(m8/1)对仪器的响应值 I绘制标准曲线 ,得到的斜率为校准系数 f (mg/L )  以所测样品的响应值,从标谁曲线中查得样品溶液中总有机碳的质量浓度",
+      "constraint_role": "informational",
+      "related_entities": [
+        "膜电导测样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1927,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；试剂浓度格式破损斜率系数方向需核对"
+      ]
+    }
+  }
+}

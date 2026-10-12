@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.3.3",
+  "entities": [
+    {
+      "name": "黄土塬、梁、峁、沟坡和崾岘地段，应采取水土保持工程措施和生物措施相结合的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3.3        黄土塬、梁、峁、沟坡和崾岘地段，应采取水土保持工程措施和生物措施相结合的方式，对\n干扰区域应进行生态恢复。可能造成水土流失或对管道安全造成危险的陡坡、陡坎、河岸、沟岸等，应\n按设计要求修建护坡或采取其它工程措施以防止水土流失。",
+      "type": "语义分解",
+      "subject": "黄土塬、梁、峁、沟坡和崾岘地段，应采取水土保持工程措施和生物措施相结合的",
+      "action": "",
+      "operation": "黄土塬、梁、峁、沟坡和崾岘地段，应采取水土保持工程措施和生物措施相结合的方式，对 干扰区域应进行生态恢复。可能造成水土流失或对管道安全造成危险的陡坡、陡坎、河岸、沟岸等，应 按设计要求修建护坡或采取其它工程措施以防止水土流失。",
+      "condition": "",
+      "constraint": "6.3.3.3        黄土塬、梁、峁、沟坡和崾岘地段，应采取水土保持工程措施和生物措施相结合的方式，对\n干扰区域应进行生态恢复。可能造成水土流失或对管道安全造成危险的陡坡、陡坎、河岸、沟岸等，应\n按设计要求修建护坡或采取其它工程措施以防止水土流失。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "黄土塬、梁、峁、沟坡和崾岘地段，应采取水土保持工程措施和生物措施相结合的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40762,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

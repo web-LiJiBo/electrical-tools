@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023268",
+  "entities": [
+    {
+      "name": "集中监控系统的接地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4        集中监控系统的接地：在设计时将监控系统对线路进行\n屏蔽、合理布线、等电位连接、接地及加装 SPD  等措施，主要是为\n了抑制雷电浪涌与监控系统间的耦合路径，最大程度地减小感应\n过电压、反击过电压以及雷电侵入波对监控系统的危害。",
+      "type": "语义分解",
+      "subject": "集中监控系统的接地",
+      "action": "",
+      "operation": "集中监控系统的接地：在设计时将监控系统对线路进行 屏蔽、合理布线、等电位连接、接地及加装 SPD 等措施，主要是为 了抑制雷电浪涌与监控系统间的耦合路径，最大程度地减小感应 过电压、反击过电压以及雷电侵入波对监控系统的危害。",
+      "condition": "",
+      "constraint": "5.1.4        集中监控系统的接地：在设计时将监控系统对线路进行\n屏蔽、合理布线、等电位连接、接地及加装 SPD  等措施，主要是为\n了抑制雷电浪涌与监控系统间的耦合路径，最大程度地减小感应\n过电压、反击过电压以及雷电侵入波对监控系统的危害。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集中监控系统的接地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23268,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

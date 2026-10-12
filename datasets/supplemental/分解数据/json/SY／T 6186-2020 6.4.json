@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "6.4",
+  "entities": [
+    {
+      "name": "含硫管道材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4 含硫天然气管逍材料选择应注意其抗腐蚀性, 并应符合 SYIT 0599 利相应的设计技术要求。对 采用形状复杂的特殊管道组成件, 不宜采用铸钢制造 (阀门除外)。",
+      "type": "语义分解",
+      "subject": "含硫管道材料",
+      "action": "",
+      "operation": "抗腐合SY/T0599复杂特殊件不宜铸钢阀例外",
+      "condition": "",
+      "constraint": "6.4 含硫天然气管逍材料选择应注意其抗腐蚀性, 并应符合 SYIT 0599 利相应的设计技术要求。对 采用形状复杂的特殊管道组成件, 不宜采用铸钢制造 (阀门除外)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含硫管道材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7356,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；SYIT原编号异常需复核"
+      ]
+    }
+  }
+}

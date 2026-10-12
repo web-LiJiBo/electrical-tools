@@ -12,8 +12,9 @@ class SemanticExtractor:
         if not evidence and unit is not None:
             from ..domain import EvidenceRef
             evidence = [EvidenceRef(unit.standard_id, unit.version, unit.clause_id, unit.chapter_path, unit.text, unit.source_uri)]
-        constraints = [{"parameter": item.parameter, "operator": item.operator, "value": item.value, "unit": item.unit, "condition": item.condition} for item in rule.constraints]
+        constraints = [{"parameter": item.parameter, "operator": item.operator, "value": item.value, "unit": item.unit, "condition": item.condition, "role": item.role} for item in rule.constraints]
         return SemanticTuple(rule.subject, rule.action, rule.subject, rule.condition, constraints, rule.rule_id, evidence)
 
     def extract_unit(self, unit: ClauseKnowledgeUnit) -> list[SemanticTuple]:
         return [self.extract_rule(rule, unit) for rule in unit.rules]
+

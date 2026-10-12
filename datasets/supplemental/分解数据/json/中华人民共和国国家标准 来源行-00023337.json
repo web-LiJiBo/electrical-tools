@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023337",
+  "entities": [
+    {
+      "name": "第三，冲击电流在地中流动时，由于高频电流的集肤效应，不像直流 和工频电流",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   第三，冲击电流在地中流动时，由于高频电流的集肤效应，不像直流\n和工频电流那样穿透很深的地层，而是在距离地面不太深的范围流动。\n   第四，雷电流通过接地装置流入土壤时，当接地体周围电场强\n度达到一定数值时，电压和电流不是直线关系，而呈现非线性。",
+      "type": "语义分解",
+      "subject": "第三，冲击电流在地中流动时，由于高频电流的集肤效应，不像直流 和工频电流",
+      "action": "",
+      "operation": "第三，冲击电流在地中流动时，由于高频电流的集肤效应，不像直流 和工频电流那样穿透很深的地层，而是在距离地面不太深的范围流动。 第四，雷电流通过接地装置流入土壤时，当接地体周围电场强 度达到一定数值时，电压和电流不是直线关系，而呈现非线性。",
+      "condition": "",
+      "constraint": "   第三，冲击电流在地中流动时，由于高频电流的集肤效应，不像直流\n和工频电流那样穿透很深的地层，而是在距离地面不太深的范围流动。\n   第四，雷电流通过接地装置流入土壤时，当接地体周围电场强\n度达到一定数值时，电压和电流不是直线关系，而呈现非线性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三，冲击电流在地中流动时，由于高频电流的集肤效应，不像直流 和工频电流"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23337,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

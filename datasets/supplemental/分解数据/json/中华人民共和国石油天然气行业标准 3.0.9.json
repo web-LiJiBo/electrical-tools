@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "3.0.9",
+  "entities": [
+    {
+      "name": "在管道设计阶段，管道路由规划应考虑对可能受到的直 流干扰风险进行分析和预",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.9   在管道设计阶段，管道路由规划应考虑对可能受到的直\n流干扰风险进行分析和预评估，尽量避免直流干扰风险区域。\n电力方接地极选址、轨道交通方选择回流网系统时，应按相应\n标准要求对附近的管道现状开展调查评估，尽量避开或降低干\n扰源对在役管道系统的影响。",
+      "type": "语义分解",
+      "subject": "在管道设计阶段，管道路由规划应考虑对可能受到的直 流干扰风险进行分析和预",
+      "action": "",
+      "operation": "在管道设计阶段，管道路由规划应考虑对可能受到的直 流干扰风险进行分析和预评估，尽量避免直流干扰风险区域。 电力方接地极选址、轨道交通方选择回流网系统时，应按相应 标准要求对附近的管道现状开展调查评估，尽量避开或降低干 扰源对在役管道系统的影响。",
+      "condition": "",
+      "constraint": "3.0.9   在管道设计阶段，管道路由规划应考虑对可能受到的直\n流干扰风险进行分析和预评估，尽量避免直流干扰风险区域。\n电力方接地极选址、轨道交通方选择回流网系统时，应按相应\n标准要求对附近的管道现状开展调查评估，尽量避开或降低干\n扰源对在役管道系统的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在管道设计阶段，管道路由规划应考虑对可能受到的直 流干扰风险进行分析和预"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47796,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

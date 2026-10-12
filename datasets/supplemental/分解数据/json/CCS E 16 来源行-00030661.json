@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00030661",
+  "entities": [
+    {
+      "name": "m) 其他各种对跨越结构安全有较大影响的部件损坏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "m) 其他各种对跨越结构安全有较大影响的部件损坏；\nn)  管道(弯管)明显变形；\no) 锚固墩移动超过20mm;\np) 管道泄漏；",
+      "type": "语义分解",
+      "subject": "m) 其他各种对跨越结构安全有较大影响的部件损坏",
+      "action": "",
+      "operation": "m) 其他各种对跨越结构安全有较大影响的部件损坏； n) 管道(弯管)明显变形； o) 锚固墩移动超过20mm; p) 管道泄漏",
+      "condition": "",
+      "constraint": "m) 其他各种对跨越结构安全有较大影响的部件损坏；\nn)  管道(弯管)明显变形；\no) 锚固墩移动超过20mm;\np) 管道泄漏；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "m) 其他各种对跨越结构安全有较大影响的部件损坏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30661,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

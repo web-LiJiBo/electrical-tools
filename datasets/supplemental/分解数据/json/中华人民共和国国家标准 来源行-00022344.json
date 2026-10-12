@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022344",
+  "entities": [
+    {
+      "name": "通信局(站)内实施连接和接地的主要手段，它是一组被特 意互连或者偶然互连",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   通信局(站)内实施连接和接地的主要手段，它是一组被特\n意互连或者偶然互连的金属部件，用以构成大楼的主要连\n接网。",
+      "type": "语义分解",
+      "subject": "通信局(站)内实施连接和接地的主要手段，它是一组被特 意互连或者偶然互连",
+      "action": "",
+      "operation": "通信局(站)内实施连接和接地的主要手段，它是一组被特 意互连或者偶然互连的金属部件，用以构成大楼的主要连 接网。",
+      "condition": "",
+      "constraint": "   通信局(站)内实施连接和接地的主要手段，它是一组被特\n意互连或者偶然互连的金属部件，用以构成大楼的主要连\n接网。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信局(站)内实施连接和接地的主要手段，它是一组被特 意互连或者偶然互连"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22344,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

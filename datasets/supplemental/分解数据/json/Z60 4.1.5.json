@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.1.5",
+  "entities": [
+    {
+      "name": "铁路运输密封",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5 铁路罐车应符合GB/T 5600的技术规定，并采取相应措施减少运输过程中的油气排放。\n4.1.6    采用红外摄像方式检测运输工具油气密封点时，不应有油气泄漏。",
+      "type": "语义分解",
+      "subject": "铁路运输密封",
+      "action": "",
+      "operation": "合GB/T5600减排红外检测无漏",
+      "condition": "",
+      "constraint": "4.1.5 铁路罐车应符合GB/T 5600的技术规定，并采取相应措施减少运输过程中的油气排放。\n4.1.6    采用红外摄像方式检测运输工具油气密封点时，不应有油气泄漏。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铁路运输密封"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32894,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

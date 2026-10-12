@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产应急维抢修管理规定",
+  "standard_id": "无",
+  "version": "",
+  "chapter_path": "来源行-00003544",
+  "entities": [
+    {
+      "name": "第十五条 维抢修机构在承担抢修保驾职责的同时,应兼顾线路,站场设备等油气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十五条 维抢修机构在承担抢修保驾职责的同时,应兼顾线路,站场设备等油气储运设施的大型维修职责。应参与资质和能力范围内的计划性施工作业,包括动火连头和封堵作业等。",
+      "type": "语义分解",
+      "subject": "第十五条 维抢修机构在承担抢修保驾职责的同时,应兼顾线路,站场设备等油气",
+      "action": "",
+      "operation": "第十五条 维抢修机构在承担抢修保驾职责的同时,应兼顾线路,站场设备等油气储运设施的大型维修职责。应参与资质和能力范围内的计划性施工作业,包括动火连头和封堵作业等。",
+      "condition": "",
+      "constraint": "第十五条 维抢修机构在承担抢修保驾职责的同时,应兼顾线路,站场设备等油气储运设施的大型维修职责。应参与资质和能力范围内的计划性施工作业,包括动火连头和封堵作业等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十五条 维抢修机构在承担抢修保驾职责的同时,应兼顾线路,站场设备等油气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3544,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041392",
+  "entities": [
+    {
+      "name": "这些因素将有助于确定废物处置方式，以保护人体健康和环境，限制作业者将来的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   这些因素将有助于确定废物处置方式，以保护人体健康和环境，限制作业者将来的责任。废物处\n置方式有以下几种实例：",
+      "type": "语义分解",
+      "subject": "这些因素将有助于确定废物处置方式，以保护人体健康和环境，限制作业者将来的",
+      "action": "",
+      "operation": "这些因素将有助于确定废物处置方式，以保护人体健康和环境，限制作业者将来的责任。废物处 置方式有以下几种实例",
+      "condition": "",
+      "constraint": "   这些因素将有助于确定废物处置方式，以保护人体健康和环境，限制作业者将来的责任。废物处\n置方式有以下几种实例：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "这些因素将有助于确定废物处置方式，以保护人体健康和环境，限制作业者将来的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41392,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

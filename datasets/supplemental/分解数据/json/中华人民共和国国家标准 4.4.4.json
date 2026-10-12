@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.4.4",
+  "entities": [
+    {
+      "name": "OTN 网络本身为非同步网络，但随着 OTN 网络的广泛 应用和SDH ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4  OTN  网络本身为非同步网络，但随着 OTN  网络的广泛\n应用和SDH  技术的逐步退出应用，OTN  网络宜支持传送时钟频\n率和时间同步信息的功能。",
+      "type": "语义分解",
+      "subject": "OTN 网络本身为非同步网络，但随着 OTN 网络的广泛 应用和SDH ",
+      "action": "",
+      "operation": "OTN 网络本身为非同步网络，但随着 OTN 网络的广泛 应用和SDH 技术的逐步退出应用，OTN 网络宜支持传送时钟频 率和时间同步信息的功能。",
+      "condition": "",
+      "constraint": "4.4.4  OTN  网络本身为非同步网络，但随着 OTN  网络的广泛\n应用和SDH  技术的逐步退出应用，OTN  网络宜支持传送时钟频\n率和时间同步信息的功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 网络本身为非同步网络，但随着 OTN 网络的广泛 应用和SDH "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11244,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

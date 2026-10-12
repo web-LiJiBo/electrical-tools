@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.1.2",
+  "entities": [
+    {
+      "name": "本条为强制性条文",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.2       本条为强制性条文。大、中型通信局(站)一般是通信枢\n纽或者节点，重要性较高，为了保证电气安全，必须采用更为可靠\n的 TN-S 或 TN-C-S 接线方式。 而且由于大、中型通信局(站)一\n般具有独立的高低压配电室或者变压器，有条件来实施 TN-S 或\nTN-C-S 接线方式。 TN 系统有利于通信系统的雷电防护。",
+      "type": "语义分解",
+      "subject": "本条为强制性条文",
+      "action": "",
+      "operation": "本条为强制性条文。大、中型通信局(站)一般是通信枢 纽或者节点，重要性较高，为了保证电气安全，必须采用更为可靠 的 TN-S 或 TN-C-S 接线方式。 而且由于大、中型通信局(站)一 般具有独立的高低压配电室或者变压器，有条件来实施 TN-S 或 TN-C-S 接线方式。 TN 系统有利于通信系统的雷电防护。",
+      "condition": "",
+      "constraint": "3.1.2       本条为强制性条文。大、中型通信局(站)一般是通信枢\n纽或者节点，重要性较高，为了保证电气安全，必须采用更为可靠\n的 TN-S 或 TN-C-S 接线方式。 而且由于大、中型通信局(站)一\n般具有独立的高低压配电室或者变压器，有条件来实施 TN-S 或\nTN-C-S 接线方式。 TN 系统有利于通信系统的雷电防护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条为强制性条文"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23215,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

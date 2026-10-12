@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011716",
+  "entities": [
+    {
+      "name": "中继段设计应采用最坏值设计法 , 同时应符合下列规定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5    中继段设计应采用最坏值设计法 ,   同时应符合下列规定 :\n       1    计算方法应符合现行国家标准  《同步数字体系  (SDH)\n光纤传输系统工程设计规范》  GB/T  51242 的有关规定 。\n       2    系统采用与油气管道同沟敷设的光缆时 ,  2.5Gbit/s 及以\n上速率等级系统的段内光功率余量不宜小于 5dB 。622Mbit/s 及\n以下速率等级系统的段内光功率余量不宜小于 3dB 。\n4.2.6    光纤配置与工作波长选用应符合下列规定 :",
+      "type": "语义分解",
+      "subject": "中继段设计应采用最坏值设计法 , 同时应符合下列规定",
+      "action": "",
+      "operation": "中继段设计应采用最坏值设计法 , 同时应符合下列规定 : 1 计算方法应符合现行国家标准 《同步数字体系 (SDH) 光纤传输系统工程设计规范》 GB/T 51242 的有关规定 。 2 系统采用与油气管道同沟敷设的光缆时 , 2.5Gbit/s 及以 上速率等级系统的段内光功率余量不宜小于 5dB 。622Mbit/s 及 以下速率等级系统的段内光功率余量不宜小于 3dB 。 4.2.6 光纤配置与工作波长选用应符合下列规定",
+      "condition": "",
+      "constraint": "4.2.5    中继段设计应采用最坏值设计法 ,   同时应符合下列规定 :\n       1    计算方法应符合现行国家标准  《同步数字体系  (SDH)\n光纤传输系统工程设计规范》  GB/T  51242 的有关规定 。\n       2    系统采用与油气管道同沟敷设的光缆时 ,  2.5Gbit/s 及以\n上速率等级系统的段内光功率余量不宜小于 5dB 。622Mbit/s 及\n以下速率等级系统的段内光功率余量不宜小于 3dB 。\n4.2.6    光纤配置与工作波长选用应符合下列规定 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中继段设计应采用最坏值设计法 , 同时应符合下列规定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11716,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

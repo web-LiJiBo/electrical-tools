@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "11.6.1",
+  "entities": [
+    {
+      "name": "净购入电力的消耗按生产用电和非生产用电安装电表进行监测， 每天抄表，并每",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.6.1 净购入电力的消耗按生产用电和非生产用电安装电表进行监测，\n\n每天抄表，并每月汇总，形成统计台账，每月记录时间节点应与生产周期\n\n保持一致（每月的 1 日至月底最后一天）。",
+      "type": "语义分解",
+      "subject": "净购入电力的消耗按生产用电和非生产用电安装电表进行监测， 每天抄表，并每",
+      "action": "",
+      "operation": "净购入电力的消耗按生产用电和非生产用电安装电表进行监测， 每天抄表，并每月汇总，形成统计台账，每月记录时间节点应与生产周期 保持一致（每月的 1 日至月底最后一天）。",
+      "condition": "",
+      "constraint": "11.6.1 净购入电力的消耗按生产用电和非生产用电安装电表进行监测，\n\n每天抄表，并每月汇总，形成统计台账，每月记录时间节点应与生产周期\n\n保持一致（每月的 1 日至月底最后一天）。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "净购入电力的消耗按生产用电和非生产用电安装电表进行监测， 每天抄表，并每"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37848,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

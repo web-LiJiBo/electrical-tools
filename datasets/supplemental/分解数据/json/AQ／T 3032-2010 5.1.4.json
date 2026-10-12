@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "安全知识技能考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 安全生产知识考试及安全管理技能考核均合格者，方为合格。考试(核)不合格允许补考一次，补考仍不合格者需要重新培训。",
+      "type": "语义分解",
+      "subject": "安全知识技能考核",
+      "action": "",
+      "operation": "均合格并按规定补考或重训",
+      "condition": "",
+      "constraint": "5.1.4 安全生产知识考试及安全管理技能考核均合格者，方为合格。考试(核)不合格允许补考一次，补考仍不合格者需要重新培训。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全知识技能考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5015,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032520",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8\t氯3)\n\n\n气\t65\t25\n30\n40\n50\n60\n70\n80\t0 . 52\n0 . 87\n2 . 9\n5 . 0\n7 . 7\n11\n15\t0 . 78\n1 . 3\n4 . 4\n7 . 6\n12\n17\n23\t周界外浓度\n最高点\t0.4",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "8\t氯3)\n\n\n气\t65\t25\n30\n40\n50\n60\n70\n80\t0 . 52\n0 . 87\n2 . 9\n5 . 0\n7 . 7\n11\n15\t0 . 78\n1 . 3\n4 . 4\n7 . 6\n12\n17\n23\t周界外浓度\n最高点\t0.4",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32520,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

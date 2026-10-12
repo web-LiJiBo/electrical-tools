@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016258",
+  "entities": [
+    {
+      "name": "f) 采用波长λ新建业务2的业务路径NE1<->NE3<->NE4,NE",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     f)  采用波长λ新建业务2的业务路径NE1<->NE3<->NE4,NE4 采用和业务1相同的分波器/滤波\n器上下业务，检查业务2是否可以成功建立，若无法建立，网管是否有正确的波长冲突提示。",
+      "type": "语义分解",
+      "subject": "f) 采用波长λ新建业务2的业务路径NE1<->NE3<->NE4,NE",
+      "action": "",
+      "operation": "f) 采用波长λ新建业务2的业务路径NE1<->NE3<->NE4,NE4 采用和业务1相同的分波器/滤波 器上下业务，检查业务2是否可以成功建立，若无法建立，网管是否有正确的波长冲突提示。",
+      "condition": "",
+      "constraint": "     f)  采用波长λ新建业务2的业务路径NE1<->NE3<->NE4,NE4 采用和业务1相同的分波器/滤波\n器上下业务，检查业务2是否可以成功建立，若无法建立，网管是否有正确的波长冲突提示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "f) 采用波长λ新建业务2的业务路径NE1<->NE3<->NE4,NE"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16258,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

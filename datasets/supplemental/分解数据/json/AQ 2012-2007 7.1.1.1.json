@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.1.1.1",
+  "entities": [
+    {
+      "name": "管道路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1.1 输油气管道路由的选择,应结合沿线城市,村镇,工矿企业,交通,电力,水利等建设的现状与规划 ,以及沿线地区的地形,地貌,地质 ,水文 ,气象 ,地震等自然条件,并考虑到施工和日后管道管理维护的方便 ,确定线路走向。",
+      "type": "语义分解",
+      "subject": "管道路由",
+      "action": "",
+      "operation": "综合沿线规划设施自然条件施工维护便利确定走向",
+      "condition": "",
+      "constraint": "7.1.1.1 输油气管道路由的选择,应结合沿线城市,村镇,工矿企业,交通,电力,水利等建设的现状与规划 ,以及沿线地区的地形,地貌,地质 ,水文 ,气象 ,地震等自然条件,并考虑到施工和日后管道管理维护的方便 ,确定线路走向。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4767,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

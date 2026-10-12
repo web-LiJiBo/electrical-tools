@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.2.2.1",
+  "entities": [
+    {
+      "name": "比色邻苯二甲酸氢钾液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.1 邻苯二甲酸氢钾溶液[c(KHC8H4O4)=0.10 mol/L]:将邻苯二甲酸氢钾(KHC8H4O4)置于105 ℃烘箱内干燥2 h，放在硅胶干燥器内冷却30 min，称取20.422 g溶于纯水中，并定容至1000 mL，或使用有证标准物质。",
+      "type": "语义分解",
+      "subject": "比色邻苯二甲酸氢钾液",
+      "action": "",
+      "operation": "烘干冷却称规定质量定容配制0.10摩尔每升或用有证物质",
+      "condition": "",
+      "constraint": "8.2.2.1 邻苯二甲酸氢钾溶液[c(KHC8H4O4)=0.10 mol/L]:将邻苯二甲酸氢钾(KHC8H4O4)置于105 ℃烘箱内干燥2 h，放在硅胶干燥器内冷却30 min，称取20.422 g溶于纯水中，并定容至1000 mL，或使用有证标准物质。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "比色邻苯二甲酸氢钾液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1358,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

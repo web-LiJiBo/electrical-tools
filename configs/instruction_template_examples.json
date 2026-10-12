@@ -1,0 +1,12 @@
+{
+  "simulation_only": true,
+  "scope": "SimulationInstructionService.generate固定输入；来源绑定主流程仍要求适用且已复核的动作条款",
+  "examples": [
+    {"device_id":"SIM-IEC-FAN-01","action":"start","facts":{"start_permission":1,"power_available":1,"maintenance_lockout":0,"device_fault":0},"parameters":{},"expected":"IEC示意ctlVal=true；运行反馈期望true；状态保持不变"},
+    {"device_id":"SIM-MB-PUMP-01","action":"stop","facts":{"stop_permission":1,"maintenance_lockout":0,"redundant_cooling_available":1},"parameters":{},"expected":"FC05地址201编码0；运行反馈期望false；状态保持不变"},
+    {"device_id":"SIM-MB-INVERTER-01","action":"adjust_reactive_power","facts":{"control_permission":1,"grid_connected":1,"maintenance_lockout":0,"control_mode_available":1},"parameters":{"reactive_power_kvar":120.5},"expected":"FC06地址101编码1205；单位kvar"},
+    {"device_id":"SIM-IEC-INVERTER-01","action":"regulate_voltage","facts":{"control_permission":1,"grid_connected":1,"maintenance_lockout":0,"control_mode_available":1},"parameters":{"voltage_v":400.5},"expected":"GGIO1.AnOut3示意ctlVal=400.5；单位V"},
+    {"device_id":"SIM-MB-FAN-01","action":"start","facts":{"start_permission":1,"power_available":1,"maintenance_lockout":1,"device_fault":0},"parameters":{},"expected":"检修闭锁阻止生成载荷"},
+    {"device_id":"SIM-MB-INVERTER-01","action":"regulate_voltage","facts":{"control_permission":1,"grid_connected":1,"maintenance_lockout":0,"control_mode_available":1},"parameters":{"voltage_v":430},"expected":"超出380至420V测试范围，阻止生成载荷"}
+  ]
+}

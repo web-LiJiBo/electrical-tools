@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "装订案卷页码",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1 装订的案卷,应统一在有文字的页面填写页号 (正面在右下角 背面在左下角)。",
+      "type": "语义分解",
+      "subject": "装订案卷页码",
+      "action": "",
+      "operation": "在有字页面指定位置统一填写",
+      "condition": "",
+      "constraint": "4.5.1 装订的案卷,应统一在有文字的页面填写页号 (正面在右下角 背面在左下角)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "装订案卷页码"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3091,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

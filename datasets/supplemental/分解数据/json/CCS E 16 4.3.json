@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "架空设施检检测分类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3   油气管道架空部分及其附属设施检查和检测根据任务不同一般可分为日常检查、年度检查、定\n期检测和专项检测。",
+      "type": "语义分解",
+      "subject": "架空设施检检测分类",
+      "action": "",
+      "operation": "日常年度定期专项",
+      "condition": "",
+      "constraint": "4.3   油气管道架空部分及其附属设施检查和检测根据任务不同一般可分为日常检查、年度检查、定\n期检测和专项检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "架空设施检检测分类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29706,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

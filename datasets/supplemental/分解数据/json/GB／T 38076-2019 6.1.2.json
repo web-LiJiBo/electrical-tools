@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "6.1.2",
+  "entities": [
+    {
+      "name": "环境风险评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2 宜定期开展环境风险评估，划分管段环境风险等级，分级制定环境风险防控措施，编制环境风险评估报告(报告大纲参见附录 C)。建议有下列情形之一的，及时划定或重新核定环境风险等级 = 管道未划定环境风险等级或环境风险等级划定满三年的; 管道因局部改线或周边环境风险受体敏感性等发生娈化，导致环境风险等级发生娈化的; 管段发生突发环境事件并造成环境污染的; 国家相关法律，法规，标淮或规范性文件发生变化的",
+      "type": "语义分解",
+      "subject": "环境风险评估",
+      "action": "",
+      "operation": "定期评估编报告并在未分级满三年改线受体事故法规变化时重核",
+      "condition": "",
+      "constraint": "6.1.2 宜定期开展环境风险评估，划分管段环境风险等级，分级制定环境风险防控措施，编制环境风险评估报告(报告大纲参见附录 C)。建议有下列情形之一的，及时划定或重新核定环境风险等级 = 管道未划定环境风险等级或环境风险等级划定满三年的; 管道因局部改线或周边环境风险受体敏感性等发生娈化，导致环境风险等级发生娈化的; 管段发生突发环境事件并造成环境污染的; 国家相关法律，法规，标淮或规范性文件发生变化的",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境风险评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1169,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

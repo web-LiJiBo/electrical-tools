@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "9.3.1",
+  "entities": [
+    {
+      "name": "行为观察",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.3.1 行为观察 企业应加强对从业人员作业行为的安全管理，依据规章制度、操作规程等开展从业人员行为观察，重点对从事新岗位、使用新工艺和新设备、不安全行为次数较多等人员进行行为观察。行为观察后，应与被观察人员进行沟通，表扬安全行为，告知不安全行为及其潜在的安全风险。企业应定期对行为观察情况进行统计分析，通过对工艺技术、设备设施、作业环境等方面进行改进，从根源上预防不安全行为的发生。",
+      "type": "语义分解",
+      "subject": "行为观察",
+      "action": "",
+      "operation": "按规重点新岗新技术设备多不安全人员沟通表扬告险统计改工艺环境根防",
+      "condition": "",
+      "constraint": "9.3.1 行为观察 企业应加强对从业人员作业行为的安全管理，依据规章制度、操作规程等开展从业人员行为观察，重点对从事新岗位、使用新工艺和新设备、不安全行为次数较多等人员进行行为观察。行为观察后，应与被观察人员进行沟通，表扬安全行为，告知不安全行为及其潜在的安全风险。企业应定期对行为观察情况进行统计分析，通过对工艺技术、设备设施、作业环境等方面进行改进，从根源上预防不安全行为的发生。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "行为观察"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7266,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

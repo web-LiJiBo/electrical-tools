@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "来源行-00029509",
+  "entities": [
+    {
+      "name": "c ）负责按要求备案需要区域分中心开展专项监督的高风险特 殊作业（特级动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     c ）负责按要求备案需要区域分中心开展专项监督的高风险特\n\n殊作业（特级动火、特级高处等，下同）计划和重大安全环保事故\n\n隐患治理项目实施计划。",
+      "type": "语义分解",
+      "subject": "c ）负责按要求备案需要区域分中心开展专项监督的高风险特 殊作业（特级动",
+      "action": "",
+      "operation": "c ）负责按要求备案需要区域分中心开展专项监督的高风险特 殊作业（特级动火、特级高处等，下同）计划和重大安全环保事故 隐患治理项目实施计划。",
+      "condition": "",
+      "constraint": "     c ）负责按要求备案需要区域分中心开展专项监督的高风险特\n\n殊作业（特级动火、特级高处等，下同）计划和重大安全环保事故\n\n隐患治理项目实施计划。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c ）负责按要求备案需要区域分中心开展专项监督的高风险特 殊作业（特级动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29509,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

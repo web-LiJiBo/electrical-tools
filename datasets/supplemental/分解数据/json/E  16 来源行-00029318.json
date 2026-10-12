@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029318",
+  "entities": [
+    {
+      "name": "针对出现的险情和可能的突发事件风险，制订人员救援、工艺操作、事故控制、消",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   针对出现的险情和可能的突发事件风险，制订人员救援、工艺操作、事故控制、消防等方面的处\n置措施。事故发生后，基层单位可依据处置措施，针对突发事件现场处置工作实际需要，确定现场抢\n险工作方案。",
+      "type": "语义分解",
+      "subject": "针对出现的险情和可能的突发事件风险，制订人员救援、工艺操作、事故控制、消",
+      "action": "",
+      "operation": "针对出现的险情和可能的突发事件风险，制订人员救援、工艺操作、事故控制、消防等方面的处 置措施。事故发生后，基层单位可依据处置措施，针对突发事件现场处置工作实际需要，确定现场抢 险工作方案。",
+      "condition": "",
+      "constraint": "   针对出现的险情和可能的突发事件风险，制订人员救援、工艺操作、事故控制、消防等方面的处\n置措施。事故发生后，基层单位可依据处置措施，针对突发事件现场处置工作实际需要，确定现场抢\n险工作方案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "针对出现的险情和可能的突发事件风险，制订人员救援、工艺操作、事故控制、消"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29318,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

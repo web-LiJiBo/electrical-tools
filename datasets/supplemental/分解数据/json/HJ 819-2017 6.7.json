@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "6.7",
+  "entities": [
+    {
+      "name": "监测质控计划",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7 监测质量控制 编制监测工作质量控制计划，选择与监测活动类型和工作量相适应的质控方法，包括使用标准物质 采用空白试验 平行样测定。加标回收率测定等。定期进行质控数据分析",
+      "type": "语义分解",
+      "subject": "监测质控计划",
+      "action": "",
+      "operation": "选与类型工作量适应标物空白平行加标方法定期分析",
+      "condition": "",
+      "constraint": "6.7 监测质量控制 编制监测工作质量控制计划，选择与监测活动类型和工作量相适应的质控方法，包括使用标准物质 采用空白试验 平行样测定。加标回收率测定等。定期进行质控数据分析",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测质控计划"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2878,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

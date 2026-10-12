@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.2.3.3",
+  "entities": [
+    {
+      "name": "制药固废勘查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3.3 固体废物 一般固体废物的来源、种类、数量、处理处置去向。贮存场是否满足GB 18599的要求。处置场可能造成的土壤、地下水二次污染,环境保护敏感点的确定。 危险固体废物的来源,种类数量、处理处置去向和危险废物转移联单。贮存场是否符合GB 18597的要求。若项目配套建设危险废物处置设施，还应按照HJ2025等相关技术规范检查其处理工艺、防渗措施、运行管理情况等内容。",
+      "type": "语义分解",
+      "subject": "制药固废勘查",
+      "action": "",
+      "operation": "查一般危险固废源数量去向贮存污染敏感点联单配套处理防渗管理",
+      "condition": "",
+      "constraint": "5.2.3.3 固体废物 一般固体废物的来源、种类、数量、处理处置去向。贮存场是否满足GB 18599的要求。处置场可能造成的土壤、地下水二次污染,环境保护敏感点的确定。 危险固体废物的来源,种类数量、处理处置去向和危险废物转移联单。贮存场是否符合GB 18597的要求。若项目配套建设危险废物处置设施，还应按照HJ2025等相关技术规范检查其处理工艺、防渗措施、运行管理情况等内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药固废勘查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2724,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

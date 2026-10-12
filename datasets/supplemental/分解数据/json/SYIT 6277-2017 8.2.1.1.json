@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "8.2.1.1",
+  "entities": [
+    {
+      "name": "集气站撤离范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1.1 天然气集气场站的应急撤离区域应符合以下要求 : 8 ) 硫化氢体积分数为 13% 15%的天然气集气场站 应急撤离区域边缘距最近的装置区边缘宜不小于1500m。 b) 硫化氢体积分数低于 13%或高于 150的天然气集气场站,建设单位参考本条a) 的规定。在组织专家技术论证后。可适当碱小或增大应急撤离区域。",
+      "type": "语义分解",
+      "subject": "集气站撤离范围",
+      "action": "",
+      "operation": "按含硫量规定1500米距离其他情况专家调整",
+      "condition": "",
+      "constraint": "8.2.1.1 天然气集气场站的应急撤离区域应符合以下要求 : 8 ) 硫化氢体积分数为 13% 15%的天然气集气场站 应急撤离区域边缘距最近的装置区边缘宜不小于1500m。 b) 硫化氢体积分数低于 13%或高于 150的天然气集气场站,建设单位参考本条a) 的规定。在组织专家技术论证后。可适当碱小或增大应急撤离区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集气站撤离范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7486,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；含硫量识别缺损待核对"
+      ]
+    }
+  }
+}

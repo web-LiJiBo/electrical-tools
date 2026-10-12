@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008444",
+  "entities": [
+    {
+      "name": "本条第5款，机架对地加固宜使用M10～M12 膨胀螺栓， 数量可根据施工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.1  本条第5款，机架对地加固宜使用M10～M12 膨胀螺栓，\n数量可根据施工现场情况确定， 一般机架底面为600mm×300mm\n及以上时，应使用4只；机架底面在600mm×300mm   以下时，可\n使用2只。",
+      "type": "语义分解",
+      "subject": "本条第5款，机架对地加固宜使用M10～M12 膨胀螺栓， 数量可根据施工",
+      "action": "",
+      "operation": "本条第5款，机架对地加固宜使用M10～M12 膨胀螺栓， 数量可根据施工现场情况确定， 一般机架底面为600mm×300mm 及以上时，应使用4只；机架底面在600mm×300mm 以下时，可 使用2只。",
+      "condition": "",
+      "constraint": "3.3.1  本条第5款，机架对地加固宜使用M10～M12 膨胀螺栓，\n数量可根据施工现场情况确定， 一般机架底面为600mm×300mm\n及以上时，应使用4只；机架底面在600mm×300mm   以下时，可\n使用2只。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条第5款，机架对地加固宜使用M10～M12 膨胀螺栓， 数量可根据施工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8444,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

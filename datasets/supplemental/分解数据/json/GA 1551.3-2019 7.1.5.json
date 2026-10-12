@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "7.1.5",
+  "entities": [
+    {
+      "name": "油库加油站护卫器械",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.5 油库保卫执勤人员应配备对讲机 .棍棒 ,钢叉等必要的护卫器械;加油站应配备棍棒 ,钢叉等必要的护卫幂械。",
+      "type": "语义分解",
+      "subject": "油库加油站护卫器械",
+      "action": "",
+      "operation": "按场所配置必要护卫装备",
+      "condition": "",
+      "constraint": "7.1.5 油库保卫执勤人员应配备对讲机 .棍棒 ,钢叉等必要的护卫器械;加油站应配备棍棒 ,钢叉等必要的护卫幂械。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油库加油站护卫器械"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5714,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文存在识别异常"
+      ]
+    }
+  }
+}

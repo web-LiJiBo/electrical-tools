@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E 09",
+  "version": "",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "阅览图书室",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1   满足受训人员需要的阅览室和图书室。",
+      "type": "语义分解",
+      "subject": "阅览图书室",
+      "action": "",
+      "operation": "满足受训需要",
+      "condition": "",
+      "constraint": "4.4.1   满足受训人员需要的阅览室和图书室。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阅览图书室"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28678,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

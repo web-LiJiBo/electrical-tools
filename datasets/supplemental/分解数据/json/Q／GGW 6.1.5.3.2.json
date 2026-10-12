@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.1.5.3.2",
+  "entities": [
+    {
+      "name": "响应因子取值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5.3.2   查阅检测仪器说明书或通过HJ    733—2014中3.2. 1规定的方法，确定该组分2～3个浓度\n的响应因子(例如100  μmol/mol 、2000μmol/mol 、10,000μmol/mol             等),采用最大响应因子。",
+      "type": "语义分解",
+      "subject": "响应因子取值",
+      "action": "",
+      "operation": "依说明或HJ733三点二一点取两至三浓度最大响应",
+      "condition": "",
+      "constraint": "6.1.5.3.2   查阅检测仪器说明书或通过HJ    733—2014中3.2. 1规定的方法，确定该组分2～3个浓度\n的响应因子(例如100  μmol/mol 、2000μmol/mol 、10,000μmol/mol             等),采用最大响应因子。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "响应因子取值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36580,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

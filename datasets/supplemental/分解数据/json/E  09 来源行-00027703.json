@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027703",
+  "entities": [
+    {
+      "name": "管道储运单位新建、改建、扩建项目安全设施与主体工程同时设计、同时施工、同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1.1      管道储运单位新建、改建、扩建项目安全设施与主体工程同时设计、同时施工、同时投入生产\n\n和使用，建设项目安全预评价、安全设施设计审 查和竣工验收应符合法律法规和标准规范的要求。\n\n5.5.1.2  海上管道设施应满足《海洋石油安全管理细则》的要求，并经检验机构检验。",
+      "type": "语义分解",
+      "subject": "管道储运单位新建、改建、扩建项目安全设施与主体工程同时设计、同时施工、同",
+      "action": "",
+      "operation": "管道储运单位新建、改建、扩建项目安全设施与主体工程同时设计、同时施工、同时投入生产 和使用，建设项目安全预评价、安全设施设计审 查和竣工验收应符合法律法规和标准规范的要求。 5.5.1.2 海上管道设施应满足《海洋石油安全管理细则》的要求，并经检验机构检验。",
+      "condition": "",
+      "constraint": "5.5.1.1      管道储运单位新建、改建、扩建项目安全设施与主体工程同时设计、同时施工、同时投入生产\n\n和使用，建设项目安全预评价、安全设施设计审 查和竣工验收应符合法律法规和标准规范的要求。\n\n5.5.1.2  海上管道设施应满足《海洋石油安全管理细则》的要求，并经检验机构检验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道储运单位新建、改建、扩建项目安全设施与主体工程同时设计、同时施工、同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27703,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

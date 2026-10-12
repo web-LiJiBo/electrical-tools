@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00034959",
+  "entities": [
+    {
+      "name": "警示—2,2,4-三甲基戊烷极易燃",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "警示—2,2,4-三甲基戊烷极易燃 。  吸入有害 。  蒸气可能引起闪燃 。  使用应符合 A.2 要求。\n除另有说明 ,本文件中所使用试剂均为分析纯 ,试验用水为蒸馏水或去离子水 。",
+      "type": "语义分解",
+      "subject": "警示—2,2,4-三甲基戊烷极易燃",
+      "action": "",
+      "operation": "警示—2,2,4-三甲基戊烷极易燃 。 吸入有害 。 蒸气可能引起闪燃 。 使用应符合 A.2 要求。 除另有说明 ,本文件中所使用试剂均为分析纯 ,试验用水为蒸馏水或去离子水 。",
+      "condition": "",
+      "constraint": "警示—2,2,4-三甲基戊烷极易燃 。  吸入有害 。  蒸气可能引起闪燃 。  使用应符合 A.2 要求。\n除另有说明 ,本文件中所使用试剂均为分析纯 ,试验用水为蒸馏水或去离子水 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "警示—2,2,4-三甲基戊烷极易燃"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34959,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

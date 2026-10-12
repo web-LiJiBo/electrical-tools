@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014272",
+  "entities": [
+    {
+      "name": "OTUk网络接口不是同步接口，OTUk 时钟不是造成漂移的主要因素，因此",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     OTUk网络接口不是同步接口，OTUk 时钟不是造成漂移的主要因素，因此不需要定义漂移指标。\n\n8.4.2 OTN 网络接口抖动和漂移容限",
+      "type": "语义分解",
+      "subject": "OTUk网络接口不是同步接口，OTUk 时钟不是造成漂移的主要因素，因此",
+      "action": "",
+      "operation": "OTUk网络接口不是同步接口，OTUk 时钟不是造成漂移的主要因素，因此不需要定义漂移指标。 8.4.2 OTN 网络接口抖动和漂移容限",
+      "condition": "",
+      "constraint": "     OTUk网络接口不是同步接口，OTUk 时钟不是造成漂移的主要因素，因此不需要定义漂移指标。\n\n8.4.2 OTN 网络接口抖动和漂移容限",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTUk网络接口不是同步接口，OTUk 时钟不是造成漂移的主要因素，因此"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14272,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

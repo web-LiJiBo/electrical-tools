@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "7.3",
+  "entities": [
+    {
+      "name": "监测超标应急报告",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3 应急报告 监测结果出现超标的，排污单位应加密监测， 并检查超标原因。 短期内无法实现稳定达标排放的， 应向环境保护主管部门提交事故分析报告，说明事故发生的原因，采取减轻或防止污染的措施，以及今后的预防及改进措施等; 若因发生事故或者其他突发事件，排放的污水可能危及城镇排水与污水处理设施安全运行的，应当立即采取措施消除危害，并及时向城镇排水主管部门和环境保护主管部门等有关部门报告",
+      "type": "语义分解",
+      "subject": "监测超标应急报告",
+      "action": "",
+      "operation": "超标增频查因难稳达标报分析突发危及排水设施立即消危报告",
+      "condition": "",
+      "constraint": "7.3 应急报告 监测结果出现超标的，排污单位应加密监测， 并检查超标原因。 短期内无法实现稳定达标排放的， 应向环境保护主管部门提交事故分析报告，说明事故发生的原因，采取减轻或防止污染的措施，以及今后的预防及改进措施等; 若因发生事故或者其他突发事件，排放的污水可能危及城镇排水与污水处理设施安全运行的，应当立即采取措施消除危害，并及时向城镇排水主管部门和环境保护主管部门等有关部门报告",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测超标应急报告"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2891,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

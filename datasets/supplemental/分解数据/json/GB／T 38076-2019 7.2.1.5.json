@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.2.1.5",
+  "entities": [
+    {
+      "name": "第三方损坏预警系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1.5 根据笫三方损坏活动的频繁程度，企业内外部的现状条件，选择安装合适的笫三方损坏预警系统，参见附录巳。",
+      "type": "语义分解",
+      "subject": "第三方损坏预警系统",
+      "action": "",
+      "operation": "按活动频度实际条件选择安装",
+      "condition": "",
+      "constraint": "7.2.1.5 根据笫三方损坏活动的频繁程度，企业内外部的现状条件，选择安装合适的笫三方损坏预警系统，参见附录巳。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三方损坏预警系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1197,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺附录且巳符号异常"
+      ]
+    }
+  }
+}

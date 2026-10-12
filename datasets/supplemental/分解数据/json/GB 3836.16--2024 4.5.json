@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "4.5",
+  "entities": [
+    {
+      "name": "防爆设备环境条件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5 环境条件 危险场所中的电气设备受到使用环境条件的不利影响时，需要额外考虑检查间隔，类型和等级，以及可能出现不利条件的地点的特殊检查要求和维护要求。 注: 通常需要考虑的一些主要因素有:极端低温或极端高温，压力条件，腐蚀性大气 振动 .机械冲击 摩擦或磨损，风 .涂装T艺 .太阳辐射，化学品 .水和潮湿 .粉尘和污垢，植物/动物 /昆虫等。",
+      "type": "语义分解",
+      "subject": "防爆设备环境条件",
+      "action": "",
+      "operation": "受不利条件额外考虑间隔类型等级特殊地点检查维护",
+      "condition": "",
+      "constraint": "4.5 环境条件 危险场所中的电气设备受到使用环境条件的不利影响时，需要额外考虑检查间隔，类型和等级，以及可能出现不利条件的地点的特殊检查要求和维护要求。 注: 通常需要考虑的一些主要因素有:极端低温或极端高温，压力条件，腐蚀性大气 振动 .机械冲击 摩擦或磨损，风 .涂装T艺 .太阳辐射，化学品 .水和潮湿 .粉尘和污垢，植物/动物 /昆虫等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆设备环境条件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3976,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

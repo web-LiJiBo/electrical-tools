@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009676",
+  "entities": [
+    {
+      "name": "OTN 网络可分为传送层、管理层和控制层三个平面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.1  OTN  网络可分为传送层、管理层和控制层三个平面。当\nOTN  网络配置控制层时，应通过控制层提供网络的智能特性，根\n据业务服务等级，实现基于控制层的自动恢复和保护。当 OTN\n网络不配置控制层时，可根据业务需要在传送层提供保护。\n3.1.2 OTN 传送层网络从垂直方向应分为光通路( OCh) 层网\n络、光复用段( OMS)层网络和光传输段( OTS) 层网络三层，相邻\n层之间应为客户/服务者关系(图3.1.2)。",
+      "type": "语义分解",
+      "subject": "OTN 网络可分为传送层、管理层和控制层三个平面",
+      "action": "",
+      "operation": "OTN 网络可分为传送层、管理层和控制层三个平面。当 OTN 网络配置控制层时，应通过控制层提供网络的智能特性，根 据业务服务等级，实现基于控制层的自动恢复和保护。当 OTN 网络不配置控制层时，可根据业务需要在传送层提供保护。 3.1.2 OTN 传送层网络从垂直方向应分为光通路( OCh) 层网 络、光复用段( OMS)层网络和光传输段( OTS) 层网络三层，相邻 层之间应为客户/服务者关系(图3.1.2)。",
+      "condition": "",
+      "constraint": "3.1.1  OTN  网络可分为传送层、管理层和控制层三个平面。当\nOTN  网络配置控制层时，应通过控制层提供网络的智能特性，根\n据业务服务等级，实现基于控制层的自动恢复和保护。当 OTN\n网络不配置控制层时，可根据业务需要在传送层提供保护。\n3.1.2 OTN 传送层网络从垂直方向应分为光通路( OCh) 层网\n络、光复用段( OMS)层网络和光传输段( OTS) 层网络三层，相邻\n层之间应为客户/服务者关系(图3.1.2)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 网络可分为传送层、管理层和控制层三个平面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9676,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

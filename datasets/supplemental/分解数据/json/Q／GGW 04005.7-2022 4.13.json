@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.13",
+  "entities": [
+    {
+      "name": "排污许可指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.13 排污许可指标 统计内容应包括排污许可证中规定的允许排污单位在统计期内排放的二氧化硫 氮氧化物。化学需氧量。氨氮。烟(粉) 尘及挥发性有机物等指标的最大排放量。",
+      "type": "语义分解",
+      "subject": "排污许可指标",
+      "action": "",
+      "operation": "统计许可证规定的污染物最大排放量",
+      "condition": "统计期内",
+      "constraint": "4.13 排污许可指标 统计内容应包括排污许可证中规定的允许排污单位在统计期内排放的二氧化硫 氮氧化物。化学需氧量。氨氮。烟(粉) 尘及挥发性有机物等指标的最大排放量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污许可指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 615,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "11.1.2",
+  "entities": [
+    {
+      "name": "非标准监测分析方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.2 尚无国家和行业标准分析方法的,或采用围家和行业标准方法不能得到合格测定数据的,可选 用其他方法,但应按照 HJ 168 的要求进行方法确认和验证, 方法检出限 测定卜限 准确度和精密度 应满足环境监测项且的要求",
+      "type": "语义分解",
+      "subject": "非标准监测分析方法",
+      "action": "",
+      "operation": "无适用合格标准方法时确认验证其他方法",
+      "condition": "",
+      "constraint": "11.1.2 尚无国家和行业标准分析方法的,或采用围家和行业标准方法不能得到合格测定数据的,可选 用其他方法,但应按照 HJ 168 的要求进行方法确认和验证, 方法检出限 测定卜限 准确度和精密度 应满足环境监测项且的要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非标准监测分析方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 519,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

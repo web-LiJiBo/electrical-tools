@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.4.9",
+  "entities": [
+    {
+      "name": "通信和UPS蓄电池",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.4.9    通信高频开关组合电源蓄电池组宜与 UPS 蓄电池组放\n置在同一房间内 。",
+      "type": "语义分解",
+      "subject": "通信和UPS蓄电池",
+      "action": "",
+      "operation": "宜放同一房间",
+      "condition": "",
+      "constraint": "14.4.9    通信高频开关组合电源蓄电池组宜与 UPS 蓄电池组放\n置在同一房间内 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信和UPS蓄电池"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12090,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010122",
+  "entities": [
+    {
+      "name": "系统输出抖动测试可采用环回法或对测法，环回法指标可 按单向指标考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    系统输出抖动测试可采用环回法或对测法，环回法指标可\n按单向指标考核；测试时间为60秒，在R 点或 S 点测试，结果应\n符合设计指标要求；",
+      "type": "语义分解",
+      "subject": "系统输出抖动测试可采用环回法或对测法，环回法指标可 按单向指标考核",
+      "action": "",
+      "operation": "系统输出抖动测试可采用环回法或对测法，环回法指标可 按单向指标考核；测试时间为60秒，在R 点或 S 点测试，结果应 符合设计指标要求",
+      "condition": "",
+      "constraint": "      2    系统输出抖动测试可采用环回法或对测法，环回法指标可\n按单向指标考核；测试时间为60秒，在R 点或 S 点测试，结果应\n符合设计指标要求；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统输出抖动测试可采用环回法或对测法，环回法指标可 按单向指标考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10122,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

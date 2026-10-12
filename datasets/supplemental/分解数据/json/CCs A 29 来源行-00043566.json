@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043566",
+  "entities": [
+    {
+      "name": ". 3 . 4 . 1 进行化学成分分析时，每批锌阳极应于炉前或产品上分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8 . 3 . 4 . 1     进行化学成分分析时，每批锌阳极应于炉前或产品上分别取 3 个试样进行化学成分分析。  炉\n前取样时，从熔炼炉上下取浇铸液制备试样；产品上取样时，随机任意抽检 3 个阳极产品，分别在每个阳\n极产品上取 1 份分析试样，取样部位应避开铁芯和浇铸口 。  每个试样上的取样量为 20 g 以上的碎屑或\n试块，取样用的钻头或刀具应清洁干净，试样中不应混入杂质。",
+      "type": "语义分解",
+      "subject": ". 3 . 4 . 1 进行化学成分分析时，每批锌阳极应于炉前或产品上分",
+      "action": "",
+      "operation": ". 3 . 4 . 1 进行化学成分分析时，每批锌阳极应于炉前或产品上分别取 3 个试样进行化学成分分析。 炉 前取样时，从熔炼炉上下取浇铸液制备试样；产品上取样时，随机任意抽检 3 个阳极产品，分别在每个阳 极产品上取 1 份分析试样，取样部位应避开铁芯和浇铸口 。 每个试样上的取样量为 20 g 以上的碎屑或 试块，取样用的钻头或刀具应清洁干净，试样中不应混入杂质。",
+      "condition": "",
+      "constraint": "8 . 3 . 4 . 1     进行化学成分分析时，每批锌阳极应于炉前或产品上分别取 3 个试样进行化学成分分析。  炉\n前取样时，从熔炼炉上下取浇铸液制备试样；产品上取样时，随机任意抽检 3 个阳极产品，分别在每个阳\n极产品上取 1 份分析试样，取样部位应避开铁芯和浇铸口 。  每个试样上的取样量为 20 g 以上的碎屑或\n试块，取样用的钻头或刀具应清洁干净，试样中不应混入杂质。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 3 . 4 . 1 进行化学成分分析时，每批锌阳极应于炉前或产品上分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43566,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

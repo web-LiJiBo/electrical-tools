@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.6.2.1",
+  "entities": [
+    {
+      "name": "制药监测对象",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.2.1 有组织废气排放监测; 厂界无组织废气排放监测 (同时记录风向、风速、气温、气压等气象参数及天气情况); 废水车间及总排口污染物排放监测, 项目雨排口监测; 噪声监测;",
+      "type": "语义分解",
+      "subject": "制药监测对象",
+      "action": "",
+      "operation": "测有组织无组织废气并记气象废水车间总雨排口及噪声",
+      "condition": "",
+      "constraint": "6.6.2.1 有组织废气排放监测; 厂界无组织废气排放监测 (同时记录风向、风速、气温、气压等气象参数及天气情况); 废水车间及总排口污染物排放监测, 项目雨排口监测; 噪声监测;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药监测对象"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2757,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

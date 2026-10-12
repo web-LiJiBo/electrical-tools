@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.1.9",
+  "entities": [
+    {
+      "name": "环保治理设施统计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.9 环保治理设施数不应统计备用的。统计周期内未运行的或已报废的设施。",
+      "type": "语义分解",
+      "subject": "环保治理设施统计",
+      "action": "",
+      "operation": "排除备用未运行及报废设施",
+      "condition": "",
+      "constraint": "4.1.9 环保治理设施数不应统计备用的。统计周期内未运行的或已报废的设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环保治理设施统计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 570,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

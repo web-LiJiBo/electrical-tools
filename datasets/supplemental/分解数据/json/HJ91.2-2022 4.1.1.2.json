@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.1.2",
+  "entities": [
+    {
+      "name": "河流监测断面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1.2 监测断面的布设应避开死水区,回水区 排污口处。尽量设置在顺直河段上,选择河床稳定 水流平稳 水面宽阔, 无急流或浅滩_ 方便采样处。",
+      "type": "语义分解",
+      "subject": "河流监测断面",
+      "action": "",
+      "operation": "避开死水回流排污并选稳定便利河段",
+      "condition": "",
+      "constraint": "4.1.1.2 监测断面的布设应避开死水区,回水区 排污口处。尽量设置在顺直河段上,选择河床稳定 水流平稳 水面宽阔, 无急流或浅滩_ 方便采样处。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "河流监测断面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2931,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

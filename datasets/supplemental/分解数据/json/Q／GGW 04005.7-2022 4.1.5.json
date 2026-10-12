@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.1.5",
+  "entities": [
+    {
+      "name": "废水排放量统计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.5 废水排放量统计范围应包括事故状态和非正常状态导致的废水排放量。",
+      "type": "语义分解",
+      "subject": "废水排放量统计",
+      "action": "",
+      "operation": "纳入事故和非正常状态废水",
+      "condition": "",
+      "constraint": "4.1.5 废水排放量统计范围应包括事故状态和非正常状态导致的废水排放量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水排放量统计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 566,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

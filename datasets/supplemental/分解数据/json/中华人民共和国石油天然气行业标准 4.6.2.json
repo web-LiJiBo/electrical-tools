@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.6.2",
+  "entities": [
+    {
+      "name": "公网电路性能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.2    公网电路传输误码率不应大于 1 x 10-6 ,  有线电路的可用\n性不应低于 99 . 97% ,  无线电路的可用性不应低于 99 .5%。\n4.6.3    端到端单方向的数据传输时间不应大于  (10+0.o1G)  ms ,\n其中 G是电路长度  (km) 。",
+      "type": "语义分解",
+      "subject": "公网电路性能",
+      "action": "",
+      "operation": "误码率不大于1乘10负6有线可用性至少99.97%无线至少99.5%单向时延依原公式",
+      "condition": "",
+      "constraint": "4.6.2    公网电路传输误码率不应大于 1 x 10-6 ,  有线电路的可用\n性不应低于 99 . 97% ,  无线电路的可用性不应低于 99 .5%。\n4.6.3    端到端单方向的数据传输时间不应大于  (10+0.o1G)  ms ,\n其中 G是电路长度  (km) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "公网电路性能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11807,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含4.6.3公式0.o1G识别异常待核对"
+      ]
+    }
+  }
+}

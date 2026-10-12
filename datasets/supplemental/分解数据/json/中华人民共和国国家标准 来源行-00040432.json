@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040432",
+  "entities": [
+    {
+      "name": "在选择处理方案时，应充分考虑可能产生的二次污染问 题，尽量不采用此类方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.6       在选择处理方案时，应充分考虑可能产生的二次污染问\n题，尽量不采用此类方案。如果不可避免，则应对产生的二次污染\n进行处理。",
+      "type": "语义分解",
+      "subject": "在选择处理方案时，应充分考虑可能产生的二次污染问 题，尽量不采用此类方案",
+      "action": "",
+      "operation": "在选择处理方案时，应充分考虑可能产生的二次污染问 题，尽量不采用此类方案。如果不可避免，则应对产生的二次污染 进行处理。",
+      "condition": "",
+      "constraint": "6.4.6       在选择处理方案时，应充分考虑可能产生的二次污染问\n题，尽量不采用此类方案。如果不可避免，则应对产生的二次污染\n进行处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在选择处理方案时，应充分考虑可能产生的二次污染问 题，尽量不采用此类方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40432,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

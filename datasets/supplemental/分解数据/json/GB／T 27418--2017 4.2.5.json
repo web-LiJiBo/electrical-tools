@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.5",
+  "entities": [
+    {
+      "name": "最小二乘法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5 通常输入量孓;的估计值-;由实验数据用最小二乘法拟合一条曲线得到 ,表征曲线拟合参数和 曲线上任何预期点的估计方差以及标准不确定度可以用已知的统计程序评定(见E.3 和参考文献[8]) =。",
+      "type": "语义分解",
+      "subject": "最小二乘法",
+      "action": "",
+      "operation": "拟合输入量估计值并评定不确定度",
+      "condition": "",
+      "constraint": "用最小二乘法拟合一条曲线",
+      "constraint_role": "informational",
+      "related_entities": [
+        "最小二乘法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量符号识别错误；只提取方法说明"
+      ]
+    }
+  }
+}

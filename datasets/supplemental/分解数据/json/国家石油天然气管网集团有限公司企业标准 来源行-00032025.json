@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/  GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00032025",
+  "entities": [
+    {
+      "name": "[17]中共中央国务院关于推进安全生产领域改革发展的意见(中发〔2016",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "[17]中共中央国务院关于推进安全生产领域改革发展的意见(中发〔2016〕32号)\n[18]  生产经营单位安全培训规定(国家安全监管总局令第3号)",
+      "type": "语义分解",
+      "subject": "[17]中共中央国务院关于推进安全生产领域改革发展的意见(中发〔2016",
+      "action": "",
+      "operation": "[17]中共中央国务院关于推进安全生产领域改革发展的意见(中发〔2016〕32号) [18] 生产经营单位安全培训规定(国家安全监管总局令第3号)",
+      "condition": "",
+      "constraint": "[17]中共中央国务院关于推进安全生产领域改革发展的意见(中发〔2016〕32号)\n[18]  生产经营单位安全培训规定(国家安全监管总局令第3号)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "[17]中共中央国务院关于推进安全生产领域改革发展的意见(中发〔2016"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32025,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

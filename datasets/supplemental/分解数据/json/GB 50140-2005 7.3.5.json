@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "7.3.5",
+  "entities": [
+    {
+      "name": "灭火器配置设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.5 灭火器配置的设计计算可按下述程序进行: 1 确定各灭火器配置场所的火灾种类和危险等级; 2 划分计算单元 ,计算各计算单元的保护面积; 3 计算各计算单元的最小需配灭火级别; 确定各计算单元中的灭火器设置点的位置和数量; 5 计算每个灭火器设置点的最小需配灭火级别; 确定每个设置点灭火器的类型.规格与数量; 7 确定每具灭火器的设置方式和要求; 8 在工程设计图上用灭火器图例和文字标明灭火器的型号数量与设置位置=",
+      "type": "语义分解",
+      "subject": "灭火器配置设计",
+      "action": "",
+      "operation": "依次确定火灾危险划分面积级别设置点及类型规格数量方式并在图上标注",
+      "condition": "",
+      "constraint": "7.3.5 灭火器配置的设计计算可按下述程序进行: 1 确定各灭火器配置场所的火灾种类和危险等级; 2 划分计算单元 ,计算各计算单元的保护面积; 3 计算各计算单元的最小需配灭火级别; 确定各计算单元中的灭火器设置点的位置和数量; 5 计算每个灭火器设置点的最小需配灭火级别; 确定每个设置点灭火器的类型.规格与数量; 7 确定每具灭火器的设置方式和要求; 8 在工程设计图上用灭火器图例和文字标明灭火器的型号数量与设置位置=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器配置设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4082,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；完整步骤以原文为准"
+      ]
+    }
+  }
+}

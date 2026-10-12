@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.5.1",
+  "entities": [
+    {
+      "name": "周边质量监测点位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1 监测点位 排污单位厂界周边的土壤，地表水，地下水。大气等环境质量影响监测点位参照排污单位环境影响评价文件及其批复及其他环境管理要求设置。 如环境影响评价文件及其批复及其他文件中均末作出要求，排污单位需要开展周边环境质量影响监测的，环境质量影响监测点位设置的原则和方法参照 HJ2.1, HJ 2.2, HJIT 2.3, HJ 2.4, HJ 610等规定各类环境影响监测点位设置按照 HJIT 91 , HJIT 164, HJ442, HJIT 194, HJIT 166 等执行=",
+      "type": "语义分解",
+      "subject": "周边质量监测点位",
+      "action": "",
+      "operation": "按环评批复管理无要求且需监测按导则各类型规范布点",
+      "condition": "",
+      "constraint": "5.5.1 监测点位 排污单位厂界周边的土壤，地表水，地下水。大气等环境质量影响监测点位参照排污单位环境影响评价文件及其批复及其他环境管理要求设置。 如环境影响评价文件及其批复及其他文件中均末作出要求，排污单位需要开展周边环境质量影响监测的，环境质量影响监测点位设置的原则和方法参照 HJ2.1, HJ 2.2, HJIT 2.3, HJ 2.4, HJ 610等规定各类环境影响监测点位设置按照 HJIT 91 , HJIT 164, HJ442, HJIT 194, HJIT 166 等执行=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "周边质量监测点位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2858,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

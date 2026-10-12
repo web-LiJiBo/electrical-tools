@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009239",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1  波分复用系统工程的局站有光终端站、光分路站、光放站\n三种站型。配置有光终端复用设备( OTM) 的局站为光终端站；中\n间节点，通过光分插复用设备( OADM) 来上下光通路的局站，为\n光分路站；中间节点，对光信号进行光放大中继的局站为光放站。\t(2)",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "4.1.1  波分复用系统工程的局站有光终端站、光分路站、光放站\n三种站型。配置有光终端复用设备( OTM) 的局站为光终端站；中\n间节点，通过光分插复用设备( OADM) 来上下光通路的局站，为\n光分路站；中间节点，对光信号进行光放大中继的局站为光放站。\t(2)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9239,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

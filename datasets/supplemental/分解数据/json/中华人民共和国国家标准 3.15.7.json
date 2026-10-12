@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.15.7",
+  "entities": [
+    {
+      "name": "直埋通信与低压进站电缆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.15.7      局间或高山微波站、基站的直埋光缆与进站低压电力电\n缆，可利用沟槽同沟埋设，埋深宜根据地质情况和满足进局低压电\n力电缆的要求确定。",
+      "type": "语义分解",
+      "subject": "直埋通信与低压进站电缆",
+      "action": "",
+      "operation": "可同沟埋设埋深按地质及电缆要求确定",
+      "condition": "",
+      "constraint": "3.15.7      局间或高山微波站、基站的直埋光缆与进站低压电力电\n缆，可利用沟槽同沟埋设，埋深宜根据地质情况和满足进局低压电\n力电缆的要求确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "直埋通信与低压进站电缆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22490,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

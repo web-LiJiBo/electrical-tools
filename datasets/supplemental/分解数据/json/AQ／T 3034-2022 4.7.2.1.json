@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.7.2.1",
+  "entities": [
+    {
+      "name": "项目设计资质",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.2.1 企业应委托具备国家资质要求的设计单位承担建设项目工程设计职责。 涉及重点监管危险 化学品 ,重点监管危险化工工艺和危险化学品重大危险源(\"两重点 重大\")的大型建设项目 ,其设计单 位资质应为工程设计综合甲级资质或相应工程设计化工石化医药 .石油天然气(海洋石油 )行业 .专业资 质甲级。",
+      "type": "语义分解",
+      "subject": "项目设计资质",
+      "action": "",
+      "operation": "委托合资质单位两重点一重大大型项目综合或相关行业专业甲级",
+      "condition": "",
+      "constraint": "4.7.2.1 企业应委托具备国家资质要求的设计单位承担建设项目工程设计职责。 涉及重点监管危险 化学品 ,重点监管危险化工工艺和危险化学品重大危险源(\"两重点 重大\")的大型建设项目 ,其设计单 位资质应为工程设计综合甲级资质或相应工程设计化工石化医药 .石油天然气(海洋石油 )行业 .专业资 质甲级。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "项目设计资质"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5111,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

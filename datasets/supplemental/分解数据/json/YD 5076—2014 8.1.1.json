@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "固定电话信令",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1   固定电话网交换局间应尽量采用No.7  公共信道信令，\nNo.7    公共信道信令应符合YDN 038《国 内No.7 信令方式技术规\n范综合业务数字网用户部分( ISUP)》、YDN 038.1《国内No.7  信\n令方式技术规范综合业务数字网用户部分(ISUP) ( 补充修改件)》、\nGF  001《中国国内电话网 No.7  信令方式技术规范(暂行规定)》、\nGF010《 国 内 No.7  信令方式技术规范信令连接控制部分(SCCP)\n(暂行规定)》和GF 011《国内No.7 信令方式技术规范事务处理能\n力( TC)  部分(暂行规定)》的相关规定。ISDN 用户信令应符合\nYDN   034《ISDN 用户—网络接口规范》。国际局与对端运营商之\n间 宜 采 用 ITU-T    No.7信令方式。",
+      "type": "语义分解",
+      "subject": "固定电话信令",
+      "action": "",
+      "operation": "局间尽量No.7符合所列规范ISDN按YDN034国际宜ITU-TNo.7",
+      "condition": "",
+      "constraint": "8.1.1   固定电话网交换局间应尽量采用No.7  公共信道信令，\nNo.7    公共信道信令应符合YDN 038《国 内No.7 信令方式技术规\n范综合业务数字网用户部分( ISUP)》、YDN 038.1《国内No.7  信\n令方式技术规范综合业务数字网用户部分(ISUP) ( 补充修改件)》、\nGF  001《中国国内电话网 No.7  信令方式技术规范(暂行规定)》、\nGF010《 国 内 No.7  信令方式技术规范信令连接控制部分(SCCP)\n(暂行规定)》和GF 011《国内No.7 信令方式技术规范事务处理能\n力( TC)  部分(暂行规定)》的相关规定。ISDN 用户信令应符合\nYDN   034《ISDN 用户—网络接口规范》。国际局与对端运营商之\n间 宜 采 用 ITU-T    No.7信令方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固定电话信令"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26000,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

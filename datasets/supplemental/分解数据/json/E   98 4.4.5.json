@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "4.4.5",
+  "entities": [
+    {
+      "name": "金属管道、衬里和涂层性能的检验和试验应符合现行国 家规范或行业规范的相关",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.5   金属管道、衬里和涂层性能的检验和试验应符合现行国\n家规范或行业规范的相关要求。组装后的绝缘短管的检验和试\n验应符合国家现行标准《绝缘接头与绝缘法兰技术规范》SY/T\n0516的相关要求。",
+      "type": "语义分解",
+      "subject": "金属管道、衬里和涂层性能的检验和试验应符合现行国 家规范或行业规范的相关",
+      "action": "",
+      "operation": "金属管道、衬里和涂层性能的检验和试验应符合现行国 家规范或行业规范的相关要求。组装后的绝缘短管的检验和试 验应符合国家现行标准《绝缘接头与绝缘法兰技术规范》SY/T 0516的相关要求。",
+      "condition": "",
+      "constraint": "4.4.5   金属管道、衬里和涂层性能的检验和试验应符合现行国\n家规范或行业规范的相关要求。组装后的绝缘短管的检验和试\n验应符合国家现行标准《绝缘接头与绝缘法兰技术规范》SY/T\n0516的相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "金属管道、衬里和涂层性能的检验和试验应符合现行国 家规范或行业规范的相关"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44375,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

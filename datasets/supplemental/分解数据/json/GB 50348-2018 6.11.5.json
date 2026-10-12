@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.11.5",
+  "entities": [
+    {
+      "name": "监控中心接地汇集",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.5 监控中心内应设置接地汇集环或汇集排，汇集环或汇集排宜采用裸铜质导体，其截面积不应小于35mm²。",
+      "type": "语义分解",
+      "subject": "监控中心接地汇集",
+      "action": "",
+      "operation": "宜裸铜导体截面积至少35平方毫米",
+      "condition": "",
+      "constraint": "6.11.5 监控中心内应设置接地汇集环或汇集排，汇集环或汇集排宜采用裸铜质导体，其截面积不应小于35mm²。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监控中心接地汇集"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7038,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -10,7 +10,8 @@ class InstructionService:
         self.extractor = SemanticExtractor()
         self.generator = generator or InstructionGenerationService()
 
-    def generate_for_clause(self, unit: ClauseKnowledgeUnit, context: ScenarioContext, device_config: dict, protocol: str = ""):
+    def generate_for_clause(self, unit: ClauseKnowledgeUnit, context: ScenarioContext, device_config: dict, protocol: str = "", *, facts: dict | None = None):
         if not unit.rules:
             return []
-        return [self.generator.generate(self.extractor.extract_rule(rule, unit), context, device_config, protocol) for rule in unit.rules]
+        return [self.generator.generate(self.extractor.extract_rule(rule, unit), context, device_config, protocol, facts=facts) for rule in unit.rules]
+

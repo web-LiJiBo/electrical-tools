@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.4.6",
+  "entities": [
+    {
+      "name": "出入口控制系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.6 出入口控制系统应根据不同的通行对象进出各受控区的安全管理要求，在出入口处对其所持有的凭证进行识别查验，对其进出实施授权、实时控制与管理，满足实际应用需求。",
+      "type": "语义分解",
+      "subject": "出入口控制系统",
+      "action": "",
+      "operation": "查验凭证授权实时管理通行",
+      "condition": "",
+      "constraint": "6.4.6 出入口控制系统应根据不同的通行对象进出各受控区的安全管理要求，在出入口处对其所持有的凭证进行识别查验，对其进出实施授权、实时控制与管理，满足实际应用需求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "出入口控制系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6971,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

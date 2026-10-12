@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037826",
+  "entities": [
+    {
+      "name": "d）CH4 逃逸排放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   d）CH4 逃逸排放：包括但不限于阀门、法兰、压缩机密封、减压阀、\n取样接 口、开 口管路、储罐泄漏及未被定义为工艺放空的其他压力设备泄\n\n漏排放。需计算来自天然气储运和原油管道输送过程中的 CH4 逃逸排放。\n\n   e) CH4 回收利用：包括但不限于放空回收、压缩机放空回收等。需从\n报告主体的总排放量中予以扣除。",
+      "type": "语义分解",
+      "subject": "d）CH4 逃逸排放",
+      "action": "",
+      "operation": "d）CH4 逃逸排放：包括但不限于阀门、法兰、压缩机密封、减压阀、 取样接 口、开 口管路、储罐泄漏及未被定义为工艺放空的其他压力设备泄 漏排放。需计算来自天然气储运和原油管道输送过程中的 CH4 逃逸排放。 e) CH4 回收利用：包括但不限于放空回收、压缩机放空回收等。需从 报告主体的总排放量中予以扣除。",
+      "condition": "",
+      "constraint": "   d）CH4 逃逸排放：包括但不限于阀门、法兰、压缩机密封、减压阀、\n取样接 口、开 口管路、储罐泄漏及未被定义为工艺放空的其他压力设备泄\n\n漏排放。需计算来自天然气储运和原油管道输送过程中的 CH4 逃逸排放。\n\n   e) CH4 回收利用：包括但不限于放空回收、压缩机放空回收等。需从\n报告主体的总排放量中予以扣除。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d）CH4 逃逸排放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37826,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

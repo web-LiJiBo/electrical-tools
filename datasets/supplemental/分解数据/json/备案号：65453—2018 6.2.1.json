@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "开展检测前，宜对预评价步骤确定的每个ECDA 管段边 界进行确认并设置明",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1 开展检测前，宜对预评价步骤确定的每个ECDA 管段边\n界进行确认并设置明显标记。",
+      "type": "语义分解",
+      "subject": "开展检测前，宜对预评价步骤确定的每个ECDA 管段边 界进行确认并设置明",
+      "action": "",
+      "operation": "开展检测前，宜对预评价步骤确定的每个ECDA 管段边 界进行确认并设置明显标记。",
+      "condition": "",
+      "constraint": "6.2.1 开展检测前，宜对预评价步骤确定的每个ECDA 管段边\n界进行确认并设置明显标记。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开展检测前，宜对预评价步骤确定的每个ECDA 管段边 界进行确认并设置明"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44990,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

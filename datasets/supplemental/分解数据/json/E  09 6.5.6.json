@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "6.5.6",
+  "entities": [
+    {
+      "name": "对腐蚀问题、有故障倾向的设备以及故障的提前识别，应制定操作程序，以便在环",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.6     对腐蚀问题、有故障倾向的设备以及故障的提前识别，应制定操作程序，以便在环境方面或\n安全方面采取补救措施。及时进行故障分析，有助于制定管线更换的时间表。\n6.5.7     应遵守相应工业规程进行记录、修理、报告泄漏等。",
+      "type": "语义分解",
+      "subject": "对腐蚀问题、有故障倾向的设备以及故障的提前识别，应制定操作程序，以便在环",
+      "action": "",
+      "operation": "对腐蚀问题、有故障倾向的设备以及故障的提前识别，应制定操作程序，以便在环境方面或 安全方面采取补救措施。及时进行故障分析，有助于制定管线更换的时间表。 6.5.7 应遵守相应工业规程进行记录、修理、报告泄漏等。",
+      "condition": "",
+      "constraint": "6.5.6     对腐蚀问题、有故障倾向的设备以及故障的提前识别，应制定操作程序，以便在环境方面或\n安全方面采取补救措施。及时进行故障分析，有助于制定管线更换的时间表。\n6.5.7     应遵守相应工业规程进行记录、修理、报告泄漏等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对腐蚀问题、有故障倾向的设备以及故障的提前识别，应制定操作程序，以便在环"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41242,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.2.1",
+  "entities": [
+    {
+      "name": "增安型绕组保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.2.1 保护等级\"\"eb'' 保护等级\"eb\"的检查项目按照表 A.1中的 Ex\"e\"栏 注: 保护等级\"eb'和早期防爆型式\"e'在技术上等效。 增安型电动机的绕组采用合适的保护装置，以确保运行时不会超过极限温度。 根据被保护电动机 的启动电流比 IA/Iv，核对保护装置的冷态跳闸时间不超过电动机铭牌上规定的 tc 时间，其最大误差 为十20 % = 对于修理过的电机，应重新核验 tr 时间，并检查保护装置的设置 运行中的跳闸时间，可与初始检查的结果进行核对 _",
+      "type": "语义分解",
+      "subject": "增安型绕组保护",
+      "action": "",
+      "operation": "依检查表确认温升保护及冷态动作时间修复后复核并与初检比较",
+      "condition": "",
+      "constraint": "5.7.2.1 保护等级\"\"eb'' 保护等级\"eb\"的检查项目按照表 A.1中的 Ex\"e\"栏 注: 保护等级\"eb'和早期防爆型式\"e'在技术上等效。 增安型电动机的绕组采用合适的保护装置，以确保运行时不会超过极限温度。 根据被保护电动机 的启动电流比 IA/Iv，核对保护装置的冷态跳闸时间不超过电动机铭牌上规定的 tc 时间，其最大误差 为十20 % = 对于修理过的电机，应重新核验 tr 时间，并检查保护装置的设置 运行中的跳闸时间，可与初始检查的结果进行核对 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "增安型绕组保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4002,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；tc与tr及十20%等符号异常需原件校核不得换算"
+      ]
+    }
+  }
+}

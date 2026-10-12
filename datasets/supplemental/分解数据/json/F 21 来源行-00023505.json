@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023505",
+  "entities": [
+    {
+      "name": "GPP TS29. 002 数 字 蜂 窝 通 信 系 统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3GPP TS29. 002   数 字 蜂 窝 通 信 系 统 ; 通 用 移 动 通 信 系 统 ; 移 动 应 用 部 分 规 范(Digital Cellular\nTelecommunicationsSystem; UniversalMobile TelecommunicationsSystem; Mobile Application Part\nSpecification)",
+      "type": "语义分解",
+      "subject": "GPP TS29. 002 数 字 蜂 窝 通 信 系 统",
+      "action": "",
+      "operation": "GPP TS29. 002 数 字 蜂 窝 通 信 系 统 ; 通 用 移 动 通 信 系 统 ; 移 动 应 用 部 分 规 范(Digital Cellular TelecommunicationsSystem; UniversalMobile TelecommunicationsSystem; Mobile Application Part Specification)",
+      "condition": "",
+      "constraint": "      3GPP TS29. 002   数 字 蜂 窝 通 信 系 统 ; 通 用 移 动 通 信 系 统 ; 移 动 应 用 部 分 规 范(Digital Cellular\nTelecommunicationsSystem; UniversalMobile TelecommunicationsSystem; Mobile Application Part\nSpecification)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "GPP TS29. 002 数 字 蜂 窝 通 信 系 统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

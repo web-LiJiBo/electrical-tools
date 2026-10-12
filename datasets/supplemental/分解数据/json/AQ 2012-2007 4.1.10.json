@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.1.10",
+  "entities": [
+    {
+      "name": "油气防火防爆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.10 企业应制定石油天然气钻井 ,开发 ,储运防火防爆管理制度;钻井和井下作业应配备井控装置和采取防喷措施;使用电气设备应符合防火防爆安全技术要求 ;配备消防设施,器材;制定防火防爆应急预案。井场布置应符合井场布置技术要求 ,平面布置和防火间距应符合防火设计规范的要求。",
+      "type": "语义分解",
+      "subject": "油气防火防爆",
+      "action": "",
+      "operation": "建立制度井控防喷合规电气消防应急预案井场布置及防火间距合规",
+      "condition": "",
+      "constraint": "4.1.10 企业应制定石油天然气钻井 ,开发 ,储运防火防爆管理制度;钻井和井下作业应配备井控装置和采取防喷措施;使用电气设备应符合防火防爆安全技术要求 ;配备消防设施,器材;制定防火防爆应急预案。井场布置应符合井场布置技术要求 ,平面布置和防火间距应符合防火设计规范的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气防火防爆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4210,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

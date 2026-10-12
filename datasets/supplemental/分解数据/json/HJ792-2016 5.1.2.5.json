@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.1.2.5",
+  "entities": [
+    {
+      "name": "制药环保管理分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.5 建设项目环境保护管理情况 包括环境管理机构的设置及环保规章制度建立，环境保护监测站的设立及日常监测计划，固体废物的处理处置要求等。并将环境保护投资计划 (包括环境保护设施、措施、监测设备等) 列表统计待现场勘查时核对。",
+      "type": "语义分解",
+      "subject": "制药环保管理分析",
+      "action": "",
+      "operation": "核机构制度监测废物及环保投资计划列表现场核对",
+      "condition": "",
+      "constraint": "5.1.2.5 建设项目环境保护管理情况 包括环境管理机构的设置及环保规章制度建立，环境保护监测站的设立及日常监测计划，固体废物的处理处置要求等。并将环境保护投资计划 (包括环境保护设施、措施、监测设备等) 列表统计待现场勘查时核对。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药环保管理分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2711,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045076",
+  "entities": [
+    {
+      "name": "对列入二类的点，开挖数量宜按下列情况确定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  2   对列入二类的点，开挖数量宜按下列情况确定：\n   1)在同一ECDA 管段中，二类点应至少选择一处相对\n     严重的点进行开挖检测。首次开展ECDA 时，宜至\n      少选择两处。",
+      "type": "语义分解",
+      "subject": "对列入二类的点，开挖数量宜按下列情况确定",
+      "action": "",
+      "operation": "对列入二类的点，开挖数量宜按下列情况确定： 1)在同一ECDA 管段中，二类点应至少选择一处相对 严重的点进行开挖检测。首次开展ECDA 时，宜至 少选择两处。",
+      "condition": "",
+      "constraint": "  2   对列入二类的点，开挖数量宜按下列情况确定：\n   1)在同一ECDA 管段中，二类点应至少选择一处相对\n     严重的点进行开挖检测。首次开展ECDA 时，宜至\n      少选择两处。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对列入二类的点，开挖数量宜按下列情况确定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45076,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.1.6",
+  "entities": [
+    {
+      "name": "油气管道穿越沙漠边缘区流动沙丘和半流动沙丘应优先采用沙障固沙，阻止沙丘流",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1.6        油气管道穿越沙漠边缘区流动沙丘和半流动沙丘应优先采用沙障固沙，阻止沙丘流动，再营\n造防风固沙林带；沙障的设计和施工应符合现行国家标准GB/T     16453.5 的有关规定。",
+      "type": "语义分解",
+      "subject": "油气管道穿越沙漠边缘区流动沙丘和半流动沙丘应优先采用沙障固沙，阻止沙丘流",
+      "action": "",
+      "operation": "油气管道穿越沙漠边缘区流动沙丘和半流动沙丘应优先采用沙障固沙，阻止沙丘流动，再营 造防风固沙林带；沙障的设计和施工应符合现行国家标准GB/T 16453.5 的有关规定。",
+      "condition": "",
+      "constraint": "6.3.1.6        油气管道穿越沙漠边缘区流动沙丘和半流动沙丘应优先采用沙障固沙，阻止沙丘流动，再营\n造防风固沙林带；沙障的设计和施工应符合现行国家标准GB/T     16453.5 的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气管道穿越沙漠边缘区流动沙丘和半流动沙丘应优先采用沙障固沙，阻止沙丘流"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40747,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

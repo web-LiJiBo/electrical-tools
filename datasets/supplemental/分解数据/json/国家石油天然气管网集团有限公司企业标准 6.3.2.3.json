@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.2.3",
+  "entities": [
+    {
+      "name": "风蚀坑沙地采用机械进行沙地平整，采用物理沙障+生物沙障+人工补播草种+枯",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2.3        风蚀坑沙地采用机械进行沙地平整，采用物理沙障+生物沙障+人工补播草种+枯草铺设的生\n态恢复方法进行治理。",
+      "type": "语义分解",
+      "subject": "风蚀坑沙地采用机械进行沙地平整，采用物理沙障+生物沙障+人工补播草种+枯",
+      "action": "",
+      "operation": "风蚀坑沙地采用机械进行沙地平整，采用物理沙障+生物沙障+人工补播草种+枯草铺设的生 态恢复方法进行治理。",
+      "condition": "",
+      "constraint": "6.3.2.3        风蚀坑沙地采用机械进行沙地平整，采用物理沙障+生物沙障+人工补播草种+枯草铺设的生\n态恢复方法进行治理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风蚀坑沙地采用机械进行沙地平整，采用物理沙障+生物沙障+人工补播草种+枯"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40752,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

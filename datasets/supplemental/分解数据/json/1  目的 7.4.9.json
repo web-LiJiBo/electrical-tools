@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "7.4.9",
+  "entities": [
+    {
+      "name": "每月至少应召开一次监督区域分中心监督例会，对阶段 性的监督工作进行总结和",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     7.4.9 每月至少应召开一次监督区域分中心监督例会，对阶段\n\n性的监督工作进行总结和通报，  将工作总结上报集团公司安全环\n\n保监督中心。阶段性的监督工作总结主要包括以下内容：",
+      "type": "语义分解",
+      "subject": "每月至少应召开一次监督区域分中心监督例会，对阶段 性的监督工作进行总结和",
+      "action": "",
+      "operation": "每月至少应召开一次监督区域分中心监督例会，对阶段 性的监督工作进行总结和通报， 将工作总结上报集团公司安全环 保监督中心。阶段性的监督工作总结主要包括以下内容",
+      "condition": "",
+      "constraint": "     7.4.9 每月至少应召开一次监督区域分中心监督例会，对阶段\n\n性的监督工作进行总结和通报，  将工作总结上报集团公司安全环\n\n保监督中心。阶段性的监督工作总结主要包括以下内容：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "每月至少应召开一次监督区域分中心监督例会，对阶段 性的监督工作进行总结和"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29575,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

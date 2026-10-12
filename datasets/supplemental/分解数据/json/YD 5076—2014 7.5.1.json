@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "7.5.1",
+  "entities": [
+    {
+      "name": "国内信令点编码",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.1     固定电话网交换机的信令点编码格式应符合以下要求：\n   我国国内信令网采用24 bit 的全国统一的编码，信令点的编码\n格式如图7.5.1所示。",
+      "type": "语义分解",
+      "subject": "国内信令点编码",
+      "action": "",
+      "operation": "24位全国统一按引用图格式",
+      "condition": "",
+      "constraint": "7.5.1     固定电话网交换机的信令点编码格式应符合以下要求：\n   我国国内信令网采用24 bit 的全国统一的编码，信令点的编码\n格式如图7.5.1所示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "国内信令点编码"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25976,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；图未提供"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023374",
+  "entities": [
+    {
+      "name": "接地参考点( ERP), 是指一信息设备或系统的等电位连 接网络与共用接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.2  接地参考点( ERP),  是指一信息设备或系统的等电位连\n接网络与共用接地系统之间唯一的一点连接点。实际上，接地参\n考点并不是一个点，而必然有足够的大小，以适应等电位连接导体",
+      "type": "语义分解",
+      "subject": "接地参考点( ERP), 是指一信息设备或系统的等电位连 接网络与共用接",
+      "action": "",
+      "operation": "接地参考点( ERP), 是指一信息设备或系统的等电位连 接网络与共用接地系统之间唯一的一点连接点。实际上，接地参 考点并不是一个点，而必然有足够的大小，以适应等电位连接导体",
+      "condition": "",
+      "constraint": "6.7.2  接地参考点( ERP),  是指一信息设备或系统的等电位连\n接网络与共用接地系统之间唯一的一点连接点。实际上，接地参\n考点并不是一个点，而必然有足够的大小，以适应等电位连接导体",
+      "constraint_role": "informational",
+      "related_entities": [
+        "接地参考点( ERP), 是指一信息设备或系统的等电位连 接网络与共用接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23374,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

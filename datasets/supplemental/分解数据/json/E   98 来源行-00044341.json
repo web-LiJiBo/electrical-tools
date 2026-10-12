@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044341",
+  "entities": [
+    {
+      "name": "绝缘法兰的设计、结构、制造，以及金属材料、钢质短 管、绝缘件与绝缘密封件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1   绝缘法兰的设计、结构、制造，以及金属材料、钢质短\n管、绝缘件与绝缘密封件、紧固件的性能均应符合国家现行标\n准《绝缘接头与绝缘法兰技术规范》SY/T 0516的相关要求。\n4.3.2    绝缘法兰宜采用工厂预组装型；现场组装时，应按照组\n装说明进行组装，并应在各项性能检测合格后使用。",
+      "type": "语义分解",
+      "subject": "绝缘法兰的设计、结构、制造，以及金属材料、钢质短 管、绝缘件与绝缘密封件",
+      "action": "",
+      "operation": "绝缘法兰的设计、结构、制造，以及金属材料、钢质短 管、绝缘件与绝缘密封件、紧固件的性能均应符合国家现行标 准《绝缘接头与绝缘法兰技术规范》SY/T 0516的相关要求。 4.3.2 绝缘法兰宜采用工厂预组装型；现场组装时，应按照组 装说明进行组装，并应在各项性能检测合格后使用。",
+      "condition": "",
+      "constraint": "4.3.1   绝缘法兰的设计、结构、制造，以及金属材料、钢质短\n管、绝缘件与绝缘密封件、紧固件的性能均应符合国家现行标\n准《绝缘接头与绝缘法兰技术规范》SY/T 0516的相关要求。\n4.3.2    绝缘法兰宜采用工厂预组装型；现场组装时，应按照组\n装说明进行组装，并应在各项性能检测合格后使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "绝缘法兰的设计、结构、制造，以及金属材料、钢质短 管、绝缘件与绝缘密封件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44341,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

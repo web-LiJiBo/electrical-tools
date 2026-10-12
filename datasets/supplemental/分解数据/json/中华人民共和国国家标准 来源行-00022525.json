@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022525",
+  "entities": [
+    {
+      "name": "在大型通信建筑物内，接地系统的环形接地汇集线的范围 可缩小到有通信设备机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       5    在大型通信建筑物内，接地系统的环形接地汇集线的范围\n可缩小到有通信设备机房的建筑物区域，其垂直连接导体的范围\n和数量宜根据实际情况设置。",
+      "type": "语义分解",
+      "subject": "在大型通信建筑物内，接地系统的环形接地汇集线的范围 可缩小到有通信设备机",
+      "action": "",
+      "operation": "在大型通信建筑物内，接地系统的环形接地汇集线的范围 可缩小到有通信设备机房的建筑物区域，其垂直连接导体的范围 和数量宜根据实际情况设置。",
+      "condition": "",
+      "constraint": "       5    在大型通信建筑物内，接地系统的环形接地汇集线的范围\n可缩小到有通信设备机房的建筑物区域，其垂直连接导体的范围\n和数量宜根据实际情况设置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在大型通信建筑物内，接地系统的环形接地汇集线的范围 可缩小到有通信设备机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22525,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

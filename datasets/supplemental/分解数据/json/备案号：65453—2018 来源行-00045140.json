@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045140",
+  "entities": [
+    {
+      "name": "道没有全部测量钢管壁厚时，应对测量的管壁腐蚀坑深数据进 行处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "道没有全部测量钢管壁厚时，应对测量的管壁腐蚀坑深数据进\n行处理。由局部开挖点探坑测量数据推算整个管段(或管道)\n最大腐蚀坑深时，应按下列方法进行：",
+      "type": "语义分解",
+      "subject": "道没有全部测量钢管壁厚时，应对测量的管壁腐蚀坑深数据进 行处理",
+      "action": "",
+      "operation": "道没有全部测量钢管壁厚时，应对测量的管壁腐蚀坑深数据进 行处理。由局部开挖点探坑测量数据推算整个管段(或管道) 最大腐蚀坑深时，应按下列方法进行",
+      "condition": "",
+      "constraint": "道没有全部测量钢管壁厚时，应对测量的管壁腐蚀坑深数据进\n行处理。由局部开挖点探坑测量数据推算整个管段(或管道)\n最大腐蚀坑深时，应按下列方法进行：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "道没有全部测量钢管壁厚时，应对测量的管壁腐蚀坑深数据进 行处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

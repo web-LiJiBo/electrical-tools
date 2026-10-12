@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015629",
+  "entities": [
+    {
+      "name": "测试配置如图14所示，测试仪表为信号发生器和光谱分析仪，其中信号发生器可",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   测试配置如图14所示，测试仪表为信号发生器和光谱分析仪，其中信号发生器可根据业务接口选择\nSDH、OTN 或数据网络分析仪等。\n\n6.1.7.3  测试步骤",
+      "type": "语义分解",
+      "subject": "测试配置如图14所示，测试仪表为信号发生器和光谱分析仪，其中信号发生器可",
+      "action": "",
+      "operation": "测试配置如图14所示，测试仪表为信号发生器和光谱分析仪，其中信号发生器可根据业务接口选择 SDH、OTN 或数据网络分析仪等。 6.1.7.3 测试步骤",
+      "condition": "",
+      "constraint": "   测试配置如图14所示，测试仪表为信号发生器和光谱分析仪，其中信号发生器可根据业务接口选择\nSDH、OTN 或数据网络分析仪等。\n\n6.1.7.3  测试步骤",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测试配置如图14所示，测试仪表为信号发生器和光谱分析仪，其中信号发生器可"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15629,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

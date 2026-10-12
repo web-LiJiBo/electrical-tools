@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011938",
+  "entities": [
+    {
+      "name": "工业电视系统设备应采用符合国家有关标准和市场准入 制度的工业级产品",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    工业电视系统设备应采用符合国家有关标准和市场准入\n制度的工业级产品 。  采用 自建光缆通信传输时 ,   远程传输的图\n像分辨率不宜低于 1280 x 720  (720p视频格式)  ; 本地存储图像\n和显示图像分辨率不宜低于 1920 x 1080   (1080p视频格式) 。\n       3    系统的信号传输应保障图像质量 、  数据安全性和控制信\n号的准确性。",
+      "type": "语义分解",
+      "subject": "工业电视系统设备应采用符合国家有关标准和市场准入 制度的工业级产品",
+      "action": "",
+      "operation": "工业电视系统设备应采用符合国家有关标准和市场准入 制度的工业级产品 。 采用 自建光缆通信传输时 , 远程传输的图 像分辨率不宜低于 1280 x 720 (720p视频格式) ; 本地存储图像 和显示图像分辨率不宜低于 1920 x 1080 (1080p视频格式) 。 3 系统的信号传输应保障图像质量 、 数据安全性和控制信 号的准确性。",
+      "condition": "",
+      "constraint": "      2    工业电视系统设备应采用符合国家有关标准和市场准入\n制度的工业级产品 。  采用 自建光缆通信传输时 ,   远程传输的图\n像分辨率不宜低于 1280 x 720  (720p视频格式)  ; 本地存储图像\n和显示图像分辨率不宜低于 1920 x 1080   (1080p视频格式) 。\n       3    系统的信号传输应保障图像质量 、  数据安全性和控制信\n号的准确性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工业电视系统设备应采用符合国家有关标准和市场准入 制度的工业级产品"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11938,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

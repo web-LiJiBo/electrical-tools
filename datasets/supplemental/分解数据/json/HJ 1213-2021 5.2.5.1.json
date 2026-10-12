@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.5.1",
+  "entities": [
+    {
+      "name": "海表温度反演选法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.5.1 基本要求 根据传感器热红外谱段本身数量。以及各谱段绝对辐射定标精度。噪声等效温差能否达到要求 (见 4.3c)d)),选择单通道海表温度反演方法或多通道海表温度反演方法 (见5.1),条件同时满足时,优先使用多通道海表温度反演方法。对于典型的海表温度反演方法具体技术步骤见5.2.5.2 5.2.5.3",
+      "type": "语义分解",
+      "subject": "海表温度反演选法",
+      "action": "",
+      "operation": "依热红外通道数量定标噪声选法同时满足优先多通道",
+      "condition": "",
+      "constraint": "5.2.5.1 基本要求 根据传感器热红外谱段本身数量。以及各谱段绝对辐射定标精度。噪声等效温差能否达到要求 (见 4.3c)d)),选择单通道海表温度反演方法或多通道海表温度反演方法 (见5.1),条件同时满足时,优先使用多通道海表温度反演方法。对于典型的海表温度反演方法具体技术步骤见5.2.5.2 5.2.5.3",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海表温度反演选法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1952,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

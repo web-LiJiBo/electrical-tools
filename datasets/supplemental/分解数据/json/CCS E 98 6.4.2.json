@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "应检查浮顶排水管系统、加热盘管、罐外喷淋管线和泡 沫消防管线有无腐蚀和渗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2   应检查浮顶排水管系统、加热盘管、罐外喷淋管线和泡\n沫消防管线有无腐蚀和渗漏，钢管段宜每间隔2m环向4个点进\n行厚度测量。",
+      "type": "语义分解",
+      "subject": "应检查浮顶排水管系统、加热盘管、罐外喷淋管线和泡 沫消防管线有无腐蚀和渗",
+      "action": "",
+      "operation": "应检查浮顶排水管系统、加热盘管、罐外喷淋管线和泡 沫消防管线有无腐蚀和渗漏，钢管段宜每间隔2m环向4个点进 行厚度测量。",
+      "condition": "",
+      "constraint": "6.4.2   应检查浮顶排水管系统、加热盘管、罐外喷淋管线和泡\n沫消防管线有无腐蚀和渗漏，钢管段宜每间隔2m环向4个点进\n行厚度测量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应检查浮顶排水管系统、加热盘管、罐外喷淋管线和泡 沫消防管线有无腐蚀和渗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

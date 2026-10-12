@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021323",
+  "entities": [
+    {
+      "name": ")VC -m 通道保护子层功能如图164和图165所示，VC-m路径保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)VC    -m 通道保护子层功能如图164和图165所示，VC-m路径保护倒换在ITU-T G.841中说明。\n\n2)S    mP_C功能向 VC-m路径提供保护，对从路径终端源至路径终端宿的VC-m 路径内的通路相\n   关缺陷进行防护。该子层是在产生SmP 子层的Sm_AP 点形成的，保护实现于形成子层的连接\n   点( SmP_CP)。",
+      "type": "语义分解",
+      "subject": ")VC -m 通道保护子层功能如图164和图165所示，VC-m路径保护",
+      "action": "",
+      "operation": ")VC -m 通道保护子层功能如图164和图165所示，VC-m路径保护倒换在ITU-T G.841中说明。 2)S mP_C功能向 VC-m路径提供保护，对从路径终端源至路径终端宿的VC-m 路径内的通路相 关缺陷进行防护。该子层是在产生SmP 子层的Sm_AP 点形成的，保护实现于形成子层的连接 点( SmP_CP)。",
+      "condition": "",
+      "constraint": "1)VC    -m 通道保护子层功能如图164和图165所示，VC-m路径保护倒换在ITU-T G.841中说明。\n\n2)S    mP_C功能向 VC-m路径提供保护，对从路径终端源至路径终端宿的VC-m 路径内的通路相\n   关缺陷进行防护。该子层是在产生SmP 子层的Sm_AP 点形成的，保护实现于形成子层的连接\n   点( SmP_CP)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")VC -m 通道保护子层功能如图164和图165所示，VC-m路径保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21323,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

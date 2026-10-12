@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.1.3",
+  "entities": [
+    {
+      "name": "较大环境风险管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.3 较大环境风险 除满足7.1.1外，还建议: 3 ) 首次全面检验之后的全面检验周期按 TSG D7003 执行，但最多不超过10年; b) 存在外腐蚀严重的地区，宜缩小管道外腐蚀检测的周期 _",
+      "type": "语义分解",
+      "subject": "较大环境风险管道",
+      "action": "",
+      "operation": "全面检验周期最多十年外腐蚀严重宜缩短检测周期",
+      "condition": "",
+      "constraint": "7.1.3 较大环境风险 除满足7.1.1外，还建议: 3 ) 首次全面检验之后的全面检验周期按 TSG D7003 执行，但最多不超过10年; b) 存在外腐蚀严重的地区，宜缩小管道外腐蚀检测的周期 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "较大环境风险管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1189,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

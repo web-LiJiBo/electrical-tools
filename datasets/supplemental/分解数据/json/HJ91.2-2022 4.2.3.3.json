@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.2.3.3",
+  "entities": [
+    {
+      "name": "地表水器材仪器准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3.3 采样器材与现场测定仪器的准备 采样器材包括采样器。静置容器。样品瓶。水样保存剂和其他所需辅助设备 采样器材的材质和结构。水样保存。容器洗涤方法应符合标准分析方法要求。如标准分析方法无要求则执行HJ 493中的规定。若启用新容器。事先应充分清洗。 采样器包括表层采样器。深层采样器。自动采样器。石油类采样器及其他满足采样需求且不影响监测结果的采样器 现场测定仪器包括用于现场测定pH值,溶解氧,水温,电导率,透明度。浊度等项目的仪器设备。",
+      "type": "语义分解",
+      "subject": "地表水器材仪器准备",
+      "action": "",
+      "operation": "器材材料保存洗涤按方法或HJ493新容器充分洗备现场参数仪器",
+      "condition": "",
+      "constraint": "4.2.3.3 采样器材与现场测定仪器的准备 采样器材包括采样器。静置容器。样品瓶。水样保存剂和其他所需辅助设备 采样器材的材质和结构。水样保存。容器洗涤方法应符合标准分析方法要求。如标准分析方法无要求则执行HJ 493中的规定。若启用新容器。事先应充分清洗。 采样器包括表层采样器。深层采样器。自动采样器。石油类采样器及其他满足采样需求且不影响监测结果的采样器 现场测定仪器包括用于现场测定pH值,溶解氧,水温,电导率,透明度。浊度等项目的仪器设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地表水器材仪器准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2958,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

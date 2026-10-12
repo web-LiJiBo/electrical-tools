@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.1.6.3",
+  "entities": [
+    {
+      "name": "总有机碳对照校核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.6.3 对照试验:用标准溶液对照测定样进行检验 ,提供校正值。 容许与真值的偏差为:1 n8/~ 10 mg/I 有机碳 ,士10 %;>100 mg/I 有机碳 ,士5 %。 如果出现更大的偏差 ,应检查其来源 仪器装置中的故障(例如氧化系统或检测系统发生故障,泄漏差) ; b) 试剂浓度改变; 系统被污染 ,温度和气体调节方面的错误。 为了证实测定系统的氧化效率,宜采用氧化性能与测定样类似能代替邻苯二甲酸氢钾的试剂 整个测量系统应每周校核一次。",
+      "type": "语义分解",
+      "subject": "总有机碳对照校核",
+      "action": "",
+      "operation": "按浓度段检查真值偏差超限排查故障试剂污染每周系统校核",
+      "condition": "",
+      "constraint": "7.1.6.3 对照试验:用标准溶液对照测定样进行检验 ,提供校正值。 容许与真值的偏差为:1 n8/~ 10 mg/I 有机碳 ,士10 %;>100 mg/I 有机碳 ,士5 %。 如果出现更大的偏差 ,应检查其来源 仪器装置中的故障(例如氧化系统或检测系统发生故障,泄漏差) ; b) 试剂浓度改变; 系统被污染 ,温度和气体调节方面的错误。 为了证实测定系统的氧化效率,宜采用氧化性能与测定样类似能代替邻苯二甲酸氢钾的试剂 整个测量系统应每周校核一次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总有机碳对照校核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1903,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；一至十及大于一百间范围缺段不得补写"
+      ]
+    }
+  }
+}

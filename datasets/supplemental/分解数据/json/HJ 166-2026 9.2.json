@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "9.2",
+  "entities": [
+    {
+      "name": "土壤样交接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2 样品交接 土壤样品送达指定地点后,接样人员根据样品交接记录核对样品,检查样品数量。重量。包装完好 性。标签完整性和清晰度。保存条件。送达时限及样品性状等。双方确认无误后。在样品交接记录上签 字。各存1份备查。 土壤样品包括制备前样品,分析用样品 实验室留存样品和样品库长期保存样品= 可利用手持终 端等信息化设备记录各场所间样品流转信息= 其操作要点和注意事项与人工样品流转方式相同-",
+      "type": "语义分解",
+      "subject": "土壤样交接",
+      "action": "",
+      "operation": "核数量质量包装标签条件时限性状双方签存可信息化记录流转",
+      "condition": "",
+      "constraint": "9.2 样品交接 土壤样品送达指定地点后,接样人员根据样品交接记录核对样品,检查样品数量。重量。包装完好 性。标签完整性和清晰度。保存条件。送达时限及样品性状等。双方确认无误后。在样品交接记录上签 字。各存1份备查。 土壤样品包括制备前样品,分析用样品 实验室留存样品和样品库长期保存样品= 可利用手持终 端等信息化设备记录各场所间样品流转信息= 其操作要点和注意事项与人工样品流转方式相同-",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤样交接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2277,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

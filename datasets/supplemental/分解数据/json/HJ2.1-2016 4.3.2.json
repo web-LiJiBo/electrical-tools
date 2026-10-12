@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "4.3.2",
+  "entities": [
+    {
+      "name": "改扩建排放统计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2 对改扩建项目的污染物排放量 (包括有组织与无组织。正常工况与非正常工况)  的统计, 应分 别按现有,在建。改扩建项目实施后等几种情形汇总污染物产生量。排放量及其娈化量,核算改扩建项 目建成后最终的污染物排放量。",
+      "type": "语义分解",
+      "subject": "改扩建排放统计",
+      "action": "",
+      "operation": "分别汇总现有在建实施后产生排放变化核最终排放",
+      "condition": "",
+      "constraint": "4.3.2 对改扩建项目的污染物排放量 (包括有组织与无组织。正常工况与非正常工况)  的统计, 应分 别按现有,在建。改扩建项目实施后等几种情形汇总污染物产生量。排放量及其娈化量,核算改扩建项 目建成后最终的污染物排放量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "改扩建排放统计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2555,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

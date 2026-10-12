@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028939",
+  "entities": [
+    {
+      "name": "b) 收集现场信息，核实现场情况，根据现场变化调整应急处置方案，并组织实",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  b)  收集现场信息，核实现场情况，根据现场变化调整应急处置方案，并组织实施。\n  c)  整合、调配应急资源，统一指挥救援工作。",
+      "type": "语义分解",
+      "subject": "b) 收集现场信息，核实现场情况，根据现场变化调整应急处置方案，并组织实",
+      "action": "",
+      "operation": "b) 收集现场信息，核实现场情况，根据现场变化调整应急处置方案，并组织实施。 c) 整合、调配应急资源，统一指挥救援工作。",
+      "condition": "",
+      "constraint": "  b)  收集现场信息，核实现场情况，根据现场变化调整应急处置方案，并组织实施。\n  c)  整合、调配应急资源，统一指挥救援工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 收集现场信息，核实现场情况，根据现场变化调整应急处置方案，并组织实"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28939,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

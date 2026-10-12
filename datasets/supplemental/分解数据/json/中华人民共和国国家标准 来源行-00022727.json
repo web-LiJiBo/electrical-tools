@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022727",
+  "entities": [
+    {
+      "name": "GPS 室内馈线应加装同轴防雷器保护，同轴防雷器独立安 装时，其接地线应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.5  GPS 室内馈线应加装同轴防雷器保护，同轴防雷器独立安\n装时，其接地线应接到馈窗接地汇流排。当馈线室外绝缘安装时，\n同轴防雷器的接地线也可接到室内接地汇集线或总接地汇流排。\n6.6.6  当通信设备内GPS  馈线输入、输出端已内置防雷器时，不\n应增加外置的同轴馈线防雷器。",
+      "type": "语义分解",
+      "subject": "GPS 室内馈线应加装同轴防雷器保护，同轴防雷器独立安 装时，其接地线应",
+      "action": "",
+      "operation": "GPS 室内馈线应加装同轴防雷器保护，同轴防雷器独立安 装时，其接地线应接到馈窗接地汇流排。当馈线室外绝缘安装时， 同轴防雷器的接地线也可接到室内接地汇集线或总接地汇流排。 6.6.6 当通信设备内GPS 馈线输入、输出端已内置防雷器时，不 应增加外置的同轴馈线防雷器。",
+      "condition": "",
+      "constraint": "6.6.5  GPS 室内馈线应加装同轴防雷器保护，同轴防雷器独立安\n装时，其接地线应接到馈窗接地汇流排。当馈线室外绝缘安装时，\n同轴防雷器的接地线也可接到室内接地汇集线或总接地汇流排。\n6.6.6  当通信设备内GPS  馈线输入、输出端已内置防雷器时，不\n应增加外置的同轴馈线防雷器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "GPS 室内馈线应加装同轴防雷器保护，同轴防雷器独立安 装时，其接地线应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22727,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

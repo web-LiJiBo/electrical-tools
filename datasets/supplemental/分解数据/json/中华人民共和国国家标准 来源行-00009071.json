@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009071",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   3  ODF 应根据其功能和连接设备的位置，以走线路由合理\n与减少路由迂回和交叉为原则进行布置；\t    9.4.1       通信电缆选择应满足传输速率、衰耗、特性阻抗、串音防卫\n  度和耐压等指标的要求，并应具有机械强度和阻燃性能。\n    9.4.2      告警信号线宜选用音频塑料线。\n    9.4.3      公务联络线应选用音频隔离线。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   3  ODF 应根据其功能和连接设备的位置，以走线路由合理\n与减少路由迂回和交叉为原则进行布置；\t    9.4.1       通信电缆选择应满足传输速率、衰耗、特性阻抗、串音防卫\n  度和耐压等指标的要求，并应具有机械强度和阻燃性能。\n    9.4.2      告警信号线宜选用音频塑料线。\n    9.4.3      公务联络线应选用音频隔离线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9071,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

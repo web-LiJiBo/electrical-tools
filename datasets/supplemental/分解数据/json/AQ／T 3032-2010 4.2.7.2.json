@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "4.2.7.2",
+  "entities": [
+    {
+      "name": "危化应急培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.7.2 危险化学品事故应急管理: a) 危险化学品事故应急救援的基本原则，包括定义、基本任务、基本形式、组织与实施等; b) 危险化学品事故应急预案，包括目的、基本要求、编制的过程、主要内容、预案编写提纲等。",
+      "type": "语义分解",
+      "subject": "危化应急培训",
+      "action": "",
+      "operation": "讲授救援原则组织实施预案目的要求过程提纲",
+      "condition": "",
+      "constraint": "4.2.7.2 危险化学品事故应急管理: a) 危险化学品事故应急救援的基本原则，包括定义、基本任务、基本形式、组织与实施等; b) 危险化学品事故应急预案，包括目的、基本要求、编制的过程、主要内容、预案编写提纲等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化应急培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4996,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；课程内容"
+      ]
+    }
+  }
+}

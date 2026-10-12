@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.13.2",
+  "entities": [
+    {
+      "name": "非常规作业许可",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.13.2 企业应对生产或施工作业区域内作业程序(规程)未涵盖的非常规作业进行许可管理 .作业许 可范围包括: GB 30871中规定的特殊作业; 装置区施T和检维修作业; 设备 .管线打开; 企业认为需要通过许可管理的其他作业。",
+      "type": "语义分解",
+      "subject": "非常规作业许可",
+      "action": "",
+      "operation": "覆盖规程外特殊施工维修开设备管线及其他指定作业",
+      "condition": "",
+      "constraint": "4.13.2 企业应对生产或施工作业区域内作业程序(规程)未涵盖的非常规作业进行许可管理 .作业许 可范围包括: GB 30871中规定的特殊作业; 装置区施T和检维修作业; 设备 .管线打开; 企业认为需要通过许可管理的其他作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非常规作业许可"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5236,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

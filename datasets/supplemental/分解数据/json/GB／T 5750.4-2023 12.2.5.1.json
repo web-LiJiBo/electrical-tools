@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.2.5.1",
+  "entities": [
+    {
+      "name": "流注酚标准系列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.5.1 标准系列的配制 分别吸取酚标准使用溶液0 mL、0.20 mL、0.50 mL、1.00 mL、2.00 mL、3.00 mL和5.00 mL置于7个预先盛有少量纯水的100 mL容量瓶中，用纯水定容至刻度。标准系列溶液中挥发酚类的质量浓度(以苯酚计)分别为0 μg/L、2.0 μg/L、5.0 μg/L、10.0 μg/L、20.0 μg/L、30.0 μg/L和50.0 μg/L。",
+      "type": "语义分解",
+      "subject": "流注酚标准系列",
+      "action": "",
+      "operation": "七个指定体积定容一百毫升制备零至五十微克每升系列",
+      "condition": "",
+      "constraint": "12.2.5.1 标准系列的配制 分别吸取酚标准使用溶液0 mL、0.20 mL、0.50 mL、1.00 mL、2.00 mL、3.00 mL和5.00 mL置于7个预先盛有少量纯水的100 mL容量瓶中，用纯水定容至刻度。标准系列溶液中挥发酚类的质量浓度(以苯酚计)分别为0 μg/L、2.0 μg/L、5.0 μg/L、10.0 μg/L、20.0 μg/L、30.0 μg/L和50.0 μg/L。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "流注酚标准系列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1486,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

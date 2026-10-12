@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016991",
+  "entities": [
+    {
+      "name": "e) 配置 NE1和 NE3 采用相同的ODUk 复用结构(如 2 个 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      e)  配置 NE1和 NE3 采用相同的ODUk 复用结构(如 2 个 ODUO 复用到ODU1),OTN    分析仪和\n\nOTN 被测设备应无任何告警和误码。",
+      "type": "语义分解",
+      "subject": "e) 配置 NE1和 NE3 采用相同的ODUk 复用结构(如 2 个 ",
+      "action": "",
+      "operation": "e) 配置 NE1和 NE3 采用相同的ODUk 复用结构(如 2 个 ODUO 复用到ODU1),OTN 分析仪和 OTN 被测设备应无任何告警和误码。",
+      "condition": "",
+      "constraint": "      e)  配置 NE1和 NE3 采用相同的ODUk 复用结构(如 2 个 ODUO 复用到ODU1),OTN    分析仪和\n\nOTN 被测设备应无任何告警和误码。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 配置 NE1和 NE3 采用相同的ODUk 复用结构(如 2 个 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16991,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

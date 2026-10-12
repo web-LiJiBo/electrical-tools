@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011960",
+  "entities": [
+    {
+      "name": "站场的室外摄像机图像宜采用光缆传输",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    站场的室外摄像机图像宜采用光缆传输 ; 传输距离在\n100m 以内的室内摄像机宜采用超五类及以上等级对绞电缆传输。\n       26       ",
+      "type": "语义分解",
+      "subject": "站场的室外摄像机图像宜采用光缆传输",
+      "action": "",
+      "operation": "站场的室外摄像机图像宜采用光缆传输 ; 传输距离在 100m 以内的室内摄像机宜采用超五类及以上等级对绞电缆传输。 26",
+      "condition": "",
+      "constraint": "      2    站场的室外摄像机图像宜采用光缆传输 ; 传输距离在\n100m 以内的室内摄像机宜采用超五类及以上等级对绞电缆传输。\n       26       ",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站场的室外摄像机图像宜采用光缆传输"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11960,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

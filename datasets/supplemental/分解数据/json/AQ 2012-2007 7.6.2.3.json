@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.6.2.3",
+  "entities": [
+    {
+      "name": "管道内检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6.2.3 内检测实施过程中应落实如下安全事项: 收发球筒的尺寸应满足检测器安全运行的技术要求; 管道及其三通,弯头,运行参数等应满足内检测器的通过要求; 发送管道内检测器前 ,应对管道进行清管和测径; 内检测器应有地面跟踪定位装置。检测器发送前应调试运转正常 ;投运期间应进行跟踪和设标。",
+      "type": "语义分解",
+      "subject": "管道内检测",
+      "action": "",
+      "operation": "筒管弯参数满足通过先清管测径跟踪定位调试正常投运跟踪设标",
+      "condition": "",
+      "constraint": "7.6.2.3 内检测实施过程中应落实如下安全事项: 收发球筒的尺寸应满足检测器安全运行的技术要求; 管道及其三通,弯头,运行参数等应满足内检测器的通过要求; 发送管道内检测器前 ,应对管道进行清管和测径; 内检测器应有地面跟踪定位装置。检测器发送前应调试运转正常 ;投运期间应进行跟踪和设标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道内检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4863,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.2.2",
+  "entities": [
+    {
+      "name": "通信机房楼面承重",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.2.2    新建通信机房楼面等效均布活荷载的设置应满足现行行\n业标准  《通信建筑工程设计规范》  YD  5003 中的相关要求 。  采\n用已有房间进行通信机房改造设计时 ,  应根据实际设备的重量、\n底面尺寸 、排列方式对原有建筑结构梁板布置和配筋情况进行\n核算。",
+      "type": "语义分解",
+      "subject": "通信机房楼面承重",
+      "action": "",
+      "operation": "新建符合YD5003改造按设备重量尺寸排列核算结构梁板配筋",
+      "condition": "",
+      "constraint": "14.2.2    新建通信机房楼面等效均布活荷载的设置应满足现行行\n业标准  《通信建筑工程设计规范》  YD  5003 中的相关要求 。  采\n用已有房间进行通信机房改造设计时 ,  应根据实际设备的重量、\n底面尺寸 、排列方式对原有建筑结构梁板布置和配筋情况进行\n核算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信机房楼面承重"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12072,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

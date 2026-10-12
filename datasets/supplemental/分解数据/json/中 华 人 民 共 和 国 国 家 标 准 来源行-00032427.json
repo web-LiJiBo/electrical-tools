@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032427",
+  "entities": [
+    {
+      "name": ". 2 两个排放相同污染物(不论其是否由同一生产工艺过程产生) 的排气筒",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7. 2    两个排放相同污染物(不论其是否由同一生产工艺过程产生) 的排气筒 , 若其距离小于其几何高度\n之和 , 应合并视为一根等效排气筒。若有三根以上的近距排气筒 , 且排放同一种污染物时 , 应以前两根的\n等效排气筒 , 依次与第三、四根排气筒取等效值。  等效排气筒的有关参数计算方法见附录 A。",
+      "type": "语义分解",
+      "subject": ". 2 两个排放相同污染物(不论其是否由同一生产工艺过程产生) 的排气筒",
+      "action": "",
+      "operation": ". 2 两个排放相同污染物(不论其是否由同一生产工艺过程产生) 的排气筒 , 若其距离小于其几何高度 之和 , 应合并视为一根等效排气筒。若有三根以上的近距排气筒 , 且排放同一种污染物时 , 应以前两根的 等效排气筒 , 依次与第三、四根排气筒取等效值。 等效排气筒的有关参数计算方法见附录 A。",
+      "condition": "",
+      "constraint": "7. 2    两个排放相同污染物(不论其是否由同一生产工艺过程产生) 的排气筒 , 若其距离小于其几何高度\n之和 , 应合并视为一根等效排气筒。若有三根以上的近距排气筒 , 且排放同一种污染物时 , 应以前两根的\n等效排气筒 , 依次与第三、四根排气筒取等效值。  等效排气筒的有关参数计算方法见附录 A。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 2 两个排放相同污染物(不论其是否由同一生产工艺过程产生) 的排气筒"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32427,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "6.5.2",
+  "entities": [
+    {
+      "name": "爆炸粉尘泄漏人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.2 爆炸性粉尘泄漏事故 ,处置人员应佩戴防尘面具,戴化学安全防护眼镜,穿紧袖防静电工作服长筒胶鞋,戴橡胶手套",
+      "type": "语义分解",
+      "subject": "爆炸粉尘泄漏人员",
+      "action": "",
+      "operation": "采用防尘防静电等防护装备",
+      "condition": "",
+      "constraint": "6.5.2 爆炸性粉尘泄漏事故 ,处置人员应佩戴防尘面具,戴化学安全防护眼镜,穿紧袖防静电工作服长筒胶鞋,戴橡胶手套",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆炸粉尘泄漏人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5893,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010862",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注：①MPI-RM点每通路最小OSNR指标根据接收机OSNR容限(EOL)加上OS-\n      NR裕量得到；N×100Gbit/s MS-ULH WDM系统的 OSNR裕量要求如下：\n    小 于 或 等 于 1 2 × 2 2dB 或 6 × 2 7dB 的 系 统 OSNR    裕 量 指 标 为 4 . 5dB, 大于12×\n    22 dB  且小于或等于20×22dB 或 大 于 6 × 2 7dB  且 小 于 或 等 于 1 0 × 2 7dB  的 系\n    统 OSNR    裕 量 指 标 为 5 . 0dB,  大 于 2 0 × 2 2dB  且 小 于 或 等 于 2 8 × 2 2dB  或 大 于\n     10×27 dB  且 小 于 或 等 于 1 3 × 2 7dB  的 系    统 OSNR    裕 量 指 标 为 5 .5 dB,   大 于\n     28×22 dB 或 1 3 × 2 7dB  的 系 统OSNR    裕 量 指 标 为 6 . 0dB.",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：①MPI-RM点每通路最小OSNR指标根据接收机OSNR容限(EOL)加上OS- NR裕量得到；N×100Gbit/s MS-ULH WDM系统的 OSNR裕量要求如下： 小 于 或 等 于 1 2 × 2 2dB 或 6 × 2 7dB 的 系 统 OSNR 裕 量 指 标 为 4 . 5dB, 大于12× 22 dB 且小于或等于20×22dB 或 大 于 6 × 2 7dB 且 小 于 或 等 于 1 0 × 2 7dB 的 系 统 OSNR 裕 量 指 标 为 5",
+      "condition": "",
+      "constraint": "注：①MPI-RM点每通路最小OSNR指标根据接收机OSNR容限(EOL)加上OS-\n      NR裕量得到；N×100Gbit/s MS-ULH WDM系统的 OSNR裕量要求如下：\n    小 于 或 等 于 1 2 × 2 2dB 或 6 × 2 7dB 的 系 统 OSNR    裕 量 指 标 为 4 . 5dB, 大于12×\n    22 dB  且小于或等于20×22dB 或 大 于 6 × 2 7dB  且 小 于 或 等 于 1 0 × 2 7dB  的 系\n    统 OSNR    裕 量 指 标 为 5 . 0dB,  大 于 2 0 × 2 2dB  且 小 于 或 等 于 2 8 × 2 2dB  或 大 于\n     10×27 dB  且 小 于 或 等 于 1 3 × 2 7dB  的 系    统 OSNR    裕 量 指 标 为 5 .5 dB,   大 于\n     28×22 dB 或 1 3 × 2 7dB  的 系 统OSNR    裕 量 指 标 为 6 . 0dB.",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10862,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

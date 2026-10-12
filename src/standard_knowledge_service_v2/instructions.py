@@ -33,9 +33,7 @@ class InstructionValidation:
     semantic_valid: bool
     protocol_valid: bool
     logic_valid: bool
-    requires_human_confirmation: bool = True
     errors: list[str] = field(default_factory=list)
-    simulation_report_id: str = ""
 
 
 class ILRCompiler(Protocol):

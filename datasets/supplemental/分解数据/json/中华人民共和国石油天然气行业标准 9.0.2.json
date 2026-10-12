@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "9.0.2",
+  "entities": [
+    {
+      "name": "站场扩音对讲",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.2    压气站 、  输油泵站 、  带储库的工艺站等大型站场宜设置\n扩音对讲系统 。  监控阀室 、  无人值守工艺站场等有远程喊话需\n求时 ,  宜通过工业电视监视系统实现语音传送。",
+      "type": "语义分解",
+      "subject": "站场扩音对讲",
+      "action": "",
+      "operation": "大型站宜设置无人阀室远程喊话宜借工业电视传声",
+      "condition": "",
+      "constraint": "9.0.2    压气站 、  输油泵站 、  带储库的工艺站等大型站场宜设置\n扩音对讲系统 。  监控阀室 、  无人值守工艺站场等有远程喊话需\n求时 ,  宜通过工业电视监视系统实现语音传送。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站场扩音对讲"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12008,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

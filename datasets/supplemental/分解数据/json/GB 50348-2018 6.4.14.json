@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.4.14",
+  "entities": [
+    {
+      "name": "电子巡查设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.14 电子巡查系统设计内容应包括巡查线路设置、巡查报警设置、巡查状态监测、统计报表、联动等，并应符合下列规定: 1 应能对巡查线路轨迹、时间、巡查人员进行设置，应能设置多条并发线路; 2 应能设置巡查异常报警规则; 3 应能在预先设定的在线巡查路线中，对人员的巡查活动状态进行监督和记录;应能在发生意外情况时及时报警; 4 系统可对设置内容、巡查活动情况进行统计，形成报表。",
+      "type": "语义分解",
+      "subject": "电子巡查设计",
+      "action": "",
+      "operation": "设置路线轨迹人员时间并发异常规则状态记录报警可统计报表",
+      "condition": "",
+      "constraint": "6.4.14 电子巡查系统设计内容应包括巡查线路设置、巡查报警设置、巡查状态监测、统计报表、联动等，并应符合下列规定: 1 应能对巡查线路轨迹、时间、巡查人员进行设置，应能设置多条并发线路; 2 应能设置巡查异常报警规则; 3 应能在预先设定的在线巡查路线中，对人员的巡查活动状态进行监督和记录;应能在发生意外情况时及时报警; 4 系统可对设置内容、巡查活动情况进行统计，形成报表。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电子巡查设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6979,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

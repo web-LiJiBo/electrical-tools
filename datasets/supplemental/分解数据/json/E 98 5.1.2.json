@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "5.1.2",
+  "entities": [
+    {
+      "name": "已建储罐除满足本规范第5. 1. 1条收集资料外， 还应收 集下列资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2  已建储罐除满足本规范第5. 1. 1条收集资料外， 还应收\n\n集下列资料：",
+      "type": "语义分解",
+      "subject": "已建储罐除满足本规范第5. 1. 1条收集资料外， 还应收 集下列资料",
+      "action": "",
+      "operation": "已建储罐除满足本规范第5. 1. 1条收集资料外， 还应收 集下列资料",
+      "condition": "",
+      "constraint": "5.1.2  已建储罐除满足本规范第5. 1. 1条收集资料外， 还应收\n\n集下列资料：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "已建储罐除满足本规范第5. 1. 1条收集资料外， 还应收 集下列资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49326,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

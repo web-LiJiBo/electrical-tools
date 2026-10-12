@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010156",
+  "entities": [
+    {
+      "name": "具有设备告警( Equipment alarm)、服务质量告警( Qua",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   8  具有设备告警( Equipment   alarm)、服务质量告警( Quality\nof  service   alarm)、通信告警( Communication     alarm)、环境告警\n(Environment   alarm)和处理失败告警( Processing  error  alarm)等\n五种类型；紧急告警( Critical) 、严重告警( Major) 、一 般告警\n(Minor) 和提示告警( Warning) 等至少四种告警严重级别；未确认\n当前告警、已确认当前告警、未确认历史告警和已确认历史告警等\n\n四种告警状态；",
+      "type": "语义分解",
+      "subject": "具有设备告警( Equipment alarm)、服务质量告警( Qua",
+      "action": "",
+      "operation": "具有设备告警( Equipment alarm)、服务质量告警( Quality of service alarm)、通信告警( Communication alarm)、环境告警 (Environment alarm)和处理失败告警( Processing error alarm)等 五种类型；紧急告警( Critical) 、严重告警( Major) 、一 般告警 (Minor) 和提示告警( Warning) 等至少四种告警严重级别；未确认 当前告警、已确认当前告警、未",
+      "condition": "",
+      "constraint": "   8  具有设备告警( Equipment   alarm)、服务质量告警( Quality\nof  service   alarm)、通信告警( Communication     alarm)、环境告警\n(Environment   alarm)和处理失败告警( Processing  error  alarm)等\n五种类型；紧急告警( Critical) 、严重告警( Major) 、一 般告警\n(Minor) 和提示告警( Warning) 等至少四种告警严重级别；未确认\n当前告警、已确认当前告警、未确认历史告警和已确认历史告警等\n\n四种告警状态；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "具有设备告警( Equipment alarm)、服务质量告警( Qua"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10156,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

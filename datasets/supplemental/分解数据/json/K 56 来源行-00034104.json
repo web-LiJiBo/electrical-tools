@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034104",
+  "entities": [
+    {
+      "name": "此外 , 对任何类型的连续的流动扰动(转弯 、膨胀 、收缩等 ) , 采",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      此外 , 对任何类型的连续的流动扰动(转弯 、膨胀 、收缩等 ) , 采样点应位于其下游至少 8XDh (Dh =\n水力直径 )处 , 其上游至少在 2XDh  处 。",
+      "type": "语义分解",
+      "subject": "此外 , 对任何类型的连续的流动扰动(转弯 、膨胀 、收缩等 ) , 采",
+      "action": "",
+      "operation": "此外 , 对任何类型的连续的流动扰动(转弯 、膨胀 、收缩等 ) , 采样点应位于其下游至少 8XDh (Dh = 水力直径 )处 , 其上游至少在 2XDh 处 。",
+      "condition": "",
+      "constraint": "      此外 , 对任何类型的连续的流动扰动(转弯 、膨胀 、收缩等 ) , 采样点应位于其下游至少 8XDh (Dh =\n水力直径 )处 , 其上游至少在 2XDh  处 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "此外 , 对任何类型的连续的流动扰动(转弯 、膨胀 、收缩等 ) , 采"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

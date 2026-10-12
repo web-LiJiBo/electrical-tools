@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.2.9",
+  "entities": [
+    {
+      "name": "防雷条款执行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.9       本条为强制性条文，必须严格执行。",
+      "type": "语义分解",
+      "subject": "防雷条款执行",
+      "action": "",
+      "operation": "本条强制严格执行",
+      "condition": "",
+      "constraint": "9.2.9       本条为强制性条文，必须严格执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防雷条款执行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23397,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；只有条文说明无本条具体内容"
+      ]
+    }
+  }
+}

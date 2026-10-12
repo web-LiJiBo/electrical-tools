@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.1.4.3",
+  "entities": [
+    {
+      "name": "pH定位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.4.3 pH定位:选用一种与被测水样pH接近的标准缓冲溶液，重复定位1次～2次，当水样pH<7.0时，使用邻苯二甲酸氢钾标准缓冲溶液定位，以四硼酸钠或混合磷酸盐缓冲溶液复定位;如果水样pH>7.0时，则用四硼酸钠缓冲溶液定位，以邻苯二甲酸氢钾或混合磷酸盐缓冲溶液复定位。注:如发现三种缓冲溶液的定位值不成线性，检查玻璃电极的质量。",
+      "type": "语义分解",
+      "subject": "pH定位",
+      "action": "",
+      "operation": "按水样酸碱性选择缓冲液定位复定位非线性检查电极",
+      "condition": "",
+      "constraint": "8.1.4.3 pH定位:选用一种与被测水样pH接近的标准缓冲溶液，重复定位1次～2次，当水样pH<7.0时，使用邻苯二甲酸氢钾标准缓冲溶液定位，以四硼酸钠或混合磷酸盐缓冲溶液复定位;如果水样pH>7.0时，则用四硼酸钠缓冲溶液定位，以邻苯二甲酸氢钾或混合磷酸盐缓冲溶液复定位。注:如发现三种缓冲溶液的定位值不成线性，检查玻璃电极的质量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "pH定位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1353,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

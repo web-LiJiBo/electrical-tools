@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.9.3",
+  "entities": [
+    {
+      "name": "直流电源线绝缘封扎",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.9.3      每对直流电源线应保持平行，安装好的电源线末端必须有\n胶带等绝缘物封头，电缆剖头处必须用胶带和护套封扎。",
+      "type": "语义分解",
+      "subject": "直流电源线绝缘封扎",
+      "action": "",
+      "operation": "每对平行末端绝缘封头剖头胶带护套封扎",
+      "condition": "",
+      "constraint": "3.9.3      每对直流电源线应保持平行，安装好的电源线末端必须有\n胶带等绝缘物封头，电缆剖头处必须用胶带和护套封扎。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "直流电源线绝缘封扎"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26738,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

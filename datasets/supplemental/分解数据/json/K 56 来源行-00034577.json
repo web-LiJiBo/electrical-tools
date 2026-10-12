@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034577",
+  "entities": [
+    {
+      "name": "表 1 给出了可用的分析器类型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      表 1 给出了可用的分析器类型。详细规范在 GB/T18345 . 1 中给出。对于许多特殊组分 , 可以使用\n一台复合分析器 。也可用适合监测的特殊分析器 。表 1 未列出但满足 GB/T18345 . 1 所述精度要求的分\n析器在有关方面协商一致下也可以使用。",
+      "type": "语义分解",
+      "subject": "表 1 给出了可用的分析器类型",
+      "action": "",
+      "operation": "表 1 给出了可用的分析器类型。详细规范在 GB/T18345 . 1 中给出。对于许多特殊组分 , 可以使用 一台复合分析器 。也可用适合监测的特殊分析器 。表 1 未列出但满足 GB/T18345 . 1 所述精度要求的分 析器在有关方面协商一致下也可以使用。",
+      "condition": "",
+      "constraint": "      表 1 给出了可用的分析器类型。详细规范在 GB/T18345 . 1 中给出。对于许多特殊组分 , 可以使用\n一台复合分析器 。也可用适合监测的特殊分析器 。表 1 未列出但满足 GB/T18345 . 1 所述精度要求的分\n析器在有关方面协商一致下也可以使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "表 1 给出了可用的分析器类型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34577,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

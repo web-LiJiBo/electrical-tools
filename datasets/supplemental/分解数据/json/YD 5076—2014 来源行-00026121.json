@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026121",
+  "entities": [
+    {
+      "name": "在采用No.7 信令时， 一般可以按双向中继计算电路数， 当系统间话务量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.2  在采用No.7  信令时， 一般可以按双向中继计算电路数，\n当系统间话务量较大或网络组织有需要时，也可按单向中继计算。\n11.2.3       当交换机间按高效直达电路和迂回电路设置局间中继线\n或长途电路时，应按规定的高效直达路由和迂回路由的电路计算\n方法计算电路数。",
+      "type": "语义分解",
+      "subject": "在采用No.7 信令时， 一般可以按双向中继计算电路数， 当系统间话务量",
+      "action": "",
+      "operation": "在采用No.7 信令时， 一般可以按双向中继计算电路数， 当系统间话务量较大或网络组织有需要时，也可按单向中继计算。 11.2.3 当交换机间按高效直达电路和迂回电路设置局间中继线 或长途电路时，应按规定的高效直达路由和迂回路由的电路计算 方法计算电路数。",
+      "condition": "",
+      "constraint": "11.2.2  在采用No.7  信令时， 一般可以按双向中继计算电路数，\n当系统间话务量较大或网络组织有需要时，也可按单向中继计算。\n11.2.3       当交换机间按高效直达电路和迂回电路设置局间中继线\n或长途电路时，应按规定的高效直达路由和迂回路由的电路计算\n方法计算电路数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在采用No.7 信令时， 一般可以按双向中继计算电路数， 当系统间话务量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26121,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

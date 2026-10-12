@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "5.1.2.2",
+  "entities": [
+    {
+      "name": "能耗趋势线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.2 趋势分析 以油气输量、LNG外输量或注气量为横坐标, 分别以输油泵机组耗电量、加热炉耗油（气）量、锅炉耗油(气)量、换热器耗蒸汽量、压缩机组耗能量或LNG接收站耗能量为纵坐标绘制能耗趋势线。并分别拟合出输油泵机组耗电量、加热炉耗油（气）量、锅炉耗油(气)量、换热器耗蒸汽量、压缩机组耗能量或LNG接收站耗能量与油气输量、LNG外输量或注气量的关系式。",
+      "type": "语义分解",
+      "subject": "能耗趋势线",
+      "action": "",
+      "operation": "拟合输量和设备能耗关系",
+      "condition": "",
+      "constraint": "以油气输量、LNG外输量或注气量为横坐标",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "能耗趋势线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

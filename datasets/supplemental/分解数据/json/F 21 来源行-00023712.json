@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023712",
+  "entities": [
+    {
+      "name": "BAC与软交换之间的接 口 ,协议可以是 ITU-T H. 248协议或",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      BAC与软交换之间的接 口 ,协议可以是 ITU-T H. 248协议或 SIP协议 ,BAC需要对这些协议消息\n中的某些地址信息进行变换 , 同时在这些协议对应的注册消息中 ,BAC需要插入和软交换用户(或软交\n换终端)相关的网络位置信息 。",
+      "type": "语义分解",
+      "subject": "BAC与软交换之间的接 口 ,协议可以是 ITU-T H. 248协议或",
+      "action": "",
+      "operation": "BAC与软交换之间的接 口 ,协议可以是 ITU-T H. 248协议或 SIP协议 ,BAC需要对这些协议消息 中的某些地址信息进行变换 , 同时在这些协议对应的注册消息中 ,BAC需要插入和软交换用户(或软交 换终端)相关的网络位置信息 。",
+      "condition": "",
+      "constraint": "      BAC与软交换之间的接 口 ,协议可以是 ITU-T H. 248协议或 SIP协议 ,BAC需要对这些协议消息\n中的某些地址信息进行变换 , 同时在这些协议对应的注册消息中 ,BAC需要插入和软交换用户(或软交\n换终端)相关的网络位置信息 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "BAC与软交换之间的接 口 ,协议可以是 ITU-T H. 248协议或"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23712,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

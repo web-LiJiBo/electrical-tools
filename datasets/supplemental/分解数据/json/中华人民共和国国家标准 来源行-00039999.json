@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00039999",
+  "entities": [
+    {
+      "name": "化学工业生产过程中排出的、列入国家危险废物名录或者根 据国家规定的危险废",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    化学工业生产过程中排出的、列入国家危险废物名录或者根\n据国家规定的危险废物鉴别标准和鉴别方法认定的具有危险特性\n的废物。",
+      "type": "语义分解",
+      "subject": "化学工业生产过程中排出的、列入国家危险废物名录或者根 据国家规定的危险废",
+      "action": "",
+      "operation": "化学工业生产过程中排出的、列入国家危险废物名录或者根 据国家规定的危险废物鉴别标准和鉴别方法认定的具有危险特性 的废物。",
+      "condition": "",
+      "constraint": "    化学工业生产过程中排出的、列入国家危险废物名录或者根\n据国家规定的危险废物鉴别标准和鉴别方法认定的具有危险特性\n的废物。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化学工业生产过程中排出的、列入国家危险废物名录或者根 据国家规定的危险废"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 39999,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

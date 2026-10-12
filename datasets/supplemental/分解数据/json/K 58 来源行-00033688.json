@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033688",
+  "entities": [
+    {
+      "name": "b) 用一张未使用过的清洁滤纸使反射率计的读数调整到 100",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    用一张未使用过的清洁滤纸使反射率计的读数调整到 100 ;\nc)    测量取得的滤纸上烟痕的反射率 RS  ;",
+      "type": "语义分解",
+      "subject": "b) 用一张未使用过的清洁滤纸使反射率计的读数调整到 100",
+      "action": "",
+      "operation": "b) 用一张未使用过的清洁滤纸使反射率计的读数调整到 100 ; c) 测量取得的滤纸上烟痕的反射率 RS",
+      "condition": "",
+      "constraint": "b)    用一张未使用过的清洁滤纸使反射率计的读数调整到 100 ;\nc)    测量取得的滤纸上烟痕的反射率 RS  ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 用一张未使用过的清洁滤纸使反射率计的读数调整到 100"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33688,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

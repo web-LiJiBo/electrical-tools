@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026432",
+  "entities": [
+    {
+      "name": "作模式，即信令转接点模式和代理模式，具体如下图所示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "作模式，即信令转接点模式和代理模式，具体如下图所示。 SG 工\n作在信令转接点模式时，可采用M2PA 、M3UA 和 SUA 三种高层\n适配层协议，并需要为 SG 单独分配 No.7  信令点编码；工作在代\n理模式时，可采用 M2UA  和 M3UA  两种高层适配层协议，采用\nM2UA  不需要为 SG 分配信令点编码，采用 M3UA  SG 的信令点\n编码与 SS 相同。",
+      "type": "语义分解",
+      "subject": "作模式，即信令转接点模式和代理模式，具体如下图所示",
+      "action": "",
+      "operation": "作模式，即信令转接点模式和代理模式，具体如下图所示。 SG 工 作在信令转接点模式时，可采用M2PA 、M3UA 和 SUA 三种高层 适配层协议，并需要为 SG 单独分配 No.7 信令点编码；工作在代 理模式时，可采用 M2UA 和 M3UA 两种高层适配层协议，采用 M2UA 不需要为 SG 分配信令点编码，采用 M3UA SG 的信令点 编码与 SS 相同。",
+      "condition": "",
+      "constraint": "作模式，即信令转接点模式和代理模式，具体如下图所示。 SG 工\n作在信令转接点模式时，可采用M2PA 、M3UA 和 SUA 三种高层\n适配层协议，并需要为 SG 单独分配 No.7  信令点编码；工作在代\n理模式时，可采用 M2UA  和 M3UA  两种高层适配层协议，采用\nM2UA  不需要为 SG 分配信令点编码，采用 M3UA  SG 的信令点\n编码与 SS 相同。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作模式，即信令转接点模式和代理模式，具体如下图所示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26432,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

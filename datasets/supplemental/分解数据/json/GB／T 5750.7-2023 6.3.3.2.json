@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.3.3.2",
+  "entities": [
+    {
+      "name": "石油荧光缓冲液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3.2 磷酸盐缓冲溶液 (PH 7.4):称取7.15 &无水磷酸二氢钾 (KHPO ) 及45.08 &三水合磷酸氢二钾 (K? HPO: 3H.0)溶于纯水中并稀释至500 mL",
+      "type": "语义分解",
+      "subject": "石油荧光缓冲液",
+      "action": "",
+      "operation": "按两磷酸盐配方制备pH7.4缓冲液",
+      "condition": "",
+      "constraint": "6.3.3.2 磷酸盐缓冲溶液 (PH 7.4):称取7.15 &无水磷酸二氢钾 (KHPO ) 及45.08 &三水合磷酸氢二钾 (K? HPO: 3H.0)溶于纯水中并稀释至500 mL",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油荧光缓冲液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1830,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；质量单位化学符号异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024827",
+  "entities": [
+    {
+      "name": "c) 打开 SNMP协议测试工具，加载待测系统设备的 MIB库，配置 S",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    打开 SNMP协议测试工具，加载待测系统设备的 MIB库，配置 SNMP公共体；\nd)    在 SNMP协议测试工具上选取相应参数对应 MIB节点，进行遍历查询。",
+      "type": "语义分解",
+      "subject": "c) 打开 SNMP协议测试工具，加载待测系统设备的 MIB库，配置 S",
+      "action": "",
+      "operation": "c) 打开 SNMP协议测试工具，加载待测系统设备的 MIB库，配置 SNMP公共体； d) 在 SNMP协议测试工具上选取相应参数对应 MIB节点，进行遍历查询。",
+      "condition": "",
+      "constraint": "c)    打开 SNMP协议测试工具，加载待测系统设备的 MIB库，配置 SNMP公共体；\nd)    在 SNMP协议测试工具上选取相应参数对应 MIB节点，进行遍历查询。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 打开 SNMP协议测试工具，加载待测系统设备的 MIB库，配置 S"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24827,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

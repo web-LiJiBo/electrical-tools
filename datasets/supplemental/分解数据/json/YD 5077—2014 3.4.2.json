@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.4.2",
+  "entities": [
+    {
+      "name": "机台安装排列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.4.2      机台位置安装正确，台列安装整齐，机台边缘应成一直线，\n相邻机台紧密靠拢，台面相互保持水平，衔接处无明显高低不平\n现象。",
+      "type": "语义分解",
+      "subject": "机台安装排列",
+      "action": "",
+      "operation": "位置正确齐整边缘直线紧靠台面水平衔接平齐",
+      "condition": "",
+      "constraint": "3.4.2      机台位置安装正确，台列安装整齐，机台边缘应成一直线，\n相邻机台紧密靠拢，台面相互保持水平，衔接处无明显高低不平\n现象。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机台安装排列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26697,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042332",
+  "entities": [
+    {
+      "name": "（ 二）被约谈方就约谈事项进行陈述，说明整改措施情况",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "（ 二）被约谈方就约谈事项进行陈述，说明整改措施情况；\n\n（ 三）讨论分析，确定整改措施落实要求；\n\n（ 四）被约谈人进行表态发言；\n\n（ 五）形成约谈纪要。",
+      "type": "语义分解",
+      "subject": "（ 二）被约谈方就约谈事项进行陈述，说明整改措施情况",
+      "action": "",
+      "operation": "（ 二）被约谈方就约谈事项进行陈述，说明整改措施情况； （ 三）讨论分析，确定整改措施落实要求； （ 四）被约谈人进行表态发言； （ 五）形成约谈纪要。",
+      "condition": "",
+      "constraint": "（ 二）被约谈方就约谈事项进行陈述，说明整改措施情况；\n\n（ 三）讨论分析，确定整改措施落实要求；\n\n（ 四）被约谈人进行表态发言；\n\n（ 五）形成约谈纪要。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 二）被约谈方就约谈事项进行陈述，说明整改措施情况"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42332,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

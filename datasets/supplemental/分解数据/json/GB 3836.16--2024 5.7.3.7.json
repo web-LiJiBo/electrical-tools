@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.3.7",
+  "entities": [
+    {
+      "name": "本安点对点接线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.3.7 点与点连接 仅初始检查时要求检查。",
+      "type": "语义分解",
+      "subject": "本安点对点接线",
+      "action": "",
+      "operation": "初始检查时验证连接",
+      "condition": "",
+      "constraint": "5.7.3.7 点与点连接 仅初始检查时要求检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本安点对点接线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4011,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

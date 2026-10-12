@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案评估指南",
+  "standard_id": "AQ/T 9011-2019",
+  "version": "2019",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "预案报告大纲",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 生产安全事故应急预案评估报告编制大纲参见附录B。",
+      "type": "语义分解",
+      "subject": "预案报告大纲",
+      "action": "",
+      "operation": "参见附录B",
+      "condition": "",
+      "constraint": "7.1 生产安全事故应急预案评估报告编制大纲参见附录B。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预案报告大纲"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5416,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用未提供"
+      ]
+    }
+  }
+}

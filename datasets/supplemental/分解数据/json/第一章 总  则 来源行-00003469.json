@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产安全视频监控系统管理细则",
+  "standard_id": "第一章 总  则",
+  "version": "",
+  "chapter_path": "来源行-00003469",
+  "entities": [
+    {
+      "name": "第六条 集团公司数字化部履行以下主要职责",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六条 集团公司数字化部履行以下主要职责: (一)负责生产安全视频监控系统机器视觉部分的全生命周期管理; (二)负责入湖视频数据的安全管理和对外应用,负责对外提供数据方案及措施的对接。核查和审批。",
+      "type": "语义分解",
+      "subject": "第六条 集团公司数字化部履行以下主要职责",
+      "action": "",
+      "operation": "第六条 集团公司数字化部履行以下主要职责: (一)负责生产安全视频监控系统机器视觉部分的全生命周期管理; (二)负责入湖视频数据的安全管理和对外应用,负责对外提供数据方案及措施的对接。核查和审批。",
+      "condition": "",
+      "constraint": "第六条 集团公司数字化部履行以下主要职责: (一)负责生产安全视频监控系统机器视觉部分的全生命周期管理; (二)负责入湖视频数据的安全管理和对外应用,负责对外提供数据方案及措施的对接。核查和审批。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六条 集团公司数字化部履行以下主要职责"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3469,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

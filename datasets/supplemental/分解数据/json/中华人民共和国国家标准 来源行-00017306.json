@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017306",
+  "entities": [
+    {
+      "name": "管理特定类型的一个或多个网络单元( network element)的 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   管理特定类型的一个或多个网络单元( network      element)的\n系统。网元管理系统可管理每个网络单元( network     element)的\n功能和容量，但并不理会网络中不同网络单元间的交流。 一个网\n元 管 理 系 统 宜 配 置 一 组 相 同 类 型 或 系 统 的 网 元( network\nelement)。",
+      "type": "语义分解",
+      "subject": "管理特定类型的一个或多个网络单元( network element)的 ",
+      "action": "",
+      "operation": "管理特定类型的一个或多个网络单元( network element)的 系统。网元管理系统可管理每个网络单元( network element)的 功能和容量，但并不理会网络中不同网络单元间的交流。 一个网 元 管 理 系 统 宜 配 置 一 组 相 同 类 型 或 系 统 的 网 元( network element)。",
+      "condition": "",
+      "constraint": "   管理特定类型的一个或多个网络单元( network      element)的\n系统。网元管理系统可管理每个网络单元( network     element)的\n功能和容量，但并不理会网络中不同网络单元间的交流。 一个网\n元 管 理 系 统 宜 配 置 一 组 相 同 类 型 或 系 统 的 网 元( network\nelement)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管理特定类型的一个或多个网络单元( network element)的 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17306,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

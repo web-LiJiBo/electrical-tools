@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015909",
+  "entities": [
+    {
+      "name": "b) 对于OTUk 接口，目前仅可测试时钟类型为ODCr, 对于其他时钟",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    b)  对于OTUk 接口，目前仅可测试时钟类型为ODCr,  对于其他时钟类型，测试方法待研究。\n    c)  本测试项目仅适用于OTN 设备接口为再生器功能(无交叉连接等功能)。\n    d)  S,/Rn点的抖动测试仅适用于中继型OTU。\n    e)  该测试项不适用于以太网接口。",
+      "type": "语义分解",
+      "subject": "b) 对于OTUk 接口，目前仅可测试时钟类型为ODCr, 对于其他时钟",
+      "action": "",
+      "operation": "b) 对于OTUk 接口，目前仅可测试时钟类型为ODCr, 对于其他时钟类型，测试方法待研究。 c) 本测试项目仅适用于OTN 设备接口为再生器功能(无交叉连接等功能)。 d) S,/Rn点的抖动测试仅适用于中继型OTU。 e) 该测试项不适用于以太网接口。",
+      "condition": "",
+      "constraint": "    b)  对于OTUk 接口，目前仅可测试时钟类型为ODCr,  对于其他时钟类型，测试方法待研究。\n    c)  本测试项目仅适用于OTN 设备接口为再生器功能(无交叉连接等功能)。\n    d)  S,/Rn点的抖动测试仅适用于中继型OTU。\n    e)  该测试项不适用于以太网接口。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 对于OTUk 接口，目前仅可测试时钟类型为ODCr, 对于其他时钟"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15909,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

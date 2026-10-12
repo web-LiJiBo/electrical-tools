@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.3.4",
+  "entities": [
+    {
+      "name": "方法标准技术路线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.4 明确方法标准目标物及拟采取的分析方法,明确方法建立过程中需研究分析的各条件因素,提出试验方案和主要工作内容。形成方法建立的技术路线。",
+      "type": "语义分解",
+      "subject": "方法标准技术路线",
+      "action": "",
+      "operation": "明确目标物方法条件提出试验方案",
+      "condition": "",
+      "constraint": "5.3.4 明确方法标准目标物及拟采取的分析方法,明确方法建立过程中需研究分析的各条件因素,提出试验方案和主要工作内容。形成方法建立的技术路线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法标准技术路线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2309,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

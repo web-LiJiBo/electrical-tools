@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.6.2.6",
+  "entities": [
+    {
+      "name": "隧道施工过程中应定期对隧道顶部及其周边的地下水水位进行勘查测量，对隧道顶",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.2.6 隧道施工过程中应定期对隧道顶部及其周边的地下水水位进行勘查测量，对隧道顶部及其区\n周边的泉水流量进行监测。",
+      "type": "语义分解",
+      "subject": "隧道施工过程中应定期对隧道顶部及其周边的地下水水位进行勘查测量，对隧道顶",
+      "action": "",
+      "operation": "隧道施工过程中应定期对隧道顶部及其周边的地下水水位进行勘查测量，对隧道顶部及其区 周边的泉水流量进行监测。",
+      "condition": "",
+      "constraint": "4.6.2.6 隧道施工过程中应定期对隧道顶部及其周边的地下水水位进行勘查测量，对隧道顶部及其区\n周边的泉水流量进行监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "隧道施工过程中应定期对隧道顶部及其周边的地下水水位进行勘查测量，对隧道顶"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42007,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

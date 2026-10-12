@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040506",
+  "entities": [
+    {
+      "name": "高噪声厂房指内部噪声对外部环境产生明显影响的厂房(如 压缩机厂房、空压站",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    高噪声厂房指内部噪声对外部环境产生明显影响的厂房(如\n压缩机厂房、空压站、工业炉、粉料风送系统等)。第3款规定的意\n图是：要求安静的建筑物，门窗不要面向噪声源；其排列应使建筑\n多数面积位于较安静的区域中；其高度的设计不宜使其暴露在强",
+      "type": "语义分解",
+      "subject": "高噪声厂房指内部噪声对外部环境产生明显影响的厂房(如 压缩机厂房、空压站",
+      "action": "",
+      "operation": "高噪声厂房指内部噪声对外部环境产生明显影响的厂房(如 压缩机厂房、空压站、工业炉、粉料风送系统等)。第3款规定的意 图是：要求安静的建筑物，门窗不要面向噪声源；其排列应使建筑 多数面积位于较安静的区域中；其高度的设计不宜使其暴露在强",
+      "condition": "",
+      "constraint": "    高噪声厂房指内部噪声对外部环境产生明显影响的厂房(如\n压缩机厂房、空压站、工业炉、粉料风送系统等)。第3款规定的意\n图是：要求安静的建筑物，门窗不要面向噪声源；其排列应使建筑\n多数面积位于较安静的区域中；其高度的设计不宜使其暴露在强",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高噪声厂房指内部噪声对外部环境产生明显影响的厂房(如 压缩机厂房、空压站"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40506,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

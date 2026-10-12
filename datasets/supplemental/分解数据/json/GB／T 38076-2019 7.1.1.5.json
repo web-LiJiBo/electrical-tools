@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.1.1.5",
+  "entities": [
+    {
+      "name": "管道腐蚀保护系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1.5 建议定期对管道的腐蚀情况和防腐保护系统进行检验，检测，包括: 管道的定期检验按 TSG D7003 的有关规定进行，新建管道一般于投用后 3年内进行首次全面检验; b) 因事故停运的管道，在投入运行前对事故管段进行全面检验; 管道腐蚀防护系统的检验按 GB/T 19285 执行; 4) 管道内检测按 GB/I 27699 执行。",
+      "type": "语义分解",
+      "subject": "管道腐蚀保护系统",
+      "action": "",
+      "operation": "定期检验新管投用后三年内首次全面检验事故复运前检验",
+      "condition": "",
+      "constraint": "7.1.1.5 建议定期对管道的腐蚀情况和防腐保护系统进行检验，检测，包括: 管道的定期检验按 TSG D7003 的有关规定进行，新建管道一般于投用后 3年内进行首次全面检验; b) 因事故停运的管道，在投入运行前对事故管段进行全面检验; 管道腐蚀防护系统的检验按 GB/T 19285 执行; 4) 管道内检测按 GB/I 27699 执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道腐蚀保护系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1183,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用标准编号有识别异常"
+      ]
+    }
+  }
+}

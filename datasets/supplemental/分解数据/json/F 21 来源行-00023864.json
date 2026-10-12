@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023864",
+  "entities": [
+    {
+      "name": "g) 调度台支持主席会议控制方式 ,包括观看会场 、自动浏览 、广播会场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "g)    调度台支持主席会议控制方式 ,包括观看会场 、自动浏览 、广播会场等 。\nh)    应支持 SIP、ITU-T H. 248等多种协议和终端之间通信 。\ni)     应支持会议保密鉴权功能 , 防止非授权人员随便发起会议 。",
+      "type": "语义分解",
+      "subject": "g) 调度台支持主席会议控制方式 ,包括观看会场 、自动浏览 、广播会场",
+      "action": "",
+      "operation": "g) 调度台支持主席会议控制方式 ,包括观看会场 、自动浏览 、广播会场等 。 h) 应支持 SIP、ITU-T H. 248等多种协议和终端之间通信 。 i) 应支持会议保密鉴权功能 , 防止非授权人员随便发起会议 。",
+      "condition": "",
+      "constraint": "g)    调度台支持主席会议控制方式 ,包括观看会场 、自动浏览 、广播会场等 。\nh)    应支持 SIP、ITU-T H. 248等多种协议和终端之间通信 。\ni)     应支持会议保密鉴权功能 , 防止非授权人员随便发起会议 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 调度台支持主席会议控制方式 ,包括观看会场 、自动浏览 、广播会场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23864,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

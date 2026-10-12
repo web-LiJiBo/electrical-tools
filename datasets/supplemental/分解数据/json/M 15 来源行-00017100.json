@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 15",
+  "version": "",
+  "chapter_path": "来源行-00017100",
+  "entities": [
+    {
+      "name": "OTN 传送网络从垂直方向上分为光通路( OCh) 层网络、光复用段(O",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTN 传送网络从垂直方向上分为光通路( OCh) 层网络、光复用段(OMS)层网络和光传输段(OTS)\n层网络；其中OCh 层网络还可划分为光通路净荷单元k( OPUk, k=0,1,2,3,4)、光通路数据单元k(ODUk,\nk=0,1,2,3,4) 和光通路传送单元k(O  TUk,  k=1,2,3,4) 三个子层。在OTU 网络体系中，各相邻层之间是\n\n客户/服务者的关系。",
+      "type": "语义分解",
+      "subject": "OTN 传送网络从垂直方向上分为光通路( OCh) 层网络、光复用段(O",
+      "action": "",
+      "operation": "OTN 传送网络从垂直方向上分为光通路( OCh) 层网络、光复用段(OMS)层网络和光传输段(OTS) 层网络；其中OCh 层网络还可划分为光通路净荷单元k( OPUk, k=0,1,2,3,4)、光通路数据单元k(ODUk, k=0,1,2,3,4) 和光通路传送单元k(O TUk, k=1,2,3,4) 三个子层。在OTU 网络体系中，各相邻层之间是 客户/服务者的关系。",
+      "condition": "",
+      "constraint": "      OTN 传送网络从垂直方向上分为光通路( OCh) 层网络、光复用段(OMS)层网络和光传输段(OTS)\n层网络；其中OCh 层网络还可划分为光通路净荷单元k( OPUk, k=0,1,2,3,4)、光通路数据单元k(ODUk,\nk=0,1,2,3,4) 和光通路传送单元k(O  TUk,  k=1,2,3,4) 三个子层。在OTU 网络体系中，各相邻层之间是\n\n客户/服务者的关系。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 传送网络从垂直方向上分为光通路( OCh) 层网络、光复用段(O"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17100,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

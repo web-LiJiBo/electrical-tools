@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境监测与环境信息管理细则",
+  "standard_id": "国家管网办[2025]241号",
+  "version": "",
+  "chapter_path": "来源行-00000911",
+  "entities": [
+    {
+      "name": "第二十八条 委托社会化运行单位代为运行的,社会化运行单位应当依据《环境污",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十八条 委托社会化运行单位代为运行的,社会化运行单位应当依据《环境污染治理设施运营资质许可管理办法》的规定取得自动连续监测设施运营资质并在有效期内。各所属单位应对其服务资质和能力进行审查,并对其运行管理工作进行定期监督考核。",
+      "type": "语义分解",
+      "subject": "第二十八条 委托社会化运行单位代为运行的,社会化运行单位应当依据《环境污",
+      "action": "",
+      "operation": "第二十八条 委托社会化运行单位代为运行的,社会化运行单位应当依据《环境污染治理设施运营资质许可管理办法》的规定取得自动连续监测设施运营资质并在有效期内。各所属单位应对其服务资质和能力进行审查,并对其运行管理工作进行定期监督考核。",
+      "condition": "",
+      "constraint": "第二十八条 委托社会化运行单位代为运行的,社会化运行单位应当依据《环境污染治理设施运营资质许可管理办法》的规定取得自动连续监测设施运营资质并在有效期内。各所属单位应对其服务资质和能力进行审查,并对其运行管理工作进行定期监督考核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十八条 委托社会化运行单位代为运行的,社会化运行单位应当依据《环境污"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 911,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

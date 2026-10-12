@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040470",
+  "entities": [
+    {
+      "name": "随着国家推进经济结构转型升级，推动污染企业退出，城 市建成区内现有钢铁、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.4       随着国家推进经济结构转型升级，推动污染企业退出，城\n市建成区内现有钢铁、有色金属、造纸、印染、原料药制造、化工等\n污染较重的企业有序搬迁改造或依法关闭，搬迁或关闭以及工厂\n服役期满的化工建设项目场地土壤经检测受到污染的，应采取土\n壤修复措施，消除污染物对土壤和地下水的影响。",
+      "type": "语义分解",
+      "subject": "随着国家推进经济结构转型升级，推动污染企业退出，城 市建成区内现有钢铁、",
+      "action": "",
+      "operation": "随着国家推进经济结构转型升级，推动污染企业退出，城 市建成区内现有钢铁、有色金属、造纸、印染、原料药制造、化工等 污染较重的企业有序搬迁改造或依法关闭，搬迁或关闭以及工厂 服役期满的化工建设项目场地土壤经检测受到污染的，应采取土 壤修复措施，消除污染物对土壤和地下水的影响。",
+      "condition": "",
+      "constraint": "6.7.4       随着国家推进经济结构转型升级，推动污染企业退出，城\n市建成区内现有钢铁、有色金属、造纸、印染、原料药制造、化工等\n污染较重的企业有序搬迁改造或依法关闭，搬迁或关闭以及工厂\n服役期满的化工建设项目场地土壤经检测受到污染的，应采取土\n壤修复措施，消除污染物对土壤和地下水的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "随着国家推进经济结构转型升级，推动污染企业退出，城 市建成区内现有钢铁、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40470,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "8.1.5",
+  "entities": [
+    {
+      "name": "微波站接地电阻",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.5      微波站的接地电阻宜控制在10Ω之内。微波站土壤电阻\n率大于1000Ω ·m 时，可不对微波站的接地电阻予以限制，但地网\n的等效半径应大于10m, 并应根据地理情况在地网周边加数条\n10m～20m 辐射型接地体。",
+      "type": "语义分解",
+      "subject": "微波站接地电阻",
+      "action": "",
+      "operation": "宜10欧以内土壤超过1000欧米可不限但地网半径超10米外围加10至20米辐射体",
+      "condition": "",
+      "constraint": "8.1.5      微波站的接地电阻宜控制在10Ω之内。微波站土壤电阻\n率大于1000Ω ·m 时，可不对微波站的接地电阻予以限制，但地网\n的等效半径应大于10m, 并应根据地理情况在地网周边加数条\n10m～20m 辐射型接地体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "微波站接地电阻"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22816,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

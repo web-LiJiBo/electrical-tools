@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.8.6",
+  "entities": [
+    {
+      "name": "泄漏分级控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.8.6 企业应根据物料危险性和潸在泄漏量对设备泄漏风险进行分级管理 ,对泄漏后可能导致严 重后果的设备(如液化烃储罐等) ,采取技术措施笫一时间切断泄漏源 ,并采取有效的防护措施。",
+      "type": "语义分解",
+      "subject": "泄漏分级控制",
+      "action": "",
+      "operation": "按危险性量分级严重后果设备第一时间切断泄漏源有效防护",
+      "condition": "",
+      "constraint": "4.10.8.6 企业应根据物料危险性和潸在泄漏量对设备泄漏风险进行分级管理 ,对泄漏后可能导致严 重后果的设备(如液化烃储罐等) ,采取技术措施笫一时间切断泄漏源 ,并采取有效的防护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泄漏分级控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5206,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

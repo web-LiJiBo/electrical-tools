@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.1.1.2",
+  "entities": [
+    {
+      "name": "制药验收图件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1.2 图件资料 建设项目地理位置图、厂区总平面布置图 (应标注有主要污染源位置和厂区周边环境情况、排水管网、环境敏感点分布等)、项目所在地风向风玫瑰图、物料及水平衡图、生产工艺流程及污染产生示意图、污染处理工艺流程图、主要治理设施设计图等。",
+      "type": "语义分解",
+      "subject": "制药验收图件",
+      "action": "",
+      "operation": "收位置总图污染源环境排网敏感点风玫瑰平衡工艺治理图",
+      "condition": "",
+      "constraint": "5.1.1.2 图件资料 建设项目地理位置图、厂区总平面布置图 (应标注有主要污染源位置和厂区周边环境情况、排水管网、环境敏感点分布等)、项目所在地风向风玫瑰图、物料及水平衡图、生产工艺流程及污染产生示意图、污染处理工艺流程图、主要治理设施设计图等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药验收图件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2704,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

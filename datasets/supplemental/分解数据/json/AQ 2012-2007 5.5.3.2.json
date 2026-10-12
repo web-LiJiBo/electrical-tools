@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.5.3.2",
+  "entities": [
+    {
+      "name": "井口装置选择",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.3.2 所选井口装置的性能压力应满足测试和作业要求。高压 ,高产及含硫化氢油(气)井应采用配有液压(或手动)控制阀门的采油(气)树及地面控制管汇。对重点高压含硫化氢油(气)井井口装置应进行等压气密检验。其性能应满足抗高温 ,抗硫化氢 防腐的要求 ,并符合4.5.5的规定。",
+      "type": "语义分解",
+      "subject": "井口装置选择",
+      "action": "",
+      "operation": "压力性能满足测试高压高产含硫配控制阀树管汇重点高压含硫气密检验耐温防硫腐蚀",
+      "condition": "",
+      "constraint": "5.5.3.2 所选井口装置的性能压力应满足测试和作业要求。高压 ,高产及含硫化氢油(气)井应采用配有液压(或手动)控制阀门的采油(气)树及地面控制管汇。对重点高压含硫化氢油(气)井井口装置应进行等压气密检验。其性能应满足抗高温 ,抗硫化氢 防腐的要求 ,并符合4.5.5的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井口装置选择"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4427,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

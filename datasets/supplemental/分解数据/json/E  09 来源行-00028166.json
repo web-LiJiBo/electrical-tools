@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028166",
+  "entities": [
+    {
+      "name": "—压力试验前应对容器和管道各连接部位的紧固螺栓进行检查，应装配齐全、紧固",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—压力试验前应对容器和管道各连接部位的紧固螺栓进行检查，应装配齐全、紧固适当；试",
+      "type": "语义分解",
+      "subject": "—压力试验前应对容器和管道各连接部位的紧固螺栓进行检查，应装配齐全、紧固",
+      "action": "",
+      "operation": "—压力试验前应对容器和管道各连接部位的紧固螺栓进行检查，应装配齐全、紧固适当；试",
+      "condition": "",
+      "constraint": "—压力试验前应对容器和管道各连接部位的紧固螺栓进行检查，应装配齐全、紧固适当；试",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—压力试验前应对容器和管道各连接部位的紧固螺栓进行检查，应装配齐全、紧固"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28166,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

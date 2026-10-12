@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E 09",
+  "version": "",
+  "chapter_path": "8.2",
+  "entities": [
+    {
+      "name": "教学记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2   培训机构按照教学质量管理制度要求，对培训内容、时间、人员、授课教师及考核等相关内容\n进行保存，保存期限至少为4年。",
+      "type": "语义分解",
+      "subject": "教学记录",
+      "action": "",
+      "operation": "内容时间人员教师考核至少保存4年",
+      "condition": "",
+      "constraint": "8.2   培训机构按照教学质量管理制度要求，对培训内容、时间、人员、授课教师及考核等相关内容\n进行保存，保存期限至少为4年。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "教学记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28761,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

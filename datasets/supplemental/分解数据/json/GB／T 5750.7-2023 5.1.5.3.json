@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "5.1.5.3",
+  "entities": [
+    {
+      "name": "需氧量结果确定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5.3 结果确定 测定 2个或2个以上稀释度的溶解氧降低量应为 40 %~70 %之间 ,即可取平均值计算 _ 水样稀释后溶液氧降低率计算见式(17) : (oi二02 X100 05 02 式中: 05 水样稀释后溶液氧降低率,%; 01 '02 同5.1.5.2",
+      "type": "语义分解",
+      "subject": "需氧量结果确定",
+      "action": "",
+      "operation": "两个以上稀释度溶氧降低量百分之四十至七十取平均",
+      "condition": "",
+      "constraint": "5.1.5.3 结果确定 测定 2个或2个以上稀释度的溶解氧降低量应为 40 %~70 %之间 ,即可取平均值计算 _ 水样稀释后溶液氧降低率计算见式(17) : (oi二02 X100 05 02 式中: 05 水样稀释后溶液氧降低率,%; 01 '02 同5.1.5.2",
+      "constraint_role": "informational",
+      "related_entities": [
+        "需氧量结果确定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1784,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；降低率公式17破损"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "5.1.2",
+  "entities": [
+    {
+      "name": "环保手续材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2 环保手续:  包括环境影响报告书(表)及其批复文件。环境影响登记表及备案材料。地方政府 对违规项目的认定或备案文件(如涉及) ,竣工环境保护验收文件及验收意见等项目认定材料 如涉及)",
+      "type": "语义分解",
+      "subject": "环保手续材料",
+      "action": "",
+      "operation": "收集环评批复备案违规认定验收等适用材料",
+      "condition": "",
+      "constraint": "5.1.2 环保手续:  包括环境影响报告书(表)及其批复文件。环境影响登记表及备案材料。地方政府 对违规项目的认定或备案文件(如涉及) ,竣工环境保护验收文件及验收意见等项目认定材料 如涉及)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环保手续材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1975,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

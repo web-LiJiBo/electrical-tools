@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.2.6",
+  "entities": [
+    {
+      "name": "嗅阈数据处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.6 试验数据处理 按式(2)计算水样的嗅阈值(TON): (公式删除) 采用测定结果的几何均数按式(3)计算多人参加试验测定水样的嗅阈值(TON): (公式删除) 式中: TON—水样的嗅阈值; A—水样的体积，单位为毫升(mL); B—无臭水的体积，单位为毫升(mL); n—分析人员个数(n≥3); TONi—第i个分析人员测定的嗅阈值。",
+      "type": "语义分解",
+      "subject": "嗅阈数据处理",
+      "action": "",
+      "operation": "按公式算单人结果并以几何均数合并至少三人测定结果",
+      "condition": "",
+      "constraint": "6.2.6 试验数据处理 按式(2)计算水样的嗅阈值(TON): (公式删除) 采用测定结果的几何均数按式(3)计算多人参加试验测定水样的嗅阈值(TON): (公式删除) 式中: TON—水样的嗅阈值; A—水样的体积，单位为毫升(mL); B—无臭水的体积，单位为毫升(mL); n—分析人员个数(n≥3); TONi—第i个分析人员测定的嗅阈值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "嗅阈数据处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1296,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式删除不推算补写"
+      ]
+    }
+  }
+}

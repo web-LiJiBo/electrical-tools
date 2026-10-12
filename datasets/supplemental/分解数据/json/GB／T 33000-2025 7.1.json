@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "危险源辨识",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 危险源辨识 企业应明确危险源辨识的范围、人员、流程与频次。安全生产管理机构应组织业务部门采用适宜的危险源辨识方法和程序，全面辨识生产系统、工艺技术、设备设施、作业环境、作业任务和人员行为等存在的危险源。当存在以下情形时，应及时重新开展危险源辨识：生产系统、工艺技术、主要设备设施、作业环境等发生重大变化时；新工艺、新技术、新材料、新设备投入使用前；发生生产安全事故后；其他可能对安全生产造成重大影响的。",
+      "type": "语义分解",
+      "subject": "危险源辨识",
+      "action": "",
+      "operation": "明确范围人流程频次全面辨识重大变化新四项前事故后等重辨",
+      "condition": "",
+      "constraint": "7.1 危险源辨识 企业应明确危险源辨识的范围、人员、流程与频次。安全生产管理机构应组织业务部门采用适宜的危险源辨识方法和程序，全面辨识生产系统、工艺技术、设备设施、作业环境、作业任务和人员行为等存在的危险源。当存在以下情形时，应及时重新开展危险源辨识：生产系统、工艺技术、主要设备设施、作业环境等发生重大变化时；新工艺、新技术、新材料、新设备投入使用前；发生生产安全事故后；其他可能对安全生产造成重大影响的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危险源辨识"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7253,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

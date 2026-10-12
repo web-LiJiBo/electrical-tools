@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境保护管理办法",
+  "standard_id": "国家管网办[2025]262号",
+  "version": "",
+  "chapter_path": "来源行-00000863",
+  "entities": [
+    {
+      "name": "第七十八条 集团公司支持环境保护科学技术的研究开发, 鼓励自主创新",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第七十八条 集团公司支持环境保护科学技术的研究开发, 鼓励自主创新。引进消化吸收关键技术,加快先进适用技术的推广应用。 集团公司鼓励环境保护科学技术研究开发的交流与合作。",
+      "type": "语义分解",
+      "subject": "第七十八条 集团公司支持环境保护科学技术的研究开发, 鼓励自主创新",
+      "action": "",
+      "operation": "第七十八条 集团公司支持环境保护科学技术的研究开发, 鼓励自主创新。引进消化吸收关键技术,加快先进适用技术的推广应用。 集团公司鼓励环境保护科学技术研究开发的交流与合作。",
+      "condition": "",
+      "constraint": "第七十八条 集团公司支持环境保护科学技术的研究开发, 鼓励自主创新。引进消化吸收关键技术,加快先进适用技术的推广应用。 集团公司鼓励环境保护科学技术研究开发的交流与合作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第七十八条 集团公司支持环境保护科学技术的研究开发, 鼓励自主创新"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 863,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

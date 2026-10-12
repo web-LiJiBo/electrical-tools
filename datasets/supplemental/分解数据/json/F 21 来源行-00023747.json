@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023747",
+  "entities": [
+    {
+      "name": ") 使用 SNMPv2及 以 上 版 本 协 议 向 网 管 中 心 主",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)    使用 SNMPv2及 以 上 版 本 协 议 向 网 管 中 心 主 动 报 告 启 动 、接 口 状 态 变 化 、故 障 等 紧 急\n       事件 ;",
+      "type": "语义分解",
+      "subject": ") 使用 SNMPv2及 以 上 版 本 协 议 向 网 管 中 心 主",
+      "action": "",
+      "operation": ") 使用 SNMPv2及 以 上 版 本 协 议 向 网 管 中 心 主 动 报 告 启 动 、接 口 状 态 变 化 、故 障 等 紧 急 事件",
+      "condition": "",
+      "constraint": "1)    使用 SNMPv2及 以 上 版 本 协 议 向 网 管 中 心 主 动 报 告 启 动 、接 口 状 态 变 化 、故 障 等 紧 急\n       事件 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") 使用 SNMPv2及 以 上 版 本 协 议 向 网 管 中 心 主"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23747,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

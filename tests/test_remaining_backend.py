@@ -13,7 +13,7 @@ from standard_knowledge_service_v2.validation.validation_models import Validatio
 def _dataset(tmp_path) -> None:
     payload = {
         "entities": [{"name": "集电线路", "type": "设备"}],
-        "rules": [{"content": "集电线路发生过流时应跳闸", "subject": "集电线路", "action": "trip", "condition": "电流 >= 100", "constraint": "电流不小于100A"}],
+        "rules": [{"content": "集电线路发生过流时应跳闸", "subject": "集电线路", "action": "trip", "condition": "电流 >= 100", "constraint": "电流不小于100A", "constraint_role": "compliance"}],
         "relations": [],
     }
     (tmp_path / "case.json").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
@@ -21,7 +21,7 @@ def _dataset(tmp_path) -> None:
 
 def test_validation_gate_never_allows_dispatch() -> None:
     result = SafetyGate().decide({"semantic": ValidationStatus.PASS, "protocol": ValidationStatus.PASS})
-    assert result.status is ValidationStatus.NEEDS_HUMAN
+    assert result.status is ValidationStatus.GENERATED
     assert result.dispatch_allowed is False
 
 
@@ -40,11 +40,11 @@ def test_end_to_end_pipeline_keeps_evidence_and_audit(tmp_path) -> None:
     request = AnalysisRequest(
         "请生成海上风电集电线路过流跳闸候选指令",
         "海上风电",
-        parameters={"device_id": "CB-01", "operating_state": "运行", "device_type": "集电线路", "device_config": {"device_id": "CB-01", "logical_node": "PTRC1", "data_object": "Tr.general", "protocol": "IEC61850"}},
+        parameters={"电流": 120, "device_id": "CB-01", "operating_state": "运行", "device_type": "集电线路", "device_config": {"device_id": "CB-01", "logical_node": "PTRC1", "data_object": "Tr.general", "protocol": "IEC61850"}},
         target_protocol="IEC61850",
     )
     response = pipeline.analyze(request)
-    assert response.status == "needs_human"
+    assert response.status == "generated"
     assert response.evidence and response.data["candidate_instruction"]["dispatch_allowed"] is False
     assert response.evidence[0]["quote"] == "集电线路发生过流时应跳闸"
     assert response.data["selected_rule"]["content"] == response.evidence[0]["quote"]
@@ -81,3 +81,4 @@ def test_explicit_action_rejects_rule_with_different_action(tmp_path) -> None:
     assessment = response.data["candidate_assessments"][0]
     assert assessment["action_matches"] is False
     assert "requested_action_mismatch" in assessment["rejection_reasons"]
+

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "现场踏勘内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3 现场踏勘的主要内容 现场踏勘的主要内容包括:  地块的现状与历史情况,相邻地块的现状与历史情况,周围区域的现状与历史情况。区域的地质。水文地质和地形的描述等",
+      "type": "语义分解",
+      "subject": "现场踏勘内容",
+      "action": "",
+      "operation": "调查地块周边历史现状及地质水文地形",
+      "condition": "",
+      "constraint": "5.2.3 现场踏勘的主要内容 现场踏勘的主要内容包括:  地块的现状与历史情况,相邻地块的现状与历史情况,周围区域的现状与历史情况。区域的地质。水文地质和地形的描述等",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场踏勘内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2617,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

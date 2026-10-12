@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015364",
+  "entities": [
+    {
+      "name": "SM-IAE为段监视输入定位误码，SM 采用1bit来表示IAE",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      SM-IAE为段监视输入定位误码，SM 采用1bit来表示IAE 。SM-BIAE为段监视后向输入定位误码，\nSM采用4bit共同表示BIAE 和 BEI ( 该4bit 为“1011”时表示BIAE,  此时BEI 统计无效)。\n\n5.3.2.3.2      测试配置",
+      "type": "语义分解",
+      "subject": "SM-IAE为段监视输入定位误码，SM 采用1bit来表示IAE",
+      "action": "",
+      "operation": "SM-IAE为段监视输入定位误码，SM 采用1bit来表示IAE 。SM-BIAE为段监视后向输入定位误码， SM采用4bit共同表示BIAE 和 BEI ( 该4bit 为“1011”时表示BIAE, 此时BEI 统计无效)。 5.3.2.3.2 测试配置",
+      "condition": "",
+      "constraint": "      SM-IAE为段监视输入定位误码，SM 采用1bit来表示IAE 。SM-BIAE为段监视后向输入定位误码，\nSM采用4bit共同表示BIAE 和 BEI ( 该4bit 为“1011”时表示BIAE,  此时BEI 统计无效)。\n\n5.3.2.3.2      测试配置",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SM-IAE为段监视输入定位误码，SM 采用1bit来表示IAE"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15364,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

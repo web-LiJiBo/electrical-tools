@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012016",
+  "entities": [
+    {
+      "name": "应根据不同的场所 , 选择不同类型的话站",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1     应根据不同的场所 ,   选择不同类型的话站 。  室外非防\n爆场所应选用防护等级不低于 IP65 的户外型 ; 控制室 、  机柜间\n等非防爆室内场所宜选用桌面式话站或普通壁挂式话站 ; 泵房、\n压缩机厂房等防爆场所应选用与爆炸危险等级相适应的壁挂式\n防爆话站 。",
+      "type": "语义分解",
+      "subject": "应根据不同的场所 , 选择不同类型的话站",
+      "action": "",
+      "operation": "应根据不同的场所 , 选择不同类型的话站 。 室外非防 爆场所应选用防护等级不低于 IP65 的户外型 ; 控制室 、 机柜间 等非防爆室内场所宜选用桌面式话站或普通壁挂式话站 ; 泵房、 压缩机厂房等防爆场所应选用与爆炸危险等级相适应的壁挂式 防爆话站 。",
+      "condition": "",
+      "constraint": "       1     应根据不同的场所 ,   选择不同类型的话站 。  室外非防\n爆场所应选用防护等级不低于 IP65 的户外型 ; 控制室 、  机柜间\n等非防爆室内场所宜选用桌面式话站或普通壁挂式话站 ; 泵房、\n压缩机厂房等防爆场所应选用与爆炸危险等级相适应的壁挂式\n防爆话站 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应根据不同的场所 , 选择不同类型的话站"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12016,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

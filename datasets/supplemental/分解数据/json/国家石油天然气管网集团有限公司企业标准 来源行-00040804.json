@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040804",
+  "entities": [
+    {
+      "name": "b) 表土堆存应选择排水条件良好的地点，并对堆放的土壤进行薄膜或草棚遮盖",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)     表土堆存应选择排水条件良好的地点，并对堆放的土壤进行薄膜或草棚遮盖；\nc)     不应选择在土壤污染区、地质灾害频发或隐患区、水源保护区内堆存表土；\nd)     表土堆存场宜结合临时施工生产场地进行布设。",
+      "type": "语义分解",
+      "subject": "b) 表土堆存应选择排水条件良好的地点，并对堆放的土壤进行薄膜或草棚遮盖",
+      "action": "",
+      "operation": "b) 表土堆存应选择排水条件良好的地点，并对堆放的土壤进行薄膜或草棚遮盖； c) 不应选择在土壤污染区、地质灾害频发或隐患区、水源保护区内堆存表土； d) 表土堆存场宜结合临时施工生产场地进行布设。",
+      "condition": "",
+      "constraint": "b)     表土堆存应选择排水条件良好的地点，并对堆放的土壤进行薄膜或草棚遮盖；\nc)     不应选择在土壤污染区、地质灾害频发或隐患区、水源保护区内堆存表土；\nd)     表土堆存场宜结合临时施工生产场地进行布设。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 表土堆存应选择排水条件良好的地点，并对堆放的土壤进行薄膜或草棚遮盖"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40804,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

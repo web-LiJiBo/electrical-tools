@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.3.2.2",
+  "entities": [
+    {
+      "name": "数据收集一致措施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2.2 这些措施宜包括: 绘制流程简图 ,以描绘所有被模拟的单元过程和它们之间的关系; 详细描述每个单元过程中影响输入和输出的因子; 列出每个单元过程中与运行条件相关的流和数据; 列出所研究的单元; 描述所有数据收集和计算所需的技术; 提出要求 ,将所报送数据的特殊情况 ,异常点和其他问题予以明确记录 数据收集表的示例参见附录 A。",
+      "type": "语义分解",
+      "subject": "数据收集一致措施",
+      "action": "",
+      "operation": "流程图描述因子流技术记录异常表格",
+      "condition": "",
+      "constraint": "4.3.2.2 这些措施宜包括: 绘制流程简图 ,以描绘所有被模拟的单元过程和它们之间的关系; 详细描述每个单元过程中影响输入和输出的因子; 列出每个单元过程中与运行条件相关的流和数据; 列出所研究的单元; 描述所有数据收集和计算所需的技术; 提出要求 ,将所报送数据的特殊情况 ,异常点和其他问题予以明确记录 数据收集表的示例参见附录 A。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据收集一致措施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1085,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

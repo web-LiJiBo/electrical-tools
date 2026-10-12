@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "5.3.1.2",
+  "entities": [
+    {
+      "name": "打孔盗油易发区、 第三方损坏高风险段和高后果区可采用智能视频",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1.2    打孔盗油易发区、  第三方损坏高风险段和高后果区可采用智能视频。",
+      "type": "语义分解",
+      "subject": "打孔盗油易发区、 第三方损坏高风险段和高后果区可采用智能视频",
+      "action": "",
+      "operation": "打孔盗油易发区、 第三方损坏高风险段和高后果区可采用智能视频。",
+      "condition": "",
+      "constraint": "5.3.1.2    打孔盗油易发区、  第三方损坏高风险段和高后果区可采用智能视频。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "打孔盗油易发区、 第三方损坏高风险段和高后果区可采用智能视频"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41608,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

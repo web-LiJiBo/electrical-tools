@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境保护管理办法",
+  "standard_id": "国家管网办[2025]262号",
+  "version": "",
+  "chapter_path": "来源行-00000797",
+  "entities": [
+    {
+      "name": "第十九条 所属单位建设产生污染的项目,应当执行污染物排放许可制度和排放总",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十九条 所属单位建设产生污染的项目,应当执行污染物排放许可制度和排放总量控制制度,遵守国家和地方污染物排放标准。污染物排放总量控制要求。 改建。扩建和技术改造项目应当采取措施,治理与该项目有关的原有环境污染和生态破坏。",
+      "type": "语义分解",
+      "subject": "第十九条 所属单位建设产生污染的项目,应当执行污染物排放许可制度和排放总",
+      "action": "",
+      "operation": "第十九条 所属单位建设产生污染的项目,应当执行污染物排放许可制度和排放总量控制制度,遵守国家和地方污染物排放标准。污染物排放总量控制要求。 改建。扩建和技术改造项目应当采取措施,治理与该项目有关的原有环境污染和生态破坏。",
+      "condition": "",
+      "constraint": "第十九条 所属单位建设产生污染的项目,应当执行污染物排放许可制度和排放总量控制制度,遵守国家和地方污染物排放标准。污染物排放总量控制要求。 改建。扩建和技术改造项目应当采取措施,治理与该项目有关的原有环境污染和生态破坏。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十九条 所属单位建设产生污染的项目,应当执行污染物排放许可制度和排放总"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 797,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

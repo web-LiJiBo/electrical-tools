@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.6",
+  "entities": [
+    {
+      "name": "混合时段锅炉排放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6    不同时段建设的锅炉，若采用混合方式排放烟气，且选择的监控位置只能监测混合烟气中的大气\n污染物浓度，应执行各个时段限值中最严格的排放限值。",
+      "type": "语义分解",
+      "subject": "混合时段锅炉排放",
+      "action": "",
+      "operation": "仅能测混气时执行各时段最严限值",
+      "condition": "",
+      "constraint": "4.6    不同时段建设的锅炉，若采用混合方式排放烟气，且选择的监控位置只能监测混合烟气中的大气\n污染物浓度，应执行各个时段限值中最严格的排放限值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "混合时段锅炉排放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32312,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

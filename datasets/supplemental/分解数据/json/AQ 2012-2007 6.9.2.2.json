@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.9.2.2",
+  "entities": [
+    {
+      "name": "守护船员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9.2.2 守护船船员除取得船员适任证书外 ,还应符合以下要求: 守护船船员应经过海洋石油作业安全救生培训 ,并获得合格有效的培训证书; 至少有3名指定的船员具备营救落水人员的能力; 至少有3名指定的船员具备操纵救助艇的能力。",
+      "type": "语义分解",
+      "subject": "守护船员",
+      "action": "",
+      "operation": "适任安全救生培训有效证至少三人能营救至少三人能操艇",
+      "condition": "",
+      "constraint": "6.9.2.2 守护船船员除取得船员适任证书外 ,还应符合以下要求: 守护船船员应经过海洋石油作业安全救生培训 ,并获得合格有效的培训证书; 至少有3名指定的船员具备营救落水人员的能力; 至少有3名指定的船员具备操纵救助艇的能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "守护船员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4688,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

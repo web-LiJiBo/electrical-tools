@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023887",
+  "entities": [
+    {
+      "name": "应支持对调度台呼入与呼出的所有语音通话同步录音",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      应支持对调度台呼入与呼出的所有语音通话同步录音 。  应实现对指定通话的录音 ; 可对多路电话\n同时录音 ;可预设录音时间对某些号码进行录音 ;可对指定号码进行录音 。",
+      "type": "语义分解",
+      "subject": "应支持对调度台呼入与呼出的所有语音通话同步录音",
+      "action": "",
+      "operation": "应支持对调度台呼入与呼出的所有语音通话同步录音 。 应实现对指定通话的录音 ; 可对多路电话 同时录音 ;可预设录音时间对某些号码进行录音 ;可对指定号码进行录音 。",
+      "condition": "",
+      "constraint": "      应支持对调度台呼入与呼出的所有语音通话同步录音 。  应实现对指定通话的录音 ; 可对多路电话\n同时录音 ;可预设录音时间对某些号码进行录音 ;可对指定号码进行录音 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应支持对调度台呼入与呼出的所有语音通话同步录音"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

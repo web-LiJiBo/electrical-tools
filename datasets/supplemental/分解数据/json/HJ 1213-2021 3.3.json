@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "3.3",
+  "entities": [
+    {
+      "name": "基准温度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3 基准温度 reference temperature 为客观提取和评价温排水的影响区域和强度而设定的一个评价基准, 以符号 Io表示。",
+      "type": "语义分解",
+      "subject": "基准温度",
+      "action": "",
+      "operation": "定义评价温排水影响的基准",
+      "condition": "",
+      "constraint": "3.3 基准温度 reference temperature 为客观提取和评价温排水的影响区域和强度而设定的一个评价基准, 以符号 Io表示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基准温度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1935,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；Io符号需核对"
+      ]
+    }
+  }
+}

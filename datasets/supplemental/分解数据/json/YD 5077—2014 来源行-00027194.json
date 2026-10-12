@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00027194",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测试过程\t①交换局向SDB发送IAM消息，主叫为物理号码，被叫为逻辑\n号 码 ；\n②SDB进行主叫号码分析，主叫为混合放号用户，向交换局回送\nACM,ACM中为主叫逻辑号码；\n③SDB进行主被叫号码的分析，发现主被叫用户都签约了智能业\n务，由SDB根据业务组合情况进行分析，确定智能业务接入码，通过\nREL消息向前端回送智能业务接入码，智能业务接入码为主叫智能业\n务接入码；\n④交换局前向发送RLC;\n⑤交换局向SSP发送IAM消息，交换局向SSP发送IAM消息，\nIAM中主叫号码为逻辑号码，被叫号码为主叫智能业务接人码十被叫\n逻辑号码；SSP根据前缀进行主叫用户智能业务触发；SCP指示继续呼\n叫后分析被叫；\n⑥SSP向SDB发送IAM,其中主叫号码为空号，被叫号码为逻辑\n号 码 ；\n⑦SDB分析主叫为空，不进行主叫号码分析，被叫为逻辑号码，查找\n被叫的智能业务签约信息，同时根据局向判断为SSP查询，因此以\nREL消息返回被叫智能业务对应接入码；\n⑧SSP返回RLC消息；SSP根据前缀触发被叫智能业务，当SCP指\n示继续呼叫时被叫号码为逻辑号码；\n⑨SSP与SDB交互获取被叫的物理号码，向SDB发送IAM,IAM\n中主叫号码为空号，被叫号码为“被叫智能业务接人码十逻辑号码”\n⑩SDB收到被叫号码为“被叫智能业务接入码十逻辑号码”,分析该\n呼叫已经触发了被叫智能业务；查找被叫的物理号码，并通过REL消\n息返回被叫的物理号码；\n⑪SSP发送RLC拆除连接到SDB的中继；\n⑫SSP根据被叫物理号码寻址到落地交换局，向落地交换局发起新\n的呼叫 ；\n⑬落地交换局回送ACM",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "测试过程\t①交换局向SDB发送IAM消息，主叫为物理号码，被叫为逻辑\n号 码 ；\n②SDB进行主叫号码分析，主叫为混合放号用户，向交换局回送\nACM,ACM中为主叫逻辑号码；\n③SDB进行主被叫号码的分析，发现主被叫用户都签约了智能业\n务，由SDB根据业务组合情况进行分析，确定智能业务接入码，通过\nREL消息向前端回送智能业务接入码，智能业务接入码为主叫智能业\n务接入码；\n④交换局前向发送RLC;\n⑤交换局向SSP发送IAM消息，交换局向SSP发送IAM消息，\nIAM中主叫号码为逻辑号码，被叫号码为主叫智能业务接人码十被叫\n逻辑号码；SSP根据前缀进行主叫用户智能业务触发；SCP指示继续呼\n叫后分析被叫；\n⑥SSP向SDB发送IAM,其中主叫号码为空号，被叫号码为逻辑\n号 码 ；\n⑦SDB分析主叫为空，不进行主叫号码分析，被叫为逻辑号码，查找\n被叫的智能业务签约信息，同时根据局向判断为SSP查询，因此以\nREL消息返回被叫智能业务对应接入码；\n⑧SSP返回RLC消息；SSP根据前缀触发被叫智能业务，当SCP指\n示继续呼叫时被叫号码为逻辑号码；\n⑨SSP与SDB交互获取被叫的物理号码，向SDB发送IAM,IAM\n中主叫号码为空号，被叫号码为“被叫智能业务接人码十逻辑号码”\n⑩SDB收到被叫号码为“被叫智能业务接入码十逻辑号码”,分析该\n呼叫已经触发了被叫智能业务；查找被叫的物理号码，并通过REL消\n息返回被叫的物理号码；\n⑪SSP发送RLC拆除连接到SDB的中继；\n⑫SSP根据被叫物理号码寻址到落地交换局，向落地交换局发起新\n的呼叫 ；\n⑬落地交换局回送ACM",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27194,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

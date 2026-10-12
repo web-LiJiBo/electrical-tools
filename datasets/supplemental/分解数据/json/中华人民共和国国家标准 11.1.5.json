@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "11.1.5",
+  "entities": [
+    {
+      "name": "初验抽测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.5      工程初步验收设备功能检查及测试项目可按表11.1.5\n所列内容检查，测试项目和数量的抽取比例为10%,当抽测10%\n不足一个时，可按一个抽测。当抽测的项目不合格时，对该项指标\n追加20%测试，结果仍不合格，该项目应全部测试。",
+      "type": "语义分解",
+      "subject": "初验抽测",
+      "action": "",
+      "operation": "按表抽10%不足一项按一项不合格追加20%再不合格全测",
+      "condition": "",
+      "constraint": "11.1.5      工程初步验收设备功能检查及测试项目可按表11.1.5\n所列内容检查，测试项目和数量的抽取比例为10%,当抽测10%\n不足一个时，可按一个抽测。当抽测的项目不合格时，对该项指标\n追加20%测试，结果仍不合格，该项目应全部测试。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "初验抽测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10200,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用表未随行提供"
+      ]
+    }
+  }
+}

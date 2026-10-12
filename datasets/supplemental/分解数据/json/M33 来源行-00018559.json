@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018559",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   如果HOVC 的 TUG 结构中包含TUG-2,    那么由字节H4 的比特7和比特8实现复帧同步，用以\n恢复500us 复帧起始相位。一旦在H4 比特7和比特8序列中检出错误，就认为进入OOM。在4个连\n续VC-n 帧中发现了无误码的H4 序列时，就认为复帧同步恢复，并进入IM 状态。\n\n7.2.3 低阶VC-12 扩展开销复帧同步\n\n7.2.3.1   扩展开销",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "   如果HOVC 的 TUG 结构中包含TUG-2,    那么由字节H4 的比特7和比特8实现复帧同步，用以\n恢复500us 复帧起始相位。一旦在H4 比特7和比特8序列中检出错误，就认为进入OOM。在4个连\n续VC-n 帧中发现了无误码的H4 序列时，就认为复帧同步恢复，并进入IM 状态。\n\n7.2.3 低阶VC-12 扩展开销复帧同步\n\n7.2.3.1   扩展开销",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18559,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

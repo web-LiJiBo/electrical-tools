@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.4.2",
+  "entities": [
+    {
+      "name": "样品前处理研究",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 样品前处理条件试验研究 研究提出方法对样品消解 提取。富集。净化等前处理的条件要求; 开展必要的穿透试验。提出一定条件下的吸附。富集容量,及适宜的进样量和测定浓度范围; 研究高浓度(含量)样品经稀释后使用该方法进行测定的适用性。提出稀释操作的要求。",
+      "type": "语义分解",
+      "subject": "样品前处理研究",
+      "action": "",
+      "operation": "研究消解提取富集净化穿透容量进样范围及高浓度稀释适用",
+      "condition": "",
+      "constraint": "5.4.2 样品前处理条件试验研究 研究提出方法对样品消解 提取。富集。净化等前处理的条件要求; 开展必要的穿透试验。提出一定条件下的吸附。富集容量,及适宜的进样量和测定浓度范围; 研究高浓度(含量)样品经稀释后使用该方法进行测定的适用性。提出稀释操作的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样品前处理研究"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2312,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025925",
+  "entities": [
+    {
+      "name": ")到达某一国际局 ISC 的国际去话，若此 ISC 有直达受话国 的电路",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1)到达某一国际局 ISC 的国际去话，若此 ISC 有直达受话国\n的电路，则首选直达电路群；若本交换系统没有至受话国的直达电\n路，且国内的其他 ISC 也无至对方的直达电路，则应按相关规定经\n第三国的转接国际交换中心转接；若本交换系统没有至受话国的\n直达电路，但国内的其他 ISC 有至对方的直达电路，允许经国内的\n其他 ISC 迂回。",
+      "type": "语义分解",
+      "subject": ")到达某一国际局 ISC 的国际去话，若此 ISC 有直达受话国 的电路",
+      "action": "",
+      "operation": ")到达某一国际局 ISC 的国际去话，若此 ISC 有直达受话国 的电路，则首选直达电路群；若本交换系统没有至受话国的直达电 路，且国内的其他 ISC 也无至对方的直达电路，则应按相关规定经 第三国的转接国际交换中心转接；若本交换系统没有至受话国的 直达电路，但国内的其他 ISC 有至对方的直达电路，允许经国内的 其他 ISC 迂回。",
+      "condition": "",
+      "constraint": "   1)到达某一国际局 ISC 的国际去话，若此 ISC 有直达受话国\n的电路，则首选直达电路群；若本交换系统没有至受话国的直达电\n路，且国内的其他 ISC 也无至对方的直达电路，则应按相关规定经\n第三国的转接国际交换中心转接；若本交换系统没有至受话国的\n直达电路，但国内的其他 ISC 有至对方的直达电路，允许经国内的\n其他 ISC 迂回。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")到达某一国际局 ISC 的国际去话，若此 ISC 有直达受话国 的电路"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25925,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

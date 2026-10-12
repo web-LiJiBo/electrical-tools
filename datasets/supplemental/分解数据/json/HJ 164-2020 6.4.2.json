@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "地下水现场仪器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2 所有现场监测仪器使用前应进行校推。并定期维护。 布卷尺。钢卷尺。测绳等水位测具 (检定量具为 50m 或 100 皿 的钢卷尺),其精度必须符合国家计量检定规程允许的误差规定。 水温计。气温计最小分度值应不大于 0.2\"C,最大误差在士0.2C以内 PH 计 电导率仪。浊度计和轻便式气象参数测定仪应满足测量允许的误差要求。 目视比浊法和目视比色法所用的比色管应成套",
+      "type": "语义分解",
+      "subject": "地下水现场仪器",
+      "action": "",
+      "operation": "使用前校准定期维护测具精度温度仪误差分度及成套比色管合要求",
+      "condition": "",
+      "constraint": "6.4.2 所有现场监测仪器使用前应进行校推。并定期维护。 布卷尺。钢卷尺。测绳等水位测具 (检定量具为 50m 或 100 皿 的钢卷尺),其精度必须符合国家计量检定规程允许的误差规定。 水温计。气温计最小分度值应不大于 0.2\"C,最大误差在士0.2C以内 PH 计 电导率仪。浊度计和轻便式气象参数测定仪应满足测量允许的误差要求。 目视比浊法和目视比色法所用的比色管应成套",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水现场仪器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2107,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；部分单位字符异常"
+      ]
+    }
+  }
+}

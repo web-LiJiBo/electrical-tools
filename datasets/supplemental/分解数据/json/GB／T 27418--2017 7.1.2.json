@@ -1,0 +1,37 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "7.1.2",
+  "entities": [
+    {
+      "name": "测量程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.2 当测量的细节,包括如何评定测量结果的不确定度 ,是通过引用发布的文件来提供时 ,如常见的 用证书方式报告校准结果时 ,要求这些文件是最近的 ,使文件与实际使用的测量程序相一致。",
+      "type": "语义分解",
+      "subject": "测量程序",
+      "action": "",
+      "operation": "确保引用文件与实际程序一致",
+      "condition": "通过引用发布的文件来提供时",
+      "constraint": "要求这些文件是最近的",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "测量程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

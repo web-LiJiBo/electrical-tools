@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006252",
+  "entities": [
+    {
+      "name": "第二十条 {作业期间通用管理 ] (五)各企业要建立高风险作业远程视频监",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十条 {作业期间通用管理 ] (五)各企业要建立高风险作业远程视频监督机制 ,除现场监督外,通过工业电视。移动布控球。监护记录仪等实时上传功能,对正在作业的现场进行远程视频巡回监督,发现 \"三违\" 行为立即通知作业现场监护及监督人员。",
+      "type": "语义分解",
+      "subject": "第二十条 {作业期间通用管理 ] (五)各企业要建立高风险作业远程视频监",
+      "action": "",
+      "operation": "第二十条 {作业期间通用管理 ] (五)各企业要建立高风险作业远程视频监督机制 ,除现场监督外,通过工业电视。移动布控球。监护记录仪等实时上传功能,对正在作业的现场进行远程视频巡回监督,发现 \"三违\" 行为立即通知作业现场监护及监督人员。",
+      "condition": "",
+      "constraint": "第二十条 {作业期间通用管理 ] (五)各企业要建立高风险作业远程视频监督机制 ,除现场监督外,通过工业电视。移动布控球。监护记录仪等实时上传功能,对正在作业的现场进行远程视频巡回监督,发现 \"三违\" 行为立即通知作业现场监护及监督人员。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十条 {作业期间通用管理 ] (五)各企业要建立高风险作业远程视频监"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6252,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

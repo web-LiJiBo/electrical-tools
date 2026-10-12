@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.2.3.2",
+  "entities": [
+    {
+      "name": "膜电导有机碳储备液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3.2 邻苯二甲酸氢钾标谁储备溶液[0(有机碳,C)=1 000 mg/L ]:称取在105 %~110 .干燥 2h 的邻苯二甲酸氢钾2.125 4 &溶于适量纯水中,移入1 000 mI 容量瓶,稀释至刻度,摇匀。 此溶液在 0 C~4 %c冰箱存放可稳定 2个月 或使用有证标准物质。",
+      "type": "语义分解",
+      "subject": "膜电导有机碳储备液",
+      "action": "",
+      "operation": "干燥邻苯二甲酸氢钾配制冷藏两月或用有证物质",
+      "condition": "",
+      "constraint": "7.2.3.2 邻苯二甲酸氢钾标谁储备溶液[0(有机碳,C)=1 000 mg/L ]:称取在105 %~110 .干燥 2h 的邻苯二甲酸氢钾2.125 4 &溶于适量纯水中,移入1 000 mI 容量瓶,稀释至刻度,摇匀。 此溶液在 0 C~4 %c冰箱存放可稳定 2个月 或使用有证标准物质。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "膜电导有机碳储备液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1911,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温度质量单位异常"
+      ]
+    }
+  }
+}

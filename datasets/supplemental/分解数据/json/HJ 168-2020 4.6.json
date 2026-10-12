@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "4.6",
+  "entities": [
+    {
+      "name": "分析方法禁用试剂",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6 方法标淮中不得使用国家明令禁止或淘汰使用的试剂。",
+      "type": "语义分解",
+      "subject": "分析方法禁用试剂",
+      "action": "",
+      "operation": "不得使用明令禁止淘汰试剂",
+      "condition": "",
+      "constraint": "4.6 方法标淮中不得使用国家明令禁止或淘汰使用的试剂。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分析方法禁用试剂"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2299,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

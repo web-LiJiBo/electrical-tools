@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036343",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "其他\t在线排污技术\t   排污作业是输气站场常规作业，离线排污作业操作流程繁琐，\n 会造成大量天然气放空，导致能源浪费。可利用高压在线排污系\n 统，减少天然气损耗。高压在线排污是通过增设限流装置使站场\n 系统实现不停输排污作业的工作模式，高压在线排污限流装置迫\n使流体通过收缩的流道增加局部阻力进行节流降压",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "其他\t在线排污技术\t   排污作业是输气站场常规作业，离线排污作业操作流程繁琐，\n 会造成大量天然气放空，导致能源浪费。可利用高压在线排污系\n 统，减少天然气损耗。高压在线排污是通过增设限流装置使站场\n 系统实现不停输排污作业的工作模式，高压在线排污限流装置迫\n使流体通过收缩的流道增加局部阻力进行节流降压",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36343,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

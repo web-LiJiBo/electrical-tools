@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011770",
+  "entities": [
+    {
+      "name": "各保护倒换机制应满足现行行业标准 《光传送网 (OTN) 网络总体技术要",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       3    各保护倒换机制应满足现行行业标准 《光传送网  (OTN)\n网络总体技术要求》  YD T  1990 的有关规定 。  保护倒换时间不\n应大于 50ms .",
+      "type": "语义分解",
+      "subject": "各保护倒换机制应满足现行行业标准 《光传送网 (OTN) 网络总体技术要",
+      "action": "",
+      "operation": "各保护倒换机制应满足现行行业标准 《光传送网 (OTN) 网络总体技术要求》 YD T 1990 的有关规定 。 保护倒换时间不 应大于 50ms .",
+      "condition": "",
+      "constraint": "       3    各保护倒换机制应满足现行行业标准 《光传送网  (OTN)\n网络总体技术要求》  YD T  1990 的有关规定 。  保护倒换时间不\n应大于 50ms .",
+      "constraint_role": "informational",
+      "related_entities": [
+        "各保护倒换机制应满足现行行业标准 《光传送网 (OTN) 网络总体技术要"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11770,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

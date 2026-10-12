@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "非封闭场所检测点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 存在下列释放源的场所应设置检测点 : a)液化天然气 天然气凝液 液化石油气。稳定轻烃 丙烷 丁烷 凝析油 甲醇 ; b) 相对密度大于1.0的可燃气体 ; c) 有毒气体。",
+      "type": "语义分解",
+      "subject": "非封闭场所检测点",
+      "action": "",
+      "operation": "所列液化轻烃甲醇重于空气可燃及毒气释放源设置检测点",
+      "condition": "",
+      "constraint": "5.2.1 存在下列释放源的场所应设置检测点 : a)液化天然气 天然气凝液 液化石油气。稳定轻烃 丙烷 丁烷 凝析油 甲醇 ; b) 相对密度大于1.0的可燃气体 ; c) 有毒气体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非封闭场所检测点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5795,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

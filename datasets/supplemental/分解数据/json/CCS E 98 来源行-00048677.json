@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048677",
+  "entities": [
+    {
+      "name": "欧 莉 刘志军 秦 林 曹国飞 李振军 何 黎 刘 权 曾 伟 卢新鹏 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "欧 莉 刘志军 秦 林  曹国飞 李振军\n何 黎 刘 权  曾  伟 卢新鹏 刘  国\n邱 萍 王爱玲",
+      "type": "语义分解",
+      "subject": "欧 莉 刘志军 秦 林 曹国飞 李振军 何 黎 刘 权 曾 伟 卢新鹏 ",
+      "action": "",
+      "operation": "欧 莉 刘志军 秦 林 曹国飞 李振军 何 黎 刘 权 曾 伟 卢新鹏 刘 国 邱 萍 王爱玲",
+      "condition": "",
+      "constraint": "欧 莉 刘志军 秦 林  曹国飞 李振军\n何 黎 刘 权  曾  伟 卢新鹏 刘  国\n邱 萍 王爱玲",
+      "constraint_role": "informational",
+      "related_entities": [
+        "欧 莉 刘志军 秦 林 曹国飞 李振军 何 黎 刘 权 曾 伟 卢新鹏 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48677,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

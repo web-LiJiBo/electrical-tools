@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "4.4",
+  "entities": [
+    {
+      "name": "事故风险评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4 风险评估 开展生产安全事故风险评估，撰写评估报告(编制大纲参见附录A)，其内容包括但不限于：辨识生产经营单位存在的危险有害因素，确定可能发生的生产安全事故类别；分析各种事故类别发生的可能性、危害后果和影响范围；评估确定相应事故类别的风险等级。",
+      "type": "语义分解",
+      "subject": "事故风险评估",
+      "action": "",
+      "operation": "辨识危险事故类别分析可能性后果范围确定风险等级并编制报告",
+      "condition": "",
+      "constraint": "4.4 风险评估 开展生产安全事故风险评估，撰写评估报告(编制大纲参见附录A)，其内容包括但不限于：辨识生产经营单位存在的危险有害因素，确定可能发生的生产安全事故类别；分析各种事故类别发生的可能性、危害后果和影响范围；评估确定相应事故类别的风险等级。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故风险评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4137,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

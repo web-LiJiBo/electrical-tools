@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "9.1.1",
+  "entities": [
+    {
+      "name": "生态恢复监测范围应涵盖开展生态恢复的重点区域，监测内容应根据生态恢复内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1       生态恢复监测范围应涵盖开展生态恢复的重点区域，监测内容应根据生态恢复内容合理确定。\n9.1.2       生态恢复在工程运行后原则上3年内开展1次监测，调查生态系统的状况。",
+      "type": "语义分解",
+      "subject": "生态恢复监测范围应涵盖开展生态恢复的重点区域，监测内容应根据生态恢复内容",
+      "action": "",
+      "operation": "生态恢复监测范围应涵盖开展生态恢复的重点区域，监测内容应根据生态恢复内容合理确定。 9.1.2 生态恢复在工程运行后原则上3年内开展1次监测，调查生态系统的状况。",
+      "condition": "",
+      "constraint": "9.1.1       生态恢复监测范围应涵盖开展生态恢复的重点区域，监测内容应根据生态恢复内容合理确定。\n9.1.2       生态恢复在工程运行后原则上3年内开展1次监测，调查生态系统的状况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生态恢复监测范围应涵盖开展生态恢复的重点区域，监测内容应根据生态恢复内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40862,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

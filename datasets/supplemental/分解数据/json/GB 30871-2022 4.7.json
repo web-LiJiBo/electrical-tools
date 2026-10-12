@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "4.7",
+  "entities": [
+    {
+      "name": "同一作业区域应减少 .控制多工种 ,多层次交叉作业 ,最大限度避免交叉作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7 同一作业区域应减少 .控制多工种 ,多层次交叉作业 ,最大限度避免交叉作业;交叉作业应由危险 化学品企业指定专人统一协调管理 ,作业前要组织开展交叉作业风险辨识,采取可靠的保护措施,并保 持作业之间信息畅通 ,确保作业安全。",
+      "type": "语义分解",
+      "subject": "同一作业区域应减少 .控制多工种 ,多层次交叉作业 ,最大限度避免交叉作",
+      "action": "",
+      "operation": "同一作业区域应减少 .控制多工种 ,多层次交叉作业 ,最大限度避免交叉作业;交叉作业应由危险 化学品企业指定专人统一协调管理 ,作业前要组织开展交叉作业风险辨识,采取可靠的保护措施,并保 持作业之间信息畅通 ,确保作业安全。",
+      "condition": "",
+      "constraint": "4.7 同一作业区域应减少 .控制多工种 ,多层次交叉作业 ,最大限度避免交叉作业;交叉作业应由危险 化学品企业指定专人统一协调管理 ,作业前要组织开展交叉作业风险辨识,采取可靠的保护措施,并保 持作业之间信息畅通 ,确保作业安全。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "同一作业区域应减少 .控制多工种 ,多层次交叉作业 ,最大限度避免交叉作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6701,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023213",
+  "entities": [
+    {
+      "name": "本条为强制性条文",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.1       本条为强制性条文。联合接地是实现通信局(站)均压等\n电位的基本措施。联合接地的含义是将局(站)内各建筑物的基础\n接地体和其他专设接地体相互连通形成一个共用地网，建筑物防\n雷接地和室内接地系统均由一个共用地网引出。同时，楼内电子\n设备的保护接地、逻辑接地、屏蔽体接地、防静电接地等共用一组\n接地系统，局内各开关电源的工作地也要与该接地系统连通，以获\n得相同的电位参考点。",
+      "type": "语义分解",
+      "subject": "本条为强制性条文",
+      "action": "",
+      "operation": "本条为强制性条文。联合接地是实现通信局(站)均压等 电位的基本措施。联合接地的含义是将局(站)内各建筑物的基础 接地体和其他专设接地体相互连通形成一个共用地网，建筑物防 雷接地和室内接地系统均由一个共用地网引出。同时，楼内电子 设备的保护接地、逻辑接地、屏蔽体接地、防静电接地等共用一组 接地系统，局内各开关电源的工作地也要与该接地系统连通，以获 得相同的电位参考点。",
+      "condition": "",
+      "constraint": "3.1.1       本条为强制性条文。联合接地是实现通信局(站)均压等\n电位的基本措施。联合接地的含义是将局(站)内各建筑物的基础\n接地体和其他专设接地体相互连通形成一个共用地网，建筑物防\n雷接地和室内接地系统均由一个共用地网引出。同时，楼内电子\n设备的保护接地、逻辑接地、屏蔽体接地、防静电接地等共用一组\n接地系统，局内各开关电源的工作地也要与该接地系统连通，以获\n得相同的电位参考点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条为强制性条文"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23213,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

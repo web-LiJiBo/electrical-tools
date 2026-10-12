@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046237",
+  "entities": [
+    {
+      "name": "Usw——水的表观速度 (m/s)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Usw——水的表观速度 (m/s);\nUso——油的表观流速 (m/s);\nQ。—   油相体积流量(m³/s);\nno——油的黏度 (Pa·s);",
+      "type": "语义分解",
+      "subject": "Usw——水的表观速度 (m/s)",
+      "action": "",
+      "operation": "Usw——水的表观速度 (m/s); Uso——油的表观流速 (m/s); Q。— 油相体积流量(m³/s); no——油的黏度 (Pa·s)",
+      "condition": "",
+      "constraint": "Usw——水的表观速度 (m/s);\nUso——油的表观流速 (m/s);\nQ。—   油相体积流量(m³/s);\nno——油的黏度 (Pa·s);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Usw——水的表观速度 (m/s)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46237,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

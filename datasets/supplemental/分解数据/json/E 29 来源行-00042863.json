@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042863",
+  "entities": [
+    {
+      "name": "高程剖面和实际倾角剖面图见图 A. 1, 图中起始点是 0 m , 图中",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      高程剖面和实际倾角剖面图见图 A. 1, 图中起始点是 0 m , 图中上侧实曲线为高程 ,下侧实曲线为\n实际倾角 ,水平虚线为沿流动方向的临界倾角 。   图 A. 1 标识出了检测区段中实际倾角值大于临界倾角\n值的位置点 ,表 A. 2 给出了具体数值 。",
+      "type": "语义分解",
+      "subject": "高程剖面和实际倾角剖面图见图 A. 1, 图中起始点是 0 m , 图中",
+      "action": "",
+      "operation": "高程剖面和实际倾角剖面图见图 A. 1, 图中起始点是 0 m , 图中上侧实曲线为高程 ,下侧实曲线为 实际倾角 ,水平虚线为沿流动方向的临界倾角 。 图 A. 1 标识出了检测区段中实际倾角值大于临界倾角 值的位置点 ,表 A. 2 给出了具体数值 。",
+      "condition": "",
+      "constraint": "      高程剖面和实际倾角剖面图见图 A. 1, 图中起始点是 0 m , 图中上侧实曲线为高程 ,下侧实曲线为\n实际倾角 ,水平虚线为沿流动方向的临界倾角 。   图 A. 1 标识出了检测区段中实际倾角值大于临界倾角\n值的位置点 ,表 A. 2 给出了具体数值 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高程剖面和实际倾角剖面图见图 A. 1, 图中起始点是 0 m , 图中"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42863,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

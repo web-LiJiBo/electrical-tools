@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "5.3.8",
+  "entities": [
+    {
+      "name": "施工图审查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.8 施工图设计完成后，建设单位应根据政策法规要求将相关资料报建设行政主管部门审查。建设单位应向审查机构提供的资料包括作为勘察设计依据的政府有关部门的批准文件及附件、全套施工图、其他应当提交的材料等。",
+      "type": "语义分解",
+      "subject": "施工图审查",
+      "action": "",
+      "operation": "按政策向主管报审提供批准附件全图及其他材料",
+      "condition": "",
+      "constraint": "5.3.8 施工图设计完成后，建设单位应根据政策法规要求将相关资料报建设行政主管部门审查。建设单位应向审查机构提供的资料包括作为勘察设计依据的政府有关部门的批准文件及附件、全套施工图、其他应当提交的材料等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工图审查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6914,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

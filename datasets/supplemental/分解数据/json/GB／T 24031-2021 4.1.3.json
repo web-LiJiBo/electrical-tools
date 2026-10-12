@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 环境绩效评价 指南",
+  "standard_id": "GB/T 24031-2021",
+  "version": "2021",
+  "chapter_path": "4.1.3",
+  "entities": [
+    {
+      "name": "环境绩效信息原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.3 环境绩效评价原则 用于环境绩效评价的绩效信息应当符合下列原则: 关联性:环境绩效信息应当与组织对环境因素的管理有关; 完整性:环境绩效信息应当完整 ,以确保所有因素都得到考虑; 致性和准确性:环境绩效信息应当-致 .准确 ,以便对过去 .当前以及将来的环境绩效进行有效的比较; 透明性:环境绩效信息应当清晰 ,透明 ,以便预期用户能获得并理解环境绩效数据 ,以做出合理可信的决策。",
+      "type": "语义分解",
+      "subject": "环境绩效信息原则",
+      "action": "",
+      "operation": "保证关联完整一致准确透明",
+      "condition": "",
+      "constraint": "4.1.3 环境绩效评价原则 用于环境绩效评价的绩效信息应当符合下列原则: 关联性:环境绩效信息应当与组织对环境因素的管理有关; 完整性:环境绩效信息应当完整 ,以确保所有因素都得到考虑; 致性和准确性:环境绩效信息应当-致 .准确 ,以便对过去 .当前以及将来的环境绩效进行有效的比较; 透明性:环境绩效信息应当清晰 ,透明 ,以便预期用户能获得并理解环境绩效数据 ,以做出合理可信的决策。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境绩效信息原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 996,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

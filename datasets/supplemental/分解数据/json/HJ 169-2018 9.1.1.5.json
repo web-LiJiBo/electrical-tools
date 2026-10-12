@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.1.1.5",
+  "entities": [
+    {
+      "name": "大气毒性终点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1.5 大气毒性终点浓度值选取 大气毒性终点浓度即预测评价标推。大气毒性终点浓度值选取参见附录珏。分为1级,2级。其中1级为当大气中危险物质浓度低于该限值时,绝大多数人员暴露1h不会对生命造成威胁 当超过该限值时。有可能对入群造成生命威胁;  2级为当大气中危险物质浓度低于该限值时,暴露1血一般不会对人体造成不可逆的伤害 或出现的症状一般不会损伤该个体采取有效防护措施的能力",
+      "type": "语义分解",
+      "subject": "大气毒性终点",
+      "action": "",
+      "operation": "按附录分生命威胁及不可逆伤害防护能力两级浓度",
+      "condition": "",
+      "constraint": "9.1.1.5 大气毒性终点浓度值选取 大气毒性终点浓度即预测评价标推。大气毒性终点浓度值选取参见附录珏。分为1级,2级。其中1级为当大气中危险物质浓度低于该限值时,绝大多数人员暴露1h不会对生命造成威胁 当超过该限值时。有可能对入群造成生命威胁;  2级为当大气中危险物质浓度低于该限值时,暴露1血一般不会对人体造成不可逆的伤害 或出现的症状一般不会损伤该个体采取有效防护措施的能力",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气毒性终点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录编号及一小时字符异常未提供具体浓度"
+      ]
+    }
+  }
+}

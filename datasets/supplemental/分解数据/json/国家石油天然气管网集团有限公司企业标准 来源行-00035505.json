@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035505",
+  "entities": [
+    {
+      "name": "油输逸散——原油长输储运环节中产生的甲烷逸散排放，单位为吨甲烷 (tCH",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4油输逸散——原油长输储运环节中产生的甲烷逸散排放，单位为吨甲烷 (tCH₃);\n— — 原油输送量(入口量),单位为亿吨(10⁸  t);",
+      "type": "语义分解",
+      "subject": "油输逸散——原油长输储运环节中产生的甲烷逸散排放，单位为吨甲烷 (tCH",
+      "action": "",
+      "operation": "油输逸散——原油长输储运环节中产生的甲烷逸散排放，单位为吨甲烷 (tCH₃); — — 原油输送量(入口量),单位为亿吨(10⁸ t)",
+      "condition": "",
+      "constraint": "4油输逸散——原油长输储运环节中产生的甲烷逸散排放，单位为吨甲烷 (tCH₃);\n— — 原油输送量(入口量),单位为亿吨(10⁸  t);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油输逸散——原油长输储运环节中产生的甲烷逸散排放，单位为吨甲烷 (tCH"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

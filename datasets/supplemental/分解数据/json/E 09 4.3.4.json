@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E 09",
+  "version": "",
+  "chapter_path": "4.3.4",
+  "entities": [
+    {
+      "name": "实操场地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4   满足实操训练的室内或露天训练场地。\n\n4.4 后勤保障",
+      "type": "语义分解",
+      "subject": "实操场地",
+      "action": "",
+      "operation": "满足室内露天训练",
+      "condition": "",
+      "constraint": "4.3.4   满足实操训练的室内或露天训练场地。\n\n4.4 后勤保障",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实操场地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28677,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

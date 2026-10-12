@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "10.3.1",
+  "entities": [
+    {
+      "name": "技防运行保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.1 应做好技术防范设施的运行保障工作 ,确保安全防范系统正常运行使用。",
+      "type": "语义分解",
+      "subject": "技防运行保障",
+      "action": "",
+      "operation": "确保系统正常运行使用",
+      "condition": "",
+      "constraint": "10.3.1 应做好技术防范设施的运行保障工作 ,确保安全防范系统正常运行使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "技防运行保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5569,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

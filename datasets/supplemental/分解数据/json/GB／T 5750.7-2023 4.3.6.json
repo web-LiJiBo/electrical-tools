@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.3.6",
+  "entities": [
+    {
+      "name": "指数稀释样计算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.6 试验数据处理 稀释水样的结果按式(6)计算: 0 =01 Xf 式中: -水中高锰酸盐指数(以 O。计)的质量浓度 ,单位为毫克每升 (m8/1) ; 01 由标准曲线得到的高锰酸盐指数(以0。计)的质量浓度 ,单位为毫克每升 (m8/) ; f一稀释倍数。",
+      "type": "语义分解",
+      "subject": "指数稀释样计算",
+      "action": "",
+      "operation": "标准曲线浓度乘稀释倍数计算",
+      "condition": "",
+      "constraint": "4.3.6 试验数据处理 稀释水样的结果按式(6)计算: 0 =01 Xf 式中: -水中高锰酸盐指数(以 O。计)的质量浓度 ,单位为毫克每升 (m8/1) ; 01 由标准曲线得到的高锰酸盐指数(以0。计)的质量浓度 ,单位为毫克每升 (m8/) ; f一稀释倍数。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指数稀释样计算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1709,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；变量及单位识别异常"
+      ]
+    }
+  }
+}

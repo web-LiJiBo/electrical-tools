@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.2",
+  "entities": [
+    {
+      "name": "环境风险评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2 环境风险评价 结合各要素风险预测,分析说明建设项目环境风险的危害范围与程度。大气环境风险的影响范围和程度由大气毒性终点浓度确定,明确影响范围内的人口分布情况;  地表水。地下水对照功能区质量标准浓度 (或参考浓度) 进行分析。明确对下游环境敏感目标的影响情况。 环境风险可采用后果分析。概率分析等方法开展定性或定量评价。以避免急性损害为重点,确定环境风险防范的基本要求。",
+      "type": "语义分解",
+      "subject": "环境风险评价",
+      "action": "",
+      "operation": "综合范围程度人口敏感目标按质量终点后果概率评价重急性防范",
+      "condition": "",
+      "constraint": "9.2 环境风险评价 结合各要素风险预测,分析说明建设项目环境风险的危害范围与程度。大气环境风险的影响范围和程度由大气毒性终点浓度确定,明确影响范围内的人口分布情况;  地表水。地下水对照功能区质量标准浓度 (或参考浓度) 进行分析。明确对下游环境敏感目标的影响情况。 环境风险可采用后果分析。概率分析等方法开展定性或定量评价。以避免急性损害为重点,确定环境风险防范的基本要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境风险评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2512,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

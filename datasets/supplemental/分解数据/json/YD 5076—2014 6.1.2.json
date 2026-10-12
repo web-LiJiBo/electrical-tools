@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "6.1.2",
+  "entities": [
+    {
+      "name": "基干路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2      基干路由：在等级网(包括长途网和本地网)中，它是由同\n一交换区内相邻等级交换中心(长途网)或相邻等级的局(本地网)\n之间的低呼损电路群，以及长途一级交换中心( DC1) 间，或本地网\n中汇接局间的低呼损电路群所组成的路由。在该路由上的话务量\n不允许溢出至其他路由。",
+      "type": "语义分解",
+      "subject": "基干路由",
+      "action": "",
+      "operation": "相邻等级及DC1或本地汇接局低呼损群话务不得溢出",
+      "condition": "",
+      "constraint": "6.1.2      基干路由：在等级网(包括长途网和本地网)中，它是由同\n一交换区内相邻等级交换中心(长途网)或相邻等级的局(本地网)\n之间的低呼损电路群，以及长途一级交换中心( DC1) 间，或本地网\n中汇接局间的低呼损电路群所组成的路由。在该路由上的话务量\n不允许溢出至其他路由。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基干路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25883,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

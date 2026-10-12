@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012628",
+  "entities": [
+    {
+      "name": "性能指标代表了业务需求和考虑到实现传输系统的经济和技术限制之间的折衷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   性能指标代表了业务需求和考虑到实现传输系统的经济和技术限制之间的折衷。其目的还是为了建\n立与性能指标相容的设备设计指标。",
+      "type": "语义分解",
+      "subject": "性能指标代表了业务需求和考虑到实现传输系统的经济和技术限制之间的折衷",
+      "action": "",
+      "operation": "性能指标代表了业务需求和考虑到实现传输系统的经济和技术限制之间的折衷。其目的还是为了建 立与性能指标相容的设备设计指标。",
+      "condition": "",
+      "constraint": "   性能指标代表了业务需求和考虑到实现传输系统的经济和技术限制之间的折衷。其目的还是为了建\n立与性能指标相容的设备设计指标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "性能指标代表了业务需求和考虑到实现传输系统的经济和技术限制之间的折衷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12628,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

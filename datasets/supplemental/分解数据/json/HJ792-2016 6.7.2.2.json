@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.7.2.2",
+  "entities": [
+    {
+      "name": "制药气监测全过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.2.2 废气、环境空气、气样的采集、运输、保存、实验室分析和数据计算的全过程均按照 HJ/T194、HJ/T373、HJ/T397、HJ/T630 等规范的要求进行。",
+      "type": "语义分解",
+      "subject": "制药气监测全过程",
+      "action": "",
+      "operation": "按所列规范开展采运存分析计算",
+      "condition": "",
+      "constraint": "6.7.2.2 废气、环境空气、气样的采集、运输、保存、实验室分析和数据计算的全过程均按照 HJ/T194、HJ/T373、HJ/T397、HJ/T630 等规范的要求进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药气监测全过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2771,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

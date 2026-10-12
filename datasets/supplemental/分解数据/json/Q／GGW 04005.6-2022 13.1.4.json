@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "13.1.4",
+  "entities": [
+    {
+      "name": "污染排放限值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.1.4 国家或地方发布的环境标准限值,排污单位的排污许叮证,环境影响评价文件及其批复等文件 另有明确规定的。应执行相应的规定。",
+      "type": "语义分解",
+      "subject": "污染排放限值",
+      "action": "",
+      "operation": "有明确规定时执行相应文件",
+      "condition": "",
+      "constraint": "13.1.4 国家或地方发布的环境标准限值,排污单位的排污许叮证,环境影响评价文件及其批复等文件 另有明确规定的。应执行相应的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染排放限值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 544,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；许可字样识别异常"
+      ]
+    }
+  }
+}

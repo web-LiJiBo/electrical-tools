@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全生产检查规范 第8部分: 地下储气库",
+  "standard_id": "Q/GGW 04002.8-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003194",
+  "entities": [
+    {
+      "name": "总体要求 储气库注采气站现场管理及安全检查内容按 Q/GGW 04002",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 总体要求 储气库注采气站现场管理及安全检查内容按 Q/GGW 04002.5 执行,三相分离器、乙二醇再生装置、热媒炉、丙烷压缩机、三甘醇再生撬、甲醇撬等储气库注采气站特有设备设施安全检查内容应符合本文件表4至表9的规定。",
+      "type": "语义分解",
+      "subject": "总体要求 储气库注采气站现场管理及安全检查内容按 Q/GGW 04002",
+      "action": "",
+      "operation": "总体要求 储气库注采气站现场管理及安全检查内容按 Q/GGW 04002.5 执行,三相分离器、乙二醇再生装置、热媒炉、丙烷压缩机、三甘醇再生撬、甲醇撬等储气库注采气站特有设备设施安全检查内容应符合本文件表4至表9的规定。",
+      "condition": "",
+      "constraint": "4.4.1 总体要求 储气库注采气站现场管理及安全检查内容按 Q/GGW 04002.5 执行,三相分离器、乙二醇再生装置、热媒炉、丙烷压缩机、三甘醇再生撬、甲醇撬等储气库注采气站特有设备设施安全检查内容应符合本文件表4至表9的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总体要求 储气库注采气站现场管理及安全检查内容按 Q/GGW 04002"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3194,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

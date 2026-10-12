@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "遥感空间裁剪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 空间裁剪 空间裁剪范围设定技术要求如下: a) 以核电厂温排水排放口为中心,空间上应完全覆盖温排水影响区域= 6) 应兼顾制图时表达周边标志性地理要素需求。适当扩展空间裁剪范围=",
+      "type": "语义分解",
+      "subject": "遥感空间裁剪",
+      "action": "",
+      "operation": "以排口为中心覆盖影响区域适度扩展兼顾地理制图要素",
+      "condition": "",
+      "constraint": "5.2.1 空间裁剪 空间裁剪范围设定技术要求如下: a) 以核电厂温排水排放口为中心,空间上应完全覆盖温排水影响区域= 6) 应兼顾制图时表达周边标志性地理要素需求。适当扩展空间裁剪范围=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "遥感空间裁剪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1947,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

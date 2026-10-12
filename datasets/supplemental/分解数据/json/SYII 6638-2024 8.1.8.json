@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "8.1.8",
+  "entities": [
+    {
+      "name": "场站照明节能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.8 场站照明满足下列要求 : a) 照明设计的光源及灯具选择应符合 GBIT 50034 及 GB 50582 的规定。应急照明设计应符合 GB 51309 的规定 ; b) 场站主要生产区灯具应选用高效光源。光源宜为发光二极管 (LED) ; c) 大面积使用气体放电灯的场所。应安装无功补偿装置 ; d) 户外照明及路灯应采用光电或时钟集中控制",
+      "type": "语义分解",
+      "subject": "场站照明节能",
+      "action": "",
+      "operation": "合规选灯具应急照明补偿及集中控制",
+      "condition": "",
+      "constraint": "8.1.8 场站照明满足下列要求 : a) 照明设计的光源及灯具选择应符合 GBIT 50034 及 GB 50582 的规定。应急照明设计应符合 GB 51309 的规定 ; b) 场站主要生产区灯具应选用高效光源。光源宜为发光二极管 (LED) ; c) 大面积使用气体放电灯的场所。应安装无功补偿装置 ; d) 户外照明及路灯应采用光电或时钟集中控制",
+      "constraint_role": "informational",
+      "related_entities": [
+        "场站照明节能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 326,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

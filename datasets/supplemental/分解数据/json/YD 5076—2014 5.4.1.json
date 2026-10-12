@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "5.4.1",
+  "entities": [
+    {
+      "name": "SDB访问模式话务组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1  固网智能化采用“汇接局(含软交换)完全访问 SDB” 模式\n时，本地网话务网络基本形成一级汇接结构，本地网所有话务(包\n括各交换局的局内话务)经汇接局汇接，并取消端局间的直达电\n路。汇接局一般成对设置，话务量较高的本地网可采用分区汇接。\n采用“端局完全访问 SDB” 模式时，本地网话路网络组织遵循本规\n范5. 1～5.3。",
+      "type": "语义分解",
+      "subject": "SDB访问模式话务组织",
+      "action": "",
+      "operation": "汇接完全访问时全话务汇接取消端局直达宜成对高话务可分区端局完全访问按5.1至5.3",
+      "condition": "",
+      "constraint": "5.4.1  固网智能化采用“汇接局(含软交换)完全访问 SDB” 模式\n时，本地网话务网络基本形成一级汇接结构，本地网所有话务(包\n括各交换局的局内话务)经汇接局汇接，并取消端局间的直达电\n路。汇接局一般成对设置，话务量较高的本地网可采用分区汇接。\n采用“端局完全访问 SDB” 模式时，本地网话路网络组织遵循本规\n范5. 1～5.3。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDB访问模式话务组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25858,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

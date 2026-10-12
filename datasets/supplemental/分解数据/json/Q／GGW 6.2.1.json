@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "非常规漏检",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1       企业在日常巡检中应采用目视检查方法确认是否泄漏，在周期性检查中可采用光学检查、超声\n检查、皂液检查、目测检查和其他仪器检查等非常规检测或检查方法对不可达密封点、易泄漏密封点进\n行检测，对疑似泄漏点应采用常规检测方法进一步确认是否为泄漏点。",
+      "type": "语义分解",
+      "subject": "非常规漏检",
+      "action": "",
+      "operation": "日常目测周期光学超声皂液疑似常规确认",
+      "condition": "",
+      "constraint": "6.2.1       企业在日常巡检中应采用目视检查方法确认是否泄漏，在周期性检查中可采用光学检查、超声\n检查、皂液检查、目测检查和其他仪器检查等非常规检测或检查方法对不可达密封点、易泄漏密封点进\n行检测，对疑似泄漏点应采用常规检测方法进一步确认是否为泄漏点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非常规漏检"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36593,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

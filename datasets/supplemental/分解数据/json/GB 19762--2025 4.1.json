@@ -1,0 +1,41 @@
+{
+  "standard_name": "离心泵能效限定值及能效等级",
+  "standard_id": "GB 19762--2025",
+  "version": "2025",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "离心泵能效等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 离心泵能效等级分为3级。其中1级能效最高。",
+      "type": "语义分解",
+      "subject": "离心泵能效等级",
+      "action": "",
+      "operation": "划分三级一级最高",
+      "condition": "",
+      "constraint": "4.1 离心泵能效等级分为3级。其中1级能效最高。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "离心泵能效等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 141,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

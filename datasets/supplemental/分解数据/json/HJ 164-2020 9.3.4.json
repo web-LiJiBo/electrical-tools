@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "9.3.4",
+  "entities": [
+    {
+      "name": "检测结果报出",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.3.4 当测定结果高于分析方法检出限时,报实际测定结果值;  当测定结果低于分析方法检出限时,报所使用方法的检出限值。并在其后加标志位工。",
+      "type": "语义分解",
+      "subject": "检测结果报出",
+      "action": "",
+      "operation": "检出限上下分别报实值或带标志限值",
+      "condition": "当测定结果低于分析方法检出限时",
+      "constraint": "9.3.4 当测定结果高于分析方法检出限时,报实际测定结果值;  当测定结果低于分析方法检出限时,报所使用方法的检出限值。并在其后加标志位工。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "检测结果报出"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2174,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；位工标志损坏"
+      ]
+    }
+  }
+}

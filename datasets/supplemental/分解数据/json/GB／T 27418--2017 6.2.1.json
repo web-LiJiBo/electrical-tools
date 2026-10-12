@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "扩展不确定度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1 为满足提供一个如 6.1.2所指的区闻的要求而对不确定度的另一种度量称为扩展不确定度,并 用 U 表示。 扩展不确定度 U 由合成标谁不确定度 u。(y )乘以包含因子 k得到 = U=ku(y) (18 由此 ,测量结果可方便地表示成 Y一y士U ,意思是被测量Y 的最佳估计值为J ,由 J-U 到J +U 是一个区间 ,可期望该区间包含了能合理赋予的Y值的分布的大部分 这样一个区间也可表示成 J 一 UCYCy +U。",
+      "type": "语义分解",
+      "subject": "扩展不确定度",
+      "action": "",
+      "operation": "由合成不确定度乘包含因子得到",
+      "condition": "",
+      "constraint": "乘以包含因子 k得到",
+      "constraint_role": "informational",
+      "related_entities": [
+        "扩展不确定度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量和区间符号损坏，只保留乘积定义"
+      ]
+    }
+  }
+}

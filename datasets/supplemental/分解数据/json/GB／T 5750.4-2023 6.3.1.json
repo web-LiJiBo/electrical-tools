@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.3.1",
+  "entities": [
+    {
+      "name": "嗅觉评价小组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1 原理 选定分析人员3人～5人组成嗅觉评价小组，将水样加热到45 ℃，使臭溢出，分析人员闻其臭气。各分析人员先单独评价测试水样的异臭类型和异臭强度等级，再共同讨论确定水样的异臭类型，其中异臭强度等级取平均值。",
+      "type": "语义分解",
+      "subject": "嗅觉评价小组",
+      "action": "",
+      "operation": "三至五人测试四十五度水样先单独评价后讨论类型强度取平均",
+      "condition": "",
+      "constraint": "6.3.1 原理 选定分析人员3人～5人组成嗅觉评价小组，将水样加热到45 ℃，使臭溢出，分析人员闻其臭气。各分析人员先单独评价测试水样的异臭类型和异臭强度等级，再共同讨论确定水样的异臭类型，其中异臭强度等级取平均值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "嗅觉评价小组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1299,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

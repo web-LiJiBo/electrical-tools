@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "14.3",
+  "entities": [
+    {
+      "name": "采样人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.3 采样人员必须通过岗前培训,考核合格后上岗,切实掌握采样技术, 熟知采样器具的使用和样品 保存。运输条件等。",
+      "type": "语义分解",
+      "subject": "采样人员",
+      "action": "",
+      "operation": "培训考核合格后上岗并掌握技术条件",
+      "condition": "",
+      "constraint": "14.3 采样人员必须通过岗前培训,考核合格后上岗,切实掌握采样技术, 熟知采样器具的使用和样品 保存。运输条件等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 559,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

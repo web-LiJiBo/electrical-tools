@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "5.3.2",
+  "entities": [
+    {
+      "name": "公开报告分组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.2 如果在 LCA 中包括分组 .则应增加: 分组程序和结果; b) 声明通过分组所做出的结论和建议都是基于价值选择; 对用来进行归一化和分组的谁则的论证(这些准则可以是个人的 .组织的或国家的价值选择) ; 4) 声明\"GB/T 24044  不规定任何具体方法或支持特定的价值选择对影响类型进行分组\" ; 声明\"研究的委托方自行对分组程序中的价值选择和判断负责\"(研究的委托方可为政府 .社 区 .组织等)。",
+      "type": "语义分解",
+      "subject": "公开报告分组",
+      "action": "",
+      "operation": "说明分组程序结果准则责任与价值选择声明",
+      "condition": "",
+      "constraint": "5.3.2 如果在 LCA 中包括分组 .则应增加: 分组程序和结果; b) 声明通过分组所做出的结论和建议都是基于价值选择; 对用来进行归一化和分组的谁则的论证(这些准则可以是个人的 .组织的或国家的价值选择) ; 4) 声明\"GB/T 24044  不规定任何具体方法或支持特定的价值选择对影响类型进行分组\" ; 声明\"研究的委托方自行对分组程序中的价值选择和判断负责\"(研究的委托方可为政府 .社 区 .组织等)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "公开报告分组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1148,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "科技保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5 科技保障 企业应根据自身实际情况，开展安全生产科学技术研究，推广应用先进技术装备，推进危险岗位无人值守或机器人作业，提高企业本质安全水平。企业应利用数字化、信息化、智能化等手段，提高安全生产台账管理、安全风险分级管控、事故隐患排查治理、应急管理等效能。企业应推广应用安全风险监测预警系统，具备安全风险隐患的智能识别、快速感知、实时监测、超前预警等功能。",
+      "type": "语义分解",
+      "subject": "科技保障",
+      "action": "",
+      "operation": "研发先进装备危险岗位无人机器人数字智能台账控险隐患应急监测预警",
+      "condition": "",
+      "constraint": "5.5 科技保障 企业应根据自身实际情况，开展安全生产科学技术研究，推广应用先进技术装备，推进危险岗位无人值守或机器人作业，提高企业本质安全水平。企业应利用数字化、信息化、智能化等手段，提高安全生产台账管理、安全风险分级管控、事故隐患排查治理、应急管理等效能。企业应推广应用安全风险监测预警系统，具备安全风险隐患的智能识别、快速感知、实时监测、超前预警等功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "科技保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7246,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

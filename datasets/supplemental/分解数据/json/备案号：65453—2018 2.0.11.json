@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "2.0.11",
+  "entities": [
+    {
+      "name": "交流电流衰减法 alternating current attenuat",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.11 交流电流衰减法   alternating  current  attenuation\nsurvey(ACAS)",
+      "type": "语义分解",
+      "subject": "交流电流衰减法 alternating current attenuat",
+      "action": "",
+      "operation": "交流电流衰减法 alternating current attenuation survey(ACAS)",
+      "condition": "",
+      "constraint": "2.0.11 交流电流衰减法   alternating  current  attenuation\nsurvey(ACAS)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交流电流衰减法 alternating current attenuat"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44886,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

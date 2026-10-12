@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011035",
+  "entities": [
+    {
+      "name": "——I 表明局内应用(达到7dB 区段衰耗)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——I 表明局内应用(达到7dB 区段衰耗);\n—  S 表明短距应用(11dB 区段衰耗);\n——L 表明长距应用(22dB 区段衰耗);\n— V   表明甚长距应用(33dB 区段衰耗);\n——U 表明超长距应用(44dB 区段衰耗)。",
+      "type": "语义分解",
+      "subject": "——I 表明局内应用(达到7dB 区段衰耗)",
+      "action": "",
+      "operation": "——I 表明局内应用(达到7dB 区段衰耗); — S 表明短距应用(11dB 区段衰耗); ——L 表明长距应用(22dB 区段衰耗); — V 表明甚长距应用(33dB 区段衰耗); ——U 表明超长距应用(44dB 区段衰耗)。",
+      "condition": "",
+      "constraint": "——I 表明局内应用(达到7dB 区段衰耗);\n—  S 表明短距应用(11dB 区段衰耗);\n——L 表明长距应用(22dB 区段衰耗);\n— V   表明甚长距应用(33dB 区段衰耗);\n——U 表明超长距应用(44dB 区段衰耗)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——I 表明局内应用(达到7dB 区段衰耗)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11035,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "4.8.2",
+  "entities": [
+    {
+      "name": "补给水处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.2 补给水处理方式应保证给水水质符合本标准。",
+      "type": "语义分解",
+      "subject": "补给水处理",
+      "action": "",
+      "operation": "保证给水符合标准水质要求",
+      "condition": "",
+      "constraint": "4.8.2 补给水处理方式应保证给水水质符合本标准。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "补给水处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4112,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

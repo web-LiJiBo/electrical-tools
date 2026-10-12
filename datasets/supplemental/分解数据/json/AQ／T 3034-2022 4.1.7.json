@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.1.7",
+  "entities": [
+    {
+      "name": "负责人示范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.7 企业主要负责人应深人基层 .宣传安全生产理念 ,了解基层安全生产状况 ,倾听员工建议,以个 人良好的安全行为带动企业形成良好的安全文化氛围。 企业主要负责人应自觉带头履行安全承诺 ,通 过率先垂范 ,展示领导的示范力 .行动力和影响力;通过制定和落实个人月度安全行动计划 ,带动全员参 与安全管理 ,确保安全领导力贯穿于基层员工中",
+      "type": "语义分解",
+      "subject": "负责人示范",
+      "action": "",
+      "operation": "深入基层宣传了解倾听带头承诺落实月度行动带全员参与",
+      "condition": "",
+      "constraint": "4.1.7 企业主要负责人应深人基层 .宣传安全生产理念 ,了解基层安全生产状况 ,倾听员工建议,以个 人良好的安全行为带动企业形成良好的安全文化氛围。 企业主要负责人应自觉带头履行安全承诺 ,通 过率先垂范 ,展示领导的示范力 .行动力和影响力;通过制定和落实个人月度安全行动计划 ,带动全员参 与安全管理 ,确保安全领导力贯穿于基层员工中",
+      "constraint_role": "informational",
+      "related_entities": [
+        "负责人示范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5048,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

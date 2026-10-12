@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "评估组构成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1 构成 评估组由应急管理方面专家和相关领域专业技术人员或相关方代表组成，规模较大、演练情景和参演人员较多或实施程序复杂的演练，可设多级评估，并确定总体负责人及各小组负责人。",
+      "type": "语义分解",
+      "subject": "评估组构成",
+      "action": "",
+      "operation": "应急专家专业人员相关方复杂大规模可多级明确负责人",
+      "condition": "",
+      "constraint": "4.5.1 构成 评估组由应急管理方面专家和相关领域专业技术人员或相关方代表组成，规模较大、演练情景和参演人员较多或实施程序复杂的演练，可设多级评估，并确定总体负责人及各小组负责人。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "评估组构成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5373,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

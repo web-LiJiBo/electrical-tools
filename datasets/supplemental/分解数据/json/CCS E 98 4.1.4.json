@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "4.1.4",
+  "entities": [
+    {
+      "name": "根据交流干扰评估结果，在可能发生交流腐蚀的管段宜 设计和埋设交流腐蚀试片",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.4 根据交流干扰评估结果，在可能发生交流腐蚀的管段宜\n设计和埋设交流腐蚀试片。",
+      "type": "语义分解",
+      "subject": "根据交流干扰评估结果，在可能发生交流腐蚀的管段宜 设计和埋设交流腐蚀试片",
+      "action": "",
+      "operation": "根据交流干扰评估结果，在可能发生交流腐蚀的管段宜 设计和埋设交流腐蚀试片。",
+      "condition": "",
+      "constraint": "4.1.4 根据交流干扰评估结果，在可能发生交流腐蚀的管段宜\n设计和埋设交流腐蚀试片。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据交流干扰评估结果，在可能发生交流腐蚀的管段宜 设计和埋设交流腐蚀试片"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48749,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

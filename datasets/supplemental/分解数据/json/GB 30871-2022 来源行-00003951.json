@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003951",
+  "entities": [
+    {
+      "name": "动土作业人员在沟(槽、坑)下作业应按规定坡度顺序进行，使用机械挖掘时，人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.7 动土作业人员在沟(槽、坑)下作业应按规定坡度顺序进行，使用机械挖掘时，人员不应进人机械旋转半径内;深度大于 2 m 时，应设置人员上下的梯子等能够保证人员快速进出的设施;两人以上同时挖土时应相距 2 m 以上，防止工具伤人。",
+      "type": "语义分解",
+      "subject": "动土作业人员在沟(槽、坑)下作业应按规定坡度顺序进行，使用机械挖掘时，人",
+      "action": "",
+      "operation": "动土作业人员在沟(槽、坑)下作业应按规定坡度顺序进行，使用机械挖掘时，人员不应进人机械旋转半径内;深度大于 2 m 时，应设置人员上下的梯子等能够保证人员快速进出的设施;两人以上同时挖土时应相距 2 m 以上，防止工具伤人。",
+      "condition": "",
+      "constraint": "11.7 动土作业人员在沟(槽、坑)下作业应按规定坡度顺序进行，使用机械挖掘时，人员不应进人机械旋转半径内;深度大于 2 m 时，应设置人员上下的梯子等能够保证人员快速进出的设施;两人以上同时挖土时应相距 2 m 以上，防止工具伤人。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动土作业人员在沟(槽、坑)下作业应按规定坡度顺序进行，使用机械挖掘时，人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3951,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

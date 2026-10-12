@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "6.6.1",
+  "entities": [
+    {
+      "name": "应结合腐蚀产物信息、环境分析结果、介质分析结果， 并结合内外检测情况，分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.1   应结合腐蚀产物信息、环境分析结果、介质分析结果，\n并结合内外检测情况，分析储罐发生腐蚀的原因。\n6.6.2   应评价储罐内外防腐措施是否有效。",
+      "type": "语义分解",
+      "subject": "应结合腐蚀产物信息、环境分析结果、介质分析结果， 并结合内外检测情况，分",
+      "action": "",
+      "operation": "应结合腐蚀产物信息、环境分析结果、介质分析结果， 并结合内外检测情况，分析储罐发生腐蚀的原因。 6.6.2 应评价储罐内外防腐措施是否有效。",
+      "condition": "",
+      "constraint": "6.6.1   应结合腐蚀产物信息、环境分析结果、介质分析结果，\n并结合内外检测情况，分析储罐发生腐蚀的原因。\n6.6.2   应评价储罐内外防腐措施是否有效。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应结合腐蚀产物信息、环境分析结果、介质分析结果， 并结合内外检测情况，分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46760,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

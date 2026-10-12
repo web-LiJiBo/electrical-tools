@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047594",
+  "entities": [
+    {
+      "name": "以一支参比电极为坐标原点，另外两支参比电极分别沿 X 轴和Y 轴方向等距",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2   以一支参比电极为坐标原点，另外两支参比电极分别沿\nX 轴和Y 轴方向等距布置，布设间距宜不小于20m。",
+      "type": "语义分解",
+      "subject": "以一支参比电极为坐标原点，另外两支参比电极分别沿 X 轴和Y 轴方向等距",
+      "action": "",
+      "operation": "以一支参比电极为坐标原点，另外两支参比电极分别沿 X 轴和Y 轴方向等距布置，布设间距宜不小于20m。",
+      "condition": "",
+      "constraint": "      2   以一支参比电极为坐标原点，另外两支参比电极分别沿\nX 轴和Y 轴方向等距布置，布设间距宜不小于20m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "以一支参比电极为坐标原点，另外两支参比电极分别沿 X 轴和Y 轴方向等距"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47594,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

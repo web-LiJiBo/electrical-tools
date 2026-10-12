@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "10.2",
+  "entities": [
+    {
+      "name": "与腐蚀控制维护管理相关的记录主要应包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.2   与腐蚀控制维护管理相关的记录主要应包括 :",
+      "type": "语义分解",
+      "subject": "与腐蚀控制维护管理相关的记录主要应包括",
+      "action": "",
+      "operation": "与腐蚀控制维护管理相关的记录主要应包括",
+      "condition": "",
+      "constraint": "10.2   与腐蚀控制维护管理相关的记录主要应包括 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "与腐蚀控制维护管理相关的记录主要应包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42681,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

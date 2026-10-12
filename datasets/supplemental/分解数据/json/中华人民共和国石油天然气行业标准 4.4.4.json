@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.4.4",
+  "entities": [
+    {
+      "name": "重要数据以太网节点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4    传输 SCADA 系统等重要数据的以太网传输系统各节点\n设备应配置 1+1 冗余电源模块 。   电源线宜采用端子式接线方式 ,\n具有防掉线机构 。",
+      "type": "语义分解",
+      "subject": "重要数据以太网节点",
+      "action": "",
+      "operation": "1+1冗余电源宜端子接线并防掉线",
+      "condition": "",
+      "constraint": "4.4.4    传输 SCADA 系统等重要数据的以太网传输系统各节点\n设备应配置 1+1 冗余电源模块 。   电源线宜采用端子式接线方式 ,\n具有防掉线机构 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重要数据以太网节点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11792,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

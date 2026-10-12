@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "3.0",
+  "entities": [
+    {
+      "name": "参数表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0\t1.1079\t1.1002\t1.0932\t867\t1.0806\t1.0751\t1.07\t1.0652\t61.0608\t1.0567\t1.053\t1.0495\t1.0462\t1.0433\t1.0405",
+      "type": "语义分解",
+      "subject": "参数表",
+      "action": "",
+      "operation": "保留原始数值",
+      "condition": "",
+      "constraint": "3.0\t1.1079\t1.1002\t1.0932\t867\t1.0806\t1.0751\t1.07\t1.0652\t61.0608\t1.0567\t1.053\t1.0495\t1.0462\t1.0433\t1.0405",
+      "constraint_role": "informational",
+      "related_entities": [
+        "参数表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37486,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头单位缺失含867及61.0608异常数值不修正"
+      ]
+    }
+  }
+}

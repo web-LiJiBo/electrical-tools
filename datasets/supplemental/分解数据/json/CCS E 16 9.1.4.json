@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.1.4",
+  "entities": [
+    {
+      "name": "主缆通道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.4   对于设置主缆检修通道的跨越工程，主缆走道支架应日常检查稳定及安全状况，金属结构应定\n期进行涂漆防护。日常检查主缆走道扶手索，特别是两端锚固点有无锈蚀或损坏，应根据情况及时维\n修更换。",
+      "type": "语义分解",
+      "subject": "主缆通道",
+      "action": "",
+      "operation": "日查支架扶手锚稳定安全定期防腐及时更换",
+      "condition": "",
+      "constraint": "9.1.4   对于设置主缆检修通道的跨越工程，主缆走道支架应日常检查稳定及安全状况，金属结构应定\n期进行涂漆防护。日常检查主缆走道扶手索，特别是两端锚固点有无锈蚀或损坏，应根据情况及时维\n修更换。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主缆通道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30091,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

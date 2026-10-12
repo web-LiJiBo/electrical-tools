@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 060",
+  "standard_id": "Z 50",
+  "version": "",
+  "chapter_path": "来源行-00038237",
+  "entities": [
+    {
+      "name": "随着我国工业化进程加快 ,人工合成的各种化合物投入施用 , 地下水中各种",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      随着我国工业化进程加快 ,人工合成的各种化合物投入施用 , 地下水中各种化学组分正在发生变\n化 ;分析技术不断进步 ,为适应调查评价需要 ,进一步与升级的 GB 5749—2006相协调 ,促进交流 ,有必\n要对 GB/T 14848—1993进行修订 。",
+      "type": "语义分解",
+      "subject": "随着我国工业化进程加快 ,人工合成的各种化合物投入施用 , 地下水中各种",
+      "action": "",
+      "operation": "随着我国工业化进程加快 ,人工合成的各种化合物投入施用 , 地下水中各种化学组分正在发生变 化 ;分析技术不断进步 ,为适应调查评价需要 ,进一步与升级的 GB 5749—2006相协调 ,促进交流 ,有必 要对 GB/T 14848—1993进行修订 。",
+      "condition": "",
+      "constraint": "      随着我国工业化进程加快 ,人工合成的各种化合物投入施用 , 地下水中各种化学组分正在发生变\n化 ;分析技术不断进步 ,为适应调查评价需要 ,进一步与升级的 GB 5749—2006相协调 ,促进交流 ,有必\n要对 GB/T 14848—1993进行修订 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "随着我国工业化进程加快 ,人工合成的各种化合物投入施用 , 地下水中各种"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38237,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00039887",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      5. 第7章增补了废水回用处理过程中所产生危险废物的处理\n(置)规定；第8章对噪声限制值进行了修订，新增2条3款，在噪\n声防治设计方面对化工建设项目总图布置、竖向布置进行了规定。\n       6. 第9章全面修订，增补条款对自动监测、采样、监测点位、挥\n发性有机物检漏等方面进行了规定；第10章增加条款从工程设计\n标准角度促进信息化环保管理水平的提高。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "      5. 第7章增补了废水回用处理过程中所产生危险废物的处理\n(置)规定；第8章对噪声限制值进行了修订，新增2条3款，在噪\n声防治设计方面对化工建设项目总图布置、竖向布置进行了规定。\n       6. 第9章全面修订，增补条款对自动监测、采样、监测点位、挥\n发性有机物检漏等方面进行了规定；第10章增加条款从工程设计\n标准角度促进信息化环保管理水平的提高。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 39887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

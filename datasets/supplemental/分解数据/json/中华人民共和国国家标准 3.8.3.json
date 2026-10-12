@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.8.3",
+  "entities": [
+    {
+      "name": "入局传输缆线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.8.3      出入通信局(站)的传输光(电)缆，各类缆线宜集中在进线",
+      "type": "语义分解",
+      "subject": "入局传输缆线",
+      "action": "",
+      "operation": "宜集中引入",
+      "condition": "",
+      "constraint": "3.8.3      出入通信局(站)的传输光(电)缆，各类缆线宜集中在进线",
+      "constraint_role": "informational",
+      "related_entities": [
+        "入局传输缆线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22431,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；进线后原文截断具体设施待核对"
+      ]
+    }
+  }
+}

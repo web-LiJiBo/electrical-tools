@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.6.1",
+  "entities": [
+    {
+      "name": "通信局站接地线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.6.1      通信局(站)内各类接地线应根据最大故障电流值和材\n料机械强度确定，宜选用截面积为16mm²~95mm²   的多股\n铜线。",
+      "type": "语义分解",
+      "subject": "通信局站接地线",
+      "action": "",
+      "operation": "按故障电流机械强度选择宜16至95平方毫米多股铜线",
+      "condition": "",
+      "constraint": "3.6.1      通信局(站)内各类接地线应根据最大故障电流值和材\n料机械强度确定，宜选用截面积为16mm²~95mm²   的多股\n铜线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信局站接地线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22404,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

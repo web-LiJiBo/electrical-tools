@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.6",
+  "entities": [
+    {
+      "name": "防爆检查清单",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6 检查一览表 附录 A 中表A.1~表 A.4给出了不同防爆型式装置的检查一览表。 表A.1~表A.4中确定的项目仅详细说明与危险场所内设备和装置完整性相关的最少项目_ 其他 项目也可与制造商说明书和应用要求中的其体细节一起使用 应相应地修改检查一览表.以适应特定 的设备和安装要求= 应对照 GB 3836.15 中规定的现场文件检查。 注: 附录 C 给出了电机的检查示例，附录 D 给出了严酷工作条件的附加信息。",
+      "type": "语义分解",
+      "subject": "防爆检查清单",
+      "action": "",
+      "operation": "按附录最低要求结合制造商装置文件及设备型式调整检查项目",
+      "condition": "",
+      "constraint": "5.6 检查一览表 附录 A 中表A.1~表 A.4给出了不同防爆型式装置的检查一览表。 表A.1~表A.4中确定的项目仅详细说明与危险场所内设备和装置完整性相关的最少项目_ 其他 项目也可与制造商说明书和应用要求中的其体细节一起使用 应相应地修改检查一览表.以适应特定 的设备和安装要求= 应对照 GB 3836.15 中规定的现场文件检查。 注: 附录 C 给出了电机的检查示例，附录 D 给出了严酷工作条件的附加信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆检查清单"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3998,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录A至D未提供需关联原件"
+      ]
+    }
+  }
+}

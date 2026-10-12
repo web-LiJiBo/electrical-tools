@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "7.3.4",
+  "entities": [
+    {
+      "name": "伤员救护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.4    将伤情较重者交医疗急救部门进行救治，心跳、呼吸停止者应立即进行心肺复苏，并做好\n记录。",
+      "type": "语义分解",
+      "subject": "伤员救护",
+      "action": "",
+      "operation": "重伤交医疗心呼停止心肺复苏留记录",
+      "condition": "",
+      "constraint": "7.3.4    将伤情较重者交医疗急救部门进行救治，心跳、呼吸停止者应立即进行心肺复苏，并做好\n记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "伤员救护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28992,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条款转录非个体医疗指导"
+      ]
+    }
+  }
+}

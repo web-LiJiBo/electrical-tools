@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025268",
+  "entities": [
+    {
+      "name": "高于被强拆号码等级，则向网关设备发送 200 OK 消息应答呼叫，携带被",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "高于被强拆号码等级，则向网关设备发送 200  OK 消息应答呼叫，携带被强拆号码等级，强拆\n成功，主叫与被强拆号码通话；若主叫号码等级不高于被叫号码等级，则不执行强拆，A、B 继\n续通话；",
+      "type": "语义分解",
+      "subject": "高于被强拆号码等级，则向网关设备发送 200 OK 消息应答呼叫，携带被",
+      "action": "",
+      "operation": "高于被强拆号码等级，则向网关设备发送 200 OK 消息应答呼叫，携带被强拆号码等级，强拆 成功，主叫与被强拆号码通话；若主叫号码等级不高于被叫号码等级，则不执行强拆，A、B 继 续通话",
+      "condition": "",
+      "constraint": "高于被强拆号码等级，则向网关设备发送 200  OK 消息应答呼叫，携带被强拆号码等级，强拆\n成功，主叫与被强拆号码通话；若主叫号码等级不高于被叫号码等级，则不执行强拆，A、B 继\n续通话；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高于被强拆号码等级，则向网关设备发送 200 OK 消息应答呼叫，携带被"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25268,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

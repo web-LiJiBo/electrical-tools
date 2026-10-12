@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027707",
+  "entities": [
+    {
+      "name": "管道储运单位应落实输油泵、压缩机、加热炉、储油罐、消防设备设施、工艺阀门",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1.6  管道储运单位应落实输油泵、压缩机、加热炉、储油罐、消防设备设施、工艺阀门、自控通信、防\n\n腐等管道设备设施运行维护的管理责任和要求，对设备设施登记建档。",
+      "type": "语义分解",
+      "subject": "管道储运单位应落实输油泵、压缩机、加热炉、储油罐、消防设备设施、工艺阀门",
+      "action": "",
+      "operation": "管道储运单位应落实输油泵、压缩机、加热炉、储油罐、消防设备设施、工艺阀门、自控通信、防 腐等管道设备设施运行维护的管理责任和要求，对设备设施登记建档。",
+      "condition": "",
+      "constraint": "5.5.1.6  管道储运单位应落实输油泵、压缩机、加热炉、储油罐、消防设备设施、工艺阀门、自控通信、防\n\n腐等管道设备设施运行维护的管理责任和要求，对设备设施登记建档。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道储运单位应落实输油泵、压缩机、加热炉、储油罐、消防设备设施、工艺阀门"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27707,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

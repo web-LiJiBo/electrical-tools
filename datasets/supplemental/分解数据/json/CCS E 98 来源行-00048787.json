@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00048787",
+  "entities": [
+    {
+      "name": "交流腐蚀试片交流电流密度也可通过试片交流电压和扩 散电阻计算获得，扩散电",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.9   交流腐蚀试片交流电流密度也可通过试片交流电压和扩\n散电阻计算获得，扩散电阻测量方法应按照本规范附录C 执行。\n5.3.10   在交流干扰条件下测量试片断电电位时，应考虑记录仪\n直流通道滤波功能导致的电压冲击峰影响，试片断电电位读取\n延迟时间宜为100ms～150ms。",
+      "type": "语义分解",
+      "subject": "交流腐蚀试片交流电流密度也可通过试片交流电压和扩 散电阻计算获得，扩散电",
+      "action": "",
+      "operation": "交流腐蚀试片交流电流密度也可通过试片交流电压和扩 散电阻计算获得，扩散电阻测量方法应按照本规范附录C 执行。 5.3.10 在交流干扰条件下测量试片断电电位时，应考虑记录仪 直流通道滤波功能导致的电压冲击峰影响，试片断电电位读取 延迟时间宜为100ms～150ms。",
+      "condition": "",
+      "constraint": "5.3.9   交流腐蚀试片交流电流密度也可通过试片交流电压和扩\n散电阻计算获得，扩散电阻测量方法应按照本规范附录C 执行。\n5.3.10   在交流干扰条件下测量试片断电电位时，应考虑记录仪\n直流通道滤波功能导致的电压冲击峰影响，试片断电电位读取\n延迟时间宜为100ms～150ms。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交流腐蚀试片交流电流密度也可通过试片交流电压和扩 散电阻计算获得，扩散电"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48787,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.3.4.3",
+  "entities": [
+    {
+      "name": "加权结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.3.4.3 宜将加权前所取得的数据和参数结果或归一化的结果和加权结果一同予以提供 ,以确保: ~决策者和其他使用者能熟悉所做的权衡和其他信息; 使用者能掌握这些结果的全面情况和有关细节<",
+      "type": "语义分解",
+      "subject": "加权结果",
+      "action": "",
+      "operation": "同时提供加权前数据参数及归一化结果支持理解权衡",
+      "condition": "",
+      "constraint": "4.4.3.4.3 宜将加权前所取得的数据和参数结果或归一化的结果和加权结果一同予以提供 ,以确保: ~决策者和其他使用者能熟悉所做的权衡和其他信息; 使用者能掌握这些结果的全面情况和有关细节<",
+      "constraint_role": "informational",
+      "related_entities": [
+        "加权结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1121,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

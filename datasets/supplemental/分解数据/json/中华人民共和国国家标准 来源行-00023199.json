@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023199",
+  "entities": [
+    {
+      "name": "根据国际电工委员会《雷电电磁脉冲的防护 第一部分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.1       根据国际电工委员会《雷电电磁脉冲的防护  第一部分：\n一般原则》IEC    1312—1 将 一个需要保护的空间划分为几个防雷\n区的原则，结合通信局(站)的具体情况，从电磁兼容的角度出发，\n通信局(站)一个欲保护的空间区域，由外到内可分为几个雷电保\n护区，以规定各部分空间区域不同的雷电电磁脉冲( LEMP)  的严\n重程度。",
+      "type": "语义分解",
+      "subject": "根据国际电工委员会《雷电电磁脉冲的防护 第一部分",
+      "action": "",
+      "operation": "根据国际电工委员会《雷电电磁脉冲的防护 第一部分： 一般原则》IEC 1312—1 将 一个需要保护的空间划分为几个防雷 区的原则，结合通信局(站)的具体情况，从电磁兼容的角度出发， 通信局(站)一个欲保护的空间区域，由外到内可分为几个雷电保 护区，以规定各部分空间区域不同的雷电电磁脉冲( LEMP) 的严 重程度。",
+      "condition": "",
+      "constraint": "2.0.1       根据国际电工委员会《雷电电磁脉冲的防护  第一部分：\n一般原则》IEC    1312—1 将 一个需要保护的空间划分为几个防雷\n区的原则，结合通信局(站)的具体情况，从电磁兼容的角度出发，\n通信局(站)一个欲保护的空间区域，由外到内可分为几个雷电保\n护区，以规定各部分空间区域不同的雷电电磁脉冲( LEMP)  的严\n重程度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据国际电工委员会《雷电电磁脉冲的防护 第一部分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23199,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

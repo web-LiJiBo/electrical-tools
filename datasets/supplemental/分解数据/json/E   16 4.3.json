@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "新建管道需要安装管道安全预警系统的宜与管道同步设计 、 同步施工 , 保",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3   新建管道需要安装管道安全预警系统的宜与管道同步设计 、  同步施工 ,  保证管道投产时安全预\n警技术能够同时投入使用 。",
+      "type": "语义分解",
+      "subject": "新建管道需要安装管道安全预警系统的宜与管道同步设计 、 同步施工 , 保",
+      "action": "",
+      "operation": "新建管道需要安装管道安全预警系统的宜与管道同步设计 、 同步施工 , 保证管道投产时安全预 警技术能够同时投入使用 。",
+      "condition": "",
+      "constraint": "4.3   新建管道需要安装管道安全预警系统的宜与管道同步设计 、  同步施工 ,  保证管道投产时安全预\n警技术能够同时投入使用 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "新建管道需要安装管道安全预警系统的宜与管道同步设计 、 同步施工 , 保"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41588,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

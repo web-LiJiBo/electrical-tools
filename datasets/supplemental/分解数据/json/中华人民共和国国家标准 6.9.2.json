@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.9.2",
+  "entities": [
+    {
+      "name": "基站信号空线屏蔽层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9.2       引入机房的信号线路的空线对应在机房内做接地处理。\n出入基站的信号电缆屏蔽层应在机房人口处就近接地。",
+      "type": "语义分解",
+      "subject": "基站信号空线屏蔽层",
+      "action": "",
+      "operation": "空线对机房内接地屏蔽层入口就近接地",
+      "condition": "",
+      "constraint": "6.9.2       引入机房的信号线路的空线对应在机房内做接地处理。\n出入基站的信号电缆屏蔽层应在机房人口处就近接地。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基站信号空线屏蔽层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22754,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

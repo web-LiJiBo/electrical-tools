@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "7.2.7",
+  "entities": [
+    {
+      "name": "安全环保依法合规情况，主要包括主要负责人与安全管 理人员培训取证，生产安",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     7.2.7 安全环保依法合规情况，主要包括主要负责人与安全管\n\n理人员培训取证，生产安全事故、突发环境事件应急预案备案与抄\n\n送，  重大危险源安全评估与备案，仪表（仪器）、安全附件、特种\n\n设备等的定期检验检测、登记，排污许可获得，消防法定检测、消\n\n防控制室人员值班等内容；",
+      "type": "语义分解",
+      "subject": "安全环保依法合规情况，主要包括主要负责人与安全管 理人员培训取证，生产安",
+      "action": "",
+      "operation": "安全环保依法合规情况，主要包括主要负责人与安全管 理人员培训取证，生产安全事故、突发环境事件应急预案备案与抄 送， 重大危险源安全评估与备案，仪表（仪器）、安全附件、特种 设备等的定期检验检测、登记，排污许可获得，消防法定检测、消 防控制室人员值班等内容",
+      "condition": "",
+      "constraint": "     7.2.7 安全环保依法合规情况，主要包括主要负责人与安全管\n\n理人员培训取证，生产安全事故、突发环境事件应急预案备案与抄\n\n送，  重大危险源安全评估与备案，仪表（仪器）、安全附件、特种\n\n设备等的定期检验检测、登记，排污许可获得，消防法定检测、消\n\n防控制室人员值班等内容；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全环保依法合规情况，主要包括主要负责人与安全管 理人员培训取证，生产安"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29548,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

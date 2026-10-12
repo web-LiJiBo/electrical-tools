@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048470",
+  "entities": [
+    {
+      "name": "当产生新一次检测数据时，应根据检测数据变化情况， 及时修正管道基线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.2    当产生新一次检测数据时，应根据检测数据变化情况，\n及时修正管道基线。主要强调管道基线是个动态数据，当新完\n\n成一次内检测时，将内检测数据与管道基线比对，如发现环焊\n缝、阀门等这类管道固定特征有变化时，确认后，修正管道基\n线，并以修正后的作为管道基线。",
+      "type": "语义分解",
+      "subject": "当产生新一次检测数据时，应根据检测数据变化情况， 及时修正管道基线",
+      "action": "",
+      "operation": "当产生新一次检测数据时，应根据检测数据变化情况， 及时修正管道基线。主要强调管道基线是个动态数据，当新完 成一次内检测时，将内检测数据与管道基线比对，如发现环焊 缝、阀门等这类管道固定特征有变化时，确认后，修正管道基 线，并以修正后的作为管道基线。",
+      "condition": "",
+      "constraint": "5.3.2    当产生新一次检测数据时，应根据检测数据变化情况，\n及时修正管道基线。主要强调管道基线是个动态数据，当新完\n\n成一次内检测时，将内检测数据与管道基线比对，如发现环焊\n缝、阀门等这类管道固定特征有变化时，确认后，修正管道基\n线，并以修正后的作为管道基线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当产生新一次检测数据时，应根据检测数据变化情况， 及时修正管道基线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48470,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

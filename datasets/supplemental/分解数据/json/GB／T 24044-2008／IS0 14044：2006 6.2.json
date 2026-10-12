@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "内部外部专家评审",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2 内部或外部专家进行的鉴定性评审 鉴定性评审可由内部或外部的专家来进行。 进行评审的专家必须是独立于 LCA 研究的 评审报 告书 ,从业者的意见和对评审人员建议的答复都应纳人到 LCA 的研究报告中",
+      "type": "语义分解",
+      "subject": "内部外部专家评审",
+      "action": "",
+      "operation": "保证专家独立将评审意见答复纳入报告",
+      "condition": "",
+      "constraint": "6.2 内部或外部专家进行的鉴定性评审 鉴定性评审可由内部或外部的专家来进行。 进行评审的专家必须是独立于 LCA 研究的 评审报 告书 ,从业者的意见和对评审人员建议的答复都应纳人到 LCA 的研究报告中",
+      "constraint_role": "informational",
+      "related_entities": [
+        "内部外部专家评审"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1151,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

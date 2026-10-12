@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012149",
+  "entities": [
+    {
+      "name": ". 1 室外通信设备及天馈线应设置在站场直击雷保护区内 , 不在站场直击",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "15.5. 1    室外通信设备及天馈线应设置在站场直击雷保护区内 ,\n不在站场直击雷保护区的通信设备应单独设置防雷接闪器。\n15.5.2    室外工业电视设备安装在监控杆或铁塔上时应在杆 、塔\n上设置避雷针 ,  避雷针应引下至接地网 。",
+      "type": "语义分解",
+      "subject": ". 1 室外通信设备及天馈线应设置在站场直击雷保护区内 , 不在站场直击",
+      "action": "",
+      "operation": ". 1 室外通信设备及天馈线应设置在站场直击雷保护区内 , 不在站场直击雷保护区的通信设备应单独设置防雷接闪器。 15.5.2 室外工业电视设备安装在监控杆或铁塔上时应在杆 、塔 上设置避雷针 , 避雷针应引下至接地网 。",
+      "condition": "",
+      "constraint": "15.5. 1    室外通信设备及天馈线应设置在站场直击雷保护区内 ,\n不在站场直击雷保护区的通信设备应单独设置防雷接闪器。\n15.5.2    室外工业电视设备安装在监控杆或铁塔上时应在杆 、塔\n上设置避雷针 ,  避雷针应引下至接地网 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 室外通信设备及天馈线应设置在站场直击雷保护区内 , 不在站场直击"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12149,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

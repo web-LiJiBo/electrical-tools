@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "10.7.3",
+  "entities": [
+    {
+      "name": "固定源浓度折算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.7.3 在计算固定污染源废气污染物排放浓度时 ,应将实测污染物排放浓度折算为标谁规定的过量空 气系数下的排放浓度, 折算方法按照 HJ/T 397一2007 执行; 当实测浓度在检出限以下时, 也需要进行 折算, 折算的要求与高丁测定下限时要求一致。",
+      "type": "语义分解",
+      "subject": "固定源浓度折算",
+      "action": "",
+      "operation": "折算规定过量空气系数含低检出限情况",
+      "condition": "",
+      "constraint": "10.7.3 在计算固定污染源废气污染物排放浓度时 ,应将实测污染物排放浓度折算为标谁规定的过量空 气系数下的排放浓度, 折算方法按照 HJ/T 397一2007 执行; 当实测浓度在检出限以下时, 也需要进行 折算, 折算的要求与高丁测定下限时要求一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固定源浓度折算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 515,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

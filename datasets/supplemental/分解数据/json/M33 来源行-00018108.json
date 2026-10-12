@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018108",
+  "entities": [
+    {
+      "name": "——删除附录A “名词缩略语”,同时将部分内容并到“缩略语”(见3.2,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "——删除附录A “名词缩略语”,同时将部分内容并到“缩略语”(见3.2,1999年版的附录A);\n——删除附录“CM 配置实例”“远端指示操作”“告警指示信号 ( AIS)” “信号失效( SF)  和信号\n    劣化 ( SD)”  ( 见1999年版的附录D 、附录E 、附录F 、附录G);",
+      "type": "语义分解",
+      "subject": "——删除附录A “名词缩略语”,同时将部分内容并到“缩略语”(见3.2,",
+      "action": "",
+      "operation": "——删除附录A “名词缩略语”,同时将部分内容并到“缩略语”(见3.2,1999年版的附录A); ——删除附录“CM 配置实例”“远端指示操作”“告警指示信号 ( AIS)” “信号失效( SF) 和信号 劣化 ( SD)” ( 见1999年版的附录D 、附录E 、附录F 、附录G)",
+      "condition": "",
+      "constraint": "——删除附录A “名词缩略语”,同时将部分内容并到“缩略语”(见3.2,1999年版的附录A);\n——删除附录“CM 配置实例”“远端指示操作”“告警指示信号 ( AIS)” “信号失效( SF)  和信号\n    劣化 ( SD)”  ( 见1999年版的附录D 、附录E 、附录F 、附录G);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——删除附录A “名词缩略语”,同时将部分内容并到“缩略语”(见3.2,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18108,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

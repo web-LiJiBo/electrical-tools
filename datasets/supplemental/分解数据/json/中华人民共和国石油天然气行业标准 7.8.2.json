@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.8.2",
+  "entities": [
+    {
+      "name": "管道光纤预警光缆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.8.2   管道光纤预警系统所用光缆宜与所监测油气管道同沟敷设。\n7.8.3    管道光纤预警系统的设置方式和相关技术要求应满足现\n行行业标准  《基于光纤传感的管道安全预警系统设计及施工规\n范》  SY/T  4121 的规定 。",
+      "type": "语义分解",
+      "subject": "管道光纤预警光缆",
+      "action": "",
+      "operation": "宜与管道同沟设置技术要求符合SY/T4121",
+      "condition": "",
+      "constraint": "7.8.2   管道光纤预警系统所用光缆宜与所监测油气管道同沟敷设。\n7.8.3    管道光纤预警系统的设置方式和相关技术要求应满足现\n行行业标准  《基于光纤传感的管道安全预警系统设计及施工规\n范》  SY/T  4121 的规定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道光纤预警光缆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11997,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含7.8.2及7.8.3保留"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案编制导则",
+  "standard_id": "GB/T 29639-2020",
+  "version": "2020",
+  "chapter_path": "4.7",
+  "entities": [
+    {
+      "name": "应急预案桌面推演",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7 桌面推演 按照应急预案明确的职责分工和应急响应程序，结合有关经验教训，相关部门及其人员可采取桌面演练的形式，模拟生产安全事故应对过程，逐步分析讨论并形成记录，检验应急预案的可行性，并进一步完善应急预案。桌面演练的相关要求见AQ/T 9007。",
+      "type": "语义分解",
+      "subject": "应急预案桌面推演",
+      "action": "",
+      "operation": "按职责程序模拟讨论记录检验可行性完善预案",
+      "condition": "",
+      "constraint": "4.7 桌面推演 按照应急预案明确的职责分工和应急响应程序，结合有关经验教训，相关部门及其人员可采取桌面演练的形式，模拟生产安全事故应对过程，逐步分析讨论并形成记录，检验应急预案的可行性，并进一步完善应急预案。桌面演练的相关要求见AQ/T 9007。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急预案桌面推演"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4142,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用AQ/T9007需关联"
+      ]
+    }
+  }
+}

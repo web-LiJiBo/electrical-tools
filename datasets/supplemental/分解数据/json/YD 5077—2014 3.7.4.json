@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.7.4",
+  "entities": [
+    {
+      "name": "走道电缆绑扎",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7.4      布放走道电缆必须绑扎，绑扎后的电缆应互相紧密靠拢，\n外观平直整齐，线扣间距均匀，松紧适度，用麻线绑扎时麻线必须\n浸蜡。",
+      "type": "语义分解",
+      "subject": "走道电缆绑扎",
+      "action": "",
+      "operation": "必须绑扎紧靠平齐扣距均匀松紧适度麻线浸蜡",
+      "condition": "",
+      "constraint": "3.7.4      布放走道电缆必须绑扎，绑扎后的电缆应互相紧密靠拢，\n外观平直整齐，线扣间距均匀，松紧适度，用麻线绑扎时麻线必须\n浸蜡。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "走道电缆绑扎"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26727,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

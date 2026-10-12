@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009814",
+  "entities": [
+    {
+      "name": "OTN 交叉设备的控制平面设计在工程中应为可选项，控 制平面功能应符合现",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.7 OTN 交叉设备的控制平面设计在工程中应为可选项，控\n制平面功能应符合现行国家标准《自动交换光网络(ASON) 技术\n要求》GB/T 21645中的有关规定。",
+      "type": "语义分解",
+      "subject": "OTN 交叉设备的控制平面设计在工程中应为可选项，控 制平面功能应符合现",
+      "action": "",
+      "operation": "OTN 交叉设备的控制平面设计在工程中应为可选项，控 制平面功能应符合现行国家标准《自动交换光网络(ASON) 技术 要求》GB/T 21645中的有关规定。",
+      "condition": "",
+      "constraint": "4.2.7 OTN 交叉设备的控制平面设计在工程中应为可选项，控\n制平面功能应符合现行国家标准《自动交换光网络(ASON) 技术\n要求》GB/T 21645中的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 交叉设备的控制平面设计在工程中应为可选项，控 制平面功能应符合现"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9814,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

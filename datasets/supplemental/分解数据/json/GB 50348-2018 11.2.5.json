@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.2.5",
+  "entities": [
+    {
+      "name": "运行处置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.5 系统运行应根据作业指导文件进行值机、现场处置等操作，并符合下列规定: 1 宜对值机员、现场处置员的操作、处置过程进行记录; 2 应对事件/报警信息处置操作情况进行监督、检查，对事件/报警信息进行分类统计和分析; 3 宜对报警信息采用包括视频、电话、声音等手段进行复核，无法确认现场情况的，应指派现场处置员赴现场复核。",
+      "type": "语义分解",
+      "subject": "运行处置",
+      "action": "",
+      "operation": "依指导宜记录监督分类分析宜多手段复核未确认派现场复核",
+      "condition": "",
+      "constraint": "11.2.5 系统运行应根据作业指导文件进行值机、现场处置等操作，并符合下列规定: 1 宜对值机员、现场处置员的操作、处置过程进行记录; 2 应对事件/报警信息处置操作情况进行监督、检查，对事件/报警信息进行分类统计和分析; 3 宜对报警信息采用包括视频、电话、声音等手段进行复核，无法确认现场情况的，应指派现场处置员赴现场复核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "运行处置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7207,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

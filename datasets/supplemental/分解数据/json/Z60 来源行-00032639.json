@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032639",
+  "entities": [
+    {
+      "name": "储油库排放水污染物、恶臭污染物、环境噪声适用相应的国家污染物排放标准，产",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   储油库排放水污染物、恶臭污染物、环境噪声适用相应的国家污染物排放标准，产生固体废物的鉴\n别、处理和处置适用相应的国家固体废物污染控制标准。配套的动力锅炉执行《锅炉大气污染物排放标\n准》或《火电厂大气污染物排放标准》。",
+      "type": "语义分解",
+      "subject": "储油库排放水污染物、恶臭污染物、环境噪声适用相应的国家污染物排放标准，产",
+      "action": "",
+      "operation": "储油库排放水污染物、恶臭污染物、环境噪声适用相应的国家污染物排放标准，产生固体废物的鉴 别、处理和处置适用相应的国家固体废物污染控制标准。配套的动力锅炉执行《锅炉大气污染物排放标 准》或《火电厂大气污染物排放标准》。",
+      "condition": "",
+      "constraint": "   储油库排放水污染物、恶臭污染物、环境噪声适用相应的国家污染物排放标准，产生固体废物的鉴\n别、处理和处置适用相应的国家固体废物污染控制标准。配套的动力锅炉执行《锅炉大气污染物排放标\n准》或《火电厂大气污染物排放标准》。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储油库排放水污染物、恶臭污染物、环境噪声适用相应的国家污染物排放标准，产"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32639,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

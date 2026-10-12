@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.6.9",
+  "entities": [
+    {
+      "name": "风险措施验证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.9 企业应依据可接受风险管控措施清单 ,明确每项风险管控措施的责任人,检查频次 .检查具体内 容和发现问题后的处置要求等,将巳有风险管控措施的检查和验证纳入日常检查内容 ,确保风险控制措 施的有效性。企业应通过隐患排查工作及时 ,全面辨识新的危害并纳入风险管理程序",
+      "type": "语义分解",
+      "subject": "风险措施验证",
+      "action": "",
+      "operation": "依清单明确人频次内容问题处置日查验证新危害纳入风险程序",
+      "condition": "",
+      "constraint": "4.6.9 企业应依据可接受风险管控措施清单 ,明确每项风险管控措施的责任人,检查频次 .检查具体内 容和发现问题后的处置要求等,将巳有风险管控措施的检查和验证纳入日常检查内容 ,确保风险控制措 施的有效性。企业应通过隐患排查工作及时 ,全面辨识新的危害并纳入风险管理程序",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险措施验证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5100,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

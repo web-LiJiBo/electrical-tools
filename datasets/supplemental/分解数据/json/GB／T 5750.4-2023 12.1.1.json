@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.1.1",
+  "entities": [
+    {
+      "name": "挥发酚检出及干扰",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.1.1 最低检测质量浓度 本方法最低检测质量为0.5 μg挥发酚类(以苯酚计)。若取250 mL水样，则其最低检测质量浓度为0.002 mg/L挥发酚类(以苯酚计)。干扰物及其消除方法:水中还原性硫化物、氧化剂、苯胺类化合物及石油等干扰酚的测定。硫化物经酸化及加入硫酸铜在蒸馏时与挥发酚分离;余氯等氧化剂可在采样时加入硫酸亚铁或亚砷酸钠还原。苯胺类在酸性溶液中形成盐类不被蒸出。石油可在碱性条件下用有机溶剂萃取后除去。",
+      "type": "语义分解",
+      "subject": "挥发酚检出及干扰",
+      "action": "",
+      "operation": "记录最低检出质量浓度并说明硫化物氧化剂苯胺石油干扰消除",
+      "condition": "",
+      "constraint": "12.1.1 最低检测质量浓度 本方法最低检测质量为0.5 μg挥发酚类(以苯酚计)。若取250 mL水样，则其最低检测质量浓度为0.002 mg/L挥发酚类(以苯酚计)。干扰物及其消除方法:水中还原性硫化物、氧化剂、苯胺类化合物及石油等干扰酚的测定。硫化物经酸化及加入硫酸铜在蒸馏时与挥发酚分离;余氯等氧化剂可在采样时加入硫酸亚铁或亚砷酸钠还原。苯胺类在酸性溶液中形成盐类不被蒸出。石油可在碱性条件下用有机溶剂萃取后除去。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发酚检出及干扰"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1441,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

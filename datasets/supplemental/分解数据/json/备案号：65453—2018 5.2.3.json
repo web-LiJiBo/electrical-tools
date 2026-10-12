@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "管道周围环境概况应按本标准附录A 中表A.1.8收集并 填写",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3 管道周围环境概况应按本标准附录A 中表A.1.8收集并\n填写；土壤腐蚀性测试应符合现行国家标准《埋地钢质管道腐\n蚀防护工程检验》GB/T 19285的相关规定。",
+      "type": "语义分解",
+      "subject": "管道周围环境概况应按本标准附录A 中表A.1.8收集并 填写",
+      "action": "",
+      "operation": "管道周围环境概况应按本标准附录A 中表A.1.8收集并 填写；土壤腐蚀性测试应符合现行国家标准《埋地钢质管道腐 蚀防护工程检验》GB/T 19285的相关规定。",
+      "condition": "",
+      "constraint": "5.2.3 管道周围环境概况应按本标准附录A 中表A.1.8收集并\n填写；土壤腐蚀性测试应符合现行国家标准《埋地钢质管道腐\n蚀防护工程检验》GB/T 19285的相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道周围环境概况应按本标准附录A 中表A.1.8收集并 填写"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44940,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016990",
+  "entities": [
+    {
+      "name": "d) 通过网管配置NE1 和 NE3的 GE 业务适配选择不同的方式，观",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      d) 通过网管配置NE1 和 NE3的 GE 业务适配选择不同的方式，观察被测设备网管是否上报NE1 和\nNE3出现净荷失配 ( PLM) 告警。",
+      "type": "语义分解",
+      "subject": "d) 通过网管配置NE1 和 NE3的 GE 业务适配选择不同的方式，观",
+      "action": "",
+      "operation": "d) 通过网管配置NE1 和 NE3的 GE 业务适配选择不同的方式，观察被测设备网管是否上报NE1 和 NE3出现净荷失配 ( PLM) 告警。",
+      "condition": "",
+      "constraint": "      d) 通过网管配置NE1 和 NE3的 GE 业务适配选择不同的方式，观察被测设备网管是否上报NE1 和\nNE3出现净荷失配 ( PLM) 告警。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 通过网管配置NE1 和 NE3的 GE 业务适配选择不同的方式，观"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16990,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

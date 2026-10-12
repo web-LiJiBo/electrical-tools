@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.12.2",
+  "entities": [
+    {
+      "name": "废水治理设施数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.12.2 废水治理设施数应为统计周期内企业用于防治水污染和经处理后综合利用水资源的实有设施 (包括构筑物)数。以一个废水治理系统为单位统计。附属于设施内的水治理设备和配套设备不单独计算。",
+      "type": "语义分解",
+      "subject": "废水治理设施数",
+      "action": "",
+      "operation": "按治理系统统计附属配套设备不单计",
+      "condition": "",
+      "constraint": "4.12.2 废水治理设施数应为统计周期内企业用于防治水污染和经处理后综合利用水资源的实有设施 (包括构筑物)数。以一个废水治理系统为单位统计。附属于设施内的水治理设备和配套设备不单独计算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水治理设施数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 613,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

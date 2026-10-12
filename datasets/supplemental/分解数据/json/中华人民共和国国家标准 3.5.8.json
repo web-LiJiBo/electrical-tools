@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.5.8",
+  "entities": [
+    {
+      "name": "OTN监测管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5.8  OTN 设备应具有 OPU/ODU/OTU   层的开销处理监测\n功能，支持OTU  SM段层、ODU PM通道层监测管理功能。OTN\n应提供6级 TCM 连接监视功能。OTN 的 OAM 功能应符合现\n行行业标准《光传送网(OTN) 接口》YD/T  1462中的有关规定。",
+      "type": "语义分解",
+      "subject": "OTN监测管理",
+      "action": "",
+      "operation": "具备开销监测处理段通道监测六级TCM和符合YD/T1462的OAM",
+      "condition": "",
+      "constraint": "3.5.8  OTN 设备应具有 OPU/ODU/OTU   层的开销处理监测\n功能，支持OTU  SM段层、ODU PM通道层监测管理功能。OTN\n应提供6级 TCM 连接监视功能。OTN 的 OAM 功能应符合现\n行行业标准《光传送网(OTN) 接口》YD/T  1462中的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN监测管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9782,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

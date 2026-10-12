@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026475",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14\t5.2.6\tPOTS终端通过用户线\n与AG或IAD相连\t修改为： POTS终端\n  通过用户线与AG\n  或IAD相连， AG/\n  IAD通过IP承载网\n接入软交换网， IAD\n也 可 以 通 过 P O N\n接人\t补充了AG/IAD\n通过IP承载网\n接人， IAD通过\nP O N 接 人 的\n方式",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "14\t5.2.6\tPOTS终端通过用户线\n与AG或IAD相连\t修改为： POTS终端\n  通过用户线与AG\n  或IAD相连， AG/\n  IAD通过IP承载网\n接入软交换网， IAD\n也 可 以 通 过 P O N\n接人\t补充了AG/IAD\n通过IP承载网\n接人， IAD通过\nP O N 接 人 的\n方式",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26475,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

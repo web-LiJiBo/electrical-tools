@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "8.4.1",
+  "entities": [
+    {
+      "name": "制药污染效率评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.1 废水、废气排放、厂界噪声、环保设施处理效率监测结果与评价 以文字和表格的形式对废水、废气厂界噪声和环保设施处理效率监测结果分别进行叙述和表示, 并对照验收评价标准进行评价。说明是否达到标准要求。出现超标或不符合设计指标要求时,应进行必要的原因分析。对于无标准依据的监测因子只列监测结果不评价。",
+      "type": "语义分解",
+      "subject": "制药污染效率评价",
+      "action": "",
+      "operation": "按标准评废水气噪声效率超标设计不符查因无标准仅列不评价",
+      "condition": "",
+      "constraint": "8.4.1 废水、废气排放、厂界噪声、环保设施处理效率监测结果与评价 以文字和表格的形式对废水、废气厂界噪声和环保设施处理效率监测结果分别进行叙述和表示, 并对照验收评价标准进行评价。说明是否达到标准要求。出现超标或不符合设计指标要求时,应进行必要的原因分析。对于无标准依据的监测因子只列监测结果不评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药污染效率评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2802,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

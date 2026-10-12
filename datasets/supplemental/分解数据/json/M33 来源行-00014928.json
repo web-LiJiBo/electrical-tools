@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014928",
+  "entities": [
+    {
+      "name": "—方式一为插入 IEEE 802.3 定义的链路故障信号( Link F",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—方式一为插入 IEEE 802.3 定义的链路故障信号( Link Fault) 替代GE  客户信号，即重复\n    的/C1/C2/ 序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/,C2=/K28.5/D2.2/D0.0/D0.0/。\n— 方式二为向下游节点发送 GFP CSF 信号，即将GFP-T 信号替换为GFP CSF 和Idle 帧；\n    当GFP 宿端检测到GFP CSF  信号时，插入IEEE 802.3 定义的链路故障信号，即重复的\n       /C1/C2/ 序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/ ,C2=/K28.5/D2.2/D0.0/D0.0/;",
+      "type": "语义分解",
+      "subject": "—方式一为插入 IEEE 802.3 定义的链路故障信号( Link F",
+      "action": "",
+      "operation": "—方式一为插入 IEEE 802.3 定义的链路故障信号( Link Fault) 替代GE 客户信号，即重复 的/C1/C2/ 序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/,C2=/K28.5/D2.2/D0.0/D0.0/。 — 方式二为向下游节点发送 GFP CSF 信号，即将GFP-T 信号替换为GFP CSF 和Idle 帧； 当GFP 宿端检测到GFP CSF 信号时，插入IEEE 802.3 定义的链路故障信号，即重复的 /C1/C2/ 序列",
+      "condition": "",
+      "constraint": "—方式一为插入 IEEE 802.3 定义的链路故障信号( Link Fault) 替代GE  客户信号，即重复\n    的/C1/C2/ 序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/,C2=/K28.5/D2.2/D0.0/D0.0/。\n— 方式二为向下游节点发送 GFP CSF 信号，即将GFP-T 信号替换为GFP CSF 和Idle 帧；\n    当GFP 宿端检测到GFP CSF  信号时，插入IEEE 802.3 定义的链路故障信号，即重复的\n       /C1/C2/ 序列集，其中C1=/K28.5/D21.5/D0.0/D0.0/ ,C2=/K28.5/D2.2/D0.0/D0.0/;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—方式一为插入 IEEE 802.3 定义的链路故障信号( Link F"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14928,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

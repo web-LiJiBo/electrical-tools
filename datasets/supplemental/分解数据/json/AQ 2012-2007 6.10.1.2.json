@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.10.1.2",
+  "entities": [
+    {
+      "name": "管道登陆点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.10.1.2 登陆位置的确定按以下要求执行: 登陆点应尽量选择在不受台风,波浪经常严重袭击的位置 ,要避开强流,冲刷地段 ,登陆点的岸滩应是稳定,变迁的岸段; 海底管道登陆地点应选择坡度合适的岸滩,保证管道在施工运行期的安全。",
+      "type": "语义分解",
+      "subject": "管道登陆点",
+      "action": "",
+      "operation": "避强台风波浪强流冲刷选稳定适坡岸滩保证施工运行安全",
+      "condition": "",
+      "constraint": "6.10.1.2 登陆位置的确定按以下要求执行: 登陆点应尽量选择在不受台风,波浪经常严重袭击的位置 ,要避开强流,冲刷地段 ,登陆点的岸滩应是稳定,变迁的岸段; 海底管道登陆地点应选择坡度合适的岸滩,保证管道在施工运行期的安全。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道登陆点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4700,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；稳定变迁表述疑似缺字需原件核查"
+      ]
+    }
+  }
+}

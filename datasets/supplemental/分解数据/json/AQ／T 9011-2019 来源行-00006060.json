@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产经营单位生产安全事故应急预案评估指南",
+  "standard_id": "AQ/T 9011-2019",
+  "version": "2019",
+  "chapter_path": "来源行-00006060",
+  "entities": [
+    {
+      "name": "事故风险 主要包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3 事故风险 主要包括: a ) 生产经菅单位事故风险分析是否全面客观; b ) 风险等级确定是否合理; 是否有新增事故风险; 4 ) 事故风险防范和控制措施能否满足实际需要; 依据事故风险评估提出的应急资源需求是否科学=",
+      "type": "语义分解",
+      "subject": "事故风险 主要包括",
+      "action": "",
+      "operation": "事故风险 主要包括: a ) 生产经菅单位事故风险分析是否全面客观; b ) 风险等级确定是否合理; 是否有新增事故风险; 4 ) 事故风险防范和控制措施能否满足实际需要; 依据事故风险评估提出的应急资源需求是否科学=",
+      "condition": "",
+      "constraint": "6.3 事故风险 主要包括: a ) 生产经菅单位事故风险分析是否全面客观; b ) 风险等级确定是否合理; 是否有新增事故风险; 4 ) 事故风险防范和控制措施能否满足实际需要; 依据事故风险评估提出的应急资源需求是否科学=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故风险 主要包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6060,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

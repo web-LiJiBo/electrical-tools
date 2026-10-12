@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022567",
+  "entities": [
+    {
+      "name": "交流配电室(柜、屏 ) 至MDF 接电排 就近连接到接地 端子或者钢筋 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "                    交流配电室(柜、屏 )\n\n                              至MDF\n                                  接电排\n\n就近连接到接地\n端子或者钢筋\n\n                                接头\n    户外电缆\n     屏蔽层\n\n\n                                                                    CEF",
+      "type": "语义分解",
+      "subject": "交流配电室(柜、屏 ) 至MDF 接电排 就近连接到接地 端子或者钢筋 ",
+      "action": "",
+      "operation": "交流配电室(柜、屏 ) 至MDF 接电排 就近连接到接地 端子或者钢筋 接头 户外电缆 屏蔽层 CEF",
+      "condition": "",
+      "constraint": "                    交流配电室(柜、屏 )\n\n                              至MDF\n                                  接电排\n\n就近连接到接地\n端子或者钢筋\n\n                                接头\n    户外电缆\n     屏蔽层\n\n\n                                                                    CEF",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交流配电室(柜、屏 ) 至MDF 接电排 就近连接到接地 端子或者钢筋 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22567,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

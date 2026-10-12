@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008036",
+  "entities": [
+    {
+      "name": "最小边模抑制比测试，应在S 点采用光谱分析仪测试，结 果应大于35dB",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.5  最小边模抑制比测试，应在S  点采用光谱分析仪测试，结\n果应大于35dB。",
+      "type": "语义分解",
+      "subject": "最小边模抑制比测试，应在S 点采用光谱分析仪测试，结 果应大于35dB",
+      "action": "",
+      "operation": "最小边模抑制比测试，应在S 点采用光谱分析仪测试，结 果应大于35dB。",
+      "condition": "",
+      "constraint": "4.6.5  最小边模抑制比测试，应在S  点采用光谱分析仪测试，结\n果应大于35dB。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "最小边模抑制比测试，应在S 点采用光谱分析仪测试，结 果应大于35dB"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8036,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

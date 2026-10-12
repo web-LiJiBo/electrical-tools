@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "6.1.9",
+  "entities": [
+    {
+      "name": "方法验证异常值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.9 验证过程中异常值的剔除方法参考 GBIT 6379中的相关内容,各实验室应对异常值的解释。更正或剔除进行充分说明",
+      "type": "语义分解",
+      "subject": "方法验证异常值",
+      "action": "",
+      "operation": "按引用方法处理并充分说明理由",
+      "condition": "",
+      "constraint": "6.1.9 验证过程中异常值的剔除方法参考 GBIT 6379中的相关内容,各实验室应对异常值的解释。更正或剔除进行充分说明",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法验证异常值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2348,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；GBIT编号异常"
+      ]
+    }
+  }
+}

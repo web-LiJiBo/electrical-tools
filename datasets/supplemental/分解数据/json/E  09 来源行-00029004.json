@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00029004",
+  "entities": [
+    {
+      "name": "根据泄漏源介质实际，选择正确的灭火剂(水、二氧化碳、干粉或泡沫等)和灭火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.3   根据泄漏源介质实际，选择正确的灭火剂(水、二氧化碳、干粉或泡沫等)和灭火方法(隔\n离、窒息、冷却或化学抑制等)实施灭火。",
+      "type": "语义分解",
+      "subject": "根据泄漏源介质实际，选择正确的灭火剂(水、二氧化碳、干粉或泡沫等)和灭火",
+      "action": "",
+      "operation": "根据泄漏源介质实际，选择正确的灭火剂(水、二氧化碳、干粉或泡沫等)和灭火方法(隔 离、窒息、冷却或化学抑制等)实施灭火。",
+      "condition": "",
+      "constraint": "7.5.3   根据泄漏源介质实际，选择正确的灭火剂(水、二氧化碳、干粉或泡沫等)和灭火方法(隔\n离、窒息、冷却或化学抑制等)实施灭火。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据泄漏源介质实际，选择正确的灭火剂(水、二氧化碳、干粉或泡沫等)和灭火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29004,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

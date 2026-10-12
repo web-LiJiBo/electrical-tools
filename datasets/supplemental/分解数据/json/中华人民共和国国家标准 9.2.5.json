@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.2.5",
+  "entities": [
+    {
+      "name": "TT供电局站SPD",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.5  在 TT  供电系统的局(站)内，应使用“3+1”模式的交流\n电源 SPD, 供电方式对安装 SPD 的要求应符合本规范附录 C 的\n规定。",
+      "type": "语义分解",
+      "subject": "TT供电局站SPD",
+      "action": "",
+      "operation": "使用3+1交流SPD供电安装符合附录C",
+      "condition": "",
+      "constraint": "9.2.5  在 TT  供电系统的局(站)内，应使用“3+1”模式的交流\n电源 SPD, 供电方式对安装 SPD 的要求应符合本规范附录 C 的\n规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "TT供电局站SPD"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22842,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录未提供"
+      ]
+    }
+  }
+}

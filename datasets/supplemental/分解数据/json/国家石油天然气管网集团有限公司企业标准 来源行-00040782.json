@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040782",
+  "entities": [
+    {
+      "name": ". 7 高寒草甸区和高寒草原区应优先采取原生草皮剥离与回铺方式进行生态恢",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5. 7  高寒草甸区和高寒草原区应优先采取原生草皮剥离与回铺方式进行生态恢复，结合相关试验\n研究开展剥离方案、剥离后养护、回铺方案，提高植物成活率。",
+      "type": "语义分解",
+      "subject": ". 7 高寒草甸区和高寒草原区应优先采取原生草皮剥离与回铺方式进行生态恢",
+      "action": "",
+      "operation": ". 7 高寒草甸区和高寒草原区应优先采取原生草皮剥离与回铺方式进行生态恢复，结合相关试验 研究开展剥离方案、剥离后养护、回铺方案，提高植物成活率。",
+      "condition": "",
+      "constraint": "6.3.5. 7  高寒草甸区和高寒草原区应优先采取原生草皮剥离与回铺方式进行生态恢复，结合相关试验\n研究开展剥离方案、剥离后养护、回铺方案，提高植物成活率。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 7 高寒草甸区和高寒草原区应优先采取原生草皮剥离与回铺方式进行生态恢"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40782,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

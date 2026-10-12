@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028431",
+  "entities": [
+    {
+      "name": "组织应建立和落实资深黑带 、黑带 、绿带 、黄带和其他推进人员的职业发展",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织应建立和落实资深黑带 、黑带 、绿带 、黄带和其他推进人员的职业发展规划 , 以促进精益六西格\n玛的推进 。",
+      "type": "语义分解",
+      "subject": "组织应建立和落实资深黑带 、黑带 、绿带 、黄带和其他推进人员的职业发展",
+      "action": "",
+      "operation": "组织应建立和落实资深黑带 、黑带 、绿带 、黄带和其他推进人员的职业发展规划 , 以促进精益六西格 玛的推进 。",
+      "condition": "",
+      "constraint": "      组织应建立和落实资深黑带 、黑带 、绿带 、黄带和其他推进人员的职业发展规划 , 以促进精益六西格\n玛的推进 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织应建立和落实资深黑带 、黑带 、绿带 、黄带和其他推进人员的职业发展"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28431,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

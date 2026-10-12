@@ -1,0 +1,39 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "5.3",
+  "entities": [
+    {
+      "name": "输油周转量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3 输油周转量按式(3)计算: 输油管道存在反输工况时。按照公式(3)进行反输周转量的计算, 管线周转量应视为正输周转量与反输周转量的加和。",
+      "type": "语义分解",
+      "subject": "输油周转量",
+      "action": "",
+      "operation": "正反输周转量相加",
+      "condition": "输油管道存在反输工况时",
+      "constraint": "正输周转量与反输周转量的加和",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输油周转量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式(3)未提供；仅提取反输工况下加和关系"
+      ]
+    }
+  }
+}

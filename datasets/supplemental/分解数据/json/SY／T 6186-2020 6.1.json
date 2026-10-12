@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "管道材料选用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 管道设计应根据其体使用条件 (包括制造/制作。安装。介质。操作情祝。工作环境和试验等) 及林料使用要求。选择合适的管道组成件材料= 林料应具备可获得性和经济性, 材料在使用条件下具 有足够的稳定性。具有良好的韧性和可焊性。",
+      "type": "语义分解",
+      "subject": "管道材料选用",
+      "action": "",
+      "operation": "按制造安装介质工况环境试验稳定韧焊可获取经济",
+      "condition": "",
+      "constraint": "6.1 管道设计应根据其体使用条件 (包括制造/制作。安装。介质。操作情祝。工作环境和试验等) 及林料使用要求。选择合适的管道组成件材料= 林料应具备可获得性和经济性, 材料在使用条件下具 有足够的稳定性。具有良好的韧性和可焊性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道材料选用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7353,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

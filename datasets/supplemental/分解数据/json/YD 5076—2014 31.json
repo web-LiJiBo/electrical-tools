@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "31",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "31\t8.1.1\t  YDN 038.1—1997《国\n内No.7信令方式技术规\n范“综合业务数字网用户\n部分(ISUP)”(补充修改\n件)》\t修改为： YDN 038.1\n《国内No.7信令方\n式技术规范综合业\n务数字网用户部分\n(ISUP)(补充修改\n件)》\t更正原规范编号\n的笔误",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "31\t8.1.1\t  YDN 038.1—1997《国\n内No.7信令方式技术规\n范“综合业务数字网用户\n部分(ISUP)”(补充修改\n件)》\t修改为： YDN 038.1\n《国内No.7信令方\n式技术规范综合业\n务数字网用户部分\n(ISUP)(补充修改\n件)》\t更正原规范编号\n的笔误",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26498,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

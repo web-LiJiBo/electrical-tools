@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033682",
+  "entities": [
+    {
+      "name": "a) 用取样泵抽取所需的标准样气量通过过滤纸大约 1 min",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    用取样泵抽取所需的标准样气量通过过滤纸大约 1 min ;\nb)    松开滤纸夹头，移动或更换滤纸后重新夹紧；\nc)    重复步骤 a) ;",
+      "type": "语义分解",
+      "subject": "a) 用取样泵抽取所需的标准样气量通过过滤纸大约 1 min",
+      "action": "",
+      "operation": "a) 用取样泵抽取所需的标准样气量通过过滤纸大约 1 min ; b) 松开滤纸夹头，移动或更换滤纸后重新夹紧； c) 重复步骤 a)",
+      "condition": "",
+      "constraint": "a)    用取样泵抽取所需的标准样气量通过过滤纸大约 1 min ;\nb)    松开滤纸夹头，移动或更换滤纸后重新夹紧；\nc)    重复步骤 a) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 用取样泵抽取所需的标准样气量通过过滤纸大约 1 min"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33682,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

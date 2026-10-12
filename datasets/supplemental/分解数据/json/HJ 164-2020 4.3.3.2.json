@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "4.3.3.2",
+  "entities": [
+    {
+      "name": "污染源岩溶水布点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3.2 岩溶水 a)  原则上主管道上不得少于3 个监测点,根据地下河的分布及流向,在地下河的上 中。下游布设3个监测点。分别作为对照监测点。污染监测点及污染扩散监测点; b)岩溶发育完善,地下河分布复杂的,根据现场情况增加2~4个监测点, 一级支流管道长度大于 2 km 布设2个点, 一级支流管逍长度小于2 km 布设1个点。",
+      "type": "语义分解",
+      "subject": "污染源岩溶水布点",
+      "action": "",
+      "operation": "主管至少三点复杂系统增二至四点支流依长度设点",
+      "condition": "",
+      "constraint": "4.3.3.2 岩溶水 a)  原则上主管道上不得少于3 个监测点,根据地下河的分布及流向,在地下河的上 中。下游布设3个监测点。分别作为对照监测点。污染监测点及污染扩散监测点; b)岩溶发育完善,地下河分布复杂的,根据现场情况增加2~4个监测点, 一级支流管道长度大于 2 km 布设2个点, 一级支流管逍长度小于2 km 布设1个点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染源岩溶水布点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2046,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

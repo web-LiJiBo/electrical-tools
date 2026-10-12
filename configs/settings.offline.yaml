@@ -1,0 +1,33 @@
+# 离线演示配置：借用现有分解器的“无密钥降级”路径，不调用外部模型。
+# 运行前确保 ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY 为空。
+llm_advice:
+  enabled: false
+# 不修改原 settings.example.yaml，也不加载本地 Qwen 权重。
+model_paths:
+  llm: models/llm/qwen--Qwen-7B-Chat/snapshots/master
+  embedding: models/embedding/finetuned_sbert
+  embedding_baseline: models/embedding/sbert
+  consistency_classifier: models/consistency/classifier_model/attention_model.pt
+  manifests: models/manifests
+dataset_paths:
+  source_excel: datasets/lunwen/data/2017.xlsx
+  decomposed_json_original:
+    train: datasets/lunwen/output_jsons/train
+    test: datasets/lunwen/output_jsons/test
+  decomposed_json_redistributed:
+    train: datasets/lunwen/output_jsons_new/train
+    test: datasets/lunwen/output_jsons_new/test
+  decomposed_json_verified: datasets/lunwen/verified_json/json
+  supplemental_json: datasets/supplemental/分解数据/json
+  correction_mapping: datasets/lunwen/verified_json/修正对照表.xlsx
+llm_decomposition:
+  backend: deepseek_api
+  api_key_env: ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY
+knowledge:
+  json_build_source: datasets/lunwen/verified_json/json
+  build_summary: artifacts/knowledge_graph/verified_build_summary.json
+feedback:
+  store: data/feedback/business_feedback.jsonl
+  proposal_output: artifacts/optimization/proposals.json
+audit:
+  store: data/audit/offline_demo.jsonl

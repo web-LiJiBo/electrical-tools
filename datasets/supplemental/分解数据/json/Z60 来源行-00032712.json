@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032712",
+  "entities": [
+    {
+      "name": "油气经油气处理装置处理后的排放量削减百分比，根据同步检测油气处理装置进口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   油气经油气处理装置处理后的排放量削减百分比，根据同步检测油气处理装置进口和出口油气排放\n量进行计算，油气排放量是废气排气流量和油气排放浓度的乘积。\n3.18",
+      "type": "语义分解",
+      "subject": "油气经油气处理装置处理后的排放量削减百分比，根据同步检测油气处理装置进口",
+      "action": "",
+      "operation": "油气经油气处理装置处理后的排放量削减百分比，根据同步检测油气处理装置进口和出口油气排放 量进行计算，油气排放量是废气排气流量和油气排放浓度的乘积。 3.18",
+      "condition": "",
+      "constraint": "   油气经油气处理装置处理后的排放量削减百分比，根据同步检测油气处理装置进口和出口油气排放\n量进行计算，油气排放量是废气排气流量和油气排放浓度的乘积。\n3.18",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气经油气处理装置处理后的排放量削减百分比，根据同步检测油气处理装置进口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32712,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

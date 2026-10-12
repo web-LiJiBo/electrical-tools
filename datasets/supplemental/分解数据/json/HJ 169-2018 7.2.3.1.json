@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "7.2.3.1",
+  "entities": [
+    {
+      "name": "危险单元划分",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3.1 按工艺流程和平面布置功能区划,结合物质危险性识别,以图表的方式给出危险单元划分结果及单元内危险物质的最大存在量。按生产工艺流程分析危险单元内潸在的风险源=",
+      "type": "语义分解",
+      "subject": "危险单元划分",
+      "action": "",
+      "operation": "结合流程布置物性确定单元量及风险源",
+      "condition": "",
+      "constraint": "7.2.3.1 按工艺流程和平面布置功能区划,结合物质危险性识别,以图表的方式给出危险单元划分结果及单元内危险物质的最大存在量。按生产工艺流程分析危险单元内潸在的风险源=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危险单元划分"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2476,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

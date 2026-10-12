@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.1.1.1",
+  "entities": [
+    {
+      "name": "地块利用变迁资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1.1 地块利用变迁资料包括:  用来辨识地块及其相邻地块的开发及活动状况的航片或卫星图片 ,地块的土地使用和规划资料,其他有助于评价地块污染的历史资料,如土地登记信息资料等。地块利用变迁过程中的地块内建筑。设施,工艺流程和生产污染等的变化情况。",
+      "type": "语义分解",
+      "subject": "地块利用变迁资料",
+      "action": "",
+      "operation": "收航卫图土地规划登记及建筑设施工艺生产污染变化",
+      "condition": "",
+      "constraint": "5.1.1.1 地块利用变迁资料包括:  用来辨识地块及其相邻地块的开发及活动状况的航片或卫星图片 ,地块的土地使用和规划资料,其他有助于评价地块污染的历史资料,如土地登记信息资料等。地块利用变迁过程中的地块内建筑。设施,工艺流程和生产污染等的变化情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地块利用变迁资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2608,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

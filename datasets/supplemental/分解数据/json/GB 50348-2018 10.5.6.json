@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "10.5.6",
+  "entities": [
+    {
+      "name": "通过基本通过整改",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.5.6 验收通过或基本通过的工程，施工单位、设计单位、建设(使用)单位等应根据验收组提出的建议与要求，落实整改措施。施工单位、设计单位的整改落实后应提交书面报告并经建设(使用)单位确认。",
+      "type": "语义分解",
+      "subject": "通过基本通过整改",
+      "action": "",
+      "operation": "依意见措施整改书面报告建设使用方确认",
+      "condition": "",
+      "constraint": "10.5.6 验收通过或基本通过的工程，施工单位、设计单位、建设(使用)单位等应根据验收组提出的建议与要求，落实整改措施。施工单位、设计单位的整改落实后应提交书面报告并经建设(使用)单位确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通过基本通过整改"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7192,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

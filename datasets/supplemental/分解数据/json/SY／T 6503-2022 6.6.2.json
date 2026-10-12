@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "6.6.2",
+  "entities": [
+    {
+      "name": "气体报警阈值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.2 报警值设定应符合下列规定 : a) 固定式可燃气体探测器的一级报瞥设定值应小于或等于 2O%LEL , 宜为 IOOLEL ; 二级报瞥设定值应大于一级报警设定值且小于或等于 40OLEL 便携式可燃气体探测器的一级报警设定值应小于或等于 IOOLEL , 二级报警设定值应小于或等于 2O%LEL。 b) 有毒气体的一级报警设定值应小于或等于 IOOOOEL ; 二级报瞥设定值应小于或等于 200%OEL , 但不应超过 IOOIDLH。 c) 线型可燃气体测量一级报瞥设定值宜为 ILEL 皿; 二级报警设定值宜为 2LEL 皿。 d) 二氧化碳一级报警设定值宜小于或等于 0.S%VOL, 二级报瞥设定值宜小于或等于 I%VOL。 e) 氧气一级欠氧报警设定值宜为 19.S%VOL , 二级欠氧报警设定值宜为 I8%VOL。",
+      "type": "语义分解",
+      "subject": "气体报警阈值",
+      "action": "",
+      "operation": "按固定便携毒气线型二氧化碳氧气级别规定阈值",
+      "condition": "",
+      "constraint": "6.6.2 报警值设定应符合下列规定 : a) 固定式可燃气体探测器的一级报瞥设定值应小于或等于 2O%LEL , 宜为 IOOLEL ; 二级报瞥设定值应大于一级报警设定值且小于或等于 40OLEL 便携式可燃气体探测器的一级报警设定值应小于或等于 IOOLEL , 二级报警设定值应小于或等于 2O%LEL。 b) 有毒气体的一级报警设定值应小于或等于 IOOOOEL ; 二级报瞥设定值应小于或等于 200%OEL , 但不应超过 IOOIDLH。 c) 线型可燃气体测量一级报瞥设定值宜为 ILEL 皿; 二级报警设定值宜为 2LEL 皿。 d) 二氧化碳一级报警设定值宜小于或等于 0.S%VOL, 二级报瞥设定值宜小于或等于 I%VOL。 e) 氧气一级欠氧报警设定值宜为 19.S%VOL , 二级欠氧报警设定值宜为 I8%VOL。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体报警阈值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5834,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；IOOOOEL等数字及单位严重缺损需原件核查不得猜测"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019877",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Sn_AI_TSD\nSn_C_MI_pPSSw\n\n1×下面每功能：\nT0_T1_Clock\nT0_T1_FrameStart\n\n每输入输出连接点：\nSn_C_MI_Connection Port Ids\n\n每矩阵连接：\nSn_C_MI_Connection Type\nSn_C_MI_Drectionality\n\n每SNC保护组：\nSn_C_M_PROT type\nSn_C_MI_OPER type\nSn_C_MI_WTR time\nSn_C_MI_HO time\nSn_C_MI_EXTCMD\tSn_C_MI_pPSC\nSn_C_MI_pSSp\n注：保护状态报告信号还有待定",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "Sn_AI_TSD\nSn_C_MI_pPSSw\n\n1×下面每功能：\nT0_T1_Clock\nT0_T1_FrameStart\n\n每输入输出连接点：\nSn_C_MI_Connection Port Ids\n\n每矩阵连接：\nSn_C_MI_Connection Type\nSn_C_MI_Drectionality\n\n每SNC保护组：\nSn_C_M_PROT type\nSn_C_MI_OPER type\nSn_C_MI_WTR time\nSn_C_MI_HO time\nSn_C_MI_EXTCMD\tSn_C_MI_pPSC\nSn_C_MI_pSSp\n注：保护状态报告信号还有待定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19877,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

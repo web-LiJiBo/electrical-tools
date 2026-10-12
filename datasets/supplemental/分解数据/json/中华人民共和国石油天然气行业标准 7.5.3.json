@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.5.3",
+  "entities": [
+    {
+      "name": "出入口控制系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.3    出入口控制系统的功能 、  性能 、  安全性 、  可靠性 、   电磁\n兼容性 、   环境适应性及线缆选型与布线应符合现行国家标准\n《出入口控制系统工程设计规范》  GB  50396 的相关要求。",
+      "type": "语义分解",
+      "subject": "出入口控制系统",
+      "action": "",
+      "operation": "功能性能安全可靠兼容环境线缆布线符合GB50396",
+      "condition": "",
+      "constraint": "7.5.3    出入口控制系统的功能 、  性能 、  安全性 、  可靠性 、   电磁\n兼容性 、   环境适应性及线缆选型与布线应符合现行国家标准\n《出入口控制系统工程设计规范》  GB  50396 的相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "出入口控制系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

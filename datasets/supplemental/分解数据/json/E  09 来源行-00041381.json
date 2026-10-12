@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041381",
+  "entities": [
+    {
+      "name": "源头削减包括削减产出的废物或其他残留物的体积或毒性，产品替代是一个源头削",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   源头削减包括削减产出的废物或其他残留物的体积或毒性，产品替代是一个源头削减的范例。生\n产和维修用的化学物品应评估，以确定低毒替代品是否满足性能和被作业者接受。",
+      "type": "语义分解",
+      "subject": "源头削减包括削减产出的废物或其他残留物的体积或毒性，产品替代是一个源头削",
+      "action": "",
+      "operation": "源头削减包括削减产出的废物或其他残留物的体积或毒性，产品替代是一个源头削减的范例。生 产和维修用的化学物品应评估，以确定低毒替代品是否满足性能和被作业者接受。",
+      "condition": "",
+      "constraint": "   源头削减包括削减产出的废物或其他残留物的体积或毒性，产品替代是一个源头削减的范例。生\n产和维修用的化学物品应评估，以确定低毒替代品是否满足性能和被作业者接受。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "源头削减包括削减产出的废物或其他残留物的体积或毒性，产品替代是一个源头削"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41381,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

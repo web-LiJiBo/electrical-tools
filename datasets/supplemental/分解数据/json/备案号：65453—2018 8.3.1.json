@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "8.3.1",
+  "entities": [
+    {
+      "name": "应对评价过程的有效性、评价方法的有效性进行评价， 并应对管道外腐蚀状况做",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.1   应对评价过程的有效性、评价方法的有效性进行评价，\n并应对管道外腐蚀状况做出整体评价，提出改进建议。",
+      "type": "语义分解",
+      "subject": "应对评价过程的有效性、评价方法的有效性进行评价， 并应对管道外腐蚀状况做",
+      "action": "",
+      "operation": "应对评价过程的有效性、评价方法的有效性进行评价， 并应对管道外腐蚀状况做出整体评价，提出改进建议。",
+      "condition": "",
+      "constraint": "8.3.1   应对评价过程的有效性、评价方法的有效性进行评价，\n并应对管道外腐蚀状况做出整体评价，提出改进建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应对评价过程的有效性、评价方法的有效性进行评价， 并应对管道外腐蚀状况做"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45190,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

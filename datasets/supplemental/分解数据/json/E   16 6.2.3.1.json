@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "6.2.3.1",
+  "entities": [
+    {
+      "name": "红外 、激光 、微波等周界预警系统应具有抗自然光干扰功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3.1    红外 、激光 、微波等周界预警系统应具有抗自然光干扰功能。\n6.2.3.2   周界预警技术应具有报警信息传输与联动功能。\n6.2.3.3   周界预警系统应支持多种周界防护技术混合组网 。\n6.2.3.4    周界预警系统宜具有入侵识别和定位功能 。",
+      "type": "语义分解",
+      "subject": "红外 、激光 、微波等周界预警系统应具有抗自然光干扰功能",
+      "action": "",
+      "operation": "红外 、激光 、微波等周界预警系统应具有抗自然光干扰功能。 6.2.3.2 周界预警技术应具有报警信息传输与联动功能。 6.2.3.3 周界预警系统应支持多种周界防护技术混合组网 。 6.2.3.4 周界预警系统宜具有入侵识别和定位功能 。",
+      "condition": "",
+      "constraint": "6.2.3.1    红外 、激光 、微波等周界预警系统应具有抗自然光干扰功能。\n6.2.3.2   周界预警技术应具有报警信息传输与联动功能。\n6.2.3.3   周界预警系统应支持多种周界防护技术混合组网 。\n6.2.3.4    周界预警系统宜具有入侵识别和定位功能 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "红外 、激光 、微波等周界预警系统应具有抗自然光干扰功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41650,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

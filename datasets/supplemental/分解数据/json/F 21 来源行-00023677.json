@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023677",
+  "entities": [
+    {
+      "name": "边界接入控制设备(BAC) ,也称为会话边界控制设备(SBC) ,是软交",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      边界接入控制设备(BAC) ,也称为会话边界控制设备(SBC) ,是软交换网络的边缘汇聚设备 ,用于\n控制软交换网络与其他 IP 网络间访问 ,对通过不可信任设备接入到软交换网络中的 IP用户进行接入\n和业务控制 ,提供用户的信令流和媒体流的代理功能 , 同时该设备具有安全防护 、媒体管理 、地址转换\n(包括 IP层地址转换和应用层地址转换)等功能 ,配合软交换核心设备实现用户管理 、业务管理 、配合承\n载网实现 QOS管理 。  功能及要求如下 :",
+      "type": "语义分解",
+      "subject": "边界接入控制设备(BAC) ,也称为会话边界控制设备(SBC) ,是软交",
+      "action": "",
+      "operation": "边界接入控制设备(BAC) ,也称为会话边界控制设备(SBC) ,是软交换网络的边缘汇聚设备 ,用于 控制软交换网络与其他 IP 网络间访问 ,对通过不可信任设备接入到软交换网络中的 IP用户进行接入 和业务控制 ,提供用户的信令流和媒体流的代理功能 , 同时该设备具有安全防护 、媒体管理 、地址转换 (包括 IP层地址转换和应用层地址转换)等功能 ,配合软交换核心设备实现用户管理 、业务管理 、配合承 载网实现 QOS管理 。 功能及要求如下",
+      "condition": "",
+      "constraint": "      边界接入控制设备(BAC) ,也称为会话边界控制设备(SBC) ,是软交换网络的边缘汇聚设备 ,用于\n控制软交换网络与其他 IP 网络间访问 ,对通过不可信任设备接入到软交换网络中的 IP用户进行接入\n和业务控制 ,提供用户的信令流和媒体流的代理功能 , 同时该设备具有安全防护 、媒体管理 、地址转换\n(包括 IP层地址转换和应用层地址转换)等功能 ,配合软交换核心设备实现用户管理 、业务管理 、配合承\n载网实现 QOS管理 。  功能及要求如下 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "边界接入控制设备(BAC) ,也称为会话边界控制设备(SBC) ,是软交"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23677,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

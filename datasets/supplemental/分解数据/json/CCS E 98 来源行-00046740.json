@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046740",
+  "entities": [
+    {
+      "name": "浮顶目视检测时，重点检测部位宜为单盘与浮舱连接部 位、浮舱内外表面、浮顶",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2    浮顶目视检测时，重点检测部位宜为单盘与浮舱连接部\n位、浮舱内外表面、浮顶集水坑、辅助集水坑和辅助浮筒；发\n现腐蚀情况，应对腐蚀部位进行测厚。",
+      "type": "语义分解",
+      "subject": "浮顶目视检测时，重点检测部位宜为单盘与浮舱连接部 位、浮舱内外表面、浮顶",
+      "action": "",
+      "operation": "浮顶目视检测时，重点检测部位宜为单盘与浮舱连接部 位、浮舱内外表面、浮顶集水坑、辅助集水坑和辅助浮筒；发 现腐蚀情况，应对腐蚀部位进行测厚。",
+      "condition": "",
+      "constraint": "      2    浮顶目视检测时，重点检测部位宜为单盘与浮舱连接部\n位、浮舱内外表面、浮顶集水坑、辅助集水坑和辅助浮筒；发\n现腐蚀情况，应对腐蚀部位进行测厚。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "浮顶目视检测时，重点检测部位宜为单盘与浮舱连接部 位、浮舱内外表面、浮顶"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46740,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "9.1.1.2",
+  "entities": [
+    {
+      "name": "大气预测范围点位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.1.2 预测范围与计算点 a)  预测范围即预测物质浓度达到评价标准时的最大影响范围。通常由预测模型计算获取。预测范围一般不超过 10 km。 b)  计算点分特殊计算点和一般计算点。特殊计算点指大气环境敏感且标等关心点, 一般计算点指下风向不同距离点。 一 -般计算点的设置应具有一定分辨率,距离风险源500 m 范围内可设置10~50 皿 间距。大于500皿 范围内可设置50~100 m 间距。",
+      "type": "语义分解",
+      "subject": "大气预测范围点位",
+      "action": "",
+      "operation": "按达标浓度最大影响范围设特殊一般点依距离分辨率布点",
+      "condition": "",
+      "constraint": "9.1.1.2 预测范围与计算点 a)  预测范围即预测物质浓度达到评价标准时的最大影响范围。通常由预测模型计算获取。预测范围一般不超过 10 km。 b)  计算点分特殊计算点和一般计算点。特殊计算点指大气环境敏感且标等关心点, 一般计算点指下风向不同距离点。 一 -般计算点的设置应具有一定分辨率,距离风险源500 m 范围内可设置10~50 皿 间距。大于500皿 范围内可设置50~100 m 间距。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气预测范围点位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2502,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；部分距离单位异常"
+      ]
+    }
+  }
+}

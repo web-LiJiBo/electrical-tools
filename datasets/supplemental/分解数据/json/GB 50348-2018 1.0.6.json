@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "1.0.6",
+  "entities": [
+    {
+      "name": "特殊涉密领域工程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.6 在涉及国家安全、国家秘密的特殊领域开展安全防范工程建设，应按照相关管理要求，严格安全准入机制，选用安全可控的产品设备和符合要求的专业设计、施工和服务队伍。",
+      "type": "语义分解",
+      "subject": "特殊涉密领域工程",
+      "action": "",
+      "operation": "严格准入选安全可控设备和合格队伍",
+      "condition": "在涉及国家安全、国家秘密的特殊领域开展安全防范工程建设",
+      "constraint": "1.0.6 在涉及国家安全、国家秘密的特殊领域开展安全防范工程建设，应按照相关管理要求，严格安全准入机制，选用安全可控的产品设备和符合要求的专业设计、施工和服务队伍。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊涉密领域工程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6820,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

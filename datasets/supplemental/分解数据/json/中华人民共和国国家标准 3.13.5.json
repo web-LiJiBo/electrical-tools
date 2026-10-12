@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.13.5",
+  "entities": [
+    {
+      "name": "专用变压器接地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.13.5      专用变压器安装在局(站)院内时，应将变压器的接地体\n与大楼的接地体连通。接地线应与局(站)内的接地总汇集线连\n通，专用变压器安装在大楼内时，其接地系统可与局(站)合用接地\n装置。",
+      "type": "语义分解",
+      "subject": "专用变压器接地",
+      "action": "",
+      "operation": "院内接地体及引线与大楼汇集线连通楼内可共用接地装置",
+      "condition": "",
+      "constraint": "3.13.5      专用变压器安装在局(站)院内时，应将变压器的接地体\n与大楼的接地体连通。接地线应与局(站)内的接地总汇集线连\n通，专用变压器安装在大楼内时，其接地系统可与局(站)合用接地\n装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "专用变压器接地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22460,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

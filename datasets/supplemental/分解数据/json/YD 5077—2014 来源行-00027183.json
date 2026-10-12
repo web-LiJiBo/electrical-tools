@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00027183",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "测试过程\t①主叫用户拨打智能用户接入码，交换局将该呼叫IAM消息发送\n到SDB,IAM中主叫号码为物理号码，被叫号码为被叫逻辑号码；\n②SDB进行主叫号码分析和查询，向前端回送ACM,ACM中改发\n号码为主叫的逻辑号码；\n③SDB进行被叫号码分析和查询，发现被叫用户登记了智能业务，\n向前端回送REL,REL消息中改发原因为插号，改发号码为被叫智能\n业务接入码；\n④交换局收到REL消息后，前向发送RLC;\n⑤交换局向SSP局发送IAM消息，IAM中主叫号码为逻辑号码，被\n叫号码为被叫智能业务接人码+被叫逻辑号码；\n⑥SSP完成业务触发后，向SDB发送IAM消息，IAM消息中主叫\n号码为空号，被叫号码为“被叫智能业务接人码十逻辑号码”;\n⑦SDB收到上述呼叫，主叫为空，不再进行分析变换，只分析被叫号\n码，被叫不是混合放号用户，回送到SSP的REL消息只有改发信息，不\n带改发号码；\n⑧SSP收到REL消息后，前向发送RLC;\n⑨SSP根据被叫物理号码寻址到落地交换局，向交换局发送IAM\n消息，IAM消息中主叫号码为逻辑号码，被叫号码为物理号码；\n⑩落地端回送ACM消息",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "测试过程\t①主叫用户拨打智能用户接入码，交换局将该呼叫IAM消息发送\n到SDB,IAM中主叫号码为物理号码，被叫号码为被叫逻辑号码；\n②SDB进行主叫号码分析和查询，向前端回送ACM,ACM中改发\n号码为主叫的逻辑号码；\n③SDB进行被叫号码分析和查询，发现被叫用户登记了智能业务，\n向前端回送REL,REL消息中改发原因为插号，改发号码为被叫智能\n业务接入码；\n④交换局收到REL消息后，前向发送RLC;\n⑤交换局向SSP局发送IAM消息，IAM中主叫号码为逻辑号码，被\n叫号码为被叫智能业务接人码+被叫逻辑号码；\n⑥SSP完成业务触发后，向SDB发送IAM消息，IAM消息中主叫\n号码为空号，被叫号码为“被叫智能业务接人码十逻辑号码”;\n⑦SDB收到上述呼叫，主叫为空，不再进行分析变换，只分析被叫号\n码，被叫不是混合放号用户，回送到SSP的REL消息只有改发信息，不\n带改发号码；\n⑧SSP收到REL消息后，前向发送RLC;\n⑨SSP根据被叫物理号码寻址到落地交换局，向交换局发送IAM\n消息，IAM消息中主叫号码为逻辑号码，被叫号码为物理号码；\n⑩落地端回送ACM消息",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27183,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

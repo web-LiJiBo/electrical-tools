@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035461",
+  "entities": [
+    {
+      "name": "——第 k 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    2 ——第 k 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示；\n    4 — — 第 k  支火炬系统火炬气中甲烷的平均体积浓度，以百分数(%)表示；\n\n 2 — 二氧化碳与碳的相对分子质量之比；",
+      "type": "语义分解",
+      "subject": "——第 k 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示",
+      "action": "",
+      "operation": "——第 k 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示； 4 — — 第 k 支火炬系统火炬气中甲烷的平均体积浓度，以百分数(%)表示； 2 — 二氧化碳与碳的相对分子质量之比",
+      "condition": "",
+      "constraint": "    2 ——第 k 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示；\n    4 — — 第 k  支火炬系统火炬气中甲烷的平均体积浓度，以百分数(%)表示；\n\n 2 — 二氧化碳与碳的相对分子质量之比；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——第 k 支火炬系统火炬气中二氧化碳的平均体积浓度，以百分数(%)表示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35461,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

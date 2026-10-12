@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044456",
+  "entities": [
+    {
+      "name": "应检测绝缘接头、绝缘法兰和绝缘短管的绝缘性能，以 及雷电与过电压保护器的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1   应检测绝缘接头、绝缘法兰和绝缘短管的绝缘性能，以\n及雷电与过电压保护器的性能。",
+      "type": "语义分解",
+      "subject": "应检测绝缘接头、绝缘法兰和绝缘短管的绝缘性能，以 及雷电与过电压保护器的",
+      "action": "",
+      "operation": "应检测绝缘接头、绝缘法兰和绝缘短管的绝缘性能，以 及雷电与过电压保护器的性能。",
+      "condition": "",
+      "constraint": "6.2.1   应检测绝缘接头、绝缘法兰和绝缘短管的绝缘性能，以\n及雷电与过电压保护器的性能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应检测绝缘接头、绝缘法兰和绝缘短管的绝缘性能，以 及雷电与过电压保护器的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44456,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

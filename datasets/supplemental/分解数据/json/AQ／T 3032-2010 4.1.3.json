@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位安全生产管理人员 安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3032-2010",
+  "version": "2010",
+  "chapter_path": "4.1.3",
+  "entities": [
+    {
+      "name": "安全管理人员培训方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.3 培训工作应坚持理论与实践相结合，采用多种有效的培训方式，加强案例教学；应注重提高安全生产管理人员的职业道德、安全意识、法律知识，加强安全生产基础知识和安全生产管理技能等内容的综合培训。",
+      "type": "语义分解",
+      "subject": "安全管理人员培训方法",
+      "action": "",
+      "operation": "理论实践多方式案例道德意识法律基础管理技能综合培训",
+      "condition": "",
+      "constraint": "4.1.3 培训工作应坚持理论与实践相结合，采用多种有效的培训方式，加强案例教学；应注重提高安全生产管理人员的职业道德、安全意识、法律知识，加强安全生产基础知识和安全生产管理技能等内容的综合培训。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全管理人员培训方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4959,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "7.3.3",
+  "entities": [
+    {
+      "name": "第7.3节技防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3 技术防范除符合6.3的规定外 ,还应符合以下规定: a ) 符合7.2.3  a)的规定; b) 在管道沿线设置卫星定位巡检系统或电子巡查系统; c) 在阀室安装摄像机或入侵探测器 ,视频图像或报警停息上传至企业安防监控中心 =",
+      "type": "语义分解",
+      "subject": "第7.3节技防",
+      "action": "",
+      "operation": "按引用漏测管沿卫星或电子巡查阀室视频或入侵上传中心",
+      "condition": "",
+      "constraint": "7.3.3 技术防范除符合6.3的规定外 ,还应符合以下规定: a ) 符合7.2.3  a)的规定; b) 在管道沿线设置卫星定位巡检系统或电子巡查系统; c) 在阀室安装摄像机或入侵探测器 ,视频图像或报警停息上传至企业安防监控中心 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第7.3节技防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5463,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；需关联上级标题"
+      ]
+    }
+  }
+}

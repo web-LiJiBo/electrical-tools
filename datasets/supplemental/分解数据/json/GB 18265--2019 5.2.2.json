@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "危化商店场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 危险化学品商店的营业场所面积(不含备货库房)应不小于60 m ,危险化学品商店内不应设有生活设施。蒈业场所与备货库房之间 ,以及危险化学品商店与其他场所之间应进行防火分隔_",
+      "type": "语义分解",
+      "subject": "危化商店场所",
+      "action": "",
+      "operation": "营业面积至少六十无生活设施与备货其他场所防火分隔",
+      "condition": "",
+      "constraint": "5.2.2 危险化学品商店的营业场所面积(不含备货库房)应不小于60 m ,危险化学品商店内不应设有生活设施。蒈业场所与备货库房之间 ,以及危险化学品商店与其他场所之间应进行防火分隔_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化商店场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3781,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；面积单位缺平方需复核"
+      ]
+    }
+  }
+}

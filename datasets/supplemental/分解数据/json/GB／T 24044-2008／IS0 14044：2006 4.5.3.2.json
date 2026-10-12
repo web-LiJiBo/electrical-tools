@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.5.3.2",
+  "entities": [
+    {
+      "name": "完整性检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.3.2 完整性检查 完整性检查的目的是确保解释所需的所有相关信息和数据已经获得 ,并且是完整的 _ 如果某些信 息缺失或不完整 ,则应考虑这些信息对满足 LCA 研究目的和范围的必要性。并且应记录这一发现及 其理由  如果某些对于确定重大问题十分必要的信息缺失或不完整,则宜重新检查前面的阶段 (LCI LCIA) , 或对目的和范围加以调整。 如果缺失的信息是不必要的 ,则宜记录相应的理由 -",
+      "type": "语义分解",
+      "subject": "完整性检查",
+      "action": "",
+      "operation": "判断缺失信息必要性必要时重查或调整目的并记录理由",
+      "condition": "",
+      "constraint": "4.5.3.2 完整性检查 完整性检查的目的是确保解释所需的所有相关信息和数据已经获得 ,并且是完整的 _ 如果某些信 息缺失或不完整 ,则应考虑这些信息对满足 LCA 研究目的和范围的必要性。并且应记录这一发现及 其理由  如果某些对于确定重大问题十分必要的信息缺失或不完整,则宜重新检查前面的阶段 (LCI LCIA) , 或对目的和范围加以调整。 如果缺失的信息是不必要的 ,则宜记录相应的理由 -",
+      "constraint_role": "informational",
+      "related_entities": [
+        "完整性检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1136,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

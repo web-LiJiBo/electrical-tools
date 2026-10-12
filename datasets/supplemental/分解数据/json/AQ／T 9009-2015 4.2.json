@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "演练评估依据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 评估依据 主要依据以下内容: a) 有关法律、法规、标准及有关规定和要求; b) 演练活动所涉及的相关应急预案和演练文件; c) 演练单位的相关技术标准、操作规程或管理制度; d) 相关事故应急救援典型案例资料; e) 其他相关材料。",
+      "type": "语义分解",
+      "subject": "演练评估依据",
+      "action": "",
+      "operation": "法规标准预案演练技术规程制度案例及其他材料",
+      "condition": "",
+      "constraint": "4.2 评估依据 主要依据以下内容: a) 有关法律、法规、标准及有关规定和要求; b) 演练活动所涉及的相关应急预案和演练文件; c) 演练单位的相关技术标准、操作规程或管理制度; d) 相关事故应急救援典型案例资料; e) 其他相关材料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "演练评估依据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5369,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

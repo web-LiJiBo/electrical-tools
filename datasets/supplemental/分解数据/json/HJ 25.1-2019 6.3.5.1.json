@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.3.5.1",
+  "entities": [
+    {
+      "name": "地下水监测井建设",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5.1 地下水采样一般应建地下水监测井。监测井的建设过程分为设计。钻孔。过滤管和井管的选择和安装。滤料的选择和装填,以及封闭和固定等。监测井的建设可参照 HJIT 164 中的有关要求。所用的设备和材料应清洗除污,建设结束后需及时进行洗井",
+      "type": "语义分解",
+      "subject": "地下水监测井建设",
+      "action": "",
+      "operation": "设计钻孔选装井管滤料封固参规范设备除污完工及时洗井",
+      "condition": "",
+      "constraint": "6.3.5.1 地下水采样一般应建地下水监测井。监测井的建设过程分为设计。钻孔。过滤管和井管的选择和安装。滤料的选择和装填,以及封闭和固定等。监测井的建设可参照 HJIT 164 中的有关要求。所用的设备和材料应清洗除污,建设结束后需及时进行洗井",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水监测井建设"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2656,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

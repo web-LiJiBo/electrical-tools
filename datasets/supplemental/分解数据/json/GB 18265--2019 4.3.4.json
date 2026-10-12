@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "4.3.4",
+  "entities": [
+    {
+      "name": "可燃有毒气体库房",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4 储存可能散发可燃气体 .有毒气体的危险化学品库房应按 GB 50493 的规定配备相应的气体检测报警装置,并与风机联锁。 报警停号应传至 24 h有人值守的场所 ,并设声光报警器",
+      "type": "语义分解",
+      "subject": "可燃有毒气体库房",
+      "action": "",
+      "operation": "配检测报警风机联锁信号至全天值守点声光报警",
+      "condition": "",
+      "constraint": "4.3.4 储存可能散发可燃气体 .有毒气体的危险化学品库房应按 GB 50493 的规定配备相应的气体检测报警装置,并与风机联锁。 报警停号应传至 24 h有人值守的场所 ,并设声光报警器",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可燃有毒气体库房"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3770,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；报警停号文字异常"
+      ]
+    }
+  }
+}

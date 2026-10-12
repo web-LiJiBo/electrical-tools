@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.3.10",
+  "entities": [
+    {
+      "name": "可能时，应最大限度地减少道路穿越河流、溪流(包括间歇性溪流)、湖泊及湿地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.10     可能时，应最大限度地减少道路穿越河流、溪流(包括间歇性溪流)、湖泊及湿地的数量。\n综合考虑桥梁、排水管道以及其他的交叉排水设施，确保道路排水自然畅通。交叉点设计和施工时，\n还应考虑不同的洪水水位情况。",
+      "type": "语义分解",
+      "subject": "可能时，应最大限度地减少道路穿越河流、溪流(包括间歇性溪流)、湖泊及湿地",
+      "action": "",
+      "operation": "可能时，应最大限度地减少道路穿越河流、溪流(包括间歇性溪流)、湖泊及湿地的数量。 综合考虑桥梁、排水管道以及其他的交叉排水设施，确保道路排水自然畅通。交叉点设计和施工时， 还应考虑不同的洪水水位情况。",
+      "condition": "",
+      "constraint": "4.3.10     可能时，应最大限度地减少道路穿越河流、溪流(包括间歇性溪流)、湖泊及湿地的数量。\n综合考虑桥梁、排水管道以及其他的交叉排水设施，确保道路排水自然畅通。交叉点设计和施工时，\n还应考虑不同的洪水水位情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可能时，应最大限度地减少道路穿越河流、溪流(包括间歇性溪流)、湖泊及湿地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41092,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "海洋石油设施热工(动火)作业安全规程",
+  "standard_id": "SY 6303-2016",
+  "version": "2016",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "动火措施确认",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 热工(动火)作业实行安全措施确认制度。热工(动火)前,安全监督(护)人,热工(动火)作业人员及有关人员对热工(动火)措施进行逐项落实,确认无误后方可热工(动火)作业。热工(动火)作业现场条件发生变化或中途停工1h(含)以上,应再次对现场安全措施进行逐项确认。",
+      "type": "语义分解",
+      "subject": "动火措施确认",
+      "action": "",
+      "operation": "前全员逐项确认变化或停工至少一小时再次逐项确认",
+      "condition": "",
+      "constraint": "7.1 热工(动火)作业实行安全措施确认制度。热工(动火)前,安全监督(护)人,热工(动火)作业人员及有关人员对热工(动火)措施进行逐项落实,确认无误后方可热工(动火)作业。热工(动火)作业现场条件发生变化或中途停工1h(含)以上,应再次对现场安全措施进行逐项确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火措施确认"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7315,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

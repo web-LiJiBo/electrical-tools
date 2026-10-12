@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.2.5",
+  "entities": [
+    {
+      "name": "地下水监测其他要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5 地下水监测点位布设方法其他要求按照 HIJ 164-2020的第4章执行。 注: 如果不具备地下水监测条件, 如: 无明显的潜水含水层。地下水埋深较深等情况,可以不设地下水监测井。",
+      "type": "语义分解",
+      "subject": "地下水监测其他要求",
+      "action": "",
+      "operation": "按引用标准无条件可不设井",
+      "condition": "",
+      "constraint": "7.2.5 地下水监测点位布设方法其他要求按照 HIJ 164-2020的第4章执行。 注: 如果不具备地下水监测条件, 如: 无明显的潜水含水层。地下水埋深较深等情况,可以不设地下水监测井。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水监测其他要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 449,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用编号识别异常"
+      ]
+    }
+  }
+}

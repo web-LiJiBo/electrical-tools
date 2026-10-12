@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034602",
+  "entities": [
+    {
+      "name": "如果制造厂商的建议能给出 GB/T18345 . 1 中所详述的可接受性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      如果制造厂商的建议能给出 GB/T18345 . 1  中所详述的可接受性能 , 通常所有系统应根据该建议\n进行维护。",
+      "type": "语义分解",
+      "subject": "如果制造厂商的建议能给出 GB/T18345 . 1 中所详述的可接受性",
+      "action": "",
+      "operation": "如果制造厂商的建议能给出 GB/T18345 . 1 中所详述的可接受性能 , 通常所有系统应根据该建议 进行维护。",
+      "condition": "",
+      "constraint": "      如果制造厂商的建议能给出 GB/T18345 . 1  中所详述的可接受性能 , 通常所有系统应根据该建议\n进行维护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "如果制造厂商的建议能给出 GB/T18345 . 1 中所详述的可接受性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34602,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

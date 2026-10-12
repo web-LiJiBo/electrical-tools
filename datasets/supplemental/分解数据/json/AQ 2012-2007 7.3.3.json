@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.3.3",
+  "entities": [
+    {
+      "name": "埋地输油管道保温",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3 埋地输油管道需要加保温层时 ,在钢管的表面应涂敷良好的防腐绝缘层,在保温层外应有良好的防水层。",
+      "type": "语义分解",
+      "subject": "埋地输油管道保温",
+      "action": "",
+      "operation": "钢表面防腐绝缘外保温层防水",
+      "condition": "埋地输油管道需要加保温层时",
+      "constraint": "7.3.3 埋地输油管道需要加保温层时 ,在钢管的表面应涂敷良好的防腐绝缘层,在保温层外应有良好的防水层。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "埋地输油管道保温"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4817,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

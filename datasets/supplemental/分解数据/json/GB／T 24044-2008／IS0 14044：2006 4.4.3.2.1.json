@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.3.2.1",
+  "entities": [
+    {
+      "name": "归一化结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.3.2.1 归一化是根据基准信息对类型参数结果的大小进行计算。归一化的目的是更好的认识所 研究的产品系统中每一个参数结果的相对大小 = 它是一个可选要素 ,它有助于: 检查不一致性; 提供和交流关于参数结果相对重要性的信息; 一为其他阶段例如分组 .加权 .生命周期解释等做淮备。",
+      "type": "语义分解",
+      "subject": "归一化结果",
+      "action": "",
+      "operation": "按基准表达相对大小支持一致性检查交流和后续分析",
+      "condition": "",
+      "constraint": "4.4.3.2.1 归一化是根据基准信息对类型参数结果的大小进行计算。归一化的目的是更好的认识所 研究的产品系统中每一个参数结果的相对大小 = 它是一个可选要素 ,它有助于: 检查不一致性; 提供和交流关于参数结果相对重要性的信息; 一为其他阶段例如分组 .加权 .生命周期解释等做淮备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "归一化结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1115,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

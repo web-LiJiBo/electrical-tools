@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.1.2.1",
+  "entities": [
+    {
+      "name": "营地选址",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.1 营地选址原则 ,应符合下列要求: 营区干净整洁 ,美观,卫生 ,规划布局合理; 地势开阔平坦 ,考虑洪水,泥石流,滑坡 ,雷击等自然灾害的影响; 交通便利 ,车辆进出方便; 远离噪声源 ,易燃易爆场所和高压线路; 考虑临时器材库,临时加油点,发电站设置的安全与便利; 尽量减少对地表和植被的破坏; 各种场所配置足够的消防器材; 远离野生动物活动区。",
+      "type": "语义分解",
+      "subject": "营地选址",
+      "action": "",
+      "operation": "合理卫生布局考虑自然灾害交通远离噪声火爆高压野生动物减少植被破坏配消防",
+      "condition": "",
+      "constraint": "5.1.2.1 营地选址原则 ,应符合下列要求: 营区干净整洁 ,美观,卫生 ,规划布局合理; 地势开阔平坦 ,考虑洪水,泥石流,滑坡 ,雷击等自然灾害的影响; 交通便利 ,车辆进出方便; 远离噪声源 ,易燃易爆场所和高压线路; 考虑临时器材库,临时加油点,发电站设置的安全与便利; 尽量减少对地表和植被的破坏; 各种场所配置足够的消防器材; 远离野生动物活动区。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "营地选址"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4254,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

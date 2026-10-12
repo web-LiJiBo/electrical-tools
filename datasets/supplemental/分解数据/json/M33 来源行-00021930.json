@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021930",
+  "entities": [
+    {
+      "name": "ITU-T G.784介绍用于维护含有再生器的 SDH网络的DCC的用法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     ITU-T G.784介绍用于维护含有再生器的 SDH网络的DCC的用法，本附录给出一个用F1字节识\n别再生段链路中失效段的例子，推荐降低再生器的成本方法，如图B.1所示。当一个再生器在其段内检\n出失效时，就将其再生器编号及其失效状态插入F1 字节，如图B.2 所示。",
+      "type": "语义分解",
+      "subject": "ITU-T G.784介绍用于维护含有再生器的 SDH网络的DCC的用法",
+      "action": "",
+      "operation": "ITU-T G.784介绍用于维护含有再生器的 SDH网络的DCC的用法，本附录给出一个用F1字节识 别再生段链路中失效段的例子，推荐降低再生器的成本方法，如图B.1所示。当一个再生器在其段内检 出失效时，就将其再生器编号及其失效状态插入F1 字节，如图B.2 所示。",
+      "condition": "",
+      "constraint": "     ITU-T G.784介绍用于维护含有再生器的 SDH网络的DCC的用法，本附录给出一个用F1字节识\n别再生段链路中失效段的例子，推荐降低再生器的成本方法，如图B.1所示。当一个再生器在其段内检\n出失效时，就将其再生器编号及其失效状态插入F1 字节，如图B.2 所示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ITU-T G.784介绍用于维护含有再生器的 SDH网络的DCC的用法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21930,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

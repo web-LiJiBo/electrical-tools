@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "7.3.4",
+  "entities": [
+    {
+      "name": "VOC废料包装",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.4  工艺过程产生的含 VOCs 废料(渣、液)应按照第5章、第6章的要求进行储存、转移和输送。\n盛装过VOCs 物料的废包装容器应加盖密闭。",
+      "type": "语义分解",
+      "subject": "VOC废料包装",
+      "action": "",
+      "operation": "按第5及6章储转输废包装密盖",
+      "condition": "",
+      "constraint": "7.3.4  工艺过程产生的含 VOCs 废料(渣、液)应按照第5章、第6章的要求进行储存、转移和输送。\n盛装过VOCs 物料的废包装容器应加盖密闭。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VOC废料包装"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33368,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

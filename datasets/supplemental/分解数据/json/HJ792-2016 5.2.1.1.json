@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.2.1.1",
+  "entities": [
+    {
+      "name": "化学合成制药勘查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.1 化学合成类制药生产工艺 a) 化学合成: 调查原料类型、贮运及用量; 储罐、贮存场的占地面积,无组织排放情况; 主要成分制备生产工艺、各反应过程用料名称及用量, 工艺废水、工艺废气、噪声的产生及处理方式、无组织排放源; 废渣产生量及处置方式; 母液回用情况等。 b) 粗品精制: 调查滤液、洗涤废水产生及处理方式; 干燥、离心过程无组织排放源; 废吸附剂、废活性炭等固废产生及处理方式; 酸、碱、有机溶剂回收利用, 母液回用情况等。",
+      "type": "语义分解",
+      "subject": "化学合成制药勘查",
+      "action": "",
+      "operation": "查原料合成精制产污处理溶剂酸碱回收母液回用",
+      "condition": "",
+      "constraint": "5.2.1.1 化学合成类制药生产工艺 a) 化学合成: 调查原料类型、贮运及用量; 储罐、贮存场的占地面积,无组织排放情况; 主要成分制备生产工艺、各反应过程用料名称及用量, 工艺废水、工艺废气、噪声的产生及处理方式、无组织排放源; 废渣产生量及处置方式; 母液回用情况等。 b) 粗品精制: 调查滤液、洗涤废水产生及处理方式; 干燥、离心过程无组织排放源; 废吸附剂、废活性炭等固废产生及处理方式; 酸、碱、有机溶剂回收利用, 母液回用情况等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化学合成制药勘查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2714,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

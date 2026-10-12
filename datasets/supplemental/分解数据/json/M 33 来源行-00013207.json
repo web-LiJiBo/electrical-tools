@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013207",
+  "entities": [
+    {
+      "name": "在此假设下，该ESR对应的是最小误码率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在此假设下，该ESR对应的是最小误码率。在误码率比较小且随机分布情况下，该公式可以比较准\n\n确地反映实际的误码率，误码率越小越逼近于真实值。但需要注意的是，当网络中出现突发性误码(如\n出现SES)  时，该公式换算的结果就不准确了。",
+      "type": "语义分解",
+      "subject": "在此假设下，该ESR对应的是最小误码率",
+      "action": "",
+      "operation": "在此假设下，该ESR对应的是最小误码率。在误码率比较小且随机分布情况下，该公式可以比较准 确地反映实际的误码率，误码率越小越逼近于真实值。但需要注意的是，当网络中出现突发性误码(如 出现SES) 时，该公式换算的结果就不准确了。",
+      "condition": "",
+      "constraint": "   在此假设下，该ESR对应的是最小误码率。在误码率比较小且随机分布情况下，该公式可以比较准\n\n确地反映实际的误码率，误码率越小越逼近于真实值。但需要注意的是，当网络中出现突发性误码(如\n出现SES)  时，该公式换算的结果就不准确了。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在此假设下，该ESR对应的是最小误码率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13207,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

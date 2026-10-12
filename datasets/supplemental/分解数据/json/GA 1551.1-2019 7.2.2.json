@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "安防监控中心门",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 设有安防监控中心的 ,应安装防盗安全门。",
+      "type": "语义分解",
+      "subject": "安防监控中心门",
+      "action": "",
+      "operation": "安装防盗安全门",
+      "condition": "",
+      "constraint": "7.2.2 设有安防监控中心的 ,应安装防盗安全门。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防监控中心门"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5529,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

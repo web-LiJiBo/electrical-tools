@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "10.4",
+  "entities": [
+    {
+      "name": "管道联防联动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.4 企业和地方应加强联防联动机制建设,共同维护管道安全运行。",
+      "type": "语义分解",
+      "subject": "管道联防联动",
+      "action": "",
+      "operation": "企业地方共建机制维护安全运行",
+      "condition": "",
+      "constraint": "10.4 企业和地方应加强联防联动机制建设,共同维护管道安全运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道联防联动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5496,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

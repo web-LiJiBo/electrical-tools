@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "2.0.9",
+  "entities": [
+    {
+      "name": "高压直流接地极干扰 HVDC earth electrode",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.9   高压直流接地极干扰   HVDC earth electrode",
+      "type": "语义分解",
+      "subject": "高压直流接地极干扰 HVDC earth electrode",
+      "action": "",
+      "operation": "高压直流接地极干扰 HVDC earth electrode",
+      "condition": "",
+      "constraint": "2.0.9   高压直流接地极干扰   HVDC earth electrode",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高压直流接地极干扰 HVDC earth electrode"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47363,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

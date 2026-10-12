@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.5.4",
+  "entities": [
+    {
+      "name": "系统设备互联",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.4 对设备或系统进行互联时，应采用适宜的接口方法和通信协议，保证信息的有效提取和及时送达。",
+      "type": "语义分解",
+      "subject": "系统设备互联",
+      "action": "",
+      "operation": "适宜接口协议保证有效及时传输",
+      "condition": "对设备或系统进行互联时",
+      "constraint": "6.5.4 对设备或系统进行互联时，应采用适宜的接口方法和通信协议，保证信息的有效提取和及时送达。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统设备互联"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6986,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.4.4",
+  "entities": [
+    {
+      "name": "箱式SPD线缆端子",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.4.4         使用箱式 SPD  时 ，引接线和接地线长度均应小于1 .5m。\n9.4.5   各 类SPD  的接线端子应采用与接地线截面积相适应的\n铜材料制造。",
+      "type": "语义分解",
+      "subject": "箱式SPD线缆端子",
+      "action": "",
+      "operation": "引接接地均小于1.5米各SPD端子铜材匹配接地截面",
+      "condition": "",
+      "constraint": "9.4.4         使用箱式 SPD  时 ，引接线和接地线长度均应小于1 .5m。\n9.4.5   各 类SPD  的接线端子应采用与接地线截面积相适应的\n铜材料制造。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "箱式SPD线缆端子"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22962,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含9.4.4及9.4.5"
+      ]
+    }
+  }
+}

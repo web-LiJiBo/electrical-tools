@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036702",
+  "entities": [
+    {
+      "name": "a) 若检测到泄漏后，在不关闭工艺单元的条件下，在15日内进行修复技术上",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)     若检测到泄漏后，在不关闭工艺单元的条件下，在15日内进行修复技术上不可行；\nb)     立即修复存在安全风险；",
+      "type": "语义分解",
+      "subject": "a) 若检测到泄漏后，在不关闭工艺单元的条件下，在15日内进行修复技术上",
+      "action": "",
+      "operation": "a) 若检测到泄漏后，在不关闭工艺单元的条件下，在15日内进行修复技术上不可行； b) 立即修复存在安全风险",
+      "condition": "",
+      "constraint": "a)     若检测到泄漏后，在不关闭工艺单元的条件下，在15日内进行修复技术上不可行；\nb)     立即修复存在安全风险；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 若检测到泄漏后，在不关闭工艺单元的条件下，在15日内进行修复技术上"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36702,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

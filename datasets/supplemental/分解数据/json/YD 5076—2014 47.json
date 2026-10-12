@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "47",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "47\t16.0.1\t机房设计应符合有关政\n 策和YD/T 5003—2005\n《电信专用房屋设计规\n范》等相关规范的有关\n规定\t 修改为：机房设计应\n 符合YD/T 5003《通\n 信建筑工程设计规\n 范》和YD 5184《通\n 信局(站)节能设计\n 规范》的规定\t增加了机房设计\n应符合“YD 5184\n 《通信局(站)节\n能设计规范》”的\n规定",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "47\t16.0.1\t机房设计应符合有关政\n 策和YD/T 5003—2005\n《电信专用房屋设计规\n范》等相关规范的有关\n规定\t 修改为：机房设计应\n 符合YD/T 5003《通\n 信建筑工程设计规\n 范》和YD 5184《通\n 信局(站)节能设计\n 规范》的规定\t增加了机房设计\n应符合“YD 5184\n 《通信局(站)节\n能设计规范》”的\n规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26520,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

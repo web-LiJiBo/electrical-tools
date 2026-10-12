@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036482",
+  "entities": [
+    {
+      "name": "发现泄漏后，在规定时限内，首次采取有效方法消除泄漏的维修作业(如压紧阀门",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   发现泄漏后，在规定时限内，首次采取有效方法消除泄漏的维修作业(如压紧阀门填料压盖、调整\n法兰螺栓等不需要更换密封部件的方法)。",
+      "type": "语义分解",
+      "subject": "发现泄漏后，在规定时限内，首次采取有效方法消除泄漏的维修作业(如压紧阀门",
+      "action": "",
+      "operation": "发现泄漏后，在规定时限内，首次采取有效方法消除泄漏的维修作业(如压紧阀门填料压盖、调整 法兰螺栓等不需要更换密封部件的方法)。",
+      "condition": "",
+      "constraint": "   发现泄漏后，在规定时限内，首次采取有效方法消除泄漏的维修作业(如压紧阀门填料压盖、调整\n法兰螺栓等不需要更换密封部件的方法)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "发现泄漏后，在规定时限内，首次采取有效方法消除泄漏的维修作业(如压紧阀门"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36482,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

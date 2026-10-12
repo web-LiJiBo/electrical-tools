@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028991",
+  "entities": [
+    {
+      "name": "采取正确的救助方式，迅速将中毒病人移至空气新鲜处，对救出人员进行登记、标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2    采取正确的救助方式，迅速将中毒病人移至空气新鲜处，对救出人员进行登记、标识。\n7.3.3   脱去被污染衣服，松开衣领，保持呼吸道通畅，注意保暖，使用特效药物对症治疗。当出现大\n批中毒病人，应首先进行现场检伤分类，优先处理重症病人。",
+      "type": "语义分解",
+      "subject": "采取正确的救助方式，迅速将中毒病人移至空气新鲜处，对救出人员进行登记、标",
+      "action": "",
+      "operation": "采取正确的救助方式，迅速将中毒病人移至空气新鲜处，对救出人员进行登记、标识。 7.3.3 脱去被污染衣服，松开衣领，保持呼吸道通畅，注意保暖，使用特效药物对症治疗。当出现大 批中毒病人，应首先进行现场检伤分类，优先处理重症病人。",
+      "condition": "",
+      "constraint": "7.3.2    采取正确的救助方式，迅速将中毒病人移至空气新鲜处，对救出人员进行登记、标识。\n7.3.3   脱去被污染衣服，松开衣领，保持呼吸道通畅，注意保暖，使用特效药物对症治疗。当出现大\n批中毒病人，应首先进行现场检伤分类，优先处理重症病人。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采取正确的救助方式，迅速将中毒病人移至空气新鲜处，对救出人员进行登记、标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28991,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.13.5",
+  "entities": [
+    {
+      "name": "作业监护人及作业人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.13.5 作业许可监护人 .作业人应经过相关培训 .熟悉作业许可管理制度 .作业风险及管控措施 .审批 步骤和工作要求",
+      "type": "语义分解",
+      "subject": "作业监护人及作业人",
+      "action": "",
+      "operation": "培训熟悉制度风险措施审批要求",
+      "condition": "",
+      "constraint": "4.13.5 作业许可监护人 .作业人应经过相关培训 .熟悉作业许可管理制度 .作业风险及管控措施 .审批 步骤和工作要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业监护人及作业人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5239,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

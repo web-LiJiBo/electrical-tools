@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "许可规范性核查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 规范性 依据相关法律法规,污染物排放标准,排污许可证申请与核发技术规范 自行监测技术指南等要求, 段勰;s# 排放标准。计算方法和结果及提出的管理要求等是否合规。",
+      "type": "语义分解",
+      "subject": "许可规范性核查",
+      "action": "",
+      "operation": "依据法律排放标准技术规范核排放标准计算管理要求合规",
+      "condition": "",
+      "constraint": "4.2.2 规范性 依据相关法律法规,污染物排放标准,排污许可证申请与核发技术规范 自行监测技术指南等要求, 段勰;s# 排放标准。计算方法和结果及提出的管理要求等是否合规。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可规范性核查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1969,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；中间正文乱码需原件复核"
+      ]
+    }
+  }
+}

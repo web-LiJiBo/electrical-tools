@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "4.4.4.1",
+  "entities": [
+    {
+      "name": "大气风险预测等级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4.1 大气环境风险预测。一级评价需选取最不利气象条件和事故发生地的最常见气象条件,选择适用的数值方法进行分析预测,给出风险事故情形下危险物质释放可能造成的大气环境影响范围与程度。对于存在极高大气环境风险的项目, 应进一步开展关心点概率分析。二级评价需选取最不利气象条件,选择适用的数值方法进行分析预测,给出风险事故情形下危险物质释放可能造成的大气环境影响范围与程度。三级评价应定性分析说明大气环境影响后果。",
+      "type": "语义分解",
+      "subject": "大气风险预测等级",
+      "action": "",
+      "operation": "一级最不利及常见气象数值预测极高风险概率分析二级最不利三级定性",
+      "condition": "",
+      "constraint": "4.4.4.1 大气环境风险预测。一级评价需选取最不利气象条件和事故发生地的最常见气象条件,选择适用的数值方法进行分析预测,给出风险事故情形下危险物质释放可能造成的大气环境影响范围与程度。对于存在极高大气环境风险的项目, 应进一步开展关心点概率分析。二级评价需选取最不利气象条件,选择适用的数值方法进行分析预测,给出风险事故情形下危险物质释放可能造成的大气环境影响范围与程度。三级评价应定性分析说明大气环境影响后果。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气风险预测等级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2449,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

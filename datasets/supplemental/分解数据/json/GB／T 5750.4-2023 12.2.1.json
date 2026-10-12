@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.2.1",
+  "entities": [
+    {
+      "name": "挥发酚检测方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.1 最低检测质量浓度 本方法最低检测质量浓度为2.0 μg/L挥发酚类(以苯酚计)。本方法仅用于生活饮用水中挥发酚类的测定。",
+      "type": "语义分解",
+      "subject": "挥发酚检测方法",
+      "action": "",
+      "operation": "限定饮用水适用范围及检测下限",
+      "condition": "",
+      "constraint": "12.2.1 最低检测质量浓度 本方法最低检测质量浓度为2.0 μg/L挥发酚类(以苯酚计)。本方法仅用于生活饮用水中挥发酚类的测定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发酚检测方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1471,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

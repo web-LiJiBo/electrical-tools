@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "内腐蚀和外腐蚀并存的ICDA子管段，应分别进行内腐 蚀和外腐蚀的评价，I",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 内腐蚀和外腐蚀并存的ICDA子管段，应分别进行内腐\n蚀和外腐蚀的评价，ICDA 子管段的剩余强度应根据内腐蚀和外\n腐蚀评价结果的综合分析确定，最终评价结果应根据剩余强度\n最小值或最严重评价级别确定。",
+      "type": "语义分解",
+      "subject": "内腐蚀和外腐蚀并存的ICDA子管段，应分别进行内腐 蚀和外腐蚀的评价，I",
+      "action": "",
+      "operation": "内腐蚀和外腐蚀并存的ICDA子管段，应分别进行内腐 蚀和外腐蚀的评价，ICDA 子管段的剩余强度应根据内腐蚀和外 腐蚀评价结果的综合分析确定，最终评价结果应根据剩余强度 最小值或最严重评价级别确定。",
+      "condition": "",
+      "constraint": "6.3.3 内腐蚀和外腐蚀并存的ICDA子管段，应分别进行内腐\n蚀和外腐蚀的评价，ICDA 子管段的剩余强度应根据内腐蚀和外\n腐蚀评价结果的综合分析确定，最终评价结果应根据剩余强度\n最小值或最严重评价级别确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "内腐蚀和外腐蚀并存的ICDA子管段，应分别进行内腐 蚀和外腐蚀的评价，I"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46110,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

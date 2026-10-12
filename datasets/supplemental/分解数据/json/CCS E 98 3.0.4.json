@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "3.0.4",
+  "entities": [
+    {
+      "name": "埋地钢质管道交流腐蚀评价工作应由专业人员承担",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.4   埋地钢质管道交流腐蚀评价工作应由专业人员承担。\n3.0.5    开展管道交流腐蚀监检测前，应事先识别过程中各种安\n全风险因素，并采取适当安全措施。",
+      "type": "语义分解",
+      "subject": "埋地钢质管道交流腐蚀评价工作应由专业人员承担",
+      "action": "",
+      "operation": "埋地钢质管道交流腐蚀评价工作应由专业人员承担。 3.0.5 开展管道交流腐蚀监检测前，应事先识别过程中各种安 全风险因素，并采取适当安全措施。",
+      "condition": "",
+      "constraint": "3.0.4   埋地钢质管道交流腐蚀评价工作应由专业人员承担。\n3.0.5    开展管道交流腐蚀监检测前，应事先识别过程中各种安\n全风险因素，并采取适当安全措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "埋地钢质管道交流腐蚀评价工作应由专业人员承担"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48744,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

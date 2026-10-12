@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047732",
+  "entities": [
+    {
+      "name": "极化试片宜埋设在管道中心线以下，且与管道外壁的间 距为0.1m～0.3m",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1 极化试片宜埋设在管道中心线以下，且与管道外壁的间\n距为0.1m～0.3m,    裸露面应背对管道埋设，如图C.6.5 所示。",
+      "type": "语义分解",
+      "subject": "极化试片宜埋设在管道中心线以下，且与管道外壁的间 距为0.1m～0.3m",
+      "action": "",
+      "operation": "极化试片宜埋设在管道中心线以下，且与管道外壁的间 距为0.1m～0.3m, 裸露面应背对管道埋设，如图C.6.5 所示。",
+      "condition": "",
+      "constraint": "   1 极化试片宜埋设在管道中心线以下，且与管道外壁的间\n距为0.1m～0.3m,    裸露面应背对管道埋设，如图C.6.5 所示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "极化试片宜埋设在管道中心线以下，且与管道外壁的间 距为0.1m～0.3m"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47732,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

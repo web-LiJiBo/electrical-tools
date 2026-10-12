@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028943",
+  "entities": [
+    {
+      "name": "c) 统一标志，维护现场秩序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  c)  统一标志，维护现场秩序。现场指挥部应悬挂或喷写醒目的标志；现场总指挥和其他人员应\n   佩戴相应标识；对救援人员和车辆发放专用通行证。\n  d)  应根据救援过程实际，对救援力量进行相应调整。",
+      "type": "语义分解",
+      "subject": "c) 统一标志，维护现场秩序",
+      "action": "",
+      "operation": "c) 统一标志，维护现场秩序。现场指挥部应悬挂或喷写醒目的标志；现场总指挥和其他人员应 佩戴相应标识；对救援人员和车辆发放专用通行证。 d) 应根据救援过程实际，对救援力量进行相应调整。",
+      "condition": "",
+      "constraint": "  c)  统一标志，维护现场秩序。现场指挥部应悬挂或喷写醒目的标志；现场总指挥和其他人员应\n   佩戴相应标识；对救援人员和车辆发放专用通行证。\n  d)  应根据救援过程实际，对救援力量进行相应调整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 统一标志，维护现场秩序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28943,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

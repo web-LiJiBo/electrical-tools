@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.5.2",
+  "entities": [
+    {
+      "name": "测井检测仪器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.5.2 测井队应配备的检测仪器: 测井队应配备便携式放射性剂量监测仪 ,定期检查并记录; 从事放射性的测井人员每人应配备个人放射性剂量计 ,定期检查并记录; 在可能含有硫化氢等有毒有害气体井作业时 ,测井队应配备一台便携式硫化氢气体监测报警仪。定期检查并记录。",
+      "type": "语义分解",
+      "subject": "测井检测仪器",
+      "action": "",
+      "operation": "便携剂量监测个人剂量计可能含硫配便携气体报警仪定期检查记录",
+      "condition": "",
+      "constraint": "5.4.2.5.2 测井队应配备的检测仪器: 测井队应配备便携式放射性剂量监测仪 ,定期检查并记录; 从事放射性的测井人员每人应配备个人放射性剂量计 ,定期检查并记录; 在可能含有硫化氢等有毒有害气体井作业时 ,测井队应配备一台便携式硫化氢气体监测报警仪。定期检查并记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测井检测仪器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4405,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

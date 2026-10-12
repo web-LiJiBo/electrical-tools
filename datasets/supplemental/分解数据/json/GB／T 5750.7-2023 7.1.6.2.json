@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.1.6.2",
+  "entities": [
+    {
+      "name": "总有机碳直接曲线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.6.2 标谁曲线绘制:吸取1.00 mL, 2.00 ML, 5.00 ml, 10.00 mL 和 25.00 ml 邻苯二甲酸氢钾标谁储备溶液[0(有机碳 ,C)=1 000 mg/I ]分别移人 100 ml 容量瓶内 ,加纯水至刻度,摇匀。 按仪器制造厂家说明书测定各标准溶液和空甘样= 以总有机碳的质量浓度 (n8/)对仪器的响应值绘制校准曲线= 得到的斜率为校准系数 f(mg/L ) _",
+      "type": "语义分解",
+      "subject": "总有机碳直接曲线",
+      "action": "",
+      "operation": "五个体积标准定容按说明书测标准空白建立响应浓度曲线",
+      "condition": "",
+      "constraint": "7.1.6.2 标谁曲线绘制:吸取1.00 mL, 2.00 ML, 5.00 ml, 10.00 mL 和 25.00 ml 邻苯二甲酸氢钾标谁储备溶液[0(有机碳 ,C)=1 000 mg/I ]分别移人 100 ml 容量瓶内 ,加纯水至刻度,摇匀。 按仪器制造厂家说明书测定各标准溶液和空甘样= 以总有机碳的质量浓度 (n8/)对仪器的响应值绘制校准曲线= 得到的斜率为校准系数 f(mg/L ) _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总有机碳直接曲线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1902,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；校准系数与斜率描述需核算方向且字符异常"
+      ]
+    }
+  }
+}

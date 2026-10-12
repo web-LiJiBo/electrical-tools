@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040272",
+  "entities": [
+    {
+      "name": "企业设置的环境保护监测站应与主体工程同时设计、同时 施工、同时投产使用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.3      企业设置的环境保护监测站应与主体工程同时设计、同时\n施工、同时投产使用。",
+      "type": "语义分解",
+      "subject": "企业设置的环境保护监测站应与主体工程同时设计、同时 施工、同时投产使用",
+      "action": "",
+      "operation": "企业设置的环境保护监测站应与主体工程同时设计、同时 施工、同时投产使用。",
+      "condition": "",
+      "constraint": "9.0.3      企业设置的环境保护监测站应与主体工程同时设计、同时\n施工、同时投产使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "企业设置的环境保护监测站应与主体工程同时设计、同时 施工、同时投产使用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40272,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

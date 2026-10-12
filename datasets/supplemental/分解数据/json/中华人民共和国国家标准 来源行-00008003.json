@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008003",
+  "entities": [
+    {
+      "name": "中心频率测试，应在DWDM 系统 S",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.4  中心频率测试，应在DWDM 系统 S。点用多波长计或光\n谱分析仪测试，结果应符合表4.6.4-1的规定。 CWDM 系统在相\n应的系统接口点测试，结果应符合表4.6.4-2的规定。",
+      "type": "语义分解",
+      "subject": "中心频率测试，应在DWDM 系统 S",
+      "action": "",
+      "operation": "中心频率测试，应在DWDM 系统 S。点用多波长计或光 谱分析仪测试，结果应符合表4.6.4-1的规定。 CWDM 系统在相 应的系统接口点测试，结果应符合表4.6.4-2的规定。",
+      "condition": "",
+      "constraint": "4.6.4  中心频率测试，应在DWDM 系统 S。点用多波长计或光\n谱分析仪测试，结果应符合表4.6.4-1的规定。 CWDM 系统在相\n应的系统接口点测试，结果应符合表4.6.4-2的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "中心频率测试，应在DWDM 系统 S"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8003,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

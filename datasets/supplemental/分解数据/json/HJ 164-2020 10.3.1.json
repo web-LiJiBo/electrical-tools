@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "10.3.1",
+  "entities": [
+    {
+      "name": "实验室空白样品",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.1 实验室空白样品 每批水样分析时,应同时测定实验室空白样品,当空白值明显偏高时,应仔细检查原因,以消除空白值偏高的因素;并重新分析",
+      "type": "语义分解",
+      "subject": "实验室空白样品",
+      "action": "",
+      "operation": "每批测定并对偏高原因排查重分析",
+      "condition": "当空白值明显偏高时",
+      "constraint": "10.3.1 实验室空白样品 每批水样分析时,应同时测定实验室空白样品,当空白值明显偏高时,应仔细检查原因,以消除空白值偏高的因素;并重新分析",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实验室空白样品"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2179,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

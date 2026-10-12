@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团节约能源管理规定",
+  "standard_id": "国家管网办[2022]284号",
+  "version": "",
+  "chapter_path": "来源行-00000092",
+  "entities": [
+    {
+      "name": "第十条 [数字化部] 负责能耗数据数字化建设指导",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十条 [数字化部] 负责能耗数据数字化建设指导。",
+      "type": "语义分解",
+      "subject": "第十条 [数字化部] 负责能耗数据数字化建设指导",
+      "action": "",
+      "operation": "仅保留标题或术语；具体要求须结合相邻正文",
+      "condition": "",
+      "constraint": "第十条 [数字化部] 负责能耗数据数字化建设指导。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十条 [数字化部] 负责能耗数据数字化建设指导"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 92,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似标题或术语，不能单独作为判定依据"
+      ]
+    }
+  }
+}

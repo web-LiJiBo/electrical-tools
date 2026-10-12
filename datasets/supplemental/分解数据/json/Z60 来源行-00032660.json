@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032660",
+  "entities": [
+    {
+      "name": "HJ 38 固定污染源废气 总烃、甲烷和非甲烷总烃的测定 气相色谱法 H",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "HJ 38   固定污染源废气 总烃、甲烷和非甲烷总烃的测定 气相色谱法\nHJ/T 55   大气污染物无组织排放监测技术导则\nHJ/T397    固定源废气监测技术规范",
+      "type": "语义分解",
+      "subject": "HJ 38 固定污染源废气 总烃、甲烷和非甲烷总烃的测定 气相色谱法 H",
+      "action": "",
+      "operation": "HJ 38 固定污染源废气 总烃、甲烷和非甲烷总烃的测定 气相色谱法 HJ/T 55 大气污染物无组织排放监测技术导则 HJ/T397 固定源废气监测技术规范",
+      "condition": "",
+      "constraint": "HJ 38   固定污染源废气 总烃、甲烷和非甲烷总烃的测定 气相色谱法\nHJ/T 55   大气污染物无组织排放监测技术导则\nHJ/T397    固定源废气监测技术规范",
+      "constraint_role": "informational",
+      "related_entities": [
+        "HJ 38 固定污染源废气 总烃、甲烷和非甲烷总烃的测定 气相色谱法 H"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32660,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

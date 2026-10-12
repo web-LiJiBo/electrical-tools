@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.5.2.2",
+  "entities": [
+    {
+      "name": "连续监督专业人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.2.2 专业人员 专业人员应熟悉连续监督方案及需要的任何报告或分析功能，包括适用于特定设备的连续监督方 法并考虑安装条件及其可能发生的任何娈化。",
+      "type": "语义分解",
+      "subject": "连续监督专业人员",
+      "action": "",
+      "operation": "熟悉方案报告分析及安装条件变化",
+      "condition": "",
+      "constraint": "5.5.2.2 专业人员 专业人员应熟悉连续监督方案及需要的任何报告或分析功能，包括适用于特定设备的连续监督方 法并考虑安装条件及其可能发生的任何娈化。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续监督专业人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

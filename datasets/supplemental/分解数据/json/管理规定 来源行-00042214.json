@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042214",
+  "entities": [
+    {
+      "name": "（ 四）造成或者可能造成突发环境事件时，所属企业应当及 时通报可能受到危",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 四）造成或者可能造成突发环境事件时，所属企业应当及\n\n时通报可能受到危害的单位和居民，判断事件等级，按照集团公\n\n司有关规定报送集团公司应急值班室，同时按照国家有关规定向\n\n当地生态环境保护主管部门报告。",
+      "type": "语义分解",
+      "subject": "（ 四）造成或者可能造成突发环境事件时，所属企业应当及 时通报可能受到危",
+      "action": "",
+      "operation": "（ 四）造成或者可能造成突发环境事件时，所属企业应当及 时通报可能受到危害的单位和居民，判断事件等级，按照集团公 司有关规定报送集团公司应急值班室，同时按照国家有关规定向 当地生态环境保护主管部门报告。",
+      "condition": "",
+      "constraint": "    （ 四）造成或者可能造成突发环境事件时，所属企业应当及\n\n时通报可能受到危害的单位和居民，判断事件等级，按照集团公\n\n司有关规定报送集团公司应急值班室，同时按照国家有关规定向\n\n当地生态环境保护主管部门报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 四）造成或者可能造成突发环境事件时，所属企业应当及 时通报可能受到危"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42214,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.1",
+  "entities": [
+    {
+      "name": "独立观测值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1 在大多数情祝下 ,随机娈量 @ 的期望值4。的最佳估计值是n次独立观测值的算术平均值或均值 9 ,其中 n 个独立观测值4k是在相同测量条件下得到的: 984 3 因此 ,当从 n 次独立重复观测值工;.k估计输入量孓;时 ,由式(3)得到的样本平均值孓;被用作式(2) 中的输入量的估计值 工; ,也就是说 r; =孓; ,以便求得测量结果 Y。没有进行重复观测获得的输入量的 估计值应由其他方法获得 ,如 4.1.3中笫二类评定方法中所给的那样。",
+      "type": "语义分解",
+      "subject": "独立观测值",
+      "action": "",
+      "operation": "同条件下以算术平均值估计",
+      "condition": "相同测量条件下",
+      "constraint": "n次独立观测值的算术平均值",
+      "constraint_role": "informational",
+      "related_entities": [
+        "独立观测值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式及变量严重识别错误，不转换为可执行公式"
+      ]
+    }
+  }
+}

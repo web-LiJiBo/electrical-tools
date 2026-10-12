@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "4.3.3.1.3",
+  "entities": [
+    {
+      "name": "加油站地下水布点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3.1.3 加油站 a)  地下水流向清楚时,污染扩散监测点至少1个 设置在地下水下游距离埋地油罐5~30皿处; 6)  地下水流向不清楚时,布设3 个监测点,呈三角形分布,设置在距离埋地油罐5~30皿处。",
+      "type": "语义分解",
+      "subject": "加油站地下水布点",
+      "action": "",
+      "operation": "流向清楚设下游至少一点不清楚三角布三点距油罐规定距离",
+      "condition": "",
+      "constraint": "4.3.3.1.3 加油站 a)  地下水流向清楚时,污染扩散监测点至少1个 设置在地下水下游距离埋地油罐5~30皿处; 6)  地下水流向不清楚时,布设3 个监测点,呈三角形分布,设置在距离埋地油罐5~30皿处。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "加油站地下水布点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2043,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；距离单位识别异常"
+      ]
+    }
+  }
+}

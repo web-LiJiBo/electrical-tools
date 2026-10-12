@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "竣工资料与内检测数据对齐时，宜选取阀门、热煨弯头 等特征划分区间，并以内",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2   竣工资料与内检测数据对齐时，宜选取阀门、热煨弯头\n等特征划分区间，并以内检测数据为准。发现内检测数据和竣\n工资料有差异应进一步核实。",
+      "type": "语义分解",
+      "subject": "竣工资料与内检测数据对齐时，宜选取阀门、热煨弯头 等特征划分区间，并以内",
+      "action": "",
+      "operation": "竣工资料与内检测数据对齐时，宜选取阀门、热煨弯头 等特征划分区间，并以内检测数据为准。发现内检测数据和竣 工资料有差异应进一步核实。",
+      "condition": "",
+      "constraint": "5.2.2   竣工资料与内检测数据对齐时，宜选取阀门、热煨弯头\n等特征划分区间，并以内检测数据为准。发现内检测数据和竣\n工资料有差异应进一步核实。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "竣工资料与内检测数据对齐时，宜选取阀门、热煨弯头 等特征划分区间，并以内"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48223,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

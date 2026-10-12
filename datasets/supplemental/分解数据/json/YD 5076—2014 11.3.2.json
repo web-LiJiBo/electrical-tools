@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "11.3.2",
+  "entities": [
+    {
+      "name": "MCU会议与带宽计算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.3.2  MCU  会议是指通过专用 MCU 设备控制可充分保证通\n信服务质量的视频会议，点对点视频通信则是不需要经过 MCU 参\n与而直接进行的视频会议。视频会议实际消耗的承载网络资源带\n宽除了媒体流带宽外，还包括承载层封装的开销，因此在进行带宽\n计算时需要配置冗余因子。",
+      "type": "语义分解",
+      "subject": "MCU会议与带宽计算",
+      "action": "",
+      "operation": "解释专用MCU和点对点区别带宽含封装开销需冗余因子",
+      "condition": "",
+      "constraint": "11.3.2  MCU  会议是指通过专用 MCU 设备控制可充分保证通\n信服务质量的视频会议，点对点视频通信则是不需要经过 MCU 参\n与而直接进行的视频会议。视频会议实际消耗的承载网络资源带\n宽除了媒体流带宽外，还包括承载层封装的开销，因此在进行带宽\n计算时需要配置冗余因子。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "MCU会议与带宽计算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26450,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明无冗余数值"
+      ]
+    }
+  }
+}

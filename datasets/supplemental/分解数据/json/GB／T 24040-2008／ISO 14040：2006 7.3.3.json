@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "7.3.3",
+  "entities": [
+    {
+      "name": "相关方评审组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3 相关方评审组的鉴定性评审 由研究的委托方选定一名独立的外部专家担任评审组负责人，评审组至少包括3名成员。根据评审的目的、范围和经费，负责人宜挑选其他独立的具备资格的评审专家。评审组中可包含受 LCA 研究结论影响的其他相关方，例如政府机构、非官方团体、竞争对手以及受影响的企业等。",
+      "type": "语义分解",
+      "subject": "相关方评审组",
+      "action": "",
+      "operation": "独立外部负责人至少三成员按需邀请相关方",
+      "condition": "",
+      "constraint": "7.3.3 相关方评审组的鉴定性评审 由研究的委托方选定一名独立的外部专家担任评审组负责人，评审组至少包括3名成员。根据评审的目的、范围和经费，负责人宜挑选其他独立的具备资格的评审专家。评审组中可包含受 LCA 研究结论影响的其他相关方，例如政府机构、非官方团体、竞争对手以及受影响的企业等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "相关方评审组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1060,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

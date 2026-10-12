@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.2.3.4",
+  "entities": [
+    {
+      "name": "地质水文地形",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3.4 地质。水文地质和地形的描述:  地块及其周围区域的地质。水文地质与地形应观察。记录,并加以分析,以协助判断周围污染物是否会迁移到调查地块,以及地块内污染物是否会迁移到地下水和地块之外。",
+      "type": "语义分解",
+      "subject": "地质水文地形",
+      "action": "",
+      "operation": "观察记录分析以判断污染物迁入迁出地下水",
+      "condition": "",
+      "constraint": "5.2.3.4 地质。水文地质和地形的描述:  地块及其周围区域的地质。水文地质与地形应观察。记录,并加以分析,以协助判断周围污染物是否会迁移到调查地块,以及地块内污染物是否会迁移到地下水和地块之外。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地质水文地形"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2621,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

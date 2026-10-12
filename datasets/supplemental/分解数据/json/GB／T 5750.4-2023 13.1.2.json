@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.1.2",
+  "entities": [
+    {
+      "name": "洗涤剂亚甲基蓝原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.1.2 原理 亚甲基蓝染料在水溶液中与阴离子合成洗涤剂形成易被有机溶剂萃取的蓝色化合物。未反应的亚甲基蓝则仍留在水溶液中。根据有机相蓝色的强度，测定阴离子合成洗涤剂的含量。",
+      "type": "语义分解",
+      "subject": "洗涤剂亚甲基蓝原理",
+      "action": "",
+      "operation": "形成有机相可萃蓝色化合物按强度测含量",
+      "condition": "",
+      "constraint": "13.1.2 原理 亚甲基蓝染料在水溶液中与阴离子合成洗涤剂形成易被有机溶剂萃取的蓝色化合物。未反应的亚甲基蓝则仍留在水溶液中。根据有机相蓝色的强度，测定阴离子合成洗涤剂的含量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "洗涤剂亚甲基蓝原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1525,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

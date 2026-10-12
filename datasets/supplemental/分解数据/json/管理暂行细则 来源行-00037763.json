@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037763",
+  "entities": [
+    {
+      "name": "对温室气体排放相关参数按照监测计划实施数据收集、统计与记录， 并根据相关",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对温室气体排放相关参数按照监测计划实施数据收集、统计与记录，\n\n并根据相关政策指南核算及报送温室气体排放清单或报告。油气储运企业\n\n需同时核算并报告 CO2 和 CH4 两种温室气体。",
+      "type": "语义分解",
+      "subject": "对温室气体排放相关参数按照监测计划实施数据收集、统计与记录， 并根据相关",
+      "action": "",
+      "operation": "对温室气体排放相关参数按照监测计划实施数据收集、统计与记录， 并根据相关政策指南核算及报送温室气体排放清单或报告。油气储运企业 需同时核算并报告 CO2 和 CH4 两种温室气体。",
+      "condition": "",
+      "constraint": "   对温室气体排放相关参数按照监测计划实施数据收集、统计与记录，\n\n并根据相关政策指南核算及报送温室气体排放清单或报告。油气储运企业\n\n需同时核算并报告 CO2 和 CH4 两种温室气体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对温室气体排放相关参数按照监测计划实施数据收集、统计与记录， 并根据相关"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37763,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

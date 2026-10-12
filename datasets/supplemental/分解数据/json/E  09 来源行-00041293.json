@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041293",
+  "entities": [
+    {
+      "name": ")发动机排气筒所产生的排放应得到关注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2)发动机排气筒所产生的排放应得到关注。在发动机的建造、修理或重新选址前，应获得\n   施工和排放许可。选择燃料类型以最大限度地减少污染。适宜时，采用电力。",
+      "type": "语义分解",
+      "subject": ")发动机排气筒所产生的排放应得到关注",
+      "action": "",
+      "operation": ")发动机排气筒所产生的排放应得到关注。在发动机的建造、修理或重新选址前，应获得 施工和排放许可。选择燃料类型以最大限度地减少污染。适宜时，采用电力。",
+      "condition": "",
+      "constraint": "2)发动机排气筒所产生的排放应得到关注。在发动机的建造、修理或重新选址前，应获得\n   施工和排放许可。选择燃料类型以最大限度地减少污染。适宜时，采用电力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")发动机排气筒所产生的排放应得到关注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41293,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

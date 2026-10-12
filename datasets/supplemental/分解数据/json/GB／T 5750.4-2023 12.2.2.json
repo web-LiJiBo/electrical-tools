@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.2.2",
+  "entities": [
+    {
+      "name": "流动注射原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.2 原理 样品通过流动注射分析仪被带入连续流动的载液流中，与磷酸混合后进行在线蒸馏;含有挥发酚类的蒸馏液与连续流动的4-氨基安替比林及铁氰化钾混合，挥发酚类被铁氰化物氧化生成醌物质，再与4-氨基安替比林反应形成红色物质，于波长500 nm处进行比色测定。",
+      "type": "语义分解",
+      "subject": "流动注射原理",
+      "action": "",
+      "operation": "载流混合在线蒸馏显色于500纳米比色",
+      "condition": "",
+      "constraint": "12.2.2 原理 样品通过流动注射分析仪被带入连续流动的载液流中，与磷酸混合后进行在线蒸馏;含有挥发酚类的蒸馏液与连续流动的4-氨基安替比林及铁氰化钾混合，挥发酚类被铁氰化物氧化生成醌物质，再与4-氨基安替比林反应形成红色物质，于波长500 nm处进行比色测定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "流动注射原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1472,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

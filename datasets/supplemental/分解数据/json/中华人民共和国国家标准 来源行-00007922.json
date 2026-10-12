@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00007922",
+  "entities": [
+    {
+      "name": "铜鼻子压接管外侧应采用绝缘材料保护，正极应用红色， 负极应用蓝色，保护地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      10    铜鼻子压接管外侧应采用绝缘材料保护，正极应用红色，\n负极应用蓝色，保护地应用黄色。",
+      "type": "语义分解",
+      "subject": "铜鼻子压接管外侧应采用绝缘材料保护，正极应用红色， 负极应用蓝色，保护地",
+      "action": "",
+      "operation": "铜鼻子压接管外侧应采用绝缘材料保护，正极应用红色， 负极应用蓝色，保护地应用黄色。",
+      "condition": "",
+      "constraint": "      10    铜鼻子压接管外侧应采用绝缘材料保护，正极应用红色，\n负极应用蓝色，保护地应用黄色。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铜鼻子压接管外侧应采用绝缘材料保护，正极应用红色， 负极应用蓝色，保护地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7922,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

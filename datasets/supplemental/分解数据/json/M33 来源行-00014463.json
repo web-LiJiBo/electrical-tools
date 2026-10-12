@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014463",
+  "entities": [
+    {
+      "name": "包业务信号GFP 映射到ODUflex 可支持无损调整功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   包业务信号GFP 映射到ODUflex 可支持无损调整功能。该功能提供了一种无损调整ODUflex(GFP)\n\n连接带宽的控制机制。为了完成无损调整，ODUflex 连接中的所有的节点应支持无损调整功能。ODUflex\n\n链路配置的修改应通过管理或控制平面下发。\n\n9.3.3   OTUk 调度功能",
+      "type": "语义分解",
+      "subject": "包业务信号GFP 映射到ODUflex 可支持无损调整功能",
+      "action": "",
+      "operation": "包业务信号GFP 映射到ODUflex 可支持无损调整功能。该功能提供了一种无损调整ODUflex(GFP) 连接带宽的控制机制。为了完成无损调整，ODUflex 连接中的所有的节点应支持无损调整功能。ODUflex 链路配置的修改应通过管理或控制平面下发。 9.3.3 OTUk 调度功能",
+      "condition": "",
+      "constraint": "   包业务信号GFP 映射到ODUflex 可支持无损调整功能。该功能提供了一种无损调整ODUflex(GFP)\n\n连接带宽的控制机制。为了完成无损调整，ODUflex 连接中的所有的节点应支持无损调整功能。ODUflex\n\n链路配置的修改应通过管理或控制平面下发。\n\n9.3.3   OTUk 调度功能",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包业务信号GFP 映射到ODUflex 可支持无损调整功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14463,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

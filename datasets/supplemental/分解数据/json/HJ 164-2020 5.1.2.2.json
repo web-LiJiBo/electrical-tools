@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "5.1.2.2",
+  "entities": [
+    {
+      "name": "环境井保护筒盖",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.2 井口保护筒宜使用不锈钢材质,井盖中心部分应采用高密度树脂材料,  避免数据无线传输信号被屏蔽;  井盖需加异型安全锁;  依据井管直径, 可采用内径为 24~30 cm  高为50 cm 的保护筒,保护筒下部应埋入水泥平合中 10 cm 固定;  水泥平台为厚 15 cm, 边长50~100 cm 的正方形平合,水泥平台四角须磨圆=",
+      "type": "语义分解",
+      "subject": "环境井保护筒盖",
+      "action": "",
+      "operation": "不锈钢筒树脂盖安全锁按尺寸水泥平台固定磨圆四角",
+      "condition": "",
+      "constraint": "5.1.2.2 井口保护筒宜使用不锈钢材质,井盖中心部分应采用高密度树脂材料,  避免数据无线传输信号被屏蔽;  井盖需加异型安全锁;  依据井管直径, 可采用内径为 24~30 cm  高为50 cm 的保护筒,保护筒下部应埋入水泥平合中 10 cm 固定;  水泥平台为厚 15 cm, 边长50~100 cm 的正方形平合,水泥平台四角须磨圆=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境井保护筒盖"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2061,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

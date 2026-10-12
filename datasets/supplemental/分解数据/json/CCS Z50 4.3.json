@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.20",
+  "standard_id": "CCS Z50",
+  "version": "",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "空气污染浓度状态",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3  本标准中的二氧化硫 ( SO₂) 、 二氧化氮( NO₂) 、 一氧化碳( CO) 、 臭氧 ( O₃) 、  氮氧化物 ( NOx)\n等气态污染物浓度为参比状态下的浓度。颗粒物(粒径小于等于2.5μm,PM 2.5)、颗粒物(粒径小于等\n于10μm,PM10)   及其组分苯并[a]芘( BaP) 、 总悬浮颗粒物( TSP)  及其组分铅 ( Pb)  等浓度为监测时\n大气温度和压力下的浓度。",
+      "type": "语义分解",
+      "subject": "空气污染浓度状态",
+      "action": "",
+      "operation": "气体参比状态颗粒组分监测温压状态",
+      "condition": "",
+      "constraint": "4.3  本标准中的二氧化硫 ( SO₂) 、 二氧化氮( NO₂) 、 一氧化碳( CO) 、 臭氧 ( O₃) 、  氮氧化物 ( NOx)\n等气态污染物浓度为参比状态下的浓度。颗粒物(粒径小于等于2.5μm,PM 2.5)、颗粒物(粒径小于等\n于10μm,PM10)   及其组分苯并[a]芘( BaP) 、 总悬浮颗粒物( TSP)  及其组分铅 ( Pb)  等浓度为监测时\n大气温度和压力下的浓度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "空气污染浓度状态"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33116,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

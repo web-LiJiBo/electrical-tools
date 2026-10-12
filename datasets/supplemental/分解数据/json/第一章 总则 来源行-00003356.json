@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003356",
+  "entities": [
+    {
+      "name": "第三十四条 正常生产过程中,不得屏蔽一个或多个SIF",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第三十四条 正常生产过程中,不得屏蔽一个或多个SIF;确需屏蔽的,应根据所屏蔽SIF的SIL等级及屏蔽时间,开展风险分析并采取必要的风险应对措施;SIF屏蔽超过7天的须执行变更管理程序。",
+      "type": "语义分解",
+      "subject": "第三十四条 正常生产过程中,不得屏蔽一个或多个SIF",
+      "action": "",
+      "operation": "第三十四条 正常生产过程中,不得屏蔽一个或多个SIF;确需屏蔽的,应根据所屏蔽SIF的SIL等级及屏蔽时间,开展风险分析并采取必要的风险应对措施;SIF屏蔽超过7天的须执行变更管理程序。",
+      "condition": "",
+      "constraint": "第三十四条 正常生产过程中,不得屏蔽一个或多个SIF;确需屏蔽的,应根据所屏蔽SIF的SIL等级及屏蔽时间,开展风险分析并采取必要的风险应对措施;SIF屏蔽超过7天的须执行变更管理程序。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三十四条 正常生产过程中,不得屏蔽一个或多个SIF"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3356,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

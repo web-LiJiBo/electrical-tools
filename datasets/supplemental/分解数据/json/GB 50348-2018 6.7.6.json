@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.7.6",
+  "entities": [
+    {
+      "name": "监控中心防静电",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.6 监控中心防静电环境等级、防静电地面面层的表面电阻值和接地电阻值应符合现行国家标准《建筑电气工程电磁兼容技术规范》GB51204的相关要求。",
+      "type": "语义分解",
+      "subject": "监控中心防静电",
+      "action": "",
+      "operation": "环境电阻接地符合GB51204",
+      "condition": "",
+      "constraint": "6.7.6 监控中心防静电环境等级、防静电地面面层的表面电阻值和接地电阻值应符合现行国家标准《建筑电气工程电磁兼容技术规范》GB51204的相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监控中心防静电"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7014,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

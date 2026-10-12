@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013675",
+  "entities": [
+    {
+      "name": "图14 上方框图的这些接口可支持光层开销，这些开销可通过 OSC 、OC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   图14 上方框图的这些接口可支持光层开销，这些开销可通过 OSC 、OCC 等通道传输。这些支持\nOCh-0 和或OTSiG-0 接口支持OCh 和或OTSiA 信号的光层交换。支持OTS-O 和OMS-O的接口支持\n\n光层交换点间部署在线光放。",
+      "type": "语义分解",
+      "subject": "图14 上方框图的这些接口可支持光层开销，这些开销可通过 OSC 、OC",
+      "action": "",
+      "operation": "图14 上方框图的这些接口可支持光层开销，这些开销可通过 OSC 、OCC 等通道传输。这些支持 OCh-0 和或OTSiG-0 接口支持OCh 和或OTSiA 信号的光层交换。支持OTS-O 和OMS-O的接口支持 光层交换点间部署在线光放。",
+      "condition": "",
+      "constraint": "   图14 上方框图的这些接口可支持光层开销，这些开销可通过 OSC 、OCC 等通道传输。这些支持\nOCh-0 和或OTSiG-0 接口支持OCh 和或OTSiA 信号的光层交换。支持OTS-O 和OMS-O的接口支持\n\n光层交换点间部署在线光放。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "图14 上方框图的这些接口可支持光层开销，这些开销可通过 OSC 、OC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13675,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

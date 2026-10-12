@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028386",
+  "entities": [
+    {
+      "name": "组织应基于顾客的需求 、响应和满意测评的结果 ,建立以顾客为导向的明确 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织应基于顾客的需求 、响应和满意测评的结果 ,建立以顾客为导向的明确 、可量化的指标体系 ,展\n开并分解到相关职能部门和业务单元 , 以驱动精益六西格玛的实施 。",
+      "type": "语义分解",
+      "subject": "组织应基于顾客的需求 、响应和满意测评的结果 ,建立以顾客为导向的明确 ",
+      "action": "",
+      "operation": "组织应基于顾客的需求 、响应和满意测评的结果 ,建立以顾客为导向的明确 、可量化的指标体系 ,展 开并分解到相关职能部门和业务单元 , 以驱动精益六西格玛的实施 。",
+      "condition": "",
+      "constraint": "      组织应基于顾客的需求 、响应和满意测评的结果 ,建立以顾客为导向的明确 、可量化的指标体系 ,展\n开并分解到相关职能部门和业务单元 , 以驱动精益六西格玛的实施 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织应基于顾客的需求 、响应和满意测评的结果 ,建立以顾客为导向的明确 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28386,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

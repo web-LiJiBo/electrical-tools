@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "6.2.1.3",
+  "entities": [
+    {
+      "name": "能耗累积量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1.3 前1小时累积量为当前时刻前一整点小时之间的能耗累积量, 前1日累积 量为前日 &时整至当日 8时整的能耗累积量。",
+      "type": "语义分解",
+      "subject": "能耗累积量",
+      "action": "",
+      "operation": "界定小时和日累计周期",
+      "condition": "",
+      "constraint": "前日 &时整至当日 8时整",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能耗累积量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "日周期起始时刻符号损坏，不补成8时"
+      ]
+    }
+  }
+}

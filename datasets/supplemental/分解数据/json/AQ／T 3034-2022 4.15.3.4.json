@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.15.3.4",
+  "entities": [
+    {
+      "name": "临时变更",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.15.3.4 企业应明确临时变更期限的要求 ,超过时限的临时变更 ,需要重新申请 临时娈更需在预定 时间到期前办理娈更恢复手续。未经审查和批准 :临时娈更不应超过原批准范围和期限",
+      "type": "语义分解",
+      "subject": "临时变更",
+      "action": "",
+      "operation": "明确期限到期前恢复超限重新申请未经批准不得超范围期限",
+      "condition": "",
+      "constraint": "4.15.3.4 企业应明确临时变更期限的要求 ,超过时限的临时变更 ,需要重新申请 临时娈更需在预定 时间到期前办理娈更恢复手续。未经审查和批准 :临时娈更不应超过原批准范围和期限",
+      "constraint_role": "informational",
+      "related_entities": [
+        "临时变更"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5265,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

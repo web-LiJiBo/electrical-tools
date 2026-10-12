@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "10.0.3",
+  "entities": [
+    {
+      "name": "环境保护信息管理系统包含的内容较多，工厂可根据自 身的能力与条件，摸索与",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.0.3       环境保护信息管理系统包含的内容较多，工厂可根据自\n身的能力与条件，摸索与建立各自的环境保护信息管理系统，成为\n环境保护治理设施运行数据、环境保护监测数据和环境保护管理\n信息的共享平台，从而提升企业的环境保护管理、监控水平。",
+      "type": "语义分解",
+      "subject": "环境保护信息管理系统包含的内容较多，工厂可根据自 身的能力与条件，摸索与",
+      "action": "",
+      "operation": "环境保护信息管理系统包含的内容较多，工厂可根据自 身的能力与条件，摸索与建立各自的环境保护信息管理系统，成为 环境保护治理设施运行数据、环境保护监测数据和环境保护管理 信息的共享平台，从而提升企业的环境保护管理、监控水平。",
+      "condition": "",
+      "constraint": "10.0.3       环境保护信息管理系统包含的内容较多，工厂可根据自\n身的能力与条件，摸索与建立各自的环境保护信息管理系统，成为\n环境保护治理设施运行数据、环境保护监测数据和环境保护管理\n信息的共享平台，从而提升企业的环境保护管理、监控水平。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境保护信息管理系统包含的内容较多，工厂可根据自 身的能力与条件，摸索与"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40523,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

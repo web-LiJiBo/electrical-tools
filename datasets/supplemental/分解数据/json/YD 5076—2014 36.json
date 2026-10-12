@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "36",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "36\t11.2.5\t不同电信业务经营者网\n间关口局交换系统之间\n的中继线数量，应按工程\n总近期调查的话务量并\n考虑各自业务网的规划\n进行调整取定\t 修改为：不同电信业\n 务经营者网间关口\n 局交换机之间的中\n 继线数量配置和路\n 由设置方法，分别参\n 见YD/T 1404《公用\n 电信网间互联中继\n 电路扩容技术要求》\n 和YD/T 1405《公用\n 电信网间电话业务\n 路由设置的技术要\n 求》\t补充了具体参照\n的规范名称和编\n号，可操作性\n更强",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "36\t11.2.5\t不同电信业务经营者网\n间关口局交换系统之间\n的中继线数量，应按工程\n总近期调查的话务量并\n考虑各自业务网的规划\n进行调整取定\t 修改为：不同电信业\n 务经营者网间关口\n 局交换机之间的中\n 继线数量配置和路\n 由设置方法，分别参\n 见YD/T 1404《公用\n 电信网间互联中继\n 电路扩容技术要求》\n 和YD/T 1405《公用\n 电信网间电话业务\n 路由设置的技术要\n 求》\t补充了具体参照\n的规范名称和编\n号，可操作性\n更强",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26505,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

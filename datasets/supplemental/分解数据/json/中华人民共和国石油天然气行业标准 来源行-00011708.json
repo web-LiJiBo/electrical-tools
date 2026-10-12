@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011708",
+  "entities": [
+    {
+      "name": "SDH光纤传输系统设置不同速率等级的干线层和接入层 时 , 干线层站点宜",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2    SDH光纤传输系统设置不同速率等级的干线层和接入层\n时 ,   干线层站点宜设置在供电可靠的工艺站场等站点 。",
+      "type": "语义分解",
+      "subject": "SDH光纤传输系统设置不同速率等级的干线层和接入层 时 , 干线层站点宜",
+      "action": "",
+      "operation": "SDH光纤传输系统设置不同速率等级的干线层和接入层 时 , 干线层站点宜设置在供电可靠的工艺站场等站点 。",
+      "condition": "",
+      "constraint": "4.2.2    SDH光纤传输系统设置不同速率等级的干线层和接入层\n时 ,   干线层站点宜设置在供电可靠的工艺站场等站点 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDH光纤传输系统设置不同速率等级的干线层和接入层 时 , 干线层站点宜"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11708,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046414",
+  "entities": [
+    {
+      "name": "管道内腐蚀风险受流动状态、腐蚀介质、运行环境等多 种因素影响，管道不同部",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.4   管道内腐蚀风险受流动状态、腐蚀介质、运行环境等多\n种因素影响，管道不同部位的流动状态、腐蚀介质的含量和种\n类、运行参数会有所不同，导致管道不同部位面临的腐蚀风险\n有所差异，因此选取的内腐蚀预测模型应能包括一种或多种影\n响腐蚀风险的因素作为参数，以识别不同管道面临的内腐蚀风\n险差异。",
+      "type": "语义分解",
+      "subject": "管道内腐蚀风险受流动状态、腐蚀介质、运行环境等多 种因素影响，管道不同部",
+      "action": "",
+      "operation": "管道内腐蚀风险受流动状态、腐蚀介质、运行环境等多 种因素影响，管道不同部位的流动状态、腐蚀介质的含量和种 类、运行参数会有所不同，导致管道不同部位面临的腐蚀风险 有所差异，因此选取的内腐蚀预测模型应能包括一种或多种影 响腐蚀风险的因素作为参数，以识别不同管道面临的内腐蚀风 险差异。",
+      "condition": "",
+      "constraint": "5.5.4   管道内腐蚀风险受流动状态、腐蚀介质、运行环境等多\n种因素影响，管道不同部位的流动状态、腐蚀介质的含量和种\n类、运行参数会有所不同，导致管道不同部位面临的腐蚀风险\n有所差异，因此选取的内腐蚀预测模型应能包括一种或多种影\n响腐蚀风险的因素作为参数，以识别不同管道面临的内腐蚀风\n险差异。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道内腐蚀风险受流动状态、腐蚀介质、运行环境等多 种因素影响，管道不同部"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46414,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

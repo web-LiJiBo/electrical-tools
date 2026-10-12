@@ -1,0 +1,39 @@
+{
+  "standard_name": "能源管理体系 能源基准和能源绩效参数",
+  "standard_id": "GB/T 36713-2018",
+  "version": "2018",
+  "chapter_path": "7.1",
+  "entities": [
+    {
+      "name": "能源基准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1 总则 能源基准可用基准期内能源绩效参数的值来表征。将能源基准和报告期的能源绩效参数进行比较 ,能够说明组织为达到目标指标所取得的进展。建立能源基准应采取以下步骤: a ) 确定使用能源基准的目的; b) 确定合适的数据周期; 数据采集; d) 计算和测试能源基准 =",
+      "type": "语义分解",
+      "subject": "能源基准",
+      "action": "",
+      "operation": "确定用途周期并采集计算测试",
+      "condition": "建立能源基准",
+      "constraint": "确定使用能源基准的目的",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源基准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "未给计算模型或判定阈值"
+      ]
+    }
+  }
+}

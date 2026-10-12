@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.3",
+  "entities": [
+    {
+      "name": "二级复杂地区管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3 除国家骨干管道系统以外的管道系统地处治安复杂和人口密集地区的部位",
+      "type": "语义分解",
+      "subject": "二级复杂地区管道",
+      "action": "",
+      "operation": "界定非国家骨干管道复杂密集部位",
+      "condition": "",
+      "constraint": "8.3 除国家骨干管道系统以外的管道系统地处治安复杂和人口密集地区的部位",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级复杂地区管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5480,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；范围标题需结合上下文"
+      ]
+    }
+  }
+}

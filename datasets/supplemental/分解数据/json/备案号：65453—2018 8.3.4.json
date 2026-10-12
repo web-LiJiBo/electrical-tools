@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "8.3.4",
+  "entities": [
+    {
+      "name": "评价ECDA过程的长期有效性应采用下列方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.3.4 评价ECDA过程的长期有效性应采用下列方法：\n   1 应跟踪ECDA过程中分级和重排优先次序的数目，再分级\n和重排优先次序所占百分数较大时，建立的准则可认为不可靠。\n   2 应跟踪ECDA的应用过程。潜在问题调查的开挖数量增\n加时，应确定是否需要进行加密腐蚀监测；多次间接检测的管\n道总公里数增加时，应确定是否需要进行加密腐蚀监测；有效\n的间接检测方法在管线上使用长度增加时，可认为ECDA的应\n用更有针对性。",
+      "type": "语义分解",
+      "subject": "评价ECDA过程的长期有效性应采用下列方法",
+      "action": "",
+      "operation": "评价ECDA过程的长期有效性应采用下列方法： 1 应跟踪ECDA过程中分级和重排优先次序的数目，再分级 和重排优先次序所占百分数较大时，建立的准则可认为不可靠。 2 应跟踪ECDA的应用过程。潜在问题调查的开挖数量增 加时，应确定是否需要进行加密腐蚀监测；多次间接检测的管 道总公里数增加时，应确定是否需要进行加密腐蚀监测；有效 的间接检测方法在管线上使用长度增加时，可认为ECDA的应 用更有针对性。",
+      "condition": "",
+      "constraint": "8.3.4 评价ECDA过程的长期有效性应采用下列方法：\n   1 应跟踪ECDA过程中分级和重排优先次序的数目，再分级\n和重排优先次序所占百分数较大时，建立的准则可认为不可靠。\n   2 应跟踪ECDA的应用过程。潜在问题调查的开挖数量增\n加时，应确定是否需要进行加密腐蚀监测；多次间接检测的管\n道总公里数增加时，应确定是否需要进行加密腐蚀监测；有效\n的间接检测方法在管线上使用长度增加时，可认为ECDA的应\n用更有针对性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "评价ECDA过程的长期有效性应采用下列方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45193,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

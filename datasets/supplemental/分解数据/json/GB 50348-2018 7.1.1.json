@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "7.1.1",
+  "entities": [
+    {
+      "name": "施工组织技术交底",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1 安全防范工程施工单位应根据深化设计文件编制施工组织方案，落实项目组成员，并进行技术交底。",
+      "type": "语义分解",
+      "subject": "施工组织技术交底",
+      "action": "",
+      "operation": "按深化文件编方案落实成员交底",
+      "condition": "",
+      "constraint": "7.1.1 安全防范工程施工单位应根据深化设计文件编制施工组织方案，落实项目组成员，并进行技术交底。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工组织技术交底"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7063,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

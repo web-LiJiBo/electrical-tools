@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.3.6",
+  "entities": [
+    {
+      "name": "正态分布",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.6 考虑与4.3.5类似的情况 ,根据获得的停息声明:孓;的值约以2/3 的可能性落在a_到 a+的区间 内(换言之,X;的值落在这个区间的概率为0.67)c 则可合理地取 u (r; )=a ,因为对一个数学期望为{, 标准差为 。的正态分布 ,区间 {士。约包含分布的 68.3 %。 注: 若用对应于概率p =2/3的实际正态偏离 0.967 42.即写成 u (r; )=4/0.967 42=1.0334 ,则给出的 u (工; )值比 匕述所取的值要合理得多。",
+      "type": "语义分解",
+      "subject": "正态分布",
+      "action": "",
+      "operation": "由覆盖区间估计标准不确定度",
+      "condition": "",
+      "constraint": "约包含分布的 68.3 %",
+      "constraint_role": "informational",
+      "related_entities": [
+        "正态分布"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "符号和公式损坏；概率是数学示例不是设备约束"
+      ]
+    }
+  }
+}

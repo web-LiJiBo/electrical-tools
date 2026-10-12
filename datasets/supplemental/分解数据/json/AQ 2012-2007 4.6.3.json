@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.6.3",
+  "entities": [
+    {
+      "name": "应急组织资源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.3 建立应急组织 ,配备专职或兼职应急人员或与专业应急组织签定应急救援协议 ,配备相应的应急救援设施和物资等资源。",
+      "type": "语义分解",
+      "subject": "应急组织资源",
+      "action": "",
+      "operation": "配人员或签救援协议及设施物资",
+      "condition": "",
+      "constraint": "4.6.3 建立应急组织 ,配备专职或兼职应急人员或与专业应急组织签定应急救援协议 ,配备相应的应急救援设施和物资等资源。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急组织资源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

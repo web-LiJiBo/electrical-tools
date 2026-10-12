@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014705",
+  "entities": [
+    {
+      "name": "b) 创建网元",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    创建网元：EMS 在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功能。\n\n   网元的创建方法可为人工配置法和自动发现法(可选)。网元创建后应能通过上载和下载方式\n\n   配置网元数据。",
+      "type": "语义分解",
+      "subject": "b) 创建网元",
+      "action": "",
+      "operation": "b) 创建网元：EMS 在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功能。 网元的创建方法可为人工配置法和自动发现法(可选)。网元创建后应能通过上载和下载方式 配置网元数据。",
+      "condition": "",
+      "constraint": "b)    创建网元：EMS 在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功能。\n\n   网元的创建方法可为人工配置法和自动发现法(可选)。网元创建后应能通过上载和下载方式\n\n   配置网元数据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 创建网元"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14705,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

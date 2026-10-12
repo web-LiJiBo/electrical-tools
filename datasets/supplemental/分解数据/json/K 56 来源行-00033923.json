@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033923",
+  "entities": [
+    {
+      "name": "b) 为 了 除 去 制 造 过 程 中 的 残 留 溶 剂 , 推 荐",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      b)  为 了 除 去 制 造 过 程 中 的 残 留 溶 剂 , 推 荐 的 作 法 是 利 用 纯 氮 连 续 流 动 去 吹 除 PTFE(聚 四 氟 乙\n烯 ) 。  在此过程中 , 该管线应加热到为分析特殊组分所规定的温度 ;",
+      "type": "语义分解",
+      "subject": "b) 为 了 除 去 制 造 过 程 中 的 残 留 溶 剂 , 推 荐",
+      "action": "",
+      "operation": "b) 为 了 除 去 制 造 过 程 中 的 残 留 溶 剂 , 推 荐 的 作 法 是 利 用 纯 氮 连 续 流 动 去 吹 除 PTFE(聚 四 氟 乙 烯 ) 。 在此过程中 , 该管线应加热到为分析特殊组分所规定的温度",
+      "condition": "",
+      "constraint": "      b)  为 了 除 去 制 造 过 程 中 的 残 留 溶 剂 , 推 荐 的 作 法 是 利 用 纯 氮 连 续 流 动 去 吹 除 PTFE(聚 四 氟 乙\n烯 ) 。  在此过程中 , 该管线应加热到为分析特殊组分所规定的温度 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 为 了 除 去 制 造 过 程 中 的 残 留 溶 剂 , 推 荐"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33923,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

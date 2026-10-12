@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043312",
+  "entities": [
+    {
+      "name": "g) 更改了锌阳极型怯检验的样品数量和要求（见 8.2.3, GB/T ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "g)  更改了锌阳极型怯检验的样品数量和要求（见 8.2.3, GB/T 4950—2002 的 7.2.3、7.2.4) ;\nh)    增加了锌合金牺牲阳极化学分析方法（见附录 A) ;",
+      "type": "语义分解",
+      "subject": "g) 更改了锌阳极型怯检验的样品数量和要求（见 8.2.3, GB/T ",
+      "action": "",
+      "operation": "g) 更改了锌阳极型怯检验的样品数量和要求（见 8.2.3, GB/T 4950—2002 的 7.2.3、7.2.4) ; h) 增加了锌合金牺牲阳极化学分析方法（见附录 A)",
+      "condition": "",
+      "constraint": "g)  更改了锌阳极型怯检验的样品数量和要求（见 8.2.3, GB/T 4950—2002 的 7.2.3、7.2.4) ;\nh)    增加了锌合金牺牲阳极化学分析方法（见附录 A) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 更改了锌阳极型怯检验的样品数量和要求（见 8.2.3, GB/T "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43312,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

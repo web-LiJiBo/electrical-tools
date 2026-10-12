@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.5.19",
+  "entities": [
+    {
+      "name": "消防救逃生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5.19  应落实消防安全和救逃生管理制度，配备符合规范的消防设施和消防器材。",
+      "type": "语义分解",
+      "subject": "消防救逃生",
+      "action": "",
+      "operation": "落实制度配合规范消防器材设施",
+      "condition": "",
+      "constraint": "5.5.5.19  应落实消防安全和救逃生管理制度，配备符合规范的消防设施和消防器材。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "消防救逃生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27796,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

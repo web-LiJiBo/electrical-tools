@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047880",
+  "entities": [
+    {
+      "name": "防腐层剥离及烧蚀评价准则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3   防腐层剥离及烧蚀评价准则：应控制管道防腐层发生剥\n离及烧蚀的风险。为控制防腐层阴极剥离风险，管道受干扰参\n数应满足负向电流密度为250A/m²~500A/m² 时，干扰时长小\n于 2h;  负向电流密度为7.6A/m²~250A/m² 时，干扰时长小于\n48h;  负向电流密度小于7.6A/m²时，无阴极剥离问题。为控制\n防腐层烧蚀风险，管道受干扰电压宜小于160V。",
+      "type": "语义分解",
+      "subject": "防腐层剥离及烧蚀评价准则",
+      "action": "",
+      "operation": "防腐层剥离及烧蚀评价准则：应控制管道防腐层发生剥 离及烧蚀的风险。为控制防腐层阴极剥离风险，管道受干扰参 数应满足负向电流密度为250A/m²~500A/m² 时，干扰时长小 于 2h; 负向电流密度为7.6A/m²~250A/m² 时，干扰时长小于 48h; 负向电流密度小于7.6A/m²时，无阴极剥离问题。为控制 防腐层烧蚀风险，管道受干扰电压宜小于160V。",
+      "condition": "",
+      "constraint": "      3   防腐层剥离及烧蚀评价准则：应控制管道防腐层发生剥\n离及烧蚀的风险。为控制防腐层阴极剥离风险，管道受干扰参\n数应满足负向电流密度为250A/m²~500A/m² 时，干扰时长小\n于 2h;  负向电流密度为7.6A/m²~250A/m² 时，干扰时长小于\n48h;  负向电流密度小于7.6A/m²时，无阴极剥离问题。为控制\n防腐层烧蚀风险，管道受干扰电压宜小于160V。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防腐层剥离及烧蚀评价准则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47880,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

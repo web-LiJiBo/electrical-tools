@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "地块现场检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 现场检测 可采用便携式有机物快速测定仪,重金属快速测定仪生物毒性测试等现场快速筛选技术手段进行定性或定量分析,可采用直接贯入设备现场连续测试地层和污染物垂向分布情况。也可采用土壤气体现场检测手段和地球物理手段初步判断地块污染物及其分布,指导样品采集及监测点位布设。采用便携式设备现场测定地下水水温。pH值 电导率。浊度和氧化还原电位等=",
+      "type": "语义分解",
+      "subject": "地块现场检测",
+      "action": "",
+      "operation": "可用快速有机金属毒性贯入土气物探筛分布测地下水参数",
+      "condition": "",
+      "constraint": "6.3.3 现场检测 可采用便携式有机物快速测定仪,重金属快速测定仪生物毒性测试等现场快速筛选技术手段进行定性或定量分析,可采用直接贯入设备现场连续测试地层和污染物垂向分布情况。也可采用土壤气体现场检测手段和地球物理手段初步判断地块污染物及其分布,指导样品采集及监测点位布设。采用便携式设备现场测定地下水水温。pH值 电导率。浊度和氧化还原电位等=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地块现场检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2649,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

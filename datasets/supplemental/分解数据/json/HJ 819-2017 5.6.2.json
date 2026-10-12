@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.6.2",
+  "entities": [
+    {
+      "name": "监测指标描述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.2 监测指标的描逑 所有监测指标采用表格。语言描述等形式明确体现。监测指标应与监测点位相对应，监测指标内容包括每个监测点位应监测的指标名称: 排放限值。排放限值的来源 (如标堆名称。编号)等。 国家或地方污染物排放(控制)标准。环境影响评价文件及其批复排污许可证中的污染物，如排污单位确认未排放，监测方案中应明确注明。",
+      "type": "语义分解",
+      "subject": "监测指标描述",
+      "action": "",
+      "operation": "逐点列指标名称限值标准来源确认不排放者明确注明",
+      "condition": "",
+      "constraint": "5.6.2 监测指标的描逑 所有监测指标采用表格。语言描述等形式明确体现。监测指标应与监测点位相对应，监测指标内容包括每个监测点位应监测的指标名称: 排放限值。排放限值的来源 (如标堆名称。编号)等。 国家或地方污染物排放(控制)标准。环境影响评价文件及其批复排污许可证中的污染物，如排污单位确认未排放，监测方案中应明确注明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测指标描述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2866,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

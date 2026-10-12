@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "管理知识考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 危险化学品经营单位安全生产管理: a) 了解危险化学品经营管理的重要意义; b) 了解安全管理体系; c) 熟悉安全生产责任制和安全生产管理规章制度; d) 熟悉生产安全事故的报告程序及要求; e) 了解危险化学品经营单位安全标准化的要求与要点。",
+      "type": "语义分解",
+      "subject": "管理知识考核",
+      "action": "",
+      "operation": "了解意义体系熟悉责任制度事故报告了解标准化",
+      "condition": "",
+      "constraint": "5.2.2 危险化学品经营单位安全生产管理: a) 了解危险化学品经营管理的重要意义; b) 了解安全管理体系; c) 熟悉安全生产责任制和安全生产管理规章制度; d) 熟悉生产安全事故的报告程序及要求; e) 了解危险化学品经营单位安全标准化的要求与要点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管理知识考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4941,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；考核范围"
+      ]
+    }
+  }
+}

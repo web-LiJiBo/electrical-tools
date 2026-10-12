@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "地下水采样频次原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1 确定原则 依据具体水文地质条件和地下水监测井使用功能。结合当地污染源,污染物排放实际情况,争取用最低的采样频次。取得最有时间代表性的样品,达到全面反映调查对象的地下水水质状况。污粱原因和迁移规律的目的。",
+      "type": "语义分解",
+      "subject": "地下水采样频次原则",
+      "action": "",
+      "operation": "依水文井功能污染排放以最低合理频次获代表样反映水质迁移",
+      "condition": "",
+      "constraint": "6.2.1 确定原则 依据具体水文地质条件和地下水监测井使用功能。结合当地污染源,污染物排放实际情况,争取用最低的采样频次。取得最有时间代表性的样品,达到全面反映调查对象的地下水水质状况。污粱原因和迁移规律的目的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水采样频次原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2087,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

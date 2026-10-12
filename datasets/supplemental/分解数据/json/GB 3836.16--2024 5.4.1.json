@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.4.1",
+  "entities": [
+    {
+      "name": "防爆定检人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1 人员 定期检查人员应胜任需要的检查及4.2规定的能力要求，且: 其有场所分类/设备保护级别 (EPI ) 和足以从技术上判断现场实际情况的知识; b) 其有从技术角度理解危险场所用电气设备理论及实践要求的知识; 理解与所安装的设备和装置相关的目视检查 一般检查和详细检查的要求。 这些人员应经过相关培训并获取相关的资质。 应指定具有管理职能的技术人员，全面负责并管理危险场所内电气装置的检查。",
+      "type": "语义分解",
+      "subject": "防爆定检人员",
+      "action": "",
+      "operation": "具分类EPL技术实践检查知识培训资质指定管理技术人员负责",
+      "condition": "",
+      "constraint": "5.4.1 人员 定期检查人员应胜任需要的检查及4.2规定的能力要求，且: 其有场所分类/设备保护级别 (EPI ) 和足以从技术上判断现场实际情况的知识; b) 其有从技术角度理解危险场所用电气设备理论及实践要求的知识; 理解与所安装的设备和装置相关的目视检查 一般检查和详细检查的要求。 这些人员应经过相关培训并获取相关的资质。 应指定具有管理职能的技术人员，全面负责并管理危险场所内电气装置的检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆定检人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3987,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

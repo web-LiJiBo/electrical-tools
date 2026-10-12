@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.3.8",
+  "entities": [
+    {
+      "name": "特殊时期保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.3.8 特殊时期保障应符合下列规定: 1 应根据特殊时期保障的要求组建保障工作小组，确认保障的系统、工作程序、故障处理原则、应急预案等，配备仪器仪表、备品备件、应急通信设施等; 2 应进行系统现场勘察，对需要保障的系统进行资料整理、核查; 3 应对需要保障的系统进行预检、预修和调整; 4 应编制特殊时期保障工作报告。",
+      "type": "语义分解",
+      "subject": "特殊时期保障",
+      "action": "",
+      "operation": "小组方案程序预案仪器备件通信勘察核资料预检修调报告",
+      "condition": "",
+      "constraint": "11.3.8 特殊时期保障应符合下列规定: 1 应根据特殊时期保障的要求组建保障工作小组，确认保障的系统、工作程序、故障处理原则、应急预案等，配备仪器仪表、备品备件、应急通信设施等; 2 应进行系统现场勘察，对需要保障的系统进行资料整理、核查; 3 应对需要保障的系统进行预检、预修和调整; 4 应编制特殊时期保障工作报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊时期保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7218,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

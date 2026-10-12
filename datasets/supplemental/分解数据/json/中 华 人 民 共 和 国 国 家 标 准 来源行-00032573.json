@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032573",
+  "entities": [
+    {
+      "name": "Qa ____ 比某排气筒低的表列限值中的最大值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    Qa ____ 比某排气筒低的表列限值中的最大值 ;\nQa+ 1 ____ 比某排气筒高的表列限值中的最小值 ;\n     h_____某排气筒的几何高度 ;",
+      "type": "语义分解",
+      "subject": "Qa ____ 比某排气筒低的表列限值中的最大值",
+      "action": "",
+      "operation": "Qa ____ 比某排气筒低的表列限值中的最大值 ; Qa+ 1 ____ 比某排气筒高的表列限值中的最小值 ; h_____某排气筒的几何高度",
+      "condition": "",
+      "constraint": "    Qa ____ 比某排气筒低的表列限值中的最大值 ;\nQa+ 1 ____ 比某排气筒高的表列限值中的最小值 ;\n     h_____某排气筒的几何高度 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Qa ____ 比某排气筒低的表列限值中的最大值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32573,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

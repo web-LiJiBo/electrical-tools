@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047826",
+  "entities": [
+    {
+      "name": "差异",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "差异。《极化应用导则》NACE  SP  0104:2014第4.5节规定，\n试片形状可选用环形、圆柱形、圆形和矩形；第4.6节规定，推\n荐使用6.5cm²~1000cm² 的试片，但是其他尺寸的试片也可\n以使用。《埋地钢质检查片应用技术规范》SY/T 0029—2012\n第5.1节规定，试片裸露面形状宜为圆形或方形，试片裸露面积\n宜为6.5cm²~ 50cm²。",
+      "type": "语义分解",
+      "subject": "差异",
+      "action": "",
+      "operation": "差异。《极化应用导则》NACE SP 0104:2014第4.5节规定， 试片形状可选用环形、圆柱形、圆形和矩形；第4.6节规定，推 荐使用6.5cm²~1000cm² 的试片，但是其他尺寸的试片也可 以使用。《埋地钢质检查片应用技术规范》SY/T 0029—2012 第5.1节规定，试片裸露面形状宜为圆形或方形，试片裸露面积 宜为6.5cm²~ 50cm²。",
+      "condition": "",
+      "constraint": "差异。《极化应用导则》NACE  SP  0104:2014第4.5节规定，\n试片形状可选用环形、圆柱形、圆形和矩形；第4.6节规定，推\n荐使用6.5cm²~1000cm² 的试片，但是其他尺寸的试片也可\n以使用。《埋地钢质检查片应用技术规范》SY/T 0029—2012\n第5.1节规定，试片裸露面形状宜为圆形或方形，试片裸露面积\n宜为6.5cm²~ 50cm²。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "差异"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47826,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

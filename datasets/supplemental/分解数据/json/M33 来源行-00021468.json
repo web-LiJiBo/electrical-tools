@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021468",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7) V5[1-2]:    对包括V5 在内的前一VC-12的每个字节的每个比特对进行BIP-2 运算，并将\n   其与从当前帧恢复的V5 的比特1和比特2对比。运算和恢复的BIP-2 值之间的差作为误\n   码数 ( ON_B)。按源方向所规定算法补偿字节V5 的比特1和2中的VC-1/2 BIP-2。\n8) N2:  该功能通过插入全零图案终结N2 通路。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "7) V5[1-2]:    对包括V5 在内的前一VC-12的每个字节的每个比特对进行BIP-2 运算，并将\n   其与从当前帧恢复的V5 的比特1和比特2对比。运算和恢复的BIP-2 值之间的差作为误\n   码数 ( ON_B)。按源方向所规定算法补偿字节V5 的比特1和2中的VC-1/2 BIP-2。\n8) N2:  该功能通过插入全零图案终结N2 通路。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

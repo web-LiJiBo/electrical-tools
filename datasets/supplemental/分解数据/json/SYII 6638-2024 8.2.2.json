@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "8.2.2",
+  "entities": [
+    {
+      "name": "市政供水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2 当采用市政管网供水时 应设置水量计量 并应充分利用供水管网的水压直接供水。当市政水压不能满足要求时 应根据管网水力计算选择和配置供水加压泵。确保水泵高效运行 水泵的效率应不低于 GB 19762中规定的节能评价值",
+      "type": "语义分解",
+      "subject": "市政供水",
+      "action": "",
+      "operation": "计量利用管压不足时选高效加压泵",
+      "condition": "当采用市政管网供水时",
+      "constraint": "8.2.2 当采用市政管网供水时 应设置水量计量 并应充分利用供水管网的水压直接供水。当市政水压不能满足要求时 应根据管网水力计算选择和配置供水加压泵。确保水泵高效运行 水泵的效率应不低于 GB 19762中规定的节能评价值",
+      "constraint_role": "informational",
+      "related_entities": [
+        "市政供水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 330,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

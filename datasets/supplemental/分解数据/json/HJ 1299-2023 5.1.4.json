@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "排污口证明材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 与排污口相关的证明材料:  包括排污口和监测孔规范化设置情况说明材料, 纳污范围 管网布 置。最终排放去向等说明材料 (仅针对城镇和工业污水集中处理设施) 入河入海排污口设置申请及审 批。备案或登记信息等与排放口相关的证明材料=",
+      "type": "语义分解",
+      "subject": "排污口证明材料",
+      "action": "",
+      "operation": "收集排口监测孔规范去向管网及入河海设置审批备案信息",
+      "condition": "",
+      "constraint": "5.1.4 与排污口相关的证明材料:  包括排污口和监测孔规范化设置情况说明材料, 纳污范围 管网布 置。最终排放去向等说明材料 (仅针对城镇和工业污水集中处理设施) 入河入海排污口设置申请及审 批。备案或登记信息等与排放口相关的证明材料=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污口证明材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1977,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

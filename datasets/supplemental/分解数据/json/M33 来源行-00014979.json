@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014979",
+  "entities": [
+    {
+      "name": "c) 汇聚后带宽大于100GE的 n×25GE 分组客户信号集(如",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    汇聚后带宽大于100GE的 n×25GE  分组客户信号集(如：200GE,400GE  等),呈现为MAC\n   帧加帧间隔的数据流，按照IEEE802.3-2015中表82-5规范的方法，经64b/66b 编码成FlexE\n   客户信号 s ×5,156,250.000kbit/s±100     ppm,s=2,8,n*5(n≥1)  ( 见 OIF FlexE IA),再通过IMP\n   映射到OPUflex ( 如图B.1 所示，具体要求见ITU-T G.709(2016)的17.11),再GMP 映射到\n      ODTUCn.ts,  再复用到ODUCn 通道信号，最后到OTUCn 接口。",
+      "type": "语义分解",
+      "subject": "c) 汇聚后带宽大于100GE的 n×25GE 分组客户信号集(如",
+      "action": "",
+      "operation": "c) 汇聚后带宽大于100GE的 n×25GE 分组客户信号集(如：200GE,400GE 等),呈现为MAC 帧加帧间隔的数据流，按照IEEE802.3-2015中表82-5规范的方法，经64b/66b 编码成FlexE 客户信号 s ×5,156,250.000kbit/s±100 ppm,s=2,8,n*5(n≥1) ( 见 OIF FlexE IA),再通过IMP 映射到OPUflex ( 如图B.1 所示，具体要求见ITU-T G.709(2016)的17.11),",
+      "condition": "",
+      "constraint": "c)    汇聚后带宽大于100GE的 n×25GE  分组客户信号集(如：200GE,400GE  等),呈现为MAC\n   帧加帧间隔的数据流，按照IEEE802.3-2015中表82-5规范的方法，经64b/66b 编码成FlexE\n   客户信号 s ×5,156,250.000kbit/s±100     ppm,s=2,8,n*5(n≥1)  ( 见 OIF FlexE IA),再通过IMP\n   映射到OPUflex ( 如图B.1 所示，具体要求见ITU-T G.709(2016)的17.11),再GMP 映射到\n      ODTUCn.ts,  再复用到ODUCn 通道信号，最后到OTUCn 接口。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 汇聚后带宽大于100GE的 n×25GE 分组客户信号集(如"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14979,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036597",
+  "entities": [
+    {
+      "name": "a ) 仪器校准信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a )  仪器校准信息：校准日期、检测仪器设备型号及编号、校准人员、校准气体编号、校准气体\n    相对扩展不确定度、校准气体浓度(μmol/mol) 、   校 准 读 数 ( μmol/mol) 、   校准相对标准\n    偏差、是否通过校准；",
+      "type": "语义分解",
+      "subject": "a ) 仪器校准信息",
+      "action": "",
+      "operation": "a ) 仪器校准信息：校准日期、检测仪器设备型号及编号、校准人员、校准气体编号、校准气体 相对扩展不确定度、校准气体浓度(μmol/mol) 、 校 准 读 数 ( μmol/mol) 、 校准相对标准 偏差、是否通过校准",
+      "condition": "",
+      "constraint": "a )  仪器校准信息：校准日期、检测仪器设备型号及编号、校准人员、校准气体编号、校准气体\n    相对扩展不确定度、校准气体浓度(μmol/mol) 、   校 准 读 数 ( μmol/mol) 、   校准相对标准\n    偏差、是否通过校准；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a ) 仪器校准信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36597,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

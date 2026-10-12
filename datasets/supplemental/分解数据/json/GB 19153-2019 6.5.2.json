@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "6.5.2",
+  "entities": [
+    {
+      "name": "回转空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.2 回转空气压缩机和变转速回转空气压缩机的机组功率试验值 ,按式(4)计算: 式中: Pc 空气压缩机机组功率试验值 ,单位为千瓦(kW)。",
+      "type": "语义分解",
+      "subject": "回转空气压缩机",
+      "action": "",
+      "operation": "计算机组功率试验值",
+      "condition": "",
+      "constraint": "按式(4)计算",
+      "constraint_role": "informational",
+      "related_entities": [
+        "回转空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "本行缺公式(4)"
+      ]
+    }
+  }
+}

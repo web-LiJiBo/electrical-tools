@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.2.3.3",
+  "entities": [
+    {
+      "name": "年降雨量低于150 mm 的植被难以存活区域，宜将干扰区域地表平整压实或",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3.3  年降雨量低于150 mm 的植被难以存活区域，宜将干扰区域地表平整压实或就地取材进行砾\n石覆盖，防止风蚀。年降雨量在150 mm～250  mm 的区域，宜采用草本植物恢复植被。年降雨量大于\n250 mm 的区域，宜采用灌木、草本植物结合的方式恢复植被。造林绿化方法见附录B。",
+      "type": "语义分解",
+      "subject": "年降雨量低于150 mm 的植被难以存活区域，宜将干扰区域地表平整压实或",
+      "action": "",
+      "operation": "年降雨量低于150 mm 的植被难以存活区域，宜将干扰区域地表平整压实或就地取材进行砾 石覆盖，防止风蚀。年降雨量在150 mm～250 mm 的区域，宜采用草本植物恢复植被。年降雨量大于 250 mm 的区域，宜采用灌木、草本植物结合的方式恢复植被。造林绿化方法见附录B。",
+      "condition": "",
+      "constraint": "6.2.3.3  年降雨量低于150 mm 的植被难以存活区域，宜将干扰区域地表平整压实或就地取材进行砾\n石覆盖，防止风蚀。年降雨量在150 mm～250  mm 的区域，宜采用草本植物恢复植被。年降雨量大于\n250 mm 的区域，宜采用灌木、草本植物结合的方式恢复植被。造林绿化方法见附录B。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "年降雨量低于150 mm 的植被难以存活区域，宜将干扰区域地表平整压实或"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40714,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

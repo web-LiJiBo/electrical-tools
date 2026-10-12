@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.8.8",
+  "entities": [
+    {
+      "name": "控制测量台维护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.8  验证系统控制台和测量台的维护管理功能应良好。\n4.8.9      故障处理和诊断应符合下列要求：",
+      "type": "语义分解",
+      "subject": "控制测量台维护",
+      "action": "",
+      "operation": "验证良好",
+      "condition": "",
+      "constraint": "4.8.8  验证系统控制台和测量台的维护管理功能应良好。\n4.8.9      故障处理和诊断应符合下列要求：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "控制测量台维护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27022,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含4.8.9故障诊断清单缺失"
+      ]
+    }
+  }
+}

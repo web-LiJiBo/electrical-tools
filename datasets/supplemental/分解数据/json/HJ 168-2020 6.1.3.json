@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "6.1.3",
+  "entities": [
+    {
+      "name": "方法验证实验室",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.3 方法标准草案应通过至少 6家实验室验证。参加方法验证的实验室应通过检验检测机构资质认定或实验室认可 具备验证实验条件; 应覆盖全国代表性地理区域 (或典型环境条件),并能覆盖全国环境监测机构的各类水平。若确实无法获得 6家验证实验室, 可采取同一家实验室按不同人员分组,尽可能采用不同仪器设备。环境条件和不同批次的试剂材料开展验证。",
+      "type": "语义分解",
+      "subject": "方法验证实验室",
+      "action": "",
+      "operation": "至少六家资质认可具条件覆盖地域水平无法达可同室分组差异验证",
+      "condition": "",
+      "constraint": "6.1.3 方法标准草案应通过至少 6家实验室验证。参加方法验证的实验室应通过检验检测机构资质认定或实验室认可 具备验证实验条件; 应覆盖全国代表性地理区域 (或典型环境条件),并能覆盖全国环境监测机构的各类水平。若确实无法获得 6家验证实验室, 可采取同一家实验室按不同人员分组,尽可能采用不同仪器设备。环境条件和不同批次的试剂材料开展验证。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法验证实验室"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2342,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

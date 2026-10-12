@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "大气风险范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1 大气环境风险评价范围: 一级。二级评价距建设项目边界一般不低于5 km; 三级评价距建设项目边界一般不低于 3 km。 油气。化学品输送管线项目-级。二级评价距管道中心线两侧一般均不低于 200 m; 三级评价距管道中心线两侧一般均不低于 100 m。当大气毒性终点浓度预测到达距离超出评价范围时,应根据预测到达距离进一步调整评价范围。",
+      "type": "语义分解",
+      "subject": "大气风险范围",
+      "action": "",
+      "operation": "按评价级别项目边界或管线两侧设最小范围毒性预测超出时调整",
+      "condition": "",
+      "constraint": "4.5.1 大气环境风险评价范围: 一级。二级评价距建设项目边界一般不低于5 km; 三级评价距建设项目边界一般不低于 3 km。 油气。化学品输送管线项目-级。二级评价距管道中心线两侧一般均不低于 200 m; 三级评价距管道中心线两侧一般均不低于 100 m。当大气毒性终点浓度预测到达距离超出评价范围时,应根据预测到达距离进一步调整评价范围。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "大气风险范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2455,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

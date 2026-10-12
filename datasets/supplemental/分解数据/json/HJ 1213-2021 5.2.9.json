@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.9",
+  "entities": [
+    {
+      "name": "遥感相对偏差",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.9 相对偏差验证 海面同步测量结果与遥感监测的一致性。相对偏差按照公式计算。总面积相对偏差宜在159以内。公式中: AS为总面积相对偏差, SRs为遥感监测的温升总面积或各强度面积, SFE为海面同步测量的温升总面积或各强度面积。",
+      "type": "语义分解",
+      "subject": "遥感相对偏差",
+      "action": "",
+      "operation": "以海面同步与遥感面积比较验证一致性",
+      "condition": "",
+      "constraint": "5.2.9 相对偏差验证 海面同步测量结果与遥感监测的一致性。相对偏差按照公式计算。总面积相对偏差宜在159以内。公式中: AS为总面积相对偏差, SRs为遥感监测的温升总面积或各强度面积, SFE为海面同步测量的温升总面积或各强度面积。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "遥感相对偏差"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1958,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；159阈值和公式缺失不得猜百分比"
+      ]
+    }
+  }
+}

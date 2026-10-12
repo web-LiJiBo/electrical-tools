@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011039",
+  "entities": [
+    {
+      "name": "— 1 为 符 合 G.652 光纤的标称波长1310的光源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "— 1 为 符 合 G.652 光纤的标称波长1310的光源；\n——2为符合G.652  光纤的标称波长1550的光源；\n— 3 为 符 合G.653  光纤的标称波长1550的光源；\n——5为符合 G.655  ( 非零色散位移)光纤的标称波长\n   1550的光源。",
+      "type": "语义分解",
+      "subject": "— 1 为 符 合 G.652 光纤的标称波长1310的光源",
+      "action": "",
+      "operation": "— 1 为 符 合 G.652 光纤的标称波长1310的光源； ——2为符合G.652 光纤的标称波长1550的光源； — 3 为 符 合G.653 光纤的标称波长1550的光源； ——5为符合 G.655 ( 非零色散位移)光纤的标称波长 1550的光源。",
+      "condition": "",
+      "constraint": "— 1 为 符 合 G.652 光纤的标称波长1310的光源；\n——2为符合G.652  光纤的标称波长1550的光源；\n— 3 为 符 合G.653  光纤的标称波长1550的光源；\n——5为符合 G.655  ( 非零色散位移)光纤的标称波长\n   1550的光源。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— 1 为 符 合 G.652 光纤的标称波长1310的光源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11039,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

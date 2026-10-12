@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "6.7",
+  "entities": [
+    {
+      "name": "受限空间动火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7 当一处受限空间存在动火作业时，该处受限空间内不应安排涂刷油漆、涂料等其他可能产生有毒有害、可燃物质的作业活动。",
+      "type": "语义分解",
+      "subject": "受限空间动火",
+      "action": "",
+      "operation": "不并行安排产生有毒可燃物的作业",
+      "condition": "当一处受限空间存在动火作业时",
+      "constraint": "6.7 当一处受限空间存在动火作业时，该处受限空间内不应安排涂刷油漆、涂料等其他可能产生有毒有害、可燃物质的作业活动。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "受限空间动火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3883,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

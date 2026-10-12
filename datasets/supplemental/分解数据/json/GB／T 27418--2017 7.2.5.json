@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "7.2.5",
+  "entities": [
+    {
+      "name": "测量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5 如果一次测量同时确定一个以上的被测量 ,也就是它提供两个或两个以上的输出量的估计值 Ji (见F.2,E.3 ,F.4) ,则除了给出 J; 和 u(y; )外 ,还要给出协方差矩阵的元素 u(yi , Yj )或相关系数矩阵 的元素 r(Ji, Jj ) (最好两个都给出)。",
+      "type": "语义分解",
+      "subject": "测量",
+      "action": "",
+      "operation": "报告多个输出量的协方差或相关系数",
+      "condition": "一次测量同时确定一个以上的被测量",
+      "constraint": "给出协方差矩阵的元素",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量符号识别错误；两个矩阵都给出是建议不是强制"
+      ]
+    }
+  }
+}

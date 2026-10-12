@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018606",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     VC-12: TC-m 和 VC-m BIP-2计算和比较如图3所示。偶比特奇偶校验需对前一个VC-12 每个字\n节包括V5 的每个比特进行计算并和当前帧接收的V5 比特1和比特2进行比较，计算值和接收BIP-2\n值间的差异将作为一个ON_B内一个或多个误码的凭证。此外，计算出BIP-2 和从N2比特1和比特2\n接收的BIP-2 进行比较，如果差值不等于零指示VC-m在串接连接中出现误码，在这种情况下就检出一\n个TC 误码块N_B。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "     VC-12: TC-m 和 VC-m BIP-2计算和比较如图3所示。偶比特奇偶校验需对前一个VC-12 每个字\n节包括V5 的每个比特进行计算并和当前帧接收的V5 比特1和比特2进行比较，计算值和接收BIP-2\n值间的差异将作为一个ON_B内一个或多个误码的凭证。此外，计算出BIP-2 和从N2比特1和比特2\n接收的BIP-2 进行比较，如果差值不等于零指示VC-m在串接连接中出现误码，在这种情况下就检出一\n个TC 误码块N_B。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18606,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

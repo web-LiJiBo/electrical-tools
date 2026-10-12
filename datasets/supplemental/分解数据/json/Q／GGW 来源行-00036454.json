@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036454",
+  "entities": [
+    {
+      "name": "HJ 604 环 境 空 气 总 烃 、 甲 烷和非甲烷总烃的测定 直接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "HJ  604   环 境 空 气 总 烃 、  甲 烷和非甲烷总烃的测定  直接进样一气相色谱法\nHJ   733—2014    泄漏和敞开液面排放的挥发性有机物检测技术导则\nHJ    1230—2021   工业企业挥发性有机物泄漏检测与修复技术指南",
+      "type": "语义分解",
+      "subject": "HJ 604 环 境 空 气 总 烃 、 甲 烷和非甲烷总烃的测定 直接",
+      "action": "",
+      "operation": "HJ 604 环 境 空 气 总 烃 、 甲 烷和非甲烷总烃的测定 直接进样一气相色谱法 HJ 733—2014 泄漏和敞开液面排放的挥发性有机物检测技术导则 HJ 1230—2021 工业企业挥发性有机物泄漏检测与修复技术指南",
+      "condition": "",
+      "constraint": "HJ  604   环 境 空 气 总 烃 、  甲 烷和非甲烷总烃的测定  直接进样一气相色谱法\nHJ   733—2014    泄漏和敞开液面排放的挥发性有机物检测技术导则\nHJ    1230—2021   工业企业挥发性有机物泄漏检测与修复技术指南",
+      "constraint_role": "informational",
+      "related_entities": [
+        "HJ 604 环 境 空 气 总 烃 、 甲 烷和非甲烷总烃的测定 直接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36454,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

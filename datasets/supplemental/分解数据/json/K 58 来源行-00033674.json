@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033674",
+  "entities": [
+    {
+      "name": "b) 燃气轮机运行后，在没有取样时，必须接通逆吹空气系统，对取样管路和取",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    燃气轮机运行后，在没有取样时，必须接通逆吹空气系统，对取样管路和取样感头进行逆吹；\nc)    燃气轮机处于稳定状态，并且已有足够时间使该状态的样气充满取样管道和取样箱后，方可\n       取样 。",
+      "type": "语义分解",
+      "subject": "b) 燃气轮机运行后，在没有取样时，必须接通逆吹空气系统，对取样管路和取",
+      "action": "",
+      "operation": "b) 燃气轮机运行后，在没有取样时，必须接通逆吹空气系统，对取样管路和取样感头进行逆吹； c) 燃气轮机处于稳定状态，并且已有足够时间使该状态的样气充满取样管道和取样箱后，方可 取样 。",
+      "condition": "",
+      "constraint": "b)    燃气轮机运行后，在没有取样时，必须接通逆吹空气系统，对取样管路和取样感头进行逆吹；\nc)    燃气轮机处于稳定状态，并且已有足够时间使该状态的样气充满取样管道和取样箱后，方可\n       取样 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 燃气轮机运行后，在没有取样时，必须接通逆吹空气系统，对取样管路和取"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33674,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

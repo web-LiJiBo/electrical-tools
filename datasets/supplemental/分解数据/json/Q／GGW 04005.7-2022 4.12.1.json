@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.12.1",
+  "entities": [
+    {
+      "name": "废气治理设施数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.12.1 废气治理设施数应为统计周期内企业用于减少排向大气的污染物或对污染物加以回收利用的废气治理设施总数,以一个废气治理系统为单位统计。包括除尘。脱硫 脱硝及其它的污染物的烟气治理设施。",
+      "type": "语义分解",
+      "subject": "废气治理设施数",
+      "action": "",
+      "operation": "按废气治理系统单位统计设施总数",
+      "condition": "",
+      "constraint": "4.12.1 废气治理设施数应为统计周期内企业用于减少排向大气的污染物或对污染物加以回收利用的废气治理设施总数,以一个废气治理系统为单位统计。包括除尘。脱硫 脱硝及其它的污染物的烟气治理设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废气治理设施数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 612,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

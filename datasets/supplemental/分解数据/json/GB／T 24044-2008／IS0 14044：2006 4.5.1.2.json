@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.5.1.2",
+  "entities": [
+    {
+      "name": "解释阶段",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1.2 解释应根据研究的目的考虑如下内容: 系统功能 ,功能单位和系统边界定义的适当性; 数据质量评价和敏感性分析所识别出的局限性。 应对源于 LCI 和 LCIA 结果的数据质量评价 敏感性分析 .结论以及任何建议予以检查 对 LCI 结果做出的解释宜谨慎 ,因为该结果是指输入和输出数据 ,而不是指环境影响 _ 另外 , LCI 结果的不确定性是由输人的不确定性和数据的娈化所产生的复合效应导致的。 结果的不确定性可以通 过分布区间或概率分布表达 = 只要可行 ,就宜采用这种分析方法来更好地解释和支持 ICI 的结论。 关于生命周期解释更多的信息和示例参见附录B。",
+      "type": "语义分解",
+      "subject": "解释阶段",
+      "action": "",
+      "operation": "考虑功能单位边界质量局限并用分布或概率表达不确定性",
+      "condition": "",
+      "constraint": "4.5.1.2 解释应根据研究的目的考虑如下内容: 系统功能 ,功能单位和系统边界定义的适当性; 数据质量评价和敏感性分析所识别出的局限性。 应对源于 LCI 和 LCIA 结果的数据质量评价 敏感性分析 .结论以及任何建议予以检查 对 LCI 结果做出的解释宜谨慎 ,因为该结果是指输入和输出数据 ,而不是指环境影响 _ 另外 , LCI 结果的不确定性是由输人的不确定性和数据的娈化所产生的复合效应导致的。 结果的不确定性可以通 过分布区间或概率分布表达 = 只要可行 ,就宜采用这种分析方法来更好地解释和支持 ICI 的结论。 关于生命周期解释更多的信息和示例参见附录B。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "解释阶段"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1129,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

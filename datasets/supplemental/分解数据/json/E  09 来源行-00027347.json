@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027347",
+  "entities": [
+    {
+      "name": "依据 HSE 管理体系中安全生产管理要素，明确标准化建设的方针、目标等核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2  依据 HSE 管理体系中安全生产管理要素，明确标准化建设的方针、目标等核心内容，对 HSE 管\n\n理体系运行和安全生产情况进行考核；根据标准化得分和安全绩效评定标准化等级。\n\n4.3 安全生产标准化等级分为一级、二级、三级，其中一级为最高。\n\n4.4  安全生产标准化得分采用百分制，标准化得分按下式计算：",
+      "type": "语义分解",
+      "subject": "依据 HSE 管理体系中安全生产管理要素，明确标准化建设的方针、目标等核",
+      "action": "",
+      "operation": "依据 HSE 管理体系中安全生产管理要素，明确标准化建设的方针、目标等核心内容，对 HSE 管 理体系运行和安全生产情况进行考核；根据标准化得分和安全绩效评定标准化等级。 4.3 安全生产标准化等级分为一级、二级、三级，其中一级为最高。 4.4 安全生产标准化得分采用百分制，标准化得分按下式计算",
+      "condition": "",
+      "constraint": "4.2  依据 HSE 管理体系中安全生产管理要素，明确标准化建设的方针、目标等核心内容，对 HSE 管\n\n理体系运行和安全生产情况进行考核；根据标准化得分和安全绩效评定标准化等级。\n\n4.3 安全生产标准化等级分为一级、二级、三级，其中一级为最高。\n\n4.4  安全生产标准化得分采用百分制，标准化得分按下式计算：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "依据 HSE 管理体系中安全生产管理要素，明确标准化建设的方针、目标等核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27347,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

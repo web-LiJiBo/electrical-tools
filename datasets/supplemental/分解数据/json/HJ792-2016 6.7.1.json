@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.7.1",
+  "entities": [
+    {
+      "name": "制药监测分析方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.1 监测分析方法 按国家污染物排放标准和环境质量标准要求, 优先选用国家环境监测分析方法标准方法; 对国内目前尚未建立标准分析方法的污染物, 可参考使用国内(外)现行的标准分析方法。分析方法应能满足评价标准要求。分析方法格式参见附录C表C.21。",
+      "type": "语义分解",
+      "subject": "制药监测分析方法",
+      "action": "",
+      "operation": "优先国家方法无国内可参国内外现行方法满足评价标准",
+      "condition": "",
+      "constraint": "6.7.1 监测分析方法 按国家污染物排放标准和环境质量标准要求, 优先选用国家环境监测分析方法标准方法; 对国内目前尚未建立标准分析方法的污染物, 可参考使用国内(外)现行的标准分析方法。分析方法应能满足评价标准要求。分析方法格式参见附录C表C.21。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药监测分析方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2768,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录C未提供"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "11.4.4",
+  "entities": [
+    {
+      "name": "SDB与SS的IP带宽偶联",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.4.4  SDB 与软交换的 IP 带宽按下式计算，每个 SDB 与每个\nSS 之间应开设两个SCTP  偶联。",
+      "type": "语义分解",
+      "subject": "SDB与SS的IP带宽偶联",
+      "action": "",
+      "operation": "每对SDB和SS开两SCTP偶联",
+      "condition": "",
+      "constraint": "11.4.4  SDB 与软交换的 IP 带宽按下式计算，每个 SDB 与每个\nSS 之间应开设两个SCTP  偶联。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDB与SS的IP带宽偶联"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26207,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；带宽公式缺失"
+      ]
+    }
+  }
+}

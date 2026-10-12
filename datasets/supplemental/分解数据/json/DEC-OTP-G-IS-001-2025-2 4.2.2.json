@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "能源计量器具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 能源计量器具的性能; 应满足生产工艺 被测介质及使用环境 (如温度。温 度娈化率。照明。振动,噪音。粉尘`腐蚀。电磁干扰等) 的要求。",
+      "type": "语义分解",
+      "subject": "能源计量器具",
+      "action": "",
+      "operation": "满足工艺和环境要求",
+      "condition": "",
+      "constraint": "应满足生产工艺 被测介质及使用环境",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源计量器具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "环境指标文字存在识别错误，不能据此补造数值"
+      ]
+    }
+  }
+}

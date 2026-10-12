@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "4.2.3.3",
+  "entities": [
+    {
+      "name": "防爆专业人员能力证明",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3.3 专业人员 专业人员应取得能力证明，证明其达到在 4.2.2.2中规定的与防爆型式和 /或所涉及设备类型有关 的知识和技能要求。 他们还应证明有能力进行下列工作: 使用 4.1规定的文件; 检查和维护相关防爆型式所必需的实际经验",
+      "type": "语义分解",
+      "subject": "防爆专业人员能力证明",
+      "action": "",
+      "operation": "证明规定知识技能文件使用与检查维护实际经验",
+      "condition": "",
+      "constraint": "4.2.3.3 专业人员 专业人员应取得能力证明，证明其达到在 4.2.2.2中规定的与防爆型式和 /或所涉及设备类型有关 的知识和技能要求。 他们还应证明有能力进行下列工作: 使用 4.1规定的文件; 检查和维护相关防爆型式所必需的实际经验",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆专业人员能力证明"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3972,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

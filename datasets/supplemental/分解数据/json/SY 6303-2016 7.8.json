@@ -1,0 +1,41 @@
+{
+  "standard_name": "海洋石油设施热工(动火)作业安全规程",
+  "standard_id": "SY 6303-2016",
+  "version": "2016",
+  "chapter_path": "7.8",
+  "entities": [
+    {
+      "name": "罐容器动火检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.8 凡需要热工(动火)作业的储罐。容器等设施应采取必要的清扫或隔离措施。热工(动火)作业前30min内应迸行内部和周围环境气体检测(气体检测应包括可燃气体浓度。有毒有害气体检测,氧气浓度检测),同时应测爆合格和保持有效的通风。",
+      "type": "语义分解",
+      "subject": "罐容器动火检测",
+      "action": "",
+      "operation": "清扫隔离前30分钟内部周边燃毒氧测爆合格有效通风",
+      "condition": "",
+      "constraint": "7.8 凡需要热工(动火)作业的储罐。容器等设施应采取必要的清扫或隔离措施。热工(动火)作业前30min内应迸行内部和周围环境气体检测(气体检测应包括可燃气体浓度。有毒有害气体检测,氧气浓度检测),同时应测爆合格和保持有效的通风。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "罐容器动火检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7322,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

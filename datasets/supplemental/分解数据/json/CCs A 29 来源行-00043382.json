@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043382",
+  "entities": [
+    {
+      "name": ". 1 . 2 锌阳极按用途可分为船体用锌阳极、液舱用锌阳极、港工和海洋",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5 . 1 . 2    锌阳极按用途可分为船体用锌阳极、液舱用锌阳极、港工和海洋工程设施用锌阳极、海水冷却水\n系统用锌阳极、储罐用锌阳极和埋地管线用锌阳极。",
+      "type": "语义分解",
+      "subject": ". 1 . 2 锌阳极按用途可分为船体用锌阳极、液舱用锌阳极、港工和海洋",
+      "action": "",
+      "operation": ". 1 . 2 锌阳极按用途可分为船体用锌阳极、液舱用锌阳极、港工和海洋工程设施用锌阳极、海水冷却水 系统用锌阳极、储罐用锌阳极和埋地管线用锌阳极。",
+      "condition": "",
+      "constraint": "5 . 1 . 2    锌阳极按用途可分为船体用锌阳极、液舱用锌阳极、港工和海洋工程设施用锌阳极、海水冷却水\n系统用锌阳极、储罐用锌阳极和埋地管线用锌阳极。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 . 2 锌阳极按用途可分为船体用锌阳极、液舱用锌阳极、港工和海洋"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43382,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.4.1.2",
+  "entities": [
+    {
+      "name": "灭火剂选择",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.1.2 根据危险化学品特性 ,选用正确的灭火剂。禁止用水 ,泡沫等含水灭火剂扑救遇湿易燃物品,自燃物品火灾;禁用苴流水冲击扑灭粉末状 .易沸溅危险化学品火灾;禁用砂土盖压扑灭爆炸品火灾;宜使用低压水流或雾状水扑灭腐蚀品火灾 ,避免腐蚀品溅出;禁止对液态轻烃强行灭火。",
+      "type": "语义分解",
+      "subject": "灭火剂选择",
+      "action": "",
+      "operation": "按化学品特性选剂保留遇湿自燃粉末沸溅爆炸品等禁用措施及液态轻烃禁强灭",
+      "condition": "",
+      "constraint": "5.4.1.2 根据危险化学品特性 ,选用正确的灭火剂。禁止用水 ,泡沫等含水灭火剂扑救遇湿易燃物品,自燃物品火灾;禁用苴流水冲击扑灭粉末状 .易沸溅危险化学品火灾;禁用砂土盖压扑灭爆炸品火灾;宜使用低压水流或雾状水扑灭腐蚀品火灾 ,避免腐蚀品溅出;禁止对液态轻烃强行灭火。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火剂选择"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6005,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；多材料相容条件逐项复核不作通用喷水建议"
+      ]
+    }
+  }
+}

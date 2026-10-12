@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "5.8",
+  "entities": [
+    {
+      "name": "管道安全设施范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8 输油。输气管道安全设施一般包括如下内容 : 8)  压力。温度控制调节系统。 b)  自动报警。联锁控制保护系统。 c)  安全泄放系统。 4)  阻火器。紧急切断系统。 e)  火灾自动报警系统。火焰探测器。 f) 可燃气体监测报警系统。有毒有害气体监测报警系统。 8)管道泄漏监测报警系统。 h)  腐蚀控制与监测系统。 j)  水击控制系统 j)  自然灾害防护和安全保护设施。 k)  标志桩。锚固墩和警示设施。 I)  防雷。防静电设施。",
+      "type": "语义分解",
+      "subject": "管道安全设施范围",
+      "action": "",
+      "operation": "温压联锁泄放阻火紧切火燃毒漏测腐蚀水击灾害标志防雷静电",
+      "condition": "",
+      "constraint": "5.8 输油。输气管道安全设施一般包括如下内容 : 8)  压力。温度控制调节系统。 b)  自动报警。联锁控制保护系统。 c)  安全泄放系统。 4)  阻火器。紧急切断系统。 e)  火灾自动报警系统。火焰探测器。 f) 可燃气体监测报警系统。有毒有害气体监测报警系统。 8)管道泄漏监测报警系统。 h)  腐蚀控制与监测系统。 j)  水击控制系统 j)  自然灾害防护和安全保护设施。 k)  标志桩。锚固墩和警示设施。 I)  防雷。防静电设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道安全设施范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7350,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；一般设施清单"
+      ]
+    }
+  }
+}

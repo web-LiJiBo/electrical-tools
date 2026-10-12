@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.7.3",
+  "entities": [
+    {
+      "name": "T-MUX过载光功率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.3      过载光功率测试(图4.7.2),应使待测设备和传输分析仪\n保持正常状态，可逐渐调小连接待测端口的可调光衰耗器衰耗值，\n当传输分析仪检测到的误码率为1.00×10-¹²时，测得 T-MUX  接\n\n口平均接收光功率应符合表4.7.3的规定。",
+      "type": "语义分解",
+      "subject": "T-MUX过载光功率",
+      "action": "",
+      "operation": "正常运行逐减衰耗误码率达到指定值测平均接收功率符合引用表",
+      "condition": "",
+      "constraint": "4.7.3      过载光功率测试(图4.7.2),应使待测设备和传输分析仪\n保持正常状态，可逐渐调小连接待测端口的可调光衰耗器衰耗值，\n当传输分析仪检测到的误码率为1.00×10-¹²时，测得 T-MUX  接\n\n口平均接收光功率应符合表4.7.3的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "T-MUX过载光功率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8123,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用表未提供标准编号待核对"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "海洋石油设施热工(动火)作业安全规程",
+  "standard_id": "SY 6303-2016",
+  "version": "2016",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "海洋动火人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 热工(动火)作业人员应经过专业安全知识教育。应了解现场热工(动火)内容。熟悉热工(动火)方法和热工(动火)安全技术措施,特种作业人员应持有有效的特种作业资格证书。",
+      "type": "语义分解",
+      "subject": "海洋动火人员",
+      "action": "",
+      "operation": "专业安全教育了解方法措施特种有效持证",
+      "condition": "",
+      "constraint": "4.3 热工(动火)作业人员应经过专业安全知识教育。应了解现场热工(动火)内容。熟悉热工(动火)方法和热工(动火)安全技术措施,特种作业人员应持有有效的特种作业资格证书。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海洋动火人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7298,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "8.2.1",
+  "entities": [
+    {
+      "name": "软交换节点接口协议",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1      软交换网各类节点间的接口如图8.2.1所示，节点间采用\n的协议如表8.2.1所示，表中各类应用协议应符合 YDC 045《基于\n软交换的网络组网总体技术要求》的规定。",
+      "type": "语义分解",
+      "subject": "软交换节点接口协议",
+      "action": "",
+      "operation": "按引用图表并符合YDC045",
+      "condition": "",
+      "constraint": "8.2.1      软交换网各类节点间的接口如图8.2.1所示，节点间采用\n的协议如表8.2.1所示，表中各类应用协议应符合 YDC 045《基于\n软交换的网络组网总体技术要求》的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "软交换节点接口协议"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26005,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；图表未提供"
+      ]
+    }
+  }
+}

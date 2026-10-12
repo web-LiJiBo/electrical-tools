@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021633",
+  "entities": [
+    {
+      "name": ")单独的Sm 同步处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)单独的Sm 同步处理：如果每个独立的Sm没有激活CI_SSF 、dLOM 或 dSQM,  该功能将\n    独立的Sm 同步到公共的复帧起始，该同步处理至少应覆盖125μs 的延时差异。",
+      "type": "语义分解",
+      "subject": ")单独的Sm 同步处理",
+      "action": "",
+      "operation": ")单独的Sm 同步处理：如果每个独立的Sm没有激活CI_SSF 、dLOM 或 dSQM, 该功能将 独立的Sm 同步到公共的复帧起始，该同步处理至少应覆盖125μs 的延时差异。",
+      "condition": "",
+      "constraint": "3)单独的Sm 同步处理：如果每个独立的Sm没有激活CI_SSF 、dLOM 或 dSQM,  该功能将\n    独立的Sm 同步到公共的复帧起始，该同步处理至少应覆盖125μs 的延时差异。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")单独的Sm 同步处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21633,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

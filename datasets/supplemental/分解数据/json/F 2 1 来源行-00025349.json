@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025349",
+  "entities": [
+    {
+      "name": "b) 网关设备收到后向软交换机返回 100 Trying 消息，表明呼叫",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    网关设备收到后向软交换机返回 100 Trying 消息，表明呼叫处理中，并向电路交换信令测试\n       仪发送 SETUP 消息；",
+      "type": "语义分解",
+      "subject": "b) 网关设备收到后向软交换机返回 100 Trying 消息，表明呼叫",
+      "action": "",
+      "operation": "b) 网关设备收到后向软交换机返回 100 Trying 消息，表明呼叫处理中，并向电路交换信令测试 仪发送 SETUP 消息",
+      "condition": "",
+      "constraint": "b)    网关设备收到后向软交换机返回 100 Trying 消息，表明呼叫处理中，并向电路交换信令测试\n       仪发送 SETUP 消息；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 网关设备收到后向软交换机返回 100 Trying 消息，表明呼叫"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25349,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

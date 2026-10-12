@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "4.3.5",
+  "entities": [
+    {
+      "name": "冗余SDB安装",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.5  以本地网为单位引入 SDB 情况，冗余配置的 SDB 应安装\n在有一定距离的不同机房内；跨本地网合设 SDB 的情况，冗余配置\n的 SDB 宜安装在不同本地网机房内。",
+      "type": "语义分解",
+      "subject": "冗余SDB安装",
+      "action": "",
+      "operation": "本地设不同距离机房跨本地宜不同网机房",
+      "condition": "",
+      "constraint": "4.3.5  以本地网为单位引入 SDB 情况，冗余配置的 SDB 应安装\n在有一定距离的不同机房内；跨本地网合设 SDB 的情况，冗余配置\n的 SDB 宜安装在不同本地网机房内。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "冗余SDB安装"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25814,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

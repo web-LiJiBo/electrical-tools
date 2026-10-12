@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "5.14",
+  "entities": [
+    {
+      "name": "磷酸根测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.14 磷酸根的测定应根据具体情况选择合适的方法,一般锅炉使用单位可按附录 D 规定的方法进行 粗略测定 ,检验机构应按 GB/T 6913 规定的方法进行准确测定。",
+      "type": "语义分解",
+      "subject": "磷酸根测定",
+      "action": "",
+      "operation": "区分使用单位粗测和机构准确测定",
+      "condition": "",
+      "constraint": "5.14 磷酸根的测定应根据具体情况选择合适的方法,一般锅炉使用单位可按附录 D 规定的方法进行 粗略测定 ,检验机构应按 GB/T 6913 规定的方法进行准确测定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "磷酸根测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4128,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺附录D"
+      ]
+    }
+  }
+}

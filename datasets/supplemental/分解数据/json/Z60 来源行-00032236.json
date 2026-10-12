@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032236",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "HJ 543    固定污染源废气 汞的测定 冷原子吸收分光光度法(暂行)\nHJ 629   固定污染源废气 二氧化硫的测定 非分散红外吸收法\nHJ 692   固定污染源废气 氮氧化物的测定 非分散红外吸收法\nHJ 693   固定污染源废气 氮氧化物的测定  定电位电解法\n《污染源自动监控管理办法》(国家环境保护总局令 第28号)\n《环境监测管理办法》(国家环境保护总局令  第39号)",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "HJ 543    固定污染源废气 汞的测定 冷原子吸收分光光度法(暂行)\nHJ 629   固定污染源废气 二氧化硫的测定 非分散红外吸收法\nHJ 692   固定污染源废气 氮氧化物的测定 非分散红外吸收法\nHJ 693   固定污染源废气 氮氧化物的测定  定电位电解法\n《污染源自动监控管理办法》(国家环境保护总局令 第28号)\n《环境监测管理办法》(国家环境保护总局令  第39号)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32236,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

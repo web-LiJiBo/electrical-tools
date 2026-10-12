@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "许可有效期",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1 排污许可证有效期限 依据排污许可证正 (副)本进行判定。其中,对照《产业结构调整指导目录》及地方相关文件要求, 属于淘汰类的项目。其排污许可证有效期应与淘汰期限保持一致。",
+      "type": "语义分解",
+      "subject": "许可有效期",
+      "action": "",
+      "operation": "依据正副本判定淘汰类期限与淘汰期限一致",
+      "condition": "",
+      "constraint": "6.2.1 排污许可证有效期限 依据排污许可证正 (副)本进行判定。其中,对照《产业结构调整指导目录》及地方相关文件要求, 属于淘汰类的项目。其排污许可证有效期应与淘汰期限保持一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可有效期"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1990,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

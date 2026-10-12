@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.3.4.1",
+  "entities": [
+    {
+      "name": "土壤下层采深",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4.1 土壤样品分表层土壤和下层土壤。下层土壤的采样深度应考虑污染物可能释放和迁移的深度 (如地下管线和储槽埋深)污染物性质。土壤的质地和孔隙度。地下水位和回填土等因素 可利用现场探测设备辅助判断采样深度。",
+      "type": "语义分解",
+      "subject": "土壤下层采深",
+      "action": "",
+      "operation": "依源埋深迁移物性孔隙水位回填判断可探测辅助",
+      "condition": "",
+      "constraint": "6.3.4.1 土壤样品分表层土壤和下层土壤。下层土壤的采样深度应考虑污染物可能释放和迁移的深度 (如地下管线和储槽埋深)污染物性质。土壤的质地和孔隙度。地下水位和回填土等因素 可利用现场探测设备辅助判断采样深度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤下层采深"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2651,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

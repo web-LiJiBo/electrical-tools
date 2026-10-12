@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.13.4",
+  "entities": [
+    {
+      "name": "网络设备安全验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.13.4      网络设备安全验收测试应包含操作系统安全性检查、防\n病毒检查、网络设备端口安全性检查等项目，各项内容应符合工程\n技术规范书的要求。",
+      "type": "语义分解",
+      "subject": "网络设备安全验收",
+      "action": "",
+      "operation": "操作系统病毒端口检查合技术书",
+      "condition": "",
+      "constraint": "4.13.4      网络设备安全验收测试应包含操作系统安全性检查、防\n病毒检查、网络设备端口安全性检查等项目，各项内容应符合工程\n技术规范书的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "网络设备安全验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27061,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

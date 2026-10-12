@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.2.2",
+  "entities": [
+    {
+      "name": "潮间带作业救生设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.2.2 在潮间带的石油作业设施,经发证检验机构同意,可免除救生艇 ,救助艇 ,气胀式救生筏的配备 ,但应配备能容纳设施定员的,有效的两栖救生装置。",
+      "type": "语义分解",
+      "subject": "潮间带作业救生设施",
+      "action": "",
+      "operation": "批准可免指定艇筏但保定员两栖救生",
+      "condition": "经发证检验机构同意",
+      "constraint": "6.11.2.2 在潮间带的石油作业设施,经发证检验机构同意,可免除救生艇 ,救助艇 ,气胀式救生筏的配备 ,但应配备能容纳设施定员的,有效的两栖救生装置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "潮间带作业救生设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4743,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

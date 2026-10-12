@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00044935",
+  "entities": [
+    {
+      "name": "外腐蚀 威胁 数据采集 否< 不适用 输入重要参数 输入方法选择 本标准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "                           外腐蚀\n                            威胁\n\n                           数据采集\n\n                       否<\n  不适用\n\n                                             输入重要参数\n\n                                              输入方法选择\n                                        本标准表5.4.1\n\n                             选择间接检测",
+      "type": "语义分解",
+      "subject": "外腐蚀 威胁 数据采集 否< 不适用 输入重要参数 输入方法选择 本标准",
+      "action": "",
+      "operation": "外腐蚀 威胁 数据采集 否< 不适用 输入重要参数 输入方法选择 本标准表5.4.1 选择间接检测",
+      "condition": "",
+      "constraint": "                           外腐蚀\n                            威胁\n\n                           数据采集\n\n                       否<\n  不适用\n\n                                             输入重要参数\n\n                                              输入方法选择\n                                        本标准表5.4.1\n\n                             选择间接检测",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外腐蚀 威胁 数据采集 否< 不适用 输入重要参数 输入方法选择 本标准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44935,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

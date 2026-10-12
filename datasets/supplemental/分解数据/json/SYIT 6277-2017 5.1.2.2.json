@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.1.2.2",
+  "entities": [
+    {
+      "name": "预测含硫场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.2 预测含有硫化氢的场所或探井井场应至少按以下要求配备 : a) 陆上按在岗人员数 IOo% 配备。 b) 海上钻井设施配备15套。 c) 海上井下作业设施配备10套 d) 海上有人值守的采油设施配备6套。 e) 海上录井。测井。工程技术服务队伍等按在岗人员数 I0o% 配备。",
+      "type": "语义分解",
+      "subject": "预测含硫场所",
+      "action": "",
+      "operation": "按陆海井作采油服务人数类型配呼吸器",
+      "condition": "",
+      "constraint": "5.1.2.2 预测含有硫化氢的场所或探井井场应至少按以下要求配备 : a) 陆上按在岗人员数 IOo% 配备。 b) 海上钻井设施配备15套。 c) 海上井下作业设施配备10套 d) 海上有人值守的采油设施配备6套。 e) 海上录井。测井。工程技术服务队伍等按在岗人员数 I0o% 配备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预测含硫场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7412,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；IOo%等数字异常需核查各套数及场景对应"
+      ]
+    }
+  }
+}

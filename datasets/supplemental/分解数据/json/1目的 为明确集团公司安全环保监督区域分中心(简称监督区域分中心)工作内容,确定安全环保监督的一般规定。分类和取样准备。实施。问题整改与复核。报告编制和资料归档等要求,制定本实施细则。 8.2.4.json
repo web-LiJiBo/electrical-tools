@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "8.2.4",
+  "entities": [
+    {
+      "name": "解剖式监督程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.4 解剖式监督应按照国家安全生产相关法律法规。标准规范与企业规章制度，关键程序包括但不限于以下内容:a)确定监督重点，编制监督检查表;b)编制监督重点内容相关培训课件;c)召开启动会并开展集中培训;d)对监督发现进行原因分析，并再次开展现场检查并确认;e)责任追溯;f)召开点评会并提出管理提升建议。",
+      "type": "语义分解",
+      "subject": "解剖式监督程序",
+      "action": "",
+      "operation": "重点检查培训原因分析复查追责点评",
+      "condition": "",
+      "constraint": "8.2.4 解剖式监督应按照国家安全生产相关法律法规。标准规范与企业规章制度，关键程序包括但不限于以下内容:a)确定监督重点，编制监督检查表;b)编制监督重点内容相关培训课件;c)召开启动会并开展集中培训;d)对监督发现进行原因分析，并再次开展现场检查并确认;e)责任追溯;f)召开点评会并提出管理提升建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "解剖式监督程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 736,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

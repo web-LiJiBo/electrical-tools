@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.6.5",
+  "entities": [
+    {
+      "name": "方法配对比对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.5 对每类实际样品采集至少7 个浓度水平接近的样品,分别采用新方法与比对方法标准进行测定。获得至少7组配对测定数据 当无法获得足够的实际样品量时 可采用实际样品基体加标的方式获得至少7组配对测定数据 可采用配对样本 检验法判定两种方法的测定结果是否具有显著差异,具体方法见附录B; 也可根据具体情况采用其他适用的统计检验方法",
+      "type": "语义分解",
+      "subject": "方法配对比对",
+      "action": "",
+      "operation": "每类至少七个近浓度样获得七组数据可用配对或适当统计检验",
+      "condition": "",
+      "constraint": "5.6.5 对每类实际样品采集至少7 个浓度水平接近的样品,分别采用新方法与比对方法标准进行测定。获得至少7组配对测定数据 当无法获得足够的实际样品量时 可采用实际样品基体加标的方式获得至少7组配对测定数据 可采用配对样本 检验法判定两种方法的测定结果是否具有显著差异,具体方法见附录B; 也可根据具体情况采用其他适用的统计检验方法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法配对比对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2325,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录B未提供"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "5.1.6",
+  "entities": [
+    {
+      "name": "固定源废气监测资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.6 固定污染源废气监测资料搜集 搜集的资料主要包括: a) 产生废气的生产工艺过程及生产设施的性能。排放的主要污染物种类及排放浓度的大致范围; b) 固定污染源废气排放控制设备设施的净化原理 工艺过程 主要技术指标等; c) 固定污染源所处的位置利数目 ,废气排放通道的布置及断面的形状。尺寸,排放通道周围的 环境状况。废气的去向及排气筒高度竽; d) 己有的废气排放监测数据和资料; e) 与固定污染源废气排放有关的其它技术资料。",
+      "type": "语义分解",
+      "subject": "固定源废气监测资料",
+      "action": "",
+      "operation": "搜集工艺治理设施排口及历史数据",
+      "condition": "",
+      "constraint": "5.1.6 固定污染源废气监测资料搜集 搜集的资料主要包括: a) 产生废气的生产工艺过程及生产设施的性能。排放的主要污染物种类及排放浓度的大致范围; b) 固定污染源废气排放控制设备设施的净化原理 工艺过程 主要技术指标等; c) 固定污染源所处的位置利数目 ,废气排放通道的布置及断面的形状。尺寸,排放通道周围的 环境状况。废气的去向及排气筒高度竽; d) 己有的废气排放监测数据和资料; e) 与固定污染源废气排放有关的其它技术资料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固定源废气监测资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 431,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

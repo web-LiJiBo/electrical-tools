@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-12",
+  "scope": "本地模拟指令模板补充，不接入真实设备，不修改原有条款或来源绑定",
+  "device_count_before": 11,
+  "device_count_after": 17,
+  "template_count_before": 19,
+  "template_count_after": 41,
+  "added_template_count": 22,
+  "categories": {
+    "battery_pcs": "IEC61850及Modbus各5个：启用、停用、报警、有功放电设定、功率上限设定",
+    "capacitor_bank": "IEC61850及Modbus各3个：投入、退出、报警（界面对应start/stop/alarm）",
+    "ventilation_fan": "IEC61850及Modbus各3个：启动、停止、报警"
+  },
+  "loading": "默认SimulationInstructionService合并simulation_devices.json与simulation_devices_supplement.json；自定义profile_path不自动合并补充文件；重复设备ID拒绝加载",
+  "files": ["configs/simulation_devices_supplement.json", "configs/instruction_template_examples_supplement.json", "tests/test_supplement_simulation_templates.py"],
+  "safety": ["所有新增source_rule_ids为空，source_scope为synthetic_test_fixture_pending_source_binding", "所有条件、范围、点位都是测试预设而非标准定值", "储能仅支持非负放电设定，不模拟充电和SOC动态演化", "限功率动作仅生成独立上限设定载荷，不模拟后续运行曲线或控制效果", "所有候选dispatch_allowed=false，生成不会修改设备状态", "待真实条款核验绑定，不能直接进入条款授权动作流程"],
+  "verification": "相关pytest共123项通过；隔离API的Playwright查询/详情/新增/重复拒绝/条件阻止/移动布局测试通过，不写入正式用户模板库",
+  "activation": "重启最新版后端，刷新前端，从指令模板管理中查询新增设备和动作。未推送远程仓库。",
+  "documentation_update": {
+    "date": "2026-10-12",
+    "entry": "README.md → 代码修改说明.md 第10节",
+    "content": ["新增模板数量与设备动作对照", "预置/用户模板分层加载与重启规则", "字段、条件、编码、来源绑定门禁说明", "界面查询补充及未实现能力", "可直接运行的最小实验", "历史验证与本次验证范围区别"],
+    "source_comments": ["SimulationInstructionService加载范围及generate边界", "TemplateLibrary是检索目录而非控制授权"],
+    "verification": "执行文档原始实验代码，成功PDU为06 01 9a 03 e8；条件阻止、状态不变；新增模板专项50项通过。未重跑全量或在线联调。",
+    "business_logic_changed": false
+  }
+}

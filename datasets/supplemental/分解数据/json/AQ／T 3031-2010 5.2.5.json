@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "5.2.5",
+  "entities": [
+    {
+      "name": "安全生产知识考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.5 危险化学品经营安全生产知识: a) 防火防爆: 1) 了解基本概念,燃烧的条件; 2) 熟悉防火防爆措施 ,防火管理要求。 b) 压力容器: 1) 了解基础知识; 2) 熟悉压力容器的安全防护知识及管理要求。 c) 电气安全: 1) 掌握电气防火防爆技术措施; 2) 熟悉防静电,防雷措施。",
+      "type": "语义分解",
+      "subject": "安全生产知识考核",
+      "action": "",
+      "operation": "考防火爆压力容器电气静电防雷知识措施管理",
+      "condition": "",
+      "constraint": "5.2.5 危险化学品经营安全生产知识: a) 防火防爆: 1) 了解基本概念,燃烧的条件; 2) 熟悉防火防爆措施 ,防火管理要求。 b) 压力容器: 1) 了解基础知识; 2) 熟悉压力容器的安全防护知识及管理要求。 c) 电气安全: 1) 掌握电气防火防爆技术措施; 2) 熟悉防静电,防雷措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全生产知识考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4944,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；考核范围"
+      ]
+    }
+  }
+}

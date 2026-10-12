@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042274",
+  "entities": [
+    {
+      "name": "所属企业负责人和有关人员在调查期间，不得擅离职守，应 当积极配合调查工作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   所属企业负责人和有关人员在调查期间，不得擅离职守，应\n\n当积极配合调查工作，接受调查组的询问，并如实提供相关文件、\n\n资料、数据、记录原件等。因客观原因确实无法提供的，可以提\n\n供相关复印件、复制品或者证明该原件、原物的照片、录像等其\n\n他证据，并由有关人员签字确认。",
+      "type": "语义分解",
+      "subject": "所属企业负责人和有关人员在调查期间，不得擅离职守，应 当积极配合调查工作",
+      "action": "",
+      "operation": "所属企业负责人和有关人员在调查期间，不得擅离职守，应 当积极配合调查工作，接受调查组的询问，并如实提供相关文件、 资料、数据、记录原件等。因客观原因确实无法提供的，可以提 供相关复印件、复制品或者证明该原件、原物的照片、录像等其 他证据，并由有关人员签字确认。",
+      "condition": "",
+      "constraint": "   所属企业负责人和有关人员在调查期间，不得擅离职守，应\n\n当积极配合调查工作，接受调查组的询问，并如实提供相关文件、\n\n资料、数据、记录原件等。因客观原因确实无法提供的，可以提\n\n供相关复印件、复制品或者证明该原件、原物的照片、录像等其\n\n他证据，并由有关人员签字确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "所属企业负责人和有关人员在调查期间，不得擅离职守，应 当积极配合调查工作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42274,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

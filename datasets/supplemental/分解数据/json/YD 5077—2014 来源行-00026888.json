@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026888",
+  "entities": [
+    {
+      "name": ". 过负荷控制测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      6.  过负荷控制测试：人工设置过负荷控制阀值，使用相关信令\n监测仪表增加 SDB 压力，观察SDB 在各等级压力下的过负荷控制\n能力。",
+      "type": "语义分解",
+      "subject": ". 过负荷控制测试",
+      "action": "",
+      "operation": ". 过负荷控制测试：人工设置过负荷控制阀值，使用相关信令 监测仪表增加 SDB 压力，观察SDB 在各等级压力下的过负荷控制 能力。",
+      "condition": "",
+      "constraint": "      6.  过负荷控制测试：人工设置过负荷控制阀值，使用相关信令\n监测仪表增加 SDB 压力，观察SDB 在各等级压力下的过负荷控制\n能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 过负荷控制测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26888,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

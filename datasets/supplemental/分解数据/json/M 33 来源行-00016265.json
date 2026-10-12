@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016265",
+  "entities": [
+    {
+      "name": "对于接口适配处理单元、线路处理单元、接口线路合一(普通波长转换)单元和线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于接口适配处理单元、线路处理单元、接口线路合一(普通波长转换)单元和线路中继(中继波\n长转换)单元的具体ODUk PM层开销处理要求见YD/T   1990-2009的9.3.6节，测试方法见第5.4.2节。\n9.4.3  ODUk TCM层开销处理",
+      "type": "语义分解",
+      "subject": "对于接口适配处理单元、线路处理单元、接口线路合一(普通波长转换)单元和线",
+      "action": "",
+      "operation": "对于接口适配处理单元、线路处理单元、接口线路合一(普通波长转换)单元和线路中继(中继波 长转换)单元的具体ODUk PM层开销处理要求见YD/T 1990-2009的9.3.6节，测试方法见第5.4.2节。 9.4.3 ODUk TCM层开销处理",
+      "condition": "",
+      "constraint": "   对于接口适配处理单元、线路处理单元、接口线路合一(普通波长转换)单元和线路中继(中继波\n长转换)单元的具体ODUk PM层开销处理要求见YD/T   1990-2009的9.3.6节，测试方法见第5.4.2节。\n9.4.3  ODUk TCM层开销处理",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于接口适配处理单元、线路处理单元、接口线路合一(普通波长转换)单元和线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16265,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

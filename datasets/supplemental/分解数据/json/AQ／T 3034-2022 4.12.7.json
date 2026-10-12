@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.12.7",
+  "entities": [
+    {
+      "name": "重大罐区高风险作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.12.7 在具有火灾爆炸风险的重大危险源罐区内动火应按特级动火作业管理;液化烃充装及在储存 具有火灾爆炸性危险化学品的罐区内进行流程切换 ,储罐脱水等高风险操作 ,应制定操作程序确认表. 对操作安全条件逐项确认,并配备监护人员。",
+      "type": "语义分解",
+      "subject": "重大罐区高风险作业",
+      "action": "",
+      "operation": "火爆罐区动火特级充装切换脱水等逐项确认程序表配监护",
+      "condition": "",
+      "constraint": "4.12.7 在具有火灾爆炸风险的重大危险源罐区内动火应按特级动火作业管理;液化烃充装及在储存 具有火灾爆炸性危险化学品的罐区内进行流程切换 ,储罐脱水等高风险操作 ,应制定操作程序确认表. 对操作安全条件逐项确认,并配备监护人员。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大罐区高风险作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5231,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

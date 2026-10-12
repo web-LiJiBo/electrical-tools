@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.4.2",
+  "entities": [
+    {
+      "name": "厂界噪声频次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2 监测频次 厂界环境噪声每季度至少开展一次监测，夜间生产的要监测夜间噪声",
+      "type": "语义分解",
+      "subject": "厂界噪声频次",
+      "action": "",
+      "operation": "季度至少一次夜产测夜噪",
+      "condition": "夜间生产的",
+      "constraint": "5.4.2 监测频次 厂界环境噪声每季度至少开展一次监测，夜间生产的要监测夜间噪声",
+      "constraint_role": "informational",
+      "related_entities": [
+        "厂界噪声频次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2856,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

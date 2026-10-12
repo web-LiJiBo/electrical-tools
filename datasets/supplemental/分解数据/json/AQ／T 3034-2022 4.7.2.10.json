@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.7.2.10",
+  "entities": [
+    {
+      "name": "安全设计重大变化",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.2.10 建设项目安全设计文件经相关主管部门批复后 ,如有下列情形之一的 ,建设单位应当重新进 行安全评价,并申请审查: 建设项目周边条件发生重大变化的; 娈更建设地址的; 主要技术 工艺路线 ,产品方案或者装置规模发生重大变化的; 建设项目在安全条件审查意见书有效期内未开工建设,期限届满后需要开工建设的_",
+      "type": "语义分解",
+      "subject": "安全设计重大变化",
+      "action": "",
+      "operation": "周边地址技术产品规模变化或审查超期开工重新评价申请审查",
+      "condition": "",
+      "constraint": "4.7.2.10 建设项目安全设计文件经相关主管部门批复后 ,如有下列情形之一的 ,建设单位应当重新进 行安全评价,并申请审查: 建设项目周边条件发生重大变化的; 娈更建设地址的; 主要技术 工艺路线 ,产品方案或者装置规模发生重大变化的; 建设项目在安全条件审查意见书有效期内未开工建设,期限届满后需要开工建设的_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全设计重大变化"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5120,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

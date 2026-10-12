@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033316",
+  "entities": [
+    {
+      "name": "b) 储罐附件开口(孔),除采样、计量、例行检查、维护和其他正常活动外，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)  储罐附件开口(孔),除采样、计量、例行检查、维护和其他正常活动外，应密闭。\nc)  支柱、导向装置等储罐附件穿过浮顶时，应采取密封措施。\nd)  除储罐排空作业外，浮顶应始终漂浮于储存物料的表面。",
+      "type": "语义分解",
+      "subject": "b) 储罐附件开口(孔),除采样、计量、例行检查、维护和其他正常活动外，",
+      "action": "",
+      "operation": "b) 储罐附件开口(孔),除采样、计量、例行检查、维护和其他正常活动外，应密闭。 c) 支柱、导向装置等储罐附件穿过浮顶时，应采取密封措施。 d) 除储罐排空作业外，浮顶应始终漂浮于储存物料的表面。",
+      "condition": "",
+      "constraint": "b)  储罐附件开口(孔),除采样、计量、例行检查、维护和其他正常活动外，应密闭。\nc)  支柱、导向装置等储罐附件穿过浮顶时，应采取密封措施。\nd)  除储罐排空作业外，浮顶应始终漂浮于储存物料的表面。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 储罐附件开口(孔),除采样、计量、例行检查、维护和其他正常活动外，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33316,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "可燃报警消防联动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2 可燃气体探测器参与火灾报警和消防联动时。探测器信号应先送至专用的可燃气体报警控制器。报警信号应由专用可燃气体报瞥控制器输出至火灾报警控制器或消防联动控制器。可燃气体报瞥信号与火灾报警信号在火灾报瞥控制系统中应有明显区别。",
+      "type": "语义分解",
+      "subject": "可燃报警消防联动",
+      "action": "",
+      "operation": "先专用控制器再输出火灾或联动控制器气体与火灾报警明显区分",
+      "condition": "",
+      "constraint": "6.4.2 可燃气体探测器参与火灾报警和消防联动时。探测器信号应先送至专用的可燃气体报警控制器。报警信号应由专用可燃气体报瞥控制器输出至火灾报警控制器或消防联动控制器。可燃气体报瞥信号与火灾报警信号在火灾报瞥控制系统中应有明显区别。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可燃报警消防联动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5828,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023336",
+  "entities": [
+    {
+      "name": "第二，雷电流相当于高频电源，除接地体的电阻和电导外，接 地体的电感和电容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   第二，雷电流相当于高频电源，除接地体的电阻和电导外，接\n地体的电感和电容对冲击阻抗发生作用，其作用的大小决定于接\n地体的形状、冲击电流的波形和幅值，以及土壤中电的参数e: 和\np, 即地的介电系数和土壤电阻率。",
+      "type": "语义分解",
+      "subject": "第二，雷电流相当于高频电源，除接地体的电阻和电导外，接 地体的电感和电容",
+      "action": "",
+      "operation": "第二，雷电流相当于高频电源，除接地体的电阻和电导外，接 地体的电感和电容对冲击阻抗发生作用，其作用的大小决定于接 地体的形状、冲击电流的波形和幅值，以及土壤中电的参数e: 和 p, 即地的介电系数和土壤电阻率。",
+      "condition": "",
+      "constraint": "   第二，雷电流相当于高频电源，除接地体的电阻和电导外，接\n地体的电感和电容对冲击阻抗发生作用，其作用的大小决定于接\n地体的形状、冲击电流的波形和幅值，以及土壤中电的参数e: 和\np, 即地的介电系数和土壤电阻率。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二，雷电流相当于高频电源，除接地体的电阻和电导外，接 地体的电感和电容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23336,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

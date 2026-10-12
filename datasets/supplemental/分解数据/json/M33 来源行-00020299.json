@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020299",
+  "entities": [
+    {
+      "name": ") SnP_C功能可提供路径保护以应对一条路径内路径终端源到路径终端宿中",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 2)  SnP_C功能可提供路径保护以应对一条路径内路径终端源到路径终端宿中的相关通道缺陷。\n\n     需要注意的是Sn/User_A 功能可在SnP_C 之前或之后连接或不存在。SnP_C 之前连接，用\n     户通道传送不被保护；SnP_C 之后连接，用户通道传送被保护。保护功能在连接功能子层\n\n    产生。",
+      "type": "语义分解",
+      "subject": ") SnP_C功能可提供路径保护以应对一条路径内路径终端源到路径终端宿中",
+      "action": "",
+      "operation": ") SnP_C功能可提供路径保护以应对一条路径内路径终端源到路径终端宿中的相关通道缺陷。 需要注意的是Sn/User_A 功能可在SnP_C 之前或之后连接或不存在。SnP_C 之前连接，用 户通道传送不被保护；SnP_C 之后连接，用户通道传送被保护。保护功能在连接功能子层 产生。",
+      "condition": "",
+      "constraint": " 2)  SnP_C功能可提供路径保护以应对一条路径内路径终端源到路径终端宿中的相关通道缺陷。\n\n     需要注意的是Sn/User_A 功能可在SnP_C 之前或之后连接或不存在。SnP_C 之前连接，用\n     户通道传送不被保护；SnP_C 之后连接，用户通道传送被保护。保护功能在连接功能子层\n\n    产生。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") SnP_C功能可提供路径保护以应对一条路径内路径终端源到路径终端宿中"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20299,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

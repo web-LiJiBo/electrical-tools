@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.2.1",
+  "entities": [
+    {
+      "name": "钻井地质资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2.1 应提供区域地质资料 ,本井地层压力 ,漏失压力 ,破裂压力 ,坍塌压力 ,地层应力 ,地层流体性质等的预测及岩性剖面资料。",
+      "type": "语义分解",
+      "subject": "钻井地质资料",
+      "action": "",
+      "operation": "提供压力应力流体预测及岩性剖面",
+      "condition": "",
+      "constraint": "5.2.2.1 应提供区域地质资料 ,本井地层压力 ,漏失压力 ,破裂压力 ,坍塌压力 ,地层应力 ,地层流体性质等的预测及岩性剖面资料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "钻井地质资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4279,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

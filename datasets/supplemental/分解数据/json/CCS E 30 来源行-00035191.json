@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035191",
+  "entities": [
+    {
+      "name": "由带有氧弹 、搅拌器的容器和其中浸氧弹的水组成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      由带有氧弹 、搅拌器的容器和其中浸氧弹的水组成 。  量热计容器由金属制成 ,铜或黄铜最佳 ,并涂\n油防褪光泽的涂层 ,全部表面经过高度抛光 ,其大小应保证在量热计装配时氧弹能完全浸入水中 。应采\n用均匀速度彻底搅拌水 ,但有最小的热量输入 。  连续搅拌对于 10 min,从量热计 、房间和夹套的相同温\n度开始 ,将量热计的温度升高不超过 0. 01 ℃ 。   陶瓷的浸没部分应通过一种低导热材料与外部连接 。",
+      "type": "语义分解",
+      "subject": "由带有氧弹 、搅拌器的容器和其中浸氧弹的水组成",
+      "action": "",
+      "operation": "由带有氧弹 、搅拌器的容器和其中浸氧弹的水组成 。 量热计容器由金属制成 ,铜或黄铜最佳 ,并涂 油防褪光泽的涂层 ,全部表面经过高度抛光 ,其大小应保证在量热计装配时氧弹能完全浸入水中 。应采 用均匀速度彻底搅拌水 ,但有最小的热量输入 。 连续搅拌对于 10 min,从量热计 、房间和夹套的相同温 度开始 ,将量热计的温度升高不超过 0. 01 ℃ 。 陶瓷的浸没部分应通过一种低导热材料与外部连接 。",
+      "condition": "",
+      "constraint": "      由带有氧弹 、搅拌器的容器和其中浸氧弹的水组成 。  量热计容器由金属制成 ,铜或黄铜最佳 ,并涂\n油防褪光泽的涂层 ,全部表面经过高度抛光 ,其大小应保证在量热计装配时氧弹能完全浸入水中 。应采\n用均匀速度彻底搅拌水 ,但有最小的热量输入 。  连续搅拌对于 10 min,从量热计 、房间和夹套的相同温\n度开始 ,将量热计的温度升高不超过 0. 01 ℃ 。   陶瓷的浸没部分应通过一种低导热材料与外部连接 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "由带有氧弹 、搅拌器的容器和其中浸氧弹的水组成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35191,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

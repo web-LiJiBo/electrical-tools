@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.5",
+  "entities": [
+    {
+      "name": "安防网络",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5 安全防范系统宜采用专用传输网络，可采用专线方式或公共传输网络基础上的虚拟专网(VPN)方式。传输网络宜采用以监控中心为汇接/核心点(根节点)的星形/树形传输网络拓扑结构。系统传输的通信链路应满足系统的信息传输、交换和共享应用的需要。当有线传输不具备条件时，可采用具有相应安全措施的无线传输方式。",
+      "type": "语义分解",
+      "subject": "安防网络",
+      "action": "",
+      "operation": "宜专网专线VPN星树满足交换共享不具有线条件可安全无线",
+      "condition": "",
+      "constraint": "4.2.5 安全防范系统宜采用专用传输网络，可采用专线方式或公共传输网络基础上的虚拟专网(VPN)方式。传输网络宜采用以监控中心为汇接/核心点(根节点)的星形/树形传输网络拓扑结构。系统传输的通信链路应满足系统的信息传输、交换和共享应用的需要。当有线传输不具备条件时，可采用具有相应安全措施的无线传输方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防网络"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6883,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

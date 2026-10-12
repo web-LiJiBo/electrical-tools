@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "5.1.3",
+  "entities": [
+    {
+      "name": "试运转复核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.3      试运转验收测试应对初验测试中不合格的指标进行复核，\n要求达到合格。",
+      "type": "语义分解",
+      "subject": "试运转复核",
+      "action": "",
+      "operation": "初验不合格指标复核达合格",
+      "condition": "",
+      "constraint": "5.1.3      试运转验收测试应对初验测试中不合格的指标进行复核，\n要求达到合格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运转复核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27072,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

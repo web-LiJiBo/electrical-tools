@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "8.2.1",
+  "entities": [
+    {
+      "name": "pH比色测定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1 原理 用本方法测定pH值可准确到0.1。不同的酸碱指示剂在一定的pH范围内显示出不同颜色。在一系列已知pH值的标准缓冲溶液及水样中加入相同的指示剂，显色后比对测得水样的pH值。水样带有颜色、浑浊或含有较多的游离余氯、氧化剂、还原剂时均有干扰。",
+      "type": "语义分解",
+      "subject": "pH比色测定",
+      "action": "",
+      "operation": "加同指示剂比对缓冲液色度测至0.1注意有色浑浊氧化还原干扰",
+      "condition": "",
+      "constraint": "8.2.1 原理 用本方法测定pH值可准确到0.1。不同的酸碱指示剂在一定的pH范围内显示出不同颜色。在一系列已知pH值的标准缓冲溶液及水样中加入相同的指示剂，显色后比对测得水样的pH值。水样带有颜色、浑浊或含有较多的游离余氯、氧化剂、还原剂时均有干扰。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "pH比色测定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1356,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

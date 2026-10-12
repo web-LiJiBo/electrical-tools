@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013872",
+  "entities": [
+    {
+      "name": "OMS-0 是伴随OMS-P 的非随路开销信息，其包含支持光复用段的维护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OMS-0 是伴随OMS-P 的非随路开销信息，其包含支持光复用段的维护和操作功能的信息。在OMS\n路径的中间节点产生和修改OMS-0;  在 OMS-P 信号组合和拆分时产生和终结。",
+      "type": "语义分解",
+      "subject": "OMS-0 是伴随OMS-P 的非随路开销信息，其包含支持光复用段的维护",
+      "action": "",
+      "operation": "OMS-0 是伴随OMS-P 的非随路开销信息，其包含支持光复用段的维护和操作功能的信息。在OMS 路径的中间节点产生和修改OMS-0; 在 OMS-P 信号组合和拆分时产生和终结。",
+      "condition": "",
+      "constraint": "      OMS-0 是伴随OMS-P 的非随路开销信息，其包含支持光复用段的维护和操作功能的信息。在OMS\n路径的中间节点产生和修改OMS-0;  在 OMS-P 信号组合和拆分时产生和终结。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OMS-0 是伴随OMS-P 的非随路开销信息，其包含支持光复用段的维护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13872,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

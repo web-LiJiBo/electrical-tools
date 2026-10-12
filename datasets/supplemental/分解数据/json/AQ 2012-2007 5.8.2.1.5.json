@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.8.2.1.5",
+  "entities": [
+    {
+      "name": "蒸汽发生器使用验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8.2.1.5 监督检验合格 ,安装单位提供规定的资料后 ,由企业主管部门组织进行总体验收,通过后取得相关登记手续和使用登记证后方可使用。",
+      "type": "语义分解",
+      "subject": "蒸汽发生器使用验收",
+      "action": "",
+      "operation": "检验资料总体验收登记取证后使用",
+      "condition": "",
+      "constraint": "5.8.2.1.5 监督检验合格 ,安装单位提供规定的资料后 ,由企业主管部门组织进行总体验收,通过后取得相关登记手续和使用登记证后方可使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "蒸汽发生器使用验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4528,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

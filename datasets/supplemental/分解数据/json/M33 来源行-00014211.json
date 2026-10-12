@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014211",
+  "entities": [
+    {
+      "name": "注1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注1:上面缺陷仅仅是通道缺陷，段缺陷会引起通道层的AIS缺陷，如OCh LOS、OTUk LOF、OTUk AIS、OTUk TIM\n     以及OTM LOS等；\n注2:以上近端缺陷引起近端SES时，远端性能事件计数不会增加，即认为无误码运行。当大于15%的误码块导致的近\n    端SES,远端性能将继续评估；近端缺陷引起的SES不允许远端可靠性评估。特别需要注意，当缺陷引起的近端\n     SES与远端SES一致时，远端事件的评估将不准确，如SES或不可用。该问题不可避免，由于现象出现的概率小，\n     实际情况中可以忽略；\n注3:关于每个路径终端宿功能的缺陷引起的性能监控描述参考ITU-TG.798",
+      "type": "语义分解",
+      "subject": "注1",
+      "action": "",
+      "operation": "注1:上面缺陷仅仅是通道缺陷，段缺陷会引起通道层的AIS缺陷，如OCh LOS、OTUk LOF、OTUk AIS、OTUk TIM 以及OTM LOS等； 注2:以上近端缺陷引起近端SES时，远端性能事件计数不会增加，即认为无误码运行。当大于15%的误码块导致的近 端SES,远端性能将继续评估；近端缺陷引起的SES不允许远端可靠性评估。特别需要注意，当缺陷引起的近端 SES与远端SES一致时，远端事件的评估将不准确，如SES或不可用。该问题不可避免，由于现象出现的概率小， ",
+      "condition": "",
+      "constraint": "注1:上面缺陷仅仅是通道缺陷，段缺陷会引起通道层的AIS缺陷，如OCh LOS、OTUk LOF、OTUk AIS、OTUk TIM\n     以及OTM LOS等；\n注2:以上近端缺陷引起近端SES时，远端性能事件计数不会增加，即认为无误码运行。当大于15%的误码块导致的近\n    端SES,远端性能将继续评估；近端缺陷引起的SES不允许远端可靠性评估。特别需要注意，当缺陷引起的近端\n     SES与远端SES一致时，远端事件的评估将不准确，如SES或不可用。该问题不可避免，由于现象出现的概率小，\n     实际情况中可以忽略；\n注3:关于每个路径终端宿功能的缺陷引起的性能监控描述参考ITU-TG.798",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14211,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

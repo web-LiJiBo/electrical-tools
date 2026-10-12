@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041357",
+  "entities": [
+    {
+      "name": "所有设备应根据原始设计进行安装",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   所有设备应根据原始设计进行安装。任何与原有规格不同之处应全面评估，以确保操作安全。有\n关设备安装参考API RP  12R1和API   RP   7C-11F。\n7.4.6  竣工的图纸",
+      "type": "语义分解",
+      "subject": "所有设备应根据原始设计进行安装",
+      "action": "",
+      "operation": "所有设备应根据原始设计进行安装。任何与原有规格不同之处应全面评估，以确保操作安全。有 关设备安装参考API RP 12R1和API RP 7C-11F。 7.4.6 竣工的图纸",
+      "condition": "",
+      "constraint": "   所有设备应根据原始设计进行安装。任何与原有规格不同之处应全面评估，以确保操作安全。有\n关设备安装参考API RP  12R1和API   RP   7C-11F。\n7.4.6  竣工的图纸",
+      "constraint_role": "informational",
+      "related_entities": [
+        "所有设备应根据原始设计进行安装"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41357,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

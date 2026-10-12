@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.6.1",
+  "entities": [
+    {
+      "name": "设备器材安全指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.1 安全防范系统所用设备、器材的安全性指标应符合现行国家标准《安全防范报警设备 安全要求和试验方法》GB 16796和相关产品标准规定的安全性能要求。",
+      "type": "语义分解",
+      "subject": "设备器材安全指标",
+      "action": "",
+      "operation": "符合GB16796及产品标准",
+      "condition": "",
+      "constraint": "6.6.1 安全防范系统所用设备、器材的安全性指标应符合现行国家标准《安全防范报警设备 安全要求和试验方法》GB 16796和相关产品标准规定的安全性能要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备器材安全指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7000,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

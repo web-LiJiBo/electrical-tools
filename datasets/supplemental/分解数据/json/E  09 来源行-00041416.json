@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041416",
+  "entities": [
+    {
+      "name": "溢出一旦发生时，有关操作人员应熟知如何快速响应，有效控制、阻止和清理溢出",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   溢出一旦发生时，有关操作人员应熟知如何快速响应，有效控制、阻止和清理溢出。为确保事故\n得到有效控制，应制定意外事故预案，并提供给与事故有关的各方。",
+      "type": "语义分解",
+      "subject": "溢出一旦发生时，有关操作人员应熟知如何快速响应，有效控制、阻止和清理溢出",
+      "action": "",
+      "operation": "溢出一旦发生时，有关操作人员应熟知如何快速响应，有效控制、阻止和清理溢出。为确保事故 得到有效控制，应制定意外事故预案，并提供给与事故有关的各方。",
+      "condition": "",
+      "constraint": "   溢出一旦发生时，有关操作人员应熟知如何快速响应，有效控制、阻止和清理溢出。为确保事故\n得到有效控制，应制定意外事故预案，并提供给与事故有关的各方。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "溢出一旦发生时，有关操作人员应熟知如何快速响应，有效控制、阻止和清理溢出"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41416,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

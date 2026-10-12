@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.2.3",
+  "entities": [
+    {
+      "name": "第3款1)用户号码变换是指 SDB 将主叫用户的号码由物 理号码变换为逻",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3  第3款1)用户号码变换是指 SDB 将主叫用户的号码由物\n理号码变换为逻辑号码，或将被叫用户的号码由逻辑号码变换为\n物理号码。用户业务属性信息查询功能是指 SDB 根据主叫用户、\n被叫用户的业务属性信息返回相应的业务接入码或业务接人码+\n被叫用户号码。",
+      "type": "语义分解",
+      "subject": "第3款1)用户号码变换是指 SDB 将主叫用户的号码由物 理号码变换为逻",
+      "action": "",
+      "operation": "第3款1)用户号码变换是指 SDB 将主叫用户的号码由物 理号码变换为逻辑号码，或将被叫用户的号码由逻辑号码变换为 物理号码。用户业务属性信息查询功能是指 SDB 根据主叫用户、 被叫用户的业务属性信息返回相应的业务接入码或业务接人码+ 被叫用户号码。",
+      "condition": "",
+      "constraint": "4.2.3  第3款1)用户号码变换是指 SDB 将主叫用户的号码由物\n理号码变换为逻辑号码，或将被叫用户的号码由逻辑号码变换为\n物理号码。用户业务属性信息查询功能是指 SDB 根据主叫用户、\n被叫用户的业务属性信息返回相应的业务接入码或业务接人码+\n被叫用户号码。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第3款1)用户号码变换是指 SDB 将主叫用户的号码由物 理号码变换为逻"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27227,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

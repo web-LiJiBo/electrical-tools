@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049693",
+  "entities": [
+    {
+      "name": "本条说明了在储罐阴极保护系统投运前，对储罐进行检 测，如果发现储罐罐底对",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.0.1       本条说明了在储罐阴极保护系统投运前，对储罐进行检\n测，如果发现储罐罐底对地电位发生了超过20mV 的正向偏移，\n并且偏移相对平稳、具有持续性，那么此时储罐罐底阴极保护系\n统很有可能受到了外界的干扰，这时应对储罐阴极保护系统进行\n监测。",
+      "type": "语义分解",
+      "subject": "本条说明了在储罐阴极保护系统投运前，对储罐进行检 测，如果发现储罐罐底对",
+      "action": "",
+      "operation": "本条说明了在储罐阴极保护系统投运前，对储罐进行检 测，如果发现储罐罐底对地电位发生了超过20mV 的正向偏移， 并且偏移相对平稳、具有持续性，那么此时储罐罐底阴极保护系 统很有可能受到了外界的干扰，这时应对储罐阴极保护系统进行 监测。",
+      "condition": "",
+      "constraint": "8.0.1       本条说明了在储罐阴极保护系统投运前，对储罐进行检\n测，如果发现储罐罐底对地电位发生了超过20mV 的正向偏移，\n并且偏移相对平稳、具有持续性，那么此时储罐罐底阴极保护系\n统很有可能受到了外界的干扰，这时应对储罐阴极保护系统进行\n监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条说明了在储罐阴极保护系统投运前，对储罐进行检 测，如果发现储罐罐底对"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49693,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

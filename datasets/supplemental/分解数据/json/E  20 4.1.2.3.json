@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.1.2.3",
+  "entities": [
+    {
+      "name": "环境监理工作应对施工中发生的环保违规行为进行记录，包括施工地点、施工单位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2.3 环境监理工作应对施工中发生的环保违规行为进行记录，包括施工地点、施工单位、工段负\n责人及联系方式、施工作业内容、违规行为描述、违规行为发生的原因、补救措施及其效果、预防类\n似违规行为的建议等信息。",
+      "type": "语义分解",
+      "subject": "环境监理工作应对施工中发生的环保违规行为进行记录，包括施工地点、施工单位",
+      "action": "",
+      "operation": "环境监理工作应对施工中发生的环保违规行为进行记录，包括施工地点、施工单位、工段负 责人及联系方式、施工作业内容、违规行为描述、违规行为发生的原因、补救措施及其效果、预防类 似违规行为的建议等信息。",
+      "condition": "",
+      "constraint": "4.1.2.3 环境监理工作应对施工中发生的环保违规行为进行记录，包括施工地点、施工单位、工段负\n责人及联系方式、施工作业内容、违规行为描述、违规行为发生的原因、补救措施及其效果、预防类\n似违规行为的建议等信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境监理工作应对施工中发生的环保违规行为进行记录，包括施工地点、施工单位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41949,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

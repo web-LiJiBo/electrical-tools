@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "逃生通道和梯道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2 逃生通道的设置应符合以下要求 a) 净宽度不小于 Im, 诤空高度不小于2.2皿。 b) 便于通过且没有障碍。 c ) 设有足够数量的白天和夜晚都能看见的逃离方向的警示标志。 d) 逃生梯道净宽度不小于 0.8m,斜度不大于50。 两侧应设有扶手栏杆,踏步应为防滑型",
+      "type": "语义分解",
+      "subject": "逃生通道和梯道",
+      "action": "",
+      "operation": "保持畅通昼夜标识防滑扶手满足尺寸坡度要求",
+      "condition": "",
+      "constraint": "6.4.2 逃生通道的设置应符合以下要求 a) 净宽度不小于 Im, 诤空高度不小于2.2皿。 b) 便于通过且没有障碍。 c ) 设有足够数量的白天和夜晚都能看见的逃离方向的警示标志。 d) 逃生梯道净宽度不小于 0.8m,斜度不大于50。 两侧应设有扶手栏杆,踏步应为防滑型",
+      "constraint_role": "informational",
+      "related_entities": [
+        "逃生通道和梯道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7464,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；宽高坡度单位识别缺损待核对"
+      ]
+    }
+  }
+}

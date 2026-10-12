@@ -10,6 +10,11 @@ from .normalizer import DomainTermNormalizer
 
 
 class LocalQwenDecomposer:
+    def complete(self, system_prompt: str, user_prompt: str) -> str:
+        if self._decomposer._model is None:
+            self._decomposer.load()
+        return self._decomposer._generate(user_prompt, system_prompt)
+
     def __init__(self, config: QwenDecompositionConfig | None = None, fallback: RawTextFallback | None = None) -> None:
         self._decomposer = QwenTextDecomposer(config)
         self._fallback = fallback or RawTextFallback()

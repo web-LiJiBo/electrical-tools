@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "6.1.2.3",
+  "entities": [
+    {
+      "name": "制药污水运行记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2.3 污水处理设施运行状况记录 按日记录污水处理量 排放量 回用水量 回用率。污泥产生量 (记录含水率) `污水处理使用的药剂名称及用量。鼓风机电量等; 记录污水处理设施运行。故障及维护情况等。",
+      "type": "语义分解",
+      "subject": "制药污水运行记录",
+      "action": "",
+      "operation": "每日记处理排放回用率污泥含水药剂电量及运行故障维护",
+      "condition": "",
+      "constraint": "6.1.2.3 污水处理设施运行状况记录 按日记录污水处理量 排放量 回用水量 回用率。污泥产生量 (记录含水率) `污水处理使用的药剂名称及用量。鼓风机电量等; 记录污水处理设施运行。故障及维护情况等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药污水运行记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2922,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

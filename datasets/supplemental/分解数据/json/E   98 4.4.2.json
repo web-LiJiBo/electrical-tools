@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "4.4.2",
+  "entities": [
+    {
+      "name": "本条的目的与绝缘法兰的要求相同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2   本条的目的与绝缘法兰的要求相同。不推荐采用现场组\n装的绝缘短管，绝缘短管应在工厂预制组装，各项性能测试合\n格后，才能使用。",
+      "type": "语义分解",
+      "subject": "本条的目的与绝缘法兰的要求相同",
+      "action": "",
+      "operation": "本条的目的与绝缘法兰的要求相同。不推荐采用现场组 装的绝缘短管，绝缘短管应在工厂预制组装，各项性能测试合 格后，才能使用。",
+      "condition": "",
+      "constraint": "4.4.2   本条的目的与绝缘法兰的要求相同。不推荐采用现场组\n装的绝缘短管，绝缘短管应在工厂预制组装，各项性能测试合\n格后，才能使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条的目的与绝缘法兰的要求相同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44547,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045008",
+  "entities": [
+    {
+      "name": "间接检测结果单项评价可按表6.4.2-1进行，综合评价 可按表6.4.2",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2    间接检测结果单项评价可按表6.4.2-1进行，综合评价\n可按表6.4.2-2进行。交流干扰腐蚀宜作为一个相对独立的评\n价因素，在交流干扰严重管段应单独进行评价，交流干扰评价\n指标应按现行国家标准《埋地钢质管道交流干扰防护技术标准》\nGB/T 50698的有关规定进行。",
+      "type": "语义分解",
+      "subject": "间接检测结果单项评价可按表6.4.2-1进行，综合评价 可按表6.4.2",
+      "action": "",
+      "operation": "间接检测结果单项评价可按表6.4.2-1进行，综合评价 可按表6.4.2-2进行。交流干扰腐蚀宜作为一个相对独立的评 价因素，在交流干扰严重管段应单独进行评价，交流干扰评价 指标应按现行国家标准《埋地钢质管道交流干扰防护技术标准》 GB/T 50698的有关规定进行。",
+      "condition": "",
+      "constraint": "6.4.2    间接检测结果单项评价可按表6.4.2-1进行，综合评价\n可按表6.4.2-2进行。交流干扰腐蚀宜作为一个相对独立的评\n价因素，在交流干扰严重管段应单独进行评价，交流干扰评价\n指标应按现行国家标准《埋地钢质管道交流干扰防护技术标准》\nGB/T 50698的有关规定进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "间接检测结果单项评价可按表6.4.2-1进行，综合评价 可按表6.4.2"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45008,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

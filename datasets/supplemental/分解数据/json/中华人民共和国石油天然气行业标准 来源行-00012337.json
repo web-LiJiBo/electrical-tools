@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012337",
+  "entities": [
+    {
+      "name": "为充分利用管道站场和管道附属机构的水、 电 、机房、 征地等设施 , 减",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.4    为充分利用管道站场和管道附属机构的水、   电 、机房、\n征地等设施 ,   减少后期维护量 ,   同时方便使用 、   维护和检修 ,\n通信设备应尽可能安装在管道沿线的管道站场及各级管理机构\n所在地或管道附属的维抢修机构内 。",
+      "type": "语义分解",
+      "subject": "为充分利用管道站场和管道附属机构的水、 电 、机房、 征地等设施 , 减",
+      "action": "",
+      "operation": "为充分利用管道站场和管道附属机构的水、 电 、机房、 征地等设施 , 减少后期维护量 , 同时方便使用 、 维护和检修 , 通信设备应尽可能安装在管道沿线的管道站场及各级管理机构 所在地或管道附属的维抢修机构内 。",
+      "condition": "",
+      "constraint": "3.0.4    为充分利用管道站场和管道附属机构的水、   电 、机房、\n征地等设施 ,   减少后期维护量 ,   同时方便使用 、   维护和检修 ,\n通信设备应尽可能安装在管道沿线的管道站场及各级管理机构\n所在地或管道附属的维抢修机构内 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为充分利用管道站场和管道附属机构的水、 电 、机房、 征地等设施 , 减"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12337,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "3.7",
+  "entities": [
+    {
+      "name": "环评范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.7 环境影晌评价范围的确定 指建设项目整体实施后可能对环境造成的影响范围,具体根据环境要索和专题环境影响评价技术导 则的要求确定。环境影响评价技术导则中末明确具体评价范围的,根据建设项目可能影响范围确定。",
+      "type": "语义分解",
+      "subject": "环评范围",
+      "action": "",
+      "operation": "按整体影响与要素专题导则无规定则依可能影响范围",
+      "condition": "",
+      "constraint": "3.7 环境影晌评价范围的确定 指建设项目整体实施后可能对环境造成的影响范围,具体根据环境要索和专题环境影响评价技术导 则的要求确定。环境影响评价技术导则中末明确具体评价范围的,根据建设项目可能影响范围确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环评范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2543,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

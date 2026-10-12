@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "4.5",
+  "entities": [
+    {
+      "name": "充水检测安全评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5 充水运营隧道检测宜优先采用水下检测手段，水下检测影像资料要求见附录A, 水下检测设备\n性能参数要求见附录B。当管道及附属设施存在较大缺陷需进一步判别时，应采用排水检测。\n4.6   年度检查、定期检测与专项检测完成后，可通过应力分析、强度校核等手段评估管道的安全状\n态，给出下次检测时间及维护方案等建议，并对检查、检测中发现的隐患及时消除。",
+      "type": "语义分解",
+      "subject": "充水检测安全评估",
+      "action": "",
+      "operation": "优先水下重大缺陷排水检查后应力强度评估定维护下次检测及时消隐患",
+      "condition": "",
+      "constraint": "4.5 充水运营隧道检测宜优先采用水下检测手段，水下检测影像资料要求见附录A, 水下检测设备\n性能参数要求见附录B。当管道及附属设施存在较大缺陷需进一步判别时，应采用排水检测。\n4.6   年度检查、定期检测与专项检测完成后，可通过应力分析、强度校核等手段评估管道的安全状\n态，给出下次检测时间及维护方案等建议，并对检查、检测中发现的隐患及时消除。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "充水检测安全评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29708,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录缺失"
+      ]
+    }
+  }
+}

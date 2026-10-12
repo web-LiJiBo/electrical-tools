@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046645",
+  "entities": [
+    {
+      "name": "预评价的主要工作内容宜包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1   预评价的主要工作内容宜包括：数据采集、罐群分组、\n罐体部位划分、检测及评价方法的选择、方法的可行性评价五\n个部分。",
+      "type": "语义分解",
+      "subject": "预评价的主要工作内容宜包括",
+      "action": "",
+      "operation": "预评价的主要工作内容宜包括：数据采集、罐群分组、 罐体部位划分、检测及评价方法的选择、方法的可行性评价五 个部分。",
+      "condition": "",
+      "constraint": "4.1.1   预评价的主要工作内容宜包括：数据采集、罐群分组、\n罐体部位划分、检测及评价方法的选择、方法的可行性评价五\n个部分。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预评价的主要工作内容宜包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46645,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

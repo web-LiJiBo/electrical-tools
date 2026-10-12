@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.2.5",
+  "entities": [
+    {
+      "name": "单体设备级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5 单体设备级中未配置主要用能设备,若其他设备均配备能源计量器具,  用能 单元级和用能单位级可配备能源计量器具;若用能单元级或用能单位级配备能源计量 器具。其他设备可配备能源计量器具。",
+      "type": "语义分解",
+      "subject": "单体设备级",
+      "action": "",
+      "operation": "分层配备能源计量器具",
+      "condition": "单体设备级中未配置主要用能设备",
+      "constraint": "其他设备可配备能源计量器具",
+      "constraint_role": "informational",
+      "related_entities": [
+        "单体设备级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "两种条件分支需要结合全文核实"
+      ]
+    }
+  }
+}

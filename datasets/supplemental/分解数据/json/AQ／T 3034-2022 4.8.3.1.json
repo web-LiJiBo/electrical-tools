@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.8.3.1",
+  "entities": [
+    {
+      "name": "单机试车准备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.3.1 企业应成立单机试车小组 ,检查单机试车方案安全措施落实情况,主要包括: 单机安装工作全部完成; 转动设备保护装置 .机构及保护系统安装完成 ,保护功能试验合格 ; 动力系统检查确认具备使用条件; 划定试车区域 .无关人员禁止进人; 单机试车过程中 ,应安排专人操作 监护 ,记录 ,发现异常立即处理 ,专利设备或关键设备应由 供应商负责调试",
+      "type": "语义分解",
+      "subject": "单机试车准备",
+      "action": "",
+      "operation": "建组检查安装保护试验动力具条件划区专人操作监护记录异常处理关键供应商调试",
+      "condition": "",
+      "constraint": "4.8.3.1 企业应成立单机试车小组 ,检查单机试车方案安全措施落实情况,主要包括: 单机安装工作全部完成; 转动设备保护装置 .机构及保护系统安装完成 ,保护功能试验合格 ; 动力系统检查确认具备使用条件; 划定试车区域 .无关人员禁止进人; 单机试车过程中 ,应安排专人操作 监护 ,记录 ,发现异常立即处理 ,专利设备或关键设备应由 供应商负责调试",
+      "constraint_role": "informational",
+      "related_entities": [
+        "单机试车准备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5128,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

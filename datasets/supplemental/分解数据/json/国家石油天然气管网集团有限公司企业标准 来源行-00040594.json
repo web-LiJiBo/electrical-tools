@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040594",
+  "entities": [
+    {
+      "name": "本 文 件 由 国 家 石 油 天 然 气 管 网 集 团 有 限 公 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    本 文 件 由 国 家 石 油 天 然 气 管 网 集 团 有 限 公 司 标 准 化 委 员 会 安 全 环 保 专 业 标 准 化 技 术 委 员 会 提 出 并\n归口。",
+      "type": "语义分解",
+      "subject": "本 文 件 由 国 家 石 油 天 然 气 管 网 集 团 有 限 公 ",
+      "action": "",
+      "operation": "本 文 件 由 国 家 石 油 天 然 气 管 网 集 团 有 限 公 司 标 准 化 委 员 会 安 全 环 保 专 业 标 准 化 技 术 委 员 会 提 出 并 归口。",
+      "condition": "",
+      "constraint": "    本 文 件 由 国 家 石 油 天 然 气 管 网 集 团 有 限 公 司 标 准 化 委 员 会 安 全 环 保 专 业 标 准 化 技 术 委 员 会 提 出 并\n归口。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本 文 件 由 国 家 石 油 天 然 气 管 网 集 团 有 限 公 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40594,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

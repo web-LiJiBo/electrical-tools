@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "有外防腐层的管道间接检测内容应包括阴极保护有效性 评价、防腐层完整性评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1   有外防腐层的管道间接检测内容应包括阴极保护有效性\n评价、防腐层完整性评价、土壤腐蚀性等内容。开展管道阴极\n保护有效性评价时，应对管道存在的交直流干扰情况和程度进\n行评估；对无外防腐层的管道或防腐层质量较差的管道，宜以\n确定腐蚀活性为主。",
+      "type": "语义分解",
+      "subject": "有外防腐层的管道间接检测内容应包括阴极保护有效性 评价、防腐层完整性评价",
+      "action": "",
+      "operation": "有外防腐层的管道间接检测内容应包括阴极保护有效性 评价、防腐层完整性评价、土壤腐蚀性等内容。开展管道阴极 保护有效性评价时，应对管道存在的交直流干扰情况和程度进 行评估；对无外防腐层的管道或防腐层质量较差的管道，宜以 确定腐蚀活性为主。",
+      "condition": "",
+      "constraint": "6.1.1   有外防腐层的管道间接检测内容应包括阴极保护有效性\n评价、防腐层完整性评价、土壤腐蚀性等内容。开展管道阴极\n保护有效性评价时，应对管道存在的交直流干扰情况和程度进\n行评估；对无外防腐层的管道或防腐层质量较差的管道，宜以\n确定腐蚀活性为主。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "有外防腐层的管道间接检测内容应包括阴极保护有效性 评价、防腐层完整性评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44987,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

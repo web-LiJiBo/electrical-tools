@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "4.2.4",
+  "entities": [
+    {
+      "name": "污染源周边地下水监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4 污染源周边地下水监测以浅层地下水为主。如浅层地下水已被污染且下游存在地下水饮用水水源地。需增加主开采层地下水的监测点。",
+      "type": "语义分解",
+      "subject": "污染源周边地下水监测",
+      "action": "",
+      "operation": "浅层为主必要时增加主开采层点位",
+      "condition": "如浅层地下水已被污染且下游存在地下水饮用水水源地",
+      "constraint": "4.2.4 污染源周边地下水监测以浅层地下水为主。如浅层地下水已被污染且下游存在地下水饮用水水源地。需增加主开采层地下水的监测点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染源周边地下水监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2029,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

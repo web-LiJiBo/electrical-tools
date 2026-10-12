@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "8.1.1",
+  "entities": [
+    {
+      "name": "同场作业单位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.1 在一个场所内工作的一个或多个单位。应编制一个统一行动的硫化氢现场应急撤离方案。方案编制应符合以下要求 8) 应符合 GB/T 29639 的规定。 b) 应在方案中特别规定应急行动的统一现场应急指挥。 C ) 应在方案中明确应急信号,海上采用的信号应符合 SYIT 6633  的规定。",
+      "type": "语义分解",
+      "subject": "同场作业单位",
+      "action": "",
+      "operation": "统一撤离方案现场指挥和信号符合引用标准",
+      "condition": "",
+      "constraint": "8.1.1 在一个场所内工作的一个或多个单位。应编制一个统一行动的硫化氢现场应急撤离方案。方案编制应符合以下要求 8) 应符合 GB/T 29639 的规定。 b) 应在方案中特别规定应急行动的统一现场应急指挥。 C ) 应在方案中明确应急信号,海上采用的信号应符合 SYIT 6633  的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "同场作业单位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7482,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

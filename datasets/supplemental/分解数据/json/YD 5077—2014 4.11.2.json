@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.11.2",
+  "entities": [
+    {
+      "name": "传输指标抽测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.11.2      在工程验收中，对传输指标测试按工程情况以一种机型\n或从一批设备中抽测一个局示例，传输指标测试也可在设备出厂\n前在工厂进行，并由厂家提供测试合格记录。",
+      "type": "语义分解",
+      "subject": "传输指标抽测",
+      "action": "",
+      "operation": "按机型或抽局也可出厂测试厂家供合格记录",
+      "condition": "",
+      "constraint": "4.11.2      在工程验收中，对传输指标测试按工程情况以一种机型\n或从一批设备中抽测一个局示例，传输指标测试也可在设备出厂\n前在工厂进行，并由厂家提供测试合格记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "传输指标抽测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27042,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

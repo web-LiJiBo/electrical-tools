@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "5.3.2",
+  "entities": [
+    {
+      "name": "LCI数据收集",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.2 数据收集 在系统边界中每一个单元过程的数据可以按以下类型来划分，包括：能量输入、原材料输入、辅助性输入、其他实物输入；产品、共生产品和废物；向空气、水体和土壤中的排放物；其他环境因素。数据收集是一个资源密集的过程。在数据收集中受到的实际限制宜在研究范围中予以考虑，并载入研究报告。",
+      "type": "语义分解",
+      "subject": "LCI数据收集",
+      "action": "",
+      "operation": "分类能物输入产品废物排放其他因素",
+      "condition": "",
+      "constraint": "5.3.2 数据收集 在系统边界中每一个单元过程的数据可以按以下类型来划分，包括：能量输入、原材料输入、辅助性输入、其他实物输入；产品、共生产品和废物；向空气、水体和土壤中的排放物；其他环境因素。数据收集是一个资源密集的过程。在数据收集中受到的实际限制宜在研究范围中予以考虑，并载入研究报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "LCI数据收集"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1045,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

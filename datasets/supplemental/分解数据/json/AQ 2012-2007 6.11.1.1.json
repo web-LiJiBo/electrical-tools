@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.1.1",
+  "entities": [
+    {
+      "name": "涉水作业人员",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.1.1 所有涉水作业人员应穿救生衣 ,在寒冷地区应穿保温救生衣,且3人以上同行 ,互相监护 ,通过潮沟时应探明水深 ,超过安全水深(1 m)应用渡运工具。",
+      "type": "语义分解",
+      "subject": "涉水作业人员",
+      "action": "",
+      "operation": "穿救生衣多人监护探水深必要渡运",
+      "condition": "通过潮沟时",
+      "constraint": "6.11.1.1 所有涉水作业人员应穿救生衣 ,在寒冷地区应穿保温救生衣,且3人以上同行 ,互相监护 ,通过潮沟时应探明水深 ,超过安全水深(1 m)应用渡运工具。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "涉水作业人员"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4719,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

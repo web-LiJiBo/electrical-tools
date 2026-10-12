@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "平均值法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 平均值法是利用近几年的实际能耗量, 求取算术乎均值确定能耗的方法。",
+      "type": "语义分解",
+      "subject": "平均值法",
+      "action": "",
+      "operation": "以历史实际能耗算术平均确定能耗",
+      "condition": "",
+      "constraint": "近几年的实际能耗量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "平均值法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "算术乎均值有识别错误，不设定原文未给出的年数"
+      ]
+    }
+  }
+}

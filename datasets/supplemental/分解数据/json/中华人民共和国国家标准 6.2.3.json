@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "本条要求对积存物料的设施要能够完全清理，避免物料残 留或清理不净而影响生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3      本条要求对积存物料的设施要能够完全清理，避免物料残\n留或清理不净而影响生产。同时要求对放净、采样、溢流、检修、事\n故等放料进行收集并处理，避免物料流失。散排不仅造成物料流\n\n失和原料浪费，而且增加了污染程度。",
+      "type": "语义分解",
+      "subject": "本条要求对积存物料的设施要能够完全清理，避免物料残 留或清理不净而影响生",
+      "action": "",
+      "operation": "本条要求对积存物料的设施要能够完全清理，避免物料残 留或清理不净而影响生产。同时要求对放净、采样、溢流、检修、事 故等放料进行收集并处理，避免物料流失。散排不仅造成物料流 失和原料浪费，而且增加了污染程度。",
+      "condition": "",
+      "constraint": "6.2.3      本条要求对积存物料的设施要能够完全清理，避免物料残\n留或清理不净而影响生产。同时要求对放净、采样、溢流、检修、事\n故等放料进行收集并处理，避免物料流失。散排不仅造成物料流\n\n失和原料浪费，而且增加了污染程度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条要求对积存物料的设施要能够完全清理，避免物料残 留或清理不净而影响生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40411,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

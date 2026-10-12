@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.2.4",
+  "entities": [
+    {
+      "name": "其他大河值班室",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.4 实体防范除符合8.2.3  的规定外 ,宜在跨越或隧道穿越管段一端设值班室。 值班室设在 8.2.3 c) 所述的周界实体防范设施内部区域,不适宜设在周界实体防范设施内部区域的 ,采取其他实体防范 措施 <",
+      "type": "语义分解",
+      "subject": "其他大河值班室",
+      "action": "",
+      "operation": "宜在一端设室周界内部不宜内部采取其他物防",
+      "condition": "",
+      "constraint": "8.2.4 实体防范除符合8.2.3  的规定外 ,宜在跨越或隧道穿越管段一端设值班室。 值班室设在 8.2.3 c) 所述的周界实体防范设施内部区域,不适宜设在周界实体防范设施内部区域的 ,采取其他实体防范 措施 <",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他大河值班室"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5477,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

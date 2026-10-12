@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 发酵类制药工业",
+  "standard_id": "HJ 882-2017",
+  "version": "2017",
+  "chapter_path": "5.5.3",
+  "entities": [
+    {
+      "name": "多类型制药排污单位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.3 涉及化学合成类。发酵类和提取类两种以上工业类型的排污单位。监测方案中应涵盖所涉及工业类型的所有监测指标, 监测频次按照严格的执行。",
+      "type": "语义分解",
+      "subject": "多类型制药排污单位",
+      "action": "",
+      "operation": "涵盖全部类型指标并按严格频次监测",
+      "condition": "涉及化学合成类。发酵类和提取类两种以上工业类型的排污单位",
+      "constraint": "5.5.3 涉及化学合成类。发酵类和提取类两种以上工业类型的排污单位。监测方案中应涵盖所涉及工业类型的所有监测指标, 监测频次按照严格的执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多类型制药排污单位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2913,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

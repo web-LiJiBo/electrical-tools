@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041444",
+  "entities": [
+    {
+      "name": "报废结束后，所有受干扰的地表区域应进行清理，并恢复到与邻近土壤相似的状态",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   报废结束后，所有受干扰的地表区域应进行清理，并恢复到与邻近土壤相似的状态或符合土地使\n有者的要求。恢复应包括使用本地的植物种类或经认可的混合替代种类使受干扰地区稳定并能再种\n植，并考虑排水系统和维护要求。",
+      "type": "语义分解",
+      "subject": "报废结束后，所有受干扰的地表区域应进行清理，并恢复到与邻近土壤相似的状态",
+      "action": "",
+      "operation": "报废结束后，所有受干扰的地表区域应进行清理，并恢复到与邻近土壤相似的状态或符合土地使 有者的要求。恢复应包括使用本地的植物种类或经认可的混合替代种类使受干扰地区稳定并能再种 植，并考虑排水系统和维护要求。",
+      "condition": "",
+      "constraint": "   报废结束后，所有受干扰的地表区域应进行清理，并恢复到与邻近土壤相似的状态或符合土地使\n有者的要求。恢复应包括使用本地的植物种类或经认可的混合替代种类使受干扰地区稳定并能再种\n植，并考虑排水系统和维护要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报废结束后，所有受干扰的地表区域应进行清理，并恢复到与邻近土壤相似的状态"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41444,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

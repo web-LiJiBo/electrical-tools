@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "安全环保监督原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1  坚持安全第一、环保优先、预防为主、综合治理；\n\n5.2  坚持同体监督与异体监督相结合；\n\n5.3  坚持监督检查与指导服务相结合；\n\n5.4  坚持全面监督与重点监督相结合。",
+      "type": "语义分解",
+      "subject": "安全环保监督原则",
+      "action": "",
+      "operation": "安全环保优先预防综合内外监督检查指导全面重点结合",
+      "condition": "",
+      "constraint": "5.1  坚持安全第一、环保优先、预防为主、综合治理；\n\n5.2  坚持同体监督与异体监督相结合；\n\n5.3  坚持监督检查与指导服务相结合；\n\n5.4  坚持全面监督与重点监督相结合。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全环保监督原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29494,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

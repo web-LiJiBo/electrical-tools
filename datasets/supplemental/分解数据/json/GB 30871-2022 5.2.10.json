@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "5.2.10",
+  "entities": [
+    {
+      "name": "铁路沿线动火",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.10 在厂内铁路沿线 25 m 以内动火作业时，如遇装有危险化学品的火车通过或停留时，应立即停止作业。",
+      "type": "语义分解",
+      "subject": "铁路沿线动火",
+      "action": "",
+      "operation": "危化品火车通过停留时停止作业",
+      "condition": "如遇装有危险化学品的火车通过或停留时",
+      "constraint": "5.2.10 在厂内铁路沿线 25 m 以内动火作业时，如遇装有危险化学品的火车通过或停留时，应立即停止作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "铁路沿线动火"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3860,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；适用范围厂内铁路25m以内；不得解释为列车控制"
+      ]
+    }
+  }
+}

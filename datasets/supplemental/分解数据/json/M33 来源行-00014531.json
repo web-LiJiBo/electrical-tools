@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014531",
+  "entities": [
+    {
+      "name": "在可返回工作模式下，为防止抖动的缺陷引起频繁的保护倒换动作，在失效的工作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在可返回工作模式下，为防止抖动的缺陷引起频繁的保护倒换动作，在失效的工作通道的故障消失\n后，正常业务信号再次使用工作通道之前，应经过一个固定周期时间。这个周期，称为等待恢复( WTR)\n周期，它的范围在5min~12min, 应该可由用户设置。",
+      "type": "语义分解",
+      "subject": "在可返回工作模式下，为防止抖动的缺陷引起频繁的保护倒换动作，在失效的工作",
+      "action": "",
+      "operation": "在可返回工作模式下，为防止抖动的缺陷引起频繁的保护倒换动作，在失效的工作通道的故障消失 后，正常业务信号再次使用工作通道之前，应经过一个固定周期时间。这个周期，称为等待恢复( WTR) 周期，它的范围在5min~12min, 应该可由用户设置。",
+      "condition": "",
+      "constraint": "   在可返回工作模式下，为防止抖动的缺陷引起频繁的保护倒换动作，在失效的工作通道的故障消失\n后，正常业务信号再次使用工作通道之前，应经过一个固定周期时间。这个周期，称为等待恢复( WTR)\n周期，它的范围在5min~12min, 应该可由用户设置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在可返回工作模式下，为防止抖动的缺陷引起频繁的保护倒换动作，在失效的工作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14531,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

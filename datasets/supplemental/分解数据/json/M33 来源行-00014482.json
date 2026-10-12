@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014482",
+  "entities": [
+    {
+      "name": "接口适配处理单元是指具有 OTUk 交叉系统的情况下，在客户侧把需要上下",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    接口适配处理单元是指具有 OTUk 交叉系统的情况下，在客户侧把需要上下的客户信号转换为\nOTUk帧结构，并接入交叉调度的模块，同时也将需要相应的OTUk信号帧结构转换为客户信号。\n    线路处理单元是指具有OTUk 交叉系统的情况下，在线路侧把波长信号OCh 转换为OTUk帧结构，\n并接入交叉调度的模块，同时也完成将需要调度相应线路的OTUk帧结构信号转换为OCh 波长信号。\n    接口线路处理合一单元是指客户信号经过ODU,OTU   层处理最后转换为OCh 的业务单元。\n    线路中继或中继波长转换单元是指进行电中继、3R 处理的波长转换模块，即OTN 网络电中继单元。\n    各种类型的OTN 电层功能单元具备提供6级的TCM 功能，由用户选择使用。电层监控开销具体",
+      "type": "语义分解",
+      "subject": "接口适配处理单元是指具有 OTUk 交叉系统的情况下，在客户侧把需要上下",
+      "action": "",
+      "operation": "接口适配处理单元是指具有 OTUk 交叉系统的情况下，在客户侧把需要上下的客户信号转换为 OTUk帧结构，并接入交叉调度的模块，同时也将需要相应的OTUk信号帧结构转换为客户信号。 线路处理单元是指具有OTUk 交叉系统的情况下，在线路侧把波长信号OCh 转换为OTUk帧结构， 并接入交叉调度的模块，同时也完成将需要调度相应线路的OTUk帧结构信号转换为OCh 波长信号。 接口线路处理合一单元是指客户信号经过ODU,OTU 层处理最后转换为OCh 的业务单元。 线路中继或中继",
+      "condition": "",
+      "constraint": "    接口适配处理单元是指具有 OTUk 交叉系统的情况下，在客户侧把需要上下的客户信号转换为\nOTUk帧结构，并接入交叉调度的模块，同时也将需要相应的OTUk信号帧结构转换为客户信号。\n    线路处理单元是指具有OTUk 交叉系统的情况下，在线路侧把波长信号OCh 转换为OTUk帧结构，\n并接入交叉调度的模块，同时也完成将需要调度相应线路的OTUk帧结构信号转换为OCh 波长信号。\n    接口线路处理合一单元是指客户信号经过ODU,OTU   层处理最后转换为OCh 的业务单元。\n    线路中继或中继波长转换单元是指进行电中继、3R 处理的波长转换模块，即OTN 网络电中继单元。\n    各种类型的OTN 电层功能单元具备提供6级的TCM 功能，由用户选择使用。电层监控开销具体",
+      "constraint_role": "informational",
+      "related_entities": [
+        "接口适配处理单元是指具有 OTUk 交叉系统的情况下，在客户侧把需要上下"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14482,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

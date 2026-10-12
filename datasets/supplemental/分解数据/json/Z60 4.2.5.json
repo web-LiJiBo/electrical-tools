@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.2.5",
+  "entities": [
+    {
+      "name": "油船测量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.5    油船应采用封闭式液位监测系统测量油仓液位高度、油气压力和温度。\n4.2.6    采用红外摄像方式检测运输工具油气密封点时，不应有油气泄漏。",
+      "type": "语义分解",
+      "subject": "油船测量",
+      "action": "",
+      "operation": "封闭液位压力温度监测红外检测无漏",
+      "condition": "",
+      "constraint": "4.2.5    油船应采用封闭式液位监测系统测量油仓液位高度、油气压力和温度。\n4.2.6    采用红外摄像方式检测运输工具油气密封点时，不应有油气泄漏。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油船测量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32900,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

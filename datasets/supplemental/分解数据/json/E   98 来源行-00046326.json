@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046326",
+  "entities": [
+    {
+      "name": "E.4.1 测量厚度时，应注意观察耦合正常指示，获取正确读数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E.4.1   测量厚度时，应注意观察耦合正常指示，获取正确读数。\nE.4.2   超声波测量前被测金属表面应基本平滑，无杂物；测量\n时应在探头和金属表面间涂覆声阻抗大的耦合剂，并应施加适\n当压力。",
+      "type": "语义分解",
+      "subject": "E.4.1 测量厚度时，应注意观察耦合正常指示，获取正确读数",
+      "action": "",
+      "operation": "E.4.1 测量厚度时，应注意观察耦合正常指示，获取正确读数。 E.4.2 超声波测量前被测金属表面应基本平滑，无杂物；测量 时应在探头和金属表面间涂覆声阻抗大的耦合剂，并应施加适 当压力。",
+      "condition": "",
+      "constraint": "E.4.1   测量厚度时，应注意观察耦合正常指示，获取正确读数。\nE.4.2   超声波测量前被测金属表面应基本平滑，无杂物；测量\n时应在探头和金属表面间涂覆声阻抗大的耦合剂，并应施加适\n当压力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E.4.1 测量厚度时，应注意观察耦合正常指示，获取正确读数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46326,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

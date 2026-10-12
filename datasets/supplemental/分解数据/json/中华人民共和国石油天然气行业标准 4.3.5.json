@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.3.5",
+  "entities": [
+    {
+      "name": "OTM和OADM站址",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.5    OTM 站宜设置在供电条件较好的工艺站场 ,   OADM 站宜\n设置在 SDH 网络交汇节点 。",
+      "type": "语义分解",
+      "subject": "OTM和OADM站址",
+      "action": "",
+      "operation": "OTM宜供电良好工艺站OADM宜SDH交汇节点",
+      "condition": "",
+      "constraint": "4.3.5    OTM 站宜设置在供电条件较好的工艺站场 ,   OADM 站宜\n设置在 SDH 网络交汇节点 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTM和OADM站址"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11748,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

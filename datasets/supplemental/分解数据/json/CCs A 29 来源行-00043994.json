@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043994",
+  "entities": [
+    {
+      "name": "A．10 质量保证与控制 分析时，用标准样品或者控制样品进行校核，或每年",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A．10    质量保证与控制\n\n      分析时，用标准样品或者控制样品进行校核，或每年至少用标准样品或控制样品对分析方法校核一\n次 。  当过程失控时，应找出原因。  纠正错误后，重新进行校核。\n\nA．1 1     试验报告\n\n      试验报告至少应包括下列内容：\n      a)    试样信息；\n      b)    使用的试验方法和本文件编号；\n      c)    分析结果及其表示；\n      d)    测定中观察到的您常现象；\n      e)    对分析结果可能有影响而本文件未包括的操作；\n      f)     试验人、试验日期。",
+      "type": "语义分解",
+      "subject": "A．10 质量保证与控制 分析时，用标准样品或者控制样品进行校核，或每年",
+      "action": "",
+      "operation": "A．10 质量保证与控制 分析时，用标准样品或者控制样品进行校核，或每年至少用标准样品或控制样品对分析方法校核一 次 。 当过程失控时，应找出原因。 纠正错误后，重新进行校核。 A．1 1 试验报告 试验报告至少应包括下列内容： a) 试样信息； b) 使用的试验方法和本文件编号； c) 分析结果及其表示； d) 测定中观察到的您常现象； e) 对分析结果可能有影响而本文件未包括的操作； f) 试验人、试验日期。",
+      "condition": "",
+      "constraint": "A．10    质量保证与控制\n\n      分析时，用标准样品或者控制样品进行校核，或每年至少用标准样品或控制样品对分析方法校核一\n次 。  当过程失控时，应找出原因。  纠正错误后，重新进行校核。\n\nA．1 1     试验报告\n\n      试验报告至少应包括下列内容：\n      a)    试样信息；\n      b)    使用的试验方法和本文件编号；\n      c)    分析结果及其表示；\n      d)    测定中观察到的您常现象；\n      e)    对分析结果可能有影响而本文件未包括的操作；\n      f)     试验人、试验日期。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A．10 质量保证与控制 分析时，用标准样品或者控制样品进行校核，或每年"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

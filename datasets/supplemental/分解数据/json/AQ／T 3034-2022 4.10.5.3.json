@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.10.5.3",
+  "entities": [
+    {
+      "name": "关键机组在线监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.5.3 关键机组和设备应设置在线监测系统 ,对设备运行状态参数进行实时监控,预警 ,及时对设 备运行异常进行分析 ,处理。",
+      "type": "语义分解",
+      "subject": "关键机组在线监测",
+      "action": "",
+      "operation": "实时监控预警分析处理运行异常",
+      "condition": "",
+      "constraint": "4.10.5.3 关键机组和设备应设置在线监测系统 ,对设备运行状态参数进行实时监控,预警 ,及时对设 备运行异常进行分析 ,处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "关键机组在线监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5192,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；未给具体异常阈值"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046415",
+  "entities": [
+    {
+      "name": "多相流管道内腐蚀状况受流动状态、腐蚀环境及腐蚀介 质等多种因素综合影响，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5   多相流管道内腐蚀状况受流动状态、腐蚀环境及腐蚀介\n质等多种因素综合影响，目前已有的腐蚀模型难以涵盖所有的\n腐蚀因素和腐蚀类型，并且有一定的使用范围和局限性，为确\n保考虑更多的腐蚀影响因素，建议采用多种腐蚀模型对高风险\n点进行筛选，根据得到的结果进行综合分析。",
+      "type": "语义分解",
+      "subject": "多相流管道内腐蚀状况受流动状态、腐蚀环境及腐蚀介 质等多种因素综合影响，",
+      "action": "",
+      "operation": "多相流管道内腐蚀状况受流动状态、腐蚀环境及腐蚀介 质等多种因素综合影响，目前已有的腐蚀模型难以涵盖所有的 腐蚀因素和腐蚀类型，并且有一定的使用范围和局限性，为确 保考虑更多的腐蚀影响因素，建议采用多种腐蚀模型对高风险 点进行筛选，根据得到的结果进行综合分析。",
+      "condition": "",
+      "constraint": "5.5.5   多相流管道内腐蚀状况受流动状态、腐蚀环境及腐蚀介\n质等多种因素综合影响，目前已有的腐蚀模型难以涵盖所有的\n腐蚀因素和腐蚀类型，并且有一定的使用范围和局限性，为确\n保考虑更多的腐蚀影响因素，建议采用多种腐蚀模型对高风险\n点进行筛选，根据得到的结果进行综合分析。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多相流管道内腐蚀状况受流动状态、腐蚀环境及腐蚀介 质等多种因素综合影响，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46415,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

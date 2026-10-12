@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003943",
+  "entities": [
+    {
+      "name": "临时用电时间一般不超过15天，特殊情况不应超过30天",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.8 临时用电时间一般不超过15天，特殊情况不应超过30天;用于动火、受限空间作业的临时用电时间应和相应作业时间一致;用电结束后，用电单位应及时通知供电单位拆除临时用电线路。",
+      "type": "语义分解",
+      "subject": "临时用电时间一般不超过15天，特殊情况不应超过30天",
+      "action": "",
+      "operation": "临时用电时间一般不超过15天，特殊情况不应超过30天;用于动火、受限空间作业的临时用电时间应和相应作业时间一致;用电结束后，用电单位应及时通知供电单位拆除临时用电线路。",
+      "condition": "",
+      "constraint": "10.8 临时用电时间一般不超过15天，特殊情况不应超过30天;用于动火、受限空间作业的临时用电时间应和相应作业时间一致;用电结束后，用电单位应及时通知供电单位拆除临时用电线路。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "临时用电时间一般不超过15天，特殊情况不应超过30天"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3943,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

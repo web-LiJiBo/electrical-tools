@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.4.1.2",
+  "entities": [
+    {
+      "name": "井场方向布置和标志",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4.1.2 井场方向 ,井位,大门方向,井场面积确定和井场设备布置及安全标志的设置应符合国家现行标准关于钻前工程及井场布置的技术要求。",
+      "type": "语义分解",
+      "subject": "井场方向布置和标志",
+      "action": "",
+      "operation": "按钻前工程及井场引用标准配置",
+      "condition": "",
+      "constraint": "5.2.4.1.2 井场方向 ,井位,大门方向,井场面积确定和井场设备布置及安全标志的设置应符合国家现行标准关于钻前工程及井场布置的技术要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井场方向布置和标志"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4295,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00034928",
+  "entities": [
+    {
+      "name": "警示— 本文件涉及有危险的材料、设备和操作 ,并未指出所有可能的安全问题",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   警示— 本文件涉及有危险的材料、设备和操作 ,并未指出所有可能的安全问题 。  使用本文件的人\n员应具有正规实验室工作的实践经验 。  使用者有责任采取适当的安全和健康措施 , 并保证符合国家有\n关法规规定的条件。",
+      "type": "语义分解",
+      "subject": "警示— 本文件涉及有危险的材料、设备和操作 ,并未指出所有可能的安全问题",
+      "action": "",
+      "operation": "警示— 本文件涉及有危险的材料、设备和操作 ,并未指出所有可能的安全问题 。 使用本文件的人 员应具有正规实验室工作的实践经验 。 使用者有责任采取适当的安全和健康措施 , 并保证符合国家有 关法规规定的条件。",
+      "condition": "",
+      "constraint": "   警示— 本文件涉及有危险的材料、设备和操作 ,并未指出所有可能的安全问题 。  使用本文件的人\n员应具有正规实验室工作的实践经验 。  使用者有责任采取适当的安全和健康措施 , 并保证符合国家有\n关法规规定的条件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "警示— 本文件涉及有危险的材料、设备和操作 ,并未指出所有可能的安全问题"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34928,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

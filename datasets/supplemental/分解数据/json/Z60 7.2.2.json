@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "聚合物制品加工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2    有机聚合物产品用于制品生产的过程，在混合/混炼、塑炼/塑化/熔化、加工成型(挤出、注射、\n压制、压延、发泡、纺丝等)等作业中应采用密闭设备或在密闭空间内操作，废气应排至VOCs 废气收\n集处理系统；无法密闭的，应采取局部气体收集措施，废气应排至VOCs 废气收集处理系统。",
+      "type": "语义分解",
+      "subject": "聚合物制品加工",
+      "action": "",
+      "operation": "混塑成型密闭或局收废气入处理",
+      "condition": "",
+      "constraint": "7.2.2    有机聚合物产品用于制品生产的过程，在混合/混炼、塑炼/塑化/熔化、加工成型(挤出、注射、\n压制、压延、发泡、纺丝等)等作业中应采用密闭设备或在密闭空间内操作，废气应排至VOCs 废气收\n集处理系统；无法密闭的，应采取局部气体收集措施，废气应排至VOCs 废气收集处理系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "聚合物制品加工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33363,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

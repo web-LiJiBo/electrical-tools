@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "10.3.6",
+  "entities": [
+    {
+      "name": "实体防护验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3.6 实体防护系统应重点检查下列内容: 1 应检查周界实体防护、建(构)筑物和实体装置的设置; 2 对于实体防护设备的外露部分，应查验现场实物与设计文件的一致性;对于隐蔽部分，应查验隐蔽工程随工验收单; 3 应检查出入口实体屏障、车辆实体屏障的限制、阻挡等功能; 4 应检查安防照明的覆盖范围和警示标志的设置。",
+      "type": "语义分解",
+      "subject": "实体防护验收",
+      "action": "",
+      "operation": "查周界建筑装置显隐图单一致出入口车辆阻挡照明警示",
+      "condition": "",
+      "constraint": "10.3.6 实体防护系统应重点检查下列内容: 1 应检查周界实体防护、建(构)筑物和实体装置的设置; 2 对于实体防护设备的外露部分，应查验现场实物与设计文件的一致性;对于隐蔽部分，应查验隐蔽工程随工验收单; 3 应检查出入口实体屏障、车辆实体屏障的限制、阻挡等功能; 4 应检查安防照明的覆盖范围和警示标志的设置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实体防护验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7172,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

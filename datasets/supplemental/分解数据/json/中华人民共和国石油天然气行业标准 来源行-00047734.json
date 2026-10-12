@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047734",
+  "entities": [
+    {
+      "name": "一监测设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    1一监测设备；2—基墩；3一管道；4—端帽；5—非金属参比管；\n     6—测试电缆；7—试片电缆；8—极化试片；9—长效参比电极\n2   安装过程中应压实极化试片周围土壤，确保试片与土壤",
+      "type": "语义分解",
+      "subject": "一监测设备",
+      "action": "",
+      "operation": "一监测设备；2—基墩；3一管道；4—端帽；5—非金属参比管； 6—测试电缆；7—试片电缆；8—极化试片；9—长效参比电极 2 安装过程中应压实极化试片周围土壤，确保试片与土壤",
+      "condition": "",
+      "constraint": "    1一监测设备；2—基墩；3一管道；4—端帽；5—非金属参比管；\n     6—测试电缆；7—试片电缆；8—极化试片；9—长效参比电极\n2   安装过程中应压实极化试片周围土壤，确保试片与土壤",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一监测设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47734,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

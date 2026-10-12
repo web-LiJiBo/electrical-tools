@@ -11,7 +11,7 @@ class DecisionStatus(str, Enum):
     PASS = "pass"
     FAIL = "fail"
     UNCERTAIN = "uncertain"
-    NEEDS_HUMAN = "needs_human"
+    GENERATED = "generated"
 
 
 @dataclass(frozen=True, slots=True)
@@ -41,6 +41,7 @@ class Constraint:
     value: Any
     unit: str = ""
     condition: str = ""
+    role: str = "unspecified"
 
 
 @dataclass(slots=True)
@@ -55,6 +56,7 @@ class Rule:
     # 分解JSON中的原始规则正文。结构化字段用于推理，content用于检索、引用和报告，
     # 两者不能互相替代，否则仅含正文的规则会在转换过程中丢失信息。
     content: str = ""
+    operation: str = ""
 
 
 @dataclass(slots=True)
@@ -69,6 +71,7 @@ class ClauseKnowledgeUnit:
     relations: list[dict[str, Any]] = field(default_factory=list)
     source_uri: str = ""
     metadata: dict[str, Any] = field(default_factory=dict)
+    standard_name: str = ""
 
 
 @dataclass(slots=True)
@@ -90,3 +93,4 @@ class Decision:
     violations: list[dict[str, Any]] = field(default_factory=list)
     reasoning_paths: list[list[str]] = field(default_factory=list)
     confidence: float = 0.0
+

@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.1.3.2",
+  "entities": [
+    {
+      "name": "垂向土壤采深",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.3.2 采样点垂直方向的土壤采样深度可根据污染源的位置。迁移和地层结构以及水文地质等进行判断设置 若对地块信息了解不足。难以合理判断采样深度,可按 0.5~2 m 等间距设置采样位置。具体见 HJ 25.2。",
+      "type": "语义分解",
+      "subject": "垂向土壤采深",
+      "action": "",
+      "operation": "依源迁移地层水文设深信息不足可0.5至2米等距",
+      "condition": "",
+      "constraint": "6.1.3.2 采样点垂直方向的土壤采样深度可根据污染源的位置。迁移和地层结构以及水文地质等进行判断设置 若对地块信息了解不足。难以合理判断采样深度,可按 0.5~2 m 等间距设置采样位置。具体见 HJ 25.2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "垂向土壤采深"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2636,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

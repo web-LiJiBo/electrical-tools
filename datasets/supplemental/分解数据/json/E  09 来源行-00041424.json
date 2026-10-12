@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041424",
+  "entities": [
+    {
+      "name": "安装或备用控制隔栅的类型和长度，是随装置和可能溢出的类型、规模及位置而变",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   安装或备用控制隔栅的类型和长度，是随装置和可能溢出的类型、规模及位置而变化的，每个关\n键地区或装置都应掌握这些信息，并在装置意外事故预案中予以标明。意外事故预案应指明应急设备\n的位置。",
+      "type": "语义分解",
+      "subject": "安装或备用控制隔栅的类型和长度，是随装置和可能溢出的类型、规模及位置而变",
+      "action": "",
+      "operation": "安装或备用控制隔栅的类型和长度，是随装置和可能溢出的类型、规模及位置而变化的，每个关 键地区或装置都应掌握这些信息，并在装置意外事故预案中予以标明。意外事故预案应指明应急设备 的位置。",
+      "condition": "",
+      "constraint": "   安装或备用控制隔栅的类型和长度，是随装置和可能溢出的类型、规模及位置而变化的，每个关\n键地区或装置都应掌握这些信息，并在装置意外事故预案中予以标明。意外事故预案应指明应急设备\n的位置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安装或备用控制隔栅的类型和长度，是随装置和可能溢出的类型、规模及位置而变"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41424,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

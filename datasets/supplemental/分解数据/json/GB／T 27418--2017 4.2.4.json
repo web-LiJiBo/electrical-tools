@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.2.4",
+  "entities": [
+    {
+      "name": "测量过程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4 为了在统计控制下更好地表征测量过程 ,可以使用合成或合并方差估计值 $(或合并实验标准 差 $)。 在这种情祝下 ,如果被测量4 的值是依据1 次独立观测值确定的 ,那么用 s?I 作为算术平均值 4的实验方差的估计值 ,将优于使用 $ (4 ) /1 ,标淮不确定度 u =s/9 (见E.3.6的注) =。",
+      "type": "语义分解",
+      "subject": "测量过程",
+      "action": "",
+      "operation": "以合并方差表征统计控制下测量",
+      "condition": "在统计控制下",
+      "constraint": "合成或合并方差估计值",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量过程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "符号和计算式损坏"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.1.6",
+  "entities": [
+    {
+      "name": "爆炸区安防设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.6    设置于或用于爆炸危险区域的安全防范系统设备 ,  应采\n用与爆炸危险等级相适应的防爆产品 。  系统安全性 、  可靠性、\n电磁兼容性 、  环境适应性应符合现行国家标准  《安全防范工程\n技术标准》  GB  50348 的相关规定 。",
+      "type": "语义分解",
+      "subject": "爆炸区安防设备",
+      "action": "",
+      "operation": "相应等级防爆性能和环境适应符合GB50348",
+      "condition": "",
+      "constraint": "7.1.6    设置于或用于爆炸危险区域的安全防范系统设备 ,  应采\n用与爆炸危险等级相适应的防爆产品 。  系统安全性 、  可靠性、\n电磁兼容性 、  环境适应性应符合现行国家标准  《安全防范工程\n技术标准》  GB  50348 的相关规定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆炸区安防设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11912,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

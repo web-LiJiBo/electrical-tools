@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "8.1.6",
+  "entities": [
+    {
+      "name": "光放大器光安全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.6      配置的光放大器应具有明显的安全标志。在光纤切断、设\n备失效或光连接器拔出来时，应自动启动APR  或 ALS 进程，可优\n选 APR,  并应具有自动(人工)重启动进程的功能。 APR  或 ALS\n应符合现行行业标准《波分复用系统( WDM) 光安全进程技术要\n求》YD/T    1259 的有关要求。",
+      "type": "语义分解",
+      "subject": "光放大器光安全",
+      "action": "",
+      "operation": "设安全标志故障断纤拔连接器自动启动APR或ALS支持重启动符合YD/T1259",
+      "condition": "",
+      "constraint": "8.1.6      配置的光放大器应具有明显的安全标志。在光纤切断、设\n备失效或光连接器拔出来时，应自动启动APR  或 ALS 进程，可优\n选 APR,  并应具有自动(人工)重启动进程的功能。 APR  或 ALS\n应符合现行行业标准《波分复用系统( WDM) 光安全进程技术要\n求》YD/T    1259 的有关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "光放大器光安全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9034,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

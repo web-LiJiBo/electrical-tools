@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024921",
+  "entities": [
+    {
+      "name": ". 1 . 9 主叫重发",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7 . 1 . 9    主叫重发 。ptions请求成功响应\n\n7 . 1 . 9 . 1     测试步骤",
+      "type": "语义分解",
+      "subject": ". 1 . 9 主叫重发",
+      "action": "",
+      "operation": ". 1 . 9 主叫重发 。ptions请求成功响应 7 . 1 . 9 . 1 测试步骤",
+      "condition": "",
+      "constraint": "7 . 1 . 9    主叫重发 。ptions请求成功响应\n\n7 . 1 . 9 . 1     测试步骤",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 . 9 主叫重发"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24921,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "7.2.4",
+  "entities": [
+    {
+      "name": "样品交接登记",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.4 样品管理员确定样品符合样品交接条件后,进行样品登记;并由双方签字,样品交接登记表参见附录卫表卫.2。",
+      "type": "语义分解",
+      "subject": "样品交接登记",
+      "action": "",
+      "operation": "符合条件后登记双方签字",
+      "condition": "样品管理员确定样品符合样品交接条件后",
+      "constraint": "7.2.4 样品管理员确定样品符合样品交接条件后,进行样品登记;并由双方签字,样品交接登记表参见附录卫表卫.2。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "样品交接登记"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2121,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；附录卫标识损坏"
+      ]
+    }
+  }
+}

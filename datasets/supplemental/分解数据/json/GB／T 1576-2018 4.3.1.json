@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "4.3.1",
+  "entities": [
+    {
+      "name": "小容量低压锅炉水处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1 额定蒸发量小于或等于4 t/h,并且额定蒸汽压力小于或等于1.0 MPa 的自然循环蒸汽锅炉和汽水两用锅炉可以采用单纯锅内加药 ,部分软化或天然碱度法等水处理方式 ,但应保证受热面平均结垢速 萃不大于0.5 mm/a , 其给水和锅水水质应符合表 2 的规定。",
+      "type": "语义分解",
+      "subject": "小容量低压锅炉水处理",
+      "action": "",
+      "operation": "蒸发量不超过4t/h且压力不超过1.0MPa可用锅内加药等保证结垢不超过0.5mm/a水质符合表2",
+      "condition": "",
+      "constraint": "4.3.1 额定蒸发量小于或等于4 t/h,并且额定蒸汽压力小于或等于1.0 MPa 的自然循环蒸汽锅炉和汽水两用锅炉可以采用单纯锅内加药 ,部分软化或天然碱度法等水处理方式 ,但应保证受热面平均结垢速 萃不大于0.5 mm/a , 其给水和锅水水质应符合表 2 的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "小容量低压锅炉水处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4095,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表2未提供"
+      ]
+    }
+  }
+}

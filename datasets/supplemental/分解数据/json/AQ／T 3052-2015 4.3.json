@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "应急信息协同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 坚持信息畅通 ,协同应对的原则 总指挥部 ,现场指挥部与救援队伍应保证实时互通信息 ,提高救援效率 ,在事故单位开展自救的同时 ,外部救援力量根据事故单位的需求和总指挥部的要求参与救援",
+      "type": "语义分解",
+      "subject": "应急信息协同",
+      "action": "",
+      "operation": "各指挥救援实时互通企业自救外援依需求指令参与",
+      "condition": "",
+      "constraint": "4.3 坚持信息畅通 ,协同应对的原则 总指挥部 ,现场指挥部与救援队伍应保证实时互通信息 ,提高救援效率 ,在事故单位开展自救的同时 ,外部救援力量根据事故单位的需求和总指挥部的要求参与救援",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急信息协同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5970,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

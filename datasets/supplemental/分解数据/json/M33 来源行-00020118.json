@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020118",
+  "entities": [
+    {
+      "name": ") S4/Sm_A_Sk 功能把VC-4 拆装成低阶的VC-m(m=12",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 1) S4/Sm_A_Sk 功能把VC-4 拆装成低阶的VC-m(m=12 、3),    在必要时进行复帧同步。\n2)对每个低阶VC的 TU 指针进行解码，以提供有关高阶VC 与各个低阶VC 之间按字节的\n    帧偏移的信息。指针解释的方法在ITU-T G.707 中描述。当组装TU 的节点的时钟频率不\n\n    同于本地时钟参考时，该处理应该允许连续的指针调整。这些时钟之间的频率差影响到数\n\n    据缓存器所需要的规模。",
+      "type": "语义分解",
+      "subject": ") S4/Sm_A_Sk 功能把VC-4 拆装成低阶的VC-m(m=12",
+      "action": "",
+      "operation": ") S4/Sm_A_Sk 功能把VC-4 拆装成低阶的VC-m(m=12 、3), 在必要时进行复帧同步。 2)对每个低阶VC的 TU 指针进行解码，以提供有关高阶VC 与各个低阶VC 之间按字节的 帧偏移的信息。指针解释的方法在ITU-T G.707 中描述。当组装TU 的节点的时钟频率不 同于本地时钟参考时，该处理应该允许连续的指针调整。这些时钟之间的频率差影响到数 据缓存器所需要的规模。",
+      "condition": "",
+      "constraint": " 1) S4/Sm_A_Sk 功能把VC-4 拆装成低阶的VC-m(m=12 、3),    在必要时进行复帧同步。\n2)对每个低阶VC的 TU 指针进行解码，以提供有关高阶VC 与各个低阶VC 之间按字节的\n    帧偏移的信息。指针解释的方法在ITU-T G.707 中描述。当组装TU 的节点的时钟频率不\n\n    同于本地时钟参考时，该处理应该允许连续的指针调整。这些时钟之间的频率差影响到数\n\n    据缓存器所需要的规模。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") S4/Sm_A_Sk 功能把VC-4 拆装成低阶的VC-m(m=12"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20118,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

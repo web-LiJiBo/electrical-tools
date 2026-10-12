@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "10.2",
+  "entities": [
+    {
+      "name": "配件燃烧热",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.2   配件燃烧热的确定",
+      "type": "语义分解",
+      "subject": "配件燃烧热",
+      "action": "",
+      "operation": "仅标题",
+      "condition": "",
+      "constraint": "10.2   配件燃烧热的确定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "配件燃烧热"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35076,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

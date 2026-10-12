@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.1.2",
+  "entities": [
+    {
+      "name": "活动地板机房扩容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.1.2      在已铺设活动地板的机房内扩容时，应对活动地板进行专\n门检查，活动地板的铺设应符合设计要求。",
+      "type": "语义分解",
+      "subject": "活动地板机房扩容",
+      "action": "",
+      "operation": "专门检查地板铺设符合设计",
+      "condition": "",
+      "constraint": "3.1.2      在已铺设活动地板的机房内扩容时，应对活动地板进行专\n门检查，活动地板的铺设应符合设计要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "活动地板机房扩容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26681,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

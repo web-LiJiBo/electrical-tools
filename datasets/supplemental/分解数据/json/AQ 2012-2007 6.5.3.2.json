@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.5.3.2",
+  "entities": [
+    {
+      "name": "系泊储油联接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.3.2 系泊装置与储油设施联接要严格遵循设计要求 ,至少应做到: 系泊点设置应考虑风浪,流对储油设施偏移,系泊和解脱安全的影响; 综合考虑各种因素确定系泊点至钻井船(平台)的安全距离,在任何情况下避免发生碰撞; 根据作业海区的水深和海底浅层地质情况选择符合类型要求和质量要求的系泊锚。",
+      "type": "语义分解",
+      "subject": "系泊储油联接",
+      "action": "",
+      "operation": "依设计考虑风浪流偏移安全距离避免碰撞按水深地质选锚",
+      "condition": "",
+      "constraint": "6.5.3.2 系泊装置与储油设施联接要严格遵循设计要求 ,至少应做到: 系泊点设置应考虑风浪,流对储油设施偏移,系泊和解脱安全的影响; 综合考虑各种因素确定系泊点至钻井船(平台)的安全距离,在任何情况下避免发生碰撞; 根据作业海区的水深和海底浅层地质情况选择符合类型要求和质量要求的系泊锚。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系泊储油联接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4632,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

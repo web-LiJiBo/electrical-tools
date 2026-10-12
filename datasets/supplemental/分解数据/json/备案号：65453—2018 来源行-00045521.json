@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045521",
+  "entities": [
+    {
+      "name": "H.2.2 按照图H.2.2 所示接线，测量并记录试片通电电位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "H.2.2   按照图H.2.2 所示接线，测量并记录试片通电电位。\nH.2.3   测量试片断电电位时，宜采用数据记录仪详细记录试片\n的电位衰减过程。数据记录仪的采样频率不低于25Hz,  并选择\n合适的延时时间读取试片的断电电位值。延时时间可通过现场\n测试结果确定，并应注意测量结果的重现性。\nH.2.4   应连续测量三次，取断电电位的平均值。",
+      "type": "语义分解",
+      "subject": "H.2.2 按照图H.2.2 所示接线，测量并记录试片通电电位",
+      "action": "",
+      "operation": "H.2.2 按照图H.2.2 所示接线，测量并记录试片通电电位。 H.2.3 测量试片断电电位时，宜采用数据记录仪详细记录试片 的电位衰减过程。数据记录仪的采样频率不低于25Hz, 并选择 合适的延时时间读取试片的断电电位值。延时时间可通过现场 测试结果确定，并应注意测量结果的重现性。 H.2.4 应连续测量三次，取断电电位的平均值。",
+      "condition": "",
+      "constraint": "H.2.2   按照图H.2.2 所示接线，测量并记录试片通电电位。\nH.2.3   测量试片断电电位时，宜采用数据记录仪详细记录试片\n的电位衰减过程。数据记录仪的采样频率不低于25Hz,  并选择\n合适的延时时间读取试片的断电电位值。延时时间可通过现场\n测试结果确定，并应注意测量结果的重现性。\nH.2.4   应连续测量三次，取断电电位的平均值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "H.2.2 按照图H.2.2 所示接线，测量并记录试片通电电位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45521,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

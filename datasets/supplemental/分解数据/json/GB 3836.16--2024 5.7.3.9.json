@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.3.9",
+  "entities": [
+    {
+      "name": "本安系统必要接地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.3.9 保持本质安全完整性的接地连接件 对于保持本质安全系统完整性所必需的接地连接件的电阻(例如变压器的屏蔽接地，二极管安全栅 接地)，应按 5.7.3.8 的规定进行测量。除对一般室内控制仪器因防止电气冲击而要求测量接地回路电 阻外，对与本质安全电路有关的电源设备的接地回路电阻不要求测量=",
+      "type": "语义分解",
+      "subject": "本安系统必要接地",
+      "action": "",
+      "operation": "按接地连续性要求测量关联电源接地回路一般无需测量但防触电例外",
+      "condition": "",
+      "constraint": "5.7.3.9 保持本质安全完整性的接地连接件 对于保持本质安全系统完整性所必需的接地连接件的电阻(例如变压器的屏蔽接地，二极管安全栅 接地)，应按 5.7.3.8 的规定进行测量。除对一般室内控制仪器因防止电气冲击而要求测量接地回路电 阻外，对与本质安全电路有关的电源设备的接地回路电阻不要求测量=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本安系统必要接地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4013,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

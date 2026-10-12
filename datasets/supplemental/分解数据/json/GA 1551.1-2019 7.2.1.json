@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "7.2.1",
+  "entities": [
+    {
+      "name": "独立厂区周界",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1 重点目标具有独立厂区的 ,应在独立厂区周界建立金属栅栏或砖 ,石,混凝土围墙等实体防范设施 ,外侧整体高度(含防攀爬设施)应大于或等于 2 m。",
+      "type": "语义分解",
+      "subject": "独立厂区周界",
+      "action": "",
+      "operation": "实体防范整体高度不低于2米",
+      "condition": "重点目标具有独立厂区的",
+      "constraint": "7.2.1 重点目标具有独立厂区的 ,应在独立厂区周界建立金属栅栏或砖 ,石,混凝土围墙等实体防范设施 ,外侧整体高度(含防攀爬设施)应大于或等于 2 m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "独立厂区周界"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5528,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

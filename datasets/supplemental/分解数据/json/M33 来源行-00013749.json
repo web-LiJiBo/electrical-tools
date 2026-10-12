@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013749",
+  "entities": [
+    {
+      "name": "OTUCn的 n 帧交织和复帧结构、FEC、扰码、去偏移、发送顺序等接口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTUCn的 n 帧交织和复帧结构、FEC、扰码、去偏移、发送顺序等接口特定要求在 ITU-T G.709\n\n中未定义，一种用于短距互联的接口定义见ITU-TG.709.1。",
+      "type": "语义分解",
+      "subject": "OTUCn的 n 帧交织和复帧结构、FEC、扰码、去偏移、发送顺序等接口",
+      "action": "",
+      "operation": "OTUCn的 n 帧交织和复帧结构、FEC、扰码、去偏移、发送顺序等接口特定要求在 ITU-T G.709 中未定义，一种用于短距互联的接口定义见ITU-TG.709.1。",
+      "condition": "",
+      "constraint": "      OTUCn的 n 帧交织和复帧结构、FEC、扰码、去偏移、发送顺序等接口特定要求在 ITU-T G.709\n\n中未定义，一种用于短距互联的接口定义见ITU-TG.709.1。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTUCn的 n 帧交织和复帧结构、FEC、扰码、去偏移、发送顺序等接口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13749,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

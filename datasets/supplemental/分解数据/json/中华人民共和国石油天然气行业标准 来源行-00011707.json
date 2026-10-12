@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011707",
+  "entities": [
+    {
+      "name": "油气输送管道干线工程传输速率不应低于2.5Gbit/s",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    油气输送管道干线工程传输速率不应低于2.5Gbit/s 。\n      3    油气输送管道传输系统作为 SDH 网络传输干线系统时 ,\n传输速率不宜低于 2. 5Gbit/s 。",
+      "type": "语义分解",
+      "subject": "油气输送管道干线工程传输速率不应低于2.5Gbit/s",
+      "action": "",
+      "operation": "油气输送管道干线工程传输速率不应低于2.5Gbit/s 。 3 油气输送管道传输系统作为 SDH 网络传输干线系统时 , 传输速率不宜低于 2. 5Gbit/s 。",
+      "condition": "",
+      "constraint": "       2    油气输送管道干线工程传输速率不应低于2.5Gbit/s 。\n      3    油气输送管道传输系统作为 SDH 网络传输干线系统时 ,\n传输速率不宜低于 2. 5Gbit/s 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气输送管道干线工程传输速率不应低于2.5Gbit/s"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11707,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

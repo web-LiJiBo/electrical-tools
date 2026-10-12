@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "56",
+  "entities": [
+    {
+      "name": "集团公司生产部通过定期抽查等方式对能量隔离与锁定管理情况进行监督检查,检",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "56 集团公司生产部通过定期抽查等方式对能量隔离与锁定管理情况进行监督检查,检查结果纳入年度生产运维业务考核。",
+      "type": "语义分解",
+      "subject": "集团公司生产部通过定期抽查等方式对能量隔离与锁定管理情况进行监督检查,检",
+      "action": "",
+      "operation": "集团公司生产部通过定期抽查等方式对能量隔离与锁定管理情况进行监督检查,检查结果纳入年度生产运维业务考核。",
+      "condition": "",
+      "constraint": "56 集团公司生产部通过定期抽查等方式对能量隔离与锁定管理情况进行监督检查,检查结果纳入年度生产运维业务考核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集团公司生产部通过定期抽查等方式对能量隔离与锁定管理情况进行监督检查,检"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6677,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

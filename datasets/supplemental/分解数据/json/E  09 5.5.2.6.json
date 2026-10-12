@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.2.6",
+  "entities": [
+    {
+      "name": "承包商供应商HSE",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.2.6  在工程项目结束后，管道储运单位应对承包商 HSE  表现进行评价；对供应商应在一定的使\n\n用期后进行 HSE  表现评价，出具评价结论。及时更新合格承包商和供应商名录。",
+      "type": "语义分解",
+      "subject": "承包商供应商HSE",
+      "action": "",
+      "operation": "项目结束或使用期后评价更新合格名单",
+      "condition": "",
+      "constraint": "5.5.2.6  在工程项目结束后，管道储运单位应对承包商 HSE  表现进行评价；对供应商应在一定的使\n\n用期后进行 HSE  表现评价，出具评价结论。及时更新合格承包商和供应商名录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "承包商供应商HSE"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27715,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

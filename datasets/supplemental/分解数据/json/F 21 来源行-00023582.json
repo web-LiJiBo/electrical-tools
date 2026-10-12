@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023582",
+  "entities": [
+    {
+      "name": "a) 接入层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    接入层 :负责将各种网络和设备接入到软交换网络 ,并将信息转换成能够在分组网络上传递的\n       信息格式 ;",
+      "type": "语义分解",
+      "subject": "a) 接入层",
+      "action": "",
+      "operation": "a) 接入层 :负责将各种网络和设备接入到软交换网络 ,并将信息转换成能够在分组网络上传递的 信息格式",
+      "condition": "",
+      "constraint": "a)    接入层 :负责将各种网络和设备接入到软交换网络 ,并将信息转换成能够在分组网络上传递的\n       信息格式 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 接入层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23582,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

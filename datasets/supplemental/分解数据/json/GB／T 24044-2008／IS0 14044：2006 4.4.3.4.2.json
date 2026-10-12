@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.3.4.2",
+  "entities": [
+    {
+      "name": "加权方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.3.4.2 加权是一种可选要素 ,包括以下两个可能的步骤之一: -用选定的加权因子对参数结果或归一化的结果进行转换; -对各个影响类型中转换后的参数结果或归一化的结果进行合并 加权是基于价值选择而不是基于科学。 由于不同的个人 .组织和人群可能具有不同的倾向性,它们 对于同样的参数结果或归一化的参数结果可能得到不同的加权结果。 在一项 LCA 研究中可能要使用 若干不同的加权因子和加权方法 ,并进行敏感性分析来评价不同的价值选择和加权方法对 LCIA 结果 的影响。",
+      "type": "语义分解",
+      "subject": "加权方法",
+      "action": "",
+      "operation": "基于价值选择转换合并结果并开展多因子方法敏感性分析",
+      "condition": "",
+      "constraint": "4.4.3.4.2 加权是一种可选要素 ,包括以下两个可能的步骤之一: -用选定的加权因子对参数结果或归一化的结果进行转换; -对各个影响类型中转换后的参数结果或归一化的结果进行合并 加权是基于价值选择而不是基于科学。 由于不同的个人 .组织和人群可能具有不同的倾向性,它们 对于同样的参数结果或归一化的参数结果可能得到不同的加权结果。 在一项 LCA 研究中可能要使用 若干不同的加权因子和加权方法 ,并进行敏感性分析来评价不同的价值选择和加权方法对 LCIA 结果 的影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "加权方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1120,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "standard_name": "离心泵能效限定值及能效等级",
+  "standard_id": "GB 19762--2025",
+  "version": "2025",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "石油化工离心泵",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 各等级石油化工离心泵的能效应符合表2的规定。表2中，当比转数ns在20至120之间或210至300之间时，各级能效需根据规定点效率值η0、效率修正值Δη及表中规定的关系计算；当120≤ns≤210时，Δη=0。注1:单级石油化工离心泵的基准值η0按公式(4)计算；注2:多级石油化工离心泵的基准值η0按公式(5)计算；注3: 20<ns<120时，石油化工离心泵的效率修正值 Δη 按公式(6)计算；注4: 210<ns<300时，石油化工离心泵的效率修正值 Δη 按公式(7)计算。",
+      "type": "语义分解",
+      "subject": "石油化工离心泵",
+      "action": "",
+      "operation": "根据比转数确定效率修正",
+      "condition": "当120≤ns≤210时",
+      "constraint": "Δη=0",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油化工离心泵"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "仅此分支明确，其他区间依赖表2和公式(4)至(7)，不能外推"
+      ]
+    }
+  }
+}

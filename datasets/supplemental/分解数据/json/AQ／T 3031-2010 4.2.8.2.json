@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "4.2.8.2",
+  "entities": [
+    {
+      "name": "安全管理技能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.8.2 各种安全管理技能。",
+      "type": "语义分解",
+      "subject": "安全管理技能",
+      "action": "",
+      "operation": "讲授各种管理技能",
+      "condition": "",
+      "constraint": "4.2.8.2 各种安全管理技能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全管理技能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4922,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；课程内容"
+      ]
+    }
+  }
+}

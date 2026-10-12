@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006752",
+  "entities": [
+    {
+      "name": "作业单位应根据管逍内介质的性质.温度 压力和管道法兰密封面的口径等选择相",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3 作业单位应根据管逍内介质的性质.温度 压力和管道法兰密封面的口径等选择相应材料 .强度日 径和符合设计 .制造要求的盲板及垫片 ,高压盲板使用前应经超声波探伤;盲板选用应符合 HG/T 21547 或 JB/T 2772 的要求。",
+      "type": "语义分解",
+      "subject": "作业单位应根据管逍内介质的性质.温度 压力和管道法兰密封面的口径等选择相",
+      "action": "",
+      "operation": "作业单位应根据管逍内介质的性质.温度 压力和管道法兰密封面的口径等选择相应材料 .强度日 径和符合设计 .制造要求的盲板及垫片 ,高压盲板使用前应经超声波探伤;盲板选用应符合 HG/T 21547 或 JB/T 2772 的要求。",
+      "condition": "",
+      "constraint": "7.3 作业单位应根据管逍内介质的性质.温度 压力和管道法兰密封面的口径等选择相应材料 .强度日 径和符合设计 .制造要求的盲板及垫片 ,高压盲板使用前应经超声波探伤;盲板选用应符合 HG/T 21547 或 JB/T 2772 的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业单位应根据管逍内介质的性质.温度 压力和管道法兰密封面的口径等选择相"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6752,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

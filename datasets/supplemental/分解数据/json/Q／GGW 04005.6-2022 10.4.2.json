@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "10.4.2",
+  "entities": [
+    {
+      "name": "无组织排放浓度状态",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.4.2 无组织排放监测浓度为杯准状态下的排放浓度。 注: GB 3095一2012 修改单对环境空气污染物监测提出如下调整: -是对于气态污染物。测定结果由标I状况下的 浓度改为参比状态下浓度; 二是对于颗粒态污染物,测定结果为监测时大气温度和压力下的浓度。但是 GB 16297-1996 并没有进行修改。因此无组织排放的浓度限值仍为标淮状态下的排放浓度限值。",
+      "type": "语义分解",
+      "subject": "无组织排放浓度状态",
+      "action": "",
+      "operation": "采用排放标准规定状态区别环境空气",
+      "condition": "",
+      "constraint": "10.4.2 无组织排放监测浓度为杯准状态下的排放浓度。 注: GB 3095一2012 修改单对环境空气污染物监测提出如下调整: -是对于气态污染物。测定结果由标I状况下的 浓度改为参比状态下浓度; 二是对于颗粒态污染物,测定结果为监测时大气温度和压力下的浓度。但是 GB 16297-1996 并没有进行修改。因此无组织排放的浓度限值仍为标淮状态下的排放浓度限值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无组织排放浓度状态"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 509,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原文单位文字识别异常"
+      ]
+    }
+  }
+}

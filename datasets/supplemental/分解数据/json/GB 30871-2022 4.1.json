@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "危险化学品作业风险",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 作业前，危险化学品企业应组织作业单位对作业现场和作业过程中可能存在的危险有害因素进行辨识，开展作业危害分析，制定相应的安全风险管控措施。",
+      "type": "语义分解",
+      "subject": "危险化学品作业风险",
+      "action": "",
+      "operation": "作业前辨识分析并制定管控措施",
+      "condition": "作业前",
+      "constraint": "4.1 作业前，危险化学品企业应组织作业单位对作业现场和作业过程中可能存在的危险有害因素进行辨识，开展作业危害分析，制定相应的安全风险管控措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危险化学品作业风险"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3825,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

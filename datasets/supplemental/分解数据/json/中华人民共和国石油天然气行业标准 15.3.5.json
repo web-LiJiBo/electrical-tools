@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "15.3.5",
+  "entities": [
+    {
+      "name": "蓄电池安装",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "15.3.5    蓄电池组可采用专用蓄电池柜或专用蓄电池架安装 ,  具\n体应根据蓄电池的数量和机房面积 、  机房承重能力等因素确定。\n15.3.6    有专用蓄电池室的站场 ,  高频开关电源用蓄电池宜安装\n在蓄电池室内 ,   蓄电池的摆放和加固要求应满足现行国家标准\n《通信电源设备安装工程设计规范》  GB  51194 的相关规定 ; 无\n专用蓄电池室时 ,   蓄电池可采用机柜安装在通信机房内 ,   机柜",
+      "type": "语义分解",
+      "subject": "蓄电池安装",
+      "action": "",
+      "operation": "按数量面积承重选柜架有专室宜专室符合GB51194无专室可机柜安装",
+      "condition": "",
+      "constraint": "15.3.5    蓄电池组可采用专用蓄电池柜或专用蓄电池架安装 ,  具\n体应根据蓄电池的数量和机房面积 、  机房承重能力等因素确定。\n15.3.6    有专用蓄电池室的站场 ,  高频开关电源用蓄电池宜安装\n在蓄电池室内 ,   蓄电池的摆放和加固要求应满足现行国家标准\n《通信电源设备安装工程设计规范》  GB  51194 的相关规定 ; 无\n专用蓄电池室时 ,   蓄电池可采用机柜安装在通信机房内 ,   机柜",
+      "constraint_role": "informational",
+      "related_entities": [
+        "蓄电池安装"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12138,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含15.3.5及15.3.6后续机柜要求截断"
+      ]
+    }
+  }
+}

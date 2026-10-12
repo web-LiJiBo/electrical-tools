@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048464",
+  "entities": [
+    {
+      "name": "参数误差是指GPS-RYT 测量时要得到当地坐标，就必 须求解WGS-8",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1  参数误差是指GPS-RYT  测量时要得到当地坐标，就必\n须求解WGS-84  坐标与当地坐标的转换参数。因此求解转换参\n数的精度误差一般可达2cm～3cm。",
+      "type": "语义分解",
+      "subject": "参数误差是指GPS-RYT 测量时要得到当地坐标，就必 须求解WGS-8",
+      "action": "",
+      "operation": "参数误差是指GPS-RYT 测量时要得到当地坐标，就必 须求解WGS-84 坐标与当地坐标的转换参数。因此求解转换参 数的精度误差一般可达2cm～3cm。",
+      "condition": "",
+      "constraint": "   1  参数误差是指GPS-RYT  测量时要得到当地坐标，就必\n须求解WGS-84  坐标与当地坐标的转换参数。因此求解转换参\n数的精度误差一般可达2cm～3cm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "参数误差是指GPS-RYT 测量时要得到当地坐标，就必 须求解WGS-8"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48464,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

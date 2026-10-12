@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045488",
+  "entities": [
+    {
+      "name": "应记录管道特点、参考点、与其他设施的交叉、信号强 度水平及特征等信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3   应记录管道特点、参考点、与其他设施的交叉、信号强\n度水平及特征等信息。分析检测结果，确定需进一步调查或采\n取补救措施的位置。当进行多次重复检测时，宜比较记录以确\n定防腐层的变化情况。",
+      "type": "语义分解",
+      "subject": "应记录管道特点、参考点、与其他设施的交叉、信号强 度水平及特征等信息",
+      "action": "",
+      "operation": "应记录管道特点、参考点、与其他设施的交叉、信号强 度水平及特征等信息。分析检测结果，确定需进一步调查或采 取补救措施的位置。当进行多次重复检测时，宜比较记录以确 定防腐层的变化情况。",
+      "condition": "",
+      "constraint": "      3   应记录管道特点、参考点、与其他设施的交叉、信号强\n度水平及特征等信息。分析检测结果，确定需进一步调查或采\n取补救措施的位置。当进行多次重复检测时，宜比较记录以确\n定防腐层的变化情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应记录管道特点、参考点、与其他设施的交叉、信号强 度水平及特征等信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45488,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

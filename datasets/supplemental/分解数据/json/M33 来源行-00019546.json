@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019546",
+  "entities": [
+    {
+      "name": ")当保护时隙没有使用时将在每个保护时隙上产生一个由未装载信号的VC-n(",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)当保护时隙没有使用时将在每个保护时隙上产生一个由未装载信号的VC-n(VC-4-4c)   加\n   有效AU-n(AU-4-4c)    指针组成的AUG。",
+      "type": "语义分解",
+      "subject": ")当保护时隙没有使用时将在每个保护时隙上产生一个由未装载信号的VC-n(",
+      "action": "",
+      "operation": ")当保护时隙没有使用时将在每个保护时隙上产生一个由未装载信号的VC-n(VC-4-4c) 加 有效AU-n(AU-4-4c) 指针组成的AUG。",
+      "condition": "",
+      "constraint": "1)当保护时隙没有使用时将在每个保护时隙上产生一个由未装载信号的VC-n(VC-4-4c)   加\n   有效AU-n(AU-4-4c)    指针组成的AUG。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")当保护时隙没有使用时将在每个保护时隙上产生一个由未装载信号的VC-n("
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19546,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

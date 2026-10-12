@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "8.2",
+  "entities": [
+    {
+      "name": "制药验收工况分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2 验收监测期间工况分析 给出实际的制药生产能力及设备运行负荷的数据或参数。以文字和表格的形式叙述现场监测期间实际的产品种类、数量及各环保设施处理能力，和设计相比的验收监测生产工况。生产工况分析表参见附录C.23。",
+      "type": "语义分解",
+      "subject": "制药验收工况分析",
+      "action": "",
+      "operation": "列实际能力设备负荷产品设施处理能力与设计对比",
+      "condition": "",
+      "constraint": "8.2 验收监测期间工况分析 给出实际的制药生产能力及设备运行负荷的数据或参数。以文字和表格的形式叙述现场监测期间实际的产品种类、数量及各环保设施处理能力，和设计相比的验收监测生产工况。生产工况分析表参见附录C.23。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药验收工况分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2799,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

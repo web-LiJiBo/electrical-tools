@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012009",
+  "entities": [
+    {
+      "name": "扩音对讲系统应根据工程需要选择有主机式或无主机式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.3    扩音对讲系统应根据工程需要选择有主机式或无主机式。\n9.0.4    带储库的工艺站场和多管道合建站等大型工艺站场及其\n他有特殊需求的工艺站场可选用有主机式 ,   其他工艺站场宜选\n用无主机式。",
+      "type": "语义分解",
+      "subject": "扩音对讲系统应根据工程需要选择有主机式或无主机式",
+      "action": "",
+      "operation": "扩音对讲系统应根据工程需要选择有主机式或无主机式。 9.0.4 带储库的工艺站场和多管道合建站等大型工艺站场及其 他有特殊需求的工艺站场可选用有主机式 , 其他工艺站场宜选 用无主机式。",
+      "condition": "",
+      "constraint": "9.0.3    扩音对讲系统应根据工程需要选择有主机式或无主机式。\n9.0.4    带储库的工艺站场和多管道合建站等大型工艺站场及其\n他有特殊需求的工艺站场可选用有主机式 ,   其他工艺站场宜选\n用无主机式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "扩音对讲系统应根据工程需要选择有主机式或无主机式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12009,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

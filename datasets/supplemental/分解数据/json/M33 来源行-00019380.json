@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019380",
+  "entities": [
+    {
+      "name": "请求的优先级评估系统状态，并把适当的通路倒换至保护段",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "请求的优先级评估系统状态，并把适当的通路倒换至保护段。两个MSP 功能通过面向比特规约的MSP\n字节(保护段的MSOH中的K1 和 K2 字节)相互联系。对于各种保护倒换体制和模式，其协议在ITU-T\nG.841-1998的7.1中描述。",
+      "type": "语义分解",
+      "subject": "请求的优先级评估系统状态，并把适当的通路倒换至保护段",
+      "action": "",
+      "operation": "请求的优先级评估系统状态，并把适当的通路倒换至保护段。两个MSP 功能通过面向比特规约的MSP 字节(保护段的MSOH中的K1 和 K2 字节)相互联系。对于各种保护倒换体制和模式，其协议在ITU-T G.841-1998的7.1中描述。",
+      "condition": "",
+      "constraint": "请求的优先级评估系统状态，并把适当的通路倒换至保护段。两个MSP 功能通过面向比特规约的MSP\n字节(保护段的MSOH中的K1 和 K2 字节)相互联系。对于各种保护倒换体制和模式，其协议在ITU-T\nG.841-1998的7.1中描述。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "请求的优先级评估系统状态，并把适当的通路倒换至保护段"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19380,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

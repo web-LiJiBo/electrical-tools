@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "6.5.1",
+  "entities": [
+    {
+      "name": "现场医务保障",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.1 硫化氢环境的陆上工作场所, 应配备具有医生执业资格的专职或兼职医务人员, 或依托可靠的医疗机构。 定员超过 15  人的海上石油设施上,应配备具有医生执业资格的专职或兼职医务人员。",
+      "type": "语义分解",
+      "subject": "现场医务保障",
+      "action": "",
+      "operation": "陆上配执业医生或依托机构海上超过15人配执业医务人员",
+      "condition": "",
+      "constraint": "6.5.1 硫化氢环境的陆上工作场所, 应配备具有医生执业资格的专职或兼职医务人员, 或依托可靠的医疗机构。 定员超过 15  人的海上石油设施上,应配备具有医生执业资格的专职或兼职医务人员。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场医务保障"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7467,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

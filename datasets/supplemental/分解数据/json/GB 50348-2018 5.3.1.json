@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "5.3.1",
+  "entities": [
+    {
+      "name": "设计任务书",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.1 安全防范工程初步设计前，建设单位应根据获得批准的可行性研究报告组织编制设计任务书。设计任务书应根据相关的国家法律法规规定、标准规范要求和管理使用需求，明确工程建设的目的及内容、保护对象和防范对象、安全需求、安全防范工程需要防范的风险、安全防范系统功能性能要求等。",
+      "type": "语义分解",
+      "subject": "设计任务书",
+      "action": "",
+      "operation": "初设前按批准可研组织编书明确目的内容对象需求风险功能性能",
+      "condition": "",
+      "constraint": "5.3.1 安全防范工程初步设计前，建设单位应根据获得批准的可行性研究报告组织编制设计任务书。设计任务书应根据相关的国家法律法规规定、标准规范要求和管理使用需求，明确工程建设的目的及内容、保护对象和防范对象、安全需求、安全防范工程需要防范的风险、安全防范系统功能性能要求等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设计任务书"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6907,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

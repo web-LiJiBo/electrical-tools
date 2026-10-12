@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.4.2.2.4",
+  "entities": [
+    {
+      "name": "模型环境相关性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2.2.4 类型参数和特征化模型的环境相关性宜在以下几个方面予以说明: a ) 类型参数反映 LCI 结果对类型终点产生影响的能力(至少要定性说明) ; b) 在特征化模型中添加有关类型终点的环境数据或信息 ,包括: 类型终点的状况; 评价各类型终点相对娈化的大小; 空间因素 ,例如面积和范围; 时间因素 ,例如时间跨度.滞留时间 ,持久性和即时性等; 环境机制的可逆性; 类型参数和类型终点之间关系的不确定性。",
+      "type": "语义分解",
+      "subject": "模型环境相关性",
+      "action": "",
+      "operation": "说明终点能力环境时空可逆不确定因素",
+      "condition": "",
+      "constraint": "4.4.2.2.4 类型参数和特征化模型的环境相关性宜在以下几个方面予以说明: a ) 类型参数反映 LCI 结果对类型终点产生影响的能力(至少要定性说明) ; b) 在特征化模型中添加有关类型终点的环境数据或信息 ,包括: 类型终点的状况; 评价各类型终点相对娈化的大小; 空间因素 ,例如面积和范围; 时间因素 ,例如时间跨度.滞留时间 ,持久性和即时性等; 环境机制的可逆性; 类型参数和类型终点之间关系的不确定性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "模型环境相关性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1108,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

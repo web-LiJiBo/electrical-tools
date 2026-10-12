@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.5",
+  "entities": [
+    {
+      "name": "许可污染物种类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.5 废气(废水) 污染物排放种类 依据排污许可证申请与核发技术规范中产排污设施对应的污染因子,对照应执行的国家或地方污染 物排放标准。自行监测技术指南 结合环境影响报告书(表)及其批复文件 环境影响登记表及备案材 料。竣工环境保护验收文件及验收意见。原辅材料主要成分等进行判定。",
+      "type": "语义分解",
+      "subject": "许可污染物种类",
+      "action": "",
+      "operation": "结合产排污因子标准指南环评验收原料成分判定",
+      "condition": "",
+      "constraint": "6.2.5 废气(废水) 污染物排放种类 依据排污许可证申请与核发技术规范中产排污设施对应的污染因子,对照应执行的国家或地方污染 物排放标准。自行监测技术指南 结合环境影响报告书(表)及其批复文件 环境影响登记表及备案材 料。竣工环境保护验收文件及验收意见。原辅材料主要成分等进行判定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可污染物种类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1998,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.2.4",
+  "entities": [
+    {
+      "name": "已有地下水井监测点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.4 对于监测区域己有地下水监测井或者邻近区域内有地下水井。可以选用己有的民井。生产井或 泉点作为地下水监测点。但须满足地下水监测井的设计要求。",
+      "type": "语义分解",
+      "subject": "已有地下水井监测点",
+      "action": "",
+      "operation": "满足设计要求时可选民井生产井泉点",
+      "condition": "对于监测区域己有地下水监测井或者邻近区域内有地下水井",
+      "constraint": "7.2.4 对于监测区域己有地下水监测井或者邻近区域内有地下水井。可以选用己有的民井。生产井或 泉点作为地下水监测点。但须满足地下水监测井的设计要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "已有地下水井监测点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 448,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

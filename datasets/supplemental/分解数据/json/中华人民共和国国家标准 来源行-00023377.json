@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023377",
+  "entities": [
+    {
+      "name": "选择接地参考点的目的是保障设备及系统的正常运行，这也 是判断接地参考点选",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   选择接地参考点的目的是保障设备及系统的正常运行，这也\n是判断接地参考点选择恰当与否的标志。从防雷保护角度看，接\n地参考点越靠近设备越好，因为在这种情况下用于连接设备和接\n地参考点的等电位连接导体的长度可以做到最短，从而能保证在\n雷电流通过时等电位连接导体两端的电压降最低。",
+      "type": "语义分解",
+      "subject": "选择接地参考点的目的是保障设备及系统的正常运行，这也 是判断接地参考点选",
+      "action": "",
+      "operation": "选择接地参考点的目的是保障设备及系统的正常运行，这也 是判断接地参考点选择恰当与否的标志。从防雷保护角度看，接 地参考点越靠近设备越好，因为在这种情况下用于连接设备和接 地参考点的等电位连接导体的长度可以做到最短，从而能保证在 雷电流通过时等电位连接导体两端的电压降最低。",
+      "condition": "",
+      "constraint": "   选择接地参考点的目的是保障设备及系统的正常运行，这也\n是判断接地参考点选择恰当与否的标志。从防雷保护角度看，接\n地参考点越靠近设备越好，因为在这种情况下用于连接设备和接\n地参考点的等电位连接导体的长度可以做到最短，从而能保证在\n雷电流通过时等电位连接导体两端的电压降最低。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "选择接地参考点的目的是保障设备及系统的正常运行，这也 是判断接地参考点选"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23377,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

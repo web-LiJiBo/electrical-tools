@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042402",
+  "entities": [
+    {
+      "name": "本标准代替 GB/T 21447—2008《钢质管道外腐蚀控制规范》, ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      本标准代替 GB/T 21447—2008《钢质管道外腐蚀控制规范》, 与 GB/T 21447—2008相比 , 除编辑\n性修改外主要技术变化如下 :",
+      "type": "语义分解",
+      "subject": "本标准代替 GB/T 21447—2008《钢质管道外腐蚀控制规范》, ",
+      "action": "",
+      "operation": "本标准代替 GB/T 21447—2008《钢质管道外腐蚀控制规范》, 与 GB/T 21447—2008相比 , 除编辑 性修改外主要技术变化如下",
+      "condition": "",
+      "constraint": "      本标准代替 GB/T 21447—2008《钢质管道外腐蚀控制规范》, 与 GB/T 21447—2008相比 , 除编辑\n性修改外主要技术变化如下 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本标准代替 GB/T 21447—2008《钢质管道外腐蚀控制规范》, "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42402,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

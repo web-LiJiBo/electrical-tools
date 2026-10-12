@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "计算单元保护面积",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 计算单元保护面积的确定应符合下列规定: 1 建筑物应按其建筑面积确定; 2 可燃物露天堆场,甲 ,乙 丙类液体储罐区 ,可燃气体储罐区应按堆垛 ,储罐的占地面积确定。",
+      "type": "语义分解",
+      "subject": "计算单元保护面积",
+      "action": "",
+      "operation": "建筑按建筑面积露天可燃堆场及储罐区按堆垛储罐占地面积",
+      "condition": "",
+      "constraint": "7.2.2 计算单元保护面积的确定应符合下列规定: 1 建筑物应按其建筑面积确定; 2 可燃物露天堆场,甲 ,乙 丙类液体储罐区 ,可燃气体储罐区应按堆垛 ,储罐的占地面积确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "计算单元保护面积"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4077,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.20",
+  "standard_id": "CCS Z50",
+  "version": "",
+  "chapter_path": "来源行-00033027",
+  "entities": [
+    {
+      "name": "HJ 479 环境空气 氮氧化物(一氧化氮和二氧化氮)的测定 盐酸蔡乙二",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "HJ 479   环境空气 氮氧化物(一氧化氮和二氧化氮)的测定  盐酸蔡乙二胺分光光度法\nHJ 482    环境空气 二氧化硫的测定 甲醛吸收-副玫瑰苯胺分光光度法\nHJ 504   环境空气 臭氧的测定 靛蓝二磺酸钠分光光度法\nHJ 539   环境空气 铅的测定 石墨炉原子吸收分光光度法\nHJ 590   环境空气 臭氧的测定 紫外光度法",
+      "type": "语义分解",
+      "subject": "HJ 479 环境空气 氮氧化物(一氧化氮和二氧化氮)的测定 盐酸蔡乙二",
+      "action": "",
+      "operation": "HJ 479 环境空气 氮氧化物(一氧化氮和二氧化氮)的测定 盐酸蔡乙二胺分光光度法 HJ 482 环境空气 二氧化硫的测定 甲醛吸收-副玫瑰苯胺分光光度法 HJ 504 环境空气 臭氧的测定 靛蓝二磺酸钠分光光度法 HJ 539 环境空气 铅的测定 石墨炉原子吸收分光光度法 HJ 590 环境空气 臭氧的测定 紫外光度法",
+      "condition": "",
+      "constraint": "HJ 479   环境空气 氮氧化物(一氧化氮和二氧化氮)的测定  盐酸蔡乙二胺分光光度法\nHJ 482    环境空气 二氧化硫的测定 甲醛吸收-副玫瑰苯胺分光光度法\nHJ 504   环境空气 臭氧的测定 靛蓝二磺酸钠分光光度法\nHJ 539   环境空气 铅的测定 石墨炉原子吸收分光光度法\nHJ 590   环境空气 臭氧的测定 紫外光度法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "HJ 479 环境空气 氮氧化物(一氧化氮和二氧化氮)的测定 盐酸蔡乙二"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

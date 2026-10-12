@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "5.2",
+  "entities": [
+    {
+      "name": "环境监测现场踏勘",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2 现场踏勘 在前期资料搜集的基础上,有针对性的对监测单位环境污染情况迸行现场踏勘,对环境监测相关资 料的真实性。准确性和完整性进行确认和补充。拍照记录并可以使用现场快速测定仪器进行检测。在布 置图中标记重点区域。",
+      "type": "语义分解",
+      "subject": "环境监测现场踏勘",
+      "action": "",
+      "operation": "确认补充资料真实性记录标记重点区",
+      "condition": "",
+      "constraint": "5.2 现场踏勘 在前期资料搜集的基础上,有针对性的对监测单位环境污染情况迸行现场踏勘,对环境监测相关资 料的真实性。准确性和完整性进行确认和补充。拍照记录并可以使用现场快速测定仪器进行检测。在布 置图中标记重点区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境监测现场踏勘"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 432,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

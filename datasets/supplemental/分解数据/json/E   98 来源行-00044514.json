@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00044514",
+  "entities": [
+    {
+      "name": "分属于不同业主的阴极保护系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1    分属于不同业主的阴极保护系统。此时即使采用了相同\n的阴极保护系统，为了管理上的方便也推荐电绝缘。比如干线\n管道和支线管道，长输管道和城镇燃气管道，分输支线管道等。\n      2    同一个业主，但包括不同的阴极保护方式。如既包括海\n管，又包括陆管的长输管道，海上管道采用了牺牲阳极保护系\n统，陆上管道采用了强制电流阴极保护系统，此时这两个阴极\n保护系统之间也推荐采取电绝缘措施。",
+      "type": "语义分解",
+      "subject": "分属于不同业主的阴极保护系统",
+      "action": "",
+      "operation": "分属于不同业主的阴极保护系统。此时即使采用了相同 的阴极保护系统，为了管理上的方便也推荐电绝缘。比如干线 管道和支线管道，长输管道和城镇燃气管道，分输支线管道等。 2 同一个业主，但包括不同的阴极保护方式。如既包括海 管，又包括陆管的长输管道，海上管道采用了牺牲阳极保护系 统，陆上管道采用了强制电流阴极保护系统，此时这两个阴极 保护系统之间也推荐采取电绝缘措施。",
+      "condition": "",
+      "constraint": "      1    分属于不同业主的阴极保护系统。此时即使采用了相同\n的阴极保护系统，为了管理上的方便也推荐电绝缘。比如干线\n管道和支线管道，长输管道和城镇燃气管道，分输支线管道等。\n      2    同一个业主，但包括不同的阴极保护方式。如既包括海\n管，又包括陆管的长输管道，海上管道采用了牺牲阳极保护系\n统，陆上管道采用了强制电流阴极保护系统，此时这两个阴极\n保护系统之间也推荐采取电绝缘措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分属于不同业主的阴极保护系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44514,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

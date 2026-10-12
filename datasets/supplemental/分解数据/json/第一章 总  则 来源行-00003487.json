@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团生产安全视频监控系统管理细则",
+  "standard_id": "第一章 总  则",
+  "version": "",
+  "chapter_path": "来源行-00003487",
+  "entities": [
+    {
+      "name": "第二十条 所属单位应定期做好生产安全视频监控系统及视频采集设备的软件版本",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十条 所属单位应定期做好生产安全视频监控系统及视频采集设备的软件版本检查,登记系统软件最新的版本号和日期,当软件版本发生变化时,宜及时进行更新。",
+      "type": "语义分解",
+      "subject": "第二十条 所属单位应定期做好生产安全视频监控系统及视频采集设备的软件版本",
+      "action": "",
+      "operation": "第二十条 所属单位应定期做好生产安全视频监控系统及视频采集设备的软件版本检查,登记系统软件最新的版本号和日期,当软件版本发生变化时,宜及时进行更新。",
+      "condition": "",
+      "constraint": "第二十条 所属单位应定期做好生产安全视频监控系统及视频采集设备的软件版本检查,登记系统软件最新的版本号和日期,当软件版本发生变化时,宜及时进行更新。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十条 所属单位应定期做好生产安全视频监控系统及视频采集设备的软件版本"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3487,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

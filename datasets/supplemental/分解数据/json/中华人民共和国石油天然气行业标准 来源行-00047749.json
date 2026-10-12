@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047749",
+  "entities": [
+    {
+      "name": "对傅里叶变换的复数进行共轭，得到其共轭复数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4   对傅里叶变换的复数进行共轭，得到其共轭复数。\n      5    用傅里叶变换复数与共轭复数的乘积除以数据区间长\n度，得到功率谱密度分布。",
+      "type": "语义分解",
+      "subject": "对傅里叶变换的复数进行共轭，得到其共轭复数",
+      "action": "",
+      "operation": "对傅里叶变换的复数进行共轭，得到其共轭复数。 5 用傅里叶变换复数与共轭复数的乘积除以数据区间长 度，得到功率谱密度分布。",
+      "condition": "",
+      "constraint": "      4   对傅里叶变换的复数进行共轭，得到其共轭复数。\n      5    用傅里叶变换复数与共轭复数的乘积除以数据区间长\n度，得到功率谱密度分布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对傅里叶变换的复数进行共轭，得到其共轭复数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47749,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.3.1.1",
+  "entities": [
+    {
+      "name": "JSA小组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1.1  JSA 小组通常由3～6人组成，组长通常由作业区(站、队)主管负责人或其指定人员担任。\n4.3.1.2         组长选择熟悉作业前安全分析方法的管理、技术、安全、操作人员组成小组，由承包商完成\n的作业成员还应包括承包商单位人员。",
+      "type": "语义分解",
+      "subject": "JSA小组",
+      "action": "",
+      "operation": "通常3至6人主管指定组长熟悉方法多专业含承包人员",
+      "condition": "",
+      "constraint": "4.3.1.1  JSA 小组通常由3～6人组成，组长通常由作业区(站、队)主管负责人或其指定人员担任。\n4.3.1.2         组长选择熟悉作业前安全分析方法的管理、技术、安全、操作人员组成小组，由承包商完成\n的作业成员还应包括承包商单位人员。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "JSA小组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32124,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023858",
+  "entities": [
+    {
+      "name": "a) 应支持预约会议功能 ,预先配置会议主持人及其成员 ,主持人拨打接入",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    应支持预约会议功能 ,预先配置会议主持人及其成员 ,主持人拨打接入号开始会议并呼叫会议\n       成员 。",
+      "type": "语义分解",
+      "subject": "a) 应支持预约会议功能 ,预先配置会议主持人及其成员 ,主持人拨打接入",
+      "action": "",
+      "operation": "a) 应支持预约会议功能 ,预先配置会议主持人及其成员 ,主持人拨打接入号开始会议并呼叫会议 成员 。",
+      "condition": "",
+      "constraint": "a)    应支持预约会议功能 ,预先配置会议主持人及其成员 ,主持人拨打接入号开始会议并呼叫会议\n       成员 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 应支持预约会议功能 ,预先配置会议主持人及其成员 ,主持人拨打接入"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23858,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

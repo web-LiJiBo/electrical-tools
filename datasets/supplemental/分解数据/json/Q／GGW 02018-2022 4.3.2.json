@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "4.3.2",
+  "entities": [
+    {
+      "name": "主要耗能设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.2 趋势分析法适用于生产任务量。管道负荷率和工艺相对稳定的输油气场站, LNG 接收站。库区, 阀室。维修队,消防队主要耗能设备能耗(有单体计量)的测算。",
+      "type": "语义分解",
+      "subject": "主要耗能设备",
+      "action": "",
+      "operation": "采用趋势分析法测算能耗",
+      "condition": "生产任务量。管道负荷率和工艺相对稳定",
+      "constraint": "有单体计量",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "主要耗能设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

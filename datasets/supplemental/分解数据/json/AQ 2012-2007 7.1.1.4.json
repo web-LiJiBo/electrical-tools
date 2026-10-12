@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.1.1.4",
+  "entities": [
+    {
+      "name": "地上输油气管道",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1.4 输油气管道采用地上敷设时 ,应在人员活动较多和易遭车辆,外来物撞击的地段 ,采取保护措施并设置明显的警示标志。",
+      "type": "语义分解",
+      "subject": "地上输油气管道",
+      "action": "",
+      "operation": "活动频繁易撞地段设保护及警示",
+      "condition": "输油气管道采用地上敷设时",
+      "constraint": "7.1.1.4 输油气管道采用地上敷设时 ,应在人员活动较多和易遭车辆,外来物撞击的地段 ,采取保护措施并设置明显的警示标志。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地上输油气管道"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4770,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

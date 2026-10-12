@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036628",
+  "entities": [
+    {
+      "name": "注1",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注1:SV是检测设备测得的甲烷净检测值(SV,μmol/mol)。\n注2:组件排放速率计算采用的相关方程法参考了《石化企业泄漏检测与修复工作指南》(环办气候函〔2015)\n      104号)附件1的内容。",
+      "type": "语义分解",
+      "subject": "注1",
+      "action": "",
+      "operation": "注1:SV是检测设备测得的甲烷净检测值(SV,μmol/mol)。 注2:组件排放速率计算采用的相关方程法参考了《石化企业泄漏检测与修复工作指南》(环办气候函〔2015) 104号)附件1的内容。",
+      "condition": "",
+      "constraint": "注1:SV是检测设备测得的甲烷净检测值(SV,μmol/mol)。\n注2:组件排放速率计算采用的相关方程法参考了《石化企业泄漏检测与修复工作指南》(环办气候函〔2015)\n      104号)附件1的内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注1"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36628,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

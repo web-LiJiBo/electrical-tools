@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.8.5.3",
+  "entities": [
+    {
+      "name": "油气码头管理文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.8.5.3 油气码头应备有安全操作指南 ,设备操作手册等管理文件 ,有关人员应熟练掌握管理文件的内容。",
+      "type": "语义分解",
+      "subject": "油气码头管理文件",
+      "action": "",
+      "operation": "备安全指南操作手册并熟练掌握",
+      "condition": "",
+      "constraint": "6.8.5.3 油气码头应备有安全操作指南 ,设备操作手册等管理文件 ,有关人员应熟练掌握管理文件的内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "油气码头管理文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4680,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

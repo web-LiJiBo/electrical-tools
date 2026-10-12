@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035027",
+  "entities": [
+    {
+      "name": "在主期阶段 , 当量热计中的水温不再上升 ,开始恒定或下降时的前一点作为",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      在主期阶段 , 当量热计中的水温不再上升 ,开始恒定或下降时的前一点作为主期的终点 , 主期一般\n约为 14个 0. 5 min。  紧接着为终期第 1 次 ,终期读数共 10次 。",
+      "type": "语义分解",
+      "subject": "在主期阶段 , 当量热计中的水温不再上升 ,开始恒定或下降时的前一点作为",
+      "action": "",
+      "operation": "在主期阶段 , 当量热计中的水温不再上升 ,开始恒定或下降时的前一点作为主期的终点 , 主期一般 约为 14个 0. 5 min。 紧接着为终期第 1 次 ,终期读数共 10次 。",
+      "condition": "",
+      "constraint": "      在主期阶段 , 当量热计中的水温不再上升 ,开始恒定或下降时的前一点作为主期的终点 , 主期一般\n约为 14个 0. 5 min。  紧接着为终期第 1 次 ,终期读数共 10次 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在主期阶段 , 当量热计中的水温不再上升 ,开始恒定或下降时的前一点作为"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

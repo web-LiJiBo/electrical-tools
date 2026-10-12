@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018744",
+  "entities": [
+    {
+      "name": "— 多通路信号的STL 帧同步",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "— 多通路信号的STL 帧同步：该处理恢复STL-256.4多通路中每个通路帧起始。\n— 多通路信号的STL-AIS 检测：该功能通过检测STL 帧码(16个A1 跟随15个A2 字\n   节后面的固定字节0xFF检测STL-AIS。",
+      "type": "语义分解",
+      "subject": "— 多通路信号的STL 帧同步",
+      "action": "",
+      "operation": "— 多通路信号的STL 帧同步：该处理恢复STL-256.4多通路中每个通路帧起始。 — 多通路信号的STL-AIS 检测：该功能通过检测STL 帧码(16个A1 跟随15个A2 字 节后面的固定字节0xFF检测STL-AIS。",
+      "condition": "",
+      "constraint": "— 多通路信号的STL 帧同步：该处理恢复STL-256.4多通路中每个通路帧起始。\n— 多通路信号的STL-AIS 检测：该功能通过检测STL 帧码(16个A1 跟随15个A2 字\n   节后面的固定字节0xFF检测STL-AIS。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— 多通路信号的STL 帧同步"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18744,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

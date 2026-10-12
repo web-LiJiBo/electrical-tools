@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.2.7",
+  "entities": [
+    {
+      "name": "责任制评审",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.7 企业应每年对安全生产责任制的适用性和有效性进行评审 ,有下列情形之-的 ,应及时修订: 依据的法律 .法规 ,规章 ,标准中的有关规定发生重大变化的; 组织机构及其职责进行了调整的; 企业生产经营内容发生重大变化的; 企业发生安全事故事件后 ,在安全责任方面暴露出问题的; 企业认为需要修订的其他情况。",
+      "type": "语义分解",
+      "subject": "责任制评审",
+      "action": "",
+      "operation": "每年评审适用有效重大法规组织业务变化事故责任问题等及时修订",
+      "condition": "",
+      "constraint": "4.2.7 企业应每年对安全生产责任制的适用性和有效性进行评审 ,有下列情形之-的 ,应及时修订: 依据的法律 .法规 ,规章 ,标准中的有关规定发生重大变化的; 组织机构及其职责进行了调整的; 企业生产经营内容发生重大变化的; 企业发生安全事故事件后 ,在安全责任方面暴露出问题的; 企业认为需要修订的其他情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "责任制评审"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5061,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

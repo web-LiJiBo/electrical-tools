@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041264",
+  "entities": [
+    {
+      "name": "表层以下的土壤状态是建筑、泵、发动机、油罐和施工过程所用设备的基础支撑，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   表层以下的土壤状态是建筑、泵、发动机、油罐和施工过程所用设备的基础支撑，应予以考虑。\n   为了建设堤坝、防火墙和应急防污池，应评估土壤的特性。当土壤现状疏松或地下水可能会被影\n响时，防污池的表层应考虑采用压实的粘土层或防渗层。",
+      "type": "语义分解",
+      "subject": "表层以下的土壤状态是建筑、泵、发动机、油罐和施工过程所用设备的基础支撑，",
+      "action": "",
+      "operation": "表层以下的土壤状态是建筑、泵、发动机、油罐和施工过程所用设备的基础支撑，应予以考虑。 为了建设堤坝、防火墙和应急防污池，应评估土壤的特性。当土壤现状疏松或地下水可能会被影 响时，防污池的表层应考虑采用压实的粘土层或防渗层。",
+      "condition": "",
+      "constraint": "   表层以下的土壤状态是建筑、泵、发动机、油罐和施工过程所用设备的基础支撑，应予以考虑。\n   为了建设堤坝、防火墙和应急防污池，应评估土壤的特性。当土壤现状疏松或地下水可能会被影\n响时，防污池的表层应考虑采用压实的粘土层或防渗层。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "表层以下的土壤状态是建筑、泵、发动机、油罐和施工过程所用设备的基础支撑，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41264,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

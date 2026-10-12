@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026160",
+  "entities": [
+    {
+      "name": "集线比的取值可视具体用户群类型而定，对普通公众用户， 可采用10",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     集线比的取值可视具体用户群类型而定，对普通公众用户，\n可采用10:1;对集团客户，可采用5:1;",
+      "type": "语义分解",
+      "subject": "集线比的取值可视具体用户群类型而定，对普通公众用户， 可采用10",
+      "action": "",
+      "operation": "集线比的取值可视具体用户群类型而定，对普通公众用户， 可采用10:1;对集团客户，可采用5:1",
+      "condition": "",
+      "constraint": "     集线比的取值可视具体用户群类型而定，对普通公众用户，\n可采用10:1;对集团客户，可采用5:1;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "集线比的取值可视具体用户群类型而定，对普通公众用户， 可采用10"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26160,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

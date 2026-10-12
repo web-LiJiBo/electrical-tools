@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "3.3",
+  "entities": [
+    {
+      "name": "环评工作程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3 环境影响评价工作程序 分析判定建设项目选址选线,规模,性质和工艺路线等与囤家和地方有关环境保护法律法规,标准 政策。规范。相关规划。规划环境影响评价结论及审查意见的符合性,并与生态保护红线 环境质量底 线。资源利用上线和环境淮入负面清单进行对照。作为开展环境影响评价工作的前提和基础。 环境影响评价工作一般分为三个阶段,即调查分析和工作方案制定阶段,分析论证和预测评价阶段, 环境影响报告书(表)编制阶段。",
+      "type": "语义分解",
+      "subject": "环评工作程序",
+      "action": "",
+      "operation": "先核选址规模性质工艺法规规划红线要求再调查预测编报告三阶段",
+      "condition": "",
+      "constraint": "3.3 环境影响评价工作程序 分析判定建设项目选址选线,规模,性质和工艺路线等与囤家和地方有关环境保护法律法规,标准 政策。规范。相关规划。规划环境影响评价结论及审查意见的符合性,并与生态保护红线 环境质量底 线。资源利用上线和环境淮入负面清单进行对照。作为开展环境影响评价工作的前提和基础。 环境影响评价工作一般分为三个阶段,即调查分析和工作方案制定阶段,分析论证和预测评价阶段, 环境影响报告书(表)编制阶段。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环评工作程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2534,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

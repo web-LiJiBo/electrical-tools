@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034515",
+  "entities": [
+    {
+      "name": "_____在水或蒸汽喷到工作流体中的情况下 ’喷注系统的运行状态",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "_____在水或蒸汽喷到工作流体中的情况下 ’喷注系统的运行状态。",
+      "type": "语义分解",
+      "subject": "_____在水或蒸汽喷到工作流体中的情况下 ’喷注系统的运行状态",
+      "action": "",
+      "operation": "_____在水或蒸汽喷到工作流体中的情况下 ’喷注系统的运行状态。",
+      "condition": "",
+      "constraint": "_____在水或蒸汽喷到工作流体中的情况下 ’喷注系统的运行状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "_____在水或蒸汽喷到工作流体中的情况下 ’喷注系统的运行状态"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34515,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

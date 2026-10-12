@@ -10,7 +10,7 @@ from .clause_retriever import JsonClauseRepository
 from .entity_linker import EntityLinker
 from .models import RetrievalTrace, RuleHit
 from .reranker import EvidenceReranker
-from .text import structural_score, text_similarity
+from .text import normalize, structural_score, text_similarity
 
 
 class LocalLunwenRetrievalAdapter:
@@ -41,7 +41,11 @@ class LocalLunwenRetrievalAdapter:
             term for term in focus_terms
             if not any(term in entity or entity in term for entity in entity_terms if entity)
         ]
-        all_pairs = [(rule, unit) for unit in self.repository.units for rule in unit.rules]
+        standard_filter = str(request.parsed_json.get("requested_standard_id", "")).strip()
+        chapter_filter = str(request.parsed_json.get("requested_chapter_path", "")).strip()
+        all_pairs = [(rule, unit) for unit in self.repository.units for rule in unit.rules
+                     if (not standard_filter or unit.standard_id == standard_filter)
+                     and (not chapter_filter or unit.chapter_path == chapter_filter)]
         # 实体Top-K不能成为硬过滤器。并入全库文本候选，避免“温升异常”等故障特征
         # 被大量同名设备实体挤出候选集。
         # 当前核验库约1.2万条规则，可承受全库轻量重排。保留实体召回轨迹，
@@ -49,6 +53,10 @@ class LocalLunwenRetrievalAdapter:
         pairs = all_pairs
         hits: list[RuleHit] = []
         for rule, unit in pairs:
+            if ("标题" in rule.operation and "仅" in rule.operation
+                    or rule.operation == "清单缺失"
+                    or rule.operation.startswith("保留原始") and "数值" in rule.operation):
+                continue  # Retain these records in the graph, not answer evidence.
             # 原始规则正文是检索主文本；结构化字段只作为正文缺失时的兼容回退。
             rule_text = self._rule_text(rule)
             entity_score = max((item.score for item in linked if item.entity in unit.entities), default=0.0)
@@ -67,7 +75,11 @@ class LocalLunwenRetrievalAdapter:
             content_score = (
                 0.25 * text_similarity(request.clause_text, rule_text)
                 + 0.15 * text_similarity(semantic_query, rule_text)
-                + 0.60 * max((text_similarity(term, rule_text) for term in issue_terms), default=0.0)
+                # Explicit parameter/topic phrase presence is strong evidence;
+                # dividing a short phrase by the entire clause length otherwise
+                # ranks unrelated short clauses above the full source sentence.
+                + 0.60 * max((1.0 if len(normalize(term)) >= 2 and normalize(term) in normalize(rule_text)
+                              else text_similarity(term, rule_text) for term in issue_terms), default=0.0)
             )
             requested_actions = {
                 str(item).strip() for item in request.parsed_json.get("actions", []) if str(item).strip()

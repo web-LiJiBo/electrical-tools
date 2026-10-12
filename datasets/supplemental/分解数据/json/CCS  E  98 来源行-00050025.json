@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050025",
+  "entities": [
+    {
+      "name": "耐划伤检测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4    耐划伤检测：应按现行行业标准《管道防腐层性能试验\n方法 第1部分：耐划伤测试》SY/T  4113.1的规定执行。\n      5    厚度检测：每段防护层应检验4处，且应在同一截面周\n向分布，宜采用磁性测厚仪或焊缝检验尺进行检测。",
+      "type": "语义分解",
+      "subject": "耐划伤检测",
+      "action": "",
+      "operation": "耐划伤检测：应按现行行业标准《管道防腐层性能试验 方法 第1部分：耐划伤测试》SY/T 4113.1的规定执行。 5 厚度检测：每段防护层应检验4处，且应在同一截面周 向分布，宜采用磁性测厚仪或焊缝检验尺进行检测。",
+      "condition": "",
+      "constraint": "      4    耐划伤检测：应按现行行业标准《管道防腐层性能试验\n方法 第1部分：耐划伤测试》SY/T  4113.1的规定执行。\n      5    厚度检测：每段防护层应检验4处，且应在同一截面周\n向分布，宜采用磁性测厚仪或焊缝检验尺进行检测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "耐划伤检测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50025,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

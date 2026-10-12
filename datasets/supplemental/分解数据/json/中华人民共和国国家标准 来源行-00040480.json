@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040480",
+  "entities": [
+    {
+      "name": "一般生产装置对于料液都有事故放料槽，而对固体、半固 体废物则缺少收集或贮",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2       一般生产装置对于料液都有事故放料槽，而对固体、半固\n体废物则缺少收集或贮存设施，随意堆放甚至直排下水道，为避免\n污染物扩散对周围环境和地下水造成危害，本条要求在特殊状况\n下排出的废渣要设专门的容器或设备收集、处理。",
+      "type": "语义分解",
+      "subject": "一般生产装置对于料液都有事故放料槽，而对固体、半固 体废物则缺少收集或贮",
+      "action": "",
+      "operation": "一般生产装置对于料液都有事故放料槽，而对固体、半固 体废物则缺少收集或贮存设施，随意堆放甚至直排下水道，为避免 污染物扩散对周围环境和地下水造成危害，本条要求在特殊状况 下排出的废渣要设专门的容器或设备收集、处理。",
+      "condition": "",
+      "constraint": "7.2.2       一般生产装置对于料液都有事故放料槽，而对固体、半固\n体废物则缺少收集或贮存设施，随意堆放甚至直排下水道，为避免\n污染物扩散对周围环境和地下水造成危害，本条要求在特殊状况\n下排出的废渣要设专门的容器或设备收集、处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一般生产装置对于料液都有事故放料槽，而对固体、半固 体废物则缺少收集或贮"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40480,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

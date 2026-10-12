@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.5.1.11",
+  "entities": [
+    {
+      "name": "主缆锚具连接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.5.1.11   应经常巡视主缆与锚具的连接状况，观察锚具有无锈蚀、破损等异常现象，定期对锚具进\n行清洁、防护。",
+      "type": "语义分解",
+      "subject": "主缆锚具连接",
+      "action": "",
+      "operation": "常巡异常定清洁保护",
+      "condition": "",
+      "constraint": "9.5.1.11   应经常巡视主缆与锚具的连接状况，观察锚具有无锈蚀、破损等异常现象，定期对锚具进\n行清洁、防护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主缆锚具连接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30149,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

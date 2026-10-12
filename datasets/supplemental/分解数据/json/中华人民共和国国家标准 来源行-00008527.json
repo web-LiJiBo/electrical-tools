@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008527",
+  "entities": [
+    {
+      "name": "本规范是根据住房和城乡建设部《关于印发<2011年工程建 设标准规范制定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   本规范是根据住房和城乡建设部《关于印发<2011年工程建\n设标准规范制定、修订计划>的通知》(建标〔2011〕17号)的要求，\n由中国移动通信集团设计院有限公司会同有关单位共同编制\n完成。",
+      "type": "语义分解",
+      "subject": "本规范是根据住房和城乡建设部《关于印发<2011年工程建 设标准规范制定",
+      "action": "",
+      "operation": "本规范是根据住房和城乡建设部《关于印发<2011年工程建 设标准规范制定、修订计划>的通知》(建标〔2011〕17号)的要求， 由中国移动通信集团设计院有限公司会同有关单位共同编制 完成。",
+      "condition": "",
+      "constraint": "   本规范是根据住房和城乡建设部《关于印发<2011年工程建\n设标准规范制定、修订计划>的通知》(建标〔2011〕17号)的要求，\n由中国移动通信集团设计院有限公司会同有关单位共同编制\n完成。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本规范是根据住房和城乡建设部《关于印发<2011年工程建 设标准规范制定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8527,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

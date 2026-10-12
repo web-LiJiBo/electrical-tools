@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.13",
+  "entities": [
+    {
+      "name": "许可自行监测信息",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.13 废气(废水)自行监测信息 依据自行监测技术指南,排污许可证申请与核发技术规范,污染物排放标准及地方相关规定进行判 定。原则上优先采用自行监测技术指南中的要求。",
+      "type": "语义分解",
+      "subject": "许可自行监测信息",
+      "action": "",
+      "operation": "依据指南规范标准地方规定原则优先自行监测指南",
+      "condition": "",
+      "constraint": "6.2.13 废气(废水)自行监测信息 依据自行监测技术指南,排污许可证申请与核发技术规范,污染物排放标准及地方相关规定进行判 定。原则上优先采用自行监测技术指南中的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可自行监测信息"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2006,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

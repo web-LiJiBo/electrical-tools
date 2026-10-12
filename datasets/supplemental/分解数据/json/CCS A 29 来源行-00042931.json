@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00042931",
+  "entities": [
+    {
+      "name": "j) 更改了铝阳极铁脚的表面处理要求(见 6. 5. 2,2002年版的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " j)     更改了铝阳极铁脚的表面处理要求(见 6. 5. 2,2002年版的 5. 5. 2) ;\n k)    更改了铝阳极的尺寸偏差要求(见 6. 7. 2,2002年版的 5. 7. 2) ;\n l)     增加了铝阳极的内部缺陷要求及试验方法(见 6. 8 和 7. 7) ;",
+      "type": "语义分解",
+      "subject": "j) 更改了铝阳极铁脚的表面处理要求(见 6. 5. 2,2002年版的",
+      "action": "",
+      "operation": "j) 更改了铝阳极铁脚的表面处理要求(见 6. 5. 2,2002年版的 5. 5. 2) ; k) 更改了铝阳极的尺寸偏差要求(见 6. 7. 2,2002年版的 5. 7. 2) ; l) 增加了铝阳极的内部缺陷要求及试验方法(见 6. 8 和 7. 7)",
+      "condition": "",
+      "constraint": " j)     更改了铝阳极铁脚的表面处理要求(见 6. 5. 2,2002年版的 5. 5. 2) ;\n k)    更改了铝阳极的尺寸偏差要求(见 6. 7. 2,2002年版的 5. 7. 2) ;\n l)     增加了铝阳极的内部缺陷要求及试验方法(见 6. 8 和 7. 7) ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "j) 更改了铝阳极铁脚的表面处理要求(见 6. 5. 2,2002年版的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42931,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

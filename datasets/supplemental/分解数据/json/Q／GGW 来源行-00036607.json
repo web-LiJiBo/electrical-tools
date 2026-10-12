@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036607",
+  "entities": [
+    {
+      "name": "发现泄漏点应及时系挂泄漏标识牌或做出相应标识",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1       发现泄漏点应及时系挂泄漏标识牌或做出相应标识。对于结构复杂或尺寸较大的设备与管线组\n件，可采取在密封点上作标记、利用防爆相机拍照或其他方式记录泄漏具体部位。",
+      "type": "语义分解",
+      "subject": "发现泄漏点应及时系挂泄漏标识牌或做出相应标识",
+      "action": "",
+      "operation": "发现泄漏点应及时系挂泄漏标识牌或做出相应标识。对于结构复杂或尺寸较大的设备与管线组 件，可采取在密封点上作标记、利用防爆相机拍照或其他方式记录泄漏具体部位。",
+      "condition": "",
+      "constraint": "7.2.1       发现泄漏点应及时系挂泄漏标识牌或做出相应标识。对于结构复杂或尺寸较大的设备与管线组\n件，可采取在密封点上作标记、利用防爆相机拍照或其他方式记录泄漏具体部位。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "发现泄漏点应及时系挂泄漏标识牌或做出相应标识"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36607,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

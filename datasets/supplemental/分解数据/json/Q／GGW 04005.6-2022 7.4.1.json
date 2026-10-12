@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.4.1",
+  "entities": [
+    {
+      "name": "无组织污染物监控点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.1 二氧化硫,氮氧化物。颗粒物的排放监测在无组织排放源下风向设监控点, 同时在排放源匕风 向设参考点, 以监控点同参考点的浓度差值不超过规定限值来限制无组织排放; 规定对其余污染物在单 位周界外设监控点和监控点的浓度限值。",
+      "type": "语义分解",
+      "subject": "无组织污染物监控点",
+      "action": "",
+      "operation": "按污染物设置上下风或周界监控限值",
+      "condition": "",
+      "constraint": "7.4.1 二氧化硫,氮氧化物。颗粒物的排放监测在无组织排放源下风向设监控点, 同时在排放源匕风 向设参考点, 以监控点同参考点的浓度差值不超过规定限值来限制无组织排放; 规定对其余污染物在单 位周界外设监控点和监控点的浓度限值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无组织污染物监控点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 459,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

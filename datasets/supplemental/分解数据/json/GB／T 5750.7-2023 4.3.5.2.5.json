@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.3.5.2.5",
+  "entities": [
+    {
+      "name": "指数消解显色",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.5.2.5 将以上消解管置于已预热至100 c的恒温消解器内开始自动加热 ,100 %C加热消解 30 min。 加热结束后 ,立即取出消解管,上下颠倒几次 ,放置在试管架上并迅速用流动的自来水降至室温 ,向以上消解管中加人0.2 ml 硫酸亚铁铵标淮溶液 ,混匀,再加入5.0 mI 邻菲罗啉溶液 ,再混匀 ,等待反应 3 min",
+      "type": "语义分解",
+      "subject": "指数消解显色",
+      "action": "",
+      "operation": "规定温度消解三十分钟冷却加亚铁铵邻菲罗啉反应三分钟",
+      "condition": "",
+      "constraint": "4.3.5.2.5 将以上消解管置于已预热至100 c的恒温消解器内开始自动加热 ,100 %C加热消解 30 min。 加热结束后 ,立即取出消解管,上下颠倒几次 ,放置在试管架上并迅速用流动的自来水降至室温 ,向以上消解管中加人0.2 ml 硫酸亚铁铵标淮溶液 ,混匀,再加入5.0 mI 邻菲罗啉溶液 ,再混匀 ,等待反应 3 min",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指数消解显色"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1704,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温度单位识别异常"
+      ]
+    }
+  }
+}

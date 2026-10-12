@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042732",
+  "entities": [
+    {
+      "name": "术语、定义和符号 3. 1 术语和定义 下列术语和定义适用于本文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3   术语、定义和符号\n\n3. 1   术语和定义\n\n      下列术语和定义适用于本文件 。\n3. 1. 1\n   干气  drygas\n      高于露点温度且不含凝析液体的气体 。\n3. 1.2\n   管道内腐蚀外检测  internalcorrosion externalinspection forpipeline\n      从管道外部对管道内壁腐蚀情况进行检测的方法 ,包括数据收集 、腐蚀位置预测 、开挖检测及检测\n周期确定等步骤 。\n3. 1.3\n   临界倾角  criticalinclination angle\n      流动模型计算出的层流条件下气体不发生携液的最小倾角 。\n3. 1.4\n   实际倾角  inclination angle\n      管道上两点间高程变化形成的角度 。\n3. 1.5\n   检测区段  inspection region\n      开展内腐蚀外检测的管道上 ,有类似的物理特征和运行参数 ,流体特性没有显著变化的一段连续管\n道 (包括焊缝) 。",
+      "type": "语义分解",
+      "subject": "术语、定义和符号 3. 1 术语和定义 下列术语和定义适用于本文件",
+      "action": "",
+      "operation": "术语、定义和符号 3. 1 术语和定义 下列术语和定义适用于本文件 。 3. 1. 1 干气 drygas 高于露点温度且不含凝析液体的气体 。 3. 1.2 管道内腐蚀外检测 internalcorrosion externalinspection forpipeline 从管道外部对管道内壁腐蚀情况进行检测的方法 ,包括数据收集 、腐蚀位置预测 、开挖检测及检测 周期确定等步骤 。 3. 1.3 临界倾角 criticalinclination angle 流动模型计算出",
+      "condition": "",
+      "constraint": "3   术语、定义和符号\n\n3. 1   术语和定义\n\n      下列术语和定义适用于本文件 。\n3. 1. 1\n   干气  drygas\n      高于露点温度且不含凝析液体的气体 。\n3. 1.2\n   管道内腐蚀外检测  internalcorrosion externalinspection forpipeline\n      从管道外部对管道内壁腐蚀情况进行检测的方法 ,包括数据收集 、腐蚀位置预测 、开挖检测及检测\n周期确定等步骤 。\n3. 1.3\n   临界倾角  criticalinclination angle\n      流动模型计算出的层流条件下气体不发生携液的最小倾角 。\n3. 1.4\n   实际倾角  inclination angle\n      管道上两点间高程变化形成的角度 。\n3. 1.5\n   检测区段  inspection region\n      开展内腐蚀外检测的管道上 ,有类似的物理特征和运行参数 ,流体特性没有显著变化的一段连续管\n道 (包括焊缝) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "术语、定义和符号 3. 1 术语和定义 下列术语和定义适用于本文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42732,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

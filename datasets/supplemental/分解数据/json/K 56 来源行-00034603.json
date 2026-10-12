@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034603",
+  "entities": [
+    {
+      "name": "任何部件工作不正常 , 导致未达到规定性能标准 , 造成计划外的维护 ,",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      任何部件工作不正常 , 导致未达到规定性能标准 , 造成计划外的维护 , 除非另有协议 , 否则应该在\n72 h 内矫正。",
+      "type": "语义分解",
+      "subject": "任何部件工作不正常 , 导致未达到规定性能标准 , 造成计划外的维护 ,",
+      "action": "",
+      "operation": "任何部件工作不正常 , 导致未达到规定性能标准 , 造成计划外的维护 , 除非另有协议 , 否则应该在 72 h 内矫正。",
+      "condition": "",
+      "constraint": "      任何部件工作不正常 , 导致未达到规定性能标准 , 造成计划外的维护 , 除非另有协议 , 否则应该在\n72 h 内矫正。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "任何部件工作不正常 , 导致未达到规定性能标准 , 造成计划外的维护 ,"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34603,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

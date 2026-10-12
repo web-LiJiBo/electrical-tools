@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040918",
+  "entities": [
+    {
+      "name": "利用稻草、麦秸等为原料制成生态植被毯，在其载体层添加乔灌草植物种子、保水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    利用稻草、麦秸等为原料制成生态植被毯，在其载体层添加乔灌草植物种子、保水剂、营养土等，\n根据需要可采用3层和5层结构，在坡面整理、土壤改良、坡面排水等工程结束后，进行生态植被毯的铺\n设，植被毯与坡面利用“U” 形铁钉或木桩进行固定，毯间要重叠搭接，搭接宽度为0.1 m。",
+      "type": "语义分解",
+      "subject": "利用稻草、麦秸等为原料制成生态植被毯，在其载体层添加乔灌草植物种子、保水",
+      "action": "",
+      "operation": "利用稻草、麦秸等为原料制成生态植被毯，在其载体层添加乔灌草植物种子、保水剂、营养土等， 根据需要可采用3层和5层结构，在坡面整理、土壤改良、坡面排水等工程结束后，进行生态植被毯的铺 设，植被毯与坡面利用“U” 形铁钉或木桩进行固定，毯间要重叠搭接，搭接宽度为0.1 m。",
+      "condition": "",
+      "constraint": "    利用稻草、麦秸等为原料制成生态植被毯，在其载体层添加乔灌草植物种子、保水剂、营养土等，\n根据需要可采用3层和5层结构，在坡面整理、土壤改良、坡面排水等工程结束后，进行生态植被毯的铺\n设，植被毯与坡面利用“U” 形铁钉或木桩进行固定，毯间要重叠搭接，搭接宽度为0.1 m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "利用稻草、麦秸等为原料制成生态植被毯，在其载体层添加乔灌草植物种子、保水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40918,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

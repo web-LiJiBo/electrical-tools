@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040688",
+  "entities": [
+    {
+      "name": "地形地貌调查的内容应包括干扰区域地形、地貌",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    地形地貌调查的内容应包括干扰区域地形、地貌。地形地貌评价应根据地形地貌调查结果，结合立\n地条件分析，评价生态恢复的地形地貌主导因子。\n\n5.3.2      气 象",
+      "type": "语义分解",
+      "subject": "地形地貌调查的内容应包括干扰区域地形、地貌",
+      "action": "",
+      "operation": "地形地貌调查的内容应包括干扰区域地形、地貌。地形地貌评价应根据地形地貌调查结果，结合立 地条件分析，评价生态恢复的地形地貌主导因子。 5.3.2 气 象",
+      "condition": "",
+      "constraint": "    地形地貌调查的内容应包括干扰区域地形、地貌。地形地貌评价应根据地形地貌调查结果，结合立\n地条件分析，评价生态恢复的地形地貌主导因子。\n\n5.3.2      气 象",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地形地貌调查的内容应包括干扰区域地形、地貌"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40688,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

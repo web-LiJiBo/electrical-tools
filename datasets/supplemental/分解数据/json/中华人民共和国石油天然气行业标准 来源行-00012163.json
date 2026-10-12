@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012163",
+  "entities": [
+    {
+      "name": "VSAT站的波导馈线 (或同轴电缆) 进入机房以前金属 外皮应至少有两处",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       6    VSAT站的波导馈线  (或同轴电缆)  进入机房以前金属\n外皮应至少有两处接地 ,  分别在天线口和在机房的引入口处。\n      7    设置在高后果区 、  穿跨越等非管道站场内的工业电视及\n辅助设备应设置专用接地网 ,   接地电阻不宜大于 10Ω 。\n      8    出入建筑物的光缆的所有金属护层 、金属加强芯等应在",
+      "type": "语义分解",
+      "subject": "VSAT站的波导馈线 (或同轴电缆) 进入机房以前金属 外皮应至少有两处",
+      "action": "",
+      "operation": "VSAT站的波导馈线 (或同轴电缆) 进入机房以前金属 外皮应至少有两处接地 , 分别在天线口和在机房的引入口处。 7 设置在高后果区 、 穿跨越等非管道站场内的工业电视及 辅助设备应设置专用接地网 , 接地电阻不宜大于 10Ω 。 8 出入建筑物的光缆的所有金属护层 、金属加强芯等应在",
+      "condition": "",
+      "constraint": "       6    VSAT站的波导馈线  (或同轴电缆)  进入机房以前金属\n外皮应至少有两处接地 ,  分别在天线口和在机房的引入口处。\n      7    设置在高后果区 、  穿跨越等非管道站场内的工业电视及\n辅助设备应设置专用接地网 ,   接地电阻不宜大于 10Ω 。\n      8    出入建筑物的光缆的所有金属护层 、金属加强芯等应在",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VSAT站的波导馈线 (或同轴电缆) 进入机房以前金属 外皮应至少有两处"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12163,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

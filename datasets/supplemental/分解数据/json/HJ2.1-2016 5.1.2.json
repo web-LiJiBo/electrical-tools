@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "5.1.2",
+  "entities": [
+    {
+      "name": "环境现状资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2 充分收集和利用评价范围内各例行监测点。断面或站位的近三年环境监测资料或背景值调查资 料,当现有资料不能满足要求时,应进行现场调查和测试,现状监测和观测网点应根据各环境要素环境 影响评价技术导则要求布设,兼顾均布性和代表性原则。符合相关规划环境影响评价结论及审查意见的 建设项目, 可直接引用符合时效的相关规划环境影响评价的环境调查资料及有关结论。",
+      "type": "语义分解",
+      "subject": "环境现状资料",
+      "action": "",
+      "operation": "利用近三年监测背景资料不足现场调测按均布代表布点可引时效规划资料",
+      "condition": "",
+      "constraint": "5.1.2 充分收集和利用评价范围内各例行监测点。断面或站位的近三年环境监测资料或背景值调查资 料,当现有资料不能满足要求时,应进行现场调查和测试,现状监测和观测网点应根据各环境要素环境 影响评价技术导则要求布设,兼顾均布性和代表性原则。符合相关规划环境影响评价结论及审查意见的 建设项目, 可直接引用符合时效的相关规划环境影响评价的环境调查资料及有关结论。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环境现状资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2560,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

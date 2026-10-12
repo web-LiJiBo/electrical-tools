@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036267",
+  "entities": [
+    {
+      "name": "项 目 碳 排 放 费 用 由 购 买 有 偿 配 额 产 生 的 费 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     项 目 碳 排 放 费 用 由 购 买 有 偿 配 额 产 生 的 费 用 、 购 买 缺 口 配 额 产 生 的 费 用 和 购 买 国 家 核 证 自 愿 减 排 量\n(CCER)产生的费用三部分组成。",
+      "type": "语义分解",
+      "subject": "项 目 碳 排 放 费 用 由 购 买 有 偿 配 额 产 生 的 费 ",
+      "action": "",
+      "operation": "项 目 碳 排 放 费 用 由 购 买 有 偿 配 额 产 生 的 费 用 、 购 买 缺 口 配 额 产 生 的 费 用 和 购 买 国 家 核 证 自 愿 减 排 量 (CCER)产生的费用三部分组成。",
+      "condition": "",
+      "constraint": "     项 目 碳 排 放 费 用 由 购 买 有 偿 配 额 产 生 的 费 用 、 购 买 缺 口 配 额 产 生 的 费 用 和 购 买 国 家 核 证 自 愿 减 排 量\n(CCER)产生的费用三部分组成。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "项 目 碳 排 放 费 用 由 购 买 有 偿 配 额 产 生 的 费 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36267,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

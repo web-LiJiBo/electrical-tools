@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "6.2.2.3",
+  "entities": [
+    {
+      "name": "振动光缆、 振动电缆等振动类周界预警技术可应用于多雨、 多雾环境, 宜安",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2.3    振动光缆、  振动电缆等振动类周界预警技术可应用于多雨、  多雾环境,  宜安装在铁丝网上,\n铁丝网规格如图 1 所示。",
+      "type": "语义分解",
+      "subject": "振动光缆、 振动电缆等振动类周界预警技术可应用于多雨、 多雾环境, 宜安",
+      "action": "",
+      "operation": "振动光缆、 振动电缆等振动类周界预警技术可应用于多雨、 多雾环境, 宜安装在铁丝网上, 铁丝网规格如图 1 所示。",
+      "condition": "",
+      "constraint": "6.2.2.3    振动光缆、  振动电缆等振动类周界预警技术可应用于多雨、  多雾环境,  宜安装在铁丝网上,\n铁丝网规格如图 1 所示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "振动光缆、 振动电缆等振动类周界预警技术可应用于多雨、 多雾环境, 宜安"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41639,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

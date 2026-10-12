@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.4.2",
+  "entities": [
+    {
+      "name": "连续流动洗涤剂原理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.4.2 原理 连续流动分析方法是利用连续流动分析仪，通过蠕动泵将样品和试剂泵入分析模块中混合、反应，并泵入气泡将流体分割成片段，使反应达到完全的稳态，然后进入流通检测池进行分析测定。在水溶液中，阴离子合成洗涤剂和亚甲基蓝反应生成蓝色络合物，统称为亚甲基蓝活性物质(Methylene Blue Active Substance，MBAS)，该化合物被萃取到三氯甲烷中并由相分离器分离，三氯甲烷相被酸性亚甲基蓝洗涤以除去干扰物质并在第二个相分离器中被再次分离。其色度与浓度成正比，在650/660 nm处用10 mm比色池测量其信号值。",
+      "type": "语义分解",
+      "subject": "连续流动洗涤剂原理",
+      "action": "",
+      "operation": "分段混合显色萃取洗涤相分离十毫米池650或660纳米检测",
+      "condition": "",
+      "constraint": "13.4.2 原理 连续流动分析方法是利用连续流动分析仪，通过蠕动泵将样品和试剂泵入分析模块中混合、反应，并泵入气泡将流体分割成片段，使反应达到完全的稳态，然后进入流通检测池进行分析测定。在水溶液中，阴离子合成洗涤剂和亚甲基蓝反应生成蓝色络合物，统称为亚甲基蓝活性物质(Methylene Blue Active Substance，MBAS)，该化合物被萃取到三氯甲烷中并由相分离器分离，三氯甲烷相被酸性亚甲基蓝洗涤以除去干扰物质并在第二个相分离器中被再次分离。其色度与浓度成正比，在650/660 nm处用10 mm比色池测量其信号值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续流动洗涤剂原理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1613,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

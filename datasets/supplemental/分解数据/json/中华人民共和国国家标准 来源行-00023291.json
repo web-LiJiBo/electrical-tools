@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023291",
+  "entities": [
+    {
+      "name": ")对于以分离器件为主的模拟通信设备，由于考虑干扰信号 的地环流影响，所以",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   2)对于以分离器件为主的模拟通信设备，由于考虑干扰信号\n的地环流影响，所以设备需要独立的工作接地，但对于以大规模集\n成电路器件为主的数字通信设备，由于设备本身的抗干扰能力较\n强但内部器件的抗电涌能力极差，所以工作地必须直接和保护地\n合一。",
+      "type": "语义分解",
+      "subject": ")对于以分离器件为主的模拟通信设备，由于考虑干扰信号 的地环流影响，所以",
+      "action": "",
+      "operation": ")对于以分离器件为主的模拟通信设备，由于考虑干扰信号 的地环流影响，所以设备需要独立的工作接地，但对于以大规模集 成电路器件为主的数字通信设备，由于设备本身的抗干扰能力较 强但内部器件的抗电涌能力极差，所以工作地必须直接和保护地 合一。",
+      "condition": "",
+      "constraint": "   2)对于以分离器件为主的模拟通信设备，由于考虑干扰信号\n的地环流影响，所以设备需要独立的工作接地，但对于以大规模集\n成电路器件为主的数字通信设备，由于设备本身的抗干扰能力较\n强但内部器件的抗电涌能力极差，所以工作地必须直接和保护地\n合一。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")对于以分离器件为主的模拟通信设备，由于考虑干扰信号 的地环流影响，所以"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23291,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

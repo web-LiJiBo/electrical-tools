@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3  本条是在对比分析《金属和合金腐蚀 交流腐蚀评价 保\n护准则》ISO    18086:2019 第7节与《阴极保护管道上的交流\n电腐蚀：风险评估、减缓和监测》NACE    21424:2018第 6 节\n内容的基础上，基于北京科技大学及国内外相关单位近年来",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "5.2.3  本条是在对比分析《金属和合金腐蚀 交流腐蚀评价 保\n护准则》ISO    18086:2019 第7节与《阴极保护管道上的交流\n电腐蚀：风险评估、减缓和监测》NACE    21424:2018第 6 节\n内容的基础上，基于北京科技大学及国内外相关单位近年来",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48962,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

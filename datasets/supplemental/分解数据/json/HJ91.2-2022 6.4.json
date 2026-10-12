@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "6.4",
+  "entities": [
+    {
+      "name": "监测异常值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4 异常值的判断和处理 异常值的判断和处理执行GB/T 4883 若出现异常值 应查找原因。原因不明的异常值不应随意剔除",
+      "type": "语义分解",
+      "subject": "监测异常值",
+      "action": "",
+      "operation": "按标准判断查因且不随意剔除",
+      "condition": "若出现异常值",
+      "constraint": "6.4 异常值的判断和处理 异常值的判断和处理执行GB/T 4883 若出现异常值 应查找原因。原因不明的异常值不应随意剔除",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测异常值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2985,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

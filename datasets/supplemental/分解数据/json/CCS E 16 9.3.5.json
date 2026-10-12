@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.3.5",
+  "entities": [
+    {
+      "name": "销轴螺栓",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.3.5   钢结构各部件接合点的销轴、螺栓等，如有松动和缺损，应及时拧紧和修补更换；销轴周围应\n勤涂润滑油，防止雨水进入销孔缝隙；外露的螺杆亦应涂油，防止锈蚀。如发现销钉和栓钉有裂缝、\n脱皮、弯曲、压损等，应予更换，并涂抹润滑油。",
+      "type": "语义分解",
+      "subject": "销轴螺栓",
+      "action": "",
+      "operation": "松缺紧换润滑防锈裂脱弯压损更换涂油",
+      "condition": "",
+      "constraint": "9.3.5   钢结构各部件接合点的销轴、螺栓等，如有松动和缺损，应及时拧紧和修补更换；销轴周围应\n勤涂润滑油，防止雨水进入销孔缝隙；外露的螺杆亦应涂油，防止锈蚀。如发现销钉和栓钉有裂缝、\n脱皮、弯曲、压损等，应予更换，并涂抹润滑油。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "销轴螺栓"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30123,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

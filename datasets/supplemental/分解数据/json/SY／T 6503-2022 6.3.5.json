@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "6.3.5",
+  "entities": [
+    {
+      "name": "探测器采样方式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.5 探测器采样方式宜选用扩散式。受安装条件和环境条件的限制 无法使用扩散式的场所,可采用吸人式。",
+      "type": "语义分解",
+      "subject": "探测器采样方式",
+      "action": "",
+      "operation": "宜扩散式且条件限制可吸入式",
+      "condition": "受安装条件和环境条件的限制 无法使用扩散式的场所",
+      "constraint": "6.3.5 探测器采样方式宜选用扩散式。受安装条件和环境条件的限制 无法使用扩散式的场所,可采用吸人式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "探测器采样方式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5823,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

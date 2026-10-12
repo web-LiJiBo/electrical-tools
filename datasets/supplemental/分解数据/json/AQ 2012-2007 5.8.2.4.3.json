@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.8.2.4.3",
+  "entities": [
+    {
+      "name": "停止注汽或维修管线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.8.2.4.3 停止注汽后或中途停注维修注汽管线时 ,应关闭总阀门和干线阀门 ,打开测试阀门放空并维修管线。",
+      "type": "语义分解",
+      "subject": "停止注汽或维修管线",
+      "action": "",
+      "operation": "关总阀干线阀开测试阀放空维修",
+      "condition": "停止注汽后或中途停注维修注汽管线时",
+      "constraint": "5.8.2.4.3 停止注汽后或中途停注维修注汽管线时 ,应关闭总阀门和干线阀门 ,打开测试阀门放空并维修管线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "停止注汽或维修管线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4534,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；多阀顺序和放空安全条件须设备绑定及复核"
+      ]
+    }
+  }
+}

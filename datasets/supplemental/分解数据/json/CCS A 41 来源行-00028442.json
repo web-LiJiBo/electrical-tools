@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028442",
+  "entities": [
+    {
+      "name": "组织应有完善的精益六西格玛培训知识体系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织应有完善的精益六西格玛培训知识体系 ;知识体系的设计应考虑组织自身的特点 ,符合组织的\n需求 ;知识体系应根据组织的需求和新一代信息技术(如人工智能技术等)的发展不断迭代更新 ,并在推\n进过程中持续完善 。",
+      "type": "语义分解",
+      "subject": "组织应有完善的精益六西格玛培训知识体系",
+      "action": "",
+      "operation": "组织应有完善的精益六西格玛培训知识体系 ;知识体系的设计应考虑组织自身的特点 ,符合组织的 需求 ;知识体系应根据组织的需求和新一代信息技术(如人工智能技术等)的发展不断迭代更新 ,并在推 进过程中持续完善 。",
+      "condition": "",
+      "constraint": "      组织应有完善的精益六西格玛培训知识体系 ;知识体系的设计应考虑组织自身的特点 ,符合组织的\n需求 ;知识体系应根据组织的需求和新一代信息技术(如人工智能技术等)的发展不断迭代更新 ,并在推\n进过程中持续完善 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织应有完善的精益六西格玛培训知识体系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28442,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

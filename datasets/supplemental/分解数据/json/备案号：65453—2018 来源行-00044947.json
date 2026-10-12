@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00044947",
+  "entities": [
+    {
+      "name": "不同防腐层类型的管段、不同年代施工的防腐层管段",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      2   不同防腐层类型的管段、不同年代施工的防腐层管段。\n      3   弯头、套管、阀门、绝缘接头、连结器、进出土壤管段、\n固定墩等影响防腐层老化和质量的共性部位，施工质量差异段、\n穿越段、未施加阴极保护的管段、管道埋深差异大的管段。\n       4   腐蚀事故多发段、风险高的管段、阴极保护电流明显流\n失和改变区域、改线或更换段、防腐层和阴极保护修复段、交\n(直)流干扰段。",
+      "type": "语义分解",
+      "subject": "不同防腐层类型的管段、不同年代施工的防腐层管段",
+      "action": "",
+      "operation": "不同防腐层类型的管段、不同年代施工的防腐层管段。 3 弯头、套管、阀门、绝缘接头、连结器、进出土壤管段、 固定墩等影响防腐层老化和质量的共性部位，施工质量差异段、 穿越段、未施加阴极保护的管段、管道埋深差异大的管段。 4 腐蚀事故多发段、风险高的管段、阴极保护电流明显流 失和改变区域、改线或更换段、防腐层和阴极保护修复段、交 (直)流干扰段。",
+      "condition": "",
+      "constraint": "      2   不同防腐层类型的管段、不同年代施工的防腐层管段。\n      3   弯头、套管、阀门、绝缘接头、连结器、进出土壤管段、\n固定墩等影响防腐层老化和质量的共性部位，施工质量差异段、\n穿越段、未施加阴极保护的管段、管道埋深差异大的管段。\n       4   腐蚀事故多发段、风险高的管段、阴极保护电流明显流\n失和改变区域、改线或更换段、防腐层和阴极保护修复段、交\n(直)流干扰段。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不同防腐层类型的管段、不同年代施工的防腐层管段"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44947,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

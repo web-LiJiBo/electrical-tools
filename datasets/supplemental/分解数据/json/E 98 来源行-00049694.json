@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049694",
+  "entities": [
+    {
+      "name": "若检测到电位偏移超过100mV, 波动较大，呈正负交变， 或具有断续性，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   若检测到电位偏移超过100mV,    波动较大，呈正负交变，\n或具有断续性，这种干扰情况通过对储罐阴极保护系统进行监测\n分析后，发现是直流杂散电流干扰，那么干扰源很可能是直流电\n气化铁路、直流输电系统、直流电力设施或设备，如电解、电镀\n\n设备、直流电焊设备等。",
+      "type": "语义分解",
+      "subject": "若检测到电位偏移超过100mV, 波动较大，呈正负交变， 或具有断续性，",
+      "action": "",
+      "operation": "若检测到电位偏移超过100mV, 波动较大，呈正负交变， 或具有断续性，这种干扰情况通过对储罐阴极保护系统进行监测 分析后，发现是直流杂散电流干扰，那么干扰源很可能是直流电 气化铁路、直流输电系统、直流电力设施或设备，如电解、电镀 设备、直流电焊设备等。",
+      "condition": "",
+      "constraint": "   若检测到电位偏移超过100mV,    波动较大，呈正负交变，\n或具有断续性，这种干扰情况通过对储罐阴极保护系统进行监测\n分析后，发现是直流杂散电流干扰，那么干扰源很可能是直流电\n气化铁路、直流输电系统、直流电力设施或设备，如电解、电镀\n\n设备、直流电焊设备等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "若检测到电位偏移超过100mV, 波动较大，呈正负交变， 或具有断续性，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49694,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

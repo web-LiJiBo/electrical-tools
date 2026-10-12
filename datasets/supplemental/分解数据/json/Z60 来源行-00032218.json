@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032218",
+  "entities": [
+    {
+      "name": "新建锅炉自2014年7月1日起、10 t/h以上在用蒸汽锅炉和7MW 以",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    新建锅炉自2014年7月1日起、10 t/h以上在用蒸汽锅炉和7MW  以上在用热水锅炉自2015年10\n月1日、10 t/h 及以下在用蒸汽锅炉和7 MW 及以下在用热水锅炉自2016年7月1日起执行本标准，\n《锅炉大气污染物排放标准》( GB 13271—2001) 自2016年7月1日废止。各地也可根据当地环境保护\n的需要和经济与技术条件，由省级人民政府批准提前实施本标准。",
+      "type": "语义分解",
+      "subject": "新建锅炉自2014年7月1日起、10 t/h以上在用蒸汽锅炉和7MW 以",
+      "action": "",
+      "operation": "新建锅炉自2014年7月1日起、10 t/h以上在用蒸汽锅炉和7MW 以上在用热水锅炉自2015年10 月1日、10 t/h 及以下在用蒸汽锅炉和7 MW 及以下在用热水锅炉自2016年7月1日起执行本标准， 《锅炉大气污染物排放标准》( GB 13271—2001) 自2016年7月1日废止。各地也可根据当地环境保护 的需要和经济与技术条件，由省级人民政府批准提前实施本标准。",
+      "condition": "",
+      "constraint": "    新建锅炉自2014年7月1日起、10 t/h以上在用蒸汽锅炉和7MW  以上在用热水锅炉自2015年10\n月1日、10 t/h 及以下在用蒸汽锅炉和7 MW 及以下在用热水锅炉自2016年7月1日起执行本标准，\n《锅炉大气污染物排放标准》( GB 13271—2001) 自2016年7月1日废止。各地也可根据当地环境保护\n的需要和经济与技术条件，由省级人民政府批准提前实施本标准。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "新建锅炉自2014年7月1日起、10 t/h以上在用蒸汽锅炉和7MW 以"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32218,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

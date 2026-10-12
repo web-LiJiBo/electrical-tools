@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "7.2",
+  "entities": [
+    {
+      "name": "鉴定性评审必要性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2 鉴定性评审的必要性 鉴定性评审有助于各方(例如相关方)对 LCA 研究的理解并提高研究的可信度。如果利用 LCA 研究的结果支持对比论断，则会引起特殊的关注，因此需要进行鉴定性评审，因为该应用可能影响到 LCA 研究以外的相关方。进行了鉴定性评审并不意味着认可基于该 LCA 研究的对比论断。",
+      "type": "语义分解",
+      "subject": "鉴定性评审必要性",
+      "action": "",
+      "operation": "公开对比需评审但不代表认可论断",
+      "condition": "",
+      "constraint": "7.2 鉴定性评审的必要性 鉴定性评审有助于各方(例如相关方)对 LCA 研究的理解并提高研究的可信度。如果利用 LCA 研究的结果支持对比论断，则会引起特殊的关注，因此需要进行鉴定性评审，因为该应用可能影响到 LCA 研究以外的相关方。进行了鉴定性评审并不意味着认可基于该 LCA 研究的对比论断。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "鉴定性评审必要性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1056,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

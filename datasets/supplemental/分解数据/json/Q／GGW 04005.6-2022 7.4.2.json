@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.4.2",
+  "entities": [
+    {
+      "name": "无组织排放点位方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.2 无组织排放源上。下风向分别设置参考点和监控点的方法以及单位周界外设置监控点的方法按 照 IIJ/T 55-2000的第9章和 GB 16297一 1996 附录 C 的要求执行, 监测点位布设应当苜先遵循 GB 16297-1996 的规定利原则",
+      "type": "语义分解",
+      "subject": "无组织排放点位方法",
+      "action": "",
+      "operation": "遵循引用标准上下风和周界布点",
+      "condition": "",
+      "constraint": "7.4.2 无组织排放源上。下风向分别设置参考点和监控点的方法以及单位周界外设置监控点的方法按 照 IIJ/T 55-2000的第9章和 GB 16297一 1996 附录 C 的要求执行, 监测点位布设应当苜先遵循 GB 16297-1996 的规定利原则",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无组织排放点位方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 460,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用编号识别异常"
+      ]
+    }
+  }
+}

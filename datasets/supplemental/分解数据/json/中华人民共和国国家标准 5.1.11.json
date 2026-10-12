@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "5.1.11",
+  "entities": [
+    {
+      "name": "DCN专线与波分保护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.11 DCN采用2Mbit/s 专线网时，应以G.703 同向接口为主。\t6.2.4  采用线性1+1保护方式的 N×10G    和 N×2.5G     的波分\n复用系统保护倒换时间应小于50ms。",
+      "type": "语义分解",
+      "subject": "DCN专线与波分保护",
+      "action": "",
+      "operation": "2Mbit/s优先G.703同向接口线性1+1保护倒换小于50毫秒",
+      "condition": "",
+      "constraint": "5.1.11 DCN采用2Mbit/s 专线网时，应以G.703 同向接口为主。\t6.2.4  采用线性1+1保护方式的 N×10G    和 N×2.5G     的波分\n复用系统保护倒换时间应小于50ms。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "DCN专线与波分保护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8931,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；混合5.1.11与6.2.4原行保留标准编号待核对"
+      ]
+    }
+  }
+}

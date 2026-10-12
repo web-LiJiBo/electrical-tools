@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024775",
+  "entities": [
+    {
+      "name": "c) 网络维护管理软件应具备告警实时监控功能，能够准确定位故障点，能够在",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)     网络维护管理软件应具备告警实时监控功能，能够准确定位故障点，能够在拓扑图上用明显的\n       颜色或者符号显示故障节点，不同等级不同类型的故障应可定义出不同的显示颜色或者符号，\n       故障定位最小可定位到设备端口；",
+      "type": "语义分解",
+      "subject": "c) 网络维护管理软件应具备告警实时监控功能，能够准确定位故障点，能够在",
+      "action": "",
+      "operation": "c) 网络维护管理软件应具备告警实时监控功能，能够准确定位故障点，能够在拓扑图上用明显的 颜色或者符号显示故障节点，不同等级不同类型的故障应可定义出不同的显示颜色或者符号， 故障定位最小可定位到设备端口",
+      "condition": "",
+      "constraint": "c)     网络维护管理软件应具备告警实时监控功能，能够准确定位故障点，能够在拓扑图上用明显的\n       颜色或者符号显示故障节点，不同等级不同类型的故障应可定义出不同的显示颜色或者符号，\n       故障定位最小可定位到设备端口；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 网络维护管理软件应具备告警实时监控功能，能够准确定位故障点，能够在"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24775,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

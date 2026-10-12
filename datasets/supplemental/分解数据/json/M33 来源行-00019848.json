@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019848",
+  "entities": [
+    {
+      "name": ") Sn-X 适配信息Sn-X_AI是一个125 μs 帧的八比特组结构",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10) Sn-X 适配信息Sn-X_AI是一个125 μs 帧的八比特组结构，如图87所示。它代表适配后的客\n   户层信息，由客户层信息、信号标记、1个字节的用户通路F2 和F3组成的客户特定信息构成。\n   在信号通过路径保护子层 ( SnP) 的情况下，Sn-X_AI由字节K3 中的APS 比特(1～4)确定。\n\n    注5: APS 信号未定义，可能需要用APS 复帧信号。",
+      "type": "语义分解",
+      "subject": ") Sn-X 适配信息Sn-X_AI是一个125 μs 帧的八比特组结构",
+      "action": "",
+      "operation": ") Sn-X 适配信息Sn-X_AI是一个125 μs 帧的八比特组结构，如图87所示。它代表适配后的客 户层信息，由客户层信息、信号标记、1个字节的用户通路F2 和F3组成的客户特定信息构成。 在信号通过路径保护子层 ( SnP) 的情况下，Sn-X_AI由字节K3 中的APS 比特(1～4)确定。 注5: APS 信号未定义，可能需要用APS 复帧信号。",
+      "condition": "",
+      "constraint": "10) Sn-X 适配信息Sn-X_AI是一个125 μs 帧的八比特组结构，如图87所示。它代表适配后的客\n   户层信息，由客户层信息、信号标记、1个字节的用户通路F2 和F3组成的客户特定信息构成。\n   在信号通过路径保护子层 ( SnP) 的情况下，Sn-X_AI由字节K3 中的APS 比特(1～4)确定。\n\n    注5: APS 信号未定义，可能需要用APS 复帧信号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") Sn-X 适配信息Sn-X_AI是一个125 μs 帧的八比特组结构"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19848,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

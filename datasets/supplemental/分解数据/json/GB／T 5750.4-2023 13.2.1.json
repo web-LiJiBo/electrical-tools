@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.2.1",
+  "entities": [
+    {
+      "name": "二氮杂菲法检出干扰",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.2.1 最低检测质量浓度 本方法用十二烷基苯磺酸钠作为标准，水样中阴离子合成洗涤剂最低检测质量为2.5 μg。若取100 mL水样测定，则最低检测质量浓度为0.025 mg/L。生活饮用水及其水源水中常见的共存物质对本方法无干扰:Ca2+、NO3-(400 mg/L)，SO4 2-(100 mg/L)、Mg2+(70 mg/L)、NO2-(17 mg/L)、PO4 3-(10 mg/L)、F-(7 mg/L)、SCN-(5 mg/L)、Mn2+、Cl2(1 mg/L)、Cu2+(0.1 mg/L)。阴离子表面活性剂质量浓度为0.1 mg/L时，会产生误差为-28.4 %的严重干扰。",
+      "type": "语义分解",
+      "subject": "二氮杂菲法检出干扰",
+      "action": "",
+      "operation": "记录检出质量浓度共存离子及干扰描述",
+      "condition": "",
+      "constraint": "13.2.1 最低检测质量浓度 本方法用十二烷基苯磺酸钠作为标准，水样中阴离子合成洗涤剂最低检测质量为2.5 μg。若取100 mL水样测定，则最低检测质量浓度为0.025 mg/L。生活饮用水及其水源水中常见的共存物质对本方法无干扰:Ca2+、NO3-(400 mg/L)，SO4 2-(100 mg/L)、Mg2+(70 mg/L)、NO2-(17 mg/L)、PO4 3-(10 mg/L)、F-(7 mg/L)、SCN-(5 mg/L)、Mn2+、Cl2(1 mg/L)、Cu2+(0.1 mg/L)。阴离子表面活性剂质量浓度为0.1 mg/L时，会产生误差为-28.4 %的严重干扰。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二氮杂菲法检出干扰"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1552,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；末句阴离子表面活性剂为待测对象却称干扰需原件复核"
+      ]
+    }
+  }
+}

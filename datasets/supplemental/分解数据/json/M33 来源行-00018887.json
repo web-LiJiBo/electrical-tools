@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018887",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "c)    处理过程：RS1_AP从 ES1_TT_Sk功能接收ES1_AI_Data 信号，该信号包含相关定时，ES1/\n       RS1 功能在ES1_CP处处理该信号和相关定时。对 STM-1 信号进行CMI 解码。该功能恢复帧\n    同步，并标明RS1_CP数据的帧起始位置，定帧后的STM-1 信号和定时送至ES1_CP。该处理\n   包括以下几个部分：",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "c)    处理过程：RS1_AP从 ES1_TT_Sk功能接收ES1_AI_Data 信号，该信号包含相关定时，ES1/\n       RS1 功能在ES1_CP处处理该信号和相关定时。对 STM-1 信号进行CMI 解码。该功能恢复帧\n    同步，并标明RS1_CP数据的帧起始位置，定帧后的STM-1 信号和定时送至ES1_CP。该处理\n   包括以下几个部分：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18887,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

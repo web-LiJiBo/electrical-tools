@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018621",
+  "entities": [
+    {
+      "name": "STM-N 电/光段层 CP",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      STM-N 电/光段层 CP:  层内 CP 的特征信息OSn_CI或 ES1-CI 是一个具有确定的功率、比特率、\n脉冲宽度和波长的数字光或电(编码的)信号。",
+      "type": "语义分解",
+      "subject": "STM-N 电/光段层 CP",
+      "action": "",
+      "operation": "STM-N 电/光段层 CP: 层内 CP 的特征信息OSn_CI或 ES1-CI 是一个具有确定的功率、比特率、 脉冲宽度和波长的数字光或电(编码的)信号。",
+      "condition": "",
+      "constraint": "      STM-N 电/光段层 CP:  层内 CP 的特征信息OSn_CI或 ES1-CI 是一个具有确定的功率、比特率、\n脉冲宽度和波长的数字光或电(编码的)信号。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "STM-N 电/光段层 CP"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18621,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "8.1",
+  "entities": [
+    {
+      "name": "应急终止",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1  当现场得到有效处置、受伤人员得到妥善救治、环境污染得到有效控制时，下达应急终止指令。\n8.2   应急终止后，编写救援行动总结，应至少包括以下内容：",
+      "type": "语义分解",
+      "subject": "应急终止",
+      "action": "",
+      "operation": "有效处置救治污染控制后终止写总结",
+      "condition": "",
+      "constraint": "8.1  当现场得到有效处置、受伤人员得到妥善救治、环境污染得到有效控制时，下达应急终止指令。\n8.2   应急终止后，编写救援行动总结，应至少包括以下内容：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急终止"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29021,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；总结清单缺失"
+      ]
+    }
+  }
+}

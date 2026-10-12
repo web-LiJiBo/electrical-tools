@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049681",
+  "entities": [
+    {
+      "name": "在储罐与管网连接时，管线对储罐的直接干扰影响大于 联合接地系统对储罐的影",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.0.1      在储罐与管网连接时，管线对储罐的直接干扰影响大于\n联合接地系统对储罐的影响，因此，在设计中应尽可能地考虑到\n储罐与管网之间的电绝缘。但是在储罐阴极保护与管线阴极保护\n属于同一系统的情况下，可以不考虑两者间的电绝缘。",
+      "type": "语义分解",
+      "subject": "在储罐与管网连接时，管线对储罐的直接干扰影响大于 联合接地系统对储罐的影",
+      "action": "",
+      "operation": "在储罐与管网连接时，管线对储罐的直接干扰影响大于 联合接地系统对储罐的影响，因此，在设计中应尽可能地考虑到 储罐与管网之间的电绝缘。但是在储罐阴极保护与管线阴极保护 属于同一系统的情况下，可以不考虑两者间的电绝缘。",
+      "condition": "",
+      "constraint": "6.0.1      在储罐与管网连接时，管线对储罐的直接干扰影响大于\n联合接地系统对储罐的影响，因此，在设计中应尽可能地考虑到\n储罐与管网之间的电绝缘。但是在储罐阴极保护与管线阴极保护\n属于同一系统的情况下，可以不考虑两者间的电绝缘。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在储罐与管网连接时，管线对储罐的直接干扰影响大于 联合接地系统对储罐的影"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49681,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

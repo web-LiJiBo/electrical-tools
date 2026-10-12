@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "6.1.1",
+  "entities": [
+    {
+      "name": "管道运营单位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1 宜建立环境风险防控与应急管理制度，落实相关部门，人员责任，建议包括如下内容: 环境风险识别与评估; 突发环境事件隐患管理; 环境应急预案管理; 环境应急培训与演练; 环境应急装备与物资管理 .",
+      "type": "语义分解",
+      "subject": "管道运营单位",
+      "action": "",
+      "operation": "建立环境风险应急制度落实评估排查预案培训演练资源职责",
+      "condition": "",
+      "constraint": "6.1.1 宜建立环境风险防控与应急管理制度，落实相关部门，人员责任，建议包括如下内容: 环境风险识别与评估; 突发环境事件隐患管理; 环境应急预案管理; 环境应急培训与演练; 环境应急装备与物资管理 .",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道运营单位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1168,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "13.1.9",
+  "entities": [
+    {
+      "name": "软交换计费接口协议",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.1.9  软交换网内各计费点的计费接口应支持 FE 接口，计费信\n息的传送协议应支持 FTP  协议或 RADIUS 协议等。",
+      "type": "语义分解",
+      "subject": "软交换计费接口协议",
+      "action": "",
+      "operation": "支持FE及FTP或RADIUS等",
+      "condition": "",
+      "constraint": "13.1.9  软交换网内各计费点的计费接口应支持 FE 接口，计费信\n息的传送协议应支持 FTP  协议或 RADIUS 协议等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "软交换计费接口协议"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26320,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

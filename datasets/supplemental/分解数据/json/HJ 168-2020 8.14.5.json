@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.14.5",
+  "entities": [
+    {
+      "name": "测定步骤",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.14.5 测定 应按测定过程的先后顺序分段叙述。每一步操作应准确地叙述,并说明测定的所有操作参数和环境条件",
+      "type": "语义分解",
+      "subject": "测定步骤",
+      "action": "",
+      "operation": "顺序分段叙述并说明参数环境条件",
+      "condition": "",
+      "constraint": "8.14.5 测定 应按测定过程的先后顺序分段叙述。每一步操作应准确地叙述,并说明测定的所有操作参数和环境条件",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测定步骤"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2410,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

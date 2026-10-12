@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010032",
+  "entities": [
+    {
+      "name": "非屏蔽五类及五类以上电缆的成端，每对对绞线应保持扭 绞状态，扭绞松开长度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       7    非屏蔽五类及五类以上电缆的成端，每对对绞线应保持扭\n绞状态，扭绞松开长度不应大于13mm;",
+      "type": "语义分解",
+      "subject": "非屏蔽五类及五类以上电缆的成端，每对对绞线应保持扭 绞状态，扭绞松开长度",
+      "action": "",
+      "operation": "非屏蔽五类及五类以上电缆的成端，每对对绞线应保持扭 绞状态，扭绞松开长度不应大于13mm",
+      "condition": "",
+      "constraint": "       7    非屏蔽五类及五类以上电缆的成端，每对对绞线应保持扭\n绞状态，扭绞松开长度不应大于13mm;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非屏蔽五类及五类以上电缆的成端，每对对绞线应保持扭 绞状态，扭绞松开长度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10032,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

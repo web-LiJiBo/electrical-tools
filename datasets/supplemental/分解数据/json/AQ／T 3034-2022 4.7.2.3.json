@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.7.2.3",
+  "entities": [
+    {
+      "name": "基础设计分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.2.3 在建设项目基础设计阶段应开展危险和可操作性分析 (HAZOP) , 涉及\"两重点一重大\"建设 项目的工艺包设计文件应包括工艺危险性分析报告 ,设计单位应提供装置的主要风险清单 。",
+      "type": "语义分解",
+      "subject": "基础设计分析",
+      "action": "",
+      "operation": "开展HAZOP重点重大工艺包含危险分析设计方提供主要风险清单",
+      "condition": "",
+      "constraint": "4.7.2.3 在建设项目基础设计阶段应开展危险和可操作性分析 (HAZOP) , 涉及\"两重点一重大\"建设 项目的工艺包设计文件应包括工艺危险性分析报告 ,设计单位应提供装置的主要风险清单 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基础设计分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5113,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

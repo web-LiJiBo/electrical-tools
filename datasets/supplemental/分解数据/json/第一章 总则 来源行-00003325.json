@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003325",
+  "entities": [
+    {
+      "name": "第六条 集团公司总部其他部门主要履行以下管理职责",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六条 集团公司总部其他部门主要履行以下管理职责:(一)集团公司工程部负责新建油气管道站库,LNG接收站,储气库安全仪表系统的设计,选型,建设,验收的归口管理工作;负责安全仪表系统建设质量管理。(二)集团公司其他部门负责职责范围内安全仪表系统安全生命周期管理的监督,指导工作。",
+      "type": "语义分解",
+      "subject": "第六条 集团公司总部其他部门主要履行以下管理职责",
+      "action": "",
+      "operation": "第六条 集团公司总部其他部门主要履行以下管理职责:(一)集团公司工程部负责新建油气管道站库,LNG接收站,储气库安全仪表系统的设计,选型,建设,验收的归口管理工作;负责安全仪表系统建设质量管理。(二)集团公司其他部门负责职责范围内安全仪表系统安全生命周期管理的监督,指导工作。",
+      "condition": "",
+      "constraint": "第六条 集团公司总部其他部门主要履行以下管理职责:(一)集团公司工程部负责新建油气管道站库,LNG接收站,储气库安全仪表系统的设计,选型,建设,验收的归口管理工作;负责安全仪表系统建设质量管理。(二)集团公司其他部门负责职责范围内安全仪表系统安全生命周期管理的监督,指导工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六条 集团公司总部其他部门主要履行以下管理职责"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3325,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

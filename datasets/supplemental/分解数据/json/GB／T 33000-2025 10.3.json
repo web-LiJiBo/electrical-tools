@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "10.3",
+  "entities": [
+    {
+      "name": "危险作业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.3 危险作业 企业应明确危险作业的情形、分级、许可、实施、监督检查等要求，对作业前、作业中、作业后进行闭环管理。危险作业前，应开展安全风险分析，明确安全防护措施与应急措施，严格履行作业许可审批程序，检查作业人员准备情况，对作业条件进行现场确认，并进行安全技术交底。危险作业过程中，应按照操作规程和安全技术措施开展作业，指定专人现场监护，宜全程视频监控。危险作业结束后，应进行完工确认。",
+      "type": "语义分解",
+      "subject": "危险作业",
+      "action": "",
+      "operation": "分级许可闭环前分析措施审批条件交底中按规专人监护宜视频后完工确认",
+      "condition": "",
+      "constraint": "10.3 危险作业 企业应明确危险作业的情形、分级、许可、实施、监督检查等要求，对作业前、作业中、作业后进行闭环管理。危险作业前，应开展安全风险分析，明确安全防护措施与应急措施，严格履行作业许可审批程序，检查作业人员准备情况，对作业条件进行现场确认，并进行安全技术交底。危险作业过程中，应按照操作规程和安全技术措施开展作业，指定专人现场监护，宜全程视频监控。危险作业结束后，应进行完工确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危险作业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7276,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

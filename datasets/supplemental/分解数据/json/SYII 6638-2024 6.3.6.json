@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "6.3.6",
+  "entities": [
+    {
+      "name": "甘醇气体处理节能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.6 当采出气处理装置采用甘醇法控制水露点时。节能措施包括 : a) 优化甘醇再生浓度 b) 设置富液闪蒸罐。闪蒸气满足燃料气要求时。宜作为燃料气使用 ; c) 应设置贫富液换热器 d) 甘醇循环泵宜选用往复隔膜泵或能量循环泵 ; e) 再生塔顶尾气宜回收利用。",
+      "type": "语义分解",
+      "subject": "甘醇气体处理节能",
+      "action": "",
+      "operation": "优化再生闪蒸换热循环泵及尾气回收",
+      "condition": "当采出气处理装置采用甘醇法控制水露点时",
+      "constraint": "6.3.6 当采出气处理装置采用甘醇法控制水露点时。节能措施包括 : a) 优化甘醇再生浓度 b) 设置富液闪蒸罐。闪蒸气满足燃料气要求时。宜作为燃料气使用 ; c) 应设置贫富液换热器 d) 甘醇循环泵宜选用往复隔膜泵或能量循环泵 ; e) 再生塔顶尾气宜回收利用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "甘醇气体处理节能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 291,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

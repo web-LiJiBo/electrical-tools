@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "4.3",
+  "entities": [
+    {
+      "name": "危化泄漏处置行动",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3 危险化学品泄漏事故处置行动包括疏散抢救人员 ,制止泄漏 ,输转倒罐,泄漏介质处置 ,清理泄漏现场等。",
+      "type": "语义分解",
+      "subject": "危化泄漏处置行动",
+      "action": "",
+      "operation": "包含救人止漏转输介质处置清理",
+      "condition": "",
+      "constraint": "4.3 危险化学品泄漏事故处置行动包括疏散抢救人员 ,制止泄漏 ,输转倒罐,泄漏介质处置 ,清理泄漏现场等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危化泄漏处置行动"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5858,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；行动范围不等于自动设备指令"
+      ]
+    }
+  }
+}

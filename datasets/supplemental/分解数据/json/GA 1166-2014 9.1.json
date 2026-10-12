@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "9.1",
+  "entities": [
+    {
+      "name": "一般站场安防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1 一般站场 应符合第6章的规定。",
+      "type": "语义分解",
+      "subject": "一般站场安防",
+      "action": "",
+      "operation": "符合第6章",
+      "condition": "",
+      "constraint": "9.1 一般站场 应符合第6章的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一般站场安防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5488,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；需关联引用"
+      ]
+    }
+  }
+}

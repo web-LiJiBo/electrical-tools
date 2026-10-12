@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013169",
+  "entities": [
+    {
+      "name": "la通道实际上不完整，例如，在通道建立期间将包含ODUk-OCI(开放连",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "la通道实际上不完整，例如，在通道建立期间将包含ODUk-OCI(开放连接指示)信号。\nb上述缺陷只是通道的缺陷。例如OCh LOS,OTUk LOF,OTUk AIS,OTUk TIM和OTM LOS等段的缺陷引发通道层内AIS\n缺陷。\nc当上面定义的近端缺陷引起近端SES时，远端性能事件计数不增加，即认为是无差错期。当由≥15%的误块引起近端SES\n时，在近端SES期间，远端性能评估继续进行。如果近端SES是由缺陷引起的，这种方法不能可靠地评估远端数据。应特\n别注意的是：在远端SES与缺陷引起的近端SES同时出现的情况，远端事件(诸如SES或不可用)的评估可能不正确。这\n种不正确是不可避免的，但在实际上可以忽略，因为这种现象出现的概率很小。\nd在每个路径终端宿功能中缺陷对性能监视的影响，参见ITU-T建议G.798",
+      "type": "语义分解",
+      "subject": "la通道实际上不完整，例如，在通道建立期间将包含ODUk-OCI(开放连",
+      "action": "",
+      "operation": "la通道实际上不完整，例如，在通道建立期间将包含ODUk-OCI(开放连接指示)信号。 b上述缺陷只是通道的缺陷。例如OCh LOS,OTUk LOF,OTUk AIS,OTUk TIM和OTM LOS等段的缺陷引发通道层内AIS 缺陷。 c当上面定义的近端缺陷引起近端SES时，远端性能事件计数不增加，即认为是无差错期。当由≥15%的误块引起近端SES 时，在近端SES期间，远端性能评估继续进行。如果近端SES是由缺陷引起的，这种方法不能可靠地评估远端数据。应特 别注意的是：",
+      "condition": "",
+      "constraint": "la通道实际上不完整，例如，在通道建立期间将包含ODUk-OCI(开放连接指示)信号。\nb上述缺陷只是通道的缺陷。例如OCh LOS,OTUk LOF,OTUk AIS,OTUk TIM和OTM LOS等段的缺陷引发通道层内AIS\n缺陷。\nc当上面定义的近端缺陷引起近端SES时，远端性能事件计数不增加，即认为是无差错期。当由≥15%的误块引起近端SES\n时，在近端SES期间，远端性能评估继续进行。如果近端SES是由缺陷引起的，这种方法不能可靠地评估远端数据。应特\n别注意的是：在远端SES与缺陷引起的近端SES同时出现的情况，远端事件(诸如SES或不可用)的评估可能不正确。这\n种不正确是不可避免的，但在实际上可以忽略，因为这种现象出现的概率很小。\nd在每个路径终端宿功能中缺陷对性能监视的影响，参见ITU-T建议G.798",
+      "constraint_role": "informational",
+      "related_entities": [
+        "la通道实际上不完整，例如，在通道建立期间将包含ODUk-OCI(开放连"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13169,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

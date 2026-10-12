@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026924",
+  "entities": [
+    {
+      "name": "-检查各种时间费率是否正确",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "-检查各种时间费率是否正确。将10个话机和硬表接到有硬\n  表性能的用户电路上，并登记话务观察，在费率为每次12 s",
+      "type": "语义分解",
+      "subject": "-检查各种时间费率是否正确",
+      "action": "",
+      "operation": "-检查各种时间费率是否正确。将10个话机和硬表接到有硬 表性能的用户电路上，并登记话务观察，在费率为每次12 s",
+      "condition": "",
+      "constraint": "-检查各种时间费率是否正确。将10个话机和硬表接到有硬\n  表性能的用户电路上，并登记话务观察，在费率为每次12 s",
+      "constraint_role": "informational",
+      "related_entities": [
+        "-检查各种时间费率是否正确"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26924,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

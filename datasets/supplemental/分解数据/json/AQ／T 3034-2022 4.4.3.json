@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.4.3",
+  "entities": [
+    {
+      "name": "安全信息来源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.3 企业安全生产信息的来源包括但不限于: 制造商或供应商提供的化学品安全标签和安全技术说明书; 项目工艺技术提供商 ,设计单位或工程项目承包商提供的工艺信息和详细设计信息等; 设备供应商提供的设备设施侍息; 相关方提供的设备和管道完工试验报告 .单机和系统调试报告 ,监理报告.特种设备及附件检 验检测报告,消防验收报告 .安全验收报告 安全评价报告 ,职业卫生评价报告,设备检验检测 报告等资料; 同行业 .同类企业或同类化工过程的事故调查报告等资料",
+      "type": "语义分解",
+      "subject": "安全信息来源",
+      "action": "",
+      "operation": "供应商说明书标签工艺设计设备报告试验验收评价及事故调查",
+      "condition": "",
+      "constraint": "4.4.3 企业安全生产信息的来源包括但不限于: 制造商或供应商提供的化学品安全标签和安全技术说明书; 项目工艺技术提供商 ,设计单位或工程项目承包商提供的工艺信息和详细设计信息等; 设备供应商提供的设备设施侍息; 相关方提供的设备和管道完工试验报告 .单机和系统调试报告 ,监理报告.特种设备及附件检 验检测报告,消防验收报告 .安全验收报告 安全评价报告 ,职业卫生评价报告,设备检验检测 报告等资料; 同行业 .同类企业或同类化工过程的事故调查报告等资料",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全信息来源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5074,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

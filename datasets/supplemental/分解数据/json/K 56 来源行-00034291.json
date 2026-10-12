@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034291",
+  "entities": [
+    {
+      "name": "燃料灰分和进入燃气轮机的任何粉尘也影响这个结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      燃料灰分和进入燃气轮机的任何粉尘也影响这个结果。  然而 , 必须考虑如下的最大的颗粒源 , 即由\n于安装进入烟道 、管道及锅炉等其他附属设备中的脏物及铁锈。",
+      "type": "语义分解",
+      "subject": "燃料灰分和进入燃气轮机的任何粉尘也影响这个结果",
+      "action": "",
+      "operation": "燃料灰分和进入燃气轮机的任何粉尘也影响这个结果。 然而 , 必须考虑如下的最大的颗粒源 , 即由 于安装进入烟道 、管道及锅炉等其他附属设备中的脏物及铁锈。",
+      "condition": "",
+      "constraint": "      燃料灰分和进入燃气轮机的任何粉尘也影响这个结果。  然而 , 必须考虑如下的最大的颗粒源 , 即由\n于安装进入烟道 、管道及锅炉等其他附属设备中的脏物及铁锈。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "燃料灰分和进入燃气轮机的任何粉尘也影响这个结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34291,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

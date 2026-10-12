@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境保护管理办法",
+  "standard_id": "国家管网办[2025]262号",
+  "version": "",
+  "chapter_path": "来源行-00000820",
+  "entities": [
+    {
+      "name": "第四十条 所属单位应当加强污染源管控,识别污染源与污染物,实施污染源分类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第四十条 所属单位应当加强污染源管控,识别污染源与污染物,实施污染源分类分级管理,建立污染源档案;  规范污染物排放口建设,明确每个排放口和无组织排放源的责任人。",
+      "type": "语义分解",
+      "subject": "第四十条 所属单位应当加强污染源管控,识别污染源与污染物,实施污染源分类",
+      "action": "",
+      "operation": "第四十条 所属单位应当加强污染源管控,识别污染源与污染物,实施污染源分类分级管理,建立污染源档案; 规范污染物排放口建设,明确每个排放口和无组织排放源的责任人。",
+      "condition": "",
+      "constraint": "第四十条 所属单位应当加强污染源管控,识别污染源与污染物,实施污染源分类分级管理,建立污染源档案;  规范污染物排放口建设,明确每个排放口和无组织排放源的责任人。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第四十条 所属单位应当加强污染源管控,识别污染源与污染物,实施污染源分类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 820,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

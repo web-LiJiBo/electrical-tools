@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048490",
+  "entities": [
+    {
+      "name": "第2款如果确认管道内部金属损失缺陷分布与管道高程 不相关，则考虑是否由于",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3    第2款如果确认管道内部金属损失缺陷分布与管道高程\n不相关，则考虑是否由于内涂层缺失造成；如果确认管道内部\n缺陷主要分布在环焊缝上下游15cm～20cm   内，应结合管道工\n艺参数，分析管道内部腐蚀活性点增长原因是否由冲蚀造成。\n7.2.4    第1款第3项外检测效果差或不能实施的位置，包括位\n于石方区、铁路、公路、鱼塘、河流等穿跨越地区等。",
+      "type": "语义分解",
+      "subject": "第2款如果确认管道内部金属损失缺陷分布与管道高程 不相关，则考虑是否由于",
+      "action": "",
+      "operation": "第2款如果确认管道内部金属损失缺陷分布与管道高程 不相关，则考虑是否由于内涂层缺失造成；如果确认管道内部 缺陷主要分布在环焊缝上下游15cm～20cm 内，应结合管道工 艺参数，分析管道内部腐蚀活性点增长原因是否由冲蚀造成。 7.2.4 第1款第3项外检测效果差或不能实施的位置，包括位 于石方区、铁路、公路、鱼塘、河流等穿跨越地区等。",
+      "condition": "",
+      "constraint": "7.2.3    第2款如果确认管道内部金属损失缺陷分布与管道高程\n不相关，则考虑是否由于内涂层缺失造成；如果确认管道内部\n缺陷主要分布在环焊缝上下游15cm～20cm   内，应结合管道工\n艺参数，分析管道内部腐蚀活性点增长原因是否由冲蚀造成。\n7.2.4    第1款第3项外检测效果差或不能实施的位置，包括位\n于石方区、铁路、公路、鱼塘、河流等穿跨越地区等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第2款如果确认管道内部金属损失缺陷分布与管道高程 不相关，则考虑是否由于"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48490,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

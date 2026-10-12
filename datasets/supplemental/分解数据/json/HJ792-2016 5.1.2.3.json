@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "5.1.2.3",
+  "entities": [
+    {
+      "name": "制药总平面分析",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.3 厂区总平面布置 包括厂区废气有组织、无组织排放源、废水处理单元的装置进口、出口、废水总排口、雨水排口、噪声源等具体位置。拟布设的废气无组织、有组织排放监测点、废水、雨水排放监测点、厂界噪声监测点。对于废水排入集中式污水处理厂的，还需了解集中式污水处理厂的验收、运行情况。",
+      "type": "语义分解",
+      "subject": "制药总平面分析",
+      "action": "",
+      "operation": "明确污染单元排口噪声点位外排处理厂验收运行情况",
+      "condition": "",
+      "constraint": "5.1.2.3 厂区总平面布置 包括厂区废气有组织、无组织排放源、废水处理单元的装置进口、出口、废水总排口、雨水排口、噪声源等具体位置。拟布设的废气无组织、有组织排放监测点、废水、雨水排放监测点、厂界噪声监测点。对于废水排入集中式污水处理厂的，还需了解集中式污水处理厂的验收、运行情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药总平面分析"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2709,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

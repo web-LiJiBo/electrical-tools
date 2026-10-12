@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "32",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "32\t8.1.4\t涉及No.7信令网的有关\n问题，应符合《No.7信令\n网技术体制》、《No.7信\n令网网络管理接口技术\n规范 — — MT P和SC CP\n部分》、《No.7信令监测\n系统技术要求》《国内\n  No.7信令方式技术规\n范——运行、维护和管理\n  部分(OMAP)》的要求\t修改为：涉及No.7\n信令网的有关问题，\n应符合YD N 089\n《No.7信令网技术\n体制》、YD/T 1180\n《No.7信令网网络\n管理接口技术规\n范 — —MT P和SC-\nCP部分》、YD/T\n1303《No.7信令监\n测系统技术要求》、\nYDN 066《国内No.7\n信令方式技术规\n范——运行、维护和\n管理部分(OMAP)\n(暂行规定)》的要求\t补充规范的编号",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "32\t8.1.4\t涉及No.7信令网的有关\n问题，应符合《No.7信令\n网技术体制》、《No.7信\n令网网络管理接口技术\n规范 — — MT P和SC CP\n部分》、《No.7信令监测\n系统技术要求》《国内\n  No.7信令方式技术规\n范——运行、维护和管理\n  部分(OMAP)》的要求\t修改为：涉及No.7\n信令网的有关问题，\n应符合YD N 089\n《No.7信令网技术\n体制》、YD/T 1180\n《No.7信令网网络\n管理接口技术规\n范 — —MT P和SC-\nCP部分》、YD/T\n1303《No.7信令监\n测系统技术要求》、\nYDN 066《国内No.7\n信令方式技术规\n范——运行、维护和\n管理部分(OMAP)\n(暂行规定)》的要求\t补充规范的编号",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26499,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

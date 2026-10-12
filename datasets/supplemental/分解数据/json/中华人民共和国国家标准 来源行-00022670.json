@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022670",
+  "entities": [
+    {
+      "name": "移动通信基站的地网设计应根据基站构筑物的形式、地 理 位置、周边环境、地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2  移动通信基站的地网设计应根据基站构筑物的形式、地 理\n位置、周边环境、地质气候条件、土壤组成、土壤电阻率等因素进行\n设计，地网周边边界应根据基站所处地理环境与地形等因素确定\n其形状。",
+      "type": "语义分解",
+      "subject": "移动通信基站的地网设计应根据基站构筑物的形式、地 理 位置、周边环境、地",
+      "action": "",
+      "operation": "移动通信基站的地网设计应根据基站构筑物的形式、地 理 位置、周边环境、地质气候条件、土壤组成、土壤电阻率等因素进行 设计，地网周边边界应根据基站所处地理环境与地形等因素确定 其形状。",
+      "condition": "",
+      "constraint": "6.1.2  移动通信基站的地网设计应根据基站构筑物的形式、地 理\n位置、周边环境、地质气候条件、土壤组成、土壤电阻率等因素进行\n设计，地网周边边界应根据基站所处地理环境与地形等因素确定\n其形状。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "移动通信基站的地网设计应根据基站构筑物的形式、地 理 位置、周边环境、地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22670,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

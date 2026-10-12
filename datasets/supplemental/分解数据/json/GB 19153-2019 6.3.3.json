@@ -1,0 +1,39 @@
+{
+  "standard_name": "容积式空气压缩机能效限定值及能效等级",
+  "standard_id": "GB 19153-2019",
+  "version": "2019",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "变转速喷油回转空气压缩机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 变转速喷油回转空气压缩机机组比功率,由满负荷机组容积流量的100 %、70%和40 %时的机组比功率按式(3)加权计算。100 %、70 %和40 %满负荷机组容积流量的工况试验时 ,实测机组容积流量与满负荷的机组容积流量偏差应不大于±5%。",
+      "type": "语义分解",
+      "subject": "变转速喷油回转空气压缩机",
+      "action": "",
+      "operation": "按三种负荷工况加权计算比功率",
+      "condition": "100 %、70 %和40 %满负荷机组容积流量的工况试验时",
+      "constraint": "偏差应不大于±5%",
+      "constraint_role": "informational",
+      "related_entities": [
+        "变转速喷油回转空气压缩机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式(3)及权重缺失；偏差是试验流量偏差，不是能效阈值"
+      ]
+    }
+  }
+}

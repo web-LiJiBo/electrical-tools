@@ -1,0 +1,41 @@
+{
+  "standard_name": "生产安全事故应急演练评估规范",
+  "standard_id": "AQ/T 9009-2015",
+  "version": "2015",
+  "chapter_path": "6.3",
+  "entities": [
+    {
+      "name": "演练内容评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3 演练评估 根据演练现场观察和记录，依据制定的评估表，逐项对演练内容进行评估，及时记录评估结果。",
+      "type": "语义分解",
+      "subject": "演练内容评估",
+      "action": "",
+      "operation": "依据观察记录逐项评估记录结果",
+      "condition": "",
+      "constraint": "6.3 演练评估 根据演练现场观察和记录，依据制定的评估表，逐项对演练内容进行评估，及时记录评估结果。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "演练内容评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5388,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

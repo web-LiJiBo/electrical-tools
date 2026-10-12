@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032446",
+  "entities": [
+    {
+      "name": ". 3. 1 在对污染源的 日常监督性监测中 , 采样期间的工况应与当时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8. 3. 1    在对污染源的 日常监督性监测中 , 采样期间的工况应与当时 的运行工况相 同 , 排污单位 的人员\n和实施监测的人员都不应任意改变当时的运行工况。",
+      "type": "语义分解",
+      "subject": ". 3. 1 在对污染源的 日常监督性监测中 , 采样期间的工况应与当时",
+      "action": "",
+      "operation": ". 3. 1 在对污染源的 日常监督性监测中 , 采样期间的工况应与当时 的运行工况相 同 , 排污单位 的人员 和实施监测的人员都不应任意改变当时的运行工况。",
+      "condition": "",
+      "constraint": "8. 3. 1    在对污染源的 日常监督性监测中 , 采样期间的工况应与当时 的运行工况相 同 , 排污单位 的人员\n和实施监测的人员都不应任意改变当时的运行工况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 3. 1 在对污染源的 日常监督性监测中 , 采样期间的工况应与当时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32446,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

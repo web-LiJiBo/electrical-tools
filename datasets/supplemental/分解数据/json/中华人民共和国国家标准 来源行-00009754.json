@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009754",
+  "entities": [
+    {
+      "name": "MPI-SM (多通路)一参考点位于光网元传送输出接口光连接器之后",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     MPI-SM (多通路)一参考点位于光网元传送输出接口光连接器之后；\nMPI-RM (多通路)一参考点位于光网元传送输入接口光连接器之前；\n                 SM参考点一位于多通路线路OA 输出光连接器之后；\n                 RM 参考点一位于多通路线路 OA 输入光连接器之前。",
+      "type": "语义分解",
+      "subject": "MPI-SM (多通路)一参考点位于光网元传送输出接口光连接器之后",
+      "action": "",
+      "operation": "MPI-SM (多通路)一参考点位于光网元传送输出接口光连接器之后； MPI-RM (多通路)一参考点位于光网元传送输入接口光连接器之前； SM参考点一位于多通路线路OA 输出光连接器之后； RM 参考点一位于多通路线路 OA 输入光连接器之前。",
+      "condition": "",
+      "constraint": "     MPI-SM (多通路)一参考点位于光网元传送输出接口光连接器之后；\nMPI-RM (多通路)一参考点位于光网元传送输入接口光连接器之前；\n                 SM参考点一位于多通路线路OA 输出光连接器之后；\n                 RM 参考点一位于多通路线路 OA 输入光连接器之前。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "MPI-SM (多通路)一参考点位于光网元传送输出接口光连接器之后"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9754,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046351",
+  "entities": [
+    {
+      "name": "为便于广大设计、施工、监理、建设、生产、科研等单位 有关人员在使用本规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   为便于广大设计、施工、监理、建设、生产、科研等单位\n有关人员在使用本规范时能正确理解和执行条文规定，本规范\n编制组按章、节、条顺序编制了本规范的条文说明，对条文规\n定的目的、依据以及在执行中应注意的有关事项进行了说明。\n但是，本条文说明不具备与规范正文同等的法律效力，仅供使\n用者作为理解和把握标准规定的参考。",
+      "type": "语义分解",
+      "subject": "为便于广大设计、施工、监理、建设、生产、科研等单位 有关人员在使用本规范",
+      "action": "",
+      "operation": "为便于广大设计、施工、监理、建设、生产、科研等单位 有关人员在使用本规范时能正确理解和执行条文规定，本规范 编制组按章、节、条顺序编制了本规范的条文说明，对条文规 定的目的、依据以及在执行中应注意的有关事项进行了说明。 但是，本条文说明不具备与规范正文同等的法律效力，仅供使 用者作为理解和把握标准规定的参考。",
+      "condition": "",
+      "constraint": "   为便于广大设计、施工、监理、建设、生产、科研等单位\n有关人员在使用本规范时能正确理解和执行条文规定，本规范\n编制组按章、节、条顺序编制了本规范的条文说明，对条文规\n定的目的、依据以及在执行中应注意的有关事项进行了说明。\n但是，本条文说明不具备与规范正文同等的法律效力，仅供使\n用者作为理解和把握标准规定的参考。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为便于广大设计、施工、监理、建设、生产、科研等单位 有关人员在使用本规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46351,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

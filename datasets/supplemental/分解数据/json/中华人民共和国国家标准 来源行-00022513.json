@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022513",
+  "entities": [
+    {
+      "name": "外设环形接地汇集线连接系统可按图4.2.2设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2      外设环形接地汇集线连接系统可按图4.2.2设计。外\n\n设环形接地汇集线连接系统可用于高度较低且建筑面积较大\n或者外形为长方形的建筑物的综合通信大楼，可在高层综合通\n信大楼的某几层或某些机房使用，也可在电磁脉冲危险影响较\n大的局(站)采用。外设环形接地汇集线连接系统应符合下列\n规定：",
+      "type": "语义分解",
+      "subject": "外设环形接地汇集线连接系统可按图4.2.2设计",
+      "action": "",
+      "operation": "外设环形接地汇集线连接系统可按图4.2.2设计。外 设环形接地汇集线连接系统可用于高度较低且建筑面积较大 或者外形为长方形的建筑物的综合通信大楼，可在高层综合通 信大楼的某几层或某些机房使用，也可在电磁脉冲危险影响较 大的局(站)采用。外设环形接地汇集线连接系统应符合下列 规定",
+      "condition": "",
+      "constraint": "4.2.2      外设环形接地汇集线连接系统可按图4.2.2设计。外\n\n设环形接地汇集线连接系统可用于高度较低且建筑面积较大\n或者外形为长方形的建筑物的综合通信大楼，可在高层综合通\n信大楼的某几层或某些机房使用，也可在电磁脉冲危险影响较\n大的局(站)采用。外设环形接地汇集线连接系统应符合下列\n规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外设环形接地汇集线连接系统可按图4.2.2设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22513,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

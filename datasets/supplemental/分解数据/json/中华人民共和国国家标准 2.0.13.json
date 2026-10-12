@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "2.0.13",
+  "entities": [
+    {
+      "name": "挥发性有机物 volatile organic compounds(VO",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.13      挥发性有机物    volatile    organic    compounds(VOCs)\n   参与大气光化学反应的有机化合物，或者根据规定的方法测\n量或核算确定的有机化合物，简称 VOCs。",
+      "type": "语义分解",
+      "subject": "挥发性有机物 volatile organic compounds(VO",
+      "action": "",
+      "operation": "挥发性有机物 volatile organic compounds(VOCs) 参与大气光化学反应的有机化合物，或者根据规定的方法测 量或核算确定的有机化合物，简称 VOCs。",
+      "condition": "",
+      "constraint": "2.0.13      挥发性有机物    volatile    organic    compounds(VOCs)\n   参与大气光化学反应的有机化合物，或者根据规定的方法测\n量或核算确定的有机化合物，简称 VOCs。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发性有机物 volatile organic compounds(VO"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 39994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

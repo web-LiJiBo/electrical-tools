@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00027104",
+  "entities": [
+    {
+      "name": ". 内容齐全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  1.   内容齐全：按规定内容应没有缺页、漏项、颠倒、资料齐全；\n  2.  翔实准确：竣工图纸应与实际竣工状况相符，测试记录数据",
+      "type": "语义分解",
+      "subject": ". 内容齐全",
+      "action": "",
+      "operation": ". 内容齐全：按规定内容应没有缺页、漏项、颠倒、资料齐全； 2. 翔实准确：竣工图纸应与实际竣工状况相符，测试记录数据",
+      "condition": "",
+      "constraint": "  1.   内容齐全：按规定内容应没有缺页、漏项、颠倒、资料齐全；\n  2.  翔实准确：竣工图纸应与实际竣工状况相符，测试记录数据",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 内容齐全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

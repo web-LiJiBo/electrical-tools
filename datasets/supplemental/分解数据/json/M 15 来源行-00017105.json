@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 15",
+  "version": "",
+  "chapter_path": "来源行-00017105",
+  "entities": [
+    {
+      "name": "OTN 传送平面管理具有多层次管理的特点，在管理上各层之间是客户与服务者",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTN 传送平面管理具有多层次管理的特点，在管理上各层之间是客户与服务者的关系。当 OTN 传\n送平面采用光电混合交叉设备时，应包括光层和电层管理功能，并提供多层网络拓扑视图。",
+      "type": "语义分解",
+      "subject": "OTN 传送平面管理具有多层次管理的特点，在管理上各层之间是客户与服务者",
+      "action": "",
+      "operation": "OTN 传送平面管理具有多层次管理的特点，在管理上各层之间是客户与服务者的关系。当 OTN 传 送平面采用光电混合交叉设备时，应包括光层和电层管理功能，并提供多层网络拓扑视图。",
+      "condition": "",
+      "constraint": "      OTN 传送平面管理具有多层次管理的特点，在管理上各层之间是客户与服务者的关系。当 OTN 传\n送平面采用光电混合交叉设备时，应包括光层和电层管理功能，并提供多层网络拓扑视图。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 传送平面管理具有多层次管理的特点，在管理上各层之间是客户与服务者"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17105,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

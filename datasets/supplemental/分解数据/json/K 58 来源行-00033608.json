@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 27 . 040",
+  "standard_id": "K 58",
+  "version": "",
+  "chapter_path": "来源行-00033608",
+  "entities": [
+    {
+      "name": "b) 加热取样管道，并接通各仪器电源，预热管道和仪器，直到它们达到热稳定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    加热取样管道，并接通各仪器电源，预热管道和仪器，直到它们达到热稳定状态为止；\nc)    使用适合校准用的气体调整各仪器，并记录相应的响应值；",
+      "type": "语义分解",
+      "subject": "b) 加热取样管道，并接通各仪器电源，预热管道和仪器，直到它们达到热稳定",
+      "action": "",
+      "operation": "b) 加热取样管道，并接通各仪器电源，预热管道和仪器，直到它们达到热稳定状态为止； c) 使用适合校准用的气体调整各仪器，并记录相应的响应值",
+      "condition": "",
+      "constraint": "b)    加热取样管道，并接通各仪器电源，预热管道和仪器，直到它们达到热稳定状态为止；\nc)    使用适合校准用的气体调整各仪器，并记录相应的响应值；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 加热取样管道，并接通各仪器电源，预热管道和仪器，直到它们达到热稳定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33608,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

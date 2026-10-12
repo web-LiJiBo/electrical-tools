@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "10.4",
+  "entities": [
+    {
+      "name": "异常处置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.4 异常处置 企业应明确异常情形、处置流程等要求。发现异常情形时，从业人员应立即报告、研判风险，采取有效措施予以处置。涉及危险作业的，应及时汇报本单位负责人。出现直接危及人身安全的紧急情况时，应立即停止作业、撤出人员。现场管理人员应根据异常情形实际情况，科学组织现场处置。企业应对异常情形和处置结果进行回顾，根据实际情况完善异常处置流程，提升异常处置能力。",
+      "type": "语义分解",
+      "subject": "异常处置",
+      "action": "",
+      "operation": "报告研判有效处置危人立即停撤管理科学处置回顾完善",
+      "condition": "",
+      "constraint": "10.4 异常处置 企业应明确异常情形、处置流程等要求。发现异常情形时，从业人员应立即报告、研判风险，采取有效措施予以处置。涉及危险作业的，应及时汇报本单位负责人。出现直接危及人身安全的紧急情况时，应立即停止作业、撤出人员。现场管理人员应根据异常情形实际情况，科学组织现场处置。企业应对异常情形和处置结果进行回顾，根据实际情况完善异常处置流程，提升异常处置能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "异常处置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7277,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

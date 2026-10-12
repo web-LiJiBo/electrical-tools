@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.4.4",
+  "entities": [
+    {
+      "name": "联动调试旁站",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.4 项目监理机构应对全部的紧急报警功能、视频监控系统的联动功能(监视器图像显示联动、照明联动、报警声光/地图显示联动等)、出入口控制系统与所有消防通道门的应急疏散及联动功能的调试过程进行旁站。",
+      "type": "语义分解",
+      "subject": "联动调试旁站",
+      "action": "",
+      "operation": "全部紧急报警视频联动门禁所有消防门应急疏散联动旁站",
+      "condition": "",
+      "constraint": "8.4.4 项目监理机构应对全部的紧急报警功能、视频监控系统的联动功能(监视器图像显示联动、照明联动、报警声光/地图显示联动等)、出入口控制系统与所有消防通道门的应急疏散及联动功能的调试过程进行旁站。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "联动调试旁站"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7113,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

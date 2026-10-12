@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.12",
+  "entities": [
+    {
+      "name": "安防运维模块",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.12 应根据安全防范系统接入设备的规模及复杂程度，进行安全防范管理平台的运行维护模块设计，或在安全防范管理平台之外单独规划设计运行维护管理平台(运行维护管理系统)，保障安全防范系统、设备以及网络的正常运行。",
+      "type": "语义分解",
+      "subject": "安防运维模块",
+      "action": "",
+      "operation": "按规模复杂度设运维模块或独立平台保设备网络正常",
+      "condition": "",
+      "constraint": "4.2.12 应根据安全防范系统接入设备的规模及复杂程度，进行安全防范管理平台的运行维护模块设计，或在安全防范管理平台之外单独规划设计运行维护管理平台(运行维护管理系统)，保障安全防范系统、设备以及网络的正常运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防运维模块"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6890,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

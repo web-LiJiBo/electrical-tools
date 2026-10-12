@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "6.1.5",
+  "entities": [
+    {
+      "name": "方法验证样品",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5 应使用有证标准物质1标准样品 (或采用市售试剂。标样配制的样品)和实际样品进行方法验证。实际样品应尽量覆盖方法标谁的适用范围。验证样品应尽可能为标准编制组统一分发给各验证实验室的样品,或各验证实验室按照统一要求配制的基质相同的样品 (简称为 \"统一样品\")。验证样品原则上应是高度均匀的样品,当样品不能均质化时 (如金属橡胶或纺织品等固体废物样品),验证数据应注明仅适用于测试的样品类型",
+      "type": "语义分解",
+      "subject": "方法验证样品",
+      "action": "",
+      "operation": "使用标准及实际样覆盖范围尽可能统一高度均匀非均匀注明适用类型",
+      "condition": "",
+      "constraint": "6.1.5 应使用有证标准物质1标准样品 (或采用市售试剂。标样配制的样品)和实际样品进行方法验证。实际样品应尽量覆盖方法标谁的适用范围。验证样品应尽可能为标准编制组统一分发给各验证实验室的样品,或各验证实验室按照统一要求配制的基质相同的样品 (简称为 \"统一样品\")。验证样品原则上应是高度均匀的样品,当样品不能均质化时 (如金属橡胶或纺织品等固体废物样品),验证数据应注明仅适用于测试的样品类型",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法验证样品"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2344,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

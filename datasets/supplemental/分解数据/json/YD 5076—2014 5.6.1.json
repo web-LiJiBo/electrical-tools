@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "5.6.1",
+  "entities": [
+    {
+      "name": "国际局网络组织",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.1      国际局的网络组织分为国际段和国内段两部分。国际段\n部分根据运营商之间签订的协议确定；国内段部分通过国内电话\n网疏通。",
+      "type": "语义分解",
+      "subject": "国际局网络组织",
+      "action": "",
+      "operation": "国际段按运营商协议国内段电话网疏通",
+      "condition": "",
+      "constraint": "5.6.1      国际局的网络组织分为国际段和国内段两部分。国际段\n部分根据运营商之间签订的协议确定；国内段部分通过国内电话\n网疏通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "国际局网络组织"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25874,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

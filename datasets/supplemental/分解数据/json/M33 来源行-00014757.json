@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014757",
+  "entities": [
+    {
+      "name": "为了防止强光泄漏到光纤外，对人体特别是眼睛造成伤害，同时为了避免光放大器",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   为了防止强光泄漏到光纤外，对人体特别是眼睛造成伤害，同时为了避免光放大器的“浪涌”现象。\n\n当主光信道上的一段或多段光中继段上光功率信号丢失时，系统就能检测到链路上丢失了光信号，及时\n\n降低上游一个和下游再生段内的所有光放大器的输出光功率到达一个安全的域值，当系统的光信号恢复\n正常时，又能恢复光放大器的正常工作。对于APR,EMS   应支持以下参数：",
+      "type": "语义分解",
+      "subject": "为了防止强光泄漏到光纤外，对人体特别是眼睛造成伤害，同时为了避免光放大器",
+      "action": "",
+      "operation": "为了防止强光泄漏到光纤外，对人体特别是眼睛造成伤害，同时为了避免光放大器的“浪涌”现象。 当主光信道上的一段或多段光中继段上光功率信号丢失时，系统就能检测到链路上丢失了光信号，及时 降低上游一个和下游再生段内的所有光放大器的输出光功率到达一个安全的域值，当系统的光信号恢复 正常时，又能恢复光放大器的正常工作。对于APR,EMS 应支持以下参数",
+      "condition": "",
+      "constraint": "   为了防止强光泄漏到光纤外，对人体特别是眼睛造成伤害，同时为了避免光放大器的“浪涌”现象。\n\n当主光信道上的一段或多段光中继段上光功率信号丢失时，系统就能检测到链路上丢失了光信号，及时\n\n降低上游一个和下游再生段内的所有光放大器的输出光功率到达一个安全的域值，当系统的光信号恢复\n正常时，又能恢复光放大器的正常工作。对于APR,EMS   应支持以下参数：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "为了防止强光泄漏到光纤外，对人体特别是眼睛造成伤害，同时为了避免光放大器"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14757,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

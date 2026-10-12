@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "6.3.7.7",
+  "entities": [
+    {
+      "name": "泉水采样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.7.7 对于自喷的泉水,可在涌口处出水水流的中心采样; 采集不自喷泉水时,将停滞在抽水管的水汲出。新水更替之后。再进行采样。",
+      "type": "语义分解",
+      "subject": "泉水采样",
+      "action": "",
+      "operation": "自喷取涌口中心非自喷更替存水后采",
+      "condition": "采集不自喷泉水时",
+      "constraint": "6.3.7.7 对于自喷的泉水,可在涌口处出水水流的中心采样; 采集不自喷泉水时,将停滞在抽水管的水汲出。新水更替之后。再进行采样。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "泉水采样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2103,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

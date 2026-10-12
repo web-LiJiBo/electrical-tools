@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "硫化氢浓度警示",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2 硫化氢警告标志应符合以下要求 : 8) 空气中硫化氢浓度小于阈限值时 , 白天挂标有硫化氢字样的绿牌. 夜晚亮绿灯。 b) 空气中硫化氢浓度超过阈限值且小于安全临界浓度时 ,自天挂标有硫化氢字样的黄牌 夜晚亮黄灯。 c) 空气中硫化氢浓度超过安全临界浓度且小于危险临界浓度肘 白天挂标有硫化氢字样的红牌。 夜晚亮红灯。 d) 空气中硫化氢浓度超过危险临界浓度时 ,白天挂标有硫化氢字样的蓝牌 夜晚亮蓝灯。",
+      "type": "语义分解",
+      "subject": "硫化氢浓度警示",
+      "action": "",
+      "operation": "按阈限安全临界危险临界分绿黄红蓝昼牌夜灯",
+      "condition": "",
+      "constraint": "6.3.2 硫化氢警告标志应符合以下要求 : 8) 空气中硫化氢浓度小于阈限值时 , 白天挂标有硫化氢字样的绿牌. 夜晚亮绿灯。 b) 空气中硫化氢浓度超过阈限值且小于安全临界浓度时 ,自天挂标有硫化氢字样的黄牌 夜晚亮黄灯。 c) 空气中硫化氢浓度超过安全临界浓度且小于危险临界浓度肘 白天挂标有硫化氢字样的红牌。 夜晚亮红灯。 d) 空气中硫化氢浓度超过危险临界浓度时 ,白天挂标有硫化氢字样的蓝牌 夜晚亮蓝灯。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "硫化氢浓度警示"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7458,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；等于界值时原文未覆盖不得推定"
+      ]
+    }
+  }
+}

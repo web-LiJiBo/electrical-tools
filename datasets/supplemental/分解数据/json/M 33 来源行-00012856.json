@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012856",
+  "entities": [
+    {
+      "name": "APO 和 BISO 之间的差别称为寿命边际",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     APO 和 BISO 之间的差别称为寿命边际。该边际应尽可能大，以减少维护干预。BIS 测试中用到 S\n限值。若性能优于S 值，实体能以一定置信度投入业务。若性能劣于S 值，需要修复行动。\n7.4.2.4.2   维护性能级别和限值",
+      "type": "语义分解",
+      "subject": "APO 和 BISO 之间的差别称为寿命边际",
+      "action": "",
+      "operation": "APO 和 BISO 之间的差别称为寿命边际。该边际应尽可能大，以减少维护干预。BIS 测试中用到 S 限值。若性能优于S 值，实体能以一定置信度投入业务。若性能劣于S 值，需要修复行动。 7.4.2.4.2 维护性能级别和限值",
+      "condition": "",
+      "constraint": "     APO 和 BISO 之间的差别称为寿命边际。该边际应尽可能大，以减少维护干预。BIS 测试中用到 S\n限值。若性能优于S 值，实体能以一定置信度投入业务。若性能劣于S 值，需要修复行动。\n7.4.2.4.2   维护性能级别和限值",
+      "constraint_role": "informational",
+      "related_entities": [
+        "APO 和 BISO 之间的差别称为寿命边际"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12856,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

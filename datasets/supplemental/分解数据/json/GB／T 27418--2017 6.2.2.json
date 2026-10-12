@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "包含区间",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2 置停区间和置信水平这两个术语在统计学中具有专门的定义.本标准中对应这两个术语 ,使用 \"包含区间\"和\"包含概率\" = 其仅适用于满足某些条件的由 UJ 定义的区间 ,这些条件包括对 ue(y )有贡 献的所有不确定度分量都是由 A 类评定获得的。 确切地说 ,U 可被理解为确定了测量结果的一个区 间 ,该区间以较大的概率p包含了测量结果及其合成标准不确定度表征的概率分布的大部分 ,力为区 间的\"包含概率\"或\"置停水平\"。",
+      "type": "语义分解",
+      "subject": "包含区间",
+      "action": "",
+      "operation": "区分包含概率与统计置信术语",
+      "condition": "所有不确定度分量都是由 A 类评定获得的",
+      "constraint": "使用 \"包含区间\"和\"包含概率\"",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包含区间"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量和置停术语疑似识别错误"
+      ]
+    }
+  }
+}

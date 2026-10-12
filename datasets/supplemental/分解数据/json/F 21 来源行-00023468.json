@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023468",
+  "entities": [
+    {
+      "name": "IEEE 802. 3af 经 由 媒 体 独 立 接 口 的 数 据 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      IEEE 802. 3af   经 由 媒 体 独 立 接 口 的 数 据 终 端 设 备 供 电  (Data Terminal Equipment Power via\nMedia DependentInterface)",
+      "type": "语义分解",
+      "subject": "IEEE 802. 3af 经 由 媒 体 独 立 接 口 的 数 据 ",
+      "action": "",
+      "operation": "IEEE 802. 3af 经 由 媒 体 独 立 接 口 的 数 据 终 端 设 备 供 电 (Data Terminal Equipment Power via Media DependentInterface)",
+      "condition": "",
+      "constraint": "      IEEE 802. 3af   经 由 媒 体 独 立 接 口 的 数 据 终 端 设 备 供 电  (Data Terminal Equipment Power via\nMedia DependentInterface)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "IEEE 802. 3af 经 由 媒 体 独 立 接 口 的 数 据 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

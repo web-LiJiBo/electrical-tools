@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.5.2.1",
+  "entities": [
+    {
+      "name": "毒性介质处置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.2.1 有毒性泄漏介质 除 7.5.1要求外 ,对有毒性泄漏介质处置还应做到: a) 泄漏危险区应设有毒品警告标志; b) 需要采取工艺措施处置时 ,处置人员应掩护和配合事故单位和专业工程技术入员实施; C) 对参与处置人员的身体状浼 ,应进行跟踪检查。",
+      "type": "语义分解",
+      "subject": "毒性介质处置",
+      "action": "",
+      "operation": "警告标志专业工艺协助掩护人员健康跟踪",
+      "condition": "",
+      "constraint": "7.5.2.1 有毒性泄漏介质 除 7.5.1要求外 ,对有毒性泄漏介质处置还应做到: a) 泄漏危险区应设有毒品警告标志; b) 需要采取工艺措施处置时 ,处置人员应掩护和配合事故单位和专业工程技术入员实施; C) 对参与处置人员的身体状浼 ,应进行跟踪检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "毒性介质处置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5941,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

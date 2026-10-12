@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.1.2.2",
+  "entities": [
+    {
+      "name": "煮沸水臭味试验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2.2 原水煮沸后的臭和味 将上述锥形瓶内水样加热至开始沸腾，立即取下锥形瓶，稍冷后按上法嗅气和尝味，用适当的文字加以描述，并按6级记录其强度，见表2。(表格删除) 注: 必要时用活性炭处理过的纯水作为无臭对照水。",
+      "type": "语义分解",
+      "subject": "煮沸水臭味试验",
+      "action": "",
+      "operation": "煮沸稍冷后描述并按六级记录必要时设活性炭处理水对照",
+      "condition": "",
+      "constraint": "6.1.2.2 原水煮沸后的臭和味 将上述锥形瓶内水样加热至开始沸腾，立即取下锥形瓶，稍冷后按上法嗅气和尝味，用适当的文字加以描述，并按6级记录其强度，见表2。(表格删除) 注: 必要时用活性炭处理过的纯水作为无臭对照水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "煮沸水臭味试验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1273,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；六级表删除；仅保存标准内容非现场试饮授权"
+      ]
+    }
+  }
+}

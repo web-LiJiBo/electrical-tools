@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022669",
+  "entities": [
+    {
+      "name": "移动通信基站的防雷应根据地网的雷电冲击半径、浪涌电 流就近疏导分流、站内",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.1      移动通信基站的防雷应根据地网的雷电冲击半径、浪涌电\n流就近疏导分流、站内线缆的屏蔽接地、电源线和信号线的雷电过\n电压保护等因素，选择技术经济比合理的方案。",
+      "type": "语义分解",
+      "subject": "移动通信基站的防雷应根据地网的雷电冲击半径、浪涌电 流就近疏导分流、站内",
+      "action": "",
+      "operation": "移动通信基站的防雷应根据地网的雷电冲击半径、浪涌电 流就近疏导分流、站内线缆的屏蔽接地、电源线和信号线的雷电过 电压保护等因素，选择技术经济比合理的方案。",
+      "condition": "",
+      "constraint": "6.1.1      移动通信基站的防雷应根据地网的雷电冲击半径、浪涌电\n流就近疏导分流、站内线缆的屏蔽接地、电源线和信号线的雷电过\n电压保护等因素，选择技术经济比合理的方案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "移动通信基站的防雷应根据地网的雷电冲击半径、浪涌电 流就近疏导分流、站内"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22669,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

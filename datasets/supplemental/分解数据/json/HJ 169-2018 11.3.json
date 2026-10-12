@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "11.3",
+  "entities": [
+    {
+      "name": "风险措施预案建议",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.3 环境风险防范措施和应急预案 结合区域环境条件和园区/域环境风险防控要求。明确建设项月环境风险防控体系,重点说明防止危险物质进入环境及进入环境后的控制。消减监测等措施,提出优化调整风险防范措施建议及突发环境事件应急预案原则要求。",
+      "type": "语义分解",
+      "subject": "风险措施预案建议",
+      "action": "",
+      "operation": "结合区域明确体系防物入环境及控制消减监测提出优化预案原则",
+      "condition": "",
+      "constraint": "11.3 环境风险防范措施和应急预案 结合区域环境条件和园区/域环境风险防控要求。明确建设项月环境风险防控体系,重点说明防止危险物质进入环境及进入环境后的控制。消减监测等措施,提出优化调整风险防范措施建议及突发环境事件应急预案原则要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险措施预案建议"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2529,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

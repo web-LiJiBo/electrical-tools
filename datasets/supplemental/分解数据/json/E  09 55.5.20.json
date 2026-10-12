@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "55.5.20",
+  "entities": [
+    {
+      "name": "职业健康",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "55.5.20   应落实职业健康管理制度，提供符合职业健康要求的工作环境和条件，建立职业健康档案，\n\n按法规要求进行职业危害因素申报，采用有效的方式进行职业危害告知和警示。",
+      "type": "语义分解",
+      "subject": "职业健康",
+      "action": "",
+      "operation": "合健康环境建档危害申报告知警示",
+      "condition": "",
+      "constraint": "55.5.20   应落实职业健康管理制度，提供符合职业健康要求的工作环境和条件，建立职业健康档案，\n\n按法规要求进行职业危害因素申报，采用有效的方式进行职业危害告知和警示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "职业健康"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27797,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原编号55.5.20异常"
+      ]
+    }
+  }
+}

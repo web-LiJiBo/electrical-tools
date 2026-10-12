@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "排污自行监测方案",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 制定监测方案 排污单位应查清所有污染源，确定主要污染源及主要监测指标，制定监测方案。监测方案内容包括：单位基本情况。监测点位及示意图。监测指标。执行标推及其限值。监测频次。采样和样品保存方法 监测分析方法和仪器。质量保证与质量控制等。 新建排污单位应当在投入生产或使用并产生实际排污行为之前完成自行监测方案的编制及相关准备工作。",
+      "type": "语义分解",
+      "subject": "排污自行监测方案",
+      "action": "",
+      "operation": "查全部源主要指标编点位限值频次方法质控新单位排污前完成",
+      "condition": "",
+      "constraint": "4.1 制定监测方案 排污单位应查清所有污染源，确定主要污染源及主要监测指标，制定监测方案。监测方案内容包括：单位基本情况。监测点位及示意图。监测指标。执行标推及其限值。监测频次。采样和样品保存方法 监测分析方法和仪器。质量保证与质量控制等。 新建排污单位应当在投入生产或使用并产生实际排污行为之前完成自行监测方案的编制及相关准备工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "排污自行监测方案"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2813,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

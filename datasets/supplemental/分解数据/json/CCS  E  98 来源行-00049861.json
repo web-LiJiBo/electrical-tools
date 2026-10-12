@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00049861",
+  "entities": [
+    {
+      "name": "定向钻穿越段管道宜采用加强级防腐层或耐磨、耐划伤 的外防腐层，并按照现行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.2    定向钻穿越段管道宜采用加强级防腐层或耐磨、耐划伤\n的外防腐层，并按照现行行业标准《油气输送管道工程水平定\n向钻穿越设计规范》SY/T 6968的要求增加防护层。",
+      "type": "语义分解",
+      "subject": "定向钻穿越段管道宜采用加强级防腐层或耐磨、耐划伤 的外防腐层，并按照现行",
+      "action": "",
+      "operation": "定向钻穿越段管道宜采用加强级防腐层或耐磨、耐划伤 的外防腐层，并按照现行行业标准《油气输送管道工程水平定 向钻穿越设计规范》SY/T 6968的要求增加防护层。",
+      "condition": "",
+      "constraint": "3.0.2    定向钻穿越段管道宜采用加强级防腐层或耐磨、耐划伤\n的外防腐层，并按照现行行业标准《油气输送管道工程水平定\n向钻穿越设计规范》SY/T 6968的要求增加防护层。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "定向钻穿越段管道宜采用加强级防腐层或耐磨、耐划伤 的外防腐层，并按照现行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49861,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

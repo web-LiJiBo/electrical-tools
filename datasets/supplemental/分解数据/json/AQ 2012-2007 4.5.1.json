@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.5.1",
+  "entities": [
+    {
+      "name": "含硫化氢作业培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.1 在含硫化氢的油气田进行施工作业和油气生产前 ,所有生产作业人员包括现场监督人员应接受硫化氢防护的培训 ,培训应包括课堂培训和现场培训 ,由有资质的培训机构进行 ,培训时间应达到相应要求。应对临时人员和其他非定期派遣人员进行硫化氢防护知识的教育。",
+      "type": "语义分解",
+      "subject": "含硫化氢作业培训",
+      "action": "",
+      "operation": "作业前全员含监督经资质机构课堂现场培训临时人员也须教育",
+      "condition": "",
+      "constraint": "4.5.1 在含硫化氢的油气田进行施工作业和油气生产前 ,所有生产作业人员包括现场监督人员应接受硫化氢防护的培训 ,培训应包括课堂培训和现场培训 ,由有资质的培训机构进行 ,培训时间应达到相应要求。应对临时人员和其他非定期派遣人员进行硫化氢防护知识的教育。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含硫化氢作业培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4230,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

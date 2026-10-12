@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.1.5.2",
+  "entities": [
+    {
+      "name": "总有机碳测样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.5.2 样品的测定:根据仪器制造厂家的说明书 ,把测定样的总有机碳含量调节到仪器的工作范围内 ,进行样品测定。分析前应去除水样中存在的 CO.,水样中易挥发性有机物的逸失应降至最低程度 ,应经常控制系统的泄漏",
+      "type": "语义分解",
+      "subject": "总有机碳测样",
+      "action": "",
+      "operation": "依说明书调工作范围预除二氧化碳减挥发物逸失控制泄漏",
+      "condition": "",
+      "constraint": "7.1.5.2 样品的测定:根据仪器制造厂家的说明书 ,把测定样的总有机碳含量调节到仪器的工作范围内 ,进行样品测定。分析前应去除水样中存在的 CO.,水样中易挥发性有机物的逸失应降至最低程度 ,应经常控制系统的泄漏",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总有机碳测样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1899,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；化学符号异常"
+      ]
+    }
+  }
+}

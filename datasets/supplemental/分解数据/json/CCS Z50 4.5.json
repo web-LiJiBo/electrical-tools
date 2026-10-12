@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.20",
+  "standard_id": "CCS Z50",
+  "version": "",
+  "chapter_path": "4.5",
+  "entities": [
+    {
+      "name": "其他空气项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5   自本标准实施之日起，其他项目(表2)由国务院生态环境主管部门或者省级人民政府根据实际情\n况，确定具体实施方式。",
+      "type": "语义分解",
+      "subject": "其他空气项目",
+      "action": "",
+      "operation": "主管或省级按实际定实施方式",
+      "condition": "",
+      "constraint": "4.5   自本标准实施之日起，其他项目(表2)由国务院生态环境主管部门或者省级人民政府根据实际情\n况，确定具体实施方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他空气项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33118,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

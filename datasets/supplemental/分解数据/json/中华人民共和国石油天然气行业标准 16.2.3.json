@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "16.2.3",
+  "entities": [
+    {
+      "name": "站内通信管道和人手孔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "16.2.3    采用管道敷设方式时 ,  管道出入站点处 、建筑物进出点\n处 、管道拐弯处 ,   以及直线段每 100m 处应设置人  (手)  孔。\n16.2.4    站内人  (手)   孔型式应根据管群容量大小确定 。   人\n(手)  孔的位置宜设置在电缆分支点或引上点处 、管线拐弯点、\n道路交叉路口或拟建地下引入线路的建筑物旁 。易燃易爆场所\n内的人  (手)  孔应采用细沙回填。",
+      "type": "语义分解",
+      "subject": "站内通信管道和人手孔",
+      "action": "",
+      "operation": "出入站建筑拐弯直线每100米设孔按容量选型宜分支交叉处易燃易爆场所细沙回填",
+      "condition": "",
+      "constraint": "16.2.3    采用管道敷设方式时 ,  管道出入站点处 、建筑物进出点\n处 、管道拐弯处 ,   以及直线段每 100m 处应设置人  (手)  孔。\n16.2.4    站内人  (手)   孔型式应根据管群容量大小确定 。   人\n(手)  孔的位置宜设置在电缆分支点或引上点处 、管线拐弯点、\n道路交叉路口或拟建地下引入线路的建筑物旁 。易燃易爆场所\n内的人  (手)  孔应采用细沙回填。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站内通信管道和人手孔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12189,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含16.2.3及16.2.4保留"
+      ]
+    }
+  }
+}

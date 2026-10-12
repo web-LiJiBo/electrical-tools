@@ -1,0 +1,41 @@
+{
+  "standard_name": "工业锅炉水质",
+  "standard_id": "GB/T 1576-2018",
+  "version": "2018",
+  "chapter_path": "4.1.4",
+  "entities": [
+    {
+      "name": "锅水亚硫酸根磷酸根指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.4 锅水中的亚硫酸根指标适用于加亚硫酸盐作除氧剂的锅炉 ,磷酸根指标适用于以磷酸盐作阻垢剂的锅炉。",
+      "type": "语义分解",
+      "subject": "锅水亚硫酸根磷酸根指标",
+      "action": "",
+      "operation": "按对应除氧阻垢处理药剂适用",
+      "condition": "",
+      "constraint": "4.1.4 锅水中的亚硫酸根指标适用于加亚硫酸盐作除氧剂的锅炉 ,磷酸根指标适用于以磷酸盐作阻垢剂的锅炉。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锅水亚硫酸根磷酸根指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4088,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

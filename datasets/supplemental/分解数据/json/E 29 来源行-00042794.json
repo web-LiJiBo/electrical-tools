@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042794",
+  "entities": [
+    {
+      "name": ". 1 应对管道高程数据进行验证 ,管道埋深检测误差应不大于实际埋深的 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4. 1   应对管道高程数据进行验证 ,管道埋深检测误差应不大于实际埋深的 10%(埋深小于 1 m 的以\n1 m 计算) ,高程测绘测量中误差不得大于 ±3 cm(相对于邻近控制点) ; 不满足精度要求时 , 应重新检\n测 。依据管道高程计算管道的实际倾角 ,绘制成管道实际倾角剖面图 。",
+      "type": "语义分解",
+      "subject": ". 1 应对管道高程数据进行验证 ,管道埋深检测误差应不大于实际埋深的 ",
+      "action": "",
+      "operation": ". 1 应对管道高程数据进行验证 ,管道埋深检测误差应不大于实际埋深的 10%(埋深小于 1 m 的以 1 m 计算) ,高程测绘测量中误差不得大于 ±3 cm(相对于邻近控制点) ; 不满足精度要求时 , 应重新检 测 。依据管道高程计算管道的实际倾角 ,绘制成管道实际倾角剖面图 。",
+      "condition": "",
+      "constraint": "6.4. 1   应对管道高程数据进行验证 ,管道埋深检测误差应不大于实际埋深的 10%(埋深小于 1 m 的以\n1 m 计算) ,高程测绘测量中误差不得大于 ±3 cm(相对于邻近控制点) ; 不满足精度要求时 , 应重新检\n测 。依据管道高程计算管道的实际倾角 ,绘制成管道实际倾角剖面图 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 应对管道高程数据进行验证 ,管道埋深检测误差应不大于实际埋深的 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42794,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

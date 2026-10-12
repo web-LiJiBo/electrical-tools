@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047624",
+  "entities": [
+    {
+      "name": "管道绝缘法兰/接头性能、跨接线运行状况",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 1   管道绝缘法兰/接头性能、跨接线运行状况；\n 2   管地电位及其分布；\n 3   试片腐蚀速率；",
+      "type": "语义分解",
+      "subject": "管道绝缘法兰/接头性能、跨接线运行状况",
+      "action": "",
+      "operation": "管道绝缘法兰/接头性能、跨接线运行状况； 2 管地电位及其分布； 3 试片腐蚀速率",
+      "condition": "",
+      "constraint": " 1   管道绝缘法兰/接头性能、跨接线运行状况；\n 2   管地电位及其分布；\n 3   试片腐蚀速率；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道绝缘法兰/接头性能、跨接线运行状况"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47624,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "55.5.15",
+  "entities": [
+    {
+      "name": "防雷静电劳动防护巡护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "55.5.15   应定期对防雷、防静电设施进行测试，对测试发现的问题及时进行整改，并保留记录。\n\n5.5.5.16       应为员工配备必要的劳动防护用品，并保存配发记录。\n\n5.5.5.17        应结合管道所处的环境，进行管道巡护与检查。",
+      "type": "语义分解",
+      "subject": "防雷静电劳动防护巡护",
+      "action": "",
+      "operation": "定期测试整改留记录配防护留配发记录依环境巡护",
+      "condition": "",
+      "constraint": "55.5.15   应定期对防雷、防静电设施进行测试，对测试发现的问题及时进行整改，并保留记录。\n\n5.5.5.16       应为员工配备必要的劳动防护用品，并保存配发记录。\n\n5.5.5.17        应结合管道所处的环境，进行管道巡护与检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防雷静电劳动防护巡护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27794,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；含多条原编号55.5.15异常"
+      ]
+    }
+  }
+}

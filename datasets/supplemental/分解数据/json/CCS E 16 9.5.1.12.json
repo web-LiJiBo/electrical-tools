@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.5.1.12",
+  "entities": [
+    {
+      "name": "索鞍锚具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.5.1.12   主索鞍、散索鞍应保持清洁，防止尘土聚集和雨水淤集。如发现有异常错位、卡死、辊轴\n歪斜及锈蚀、破损等，应及时维修处置。主索鞍、散索鞍、主缆索股锚具每年应维护1次；索鞍应保\n持正常工作位置，如偏移超限，应及时复位；索鞍的辊轴或滑板应保持正常工作状况，经常清除滑板\n或辊轴座板上的杂物，加注润滑油脂以保持其机动性。",
+      "type": "语义分解",
+      "subject": "索鞍锚具",
+      "action": "",
+      "operation": "清洁无积水错位卡死损锈修每年维一次偏移复位轴板清杂润滑",
+      "condition": "",
+      "constraint": "9.5.1.12   主索鞍、散索鞍应保持清洁，防止尘土聚集和雨水淤集。如发现有异常错位、卡死、辊轴\n歪斜及锈蚀、破损等，应及时维修处置。主索鞍、散索鞍、主缆索股锚具每年应维护1次；索鞍应保\n持正常工作位置，如偏移超限，应及时复位；索鞍的辊轴或滑板应保持正常工作状况，经常清除滑板\n或辊轴座板上的杂物，加注润滑油脂以保持其机动性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "索鞍锚具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30150,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

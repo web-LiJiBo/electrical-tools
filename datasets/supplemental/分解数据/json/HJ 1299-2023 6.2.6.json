@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.6",
+  "entities": [
+    {
+      "name": "许可污染防治技术",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.6 污染防治可行技术 依据污染防治可行技术指南排污许可证申请与核发技术规范进行判定。对于未采用推荐可行技术 的,排污单位应当在申请时提供相关证明材料 (如已有污染物排放监测数据;  对于国内外首次采用的污 染治理技术, 还应当提供中试数据等说明材料) 证明可达到与污染防治可行技术相当的处理能力。",
+      "type": "语义分解",
+      "subject": "许可污染防治技术",
+      "action": "",
+      "operation": "依可行技术规范判断非推荐技术提供等效处理能力证明",
+      "condition": "",
+      "constraint": "6.2.6 污染防治可行技术 依据污染防治可行技术指南排污许可证申请与核发技术规范进行判定。对于未采用推荐可行技术 的,排污单位应当在申请时提供相关证明材料 (如已有污染物排放监测数据;  对于国内外首次采用的污 染治理技术, 还应当提供中试数据等说明材料) 证明可达到与污染防治可行技术相当的处理能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可污染防治技术"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1999,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

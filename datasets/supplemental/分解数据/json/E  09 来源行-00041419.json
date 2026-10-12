@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041419",
+  "entities": [
+    {
+      "name": "溢出一旦发生时，应在保证安全的前提下，立即关闭溢漏源头，或尽可能减少溢出",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   溢出一旦发生时，应在保证安全的前提下，立即关闭溢漏源头，或尽可能减少溢出。溢出物品的\n扩散应被控制或截留在最小的区域内，以最大限度地减少不良后果。下列方式可用于控制物品(尤其\n是油品)的排放：",
+      "type": "语义分解",
+      "subject": "溢出一旦发生时，应在保证安全的前提下，立即关闭溢漏源头，或尽可能减少溢出",
+      "action": "",
+      "operation": "溢出一旦发生时，应在保证安全的前提下，立即关闭溢漏源头，或尽可能减少溢出。溢出物品的 扩散应被控制或截留在最小的区域内，以最大限度地减少不良后果。下列方式可用于控制物品(尤其 是油品)的排放",
+      "condition": "",
+      "constraint": "   溢出一旦发生时，应在保证安全的前提下，立即关闭溢漏源头，或尽可能减少溢出。溢出物品的\n扩散应被控制或截留在最小的区域内，以最大限度地减少不良后果。下列方式可用于控制物品(尤其\n是油品)的排放：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "溢出一旦发生时，应在保证安全的前提下，立即关闭溢漏源头，或尽可能减少溢出"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41419,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

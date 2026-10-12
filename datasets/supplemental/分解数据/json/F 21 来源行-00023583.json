@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023583",
+  "entities": [
+    {
+      "name": "b) 传输层",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    传输层 :基于分组交换技术 ,负责将软交换网络的各类信息 ,包括信令流和媒体流通过统一的\n       高带宽 、有一定 QoS保证的分组网络传送 ;",
+      "type": "语义分解",
+      "subject": "b) 传输层",
+      "action": "",
+      "operation": "b) 传输层 :基于分组交换技术 ,负责将软交换网络的各类信息 ,包括信令流和媒体流通过统一的 高带宽 、有一定 QoS保证的分组网络传送",
+      "condition": "",
+      "constraint": "b)    传输层 :基于分组交换技术 ,负责将软交换网络的各类信息 ,包括信令流和媒体流通过统一的\n       高带宽 、有一定 QoS保证的分组网络传送 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 传输层"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23583,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

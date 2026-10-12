@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.3.2.2.4",
+  "entities": [
+    {
+      "name": "土壤规定深度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2.2.4 规定深度采样 监测土壤污染随深度变化时,可按规定深度由表层开始向下由密渐疏或等间距等设置采样点进行采样。发现明显污染痕迹或现场快速检测仪器识别出较重污染时,可根据实际情况调整采样深度,或采样 直至无污染深度或母岩风化层=",
+      "type": "语义分解",
+      "subject": "土壤规定深度",
+      "action": "",
+      "operation": "向下由密渐疏或等距明显污染时调整直至无污染或风化层",
+      "condition": "",
+      "constraint": "7.3.2.2.4 规定深度采样 监测土壤污染随深度变化时,可按规定深度由表层开始向下由密渐疏或等间距等设置采样点进行采样。发现明显污染痕迹或现场快速检测仪器识别出较重污染时,可根据实际情况调整采样深度,或采样 直至无污染深度或母岩风化层=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤规定深度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

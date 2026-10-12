@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "4.3.1",
+  "entities": [
+    {
+      "name": "污染源强",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1 根据污染物产生环节 (包括生产。装卸。储存。运输)产生方式和治理措施,核算建设项目有 组织与无组织,正常工况与非正常工况下的污染物产生和排放强度,给出污染因子及其产生和排放的方 式 浓度,数量等",
+      "type": "语义分解",
+      "subject": "污染源强",
+      "action": "",
+      "operation": "核有无组织正常非正常产生排放强度方式浓度数量",
+      "condition": "",
+      "constraint": "4.3.1 根据污染物产生环节 (包括生产。装卸。储存。运输)产生方式和治理措施,核算建设项目有 组织与无组织,正常工况与非正常工况下的污染物产生和排放强度,给出污染因子及其产生和排放的方 式 浓度,数量等",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染源强"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2554,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

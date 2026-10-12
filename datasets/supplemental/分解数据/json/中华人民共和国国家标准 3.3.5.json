@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.3.5",
+  "entities": [
+    {
+      "name": "水平接地体应采用热镀锌扁钢或铜材",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.5      水平接地体应采用热镀锌扁钢或铜材。水平接地体应与\n垂直接地体焊接连通。",
+      "type": "语义分解",
+      "subject": "水平接地体应采用热镀锌扁钢或铜材",
+      "action": "",
+      "operation": "水平接地体应采用热镀锌扁钢或铜材。水平接地体应与 垂直接地体焊接连通。",
+      "condition": "",
+      "constraint": "3.3.5      水平接地体应采用热镀锌扁钢或铜材。水平接地体应与\n垂直接地体焊接连通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水平接地体应采用热镀锌扁钢或铜材"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22386,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

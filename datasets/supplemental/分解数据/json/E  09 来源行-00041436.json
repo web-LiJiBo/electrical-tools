@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041436",
+  "entities": [
+    {
+      "name": "检查、评估和油田实际作业的文件资料对于确认某一地区是否具有潜在的(环境)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   检查、评估和油田实际作业的文件资料对于确认某一地区是否具有潜在的(环境)问题非常重\n要，应认真对待检查发现缺陷的整改记录工作。",
+      "type": "语义分解",
+      "subject": "检查、评估和油田实际作业的文件资料对于确认某一地区是否具有潜在的(环境)",
+      "action": "",
+      "operation": "检查、评估和油田实际作业的文件资料对于确认某一地区是否具有潜在的(环境)问题非常重 要，应认真对待检查发现缺陷的整改记录工作。",
+      "condition": "",
+      "constraint": "   检查、评估和油田实际作业的文件资料对于确认某一地区是否具有潜在的(环境)问题非常重\n要，应认真对待检查发现缺陷的整改记录工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "检查、评估和油田实际作业的文件资料对于确认某一地区是否具有潜在的(环境)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41436,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

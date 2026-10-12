@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团站场设备设施泄漏管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003721",
+  "entities": [
+    {
+      "name": "第十三条 所在区域级别划分 根据密封点所在区域现场情况,将密封点划分为三",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十三条 所在区域级别划分 根据密封点所在区域现场情况,将密封点划分为三个区: (一)1区:  不具有骚制通风设施的密闭空间。 (二)2区:具有骚制通风设施的密闭空间 ,半密闭空间或 《国家管网集团作业许可安全管理细则》中规定的受限空间。 (三)3区:  通风良好的露天区域。",
+      "type": "语义分解",
+      "subject": "第十三条 所在区域级别划分 根据密封点所在区域现场情况,将密封点划分为三",
+      "action": "",
+      "operation": "第十三条 所在区域级别划分 根据密封点所在区域现场情况,将密封点划分为三个区: (一)1区: 不具有骚制通风设施的密闭空间。 (二)2区:具有骚制通风设施的密闭空间 ,半密闭空间或 《国家管网集团作业许可安全管理细则》中规定的受限空间。 (三)3区: 通风良好的露天区域。",
+      "condition": "",
+      "constraint": "第十三条 所在区域级别划分 根据密封点所在区域现场情况,将密封点划分为三个区: (一)1区:  不具有骚制通风设施的密闭空间。 (二)2区:具有骚制通风设施的密闭空间 ,半密闭空间或 《国家管网集团作业许可安全管理细则》中规定的受限空间。 (三)3区:  通风良好的露天区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十三条 所在区域级别划分 根据密封点所在区域现场情况,将密封点划分为三"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3721,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

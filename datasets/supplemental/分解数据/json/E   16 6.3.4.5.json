@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "6.3.4.5",
+  "entities": [
+    {
+      "name": "系统具备人脸侦测功能的应支持按时间、 监控点、 人员信息等组合条件检索历",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4.5    系统具备人脸侦测功能的应支持按时间、  监控点、  人员信息等组合条件检索历史结果。\n6.3.4.6    系统具备车辆侦测功能的应支持车辆属性检测分析,  包括按车牌号码、  车牌颜色、  车辆型\n号、  车身颜色识别。",
+      "type": "语义分解",
+      "subject": "系统具备人脸侦测功能的应支持按时间、 监控点、 人员信息等组合条件检索历",
+      "action": "",
+      "operation": "系统具备人脸侦测功能的应支持按时间、 监控点、 人员信息等组合条件检索历史结果。 6.3.4.6 系统具备车辆侦测功能的应支持车辆属性检测分析, 包括按车牌号码、 车牌颜色、 车辆型 号、 车身颜色识别。",
+      "condition": "",
+      "constraint": "6.3.4.5    系统具备人脸侦测功能的应支持按时间、  监控点、  人员信息等组合条件检索历史结果。\n6.3.4.6    系统具备车辆侦测功能的应支持车辆属性检测分析,  包括按车牌号码、  车牌颜色、  车辆型\n号、  车身颜色识别。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "系统具备人脸侦测功能的应支持按时间、 监控点、 人员信息等组合条件检索历"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41684,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

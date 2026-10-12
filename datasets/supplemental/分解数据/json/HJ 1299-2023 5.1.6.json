@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "5.1.6",
+  "entities": [
+    {
+      "name": "核查证明材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.6 其他证明材料:  包括达标证明材料(如涉及) 原辅燃料信息 (如涉及) 自行监测方案等判 定可行技术。管理类别  自行监测情况的证明材料。",
+      "type": "语义分解",
+      "subject": "核查证明材料",
+      "action": "",
+      "operation": "按涉及事项提供达标燃料和监测方案材料",
+      "condition": "",
+      "constraint": "5.1.6 其他证明材料:  包括达标证明材料(如涉及) 原辅燃料信息 (如涉及) 自行监测方案等判 定可行技术。管理类别  自行监测情况的证明材料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "核查证明材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1979,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

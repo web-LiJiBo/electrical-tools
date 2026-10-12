@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "来源行-00032551",
+  "entities": [
+    {
+      "name": ") 周界外浓度最高 点一般应设置于无组织排放源下风 向的单位周界外 10",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  1)  周界外浓度最高 点一般应设置于无组织排放源下风 向的单位周界外 10 m 范 围内 , 若预计无组织排放 的最\n    大落地浓度点越 出 10 m 范 围 , 可将监控点移至该预计浓度最高点 , 详见 附录 C。  下 同。\n  2)  均指含游离二氧化硅超过 10% 以上 的各种尘。\n  3)  排放氯气 的排气筒不得低于 25 m 。\n  4)  排放氰化氢 的排气筒不得低于 25 m 。\n  5)  排放光气 的排气筒不得低于 25 m 。",
+      "type": "语义分解",
+      "subject": ") 周界外浓度最高 点一般应设置于无组织排放源下风 向的单位周界外 10",
+      "action": "",
+      "operation": ") 周界外浓度最高 点一般应设置于无组织排放源下风 向的单位周界外 10 m 范 围内 , 若预计无组织排放 的最 大落地浓度点越 出 10 m 范 围 , 可将监控点移至该预计浓度最高点 , 详见 附录 C。 下 同。 2) 均指含游离二氧化硅超过 10% 以上 的各种尘。 3) 排放氯气 的排气筒不得低于 25 m 。 4) 排放氰化氢 的排气筒不得低于 25 m 。 5) 排放光气 的排气筒不得低于 25 m 。",
+      "condition": "",
+      "constraint": "  1)  周界外浓度最高 点一般应设置于无组织排放源下风 向的单位周界外 10 m 范 围内 , 若预计无组织排放 的最\n    大落地浓度点越 出 10 m 范 围 , 可将监控点移至该预计浓度最高点 , 详见 附录 C。  下 同。\n  2)  均指含游离二氧化硅超过 10% 以上 的各种尘。\n  3)  排放氯气 的排气筒不得低于 25 m 。\n  4)  排放氰化氢 的排气筒不得低于 25 m 。\n  5)  排放光气 的排气筒不得低于 25 m 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") 周界外浓度最高 点一般应设置于无组织排放源下风 向的单位周界外 10"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32551,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

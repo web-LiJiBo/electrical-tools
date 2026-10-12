@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工程可燃气体和有毒气体检测报警系统安全规范",
+  "standard_id": "SY/T 6503-2022",
+  "version": "2022",
+  "chapter_path": "4.5",
+  "entities": [
+    {
+      "name": "气体探测器配置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5 探测器设置应符合下列规定 : a) 可燃气体与有毒气体同时存在的场所。可燃气体浓度先于有毒气体达到报警限时,应设置可燃气体探测器 ; b) 可燃气体与有毒气体同时存在的场所,有毒气体浓度先于可燃气体达到报警限时,应设置有 毒气体探测器 ; c) 可燃气体与有毒气体同时存在的场所, 可燃和有毒气体浓度可能同时达到报瞥限肘 应分别设置可燃气体利有毒体探测器 ; d) 既属可燃又属有毒的单质气体。应设置有毒气体探测器。",
+      "type": "语义分解",
+      "subject": "气体探测器配置",
+      "action": "",
+      "operation": "按可燃毒气先达报警者选择同时达限分别配置兼可燃毒单质用有毒检测",
+      "condition": "",
+      "constraint": "4.5 探测器设置应符合下列规定 : a) 可燃气体与有毒气体同时存在的场所。可燃气体浓度先于有毒气体达到报警限时,应设置可燃气体探测器 ; b) 可燃气体与有毒气体同时存在的场所,有毒气体浓度先于可燃气体达到报警限时,应设置有 毒气体探测器 ; c) 可燃气体与有毒气体同时存在的场所, 可燃和有毒气体浓度可能同时达到报瞥限肘 应分别设置可燃气体利有毒体探测器 ; d) 既属可燃又属有毒的单质气体。应设置有毒气体探测器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气体探测器配置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5781,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

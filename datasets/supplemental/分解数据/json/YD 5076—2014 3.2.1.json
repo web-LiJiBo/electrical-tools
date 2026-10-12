@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "3.2.1",
+  "entities": [
+    {
+      "name": "国际交换局分类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.2.1     目前我国主要有三类疏通国际电话业务的交换局，即国际\n出入口局、区域性国际出入口局及边境出入口局。",
+      "type": "语义分解",
+      "subject": "国际交换局分类",
+      "action": "",
+      "operation": "原文列国际出入口区域性及边境三类",
+      "condition": "",
+      "constraint": "3.2.1     目前我国主要有三类疏通国际电话业务的交换局，即国际\n出入口局、区域性国际出入口局及边境出入口局。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "国际交换局分类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25753,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；历史标准描述不代表当前网络现状"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006310",
+  "entities": [
+    {
+      "name": "第三十九条 [动火作业管理要求 ] (十-)油气储存设施及其附属设施,包",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第三十九条 [动火作业管理要求 ] (十-)油气储存设施及其附属设施,包括原油罐。成品油罐。污油罐。含油污水罐。输气站场残液罐。储气罐或排污罐在运行中,或设备设施内部构件未清洗干净。未经蒸汽吹扫或氮气置换合格达到动火条件 ,禁止对上述设备设施进行动火作业。LNG接收站接船或装车期间,码头区和装车区严禁动火作业。",
+      "type": "语义分解",
+      "subject": "第三十九条 [动火作业管理要求 ] (十-)油气储存设施及其附属设施,包",
+      "action": "",
+      "operation": "第三十九条 [动火作业管理要求 ] (十-)油气储存设施及其附属设施,包括原油罐。成品油罐。污油罐。含油污水罐。输气站场残液罐。储气罐或排污罐在运行中,或设备设施内部构件未清洗干净。未经蒸汽吹扫或氮气置换合格达到动火条件 ,禁止对上述设备设施进行动火作业。LNG接收站接船或装车期间,码头区和装车区严禁动火作业。",
+      "condition": "",
+      "constraint": "第三十九条 [动火作业管理要求 ] (十-)油气储存设施及其附属设施,包括原油罐。成品油罐。污油罐。含油污水罐。输气站场残液罐。储气罐或排污罐在运行中,或设备设施内部构件未清洗干净。未经蒸汽吹扫或氮气置换合格达到动火条件 ,禁止对上述设备设施进行动火作业。LNG接收站接船或装车期间,码头区和装车区严禁动火作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第三十九条 [动火作业管理要求 ] (十-)油气储存设施及其附属设施,包"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6310,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

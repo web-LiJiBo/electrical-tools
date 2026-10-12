@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023335",
+  "entities": [
+    {
+      "name": "第一，当雷电流通过接地装置流入土壤时，由于电流幅值很 大，在接地体周围形",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   第一，当雷电流通过接地装置流入土壤时，由于电流幅值很\n大，在接地体周围形成强大的电场，土壤呈现的电阻率也受到电场\n强度的影响，随着电场强度增加，也就是随着电流密度的增加，土\n壤电阻率随之减少。",
+      "type": "语义分解",
+      "subject": "第一，当雷电流通过接地装置流入土壤时，由于电流幅值很 大，在接地体周围形",
+      "action": "",
+      "operation": "第一，当雷电流通过接地装置流入土壤时，由于电流幅值很 大，在接地体周围形成强大的电场，土壤呈现的电阻率也受到电场 强度的影响，随着电场强度增加，也就是随着电流密度的增加，土 壤电阻率随之减少。",
+      "condition": "",
+      "constraint": "   第一，当雷电流通过接地装置流入土壤时，由于电流幅值很\n大，在接地体周围形成强大的电场，土壤呈现的电阻率也受到电场\n强度的影响，随着电场强度增加，也就是随着电流密度的增加，土\n壤电阻率随之减少。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第一，当雷电流通过接地装置流入土壤时，由于电流幅值很 大，在接地体周围形"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23335,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.4.2",
+  "entities": [
+    {
+      "name": "下井仪器重复遇阻",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.4.2 下井仪器遇阻 ,若在同一井段遇阻3次,应记录遇阻曲线 ,并由钻井队下钻通井后再进行测井作业。",
+      "type": "语义分解",
+      "subject": "下井仪器重复遇阻",
+      "action": "",
+      "operation": "记录曲线待下钻通井再测",
+      "condition": "若在同一井段遇阻3次",
+      "constraint": "5.4.2.4.2 下井仪器遇阻 ,若在同一井段遇阻3次,应记录遇阻曲线 ,并由钻井队下钻通井后再进行测井作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "下井仪器重复遇阻"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4398,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

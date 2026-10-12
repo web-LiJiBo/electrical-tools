@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041401",
+  "entities": [
+    {
+      "name": "避免溢出的最好办法就是防止它们的发生",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   避免溢出的最好办法就是防止它们的发生。在预防溢出事故中，关键是充分地培训管理人员和现\n场操作人员。为预防意外溢出可以采取三个基本步骤：",
+      "type": "语义分解",
+      "subject": "避免溢出的最好办法就是防止它们的发生",
+      "action": "",
+      "operation": "避免溢出的最好办法就是防止它们的发生。在预防溢出事故中，关键是充分地培训管理人员和现 场操作人员。为预防意外溢出可以采取三个基本步骤",
+      "condition": "",
+      "constraint": "   避免溢出的最好办法就是防止它们的发生。在预防溢出事故中，关键是充分地培训管理人员和现\n场操作人员。为预防意外溢出可以采取三个基本步骤：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "避免溢出的最好办法就是防止它们的发生"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41401,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011714",
+  "entities": [
+    {
+      "name": "各类电接口如同步接口 、 公务联络通信接口 、 网管接口 的物理/ 电气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    各类电接口如同步接口 、  公务联络通信接口 、   网管接口\n的物理/ 电气性能 ,   以及各种 SDH 和 PDH速率等级电接口的抖\n动 、漂移指标及帧结构应符合现行国家标准 《数字网系列比特\n率电接口特性》  GB/T  7611 的有关规定 。",
+      "type": "语义分解",
+      "subject": "各类电接口如同步接口 、 公务联络通信接口 、 网管接口 的物理/ 电气",
+      "action": "",
+      "operation": "各类电接口如同步接口 、 公务联络通信接口 、 网管接口 的物理/ 电气性能 , 以及各种 SDH 和 PDH速率等级电接口的抖 动 、漂移指标及帧结构应符合现行国家标准 《数字网系列比特 率电接口特性》 GB/T 7611 的有关规定 。",
+      "condition": "",
+      "constraint": "       2    各类电接口如同步接口 、  公务联络通信接口 、   网管接口\n的物理/ 电气性能 ,   以及各种 SDH 和 PDH速率等级电接口的抖\n动 、漂移指标及帧结构应符合现行国家标准 《数字网系列比特\n率电接口特性》  GB/T  7611 的有关规定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "各类电接口如同步接口 、 公务联络通信接口 、 网管接口 的物理/ 电气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11714,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.2.3.1",
+  "entities": [
+    {
+      "name": "内浮顶罐检修",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3.1    在每个停工检修期对内浮顶罐的完好情况进行检查。发现有不符合4.2.2规定的，应在该停工\n检修期内完成修复；若延迟修复，应将相关方案报生态环境主管部门确定。",
+      "type": "语义分解",
+      "subject": "内浮顶罐检修",
+      "action": "",
+      "operation": "每停工检查不合格当期修延迟报主管确定",
+      "condition": "",
+      "constraint": "4.2.3.1    在每个停工检修期对内浮顶罐的完好情况进行检查。发现有不符合4.2.2规定的，应在该停工\n检修期内完成修复；若延迟修复，应将相关方案报生态环境主管部门确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "内浮顶罐检修"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32739,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020322",
+  "entities": [
+    {
+      "name": ")两端的SnP_C 功能以同样的方式工作，监测VC-n缺陷，按缺陷状况和",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)两端的SnP_C 功能以同样的方式工作，监测VC-n缺陷，按缺陷状况和外部倒换请求的优先次\n    序评估系统状态，并从适当的通路中选择信号。两个 SnP_C 功能通过面向比特的协议相互通\n    信，它在保护通道SnP_C 特征信息中的开销K3 字节中说明，如图111和图112所示，该协议\n    在ITU-T G.841中描述。",
+      "type": "语义分解",
+      "subject": ")两端的SnP_C 功能以同样的方式工作，监测VC-n缺陷，按缺陷状况和",
+      "action": "",
+      "operation": ")两端的SnP_C 功能以同样的方式工作，监测VC-n缺陷，按缺陷状况和外部倒换请求的优先次 序评估系统状态，并从适当的通路中选择信号。两个 SnP_C 功能通过面向比特的协议相互通 信，它在保护通道SnP_C 特征信息中的开销K3 字节中说明，如图111和图112所示，该协议 在ITU-T G.841中描述。",
+      "condition": "",
+      "constraint": "3)两端的SnP_C 功能以同样的方式工作，监测VC-n缺陷，按缺陷状况和外部倒换请求的优先次\n    序评估系统状态，并从适当的通路中选择信号。两个 SnP_C 功能通过面向比特的协议相互通\n    信，它在保护通道SnP_C 特征信息中的开销K3 字节中说明，如图111和图112所示，该协议\n    在ITU-T G.841中描述。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")两端的SnP_C 功能以同样的方式工作，监测VC-n缺陷，按缺陷状况和"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20322,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

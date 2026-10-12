@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014529",
+  "entities": [
+    {
+      "name": "拖延计时器主要用于对于信号的嵌套保护，通常是希望内层保护在外层保护之前完",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   拖延计时器主要用于对于信号的嵌套保护，通常是希望内层保护在外层保护之前完成。拖延计时器\n由保护组的SD/SF 条件触发运行，并且在运行时不可被重设。拖延计时器的取值在0s~10s 之间，可通\n过网管界面以100ms 或10ms 为步长进行调整。",
+      "type": "语义分解",
+      "subject": "拖延计时器主要用于对于信号的嵌套保护，通常是希望内层保护在外层保护之前完",
+      "action": "",
+      "operation": "拖延计时器主要用于对于信号的嵌套保护，通常是希望内层保护在外层保护之前完成。拖延计时器 由保护组的SD/SF 条件触发运行，并且在运行时不可被重设。拖延计时器的取值在0s~10s 之间，可通 过网管界面以100ms 或10ms 为步长进行调整。",
+      "condition": "",
+      "constraint": "   拖延计时器主要用于对于信号的嵌套保护，通常是希望内层保护在外层保护之前完成。拖延计时器\n由保护组的SD/SF 条件触发运行，并且在运行时不可被重设。拖延计时器的取值在0s~10s 之间，可通\n过网管界面以100ms 或10ms 为步长进行调整。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "拖延计时器主要用于对于信号的嵌套保护，通常是希望内层保护在外层保护之前完"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14529,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

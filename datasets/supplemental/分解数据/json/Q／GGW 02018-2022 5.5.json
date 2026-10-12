@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "5.5",
+  "entities": [
+    {
+      "name": "综合能耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5 综合能耗测算 将生产能耗 附属系统能耗和损耗测算结果相加确定综合能耗。",
+      "type": "语义分解",
+      "subject": "综合能耗",
+      "action": "",
+      "operation": "将三类能耗相加",
+      "condition": "",
+      "constraint": "生产能耗 附属系统能耗和损耗测算结果相加",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "综合能耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023332",
+  "entities": [
+    {
+      "name": "面积做的很小(如5Ω)是不可能的，为此建在山上的基站采用了均 衡大地电位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "面积做的很小(如5Ω)是不可能的，为此建在山上的基站采用了均\n衡大地电位，实施联合接地及改进地线的敷设方法，可以在雷击时\n使站内各处电位同样上升，以致局内设备相互间的冲击电压均衡，\n增加了雷电泄流能力。",
+      "type": "语义分解",
+      "subject": "面积做的很小(如5Ω)是不可能的，为此建在山上的基站采用了均 衡大地电位",
+      "action": "",
+      "operation": "面积做的很小(如5Ω)是不可能的，为此建在山上的基站采用了均 衡大地电位，实施联合接地及改进地线的敷设方法，可以在雷击时 使站内各处电位同样上升，以致局内设备相互间的冲击电压均衡， 增加了雷电泄流能力。",
+      "condition": "",
+      "constraint": "面积做的很小(如5Ω)是不可能的，为此建在山上的基站采用了均\n衡大地电位，实施联合接地及改进地线的敷设方法，可以在雷击时\n使站内各处电位同样上升，以致局内设备相互间的冲击电压均衡，\n增加了雷电泄流能力。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "面积做的很小(如5Ω)是不可能的，为此建在山上的基站采用了均 衡大地电位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23332,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

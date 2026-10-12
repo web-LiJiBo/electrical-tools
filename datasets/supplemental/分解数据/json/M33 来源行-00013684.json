@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013684",
+  "entities": [
+    {
+      "name": "OTUCn 可以通过带管理的多路OTU 接口 ( MOTUm) 用于相同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       OTUCn 可以通过带管理的多路OTU 接口 ( MOTUm) 用于相同管理域内的 OTN 设备组网，也可\n以通过SOTU 接口来互联不同管理域的OTN 设备。FlexO(Flex OTN)是一种用于SOTU接口的OTUCn\n\n光层互联接口应用。",
+      "type": "语义分解",
+      "subject": "OTUCn 可以通过带管理的多路OTU 接口 ( MOTUm) 用于相同",
+      "action": "",
+      "operation": "OTUCn 可以通过带管理的多路OTU 接口 ( MOTUm) 用于相同管理域内的 OTN 设备组网，也可 以通过SOTU 接口来互联不同管理域的OTN 设备。FlexO(Flex OTN)是一种用于SOTU接口的OTUCn 光层互联接口应用。",
+      "condition": "",
+      "constraint": "       OTUCn 可以通过带管理的多路OTU 接口 ( MOTUm) 用于相同管理域内的 OTN 设备组网，也可\n以通过SOTU 接口来互联不同管理域的OTN 设备。FlexO(Flex OTN)是一种用于SOTU接口的OTUCn\n\n光层互联接口应用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTUCn 可以通过带管理的多路OTU 接口 ( MOTUm) 用于相同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13684,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

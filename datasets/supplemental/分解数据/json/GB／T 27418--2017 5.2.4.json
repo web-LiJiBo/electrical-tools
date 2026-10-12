@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "5.2.4",
+  "entities": [
+    {
+      "name": "输入量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.4 如果测量两个输入量时采用了同一台测量仪器 ,实物测量标准或参考数据 ,并且它们具有较大 的标准不确定度,则两个输人量间就可能有显著的相关性。例如用某一温度计来确定输人量X;的估计 值的温度修正值 ,并用同一温度计来确定输入量X,的估计值的温度修正值 ,这两个输入量就可能显著 相关。然而 ,如果在这个例子中的 X;和X; 重新定义为不相关的量 ,而把确定温度计校准曲线的量作为 附加的输入量 .该附加输入量具有独立的标准不确定度 ,则此时 X;和X;的相关性就去除了(更多信息 见 D.1.2.3 和 D.1.2.4)。",
+      "type": "语义分解",
+      "subject": "输入量",
+      "action": "",
+      "operation": "识别共享仪器或标准引起的相关性",
+      "condition": "采用了同一台测量仪器",
+      "constraint": "可能有显著的相关性",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量损坏；共享仪器是可能相关，不能断言必然相关"
+      ]
+    }
+  }
+}

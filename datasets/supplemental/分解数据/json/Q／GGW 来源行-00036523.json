@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036523",
+  "entities": [
+    {
+      "name": "不可达密封点辨识",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4     不可达密封点辨识",
+      "type": "语义分解",
+      "subject": "不可达密封点辨识",
+      "action": "",
+      "operation": "不可达密封点辨识",
+      "condition": "",
+      "constraint": "5.4     不可达密封点辨识",
+      "constraint_role": "informational",
+      "related_entities": [
+        "不可达密封点辨识"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36523,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

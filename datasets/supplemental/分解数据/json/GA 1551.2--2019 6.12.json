@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第2部分:炼油与化工企业",
+  "standard_id": "GA 1551.2--2019",
+  "version": "2019",
+  "chapter_path": "6.12",
+  "entities": [
+    {
+      "name": "放射易制爆存放场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12 放射源存放场所 ,易制爆危险化学品储存场所的治安反恐防范,除执行本标准外,还应按 GA 1002,GA 1511的规定执行。",
+      "type": "语义分解",
+      "subject": "放射易制爆存放场所",
+      "action": "",
+      "operation": "同时执行引用防范标准",
+      "condition": "",
+      "constraint": "6.12 放射源存放场所 ,易制爆危险化学品储存场所的治安反恐防范,除执行本标准外,还应按 GA 1002,GA 1511的规定执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "放射易制爆存放场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5612,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

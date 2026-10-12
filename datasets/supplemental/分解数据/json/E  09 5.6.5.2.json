@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.6.5.2",
+  "entities": [
+    {
+      "name": "审核不符合项",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.5.2        生产经营单位应对审核报告提出的不符合项进行整改。",
+      "type": "语义分解",
+      "subject": "审核不符合项",
+      "action": "",
+      "operation": "生产单位整改",
+      "condition": "",
+      "constraint": "5.6.5.2        生产经营单位应对审核报告提出的不符合项进行整改。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "审核不符合项"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27478,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

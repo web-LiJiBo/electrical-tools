@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046306",
+  "entities": [
+    {
+      "name": "E.1.1 应在被测管段上均匀分布测量截面，在每个截面上布设 测点，采用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E.1.1    应在被测管段上均匀分布测量截面，在每个截面上布设\n测点，采用超声波测厚仪进行测量。",
+      "type": "语义分解",
+      "subject": "E.1.1 应在被测管段上均匀分布测量截面，在每个截面上布设 测点，采用",
+      "action": "",
+      "operation": "E.1.1 应在被测管段上均匀分布测量截面，在每个截面上布设 测点，采用超声波测厚仪进行测量。",
+      "condition": "",
+      "constraint": "E.1.1    应在被测管段上均匀分布测量截面，在每个截面上布设\n测点，采用超声波测厚仪进行测量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E.1.1 应在被测管段上均匀分布测量截面，在每个截面上布设 测点，采用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46306,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

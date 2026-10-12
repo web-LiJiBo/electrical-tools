@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "7.5.3",
+  "entities": [
+    {
+      "name": "TDM网元SS及SDB",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.3 所有 TDM 网元、软交换机 SS以及SDB 均需要分配信令\n点编码，具体格式应符合7.5.1和7.5.2要求。",
+      "type": "语义分解",
+      "subject": "TDM网元SS及SDB",
+      "action": "",
+      "operation": "分信令点编码格式按7.5.1及7.5.2",
+      "condition": "",
+      "constraint": "7.5.3 所有 TDM 网元、软交换机 SS以及SDB 均需要分配信令\n点编码，具体格式应符合7.5.1和7.5.2要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "TDM网元SS及SDB"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25995,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

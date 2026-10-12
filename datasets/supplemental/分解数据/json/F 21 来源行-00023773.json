@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023773",
+  "entities": [
+    {
+      "name": "a) 基于话务统计数据和设备运行状态的分析 ,通过人机命令预定或即时执行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a)    基于话务统计数据和设备运行状态的分析 ,通过人机命令预定或即时执行话务控制命令 ,遏制\n       超量话务对网络冲击 ;",
+      "type": "语义分解",
+      "subject": "a) 基于话务统计数据和设备运行状态的分析 ,通过人机命令预定或即时执行",
+      "action": "",
+      "operation": "a) 基于话务统计数据和设备运行状态的分析 ,通过人机命令预定或即时执行话务控制命令 ,遏制 超量话务对网络冲击",
+      "condition": "",
+      "constraint": "a)    基于话务统计数据和设备运行状态的分析 ,通过人机命令预定或即时执行话务控制命令 ,遏制\n       超量话务对网络冲击 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 基于话务统计数据和设备运行状态的分析 ,通过人机命令预定或即时执行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23773,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

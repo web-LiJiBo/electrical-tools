@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "3.3.4",
+  "entities": [
+    {
+      "name": "本条目的是针对有独立阴极保护系统的并行管道而言，如 果两条并行管道采用同",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.4   本条目的是针对有独立阴极保护系统的并行管道而言，如\n果两条并行管道采用同一个阴极保护系统，则可不实施电绝缘。",
+      "type": "语义分解",
+      "subject": "本条目的是针对有独立阴极保护系统的并行管道而言，如 果两条并行管道采用同",
+      "action": "",
+      "operation": "本条目的是针对有独立阴极保护系统的并行管道而言，如 果两条并行管道采用同一个阴极保护系统，则可不实施电绝缘。",
+      "condition": "",
+      "constraint": "3.3.4   本条目的是针对有独立阴极保护系统的并行管道而言，如\n果两条并行管道采用同一个阴极保护系统，则可不实施电绝缘。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条目的是针对有独立阴极保护系统的并行管道而言，如 果两条并行管道采用同"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44527,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

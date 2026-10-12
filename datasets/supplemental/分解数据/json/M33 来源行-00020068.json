@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020068",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "Sn_CI_Data\nSn_CI_Clock\nSn_CI_FrameStart\nSn_CI_SSF\nSns_TT_Sk_MI_TPmode\nSns_TT_Sk_MI_ExTI\nSns_TT_Sk_MI_RDI_Reported\nSns_TT_Sk_MI_SSF_Reported\nSns_TT_Sk_MI_DEGTHR\nSns_TT_Sk_MI_DEGM\nSns_TT_Sk_MI_EXC_X\nSns_TT_Sk_MI_DEG_X\nSns_TT_Sk_MI_1second\nSns_TT_Sk_MI_TIMdis\tSn_AI_TSF\nSn_A_TSD\nSn_RI_RDI\nSn_RI_REI\nSns_TT_Sk_MI_cTIM\nSns_TT_Sk_MI_oUNEQ\nSns_TT_Sk_MI_cDEG\nSns_TT_Sk_MI_cEXC\nSns_TT_Sk_MI_cRDI\nSns_TT_Sk_MI_cSSF\nSns_TT_Sk_MI_AcTI\nSns_TT_Sk_MIpN_EBC\nSns_TT_Sk_MI_pF_EBC\nSns_TT_Sk_MI_pN_DS\nSns_TT_Sk_MI_pF_DS",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "Sn_CI_Data\nSn_CI_Clock\nSn_CI_FrameStart\nSn_CI_SSF\nSns_TT_Sk_MI_TPmode\nSns_TT_Sk_MI_ExTI\nSns_TT_Sk_MI_RDI_Reported\nSns_TT_Sk_MI_SSF_Reported\nSns_TT_Sk_MI_DEGTHR\nSns_TT_Sk_MI_DEGM\nSns_TT_Sk_MI_EXC_X\nSns_TT_Sk_MI_DEG_X\nSns_TT_Sk_MI_1second\nSns_TT_Sk_MI_TIMdis\tSn_AI_TSF\nSn_A_TSD\nSn_RI_RDI\nSn_RI_REI\nSns_TT_Sk_MI_cTIM\nSns_TT_Sk_MI_oUNEQ\nSns_TT_Sk_MI_cDEG\nSns_TT_Sk_MI_cEXC\nSns_TT_Sk_MI_cRDI\nSns_TT_Sk_MI_cSSF\nSns_TT_Sk_MI_AcTI\nSns_TT_Sk_MIpN_EBC\nSns_TT_Sk_MI_pF_EBC\nSns_TT_Sk_MI_pN_DS\nSns_TT_Sk_MI_pF_DS",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20068,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

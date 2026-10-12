@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043849",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A．8. 1 .2. 10  硫酸亚铁铵溶液(60 g/L,使用时配制）：称取 6 g 硫酸亚铁铵[(NH4)2 Fe(SO4)2 ·6H2 O]\n溶解于 80 mL水中，加 6 滴硫酸(A. 8 . 1 . 2 . 5)至溶液澄清透明，过滤，用水稀释至 100 mL,混匀。\nA．8 . 1 . 2 . 1 1     硅标准储存溶液：称取 0 . 534 9 g 二氧化硅（二氧化硅的质量分数不小于 99 . 95%) ,置于已\n盛有 4 g 无水碳酸钠(A. 8 . 1 . 2 . 1) 的铂坩埚中，上面再覆盖 1 g~2 g 无水碳酸钠(A. 8 . 1 . 2 . 1) , 将铂坩埚置\n于马弗炉中逐渐升温至 950 ℃ 熔融至透明，继续加热熔融 3  min,取出冷却，用盛有温水的银质（或塑\n料）烧杯浸出熔块至完全溶解，用水冲净坩埚，冷却至室温，移入 500 mL容量瓶中，用水稀释至刻度，混\n匀 。  溶液贮于塑料瓶中。  此溶液 1 mL含 0 . 5 mg 硅 。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "A．8. 1 .2. 10  硫酸亚铁铵溶液(60 g/L,使用时配制）：称取 6 g 硫酸亚铁铵[(NH4)2 Fe(SO4)2 ·6H2 O]\n溶解于 80 mL水中，加 6 滴硫酸(A. 8 . 1 . 2 . 5)至溶液澄清透明，过滤，用水稀释至 100 mL,混匀。\nA．8 . 1 . 2 . 1 1     硅标准储存溶液：称取 0 . 534 9 g 二氧化硅（二氧化硅的质量分数不小于 99 . 95%) ,置于已\n盛有 4 g 无水碳酸钠(A. 8 . 1 . 2 . 1) 的铂坩埚中，上面再覆盖 1 g~2 g 无水碳酸钠(A. 8 . 1 . 2 . 1) , 将铂坩埚置\n于马弗炉中逐渐升温至 950 ℃ 熔融至透明，继续加热熔融 3  min,取出冷却，用盛有温水的银质（或塑\n料）烧杯浸出熔块至完全溶解，用水冲净坩埚，冷却至室温，移入 500 mL容量瓶中，用水稀释至刻度，混\n匀 。  溶液贮于塑料瓶中。  此溶液 1 mL含 0 . 5 mg 硅 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43849,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

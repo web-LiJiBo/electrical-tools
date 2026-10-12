@@ -1,0 +1,41 @@
+{
+  "standard_name": "z  60",
+  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+  "version": "",
+  "chapter_path": "31",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "31\t沥 青 烟\t280\n(吹制沥青)\t12\n20\n30\n40\n20\n60\n70\n80\t0 . 11\n0 . 19\n0 . 82\n1 . 4\n2 . 2\n3 . 0\n4 . 2\n6 . 2\t0 . 22\n0 . 36\n1 . 6\n2 . 8\n4 . 3\n2 . 9\n8 . 7\n12\t0 . 34\n0 . 22\n2 . 4\n4 . 2\n6 . 6\n9 . 0\n13\n18\t生产设备不得有明显\n无组织排放存在",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "31\t沥 青 烟\t280\n(吹制沥青)\t12\n20\n30\n40\n20\n60\n70\n80\t0 . 11\n0 . 19\n0 . 82\n1 . 4\n2 . 2\n3 . 0\n4 . 2\n6 . 2\t0 . 22\n0 . 36\n1 . 6\n2 . 8\n4 . 3\n2 . 9\n8 . 7\n12\t0 . 34\n0 . 22\n2 . 4\n4 . 2\n6 . 6\n9 . 0\n13\n18\t生产设备不得有明显\n无组织排放存在",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32498,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

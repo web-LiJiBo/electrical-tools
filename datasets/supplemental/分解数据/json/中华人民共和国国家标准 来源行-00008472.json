@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008472",
+  "entities": [
+    {
+      "name": "在倒换测试过程中，可采用光纤阻断(通过拔纤实现)或网 管设置方式触发倒换",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4       在倒换测试过程中，可采用光纤阻断(通过拔纤实现)或网\n管设置方式触发倒换。由于拔纤方式测试的中断业务时间包含设\n备的请求倒换时间，实测值超过指标要求时应采用网管设置方式\n加以验证。",
+      "type": "语义分解",
+      "subject": "在倒换测试过程中，可采用光纤阻断(通过拔纤实现)或网 管设置方式触发倒换",
+      "action": "",
+      "operation": "在倒换测试过程中，可采用光纤阻断(通过拔纤实现)或网 管设置方式触发倒换。由于拔纤方式测试的中断业务时间包含设 备的请求倒换时间，实测值超过指标要求时应采用网管设置方式 加以验证。",
+      "condition": "",
+      "constraint": "5.1.4       在倒换测试过程中，可采用光纤阻断(通过拔纤实现)或网\n管设置方式触发倒换。由于拔纤方式测试的中断业务时间包含设\n备的请求倒换时间，实测值超过指标要求时应采用网管设置方式\n加以验证。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在倒换测试过程中，可采用光纤阻断(通过拔纤实现)或网 管设置方式触发倒换"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8472,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

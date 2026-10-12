@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035034",
+  "entities": [
+    {
+      "name": ". 1 关上电动机 ,取出温度计 ,将氧弹从量热器中取出 ,缓慢地打开排",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.7. 1   关上电动机 ,取出温度计 ,将氧弹从量热器中取出 ,缓慢地打开排气阀 ,并以均匀的速度放出弹\n中的气体 ,放气过程不少于 1 min。  然后打开和取下氧弹的盖 ,检查氧弹内部燃烧是否完全 , 如发现有\n未燃烧的样品或油烟沉积物 ,则该试验作废 。\n9.7.2   用蒸馏水洗涤氧弹内部 、小皿及排气阀 。",
+      "type": "语义分解",
+      "subject": ". 1 关上电动机 ,取出温度计 ,将氧弹从量热器中取出 ,缓慢地打开排",
+      "action": "",
+      "operation": ". 1 关上电动机 ,取出温度计 ,将氧弹从量热器中取出 ,缓慢地打开排气阀 ,并以均匀的速度放出弹 中的气体 ,放气过程不少于 1 min。 然后打开和取下氧弹的盖 ,检查氧弹内部燃烧是否完全 , 如发现有 未燃烧的样品或油烟沉积物 ,则该试验作废 。 9.7.2 用蒸馏水洗涤氧弹内部 、小皿及排气阀 。",
+      "condition": "",
+      "constraint": "9.7. 1   关上电动机 ,取出温度计 ,将氧弹从量热器中取出 ,缓慢地打开排气阀 ,并以均匀的速度放出弹\n中的气体 ,放气过程不少于 1 min。  然后打开和取下氧弹的盖 ,检查氧弹内部燃烧是否完全 , 如发现有\n未燃烧的样品或油烟沉积物 ,则该试验作废 。\n9.7.2   用蒸馏水洗涤氧弹内部 、小皿及排气阀 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 关上电动机 ,取出温度计 ,将氧弹从量热器中取出 ,缓慢地打开排"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35034,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040166",
+  "entities": [
+    {
+      "name": "在开停车、检修、生产过程中可能产生含可燃、有毒、污染 性液体泄漏及漫流的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.4      在开停车、检修、生产过程中可能产生含可燃、有毒、污染\n性液体泄漏及漫流的装置单元周围应设置围堰或环沟，并应符合\n下列规定：",
+      "type": "语义分解",
+      "subject": "在开停车、检修、生产过程中可能产生含可燃、有毒、污染 性液体泄漏及漫流的",
+      "action": "",
+      "operation": "在开停车、检修、生产过程中可能产生含可燃、有毒、污染 性液体泄漏及漫流的装置单元周围应设置围堰或环沟，并应符合 下列规定",
+      "condition": "",
+      "constraint": "6.6.4      在开停车、检修、生产过程中可能产生含可燃、有毒、污染\n性液体泄漏及漫流的装置单元周围应设置围堰或环沟，并应符合\n下列规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在开停车、检修、生产过程中可能产生含可燃、有毒、污染 性液体泄漏及漫流的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40166,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

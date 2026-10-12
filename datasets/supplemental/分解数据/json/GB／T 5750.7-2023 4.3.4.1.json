@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "4.3.4.1",
+  "entities": [
+    {
+      "name": "指数测定仪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4.1 高锰酸盐指数测定仪: 恒温消解器:具备自动恒温加热 ,可设置消解温度和消解时间的功能; b) 消解管:耐酸玻璃制成,耐高压(在165 %C下能承受600 kPa 的压力) ; 光光度计=",
+      "type": "语义分解",
+      "subject": "指数测定仪",
+      "action": "",
+      "operation": "配可设温时恒温消解器耐酸耐压消解管及光度计",
+      "condition": "",
+      "constraint": "4.3.4.1 高锰酸盐指数测定仪: 恒温消解器:具备自动恒温加热 ,可设置消解温度和消解时间的功能; b) 消解管:耐酸玻璃制成,耐高压(在165 %C下能承受600 kPa 的压力) ; 光光度计=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指数测定仪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1695,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温度单位及仪器名称识别异常"
+      ]
+    }
+  }
+}

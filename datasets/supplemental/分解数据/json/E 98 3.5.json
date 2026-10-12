@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "3.5",
+  "entities": [
+    {
+      "name": "原始条款记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5",
+      "type": "语义分解",
+      "subject": "原始条款记录",
+      "action": "",
+      "operation": "仅保留标题或术语；具体要求须结合相邻正文",
+      "condition": "",
+      "constraint": "3.5",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始条款记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42442,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似标题或术语，不能单独作为判定依据"
+      ]
+    }
+  }
+}

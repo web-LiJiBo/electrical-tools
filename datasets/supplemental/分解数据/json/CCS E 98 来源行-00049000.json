@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00049000",
+  "entities": [
+    {
+      "name": "实际管道上的交流腐蚀坑一般为圆形，若采用过于细长 的交流腐蚀试片来评价交",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1   实际管道上的交流腐蚀坑一般为圆形，若采用过于细长\n的交流腐蚀试片来评价交流腐蚀风险时，其接地电阻倾向于小\n于同等面积的圆形试片，导致测量的交直流密度偏大。",
+      "type": "语义分解",
+      "subject": "实际管道上的交流腐蚀坑一般为圆形，若采用过于细长 的交流腐蚀试片来评价交",
+      "action": "",
+      "operation": "实际管道上的交流腐蚀坑一般为圆形，若采用过于细长 的交流腐蚀试片来评价交流腐蚀风险时，其接地电阻倾向于小 于同等面积的圆形试片，导致测量的交直流密度偏大。",
+      "condition": "",
+      "constraint": "      1   实际管道上的交流腐蚀坑一般为圆形，若采用过于细长\n的交流腐蚀试片来评价交流腐蚀风险时，其接地电阻倾向于小\n于同等面积的圆形试片，导致测量的交直流密度偏大。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实际管道上的交流腐蚀坑一般为圆形，若采用过于细长 的交流腐蚀试片来评价交"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49000,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

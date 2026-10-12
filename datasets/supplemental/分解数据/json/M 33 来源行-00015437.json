@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015437",
+  "entities": [
+    {
+      "name": "d)OTN分析仪向被测设备发送PM-STAT为“101”码，观察被测设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      d)OTN分析仪向被测设备发送PM-STAT为“101”码，观察被测设备网管是否上报PM  ODUk-LCK\n维护状态，同时OTN 分析仪是否显示PM-BDI告警。",
+      "type": "语义分解",
+      "subject": "d)OTN分析仪向被测设备发送PM-STAT为“101”码，观察被测设备",
+      "action": "",
+      "operation": "d)OTN分析仪向被测设备发送PM-STAT为“101”码，观察被测设备网管是否上报PM ODUk-LCK 维护状态，同时OTN 分析仪是否显示PM-BDI告警。",
+      "condition": "",
+      "constraint": "      d)OTN分析仪向被测设备发送PM-STAT为“101”码，观察被测设备网管是否上报PM  ODUk-LCK\n维护状态，同时OTN 分析仪是否显示PM-BDI告警。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d)OTN分析仪向被测设备发送PM-STAT为“101”码，观察被测设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15437,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

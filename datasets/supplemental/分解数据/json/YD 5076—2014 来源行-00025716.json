@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025716",
+  "entities": [
+    {
+      "name": "根据网络规模、业务流量流向，考虑网络安全，按技术经济原 则划分长途交换区",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   根据网络规模、业务流量流向，考虑网络安全，按技术经济原\n则划分长途交换区和本地网范围。 一个省、自治区、直辖市的范围\n不宜划分为一个以上的一级长途交换区， 一个地市级的区域范围\n\n不宜划分为一个以上的本地网。",
+      "type": "语义分解",
+      "subject": "根据网络规模、业务流量流向，考虑网络安全，按技术经济原 则划分长途交换区",
+      "action": "",
+      "operation": "根据网络规模、业务流量流向，考虑网络安全，按技术经济原 则划分长途交换区和本地网范围。 一个省、自治区、直辖市的范围 不宜划分为一个以上的一级长途交换区， 一个地市级的区域范围 不宜划分为一个以上的本地网。",
+      "condition": "",
+      "constraint": "   根据网络规模、业务流量流向，考虑网络安全，按技术经济原\n则划分长途交换区和本地网范围。 一个省、自治区、直辖市的范围\n不宜划分为一个以上的一级长途交换区， 一个地市级的区域范围\n\n不宜划分为一个以上的本地网。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据网络规模、业务流量流向，考虑网络安全，按技术经济原 则划分长途交换区"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25716,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

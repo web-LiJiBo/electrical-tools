@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "13.3.3.10",
+  "entities": [
+    {
+      "name": "亚甲基蓝储备液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "13.3.3.10 亚甲基蓝储备溶液(2 g/L):称取0.2 g三水合亚甲基蓝(C16H18N3ClS·3H2O)，溶于50 mL无水乙醇(C2H5OH)，充分溶解后用纯水稀释至100 mL。超声10 min确保充分溶解后，过0.22 μm微孔滤膜，储存于棕色试剂瓶中，于0 ℃～4 ℃冷藏可保存30 d。",
+      "type": "语义分解",
+      "subject": "亚甲基蓝储备液",
+      "action": "",
+      "operation": "乙醇溶解稀释超声过滤棕瓶零至四度冷藏三十天",
+      "condition": "",
+      "constraint": "13.3.3.10 亚甲基蓝储备溶液(2 g/L):称取0.2 g三水合亚甲基蓝(C16H18N3ClS·3H2O)，溶于50 mL无水乙醇(C2H5OH)，充分溶解后用纯水稀释至100 mL。超声10 min确保充分溶解后，过0.22 μm微孔滤膜，储存于棕色试剂瓶中，于0 ℃～4 ℃冷藏可保存30 d。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "亚甲基蓝储备液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1583,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

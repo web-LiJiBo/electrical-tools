@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034558",
+  "entities": [
+    {
+      "name": "应采用以上对监测详述的相同条件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "应采用以上对监测详述的相同条件。  监测和基准测量的位置可以不需要相同。\n初始测量时 ’可横向移动测量点 ’以确定有代表性的监测点的位置。\n图 6 示出监测和基准测量装置的布置。",
+      "type": "语义分解",
+      "subject": "应采用以上对监测详述的相同条件",
+      "action": "",
+      "operation": "应采用以上对监测详述的相同条件。 监测和基准测量的位置可以不需要相同。 初始测量时 ’可横向移动测量点 ’以确定有代表性的监测点的位置。 图 6 示出监测和基准测量装置的布置。",
+      "condition": "",
+      "constraint": "应采用以上对监测详述的相同条件。  监测和基准测量的位置可以不需要相同。\n初始测量时 ’可横向移动测量点 ’以确定有代表性的监测点的位置。\n图 6 示出监测和基准测量装置的布置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应采用以上对监测详述的相同条件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34558,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

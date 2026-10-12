@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "5.6.2",
+  "entities": [
+    {
+      "name": "工程竣工文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.2 施工单位应根据深化设计图纸、图纸会审记录、设计变更、工程洽商等文件编制竣工文件。竣工文件应完整齐全、准确真实、签章完备，应与施工内容一致。",
+      "type": "语义分解",
+      "subject": "工程竣工文件",
+      "action": "",
+      "operation": "完整真实签章完备与施工一致",
+      "condition": "",
+      "constraint": "5.6.2 施工单位应根据深化设计图纸、图纸会审记录、设计变更、工程洽商等文件编制竣工文件。竣工文件应完整齐全、准确真实、签章完备，应与施工内容一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程竣工文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6931,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

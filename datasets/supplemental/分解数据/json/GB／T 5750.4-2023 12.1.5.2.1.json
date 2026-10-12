@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.1.5.2.1",
+  "entities": [
+    {
+      "name": "挥发酚标准系列",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.1.5.2.1 将水样馏出液全部转入500 mL分液漏斗中，另取酚标准使用溶液0 mL，0.50 mL，1.00 mL，2.00 mL，4.00 mL，6.00 mL，8.00 mL和10.00 mL，分别置于预先盛有100 mL纯水的500 mL分液漏斗内，最后补加纯水至250 mL。",
+      "type": "语义分解",
+      "subject": "挥发酚标准系列",
+      "action": "",
+      "operation": "按八个标准液体积于分液漏斗补水至二百五十毫升",
+      "condition": "",
+      "constraint": "12.1.5.2.1 将水样馏出液全部转入500 mL分液漏斗中，另取酚标准使用溶液0 mL，0.50 mL，1.00 mL，2.00 mL，4.00 mL，6.00 mL，8.00 mL和10.00 mL，分别置于预先盛有100 mL纯水的500 mL分液漏斗内，最后补加纯水至250 mL。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发酚标准系列"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1465,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

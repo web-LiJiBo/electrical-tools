@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036092",
+  "entities": [
+    {
+      "name": "a) 以国家或地方政府部门公开发布的温室气体排放强度基准值或标准、统计数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   a)      以国家或地方政府部门公开发布的温室气体排放强度基准值或标准、统计数据核算结果作为\n     评价依据，评价建设项目温室气体排放水平；评价指标无法获取相应基准值或标准值时，可\n     暂时不评价，待相关部门颁布相应基准值或标准值后进行对比；",
+      "type": "语义分解",
+      "subject": "a) 以国家或地方政府部门公开发布的温室气体排放强度基准值或标准、统计数",
+      "action": "",
+      "operation": "a) 以国家或地方政府部门公开发布的温室气体排放强度基准值或标准、统计数据核算结果作为 评价依据，评价建设项目温室气体排放水平；评价指标无法获取相应基准值或标准值时，可 暂时不评价，待相关部门颁布相应基准值或标准值后进行对比",
+      "condition": "",
+      "constraint": "   a)      以国家或地方政府部门公开发布的温室气体排放强度基准值或标准、统计数据核算结果作为\n     评价依据，评价建设项目温室气体排放水平；评价指标无法获取相应基准值或标准值时，可\n     暂时不评价，待相关部门颁布相应基准值或标准值后进行对比；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 以国家或地方政府部门公开发布的温室气体排放强度基准值或标准、统计数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36092,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

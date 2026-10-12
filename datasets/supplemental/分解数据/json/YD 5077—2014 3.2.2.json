@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.2.2",
+  "entities": [
+    {
+      "name": "机房消防装修",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.2.2      机房内必须配备有效的灭火消防器材。凡要求设置的火\n灾自动报警系统和灭火系统，必须保持性能良好。\n3.2.3      机房室内装修材料应采用非燃烧材料。",
+      "type": "语义分解",
+      "subject": "机房消防装修",
+      "action": "",
+      "operation": "有效器材要求配置的自动火警灭火系统性能好装修非燃材料",
+      "condition": "",
+      "constraint": "3.2.2      机房内必须配备有效的灭火消防器材。凡要求设置的火\n灾自动报警系统和灭火系统，必须保持性能良好。\n3.2.3      机房室内装修材料应采用非燃烧材料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房消防装修"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26686,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含3.2.2及3.2.3"
+      ]
+    }
+  }
+}

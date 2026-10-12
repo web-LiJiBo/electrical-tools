@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00040695",
+  "entities": [
+    {
+      "name": "水土流失调查的内容应主要包括水土流失的类型、分布、强度及危害",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    水土流失调查的内容应主要包括水土流失的类型、分布、强度及危害。水土流失评价应主要包括干\n扰区域所涉及水土保持敏感区及水土流失类型区，评价水土流失的主要类型、强度分布及危害程度，宜\n依据SL   717开展评价工作。",
+      "type": "语义分解",
+      "subject": "水土流失调查的内容应主要包括水土流失的类型、分布、强度及危害",
+      "action": "",
+      "operation": "水土流失调查的内容应主要包括水土流失的类型、分布、强度及危害。水土流失评价应主要包括干 扰区域所涉及水土保持敏感区及水土流失类型区，评价水土流失的主要类型、强度分布及危害程度，宜 依据SL 717开展评价工作。",
+      "condition": "",
+      "constraint": "    水土流失调查的内容应主要包括水土流失的类型、分布、强度及危害。水土流失评价应主要包括干\n扰区域所涉及水土保持敏感区及水土流失类型区，评价水土流失的主要类型、强度分布及危害程度，宜\n依据SL   717开展评价工作。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "水土流失调查的内容应主要包括水土流失的类型、分布、强度及危害"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40695,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

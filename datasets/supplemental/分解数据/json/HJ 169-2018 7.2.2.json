@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "危险物质识别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2 物质危险性识别 按附录 B  识别出的危险物质。以图表的方式给出其易燃易爆 有毒有害危险特性。明确危险物质的分布。",
+      "type": "语义分解",
+      "subject": "危险物质识别",
+      "action": "",
+      "operation": "按附录图表特性及分布",
+      "condition": "",
+      "constraint": "7.2.2 物质危险性识别 按附录 B  识别出的危险物质。以图表的方式给出其易燃易爆 有毒有害危险特性。明确危险物质的分布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "危险物质识别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2474,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺附录B"
+      ]
+    }
+  }
+}

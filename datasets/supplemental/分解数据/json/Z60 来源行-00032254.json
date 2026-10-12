@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032254",
+  "entities": [
+    {
+      "name": "锅炉烟气在温度为273.15 K, 压力为101325 Pa 时的状态，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   锅炉烟气在温度为273.15 K,  压力为101325 Pa 时的状态，简称“标态”。本标准规定的排放质量\n浓度均指标准状态下千烟气中的数值。\n3.6",
+      "type": "语义分解",
+      "subject": "锅炉烟气在温度为273.15 K, 压力为101325 Pa 时的状态，",
+      "action": "",
+      "operation": "锅炉烟气在温度为273.15 K, 压力为101325 Pa 时的状态，简称“标态”。本标准规定的排放质量 浓度均指标准状态下千烟气中的数值。 3.6",
+      "condition": "",
+      "constraint": "   锅炉烟气在温度为273.15 K,  压力为101325 Pa 时的状态，简称“标态”。本标准规定的排放质量\n浓度均指标准状态下千烟气中的数值。\n3.6",
+      "constraint_role": "informational",
+      "related_entities": [
+        "锅炉烟气在温度为273.15 K, 压力为101325 Pa 时的状态，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32254,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

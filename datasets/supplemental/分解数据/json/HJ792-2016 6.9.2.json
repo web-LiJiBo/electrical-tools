@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.9.2",
+  "entities": [
+    {
+      "name": "制药风险措施评述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9.2 评述工程现有环境风险防范措施与应急预案的针对和可操作性。环境风险应急预案的演练情况。评述截流措施、事故排水收集措施、事故性排放去向、清下水系统防控措施、雨排水和生产废水处理风险防控措施;",
+      "type": "语义分解",
+      "subject": "制药风险措施评述",
+      "action": "",
+      "operation": "评针对可操作演练截流事故水去向雨污清水防控",
+      "condition": "",
+      "constraint": "6.9.2 评述工程现有环境风险防范措施与应急预案的针对和可操作性。环境风险应急预案的演练情况。评述截流措施、事故排水收集措施、事故性排放去向、清下水系统防控措施、雨排水和生产废水处理风险防控措施;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "制药风险措施评述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2778,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.5.8",
+  "entities": [
+    {
+      "name": "计算机网络信号SPD",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.5.8      计算机网络及各类信号线防雷器的设置和选择应符合表\n9.5.8的规定。",
+      "type": "语义分解",
+      "subject": "计算机网络信号SPD",
+      "action": "",
+      "operation": "按表9.5.8设置选型",
+      "condition": "",
+      "constraint": "9.5.8      计算机网络及各类信号线防雷器的设置和选择应符合表\n9.5.8的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "计算机网络信号SPD"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22969,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表数据缺失"
+      ]
+    }
+  }
+}

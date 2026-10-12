@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027657",
+  "entities": [
+    {
+      "name": "— 管道泄漏监测报警系统、管道探管仪、管道检漏仪、火焰探测器、固定式可燃",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "— 管道泄漏监测报警系统、管道探管仪、管道检漏仪、火焰探测器、固定式可燃气体探测仪、便携\n\n 式可燃(有毒)气体探测仪、各类消防设施、通讯设施等必需的安全设备设施及附件。",
+      "type": "语义分解",
+      "subject": "— 管道泄漏监测报警系统、管道探管仪、管道检漏仪、火焰探测器、固定式可燃",
+      "action": "",
+      "operation": "— 管道泄漏监测报警系统、管道探管仪、管道检漏仪、火焰探测器、固定式可燃气体探测仪、便携 式可燃(有毒)气体探测仪、各类消防设施、通讯设施等必需的安全设备设施及附件。",
+      "condition": "",
+      "constraint": "— 管道泄漏监测报警系统、管道探管仪、管道检漏仪、火焰探测器、固定式可燃气体探测仪、便携\n\n 式可燃(有毒)气体探测仪、各类消防设施、通讯设施等必需的安全设备设施及附件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "— 管道泄漏监测报警系统、管道探管仪、管道检漏仪、火焰探测器、固定式可燃"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27657,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

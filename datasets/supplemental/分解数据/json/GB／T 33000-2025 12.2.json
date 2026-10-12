@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "12.2",
+  "entities": [
+    {
+      "name": "绩效评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2 绩效评价 企业应明确安全生产绩效评价的内容、周期、方式和结果应用等要求。安全生产绩效评价内容至少包含目标完成情况、全员安全生产责任制落实情况、安全风险分级管控与事故隐患排查治理情况、应急准备与处置情况。企业应采用定性与定量、过程与结果相结合的方式开展安全生产绩效评价，公布评价结果。企业宜设置安全生产奖励资金，对安全生产活动中表现突出的个人、单位进行表彰奖励。",
+      "type": "语义分解",
+      "subject": "绩效评价",
+      "action": "",
+      "operation": "明确周期方式应用目标责任控险治患应急定量性过程结果公布宜奖励",
+      "condition": "",
+      "constraint": "12.2 绩效评价 企业应明确安全生产绩效评价的内容、周期、方式和结果应用等要求。安全生产绩效评价内容至少包含目标完成情况、全员安全生产责任制落实情况、安全风险分级管控与事故隐患排查治理情况、应急准备与处置情况。企业应采用定性与定量、过程与结果相结合的方式开展安全生产绩效评价，公布评价结果。企业宜设置安全生产奖励资金，对安全生产活动中表现突出的个人、单位进行表彰奖励。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "绩效评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7291,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

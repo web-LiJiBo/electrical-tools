@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "厂界噪声监测资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 厂界环境噪声监测资料搜集 搜集的资料主要包括以下内容。 a) 监测单位基本情况: 监测单位的名称 性质和建设时间; 单位平面布置图 标出基本方位; 储罐。泵房和其他主要建筑物的位置 名称和尺寸; 单位周界围墙的高度和性质等。 b) 单位周界外的情况: 单位所处位置声环境功能区; 周边噪声敏感建筑物,并标于单位平面布 置图中。 c) 被测噪声源的基本情况: 产生噪声的设备和装置及其生产运行的周期和频次; 单位噪声源的 控制技术措施等。 d) 己有的厂界环境噪声监测数据和资料。",
+      "type": "语义分解",
+      "subject": "厂界噪声监测资料",
+      "action": "",
+      "operation": "搜集单位功能区噪声源历史监测",
+      "condition": "",
+      "constraint": "5.1.4 厂界环境噪声监测资料搜集 搜集的资料主要包括以下内容。 a) 监测单位基本情况: 监测单位的名称 性质和建设时间; 单位平面布置图 标出基本方位; 储罐。泵房和其他主要建筑物的位置 名称和尺寸; 单位周界围墙的高度和性质等。 b) 单位周界外的情况: 单位所处位置声环境功能区; 周边噪声敏感建筑物,并标于单位平面布 置图中。 c) 被测噪声源的基本情况: 产生噪声的设备和装置及其生产运行的周期和频次; 单位噪声源的 控制技术措施等。 d) 己有的厂界环境噪声监测数据和资料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "厂界噪声监测资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 429,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

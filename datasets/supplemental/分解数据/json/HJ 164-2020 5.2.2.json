@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "5.2.2",
+  "entities": [
+    {
+      "name": "地下水井筛选方法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2 现有地下水井的筛选方法 以调查。走访的方式,充分调研。收集监测区域的地质,水文地质资料;  收集区域内监测井数量及类型。钻探。成井等资料;  初步确定待筛迭的监测井。 对初步确定的待筛选监测井迸行现场踏勘,获取备选监测井的水位。井深。出水量以及现场的其他有关信息。",
+      "type": "语义分解",
+      "subject": "地下水井筛选方法",
+      "action": "",
+      "operation": "调查收集地质井资料初选后踏勘获水位井深出水量信息",
+      "condition": "",
+      "constraint": "5.2.2 现有地下水井的筛选方法 以调查。走访的方式,充分调研。收集监测区域的地质,水文地质资料;  收集区域内监测井数量及类型。钻探。成井等资料;  初步确定待筛迭的监测井。 对初步确定的待筛选监测井迸行现场踏勘,获取备选监测井的水位。井深。出水量以及现场的其他有关信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水井筛选方法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2069,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

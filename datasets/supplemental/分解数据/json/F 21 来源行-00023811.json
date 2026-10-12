@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 29.240. 01",
+  "standard_id": "F 21",
+  "version": "",
+  "chapter_path": "来源行-00023811",
+  "entities": [
+    {
+      "name": "应支持通过手柄或调度台界面中的数字键进行拨号和呼叫的功能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      应支持通过手柄或调度台界面中的数字键进行拨号和呼叫的功能 。  可在调度台呼出区域选择某个\n调度终端号码 、调度组号码进行呼叫 。",
+      "type": "语义分解",
+      "subject": "应支持通过手柄或调度台界面中的数字键进行拨号和呼叫的功能",
+      "action": "",
+      "operation": "应支持通过手柄或调度台界面中的数字键进行拨号和呼叫的功能 。 可在调度台呼出区域选择某个 调度终端号码 、调度组号码进行呼叫 。",
+      "condition": "",
+      "constraint": "      应支持通过手柄或调度台界面中的数字键进行拨号和呼叫的功能 。  可在调度台呼出区域选择某个\n调度终端号码 、调度组号码进行呼叫 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应支持通过手柄或调度台界面中的数字键进行拨号和呼叫的功能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23811,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

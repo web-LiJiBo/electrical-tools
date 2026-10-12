@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.1.1.3",
+  "entities": [
+    {
+      "name": "地块生产环境记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1.3 地块相关记录包括:  产品。原辅材料及中间体清单 平面布置图 工艺流程图。地下管线图, 化学品储存及使用清单。泄漏记录。废物管理记录。地上及地下储罐清单。环境监测数据。环境影响报告书或表。环境审计报告和地勘报告等。",
+      "type": "语义分解",
+      "subject": "地块生产环境记录",
+      "action": "",
+      "operation": "收产品原料图纸化学品泄漏废物储罐监测环评审计地勘资料",
+      "condition": "",
+      "constraint": "5.1.1.3 地块相关记录包括:  产品。原辅材料及中间体清单 平面布置图 工艺流程图。地下管线图, 化学品储存及使用清单。泄漏记录。废物管理记录。地上及地下储罐清单。环境监测数据。环境影响报告书或表。环境审计报告和地勘报告等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地块生产环境记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2610,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

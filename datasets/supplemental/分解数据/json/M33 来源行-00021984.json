@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021984",
+  "entities": [
+    {
+      "name": "此附录给出一种可用于 SDH 系统测试的可选方法，它没有上面方法严格但便",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   此附录给出一种可用于 SDH 系统测试的可选方法，它没有上面方法严格但便于使用 STM-N 帧，\n这样可用于SDH 系统。\n\nE.2   方法",
+      "type": "语义分解",
+      "subject": "此附录给出一种可用于 SDH 系统测试的可选方法，它没有上面方法严格但便",
+      "action": "",
+      "operation": "此附录给出一种可用于 SDH 系统测试的可选方法，它没有上面方法严格但便于使用 STM-N 帧， 这样可用于SDH 系统。 E.2 方法",
+      "condition": "",
+      "constraint": "   此附录给出一种可用于 SDH 系统测试的可选方法，它没有上面方法严格但便于使用 STM-N 帧，\n这样可用于SDH 系统。\n\nE.2   方法",
+      "constraint_role": "informational",
+      "related_entities": [
+        "此附录给出一种可用于 SDH 系统测试的可选方法，它没有上面方法严格但便"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21984,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

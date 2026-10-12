@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034121",
+  "entities": [
+    {
+      "name": "当气体分子的平均自由行程 Λ与颗粒直径 dpa 的比值(即 knudse",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      当气体分子的平均自由行程 Λ与颗粒直径 dpa 的比值(即 knudsen 数 )趋于 1 时 , 与 stokes定律比\n较 , 该系数修正颗粒流阻力 J的减少。",
+      "type": "语义分解",
+      "subject": "当气体分子的平均自由行程 Λ与颗粒直径 dpa 的比值(即 knudse",
+      "action": "",
+      "operation": "当气体分子的平均自由行程 Λ与颗粒直径 dpa 的比值(即 knudsen 数 )趋于 1 时 , 与 stokes定律比 较 , 该系数修正颗粒流阻力 J的减少。",
+      "condition": "",
+      "constraint": "      当气体分子的平均自由行程 Λ与颗粒直径 dpa 的比值(即 knudsen 数 )趋于 1 时 , 与 stokes定律比\n较 , 该系数修正颗粒流阻力 J的减少。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当气体分子的平均自由行程 Λ与颗粒直径 dpa 的比值(即 knudse"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34121,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

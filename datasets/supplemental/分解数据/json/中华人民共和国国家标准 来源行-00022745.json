@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022745",
+  "entities": [
+    {
+      "name": "机房采用一个接地排时，应采用星形接地方式，并应预留 相应的螺孔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3      机房采用一个接地排时，应采用星形接地方式，并应预留\n相应的螺孔；第一级防雷器、配电箱、光缆金属加强芯和金属外护\n层、直流电源地、设备地、机壳、走线架等均应就近接地，且接地线\n应短、直。",
+      "type": "语义分解",
+      "subject": "机房采用一个接地排时，应采用星形接地方式，并应预留 相应的螺孔",
+      "action": "",
+      "operation": "机房采用一个接地排时，应采用星形接地方式，并应预留 相应的螺孔；第一级防雷器、配电箱、光缆金属加强芯和金属外护 层、直流电源地、设备地、机壳、走线架等均应就近接地，且接地线 应短、直。",
+      "condition": "",
+      "constraint": "6.7.3      机房采用一个接地排时，应采用星形接地方式，并应预留\n相应的螺孔；第一级防雷器、配电箱、光缆金属加强芯和金属外护\n层、直流电源地、设备地、机壳、走线架等均应就近接地，且接地线\n应短、直。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房采用一个接地排时，应采用星形接地方式，并应预留 相应的螺孔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22745,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

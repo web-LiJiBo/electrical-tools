@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028914",
+  "entities": [
+    {
+      "name": "b) 消防应急处置方案应包括事故类型、稀释措施、喷淋措施、冷却措施、降温",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  b)  消防应急处置方案应包括事故类型、稀释措施、喷淋措施、冷却措施、降温措施、灭火措施、\n   围堵措施、覆盖措施、收容措施、供水措施、出动人员及设备设施。",
+      "type": "语义分解",
+      "subject": "b) 消防应急处置方案应包括事故类型、稀释措施、喷淋措施、冷却措施、降温",
+      "action": "",
+      "operation": "b) 消防应急处置方案应包括事故类型、稀释措施、喷淋措施、冷却措施、降温措施、灭火措施、 围堵措施、覆盖措施、收容措施、供水措施、出动人员及设备设施。",
+      "condition": "",
+      "constraint": "  b)  消防应急处置方案应包括事故类型、稀释措施、喷淋措施、冷却措施、降温措施、灭火措施、\n   围堵措施、覆盖措施、收容措施、供水措施、出动人员及设备设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 消防应急处置方案应包括事故类型、稀释措施、喷淋措施、冷却措施、降温"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28914,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

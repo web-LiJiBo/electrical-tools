@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.3.3.1",
+  "entities": [
+    {
+      "name": "疏散指令审批",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.3.1 总指挥部根据现场指挥部疏散人员的请求 ,决定并发布疏散指令",
+      "type": "语义分解",
+      "subject": "疏散指令审批",
+      "action": "",
+      "operation": "总指挥部依据请求决定发布",
+      "condition": "",
+      "constraint": "5.3.3.1 总指挥部根据现场指挥部疏散人员的请求 ,决定并发布疏散指令",
+      "constraint_role": "informational",
+      "related_entities": [
+        "疏散指令审批"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5999,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

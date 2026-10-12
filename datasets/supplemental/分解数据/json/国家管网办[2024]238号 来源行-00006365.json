@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006365",
+  "entities": [
+    {
+      "name": "第四十八条 [高处作业实施要求 ) (八)在同-坠落方向上, -般不应进",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第四十八条 [高处作业实施要求 ) (八)在同-坠落方向上, -般不应进行上下交叉作业,如需进行交叉作业,中间应设置安全防护层,坠落高度超过 24m 的交叉作业,应设双层防护。",
+      "type": "语义分解",
+      "subject": "第四十八条 [高处作业实施要求 ) (八)在同-坠落方向上, -般不应进",
+      "action": "",
+      "operation": "第四十八条 [高处作业实施要求 ) (八)在同-坠落方向上, -般不应进行上下交叉作业,如需进行交叉作业,中间应设置安全防护层,坠落高度超过 24m 的交叉作业,应设双层防护。",
+      "condition": "",
+      "constraint": "第四十八条 [高处作业实施要求 ) (八)在同-坠落方向上, -般不应进行上下交叉作业,如需进行交叉作业,中间应设置安全防护层,坠落高度超过 24m 的交叉作业,应设双层防护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第四十八条 [高处作业实施要求 ) (八)在同-坠落方向上, -般不应进"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6365,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042632",
+  "entities": [
+    {
+      "name": ". 1.2. 1 管 道 外 腐 蚀 检 测 可 采 用 内 检 测 、",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9. 1.2. 1   管 道 外 腐 蚀 检 测 可 采 用 内 检 测 、外 腐 蚀 直 接 评 价 或 其 他 适 宜 的 方 法 。   管 道 内 检 测 应 按\nGB 32167的规定执行 ,外腐蚀直接评价应按照 SY/T 0087. 1 规定执行 。",
+      "type": "语义分解",
+      "subject": ". 1.2. 1 管 道 外 腐 蚀 检 测 可 采 用 内 检 测 、",
+      "action": "",
+      "operation": ". 1.2. 1 管 道 外 腐 蚀 检 测 可 采 用 内 检 测 、外 腐 蚀 直 接 评 价 或 其 他 适 宜 的 方 法 。 管 道 内 检 测 应 按 GB 32167的规定执行 ,外腐蚀直接评价应按照 SY/T 0087. 1 规定执行 。",
+      "condition": "",
+      "constraint": "9. 1.2. 1   管 道 外 腐 蚀 检 测 可 采 用 内 检 测 、外 腐 蚀 直 接 评 价 或 其 他 适 宜 的 方 法 。   管 道 内 检 测 应 按\nGB 32167的规定执行 ,外腐蚀直接评价应按照 SY/T 0087. 1 规定执行 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1.2. 1 管 道 外 腐 蚀 检 测 可 采 用 内 检 测 、"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42632,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

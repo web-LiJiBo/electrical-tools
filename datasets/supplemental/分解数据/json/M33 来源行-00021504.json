@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021504",
+  "entities": [
+    {
+      "name": ")N 2 比特5、N2 比特8序列第73帧",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3)N   2 比特5、N2 比特8序列第73帧：提取REI、RDI 比特中载送的信息，以便双向串接连\n   接路径可进行单端维护。用REI 监测另一传输方向的误码性能；用RDI 提供关于远端接\n\n   收器状态的信息，“1”指示“远端缺陷指示”状态，而“0”则指示正常的工作状态。\n4) N2 比特6、N2 比特7序列第74帧：提取OEI 、ODI比特中载送的信息，以便串接连接\n    出口的VC-12 路径可进行单端(中介)维护。用OEI(OF_B)    监测另一传输方向的误码\n    性能，并用ODI 提供远端接收器状态的信息，“1”指示“输出的缺陷指示”状态，而“0”\n\n    则指示",
+      "type": "语义分解",
+      "subject": ")N 2 比特5、N2 比特8序列第73帧",
+      "action": "",
+      "operation": ")N 2 比特5、N2 比特8序列第73帧：提取REI、RDI 比特中载送的信息，以便双向串接连 接路径可进行单端维护。用REI 监测另一传输方向的误码性能；用RDI 提供关于远端接 收器状态的信息，“1”指示“远端缺陷指示”状态，而“0”则指示正常的工作状态。 4) N2 比特6、N2 比特7序列第74帧：提取OEI 、ODI比特中载送的信息，以便串接连接 出口的VC-12 路径可进行单端(中介)维护。用OEI(OF_B) 监测另一传输方向的误码 性能，并用ODI 提供远端",
+      "condition": "",
+      "constraint": "3)N   2 比特5、N2 比特8序列第73帧：提取REI、RDI 比特中载送的信息，以便双向串接连\n   接路径可进行单端维护。用REI 监测另一传输方向的误码性能；用RDI 提供关于远端接\n\n   收器状态的信息，“1”指示“远端缺陷指示”状态，而“0”则指示正常的工作状态。\n4) N2 比特6、N2 比特7序列第74帧：提取OEI 、ODI比特中载送的信息，以便串接连接\n    出口的VC-12 路径可进行单端(中介)维护。用OEI(OF_B)    监测另一传输方向的误码\n    性能，并用ODI 提供远端接收器状态的信息，“1”指示“输出的缺陷指示”状态，而“0”\n\n    则指示",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")N 2 比特5、N2 比特8序列第73帧"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21504,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

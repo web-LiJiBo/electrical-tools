@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015294",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      OTN帧开销主要包括帧定位(FAS)和复帧定位( MFAS) 开销、光通路传送单元( OTUk,k=1,2,3,4)\n开销、光通路数据单元( ODUk,k=0,1,2,2e,3,4)   开销、光通路净荷单元( OPUk,k=0,1,2,2e,3,4)   开销、\n光通路(OCh)开销、光复用段(OMS) 开销和光传送段(OTS)开销等。OTN 维护信号包括OTUk(k=1,2,3,4)\n维护信号、ODUk(k=0,1,2,2e,3,4)   维护信号、客户维护信号、OCh 维护信号、OMS 维护信号和OTS 维\n护信号等。具体开销和维护信号描述见YD/T 1990-2009的6.3节、6.4节和YD/T 1462-2006的15章和\n16 章。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "      OTN帧开销主要包括帧定位(FAS)和复帧定位( MFAS) 开销、光通路传送单元( OTUk,k=1,2,3,4)\n开销、光通路数据单元( ODUk,k=0,1,2,2e,3,4)   开销、光通路净荷单元( OPUk,k=0,1,2,2e,3,4)   开销、\n光通路(OCh)开销、光复用段(OMS) 开销和光传送段(OTS)开销等。OTN 维护信号包括OTUk(k=1,2,3,4)\n维护信号、ODUk(k=0,1,2,2e,3,4)   维护信号、客户维护信号、OCh 维护信号、OMS 维护信号和OTS 维\n护信号等。具体开销和维护信号描述见YD/T 1990-2009的6.3节、6.4节和YD/T 1462-2006的15章和\n16 章。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

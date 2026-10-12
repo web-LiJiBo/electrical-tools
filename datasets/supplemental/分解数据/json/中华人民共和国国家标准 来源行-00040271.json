@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040271",
+  "entities": [
+    {
+      "name": "根据建设项目的环境影响评价及项目所在区域的要求，企 业可设置环境保护监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.2       根据建设项目的环境影响评价及项目所在区域的要求，企\n业可设置环境保护监测站，或委托有资质的第三方环境保护监测\n组织进行监测。对于委托第三方环境保护监测组织进行监测的，\n应完成本标准第9.0.1条所列的环境监测主要任务。",
+      "type": "语义分解",
+      "subject": "根据建设项目的环境影响评价及项目所在区域的要求，企 业可设置环境保护监测",
+      "action": "",
+      "operation": "根据建设项目的环境影响评价及项目所在区域的要求，企 业可设置环境保护监测站，或委托有资质的第三方环境保护监测 组织进行监测。对于委托第三方环境保护监测组织进行监测的， 应完成本标准第9.0.1条所列的环境监测主要任务。",
+      "condition": "",
+      "constraint": "9.0.2       根据建设项目的环境影响评价及项目所在区域的要求，企\n业可设置环境保护监测站，或委托有资质的第三方环境保护监测\n组织进行监测。对于委托第三方环境保护监测组织进行监测的，\n应完成本标准第9.0.1条所列的环境监测主要任务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据建设项目的环境影响评价及项目所在区域的要求，企 业可设置环境保护监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40271,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

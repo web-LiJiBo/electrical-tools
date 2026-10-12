@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.9.3",
+  "entities": [
+    {
+      "name": "同步故障备用及时间同步",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.3      当主用时钟源发生故障时，备用时钟源应能正常工作。\n4.9.4      检查验证需要进行时间同步的网元与时间服务器之间的\n通信正常，时间同步精度符合YD 5076《固定电话交换网工程设计\n规范》的规定。",
+      "type": "语义分解",
+      "subject": "同步故障备用及时间同步",
+      "action": "",
+      "operation": "主故障备用正常网元通信精度合YD5076",
+      "condition": "",
+      "constraint": "4.9.3      当主用时钟源发生故障时，备用时钟源应能正常工作。\n4.9.4      检查验证需要进行时间同步的网元与时间服务器之间的\n通信正常，时间同步精度符合YD 5076《固定电话交换网工程设计\n规范》的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "同步故障备用及时间同步"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27032,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；含4.9.3及4.9.4"
+      ]
+    }
+  }
+}

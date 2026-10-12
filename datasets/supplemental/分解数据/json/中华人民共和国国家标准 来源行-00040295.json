@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040295",
+  "entities": [
+    {
+      "name": "《化工建设项目废物焚烧处置工程设计规范》HG 20706 《固定污染源烟",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "《化工建设项目废物焚烧处置工程设计规范》HG  20706\n《固定污染源烟气(SO₂、NO、颗粒物)排放连续监测技术规范》HJ 75\n《固定源废气监测技术规范》HJ/T    397\n《固体废物处置工程技术导则》HJ  2035\n《危险废物处置工程技术导则》HJ  2042",
+      "type": "语义分解",
+      "subject": "《化工建设项目废物焚烧处置工程设计规范》HG 20706 《固定污染源烟",
+      "action": "",
+      "operation": "《化工建设项目废物焚烧处置工程设计规范》HG 20706 《固定污染源烟气(SO₂、NO、颗粒物)排放连续监测技术规范》HJ 75 《固定源废气监测技术规范》HJ/T 397 《固体废物处置工程技术导则》HJ 2035 《危险废物处置工程技术导则》HJ 2042",
+      "condition": "",
+      "constraint": "《化工建设项目废物焚烧处置工程设计规范》HG  20706\n《固定污染源烟气(SO₂、NO、颗粒物)排放连续监测技术规范》HJ 75\n《固定源废气监测技术规范》HJ/T    397\n《固体废物处置工程技术导则》HJ  2035\n《危险废物处置工程技术导则》HJ  2042",
+      "constraint_role": "informational",
+      "related_entities": [
+        "《化工建设项目废物焚烧处置工程设计规范》HG 20706 《固定污染源烟"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40295,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

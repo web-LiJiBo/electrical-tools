@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.2.1.2",
+  "entities": [
+    {
+      "name": "废气监测点位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.2 监测点位 a) 外排口监测点位: 点位设置应满足 GBIT 16157 HJ 75 等技术规范的要求。净烟气与原烟气混合排放的，应在排气筒。或烟气汇合后的混合烟道上设置监测点位; 净烟气直接排放的，应在挣烟气烟道上设置监测点位，有旁路的旁路烟道也应设置监测点位。 b) 内部监测点位设置: 当污染物排放标准中有污染物处理效果要求时，应在进入相应污染物处理设施单元的进出口设置监测点位 当环境管理文件有要求，或排污单位认为有必要的，可设置开展相应监测内容的内部监测点位",
+      "type": "语义分解",
+      "subject": "废气监测点位",
+      "action": "",
+      "operation": "按技术规范在混合净烟道旁路设点有处理要求设设施进出口",
+      "condition": "",
+      "constraint": "5.2.1.2 监测点位 a) 外排口监测点位: 点位设置应满足 GBIT 16157 HJ 75 等技术规范的要求。净烟气与原烟气混合排放的，应在排气筒。或烟气汇合后的混合烟道上设置监测点位; 净烟气直接排放的，应在挣烟气烟道上设置监测点位，有旁路的旁路烟道也应设置监测点位。 b) 内部监测点位设置: 当污染物排放标准中有污染物处理效果要求时，应在进入相应污染物处理设施单元的进出口设置监测点位 当环境管理文件有要求，或排污单位认为有必要的，可设置开展相应监测内容的内部监测点位",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废气监测点位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2827,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

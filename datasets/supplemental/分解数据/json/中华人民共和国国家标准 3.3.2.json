@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.3.2",
+  "entities": [
+    {
+      "name": "垂直接地体宜采用长度不小于2.5m 的热镀锌钢材、铜 材、铜包钢等接地体",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.2  垂直接地体宜采用长度不小于2.5m 的热镀锌钢材、铜\n材、铜包钢等接地体，也可根据埋设地网的土质及地理情况确定。\n垂直接地体间距不宜小于5m ,具体数量可根据地网大小、地理环\n境情况确定。地网四角的连接处应埋设垂直接地体。",
+      "type": "语义分解",
+      "subject": "垂直接地体宜采用长度不小于2.5m 的热镀锌钢材、铜 材、铜包钢等接地体",
+      "action": "",
+      "operation": "垂直接地体宜采用长度不小于2.5m 的热镀锌钢材、铜 材、铜包钢等接地体，也可根据埋设地网的土质及地理情况确定。 垂直接地体间距不宜小于5m ,具体数量可根据地网大小、地理环 境情况确定。地网四角的连接处应埋设垂直接地体。",
+      "condition": "",
+      "constraint": "3.3.2  垂直接地体宜采用长度不小于2.5m 的热镀锌钢材、铜\n材、铜包钢等接地体，也可根据埋设地网的土质及地理情况确定。\n垂直接地体间距不宜小于5m ,具体数量可根据地网大小、地理环\n境情况确定。地网四角的连接处应埋设垂直接地体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "垂直接地体宜采用长度不小于2.5m 的热镀锌钢材、铜 材、铜包钢等接地体"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22382,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

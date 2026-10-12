@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.1.16",
+  "entities": [
+    {
+      "name": "挂机艇装备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.1.16 挂机艇应至少配备以下种类的物品: 救生圈; 救生衣(定员的120%); 便携式甚高频对讲机,防水手电筒; 哨子或报警器; 备用桨; 常用工具(包括火花塞,安全销等)和备用绳索; 锚 ,打气筒。",
+      "type": "语义分解",
+      "subject": "挂机艇装备",
+      "action": "",
+      "operation": "配救生圈定员120%救生衣通信灯报警备用桨工具绳锚气筒",
+      "condition": "",
+      "constraint": "6.11.1.16 挂机艇应至少配备以下种类的物品: 救生圈; 救生衣(定员的120%); 便携式甚高频对讲机,防水手电筒; 哨子或报警器; 备用桨; 常用工具(包括火花塞,安全销等)和备用绳索; 锚 ,打气筒。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挂机艇装备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4734,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

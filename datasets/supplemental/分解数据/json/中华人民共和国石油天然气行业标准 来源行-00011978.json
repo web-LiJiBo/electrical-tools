@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011978",
+  "entities": [
+    {
+      "name": "探测器的设置应为站场全周界防护 , 防护范围应与站场 围墙区域相 一致 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       4   探测器的设置应为站场全周界防护 ,   防护范围应与站场\n围墙区域相 一致 ,  构成连续无间断警戒线 。每防区入侵探测器\n覆盖范围内应无盲区 。各围墙出入口的防入侵设施不应影响正\n常出入。",
+      "type": "语义分解",
+      "subject": "探测器的设置应为站场全周界防护 , 防护范围应与站场 围墙区域相 一致 ",
+      "action": "",
+      "operation": "探测器的设置应为站场全周界防护 , 防护范围应与站场 围墙区域相 一致 , 构成连续无间断警戒线 。每防区入侵探测器 覆盖范围内应无盲区 。各围墙出入口的防入侵设施不应影响正 常出入。",
+      "condition": "",
+      "constraint": "       4   探测器的设置应为站场全周界防护 ,   防护范围应与站场\n围墙区域相 一致 ,  构成连续无间断警戒线 。每防区入侵探测器\n覆盖范围内应无盲区 。各围墙出入口的防入侵设施不应影响正\n常出入。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "探测器的设置应为站场全周界防护 , 防护范围应与站场 围墙区域相 一致 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11978,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

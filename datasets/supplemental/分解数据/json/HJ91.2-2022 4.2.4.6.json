@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.2.4.6",
+  "entities": [
+    {
+      "name": "地表水保存剂",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4.6 水样保存 采集的水样按监测项目标准分析方法规定添加适量保存剂,标准分析方法中没有规定的,按HJ 493规定执行 添加保存剂的过程中 所用器具不可混用。避免交叉污染",
+      "type": "语义分解",
+      "subject": "地表水保存剂",
+      "action": "",
+      "operation": "按方法无规定HJ493加保存剂器具不混用防交叉污染",
+      "condition": "",
+      "constraint": "4.2.4.6 水样保存 采集的水样按监测项目标准分析方法规定添加适量保存剂,标准分析方法中没有规定的,按HJ 493规定执行 添加保存剂的过程中 所用器具不可混用。避免交叉污染",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地表水保存剂"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2965,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

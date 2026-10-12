@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第3部分: 动火作业",
+  "standard_id": "Q/GGW 04003.3-2022",
+  "version": "2022",
+  "chapter_path": "5.5.5",
+  "entities": [
+    {
+      "name": "动火检测样品浓度",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.5 气体检测的位置和所采的样品应具有代表性。被测的可燃气体或可燃液体蒸气浓度应小于其与空气混合爆炸下限的10%(LEL),硫化氢浓度应小于7ppm。",
+      "type": "语义分解",
+      "subject": "动火检测样品浓度",
+      "action": "",
+      "operation": "样品代表性且可燃低于10%LEL硫化氢低于7ppm",
+      "condition": "",
+      "constraint": "5.5.5 气体检测的位置和所采的样品应具有代表性。被测的可燃气体或可燃液体蒸气浓度应小于其与空气混合爆炸下限的10%(LEL),硫化氢浓度应小于7ppm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火检测样品浓度"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6114,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

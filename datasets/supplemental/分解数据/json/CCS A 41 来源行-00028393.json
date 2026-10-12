@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028393",
+  "entities": [
+    {
+      "name": "精益六西格玛推进规划目标的达成应能支撑组织战略目标的实现 ,提升组织核心",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      精益六西格玛推进规划目标的达成应能支撑组织战略目标的实现 ,提升组织核心竞争力 。\n\n4.3.2   推进规划部署\n\n4.3.2. 1   部署过程",
+      "type": "语义分解",
+      "subject": "精益六西格玛推进规划目标的达成应能支撑组织战略目标的实现 ,提升组织核心",
+      "action": "",
+      "operation": "精益六西格玛推进规划目标的达成应能支撑组织战略目标的实现 ,提升组织核心竞争力 。 4.3.2 推进规划部署 4.3.2. 1 部署过程",
+      "condition": "",
+      "constraint": "      精益六西格玛推进规划目标的达成应能支撑组织战略目标的实现 ,提升组织核心竞争力 。\n\n4.3.2   推进规划部署\n\n4.3.2. 1   部署过程",
+      "constraint_role": "informational",
+      "related_entities": [
+        "精益六西格玛推进规划目标的达成应能支撑组织战略目标的实现 ,提升组织核心"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28393,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "7.7.2",
+  "entities": [
+    {
+      "name": "线路巡检和记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7.2    线路巡检系统应覆盖管道沿线 。可移动巡检设备宜具备\n卫星定位功能 ,  可在后端巡检管理系统上实时显示其位置。\n7.7.3    巡检系统的巡检记录应完整 ,  不可删改 ,  数据存储时间\n不应小于 180d。",
+      "type": "语义分解",
+      "subject": "线路巡检和记录",
+      "action": "",
+      "operation": "覆盖沿线移动设备宜定位实时显示记录完整不可删改保存至少180日",
+      "condition": "",
+      "constraint": "7.7.2    线路巡检系统应覆盖管道沿线 。可移动巡检设备宜具备\n卫星定位功能 ,  可在后端巡检管理系统上实时显示其位置。\n7.7.3    巡检系统的巡检记录应完整 ,  不可删改 ,  数据存储时间\n不应小于 180d。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "线路巡检和记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11991,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含7.7.2及7.7.3保留"
+      ]
+    }
+  }
+}

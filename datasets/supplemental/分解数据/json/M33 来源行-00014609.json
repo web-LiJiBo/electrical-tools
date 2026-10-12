@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014609",
+  "entities": [
+    {
+      "name": "v2 Hop-by-Hop组网的高精度时间同步要求应满足ITU-T G.",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1588v2 Hop-by-Hop组网的高精度时间同步要求应满足ITU-T G.8275.1,包括1588v2高精度时间同\n步的网络架构、组网模型、网络级和网元级的指标要求、时间服务器的指标要求、保护倒换等方面。\n   单个时间同步设备模型性能要求应满足ITU-TG.8273.2, 主要包括固定误差、动态误差、噪声容限、\n\n噪声传递和相位瞬变共5个方面。",
+      "type": "语义分解",
+      "subject": "v2 Hop-by-Hop组网的高精度时间同步要求应满足ITU-T G.",
+      "action": "",
+      "operation": "v2 Hop-by-Hop组网的高精度时间同步要求应满足ITU-T G.8275.1,包括1588v2高精度时间同 步的网络架构、组网模型、网络级和网元级的指标要求、时间服务器的指标要求、保护倒换等方面。 单个时间同步设备模型性能要求应满足ITU-TG.8273.2, 主要包括固定误差、动态误差、噪声容限、 噪声传递和相位瞬变共5个方面。",
+      "condition": "",
+      "constraint": "   1588v2 Hop-by-Hop组网的高精度时间同步要求应满足ITU-T G.8275.1,包括1588v2高精度时间同\n步的网络架构、组网模型、网络级和网元级的指标要求、时间服务器的指标要求、保护倒换等方面。\n   单个时间同步设备模型性能要求应满足ITU-TG.8273.2, 主要包括固定误差、动态误差、噪声容限、\n\n噪声传递和相位瞬变共5个方面。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "v2 Hop-by-Hop组网的高精度时间同步要求应满足ITU-T G."
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14609,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

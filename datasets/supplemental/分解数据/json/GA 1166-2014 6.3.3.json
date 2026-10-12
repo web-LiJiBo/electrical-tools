@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "入侵报警",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 入侵报警系统设计应符合 GB 50394的规定。入侵报警系统应能有效地探测各种入侵行为 ,报 警响应时间小于等于2 $。入侵报警系统应与视频监控系统联动 ,联动时间小于等于4 $,非法入侵时的 联动图像应长期保存。",
+      "type": "语义分解",
+      "subject": "入侵报警",
+      "action": "",
+      "operation": "依GB50394有效探测联动视频长期存非法入侵图像",
+      "condition": "",
+      "constraint": "6.3.3 入侵报警系统设计应符合 GB 50394的规定。入侵报警系统应能有效地探测各种入侵行为 ,报 警响应时间小于等于2 $。入侵报警系统应与视频监控系统联动 ,联动时间小于等于4 $,非法入侵时的 联动图像应长期保存。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "入侵报警"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5438,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；2$与4$时间单位异常不得直接换算"
+      ]
+    }
+  }
+}

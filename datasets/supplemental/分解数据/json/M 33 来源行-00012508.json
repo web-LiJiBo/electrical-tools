@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012508",
+  "entities": [
+    {
+      "name": "注2",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     注2:为了简化测量过程，在SES 的定义中使用缺陷来代替直接用影响通道的严重误码块定义SES 。尽管这个方法简化\n\n了SES 的测量，但应注意到可能存在严重强度的误码图案不能触发附录B所定义的缺陷的情况。这样，在这种定义下，这些\n\n严重强度的误码就不会被当作SES 。 如果今后发现了这种严重影响用户的事件，将对这个定义重新研究。\n\n3.1.7",
+      "type": "语义分解",
+      "subject": "注2",
+      "action": "",
+      "operation": "注2:为了简化测量过程，在SES 的定义中使用缺陷来代替直接用影响通道的严重误码块定义SES 。尽管这个方法简化 了SES 的测量，但应注意到可能存在严重强度的误码图案不能触发附录B所定义的缺陷的情况。这样，在这种定义下，这些 严重强度的误码就不会被当作SES 。 如果今后发现了这种严重影响用户的事件，将对这个定义重新研究。 3.1.7",
+      "condition": "",
+      "constraint": "     注2:为了简化测量过程，在SES 的定义中使用缺陷来代替直接用影响通道的严重误码块定义SES 。尽管这个方法简化\n\n了SES 的测量，但应注意到可能存在严重强度的误码图案不能触发附录B所定义的缺陷的情况。这样，在这种定义下，这些\n\n严重强度的误码就不会被当作SES 。 如果今后发现了这种严重影响用户的事件，将对这个定义重新研究。\n\n3.1.7",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注2"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12508,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

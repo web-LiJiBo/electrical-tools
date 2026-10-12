@@ -1,0 +1,41 @@
+{
+  "standard_name": "O/ GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00035468",
+  "entities": [
+    {
+      "name": "非 2 — 火 炬 气 中 除 三 氧 化 碳 外 的 其 它 含 碳 ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "非 2 — 火 炬 气 中 除 三 氧 化 碳 外 的 其 它 含 碳 化 合 物 的 含 碳 量 ，  单 位 为 吨 碳 每 万 标 立 方 米\n(tC/10′Nm³);",
+      "type": "语义分解",
+      "subject": "非 2 — 火 炬 气 中 除 三 氧 化 碳 外 的 其 它 含 碳 ",
+      "action": "",
+      "operation": "非 2 — 火 炬 气 中 除 三 氧 化 碳 外 的 其 它 含 碳 化 合 物 的 含 碳 量 ， 单 位 为 吨 碳 每 万 标 立 方 米 (tC/10′Nm³)",
+      "condition": "",
+      "constraint": "非 2 — 火 炬 气 中 除 三 氧 化 碳 外 的 其 它 含 碳 化 合 物 的 含 碳 量 ，  单 位 为 吨 碳 每 万 标 立 方 米\n(tC/10′Nm³);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "非 2 — 火 炬 气 中 除 三 氧 化 碳 外 的 其 它 含 碳 "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

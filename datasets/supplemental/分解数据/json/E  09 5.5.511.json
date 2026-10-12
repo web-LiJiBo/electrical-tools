@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.511",
+  "entities": [
+    {
+      "name": "防腐控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.511   应落实防腐蚀控制管理制度要求，对管道阴极保护电位、牺牲阳极和防腐层进行检查测试，\n\n\n并保留记录。",
+      "type": "语义分解",
+      "subject": "防腐控制",
+      "action": "",
+      "operation": "阴保电位阳极防腐层检测留记录",
+      "condition": "",
+      "constraint": "5.5.511   应落实防腐蚀控制管理制度要求，对管道阴极保护电位、牺牲阳极和防腐层进行检查测试，\n\n\n并保留记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防腐控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27792,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；原编号5.5.511异常待核对"
+      ]
+    }
+  }
+}

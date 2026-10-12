@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037851",
+  "entities": [
+    {
+      "name": "供电量凭证，则应将转供电量计入总用电量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "供电量凭证，则应将转供电量计入总用电量。若存在净购入热力的消耗，\n\n需安装热表或流量计，对消耗热力进行监测，定期记录。",
+      "type": "语义分解",
+      "subject": "供电量凭证，则应将转供电量计入总用电量",
+      "action": "",
+      "operation": "供电量凭证，则应将转供电量计入总用电量。若存在净购入热力的消耗， 需安装热表或流量计，对消耗热力进行监测，定期记录。",
+      "condition": "",
+      "constraint": "供电量凭证，则应将转供电量计入总用电量。若存在净购入热力的消耗，\n\n需安装热表或流量计，对消耗热力进行监测，定期记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "供电量凭证，则应将转供电量计入总用电量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37851,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

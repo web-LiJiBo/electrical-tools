@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.2.6",
+  "entities": [
+    {
+      "name": "其他大河推荐技防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.6 技术防范除符合8.2.5的规定外 ,宜符合以下规定: a ) 输油管道宜安装具备定位功能的泄漏监测系统 ,隧道穿越的输气管道还宜加装可燃气体报警 系统; b) 宜在跨越或隧道穿越管段两端安装摄像机 .实施 24h监控=",
+      "type": "语义分解",
+      "subject": "其他大河推荐技防",
+      "action": "",
+      "operation": "油管宜定位漏测气隧宜报警两端宜24小时摄像",
+      "condition": "",
+      "constraint": "8.2.6 技术防范除符合8.2.5的规定外 ,宜符合以下规定: a ) 输油管道宜安装具备定位功能的泄漏监测系统 ,隧道穿越的输气管道还宜加装可燃气体报警 系统; b) 宜在跨越或隧道穿越管段两端安装摄像机 .实施 24h监控=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "其他大河推荐技防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5479,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

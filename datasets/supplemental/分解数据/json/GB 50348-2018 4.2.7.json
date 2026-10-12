@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "4.2.7",
+  "entities": [
+    {
+      "name": "安防共享客户端",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.7 应根据安全防范系统信息共享应用的实际需要，设置客户端和(或)分平台。客户端和(或)分平台宜基于系统专用传输网络进行规划设计。安全防范管理平台也可通过边界安全隔离措施与基于其他网络环境建设的安全防范系统和(或)其他业务系统实现信息的交换与共享。",
+      "type": "语义分解",
+      "subject": "安防共享客户端",
+      "action": "",
+      "operation": "按需求设客户端分平台宜专网跨网边界隔离交换",
+      "condition": "",
+      "constraint": "4.2.7 应根据安全防范系统信息共享应用的实际需要，设置客户端和(或)分平台。客户端和(或)分平台宜基于系统专用传输网络进行规划设计。安全防范管理平台也可通过边界安全隔离措施与基于其他网络环境建设的安全防范系统和(或)其他业务系统实现信息的交换与共享。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防共享客户端"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6885,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

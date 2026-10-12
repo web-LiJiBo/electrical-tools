@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041165",
+  "entities": [
+    {
+      "name": "所有设备应使用适合其运行环境要求的材料进行制造，其他内容参见NACE M",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   所有设备应使用适合其运行环境要求的材料进行制造，其他内容参见NACE MR 0175 和 NACE\nRP 0475。",
+      "type": "语义分解",
+      "subject": "所有设备应使用适合其运行环境要求的材料进行制造，其他内容参见NACE M",
+      "action": "",
+      "operation": "所有设备应使用适合其运行环境要求的材料进行制造，其他内容参见NACE MR 0175 和 NACE RP 0475。",
+      "condition": "",
+      "constraint": "   所有设备应使用适合其运行环境要求的材料进行制造，其他内容参见NACE MR 0175 和 NACE\nRP 0475。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "所有设备应使用适合其运行环境要求的材料进行制造，其他内容参见NACE M"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41165,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

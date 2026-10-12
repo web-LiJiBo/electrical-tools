@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00032262",
+  "entities": [
+    {
+      "name": "根据环境保护工作的要求，在国土开发密度较高，环境承载能力开始减弱，或大气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   根据环境保护工作的要求，在国土开发密度较高，环境承载能力开始减弱，或大气环境容量较小、\n生态环境脆弱，容易发生严重大气环境污染问题而需要严格控制大气污染物排放的地区。\n3.9",
+      "type": "语义分解",
+      "subject": "根据环境保护工作的要求，在国土开发密度较高，环境承载能力开始减弱，或大气",
+      "action": "",
+      "operation": "根据环境保护工作的要求，在国土开发密度较高，环境承载能力开始减弱，或大气环境容量较小、 生态环境脆弱，容易发生严重大气环境污染问题而需要严格控制大气污染物排放的地区。 3.9",
+      "condition": "",
+      "constraint": "   根据环境保护工作的要求，在国土开发密度较高，环境承载能力开始减弱，或大气环境容量较小、\n生态环境脆弱，容易发生严重大气环境污染问题而需要严格控制大气污染物排放的地区。\n3.9",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据环境保护工作的要求，在国土开发密度较高，环境承载能力开始减弱，或大气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32262,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

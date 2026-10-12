@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品单位应急救援物资配备要求",
+  "standard_id": "GB 30077-2023",
+  "version": "2023",
+  "chapter_path": "8.2",
+  "entities": [
+    {
+      "name": "可能向水域泄漏的危化品单位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2 发生事故后危险化学品可能泄漏至江河湖海的危险化学品单位应配备水上灭火抢险救援 .水上泄漏物处置和防汛排涝等应急救援物资。",
+      "type": "语义分解",
+      "subject": "可能向水域泄漏的危化品单位",
+      "action": "",
+      "operation": "配置水上灭火泄漏处置防汛排涝物资",
+      "condition": "发生事故后危险化学品可能泄漏至江河湖海的危险化学品单位",
+      "constraint": "8.2 发生事故后危险化学品可能泄漏至江河湖海的危险化学品单位应配备水上灭火抢险救援 .水上泄漏物处置和防汛排涝等应急救援物资。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可能向水域泄漏的危化品单位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3817,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

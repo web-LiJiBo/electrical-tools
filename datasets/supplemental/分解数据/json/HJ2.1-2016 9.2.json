@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境影响评价技术导则 总纲",
+  "standard_id": "HJ2.1-2016",
+  "version": "2016",
+  "chapter_path": "9.2",
+  "entities": [
+    {
+      "name": "污染物排放清单",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2 给出污染物排放清单, 明确污染物排放的管理要求。包括工程组成及原辅材料组分要求, 建设项 目拟采取的环境保护措施及主要运行参数,排放的污染物种类。排放浓度和总量指标,污染物排放的分 时段要求,排污口信息,执行的环境标准,环境风险防范措施以及环境监测等。提出应向社会公开的信 息内容=",
+      "type": "语义分解",
+      "subject": "污染物排放清单",
+      "action": "",
+      "operation": "列组成措施参数污染物浓度总量时段排口标准风险监测及公开内容",
+      "condition": "",
+      "constraint": "9.2 给出污染物排放清单, 明确污染物排放的管理要求。包括工程组成及原辅材料组分要求, 建设项 目拟采取的环境保护措施及主要运行参数,排放的污染物种类。排放浓度和总量指标,污染物排放的分 时段要求,排污口信息,执行的环境标准,环境风险防范措施以及环境监测等。提出应向社会公开的信 息内容=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "污染物排放清单"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2589,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

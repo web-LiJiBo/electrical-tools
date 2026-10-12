@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021880",
+  "entities": [
+    {
+      "name": "对于相邻级联，验证代替正常指针的级联指示的算法采用和正常指针一样的方式加",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于相邻级联，验证代替正常指针的级联指示的算法采用和正常指针一样的方式加以描述，由图\nA.2所示的状态图来表示，重新描述了三种状态：",
+      "type": "语义分解",
+      "subject": "对于相邻级联，验证代替正常指针的级联指示的算法采用和正常指针一样的方式加",
+      "action": "",
+      "operation": "对于相邻级联，验证代替正常指针的级联指示的算法采用和正常指针一样的方式加以描述，由图 A.2所示的状态图来表示，重新描述了三种状态",
+      "condition": "",
+      "constraint": "   对于相邻级联，验证代替正常指针的级联指示的算法采用和正常指针一样的方式加以描述，由图\nA.2所示的状态图来表示，重新描述了三种状态：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于相邻级联，验证代替正常指针的级联指示的算法采用和正常指针一样的方式加"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21880,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

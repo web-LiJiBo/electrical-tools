@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "9.2.7",
+  "entities": [
+    {
+      "name": "吊装负荷及索具",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.2.7 应按规定负荷进行吊装，吊具、索具应经计算选择使用，不应超负荷吊装。",
+      "type": "语义分解",
+      "subject": "吊装负荷及索具",
+      "action": "",
+      "operation": "按规定负荷计算选具且不超载",
+      "condition": "",
+      "constraint": "9.2.7 应按规定负荷进行吊装，吊具、索具应经计算选择使用，不应超负荷吊装。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "吊装负荷及索具"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3927,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

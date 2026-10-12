@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.6.3",
+  "entities": [
+    {
+      "name": "全周期风险管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.3 企业的风险管理应贯穿装置的T艺开发 ,规划设计.首次开车 .生产运行.检维修 ,娈更 .废弃等 全生命周期各个阶段以及作业过程 ,针对所处阶段或评估对象特点选择适用的危害辨识和风险评估方 法 ,开展风险管理活动 _",
+      "type": "语义分解",
+      "subject": "全周期风险管理",
+      "action": "",
+      "operation": "涵盖工艺开发设计开车运行维修变更废弃作业按特点选择方法",
+      "condition": "",
+      "constraint": "4.6.3 企业的风险管理应贯穿装置的T艺开发 ,规划设计.首次开车 .生产运行.检维修 ,娈更 .废弃等 全生命周期各个阶段以及作业过程 ,针对所处阶段或评估对象特点选择适用的危害辨识和风险评估方 法 ,开展风险管理活动 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "全周期风险管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5094,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,826 @@
+{
+  "schema_version": "1.1",
+  "simulation_only": true,
+  "devices": [
+    {
+      "device_id": "SIM-IEC-VALVE-01",
+      "device_type": "pole_controller",
+      "scenario": "power_grid_operation",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "active_power_mw": 100,
+        "dc_blocked": false
+      },
+      "runtime_facts": {
+        "outlet_temperature_protection_operated": 1,
+        "runback_permission": 1,
+        "runback_applied": 0,
+        "runback_target_configured": 1,
+        "runback_target_mw": 80,
+        "dc_blocked": 0
+      },
+      "configuration_scope": "仅作软件测试，80 MW是测试预设，不是标准定值；无真实通信客户端",
+      "mapping": {
+        "object_reference": "SIM_POLE/CTRL/GGIO1.AnOut1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "runback_power": {
+          "function": "converter_valve_runback",
+          "condition": "outlet_temperature_protection_operated == 1",
+          "constraints": [
+            {
+              "parameter": "runback_permission",
+              "operator": ">=",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "runback_target_configured",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "runback_applied",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "dc_blocked",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "target_power_mw",
+          "unit": "MW",
+          "minimum": 0,
+          "maximum": 100,
+          "configured_parameter_fact": "runback_target_mw",
+          "decrease_only": true,
+          "state_key": "active_power_mw",
+          "source_rule_ids": [
+            "1626_clause2:rule:1"
+          ],
+          "source_bindings": {
+            "1626_clause2:rule:1": {
+              "source_action": "向极控系统发功率回降命令",
+              "source_condition": "阀出水温度异常",
+              "source_quote": "阀出水温度保护动作后应向极控系统发功率回降命令，不宜发直流闭锁命令。",
+              "verified_condition": "outlet_temperature_protection_operated == 1",
+              "constraint_bindings": {
+                "不宜发直流闭锁命令": {
+                  "parameter": "dc_blocked",
+                  "operator": "==",
+                  "value": 0,
+                  "role": "precondition"
+                }
+              },
+              "scope": "仅此来源条款的模拟信号映射，不推导温度阈值，不认定现场标准适用性"
+            }
+          },
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "active_power_mw",
+            "parameter": "target_power_mw",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-TRANSFORMER-01",
+      "device_type": "transformer",
+      "scenario": "substation_maintenance",
+      "assessment_clause_id": "11_clause2",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "operating_state": "running"
+      },
+      "runtime_facts": {
+        "cooling_mode": "ON",
+        "winding_hotspot_rise_k": 85,
+        "top_oil_rise_k": 65,
+        "winding_average_rise_k": 70
+      },
+      "mapping": {},
+      "actions": {}
+    },
+    {
+      "device_id": "SIM-TRANSFORMER-02",
+      "device_type": "transformer",
+      "scenario": "substation_maintenance",
+      "assessment_clause_id": "11_clause2",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "operating_state": "running"
+      },
+      "runtime_facts": {
+        "cooling_mode": "ON",
+        "winding_hotspot_rise_k": 50,
+        "top_oil_rise_k": 40,
+        "winding_average_rise_k": 45
+      },
+      "mapping": {},
+      "actions": {}
+    },
+    {
+      "device_id": "SIM-IEC-BREAKER-01",
+      "device_type": "breaker",
+      "scenario": "grid_fault_isolation",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "position": "closed"
+      },
+      "runtime_facts": {
+        "current": 120,
+        "close_permission": 0
+      },
+      "mapping": {
+        "object_reference": "SIM_IED/CTRL/XCBR1.Pos",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "trip": {
+          "function": "overcurrent_protection",
+          "condition": "current >= 100",
+          "value": false,
+          "state_key": "position",
+          "state_value": "open",
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "position",
+            "parameter": null,
+            "value": "open"
+          }
+        },
+        "close": {
+          "function": "switch_control",
+          "condition": "close_permission >= 1",
+          "value": true,
+          "state_key": "position",
+          "state_value": "closed",
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "position",
+            "parameter": null,
+            "value": "closed"
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-BREAKER-01",
+      "device_type": "breaker",
+      "scenario": "grid_fault_isolation",
+      "protocol": "Modbus",
+      "initial_state": {
+        "position": "closed"
+      },
+      "runtime_facts": {
+        "current": 20,
+        "close_permission": 0
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 1,
+        "address": 0,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "trip": {
+          "function": "overcurrent_protection",
+          "condition": "current >= 100",
+          "value": false,
+          "state_key": "position",
+          "state_value": "open",
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "position",
+            "parameter": null,
+            "value": "open"
+          }
+        },
+        "close": {
+          "function": "switch_control",
+          "condition": "close_permission >= 1",
+          "value": true,
+          "state_key": "position",
+          "state_value": "closed",
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "position",
+            "parameter": null,
+            "value": "closed"
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-INVERTER-01",
+      "device_type": "inverter",
+      "scenario": "renewable_grid_integration",
+      "protocol": "Modbus",
+      "initial_state": {
+        "active_power_kw": 500,
+        "reactive_power_kvar": 0,
+        "voltage_v": 400
+      },
+      "runtime_facts": {
+        "control_permission": 1,
+        "grid_connected": 1,
+        "maintenance_lockout": 0,
+        "control_mode_available": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 2,
+        "address": 100,
+        "function_code": 6,
+        "data_type": "uint16",
+        "scale": 10
+      },
+      "actions": {
+        "adjust_active_power": {
+          "function": "power_regulation",
+          "condition": "control_permission >= 1",
+          "parameter": "power_kw",
+          "unit": "kW",
+          "minimum": 0,
+          "maximum": 1000,
+          "state_key": "active_power_kw",
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "active_power_kw",
+            "parameter": "power_kw",
+            "value": null
+          }
+        },
+        "adjust_reactive_power": {
+          "function": "adjust_reactive_power",
+          "condition": "control_permission >= 1",
+          "constraints": [
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_mode_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "reactive_power_kvar",
+          "unit": "kvar",
+          "minimum": 0,
+          "maximum": 500,
+          "state_key": "reactive_power_kvar",
+          "mapping": {
+            "address": 101,
+            "function_code": 6,
+            "data_type": "uint16",
+            "scale": 10
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "reactive_power_kvar",
+            "parameter": "reactive_power_kvar",
+            "value": null
+          }
+        },
+        "regulate_voltage": {
+          "function": "regulate_voltage",
+          "condition": "control_permission >= 1",
+          "constraints": [
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_mode_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "voltage_v",
+          "unit": "V",
+          "minimum": 380,
+          "maximum": 420,
+          "state_key": "voltage_v",
+          "mapping": {
+            "address": 102,
+            "function_code": 6,
+            "data_type": "uint16",
+            "scale": 10
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "voltage_v",
+            "parameter": "voltage_v",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-IEC-INVERTER-01",
+      "device_type": "inverter",
+      "scenario": "renewable_grid_integration",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "active_power_kw": 500,
+        "reactive_power_kvar": 0,
+        "voltage_v": 400
+      },
+      "runtime_facts": {
+        "control_permission": 1,
+        "grid_connected": 1,
+        "maintenance_lockout": 0,
+        "control_mode_available": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_IED/CTRL/GGIO1.AnOut1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "adjust_active_power": {
+          "function": "power_regulation",
+          "condition": "control_permission >= 1",
+          "parameter": "power_kw",
+          "unit": "kW",
+          "minimum": 0,
+          "maximum": 1000,
+          "state_key": "active_power_kw",
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "active_power_kw",
+            "parameter": "power_kw",
+            "value": null
+          }
+        },
+        "adjust_reactive_power": {
+          "function": "adjust_reactive_power",
+          "condition": "control_permission >= 1",
+          "constraints": [
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_mode_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "reactive_power_kvar",
+          "unit": "kvar",
+          "minimum": 0,
+          "maximum": 500,
+          "state_key": "reactive_power_kvar",
+          "mapping": {
+            "object_reference": "SIM_IED/CTRL/GGIO1.AnOut2"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "reactive_power_kvar",
+            "parameter": "reactive_power_kvar",
+            "value": null
+          }
+        },
+        "regulate_voltage": {
+          "function": "regulate_voltage",
+          "condition": "control_permission >= 1",
+          "constraints": [
+            {
+              "parameter": "grid_connected",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_mode_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "parameter": "voltage_v",
+          "unit": "V",
+          "minimum": 380,
+          "maximum": 420,
+          "state_key": "voltage_v",
+          "mapping": {
+            "object_reference": "SIM_IED/CTRL/GGIO1.AnOut3"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "voltage_v",
+            "parameter": "voltage_v",
+            "value": null
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-IEC-FAN-01",
+      "display_name": "模拟冷却风机1",
+      "device_type": "cooling_fan",
+      "scenario": "substation_maintenance",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "running": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "redundant_cooling_available": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_COOL/CTRL/GGIO1.SPCSO1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "start": {
+          "function": "cooling_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_key": "running",
+          "state_value": true,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "cooling_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "redundant_cooling_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_key": "running",
+          "state_value": false,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-FAN-01",
+      "display_name": "模拟冷却风机2",
+      "device_type": "cooling_fan",
+      "scenario": "substation_maintenance",
+      "protocol": "Modbus",
+      "initial_state": {
+        "running": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "redundant_cooling_available": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 3,
+        "address": 200,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "start": {
+          "function": "cooling_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_key": "running",
+          "state_value": true,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "cooling_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "redundant_cooling_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_key": "running",
+          "state_value": false,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-IEC-PUMP-01",
+      "display_name": "模拟冷却油泵1",
+      "device_type": "oil_pump",
+      "scenario": "substation_maintenance",
+      "protocol": "IEC61850",
+      "initial_state": {
+        "running": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "redundant_cooling_available": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_COOL/CTRL/GGIO2.SPCSO1",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "start": {
+          "function": "cooling_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_key": "running",
+          "state_value": true,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "cooling_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "redundant_cooling_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_key": "running",
+          "state_value": false,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-PUMP-01",
+      "display_name": "模拟冷却油泵2",
+      "device_type": "oil_pump",
+      "scenario": "substation_maintenance",
+      "protocol": "Modbus",
+      "initial_state": {
+        "running": false
+      },
+      "runtime_facts": {
+        "start_permission": 1,
+        "stop_permission": 1,
+        "power_available": 1,
+        "maintenance_lockout": 0,
+        "device_fault": 0,
+        "redundant_cooling_available": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 4,
+        "address": 201,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "start": {
+          "function": "cooling_start",
+          "condition": "start_permission == 1",
+          "constraints": [
+            {
+              "parameter": "power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "device_fault",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "state_key": "running",
+          "state_value": true,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": true
+          }
+        },
+        "stop": {
+          "function": "cooling_stop",
+          "condition": "stop_permission == 1",
+          "constraints": [
+            {
+              "parameter": "maintenance_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "redundant_cooling_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "state_key": "running",
+          "state_value": false,
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "expected_feedback": {
+            "state_key": "running",
+            "parameter": null,
+            "value": false
+          }
+        }
+      }
+    }
+  ]
+}

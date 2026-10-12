@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "5.4",
+  "entities": [
+    {
+      "name": "压气站",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4 应利用工艺仿真软件。对不同输量下输气管道沿线压气站的运行方式进行优化。确定适宜的压缩机运行方案,降低总体运行能耗。",
+      "type": "语义分解",
+      "subject": "压气站",
+      "action": "",
+      "operation": "仿真优化压缩机运行方案降低总体能耗",
+      "condition": "",
+      "constraint": "5.4 应利用工艺仿真软件。对不同输量下输气管道沿线压气站的运行方式进行优化。确定适宜的压缩机运行方案,降低总体运行能耗。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压气站"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 269,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

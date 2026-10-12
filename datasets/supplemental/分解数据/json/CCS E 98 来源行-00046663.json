@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046663",
+  "entities": [
+    {
+      "name": "宜根据储罐壁板的腐蚀差异性情况划分风险部位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1   宜根据储罐壁板的腐蚀差异性情况划分风险部位。\n      2    储罐外壁宜根据储罐防腐层、保温层和保护层部位和结\n构不同，以储罐高度为坐标，分为不同的检测区域。",
+      "type": "语义分解",
+      "subject": "宜根据储罐壁板的腐蚀差异性情况划分风险部位",
+      "action": "",
+      "operation": "宜根据储罐壁板的腐蚀差异性情况划分风险部位。 2 储罐外壁宜根据储罐防腐层、保温层和保护层部位和结 构不同，以储罐高度为坐标，分为不同的检测区域。",
+      "condition": "",
+      "constraint": "      1   宜根据储罐壁板的腐蚀差异性情况划分风险部位。\n      2    储罐外壁宜根据储罐防腐层、保温层和保护层部位和结\n构不同，以储罐高度为坐标，分为不同的检测区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜根据储罐壁板的腐蚀差异性情况划分风险部位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46663,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

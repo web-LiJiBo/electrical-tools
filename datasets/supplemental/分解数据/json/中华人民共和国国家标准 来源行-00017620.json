@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00017620",
+  "entities": [
+    {
+      "name": "PDH 支路口的结合抖动测试(图4.2.10),应调整仪表 和设备工作正",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.11  PDH 支路口的结合抖动测试(图4.2.10),应调整仪表\n和设备工作正常，并应在选定的指针序列(图4.2.11)中逐步调整\n频偏，直到观测到最大峰一峰抖动值，稳定观测120s 后测得的\nPDH 支路口最大峰一峰抖动值应符合表4.2.11的规定。",
+      "type": "语义分解",
+      "subject": "PDH 支路口的结合抖动测试(图4.2.10),应调整仪表 和设备工作正",
+      "action": "",
+      "operation": "PDH 支路口的结合抖动测试(图4.2.10),应调整仪表 和设备工作正常，并应在选定的指针序列(图4.2.11)中逐步调整 频偏，直到观测到最大峰一峰抖动值，稳定观测120s 后测得的 PDH 支路口最大峰一峰抖动值应符合表4.2.11的规定。",
+      "condition": "",
+      "constraint": "4.2.11  PDH 支路口的结合抖动测试(图4.2.10),应调整仪表\n和设备工作正常，并应在选定的指针序列(图4.2.11)中逐步调整\n频偏，直到观测到最大峰一峰抖动值，稳定观测120s 后测得的\nPDH 支路口最大峰一峰抖动值应符合表4.2.11的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "PDH 支路口的结合抖动测试(图4.2.10),应调整仪表 和设备工作正"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17620,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

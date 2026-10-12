@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047637",
+  "entities": [
+    {
+      "name": "管道现有阴极保护系统和干 扰防护系统的设置、运行参 数及运行状况 管道阴",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "                     管道现有阴极保护系统和干\n                     扰防护系统的设置、运行参\n                 数及运行状况\n\n                                       管道阴极保护系统和干扰\n                                 防护系统运行参数监测\n\n 相邻或交叉的其他埋地金属结构物的阴极保护\n     和干扰防护系统的运行参数和运行状态\n\n                              轨交线路、牵引变电所等分布情况与埋地钢质\n                                          管道的相互位置关系",
+      "type": "语义分解",
+      "subject": "管道现有阴极保护系统和干 扰防护系统的设置、运行参 数及运行状况 管道阴",
+      "action": "",
+      "operation": "管道现有阴极保护系统和干 扰防护系统的设置、运行参 数及运行状况 管道阴极保护系统和干扰 防护系统运行参数监测 相邻或交叉的其他埋地金属结构物的阴极保护 和干扰防护系统的运行参数和运行状态 轨交线路、牵引变电所等分布情况与埋地钢质 管道的相互位置关系",
+      "condition": "",
+      "constraint": "                     管道现有阴极保护系统和干\n                     扰防护系统的设置、运行参\n                 数及运行状况\n\n                                       管道阴极保护系统和干扰\n                                 防护系统运行参数监测\n\n 相邻或交叉的其他埋地金属结构物的阴极保护\n     和干扰防护系统的运行参数和运行状态\n\n                              轨交线路、牵引变电所等分布情况与埋地钢质\n                                          管道的相互位置关系",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道现有阴极保护系统和干 扰防护系统的设置、运行参 数及运行状况 管道阴"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47637,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

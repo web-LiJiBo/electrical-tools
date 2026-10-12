@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042251",
+  "entities": [
+    {
+      "name": "（ 三 ）下属单位（直附属中心、分公司、作业区等）事件调 查组组长由该单",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 三 ）下属单位（直附属中心、分公司、作业区等）事件调\n\n查组组长由该单位主要负责人或者委托业务主管部门负责人担\n\n任，成员为主管部门业务人员组成（成员不少于 2 人）。安全、\n\n工会等相关部门视情况参与。可邀请相关领域技术专家提供技术\n\n支持。",
+      "type": "语义分解",
+      "subject": "（ 三 ）下属单位（直附属中心、分公司、作业区等）事件调 查组组长由该单",
+      "action": "",
+      "operation": "（ 三 ）下属单位（直附属中心、分公司、作业区等）事件调 查组组长由该单位主要负责人或者委托业务主管部门负责人担 任，成员为主管部门业务人员组成（成员不少于 2 人）。安全、 工会等相关部门视情况参与。可邀请相关领域技术专家提供技术 支持。",
+      "condition": "",
+      "constraint": "    （ 三 ）下属单位（直附属中心、分公司、作业区等）事件调\n\n查组组长由该单位主要负责人或者委托业务主管部门负责人担\n\n任，成员为主管部门业务人员组成（成员不少于 2 人）。安全、\n\n工会等相关部门视情况参与。可邀请相关领域技术专家提供技术\n\n支持。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 三 ）下属单位（直附属中心、分公司、作业区等）事件调 查组组长由该单"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42251,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

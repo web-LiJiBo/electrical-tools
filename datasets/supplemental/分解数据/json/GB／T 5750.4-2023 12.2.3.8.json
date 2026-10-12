@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "12.2.3.8",
+  "entities": [
+    {
+      "name": "流注用水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2.3.8 纯水:本方法中所用的纯水均为无酚纯水。无酚水的制备方法如下:于纯水中加入氢氧化钠至pH为12以上，进行蒸馏制备。注:不同品牌或型号仪器的试剂配制有所不同，可根据实际情况进行调整，经方法验证后使用。",
+      "type": "语义分解",
+      "subject": "流注用水",
+      "action": "",
+      "operation": "用pH十二以上蒸馏无酚水试剂调整经方法验证后使用",
+      "condition": "",
+      "constraint": "12.2.3.8 纯水:本方法中所用的纯水均为无酚纯水。无酚水的制备方法如下:于纯水中加入氢氧化钠至pH为12以上，进行蒸馏制备。注:不同品牌或型号仪器的试剂配制有所不同，可根据实际情况进行调整，经方法验证后使用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "流注用水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1481,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

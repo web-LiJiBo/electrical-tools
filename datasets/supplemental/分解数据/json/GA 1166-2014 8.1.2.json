@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.1.2",
+  "entities": [
+    {
+      "name": "二级库站推荐人防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.2 人力防范除符合8.1.1 的规定外 ,宜符合以下规定: a ) 周界主出人口宜配备专职或兼职治安保卫人员 24 h 值守; b) 安防监控中心不接收一级风险部位技术防范系统信息的 ,宜配备兼职治安保卫人员 ,确保24h 有人值机。",
+      "type": "语义分解",
+      "subject": "二级库站推荐人防",
+      "action": "",
+      "operation": "宜主口24小时值守未接一级信息中心也确保24小时有人值机",
+      "condition": "",
+      "constraint": "8.1.2 人力防范除符合8.1.1 的规定外 ,宜符合以下规定: a ) 周界主出人口宜配备专职或兼职治安保卫人员 24 h 值守; b) 安防监控中心不接收一级风险部位技术防范系统信息的 ,宜配备兼职治安保卫人员 ,确保24h 有人值机。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级库站推荐人防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5469,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

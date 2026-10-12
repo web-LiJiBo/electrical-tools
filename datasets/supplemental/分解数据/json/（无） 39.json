@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团能量隔离和锁定管理细则",
+  "standard_id": "（无）",
+  "version": "",
+  "chapter_path": "39",
+  "entities": [
+    {
+      "name": "涉及管线打开的维检修作业编制隔离锁定单(参见附件4),按照作业等级由相关",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "39 涉及管线打开的维检修作业编制隔离锁定单(参见附件4),按照作业等级由相关部门审批。",
+      "type": "语义分解",
+      "subject": "涉及管线打开的维检修作业编制隔离锁定单(参见附件4),按照作业等级由相关",
+      "action": "",
+      "operation": "涉及管线打开的维检修作业编制隔离锁定单(参见附件4),按照作业等级由相关部门审批。",
+      "condition": "",
+      "constraint": "39 涉及管线打开的维检修作业编制隔离锁定单(参见附件4),按照作业等级由相关部门审批。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "涉及管线打开的维检修作业编制隔离锁定单(参见附件4),按照作业等级由相关"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6654,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

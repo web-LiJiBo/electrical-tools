@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021755",
+  "entities": [
+    {
+      "name": "对于线路系统仅使用B型再生中继器的的SDH 线路终端和中继器，或线路系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于线路系统仅使用B型再生中继器的的SDH 线路终端和中继器，或线路系统不使用再生中继器，\n\n应压缩抖动容限。设备应容忍在输入口施加的抖动调制最小值如图189所示模版和表132参数。抖动容\n限压缩的设备跟随A 型中继器链时需要进行抖动压缩，",
+      "type": "语义分解",
+      "subject": "对于线路系统仅使用B型再生中继器的的SDH 线路终端和中继器，或线路系统",
+      "action": "",
+      "operation": "对于线路系统仅使用B型再生中继器的的SDH 线路终端和中继器，或线路系统不使用再生中继器， 应压缩抖动容限。设备应容忍在输入口施加的抖动调制最小值如图189所示模版和表132参数。抖动容 限压缩的设备跟随A 型中继器链时需要进行抖动压缩，",
+      "condition": "",
+      "constraint": "   对于线路系统仅使用B型再生中继器的的SDH 线路终端和中继器，或线路系统不使用再生中继器，\n\n应压缩抖动容限。设备应容忍在输入口施加的抖动调制最小值如图189所示模版和表132参数。抖动容\n限压缩的设备跟随A 型中继器链时需要进行抖动压缩，",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于线路系统仅使用B型再生中继器的的SDH 线路终端和中继器，或线路系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21755,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.2.3.2",
+  "entities": [
+    {
+      "name": "地表水采样计划",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3.2 制定采样计划 制定采样计划前,采样负责人应明确监测任务 目的和要求, 了解监测断面周围情况,熟悉采样方法。水样容器洗涤和样品保存技术。有现场测定项目时, 还应掌握有关现场测定技术。 采样计划应包括: 监测断面(采样垂线和采样点)。监测项目和数量。采样质量保证措施。采样时间和路线。采样人员和分工,采样器具和交通工具以及现场测定项目和安全保证等 遇到地震。台风。洪水等自然灾害情况。可不采样或延期采样,并加以说明",
+      "type": "语义分解",
+      "subject": "地表水采样计划",
+      "action": "",
+      "operation": "明确任务目的环境方法保存现场技术编点项量时线人员工具安全灾害可延期说明",
+      "condition": "",
+      "constraint": "4.2.3.2 制定采样计划 制定采样计划前,采样负责人应明确监测任务 目的和要求, 了解监测断面周围情况,熟悉采样方法。水样容器洗涤和样品保存技术。有现场测定项目时, 还应掌握有关现场测定技术。 采样计划应包括: 监测断面(采样垂线和采样点)。监测项目和数量。采样质量保证措施。采样时间和路线。采样人员和分工,采样器具和交通工具以及现场测定项目和安全保证等 遇到地震。台风。洪水等自然灾害情况。可不采样或延期采样,并加以说明",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地表水采样计划"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2957,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

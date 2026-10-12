@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.2.3",
+  "entities": [
+    {
+      "name": "井位周边勘测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.2.3 应对高压天然气井 ,新区预探井及含硫化氢气井拟定井位周围5 000 m ,探井周围3 000 m ,生产井周围2 000 m 范围内的居民住宅,学校,公路,铁路和厂矿等进行勘测 ,在设计书中标明其位置,并调查500 m 以内的人口分布及其流动情况。",
+      "type": "语义分解",
+      "subject": "井位周边勘测",
+      "action": "",
+      "operation": "按井类别5000或3000或2000米范围勘测设施标注位置调查500米内人口流动",
+      "condition": "",
+      "constraint": "5.2.2.3 应对高压天然气井 ,新区预探井及含硫化氢气井拟定井位周围5 000 m ,探井周围3 000 m ,生产井周围2 000 m 范围内的居民住宅,学校,公路,铁路和厂矿等进行勘测 ,在设计书中标明其位置,并调查500 m 以内的人口分布及其流动情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "井位周边勘测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4281,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；三类范围及适用井型对应须按原文核查"
+      ]
+    }
+  }
+}

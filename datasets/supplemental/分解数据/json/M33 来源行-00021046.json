@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021046",
+  "entities": [
+    {
+      "name": ")图147表示出可连接至VC-m连接功能的原子功能子集",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2)图147表示出可连接至VC-m连接功能的原子功能子集：VC-m 路径终端功能、VC-m非\n   插入监测路径终端宿功能、VC-m 监控未装载路径终端功能、VC-m串接连接路径终端和\n   适配功能。此外，VC-m服务(例如VC-4 或VC-3) 层中的适配功能也将被连接至VC-m\n\n   连接功能。",
+      "type": "语义分解",
+      "subject": ")图147表示出可连接至VC-m连接功能的原子功能子集",
+      "action": "",
+      "operation": ")图147表示出可连接至VC-m连接功能的原子功能子集：VC-m 路径终端功能、VC-m非 插入监测路径终端宿功能、VC-m 监控未装载路径终端功能、VC-m串接连接路径终端和 适配功能。此外，VC-m服务(例如VC-4 或VC-3) 层中的适配功能也将被连接至VC-m 连接功能。",
+      "condition": "",
+      "constraint": "2)图147表示出可连接至VC-m连接功能的原子功能子集：VC-m 路径终端功能、VC-m非\n   插入监测路径终端宿功能、VC-m 监控未装载路径终端功能、VC-m串接连接路径终端和\n   适配功能。此外，VC-m服务(例如VC-4 或VC-3) 层中的适配功能也将被连接至VC-m\n\n   连接功能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")图147表示出可连接至VC-m连接功能的原子功能子集"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21046,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

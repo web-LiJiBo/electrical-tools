@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00042591",
+  "entities": [
+    {
+      "name": "b) 在安装阴极保护电源设备 、电位远传设备及测试桩位置处 ,管道上的持",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    在安装阴极保护电源设备 、电位远传设备及测试桩位置处 ,管道上的持续干扰电压和瞬间干扰\n       电压应低于相应设备 所 能 承 受 的 抗 工 频 干 扰 电 压 和 抗 电 强 度 指 标 , 并 满 足 安 全 接 触 电 压 的\n      要求 。",
+      "type": "语义分解",
+      "subject": "b) 在安装阴极保护电源设备 、电位远传设备及测试桩位置处 ,管道上的持",
+      "action": "",
+      "operation": "b) 在安装阴极保护电源设备 、电位远传设备及测试桩位置处 ,管道上的持续干扰电压和瞬间干扰 电压应低于相应设备 所 能 承 受 的 抗 工 频 干 扰 电 压 和 抗 电 强 度 指 标 , 并 满 足 安 全 接 触 电 压 的 要求 。",
+      "condition": "",
+      "constraint": "b)    在安装阴极保护电源设备 、电位远传设备及测试桩位置处 ,管道上的持续干扰电压和瞬间干扰\n       电压应低于相应设备 所 能 承 受 的 抗 工 频 干 扰 电 压 和 抗 电 强 度 指 标 , 并 满 足 安 全 接 触 电 压 的\n      要求 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 在安装阴极保护电源设备 、电位远传设备及测试桩位置处 ,管道上的持"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42591,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042065",
+  "entities": [
+    {
+      "name": "（ 1）人身伤亡事故，是指在生产经营活动中造成的员工人身 伤亡和急性中毒",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 1）人身伤亡事故，是指在生产经营活动中造成的员工人身\n\n伤亡和急性中毒事故。主要包括高处坠落、物体打击、机械伤害、\n\n起重伤害、触电、淹溺、灼烫、车辆伤害（不包括机动车在道路上\n\n发生的事故）、坍塌、中毒、窒息和其他伤害等类型。",
+      "type": "语义分解",
+      "subject": "（ 1）人身伤亡事故，是指在生产经营活动中造成的员工人身 伤亡和急性中毒",
+      "action": "",
+      "operation": "（ 1）人身伤亡事故，是指在生产经营活动中造成的员工人身 伤亡和急性中毒事故。主要包括高处坠落、物体打击、机械伤害、 起重伤害、触电、淹溺、灼烫、车辆伤害（不包括机动车在道路上 发生的事故）、坍塌、中毒、窒息和其他伤害等类型。",
+      "condition": "",
+      "constraint": "    （ 1）人身伤亡事故，是指在生产经营活动中造成的员工人身\n\n伤亡和急性中毒事故。主要包括高处坠落、物体打击、机械伤害、\n\n起重伤害、触电、淹溺、灼烫、车辆伤害（不包括机动车在道路上\n\n发生的事故）、坍塌、中毒、窒息和其他伤害等类型。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 1）人身伤亡事故，是指在生产经营活动中造成的员工人身 伤亡和急性中毒"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42065,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

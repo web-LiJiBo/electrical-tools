@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.7.5.2",
+  "entities": [
+    {
+      "name": "限制呼吸外壳",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.5.2 限制呼吸外壳 进行过出厂例行检查的限制呼吸外壳应每隔 G个月进行定期的压力测试",
+      "type": "语义分解",
+      "subject": "限制呼吸外壳",
+      "action": "",
+      "operation": "出厂检查后定期压力测试",
+      "condition": "进行过出厂例行检查的限制呼吸外壳",
+      "constraint": "5.7.5.2 限制呼吸外壳 进行过出厂例行检查的限制呼吸外壳应每隔 G个月进行定期的压力测试",
+      "constraint_role": "informational",
+      "related_entities": [
+        "限制呼吸外壳"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4019,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；G个月数值损坏不能改成6个月"
+      ]
+    }
+  }
+}

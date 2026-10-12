@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "8.5",
+  "entities": [
+    {
+      "name": "无组织排放项目",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5 无组织排放监测项目 无组织排放监测项目应参照 GB 16297-1996中的项目选择,监测项目以D.1规定的项目为主,不 同单位可在此基础上,根据实际情况选择其他项日。",
+      "type": "语义分解",
+      "subject": "无组织排放项目",
+      "action": "",
+      "operation": "参照排放标准按实际选择",
+      "condition": "",
+      "constraint": "8.5 无组织排放监测项目 无组织排放监测项目应参照 GB 16297-1996中的项目选择,监测项目以D.1规定的项目为主,不 同单位可在此基础上,根据实际情况选择其他项日。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "无组织排放项目"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 477,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；D.1引用需核对"
+      ]
+    }
+  }
+}

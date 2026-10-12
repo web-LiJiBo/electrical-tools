@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "14",
+  "entities": [
+    {
+      "name": "竣工图在设计图纸基础上编制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       14    竣工图在设计图纸基础上编制。施工中没有对设计图纸\n变更的，设计图纸可作为竣工图纸；个别变动的，可在原设计图纸\n上改绘为竣工图纸；当较大变动或原设计图纸无法改绘时，应重新\n绘制。无论是原施工图纸、改绘图还是重新绘制的竣工图，都需要\n加盖竣工图章。",
+      "type": "语义分解",
+      "subject": "竣工图在设计图纸基础上编制",
+      "action": "",
+      "operation": "竣工图在设计图纸基础上编制。施工中没有对设计图纸 变更的，设计图纸可作为竣工图纸；个别变动的，可在原设计图纸 上改绘为竣工图纸；当较大变动或原设计图纸无法改绘时，应重新 绘制。无论是原施工图纸、改绘图还是重新绘制的竣工图，都需要 加盖竣工图章。",
+      "condition": "",
+      "constraint": "       14    竣工图在设计图纸基础上编制。施工中没有对设计图纸\n变更的，设计图纸可作为竣工图纸；个别变动的，可在原设计图纸\n上改绘为竣工图纸；当较大变动或原设计图纸无法改绘时，应重新\n绘制。无论是原施工图纸、改绘图还是重新绘制的竣工图，都需要\n加盖竣工图章。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "竣工图在设计图纸基础上编制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11462,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040491",
+  "entities": [
+    {
+      "name": "本条所列污染物为有毒有害物质，可溶解于水，如处理 (置)方式不科学，则有",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.4.5      本条所列污染物为有毒有害物质，可溶解于水，如处理\n(置)方式不科学，则有毒有害物质将随水流渗入地下或汇入地表\n水体，导致污染扩散，甚至引发严重的污染事故。因此，涉及该类\n化工危险废物的收集、储存、处理(置)应严格执行现行行业标准\n《危险废物处置工程技术导则》HJ  2042的规定。",
+      "type": "语义分解",
+      "subject": "本条所列污染物为有毒有害物质，可溶解于水，如处理 (置)方式不科学，则有",
+      "action": "",
+      "operation": "本条所列污染物为有毒有害物质，可溶解于水，如处理 (置)方式不科学，则有毒有害物质将随水流渗入地下或汇入地表 水体，导致污染扩散，甚至引发严重的污染事故。因此，涉及该类 化工危险废物的收集、储存、处理(置)应严格执行现行行业标准 《危险废物处置工程技术导则》HJ 2042的规定。",
+      "condition": "",
+      "constraint": "7.4.5      本条所列污染物为有毒有害物质，可溶解于水，如处理\n(置)方式不科学，则有毒有害物质将随水流渗入地下或汇入地表\n水体，导致污染扩散，甚至引发严重的污染事故。因此，涉及该类\n化工危险废物的收集、储存、处理(置)应严格执行现行行业标准\n《危险废物处置工程技术导则》HJ  2042的规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条所列污染物为有毒有害物质，可溶解于水，如处理 (置)方式不科学，则有"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40491,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

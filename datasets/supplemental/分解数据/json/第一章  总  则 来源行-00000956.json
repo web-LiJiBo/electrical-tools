@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团输油管道运营场所土壤及地下水调查评估管理细则",
+  "standard_id": "第一章  总  则",
+  "version": "",
+  "chapter_path": "来源行-00000956",
+  "entities": [
+    {
+      "name": "第二章 机构与职责",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二章  机构与职责",
+      "type": "语义分解",
+      "subject": "第二章 机构与职责",
+      "action": "",
+      "operation": "仅保留标题或术语；具体要求须结合相邻正文",
+      "condition": "",
+      "constraint": "第二章  机构与职责",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二章 机构与职责"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 956,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似标题或术语，不能单独作为判定依据"
+      ]
+    }
+  }
+}

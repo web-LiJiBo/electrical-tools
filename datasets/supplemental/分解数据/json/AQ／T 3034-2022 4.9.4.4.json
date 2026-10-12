@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.4.4",
+  "entities": [
+    {
+      "name": "报警管理系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.4.4 企业应建立报警管理系统 ,设定报警管理的关键指标 ,借助报警管理系统定期统计分析报警 率 ,优化报警设置 ,诚少报警数量",
+      "type": "语义分解",
+      "subject": "报警管理系统",
+      "action": "",
+      "operation": "设指标统计报警率优化设置减少数量",
+      "condition": "",
+      "constraint": "4.9.4.4 企业应建立报警管理系统 ,设定报警管理的关键指标 ,借助报警管理系统定期统计分析报警 率 ,优化报警设置 ,诚少报警数量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报警管理系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5174,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；不能理解为关闭安全报警或随意提高阈值"
+      ]
+    }
+  }
+}

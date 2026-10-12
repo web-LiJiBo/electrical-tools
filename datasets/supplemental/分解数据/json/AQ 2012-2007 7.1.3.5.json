@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.1.3.5",
+  "entities": [
+    {
+      "name": "汛期管道防洪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.3.5 汛期管道管理单位应及时了解输油气管道穿跨越河流上游洪水情况 ,采取防洪措施。上游水利,水库单位如有泄洪 ,应及时告知管道管理单位。",
+      "type": "语义分解",
+      "subject": "汛期管道防洪",
+      "action": "",
+      "operation": "了解上游洪水采取措施泄洪及时告知",
+      "condition": "",
+      "constraint": "7.1.3.5 汛期管道管理单位应及时了解输油气管道穿跨越河流上游洪水情况 ,采取防洪措施。上游水利,水库单位如有泄洪 ,应及时告知管道管理单位。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "汛期管道防洪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4782,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水卫生标准",
+  "standard_id": "GB 5749-2022",
+  "version": "2022",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "饮用水基本水质",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 生活饮用水水质应符合下列基本要求 ,保证用户饮用安全: a) 生活饮用水中不应含有病原微生物; b) 生活饮用水中化学物质不应危害人体健康; c) 生活饮用水中放射性物质不应危害人体健康; 4) 生活饮用水的感官性状良好; e) 生活饮用水应经消毒处理。",
+      "type": "语义分解",
+      "subject": "饮用水基本水质",
+      "action": "",
+      "operation": "无病原危害化学放射物感官良好并消毒",
+      "condition": "",
+      "constraint": "4.1 生活饮用水水质应符合下列基本要求 ,保证用户饮用安全: a) 生活饮用水中不应含有病原微生物; b) 生活饮用水中化学物质不应危害人体健康; c) 生活饮用水中放射性物质不应危害人体健康; 4) 生活饮用水的感官性状良好; e) 生活饮用水应经消毒处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "饮用水基本水质"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 978,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

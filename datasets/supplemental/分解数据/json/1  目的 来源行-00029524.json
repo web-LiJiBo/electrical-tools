@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "来源行-00029524",
+  "entities": [
+    {
+      "name": "m ）在执行监督检查工作中，有权制止和纠正现场违反安全生 产制度规定、操",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     m ）在执行监督检查工作中，有权制止和纠正现场违反安全生\n\n产制度规定、操作规程的行为，并提出整改意见，对存在的违章或\n\n履职不到位的情形向所在单位提出处理建议，  责成其按管理权限\n\n和实际情况作出处理，  并报集团公司安全环保监督中心备案。",
+      "type": "语义分解",
+      "subject": "m ）在执行监督检查工作中，有权制止和纠正现场违反安全生 产制度规定、操",
+      "action": "",
+      "operation": "m ）在执行监督检查工作中，有权制止和纠正现场违反安全生 产制度规定、操作规程的行为，并提出整改意见，对存在的违章或 履职不到位的情形向所在单位提出处理建议， 责成其按管理权限 和实际情况作出处理， 并报集团公司安全环保监督中心备案。",
+      "condition": "",
+      "constraint": "     m ）在执行监督检查工作中，有权制止和纠正现场违反安全生\n\n产制度规定、操作规程的行为，并提出整改意见，对存在的违章或\n\n履职不到位的情形向所在单位提出处理建议，  责成其按管理权限\n\n和实际情况作出处理，  并报集团公司安全环保监督中心备案。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "m ）在执行监督检查工作中，有权制止和纠正现场违反安全生 产制度规定、操"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29524,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

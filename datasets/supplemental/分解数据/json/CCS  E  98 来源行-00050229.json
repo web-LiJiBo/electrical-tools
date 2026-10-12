@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050229",
+  "entities": [
+    {
+      "name": "本条规定了环氧玻璃钢防护层涂敷的基本要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3   本条规定了环氧玻璃钢防护层涂敷的基本要求。编制的\n施工工艺规程应就如何实现该要求进行规定。此外，本条规定\n了非连续涂敷防护层在主体外防腐层上预留防护层空白段距离。\n7.2.4   本条规定了玻璃钢防护层修补和重涂要求。\n7.2.5   本条规定了补口处防护层的搭接要求。",
+      "type": "语义分解",
+      "subject": "本条规定了环氧玻璃钢防护层涂敷的基本要求",
+      "action": "",
+      "operation": "本条规定了环氧玻璃钢防护层涂敷的基本要求。编制的 施工工艺规程应就如何实现该要求进行规定。此外，本条规定 了非连续涂敷防护层在主体外防腐层上预留防护层空白段距离。 7.2.4 本条规定了玻璃钢防护层修补和重涂要求。 7.2.5 本条规定了补口处防护层的搭接要求。",
+      "condition": "",
+      "constraint": "7.2.3   本条规定了环氧玻璃钢防护层涂敷的基本要求。编制的\n施工工艺规程应就如何实现该要求进行规定。此外，本条规定\n了非连续涂敷防护层在主体外防腐层上预留防护层空白段距离。\n7.2.4   本条规定了玻璃钢防护层修补和重涂要求。\n7.2.5   本条规定了补口处防护层的搭接要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条规定了环氧玻璃钢防护层涂敷的基本要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50229,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "6.4.2",
+  "entities": [
+    {
+      "name": "土壤风险点数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.2 风险监测点位数量 每个土壤环境风险监测单元的土壤布点数量根据监测目的,污染源规模,影响范围和污染类型等因素确定, 一般不少于3个点位。已确认有污染的历史点位应尽量保留",
+      "type": "语义分解",
+      "subject": "土壤风险点数",
+      "action": "",
+      "operation": "依目的污染源影响因素通常至少三点尽量保留已污染历史点",
+      "condition": "",
+      "constraint": "6.4.2 风险监测点位数量 每个土壤环境风险监测单元的土壤布点数量根据监测目的,污染源规模,影响范围和污染类型等因素确定, 一般不少于3个点位。已确认有污染的历史点位应尽量保留",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤风险点数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2213,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

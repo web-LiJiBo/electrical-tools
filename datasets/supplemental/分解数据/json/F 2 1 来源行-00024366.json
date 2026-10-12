@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00024366",
+  "entities": [
+    {
+      "name": "本标准主要起草人",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      本标准主要起草人：张鑫、王艺桦、  卜宪德、黄鑫、张官元、李芹、汤效军、许俊现、卓文合、周立逾、\n罗威、郭雅娟、姚楠、李炳林、史燕平、郑王里、朱道华、马莹、孔红磊、蔡越、张少平、安进朝、张伟、刘伟、\n李常礼、陈扬阳、赵燕、赵若涵。",
+      "type": "语义分解",
+      "subject": "本标准主要起草人",
+      "action": "",
+      "operation": "本标准主要起草人：张鑫、王艺桦、 卜宪德、黄鑫、张官元、李芹、汤效军、许俊现、卓文合、周立逾、 罗威、郭雅娟、姚楠、李炳林、史燕平、郑王里、朱道华、马莹、孔红磊、蔡越、张少平、安进朝、张伟、刘伟、 李常礼、陈扬阳、赵燕、赵若涵。",
+      "condition": "",
+      "constraint": "      本标准主要起草人：张鑫、王艺桦、  卜宪德、黄鑫、张官元、李芹、汤效军、许俊现、卓文合、周立逾、\n罗威、郭雅娟、姚楠、李炳林、史燕平、郑王里、朱道华、马莹、孔红磊、蔡越、张少平、安进朝、张伟、刘伟、\n李常礼、陈扬阳、赵燕、赵若涵。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本标准主要起草人"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_022",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 24366,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

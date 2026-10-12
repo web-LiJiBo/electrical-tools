@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042240",
+  "entities": [
+    {
+      "name": "件（包括承包商安全、环境事故事件），按照签订的年度安全环 保责任书的条款",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "件（包括承包商安全、环境事故事件），按照签订的年度安全环\n\n保责任书的条款，对相关负责人按照事故严重程度执行先免后查\n\n（按照《国家管网集团员工违规行为处理规定》第十一条组织处\n\n理的免职执行）或停职配合调查，待调查报告审议通过后，根据\n\n责任认定结果，按照干部管理权限范围，向相关层级的人事、纪\n\n检等相关部门移交调查处理意见。",
+      "type": "语义分解",
+      "subject": "件（包括承包商安全、环境事故事件），按照签订的年度安全环 保责任书的条款",
+      "action": "",
+      "operation": "件（包括承包商安全、环境事故事件），按照签订的年度安全环 保责任书的条款，对相关负责人按照事故严重程度执行先免后查 （按照《国家管网集团员工违规行为处理规定》第十一条组织处 理的免职执行）或停职配合调查，待调查报告审议通过后，根据 责任认定结果，按照干部管理权限范围，向相关层级的人事、纪 检等相关部门移交调查处理意见。",
+      "condition": "",
+      "constraint": "件（包括承包商安全、环境事故事件），按照签订的年度安全环\n\n保责任书的条款，对相关负责人按照事故严重程度执行先免后查\n\n（按照《国家管网集团员工违规行为处理规定》第十一条组织处\n\n理的免职执行）或停职配合调查，待调查报告审议通过后，根据\n\n责任认定结果，按照干部管理权限范围，向相关层级的人事、纪\n\n检等相关部门移交调查处理意见。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "件（包括承包商安全、环境事故事件），按照签订的年度安全环 保责任书的条款"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42240,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

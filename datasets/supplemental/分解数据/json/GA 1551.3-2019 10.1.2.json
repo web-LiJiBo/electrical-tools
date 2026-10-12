@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "10.1.2",
+  "entities": [
+    {
+      "name": "储库出入口警戒",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.2 在储油(气)库区周界出入口应设置警戒区 .限制人员 ,车辆进出 加强对出入库区人员及车辆所携带物品的监督检查。",
+      "type": "语义分解",
+      "subject": "储库出入口警戒",
+      "action": "",
+      "operation": "设置警戒区限制出入并加强检查",
+      "condition": "",
+      "constraint": "10.1.2 在储油(气)库区周界出入口应设置警戒区 .限制人员 ,车辆进出 加强对出入库区人员及车辆所携带物品的监督检查。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储库出入口警戒"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5750,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

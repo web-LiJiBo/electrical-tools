@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.1.5.1",
+  "entities": [
+    {
+      "name": "呼吸器存放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5.1 正压式空气呼吸器应存放在易于取用的地点 存放地点应有醒目标志, 且清浩 卫生。阴凉 干燥。免受污染和碰撞。",
+      "type": "语义分解",
+      "subject": "呼吸器存放",
+      "action": "",
+      "operation": "易取醒目标洁净阴凉干燥免污染碰撞",
+      "condition": "",
+      "constraint": "5.1.5.1 正压式空气呼吸器应存放在易于取用的地点 存放地点应有醒目标志, 且清浩 卫生。阴凉 干燥。免受污染和碰撞。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "呼吸器存放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7421,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

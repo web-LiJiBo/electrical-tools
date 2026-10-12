@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016945",
+  "entities": [
+    {
+      "name": "TCMi-BIP8为段监视比特交叉奇偶校验-8,TCMi 采用1字节来表",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       TCMi-BIP8为段监视比特交叉奇偶校验-8,TCMi 采用1字节来表示误码检测编码。TCMi-BEI为段\n监视后向误码指示，TCMi 采用4bit 共同表示BEI 和BIAE ( 该4bit为“1011”时表示BIAE,   此时BEI 统\n\n计无效)。",
+      "type": "语义分解",
+      "subject": "TCMi-BIP8为段监视比特交叉奇偶校验-8,TCMi 采用1字节来表",
+      "action": "",
+      "operation": "TCMi-BIP8为段监视比特交叉奇偶校验-8,TCMi 采用1字节来表示误码检测编码。TCMi-BEI为段 监视后向误码指示，TCMi 采用4bit 共同表示BEI 和BIAE ( 该4bit为“1011”时表示BIAE, 此时BEI 统 计无效)。",
+      "condition": "",
+      "constraint": "       TCMi-BIP8为段监视比特交叉奇偶校验-8,TCMi 采用1字节来表示误码检测编码。TCMi-BEI为段\n监视后向误码指示，TCMi 采用4bit 共同表示BEI 和BIAE ( 该4bit为“1011”时表示BIAE,   此时BEI 统\n\n计无效)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "TCMi-BIP8为段监视比特交叉奇偶校验-8,TCMi 采用1字节来表"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16945,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

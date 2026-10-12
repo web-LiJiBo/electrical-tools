@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042204",
+  "entities": [
+    {
+      "name": "（ 四）发生亡人事故或一般 A 级及以上事故，集团公司应急 值班室应抄送",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 四）发生亡人事故或一般 A 级及以上事故，集团公司应急\n\n值班室应抄送集团公司安全环保部，所属企业也应同时向集团公\n\n司安全环保部报告；集团公司安全环保部应向集团公司分管安全\n\n工作的副总经理报告。",
+      "type": "语义分解",
+      "subject": "（ 四）发生亡人事故或一般 A 级及以上事故，集团公司应急 值班室应抄送",
+      "action": "",
+      "operation": "（ 四）发生亡人事故或一般 A 级及以上事故，集团公司应急 值班室应抄送集团公司安全环保部，所属企业也应同时向集团公 司安全环保部报告；集团公司安全环保部应向集团公司分管安全 工作的副总经理报告。",
+      "condition": "",
+      "constraint": "    （ 四）发生亡人事故或一般 A 级及以上事故，集团公司应急\n\n值班室应抄送集团公司安全环保部，所属企业也应同时向集团公\n\n司安全环保部报告；集团公司安全环保部应向集团公司分管安全\n\n工作的副总经理报告。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 四）发生亡人事故或一般 A 级及以上事故，集团公司应急 值班室应抄送"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42204,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

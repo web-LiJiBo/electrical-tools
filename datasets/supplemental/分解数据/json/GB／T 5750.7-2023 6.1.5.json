@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "6.1.5",
+  "entities": [
+    {
+      "name": "石油称量浓度计算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5 试验数据处理 水样中石油的质量浓度计算见式(18) : (11  D0)X1000 义1000 V 18 式中: 水中石油的质量浓度 ,单位为毫克每升(m8/) ; 1721 烧杯和萃取物质量,单位为克(8) ; 1720 烧杯质量 ,单位为克(8) ; 水样体积 ,单位为毫升 (mI) 。",
+      "type": "语义分解",
+      "subject": "石油称量浓度计算",
+      "action": "",
+      "operation": "按烧杯萃取物质量差及样体积计算",
+      "condition": "",
+      "constraint": "6.1.5 试验数据处理 水样中石油的质量浓度计算见式(18) : (11  D0)X1000 义1000 V 18 式中: 水中石油的质量浓度 ,单位为毫克每升(m8/) ; 1721 烧杯和萃取物质量,单位为克(8) ; 1720 烧杯质量 ,单位为克(8) ; 水样体积 ,单位为毫升 (mI) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石油称量浓度计算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1804,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式18及变量单位破损"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "7.3.2",
+  "entities": [
+    {
+      "name": "裸露管道实体防范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.2 实体防范除符合6.2的规定外 ,还应在裸露管道易攀爬部位设置具有防攀爬功能的实体防范设 施 ,并设置警示牌",
+      "type": "语义分解",
+      "subject": "裸露管道实体防范",
+      "action": "",
+      "operation": "易攀爬部位设防攀爬设施警示牌",
+      "condition": "",
+      "constraint": "7.3.2 实体防范除符合6.2的规定外 ,还应在裸露管道易攀爬部位设置具有防攀爬功能的实体防范设 施 ,并设置警示牌",
+      "constraint_role": "informational",
+      "related_entities": [
+        "裸露管道实体防范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5462,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

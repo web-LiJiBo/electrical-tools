@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "5",
+  "entities": [
+    {
+      "name": "安全防范级别 安全防范级别由高到低划分为一级 ,二级和三级",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5 安全防范级别 安全防范级别由高到低划分为一级 ,二级和三级。 管道系统部位的安全防范级别应与该部位治安 风险等级相适应,即一级风险部位应满足一级安全防范要求,二级风险部位应不低于二级安全防范要 求 ,三级风险部位应不低于三级安全防范要求。",
+      "type": "语义分解",
+      "subject": "安全防范级别 安全防范级别由高到低划分为一级 ,二级和三级",
+      "action": "",
+      "operation": "安全防范级别 安全防范级别由高到低划分为一级 ,二级和三级。 管道系统部位的安全防范级别应与该部位治安 风险等级相适应,即一级风险部位应满足一级安全防范要求,二级风险部位应不低于二级安全防范要 求 ,三级风险部位应不低于三级安全防范要求。",
+      "condition": "",
+      "constraint": "5 安全防范级别 安全防范级别由高到低划分为一级 ,二级和三级。 管道系统部位的安全防范级别应与该部位治安 风险等级相适应,即一级风险部位应满足一级安全防范要求,二级风险部位应不低于二级安全防范要 求 ,三级风险部位应不低于三级安全防范要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全防范级别 安全防范级别由高到低划分为一级 ,二级和三级"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5424,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "7.2.6",
+  "entities": [
+    {
+      "name": "超长距离波分指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.6  依据现行行业标准《N×10Gbit/s      超长距离波分复用",
+      "type": "语义分解",
+      "subject": "超长距离波分指标",
+      "action": "",
+      "operation": "保留引用依据残文",
+      "condition": "",
+      "constraint": "7.2.6  依据现行行业标准《N×10Gbit/s      超长距离波分复用",
+      "constraint_role": "informational",
+      "related_entities": [
+        "超长距离波分指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9352,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准名称截断编号待核对"
+      ]
+    }
+  }
+}

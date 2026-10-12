@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00029900",
+  "entities": [
+    {
+      "name": "e) 对可能影响结构正常工作的构件，评价其在下一次检查之前的退化情况",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " e) 对可能影响结构正常工作的构件，评价其在下一次检查之前的退化情况；\n f)  检测跨越基础处河道的淤积、冲刷等现象；\n g) 必要时进行荷载试验和分析评估；",
+      "type": "语义分解",
+      "subject": "e) 对可能影响结构正常工作的构件，评价其在下一次检查之前的退化情况",
+      "action": "",
+      "operation": "e) 对可能影响结构正常工作的构件，评价其在下一次检查之前的退化情况； f) 检测跨越基础处河道的淤积、冲刷等现象； g) 必要时进行荷载试验和分析评估",
+      "condition": "",
+      "constraint": " e) 对可能影响结构正常工作的构件，评价其在下一次检查之前的退化情况；\n f)  检测跨越基础处河道的淤积、冲刷等现象；\n g) 必要时进行荷载试验和分析评估；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "e) 对可能影响结构正常工作的构件，评价其在下一次检查之前的退化情况"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29900,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "5.1.5",
+  "entities": [
+    {
+      "name": "应按照 GB 32167进行高后果区识别,对不同类型的高后果区选择安装相",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5    应按照 GB  32167进行高后果区识别,对不同类型的高后果区选择安装相应的安全预警技术和\n技术组合。  对于人口密集区、  敏感环境的Ⅲ级高后果区,  以及特定场所等重点地段宜采用多种技术防\n护措施复合预警,  应通过技术组合实现纵深防护。",
+      "type": "语义分解",
+      "subject": "应按照 GB 32167进行高后果区识别,对不同类型的高后果区选择安装相",
+      "action": "",
+      "operation": "应按照 GB 32167进行高后果区识别,对不同类型的高后果区选择安装相应的安全预警技术和 技术组合。 对于人口密集区、 敏感环境的Ⅲ级高后果区, 以及特定场所等重点地段宜采用多种技术防 护措施复合预警, 应通过技术组合实现纵深防护。",
+      "condition": "",
+      "constraint": "5.1.5    应按照 GB  32167进行高后果区识别,对不同类型的高后果区选择安装相应的安全预警技术和\n技术组合。  对于人口密集区、  敏感环境的Ⅲ级高后果区,  以及特定场所等重点地段宜采用多种技术防\n护措施复合预警,  应通过技术组合实现纵深防护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应按照 GB 32167进行高后果区识别,对不同类型的高后果区选择安装相"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41598,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

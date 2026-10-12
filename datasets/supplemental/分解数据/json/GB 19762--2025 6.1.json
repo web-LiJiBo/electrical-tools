@@ -1,0 +1,39 @@
+{
+  "standard_name": "离心泵能效限定值及能效等级",
+  "standard_id": "GB 19762--2025",
+  "version": "2025",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "离心泵",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 离心泵比转数的计算以离心泵在最高效率点的转速、叶轮入口的流量和最大叶轮直径时单级扬程表示的比转数按公式(1)计算: ns = 3.65n√Q / H^(3/4) ，式中: ns为比转数；n为泵转速，单位为转每分(r/min)；Q为流量(双吸泵计算时取1/2流量)，单位为立方米每秒(m³/s)；H为扬程(多级泵计算时取单级扬程)，单位为米(m)。",
+      "type": "语义分解",
+      "subject": "离心泵",
+      "action": "",
+      "operation": "按最高效率点参数计算比转数",
+      "condition": "双吸泵计算时",
+      "constraint": "取1/2流量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "离心泵"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "原公式保留；多级泵用单级扬程；本批不执行数学表达式"
+      ]
+    }
+  }
+}

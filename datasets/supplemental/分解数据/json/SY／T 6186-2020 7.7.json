@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "7.7",
+  "entities": [
+    {
+      "name": "施工环境安全",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7 施工单位应根据不同施工阶段和周围环境及季节。 气候的变化;在施工现场采取相应的安全施 工措施。施工过程中应加强测量与监测,保证施工安全。",
+      "type": "语义分解",
+      "subject": "施工环境安全",
+      "action": "",
+      "operation": "按阶段环境季气措施测量监测",
+      "condition": "",
+      "constraint": "7.7 施工单位应根据不同施工阶段和周围环境及季节。 气候的变化;在施工现场采取相应的安全施 工措施。施工过程中应加强测量与监测,保证施工安全。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工环境安全"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7369,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.12.7",
+  "entities": [
+    {
+      "name": "供电选型管理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.7 供电设备选型与供电管理设计应符合下列规定: 1 应做好安全防范系统的供电设施的各类安装标识和运行标识;做好系统的能效管理和环保配置(如降低噪声等)，应选择具有较高能效比和高功率因数的负载、变换器; 2 供电设备的供电能力应与所供电的安全防范子系统或设备的额定功率相适应; 3 应遵循安全、可靠、经济、适用、可管理、认证的原则进行选型配置供电设备。",
+      "type": "语义分解",
+      "subject": "供电选型管理",
+      "action": "",
+      "operation": "标识高能效低噪功率因数能力适配安全可靠经济适用可管认证",
+      "condition": "",
+      "constraint": "6.12.7 供电设备选型与供电管理设计应符合下列规定: 1 应做好安全防范系统的供电设施的各类安装标识和运行标识;做好系统的能效管理和环保配置(如降低噪声等)，应选择具有较高能效比和高功率因数的负载、变换器; 2 供电设备的供电能力应与所供电的安全防范子系统或设备的额定功率相适应; 3 应遵循安全、可靠、经济、适用、可管理、认证的原则进行选型配置供电设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "供电选型管理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7049,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

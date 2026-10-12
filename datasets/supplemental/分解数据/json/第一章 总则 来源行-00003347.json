@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金仪表系统管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003347",
+  "entities": [
+    {
+      "name": "第二十五条 SIS功能验证测试前,应明确以下内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十五条 SIS功能验证测试前,应明确以下内容:(一)测试时间;(二)测试准备或测试条件;(三)测试机构,测试人员及职责;(四)测试方法;(五)每个传感器和最终元件的正确操作;(六)正确的逻辑动作(逻辑动作应满足SIS安全要求,宜满足Q/GGW 02034的要求);(七)正确的报警和指示。",
+      "type": "语义分解",
+      "subject": "第二十五条 SIS功能验证测试前,应明确以下内容",
+      "action": "",
+      "operation": "第二十五条 SIS功能验证测试前,应明确以下内容:(一)测试时间;(二)测试准备或测试条件;(三)测试机构,测试人员及职责;(四)测试方法;(五)每个传感器和最终元件的正确操作;(六)正确的逻辑动作(逻辑动作应满足SIS安全要求,宜满足Q/GGW 02034的要求);(七)正确的报警和指示。",
+      "condition": "",
+      "constraint": "第二十五条 SIS功能验证测试前,应明确以下内容:(一)测试时间;(二)测试准备或测试条件;(三)测试机构,测试人员及职责;(四)测试方法;(五)每个传感器和最终元件的正确操作;(六)正确的逻辑动作(逻辑动作应满足SIS安全要求,宜满足Q/GGW 02034的要求);(七)正确的报警和指示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十五条 SIS功能验证测试前,应明确以下内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3347,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

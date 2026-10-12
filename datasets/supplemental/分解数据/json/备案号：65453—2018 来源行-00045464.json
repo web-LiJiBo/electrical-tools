@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045464",
+  "entities": [
+    {
+      "name": "E.1.1 交流电流衰减法 ( ACAS) 适用于远离高压交流输电线 地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E.1.1    交流电流衰减法 ( ACAS)  适用于远离高压交流输电线\n地区，交变磁场能穿透覆盖层的管道外防腐层质量检测。该方\n法不适用于钢套管、钢丝网加强的混凝土配重层(套管)。\nE.1.2   根据电流衰减的斜率可定性确定各段管道防腐层质量的\n差异；可给出对埋地管道的位置、埋深、分支、外部金属构筑\n物搭接，以及大的防腐层破损等信息。",
+      "type": "语义分解",
+      "subject": "E.1.1 交流电流衰减法 ( ACAS) 适用于远离高压交流输电线 地",
+      "action": "",
+      "operation": "E.1.1 交流电流衰减法 ( ACAS) 适用于远离高压交流输电线 地区，交变磁场能穿透覆盖层的管道外防腐层质量检测。该方 法不适用于钢套管、钢丝网加强的混凝土配重层(套管)。 E.1.2 根据电流衰减的斜率可定性确定各段管道防腐层质量的 差异；可给出对埋地管道的位置、埋深、分支、外部金属构筑 物搭接，以及大的防腐层破损等信息。",
+      "condition": "",
+      "constraint": "E.1.1    交流电流衰减法 ( ACAS)  适用于远离高压交流输电线\n地区，交变磁场能穿透覆盖层的管道外防腐层质量检测。该方\n法不适用于钢套管、钢丝网加强的混凝土配重层(套管)。\nE.1.2   根据电流衰减的斜率可定性确定各段管道防腐层质量的\n差异；可给出对埋地管道的位置、埋深、分支、外部金属构筑\n物搭接，以及大的防腐层破损等信息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E.1.1 交流电流衰减法 ( ACAS) 适用于远离高压交流输电线 地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45464,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

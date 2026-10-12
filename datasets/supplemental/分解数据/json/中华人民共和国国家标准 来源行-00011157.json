@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00011157",
+  "entities": [
+    {
+      "name": "规范单通路接口目标是对特定的应用代码能够实现横向兼容 性(多运营商),可",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   规范单通路接口目标是对特定的应用代码能够实现横向兼容\n性(多运营商),可 在G.652 、G.653  和 G.655  光纤上承载 NRZ\n2.5G 、NRZ 10G或 NRZ 40G 光支路信号。单通路域间接口分为\n局内、短矩、长距、甚长距和超长距，详见表9～表13所列的应用\n\n分类。",
+      "type": "语义分解",
+      "subject": "规范单通路接口目标是对特定的应用代码能够实现横向兼容 性(多运营商),可",
+      "action": "",
+      "operation": "规范单通路接口目标是对特定的应用代码能够实现横向兼容 性(多运营商),可 在G.652 、G.653 和 G.655 光纤上承载 NRZ 2.5G 、NRZ 10G或 NRZ 40G 光支路信号。单通路域间接口分为 局内、短矩、长距、甚长距和超长距，详见表9～表13所列的应用 分类。",
+      "condition": "",
+      "constraint": "   规范单通路接口目标是对特定的应用代码能够实现横向兼容\n性(多运营商),可 在G.652 、G.653  和 G.655  光纤上承载 NRZ\n2.5G 、NRZ 10G或 NRZ 40G 光支路信号。单通路域间接口分为\n局内、短矩、长距、甚长距和超长距，详见表9～表13所列的应用\n\n分类。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "规范单通路接口目标是对特定的应用代码能够实现横向兼容 性(多运营商),可"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11157,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

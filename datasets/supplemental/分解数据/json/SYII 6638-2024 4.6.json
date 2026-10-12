@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "4.6",
+  "entities": [
+    {
+      "name": "输气管道及地下储气库能耗",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6 输气管道和地下储气库能耗的计算应符合 GBIT 2589 的规定。计算方法见附录 A。各种能源和耗能工质的折标准煤系数的取值见附录B。",
+      "type": "语义分解",
+      "subject": "输气管道及地下储气库能耗",
+      "action": "",
+      "operation": "按引用规定计算及折标",
+      "condition": "",
+      "constraint": "4.6 输气管道和地下储气库能耗的计算应符合 GBIT 2589 的规定。计算方法见附录 A。各种能源和耗能工质的折标准煤系数的取值见附录B。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输气管道及地下储气库能耗"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 264,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺附录A、B及引用内容"
+      ]
+    }
+  }
+}

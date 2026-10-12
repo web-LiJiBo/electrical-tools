@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营企业安全技术基本要求",
+  "standard_id": "GB 18265--2019",
+  "version": "2019",
+  "chapter_path": "5.3.3",
+  "entities": [
+    {
+      "name": "备货库房电气设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.3 备货库房照明设施 ,电气设备的配电箱及电气开关应设置在库外,并应可靠接地 ,安装过压,过载 触电 ,漏电保护设施 ,采取防雨 ,防潮保护措施。",
+      "type": "语义分解",
+      "subject": "备货库房电气设施",
+      "action": "",
+      "operation": "开关配电箱置外并接地多重保护防雨潮",
+      "condition": "",
+      "constraint": "5.3.3 备货库房照明设施 ,电气设备的配电箱及电气开关应设置在库外,并应可靠接地 ,安装过压,过载 触电 ,漏电保护设施 ,采取防雨 ,防潮保护措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "备货库房电气设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3794,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

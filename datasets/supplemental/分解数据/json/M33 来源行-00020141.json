@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020141",
+  "entities": [
+    {
+      "name": "适配功能按现有准同步体系的等级加以规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   适配功能按现有准同步体系的等级加以规范。每种适配功能定义了用户信号映射进某种适当规模的\n同步容器 C-n 的方法，容器的规模是按便于把各种准同步信号映射进容器而选定的，见表63。把用户\n数据映射进容器的详细规范在ITU-T G.707中给出。",
+      "type": "语义分解",
+      "subject": "适配功能按现有准同步体系的等级加以规范",
+      "action": "",
+      "operation": "适配功能按现有准同步体系的等级加以规范。每种适配功能定义了用户信号映射进某种适当规模的 同步容器 C-n 的方法，容器的规模是按便于把各种准同步信号映射进容器而选定的，见表63。把用户 数据映射进容器的详细规范在ITU-T G.707中给出。",
+      "condition": "",
+      "constraint": "   适配功能按现有准同步体系的等级加以规范。每种适配功能定义了用户信号映射进某种适当规模的\n同步容器 C-n 的方法，容器的规模是按便于把各种准同步信号映射进容器而选定的，见表63。把用户\n数据映射进容器的详细规范在ITU-T G.707中给出。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "适配功能按现有准同步体系的等级加以规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20141,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

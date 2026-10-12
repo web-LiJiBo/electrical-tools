@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012930",
+  "entities": [
+    {
+      "name": "b) 对 BIS 指标达到ITU-T M.2101.1规定而不满足本可选",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      b)  对 BIS 指标达到ITU-T M.2101.1规定而不满足本可选方法要求的通道，将判为不能投入业务。\n但这种通道的交付指标是以5000km 为计算长度的，因此在互连成更长通道时，由于复用段指标按ITU-T\nM.2101.1 是十分严格的，所以达到 ITU-T M.2101.1 对更长通道的要求是可以预期的。",
+      "type": "语义分解",
+      "subject": "b) 对 BIS 指标达到ITU-T M.2101.1规定而不满足本可选",
+      "action": "",
+      "operation": "b) 对 BIS 指标达到ITU-T M.2101.1规定而不满足本可选方法要求的通道，将判为不能投入业务。 但这种通道的交付指标是以5000km 为计算长度的，因此在互连成更长通道时，由于复用段指标按ITU-T M.2101.1 是十分严格的，所以达到 ITU-T M.2101.1 对更长通道的要求是可以预期的。",
+      "condition": "",
+      "constraint": "      b)  对 BIS 指标达到ITU-T M.2101.1规定而不满足本可选方法要求的通道，将判为不能投入业务。\n但这种通道的交付指标是以5000km 为计算长度的，因此在互连成更长通道时，由于复用段指标按ITU-T\nM.2101.1 是十分严格的，所以达到 ITU-T M.2101.1 对更长通道的要求是可以预期的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 对 BIS 指标达到ITU-T M.2101.1规定而不满足本可选"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12930,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023338",
+  "entities": [
+    {
+      "name": "所以，冲击电流或雷电流通过接地体向大地散流时，不再是用 工频接地电阻，而",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   所以，冲击电流或雷电流通过接地体向大地散流时，不再是用\n工频接地电阻，而是用冲击接地电阻来度量冲击接地的作用。接\n地装置对地冲击电压的幅值与冲击电流幅值之比则称为冲击接地\n电阻。由上述冲击接地电阻的定义可以看出，冲击接地电阻是一",
+      "type": "语义分解",
+      "subject": "所以，冲击电流或雷电流通过接地体向大地散流时，不再是用 工频接地电阻，而",
+      "action": "",
+      "operation": "所以，冲击电流或雷电流通过接地体向大地散流时，不再是用 工频接地电阻，而是用冲击接地电阻来度量冲击接地的作用。接 地装置对地冲击电压的幅值与冲击电流幅值之比则称为冲击接地 电阻。由上述冲击接地电阻的定义可以看出，冲击接地电阻是一",
+      "condition": "",
+      "constraint": "   所以，冲击电流或雷电流通过接地体向大地散流时，不再是用\n工频接地电阻，而是用冲击接地电阻来度量冲击接地的作用。接\n地装置对地冲击电压的幅值与冲击电流幅值之比则称为冲击接地\n电阻。由上述冲击接地电阻的定义可以看出，冲击接地电阻是一",
+      "constraint_role": "informational",
+      "related_entities": [
+        "所以，冲击电流或雷电流通过接地体向大地散流时，不再是用 工频接地电阻，而"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23338,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

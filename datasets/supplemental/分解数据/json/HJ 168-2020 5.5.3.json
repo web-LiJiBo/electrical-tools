@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "5.5.3",
+  "entities": [
+    {
+      "name": "方法测定下限",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.3 测定下限应尽可能满足生态环境质量标准,生态环境风险管控标准,污染物排放标准国际履约等生态环境管理工作中对目标物的最低限值浓度〈含量)水平的测定要求",
+      "type": "语义分解",
+      "subject": "方法测定下限",
+      "action": "",
+      "operation": "尽可能满足管理要求的最低浓度测定",
+      "condition": "",
+      "constraint": "5.5.3 测定下限应尽可能满足生态环境质量标准,生态环境风险管控标准,污染物排放标准国际履约等生态环境管理工作中对目标物的最低限值浓度〈含量)水平的测定要求",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方法测定下限"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2318,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

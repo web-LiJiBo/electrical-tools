@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018466",
+  "entities": [
+    {
+      "name": "—Sms",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—Sms:VC-m(m=       12) 通道层监测未装载[VC-m( m=12)   path layer supervisory-unequipped];\n— Sn:VC-n 层 ( n=3、4、4-Xc)[VC-n  layer(n=3,4,4-Xc)or  lower  order VC-3  Layer];\n— SnP:VC-n(n=3,4,4-Xc)            路径保护子层[VC-n(n=3,4,4-Xc)trail     protection     sublayer];\n— SnD:  符合ITU-T G707/Y.1322附录D ( 选项2)TCM定义的VC-n通道 ( n=3,4,4-Xc)       串\n   接连接子层[VC-n(n=3,4,4-Xc)tandem connection sublayer using TCM definition according to\n       Annex  D/G707/Y.1322(option  2)];",
+      "type": "语义分解",
+      "subject": "—Sms",
+      "action": "",
+      "operation": "—Sms:VC-m(m= 12) 通道层监测未装载[VC-m( m=12) path layer supervisory-unequipped]; — Sn:VC-n 层 ( n=3、4、4-Xc)[VC-n layer(n=3,4,4-Xc)or lower order VC-3 Layer]; — SnP:VC-n(n=3,4,4-Xc) 路径保护子层[VC-n(n=3,4,4-Xc)trail protection sublayer]; — SnD: 符合ITU-T G",
+      "condition": "",
+      "constraint": "—Sms:VC-m(m=       12) 通道层监测未装载[VC-m( m=12)   path layer supervisory-unequipped];\n— Sn:VC-n 层 ( n=3、4、4-Xc)[VC-n  layer(n=3,4,4-Xc)or  lower  order VC-3  Layer];\n— SnP:VC-n(n=3,4,4-Xc)            路径保护子层[VC-n(n=3,4,4-Xc)trail     protection     sublayer];\n— SnD:  符合ITU-T G707/Y.1322附录D ( 选项2)TCM定义的VC-n通道 ( n=3,4,4-Xc)       串\n   接连接子层[VC-n(n=3,4,4-Xc)tandem connection sublayer using TCM definition according to\n       Annex  D/G707/Y.1322(option  2)];",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—Sms"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18466,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

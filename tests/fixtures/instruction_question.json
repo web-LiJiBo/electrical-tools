@@ -1,0 +1,20 @@
+{
+  "question": "模拟断路器1目前的电流和开关状态是否正常？请依据条款给出处理建议。",
+  "parameters": {"simulation_mode": true},
+  "device_id": "SIM-IEC-BREAKER-01",
+  "source": {
+    "standard_id": "TEST-NOT-A-STANDARD",
+    "clause_id": "TEST-PRESET-OVERCURRENT",
+    "rule_id": "TEST-PRESET-OVERCURRENT:rule:0",
+    "text": "仅供软件测试：模拟断路器电流达到或超过100 A时，建议模拟分闸；必须经人工确认，禁止真实设备下发。",
+    "action": "trip",
+    "condition": "current >= 100"
+  },
+  "expected": {
+    "current": 120,
+    "initial_state": "closed",
+    "candidate_action": "trip",
+    "generation_only": true
+  },
+  "scope": "隔离测试；真实检索代码与建议转换代码；建议模型使用替身；不加入真实标准数据库"
+}

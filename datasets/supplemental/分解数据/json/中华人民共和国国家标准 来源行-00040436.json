@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040436",
+  "entities": [
+    {
+      "name": "一般情况下，化工废水中加入生活污水，对改善水营养结 构和生化反应有益，在",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.9     一般情况下，化工废水中加入生活污水，对改善水营养结\n构和生化反应有益，在条件允许时，提倡化工废水引入生活污水一\n并进入生化处理设施。但当生产污水处理工艺需以化学方法(如\n酸碱中和、化学氧化等)为主时，生活污水需要单独处理，不应混入\n生产污水一并处理。",
+      "type": "语义分解",
+      "subject": "一般情况下，化工废水中加入生活污水，对改善水营养结 构和生化反应有益，在",
+      "action": "",
+      "operation": "一般情况下，化工废水中加入生活污水，对改善水营养结 构和生化反应有益，在条件允许时，提倡化工废水引入生活污水一 并进入生化处理设施。但当生产污水处理工艺需以化学方法(如 酸碱中和、化学氧化等)为主时，生活污水需要单独处理，不应混入 生产污水一并处理。",
+      "condition": "",
+      "constraint": "6.4.9     一般情况下，化工废水中加入生活污水，对改善水营养结\n构和生化反应有益，在条件允许时，提倡化工废水引入生活污水一\n并进入生化处理设施。但当生产污水处理工艺需以化学方法(如\n酸碱中和、化学氧化等)为主时，生活污水需要单独处理，不应混入\n生产污水一并处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一般情况下，化工废水中加入生活污水，对改善水营养结 构和生化反应有益，在"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40436,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

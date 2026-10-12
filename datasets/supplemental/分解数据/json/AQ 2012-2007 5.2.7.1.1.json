@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.7.1.1",
+  "entities": [
+    {
+      "name": "钻进操作",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.7.1.1 钻进时应严格按规定程序和操作规程进行操作 ,选择合理的钻具组合和适当的钻井液,钻进时应根据井内 ,地面设备运转 ,仪表信息变化情况 ,判断分析异常情况 ,及时采取相应措施。",
+      "type": "语义分解",
+      "subject": "钻进操作",
+      "action": "",
+      "operation": "按规程合理钻具钻井液监视井内设备仪表异常及时处置",
+      "condition": "",
+      "constraint": "5.2.7.1.1 钻进时应严格按规定程序和操作规程进行操作 ,选择合理的钻具组合和适当的钻井液,钻进时应根据井内 ,地面设备运转 ,仪表信息变化情况 ,判断分析异常情况 ,及时采取相应措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "钻进操作"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4318,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

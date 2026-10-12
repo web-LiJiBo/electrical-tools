@@ -1,0 +1,41 @@
+{
+  "standard_name": "建筑灭火器配置设计规范",
+  "standard_id": "GB 50140-2005",
+  "version": "2005",
+  "chapter_path": "1.0.3",
+  "entities": [
+    {
+      "name": "灭火器配置设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.3 灭火器的配置类型,规格.数量及其设置位置应作为建筑消防工程设计的内容 ,并应在工程设计图上标明。",
+      "type": "语义分解",
+      "subject": "灭火器配置设计",
+      "action": "",
+      "operation": "将类型规格数量位置纳入设计图",
+      "condition": "",
+      "constraint": "1.0.3 灭火器的配置类型,规格.数量及其设置位置应作为建筑消防工程设计的内容 ,并应在工程设计图上标明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灭火器配置设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4035,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

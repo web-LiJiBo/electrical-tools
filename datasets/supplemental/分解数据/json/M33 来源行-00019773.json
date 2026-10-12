@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019773",
+  "entities": [
+    {
+      "name": ") 在Sn 层存在一个以上的适配功能，它们可以和一个Sn-X 接入点相连",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3 ) 在Sn 层存在一个以上的适配功能，它们可以和一个Sn-X 接入点相连，在这种情况下，这些\n\n    适配源功能的子集允许一起激活，但仅有一个适配源功能可以接入特定的时隙，在同一时隙接\n    入其他适配源是不允许的。与源方向相反，适配宿功能可以一起激活，这可能导致故障检出和\n\n    报告，为防止这种状况，某个适配宿功能可以去激活。",
+      "type": "语义分解",
+      "subject": ") 在Sn 层存在一个以上的适配功能，它们可以和一个Sn-X 接入点相连",
+      "action": "",
+      "operation": ") 在Sn 层存在一个以上的适配功能，它们可以和一个Sn-X 接入点相连，在这种情况下，这些 适配源功能的子集允许一起激活，但仅有一个适配源功能可以接入特定的时隙，在同一时隙接 入其他适配源是不允许的。与源方向相反，适配宿功能可以一起激活，这可能导致故障检出和 报告，为防止这种状况，某个适配宿功能可以去激活。",
+      "condition": "",
+      "constraint": "3 ) 在Sn 层存在一个以上的适配功能，它们可以和一个Sn-X 接入点相连，在这种情况下，这些\n\n    适配源功能的子集允许一起激活，但仅有一个适配源功能可以接入特定的时隙，在同一时隙接\n    入其他适配源是不允许的。与源方向相反，适配宿功能可以一起激活，这可能导致故障检出和\n\n    报告，为防止这种状况，某个适配宿功能可以去激活。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") 在Sn 层存在一个以上的适配功能，它们可以和一个Sn-X 接入点相连"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19773,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012392",
+  "entities": [
+    {
+      "name": "全准同步工作方式是指各时钟独立运行 , 互不控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.0.3    全准同步工作方式是指各时钟独立运行 ,  互不控制 。  混\n合同步工作方式是指全网按区域划分成多个子网 ,   子网内各时\n钟节点设备同步于本子网内的一级基准时钟 ,   各子网之间的 一\n级基准时钟工作于准同步方式下。",
+      "type": "语义分解",
+      "subject": "全准同步工作方式是指各时钟独立运行 , 互不控制",
+      "action": "",
+      "operation": "全准同步工作方式是指各时钟独立运行 , 互不控制 。 混 合同步工作方式是指全网按区域划分成多个子网 , 子网内各时 钟节点设备同步于本子网内的一级基准时钟 , 各子网之间的 一 级基准时钟工作于准同步方式下。",
+      "condition": "",
+      "constraint": "10.0.3    全准同步工作方式是指各时钟独立运行 ,  互不控制 。  混\n合同步工作方式是指全网按区域划分成多个子网 ,   子网内各时\n钟节点设备同步于本子网内的一级基准时钟 ,   各子网之间的 一\n级基准时钟工作于准同步方式下。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "全准同步工作方式是指各时钟独立运行 , 互不控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12392,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

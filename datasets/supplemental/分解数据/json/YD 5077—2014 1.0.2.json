@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "1.0.2",
+  "entities": [
+    {
+      "name": "本规范中的“固定电话交换网”含本地网、长途网、国际局， “软交换”包括软",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1.0.2      本规范中的“固定电话交换网”含本地网、长途网、国际局，\n“软交换”包括软交换各个层面的网元设备，可以是本地网、长途\n网、国际局或软交换业务网。",
+      "type": "语义分解",
+      "subject": "本规范中的“固定电话交换网”含本地网、长途网、国际局， “软交换”包括软",
+      "action": "",
+      "operation": "本规范中的“固定电话交换网”含本地网、长途网、国际局， “软交换”包括软交换各个层面的网元设备，可以是本地网、长途 网、国际局或软交换业务网。",
+      "condition": "",
+      "constraint": "1.0.2      本规范中的“固定电话交换网”含本地网、长途网、国际局，\n“软交换”包括软交换各个层面的网元设备，可以是本地网、长途\n网、国际局或软交换业务网。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本规范中的“固定电话交换网”含本地网、长途网、国际局， “软交换”包括软"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27219,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

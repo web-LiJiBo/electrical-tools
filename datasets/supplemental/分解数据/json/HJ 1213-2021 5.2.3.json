@@ -1,0 +1,41 @@
+{
+  "standard_name": "滨海核电厂温排水卫星遥感监测技术规范(试行)",
+  "standard_id": "HJ 1213-2021",
+  "version": "2021",
+  "chapter_path": "5.2.3",
+  "entities": [
+    {
+      "name": "绝对辐射定标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3 绝对辐射定标 绝对辐射定标技术操作步骤如下: 3) 从卫星数据头文件或卫星官方网站获取不同谱段对应的绝对辐射定标系数; b) 利用卫星给定的绝对辐射定标公式。将图像灰度值转换为表观辐亮度。",
+      "type": "语义分解",
+      "subject": "绝对辐射定标",
+      "action": "",
+      "operation": "从头文件官方来源取定标系数按给定公式灰度转辐亮度",
+      "condition": "",
+      "constraint": "5.2.3 绝对辐射定标 绝对辐射定标技术操作步骤如下: 3) 从卫星数据头文件或卫星官方网站获取不同谱段对应的绝对辐射定标系数; b) 利用卫星给定的绝对辐射定标公式。将图像灰度值转换为表观辐亮度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "绝对辐射定标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1949,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016786",
+  "entities": [
+    {
+      "name": "j) 通过交换节点NE1的1处的任意两对光纤的收或发光纤，使得光纤发生错",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     j)  通过交换节点NE1的1处的任意两对光纤的收或发光纤，使得光纤发生错连。\n      k)  通过协议分析仪验证链路验证消息，检查网管系统是否上报错连告警。\n12.3.1.4   注意事项",
+      "type": "语义分解",
+      "subject": "j) 通过交换节点NE1的1处的任意两对光纤的收或发光纤，使得光纤发生错",
+      "action": "",
+      "operation": "j) 通过交换节点NE1的1处的任意两对光纤的收或发光纤，使得光纤发生错连。 k) 通过协议分析仪验证链路验证消息，检查网管系统是否上报错连告警。 12.3.1.4 注意事项",
+      "condition": "",
+      "constraint": "     j)  通过交换节点NE1的1处的任意两对光纤的收或发光纤，使得光纤发生错连。\n      k)  通过协议分析仪验证链路验证消息，检查网管系统是否上报错连告警。\n12.3.1.4   注意事项",
+      "constraint_role": "informational",
+      "related_entities": [
+        "j) 通过交换节点NE1的1处的任意两对光纤的收或发光纤，使得光纤发生错"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16786,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

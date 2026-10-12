@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安全环保监督管理暂行细则",
+  "standard_id": "1  目的",
+  "version": "",
+  "chapter_path": "来源行-00029488",
+  "entities": [
+    {
+      "name": "环保隐患是指不符合环境保护法律、法规、标准、管理制度等 规定， 或者因其",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     环保隐患是指不符合环境保护法律、法规、标准、管理制度等\n\n规定，  或者因其他因素可能直接或者间接导致环境污染和生态破\n\n坏事件发生的违法违规行为、管理上的缺陷或者危险状态。",
+      "type": "语义分解",
+      "subject": "环保隐患是指不符合环境保护法律、法规、标准、管理制度等 规定， 或者因其",
+      "action": "",
+      "operation": "环保隐患是指不符合环境保护法律、法规、标准、管理制度等 规定， 或者因其他因素可能直接或者间接导致环境污染和生态破 坏事件发生的违法违规行为、管理上的缺陷或者危险状态。",
+      "condition": "",
+      "constraint": "     环保隐患是指不符合环境保护法律、法规、标准、管理制度等\n\n规定，  或者因其他因素可能直接或者间接导致环境污染和生态破\n\n坏事件发生的违法违规行为、管理上的缺陷或者危险状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "环保隐患是指不符合环境保护法律、法规、标准、管理制度等 规定， 或者因其"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29488,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

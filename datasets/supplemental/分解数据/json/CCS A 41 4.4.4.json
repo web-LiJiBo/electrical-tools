@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "4.4.4",
+  "entities": [
+    {
+      "name": "项目计划执行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.4   项目计划与实施\n\n4.4.4. 1   项目计划与执行",
+      "type": "语义分解",
+      "subject": "项目计划执行",
+      "action": "",
+      "operation": "仅多级标题无正文",
+      "condition": "",
+      "constraint": "4.4.4   项目计划与实施\n\n4.4.4. 1   项目计划与执行",
+      "constraint_role": "informational",
+      "related_entities": [
+        "项目计划执行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28414,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040038",
+  "entities": [
+    {
+      "name": "工艺设计应优先选用清洁的工艺和原辅材料，采用先进的 技术和装备，减少废气",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2       工艺设计应优先选用清洁的工艺和原辅材料，采用先进的\n技术和装备，减少废气污染物产生量。",
+      "type": "语义分解",
+      "subject": "工艺设计应优先选用清洁的工艺和原辅材料，采用先进的 技术和装备，减少废气",
+      "action": "",
+      "operation": "工艺设计应优先选用清洁的工艺和原辅材料，采用先进的 技术和装备，减少废气污染物产生量。",
+      "condition": "",
+      "constraint": "5.1.2       工艺设计应优先选用清洁的工艺和原辅材料，采用先进的\n技术和装备，减少废气污染物产生量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工艺设计应优先选用清洁的工艺和原辅材料，采用先进的 技术和装备，减少废气"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40038,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

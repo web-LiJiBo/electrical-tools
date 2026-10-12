@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "4.6.5",
+  "entities": [
+    {
+      "name": "预案未涉及事件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.5 当发生应急预案中未涉及的事件时 ,现场负责人应及时向在场主要负责人报告,主要负责人应确定并采取相应的措施,并及时上报。",
+      "type": "语义分解",
+      "subject": "预案未涉及事件",
+      "action": "",
+      "operation": "现场报告负责人确定措施并上报",
+      "condition": "当发生应急预案中未涉及的事件时",
+      "constraint": "4.6.5 当发生应急预案中未涉及的事件时 ,现场负责人应及时向在场主要负责人报告,主要负责人应确定并采取相应的措施,并及时上报。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "预案未涉及事件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4245,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "6.1.2",
+  "entities": [
+    {
+      "name": "粉粒VOC输送",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.2 粉状、粒状 VOCs  物料应采用气力输送设备、管状带式输送机、螺旋输送机等密闭输送方式，\n或者采用密闭的包装袋、容器或罐车进行物料转移。",
+      "type": "语义分解",
+      "subject": "粉粒VOC输送",
+      "action": "",
+      "operation": "气力管带螺旋密输或密包装容器罐车",
+      "condition": "",
+      "constraint": "6.1.2 粉状、粒状 VOCs  物料应采用气力输送设备、管状带式输送机、螺旋输送机等密闭输送方式，\n或者采用密闭的包装袋、容器或罐车进行物料转移。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "粉粒VOC输送"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33328,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

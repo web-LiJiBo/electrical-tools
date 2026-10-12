@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.5.3",
+  "entities": [
+    {
+      "name": "岗位能力培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.3 企业应制定岗位能才要求标谁和安全教育 .培训管理制度,通过招聘符合任职基本条件的人员 及时开展教育 .培训等,确保上岗员工符合岗位能力要求。 建立岗位能力标准 基于岗位职责编制岗位说明书,从教育程度 业知识和技能(含上岗资 格) ,工作经验和综合素质等方面 :明确岗位人员应具备的任职资格 确定培训课程体系。依据各介岗位所需的能为要珑.将岗位能力标准转化为培训目标 ,并依 据培训 标和载体 ,确定备一 岗位的具体培训内容(见 A.3) 。",
+      "type": "语义分解",
+      "subject": "岗位能力培训",
+      "action": "",
+      "operation": "建岗位任职标准说明书按教育知识技能资格经验素质定课程目标内容",
+      "condition": "",
+      "constraint": "4.5.3 企业应制定岗位能才要求标谁和安全教育 .培训管理制度,通过招聘符合任职基本条件的人员 及时开展教育 .培训等,确保上岗员工符合岗位能力要求。 建立岗位能力标准 基于岗位职责编制岗位说明书,从教育程度 业知识和技能(含上岗资 格) ,工作经验和综合素质等方面 :明确岗位人员应具备的任职资格 确定培训课程体系。依据各介岗位所需的能为要珑.将岗位能力标准转化为培训目标 ,并依 据培训 标和载体 ,确定备一 岗位的具体培训内容(见 A.3) 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "岗位能力培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5082,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；较多OCR异常需原件复核"
+      ]
+    }
+  }
+}

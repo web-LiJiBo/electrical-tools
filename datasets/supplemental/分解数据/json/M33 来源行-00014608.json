@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014608",
+  "entities": [
+    {
+      "name": "a) 客户侧1588v2 接口，接口类型为GE(FE) 、10GE 等，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   a)    客户侧1588v2 接口，接口类型为GE(FE) 、10GE   等，可以和PTN/路由器等设备进行对接；\n   b)    采用标准的1PPS+ToD接口从BITS 获取定时或者为其他网元提供定时。OTN 设备至少支持1\n     路 1PPS+ToD时间输入接口和1路1PPS+ToD时间输出接口，物理接口类型为RJ45。",
+      "type": "语义分解",
+      "subject": "a) 客户侧1588v2 接口，接口类型为GE(FE) 、10GE 等，",
+      "action": "",
+      "operation": "a) 客户侧1588v2 接口，接口类型为GE(FE) 、10GE 等，可以和PTN/路由器等设备进行对接； b) 采用标准的1PPS+ToD接口从BITS 获取定时或者为其他网元提供定时。OTN 设备至少支持1 路 1PPS+ToD时间输入接口和1路1PPS+ToD时间输出接口，物理接口类型为RJ45。",
+      "condition": "",
+      "constraint": "   a)    客户侧1588v2 接口，接口类型为GE(FE) 、10GE   等，可以和PTN/路由器等设备进行对接；\n   b)    采用标准的1PPS+ToD接口从BITS 获取定时或者为其他网元提供定时。OTN 设备至少支持1\n     路 1PPS+ToD时间输入接口和1路1PPS+ToD时间输出接口，物理接口类型为RJ45。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 客户侧1588v2 接口，接口类型为GE(FE) 、10GE 等，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14608,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

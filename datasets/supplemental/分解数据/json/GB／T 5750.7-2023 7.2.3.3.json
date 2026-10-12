@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.2.3.3",
+  "entities": [
+    {
+      "name": "膜电导有机碳使用液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.3.3 邻苯二甲酸氢钾标准使用溶液[(有机碳 ,C) =100 mg/ ]: 吸取 100 mI 邻苯二甲酸氢钾标准储备溶液于1000 ml 容量瓶内 ,加纯水至刻度,混匀 ,此溶液在0 %C~4 %冰箱存放 ,可稳定约1周。",
+      "type": "语义分解",
+      "subject": "膜电导有机碳使用液",
+      "action": "",
+      "operation": "储备液十倍稀释冷藏约一周",
+      "condition": "",
+      "constraint": "7.2.3.3 邻苯二甲酸氢钾标准使用溶液[(有机碳 ,C) =100 mg/ ]: 吸取 100 mI 邻苯二甲酸氢钾标准储备溶液于1000 ml 容量瓶内 ,加纯水至刻度,混匀 ,此溶液在0 %C~4 %冰箱存放 ,可稳定约1周。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "膜电导有机碳使用液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1912,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；温度单位异常"
+      ]
+    }
+  }
+}

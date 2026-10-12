@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "6.2.2",
+  "entities": [
+    {
+      "name": "多级会议电视配置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.2    多级管理的油气输送管道工程 ,   可在调控中心 、   区域管\n理中心设置MCU ,  设置多个MCU 时 ,   宜采用多级组网方式 .\n6.2.3    会议终端类型应按照工程实际需要配置 。  有人值守工艺\n站场 、维抢修机构 、  区域管理中心等有人站场应配置会议室终\n端 。会议室终端的规模应根据工程实际需要确定。",
+      "type": "语义分解",
+      "subject": "多级会议电视配置",
+      "action": "",
+      "operation": "中心可设MCU多个宜多级组网有人站场设按需规模会议室终端",
+      "condition": "",
+      "constraint": "6.2.2    多级管理的油气输送管道工程 ,   可在调控中心 、   区域管\n理中心设置MCU ,  设置多个MCU 时 ,   宜采用多级组网方式 .\n6.2.3    会议终端类型应按照工程实际需要配置 。  有人值守工艺\n站场 、维抢修机构 、  区域管理中心等有人站场应配置会议室终\n端 。会议室终端的规模应根据工程实际需要确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多级会议电视配置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11884,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含6.2.2及6.2.3保留"
+      ]
+    }
+  }
+}

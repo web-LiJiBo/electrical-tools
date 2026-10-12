@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040276",
+  "entities": [
+    {
+      "name": "应依据环境影响评价要求设置污染源在线监控设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.0.7      应依据环境影响评价要求设置污染源在线监控设施。\n9.0.8      应按照环境监测管理规定和技术规范的要求，设计、建设、\n维护永久性采样口、采样测试平台和排污口标志。",
+      "type": "语义分解",
+      "subject": "应依据环境影响评价要求设置污染源在线监控设施",
+      "action": "",
+      "operation": "应依据环境影响评价要求设置污染源在线监控设施。 9.0.8 应按照环境监测管理规定和技术规范的要求，设计、建设、 维护永久性采样口、采样测试平台和排污口标志。",
+      "condition": "",
+      "constraint": "9.0.7      应依据环境影响评价要求设置污染源在线监控设施。\n9.0.8      应按照环境监测管理规定和技术规范的要求，设计、建设、\n维护永久性采样口、采样测试平台和排污口标志。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应依据环境影响评价要求设置污染源在线监控设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40276,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

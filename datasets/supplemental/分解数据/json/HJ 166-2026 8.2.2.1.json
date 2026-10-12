@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "8.2.2.1",
+  "entities": [
+    {
+      "name": "土壤样风干",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.1 风干 将采集的土壤样品全部转移到已铺设垫纸的样品盘中,摊成2 cm~3 cm 的薄层, 置于风干架上, 相邻2个样品盘间距应不小于10 cm。 适时地压碎或翻动,拣出碎石。砂砾和植物残体等 避免样品结 成大块而不易碾压和研磨",
+      "type": "语义分解",
+      "subject": "土壤样风干",
+      "action": "",
+      "operation": "铺二至三厘米薄层盘距至少十厘米适时压碎翻动除杂防结块",
+      "condition": "",
+      "constraint": "8.2.2.1 风干 将采集的土壤样品全部转移到已铺设垫纸的样品盘中,摊成2 cm~3 cm 的薄层, 置于风干架上, 相邻2个样品盘间距应不小于10 cm。 适时地压碎或翻动,拣出碎石。砂砾和植物残体等 避免样品结 成大块而不易碾压和研磨",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤样风干"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2264,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

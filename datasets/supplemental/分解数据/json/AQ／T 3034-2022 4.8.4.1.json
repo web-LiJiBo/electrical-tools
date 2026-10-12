@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.8.4.1",
+  "entities": [
+    {
+      "name": "开车前三查四定",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.8.4.1 企业应组织有经验的专业人员和操作人员开展\"三查四定\"工作 ,落实整改措施 ,重点检查安 全措施的缺项 ,设计缺陷等",
+      "type": "语义分解",
+      "subject": "开车前三查四定",
+      "action": "",
+      "operation": "专业及操作人员检查缺项落实整改",
+      "condition": "",
+      "constraint": "4.8.4.1 企业应组织有经验的专业人员和操作人员开展\"三查四定\"工作 ,落实整改措施 ,重点检查安 全措施的缺项 ,设计缺陷等",
+      "constraint_role": "informational",
+      "related_entities": [
+        "开车前三查四定"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5131,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

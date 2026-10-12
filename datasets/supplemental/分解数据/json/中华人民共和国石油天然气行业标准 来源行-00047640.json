@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047640",
+  "entities": [
+    {
+      "name": "(2)测试周期不宜少于3次，每次测试的测试点位 置、测试起止时间和读数时",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "(2)测试周期不宜少于3次，每次测试的测试点位\n   置、测试起止时间和读数时间间隔应相同，同\n   一干扰管段内各测试点的测试起止时间和读数\n   时间间隔应保持一致。宜在现有缓解设施全部\n   关闭和全部运行两种状态下分别测试。宜在现\n   有缓解设施及临时缓解设施全部运行状况下进",
+      "type": "语义分解",
+      "subject": "(2)测试周期不宜少于3次，每次测试的测试点位 置、测试起止时间和读数时",
+      "action": "",
+      "operation": "(2)测试周期不宜少于3次，每次测试的测试点位 置、测试起止时间和读数时间间隔应相同，同 一干扰管段内各测试点的测试起止时间和读数 时间间隔应保持一致。宜在现有缓解设施全部 关闭和全部运行两种状态下分别测试。宜在现 有缓解设施及临时缓解设施全部运行状况下进",
+      "condition": "",
+      "constraint": "(2)测试周期不宜少于3次，每次测试的测试点位\n   置、测试起止时间和读数时间间隔应相同，同\n   一干扰管段内各测试点的测试起止时间和读数\n   时间间隔应保持一致。宜在现有缓解设施全部\n   关闭和全部运行两种状态下分别测试。宜在现\n   有缓解设施及临时缓解设施全部运行状况下进",
+      "constraint_role": "informational",
+      "related_entities": [
+        "(2)测试周期不宜少于3次，每次测试的测试点位 置、测试起止时间和读数时"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47640,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

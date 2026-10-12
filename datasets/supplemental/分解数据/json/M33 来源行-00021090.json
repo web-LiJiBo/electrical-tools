@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021090",
+  "entities": [
+    {
+      "name": ")S m_TT源功能在Sm_CP 处产生POH 并加入到来自Sm_AP的",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)S    m_TT源功能在Sm_CP 处产生POH 并加入到来自Sm_AP的容器 C-m中，生成VC-m。在传\n   输另一方向，它终接和处理POH 以确定所定义的通道属性的状态。POH 格式在ITU-T  G707",
+      "type": "语义分解",
+      "subject": ")S m_TT源功能在Sm_CP 处产生POH 并加入到来自Sm_AP的",
+      "action": "",
+      "operation": ")S m_TT源功能在Sm_CP 处产生POH 并加入到来自Sm_AP的容器 C-m中，生成VC-m。在传 输另一方向，它终接和处理POH 以确定所定义的通道属性的状态。POH 格式在ITU-T G707",
+      "condition": "",
+      "constraint": "1)S    m_TT源功能在Sm_CP 处产生POH 并加入到来自Sm_AP的容器 C-m中，生成VC-m。在传\n   输另一方向，它终接和处理POH 以确定所定义的通道属性的状态。POH 格式在ITU-T  G707",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")S m_TT源功能在Sm_CP 处产生POH 并加入到来自Sm_AP的"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21090,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

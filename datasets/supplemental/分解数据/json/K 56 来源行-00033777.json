@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00033777",
+  "entities": [
+    {
+      "name": "O(国际标准化组织 )是由各国标准化团体(12O成员团体 )组成的世界性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      12O(国际标准化组织 )是由各国标准化团体(12O成员团体 )组成的世界性联合会。  制订国际标准\n的工作通常由 12O的技术委员会完成 , 各成员团体如果对某技术委员会已确立的标准感兴趣 , 均有权\n参加该委员会工作。  与 12O保持联系的各国际组织(官方或非官方 )也可以参加有关工作。  在电工技术\n标准化方面 12O与国际电工委员会(1EC)保持密切合作关系。",
+      "type": "语义分解",
+      "subject": "O(国际标准化组织 )是由各国标准化团体(12O成员团体 )组成的世界性",
+      "action": "",
+      "operation": "O(国际标准化组织 )是由各国标准化团体(12O成员团体 )组成的世界性联合会。 制订国际标准 的工作通常由 12O的技术委员会完成 , 各成员团体如果对某技术委员会已确立的标准感兴趣 , 均有权 参加该委员会工作。 与 12O保持联系的各国际组织(官方或非官方 )也可以参加有关工作。 在电工技术 标准化方面 12O与国际电工委员会(1EC)保持密切合作关系。",
+      "condition": "",
+      "constraint": "      12O(国际标准化组织 )是由各国标准化团体(12O成员团体 )组成的世界性联合会。  制订国际标准\n的工作通常由 12O的技术委员会完成 , 各成员团体如果对某技术委员会已确立的标准感兴趣 , 均有权\n参加该委员会工作。  与 12O保持联系的各国际组织(官方或非官方 )也可以参加有关工作。  在电工技术\n标准化方面 12O与国际电工委员会(1EC)保持密切合作关系。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "O(国际标准化组织 )是由各国标准化团体(12O成员团体 )组成的世界性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33777,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

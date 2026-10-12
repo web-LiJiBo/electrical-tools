@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "采样定位探测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2 定位和探测 采样前,可采用卷尺 GPS 卫星定位仪。经纬仪和水推仪等工具在现场确定采样点的具体位置和地面标高。并在图中标出。可采用金属探测器或探地雷达等设备探测地下障碍物,确保采样位置避开地下电缆。管线。沟。槽等地下障碍物。采用水位仪测量地下水水位。采用油水界面仪探测地下水非水相液体。",
+      "type": "语义分解",
+      "subject": "采样定位探测",
+      "action": "",
+      "operation": "定位标高图示探地下障碍避电缆管线测水位及非水相液体",
+      "condition": "",
+      "constraint": "6.3.2 定位和探测 采样前,可采用卷尺 GPS 卫星定位仪。经纬仪和水推仪等工具在现场确定采样点的具体位置和地面标高。并在图中标出。可采用金属探测器或探地雷达等设备探测地下障碍物,确保采样位置避开地下电缆。管线。沟。槽等地下障碍物。采用水位仪测量地下水水位。采用油水界面仪探测地下水非水相液体。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "采样定位探测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2648,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

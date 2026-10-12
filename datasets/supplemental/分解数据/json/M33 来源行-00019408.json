@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00019408",
+  "entities": [
+    {
+      "name": "—倒换启动判据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "—倒换启动判据：自动保护倒换以工作和保护段失效状态为依据。这些状态，即信号失\n    效( SF)  和信号劣化( SD)  由 MSn_TT功能在MSn_AP 处提供。这些状态的检出在\n\n     10.2中说明。保护倒换也可通过同步设备管理功能接收的倒换命令来启动。",
+      "type": "语义分解",
+      "subject": "—倒换启动判据",
+      "action": "",
+      "operation": "—倒换启动判据：自动保护倒换以工作和保护段失效状态为依据。这些状态，即信号失 效( SF) 和信号劣化( SD) 由 MSn_TT功能在MSn_AP 处提供。这些状态的检出在 10.2中说明。保护倒换也可通过同步设备管理功能接收的倒换命令来启动。",
+      "condition": "",
+      "constraint": "—倒换启动判据：自动保护倒换以工作和保护段失效状态为依据。这些状态，即信号失\n    效( SF)  和信号劣化( SD)  由 MSn_TT功能在MSn_AP 处提供。这些状态的检出在\n\n     10.2中说明。保护倒换也可通过同步设备管理功能接收的倒换命令来启动。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "—倒换启动判据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 19408,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

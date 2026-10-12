@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034900",
+  "entities": [
+    {
+      "name": "应提供发电与用电双方签订的市场化交易合同 , 以及按合同执行的绿色电力证",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      应提供发电与用电双方签订的市场化交易合同 , 以及按合同执行的绿色电力证书交易凭证和由省\n级及以上电力交易机构出具的交易结算凭证 。  交易结算凭证应载明在核算与报告周期内的月度结算电\n量及其项目类型 、发电企业名称 、用电企业名称等 。  绿色电力证书交易凭证载明的内容应包括项 目名\n称 、项目代码 、项目类型 、项目所在地 、电量生产日期等 。",
+      "type": "语义分解",
+      "subject": "应提供发电与用电双方签订的市场化交易合同 , 以及按合同执行的绿色电力证",
+      "action": "",
+      "operation": "应提供发电与用电双方签订的市场化交易合同 , 以及按合同执行的绿色电力证书交易凭证和由省 级及以上电力交易机构出具的交易结算凭证 。 交易结算凭证应载明在核算与报告周期内的月度结算电 量及其项目类型 、发电企业名称 、用电企业名称等 。 绿色电力证书交易凭证载明的内容应包括项 目名 称 、项目代码 、项目类型 、项目所在地 、电量生产日期等 。",
+      "condition": "",
+      "constraint": "      应提供发电与用电双方签订的市场化交易合同 , 以及按合同执行的绿色电力证书交易凭证和由省\n级及以上电力交易机构出具的交易结算凭证 。  交易结算凭证应载明在核算与报告周期内的月度结算电\n量及其项目类型 、发电企业名称 、用电企业名称等 。  绿色电力证书交易凭证载明的内容应包括项 目名\n称 、项目代码 、项目类型 、项目所在地 、电量生产日期等 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应提供发电与用电双方签订的市场化交易合同 , 以及按合同执行的绿色电力证"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34900,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.9.2",
+  "entities": [
+    {
+      "name": "化学反应方程式",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.9.2 涉及化学反应时 , 原则上应写出化学方程式 如果反应不能一步完成, 应详尽给出每一步的反应方程式。",
+      "type": "语义分解",
+      "subject": "化学反应方程式",
+      "action": "",
+      "operation": "涉及反应时列式并分步完整说明",
+      "condition": "涉及化学反应时",
+      "constraint": "8.9.2 涉及化学反应时 , 原则上应写出化学方程式 如果反应不能一步完成, 应详尽给出每一步的反应方程式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化学反应方程式"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2380,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

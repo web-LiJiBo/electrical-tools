@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气工业耗能用水统计指标与计算方法",
+  "standard_id": "SYII 6722-2024",
+  "version": "2024",
+  "chapter_path": "4.1.1",
+  "entities": [
+    {
+      "name": "能源消费量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.1 能源消费量 能源消费量按公式(1)计算。 注:能源折标准煤系数以实测确定为准。如无实测值。可根据附录A GBIT 2589 给出的折笄系数或按照国家统计局公布的折笄系数进行折箅。以下同。",
+      "type": "语义分解",
+      "subject": "能源消费量",
+      "action": "",
+      "operation": "按式1计算折煤系数以实测为准",
+      "condition": "",
+      "constraint": "4.1.1 能源消费量 能源消费量按公式(1)计算。 注:能源折标准煤系数以实测确定为准。如无实测值。可根据附录A GBIT 2589 给出的折笄系数或按照国家统计局公布的折笄系数进行折箅。以下同。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "能源消费量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 358,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺公式，引用编号识别异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "5.2.1.1",
+  "entities": [
+    {
+      "name": "VOC储罐",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1.1 储存真实蒸气压≥76.6 kPa 且储罐容积≥75m³的挥发性有机液体储罐，应采用低压罐、压力\n罐或其他等效措施。",
+      "type": "语义分解",
+      "subject": "VOC储罐",
+      "action": "",
+      "operation": "蒸压至少76.6kPa容积至少75立方低压压力等效",
+      "condition": "",
+      "constraint": "5.2.1.1 储存真实蒸气压≥76.6 kPa 且储罐容积≥75m³的挥发性有机液体储罐，应采用低压罐、压力\n罐或其他等效措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VOC储罐"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33303,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

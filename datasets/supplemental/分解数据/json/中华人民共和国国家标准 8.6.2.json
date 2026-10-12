@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "8.6.2",
+  "entities": [
+    {
+      "name": "电源线截面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.6.2      电源线截面的选取应根据供电段落所允许的电压降数值\n\n确定。",
+      "type": "语义分解",
+      "subject": "电源线截面",
+      "action": "",
+      "operation": "按供电段落允许电压降确定",
+      "condition": "",
+      "constraint": "8.6.2      电源线截面的选取应根据供电段落所允许的电压降数值\n\n确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电源线截面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10048,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

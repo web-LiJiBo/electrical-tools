@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.5.2.1",
+  "entities": [
+    {
+      "name": "重大问题识别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.2.1 本要素旨在根据确定的目的和范围以及与评价要素的相互作用 ,对 LCI 或 LCIA 阶段得出的 结果进行组织 ,以便有助于确定重大问题。 这种交互的目的将包括前面阶段所涉及的使用方法和所做 的假设等 ,例如分配规则.取舍准则.影响类型 .类型参数和模型的选择。",
+      "type": "语义分解",
+      "subject": "重大问题识别",
+      "action": "",
+      "operation": "组织清单影响评价结果结合方法假设交互识别问题",
+      "condition": "",
+      "constraint": "4.5.2.1 本要素旨在根据确定的目的和范围以及与评价要素的相互作用 ,对 LCI 或 LCIA 阶段得出的 结果进行组织 ,以便有助于确定重大问题。 这种交互的目的将包括前面阶段所涉及的使用方法和所做 的假设等 ,例如分配规则.取舍准则.影响类型 .类型参数和模型的选择。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重大问题识别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1131,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

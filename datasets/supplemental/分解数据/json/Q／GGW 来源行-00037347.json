@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037347",
+  "entities": [
+    {
+      "name": "在确认对不符合采取的纠正措施后，核查组应完成核查结论的编写",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   在确认对不符合采取的纠正措施后，核查组应完成核查结论的编写。核查组应根据文件评审和现场\n核查发现编制核查结论，核查结论应当真实、客观。",
+      "type": "语义分解",
+      "subject": "在确认对不符合采取的纠正措施后，核查组应完成核查结论的编写",
+      "action": "",
+      "operation": "在确认对不符合采取的纠正措施后，核查组应完成核查结论的编写。核查组应根据文件评审和现场 核查发现编制核查结论，核查结论应当真实、客观。",
+      "condition": "",
+      "constraint": "   在确认对不符合采取的纠正措施后，核查组应完成核查结论的编写。核查组应根据文件评审和现场\n核查发现编制核查结论，核查结论应当真实、客观。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在确认对不符合采取的纠正措施后，核查组应完成核查结论的编写"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37347,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

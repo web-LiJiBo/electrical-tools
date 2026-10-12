@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "6.9",
+  "entities": [
+    {
+      "name": "管件标识保管",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.9 管道组成件及管逍支承固定件。结构附件在施工过程中应妥善保管,不应混淆或损坏,其色标 或标记应明显清晰。管子在切割和加工前应做好标记移植,防腐后,应对材料表面的标记进行移植。",
+      "type": "语义分解",
+      "subject": "管件标识保管",
+      "action": "",
+      "operation": "不混损清标切加工防腐前后标记移植",
+      "condition": "",
+      "constraint": "6.9 管道组成件及管逍支承固定件。结构附件在施工过程中应妥善保管,不应混淆或损坏,其色标 或标记应明显清晰。管子在切割和加工前应做好标记移植,防腐后,应对材料表面的标记进行移植。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管件标识保管"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7361,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035030",
+  "entities": [
+    {
+      "name": "注 2",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注 2: 当无法确定近似的预期上升时 ,温度达到总温度的 60%的时间能通过在燃烧和插值后(45 s、60 s、75 s、90 s、\n        105 s)记录温度来确定 。",
+      "type": "语义分解",
+      "subject": "注 2",
+      "action": "",
+      "operation": "注 2: 当无法确定近似的预期上升时 ,温度达到总温度的 60%的时间能通过在燃烧和插值后(45 s、60 s、75 s、90 s、 105 s)记录温度来确定 。",
+      "condition": "",
+      "constraint": "注 2: 当无法确定近似的预期上升时 ,温度达到总温度的 60%的时间能通过在燃烧和插值后(45 s、60 s、75 s、90 s、\n        105 s)记录温度来确定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注 2"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35030,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

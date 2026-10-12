@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "8.2.3",
+  "entities": [
+    {
+      "name": "分析测定下限",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.3 所选用分析方法的测定下限应低于规定的地下水标堆限值。",
+      "type": "语义分解",
+      "subject": "分析测定下限",
+      "action": "",
+      "operation": "低于规定地下水标准限值",
+      "condition": "",
+      "constraint": "8.2.3 所选用分析方法的测定下限应低于规定的地下水标堆限值。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "分析测定下限"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

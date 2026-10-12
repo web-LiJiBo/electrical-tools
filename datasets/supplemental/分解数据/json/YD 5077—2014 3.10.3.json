@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.10.3",
+  "entities": [
+    {
+      "name": "同轴端头",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.10.3       制作同轴电缆端头时，外导体必须保留；电缆芯焊接可\n靠，严禁虚焊、漏焊。",
+      "type": "语义分解",
+      "subject": "同轴端头",
+      "action": "",
+      "operation": "保留外导体芯线可靠焊接不得虚漏焊",
+      "condition": "",
+      "constraint": "3.10.3       制作同轴电缆端头时，外导体必须保留；电缆芯焊接可\n靠，严禁虚焊、漏焊。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "同轴端头"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26746,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

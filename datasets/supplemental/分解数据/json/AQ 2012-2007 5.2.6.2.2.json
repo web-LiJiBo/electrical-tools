@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.2.6.2.2",
+  "entities": [
+    {
+      "name": "钻开油气层前承压检验",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.6.2.2 在进入油气层前50 m~100 m 应按照下步钻井的设计最高钻井液密度值,对裸眼地层进行承压能力检验。应指定专人检查邻近注水(气)井停注 泄压情况。",
+      "type": "语义分解",
+      "subject": "钻开油气层前承压检验",
+      "action": "",
+      "operation": "按设计液密度检验地层并检查邻井停注泄压",
+      "condition": "在进入油气层前50 m~100 m",
+      "constraint": "5.2.6.2.2 在进入油气层前50 m~100 m 应按照下步钻井的设计最高钻井液密度值,对裸眼地层进行承压能力检验。应指定专人检查邻近注水(气)井停注 泄压情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "钻开油气层前承压检验"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4312,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；距离条件仅适用本工序"
+      ]
+    }
+  }
+}

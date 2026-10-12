@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048479",
+  "entities": [
+    {
+      "name": "重点关注管段中第2款易发生内腐蚀敏感段，包括管道 低点以及经ICDA 计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.1    重点关注管段中第2款易发生内腐蚀敏感段，包括管道\n低点以及经ICDA 计算出来的大于临界倾角的位置；第9款含\n\n河流、公路等穿跨越区域的管段，包括河流、公路、管道、穿\n墙、套管、箱涵、管涵和固定墩等位置。",
+      "type": "语义分解",
+      "subject": "重点关注管段中第2款易发生内腐蚀敏感段，包括管道 低点以及经ICDA 计",
+      "action": "",
+      "operation": "重点关注管段中第2款易发生内腐蚀敏感段，包括管道 低点以及经ICDA 计算出来的大于临界倾角的位置；第9款含 河流、公路等穿跨越区域的管段，包括河流、公路、管道、穿 墙、套管、箱涵、管涵和固定墩等位置。",
+      "condition": "",
+      "constraint": "6.4.1    重点关注管段中第2款易发生内腐蚀敏感段，包括管道\n低点以及经ICDA 计算出来的大于临界倾角的位置；第9款含\n\n河流、公路等穿跨越区域的管段，包括河流、公路、管道、穿\n墙、套管、箱涵、管涵和固定墩等位置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "重点关注管段中第2款易发生内腐蚀敏感段，包括管道 低点以及经ICDA 计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48479,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

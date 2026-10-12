@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.5.2.2",
+  "entities": [
+    {
+      "name": "爆炸介质处置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.2.2 爆炸性泄漏介质 除 7.5.1要求外 ,对爆炸性泄漏介质处置还应做到: a) 现场应禁绝火源 ,电源 ,静电源 ,机械火花;高热 .高能设备应停止工作;若泄漏区有非防爆电器开关存在则不应改娈其工作状态; 6) 避免撞击利摩擦泄漏介质; 避免现场的震动和扬尘; 4) 防止泄漏介质进人下水道 ,排洪沟等狭小空间。",
+      "type": "语义分解",
+      "subject": "爆炸介质处置",
+      "action": "",
+      "operation": "禁火电静电火花高能设备停非防爆开关不改状态防撞摩擦振尘入狭区",
+      "condition": "",
+      "constraint": "7.5.2.2 爆炸性泄漏介质 除 7.5.1要求外 ,对爆炸性泄漏介质处置还应做到: a) 现场应禁绝火源 ,电源 ,静电源 ,机械火花;高热 .高能设备应停止工作;若泄漏区有非防爆电器开关存在则不应改娈其工作状态; 6) 避免撞击利摩擦泄漏介质; 避免现场的震动和扬尘; 4) 防止泄漏介质进人下水道 ,排洪沟等狭小空间。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆炸介质处置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5942,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；禁止改变非防爆开关状态需保留不等同统一断电"
+      ]
+    }
+  }
+}

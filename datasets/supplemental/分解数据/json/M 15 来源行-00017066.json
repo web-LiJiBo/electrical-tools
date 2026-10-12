@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 15",
+  "version": "",
+  "chapter_path": "来源行-00017066",
+  "entities": [
+    {
+      "name": "指OTN网元管理系统，即为了管理一个或多个OTN网元所使用的软硬件系统",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   指OTN网元管理系统，即为了管理一个或多个OTN网元所使用的软硬件系统。网元管理系统管理由\n单一设备供应商提供的OTN网元或子网。",
+      "type": "语义分解",
+      "subject": "指OTN网元管理系统，即为了管理一个或多个OTN网元所使用的软硬件系统",
+      "action": "",
+      "operation": "指OTN网元管理系统，即为了管理一个或多个OTN网元所使用的软硬件系统。网元管理系统管理由 单一设备供应商提供的OTN网元或子网。",
+      "condition": "",
+      "constraint": "   指OTN网元管理系统，即为了管理一个或多个OTN网元所使用的软硬件系统。网元管理系统管理由\n单一设备供应商提供的OTN网元或子网。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "指OTN网元管理系统，即为了管理一个或多个OTN网元所使用的软硬件系统"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17066,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

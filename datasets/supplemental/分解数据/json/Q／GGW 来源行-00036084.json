@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00036084",
+  "entities": [
+    {
+      "name": "b) 对改扩建项目的温室气体排放量核算，应分别按现有、在建、改扩建项目实",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)     对改扩建项目的温室气体排放量核算，应分别按现有、在建、改扩建项目实施后等几种情形\n   汇总温室气体排放量及其变化量。",
+      "type": "语义分解",
+      "subject": "b) 对改扩建项目的温室气体排放量核算，应分别按现有、在建、改扩建项目实",
+      "action": "",
+      "operation": "b) 对改扩建项目的温室气体排放量核算，应分别按现有、在建、改扩建项目实施后等几种情形 汇总温室气体排放量及其变化量。",
+      "condition": "",
+      "constraint": "b)     对改扩建项目的温室气体排放量核算，应分别按现有、在建、改扩建项目实施后等几种情形\n   汇总温室气体排放量及其变化量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 对改扩建项目的温室气体排放量核算，应分别按现有、在建、改扩建项目实"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_032",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 36084,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

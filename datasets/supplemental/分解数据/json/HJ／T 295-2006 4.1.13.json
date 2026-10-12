@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护档案管理规范 环境监察",
+  "standard_id": "HJ/T 295-2006",
+  "version": "2006",
+  "chapter_path": "4.1.13",
+  "entities": [
+    {
+      "name": "监察报表标准化材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.13 环境监察工作季度报表。环境监察标准化建设等文件材料,由环境监察部门负责收集积累。",
+      "type": "语义分解",
+      "subject": "监察报表标准化材料",
+      "action": "",
+      "operation": "监察部门收集季度报表资料",
+      "condition": "",
+      "constraint": "4.1.13 环境监察工作季度报表。环境监察标准化建设等文件材料,由环境监察部门负责收集积累。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监察报表标准化材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3059,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

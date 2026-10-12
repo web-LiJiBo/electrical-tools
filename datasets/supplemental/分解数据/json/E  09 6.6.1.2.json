@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "6.6.1.2",
+  "entities": [
+    {
+      "name": "高风速监测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.6.1.2  以事故点为中心，当现场主导风的风速大于0.3m/s时 ，取现场主导风向为轴向，取上风向为\n0°,在约0°,90°,135°,180°,225°,270°方向上各设置1个监测点，下风向应按距离加密布设3\n个及以上的监测点。",
+      "type": "语义分解",
+      "subject": "高风速监测",
+      "action": "",
+      "operation": "超0.3米每秒现场轴六方位下风按距加至少3点",
+      "condition": "",
+      "constraint": "6.6.1.2  以事故点为中心，当现场主导风的风速大于0.3m/s时 ，取现场主导风向为轴向，取上风向为\n0°,在约0°,90°,135°,180°,225°,270°方向上各设置1个监测点，下风向应按距离加密布设3\n个及以上的监测点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "高风速监测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28963,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

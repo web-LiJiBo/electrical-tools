@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013876",
+  "entities": [
+    {
+      "name": "OTN同步信息通道(OSMC)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       OTN同步信息通道(OSMC): OTUk包含一个字节OTU OSMC开销实体，用来传输SOTU 和MOTU\n接口的SSM 和 PTP 信息，如图33所示。OTU 和MOTU 接口SSM 和 PTP 信息采用GFP-F 方式封装。\n    注：SOTUm和MOTUm接口的OTU OSMC功能不做要求。SOTU和MOTU接口的OTU OSMC功能可选择支持；带设",
+      "type": "语义分解",
+      "subject": "OTN同步信息通道(OSMC)",
+      "action": "",
+      "operation": "OTN同步信息通道(OSMC): OTUk包含一个字节OTU OSMC开销实体，用来传输SOTU 和MOTU 接口的SSM 和 PTP 信息，如图33所示。OTU 和MOTU 接口SSM 和 PTP 信息采用GFP-F 方式封装。 注：SOTUm和MOTUm接口的OTU OSMC功能不做要求。SOTU和MOTU接口的OTU OSMC功能可选择支持；带设",
+      "condition": "",
+      "constraint": "       OTN同步信息通道(OSMC): OTUk包含一个字节OTU OSMC开销实体，用来传输SOTU 和MOTU\n接口的SSM 和 PTP 信息，如图33所示。OTU 和MOTU 接口SSM 和 PTP 信息采用GFP-F 方式封装。\n    注：SOTUm和MOTUm接口的OTU OSMC功能不做要求。SOTU和MOTU接口的OTU OSMC功能可选择支持；带设",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN同步信息通道(OSMC)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13876,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

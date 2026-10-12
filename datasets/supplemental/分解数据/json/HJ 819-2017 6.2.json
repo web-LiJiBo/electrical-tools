@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "6.2",
+  "entities": [
+    {
+      "name": "监测机构",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2 监测机构 监测机构应具有与监测任务相适应的技术人员，仪器设备和实验室环境;明确监测人员和管理人员的职责 权限和相互关系，有适当的措施和程序保证监测结果谁确可靠。",
+      "type": "语义分解",
+      "subject": "监测机构",
+      "action": "",
+      "operation": "配备人员设备环境明确职责保证可靠",
+      "condition": "",
+      "constraint": "6.2 监测机构 监测机构应具有与监测任务相适应的技术人员，仪器设备和实验室环境;明确监测人员和管理人员的职责 权限和相互关系，有适当的措施和程序保证监测结果谁确可靠。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测机构"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2873,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

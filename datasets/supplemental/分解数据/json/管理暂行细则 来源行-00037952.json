@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+  "standard_id": "管理暂行细则",
+  "version": "",
+  "chapter_path": "来源行-00037952",
+  "entities": [
+    {
+      "name": "a 若购入的热力存在一个以上不同排放因子的热力来源，请自行分行一一列明",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "a 若购入的热力存在一个以上不同排放因子的热力来源，请自行分行一一列明。热力包括但不限于蒸汽、热水等。",
+      "type": "语义分解",
+      "subject": "a 若购入的热力存在一个以上不同排放因子的热力来源，请自行分行一一列明",
+      "action": "",
+      "operation": "a 若购入的热力存在一个以上不同排放因子的热力来源，请自行分行一一列明。热力包括但不限于蒸汽、热水等。",
+      "condition": "",
+      "constraint": "a 若购入的热力存在一个以上不同排放因子的热力来源，请自行分行一一列明。热力包括但不限于蒸汽、热水等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a 若购入的热力存在一个以上不同排放因子的热力来源，请自行分行一一列明"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37952,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

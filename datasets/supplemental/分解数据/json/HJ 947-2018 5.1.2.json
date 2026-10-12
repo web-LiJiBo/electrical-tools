@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 石油化学工业",
+  "standard_id": "HJ 947-2018",
+  "version": "2018",
+  "chapter_path": "5.1.2",
+  "entities": [
+    {
+      "name": "石化废水指标频次",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2 监测指标与频次 执行GB 31571的排污单位，应执行表1石油化学工业企业类型相应监测要求。还应根据使用原料，生产工艺过程，生产的产品，副产品，从附录A中筛选废水有机特征污染物指标开展自行监测。执行GB 31572的排污单位，应执行表1合成树脂工业企业类型相应监测要求，若生产附录C中列举的合成树脂，还应根据产品类型从附录C中选取其他废水污染物指标开展自行监测。",
+      "type": "语义分解",
+      "subject": "石化废水指标频次",
+      "action": "",
+      "operation": "按执行排放标准对应表行业要求及原料工艺产品附录筛特征指标",
+      "condition": "",
+      "constraint": "5.1.2 监测指标与频次 执行GB 31571的排污单位，应执行表1石油化学工业企业类型相应监测要求。还应根据使用原料，生产工艺过程，生产的产品，副产品，从附录A中筛选废水有机特征污染物指标开展自行监测。执行GB 31572的排污单位，应执行表1合成树脂工业企业类型相应监测要求，若生产附录C中列举的合成树脂，还应根据产品类型从附录C中选取其他废水污染物指标开展自行监测。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石化废水指标频次"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3019,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表1附录A和C未提供"
+      ]
+    }
+  }
+}

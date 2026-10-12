@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.13.6",
+  "entities": [
+    {
+      "name": "特殊作业许可",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.13.6 动火作业 ,受限空间作业 .盲板抽堵作业.高处作业,吊装作业 .临时用电作业.动土作业_断路 作业等特殊作业 ,应执行 GB30871中作业许可相关规定",
+      "type": "语义分解",
+      "subject": "特殊作业许可",
+      "action": "",
+      "operation": "各类特殊作业按引用标准执行",
+      "condition": "",
+      "constraint": "4.13.6 动火作业 ,受限空间作业 .盲板抽堵作业.高处作业,吊装作业 .临时用电作业.动土作业_断路 作业等特殊作业 ,应执行 GB30871中作业许可相关规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "特殊作业许可"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5240,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

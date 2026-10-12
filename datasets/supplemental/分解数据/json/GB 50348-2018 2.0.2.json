@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "2.0.2",
+  "entities": [
+    {
+      "name": "人力防范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.0.2 人力防范 personnel protection 具有相应素质的人员有组织的防范、处置等安全管理行为，简称人防。",
+      "type": "语义分解",
+      "subject": "人力防范",
+      "action": "",
+      "operation": "定义人员有组织的管理处置行为",
+      "condition": "",
+      "constraint": "2.0.2 人力防范 personnel protection 具有相应素质的人员有组织的防范、处置等安全管理行为，简称人防。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "人力防范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6824,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

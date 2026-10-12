@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "4.2.9",
+  "entities": [
+    {
+      "name": "SDH和MSTP网管",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.9    网络管理系统的体系结构 ,   以及 SDH层面的基本功能及\n技术要求应符合现行行业标准  《SDH光缆通信工程网管系统设\n计规范》  YD T  5080 的规定 ,  MSTP 层面的管理功能及技术要\n求应满足现行行业标准 《基于同步数字体系  (SDH)  的多业务\n传送节点  (MSTP)   网络管理技术要求    第 1 部分 : 基本原则》\nYD/T  1768 . 1 和  《基于同步数字体系  (SDH)   的多业务传送节\n点   (MSTP)   网络管理技术要求》  YD T  1620 . 2       YD/T  1620 . 5\n的相关规定 。",
+      "type": "语义分解",
+      "subject": "SDH和MSTP网管",
+      "action": "",
+      "operation": "架构功能技术要求符合引用行业标准",
+      "condition": "",
+      "constraint": "4.2.9    网络管理系统的体系结构 ,   以及 SDH层面的基本功能及\n技术要求应符合现行行业标准  《SDH光缆通信工程网管系统设\n计规范》  YD T  5080 的规定 ,  MSTP 层面的管理功能及技术要\n求应满足现行行业标准 《基于同步数字体系  (SDH)  的多业务\n传送节点  (MSTP)   网络管理技术要求    第 1 部分 : 基本原则》\nYD/T  1768 . 1 和  《基于同步数字体系  (SDH)   的多业务传送节\n点   (MSTP)   网络管理技术要求》  YD T  1620 . 2       YD/T  1620 . 5\n的相关规定 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SDH和MSTP网管"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11727,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用编号空格和分隔符需复核"
+      ]
+    }
+  }
+}

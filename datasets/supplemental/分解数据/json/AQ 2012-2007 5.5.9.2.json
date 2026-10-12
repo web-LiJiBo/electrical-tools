@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.5.9.2",
+  "entities": [
+    {
+      "name": "气举混气水诱喷",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.9.2 气举或混气水诱喷不应使用空气气举。若使用天然气诱喷 ,分离出的天然气应烧掉或进入集输系统。",
+      "type": "语义分解",
+      "subject": "气举混气水诱喷",
+      "action": "",
+      "operation": "禁止空气气举天然气排出须烧掉或集输",
+      "condition": "若使用天然气诱喷",
+      "constraint": "5.5.9.2 气举或混气水诱喷不应使用空气气举。若使用天然气诱喷 ,分离出的天然气应烧掉或进入集输系统。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气举混气水诱喷"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4458,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；处置须其他安全许可，非自动点火授权"
+      ]
+    }
+  }
+}

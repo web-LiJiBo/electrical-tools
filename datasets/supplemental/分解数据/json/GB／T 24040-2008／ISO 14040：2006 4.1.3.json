@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 原则与框架",
+  "standard_id": "GB/T 24040-2008/ISO 14040:2006",
+  "version": "2006",
+  "chapter_path": "4.1.3",
+  "entities": [
+    {
+      "name": "生命周期评价焦点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.3 以环境为焦点 LCA 关注产品系统中的环境因素和环境影响，通常不考虑经济和社会因素及其影响。其他的工具可以结合 LCA 进行更广泛的评价。",
+      "type": "语义分解",
+      "subject": "生命周期评价焦点",
+      "action": "",
+      "operation": "关注环境并可结合其他工具扩展评价",
+      "condition": "",
+      "constraint": "4.1.3 以环境为焦点 LCA 关注产品系统中的环境因素和环境影响，通常不考虑经济和社会因素及其影响。其他的工具可以结合 LCA 进行更广泛的评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生命周期评价焦点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1022,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

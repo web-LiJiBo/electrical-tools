@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "6.3.3",
+  "entities": [
+    {
+      "name": "生活污水污染物量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.3 生活污水中污染物核算按照以下要求执行。 a) 开展手工监测核算的, 可参照 6.2.1.2 执行 b) 未开展手工监测的 ,生活污水污染物量产生量可按式:污染物排放量 =污水产生量 X产污系数计算。产污系数参照《生活污染源产排污系数手册》中城镇生活源水污染源产生系数取值, 并按照直接排放核算排放量。即污染物排放量=污染物产生量。",
+      "type": "语义分解",
+      "subject": "生活污水污染物量",
+      "action": "",
+      "operation": "监测或产生量乘系数按直接排放核算",
+      "condition": "",
+      "constraint": "6.3.3 生活污水中污染物核算按照以下要求执行。 a) 开展手工监测核算的, 可参照 6.2.1.2 执行 b) 未开展手工监测的 ,生活污水污染物量产生量可按式:污染物排放量 =污水产生量 X产污系数计算。产污系数参照《生活污染源产排污系数手册》中城镇生活源水污染源产生系数取值, 并按照直接排放核算排放量。即污染物排放量=污染物产生量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生活污水污染物量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 670,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

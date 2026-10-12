@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.4.6",
+  "entities": [
+    {
+      "name": "SPD线缆连接布放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.4.6  SPD 的引接线和接地线应通过接线端子或铜鼻子连接牢\n固。铜鼻子和缆芯连接时，应使用液压钳紧固或浸锡处理。\n9.4.7  电 源 SPD  的引接线和地线应布放整齐，并应在机架上进\n行绑扎固定，走线应短、直，不得盘绕。",
+      "type": "语义分解",
+      "subject": "SPD线缆连接布放",
+      "action": "",
+      "operation": "端子铜鼻牢连液压紧固或浸锡绑扎齐短直不得盘绕",
+      "condition": "",
+      "constraint": "9.4.6  SPD 的引接线和接地线应通过接线端子或铜鼻子连接牢\n固。铜鼻子和缆芯连接时，应使用液压钳紧固或浸锡处理。\n9.4.7  电 源 SPD  的引接线和地线应布放整齐，并应在机架上进\n行绑扎固定，走线应短、直，不得盘绕。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "SPD线缆连接布放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22963,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含9.4.6及9.4.7"
+      ]
+    }
+  }
+}

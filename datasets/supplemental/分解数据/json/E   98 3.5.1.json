@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "3.5.1",
+  "entities": [
+    {
+      "name": "本条的目的不是推荐穿越管道采用与邻近线路管道相独 立的阴极保护系统，而是",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.5.1   本条的目的不是推荐穿越管道采用与邻近线路管道相独\n立的阴极保护系统，而是对某些特殊的穿越段管道，有特殊需\n要时的一种阴极保护做法。如长距离的埋设在冻土内的管道、",
+      "type": "语义分解",
+      "subject": "本条的目的不是推荐穿越管道采用与邻近线路管道相独 立的阴极保护系统，而是",
+      "action": "",
+      "operation": "本条的目的不是推荐穿越管道采用与邻近线路管道相独 立的阴极保护系统，而是对某些特殊的穿越段管道，有特殊需 要时的一种阴极保护做法。如长距离的埋设在冻土内的管道",
+      "condition": "",
+      "constraint": "3.5.1   本条的目的不是推荐穿越管道采用与邻近线路管道相独\n立的阴极保护系统，而是对某些特殊的穿越段管道，有特殊需\n要时的一种阴极保护做法。如长距离的埋设在冻土内的管道、",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条的目的不是推荐穿越管道采用与邻近线路管道相独 立的阴极保护系统，而是"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44533,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

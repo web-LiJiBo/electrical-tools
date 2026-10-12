@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第1部分:油气田企业",
+  "standard_id": "GA 1551.1-2019",
+  "version": "2019",
+  "chapter_path": "8.2.1",
+  "entities": [
+    {
+      "name": "周界防攀爬设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1 周界应建立金属栅栏或砖 ,石_混凝土围墙等实体防范设施 ,并在其上方设置防攀爬 防翻越障碍物 ,外侧整体高度应大于或等于2.5 nm。",
+      "type": "语义分解",
+      "subject": "周界防攀爬设施",
+      "action": "",
+      "operation": "设置防攀爬翻越障碍及高度要求",
+      "condition": "",
+      "constraint": "8.2.1 周界应建立金属栅栏或砖 ,石_混凝土围墙等实体防范设施 ,并在其上方设置防攀爬 防翻越障碍物 ,外侧整体高度应大于或等于2.5 nm。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "周界防攀爬设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5541,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；高度单位原文为nm，疑似识别错误，不修正"
+      ]
+    }
+  }
+}

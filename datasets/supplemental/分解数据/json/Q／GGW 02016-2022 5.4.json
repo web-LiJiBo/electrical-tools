@@ -1,0 +1,39 @@
+{
+  "standard_name": "能耗统计指标与计算方法",
+  "standard_id": "Q/GGW 02016-2022",
+  "version": "2022",
+  "chapter_path": "5.4",
+  "entities": [
+    {
+      "name": "输气周转量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4 输气周转量按式(4)计算: 输气周转量的计算应遵循的基本原则: 8) 统计报告期内,从做功角度考虑确定气流走向。进行输气周转量的计算。各管段输气量由该管段进入气量减掉外供气量. 减掉该管段管存差额确定; b 管段进入气量涵盖气源点进气量。储气库注气量, 其他管线转入气量等; 管段外供气量涵盖各站点销气量。储气库采气晕。转供其他管线气量,压缩机耗气量。加热炉耗气量。放空气量等; 管段进入气量与外供气量的管存差额按照管线里程均匀分配到各管段; 内部管线之间转供气量有流量计计量的以流量计计量数据为准,没有流量计计量的以运销口径核算数据为淮。",
+      "type": "语义分解",
+      "subject": "输气周转量",
+      "action": "",
+      "operation": "按流向和进出气量计算",
+      "condition": "统计报告期内",
+      "constraint": "有流量计计量的以流量计计量数据为准",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输气周转量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式(4)和管存分配需全文核实，部分识别错误"
+      ]
+    }
+  }
+}

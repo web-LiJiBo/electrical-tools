@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043922",
+  "entities": [
+    {
+      "name": "A．9.2.9 镉标准储存溶液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "A．9.2.9  镉标准储存溶液：称取 0.500 0 g 纯镉（纯度不低于 99.99%)于 200 mL烧杯中，加 25 mL盐酸\n(A. 9 . 2 . 1) ,待其反应缓慢后，加入几滴过氧化氢(A. 9 . 2 . 3) ,加热溶解完全后，煮沸使过量的过氧化氢分\n解 。  冷却至室温，移入 1 000 mL容量瓶中，用水稀释至刻度，混匀。  此溶液 1 mL含 0 . 5 mg 镉 。\nA．9.2. 10  镉标准溶液 A：移取 10.00 mL镉标准储存溶液(A.9.2.9) 于 100 mL容量瓶中，加入 2 mL盐\n酸 (A.9.2.1) ,用水稀释至刻度，混匀。此溶液 1 mL含 50 μg 镉。",
+      "type": "语义分解",
+      "subject": "A．9.2.9 镉标准储存溶液",
+      "action": "",
+      "operation": "A．9.2.9 镉标准储存溶液：称取 0.500 0 g 纯镉（纯度不低于 99.99%)于 200 mL烧杯中，加 25 mL盐酸 (A. 9 . 2 . 1) ,待其反应缓慢后，加入几滴过氧化氢(A. 9 . 2 . 3) ,加热溶解完全后，煮沸使过量的过氧化氢分 解 。 冷却至室温，移入 1 000 mL容量瓶中，用水稀释至刻度，混匀。 此溶液 1 mL含 0 . 5 mg 镉 。 A．9.2. 10 镉标准溶液 A：移取 10.00 mL镉标准储存溶液(A.9.2.9",
+      "condition": "",
+      "constraint": "A．9.2.9  镉标准储存溶液：称取 0.500 0 g 纯镉（纯度不低于 99.99%)于 200 mL烧杯中，加 25 mL盐酸\n(A. 9 . 2 . 1) ,待其反应缓慢后，加入几滴过氧化氢(A. 9 . 2 . 3) ,加热溶解完全后，煮沸使过量的过氧化氢分\n解 。  冷却至室温，移入 1 000 mL容量瓶中，用水稀释至刻度，混匀。  此溶液 1 mL含 0 . 5 mg 镉 。\nA．9.2. 10  镉标准溶液 A：移取 10.00 mL镉标准储存溶液(A.9.2.9) 于 100 mL容量瓶中，加入 2 mL盐\n酸 (A.9.2.1) ,用水稀释至刻度，混匀。此溶液 1 mL含 50 μg 镉。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "A．9.2.9 镉标准储存溶液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43922,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

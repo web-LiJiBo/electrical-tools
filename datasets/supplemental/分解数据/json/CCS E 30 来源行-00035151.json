@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75. 080",
+  "standard_id": "CCS E 30",
+  "version": "",
+  "chapter_path": "来源行-00035151",
+  "entities": [
+    {
+      "name": ". 212 2 — 每 1%氢生成水蒸气在凝结时放出的潜热 ,单位为兆焦",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "0. 212 2 — 每 1%氢生成水蒸气在凝结时放出的潜热 ,单位为兆焦每千克(MJ/kg) ;\nwH               — 试样的氢质量分数 , % 。\n结果保留到小数点后第二位 。",
+      "type": "语义分解",
+      "subject": ". 212 2 — 每 1%氢生成水蒸气在凝结时放出的潜热 ,单位为兆焦",
+      "action": "",
+      "operation": ". 212 2 — 每 1%氢生成水蒸气在凝结时放出的潜热 ,单位为兆焦每千克(MJ/kg) ; wH — 试样的氢质量分数 , % 。 结果保留到小数点后第二位 。",
+      "condition": "",
+      "constraint": "0. 212 2 — 每 1%氢生成水蒸气在凝结时放出的潜热 ,单位为兆焦每千克(MJ/kg) ;\nwH               — 试样的氢质量分数 , % 。\n结果保留到小数点后第二位 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 212 2 — 每 1%氢生成水蒸气在凝结时放出的潜热 ,单位为兆焦"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 35151,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

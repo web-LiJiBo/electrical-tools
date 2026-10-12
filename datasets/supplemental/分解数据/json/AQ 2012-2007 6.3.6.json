@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.3.6",
+  "entities": [
+    {
+      "name": "固定平台钻井设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.6 固定式平台上钻井设备的布置和安装应符合国家现行海洋固定平台安全规则的要求。",
+      "type": "语义分解",
+      "subject": "固定平台钻井设备",
+      "action": "",
+      "operation": "按现行平台安全规则布置安装",
+      "condition": "",
+      "constraint": "6.3.6 固定式平台上钻井设备的布置和安装应符合国家现行海洋固定平台安全规则的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固定平台钻井设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4609,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

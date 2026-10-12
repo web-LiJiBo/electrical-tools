@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012755",
+  "entities": [
+    {
+      "name": "对SDH 通道和OTN 通道的组成部分，均属于设备层的是复用段",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对SDH 通道和OTN 通道的组成部分，均属于设备层的是复用段。因此应确定参考复用段的长度及\n构成，然后根据复用段的性能指标配额来导出其设计指标。在确定其设计指标时应当考虑到性能指标是\n\n在系统运行条件下预期能达到的性能，它应涉及全部误码来源，包括：",
+      "type": "语义分解",
+      "subject": "对SDH 通道和OTN 通道的组成部分，均属于设备层的是复用段",
+      "action": "",
+      "operation": "对SDH 通道和OTN 通道的组成部分，均属于设备层的是复用段。因此应确定参考复用段的长度及 构成，然后根据复用段的性能指标配额来导出其设计指标。在确定其设计指标时应当考虑到性能指标是 在系统运行条件下预期能达到的性能，它应涉及全部误码来源，包括",
+      "condition": "",
+      "constraint": "   对SDH 通道和OTN 通道的组成部分，均属于设备层的是复用段。因此应确定参考复用段的长度及\n构成，然后根据复用段的性能指标配额来导出其设计指标。在确定其设计指标时应当考虑到性能指标是\n\n在系统运行条件下预期能达到的性能，它应涉及全部误码来源，包括：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对SDH 通道和OTN 通道的组成部分，均属于设备层的是复用段"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12755,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

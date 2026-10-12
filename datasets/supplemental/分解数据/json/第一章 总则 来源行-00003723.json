@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团站场设备设施泄漏管理细则",
+  "standard_id": "第一章 总则",
+  "version": "",
+  "chapter_path": "来源行-00003723",
+  "entities": [
+    {
+      "name": "第十五条 泄漏风险等级划分 根据密封点所在区域",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第十五条 泄漏风险等级划分 根据密封点所在区域。在工艺系统中的位置,采取风险矩 阵法确定泄漏风险等级 ,分为I II  III 级,泄漏风险等级表 见附件1。1级为关键密封点 II 级为重要密封点 , III 级为一 般密封点 ,所属单位应根据泄漏风险等级采取相应的预警和预 防措施。根据站内运行工况变化,泄漏风险等级实行动态管理。 根据不同泄漏风险等级的密封点,要进行分级管控。",
+      "type": "语义分解",
+      "subject": "第十五条 泄漏风险等级划分 根据密封点所在区域",
+      "action": "",
+      "operation": "第十五条 泄漏风险等级划分 根据密封点所在区域。在工艺系统中的位置,采取风险矩 阵法确定泄漏风险等级 ,分为I II III 级,泄漏风险等级表 见附件1。1级为关键密封点 II 级为重要密封点 , III 级为一 般密封点 ,所属单位应根据泄漏风险等级采取相应的预警和预 防措施。根据站内运行工况变化,泄漏风险等级实行动态管理。 根据不同泄漏风险等级的密封点,要进行分级管控。",
+      "condition": "",
+      "constraint": "第十五条 泄漏风险等级划分 根据密封点所在区域。在工艺系统中的位置,采取风险矩 阵法确定泄漏风险等级 ,分为I II  III 级,泄漏风险等级表 见附件1。1级为关键密封点 II 级为重要密封点 , III 级为一 般密封点 ,所属单位应根据泄漏风险等级采取相应的预警和预 防措施。根据站内运行工况变化,泄漏风险等级实行动态管理。 根据不同泄漏风险等级的密封点,要进行分级管控。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第十五条 泄漏风险等级划分 根据密封点所在区域"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3723,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

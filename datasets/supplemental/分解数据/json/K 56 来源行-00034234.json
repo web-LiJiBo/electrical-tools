@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034234",
+  "entities": [
+    {
+      "name": ")",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1) : 依照所用的测量程序应将体积浓度对“干”或“湿”烟气列出。利用 9. 2 中公怯(9)应将该值算出并列在上\n        述表中 , 为了进行表 A2 中的评估 , 两种值都需要。  即应通过燃烧计算来确定水的体积浓度。",
+      "type": "语义分解",
+      "subject": ")",
+      "action": "",
+      "operation": ") : 依照所用的测量程序应将体积浓度对“干”或“湿”烟气列出。利用 9. 2 中公怯(9)应将该值算出并列在上 述表中 , 为了进行表 A2 中的评估 , 两种值都需要。 即应通过燃烧计算来确定水的体积浓度。",
+      "condition": "",
+      "constraint": "1) : 依照所用的测量程序应将体积浓度对“干”或“湿”烟气列出。利用 9. 2 中公怯(9)应将该值算出并列在上\n        述表中 , 为了进行表 A2 中的评估 , 两种值都需要。  即应通过燃烧计算来确定水的体积浓度。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34234,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

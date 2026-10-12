@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.6.3",
+  "entities": [
+    {
+      "name": "电缆走槽穿孔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.6.3      电缆走道或槽道穿过楼板孔或墙洞以及在上述电缆走道\n或槽道上放绑电缆完毕时，应对空余的孔、洞用非燃烧材料做防火\n封堵处理。",
+      "type": "语义分解",
+      "subject": "电缆走槽穿孔",
+      "action": "",
+      "operation": "放绑后空余楼墙孔非燃材料防火封堵",
+      "condition": "",
+      "constraint": "3.6.3      电缆走道或槽道穿过楼板孔或墙洞以及在上述电缆走道\n或槽道上放绑电缆完毕时，应对空余的孔、洞用非燃烧材料做防火\n封堵处理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电缆走槽穿孔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26717,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

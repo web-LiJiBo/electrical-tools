@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.7.3.2",
+  "entities": [
+    {
+      "name": "立井架及大钩",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7.3.2 立井架应按操作规程及技术要求进行 ,井架大钩应与井口中心对正。",
+      "type": "语义分解",
+      "subject": "立井架及大钩",
+      "action": "",
+      "operation": "按规程技术要求大钩对井口中心",
+      "condition": "",
+      "constraint": "6.7.3.2 立井架应按操作规程及技术要求进行 ,井架大钩应与井口中心对正。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "立井架及大钩"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4663,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

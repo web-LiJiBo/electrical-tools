@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "建设项目风险源",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1 建设项目风险源调查 调查建设项目危险物质数量和分布情况。生产工艺特点,收集危险物质安全技术说明书 (MSDS) 等基础资料。",
+      "type": "语义分解",
+      "subject": "建设项目风险源",
+      "action": "",
+      "operation": "调查危险物数量分布工艺收集MSDS",
+      "condition": "",
+      "constraint": "5.1 建设项目风险源调查 调查建设项目危险物质数量和分布情况。生产工艺特点,收集危险物质安全技术说明书 (MSDS) 等基础资料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "建设项目风险源"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2460,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

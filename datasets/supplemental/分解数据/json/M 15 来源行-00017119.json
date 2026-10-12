@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 15",
+  "version": "",
+  "chapter_path": "来源行-00017119",
+  "entities": [
+    {
+      "name": "另外，OTN 网络管理和 WDM 系统网络管理可以纳入到上层 NMS 中",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   另外，OTN  网络管理和 WDM 系统网络管理可以纳入到上层 NMS  中进行管理。OTN  网管的\nEMS/NMS接口功能可以在WDM接口功能的基础上实现功能扩展。",
+      "type": "语义分解",
+      "subject": "另外，OTN 网络管理和 WDM 系统网络管理可以纳入到上层 NMS 中",
+      "action": "",
+      "operation": "另外，OTN 网络管理和 WDM 系统网络管理可以纳入到上层 NMS 中进行管理。OTN 网管的 EMS/NMS接口功能可以在WDM接口功能的基础上实现功能扩展。",
+      "condition": "",
+      "constraint": "   另外，OTN  网络管理和 WDM 系统网络管理可以纳入到上层 NMS  中进行管理。OTN  网管的\nEMS/NMS接口功能可以在WDM接口功能的基础上实现功能扩展。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "另外，OTN 网络管理和 WDM 系统网络管理可以纳入到上层 NMS 中"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 17119,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

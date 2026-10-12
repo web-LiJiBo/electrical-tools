@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042775",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "修复/维护数据\t管道内是否存在固体 、异 物 ; 管 段 修 复 和 更 换 ; 以 前 的 检 测 情 况 ; 无 损\n检测数据 ;清管的管 段 、频 率 和 日 期 。  清 管 器 、液 体 分 离 器 、凝 水 器 等\n清理出的固体杂质 和 液 体 的 分 析 数 据 , 以 确 定 清 出 物 的 化 学 成 分 、腐\n蚀性及是否存在细菌",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "修复/维护数据\t管道内是否存在固体 、异 物 ; 管 段 修 复 和 更 换 ; 以 前 的 检 测 情 况 ; 无 损\n检测数据 ;清管的管 段 、频 率 和 日 期 。  清 管 器 、液 体 分 离 器 、凝 水 器 等\n清理出的固体杂质 和 液 体 的 分 析 数 据 , 以 确 定 清 出 物 的 化 学 成 分 、腐\n蚀性及是否存在细菌",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42775,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

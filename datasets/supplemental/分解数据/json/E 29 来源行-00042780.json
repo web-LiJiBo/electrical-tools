@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 23. 040. 01",
+  "standard_id": "E 29",
+  "version": "",
+  "chapter_path": "来源行-00042780",
+  "entities": [
+    {
+      "name": "腐蚀位置预测 6. 1 概述 6. 1. 1 腐蚀位置预测是依据流动模型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6   腐蚀位置预测\n\n6. 1   概述\n\n6. 1. 1   腐蚀位置预测是依据流动模型计算结果识别管道潜在积液位置 ,并以此预测检测区段可能发生\n内腐蚀的位置 。\n6. 1.2   腐蚀位置预测工作包括检测区段划分 、临界倾角计算 、管道实际倾角计算及内腐蚀位置识别 。\n\n6.2   检测区段划分\n\n6.2. 1   现场检测工作开始前 ,依据第 5 章收集的数据划分检测区段 。",
+      "type": "语义分解",
+      "subject": "腐蚀位置预测 6. 1 概述 6. 1. 1 腐蚀位置预测是依据流动模型",
+      "action": "",
+      "operation": "腐蚀位置预测 6. 1 概述 6. 1. 1 腐蚀位置预测是依据流动模型计算结果识别管道潜在积液位置 ,并以此预测检测区段可能发生 内腐蚀的位置 。 6. 1.2 腐蚀位置预测工作包括检测区段划分 、临界倾角计算 、管道实际倾角计算及内腐蚀位置识别 。 6.2 检测区段划分 6.2. 1 现场检测工作开始前 ,依据第 5 章收集的数据划分检测区段 。",
+      "condition": "",
+      "constraint": "6   腐蚀位置预测\n\n6. 1   概述\n\n6. 1. 1   腐蚀位置预测是依据流动模型计算结果识别管道潜在积液位置 ,并以此预测检测区段可能发生\n内腐蚀的位置 。\n6. 1.2   腐蚀位置预测工作包括检测区段划分 、临界倾角计算 、管道实际倾角计算及内腐蚀位置识别 。\n\n6.2   检测区段划分\n\n6.2. 1   现场检测工作开始前 ,依据第 5 章收集的数据划分检测区段 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "腐蚀位置预测 6. 1 概述 6. 1. 1 腐蚀位置预测是依据流动模型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42780,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

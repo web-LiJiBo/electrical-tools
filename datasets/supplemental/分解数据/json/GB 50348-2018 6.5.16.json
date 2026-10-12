@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.5.16",
+  "entities": [
+    {
+      "name": "异系统集成故障隔离",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.16 当安全防范系统与其他电子信息系统集成联网时，其他电子信息系统的故障不应影响安全防范系统的正常运行。",
+      "type": "语义分解",
+      "subject": "异系统集成故障隔离",
+      "action": "",
+      "operation": "其他系统故障不得影响安防运行",
+      "condition": "当安全防范系统与其他电子信息系统集成联网时",
+      "constraint": "6.5.16 当安全防范系统与其他电子信息系统集成联网时，其他电子信息系统的故障不应影响安全防范系统的正常运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "异系统集成故障隔离"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6998,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

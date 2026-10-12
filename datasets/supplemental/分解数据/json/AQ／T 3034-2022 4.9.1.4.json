@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.9.1.4",
+  "entities": [
+    {
+      "name": "规程评审修订",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9.1.4 企业应每年对操作规程的适应性和有效性进行确认 ,至少每三年对操作规程进行一次审核修 订。企业发生生产 全事故事件或行业内同类正艺装置发生事故时 ,应及时对操作规程进行审查;工艺 技术 .设备设施等发生娈更或风险分析提出修订要求时 !应及时组织对操作规程中的相应内容进行 修订。",
+      "type": "语义分解",
+      "subject": "规程评审修订",
+      "action": "",
+      "operation": "每年确认至少三年审核修订事故变更风险建议及时审查更新",
+      "condition": "",
+      "constraint": "4.9.1.4 企业应每年对操作规程的适应性和有效性进行确认 ,至少每三年对操作规程进行一次审核修 订。企业发生生产 全事故事件或行业内同类正艺装置发生事故时 ,应及时对操作规程进行审查;工艺 技术 .设备设施等发生娈更或风险分析提出修订要求时 !应及时组织对操作规程中的相应内容进行 修订。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "规程评审修订"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5152,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

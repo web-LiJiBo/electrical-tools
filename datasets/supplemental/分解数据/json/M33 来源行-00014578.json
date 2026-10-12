@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014578",
+  "entities": [
+    {
+      "name": "b) 带外DCN 应支持消息的优先级传送，使对时间敏感的消息(如用于恢复",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   b)    带外DCN 应支持消息的优先级传送，使对时间敏感的消息(如用于恢复的消息)比其他消息\n\n      (如连接信令消息、拓扑、资源发现消息)具有更高的优先级；",
+      "type": "语义分解",
+      "subject": "b) 带外DCN 应支持消息的优先级传送，使对时间敏感的消息(如用于恢复",
+      "action": "",
+      "operation": "b) 带外DCN 应支持消息的优先级传送，使对时间敏感的消息(如用于恢复的消息)比其他消息 (如连接信令消息、拓扑、资源发现消息)具有更高的优先级",
+      "condition": "",
+      "constraint": "   b)    带外DCN 应支持消息的优先级传送，使对时间敏感的消息(如用于恢复的消息)比其他消息\n\n      (如连接信令消息、拓扑、资源发现消息)具有更高的优先级；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 带外DCN 应支持消息的优先级传送，使对时间敏感的消息(如用于恢复"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14578,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

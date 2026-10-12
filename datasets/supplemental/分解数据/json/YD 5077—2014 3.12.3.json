@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "3.12.3",
+  "entities": [
+    {
+      "name": "交换设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.12.3      机房内所有交换设备不应通过安装加固螺栓等与建筑钢\n筋相碰而形成电气连通。",
+      "type": "语义分解",
+      "subject": "交换设备",
+      "action": "",
+      "operation": "不得加固螺栓碰建筑钢筋形成电气连通",
+      "condition": "",
+      "constraint": "3.12.3      机房内所有交换设备不应通过安装加固螺栓等与建筑钢\n筋相碰而形成电气连通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "交换设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26757,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

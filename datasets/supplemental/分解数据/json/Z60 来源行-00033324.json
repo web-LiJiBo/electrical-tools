@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "来源行-00033324",
+  "entities": [
+    {
+      "name": "挥发性有机液体储罐若不符合5.2.3.1条或5.2.3.2条规定，应记录",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   挥发性有机液体储罐若不符合5.2.3.1条或5.2.3.2条规定，应记录并在90d内修复或排空储罐停止\n使用。如延迟修复或排空储罐，应将相关方案报生态环境主管部门确定。",
+      "type": "语义分解",
+      "subject": "挥发性有机液体储罐若不符合5.2.3.1条或5.2.3.2条规定，应记录",
+      "action": "",
+      "operation": "挥发性有机液体储罐若不符合5.2.3.1条或5.2.3.2条规定，应记录并在90d内修复或排空储罐停止 使用。如延迟修复或排空储罐，应将相关方案报生态环境主管部门确定。",
+      "condition": "",
+      "constraint": "   挥发性有机液体储罐若不符合5.2.3.1条或5.2.3.2条规定，应记录并在90d内修复或排空储罐停止\n使用。如延迟修复或排空储罐，应将相关方案报生态环境主管部门确定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发性有机液体储罐若不符合5.2.3.1条或5.2.3.2条规定，应记录"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_029",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33324,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

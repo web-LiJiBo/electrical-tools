@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048468",
+  "entities": [
+    {
+      "name": "智能检测数据误差是指修正后的智能检测数据仍然存在 着一定的误差，产生的原",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      5    智能检测数据误差是指修正后的智能检测数据仍然存在\n着一定的误差，产生的原因有多种。比如用于数据修正的磁力\n盒的密度及其坐标精度、管道转角的大小及多少、内检测球速\n\n等，最终都会影响数据的准确度。 一般要求修正后的智能检测\n数据所表示的管道位置与真实管道位置的差距要小于1m。",
+      "type": "语义分解",
+      "subject": "智能检测数据误差是指修正后的智能检测数据仍然存在 着一定的误差，产生的原",
+      "action": "",
+      "operation": "智能检测数据误差是指修正后的智能检测数据仍然存在 着一定的误差，产生的原因有多种。比如用于数据修正的磁力 盒的密度及其坐标精度、管道转角的大小及多少、内检测球速 等，最终都会影响数据的准确度。 一般要求修正后的智能检测 数据所表示的管道位置与真实管道位置的差距要小于1m。",
+      "condition": "",
+      "constraint": "      5    智能检测数据误差是指修正后的智能检测数据仍然存在\n着一定的误差，产生的原因有多种。比如用于数据修正的磁力\n盒的密度及其坐标精度、管道转角的大小及多少、内检测球速\n\n等，最终都会影响数据的准确度。 一般要求修正后的智能检测\n数据所表示的管道位置与真实管道位置的差距要小于1m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "智能检测数据误差是指修正后的智能检测数据仍然存在 着一定的误差，产生的原"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48468,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

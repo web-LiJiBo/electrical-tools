@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034289",
+  "entities": [
+    {
+      "name": "通过巴克拉奇方法(见 Ⅰso5063)测得的烟是由那些在烟气中存在的所有",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      通过巴克拉奇方法(见 Ⅰso5063)测得的烟是由那些在烟气中存在的所有颗粒组成 , 这些颗粒将影\n响巴克拉奇过滤器上沉积物的反射率。\n\nB7    固体颗粒",
+      "type": "语义分解",
+      "subject": "通过巴克拉奇方法(见 Ⅰso5063)测得的烟是由那些在烟气中存在的所有",
+      "action": "",
+      "operation": "通过巴克拉奇方法(见 Ⅰso5063)测得的烟是由那些在烟气中存在的所有颗粒组成 , 这些颗粒将影 响巴克拉奇过滤器上沉积物的反射率。 B7 固体颗粒",
+      "condition": "",
+      "constraint": "      通过巴克拉奇方法(见 Ⅰso5063)测得的烟是由那些在烟气中存在的所有颗粒组成 , 这些颗粒将影\n响巴克拉奇过滤器上沉积物的反射率。\n\nB7    固体颗粒",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通过巴克拉奇方法(见 Ⅰso5063)测得的烟是由那些在烟气中存在的所有"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34289,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

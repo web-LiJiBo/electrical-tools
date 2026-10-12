@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023134",
+  "entities": [
+    {
+      "name": "G.0.3 在两个防雷区的界面上，应将所有通过界面的金属物做 等电位连接",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "G.0.3     在两个防雷区的界面上，应将所有通过界面的金属物做\n等电位连接，并宜采取屏蔽措施。将需要保护的空间宜按图\nG.0.3   划分成不同的防雷区。",
+      "type": "语义分解",
+      "subject": "G.0.3 在两个防雷区的界面上，应将所有通过界面的金属物做 等电位连接",
+      "action": "",
+      "operation": "G.0.3 在两个防雷区的界面上，应将所有通过界面的金属物做 等电位连接，并宜采取屏蔽措施。将需要保护的空间宜按图 G.0.3 划分成不同的防雷区。",
+      "condition": "",
+      "constraint": "G.0.3     在两个防雷区的界面上，应将所有通过界面的金属物做\n等电位连接，并宜采取屏蔽措施。将需要保护的空间宜按图\nG.0.3   划分成不同的防雷区。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "G.0.3 在两个防雷区的界面上，应将所有通过界面的金属物做 等电位连接"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23134,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

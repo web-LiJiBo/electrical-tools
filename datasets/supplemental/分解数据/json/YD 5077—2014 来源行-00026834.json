@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026834",
+  "entities": [
+    {
+      "name": ")线路维护功能测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1)线路维护功能测试：用户电路、端口检测、POTS 外线检测、\nISDN   BRI/PRI检测、xDSL 线路检测、V5 接口检测、用户线路测\n试板的检测；",
+      "type": "语义分解",
+      "subject": ")线路维护功能测试",
+      "action": "",
+      "operation": ")线路维护功能测试：用户电路、端口检测、POTS 外线检测、 ISDN BRI/PRI检测、xDSL 线路检测、V5 接口检测、用户线路测 试板的检测",
+      "condition": "",
+      "constraint": "   1)线路维护功能测试：用户电路、端口检测、POTS 外线检测、\nISDN   BRI/PRI检测、xDSL 线路检测、V5 接口检测、用户线路测\n试板的检测；",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")线路维护功能测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26834,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

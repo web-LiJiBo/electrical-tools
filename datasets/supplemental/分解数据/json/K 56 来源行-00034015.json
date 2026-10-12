@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034015",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7\t干扰\t对含有 CO2 丶H2 O 和 UHC的样品应作如下限制:\n____对每百分 CO2  浓度(按体积 )小于 1%读数 ;\n____对每百分水蒸气浓度(按体积 )小于 2%读数 ;\n____对每 10 ppmUHC小于 1%读数 ;\n或合起来的干扰小于 4%读数。对读数最重要的影响是由水含量所引起的。为保持样品\n气体中的水含量恒定 , 冷却器的压力应控制在 ±0 . 2 kpa 范围内。\n为 避免设备中的氨与 NO工 的催化还原作用(sCR)的干扰 , sO2   的浓度应在与氨混合前\n测量1)  。",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "7\t干扰\t对含有 CO2 丶H2 O 和 UHC的样品应作如下限制:\n____对每百分 CO2  浓度(按体积 )小于 1%读数 ;\n____对每百分水蒸气浓度(按体积 )小于 2%读数 ;\n____对每 10 ppmUHC小于 1%读数 ;\n或合起来的干扰小于 4%读数。对读数最重要的影响是由水含量所引起的。为保持样品\n气体中的水含量恒定 , 冷却器的压力应控制在 ±0 . 2 kpa 范围内。\n为 避免设备中的氨与 NO工 的催化还原作用(sCR)的干扰 , sO2   的浓度应在与氨混合前\n测量1)  。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34015,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

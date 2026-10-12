@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "初步采样评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1 评估初步采样分析的结果 分析初步采样获取的地块信息,主要包括:  土壤类型。水文地质条件。现场和实验室检测数据等; 初步确定污染物种类。程度和空间分布; 评估初步采样分析的质量保证和质量控制。",
+      "type": "语义分解",
+      "subject": "初步采样评估",
+      "action": "",
+      "operation": "分析土壤水文检测初定污染类程度空间及质控",
+      "condition": "",
+      "constraint": "6.2.1 评估初步采样分析的结果 分析初步采样获取的地块信息,主要包括:  土壤类型。水文地质条件。现场和实验室检测数据等; 初步确定污染物种类。程度和空间分布; 评估初步采样分析的质量保证和质量控制。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "初步采样评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2642,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

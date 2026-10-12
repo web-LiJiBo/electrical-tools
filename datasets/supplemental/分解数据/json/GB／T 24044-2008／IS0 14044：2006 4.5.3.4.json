@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.5.3.4",
+  "entities": [
+    {
+      "name": "一致性检查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.3.4 一致性检查 一致性检查的目的是确认假设 .方法和数据是否与目的和范围的要求相一致。 如果与 LCA 或 LCI 研究有关 ,则以下问题应予以说明 a)  同一产品系统生命周期中以及不同产品系统间数据质量的差别是否与研究的目的和范围 一致? 6) 是否一致地应用了地域的和(或)时间的差别(如果存在)? 所有的产品系统是否都应用了一致的分配规则和系统边界? 4) 所应用的各影响评价要素是否一致?",
+      "type": "语义分解",
+      "subject": "一致性检查",
+      "action": "",
+      "operation": "核对假设方法数据地域时间分配边界与目的范围一致",
+      "condition": "",
+      "constraint": "4.5.3.4 一致性检查 一致性检查的目的是确认假设 .方法和数据是否与目的和范围的要求相一致。 如果与 LCA 或 LCI 研究有关 ,则以下问题应予以说明 a)  同一产品系统生命周期中以及不同产品系统间数据质量的差别是否与研究的目的和范围 一致? 6) 是否一致地应用了地域的和(或)时间的差别(如果存在)? 所有的产品系统是否都应用了一致的分配规则和系统边界? 4) 所应用的各影响评价要素是否一致?",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一致性检查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1138,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

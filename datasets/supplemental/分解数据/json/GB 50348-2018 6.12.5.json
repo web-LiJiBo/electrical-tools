@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.12.5",
+  "entities": [
+    {
+      "name": "供电路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.5 供电传输及其路由设计应符合下列规定: 1 供电系统可配置适当的配电箱/柜和可靠的供电线缆。供电设备和供电线缆应有实体防护措施，并应按照强弱电分隔的原则合理布局; 2 安全防范系统的电能输送主要采用有线方式的供电线缆。按照路由最短、汇聚最简、传输消耗最小、可靠性高、代价最合理、无消防安全隐患等原则对供电的能量传输进行设计，确定合理的电压等级，选择适当类型的线缆，规划合理的路由。",
+      "type": "语义分解",
+      "subject": "供电路由",
+      "action": "",
+      "operation": "实体保护强弱分隔按短简低耗可靠合理消防选电压线缆路由",
+      "condition": "",
+      "constraint": "6.12.5 供电传输及其路由设计应符合下列规定: 1 供电系统可配置适当的配电箱/柜和可靠的供电线缆。供电设备和供电线缆应有实体防护措施，并应按照强弱电分隔的原则合理布局; 2 安全防范系统的电能输送主要采用有线方式的供电线缆。按照路由最短、汇聚最简、传输消耗最小、可靠性高、代价最合理、无消防安全隐患等原则对供电的能量传输进行设计，确定合理的电压等级，选择适当类型的线缆，规划合理的路由。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "供电路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7047,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

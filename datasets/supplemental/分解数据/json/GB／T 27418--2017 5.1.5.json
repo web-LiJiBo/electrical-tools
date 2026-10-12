@@ -1,0 +1,41 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "5.1.5",
+  "entities": [
+    {
+      "name": "线性化不确定度模型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.5 如果被测量Y的式(1)在输入量X;的名义值X; . 处作一阶展开时(通常这是一种恰当的近似) , Y=Yo+cidi +c202+. +cNON , 其中 Yo=f(Xi,0 ,孓2,0 . , XN,0 ) ,c; 是导数af/3X;在 X;=又;,0处的 值,0;=X;一X;,0 为了分析不确定度,通常将输入量X;娈换到0,,以使被测量近似为其变量的线性函 数(见C.3.1) =。 示例 : 4.3.7的例 2中.被侧量 V 的估计值是 V=V+AV. 其中 V=0.928 571 V.u (V) =12 MV. 附加修正值 AV =0 - u(AI) =8.7 MV。 由于3V/JT =1,aV/a (AV) =1 .则 T 的合成方差为 u(V) = u (V) + u? (AV) 二 (12 uV)? + (8.7 IV)? 三 219丫10-12 V? 所以合成标准不确定度为 u(T) =15 MV. 其相应的相对合成标准不确定度 u(V) /V 为16X10-6 (见5.1.6) 。这就 是被测量为其依据的量的线性函数 ,且系数 (; =+1情况的例子。 如果 Y=ciX +czXz +. + CVXN , 并且常数 c; = +1或-1.则由式(10)得出 u(y)= 8u(';)。",
+      "type": "语义分解",
+      "subject": "线性化不确定度模型",
+      "action": "",
+      "operation": "名义值一阶展开近似合成方差",
+      "condition": "",
+      "constraint": "5.1.5 如果被测量Y的式(1)在输入量X;的名义值X; . 处作一阶展开时(通常这是一种恰当的近似) , Y=Yo+cidi +c202+. +cNON , 其中 Yo=f(Xi,0 ,孓2,0 . , XN,0 ) ,c; 是导数af/3X;在 X;=又;,0处的 值,0;=X;一X;,0 为了分析不确定度,通常将输入量X;娈换到0,,以使被测量近似为其变量的线性函 数(见C.3.1) =。 示例 : 4.3.7的例 2中.被侧量 V 的估计值是 V=V+AV. 其中 V=0.928 571 V.u (V) =12 MV. 附加修正值 AV =0 - u(AI) =8.7 MV。 由于3V/JT =1,aV/a (AV) =1 .则 T 的合成方差为 u(V) = u (V) + u? (AV) 二 (12 uV)? + (8.7 IV)? 三 219丫10-12 V? 所以合成标准不确定度为 u(T) =15 MV. 其相应的相对合成标准不确定度 u(V) /V 为16X10-6 (见5.1.6) 。这就 是被测量为其依据的量的线性函数 ,且系数 (; =+1情况的例子。 如果 Y=ciX +czXz +. + CVXN , 并且常数 c; = +1或-1.则由式(10)得出 u(y)= 8u(';)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "线性化不确定度模型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 195,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式识别异常"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022805",
+  "entities": [
+    {
+      "name": "由屋顶进入机房的缆线和太阳能电池馈电线应采用铠装 电缆，其铠装层在进入机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3    由屋顶进入机房的缆线和太阳能电池馈电线应采用铠装\n\n电缆，其铠装层在进入机房人口处应就近与屋顶女儿墙上的避雷\n带焊接连通，电缆芯线应在人口处就近对地加装防雷器。",
+      "type": "语义分解",
+      "subject": "由屋顶进入机房的缆线和太阳能电池馈电线应采用铠装 电缆，其铠装层在进入机",
+      "action": "",
+      "operation": "由屋顶进入机房的缆线和太阳能电池馈电线应采用铠装 电缆，其铠装层在进入机房人口处应就近与屋顶女儿墙上的避雷 带焊接连通，电缆芯线应在人口处就近对地加装防雷器。",
+      "condition": "",
+      "constraint": "      3    由屋顶进入机房的缆线和太阳能电池馈电线应采用铠装\n\n电缆，其铠装层在进入机房人口处应就近与屋顶女儿墙上的避雷\n带焊接连通，电缆芯线应在人口处就近对地加装防雷器。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "由屋顶进入机房的缆线和太阳能电池馈电线应采用铠装 电缆，其铠装层在进入机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22805,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.2.5.5",
+  "entities": [
+    {
+      "name": "管道自动化运行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5.5 管道的自动化运行应满足工艺控制和管道设备的保护要求 ,并应定期检定和校验。",
+      "type": "语义分解",
+      "subject": "管道自动化运行",
+      "action": "",
+      "operation": "满足工艺设备保护并定期检校",
+      "condition": "",
+      "constraint": "7.2.5.5 管道的自动化运行应满足工艺控制和管道设备的保护要求 ,并应定期检定和校验。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道自动化运行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4808,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

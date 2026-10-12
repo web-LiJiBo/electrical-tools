@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "4.1.2.1.3",
+  "entities": [
+    {
+      "name": "河流控制断面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.2.1.3 控制断面 应设置在排污区 (口) 下游, 污水与地表水基本混匀处。控制断面的数量与控制断面与排污区(口)的距离可根据以下因素决定: 主要污染区数量及其间距,各污染源实际情况 主要污染物迁移转化规律和其他水文特征等。此外,还应考虑对纳污量的控制程度。即各控制断面控制的纳污量应不小于该河段总纳污量的80%。如果某河段的各控制断面均有至少5年的监测资料。可根据现有资料优化断面。确定控制断面的位置和数量。",
+      "type": "语义分解",
+      "subject": "河流控制断面",
+      "action": "",
+      "operation": "排污下游混匀依源迁移水文设数距控制至少八成纳污有五年资料可优化",
+      "condition": "",
+      "constraint": "4.1.2.1.3 控制断面 应设置在排污区 (口) 下游, 污水与地表水基本混匀处。控制断面的数量与控制断面与排污区(口)的距离可根据以下因素决定: 主要污染区数量及其间距,各污染源实际情况 主要污染物迁移转化规律和其他水文特征等。此外,还应考虑对纳污量的控制程度。即各控制断面控制的纳污量应不小于该河段总纳污量的80%。如果某河段的各控制断面均有至少5年的监测资料。可根据现有资料优化断面。确定控制断面的位置和数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "河流控制断面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2943,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

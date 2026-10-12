@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "7.6.2",
+  "entities": [
+    {
+      "name": "外观目检时应详细描述金属腐蚀的部位，腐蚀产物厚度、 颜色、结构、紧实度及",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.6.2   外观目检时应详细描述金属腐蚀的部位，腐蚀产物厚度、\n颜色、结构、紧实度及产物分布状况，并应对腐蚀部位外观进\n行拍照。",
+      "type": "语义分解",
+      "subject": "外观目检时应详细描述金属腐蚀的部位，腐蚀产物厚度、 颜色、结构、紧实度及",
+      "action": "",
+      "operation": "外观目检时应详细描述金属腐蚀的部位，腐蚀产物厚度、 颜色、结构、紧实度及产物分布状况，并应对腐蚀部位外观进 行拍照。",
+      "condition": "",
+      "constraint": "7.6.2   外观目检时应详细描述金属腐蚀的部位，腐蚀产物厚度、\n颜色、结构、紧实度及产物分布状况，并应对腐蚀部位外观进\n行拍照。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外观目检时应详细描述金属腐蚀的部位，腐蚀产物厚度、 颜色、结构、紧实度及"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45112,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00015546",
+  "entities": [
+    {
+      "name": "S/R点光接口测试 6.1.1 平均发送光功率 6.1.1.1 定 义",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1  S/R点光接口测试\n6.1.1   平均发送光功率\n6.1.1.1      定 义",
+      "type": "语义分解",
+      "subject": "S/R点光接口测试 6.1.1 平均发送光功率 6.1.1.1 定 义",
+      "action": "",
+      "operation": "S/R点光接口测试 6.1.1 平均发送光功率 6.1.1.1 定 义",
+      "condition": "",
+      "constraint": "6.1  S/R点光接口测试\n6.1.1   平均发送光功率\n6.1.1.1      定 义",
+      "constraint_role": "informational",
+      "related_entities": [
+        "S/R点光接口测试 6.1.1 平均发送光功率 6.1.1.1 定 义"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 15546,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

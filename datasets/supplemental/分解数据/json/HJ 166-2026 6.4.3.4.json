@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "6.4.3.4",
+  "entities": [
+    {
+      "name": "固废堆土壤点位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.3.4 固体废物堆影响型 以废物堆为中心,在4个主要方位放射状布点,在主导风向的下风向和地表径流的水流方向适当增加点位。",
+      "type": "语义分解",
+      "subject": "固废堆土壤点位",
+      "action": "",
+      "operation": "以堆中心放射布点下风径流增点",
+      "condition": "",
+      "constraint": "6.4.3.4 固体废物堆影响型 以废物堆为中心,在4个主要方位放射状布点,在主导风向的下风向和地表径流的水流方向适当增加点位。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固废堆土壤点位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2218,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

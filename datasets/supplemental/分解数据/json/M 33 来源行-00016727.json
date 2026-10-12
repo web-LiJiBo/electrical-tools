@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016727",
+  "entities": [
+    {
+      "name": "g) 删除上述创建的业务，通过业务分析仪查看业务是否删除成功，通过网管系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     g) 删除上述创建的业务，通过业务分析仪查看业务是否删除成功，通过网管系统查询业务是否成功\n\n删除。通过协议分析仪抓包分析控制平面的信令消息。",
+      "type": "语义分解",
+      "subject": "g) 删除上述创建的业务，通过业务分析仪查看业务是否删除成功，通过网管系",
+      "action": "",
+      "operation": "g) 删除上述创建的业务，通过业务分析仪查看业务是否删除成功，通过网管系统查询业务是否成功 删除。通过协议分析仪抓包分析控制平面的信令消息。",
+      "condition": "",
+      "constraint": "     g) 删除上述创建的业务，通过业务分析仪查看业务是否删除成功，通过网管系统查询业务是否成功\n\n删除。通过协议分析仪抓包分析控制平面的信令消息。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "g) 删除上述创建的业务，通过业务分析仪查看业务是否删除成功，通过网管系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16727,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

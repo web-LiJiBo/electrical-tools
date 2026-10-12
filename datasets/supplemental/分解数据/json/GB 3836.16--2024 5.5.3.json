@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "5.5.3",
+  "entities": [
+    {
+      "name": "连续监督检查频率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.3 检查频率 连续监督的维护和检查频率应根据与设备损坏有关的特定工作环境，使用和经验确定。 当环境条件劣化(例如溶剂浸人或振动增加)时，应增加受这些改变影响的防爆设备的检查频次。",
+      "type": "语义分解",
+      "subject": "连续监督检查频率",
+      "action": "",
+      "operation": "按劣化环境使用经验确定环境变差增加受影响设备检查",
+      "condition": "",
+      "constraint": "5.5.3 检查频率 连续监督的维护和检查频率应根据与设备损坏有关的特定工作环境，使用和经验确定。 当环境条件劣化(例如溶剂浸人或振动增加)时，应增加受这些改变影响的防爆设备的检查频次。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "连续监督检查频率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3995,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

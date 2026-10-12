@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040445",
+  "entities": [
+    {
+      "name": "化工建设项目的回用水处理一般需要降低污水中的盐含 量，尤其是膜脱盐以及蒸",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.8       化工建设项目的回用水处理一般需要降低污水中的盐含\n量，尤其是膜脱盐以及蒸发结晶处理工艺，均需要明确盐的组分和\n含量，设计时应通过水平衡、盐平衡计算，优选针对性强的脱盐技\n术和工艺，避免盐分在系统中累积。",
+      "type": "语义分解",
+      "subject": "化工建设项目的回用水处理一般需要降低污水中的盐含 量，尤其是膜脱盐以及蒸",
+      "action": "",
+      "operation": "化工建设项目的回用水处理一般需要降低污水中的盐含 量，尤其是膜脱盐以及蒸发结晶处理工艺，均需要明确盐的组分和 含量，设计时应通过水平衡、盐平衡计算，优选针对性强的脱盐技 术和工艺，避免盐分在系统中累积。",
+      "condition": "",
+      "constraint": "6.5.8       化工建设项目的回用水处理一般需要降低污水中的盐含\n量，尤其是膜脱盐以及蒸发结晶处理工艺，均需要明确盐的组分和\n含量，设计时应通过水平衡、盐平衡计算，优选针对性强的脱盐技\n术和工艺，避免盐分在系统中累积。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "化工建设项目的回用水处理一般需要降低污水中的盐含 量，尤其是膜脱盐以及蒸"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40445,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

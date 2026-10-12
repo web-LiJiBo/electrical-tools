@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "6.2.1.3",
+  "entities": [
+    {
+      "name": "废水产排污系数法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1.3 废水采用产排污系数法核算的, 产排污系数可参照《污染源普查产排污系数手册》 未给出去除效率时, 按照式(19)计算; 给出去除效率时, 按照式(20)计算。",
+      "type": "语义分解",
+      "subject": "废水产排污系数法",
+      "action": "",
+      "operation": "按有无去除效率选择式19或20",
+      "condition": "",
+      "constraint": "6.2.1.3 废水采用产排污系数法核算的, 产排污系数可参照《污染源普查产排污系数手册》 未给出去除效率时, 按照式(19)计算; 给出去除效率时, 按照式(20)计算。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水产排污系数法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 665,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；缺公式"
+      ]
+    }
+  }
+}

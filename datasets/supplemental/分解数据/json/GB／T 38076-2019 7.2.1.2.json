@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.2.1.2",
+  "entities": [
+    {
+      "name": "管道安全标识",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1.2 管道安全标识除按 GB 50253，SY/T 6064设置外，还建议设置禁止下列危害管道安全行为的警示标识: 擅自开启，关闭管道阀门; b) 移动，毁损，涂改管道标识; 在地上管道上行走或者放置重物; d) 在埋地管道两侧 5 m 范围内打桩，打井，钻探，取土等作业。",
+      "type": "语义分解",
+      "subject": "管道安全标识",
+      "action": "",
+      "operation": "设置警示禁止擅动阀门标识地上管道负荷及两侧五米危险作业",
+      "condition": "",
+      "constraint": "7.2.1.2 管道安全标识除按 GB 50253，SY/T 6064设置外，还建议设置禁止下列危害管道安全行为的警示标识: 擅自开启，关闭管道阀门; b) 移动，毁损，涂改管道标识; 在地上管道上行走或者放置重物; d) 在埋地管道两侧 5 m 范围内打桩，打井，钻探，取土等作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道安全标识"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1194,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

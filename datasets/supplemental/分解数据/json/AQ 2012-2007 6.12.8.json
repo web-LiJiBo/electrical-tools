@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.12.8",
+  "entities": [
+    {
+      "name": "滩海通井路车辆",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.12.8 进入滩海通井路的车辆轮胎应采用低压轮胎,具有良好的防滑性能,便于人员逃生。",
+      "type": "语义分解",
+      "subject": "滩海通井路车辆",
+      "action": "",
+      "operation": "采用低压防滑轮胎便于逃生",
+      "condition": "",
+      "constraint": "6.12.8 进入滩海通井路的车辆轮胎应采用低压轮胎,具有良好的防滑性能,便于人员逃生。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "滩海通井路车辆"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4755,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

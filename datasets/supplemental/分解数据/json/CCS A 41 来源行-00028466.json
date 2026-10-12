@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 03. 120.30",
+  "standard_id": "CCS A 41",
+  "version": "",
+  "chapter_path": "来源行-00028466",
+  "entities": [
+    {
+      "name": "组织通过实施精益六西格玛管理 ,在顾客满意 、财务收益 、人力资源 、业",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      组织通过实施精益六西格玛管理 ,在顾客满意 、财务收益 、人力资源 、业务过程 、相关方及组织文化\n与管理变革等方面 取 得 显 著 成 果 , 这 些 方 面 成 果 的 指 标 应 包 括 当 前 水 平 、近 三 年 趋 势 以 及 适 当 的 对\n比 ,精益六西格玛成果应支持组织战略目标的达成 。",
+      "type": "语义分解",
+      "subject": "组织通过实施精益六西格玛管理 ,在顾客满意 、财务收益 、人力资源 、业",
+      "action": "",
+      "operation": "组织通过实施精益六西格玛管理 ,在顾客满意 、财务收益 、人力资源 、业务过程 、相关方及组织文化 与管理变革等方面 取 得 显 著 成 果 , 这 些 方 面 成 果 的 指 标 应 包 括 当 前 水 平 、近 三 年 趋 势 以 及 适 当 的 对 比 ,精益六西格玛成果应支持组织战略目标的达成 。",
+      "condition": "",
+      "constraint": "      组织通过实施精益六西格玛管理 ,在顾客满意 、财务收益 、人力资源 、业务过程 、相关方及组织文化\n与管理变革等方面 取 得 显 著 成 果 , 这 些 方 面 成 果 的 指 标 应 包 括 当 前 水 平 、近 三 年 趋 势 以 及 适 当 的 对\n比 ,精益六西格玛成果应支持组织战略目标的达成 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "组织通过实施精益六西格玛管理 ,在顾客满意 、财务收益 、人力资源 、业"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28466,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

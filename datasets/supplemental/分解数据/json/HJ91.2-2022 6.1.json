@@ -1,0 +1,41 @@
+{
+  "standard_name": "地表水环境质量监测技术规范",
+  "standard_id": "HJ91.2-2022",
+  "version": "2022",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "测量结果有效数字",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 有效数字规则 记录。运算和报告测量结果 应使用有效数字,有效数字位数和小数点后位数应执行相关标准分析方法的规定",
+      "type": "语义分解",
+      "subject": "测量结果有效数字",
+      "action": "",
+      "operation": "按分析方法规定记录运算报告位数",
+      "condition": "",
+      "constraint": "6.1 有效数字规则 记录。运算和报告测量结果 应使用有效数字,有效数字位数和小数点后位数应执行相关标准分析方法的规定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量结果有效数字"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2982,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

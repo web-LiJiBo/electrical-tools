@@ -1,0 +1,41 @@
+{
+  "standard_name": "油气管道作业安全管理规范 第3部分: 动火作业",
+  "standard_id": "Q/GGW 04003.3-2022",
+  "version": "2022",
+  "chapter_path": "4.1",
+  "entities": [
+    {
+      "name": "动火范围",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1 动火作业范围 动火作业范围包括如下内容: 气焊、电焊等各种焊接作业; 机械切割、气割及使用等离子切割机、砂轮机、磨光机等各种金属切割作业; 使用喷灯、液化气炉、火炉、电炉等明火作业; 烧、烤、煨管线、锤击、喷砂等产生火花或炽热表面的其他作业。",
+      "type": "语义分解",
+      "subject": "动火范围",
+      "action": "",
+      "operation": "包括焊切明火及其他产生火花炽热表面的作业",
+      "condition": "",
+      "constraint": "4.1 动火作业范围 动火作业范围包括如下内容: 气焊、电焊等各种焊接作业; 机械切割、气割及使用等离子切割机、砂轮机、磨光机等各种金属切割作业; 使用喷灯、液化气炉、火炉、电炉等明火作业; 烧、烤、煨管线、锤击、喷砂等产生火花或炽热表面的其他作业。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火范围"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6069,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；范围定义"
+      ]
+    }
+  }
+}

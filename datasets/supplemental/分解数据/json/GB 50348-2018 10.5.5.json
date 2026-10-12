@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "10.5.5",
+  "entities": [
+    {
+      "name": "验收未通过工程",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.5.5 验收不通过的工程不得正式交付使用。施工单位、设计单位、建设(使用)单位等应根据验收组提出的意见与要求，落实整改措施后方可再次组织验收;工程复验时，对原不通过部分的抽样比例应加倍。",
+      "type": "语义分解",
+      "subject": "验收未通过工程",
+      "action": "",
+      "operation": "不得交付整改再验原未通过部分抽样比例加倍",
+      "condition": "",
+      "constraint": "10.5.5 验收不通过的工程不得正式交付使用。施工单位、设计单位、建设(使用)单位等应根据验收组提出的意见与要求，落实整改措施后方可再次组织验收;工程复验时，对原不通过部分的抽样比例应加倍。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "验收未通过工程"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7191,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

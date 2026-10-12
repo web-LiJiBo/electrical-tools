@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "5.4",
+  "entities": [
+    {
+      "name": "复杂泄漏处置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4 处置行动 处置行动按第 ?章规定执行;规模大,情祝复杂的泄漏现场,由现场指挥部组织专家对处置方案迸行会商。",
+      "type": "语义分解",
+      "subject": "复杂泄漏处置",
+      "action": "",
+      "operation": "按引用章节执行并组织专家会商",
+      "condition": "",
+      "constraint": "5.4 处置行动 处置行动按第 ?章规定执行;规模大,情祝复杂的泄漏现场,由现场指挥部组织专家对处置方案迸行会商。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "复杂泄漏处置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5869,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用章节原文缺失"
+      ]
+    }
+  }
+}

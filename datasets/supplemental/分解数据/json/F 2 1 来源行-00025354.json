@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025354",
+  "entities": [
+    {
+      "name": "h) 电路交换信令测试仪识别到该呼叫为监听呼叫，比较主叫号码等级和被叫号",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "h)    电路交换信令测试仪识别到该呼叫为监听呼叫，比较主叫号码等级和被叫号码等级，如果主叫\n       号码等级不低于被叫号码等级，则向网关设备发送 CONNECT 消息应答呼叫，监听成功；若主\n        叫号码等级低于被叫号码等级，则不执行监听，拒绝呼叫；",
+      "type": "语义分解",
+      "subject": "h) 电路交换信令测试仪识别到该呼叫为监听呼叫，比较主叫号码等级和被叫号",
+      "action": "",
+      "operation": "h) 电路交换信令测试仪识别到该呼叫为监听呼叫，比较主叫号码等级和被叫号码等级，如果主叫 号码等级不低于被叫号码等级，则向网关设备发送 CONNECT 消息应答呼叫，监听成功；若主 叫号码等级低于被叫号码等级，则不执行监听，拒绝呼叫",
+      "condition": "",
+      "constraint": "h)    电路交换信令测试仪识别到该呼叫为监听呼叫，比较主叫号码等级和被叫号码等级，如果主叫\n       号码等级不低于被叫号码等级，则向网关设备发送 CONNECT 消息应答呼叫，监听成功；若主\n        叫号码等级低于被叫号码等级，则不执行监听，拒绝呼叫；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "h) 电路交换信令测试仪识别到该呼叫为监听呼叫，比较主叫号码等级和被叫号"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25354,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "6.0.7",
+  "entities": [
+    {
+      "name": "宜总结分析交流腐蚀监测数据变化规律，发现交流腐蚀 迹象时，应分析和查明原",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.0.7    宜总结分析交流腐蚀监测数据变化规律，发现交流腐蚀\n迹象时，应分析和查明原因。",
+      "type": "语义分解",
+      "subject": "宜总结分析交流腐蚀监测数据变化规律，发现交流腐蚀 迹象时，应分析和查明原",
+      "action": "",
+      "operation": "宜总结分析交流腐蚀监测数据变化规律，发现交流腐蚀 迹象时，应分析和查明原因。",
+      "condition": "",
+      "constraint": "6.0.7    宜总结分析交流腐蚀监测数据变化规律，发现交流腐蚀\n迹象时，应分析和查明原因。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宜总结分析交流腐蚀监测数据变化规律，发现交流腐蚀 迹象时，应分析和查明原"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48818,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

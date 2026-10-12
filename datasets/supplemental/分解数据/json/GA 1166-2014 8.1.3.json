@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "8.1.3",
+  "entities": [
+    {
+      "name": "二级库站物防",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.3 实体防范除符合6.2.1的规定外 ,还应符合以下规定: a ) 库(站)周界实体防范设施外侧高度不低于2.5 m , 在其上方加装铁丝网 周界实体防范设施 采用金属栅栏时 ,其材质 组件规格等满足安全防范的要求,竖杆间距小于等于150 mm,1 m 以下部分不应有横撑; b) 符合7.1.2b)的规定; c) 在周界主出入口外设缓冲区 ,缓冲区内设置实体阻挡设施 特殊时期 ,实体阻挡设施设置为阻截状态。",
+      "type": "语义分解",
+      "subject": "二级库站物防",
+      "action": "",
+      "operation": "周界至少2.5米加网栅杆间距不超150毫米低处无横撑口外缓冲阻挡特殊期阻截",
+      "condition": "",
+      "constraint": "8.1.3 实体防范除符合6.2.1的规定外 ,还应符合以下规定: a ) 库(站)周界实体防范设施外侧高度不低于2.5 m , 在其上方加装铁丝网 周界实体防范设施 采用金属栅栏时 ,其材质 组件规格等满足安全防范的要求,竖杆间距小于等于150 mm,1 m 以下部分不应有横撑; b) 符合7.1.2b)的规定; c) 在周界主出入口外设缓冲区 ,缓冲区内设置实体阻挡设施 特殊时期 ,实体阻挡设施设置为阻截状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "二级库站物防"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5470,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

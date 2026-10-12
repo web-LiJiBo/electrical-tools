@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00025792",
+  "entities": [
+    {
+      "name": ")省内软交换网中的信令网关( SG) 可采用独立设置的方式， 也可采用与",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1)省内软交换网中的信令网关( SG) 可采用独立设置的方式，\n也可采用与省内TG 或 SS 综合设置的方式。省内SS 所在本地网\n宜设置独立 SG; 未设省内 SS 的本地网，当互通信令消息量较大\n时，也可设置独立 SG; 互通信令消息量较少的本地网，宜采用综合\n设置的方式。",
+      "type": "语义分解",
+      "subject": ")省内软交换网中的信令网关( SG) 可采用独立设置的方式， 也可采用与",
+      "action": "",
+      "operation": ")省内软交换网中的信令网关( SG) 可采用独立设置的方式， 也可采用与省内TG 或 SS 综合设置的方式。省内SS 所在本地网 宜设置独立 SG; 未设省内 SS 的本地网，当互通信令消息量较大 时，也可设置独立 SG; 互通信令消息量较少的本地网，宜采用综合 设置的方式。",
+      "condition": "",
+      "constraint": "   1)省内软交换网中的信令网关( SG) 可采用独立设置的方式，\n也可采用与省内TG 或 SS 综合设置的方式。省内SS 所在本地网\n宜设置独立 SG; 未设省内 SS 的本地网，当互通信令消息量较大\n时，也可设置独立 SG; 互通信令消息量较少的本地网，宜采用综合\n设置的方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")省内软交换网中的信令网关( SG) 可采用独立设置的方式， 也可采用与"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25792,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

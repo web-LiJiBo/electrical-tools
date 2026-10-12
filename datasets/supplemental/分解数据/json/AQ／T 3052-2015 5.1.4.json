@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品事故应急救援指挥导则",
+  "standard_id": "AQ/T 3052-2015",
+  "version": "2015",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "现场指挥职责",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 现场指挥部根据情况 ,划定本单位警戒隔离区域,抢救 .撤离遇险人员 ,制定现场处置措施(工艺控制 ,工程抢险 防范次生及衍生事故) ,及时将现场情况及应急救援进展报告总指挥部,向总指挥部提出外部救援力量 .技术 物资支持 .疏散公众等请求和建议",
+      "type": "语义分解",
+      "subject": "现场指挥职责",
+      "action": "",
+      "operation": "划警戒救撤制订工艺抢险防次生措施报告进展申请外援资源疏散",
+      "condition": "",
+      "constraint": "5.1.4 现场指挥部根据情况 ,划定本单位警戒隔离区域,抢救 .撤离遇险人员 ,制定现场处置措施(工艺控制 ,工程抢险 防范次生及衍生事故) ,及时将现场情况及应急救援进展报告总指挥部,向总指挥部提出外部救援力量 .技术 物资支持 .疏散公众等请求和建议",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现场指挥职责"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5978,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

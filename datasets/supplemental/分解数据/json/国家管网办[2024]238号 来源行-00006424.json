@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006424",
+  "entities": [
+    {
+      "name": "第五十八条 [受限空间作业实施要求 ] 〈六〉温度 受限空间内的温度应控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十八条 [受限空间作业实施要求 ] 〈六〉温度 受限空间内的温度应控制在不对人员产生危害的安全范围内 ,依据《防暑降温措施管理办法 》(安监总安健[2012]89号 ), 当受限空间内温度超过 409时 ,停止作业。当受限空间内温度达到379以上 409C以下时,连续作业时间不得超过0.5小时。",
+      "type": "语义分解",
+      "subject": "第五十八条 [受限空间作业实施要求 ] 〈六〉温度 受限空间内的温度应控",
+      "action": "",
+      "operation": "第五十八条 [受限空间作业实施要求 ] 〈六〉温度 受限空间内的温度应控制在不对人员产生危害的安全范围内 ,依据《防暑降温措施管理办法 》(安监总安健[2012]89号 ), 当受限空间内温度超过 409时 ,停止作业。当受限空间内温度达到379以上 409C以下时,连续作业时间不得超过0.5小时。",
+      "condition": "",
+      "constraint": "第五十八条 [受限空间作业实施要求 ] 〈六〉温度 受限空间内的温度应控制在不对人员产生危害的安全范围内 ,依据《防暑降温措施管理办法 》(安监总安健[2012]89号 ), 当受限空间内温度超过 409时 ,停止作业。当受限空间内温度达到379以上 409C以下时,连续作业时间不得超过0.5小时。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十八条 [受限空间作业实施要求 ] 〈六〉温度 受限空间内的温度应控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6424,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

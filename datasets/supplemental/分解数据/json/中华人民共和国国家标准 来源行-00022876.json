@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022876",
+  "entities": [
+    {
+      "name": "注",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "注：综合通信大楼交流供电系统的第一级SPD(I  /B 级),可根据实际情况选择在变压\n   器低压侧或低压配电室电源人口处安装；第二级 SPD(I/C    级)可选择在后级配\n   电室、楼层配电箱、机房交流配电柜或开关电源人口处安装；精细保护 SPD 可 选\n   择在控制、数据、网络机架的配电箱内安装或使用拖板式防雷插座；直流保护\n      SPD 可选择在直流配电柜、列头柜或用电设备端口处安装；直流集中供电或 UPS\n   集中供电的通信综合楼，在远端机房的(第一级)直流配电屏或 UPS 交流配电箱\n   (柜)内应分别安装 SPD, 集中供电的输出端也应安装 SPD;向系统外供电的端\n   口，以及从外系统引入的电源端口应安装 SPD。",
+      "type": "语义分解",
+      "subject": "注",
+      "action": "",
+      "operation": "注：综合通信大楼交流供电系统的第一级SPD(I /B 级),可根据实际情况选择在变压 器低压侧或低压配电室电源人口处安装；第二级 SPD(I/C 级)可选择在后级配 电室、楼层配电箱、机房交流配电柜或开关电源人口处安装；精细保护 SPD 可 选 择在控制、数据、网络机架的配电箱内安装或使用拖板式防雷插座；直流保护 SPD 可选择在直流配电柜、列头柜或用电设备端口处安装；直流集中供电或 UPS 集中供电的通信综合楼，在远端机房的(第一级)直流配电屏或 UPS 交流配电箱 (柜)",
+      "condition": "",
+      "constraint": "注：综合通信大楼交流供电系统的第一级SPD(I  /B 级),可根据实际情况选择在变压\n   器低压侧或低压配电室电源人口处安装；第二级 SPD(I/C    级)可选择在后级配\n   电室、楼层配电箱、机房交流配电柜或开关电源人口处安装；精细保护 SPD 可 选\n   择在控制、数据、网络机架的配电箱内安装或使用拖板式防雷插座；直流保护\n      SPD 可选择在直流配电柜、列头柜或用电设备端口处安装；直流集中供电或 UPS\n   集中供电的通信综合楼，在远端机房的(第一级)直流配电屏或 UPS 交流配电箱\n   (柜)内应分别安装 SPD, 集中供电的输出端也应安装 SPD;向系统外供电的端\n   口，以及从外系统引入的电源端口应安装 SPD。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "注"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22876,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "6.3.1.3",
+  "entities": [
+    {
+      "name": "干旱荒漠地段生态恢复工作应在管道工程施工结束后立即进行，无法立即进行的地",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1.3        干旱荒漠地段生态恢复工作应在管道工程施工结束后立即进行，无法立即进行的地段，生态\n恢复应按原植被类型进行恢复，恢复工作不应晚于管道工程施工结束后的第一个春季完成。\n6.3.1.4        植被荒漠地段植被恢复应符合下列规定：",
+      "type": "语义分解",
+      "subject": "干旱荒漠地段生态恢复工作应在管道工程施工结束后立即进行，无法立即进行的地",
+      "action": "",
+      "operation": "干旱荒漠地段生态恢复工作应在管道工程施工结束后立即进行，无法立即进行的地段，生态 恢复应按原植被类型进行恢复，恢复工作不应晚于管道工程施工结束后的第一个春季完成。 6.3.1.4 植被荒漠地段植被恢复应符合下列规定",
+      "condition": "",
+      "constraint": "6.3.1.3        干旱荒漠地段生态恢复工作应在管道工程施工结束后立即进行，无法立即进行的地段，生态\n恢复应按原植被类型进行恢复，恢复工作不应晚于管道工程施工结束后的第一个春季完成。\n6.3.1.4        植被荒漠地段植被恢复应符合下列规定：",
+      "constraint_role": "informational",
+      "related_entities": [
+        "干旱荒漠地段生态恢复工作应在管道工程施工结束后立即进行，无法立即进行的地"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40740,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

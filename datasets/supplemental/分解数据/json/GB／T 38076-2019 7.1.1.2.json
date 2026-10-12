@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.1.1.2",
+  "entities": [
+    {
+      "name": "外腐蚀控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.1.2 建议外腐蚀控制内容包括: a ) 外腐蚀控制执行 GB/T 21447 .GB/T 21448; b) 定期检测管地电位。 如电位不满足阴极保护淮则，调查原因并采取相应措施; 识别 测试杂散电流对管道的影响，并采取措施减缓杂散电流对管道的影响 ; 对发现的防腐层缺陷及时修复。",
+      "type": "语义分解",
+      "subject": "外腐蚀控制",
+      "action": "",
+      "operation": "检测管地电位调查不满足原因减缓杂散电流修复防腐层缺陷",
+      "condition": "",
+      "constraint": "7.1.1.2 建议外腐蚀控制内容包括: a ) 外腐蚀控制执行 GB/T 21447 .GB/T 21448; b) 定期检测管地电位。 如电位不满足阴极保护淮则，调查原因并采取相应措施; 识别 测试杂散电流对管道的影响，并采取措施减缓杂散电流对管道的影响 ; 对发现的防腐层缺陷及时修复。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "外腐蚀控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1180,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

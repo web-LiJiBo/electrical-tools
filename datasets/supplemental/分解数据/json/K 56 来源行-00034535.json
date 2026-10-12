@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034535",
+  "entities": [
+    {
+      "name": "在测量系统前面 , 可能存在空气漏入烟气而冲淡样气 , 并且可能会影响测",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      在测量系统前面 , 可能存在空气漏入烟气而冲淡样气 , 并且可能会影响测量。  这可能是由于管道损\n坏 、挡板配得不好 、补燃的或不补燃的热回收设备等而引发的。",
+      "type": "语义分解",
+      "subject": "在测量系统前面 , 可能存在空气漏入烟气而冲淡样气 , 并且可能会影响测",
+      "action": "",
+      "operation": "在测量系统前面 , 可能存在空气漏入烟气而冲淡样气 , 并且可能会影响测量。 这可能是由于管道损 坏 、挡板配得不好 、补燃的或不补燃的热回收设备等而引发的。",
+      "condition": "",
+      "constraint": "      在测量系统前面 , 可能存在空气漏入烟气而冲淡样气 , 并且可能会影响测量。  这可能是由于管道损\n坏 、挡板配得不好 、补燃的或不补燃的热回收设备等而引发的。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在测量系统前面 , 可能存在空气漏入烟气而冲淡样气 , 并且可能会影响测"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34535,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

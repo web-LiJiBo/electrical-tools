@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "5.7.3",
+  "entities": [
+    {
+      "name": "雷电与过电压保护器的性能应符合国家现行标准《埋地 钢质管道阴极保护技术规",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.7.3   雷电与过电压保护器的性能应符合国家现行标准《埋地\n钢质管道阴极保护技术规范》GB/T 21448和《油气田及管道工\n程雷电防护设计规范》SY/T 6885的想关规定。",
+      "type": "语义分解",
+      "subject": "雷电与过电压保护器的性能应符合国家现行标准《埋地 钢质管道阴极保护技术规",
+      "action": "",
+      "operation": "雷电与过电压保护器的性能应符合国家现行标准《埋地 钢质管道阴极保护技术规范》GB/T 21448和《油气田及管道工 程雷电防护设计规范》SY/T 6885的想关规定。",
+      "condition": "",
+      "constraint": "5.7.3   雷电与过电压保护器的性能应符合国家现行标准《埋地\n钢质管道阴极保护技术规范》GB/T 21448和《油气田及管道工\n程雷电防护设计规范》SY/T 6885的想关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "雷电与过电压保护器的性能应符合国家现行标准《埋地 钢质管道阴极保护技术规"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44448,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

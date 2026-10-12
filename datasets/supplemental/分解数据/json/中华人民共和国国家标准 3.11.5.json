@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "3.11.5",
+  "entities": [
+    {
+      "name": "电缆布放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.11.5      各类电缆的布放应远离铁塔等可能遭受直击雷的结构\n物，不得沿建筑物的墙角布线。",
+      "type": "语义分解",
+      "subject": "电缆布放",
+      "action": "",
+      "operation": "远离铁塔等直击雷结构不得沿墙角",
+      "condition": "",
+      "constraint": "3.11.5      各类电缆的布放应远离铁塔等可能遭受直击雷的结构\n物，不得沿建筑物的墙角布线。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电缆布放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22447,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

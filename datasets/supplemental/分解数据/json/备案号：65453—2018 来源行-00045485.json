@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "来源行-00045485",
+  "entities": [
+    {
+      "name": "号指示表读数增加",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "号指示表读数增加；当检测者走过漏点时，信号强度降低。\nF.2.7    当进行侧向皮尔逊测量时，携带仪器的检测者直接横穿\n管道位置，而另一个检测者则与管道侧向保持一定的距离，在\n通过漏点顶部时会出现一个峰值，可借助最大信号确定该漏点。\nF.2.8    漏点位置宜使用标志物进行标志并记录。接收器有记录\n功能，信号应能被自动记录。",
+      "type": "语义分解",
+      "subject": "号指示表读数增加",
+      "action": "",
+      "operation": "号指示表读数增加；当检测者走过漏点时，信号强度降低。 F.2.7 当进行侧向皮尔逊测量时，携带仪器的检测者直接横穿 管道位置，而另一个检测者则与管道侧向保持一定的距离，在 通过漏点顶部时会出现一个峰值，可借助最大信号确定该漏点。 F.2.8 漏点位置宜使用标志物进行标志并记录。接收器有记录 功能，信号应能被自动记录。",
+      "condition": "",
+      "constraint": "号指示表读数增加；当检测者走过漏点时，信号强度降低。\nF.2.7    当进行侧向皮尔逊测量时，携带仪器的检测者直接横穿\n管道位置，而另一个检测者则与管道侧向保持一定的距离，在\n通过漏点顶部时会出现一个峰值，可借助最大信号确定该漏点。\nF.2.8    漏点位置宜使用标志物进行标志并记录。接收器有记录\n功能，信号应能被自动记录。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "号指示表读数增加"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45485,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

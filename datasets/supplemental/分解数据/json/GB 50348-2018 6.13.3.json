@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.13.3",
+  "entities": [
+    {
+      "name": "传输设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.13.3 传输设备选型应符合下列规定: 1 接入公共电话网的设备应符合公共电话网入网要求; 2 无线发射装置、接收装置的发射频率、功率应符合国家无线电管理的有关规定; 3 应根据信号带宽、衰减情况、传输距离和实时传输要求，在电缆、光缆传输的适当位置加装均衡、放大、中继、收发、混合或耦合等装置; 4 网络传输交换设备应满足安全管理及数据处理的功能、性能等要求; 5 室外使用的光传输部件，应具有良好的密闭防水结构。",
+      "type": "语义分解",
+      "subject": "传输设备",
+      "action": "",
+      "operation": "公网准入无线合规按带宽距离实时加中继网络功能安全室外光件防水",
+      "condition": "",
+      "constraint": "6.13.3 传输设备选型应符合下列规定: 1 接入公共电话网的设备应符合公共电话网入网要求; 2 无线发射装置、接收装置的发射频率、功率应符合国家无线电管理的有关规定; 3 应根据信号带宽、衰减情况、传输距离和实时传输要求，在电缆、光缆传输的适当位置加装均衡、放大、中继、收发、混合或耦合等装置; 4 网络传输交换设备应满足安全管理及数据处理的功能、性能等要求; 5 室外使用的光传输部件，应具有良好的密闭防水结构。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "传输设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7053,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

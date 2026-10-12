@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "27",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "27\t7.3\t采用混合编号方式对于\n日后维护人员要求较高，\n地址号码可以按照7.1、\n7.2的方式进行编码，也\n可以采用含字母号的编\n码方式；而地址号码采用\n  前缀+内部号码编码两\n部分的方式对于工程建\n设比较复杂。采用哪种\n编号方案，工程实施时可\n根据本地网实际情况进\n行选择\t删除\t删除了解释性\n内容",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "27\t7.3\t采用混合编号方式对于\n日后维护人员要求较高，\n地址号码可以按照7.1、\n7.2的方式进行编码，也\n可以采用含字母号的编\n码方式；而地址号码采用\n  前缀+内部号码编码两\n部分的方式对于工程建\n设比较复杂。采用哪种\n编号方案，工程实施时可\n根据本地网实际情况进\n行选择\t删除\t删除了解释性\n内容",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26494,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

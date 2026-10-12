@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037316",
+  "entities": [
+    {
+      "name": "报告主体应对相关参数数据等进行监测，主要指对化石燃料消耗量、电力、低位热",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   报告主体应对相关参数数据等进行监测，主要指对化石燃料消耗量、电力、低位热值、单位热值含\n碳量、含碳量、氧化率、天然气气质、相关排放因子等的监测。若报告主体选择开展检测获取相关参数，\n则检测方式应遵循GB/T  384 、GB/T   11062等相关标准。",
+      "type": "语义分解",
+      "subject": "报告主体应对相关参数数据等进行监测，主要指对化石燃料消耗量、电力、低位热",
+      "action": "",
+      "operation": "报告主体应对相关参数数据等进行监测，主要指对化石燃料消耗量、电力、低位热值、单位热值含 碳量、含碳量、氧化率、天然气气质、相关排放因子等的监测。若报告主体选择开展检测获取相关参数， 则检测方式应遵循GB/T 384 、GB/T 11062等相关标准。",
+      "condition": "",
+      "constraint": "   报告主体应对相关参数数据等进行监测，主要指对化石燃料消耗量、电力、低位热值、单位热值含\n碳量、含碳量、氧化率、天然气气质、相关排放因子等的监测。若报告主体选择开展检测获取相关参数，\n则检测方式应遵循GB/T  384 、GB/T   11062等相关标准。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报告主体应对相关参数数据等进行监测，主要指对化石燃料消耗量、电力、低位热"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37316,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

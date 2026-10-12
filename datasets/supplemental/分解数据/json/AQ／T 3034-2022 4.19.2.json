@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.19.2",
+  "entities": [
+    {
+      "name": "安全文化价值观",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.19.2 安全价值观是安全文化建设的核心要萦 企业应树立正确的安全价值观 ,营造无责备的安全 文化氛围 ,为员工建立及时上报和分享身边不安全事件的渠道",
+      "type": "语义分解",
+      "subject": "安全文化价值观",
+      "action": "",
+      "operation": "建立无责备文化及上报分享渠道",
+      "condition": "",
+      "constraint": "4.19.2 安全价值观是安全文化建设的核心要萦 企业应树立正确的安全价值观 ,营造无责备的安全 文化氛围 ,为员工建立及时上报和分享身边不安全事件的渠道",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全文化价值观"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5337,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

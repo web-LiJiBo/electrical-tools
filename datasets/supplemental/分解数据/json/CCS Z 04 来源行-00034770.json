@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 020. 10",
+  "standard_id": "CCS Z 04",
+  "version": "",
+  "chapter_path": "来源行-00034770",
+  "entities": [
+    {
+      "name": "报告主体应以企业法人或视同法人的独立核算单位为边界 ,核算和报告其生产系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      报告主体应以企业法人或视同法人的独立核算单位为边界 ,核算和报告其生产系统产生的温室气\n体排放 。  生产系统包括主要生产系统 、辅助生产系统 , 以及直接为生产服务的附属生产系统 ,其中辅助\n生产系统包括动力 、供电 、供水 、化验 、机修 、库房 、运输等 , 附属生产系统包括生产指挥系统(厂部)和厂",
+      "type": "语义分解",
+      "subject": "报告主体应以企业法人或视同法人的独立核算单位为边界 ,核算和报告其生产系",
+      "action": "",
+      "operation": "报告主体应以企业法人或视同法人的独立核算单位为边界 ,核算和报告其生产系统产生的温室气 体排放 。 生产系统包括主要生产系统 、辅助生产系统 , 以及直接为生产服务的附属生产系统 ,其中辅助 生产系统包括动力 、供电 、供水 、化验 、机修 、库房 、运输等 , 附属生产系统包括生产指挥系统(厂部)和厂",
+      "condition": "",
+      "constraint": "      报告主体应以企业法人或视同法人的独立核算单位为边界 ,核算和报告其生产系统产生的温室气\n体排放 。  生产系统包括主要生产系统 、辅助生产系统 , 以及直接为生产服务的附属生产系统 ,其中辅助\n生产系统包括动力 、供电 、供水 、化验 、机修 、库房 、运输等 , 附属生产系统包括生产指挥系统(厂部)和厂",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报告主体应以企业法人或视同法人的独立核算单位为边界 ,核算和报告其生产系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_031",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34770,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

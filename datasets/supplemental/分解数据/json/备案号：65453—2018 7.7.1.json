@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "7.7.1",
+  "entities": [
+    {
+      "name": "根据直接检测结果，应对管道外壁腐蚀减薄严重部位进 行管道剩余强度评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7.1   根据直接检测结果，应对管道外壁腐蚀减薄严重部位进\n行管道剩余强度评价；开挖处管道腐蚀深度减薄超过壁厚的\n10%时，应进行管道剩余强度评价，并应给出“立即维修”“计\n划维修”“监控使用”的建议。",
+      "type": "语义分解",
+      "subject": "根据直接检测结果，应对管道外壁腐蚀减薄严重部位进 行管道剩余强度评价",
+      "action": "",
+      "operation": "根据直接检测结果，应对管道外壁腐蚀减薄严重部位进 行管道剩余强度评价；开挖处管道腐蚀深度减薄超过壁厚的 10%时，应进行管道剩余强度评价，并应给出“立即维修”“计 划维修”“监控使用”的建议。",
+      "condition": "",
+      "constraint": "7.7.1   根据直接检测结果，应对管道外壁腐蚀减薄严重部位进\n行管道剩余强度评价；开挖处管道腐蚀深度减薄超过壁厚的\n10%时，应进行管道剩余强度评价，并应给出“立即维修”“计\n划维修”“监控使用”的建议。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据直接检测结果，应对管道外壁腐蚀减薄严重部位进 行管道剩余强度评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45145,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

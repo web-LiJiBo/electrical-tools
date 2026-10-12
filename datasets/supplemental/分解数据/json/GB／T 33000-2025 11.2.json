@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "11.2",
+  "entities": [
+    {
+      "name": "事故应急响应",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2 应急处置 企业应在突发事件或事故发生后，根据应急预案立即启动应急响应程序，按规定报告事故情况，在确保安全的前提下进行救援。企业应及时准确发布有关信息，正确引导社会和公众舆论。企业应在现场应急救援结束后，组织人员对现场进行检查确认，消除现场存在的不安全因素，并对应急救援情况进行总结评估；在确保安全的前提下修复损毁的设备设施、生产环境等；满足安全生产条件后，方可恢复生产秩序。",
+      "type": "语义分解",
+      "subject": "事故应急响应",
+      "action": "",
+      "operation": "立即依预案报告安全救援发布信息结束确认消隐总结安全修复具条件复产",
+      "condition": "",
+      "constraint": "11.2 应急处置 企业应在突发事件或事故发生后，根据应急预案立即启动应急响应程序，按规定报告事故情况，在确保安全的前提下进行救援。企业应及时准确发布有关信息，正确引导社会和公众舆论。企业应在现场应急救援结束后，组织人员对现场进行检查确认，消除现场存在的不安全因素，并对应急救援情况进行总结评估；在确保安全的前提下修复损毁的设备设施、生产环境等；满足安全生产条件后，方可恢复生产秩序。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故应急响应"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7288,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.4.2",
+  "entities": [
+    {
+      "name": "固体废物综合利用量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.2 固体废物综合利用量应为统计周期内企业通过回收。加工。循环。交换等方式, 从固体废物中提取或者使其转化为可以利用的资源,能源和其他原材料的固体废物量 (包括当年利用的往年固体废物累计贮存量) 如用作农业肥料。生产建筑材料。筑路。铸石等。",
+      "type": "语义分解",
+      "subject": "固体废物综合利用量",
+      "action": "",
+      "operation": "统计资源能源回收含往年存量利用",
+      "condition": "",
+      "constraint": "4.4.2 固体废物综合利用量应为统计周期内企业通过回收。加工。循环。交换等方式, 从固体废物中提取或者使其转化为可以利用的资源,能源和其他原材料的固体废物量 (包括当年利用的往年固体废物累计贮存量) 如用作农业肥料。生产建筑材料。筑路。铸石等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固体废物综合利用量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 588,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "status": "design_backlog_not_executable",
+  "simulation_only": true,
+  "real_dispatch_allowed": false,
+  "knowledge_baseline": {
+    "original_json_count": 6674,
+    "supplemental_json_count": 46466,
+    "last_completed_supplemental_batch": "assistant_remaining_045",
+    "supplemental_review_status": "manual_review_required",
+    "note": "数量是来源记录数，不是有效规范或可执行控制指令数"
+  },
+  "notice": "这些是待补充模板，不会由现有模板库自动加载。条款引用、状态限值与控制动作授权必须分别核验，不把温升限值或试验工况直接变成跳闸条件。",
+  "current_gaps": [
+    "现有TemplateLibrary只按场景动作协议枚举，device_type为空，没有具体设备点位、适用条款和状态反馈绑定。",
+    "主流程IEC61850Adapter输出概念候选载荷，不含完整模拟对象引用、控制模型和确认服务映射。",
+    "主流程ModbusAdapter仅写单线圈FC05，不能把有功设定值或温度参数写入线圈；独立模拟模块的寄存器映射尚未与真实动作依据打通。",
+    "补充库46466条含待复核自动字段抽取初稿，不能据此自动新增可执行动作。",
+    "当前来源绑定的状态判定只覆盖两台模拟变压器三个温升参数；断路器和逆变器缺少完整的适用判定条款绑定。"
+  ],
+  "required_template_fields": [
+    "template_id",
+    "scenario",
+    "device_type",
+    "device_id",
+    "source_clause_ids",
+    "standard_id",
+    "standard_version",
+    "applicability",
+    "action",
+    "fact_bindings",
+    "executable_precondition",
+    "interlocks",
+    "protocol",
+    "mock_point_mapping",
+    "parameter_type_unit_range",
+    "confirmation_required",
+    "proposal_expiry",
+    "state_recheck",
+    "expected_state_feedback",
+    "denial_reasons",
+    "idempotency"
+  ],
+  "items": [
+    {
+      "priority": "P0",
+      "template_id": "transformer_temperature_observation",
+      "scenario": "substation_maintenance",
+      "action": "read_status",
+      "device_type": "transformer",
+      "source_clause_ids": [
+        "11_clause2"
+      ],
+      "source_scope": "局部温升限值比对，原库标准编号版本和完整上下文待核验",
+      "needed": "绑定绕组热点、顶层油温升、绕组平均温升及ON/OF/OD冷却方式，标明K温差不是绝对摄氏温度。模拟读取只观察，不下发。",
+      "automatic_control_allowed": false
+    },
+    {
+      "priority": "P1",
+      "template_id": "transformer_alarm",
+      "scenario": "substation_maintenance",
+      "action": "alarm",
+      "device_type": "transformer",
+      "source_clause_ids": [],
+      "needed": "补齐明确允许报警的动作条款、报警判据、恢复条件、持续时间、模拟告警点及反馈。不能仅引用11_clause2作为动作授权。"
+    },
+    {
+      "priority": "P1",
+      "template_id": "transformer_cooling_start_stop",
+      "scenario": "substation_maintenance",
+      "action": "start_stop_cooling",
+      "device_type": "cooling_fan_pump",
+      "source_clause_ids": [],
+      "needed": "补齐风机油泵启停条款、适用冷却模式、投入退出阈值与回差、启动许可、故障闭锁和反馈；主模板库还需支持独立冷却设备类型。"
+    },
+    {
+      "priority": "P1",
+      "template_id": "breaker_trip",
+      "scenario": "grid_fault_isolation",
+      "action": "trip",
+      "device_type": "breaker",
+      "source_clause_ids": [],
+      "needed": "补齐保护与断路器对应关系、真实适用动作条款、定值来源单位、时间判据、检修闭锁；模拟配置中的current>=100不是标准条款，不能作为真实依据。"
+    },
+    {
+      "priority": "P1",
+      "template_id": "breaker_close",
+      "scenario": "grid_fault_isolation",
+      "action": "close",
+      "device_type": "breaker",
+      "source_clause_ids": [],
+      "needed": "补齐合闸许可条款、接地刀闸和隔离开关状态联锁、故障清除条件、检修闭锁、必要同期条件及分合位反馈；close_permission不能替代完整联锁。"
+    },
+    {
+      "priority": "P2",
+      "template_id": "inverter_active_power",
+      "scenario": "renewable_grid_integration",
+      "action": "adjust_active_power",
+      "device_type": "inverter",
+      "source_clause_ids": [],
+      "needed": "补齐有功调节动作条款、功率上下限斜率与权限，模拟Modbus FC06/16寄存器类型缩放单位或IEC61850模拟设定点，并绑定回读；不能沿用FC05布尔线圈。"
+    },
+    {
+      "priority": "P2",
+      "template_id": "inverter_reactive_voltage",
+      "scenario": "renewable_grid_integration",
+      "action": "adjust_reactive_power_or_voltage",
+      "device_type": "inverter",
+      "source_clause_ids": [],
+      "needed": "补齐无功电压控制条款、控制模式互斥、kvar与电压单位、能力曲线边界及设定反馈。"
+    },
+    {
+      "priority": "P2",
+      "template_id": "compressor_measurement_only",
+      "scenario": "power_grid_operation",
+      "action": "read_measurement",
+      "device_type": "air_compressor",
+      "source_standard_id": "GB 19153-2019",
+      "source_chapters": [
+        "6.1",
+        "6.2"
+      ],
+      "needed": "可补模拟吸气温度压力湿度的读取与试验条件检查模板；这是能效试验条件，不是设备日常运行健康标准，也不授权停机。",
+      "automatic_control_allowed": false
+    },
+    {
+      "priority": "P2",
+      "template_id": "methane_inspection_repair_work_order",
+      "scenario": "maintenance_workflow_simulation",
+      "action": "create_mock_work_order",
+      "device_type": "seal_point",
+      "source_standard_id": "Q/GGW",
+      "source_chapters": [
+        "6.1.1.1",
+        "10.2.2",
+        "10.4.1",
+        "10.5.1"
+      ],
+      "needed": "补充开工日期、发现日期、维修类型、延迟修复适用性及复测时间等事实，以原文期限形成模拟检测维修提醒；新增模拟工单状态反馈。先核验标准名称完整文号适用范围，不把维修流程转换为阀门控制。",
+      "protocol": "mock_workflow_not_device_protocol",
+      "automatic_control_allowed": false
+    },
+    {
+      "priority": "P2",
+      "template_id": "greenhouse_reporting_workflow",
+      "scenario": "reporting_workflow_simulation",
+      "action": "create_mock_checklist",
+      "device_type": "none",
+      "source_standard_id": "Q/GGW",
+      "source_chapters": [
+        "8.1.2",
+        "8.1.3",
+        "8.1.4",
+        "9.1.1",
+        "9.1.2"
+      ],
+      "needed": "补充主体配额管控归属、数据来源时间责任人及审核记录，生成模拟资料检查任务；原文没有提供的附录格式不补造。该模板是业务流程任务，不走IEC61850或Modbus控制。",
+      "protocol": "mock_workflow_not_device_protocol",
+      "automatic_control_allowed": false
+    }
+  ],
+  "implemented_simulation_extensions": {
+    "device_count": 11,
+    "action_template_count": 19,
+    "new_action_template_count": 12,
+    "protocols": [
+      "IEC61850",
+      "Modbus"
+    ],
+    "config": "configs/simulation_devices.json",
+    "examples": "configs/instruction_template_examples.json",
+    "source_binding_status": "新增动作条款绑定为空；主流程不会自动授权",
+    "execution_status": "generation_only"
+  }
+}

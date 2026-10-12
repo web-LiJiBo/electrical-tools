@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047619",
+  "entities": [
+    {
+      "name": "对直流轨道系统干扰，结合地图应用程序内置的全国所 有城市轨道交通直流牵引",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      3   对直流轨道系统干扰，结合地图应用程序内置的全国所\n有城市轨道交通直流牵引系统的路由数据，即获得列车时刻运\n行表、埋地钢质管道与轨道交通直流牵引系统的相互位置关系；\n对于潮汐干扰，从地图应用程序和海事网站中查找到管道附近\n的海岸线及港口数据，即获得潮汐涨落曲线、管道与海岸线的",
+      "type": "语义分解",
+      "subject": "对直流轨道系统干扰，结合地图应用程序内置的全国所 有城市轨道交通直流牵引",
+      "action": "",
+      "operation": "对直流轨道系统干扰，结合地图应用程序内置的全国所 有城市轨道交通直流牵引系统的路由数据，即获得列车时刻运 行表、埋地钢质管道与轨道交通直流牵引系统的相互位置关系； 对于潮汐干扰，从地图应用程序和海事网站中查找到管道附近 的海岸线及港口数据，即获得潮汐涨落曲线、管道与海岸线的",
+      "condition": "",
+      "constraint": "      3   对直流轨道系统干扰，结合地图应用程序内置的全国所\n有城市轨道交通直流牵引系统的路由数据，即获得列车时刻运\n行表、埋地钢质管道与轨道交通直流牵引系统的相互位置关系；\n对于潮汐干扰，从地图应用程序和海事网站中查找到管道附近\n的海岸线及港口数据，即获得潮汐涨落曲线、管道与海岸线的",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对直流轨道系统干扰，结合地图应用程序内置的全国所 有城市轨道交通直流牵引"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47619,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.20",
+  "standard_id": "CCS Z50",
+  "version": "",
+  "chapter_path": "6.4",
+  "entities": [
+    {
+      "name": "数据有效性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4  任何情况下，有效的污染物浓度数据均应符合表4中的最低要求，否则应视为无效数据。所有有\n效数据均应参加统计和评价。",
+      "type": "语义分解",
+      "subject": "数据有效性",
+      "action": "",
+      "operation": "合表4否则无效有效数据全参统计评价",
+      "condition": "",
+      "constraint": "6.4  任何情况下，有效的污染物浓度数据均应符合表4中的最低要求，否则应视为无效数据。所有有\n效数据均应参加统计和评价。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "数据有效性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33153,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表缺失"
+      ]
+    }
+  }
+}

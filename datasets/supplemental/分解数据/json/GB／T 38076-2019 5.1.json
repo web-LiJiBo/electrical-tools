@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "5.1",
+  "entities": [
+    {
+      "name": "管道环境风险评估",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1 评估流程 管道环境风险评估，宜包括资料收集.管段划分 风险控制水平 (M)分析，最大可能泄漏量(Q)分级，环境风险受体敏感性(E)判别和环境风险分级等过程，建议的评估流程如图1所示_",
+      "type": "语义分解",
+      "subject": "管道环境风险评估",
+      "action": "",
+      "operation": "收集资料划分管段分析控制泄漏量受体敏感性并分级",
+      "condition": "",
+      "constraint": "5.1 评估流程 管道环境风险评估，宜包括资料收集.管段划分 风险控制水平 (M)分析，最大可能泄漏量(Q)分级，环境风险受体敏感性(E)判别和环境风险分级等过程，建议的评估流程如图1所示_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道环境风险评估"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1155,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；流程图需原件复核"
+      ]
+    }
+  }
+}

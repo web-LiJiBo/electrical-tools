@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油夭然气管道安全规范",
+  "standard_id": "SY/T 6186-2020",
+  "version": "2020",
+  "chapter_path": "8.4",
+  "entities": [
+    {
+      "name": "安全验收评价",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4 试生产运行正常辰 管道竣工验收之前。应按规定进行安全验收评价及安全设施验收。安全验 收评价不得与安全预评价为同一家机构",
+      "type": "语义分解",
+      "subject": "安全验收评价",
+      "action": "",
+      "operation": "正常试产竣验前评价设施验评价与预评非同机构",
+      "condition": "",
+      "constraint": "8.4 试生产运行正常辰 管道竣工验收之前。应按规定进行安全验收评价及安全设施验收。安全验 收评价不得与安全预评价为同一家机构",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全验收评价"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7380,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

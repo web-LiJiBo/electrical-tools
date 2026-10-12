@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "7.2.1.1",
+  "entities": [
+    {
+      "name": "管道日常巡护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1.1 按照以下内容对管道的运行及环境风险状况进行日常巡护，日常巡护检查内容参见附录 D: 配置专职或兼职管道巡护人员，巡护次数不少于1次/d; b) 与地方政府及相关部门建立管道环境应急联动机制 ; 设立 24 h联系方式; 每年至少开展两次专门的管道保护知识宣传; 使用电子巡查系统或其他方式来保证巡护质量; [) 配备相关管道探查设备。",
+      "type": "语义分解",
+      "subject": "管道日常巡护",
+      "action": "",
+      "operation": "配置巡护人员每天至少一次建立应急联动二十四小时联系每年两次宣传",
+      "condition": "",
+      "constraint": "7.2.1.1 按照以下内容对管道的运行及环境风险状况进行日常巡护，日常巡护检查内容参见附录 D: 配置专职或兼职管道巡护人员，巡护次数不少于1次/d; b) 与地方政府及相关部门建立管道环境应急联动机制 ; 设立 24 h联系方式; 每年至少开展两次专门的管道保护知识宣传; 使用电子巡查系统或其他方式来保证巡护质量; [) 配备相关管道探查设备。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道日常巡护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1193,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；巡护内容引用附录D"
+      ]
+    }
+  }
+}

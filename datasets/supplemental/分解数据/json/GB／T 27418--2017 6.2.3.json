@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "包含概率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3 可行时 ,应评估和声明由 U 确定的区间相关的包含概率力。应该认识到 ,用常数乘 u(y )并不提 供新的信息 ,而是以不同的形式表示前面巳获取的信息 然而 ,也应该认识到:在大多数情况下包含概 率p(尤其在p的值接近1时)是相当不确定的 ,不仅是因为对用J 和 u.(3 )表征的概率分布的了解有 限(尤其在边缘部分) ,而且因为 u(y )本身的不确定性(见6.3.2,6.3.3 和附录E,尤其E.6.6) _ 注:当不确定度用 u。(J ) 和 U 表示时 .建议分别按 7.2.2 和 7.2.4声明测量结果。",
+      "type": "语义分解",
+      "subject": "包含概率",
+      "action": "",
+      "operation": "可行时评估并声明区间覆盖概率",
+      "condition": "可行时",
+      "constraint": "应评估和声明",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包含概率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量及引用需核实，不能把概率当作设备合格率"
+      ]
+    }
+  }
+}

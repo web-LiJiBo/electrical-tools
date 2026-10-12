@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029136",
+  "entities": [
+    {
+      "name": "b) 组织评审",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " b)  组织评审：评审采取会议审查形式，企业主要负责人参加会议，会议由参加评审的专家共\n   同推选出的组长主持，按照议程组织评审；表决时，必须有不少于出席会议专家人数的三\n   分之二同意方为通过；评审会议应形成评审意见(经评审组组长签字),附参加评审会议的\n   专家签字表，并归档保存。表决的投票情况，应以书面材料记录在案，并作为评审意见的\n   附件。",
+      "type": "语义分解",
+      "subject": "b) 组织评审",
+      "action": "",
+      "operation": "b) 组织评审：评审采取会议审查形式，企业主要负责人参加会议，会议由参加评审的专家共 同推选出的组长主持，按照议程组织评审；表决时，必须有不少于出席会议专家人数的三 分之二同意方为通过；评审会议应形成评审意见(经评审组组长签字),附参加评审会议的 专家签字表，并归档保存。表决的投票情况，应以书面材料记录在案，并作为评审意见的 附件。",
+      "condition": "",
+      "constraint": " b)  组织评审：评审采取会议审查形式，企业主要负责人参加会议，会议由参加评审的专家共\n   同推选出的组长主持，按照议程组织评审；表决时，必须有不少于出席会议专家人数的三\n   分之二同意方为通过；评审会议应形成评审意见(经评审组组长签字),附参加评审会议的\n   专家签字表，并归档保存。表决的投票情况，应以书面材料记录在案，并作为评审意见的\n   附件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 组织评审"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29136,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

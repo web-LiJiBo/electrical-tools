@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团环境监测与环境信息管理细则",
+  "standard_id": "国家管网办[2025]241号",
+  "version": "",
+  "chapter_path": "来源行-00000938",
+  "entities": [
+    {
+      "name": "第五十一条 纳入排污许可管理的,各所属单位应按照排污许可证规定的内容、频",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第五十一条 纳入排污许可管理的,各所属单位应按照排污许可证规定的内容、频次和时间要求,向审批部门提交排污许可证执行报告,如实报告污染物排放行为、排放浓度、排放量等。排污许可证有效期内发生停产的,各所属单位应在排污许可证执行报告中如实报告污染物排放变化情况并说明原因。",
+      "type": "语义分解",
+      "subject": "第五十一条 纳入排污许可管理的,各所属单位应按照排污许可证规定的内容、频",
+      "action": "",
+      "operation": "第五十一条 纳入排污许可管理的,各所属单位应按照排污许可证规定的内容、频次和时间要求,向审批部门提交排污许可证执行报告,如实报告污染物排放行为、排放浓度、排放量等。排污许可证有效期内发生停产的,各所属单位应在排污许可证执行报告中如实报告污染物排放变化情况并说明原因。",
+      "condition": "",
+      "constraint": "第五十一条 纳入排污许可管理的,各所属单位应按照排污许可证规定的内容、频次和时间要求,向审批部门提交排污许可证执行报告,如实报告污染物排放行为、排放浓度、排放量等。排污许可证有效期内发生停产的,各所属单位应在排污许可证执行报告中如实报告污染物排放变化情况并说明原因。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第五十一条 纳入排污许可管理的,各所属单位应按照排污许可证规定的内容、频"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 938,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

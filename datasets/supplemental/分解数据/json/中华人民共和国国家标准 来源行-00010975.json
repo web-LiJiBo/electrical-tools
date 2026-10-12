@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010975",
+  "entities": [
+    {
+      "name": "根据是否支持非随路开销( OCh_OH), 定义了两种光通 路(OCh)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2.1.1  根据是否支持非随路开销( OCh_OH),    定义了两种光通\n路(OCh),   即支持非随路开销的全功能光通路( OCh) 和不支持非\n随路开销的简化功能光通路(OChr) 。  本标准定义的 OCh  的客户\n信号为 OTUk   信号，其他数字客户信号如 STM-N 、以太网等\nOTM  也可支持。OCh 应具有区分两个不同的OCh 信号(一个信\n号承载OTU1,  另一个信号承载OTU2  或 GbE) 的特征，具体实现\n\n待研究。",
+      "type": "语义分解",
+      "subject": "根据是否支持非随路开销( OCh_OH), 定义了两种光通 路(OCh)",
+      "action": "",
+      "operation": "根据是否支持非随路开销( OCh_OH), 定义了两种光通 路(OCh), 即支持非随路开销的全功能光通路( OCh) 和不支持非 随路开销的简化功能光通路(OChr) 。 本标准定义的 OCh 的客户 信号为 OTUk 信号，其他数字客户信号如 STM-N 、以太网等 OTM 也可支持。OCh 应具有区分两个不同的OCh 信号(一个信 号承载OTU1, 另一个信号承载OTU2 或 GbE) 的特征，具体实现 待研究。",
+      "condition": "",
+      "constraint": "2.1.1  根据是否支持非随路开销( OCh_OH),    定义了两种光通\n路(OCh),   即支持非随路开销的全功能光通路( OCh) 和不支持非\n随路开销的简化功能光通路(OChr) 。  本标准定义的 OCh  的客户\n信号为 OTUk   信号，其他数字客户信号如 STM-N 、以太网等\nOTM  也可支持。OCh 应具有区分两个不同的OCh 信号(一个信\n号承载OTU1,  另一个信号承载OTU2  或 GbE) 的特征，具体实现\n\n待研究。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据是否支持非随路开销( OCh_OH), 定义了两种光通 路(OCh)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10975,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

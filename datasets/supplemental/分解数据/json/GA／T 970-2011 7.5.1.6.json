@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.5.1.6",
+  "entities": [
+    {
+      "name": "爆炸险情人员撤离",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5.1.6 当现场出现爆炸险情征兆威胁到处置人员的生命安全时 ,应当立即命令处置人员撤离到安全地带并清点人数 ,待条件具备时 ,再组织处置行动。",
+      "type": "语义分解",
+      "subject": "爆炸险情人员撤离",
+      "action": "",
+      "operation": "立即撤离清点且条件具备再处置",
+      "condition": "当现场出现爆炸险情征兆威胁到处置人员的生命安全时",
+      "constraint": "7.5.1.6 当现场出现爆炸险情征兆威胁到处置人员的生命安全时 ,应当立即命令处置人员撤离到安全地带并清点人数 ,待条件具备时 ,再组织处置行动。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "爆炸险情人员撤离"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5937,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

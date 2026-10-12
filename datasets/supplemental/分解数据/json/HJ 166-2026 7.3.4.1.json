@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.3.4.1",
+  "entities": [
+    {
+      "name": "理化无机土壤样",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.4.1 检测理化特征和无机物的样品采集 检测理化特征和无机物的样品按照7.3.3 采集单点样或混合样 _ 采集检测金属元素的土壤样品时, 避免土壤样品与金属采样器具接触,可用木铲或竹片等刮去与金属采样器接触部分或添加非金属材质衬 垫等 采样后将样品先装入聚乙烯袋。为防止袋子破损,可在聚乙烯袋外再套一层样品袋。检测挥发性 无机物的样品 (如氰化物)按照7.3.4.2执行 采样和保存条件分析方法有明确规定时,按分析方法执行。",
+      "type": "语义分解",
+      "subject": "理化无机土壤样",
+      "action": "",
+      "operation": "按单点混合采金属样避免金属器接触挥发无机按挥发法保存",
+      "condition": "",
+      "constraint": "7.3.4.1 检测理化特征和无机物的样品采集 检测理化特征和无机物的样品按照7.3.3 采集单点样或混合样 _ 采集检测金属元素的土壤样品时, 避免土壤样品与金属采样器具接触,可用木铲或竹片等刮去与金属采样器接触部分或添加非金属材质衬 垫等 采样后将样品先装入聚乙烯袋。为防止袋子破损,可在聚乙烯袋外再套一层样品袋。检测挥发性 无机物的样品 (如氰化物)按照7.3.4.2执行 采样和保存条件分析方法有明确规定时,按分析方法执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "理化无机土壤样"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2249,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

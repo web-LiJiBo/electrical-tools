@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050234",
+  "entities": [
+    {
+      "name": "本条规定了隧道穿越段管道附件防腐技术要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.0.1   本条规定了隧道穿越段管道附件防腐技术要求。当管道\n穿越山体、水域隧道时，为了保证管道安全，通常使用管卡、\n地脚螺栓、螺母等管道附件对管道进行固定。此前发现过一些\n隧道存在管卡、地脚螺栓、螺母材质不匹配的现象，导致螺栓\n出现腐蚀并在应力的作用发生断裂。为了避免形成电偶腐蚀，\n规定所使用材质应保持一致。",
+      "type": "语义分解",
+      "subject": "本条规定了隧道穿越段管道附件防腐技术要求",
+      "action": "",
+      "operation": "本条规定了隧道穿越段管道附件防腐技术要求。当管道 穿越山体、水域隧道时，为了保证管道安全，通常使用管卡、 地脚螺栓、螺母等管道附件对管道进行固定。此前发现过一些 隧道存在管卡、地脚螺栓、螺母材质不匹配的现象，导致螺栓 出现腐蚀并在应力的作用发生断裂。为了避免形成电偶腐蚀， 规定所使用材质应保持一致。",
+      "condition": "",
+      "constraint": "8.0.1   本条规定了隧道穿越段管道附件防腐技术要求。当管道\n穿越山体、水域隧道时，为了保证管道安全，通常使用管卡、\n地脚螺栓、螺母等管道附件对管道进行固定。此前发现过一些\n隧道存在管卡、地脚螺栓、螺母材质不匹配的现象，导致螺栓\n出现腐蚀并在应力的作用发生断裂。为了避免形成电偶腐蚀，\n规定所使用材质应保持一致。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "本条规定了隧道穿越段管道附件防腐技术要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50234,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

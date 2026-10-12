@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018535",
+  "entities": [
+    {
+      "name": "STL-n.m dLOL 发生在OSMn.m接口，它基于多通路STL-n",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      STL-n.m dLOL 发生在OSMn.m接口，它基于多通路STL-n.m信号同步处理过程的状态。如果多通\n路同步处理进入OLA 3ms, 则宣告dLOL。为了应对间歇的OLA 情况，在ILA 持续3ms 以前累加计时\n器不能清零，当通路ILA 持续3ms 以后应清除dLOL。\n\n5.3.6.8 STL 帧丢失缺陷 ( dLOFSTL)",
+      "type": "语义分解",
+      "subject": "STL-n.m dLOL 发生在OSMn.m接口，它基于多通路STL-n",
+      "action": "",
+      "operation": "STL-n.m dLOL 发生在OSMn.m接口，它基于多通路STL-n.m信号同步处理过程的状态。如果多通 路同步处理进入OLA 3ms, 则宣告dLOL。为了应对间歇的OLA 情况，在ILA 持续3ms 以前累加计时 器不能清零，当通路ILA 持续3ms 以后应清除dLOL。 5.3.6.8 STL 帧丢失缺陷 ( dLOFSTL)",
+      "condition": "",
+      "constraint": "      STL-n.m dLOL 发生在OSMn.m接口，它基于多通路STL-n.m信号同步处理过程的状态。如果多通\n路同步处理进入OLA 3ms, 则宣告dLOL。为了应对间歇的OLA 情况，在ILA 持续3ms 以前累加计时\n器不能清零，当通路ILA 持续3ms 以后应清除dLOL。\n\n5.3.6.8 STL 帧丢失缺陷 ( dLOFSTL)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "STL-n.m dLOL 发生在OSMn.m接口，它基于多通路STL-n"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18535,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

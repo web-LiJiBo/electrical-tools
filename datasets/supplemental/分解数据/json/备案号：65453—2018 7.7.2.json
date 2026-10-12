@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200\nE  98",
+  "standard_id": "备案号：65453—2018",
+  "version": "2018",
+  "chapter_path": "7.7.2",
+  "entities": [
+    {
+      "name": "管道剩余强度评价应按现行行业标准《腐蚀管道评估 推荐作法》SY/T 10",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.7.2   管道剩余强度评价应按现行行业标准《腐蚀管道评估\n推荐作法》SY/T 10048、《含缺陷油气管道剩余强度评价方法》\nSY/T 6477 或《钢质管道管体腐蚀损伤评价方法》SY/T 6151 等\n相关规定进行。",
+      "type": "语义分解",
+      "subject": "管道剩余强度评价应按现行行业标准《腐蚀管道评估 推荐作法》SY/T 10",
+      "action": "",
+      "operation": "管道剩余强度评价应按现行行业标准《腐蚀管道评估 推荐作法》SY/T 10048、《含缺陷油气管道剩余强度评价方法》 SY/T 6477 或《钢质管道管体腐蚀损伤评价方法》SY/T 6151 等 相关规定进行。",
+      "condition": "",
+      "constraint": "7.7.2   管道剩余强度评价应按现行行业标准《腐蚀管道评估\n推荐作法》SY/T 10048、《含缺陷油气管道剩余强度评价方法》\nSY/T 6477 或《钢质管道管体腐蚀损伤评价方法》SY/T 6151 等\n相关规定进行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道剩余强度评价应按现行行业标准《腐蚀管道评估 推荐作法》SY/T 10"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_040",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 45146,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

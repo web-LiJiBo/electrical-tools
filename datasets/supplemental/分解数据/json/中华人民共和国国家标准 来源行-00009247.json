@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009247",
+  "entities": [
+    {
+      "name": "第一步，按规则设计法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   第一步，按规则设计法。即直接套用系统的应用代码，此时实\n际的光放段数量及光放段衰耗不应超过应用代码所规定的数值。\n   第二步，采用简单信噪比计算法。当实际的光放段衰耗比较\n均匀，但光复用段中的光放段数量比应用代码要求的数量略有增\n加，或在限定的光放段数量内，个别段落的线路衰耗超出应用代码\n规定的衰耗范围时，采用简易的信噪比计算公式进行计算，以保证\n系统性能。",
+      "type": "语义分解",
+      "subject": "第一步，按规则设计法",
+      "action": "",
+      "operation": "第一步，按规则设计法。即直接套用系统的应用代码，此时实 际的光放段数量及光放段衰耗不应超过应用代码所规定的数值。 第二步，采用简单信噪比计算法。当实际的光放段衰耗比较 均匀，但光复用段中的光放段数量比应用代码要求的数量略有增 加，或在限定的光放段数量内，个别段落的线路衰耗超出应用代码 规定的衰耗范围时，采用简易的信噪比计算公式进行计算，以保证 系统性能。",
+      "condition": "",
+      "constraint": "   第一步，按规则设计法。即直接套用系统的应用代码，此时实\n际的光放段数量及光放段衰耗不应超过应用代码所规定的数值。\n   第二步，采用简单信噪比计算法。当实际的光放段衰耗比较\n均匀，但光复用段中的光放段数量比应用代码要求的数量略有增\n加，或在限定的光放段数量内，个别段落的线路衰耗超出应用代码\n规定的衰耗范围时，采用简易的信噪比计算公式进行计算，以保证\n系统性能。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第一步，按规则设计法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9247,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

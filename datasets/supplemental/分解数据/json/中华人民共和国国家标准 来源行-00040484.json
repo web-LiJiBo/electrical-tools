@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040484",
+  "entities": [
+    {
+      "name": "管道输送一般比机械输送经济，且密封性能好，对含水量 大的废渣，应优先考虑",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.3       管道输送一般比机械输送经济，且密封性能好，对含水量\n大的废渣，应优先考虑管道输送。如采用机械输送时，建议采用浓\n缩 、脱水等减量化措施，以提高输送效率，避免沿程滴漏污染环境。\n7.3.4      对易起尘或易挥发刺激性气味的废渣的装卸运输，应避免\n敞开式操作，并采取封闭措施，以减轻对周围环境和操作人员的影\n响和危害。",
+      "type": "语义分解",
+      "subject": "管道输送一般比机械输送经济，且密封性能好，对含水量 大的废渣，应优先考虑",
+      "action": "",
+      "operation": "管道输送一般比机械输送经济，且密封性能好，对含水量 大的废渣，应优先考虑管道输送。如采用机械输送时，建议采用浓 缩 、脱水等减量化措施，以提高输送效率，避免沿程滴漏污染环境。 7.3.4 对易起尘或易挥发刺激性气味的废渣的装卸运输，应避免 敞开式操作，并采取封闭措施，以减轻对周围环境和操作人员的影 响和危害。",
+      "condition": "",
+      "constraint": "7.3.3       管道输送一般比机械输送经济，且密封性能好，对含水量\n大的废渣，应优先考虑管道输送。如采用机械输送时，建议采用浓\n缩 、脱水等减量化措施，以提高输送效率，避免沿程滴漏污染环境。\n7.3.4      对易起尘或易挥发刺激性气味的废渣的装卸运输，应避免\n敞开式操作，并采取封闭措施，以减轻对周围环境和操作人员的影\n响和危害。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道输送一般比机械输送经济，且密封性能好，对含水量 大的废渣，应优先考虑"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40484,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

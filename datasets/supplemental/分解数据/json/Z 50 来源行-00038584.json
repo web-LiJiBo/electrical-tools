@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 060",
+  "standard_id": "Z 50",
+  "version": "",
+  "chapter_path": "来源行-00038584",
+  "entities": [
+    {
+      "name": "[8] 卫生部卫生标准委员会 . GB 5749—2006《生活饮用水卫",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      [8]    卫生部卫生标准委员会 . GB 5749—2006《生活饮用水卫生标准》应用指南[M] . 北京 : 中国标\n准出版社 ,2010.",
+      "type": "语义分解",
+      "subject": "[8] 卫生部卫生标准委员会 . GB 5749—2006《生活饮用水卫",
+      "action": "",
+      "operation": "[8] 卫生部卫生标准委员会 . GB 5749—2006《生活饮用水卫生标准》应用指南[M] . 北京 : 中国标 准出版社 ,2010.",
+      "condition": "",
+      "constraint": "      [8]    卫生部卫生标准委员会 . GB 5749—2006《生活饮用水卫生标准》应用指南[M] . 北京 : 中国标\n准出版社 ,2010.",
+      "constraint_role": "informational",
+      "related_entities": [
+        "[8] 卫生部卫生标准委员会 . GB 5749—2006《生活饮用水卫"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38584,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

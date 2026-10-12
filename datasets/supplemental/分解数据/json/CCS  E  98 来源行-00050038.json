@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS  E  98",
+  "version": "",
+  "chapter_path": "来源行-00050038",
+  "entities": [
+    {
+      "name": "施工过程中应确保环氧树脂材料充分渗透玻璃纤维布",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4   施工过程中应确保环氧树脂材料充分渗透玻璃纤维布。\n玻璃纤维布搭接时，下层玻璃纤维布未涂敷(或浸透)环氧树\n脂材料前不应搭接上层玻璃纤维布。",
+      "type": "语义分解",
+      "subject": "施工过程中应确保环氧树脂材料充分渗透玻璃纤维布",
+      "action": "",
+      "operation": "施工过程中应确保环氧树脂材料充分渗透玻璃纤维布。 玻璃纤维布搭接时，下层玻璃纤维布未涂敷(或浸透)环氧树 脂材料前不应搭接上层玻璃纤维布。",
+      "condition": "",
+      "constraint": "      4   施工过程中应确保环氧树脂材料充分渗透玻璃纤维布。\n玻璃纤维布搭接时，下层玻璃纤维布未涂敷(或浸透)环氧树\n脂材料前不应搭接上层玻璃纤维布。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "施工过程中应确保环氧树脂材料充分渗透玻璃纤维布"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_045",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 50038,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

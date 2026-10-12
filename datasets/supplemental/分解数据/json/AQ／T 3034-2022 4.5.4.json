@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.5.4",
+  "entities": [
+    {
+      "name": "员工上岗培训",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.5.4 企业应对新入职员工开展公司缏库间级 班组级三级安金教育 ,并根据岗位技能要求开展岗前 培训 ,经考核合格后方可上岗 _ 若调整工佾岗位或离岗米年以血重新止岗 ,应重新接受车间级和班组级 的安全培训。",
+      "type": "语义分解",
+      "subject": "员工上岗培训",
+      "action": "",
+      "operation": "新员三级教育岗前培训考核合格转岗或离岗后按条件重新培训",
+      "condition": "",
+      "constraint": "4.5.4 企业应对新入职员工开展公司缏库间级 班组级三级安金教育 ,并根据岗位技能要求开展岗前 培训 ,经考核合格后方可上岗 _ 若调整工佾岗位或离岗米年以血重新止岗 ,应重新接受车间级和班组级 的安全培训。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "员工上岗培训"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5083,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；离岗米年以血期限缺损不能猜测"
+      ]
+    }
+  }
+}

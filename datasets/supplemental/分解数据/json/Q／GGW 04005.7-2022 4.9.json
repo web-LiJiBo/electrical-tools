@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.9",
+  "entities": [
+    {
+      "name": "挥发性有机物排放量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.9 挥发性有机物排放量指标 挥发性有机物排放量应包括统计周期内企业设备动静密封点泄漏排放量,有机液体储存和排放量, 有机液体装卸挥发损失排放量, 废水集输. 储存。处理过程逸散排放量及其他过程排放量。",
+      "type": "语义分解",
+      "subject": "挥发性有机物排放量",
+      "action": "",
+      "operation": "统计泄漏储装卸废水逸散等量",
+      "condition": "",
+      "constraint": "4.9 挥发性有机物排放量指标 挥发性有机物排放量应包括统计周期内企业设备动静密封点泄漏排放量,有机液体储存和排放量, 有机液体装卸挥发损失排放量, 废水集输. 储存。处理过程逸散排放量及其他过程排放量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "挥发性有机物排放量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 602,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "6.4",
+  "entities": [
+    {
+      "name": "监测设施环境控制",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4 监测设施和环境 根据仪器使用说明书。监测方法和规范等的要求，配备必要的如除湿机。空调 千湿度温度计等辅助设施; 以使监测工作场所条件得到有效控制",
+      "type": "语义分解",
+      "subject": "监测设施环境控制",
+      "action": "",
+      "operation": "按说明方法配辅助设施",
+      "condition": "",
+      "constraint": "6.4 监测设施和环境 根据仪器使用说明书。监测方法和规范等的要求，配备必要的如除湿机。空调 千湿度温度计等辅助设施; 以使监测工作场所条件得到有效控制",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测设施环境控制"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2875,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；千湿度温度计名称损坏"
+      ]
+    }
+  }
+}

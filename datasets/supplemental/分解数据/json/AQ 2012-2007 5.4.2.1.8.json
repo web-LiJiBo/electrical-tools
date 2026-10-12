@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "5.4.2.1.8",
+  "entities": [
+    {
+      "name": "测井协同施工",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.4.2.1.8 测井作业时 ,应协调钻井队(作业队,采油队)及时清除钻台作业面上的钻井液。冬季测井施工 ,应用蒸汽及时清除深度丈量轮和电缆上的结冰。测井作业时 ,钻井队(作业队 ,采油队)不应进行影响测井施工的作业及大负荷用电。",
+      "type": "语义分解",
+      "subject": "测井协同施工",
+      "action": "",
+      "operation": "清钻井液冰结避免干扰施工及大负荷用电",
+      "condition": "",
+      "constraint": "5.4.2.1.8 测井作业时 ,应协调钻井队(作业队,采油队)及时清除钻台作业面上的钻井液。冬季测井施工 ,应用蒸汽及时清除深度丈量轮和电缆上的结冰。测井作业时 ,钻井队(作业队 ,采油队)不应进行影响测井施工的作业及大负荷用电。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测井协同施工"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4381,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

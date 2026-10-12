@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "4.4",
+  "entities": [
+    {
+      "name": "监测机构",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4 监测机构应当按照环境监测技术规范进行环境监测,并建立环境监测质量管理体系。对环境监测实施全过程质量管理,并对监测信息的准确性和真实性负责。",
+      "type": "语义分解",
+      "subject": "监测机构",
+      "action": "",
+      "operation": "按规范实施全过程质量管理并保证信息真实",
+      "condition": "",
+      "constraint": "4.4 监测机构应当按照环境监测技术规范进行环境监测,并建立环境监测质量管理体系。对环境监测实施全过程质量管理,并对监测信息的准确性和真实性负责。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测机构"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 423,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

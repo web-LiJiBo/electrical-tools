@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污许可证质量核查技术规范",
+  "standard_id": "HJ 1299-2023",
+  "version": "2023",
+  "chapter_path": "6.2.3",
+  "entities": [
+    {
+      "name": "许可管理类别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.3 管理类别 结合排污许可证中的生产设施,产品产能。工艺流程图。原辅材料用量等信息以及重点排污单位名 录。依据《固定污染源排污许可分类管理名录》 (以下简称《名录》 )进行判定。对于《名录》中巳经 有明确规定的,必须严格按照《名录》管理类别要求执行。",
+      "type": "语义分解",
+      "subject": "许可管理类别",
+      "action": "",
+      "operation": "结合设施工艺材料名录判定已明确类别严格执行",
+      "condition": "",
+      "constraint": "6.2.3 管理类别 结合排污许可证中的生产设施,产品产能。工艺流程图。原辅材料用量等信息以及重点排污单位名 录。依据《固定污染源排污许可分类管理名录》 (以下简称《名录》 )进行判定。对于《名录》中巳经 有明确规定的,必须严格按照《名录》管理类别要求执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "许可管理类别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1992,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

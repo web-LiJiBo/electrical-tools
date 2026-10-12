@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境管理 生命周期评价 要求与指南",
+  "standard_id": "GB/T 24044-2008/IS0 14044:2006",
+  "version": "2006",
+  "chapter_path": "4.3.4.3.4",
+  "entities": [
+    {
+      "name": "共享单元分配依据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.4.3.4 在4.3.4.3中提到的共享单元过程的分配程序(如果可行并且以此作为分配的基础)宜采 用如下顺序: 物理属性(例如质量) ; 经济价值(例如废料和再生利用物质的市场价值与初级材料市场价值的比值) ; 再生利用材料的后续使用的次数(见 ISO/TR 14049 ) _",
+      "type": "语义分解",
+      "subject": "共享单元分配依据",
+      "action": "",
+      "operation": "宜物理属性经济价值后续使用次数顺序",
+      "condition": "",
+      "constraint": "4.3.4.3.4 在4.3.4.3中提到的共享单元过程的分配程序(如果可行并且以此作为分配的基础)宜采 用如下顺序: 物理属性(例如质量) ; 经济价值(例如废料和再生利用物质的市场价值与初级材料市场价值的比值) ; 再生利用材料的后续使用的次数(见 ISO/TR 14049 ) _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "共享单元分配依据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1099,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

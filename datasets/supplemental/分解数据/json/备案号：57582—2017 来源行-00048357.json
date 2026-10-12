@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00048357",
+  "entities": [
+    {
+      "name": "阴极保护电位如有波动，最大值、最小值和平均值均应测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2阴极保护电位如有波动，最大值、最小值和平均值均应测试；如稳定，\n   可将阴极保护电位数据填入平均值，其他值用“--”代替。\n3 如有杂散电流干扰，可在备注中说明。",
+      "type": "语义分解",
+      "subject": "阴极保护电位如有波动，最大值、最小值和平均值均应测试",
+      "action": "",
+      "operation": "阴极保护电位如有波动，最大值、最小值和平均值均应测试；如稳定， 可将阴极保护电位数据填入平均值，其他值用“--”代替。 3 如有杂散电流干扰，可在备注中说明。",
+      "condition": "",
+      "constraint": "2阴极保护电位如有波动，最大值、最小值和平均值均应测试；如稳定，\n   可将阴极保护电位数据填入平均值，其他值用“--”代替。\n3 如有杂散电流干扰，可在备注中说明。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阴极保护电位如有波动，最大值、最小值和平均值均应测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 48357,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

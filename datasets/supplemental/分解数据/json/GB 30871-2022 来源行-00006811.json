@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00006811",
+  "entities": [
+    {
+      "name": "作业单位应根据需要在断路的路廿和相关道路上设置交通警示标志 ,在作业区域",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "12.2 作业单位应根据需要在断路的路廿和相关道路上设置交通警示标志 ,在作业区域附近设置路栏, 道路作业警示灯 ,导向标等交通警示设施。",
+      "type": "语义分解",
+      "subject": "作业单位应根据需要在断路的路廿和相关道路上设置交通警示标志 ,在作业区域",
+      "action": "",
+      "operation": "作业单位应根据需要在断路的路廿和相关道路上设置交通警示标志 ,在作业区域附近设置路栏, 道路作业警示灯 ,导向标等交通警示设施。",
+      "condition": "",
+      "constraint": "12.2 作业单位应根据需要在断路的路廿和相关道路上设置交通警示标志 ,在作业区域附近设置路栏, 道路作业警示灯 ,导向标等交通警示设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业单位应根据需要在断路的路廿和相关道路上设置交通警示标志 ,在作业区域"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6811,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_completed_record"
+      ]
+    }
+  }
+}

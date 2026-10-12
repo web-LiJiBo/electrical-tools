@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008281",
+  "entities": [
+    {
+      "name": "试运行应组织维护人员执行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2      试运行应组织维护人员执行。维护人员可定期对设备指\n标抽测；可通过网管对工程复用段长期误码性能进行连续30日的\n\n稳定观测；可试开通部分非重要业务。",
+      "type": "语义分解",
+      "subject": "试运行应组织维护人员执行",
+      "action": "",
+      "operation": "试运行应组织维护人员执行。维护人员可定期对设备指 标抽测；可通过网管对工程复用段长期误码性能进行连续30日的 稳定观测；可试开通部分非重要业务。",
+      "condition": "",
+      "constraint": "7.2.2      试运行应组织维护人员执行。维护人员可定期对设备指\n标抽测；可通过网管对工程复用段长期误码性能进行连续30日的\n\n稳定观测；可试开通部分非重要业务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运行应组织维护人员执行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8281,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

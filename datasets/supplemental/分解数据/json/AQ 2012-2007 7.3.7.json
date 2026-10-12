@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.3.7",
+  "entities": [
+    {
+      "name": "杂散电流管道干扰",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.7 输油气管道应避开有地下杂散电流干扰大的区域。电气化铁路与输油气管道平行时 ,应保持一定距离。管道因地下杂散电流干扰阴极保护时 ,应采取排流措施。",
+      "type": "语义分解",
+      "subject": "杂散电流管道干扰",
+      "action": "",
+      "operation": "避大干扰区铁路保持距离必要时排流",
+      "condition": "管道因地下杂散电流干扰阴极保护时",
+      "constraint": "7.3.7 输油气管道应避开有地下杂散电流干扰大的区域。电气化铁路与输油气管道平行时 ,应保持一定距离。管道因地下杂散电流干扰阴极保护时 ,应采取排流措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "杂散电流管道干扰"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4821,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

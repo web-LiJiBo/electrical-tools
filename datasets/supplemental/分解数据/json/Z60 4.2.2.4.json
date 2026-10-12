@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "4.2.2.4",
+  "entities": [
+    {
+      "name": "浮盘开孔边缘",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2.4    浮盘附件的开口(孔),除采样、计量、例行检查、维护和其他正常活动外，应密闭；浮盘边\n缘密封不应有破损。",
+      "type": "语义分解",
+      "subject": "浮盘开孔边缘",
+      "action": "",
+      "operation": "正常活动外密闭密封无损",
+      "condition": "",
+      "constraint": "4.2.2.4    浮盘附件的开口(孔),除采样、计量、例行检查、维护和其他正常活动外，应密闭；浮盘边\n缘密封不应有破损。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "浮盘开孔边缘"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32734,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

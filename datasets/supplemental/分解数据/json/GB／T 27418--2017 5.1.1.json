@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "5.1.1",
+  "entities": [
+    {
+      "name": "测量结果",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1 当y 是被测量Y 的估计值因而也就是测量结果时,Y 的标准不确定度由输入量的估计值 TI ,T2 : TV (见4.1)的标准不确定度的适当合成得到 _ 估计值y 的合成标准不确定度用 u(y) 表示。 注:与4.3.1的注中的理由相同,在所有情况下都用符号 u。(J) 和 U?(J)。",
+      "type": "语义分解",
+      "subject": "测量结果",
+      "action": "",
+      "operation": "由输入量不确定度合成",
+      "condition": "",
+      "constraint": "标准不确定度的适当合成",
+      "constraint_role": "informational",
+      "related_entities": [
+        "测量结果"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "变量和符号识别错误"
+      ]
+    }
+  }
+}

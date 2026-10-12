@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气管道系统治安风险等级和安全防范要求",
+  "standard_id": "GA 1166-2014",
+  "version": "2014",
+  "chapter_path": "10.6",
+  "entities": [
+    {
+      "name": "安防加强",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.6 根据反恐形势的需要 ,可在本标准规定的安全防范等级的基础上 ,加强安全防范措施 ,提升安全 防范水平 企业可按照有关规定申请派驻武警负责某些风险部位的安全守护 _",
+      "type": "语义分解",
+      "subject": "安防加强",
+      "action": "",
+      "operation": "依反恐形势提高防范可按规定申请重点守护",
+      "condition": "",
+      "constraint": "10.6 根据反恐形势的需要 ,可在本标准规定的安全防范等级的基础上 ,加强安全防范措施 ,提升安全 防范水平 企业可按照有关规定申请派驻武警负责某些风险部位的安全守护 _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安防加强"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5498,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

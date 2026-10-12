@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "6.3.1",
+  "entities": [
+    {
+      "name": "含硫场所入口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.1 在硫化氢环境的工作场所入口处应设置白天和夜晚都能看清的硫化氢警告标志,奶 \"硫化氢工作场所。当心中毒\"  等。",
+      "type": "语义分解",
+      "subject": "含硫场所入口",
+      "action": "",
+      "operation": "设置昼夜清晰警示",
+      "condition": "",
+      "constraint": "6.3.1 在硫化氢环境的工作场所入口处应设置白天和夜晚都能看清的硫化氢警告标志,奶 \"硫化氢工作场所。当心中毒\"  等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "含硫场所入口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7457,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

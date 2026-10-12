@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13. 060",
+  "standard_id": "Z 50",
+  "version": "",
+  "chapter_path": "来源行-00038265",
+  "entities": [
+    {
+      "name": "Ⅳ类",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       Ⅳ类 :地下水化学组分含量较高 , 以农业和工业用水质量要求以及一定水平的人体健康风险为依\n据 ,适用于农业和部分工业用水 ,适当处理后可作生活饮用水 ;",
+      "type": "语义分解",
+      "subject": "Ⅳ类",
+      "action": "",
+      "operation": "Ⅳ类 :地下水化学组分含量较高 , 以农业和工业用水质量要求以及一定水平的人体健康风险为依 据 ,适用于农业和部分工业用水 ,适当处理后可作生活饮用水",
+      "condition": "",
+      "constraint": "       Ⅳ类 :地下水化学组分含量较高 , 以农业和工业用水质量要求以及一定水平的人体健康风险为依\n据 ,适用于农业和部分工业用水 ,适当处理后可作生活饮用水 ;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "Ⅳ类"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 38265,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

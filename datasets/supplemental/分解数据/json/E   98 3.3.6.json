@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "3.3.6",
+  "entities": [
+    {
+      "name": "阀室内管道穿越建筑物墙壁、阀开时，应与混凝土中的 钢筋电绝缘，并保持间隔",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.3.6    阀室内管道穿越建筑物墙壁、阀开时，应与混凝土中的\n钢筋电绝缘，并保持间隔距离不小于25mm;  间距不符合要求\n\n时，接触面之间应安装适当的电绝缘隔离材料。",
+      "type": "语义分解",
+      "subject": "阀室内管道穿越建筑物墙壁、阀开时，应与混凝土中的 钢筋电绝缘，并保持间隔",
+      "action": "",
+      "operation": "阀室内管道穿越建筑物墙壁、阀开时，应与混凝土中的 钢筋电绝缘，并保持间隔距离不小于25mm; 间距不符合要求 时，接触面之间应安装适当的电绝缘隔离材料。",
+      "condition": "",
+      "constraint": "3.3.6    阀室内管道穿越建筑物墙壁、阀开时，应与混凝土中的\n钢筋电绝缘，并保持间隔距离不小于25mm;  间距不符合要求\n\n时，接触面之间应安装适当的电绝缘隔离材料。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阀室内管道穿越建筑物墙壁、阀开时，应与混凝土中的 钢筋电绝缘，并保持间隔"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_039",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 44300,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

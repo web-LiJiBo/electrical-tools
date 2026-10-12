@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00013322",
+  "entities": [
+    {
+      "name": "ITU-TG.709(2016) 光传送网 ( OTN) 接口 (Int",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "ITU-TG.709(2016)    光传送网 ( OTN)  接口 (Interfaces for the optical transport network)\nITU-T G.709.1   灵活OTN 短距接口( Flexible OTN short-reach interface)",
+      "type": "语义分解",
+      "subject": "ITU-TG.709(2016) 光传送网 ( OTN) 接口 (Int",
+      "action": "",
+      "operation": "ITU-TG.709(2016) 光传送网 ( OTN) 接口 (Interfaces for the optical transport network) ITU-T G.709.1 灵活OTN 短距接口( Flexible OTN short-reach interface)",
+      "condition": "",
+      "constraint": "ITU-TG.709(2016)    光传送网 ( OTN)  接口 (Interfaces for the optical transport network)\nITU-T G.709.1   灵活OTN 短距接口( Flexible OTN short-reach interface)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "ITU-TG.709(2016) 光传送网 ( OTN) 接口 (Int"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13322,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

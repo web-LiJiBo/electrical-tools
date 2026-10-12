@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.10.1",
+  "entities": [
+    {
+      "name": "BHCA处理能力",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.10.1      按工程技术规范书要求和厂家提供的测试方法，对交换\n设备的主要呼叫处理板、中继网关、接入网关的处理能力( BHCA)\n指标进行测试考核。",
+      "type": "语义分解",
+      "subject": "BHCA处理能力",
+      "action": "",
+      "operation": "按技术书厂家方法测呼叫板中继接入网关",
+      "condition": "",
+      "constraint": "4.10.1      按工程技术规范书要求和厂家提供的测试方法，对交换\n设备的主要呼叫处理板、中继网关、接入网关的处理能力( BHCA)\n指标进行测试考核。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "BHCA处理能力"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27034,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

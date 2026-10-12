@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "6.3.4.1",
+  "entities": [
+    {
+      "name": "层次分析样品采集",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.4.1 样品采集 500 mL棕色玻璃瓶采样，样品采集时，使水样在取样瓶完全充满且没有气泡，再盖上瓶塞。样品中含有余氯，应在取样瓶中加入抗坏血酸溶液[ρ(C6H8O6)=100 g/L]，参考投入量为0.1 mL/500 mL水样。",
+      "type": "语义分解",
+      "subject": "层次分析样品采集",
+      "action": "",
+      "operation": "五百毫升棕色玻璃瓶满瓶无气泡余氯样加规定抗坏血酸液",
+      "condition": "",
+      "constraint": "6.3.4.1 样品采集 500 mL棕色玻璃瓶采样，样品采集时，使水样在取样瓶完全充满且没有气泡，再盖上瓶塞。样品中含有余氯，应在取样瓶中加入抗坏血酸溶液[ρ(C6H8O6)=100 g/L]，参考投入量为0.1 mL/500 mL水样。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "层次分析样品采集"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1319,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -6,7 +6,7 @@ from standard_knowledge_service_v2.instruction_engine.swrl_compiler import SwrlC
 
 def _semantic():
     unit = ClauseKnowledgeUnit("c1", "DL/T 1", "2025", "5.1", "集电线路发生过流时应跳闸")
-    rule = Rule("r1", "集电线路", "trip", "电流 >= 额定值", [Constraint("电流", ">=", 100, "A")])
+    rule = Rule("r1", "集电线路", "trip", "电流 >= 额定值", [Constraint("电流", ">=", 100, "A", role="compliance")])
     return SemanticExtractor().extract_rule(rule, unit)
 
 
@@ -39,7 +39,7 @@ def test_missing_protocol_configuration_never_generates_control_frame() -> None:
 def test_complete_iec61850_config_generates_candidate_only() -> None:
     context = ScenarioContext("offshore_wind", "集电线路")
     config = {"device_id": "CB-01", "logical_node": "PTRC1", "data_object": "Tr.general", "protocol": "IEC61850"}
-    candidate = InstructionGenerationService().generate(_semantic(), context, config)
+    candidate = InstructionGenerationService().generate(_semantic(), context, config, facts={"电流": 120, "额定值": 100})
     assert candidate.payload["service"] == "MMS"
     assert candidate.target == "CB-01"
     assert candidate.dispatch_allowed is False
@@ -48,6 +48,7 @@ def test_complete_iec61850_config_generates_candidate_only() -> None:
 def test_modbus_candidate_requires_mapping_and_is_not_dispatchable() -> None:
     context = ScenarioContext("offshore_wind", "集电线路")
     config = {"device_id": "CB-01", "slave_id": 1, "coil_address": 12}
-    candidate = InstructionGenerationService().generate(_semantic(), context, config, "Modbus")
+    candidate = InstructionGenerationService().generate(_semantic(), context, config, "Modbus", facts={"电流": 120, "额定值": 100})
     assert candidate.payload["function_code"] == 5
     assert candidate.dispatch_allowed is False
+

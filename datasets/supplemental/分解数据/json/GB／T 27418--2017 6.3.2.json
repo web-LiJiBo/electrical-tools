@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "6.3.2",
+  "entities": [
+    {
+      "name": "包含概率",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.2 理想情况下,能够选择包含因子k的特定值 ,k值提供的区间 Y=yLU=y 士ku。(y )对应于特定 的包含概率 p(例如 95 %或99 %) ;同样 ,对于给定k值,也能明确地声明该区间有关的包含概率。然而 在实践中不易做到 ,因为它需要对由测量结果J 及其合成不确定度 u(J )表征的概率分布有全面的了 解。虽然这些参数是非常重要的 ,但为建立具有准确巳知的包含概率的区间 ,仅仅依据这些参数还不 充分。",
+      "type": "语义分解",
+      "subject": "包含概率",
+      "action": "",
+      "operation": "说明准确覆盖概率需分布信息",
+      "condition": "",
+      "constraint": "仅仅依据这些参数还不 充分",
+      "constraint_role": "informational",
+      "related_entities": [
+        "包含概率"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "公式和变量损坏；95%和99%是示例"
+      ]
+    }
+  }
+}

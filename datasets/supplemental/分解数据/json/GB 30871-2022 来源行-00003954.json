@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003954",
+  "entities": [
+    {
+      "name": "在生产装置区、罐区等危险场所动土时，遇有埋设的易燃易爆、有毒有害介质管线",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.10 在生产装置区、罐区等危险场所动土时，遇有埋设的易燃易爆、有毒有害介质管线、窨井等可能引起燃烧、爆炸、中毒、窒息危险，且挖掘深度超过1.2 m 时，应执行受限空间作业相关规定。",
+      "type": "语义分解",
+      "subject": "在生产装置区、罐区等危险场所动土时，遇有埋设的易燃易爆、有毒有害介质管线",
+      "action": "",
+      "operation": "在生产装置区、罐区等危险场所动土时，遇有埋设的易燃易爆、有毒有害介质管线、窨井等可能引起燃烧、爆炸、中毒、窒息危险，且挖掘深度超过1.2 m 时，应执行受限空间作业相关规定。",
+      "condition": "",
+      "constraint": "11.10 在生产装置区、罐区等危险场所动土时，遇有埋设的易燃易爆、有毒有害介质管线、窨井等可能引起燃烧、爆炸、中毒、窒息危险，且挖掘深度超过1.2 m 时，应执行受限空间作业相关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在生产装置区、罐区等危险场所动土时，遇有埋设的易燃易爆、有毒有害介质管线"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3954,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

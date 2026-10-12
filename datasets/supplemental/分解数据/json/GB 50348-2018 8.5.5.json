@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "8.5.5",
+  "entities": [
+    {
+      "name": "试运行记录监督",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.5.5 项目监理机构应对试运行记录的及时性、真实性、完整性进行监督检查，对试运行中发现的问题以监理通知单的形式告知施工单位进行整改，并对整改落实情况进行确认。",
+      "type": "语义分解",
+      "subject": "试运行记录监督",
+      "action": "",
+      "operation": "检查及时真实完整并督促整改",
+      "condition": "",
+      "constraint": "8.5.5 项目监理机构应对试运行记录的及时性、真实性、完整性进行监督检查，对试运行中发现的问题以监理通知单的形式告知施工单位进行整改，并对整改落实情况进行确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试运行记录监督"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7120,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

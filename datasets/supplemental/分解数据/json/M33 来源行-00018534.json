@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018534",
+  "entities": [
+    {
+      "name": "如果两个复帧同步处理中任何一个出现复帧失步(扩展开销字节复帧和虚级联帧计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   如果两个复帧同步处理中任何一个出现复帧失步(扩展开销字节复帧和虚级联帧计数复帧)且在m\n个VC12帧内整个虚级联两阶复帧未恢复应宣告 dLOM 缺陷。一旦进入dLOM 状态，当两个复帧同步\n处理进入IM 应当退出该状态。m 值应在200～400范围之内，不可配置。\n\n5.3.6.7 STL 通路同步丢失缺陷( dLOL)",
+      "type": "语义分解",
+      "subject": "如果两个复帧同步处理中任何一个出现复帧失步(扩展开销字节复帧和虚级联帧计",
+      "action": "",
+      "operation": "如果两个复帧同步处理中任何一个出现复帧失步(扩展开销字节复帧和虚级联帧计数复帧)且在m 个VC12帧内整个虚级联两阶复帧未恢复应宣告 dLOM 缺陷。一旦进入dLOM 状态，当两个复帧同步 处理进入IM 应当退出该状态。m 值应在200～400范围之内，不可配置。 5.3.6.7 STL 通路同步丢失缺陷( dLOL)",
+      "condition": "",
+      "constraint": "   如果两个复帧同步处理中任何一个出现复帧失步(扩展开销字节复帧和虚级联帧计数复帧)且在m\n个VC12帧内整个虚级联两阶复帧未恢复应宣告 dLOM 缺陷。一旦进入dLOM 状态，当两个复帧同步\n处理进入IM 应当退出该状态。m 值应在200～400范围之内，不可配置。\n\n5.3.6.7 STL 通路同步丢失缺陷( dLOL)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "如果两个复帧同步处理中任何一个出现复帧失步(扩展开销字节复帧和虚级联帧计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18534,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

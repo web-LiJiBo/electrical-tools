@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012462",
+  "entities": [
+    {
+      "name": "——在原有数字连接、PDH 和 SDH 误码性能指标和投入业务和维护的指",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   ——在原有数字连接、PDH 和 SDH 误码性能指标和投入业务和维护的指标和限值要求基础上，增\n加了OTN 部分的要求(见7.1.3和7.4.4);",
+      "type": "语义分解",
+      "subject": "——在原有数字连接、PDH 和 SDH 误码性能指标和投入业务和维护的指",
+      "action": "",
+      "operation": "——在原有数字连接、PDH 和 SDH 误码性能指标和投入业务和维护的指标和限值要求基础上，增 加了OTN 部分的要求(见7.1.3和7.4.4)",
+      "condition": "",
+      "constraint": "   ——在原有数字连接、PDH 和 SDH 误码性能指标和投入业务和维护的指标和限值要求基础上，增\n加了OTN 部分的要求(见7.1.3和7.4.4);",
+      "constraint_role": "informational",
+      "related_entities": [
+        "——在原有数字连接、PDH 和 SDH 误码性能指标和投入业务和维护的指"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12462,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

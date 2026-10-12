@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.3.4",
+  "entities": [
+    {
+      "name": "废水监测技术",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3.4 监测技术 按本标准5.2.1.5执行C",
+      "type": "语义分解",
+      "subject": "废水监测技术",
+      "action": "",
+      "operation": "按5.2.1.5要求",
+      "condition": "",
+      "constraint": "5.3.4 监测技术 按本标准5.2.1.5执行C",
+      "constraint_role": "informational",
+      "related_entities": [
+        "废水监测技术"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2849,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用需关联"
+      ]
+    }
+  }
+}

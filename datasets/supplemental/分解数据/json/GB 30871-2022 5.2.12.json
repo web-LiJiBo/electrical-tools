@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "5.2.12",
+  "entities": [
+    {
+      "name": "动火电焊机",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.12 使用电焊机作业时，电焊机与动火点的间距不应超过10 m，不能满足要求时应将电焊机作为动火点进行管理。",
+      "type": "语义分解",
+      "subject": "动火电焊机",
+      "action": "",
+      "operation": "控制与动火点间距超出时按动火点管理",
+      "condition": "使用电焊机作业时",
+      "constraint": "5.2.12 使用电焊机作业时，电焊机与动火点的间距不应超过10 m，不能满足要求时应将电焊机作为动火点进行管理。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火电焊机"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3862,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

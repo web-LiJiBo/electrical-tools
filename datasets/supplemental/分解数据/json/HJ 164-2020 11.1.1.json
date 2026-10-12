@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "11.1.1",
+  "entities": [
+    {
+      "name": "地下水原资料核查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.1.1 收集 核查和整理的内容包括:  监测井布设, 样品采集。保存。运输过程, 采样时的气象。水文。环境条件,监测项目和分析方法。试剂,标推溶液的配制与标定, 校推曲线的绘制,分析测试记录及结果计算,质量控制等各个环节形成的原始记录。核查入员对各类原始资料信息的合理性和完整性进行核查, 一旦发现可疑之处,应及时查明原因。由原记录人员予以纠正。当原因不明时,应如实说明情况,但不得任意修改或舍弃可疑数据。",
+      "type": "语义分解",
+      "subject": "地下水原资料核查",
+      "action": "",
+      "operation": "收集全流程记录核合理完整疑点查明原记录人纠正未明不得任意改弃",
+      "condition": "",
+      "constraint": "11.1.1 收集 核查和整理的内容包括:  监测井布设, 样品采集。保存。运输过程, 采样时的气象。水文。环境条件,监测项目和分析方法。试剂,标推溶液的配制与标定, 校推曲线的绘制,分析测试记录及结果计算,质量控制等各个环节形成的原始记录。核查入员对各类原始资料信息的合理性和完整性进行核查, 一旦发现可疑之处,应及时查明原因。由原记录人员予以纠正。当原因不明时,应如实说明情况,但不得任意修改或舍弃可疑数据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水原资料核查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2190,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

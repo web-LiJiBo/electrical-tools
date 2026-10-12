@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026982",
+  "entities": [
+    {
+      "name": ". 市话、长市、长途以及国际电路测试均应按路由(直达、迂回 或最终路由)",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2.  市话、长市、长途以及国际电路测试均应按路由(直达、迂回\n或最终路由)、信令方式、电路群分别对指定号码进行呼叫测试，测\n试应包括来话和去话。对每个中继局向分别抽测2～3条电路，各\n项接续性能良好。",
+      "type": "语义分解",
+      "subject": ". 市话、长市、长途以及国际电路测试均应按路由(直达、迂回 或最终路由)",
+      "action": "",
+      "operation": ". 市话、长市、长途以及国际电路测试均应按路由(直达、迂回 或最终路由)、信令方式、电路群分别对指定号码进行呼叫测试，测 试应包括来话和去话。对每个中继局向分别抽测2～3条电路，各 项接续性能良好。",
+      "condition": "",
+      "constraint": "       2.  市话、长市、长途以及国际电路测试均应按路由(直达、迂回\n或最终路由)、信令方式、电路群分别对指定号码进行呼叫测试，测\n试应包括来话和去话。对每个中继局向分别抽测2～3条电路，各\n项接续性能良好。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 市话、长市、长途以及国际电路测试均应按路由(直达、迂回 或最终路由)"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26982,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

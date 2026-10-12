@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016566",
+  "entities": [
+    {
+      "name": "EMS在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       EMS在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功能。网元的创建方法\n可为人工配置法和自动发现法(可选)。网元创建后应能通过上载和下载方式配置网元数据。",
+      "type": "语义分解",
+      "subject": "EMS在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功",
+      "action": "",
+      "operation": "EMS在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功能。网元的创建方法 可为人工配置法和自动发现法(可选)。网元创建后应能通过上载和下载方式配置网元数据。",
+      "condition": "",
+      "constraint": "       EMS在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功能。网元的创建方法\n可为人工配置法和自动发现法(可选)。网元创建后应能通过上载和下载方式配置网元数据。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "EMS在安装完成后并没有当前网络中的网元数据，EMS应能提供网元的创建功"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16566,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

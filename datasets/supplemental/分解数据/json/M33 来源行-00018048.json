@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018048",
+  "entities": [
+    {
+      "name": "STM-N复用段终端MSn__TT…………………………………………………",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    10.3   STM-N复用段终端MSn__TT…………………………………………………………………… 59",
+      "type": "语义分解",
+      "subject": "STM-N复用段终端MSn__TT…………………………………………………",
+      "action": "",
+      "operation": "STM-N复用段终端MSn__TT…………………………………………………………………… 59",
+      "condition": "",
+      "constraint": "    10.3   STM-N复用段终端MSn__TT…………………………………………………………………… 59",
+      "constraint_role": "informational",
+      "related_entities": [
+        "STM-N复用段终端MSn__TT…………………………………………………"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_017",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18048,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

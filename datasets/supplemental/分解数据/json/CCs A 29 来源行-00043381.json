@@ -1,0 +1,41 @@
+{
+  "standard_name": "ⅠCs 47 . 020 . 05",
+  "standard_id": "CCs A 29",
+  "version": "",
+  "chapter_path": "来源行-00043381",
+  "entities": [
+    {
+      "name": ". 1 . 1 锌阳极按化学成分可分为锌一铝一镉阳极( Ⅰ 型和 Ⅱ 型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5 . 1 . 1     锌阳极按化学成分可分为锌一铝一镉阳极( Ⅰ 型和 Ⅱ 型，含镉元素，使用前应征求需方的许可）和纯\n锌阳极( Ⅲ型），其中 Ⅰ 型和 Ⅱ 型锌阳极适用环境温度不超过 50 ℃ 。",
+      "type": "语义分解",
+      "subject": ". 1 . 1 锌阳极按化学成分可分为锌一铝一镉阳极( Ⅰ 型和 Ⅱ 型",
+      "action": "",
+      "operation": ". 1 . 1 锌阳极按化学成分可分为锌一铝一镉阳极( Ⅰ 型和 Ⅱ 型，含镉元素，使用前应征求需方的许可）和纯 锌阳极( Ⅲ型），其中 Ⅰ 型和 Ⅱ 型锌阳极适用环境温度不超过 50 ℃ 。",
+      "condition": "",
+      "constraint": "5 . 1 . 1     锌阳极按化学成分可分为锌一铝一镉阳极( Ⅰ 型和 Ⅱ 型，含镉元素，使用前应征求需方的许可）和纯\n锌阳极( Ⅲ型），其中 Ⅰ 型和 Ⅱ 型锌阳极适用环境温度不超过 50 ℃ 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 1 . 1 锌阳极按化学成分可分为锌一铝一镉阳极( Ⅰ 型和 Ⅱ 型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43381,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

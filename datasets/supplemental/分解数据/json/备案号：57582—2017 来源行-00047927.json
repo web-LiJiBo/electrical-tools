@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    75.200\nE 98",
+  "standard_id": "备案号：57582—2017",
+  "version": "2017",
+  "chapter_path": "来源行-00047927",
+  "entities": [
+    {
+      "name": "上述标准中煤层气、生物液体燃料、电力、电器装备领域 标准由中国电力出版社",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   上述标准中煤层气、生物液体燃料、电力、电器装备领域\n标准由中国电力出版社出版发行，煤制燃料领域标准由化学工\n业出版社出版发行，煤炭领域标准由煤炭工业出版社出版发行，\n石油天然气领域标准由石油工业出版社出版发行，石化领域标\n准由中国石油出版社出版发行，锅炉压力容器标准由新华出版\n社出版发行。",
+      "type": "语义分解",
+      "subject": "上述标准中煤层气、生物液体燃料、电力、电器装备领域 标准由中国电力出版社",
+      "action": "",
+      "operation": "上述标准中煤层气、生物液体燃料、电力、电器装备领域 标准由中国电力出版社出版发行，煤制燃料领域标准由化学工 业出版社出版发行，煤炭领域标准由煤炭工业出版社出版发行， 石油天然气领域标准由石油工业出版社出版发行，石化领域标 准由中国石油出版社出版发行，锅炉压力容器标准由新华出版 社出版发行。",
+      "condition": "",
+      "constraint": "   上述标准中煤层气、生物液体燃料、电力、电器装备领域\n标准由中国电力出版社出版发行，煤制燃料领域标准由化学工\n业出版社出版发行，煤炭领域标准由煤炭工业出版社出版发行，\n石油天然气领域标准由石油工业出版社出版发行，石化领域标\n准由中国石油出版社出版发行，锅炉压力容器标准由新华出版\n社出版发行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "上述标准中煤层气、生物液体燃料、电力、电器装备领域 标准由中国电力出版社"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47927,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

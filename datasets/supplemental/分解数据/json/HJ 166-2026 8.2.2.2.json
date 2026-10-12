@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "8.2.2.2",
+  "entities": [
+    {
+      "name": "土壤烘干",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2.2 烘干 将采集的土壤样品全部转移到样品盘中, 摊成2 cm~3 cm 的薄层= 烘干样品的温度应不影响样品 中目标物的测定, 一般温度控制在35C士5C 碎石。砂砾和植物残体应及时拣出;  避免样品结成大块 而不易碾压和研磨。分析方法有明确规定时,按分析方法执行。",
+      "type": "语义分解",
+      "subject": "土壤烘干",
+      "action": "",
+      "operation": "薄层温度不影响目标一般三十五容差五度除杂按明确分析方法",
+      "condition": "",
+      "constraint": "8.2.2.2 烘干 将采集的土壤样品全部转移到样品盘中, 摊成2 cm~3 cm 的薄层= 烘干样品的温度应不影响样品 中目标物的测定, 一般温度控制在35C士5C 碎石。砂砾和植物残体应及时拣出;  避免样品结成大块 而不易碾压和研磨。分析方法有明确规定时,按分析方法执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤烘干"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2265,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

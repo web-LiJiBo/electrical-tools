@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "4.2.2",
+  "entities": [
+    {
+      "name": "地下水饮水源布点",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.2 地下水饮用水源地的监测点布设。以开采层为监测重点;  存在多个含水层时,应在与目标含水层存在水力联系的含水层中布设监测点。并将与地下水存在水力联系的地表水纳入监测=",
+      "type": "语义分解",
+      "subject": "地下水饮水源布点",
+      "action": "",
+      "operation": "重点开采层布相关含水层并监测水力联系地表水",
+      "condition": "",
+      "constraint": "4.2.2 地下水饮用水源地的监测点布设。以开采层为监测重点;  存在多个含水层时,应在与目标含水层存在水力联系的含水层中布设监测点。并将与地下水存在水力联系的地表水纳入监测=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地下水饮水源布点"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2027,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

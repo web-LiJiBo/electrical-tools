@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009796",
+  "entities": [
+    {
+      "name": "OTN 传输系统可选用G.652 光纤或G.655 光纤",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1  OTN 传输系统可选用G.652 光纤或G.655 光纤；\n   2  OTN 传输系统中，同一光放段内宜使用同类型的光纤，同\n一个光复用段内宜使用同类型的光纤；",
+      "type": "语义分解",
+      "subject": "OTN 传输系统可选用G.652 光纤或G.655 光纤",
+      "action": "",
+      "operation": "OTN 传输系统可选用G.652 光纤或G.655 光纤； 2 OTN 传输系统中，同一光放段内宜使用同类型的光纤，同 一个光复用段内宜使用同类型的光纤",
+      "condition": "",
+      "constraint": "   1  OTN 传输系统可选用G.652 光纤或G.655 光纤；\n   2  OTN 传输系统中，同一光放段内宜使用同类型的光纤，同\n一个光复用段内宜使用同类型的光纤；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 传输系统可选用G.652 光纤或G.655 光纤"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9796,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

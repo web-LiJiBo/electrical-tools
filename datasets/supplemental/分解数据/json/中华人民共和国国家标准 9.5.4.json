@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "9.5.4",
+  "entities": [
+    {
+      "name": "列柜二级熔丝",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.5.4  列柜的二级熔丝规格选取时宜由设备供应商直接提出列\n柜二级熔丝的容量要求，严格按其选用。列柜二级熔丝座应为通\n用熔丝座，满足后期更换需要，二级熔丝与一级熔丝之间的连接线\n线径应能满足后期更换熔丝的需要。机房新配列柜时，工程中暂\n未使用的二级熔丝宜只保留熔丝座，后期再根据扩容设备的具体\n\n负荷确定二级熔丝规格。",
+      "type": "语义分解",
+      "subject": "列柜二级熔丝",
+      "action": "",
+      "operation": "供应商提出容量按需选用通用座连接线满足更换未用位置宜只留座",
+      "condition": "",
+      "constraint": "9.5.4  列柜的二级熔丝规格选取时宜由设备供应商直接提出列\n柜二级熔丝的容量要求，严格按其选用。列柜二级熔丝座应为通\n用熔丝座，满足后期更换需要，二级熔丝与一级熔丝之间的连接线\n线径应能满足后期更换熔丝的需要。机房新配列柜时，工程中暂\n未使用的二级熔丝宜只保留熔丝座，后期再根据扩容设备的具体\n\n负荷确定二级熔丝规格。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "列柜二级熔丝"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9392,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029104",
+  "entities": [
+    {
+      "name": "结合本单位部门职能和分工，成立以单位有关负责人为组长，单位相关部门人员(",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   结合本单位部门职能和分工，成立以单位有关负责人为组长，单位相关部门人员(如生产、管\n道、安全等人员)参加的应急预案编制工作组，明确工作职责和任务分工，制订工作计划，组织开展\n应急预案编制工作，预案编制工作组中可按实际情况邀请协议救援队伍及周边相关企业、单位或社区\n代表参加。",
+      "type": "语义分解",
+      "subject": "结合本单位部门职能和分工，成立以单位有关负责人为组长，单位相关部门人员(",
+      "action": "",
+      "operation": "结合本单位部门职能和分工，成立以单位有关负责人为组长，单位相关部门人员(如生产、管 道、安全等人员)参加的应急预案编制工作组，明确工作职责和任务分工，制订工作计划，组织开展 应急预案编制工作，预案编制工作组中可按实际情况邀请协议救援队伍及周边相关企业、单位或社区 代表参加。",
+      "condition": "",
+      "constraint": "   结合本单位部门职能和分工，成立以单位有关负责人为组长，单位相关部门人员(如生产、管\n道、安全等人员)参加的应急预案编制工作组，明确工作职责和任务分工，制订工作计划，组织开展\n应急预案编制工作，预案编制工作组中可按实际情况邀请协议救援队伍及周边相关企业、单位或社区\n代表参加。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "结合本单位部门职能和分工，成立以单位有关负责人为组长，单位相关部门人员("
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29104,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

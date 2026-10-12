@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012616",
+  "entities": [
+    {
+      "name": "这里存在的主要问题是",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   这里存在的主要问题是：要使电信网经济合理地运行， 一般来说交付指标应允许比设计指标低，而\n\n考虑到老化、环境条件(气候、电源干扰等)等因素的影响，维护限值应允许损伤能在一定程度上增加。\n\n但电信网或电路在这种条件下运行时，仍要达到原定的性能指标。这就要使作为电信网基础设备的设计\n\n指标应大大优于性能指标。随着性能指标的劣化，各类指标及限值关系如图1所示。",
+      "type": "语义分解",
+      "subject": "这里存在的主要问题是",
+      "action": "",
+      "operation": "这里存在的主要问题是：要使电信网经济合理地运行， 一般来说交付指标应允许比设计指标低，而 考虑到老化、环境条件(气候、电源干扰等)等因素的影响，维护限值应允许损伤能在一定程度上增加。 但电信网或电路在这种条件下运行时，仍要达到原定的性能指标。这就要使作为电信网基础设备的设计 指标应大大优于性能指标。随着性能指标的劣化，各类指标及限值关系如图1所示。",
+      "condition": "",
+      "constraint": "   这里存在的主要问题是：要使电信网经济合理地运行， 一般来说交付指标应允许比设计指标低，而\n\n考虑到老化、环境条件(气候、电源干扰等)等因素的影响，维护限值应允许损伤能在一定程度上增加。\n\n但电信网或电路在这种条件下运行时，仍要达到原定的性能指标。这就要使作为电信网基础设备的设计\n\n指标应大大优于性能指标。随着性能指标的劣化，各类指标及限值关系如图1所示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "这里存在的主要问题是"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12616,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

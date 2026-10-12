@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 98",
+  "version": "",
+  "chapter_path": "来源行-00046725",
+  "entities": [
+    {
+      "name": "储罐直接检测应满足国家现行标准《立式圆筒形钢制焊 接油罐操作维护修理规范",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.5   储罐直接检测应满足国家现行标准《立式圆筒形钢制焊\n接油罐操作维护修理规范》SY/T  5921的有关要求，应对罐内\n氧含量、有毒气体和可燃气体浓度进行监测，应在检测合格后\n进入。",
+      "type": "语义分解",
+      "subject": "储罐直接检测应满足国家现行标准《立式圆筒形钢制焊 接油罐操作维护修理规范",
+      "action": "",
+      "operation": "储罐直接检测应满足国家现行标准《立式圆筒形钢制焊 接油罐操作维护修理规范》SY/T 5921的有关要求，应对罐内 氧含量、有毒气体和可燃气体浓度进行监测，应在检测合格后 进入。",
+      "condition": "",
+      "constraint": "6.1.5   储罐直接检测应满足国家现行标准《立式圆筒形钢制焊\n接油罐操作维护修理规范》SY/T  5921的有关要求，应对罐内\n氧含量、有毒气体和可燃气体浓度进行监测，应在检测合格后\n进入。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储罐直接检测应满足国家现行标准《立式圆筒形钢制焊 接油罐操作维护修理规范"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_042",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46725,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

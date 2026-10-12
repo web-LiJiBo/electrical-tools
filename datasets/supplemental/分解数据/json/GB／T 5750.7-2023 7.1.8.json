@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "7.1.8",
+  "entities": [
+    {
+      "name": "总有机碳直接性能",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.1.8 精密度和准确度 5个实验室重复测定低浓度 TOC(0.5 m8/~2.0 mg/I ) , 相对标准偏差为 0.80 %~5.5 % ,重复测定中浓度 TOC (5 m8/~10 m8/1) ,相对标准偏差为 0.60 %~1.9 % ,重复测定高浓度 TOC (20 mg/I ) ,相对标准偏差为 0.80 %~5.5 %_ 用自来水做加标回收试验 ,浓度为0.5 mg/L ~10.0 I8/ 时 ,回收率为 92.0 %~108 %",
+      "type": "语义分解",
+      "subject": "总有机碳直接性能",
+      "action": "",
+      "operation": "记录五实验室多浓度偏差及回收率",
+      "condition": "",
+      "constraint": "7.1.8 精密度和准确度 5个实验室重复测定低浓度 TOC(0.5 m8/~2.0 mg/I ) , 相对标准偏差为 0.80 %~5.5 % ,重复测定中浓度 TOC (5 m8/~10 m8/1) ,相对标准偏差为 0.60 %~1.9 % ,重复测定高浓度 TOC (20 mg/I ) ,相对标准偏差为 0.80 %~5.5 %_ 用自来水做加标回收试验 ,浓度为0.5 mg/L ~10.0 I8/ 时 ,回收率为 92.0 %~108 %",
+      "constraint_role": "informational",
+      "related_entities": [
+        "总有机碳直接性能"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1905,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；性能数据非合格阈值单位异常"
+      ]
+    }
+  }
+}

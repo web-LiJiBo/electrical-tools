@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011776",
+  "entities": [
+    {
+      "name": "OTN 网络管理系统的设置应根据组织机构和管理模式设 置",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    OTN 网络管理系统的设置应根据组织机构和管理模式设\n置 。  承担 OTN全网集中管理职责的机构应设置NMS 或 SNMS\n级别的网管 ,   下级区域性管理机构宜设置 SNMS 或EMS 级别的\n网管 ,   或设置上一级 SNMS 的远程管理终端 ,   通过上一级网管\n授权管理本区域下的网络。",
+      "type": "语义分解",
+      "subject": "OTN 网络管理系统的设置应根据组织机构和管理模式设 置",
+      "action": "",
+      "operation": "OTN 网络管理系统的设置应根据组织机构和管理模式设 置 。 承担 OTN全网集中管理职责的机构应设置NMS 或 SNMS 级别的网管 , 下级区域性管理机构宜设置 SNMS 或EMS 级别的 网管 , 或设置上一级 SNMS 的远程管理终端 , 通过上一级网管 授权管理本区域下的网络。",
+      "condition": "",
+      "constraint": "       2    OTN 网络管理系统的设置应根据组织机构和管理模式设\n置 。  承担 OTN全网集中管理职责的机构应设置NMS 或 SNMS\n级别的网管 ,   下级区域性管理机构宜设置 SNMS 或EMS 级别的\n网管 ,   或设置上一级 SNMS 的远程管理终端 ,   通过上一级网管\n授权管理本区域下的网络。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN 网络管理系统的设置应根据组织机构和管理模式设 置"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11776,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

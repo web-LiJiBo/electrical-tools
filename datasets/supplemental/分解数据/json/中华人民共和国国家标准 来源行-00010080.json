@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00010080",
+  "entities": [
+    {
+      "name": "告警功能检查应包含电源故障告警、机盘故障告警、机盘 缺失告警、信号丢失(",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    告警功能检查应包含电源故障告警、机盘故障告警、机盘\n缺失告警、信号丢失( LOS) 告警和激光器自动关闭( ALS) 告警，检\n查结果应符合设计要求。",
+      "type": "语义分解",
+      "subject": "告警功能检查应包含电源故障告警、机盘故障告警、机盘 缺失告警、信号丢失(",
+      "action": "",
+      "operation": "告警功能检查应包含电源故障告警、机盘故障告警、机盘 缺失告警、信号丢失( LOS) 告警和激光器自动关闭( ALS) 告警，检 查结果应符合设计要求。",
+      "condition": "",
+      "constraint": "       2    告警功能检查应包含电源故障告警、机盘故障告警、机盘\n缺失告警、信号丢失( LOS) 告警和激光器自动关闭( ALS) 告警，检\n查结果应符合设计要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "告警功能检查应包含电源故障告警、机盘故障告警、机盘 缺失告警、信号丢失("
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_011",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10080,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

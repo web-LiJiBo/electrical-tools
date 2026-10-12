@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs  13. 040. 50",
+  "standard_id": "K 56",
+  "version": "",
+  "chapter_path": "来源行-00034521",
+  "entities": [
+    {
+      "name": ". 3. 5. 1 自动数据采集和处理系统应具有执行监测方案要求的所有操",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5. 3. 5. 1     自动数据采集和处理系统应具有执行监测方案要求的所有操作的能力。  在运行的模怯期间 ,\n根据对连续监测值取平均值 , 数据应每半小时记录一次。  最大值和最小值也应记录。\n5. 3. 5. 2    应当完成以下的步骤 :",
+      "type": "语义分解",
+      "subject": ". 3. 5. 1 自动数据采集和处理系统应具有执行监测方案要求的所有操",
+      "action": "",
+      "operation": ". 3. 5. 1 自动数据采集和处理系统应具有执行监测方案要求的所有操作的能力。 在运行的模怯期间 , 根据对连续监测值取平均值 , 数据应每半小时记录一次。 最大值和最小值也应记录。 5. 3. 5. 2 应当完成以下的步骤",
+      "condition": "",
+      "constraint": "5. 3. 5. 1     自动数据采集和处理系统应具有执行监测方案要求的所有操作的能力。  在运行的模怯期间 ,\n根据对连续监测值取平均值 , 数据应每半小时记录一次。  最大值和最小值也应记录。\n5. 3. 5. 2    应当完成以下的步骤 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        ". 3. 5. 1 自动数据采集和处理系统应具有执行监测方案要求的所有操"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_030",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 34521,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

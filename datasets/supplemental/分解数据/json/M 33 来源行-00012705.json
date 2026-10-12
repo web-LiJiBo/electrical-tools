@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012705",
+  "entities": [
+    {
+      "name": "基于复杂性的块配额，在国际部分包括终端国的1%和中间国2%都将分配给网络",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   基于复杂性的块配额，在国际部分包括终端国的1%和中间国2%都将分配给网络的复杂性。对于终\n端国部分(从IG 到 PEP 部分),17.5%同样也应分配给网络的复杂性。",
+      "type": "语义分解",
+      "subject": "基于复杂性的块配额，在国际部分包括终端国的1%和中间国2%都将分配给网络",
+      "action": "",
+      "operation": "基于复杂性的块配额，在国际部分包括终端国的1%和中间国2%都将分配给网络的复杂性。对于终 端国部分(从IG 到 PEP 部分),17.5%同样也应分配给网络的复杂性。",
+      "condition": "",
+      "constraint": "   基于复杂性的块配额，在国际部分包括终端国的1%和中间国2%都将分配给网络的复杂性。对于终\n端国部分(从IG 到 PEP 部分),17.5%同样也应分配给网络的复杂性。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "基于复杂性的块配额，在国际部分包括终端国的1%和中间国2%都将分配给网络"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12705,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

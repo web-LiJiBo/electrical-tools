@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "4.2.4",
+  "entities": [
+    {
+      "name": "工程建设征占地范围的珍稀濒危植物、古树名木及优势植物种群应按管理部门要求",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.4        工程建设征占地范围的珍稀濒危植物、古树名木及优势植物种群应按管理部门要求进行保护，\n宜采用迁地保护方式。",
+      "type": "语义分解",
+      "subject": "工程建设征占地范围的珍稀濒危植物、古树名木及优势植物种群应按管理部门要求",
+      "action": "",
+      "operation": "工程建设征占地范围的珍稀濒危植物、古树名木及优势植物种群应按管理部门要求进行保护， 宜采用迁地保护方式。",
+      "condition": "",
+      "constraint": "4.2.4        工程建设征占地范围的珍稀濒危植物、古树名木及优势植物种群应按管理部门要求进行保护，\n宜采用迁地保护方式。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工程建设征占地范围的珍稀濒危植物、古树名木及优势植物种群应按管理部门要求"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40654,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

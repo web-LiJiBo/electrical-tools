@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "8.1.4",
+  "entities": [
+    {
+      "name": "No.7信令相关问题",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.1.4   涉 及No.7  信令网的有关问题，应符合YDN 089《No.7 信\n令网技术体制》、YD/T  1180《No.7 信令网网络管理接口技术规\n范 — —MTP  和 SCCP 部分》、YD/T 1303《No.7信令监测系统技术\n要 求 》、YDN 066《国 内No.7 信令方式技术规范——运行、维护和\n管 理 部 分(OMAP)  ( 暂行规定)》的要求。",
+      "type": "语义分解",
+      "subject": "No.7信令相关问题",
+      "action": "",
+      "operation": "符合所列技术体制管理接口监测运维规范",
+      "condition": "",
+      "constraint": "8.1.4   涉 及No.7  信令网的有关问题，应符合YDN 089《No.7 信\n令网技术体制》、YD/T  1180《No.7 信令网网络管理接口技术规\n范 — —MTP  和 SCCP 部分》、YD/T 1303《No.7信令监测系统技术\n要 求 》、YDN 066《国 内No.7 信令方式技术规范——运行、维护和\n管 理 部 分(OMAP)  ( 暂行规定)》的要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "No.7信令相关问题"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26003,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

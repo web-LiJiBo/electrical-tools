@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "4.1.4",
+  "entities": [
+    {
+      "name": "综合通信大楼内部的接地系统应通过总接地排、楼层接地 排、局部接地排、预留",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.4      综合通信大楼内部的接地系统应通过总接地排、楼层接地\n排、局部接地排、预留在柱内接地端子等构成一个完善的等电位连\n接系统，并应将各子接地系统用接地导体进行连接，构成不同的接\n地参考点。",
+      "type": "语义分解",
+      "subject": "综合通信大楼内部的接地系统应通过总接地排、楼层接地 排、局部接地排、预留",
+      "action": "",
+      "operation": "综合通信大楼内部的接地系统应通过总接地排、楼层接地 排、局部接地排、预留在柱内接地端子等构成一个完善的等电位连 接系统，并应将各子接地系统用接地导体进行连接，构成不同的接 地参考点。",
+      "condition": "",
+      "constraint": "4.1.4      综合通信大楼内部的接地系统应通过总接地排、楼层接地\n排、局部接地排、预留在柱内接地端子等构成一个完善的等电位连\n接系统，并应将各子接地系统用接地导体进行连接，构成不同的接\n地参考点。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "综合通信大楼内部的接地系统应通过总接地排、楼层接地 排、局部接地排、预留"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22496,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

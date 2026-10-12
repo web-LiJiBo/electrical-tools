@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.2.3.2",
+  "entities": [
+    {
+      "name": "便携硫仪检查内容",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.3.2 便携式硫化氢检测仪检查应至少包括以下内容 : 8) 电池电量。 b) 完好性。 c) 在无硫化氢区域内检测仪读数为零 =",
+      "type": "语义分解",
+      "subject": "便携硫仪检查内容",
+      "action": "",
+      "operation": "电量完好无硫区零读数",
+      "condition": "",
+      "constraint": "5.2.3.2 便携式硫化氢检测仪检查应至少包括以下内容 : 8) 电池电量。 b) 完好性。 c) 在无硫化氢区域内检测仪读数为零 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "便携硫仪检查内容"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7436,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

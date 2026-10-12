@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008646",
+  "entities": [
+    {
+      "name": "RZ-DQPSK(Return to Zero Differential",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "RZ-DQPSK(Return  to  Zero  Differential  Quadrature  Phase   Shift\nKeying )    归零差分正交相移键控",
+      "type": "语义分解",
+      "subject": "RZ-DQPSK(Return to Zero Differential",
+      "action": "",
+      "operation": "RZ-DQPSK(Return to Zero Differential Quadrature Phase Shift Keying ) 归零差分正交相移键控",
+      "condition": "",
+      "constraint": "RZ-DQPSK(Return  to  Zero  Differential  Quadrature  Phase   Shift\nKeying )    归零差分正交相移键控",
+      "constraint_role": "informational",
+      "related_entities": [
+        "RZ-DQPSK(Return to Zero Differential"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8646,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

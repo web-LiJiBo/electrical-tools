@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200\nCCS E  98",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00047881",
+  "entities": [
+    {
+      "name": "阀室引压管、绝缘卡套电弧和烧蚀评价准则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4   阀室引压管、绝缘卡套电弧和烧蚀评价准则：阀室引压\n管间电压差和绝缘卡套两侧电压差小于4V, 或相邻的引压管间\n间距不小于10mm 且电压差介于4V~10V,    干扰可接受；电压\n差大于10V, 干扰不可接受。",
+      "type": "语义分解",
+      "subject": "阀室引压管、绝缘卡套电弧和烧蚀评价准则",
+      "action": "",
+      "operation": "阀室引压管、绝缘卡套电弧和烧蚀评价准则：阀室引压 管间电压差和绝缘卡套两侧电压差小于4V, 或相邻的引压管间 间距不小于10mm 且电压差介于4V~10V, 干扰可接受；电压 差大于10V, 干扰不可接受。",
+      "condition": "",
+      "constraint": "      4   阀室引压管、绝缘卡套电弧和烧蚀评价准则：阀室引压\n管间电压差和绝缘卡套两侧电压差小于4V, 或相邻的引压管间\n间距不小于10mm 且电压差介于4V~10V,    干扰可接受；电压\n差大于10V, 干扰不可接受。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "阀室引压管、绝缘卡套电弧和烧蚀评价准则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_043",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 47881,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

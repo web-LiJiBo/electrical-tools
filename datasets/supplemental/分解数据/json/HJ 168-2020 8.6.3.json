@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.6.3",
+  "entities": [
+    {
+      "name": "多分析方法标准",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.6.3 如果标准中包括几种分析方法, 应清楚地指明各分析方法的适用范围=",
+      "type": "语义分解",
+      "subject": "多分析方法标准",
+      "action": "",
+      "operation": "分别指明适用范围",
+      "condition": "如果标准中包括几种分析方法",
+      "constraint": "8.6.3 如果标准中包括几种分析方法, 应清楚地指明各分析方法的适用范围=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "多分析方法标准"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2367,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

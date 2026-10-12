@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 13.040.40",
+  "standard_id": "Z60",
+  "version": "",
+  "chapter_path": "10.1.2",
+  "entities": [
+    {
+      "name": "生产与VOC处理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.2 VOCs 废气收集处理系统应与生产工艺设备同步运行。 VOCs 废气收集处理系统发生故障或检\n修时，对应的生产工艺设备应停止运行，待检修完毕后同步投入使用；生产工艺设备不能停止运行或不\n能及时停止运行的，应设置废气应急处理设施或采取其他替代措施。",
+      "type": "语义分解",
+      "subject": "生产与VOC处理",
+      "action": "",
+      "operation": "同步故障检修生产停后同投不能及时停配应急替代",
+      "condition": "",
+      "constraint": "10.1.2 VOCs 废气收集处理系统应与生产工艺设备同步运行。 VOCs 废气收集处理系统发生故障或检\n修时，对应的生产工艺设备应停止运行，待检修完毕后同步投入使用；生产工艺设备不能停止运行或不\n能及时停止运行的，应设置废气应急处理设施或采取其他替代措施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "生产与VOC处理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 33436,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

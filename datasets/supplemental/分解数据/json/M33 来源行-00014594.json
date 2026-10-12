@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014594",
+  "entities": [
+    {
+      "name": "对于基于OSC 信道传送频率同步，OTN 每个方向OSC 通道应支持物理",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   对于基于OSC 信道传送频率同步，OTN 每个方向OSC 通道应支持物理层频率同步，并支持SSM\n功能。在OTN 设备配置多个方向OSC时，多个方向OSC 之间可实现频率同步传送，并且OTN 设备应\n提供至少1路频率同步外输入接口和至少1路频率同步外输出接口，外时钟接口类型可配置为2048kHz\n或2048kb/s。",
+      "type": "语义分解",
+      "subject": "对于基于OSC 信道传送频率同步，OTN 每个方向OSC 通道应支持物理",
+      "action": "",
+      "operation": "对于基于OSC 信道传送频率同步，OTN 每个方向OSC 通道应支持物理层频率同步，并支持SSM 功能。在OTN 设备配置多个方向OSC时，多个方向OSC 之间可实现频率同步传送，并且OTN 设备应 提供至少1路频率同步外输入接口和至少1路频率同步外输出接口，外时钟接口类型可配置为2048kHz 或2048kb/s。",
+      "condition": "",
+      "constraint": "   对于基于OSC 信道传送频率同步，OTN 每个方向OSC 通道应支持物理层频率同步，并支持SSM\n功能。在OTN 设备配置多个方向OSC时，多个方向OSC 之间可实现频率同步传送，并且OTN 设备应\n提供至少1路频率同步外输入接口和至少1路频率同步外输出接口，外时钟接口类型可配置为2048kHz\n或2048kb/s。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "对于基于OSC 信道传送频率同步，OTN 每个方向OSC 通道应支持物理"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_014",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14594,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

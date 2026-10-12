@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第4部分:感官性状和物理指标",
+  "standard_id": "GB/T 5750.4-2023",
+  "version": "2023",
+  "chapter_path": "9.1.2",
+  "entities": [
+    {
+      "name": "电导标准液",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.2 试剂 除非另有说明，实验用水为GB/T 6682规定的二级水，现用现备。氯化钾标准溶液[c(KCl)=0.010 00 mol/L]:称取0.745 6 g在110 ℃烘干后的优级纯氯化钾，溶于新煮沸冷却的蒸馏水中(电导率小于1 μS/cm)，于25 ℃时在容量瓶中稀释至1000 mL。此溶液25 ℃时的电导率为1413 μS/cm，溶液应储存在塑料瓶中，或使用有证标准物质。",
+      "type": "语义分解",
+      "subject": "电导标准液",
+      "action": "",
+      "operation": "按二级水现配氯化钾标准液二十五度电导1413微西门子每厘米",
+      "condition": "",
+      "constraint": "9.1.2 试剂 除非另有说明，实验用水为GB/T 6682规定的二级水，现用现备。氯化钾标准溶液[c(KCl)=0.010 00 mol/L]:称取0.745 6 g在110 ℃烘干后的优级纯氯化钾，溶于新煮沸冷却的蒸馏水中(电导率小于1 μS/cm)，于25 ℃时在容量瓶中稀释至1000 mL。此溶液25 ℃时的电导率为1413 μS/cm，溶液应储存在塑料瓶中，或使用有证标准物质。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "电导标准液"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1380,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

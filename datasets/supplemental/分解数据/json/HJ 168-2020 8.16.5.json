@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.16.5",
+  "entities": [
+    {
+      "name": "准确度章节表达",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.16.5 4准确度\" 一章的一般表达方式为: 11 准确度 11.1 精密度 1个实验室分别对含丫X浓度为a血 的统一有证标淮物质1标准样品 或分别对X义平均测定浓度为a hc某类型统一实际样品)进行了 n 次重复测定: 实验室内相对标准偏差分别为: (RSDi~ RSDz)a' RSDi~ RSD2)b; RSDi~ RSD2); 实验室间相对标淮偏差分别为: RSD RSD'h; RSD 重复性限分别为: 7a' 7; Tc; 再现性限分别为: Ra' Rb, Re。 或 (采用非统 -样品时): |个实验室分别对含丫X测定浓度范围为 a~a, b~b', c~c'的某类型实际样品进行了 n 次重复测定: 实验室内相对标准偏差范围分别为: RSD~ RSDz)a' RSDI~ RSD2)b; RSDI~ RSDz)c。 11.2 正确度 1个实验室分别对含义X浓度为a b 的统 -有证标淮物质1标淮样品进行了 n 次重复测定: 相对误差分别为: (Pi~Pza' (Pi~Pz), (Pi~P)c; 相对误差最终值分别为: (恧士2SR )a' (RE 士2 SRE )6' (RE 士2SRE )c。 1个实验室分别对XX平均测定浓度为ar C; 加标浓度为 a\"。 b\"。c\"的某类型统 实际样品进行了 n 次重复加标分析测定: 加标回收率分别为: (Pi~Pza' (卫~P)b' (卫~P); 加标回收率最终值分别为: (P士2SFa》 (卫士2SFbs (P士2Sp )c。 或 (采用非统一样品肘 ): |个实验室分别对XX测定浓度范围为 a~a'_ 6-6' C-C' 加标浓度为 0\" b\"。c\"的某类型实际样品进行了 n 次重复加标分析测定: 加标回收率范围分别为: (Pi~Pz)a' (Pi~Pz)b' (卫~Pz)c。",
+      "type": "语义分解",
+      "subject": "准确度章节表达",
+      "action": "",
+      "operation": "按所列格式分别表达精密正确度及统一非统一样统计",
+      "condition": "",
+      "constraint": "8.16.5 4准确度\" 一章的一般表达方式为: 11 准确度 11.1 精密度 1个实验室分别对含丫X浓度为a血 的统一有证标淮物质1标准样品 或分别对X义平均测定浓度为a hc某类型统一实际样品)进行了 n 次重复测定: 实验室内相对标准偏差分别为: (RSDi~ RSDz)a' RSDi~ RSD2)b; RSDi~ RSD2); 实验室间相对标淮偏差分别为: RSD RSD'h; RSD 重复性限分别为: 7a' 7; Tc; 再现性限分别为: Ra' Rb, Re。 或 (采用非统 -样品时): |个实验室分别对含丫X测定浓度范围为 a~a, b~b', c~c'的某类型实际样品进行了 n 次重复测定: 实验室内相对标准偏差范围分别为: RSD~ RSDz)a' RSDI~ RSD2)b; RSDI~ RSDz)c。 11.2 正确度 1个实验室分别对含义X浓度为a b 的统 -有证标淮物质1标淮样品进行了 n 次重复测定: 相对误差分别为: (Pi~Pza' (Pi~Pz), (Pi~P)c; 相对误差最终值分别为: (恧士2SR )a' (RE 士2 SRE )6' (RE 士2SRE )c。 1个实验室分别对XX平均测定浓度为ar C; 加标浓度为 a\"。 b\"。c\"的某类型统 实际样品进行了 n 次重复加标分析测定: 加标回收率分别为: (Pi~Pza' (卫~P)b' (卫~P); 加标回收率最终值分别为: (P士2SFa》 (卫士2SFbs (P士2Sp )c。 或 (采用非统一样品肘 ): |个实验室分别对XX测定浓度范围为 a~a'_ 6-6' C-C' 加标浓度为 0\" b\"。c\"的某类型实际样品进行了 n 次重复加标分析测定: 加标回收率范围分别为: (Pi~Pz)a' (Pi~Pz)b' (卫~Pz)c。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "准确度章节表达"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2423,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表达模板变量严重乱码无数值阈值不编译"
+      ]
+    }
+  }
+}

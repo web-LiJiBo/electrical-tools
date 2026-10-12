@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00043194",
+  "entities": [
+    {
+      "name": "a 海水采用天然海水或符合 GB/T 17848规定的人造海水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       a    海水采用天然海水或符合 GB/T 17848规定的人造海水 ;海泥采用 电 阻 率 为 30 Ω · cm~ 50 Ω · cm 的 天 然 海\n       泥或模拟电 解 液 ; 淡 海 水 电 阻 率 为 70 Ω · cm ~ 80 Ω · cm; 海 底 砂 石 规 格 8 mm ~ 40 mm , 介 质 电 阻 率\n       40 Ω · cm。\n       b    参比电极为饱和甘汞电极 。",
+      "type": "语义分解",
+      "subject": "a 海水采用天然海水或符合 GB/T 17848规定的人造海水",
+      "action": "",
+      "operation": "a 海水采用天然海水或符合 GB/T 17848规定的人造海水 ;海泥采用 电 阻 率 为 30 Ω · cm~ 50 Ω · cm 的 天 然 海 泥或模拟电 解 液 ; 淡 海 水 电 阻 率 为 70 Ω · cm ~ 80 Ω · cm; 海 底 砂 石 规 格 8 mm ~ 40 mm , 介 质 电 阻 率 40 Ω · cm。 b 参比电极为饱和甘汞电极 。",
+      "condition": "",
+      "constraint": "       a    海水采用天然海水或符合 GB/T 17848规定的人造海水 ;海泥采用 电 阻 率 为 30 Ω · cm~ 50 Ω · cm 的 天 然 海\n       泥或模拟电 解 液 ; 淡 海 水 电 阻 率 为 70 Ω · cm ~ 80 Ω · cm; 海 底 砂 石 规 格 8 mm ~ 40 mm , 介 质 电 阻 率\n       40 Ω · cm。\n       b    参比电极为饱和甘汞电极 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a 海水采用天然海水或符合 GB/T 17848规定的人造海水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43194,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

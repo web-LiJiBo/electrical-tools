@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "4.2.1",
+  "entities": [
+    {
+      "name": "模拟法",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1 模拟法是根据设计和己经形成的生产工艺等条件,利用仿真软件或通过专门的试验和理论计算, 并依据实际生产条件加以修正。以确定能耗的方法。在进行计算时,应有生产工艺的技术参数。设备技 术性能参数。设备的工作方式。相关技术经济指标等。",
+      "type": "语义分解",
+      "subject": "模拟法",
+      "action": "",
+      "operation": "基于工艺参数模拟并修正能耗",
+      "condition": "在进行计算时",
+      "constraint": "应有生产工艺的技术参数",
+      "constraint_role": "informational",
+      "related_entities": [
+        "模拟法"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "设备性能参数文字断裂，保留原文"
+      ]
+    }
+  }
+}

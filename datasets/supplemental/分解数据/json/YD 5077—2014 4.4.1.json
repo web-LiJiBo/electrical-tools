@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "初验系统可靠性",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1      在初验测试期间不得发生导致全局50%以上的用户或中\n继端口或分组端口不能进行呼叫处理或对已接通的用户中断达1\nmin以上的系统中断故障；控制设备不得产生再装入现象；不能产\n生 SDB 任意单元的再装入现象(误操作除外)。",
+      "type": "语义分解",
+      "subject": "初验系统可靠性",
+      "action": "",
+      "operation": "不得超半数端口呼叫失效或中断达1分钟控制及SDB不得再装入误操作除外",
+      "condition": "",
+      "constraint": "4.4.1      在初验测试期间不得发生导致全局50%以上的用户或中\n继端口或分组端口不能进行呼叫处理或对已接通的用户中断达1\nmin以上的系统中断故障；控制设备不得产生再装入现象；不能产\n生 SDB 任意单元的再装入现象(误操作除外)。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "初验系统可靠性"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26954,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

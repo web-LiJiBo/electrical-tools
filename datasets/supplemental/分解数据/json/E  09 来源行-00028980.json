@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00028980",
+  "entities": [
+    {
+      "name": "a) 以人为本的原则",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "  a)  以人为本的原则：确保救援人员安全、搜救遇险人员、抢救受伤人员、隔离疏散周边民众。\n  b)  先控制再消灭的原则：控制危险源、保护周边设施、防止次生灾害。",
+      "type": "语义分解",
+      "subject": "a) 以人为本的原则",
+      "action": "",
+      "operation": "a) 以人为本的原则：确保救援人员安全、搜救遇险人员、抢救受伤人员、隔离疏散周边民众。 b) 先控制再消灭的原则：控制危险源、保护周边设施、防止次生灾害。",
+      "condition": "",
+      "constraint": "  a)  以人为本的原则：确保救援人员安全、搜救遇险人员、抢救受伤人员、隔离疏散周边民众。\n  b)  先控制再消灭的原则：控制危险源、保护周边设施、防止次生灾害。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 以人为本的原则"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 28980,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

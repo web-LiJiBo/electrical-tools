@@ -1,0 +1,41 @@
+{
+  "standard_name": "地下水环境监测技术规范",
+  "standard_id": "HJ 164-2020",
+  "version": "2020",
+  "chapter_path": "9.1.3.1",
+  "entities": [
+    {
+      "name": "监测异常值",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.1.3.1 一组监测数据中,个别数据明显偏离其所属样本的其余测定值。即为异常值。对异常值的判断和处理。参照 GB/I 4883 相关要求。",
+      "type": "语义分解",
+      "subject": "监测异常值",
+      "action": "",
+      "operation": "定义偏离样本值并按标准处理",
+      "condition": "",
+      "constraint": "9.1.3.1 一组监测数据中,个别数据明显偏离其所属样本的其余测定值。即为异常值。对异常值的判断和处理。参照 GB/I 4883 相关要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测异常值"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2157,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

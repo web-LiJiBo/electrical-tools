@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012937",
+  "entities": [
+    {
+      "name": "由SDH环传送通道的误码性能限值的计算，首先应确认该通道的终端点然后用选",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "     由SDH环传送通道的误码性能限值的计算，首先应确认该通道的终端点然后用选路系数乘以空间\n\n路由距离的通常方法分配该性能。这可导致与沿该环方向(顺时针方向或逆时针方向)无关的一组误码",
+      "type": "语义分解",
+      "subject": "由SDH环传送通道的误码性能限值的计算，首先应确认该通道的终端点然后用选",
+      "action": "",
+      "operation": "由SDH环传送通道的误码性能限值的计算，首先应确认该通道的终端点然后用选路系数乘以空间 路由距离的通常方法分配该性能。这可导致与沿该环方向(顺时针方向或逆时针方向)无关的一组误码",
+      "condition": "",
+      "constraint": "     由SDH环传送通道的误码性能限值的计算，首先应确认该通道的终端点然后用选路系数乘以空间\n\n路由距离的通常方法分配该性能。这可导致与沿该环方向(顺时针方向或逆时针方向)无关的一组误码",
+      "constraint_role": "informational",
+      "related_entities": [
+        "由SDH环传送通道的误码性能限值的计算，首先应确认该通道的终端点然后用选"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12937,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

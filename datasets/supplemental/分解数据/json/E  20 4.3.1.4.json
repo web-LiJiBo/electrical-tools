@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.3.1.4",
+  "entities": [
+    {
+      "name": "穿越地表水体的管道应在冲刷深度敷设，穿越地下水体的管道应在地下水最高水位",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.1.4   穿越地表水体的管道应在冲刷深度敷设，穿越地下水体的管道应在地下水最高水位以上敷设。\n\n4.3.2 土壤与植被保护",
+      "type": "语义分解",
+      "subject": "穿越地表水体的管道应在冲刷深度敷设，穿越地下水体的管道应在地下水最高水位",
+      "action": "",
+      "operation": "穿越地表水体的管道应在冲刷深度敷设，穿越地下水体的管道应在地下水最高水位以上敷设。 4.3.2 土壤与植被保护",
+      "condition": "",
+      "constraint": "4.3.1.4   穿越地表水体的管道应在冲刷深度敷设，穿越地下水体的管道应在地下水最高水位以上敷设。\n\n4.3.2 土壤与植被保护",
+      "constraint_role": "informational",
+      "related_entities": [
+        "穿越地表水体的管道应在冲刷深度敷设，穿越地下水体的管道应在地下水最高水位"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41974,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

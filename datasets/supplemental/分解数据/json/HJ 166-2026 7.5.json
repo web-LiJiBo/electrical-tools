@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "7.5",
+  "entities": [
+    {
+      "name": "土壤采样质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.5 采样质量保证和质量控制 采样过程中应采取有效措施。确保样品采集质量: 通过现场或查阅资料等方式。检查采样过程的技术符合性,重点关注采样位置。采样工具。样 品容器和操作规范性等; 根据质量管理目标确定采样过程检查比例; 检测理化特征和无机物的现场平行样应采用四分法分样, 检测挥发性有机物的现场平行样应尽量在邻近位置采集; 采集检测挥发性有机物的样品时,应同时采集运输空白和全程序空白样品_",
+      "type": "语义分解",
+      "subject": "土壤采样质控",
+      "action": "",
+      "operation": "核技术规范理化无机平行四分挥发邻近平行且采运输全过程空白",
+      "condition": "",
+      "constraint": "7.5 采样质量保证和质量控制 采样过程中应采取有效措施。确保样品采集质量: 通过现场或查阅资料等方式。检查采样过程的技术符合性,重点关注采样位置。采样工具。样 品容器和操作规范性等; 根据质量管理目标确定采样过程检查比例; 检测理化特征和无机物的现场平行样应采用四分法分样, 检测挥发性有机物的现场平行样应尽量在邻近位置采集; 采集检测挥发性有机物的样品时,应同时采集运输空白和全程序空白样品_",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤采样质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2254,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

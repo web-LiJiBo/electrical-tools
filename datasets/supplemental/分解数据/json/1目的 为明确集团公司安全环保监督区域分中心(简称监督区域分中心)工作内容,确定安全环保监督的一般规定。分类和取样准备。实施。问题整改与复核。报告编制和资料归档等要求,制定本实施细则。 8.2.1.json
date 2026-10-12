@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团安金环保监督检查工作 实施细则(试行)",
+  "standard_id": "1目的 为明确集团公司安全环保监督区域分中心(简称监督区域分中心)工作内容,确定安全环保监督的一般规定。分类和取样准备。实施。问题整改与复核。报告编制和资料归档等要求,制定本实施细则。",
+  "version": "",
+  "chapter_path": "8.2.1",
+  "entities": [
+    {
+      "name": "动态监督程序",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.1 动态监督依据为集团公司制度，关键程序包括但不限于以下内容:a)应实时掌握联系单位的动态;b)被监督单位发生重大变化或发生一般及以上安全生产事故应进行上报;c)资料每月至少更新一次，关键信息台账应实时更新。",
+      "type": "语义分解",
+      "subject": "动态监督程序",
+      "action": "",
+      "operation": "掌握变化事故上报月更新关键实时更新",
+      "condition": "",
+      "constraint": "8.2.1 动态监督依据为集团公司制度，关键程序包括但不限于以下内容:a)应实时掌握联系单位的动态;b)被监督单位发生重大变化或发生一般及以上安全生产事故应进行上报;c)资料每月至少更新一次，关键信息台账应实时更新。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动态监督程序"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 733,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；表头异常"
+      ]
+    }
+  }
+}

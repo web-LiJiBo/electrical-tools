@@ -10,7 +10,7 @@ class ValidationStatus(str, Enum):
     PASS = "pass"
     FAIL = "fail"
     UNCERTAIN = "uncertain"
-    NEEDS_HUMAN = "needs_human"
+    GENERATED = "generated"
 
 
 @dataclass(slots=True)

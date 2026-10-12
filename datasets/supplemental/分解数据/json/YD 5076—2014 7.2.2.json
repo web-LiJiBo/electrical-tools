@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "7.2.2",
+  "entities": [
+    {
+      "name": "演进软交换用户号码",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.2         对于从现有网络演进而来的软交换用户，应保持用户原有\n号码不变，对于新发展的用户，可采用与现有网络用户号码相对独\n立 的 号 段 。",
+      "type": "语义分解",
+      "subject": "演进软交换用户号码",
+      "action": "",
+      "operation": "保持原号新用户可相对独立号段",
+      "condition": "",
+      "constraint": "7.2.2         对于从现有网络演进而来的软交换用户，应保持用户原有\n号码不变，对于新发展的用户，可采用与现有网络用户号码相对独\n立 的 号 段 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "演进软交换用户号码"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25965,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

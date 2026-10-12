@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "10.1.5",
+  "entities": [
+    {
+      "name": "OTN光器件单机测试",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.1.5 OTN 设备中承载OMS 、OTS层的合波分波器、梳状滤\n波器、光放大器、光谱分析模块、光监测通道( OSC) 等器件的单机\n测试指标应满足现行国家标准《波分复用(WDM)光纤传输系统\n工程验收规范》GB/T  51126的有关规定。",
+      "type": "语义分解",
+      "subject": "OTN光器件单机测试",
+      "action": "",
+      "operation": "指标符合GB/T51126",
+      "condition": "",
+      "constraint": "10.1.5 OTN 设备中承载OMS 、OTS层的合波分波器、梳状滤\n波器、光放大器、光谱分析模块、光监测通道( OSC) 等器件的单机\n测试指标应满足现行国家标准《波分复用(WDM)光纤传输系统\n工程验收规范》GB/T  51126的有关规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "OTN光器件单机测试"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 10118,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

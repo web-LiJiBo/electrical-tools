@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00040219",
+  "entities": [
+    {
+      "name": "结合功能分区，应将生活区、行政办公区与生产区分开布 置，高噪声厂房与低噪",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       1    结合功能分区，应将生活区、行政办公区与生产区分开布\n置，高噪声厂房与低噪声厂房分开布置；主要噪声源宜相对集中，\n并宜远离厂内外要求安静的区域；",
+      "type": "语义分解",
+      "subject": "结合功能分区，应将生活区、行政办公区与生产区分开布 置，高噪声厂房与低噪",
+      "action": "",
+      "operation": "结合功能分区，应将生活区、行政办公区与生产区分开布 置，高噪声厂房与低噪声厂房分开布置；主要噪声源宜相对集中， 并宜远离厂内外要求安静的区域",
+      "condition": "",
+      "constraint": "       1    结合功能分区，应将生活区、行政办公区与生产区分开布\n置，高噪声厂房与低噪声厂房分开布置；主要噪声源宜相对集中，\n并宜远离厂内外要求安静的区域；",
+      "constraint_role": "informational",
+      "related_entities": [
+        "结合功能分区，应将生活区、行政办公区与生产区分开布 置，高噪声厂房与低噪"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_034",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 40219,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

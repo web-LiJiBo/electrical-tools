@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020097",
+  "entities": [
+    {
+      "name": ") 低 阶VC 与高阶VC 之间以字节为单位的帧偏移由指配给特定低阶VC",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "2 ) 低 阶VC 与高阶VC 之间以字节为单位的帧偏移由指配给特定低阶VC的 TU 指针指示。",
+      "type": "语义分解",
+      "subject": ") 低 阶VC 与高阶VC 之间以字节为单位的帧偏移由指配给特定低阶VC",
+      "action": "",
+      "operation": ") 低 阶VC 与高阶VC 之间以字节为单位的帧偏移由指配给特定低阶VC的 TU 指针指示。",
+      "condition": "",
+      "constraint": "2 ) 低 阶VC 与高阶VC 之间以字节为单位的帧偏移由指配给特定低阶VC的 TU 指针指示。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") 低 阶VC 与高阶VC 之间以字节为单位的帧偏移由指配给特定低阶VC"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20097,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

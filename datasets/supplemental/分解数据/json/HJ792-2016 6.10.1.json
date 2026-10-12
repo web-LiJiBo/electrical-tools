@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目竣工环境保护验收技术规范 制药",
+  "standard_id": "HJ792-2016",
+  "version": "2016",
+  "chapter_path": "6.10.1",
+  "entities": [
+    {
+      "name": "公众意见调查对象",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.10.1 公众意见调查范围及对象 参照环评文件,明确建设项目影响范围内的单位和个人,提出公众意见调查范围及对象。重点调查项目周围受项目影响的人群。",
+      "type": "语义分解",
+      "subject": "公众意见调查对象",
+      "action": "",
+      "operation": "按环评影响范围重点调查受影响人群",
+      "condition": "",
+      "constraint": "6.10.1 公众意见调查范围及对象 参照环评文件,明确建设项目影响范围内的单位和个人,提出公众意见调查范围及对象。重点调查项目周围受项目影响的人群。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "公众意见调查对象"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2781,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00030259",
+  "entities": [
+    {
+      "name": "c) 支持PC 端实时显示(延时≤300ms)并存储图像",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " c)  支持PC 端实时显示(延时≤300ms)并存储图像；\nd)2.8mm～1.2mm  四倍光学变焦；\n e)  水平视场角：115°~33.8°;",
+      "type": "语义分解",
+      "subject": "c) 支持PC 端实时显示(延时≤300ms)并存储图像",
+      "action": "",
+      "operation": "c) 支持PC 端实时显示(延时≤300ms)并存储图像； d)2.8mm～1.2mm 四倍光学变焦； e) 水平视场角：115°~33.8°",
+      "condition": "",
+      "constraint": " c)  支持PC 端实时显示(延时≤300ms)并存储图像；\nd)2.8mm～1.2mm  四倍光学变焦；\n e)  水平视场角：115°~33.8°;",
+      "constraint_role": "informational",
+      "related_entities": [
+        "c) 支持PC 端实时显示(延时≤300ms)并存储图像"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30259,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

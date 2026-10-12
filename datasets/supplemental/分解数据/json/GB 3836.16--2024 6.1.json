@@ -1,0 +1,41 @@
+{
+  "standard_name": "爆炸性环境 第 16 部分:电气装置检查与维护规范",
+  "standard_id": "GB 3836.16--2024",
+  "version": "2024",
+  "chapter_path": "6.1",
+  "entities": [
+    {
+      "name": "防爆设备维护",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1 通则 应按照本文件 制造商文件及认证文件开展维护 维护应保持设备防爆型式的完整性，必要时应采 取适当的补救措施 = 更换零部件应按照制造商说明书或其他适用文件的要求进行= 如果制造商说明书或其他适用文件 中规定有些零部件的更换会对设备安全性能产生不利影响 .则未经授权不能进行更换= 说明书应经过 设备检验机构批准 =",
+      "type": "语义分解",
+      "subject": "防爆设备维护",
+      "action": "",
+      "operation": "符合标准制造商及认证文件维护防爆完整性安全相关替换符合批准文件",
+      "condition": "",
+      "constraint": "6.1 通则 应按照本文件 制造商文件及认证文件开展维护 维护应保持设备防爆型式的完整性，必要时应采 取适当的补救措施 = 更换零部件应按照制造商说明书或其他适用文件的要求进行= 如果制造商说明书或其他适用文件 中规定有些零部件的更换会对设备安全性能产生不利影响 .则未经授权不能进行更换= 说明书应经过 设备检验机构批准 =",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防爆设备维护"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4024,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

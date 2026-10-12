@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00021842",
+  "entities": [
+    {
+      "name": "一种SDHNE中特定开销接入功能是用以向维护人员提供SDHNE 之间话音",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   一种SDHNE中特定开销接入功能是用以向维护人员提供SDHNE 之间话音联络的公务功能。\n    公务功能OHA 应从 RSn/OW_A和MSn/OW_A 接入 E1 和 E2 字节，并把它们作为数据通道送至\n表136所列的一个或多个外部接口。",
+      "type": "语义分解",
+      "subject": "一种SDHNE中特定开销接入功能是用以向维护人员提供SDHNE 之间话音",
+      "action": "",
+      "operation": "一种SDHNE中特定开销接入功能是用以向维护人员提供SDHNE 之间话音联络的公务功能。 公务功能OHA 应从 RSn/OW_A和MSn/OW_A 接入 E1 和 E2 字节，并把它们作为数据通道送至 表136所列的一个或多个外部接口。",
+      "condition": "",
+      "constraint": "   一种SDHNE中特定开销接入功能是用以向维护人员提供SDHNE 之间话音联络的公务功能。\n    公务功能OHA 应从 RSn/OW_A和MSn/OW_A 接入 E1 和 E2 字节，并把它们作为数据通道送至\n表136所列的一个或多个外部接口。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "一种SDHNE中特定开销接入功能是用以向维护人员提供SDHNE 之间话音"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_020",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 21842,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

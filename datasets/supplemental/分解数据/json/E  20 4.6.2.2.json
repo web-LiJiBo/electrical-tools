@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.020",
+  "standard_id": "E  20",
+  "version": "",
+  "chapter_path": "4.6.2.2",
+  "entities": [
+    {
+      "name": "在岩溶较发育地段隧道施工应采用超前钻孔探水",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6.2.2 在岩溶较发育地段隧道施工应采用超前钻孔探水。若探水孔水流量较大，应先对探水孔进行\n封堵后根据地质情况进行防水。",
+      "type": "语义分解",
+      "subject": "在岩溶较发育地段隧道施工应采用超前钻孔探水",
+      "action": "",
+      "operation": "在岩溶较发育地段隧道施工应采用超前钻孔探水。若探水孔水流量较大，应先对探水孔进行 封堵后根据地质情况进行防水。",
+      "condition": "",
+      "constraint": "4.6.2.2 在岩溶较发育地段隧道施工应采用超前钻孔探水。若探水孔水流量较大，应先对探水孔进行\n封堵后根据地质情况进行防水。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在岩溶较发育地段隧道施工应采用超前钻孔探水"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42004,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

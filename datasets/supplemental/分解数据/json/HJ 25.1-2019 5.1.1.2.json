@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "5.1.1.2",
+  "entities": [
+    {
+      "name": "地块环境资料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.1.2 地块环境资料包括:  地块土壤及地下水污染记录。地块危险废物堆放记录以及地块与自然保护区和水源地保护区等的位置关系等。",
+      "type": "语义分解",
+      "subject": "地块环境资料",
+      "action": "",
+      "operation": "收集土水污染危废及保护区位置关系",
+      "condition": "",
+      "constraint": "5.1.1.2 地块环境资料包括:  地块土壤及地下水污染记录。地块危险废物堆放记录以及地块与自然保护区和水源地保护区等的位置关系等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "地块环境资料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2609,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

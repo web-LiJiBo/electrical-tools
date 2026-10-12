@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00012419",
+  "entities": [
+    {
+      "name": "若引入工艺站场和阀室的光缆长度较小 , 更换阻燃光缆 比较困难时 , 可",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      4    若引入工艺站场和阀室的光缆长度较小 ,   更换阻燃光缆\n比较困难时 ,   可采取在光缆外包裹阻燃带的方式 。",
+      "type": "语义分解",
+      "subject": "若引入工艺站场和阀室的光缆长度较小 , 更换阻燃光缆 比较困难时 , 可",
+      "action": "",
+      "operation": "若引入工艺站场和阀室的光缆长度较小 , 更换阻燃光缆 比较困难时 , 可采取在光缆外包裹阻燃带的方式 。",
+      "condition": "",
+      "constraint": "      4    若引入工艺站场和阀室的光缆长度较小 ,   更换阻燃光缆\n比较困难时 ,   可采取在光缆外包裹阻燃带的方式 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "若引入工艺站场和阀室的光缆长度较小 , 更换阻燃光缆 比较困难时 , 可"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12419,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

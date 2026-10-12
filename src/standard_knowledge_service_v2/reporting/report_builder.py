@@ -14,5 +14,11 @@ class ReportBuilder:
         summary = f"场景：{context.get('scenario', 'general')}；匹配条款：{len(clauses)} 条；安全结论：{validation.get('status', 'uncertain')}。"
         lines = ["# 标准知识服务分析报告", "", f"## 结论\n{summary}", "", "## 场景与参数", f"```json\n{context}\n```", "", "## 匹配条款"]
         lines.extend([f"- {item.get('clause_id', '')}：{item.get('quote', '')}" for item in clauses] or ["- 未找到可用条款证据"])
+        advice = facts.get('advice') or {}
+        if advice:
+            lines.extend(['', '## 条款梳理与操作建议', str(advice.get('summary') or advice.get('notice', ''))])
+            lines.extend(f"- {item['text']}（引用：{', '.join(item['rule_ids'])}）" for item in advice.get('suggestions', []))
+            if advice.get('instruction'):
+                lines.extend(['', '## 自然语言指令草案', advice['instruction']['text'], '仅完成指令生成，不执行指令。'])
         lines.extend(["", "## 候选指令", f"```json\n{candidate}\n```", "", "## 验证与风险", f"```json\n{validation}\n```"])
         return GeneratedReport(summary, "\n".join(lines), facts, list(facts.get("warnings", [])))

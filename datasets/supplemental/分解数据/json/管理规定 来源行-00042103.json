@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团质量安全环保事故事件",
+  "standard_id": "管理规定",
+  "version": "",
+  "chapter_path": "来源行-00042103",
+  "entities": [
+    {
+      "name": "（ 六 ）较大生产安全事件，是指造成1 人以上3 人以下轻伤， 或者造成",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "    （ 六 ）较大生产安全事件，是指造成1 人以上3 人以下轻伤，\n\n或者造成3 人以上轻微伤，或者造成 10 万以上300 万元以下直\n\n接经济损失，或者造成一定社会影响或无明显社会影响的泄漏、\n\n爆炸、火灾等情况的事件。",
+      "type": "语义分解",
+      "subject": "（ 六 ）较大生产安全事件，是指造成1 人以上3 人以下轻伤， 或者造成",
+      "action": "",
+      "operation": "（ 六 ）较大生产安全事件，是指造成1 人以上3 人以下轻伤， 或者造成3 人以上轻微伤，或者造成 10 万以上300 万元以下直 接经济损失，或者造成一定社会影响或无明显社会影响的泄漏、 爆炸、火灾等情况的事件。",
+      "condition": "",
+      "constraint": "    （ 六 ）较大生产安全事件，是指造成1 人以上3 人以下轻伤，\n\n或者造成3 人以上轻微伤，或者造成 10 万以上300 万元以下直\n\n接经济损失，或者造成一定社会影响或无明显社会影响的泄漏、\n\n爆炸、火灾等情况的事件。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "（ 六 ）较大生产安全事件，是指造成1 人以上3 人以下轻伤， 或者造成"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 42103,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

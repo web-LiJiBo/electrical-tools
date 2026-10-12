@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "11.2.4",
+  "entities": [
+    {
+      "name": "作业指导文件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.2.4 系统运行单位应根据国家现行有关标准的规定，编制系统运行作业指导文件。作业指导文件应至少包括下列内容: 1 值机员、现场处置员岗位职责; 2 运行作业内容、要求与处置流程; 3 突发事件应急预案; 4 值机日志要求; 5 值机交接班要求。",
+      "type": "语义分解",
+      "subject": "作业指导文件",
+      "action": "",
+      "operation": "编职责内容要求流程应急值机日志交班",
+      "condition": "",
+      "constraint": "11.2.4 系统运行单位应根据国家现行有关标准的规定，编制系统运行作业指导文件。作业指导文件应至少包括下列内容: 1 值机员、现场处置员岗位职责; 2 运行作业内容、要求与处置流程; 3 突发事件应急预案; 4 值机日志要求; 5 值机交接班要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业指导文件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7206,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

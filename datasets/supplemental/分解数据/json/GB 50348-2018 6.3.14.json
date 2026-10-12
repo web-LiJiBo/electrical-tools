@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "6.3.14",
+  "entities": [
+    {
+      "name": "实体装置选型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.3.14 实体装置设计与选型应符合下列规定: 1 应根据保护目标的安全需求，合理配置具有防窥视、防砸、防撬、防弹、防爆炸等功能的实体装置;实体装置的安全等级应与其风险防护能力相适应; 2 应合理选用防盗保险柜(箱)、物品展示柜、防护罩、保护套管等实体装置对重要物品、重要设施、重要线缆等保护目标进行实体防护。",
+      "type": "语义分解",
+      "subject": "实体装置选型",
+      "action": "",
+      "operation": "按需求防窥砸撬弹爆等级匹配保险展示防护套管保护目标",
+      "condition": "",
+      "constraint": "6.3.14 实体装置设计与选型应符合下列规定: 1 应根据保护目标的安全需求，合理配置具有防窥视、防砸、防撬、防弹、防爆炸等功能的实体装置;实体装置的安全等级应与其风险防护能力相适应; 2 应合理选用防盗保险柜(箱)、物品展示柜、防护罩、保护套管等实体装置对重要物品、重要设施、重要线缆等保护目标进行实体防护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "实体装置选型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6964,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

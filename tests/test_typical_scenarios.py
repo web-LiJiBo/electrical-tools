@@ -91,7 +91,7 @@ def test_controllable_actions_have_candidate_protocol_mappings() -> None:
     ]
     iec_config = {"device_id": "IED-01", "logical_node": "CSWI1", "data_object": "Pos", "protocol": "IEC61850"}
     for scenario, action in cases:
-        candidate = service.generate(SemanticTuple("设备", action, "设备"), ScenarioContext(scenario), iec_config)
+        candidate = service.generate(SemanticTuple("设备", action, "设备", condition="使能 == true"), ScenarioContext(scenario), iec_config, facts={"使能": True})
         assert candidate.payload["requested_action"] == action
         assert candidate.protocol == "IEC61850"
         assert candidate.dispatch_allowed is False
@@ -107,3 +107,4 @@ def test_manual_maintenance_action_does_not_generate_control_frame() -> None:
     assert not candidate.payload
     assert candidate.missing_fields == ["instruction_template"]
     assert candidate.dispatch_allowed is False
+

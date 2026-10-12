@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第6部分: 环境监测技术规范",
+  "standard_id": "Q/GGW 04005.6-2022",
+  "version": "2022",
+  "chapter_path": "7.3.1.4",
+  "entities": [
+    {
+      "name": "管道穿跨越流域监测断面",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.3.1.4 应综合考虑水体功能等级, 所在区域环境污染管控政策选择管道穿跨越流域〈水系)监测断 面。优先考虑在规模较大。保护等级较高。跨国等流域(水系〉设置监测断面。",
+      "type": "语义分解",
+      "subject": "管道穿跨越流域监测断面",
+      "action": "",
+      "operation": "结合水体等级和政策优先保护重点流域",
+      "condition": "",
+      "constraint": "7.3.1.4 应综合考虑水体功能等级, 所在区域环境污染管控政策选择管道穿跨越流域〈水系)监测断 面。优先考虑在规模较大。保护等级较高。跨国等流域(水系〉设置监测断面。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道穿跨越流域监测断面"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 455,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

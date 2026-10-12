@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014994",
+  "entities": [
+    {
+      "name": "由于FC 业务采用基于信用 ( Credit) 的流量控制协议，当FC ",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   由于FC 业务采用基于信用 ( Credit)  的流量控制协议，当FC 业务经过长距离传输之后，时延很\n大，受FC  端口缓存能力的限制，有效传送速率会相应的下降。因此，当OTN  设备接入FC 业务进行\n长距离传输时，建议支持FC  拉远的功能，此功能可根据需要开启或关闭。",
+      "type": "语义分解",
+      "subject": "由于FC 业务采用基于信用 ( Credit) 的流量控制协议，当FC ",
+      "action": "",
+      "operation": "由于FC 业务采用基于信用 ( Credit) 的流量控制协议，当FC 业务经过长距离传输之后，时延很 大，受FC 端口缓存能力的限制，有效传送速率会相应的下降。因此，当OTN 设备接入FC 业务进行 长距离传输时，建议支持FC 拉远的功能，此功能可根据需要开启或关闭。",
+      "condition": "",
+      "constraint": "   由于FC 业务采用基于信用 ( Credit)  的流量控制协议，当FC 业务经过长距离传输之后，时延很\n大，受FC  端口缓存能力的限制，有效传送速率会相应的下降。因此，当OTN  设备接入FC 业务进行\n长距离传输时，建议支持FC  拉远的功能，此功能可根据需要开启或关闭。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "由于FC 业务采用基于信用 ( Credit) 的流量控制协议，当FC "
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14994,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

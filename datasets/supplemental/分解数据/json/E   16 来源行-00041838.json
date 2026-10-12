@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 200",
+  "standard_id": "E   16",
+  "version": "",
+  "chapter_path": "来源行-00041838",
+  "entities": [
+    {
+      "name": "选用冲击锤或摆锤 , 用 2J力对传感光缆试验区域附着的安装载体进行一组",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      选用冲击锤或摆锤 ,   用 2J力对传感光缆试验区域附着的安装载体进行一组5 次冲击 ,   每次冲击\n间隔 1s ,   连续实施 3 组 ,  每组冲击均应产生报警 ,  每组冲击时间间隔不宜小于30s 。冲击点应位于距\n离传感光缆 10cm    20cm 处 ,  宜在试验区域的安装载体上尽可能分布广泛 ,   两个冲击点之间的距离\n不超过30cm .",
+      "type": "语义分解",
+      "subject": "选用冲击锤或摆锤 , 用 2J力对传感光缆试验区域附着的安装载体进行一组",
+      "action": "",
+      "operation": "选用冲击锤或摆锤 , 用 2J力对传感光缆试验区域附着的安装载体进行一组5 次冲击 , 每次冲击 间隔 1s , 连续实施 3 组 , 每组冲击均应产生报警 , 每组冲击时间间隔不宜小于30s 。冲击点应位于距 离传感光缆 10cm 20cm 处 , 宜在试验区域的安装载体上尽可能分布广泛 , 两个冲击点之间的距离 不超过30cm .",
+      "condition": "",
+      "constraint": "      选用冲击锤或摆锤 ,   用 2J力对传感光缆试验区域附着的安装载体进行一组5 次冲击 ,   每次冲击\n间隔 1s ,   连续实施 3 组 ,  每组冲击均应产生报警 ,  每组冲击时间间隔不宜小于30s 。冲击点应位于距\n离传感光缆 10cm    20cm 处 ,  宜在试验区域的安装载体上尽可能分布广泛 ,   两个冲击点之间的距离\n不超过30cm .",
+      "constraint_role": "informational",
+      "related_entities": [
+        "选用冲击锤或摆锤 , 用 2J力对传感光缆试验区域附着的安装载体进行一组"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_036",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41838,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

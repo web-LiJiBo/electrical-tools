@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00027781",
+  "entities": [
+    {
+      "name": "左右",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "左右；压力越站或全越站流程改为正输流程前，上站运行输油泵配置电机的电流应控制在最\n\n大允许电流的85%左右；由其他流程改为站内循环流程时，应先降低输油泵排量。",
+      "type": "语义分解",
+      "subject": "左右",
+      "action": "",
+      "operation": "左右；压力越站或全越站流程改为正输流程前，上站运行输油泵配置电机的电流应控制在最 大允许电流的85%左右；由其他流程改为站内循环流程时，应先降低输油泵排量。",
+      "condition": "",
+      "constraint": "左右；压力越站或全越站流程改为正输流程前，上站运行输油泵配置电机的电流应控制在最\n\n大允许电流的85%左右；由其他流程改为站内循环流程时，应先降低输油泵排量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "左右"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_025",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27781,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

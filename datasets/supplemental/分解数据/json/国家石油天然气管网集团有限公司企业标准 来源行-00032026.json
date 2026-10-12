@@ -1,0 +1,41 @@
+{
+  "standard_name": "Q/  GGW",
+  "standard_id": "国家石油天然气管网集团有限公司企业标准",
+  "version": "",
+  "chapter_path": "来源行-00032026",
+  "entities": [
+    {
+      "name": "[19] 危险化学品重大危险源监督管理暂行规定(国家安全监管总局令第40",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "[19]  危险化学品重大危险源监督管理暂行规定(国家安全监管总局令第40号)\n[20]生产安全事故应急预案管理办法(应急管理部令[2019]第2号)\n[21]  生产安全事故应急条例 (国务院令第708号)",
+      "type": "语义分解",
+      "subject": "[19] 危险化学品重大危险源监督管理暂行规定(国家安全监管总局令第40",
+      "action": "",
+      "operation": "[19] 危险化学品重大危险源监督管理暂行规定(国家安全监管总局令第40号) [20]生产安全事故应急预案管理办法(应急管理部令[2019]第2号) [21] 生产安全事故应急条例 (国务院令第708号)",
+      "condition": "",
+      "constraint": "[19]  危险化学品重大危险源监督管理暂行规定(国家安全监管总局令第40号)\n[20]生产安全事故应急预案管理办法(应急管理部令[2019]第2号)\n[21]  生产安全事故应急条例 (国务院令第708号)",
+      "constraint_role": "informational",
+      "related_entities": [
+        "[19] 危险化学品重大危险源监督管理暂行规定(国家安全监管总局令第40"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_028",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 32026,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

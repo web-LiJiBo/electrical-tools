@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00023236",
+  "entities": [
+    {
+      "name": "现在通信局(站)利用通信局(站)内所有建筑物钢筋混凝 土基础加上外设环行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    现在通信局(站)利用通信局(站)内所有建筑物钢筋混凝\n土基础加上外设环行接地体作为地网，由于城市环境所限，根据接\n地电阻的测试方法的测试距离要求， 一般无法对接地电阻进行\n测试。",
+      "type": "语义分解",
+      "subject": "现在通信局(站)利用通信局(站)内所有建筑物钢筋混凝 土基础加上外设环行",
+      "action": "",
+      "operation": "现在通信局(站)利用通信局(站)内所有建筑物钢筋混凝 土基础加上外设环行接地体作为地网，由于城市环境所限，根据接 地电阻的测试方法的测试距离要求， 一般无法对接地电阻进行 测试。",
+      "condition": "",
+      "constraint": "       2    现在通信局(站)利用通信局(站)内所有建筑物钢筋混凝\n土基础加上外设环行接地体作为地网，由于城市环境所限，根据接\n地电阻的测试方法的测试距离要求， 一般无法对接地电阻进行\n测试。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "现在通信局(站)利用通信局(站)内所有建筑物钢筋混凝 土基础加上外设环行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 23236,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

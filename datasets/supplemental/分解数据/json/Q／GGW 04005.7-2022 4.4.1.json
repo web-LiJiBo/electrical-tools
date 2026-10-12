@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.4.1",
+  "entities": [
+    {
+      "name": "固体废物产生量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.4.1 固体废物产生量应为企业在统计周期内生产过程中产生的固体状。半固体状和高浓度液体状废弃物的总量。包括一般固体废物和危险废物。其中危险废物为列入《国家危险废物名录》或者根据国家规定的危险废物鉴别标准和鉴别方法认定的具有危险特性的固体废物。",
+      "type": "语义分解",
+      "subject": "固体废物产生量",
+      "action": "",
+      "operation": "统计生产固半固高浓液废物含危废",
+      "condition": "",
+      "constraint": "4.4.1 固体废物产生量应为企业在统计周期内生产过程中产生的固体状。半固体状和高浓度液体状废弃物的总量。包括一般固体废物和危险废物。其中危险废物为列入《国家危险废物名录》或者根据国家规定的危险废物鉴别标准和鉴别方法认定的具有危险特性的固体废物。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固体废物产生量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 587,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

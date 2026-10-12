@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00012836",
+  "entities": [
+    {
+      "name": "卫星ICPCE的PO配额与修复的缆相同，最小2.5%",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 卫星ICPCE的PO配额与修复的缆相同，最小2.5%。这一误码性能优于ISDN连接中常见的卫星部分的配额，可以通过\n使用专用的设备所提供的宽带、高容量、C波带运载来获得",
+      "type": "语义分解",
+      "subject": "卫星ICPCE的PO配额与修复的缆相同，最小2.5%",
+      "action": "",
+      "operation": "卫星ICPCE的PO配额与修复的缆相同，最小2.5%。这一误码性能优于ISDN连接中常见的卫星部分的配额，可以通过 使用专用的设备所提供的宽带、高容量、C波带运载来获得",
+      "condition": "",
+      "constraint": " 卫星ICPCE的PO配额与修复的缆相同，最小2.5%。这一误码性能优于ISDN连接中常见的卫星部分的配额，可以通过\n使用专用的设备所提供的宽带、高容量、C波带运载来获得",
+      "constraint_role": "informational",
+      "related_entities": [
+        "卫星ICPCE的PO配额与修复的缆相同，最小2.5%"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12836,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

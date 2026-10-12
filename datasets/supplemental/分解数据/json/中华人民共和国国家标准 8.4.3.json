@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "8.4.3",
+  "entities": [
+    {
+      "name": "机房铁架机架",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.4.3      抗震设防烈度为6度及6度以上的机房，铁架和机架安装\n应采取抗震加固措施，铁架加固方式应符合现行行业标准《电信机\n房铁架安装设计规范》YD/T   5026 的有关规定，机架加固方式应\n符合现行行业标准《电信设备安装抗震设计规范》YD 5059的有关\n规定。",
+      "type": "语义分解",
+      "subject": "机房铁架机架",
+      "action": "",
+      "operation": "设防烈度六度及以上采取符合引用标准的抗震加固",
+      "condition": "",
+      "constraint": "8.4.3      抗震设防烈度为6度及6度以上的机房，铁架和机架安装\n应采取抗震加固措施，铁架加固方式应符合现行行业标准《电信机\n房铁架安装设计规范》YD/T   5026 的有关规定，机架加固方式应\n符合现行行业标准《电信设备安装抗震设计规范》YD 5059的有关\n规定。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "机房铁架机架"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9986,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；标准编号待核对"
+      ]
+    }
+  }
+}

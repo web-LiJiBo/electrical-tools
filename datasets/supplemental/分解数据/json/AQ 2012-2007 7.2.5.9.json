@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.2.5.9",
+  "entities": [
+    {
+      "name": "压缩机房安全出口",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5.9 输气站压缩机房的每一操作层及其高出地面3 m 以上的操作平台(不包括单独的发动机平台) ,应至少有两个安全出口通向地面。操作平台的任意点沿通道中心线与安全出口之间的最大距离不得大于25 m。安全出口和通往安全地带的通道 ,应保持畅通。",
+      "type": "语义分解",
+      "subject": "压缩机房安全出口",
+      "action": "",
+      "operation": "操作层及高于3米平台除例外至少两出口最大通道距离25米保持畅通",
+      "condition": "",
+      "constraint": "7.2.5.9 输气站压缩机房的每一操作层及其高出地面3 m 以上的操作平台(不包括单独的发动机平台) ,应至少有两个安全出口通向地面。操作平台的任意点沿通道中心线与安全出口之间的最大距离不得大于25 m。安全出口和通往安全地带的通道 ,应保持畅通。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "压缩机房安全出口"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4812,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

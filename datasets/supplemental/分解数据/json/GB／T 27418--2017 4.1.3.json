@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "4.1.3",
+  "entities": [
+    {
+      "name": "输入量",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.1.3 一组输入量 Xi ,X ,*  ,Xv 可以分类为: 其值和不确定度是在当前的测量过程中直接测定的量。这些值和不确定度可从单次观测 ,重 复观测或经验判断获得 ,并可能包含测量仪器读数的修正值 ,以及对环境温度 ,大气压力和湿 度等影响量的修正值 其值和不确定度是由外部来源获得引入测量过程的量 ,例如与已校准的测量标准 ,有证标准物 质 ,从手册中查到的参考数据相关的量。",
+      "type": "语义分解",
+      "subject": "输入量",
+      "action": "",
+      "operation": "区分直接测定与外部来源",
+      "condition": "",
+      "constraint": "由外部来源获得引入测量过程的量",
+      "constraint_role": "informational",
+      "related_entities": [
+        "输入量"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "输入量符号存在识别错误"
+      ]
+    }
+  }
+}

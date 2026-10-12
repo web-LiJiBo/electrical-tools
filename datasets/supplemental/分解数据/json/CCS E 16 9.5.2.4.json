@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "9.5.2.4",
+  "entities": [
+    {
+      "name": "索端锚护筒密封",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "9.5.2.4 斜拉索两端的锚具及护筒应经常保持清洁、干燥，发现渗水时应及时修复，防止引起拉索锈损。\n9.5.2.5 定期对拉索两端钢护筒做涂漆、防锈处理。发现钢护筒开裂、渗水、漏水时，应及时处置。\n9.5.2.6 斜拉索两端锚固处及锚具、拉索出口密封处等部件，应每年保养1次，发现有漏水、积水或\n脱漆、锈蚀时，应及时处置。",
+      "type": "语义分解",
+      "subject": "索端锚护筒密封",
+      "action": "",
+      "operation": "清干渗漏修定防锈每年保养一次",
+      "condition": "",
+      "constraint": "9.5.2.4 斜拉索两端的锚具及护筒应经常保持清洁、干燥，发现渗水时应及时修复，防止引起拉索锈损。\n9.5.2.5 定期对拉索两端钢护筒做涂漆、防锈处理。发现钢护筒开裂、渗水、漏水时，应及时处置。\n9.5.2.6 斜拉索两端锚固处及锚具、拉索出口密封处等部件，应每年保养1次，发现有漏水、积水或\n脱漆、锈蚀时，应及时处置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "索端锚护筒密封"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 30155,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

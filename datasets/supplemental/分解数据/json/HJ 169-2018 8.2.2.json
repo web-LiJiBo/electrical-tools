@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设项目环境风险评价技术导则",
+  "standard_id": "HJ 169-2018",
+  "version": "2018",
+  "chapter_path": "8.2.2",
+  "entities": [
+    {
+      "name": "事故源强估算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.2.2 事故源强的确定 事故源强是为事故后果预测提供分析模拟情形。事故源强设定可采用计算法和经验估算法。计算法适用于以腐蚀或应力作用等引起的泄漏型为主的事故; 经验估算法适用于以火灾,爆炸等突发性事故伴生1次生的污染物释放。",
+      "type": "语义分解",
+      "subject": "事故源强估算",
+      "action": "",
+      "operation": "泄漏型可计算突发火爆伴次生释放可经验估算",
+      "condition": "",
+      "constraint": "8.2.2 事故源强的确定 事故源强是为事故后果预测提供分析模拟情形。事故源强设定可采用计算法和经验估算法。计算法适用于以腐蚀或应力作用等引起的泄漏型为主的事故; 经验估算法适用于以火灾,爆炸等突发性事故伴生1次生的污染物释放。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "事故源强估算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2493,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

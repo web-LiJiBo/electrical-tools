@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气管网能耗测算方法",
+  "standard_id": "Q/GGW 02018-2022",
+  "version": "2022",
+  "chapter_path": "5.1.2.1",
+  "entities": [
+    {
+      "name": "统计数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.1 数据收集 收集往年典型工况下平稳运行的油气输量, LNG外输量。注气量。输油泵机组耗电量。加热炉耗油 (气)量。锅炉耗油〈气)量。换热器耗蒸汽量 压缩机组耗能量或LNG接收站耗能量等历史数据,每 种工况下的统计数据宜多于5组。",
+      "type": "语义分解",
+      "subject": "统计数据",
+      "action": "",
+      "operation": "收集典型稳定工况历史数据",
+      "condition": "每 种工况下",
+      "constraint": "宜多于5组",
+      "constraint_role": "informational",
+      "related_entities": [
+        "统计数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "锅炉单位符号存在识别错误，统计组数保持严格大于5"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境监测分析方法标准制订技术导则",
+  "standard_id": "HJ 168-2020",
+  "version": "2020",
+  "chapter_path": "8.14.2",
+  "entities": [
+    {
+      "name": "试料制备说明",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "8.14.2 试料制备 应说明从试样中制备试料的操作步骤,包括称量或量取试料的方法。试料的质量或体积和称量的谁确程度。试料的份数等内容。",
+      "type": "语义分解",
+      "subject": "试料制备说明",
+      "action": "",
+      "operation": "列明称量量取方法数量精度及份数",
+      "condition": "",
+      "constraint": "8.14.2 试料制备 应说明从试样中制备试料的操作步骤,包括称量或量取试料的方法。试料的质量或体积和称量的谁确程度。试料的份数等内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "试料制备说明"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2407,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006467",
+  "entities": [
+    {
+      "name": "第六十四条 [临时用电作业实施要求 ] (五)接地电阻值应满足《施工现场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第六十四条 [临时用电作业实施要求 ] (五)接地电阻值应满足《施工现场临时用电安全技术规范》 JGJ 46-2005 )的要求,接地线和接零线应分开设置。",
+      "type": "语义分解",
+      "subject": "第六十四条 [临时用电作业实施要求 ] (五)接地电阻值应满足《施工现场",
+      "action": "",
+      "operation": "第六十四条 [临时用电作业实施要求 ] (五)接地电阻值应满足《施工现场临时用电安全技术规范》 JGJ 46-2005 )的要求,接地线和接零线应分开设置。",
+      "condition": "",
+      "constraint": "第六十四条 [临时用电作业实施要求 ] (五)接地电阻值应满足《施工现场临时用电安全技术规范》 JGJ 46-2005 )的要求,接地线和接零线应分开设置。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第六十四条 [临时用电作业实施要求 ] (五)接地电阻值应满足《施工现场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6467,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

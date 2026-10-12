@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026053",
+  "entities": [
+    {
+      "name": ") ISDN 的 X.25 分组终端( X.31 终端)在与 PSPDN",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   1) ISDN 的 X.25 分组终端( X.31  终端)在与 PSPDN  的终端\n间传送分组数据时，通过 ISDN 的 B 通路电路交换或非交换(半永\n久连接)经分组处理器接口( PHI)  接入 PSPDN 。 同时还可以通过\nISDN B通路或 D 通路的虚电路经分组处理器( PHI)  接入 PSP-\nDN, 这时在B 通路提供交换和半永久连接两种业务，在 D 通路上\n提供半永久和永久逻辑链路两种业务。 ISDN  与 ISDN 分组终端\n间的通信需经过分组处理器接口( PHI)  经 PSPDN 来完成，ISDN\n与PSPDN 之间通过 PHI 连接。",
+      "type": "语义分解",
+      "subject": ") ISDN 的 X.25 分组终端( X.31 终端)在与 PSPDN",
+      "action": "",
+      "operation": ") ISDN 的 X.25 分组终端( X.31 终端)在与 PSPDN 的终端 间传送分组数据时，通过 ISDN 的 B 通路电路交换或非交换(半永 久连接)经分组处理器接口( PHI) 接入 PSPDN 。 同时还可以通过 ISDN B通路或 D 通路的虚电路经分组处理器( PHI) 接入 PSP- DN, 这时在B 通路提供交换和半永久连接两种业务，在 D 通路上 提供半永久和永久逻辑链路两种业务。 ISDN 与 ISDN 分组终端 间的通信需经过分组处理器接口( PH",
+      "condition": "",
+      "constraint": "   1) ISDN 的 X.25 分组终端( X.31  终端)在与 PSPDN  的终端\n间传送分组数据时，通过 ISDN 的 B 通路电路交换或非交换(半永\n久连接)经分组处理器接口( PHI)  接入 PSPDN 。 同时还可以通过\nISDN B通路或 D 通路的虚电路经分组处理器( PHI)  接入 PSP-\nDN, 这时在B 通路提供交换和半永久连接两种业务，在 D 通路上\n提供半永久和永久逻辑链路两种业务。 ISDN  与 ISDN 分组终端\n间的通信需经过分组处理器接口( PHI)  经 PSPDN 来完成，ISDN\n与PSPDN 之间通过 PHI 连接。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ") ISDN 的 X.25 分组终端( X.31 终端)在与 PSPDN"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26053,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；操作摘要截取前240字符，完整约束以原文content为准"
+      ]
+    }
+  }
+}

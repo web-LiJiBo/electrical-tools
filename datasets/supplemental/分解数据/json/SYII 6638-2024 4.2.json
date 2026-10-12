@@ -1,0 +1,41 @@
+{
+  "standard_name": "输气管道和地下储气库地面工程设计 节能技术规范",
+  "standard_id": "SYII 6638-2024",
+  "version": "2024",
+  "chapter_path": "4.2",
+  "entities": [
+    {
+      "name": "节能工艺设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2 应选用先进适用的工艺技术和高效节能的设备和产品。",
+      "type": "语义分解",
+      "subject": "节能工艺设备",
+      "action": "",
+      "operation": "选先进适用技术和高效节能产品",
+      "condition": "",
+      "constraint": "4.2 应选用先进适用的工艺技术和高效节能的设备和产品。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "节能工艺设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 260,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

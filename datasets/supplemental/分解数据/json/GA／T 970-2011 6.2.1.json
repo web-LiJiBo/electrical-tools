@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "6.2.1",
+  "entities": [
+    {
+      "name": "防护级别定义",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1 等级划分 根据泄漏介质的危害性,将危险化学品泄漏事故防护等级划分为三级。 一级防护为最高级别防护, 适用于皮肤 呼吸器官 眼睛等需要最高级别保护的情况。二级防护适用于呼吸需要最高级别保护 ,但皮肤保护级别要求稍低的情沉。三级防护适用于空气传播物种类和浓度已知,且适合使用过滤式呼吸器防护的情况。",
+      "type": "语义分解",
+      "subject": "防护级别定义",
+      "action": "",
+      "operation": "一级皮肤呼吸眼最高二级呼吸最高皮肤稍低三级已知适合过滤",
+      "condition": "",
+      "constraint": "6.2.1 等级划分 根据泄漏介质的危害性,将危险化学品泄漏事故防护等级划分为三级。 一级防护为最高级别防护, 适用于皮肤 呼吸器官 眼睛等需要最高级别保护的情况。二级防护适用于呼吸需要最高级别保护 ,但皮肤保护级别要求稍低的情沉。三级防护适用于空气传播物种类和浓度已知,且适合使用过滤式呼吸器防护的情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "防护级别定义"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5882,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；等级定义非现场作业授权"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "来源行-00003830",
+  "entities": [
+    {
+      "name": "作业前，危险化学品企业应组织办理作业审批手续，并由相关责任人签字审批",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.6 作业前，危险化学品企业应组织办理作业审批手续，并由相关责任人签字审批。同一作业涉及两种或两种以上特殊作业时，应同时执行各自作业要求，办理相应的作业审批手续。作业时，审批手续应齐全、安全措施应全部落实、作业环境应符合安全要求。",
+      "type": "语义分解",
+      "subject": "作业前，危险化学品企业应组织办理作业审批手续，并由相关责任人签字审批",
+      "action": "",
+      "operation": "作业前，危险化学品企业应组织办理作业审批手续，并由相关责任人签字审批。同一作业涉及两种或两种以上特殊作业时，应同时执行各自作业要求，办理相应的作业审批手续。作业时，审批手续应齐全、安全措施应全部落实、作业环境应符合安全要求。",
+      "condition": "",
+      "constraint": "4.6 作业前，危险化学品企业应组织办理作业审批手续，并由相关责任人签字审批。同一作业涉及两种或两种以上特殊作业时，应同时执行各自作业要求，办理相应的作业审批手续。作业时，审批手续应齐全、安全措施应全部落实、作业环境应符合安全要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "作业前，危险化学品企业应组织办理作业审批手续，并由相关责任人签字审批"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3830,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

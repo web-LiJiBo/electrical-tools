@@ -1,0 +1,41 @@
+{
+  "standard_name": "安全防范工程技术标准",
+  "standard_id": "GB 50348-2018",
+  "version": "2018",
+  "chapter_path": "5.6.4",
+  "entities": [
+    {
+      "name": "竣工验收",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.4 工程检验完成、项目整改复验合格后，建设单位应组织竣工验收。竣工验收应包括施工验收、技术验收和资料审查。竣工验收的组织、验收内容和要求、验收结论等应按本标准第10章执行。",
+      "type": "语义分解",
+      "subject": "竣工验收",
+      "action": "",
+      "operation": "检验整改复验合格建设方组织施工技术资料验收按第10章",
+      "condition": "",
+      "constraint": "5.6.4 工程检验完成、项目整改复验合格后，建设单位应组织竣工验收。竣工验收应包括施工验收、技术验收和资料审查。竣工验收的组织、验收内容和要求、验收结论等应按本标准第10章执行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "竣工验收"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6933,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

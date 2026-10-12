@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046313",
+  "entities": [
+    {
+      "name": "E.3.2 每个截面应布设不低于12个测试点，测点的分布应根据 现场腐蚀",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "E.3.2    每个截面应布设不低于12个测试点，测点的分布应根据\n现场腐蚀状况及运行管理人员经验进行不均匀布点或均匀布点。\nE.3.3    宜采用超声波测厚仪对每个截面上的点进行超声波测厚。\nE.3.4    应根据各截面测点的测量结果，筛选出腐蚀较严重的点\n进行网格法测量。",
+      "type": "语义分解",
+      "subject": "E.3.2 每个截面应布设不低于12个测试点，测点的分布应根据 现场腐蚀",
+      "action": "",
+      "operation": "E.3.2 每个截面应布设不低于12个测试点，测点的分布应根据 现场腐蚀状况及运行管理人员经验进行不均匀布点或均匀布点。 E.3.3 宜采用超声波测厚仪对每个截面上的点进行超声波测厚。 E.3.4 应根据各截面测点的测量结果，筛选出腐蚀较严重的点 进行网格法测量。",
+      "condition": "",
+      "constraint": "E.3.2    每个截面应布设不低于12个测试点，测点的分布应根据\n现场腐蚀状况及运行管理人员经验进行不均匀布点或均匀布点。\nE.3.3    宜采用超声波测厚仪对每个截面上的点进行超声波测厚。\nE.3.4    应根据各截面测点的测量结果，筛选出腐蚀较严重的点\n进行网格法测量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "E.3.2 每个截面应布设不低于12个测试点，测点的分布应根据 现场腐蚀"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46313,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

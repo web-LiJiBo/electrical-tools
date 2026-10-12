@@ -1,0 +1,41 @@
+{
+  "standard_name": "Ⅰcs 29 . 240 . 0 1",
+  "standard_id": "F 2 1",
+  "version": "",
+  "chapter_path": "来源行-00025410",
+  "entities": [
+    {
+      "name": "b) 传真终端 1 、2 注册至待测软交换机，网络分析仪配置网络报文捕获",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "b)    传真终端 1 、2 注册至待测软交换机，网络分析仪配置网络报文捕获功能，设备工作状态正常；\nc)    传真终端 1 呼叫传真终端 2,建立通话后传送国家标准传真样张；\nd)    查看国家标准传真样张传送结果。",
+      "type": "语义分解",
+      "subject": "b) 传真终端 1 、2 注册至待测软交换机，网络分析仪配置网络报文捕获",
+      "action": "",
+      "operation": "b) 传真终端 1 、2 注册至待测软交换机，网络分析仪配置网络报文捕获功能，设备工作状态正常； c) 传真终端 1 呼叫传真终端 2,建立通话后传送国家标准传真样张； d) 查看国家标准传真样张传送结果。",
+      "condition": "",
+      "constraint": "b)    传真终端 1 、2 注册至待测软交换机，网络分析仪配置网络报文捕获功能，设备工作状态正常；\nc)    传真终端 1 呼叫传真终端 2,建立通话后传送国家标准传真样张；\nd)    查看国家标准传真样张传送结果。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "b) 传真终端 1 、2 注册至待测软交换机，网络分析仪配置网络报文捕获"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_023",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 25410,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

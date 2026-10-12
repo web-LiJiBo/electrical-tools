@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "6.5.8",
+  "entities": [
+    {
+      "name": "只要对现有管线进行改造或物理参数(温度、压力、成分等)发生显著变动，应考",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.5.8      只要对现有管线进行改造或物理参数(温度、压力、成分等)发生显著变动，应考虑依据变\n更管理原则对这种变化进行评估。适当时，应根据修改更新装置图纸，并销毁替换的图纸。",
+      "type": "语义分解",
+      "subject": "只要对现有管线进行改造或物理参数(温度、压力、成分等)发生显著变动，应考",
+      "action": "",
+      "operation": "只要对现有管线进行改造或物理参数(温度、压力、成分等)发生显著变动，应考虑依据变 更管理原则对这种变化进行评估。适当时，应根据修改更新装置图纸，并销毁替换的图纸。",
+      "condition": "",
+      "constraint": "6.5.8      只要对现有管线进行改造或物理参数(温度、压力、成分等)发生显著变动，应考虑依据变\n更管理原则对这种变化进行评估。适当时，应根据修改更新装置图纸，并销毁替换的图纸。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "只要对现有管线进行改造或物理参数(温度、压力、成分等)发生显著变动，应考"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41243,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

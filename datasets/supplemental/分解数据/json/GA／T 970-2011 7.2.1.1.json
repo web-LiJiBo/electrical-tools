@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品泄漏事故处置行动要则",
+  "standard_id": "GA/T 970-2011",
+  "version": "2011",
+  "chapter_path": "7.2.1.1",
+  "entities": [
+    {
+      "name": "固体介质容器泄漏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.1.1 盛装固体介质的容器或包装泄漏时 ,应采取堵塞和修补裂口的措施止漏=",
+      "type": "语义分解",
+      "subject": "固体介质容器泄漏",
+      "action": "",
+      "operation": "采取堵塞修补止漏措施",
+      "condition": "盛装固体介质的容器或包装泄漏时",
+      "constraint": "7.2.1.1 盛装固体介质的容器或包装泄漏时 ,应采取堵塞和修补裂口的措施止漏=",
+      "constraint_role": "informational",
+      "related_entities": [
+        "固体介质容器泄漏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000_v2",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5909,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS    13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "5.5.1.7",
+  "entities": [
+    {
+      "name": "管道储运设备设施",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1.7       管道储运单位应对管道设备设施采购、制造、安装等过程实施质量控制，监控安装过程，并在\n\n投用前进行检查和确认。",
+      "type": "语义分解",
+      "subject": "管道储运设备设施",
+      "action": "",
+      "operation": "采购制造安装质量控制投用前检查确认",
+      "condition": "",
+      "constraint": "5.5.1.7       管道储运单位应对管道设备设施采购、制造、安装等过程实施质量控制，监控安装过程，并在\n\n投用前进行检查和确认。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "管道储运设备设施"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_006",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 27708,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

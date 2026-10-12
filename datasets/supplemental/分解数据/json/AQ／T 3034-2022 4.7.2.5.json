@@ -1,0 +1,41 @@
+{
+  "standard_name": "化工过程安全管理导则",
+  "standard_id": "AQ/T 3034-2022",
+  "version": "2022",
+  "chapter_path": "4.7.2.5",
+  "entities": [
+    {
+      "name": "安全仪表设计",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.2.5 企业应根据工艺过程危害辨识和风险评估结果}安全仪表系统安全完整性等级 (SII )评估 结果 ,确定安全仪表系统的装备。涉及重点监管危险化兀斤艺的新建项目应按照 GB/T 21109 和 GB/T 50770等标淮开展安全仪表系统设计 。 对涉及毒性气俐 液化气体 剧毒液体的一级或者二级重 大危险源 ,应设置独立的安全仪表系统 。",
+      "type": "语义分解",
+      "subject": "安全仪表设计",
+      "action": "",
+      "operation": "按风险及完整性等级定装备重点工艺按标准设计特定毒液气一级二级重大源独立SIS",
+      "condition": "",
+      "constraint": "4.7.2.5 企业应根据工艺过程危害辨识和风险评估结果}安全仪表系统安全完整性等级 (SII )评估 结果 ,确定安全仪表系统的装备。涉及重点监管危险化兀斤艺的新建项目应按照 GB/T 21109 和 GB/T 50770等标淮开展安全仪表系统设计 。 对涉及毒性气俐 液化气体 剧毒液体的一级或者二级重 大危险源 ,应设置独立的安全仪表系统 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "安全仪表设计"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5115,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；SII等缩写OCR异常需原件复核"
+      ]
+    }
+  }
+}

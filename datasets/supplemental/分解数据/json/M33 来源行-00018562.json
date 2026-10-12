@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018562",
+  "entities": [
+    {
+      "name": "宿方向",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   宿方向：从K 比特1中恢复比特序列进行扩展开销复帧同步，复帧同步需在K4 比特1中找到“0111\n1111110”图案，在假定的复帧起始位置需连续地对信号进行检验以便同步对准。当连续两个FAS 检测\n到错误应进入OOM 状态。当检测到一个无错误的FAS应进入IM 状态。",
+      "type": "语义分解",
+      "subject": "宿方向",
+      "action": "",
+      "operation": "宿方向：从K 比特1中恢复比特序列进行扩展开销复帧同步，复帧同步需在K4 比特1中找到“0111 1111110”图案，在假定的复帧起始位置需连续地对信号进行检验以便同步对准。当连续两个FAS 检测 到错误应进入OOM 状态。当检测到一个无错误的FAS应进入IM 状态。",
+      "condition": "",
+      "constraint": "   宿方向：从K 比特1中恢复比特序列进行扩展开销复帧同步，复帧同步需在K4 比特1中找到“0111\n1111110”图案，在假定的复帧起始位置需连续地对信号进行检验以便同步对准。当连续两个FAS 检测\n到错误应进入OOM 状态。当检测到一个无错误的FAS应进入IM 状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "宿方向"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18562,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

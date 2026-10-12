@@ -1,0 +1,41 @@
+{
+  "standard_name": "海洋石油设施热工(动火)作业安全规程",
+  "standard_id": "SY 6303-2016",
+  "version": "2016",
+  "chapter_path": "5.3",
+  "entities": [
+    {
+      "name": "海洋危险区",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.3 海洋石油设施危险区域应按以下原则划分: a) 0类危险区: 在正常操作条件下,连续地出现达到引燃或爆炸浓度的可燃性气体或蒸气的区域。 b) I类危险区: 在正常操作条件下,断续地或周期性地出现达到引燃或爆炸浓度的可燃性气体或蒸气的区域。 c) 皿类危险区: 在正常操作条件下,不大可能出现达到引燃或爆炸浓度的可燃性气体或蒸气,但在不正常操作条件下,有可能出现达到引燃或爆炸浓度的可燃性气体或蒸气的区域。 d) 安全区: 危险区以外的区域。",
+      "type": "语义分解",
+      "subject": "海洋危险区",
+      "action": "",
+      "operation": "按正常出现频率与异常分0连续I断续其他区异常及安全区",
+      "condition": "",
+      "constraint": "5.3 海洋石油设施危险区域应按以下原则划分: a) 0类危险区: 在正常操作条件下,连续地出现达到引燃或爆炸浓度的可燃性气体或蒸气的区域。 b) I类危险区: 在正常操作条件下,断续地或周期性地出现达到引燃或爆炸浓度的可燃性气体或蒸气的区域。 c) 皿类危险区: 在正常操作条件下,不大可能出现达到引燃或爆炸浓度的可燃性气体或蒸气,但在不正常操作条件下,有可能出现达到引燃或爆炸浓度的可燃性气体或蒸气的区域。 d) 安全区: 危险区以外的区域。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "海洋危险区"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7309,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；皿类符号缺损需核查"
+      ]
+    }
+  }
+}

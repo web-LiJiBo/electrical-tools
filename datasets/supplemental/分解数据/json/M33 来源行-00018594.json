@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00018594",
+  "entities": [
+    {
+      "name": "每个通路的数据写进缓存器，帧边界起始指示和帧序号一并写入",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   每个通路的数据写进缓存器，帧边界起始指示和帧序号一并写入。如果所有通路都在通路同步状态\n且具有唯一的通路标记值，遵从通道同步信号将当前缓存器的数据重新排序产生STM-256连续帧数据，\n进入ILA 状态。未检测到所有通路通路识别一致性，将进入OLA 状态。",
+      "type": "语义分解",
+      "subject": "每个通路的数据写进缓存器，帧边界起始指示和帧序号一并写入",
+      "action": "",
+      "operation": "每个通路的数据写进缓存器，帧边界起始指示和帧序号一并写入。如果所有通路都在通路同步状态 且具有唯一的通路标记值，遵从通道同步信号将当前缓存器的数据重新排序产生STM-256连续帧数据， 进入ILA 状态。未检测到所有通路通路识别一致性，将进入OLA 状态。",
+      "condition": "",
+      "constraint": "   每个通路的数据写进缓存器，帧边界起始指示和帧序号一并写入。如果所有通路都在通路同步状态\n且具有唯一的通路标记值，遵从通道同步信号将当前缓存器的数据重新排序产生STM-256连续帧数据，\n进入ILA 状态。未检测到所有通路通路识别一致性，将进入OLA 状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "每个通路的数据写进缓存器，帧边界起始指示和帧序号一并写入"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_018",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 18594,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

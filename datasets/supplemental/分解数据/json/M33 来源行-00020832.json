@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00020832",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "S4-Xv_CI_D=S4_CI[1.…X]_D\nS4-Xv_CI_CK=S4_CI[1..X]_Ck\nS4-Xv_CI_FS=S4_CI[1…X]_FS\nS4-Xv_CI_SSF=S4_CI[1.X]_SSF\nS4-Xv>S4-Xc_I_MI_TPmode\nS4-Xv>S4-Xc_I_MI_SSF_Reported\nS4-Xv>S4-Xc_I_MI_ExTI[1.X]\nS4-Xv>S4-Xc_I_1second\nS4-Xv>S4-Xc_I_TIMdis[1…X]\tS4-Xc_CI_D\nS4-Xc_CI_CK\nS4-Xc_CI_FS\nS4-Xc_CI_SSF\nS4-Xv>S4-Xc_I_MI_cTIM[1.X]\nS4-Xv>S4-Xc_I_MI_cUNEQ[1.X]\nS4-Xv>S4-Xc_I_MI_eSSF[1.X]\nS4-Xv>S4-Xc_I_MI_AcTI[1.X]\nS4-Xv>S4-Xc_I_MI_cLOM[1.X]\nS4-Xv>S4-XcI_MI_eSQM[1.X]\nS4-Xv>S4-Xc_I_MI_cLOA\nS4-Xv>S4-Xc_I_MI_AcSQ[1.X]",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "S4-Xv_CI_D=S4_CI[1.…X]_D\nS4-Xv_CI_CK=S4_CI[1..X]_Ck\nS4-Xv_CI_FS=S4_CI[1…X]_FS\nS4-Xv_CI_SSF=S4_CI[1.X]_SSF\nS4-Xv>S4-Xc_I_MI_TPmode\nS4-Xv>S4-Xc_I_MI_SSF_Reported\nS4-Xv>S4-Xc_I_MI_ExTI[1.X]\nS4-Xv>S4-Xc_I_1second\nS4-Xv>S4-Xc_I_TIMdis[1…X]\tS4-Xc_CI_D\nS4-Xc_CI_CK\nS4-Xc_CI_FS\nS4-Xc_CI_SSF\nS4-Xv>S4-Xc_I_MI_cTIM[1.X]\nS4-Xv>S4-Xc_I_MI_cUNEQ[1.X]\nS4-Xv>S4-Xc_I_MI_eSSF[1.X]\nS4-Xv>S4-Xc_I_MI_AcTI[1.X]\nS4-Xv>S4-Xc_I_MI_cLOM[1.X]\nS4-Xv>S4-XcI_MI_eSQM[1.X]\nS4-Xv>S4-Xc_I_MI_cLOA\nS4-Xv>S4-Xc_I_MI_AcSQ[1.X]",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_019",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20832,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

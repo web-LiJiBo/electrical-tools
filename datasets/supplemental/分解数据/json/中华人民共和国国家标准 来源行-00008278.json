@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00008278",
+  "entities": [
+    {
+      "name": "在合格基础上，主要安装项目全部达到施工质量标准，其 余项目稍有偏差，但不",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    在合格基础上，主要安装项目全部达到施工质量标准，其\n余项目稍有偏差，但不影响设备使用寿命应为优良等级。",
+      "type": "语义分解",
+      "subject": "在合格基础上，主要安装项目全部达到施工质量标准，其 余项目稍有偏差，但不",
+      "action": "",
+      "operation": "在合格基础上，主要安装项目全部达到施工质量标准，其 余项目稍有偏差，但不影响设备使用寿命应为优良等级。",
+      "condition": "",
+      "constraint": "       2    在合格基础上，主要安装项目全部达到施工质量标准，其\n余项目稍有偏差，但不影响设备使用寿命应为优良等级。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "在合格基础上，主要安装项目全部达到施工质量标准，其 余项目稍有偏差，但不"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_009",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 8278,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

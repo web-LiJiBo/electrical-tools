@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "CCS E 16",
+  "version": "",
+  "chapter_path": "来源行-00029731",
+  "entities": [
+    {
+      "name": ")轴承转动是否正常，油脂是否挥发、泄漏和失效，密封件是否损坏",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": " 3)轴承转动是否正常，油脂是否挥发、泄漏和失效，密封件是否损坏；\n 4)支座限位措施是否正常；\n 5)螺栓连接是否缺失、松动；\n 6)支座是否变形；",
+      "type": "语义分解",
+      "subject": ")轴承转动是否正常，油脂是否挥发、泄漏和失效，密封件是否损坏",
+      "action": "",
+      "operation": ")轴承转动是否正常，油脂是否挥发、泄漏和失效，密封件是否损坏； 4)支座限位措施是否正常； 5)螺栓连接是否缺失、松动； 6)支座是否变形",
+      "condition": "",
+      "constraint": " 3)轴承转动是否正常，油脂是否挥发、泄漏和失效，密封件是否损坏；\n 4)支座限位措施是否正常；\n 5)螺栓连接是否缺失、松动；\n 6)支座是否变形；",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")轴承转动是否正常，油脂是否挥发、泄漏和失效，密封件是否损坏"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_027",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29731,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

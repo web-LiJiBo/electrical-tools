@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品经营单位主要负责人安全生产培训大纲及考核标准",
+  "standard_id": "AQ/T 3031-2010",
+  "version": "2010",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "法规考核",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 危险化学品经营相关法律法规: a) 了解法律法规基本知识,以及安全生产立法的意义和重要性; b) 了解我国安全生产方针 ,政策和有关危险化学品安全生产的主要法律法规标准体系; c) 熟悉危险化学品经营相关法律法规及标准; d) 掌握危险化学品经营的法律责任 ,以及主要负责人安全生产的责任和义务。",
+      "type": "语义分解",
+      "subject": "法规考核",
+      "action": "",
+      "operation": "了解基本立法政策体系熟悉法规掌握经营法律责任负责人义务",
+      "condition": "",
+      "constraint": "5.2.1 危险化学品经营相关法律法规: a) 了解法律法规基本知识,以及安全生产立法的意义和重要性; b) 了解我国安全生产方针 ,政策和有关危险化学品安全生产的主要法律法规标准体系; c) 熟悉危险化学品经营相关法律法规及标准; d) 掌握危险化学品经营的法律责任 ,以及主要负责人安全生产的责任和义务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "法规考核"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4940,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；考核范围非现行法规核定"
+      ]
+    }
+  }
+}

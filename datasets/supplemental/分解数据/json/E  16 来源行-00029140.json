@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E  16",
+  "version": "",
+  "chapter_path": "来源行-00029140",
+  "entities": [
+    {
+      "name": "应急预案体系",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5   应急预案体系",
+      "type": "语义分解",
+      "subject": "应急预案体系",
+      "action": "",
+      "operation": "应急预案体系",
+      "condition": "",
+      "constraint": "5   应急预案体系",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应急预案体系"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_026",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 29140,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

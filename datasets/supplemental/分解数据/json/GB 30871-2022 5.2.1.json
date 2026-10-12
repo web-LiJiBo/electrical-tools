@@ -1,0 +1,41 @@
+{
+  "standard_name": "危险化学品企业特殊作业安全规范",
+  "standard_id": "GB 30871-2022",
+  "version": "2022",
+  "chapter_path": "5.2.1",
+  "entities": [
+    {
+      "name": "动火现场",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.2.1 动火作业应有专人监护，作业前应清除动火现场及周围的易燃物品，或采取其他有效安全防火措施，并配备消防器材，满足作业现场应急需求。",
+      "type": "语义分解",
+      "subject": "动火现场",
+      "action": "",
+      "operation": "专人监护清除易燃物或防火并配器材",
+      "condition": "",
+      "constraint": "5.2.1 动火作业应有专人监护，作业前应清除动火现场及周围的易燃物品，或采取其他有效安全防火措施，并配备消防器材，满足作业现场应急需求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "动火现场"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3851,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

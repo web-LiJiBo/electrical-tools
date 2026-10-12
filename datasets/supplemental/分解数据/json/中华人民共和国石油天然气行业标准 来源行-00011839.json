@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "来源行-00011839",
+  "entities": [
+    {
+      "name": "应支持缩位拨号 、 热线服务 、 呼出限制 、 转移呼叫 、 呼 叫等待",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       2    应支持缩位拨号 、  热线服务 、  呼出限制 、  转移呼叫 、  呼\n叫等待 、  会议电话 、遇忙回叫 、  三方通话等新业务。",
+      "type": "语义分解",
+      "subject": "应支持缩位拨号 、 热线服务 、 呼出限制 、 转移呼叫 、 呼 叫等待",
+      "action": "",
+      "operation": "应支持缩位拨号 、 热线服务 、 呼出限制 、 转移呼叫 、 呼 叫等待 、 会议电话 、遇忙回叫 、 三方通话等新业务。",
+      "condition": "",
+      "constraint": "       2    应支持缩位拨号 、  热线服务 、  呼出限制 、  转移呼叫 、  呼\n叫等待 、  会议电话 、遇忙回叫 、  三方通话等新业务。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应支持缩位拨号 、 热线服务 、 呼出限制 、 转移呼叫 、 呼 叫等待"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_012",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11839,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

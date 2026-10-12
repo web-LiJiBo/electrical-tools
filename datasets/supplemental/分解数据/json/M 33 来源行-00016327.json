@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016327",
+  "entities": [
+    {
+      "name": "a)存在复用结构时所导致的ODUk PM子层触发倒换条件仅对于被复用的O",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      a)存在复用结构时所导致的ODUk PM子层触发倒换条件仅对于被复用的ODUk 适用，如从ODUk\n直接复用到ODUj(j>k),    ODUj 的 PM 子层相关告警和误码仅对于ODUk业务适用。",
+      "type": "语义分解",
+      "subject": "a)存在复用结构时所导致的ODUk PM子层触发倒换条件仅对于被复用的O",
+      "action": "",
+      "operation": "a)存在复用结构时所导致的ODUk PM子层触发倒换条件仅对于被复用的ODUk 适用，如从ODUk 直接复用到ODUj(j>k), ODUj 的 PM 子层相关告警和误码仅对于ODUk业务适用。",
+      "condition": "",
+      "constraint": "      a)存在复用结构时所导致的ODUk PM子层触发倒换条件仅对于被复用的ODUk 适用，如从ODUk\n直接复用到ODUj(j>k),    ODUj 的 PM 子层相关告警和误码仅对于ODUk业务适用。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a)存在复用结构时所导致的ODUk PM子层触发倒换条件仅对于被复用的O"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16327,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

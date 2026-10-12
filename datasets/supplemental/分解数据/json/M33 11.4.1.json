@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "11.4.1",
+  "entities": [
+    {
+      "name": "VCn至VCm适配",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "11.4.1 VCn 到VCm 的适配功能Sn/Sm_A",
+      "type": "语义分解",
+      "subject": "VCn至VCm适配",
+      "action": "",
+      "operation": "仅标题无正文",
+      "condition": "",
+      "constraint": "11.4.1 VCn 到VCm 的适配功能Sn/Sm_A",
+      "constraint_role": "informational",
+      "related_entities": [
+        "VCn至VCm适配"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_005",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 20081,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

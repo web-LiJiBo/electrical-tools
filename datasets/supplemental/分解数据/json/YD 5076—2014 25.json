@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5076—2014",
+  "version": "2014",
+  "chapter_path": "25",
+  "entities": [
+    {
+      "name": "原始参数或表格行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "25\t7.1.8\t电信业务经营者长途业\n务人网号(长途电信业务\n经营者标识码)的分配应\n执行中华人民共和国工\n业和信息化部2003年4\n月7日颁布的《电信网编\n号计划(2003年版)》的\n相关规定\t修改为：电信业务经\n营者长途业务人网\n号(长途电信业务经\n营者标识码)的分配\n应执行中华人民共\n和国工业和信息化\n部2009年12月颁\n布的《电信网编号计\n划(2009年版)》的\n相关规定\t更新《电信网编\n号计划》为2009\n年版",
+      "type": "语义分解",
+      "subject": "原始参数或表格行",
+      "action": "",
+      "operation": "保留原始表格行；须关联表头、单位和上下文后方可判定",
+      "condition": "",
+      "constraint": "25\t7.1.8\t电信业务经营者长途业\n务人网号(长途电信业务\n经营者标识码)的分配应\n执行中华人民共和国工\n业和信息化部2003年4\n月7日颁布的《电信网编\n号计划(2003年版)》的\n相关规定\t修改为：电信业务经\n营者长途业务人网\n号(长途电信业务经\n营者标识码)的分配\n应执行中华人民共\n和国工业和信息化\n部2009年12月颁\n布的《电信网编号计\n划(2009年版)》的\n相关规定\t更新《电信网编\n号计划》为2009\n年版",
+      "constraint_role": "informational",
+      "related_entities": [
+        "原始参数或表格行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26490,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
+      ]
+    }
+  }
+}

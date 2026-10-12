@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00006275",
+  "entities": [
+    {
+      "name": "第二十六条 {高处作业分级 ] (三)不存在本条(二)项列出的任一种客观",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第二十六条 {高处作业分级 ] (三)不存在本条(二)项列出的任一种客观危险因素的高处作业按下表2规定的 A类法分级。存在本条(二)项列出的一种或一种以上客观危险因素的高处作业按下表2规定的 B类法分级。",
+      "type": "语义分解",
+      "subject": "第二十六条 {高处作业分级 ] (三)不存在本条(二)项列出的任一种客观",
+      "action": "",
+      "operation": "第二十六条 {高处作业分级 ] (三)不存在本条(二)项列出的任一种客观危险因素的高处作业按下表2规定的 A类法分级。存在本条(二)项列出的一种或一种以上客观危险因素的高处作业按下表2规定的 B类法分级。",
+      "condition": "",
+      "constraint": "第二十六条 {高处作业分级 ] (三)不存在本条(二)项列出的任一种客观危险因素的高处作业按下表2规定的 A类法分级。存在本条(二)项列出的一种或一种以上客观危险因素的高处作业按下表2规定的 B类法分级。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第二十六条 {高处作业分级 ] (三)不存在本条(二)项列出的任一种客观"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_008",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 6275,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

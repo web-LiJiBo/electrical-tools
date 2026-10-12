@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00013201",
+  "entities": [
+    {
+      "name": "根据ITU-T G.826附录Ⅱ的说明，误码性能指标主要包括",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   根据ITU-T G.826附录Ⅱ的说明，误码性能指标主要包括：ESR、SESR和 BBER 三个参数，只适合\n\n于在线测试，所评估的在线信号属于随机信息、信号模型未知，并且需要一个月(30天)的测试时间。\n   因此，误码性能指标可以作为网络运行的考核指标，适用于维护阶段的测量评估。其中ESR 指标符\n\n合泊松分布特性，主要用于度量零星出现的随机误码，在误码率较小的情况下，更接近于实际误码率。\n但由于测试时间较长，不适合系统建设、工程验收等场合的测试。\nC.2.2   误码率特性和限制",
+      "type": "语义分解",
+      "subject": "根据ITU-T G.826附录Ⅱ的说明，误码性能指标主要包括",
+      "action": "",
+      "operation": "根据ITU-T G.826附录Ⅱ的说明，误码性能指标主要包括：ESR、SESR和 BBER 三个参数，只适合 于在线测试，所评估的在线信号属于随机信息、信号模型未知，并且需要一个月(30天)的测试时间。 因此，误码性能指标可以作为网络运行的考核指标，适用于维护阶段的测量评估。其中ESR 指标符 合泊松分布特性，主要用于度量零星出现的随机误码，在误码率较小的情况下，更接近于实际误码率。 但由于测试时间较长，不适合系统建设、工程验收等场合的测试。 C.2.2 误码率特性和限制",
+      "condition": "",
+      "constraint": "   根据ITU-T G.826附录Ⅱ的说明，误码性能指标主要包括：ESR、SESR和 BBER 三个参数，只适合\n\n于在线测试，所评估的在线信号属于随机信息、信号模型未知，并且需要一个月(30天)的测试时间。\n   因此，误码性能指标可以作为网络运行的考核指标，适用于维护阶段的测量评估。其中ESR 指标符\n\n合泊松分布特性，主要用于度量零星出现的随机误码，在误码率较小的情况下，更接近于实际误码率。\n但由于测试时间较长，不适合系统建设、工程验收等场合的测试。\nC.2.2   误码率特性和限制",
+      "constraint_role": "informational",
+      "related_entities": [
+        "根据ITU-T G.826附录Ⅱ的说明，误码性能指标主要包括"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_013",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 13201,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

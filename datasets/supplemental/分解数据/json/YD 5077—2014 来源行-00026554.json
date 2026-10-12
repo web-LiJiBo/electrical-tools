@@ -1,0 +1,41 @@
+{
+  "standard_name": "中华人民共和国通信行业标准",
+  "standard_id": "YD 5077—2014",
+  "version": "2014",
+  "chapter_path": "来源行-00026554",
+  "entities": [
+    {
+      "name": "工行业标准由中国轻工业出版社出版，纺织行业标准由中国标准 出版社出版，兵",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "工行业标准由中国轻工业出版社出版，纺织行业标准由中国标准\n\n出版社出版，兵工民品行业标准由中国兵器工业标准化研究所组\n织出版，核行业标准由核工业标准化研究所组织出版，电子行业标\n\n准由工业和信息化部电子工业标准化研究院组织出版，通信行业\n\n标准由人民邮电出版社出版、通信工程建设行业标准由北京邮电\n\n大学出版社出版。",
+      "type": "语义分解",
+      "subject": "工行业标准由中国轻工业出版社出版，纺织行业标准由中国标准 出版社出版，兵",
+      "action": "",
+      "operation": "工行业标准由中国轻工业出版社出版，纺织行业标准由中国标准 出版社出版，兵工民品行业标准由中国兵器工业标准化研究所组 织出版，核行业标准由核工业标准化研究所组织出版，电子行业标 准由工业和信息化部电子工业标准化研究院组织出版，通信行业 标准由人民邮电出版社出版、通信工程建设行业标准由北京邮电 大学出版社出版。",
+      "condition": "",
+      "constraint": "工行业标准由中国轻工业出版社出版，纺织行业标准由中国标准\n\n出版社出版，兵工民品行业标准由中国兵器工业标准化研究所组\n织出版，核行业标准由核工业标准化研究所组织出版，电子行业标\n\n准由工业和信息化部电子工业标准化研究院组织出版，通信行业\n\n标准由人民邮电出版社出版、通信工程建设行业标准由北京邮电\n\n大学出版社出版。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "工行业标准由中国轻工业出版社出版，纺织行业标准由中国标准 出版社出版，兵"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_024",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 26554,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

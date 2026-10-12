@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "15.3.3",
+  "entities": [
+    {
+      "name": "通信设备供电后备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "15.3.3    除 SDH传输系统干线层设备 、VSAT卫星通信系统  (不\n包括天线加热设备) 、OTN传输系统 、用作传输系统的公网传输\n设备的供电系统的蓄电池后备时间应按特别重要负荷确定 ,  其余\n采用 UPS 供电的通信设备宜按二级负荷配置UPS 后备时间 。\n15.3.4    采用太阳能 、  发电机组等发电设施和蓄电池共同组成的\n电源系统作为站内主供电源系统的站场 ,  传输设备应按特别重\n要负荷供电 ,   蓄电池后备时间应由电力专业根据维抢修人员到\n达站内所需要的时间和发电系统可靠性确定 ; 安全防范设备和\n电话设备宜按照二级负荷供电。",
+      "type": "语义分解",
+      "subject": "通信设备供电后备",
+      "action": "",
+      "operation": "所列传输设备按特别重要负荷其余UPS宜二级太阳能发电蓄电池系统按抢修到达时间可靠性定后备",
+      "condition": "",
+      "constraint": "15.3.3    除 SDH传输系统干线层设备 、VSAT卫星通信系统  (不\n包括天线加热设备) 、OTN传输系统 、用作传输系统的公网传输\n设备的供电系统的蓄电池后备时间应按特别重要负荷确定 ,  其余\n采用 UPS 供电的通信设备宜按二级负荷配置UPS 后备时间 。\n15.3.4    采用太阳能 、  发电机组等发电设施和蓄电池共同组成的\n电源系统作为站内主供电源系统的站场 ,  传输设备应按特别重\n要负荷供电 ,   蓄电池后备时间应由电力专业根据维抢修人员到\n达站内所需要的时间和发电系统可靠性确定 ; 安全防范设备和\n电话设备宜按照二级负荷供电。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信设备供电后备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12137,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；单行含15.3.3及15.3.4专业复核完整负荷清单"
+      ]
+    }
+  }
+}

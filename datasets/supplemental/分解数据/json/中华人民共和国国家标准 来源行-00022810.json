@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022810",
+  "entities": [
+    {
+      "name": "可敷设附加的集中接地装置，宜敷设3根～5根垂直接地 体",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       4    可敷设附加的集中接地装置，宜敷设3根～5根垂直接地\n体。在土壤电阻率较高的地区，应敷设多根放射形水平接地体。\n       5    在土壤电阻率较高的地区，应在地网外围增设一圈环形接\n地体，并应在地网或铁塔四角设置向外辐射的水平接地体，其长度\n宜为20m～30m。",
+      "type": "语义分解",
+      "subject": "可敷设附加的集中接地装置，宜敷设3根～5根垂直接地 体",
+      "action": "",
+      "operation": "可敷设附加的集中接地装置，宜敷设3根～5根垂直接地 体。在土壤电阻率较高的地区，应敷设多根放射形水平接地体。 5 在土壤电阻率较高的地区，应在地网外围增设一圈环形接 地体，并应在地网或铁塔四角设置向外辐射的水平接地体，其长度 宜为20m～30m。",
+      "condition": "",
+      "constraint": "       4    可敷设附加的集中接地装置，宜敷设3根～5根垂直接地\n体。在土壤电阻率较高的地区，应敷设多根放射形水平接地体。\n       5    在土壤电阻率较高的地区，应在地网外围增设一圈环形接\n地体，并应在地网或铁塔四角设置向外辐射的水平接地体，其长度\n宜为20m～30m。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "可敷设附加的集中接地装置，宜敷设3根～5根垂直接地 体"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22810,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

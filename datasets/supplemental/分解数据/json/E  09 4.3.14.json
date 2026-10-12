@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.3.14",
+  "entities": [
+    {
+      "name": "应根据季节性变化特征、物种特性或当地政府的要求，选择适合当地的物种恢复植",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.14 应根据季节性变化特征、物种特性或当地政府的要求，选择适合当地的物种恢复植被。\n4.3.15     动土作业前应获得批准，并提前制定恢复计划。",
+      "type": "语义分解",
+      "subject": "应根据季节性变化特征、物种特性或当地政府的要求，选择适合当地的物种恢复植",
+      "action": "",
+      "operation": "应根据季节性变化特征、物种特性或当地政府的要求，选择适合当地的物种恢复植被。 4.3.15 动土作业前应获得批准，并提前制定恢复计划。",
+      "condition": "",
+      "constraint": "4.3.14 应根据季节性变化特征、物种特性或当地政府的要求，选择适合当地的物种恢复植被。\n4.3.15     动土作业前应获得批准，并提前制定恢复计划。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应根据季节性变化特征、物种特性或当地政府的要求，选择适合当地的物种恢复植"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41095,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

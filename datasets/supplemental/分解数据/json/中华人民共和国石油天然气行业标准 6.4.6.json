@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "6.4.6",
+  "entities": [
+    {
+      "name": "会议电视抗丢包",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.4.6    系统的抗丢包能力最大应支持20%及以上。\n6.4.7    MCU 应具有以下功能 :",
+      "type": "语义分解",
+      "subject": "会议电视抗丢包",
+      "action": "",
+      "operation": "最大支持20%及以上",
+      "condition": "",
+      "constraint": "6.4.6    系统的抗丢包能力最大应支持20%及以上。\n6.4.7    MCU 应具有以下功能 :",
+      "constraint_role": "informational",
+      "related_entities": [
+        "会议电视抗丢包"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 11898,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；另含6.4.7MCU功能引导句无清单"
+      ]
+    }
+  }
+}

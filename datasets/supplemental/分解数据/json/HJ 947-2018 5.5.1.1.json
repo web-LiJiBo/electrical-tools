@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 石油化学工业",
+  "standard_id": "HJ 947-2018",
+  "version": "2018",
+  "chapter_path": "5.5.1.1",
+  "entities": [
+    {
+      "name": "石化管理明确指标",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.5.1.1 排污许可证。所执行的污染物排放(控制)标准。环境影响评价文件及其批复（仅限2015年1月1日(含)后取得环境影响评价批复的排污单位）相关环境管理规定明确要求的污染物指标。",
+      "type": "语义分解",
+      "subject": "石化管理明确指标",
+      "action": "",
+      "operation": "纳许可标准及适用日期环评批复明确指标",
+      "condition": "",
+      "constraint": "5.5.1.1 排污许可证。所执行的污染物排放(控制)标准。环境影响评价文件及其批复（仅限2015年1月1日(含)后取得环境影响评价批复的排污单位）相关环境管理规定明确要求的污染物指标。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "石化管理明确指标"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3031,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

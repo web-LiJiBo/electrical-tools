@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "4.3.3",
+  "entities": [
+    {
+      "name": "道路施工应严格按照当初的计划进行，以最大限度地减少或避免对敏感野生动物及",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.3.3     道路施工应严格按照当初的计划进行，以最大限度地减少或避免对敏感野生动物及鱼类栖息\n地、湿地及政府划定的度假区等的不良影响，同时还应考虑季节性的施工限制，减少环境影响。",
+      "type": "语义分解",
+      "subject": "道路施工应严格按照当初的计划进行，以最大限度地减少或避免对敏感野生动物及",
+      "action": "",
+      "operation": "道路施工应严格按照当初的计划进行，以最大限度地减少或避免对敏感野生动物及鱼类栖息 地、湿地及政府划定的度假区等的不良影响，同时还应考虑季节性的施工限制，减少环境影响。",
+      "condition": "",
+      "constraint": "4.3.3     道路施工应严格按照当初的计划进行，以最大限度地减少或避免对敏感野生动物及鱼类栖息\n地、湿地及政府划定的度假区等的不良影响，同时还应考虑季节性的施工限制，减少环境影响。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "道路施工应严格按照当初的计划进行，以最大限度地减少或避免对敏感野生动物及"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41086,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "6.11.1.15",
+  "entities": [
+    {
+      "name": "气垫船",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.11.1.15 空气(气垫)船应符合下列要求: 应在规定的水深区域内行驶; 装载不应超过额定载荷 ,并保持船体平衡; 螺旋桨应有防护罩; 起动前 ,应观察附近地表情况 ,行驶中禁止急转弯。",
+      "type": "语义分解",
+      "subject": "气垫船",
+      "action": "",
+      "operation": "规定水深不超载平衡桨防护起前察地行驶禁急转",
+      "condition": "",
+      "constraint": "6.11.1.15 空气(气垫)船应符合下列要求: 应在规定的水深区域内行驶; 装载不应超过额定载荷 ,并保持船体平衡; 螺旋桨应有防护罩; 起动前 ,应观察附近地表情况 ,行驶中禁止急转弯。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "气垫船"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4733,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

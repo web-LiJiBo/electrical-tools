@@ -1,0 +1,41 @@
+{
+  "standard_name": "国家管网集团作业许可安全管理细则",
+  "standard_id": "国家管网办[2024]238号",
+  "version": "",
+  "chapter_path": "来源行-00003294",
+  "entities": [
+    {
+      "name": "第七十一条 [断路作业管理要求] 作业前,断路作业责任单位应负责组织相关",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "第七十一条 [断路作业管理要求] 作业前,断路作业责任单位应负责组织相关部门制定交通组织方案,应能保证消防车和其他重要车辆的通行,并满足应急救援要求。",
+      "type": "语义分解",
+      "subject": "第七十一条 [断路作业管理要求] 作业前,断路作业责任单位应负责组织相关",
+      "action": "",
+      "operation": "第七十一条 [断路作业管理要求] 作业前,断路作业责任单位应负责组织相关部门制定交通组织方案,应能保证消防车和其他重要车辆的通行,并满足应急救援要求。",
+      "condition": "",
+      "constraint": "第七十一条 [断路作业管理要求] 作业前,断路作业责任单位应负责组织相关部门制定交通组织方案,应能保证消防车和其他重要车辆的通行,并满足应急救援要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "第七十一条 [断路作业管理要求] 作业前,断路作业责任单位应负责组织相关"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_007",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 3294,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

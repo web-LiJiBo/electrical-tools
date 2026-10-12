@@ -1,0 +1,41 @@
+{
+  "standard_name": "输油管道环境风险评估与防控技术指南",
+  "standard_id": "GB/T 38076-2019",
+  "version": "2019",
+  "chapter_path": "6.1.4",
+  "entities": [
+    {
+      "name": "风险隐患排查",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.4 建议开展突发环境事件隐患排查，明确排查频次，排查规模 排查项目等，对排查出的隐患根据可能造成的危害程度，治理难度等实施分级管理，并建立隐患排查治理档案。突发环境事件隐患排查内容宜包括环境应急管理，环境风险防控措施，管段与环境风险受体之间的通道等。",
+      "type": "语义分解",
+      "subject": "风险隐患排查",
+      "action": "",
+      "operation": "明确频次规模项目分级治理建档关注措施受体污染通道",
+      "condition": "",
+      "constraint": "6.1.4 建议开展突发环境事件隐患排查，明确排查频次，排查规模 排查项目等，对排查出的隐患根据可能造成的危害程度，治理难度等实施分级管理，并建立隐患排查治理档案。突发环境事件隐患排查内容宜包括环境应急管理，环境风险防控措施，管段与环境风险受体之间的通道等。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "风险隐患排查"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1171,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "生活饮用水标准检验方法 第7部分:有机物综合指标",
+  "standard_id": "GB/T 5750.7-2023",
+  "version": "2023",
+  "chapter_path": "5.1.4.4.4",
+  "entities": [
+    {
+      "name": "溶解氧计算",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4.4.4 计算 水中溶解氧的质量浓度(以O。计)计算见式(12) : Vi XC X8义1000 0(0。)二 12 T _ 3 式中: (02 水中溶解氧的质量浓度(以 O。计) ,单位为毫克每升 (n8/) ; Vi 硫代硫酸钠标准溶液用量,单位为毫升 (nL) ; 硫代硫酸钠标准溶液的浓度 ,单位为摩尔每升 (mol/I ) ; 与1.00 ml 硫代硫酸钠标准溶液[c(NaS.03)=1.000 mol/r ]相当以毫克(18)表示的溶解氧的质量; 水样体积 ,单位为毫升(WI) _",
+      "type": "语义分解",
+      "subject": "溶解氧计算",
+      "action": "",
+      "operation": "以滴定体积浓度与样体积计算氧计浓度",
+      "condition": "",
+      "constraint": "5.1.4.4.4 计算 水中溶解氧的质量浓度(以O。计)计算见式(12) : Vi XC X8义1000 0(0。)二 12 T _ 3 式中: (02 水中溶解氧的质量浓度(以 O。计) ,单位为毫克每升 (n8/) ; Vi 硫代硫酸钠标准溶液用量,单位为毫升 (nL) ; 硫代硫酸钠标准溶液的浓度 ,单位为摩尔每升 (mol/I ) ; 与1.00 ml 硫代硫酸钠标准溶液[c(NaS.03)=1.000 mol/r ]相当以毫克(18)表示的溶解氧的质量; 水样体积 ,单位为毫升(WI) _",
+      "constraint_role": "informational",
+      "related_entities": [
+        "溶解氧计算"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_001",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 1776,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；公式12及变量单位破损"
+      ]
+    }
+  }
+}

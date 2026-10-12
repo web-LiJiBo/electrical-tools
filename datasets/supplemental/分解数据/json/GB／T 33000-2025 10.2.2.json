@@ -1,0 +1,41 @@
+{
+  "standard_name": "大中型企业安全生产标准化管理体系要求",
+  "standard_id": "GB/T 33000-2025",
+  "version": "2025",
+  "chapter_path": "10.2.2",
+  "entities": [
+    {
+      "name": "设施运行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.2.2 设备设施运行 企业应对设备设施运行进行规范化管理，确保其始终处于安全可靠的运行状态。企业应对危险性较大的设备设施建立在线监测系统，对其运行状态参数进行监测、监控、预警、跟踪分析和处理。企业应安排人员负责安全设施检查与监测，定期检测维护。",
+      "type": "语义分解",
+      "subject": "设施运行",
+      "action": "",
+      "operation": "规范安全可靠高危在线监控预警分析安全设施专人定检维护",
+      "condition": "",
+      "constraint": "10.2.2 设备设施运行 企业应对设备设施运行进行规范化管理，确保其始终处于安全可靠的运行状态。企业应对危险性较大的设备设施建立在线监测系统，对其运行状态参数进行监测、监控、预警、跟踪分析和处理。企业应安排人员负责安全设施检查与监测，定期检测维护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设施运行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7273,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "16.2.8",
+  "entities": [
+    {
+      "name": "站内通信线路路由",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "16.2.8    站内通信线路应避免与输油  (气)  管道 、  燃气管道 、  高\n压电力电缆在道路同侧建设 ,   不可避免时通信管道与其他管线\n建筑物间的最小净距应符合表 16 .2 . 8 要求。",
+      "type": "语义分解",
+      "subject": "站内通信线路路由",
+      "action": "",
+      "operation": "避免与输油气燃气高压缆同侧不可避免净距按表16.2.8",
+      "condition": "",
+      "constraint": "16.2.8    站内通信线路应避免与输油  (气)  管道 、  燃气管道 、  高\n压电力电缆在道路同侧建设 ,   不可避免时通信管道与其他管线\n建筑物间的最小净距应符合表 16 .2 . 8 要求。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "站内通信线路路由"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12193,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；引用表未提供"
+      ]
+    }
+  }
+}

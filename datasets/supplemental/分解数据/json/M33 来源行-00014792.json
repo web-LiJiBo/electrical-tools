@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014792",
+  "entities": [
+    {
+      "name": "应具备波长冲突管理能力，能自动避免出现特定波长多源一宿的情况",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   应具备波长冲突管理能力，能自动避免出现特定波长多源一宿的情况。\n\n13.4.2.2   电路信息的查询与修改",
+      "type": "语义分解",
+      "subject": "应具备波长冲突管理能力，能自动避免出现特定波长多源一宿的情况",
+      "action": "",
+      "operation": "应具备波长冲突管理能力，能自动避免出现特定波长多源一宿的情况。 13.4.2.2 电路信息的查询与修改",
+      "condition": "",
+      "constraint": "   应具备波长冲突管理能力，能自动避免出现特定波长多源一宿的情况。\n\n13.4.2.2   电路信息的查询与修改",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应具备波长冲突管理能力，能自动避免出现特定波长多源一宿的情况"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14792,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

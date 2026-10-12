@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75.200\nCCS    E9",
+  "standard_id": "Q/GGW",
+  "version": "",
+  "chapter_path": "来源行-00037327",
+  "entities": [
+    {
+      "name": "报告主体应报告生产过程中所使用不同品种化石燃料消耗量、火炬燃烧气体的排放",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   报告主体应报告生产过程中所使用不同品种化石燃料消耗量、火炬燃烧气体的排放量、原油输送量、\n压气站/增压站以及计量站/分输站等种类和数量、净购入电力和热力等，并阐述它们的数据质量控制计\n划及实际执行情况。",
+      "type": "语义分解",
+      "subject": "报告主体应报告生产过程中所使用不同品种化石燃料消耗量、火炬燃烧气体的排放",
+      "action": "",
+      "operation": "报告主体应报告生产过程中所使用不同品种化石燃料消耗量、火炬燃烧气体的排放量、原油输送量、 压气站/增压站以及计量站/分输站等种类和数量、净购入电力和热力等，并阐述它们的数据质量控制计 划及实际执行情况。",
+      "condition": "",
+      "constraint": "   报告主体应报告生产过程中所使用不同品种化石燃料消耗量、火炬燃烧气体的排放量、原油输送量、\n压气站/增压站以及计量站/分输站等种类和数量、净购入电力和热力等，并阐述它们的数据质量控制计\n划及实际执行情况。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "报告主体应报告生产过程中所使用不同品种化石燃料消耗量、火炬燃烧气体的排放"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_033",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 37327,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

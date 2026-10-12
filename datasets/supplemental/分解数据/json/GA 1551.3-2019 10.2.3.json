@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油石化系统治安反恐防范要求 第3部分:成品油和天然气销售企业",
+  "standard_id": "GA 1551.3-2019",
+  "version": "2019",
+  "chapter_path": "10.2.3",
+  "entities": [
+    {
+      "name": "储库周界防冲撞",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "10.2.3 储油(气)库区周界出入口防冲撞装置应设置为阻截状态。",
+      "type": "语义分解",
+      "subject": "储库周界防冲撞",
+      "action": "",
+      "operation": "阻截状态",
+      "condition": "",
+      "constraint": "10.2.3 储油(气)库区周界出入口防冲撞装置应设置为阻截状态。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储库周界防冲撞"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 5754,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

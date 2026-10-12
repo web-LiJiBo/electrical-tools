@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M 33",
+  "version": "",
+  "chapter_path": "来源行-00016995",
+  "entities": [
+    {
+      "name": "a) 对于与复用结构相关开销的测试，根据 OTN 设备支持的复用结构类型",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "       a)  对于与复用结构相关开销的测试，根据 OTN 设备支持的复用结构类型选择，LOFLOM 的告警测\n\n试待研究。",
+      "type": "语义分解",
+      "subject": "a) 对于与复用结构相关开销的测试，根据 OTN 设备支持的复用结构类型",
+      "action": "",
+      "operation": "a) 对于与复用结构相关开销的测试，根据 OTN 设备支持的复用结构类型选择，LOFLOM 的告警测 试待研究。",
+      "condition": "",
+      "constraint": "       a)  对于与复用结构相关开销的测试，根据 OTN 设备支持的复用结构类型选择，LOFLOM 的告警测\n\n试待研究。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "a) 对于与复用结构相关开销的测试，根据 OTN 设备支持的复用结构类型"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_016",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 16995,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

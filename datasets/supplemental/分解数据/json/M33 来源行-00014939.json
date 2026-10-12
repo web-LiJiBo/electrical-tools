@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 33.040.20",
+  "standard_id": "M33",
+  "version": "",
+  "chapter_path": "来源行-00014939",
+  "entities": [
+    {
+      "name": "方式a) 不能满足MAC 帧满带宽传送",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   方式a)  不能满足MAC  帧满带宽传送；方式b)  c)  可实现MAC 帧满带宽传送，方 式c)  实现满\n带宽传送时，应满足OPUflex中的时隙个数为8个的条件，但不能提供前同步码、SFD 、IPG 等透明传\n送；方式d)  可实现10GE LAN  业务的全比特透明传送。",
+      "type": "语义分解",
+      "subject": "方式a) 不能满足MAC 帧满带宽传送",
+      "action": "",
+      "operation": "方式a) 不能满足MAC 帧满带宽传送；方式b) c) 可实现MAC 帧满带宽传送，方 式c) 实现满 带宽传送时，应满足OPUflex中的时隙个数为8个的条件，但不能提供前同步码、SFD 、IPG 等透明传 送；方式d) 可实现10GE LAN 业务的全比特透明传送。",
+      "condition": "",
+      "constraint": "   方式a)  不能满足MAC  帧满带宽传送；方式b)  c)  可实现MAC 帧满带宽传送，方 式c)  实现满\n带宽传送时，应满足OPUflex中的时隙个数为8个的条件，但不能提供前同步码、SFD 、IPG 等透明传\n送；方式d)  可实现10GE LAN  业务的全比特透明传送。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "方式a) 不能满足MAC 帧满带宽传送"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_015",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 14939,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

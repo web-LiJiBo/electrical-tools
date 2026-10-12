@@ -1,0 +1,37 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "6.2.1.1",
+  "entities": [
+    {
+      "name": "能耗数据",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.2.1.1 在线采集的能耗数据应包括当前时刻总累积量 前1小时累积量和前1日 累积量。",
+      "type": "语义分解",
+      "subject": "能耗数据",
+      "action": "",
+      "operation": "包含三个累计时段",
+      "condition": "在线采集的能耗数据",
+      "constraint": "当前时刻总累积量 前1小时累积量和前1日 累积量",
+      "constraint_role": "unspecified",
+      "related_entities": [
+        "能耗数据"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": false,
+      "reasons": []
+    }
+  }
+}

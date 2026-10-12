@@ -1,0 +1,41 @@
+{
+  "standard_name": "土壤环境监测技术规范",
+  "standard_id": "HJ 166-2026",
+  "version": "2026",
+  "chapter_path": "6.7",
+  "entities": [
+    {
+      "name": "土壤布点质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.7 布点质量保证和质量控制 点位布设过程中应采取有效措施。确保其科学性。代表性和可行性 : 点位布设后,检查点位的技术符合性, 防止主观随意布点;  重点关注监测单元划分合理性。点 位布设代表性和点位调整必要性等; 点位现场核查所用定位设备定位准确。稳定,精度达到米级。",
+      "type": "语义分解",
+      "subject": "土壤布点质控",
+      "action": "",
+      "operation": "检查单元代表性调整必要性防随意布点定位准确稳定米级",
+      "condition": "",
+      "constraint": "6.7 布点质量保证和质量控制 点位布设过程中应采取有效措施。确保其科学性。代表性和可行性 : 点位布设后,检查点位的技术符合性, 防止主观随意布点;  重点关注监测单元划分合理性。点 位布设代表性和点位调整必要性等; 点位现场核查所用定位设备定位准确。稳定,精度达到米级。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "土壤布点质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2226,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

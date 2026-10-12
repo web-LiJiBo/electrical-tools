@@ -1,0 +1,39 @@
+{
+  "standard_name": "测量不确定度评定和表示",
+  "standard_id": "GB/T 27418--2017",
+  "version": "2017",
+  "chapter_path": "5.1.4",
+  "entities": [
+    {
+      "name": "灵敏系数",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.4 灵敏系数af/ar; 有时不是通过函数f计算得到 ,而是用实验确定:采用变化一个特定的K; ,而 将其余输人量保持不变时 ,测量出由此引起的 Y 的变化。 这种情况下 ,对函数+(或当仅有几个灵敏系 数是如此确定时 ,对函数「的一部分)的了解就相应地缩小到基于测得的灵敏系数进行的经验性的一 阶泰勒级数展开式。",
+      "type": "语义分解",
+      "subject": "灵敏系数",
+      "action": "",
+      "operation": "通过改变单一输入量实验确定",
+      "condition": "将其余输人量保持不变时",
+      "constraint": "用实验确定",
+      "constraint_role": "informational",
+      "related_entities": [
+        "灵敏系数"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "符号及泰勒展开式引用需核实"
+      ]
+    }
+  }
+}

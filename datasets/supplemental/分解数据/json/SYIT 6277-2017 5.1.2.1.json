@@ -1,0 +1,41 @@
+{
+  "standard_name": "硫化氢环境人身防护规范",
+  "standard_id": "SYIT 6277-2017",
+  "version": "2017",
+  "chapter_path": "5.1.2.1",
+  "entities": [
+    {
+      "name": "已知超硫阈限场所",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.1.2.1 已知含有硫化氢。且预测超过阈限值的场所应至少按以下要求配备 a) 陆上按在岗人员数 IOo% 配备,另配209备用气瓶。 b) 海洋石油设施上按定员 I00% 配备。另配20%备用气瓶。",
+      "type": "语义分解",
+      "subject": "已知超硫阈限场所",
+      "action": "",
+      "operation": "按陆海人员配置正压呼吸器及备用瓶",
+      "condition": "",
+      "constraint": "5.1.2.1 已知含有硫化氢。且预测超过阈限值的场所应至少按以下要求配备 a) 陆上按在岗人员数 IOo% 配备,另配209备用气瓶。 b) 海洋石油设施上按定员 I00% 配备。另配20%备用气瓶。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "已知超硫阈限场所"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 7411,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；IOo%和209数字异常需核查陆海不同要求"
+      ]
+    }
+  }
+}

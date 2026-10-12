@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  75.200",
+  "standard_id": "E 98",
+  "version": "",
+  "chapter_path": "来源行-00049314",
+  "entities": [
+    {
+      "name": "储罐的接地极不应使用比罐体电极电位更正的材料",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "3.0.5      储罐的接地极不应使用比罐体电极电位更正的材料。\n3.0.6       储罐与埋地管道可联合进行区域阴极保护。",
+      "type": "语义分解",
+      "subject": "储罐的接地极不应使用比罐体电极电位更正的材料",
+      "action": "",
+      "operation": "储罐的接地极不应使用比罐体电极电位更正的材料。 3.0.6 储罐与埋地管道可联合进行区域阴极保护。",
+      "condition": "",
+      "constraint": "3.0.5      储罐的接地极不应使用比罐体电极电位更正的材料。\n3.0.6       储罐与埋地管道可联合进行区域阴极保护。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "储罐的接地极不应使用比罐体电极电位更正的材料"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_044",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 49314,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

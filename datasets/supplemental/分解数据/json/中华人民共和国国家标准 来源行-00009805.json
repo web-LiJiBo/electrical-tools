@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00009805",
+  "entities": [
+    {
+      "name": ")波道组织应以满足近期业务需求为主，可考虑一定富余",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "1)波道组织应以满足近期业务需求为主，可考虑一定富余；\n\n2)波道的使用宜从小序号开始向上排列顺序使用；\n3)不同光复用段的波道配置宜采用同序号的波道；\n4)当采用不同速率的波道在线路侧混传时，不同速率的波\n  道宜安排在不同的波段。",
+      "type": "语义分解",
+      "subject": ")波道组织应以满足近期业务需求为主，可考虑一定富余",
+      "action": "",
+      "operation": ")波道组织应以满足近期业务需求为主，可考虑一定富余； 2)波道的使用宜从小序号开始向上排列顺序使用； 3)不同光复用段的波道配置宜采用同序号的波道； 4)当采用不同速率的波道在线路侧混传时，不同速率的波 道宜安排在不同的波段。",
+      "condition": "",
+      "constraint": "1)波道组织应以满足近期业务需求为主，可考虑一定富余；\n\n2)波道的使用宜从小序号开始向上排列顺序使用；\n3)不同光复用段的波道配置宜采用同序号的波道；\n4)当采用不同速率的波道在线路侧混传时，不同速率的波\n  道宜安排在不同的波段。",
+      "constraint_role": "informational",
+      "related_entities": [
+        ")波道组织应以满足近期业务需求为主，可考虑一定富余"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_010",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 9805,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

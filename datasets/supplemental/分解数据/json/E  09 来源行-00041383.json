@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS  13.100",
+  "standard_id": "E  09",
+  "version": "",
+  "chapter_path": "来源行-00041383",
+  "entities": [
+    {
+      "name": "当所有的削减手段已经实施后，应对剩余材料的重复利用或回收进行评估，如通过",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "   当所有的削减手段已经实施后，应对剩余材料的重复利用或回收进行评估，如通过重新导入油蒸\n馏器或输送至精炼厂的方式可以回收废油、液压油和含油的储罐水。适宜时，油桶、蓄电池和金属切\n屑可以出售或归还卖主。在可行的地方，罐底沉积物和淤泥也能出售给回收人员。\n7.6.3   处 理",
+      "type": "语义分解",
+      "subject": "当所有的削减手段已经实施后，应对剩余材料的重复利用或回收进行评估，如通过",
+      "action": "",
+      "operation": "当所有的削减手段已经实施后，应对剩余材料的重复利用或回收进行评估，如通过重新导入油蒸 馏器或输送至精炼厂的方式可以回收废油、液压油和含油的储罐水。适宜时，油桶、蓄电池和金属切 屑可以出售或归还卖主。在可行的地方，罐底沉积物和淤泥也能出售给回收人员。 7.6.3 处 理",
+      "condition": "",
+      "constraint": "   当所有的削减手段已经实施后，应对剩余材料的重复利用或回收进行评估，如通过重新导入油蒸\n馏器或输送至精炼厂的方式可以回收废油、液压油和含油的储罐水。适宜时，油桶、蓄电池和金属切\n屑可以出售或归还卖主。在可行的地方，罐底沉积物和淤泥也能出售给回收人员。\n7.6.3   处 理",
+      "constraint_role": "informational",
+      "related_entities": [
+        "当所有的削减手段已经实施后，应对剩余材料的重复利用或回收进行评估，如通过"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_035",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 41383,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}

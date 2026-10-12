@@ -1,0 +1,41 @@
+{
+  "standard_name": "建设用地土壤污染状况调查技术导则",
+  "standard_id": "HJ 25.1-2019",
+  "version": "2019",
+  "chapter_path": "6.1.6",
+  "entities": [
+    {
+      "name": "调查采样质控",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "6.1.6 质量保证和质量控制 现场质量保证和质量控制措施应包括:  防止样品污染的工作程序,运输空白样分析,现场平行样分析,采样设备清洗空白样分析,采样介质对分析结果影响分析, 以及样品保存方式和时间对分析结果的影响分析等,具体参见 HJ 25.2。实验室分析的质量保证和质量控制的具体要求见 HJIT 164 和 HJIT 166。",
+      "type": "语义分解",
+      "subject": "调查采样质控",
+      "action": "",
+      "operation": "防污染运输空白现场平行设备空白介质保存影响按相关规范",
+      "condition": "",
+      "constraint": "6.1.6 质量保证和质量控制 现场质量保证和质量控制措施应包括:  防止样品污染的工作程序,运输空白样分析,现场平行样分析,采样设备清洗空白样分析,采样介质对分析结果影响分析, 以及样品保存方式和时间对分析结果的影响分析等,具体参见 HJ 25.2。实验室分析的质量保证和质量控制的具体要求见 HJIT 164 和 HJIT 166。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "调查采样质控"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2640,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "排污单位自行监测技术指南 总则",
+  "standard_id": "HJ 819-2017",
+  "version": "2017",
+  "chapter_path": "5.6.1",
+  "entities": [
+    {
+      "name": "监测点位描述",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "5.6.1 监测点位的描逑 所有监测点位均应在监测方案中通过语言描述，图形示意等形式明确体现。描述内容包括监测点位的平面位置及污染物的排放去向等。废水监测点需明确其所在废水排放口，对应的废水处理工艺。废气排放监测点位需明确其在排放烟道的位置分布，对应的污染源及处理设施。",
+      "type": "语义分解",
+      "subject": "监测点位描述",
+      "action": "",
+      "operation": "文字图明确平面去向废水对应口工艺废气烟道源设施",
+      "condition": "",
+      "constraint": "5.6.1 监测点位的描逑 所有监测点位均应在监测方案中通过语言描述，图形示意等形式明确体现。描述内容包括监测点位的平面位置及污染物的排放去向等。废水监测点需明确其所在废水排放口，对应的废水处理工艺。废气排放监测点位需明确其在排放烟道的位置分布，对应的污染源及处理设施。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "监测点位描述"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_002",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 2865,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

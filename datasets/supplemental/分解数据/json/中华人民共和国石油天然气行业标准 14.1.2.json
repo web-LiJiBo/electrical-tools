@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS   75 . 180\nP  71",
+  "standard_id": "中华人民共和国石油天然气行业标准",
+  "version": "",
+  "chapter_path": "14.1.2",
+  "entities": [
+    {
+      "name": "通信机房共用",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "14.1.2   为节约建筑面积 ,  简化运行维护和管理 ,  通信设备一般\n与站场内不高于 380V  (AC)   电压等级的低压电气设备 ,   如 自\n动化 SCADA设备 、   阴极保护设备 、   交流配电设备等设备共用\n机房。",
+      "type": "语义分解",
+      "subject": "通信机房共用",
+      "action": "",
+      "operation": "一般与不高于交流380伏低压电气设备共用",
+      "condition": "",
+      "constraint": "14.1.2   为节约建筑面积 ,  简化运行维护和管理 ,  通信设备一般\n与站场内不高于 380V  (AC)   电压等级的低压电气设备 ,   如 自\n动化 SCADA设备 、   阴极保护设备 、   交流配电设备等设备共用\n机房。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "通信机房共用"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_004",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 12403,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；条文说明性内容"
+      ]
+    }
+  }
+}

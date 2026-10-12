@@ -1,0 +1,41 @@
+{
+  "standard_name": "石油天然气安全规程",
+  "standard_id": "AQ 2012-2007",
+  "version": "2007",
+  "chapter_path": "7.2.5.1",
+  "entities": [
+    {
+      "name": "设备运行",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "7.2.5.1 设备不应超温 ,超压 ,超速 ,超负荷运行。",
+      "type": "语义分解",
+      "subject": "设备运行",
+      "action": "",
+      "operation": "禁超温压速负荷",
+      "condition": "",
+      "constraint": "7.2.5.1 设备不应超温 ,超压 ,超速 ,超负荷运行。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "设备运行"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_003",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 4804,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

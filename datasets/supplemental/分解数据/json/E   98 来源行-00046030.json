@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 75.200",
+  "standard_id": "E   98",
+  "version": "",
+  "chapter_path": "来源行-00046030",
+  "entities": [
+    {
+      "name": "应收集管道的设计参数、施工概况、运行参数、维修维 护历史等资料，按照本规",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.1   应收集管道的设计参数、施工概况、运行参数、维修维\n护历史等资料，按照本规范附录A.0.1～A.0.5 填写相关内容。\n4.2.2   宜按要求收集管道内腐蚀检测评价、监测信息及其他可\n能影响管道内腐蚀的资料，并宜按照本规范附录A.0.6～A.0.8\n填写相关内容。",
+      "type": "语义分解",
+      "subject": "应收集管道的设计参数、施工概况、运行参数、维修维 护历史等资料，按照本规",
+      "action": "",
+      "operation": "应收集管道的设计参数、施工概况、运行参数、维修维 护历史等资料，按照本规范附录A.0.1～A.0.5 填写相关内容。 4.2.2 宜按要求收集管道内腐蚀检测评价、监测信息及其他可 能影响管道内腐蚀的资料，并宜按照本规范附录A.0.6～A.0.8 填写相关内容。",
+      "condition": "",
+      "constraint": "4.2.1   应收集管道的设计参数、施工概况、运行参数、维修维\n护历史等资料，按照本规范附录A.0.1～A.0.5 填写相关内容。\n4.2.2   宜按要求收集管道内腐蚀检测评价、监测信息及其他可\n能影响管道内腐蚀的资料，并宜按照本规范附录A.0.6～A.0.8\n填写相关内容。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "应收集管道的设计参数、施工概况、运行参数、维修维 护历史等资料，按照本规"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_041",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 46030,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

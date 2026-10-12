@@ -1,0 +1,39 @@
+{
+  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_id": "DEC-OTP-G-IS-001-2025-2",
+  "version": "",
+  "chapter_path": "4.2.3",
+  "entities": [
+    {
+      "name": "主要用能设备",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.2.3 主要用能设备的能源计量器具应采用单机配备方式 主要用能设备的划分应 符合《用能单位能源计量器具配备与管理通则》 GB 17167 的要求。油气储运工程主 要用能设备包括但不限于以下所列: a)  天然气管道压缩机机组`加热炉; b)  原油管道输油主泵机组。给油泵机组。加热炉, 锅炉; 成品油管道输油主泵机组,给油泵机组。混油处理加热炉; d) 油库外输泵机组。加热炉- 锅炉; 储气库压缩机机组; 杰 {。婴。低压泵机组` f LNG 接收站浸没燃烧式气化器 高压泵机组`海水泵机组。压 缩机机组。",
+      "type": "语义分解",
+      "subject": "主要用能设备",
+      "action": "",
+      "operation": "单机配备能源计量器具",
+      "condition": "",
+      "constraint": "应采用单机配备方式",
+      "constraint_role": "informational",
+      "related_entities": [
+        "主要用能设备"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_first100",
+    "decomposition_method": "assistant_semantic_review",
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "设备清单部分文字损坏；GB 17167引用要求需补充正文"
+      ]
+    }
+  }
+}

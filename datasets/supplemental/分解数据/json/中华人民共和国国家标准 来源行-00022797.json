@@ -1,0 +1,41 @@
+{
+  "standard_name": "UDC",
+  "standard_id": "中华人民共和国国家标准",
+  "version": "",
+  "chapter_path": "来源行-00022797",
+  "entities": [
+    {
+      "name": "微波天线及机房应在避雷针保护范围内，且宜为铁塔避雷 针设置专门的引下线，",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "      1    微波天线及机房应在避雷针保护范围内，且宜为铁塔避雷\n针设置专门的引下线，当铁塔金属构件电气连接可靠时，铁塔避雷\n针可不设置专门的引下线，避雷针与引下线应可靠焊接连通，引下\n线材料宜采用40mm×4mm    的镀锌扁钢。引下线的入地点应设\n在与机房地网不相邻的铁塔地网另一侧。",
+      "type": "语义分解",
+      "subject": "微波天线及机房应在避雷针保护范围内，且宜为铁塔避雷 针设置专门的引下线，",
+      "action": "",
+      "operation": "微波天线及机房应在避雷针保护范围内，且宜为铁塔避雷 针设置专门的引下线，当铁塔金属构件电气连接可靠时，铁塔避雷 针可不设置专门的引下线，避雷针与引下线应可靠焊接连通，引下 线材料宜采用40mm×4mm 的镀锌扁钢。引下线的入地点应设 在与机房地网不相邻的铁塔地网另一侧。",
+      "condition": "",
+      "constraint": "      1    微波天线及机房应在避雷针保护范围内，且宜为铁塔避雷\n针设置专门的引下线，当铁塔金属构件电气连接可靠时，铁塔避雷\n针可不设置专门的引下线，避雷针与引下线应可靠焊接连通，引下\n线材料宜采用40mm×4mm    的镀锌扁钢。引下线的入地点应设\n在与机房地网不相邻的铁塔地网另一侧。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "微波天线及机房应在避雷针保护范围内，且宜为铁塔避雷 针设置专门的引下线，"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_021",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 22797,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "standard_name": "环境保护管理规范 第7部分: 环境统计技术规范",
+  "standard_id": "Q/GGW 04005.7-2022",
+  "version": "2022",
+  "chapter_path": "4.7.1",
+  "entities": [
+    {
+      "name": "突发环境事件",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "4.7.1 突发环境事件数量应包括统计周期内企业发生的特别重大。重大。较大及一般A级一般B级一般C级突发环境事件数量。",
+      "type": "语义分解",
+      "subject": "突发环境事件",
+      "action": "",
+      "operation": "按事件级别统计发生数量",
+      "condition": "统计周期内",
+      "constraint": "4.7.1 突发环境事件数量应包括统计周期内企业发生的特别重大。重大。较大及一般A级一般B级一般C级突发环境事件数量。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "突发环境事件"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_additional1000",
+    "decomposition_method": "assistant_semantic_review",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 598,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
+      ]
+    }
+  }
+}

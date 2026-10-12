@@ -1,0 +1,41 @@
+{
+  "standard_name": "ICS 47. 020. 05",
+  "standard_id": "CCS A 29",
+  "version": "",
+  "chapter_path": "来源行-00043235",
+  "entities": [
+    {
+      "name": "d) 出厂检验结果与上一次型式检验的结果存在较大差别",
+      "type": "条款对象"
+    }
+  ],
+  "rules": [
+    {
+      "content": "d)    出厂检验结果与上一次型式检验的结果存在较大差别 ;\ne)    上级质量检验部门提出检验 。",
+      "type": "语义分解",
+      "subject": "d) 出厂检验结果与上一次型式检验的结果存在较大差别",
+      "action": "",
+      "operation": "d) 出厂检验结果与上一次型式检验的结果存在较大差别 ; e) 上级质量检验部门提出检验 。",
+      "condition": "",
+      "constraint": "d)    出厂检验结果与上一次型式检验的结果存在较大差别 ;\ne)    上级质量检验部门提出检验 。",
+      "constraint_role": "informational",
+      "related_entities": [
+        "d) 出厂检验结果与上一次型式检验的结果存在较大差别"
+      ]
+    }
+  ],
+  "relations": [],
+  "metadata": {
+    "dataset": "supplemental_excel",
+    "batch": "assistant_remaining_038",
+    "decomposition_method": "rule_based_field_extraction_draft",
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "source_index_line": 43235,
+    "audit": {
+      "manual_review_required": true,
+      "reasons": [
+        "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
+      ]
+    }
+  }
+}
