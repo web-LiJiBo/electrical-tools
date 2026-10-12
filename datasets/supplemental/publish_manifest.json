@@ -18,6 +18,6 @@
   "runtime_configuration": ["configs/settings.example.yaml", "configs/settings.offline.yaml"],
   "instruction_templates": {"device_count": 17, "action_template_count": 41, "simulation_only": true, "dispatch_allowed": false},
   "precommit_verification": {"related_pytest": "164 passed in 5.93s", "secret_pattern_scan": "no matches", "snapshot_copy": "逐字节一致，文件数量相同"},
-  "publication_status": "本地发布准备；GitHub是否已同步须单独核对远端提交",
+  "publication_status": "已推送至web-LiJiBo/electrical-tools的main，GitHub接口已确认代码与数据提交17e2e1b0c194fa180bad08bdfb31996cedc073c7；后续说明更新以远端当前提交为准",
   "limitations": "待复核初稿不等于有效标准或设备控制依据，本快照不是完整分解过程归档"
 }
