@@ -11,8 +11,8 @@
   },
   "notice": "这些是待补充模板，不会由现有模板库自动加载。条款引用、状态限值与控制动作授权必须分别核验，不把温升限值或试验工况直接变成跳闸条件。",
   "current_gaps": [
-    "现有TemplateLibrary只按场景动作协议枚举，device_type为空，没有具体设备点位、适用条款和状态反馈绑定。",
-    "主流程IEC61850Adapter输出概念候选载荷，不含完整模拟对象引用、控制模型和确认服务映射。",
+    "现有TemplateLibrary只按场景动作协议枚举，device_type为空，没有具体设备点位、适用条款和生成条件绑定。",
+    "主流程IEC61850Adapter输出概念候选载荷，不含完整模拟对象引用、控制模型和协议字段映射。",
     "主流程ModbusAdapter仅写单线圈FC05，不能把有功设定值或温度参数写入线圈；独立模拟模块的寄存器映射尚未与真实动作依据打通。",
     "补充库46466条含待复核自动字段抽取初稿，不能据此自动新增可执行动作。",
     "当前来源绑定的状态判定只覆盖两台模拟变压器三个温升参数；断路器和逆变器缺少完整的适用判定条款绑定。"
@@ -33,12 +33,7 @@
     "protocol",
     "mock_point_mapping",
     "parameter_type_unit_range",
-    "confirmation_required",
-    "proposal_expiry",
-    "state_recheck",
-    "expected_state_feedback",
-    "denial_reasons",
-    "idempotency"
+    "denial_reasons"
   ],
   "items": [
     {
@@ -61,7 +56,7 @@
       "action": "alarm",
       "device_type": "transformer",
       "source_clause_ids": [],
-      "needed": "补齐明确允许报警的动作条款、报警判据、恢复条件、持续时间、模拟告警点及反馈。不能仅引用11_clause2作为动作授权。"
+      "needed": "补齐明确允许报警的动作条款、报警判据、恢复条件、持续时间、模拟告警点及参数校验。不能仅引用11_clause2作为动作授权。"
     },
     {
       "priority": "P1",
@@ -70,7 +65,7 @@
       "action": "start_stop_cooling",
       "device_type": "cooling_fan_pump",
       "source_clause_ids": [],
-      "needed": "补齐风机油泵启停条款、适用冷却模式、投入退出阈值与回差、启动许可、故障闭锁和反馈；主模板库还需支持独立冷却设备类型。"
+      "needed": "补齐风机油泵启停条款、适用冷却模式、投入退出阈值与回差、启动许可、故障闭锁和生成条件；主模板库还需支持独立冷却设备类型。"
     },
     {
       "priority": "P1",
@@ -88,7 +83,7 @@
       "action": "close",
       "device_type": "breaker",
       "source_clause_ids": [],
-      "needed": "补齐合闸许可条款、接地刀闸和隔离开关状态联锁、故障清除条件、检修闭锁、必要同期条件及分合位反馈；close_permission不能替代完整联锁。"
+      "needed": "补齐合闸许可条款、接地刀闸和隔离开关状态联锁、故障清除条件、检修闭锁、必要同期条件及当前分合位事实；close_permission不能替代完整联锁。"
     },
     {
       "priority": "P2",
@@ -97,7 +92,7 @@
       "action": "adjust_active_power",
       "device_type": "inverter",
       "source_clause_ids": [],
-      "needed": "补齐有功调节动作条款、功率上下限斜率与权限，模拟Modbus FC06/16寄存器类型缩放单位或IEC61850模拟设定点，并绑定回读；不能沿用FC05布尔线圈。"
+      "needed": "补齐有功调节动作条款、功率上下限斜率与权限，模拟Modbus FC06/16寄存器类型缩放单位或IEC61850模拟设定点，并校验参数编码；不能沿用FC05布尔线圈。"
     },
     {
       "priority": "P2",
@@ -106,7 +101,7 @@
       "action": "adjust_reactive_power_or_voltage",
       "device_type": "inverter",
       "source_clause_ids": [],
-      "needed": "补齐无功电压控制条款、控制模式互斥、kvar与电压单位、能力曲线边界及设定反馈。"
+      "needed": "补齐无功电压控制条款、控制模式互斥、kvar与电压单位、能力曲线边界及参数校验。"
     },
     {
       "priority": "P2",
@@ -135,7 +130,7 @@
         "10.4.1",
         "10.5.1"
       ],
-      "needed": "补充开工日期、发现日期、维修类型、延迟修复适用性及复测时间等事实，以原文期限形成模拟检测维修提醒；新增模拟工单状态反馈。先核验标准名称完整文号适用范围，不把维修流程转换为阀门控制。",
+      "needed": "补充开工日期、发现日期、维修类型、延迟修复适用性及复测时间等事实，以原文期限形成模拟检测维修提醒；生成候选工单字段。先核验标准名称完整文号适用范围，不把维修流程转换为阀门控制。",
       "protocol": "mock_workflow_not_device_protocol",
       "automatic_control_allowed": false
     },
@@ -170,5 +165,6 @@
     "examples": "configs/instruction_template_examples.json",
     "source_binding_status": "新增动作条款绑定为空；主流程不会自动授权",
     "execution_status": "generation_only"
-  }
+  },
+  "generation_only": true
 }

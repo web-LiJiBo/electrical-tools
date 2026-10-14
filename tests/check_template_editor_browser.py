@@ -28,6 +28,7 @@ with TemporaryDirectory() as temporary, sync_playwright() as playwright:
     page.goto((root / 'frontend/template-editor.html').as_uri())
     page.wait_for_load_state('networkidle')
     assert page.locator('#query-panel').is_visible()
+    assert page.locator('#state-key').count() == 0
     original_count = sum(len(d['actions']) for d in service.devices.values())
     assert page.locator('#catalog .item').count() == original_count
     page.select_option('#protocol-filter', 'Modbus')
@@ -38,6 +39,8 @@ with TemporaryDirectory() as temporary, sync_playwright() as playwright:
     detail = json.loads(page.locator('#detail-content').inner_text())
     assert detail['有效协议点位']['address'] == 101
     assert detail['动作标识'] == 'adjust_reactive_power'
+    assert '预期反馈' not in detail and '反馈状态字段' not in detail
+    assert 'expected_feedback' not in detail['完整模板']
     page.fill('#keyword', '不存在的模板xyz')
     assert page.locator('#catalog .item').count() == 0
     page.click('#clear-filters')

@@ -61,7 +61,6 @@
           "maximum": 100,
           "configured_parameter_fact": "runback_target_mw",
           "decrease_only": true,
-          "state_key": "active_power_mw",
           "source_rule_ids": [
             "1626_clause2:rule:1"
           ],
@@ -83,11 +82,7 @@
             }
           },
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "active_power_mw",
-            "parameter": "target_power_mw",
-            "value": null
-          }
+          "current_state_key": "active_power_mw"
         }
       }
     },
@@ -149,29 +144,15 @@
           "function": "overcurrent_protection",
           "condition": "current >= 100",
           "value": false,
-          "state_key": "position",
-          "state_value": "open",
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "position",
-            "parameter": null,
-            "value": "open"
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "close": {
           "function": "switch_control",
           "condition": "close_permission >= 1",
           "value": true,
-          "state_key": "position",
-          "state_value": "closed",
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "position",
-            "parameter": null,
-            "value": "closed"
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -199,29 +180,15 @@
           "function": "overcurrent_protection",
           "condition": "current >= 100",
           "value": false,
-          "state_key": "position",
-          "state_value": "open",
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "position",
-            "parameter": null,
-            "value": "open"
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "close": {
           "function": "switch_control",
           "condition": "close_permission >= 1",
           "value": true,
-          "state_key": "position",
-          "state_value": "closed",
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "position",
-            "parameter": null,
-            "value": "closed"
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -257,14 +224,8 @@
           "unit": "kW",
           "minimum": 0,
           "maximum": 1000,
-          "state_key": "active_power_kw",
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "active_power_kw",
-            "parameter": "power_kw",
-            "value": null
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "adjust_reactive_power": {
           "function": "adjust_reactive_power",
@@ -293,7 +254,6 @@
           "unit": "kvar",
           "minimum": 0,
           "maximum": 500,
-          "state_key": "reactive_power_kvar",
           "mapping": {
             "address": 101,
             "function_code": 6,
@@ -301,12 +261,7 @@
             "scale": 10
           },
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "reactive_power_kvar",
-            "parameter": "reactive_power_kvar",
-            "value": null
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "regulate_voltage": {
           "function": "regulate_voltage",
@@ -335,7 +290,6 @@
           "unit": "V",
           "minimum": 380,
           "maximum": 420,
-          "state_key": "voltage_v",
           "mapping": {
             "address": 102,
             "function_code": 6,
@@ -343,12 +297,7 @@
             "scale": 10
           },
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "voltage_v",
-            "parameter": "voltage_v",
-            "value": null
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -381,14 +330,8 @@
           "unit": "kW",
           "minimum": 0,
           "maximum": 1000,
-          "state_key": "active_power_kw",
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "active_power_kw",
-            "parameter": "power_kw",
-            "value": null
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "adjust_reactive_power": {
           "function": "adjust_reactive_power",
@@ -417,17 +360,11 @@
           "unit": "kvar",
           "minimum": 0,
           "maximum": 500,
-          "state_key": "reactive_power_kvar",
           "mapping": {
             "object_reference": "SIM_IED/CTRL/GGIO1.AnOut2"
           },
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "reactive_power_kvar",
-            "parameter": "reactive_power_kvar",
-            "value": null
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "regulate_voltage": {
           "function": "regulate_voltage",
@@ -456,17 +393,11 @@
           "unit": "V",
           "minimum": 380,
           "maximum": 420,
-          "state_key": "voltage_v",
           "mapping": {
             "object_reference": "SIM_IED/CTRL/GGIO1.AnOut3"
           },
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "voltage_v",
-            "parameter": "voltage_v",
-            "value": null
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -517,15 +448,8 @@
             }
           ],
           "value": true,
-          "state_key": "running",
-          "state_value": true,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "stop": {
           "function": "cooling_stop",
@@ -545,15 +469,8 @@
             }
           ],
           "value": false,
-          "state_key": "running",
-          "state_value": false,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -606,15 +523,8 @@
             }
           ],
           "value": true,
-          "state_key": "running",
-          "state_value": true,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "stop": {
           "function": "cooling_stop",
@@ -634,15 +544,8 @@
             }
           ],
           "value": false,
-          "state_key": "running",
-          "state_value": false,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -693,15 +596,8 @@
             }
           ],
           "value": true,
-          "state_key": "running",
-          "state_value": true,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "stop": {
           "function": "cooling_stop",
@@ -721,15 +617,8 @@
             }
           ],
           "value": false,
-          "state_key": "running",
-          "state_value": false,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     },
@@ -782,15 +671,8 @@
             }
           ],
           "value": true,
-          "state_key": "running",
-          "state_value": true,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         },
         "stop": {
           "function": "cooling_stop",
@@ -810,15 +692,8 @@
             }
           ],
           "value": false,
-          "state_key": "running",
-          "state_value": false,
           "source_rule_ids": [],
-          "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
       }
     }

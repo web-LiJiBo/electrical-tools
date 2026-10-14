@@ -20,17 +20,15 @@ def validate_template(service, payload):
     template = deepcopy(payload.get('template'))
     if not isinstance(template, dict):
         raise ValueError('模板必须为JSON对象')
-    allowed = {'function', 'condition', 'constraints', 'parameter', 'unit', 'minimum', 'maximum', 'value', 'state_key', 'state_value', 'mapping', 'source_note'}
+    allowed = {'function', 'condition', 'constraints', 'parameter', 'unit', 'minimum', 'maximum', 'value', 'mapping', 'source_note'}
     if set(template) - allowed:
         raise ValueError('模板含不支持字段；条款绑定由后端管理')
-    for field in ('function', 'condition', 'state_key'):
+    for field in ('function', 'condition'):
         if not isinstance(template.get(field), str) or not template[field].strip():
             raise ValueError(f'请填写{field}')
     engine = service.preconditions.engine
     if not engine._pattern.match(template['condition']):
         raise ValueError('条件须为单个可计算比较式，例如start_permission == 1')
-    if template['state_key'] not in service.states[key]:
-        raise ValueError('反馈状态字段必须存在于所选设备状态中')
     constraints = template.get('constraints', [])
     if not isinstance(constraints, list):
         raise ValueError('联锁须为JSON数组')
@@ -51,8 +49,7 @@ def validate_template(service, payload):
         raise ValueError('开关动作值须为true或false')
     if not isinstance(template.get('mapping'), dict):
         raise ValueError('请填写协议点位JSON对象')
-    template.update(source_rule_ids=[], source_scope='user_simulation_template_pending_source_binding',
-                    expected_feedback={'state_key': template['state_key'], 'value': template.get('state_value', template.get('value'))})
+    template.update(source_rule_ids=[], source_scope='user_simulation_template_pending_source_binding')
     # Validate encoding independently of current permission facts.
     probe = SimulationInstructionService()
     probe.devices = deepcopy(service.devices)
@@ -75,7 +72,7 @@ def load_custom(service, path=CUSTOM_PATH):
         raise ValueError('补充模板须标明仅模拟使用')
     loaded = []
     for row in data['items']:
-        raw = {k: v for k, v in row['template'].items() if k not in ('source_rule_ids', 'source_scope', 'expected_feedback')}
+        raw = {k: v for k, v in row['template'].items() if k not in ('source_rule_ids', 'source_scope', 'expected_feedback', 'state_key', 'state_value')}
         key, action, template = validate_template(service, dict(row, template=raw))
         if action in service.devices[key]['actions']:
             raise ValueError('补充模板不能覆盖已有设备动作')

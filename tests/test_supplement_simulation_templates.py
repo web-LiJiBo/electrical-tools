@@ -23,9 +23,8 @@ def test_supplement_payload_and_lookup(example):
     assert service.states == before
     assert not result.payload['source_rule_ids']
     assert result.payload['source_scope'] == 'synthetic_test_fixture_pending_source_binding'
-    assert result.payload['expected_feedback']['state_key'] in profile['initial_state']
+    assert 'expected_feedback' not in result.payload
     value = example['parameters'][template['parameter']] if template.get('parameter') else template['value']
-    assert result.payload['expected_feedback']['value'] == value
     if profile['protocol'] == 'Modbus':
         assert result.payload['function_code'] == (6 if template.get('parameter') else 5)
         assert result.payload['encoded_value'] == (value * 10 if template.get('parameter') else 0xFF00 if value else 0)

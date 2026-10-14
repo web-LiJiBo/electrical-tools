@@ -11,14 +11,14 @@ from standard_knowledge_service_v2.instruction_engine.template_library import Te
 @pytest.mark.parametrize('tag', ['IEC', 'MB'])
 @pytest.mark.parametrize('kind', ['FAN', 'PUMP'])
 @pytest.mark.parametrize('action', ['start', 'stop'])
-def test_cooling_templates_and_feedback(tag, kind, action):
+def test_cooling_templates_generation_only(tag, kind, action):
     service = SimulationInstructionService()
     key = f'SIM-{tag}-{kind}-01'
     profile = service.devices[key]
     before = deepcopy(service.states)
     result = service.generate(key, action, profile['runtime_facts'])
     assert result.payload
-    assert result.payload['expected_feedback']['value'] is (action == 'start')
+    assert 'expected_feedback' not in result.payload
     assert service.states == before
     assert not result.dispatch_allowed
     assert TemplateLibrary().find(profile['scenario'], action, profile['device_type'], profile['protocol'])
@@ -56,7 +56,7 @@ def test_setpoint_uses_own_mapping(tag, action, parameter, value, address):
     key = f'SIM-{tag}-INVERTER-01'
     profile = service.devices[key]
     result = service.generate(key, action, profile['runtime_facts'], {parameter: value})
-    assert result.payload['expected_feedback']['value'] == value
+    assert 'expected_feedback' not in result.payload
     assert result.payload['engineering_value'] == value
     if tag == 'MB':
         assert result.payload['function_code'] == 6

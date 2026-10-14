@@ -47,7 +47,7 @@ class SimulationInstructionService:
         """用显式事实测试模板，返回解释对象；只有非空payload表示生成成功。
 
         此直接测试入口不核验条款授权；条款建议链由generate_grounded另行
-        验证来源绑定。expected_feedback只是预计值，本方法从不修改states。
+        验证来源绑定。本方法只生成字段，从不修改states。
         """
         candidate = CandidateInstruction(target=device_id, dispatch_allowed=False)
         device = self.devices.get(device_id)
@@ -86,7 +86,7 @@ class SimulationInstructionService:
             candidate.explanation = '参数不等于已配置的模拟回降定值，禁止模型另造数值'
             return candidate
         if template.get('decrease_only'):
-            current = self.states[device_id].get(template['state_key'])
+            current = self.states[device_id].get(template['current_state_key'])
             if type(current) not in (int, float) or not math.isfinite(current) or not value < current:
                 candidate.explanation = '功率回降目标必须低于当前模拟功率'
                 return candidate
@@ -97,10 +97,7 @@ class SimulationInstructionService:
                   "function": template["function"], "device_type": device["device_type"],
                   "requested_action": action, "engineering_value": value,
                   "source_rule_ids": template.get("source_rule_ids", []),
-                  "source_scope": template.get("source_scope", "synthetic_test_fixture"),
-                  "expected_feedback": deepcopy(template.get("expected_feedback", {}))}
-        if common['expected_feedback']:
-            common['expected_feedback']['value'] = template.get('state_value', value)
+                  "source_scope": template.get("source_scope", "synthetic_test_fixture")}
         if device["protocol"] == "IEC61850":
             required = ("object_reference", "control_model", "service")
             candidate.missing_fields = [key for key in required if not mapping.get(key)]

@@ -1,4 +1,5 @@
 from copy import deepcopy
+import json
 import pytest
 from standard_knowledge_service_v2.instruction_engine.simulation import SimulationInstructionService
 from standard_knowledge_service_v2.instruction_engine.template_editor import save_custom, load_custom, test_template as probe_template
@@ -6,7 +7,7 @@ from standard_knowledge_service_v2.instruction_engine.template_editor import sav
 def sample():
     return {'device_id': 'SIM-MB-FAN-01', 'action': 'alarm', 'template': {
         'function': 'mock_alarm', 'condition': 'alarm_permission == 1', 'constraints': [],
-        'value': True, 'state_key': 'running', 'mapping': {'slave_id': 3, 'address': 10, 'function_code': 5, 'data_type': 'bool'}},
+        'value': True, 'mapping': {'slave_id': 3, 'address': 10, 'function_code': 5, 'data_type': 'bool'}},
         'facts': {'alarm_permission': 1}, 'parameters': {}}
 
 def test_saved_template_reloads_and_cannot_overwrite(tmp_path):
@@ -38,3 +39,21 @@ def test_editor_rejects_fake_source_binding_and_bad_mapping():
     payload['template']['mapping']['function_code'] = 6
     with pytest.raises(ValueError, match='编码无效'):
         probe_template(service, payload)
+
+
+@pytest.mark.parametrize('field', ['expected_feedback', 'state_key', 'state_value'])
+def test_editor_rejects_execution_feedback(field):
+    payload = sample()
+    payload['template'][field] = 'legacy'
+    with pytest.raises(ValueError, match='不支持字段'):
+        probe_template(SimulationInstructionService(), payload)
+
+
+def test_legacy_saved_feedback_is_ignored(tmp_path):
+    row = sample()
+    row['template'].update(state_key='running', state_value=True,
+                           expected_feedback={'state_key': 'running', 'value': True})
+    path = tmp_path / 'legacy.json'
+    path.write_text(json.dumps({'simulation_only': True, 'items': [row]}), encoding='utf-8')
+    loaded = load_custom(SimulationInstructionService(), path)
+    assert not {'state_key', 'state_value', 'expected_feedback'} & loaded[0]['template'].keys()

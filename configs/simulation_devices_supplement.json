@@ -75,19 +75,12 @@
             }
           ],
           "value": true,
-          "state_value": true,
-          "state_key": "running",
           "mapping": {
             "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "stop": {
           "function": "battery_pcs_stop",
@@ -101,38 +94,24 @@
             }
           ],
           "value": false,
-          "state_value": false,
-          "state_key": "running",
           "mapping": {
             "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "alarm": {
           "function": "battery_pcs_alarm",
           "condition": "alarm_required == 1",
           "constraints": [],
           "value": true,
-          "state_value": true,
-          "state_key": "alarm_active",
           "mapping": {
             "object_reference": "SIM_BESS/CTRL/GGIO1.SPCSO2"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "alarm_active",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "adjust_active_power": {
           "function": "battery_pcs_adjust_active_power",
@@ -179,18 +158,12 @@
           "unit": "kW",
           "minimum": 0,
           "maximum": 250,
-          "state_key": "active_power_kw",
           "mapping": {
             "object_reference": "SIM_BESS/CTRL/GGIO1.AnOut1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "active_power_kw",
-            "parameter": "power_kw",
-            "value": null
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "limit_power": {
           "function": "battery_pcs_limit_power",
@@ -237,18 +210,12 @@
           "unit": "kW",
           "minimum": 0,
           "maximum": 250,
-          "state_key": "power_limit_kw",
           "mapping": {
             "object_reference": "SIM_BESS/CTRL/GGIO1.AnOut2"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "power_limit_kw",
-            "parameter": "power_limit_kw",
-            "value": null
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
     },
@@ -322,19 +289,12 @@
             }
           ],
           "value": true,
-          "state_value": true,
-          "state_key": "running",
           "mapping": {
             "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "stop": {
           "function": "capacitor_bank_stop",
@@ -348,38 +308,24 @@
             }
           ],
           "value": false,
-          "state_value": false,
-          "state_key": "running",
           "mapping": {
             "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "alarm": {
           "function": "capacitor_bank_alarm",
           "condition": "alarm_required == 1",
           "constraints": [],
           "value": true,
-          "state_value": true,
-          "state_key": "alarm_active",
           "mapping": {
             "object_reference": "SIM_CAPACITOR/CTRL/GGIO1.SPCSO2"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "alarm_active",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
     },
@@ -433,19 +379,12 @@
             }
           ],
           "value": true,
-          "state_value": true,
-          "state_key": "running",
           "mapping": {
             "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "stop": {
           "function": "ventilation_fan_stop",
@@ -465,38 +404,24 @@
             }
           ],
           "value": false,
-          "state_value": false,
-          "state_key": "running",
           "mapping": {
             "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO1"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "alarm": {
           "function": "ventilation_fan_alarm",
           "condition": "alarm_required == 1",
           "constraints": [],
           "value": true,
-          "state_value": true,
-          "state_key": "alarm_active",
           "mapping": {
             "object_reference": "SIM_VENT/CTRL/GGIO1.SPCSO2"
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "alarm_active",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
     },
@@ -575,8 +500,6 @@
             }
           ],
           "value": true,
-          "state_value": true,
-          "state_key": "running",
           "mapping": {
             "address": 400,
             "function_code": 5,
@@ -584,12 +507,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "stop": {
           "function": "battery_pcs_stop",
@@ -603,8 +521,6 @@
             }
           ],
           "value": false,
-          "state_value": false,
-          "state_key": "running",
           "mapping": {
             "address": 400,
             "function_code": 5,
@@ -612,20 +528,13 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "alarm": {
           "function": "battery_pcs_alarm",
           "condition": "alarm_required == 1",
           "constraints": [],
           "value": true,
-          "state_value": true,
-          "state_key": "alarm_active",
           "mapping": {
             "address": 401,
             "function_code": 5,
@@ -633,12 +542,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "alarm_active",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "adjust_active_power": {
           "function": "battery_pcs_adjust_active_power",
@@ -685,7 +589,6 @@
           "unit": "kW",
           "minimum": 0,
           "maximum": 250,
-          "state_key": "active_power_kw",
           "mapping": {
             "address": 410,
             "function_code": 6,
@@ -694,12 +597,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "active_power_kw",
-            "parameter": "power_kw",
-            "value": null
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "limit_power": {
           "function": "battery_pcs_limit_power",
@@ -746,7 +644,6 @@
           "unit": "kW",
           "minimum": 0,
           "maximum": 250,
-          "state_key": "power_limit_kw",
           "mapping": {
             "address": 411,
             "function_code": 6,
@@ -755,12 +652,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "power_limit_kw",
-            "parameter": "power_limit_kw",
-            "value": null
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
     },
@@ -836,8 +728,6 @@
             }
           ],
           "value": true,
-          "state_value": true,
-          "state_key": "running",
           "mapping": {
             "address": 420,
             "function_code": 5,
@@ -845,12 +735,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "stop": {
           "function": "capacitor_bank_stop",
@@ -864,8 +749,6 @@
             }
           ],
           "value": false,
-          "state_value": false,
-          "state_key": "running",
           "mapping": {
             "address": 420,
             "function_code": 5,
@@ -873,20 +756,13 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "alarm": {
           "function": "capacitor_bank_alarm",
           "condition": "alarm_required == 1",
           "constraints": [],
           "value": true,
-          "state_value": true,
-          "state_key": "alarm_active",
           "mapping": {
             "address": 421,
             "function_code": 5,
@@ -894,12 +770,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "alarm_active",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
     },
@@ -955,8 +826,6 @@
             }
           ],
           "value": true,
-          "state_value": true,
-          "state_key": "running",
           "mapping": {
             "address": 440,
             "function_code": 5,
@@ -964,12 +833,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "stop": {
           "function": "ventilation_fan_stop",
@@ -989,8 +853,6 @@
             }
           ],
           "value": false,
-          "state_value": false,
-          "state_key": "running",
           "mapping": {
             "address": 440,
             "function_code": 5,
@@ -998,20 +860,13 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "running",
-            "parameter": null,
-            "value": false
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         },
         "alarm": {
           "function": "ventilation_fan_alarm",
           "condition": "alarm_required == 1",
           "constraints": [],
           "value": true,
-          "state_value": true,
-          "state_key": "alarm_active",
           "mapping": {
             "address": 441,
             "function_code": 5,
@@ -1019,12 +874,7 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
-          "expected_feedback": {
-            "state_key": "alarm_active",
-            "parameter": null,
-            "value": true
-          }
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
     }
