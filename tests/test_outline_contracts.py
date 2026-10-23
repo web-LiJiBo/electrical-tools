@@ -57,9 +57,13 @@ def test_llm_decomposition_maps_to_lunwen_entities() -> None:
     assert result.to_lunwen_parsed_json()["entities"][0]["name"] == "变压器"
 
 
-def test_qwen_model_path_points_to_snapshot() -> None:
+def test_optional_qwen_model_path_points_to_snapshot_location() -> None:
     assert DEFAULT_MODEL_PATH.name == "master"
-    assert (DEFAULT_MODEL_PATH / "config.json").is_file()
+    assert DEFAULT_MODEL_PATH.parts[-3:] == (
+        "qwen--Qwen-7B-Chat", "snapshots", "master"
+    )
+    if DEFAULT_MODEL_PATH.exists():
+        assert (DEFAULT_MODEL_PATH / "config.json").is_file()
 
 
 def test_qwen_json_is_parsed_and_validated_without_loading_model() -> None:

@@ -114,8 +114,9 @@ class SupplementalExcelTests(unittest.TestCase):
             import_directory(self.root / 'input', self.root / 'input' / 'output', self.root / 'reports')
 
     def test_default_location_is_separate_from_original_repository(self):
-        self.assertEqual(DEFAULT_ROOT.name, '补充标准条款')
-        self.assertEqual(DEFAULT_ROOT.parent.name, '06-工具')
+        project_root = Path(__file__).resolve().parents[1]
+        self.assertEqual(DEFAULT_ROOT, project_root / 'datasets' / 'supplemental')
+        self.assertNotEqual(DEFAULT_ROOT, project_root / 'datasets' / 'lunwen')
 
     def test_one_row_one_clause_minimal_fields_original_number(self):
         fixture(self.source, [('测试正文', {'A1': '测试标准', 'A2': 'TEST-2026',

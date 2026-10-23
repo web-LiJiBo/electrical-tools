@@ -17,7 +17,7 @@ ANNOTATIONS = DEFAULT_ROOT / '分解数据' / '首批100条助手语义分解.js
 DATA = DEFAULT_ROOT / '分解数据' / 'json'
 
 
-@pytest.mark.skipif(not INDEX.exists(), reason='本地独立补充数据未安装')
+@pytest.mark.skipif(not (INDEX.exists() and ANNOTATIONS.exists()), reason='首批100条来源或人工标注文件未安装')
 def test_hundred_decompositions_preserve_original_number_text_and_metadata():
     assert hashlib.sha256(INDEX.read_bytes()).hexdigest() == SOURCE_SHA256
     sources = [json.loads(line) for line in INDEX.read_text(encoding='utf-8').splitlines()]
@@ -67,7 +67,7 @@ def test_same_loader_combines_original_and_supplemental_and_retrieves_new_clause
     assert result.rules[0].rule.action == ''
 
 
-@pytest.mark.skipif(not INDEX.exists(), reason='本地独立补充数据未安装')
+@pytest.mark.skipif(not (INDEX.exists() and ANNOTATIONS.exists()), reason='首批100条来源或人工标注文件未安装')
 def test_repeat_publish_is_idempotent_and_rejects_changed_source(tmp_path):
     output = tmp_path / 'json'
     first = publish_reviewed_batch(INDEX, ANNOTATIONS, output)

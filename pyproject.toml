@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "standard-knowledge-service-v2-outline"
 version = "0.1.0"
 description = "新型电力系统机器可读标准知识服务工具代码大纲"
-requires-python = ">=3.11"
+requires-python = ">=3.13,<3.14"
 dependencies = ["PyYAML>=6.0"]
 
 [project.optional-dependencies]
@@ -30,7 +30,10 @@ ml = [
     "sentence-transformers>=2.2",
 ]
 api = ["fastapi>=0.110", "uvicorn>=0.27"]
-test = ["pytest>=8.0"]
+test = [
+    "pytest>=8.0,<9.0",
+    "httpx>=0.27,<1.0",
+]
 excel = ["openpyxl>=3.1"]
 
 [tool.setuptools]
