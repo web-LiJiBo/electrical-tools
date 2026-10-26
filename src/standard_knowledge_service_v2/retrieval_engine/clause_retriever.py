@@ -11,24 +11,58 @@ from ..data_ingestion.clause_filenames import supplemental_identity
 
 
 class JsonClauseRepository:
-    def __init__(self, units: list[ClauseKnowledgeUnit] | None = None) -> None:
+    def __init__(
+        self,
+        units: list[ClauseKnowledgeUnit] | None = None,
+        load_report: dict | None = None,
+    ) -> None:
         self.units = units or []
+        self.load_report = load_report or {
+            "directory": "",
+            "files_seen": len(self.units),
+            "loaded": len(self.units),
+            "skipped": 0,
+            "error_samples": [],
+        }
 
     @classmethod
     def from_directory(cls, directory: Path, limit: int | None = None) -> "JsonClauseRepository":
         units: list[ClauseKnowledgeUnit] = []
+        files_seen = 0
+        errors: list[dict[str, str]] = []
         for path in sorted(directory.rglob("*.json")):
             if limit is not None and len(units) >= limit:
                 break
+            files_seen += 1
             try:
                 payload = json.loads(path.read_text(encoding="utf-8"))
                 if isinstance(payload.get("raw_output"), str):
                     payload = json.loads(payload["raw_output"])
-                if isinstance(payload, dict):
-                    units.append(cls._from_payload(path, payload))
-            except (OSError, ValueError, json.JSONDecodeError):
-                continue
-        return cls(units)
+                if not isinstance(payload, dict):
+                    raise ValueError("JSON顶层必须是对象")
+                units.append(cls._from_payload(path, payload))
+            except (AttributeError, OSError, TypeError, UnicodeError, ValueError) as exc:
+                if len(errors) < 5:
+                    try:
+                        display_path = str(path.relative_to(directory))
+                    except ValueError:
+                        display_path = str(path)
+                    errors.append({
+                        "path": display_path,
+                        "error": type(exc).__name__,
+                        "message": str(exc)[:300],
+                    })
+        report = {
+            "directory": str(directory),
+            "files_seen": files_seen,
+            "loaded": len(units),
+            "skipped": files_seen - len(units),
+            "error_samples": errors,
+        }
+        if files_seen and not units:
+            sample = "; ".join(f"{item['path']}: {item['message']}" for item in errors)
+            raise ValueError(f"目录{directory}中的{files_seen}个JSON文件全部加载失败。{sample}")
+        return cls(units, report)
 
     @staticmethod
     def _from_payload(path: Path, payload: dict) -> ClauseKnowledgeUnit:

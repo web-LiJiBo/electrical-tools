@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 from dataclasses import asdict
+from hashlib import sha256
+import json
 from typing import Any
 
 from ..audit.models import AuditRecord
@@ -57,6 +59,20 @@ class AnalysisPipeline:
         self.consistency = consistency or ConsistencyEvaluationService()
         self.reasoner = reasoner or HybridReasoningEngine()
         self.audit_store = audit_store
+        self.model_fingerprint = ""
+        self.config_fingerprint = ""
+        if config and config.audit.record_model_and_config_fingerprint:
+            self.config_fingerprint = sha256(config.source_path.read_bytes()).hexdigest()
+            model_descriptor = {
+                "backend": config.llm.backend,
+                "remote_model": config.llm.remote_model,
+                "api_base": config.llm.api_base,
+                "local_model_path": str(config.models.llm),
+                "adapter_path": str(config.models.llm_adapter or ""),
+            }
+            self.model_fingerprint = sha256(
+                json.dumps(model_descriptor, ensure_ascii=False, sort_keys=True).encode("utf-8")
+            ).hexdigest()
         from ..instruction_engine.simulation_control import SimulationControlSession
         self.simulation_session = SimulationControlSession()
         self.advisor = None
@@ -301,6 +317,14 @@ class AnalysisPipeline:
         response = AnalysisResponse(request.meta.request_id, status, data, evidence, warnings)
         if self.audit_store:
             scenario = str(data.get("context", {}).get("scenario", ""))
-            self.audit_store.append(AuditRecord(request.meta.request_id, "analyze", asdict(request), response.to_dict(), scenario))
+            self.audit_store.append(AuditRecord(
+                request.meta.request_id,
+                "analyze",
+                asdict(request),
+                response.to_dict(),
+                scenario,
+                model_fingerprint=self.model_fingerprint,
+                config_fingerprint=self.config_fingerprint,
+            ))
         return response
 

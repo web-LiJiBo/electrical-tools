@@ -71,6 +71,12 @@ class ConsistencySettings:
 
 
 @dataclass(frozen=True, slots=True)
+class AuditSettings:
+    retention_days: int = 365
+    record_model_and_config_fingerprint: bool = True
+
+
+@dataclass(frozen=True, slots=True)
 class AppConfig:
     project_root: Path
     source_path: Path
@@ -79,6 +85,7 @@ class AppConfig:
     retrieval: RetrievalSettings
     llm: LLMSettings
     consistency: ConsistencySettings
+    audit: AuditSettings
     advice_enabled: bool = True
 
 
@@ -115,6 +122,13 @@ def _positive_int(section: dict[str, Any], key: str, default: int) -> int:
     value = int(section.get(key, default))
     if value <= 0:
         raise ValueError(f"配置项{key}必须大于0")
+    return value
+
+
+def _boolean(section: dict[str, Any], key: str, default: bool) -> bool:
+    value = section.get(key, default)
+    if not isinstance(value, bool):
+        raise ValueError(f"配置项{key}必须是布尔值")
     return value
 
 
@@ -212,6 +226,12 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
         consistency=ConsistencySettings(
             threshold=_number(consistency, "fallback_threshold", 0.62),
             weights=tuple(float(item) for item in raw_consistency_weights),
+        ),
+        audit=AuditSettings(
+            retention_days=_positive_int(audit, "retention_days", 365),
+            record_model_and_config_fingerprint=_boolean(
+                audit, "record_model_and_config_fingerprint", True
+            ),
         ),
         advice_enabled=bool(_mapping(payload.get('llm_advice'), 'llm_advice').get('enabled', True)),
     )

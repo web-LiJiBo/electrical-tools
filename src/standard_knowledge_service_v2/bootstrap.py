@@ -31,6 +31,18 @@ def build_application(config_path: str | Path) -> Application:
     def progress(message: str) -> None:
         print(f"[启动进度] {message}", flush=True)
 
+    def report_repository(label: str, repository: JsonClauseRepository) -> None:
+        report = repository.load_report
+        progress(
+            f"{label}加载完成：成功 {report['loaded']} 个，"
+            f"跳过 {report['skipped']} 个，共检查 {report['files_seen']} 个JSON文件"
+        )
+        for item in report["error_samples"]:
+            progress(
+                f"{label}跳过文件：{item['path']} "
+                f"[{item['error']}] {item['message']}"
+            )
+
     project_root = Path(__file__).resolve().parents[2]
     progress("正在读取项目配置")
     config = load_config(config_path, project_root)
@@ -41,19 +53,19 @@ def build_application(config_path: str | Path) -> Application:
     retriever = LocalLunwenRetrievalAdapter.from_dataset(
         dataset, threshold=config.retrieval.entity_similarity_threshold
     )
-    progress(f"已加载已核验条款 {len(retriever.repository.units)} 条")
+    report_repository("已核验条款", retriever.repository)
     if config.data.supplemental_json is not None:
         if not config.data.supplemental_json.is_dir():
             raise FileNotFoundError(f"配置的补充条款目录不存在: {config.data.supplemental_json}")
         progress("正在加载补充条款；文件较多，请耐心等待")
         supplemental = JsonClauseRepository.from_directory(config.data.supplemental_json)
-        progress(f"已加载补充条款 {len(supplemental.units)} 条")
+        report_repository("补充条款", supplemental)
         existing_ids = {unit.clause_id for unit in retriever.repository.units}
         if any(unit.clause_id in existing_ids for unit in supplemental.units):
             raise ValueError("原库和补充库的条款内部标识发生冲突")
         retriever.repository.units.extend(supplemental.units)
     progress(f"条款加载完成，共 {len(retriever.repository.units)} 条")
-    audit_store = JsonlAuditStore(config.data.audit_store)
+    audit_store = JsonlAuditStore(config.data.audit_store, config.audit.retention_days)
     if config.llm.backend == "deepseek_api":
         decomposer = DeepSeekDecomposer(DeepSeekConfig(
             api_base=config.llm.api_base,
