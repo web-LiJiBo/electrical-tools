@@ -1,7 +1,7 @@
 {
-  "standard_name": "油气储运工程 能耗数据采集技术规定",
+  "standard_name": "油气储运工程能耗数据采集技术规定",
   "standard_id": "DEC-OTP-G-IS-001-2025-2",
-  "version": "",
+  "version": "2025",
   "chapter_path": "4.2.5",
   "entities": [
     {
@@ -34,6 +34,38 @@
       "reasons": [
         "两种条件分支需要结合全文核实"
       ]
+    },
+    "original_standard_id": "DEC-OTP-G-IS-001-2025-2",
+    "source_index_line": 10,
+    "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+    "original_standard_name": "油气储运工程 能耗数据采集技术规定",
+    "source_location": {
+      "document_id": "10a851d423d456a1e6575316",
+      "source_file": "26批/DEC文件/附件11：DEC-OTP-G-IS-001-2025-2+油气储运工程能耗数据采集技术规定.xlsx",
+      "source_sha256": "ac7fa1f563e089bd69b67454e419c3ff32da8ce83fc8eb624640088f447ac97e",
+      "sheet": "Sheet1",
+      "row": 12,
+      "cells": [
+        "A12"
+      ],
+      "pdf_location": {
+        "status": "source_pdf_not_available",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "10a851d423d456a1e6575316",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "scope_not_located",
+      "scope_document_id": "10a851d423d456a1e6575316",
+      "clause_condition": "单体设备级中未配置主要用能设备",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

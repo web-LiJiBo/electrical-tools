@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 33.040.20",
-  "standard_id": "M 33",
-  "version": "",
+  "standard_name": "光传送网(OTN)测试方法",
+  "standard_id": "YD/T 2148-2010",
+  "version": "2010",
   "chapter_path": "9.3.1.1.3",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
       ]
+    },
+    "original_standard_id": "M 33",
+    "original_standard_name": "ICS 33.040.20",
+    "source_location": {
+      "document_id": "cbaf931e71850aaab973c75d",
+      "source_file": "34/YD_T 2148-2010.xlsx",
+      "source_sha256": "2bf417536f5b7caf6ff5b5b9906a9773f80110023b6d23ce35935dbe83fd4ebb",
+      "sheet": "Sheet1",
+      "row": 1054,
+      "cells": [
+        "A1054"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "cbaf931e71850aaab973c75d",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "cbaf931e71850aaab973c75d",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

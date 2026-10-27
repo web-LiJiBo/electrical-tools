@@ -90,6 +90,7 @@ class AnalysisPipeline:
         built = self.context_builder.build(decomposed, request.parameters, request.scenario_hint, request.meta.caller)
         settings = self.retrieval_settings
         parsed_query = decomposed.to_lunwen_parsed_json()
+        parsed_query["intent"] = intent.intent
         if built.definition:
             parsed_query["scenario_topics"] = built.definition.standard_topics
             parsed_query["scenario_devices"] = built.definition.device_types

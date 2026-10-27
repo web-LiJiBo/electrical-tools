@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 33.040.20",
-  "standard_id": "M 33",
-  "version": "",
+  "standard_name": "传输性能的指标系列",
+  "standard_id": "YD/T 1033-2016",
+  "version": "2016",
   "chapter_path": "来源行-00013177",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "M 33",
+    "original_standard_name": "ICS 33.040.20",
+    "source_location": {
+      "document_id": "6b84ae04eb4ff050c38ff762",
+      "source_file": "34/YD_T 1033-2016.xlsx",
+      "source_sha256": "d6c460c0e78b0e70ffa8986ebd54b569eceb43a8b677252e7065540f70b29715",
+      "sheet": "Sheet1",
+      "row": 757,
+      "cells": [
+        "B757"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "6b84ae04eb4ff050c38ff762",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "6b84ae04eb4ff050c38ff762",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

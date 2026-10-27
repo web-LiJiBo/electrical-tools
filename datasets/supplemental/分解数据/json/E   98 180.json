@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS  75.200",
-  "standard_id": "E   98",
-  "version": "",
+  "standard_name": "阴极保护管道的电绝缘标准",
+  "standard_id": "SY/T 0086-2020",
+  "version": "2020",
   "chapter_path": "180",
   "entities": [
     {
@@ -36,6 +36,42 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "E   98",
+    "original_standard_name": "ICS  75.200",
+    "source_location": {
+      "document_id": "a95affce485058cfe01d9638",
+      "source_file": "45/SY_T 0086-2020.xlsx",
+      "source_sha256": "a7945f73aa4d65d16d39bf3cb1de6f12e9f0b843e242785adbcf9c34ab5f8544",
+      "sheet": "Sheet1",
+      "row": 93,
+      "cells": [
+        "A93",
+        "B93",
+        "D93",
+        "H93",
+        "L93",
+        "N93",
+        "O93"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "a95affce485058cfe01d9638",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "a95affce485058cfe01d9638",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

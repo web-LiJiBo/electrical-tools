@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS  13.100",
-  "standard_id": "E  09",
-  "version": "",
+  "standard_name": "陆上石油天然气生产环境保护推荐作法",
+  "standard_id": "SY/T 6628-2005",
+  "version": "2005",
   "chapter_path": "5.4.2.3",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提"
       ]
+    },
+    "original_standard_id": "E  09",
+    "original_standard_name": "ICS  13.100",
+    "source_location": {
+      "document_id": "5755a7ceafa86b51d13ab5c1",
+      "source_file": "43/SY_T 6628-2005.xlsx",
+      "source_sha256": "05d8c7619338445b1b60c8e83e16d841523a0033914825307afcb29bb91cf4c2",
+      "sheet": "Sheet1",
+      "row": 216,
+      "cells": [
+        "A216"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "5755a7ceafa86b51d13ab5c1",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "5755a7ceafa86b51d13ab5c1",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

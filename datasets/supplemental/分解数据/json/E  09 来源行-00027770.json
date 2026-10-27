@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS    13.100",
-  "standard_id": "E  09",
-  "version": "",
+  "standard_name": "石油行业安全生产标准化 管道储运实施规范",
+  "standard_id": "AQ 2045-2012",
+  "version": "2012",
   "chapter_path": "来源行-00027770",
   "entities": [
     {
@@ -36,6 +36,37 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "E  09",
+    "original_standard_name": "ICS    13.100",
+    "source_location": {
+      "document_id": "0ae759155f90f129aebeec72",
+      "source_file": "38/AQ 2045-2012.xlsx",
+      "source_sha256": "28e79e6ed69adb697770454f76d7549663565e0e1bbecd28e7751795326c0b84",
+      "sheet": "Sheet1",
+      "row": 274,
+      "cells": [
+        "C274"
+      ],
+      "pdf_location": {
+        "status": "text_not_located",
+        "pages": [],
+        "match_count": 0
+      }
+    },
+    "standard_metadata": {
+      "document_id": "0ae759155f90f129aebeec72",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "0ae759155f90f129aebeec72",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 75.200",
-  "standard_id": "CCS E 16",
-  "version": "",
+  "standard_name": "油气管道架空部分及其附属设施维护规范",
+  "standard_id": "SY/T 6068-2024",
+  "version": "2024",
   "chapter_path": "来源行-00030352",
   "entities": [
     {
@@ -36,6 +36,41 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "CCS E 16",
+    "original_standard_name": "ICS 75.200",
+    "source_location": {
+      "document_id": "970d6c3ce37450540f4933c0",
+      "source_file": "39/SY_T 6068—2024.xlsx",
+      "source_sha256": "a18b6f2e416815b83a2aa79fc85ca6017800a8ead8fa6c350f1234f7bc6a4631",
+      "sheet": "Sheet1",
+      "row": 764,
+      "cells": [
+        "C764",
+        "H764",
+        "L764",
+        "R764",
+        "X764",
+        "AD764"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "970d6c3ce37450540f4933c0",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "970d6c3ce37450540f4933c0",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

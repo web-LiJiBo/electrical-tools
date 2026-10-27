@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 75.020",
-  "standard_id": "E  20",
-  "version": "",
+  "standard_name": "环境敏感区天然气管道建设和运行环境保护要求",
+  "standard_id": "SY/T 7293-2016",
+  "version": "2016",
   "chapter_path": "来源行-00041894",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
       ]
+    },
+    "original_standard_id": "E  20",
+    "original_standard_name": "ICS 75.020",
+    "source_location": {
+      "document_id": "3e776182aa615c5f99139cef",
+      "source_file": "43/SY_T 7293-2016.xlsx",
+      "source_sha256": "9381c135bae8c76fc5f83d6fcfe03c9613877d99a961ec4811d97fd2639dd623",
+      "sheet": "Sheet1",
+      "row": 21,
+      "cells": [
+        "A21"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "3e776182aa615c5f99139cef",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "3e776182aa615c5f99139cef",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

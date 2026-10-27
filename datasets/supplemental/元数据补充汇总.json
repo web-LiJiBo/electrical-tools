@@ -1,0 +1,52 @@
+{
+  "applied": true,
+  "date": "2026-10-26",
+  "records": 46466,
+  "standard_id_changed": 40630,
+  "standard_name_changed": 39406,
+  "version_changed": 36341,
+  "version_available": 45175,
+  "number_unresolved": 1291,
+  "scope_available": 40368,
+  "pdf_exact_location": 2576,
+  "pdf_multiple_location": 46,
+  "source_documents": 146,
+  "document_identity_status": {
+    "filename_confirmed": 125,
+    "document_reference_from_header": 7,
+    "no_number_in_source_filename": 11,
+    "official_code_change": 3
+  },
+  "source_index_sha256": "4ef6d9ea4832d6df7617e8acfd73004caab9f714ad792c0e490fa383c258aaf4",
+  "rule_text_unchanged": true,
+  "internal_ids_unchanged": true,
+  "expert_review_status_unchanged": true,
+  "source_files_unchanged": true,
+  "filenames_unchanged": true,
+  "source_location_note": "原Excel工作表和单元格定位完整；PDF仅对全文精确匹配记录填物理页码，多匹配保留全部候选",
+  "backup": "artifacts/metadata_enrichment_20261026/applied/original_records.zip",
+  "exclusions": "原库未改；不推定现行有效性、实施日期、条款适用性或控制授权",
+  "snapshot_count": 46466,
+  "snapshot_bytes": 127786920,
+  "snapshot_sha256": "31a92a87d5fba33ad34ec3af1f646c87cbe68820c4b9d628237747d2bcaffd48",
+  "verification": {
+    "record_count": 46466,
+    "all_records_loadable": true,
+    "all_source_rows_verified": true,
+    "rule_text_unchanged": true,
+    "entities_relations_unchanged": true,
+    "internal_ids_unchanged": true,
+    "review_flags_unchanged": true,
+    "snapshot_sha256": "31a92a87d5fba33ad34ec3af1f646c87cbe68820c4b9d628237747d2bcaffd48",
+    "identity_status_records": {
+      "no_number_in_source_filename": 1291,
+      "filename_confirmed": 44108,
+      "official_code_change": 204,
+      "document_reference_from_header": 863
+    },
+    "relevant_tests": "16 passed, 1 skipped",
+    "broader_tests": "29 passed, 1 skipped, 2 failed; 两项建议生成测试使用修改前HEAD标识函数仍失败，与本次元数据修改无关"
+  },
+  "remaining_scope_count": 6098,
+  "pending_document_count": 77
+}

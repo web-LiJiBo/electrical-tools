@@ -26,6 +26,7 @@ def assess_real_clause(pipeline, request):
         expanded += " 变压器绕组热点温升 顶层油温 绕组平均温升 ON冷却方式"
     decomposed = pipeline.decomposer.decompose(expanded, "substation_maintenance", request.conversation_context)
     parsed = decomposed.to_lunwen_parsed_json()
+    parsed["intent"] = "compliance"
     parsed["context_device_type"] = "变压器" if device.get("device_type") == "transformer" else device.get("device_type", "")
     matched = pipeline.retriever.match(LunwenMatchingInput(expanded, parsed, top_k_rules=30))
     data = {"decomposition": decomposed.to_dict(), "intent_classification": {"intent": "compliance", "reasons": ["状态询问经真实条款检索与原文参数比对，不视为下发授权"]},

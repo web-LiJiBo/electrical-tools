@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS    13.100",
-  "standard_id": "E  09",
-  "version": "",
+  "standard_name": "石油行业安全生产标准化 工程建设施工实施规范",
+  "standard_id": "AQ 2046-2012",
+  "version": "2012",
   "chapter_path": "来源行-00027859",
   "entities": [
     {
@@ -36,6 +36,37 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record"
       ]
+    },
+    "original_standard_id": "E  09",
+    "original_standard_name": "ICS    13.100",
+    "source_location": {
+      "document_id": "17f33e8035ae54d138bce141",
+      "source_file": "38/AQ 2046-2012.xlsx",
+      "source_sha256": "0e7a72ce2f27db8177f1ff0e4e51f8959ace63d2059608eb6b9eb837b2d278cb",
+      "sheet": "Sheet1",
+      "row": 17,
+      "cells": [
+        "A17"
+      ],
+      "pdf_location": {
+        "status": "text_not_located",
+        "pages": [],
+        "match_count": 0
+      }
+    },
+    "standard_metadata": {
+      "document_id": "17f33e8035ae54d138bce141",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "17f33e8035ae54d138bce141",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

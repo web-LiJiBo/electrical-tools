@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 13.080",
-  "standard_id": "Z64",
-  "version": "",
+  "standard_name": "土壤环境质量农用地土壤污染风险管控标准(试行)",
+  "standard_id": "GB 15618-2018",
+  "version": "2018",
   "chapter_path": "来源行-00038047",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似标题或术语，不能单独作为判定依据"
       ]
+    },
+    "original_standard_id": "Z64",
+    "original_standard_name": "ICS 13.080",
+    "source_location": {
+      "document_id": "28420ec403d1c8cb9d47308a",
+      "source_file": "43/GB 15618-2018.xlsx",
+      "source_sha256": "4fcd851730bfb6c09a95d1adfc54dc1b675923b6f088d158c2e93602e50f8d92",
+      "sheet": "Sheet1",
+      "row": 15,
+      "cells": [
+        "J15"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "28420ec403d1c8cb9d47308a",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "28420ec403d1c8cb9d47308a",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

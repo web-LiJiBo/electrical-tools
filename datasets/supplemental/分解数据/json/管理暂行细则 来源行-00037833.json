@@ -1,6 +1,6 @@
 {
-  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
-  "standard_id": "管理暂行细则",
+  "standard_name": "国家管网集团油气储运企业温室气体排放核算与统计管理暂行细则",
+  "standard_id": "",
   "version": "",
   "chapter_path": "来源行-00037833",
   "entities": [
@@ -36,6 +36,39 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "管理暂行细则",
+    "original_standard_name": "国家管网集团油气储运企业温室气体排放核算与统计",
+    "source_location": {
+      "document_id": "90c3d8d6279724c325fd089e",
+      "source_file": "42/国家管网集团油气储运企业温室气体排放核算与统计管理暂行细则.xlsx",
+      "source_sha256": "086435058630239f39c5b8d0c8ac1aa173d7dcc7fbc0f37bab12c9ea442d1ef4",
+      "sheet": "Sheet1",
+      "row": 88,
+      "cells": [
+        "A88"
+      ],
+      "pdf_location": {
+        "status": "exact_text_match",
+        "pages": [
+          8
+        ],
+        "match_count": 1
+      }
+    },
+    "standard_metadata": {
+      "document_id": "90c3d8d6279724c325fd089e",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "no_number_in_source_filename",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "90c3d8d6279724c325fd089e",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 75.200\nCCS E  98",
-  "standard_id": "中华人民共和国石油天然气行业标准",
-  "version": "",
+  "standard_name": "钢质管道及储罐腐蚀评价标准 第4部分：埋地钢质管道直流干扰腐蚀评价",
+  "standard_id": "SY/T 0087.4-2023",
+  "version": "2023",
   "chapter_path": "来源行-00047549",
   "entities": [
     {
@@ -36,6 +36,39 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "中华人民共和国石油天然气行业标准",
+    "original_standard_name": "ICS 75.200\nCCS E  98",
+    "source_location": {
+      "document_id": "508e8d5f216479cdd05e77a9",
+      "source_file": "45/SY_T 0087.4—2023.xlsx",
+      "source_sha256": "467521411b480f1b1b1c552e95c9a8327167c5a9dac4e1f75c56544bdf851e9b",
+      "sheet": "Sheet1",
+      "row": 371,
+      "cells": [
+        "A371",
+        "E371",
+        "L371",
+        "R371"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "508e8d5f216479cdd05e77a9",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "508e8d5f216479cdd05e77a9",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

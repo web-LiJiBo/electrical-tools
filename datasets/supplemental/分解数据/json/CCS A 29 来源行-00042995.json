@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 47. 020. 05",
-  "standard_id": "CCS A 29",
-  "version": "",
+  "standard_name": "铝合金牺牲阳极",
+  "standard_id": "GB/T 4948-2025",
+  "version": "2025",
   "chapter_path": "来源行-00042995",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似标题或术语，不能单独作为判定依据"
       ]
+    },
+    "original_standard_id": "CCS A 29",
+    "original_standard_name": "ICS 47. 020. 05",
+    "source_location": {
+      "document_id": "67520d1b39f54d2942bb51b8",
+      "source_file": "45/GB_T 4948-2025.xlsx",
+      "source_sha256": "d20861a70ef5b0c63b1eef511230ef9222a3667876a6b8fb007d4c0afa084040",
+      "sheet": "Sheet1",
+      "row": 93,
+      "cells": [
+        "A93"
+      ],
+      "pdf_location": {
+        "status": "text_too_short_for_unique_location",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "67520d1b39f54d2942bb51b8",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "67520d1b39f54d2942bb51b8",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

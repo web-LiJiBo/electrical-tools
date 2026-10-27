@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 29.240. 01",
-  "standard_id": "F 21",
-  "version": "",
+  "standard_name": "电力软交换系统技术规范",
+  "standard_id": "GB/T 31998-2015",
+  "version": "2015",
   "chapter_path": "6.4.4.2",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提"
       ]
+    },
+    "original_standard_id": "F 21",
+    "original_standard_name": "ICS 29.240. 01",
+    "source_location": {
+      "document_id": "eac608a27cd49ce522ea0a27",
+      "source_file": "36/GB_T 31998-2015.xlsx",
+      "source_sha256": "c7f4cfc0bf9ee7ac662bd1daed9f1d92291f9b304d7ff471099dd6d029cac6ae",
+      "sheet": "Sheet1",
+      "row": 300,
+      "cells": [
+        "A300"
+      ],
+      "pdf_location": {
+        "status": "text_too_short_for_unique_location",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "eac608a27cd49ce522ea0a27",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "eac608a27cd49ce522ea0a27",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

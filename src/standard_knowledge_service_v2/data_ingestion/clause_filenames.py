@@ -40,7 +40,9 @@ def supplemental_identity(payload: dict) -> str | None:
     rules = payload.get('rules', [])
     if len(rules) != 1 or not isinstance(rules[0], dict):
         raise ValueError('已知补充批次须有一条完整原文规则')
-    key = str(payload['standard_id']) + '\0' + str(rules[0]['content'])
+    # Metadata corrections must retain existing clause, entity and rule IDs.
+    source_id = metadata.get('original_standard_id', payload['standard_id'])
+    key = str(source_id) + '\0' + str(rules[0]['content'])
     return prefix + hashlib.sha256(key.encode('utf-8')).hexdigest()[:32]
 
 

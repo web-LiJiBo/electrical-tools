@@ -1,6 +1,6 @@
 {
-  "standard_name": "中华人民共和国通信行业标准",
-  "standard_id": "YD 5076—2014",
+  "standard_name": "固定电话交换网工程设计规范",
+  "standard_id": "YD 5076-2014",
   "version": "2014",
   "chapter_path": "来源行-00026373",
   "entities": [
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "YD 5076—2014",
+    "original_standard_name": "中华人民共和国通信行业标准",
+    "source_location": {
+      "document_id": "5879bec96cbd526d2757acca",
+      "source_file": "36/YD 5076-2014.xlsx",
+      "source_sha256": "fc3ba04a61eb36deaa0a9be71a2c26cd44116102847e3fb403664b97f55f1a4d",
+      "sheet": "Sheet1",
+      "row": 875,
+      "cells": [
+        "E875"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "5879bec96cbd526d2757acca",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "5879bec96cbd526d2757acca",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

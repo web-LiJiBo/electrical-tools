@@ -1,7 +1,7 @@
 {
-  "standard_name": "Ⅰcs 29 . 240 . 0 1",
-  "standard_id": "F 2 1",
-  "version": "",
+  "standard_name": "电力软交换系统测试规范",
+  "standard_id": "GB/T 39674-2020",
+  "version": "2020",
   "chapter_path": "来源行-00024978",
   "entities": [
     {
@@ -36,6 +36,37 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "F 2 1",
+    "original_standard_name": "Ⅰcs 29 . 240 . 0 1",
+    "source_location": {
+      "document_id": "abfe4765fa6ccfdb063151ea",
+      "source_file": "36/GB_T 39674-2020.xlsx",
+      "source_sha256": "6e4a0c83f9040e8b2fdd787d0fb33d7e08fd88532720bb322cec67b5b798208c",
+      "sheet": "Sheet1",
+      "row": 649,
+      "cells": [
+        "B649"
+      ],
+      "pdf_location": {
+        "status": "text_not_located",
+        "pages": [],
+        "match_count": 0
+      }
+    },
+    "standard_metadata": {
+      "document_id": "abfe4765fa6ccfdb063151ea",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "abfe4765fa6ccfdb063151ea",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

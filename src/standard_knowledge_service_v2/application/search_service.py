@@ -9,4 +9,5 @@ class SearchService:
         self.retriever = retriever
 
     def search(self, query: str, parsed_json: dict | None = None):
-        return self.retriever.match(LunwenMatchingInput(query, parsed_json or {}))
+        parsed = {**(parsed_json or {}), "intent": "search"}
+        return self.retriever.match(LunwenMatchingInput(query, parsed))

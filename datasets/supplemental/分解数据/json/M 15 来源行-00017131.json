@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 33.040.20",
-  "standard_id": "M 15",
-  "version": "",
+  "standard_name": "光传送网(OTN)网络管理技术要求第1部分：基本原则",
+  "standard_id": "YD/T 2149.1-2010",
+  "version": "2010",
   "chapter_path": "来源行-00017131",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似标题或术语，不能单独作为判定依据"
       ]
+    },
+    "original_standard_id": "M 15",
+    "original_standard_name": "ICS 33.040.20",
+    "source_location": {
+      "document_id": "422e01f65c5634065b09d99f",
+      "source_file": "34/YD_T 2149.1-2010.xlsx",
+      "source_sha256": "454d58928f7e880ef25b347cd116b37163ba6863a12a339346c58d5cb4674859",
+      "sheet": "Sheet1",
+      "row": 124,
+      "cells": [
+        "A124"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "422e01f65c5634065b09d99f",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "422e01f65c5634065b09d99f",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

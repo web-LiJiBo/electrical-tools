@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 75.200",
-  "standard_id": "CCS E 98",
-  "version": "",
+  "standard_name": "钢质管道及储罐腐蚀评价标准第6部分：埋地钢质管道交流干扰腐蚀评价",
+  "standard_id": "SY/T 0087.6-2021",
+  "version": "2021",
   "chapter_path": "来源行-00048745",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似标题或术语，不能单独作为判定依据"
       ]
+    },
+    "original_standard_id": "CCS E 98",
+    "original_standard_name": "ICS 75.200",
+    "source_location": {
+      "document_id": "55a5cac0aaf37d92d6f0675a",
+      "source_file": "45/SY_T 0087.6-2021.xlsx",
+      "source_sha256": "686c2218462c922335e9bf18da624aef5c78695c67bf5a16a598309a11306d8b",
+      "sheet": "Sheet1",
+      "row": 243,
+      "cells": [
+        "C243"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "55a5cac0aaf37d92d6f0675a",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "55a5cac0aaf37d92d6f0675a",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

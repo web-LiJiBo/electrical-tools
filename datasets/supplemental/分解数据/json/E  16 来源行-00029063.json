@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS  75.200",
-  "standard_id": "E  16",
-  "version": "",
+  "standard_name": "油气长输管道突发事件应急预案编制规范",
+  "standard_id": "SY/T 7412-2018",
+  "version": "2018",
   "chapter_path": "来源行-00029063",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "E  16",
+    "original_standard_name": "ICS  75.200",
+    "source_location": {
+      "document_id": "4a0bcdc9815fc438053de90c",
+      "source_file": "38/SY_T 7412-2018.xlsx",
+      "source_sha256": "a089595e25f3e00875f0fa696c15044d8537523078fc1f49d48682102551a86f",
+      "sheet": "Sheet1",
+      "row": 33,
+      "cells": [
+        "A33"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "4a0bcdc9815fc438053de90c",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "4a0bcdc9815fc438053de90c",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

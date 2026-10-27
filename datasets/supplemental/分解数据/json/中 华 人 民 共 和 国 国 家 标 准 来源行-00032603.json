@@ -1,7 +1,7 @@
 {
-  "standard_name": "z  60",
-  "standard_id": "中 华 人 民 共 和 国 国 家 标 准",
-  "version": "",
+  "standard_name": "大气污染物综合排放标准",
+  "standard_id": "GB 16297-1996",
+  "version": "1996",
   "chapter_path": "来源行-00032603",
   "entities": [
     {
@@ -36,6 +36,37 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "中 华 人 民 共 和 国 国 家 标 准",
+    "original_standard_name": "z  60",
+    "source_location": {
+      "document_id": "688338ea290e1808b408be0e",
+      "source_file": "42/GB 16297-1996.xlsx",
+      "source_sha256": "aa9f8d13455c38be9d3033a47fa8ceb8856f46514cc92f84cf61eb381cc40f41",
+      "sheet": "Sheet1",
+      "row": 253,
+      "cells": [
+        "A253"
+      ],
+      "pdf_location": {
+        "status": "text_not_located",
+        "pages": [],
+        "match_count": 0
+      }
+    },
+    "standard_metadata": {
+      "document_id": "688338ea290e1808b408be0e",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "688338ea290e1808b408be0e",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 33.040.20",
-  "standard_id": "M33",
-  "version": "",
+  "standard_name": "同步数字体系(SDH)设备功能要求",
+  "standard_id": "YD/T 1022-2018",
+  "version": "2018",
   "chapter_path": "来源行-00019132",
   "entities": [
     {
@@ -36,6 +36,50 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "M33",
+    "original_standard_name": "ICS 33.040.20",
+    "source_location": {
+      "document_id": "5e0ea355fb80e782413d1b83",
+      "source_file": "35/YD_T 1022-2018.xlsx",
+      "source_sha256": "4843f002f8677491174990d124e2fb746a80a4298ad2b287b5e1987b78c37e25",
+      "sheet": "Sheet1",
+      "row": 1153,
+      "cells": [
+        "A1153",
+        "C1153",
+        "F1153",
+        "G1153",
+        "J1153",
+        "K1153",
+        "O1153",
+        "S1153",
+        "T1153",
+        "X1153",
+        "Z1153",
+        "AA1153",
+        "AE1153",
+        "AH1153",
+        "AK1153"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "5e0ea355fb80e782413d1b83",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "5e0ea355fb80e782413d1b83",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

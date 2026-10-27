@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS  13.100",
-  "standard_id": "E 09",
-  "version": "",
+  "standard_name": "硫化氢防护安全培训规范",
+  "standard_id": "SY/T 7356-2017",
+  "version": "2017",
   "chapter_path": "来源行-00028768",
   "entities": [
     {
@@ -36,6 +36,38 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "E 09",
+    "original_standard_name": "ICS  13.100",
+    "source_location": {
+      "document_id": "9ff770b8e1433621af516250",
+      "source_file": "38/SY_T 7356-2017.xlsx",
+      "source_sha256": "ee2b5e2ee532992f78a8c2e55b3c8612de2300e99099085c34a3a645faac44cd",
+      "sheet": "Sheet1",
+      "row": 161,
+      "cells": [
+        "A161",
+        "D161",
+        "I161"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "9ff770b8e1433621af516250",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "9ff770b8e1433621af516250",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

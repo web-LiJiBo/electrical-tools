@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 13.040.40",
-  "standard_id": "Z60",
-  "version": "",
+  "standard_name": "储油库大气污染物排放标准",
+  "standard_id": "GB 20950-2020",
+  "version": "2020",
   "chapter_path": "来源行-00032651",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "Z60",
+    "original_standard_name": "ICS 13.040.40",
+    "source_location": {
+      "document_id": "6130b40e8c0d6f4a8a1b0009",
+      "source_file": "42/GB 20950-2020.xlsx",
+      "source_sha256": "0b146c0ee9037fdfe48bbc8ccc960400ed252a0650ade85eead2173acfc6e8a6",
+      "sheet": "Sheet1",
+      "row": 48,
+      "cells": [
+        "A48"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "6130b40e8c0d6f4a8a1b0009",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "6130b40e8c0d6f4a8a1b0009",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

@@ -78,6 +78,7 @@ def register_routes(app, application) -> None:
     def search(payload: dict):
         query, _ = query_payload(payload)
         parsed = application.facade.decomposer.decompose(query).to_lunwen_parsed_json()
+        parsed["intent"] = "search"
         result = application.facade.retriever.match(LunwenMatchingInput(query, parsed))
         return {"entities": [item.__dict__ if hasattr(item, "__dict__") else {"name": item.name, "similarity": item.similarity} for item in result.matched_entities], "rules": [{"rule_id": item.rule.rule_id, "rank": item.rank, "score": item.combined_score} for item in result.rules], "warnings": result.warnings}
 

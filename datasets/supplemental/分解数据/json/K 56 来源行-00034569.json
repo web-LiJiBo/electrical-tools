@@ -1,7 +1,7 @@
 {
-  "standard_name": "Ⅰcs  13. 040. 50",
-  "standard_id": "K 56",
-  "version": "",
+  "standard_name": "燃气轮机 烟气排放 第2部分:排放的自动监测",
+  "standard_id": "GB/T 18345.2-2001",
+  "version": "2001",
   "chapter_path": "来源行-00034569",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number；疑似标题或术语，不能单独作为判定依据"
       ]
+    },
+    "original_standard_id": "K 56",
+    "original_standard_name": "Ⅰcs  13. 040. 50",
+    "source_location": {
+      "document_id": "7b9e3407b2aa80d4bd107e71",
+      "source_file": "42/GB_T 18345.2-2001.xlsx",
+      "source_sha256": "7357b6a9b0b7f2a569495d79d590a1e9a03330d5135b3aa7abb376a41a88be09",
+      "sheet": "Sheet1",
+      "row": 218,
+      "cells": [
+        "A218"
+      ],
+      "pdf_location": {
+        "status": "text_too_short_for_unique_location",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "7b9e3407b2aa80d4bd107e71",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "7b9e3407b2aa80d4bd107e71",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

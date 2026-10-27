@@ -1,6 +1,6 @@
 {
-  "standard_name": "国家管网集团质量安全环保事故事件",
-  "standard_id": "管理规定",
+  "standard_name": "国家管网集团质量安全环保事故事件管理规定",
+  "standard_id": "",
   "version": "",
   "chapter_path": "来源行-00042265",
   "entities": [
@@ -36,6 +36,39 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "管理规定",
+    "original_standard_name": "国家管网集团质量安全环保事故事件",
+    "source_location": {
+      "document_id": "351a75743f063dc18f097b66",
+      "source_file": "43/国家管网集团质量安全环保事故事件管理规定.xlsx",
+      "source_sha256": "862d96ab9eb0fbafa55e79368c959c0275f274973e98cc27dc54034935f6834a",
+      "sheet": "Sheet1",
+      "row": 226,
+      "cells": [
+        "A226"
+      ],
+      "pdf_location": {
+        "status": "exact_text_match",
+        "pages": [
+          27
+        ],
+        "match_count": 1
+      }
+    },
+    "standard_metadata": {
+      "document_id": "351a75743f063dc18f097b66",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "no_number_in_source_filename",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "351a75743f063dc18f097b66",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

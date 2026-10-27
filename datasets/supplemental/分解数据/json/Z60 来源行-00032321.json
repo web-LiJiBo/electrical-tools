@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 13.040.40",
-  "standard_id": "Z60",
-  "version": "",
+  "standard_name": "锅炉大气污染物排放标准",
+  "standard_id": "GB 13271-2014",
+  "version": "2014",
   "chapter_path": "来源行-00032321",
   "entities": [
     {
@@ -36,6 +36,39 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；filename_conflicts_with_other_pending_record；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "Z60",
+    "original_standard_name": "ICS 13.040.40",
+    "source_location": {
+      "document_id": "c37a0bc1a67552cbbb441571",
+      "source_file": "42/GB 13271-2014.xlsx",
+      "source_sha256": "d233d4be426602a28d92bf39b574368bc37ca51194d0e4b1fa18d0a72e6dcf3f",
+      "sheet": "Sheet1",
+      "row": 146,
+      "cells": [
+        "A146",
+        "C146",
+        "E146",
+        "S146"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "c37a0bc1a67552cbbb441571",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "c37a0bc1a67552cbbb441571",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

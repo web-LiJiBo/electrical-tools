@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS   13.100",
-  "standard_id": "E  09",
-  "version": "",
+  "standard_name": "硫化氢环境应急救援规范",
+  "standard_id": "SY/T 7357-2017",
+  "version": "2017",
   "chapter_path": "来源行-00029028",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；章节路径使用来源行号；no_unambiguous_leading_numeric_clause_number"
       ]
+    },
+    "original_standard_id": "E  09",
+    "original_standard_name": "ICS   13.100",
+    "source_location": {
+      "document_id": "eeb663ab6288060868539e1d",
+      "source_file": "38/SY_T 7357-2017.xlsx",
+      "source_sha256": "6379805e4ca6d3bee4cdcfd37e7e9c571c153091317ee675b62c0431eee06137",
+      "sheet": "Sheet1",
+      "row": 244,
+      "cells": [
+        "B244"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "eeb663ab6288060868539e1d",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "eeb663ab6288060868539e1d",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

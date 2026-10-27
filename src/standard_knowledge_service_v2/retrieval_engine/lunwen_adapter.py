@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from hashlib import sha256
 from pathlib import Path
+import re
 
 from ..retrieval import LunwenMatchingInput, LunwenMatchingOutput, MatchedEntity, RuleMatch
 from .clause_retriever import JsonClauseRepository
@@ -30,6 +31,17 @@ class LocalLunwenRetrievalAdapter:
         candidates = [entity for entity, _ in self.repository.all_entities()]
         linked = self.linker.link(extracted, candidates, request.top_k_entities) if request.use_entity_linking else []
         focus_terms = self._focus_terms(request.parsed_json)
+        if request.parsed_json.get("intent") in {"search", "compliance", "difference", "consistency"}:
+            action_codes = {str(value).lower() for value in request.parsed_json.get("actions", [])}
+            # An inferred "inspect" must not become a literal match for an
+            # unrelated English term such as "inspection" in the source text.
+            focus_terms = [term for term in focus_terms
+                           if term.lower() not in action_codes or term.lower() in request.clause_text.lower()]
+        scope_query = request.parsed_json.get("intent") != "instruction" and bool(
+            re.search(r"适用范围|适用对象|适用于(?:哪些|什么|何种|哪类|何类)", request.clause_text)
+        )
+        if scope_query:
+            focus_terms.append("适用")
         semantic_query = " ".join([request.clause_text, *focus_terms])
         device_entities = [
             str(item.get("name", ""))
@@ -53,12 +65,14 @@ class LocalLunwenRetrievalAdapter:
         pairs = all_pairs
         hits: list[RuleHit] = []
         for rule, unit in pairs:
-            if ("标题" in rule.operation and "仅" in rule.operation
-                    or rule.operation == "清单缺失"
-                    or rule.operation.startswith("保留原始") and "数值" in rule.operation):
+            if self._navigation_only(rule, unit):
                 continue  # Retain these records in the graph, not answer evidence.
             # 原始规则正文是检索主文本；结构化字段只作为正文缺失时的兼容回退。
             rule_text = self._rule_text(rule)
+            # A bare term name cannot answer which work a standard applies to.
+            # Require scope wording in the source, rather than infer it from metadata.
+            if scope_query and not re.search(r"适用于|适用范围|适用对象", normalize(rule_text)):
+                continue
             entity_score = max((item.score for item in linked if item.entity in unit.entities), default=0.0)
             unit_text = " ".join([rule_text, rule.subject, *(item.name for item in unit.entities)])
             direct_entity_score = max(
@@ -84,7 +98,10 @@ class LocalLunwenRetrievalAdapter:
             requested_actions = {
                 str(item).strip() for item in request.parsed_json.get("actions", []) if str(item).strip()
             }
-            if requested_actions:
+            # Knowledge questions can mention operations without requiring a
+            # device action field. Keep legacy direct callers and instruction
+            # retrieval compatible, while treating both libraries equally for queries.
+            if requested_actions and request.parsed_json.get("intent", "instruction") == "instruction":
                 action_score = 1.0 if rule.action in requested_actions else 0.0
                 content_score = 0.65 * content_score + 0.35 * action_score
             hits.append(RuleHit(rule, unit, entity_score, content_score, structural_score(request.clause_text, rule_text), 0.0))
@@ -108,6 +125,17 @@ class LocalLunwenRetrievalAdapter:
             digest,
             [] if ranked else ["未召回规则"],
         )
+
+    @staticmethod
+    def _navigation_only(rule, unit) -> bool:
+        if ("标题" in rule.operation and "仅" in rule.operation
+                or rule.operation == "清单缺失"
+                or rule.operation.startswith("保留原始") and "数值" in rule.operation):
+            return True
+        if unit.metadata.get("classification") == "heading":
+            return True
+        reasons = unit.metadata.get("audit", {}).get("reasons", [])
+        return any(re.search(r"(?:^|[；;])\s*仅(?:为)?标题(?:[，,。；;]|$)", str(reason)) for reason in reasons)
 
     @staticmethod
     def _rule_text(rule) -> str:

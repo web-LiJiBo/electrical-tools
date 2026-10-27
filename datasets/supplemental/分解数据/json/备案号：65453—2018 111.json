@@ -1,6 +1,6 @@
 {
-  "standard_name": "ICS  75.200\nE  98",
-  "standard_id": "备案号：65453—2018",
+  "standard_name": "钢质管道及储罐腐蚀评价标准 第1部分：埋地钢质管道外腐蚀直接评价",
+  "standard_id": "SY/T 0087.1-2018",
   "version": "2018",
   "chapter_path": "111",
   "entities": [
@@ -36,6 +36,42 @@
       "reasons": [
         "规则式字段抽取初稿，尚未逐条语义审定或领域专家复核；条件未编译为设备控制前提；疑似表格或参数行，不作为独立控制条件"
       ]
+    },
+    "original_standard_id": "备案号：65453—2018",
+    "original_standard_name": "ICS  75.200\nE  98",
+    "source_location": {
+      "document_id": "669907a551b87e4388c96955",
+      "source_file": "45/SY_T 0087.1-2018.xlsx",
+      "source_sha256": "62a3b1cc3a17d9abc2e11388f3c92f0f80920be8caccfd501d4a99bec91b7027",
+      "sheet": "Sheet1",
+      "row": 80,
+      "cells": [
+        "A80",
+        "C80",
+        "L80",
+        "V80",
+        "AF80",
+        "AJ80",
+        "AO80"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "669907a551b87e4388c96955",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "669907a551b87e4388c96955",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "standard_name": "ICS 33.040.20",
-  "standard_id": "M33",
-  "version": "",
+  "standard_name": "光传送网(OTN)网络总体技术要求",
+  "standard_id": "YD/T 1990-2019",
+  "version": "2019",
   "chapter_path": "6.1.2",
   "entities": [
     {
@@ -36,6 +36,36 @@
       "reasons": [
         "助手语义初稿，尚未领域专家复核；自然语言条件与原文约束未编译为设备控制前提；无正文"
       ]
+    },
+    "original_standard_id": "M33",
+    "original_standard_name": "ICS 33.040.20",
+    "source_location": {
+      "document_id": "6c62f1f6d475e5a0a5604184",
+      "source_file": "34/YD_T 1990-2019.xlsx",
+      "source_sha256": "628764bd9255b28b0f7a4f32f89974e174b4b41bd8006b2169a6c5e88f6bd7e8",
+      "sheet": "Sheet1",
+      "row": 423,
+      "cells": [
+        "A423"
+      ],
+      "pdf_location": {
+        "status": "scanned_pdf_requires_ocr",
+        "pages": []
+      }
+    },
+    "standard_metadata": {
+      "document_id": "6c62f1f6d475e5a0a5604184",
+      "catalog": "datasets/supplemental/标准来源目录.json",
+      "identity_status": "filename_confirmed",
+      "version_basis": "edition_year_not_effective_date",
+      "current_validity": "not_assessed"
+    },
+    "applicability": {
+      "scope_status": "source_excerpt_available",
+      "scope_document_id": "6c62f1f6d475e5a0a5604184",
+      "clause_condition": "",
+      "executable": false,
+      "note": "标准范围原文与条款自身条件分别保留；未推导设备控制条件"
     }
   }
 }
