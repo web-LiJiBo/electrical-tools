@@ -1,6 +1,6 @@
 {
   "simulation_only": true,
-  "scope": "本批22条通过样例；阈值和点位均为测试预设，不用于真实设备。",
+  "scope": "累计28条通过样例（原22条及2026-10-26馈线断路器6条）；阈值和点位均为测试预设，不用于真实设备。",
   "examples": [
     {
       "device_id": "SIM-IEC-BESS-01",
@@ -403,7 +403,138 @@
       "parameters": {},
       "expected": "generated",
       "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-FEEDER-BREAKER-01",
+      "action": "trip",
+      "facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 1,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-FEEDER-BREAKER-01",
+      "action": "close",
+      "facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 0,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-IEC-FEEDER-BREAKER-01",
+      "action": "alarm",
+      "facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 1,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-FEEDER-BREAKER-01",
+      "action": "trip",
+      "facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 1,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-FEEDER-BREAKER-01",
+      "action": "close",
+      "facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 0,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
+    },
+    {
+      "device_id": "SIM-MB-FEEDER-BREAKER-01",
+      "action": "alarm",
+      "facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 1,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "parameters": {},
+      "expected": "generated",
+      "simulation_only": true
     }
   ]
 }
-

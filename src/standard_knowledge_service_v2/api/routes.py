@@ -8,6 +8,8 @@ from ..retrieval import LunwenMatchingInput
 
 def register_routes(app, application) -> None:
     from fastapi import HTTPException
+    from .simulation_routes import register_simulation_routes
+    register_simulation_routes(app, application)
 
     def analyze_payload(payload: object):
         try:

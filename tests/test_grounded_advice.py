@@ -24,7 +24,7 @@ class Client:
 
 
 def setup(action='trip', condition='current >= 100', reviewed=True):
-    # Explicit synthetic source binding exists only in this test, never in the real database.
+    # Isolated synthetic evidence; it is not pre-bound to any device template.
     unit = ClauseKnowledgeUnit('TEST-SYNTHETIC', 'TEST-NOT-A-STANDARD', '1', '1', '模拟断路器测试过流分闸规则',
         [Entity('e1', '断路器', '设备')],
         [Rule('r1', '断路器', action, condition, content='测试条件满足时模拟分闸')],
@@ -32,7 +32,6 @@ def setup(action='trip', condition='current >= 100', reviewed=True):
     repo = SimpleNamespace(unit_for_rule=lambda rid: unit if rid == 'r1' else None)
     pipeline = SimpleNamespace(retriever=SimpleNamespace(repository=repo), simulation_session=SimulationControlSession(),
                                applicability=ApplicabilityValidator(), extractor=SemanticExtractor(), generator=InstructionGenerationService())
-    pipeline.simulation_session.service.devices['SIM-IEC-BREAKER-01']['actions']['trip']['source_rule_ids'] = ['r1']
     data = {'selected_rule': {'rule_id': 'r1'}, 'answer': {'text': '原文结论'}, 'candidate_instruction': None}
     proposal = {'summary': '按提供的测试规则和电流事实给出建议', 'rule_ids': ['r1'],
                 'suggestions': [{'text': '核对测试条件和设备状态', 'rule_ids': ['r1']}],
@@ -54,14 +53,16 @@ def test_model_advice_template_confirm_closed_loop():
     assert before == pipeline.simulation_session.snapshot()
 
 @pytest.mark.parametrize('kwargs', [{'action': ''}, {'condition': 'current >= 200'}, {'condition': '无法编译的自然语言'}, {'reviewed': False}])
-def test_invalid_basis_or_condition_no_payload(kwargs):
+def test_clause_fields_do_not_replace_device_template_conditions(kwargs):
     pipeline, data, proposal, request = setup(**kwargs)
     GroundedAdviceService(Client(proposal)).enrich(pipeline, request, data)
-    assert not (data.get('candidate_instruction') or {}).get('payload')
+    assert data['candidate_instruction']['payload']['requested_action'] == 'trip'
+    assert data['simulation_preview']['status'] == 'generated'
+    assert data['advice']['sources'][0]['manual_review_required'] is (kwargs.get('reviewed') is False)
     assert not hasattr(pipeline.simulation_session, 'tasks')
 
 
-@pytest.mark.parametrize('mutation', ['citation', 'target', 'extra_parameter', 'extra_field', 'text_mismatch', 'no_binding'])
+@pytest.mark.parametrize('mutation', ['citation', 'target', 'extra_parameter', 'extra_field', 'text_mismatch'])
 def test_invalid_model_output_or_mapping_blocks(mutation):
     pipeline, data, proposal, request = setup()
     if mutation == 'citation': proposal['rule_ids'] = ['fake']
@@ -69,7 +70,6 @@ def test_invalid_model_output_or_mapping_blocks(mutation):
     if mutation == 'extra_parameter': proposal['instruction']['parameters'] = {'payload': 'untrusted'}
     if mutation == 'extra_field': proposal['instruction']['payload'] = {'execute': True}
     if mutation == 'text_mismatch': proposal['instruction']['text'] = '建议合闸'
-    if mutation == 'no_binding': pipeline.simulation_session.service.devices['SIM-IEC-BREAKER-01']['actions']['trip'].pop('source_rule_ids')
     GroundedAdviceService(Client(proposal)).enrich(pipeline, request, data)
     assert not (data.get('candidate_instruction') or {}).get('payload')
     assert not hasattr(pipeline.simulation_session, 'tasks')
@@ -105,7 +105,7 @@ def test_inspection_only_advice_and_ambiguous_target():
     assert data['advice']['conversion']['status'] == 'blocked'
 
 
-def test_pipeline_status_question_can_propose_without_execution_request():
+def test_pipeline_status_question_returns_facts_without_requiring_model_instruction():
     base, _, proposal, request = setup()
     class Retriever:
         repository = base.retriever.repository
@@ -116,6 +116,7 @@ def test_pipeline_status_question_can_propose_without_execution_request():
     pipeline.simulation_session = base.simulation_session
     pipeline.advisor = GroundedAdviceService(Client(proposal))
     result = pipeline.analyze(request)
-    assert result.status == 'generated'
-    assert result.data['advice']['source'] == 'llm'
-    assert result.data['instruction_generation']['status'] == 'generated'
+    assert result.status == 'answered'
+    assert result.data['simulation_factual'] is True
+    assert result.data['candidate_instruction'] is None
+    assert result.data['devices'][0]['state']['position'] == 'closed'

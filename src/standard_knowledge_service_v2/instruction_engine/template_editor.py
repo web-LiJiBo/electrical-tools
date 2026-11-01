@@ -22,7 +22,7 @@ def validate_template(service, payload):
         raise ValueError('模板必须为JSON对象')
     allowed = {'function', 'condition', 'constraints', 'parameter', 'unit', 'minimum', 'maximum', 'value', 'mapping', 'source_note'}
     if set(template) - allowed:
-        raise ValueError('模板含不支持字段；条款绑定由后端管理')
+        raise ValueError('模板含不支持字段；条款引用由分析结果提供')
     for field in ('function', 'condition'):
         if not isinstance(template.get(field), str) or not template[field].strip():
             raise ValueError(f'请填写{field}')

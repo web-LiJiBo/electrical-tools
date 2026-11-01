@@ -1,0 +1,630 @@
+{
+  "schema_version": "1.0",
+  "simulation_only": true,
+  "source": "synthetic_test_fixture",
+  "description": "测试预设；协议点位与联锁仅用于本地模拟。",
+  "action_templates": [
+    {
+      "template_id": "cooling_fan.start",
+      "device_type": "cooling_fan",
+      "action": "start",
+      "display_name": "启动",
+      "capability": "start",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "cooling_fan_start",
+      "condition": "start_permission == 1",
+      "constraints": [
+        {
+          "parameter": "power_available",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "start_command",
+      "feedback_point": "running_feedback",
+      "simulation_effects": {
+        "state": {
+          "running": true
+        }
+      },
+      "value": true
+    },
+    {
+      "template_id": "cooling_fan.stop",
+      "device_type": "cooling_fan",
+      "action": "stop",
+      "display_name": "停止",
+      "capability": "stop",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "cooling_fan_stop",
+      "condition": "stop_permission == 1",
+      "constraints": [
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "redundant_cooling_available",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "stop_command",
+      "feedback_point": "running_feedback",
+      "simulation_effects": {
+        "state": {
+          "running": false
+        }
+      },
+      "value": false
+    },
+    {
+      "template_id": "oil_pump.start",
+      "device_type": "oil_pump",
+      "action": "start",
+      "display_name": "启动",
+      "capability": "start",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "oil_pump_start",
+      "condition": "start_permission == 1",
+      "constraints": [
+        {
+          "parameter": "power_available",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "start_command",
+      "feedback_point": "running_feedback",
+      "simulation_effects": {
+        "state": {
+          "running": true
+        }
+      },
+      "value": true
+    },
+    {
+      "template_id": "oil_pump.stop",
+      "device_type": "oil_pump",
+      "action": "stop",
+      "display_name": "停止",
+      "capability": "stop",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "oil_pump_stop",
+      "condition": "stop_permission == 1",
+      "constraints": [
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "redundant_cooling_available",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "stop_command",
+      "feedback_point": "running_feedback",
+      "simulation_effects": {
+        "state": {
+          "running": false
+        }
+      },
+      "value": false
+    },
+    {
+      "template_id": "breaker.trip",
+      "device_type": "breaker",
+      "action": "trip",
+      "display_name": "分闸",
+      "capability": "trip",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "breaker_trip",
+      "condition": "remote_control_enabled == 1",
+      "constraints": [
+        {
+          "parameter": "trip_permission",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "trip_command",
+      "feedback_point": "position_feedback",
+      "simulation_effects": {
+        "state": {
+          "position": "open"
+        },
+        "runtime_facts": {
+          "current": 0,
+          "breaker_closed": 0,
+          "voltage_present": 0
+        }
+      },
+      "value": false
+    },
+    {
+      "template_id": "breaker.close",
+      "device_type": "breaker",
+      "action": "close",
+      "display_name": "合闸",
+      "capability": "close",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "breaker_close",
+      "condition": "close_permission == 1",
+      "constraints": [
+        {
+          "parameter": "protection_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "close_command",
+      "feedback_point": "position_feedback",
+      "simulation_effects": {
+        "state": {
+          "position": "closed"
+        },
+        "runtime_facts": {
+          "breaker_closed": 1,
+          "voltage_present": 1
+        }
+      },
+      "value": true,
+      "relation_requirements": [
+        {
+          "role": "earthing_switch",
+          "field": "state.position",
+          "operator": "==",
+          "value": "open"
+        },
+        {
+          "role": "disconnector",
+          "field": "state.position",
+          "operator": "==",
+          "value": "closed"
+        }
+      ]
+    },
+    {
+      "template_id": "disconnector.open",
+      "device_type": "disconnector",
+      "action": "open",
+      "display_name": "分闸",
+      "capability": "open",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "disconnector_open",
+      "condition": "operation_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "open_command",
+      "feedback_point": "position_feedback",
+      "simulation_effects": {
+        "state": {
+          "position": "open"
+        }
+      },
+      "value": false,
+      "relation_requirements": [
+        {
+          "role": "breaker",
+          "field": "state.position",
+          "operator": "==",
+          "value": "open"
+        },
+        {
+          "role": "breaker",
+          "field": "runtime_facts.current",
+          "operator": "==",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "template_id": "disconnector.close",
+      "device_type": "disconnector",
+      "action": "close",
+      "display_name": "合闸",
+      "capability": "close",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "disconnector_close",
+      "condition": "operation_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "close_command",
+      "feedback_point": "position_feedback",
+      "simulation_effects": {
+        "state": {
+          "position": "closed"
+        }
+      },
+      "value": true,
+      "relation_requirements": [
+        {
+          "role": "breaker",
+          "field": "state.position",
+          "operator": "==",
+          "value": "open"
+        },
+        {
+          "role": "breaker",
+          "field": "runtime_facts.current",
+          "operator": "==",
+          "value": 0
+        },
+        {
+          "role": "earthing_switch",
+          "field": "state.position",
+          "operator": "==",
+          "value": "open"
+        }
+      ]
+    },
+    {
+      "template_id": "earthing_switch.open",
+      "device_type": "earthing_switch",
+      "action": "open",
+      "display_name": "分闸",
+      "capability": "open",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "earthing_switch_open",
+      "condition": "operation_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "open_command",
+      "feedback_point": "position_feedback",
+      "simulation_effects": {
+        "state": {
+          "position": "open"
+        }
+      },
+      "value": false
+    },
+    {
+      "template_id": "earthing_switch.close",
+      "device_type": "earthing_switch",
+      "action": "close",
+      "display_name": "合闸",
+      "capability": "close",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "earthing_switch_close",
+      "condition": "operation_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "close_command",
+      "feedback_point": "position_feedback",
+      "simulation_effects": {
+        "state": {
+          "position": "closed"
+        }
+      },
+      "value": true,
+      "relation_requirements": [
+        {
+          "role": "breaker",
+          "field": "state.position",
+          "operator": "==",
+          "value": "open"
+        },
+        {
+          "role": "breaker",
+          "field": "runtime_facts.current",
+          "operator": "==",
+          "value": 0
+        },
+        {
+          "role": "disconnector",
+          "field": "state.position",
+          "operator": "==",
+          "value": "open"
+        },
+        {
+          "role": "breaker",
+          "field": "runtime_facts.voltage_present",
+          "operator": "==",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "template_id": "tap_changer.raise",
+      "device_type": "tap_changer",
+      "action": "raise",
+      "display_name": "升一档",
+      "capability": "raise",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "tap_changer_raise",
+      "condition": "tap_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "busy",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "tap_position",
+          "operator": "<",
+          "value": 17,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "raise_command",
+      "feedback_point": "tap_position_feedback",
+      "simulation_effects": {
+        "state": {
+          "tap_position": {
+            "increment": 1
+          }
+        }
+      },
+      "value": 1,
+      "unit": "档"
+    },
+    {
+      "template_id": "tap_changer.lower",
+      "device_type": "tap_changer",
+      "action": "lower",
+      "display_name": "降一档",
+      "capability": "lower",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "tap_changer_lower",
+      "condition": "tap_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "busy",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "tap_position",
+          "operator": ">",
+          "value": 1,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "lower_command",
+      "feedback_point": "tap_position_feedback",
+      "simulation_effects": {
+        "state": {
+          "tap_position": {
+            "increment": -1
+          }
+        }
+      },
+      "value": 2,
+      "unit": "档"
+    },
+    {
+      "template_id": "tap_changer.set_tap",
+      "device_type": "tap_changer",
+      "action": "set_tap",
+      "display_name": "设定档位",
+      "capability": "set_tap",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "function": "tap_changer_set_tap",
+      "condition": "tap_permission == 1",
+      "constraints": [
+        {
+          "parameter": "remote_control_enabled",
+          "operator": "==",
+          "value": 1,
+          "role": "precondition"
+        },
+        {
+          "parameter": "busy",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "maintenance_lockout",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        },
+        {
+          "parameter": "device_fault",
+          "operator": "==",
+          "value": 0,
+          "role": "precondition"
+        }
+      ],
+      "command_point": "set_tap_command",
+      "feedback_point": "tap_position_feedback",
+      "simulation_effects": {
+        "state": {
+          "tap_position": {
+            "from_parameter": "tap_position"
+          }
+        }
+      },
+      "parameter": "tap_position",
+      "parameter_type": "integer",
+      "minimum": 1,
+      "maximum": 17,
+      "unit": "档"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0",
+  "simulation_only": true,
+  "source": "synthetic_test_fixture",
+  "description": "测试预设；协议点位与联锁仅用于本地模拟。",
+  "device_instances": [
+    {
+      "device_id": "SIM-IEC-DISCONNECTOR-01",
+      "display_name": "模拟隔离开关1",
+      "aliases": [
+        "隔离开关1",
+        "主变1隔离开关"
+      ],
+      "device_template_ref": "disconnector",
+      "protocol": "IEC61850",
+      "points": {
+        "open_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "",
+          "object_reference": "LOCAL_DISCONNECTOR_1/CTRL/GGIO1.open",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "bool"
+        },
+        "close_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "",
+          "object_reference": "LOCAL_DISCONNECTOR_1/CTRL/GGIO1.close",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "bool"
+        },
+        "position_feedback": {
+          "protocol": "IEC61850",
+          "direction": "read",
+          "field": "state.position",
+          "unit": "",
+          "object_reference": "LOCAL_DISCONNECTOR_1/STATUS/GGIO1.feedback",
+          "data_type": "enum",
+          "scale": 1,
+          "value_encoding": {
+            "open": 1,
+            "closed": 2
+          }
+        }
+      },
+      "initial_state": {
+        "position": "closed"
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "device_fault": 0,
+        "maintenance_lockout": 0,
+        "operation_permission": 1
+      },
+      "rated_parameters": {
+        "source": "synthetic_test_fixture"
+      }
+    },
+    {
+      "device_id": "SIM-MB-DISCONNECTOR-01",
+      "display_name": "模拟隔离开关2",
+      "aliases": [
+        "隔离开关2",
+        "主变2隔离开关"
+      ],
+      "device_template_ref": "disconnector",
+      "protocol": "Modbus",
+      "points": {
+        "open_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "",
+          "transport": "SIMULATED",
+          "slave_id": 31,
+          "address": 0,
+          "function_code": 5,
+          "data_type": "bool",
+          "scale": 1
+        },
+        "close_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "",
+          "transport": "SIMULATED",
+          "slave_id": 31,
+          "address": 0,
+          "function_code": 5,
+          "data_type": "bool",
+          "scale": 1
+        },
+        "position_feedback": {
+          "protocol": "Modbus",
+          "direction": "read",
+          "field": "state.position",
+          "unit": "",
+          "transport": "SIMULATED",
+          "slave_id": 31,
+          "address": 100,
+          "function_code": 1,
+          "data_type": "bool",
+          "scale": 1,
+          "value_encoding": {
+            "open": false,
+            "closed": true
+          }
+        }
+      },
+      "initial_state": {
+        "position": "closed"
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "device_fault": 0,
+        "maintenance_lockout": 0,
+        "operation_permission": 1
+      },
+      "rated_parameters": {
+        "source": "synthetic_test_fixture"
+      }
+    },
+    {
+      "device_id": "SIM-IEC-EARTHING-01",
+      "display_name": "模拟接地开关1",
+      "aliases": [
+        "接地开关1",
+        "主变1接地开关"
+      ],
+      "device_template_ref": "earthing_switch",
+      "protocol": "IEC61850",
+      "points": {
+        "open_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "",
+          "object_reference": "LOCAL_EARTHING_1/CTRL/GGIO1.open",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "bool"
+        },
+        "close_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "",
+          "object_reference": "LOCAL_EARTHING_1/CTRL/GGIO1.close",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "bool"
+        },
+        "position_feedback": {
+          "protocol": "IEC61850",
+          "direction": "read",
+          "field": "state.position",
+          "unit": "",
+          "object_reference": "LOCAL_EARTHING_1/STATUS/GGIO1.feedback",
+          "data_type": "enum",
+          "scale": 1,
+          "value_encoding": {
+            "open": 1,
+            "closed": 2
+          }
+        }
+      },
+      "initial_state": {
+        "position": "open"
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "device_fault": 0,
+        "maintenance_lockout": 0,
+        "operation_permission": 1
+      },
+      "rated_parameters": {
+        "source": "synthetic_test_fixture"
+      }
+    },
+    {
+      "device_id": "SIM-MB-EARTHING-01",
+      "display_name": "模拟接地开关2",
+      "aliases": [
+        "接地开关2",
+        "主变2接地开关"
+      ],
+      "device_template_ref": "earthing_switch",
+      "protocol": "Modbus",
+      "points": {
+        "open_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "",
+          "transport": "SIMULATED",
+          "slave_id": 32,
+          "address": 0,
+          "function_code": 5,
+          "data_type": "bool",
+          "scale": 1
+        },
+        "close_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "",
+          "transport": "SIMULATED",
+          "slave_id": 32,
+          "address": 0,
+          "function_code": 5,
+          "data_type": "bool",
+          "scale": 1
+        },
+        "position_feedback": {
+          "protocol": "Modbus",
+          "direction": "read",
+          "field": "state.position",
+          "unit": "",
+          "transport": "SIMULATED",
+          "slave_id": 32,
+          "address": 100,
+          "function_code": 1,
+          "data_type": "bool",
+          "scale": 1,
+          "value_encoding": {
+            "open": false,
+            "closed": true
+          }
+        }
+      },
+      "initial_state": {
+        "position": "open"
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "device_fault": 0,
+        "maintenance_lockout": 0,
+        "operation_permission": 1
+      },
+      "rated_parameters": {
+        "source": "synthetic_test_fixture"
+      }
+    },
+    {
+      "device_id": "SIM-IEC-TAP-01",
+      "display_name": "模拟有载调压装置1",
+      "aliases": [
+        "有载调压装置1",
+        "主变1有载调压装置"
+      ],
+      "device_template_ref": "tap_changer",
+      "protocol": "IEC61850",
+      "points": {
+        "raise_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "档",
+          "object_reference": "LOCAL_TAP_1/CTRL/GGIO1.raise",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "uint16"
+        },
+        "lower_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "档",
+          "object_reference": "LOCAL_TAP_1/CTRL/GGIO1.lower",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "uint16"
+        },
+        "set_tap_command": {
+          "protocol": "IEC61850",
+          "direction": "write",
+          "unit": "档",
+          "object_reference": "LOCAL_TAP_1/CTRL/GGIO1.set_tap",
+          "control_model": "direct-with-normal-security",
+          "service": "Operate",
+          "data_type": "uint16"
+        },
+        "tap_position_feedback": {
+          "protocol": "IEC61850",
+          "direction": "read",
+          "field": "state.tap_position",
+          "unit": "档",
+          "object_reference": "LOCAL_TAP_1/STATUS/GGIO1.feedback",
+          "data_type": "uint16",
+          "scale": 1
+        }
+      },
+      "initial_state": {
+        "tap_position": 8
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "device_fault": 0,
+        "maintenance_lockout": 0,
+        "tap_permission": 1,
+        "busy": 0,
+        "tap_min": 1,
+        "tap_max": 17
+      },
+      "rated_parameters": {
+        "source": "synthetic_test_fixture"
+      }
+    },
+    {
+      "device_id": "SIM-MB-TAP-01",
+      "display_name": "模拟有载调压装置2",
+      "aliases": [
+        "有载调压装置2",
+        "主变2有载调压装置"
+      ],
+      "device_template_ref": "tap_changer",
+      "protocol": "Modbus",
+      "points": {
+        "raise_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "档",
+          "transport": "SIMULATED",
+          "slave_id": 33,
+          "address": 0,
+          "function_code": 6,
+          "data_type": "uint16",
+          "scale": 1
+        },
+        "lower_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "档",
+          "transport": "SIMULATED",
+          "slave_id": 33,
+          "address": 1,
+          "function_code": 6,
+          "data_type": "uint16",
+          "scale": 1
+        },
+        "set_tap_command": {
+          "protocol": "Modbus",
+          "direction": "write",
+          "unit": "档",
+          "transport": "SIMULATED",
+          "slave_id": 33,
+          "address": 2,
+          "function_code": 6,
+          "data_type": "uint16",
+          "scale": 1
+        },
+        "tap_position_feedback": {
+          "protocol": "Modbus",
+          "direction": "read",
+          "field": "state.tap_position",
+          "unit": "档",
+          "transport": "SIMULATED",
+          "slave_id": 33,
+          "address": 100,
+          "function_code": 3,
+          "data_type": "uint16",
+          "scale": 1
+        }
+      },
+      "initial_state": {
+        "tap_position": 8
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "device_fault": 0,
+        "maintenance_lockout": 0,
+        "tap_permission": 1,
+        "busy": 0,
+        "tap_min": 1,
+        "tap_max": 17
+      },
+      "rated_parameters": {
+        "source": "synthetic_test_fixture"
+      }
+    }
+  ]
+}

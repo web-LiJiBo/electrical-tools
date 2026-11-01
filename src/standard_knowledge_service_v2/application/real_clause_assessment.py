@@ -7,19 +7,42 @@ from types import SimpleNamespace
 from ..retrieval import LunwenMatchingInput
 
 
-def assess_real_clause(pipeline, request):
+def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None):
     session = pipeline.simulation_session
+    if snapshot is None and request.parameters.get('simulation_mode') is True:
+        from .simulation_access import default_session, simulation_runtime
+        identifier = request.parameters.get('simulation_session_id')
+        try:
+            snapshot = simulation_runtime(pipeline).snapshot(identifier) if identifier else default_session(pipeline)
+        except (KeyError, ValueError):
+            return 'uncertain', {'answer': {'text': '模拟会话不存在，请重新选择会话'},
+                                 'simulation_factual': True, 'candidate_instruction': None}, []
     text = request.query.lower()
-    ids = [d["device_id"] for d in session.snapshot()["devices"] if d["device_id"].lower() in text]
-    ids += [f"SIM-TRANSFORMER-0{i}" for i in (1, 2) if re.search(f"模拟变压器{i}(?![0-9])", text)]
-    if request.parameters.get("device_id"):
-        ids.append(str(request.parameters["device_id"]))
+    profiles = session.service.devices
+    if snapshot is not None:
+        from .simulation_access import simulation_runtime
+        from .simulation_query import _targets
+        runtime = simulation_runtime(pipeline)
+        profiles = runtime.catalog.devices
+        devices = [{**profiles[d['device_id']], **d} for d in snapshot['devices']]
+        ids = _targets(request.query, request.parameters, devices,
+                       runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {}))
+        available = {d['device_id'] for d in devices}
+    else:
+        ids = [d['device_id'] for d in session.snapshot()['devices'] if d['device_id'].lower() in text]
+        if request.parameters.get('device_id'):
+            ids.append(str(request.parameters['device_id']))
+        available = set(profiles)
     ids = list(dict.fromkeys(ids))
-    device_id = ids[0] if len(ids) == 1 and ids[0] in session.service.devices else ""
-    with session.lock:
-        facts = dict(session.facts.get(device_id, {}))
-        state = dict(session.service.states.get(device_id, {}))
-    device = session.service.devices.get(device_id, {})
+    device_id = device_id or (ids[0] if len(ids) == 1 and ids[0] in available else "")
+    if snapshot is not None:
+        current = next((d for d in snapshot['devices'] if d['device_id'] == device_id), {})
+        facts, state = dict(current.get('runtime_facts', {})), dict(current.get('state', {}))
+    else:
+        with session.lock:
+            facts = dict(session.facts.get(device_id, {}))
+            state = dict(session.service.states.get(device_id, {}))
+    device = profiles.get(device_id, {})
     # 执行同一真实分解器及检索器；增加设备参数名称，不注入标准阈值。
     expanded = request.query
     if device.get("device_type") == "transformer":
@@ -39,12 +62,12 @@ def assess_real_clause(pipeline, request):
     # 实验设备显式绑定来源条款ID，避免把不同标准/版本的阈值混用。
     # 保留全库检索结果，再进行条款ID索引召回；不伪装为语义Top-K命中。
     bound_id = device.get("assessment_clause_id")
-    bound = next((unit for unit in pipeline.retriever.repository.units if unit.clause_id == bound_id),None)
+    bound = next((unit for unit in getattr(pipeline.retriever.repository, 'units', []) if unit.clause_id == bound_id),None)
     data["retrieval_trace"]={"semantic_candidates":len(matched.rules),"device_bound_clause_id":bound_id,"bound_clause_found":bound is not None}
-    if bound is None:
-        return "uncertain",data,[]
-    candidates = [SimpleNamespace(rule=rule) for rule in bound.rules]
-    data["matching"]["rules"] += [{"rule_id":rule.rule_id,"content":rule.content,"rank":None,"score":None,"retrieval_method":"device_clause_id_binding"} for rule in bound.rules if not any(hit.rule.rule_id==rule.rule_id for hit in matched.rules)]
+    candidates = list(matched.rules)
+    if bound is not None:
+        candidates += [SimpleNamespace(rule=rule) for rule in bound.rules if not any(hit.rule.rule_id == rule.rule_id for hit in candidates)]
+        data["matching"]["rules"] += [{"rule_id":rule.rule_id,"content":rule.content,"rank":None,"score":None,"retrieval_method":"optional_device_clause_hint"} for rule in bound.rules if not any(hit.rule.rule_id==rule.rule_id for hit in matched.rules)]
     # 当前只支持这一清楚限定的条款结构，不泛化解析复杂逻辑。
     for hit in candidates:
         unit = pipeline.retriever.repository.unit_for_rule(hit.rule.rule_id)

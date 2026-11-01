@@ -14,7 +14,7 @@ class InstructionTemplate:
 
 
 class TemplateLibrary:
-    """场景/动作/协议检索目录；不存具体点位，也不授予条款来源或下发权限。"""
+    """动作/设备/协议检索目录；场景仅保留为兼容提示，不授予下发权限。"""
 
     def __init__(self) -> None:
         iec_fields = ("device_id", "logical_node", "data_object")
@@ -48,6 +48,25 @@ class TemplateLibrary:
             for action in ('start', 'stop'):
                 for protocol, fields in (('IEC61850', iec_fields), ('Modbus', modbus_fields)):
                     self._templates.append(InstructionTemplate(scenario, action, device_type, protocol, fields))
+        self._reusable_types = {
+            'transformer': (), 'breaker': ('trip', 'close', 'alarm'),
+            'disconnector': ('open', 'close'), 'earthing_switch': ('open', 'close'),
+            'cooling_fan': ('start', 'stop'), 'oil_pump': ('start', 'stop'),
+            'tap_changer': ('raise', 'lower', 'set_tap'),
+            'inverter': ('adjust_active_power', 'adjust_reactive_power', 'regulate_voltage'),
+            'battery_pcs': ('start', 'stop', 'alarm', 'adjust_active_power', 'limit_power'),
+            'capacitor_bank': ('start', 'stop', 'alarm'),
+            'ventilation_fan': ('start', 'stop', 'alarm'),
+            'pole_controller': ('runback_power',),
+        }
+        for device_type, actions in self._reusable_types.items():
+            for action in actions:
+                for protocol, fields in (('IEC61850', iec_fields), ('Modbus', modbus_fields)):
+                    if not any(t.action == action and t.device_type == device_type and t.protocol == protocol for t in self._templates):
+                        self._templates.append(InstructionTemplate('', action, device_type, protocol, fields))
 
     def find(self, scenario: str, action: str, device_type: str = "", protocol: str = "") -> list[InstructionTemplate]:
-        return [item for item in self._templates if item.scenario == scenario and item.action == action and (not protocol or item.protocol.lower() == protocol.lower()) and (not item.device_type or item.device_type == device_type)]
+        return [item for item in self._templates if item.action == action
+                and (not protocol or item.protocol.lower() == protocol.lower())
+                and (item.device_type == device_type if device_type in self._reusable_types
+                     else not item.device_type or item.device_type == device_type)]

@@ -83,12 +83,12 @@ def test_setpoint_permission_and_mode(field):
     assert not service.generate(key, 'regulate_voltage', facts, {'voltage_v': 400}).payload
 
 
-def test_extra_parameters_and_wrong_scenario_blocked():
+def test_extra_parameters_blocked_and_valid_action_reusable_across_scenarios():
     service = SimulationInstructionService()
     key = 'SIM-MB-FAN-01'
     facts = service.devices[key]['runtime_facts']
     assert not service.generate(key, 'start', facts, {'unexpected': 1}).payload
-    assert not service.generate(key, 'start', facts, scenario='power_grid_operation').payload
+    assert service.generate(key, 'start', facts, scenario='power_grid_operation').payload
 
 
 def test_new_templates_do_not_claim_source_authorization():

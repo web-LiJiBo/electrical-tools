@@ -11,7 +11,7 @@ from standard_knowledge_service_v2.retrieval_engine.clause_retriever import Json
 from standard_knowledge_service_v2.retrieval_engine.lunwen_adapter import LocalLunwenRetrievalAdapter
 
 
-def test_preset_status_question_retrieval_advice_confirm():
+def test_source_requested_suggestion_and_independent_preview_do_not_execute():
     case = json.loads((Path(__file__).parent / 'fixtures/instruction_question.json').read_text(encoding='utf-8'))
     source = case['source']
     unit = ClauseKnowledgeUnit(source['clause_id'], source['standard_id'], 'TEST', 'TEST-1', source['text'],
@@ -21,7 +21,6 @@ def test_preset_status_question_retrieval_advice_confirm():
     # Isolated repository: no production standards or global template files modified.
     pipeline = AnalysisPipeline(LocalLunwenRetrievalAdapter(JsonClauseRepository([unit])), decomposer=RawTextFallback())
     session = pipeline.simulation_session
-    session.service.devices[case['device_id']]['actions']['trip']['source_rule_ids'] = [source['rule_id']]
 
     class AdviceStub:
         def complete(self, system, user):
@@ -41,6 +40,11 @@ def test_preset_status_question_retrieval_advice_confirm():
     assert source['rule_id'] in [r['rule_id'] for r in response.data['matching']['rules']]
     assert response.status == 'generated'
     assert response.data['instruction_generation']['status'] == 'generated'
+    assert response.data['candidate_instruction']['payload']['requested_action'] == 'trip'
+    # An explicit request previews the generic template without a source binding.
+    response = pipeline.analyze(AnalysisRequest('模拟断路器1分闸', parameters=case['parameters']))
+    assert response.status == 'generated'
+    assert response.data['simulation_preview']['status'] == 'generated'
     assert response.data['candidate_instruction']['payload']['requested_action'] == 'trip'
     assert session.service.states[case['device_id']]['position'] == 'closed'
     assert not hasattr(session, 'confirm')

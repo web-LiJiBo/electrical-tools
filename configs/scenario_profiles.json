@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "simulation_only": true,
+  "source": "synthetic_test_fixture",
+  "description": "测试预设；协议点位与联锁仅用于本地模拟。",
+  "scenario_profiles": [
+    {
+      "scenario_id": "substation_maintenance",
+      "display_name": "两台主变设备运维",
+      "description": "7类14台设备；关系及工况为软件测试模型。",
+      "device_ids": [
+        "SIM-TRANSFORMER-01",
+        "SIM-IEC-BREAKER-01",
+        "SIM-IEC-DISCONNECTOR-01",
+        "SIM-IEC-EARTHING-01",
+        "SIM-IEC-FAN-01",
+        "SIM-IEC-PUMP-01",
+        "SIM-IEC-TAP-01",
+        "SIM-TRANSFORMER-02",
+        "SIM-MB-BREAKER-01",
+        "SIM-MB-DISCONNECTOR-01",
+        "SIM-MB-EARTHING-01",
+        "SIM-MB-FAN-01",
+        "SIM-MB-PUMP-01",
+        "SIM-MB-TAP-01"
+      ],
+      "groups": {
+        "A": {
+          "transformer": "SIM-TRANSFORMER-01",
+          "breaker": "SIM-IEC-BREAKER-01",
+          "disconnector": "SIM-IEC-DISCONNECTOR-01",
+          "earthing_switch": "SIM-IEC-EARTHING-01",
+          "cooling_fan": "SIM-IEC-FAN-01",
+          "oil_pump": "SIM-IEC-PUMP-01",
+          "tap_changer": "SIM-IEC-TAP-01"
+        },
+        "B": {
+          "transformer": "SIM-TRANSFORMER-02",
+          "breaker": "SIM-MB-BREAKER-01",
+          "disconnector": "SIM-MB-DISCONNECTOR-01",
+          "earthing_switch": "SIM-MB-EARTHING-01",
+          "cooling_fan": "SIM-MB-FAN-01",
+          "oil_pump": "SIM-MB-PUMP-01",
+          "tap_changer": "SIM-MB-TAP-01"
+        }
+      },
+      "conditions": {
+        "normal": {
+          "SIM-IEC-BREAKER-01": {
+            "runtime_facts": {
+              "current": 120,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 1
+            }
+          },
+          "SIM-MB-BREAKER-01": {
+            "runtime_facts": {
+              "current": 120,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 1
+            }
+          },
+          "SIM-TRANSFORMER-01": {
+            "runtime_facts": {
+              "winding_hotspot_rise_k": 50,
+              "top_oil_rise_k": 40,
+              "winding_average_rise_k": 45,
+              "alarm_active": false
+            }
+          },
+          "SIM-TRANSFORMER-02": {
+            "runtime_facts": {
+              "winding_hotspot_rise_k": 50,
+              "top_oil_rise_k": 40,
+              "winding_average_rise_k": 45,
+              "alarm_active": false
+            }
+          }
+        },
+        "high_temperature": {
+          "SIM-IEC-BREAKER-01": {
+            "runtime_facts": {
+              "current": 120,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 1
+            }
+          },
+          "SIM-MB-BREAKER-01": {
+            "runtime_facts": {
+              "current": 120,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 1
+            }
+          },
+          "SIM-TRANSFORMER-01": {
+            "runtime_facts": {
+              "winding_hotspot_rise_k": 85,
+              "top_oil_rise_k": 65,
+              "winding_average_rise_k": 70,
+              "alarm_active": true
+            }
+          },
+          "SIM-TRANSFORMER-02": {
+            "runtime_facts": {
+              "winding_hotspot_rise_k": 80,
+              "top_oil_rise_k": 60,
+              "winding_average_rise_k": 68,
+              "alarm_active": true
+            }
+          }
+        },
+        "cooling_fault": {
+          "SIM-IEC-BREAKER-01": {
+            "runtime_facts": {
+              "current": 120,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 1
+            }
+          },
+          "SIM-MB-BREAKER-01": {
+            "runtime_facts": {
+              "current": 120,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 1
+            }
+          },
+          "SIM-IEC-FAN-01": {
+            "state": {
+              "running": false
+            },
+            "runtime_facts": {
+              "device_fault": 1
+            }
+          },
+          "SIM-MB-FAN-01": {
+            "state": {
+              "running": false
+            },
+            "runtime_facts": {
+              "device_fault": 1
+            }
+          },
+          "SIM-TRANSFORMER-01": {
+            "runtime_facts": {
+              "winding_hotspot_rise_k": 50,
+              "top_oil_rise_k": 40,
+              "winding_average_rise_k": 45,
+              "alarm_active": false
+            }
+          },
+          "SIM-TRANSFORMER-02": {
+            "runtime_facts": {
+              "winding_hotspot_rise_k": 50,
+              "top_oil_rise_k": 40,
+              "winding_average_rise_k": 45,
+              "alarm_active": false
+            }
+          }
+        },
+        "maintenance": {
+          "SIM-IEC-BREAKER-01": {
+            "state": {
+              "position": "open"
+            },
+            "runtime_facts": {
+              "current": 0,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 0
+            }
+          },
+          "SIM-MB-BREAKER-01": {
+            "state": {
+              "position": "open"
+            },
+            "runtime_facts": {
+              "current": 0,
+              "close_permission": 1,
+              "remote_control_enabled": 1,
+              "trip_permission": 1,
+              "protection_lockout": 0,
+              "voltage_present": 0
+            }
+          },
+          "SIM-IEC-DISCONNECTOR-01": {
+            "state": {
+              "position": "open"
+            }
+          },
+          "SIM-IEC-EARTHING-01": {
+            "state": {
+              "position": "open"
+            },
+            "runtime_facts": {}
+          },
+          "SIM-TRANSFORMER-01": {
+            "state": {
+              "operating_state": "stopped"
+            },
+            "runtime_facts": {
+              "load_percent": 0,
+              "winding_hotspot_rise_k": 50,
+              "top_oil_rise_k": 40,
+              "winding_average_rise_k": 45,
+              "alarm_active": false
+            }
+          },
+          "SIM-MB-DISCONNECTOR-01": {
+            "state": {
+              "position": "open"
+            }
+          },
+          "SIM-MB-EARTHING-01": {
+            "state": {
+              "position": "open"
+            },
+            "runtime_facts": {}
+          },
+          "SIM-TRANSFORMER-02": {
+            "state": {
+              "operating_state": "stopped"
+            },
+            "runtime_facts": {
+              "load_percent": 0,
+              "winding_hotspot_rise_k": 50,
+              "top_oil_rise_k": 40,
+              "winding_average_rise_k": 45,
+              "alarm_active": false
+            }
+          }
+        }
+      },
+      "condition_labels": {
+        "normal": "正常运行",
+        "high_temperature": "主变温升数据偏高",
+        "cooling_fault": "冷却设备故障",
+        "maintenance": "停运检修"
+      },
+      "question_examples": [
+        "主变1现在有什么数据？",
+        "比较主变1和主变2的状态",
+        "启动主变1的冷却风机",
+        "为什么无法合闸？"
+      ]
+    },
+    {
+      "scenario_id": "cooling_reuse_demo",
+      "display_name": "冷却设备跨场景复用",
+      "device_ids": [
+        "SIM-IEC-FAN-01",
+        "SIM-MB-FAN-01"
+      ],
+      "groups": {},
+      "conditions": {
+        "normal": {}
+      },
+      "condition_labels": {
+        "normal": "正常运行"
+      },
+      "description": "复用相同实例及通用启停模板，不复制动作。"
+    }
+  ]
+}

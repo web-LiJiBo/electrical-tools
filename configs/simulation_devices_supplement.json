@@ -877,7 +877,314 @@
           "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
       }
+    },
+    {
+      "device_id": "SIM-IEC-FEEDER-BREAKER-01",
+      "display_name": "模拟10 kV馈线断路器 · IEC61850",
+      "device_type": "breaker",
+      "scenario": "grid_fault_isolation",
+      "protocol": "IEC61850",
+      "configuration_scope": "仅作软件测试；10 kV为设备场景标签，不参与电压校验；联锁、对象名及地址均为人工测试预设，非标准定值或现场点表，不接入真实通信。",
+      "initial_state": {
+        "position": "closed",
+        "alarm_active": false
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 1,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "mapping": {
+        "object_reference": "SIM_FEEDER/CTRL/XCBR1.Pos",
+        "control_model": "direct-with-normal-security",
+        "service": "Operate"
+      },
+      "actions": {
+        "trip": {
+          "function": "feeder_breaker_trip",
+          "condition": "trip_permission == 1",
+          "constraints": [
+            {
+              "parameter": "remote_control_enabled",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "breaker_closed",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "trip_circuit_healthy",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "mapping": {
+            "object_reference": "SIM_FEEDER/CTRL/XCBR1.Pos"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "10 kV馈线断路器人工编制测试模板；联锁为简化测试条件，非完整操作规程；点位为虚构示例，待核验条款及厂家点表绑定。告警仅为布尔标记示例。"
+        },
+        "close": {
+          "function": "feeder_breaker_close",
+          "condition": "close_permission == 1",
+          "constraints": [
+            {
+              "parameter": "remote_control_enabled",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "breaker_closed",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "spring_charged",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "earth_switch_open",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "truck_in_service",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "protection_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "closing_circuit_healthy",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "closing_sync_permitted",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "mapping": {
+            "object_reference": "SIM_FEEDER/CTRL/XCBR1.Pos"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "10 kV馈线断路器人工编制测试模板；联锁为简化测试条件，非完整操作规程；点位为虚构示例，待核验条款及厂家点表绑定。告警仅为布尔标记示例。"
+        },
+        "alarm": {
+          "function": "feeder_breaker_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "mapping": {
+            "object_reference": "SIM_FEEDER/CTRL/GGIO1.SPCSO1"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "10 kV馈线断路器人工编制测试模板；联锁为简化测试条件，非完整操作规程；点位为虚构示例，待核验条款及厂家点表绑定。告警仅为布尔标记示例。"
+        }
+      }
+    },
+    {
+      "device_id": "SIM-MB-FEEDER-BREAKER-01",
+      "display_name": "模拟10 kV馈线断路器 · Modbus",
+      "device_type": "breaker",
+      "scenario": "grid_fault_isolation",
+      "protocol": "Modbus",
+      "configuration_scope": "仅作软件测试；10 kV为设备场景标签，不参与电压校验；联锁、对象名及地址均为人工测试预设，非标准定值或现场点表，不接入真实通信。",
+      "initial_state": {
+        "position": "closed",
+        "alarm_active": false
+      },
+      "runtime_facts": {
+        "remote_control_enabled": 1,
+        "control_power_available": 1,
+        "trip_permission": 1,
+        "close_permission": 1,
+        "breaker_closed": 1,
+        "spring_charged": 1,
+        "earth_switch_open": 1,
+        "truck_in_service": 1,
+        "protection_lockout": 0,
+        "closing_circuit_healthy": 1,
+        "trip_circuit_healthy": 1,
+        "closing_sync_permitted": 1,
+        "alarm_required": 1
+      },
+      "mapping": {
+        "transport": "SIMULATED",
+        "slave_id": 20,
+        "address": 600,
+        "function_code": 5,
+        "data_type": "bool"
+      },
+      "actions": {
+        "trip": {
+          "function": "feeder_breaker_trip",
+          "condition": "trip_permission == 1",
+          "constraints": [
+            {
+              "parameter": "remote_control_enabled",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "breaker_closed",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "trip_circuit_healthy",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": false,
+          "mapping": {
+            "address": 600,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "10 kV馈线断路器人工编制测试模板；联锁为简化测试条件，非完整操作规程；点位为虚构示例，待核验条款及厂家点表绑定。告警仅为布尔标记示例。"
+        },
+        "close": {
+          "function": "feeder_breaker_close",
+          "condition": "close_permission == 1",
+          "constraints": [
+            {
+              "parameter": "remote_control_enabled",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "control_power_available",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "breaker_closed",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "spring_charged",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "earth_switch_open",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "truck_in_service",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "protection_lockout",
+              "operator": "==",
+              "value": 0,
+              "role": "precondition"
+            },
+            {
+              "parameter": "closing_circuit_healthy",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            },
+            {
+              "parameter": "closing_sync_permitted",
+              "operator": "==",
+              "value": 1,
+              "role": "precondition"
+            }
+          ],
+          "value": true,
+          "mapping": {
+            "address": 600,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "10 kV馈线断路器人工编制测试模板；联锁为简化测试条件，非完整操作规程；点位为虚构示例，待核验条款及厂家点表绑定。告警仅为布尔标记示例。"
+        },
+        "alarm": {
+          "function": "feeder_breaker_alarm",
+          "condition": "alarm_required == 1",
+          "constraints": [],
+          "value": true,
+          "mapping": {
+            "address": 601,
+            "function_code": 5,
+            "data_type": "bool"
+          },
+          "source_rule_ids": [],
+          "source_scope": "synthetic_test_fixture_pending_source_binding",
+          "source_note": "10 kV馈线断路器人工编制测试模板；联锁为简化测试条件，非完整操作规程；点位为虚构示例，待核验条款及厂家点表绑定。告警仅为布尔标记示例。"
+        }
+      }
     }
   ]
 }
-

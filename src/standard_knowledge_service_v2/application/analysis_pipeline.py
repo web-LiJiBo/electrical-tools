@@ -78,6 +78,11 @@ class AnalysisPipeline:
         self.advisor = None
 
     def analyze(self, request: AnalysisRequest) -> AnalysisResponse:
+        from .simulation_query import answer_simulation_query
+        simulation_answer = answer_simulation_query(self, request)
+        if simulation_answer is not None:
+            status, data, evidence, warnings = simulation_answer
+            return self._respond(request, status, data, evidence, warnings)
         if request.parameters.get("simulation_mode") is True:
             if self.simulation_session.is_status_question(request.query):
                 from .real_clause_assessment import assess_real_clause
@@ -276,10 +281,10 @@ class AnalysisPipeline:
 
     def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str]) -> AnalysisResponse:
         source_result_status = status
-        if self.advisor is not None:
+        if self.advisor is not None and not data.get('simulation_factual'):
             status = self.advisor.enrich(self, request, data) or status
             if data.get('advice', {}).get('instruction'):
-                warnings.append('模型自然语言指令不是下发授权，必须通过来源绑定与前置条件校验')
+                warnings.append('模型建议须核对依据；指令预览按设备模板与联锁校验，模拟下发仍需明确操作')
             if 'report' in data:
                 data['report'] = self.report_generator.generate({'context': data.get('context', {}),
                     'clauses': evidence, 'instruction': data.get('candidate_instruction'),

@@ -1,0 +1,665 @@
+{
+  "schema_version": "1.0",
+  "simulation_only": true,
+  "source": "synthetic_test_fixture",
+  "description": "测试预设；协议点位与联锁仅用于本地模拟。",
+  "device_templates": [
+    {
+      "template_id": "transformer",
+      "device_type": "transformer",
+      "display_name": "电力变压器",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "operating_state": {
+          "type": "enum",
+          "display_name": "运行状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "cooling_mode": {
+          "type": "enum",
+          "display_name": "冷却方式",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "winding_hotspot_rise_k": {
+          "type": "number",
+          "display_name": "绕组热点温升",
+          "unit": "K",
+          "source": "synthetic_test_fixture"
+        },
+        "top_oil_rise_k": {
+          "type": "number",
+          "display_name": "顶层油温升",
+          "unit": "K",
+          "source": "synthetic_test_fixture"
+        },
+        "winding_average_rise_k": {
+          "type": "number",
+          "display_name": "绕组平均温升",
+          "unit": "K",
+          "source": "synthetic_test_fixture"
+        },
+        "load_percent": {
+          "type": "number",
+          "display_name": "负载率",
+          "unit": "%",
+          "source": "synthetic_test_fixture"
+        },
+        "alarm_active": {
+          "type": "boolean",
+          "display_name": "模拟告警",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms"
+      ],
+      "action_refs": [],
+      "point_specs": {
+        "operating_state_feedback": {
+          "direction": "read",
+          "field": "state.operating_state",
+          "type": "enum",
+          "display_name": "运行状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "cooling_mode_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.cooling_mode",
+          "type": "enum",
+          "display_name": "冷却方式",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "winding_hotspot_rise_k_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.winding_hotspot_rise_k",
+          "type": "number",
+          "display_name": "绕组热点温升",
+          "unit": "K",
+          "source": "synthetic_test_fixture"
+        },
+        "top_oil_rise_k_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.top_oil_rise_k",
+          "type": "number",
+          "display_name": "顶层油温升",
+          "unit": "K",
+          "source": "synthetic_test_fixture"
+        },
+        "winding_average_rise_k_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.winding_average_rise_k",
+          "type": "number",
+          "display_name": "绕组平均温升",
+          "unit": "K",
+          "source": "synthetic_test_fixture"
+        },
+        "load_percent_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.load_percent",
+          "type": "number",
+          "display_name": "负载率",
+          "unit": "%",
+          "source": "synthetic_test_fixture"
+        },
+        "alarm_active_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.alarm_active",
+          "type": "boolean",
+          "display_name": "模拟告警",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      }
+    },
+    {
+      "template_id": "breaker",
+      "device_type": "breaker",
+      "display_name": "断路器",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "position": {
+          "type": "enum",
+          "display_name": "分合位置",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "current": {
+          "type": "number",
+          "display_name": "支路电流",
+          "unit": "A",
+          "source": "synthetic_test_fixture"
+        },
+        "remote_control_enabled": {
+          "type": "integer",
+          "display_name": "远方许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "protection_lockout": {
+          "type": "integer",
+          "display_name": "保护闭锁",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "voltage_present": {
+          "type": "integer",
+          "display_name": "模拟支路带电状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms",
+        "trip",
+        "close"
+      ],
+      "action_refs": [
+        "breaker.trip",
+        "breaker.close"
+      ],
+      "point_specs": {
+        "position_feedback": {
+          "direction": "read",
+          "field": "state.position",
+          "type": "enum",
+          "display_name": "分合位置",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "current_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.current",
+          "type": "number",
+          "display_name": "支路电流",
+          "unit": "A",
+          "source": "synthetic_test_fixture"
+        },
+        "remote_control_enabled_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.remote_control_enabled",
+          "type": "integer",
+          "display_name": "远方许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "protection_lockout_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.protection_lockout",
+          "type": "integer",
+          "display_name": "保护闭锁",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "trip_command": {
+          "direction": "write",
+          "display_name": "trip"
+        },
+        "close_command": {
+          "direction": "write",
+          "display_name": "close"
+        }
+      }
+    },
+    {
+      "template_id": "disconnector",
+      "device_type": "disconnector",
+      "display_name": "隔离开关",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "position": {
+          "type": "enum",
+          "display_name": "分合位置",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "operation_permission": {
+          "type": "integer",
+          "display_name": "操作许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "device_fault": {
+          "type": "integer",
+          "display_name": "设备故障",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms",
+        "open",
+        "close"
+      ],
+      "action_refs": [
+        "disconnector.open",
+        "disconnector.close"
+      ],
+      "point_specs": {
+        "position_feedback": {
+          "direction": "read",
+          "field": "state.position",
+          "type": "enum",
+          "display_name": "分合位置",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "operation_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.operation_permission",
+          "type": "integer",
+          "display_name": "操作许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "device_fault_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.device_fault",
+          "type": "integer",
+          "display_name": "设备故障",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "open_command": {
+          "direction": "write",
+          "display_name": "open"
+        },
+        "close_command": {
+          "direction": "write",
+          "display_name": "close"
+        }
+      }
+    },
+    {
+      "template_id": "earthing_switch",
+      "device_type": "earthing_switch",
+      "display_name": "接地开关",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "position": {
+          "type": "enum",
+          "display_name": "分合位置",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "operation_permission": {
+          "type": "integer",
+          "display_name": "操作许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms",
+        "open",
+        "close"
+      ],
+      "action_refs": [
+        "earthing_switch.open",
+        "earthing_switch.close"
+      ],
+      "point_specs": {
+        "position_feedback": {
+          "direction": "read",
+          "field": "state.position",
+          "type": "enum",
+          "display_name": "分合位置",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "operation_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.operation_permission",
+          "type": "integer",
+          "display_name": "操作许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "open_command": {
+          "direction": "write",
+          "display_name": "open"
+        },
+        "close_command": {
+          "direction": "write",
+          "display_name": "close"
+        }
+      }
+    },
+    {
+      "template_id": "cooling_fan",
+      "device_type": "cooling_fan",
+      "display_name": "冷却风机",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "running": {
+          "type": "boolean",
+          "display_name": "运行状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "device_fault": {
+          "type": "integer",
+          "display_name": "设备故障",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "control_mode": {
+          "type": "enum",
+          "display_name": "控制模式",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "start_permission": {
+          "type": "integer",
+          "display_name": "启动许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "stop_permission": {
+          "type": "integer",
+          "display_name": "停止许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms",
+        "start",
+        "stop"
+      ],
+      "action_refs": [
+        "cooling_fan.start",
+        "cooling_fan.stop"
+      ],
+      "point_specs": {
+        "running_feedback": {
+          "direction": "read",
+          "field": "state.running",
+          "type": "boolean",
+          "display_name": "运行状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "device_fault_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.device_fault",
+          "type": "integer",
+          "display_name": "设备故障",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "control_mode_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.control_mode",
+          "type": "enum",
+          "display_name": "控制模式",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "start_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.start_permission",
+          "type": "integer",
+          "display_name": "启动许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "stop_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.stop_permission",
+          "type": "integer",
+          "display_name": "停止许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "start_command": {
+          "direction": "write",
+          "display_name": "start"
+        },
+        "stop_command": {
+          "direction": "write",
+          "display_name": "stop"
+        }
+      }
+    },
+    {
+      "template_id": "oil_pump",
+      "device_type": "oil_pump",
+      "display_name": "冷却油泵",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "running": {
+          "type": "boolean",
+          "display_name": "运行状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "device_fault": {
+          "type": "integer",
+          "display_name": "设备故障",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "start_permission": {
+          "type": "integer",
+          "display_name": "启动许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "stop_permission": {
+          "type": "integer",
+          "display_name": "停止许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms",
+        "start",
+        "stop"
+      ],
+      "action_refs": [
+        "oil_pump.start",
+        "oil_pump.stop"
+      ],
+      "point_specs": {
+        "running_feedback": {
+          "direction": "read",
+          "field": "state.running",
+          "type": "boolean",
+          "display_name": "运行状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "device_fault_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.device_fault",
+          "type": "integer",
+          "display_name": "设备故障",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "start_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.start_permission",
+          "type": "integer",
+          "display_name": "启动许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "stop_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.stop_permission",
+          "type": "integer",
+          "display_name": "停止许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "start_command": {
+          "direction": "write",
+          "display_name": "start"
+        },
+        "stop_command": {
+          "direction": "write",
+          "display_name": "stop"
+        }
+      }
+    },
+    {
+      "template_id": "tap_changer",
+      "device_type": "tap_changer",
+      "display_name": "有载调压装置",
+      "protocols": [
+        "IEC61850",
+        "Modbus"
+      ],
+      "state_fields": {
+        "tap_position": {
+          "type": "integer",
+          "display_name": "当前档位",
+          "unit": "档",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "tap_min": {
+          "type": "integer",
+          "display_name": "最低档位",
+          "unit": "档",
+          "source": "synthetic_test_fixture"
+        },
+        "tap_max": {
+          "type": "integer",
+          "display_name": "最高档位",
+          "unit": "档",
+          "source": "synthetic_test_fixture"
+        },
+        "busy": {
+          "type": "integer",
+          "display_name": "忙状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "tap_permission": {
+          "type": "integer",
+          "display_name": "调节许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "capabilities": [
+        "query_state",
+        "query_measurements",
+        "query_alarms",
+        "raise",
+        "lower",
+        "set_tap"
+      ],
+      "action_refs": [
+        "tap_changer.raise",
+        "tap_changer.lower",
+        "tap_changer.set_tap"
+      ],
+      "point_specs": {
+        "tap_position_feedback": {
+          "direction": "read",
+          "field": "state.tap_position",
+          "type": "integer",
+          "display_name": "当前档位",
+          "unit": "档",
+          "source": "synthetic_test_fixture"
+        },
+        "tap_min_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.tap_min",
+          "type": "integer",
+          "display_name": "最低档位",
+          "unit": "档",
+          "source": "synthetic_test_fixture"
+        },
+        "tap_max_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.tap_max",
+          "type": "integer",
+          "display_name": "最高档位",
+          "unit": "档",
+          "source": "synthetic_test_fixture"
+        },
+        "busy_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.busy",
+          "type": "integer",
+          "display_name": "忙状态",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "tap_permission_measurement": {
+          "direction": "read",
+          "field": "runtime_facts.tap_permission",
+          "type": "integer",
+          "display_name": "调节许可",
+          "unit": "",
+          "source": "synthetic_test_fixture"
+        },
+        "raise_command": {
+          "direction": "write",
+          "display_name": "raise"
+        },
+        "lower_command": {
+          "direction": "write",
+          "display_name": "lower"
+        },
+        "set_tap_command": {
+          "direction": "write",
+          "display_name": "set_tap"
+        }
+      }
+    }
+  ]
+}

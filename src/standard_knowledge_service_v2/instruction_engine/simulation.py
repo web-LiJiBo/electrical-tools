@@ -46,8 +46,8 @@ class SimulationInstructionService:
                  parameters: dict | None = None, *, scenario: str | None = None) -> CandidateInstruction:
         """用显式事实测试模板，返回解释对象；只有非空payload表示生成成功。
 
-        此直接测试入口不核验条款授权；条款建议链由generate_grounded另行
-        验证来源绑定。本方法只生成字段，从不修改states。
+        条款引用由分析链记录；协议转换统一由模拟运行时校验模板和当前事实。
+        本方法只生成字段，从不修改states。
         """
         candidate = CandidateInstruction(target=device_id, dispatch_allowed=False)
         device = self.devices.get(device_id)
@@ -57,9 +57,9 @@ class SimulationInstructionService:
             return candidate
         candidate.protocol = device["protocol"]
         template = device["actions"].get(action)
-        if not template or (scenario is not None and scenario != device["scenario"]):
+        if not template:
             candidate.missing_fields = ["simulation_template"]
-            candidate.explanation = "场景或动作与模拟设备模板不匹配"
+            candidate.explanation = "动作与模拟设备模板不匹配"
             return candidate
         decision = self.preconditions.evaluate(template["condition"], facts, template.get('constraints'))
         candidate.precondition_status = decision.status.value
@@ -76,7 +76,8 @@ class SimulationInstructionService:
         value = parameters.get(parameter) if parameter else template.get("value")
         if parameter and (isinstance(value, bool) or not isinstance(value, (int, float))
                           or not math.isfinite(value)
-                          or not template["minimum"] <= value <= template["maximum"]):
+                          or not template["minimum"] <= value <= template["maximum"]
+                          or (template.get('parameter_type') == 'integer' and type(value) is not int)):
             candidate.missing_fields = [f"valid_parameter:{parameter}"]
             candidate.explanation = "动作参数缺失、类型无效或超出模拟范围"
             return candidate
@@ -93,7 +94,7 @@ class SimulationInstructionService:
         mapping = {**device["mapping"], **template.get("mapping", {})}
         common = {"simulation_only": True, "template_version": "1.1",
                   "template_id": f"{device_id}:{action}", "unit": template.get("unit", ""),
-                  "source": "synthetic_test_fixture", "scenario": device["scenario"],
+                  "source": "synthetic_test_fixture", "scenario": scenario or device.get("scenario", ""),
                   "function": template["function"], "device_type": device["device_type"],
                   "requested_action": action, "engineering_value": value,
                   "source_rule_ids": template.get("source_rule_ids", []),
