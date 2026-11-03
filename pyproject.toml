@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "standard-knowledge-service-v2-outline"
 version = "0.1.0"
 description = "新型电力系统机器可读标准知识服务工具代码大纲"
-requires-python = ">=3.13,<3.14"
+requires-python = ">=3.12,<3.14"
 dependencies = ["PyYAML>=6.0"]
 
 [project.optional-dependencies]
@@ -22,6 +22,8 @@ llm = [
     "peft>=0.5",
 ]
 graph = ["py2neo>=2021.2.4"]
+# 主流程配置了已训练的注意力一致性分类器，因此默认环境必须具备PyTorch推理能力。
+consistency = ["torch>=2.6", "numpy>=1.26"]
 ml = [
     "torch>=2.0",
     "numpy>=1.24",

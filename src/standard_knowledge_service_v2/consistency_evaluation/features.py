@@ -6,7 +6,7 @@ from collections import Counter
 from typing import Sequence
 
 from .models import ConsistencyFeatures
-from .numeric_constraints import numeric_constraint_similarity
+from .numeric_constraints import extract_numeric_constraints, numeric_constraint_similarity
 
 
 def cosine_similarity(left: Sequence[float], right: Sequence[float]) -> float:
@@ -43,9 +43,13 @@ def rule_set_similarity(left_rules: list[str], right_rules: list[str]) -> float:
 
 
 def extract_features(left: str, right: str, left_rules: list[str] | None = None, right_rules: list[str] | None = None) -> ConsistencyFeatures:
+    numeric_score = numeric_constraint_similarity(left, right)
+    left_numeric = extract_numeric_constraints(left)
+    right_numeric = extract_numeric_constraints(right)
     return ConsistencyFeatures(
         rule_set_similarity=rule_set_similarity(left_rules or [left], right_rules or [right]),
-        numeric_constraint_similarity=numeric_constraint_similarity(left, right),
+        numeric_constraint_similarity=numeric_score,
         semantic_similarity=token_similarity(left, right),
         structural_similarity=structural_similarity(left, right),
+        numeric_constraint_conflict=bool(left_numeric and right_numeric and numeric_score < 0.5),
     )

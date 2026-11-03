@@ -64,20 +64,56 @@ def validate_template(service, payload):
     return key, action, template
 
 
-def load_custom(service, path=CUSTOM_PATH):
+def load_custom(service, path=CUSTOM_PATH, *, strict=True):
+    """Load user templates without leaving a half-mutated catalogue.
+
+    Strict mode is used by validation/tests and rejects the complete file.  The
+    application session uses non-strict mode so one obsolete or damaged row is
+    quarantined instead of preventing every simulated device from starting.
+    """
     if not Path(path).exists():
+        service.template_load_errors = []
         return []
-    data = json.loads(Path(path).read_text(encoding='utf-8'))
+    try:
+        data = json.loads(Path(path).read_text(encoding='utf-8'))
+    except (OSError, json.JSONDecodeError) as exc:
+        if strict:
+            raise ValueError('用户模板文件不是有效JSON') from exc
+        service.template_load_errors = ['用户模板文件不是有效JSON']
+        return []
     if data.get('simulation_only') is not True:
-        raise ValueError('补充模板须标明仅模拟使用')
-    loaded = []
-    for row in data['items']:
-        raw = {k: v for k, v in row['template'].items() if k not in ('source_rule_ids', 'source_scope', 'expected_feedback', 'state_key', 'state_value')}
-        key, action, template = validate_template(service, dict(row, template=raw))
-        if action in service.devices[key]['actions']:
-            raise ValueError('补充模板不能覆盖已有设备动作')
-        service.devices[key]['actions'][action] = template
-        loaded.append({'device_id': key, 'action': action, 'template': template})
+        if strict:
+            raise ValueError('补充模板须标明仅模拟使用')
+        service.template_load_errors = ['补充模板未标明仅模拟使用']
+        return []
+    rows = data.get('items')
+    if not isinstance(rows, list):
+        if strict:
+            raise ValueError('用户模板items必须为JSON数组')
+        service.template_load_errors = ['用户模板items必须为JSON数组']
+        return []
+    loaded, errors, seen = [], [], set()
+    for index, row in enumerate(rows):
+        try:
+            if not isinstance(row, dict) or not isinstance(row.get('template'), dict):
+                raise ValueError('模板记录必须包含template对象')
+            raw = {k: v for k, v in row['template'].items() if k not in ('source_rule_ids', 'source_scope', 'expected_feedback', 'state_key', 'state_value')}
+            key, action, template = validate_template(service, dict(row, template=raw))
+            identity = (key, action)
+            if identity in seen or action in service.devices[key]['actions']:
+                raise ValueError('补充模板不能重复或覆盖已有设备动作')
+            seen.add(identity)
+            loaded.append({'device_id': key, 'action': action, 'template': template})
+        except (KeyError, TypeError, ValueError) as exc:
+            errors.append(f'第{index + 1}条: {exc}')
+    if errors and strict:
+        service.template_load_errors = errors
+        raise ValueError('用户模板运行校验失败；' + '；'.join(errors[:3]))
+    # Apply only after validation finishes, so strict failure never leaves a
+    # partially initialized catalogue.
+    for row in loaded:
+        service.devices[row['device_id']]['actions'][row['action']] = row['template']
+    service.template_load_errors = errors
     return loaded
 
 
@@ -87,12 +123,18 @@ def save_custom(service, payload, path=CUSTOM_PATH):
         raise ValueError('该设备已存在此动作，请选择其他设备或动作')
     path = Path(path)
     data = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'simulation_only': True, 'items': []}
+    if data.get('simulation_only') is not True or not isinstance(data.get('items'), list):
+        raise ValueError('现有用户模板文件结构无效，未覆盖原文件')
     data['items'].append({'device_id': key, 'action': action, 'template': template})
     path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent, delete=False, suffix='.tmp') as handle:
         temporary = handle.name
         json.dump(data, handle, ensure_ascii=False, indent=2)
     try:
+        # The same loader used at runtime must accept the complete prospective
+        # file before it can replace the persistent catalogue.
+        validation_service = SimulationInstructionService()
+        load_custom(validation_service, temporary, strict=True)
         os.replace(temporary, path)
     finally:
         if os.path.exists(temporary):

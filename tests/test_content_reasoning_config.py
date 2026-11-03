@@ -52,4 +52,6 @@ def test_example_config_controls_paths_and_thresholds() -> None:
     assert config.models.llm.name == "master"
     assert config.data.verified_json.name == "json"
     assert config.retrieval.entity_similarity_threshold == 0.3
+    assert config.retrieval.minimum_rule_score == 0.12
+    assert config.retrieval.require_version_filter_when_provided is True
     assert config.consistency.threshold == 0.62

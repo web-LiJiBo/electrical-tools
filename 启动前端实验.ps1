@@ -12,10 +12,10 @@ if (-not (Test-Path -LiteralPath $pythonPath)) {
     throw '未找到项目虚拟环境。请先运行 .\初始化项目环境.ps1。'
 }
 $pythonVersion = & $pythonPath -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')"
-if ($LASTEXITCODE -ne 0 -or $pythonVersion.Trim() -ne '3.13') {
-    throw "项目要求Python 3.13，当前虚拟环境为Python $pythonVersion。请重新运行 .\初始化项目环境.ps1。"
+if ($LASTEXITCODE -ne 0 -or $pythonVersion.Trim() -notin @('3.12', '3.13')) {
+    throw "项目支持Python 3.12或3.13，当前虚拟环境为Python $pythonVersion。请重新运行 .\初始化项目环境.ps1。"
 }
-& $pythonPath -c "import fastapi, uvicorn, yaml"
+& $pythonPath -c "import fastapi, torch, uvicorn, yaml"
 if ($LASTEXITCODE -ne 0) {
     throw '项目运行依赖不完整。请先运行 .\初始化项目环境.ps1。'
 }

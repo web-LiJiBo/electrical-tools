@@ -12,25 +12,29 @@ $env:PYTHONUTF8 = '1'
 
 $launcher = Get-Command py -ErrorAction SilentlyContinue
 if (-not $launcher) {
-    throw '未找到Windows Python启动器py。请先安装Python 3.13.5，并在安装时启用Python Launcher。'
+    throw '未找到Windows Python启动器py。请先安装Python 3.12或3.13，并在安装时启用Python Launcher。'
 }
 
-& py -3.13 -c "import sys; assert sys.version_info[:2] == (3, 13); print(sys.version.split()[0])"
-if ($LASTEXITCODE -ne 0) {
-    throw '未找到Python 3.13。请安装Python 3.13.5后重试。'
+$pythonSelector = $null
+foreach ($candidate in @('3.13', '3.12')) {
+    & py "-$candidate" -c "import sys; print(sys.version.split()[0])" 2>$null
+    if ($LASTEXITCODE -eq 0) { $pythonSelector = $candidate; break }
+}
+if (-not $pythonSelector) {
+    throw '未找到Python 3.12或3.13。请安装其中一个版本后重试。'
 }
 
 $venvDirectory = Join-Path $projectDirectory '.venv'
 $pythonPath = Join-Path $venvDirectory 'Scripts\python.exe'
 if (-not (Test-Path -LiteralPath $pythonPath)) {
-    Write-Output '[环境] 正在创建Python 3.13虚拟环境'
-    & py -3.13 -m venv $venvDirectory
+    Write-Output "[环境] 正在创建Python $pythonSelector虚拟环境"
+    & py "-$pythonSelector" -m venv $venvDirectory
     if ($LASTEXITCODE -ne 0) { throw '虚拟环境创建失败。' }
 }
 
 $version = & $pythonPath -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')"
-if ($LASTEXITCODE -ne 0 -or $version.Trim() -ne '3.13') {
-    throw '现有.venv不是Python 3.13环境。请先备份后删除该.venv，再重新运行本脚本。'
+if ($LASTEXITCODE -ne 0 -or $version.Trim() -notin @('3.12', '3.13')) {
+    throw '现有.venv不是Python 3.12或3.13环境。请先备份后删除该.venv，再重新运行本脚本。'
 }
 
 Write-Output '[环境] 正在检查pip'
@@ -42,11 +46,11 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Output '[环境] 正在安装运行与测试依赖'
-& $pythonPath -m pip install --disable-pip-version-check -e '.[api,excel,test]'
+& $pythonPath -m pip install --disable-pip-version-check -e '.[api,excel,test,consistency]'
 if ($LASTEXITCODE -ne 0) { throw '依赖安装失败，请检查网络、代理或pip软件源配置。' }
 
 Write-Output '[环境] 正在验证关键依赖'
-& $pythonPath -c "import fastapi, httpx, openpyxl, pytest, uvicorn, yaml; print('dependency check passed')"
+& $pythonPath -c "import fastapi, httpx, openpyxl, pytest, torch, uvicorn, yaml; print('dependency check passed; torch=' + torch.__version__)"
 if ($LASTEXITCODE -ne 0) { throw '依赖验证失败。' }
 
 Write-Output '[环境] 初始化完成。离线启动：.\启动前端实验.ps1；在线启动：.\启动前端实验.ps1 -Online'

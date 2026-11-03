@@ -34,9 +34,19 @@ class IntentClassifier:
         r"多少", r"是什么", r"有哪些", r"哪些", r"为何", r"为什么", r"是否", r"如何", r"怎么",
         r"什么情况下", r"应不应",
     )
+    _negated_command_patterns = (
+        r"(?:禁止|严禁|不得|不允许|不要|请勿|无需).{0,16}(?:启动|停止|停机|分闸|合闸|跳闸|隔离|解列|并网|下发|生成|发送|执行|调节|设置)",
+        r"(?:取消|撤销|作废).{0,10}(?:指令|操作|控制|启动|停机|分闸|合闸)",
+    )
 
     def classify(self, query: str, model_intent: str = "", actions: list[str] | None = None) -> IntentClassification:
         text = "".join(str(query).split())
+        if any(re.search(pattern, text) for pattern in self._negated_command_patterns):
+            return IntentClassification(
+                "search", 0.99,
+                ("检测到否定、禁止或撤销语气，明确阻止指令生成",),
+                model_intent,
+            )
         command_hits = [pattern for pattern in self._command_patterns if re.search(pattern, text)]
         query_hits = [pattern for pattern in self._query_patterns if re.search(pattern, text)]
         if query_hits and not re.search(r"请(?:立即|马上)?(?:执行|下发|生成|发送)", text):

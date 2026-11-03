@@ -45,7 +45,10 @@ class RetrievalSettings:
     vector_weight: float = 0.8
     structural_weight: float = 0.2
     selection_top_k: int = 5
-    minimum_rule_score: float = 0.0
+    # A zero threshold turns every top-ranked clause into an answer, even when
+    # the query is outside the electrical-standard domain.
+    minimum_rule_score: float = 0.12
+    require_version_filter_when_provided: bool = True
     retrieval_selection_weight: float = 0.65
     consistency_selection_weight: float = 0.25
     reasoning_selection_weight: float = 0.10
@@ -207,7 +210,10 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             vector_weight=vector_weight,
             structural_weight=structural_weight,
             selection_top_k=_positive_int(retrieval, "selection_top_k", 5),
-            minimum_rule_score=_number(retrieval, "minimum_rule_score", 0.0),
+            minimum_rule_score=_number(retrieval, "minimum_rule_score", 0.12),
+            require_version_filter_when_provided=_boolean(
+                retrieval, "require_version_filter_when_provided", True
+            ),
             retrieval_selection_weight=selection_weights[0],
             consistency_selection_weight=selection_weights[1],
             reasoning_selection_weight=selection_weights[2],

@@ -25,7 +25,11 @@ def register_routes(app, application) -> None:
 
     @app.get("/health")
     def health():
-        return {"status": "ok", "dispatch_allowed": False}
+        return {
+            "status": "ok",
+            "dispatch_allowed": False,
+            "consistency_backend": application.facade.consistency.backend,
+        }
 
     @app.get("/knowledge/summary")
     def knowledge_summary():

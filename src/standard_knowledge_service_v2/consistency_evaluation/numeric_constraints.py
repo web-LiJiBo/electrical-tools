@@ -11,6 +11,8 @@ UNIT_FACTORS = {
     "kv": ("v", 1000.0), "v": ("v", 1.0), "mw": ("w", 1_000_000.0), "kw": ("w", 1000.0),
     "w": ("w", 1.0), "mm": ("m", 0.001), "cm": ("m", 0.01), "m": ("m", 1.0),
     "ms": ("s", 0.001), "s": ("s", 1.0), "%": ("%", 1.0), "k": ("k", 1.0), "℃": ("℃", 1.0),
+    "ma": ("a", 0.001), "a": ("a", 1.0), "ka": ("a", 1000.0),
+    "mω": ("ω", 0.001), "ω": ("ω", 1.0), "kω": ("ω", 1000.0), "hz": ("hz", 1.0),
 }
 OP_SYNONYMS = {
     "不大于": "<=", "不得大于": "<=", "小于等于": "<=", "至多": "<=", "≤": "<=",
@@ -28,11 +30,12 @@ def _normalise(value: float, unit: str) -> tuple[float, str]:
 def extract_numeric_constraints(text: str) -> list[NumericConstraint]:
     candidates: list[NumericConstraint] = []
     operators = "|".join(sorted(map(re.escape, OP_SYNONYMS), key=len, reverse=True))
-    pattern = re.compile(rf"(?P<op>{operators})\s*(?P<value>\d+(?:\.\d+)?)\s*(?P<unit>kV|V|MW|kW|W|mm|cm|m|ms|s|%|K|℃)?", re.I)
+    units = r"kV|V|MW|kW|W|kA|mA|A|kΩ|mΩ|Ω|Hz|mm|cm|m|ms|s|%|K|℃"
+    pattern = re.compile(rf"(?P<op>{operators})\s*(?P<value>\d+(?:\.\d+)?)\s*(?P<unit>{units})?", re.I)
     for match in pattern.finditer(text or ""):
         value, unit = _normalise(float(match.group("value")), match.group("unit") or "")
         candidates.append(NumericConstraint(OP_SYNONYMS[match.group("op")], value, unit))
-    ranges = re.compile(r"(?P<low>\d+(?:\.\d+)?)\s*(?:至|到|~|—|-)\s*(?P<high>\d+(?:\.\d+)?)\s*(?P<unit>kV|V|MW|kW|W|mm|cm|m|ms|s|%|K|℃)?", re.I)
+    ranges = re.compile(rf"(?P<low>\d+(?:\.\d+)?)\s*(?:至|到|~|—|-)\s*(?P<high>\d+(?:\.\d+)?)\s*(?P<unit>{units})?", re.I)
     for match in ranges.finditer(text or ""):
         low, unit = _normalise(float(match.group("low")), match.group("unit") or "")
         high, _ = _normalise(float(match.group("high")), match.group("unit") or "")

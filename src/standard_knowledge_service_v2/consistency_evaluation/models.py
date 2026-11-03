@@ -18,6 +18,9 @@ class ConsistencyFeatures:
     numeric_constraint_similarity: float
     semantic_similarity: float
     structural_similarity: float
+    # True only when both texts contain explicit numeric constraints that are
+    # incompatible. A missing number on one side is uncertainty, not conflict.
+    numeric_constraint_conflict: bool = False
 
     def vector(self) -> list[float]:
         return [self.rule_set_similarity, self.numeric_constraint_similarity, self.semantic_similarity, self.structural_similarity]
@@ -36,4 +39,3 @@ class ConsistencyResult:
         result = asdict(self)
         result["features"] = asdict(self.features)
         return result
-

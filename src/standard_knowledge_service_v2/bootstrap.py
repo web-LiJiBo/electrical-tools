@@ -92,6 +92,7 @@ def build_application(config_path: str | Path) -> Application:
         list(config.consistency.weights),
         config.consistency.threshold,
     )
+    progress(f"一致性评价模型已加载：{consistency.backend}")
     from .knowledge_graph.current_graph import CurrentKnowledgeGraph
     from .hybrid_reasoning.semantic_reasoner import SemanticReasoner
     progress("正在构建内存知识图谱")

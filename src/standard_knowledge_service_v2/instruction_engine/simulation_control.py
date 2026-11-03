@@ -10,7 +10,10 @@ class SimulationControlSession:
         self.lock = RLock()
         self.service = SimulationInstructionService()
         from .template_editor import load_custom
-        load_custom(self.service)
+        # A damaged/obsolete user row is quarantined and reported; it must not
+        # make the whole built-in simulation catalogue unavailable.
+        load_custom(self.service, strict=False)
+        self.template_load_errors = list(getattr(self.service, 'template_load_errors', []))
         self.facts = {key: deepcopy(d.get('runtime_facts', {})) for key, d in self.service.devices.items()}
 
     def snapshot(self):
@@ -18,7 +21,8 @@ class SimulationControlSession:
             return {'simulation_only': True, 'devices': [
                 {'device_id': key, 'protocol': device['protocol'], 'device_type': device['device_type'],
                  'state': deepcopy(self.service.states[key]), 'runtime_facts': deepcopy(self.facts[key])}
-                for key, device in self.service.devices.items()], 'generation_only': True}
+                for key, device in self.service.devices.items()], 'generation_only': True,
+                'template_load_errors': list(self.template_load_errors)}
 
     @staticmethod
     def is_status_question(query):

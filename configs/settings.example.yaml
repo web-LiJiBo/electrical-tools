@@ -10,6 +10,7 @@ model_paths:
   llm_adapter: ""
   embedding: "models/embedding/finetuned_sbert"
   embedding_baseline: "models/embedding/sbert"
+  # 默认加载完整三特征注意力模型；加载失败时终止启动，不静默降级。
   consistency_classifier: "models/consistency/classifier_model/attention_model.pt"
   consistency_classifier_candidates:
     without_numeric_constraint: "models/consistency/classifier_model/attention_w/o_numeric_constraint_sim.pt"
@@ -47,7 +48,8 @@ retrieval:
   structural_weight: 0.2
   # 一致性评价和混合推理参与最终候选选择的参数。
   selection_top_k: 5
-  minimum_rule_score: 0.0
+  # 低于该分数视为无可靠条款命中，避免无关问题也返回标准条款。
+  minimum_rule_score: 0.12
   retrieval_selection_weight: 0.65
   consistency_selection_weight: 0.25
   reasoning_selection_weight: 0.10

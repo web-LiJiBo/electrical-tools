@@ -55,9 +55,11 @@ class LocalLunwenRetrievalAdapter:
         ]
         standard_filter = str(request.parsed_json.get("requested_standard_id", "")).strip()
         chapter_filter = str(request.parsed_json.get("requested_chapter_path", "")).strip()
+        version_filter = str(request.parsed_json.get("requested_version", "")).strip()
         all_pairs = [(rule, unit) for unit in self.repository.units for rule in unit.rules
                      if (not standard_filter or unit.standard_id == standard_filter)
-                     and (not chapter_filter or unit.chapter_path == chapter_filter)]
+                     and (not chapter_filter or unit.chapter_path == chapter_filter)
+                     and (not version_filter or self._version_matches(unit, version_filter))]
         # 实体Top-K不能成为硬过滤器。并入全库文本候选，避免“温升异常”等故障特征
         # 被大量同名设备实体挤出候选集。
         # 当前核验库约1.2万条规则，可承受全库轻量重排。保留实体召回轨迹，
@@ -123,7 +125,7 @@ class LocalLunwenRetrievalAdapter:
             [MatchedEntity(item.entity.name, item.score) for item in linked],
             [RuleMatch(item.rule, rank=index + 1, vector_score=item.content_score, structural_score=item.structural_score, combined_score=item.score) for index, item in enumerate(ranked)],
             digest,
-            [] if ranked else ["未召回规则"],
+            [] if ranked else ([f"未找到版本 {version_filter} 的匹配条款"] if version_filter else ["未召回规则"]),
         )
 
     @staticmethod
@@ -136,6 +138,21 @@ class LocalLunwenRetrievalAdapter:
             return True
         reasons = unit.metadata.get("audit", {}).get("reasons", [])
         return any(re.search(r"(?:^|[；;])\s*仅(?:为)?标题(?:[，,。；;]|$)", str(reason)) for reason in reasons)
+
+    @staticmethod
+    def _version_matches(unit, requested: str) -> bool:
+        """Apply an exact year/version filter across heterogeneous source fields."""
+        requested_text = re.sub(r"\s+", "", str(requested)).lower()
+        requested_years = re.findall(r"(?:19|20)\d{2}", requested_text)
+        candidates = [
+            str(getattr(unit, "version", "")),
+            str(getattr(unit, "standard_id", "")),
+            str(getattr(unit, "standard_name", "")),
+        ]
+        if requested_years:
+            expected = requested_years[-1]
+            return any(expected in re.findall(r"(?:19|20)\d{2}", value) for value in candidates)
+        return any(requested_text == re.sub(r"\s+", "", value).lower() for value in candidates if value)
 
     @staticmethod
     def _rule_text(rule) -> str:

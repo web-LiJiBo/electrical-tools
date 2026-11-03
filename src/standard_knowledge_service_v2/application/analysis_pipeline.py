@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import asdict
 from hashlib import sha256
 import json
+import re
 from typing import Any
 
 from ..audit.models import AuditRecord
@@ -103,6 +104,10 @@ class AnalysisPipeline:
         for key in ("standard_id", "chapter_path"):
             if request.parameters.get(key):
                 parsed_query["requested_" + key] = str(request.parameters[key])
+        if settings.require_version_filter_when_provided:
+            requested_version = self._requested_version(request, decomposed.standard_refs)
+            if requested_version:
+                parsed_query["requested_version"] = requested_version
         matched = self.retriever.match(LunwenMatchingInput(
             request.query,
             parsed_query,
@@ -204,6 +209,26 @@ class AnalysisPipeline:
             "report": report.to_dict(),
         }
         return self._respond(request, summary.status.value, data, [asdict(item) for item in evidence], summary.warnings)
+
+    @staticmethod
+    def _requested_version(request: AnalysisRequest, standard_refs: list[dict[str, str]]) -> str:
+        """Return an explicitly requested standard version; never infer a latest version."""
+        for key in ("standard_version", "version", "version_year"):
+            value = str(request.parameters.get(key, "")).strip()
+            if value:
+                return value
+        for item in standard_refs:
+            if not isinstance(item, dict):
+                continue
+            value = str(item.get("version", "")).strip()
+            if value:
+                return value
+            standard_id = str(item.get("standard_id", ""))
+            years = re.findall(r"(?:19|20)\d{2}", standard_id)
+            if years:
+                return years[-1]
+        match = re.search(r"((?:19|20)\d{2})\s*(?:年\s*)?(?:版|版本)", request.query)
+        return match.group(1) if match else ""
 
     def _select_rule(
         self,
