@@ -84,3 +84,21 @@ def test_condition_reset_and_event_api():
     assert changed.json()['condition'] == 'maintenance'
     assert api.post(base + '/reset', json={}).status_code == 200
     assert api.get(base + '/events').status_code == 200
+
+
+def test_aggregate_condition_api_only_changes_the_selected_business_scene():
+    api = client()
+    session = api.post('/simulation/sessions', json={'scenario_id': 'all_devices'}).json()
+    base = f"/simulation/sessions/{session['session_id']}"
+    changed = api.post(base + '/condition', json={
+        'condition': 'high_temperature', 'scenario_id': 'substation_maintenance'})
+    assert changed.status_code == 200
+    after = changed.json()
+    assert len(after['devices']) == 23
+    assert after['scenario_conditions']['substation_maintenance'] == 'high_temperature'
+    assert after['version'] == session['version'] + 1
+    before_other = [d for d in session['devices'] if d['device_id'] == 'SIM-MB-INVERTER-01']
+    assert [d for d in after['devices'] if d['device_id'] == 'SIM-MB-INVERTER-01'] == before_other
+    for scene in ('renewable_grid_integration', 'offshore_wind'):
+        assert api.post(base + '/condition', json={'condition': 'high_temperature', 'scenario_id': scene}).status_code == 422
+    assert api.get(base).json() == after

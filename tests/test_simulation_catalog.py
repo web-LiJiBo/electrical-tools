@@ -22,7 +22,7 @@ def test_catalog_preserves_all_legacy_devices_actions_and_mappings():
     expanded = catalog()
     assert len(old.devices) == 19
     assert sum(len(d['actions']) for d in old.devices.values()) == 47
-    assert len(expanded.devices) == 25
+    assert len(expanded.devices) == 27  # Original 25 plus two independent fault-isolation breakers.
     for identifier, profile in old.devices.items():
         migrated = expanded.devices[identifier]
         assert migrated['mapping'] == profile['mapping']

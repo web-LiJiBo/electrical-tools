@@ -4,7 +4,7 @@ import re
 
 from ..domain import ScenarioContext
 from ..validation.applicability_validator import ApplicabilityValidator
-from .simulation_access import default_session, simulation_runtime
+from .simulation_access import default_session, simulation_runtime, view_snapshot
 from .simulation_query import _targets
 
 
@@ -15,6 +15,7 @@ def advice_context(pipeline, request):
         snapshot = runtime.snapshot(explicit_session) if explicit_session else default_session(pipeline)
     except (KeyError, ValueError):
         return runtime, None, None, {}, '模拟会话不存在，请重新选择会话'
+    snapshot = view_snapshot(pipeline, request, snapshot)
     parameters = dict(request.parameters)
     # Preserve historical names exactly; a feeder breaker must not become a
     # second match for the base device's name.
@@ -41,7 +42,8 @@ def advice_context(pipeline, request):
     current_ids = {d['device_id'] for d in snapshot['devices']}
     # Legacy callers without a session can still analyze a registered device
     # outside the first scenario. Return the new session so the caller can reuse it.
-    if not explicit_session and len(ids) == 1 and ids[0] in runtime.catalog.devices and ids[0] not in current_ids:
+    if (not explicit_session and not request.parameters.get('simulation_scenario_id')
+            and len(ids) == 1 and ids[0] in runtime.catalog.devices and ids[0] not in current_ids):
         snapshot = runtime.create_session(scenario_id=None, device_ids=ids)
         current_ids = set(ids)
     if len(ids) != 1 or ids[0] not in current_ids or re.search(r'真实|实际设备', request.query):
@@ -57,6 +59,8 @@ def dynamic_evidence(sources, rule_ids, snapshot, profile):
     names = {'breaker': '断路器', 'transformer': '变压器', 'cooling_fan': '冷却风机',
              'oil_pump': '油泵', 'tap_changer': '有载调压装置', 'pole_controller': '极控系统'}
     scenario = snapshot.get('scenario_id') or profile.get('scenario') or 'general'
+    if scenario == 'all_devices':
+        scenario = profile.get('business_scenario') or profile.get('scenario') or 'general'
     context = ScenarioContext(scenario, names.get(profile['device_type'], profile['device_type']))
     evidence, warnings, conflicts = [], [], []
     validator = ApplicabilityValidator()

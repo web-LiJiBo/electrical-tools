@@ -18,6 +18,9 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None):
             return 'uncertain', {'answer': {'text': '模拟会话不存在，请重新选择会话'},
                                  'simulation_factual': True, 'candidate_instruction': None}, []
     text = request.query.lower()
+    if snapshot is not None:
+        from .simulation_access import view_snapshot
+        snapshot = view_snapshot(pipeline, request, snapshot)
     profiles = session.service.devices
     if snapshot is not None:
         from .simulation_access import simulation_runtime

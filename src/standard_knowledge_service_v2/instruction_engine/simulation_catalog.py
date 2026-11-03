@@ -40,7 +40,76 @@ class SimulationCatalog:
             if identifier in self.devices:
                 raise ValueError(f'显式实例与兼容设备ID冲突: {identifier}')
             self.devices[identifier] = self._expand_instance(instance)
+        self._business_profiles()
         self._validate()
+
+    def _business_profiles(self):
+        """Business views own instances; the aggregate references their union."""
+        business = ['substation_maintenance', 'grid_fault_isolation',
+                    'renewable_grid_integration', 'power_grid_operation']
+        owned = set(self.scenarios['substation_maintenance']['device_ids'])
+        for identifier in owned:
+            self.devices[identifier]['business_scenario'] = 'substation_maintenance'
+        labels = {'grid_fault_isolation': '故障隔离', 'renewable_grid_integration': '新能源',
+                  'power_grid_operation': '调度'}
+        types = {'breaker': '断路器', 'inverter': '逆变器', 'battery_pcs': '储能变流器',
+                 'pole_controller': '换流阀'}
+        originals = list(self.devices.items())
+        for scene, label in labels.items():
+            identifiers = []
+            for identifier, original in originals:
+                if original.get('scenario') != scene:
+                    continue
+                device = original
+                if identifier in owned:
+                    device = deepcopy(original)
+                    identifier = 'SIM-GFI-' + identifier[4:]
+                    device['device_id'] = identifier
+                    device['aliases'] = []
+                    # The independent simulated instance needs distinct bus points too.
+                    used = {p['slave_id'] for d in self.devices.values() for p in d['points'].values()
+                            if 'slave_id' in p}
+                    slave = next((value for value in range(200, 248) if value not in used), None)
+                    if device['protocol'] == 'Modbus' and slave is None:
+                        raise ValueError('没有可用的独立模拟Modbus从站编号')
+                    def remap(value):
+                        if isinstance(value, dict):
+                            for key, item in value.items():
+                                if key == 'object_reference' and isinstance(item, str):
+                                    value[key] = 'GFI_' + item
+                                elif key == 'slave_id':
+                                    value[key] = slave
+                                else:
+                                    remap(item)
+                        elif isinstance(value, list):
+                            for item in value:
+                                remap(item)
+                    remap(device)
+                    self.devices[identifier] = device
+                kind = '馈线断路器' if 'FEEDER' in identifier else types.get(device['device_type'], device['device_type'])
+                device['display_name'] = f"{label}{kind}（{device['protocol']}）"
+                device.setdefault('aliases', []).append(device['display_name'])
+                device['business_scenario'] = scene
+                identifiers.append(identifier)
+                owned.add(identifier)
+            self.scenarios[scene] = {'scenario_id': scene, 'display_name': label,
+                'device_ids': identifiers, 'groups': {}, 'conditions': {'normal': {}},
+                'condition_labels': {'normal': '正常运行'}}
+        identifiers, groups, normal = [], {}, {}
+        names = set()
+        for scene in business:
+            profile = self.scenarios[scene]
+            for identifier in profile['device_ids']:
+                name = self.devices[identifier]['display_name']
+                if identifier in identifiers or name in names:
+                    raise ValueError('具体业务场景的设备编号或名称重复')
+                identifiers.append(identifier)
+                names.add(name)
+            groups.update({scene + ':' + key: value for key, value in profile['groups'].items()})
+            normal.update(deepcopy(profile['conditions']['normal']))
+        self.scenarios['all_devices'] = {'scenario_id': 'all_devices', 'display_name': '全部业务场景设备',
+            'device_ids': identifiers, 'groups': groups, 'conditions': {'normal': normal},
+            'condition_labels': {'normal': '正常运行'}, 'business_scenarios': business}
 
     @staticmethod
     def _load(root: Path, name: str, identifier: str) -> dict:
@@ -155,6 +224,7 @@ class SimulationCatalog:
         if action.get('parameter'):
             key = action.get('current_state_key') or {
                 'limit_power': 'power_limit_kw', 'runback_power': 'active_power_mw',
+                'adjust_active_power': 'active_power_kw', 'adjust_reactive_power': 'reactive_power_kvar',
             }.get(name, action['parameter'])
             return {'state': {key: {'from_parameter': action['parameter']}}}
         if name == 'alarm':

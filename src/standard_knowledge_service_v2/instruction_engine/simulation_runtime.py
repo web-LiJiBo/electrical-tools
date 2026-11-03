@@ -48,6 +48,7 @@ class _Session:
     version: int = 0
     commands: dict = field(default_factory=dict)
     events: list = field(default_factory=list)
+    scenario_conditions: dict = field(default_factory=dict)
 
 
 class SimulationRuntime:
@@ -77,6 +78,7 @@ class SimulationRuntime:
             profiles = {key: deepcopy(self.catalog.devices[key]) for key in device_ids}
             session = _Session(f'simulation-{uuid4().hex}', scenario_id, condition, profiles, scenario, {})
             session.devices = self._seed(session, condition)
+            session.scenario_conditions = {name: 'normal' for name in scenario.get('business_scenarios', [])}
             self._sessions[session.session_id] = session
             return self._snapshot(session)
 
@@ -136,17 +138,32 @@ class SimulationRuntime:
             command['result'] = deepcopy(result)
             return deepcopy(result)
 
-    def set_condition(self, session_id, condition):
+    def set_condition(self, session_id, condition, *, scenario_id=None):
         with self._lock:
             session = self._session(session_id)
-            devices = self._seed(session, condition)
+            conditions = deepcopy(session.scenario_conditions)
+            if scenario_id is not None and scenario_id != session.scenario_id:
+                if scenario_id not in session.scenario.get('business_scenarios', []):
+                    raise ValueError('当前会话不支持该业务场景')
+                profile = self.catalog.scenarios[scenario_id]
+                selected = {key: session.profiles[key] for key in profile['device_ids']}
+                seed = self._seed(replace(session, profiles=selected, scenario=profile), condition)
+                devices = deepcopy(session.devices)
+                devices.update(seed)
+                conditions[scenario_id] = condition
+                next_condition = session.condition
+            else:
+                devices = self._seed(session, condition)
+                conditions = {name: 'normal' for name in conditions}
+                next_condition = condition
             before = self._snapshot(session)
-            result = self._snapshot(replace(session, devices=devices, condition=condition,
-                                            version=session.version + 1))
+            result = self._snapshot(replace(session, devices=devices, condition=next_condition,
+                                            scenario_conditions=conditions, version=session.version + 1))
             self._record(session, {'status': 'condition_changed', 'condition': condition,
                                    'before': before, 'after': result})
             session.devices = devices
-            session.condition = condition
+            session.condition = next_condition
+            session.scenario_conditions = conditions
             session.version += 1
             return result
 
@@ -155,9 +172,12 @@ class SimulationRuntime:
             session = self._session(session_id)
             before = self._snapshot(session)
             devices = self._seed(session, session.condition)
-            result = self._snapshot(replace(session, devices=devices, version=session.version + 1))
+            conditions = {name: 'normal' for name in session.scenario_conditions}
+            result = self._snapshot(replace(session, devices=devices, scenario_conditions=conditions,
+                                            version=session.version + 1))
             self._record(session, {'status': 'reset', 'before': before, 'after': result})
             session.devices = devices
+            session.scenario_conditions = conditions
             session.version += 1
             return result
 
@@ -214,9 +234,12 @@ class SimulationRuntime:
                     value = _read(entry, point['field'])
                     if value is not _MISSING:
                         point['value'] = deepcopy(value)
-        return {'session_id': session.session_id, 'version': session.version,
+        result = {'session_id': session.session_id, 'version': session.version,
                 'scenario_id': session.scenario_id, 'condition': session.condition,
                 'devices': list(devices.values()), 'simulation_only': True, 'dispatch_allowed': False}
+        if session.scenario_conditions:
+            result['scenario_conditions'] = deepcopy(session.scenario_conditions)
+        return result
 
     def _blocked_preview(self, session, device_id, explanation):
         candidate = asdict(CandidateInstruction(target=device_id if isinstance(device_id, str) else '', dispatch_allowed=False))
@@ -252,7 +275,8 @@ class SimulationRuntime:
             service.states = {key: deepcopy(entry['state']) for key, entry in session.devices.items()}
             entry = session.devices[device_id]
             facts = {**entry['state'], **entry['runtime_facts']}
-            generated = service.generate(device_id, action, facts, parameters)
+            generated = service.generate(device_id, action, facts, parameters,
+                                         scenario=profile.get('business_scenario') or profile.get('scenario'))
             result['candidate'] = asdict(generated)
             result['relation_checks'] = self._relations(session, device_id, template)
             if not generated.payload:

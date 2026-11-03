@@ -2,7 +2,7 @@
 from copy import deepcopy
 import re
 
-from .simulation_access import default_session, simulation_runtime
+from .simulation_access import default_session, simulation_runtime, view_snapshot
 
 ACTION_NAMES = {'start': '启动', 'stop': '停止', 'trip': '分闸', 'open': '分闸',
                 'close': '合闸', 'raise_tap': '升一档', 'lower_tap': '降一档',
@@ -25,9 +25,17 @@ def _targets(query, parameters, devices, profile):
         selected = list(dict.fromkeys(v.upper() for v in explicit))
     else:
         selected = []
+        full_names = [(device['device_id'], match.span()) for device in devices
+                      if device.get('display_name')
+                      for match in re.finditer(re.escape(device['display_name']) + r'(?!\d)', query)]
         for device in devices:
             aliases = [device.get('display_name', ''), *device.get('aliases', [])]
-            if any(alias and re.search(re.escape(alias) + r'(?!\d)', query) for alias in aliases):
+            # A short alias inside another device's full name does not name a second
+            # device. Separate mentions outside that name still resolve normally.
+            if any(not any(owner != device['device_id'] and start <= match.start() and match.end() <= end
+                           for owner, (start, end) in full_names)
+                   for alias in aliases if alias
+                   for match in re.finditer(re.escape(alias) + r'(?!\d)', query)):
                 selected.append(device['device_id'])
     # Resolve relational names through scenario roles, e.g. 主变1的冷却风机.
     role_terms = {'cooling_fan': r'风机|冷却风扇', 'oil_pump': r'油泵',
@@ -82,6 +90,7 @@ def answer_simulation_query(pipeline, request):
     except (KeyError, ValueError):
         return 'uncertain', {'answer': {'text': '模拟会话不存在，请重新选择或创建会话。'},
                              'candidate_instruction': None, 'simulation_factual': True}, [], []
+    snapshot = view_snapshot(pipeline, request, snapshot)
     profile = runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {})
     devices = snapshot['devices']
     # Read aliases/capabilities from the catalog, not from a model's invented IDs.

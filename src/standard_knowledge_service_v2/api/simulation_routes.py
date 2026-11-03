@@ -75,8 +75,9 @@ def register_simulation_routes(app, application):
     @app.post('/simulation/sessions/{session_id}/condition')
     def condition(session_id: str, payload: dict):
         def run():
-            fields(payload, {'condition'})
-            return runtime().set_condition(session_id, string(payload, 'condition'))
+            fields(payload, {'condition', 'scenario_id'})
+            scene = string(payload, 'scenario_id') if 'scenario_id' in payload else None
+            return runtime().set_condition(session_id, string(payload, 'condition'), scenario_id=scene)
         return perform(run)
 
     @app.post('/simulation/sessions/{session_id}/reset')

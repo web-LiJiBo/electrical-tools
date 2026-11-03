@@ -17,6 +17,18 @@ def unbound_setup(**kwargs):
     return pipeline, data, proposal, request
 
 
+def test_explicit_business_view_does_not_use_legacy_cross_scene_session_fallback():
+    from standard_knowledge_service_v2.application.advice_conversion import advice_context
+    pipeline, _, _, request = unbound_setup()
+    request.parameters['simulation_scenario_id'] = 'substation_maintenance'
+    request.parameters['device_id'] = 'SIM-MB-INVERTER-01'
+    request.query = 'SIM-MB-INVERTER-01现在状态如何？'
+    _, snapshot, device, _, error = advice_context(pipeline, request)
+    assert error
+    assert device is None
+    assert snapshot['scenario_id'] == 'substation_maintenance'
+
+
 def test_unbound_advice_converts_empty_actions_and_natural_conditions():
     pipeline, data, proposal, request = unbound_setup(action='', condition='满足条款说明的自然语言条件', reviewed=False)
     before = pipeline.simulation_session.snapshot()
