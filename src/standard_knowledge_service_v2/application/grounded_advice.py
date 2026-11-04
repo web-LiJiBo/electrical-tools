@@ -5,6 +5,7 @@ import re
 from ..llm_decomposition import extract_json_object
 from ..decomposition.model_errors import MESSAGES, model_error_code
 from .advice_conversion import advice_context, convert_advice
+from .action_request import action_request_restriction
 
 
 PROMPT = '''你是电力标准建议助手。输入是用户问题、检索原文、来源审查状态、当前模拟设备快照及允许动作。
@@ -17,6 +18,7 @@ PROMPT = '''你是电力标准建议助手。输入是用户问题、检索原�
 "instruction":null或{"text":"一条自然语言指令", "device_id":"输入的设备ID",
 "action":"允许动作码", "parameters":{}, "rule_ids":["明确支持该动作的规则ID"]}}。
 每段建议必须引用输入中的来源ID，并说明适用性及待复核状态；不能把引用存在或模拟转换成功说成标准已经确认。
+summary最多250字；suggestions最多5项，每项最多100字，不能超过上述字段约定。
 动作模板不预先绑定条款，动作码只能从设备允许列表选择；条款动作和条件字段可以为空或自然语言。模拟参数、点位和联锁由后端模板校验，不能将模拟配置定值说成标准限值。
 温度保护动作定值不等于功率回降目标。只有设备快照存在已配置回降目标且来源支持时，可建议runback_power；参数必须引用该配置，不能推导或编造。缺少配置时instruction为null。
 '''
@@ -59,8 +61,11 @@ class GroundedAdviceService:
             data['advice']['reason_code'] = 'no_sources'
             data['advice']['notice'] = '没有可供梳理的正文来源，不调用建议模型'
             return None
-        runtime, snapshot, device, profile, context_error = advice_context(pipeline, request)
+        understanding = data.get('decomposition', {})
+        runtime, snapshot, device, profile, context_error = advice_context(pipeline, request,
+            entities=understanding.get('entities', []))
         packet = {'query': request.query, 'device': device,
+                  'understanding': {k: understanding[k] for k in ('intent', 'entities', 'actions', 'constraints', 'scenario') if k in understanding},
                   'assessment': data.get('device_assessment'),
                   'allowed_actions': list(profile.get('actions', {})),
                   'action_templates': {action: {'parameter': t.get('parameter'), 'unit': t.get('unit'),
@@ -102,6 +107,11 @@ class GroundedAdviceService:
                 'reason': '模型未提出受来源支持的设备指令，仅保留文字建议；这不代表设备一定正常。'}
             return None
         reason = context_error
+        restriction = action_request_restriction(request.query, understanding,
+            instruction_request=True,
+            action_parameter=profile.get('actions', {}).get(instruction['action'], {}).get('parameter'))
+        if restriction:
+            reason = restriction
         if request.parameters.get('simulation_mode') is not True or not device or instruction['device_id'] != device['device_id']:
             reason = reason or '设备不唯一、目标不一致或未开启模拟模式'
         if re.search(r'不要(?:生成|建议)|禁止生成|取消(?:指令|建议)|不生成', request.query):

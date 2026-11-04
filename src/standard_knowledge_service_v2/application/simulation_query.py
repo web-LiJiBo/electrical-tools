@@ -1,8 +1,10 @@
 """Factual device queries and explicit previews do not need an action clause."""
 from copy import deepcopy
+from decimal import Decimal
 import re
 
 from .simulation_access import default_session, simulation_runtime, view_snapshot
+from .action_request import action_request_restriction
 
 ACTION_NAMES = {'start': '启动', 'stop': '停止', 'trip': '分闸', 'open': '分闸',
                 'close': '合闸', 'raise_tap': '升一档', 'lower_tap': '降一档',
@@ -15,7 +17,13 @@ FIELD_NAMES = {'running': '运行中', 'position': '分合位置', 'operating_st
                'fault': '故障', 'alarm_active': '告警', 'load_rate': '负载率(%)'}
 
 
-def _targets(query, parameters, devices, profile):
+def _targets(query, parameters, devices, profile, *, entity_names=()):
+    named = re.findall(r'(?:模拟)?(?:主变(?:压器)?|变压器|(?:冷却)?风机|断路器|隔离开关|接地开关|(?:有载)?调压装置)\s*\d+', query)
+    known_names = {re.sub(r'\s+', '', alias).casefold() for device in devices
+                   for alias in [device.get('display_name', ''), *device.get('aliases', [])] if alias}
+    unknown_names = [name for name in named if re.sub(r'\s+', '', name).casefold() not in known_names]
+    if unknown_names:
+        return list(dict.fromkeys(unknown_names))
     explicit = re.findall(r'SIM-[A-Z0-9-]+', query, re.I)
     explicit += [parameters['device_id']] if parameters.get('device_id') else []
     explicit += parameters.get('device_ids', []) if isinstance(parameters.get('device_ids'), list) else []
@@ -37,19 +45,35 @@ def _targets(query, parameters, devices, profile):
                    for alias in aliases if alias
                    for match in re.finditer(re.escape(alias) + r'(?!\d)', query)):
                 selected.append(device['device_id'])
-    # Resolve relational names through scenario roles, e.g. 主变1的冷却风机.
-    role_terms = {'cooling_fan': r'风机|冷却风扇', 'oil_pump': r'油泵',
+    # Only a local possessive phrase names an associated device. A role word
+    # elsewhere in a parallel question must not replace the transformer.
+    role_terms = {'cooling_fan': r'(?:冷却)?风机|冷却风扇', 'oil_pump': r'油泵',
                   'breaker': r'断路器', 'disconnector': r'隔离开关',
                   'earthing_switch': r'接地开关', 'tap_changer': r'调压|档位'}
     groups = profile.get('groups', [])
     for group in groups.values() if isinstance(groups, dict) else groups:
         transformer = group.get('transformer')
         if transformer in selected:
-            roles = [role for role, pattern in role_terms.items() if re.search(pattern, query)]
+            owner = next((d for d in devices if d['device_id'] == transformer), {})
+            aliases = [transformer, owner.get('display_name', ''), *owner.get('aliases', [])]
+            roles = [role for role, pattern in role_terms.items()
+                     if any(re.search(re.escape(alias) + r'(?!\d)\s*(?:的)?\s*(?:' + pattern + ')', query)
+                            for alias in aliases if alias)]
             if roles:
                 selected = [v for v in selected if v != transformer]
                 selected.extend(group[role] for role in roles if group.get(role))
     if not selected:
+        if named:
+            return list(dict.fromkeys(named))
+        # Model-resolved follow-up references still have to match a catalog
+        # identity/alias in the current view; no invented device is accepted.
+        for name in entity_names:
+            for device in devices:
+                aliases = [device['device_id'], device.get('display_name', ''), *device.get('aliases', [])]
+                if name.casefold() in {alias.casefold() for alias in aliases if alias}:
+                    selected.append(device['device_id'])
+        if selected:
+            return list(dict.fromkeys(selected))
         kinds = {'cooling_fan': r'风机', 'oil_pump': r'油泵', 'transformer': r'主变|变压器',
                  'breaker': r'断路器', 'disconnector': r'隔离开关',
                  'earthing_switch': r'接地开关', 'tap_changer': r'调压装置'}
@@ -71,16 +95,19 @@ def _action(query, device):
     return next((a for a, pattern in patterns if a in available and re.search(pattern, query)), '')
 
 
-def answer_simulation_query(pipeline, request):
+def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     if request.parameters.get('simulation_mode') is not True:
         return None
     query = request.query
+    kind = decomposed.scenario.get('query_kind') if decomposed else None
     # Standard and provenance questions continue through the full knowledge path.
-    if re.search(r'标准|条款|规范|规程|依据|要求|符合|合规|限值|规定', query):
+    if kind in ('standard_query', 'assessment', 'other') or re.search(r'标准|条款|规范|规程|依据|要求|符合|合规|限值|规定', query):
         return None
-    capability = bool(re.search(r'哪些(?:操作|动作|指令)|(?:支持|能做|可以做|可用).*?(?:操作|动作|指令)|操作能力', query))
-    factual = bool(re.search(r'状态|运行数据|测量|温升|温度|电流|告警|档位|位置|正常|异常|比较|对比', query))
-    operation = bool(re.search(r'启动|停止|停机|分闸|合闸|跳闸|升.*档|降.*档|设定.*档|调到.*档', query))
+    # The API's structured purpose drives routing. Legacy/offline decomposers
+    # without that optional field retain their explicit compatibility path.
+    capability = kind == 'device_capability' if kind else bool(re.search(r'哪些(?:操作|动作|指令)|(?:支持|能做|可以做|可用).*?(?:操作|动作|指令)|操作能力', query))
+    factual = kind == 'device_status' if kind else bool(re.search(r'状态|数据|读数|测量|温升|温度|电流|告警|档位|位置|正常|异常|比较|对比', query))
+    operation = kind == 'operation' if kind else bool(re.search(r'启动|开启|开动|停止|停机|关闭风机|关闭油泵|分闸|合闸|跳闸|升.*档|降.*档|设定.*档|调到.*档', query))
     if not (capability or factual or operation):
         return None
     runtime = simulation_runtime(pipeline)
@@ -95,7 +122,8 @@ def answer_simulation_query(pipeline, request):
     devices = snapshot['devices']
     # Read aliases/capabilities from the catalog, not from a model's invented IDs.
     devices = [{**deepcopy(runtime.catalog.devices[d['device_id']]), **d} for d in devices]
-    ids = _targets(query, request.parameters, devices, profile)
+    names = [e['name'] for e in decomposed.entities if isinstance(e, dict) and isinstance(e.get('name'), str)] if decomposed else []
+    ids = _targets(query, request.parameters, devices, profile, entity_names=names)
     by_id = {d['device_id']: d for d in devices}
     unknown = [key for key in ids if key not in by_id]
     base = {'simulation_factual': True, 'simulation_session_id': snapshot['session_id'],
@@ -111,21 +139,49 @@ def answer_simulation_query(pipeline, request):
     selected = [by_id[key] for key in ids]
     base['devices'] = [{k: deepcopy(d.get(k)) for k in ('device_id', 'display_name', 'device_type', 'protocol', 'state', 'runtime_facts', 'points')}
                        for d in selected]
-    if operation and not capability and not re.search(r'不要|不执行|不启动|不停止|取消|如何|怎么|为什么|能否|是否|可以|能不能', query):
+    model_actions = list(dict.fromkeys(a for a in (decomposed.actions if decomposed else []) if a != 'inspect'))
+    restriction = action_request_restriction(query, decomposed)
+    if operation and not capability and (restriction or len(model_actions) > 1):
+        base['answer'] = {'text': restriction or '当前只支持明确的单项操作，请拆分多步骤请求。'}
+        return 'uncertain', base, [], []
+    authorized = intent.intent == 'instruction' if intent else not re.search(
+        r'禁止|不应|不得|不要|不执行|不启动|不停止|取消|如何|怎么|为什么|能否|是否|可以|能不能|吗', query)
+    if operation and not capability and authorized:
         if len(selected) != 1:
             base['answer'] = {'text': '当前涉及多台设备，请指定唯一的模拟操作目标；已列出相关设备状态。'}
             return 'uncertain', base, [], []
         device = selected[0]
-        action = request.parameters.get('action') or _action(query, device)
+        available = runtime.catalog.devices[device['device_id']]['actions']
+        understood = [a for a in model_actions if a in available]
+        text_action = _action(query, device)
+        action = request.parameters.get('action') or (understood[0] if len(understood) == 1 else text_action)
+        if text_action and action != text_action:
+            base['answer'] = {'text': '问题中的动作与理解结果或业务参数不一致，未生成预览，请明确所需操作。'}
+            return 'uncertain', base, [], []
         if not action:
             base['answer'] = {'text': '该设备未配置所请求的操作，请查看其通用模板中的可用动作。'}
             return 'uncertain', base, [], []
         parameters = request.parameters.get('action_parameters', {})
+        restriction = action_request_restriction(query, decomposed, instruction_request=True,
+            action_parameter='tap_position' if action == 'set_tap' else None)
+        if restriction:
+            base['answer'] = {'text': restriction}
+            return 'uncertain', base, [], []
         if action == 'set_tap' and not parameters:
-            number = re.search(r'(\d+)\s*档', query)
+            number = re.search(r'(?<![A-Za-z0-9_.+-])([+-]?\d+(?:\.\d+)?)\s*档', query)
             if number:
+                value = Decimal(number[1])
+                if value != value.to_integral_value():
+                    base['answer'] = {'text': '档位必须为整数，未截取或修改输入值；请重新指定档位。'}
+                    return 'uncertain', base, [], []
                 template = runtime.catalog.devices[device['device_id']]['actions'][action]
-                parameters = {template.get('parameter', 'tap_position'): int(number[1])}
+                if not template['minimum'] <= value <= template['maximum']:
+                    base['answer'] = {'text': '档位超出该设备模板允许范围，未生成操作预览。'}
+                    return 'uncertain', base, [], []
+                parameters = {template.get('parameter', 'tap_position'): int(value)}
+            else:
+                base['answer'] = {'text': '未识别到完整整数档位，请明确需要设定的档位。'}
+                return 'uncertain', base, [], []
         preview = runtime.preview(snapshot['session_id'], device['device_id'], action, parameters)
         base['simulation_preview'] = preview
         base['candidate_instruction'] = preview.get('candidate')
@@ -153,7 +209,7 @@ def answer_simulation_query(pipeline, request):
     # Preserve source-based temperature assessment as optional evidence, never a fact gate.
     if len(selected) == 1 and selected[0]['device_type'] == 'transformer' and re.search(r'正常|异常|温升', query):
         from .real_clause_assessment import assess_real_clause
-        _, assessment, evidence = assess_real_clause(pipeline, request, snapshot=snapshot, device_id=selected[0]['device_id'])
+        _, assessment, evidence = assess_real_clause(pipeline, request, snapshot=snapshot, device_id=selected[0]['device_id'], decomposed=decomposed)
         if assessment.get('real_clause_evidence'):
             base.update({k: v for k, v in assessment.items() if k not in ('answer', 'context', 'candidate_instruction', 'device_assessment')})
             base['device_assessment'] = assessment['device_assessment']

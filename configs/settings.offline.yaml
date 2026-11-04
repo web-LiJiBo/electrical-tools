@@ -21,6 +21,8 @@ dataset_paths:
   supplemental_json: datasets/supplemental/分解数据/json
   correction_mapping: datasets/lunwen/verified_json/修正对照表.xlsx
 llm_decomposition:
+  # 仅此显式离线演示允许本地兼容路径；在线理解失败不静默继续。
+  allow_offline_fallback: true
   backend: deepseek_api
   api_key_env: ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY
 knowledge:

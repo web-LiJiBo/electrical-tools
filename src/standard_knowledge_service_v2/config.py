@@ -65,6 +65,7 @@ class LLMSettings:
     do_sample: bool = False
     max_new_tokens: int = 1024
     repetition_penalty: float = 1.05
+    allow_offline_fallback: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -228,6 +229,7 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             do_sample=bool(llm.get("do_sample", False)),
             max_new_tokens=_positive_int(llm, "max_new_tokens", 1024),
             repetition_penalty=_number(llm, "repetition_penalty", 1.05),
+            allow_offline_fallback=_boolean(llm, 'allow_offline_fallback', False),
         ),
         consistency=ConsistencySettings(
             threshold=_number(consistency, "fallback_threshold", 0.62),

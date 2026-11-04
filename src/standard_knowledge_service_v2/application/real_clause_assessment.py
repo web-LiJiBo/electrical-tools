@@ -7,7 +7,7 @@ from types import SimpleNamespace
 from ..retrieval import LunwenMatchingInput
 
 
-def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None):
+def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, decomposed=None):
     session = pipeline.simulation_session
     if snapshot is None and request.parameters.get('simulation_mode') is True:
         from .simulation_access import default_session, simulation_runtime
@@ -28,8 +28,9 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None):
         runtime = simulation_runtime(pipeline)
         profiles = runtime.catalog.devices
         devices = [{**profiles[d['device_id']], **d} for d in snapshot['devices']]
+        names = [e['name'] for e in decomposed.entities if isinstance(e, dict) and isinstance(e.get('name'), str)] if decomposed else []
         ids = _targets(request.query, request.parameters, devices,
-                       runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {}))
+                       runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {}), entity_names=names)
         available = {d['device_id'] for d in devices}
     else:
         ids = [d['device_id'] for d in session.snapshot()['devices'] if d['device_id'].lower() in text]
@@ -50,7 +51,8 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None):
     expanded = request.query
     if device.get("device_type") == "transformer":
         expanded += " 变压器绕组热点温升 顶层油温 绕组平均温升 ON冷却方式"
-    decomposed = pipeline.decomposer.decompose(expanded, "substation_maintenance", request.conversation_context)
+    if decomposed is None:
+        decomposed = pipeline.decomposer.decompose(expanded, "substation_maintenance", request.conversation_context)
     parsed = decomposed.to_lunwen_parsed_json()
     parsed["intent"] = "compliance"
     parsed["context_device_type"] = "变压器" if device.get("device_type") == "transformer" else device.get("device_type", "")

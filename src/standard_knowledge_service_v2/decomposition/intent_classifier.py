@@ -21,6 +21,9 @@ class IntentClassifier:
     """用确定性业务规则校正模型意图，控制类采用明确授权原则。"""
 
     _command_patterns = (
+        r"^(?:请)?(?:启动|开启|开动|停止|停机|关闭|分闸|合闸|断开)",
+        r"^(?:请)?(?:将|把).*(?:设定|设置|调到|调至).+档",
+        r"^(?:请)?(?:模拟)?(?:断路器|变压器|主变|风机|油泵|隔离开关|接地开关)\d+(?:分闸|合闸|跳闸|启动|停止|停机)$",
         r"请(?:立即|马上)?(?:将|把)?.*(?:分闸|合闸|跳闸)",
         r"(?:请|将|把).*(?:功率).*(?:设定|设置|调整|调节)",
         r"(?:请|将|把).*(?:设定|设置|调整|调节).*功率",
@@ -32,16 +35,22 @@ class IntentClassifier:
     )
     _query_patterns = (
         r"多少", r"是什么", r"有哪些", r"哪些", r"为何", r"为什么", r"是否", r"如何", r"怎么",
-        r"什么情况下", r"应不应",
+        r"什么情况下", r"应不应", r"能否", r"能不能", r"可否", r"吗[？?]?$", r"(?:了没|了么)[？?]?$", r"[？?]$",
     )
     _negated_command_patterns = (
-        r"(?:禁止|严禁|不得|不允许|不要|请勿|无需).{0,16}(?:启动|停止|停机|分闸|合闸|跳闸|隔离|解列|并网|下发|生成|发送|执行|调节|设置)",
+        r"(?:禁止|严禁|不得|不应|不允许|不要|请勿|无需).{0,16}(?:启动|开启|开动|打开|停止|关闭|停机|分闸|合闸|跳闸|隔离|解列|并网|下发|生成|发送|执行|调节|设置)",
+        r"不(?:执行|启动|开启|停止|下发|生成)",
         r"(?:取消|撤销|作废).{0,10}(?:指令|操作|控制|启动|停机|分闸|合闸)",
     )
 
-    def classify(self, query: str, model_intent: str = "", actions: list[str] | None = None) -> IntentClassification:
+    @classmethod
+    def action_is_negated(cls, query: str) -> bool:
+        text = ''.join(str(query).split())
+        return any(re.search(pattern, text) for pattern in cls._negated_command_patterns)
+
+    def classify(self, query: str, model_intent: str = "", actions: list[str] | None = None, *, query_kind: str | None = None) -> IntentClassification:
         text = "".join(str(query).split())
-        if any(re.search(pattern, text) for pattern in self._negated_command_patterns):
+        if self.action_is_negated(text):
             return IntentClassification(
                 "search", 0.99,
                 ("检测到否定、禁止或撤销语气，明确阻止指令生成",),
@@ -55,6 +64,9 @@ class IntentClassifier:
             return IntentClassification("instruction", 0.95, ("检测到明确执行或指令生成语气",), model_intent)
         if query_hits or text.endswith(("?", "？")):
             return IntentClassification("search", 0.92, ("检测到查询问句或标准咨询表达",), model_intent)
+        if query_kind == 'operation' and model_intent == 'instruction' and actions:
+            return IntentClassification('instruction', 0.85,
+                ('采用模型识别的操作意图，目标、条件和执行仍需后端校验',), model_intent)
         if model_intent in {"consistency", "compliance", "difference"}:
             return IntentClassification(model_intent, 0.85, ("保留模型识别的标准分析意图",), model_intent)
         if model_intent == "instruction" and actions:

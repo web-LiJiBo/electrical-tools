@@ -8,7 +8,7 @@ from .simulation_access import default_session, simulation_runtime, view_snapsho
 from .simulation_query import _targets
 
 
-def advice_context(pipeline, request):
+def advice_context(pipeline, request, *, entities=()):
     runtime = simulation_runtime(pipeline)
     explicit_session = request.parameters.get('simulation_session_id')
     try:
@@ -36,7 +36,8 @@ def advice_context(pipeline, request):
     devices = [{**runtime.catalog.devices[d['device_id']], **d} for d in snapshot['devices']]
     scenario = runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {})
     try:
-        ids = _targets(request.query, parameters, devices, scenario)
+        names = [e['name'] for e in entities if isinstance(e, dict) and isinstance(e.get('name'), str)]
+        ids = _targets(request.query, parameters, devices, scenario, entity_names=names)
     except ValueError:
         return runtime, snapshot, None, {}, '设备编号格式无效'
     current_ids = {d['device_id'] for d in snapshot['devices']}

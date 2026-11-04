@@ -79,20 +79,40 @@ class AnalysisPipeline:
         self.advisor = None
 
     def analyze(self, request: AnalysisRequest) -> AnalysisResponse:
+        # Every natural-language request is understood before any local shortcut.
+        # Keep this result request-local so concurrent calls cannot share parses.
+        decomposed = self.decomposer.decompose(request.query, request.scenario_hint, request.conversation_context)
+        from ..decomposition.deepseek_decomposer import DeepSeekDecomposer
+        online = isinstance(self.decomposer, DeepSeekDecomposer) and not (
+            self.config is not None and self.config.llm.allow_offline_fallback)
+        kind = decomposed.scenario.get('query_kind')
+        kinds = ('device_status', 'device_capability', 'standard_query', 'assessment', 'operation', 'other')
+        if online and (decomposed.source != 'deepseek_api' or not decomposed.valid or kind not in kinds):
+            diagnostics = list(decomposed.errors)
+            if kind not in kinds:
+                diagnostics.append('模型未返回受支持的scenario.query_kind，未改用关键词分流')
+            return self._respond(request, 'partial', {
+                'decomposition': decomposed.to_dict(),
+                'model_understanding': {'status': 'failed', 'source': decomposed.source},
+                'diagnostics': diagnostics, 'candidate_instruction': None,
+                'answer': {'text': '问题理解模型调用未完成，本次未生成指令。请检查接口后重试。'},
+                'control_block_reason': '在线问题理解未完成，不能由本地规则替代生成操作',
+            }, [], ['问题理解模型未完成；未使用本地规则生成操作'])
+        intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
+        decomposed.intent = intent.intent
         from .simulation_query import answer_simulation_query
-        simulation_answer = answer_simulation_query(self, request)
+        simulation_answer = answer_simulation_query(self, request, decomposed=decomposed, intent=intent)
         if simulation_answer is not None:
             status, data, evidence, warnings = simulation_answer
+            data.setdefault('decomposition', decomposed.to_dict())
+            data.setdefault('intent_classification', intent.to_dict())
             return self._respond(request, status, data, evidence, warnings)
         if request.parameters.get("simulation_mode") is True:
-            if self.simulation_session.is_status_question(request.query):
+            if kind == 'assessment' or self.simulation_session.is_status_question(request.query):
                 from .real_clause_assessment import assess_real_clause
-                status,data,evidence = assess_real_clause(self,request)
+                status,data,evidence = assess_real_clause(self,request,decomposed=decomposed)
                 return self._respond(request,status,data,evidence,["阈值取自库内来源条款，不用预设测试阈值；缺少动作依据时禁止控制"])
             # 明确控制请求也必须继续经过真实条款链路，不再走预设规则捷径。
-        decomposed = self.decomposer.decompose(request.query, request.scenario_hint, request.conversation_context)
-        intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions)
-        decomposed.intent = intent.intent
         built = self.context_builder.build(decomposed, request.parameters, request.scenario_hint, request.meta.caller)
         settings = self.retrieval_settings
         parsed_query = decomposed.to_lunwen_parsed_json()
@@ -306,7 +326,8 @@ class AnalysisPipeline:
 
     def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str]) -> AnalysisResponse:
         source_result_status = status
-        if self.advisor is not None and not data.get('simulation_factual'):
+        understanding_failed = data.get('model_understanding', {}).get('status') == 'failed'
+        if self.advisor is not None and not data.get('simulation_factual') and not understanding_failed:
             status = self.advisor.enrich(self, request, data) or status
             if data.get('advice', {}).get('instruction'):
                 warnings.append('模型建议须核对依据；指令预览按设备模板与联锁校验，模拟下发仍需明确操作')
@@ -317,7 +338,9 @@ class AnalysisPipeline:
         advice = data.get('advice', {})
         candidate = data.get('candidate_instruction') or {}
         conversion = advice.get('conversion', {})
-        if candidate.get('payload'):
+        if understanding_failed:
+            instruction_status, instruction_reason = 'unavailable', data['control_block_reason']
+        elif candidate.get('payload'):
             instruction_status, instruction_reason = 'generated', '已生成候选协议字段；不下发、不改变设备状态'
         elif advice.get('error_code'):
             instruction_status, instruction_reason = 'unavailable', advice['notice']

@@ -31,7 +31,7 @@ JSON字段：
   "actions": ["标准动作码"],
   "constraints": [{"parameter": "参数", "operator": "比较符", "value": "数值或原文值", "unit": "单位", "condition": "适用条件"}],
   "standard_refs": [{"standard_id": "标准编号", "version": "版本"}],
-  "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "operation_type": "操作类型"},
+  "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "operation_type": "操作类型", "query_kind": "device_status|device_capability|standard_query|assessment|operation|other"},
   "keywords": ["检索关键词"],
   "confidence": 0.0
 }
@@ -43,6 +43,14 @@ adjust_reactive_power, regulate_voltage, start, stop, load_shedding,
 restore_load, restore_power, issue_dispatch_order。
 如果原文无法映射到上述动作，actions返回空列表，不得自造动作码。
 actions按与用户直接诉求的相关性排序，最多返回3项；不要枚举所有可能处置动作。
+scenario.query_kind必须选择一个值：device_status为当前设备事实或数据查询；device_capability为可用动作查询；
+standard_query为标准、条款、依据或要求咨询；assessment为正常与否、合规或假设工况评估；
+operation为用户提出的具体操作；other为其他问题。按整句目的判断，不因出现动作词就视为操作。
+intent仍只使用search、consistency、compliance、difference、instruction；评估类intent用compliance，assessment仅用于query_kind。
+否定、疑问和条件必须保留在intent、constraints及operating_condition中；实体保留编号、并列对象和所属关系。
+operating_condition只填写用户明确限定的工况或前置条件；未限定时返回空字符串，不补推测的当前状态。
+操作目标数值用constraints的等值赋值表达，parameter写目标参数、operator写=、condition留空；
+执行前提另列约束，不能将“当前档位大于10档”等前提误写为目标档位赋值。
 """
 
 
@@ -84,6 +92,8 @@ def validate_decomposition(data: dict[str, Any], raw_output: str = "") -> LLMDec
     """校验类型、去重实体并构造论文检索可消费的分解结果。"""
     errors: list[str] = []
     intent = str(data.get("intent", "search")).strip().lower()
+    intent = {'device_status':'search', 'device_capability':'search', 'standard_query':'search',
+              'assessment':'compliance', 'operation':'instruction', 'other':'search'}.get(intent, intent)
     allowed_intents = {"search", "consistency", "compliance", "difference", "instruction"}
     if intent not in allowed_intents:
         errors.append(f"不支持的intent: {intent}")
@@ -125,6 +135,9 @@ def validate_decomposition(data: dict[str, Any], raw_output: str = "") -> LLMDec
     if not isinstance(scenario, dict):
         errors.append("scenario必须是对象")
         scenario = {}
+    kind = scenario.get('query_kind')
+    if kind is not None and kind not in ('device_status', 'device_capability', 'standard_query', 'assessment', 'operation', 'other'):
+        errors.append('scenario.query_kind不是受支持的问题类型')
 
     try:
         confidence = max(0.0, min(1.0, float(data.get("confidence", 0.0))))

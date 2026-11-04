@@ -35,7 +35,7 @@ class DeepSeekDecomposer:
             raw_output = self._request(query, scenario_hint, conversation_context or [])
             output = validate_decomposition(extract_json_object(raw_output), raw_output=raw_output)
             if not output.valid:
-                raise ValueError("; ".join(output.errors))
+                raise ModelCallError('invalid_model_output')
             missing = []
             if not output.scenario.get("device_type"):
                 missing.append(MissingField("device_type", "模型和原文均未明确设备类型", "场景匹配"))

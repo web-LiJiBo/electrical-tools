@@ -1,11 +1,14 @@
 ﻿[CmdletBinding()]
 param(
     [switch]$Online,
+    [switch]$Offline,
     [ValidateRange(60, 1800)]
     [int]$BackendTimeoutSeconds = 900
 )
 
 $ErrorActionPreference = 'Stop'
+if ($Online -and $Offline) { throw 'Online与Offline不能同时指定。' }
+$useOnline = -not [bool]$Offline
 $projectDirectory = $PSScriptRoot
 $pythonPath = Join-Path $projectDirectory '.venv\Scripts\python.exe'
 if (-not (Test-Path -LiteralPath $pythonPath)) {
@@ -23,8 +26,8 @@ $env:PYTHONPATH = Join-Path $projectDirectory 'src'
 $env:PYTHONUTF8 = '1'
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY = ''
-$configuration = if ($Online) { 'configs/settings.example.yaml' } else { 'configs/settings.offline.yaml' }
-if ($Online -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
+$configuration = if ($useOnline) { 'configs/settings.example.yaml' } else { 'configs/settings.offline.yaml' }
+if ($useOnline -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
     $envFile = Join-Path $projectDirectory '.env'
     if (Test-Path -LiteralPath $envFile) {
         foreach ($line in Get-Content -LiteralPath $envFile -Encoding UTF8) {
@@ -35,13 +38,13 @@ if ($Online -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
         }
     }
 }
-if ($Online -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
+if ($useOnline -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
     $env:DEEPSEEK_API_KEY = [Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','Machine')
     if ([string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
         $env:DEEPSEEK_API_KEY = [Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','User')
     }
 }
-if ($Online -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
+if ($useOnline -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
     throw '在线模式需要在项目根目录.env、当前进程、用户变量或系统变量中配置DEEPSEEK_API_KEY。'
 }
 Write-Output ('[启动] Python环境检查通过：' + $pythonVersion.Trim())
@@ -52,7 +55,7 @@ foreach ($port in @(8000,5500)) {
         if ($pending.AsyncWaitHandle.WaitOne(300) -and $probe.Connected) { throw "端口${port}已占用，请先关闭自己此前启动的实验服务。" }
     } finally { $probe.Dispose() }
 }
-if ($Online) {
+if ($useOnline) {
     Write-Output '[启动] 正在检查DeepSeek接口连通性'
     & $pythonPath -m standard_knowledge_service_v2.decomposition.check_remote --config (Join-Path $projectDirectory $configuration)
     if ($LASTEXITCODE -ne 0) {
@@ -102,9 +105,9 @@ try {
         } catch { Start-Sleep -Milliseconds 200 }
     }
     if (-not $pageReady) { throw '前端启动超时。' }
-    $state = [ordered]@{backend_pid=$backend.Id;frontend_pid=$frontend.Id;online=[bool]$Online;url='http://127.0.0.1:5500/';started_at=(Get-Date).ToString('o')}
+    $state = [ordered]@{backend_pid=$backend.Id;frontend_pid=$frontend.Id;online=[bool]$useOnline;url='http://127.0.0.1:5500/';started_at=(Get-Date).ToString('o')}
     $state | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $logDirectory '运行状态.json') -Encoding UTF8
-    Write-Output ('前端已启动：http://127.0.0.1:5500/；模式：' + $(if ($Online) {'在线配置，接口预检查通过；实际模型效果请提交问题验证'} else {'离线降级，不调用建议模型'}))
+    Write-Output ('前端已启动：http://127.0.0.1:5500/；模式：' + $(if ($useOnline) {'在线配置，问题优先调用模型；实际效果请提交问题验证'} else {'显式离线演示，不作为真实API验收'}))
     Write-Output "停止本次服务：Stop-Process -Id $($backend.Id),$($frontend.Id)"
 } catch {
     if ($frontend -and -not $frontend.HasExited) { Stop-Process -Id $frontend.Id }
