@@ -1,10 +1,10 @@
 """Factual device queries and explicit previews do not need an action clause."""
 from copy import deepcopy
-from decimal import Decimal
 import re
 
 from .simulation_access import default_session, simulation_runtime, view_snapshot
 from .action_request import action_request_restriction
+from .action_parameters import PARAMETER_ALIASES, resolve_action_parameters
 
 ACTION_NAMES = {'start': '启动', 'stop': '停止', 'trip': '分闸', 'open': '分闸',
                 'close': '合闸', 'raise_tap': '升一档', 'lower_tap': '降一档',
@@ -97,20 +97,6 @@ def _action(query, device):
     return next((a for a, pattern in patterns if a in available and re.search(pattern, query)), '')
 
 
-def _explicit_action_value(query, action, template):
-    """Return an explicitly stated target value without inventing one."""
-    if action == 'set_tap':
-        match = re.search(r'(?<![A-Za-z0-9_.+-])([+-]?\d+(?:\.\d+)?)\s*档', query)
-    else:
-        unit = str(template.get('unit', '')).strip()
-        parameter = str(template.get('parameter', '')).strip()
-        if not unit and not parameter:
-            return None
-        suffix = re.escape(unit) if unit else r'(?:MW|kV|A|K|%|档)'
-        match = re.search(r'(?<![A-Za-z0-9_.+-])([+-]?\d+(?:\.\d+)?)\s*' + suffix, query, re.I)
-    return Decimal(match[1]) if match else None
-
-
 def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     if request.parameters.get('simulation_mode') is not True:
         return None
@@ -178,35 +164,17 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
             base['answer'] = {'text': '该设备未配置所请求的操作，请查看其通用模板中的可用动作。'}
             return 'uncertain', base, [], []
         parameters = request.parameters.get('action_parameters', {})
+        template = available[action]
         restriction = action_request_restriction(query, decomposed, instruction_request=True,
-            action_parameter='tap_position' if action == 'set_tap' else None)
+            action_parameter=template.get('parameter'),
+            action_parameter_aliases=PARAMETER_ALIASES.get(template.get('parameter'), ()))
         if restriction:
             base['answer'] = {'text': restriction}
             return 'uncertain', base, [], []
-        template = runtime.catalog.devices[device['device_id']]['actions'][action]
-        stated_value = _explicit_action_value(query, action, template)
-        parameter_name = template.get('parameter')
-        if stated_value is not None and parameters and parameter_name in parameters:
-            try:
-                supplied_value = Decimal(str(parameters[parameter_name]))
-            except Exception:
-                supplied_value = None
-            if supplied_value is None or supplied_value != stated_value:
-                base['answer'] = {'text': '问题中的目标值与业务参数不一致，未生成操作预览；请保留一个明确值。'}
-                return 'uncertain', base, [], []
-        if action == 'set_tap' and not parameters:
-            if stated_value is not None:
-                value = stated_value
-                if value != value.to_integral_value():
-                    base['answer'] = {'text': '档位必须为整数，未截取或修改输入值；请重新指定档位。'}
-                    return 'uncertain', base, [], []
-                if not template['minimum'] <= value <= template['maximum']:
-                    base['answer'] = {'text': '档位超出该设备模板允许范围，未生成操作预览。'}
-                    return 'uncertain', base, [], []
-                parameters = {template.get('parameter', 'tap_position'): int(value)}
-            else:
-                base['answer'] = {'text': '未识别到完整整数档位，请明确需要设定的档位。'}
-                return 'uncertain', base, [], []
+        parameters, parameter_error = resolve_action_parameters(query, template, parameters, decomposed)
+        if parameter_error:
+            base['answer'] = {'text': parameter_error}
+            return 'uncertain', base, [], []
         preview = runtime.preview(snapshot['session_id'], device['device_id'], action, parameters)
         base['simulation_preview'] = preview
         base['candidate_instruction'] = preview.get('candidate')
