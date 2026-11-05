@@ -22,17 +22,19 @@ def _targets(query, parameters, devices, profile, *, entity_names=()):
     known_names = {re.sub(r'\s+', '', alias).casefold() for device in devices
                    for alias in [device.get('display_name', ''), *device.get('aliases', [])] if alias}
     unknown_names = [name for name in named if re.sub(r'\s+', '', name).casefold() not in known_names]
-    if unknown_names:
-        return list(dict.fromkeys(unknown_names))
-    explicit = re.findall(r'SIM-[A-Z0-9-]+', query, re.I)
-    explicit += [parameters['device_id']] if parameters.get('device_id') else []
-    explicit += parameters.get('device_ids', []) if isinstance(parameters.get('device_ids'), list) else []
-    if explicit:
-        if not all(isinstance(v, str) for v in explicit):
+    parameter_targets = ([parameters['device_id']] if parameters.get('device_id') else [])
+    parameter_targets += parameters.get('device_ids', []) if isinstance(parameters.get('device_ids'), list) else []
+    query_targets = re.findall(r'SIM-[A-Z0-9-]+', query, re.I)
+    explicit = [*parameter_targets, *query_targets]
+    if explicit and not all(isinstance(v, str) for v in explicit):
             raise ValueError('模拟设备编号须为文本')
-        selected = list(dict.fromkeys(v.upper() for v in explicit))
-    else:
-        selected = []
+    selected = list(dict.fromkeys(v.upper() for v in explicit))
+    if unknown_names:
+        return list(dict.fromkeys([*selected, *unknown_names]))
+    # Business parameters and natural-language targets are independent claims.
+    # Resolve both and keep their union so a conflict can never silently select
+    # the parameter target over the user's sentence.
+    if not query_targets:
         full_names = [(device['device_id'], match.span()) for device in devices
                       if device.get('display_name')
                       for match in re.finditer(re.escape(device['display_name']) + r'(?!\d)', query)]
@@ -93,6 +95,20 @@ def _action(query, device):
                 ('start', r'启动|开启|开动'), ('stop', r'停止|停机|关闭风机|关闭油泵'),
                 ('trip', r'分闸|跳闸|断开'), ('open', r'分闸|分开|断开'), ('close', r'合闸|合上')]
     return next((a for a, pattern in patterns if a in available and re.search(pattern, query)), '')
+
+
+def _explicit_action_value(query, action, template):
+    """Return an explicitly stated target value without inventing one."""
+    if action == 'set_tap':
+        match = re.search(r'(?<![A-Za-z0-9_.+-])([+-]?\d+(?:\.\d+)?)\s*档', query)
+    else:
+        unit = str(template.get('unit', '')).strip()
+        parameter = str(template.get('parameter', '')).strip()
+        if not unit and not parameter:
+            return None
+        suffix = re.escape(unit) if unit else r'(?:MW|kV|A|K|%|档)'
+        match = re.search(r'(?<![A-Za-z0-9_.+-])([+-]?\d+(?:\.\d+)?)\s*' + suffix, query, re.I)
+    return Decimal(match[1]) if match else None
 
 
 def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
@@ -167,14 +183,23 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
         if restriction:
             base['answer'] = {'text': restriction}
             return 'uncertain', base, [], []
+        template = runtime.catalog.devices[device['device_id']]['actions'][action]
+        stated_value = _explicit_action_value(query, action, template)
+        parameter_name = template.get('parameter')
+        if stated_value is not None and parameters and parameter_name in parameters:
+            try:
+                supplied_value = Decimal(str(parameters[parameter_name]))
+            except Exception:
+                supplied_value = None
+            if supplied_value is None or supplied_value != stated_value:
+                base['answer'] = {'text': '问题中的目标值与业务参数不一致，未生成操作预览；请保留一个明确值。'}
+                return 'uncertain', base, [], []
         if action == 'set_tap' and not parameters:
-            number = re.search(r'(?<![A-Za-z0-9_.+-])([+-]?\d+(?:\.\d+)?)\s*档', query)
-            if number:
-                value = Decimal(number[1])
+            if stated_value is not None:
+                value = stated_value
                 if value != value.to_integral_value():
                     base['answer'] = {'text': '档位必须为整数，未截取或修改输入值；请重新指定档位。'}
                     return 'uncertain', base, [], []
-                template = runtime.catalog.devices[device['device_id']]['actions'][action]
                 if not template['minimum'] <= value <= template['maximum']:
                     base['answer'] = {'text': '档位超出该设备模板允许范围，未生成操作预览。'}
                     return 'uncertain', base, [], []

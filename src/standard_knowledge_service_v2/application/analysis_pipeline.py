@@ -121,9 +121,11 @@ class AnalysisPipeline:
             parsed_query["scenario_topics"] = built.definition.standard_topics
             parsed_query["scenario_devices"] = built.definition.device_types
         parsed_query["context_device_type"] = built.context.device_type
-        for key in ("standard_id", "chapter_path"):
-            if request.parameters.get(key):
-                parsed_query["requested_" + key] = str(request.parameters[key])
+        requested_standard = self._requested_standard(request, decomposed.standard_refs)
+        if requested_standard:
+            parsed_query["requested_standard_id"] = requested_standard
+        if request.parameters.get("chapter_path"):
+            parsed_query["requested_chapter_path"] = str(request.parameters["chapter_path"])
         if settings.require_version_filter_when_provided:
             requested_version = self._requested_version(request, decomposed.standard_refs)
             if requested_version:
@@ -139,8 +141,12 @@ class AnalysisPipeline:
         # 模型失败但兜底成功属于技术诊断，不应污染面向业务用户的风险提示。
         diagnostics = list(decomposed.errors)
         warnings = list(built.warnings)
+        trace = getattr(self.retriever, "last_trace", None)
+        retrieval_trace = ({"candidate_rules": trace.candidate_rules,
+                            "returned_rules": trace.filtered_rules,
+                            **trace.parameters} if trace else {})
         if not matched.rules:
-            return self._respond(request, "uncertain", {"decomposition": decomposed.to_dict(), "intent_classification": intent.to_dict(), "context": asdict(built.context), "missing_fields": [asdict(item) for item in built.missing_fields], "diagnostics": diagnostics}, [], warnings + matched.warnings)
+            return self._respond(request, "uncertain", {"decomposition": decomposed.to_dict(), "intent_classification": intent.to_dict(), "context": asdict(built.context), "missing_fields": [asdict(item) for item in built.missing_fields], "diagnostics": diagnostics, "retrieval_trace": retrieval_trace}, [], warnings + matched.warnings)
         selected, assessments = self._select_rule(request, matched.rules, decomposed.actions if intent.intent == "instruction" else [], for_control=intent.intent == "instruction")
         if selected is None:
             data = {
@@ -208,6 +214,7 @@ class AnalysisPipeline:
                     {"rule_id": item.rule.rule_id, "rank": item.rank, "score": item.combined_score, "content": item.rule.content}
                     for item in matched.rules
                 ],
+                "trace": retrieval_trace,
             },
             "selected_rule": {
                 "rule_id": selected.rule.rule_id,
@@ -249,6 +256,15 @@ class AnalysisPipeline:
                 return years[-1]
         match = re.search(r"((?:19|20)\d{2})\s*(?:年\s*)?(?:版|版本)", request.query)
         return match.group(1) if match else ""
+
+    @staticmethod
+    def _requested_standard(request: AnalysisRequest, standard_refs: list[dict[str, str]]) -> str:
+        value = str(request.parameters.get("standard_id", "")).strip()
+        if value:
+            return value
+        identifiers = [str(item.get("standard_id", "")).strip() for item in standard_refs if isinstance(item, dict)]
+        identifiers = [item for item in identifiers if item]
+        return identifiers[0] if len(set(identifiers)) == 1 else ""
 
     def _select_rule(
         self,
@@ -331,6 +347,16 @@ class AnalysisPipeline:
             status = self.advisor.enrich(self, request, data) or status
             if data.get('advice', {}).get('instruction'):
                 warnings.append('模型建议须核对依据；指令预览按设备模板与联锁校验，模拟下发仍需明确操作')
+            # A structured "sources do not support this answer" decision must
+            # win over an earlier lexical retrieval success. Candidates remain
+            # in matching diagnostics, but are not adopted evidence.
+            if data.get('advice', {}).get('answer_supported') is False:
+                status = 'uncertain'
+                evidence.clear()
+                data.pop('selected_rule', None)
+                data.pop('knowledge_graph_evidence', None)
+                data['candidate_instruction'] = None
+                data['control_block_reason'] = data['advice'].get('unable_reason') or '检索条款不支持回答当前问题'
             if 'report' in data:
                 data['report'] = self.report_generator.generate({'context': data.get('context', {}),
                     'clauses': evidence, 'instruction': data.get('candidate_instruction'),

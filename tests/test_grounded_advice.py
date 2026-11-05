@@ -120,3 +120,28 @@ def test_pipeline_status_question_returns_facts_without_requiring_model_instruct
     assert result.data['simulation_factual'] is True
     assert result.data['candidate_instruction'] is None
     assert result.data['devices'][0]['state']['position'] == 'closed'
+
+
+def test_structured_unsupported_sources_clear_answer_status_and_evidence():
+    base, _, _, _ = setup()
+    unit = base.retriever.repository.unit_for_rule('r1')
+    class Retriever:
+        repository = base.retriever.repository
+        last_trace = None
+        def match(self, *args):
+            return SimpleNamespace(rules=[SimpleNamespace(rule=unit.rules[0], rank=1, combined_score=1)],
+                                   matched_entities=[], warnings=[])
+    unsupported = {'summary': '检索到的条款讲的是断路器，不是手机恢复。',
+        'answer_supported': False,
+        'support_assessments': [{'rule_id': 'r1', 'supports_answer': False,
+                                 'reason': '主体、场景和操作对象均不相同'}],
+        'unable_reason': '当前条款不支持回答该问题', 'rule_ids': [],
+        'suggestions': [], 'instruction': None}
+    pipeline = AnalysisPipeline(Retriever(), decomposer=RawTextFallback())
+    pipeline.advisor = GroundedAdviceService(Client(unsupported))
+    result = pipeline.analyze(AnalysisRequest('手机如何恢复出厂设置？'))
+    assert result.status == 'uncertain'
+    assert result.evidence == []
+    assert 'selected_rule' not in result.data
+    assert result.data['advice']['answer_supported'] is False
+    assert '原文结论' not in result.data['answer']['text']

@@ -63,7 +63,8 @@ def build_application(config_path: str | Path) -> Application:
         existing_ids = {unit.clause_id for unit in retriever.repository.units}
         if any(unit.clause_id in existing_ids for unit in supplemental.units):
             raise ValueError("原库和补充库的条款内部标识发生冲突")
-        retriever.repository.units.extend(supplemental.units)
+        retriever.repository.extend(supplemental.units)
+        retriever.refresh_index()
     progress(f"条款加载完成，共 {len(retriever.repository.units)} 条")
     audit_store = JsonlAuditStore(config.data.audit_store, config.audit.retention_days)
     if config.llm.backend == "deepseek_api":

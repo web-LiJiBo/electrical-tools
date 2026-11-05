@@ -25,6 +25,11 @@ def cosine(left: Counter[str], right: Counter[str]) -> float:
 
 def text_similarity(left: str, right: str) -> float:
     a, b = normalize(left), normalize(right)
+    return prepared_similarity(a, tokens(a), b, tokens(b))
+
+
+def prepared_similarity(a: str, a_tokens: Counter[str], b: str, b_tokens: Counter[str]) -> float:
+    """Cosine/containment similarity for already normalized and tokenized text."""
     if not a or not b:
         return 0.0
     if a == b:
@@ -32,7 +37,7 @@ def text_similarity(left: str, right: str) -> float:
     if a in b or b in a:
         # 短词命中长实体只提供部分证据，避免“气体”与任意气体相关实体并列满分。
         return min(len(a), len(b)) / max(len(a), len(b))
-    return cosine(tokens(a), tokens(b))
+    return cosine(a_tokens, b_tokens)
 
 
 def structural_score(query: str, rule_text: str) -> float:

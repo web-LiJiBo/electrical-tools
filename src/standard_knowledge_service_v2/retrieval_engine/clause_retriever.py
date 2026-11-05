@@ -17,6 +17,9 @@ class JsonClauseRepository:
         load_report: dict | None = None,
     ) -> None:
         self.units = units or []
+        self._rule_units = {
+            rule.rule_id: unit for unit in self.units for rule in unit.rules
+        }
         self.load_report = load_report or {
             "directory": "",
             "files_seen": len(self.units),
@@ -91,6 +94,14 @@ class JsonClauseRepository:
     def all_entities(self) -> list[tuple[Entity, ClauseKnowledgeUnit]]:
         return [(entity, unit) for unit in self.units for entity in unit.entities]
 
+    def extend(self, units: list[ClauseKnowledgeUnit]) -> None:
+        additions = {rule.rule_id: unit for unit in units for rule in unit.rules}
+        conflict = next((rule_id for rule_id in additions if rule_id in self._rule_units), None)
+        if conflict:
+            raise ValueError(f"规则内部标识冲突: {conflict}")
+        self.units.extend(units)
+        self._rule_units.update(additions)
+
     def rules_for_entity_names(self, names: set[str]) -> list[tuple[Rule, ClauseKnowledgeUnit]]:
         matched: list[tuple[Rule, ClauseKnowledgeUnit]] = []
         for unit in self.units:
@@ -100,5 +111,5 @@ class JsonClauseRepository:
         return matched
 
     def unit_for_rule(self, rule_id: str) -> ClauseKnowledgeUnit | None:
-        return next((unit for unit in self.units if any(rule.rule_id == rule_id for rule in unit.rules)), None)
+        return self._rule_units.get(rule_id)
 

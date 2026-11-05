@@ -252,3 +252,21 @@ def test_api_assessment_alias_is_normalized_without_offline_fallback(monkeypatch
     assert len(calls)==1 and response.status!='partial'
     assert response.data['decomposition']['source']=='deepseek_api'
     assert response.data['device_assessment']['device_id']=='SIM-TRANSFORMER-01'
+
+
+def test_business_target_cannot_override_a_different_sentence_target(monkeypatch):
+    app, parameters, _, _ = app_for(monkeypatch, intent='instruction', actions=['start'], query_kind='operation')
+    response = app.analyze(AnalysisRequest('启动主变2的冷却风机', parameters={
+        **parameters, 'device_id': 'SIM-IEC-FAN-01'}))
+    assert response.status == 'uncertain'
+    assert not (response.data.get('candidate_instruction') or {}).get('payload')
+    assert '多台设备' in response.data['answer']['text']
+
+
+def test_business_action_value_cannot_override_sentence_value(monkeypatch):
+    app, parameters, _, _ = app_for(monkeypatch, intent='instruction', actions=['regulate_voltage'], query_kind='operation')
+    response = app.analyze(AnalysisRequest('请将主变1的调压装置设定为9档', parameters={
+        **parameters, 'action_parameters': {'tap_position': 10}}))
+    assert response.status == 'uncertain'
+    assert not (response.data.get('candidate_instruction') or {}).get('payload')
+    assert '目标值与业务参数不一致' in response.data['answer']['text']

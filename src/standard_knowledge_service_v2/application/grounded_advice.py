@@ -13,10 +13,14 @@ PROMPT = '''你是电力标准建议助手。输入是用户问题、检索原�
 结合设备事实梳理条款，说明建议理由与适用性不足。检索相关不等于适用，越限不等于跳闸授权。
 可给人工检查建议；只有原文明确支持且允许动作列表包含的动作才提出一条设备指令，否则instruction为null。
 不输出地址、协议载荷、可执行代码或阈值表达式。仅生成建议和指令草案，不涉及确认或执行。
-仅输出JSON：{"summary":"条款与状态分析", "rule_ids":["引用规则ID"],
-"suggestions":[{"text":"建议及理由", "rule_ids":["引用规则ID"]}],
+必须逐条判断来源能否直接支持回答，不能因为共有词、设备名或动作词相同就判定支持。
+仅输出JSON：{"summary":"条款与状态分析", "answer_supported":true或false,
+"support_assessments":[{"rule_id":"输入规则ID","supports_answer":true或false,"reason":"简短理由"}],
+"unable_reason":"无法回答时的原因，可回答时为空字符串", "rule_ids":["仅列直接支持回答的规则ID"],
+"suggestions":[{"text":"建议及理由", "rule_ids":["仅列支持该建议的规则ID"]}],
 "instruction":null或{"text":"一条自然语言指令", "device_id":"输入的设备ID",
 "action":"允许动作码", "parameters":{}, "rule_ids":["明确支持该动作的规则ID"]}}。
+如果所有条款均不支持当前问题，answer_supported必须为false，rule_ids必须为空数组，instruction必须为null，不得把无关条款拼接成答案。
 每段建议必须引用输入中的来源ID，并说明适用性及待复核状态；不能把引用存在或模拟转换成功说成标准已经确认。
 summary最多250字；suggestions最多5项，每项最多100字，不能超过上述字段约定。
 动作模板不预先绑定条款，动作码只能从设备允许列表选择；条款动作和条件字段可以为空或自然语言。模拟参数、点位和联锁由后端模板校验，不能将模拟配置定值说成标准限值。
@@ -92,7 +96,7 @@ class GroundedAdviceService:
             code = 'invalid_model_output'
             data['advice'].update(reason_code=code, error_code=code, notice=MESSAGES[code])
             return None
-        data['advice'] = {'status': 'generated', 'source': 'llm', **advice,
+        data['advice'] = {'status': 'generated' if advice['answer_supported'] else 'unsupported', 'source': 'llm', **advice,
                           'notice': '模型建议待人工复核；引用存在不代表语义或适用性已审定'}
         cited = list(dict.fromkeys(advice['rule_ids'] + [rid for s in advice['suggestions'] for rid in s['rule_ids']]
                      + (advice['instruction']['rule_ids'] if advice['instruction'] else [])))
@@ -100,7 +104,13 @@ class GroundedAdviceService:
         data['advice']['device_snapshot'] = device
         if data.get('candidate_instruction'):
             data['candidate_instruction']['payload'] = {}
-        data.setdefault('answer', {})['text'] = advice['summary'] + '\n' + '\n'.join(s['text'] for s in advice['suggestions']) + '\n' + data.get('answer', {}).get('text', '')
+        advice_text = '\n'.join(item for item in [advice['summary'], *[s['text'] for s in advice['suggestions']]] if item)
+        if not advice['answer_supported']:
+            data['advice']['conversion'] = {'status': 'not_proposed', 'reason': advice['unable_reason']}
+            data['candidate_instruction'] = None
+            data.setdefault('answer', {})['text'] = advice_text + ('\n' + advice['unable_reason'] if advice['unable_reason'] else '')
+            return 'uncertain'
+        data.setdefault('answer', {})['text'] = advice_text + '\n' + data.get('answer', {}).get('text', '')
         instruction = advice['instruction']
         if not instruction:
             data['advice']['conversion'] = {'status': 'not_proposed',
@@ -151,23 +161,50 @@ class GroundedAdviceService:
 
     @staticmethod
     def _validate(raw, sources, action_templates=None):
-        if set(raw) != {'summary', 'rule_ids', 'suggestions', 'instruction'}:
+        legacy = set(raw) == {'summary', 'rule_ids', 'suggestions', 'instruction'}
+        expected = {'summary', 'answer_supported', 'support_assessments', 'unable_reason',
+                    'rule_ids', 'suggestions', 'instruction'}
+        if not legacy and set(raw) != expected:
             raise ValueError('schema')
+        if legacy:
+            cited = list(dict.fromkeys(raw['rule_ids'] + [rid for item in raw.get('suggestions', [])
+                if isinstance(item, dict) for rid in item.get('rule_ids', [])]
+                + (raw.get('instruction') or {}).get('rule_ids', [])))
+            raw = {**raw, 'answer_supported': True, 'unable_reason': '',
+                   'support_assessments': [{'rule_id': rid, 'supports_answer': True,
+                                            'reason': 'legacy_contract_citation'} for rid in cited]}
         def text(value):
             if not isinstance(value, str) or not value.strip() or len(value) > 3000:
                 raise ValueError('text')
-        def references(values):
-            if not isinstance(values, list) or not values or not all(isinstance(v, str) and v in sources for v in values):
+        def references(values, *, allow_empty=False, allowed=None):
+            if (not isinstance(values, list) or (not values and not allow_empty)
+                    or not all(isinstance(v, str) and v in sources and (allowed is None or v in allowed) for v in values)):
                 raise ValueError('citations')
         text(raw['summary'])
-        references(raw['rule_ids'])
+        if not isinstance(raw['answer_supported'], bool) or not isinstance(raw['unable_reason'], str):
+            raise ValueError('support decision')
+        assessments = raw['support_assessments']
+        if (not isinstance(assessments, list) or not assessments
+                or any(not isinstance(item, dict) or set(item) != {'rule_id', 'supports_answer', 'reason'}
+                       or item['rule_id'] not in sources or not isinstance(item['supports_answer'], bool)
+                       or not isinstance(item['reason'], str) or not item['reason'].strip()
+                       for item in assessments)):
+            raise ValueError('support assessments')
+        if not legacy and {item['rule_id'] for item in assessments} != set(sources):
+            raise ValueError('incomplete support assessments')
+        supported = {item['rule_id'] for item in assessments if item['supports_answer']}
+        if raw['answer_supported'] != bool(supported):
+            raise ValueError('support decision mismatch')
+        references(raw['rule_ids'], allow_empty=not raw['answer_supported'], allowed=supported)
+        if not raw['answer_supported'] and (raw['rule_ids'] or raw['instruction'] is not None or not raw['unable_reason'].strip()):
+            raise ValueError('unsupported answer contract')
         if not isinstance(raw['suggestions'], list) or len(raw['suggestions']) > 5:
             raise ValueError('suggestions')
         for suggestion in raw['suggestions']:
             if not isinstance(suggestion, dict) or set(suggestion) != {'text', 'rule_ids'}:
                 raise ValueError('suggestion')
             text(suggestion['text'])
-            references(suggestion['rule_ids'])
+            references(suggestion['rule_ids'], allow_empty=not raw['answer_supported'], allowed=supported)
         instruction = raw['instruction']
         if instruction is not None:
             if not isinstance(instruction, dict) or set(instruction) != {'text', 'device_id', 'action', 'parameters', 'rule_ids'}:
@@ -211,5 +248,5 @@ class GroundedAdviceService:
                 targets = re.findall(r'(\d+(?:\.\d+)?)\s*(?:MW|兆瓦)', instruction['text'], re.IGNORECASE)
                 if not targets or any(float(v) != instruction['parameters'].get('target_power_mw') for v in targets):
                     raise ValueError('runback text parameter mismatch')
-            references(instruction['rule_ids'])
+            references(instruction['rule_ids'], allowed=supported)
         return raw
