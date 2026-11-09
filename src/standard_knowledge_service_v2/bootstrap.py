@@ -20,7 +20,7 @@ def build_application(config_path: str | Path) -> Application:
     from .audit.store import JsonlAuditStore
     from .config import load_config
     from .consistency_evaluation import ConsistencyEvaluationService
-    from .decomposition.deepseek_decomposer import DeepSeekConfig, DeepSeekDecomposer
+    from .decomposition.remote_model_decomposer import RemoteModelConfig, RemoteModelDecomposer
     from .decomposition.qwen_decomposer import LocalQwenDecomposer
     from .hybrid_reasoning import HybridReasoningEngine
     from .llm_decomposition import QwenDecompositionConfig
@@ -67,8 +67,8 @@ def build_application(config_path: str | Path) -> Application:
         retriever.refresh_index()
     progress(f"条款加载完成，共 {len(retriever.repository.units)} 条")
     audit_store = JsonlAuditStore(config.data.audit_store, config.audit.retention_days)
-    if config.llm.backend == "deepseek_api":
-        decomposer = DeepSeekDecomposer(DeepSeekConfig(
+    if config.llm.backend == "model_api":
+        decomposer = RemoteModelDecomposer(RemoteModelConfig(
             api_base=config.llm.api_base,
             model=config.llm.remote_model,
             api_key_env=config.llm.api_key_env,

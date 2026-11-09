@@ -10,8 +10,8 @@ from .model_errors import ModelCallError, model_error_code
 
 
 def check_remote(config):
-    if config.backend != 'deepseek_api':
-        return {'status': 'skipped', 'reason': '当前不是DeepSeek后端，未执行远程接口预检查'}
+    if config.backend != 'model_api':
+        return {'status': 'skipped', 'reason': '当前不是远程模型后端，未执行模型接口预检查'}
     key = os.getenv(config.api_key_env, '').strip()
     try:
         if not key:

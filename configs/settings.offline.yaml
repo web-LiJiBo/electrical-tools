@@ -23,7 +23,9 @@ dataset_paths:
 llm_decomposition:
   # 仅此显式离线演示允许本地兼容路径；在线理解失败不静默继续。
   allow_offline_fallback: true
-  backend: deepseek_api
+  backend: model_api
+  remote_model: offline-unused
+  api_base: https://offline.invalid
   api_key_env: ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY
 knowledge:
   graph_backend: memory

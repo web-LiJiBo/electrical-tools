@@ -57,9 +57,9 @@ class RetrievalSettings:
 @dataclass(frozen=True, slots=True)
 class LLMSettings:
     backend: str = "local_transformers"
-    remote_model: str = "deepseek-chat"
-    api_base: str = "https://api.deepseek.com"
-    api_key_env: str = "DEEPSEEK_API_KEY"
+    remote_model: str = ""
+    api_base: str = ""
+    api_key_env: str = "MODEL_API_KEY"
     timeout_seconds: float = 30.0
     temperature: float = 0.1
     do_sample: bool = False
@@ -195,6 +195,14 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
     if graph_backend not in supported_graph_backends:
         raise ValueError("knowledge.graph_backend仅支持memory或neo4j")
 
+    llm_backend = str(llm.get("backend", "local_transformers")).strip()
+    remote_model = str(llm.get("remote_model", "")).strip()
+    api_base = str(llm.get("api_base", "")).strip()
+    if llm_backend == "model_api" and (not remote_model or not api_base):
+        raise ValueError(
+            "远程模型模式必须配置llm_decomposition.remote_model和api_base"
+        )
+
     return AppConfig(
         project_root=root,
         source_path=source,
@@ -241,10 +249,10 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             reasoning_selection_weight=selection_weights[2],
         ),
         llm=LLMSettings(
-            backend=str(llm.get("backend", "local_transformers")).strip(),
-            remote_model=str(llm.get("remote_model", "deepseek-chat")).strip(),
-            api_base=str(llm.get("api_base", "https://api.deepseek.com")).strip(),
-            api_key_env=str(llm.get("api_key_env", "DEEPSEEK_API_KEY")).strip(),
+            backend=llm_backend,
+            remote_model=remote_model,
+            api_base=api_base,
+            api_key_env=str(llm.get("api_key_env", "MODEL_API_KEY")).strip(),
             timeout_seconds=_number(llm, "timeout_seconds", 30.0, minimum=0.1),
             temperature=float(llm.get("temperature", 0.1)),
             do_sample=bool(llm.get("do_sample", False)),

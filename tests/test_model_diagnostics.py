@@ -8,7 +8,7 @@ import pytest
 from test_grounded_advice import Client, setup
 from standard_knowledge_service_v2.application.grounded_advice import GroundedAdviceService
 from standard_knowledge_service_v2.application.analysis_pipeline import AnalysisPipeline
-from standard_knowledge_service_v2.decomposition import RawTextFallback, DeepSeekConfig, DeepSeekDecomposer
+from standard_knowledge_service_v2.decomposition import RawTextFallback, RemoteModelConfig, RemoteModelDecomposer
 from standard_knowledge_service_v2.decomposition.check_remote import check_remote
 from standard_knowledge_service_v2.decomposition.model_errors import ModelCallError, model_error_code
 
@@ -27,7 +27,10 @@ from standard_knowledge_service_v2.decomposition.model_errors import ModelCallEr
 def test_error_codes_do_not_expose_exception_text(error, code):
     assert model_error_code(error) == code
     assert 'private-secret' not in str(ModelCallError(code))
-    assert 'private-secret' not in DeepSeekDecomposer()._safe_error(error)
+    decomposer = RemoteModelDecomposer(RemoteModelConfig(
+        api_base='https://example.test', model='test-model'
+    ))
+    assert 'private-secret' not in decomposer._safe_error(error)
 
 
 class FailingClient:
@@ -108,8 +111,8 @@ class Response:
 
 
 def remote_config():
-    return SimpleNamespace(backend='deepseek_api', api_base='https://example.test',
-                           api_key_env='TEST_PREFLIGHT_KEY', timeout_seconds=1, remote_model='deepseek-chat')
+    return SimpleNamespace(backend='model_api', api_base='https://example.test',
+                           api_key_env='TEST_PREFLIGHT_KEY', timeout_seconds=1, remote_model='test-model')
 
 
 def test_preflight_missing_key_never_opens_network(monkeypatch):
@@ -121,7 +124,7 @@ def test_preflight_missing_key_never_opens_network(monkeypatch):
 
 def test_preflight_gets_models_not_generating_text(monkeypatch):
     monkeypatch.setenv('TEST_PREFLIGHT_KEY', 'private-secret')
-    with patch('standard_knowledge_service_v2.decomposition.check_remote.urlopen', return_value=Response({'data': [{'id': 'deepseek-chat'}]})) as call:
+    with patch('standard_knowledge_service_v2.decomposition.check_remote.urlopen', return_value=Response({'data': [{'id': 'test-model'}]})) as call:
         result = check_remote(remote_config())
     assert result['status'] == 'reachable'
     request = call.call_args.args[0]
@@ -138,7 +141,7 @@ def test_preflight_does_not_reject_unlisted_alias_or_change_config(monkeypatch):
         result = check_remote(config)
     assert result['status'] == 'reachable'
     assert result['configured_model_listed'] is False
-    assert config.remote_model == 'deepseek-chat'
+    assert config.remote_model == 'test-model'
 
 
 def test_preflight_permissions_are_reported_without_secret(monkeypatch):
@@ -152,9 +155,11 @@ def test_preflight_permissions_are_reported_without_secret(monkeypatch):
 
 def test_transport_invalid_response_is_classified(monkeypatch):
     monkeypatch.setenv('TEST_TRANSPORT_KEY', 'private-secret')
-    with patch('standard_knowledge_service_v2.decomposition.deepseek_decomposer.urlopen', return_value=Response({'unexpected': 'private-secret'})):
+    with patch('standard_knowledge_service_v2.decomposition.remote_model_decomposer.urlopen', return_value=Response({'unexpected': 'private-secret'})):
         with pytest.raises(ModelCallError, match='返回结构') as caught:
-            DeepSeekDecomposer(DeepSeekConfig(api_key_env='TEST_TRANSPORT_KEY')).complete('system', 'question')
+            RemoteModelDecomposer(RemoteModelConfig(
+                api_base='https://example.test', model='test-model', api_key_env='TEST_TRANSPORT_KEY'
+            )).complete('system', 'question')
     assert caught.value.code == 'invalid_response'
     assert 'private-secret' not in str(caught.value)
 

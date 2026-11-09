@@ -27,25 +27,35 @@ $env:PYTHONUTF8 = '1'
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY = ''
 $configuration = if ($useOnline) { 'configs/settings.example.yaml' } else { 'configs/settings.offline.yaml' }
-if ($useOnline -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
+if ($useOnline -and [string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
     $envFile = Join-Path $projectDirectory '.env'
     if (Test-Path -LiteralPath $envFile) {
-        foreach ($line in Get-Content -LiteralPath $envFile -Encoding UTF8) {
-            if ($line -match '^\s*DEEPSEEK_API_KEY\s*=\s*(.+?)\s*$') {
-                $env:DEEPSEEK_API_KEY = $Matches[1].Trim()
+        $environmentLines = Get-Content -LiteralPath $envFile -Encoding UTF8
+        foreach ($line in $environmentLines) {
+            if ($line -match '^\s*MODEL_API_KEY\s*=\s*(.+?)\s*$') {
+                $env:MODEL_API_KEY = $Matches[1].Trim()
                 break
+            }
+        }
+        # 兼容旧版.env中的供应商专用变量名；新配置统一使用MODEL_API_KEY。
+        if ([string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
+            foreach ($line in $environmentLines) {
+                if ($line -match '^\s*[A-Z0-9]+_API_KEY\s*=\s*(.+?)\s*$') {
+                    $env:MODEL_API_KEY = $Matches[1].Trim()
+                    break
+                }
             }
         }
     }
 }
-if ($useOnline -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
-    $env:DEEPSEEK_API_KEY = [Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','Machine')
-    if ([string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
-        $env:DEEPSEEK_API_KEY = [Environment]::GetEnvironmentVariable('DEEPSEEK_API_KEY','User')
+if ($useOnline -and [string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
+    $env:MODEL_API_KEY = [Environment]::GetEnvironmentVariable('MODEL_API_KEY','Machine')
+    if ([string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
+        $env:MODEL_API_KEY = [Environment]::GetEnvironmentVariable('MODEL_API_KEY','User')
     }
 }
-if ($useOnline -and [string]::IsNullOrWhiteSpace($env:DEEPSEEK_API_KEY)) {
-    throw '在线模式需要在项目根目录.env、当前进程、用户变量或系统变量中配置DEEPSEEK_API_KEY。'
+if ($useOnline -and [string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
+    throw '在线模式需要在项目根目录.env、当前进程、用户变量或系统变量中配置MODEL_API_KEY。'
 }
 Write-Output ('[启动] Python环境检查通过：' + $pythonVersion.Trim())
 foreach ($port in @(8000,5500)) {
@@ -56,7 +66,7 @@ foreach ($port in @(8000,5500)) {
     } finally { $probe.Dispose() }
 }
 if ($useOnline) {
-    Write-Output '[启动] 正在检查DeepSeek接口连通性'
+    Write-Output '[启动] 正在检查大模型接口连通性'
     & $pythonPath -m standard_knowledge_service_v2.decomposition.check_remote --config (Join-Path $projectDirectory $configuration)
     if ($LASTEXITCODE -ne 0) {
         throw '在线接口预检查未通过，未启动新的服务。网络权限拒绝时，请从有外网权限的PowerShell启动，不要关闭防火墙或绕过安全限制。'

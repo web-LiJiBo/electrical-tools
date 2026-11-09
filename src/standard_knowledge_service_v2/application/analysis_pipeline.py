@@ -82,12 +82,12 @@ class AnalysisPipeline:
         # Every natural-language request is understood before any local shortcut.
         # Keep this result request-local so concurrent calls cannot share parses.
         decomposed = self.decomposer.decompose(request.query, request.scenario_hint, request.conversation_context)
-        from ..decomposition.deepseek_decomposer import DeepSeekDecomposer
-        online = isinstance(self.decomposer, DeepSeekDecomposer) and not (
+        from ..decomposition.remote_model_decomposer import RemoteModelDecomposer
+        online = isinstance(self.decomposer, RemoteModelDecomposer) and not (
             self.config is not None and self.config.llm.allow_offline_fallback)
         kind = decomposed.scenario.get('query_kind')
         kinds = ('device_status', 'device_capability', 'standard_query', 'assessment', 'operation', 'other')
-        if online and (decomposed.source != 'deepseek_api' or not decomposed.valid or kind not in kinds):
+        if online and (decomposed.source != 'model_api' or not decomposed.valid or kind not in kinds):
             diagnostics = list(decomposed.errors)
             if kind not in kinds:
                 diagnostics.append('模型未返回受支持的scenario.query_kind，未改用关键词分流')

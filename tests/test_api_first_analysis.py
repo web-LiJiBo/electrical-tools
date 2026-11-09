@@ -6,13 +6,15 @@ import pytest
 
 from standard_knowledge_service_v2.application import AnalysisPipeline
 from standard_knowledge_service_v2.contracts import AnalysisRequest
-from standard_knowledge_service_v2.decomposition import DeepSeekConfig, DeepSeekDecomposer
+from standard_knowledge_service_v2.decomposition import RemoteModelConfig, RemoteModelDecomposer
 from standard_knowledge_service_v2.instruction_engine.simulation_runtime import SimulationRuntime
 from standard_knowledge_service_v2.retrieval_engine import JsonClauseRepository, LocalLunwenRetrievalAdapter
 
 
 def app_for(monkeypatch, *, intent='search', actions=None, constraints=None, query_kind=None, entities=None, operating_condition=''):
-    decomposer = DeepSeekDecomposer(DeepSeekConfig(api_key_env='API_FIRST_TEST_UNUSED'))
+    decomposer = RemoteModelDecomposer(RemoteModelConfig(
+        api_base='https://example.test', model='test-model', api_key_env='API_FIRST_TEST_UNUSED'
+    ))
     calls = []
     def complete(system, user):
         calls.append(user)
@@ -40,7 +42,7 @@ def test_all_natural_queries_understand_before_reading_snapshot(monkeypatch, que
     monkeypatch.setattr(app.simulation_runtime,'snapshot',snapshot)
     response = app.analyze(AnalysisRequest(query,parameters=parameters))
     assert len(calls)==1
-    assert response.data['decomposition']['source']=='deepseek_api'
+    assert response.data['decomposition']['source']=='model_api'
 
 
 def test_failed_online_understanding_does_not_generate_a_local_preview(monkeypatch):
@@ -112,7 +114,7 @@ def test_temperature_assessment_reuses_first_understanding(monkeypatch):
     app, parameters, _, calls=app_for(monkeypatch)
     response=app.analyze(AnalysisRequest('主变1温升状态是否正常？',parameters=parameters))
     assert len(calls)==1
-    assert response.data['decomposition']['source']=='deepseek_api'
+    assert response.data['decomposition']['source']=='model_api'
 
 
 def test_model_routes_operation_without_old_action_keywords(monkeypatch):
@@ -250,7 +252,7 @@ def test_api_assessment_alias_is_normalized_without_offline_fallback(monkeypatch
     app, parameters, _, calls=app_for(monkeypatch,intent='assessment',query_kind='assessment')
     response=app.analyze(AnalysisRequest('主变1温升是否正常？',parameters=parameters))
     assert len(calls)==1 and response.status!='partial'
-    assert response.data['decomposition']['source']=='deepseek_api'
+    assert response.data['decomposition']['source']=='model_api'
     assert response.data['device_assessment']['device_id']=='SIM-TRANSFORMER-01'
 
 

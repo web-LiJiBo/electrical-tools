@@ -57,11 +57,12 @@ retrieval:
 
 llm_decomposition:
   enabled: true
-  # 临时测试使用DeepSeek；切回本地千问时改为local_transformers。
-  backend: deepseek_api
+  # 在线模式使用OpenAI兼容的大模型接口；切回本地千问时改为local_transformers。
+  backend: model_api
+  # 以下两项是当前供应商要求的技术参数；更换兼容接口时只修改配置，无需改业务代码。
   remote_model: deepseek-chat
   api_base: "https://api.deepseek.com"
-  api_key_env: DEEPSEEK_API_KEY
+  api_key_env: MODEL_API_KEY
   timeout_seconds: 30
   model: "models/llm/qwen--Qwen-7B-Chat/snapshots/master"
   max_new_tokens: 1024
@@ -118,7 +119,7 @@ instruction:
 
 llm_advice:
   enabled: true
-  # 复用llm_decomposition的DeepSeek或本地Qwen；检索后额外调用一次。
+  # 复用llm_decomposition的远程大模型或本地Qwen；检索后额外调用一次。
 
 audit:
   store: "data/audit/audit.jsonl"
