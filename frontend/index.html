@@ -36,6 +36,8 @@ function render(){if(!result)return;const d=result.data||{},answered=['answered'
 $('run').onclick=async()=>{
  const btn=$('run'),context=window.originalSimulation?.context();
  const isCurrent=()=>!window.originalSimulation||window.originalSimulation.context()===context;
+ result=null;window.originalSimulation?.invalidate();
+ $('output').innerHTML='<div class="empty">正在分析本次问题…</div>';
  btn.disabled=true;btn.textContent='正在分析...';$('status').textContent='处理中';
  try{
   let parameters;
@@ -53,7 +55,7 @@ $('run').onclick=async()=>{
   render();await loadDeviceState();
  }catch(e){
   if(isCurrent()){$('output').innerHTML=`<div class="notice">请求失败：${esc(e.message)}</div>`;$('status').textContent='请求失败';$('status').className='status warn'}
- }finally{btn.disabled=false;btn.textContent='分析问题'}
+ }finally{btn.disabled=false;btn.textContent='分析问题';if(!isCurrent()&&$('status').textContent==='处理中'){$('status').textContent='等待重新分析';$('output').innerHTML='<div class="empty">输入已变化，请重新分析。</div>'}}
 };
 async function loadDeviceState(){try{const response=await fetch($('api').value+'/simulation/state');if(!response.ok)throw Error();const s=await response.json();$('device-state').innerHTML=s.devices.map(d=>{const name=d.device_type==='pole_controller'?'模拟换流阀1':d.device_type==='transformer'?'模拟变压器'+Number(d.device_id.slice(-2)):d.device_type==='breaker'?'模拟断路器'+(d.protocol==='IEC61850'?1:2):'模拟逆变器'+(d.protocol==='IEC61850'?1:2);return `<div class="rule"><strong>${esc(name)}</strong> · ${esc(d.protocol)}<br><code>${esc(JSON.stringify(d.state))}<br>${esc(JSON.stringify(d.runtime_facts))}</code></div>`}).join('')}catch{$('device-state').textContent='无法读取模拟状态，请确认已启动最新版后端。'}}
 // original-simulation.js loads the selected scene and owns state rendering.

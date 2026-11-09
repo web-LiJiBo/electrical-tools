@@ -2,7 +2,8 @@
 (() => {
   let sessionId = '', submitted = '', lastResult = null, revision = 0;
   const sessions = new Map(), creating = new Map(), catalogs = new Map();
-  let validPreview = false, executing = false;
+  let validPreview = false, executing = false, stateRequest = 0;
+  const stateVersions = new Map();
   const api = () => document.getElementById('api').value;
   const scenario = () => document.getElementById('scenario').value || 'all_devices';
   const sessionKey = () => api();
@@ -57,6 +58,7 @@
     if (hint && !executing) hint.textContent = '输入或状态已变化，请重新分析后再模拟下发。';
   }
   window.originalSimulation = {
+    invalidate,
     context: signature,
     async prepare(parameters) {
       invalidate();
@@ -87,7 +89,9 @@
         const snapshot = await request('/simulation/sessions/' + encodeURIComponent(identifier), undefined, base);
         if (current !== signature()) throw Error('场景或输入已变化，请重新分析。');
         const currentCondition = snapshot.scenario_conditions?.[name] || snapshot.condition;
-        if (currentCondition !== prepared.simulation_condition) {
+        const childChanged = name === 'all_devices' && Object.values(snapshot.scenario_conditions || {})
+          .some(condition => condition !== prepared.simulation_condition);
+        if (currentCondition !== prepared.simulation_condition || childChanged) {
           await request('/simulation/sessions/' + encodeURIComponent(identifier) + '/condition', {
             condition: prepared.simulation_condition, scenario_id: name
           }, base);
@@ -102,9 +106,9 @@
     oil_pump: '油泵', disconnector: '隔离开关', earthing_switch: '接地开关',
     tap_changer: '有载调压装置', inverter: '逆变器', pole_controller: '换流阀控制器'};
   loadDeviceState = async function () {
-    const current = revision, key = sessionKey(), base = api();
+    const current = revision, key = sessionKey(), base = api(), sequence = ++stateRequest;
     const panel = document.getElementById('device-state');
-    const isCurrent = () => current === revision && key === sessionKey();
+    const isCurrent = () => current === revision && key === sessionKey() && sequence === stateRequest;
     if (!document.getElementById('simulation-mode').checked) {
       panel.textContent = '模拟模式未开启，当前查询不使用模拟设备状态。';
       return;
@@ -120,6 +124,11 @@
       }
       const snapshot = await request('/simulation/sessions/' + encodeURIComponent(identifier), undefined, base);
       if (!isCurrent()) return;
+      const versionKey = JSON.stringify([base, identifier]);
+      if (Number.isInteger(snapshot.version)) {
+        if (snapshot.version < (stateVersions.get(versionKey) ?? -1)) return;
+        stateVersions.set(versionKey, snapshot.version);
+      }
       sessionId = identifier;
       const available = await catalog(base);
       if (!isCurrent()) return;
@@ -134,7 +143,7 @@
     }
   };
   function feedbackHtml(execution, id = 'simulation-result') {
-    const names = {succeeded: '模拟下发完成', blocked: '模拟下发被阻止', failed: '模拟下发失败'};
+    const names = {succeeded: '模拟下发完成', blocked: '模拟下发被阻止', failed: '模拟下发失败', unknown: '执行结果未确认'};
     const before = execution.before?.devices?.find(d => d.device_id === execution.target);
     const after = execution.after?.devices?.find(d => d.device_id === execution.target);
     return `<div id="${id}" class="section"><h3>${esc(names[execution.status] || '模拟请求未完成')}</h3><p>${esc(execution.explanation || '')}</p>${before && after ? `<dl class="kv"><dt>执行前状态</dt><dd><code>${esc(JSON.stringify(before.state))}</code></dd><dt>执行后状态</dt><dd><code>${esc(JSON.stringify(after.state))}</code></dd><dt>模拟反馈</dt><dd>${esc(execution.feedback?.explanation || '无')}</dd></dl>` : ''}</div>`;
@@ -225,13 +234,17 @@
       document.getElementById('status').textContent = status;
       document.getElementById('status').className = 'status ' + (blocked || data.simulation_batch.execution_unknown ? 'warn' : 'ok');
     }
+    if (data?.simulation_execution?.status === 'unknown') {
+      document.getElementById('status').textContent = '执行结果未确认';
+      document.getElementById('status').className = 'status warn';
+    }
     if (tab === 'instruction' && data?.simulation_batch) {
       renderBatch(data);
       return;
     }
     if (tab !== 'instruction' || !data?.simulation_preview) return;
     const preview = selectedPreview();
-    const scope = document.querySelector('#output .kv dd:last-child');
+    const scope = document.querySelector('#output > .kv dd:last-child');
     if (scope) scope.textContent = data.simulation_execution ? '模拟执行结果；真实设备下发关闭' : '仅预览；尚未模拟下发';
     document.getElementById('output').insertAdjacentHTML('beforeend',
       `<div class="section"><button id="simulate-execute" class="primary" ${!preview || !validPreview || executing || data.simulation_execution ? 'disabled' : ''}>${executing ? '正在模拟下发…' : '模拟下发'}</button><p id="simulate-hint" class="hint">${data.simulation_execution ? '本条指令已处理，再次操作请重新分析。' : validPreview ? '仅点击此按钮才更新当前模拟设备状态。' : '请重新分析，获取当前输入和状态对应的有效预览。'}</p></div>`
@@ -251,7 +264,8 @@
         data.answer = {...data.answer, text: (execution.status === 'succeeded' ? '模拟下发已完成。' : '模拟下发未完成。') + execution.explanation};
         await loadDeviceState();
       } catch (error) {
-        data.simulation_execution = {status: 'failed', explanation: '请求未确认，请查询当前状态：' + error.message};
+        data.simulation_execution = {status: 'unknown', explanation: '执行结果未确认，请查询当前状态并重新分析：' + error.message};
+        data.answer = {...data.answer, text: data.simulation_execution.explanation};
       } finally {
         executing = false;
         document.getElementById('run').disabled = false;

@@ -57,3 +57,47 @@ def test_legacy_saved_feedback_is_ignored(tmp_path):
     path.write_text(json.dumps({'simulation_only': True, 'items': [row]}), encoding='utf-8')
     loaded = load_custom(SimulationInstructionService(), path)
     assert not {'state_key', 'state_value', 'expected_feedback'} & loaded[0]['template'].keys()
+
+
+def test_runtime_template_refresh_keeps_state_and_invalidates_old_preview(tmp_path):
+    from standard_knowledge_service_v2.instruction_engine.simulation_catalog import SimulationCatalog
+    from standard_knowledge_service_v2.instruction_engine.simulation_runtime import SimulationRuntime
+    service = SimulationInstructionService()
+    runtime = SimulationRuntime(SimulationCatalog(legacy_service=service))
+    before = runtime.create_session('all_devices')
+    sid = before['session_id']
+    old = runtime.preview(sid, 'SIM-MB-FAN-01', 'start', {})
+    save_custom(service, sample(), tmp_path / 'custom.json')
+    runtime.refresh_catalog(SimulationCatalog(legacy_service=service))
+    after = runtime.snapshot(sid)
+    assert after['devices'] == before['devices']
+    assert after['version'] > before['version']
+    assert 'alarm' in runtime.catalog.devices['SIM-MB-FAN-01']['actions']
+    assert 'alarm' in runtime._sessions[sid].profiles['SIM-MB-FAN-01']['actions']
+    assert 'alarm' in runtime._sessions[runtime.create_session('all_devices')['session_id']].profiles['SIM-MB-FAN-01']['actions']
+    assert runtime.execute(sid, old['command_id'], old['expected_version'])['status'] == 'blocked'
+
+
+def test_save_http_route_synchronizes_running_catalog(monkeypatch, tmp_path):
+    from threading import RLock
+    from types import SimpleNamespace
+    from fastapi import FastAPI
+    from fastapi.testclient import TestClient
+    from standard_knowledge_service_v2.api.routes import register_routes
+    from standard_knowledge_service_v2.application.simulation_access import simulation_runtime
+    from standard_knowledge_service_v2.instruction_engine import template_editor
+    service = SimulationInstructionService()
+    pipeline = SimpleNamespace(simulation_session=SimpleNamespace(service=service, lock=RLock()))
+    runtime = simulation_runtime(pipeline)
+    snapshot = runtime.create_session('all_devices')
+    real_save = template_editor.save_custom
+    monkeypatch.setattr(template_editor, 'save_custom',
+                        lambda service, payload: real_save(service, payload, tmp_path / 'custom.json'))
+    app = FastAPI()
+    register_routes(app, SimpleNamespace(facade=pipeline, audit_store=None))
+    client = TestClient(app)
+    response = client.post('/simulation/templates', json=sample())
+    assert response.status_code == 200
+    assert response.json()['runtime_refreshed'] is True
+    assert 'alarm' in runtime.catalog.devices['SIM-MB-FAN-01']['actions']
+    assert runtime.snapshot(snapshot['session_id'])['version'] == snapshot['version'] + 1

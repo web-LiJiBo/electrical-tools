@@ -61,6 +61,67 @@ const deferred = () => {
   return {promise, resolve};
 };
 
+test('failed second analysis cannot restore the previous answer on tab change', async () => {
+  const app = fixture({fullPage:true}); await flush();
+  app.element('query').value = '第一问'; await app.element('run').onclick();
+  app.element('params').value = '{坏'; await app.element('run').onclick();
+  vm.runInContext("tab='summary';render()", app.context);
+  assert.doesNotMatch(app.element('output').innerHTML, /旧场景结果/);
+  assert.equal(app.element('status').textContent, '请求失败');
+});
+
+test('late state snapshot cannot replace a newer response in the same scene', async () => {
+  const app = fixture(); await flush();
+  const held = deferred(), original = app.context.fetch;
+  let count = 0;
+  app.context.fetch = async (url, options) => {
+    if (new URL(url).pathname === '/simulation/sessions/session-all_devices') {
+      const snapshot = structuredClone(app.sessions.get('session-all_devices'));
+      if (++count === 1) await held.promise;
+      return {ok:true,json:async()=>snapshot};
+    }
+    return original(url, options);
+  };
+  const pending = app.context.loadDeviceState(); await flush();
+  const state = app.sessions.get('session-all_devices');
+  state.version = 1; state.devices[0].state.running = true;
+  await app.context.loadDeviceState(); held.resolve(); await pending;
+  assert.match(app.element('device-state').innerHTML, /"running":true/);
+});
+
+test('aggregate normal resets a changed child scenario', async () => {
+  const app = fixture(); await flush();
+  app.sessions.get('session-all_devices').scenario_conditions = {substation_maintenance:'high_temperature'};
+  await app.context.window.originalSimulation.prepare({simulation_mode:true,simulation_condition:'normal'});
+  assert.equal(app.requests.some(r=>r.route.endsWith('/condition')), true);
+});
+
+test('lost single-command response is unknown on both answer and operation tabs', async () => {
+  const app = fixture({fullPage:true}); await flush();
+  const original = app.context.fetch;
+  app.context.fetch = async (url, opts) => {
+    if(new URL(url).pathname.endsWith('/execute'))throw Error('connection lost');
+    if(new URL(url).pathname === '/analyze')return {ok:true,json:async()=>({status:'generated',data:{
+      answer:{text:'已生成预览，尚未执行'},simulation_session_id:'session-all_devices',
+      simulation_preview:{status:'generated',command_id:'one',expected_version:0,simulation_execution_allowed:true}}})};
+    return original(url,opts);
+  };
+  await app.element('run').onclick();
+  vm.runInContext("tab='instruction';render()",app.context);
+  await app.element('simulate-execute').onclick();
+  vm.runInContext("tab='summary';render()",app.context);
+  assert.match(app.element('output').innerHTML,/执行结果未确认/);
+  assert.doesNotMatch(app.element('output').innerHTML,/尚未执行/);
+  assert.equal(app.element('status').textContent,'执行结果未确认');
+});
+
+test('editing during analysis clears processing status when obsolete response returns', async () => {
+  const slow = deferred(); const app=fixture({fullPage:true,delayAnalyze:slow}); await flush();
+  const pending=app.element('run').onclick(); await flush();
+  app.element('query').value='新问题'; slow.resolve();await pending;
+  assert.equal(app.element('status').textContent,'等待重新分析');
+});
+
 function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy} = {}) {
   const elements = new Map();
   function element(id) {

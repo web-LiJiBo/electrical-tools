@@ -67,7 +67,13 @@ def register_routes(app, application) -> None:
         session = application.facade.simulation_session
         try:
             with session.lock:
-                return save_custom(session.service, payload)
+                saved = save_custom(session.service, payload)
+                from ..application.simulation_access import simulation_runtime
+                from ..instruction_engine.simulation_catalog import SimulationCatalog
+                runtime = simulation_runtime(application.facade)
+                runtime.refresh_catalog(SimulationCatalog(legacy_service=session.service))
+                return {**saved, 'runtime_refreshed': True,
+                        'notice': '模板已同步运行目录；设备状态保留，旧预览需重新生成。'}
         except ValueError as exc:
             raise HTTPException(status_code=422, detail=str(exc)) from exc
 

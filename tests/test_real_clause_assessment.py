@@ -49,3 +49,18 @@ def test_actual_dataset_grounding_no_invented_action(monkeypatch):
     assert assessment['hypothetical_assessment']['provided_facts']['winding_hotspot_rise_k']==95
     assert assessment['current_snapshot_assessment']['runtime_facts']['winding_hotspot_rise_k']==50
     assert assessment['checks'][0]['actual']==95
+
+    for mode, expected, limit in [('OD', 'uncertain', 70), ('ON', 'abnormal', 65), ('OF', 'abnormal', 65)]:
+        parsed = DecompositionResult(intent='assessment', valid=True, source='test',
+            entities=[{'name':'主变1','type':'设备'}], constraints=[
+                {'parameter':'绕组平均温升','operator':'=','value':70,'unit':'K'},
+                {'parameter':'冷却方式','operator':'=','value':mode}], scenario={'query_kind':'assessment'})
+        _, data, _ = assess_real_clause(pipeline,
+            AnalysisRequest(f'假设主变1绕组平均温升70K，{mode}冷却，其他参数不提供', parameters={
+                'simulation_mode':True, 'simulation_session_id':snapshot['session_id']}),
+            snapshot=snapshot, device_id='SIM-TRANSFORMER-01', decomposed=parsed)
+        a = data['device_assessment']
+        assert a['status'] == expected
+        assert a['checks'][0]['limit'] == limit
+        assert a['hypothetical_assessment']['complete'] is False
+        assert a['current_snapshot_assessment']['checks'][2]['limit'] == 65
