@@ -7,6 +7,54 @@ const vm = require('node:vm');
 
 const script = fs.readFileSync(path.join(__dirname, '../frontend/original-simulation.js'), 'utf8');
 const flush = () => new Promise(resolve => setImmediate(resolve));
+
+test('same-device mixed actions display one device and two distinct instructions', async () => {
+  const app = fixture();
+  await flush();
+  app.element('query').value = '同一设备调整有功与无功';
+  await app.context.window.originalSimulation.prepare({simulation_mode:true});
+  app.context.result = {status:'generated', data:{simulation_session_id:'session-all_devices', simulation_batch:{items:[
+    {device_id:'SIM-MB-INVERTER-01', display_name:'新能源逆变器', action:'adjust_active_power', source_query:'有功设为120kW',
+     parameters:{power_kw:120}, parameter_unit:'kW', preview:{status:'generated', command_id:'one', expected_version:0, simulation_execution_allowed:true}},
+    {device_id:'SIM-MB-INVERTER-01', display_name:'新能源逆变器', action:'adjust_reactive_power', source_query:'无功设为30kvar',
+     parameters:{reactive_power_kvar:30}, parameter_unit:'kvar', preview:{status:'generated', command_id:'two', expected_version:0, simulation_execution_allowed:true}}
+  ]}}};
+  app.context.tab = 'instruction';
+  app.context.render();
+  const html = app.element('output').innerHTML;
+  assert.match(html, /共1台设备、2条指令/);
+  assert.match(html, /有功设为120kW/);
+  assert.match(html, /无功设为30kvar/);
+  assert.equal(app.element('simulate-batch-0').disabled, false);
+  assert.equal(app.element('simulate-batch-1').disabled, false);
+});
+
+test('multi-device cards retain blocked rows and input changes disable every command', async () => {
+  const app = fixture();
+  await flush();
+  app.element('query').value = '启动冷却风机1和冷却风机2';
+  await app.context.window.originalSimulation.prepare({simulation_mode: true});
+  app.context.result = {status: 'generated', data: {simulation_session_id: 'session-all_devices',
+    simulation_batch: {items: [
+      {device_id: 'SIM-IEC-FAN-01', display_name: '冷却风机1', action: 'start', parameters: {},
+       preview: {status: 'generated', command_id: 'one', expected_version: 0,
+         simulation_execution_allowed: true, candidate: {payload: {ctlVal: true}}}},
+      {device_id: 'SIM-MB-FAN-01', display_name: '冷却风机2', action: 'start', parameters: {},
+       preview: {status: 'blocked', explanation: '检修闭锁', simulation_execution_allowed: false}}
+    ]}}};
+  app.context.tab = 'instruction';
+  app.context.render();
+  assert.match(app.element('output').innerHTML, /SIM-IEC-FAN-01/);
+  assert.match(app.element('output').innerHTML, /SIM-MB-FAN-01/);
+  assert.match(app.element('output').innerHTML, /检修闭锁/);
+  assert.equal(app.element('status').textContent, '部分指令可用');
+  assert.equal(app.element('simulate-batch-0').disabled, false);
+  assert.equal(app.element('simulate-batch-1').disabled, true);
+  assert.equal(app.requests.some(r => r.route.endsWith('/execute')), false);
+  app.element('query').value = '其他问题';
+  for (const fn of app.element('query').listeners.input) fn();
+  assert.equal(app.element('simulate-batch-0').disabled, true);
+});
 const deferred = () => {
   let resolve;
   const promise = new Promise(done => { resolve = done; });

@@ -91,7 +91,9 @@ def register_routes(app, application) -> None:
     @app.post("/generate-instruction")
     def generate_instruction(payload: dict):
         response = analyze_payload(payload)
-        return {"status": response.status, "candidate_instruction": response.data.get("candidate_instruction"), "missing_fields": response.data.get("missing_fields", []),
+        return {"status": response.status, "candidate_instruction": response.data.get("candidate_instruction"),
+                "simulation_batch": response.data.get("simulation_batch"),
+                "simulation_session_id": response.data.get("simulation_session_id"), "missing_fields": response.data.get("missing_fields", []),
                 "processing": response.data.get("processing", {}), "advice": response.data.get("advice", {}), "warnings": response.warnings}
 
     @app.post("/validate")

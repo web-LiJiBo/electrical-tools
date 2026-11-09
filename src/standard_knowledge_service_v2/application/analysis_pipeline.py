@@ -363,9 +363,13 @@ class AnalysisPipeline:
                     'advice': data.get('advice'), 'validation': data.get('validation', {}), 'warnings': warnings}).to_dict()
         advice = data.get('advice', {})
         candidate = data.get('candidate_instruction') or {}
+        batch = data.get('simulation_batch', {})
         conversion = advice.get('conversion', {})
         if understanding_failed:
             instruction_status, instruction_reason = 'unavailable', data['control_block_reason']
+        elif batch.get('items'):
+            instruction_status = 'generated' if batch.get('generated_count') else 'blocked'
+            instruction_reason = f"多设备预览：{batch['generated_count']}条可用，{batch['blocked_count']}条阻断；须逐台确认模拟下发"
         elif candidate.get('payload'):
             instruction_status, instruction_reason = 'generated', '已生成候选协议字段；不下发、不改变设备状态'
         elif advice.get('error_code'):
@@ -379,7 +383,7 @@ class AnalysisPipeline:
         else:
             instruction_status, instruction_reason = 'not_generated', advice.get('notice') or data.get('control_block_reason') or '本次未形成设备指令，请查看来源、建议及生成条件'
         # An old pre-model success must never survive when advice removed its payload.
-        if status == 'generated' and not candidate.get('payload'):
+        if status == 'generated' and not candidate.get('payload') and not batch.get('generated_count'):
             status = 'uncertain'
         data['processing'] = {
             'query_intent': data.get('intent_classification', {}).get('intent', 'assessment'),
