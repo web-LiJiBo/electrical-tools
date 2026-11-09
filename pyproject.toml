@@ -21,7 +21,7 @@ llm = [
     "accelerate>=0.21",
     "peft>=0.5",
 ]
-graph = ["py2neo>=2021.2.4"]
+graph = ["neo4j>=5.20,<7"]
 # 主流程配置了已训练的注意力一致性分类器，因此默认环境必须具备PyTorch推理能力。
 consistency = ["torch>=2.6", "numpy>=1.26"]
 ml = [

@@ -26,8 +26,11 @@ llm_decomposition:
   backend: deepseek_api
   api_key_env: ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY
 knowledge:
+  graph_backend: memory
   json_build_source: datasets/lunwen/verified_json/json
   build_summary: artifacts/knowledge_graph/verified_build_summary.json
+  fallback_to_memory: true
+  sync_state_path: artifacts/knowledge_graph/neo4j_sync_state.json
 feedback:
   store: data/feedback/business_feedback.jsonl
   proposal_output: artifacts/optimization/proposals.json

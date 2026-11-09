@@ -94,11 +94,9 @@ def build_application(config_path: str | Path) -> Application:
         config.consistency.threshold,
     )
     progress(f"一致性评价模型已加载：{consistency.backend}")
-    from .knowledge_graph.current_graph import CurrentKnowledgeGraph
+    from .knowledge_graph.runtime import build_runtime_graph
     from .hybrid_reasoning.semantic_reasoner import SemanticReasoner
-    progress("正在构建内存知识图谱")
-    graph = CurrentKnowledgeGraph(retriever.repository.units)
-    progress("内存知识图谱构建完成")
+    graph = build_runtime_graph(retriever.repository.units, config.knowledge, progress)
     pipeline = AnalysisPipeline(retriever, audit_store, config, decomposer, consistency,
                                 HybridReasoningEngine(semantic_reasoner=SemanticReasoner(graph)))
     pipeline.knowledge_graph = graph

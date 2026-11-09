@@ -16,8 +16,10 @@ from .create_graph import InMemoryGraphBackend, normalize_name
 
 
 class CurrentKnowledgeGraph(InMemoryGraphBackend):
-    def __init__(self, units):
+    def __init__(self, units, requested_backend="memory", fallback_reason=""):
         super().__init__()
+        self.requested_backend = requested_backend
+        self.fallback_reason = fallback_reason
         self.rule_nodes = {}
         self.document_nodes = {}
         self.by_name = defaultdict(list)
@@ -84,7 +86,10 @@ class CurrentKnowledgeGraph(InMemoryGraphBackend):
                 "quote": rule["content"], "grants_control_permission": False}
 
     def summary(self):
-        return {"backend": "local_memory", "documents": len(self.document_nodes),
+        return {"backend": "local_memory", "requested_backend": self.requested_backend,
+                "fallback_reason": self.fallback_reason,
+                "degraded": bool(self.fallback_reason),
+                "documents": len(self.document_nodes),
                 "rules": len(self.rule_nodes), "unique_nodes": len(self.nodes),
                 "unique_relations": len(self.relations),
                 "node_labels": dict(Counter(n["label"] for n in self.nodes.values())),
@@ -102,8 +107,15 @@ def export_current_graph(application, output_dir):
         "scope": "来源条款导航图；不代表有效规范认证或自动控制授权"}
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    for name, value in (("graph.json", {"schema_version": "1.0", "summary": summary,
-            "nodes": graph.nodes, "relations": [list(r) for r in sorted(graph.relations)]}),
+    graph_export = {"schema_version": "1.0", "summary": summary}
+    if hasattr(graph, "nodes") and hasattr(graph, "relations"):
+        graph_export.update({
+            "nodes": graph.nodes,
+            "relations": [list(r) for r in sorted(graph.relations)],
+        })
+    else:
+        graph_export["external_backend"] = True
+    for name, value in (("graph.json", graph_export),
             ("source_manifest.json", sources), ("build_summary.json", summary)):
         path = output_dir / name
         temporary = path.with_suffix(path.suffix + ".tmp")

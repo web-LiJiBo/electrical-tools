@@ -46,11 +46,11 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Output '[环境] 正在安装运行与测试依赖'
-& $pythonPath -m pip install --disable-pip-version-check -e '.[api,excel,test,consistency]'
+& $pythonPath -m pip install --disable-pip-version-check -e '.[api,excel,test,consistency,graph]'
 if ($LASTEXITCODE -ne 0) { throw '依赖安装失败，请检查网络、代理或pip软件源配置。' }
 
 Write-Output '[环境] 正在验证关键依赖'
-& $pythonPath -c "import fastapi, httpx, openpyxl, pytest, torch, uvicorn, yaml; print('dependency check passed; torch=' + torch.__version__)"
+& $pythonPath -c "import fastapi, httpx, neo4j, openpyxl, pytest, torch, uvicorn, yaml; print('dependency check passed; torch=' + torch.__version__ + '; neo4j=' + neo4j.__version__)"
 if ($LASTEXITCODE -ne 0) { throw '依赖验证失败。' }
 
 Write-Output '[环境] 初始化完成。离线启动：.\启动前端实验.ps1；在线启动：.\启动前端实验.ps1 -Online'

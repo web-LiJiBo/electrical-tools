@@ -18,7 +18,7 @@
 <div class="tabs"><button data-tab="summary" class="active">回答</button><button data-tab="decomposition">系统理解</button><button data-tab="scenario_model">适用场景</button><button data-tab="matching">依据条款</button><button data-tab="instruction">操作建议</button></div><div id="output"><div class="empty">输入问题后点击“分析问题”，答案将在这里显示。</div></div>
 </section></div></main>
 <script>
-const $=id=>document.getElementById(id),esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=id=>document.getElementById(id),uiText=v=>String(v??'').replace(/deepseek_api/gi,'大模型').replace(/deepseek-chat/gi,'大模型').replace(/deepseek/gi,'大模型'),esc=v=>uiText(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const scenarioNames={offshore_wind:'海上风电',substation_maintenance:'变电站设备运维',grid_fault_isolation:'电网故障隔离',renewable_grid_integration:'新能源并网',power_grid_operation:'电网调度运行',general:'通用场景'};
 // Isolated local preview may select 8001; arbitrary hosts or ports are not accepted.
 if(new URLSearchParams(location.search).get('backend_port')==='8001')$('api').value='http://127.0.0.1:8001';

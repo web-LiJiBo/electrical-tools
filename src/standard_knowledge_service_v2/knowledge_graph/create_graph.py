@@ -1,6 +1,6 @@
 """由 ``lunwen/create_graph.py`` 复制并工程化的知识图谱构建模块。
 
-默认内存后端便于离线构建和测试；需要持久化时使用 Py2neoGraphBackend。
+默认内存后端便于离线构建和测试；运行时Neo4j后端位于neo4j_graph模块。
 本模块不引用源项目，工具目录可独立部署。
 """
 
@@ -68,35 +68,6 @@ class InMemoryGraphBackend:
                 target_node = self.nodes.get(target, {})
                 found.append((relation, str(target_node.get("name", target_node.get("key", target)))))
         return found
-
-
-class Py2neoGraphBackend:
-    """Neo4j 适配器；延迟导入 py2neo，不影响离线测试。"""
-
-    def __init__(self, uri: str, user: str, password: str) -> None:
-        try:
-            from py2neo import Graph  # type: ignore
-        except ImportError as exc:
-            raise RuntimeError("启用 Neo4j 后端需要安装可选依赖 py2neo") from exc
-        self.graph = Graph(uri, auth=(user, password))
-
-    def clear(self) -> None:
-        self.graph.run("MATCH (n) DETACH DELETE n")
-
-    def upsert_node(self, label: str, key: str, properties: dict[str, Any]) -> str:
-        node_id = f"{label}:{normalize_name(key)}"
-        props = dict(properties, _id=node_id, name=properties.get("name", key))
-        self.graph.run(f"MERGE (n:`{label}` {{_id: $id}}) SET n += $props", id=node_id, props=props)
-        return node_id
-
-    def merge_relation(self, source: str, relation: str, target: str, properties: dict[str, Any] | None = None) -> None:
-        safe_relation = re.sub(r"[^0-9A-Za-z_\u4e00-\u9fff]", "_", relation or "RELATION")
-        self.graph.run(
-            f"MATCH (a {{_id: $source}}), (b {{_id: $target}}) MERGE (a)-[r:`{safe_relation}`]->(b) SET r += $props",
-            source=source,
-            target=target,
-            props=properties or {},
-        )
 
 
 class KnowledgeGraphBuilder:

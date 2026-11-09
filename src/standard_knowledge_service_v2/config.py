@@ -81,6 +81,21 @@ class AuditSettings:
 
 
 @dataclass(frozen=True, slots=True)
+class KnowledgeSettings:
+    """知识图谱运行后端及持久化同步配置。"""
+
+    graph_backend: str = "memory"
+    neo4j_uri: str = "bolt://localhost:7687"
+    neo4j_user: str = "neo4j"
+    neo4j_password_env: str = "STANDARD_KNOWLEDGE_NEO4J_PASSWORD"
+    neo4j_database: str = "neo4j"
+    neo4j_connection_timeout_seconds: float = 5.0
+    batch_size: int = 500
+    fallback_to_memory: bool = True
+    sync_state_path: Path | None = None
+
+
+@dataclass(frozen=True, slots=True)
 class AppConfig:
     project_root: Path
     source_path: Path
@@ -90,6 +105,7 @@ class AppConfig:
     llm: LLMSettings
     consistency: ConsistencySettings
     audit: AuditSettings
+    knowledge: KnowledgeSettings
     advice_enabled: bool = True
 
 
@@ -174,6 +190,11 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
     if not isinstance(raw_consistency_weights, list) or len(raw_consistency_weights) != 4:
         raise ValueError("consistency.fallback_weights必须包含4个数值")
 
+    graph_backend = str(knowledge.get("graph_backend", "memory")).strip().lower()
+    supported_graph_backends = {"memory", "neo4j"}
+    if graph_backend not in supported_graph_backends:
+        raise ValueError("knowledge.graph_backend仅支持memory或neo4j")
+
     return AppConfig(
         project_root=root,
         source_path=source,
@@ -239,6 +260,26 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             retention_days=_positive_int(audit, "retention_days", 365),
             record_model_and_config_fingerprint=_boolean(
                 audit, "record_model_and_config_fingerprint", True
+            ),
+        ),
+        knowledge=KnowledgeSettings(
+            graph_backend=graph_backend,
+            neo4j_uri=str(knowledge.get("neo4j_uri", "bolt://localhost:7687")).strip(),
+            neo4j_user=str(knowledge.get("neo4j_user", "neo4j")).strip(),
+            neo4j_password_env=str(
+                knowledge.get("neo4j_password_env", "STANDARD_KNOWLEDGE_NEO4J_PASSWORD")
+            ).strip(),
+            neo4j_database=str(knowledge.get("neo4j_database", "neo4j")).strip(),
+            neo4j_connection_timeout_seconds=_number(
+                knowledge, "neo4j_connection_timeout_seconds", 5.0, minimum=0.1
+            ),
+            batch_size=_positive_int(knowledge, "batch_size", 500),
+            fallback_to_memory=_boolean(knowledge, "fallback_to_memory", True),
+            sync_state_path=_optional_path(
+                root,
+                knowledge.get(
+                    "sync_state_path", "artifacts/knowledge_graph/neo4j_sync_state.json"
+                ),
             ),
         ),
         advice_enabled=bool(_mapping(payload.get('llm_advice'), 'llm_advice').get('enabled', True)),

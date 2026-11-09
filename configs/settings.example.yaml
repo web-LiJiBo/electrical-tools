@@ -38,7 +38,6 @@ safety:
 retrieval:
   primary_backend: lunwen_entity_rule_pipeline
   embedding_model: "models/embedding/finetuned_sbert"
-  graph_backend: neo4j
   use_entity_linking: true
   entity_similarity_threshold: 0.3
   top_k_entities: 26
@@ -76,14 +75,19 @@ llm_decomposition:
 
 knowledge:
   standard_repository: json_postgresql
+  # 本节是图谱后端的唯一有效配置；Neo4j不可用时是否降级由fallback_to_memory控制。
   graph_backend: neo4j
-  offline_graph_backend: memory
   json_build_source: "datasets/lunwen/verified_json/json"
   build_summary: "artifacts/knowledge_graph/verified_build_summary.json"
   neo4j_uri: "bolt://localhost:7687"
   neo4j_user: "neo4j"
+  neo4j_database: "neo4j"
+  neo4j_connection_timeout_seconds: 5
   # 密码必须由环境变量或密钥服务注入，不能写入配置库。
   neo4j_password_env: "STANDARD_KNOWLEDGE_NEO4J_PASSWORD"
+  batch_size: 500
+  fallback_to_memory: true
+  sync_state_path: "artifacts/knowledge_graph/neo4j_sync_state.json"
   business_data_backend: adapter
 
 consistency:

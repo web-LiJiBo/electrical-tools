@@ -15,6 +15,13 @@ def create_app(config_path: str | Path):
         raise RuntimeError("启动HTTP API需要安装 fastapi 和 uvicorn") from exc
     application = build_application(config_path)
     app = FastAPI(title="标准知识服务工具", version="0.1.0")
+
+    @app.on_event("shutdown")
+    def close_graph_backend() -> None:
+        graph = getattr(application.facade, "knowledge_graph", None)
+        close = getattr(graph, "close", None)
+        if callable(close):
+            close()
     try:
         from fastapi.middleware.cors import CORSMiddleware
         app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
