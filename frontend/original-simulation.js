@@ -2,7 +2,8 @@
 (() => {
   let sessionId = '', submitted = '', lastResult = null, revision = 0;
   const sessions = new Map(), creating = new Map(), catalogs = new Map();
-  let validPreview = false, executing = false;
+  let validPreview = false, executing = false, stateRequest = 0;
+  const stateVersions = new Map();
   const api = () => document.getElementById('api').value;
   const scenario = () => document.getElementById('scenario').value || 'all_devices';
   const sessionKey = () => api();
@@ -47,12 +48,17 @@
   }
   function invalidate() {
     validPreview = false;
+    for (const [index] of (lastResult?.data?.simulation_batch?.items || []).entries()) {
+      const batchButton = document.getElementById('simulate-batch-' + index);
+      if (batchButton) batchButton.disabled = true;
+    }
     const button = document.getElementById('simulate-execute');
     if (button) button.disabled = true;
     const hint = document.getElementById('simulate-hint');
     if (hint && !executing) hint.textContent = '输入或状态已变化，请重新分析后再模拟下发。';
   }
   window.originalSimulation = {
+    invalidate,
     context: signature,
     async prepare(parameters) {
       invalidate();
@@ -83,7 +89,9 @@
         const snapshot = await request('/simulation/sessions/' + encodeURIComponent(identifier), undefined, base);
         if (current !== signature()) throw Error('场景或输入已变化，请重新分析。');
         const currentCondition = snapshot.scenario_conditions?.[name] || snapshot.condition;
-        if (currentCondition !== prepared.simulation_condition) {
+        const childChanged = name === 'all_devices' && Object.values(snapshot.scenario_conditions || {})
+          .some(condition => condition !== prepared.simulation_condition);
+        if (currentCondition !== prepared.simulation_condition || childChanged) {
           await request('/simulation/sessions/' + encodeURIComponent(identifier) + '/condition', {
             condition: prepared.simulation_condition, scenario_id: name
           }, base);
@@ -98,9 +106,9 @@
     oil_pump: '油泵', disconnector: '隔离开关', earthing_switch: '接地开关',
     tap_changer: '有载调压装置', inverter: '逆变器', pole_controller: '换流阀控制器'};
   loadDeviceState = async function () {
-    const current = revision, key = sessionKey(), base = api();
+    const current = revision, key = sessionKey(), base = api(), sequence = ++stateRequest;
     const panel = document.getElementById('device-state');
-    const isCurrent = () => current === revision && key === sessionKey();
+    const isCurrent = () => current === revision && key === sessionKey() && sequence === stateRequest;
     if (!document.getElementById('simulation-mode').checked) {
       panel.textContent = '模拟模式未开启，当前查询不使用模拟设备状态。';
       return;
@@ -116,6 +124,11 @@
       }
       const snapshot = await request('/simulation/sessions/' + encodeURIComponent(identifier), undefined, base);
       if (!isCurrent()) return;
+      const versionKey = JSON.stringify([base, identifier]);
+      if (Number.isInteger(snapshot.version)) {
+        if (snapshot.version < (stateVersions.get(versionKey) ?? -1)) return;
+        stateVersions.set(versionKey, snapshot.version);
+      }
       sessionId = identifier;
       const available = await catalog(base);
       if (!isCurrent()) return;
@@ -129,26 +142,109 @@
       if (isCurrent()) panel.textContent = '无法读取模拟状态：' + error.message;
     }
   };
-  function feedbackHtml(execution) {
-    const names = {succeeded: '模拟下发完成', blocked: '模拟下发被阻止', failed: '模拟下发失败'};
+  function feedbackHtml(execution, id = 'simulation-result') {
+    const names = {succeeded: '模拟下发完成', blocked: '模拟下发被阻止', failed: '模拟下发失败', unknown: '执行结果未确认'};
     const before = execution.before?.devices?.find(d => d.device_id === execution.target);
     const after = execution.after?.devices?.find(d => d.device_id === execution.target);
-    return `<div id="simulation-result" class="section"><h3>${esc(names[execution.status] || '模拟请求未完成')}</h3><p>${esc(execution.explanation || '')}</p>${before && after ? `<dl class="kv"><dt>执行前状态</dt><dd><code>${esc(JSON.stringify(before.state))}</code></dd><dt>执行后状态</dt><dd><code>${esc(JSON.stringify(after.state))}</code></dd><dt>模拟反馈</dt><dd>${esc(execution.feedback?.explanation || '无')}</dd></dl>` : ''}</div>`;
+    return `<div id="${id}" class="section"><h3>${esc(names[execution.status] || '模拟请求未完成')}</h3><p>${esc(execution.explanation || '')}</p>${before && after ? `<dl class="kv"><dt>执行前状态</dt><dd><code>${esc(JSON.stringify(before.state))}</code></dd><dt>执行后状态</dt><dd><code>${esc(JSON.stringify(after.state))}</code></dd><dt>模拟反馈</dt><dd>${esc(execution.feedback?.explanation || '无')}</dd></dl>` : ''}</div>`;
   }
   const originalRender = render;
+  const usable = p => p?.status === 'generated' && p.simulation_execution_allowed === true
+    && p.command_id && Number.isInteger(p.expected_version);
+  function batchProgress(data) {
+    const rows = data.simulation_batch.items;
+    const done = rows.filter(row => row.execution?.status === 'succeeded').length;
+    const pending = rows.filter(row => !row.execution && usable(row.preview)).length;
+    const deviceCount = new Set(rows.map(row => row.device_id)).size;
+    return `共${deviceCount}台设备、${rows.length}条指令：${done}条模拟下发完成，${pending}条待逐条确认，其余请查看各条反馈。`
+      + (data.simulation_batch.execution_unknown ? '存在结果未确认的请求，请查询设备状态并重新分析。' : '未点击的指令不会自动执行。');
+  }
+  function renderBatch(data) {
+    const rows = data.simulation_batch.items;
+    document.getElementById('output').innerHTML = `<div class="answer-box"><div class="answer-label">多指令预览 · 逐条确认</div><p class="answer">${esc(batchProgress(data))}</p></div>`
+      + rows.map((row, index) => {
+        const preview = row.preview, candidate = preview?.candidate;
+        const state = row.execution ? {succeeded: '已执行', blocked: '执行被阻止', failed: '执行失败', unknown: '执行结果未确认'}[row.execution.status]
+          : usable(preview) ? '待确认' : '已阻断';
+        return `<section class="rule" style="margin:16px 0;padding:18px;border:1px solid #dbe4e1;border-radius:6px"><h3>${index + 1}. ${esc(row.display_name)} · ${esc(state || '请核对反馈')}</h3><p><code>${esc(row.device_id)}</code> · ${esc(row.protocol)} · ${esc(row.action_name || row.action || '无匹配动作')}</p>`
+          + (row.source_query ? `<p class="hint">对应请求：${esc(row.source_query)}</p>` : '')
+          + `<p>${esc(row.execution?.explanation || preview?.explanation || '请核对预览')}</p><p>动作参数：${Object.keys(row.parameters || {}).length ? esc(Object.values(row.parameters).map(value => String(value) + (row.parameter_unit || candidate?.payload?.unit || '')).join('、')) : '无需额外参数'}</p>`
+          + `<details style="margin:12px 0"><summary>查看协议载荷与联锁校验</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">${esc(JSON.stringify({payload: candidate?.payload || {}, checks: candidate?.precondition_trace || []}, null, 2))}</pre></details>`
+          + `<button id="simulate-batch-${index}" class="primary">${executing ? '正在处理…' : '模拟下发本条'}</button><p class="hint">${esc(row.execution ? '本条已处理；再次操作请重新分析。' : row.preview_notice || '仅此按钮执行本条模拟指令；不会自动执行其他设备。')}</p>`
+          + (row.execution ? feedbackHtml(row.execution, 'simulation-result-' + index) : '') + '</section>';
+      }).join('');
+    rows.forEach((row, index) => {
+      const button = document.getElementById('simulate-batch-' + index);
+      button.disabled = !validPreview || executing || Boolean(row.execution) || !usable(row.preview);
+      button.onclick = async () => {
+        if (button.disabled || executing || !validPreview || signature() !== submitted || result !== lastResult) return;
+        const currentResult = result, current = signature(), base = api(), preview = row.preview;
+        executing = true;
+        document.getElementById('run').disabled = true;
+        render();
+        try {
+          row.execution = await request('/simulation/sessions/' + encodeURIComponent(data.simulation_session_id) + '/execute',
+            {command_id: preview.command_id, expected_version: preview.expected_version}, base);
+          // Successful or blocked commands are immutable. Only pending items get
+          // a NEW preview against current state, never an automatic execution.
+          if (result === currentResult && signature() === current) {
+            for (const pending of rows.filter(item => !item.execution && usable(item.preview))) {
+              try {
+                pending.preview = await request('/simulation/sessions/' + encodeURIComponent(data.simulation_session_id) + '/preview',
+                  {device_id: pending.device_id, action: pending.action, parameters: pending.parameters}, base);
+                pending.preview_notice = '已按最新设备状态重新校验，请再次核对后下发本条。';
+              } catch (error) {
+                pending.preview = {status: 'blocked', explanation: '重新校验未完成：' + error.message};
+              }
+            }
+            await loadDeviceState();
+          }
+        } catch (error) {
+          row.execution = {status: 'unknown', explanation: '请求结果未确认，请查询设备状态：' + error.message};
+          data.simulation_batch.execution_unknown = true;
+          validPreview = false;
+        } finally {
+          data.answer = {...data.answer, text: batchProgress(data)};
+          executing = false;
+          document.getElementById('run').disabled = false;
+          if (result === currentResult) render();
+        }
+      };
+    });
+  }
   render = function () {
     if (result !== lastResult) {
       lastResult = result;
-      validPreview = Boolean(selectedPreview()) && signature() === submitted;
+      validPreview = (Boolean(selectedPreview()) || result?.data?.simulation_batch?.items?.some(row => usable(row.preview)))
+        && signature() === submitted;
     }
     if (result?.data?.simulation_preview && result.data.answer?.text) {
       result.data.answer.text = result.data.answer.text.replace('模拟工作台', '“操作建议”');
     }
     originalRender();
     const data = result?.data;
+    if (data?.simulation_batch) {
+      const rows = data.simulation_batch.items;
+      const blocked = rows.some(row => !usable(row.preview));
+      const status = data.simulation_batch.execution_unknown ? '执行结果未确认'
+        : rows.every(row => row.execution?.status === 'succeeded') ? '模拟下发完成'
+        : rows.some(row => row.execution) ? '部分指令已处理'
+        : rows.every(row => !usable(row.preview)) ? '指令均被阻止'
+        : blocked ? '部分指令可用' : '指令已生成';
+      document.getElementById('status').textContent = status;
+      document.getElementById('status').className = 'status ' + (blocked || data.simulation_batch.execution_unknown ? 'warn' : 'ok');
+    }
+    if (data?.simulation_execution?.status === 'unknown') {
+      document.getElementById('status').textContent = '执行结果未确认';
+      document.getElementById('status').className = 'status warn';
+    }
+    if (tab === 'instruction' && data?.simulation_batch) {
+      renderBatch(data);
+      return;
+    }
     if (tab !== 'instruction' || !data?.simulation_preview) return;
     const preview = selectedPreview();
-    const scope = document.querySelector('#output .kv dd:last-child');
+    const scope = document.querySelector('#output > .kv dd:last-child');
     if (scope) scope.textContent = data.simulation_execution ? '模拟执行结果；真实设备下发关闭' : '仅预览；尚未模拟下发';
     document.getElementById('output').insertAdjacentHTML('beforeend',
       `<div class="section"><button id="simulate-execute" class="primary" ${!preview || !validPreview || executing || data.simulation_execution ? 'disabled' : ''}>${executing ? '正在模拟下发…' : '模拟下发'}</button><p id="simulate-hint" class="hint">${data.simulation_execution ? '本条指令已处理，再次操作请重新分析。' : validPreview ? '仅点击此按钮才更新当前模拟设备状态。' : '请重新分析，获取当前输入和状态对应的有效预览。'}</p></div>`
@@ -168,7 +264,8 @@
         data.answer = {...data.answer, text: (execution.status === 'succeeded' ? '模拟下发已完成。' : '模拟下发未完成。') + execution.explanation};
         await loadDeviceState();
       } catch (error) {
-        data.simulation_execution = {status: 'failed', explanation: '请求未确认，请查询当前状态：' + error.message};
+        data.simulation_execution = {status: 'unknown', explanation: '执行结果未确认，请查询当前状态并重新分析：' + error.message};
+        data.answer = {...data.answer, text: data.simulation_execution.explanation};
       } finally {
         executing = false;
         document.getElementById('run').disabled = false;

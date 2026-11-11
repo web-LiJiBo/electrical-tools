@@ -18,7 +18,11 @@ FIELD_NAMES = {'running': '运行中', 'position': '分合位置', 'operating_st
 
 
 def _targets(query, parameters, devices, profile, *, entity_names=()):
-    named = re.findall(r'(?:模拟)?(?:主变(?:压器)?|变压器|(?:冷却)?风机|断路器|隔离开关|接地开关|(?:有载)?调压装置)\s*\d+', query)
+    # Distribute a shared accessory over explicitly coordinated owners.
+    query = re.sub(r'(主变\s*\d+)\s*(?:和|与|及|、)\s*(主变\s*\d+)的(冷却风机|油泵|调压装置)',
+                   lambda m: m.group(0) if re.sub(r'\s+', '', m[1]) == re.sub(r'\s+', '', m[2])
+                   else f'{m[1]}的{m[3]}和{m[2]}的{m[3]}', query)
+    named = re.findall(r'(?:模拟)?(?:主变(?:压器)?|变压器|(?:冷却)?风机|油泵|断路器|隔离开关|接地开关|(?:有载)?调压装置)\s*\d+', query)
     known_names = {re.sub(r'\s+', '', alias).casefold() for device in devices
                    for alias in [device.get('display_name', ''), *device.get('aliases', [])] if alias}
     unknown_names = [name for name in named if re.sub(r'\s+', '', name).casefold() not in known_names]
@@ -34,21 +38,19 @@ def _targets(query, parameters, devices, profile, *, entity_names=()):
     # Business parameters and natural-language targets are independent claims.
     # Resolve both and keep their union so a conflict can never silently select
     # the parameter target over the user's sentence.
-    if not query_targets:
-        full_names = [(device['device_id'], match.span()) for device in devices
-                      if device.get('display_name')
-                      for match in re.finditer(re.escape(device['display_name']) + r'(?!\d)', query)]
-        for device in devices:
-            aliases = [device.get('display_name', ''), *device.get('aliases', [])]
-            # A short alias inside another device's full name does not name a second
-            # device. Separate mentions outside that name still resolve normally.
-            if any(not any(owner != device['device_id'] and start <= match.start() and match.end() <= end
-                           for owner, (start, end) in full_names)
-                   for alias in aliases if alias
-                   for match in re.finditer(re.escape(alias) + r'(?!\d)', query)):
-                selected.append(device['device_id'])
-    # Only a local possessive phrase names an associated device. A role word
-    # elsewhere in a parallel question must not replace the transformer.
+    full_names = [(device['device_id'], match.span()) for device in devices
+                  if device.get('display_name')
+                  for match in re.finditer(re.escape(device['display_name']) + r'(?!\d)', query)]
+    for device in devices:
+        aliases = [device.get('display_name', ''), *device.get('aliases', [])]
+        # Resolve every explicit name, including mixed ID/name requests.
+        if any(not any(owner != device['device_id'] and start <= match.start() and match.end() <= end
+                       for owner, (start, end) in full_names)
+               for alias in aliases if alias
+               for match in re.finditer(re.escape(alias) + r'(?!\d)', query)):
+            selected.append(device['device_id'])
+    # Resolve ownership per mention, not per device: in "主变1和主变1的风机"
+    # the first mention is an independent comparison target.
     role_terms = {'cooling_fan': r'(?:冷却)?风机|冷却风扇', 'oil_pump': r'油泵',
                   'breaker': r'断路器', 'disconnector': r'隔离开关',
                   'earthing_switch': r'接地开关', 'tap_changer': r'调压|档位'}
@@ -58,12 +60,25 @@ def _targets(query, parameters, devices, profile, *, entity_names=()):
         if transformer in selected:
             owner = next((d for d in devices if d['device_id'] == transformer), {})
             aliases = [transformer, owner.get('display_name', ''), *owner.get('aliases', [])]
-            roles = [role for role, pattern in role_terms.items()
-                     if any(re.search(re.escape(alias) + r'(?!\d)\s*(?:的)?\s*(?:' + pattern + ')', query)
-                            for alias in aliases if alias)]
+            roles, independent = set(), False
+            for alias in aliases:
+                if not alias:
+                    continue
+                for match in re.finditer(re.escape(alias) + r'(?!\d)', query):
+                    if any(other != transformer and start <= match.start() and match.end() <= end
+                           for other, (start, end) in full_names):
+                        continue
+                    tail = query[match.end():]
+                    possessive = {role for role, pattern in role_terms.items()
+                                  if re.match(r'\s*(?:的)?\s*(?:' + pattern + ')', tail)}
+                    coordinated = {role for role, pattern in role_terms.items()
+                                   if re.match(r'\s*(?:以及|和|与|及|、)\s*(?:其|它的)\s*(?:' + pattern + ')', tail)}
+                    roles.update(possessive | coordinated)
+                    independent |= not possessive
             if roles:
-                selected = [v for v in selected if v != transformer]
-                selected.extend(group[role] for role in roles if group.get(role))
+                if not independent:
+                    selected = [v for v in selected if v != transformer]
+                selected.extend(group[role] for role in role_terms if role in roles and group.get(role))
     if not selected:
         if named:
             return list(dict.fromkeys(named))
@@ -125,6 +140,10 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     # Read aliases/capabilities from the catalog, not from a model's invented IDs.
     devices = [{**deepcopy(runtime.catalog.devices[d['device_id']]), **d} for d in devices]
     names = [e['name'] for e in decomposed.entities if isinstance(e, dict) and isinstance(e.get('name'), str)] if decomposed else []
+    from .mixed_operation_preview import answer_mixed_operations
+    mixed = answer_mixed_operations(pipeline, request, snapshot, devices, decomposed, intent)
+    if mixed is not None:
+        return mixed
     ids = _targets(query, request.parameters, devices, profile, entity_names=names)
     by_id = {d['device_id']: d for d in devices}
     unknown = [key for key in ids if key not in by_id]
@@ -150,8 +169,21 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
         r'禁止|不应|不得|不要|不执行|不启动|不停止|取消|如何|怎么|为什么|能否|是否|可以|能不能|吗', query)
     if operation and not capability and authorized:
         if len(selected) != 1:
-            base['answer'] = {'text': '当前涉及多台设备，请指定唯一的模拟操作目标；已列出相关设备状态。'}
-            return 'uncertain', base, [], []
+            from .multi_device_preview import batch_restriction, build_batch
+            reason = batch_restriction(query, request.parameters, selected)
+            supplied = request.parameters.get('device_ids')
+            if supplied:
+                stated = _targets(query, {}, devices, profile)
+                if stated and set(stated) != set(supplied):
+                    reason = '业务参数的设备列表与正文目标不一致，请核对目标。'
+            if reason:
+                base['answer'] = {'text': reason}
+                return 'uncertain', base, [], []
+            batch = build_batch(runtime, snapshot, selected, request, decomposed, model_actions, _action)
+            base['simulation_batch'] = batch
+            base['answer'] = {'text': f"已识别{len(selected)}台设备：{batch['generated_count']}条模拟指令可预览，"
+                f"{batch['blocked_count']}条被阻止。请在“操作建议”中逐台核对并模拟下发；尚未执行。"}
+            return ('generated' if batch['generated_count'] else 'uncertain'), base, [], []
         device = selected[0]
         available = runtime.catalog.devices[device['device_id']]['actions']
         understood = [a for a in model_actions if a in available]
@@ -160,7 +192,7 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
         if text_action and action != text_action:
             base['answer'] = {'text': '问题中的动作与理解结果或业务参数不一致，未生成预览，请明确所需操作。'}
             return 'uncertain', base, [], []
-        if not action:
+        if not isinstance(action, str) or not action or action not in available:
             base['answer'] = {'text': '该设备未配置所请求的操作，请查看其通用模板中的可用动作。'}
             return 'uncertain', base, [], []
         parameters = request.parameters.get('action_parameters', {})

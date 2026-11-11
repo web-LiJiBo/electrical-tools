@@ -64,6 +64,17 @@ class SimulationRuntime:
         self._lock = RLock()
         self._event_path = Path(event_path) if event_path is not None else None
 
+    def refresh_catalog(self, catalog):
+        """Publish new templates without resetting shared live device state."""
+        with self._lock:
+            service = catalog.make_service()
+            for session in self._sessions.values():
+                profiles = {key: deepcopy(catalog.devices[key]) for key in session.profiles}
+                if profiles != session.profiles:
+                    session.profiles = profiles
+                    session.version += 1  # Pending commands must be previewed again.
+            self.catalog, self._service = catalog, service
+
     def create_session(self, scenario_id='substation_maintenance', device_ids=None, condition='normal'):
         with self._lock:
             if scenario_id is not None and (not isinstance(scenario_id, str) or scenario_id not in self.catalog.scenarios):

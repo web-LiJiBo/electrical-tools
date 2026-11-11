@@ -17,8 +17,12 @@ PARAMETER_ALIASES = {
 def _hypothetical_values(request, decomposed):
     """Extract only explicit user-supplied values, never snapshot defaults."""
     result = {}
+    modes = set()
     supplied = request.parameters.get("hypothetical_facts", {})
     if isinstance(supplied, dict):
+        mode = supplied.get('cooling_mode', supplied.get('冷却方式'))
+        if mode is not None:
+            modes.add(str(mode).strip().upper())
         for field, aliases in PARAMETER_ALIASES.items():
             value = supplied.get(field)
             if value is None:
@@ -29,6 +33,9 @@ def _hypothetical_values(request, decomposed):
         if not isinstance(item, dict) or str(item.get("operator", "")).strip() not in ("=", "=="):
             continue
         name = re.sub(r"\s+", "", str(item.get("parameter", "")))
+        if name in ('cooling_mode', '冷却方式', '冷却模式'):
+            modes.add(str(item.get('value', '')).strip().upper())
+            continue
         field = next((key for key, aliases in PARAMETER_ALIASES.items()
                       if name == key or any(alias in name or name in alias for alias in aliases)), None)
         try:
@@ -37,6 +44,11 @@ def _hypothetical_values(request, decomposed):
             continue
         if field and math.isfinite(value) and value >= 0:
             result[field] = value
+    # Keep explicit applicability conditions even when the model omits them.
+    modes.update(re.findall(r'(?<![A-Za-z])(ON|OF|OD)\s*冷却', request.query, re.I))
+    modes = {mode.upper() for mode in modes}
+    if modes:
+        result['cooling_mode'] = next(iter(modes)) if len(modes) == 1 else 'conflicting'
     return result
 
 
@@ -152,8 +164,13 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, deco
         current_checks = _checks(facts, fields, limits)
         current_normal = all(check["passed"] for check in current_checks)
         hypothetical = _hypothetical_values(request, decomposed)
-        hypothetical_checks = _checks(hypothetical, fields, limits)
-        if hypothetical_checks:
+        hypothesis_mode = hypothetical.get('cooling_mode', mode)
+        has_hypothesis = bool(hypothetical)
+        hypothesis_limits = [float(values[0][1]), float(values[1][1]),
+                             float(values[2][2 if hypothesis_mode == 'OD' else 1])]
+        hypothetical_checks = (_checks(hypothetical, fields, hypothesis_limits)
+                               if hypothesis_mode in ('ON', 'OF', 'OD') else [])
+        if has_hypothesis:
             if any(not check["passed"] for check in hypothetical_checks):
                 status = "abnormal"
             elif len(hypothetical_checks) == len(fields):
@@ -171,18 +188,21 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, deco
             rule=hit.rule.content, checks=active_checks,
             current_snapshot_assessment={"status": "normal" if current_normal else "abnormal",
                                          "runtime_facts": facts, "checks": current_checks})
-        if hypothetical_checks:
+        if has_hypothesis:
             data["device_assessment"]["hypothetical_assessment"] = {
                 "status": status, "provided_facts": hypothetical, "checks": hypothetical_checks,
+                "cooling_mode": hypothesis_mode,
                 "complete": len(hypothetical_checks) == len(fields)}
         data["selected_rule"]={"rule_id":hit.rule.rule_id,"content":hit.rule.content}
         data["real_clause_evidence"]=provenance
         data["semantic"]=asdict(pipeline.extractor.extract_rule(hit.rule,unit))
         data["consistency"]=pipeline.consistency.compare(expanded,hit.rule.content).to_dict()
-        if hypothetical_checks:
+        if has_hypothesis:
             hypothesis_text = ("用户假设值中存在越限。" if status == "abnormal" else
                 "用户假设值均未越限。" if status == "normal" else
                 "用户假设值未越限，但提供的参数不完整，不能判定整体正常。")
+            if hypothesis_mode not in ('ON', 'OF', 'OD'):
+                hypothesis_text = '用户假设的冷却方式不明确或存在冲突，无法比对假设工况。'
             data["answer"]["text"] = (hypothesis_text + "该结论仅针对用户假设工况；"
                 + ("当前模拟快照另行比对为未越限。" if current_normal else "当前模拟快照另行比对为存在越限。"))
         else:
