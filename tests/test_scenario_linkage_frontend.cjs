@@ -341,3 +341,11 @@ test('indeterminate hypothesis is shown separately from a proven violation', asy
  assert.match(html,/无法确定/); assert.match(html,/假设/);
  assert.doesNotMatch(html,/· 越限/);
 });
+
+test('operation review status and its reason are visible in processing details', async () => {
+ const app=fixture({fullPage:true}); await flush();
+ app.context.reviewData={processing:{source_result_status:'uncertain',decomposition_source:'model_api',advice_status:'not_requested',instruction_status:'blocked',instruction_reason:'待澄清'},operation_review:{status:'blocked',reason:'原文启动与停止不一致'}};
+ const html=vm.runInContext('processingDetail(reviewData)',app.context);
+ assert.match(html,/操作语义复核/); assert.match(html,/未通过/);
+ assert.match(html,/原文启动与停止不一致/);
+});

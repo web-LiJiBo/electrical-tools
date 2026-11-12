@@ -32,7 +32,7 @@ def catalog_context(pipeline, request):
             for device_id in ids for device in [catalog.devices[device_id]]], 'ownership': ownership}
 
 
-def _mentions(text, devices):
+def _mention_spans(text, devices):
     """Match catalog identities with whitespace normalized, keeping full names."""
     text = _compact(text)
     matches = []
@@ -42,13 +42,55 @@ def _mentions(text, devices):
             if alias:
                 for match in re.finditer(re.escape(_compact(alias)) + r'(?!\d)', text):
                     matches.append((device, match.start(), match.end()))
-    return {device['device_id'] for device, start, end in matches
+    return {(device['device_id'], start, end) for device, start, end in matches
             if not any(other['device_id'] != device['device_id'] and left <= start and end <= right
                        and right - left > end - start for other, left, right in matches)}
 
 
+def _mentions(text, devices):
+    return {key for key, _, _ in _mention_spans(text, devices)}
+
+
 _ROLES = {'cooling_fan': r'风机|风扇', 'oil_pump': r'油泵', 'tap_changer': r'调压|档位',
           'breaker': r'断路器', 'disconnector': r'隔离开关', 'earthing_switch': r'接地开关'}
+
+
+def _explicit_targets(query, devices, profile):
+    """Check explicit identities per occurrence without choosing model targets."""
+    text = _compact(query)
+    spans = sorted(_mention_spans(query, devices), key=lambda span: span[1:])
+    owners = {device['device_id'] for device in devices if device['device_type'] == 'transformer'}
+    groups = profile.get('groups', {})
+    groups = list(groups.values()) if isinstance(groups, dict) else groups
+    roles = {**_ROLES, 'cooling_fan': r'(?:冷却)?(?:风机|风扇)',
+             'tap_changer': r'(?:有载)?调压装置'}
+    required = set()
+    for key, start, end in spans:
+        if key not in owners:
+            required.add(key)
+            continue
+        # Coordinated owners can share the accessory suffix. Follow only
+        # consecutive, explicitly named catalog owners joined by conjunctions.
+        suffix, coordinated_owners = end, {key}
+        for other, left, right in spans:
+            if left < suffix:
+                continue
+            if (other in owners and other not in coordinated_owners
+                    and re.fullmatch(r'和|与|及|、|以及', text[suffix:left])):
+                suffix = right
+                coordinated_owners.add(other)
+            else:
+                break
+        possessive = {role for role, pattern in roles.items()
+            if re.match(r'的?(?:(?:那|这|该)台|各自的?|分别的?)?(?:' + pattern + ')', text[suffix:])}
+        coordinated = {role for role, pattern in roles.items()
+            if re.match(r'(?:以及|和|与|及|、)(?:其|它的)(?:' + pattern + ')', text[end:])}
+        if not possessive:
+            required.add(key)
+        for group in groups:
+            if group.get('transformer') == key:
+                required.update(group[role] for role in possessive | coordinated if group.get(role))
+    return required
 
 
 def _shared_suffix_target(target, source, owner, devices):
@@ -124,7 +166,12 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
                         contextual = {key}
                     if contextual:
                         break
-        if not (referenced and (previous == key and item.get('parameters') or contextual == {key})):
+        preceding = {previous} if isinstance(previous, str) else previous
+        # A current-sentence reference takes precedence over older messages.
+        # More than one preceding target remains ambiguous, even when history
+        # happens to mention the model's selected device.
+        resolved = preceding == {key} if preceding is not None else contextual == {key}
+        if not (referenced and resolved):
             return '', '设备编号缺少唯一的原文或归属依据，请提供完整目标。'
     return key, ''
 
@@ -138,19 +185,15 @@ def clarification(base, reason):
 def plan_coverage(understanding, query, devices, profile):
     """Cross-check explicit catalog claims and original source coverage."""
     rows = [*understanding.operations, *understanding.queries]
-    covered = {row.get(field, '').upper() for row in rows for field in ('device_id', 'owner_id')}
-    groups = profile.get('groups', {})
-    for group in groups.values() if isinstance(groups, dict) else groups:
-        for row in rows:
-            if row.get('device_id') in [value for role, value in group.items() if role != 'transformer']:
-                if group.get('transformer') in _mentions(row.get('target_text', ''), devices):
-                    covered.add(group['transformer'])
+    covered = {row.get('device_id', '').upper() for row in rows}
     known = {_compact(alias) for device in devices for alias in
         [device['device_id'], device.get('display_name', ''), *device.get('aliases', [])] if alias}
     explicit = re.findall(r'SIM-[A-Z0-9-]+|(?:主变(?:压器)?|变压器|冷却风机|风机|油泵|断路器|隔离开关|接地开关|调压装置)\s*\d+', query, re.I)
     if any(_compact(value) not in known for value in explicit):
         return '正文包含当前场景未登记的设备名称或编号，请核对。'
-    if _mentions(query, devices) - covered:
+    # Resolve ownership per occurrence: the owner in "主变1的风机" is
+    # descriptive, while "主变1和主变1的风机" asks about two targets.
+    if _explicit_targets(query, devices, profile) - covered:
         return '语义清单未覆盖正文中的全部明确设备，请补充或核对目标。'
     summary = set(understanding.actions) - {'inspect'}
     planned = {row['action'] for row in understanding.operations}
@@ -173,12 +216,23 @@ def plan_coverage(understanding, query, devices, profile):
 
 def factual_plan_queries(understanding, request, snapshot, devices, profile):
     results = []
-    for item in understanding.queries:
-        if item['query_kind'] not in ('device_status', 'device_capability'):
-            continue
-        key, reason = bind_target(item, request.query, devices, profile, conversation_context=request.conversation_context)
+    # Bind in textual order so a query may refer to an earlier operation or
+    # query. Targets coordinated in one source remain a set, never last-wins.
+    rows = [*understanding.operations, *understanding.queries]
+    rows = [item for item in rows if 'action' in item or item['query_kind'] in ('device_status', 'device_capability')]
+    rows.sort(key=lambda item: _compact(request.query).find(_compact(item['source_text'])))
+    source, group, previous = None, set(), None
+    for item in rows:
+        if item['source_text'] != source:
+            previous = group or previous
+            source, group = item['source_text'], set()
+        key, reason = bind_target(item, request.query, devices, profile, previous=group or previous,
+                                  conversation_context=request.conversation_context)
         if reason:
             return [], reason
+        group.add(key)
+        if 'action' in item:
+            continue
         device = next(device for device in devices if device['device_id'] == key)
         fields = ('device_id', 'display_name', 'device_type', 'state', 'runtime_facts')
         entry = {name: deepcopy(device.get(name)) for name in fields}
@@ -197,7 +251,7 @@ def operation_previews(pipeline, request, snapshot, devices, profile, understand
         return clarification(base, '未识别到明确操作，请说明设备和所需动作。')
     reason = action_request_restriction(request.query)
     if not reason and (understanding.scenario.get('operating_condition')
-            or re.search(r'假如|假设|仅在|前提|一旦|除非|否则|直到|先|然后|随后|再|依次|顺序|逐个', request.query)):
+            or re.search(r'假如|假设|仅在|前提|一旦|除非|否则|直到', request.query)):
         reason = '请求带有执行条件或顺序要求，当前不能编排，请拆分后逐步核对。'
     if reason:
         return clarification(base, reason)

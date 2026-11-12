@@ -109,45 +109,75 @@ class AnalysisPipeline:
             }, [], ['问题理解模型未完成；未使用本地规则生成操作'])
         return self._analyze_decomposed(request, decomposed)
 
-    def _analyze_decomposed(self, request, decomposed):
-        """Consume request-local understanding without another decomposition call."""
+    def _question_response(self, request, decomposed, questions, review_context=None):
+        from copy import deepcopy
+        scoped = deepcopy(decomposed)
+        scoped.operations, scoped.queries, scoped.actions = [], questions, []
+        scoped.intent = 'search'
+        scoped.scenario['query_kind'] = 'standard_query' if any(item['query_kind'] == 'standard_query' for item in questions) else 'assessment'
+        scoped.entities = [{'name': item['device_id'], 'type': '设备'} for item in questions if item['device_id']]
+        parameters = {key: deepcopy(value) for key, value in request.parameters.items()
+                      if key not in ('device_id', 'device_ids', 'action', 'action_parameters')}
+        subrequest = AnalysisRequest('\n'.join(item['source_text'] for item in questions),
+            scenario_hint=request.scenario_hint, parameters=parameters,
+            target_protocol=request.target_protocol, conversation_context=deepcopy(request.conversation_context))
+        return self._analyze_decomposed(subrequest, scoped, review_context=review_context, process_questions=False)
+
+    def _analyze_decomposed(self, request, decomposed, *, review_context=None, process_questions=True):
+        """Keep review state request-local; no preview exists before approval."""
+        from .operation_review import review_packet, review_operations
+        from .semantic_operations import catalog_context
+        def respond(*args):
+            return self._respond(*args, review_context=review_context)
         kind = decomposed.scenario.get('query_kind')
         intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
+        if not process_questions:
+            from ..decomposition.intent_classifier import IntentClassification
+            intent = IntentClassification('compliance' if kind == 'assessment' else 'search',
+                intent.confidence, (*intent.reasons, '知识子请求只做分析，不生成原操作候选'), intent.model_intent)
         decomposed.intent = intent.intent
+        questions = [item for item in (decomposed.queries or []) if item['query_kind'] in ('standard_query', 'assessment')]
+        factual = [item for item in (decomposed.queries or []) if item['query_kind'] in ('device_status', 'device_capability')]
+        needs_review = bool(decomposed.operations) and request.parameters.get('simulation_mode') is True
+        context = review_packet(request.query, decomposed, catalog_context(self, request), request.conversation_context) if needs_review else None
+        knowledge = None
+        if process_questions and questions and (decomposed.operations or factual):
+            knowledge = self._question_response(request, decomposed, questions, context)
+        review = knowledge.data.get('operation_review') if knowledge is not None else None
+        if needs_review:
+            if review is None:
+                review = review_operations(self.decomposer, context)
+            if review.get('status') != 'approved':
+                reason = review.get('reason') or '操作语义复核未通过，请明确目标和动作后重试。'
+                data = {'simulation_factual': True, 'decomposition': decomposed.to_dict(),
+                    'operation_review': review, 'candidate_instruction': None,
+                    'clarification_required': True, 'clarification_questions': [reason],
+                    'answer': {'text': reason}, 'control_block_reason': reason, 'devices': []}
+                if knowledge is not None:
+                    data['query_results'] = [{'query_kind': 'knowledge', 'status': knowledge.status, 'data': knowledge.data, 'evidence': knowledge.evidence}]
+                return respond(request, 'partial' if review.get('status') == 'failed' else 'uncertain', data, [], [])
         from .simulation_query import answer_simulation_query
         simulation_answer = answer_simulation_query(self, request, decomposed=decomposed, intent=intent)
         if simulation_answer is not None:
             status, data, evidence, warnings = simulation_answer
             data.setdefault('decomposition', decomposed.to_dict())
             data.setdefault('intent_classification', intent.to_dict())
-            if decomposed.operations and decomposed.queries:
-                from copy import deepcopy
-                questions = [item for item in decomposed.queries if item['query_kind'] in ('standard_query', 'assessment')]
-                if questions:
-                    # All knowledge questions share one retrieval/advice pass.
-                    # Keep its mutable advice data separate from operation IDs.
-                    scoped = deepcopy(decomposed)
-                    scoped.operations, scoped.queries, scoped.actions = [], questions, []
-                    scoped.intent = 'search'
-                    scoped.scenario['query_kind'] = 'standard_query' if any(item['query_kind'] == 'standard_query' for item in questions) else 'assessment'
-                    scoped.entities = [{'name': item['device_id'], 'type': '设备'} for item in questions if item['device_id']]
-                    parameters = {key: deepcopy(value) for key, value in request.parameters.items()
-                        if key not in ('device_id', 'device_ids', 'action', 'action_parameters')}
-                    subrequest = AnalysisRequest('\n'.join(item['source_text'] for item in questions),
-                        scenario_hint=request.scenario_hint, parameters=parameters,
-                        target_protocol=request.target_protocol, conversation_context=deepcopy(request.conversation_context))
-                    response = self._analyze_decomposed(subrequest, scoped)
-                    data.setdefault('query_results', []).append({'query_kind': scoped.scenario['query_kind'],
-                        'status': response.status, 'data': response.data, 'evidence': response.evidence})
-                    data['answer']['text'] += '\n' + response.data.get('answer', {}).get('text', '来源或条件不足，请查看条款查询结果。')
-                    evidence.extend(response.evidence)
-                    warnings.extend(response.warnings)
-            return self._respond(request, status, data, evidence, warnings)
+            if review is not None:
+                data['operation_review'] = review
+            if knowledge is not None:
+                data.setdefault('query_results', []).append({'query_kind': 'knowledge',
+                    'status': knowledge.status, 'data': knowledge.data, 'evidence': knowledge.evidence})
+                data['answer']['text'] += '\n' + knowledge.data.get('answer', {}).get('text', '来源或条件不足，请查看条款查询结果。')
+                evidence.extend(knowledge.evidence)
+                warnings.extend(knowledge.warnings)
+                if knowledge.status not in ('answered', 'generated'):
+                    status = 'partial'
+            return respond(request, status, data, evidence, warnings)
         if request.parameters.get("simulation_mode") is True:
             if kind == 'assessment' or self.simulation_session.is_status_question(request.query):
                 from .real_clause_assessment import assess_real_clause
                 status,data,evidence = assess_real_clause(self,request,decomposed=decomposed)
-                return self._respond(request,status,data,evidence,["阈值取自库内来源条款，不用预设测试阈值；缺少动作依据时禁止控制"])
+                return respond(request,status,data,evidence,["阈值取自库内来源条款，不用预设测试阈值；缺少动作依据时禁止控制"])
             # 明确控制请求也必须继续经过真实条款链路，不再走预设规则捷径。
         built = self.context_builder.build(decomposed, request.parameters, request.scenario_hint, request.meta.caller)
         settings = self.retrieval_settings
@@ -182,7 +212,7 @@ class AnalysisPipeline:
                             "returned_rules": trace.filtered_rules,
                             **trace.parameters} if trace else {})
         if not matched.rules:
-            return self._respond(request, "uncertain", {"decomposition": decomposed.to_dict(), "intent_classification": intent.to_dict(), "context": asdict(built.context), "missing_fields": [asdict(item) for item in built.missing_fields], "diagnostics": diagnostics, "retrieval_trace": retrieval_trace}, [], warnings + matched.warnings)
+            return respond(request, "uncertain", {"decomposition": decomposed.to_dict(), "intent_classification": intent.to_dict(), "context": asdict(built.context), "missing_fields": [asdict(item) for item in built.missing_fields], "diagnostics": diagnostics, "retrieval_trace": retrieval_trace}, [], warnings + matched.warnings)
         selected, assessments = self._select_rule(request, matched.rules, decomposed.actions if intent.intent == "instruction" else [], for_control=intent.intent == "instruction")
         if selected is None:
             data = {
@@ -193,10 +223,10 @@ class AnalysisPipeline:
                 "diagnostics": diagnostics,
             }
             reason = "未检索到与请求动作一致的标准条款" if intent.intent == "instruction" else "未检索到足够相关的标准条款"
-            return self._respond(request, "uncertain", data, [], warnings + [reason])
+            return respond(request, "uncertain", data, [], warnings + [reason])
         unit = self.retriever.repository.unit_for_rule(selected.rule.rule_id)
         if unit is None:
-            return self._respond(request, "uncertain", {"decomposition": decomposed.to_dict()}, [], warnings + ["规则未能回溯至条款"])
+            return respond(request, "uncertain", {"decomposition": decomposed.to_dict()}, [], warnings + ["规则未能回溯至条款"])
         semantic = self.extractor.extract_rule(selected.rule, unit)
         device_config = dict(request.parameters.get("device_config", {}))
         # 页面表单将设备基础信息与协议配置分开填写；协议适配器需要统一视图。
@@ -271,7 +301,7 @@ class AnalysisPipeline:
             "validation": summary.to_dict(),
             "report": report.to_dict(),
         }
-        return self._respond(request, summary.status.value, data, [asdict(item) for item in evidence], summary.warnings)
+        return respond(request, summary.status.value, data, [asdict(item) for item in evidence], summary.warnings)
 
     @staticmethod
     def _requested_version(request: AnalysisRequest, standard_refs: list[dict[str, str]]) -> str:
@@ -376,11 +406,11 @@ class AnalysisPipeline:
         selected = actionable[0][1] if actionable else (eligible[0][1] if eligible else None)
         return (selected, [item[2] for item in assessments])
 
-    def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str]) -> AnalysisResponse:
+    def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str], *, review_context=None) -> AnalysisResponse:
         source_result_status = status
         understanding_failed = data.get('model_understanding', {}).get('status') == 'failed'
         if self.advisor is not None and not data.get('simulation_factual') and not understanding_failed:
-            status = self.advisor.enrich(self, request, data) or status
+            status = (self.advisor.enrich(self, request, data, review_context=review_context) if review_context is not None else self.advisor.enrich(self, request, data)) or status
             if data.get('advice', {}).get('instruction'):
                 warnings.append('模型建议须核对依据；指令预览按设备模板与联锁校验，模拟下发仍需明确操作')
             # A structured "sources do not support this answer" decision must
@@ -403,6 +433,12 @@ class AnalysisPipeline:
         conversion = advice.get('conversion', {})
         if understanding_failed:
             instruction_status, instruction_reason = 'unavailable', data['control_block_reason']
+        elif data.get('operation_review', {}).get('status') in ('failed', 'blocked'):
+            review = data['operation_review']
+            instruction_status = 'unavailable' if review['status'] == 'failed' else 'blocked'
+            instruction_reason = review.get('reason') or '操作语义复核未通过'
+            if review['status'] == 'failed':
+                status = 'partial'
         elif batch.get('items'):
             instruction_status = 'generated' if batch.get('generated_count') else 'blocked'
             instruction_reason = f"多设备预览：{batch['generated_count']}条可用，{batch['blocked_count']}条阻断；须逐台确认模拟下发"

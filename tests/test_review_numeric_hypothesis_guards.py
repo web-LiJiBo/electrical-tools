@@ -17,6 +17,8 @@ def app_for(monkeypatch, **settings):
     app, params, before, calls = legacy_fixture_app(monkeypatch, **settings)
     original = app.decomposer.complete
     def complete(system, user):
+        if 'OPERATION_PLAN_REVIEW' in system:
+            return original(system, user)
         parsed = json.loads(original(system, user))
         source = user.split('用户问题：', 1)[1].split('\n请严格', 1)[0]
         kind = parsed['scenario']['query_kind']

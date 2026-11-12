@@ -16,7 +16,12 @@ def app_for(monkeypatch, *, intent='search', actions=None, constraints=None, que
         api_base='https://example.test', model='test-model', api_key_env='API_FIRST_TEST_UNUSED'
     ))
     calls = []
+    review_calls = []
     def complete(system, user):
+        if 'OPERATION_PLAN_REVIEW' in system:
+            from semantic_fixture_helpers import approve_review_packet
+            review_calls.append((system, user))
+            return json.dumps(approve_review_packet(json.loads(user)), ensure_ascii=False)
         calls.append(user)
         kind = query_kind or ('operation' if intent == 'instruction' else 'device_status')
         from semantic_fixture_helpers import add_semantic_plan
@@ -31,6 +36,7 @@ def app_for(monkeypatch, *, intent='search', actions=None, constraints=None, que
     snapshot = app.simulation_runtime.create_session('all_devices')
     parameters = {'simulation_mode':True,'simulation_session_id':snapshot['session_id'],
                   'simulation_scenario_id':'substation_maintenance'}
+    app._test_review_calls = review_calls
     return app, parameters, snapshot, calls
 
 

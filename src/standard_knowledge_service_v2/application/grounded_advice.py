@@ -57,7 +57,7 @@ class GroundedAdviceService:
     def __init__(self, client=None):
         self.client = client
 
-    def enrich(self, pipeline, request, data):
+    def enrich(self, pipeline, request, data, *, review_context=None):
         data['advice'] = {'status': 'unavailable', 'source': 'not_generated',
                           'summary': '', 'suggestions': [], 'instruction': None,
                           'reason_code': 'model_disabled',
@@ -108,18 +108,39 @@ class GroundedAdviceService:
                                'chapter_path': u.chapter_path, 'quote': r.content, 'source_text': u.metadata.get('source', {}).get('source_text', r.content), 'action': r.action,
                                'condition': r.condition, 'manual_review_required': u.metadata.get('audit', {}).get('manual_review_required', False)}
                               for rid, (u, r) in sources.items()]}
+        prompt = PROMPT
+        if review_context is not None:
+            from .operation_review import REVIEW_PROMPT
+            prompt += '\n' + REVIEW_PROMPT + '\n本次合并两项任务。操作复核只以operation_review_request为输入：其query才是完整用户原文，operations/queries/catalog/conversation_context也全部读取该嵌套对象；顶层query仅用于advice的条款分析，不能用条款子问题替代原请求核对操作。只输出JSON对象 {"operation_review":复核协议对象,"advice":上述建议协议对象}。原操作清单不可改写。advice.instruction必须为null，操作预览只能来自独立校验后的原始清单。'
+            packet['operation_review_request'] = review_context
+            data['operation_review'] = {'status': 'failed', 'reason': '操作语义复核尚未完成。', 'reason_code': 'not_completed'}
         try:
-            raw = self.client.complete(PROMPT, json.dumps(packet, ensure_ascii=False))
+            raw = self.client.complete(prompt, json.dumps(packet, ensure_ascii=False))
         except Exception as exc:
             # Do not echo provider responses, exception text or secrets to users/audits.
             code = model_error_code(exc)
             data['advice'].update(reason_code=code, error_code=code, notice=MESSAGES[code])
+            if review_context is not None:
+                data['operation_review'] = {'status': 'failed', 'reason': '操作语义复核未完成，请稍后重试。', 'reason_code': code}
             return None
         try:
-            advice = self._validate(extract_json_object(raw), sources, profile.get('actions') if device else None)
+            if review_context is not None:
+                from .operation_review import parse_review_json
+                parsed = parse_review_json(raw)
+            else:
+                parsed = extract_json_object(raw)
+            if review_context is not None:
+                from .operation_review import validate_review
+                data['operation_review'] = validate_review(parsed.get('operation_review'), review_context['operations'])
+                parsed = parsed['advice']
+                if parsed.get('instruction') is not None:
+                    raise ValueError('Combined review must not propose executable replacements')
+            advice = self._validate(parsed, sources, profile.get('actions') if device else None)
         except Exception:
             code = 'invalid_model_output'
             data['advice'].update(reason_code=code, error_code=code, notice=MESSAGES[code])
+            if review_context is not None:
+                data['operation_review'] = {'status': 'failed', 'reason': '操作语义复核未完成，请稍后重试。', 'reason_code': code}
             return None
         data['advice'] = {'status': 'generated' if advice['answer_supported'] else 'unsupported', 'source': 'llm', **advice,
                           'notice': '模型建议待人工复核；引用存在不代表语义或适用性已审定'}

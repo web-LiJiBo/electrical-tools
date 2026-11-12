@@ -117,14 +117,19 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
         return None
     query = request.query
     kind = decomposed.scenario.get('query_kind') if decomposed else None
+    semantic = decomposed is not None and decomposed.operations is not None and decomposed.queries is not None
     # Standard and provenance questions continue through the full knowledge path.
-    if not (decomposed and decomposed.operations) and (kind in ('standard_query', 'assessment', 'other') or re.search(r'标准|条款|规范|规程|依据|要求|符合|合规|限值|规定', query)):
+    if not semantic and (kind in ('standard_query', 'assessment', 'other') or re.search(r'标准|条款|规范|规程|依据|要求|符合|合规|限值|规定', query)):
         return None
     # The API's structured purpose drives routing. Legacy/offline decomposers
     # without that optional field retain their explicit compatibility path.
     capability = kind == 'device_capability' if kind else bool(re.search(r'哪些(?:操作|动作|指令)|(?:支持|能做|可以做|可用).*?(?:操作|动作|指令)|操作能力', query))
     factual = kind == 'device_status' if kind else bool(re.search(r'状态|数据|读数|测量|温升|温度|电流|告警|档位|位置|正常|异常|比较|对比', query))
     operation = kind == 'operation' if kind else bool(re.search(r'启动|开启|开动|停止|停机|关闭风机|关闭油泵|分闸|合闸|跳闸|升.*档|降.*档|设定.*档|调到.*档', query))
+    if semantic:
+        operation = bool(decomposed.operations)
+        capability = any(item['query_kind'] == 'device_capability' for item in decomposed.queries)
+        factual = any(item['query_kind'] == 'device_status' for item in decomposed.queries)
     if not (capability or factual or operation):
         return None
     runtime = simulation_runtime(pipeline)
@@ -140,21 +145,18 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     # Read aliases/capabilities from the catalog, not from a model's invented IDs.
     devices = [{**deepcopy(runtime.catalog.devices[d['device_id']]), **d} for d in devices]
     names = [e['name'] for e in decomposed.entities if isinstance(e, dict) and isinstance(e.get('name'), str)] if decomposed else []
-    semantic = decomposed is not None and decomposed.operations is not None and decomposed.queries is not None
     if semantic and (decomposed.operations or operation):
         from .semantic_operations import operation_previews
         return operation_previews(pipeline, request, snapshot, devices, profile, decomposed)
     if semantic:
-        from .semantic_operations import bind_target, clarification
-        ids = []
-        for item in decomposed.queries:
-            if item.get('query_kind') not in ('device_status', 'device_capability'):
-                continue
-            key, reason = bind_target(item, query, devices, profile, conversation_context=request.conversation_context)
-            if reason:
-                return clarification({'simulation_factual': True, 'candidate_instruction': None}, reason)
-            ids.append(key)
-        ids = list(dict.fromkeys(ids))
+        from .semantic_operations import clarification, factual_plan_queries, plan_coverage
+        reason = plan_coverage(decomposed, query, devices, profile)
+        if reason:
+            return clarification({'simulation_factual': True, 'candidate_instruction': None}, reason)
+        query_results, reason = factual_plan_queries(decomposed, request, snapshot, devices, profile)
+        if reason:
+            return clarification({'simulation_factual': True, 'candidate_instruction': None}, reason)
+        ids = list(dict.fromkeys(device['device_id'] for item in query_results for device in item['devices']))
         if not ids:
             return clarification({'simulation_factual': True, 'candidate_instruction': None}, '请明确要查询的设备。')
     else:
@@ -233,12 +235,14 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
         return ('generated' if preview['status'] == 'generated' else 'uncertain'), base, [], []
     base['device_capabilities'] = []
     lines = []
+    capabilities_by_id = {}
     for device in selected:
         name = device.get('display_name') or device['device_id']
         state = device.get('state', {})
         facts = device.get('runtime_facts', {})
         fields = [f'{FIELD_NAMES.get(k, k)}：{v}' for k, v in {**state, **facts}.items()]
-        lines.append(f'{name}（{device["device_id"]}）：' + '；'.join(fields))
+        if not semantic:
+            lines.append(f'{name}（{device["device_id"]}）：' + '；'.join(fields))
         actions = runtime.catalog.devices[device['device_id']].get('actions', {})
         capabilities = [{'action': key, 'name': ACTION_NAMES.get(key, key),
                          'parameter': item.get('parameter'), 'unit': item.get('unit', ''),
@@ -246,8 +250,23 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
                          'condition': item.get('condition', ''), 'template_ref': item.get('template_ref')}
                         for key, item in actions.items()]
         base['device_capabilities'].append({'device_id': device['device_id'], 'actions': capabilities})
-        if capability or operation:
+        capabilities_by_id[device['device_id']] = capabilities
+        if not semantic and (capability or operation):
             lines.append('可用操作：' + ('、'.join(a['name'] for a in capabilities) or '本体仅提供状态和测量查询'))
+    if semantic:
+        base['query_results'] = query_results
+        for item in query_results:
+            device = item['devices'][0]
+            lines.append(item['source_query'] + '：')
+            name = device.get('display_name') or device['device_id']
+            if item['query_kind'] == 'device_capability':
+                capabilities = capabilities_by_id[device['device_id']]
+                lines.append(f'{name}（{device["device_id"]}）可用操作：'
+                    + ('、'.join(a['name'] for a in capabilities) or '本体仅提供状态和测量查询'))
+            else:
+                fields = {**(device.get('state') or {}), **(device.get('runtime_facts') or {})}
+                lines.append(f'{name}（{device["device_id"]}）：'
+                    + '；'.join(f'{FIELD_NAMES.get(key, key)}：{value}' for key, value in fields.items()))
     base['answer'] = {'text': '\n'.join(lines) + '\n以上为当前模拟状态；整体健康或标准符合性需结合适用依据判断。'}
     # Preserve source-based temperature assessment as optional evidence, never a fact gate.
     if len(selected) == 1 and selected[0]['device_type'] == 'transformer' and re.search(r'正常|异常|温升', query):

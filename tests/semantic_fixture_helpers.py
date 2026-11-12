@@ -80,3 +80,11 @@ def add_semantic_plan(payload, query, catalog, scenario_id="all_devices"):
     if operations: payload['actions']=list(dict.fromkeys(item['action'] for item in operations))
     payload.update(operations=operations,queries=questions)
     return payload
+
+
+def approve_review_packet(packet):
+    """Controlled second-stage acceptance; rejection behavior has separate fixtures."""
+    return {'approved':True,'items':[{'index':index,'matches_request':True,'reason':'受控测试复核一致',
+        'device_id':item['device_id'],'action':item['action'],'parameters':item['parameters']}
+        for index,item in enumerate(packet['operations'])], 'missing_requests':[],
+        'has_negation':False,'has_conditions':False,'has_order':False,'reason':'受控测试整批通过'}

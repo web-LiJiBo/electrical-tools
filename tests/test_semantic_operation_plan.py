@@ -20,7 +20,12 @@ def operation(source, device='SIM-IEC-FAN-01', action='start', **changes):
 def planned_app(monkeypatch, query, operations, queries=None, *, legacy=False):
     model = RemoteModelDecomposer(RemoteModelConfig('https://example.test', 'test'))
     calls = []
+    review_calls = []
     def complete(system, user):
+        if 'OPERATION_PLAN_REVIEW' in system:
+            from semantic_fixture_helpers import approve_review_packet
+            review_calls.append((system, user))
+            return json.dumps(approve_review_packet(json.loads(user)), ensure_ascii=False)
         calls.append((system, user))
         payload = {'intent': 'instruction' if operations else 'search',
             'entities': [{'name': '主变1', 'type': '设备'}],
@@ -37,6 +42,7 @@ def planned_app(monkeypatch, query, operations, queries=None, *, legacy=False):
     before = app.simulation_runtime.create_session('all_devices')
     parameters = {'simulation_mode': True, 'simulation_session_id': before['session_id'],
                   'simulation_scenario_id': 'all_devices'}
+    app._test_review_calls = review_calls
     return app, parameters, before, calls
 
 
@@ -228,11 +234,14 @@ def test_operation_and_standard_query_use_one_understanding_and_one_advice_call(
     client = Client(proposal)
     def complete(*args):
         advice_calls.append(args)
-        return client.complete(*args)
+        from semantic_fixture_helpers import approve_review_packet
+        packet = json.loads(args[1])
+        return json.dumps({'operation_review': approve_review_packet(packet['operation_review_request']), 'advice': json.loads(client.complete(*args))}, ensure_ascii=False)
     app.advisor = GroundedAdviceService(type('AdviceClient', (), {'complete': staticmethod(complete)})())
     result = app.analyze(AnalysisRequest(query, parameters=params))
     assert result.data['simulation_preview']['status'] == 'generated'
     assert len(calls) == len(advice_calls) == 1
+    assert app._test_review_calls == [], "Review must share the advice call"
     assert result.data['query_results'][0]['data'].get('advice') is not None
     assert app.simulation_runtime.snapshot(before['session_id']) == before
 

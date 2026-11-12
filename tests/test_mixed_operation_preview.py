@@ -11,7 +11,12 @@ from test_api_first_analysis import app_for
 def mixed_app(monkeypatch, *, fail_child=False, target_conditions=False, extra_state=False):
     app, params, before, _ = app_for(monkeypatch)
     calls = []
+    review_calls = []
     def complete(system, user):
+        if 'OPERATION_PLAN_REVIEW' in system:
+            from semantic_fixture_helpers import approve_review_packet
+            review_calls.append((system, user))
+            return json.dumps(approve_review_packet(json.loads(user)), ensure_ascii=False)
         q = user.split('用户问题：', 1)[1].split('\n请严格')[0]
         calls.append(q)
         if fail_child:
@@ -33,6 +38,7 @@ def mixed_app(monkeypatch, *, fail_child=False, target_conditions=False, extra_s
             'scenario':{'query_kind':'operation','operating_condition':''},
             'keywords':['模拟设备'], 'confidence':0.95}, q, app.simulation_runtime.catalog, params.get('simulation_scenario_id','all_devices')), ensure_ascii=False)
     monkeypatch.setattr(app.decomposer, 'complete', complete)
+    app._test_review_calls = review_calls
     return app, params, before, calls
 
 
