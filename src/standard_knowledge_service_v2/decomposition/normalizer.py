@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 from copy import deepcopy
+from decimal import Decimal, DecimalException, localcontext
 from typing import Any
 
 from .models import DecompositionResult
@@ -25,7 +26,9 @@ ACTION_ALIASES = {
 }
 ENTITY_ALIASES = {"变压器": "电力变压器", "主变": "电力变压器", "集电线": "集电线路", "集电线路": "集电线路"}
 OPERATORS = {"不大于": "<=", "不得大于": "<=", "小于等于": "<=", "≤": "<=", "不小于": ">=", "不得小于": ">=", "大于等于": ">=", "≥": ">=", "等于": "=", "为": "="}
-UNIT_FACTORS = {"kv": ("V", 1000.0), "v": ("V", 1.0), "mw": ("W", 1_000_000.0), "kw": ("W", 1000.0), "w": ("W", 1.0)}
+UNIT_FACTORS = {"kv": ("V", "1000"), "v": ("V", "1"),
+                "MW": ("W", "1000000"), "mW": ("W", "0.001"), "mw": ("W", "0.001"),
+                "kw": ("W", "1000"), "w": ("W", "1")}
 
 
 class DomainTermNormalizer:
@@ -44,12 +47,26 @@ class DomainTermNormalizer:
             item["operator"] = OPERATORS.get(raw_operator, raw_operator)
             unit = str(item.get("unit", "")).strip()
             value = item.get("value")
-            factor = UNIT_FACTORS.get(unit.lower())
-            if factor:
+            factor = UNIT_FACTORS.get(unit) or UNIT_FACTORS.get(unit.lower())
+            if factor and not isinstance(value, bool):
                 try:
-                    item["value"] = float(value) * factor[1]
+                    number = Decimal(str(value))
+                    if not number.is_finite():
+                        continue
+                    with localcontext() as context:
+                        context.prec = max(28, len(number.as_tuple().digits) + 10)
+                        number *= Decimal(factor[1])
+                    # JSON has no Decimal type. Keep ordinary numbers numeric;
+                    # preserve unusual precision as decimal text rather than rounding.
+                    if number == number.to_integral_value() and number.adjusted() <= 308:
+                        converted = int(number)
+                    else:
+                        converted = float(number)
+                        if Decimal(str(converted)) != number:
+                            converted = str(number)
+                    item["value"] = converted
                     item["unit"] = factor[0]
-                except (TypeError, ValueError):
+                except (DecimalException, TypeError, ValueError, OverflowError):
                     pass
         output.keywords = list(dict.fromkeys([item for item in output.keywords if item]))
         return output

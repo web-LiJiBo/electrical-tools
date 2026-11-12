@@ -237,7 +237,9 @@ class SimulationCatalog:
     def _legacy_feedback(device: dict, point: str, section: str, field: str, action: dict) -> dict:
         value = device['initial_state'].get(field) if section == 'state' else device['runtime_facts'].get(field)
         position = field == 'position'
-        boolean = type(value) is bool or position
+        # A newly added boolean action may introduce its first state field.
+        # Its declared value still defines a boolean feedback point.
+        boolean = type(value) is bool or position or (value is None and type(action.get('value')) is bool)
         mapping = {**device['mapping'], **action.get('mapping', {})}
         feedback = {'protocol': device['protocol'], 'point': point, 'direction': 'read',
                     'field': f'{section}.{field}', 'unit': action.get('unit', '')}

@@ -33,6 +33,8 @@ JSON字段：
   "standard_refs": [{"standard_id": "标准编号", "version": "版本"}],
   "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "operation_type": "操作类型", "query_kind": "device_status|device_capability|standard_query|assessment|operation|other"},
   "keywords": ["检索关键词"],
+  "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "clarification":"需澄清的问题或空字符串"}],
+  "queries": [{"device_id":"目录唯一编号，标准咨询可留空", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "query_kind":"device_status|device_capability|standard_query|assessment|other", "source_text":"本项原文", "clarification":"需澄清的问题或空字符串"}],
   "confidence": 0.0
 }
 
@@ -51,6 +53,14 @@ intent仍只使用search、consistency、compliance、difference、instruction�
 operating_condition只填写用户明确限定的工况或前置条件；未限定时返回空字符串，不补推测的当前状态。
 操作目标数值用constraints的等值赋值表达，parameter写目标参数、operator写=、condition留空；
 执行前提另列约束，不能将“当前档位大于10档”等前提误写为目标档位赋值。
+必须一次理解整句，始终返回operations和queries两个列表（无对应诉求时为空）。不要把逗号、礼貌语当新操作，不要把“已经启动”等状态修饰误作动作。
+operations每项只包含一个设备和一个动作；同设备多个动作、多个设备分别列项，完整保留每项来源、否定、执行前提及顺序要求。
+优先使用提供的设备目录及ownership关系和各设备actions。具体动作码可使用目录中的set_tap/open等，不受整句actions摘要的旧码表限制。
+编号空格不改变设备身份；“那台”“各自的”等归属需根据目录解析；编号与归属冲突、多个候选或无法确定时填写clarification，不增加猜测目标。
+每项parameters使用对应动作模板的parameter字段名及模板单位，数值必须来自该项原文；source_text保留原始数值与单位和所有否定/条件/顺序，不得省略许可或阈值。
+owner_id在用户说出所属关系时填写对应主设备，直接用设备自身编号或名称时可留空。target_text必须引用原文目标，不能自造新名称。
+并列共享后缀如“启动主变1和主变2各自的冷却风机”时，两项target_text都引用该完整原文跨度，分别用owner_id关联主变1、主变2；不要改写成原文不存在的连续词组。
+queries逐一保留事实/能力/评估/标准咨询目标。未请求操作时operations必须为空，不能把状态描述或标准建议变成操作。
 """
 
 
@@ -91,6 +101,8 @@ def extract_json_object(text: str) -> dict[str, Any]:
 def validate_decomposition(data: dict[str, Any], raw_output: str = "") -> LLMDecompositionOutput:
     """校验类型、去重实体并构造论文检索可消费的分解结果。"""
     errors: list[str] = []
+    if 'operations' in data or 'queries' in data:
+        errors.extend(validate_semantic_plan(data))
     intent = str(data.get("intent", "search")).strip().lower()
     intent = {'device_status':'search', 'device_capability':'search', 'standard_query':'search',
               'assessment':'compliance', 'operation':'instruction', 'other':'search'}.get(intent, intent)
@@ -168,6 +180,36 @@ def _string_list(value: Any, field_name: str, errors: list[str]) -> list[str]:
         errors.append(f"{field_name}必须是列表")
         return []
     return [str(item).strip() for item in value if str(item).strip()]
+
+
+def validate_semantic_plan(data: dict[str, Any]) -> list[str]:
+    """Validate the whole-request plan without repairing missing control claims."""
+    errors = []
+    for name in ('operations', 'queries'):
+        rows = data.get(name)
+        if not isinstance(rows, list) or len(rows) > 16:
+            errors.append(f'{name}须为最多16项的列表')
+            continue
+        for index, row in enumerate(rows):
+            prefix = f'{name}[{index}]'
+            if not isinstance(row, dict):
+                errors.append(f'{prefix}须为对象')
+                continue
+            strings = ('device_id', 'target_text', 'owner_id', 'source_text', 'clarification')
+            strings += ('action',) if name == 'operations' else ('query_kind',)
+            if any(not isinstance(row.get(key), str) for key in strings):
+                errors.append(f'{prefix}缺少文本字段')
+            if name == 'queries' and row.get('query_kind') not in ('device_status', 'device_capability', 'standard_query', 'assessment', 'other'):
+                errors.append(f'{prefix}查询类型无效')
+            if name == 'operations':
+                if not isinstance(row.get('parameters'), dict) or type(row.get('negated')) is not bool:
+                    errors.append(f'{prefix}缺少动作参数或否定标记')
+                if (not isinstance(row.get('conditions'), list)
+                        or any(not isinstance(value, str) for value in row.get('conditions', []))):
+                    errors.append(f'{prefix}缺少条件列表')
+                if 'order' not in row or row['order'] is not None and type(row['order']) not in (str, int):
+                    errors.append(f'{prefix}缺少顺序标记')
+    return errors
 
 
 def _dict_list(value: Any, field_name: str, errors: list[str]) -> list[dict[str, Any]]:

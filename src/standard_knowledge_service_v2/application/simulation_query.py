@@ -118,7 +118,7 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     query = request.query
     kind = decomposed.scenario.get('query_kind') if decomposed else None
     # Standard and provenance questions continue through the full knowledge path.
-    if kind in ('standard_query', 'assessment', 'other') or re.search(r'标准|条款|规范|规程|依据|要求|符合|合规|限值|规定', query):
+    if not (decomposed and decomposed.operations) and (kind in ('standard_query', 'assessment', 'other') or re.search(r'标准|条款|规范|规程|依据|要求|符合|合规|限值|规定', query)):
         return None
     # The API's structured purpose drives routing. Legacy/offline decomposers
     # without that optional field retain their explicit compatibility path.
@@ -140,11 +140,29 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     # Read aliases/capabilities from the catalog, not from a model's invented IDs.
     devices = [{**deepcopy(runtime.catalog.devices[d['device_id']]), **d} for d in devices]
     names = [e['name'] for e in decomposed.entities if isinstance(e, dict) and isinstance(e.get('name'), str)] if decomposed else []
+    semantic = decomposed is not None and decomposed.operations is not None and decomposed.queries is not None
+    if semantic and (decomposed.operations or operation):
+        from .semantic_operations import operation_previews
+        return operation_previews(pipeline, request, snapshot, devices, profile, decomposed)
+    if semantic:
+        from .semantic_operations import bind_target, clarification
+        ids = []
+        for item in decomposed.queries:
+            if item.get('query_kind') not in ('device_status', 'device_capability'):
+                continue
+            key, reason = bind_target(item, query, devices, profile, conversation_context=request.conversation_context)
+            if reason:
+                return clarification({'simulation_factual': True, 'candidate_instruction': None}, reason)
+            ids.append(key)
+        ids = list(dict.fromkeys(ids))
+        if not ids:
+            return clarification({'simulation_factual': True, 'candidate_instruction': None}, '请明确要查询的设备。')
+    else:
+        ids = _targets(query, request.parameters, devices, profile, entity_names=names)
     from .mixed_operation_preview import answer_mixed_operations
-    mixed = answer_mixed_operations(pipeline, request, snapshot, devices, decomposed, intent)
+    mixed = None if semantic else answer_mixed_operations(pipeline, request, snapshot, devices, decomposed, intent)
     if mixed is not None:
         return mixed
-    ids = _targets(query, request.parameters, devices, profile, entity_names=names)
     by_id = {d['device_id']: d for d in devices}
     unknown = [key for key in ids if key not in by_id]
     base = {'simulation_factual': True, 'simulation_session_id': snapshot['session_id'],

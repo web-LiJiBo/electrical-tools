@@ -19,10 +19,12 @@ def app_for(monkeypatch, *, intent='search', actions=None, constraints=None, que
     def complete(system, user):
         calls.append(user)
         kind = query_kind or ('operation' if intent == 'instruction' else 'device_status')
-        return json.dumps({'intent':intent,'entities':entities or [{'name':'主变1','type':'设备'}],
+        from semantic_fixture_helpers import add_semantic_plan
+        q = user.split('用户问题：', 1)[1].split('\n请严格')[0]
+        return json.dumps(add_semantic_plan({'intent':intent,'entities':entities or [{'name':'主变1','type':'设备'}],
             'actions':actions or [],'constraints':constraints or [],'standard_refs':[],
             'scenario':{'scenario_type':'substation_maintenance','device_type':'变压器','query_kind':kind,'operating_condition':operating_condition},
-            'keywords':['主变1'],'confidence':0.9},ensure_ascii=False)
+            'keywords':['主变1'],'confidence':0.9}, q, app.simulation_runtime.catalog, parameters.get('simulation_scenario_id','all_devices')),ensure_ascii=False)
     monkeypatch.setattr(decomposer, 'complete', complete)
     app = AnalysisPipeline(LocalLunwenRetrievalAdapter(JsonClauseRepository([])),decomposer=decomposer)
     app.simulation_runtime = SimulationRuntime(event_path=None)

@@ -7,6 +7,26 @@
   const api = () => document.getElementById('api').value;
   const scenario = () => document.getElementById('scenario').value || 'all_devices';
   const sessionKey = () => api();
+  const storageKey = base => 'electrical-tools:simulation-session:' + base;
+  function remember(base, identifier) {
+    sessions.set(base, identifier);
+    try { sessionStorage.setItem(storageKey(base), identifier); } catch (_) { /* Storage can be disabled. */ }
+  }
+  async function restore(base) {
+    let identifier;
+    try { identifier = sessionStorage.getItem(storageKey(base)); } catch (_) { return ''; }
+    if (!identifier) return '';
+    try {
+      const snapshot = await request('/simulation/sessions/' + encodeURIComponent(identifier), undefined, base);
+      if (snapshot.scenario_id !== 'all_devices' || snapshot.session_id !== identifier) throw Error('已保存的模拟会话类型不匹配，请明确重新建立会话。');
+      remember(base, identifier);
+      return identifier;
+    } catch (error) {
+      if (error.status !== 404) throw error;
+      try { sessionStorage.removeItem(storageKey(base)); } catch (_) {}
+      return '';
+    }
+  }
   const signature = () => JSON.stringify(['query', 'params', 'scenario', 'api'].map(id => document.getElementById(id).value)
     .concat(document.getElementById('simulation-mode').checked, revision));
   const selectedPreview = () => {
@@ -20,7 +40,7 @@
       method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
     });
     const value = await response.json();
-    if (!response.ok) throw Error(typeof value.detail === 'string' ? value.detail : '模拟请求未完成');
+    if (!response.ok) { const error = Error(typeof value.detail === 'string' ? value.detail : '模拟请求未完成'); error.status = response.status; throw error; }
     return value;
   }
   async function catalog(base) {
@@ -39,10 +59,13 @@
     if (!available.scenarios.some(item => item.scenario_id === name && item.device_ids.length)) return '';
     if (sessions.has(key)) return sessions.get(key);
     if (!creating.has(key)) {
-      creating.set(key, request('/simulation/sessions', {scenario_id: 'all_devices'}, base).then(snapshot => {
-        sessions.set(key, snapshot.session_id);
+      creating.set(key, (async () => {
+        const restored = await restore(base);
+        if (restored) return restored;
+        const snapshot = await request('/simulation/sessions', {scenario_id: 'all_devices'}, base);
+        remember(key, snapshot.session_id);
         return snapshot.session_id;
-      }).finally(() => { creating.delete(key); }));
+      })().finally(() => { creating.delete(key); }));
     }
     return creating.get(key);
   }
@@ -82,7 +105,7 @@
         identifier = snapshot.session_id;
       }
       if (current !== signature()) throw Error('场景或输入已变化，请重新分析。');
-      sessions.set(key, identifier);
+      remember(key, identifier);
       sessionId = identifier;
       const prepared = {...parameters, simulation_session_id: identifier, simulation_scenario_id: name};
       if (Object.prototype.hasOwnProperty.call(prepared, 'simulation_condition')) {

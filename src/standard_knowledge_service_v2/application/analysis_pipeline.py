@@ -81,16 +81,25 @@ class AnalysisPipeline:
     def analyze(self, request: AnalysisRequest) -> AnalysisResponse:
         # Every natural-language request is understood before any local shortcut.
         # Keep this result request-local so concurrent calls cannot share parses.
-        decomposed = self.decomposer.decompose(request.query, request.scenario_hint, request.conversation_context)
         from ..decomposition.remote_model_decomposer import RemoteModelDecomposer
+        if isinstance(self.decomposer, RemoteModelDecomposer):
+            from .semantic_operations import catalog_context
+            decomposed = self.decomposer.decompose(request.query, request.scenario_hint,
+                request.conversation_context, catalog_context=catalog_context(self, request))
+        else:
+            decomposed = self.decomposer.decompose(request.query, request.scenario_hint, request.conversation_context)
         online = isinstance(self.decomposer, RemoteModelDecomposer) and not (
             self.config is not None and self.config.llm.allow_offline_fallback)
         kind = decomposed.scenario.get('query_kind')
         kinds = ('device_status', 'device_capability', 'standard_query', 'assessment', 'operation', 'other')
-        if online and (decomposed.source != 'model_api' or not decomposed.valid or kind not in kinds):
+        if online and (decomposed.source != 'model_api' or not decomposed.valid or kind not in kinds
+                       or decomposed.operations is None or decomposed.queries is None
+                       or kind == 'operation' and not decomposed.operations):
             diagnostics = list(decomposed.errors)
             if kind not in kinds:
                 diagnostics.append('模型未返回受支持的scenario.query_kind，未改用关键词分流')
+            if decomposed.operations is None or decomposed.queries is None:
+                diagnostics.append('模型未返回完整operations/queries清单，未改用关键词或分句猜测')
             return self._respond(request, 'partial', {
                 'decomposition': decomposed.to_dict(),
                 'model_understanding': {'status': 'failed', 'source': decomposed.source},
@@ -98,6 +107,11 @@ class AnalysisPipeline:
                 'answer': {'text': '问题理解模型调用未完成，本次未生成指令。请检查接口后重试。'},
                 'control_block_reason': '在线问题理解未完成，不能由本地规则替代生成操作',
             }, [], ['问题理解模型未完成；未使用本地规则生成操作'])
+        return self._analyze_decomposed(request, decomposed)
+
+    def _analyze_decomposed(self, request, decomposed):
+        """Consume request-local understanding without another decomposition call."""
+        kind = decomposed.scenario.get('query_kind')
         intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
         decomposed.intent = intent.intent
         from .simulation_query import answer_simulation_query
@@ -106,6 +120,28 @@ class AnalysisPipeline:
             status, data, evidence, warnings = simulation_answer
             data.setdefault('decomposition', decomposed.to_dict())
             data.setdefault('intent_classification', intent.to_dict())
+            if decomposed.operations and decomposed.queries:
+                from copy import deepcopy
+                questions = [item for item in decomposed.queries if item['query_kind'] in ('standard_query', 'assessment')]
+                if questions:
+                    # All knowledge questions share one retrieval/advice pass.
+                    # Keep its mutable advice data separate from operation IDs.
+                    scoped = deepcopy(decomposed)
+                    scoped.operations, scoped.queries, scoped.actions = [], questions, []
+                    scoped.intent = 'search'
+                    scoped.scenario['query_kind'] = 'standard_query' if any(item['query_kind'] == 'standard_query' for item in questions) else 'assessment'
+                    scoped.entities = [{'name': item['device_id'], 'type': '设备'} for item in questions if item['device_id']]
+                    parameters = {key: deepcopy(value) for key, value in request.parameters.items()
+                        if key not in ('device_id', 'device_ids', 'action', 'action_parameters')}
+                    subrequest = AnalysisRequest('\n'.join(item['source_text'] for item in questions),
+                        scenario_hint=request.scenario_hint, parameters=parameters,
+                        target_protocol=request.target_protocol, conversation_context=deepcopy(request.conversation_context))
+                    response = self._analyze_decomposed(subrequest, scoped)
+                    data.setdefault('query_results', []).append({'query_kind': scoped.scenario['query_kind'],
+                        'status': response.status, 'data': response.data, 'evidence': response.evidence})
+                    data['answer']['text'] += '\n' + response.data.get('answer', {}).get('text', '来源或条件不足，请查看条款查询结果。')
+                    evidence.extend(response.evidence)
+                    warnings.extend(response.warnings)
             return self._respond(request, status, data, evidence, warnings)
         if request.parameters.get("simulation_mode") is True:
             if kind == 'assessment' or self.simulation_session.is_status_question(request.query):

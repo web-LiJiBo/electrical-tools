@@ -1,11 +1,13 @@
 """Post-retrieval model advice. Model text is never executable authority."""
 import json
 import re
+from decimal import Decimal
 
 from ..llm_decomposition import extract_json_object
 from ..decomposition.model_errors import MESSAGES, model_error_code
 from .advice_conversion import advice_context, convert_advice
 from .action_request import action_request_restriction
+from .action_parameters import PARAMETER_ALIASES, resolve_action_parameters
 
 
 PROMPT = '''你是电力标准建议助手。输入是用户问题、检索原文、来源审查状态、当前模拟设备快照及允许动作。
@@ -26,6 +28,29 @@ summary最多250字；suggestions最多5项，每项最多100字，不能超过�
 动作模板不预先绑定条款，动作码只能从设备允许列表选择；条款动作和条件字段可以为空或自然语言。模拟参数、点位和联锁由后端模板校验，不能将模拟配置定值说成标准限值。
 温度保护动作定值不等于功率回降目标。只有设备快照存在已配置回降目标且来源支持时，可建议runback_power；参数必须引用该配置，不能推导或编造。缺少配置时instruction为null。
 '''
+
+
+def _parameter_consistency(request, understanding, instruction, template):
+    """Keep user text, business inputs and proposed text/payload independently accountable."""
+    parameter = template.get('parameter')
+    if not parameter:
+        return ''
+    proposed = instruction['parameters']
+    if parameter not in proposed:
+        return '模型建议未明确动作参数，未从其他入口补造参数。'
+    _, error = resolve_action_parameters(request.query, template, proposed, understanding)
+    if error:
+        return error
+    business = request.parameters.get('action_parameters', {})
+    requested, error = resolve_action_parameters(request.query, template, business, understanding)
+    if error:
+        return error
+    if business and set(business) != {parameter}:
+        return '业务动作参数与动作模板不一致，请核对。'
+    if parameter in requested and Decimal(str(requested[parameter])) != Decimal(str(proposed[parameter])):
+        return '模型建议的目标值与用户或业务参数不一致，未生成操作预览。'
+    _, error = resolve_action_parameters(instruction['text'], template, proposed)
+    return error
 
 
 class GroundedAdviceService:
@@ -117,15 +142,19 @@ class GroundedAdviceService:
                 'reason': '模型未提出受来源支持的设备指令，仅保留文字建议；这不代表设备一定正常。'}
             return None
         reason = context_error
+        template = profile.get('actions', {}).get(instruction['action'], {})
         restriction = action_request_restriction(request.query, understanding,
             instruction_request=True,
-            action_parameter=profile.get('actions', {}).get(instruction['action'], {}).get('parameter'))
+            action_parameter=template.get('parameter'),
+            action_parameter_aliases=PARAMETER_ALIASES.get(template.get('parameter'), ()))
         if restriction:
             reason = restriction
         if request.parameters.get('simulation_mode') is not True or not device or instruction['device_id'] != device['device_id']:
             reason = reason or '设备不唯一、目标不一致或未开启模拟模式'
         if re.search(r'不要(?:生成|建议)|禁止生成|取消(?:指令|建议)|不生成', request.query):
             reason = '用户否定或取消指令生成，只保留文字建议'
+        if not reason:
+            reason = _parameter_consistency(request, understanding, instruction, template)
         if reason:
             data['advice']['conversion'] = {'status': 'blocked', 'reason': reason}
             data['candidate_instruction'] = None

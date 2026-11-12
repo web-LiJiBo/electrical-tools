@@ -26,6 +26,9 @@ class DecompositionResult:
     errors: list[str] = field(default_factory=list)
     missing_fields: list[MissingField] = field(default_factory=list)
     raw_output: str = ""
+    # None denotes a legacy/local decomposer, never an accepted online plan.
+    operations: list[dict[str, Any]] | None = None
+    queries: list[dict[str, Any]] | None = None
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)

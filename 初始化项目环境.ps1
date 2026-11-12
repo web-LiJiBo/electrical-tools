@@ -10,25 +10,28 @@ $env:TEMP = $pipTemporaryDirectory
 $env:TMP = $pipTemporaryDirectory
 $env:PYTHONUTF8 = '1'
 
-$launcher = Get-Command py -ErrorAction SilentlyContinue
-if (-not $launcher) {
-    throw '未找到Windows Python启动器py。请先安装Python 3.12或3.13，并在安装时启用Python Launcher。'
-}
-
-$pythonSelector = $null
-foreach ($candidate in @('3.13', '3.12')) {
-    & py "-$candidate" -c "import sys; print(sys.version.split()[0])" 2>$null
-    if ($LASTEXITCODE -eq 0) { $pythonSelector = $candidate; break }
-}
-if (-not $pythonSelector) {
-    throw '未找到Python 3.12或3.13。请安装其中一个版本后重试。'
-}
-
 $venvDirectory = Join-Path $projectDirectory '.venv'
 $pythonPath = Join-Path $venvDirectory 'Scripts\python.exe'
 if (-not (Test-Path -LiteralPath $pythonPath)) {
-    Write-Output "[环境] 正在创建Python $pythonSelector虚拟环境"
-    & py "-$pythonSelector" -m venv $venvDirectory
+    $candidates = @()
+    if (Get-Command py -ErrorAction SilentlyContinue) {
+        $candidates += @{ executable = 'py'; arguments = @('-3.13') }
+        $candidates += @{ executable = 'py'; arguments = @('-3.12') }
+    }
+    $pythonCommand = Get-Command python -ErrorAction SilentlyContinue
+    if ($pythonCommand) { $candidates += @{ executable = $pythonCommand.Source; arguments = @() } }
+    $portable = Join-Path (Split-Path -Parent $projectDirectory) '运行环境\python-3.13.5\tools\python.exe'
+    if (Test-Path -LiteralPath $portable) { $candidates += @{ executable = $portable; arguments = @() } }
+    $selected = $null
+    foreach ($candidate in $candidates) {
+        $arguments = $candidate.arguments
+        & $candidate.executable @arguments -c "import sys; sys.exit(0 if sys.version_info[:2] in [(3,12),(3,13)] else 1)" 2>$null
+        if ($LASTEXITCODE -eq 0) { $selected = $candidate; break }
+    }
+    if (-not $selected) { throw '未找到可用的Python 3.12或3.13，请安装或配置Python后重试。' }
+    Write-Output '[环境] 正在创建虚拟环境'
+    $arguments = $selected.arguments
+    & $selected.executable @arguments -m venv $venvDirectory
     if ($LASTEXITCODE -ne 0) { throw '虚拟环境创建失败。' }
 }
 

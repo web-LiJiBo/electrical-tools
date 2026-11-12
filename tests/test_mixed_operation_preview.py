@@ -14,7 +14,7 @@ def mixed_app(monkeypatch, *, fail_child=False, target_conditions=False, extra_s
     def complete(system, user):
         q = user.split('用户问题：', 1)[1].split('\n请严格')[0]
         calls.append(q)
-        if fail_child and len(calls) > 1:
+        if fail_child:
             raise ModelCallError('network_timeout')
         actions = []
         for word, action in [('启动', 'start'), ('停止', 'stop'), ('有功', 'adjust_active_power'), ('无功', 'adjust_reactive_power'), ('电压', 'regulate_voltage')]:
@@ -27,10 +27,11 @@ def mixed_app(monkeypatch, *, fail_child=False, target_conditions=False, extra_s
                 c['condition'] = target + ('获准后' if target_conditions == 'qualified' else '')
         if extra_state and len(calls) == 1:
             constraints.append({'parameter':'绕组热点温升','operator':'=','value':80,'unit':'K','condition':''})
-        return json.dumps({'intent':'instruction', 'entities':[{'name':'主变1','type':'设备'}],
+        from semantic_fixture_helpers import add_semantic_plan
+        return json.dumps(add_semantic_plan({'intent':'instruction', 'entities':[{'name':'主变1','type':'设备'}],
             'actions':actions, 'constraints':constraints, 'standard_refs':[],
             'scenario':{'query_kind':'operation','operating_condition':''},
-            'keywords':['模拟设备'], 'confidence':0.95}, ensure_ascii=False)
+            'keywords':['模拟设备'], 'confidence':0.95}, q, app.simulation_runtime.catalog, params.get('simulation_scenario_id','all_devices')), ensure_ascii=False)
     monkeypatch.setattr(app.decomposer, 'complete', complete)
     return app, params, before, calls
 
@@ -43,7 +44,7 @@ def test_distinct_devices_actions_are_not_cross_applied(monkeypatch):
     assert [(r['device_id'], r['action']) for r in rows] == [
         ('SIM-IEC-FAN-01', 'start'), ('SIM-MB-PUMP-01', 'stop')]
     assert all(r['preview']['status'] == 'generated' for r in rows)
-    assert len(calls) == 3
+    assert len(calls) == 1
     assert app.simulation_runtime.snapshot(before['session_id']) == before
 
 
@@ -106,7 +107,7 @@ def test_restrictions_unknown_conflicting_or_ambiguous_targets_do_not_produce_co
     assert app.simulation_runtime.snapshot(before['session_id']) == before
 
 
-def test_child_model_failure_does_not_return_a_partial_understood_batch(monkeypatch):
+def test_whole_request_model_failure_does_not_return_a_partial_understood_batch(monkeypatch):
     app, params, _, _ = mixed_app(monkeypatch, fail_child=True)
     response = app.analyze(AnalysisRequest('启动主变1的冷却风机，同时停止主变2的油泵', parameters=params))
     assert not response.data.get('simulation_batch')

@@ -14,6 +14,12 @@ PARAMETER_ALIASES = {
 }
 
 
+def _parameter_field(name):
+    name = re.sub(r'\s+', '', str(name or ''))
+    return next((key for key, aliases in PARAMETER_ALIASES.items()
+                 if name == key or name and any(alias in name or name in alias for alias in aliases)), None)
+
+
 def _hypothetical_values(request, decomposed):
     """Extract only explicit user-supplied values, never snapshot defaults."""
     result = {}
@@ -36,8 +42,7 @@ def _hypothetical_values(request, decomposed):
         if name in ('cooling_mode', '冷却方式', '冷却模式'):
             modes.add(str(item.get('value', '')).strip().upper())
             continue
-        field = next((key for key, aliases in PARAMETER_ALIASES.items()
-                      if name == key or any(alias in name or name in alias for alias in aliases)), None)
+        field = _parameter_field(name)
         try:
             value = float(item.get("value"))
         except (TypeError, ValueError):
@@ -56,6 +61,53 @@ def _checks(values, fields, limits):
     return [{"parameter": field, "actual": values[field], "operator": "<=", "limit": limit,
              "unit": "K", "passed": values[field] <= limit}
             for field, limit in zip(fields, limits) if field in values]
+
+
+def _hypothesis_checks(values, constraints, fields, limits):
+    """Prove each stated interval wholly within/outside the limit; never invent a point."""
+    assumptions = {field: [('=', values[field])] for field in fields if field in values}
+    for item in constraints:
+        field = _parameter_field(item.get('parameter'))
+        operator = str(item.get('operator', '')).strip()
+        if not field or operator not in ('=', '==', '<', '<=', '>', '>=', '!='):
+            continue
+        try:
+            value = float(item.get('value'))
+        except (TypeError, ValueError):
+            continue
+        if math.isfinite(value) and value >= 0:
+            assumptions.setdefault(field, []).append((operator, value))
+    checks = []
+    for field, limit in zip(fields, limits):
+        terms = list(dict.fromkeys(assumptions.get(field, [])))
+        if not terms:
+            continue
+        lower, upper, lower_closed, upper_closed = 0.0, math.inf, True, False
+        excluded = set()
+        for operator, value in terms:
+            if operator in ('=', '==', '>', '>='):
+                closed = operator != '>'
+                if value > lower:
+                    lower, lower_closed = value, closed
+                elif value == lower:
+                    lower_closed &= closed
+            if operator in ('=', '==', '<', '<='):
+                closed = operator != '<'
+                if value < upper:
+                    upper, upper_closed = value, closed
+                elif value == upper:
+                    upper_closed &= closed
+            if operator == '!=':
+                excluded.add(value)
+        conflict = lower > upper or lower == upper and (not lower_closed or not upper_closed or lower in excluded)
+        passed = (None if conflict else True if upper <= limit else False
+                  if lower > limit or lower == limit and (not lower_closed or lower in excluded) else None)
+        point = lower == upper and not conflict
+        checks.append({'parameter':field, 'actual':lower if point else ' 且 '.join(f'{op} {v:g}' for op,v in terms),
+                       'operator':'<=', 'limit':limit, 'unit':'K', 'passed':passed,
+                       'assumptions':[{'operator':op,'value':value} for op,value in terms],
+                       'conflicting':conflict})
+    return checks
 
 
 def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, decomposed=None):
@@ -165,15 +217,18 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, deco
         current_normal = all(check["passed"] for check in current_checks)
         hypothetical = _hypothetical_values(request, decomposed)
         hypothesis_mode = hypothetical.get('cooling_mode', mode)
-        has_hypothesis = bool(hypothetical)
+        numeric_constraints = [item for item in decomposed.constraints if _parameter_field(item.get('parameter'))]
+        has_hypothesis = bool(hypothetical or numeric_constraints or re.search(r'假设|假如|假定', request.query))
         hypothesis_limits = [float(values[0][1]), float(values[1][1]),
                              float(values[2][2 if hypothesis_mode == 'OD' else 1])]
-        hypothetical_checks = (_checks(hypothetical, fields, hypothesis_limits)
+        hypothetical_checks = (_hypothesis_checks(hypothetical, numeric_constraints, fields, hypothesis_limits)
                                if hypothesis_mode in ('ON', 'OF', 'OD') else [])
         if has_hypothesis:
-            if any(not check["passed"] for check in hypothetical_checks):
+            if any(check.get('conflicting') for check in hypothetical_checks):
+                status = "uncertain"
+            elif any(check["passed"] is False for check in hypothetical_checks):
                 status = "abnormal"
-            elif len(hypothetical_checks) == len(fields):
+            elif len(hypothetical_checks) == len(fields) and all(check['passed'] is True for check in hypothetical_checks):
                 status = "normal"
             else:
                 status = "uncertain"
@@ -191,6 +246,7 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, deco
         if has_hypothesis:
             data["device_assessment"]["hypothetical_assessment"] = {
                 "status": status, "provided_facts": hypothetical, "checks": hypothetical_checks,
+                "constraints": numeric_constraints,
                 "cooling_mode": hypothesis_mode,
                 "complete": len(hypothetical_checks) == len(fields)}
         data["selected_rule"]={"rule_id":hit.rule.rule_id,"content":hit.rule.content}
@@ -200,7 +256,7 @@ def assess_real_clause(pipeline, request, *, snapshot=None, device_id=None, deco
         if has_hypothesis:
             hypothesis_text = ("用户假设值中存在越限。" if status == "abnormal" else
                 "用户假设值均未越限。" if status == "normal" else
-                "用户假设值未越限，但提供的参数不完整，不能判定整体正常。")
+                "用户假设参数不完整、区间跨越限值或条件存在冲突，无法确定整体是否越限。")
             if hypothesis_mode not in ('ON', 'OF', 'OD'):
                 hypothesis_text = '用户假设的冷却方式不明确或存在冲突，无法比对假设工况。'
             data["answer"]["text"] = (hypothesis_text + "该结论仅针对用户假设工况；"

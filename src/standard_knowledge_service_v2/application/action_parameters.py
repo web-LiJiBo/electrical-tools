@@ -63,6 +63,24 @@ def _convert(value, unit, target_unit):
     return number * Decimal(source[1]) / Decimal(target[1])
 
 
+def _target_tokens(query, parameter):
+    """Bind measurements to their parameter/assignment, not to equipment ratings."""
+    for match in VALUE_WITH_UNIT.finditer(query.translate(SIGNS)):
+        prefix = re.split(r'[，；;。]|(?<!\d),(?!\d)', query[:match.start()])[-1]
+        labels = [(found.end(), len(alias), name) for name, aliases in PARAMETER_ALIASES.items()
+                  for alias in (name, *aliases) for found in re.finditer(re.escape(alias), prefix)]
+        if labels:
+            end, width, _ = max(labels, key=lambda item: item[:2])
+            names = {name for last, size, name in labels if (last, size) == (end, width)}
+            tail = prefix[end:]
+            if re.fullmatch(r'\s*(?:目标值|目标|设定值)?\s*(?:[:：=]|(?:设定|设置|设|调整|调节|调压|回降|限制)?(?:为|至|到))?\s*', tail):
+                if parameter in names:
+                    yield match
+                continue
+        if re.search(r'(?:设(?:定|置)?(?:为|至|到)?|调(?:整|节|压)?(?:为|至|到)|调成|改为|回降(?:至|到)|限制(?:为|至|到))\s*$', prefix):
+            yield match
+
+
 def resolve_action_parameters(query, template, parameters, understanding=None):
     """Never pick one value when text, model and business parameters disagree."""
     if not isinstance(parameters, dict):
@@ -74,7 +92,7 @@ def resolve_action_parameters(query, template, parameters, understanding=None):
     unit = str(template.get('unit', ''))
     data = understanding.to_dict() if hasattr(understanding, 'to_dict') else (understanding or {})
     try:
-        stated = [_convert(match[1], match[2], unit) for match in VALUE_WITH_UNIT.finditer(query.translate(SIGNS))]
+        stated = [_convert(match[1], match[2], unit) for match in _target_tokens(query, parameter)]
         for constraint in data.get('constraints', []):
             if (matches_action_parameter(constraint.get('parameter'), parameter)
                     and constraint.get('operator') in ('=', '==') and not constraint.get('condition')):

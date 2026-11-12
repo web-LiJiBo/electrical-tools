@@ -122,7 +122,7 @@ test('editing during analysis clears processing status when obsolete response re
   assert.equal(app.element('status').textContent,'等待重新分析');
 });
 
-function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy} = {}) {
+function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy, storage = new Map(), restoredSessions = new Map(), restoreError} = {}) {
   const elements = new Map();
   function element(id) {
     if (!elements.has(id)) elements.set(id, {
@@ -154,7 +154,7 @@ function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy} = {}
     renewable_grid_integration: ['inverter'],
     power_grid_operation: ['valve'],
   };
-  const sessions = new Map(), requests = [];
+  const sessions = restoredSessions, requests = [];
   const catalog = {simulation_only: true, dispatch_allowed: false,
     devices: Object.values(devices), device_templates: [], action_templates: [],
     scenarios: Object.keys(profiles).map(scenario_id => ({scenario_id,
@@ -175,7 +175,7 @@ function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy} = {}
       return response(snapshot);
     }
     const id = route.split('/')[3];
-    if (sessions.has(id)) return response(sessions.get(id));
+    if (sessions.has(id)) { if(restoreError) throw Error(restoreError); return response(sessions.get(id)); }
     if (route === '/simulation/state') {
       if (delayLegacy) await delayLegacy.promise;
       return response({devices: Object.values(devices)});
@@ -190,7 +190,7 @@ function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy} = {}
   function response(data) { return {ok: true, json: async () => structuredClone(data)}; }
   const context = vm.createContext({document: {getElementById: element, querySelector: () => null,
       querySelectorAll: () => []},
-    window: {}, fetch, URL, URLSearchParams, location: {search: ''}, console,
+    window: {}, sessionStorage: {getItem:key=>storage.get(key) || null, setItem:(key,value)=>storage.set(key,value), removeItem:key=>storage.delete(key)}, fetch, URL, URLSearchParams, location: {search: ''}, console,
     result: null, tab: 'summary', render() {},
     esc: value => String(value ?? ''), loadDeviceState() {},
     scenarioNames: {offshore_wind: '海上风电', substation_maintenance: '变电站设备运维'}});
@@ -314,4 +314,30 @@ test('switching scenes clears previous results and disables the old execute butt
   await app.select('substation_maintenance');
   assert.equal(app.context.result, null);
   assert.equal(app.element('simulate-execute').disabled, true);
+});
+
+ test('navigation restores the same server session and its changed state', async () => {
+ const storage = new Map(), restoredSessions = new Map();
+ const first=fixture({storage,restoredSessions}); await flush();
+ restoredSessions.get('session-all_devices').devices[0].state.running=true;
+ const second=fixture({storage,restoredSessions}); await flush();
+ assert.equal(second.requests.filter(r=>r.route==='/simulation/sessions').length,0);
+ assert.match(second.element('device-state').innerHTML,/"running":true/);
+ });
+
+test('temporary restore failure preserves the identity and never creates another world', async () => {
+ const storage = new Map(), restoredSessions = new Map();
+ fixture({storage,restoredSessions}); await flush();
+ const second=fixture({storage,restoredSessions,restoreError:'offline'}); await flush();
+ assert.equal(storage.get('electrical-tools:simulation-session:http://localhost:8000'),'session-all_devices');
+ assert.equal(second.requests.some(r=>r.route==='/simulation/sessions'),false);
+ await assert.rejects(second.context.window.originalSimulation.prepare({simulation_mode:true}),/offline/);
+});
+
+test('indeterminate hypothesis is shown separately from a proven violation', async () => {
+ const app=fixture({fullPage:true}); await flush();
+ app.context.assessmentData={real_clause_evidence:{},device_assessment:{basis:'user_hypothesis',checks:[{parameter:'温升',actual:'<95',unit:'K',limit:78,passed:null}]}};
+ const html=vm.runInContext('groundedDetail(assessmentData)',app.context);
+ assert.match(html,/无法确定/); assert.match(html,/假设/);
+ assert.doesNotMatch(html,/· 越限/);
 });

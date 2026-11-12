@@ -39,10 +39,12 @@ class RemoteModelDecomposer:
         query: str,
         scenario_hint: str = "",
         conversation_context: list[dict[str, str]] | None = None,
+        *, catalog_context: dict | None = None,
     ) -> DecompositionResult:
         try:
-            raw_output = self._request(query, scenario_hint, conversation_context or [])
-            output = validate_decomposition(extract_json_object(raw_output), raw_output=raw_output)
+            raw_output = self._request(query, scenario_hint, conversation_context or [], catalog_context)
+            parsed = extract_json_object(raw_output)
+            output = validate_decomposition(parsed, raw_output=raw_output)
             if not output.valid:
                 raise ModelCallError("invalid_model_output")
             missing = []
@@ -68,6 +70,7 @@ class RemoteModelDecomposer:
                 errors=output.errors,
                 missing_fields=missing,
                 raw_output=output.raw_output,
+                operations=parsed.get('operations'), queries=parsed.get('queries'),
             )
             return self._normalizer.normalize(result)
         except Exception as exc:
@@ -84,11 +87,13 @@ class RemoteModelDecomposer:
         query: str,
         scenario_hint: str,
         conversation_context: list[dict[str, str]],
+        catalog_context: dict | None = None,
     ) -> str:
         context = json.dumps(conversation_context[-4:], ensure_ascii=False)
+        catalog = '' if catalog_context is None else '可用设备目录：' + json.dumps(catalog_context, ensure_ascii=False) + '\n'
         user_prompt = (
             f"场景提示：{scenario_hint or '无'}\n最近上下文：{context}\n"
-            f"用户问题：{query.strip()}\n请严格输出一个JSON对象。"
+            f"{catalog}用户问题：{query.strip()}\n请严格输出一个JSON对象。"
         )
         return self.complete(SYSTEM_PROMPT, user_prompt)
 
@@ -105,7 +110,7 @@ class RemoteModelDecomposer:
                     {"role": "user", "content": user_prompt},
                 ],
                 "temperature": self.config.temperature,
-                "max_tokens": self.config.max_tokens,
+                "max_tokens": max(self.config.max_tokens, 4096),
                 "response_format": {"type": "json_object"},
                 "stream": False,
             },
@@ -128,6 +133,9 @@ class RemoteModelDecomposer:
         except Exception as exc:
             raise ModelCallError(model_error_code(exc)) from exc
         try:
+            finish = payload['choices'][0].get('finish_reason')
+            if finish is not None and finish != 'stop':
+                raise ValueError('incomplete model response')
             content = payload["choices"][0]["message"]["content"]
             if not isinstance(content, str) or not content.strip():
                 raise ValueError("empty content")

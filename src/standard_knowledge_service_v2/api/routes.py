@@ -49,7 +49,8 @@ def register_routes(app, application) -> None:
         from copy import deepcopy
         session = application.facade.simulation_session
         with session.lock:
-            return {'simulation_only': True, 'devices': deepcopy(list(session.service.devices.values()))}
+            return {'simulation_only': True, 'devices': deepcopy(list(session.service.devices.values())),
+                    'template_load_errors': list(getattr(session.service, 'template_load_errors', []))}
 
     @app.post('/simulation/templates/test')
     def test_simulation_template(payload: dict):
@@ -67,11 +68,9 @@ def register_routes(app, application) -> None:
         session = application.facade.simulation_session
         try:
             with session.lock:
-                saved = save_custom(session.service, payload)
                 from ..application.simulation_access import simulation_runtime
-                from ..instruction_engine.simulation_catalog import SimulationCatalog
                 runtime = simulation_runtime(application.facade)
-                runtime.refresh_catalog(SimulationCatalog(legacy_service=session.service))
+                saved = save_custom(session.service, payload, publish=runtime.refresh_catalog)
                 return {**saved, 'runtime_refreshed': True,
                         'notice': '模板已同步运行目录；设备状态保留，旧预览需重新生成。'}
         except ValueError as exc:

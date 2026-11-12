@@ -65,7 +65,7 @@ llm_decomposition:
   api_key_env: MODEL_API_KEY
   timeout_seconds: 30
   model: "models/llm/qwen--Qwen-7B-Chat/snapshots/master"
-  max_new_tokens: 1024
+  max_new_tokens: 4096
   repetition_penalty: 1.05
   lazy_load: true
   temperature: 0.1

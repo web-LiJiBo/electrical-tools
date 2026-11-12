@@ -1,0 +1,286 @@
+"""Validate one model-authored semantic plan, then create local previews only."""
+from copy import deepcopy
+import re
+
+from .action_parameters import resolve_action_parameters
+from .action_request import action_request_restriction
+from .simulation_access import simulation_runtime
+
+
+def _compact(value):
+    return re.sub(r'\s+', '', str(value)).casefold()
+
+
+def catalog_context(pipeline, request):
+    """Identity and capabilities only: model understanding never reads live state."""
+    catalog = simulation_runtime(pipeline).catalog
+    scene = catalog.scenarios.get(request.parameters.get('simulation_scenario_id'), {})
+    ids = scene.get('device_ids', list(catalog.devices))
+    ownership = []
+    for profile in catalog.scenarios.values():
+        groups = profile.get('groups', {})
+        for group in groups.values() if isinstance(groups, dict) else groups:
+            for role, device_id in group.items():
+                link = {'owner_id': group.get('transformer', ''), 'device_id': device_id, 'role': role}
+                if role != 'transformer' and device_id in ids and link not in ownership:
+                    ownership.append(link)
+    return {'devices': [{key: deepcopy(device.get(key, '')) for key in
+            ('device_id', 'display_name', 'device_type', 'aliases', 'business_scenario')}
+            | {'actions': {action: {key: deepcopy(template.get(key)) for key in
+                ('display_name', 'parameter', 'unit', 'minimum', 'maximum')}
+                for action, template in device.get('actions', {}).items()}}
+            for device_id in ids for device in [catalog.devices[device_id]]], 'ownership': ownership}
+
+
+def _mentions(text, devices):
+    """Match catalog identities with whitespace normalized, keeping full names."""
+    text = _compact(text)
+    matches = []
+    for device in devices:
+        aliases = [device['device_id'], device.get('display_name', ''), *device.get('aliases', [])]
+        for alias in aliases:
+            if alias:
+                for match in re.finditer(re.escape(_compact(alias)) + r'(?!\d)', text):
+                    matches.append((device, match.start(), match.end()))
+    return {device['device_id'] for device, start, end in matches
+            if not any(other['device_id'] != device['device_id'] and left <= start and end <= right
+                       and right - left > end - start for other, left, right in matches)}
+
+
+_ROLES = {'cooling_fan': r'风机|风扇', 'oil_pump': r'油泵', 'tap_changer': r'调压|档位',
+          'breaker': r'断路器', 'disconnector': r'隔离开关', 'earthing_switch': r'接地开关'}
+
+
+def _shared_suffix_target(target, source, owner, devices):
+    """Accept only a catalog owner plus an explicitly shared accessory suffix."""
+    owners = [device for device in devices if device['device_type'] == 'transformer']
+    if len(_mentions(source, owners)) < 2 or not re.search(r'各自|分别|和|与|及|、', source):
+        return False
+    device = next((device for device in owners if device['device_id'] == owner), {})
+    for alias in [device.get('device_id', ''), device.get('display_name', ''), *device.get('aliases', [])]:
+        if alias and re.fullmatch(re.escape(_compact(alias)) + r'的?(?:冷却风机|风机|油泵|调压装置|有载调压装置)', _compact(target)):
+            role = re.sub('^' + re.escape(_compact(alias)) + '的?', '', _compact(target))
+            return _compact(alias) in _compact(source) and role in _compact(source)
+    return False
+
+
+def bind_target(item, query, devices, profile, *, previous=None, conversation_context=()):
+    """Reject invented evidence, unknown IDs, and contradicted owner/child pairs."""
+    if item.get('clarification'):
+        return '', item['clarification']
+    source, target = item.get('source_text', ''), item.get('target_text', '')
+    if not source or _compact(source) not in _compact(query):
+        return '', '模型提供的原文证据未出现在本次问题中，请重新明确请求。'
+    if not target or (_compact(target) not in _compact(source)
+            and not _shared_suffix_target(target, source, item.get('owner_id', '').upper(), devices)):
+        return '', '设备目标缺少对应原文证据，请明确设备。'
+    key = item.get('device_id', '').upper()
+    by_id = {device['device_id']: device for device in devices}
+    if key not in by_id:
+        return '', '当前场景未登记所请求的设备，请核对编号或名称。'
+    device = by_id[key]
+    mentioned = _mentions(target, devices)
+    owner = item.get('owner_id', '').upper()
+    owners = {d['device_id'] for d in devices if d['device_type'] == 'transformer'}
+    stated_owners = mentioned & owners
+    if owner and (owner not in owners or owner not in _mentions(source, devices)):
+        return '', '设备所属关系没有对应原文或目录依据，请明确目标。'
+    if len(stated_owners) == 1:
+        stated_owner = next(iter(stated_owners))
+        if owner and owner != stated_owner:
+            return '', '设备所属关系与原文不一致，请明确目标。'
+        owner = stated_owner if device['device_type'] != 'transformer' else owner
+    groups = profile.get('groups', {})
+    groups = list(groups.values()) if isinstance(groups, dict) else groups
+    if owner and device['device_type'] != 'transformer':
+        if not any(group.get('transformer') == owner and group.get(device['device_type']) == key for group in groups):
+            return '', '设备编号与所属主设备相矛盾，请明确要操作哪台设备。'
+    same_type = {value for value in mentioned if by_id[value]['device_type'] == device['device_type']}
+    if same_type and key not in same_type:
+        return '', '原文设备名称与识别编号不一致，请明确目标。'
+    if len(same_type) > 1 and not owner:
+        return '', '原文存在多个同名候选设备，请使用完整名称或唯一编号。'
+    role = next((kind for kind, pattern in _ROLES.items() if re.search(pattern, target)), None)
+    if device['device_type'] == 'transformer' and role:
+        return '', '原文请求附属设备，但识别为主设备，请明确所属设备。'
+    if key not in mentioned and not (owner and role == device['device_type']):
+        referenced = re.search(r'其|它|该设备|刚才', target)
+        contextual = set()
+        if referenced:
+            for message in reversed(conversation_context):
+                if message.get('role') == 'user':
+                    contextual = _mentions(message.get('content', ''), devices)
+                    context_roles = {kind for kind, pattern in _ROLES.items() if re.search(pattern, message.get('content', ''))}
+                    if context_roles:
+                        contextual = {value for value in contextual if by_id[value]['device_type'] in context_roles}
+                        if not contextual:
+                            groups = profile.get('groups', {})
+                            for group in groups.values() if isinstance(groups, dict) else groups:
+                                if group.get('transformer') in _mentions(message.get('content', ''), devices):
+                                    contextual.update(group[kind] for kind in context_roles if kind in group)
+                    # Resolve an explicit owner/accessory reference through the
+                    # same catalog relation, without consulting live state.
+                    if owner and owner in contextual:
+                        contextual = {key}
+                    if contextual:
+                        break
+        if not (referenced and (previous == key and item.get('parameters') or contextual == {key})):
+            return '', '设备编号缺少唯一的原文或归属依据，请提供完整目标。'
+    return key, ''
+
+
+def clarification(base, reason):
+    data = {'devices': [], **base, 'answer': {'text': reason}, 'control_block_reason': reason,
+            'clarification_required': True, 'clarification_questions': [reason]}
+    return 'uncertain', data, [], []
+
+
+def plan_coverage(understanding, query, devices, profile):
+    """Cross-check explicit catalog claims and original source coverage."""
+    rows = [*understanding.operations, *understanding.queries]
+    covered = {row.get(field, '').upper() for row in rows for field in ('device_id', 'owner_id')}
+    groups = profile.get('groups', {})
+    for group in groups.values() if isinstance(groups, dict) else groups:
+        for row in rows:
+            if row.get('device_id') in [value for role, value in group.items() if role != 'transformer']:
+                if group.get('transformer') in _mentions(row.get('target_text', ''), devices):
+                    covered.add(group['transformer'])
+    known = {_compact(alias) for device in devices for alias in
+        [device['device_id'], device.get('display_name', ''), *device.get('aliases', [])] if alias}
+    explicit = re.findall(r'SIM-[A-Z0-9-]+|(?:主变(?:压器)?|变压器|冷却风机|风机|油泵|断路器|隔离开关|接地开关|调压装置)\s*\d+', query, re.I)
+    if any(_compact(value) not in known for value in explicit):
+        return '正文包含当前场景未登记的设备名称或编号，请核对。'
+    if _mentions(query, devices) - covered:
+        return '语义清单未覆盖正文中的全部明确设备，请补充或核对目标。'
+    summary = set(understanding.actions) - {'inspect'}
+    planned = {row['action'] for row in understanding.operations}
+    # The historic summary code uses regulate_voltage for a tap assignment.
+    if planned & {'set_tap', 'raise', 'lower', 'raise_tap', 'lower_tap'}:
+        planned.add('regulate_voltage')
+    if summary - planned and understanding.operations:
+        return '整句动作摘要与逐项清单不完整一致，请明确所有操作。'
+    remaining = _compact(query)
+    sources = sorted({_compact(row.get('source_text', '')) for row in rows}, key=len, reverse=True)
+    for source in sources:
+        if not source or source not in _compact(query):
+            return '清单来源未对应本次原文，请重新明确请求。'
+        remaining = remaining.replace(source, '')
+    remaining = re.sub(r'同时|并且|以及|谢谢(?:你|您)?|麻烦了|辛苦了|[，；;。?？、,！!\s]', '', remaining)
+    if remaining:
+        return '问题仍有未被语义清单覆盖的内容，请明确全部诉求。'
+    return ''
+
+
+def factual_plan_queries(understanding, request, snapshot, devices, profile):
+    results = []
+    for item in understanding.queries:
+        if item['query_kind'] not in ('device_status', 'device_capability'):
+            continue
+        key, reason = bind_target(item, request.query, devices, profile, conversation_context=request.conversation_context)
+        if reason:
+            return [], reason
+        device = next(device for device in devices if device['device_id'] == key)
+        fields = ('device_id', 'display_name', 'device_type', 'state', 'runtime_facts')
+        entry = {name: deepcopy(device.get(name)) for name in fields}
+        if item['query_kind'] == 'device_capability':
+            entry['actions'] = list(device.get('actions', {}))
+        results.append({'query_kind': item['query_kind'], 'source_query': item['source_text'], 'devices': [entry]})
+    return results, ''
+
+
+def operation_previews(pipeline, request, snapshot, devices, profile, understanding):
+    rows = understanding.operations
+    base = {'simulation_factual': True, 'simulation_session_id': snapshot['session_id'],
+            'context': {'scenario': snapshot['scenario_id']}, 'candidate_instruction': None,
+            'devices': [], 'dispatch_allowed': False, 'semantic_plan': True}
+    if not rows:
+        return clarification(base, '未识别到明确操作，请说明设备和所需动作。')
+    reason = action_request_restriction(request.query)
+    if not reason and (understanding.scenario.get('operating_condition')
+            or re.search(r'假如|假设|仅在|前提|一旦|除非|否则|直到|先|然后|随后|再|依次|顺序|逐个', request.query)):
+        reason = '请求带有执行条件或顺序要求，当前不能编排，请拆分后逐步核对。'
+    if reason:
+        return clarification(base, reason)
+    if len(rows) > 8:
+        return clarification(base, '一次最多预览8条明确操作，请分批提交。')
+    runtime, previews, previous = simulation_runtime(pipeline), [], None
+    reason = plan_coverage(understanding, request.query, devices, profile)
+    if reason:
+        return clarification(base, reason)
+    factual_results, reason = factual_plan_queries(understanding, request, snapshot, devices, profile)
+    if reason:
+        return clarification(base, reason)
+    for item in rows:
+        if item['negated'] or item['conditions'] or item['order'] is not None:
+            return clarification(base, '操作包含否定、执行条件或先后要求，当前不生成省略限制的预览。')
+        from ..decomposition.intent_classifier import IntentClassifier
+        if IntentClassifier().classify(item['source_text'], 'instruction', [item['action']], query_kind='operation').intent != 'instruction':
+            return clarification(base, '原文为疑问或咨询表达，未明确要求执行操作。')
+        device_id, reason = bind_target(item, request.query, devices, profile, previous=previous,
+                                        conversation_context=request.conversation_context)
+        if reason:
+            return clarification(base, reason)
+        available = runtime.catalog.devices[device_id]['actions']
+        action = item['action']
+        unsupported = not action or action not in available
+        supplied_action = request.parameters.get('action')
+        if supplied_action and supplied_action != action:
+            return clarification(base, '业务动作参数与正文理解不一致，请明确所需操作；未覆盖正文动作。')
+        if len(rows) > 1 and request.parameters.get('action_parameters'):
+            return clarification(base, '多条操作不能共用动作参数，请把各项目标写入对应正文。')
+        template = available.get(action, {})
+        parameters = item['parameters']
+        supplied = request.parameters.get('action_parameters', {})
+        if not isinstance(supplied, dict) or any(key in parameters and parameters[key] != value for key, value in supplied.items()):
+            return clarification(base, '正文目标值与业务参数不一致，请核对。')
+        parameters = {**parameters, **supplied}
+        from .mixed_operation_preview import _assignment_scope
+        if any(not _assignment_scope(constraint, request.query, devices)
+               for constraint in understanding.constraints
+               if any(constraint.get(field) not in (None, '') for field in ('operator', 'value', 'condition'))):
+            return clarification(base, '整句包含未保留到执行校验的附加条件，未生成无条件预览。')
+        scoped = {'actions': [action], 'constraints': [], 'scenario': {}}
+        inferred, reason = resolve_action_parameters(item['source_text'], template, {}, scoped)
+        if template.get('parameter') in item['parameters'] and template['parameter'] not in inferred and not reason:
+            return clarification(base, '模型动作参数缺少原文目标值证据，请明确数值和单位。')
+        parameters, reason = resolve_action_parameters(item['source_text'], template, parameters, scoped)
+        if reason:
+            return clarification(base, reason)
+        previews.append({'device_id': device_id, 'display_name': runtime.catalog.devices[device_id]['display_name'],
+            'protocol': runtime.catalog.devices[device_id]['protocol'], 'action': action,
+            'action_name': template.get('display_name', action), 'parameter_unit': template.get('unit', ''),
+            'parameters': parameters, 'source_query': item['source_text'], 'scoped_query': item['source_text'],
+            'decomposition': understanding.to_dict(), 'semantic_operation': deepcopy(item), 'unsupported': unsupported})
+        previous = device_id
+    supplied_ids = request.parameters.get('device_ids') or ([request.parameters['device_id']] if request.parameters.get('device_id') else [])
+    if supplied_ids and (not isinstance(supplied_ids, list) or any(not isinstance(value, str) for value in supplied_ids)
+            or {value.upper() for value in supplied_ids} != {row['device_id'] for row in previews}):
+        return clarification(base, '业务参数设备与正文涉及多台设备或目标不一致，请核对；未增加或覆盖设备。')
+    from .mixed_operation_preview import _conflict
+    previews, reason = _conflict(previews, runtime)
+    if reason:
+        return clarification(base, reason)
+    # All semantic checks finish before issuing any server-owned command IDs.
+    for row in previews:
+        row['preview'] = ({'status': 'blocked', 'candidate': None, 'command_id': None,
+            'simulation_execution_allowed': False, 'explanation': '该设备不支持所请求的动作。'}
+            if row.pop('unsupported') else runtime.preview(snapshot['session_id'], row['device_id'], row['action'], row['parameters'], expected_version=snapshot['version']))
+    ids = {row['device_id'] for row in previews}
+    base['devices'] = [{key: deepcopy(device.get(key)) for key in
+        ('device_id', 'display_name', 'device_type', 'protocol', 'state', 'runtime_facts')}
+        for device in devices if device['device_id'] in ids]
+    count = sum(row['preview']['status'] == 'generated' for row in previews)
+    if len(previews) == 1:
+        base['simulation_preview'] = previews[0]['preview']
+        base['candidate_instruction'] = previews[0]['preview']['candidate']
+        base['semantic_operation'] = previews[0]['semantic_operation']
+    else:
+        base['simulation_batch'] = {'status': 'generated' if count == len(previews) else 'partial' if count else 'blocked',
+            'items': previews, 'generated_count': count, 'blocked_count': len(previews) - count,
+            'device_count': len(ids), 'execution_mode': 'individual_confirmation', 'simulation_only': True}
+    base['answer'] = {'text': f'已识别{len(ids)}台设备、{len(previews)}条操作，{count}条可预览；请逐条核对并模拟下发，尚未执行。'}
+    if factual_results:
+        import json
+        base['query_results'] = factual_results
+        base['answer']['text'] += '\n' + '\n'.join(json.dumps(item['devices'], ensure_ascii=False) for item in factual_results)
+    return ('generated' if count else 'uncertain'), base, [], []

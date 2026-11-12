@@ -92,7 +92,7 @@ def test_save_http_route_synchronizes_running_catalog(monkeypatch, tmp_path):
     snapshot = runtime.create_session('all_devices')
     real_save = template_editor.save_custom
     monkeypatch.setattr(template_editor, 'save_custom',
-                        lambda service, payload: real_save(service, payload, tmp_path / 'custom.json'))
+                        lambda service, payload, **kwargs: real_save(service, payload, tmp_path / 'custom.json', **kwargs))
     app = FastAPI()
     register_routes(app, SimpleNamespace(facade=pipeline, audit_store=None))
     client = TestClient(app)
