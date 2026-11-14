@@ -71,6 +71,12 @@
   }
   function invalidate() {
     validPreview = false;
+    for (const [index] of (lastResult?.data?.simulation_plan?.steps || []).entries()) {
+      for (const kind of ['execute', 'preview']) {
+        const planButton = document.getElementById('simulate-plan-' + kind + '-' + index);
+        if (planButton) planButton.disabled = true;
+      }
+    }
     for (const [index] of (lastResult?.data?.simulation_batch?.items || []).entries()) {
       const batchButton = document.getElementById('simulate-batch-' + index);
       if (batchButton) batchButton.disabled = true;
@@ -235,10 +241,83 @@
       };
     });
   }
+  function renderPlan(data) {
+    const plan = data.simulation_plan;
+    const stopped = plan.status === 'stopped' || plan.execution_unknown;
+    const progress = plan.execution_unknown ? '执行结果未确认，计划停止；请核对设备状态并重新分析。'
+      : plan.status === 'completed' ? '所有步骤已取得成功模拟反馈。'
+      : stopped ? '计划已停止：' + (plan.stop_reason || '请核对当前条件')
+      : `共${plan.steps.length}步，当前开放第${plan.next_step}步。前一步成功反馈后才可预览下一步；每一步分别确认。`;
+    document.getElementById('output').innerHTML = `<div class="answer-box"><div class="answer-label">顺序计划 · 逐步确认</div><p class="answer">${esc(progress)}</p></div>`
+      + plan.steps.map((row, index) => {
+        const preview = row.preview, candidate = preview?.candidate;
+        const state = row.execution ? {succeeded:'已取得成功反馈',failed:'执行失败',blocked:'执行被阻止',unknown:'结果未确认'}[row.execution.status]
+          : usable(preview) ? '等待本步确认' : index + 1 === plan.next_step && !stopped ? '等待预览' : '尚未开放';
+        return `<section class="rule" style="margin:16px 0;padding:18px;border:1px solid #dbe4e1;border-radius:6px"><h3>${index + 1}. ${esc(row.display_name || row.device_id)} · ${esc(state || '')}</h3>`
+          + `<p><code>${esc(row.device_id)}</code> · ${esc(row.action_name || row.action)}</p>`
+          + (row.source_query ? `<p class="hint">对应请求：${esc(row.source_query)}</p>` : '')
+          + `<p>执行条件：${esc((row.conditions || []).join(' 且 ') || '无附加用户条件')}。将在预览和执行前重新核验。</p>`
+          + `<p>${esc(row.execution?.explanation || preview?.explanation || '等待前一步成功反馈')}</p>`
+          + `<details><summary>查看本步参数与校验</summary><pre style="white-space:pre-wrap;overflow-wrap:anywhere">${esc(JSON.stringify({parameters:row.parameters || {},payload:candidate?.payload || {},conditions:preview?.condition_checks || row.condition_checks || [],checks:preview?.relation_checks || []},null,2))}</pre></details>`
+          + `<button id="simulate-plan-preview-${index}" class="primary">预览第${index + 1}步</button> <button id="simulate-plan-execute-${index}" class="primary">确认模拟下发第${index + 1}步</button>`
+          + (row.execution ? feedbackHtml(row.execution,'simulation-plan-result-' + index) : '') + '</section>';
+      }).join('');
+    const route = '/simulation/sessions/' + encodeURIComponent(data.simulation_session_id) + '/plans/' + encodeURIComponent(plan.plan_id);
+    async function act(index, execute) {
+      if (executing || !validPreview || signature() !== submitted || result !== lastResult) return;
+      const row = plan.steps[index], currentResult = result, current = signature(), base = api();
+      if (stopped || plan.status !== 'active' || plan.next_step !== index + 1 || row.execution) return;
+      if (execute && !usable(row.preview)) return;
+      executing = true;
+      document.getElementById('run').disabled = true;
+      render();
+      try {
+        if (execute) {
+          row.execution = await request('/simulation/sessions/' + encodeURIComponent(data.simulation_session_id) + '/execute',
+            {command_id:row.preview.command_id,expected_version:row.preview.expected_version},base);
+        } else {
+          row.preview = await request(route + '/preview',{step:index + 1,expected_version:plan.expected_version},base);
+        }
+        // Reading progress never previews or executes any further step.
+        const latest = await request(route,undefined,base);
+        if (result === currentResult && signature() === current) {
+          data.simulation_plan = latest;
+          await loadDeviceState();
+        }
+      } catch (error) {
+        if (execute) row.execution = {status:'unknown',explanation:'请求结果未确认，请查询设备状态：' + error.message};
+        plan.execution_unknown = execute;
+        plan.status = 'stopped';
+        plan.stop_reason = execute ? '执行结果未确认，禁止继续后续步骤。' : '步骤预览未完成：' + error.message;
+        validPreview = false;
+      } finally {
+        const latest = data.simulation_plan;
+        const text = latest.execution_unknown ? '执行结果未确认，计划已停止；请查询设备状态并重新分析。'
+          : latest.status === 'completed' ? '所有步骤已完成并取得成功模拟反馈。'
+          : latest.status === 'stopped' ? '计划已停止：' + (latest.stop_reason || '请核对当前状态。')
+          : `当前开放第${latest.next_step}步，请先预览并单独确认；后续步骤不会自动执行。`;
+        data.answer = {...data.answer,text};
+        executing = false;
+        document.getElementById('run').disabled = false;
+        if (result === currentResult) render();
+      }
+    }
+    plan.steps.forEach((row,index) => {
+      const canOpen = validPreview && !executing && !stopped && plan.status === 'active'
+        && plan.next_step === index + 1 && !row.execution;
+      const previewButton = document.getElementById('simulate-plan-preview-' + index);
+      const executeButton = document.getElementById('simulate-plan-execute-' + index);
+      previewButton.disabled = !canOpen || usable(row.preview);
+      executeButton.disabled = !canOpen || !usable(row.preview);
+      previewButton.onclick = () => { if (!previewButton.disabled) return act(index,false); };
+      executeButton.onclick = () => { if (!executeButton.disabled) return act(index,true); };
+    });
+  }
   render = function () {
     if (result !== lastResult) {
       lastResult = result;
-      validPreview = (Boolean(selectedPreview()) || result?.data?.simulation_batch?.items?.some(row => usable(row.preview)))
+      validPreview = (Boolean(selectedPreview()) || result?.data?.simulation_batch?.items?.some(row => usable(row.preview))
+        || result?.data?.simulation_plan?.status === 'active')
         && signature() === submitted;
     }
     if (result?.data?.simulation_preview && result.data.answer?.text) {
@@ -246,6 +325,13 @@
     }
     originalRender();
     const data = result?.data;
+    if (data?.simulation_plan) {
+      const plan = data.simulation_plan;
+      document.getElementById('status').textContent = plan.execution_unknown ? '执行结果未确认'
+        : plan.status === 'completed' ? '计划模拟完成' : plan.status === 'stopped' ? '计划已停止' : '逐步确认计划';
+      document.getElementById('status').className = 'status ' + (plan.status === 'stopped' ? 'warn' : 'ok');
+      if (tab === 'instruction') { renderPlan(data); return; }
+    }
     if (data?.simulation_batch) {
       const rows = data.simulation_batch.items;
       const blocked = rows.some(row => !usable(row.preview));

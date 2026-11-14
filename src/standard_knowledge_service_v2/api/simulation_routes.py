@@ -72,6 +72,22 @@ def register_simulation_routes(app, application):
             return runtime().execute(session_id, command, version)
         return perform(run)
 
+    @app.get('/simulation/sessions/{session_id}/plans/{plan_id}')
+    def plan(session_id: str, plan_id: str):
+        return perform(lambda: runtime().plan_snapshot(session_id, plan_id))
+
+    @app.post('/simulation/sessions/{session_id}/plans/{plan_id}/preview')
+    def plan_preview(session_id: str, plan_id: str, payload: dict):
+        def run():
+            fields(payload, {'step', 'expected_version'})
+            step, version = payload.get('step'), payload.get('expected_version')
+            if type(step) is not int or step < 1:
+                raise ValueError('step须为正整数')
+            if type(version) is not int or version < 0:
+                raise ValueError('expected_version须为非负整数')
+            return runtime().preview_plan_step(session_id, plan_id, step, expected_version=version)
+        return perform(run)
+
     @app.post('/simulation/sessions/{session_id}/condition')
     def condition(session_id: str, payload: dict):
         def run():

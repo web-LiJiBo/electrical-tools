@@ -5,6 +5,7 @@ import re
 from .simulation_access import default_session, simulation_runtime, view_snapshot
 from .action_request import action_request_restriction
 from .action_parameters import PARAMETER_ALIASES, resolve_action_parameters
+from .request_controls import analysis_only_requested, request_controls_error
 
 ACTION_NAMES = {'start': '启动', 'stop': '停止', 'trip': '分闸', 'open': '分闸',
                 'close': '合闸', 'raise_tap': '升一档', 'lower_tap': '降一档',
@@ -14,7 +15,32 @@ FIELD_NAMES = {'running': '运行中', 'position': '分合位置', 'operating_st
                'winding_hotspot_rise_k': '绕组热点温升(K)', 'top_oil_rise_k': '顶层油温升(K)',
                'winding_average_rise_k': '绕组平均温升(K)', 'cooling_mode': '冷却方式',
                'current': '电流(A)', 'current_a': '电流(A)', 'tap_position': '档位',
-               'fault': '故障', 'alarm_active': '告警', 'load_rate': '负载率(%)'}
+               'fault': '故障', 'alarm_active': '告警', 'load_rate': '负载率(%)',
+               'start_permission': '启动许可', 'stop_permission': '停止许可',
+               'power_available': '供电可用', 'device_fault': '设备故障',
+               'maintenance_lockout': '检修闭锁', 'tap_permission': '调档许可',
+               'remote_control_enabled': '远方控制使能', 'control_permission': '控制许可'}
+
+
+def _readiness_state_summary(state):
+    if not isinstance(state, dict) or not state:
+        return '当前运行状态：待核验（缺少状态事实）'
+    fields = []
+    labels = {'running': '运行状态', 'tap_position': '当前档位'}
+    for key, value in state.items():
+        label = labels.get(key, FIELD_NAMES.get(key, key))
+        if value is None:
+            shown = '待核验'
+        elif key == 'running' and type(value) is bool:
+            shown = '运行中' if value else '未运行'
+        elif key == 'operating_state' and isinstance(value, str):
+            shown = {'running': '运行中', 'stopped': '已停止'}.get(value, value)
+        elif key == 'position' and isinstance(value, str):
+            shown = {'open': '分位', 'closed': '合位'}.get(value, value)
+        else:
+            shown = str(value)
+        fields.append(f'{label}：{shown}')
+    return '；'.join(fields)
 
 
 def _targets(query, parameters, devices, profile, *, entity_names=()):
@@ -125,12 +151,19 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     # without that optional field retain their explicit compatibility path.
     capability = kind == 'device_capability' if kind else bool(re.search(r'哪些(?:操作|动作|指令)|(?:支持|能做|可以做|可用).*?(?:操作|动作|指令)|操作能力', query))
     factual = kind == 'device_status' if kind else bool(re.search(r'状态|数据|读数|测量|温升|温度|电流|告警|档位|位置|正常|异常|比较|对比', query))
+    readiness = kind == 'device_readiness'
     operation = kind == 'operation' if kind else bool(re.search(r'启动|开启|开动|停止|停机|关闭风机|关闭油泵|分闸|合闸|跳闸|升.*档|降.*档|设定.*档|调到.*档', query))
     if semantic:
         operation = bool(decomposed.operations)
         capability = any(item['query_kind'] == 'device_capability' for item in decomposed.queries)
         factual = any(item['query_kind'] == 'device_status' for item in decomposed.queries)
-    if not (capability or factual or operation):
+        readiness = any(item['query_kind'] == 'device_readiness' for item in decomposed.queries)
+    controls_error = request_controls_error(decomposed, query)
+    if controls_error or operation and analysis_only_requested(decomposed):
+        from .semantic_operations import clarification
+        return clarification({'simulation_factual': True, 'candidate_instruction': None},
+            controls_error or '本次请求仅限分析，不生成操作指令或计划预览。')
+    if not (capability or factual or readiness or operation):
         return None
     runtime = simulation_runtime(pipeline)
     sid = request.parameters.get('simulation_session_id')
@@ -143,7 +176,9 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     profile = runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {})
     devices = snapshot['devices']
     # Read aliases/capabilities from the catalog, not from a model's invented IDs.
-    devices = [{**deepcopy(runtime.catalog.devices[d['device_id']]), **d} for d in devices]
+    devices = [{**deepcopy(runtime.catalog.devices[d['device_id']]), **d,
+                'actions': deepcopy(runtime.catalog.devices[d['device_id']].get('actions', {}))}
+               for d in devices]
     names = [e['name'] for e in decomposed.entities if isinstance(e, dict) and isinstance(e.get('name'), str)] if decomposed else []
     if semantic and (decomposed.operations or operation):
         from .semantic_operations import operation_previews
@@ -263,18 +298,44 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
                 capabilities = capabilities_by_id[device['device_id']]
                 lines.append(f'{name}（{device["device_id"]}）可用操作：'
                     + ('、'.join(a['name'] for a in capabilities) or '本体仅提供状态和测量查询'))
+            elif item['query_kind'] == 'device_readiness':
+                readiness_result = item['readiness']
+                labels = {'ready': '已满足', 'blocked': '不满足', 'unknown': '待核验'}
+                action_name = ACTION_NAMES.get(readiness_result['requested_action'], readiness_result['requested_action'])
+                lines.append(f'{name}（{device["device_id"]}）{action_name}前置条件：'
+                    + labels[readiness_result['status']])
+                lines.append(_readiness_state_summary(device.get('state')))
+                if readiness_result.get('reason'):
+                    lines.append(readiness_result['reason'])
+                for check in readiness_result['checks']:
+                    actual = check.get('actual')
+                    value = '缺少事实' if actual is None else str(actual)
+                    field = check.get('field')
+                    label = FIELD_NAMES.get(field, field) or check.get('expression', '未解析条件')
+                    lines.append(f"{label}：当前{value}，"
+                        + labels[check['status']] + '；' + check['reason'])
+                lines.append('以上仅判断当前动作前置条件，不代表检修许可或实际操作授权；未生成控制指令。')
             else:
                 fields = {**(device.get('state') or {}), **(device.get('runtime_facts') or {})}
                 lines.append(f'{name}（{device["device_id"]}）：'
                     + '；'.join(f'{FIELD_NAMES.get(key, key)}：{value}' for key, value in fields.items()))
     base['answer'] = {'text': '\n'.join(lines) + '\n以上为当前模拟状态；整体健康或标准符合性需结合适用依据判断。'}
+    response_status = 'answered'
+    if semantic:
+        from .semantic_operations import untraced_text
+        remainder = untraced_text(decomposed, query)
+        if remainder:
+            base.update(coverage_notice={'untraced_text': remainder}, clarification_required=False)
+            base['answer']['text'] += '\n已返回识别到的查询结果；以下文字未被查询清单明确覆盖：' + remainder
+            response_status = 'partial'
     # Preserve source-based temperature assessment as optional evidence, never a fact gate.
-    if len(selected) == 1 and selected[0]['device_type'] == 'transformer' and re.search(r'正常|异常|温升', query):
+    has_knowledge_task = semantic and any(item['query_kind'] in ('assessment', 'standard_query') for item in decomposed.queries)
+    if not has_knowledge_task and len(selected) == 1 and selected[0]['device_type'] == 'transformer' and re.search(r'正常|异常|温升', query):
         from .real_clause_assessment import assess_real_clause
         _, assessment, evidence = assess_real_clause(pipeline, request, snapshot=snapshot, device_id=selected[0]['device_id'], decomposed=decomposed)
         if assessment.get('real_clause_evidence'):
             base.update({k: v for k, v in assessment.items() if k not in ('answer', 'context', 'candidate_instruction', 'device_assessment')})
             base['device_assessment'] = assessment['device_assessment']
             base['answer']['text'] += '\n' + assessment['answer']['text']
-            return 'answered', base, evidence, []
-    return 'answered', base, [], []
+            return response_status, base, evidence, []
+    return response_status, base, [], []

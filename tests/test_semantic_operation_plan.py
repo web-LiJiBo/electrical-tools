@@ -107,7 +107,6 @@ def test_conflicting_explicit_ownership_never_adds_targets(monkeypatch):
     ('请别将主变1的冷却风机启动', {}),
     ('不要将主变1的冷却风机有功功率设定为120kW', {}),
     ('待批准后启动主变1的冷却风机', {'conditions': ['批准后']}),
-    ('先启动主变1的冷却风机', {'order': 1}),
     ('启动主变1的冷却风机', {'negated': True}),
 ])
 def test_negation_conditions_and_order_fail_closed(monkeypatch, query, changes):
@@ -117,6 +116,19 @@ def test_negation_conditions_and_order_fail_closed(monkeypatch, query, changes):
     assert not (result.data.get('candidate_instruction') or {}).get('payload')
     assert not result.data.get('simulation_batch')
     assert len(calls) == 1
+    assert app.simulation_runtime.snapshot(before['session_id']) == before
+
+
+def test_explicit_single_step_order_uses_confirmed_plan(monkeypatch):
+    query = '先启动主变1的冷却风机'
+    item = operation(query); item['order'] = 1
+    app, params, before, calls = planned_app(monkeypatch, query, [item])
+    result = app.analyze(AnalysisRequest(query, parameters=params))
+    assert result.status == 'generated'
+    plan = result.data['simulation_plan']
+    assert len(plan['steps']) == 1
+    assert plan['steps'][0]['preview']['status'] == 'generated'
+    assert len(calls) == len(app._test_review_calls) == 1
     assert app.simulation_runtime.snapshot(before['session_id']) == before
 
 

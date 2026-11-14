@@ -62,7 +62,8 @@ def test_query_failure_not_presented_as_completed_generation():
     pipeline, data, _, request = responding_pipeline(FailingClient())
     response = pipeline._respond(request, 'answered', data, [], [])
     assert response.status == 'partial'
-    assert response.data['processing']['source_result_status'] == 'answered'
+    assert response.data['processing']['candidate_source_result_status'] == 'answered'
+    assert response.data['processing']['source_result_status'] == 'partial'
     assert response.data['processing']['instruction_status'] == 'unavailable'
     assert 'WinError 10013' in response.data['processing']['instruction_reason']
     assert response.warnings

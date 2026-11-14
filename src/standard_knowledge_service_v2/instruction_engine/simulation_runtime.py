@@ -17,6 +17,7 @@ from threading import RLock
 from uuid import uuid4
 
 from .models import CandidateInstruction
+from .operation_conditions import compile_conditions, evaluate_conditions
 
 
 _MISSING = object()
@@ -49,6 +50,7 @@ class _Session:
     commands: dict = field(default_factory=dict)
     events: list = field(default_factory=list)
     scenario_conditions: dict = field(default_factory=dict)
+    plans: dict = field(default_factory=dict)
 
 
 class SimulationRuntime:
@@ -97,15 +99,20 @@ class SimulationRuntime:
         with self._lock:
             return self._snapshot(self._session(session_id))
 
-    def preview(self, session_id, device_id, action, parameters=None, *, evidence=None, expected_version=None):
+    def preview(self, session_id, device_id, action, parameters=None, *, evidence=None, expected_version=None, conditions=None):
         with self._lock:
             session = self._session(session_id)
+            supplied_conditions = deepcopy(conditions if conditions is not None else [])
+            compiled, checks, condition_error = self._check_conditions(session, device_id, supplied_conditions)
             if expected_version is not None and (type(expected_version) is not int or expected_version < 0):
                 result = self._blocked_preview(session, device_id, '分析状态版本必须是非负整数')
             elif expected_version is not None and expected_version != session.version:
                 result = self._blocked_preview(session, device_id, '分析时的状态版本已变化，请重新分析并预览')
+            elif condition_error:
+                result = self._blocked_preview(session, device_id, condition_error)
             else:
                 result = self._prepare(session, device_id, action, parameters)
+            result.update(conditions=supplied_conditions, condition_checks=checks)
             if result['status'] == 'blocked':
                 result['candidate'].update(payload={}, explanation=result['explanation'])
             self._attach_evidence(result, evidence if evidence is not None else [])
@@ -115,6 +122,7 @@ class SimulationRuntime:
                     'preview': deepcopy(result), 'device_id': device_id, 'action': action,
                     'parameters': deepcopy(parameters if parameters is not None else {}),
                     'evidence': deepcopy(result['analysis_evidence']),
+                    'conditions': supplied_conditions, 'compiled_conditions': compiled,
                     'catalog_version': self._catalog_version(), 'result': None,
                 }
             return deepcopy(result)
@@ -135,11 +143,18 @@ class SimulationRuntime:
             elif command['catalog_version'] != self._catalog_version():
                 result = self._blocked_execution(session, command_id, '模拟配置版本已变化，请重新创建会话并预览')
             else:
-                refreshed = self._prepare(session, command['device_id'], command['action'], command['parameters'])
+                _, checks, error = self._check_conditions(session, command['device_id'], command['conditions'])
+                plan = session.plans.get(command.get('plan_id'))
+                if plan and (plan['status'] != 'active' or plan['next_step'] != command['plan_step']):
+                    error = '顺序计划未开放此步骤，须先完成前一步并取得成功反馈'
+                refreshed = (self._blocked_preview(session, command['device_id'], error) if error
+                             else self._prepare(session, command['device_id'], command['action'], command['parameters']))
+                refreshed.update(conditions=deepcopy(command['conditions']), condition_checks=checks)
                 self._attach_evidence(refreshed, command['evidence'])
                 if refreshed['status'] != 'generated':
                     result = self._blocked_execution(session, command_id, refreshed['explanation'])
                     result['relation_checks'] = refreshed['relation_checks']
+                    result['condition_checks'] = checks
                 else:
                     result = self._apply(session, command_id, command, refreshed)
             # Each submitted server command has one immutable result, including failures.
@@ -147,7 +162,110 @@ class SimulationRuntime:
                 result['analysis_evidence'] = deepcopy(command['evidence'])
                 self._record(session, result)
             command['result'] = deepcopy(result)
+            self._complete_plan_step(session, command, result)
             return deepcopy(result)
+
+    def _check_conditions(self, session, device_id, conditions):
+        try:
+            compiled = compile_conditions(conditions, session.profiles.get(device_id, {}))
+            checks = evaluate_conditions(compiled, session.devices.get(device_id, {}))
+            failures = [item['explanation'] for item in checks if item['status'] != 'pass']
+            return compiled, checks, '；'.join(failures)
+        except (ValueError, TypeError) as exc:
+            return [], [], str(exc)
+
+    def create_plan(self, session_id, steps, *, expected_version, evidence=None):
+        """Store one reviewed plan and preview its first step, never dispatch."""
+        with self._lock:
+            session = self._session(session_id)
+            if type(expected_version) is not int or expected_version != session.version:
+                raise ValueError('分析时的状态版本已变化，请重新分析顺序计划')
+            if (type(steps) is not list or not 1 <= len(steps) <= 8
+                    or any(type(row) is not dict or type(row.get('parameters', {})) is not dict
+                           or row.get('device_id') not in session.profiles
+                           or row.get('action') not in session.profiles[row['device_id']]['actions']
+                           for row in steps)):
+                raise ValueError('顺序计划动作或设备不完整')
+            orders = [row.get('order') for row in steps]
+            if len(steps) > 1 and all(value is None for value in orders):
+                raise ValueError('多步计划必须有明确连续顺序，不能为独立操作擅自添加依赖')
+            if any(value is not None for value in orders) and (any(type(value) is not int for value in orders)
+                    or sorted(orders) != list(range(1, len(steps) + 1))):
+                raise ValueError('仅支持从1开始且连续、唯一的顺序步骤')
+            if all(type(value) is int for value in orders):
+                steps = sorted(steps, key=lambda row: row['order'])
+            # Complete compilation before storing even the first command.
+            for row in steps:
+                compile_conditions(row.get('conditions', []), session.profiles[row['device_id']])
+            identifier = f'plan-{uuid4().hex}'
+            plan = {'plan_id': identifier, 'session_id': session_id, 'status': 'active',
+                    'next_step': 1, 'expected_version': expected_version,
+                    'steps': [{**deepcopy(row), 'step': i + 1, 'preview': None, 'execution': None}
+                              for i, row in enumerate(steps)],
+                    'execution_mode': 'feedback_gated_confirmation', 'simulation_only': True,
+                    'dispatch_allowed': False, 'catalog_version': self._catalog_version(),
+                    'evidence': deepcopy(evidence if evidence is not None else [])}
+            session.plans[identifier] = plan
+            self.preview_plan_step(session_id, identifier, 1, expected_version=expected_version)
+            return self.plan_snapshot(session_id, identifier)
+
+    def _plan(self, session, plan_id):
+        if type(plan_id) is not str or plan_id not in session.plans:
+            raise KeyError('顺序计划不存在或不属于此模拟会话')
+        return session.plans[plan_id]
+
+    def plan_snapshot(self, session_id, plan_id):
+        with self._lock:
+            plan = deepcopy(self._plan(self._session(session_id), plan_id))
+            plan.pop('catalog_version', None)
+            plan.pop('evidence', None)
+            return plan
+
+    def preview_plan_step(self, session_id, plan_id, step, *, expected_version):
+        with self._lock:
+            session = self._session(session_id)
+            plan = self._plan(session, plan_id)
+            if type(step) is not int or not 1 <= step <= len(plan['steps']):
+                raise ValueError('步骤须为计划中的正整数')
+            row = plan['steps'][step - 1]
+            blocked = lambda reason: self._blocked_preview(session, row['device_id'], reason)
+            if session.version != plan['expected_version'] or plan['catalog_version'] != self._catalog_version():
+                plan.update(status='stopped', stop_reason='状态版本或配置版本已变化，请重新分析')
+                return blocked(plan['stop_reason'])
+            if type(expected_version) is not int or expected_version != plan['expected_version']:
+                return blocked('状态版本不符，请读取最新计划与设备状态')
+            if plan['status'] != 'active' or step != plan['next_step']:
+                return blocked('顺序计划未开放此步骤；前一步须有成功执行及成功反馈，失败后停止')
+            if step > 1:
+                previous = plan['steps'][step - 2]['execution'] or {}
+                if (previous.get('status') != 'succeeded' or previous.get('feedback', {}).get('status') != 'succeeded'
+                        or previous.get('after', {}).get('version') != session.version):
+                    return blocked('前一步尚无成功执行反馈或最新状态版本')
+            if row['preview'] is not None:
+                return deepcopy(row['preview'])
+            preview = self.preview(session_id, row['device_id'], row['action'], row.get('parameters', {}),
+                                   conditions=row.get('conditions', []), expected_version=expected_version,
+                                   evidence=plan['evidence'])
+            preview.update(plan_id=plan_id, plan_step=step)
+            row['preview'] = deepcopy(preview)
+            if preview['status'] == 'generated':
+                session.commands[preview['command_id']].update(plan_id=plan_id, plan_step=step)
+            else:
+                plan.update(status='stopped', stop_reason=preview['explanation'])
+            return deepcopy(preview)
+
+    def _complete_plan_step(self, session, command, result):
+        plan = session.plans.get(command.get('plan_id'))
+        if plan is None:
+            return
+        plan['steps'][command['plan_step'] - 1]['execution'] = deepcopy(result)
+        if result['status'] == 'succeeded' and (result.get('feedback') or {}).get('status') == 'succeeded':
+            plan['expected_version'] = session.version
+            plan['next_step'] += 1
+            if plan['next_step'] > len(plan['steps']):
+                plan['status'] = 'completed'
+        else:
+            plan.update(status='stopped', stop_reason=result['explanation'])
 
     def set_condition(self, session_id, condition, *, scenario_id=None):
         with self._lock:
@@ -416,10 +534,12 @@ class SimulationRuntime:
         template = session.profiles[identifier]['actions'][action]
         self._effects(staged[identifier], template, command['parameters'])
         feedback = self._feedback(staged[identifier], template, refreshed['candidate']['payload'])
-        status = 'failed' if feedback['status'] == 'failed' else 'succeeded'
+        status = feedback['status'] if feedback.get('status') in ('succeeded', 'failed', 'unknown') else 'unknown'
         result = {'status': status, 'command_id': command_id, 'target': identifier, 'action': action,
                   'template_ref': template.get('template_ref'), 'candidate': refreshed['candidate'],
                   'analysis_evidence': refreshed['analysis_evidence'],
+                  'conditions': deepcopy(command['conditions']),
+                  'condition_checks': deepcopy(refreshed.get('condition_checks', [])),
                   'relation_checks': refreshed['relation_checks'], 'before': before, 'after': before,
                   'feedback': feedback, 'simulation_only': True, 'dispatch_allowed': False,
                   'explanation': feedback['explanation']}

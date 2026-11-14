@@ -91,7 +91,7 @@ class AnalysisPipeline:
         online = isinstance(self.decomposer, RemoteModelDecomposer) and not (
             self.config is not None and self.config.llm.allow_offline_fallback)
         kind = decomposed.scenario.get('query_kind')
-        kinds = ('device_status', 'device_capability', 'standard_query', 'assessment', 'operation', 'other')
+        kinds = ('device_status', 'device_capability', 'device_readiness', 'standard_query', 'assessment', 'operation', 'other')
         if online and (decomposed.source != 'model_api' or not decomposed.valid or kind not in kinds
                        or decomposed.operations is None or decomposed.queries is None
                        or kind == 'operation' and not decomposed.operations):
@@ -118,7 +118,14 @@ class AnalysisPipeline:
         scoped.entities = [{'name': item['device_id'], 'type': '设备'} for item in questions if item['device_id']]
         parameters = {key: deepcopy(value) for key, value in request.parameters.items()
                       if key not in ('device_id', 'device_ids', 'action', 'action_parameters')}
-        subrequest = AnalysisRequest('\n'.join(item['source_text'] for item in questions),
+        from .request_controls import control_source_text
+        source_parts = [item['source_text'] for item in questions]
+        # Global restrictions retain their already-verified provenance when the
+        # knowledge portion is scoped away from factual queries and operations.
+        control_source = control_source_text(decomposed, request.query)
+        if control_source and not any(control_source in part for part in source_parts):
+            source_parts.append(control_source)
+        subrequest = AnalysisRequest('\n'.join(source_parts),
             scenario_hint=request.scenario_hint, parameters=parameters,
             target_protocol=request.target_protocol, conversation_context=deepcopy(request.conversation_context))
         return self._analyze_decomposed(subrequest, scoped, review_context=review_context, process_questions=False)
@@ -129,17 +136,46 @@ class AnalysisPipeline:
         from .semantic_operations import catalog_context
         def respond(*args):
             return self._respond(*args, review_context=review_context)
+        from .request_controls import analysis_only_requested, request_controls_error
+        control_error = request_controls_error(decomposed, request.query)
+        if control_error:
+            return respond(request, 'uncertain', {'simulation_factual': True,
+                'decomposition': decomposed.to_dict(), 'candidate_instruction': None,
+                'answer': {'text': control_error}, 'control_block_reason': control_error,
+                'clarification_required': True, 'devices': []}, [], [])
+        analysis_only = analysis_only_requested(decomposed)
+        if analysis_only and decomposed.operations:
+            from copy import deepcopy
+            decomposed = deepcopy(decomposed)
+            decomposed.operations, decomposed.actions = [], []
+            if decomposed.queries:
+                decomposed.scenario['query_kind'] = decomposed.queries[0]['query_kind']
+            else:
+                return respond(request, 'uncertain', {'simulation_factual': True,
+                    'decomposition': decomposed.to_dict(), 'candidate_instruction': None,
+                    'answer': {'text': '已保留只分析要求；请明确想核对的状态、条件或来源。'},
+                    'devices': []}, [], [])
         kind = decomposed.scenario.get('query_kind')
         intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
-        if not process_questions:
+        if not process_questions or analysis_only:
             from ..decomposition.intent_classifier import IntentClassification
             intent = IntentClassification('compliance' if kind == 'assessment' else 'search',
                 intent.confidence, (*intent.reasons, '知识子请求只做分析，不生成原操作候选'), intent.model_intent)
         decomposed.intent = intent.intent
         questions = [item for item in (decomposed.queries or []) if item['query_kind'] in ('standard_query', 'assessment')]
-        factual = [item for item in (decomposed.queries or []) if item['query_kind'] in ('device_status', 'device_capability')]
+        factual = [item for item in (decomposed.queries or []) if item['query_kind'] in ('device_status', 'device_capability', 'device_readiness')]
         needs_review = bool(decomposed.operations) and request.parameters.get('simulation_mode') is True
         context = review_packet(request.query, decomposed, catalog_context(self, request), request.conversation_context) if needs_review else None
+        prepared = None
+        if needs_review:
+            from .maintenance_plans import prepare_operation_plan, preview_operation_plan
+            prepared = prepare_operation_plan(self, request, decomposed)
+            if prepared is not None:
+                context['execution_support'] = prepared.get('execution_support', {})
+                if prepared.get('status') != 'prepared':
+                    status, data, evidence, warnings = preview_operation_plan(self, request, decomposed, prepared)
+                    data.setdefault('decomposition', decomposed.to_dict())
+                    return respond(request, status, data, evidence, warnings)
         knowledge = None
         if process_questions and questions and (decomposed.operations or factual):
             knowledge = self._question_response(request, decomposed, questions, context)
@@ -156,8 +192,14 @@ class AnalysisPipeline:
                 if knowledge is not None:
                     data['query_results'] = [{'query_kind': 'knowledge', 'status': knowledge.status, 'data': knowledge.data, 'evidence': knowledge.evidence}]
                 return respond(request, 'partial' if review.get('status') == 'failed' else 'uncertain', data, [], [])
+            if prepared is not None:
+                from ..decomposition.intent_classifier import IntentClassification
+                intent = IntentClassification('instruction', intent.confidence,
+                    (*intent.reasons, '受限操作清单已完成后台编译和独立语义复核，仍须逐步核验与确认'), intent.model_intent)
+                decomposed.intent = intent.intent
         from .simulation_query import answer_simulation_query
-        simulation_answer = answer_simulation_query(self, request, decomposed=decomposed, intent=intent)
+        simulation_answer = (preview_operation_plan(self, request, decomposed, prepared) if prepared is not None
+                             else answer_simulation_query(self, request, decomposed=decomposed, intent=intent))
         if simulation_answer is not None:
             status, data, evidence, warnings = simulation_answer
             data.setdefault('decomposition', decomposed.to_dict())
@@ -419,14 +461,24 @@ class AnalysisPipeline:
             if data.get('advice', {}).get('answer_supported') is False:
                 status = 'uncertain'
                 evidence.clear()
-                data.pop('selected_rule', None)
-                data.pop('knowledge_graph_evidence', None)
-                data['candidate_instruction'] = None
-                data['control_block_reason'] = data['advice'].get('unable_reason') or '检索条款不支持回答当前问题'
+                from .answer_integrity import invalidate_answer
+                invalidate_answer(data, data['advice'].get('unable_reason') or '检索条款不支持回答当前问题')
             if 'report' in data:
                 data['report'] = self.report_generator.generate({'context': data.get('context', {}),
                     'clauses': evidence, 'instruction': data.get('candidate_instruction'),
                     'advice': data.get('advice'), 'validation': data.get('validation', {}), 'warnings': warnings}).to_dict()
+        from .request_controls import analysis_only_requested
+        if analysis_only_requested(data.get('decomposition', {})):
+            data['candidate_instruction'] = None
+            for name in ('simulation_preview', 'simulation_batch', 'simulation_plan', 'instruction_generation'):
+                data.pop(name, None)
+            if data.get('advice', {}).get('instruction'):
+                data['advice']['instruction'] = None
+                data['advice']['conversion'] = {'status': 'blocked', 'reason': '本次只分析，不生成操作指令。'}
+        if 'report' in data:
+            data['report'] = self.report_generator.generate({'context': data.get('context', {}),
+                'clauses': evidence, 'instruction': data.get('candidate_instruction'),
+                'advice': data.get('advice'), 'validation': data.get('validation', {}), 'warnings': warnings}).to_dict()
         advice = data.get('advice', {})
         candidate = data.get('candidate_instruction') or {}
         batch = data.get('simulation_batch', {})
@@ -459,7 +511,8 @@ class AnalysisPipeline:
             status = 'uncertain'
         data['processing'] = {
             'query_intent': data.get('intent_classification', {}).get('intent', 'assessment'),
-            'source_result_status': source_result_status,
+            'source_result_status': status,
+            'candidate_source_result_status': source_result_status,
             'decomposition_source': data.get('decomposition', {}).get('source'),
             'advice_status': advice.get('status', 'not_requested'),
             'advice_reason_code': advice.get('reason_code', ''),

@@ -20,10 +20,27 @@ REVIEW_PROMPT = '''OPERATION_PLAN_REVIEW
 未知设备、所属冲突、动作不符、参数变化或缺少依据必须拒绝，不得批准部分清单。
 queries只用于核对覆盖，不生成额外操作；items只对应operations。
 只能返回复核诊断，device_id/action/parameters必须逐项原样回显，禁止用修改后的值申请通过。
-source_text等证据无需回显。即使认为应修改计划，也只设matches_request=false并说明原因。
+source_text等证据无需回显。items每项必须包含index、matches_request、reason、device_id、action、parameters全部六个字段，不能只返回核对理由。没有参数也必须回显parameters:{}；device_id/action必须从输入该项原样复制，不可仅在reason中提及。即使认为应修改计划，也只设matches_request=false并说明原因。
 存在针对所请求操作的否定、执行前提或先后依赖时，对应has_negation/has_conditions/has_order
-必须为true，approved必须为false；不得忽略限制来批准无条件操作。
-只有每项完全对应原文、无遗漏且无上述限制时才可approved=true。
+必须为true。has_negation一律拒绝。执行条件和顺序只有输入execution_support明确为相应类型
+提供后台编译支持且operations完整原样绑定时才可批准；没有此服务器上下文一律拒绝。
+execution_support只说明后台支持范围，不证明语义正确。须独立核对原话自然语言条件与
+conditions比较式的字段、方向、值、设备作用域及每个order是否忠实，遗漏、替换或擅自
+添加条件/步骤必须拒绝。未知字段、复杂分支、时间等待不支持，不得自行宣称后台支持。
+execution_support.order=true且failure_policy=stop_on_unsuccessful_or_unknown_feedback时，
+后台只在前一步成功执行、取得成功反馈并确认最新版本后才开放下一步，每步仍分别确认。
+原话要求前步失败或结果未知就不要继续后步，与此失败停止策略一致，不等于取消原本请求的
+肯定操作；仅有此顺序限制时has_order=true、has_negation=false。若用户另有真正禁止、
+撤销或取消原操作，仍须has_negation=true并拒绝，不能借失败停止策略忽略取消。
+execution_support.conditions=true时，后台在预览和执行前都重查条件，不满足或缺事实就
+不生成/不执行指令。用户“条件不满足则不要生成/执行”的要求属于条件失败阻断，
+仅此限制时has_conditions=true而非has_negation=true；须独立确认比较式忠实保留全部条件。
+has_conditions专指需要另外核验的设备事实、许可等执行前提，不重复表示order已经承载的前步成功反馈依赖。
+例如两项肯定动作order为1和2，后台failure_policy明确为stop_on_unsuccessful_or_unknown_feedback，
+原文只要求“前步反馈成功才继续，失败则停止”时，conditions为空是正确表达，应has_order=true、
+has_conditions=false、has_negation=false；不能因为没有把反馈写成设备条件而拒绝。
+若原文另有设备、许可或时间前提，则必须独立核对，不可借此示例省略。
+只有每项完全对应原文、无遗漏、否定或不受支持限制时才可approved=true。
 仅输出一个完整JSON对象，所有字段必填，不要Markdown、前后解释或截断：
 {"approved":true或false,"items":[{"index":0,"matches_request":true或false,
 "reason":"核对理由","device_id":"输入编号","action":"输入动作","parameters":{}}],
@@ -98,7 +115,7 @@ def parse_review_json(raw):
         raise ValueError('invalid_model_output') from exc
 
 
-def validate_review(raw, operations):
+def validate_review(raw, operations, execution_support=None):
     """Return approved only for a complete, typed, unchanged affirmative review."""
     invalid = _result('blocked', 'invalid_model_output', '操作语义复核结果不完整或格式不符合协议，未生成预览。')
     try:
@@ -133,8 +150,17 @@ def validate_review(raw, operations):
             if (item['device_id'] != original['device_id'] or item['action'] != original['action']
                     or not _same_json(item['parameters'], original['parameters'])):
                 return _result('blocked', 'review_item_mismatch', '复核结果改变了原清单中的设备、动作或参数，未生成预览。', raw['items'])
+        support_bound = (type(execution_support) is dict
+                         and _same_json(execution_support.get('operations'), operations))
+        supports_conditions = support_bound and execution_support.get('conditions') is True
+        orders = [row.get('order') for row in operations]
+        supports_order = (support_bound and execution_support.get('order') is True
+                          and all(type(value) is int for value in orders)
+                          and sorted(orders) == list(range(1, len(orders) + 1)))
         for row in operations:
-            if row.get('negated') or row.get('conditions') or row.get('order') is not None or row.get('clarification'):
+            if (row.get('negated') or row.get('clarification')
+                    or row.get('conditions') and not (supports_conditions and raw['has_conditions'])
+                    or row.get('order') is not None and not (supports_order and raw['has_order'])):
                 return _result('blocked', 'review_plan_restriction', '原操作清单仍包含否定、条件、顺序或待澄清项，未生成预览。', raw['items'])
         for field, code, reason in (
             ('has_negation', 'review_negation', '请求包含操作否定，未生成预览。'),
@@ -142,7 +168,8 @@ def validate_review(raw, operations):
             ('has_order', 'review_order', '请求包含操作先后依赖，当前不能编排，未生成预览。'),
             ('missing_requests', 'review_missing_requests', '语义清单遗漏了原文诉求，未生成部分预览。'),
         ):
-            if raw[field]:
+            if raw[field] and not (field == 'has_conditions' and supports_conditions
+                                   or field == 'has_order' and supports_order):
                 return _result('blocked', code, reason, raw['items'])
         if raw['approved'] is not True or any(item['matches_request'] is not True for item in raw['items']):
             return _result('blocked', 'review_rejected', raw['reason'] or '操作清单未通过独立语义复核，未生成预览。', raw['items'])
@@ -167,7 +194,7 @@ def review_operations(client, packet):
     except Exception as exc:
         code = model_error_code(exc)
         return _result('failed', code, MESSAGES[code])
-    result = validate_review(raw, operations)
+    result = validate_review(raw, operations, snapshot.get('execution_support'))
     if result['reason_code'] in ('invalid_model_output', 'invalid_operation_plan'):
         result['status'] = 'failed'
     return result

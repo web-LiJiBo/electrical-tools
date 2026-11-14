@@ -8,6 +8,8 @@ from ..decomposition.model_errors import MESSAGES, model_error_code
 from .advice_conversion import advice_context, convert_advice
 from .action_request import action_request_restriction
 from .action_parameters import PARAMETER_ALIASES, resolve_action_parameters
+from .answer_integrity import invalidate_answer
+from ..knowledge.source_quality import audit_source_quality
 
 
 PROMPT = '''你是电力标准建议助手。输入是用户问题、检索原文、来源审查状态、当前模拟设备快照及允许动作。
@@ -19,14 +21,20 @@ PROMPT = '''你是电力标准建议助手。输入是用户问题、检索原�
 仅输出JSON：{"summary":"条款与状态分析", "answer_supported":true或false,
 "support_assessments":[{"rule_id":"输入规则ID","supports_answer":true或false,"reason":"简短理由"}],
 "unable_reason":"无法回答时的原因，可回答时为空字符串", "rule_ids":["仅列直接支持回答的规则ID"],
-"suggestions":[{"text":"建议及理由", "rule_ids":["仅列支持该建议的规则ID"]}],
+"suggestions":[{"text":"建议及理由", "purpose":"support或limitation", "rule_ids":["本次输入中的规则ID"]}],
 "instruction":null或{"text":"一条自然语言指令", "device_id":"输入的设备ID",
 "action":"允许动作码", "parameters":{}, "rule_ids":["明确支持该动作的规则ID"]}}。
 如果所有条款均不支持当前问题，answer_supported必须为false，rule_ids必须为空数组，instruction必须为null，不得把无关条款拼接成答案。
 每段建议必须引用输入中的来源ID，并说明适用性及待复核状态；不能把引用存在或模拟转换成功说成标准已经确认。
+purpose=support用于支持结论，只能引用supports_answer=true的来源。purpose=limitation用于解释不适用、差异或资料缺口，可引用本次输入中未采用的来源；这些引用不作为结论或指令依据。answer_supported=false时建议只能是limitation，rule_ids总表为空且instruction=null。
 summary最多250字；suggestions最多5项，每项最多100字，不能超过上述字段约定。
 动作模板不预先绑定条款，动作码只能从设备允许列表选择；条款动作和条件字段可以为空或自然语言。模拟参数、点位和联锁由后端模板校验，不能将模拟配置定值说成标准限值。
 温度保护动作定值不等于功率回降目标。只有设备快照存在已配置回降目标且来源支持时，可建议runback_power；参数必须引用该配置，不能推导或编造。缺少配置时instruction为null。
+source_quality是后台来源质量审计：缺少标准编号、版本或原文限定未复核时，只能说明待核验和资料缺口，不能把来源文件编号当标准编号，不能猜补标准及版本。
+quote是分解片段，source_text是完整来源原文。容量、电压等级、出厂/检修工况和设备部件等限定必须以完整来源核对；有载分接开关独立油室不能当作变压器本体绝缘油依据。
+用户要求编号、版本和条款时，formal_citation_ready为false的来源不能构成已确认适用的正式标准结论。试验项目清单、实测值要求和油中单项指标不能直接授权恢复送电或合闸。
+understanding.request_controls.analysis_only为true时，只分析，不提出设备指令，instruction必须为null。
+source_quality、formal_citation_ready等字段和布尔标志仅供后台判断，不得原样写进summary、suggestions或unable_reason；面向用户使用中文说明，如“标准编号和版本尚未核验”“完整适用范围仍需核对”“本次只作分析”，不展示内部字段名、状态码或协议细节。
 '''
 
 
@@ -53,11 +61,21 @@ def _parameter_consistency(request, understanding, instruction, template):
     return error
 
 
+def _withdraw_unverified_formal_answer(data, needs_formal_citation):
+    """A failed model call cannot restore authority absent from source metadata."""
+    if needs_formal_citation and not data.get('source_quality', {}).get('formal_citation_ready'):
+        reason = '现有候选来源的标准编号、版本或完整适用范围尚未核验，无法按要求提供已确认适用的正式标准结论；需补充原标准及检修试验依据，不能据此直接允许合闸。'
+        data['advice'].update(answer_supported=False, unable_reason=reason,
+                              support_decision_source='backend_source_quality')
+        invalidate_answer(data, reason)
+
+
 class GroundedAdviceService:
     def __init__(self, client=None):
         self.client = client
 
     def enrich(self, pipeline, request, data, *, review_context=None):
+        needs_formal_citation = bool(re.search(r'(?:编号|标准号).*(?:版本|版次)|(?:版本|版次).*(?:编号|标准号)', request.query, re.S))
         data['advice'] = {'status': 'unavailable', 'source': 'not_generated',
                           'summary': '', 'suggestions': [], 'instruction': None,
                           'reason_code': 'model_disabled',
@@ -66,7 +84,7 @@ class GroundedAdviceService:
             data.pop(key, None)
         if data.get('candidate_instruction'):
             data['candidate_instruction']['payload'] = {}
-        if self.client is None:
+        if self.client is None and not needs_formal_citation:
             return None
         # In model-advice mode, old pre-model candidates are explanatory only.
         if data.get('candidate_instruction'):
@@ -89,12 +107,21 @@ class GroundedAdviceService:
         if not sources:
             data['advice']['reason_code'] = 'no_sources'
             data['advice']['notice'] = '没有可供梳理的正文来源，不调用建议模型'
+            _withdraw_unverified_formal_answer(data, needs_formal_citation)
             return None
         understanding = data.get('decomposition', {})
+        analysis_only = (understanding.get('request_controls') or {}).get('analysis_only') is True
+        quality = {rid: audit_source_quality(u, r) for rid, (u, r) in sources.items()}
+        data['source_quality'] = {'formal_citation_ready': all(q['formal_citation_ready'] for q in quality.values()),
+                                  'sources': [{'rule_id': rid, **q} for rid, q in quality.items()],
+                                  'notice': '来源质量审计仅核对现有元数据；不补造标准编号、版本或适用限值'}
+        if self.client is None:
+            _withdraw_unverified_formal_answer(data, needs_formal_citation)
+            return None
         runtime, snapshot, device, profile, context_error = advice_context(pipeline, request,
             entities=understanding.get('entities', []))
         packet = {'query': request.query, 'device': device,
-                  'understanding': {k: understanding[k] for k in ('intent', 'entities', 'actions', 'constraints', 'scenario') if k in understanding},
+                  'understanding': {k: understanding[k] for k in ('intent', 'entities', 'actions', 'constraints', 'scenario', 'request_controls') if k in understanding},
                   'assessment': data.get('device_assessment'),
                   'allowed_actions': list(profile.get('actions', {})),
                   'action_templates': {action: {'parameter': t.get('parameter'), 'unit': t.get('unit'),
@@ -106,7 +133,9 @@ class GroundedAdviceService:
                         for action, t in profile.get('actions', {}).items()},
                   'clauses': [{'rule_id': rid, 'standard_id': u.standard_id, 'version': u.version,
                                'chapter_path': u.chapter_path, 'quote': r.content, 'source_text': u.metadata.get('source', {}).get('source_text', r.content), 'action': r.action,
-                               'condition': r.condition, 'manual_review_required': u.metadata.get('audit', {}).get('manual_review_required', False)}
+                               'condition': r.condition, 'manual_review_required': u.metadata.get('audit', {}).get('manual_review_required', False),
+                               'source_quality': {key: value for key, value in quality[rid].items()
+                                                  if key not in ('source_text', 'source_location')}}
                               for rid, (u, r) in sources.items()]}
         prompt = PROMPT
         if review_context is not None:
@@ -122,6 +151,7 @@ class GroundedAdviceService:
             data['advice'].update(reason_code=code, error_code=code, notice=MESSAGES[code])
             if review_context is not None:
                 data['operation_review'] = {'status': 'failed', 'reason': '操作语义复核未完成，请稍后重试。', 'reason_code': code}
+            _withdraw_unverified_formal_answer(data, needs_formal_citation)
             return None
         try:
             if review_context is not None:
@@ -131,7 +161,8 @@ class GroundedAdviceService:
                 parsed = extract_json_object(raw)
             if review_context is not None:
                 from .operation_review import validate_review
-                data['operation_review'] = validate_review(parsed.get('operation_review'), review_context['operations'])
+                data['operation_review'] = validate_review(parsed.get('operation_review'), review_context['operations'],
+                    review_context.get('execution_support'))
                 parsed = parsed['advice']
                 if parsed.get('instruction') is not None:
                     raise ValueError('Combined review must not propose executable replacements')
@@ -141,12 +172,26 @@ class GroundedAdviceService:
             data['advice'].update(reason_code=code, error_code=code, notice=MESSAGES[code])
             if review_context is not None:
                 data['operation_review'] = {'status': 'failed', 'reason': '操作语义复核未完成，请稍后重试。', 'reason_code': code}
+            _withdraw_unverified_formal_answer(data, needs_formal_citation)
             return None
+        cited_quality = [quality[rid] for rid in advice['rule_ids']]
+        if advice['answer_supported'] and needs_formal_citation and (
+                not cited_quality or any(not item['formal_citation_ready'] for item in cited_quality)):
+            reason = '现有候选来源的标准编号、版本或完整适用范围尚未核验，无法按要求提供已确认适用的正式标准结论；需补充原标准及检修试验依据，不能据此直接允许合闸。'
+            advice.update(answer_supported=False, unable_reason=reason, rule_ids=[], instruction=None)
+            advice['summary'] = reason
+            advice['support_assessments'] = [{'rule_id': rid, 'supports_answer': False,
+                'reason': '正式标准身份或适用范围待核验，仅保留诊断说明'} for rid in sources]
+            for suggestion in advice['suggestions']:
+                suggestion['purpose'] = 'limitation'
         data['advice'] = {'status': 'generated' if advice['answer_supported'] else 'unsupported', 'source': 'llm', **advice,
                           'notice': '模型建议待人工复核；引用存在不代表语义或适用性已审定'}
-        cited = list(dict.fromkeys(advice['rule_ids'] + [rid for s in advice['suggestions'] for rid in s['rule_ids']]
+        cited = list(dict.fromkeys(advice['rule_ids'] + [rid for s in advice['suggestions'] if s.get('purpose', 'support') == 'support' for rid in s['rule_ids']]
                      + (advice['instruction']['rule_ids'] if advice['instruction'] else [])))
         data['advice']['sources'] = [c for c in packet['clauses'] if c['rule_id'] in cited]
+        diagnostic_ids = {rid for s in advice['suggestions'] if s.get('purpose') == 'limitation' for rid in s['rule_ids']}
+        data['advice']['diagnostic_sources'] = [{**c, 'adopted': False, 'usage': 'limitations_only'}
+            for c in packet['clauses'] if c['rule_id'] in diagnostic_ids]
         data['advice']['device_snapshot'] = device
         if data.get('candidate_instruction'):
             data['candidate_instruction']['payload'] = {}
@@ -155,8 +200,14 @@ class GroundedAdviceService:
             data['advice']['conversion'] = {'status': 'not_proposed', 'reason': advice['unable_reason']}
             data['candidate_instruction'] = None
             data.setdefault('answer', {})['text'] = advice_text + ('\n' + advice['unable_reason'] if advice['unable_reason'] else '')
+            invalidate_answer(data, advice['unable_reason'] or '检索条款不支持当前问题')
             return 'uncertain'
         data.setdefault('answer', {})['text'] = advice_text + '\n' + data.get('answer', {}).get('text', '')
+        if analysis_only:
+            data['advice']['instruction'] = None
+            data['advice']['conversion'] = {'status': 'not_proposed', 'reason': '用户要求仅分析，不生成设备指令。'}
+            data['candidate_instruction'] = None
+            return None
         instruction = advice['instruction']
         if not instruction:
             data['advice']['conversion'] = {'status': 'not_proposed',
@@ -251,10 +302,16 @@ class GroundedAdviceService:
         if not isinstance(raw['suggestions'], list) or len(raw['suggestions']) > 5:
             raise ValueError('suggestions')
         for suggestion in raw['suggestions']:
-            if not isinstance(suggestion, dict) or set(suggestion) != {'text', 'rule_ids'}:
+            if not isinstance(suggestion, dict) or set(suggestion) not in ({'text', 'rule_ids'}, {'text', 'purpose', 'rule_ids'}):
                 raise ValueError('suggestion')
             text(suggestion['text'])
-            references(suggestion['rule_ids'], allow_empty=not raw['answer_supported'], allowed=supported)
+            purpose = suggestion.get('purpose', 'support')
+            if purpose not in ('support', 'limitation'):
+                raise ValueError('suggestion purpose')
+            if purpose == 'support' and 'purpose' in suggestion and not raw['answer_supported']:
+                raise ValueError('unsupported suggestion')
+            references(suggestion['rule_ids'], allow_empty=not raw['answer_supported'],
+                       allowed=set(sources) if purpose == 'limitation' else supported)
         instruction = raw['instruction']
         if instruction is not None:
             if not isinstance(instruction, dict) or set(instruction) != {'text', 'device_id', 'action', 'parameters', 'rule_ids'}:

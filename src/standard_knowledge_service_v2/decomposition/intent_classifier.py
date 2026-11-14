@@ -50,9 +50,16 @@ class IntentClassifier:
         text = ''.join(str(query).split())
         return any(re.search(pattern, text) for pattern in cls._negated_command_patterns)
 
-    def classify(self, query: str, model_intent: str = "", actions: list[str] | None = None, *, query_kind: str | None = None) -> IntentClassification:
+    def classify(self, query: str, model_intent: str = "", actions: list[str] | None = None, *, query_kind: str | None = None, request_controls: dict | None = None, feedback_sequence: bool = False, condition_guard: bool = False) -> IntentClassification:
         text = "".join(str(query).split())
-        if self.action_is_negated(text):
+        if request_controls and request_controls.get('analysis_only') is True:
+            return IntentClassification('search', 0.99, ('整句仅限分析，禁止生成操作预览',), model_intent)
+        if query_kind == 'device_readiness':
+            return IntentClassification('search', 0.99, ('动作前置条件诊断为只读查询',), model_intent)
+        # A server-validated sequential candidate still needs independent review:
+        # "do not continue after failure" is its built-in feedback gate. Retain
+        # question checks below; explicit semantic cancellation is never waived.
+        if not (feedback_sequence or condition_guard) and self.action_is_negated(text):
             return IntentClassification(
                 "search", 0.99,
                 ("检测到否定、禁止或撤销语气，明确阻止指令生成",),

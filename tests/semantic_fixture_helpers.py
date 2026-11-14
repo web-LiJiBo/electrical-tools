@@ -87,4 +87,6 @@ def approve_review_packet(packet):
     return {'approved':True,'items':[{'index':index,'matches_request':True,'reason':'受控测试复核一致',
         'device_id':item['device_id'],'action':item['action'],'parameters':item['parameters']}
         for index,item in enumerate(packet['operations'])], 'missing_requests':[],
-        'has_negation':False,'has_conditions':False,'has_order':False,'reason':'受控测试整批通过'}
+        'has_negation':any(item.get('negated') for item in packet['operations']),
+        'has_conditions':any(item.get('conditions') for item in packet['operations']),
+        'has_order':any(item.get('order') is not None for item in packet['operations']),'reason':'受控测试整批通过'}

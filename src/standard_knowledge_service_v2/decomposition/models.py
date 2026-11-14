@@ -29,6 +29,8 @@ class DecompositionResult:
     # None denotes a legacy/local decomposer, never an accepted online plan.
     operations: list[dict[str, Any]] | None = None
     queries: list[dict[str, Any]] | None = None
+    # None means the model did not declare whole-request control restrictions.
+    request_controls: dict[str, Any] | None = None
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from hashlib import sha256
+from collections import Counter
 from pathlib import Path
 import re
 from time import perf_counter
@@ -13,6 +14,7 @@ from .entity_linker import EntityLinker
 from .models import RetrievalTrace, RuleHit
 from .reranker import EvidenceReranker
 from .text import normalize, prepared_similarity, structural_score, text_similarity, tokens
+from .applicability import query_applicability, source_applicability, rejection_reason
 
 
 class LocalLunwenRetrievalAdapter:
@@ -22,6 +24,7 @@ class LocalLunwenRetrievalAdapter:
         self.last_trace: RetrievalTrace | None = None
         self._entities = []
         self._rows = []
+        self._applicability = {}
         self.refresh_index()
 
     def refresh_index(self) -> None:
@@ -33,6 +36,7 @@ class LocalLunwenRetrievalAdapter:
         # times. Build immutable lexical features once when the repository is
         # assembled; this changes no score formula and avoids repeated local work.
         self._rows = []
+        self._applicability = {}
         for unit in self.repository.units:
             for rule in unit.rules:
                 if self._navigation_only(rule, unit):
@@ -42,6 +46,7 @@ class LocalLunwenRetrievalAdapter:
                 rule_normalized, unit_normalized = normalize(rule_text), normalize(unit_text)
                 self._rows.append((rule, unit, rule_text, rule_normalized, tokens(rule_normalized),
                                    unit_text, unit_normalized, tokens(unit_normalized)))
+                self._applicability[rule.rule_id] = source_applicability(rule, unit)
 
     @classmethod
     def from_dataset(cls, directory: Path, limit: int | None = None, threshold: float = 0.3) -> "LocalLunwenRetrievalAdapter":
@@ -100,11 +105,20 @@ class LocalLunwenRetrievalAdapter:
         requested_actions = {
             str(item).strip() for item in request.parsed_json.get("actions", []) if str(item).strip()
         }
+        query_scope = query_applicability(request.clause_text, request.parsed_json)
+        rejected = Counter()
+        library_topics = Counter(topic for _, topics, _ in self._applicability.values() for topic in topics)
+        eligible_topics = Counter()
         for rule, unit, rule_text, rule_normalized, rule_tokens, unit_text, unit_normalized, unit_tokens in rows:
+            rejection = rejection_reason(query_scope, self._applicability[rule.rule_id])
+            if rejection:
+                rejected[rejection] += 1
+                continue
             # A bare term name cannot answer which work a standard applies to.
             # Require scope wording in the source, rather than infer it from metadata.
             if scope_query and not re.search(r"适用于|适用范围|适用对象", normalize(rule_text)):
                 continue
+            eligible_topics.update(self._applicability[rule.rule_id][1])
             entity_score = max((item.score for item in linked if item.entity in unit.entities), default=0.0)
             unit_text = " ".join([rule_text, rule.subject, *(item.name for item in unit.entities)])
             direct_entity_score = max(
@@ -151,13 +165,23 @@ class LocalLunwenRetrievalAdapter:
                 break
         digest = sha256(f"{request.clause_text}|{request.top_k_entities}|{request.top_k_rules}|{len(self.repository.units)}".encode()).hexdigest()[:16]
         finished = perf_counter()
+        returned_topics = Counter(topic for hit in ranked for topic in self._applicability[hit.rule.rule_id][1])
+        topic_coverage = {topic: {'library_rules': library_topics[topic],
+            'applicable_candidates': eligible_topics[topic], 'returned_rules': returned_topics[topic],
+            'status': 'missing_from_repository' if not library_topics[topic] else
+                      'no_applicable_candidates' if not eligible_topics[topic] else
+                      'not_recalled' if not returned_topics[topic] else 'recalled'}
+            for topic in sorted(query_scope[1])}
         self.last_trace = RetrievalTrace(request.clause_text, linked, len(hits), len(ranked), parameters={
             "vector_weight": request.vector_weight, "structural_weight": request.structural_weight,
             "timing_ms": {"entity_linking": round((linked_at - started) * 1000, 2),
                           "filter_and_score": round((scored_at - linked_at) * 1000, 2),
                           "rank_and_deduplicate": round((finished - scored_at) * 1000, 2),
                           "total": round((finished - started) * 1000, 2)},
-            "indexed_rules": len(self._rows), "scored_rules": len(rows)})
+            "indexed_rules": len(self._rows), "scored_rules": len(hits),
+            "applicability_rejections": dict(rejected),
+            "topic_coverage": topic_coverage,
+            "applicability_notice": "仅排除明确设备、试验主题或工况冲突；候选不代表已确认适用"})
         return LunwenMatchingOutput(
             [MatchedEntity(item.entity.name, item.score) for item in linked],
             [RuleMatch(item.rule, rank=index + 1, vector_score=item.content_score, structural_score=item.structural_score, combined_score=item.score) for index, item in enumerate(ranked)],

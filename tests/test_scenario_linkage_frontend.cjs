@@ -349,3 +349,66 @@ test('operation review status and its reason are visible in processing details',
  assert.match(html,/操作语义复核/); assert.match(html,/未通过/);
  assert.match(html,/原文启动与停止不一致/);
 });
+
+test('maintenance plan only exposes the first step and requires a separate next-step preview', async () => {
+  const app = fixture(); await flush();
+  await app.context.window.originalSimulation.prepare({simulation_mode: true});
+  const plan = {plan_id:'plan-one',status:'active',next_step:1,expected_version:0,steps:[
+    {device_id:'SIM-IEC-FAN-01',display_name:'风机1',action:'start',conditions:['device_fault == 0'],
+      preview:{status:'generated',command_id:'first',expected_version:0,simulation_execution_allowed:true}},
+    {device_id:'SIM-MB-FAN-01',display_name:'风机2',action:'start',conditions:[],preview:null}
+  ]};
+  app.context.result = {status:'generated',data:{simulation_session_id:'session-all_devices',simulation_plan:plan}};
+  app.context.tab='instruction'; app.context.render();
+  assert.match(app.element('output').innerHTML,/逐步确认/);
+  assert.match(app.element('output').innerHTML,/device_fault == 0/);
+  assert.equal(app.element('simulate-plan-execute-0').disabled,false);
+  assert.equal(app.element('simulate-plan-execute-1').disabled,true);
+  assert.equal(app.requests.some(r=>r.route.endsWith('/execute')),false);
+  const original=app.context.fetch;
+  app.context.fetch=async(url,opts)=>{
+    const route=new URL(url).pathname;
+    if(route.endsWith('/execute')) {
+      plan.steps[0].execution={status:'succeeded',feedback:{status:'succeeded'},after:{version:1}};
+      plan.next_step=2;plan.expected_version=1;
+      return {ok:true,json:async()=>plan.steps[0].execution};
+    }
+    if(route.endsWith('/plans/plan-one'))return {ok:true,json:async()=>structuredClone(plan)};
+    if(route.endsWith('/plans/plan-one/preview')) {
+      const p={status:'generated',command_id:'second',expected_version:1,simulation_execution_allowed:true};
+      plan.steps[1].preview=p;
+      return {ok:true,json:async()=>p};
+    }
+    return original(url,opts);
+  };
+  await app.element('simulate-plan-execute-0').onclick();
+  assert.equal(plan.steps[1].preview,null);
+  assert.equal(app.element('simulate-plan-preview-1').disabled,false);
+  await app.element('simulate-plan-preview-1').onclick();
+  assert.equal(app.element('simulate-plan-execute-1').disabled,false);
+  app.element('query').value='更改请求';
+  for(const fn of app.element('query').listeners.input)fn();
+  assert.equal(app.element('simulate-plan-execute-1').disabled,true);
+});
+
+test('lost plan execution response stops later steps and replaces the answer with unknown result', async () => {
+  const app=fixture({fullPage:true});await flush();
+  await app.context.window.originalSimulation.prepare({simulation_mode:true});
+  const plan={plan_id:'plan-lost',status:'active',next_step:1,expected_version:0,steps:[
+    {device_id:'SIM-IEC-FAN-01',display_name:'风机1',action:'start',conditions:[],
+     preview:{status:'generated',command_id:'first',expected_version:0,simulation_execution_allowed:true}},
+    {device_id:'SIM-MB-FAN-01',display_name:'风机2',action:'start',conditions:[],preview:null}]};
+  app.context.planCase={status:'generated',data:{answer:{text:'已准备第1步预览，尚未执行'},simulation_session_id:'session-all_devices',simulation_plan:plan}};
+  vm.runInContext("result=planCase;tab='instruction';render()",app.context);
+  const original=app.context.fetch;
+  app.context.fetch=async(url,opts)=>{
+    if(new URL(url).pathname.endsWith('/execute'))throw Error('lost result');
+    return original(url,opts);
+  };
+  await app.element('simulate-plan-execute-0').onclick();
+  assert.equal(app.element('simulate-plan-preview-1').disabled,true);
+  assert.equal(app.requests.some(r=>r.route.endsWith('/plans/plan-lost/preview')),false);
+  vm.runInContext("tab='summary';render()",app.context);
+  assert.match(app.element('output').innerHTML,/执行结果未确认/);
+  assert.doesNotMatch(app.element('output').innerHTML,/尚未执行/);
+});

@@ -62,7 +62,10 @@ def test_query_sources_must_cover_the_complete_request(monkeypatch):
     query = '查询SIM-IEC-FAN-01的状态，同时说明它支持哪些操作'
     result = semantic_answer(monkeypatch, query, [question('查询SIM-IEC-FAN-01的状态', 'SIM-IEC-FAN-01')])
     assert result[0] != 'answered'
-    assert result[1]['clarification_required'] is True
+    assert result[0] == 'partial'
+    assert result[1]['clarification_required'] is False
+    assert result[1]['devices']
+    assert '支持哪些操作' in result[1]['coverage_notice']['untraced_text']
 
 
 def test_owner_description_does_not_add_a_transformer_query(monkeypatch):
