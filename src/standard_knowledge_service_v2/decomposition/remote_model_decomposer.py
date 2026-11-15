@@ -72,6 +72,7 @@ class RemoteModelDecomposer:
                 raw_output=output.raw_output,
                 operations=parsed.get('operations'), queries=parsed.get('queries'),
                 request_controls=parsed.get('request_controls'),
+                context_facts=parsed.get('context_facts', []),
             )
             return self._normalizer.normalize(result)
         except Exception as exc:

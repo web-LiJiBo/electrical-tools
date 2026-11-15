@@ -36,10 +36,11 @@ JSON字段：
   "actions": ["标准动作码"],
   "constraints": [{"parameter": "参数", "operator": "比较符", "value": "数值或原文值", "unit": "单位", "condition": "适用条件"}],
   "standard_refs": [{"standard_id": "标准编号", "version": "版本"}],
-  "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "operation_type": "操作类型", "query_kind": "device_status|device_capability|device_readiness|standard_query|assessment|operation|other"},
+  "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "context_kind":"none|background|precondition|uncertain", "operation_type": "操作类型", "query_kind": "device_status|device_capability|device_readiness|standard_query|assessment|operation|other"},
   "keywords": ["检索关键词"],
   "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "clarification":"需澄清的问题或空字符串"}],
   "queries": [{"device_id":"目录唯一编号，标准咨询可留空", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "query_kind":"device_status|device_capability|device_readiness|standard_query|assessment|other", "requested_action":"仅device_readiness必填的待判断目录动作码", "source_text":"本项原文", "clarification":"需澄清的问题或空字符串"}],
+  "context_facts": [{"device_id":"目录编号", "parameter":"目录事实字段名或原参数名", "operator":"比较符", "value":0, "unit":"原单位", "source_text":"包含该事实的原文"}],
   "request_controls": {"analysis_only": false, "source_text":"仅分析、不要生成指令等全局限制的原文片段，无限制时空字符串"},
   "confidence": 0.0
 }
@@ -57,9 +58,10 @@ standard_query为标准、条款、依据或要求咨询；assessment为正常�
 operation为用户提出的具体操作；other为其他问题。按整句目的判断，不因出现动作词就视为操作。
 intent仍只使用search、consistency、compliance、difference、instruction；评估类intent用compliance，assessment仅用于query_kind。
 否定、疑问和条件必须保留在intent、constraints及operating_condition中；实体保留编号、并列对象和所属关系。
-operating_condition只填写用户明确限定的工况或前置条件；未限定时返回空字符串，不补推测的当前状态。
+operating_condition只是工况描述，不是执行条件标志。scenario.context_kind须为none/background/precondition/uncertain之一，按整句语义判断。已发生状态、当前测量值与用户参考阈值是background，放context_facts，不自动列入operations.conditions或constraints；明确要求满足前提才执行是precondition，必须保留到conditions及constraints；混合背景与前提用precondition并保留context_facts；无法确定限制作用域用uncertain。不能只凭“当前”“低于”等单词判断。没有背景时context_facts为空列表。
+当前测量值与比较阈值应分别列context_facts，例如实际值用operator="="，阈值参数另列，不要只保留比较阈值而遗漏当前值。context_facts是用户陈述，不是已核验实测，不修改设备状态，不把用户阈值当成标准。parameter优先用目录fact_fields，value必须来自原文，source_text引用包含该事实的原文。只有操作背景不列入constraints；评估问题的假设数值仍沿用原有constraints。
 操作目标数值用constraints的等值赋值表达，parameter写目标参数、operator写=、condition留空；
-执行前提另列约束，不能将“当前档位大于10档”等前提误写为目标档位赋值。
+执行前提另列约束，constraints.condition只用原文中的目标设备名称或空字符串，不改写成“启动前确认”等自由解释；完整前提已保存在operations.conditions。不能将“当前档位大于10档”等前提误写为目标档位赋值。
 必须一次理解整句，始终返回operations和queries两个列表（无对应诉求时为空）。不要把逗号、礼貌语当新操作，不要把“已经启动”等状态修饰误作动作。
 operations每项只包含一个设备和一个动作；同设备多个动作、多个设备分别列项，完整保留每项来源、否定、执行前提及顺序要求。
 request_controls只记录对整次请求无条件生效的控制限制：“只分析”“只做检查”“不要生成控制指令”等在未受其他条件限定时须analysis_only=true并引用真实原文；此时operations必须为空，保留要分析的queries。没有此类全局限制时analysis_only=false、source_text为空，不得虚构限制证据。
@@ -200,6 +202,15 @@ def _string_list(value: Any, field_name: str, errors: list[str]) -> list[str]:
 def validate_semantic_plan(data: dict[str, Any]) -> list[str]:
     """Validate the whole-request plan without repairing missing control claims."""
     errors = []
+    facts = data.get('context_facts', [])
+    if (not isinstance(facts, list) or len(facts) > 16 or any(
+            not isinstance(row, dict) or any(not isinstance(row.get(key), str) or not row[key].strip()
+                for key in ('device_id', 'parameter', 'source_text'))
+            or type(row.get('value')) not in (str, int, float, bool)
+            or not isinstance(row.get('unit', ''), str) for row in facts)):
+        errors.append('context_facts须为含设备、参数、原文、标量值及单位的最多16项列表')
+    if data.get('scenario', {}).get('context_kind', 'none') not in ('none', 'background', 'precondition', 'uncertain'):
+        errors.append('context_kind未正确区分背景与执行前提')
     if 'request_controls' in data:
         controls = data['request_controls']
         if (not isinstance(controls, dict) or type(controls.get('analysis_only')) is not bool

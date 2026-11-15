@@ -450,6 +450,18 @@ class AnalysisPipeline:
 
     def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str], *, review_context=None) -> AnalysisResponse:
         source_result_status = status
+        if data.get('simulation_factual'):
+            from .context_facts import annotate_context
+            annotate_context(data)
+            data['clause_lookup_status'] = 'completed' if (evidence or data.get('real_clause_evidence') or data.get('selected_rule')
+                or any(row.get('query_kind') == 'knowledge' for row in data.get('query_results', []))) else 'not_requested'
+            scene_id = data.get('context', {}).get('scenario') or request.parameters.get('simulation_scenario_id')
+            if scene_id and not data.get('scenario_model'):
+                from .simulation_access import simulation_runtime
+                scene = simulation_runtime(self).catalog.scenarios.get(scene_id)
+                if scene is not None:
+                    data['scenario_model'] = {'name': scene.get('display_name') or scene_id,
+                        'device_types': [], 'standard_topics': [], 'risk_controls': []}
         understanding_failed = data.get('model_understanding', {}).get('status') == 'failed'
         if self.advisor is not None and not data.get('simulation_factual') and not understanding_failed:
             status = (self.advisor.enrich(self, request, data, review_context=review_context) if review_context is not None else self.advisor.enrich(self, request, data)) or status

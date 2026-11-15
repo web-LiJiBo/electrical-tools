@@ -31,6 +31,7 @@ class DecompositionResult:
     queries: list[dict[str, Any]] | None = None
     # None means the model did not declare whole-request control restrictions.
     request_controls: dict[str, Any] | None = None
+    context_facts: list[dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)

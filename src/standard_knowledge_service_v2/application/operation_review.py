@@ -16,6 +16,7 @@ REVIEW_PROMPT = '''OPERATION_PLAN_REVIEW
 否定、执行条件及先后依赖；启动和停止、打开和关闭等反向动作不能相互替换。
 已经启动/停止等状态修饰不等于用户要求的动作；再次/再一次表示重复，不自动等于顺序。
 按整句语义判断真正的否定、条件和顺序，不能仅因单个字就判断存在先后依赖。
+context_facts是首轮对用户陈述的背景事实分类，不是已核验实测。scenario.context_kind区分背景与执行前提；必须独立核对完整原文，不能照抄其分类。“已发生的告警/当前测量/用户参考阈值”作为背景不等于要求满足某条件才执行；背景不应标has_conditions=true。真正执行前提必须保留conditions，不能因首轮标为background而忽略。不能把用户阈值当标准、把陈述当设备状态，或据此改变动作参数。
 检查完整原文的所有操作与查询诉求是否被operations和queries完整覆盖，遗漏任何诉求、
 未知设备、所属冲突、动作不符、参数变化或缺少依据必须拒绝，不得批准部分清单。
 queries只用于核对覆盖，不生成额外操作；items只对应operations。
@@ -55,6 +56,7 @@ def review_packet(query, understanding, catalog, conversation_context=None):
         return understanding.get(name, []) if isinstance(understanding, dict) else getattr(understanding, name, [])
     return deepcopy({'query': query, 'operations': field('operations'),
                      'queries': field('queries'), 'catalog': catalog,
+                     'context_facts': field('context_facts'), 'scenario': field('scenario'),
                      'conversation_context': [] if conversation_context is None else conversation_context})
 
 

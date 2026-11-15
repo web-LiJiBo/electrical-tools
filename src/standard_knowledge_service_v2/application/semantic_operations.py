@@ -29,7 +29,9 @@ def catalog_context(pipeline, request):
             ('device_id', 'display_name', 'device_type', 'aliases', 'business_scenario')}
             | {'actions': {action: {key: deepcopy(template.get(key)) for key in
                 ('display_name', 'parameter', 'unit', 'minimum', 'maximum', 'condition', 'constraints')}
-                for action, template in device.get('actions', {}).items()}}
+                for action, template in device.get('actions', {}).items()},
+               'fact_fields': sorted(set(device.get('initial_state', {})) | set(device.get('runtime_facts', {}))),
+               'fact_units': deepcopy(device.get('fact_units', {}))}
             for device_id in ids for device in [catalog.devices[device_id]]], 'ownership': ownership}
 
 
@@ -305,14 +307,18 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         condition_guard = all(item.get('negated') is False for item in rows)
     from ..decomposition.intent_classifier import IntentClassifier
     online = understanding.source == 'model_api'
+    from .context_facts import context_error, background_only, describes_observation
+    context_reason = context_error(understanding, request.query, devices)
+    if context_reason:
+        return blocked(context_reason)
     reason = ('用户否定或取消操作，只保留回答，不生成操作预览'
               if not (feedback_sequence or condition_guard) and IntentClassifier.action_is_negated(request.query) else '') if allow_restrictions else action_request_restriction(request.query)
-    if not allow_restrictions and not reason and (understanding.scenario.get('operating_condition')
+    if not allow_restrictions and not reason and (understanding.scenario.get('operating_condition') and not background_only(understanding)
             or re.search(r'假如|假设|仅在|前提|一旦|除非|否则|直到|先.+(?:再|然后)', request.query)):
         reason = '请求带有执行条件或顺序要求，当前不能编排，请拆分后逐步核对。'
     if reason:
         return blocked(reason)
-    if allow_restrictions and understanding.scenario.get('operating_condition') and not any(item['conditions'] for item in rows):
+    if allow_restrictions and understanding.scenario.get('operating_condition') and not background_only(understanding) and not any(item['conditions'] for item in rows):
         return blocked('整句运行前提未保留到逐项执行条件，不能仅凭顺序支持生成预览。')
     if len(rows) > 8:
         return blocked('一次最多预览8条明确操作，请分批提交。')
@@ -349,6 +355,8 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         parameters = {**parameters, **supplied}
         from .mixed_operation_preview import _assignment_scope
         for constraint in understanding.constraints:
+            if describes_observation(constraint, understanding):
+                continue
             if not any(constraint.get(field) not in (None, '') for field in ('operator', 'value', 'condition')):
                 continue
             if _assignment_scope(constraint, request.query, devices):
@@ -356,6 +364,10 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
             comparison = constraint.get('operator', '')
             comparison = '==' if comparison == '=' else comparison
             expression = f"{constraint.get('parameter', '')} {comparison} {constraint.get('value', '')}{constraint.get('unit', '')}"
+            unit = constraint.get('unit')
+            if unit and all(runtime.catalog.devices[op['device_id']].get('fact_units', {}).get(
+                    constraint.get('parameter')) == unit for op in rows):
+                expression = f"{constraint.get('parameter', '')} {comparison} {constraint.get('value', '')}"
             scope = constraint.get('condition') or ''
             scope_targets = _explicit_targets(scope, devices, profile) if isinstance(scope, str) else set()
             retained = allow_restrictions and any(_compact(expression) == _compact(condition)
