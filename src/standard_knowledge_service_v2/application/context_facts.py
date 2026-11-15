@@ -33,10 +33,11 @@ def annotate_context(data):
         device = devices.get(fact['device_id'], {})
         current = {**device.get('state', {}), **device.get('runtime_facts', {})}
         rows.append({**fact, 'origin': 'user_statement', 'current_value': current.get(fact['parameter']),
+                     'field_status': ('not_matched' if fact['parameter'] not in current
+                         else 'unavailable' if current[fact['parameter']] is None else 'unverified'),
                      'comparison': 'not_verified', 'notice': '用户陈述与设备快照分列，单位和测量时点尚未核验；未覆盖设备状态。'})
     data['context_fact_comparison'] = rows
     data.setdefault('answer', {}).setdefault('text', '')
-    data['answer']['text'] += '\n背景数值按用户陈述保留，未作为当前实测或标准定值；设备条件仍按当前模拟快照校验。'
-    for row in rows:
-        current = '未登记或不可读取' if row['current_value'] is None else repr(row['current_value'])
-        data['answer']['text'] += f"\n用户陈述：{row['source_text']}；当前模拟字段 {row['parameter']} 原始值：{current}（单位与测量时点未自动核验）。"
+    notice = '背景数据尚未完成核验，详情见“系统理解”。'
+    if notice not in data['answer']['text']:
+        data['answer']['text'] += '\n' + notice
