@@ -107,33 +107,20 @@ class SimulationInstructionService:
                 return candidate
             payload = {**common, **{key: mapping[key] for key in required}, "ctlVal": value}
         elif device["protocol"] == "Modbus":
-            slave, address, code = (mapping.get(key) for key in ("slave_id", "address", "function_code"))
-            if (type(slave) is not int or not 1 <= slave <= 247 or type(address) is not int
-                    or not 0 <= address <= 65535 or type(code) is not int or code not in (5, 6)):
-                candidate.missing_fields = ["valid_modbus_mapping"]
-                candidate.explanation = "模拟Modbus映射无效或功能码未支持"
+            from .protocol_messages import modbus
+            values = {'transaction_id': 0, 'unit_id': mapping.get('slave_id'),
+                      'address': mapping.get('address'), 'function_code': mapping.get('function_code'),
+                      'data_type': mapping.get('data_type'), 'scale': mapping.get('scale', 1),
+                      'byte_order': mapping.get('byte_order', 'big'), 'word_order': mapping.get('word_order', 'big')}
+            try:
+                _, encoded, _ = modbus(values, value)
+            except (ValueError, TypeError) as exc:
+                candidate.missing_fields = ['valid_modbus_mapping_and_value']
+                candidate.explanation = str(exc)
                 return candidate
-            if code == 5:
-                if mapping.get("data_type") != "bool" or type(value) is not bool:
-                    candidate.missing_fields = ["boolean_coil_value"]
-                    return candidate
-                encoded = 0xFF00 if value else 0
-            else:
-                scale = mapping.get("scale")
-                if (mapping.get("data_type") != "uint16" or type(scale) not in (int, float)
-                        or not math.isfinite(scale) or scale <= 0 or type(value) not in (int, float)):
-                    candidate.missing_fields = ["uint16_encoding"]
-                    return candidate
-                raw = value * scale
-                if not math.isfinite(raw) or not 0 <= raw <= 65535 or not math.isclose(raw, round(raw), abs_tol=1e-8, rel_tol=0):
-                    candidate.missing_fields = ["exact_uint16_value"]
-                    candidate.explanation = "参数无法按模拟倍率无损编码为uint16"
-                    return candidate
-                encoded = round(raw)
-            pdu = bytes([code]) + address.to_bytes(2, "big") + encoded.to_bytes(2, "big")
-            payload = {**common, "transport": "SIMULATED", "slave_id": slave,
-                       "function_code": code, "address": address, "encoded_value": encoded,
-                       "pdu_hex": pdu.hex(" ")}
+            payload = {**common, "transport": "SIMULATED", "slave_id": values['unit_id'],
+                       "function_code": values['function_code'], "address": values['address'],
+                       "encoded_value": encoded['encoded_value'], "pdu_hex": encoded['pdu_hex']}
         else:
             candidate.missing_fields = ["supported_simulation_protocol"]
             return candidate

@@ -41,13 +41,19 @@ class SimulationCatalog:
                 raise ValueError(f'显式实例与兼容设备ID冲突: {identifier}')
             self.devices[identifier] = self._expand_instance(instance)
         self._business_profiles()
+        from .simulation_wire_profiles import apply_simulation_protocol_profiles
+        self.wire_profile_diagnostics = apply_simulation_protocol_profiles(self.devices)
         self._validate()
 
     def _business_profiles(self):
         """Business views own instances; the aggregate references their union."""
         business = ['substation_maintenance', 'grid_fault_isolation',
                     'renewable_grid_integration', 'power_grid_operation']
-        owned = set(self.scenarios['substation_maintenance']['device_ids'])
+        maintenance = self.scenarios['substation_maintenance']['device_ids']
+        for identifier, device in self.devices.items():
+            if device.get('scenario') == 'substation_maintenance' and identifier not in maintenance:
+                maintenance.append(identifier)
+        owned = set(maintenance)
         for identifier in owned:
             self.devices[identifier]['business_scenario'] = 'substation_maintenance'
         labels = {'grid_fault_isolation': '故障隔离', 'renewable_grid_integration': '新能源',
@@ -90,11 +96,33 @@ class SimulationCatalog:
                 device['display_name'] = f"{label}{kind}（{device['protocol']}）"
                 device.setdefault('aliases', []).append(device['display_name'])
                 device['business_scenario'] = scene
+                if scene == 'grid_fault_isolation' and device['device_type'] == 'breaker':
+                    facts = device['runtime_facts']
+                    facts.setdefault('disconnector_closed', 1)
+                    facts.setdefault('earthing_switch_open', 1)
+                    close = device['actions'].get('close')
+                    if close:
+                        close.pop('relation_requirements', None)
+                        constraints = close.setdefault('constraints', [])
+                        for sensor in ('disconnector_closed', 'earthing_switch_open'):
+                            if not any(row.get('parameter') == sensor for row in constraints):
+                                constraints.append({'parameter': sensor, 'operator': '==', 'value': 1, 'role': 'precondition'})
                 identifiers.append(identifier)
                 owned.add(identifier)
             self.scenarios[scene] = {'scenario_id': scene, 'display_name': label,
                 'device_ids': identifiers, 'groups': {}, 'conditions': {'normal': {}},
                 'condition_labels': {'normal': '正常运行'}}
+            if scene == 'grid_fault_isolation':
+                self.scenarios[scene]['conditions'].update({
+                    'overcurrent': {key: {'runtime_facts': {'current': 120, 'trip_permission': 1}}
+                                    for key in identifiers},
+                    'restoration_ready': {key: {'state': {'position': 'open'},
+                        'runtime_facts': {'current': 0, 'close_permission': 1, 'disconnector_closed': 1,
+                                          'earthing_switch_open': 1,
+                                          **({'breaker_closed': 0} if 'breaker_closed' in self.devices[key]['runtime_facts'] else {})}}
+                                          for key in identifiers}})
+                self.scenarios[scene]['condition_labels'].update(
+                    overcurrent='模拟过流待隔离', restoration_ready='模拟故障排除且恢复条件满足')
         identifiers, groups, normal = [], {}, {}
         names = set()
         for scene in business:
@@ -336,4 +364,5 @@ class SimulationCatalog:
             'simulation_only': True, 'dispatch_allowed': False,
             'devices': list(self.devices.values()), 'device_templates': list(self.device_templates.values()),
             'action_templates': list(self.action_templates.values()), 'scenarios': list(self.scenarios.values()),
+            'wire_profile_diagnostics': self.wire_profile_diagnostics,
         })

@@ -72,6 +72,17 @@ def register_simulation_routes(app, application):
             return runtime().execute(session_id, command, version)
         return perform(run)
 
+    @app.get('/simulation/sessions/{session_id}/commands/{command_id}/message-parameters')
+    def message_parameters(session_id: str, command_id: str, expected_version: int):
+        return perform(lambda: runtime().message_parameters(session_id, command_id, expected_version))
+
+    @app.post('/simulation/sessions/{session_id}/commands/{command_id}/message')
+    def generate_message(session_id: str, command_id: str, payload: dict):
+        def run():
+            fields(payload, {'expected_version', 'options'})
+            return runtime().generate_message(session_id, command_id, payload.get('expected_version'), payload.get('options'))
+        return perform(run)
+
     @app.get('/simulation/sessions/{session_id}/plans/{plan_id}')
     def plan(session_id: str, plan_id: str):
         return perform(lambda: runtime().plan_snapshot(session_id, plan_id))

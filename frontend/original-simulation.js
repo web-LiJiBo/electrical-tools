@@ -89,6 +89,7 @@
   window.originalSimulation = {
     invalidate,
     context: signature,
+    isPreviewCurrent: () => validPreview && !executing && result === lastResult && signature() === submitted,
     async prepare(parameters) {
       invalidate();
       submitted = signature();

@@ -25,12 +25,15 @@ def catalog_context(pipeline, request):
                 link = {'owner_id': group.get('transformer', ''), 'device_id': device_id, 'role': role}
                 if role != 'transformer' and device_id in ids and link not in ownership:
                     ownership.append(link)
-    return {'devices': [{key: deepcopy(device.get(key, '')) for key in
+    from ..instruction_engine.simulation_inputs import fact_schema
+    return {'business_parameters': {'action_parameters': deepcopy(request.parameters.get('action_parameters', {}))},
+            'devices': [{key: deepcopy(device.get(key, '')) for key in
             ('device_id', 'display_name', 'device_type', 'aliases', 'business_scenario')}
             | {'actions': {action: {key: deepcopy(template.get(key)) for key in
                 ('display_name', 'parameter', 'unit', 'minimum', 'maximum', 'condition', 'constraints')}
                 for action, template in device.get('actions', {}).items()},
                'fact_fields': sorted(set(device.get('initial_state', {})) | set(device.get('runtime_facts', {}))),
+               'fact_schema': fact_schema(device),
                'fact_units': deepcopy(device.get('fact_units', {}))}
             for device_id in ids for device in [catalog.devices[device_id]]], 'ownership': ownership}
 
@@ -158,7 +161,7 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
     if device['device_type'] == 'transformer' and role:
         return '', '原文请求附属设备，但识别为主设备，请明确所属设备。'
     if key not in mentioned and not (owner and role == device['device_type']):
-        referenced = re.search(r'其|它|该设备|刚才', target)
+        referenced = re.search(r'其|它|该(?:设备|风机|油泵|断路器|开关|装置)|刚才', target)
         contextual = set()
         if referenced:
             for message in reversed(conversation_context):
@@ -182,7 +185,9 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
         # A current-sentence reference takes precedence over older messages.
         # More than one preceding target remains ambiguous, even when history
         # happens to mention the model's selected device.
-        resolved = preceding == {key} if preceding is not None else contextual == {key}
+        stated = _mentions(source, devices)
+        resolved = (stated == {key} or
+                    (preceding == {key} if preceding is not None else contextual == {key}))
         if not (referenced and resolved):
             return '', '设备编号缺少唯一的原文或归属依据，请提供完整目标。'
     return key, ''
@@ -379,15 +384,25 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
                 return blocked('整句包含未保留到执行校验的附加条件，未生成无条件预览。')
         scoped = {'actions': [action], 'constraints': [], 'scenario': {}}
         inferred, reason = resolve_action_parameters(item['source_text'], template, {}, scoped)
-        if template.get('parameter') in item['parameters'] and template['parameter'] not in inferred and not reason:
+        if (template.get('parameter') in item['parameters'] and template['parameter'] not in inferred and not reason
+                and template['parameter'] not in supplied):
             return blocked('模型动作参数缺少原文目标值证据，请明确数值和单位。')
         parameters, reason = resolve_action_parameters(item['source_text'], template, parameters, scoped)
         if reason:
             return blocked(reason)
+        parameter_sources = []
+        parameter = template.get('parameter')
+        if parameter in inferred:
+            parameter_sources.append({'origin': 'question', 'parameter': parameter,
+                'source_text': item['source_text'], 'value': inferred[parameter], 'unit': template.get('unit', '')})
+        if parameter in supplied:
+            parameter_sources.append({'origin': 'business_parameters', 'parameter': parameter,
+                'value': supplied[parameter], 'unit': template.get('unit', '')})
         previews.append({'device_id': device_id, 'display_name': runtime.catalog.devices[device_id]['display_name'],
             'protocol': runtime.catalog.devices[device_id]['protocol'], 'action': action,
             'action_name': template.get('display_name', action), 'parameter_unit': template.get('unit', ''),
-            'parameters': parameters, 'source_query': item['source_text'], 'scoped_query': item['source_text'],
+            'parameters': parameters, 'parameter_sources': parameter_sources,
+            'source_query': item['source_text'], 'scoped_query': item['source_text'],
             'decomposition': understanding.to_dict(), 'semantic_operation': deepcopy(item), 'unsupported': unsupported})
         previous = device_id
     supplied_ids = request.parameters.get('device_ids') or ([request.parameters['device_id']] if request.parameters.get('device_id') else [])
@@ -417,7 +432,8 @@ def operation_previews(pipeline, request, snapshot, devices, profile, understand
     for row in previews:
         row['preview'] = ({'status': 'blocked', 'candidate': None, 'command_id': None,
             'simulation_execution_allowed': False, 'explanation': '该设备不支持所请求的动作。'}
-            if row.pop('unsupported') else runtime.preview(snapshot['session_id'], row['device_id'], row['action'], row['parameters'], expected_version=snapshot['version']))
+            if row.pop('unsupported') else runtime.preview(snapshot['session_id'], row['device_id'], row['action'], row['parameters'],
+                expected_version=snapshot['version'], parameter_sources=row['parameter_sources']))
     ids = {row['device_id'] for row in previews}
     base['devices'] = [{key: deepcopy(device.get(key)) for key in
         ('device_id', 'display_name', 'device_type', 'protocol', 'state', 'runtime_facts')}

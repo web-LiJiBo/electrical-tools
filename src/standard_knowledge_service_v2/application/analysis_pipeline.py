@@ -107,7 +107,18 @@ class AnalysisPipeline:
                 'answer': {'text': '问题理解模型调用未完成，本次未生成指令。请检查接口后重试。'},
                 'control_block_reason': '在线问题理解未完成，不能由本地规则替代生成操作',
             }, [], ['问题理解模型未完成；未使用本地规则生成操作'])
-        return self._analyze_decomposed(request, decomposed)
+        input_report = None
+        if request.parameters.get('simulation_mode') is True:
+            from .context_facts import apply_user_inputs
+            try:
+                input_report = apply_user_inputs(self, request, decomposed)
+            except (KeyError, ValueError, TypeError) as exc:
+                reason = f'补充参数未采用：{exc}'
+                return self._respond(request, 'uncertain', {'simulation_factual': True,
+                    'decomposition': decomposed.to_dict(), 'candidate_instruction': None,
+                    'simulation_inputs': {'applied': [], 'error': reason},
+                    'answer': {'text': reason}, 'control_block_reason': reason}, [], [])
+        return self._analyze_decomposed(request, decomposed, input_report=input_report)
 
     def _question_response(self, request, decomposed, questions, review_context=None):
         from copy import deepcopy
@@ -130,11 +141,13 @@ class AnalysisPipeline:
             target_protocol=request.target_protocol, conversation_context=deepcopy(request.conversation_context))
         return self._analyze_decomposed(subrequest, scoped, review_context=review_context, process_questions=False)
 
-    def _analyze_decomposed(self, request, decomposed, *, review_context=None, process_questions=True):
+    def _analyze_decomposed(self, request, decomposed, *, review_context=None, process_questions=True, input_report=None):
         """Keep review state request-local; no preview exists before approval."""
         from .operation_review import review_packet, review_operations
         from .semantic_operations import catalog_context
         def respond(*args):
+            if input_report:
+                args[2]['simulation_inputs'] = input_report
             return self._respond(*args, review_context=review_context)
         from .request_controls import analysis_only_requested, request_controls_error
         control_error = request_controls_error(decomposed, request.query)
@@ -166,6 +179,12 @@ class AnalysisPipeline:
         factual = [item for item in (decomposed.queries or []) if item['query_kind'] in ('device_status', 'device_capability', 'device_readiness')]
         needs_review = bool(decomposed.operations) and request.parameters.get('simulation_mode') is True
         context = review_packet(request.query, decomposed, catalog_context(self, request), request.conversation_context) if needs_review else None
+        if context is not None:
+            context['business_parameters'] = {'action_parameters': request.parameters.get('action_parameters', {})}
+            # Semantic review sees user facts, not superseded fixture values.
+            context['simulation_inputs'] = {'applied': [
+                {key: row[key] for key in ('device_id', 'field', 'value', 'unit', 'sources')}
+                for row in (input_report or {}).get('applied', [])]}
         prepared = None
         if needs_review:
             from .maintenance_plans import prepare_operation_plan, preview_operation_plan

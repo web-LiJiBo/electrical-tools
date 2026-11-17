@@ -1,7 +1,7 @@
 """Explicit, in-memory simulation sessions; no device/network dispatch exists here.
 
-The protocol generator remains pure. Only ``execute`` applies a saved preview,
-under a lock, after validating its session version and all current interlocks.
+The protocol generator remains pure. Explicit fact inputs update only the local
+simulation world; ``execute`` separately applies saved, revalidated operations.
 """
 from __future__ import annotations
 
@@ -51,6 +51,8 @@ class _Session:
     events: list = field(default_factory=list)
     scenario_conditions: dict = field(default_factory=dict)
     plans: dict = field(default_factory=dict)
+    message_sequence: int = 0
+    control_sequences: dict = field(default_factory=dict)
 
 
 class SimulationRuntime:
@@ -99,7 +101,46 @@ class SimulationRuntime:
         with self._lock:
             return self._snapshot(self._session(session_id))
 
-    def preview(self, session_id, device_id, action, parameters=None, *, evidence=None, expected_version=None, conditions=None):
+    def apply_fact_inputs(self, session_id, updates, *, expected_version):
+        """Atomically accept explicit simulation facts, preserving all provenance."""
+        from .simulation_inputs import fact_schema, normalize_value
+        with self._lock:
+            session = self._session(session_id)
+            if type(expected_version) is not int or expected_version != session.version:
+                raise ValueError('补充状态期间模拟版本已变化，请重新分析')
+            staged = deepcopy(session.devices)
+            applied = []
+            for update in updates:
+                identifier, path = update['device_id'], update['field']
+                section, field_name = path.split('.')
+                entry = staged[identifier]
+                schema = fact_schema(session.profiles[identifier])
+                value = normalize_value(update['value'], update.get('unit', ''), schema[path])
+                before = _read(entry, path)
+                row = {**deepcopy(update), 'original_value': None if before is _MISSING else deepcopy(before),
+                       'original_missing': before is _MISSING, 'value': value,
+                       'conflict': before is not _MISSING and before != value}
+                entry[section][field_name] = deepcopy(value)
+                # Some legacy devices expose one fact in both sections (e.g. dc_blocked).
+                other = ('state' if section == 'runtime_facts' else 'runtime_facts') + '.' + field_name
+                if other in schema:
+                    other_section, _ = other.split('.')
+                    mirror_value = int(value) if type(value) is bool and schema[other]['type'] in ('number', 'integer') else value
+                    entry[other_section][field_name] = normalize_value(mirror_value, '', schema[other])
+                entry.setdefault('input_sources', {})[path] = deepcopy(row)
+                applied.append(row)
+            for identifier in {row['device_id'] for row in updates}:
+                self._synchronize_facts(staged[identifier])
+            if applied:
+                # Even an equal explicit value changes provenance and expires old previews.
+                self._record(session, {'status': 'facts_updated', 'applied': applied,
+                                      'previous_version': session.version, 'version': session.version + 1})
+                session.devices = staged
+                session.version += 1
+            return {'applied': applied, 'version': session.version,
+                    'scope': 'current_simulation_session', 'simulation_only': True}
+
+    def preview(self, session_id, device_id, action, parameters=None, *, evidence=None, expected_version=None, conditions=None, parameter_sources=None):
         with self._lock:
             session = self._session(session_id)
             supplied_conditions = deepcopy(conditions if conditions is not None else [])
@@ -112,6 +153,12 @@ class SimulationRuntime:
                 result = self._blocked_preview(session, device_id, condition_error)
             else:
                 result = self._prepare(session, device_id, action, parameters)
+            result['simulation_inputs'] = [deepcopy(row) for entry in session.devices.values()
+                                          for row in entry.get('input_sources', {}).values()]
+            result['parameter_sources'] = deepcopy(parameter_sources or [])
+            if parameter_sources:
+                for comparison in result.get('parameter_comparison', []):
+                    comparison['sources'] = deepcopy(parameter_sources)
             result.update(conditions=supplied_conditions, condition_checks=checks)
             if result['status'] == 'blocked':
                 result['candidate'].update(payload={}, explanation=result['explanation'])
@@ -126,6 +173,115 @@ class SimulationRuntime:
                     'catalog_version': self._catalog_version(), 'result': None,
                 }
             return deepcopy(result)
+
+    def _message_context(self, session_id, command_id, expected_version):
+        """Validate a stored reviewed preview, without allocating or executing."""
+        session = self._session(session_id)
+        command = session.commands.get(command_id) if isinstance(command_id, str) else None
+        if command is None:
+            raise ValueError('命令不存在或不属于当前会话，请先分析生成有效预览')
+        preview = command['preview']
+        if type(expected_version) is not int or expected_version != session.version or expected_version != preview['expected_version']:
+            raise ValueError('预览状态版本已变化，请重新分析后生成报文')
+        if command['result'] is not None:
+            raise ValueError('该命令已处理，请重新分析；不能用旧预览生成报文')
+        if command['catalog_version'] != self._catalog_version():
+            raise ValueError('设备配置已变化，请重新建立会话并分析')
+        plan = session.plans.get(command.get('plan_id'))
+        if plan and (plan['status'] != 'active' or plan['next_step'] != command['plan_step']):
+            raise ValueError('顺序计划尚未开放或已停止，不能生成该步报文')
+        _, _, error = self._check_conditions(session, command['device_id'], command['conditions'])
+        if error:
+            raise ValueError(error)
+        refreshed = self._prepare(session, command['device_id'], command['action'], command['parameters'])
+        if refreshed['status'] != 'generated':
+            raise ValueError(refreshed['explanation'])
+        old = preview['candidate']['payload']['engineering_value']
+        current = refreshed['candidate']['payload']['engineering_value']
+        if type(old) is not type(current) or old != current:
+            raise ValueError('设备当前目标值已变化，请重新分析')
+        return session, command
+
+    def message_parameters(self, session_id, command_id, expected_version):
+        with self._lock:
+            from .protocol_messages import defaults
+            session, command = self._message_context(session_id, command_id, expected_version)
+            candidate = command['preview']['candidate']
+            profile = session.profiles[command['device_id']]
+            return {'protocol': candidate['protocol'], 'device_id': command['device_id'],
+                    'action': command['action'], 'engineering_value': candidate['payload']['engineering_value'],
+                    'unit': candidate['payload'].get('unit', ''),
+                    'expected_version': expected_version,
+                    'defaults': defaults(candidate, profile, command['action']),
+                    'managed_fields': ['transaction_id', 'invoke_id', 'ctl_num', 'timestamp_utc'],
+                    'bound_fields': self._wire_bound_fields(candidate['protocol']),
+                    'configuration_source': 'explicit_simulation_profile',
+                    'association_profile': deepcopy(profile.get('communication', {}).get('association', {})),
+                    'notice': '已自动读取模拟设备与动作映射；时间和序号由程序生成，设备状态不变。'}
+
+    @staticmethod
+    def _wire_bound_fields(protocol):
+        return (['unit_id', 'address', 'function_code', 'data_type', 'scale', 'byte_order', 'word_order']
+                if protocol == 'Modbus' else ['domain_id', 'item_id', 'control_model', 'data_type',
+                    'value_shape', 'include_ctl_num', 'include_oper_time', 'control_cancel_supported',
+                    'presentation_context_id', 'max_tpdu_size', 'structure_confirmed'])
+
+    def generate_message(self, session_id, command_id, expected_version, options):
+        with self._lock:
+            from .protocol_messages import archive_message, build_message, defaults
+            session, command = self._message_context(session_id, command_id, expected_version)
+            profile = session.profiles[command['device_id']]
+            candidate = command['preview']['candidate']
+            configured = defaults(candidate, profile, command['action'])
+            if not isinstance(options, dict):
+                raise ValueError('报文参数须为字段对象')
+            for name in self._wire_bound_fields(candidate['protocol']):
+                if name in options and options[name] != configured[name]:
+                    raise ValueError(f'{name}已绑定设备动作配置，请通过模板配置修改后重新分析')
+            if session.message_sequence + 8 >= (65535 if candidate['protocol'] == 'Modbus' else 4294967295):
+                raise ValueError('当前会话请求编号已耗尽，请创建新会话')
+            options = {**options, 'transaction_id' if candidate['protocol'] == 'Modbus' else 'invoke_id': session.message_sequence + 1}
+            if candidate['protocol'] == 'IEC61850':
+                number = (session.control_sequences.get(command['device_id'], 0) + 1) % 256
+                options.update(ctl_num=number, timestamp_utc=datetime.now(timezone.utc).isoformat(timespec='milliseconds'))
+            session.message_sequence += 8
+            if candidate['protocol'] == 'IEC61850':
+                session.control_sequences[command['device_id']] = number
+            result = build_message(candidate, profile, command['action'], options)
+            mapping = command['preview']['expected_changes'].get(command['device_id'], {})
+            feedback = profile['actions'][command['action']]['feedback_mapping']
+            field_name = feedback['field']
+            before_value = _read(session.devices[command['device_id']], field_name)
+            after_value = _read(mapping, field_name)
+            operation_value = before_value if after_value is _MISSING else after_value
+            test_mode = candidate['protocol'] == 'IEC61850' and result['parameters']['test']
+            expected_value = before_value if test_mode else operation_value
+            if before_value is _MISSING or expected_value is _MISSING:
+                raise ValueError('缺少明确的反馈原值或期望值，不能导出完整请求包')
+            encoded = feedback.get('value_encoding', {}).get(str(expected_value), expected_value)
+            if type(encoded) is not bool:
+                from .protocol_messages import numeric
+                _, encoded = numeric(encoded, feedback['data_type'], feedback.get('scale', 1))
+            result['readback_expectation'] = {
+                'field': field_name, 'before': deepcopy(before_value), 'expected': deepcopy(expected_value),
+                'expected_after_operation': deepcopy(operation_value), 'test_mode': test_mode,
+                'expected_wire_value': encoded, 'unit': feedback.get('unit', ''),
+                'data_type': feedback['data_type'],
+                'tolerance': max(abs(encoded)*1e-6, 1e-6) if feedback['data_type'] == 'float32' else 0}
+            result['expected_changes_if_executed'] = deepcopy(command['preview']['expected_changes'])
+            result['expected_changes'] = {} if test_mode else deepcopy(command['preview']['expected_changes'])
+            for request in result['requests']:
+                if request['id'] == 'readback':
+                    request['expected_response']['readback_expectation'] = deepcopy(result['readback_expectation'])
+            result.update(session_id=session_id, command_id=command_id, expected_version=expected_version,
+                          simulation_inputs=deepcopy(command['preview'].get('simulation_inputs', [])),
+                          parameter_comparison=deepcopy(command['preview'].get('parameter_comparison', [])),
+                          parameter_sources=deepcopy(command['preview'].get('parameter_sources', [])),
+                          configuration_version=command['catalog_version'],
+                          validity={'source': 'simulation_association_profile', 'sent': False,
+                                    'refresh_before_live_send': True,
+                                    'selection_timeout_ms': options.get('selection_timeout_ms', 5000)})
+            return archive_message(result)
 
     def execute(self, session_id, command_id, expected_version):
         with self._lock:
@@ -245,6 +401,7 @@ class SimulationRuntime:
                 return deepcopy(row['preview'])
             preview = self.preview(session_id, row['device_id'], row['action'], row.get('parameters', {}),
                                    conditions=row.get('conditions', []), expected_version=expected_version,
+                                   parameter_sources=row.get('parameter_sources'),
                                    evidence=plan['evidence'])
             preview.update(plan_id=plan_id, plan_step=step)
             row['preview'] = deepcopy(preview)
@@ -346,12 +503,13 @@ class SimulationRuntime:
             raise ValueError('未知模拟工况')
         result = {}
         for key, profile in session.profiles.items():
-            entry = {name: deepcopy(profile.get(name, {})) for name in ('runtime_facts', 'points', 'actions')}
+            entry = {name: deepcopy(profile.get(name, {})) for name in ('runtime_facts', 'points', 'actions', 'derived_runtime_facts')}
             entry.update({name: profile.get(name, '') for name in ('device_id', 'display_name', 'device_type', 'protocol')})
             entry['display_name'] = entry['display_name'] or key
             entry['state'] = deepcopy(profile.get('initial_state', {}))
             for section in ('state', 'runtime_facts'):
                 entry[section].update(deepcopy(conditions[condition].get(key, {}).get(section, {})))
+            self._synchronize_facts(entry)
             result[key] = entry
         return result
 
@@ -404,6 +562,16 @@ class SimulationRuntime:
             service.states = {key: deepcopy(entry['state']) for key, entry in session.devices.items()}
             entry = session.devices[device_id]
             facts = {**entry['state'], **entry['runtime_facts']}
+            configured_fact = template.get('configured_parameter_fact')
+            parameter = template.get('parameter')
+            if configured_fact and parameter in parameters:
+                supplied = parameters[parameter]
+                original = facts.get(configured_fact)
+                facts[configured_fact] = supplied
+                result['parameter_comparison'] = [{'device_id': device_id, 'field': configured_fact,
+                    'original_value': deepcopy(original), 'value': deepcopy(supplied),
+                    'unit': template.get('unit', ''), 'conflict': original != supplied,
+                    'sources': [{'origin': 'request_parameter', 'parameter': parameter, 'value': deepcopy(supplied)}]}]
             generated = service.generate(device_id, action, facts, parameters,
                                          scenario=profile.get('business_scenario') or profile.get('scenario'))
             result['candidate'] = asdict(generated)
@@ -488,6 +656,24 @@ class SimulationRuntime:
                 if entry[section].get(key, _MISSING) != value or type(entry[section].get(key)) is not type(value):
                     changed[section][key] = deepcopy(value)
                 entry[section][key] = deepcopy(value)
+                entry.get('input_sources', {}).pop(f'{section}.{key}', None)
+        derived = self._synchronize_facts(entry)
+        if derived:
+            changed.setdefault('runtime_facts', {}).update(derived)
+        return changed
+
+    @staticmethod
+    def _synchronize_facts(entry):
+        changed = {}
+        for field, binding in entry.get('derived_runtime_facts', {}).items():
+            source = _read(entry, binding['field'])
+            values = binding.get('value_encoding', {})
+            if source is _MISSING or str(source) not in values:
+                raise ValueError('状态关联事实缺少可计算来源：' + field)
+            value = values[str(source)]
+            if entry['runtime_facts'].get(field, _MISSING) != value:
+                changed[field] = deepcopy(value)
+            entry['runtime_facts'][field] = deepcopy(value)
         return changed
 
     def _feedback(self, entry, template, payload, validate_only=False):
@@ -512,16 +698,9 @@ class SimulationRuntime:
             if mapping.get('data_type') == 'bool':
                 if type(encoded) is not bool:
                     raise ValueError('布尔反馈不能使用数值替代')
-            elif mapping.get('data_type') == 'uint16':
-                scale = mapping.get('scale', 1)
-                if not _number(encoded) or not _number(scale) or scale <= 0:
-                    raise ValueError('反馈倍率或类型无效')
-                raw = encoded * scale
-                if not math.isfinite(raw) or not 0 <= raw <= 65535 or not math.isclose(raw, round(raw), abs_tol=1e-8, rel_tol=0):
-                    raise ValueError('反馈值无法无损编码为uint16')
-                encoded = round(raw)
             else:
-                raise ValueError('不支持的Modbus反馈类型')
+                from .protocol_messages import numeric
+                _, encoded = numeric(encoded, mapping.get('data_type'), mapping.get('scale', 1))
         failed = not validate_only and entry['runtime_facts'].get('feedback_failure', False) is True
         return {'status': 'failed' if failed else 'succeeded', 'simulation_only': True,
                 'point': deepcopy(mapping), 'value': deepcopy(value), 'encoded_value': encoded,
