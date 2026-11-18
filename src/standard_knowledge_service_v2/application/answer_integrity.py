@@ -15,7 +15,7 @@ def invalidate_answer(data: dict, reason: str) -> None:
                 if advice.get('answer_supported') is False else [])
     # Never retain the original answer text: it may still assert the withdrawn
     # conclusion when a later response layer performs the invalidation.
-    answer['text'] = '\n'.join(dict.fromkeys(str(part) for part in [*analysis, reason] if part))
+    answer['text'] = str(advice.get('summary') or reason) if advice.get('answer_supported') is False else str(reason)
     for key in ('conclusion', 'source_rule_id', 'rule_ids', 'sources', 'evidence'):
         answer.pop(key, None)
     answer.update(support_status='unsupported', adopted=False)

@@ -1,6 +1,7 @@
 """Reconcile explicit target assignments in the selected template's units."""
 from decimal import Decimal, InvalidOperation
 import re
+from ..decomposition.evidence import NUMBER_PATTERN, number_text, target_evidence
 
 
 PARAMETER_ALIASES = {
@@ -23,7 +24,7 @@ UNITS = {
     '伏': ('voltage', '1'), '伏特': ('voltage', '1'), '千伏': ('voltage', '1000'),
     '档': ('tap', '1'),
 }
-NUMBER = r'[+-]?(?:\d[\d,]*(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?'
+NUMBER = NUMBER_PATTERN
 SIGNS = str.maketrans({'−': '-', '－': '-', '＋': '+'})
 VALUE_WITH_UNIT = re.compile(r'(?<![A-Za-z0-9_.,+-])(' + NUMBER
     + r')\s*([A-Za-z]+(?:\s*[/*^·]\s*[A-Za-z0-9+-]+)*|兆瓦|千瓦|瓦|兆乏|千乏|乏|千伏|伏特|伏|档)')
@@ -36,7 +37,7 @@ def matches_action_parameter(name, parameter):
 def _number(value):
     if isinstance(value, bool):
         raise ValueError('目标值必须是有限数值，不能是布尔值')
-    text = str(value).strip().translate(SIGNS)
+    text = number_text(str(value).strip().translate(SIGNS))
     if ',' in text:
         if not re.fullmatch(r'[+-]?\d{1,3}(?:,\d{3})+(?:\.\d*)?(?:[eE][+-]?\d+)?', text):
             raise ValueError('目标数值的千分位格式无效，请明确完整数值')
@@ -92,7 +93,21 @@ def resolve_action_parameters(query, template, parameters, understanding=None):
     unit = str(template.get('unit', ''))
     data = understanding.to_dict() if hasattr(understanding, 'to_dict') else (understanding or {})
     try:
-        stated = [_convert(match[1], match[2], unit) for match in _target_tokens(query, parameter)]
+        stated = target_evidence(query, data.get('parameter_evidence'), parameter, _convert, unit)
+        selected = data.get('model_parameters', {}).get(parameter)
+        if not stated and selected is not None and parameter not in data.get('business_parameters', {}):
+            # Review checks the semantic role; this layer checks literal value and dimension.
+            for match in VALUE_WITH_UNIT.finditer(query.translate(SIGNS)):
+                try:
+                    converted = _convert(match[1], match[2], unit)
+                except ValueError:
+                    continue
+                if converted == _number(selected):
+                    stated.append(converted)
+            if not stated:
+                raise ValueError('动作目标数值未出现在对应原文中，请核对目标和单位')
+        if not stated:
+            stated = [_convert(match[1], match[2], unit) for match in _target_tokens(query, parameter)]
         for constraint in data.get('constraints', []):
             if (matches_action_parameter(constraint.get('parameter'), parameter)
                     and constraint.get('operator') in ('=', '==') and not constraint.get('condition')):

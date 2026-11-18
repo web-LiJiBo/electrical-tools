@@ -32,6 +32,11 @@ class DecompositionResult:
     # None means the model did not declare whole-request control restrictions.
     request_controls: dict[str, Any] | None = None
     context_facts: list[dict[str, Any]] = field(default_factory=list)
+    historical_facts: list[dict[str, Any]] = field(default_factory=list)
+    prohibitions: list[dict[str, Any]] = field(default_factory=list)
+    clarifications: list[str] = field(default_factory=list)
+    retrieval_terms: list[str] = field(default_factory=list)
+    normalization_notes: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
@@ -46,6 +51,7 @@ class DecompositionResult:
             "standard_refs": self.standard_refs,
             "scenario": self.scenario,
             "keywords": self.keywords,
+            "retrieval_terms": self.retrieval_terms,
             "rules": [],
             "relations": [],
         }

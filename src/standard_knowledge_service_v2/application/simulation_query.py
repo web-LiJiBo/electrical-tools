@@ -317,6 +317,9 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
                 lines.append('以上仅判断当前动作前置条件，不代表检修许可或实际操作授权；未生成控制指令。')
             else:
                 fields = {**(device.get('state') or {}), **(device.get('runtime_facts') or {})}
+                requested = [name.split('.')[-1] for name in item.get('requested_fields', [])]
+                if requested:
+                    fields = {key: value for key, value in fields.items() if key in requested}
                 lines.append(f'{name}（{device["device_id"]}）：'
                     + '；'.join(f'{FIELD_NAMES.get(key, key)}：{value}' for key, value in fields.items()))
     base['answer'] = {'text': '\n'.join(lines) + '\n以上为当前模拟状态；整体健康或标准符合性需结合适用依据判断。'}
@@ -330,7 +333,7 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
             response_status = 'partial'
     # Preserve source-based temperature assessment as optional evidence, never a fact gate.
     has_knowledge_task = semantic and any(item['query_kind'] in ('assessment', 'standard_query') for item in decomposed.queries)
-    if not has_knowledge_task and len(selected) == 1 and selected[0]['device_type'] == 'transformer' and re.search(r'正常|异常|温升', query):
+    if not semantic and not has_knowledge_task and len(selected) == 1 and selected[0]['device_type'] == 'transformer' and re.search(r'正常|异常|温升', query):
         from .real_clause_assessment import assess_real_clause
         _, assessment, evidence = assess_real_clause(pipeline, request, snapshot=snapshot, device_id=selected[0]['device_id'], decomposed=decomposed)
         if assessment.get('real_clause_evidence'):

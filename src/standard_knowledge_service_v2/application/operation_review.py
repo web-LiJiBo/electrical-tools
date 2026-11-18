@@ -23,10 +23,13 @@ simulation_inputs.applied记录后台已经匹配字段并按单位换算的用�
 检查完整原文的所有操作与查询诉求是否被operations和queries完整覆盖，遗漏任何诉求、
 未知设备、所属冲突、动作不符、参数变化或缺少依据必须拒绝，不得批准部分清单。
 queries只用于核对覆盖，不生成额外操作；items只对应operations。
+prohibitions记录原文被禁止的动作，不作为操作候选。例如禁止stop而要求start时，start可独立批准且has_negation=false；禁止start却清单中保留start必须拒绝。不得用无关动作的禁止来拒绝明确肯定诉求。全局不生成仍必须遵守。
+normalization_notes说明程序做过的表现形式统一。不得因编号中文/阿拉伯数字、口语赋值、目录固有归属省略或单位等价换算而拒绝；仍对照原文核对对象、动作、目标、真实条件和先后。目录联锁不参与本次语义是否忠实的判定，由后台另行校验。
+单位必须区分大小写：MW为兆瓦，mW为毫瓦，kW为千瓦；120mW=0.00012kW，0.12MW=120kW。程序会按原文证据规范化目标；等价换算不是修改用户目标，错误倍率仍须拒绝。
 只能返回复核诊断，device_id/action/parameters必须逐项原样回显，禁止用修改后的值申请通过。
 source_text等证据无需回显。items每项必须包含index、matches_request、reason、device_id、action、parameters全部六个字段，不能只返回核对理由。没有参数也必须回显parameters:{}；device_id/action必须从输入该项原样复制，不可仅在reason中提及。即使认为应修改计划，也只设matches_request=false并说明原因。
 存在针对所请求操作的否定、执行前提或先后依赖时，对应has_negation/has_conditions/has_order
-必须为true。has_negation一律拒绝。执行条件和顺序只有输入execution_support明确为相应类型
+必须为true。has_negation只表示清单中的肯定操作实际被用户禁止或存在未解决的同动作冲突，并据此拒绝；不表示原文任何位置出现否定词。执行条件和顺序只有输入execution_support明确为相应类型
 提供后台编译支持且operations完整原样绑定时才可批准；没有此服务器上下文一律拒绝。
 execution_support只说明后台支持范围，不证明语义正确。须独立核对原话自然语言条件与
 conditions比较式的字段、方向、值、设备作用域及每个order是否忠实，遗漏、替换或擅自
@@ -60,6 +63,8 @@ def review_packet(query, understanding, catalog, conversation_context=None):
     return deepcopy({'query': query, 'operations': field('operations'),
                      'queries': field('queries'), 'catalog': catalog,
                      'context_facts': field('context_facts'), 'scenario': field('scenario'),
+                     'historical_facts': field('historical_facts'),
+                     'prohibitions': field('prohibitions'), 'normalization_notes': field('normalization_notes'),
                      'conversation_context': [] if conversation_context is None else conversation_context})
 
 

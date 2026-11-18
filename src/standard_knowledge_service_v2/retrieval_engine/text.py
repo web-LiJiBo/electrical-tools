@@ -6,7 +6,11 @@ from collections import Counter
 
 
 def normalize(text: str) -> str:
-    return re.sub(r"\s+", "", (text or "")).lower()
+    value = re.sub(r"\s+", "", (text or "")).lower()
+    for original, canonical in [('主变压器', '变压器'), ('主变', '变压器'), ('电力变压器', '变压器'),
+                                 ('顶层油温温升', '顶层油温升')]:
+        value = value.replace(original, canonical)
+    return value
 
 
 def tokens(text: str) -> Counter[str]:

@@ -94,7 +94,7 @@ class AnalysisPipeline:
         kinds = ('device_status', 'device_capability', 'device_readiness', 'standard_query', 'assessment', 'operation', 'other')
         if online and (decomposed.source != 'model_api' or not decomposed.valid or kind not in kinds
                        or decomposed.operations is None or decomposed.queries is None
-                       or kind == 'operation' and not decomposed.operations):
+                       ):
             diagnostics = list(decomposed.errors)
             if kind not in kinds:
                 diagnostics.append('模型未返回受支持的scenario.query_kind，未改用关键词分流')
@@ -107,6 +107,18 @@ class AnalysisPipeline:
                 'answer': {'text': '问题理解模型调用未完成，本次未生成指令。请检查接口后重试。'},
                 'control_block_reason': '在线问题理解未完成，不能由本地规则替代生成操作',
             }, [], ['问题理解模型未完成；未使用本地规则生成操作'])
+        if request.parameters.get('simulation_mode') is True:
+            from .semantic_resolution import normalize_plan, clarification_questions, unresolved_response
+            from .simulation_access import simulation_runtime
+            catalog = simulation_runtime(self).catalog
+            decomposed = normalize_plan(decomposed, request.query, catalog, request.parameters, request.conversation_context)
+            questions = clarification_questions(decomposed, catalog)
+            if questions:
+                return self._respond(request, 'uncertain', unresolved_response(self, request, decomposed, questions), [], [])
+            if decomposed.prohibitions and not decomposed.operations and not decomposed.queries:
+                return self._respond(request, 'answered', {'simulation_factual': True,
+                    'decomposition': decomposed.to_dict(), 'candidate_instruction': None,
+                    'answer': {'text': '已保留禁止操作要求，未生成操作指令。'}}, [], [])
         input_report = None
         if request.parameters.get('simulation_mode') is True:
             from .context_facts import apply_user_inputs
@@ -178,9 +190,31 @@ class AnalysisPipeline:
         questions = [item for item in (decomposed.queries or []) if item['query_kind'] in ('standard_query', 'assessment')]
         factual = [item for item in (decomposed.queries or []) if item['query_kind'] in ('device_status', 'device_capability', 'device_readiness')]
         needs_review = bool(decomposed.operations) and request.parameters.get('simulation_mode') is True
-        context = review_packet(request.query, decomposed, catalog_context(self, request), request.conversation_context) if needs_review else None
+        if needs_review:
+            from .semantic_resolution import preflight_blocked_response
+            blocked = preflight_blocked_response(self, request, decomposed)
+            if blocked is not None:
+                state, data, evidence, warnings = blocked
+                data['decomposition'] = decomposed.to_dict()
+                if process_questions and questions:
+                    knowledge = self._question_response(request, decomposed, questions)
+                    data.setdefault('query_results', []).append({'query_kind': 'knowledge',
+                        'status': knowledge.status, 'data': knowledge.data, 'evidence': knowledge.evidence})
+                    data['answer']['text'] += '\n' + knowledge.data.get('answer', {}).get('text', '来源或条件不足，请查看条款查询结果。')
+                    evidence.extend(knowledge.evidence)
+                    warnings.extend(knowledge.warnings)
+                    if knowledge.status not in ('answered', 'generated'):
+                        state = 'partial'
+                return respond(request, state, data, evidence, warnings)
+        review_catalog = catalog_context(self, request) if needs_review else None
+        if review_catalog:
+            for device in review_catalog['devices']:
+                for action in device['actions'].values():
+                    action.pop('condition', None)
+                    action.pop('constraints', None)
+        context = review_packet(request.query, decomposed, review_catalog, request.conversation_context) if needs_review else None
         if context is not None:
-            context['business_parameters'] = {'action_parameters': request.parameters.get('action_parameters', {})}
+            context['business_parameters'] = {'action_parameters': request.parameters.get('action_parameters', {}), 'device_facts': request.parameters.get('device_facts', {})}
             # Semantic review sees user facts, not superseded fixture values.
             context['simulation_inputs'] = {'applied': [
                 {key: row[key] for key in ('device_id', 'field', 'value', 'unit', 'sources')}
@@ -211,7 +245,7 @@ class AnalysisPipeline:
                 if knowledge is not None:
                     data['query_results'] = [{'query_kind': 'knowledge', 'status': knowledge.status, 'data': knowledge.data, 'evidence': knowledge.evidence}]
                 return respond(request, 'partial' if review.get('status') == 'failed' else 'uncertain', data, [], [])
-            if prepared is not None:
+            if decomposed.operations:
                 from ..decomposition.intent_classifier import IntentClassification
                 intent = IntentClassification('instruction', intent.confidence,
                     (*intent.reasons, '受限操作清单已完成后台编译和独立语义复核，仍须逐步核验与确认'), intent.model_intent)

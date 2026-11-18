@@ -37,7 +37,7 @@ def apply_user_inputs(pipeline, request, understanding):
                for key, value in supplied.items()):
             raise ValueError('提问与业务参数中的动作目标冲突；未更新模拟状态')
         template = profiles.get(operation['device_id'], {}).get('actions', {}).get(operation['action'], {})
-        _, reason = resolve_action_parameters(operation['source_text'], template, supplied)
+        _, reason = resolve_action_parameters(operation['source_text'], template, supplied, {'parameter_evidence': operation.get('parameter_evidence', []), 'model_parameters': operation['parameters'], 'business_parameters': supplied})
         if reason:
             raise ValueError(reason)
     updates, skipped = collect_inputs(profiles, understanding.context_facts,

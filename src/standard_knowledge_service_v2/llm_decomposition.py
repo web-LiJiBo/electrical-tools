@@ -39,12 +39,28 @@ JSON字段：
   "standard_refs": [{"standard_id": "标准编号", "version": "版本"}],
   "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "context_kind":"none|background|precondition|uncertain", "operation_type": "操作类型", "query_kind": "device_status|device_capability|device_readiness|standard_query|assessment|operation|other"},
   "keywords": ["检索关键词"],
-  "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "clarification":"需澄清的问题或空字符串"}],
-  "queries": [{"device_id":"目录唯一编号，标准咨询可留空", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "query_kind":"device_status|device_capability|device_readiness|standard_query|assessment|other", "requested_action":"仅device_readiness必填的待判断目录动作码", "source_text":"本项原文", "clarification":"需澄清的问题或空字符串"}],
+  "retrieval_terms": ["标准问题的核心设备/物理量/主题规范称呼；不列整个业务场景的无关主题"],
+  "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "parameter_evidence":[{"parameter":"动作参数名","value_text":"原始数值片段","unit_text":"原始单位或空串","source_text":"原文目标赋值片段","role":"target"}], "condition_evidence":[], "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "clarification":"需澄清的问题或空字符串"}],
+  "queries": [{"device_id":"目录唯一编号，标准咨询可留空", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "query_kind":"device_status|device_capability|device_readiness|standard_query|assessment|other", "requested_action":"仅device_readiness必填的待判断目录动作码", "requested_fields":["device_status所问目录字段；整体状态或非状态查询填空列表"], "source_text":"本项原文", "clarification":"需澄清的问题或空字符串"}],
   "context_facts": [{"device_id":"目录编号", "parameter":"目录事实字段名或原参数名", "operator":"比较符", "value":0, "unit":"原单位", "usage":"current|reference", "source_text":"包含该事实的原文"}],
+  "prohibitions": [{"device_id":"目录编号", "target_text":"原文目标", "owner_id":"所属编号或空串", "action":"被禁止动作码", "source_text":"原文禁止片段", "clarification":"问题或空串"}],
+  "clarifications": ["确实缺少或歧义的信息；无问题时为空列表"],
   "request_controls": {"analysis_only": false, "source_text":"仅分析、不要生成指令等全局限制的原文片段，无限制时空字符串"},
   "confidence": 0.0
 }
+
+统一语义约定：
+- operations只列本次肯定要求的操作。禁止/取消某个动作另列prohibitions，不能把“不要停止、请启动”误判为否定启动；该例operations为start、prohibitions为stop。只有无条件禁止整次生成或执行才设置analysis_only=true。当前状态“未启动”不是禁止启动。
+- 不得仅因出现否定字就否定整批操作；逐设备、逐动作保留作用域。真正同一动作同时被禁止与要求时clarifications说明冲突，不替用户择值。
+- 中文设备编号与数字参数按语义识别为目录编号/模板数值，target_text和source_text仍保留原始文字。“一号”对应编号1，“第九档”对应9档。不要自行修正未知99为1；同名两个协议设备不能默认选择。
+- 所有数值动作参数同时提供parameter_evidence，逐项引用原始value_text、unit_text和包含它们的source_text，role为target；当前测量、额定参数和参考阈值不填作target。无数值目标的动作parameter_evidence=[]。单位未写且模板唯一时unit_text为空，用模板单位，并且不伪造原文单位。业务参数单独提供的目标不伪造正文数字证据。
+- 数值和单位的等价换算由程序统一核对，不因与模板单位不同就要求澄清。严格区分SI前缀大小写：MW为兆瓦、mW为毫瓦、kW为千瓦；120mW=0.00012kW，0.12MW=120kW。保留原单位证据，parameters按模板单位填写；不能把小写m擅自改成大写M。
+- 明确用户执行前提保留conditions，并为每个条件提供condition_evidence:[{"expression":"与conditions相同表达式","source_text":"用户明确限制该操作的原文","kind":"user_condition"}]。只是陈述当前无故障后要求启动时context_kind=background、conditions=[]，当前状态放context_facts。模板自带联锁不写成用户条件。
+- owner_id描述目录归属即可，用户没有重复主变名称时也不虚构原文归属；target_text保留能证明目录设备身份的原始名称。查询后承接操作可共同使用包含明确设备和代词的完整原句作为source_text，不改写原话。
+- 设备未知、同名、多候选或确实缺少目标值时，明确填写clarifications以及相关行clarification，可保留空device_id；这是正常业务澄清，不要输出假设备，也不要把需要澄清的请求写成确定操作。
+- 通用标准要求、限值或出处咨询属于主题查询，device_id留空，不需要在模拟目录中选择设备实例；例如“主变的顶层油温升允许多少K，给出处”不能因目录有两台主变而要求选择。只有查询具体设备当前状态、执行操作或按具体设备参数评估时才需要确定实例。适用标准的电压等级/设备类别不明时可说明资料范围，不猜测标准。
+- 仅查询某个当前测量值时，只列device_status，不额外添加assessment/standard_query；requested_fields可列目录中所问字段。能力、当前值和前置条件问题应尽量直接形成相应queries，而不因目录归属无需重复就要求用户澄清。
+- 用户只分析某设备动作的执行前提时，operations=[]，queries须保留该设备的device_readiness和requested_action，不得因为禁止生成而同时清空查询。例如“只有A供电正常才能启动，但这次只分析，不要生成指令”是检查A的start前提；analysis_only=true不取消分析诉求。
 
 无设备目录时，actions从以下标准动作码中选择：
 trip, close, isolate, alarm, lockout, reset, inspect, test, maintain,
@@ -58,7 +74,7 @@ device_readiness为判断某设备当前是否具备启动等动作前置条件�
 standard_query为标准、条款、依据或要求咨询；assessment为正常与否、合规或假设工况评估；
 operation为用户提出的具体操作；other为其他问题。按整句目的判断，不因出现动作词就视为操作。
 intent仍只使用search、consistency、compliance、difference、instruction；评估类intent用compliance，assessment仅用于query_kind。
-否定、疑问和条件必须保留在intent、constraints及operating_condition中；实体保留编号、并列对象和所属关系。
+否定保留到对应prohibitions或全局限制，疑问和条件保留其真实作用域；实体保留编号、并列对象和所属关系。
 operating_condition只是工况描述，不是执行条件标志。scenario.context_kind须为none/background/precondition/uncertain之一，按整句语义判断。已发生状态、当前测量值与用户参考阈值是background，放context_facts，不自动列入operations.conditions或constraints；明确要求满足前提才执行是precondition，必须保留到conditions及constraints；混合背景与前提用precondition并保留context_facts；无法确定限制作用域用uncertain。不能只凭“当前”“低于”等单词判断。没有背景时context_facts为空列表。
 当前测量值与比较阈值应分别列context_facts，例如实际值用operator="="，阈值参数另列，不要只保留比较阈值而遗漏当前值。context_facts是用户陈述，不是已核验实测。明确提供的当前状态/当前测量用usage="current"，历史记录、假设、参考值、比较阈值用usage="reference"；只有current的精确等值可由后台用于补充模拟状态，范围或条件不代表当前值，不得推算。不能把用户阈值当成标准。parameter优先用目录fact_fields及fact_schema字段名，value来自原文并按字段类型表达，枚举用目录values中的对应值，保留原单位；source_text引用包含该事实的原文。只有操作背景不列入constraints；评估问题的假设数值仍沿用原有constraints。设备状态明确给值后再要求动作，并不等于额外提出“只有满足该值才执行”的条件。
 操作目标数值用constraints的等值赋值表达，parameter写目标参数、operator写=、condition留空；
@@ -204,6 +220,14 @@ def _string_list(value: Any, field_name: str, errors: list[str]) -> list[str]:
 def validate_semantic_plan(data: dict[str, Any]) -> list[str]:
     """Validate the whole-request plan without repairing missing control claims."""
     errors = []
+    for key in ('prohibitions', 'clarifications', 'retrieval_terms'):
+        value = data.get(key, [])
+        if not isinstance(value, list) or (key in ('clarifications', 'retrieval_terms') and any(not isinstance(q, str) for q in value)):
+            errors.append(key + '格式无效')
+        elif key == 'prohibitions' and any(not isinstance(row, dict) or any(not isinstance(row.get(k), str)
+                for k in ('device_id', 'action', 'target_text', 'source_text'))
+                or any(not isinstance(row.get(k, ''), str) for k in ('owner_id', 'clarification')) for row in value):
+            errors.append('prohibitions缺少设备、动作和原文依据')
     facts = data.get('context_facts', [])
     if (not isinstance(facts, list) or len(facts) > 16 or any(
             not isinstance(row, dict) or any(not isinstance(row.get(key), str) or not row[key].strip()
@@ -239,6 +263,15 @@ def validate_semantic_plan(data: dict[str, Any]) -> list[str]:
             if name == 'queries' and row.get('query_kind') == 'device_readiness':
                 if not isinstance(row.get('requested_action'), str) or not row['requested_action'].strip():
                     errors.append(f'{prefix}缺少待判断的requested_action')
+            for evidence_key, required in [('parameter_evidence', ('parameter','value_text','unit_text','source_text')),
+                                            ('condition_evidence', ('expression','source_text','kind'))]:
+                evidence = row.get(evidence_key, [])
+                if not isinstance(evidence, list) or any(not isinstance(e, dict) or any(
+                        not isinstance(e.get(k), str) for k in required) for e in evidence):
+                    errors.append(prefix + '.' + evidence_key + '格式无效')
+            if 'requested_fields' in row and (not isinstance(row['requested_fields'], list)
+                    or any(not isinstance(k, str) for k in row['requested_fields'])):
+                errors.append(prefix + '.requested_fields格式无效')
             if name == 'operations':
                 if not isinstance(row.get('parameters'), dict) or type(row.get('negated')) is not bool:
                     errors.append(f'{prefix}缺少动作参数或否定标记')

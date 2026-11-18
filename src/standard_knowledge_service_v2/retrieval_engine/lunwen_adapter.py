@@ -223,16 +223,11 @@ class LocalLunwenRetrievalAdapter:
 
     @staticmethod
     def _focus_terms(parsed: dict) -> list[str]:
-        terms: list[str] = []
-        terms.extend(str(item) for item in parsed.get("keywords", []) if str(item).strip())
-        terms.extend(str(item) for item in parsed.get("actions", []) if str(item).strip())
-        scenario = parsed.get("scenario", {})
-        if isinstance(scenario, dict):
-            terms.extend(str(value) for value in scenario.values() if str(value).strip())
-        for item in parsed.get("constraints", []):
-            if isinstance(item, dict):
-                terms.extend(str(item.get(key, "")) for key in ("parameter", "value", "condition") if str(item.get(key, "")).strip())
-        terms.extend(str(item) for item in parsed.get("scenario_topics", []) if str(item).strip())
-        if str(parsed.get("context_device_type", "")).strip():
-            terms.append(str(parsed["context_device_type"]))
-        return list(dict.fromkeys(terms))
+        # Query-specific concepts lead retrieval; broad scene categories do not
+        # compete with the quantity actually being asked about.
+        focused = parsed.get('retrieval_terms') or parsed.get('keywords', [])
+        terms = [str(term) for term in focused if str(term).strip()]
+        terms += [str(row.get('parameter', '')) for row in parsed.get('constraints', []) if isinstance(row, dict)]
+        if not terms:
+            terms += [str(value) for value in parsed.get('scenario_topics', [])]
+        return list(dict.fromkeys(normalize(term) for term in terms if normalize(term)))

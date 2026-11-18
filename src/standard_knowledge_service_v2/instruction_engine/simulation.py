@@ -65,7 +65,19 @@ class SimulationInstructionService:
         candidate.precondition_status = decision.status.value
         candidate.precondition_trace = decision.to_dict()["trace"]
         if candidate.precondition_status != "pass":
-            candidate.explanation = "测试前置条件不满足或事实不完整；不生成载荷"
+            labels = {**device.get('state_fields', {}), **device.get('runtime_fact_fields', {})}
+            reasons = []
+            for step in candidate.precondition_trace:
+                if step['status'] == 'pass':
+                    continue
+                item = step.get('evidence', {})
+                field = item.get('field', '')
+                name = labels.get(field, {}).get('display_name') or field
+                if field:
+                    reasons.append(f"{name}当前值{item.get('actual')!r}，要求{item.get('operator', '')} {item.get('expected')!r}")
+                else:
+                    reasons.append(step.get('message', '缺少必要事实'))
+            candidate.explanation = '未生成指令：' + '；'.join(reasons or ['前置条件未满足或事实不完整'])
             return candidate
         parameters = parameters or {}
         parameter = template.get("parameter")
