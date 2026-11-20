@@ -181,7 +181,13 @@ class AnalysisPipeline:
                     'answer': {'text': '已保留只分析要求；请明确想核对的状态、条件或来源。'},
                     'devices': []}, [], [])
         kind = decomposed.scenario.get('query_kind')
-        intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
+        if (request.parameters.get('simulation_mode') is True and decomposed.source == 'model_api'
+                and (decomposed.operations or decomposed.queries)):
+            from ..decomposition.intent_classifier import IntentClassification
+            intent = IntentClassification(decomposed.intent, decomposed.confidence,
+                ('采用逐项任务统一推导的意图；操作仍须独立复核和程序校验',), decomposed.intent)
+        else:
+            intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
         if not process_questions or analysis_only:
             from ..decomposition.intent_classifier import IntentClassification
             intent = IntentClassification('compliance' if kind == 'assessment' else 'search',
@@ -214,6 +220,8 @@ class AnalysisPipeline:
                     action.pop('constraints', None)
         context = review_packet(request.query, decomposed, review_catalog, request.conversation_context) if needs_review else None
         if context is not None:
+            from .semantic_operations import identity_resolution
+            context['identity_resolution'] = identity_resolution(self, request, decomposed)
             context['business_parameters'] = {'action_parameters': request.parameters.get('action_parameters', {}), 'device_facts': request.parameters.get('device_facts', {})}
             # Semantic review sees user facts, not superseded fixture values.
             context['simulation_inputs'] = {'applied': [

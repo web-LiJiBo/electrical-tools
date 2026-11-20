@@ -15,9 +15,15 @@ def _compact(value):
 
 def catalog_context(pipeline, request):
     """Identity and capabilities only: model understanding never reads live state."""
-    catalog = simulation_runtime(pipeline).catalog
+    runtime = simulation_runtime(pipeline)
+    catalog = runtime.catalog
     scene = catalog.scenarios.get(request.parameters.get('simulation_scenario_id'), {})
     ids = scene.get('device_ids', list(catalog.devices))
+    if request.parameters.get('simulation_session_id'):
+        from .simulation_access import view_snapshot
+        snapshot = view_snapshot(pipeline, request, runtime.snapshot(request.parameters['simulation_session_id']))
+        scene = catalog.scenarios.get(snapshot.get('scenario_id'), {})
+        ids = [row['device_id'] for row in snapshot['devices']]
     ownership = []
     for profile in catalog.scenarios.values():
         groups = profile.get('groups', {})
@@ -27,7 +33,19 @@ def catalog_context(pipeline, request):
                 if role != 'transformer' and device_id in ids and link not in ownership:
                     ownership.append(link)
     from ..instruction_engine.simulation_inputs import fact_schema
-    return {'business_parameters': {'action_parameters': deepcopy(request.parameters.get('action_parameters', {}))},
+    devices = [catalog.devices[key] for key in ids]
+    history = next((message.get('content', '') for message in reversed(request.conversation_context)
+                    if message.get('role') == 'user'), '')
+    mentioned = _explicit_targets(history, devices, scene) if history else set()
+    pools = {}
+    for device in devices:
+        pools.setdefault(device['device_type'], set()).add(device['device_id'])
+    alternatives = [{'device_type': kind, 'previous_device_id': next(iter(pool & mentioned)),
+                     'other_device_id': next(iter(pool - mentioned))}
+                    for kind, pool in pools.items() if len(pool) == 2 and len(pool & mentioned) == 1]
+    return {'reference_context': {'source_text': history, 'mentioned_device_ids': sorted(mentioned),
+                                 'unique_alternatives': alternatives},
+            'business_parameters': {'action_parameters': deepcopy(request.parameters.get('action_parameters', {}))},
             'devices': [{key: deepcopy(device.get(key, '')) for key in
             ('device_id', 'display_name', 'device_type', 'aliases', 'business_scenario')}
             | {'actions': {action: {key: deepcopy(template.get(key)) for key in
@@ -126,7 +144,7 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
     owner = item.get('owner_id', '').upper()
     owners = {d['device_id'] for d in devices if d['device_type'] == 'transformer'}
     stated_owners = mentioned & owners
-    if owner and (owner not in owners or owner not in _mentions(source, devices, nested=True) and key not in _mentions(target, devices)):
+    if owner and owner not in owners:
         return '', '设备所属关系没有对应原文或目录依据，请明确目标。'
     if len(stated_owners) == 1:
         stated_owner = next(iter(stated_owners))
@@ -150,8 +168,10 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
             role = next(iter(source_roles))
     if device['device_type'] == 'transformer' and role:
         return '', '原文请求附属设备，但识别为主设备，请明确所属设备。'
-    if key not in mentioned and not (owner and role == device['device_type']):
-        referenced = re.search(r'其|它|该(?:设备|风机|油泵|断路器|开关|装置)|刚才', target)
+    direct_relation = (owner and role == device['device_type']
+                       and owner in _mentions(source, devices, nested=True))
+    if key not in mentioned and not direct_relation:
+        referenced = re.search(r'其|它|该(?:设备|冷却风机|风机|油泵|断路器|开关|装置)|刚才|另(?:一)?台|另一个', target)
         contextual = set()
         if referenced:
             for message in reversed(conversation_context):
@@ -167,18 +187,29 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
                                     contextual.update(group[kind] for kind in context_roles if kind in group)
                     # Resolve an explicit owner/accessory reference through the
                     # same catalog relation, without consulting live state.
-                    if owner and owner in contextual:
-                        contextual = {key}
                     if contextual:
                         break
-        preceding = {previous} if isinstance(previous, str) else previous
+        from .device_references import reference_candidates
+        preceding = (reference_candidates(target, previous, devices, profile, _ROLES)
+                     if previous is not None else None)
+        contextual = reference_candidates(target, contextual, devices, profile, _ROLES)
+        current = set()
+        if referenced:
+            question, fragment, label = reference_text(query), reference_text(source), reference_text(target)
+            start = question.find(fragment)
+            if start >= 0:
+                for match in re.finditer(re.escape(label), fragment):
+                    candidates = _explicit_targets(question[:start + match.start()], devices, profile)
+                    current.update(reference_candidates(target, candidates, devices, profile, _ROLES))
         # A current-sentence reference takes precedence over older messages.
         # More than one preceding target remains ambiguous, even when history
         # happens to mention the model's selected device.
         stated = _mentions(source, devices)
-        resolved = (stated == {key} or
+        resolved = (current == {key} if current else stated == {key} or
                     (preceding == {key} if preceding is not None else contextual == {key}))
-        if not (referenced and resolved):
+        implicit = (_explicit_targets(query, devices, profile) == {key}
+                    and _mentions(source, devices) == {key})
+        if not (referenced and resolved or implicit):
             return '', '设备编号缺少唯一的原文或归属依据，请提供完整目标。'
     return key, ''
 
@@ -242,23 +273,51 @@ def untraced_text(understanding, query):
     return re.sub(r'同时|并且|以及|谢谢(?:你|您)?|麻烦了|辛苦了|[，；;。?？、,！!\s]', '', remaining)
 
 
-def factual_plan_queries(understanding, request, snapshot, devices, profile):
-    results = []
+def _bind_plan_targets(understanding, request, devices, profile):
     # Bind in textual order so a query may refer to an earlier operation or
     # query. Targets coordinated in one source remain a set, never last-wins.
     rows = [*understanding.operations, *understanding.queries]
     rows = [item for item in rows if 'action' in item or item['query_kind'] in ('device_status', 'device_capability', 'device_readiness')]
     rows.sort(key=lambda item: _compact(request.query).find(_compact(item['source_text'])))
     source, group, previous = None, set(), None
+    references, bindings = {}, {}
     for item in rows:
         if item['source_text'] != source:
             previous = group or previous
             source, group = item['source_text'], set()
-        key, reason = bind_target(item, request.query, devices, profile, previous=group or previous,
-                                  conversation_context=request.conversation_context)
+        question, fragment, target = (reference_text(value) for value in
+                                      (request.query, item['source_text'], item['target_text']))
+        offset = question.find(fragment)
+        occurrences = [(offset + match.start(), offset + match.end())
+                       for match in re.finditer(re.escape(target), fragment)] if offset >= 0 and target else []
+        # Source windows can differ while citing the same original occurrence.
+        # "another" must use its original antecedent, not the previous row's result.
+        identity = ((occurrences[0] if len(occurrences) == 1 else (fragment, target)),
+                    item.get('owner_id', ''))
+        if identity in references:
+            key = references[identity]
+            reason = '' if item['device_id'].upper() == key else '同一处设备指代对应多个编号，请明确目标。'
+        else:
+            key, reason = bind_target(item, request.query, devices, profile, previous=group or previous,
+                                      conversation_context=request.conversation_context)
+        if reason:
+            return {}, reason
+        references[identity] = key
+        bindings[id(item)] = key
+        group.add(key)
+    return bindings, ''
+
+
+def factual_plan_queries(understanding, request, snapshot, devices, profile, *, bindings=None):
+    results = []
+    if bindings is None:
+        bindings, reason = _bind_plan_targets(understanding, request, devices, profile)
         if reason:
             return [], reason
-        group.add(key)
+    for item in (understanding.queries or []):
+        if id(item) not in bindings:
+            continue
+        key = bindings[id(item)]
         if 'action' in item:
             continue
         device = next(device for device in devices if device['device_id'] == key)
@@ -272,6 +331,25 @@ def factual_plan_queries(understanding, request, snapshot, devices, profile):
             result['readiness'] = evaluate_device_readiness(device, item['requested_action'], devices=devices, profile=profile)
         results.append(result)
     return results, ''
+
+
+def identity_resolution(pipeline, request, understanding):
+    """Give the semantic reviewer the actual scene's verified identity evidence."""
+    from .simulation_access import default_session, view_snapshot
+    runtime = simulation_runtime(pipeline)
+    sid = request.parameters.get('simulation_session_id')
+    snapshot = view_snapshot(pipeline, request, runtime.snapshot(sid) if sid else default_session(pipeline))
+    devices = [runtime.catalog.devices[row['device_id']] for row in snapshot['devices']]
+    bindings, reason = _bind_plan_targets(understanding, request, devices,
+                                         runtime.catalog.scenarios.get(snapshot.get('scenario_id'), {}))
+    if reason:
+        return {'status': 'unresolved', 'reason': reason, 'items': []}
+    return {'status': 'verified', 'items': [
+        {'device_id': bindings[id(row)], 'target_text': row['target_text'],
+         'source_text': row['source_text'], 'owner_id': row.get('owner_id', ''),
+         'same_type_candidates': [device['device_id'] for device in devices if device['device_type']
+                                  == runtime.catalog.devices[bindings[id(row)]]['device_type']]}
+        for row in [*understanding.operations, *understanding.queries] if id(row) in bindings]}
 
 
 def factual_answer(results):
@@ -333,12 +411,12 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         return blocked(context_reason)
     reason = ('用户否定或取消操作，只保留回答，不生成操作预览'
               if not online and not (feedback_sequence or condition_guard) and IntentClassifier.action_is_negated(request.query) else '') if allow_restrictions else ('' if online else action_request_restriction(request.query))
-    if not allow_restrictions and not reason and (understanding.scenario.get('operating_condition') and not background_only(understanding)
+    if not online and not allow_restrictions and not reason and (understanding.scenario.get('operating_condition') and not background_only(understanding)
             or re.search(r'假如|假设|仅在|前提|一旦|除非|否则|直到|先.+(?:再|然后)', request.query)):
         reason = '请求带有执行条件或顺序要求，当前不能编排，请拆分后逐步核对。'
     if reason:
         return blocked(reason)
-    if allow_restrictions and understanding.scenario.get('operating_condition') and not background_only(understanding) and not any(item['conditions'] for item in rows):
+    if not online and allow_restrictions and understanding.scenario.get('operating_condition') and not background_only(understanding) and not any(item['conditions'] for item in rows):
         return blocked('整句运行前提未保留到逐项执行条件，不能仅凭顺序支持生成预览。')
     if len(rows) > 8:
         return blocked('一次最多预览8条明确操作，请分批提交。')
@@ -352,7 +430,10 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
     reason = plan_coverage(understanding, request.query, devices, profile)
     if reason:
         return blocked(reason)
-    factual_results, reason = factual_plan_queries(understanding, request, snapshot, devices, profile)
+    bindings, reason = _bind_plan_targets(understanding, request, devices, profile)
+    if reason:
+        return blocked(reason)
+    factual_results, reason = factual_plan_queries(understanding, request, snapshot, devices, profile, bindings=bindings)
     if reason:
         return blocked(reason)
     for item in rows:
@@ -361,10 +442,7 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         if (not online or understanding.intent != 'instruction') and IntentClassifier().classify(item['source_text'], 'instruction', [item['action']], query_kind='operation',
                                        feedback_sequence=feedback_sequence, condition_guard=condition_guard).intent != 'instruction':
             return blocked('原文为疑问或咨询表达，未明确要求执行操作。')
-        device_id, reason = bind_target(item, request.query, devices, profile, previous=previous,
-                                        conversation_context=request.conversation_context)
-        if reason:
-            return blocked(reason)
+        device_id = bindings[id(item)]
         available = runtime.catalog.devices[device_id]['actions']
         action = item['action']
         unsupported = not action or action not in available

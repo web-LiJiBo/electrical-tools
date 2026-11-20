@@ -75,6 +75,7 @@ def build_application(config_path: str | Path) -> Application:
             timeout_seconds=config.llm.timeout_seconds,
             temperature=config.llm.temperature,
             max_tokens=config.llm.max_new_tokens,
+            thinking_mode=config.llm.thinking_mode,
         ))
     elif config.llm.backend == "local_transformers":
         decomposer = LocalQwenDecomposer(QwenDecompositionConfig(

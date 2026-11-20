@@ -23,8 +23,10 @@ simulation_inputs.applied记录后台已经匹配字段并按单位换算的用�
 检查完整原文的所有操作与查询诉求是否被operations和queries完整覆盖，遗漏任何诉求、
 未知设备、所属冲突、动作不符、参数变化或缺少依据必须拒绝，不得批准部分清单。
 queries只用于核对覆盖，不生成额外操作；items只对应operations。
+覆盖范围是operations与queries的并集：操作只需出现在operations，当前值/故障标志/条件诊断等查询只需出现在queries。查询已由正确设备和字段的queries保留时，禁止以“未在operations体现查询”为由报遗漏；missing_requests只写两份清单均未覆盖或实际对应错误的原文诉求。
 prohibitions记录原文被禁止的动作，不作为操作候选。例如禁止stop而要求start时，start可独立批准且has_negation=false；禁止start却清单中保留start必须拒绝。不得用无关动作的禁止来拒绝明确肯定诉求。全局不生成仍必须遵守。
 normalization_notes说明程序做过的表现形式统一。不得因编号中文/阿拉伯数字、口语赋值、目录固有归属省略或单位等价换算而拒绝；仍对照原文核对对象、动作、目标、真实条件和先后。目录联锁不参与本次语义是否忠实的判定，由后台另行校验。
+identity_resolution记录程序按当前场景目录、主附属关系及原文/历史指代核验的设备身份，same_type_candidates为本场景同类型候选。例如历史唯一提及一台同类型设备、场景只有两台，另一台可由排除法唯一确定；目录已经确定的所属主设备无需用户再重复，不应要求在clarification中解释已确定身份。仍独立核对原文目标与该依据是否一致，真实多候选、未知编号或归属冲突必须拒绝，不将设备身份核验当成操作授权。
 单位必须区分大小写：MW为兆瓦，mW为毫瓦，kW为千瓦；120mW=0.00012kW，0.12MW=120kW。程序会按原文证据规范化目标；等价换算不是修改用户目标，错误倍率仍须拒绝。
 只能返回复核诊断，device_id/action/parameters必须逐项原样回显，禁止用修改后的值申请通过。
 source_text等证据无需回显。items每项必须包含index、matches_request、reason、device_id、action、parameters全部六个字段，不能只返回核对理由。没有参数也必须回显parameters:{}；device_id/action必须从输入该项原样复制，不可仅在reason中提及。即使认为应修改计划，也只设matches_request=false并说明原因。

@@ -42,7 +42,7 @@ JSON字段：
   "retrieval_terms": ["标准问题的核心设备/物理量/主题规范称呼；不列整个业务场景的无关主题"],
   "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "parameter_evidence":[{"parameter":"动作参数名","value_text":"原始数值片段","unit_text":"原始单位或空串","source_text":"原文目标赋值片段","role":"target"}], "condition_evidence":[], "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "clarification":"需澄清的问题或空字符串"}],
   "queries": [{"device_id":"目录唯一编号，标准咨询可留空", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "query_kind":"device_status|device_capability|device_readiness|standard_query|assessment|other", "requested_action":"仅device_readiness必填的待判断目录动作码", "requested_fields":["device_status所问目录字段；整体状态或非状态查询填空列表"], "source_text":"本项原文", "clarification":"需澄清的问题或空字符串"}],
-  "context_facts": [{"device_id":"目录编号", "parameter":"目录事实字段名或原参数名", "operator":"比较符", "value":0, "unit":"原单位", "usage":"current|reference", "source_text":"包含该事实的原文"}],
+  "context_facts": [{"device_id":"目录编号", "parameter":"目录事实字段名或原参数名", "operator":"比较符", "value":0, "unit":"原单位", "value_text":"原始数字或状态词，不含单位", "unit_text":"原始单位或空字符串", "usage":"current|reference", "source_text":"包含该事实的最短完整原文，保留设备身份"}],
   "prohibitions": [{"device_id":"目录编号", "target_text":"原文目标", "owner_id":"所属编号或空串", "action":"被禁止动作码", "source_text":"原文禁止片段", "clarification":"问题或空串"}],
   "clarifications": ["确实缺少或歧义的信息；无问题时为空列表"],
   "request_controls": {"analysis_only": false, "source_text":"仅分析、不要生成指令等全局限制的原文片段，无限制时空字符串"},
@@ -50,6 +50,10 @@ JSON字段：
 }
 
 统一语义约定：
+- 逐项operations/queries/prohibitions是任务的权威记录，intent、actions、scenario.query_kind是其摘要，后台统一推导。先完整识别所有诉求，再填写摘要，不因整句只能有一个query_kind而丢掉其他查询或操作。
+- context_facts每个字段提供value_text和unit_text原文证据。value为原文单位下的值，不提前换算当前状态；0.25MW填value=0.25、unit=MW、value_text=0.25、unit_text=MW，由程序换算。value_text不含设备编号、单位或其他字段的值；无数字的状态描述引用原始状态词。一个事实只取对应字段的最短连续片段，设备名字可在片段外由完整问题唯一绑定，不能将历史值、当前值、目标值混在同一个事实证据里。历史、假设、目标不能标current，目标仅入operations.parameters。
+- 指代按设备类型和目录归属消解：“主变及其风机……该风机”指风机，“另一台”仅在对应场景候选唯一时可确定；不能因为最近提及某台主变就将其当成附属设备，也不能把多个候选强选成一个。
+- 目录reference_context只提供身份关系，不提供本次操作授权。unique_alternatives由当前场景的两台同类型设备和最近历史唯一提及的那台按排除法计算；本次确实问“另一台”时应使用对应other_device_id，无须因为用户没有重复编号或归属就要求澄清。它与显式编号冲突或存在额外候选时仍须澄清。
 - operations只列本次肯定要求的操作。禁止/取消某个动作另列prohibitions，不能把“不要停止、请启动”误判为否定启动；该例operations为start、prohibitions为stop。只有无条件禁止整次生成或执行才设置analysis_only=true。当前状态“未启动”不是禁止启动。
 - 不得仅因出现否定字就否定整批操作；逐设备、逐动作保留作用域。真正同一动作同时被禁止与要求时clarifications说明冲突，不替用户择值。
 - 中文设备编号与数字参数按语义识别为目录编号/模板数值，target_text和source_text仍保留原始文字。“一号”对应编号1，“第九档”对应9档。不要自行修正未知99为1；同名两个协议设备不能默认选择。
@@ -234,6 +238,7 @@ def validate_semantic_plan(data: dict[str, Any]) -> list[str]:
                 for key in ('device_id', 'parameter', 'source_text'))
             or type(row.get('value')) not in (str, int, float, bool)
             or row.get('usage') not in ('current', 'reference')
+            or any(not isinstance(row.get(key, ''), str) for key in ('value_text', 'unit_text'))
             or not isinstance(row.get('unit', ''), str) for row in facts)):
         errors.append('context_facts须为含设备、参数、原文、标量值、单位及current/reference用途的最多16项列表')
     if data.get('scenario', {}).get('context_kind', 'none') not in ('none', 'background', 'precondition', 'uncertain'):

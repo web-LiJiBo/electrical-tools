@@ -27,35 +27,38 @@ $env:PYTHONUTF8 = '1'
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:ELECTRICAL_TOOLS_OFFLINE_UNUSED_KEY = ''
 $configuration = if ($useOnline) { 'configs/settings.example.yaml' } else { 'configs/settings.offline.yaml' }
-if ($useOnline -and [string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
+if ($useOnline) {
+    $apiKeyName = & $pythonPath -c "import sys; from standard_knowledge_service_v2.config import load_config; print(load_config(sys.argv[1]).llm.api_key_env)" (Join-Path $projectDirectory $configuration)
+    if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($apiKeyName)) { throw '在线配置未提供有效的密钥环境变量名。' }
+    $apiKeyName = $apiKeyName.Trim()
+    $apiKeyValue = [Environment]::GetEnvironmentVariable($apiKeyName, 'Process')
+    foreach ($keyScope in @('User', 'Machine')) {
+        if ([string]::IsNullOrWhiteSpace($apiKeyValue)) {
+            $apiKeyValue = [Environment]::GetEnvironmentVariable($apiKeyName, $keyScope)
+        }
+    }
     $envFile = Join-Path $projectDirectory '.env'
-    if (Test-Path -LiteralPath $envFile) {
-        $environmentLines = Get-Content -LiteralPath $envFile -Encoding UTF8
-        foreach ($line in $environmentLines) {
-            if ($line -match '^\s*MODEL_API_KEY\s*=\s*(.+?)\s*$') {
-                $env:MODEL_API_KEY = $Matches[1].Trim()
-                break
+    if ([string]::IsNullOrWhiteSpace($apiKeyValue) -and (Test-Path -LiteralPath $envFile)) {
+        $keyPattern = '^\s*' + [Regex]::Escape($apiKeyName) + '\s*=\s*(.+?)\s*$'
+        foreach ($line in (Get-Content -LiteralPath $envFile -Encoding UTF8)) {
+            if ($line -match $keyPattern) { $apiKeyValue = $Matches[1].Trim().Trim('"', "'"); break }
+        }
+    }
+    # Keep the previous generic key usable when upgrading the default DeepSeek configuration.
+    if ($apiKeyName -eq 'DEEPSEEK_API_KEY' -and [string]::IsNullOrWhiteSpace($apiKeyValue)) {
+        foreach ($keyScope in @('Process', 'User', 'Machine')) {
+            if ([string]::IsNullOrWhiteSpace($apiKeyValue)) {
+                $apiKeyValue = [Environment]::GetEnvironmentVariable('MODEL_API_KEY', $keyScope)
             }
         }
-        # 兼容旧版.env中的供应商专用变量名；新配置统一使用MODEL_API_KEY。
-        if ([string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
-            foreach ($line in $environmentLines) {
-                if ($line -match '^\s*[A-Z0-9]+_API_KEY\s*=\s*(.+?)\s*$') {
-                    $env:MODEL_API_KEY = $Matches[1].Trim()
-                    break
-                }
+        if ([string]::IsNullOrWhiteSpace($apiKeyValue) -and (Test-Path -LiteralPath $envFile)) {
+            foreach ($line in (Get-Content -LiteralPath $envFile -Encoding UTF8)) {
+                if ($line -match '^\s*MODEL_API_KEY\s*=\s*(.+?)\s*$') { $apiKeyValue = $Matches[1].Trim().Trim('"', "'"); break }
             }
         }
     }
-}
-if ($useOnline -and [string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
-    $env:MODEL_API_KEY = [Environment]::GetEnvironmentVariable('MODEL_API_KEY','Machine')
-    if ([string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
-        $env:MODEL_API_KEY = [Environment]::GetEnvironmentVariable('MODEL_API_KEY','User')
-    }
-}
-if ($useOnline -and [string]::IsNullOrWhiteSpace($env:MODEL_API_KEY)) {
-    throw '在线模式需要在项目根目录.env、当前进程、用户变量或系统变量中配置MODEL_API_KEY。'
+    if ([string]::IsNullOrWhiteSpace($apiKeyValue)) { throw "在线模式需要在.env或环境变量中配置$apiKeyName。" }
+    [Environment]::SetEnvironmentVariable($apiKeyName, $apiKeyValue, 'Process')
 }
 Write-Output ('[启动] Python环境检查通过：' + $pythonVersion.Trim())
 foreach ($port in @(8000,5500)) {

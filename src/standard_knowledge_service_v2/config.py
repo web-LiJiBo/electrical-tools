@@ -66,6 +66,7 @@ class LLMSettings:
     max_new_tokens: int = 1024
     repetition_penalty: float = 1.05
     allow_offline_fallback: bool = False
+    thinking_mode: str = ""
 
 
 @dataclass(frozen=True, slots=True)
@@ -197,6 +198,9 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
 
     llm_backend = str(llm.get("backend", "local_transformers")).strip()
     remote_model = str(llm.get("remote_model", "")).strip()
+    thinking_mode = str(llm.get('thinking_mode', '')).strip()
+    if thinking_mode not in ('', 'enabled', 'disabled'):
+        raise ValueError('llm_decomposition.thinking_mode须为enabled、disabled或空字符串')
     api_base = str(llm.get("api_base", "")).strip()
     if llm_backend == "model_api" and (not remote_model or not api_base):
         raise ValueError(
@@ -259,6 +263,7 @@ def load_config(config_path: str | Path, project_root: str | Path | None = None)
             max_new_tokens=_positive_int(llm, "max_new_tokens", 1024),
             repetition_penalty=_number(llm, "repetition_penalty", 1.05),
             allow_offline_fallback=_boolean(llm, 'allow_offline_fallback', False),
+            thinking_mode=thinking_mode,
         ),
         consistency=ConsistencySettings(
             threshold=_number(consistency, "fallback_threshold", 0.62),

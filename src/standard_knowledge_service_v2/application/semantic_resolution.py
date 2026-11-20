@@ -1,6 +1,7 @@
 """Normalize representations and expose ordinary business clarification early."""
 from copy import deepcopy
 import json
+import re
 
 from ..decomposition.evidence import literal, reference_text, target_evidence
 from .action_parameters import _convert
@@ -11,6 +12,10 @@ def normalize_plan(understanding, query, catalog, business_parameters=None, conv
     result = deepcopy(understanding)
     if result.operations is None or result.queries is None:
         return result
+    for row in [*result.operations, *result.queries, *result.prohibitions, *result.context_facts]:
+        for key in ('device_id', 'owner_id'):
+            if isinstance(row.get(key), str):
+                row[key] = row[key].strip().upper()
     current = []
     for fact in result.context_facts:
         source = literal(fact.get('source_text', ''))
@@ -54,13 +59,40 @@ def normalize_plan(understanding, query, catalog, business_parameters=None, conv
             if operation['parameters'].get(parameter) != canonical:
                 result.normalization_notes.append('按原文数值和单位规范化目标参数：' + parameter)
             operation['parameters'][parameter] = canonical
-    result.actions = list(dict.fromkeys(row['action'] for row in positive)) if positive else result.actions
     for row in [*result.operations, *result.queries, *result.prohibitions]:
         source = row.get('source_text', '')
         if source and literal(source) not in literal(query) and reference_text(source) in reference_text(query):
             row['source_text'] = query
             result.normalization_notes.append('编号规范化引用已关联原始问题，未修改原问题')
-    if result.scenario.get('context_kind') == 'background':
+        target = row.get('target_text', '')
+        if (source and target and reference_text(target) not in reference_text(row['source_text'])
+                and literal(source) in literal(query) and reference_text(target) in reference_text(query)):
+            windows = [(min(left.start(), right.start()), max(left.end(), right.end()))
+                       for left in re.finditer(re.escape(source), query, re.I)
+                       for right in re.finditer(re.escape(target), query, re.I)]
+            if windows:
+                left, right = min(windows, key=lambda bounds: bounds[1] - bounds[0])
+                row['source_text'] = query[left:right]
+                result.normalization_notes.append('同句省略目标的来源窗口已补回原文设备片段，未改写原句')
+        # A model may copy a catalog label rather than the user's identifier.
+        # Link that alias back only when both name and original request prove
+        # the same unique identity; retain literal evidence for later review.
+        from .semantic_operations import _explicit_targets, _mentions
+        devices = list(catalog.devices.values())
+        key, target = row.get('device_id'), row.get('target_text', '')
+        if (target and reference_text(target) not in reference_text(query)
+                and _mentions(target, devices) == {key}
+                and _explicit_targets(query, devices, {}) == {key}):
+            device = catalog.devices[key]
+            spans = [match for alias in [key, device.get('display_name', ''), *device.get('aliases', [])]
+                     if alias for match in re.finditer(re.escape(alias), query, re.I)]
+            if spans:
+                row['target_text'] = max(spans, key=lambda match: len(match[0]))[0]
+                row['source_text'] = query
+                result.normalization_notes.append('目录同一设备别名已关联到问题中的原始编号或名称')
+    # Conditions belong to individual tasks; a second task's prerequisite must
+    # not prevent normalization of the first task's background/template facts.
+    if result.operations:
         for row in result.operations:
             profile = catalog.devices.get(row['device_id'], {})
             template = profile.get('actions', {}).get(row['action'], {})
@@ -84,13 +116,17 @@ def normalize_plan(understanding, query, catalog, business_parameters=None, conv
             explicit = {e['expression'] for e in row.get('condition_evidence', [])
                         if e.get('kind') == 'user_condition' and e.get('source_text')
                         and literal(e['source_text']) in literal(query)}
+            explicit_signatures = {value for expression in explicit if (value := signature(expression))}
             kept = []
             for expression in row.get('conditions', []):
-                if expression not in explicit and signature(expression) in signatures:
+                if (expression not in explicit and signature(expression) not in explicit_signatures
+                        and signature(expression) in signatures):
                     result.normalization_notes.append('背景或模板条件不重复记为用户前提：' + expression)
                 else:
                     kept.append(expression)
             row['conditions'] = kept
+    from .task_projection import project_tasks
+    project_tasks(result)
     return result
 
 

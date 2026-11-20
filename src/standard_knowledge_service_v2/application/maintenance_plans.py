@@ -105,6 +105,10 @@ def preview_operation_plan(pipeline, request, decomposed, prepared):
                 additions = [check['explanation'] for check in first['condition_checks'] if check['explanation'] not in reason]
                 if additions:
                     reason += '\n' + '\n'.join(additions)
+            from .semantic_operations import factual_answer
+            facts = factual_answer(base['query_results'])
+            if facts:
+                reason += '\n' + facts
             base['answer'] = {'text': reason}
             if first['status'] == 'generated':
                 return 'generated', base, [], []

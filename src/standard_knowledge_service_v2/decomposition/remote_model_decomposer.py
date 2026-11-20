@@ -22,6 +22,7 @@ class RemoteModelConfig:
     timeout_seconds: float = 30.0
     temperature: float = 0.1
     max_tokens: int = 1024
+    thinking_mode: str = ""
 
 
 class RemoteModelDecomposer:
@@ -107,8 +108,7 @@ class RemoteModelDecomposer:
         api_key = os.getenv(self.config.api_key_env, "").strip()
         if not api_key:
             raise ModelCallError("missing_api_key")
-        body = json.dumps(
-            {
+        payload = {
                 "model": self.config.model,
                 "messages": [
                     {"role": "system", "content": system_prompt},
@@ -118,7 +118,11 @@ class RemoteModelDecomposer:
                 "max_tokens": max(self.config.max_tokens, 4096),
                 "response_format": {"type": "json_object"},
                 "stream": False,
-            },
+            }
+        if self.config.thinking_mode:
+            payload['thinking'] = {'type': self.config.thinking_mode}
+        body = json.dumps(
+            payload,
             ensure_ascii=False,
         ).encode("utf-8")
         request = Request(

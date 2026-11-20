@@ -81,18 +81,30 @@ def collect_inputs(profiles, facts, business, query, scenario=None):
         raise ValueError('device_facts须为按设备编号填写的字段对象')
     updates, skipped = {}, []
 
-    def add(device_id, parameter, value, unit, origin, source_text):
+    def add(device_id, parameter, value, unit, origin, source_text, fact=None):
         profile = profiles.get(device_id)
         if profile is None:
             raise ValueError(f'补充状态的设备不在当前场景：{device_id}')
         if origin == 'question':
-            from ..application.semantic_operations import bind_target, _mentions
+            from ..application.semantic_operations import bind_target, _mentions, _explicit_targets
             devices = list(profiles.values())
             evidence = source_text
-            if not _mentions(evidence, devices) and _mentions(query, devices) == {device_id}:
+            if not _mentions(evidence, devices) and _explicit_targets(query, devices, scenario or {}) == {device_id}:
                 evidence = query
-            _, reason = bind_target({'device_id': device_id, 'target_text': evidence,
-                'source_text': evidence, 'owner_id': ''}, query, devices, scenario or {})
+            owner = fact.get('owner_id', '')
+            if not owner:
+                from ..application.semantic_operations import _ROLES
+                import re
+                groups = (scenario or {}).get('groups', {})
+                groups = groups.values() if isinstance(groups, dict) else groups
+                owners = {group['transformer'] for group in groups
+                          if group.get(profile['device_type']) == device_id and group.get('transformer')
+                          in _mentions(evidence, devices, nested=True)
+                          and re.search(_ROLES.get(profile['device_type'], r'(?!)'), evidence)}
+                if len(owners) == 1:
+                    owner = next(iter(owners))
+            _, reason = bind_target({'device_id': device_id, 'target_text': fact.get('target_text') or evidence,
+                'source_text': evidence, 'owner_id': owner}, query, devices, scenario or {})
             if reason:
                 raise ValueError('补充状态的设备身份与原文不一致：' + reason)
         path, spec = resolve_field(profile, parameter)
@@ -101,6 +113,10 @@ def collect_inputs(profiles, facts, business, query, scenario=None):
                 skipped.append({'device_id': device_id, 'parameter': parameter, 'reason': '未匹配设备字段，保留为背景'})
                 return
             raise ValueError(f'设备字段未登记：{device_id}.{parameter}')
+        value_evidence = None
+        if origin == 'question':
+            from .fact_evidence import verify_fact_value
+            value_evidence = verify_fact_value(fact, profile, spec, normalize_value, profiles.values())
         normalized = normalize_value(value, unit, spec)
         derived = profile.get('derived_runtime_facts', {}).get(path.removeprefix('runtime_facts.'))
         if path.startswith('runtime_facts.') and derived:
@@ -119,6 +135,8 @@ def collect_inputs(profiles, facts, business, query, scenario=None):
         identity = (device_id, path)
         source = {'origin': origin, 'parameter': parameter, 'source_text': source_text,
                   'supplied_value': value, 'supplied_unit': unit}
+        if value_evidence:
+            source['value_evidence'] = value_evidence
         previous = updates.get(identity)
         if previous and (type(previous['value']) is not type(normalized)
                          and not (type(previous['value']) in (int, float) and type(normalized) in (int, float))
@@ -137,7 +155,7 @@ def collect_inputs(profiles, facts, business, query, scenario=None):
         if not fact.get('source_text') or compact(fact['source_text']) not in compact(query):
             raise ValueError('补充状态缺少提问原文依据')
         add(fact['device_id'], fact['parameter'], fact['value'], fact.get('unit', ''),
-            'question', fact['source_text'])
+            'question', fact['source_text'], fact)
     for device_id, fields in business.items():
         if not isinstance(fields, dict):
             raise ValueError('device_facts每台设备须为字段对象')
