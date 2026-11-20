@@ -67,8 +67,12 @@ def reference_text(text):
 def catalog_spans(text, devices, *, nested=False):
     text = reference_text(text)
     matches = set()
+    def base_name(device):
+        return re.sub(r'[（(](?:IEC61850|Modbus)[）)]$', '', device.get('display_name', ''), flags=re.I)
     for device in devices:
-        for alias in [device['device_id'], device.get('display_name', ''), *device.get('aliases', [])]:
+        base = base_name(device)
+        unique_base = [base] if base and sum(base_name(row) == base for row in devices) == 1 else []
+        for alias in [device['device_id'], device.get('display_name', ''), *device.get('aliases', []), *unique_base]:
             if alias:
                 normalized = reference_text(alias)
                 left = r'(?<![a-z0-9-])' if normalized.startswith('sim-') else ''

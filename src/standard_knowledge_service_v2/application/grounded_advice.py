@@ -1,13 +1,10 @@
 """Post-retrieval model advice. Model text is never executable authority."""
 import json
 import re
-from decimal import Decimal
 
 from ..llm_decomposition import extract_json_object
 from ..decomposition.model_errors import MESSAGES, model_error_code
-from .advice_conversion import advice_context, convert_advice
-from .action_request import action_request_restriction
-from .action_parameters import PARAMETER_ALIASES, resolve_action_parameters
+from .advice_conversion import advice_context
 from .answer_integrity import invalidate_answer
 from ..knowledge.source_quality import audit_source_quality
 
@@ -34,31 +31,10 @@ source_quality是后台来源质量审计：缺少标准编号、版本或原文
 quote是分解片段，source_text是完整来源原文。容量、电压等级、出厂/检修工况和设备部件等限定必须以完整来源核对；有载分接开关独立油室不能当作变压器本体绝缘油依据。
 用户要求编号、版本和条款时，formal_citation_ready为false的来源不能构成已确认适用的正式标准结论。试验项目清单、实测值要求和油中单项指标不能直接授权恢复送电或合闸。
 understanding.request_controls.analysis_only为true时，只分析，不提出设备指令，instruction必须为null。
+instruction_requested=false时只提供条款分析，instruction为null，不能因条款有动作就额外替用户生成控制操作。用户“只生成预览、不执行”允许生成预览，不等于只分析。
+instruction非null时增加operation对象，字段为target_text、owner_id、source_text、parameter_evidence、condition_evidence、conditions、order，格式与首轮operations对应字段完全相同。source_text与target_text引用用户原文，不引用改写建议；每个真实用户前提保留conditions及condition_evidence，目录固有联锁不添加为用户条件。背景测量/已发生保护动作不是用户额外执行条件。数值目标来自用户时引用parameter_evidence；采用设备configured_parameter_fact时参数取设备快照的配置值，parameter_evidence为空，不伪造用户原文。没有顺序时order=null。
 source_quality、formal_citation_ready等字段和布尔标志仅供后台判断，不得原样写进summary、suggestions或unable_reason；面向用户使用中文说明，如“标准编号和版本尚未核验”“完整适用范围仍需核对”“本次只作分析”，不展示内部字段名、状态码或协议细节。
 '''
-
-
-def _parameter_consistency(request, understanding, instruction, template):
-    """Keep user text, business inputs and proposed text/payload independently accountable."""
-    parameter = template.get('parameter')
-    if not parameter:
-        return ''
-    proposed = instruction['parameters']
-    if parameter not in proposed:
-        return '模型建议未明确动作参数，未从其他入口补造参数。'
-    _, error = resolve_action_parameters(request.query, template, proposed, understanding)
-    if error:
-        return error
-    business = request.parameters.get('action_parameters', {})
-    requested, error = resolve_action_parameters(request.query, template, business, understanding)
-    if error:
-        return error
-    if business and set(business) != {parameter}:
-        return '业务动作参数与动作模板不一致，请核对。'
-    if parameter in requested and Decimal(str(requested[parameter])) != Decimal(str(proposed[parameter])):
-        return '模型建议的目标值与用户或业务参数不一致，未生成操作预览。'
-    _, error = resolve_action_parameters(instruction['text'], template, proposed)
-    return error
 
 
 def _withdraw_unverified_formal_answer(data, needs_formal_citation):
@@ -121,7 +97,8 @@ class GroundedAdviceService:
         runtime, snapshot, device, profile, context_error = advice_context(pipeline, request,
             entities=understanding.get('entities', []))
         packet = {'query': request.query, 'device': device,
-                  'understanding': {k: understanding[k] for k in ('intent', 'entities', 'actions', 'constraints', 'scenario', 'request_controls') if k in understanding},
+                  'instruction_requested': understanding.get('scenario', {}).get('instruction_basis') == 'clauses' or understanding.get('intent') == 'instruction',
+                  'understanding': {k: understanding[k] for k in ('intent', 'entities', 'actions', 'constraints', 'scenario', 'request_controls', 'operations', 'queries', 'prohibitions') if k in understanding},
                   'assessment': data.get('device_assessment'),
                   'allowed_actions': list(profile.get('actions', {})),
                   'action_templates': {action: {'parameter': t.get('parameter'), 'unit': t.get('unit'),
@@ -208,57 +185,25 @@ class GroundedAdviceService:
             data['advice']['conversion'] = {'status': 'not_proposed', 'reason': '用户要求仅分析，不生成设备指令。'}
             data['candidate_instruction'] = None
             return None
+        if not packet['instruction_requested']:
+            data['advice']['instruction'] = None
+            data['advice']['conversion'] = {'status': 'not_requested', 'reason': '本次仅要求条款分析，未请求生成候选指令。'}
+            return None
         instruction = advice['instruction']
         if not instruction:
             data['advice']['conversion'] = {'status': 'not_proposed',
                 'reason': '模型未提出受来源支持的设备指令，仅保留文字建议；这不代表设备一定正常。'}
             return None
-        reason = context_error
-        template = profile.get('actions', {}).get(instruction['action'], {})
-        restriction = action_request_restriction(request.query, understanding,
-            instruction_request=True,
-            action_parameter=template.get('parameter'),
-            action_parameter_aliases=PARAMETER_ALIASES.get(template.get('parameter'), ()))
-        if restriction:
-            reason = restriction
-        if request.parameters.get('simulation_mode') is not True or not device or instruction['device_id'] != device['device_id']:
-            reason = reason or '设备不唯一、目标不一致或未开启模拟模式'
-        if re.search(r'不要(?:生成|建议)|禁止生成|取消(?:指令|建议)|不生成', request.query):
-            reason = '用户否定或取消指令生成，只保留文字建议'
-        if not reason:
-            reason = _parameter_consistency(request, understanding, instruction, template)
+        if context_error:
+            data['advice']['conversion'] = {'status': 'blocked', 'reason': context_error}
+            data['candidate_instruction'] = None
+            return None
+        from .clause_operation_bridge import execute_cited_plan
+        status, reason = execute_cited_plan(pipeline, request, data, instruction, sources, snapshot, profile)
         if reason:
             data['advice']['conversion'] = {'status': 'blocked', 'reason': reason}
             data['candidate_instruction'] = None
-            return None
-        preview, evidence, notes, reason = convert_advice(runtime, snapshot, device, profile, instruction, sources)
-        data['advice']['evidence'] = evidence
-        data['advice']['analysis_notes'] = notes
-        if reason:
-            data['advice']['conversion'] = {'status': 'blocked', 'reason': reason}
-            data['candidate_instruction'] = None
-            return None
-        data['simulation_session_id'] = snapshot['session_id']
-        data['simulation_preview'] = preview
-        data['candidate_instruction'] = preview['candidate']
-        template = profile['actions'].get(instruction['action'], {})
-        data['advice']['conversion'] = {'status': preview['status'], 'reason': preview['explanation'],
-                                      'rule_ids': instruction['rule_ids'],
-                                      'template_id': template.get('template_ref', instruction['action']),
-                                      'source_binding_required': False}
-        if preview['status'] == 'generated':
-            data['instruction_generation'] = {'status': 'generated', 'generation_only': True,
-                'candidate': preview['candidate'], 'device_id': device['device_id'],
-                'action': instruction['action'], 'action_parameters': instruction['parameters'],
-                'device_snapshot': device, 'basis': 'dynamic_citations_template_preview',
-                'command_id': preview['command_id'], 'session_id': snapshot['session_id']}
-            data['answer']['text'] += '\n已按通用设备模板生成模拟指令预览，请在“操作建议”中核对后模拟下发；尚未执行。'
-            data['validation'] = {'status': 'pass', 'dispatch_allowed': False,
-                'scope': '仅模拟模板、参数、设备联锁与版本校验；条款为动态分析引用',
-                'layers': {'dynamic_citations': 'recorded', 'action_preconditions': 'pass',
-                           'simulation_template': 'pass'}}
-            return 'generated'
-        return None
+        return status
 
     @staticmethod
     def _validate(raw, sources, action_templates=None):
@@ -314,46 +259,15 @@ class GroundedAdviceService:
                        allowed=set(sources) if purpose == 'limitation' else supported)
         instruction = raw['instruction']
         if instruction is not None:
-            if not isinstance(instruction, dict) or set(instruction) != {'text', 'device_id', 'action', 'parameters', 'rule_ids'}:
+            if not isinstance(instruction, dict) or set(instruction) not in ({'text', 'device_id', 'action', 'parameters', 'rule_ids'}, {'text', 'device_id', 'action', 'parameters', 'rule_ids', 'operation'}):
                 raise ValueError('instruction')
             for key in ('text', 'device_id', 'action'):
                 text(instruction[key])
-            words = {'trip': r'分闸|跳闸', 'close': r'合闸', 'adjust_active_power': r'有功|功率',
-                     'runback_power': r'功率回降|回降功率', 'start': r'启动|投入',
-                     'stop': r'停止|停机|退出', 'adjust_reactive_power': r'无功', 'regulate_voltage': r'电压'}
-            words.update({'open': r'分闸|断开|分开', 'raise': r'升(?:一)?档', 'lower': r'降(?:一)?档',
-                          'set_tap': r'设定.*档|调(?:到|至).*档', 'alarm': r'报警|告警',
-                          'limit_power': r'限功率|限制.*功率|功率上限'})
-            action = instruction['action']
-            if action_templates is not None and action not in action_templates:
-                raise ValueError('unsupported device action')
-            pattern = words.get(action)
-            if pattern is None and action_templates is not None:
-                label = action_templates[action].get('display_name', action)
-                pattern = re.escape(label)
-            if pattern is None or not re.search(pattern, instruction['text']):
-                raise ValueError('natural language action mismatch')
-            uncertain_prefix = r'(?:不要|不应|不宜|不得|禁止|无需|不能|不可|不必|不需要|是否|能否|可否|要不要|需不需要|取消|暂缓)'
-            if (re.search(uncertain_prefix + r'[^，。；;！!？?]{0,20}(?:' + pattern + ')', instruction['text'])
-                    or re.search(r'不\s*(?:' + pattern + ')', instruction['text'])
-                    or re.search(r'[？?]|与否|是否|能否|可否|吗\s*[。！!]?$', instruction['text'])):
-                raise ValueError('negative or undecided instruction')
-            # Use distinct operation groups; synonyms such as open/trip count
-            # once, while incidental words like power do not become actions.
-            operation_groups = [r'分闸|跳闸|断开|分开', r'合闸|合上', r'启动|投入',
-                r'停止|停机|退出', r'升(?:一)?档', r'降(?:一)?档',
-                r'设定.*档|调(?:到|至).*档', r'报警|告警', r'功率回降|回降功率',
-                r'限功率|限制.*功率|功率上限', r'(?:调节|调整)有功',
-                r'(?:调节|调整)无功', r'(?:调节|调整)电压']
-            if sum(bool(re.search(group, instruction['text'])) for group in operation_groups) > 1:
-                raise ValueError('multiple actions')
             if not isinstance(instruction['parameters'], dict):
                 raise ValueError('parameters')
-            if action == 'runback_power':
-                if '闭锁' in instruction['text']:
-                    raise ValueError('runback is not dc block')
-                targets = re.findall(r'(\d+(?:\.\d+)?)\s*(?:MW|兆瓦)', instruction['text'], re.IGNORECASE)
-                if not targets or any(float(v) != instruction['parameters'].get('target_power_mw') for v in targets):
-                    raise ValueError('runback text parameter mismatch')
+            if action_templates is not None and instruction['action'] not in action_templates:
+                raise ValueError('unsupported device action')
+            if 'operation' in instruction and not isinstance(instruction['operation'], dict):
+                raise ValueError('operation evidence')
             references(instruction['rule_ids'], allowed=supported)
         return raw

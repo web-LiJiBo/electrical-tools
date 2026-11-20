@@ -395,6 +395,10 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         and sorted(orders) == list(range(1, len(rows) + 1)))
     runtime = simulation_runtime(pipeline)
     condition_guard = False
+    cited = understanding.clause_context
+    if cited and (snapshot['session_id'] != cited['session_id'] or snapshot['version'] != cited['snapshot_version']
+                  or runtime._catalog_version() != cited['catalog_version']):
+        return blocked('条款分析期间设备状态或配置已变化，请重新分析。')
     if allow_restrictions and any(item.get('conditions') for item in rows):
         from ..instruction_engine.operation_conditions import compile_conditions
         try:
@@ -482,6 +486,12 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
             if not retained:
                 return blocked('整句包含未保留到执行校验的附加条件，未生成无条件预览。')
         scoped = {'actions': [action], 'constraints': [], 'scenario': {}, 'parameter_evidence': item.get('parameter_evidence', []), 'model_parameters': item['parameters'], 'business_parameters': supplied}
+        configured_parameter = template.get('configured_parameter_fact') if cited else None
+        if configured_parameter:
+            device = next(device for device in devices if device['device_id'] == device_id)
+            value = device.get('runtime_facts', {}).get(configured_parameter)
+            if value is not None:
+                scoped['configured_parameters'] = {template['parameter']: value}
         inferred, reason = resolve_action_parameters(item['source_text'], template, item['parameters'], scoped)
         if (template.get('parameter') in item['parameters'] and template['parameter'] not in inferred and not reason
                 and template['parameter'] not in supplied):
@@ -494,7 +504,7 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         parameter_sources = []
         parameter = template.get('parameter')
         if parameter in inferred:
-            parameter_sources.append({'origin': 'question', 'parameter': parameter,
+            parameter_sources.append({'origin': 'device_configuration' if configured_parameter and not item.get('parameter_evidence') else 'question', 'parameter': parameter,
                 'source_text': item['source_text'], 'value': inferred[parameter], 'unit': template.get('unit', '')})
         if parameter in supplied:
             parameter_sources.append({'origin': 'business_parameters', 'parameter': parameter,
@@ -534,7 +544,8 @@ def operation_previews(pipeline, request, snapshot, devices, profile, understand
         row['preview'] = ({'status': 'blocked', 'candidate': None, 'command_id': None,
             'simulation_execution_allowed': False, 'explanation': '该设备不支持所请求的动作。'}
             if row.pop('unsupported') else runtime.preview(snapshot['session_id'], row['device_id'], row['action'], row['parameters'],
-                expected_version=snapshot['version'], parameter_sources=row['parameter_sources']))
+                expected_version=snapshot['version'], parameter_sources=row['parameter_sources'],
+                evidence=(understanding.clause_context or {}).get('evidence', [])))
     ids = {row['device_id'] for row in previews}
     base['devices'] = [{key: deepcopy(device.get(key)) for key in
         ('device_id', 'display_name', 'device_type', 'protocol', 'state', 'runtime_facts')}

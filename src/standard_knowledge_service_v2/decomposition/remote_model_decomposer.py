@@ -48,6 +48,8 @@ class RemoteModelDecomposer:
             output = validate_decomposition(parsed, raw_output=raw_output)
             if not output.valid:
                 raise ModelCallError("invalid_model_output")
+            if output.scenario.get('instruction_basis') not in ('direct', 'clauses', 'none'):
+                raise ModelCallError('invalid_model_output')
             missing = []
             if not output.scenario.get("device_type"):
                 missing.append(

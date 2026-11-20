@@ -37,6 +37,8 @@ class DecompositionResult:
     clarifications: list[str] = field(default_factory=list)
     retrieval_terms: list[str] = field(default_factory=list)
     normalization_notes: list[str] = field(default_factory=list)
+    # Server-owned provenance, never populated from a model or request JSON.
+    clause_context: dict[str, Any] | None = None
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)

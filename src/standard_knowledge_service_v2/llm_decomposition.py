@@ -50,6 +50,8 @@ JSON字段：
 }
 
 统一语义约定：
+- scenario.instruction_basis必须填写direct|clauses|none：用户直接指定操作用direct；要求依据条款/标准判断并生成建议指令用clauses（包括先判断能否形成指令）；仅查询或分析用none。该字段控制处理路线，不代表已满足授权、来源或设备条件。
+- “只生成候选指令/预览，不实际执行/下发”允许生成，analysis_only=false；“只分析，不要生成指令”才是analysis_only=true。生成候选与实际下发是不同诉求，不得混为一谈。
 - 逐项operations/queries/prohibitions是任务的权威记录，intent、actions、scenario.query_kind是其摘要，后台统一推导。先完整识别所有诉求，再填写摘要，不因整句只能有一个query_kind而丢掉其他查询或操作。
 - context_facts每个字段提供value_text和unit_text原文证据。value为原文单位下的值，不提前换算当前状态；0.25MW填value=0.25、unit=MW、value_text=0.25、unit_text=MW，由程序换算。value_text不含设备编号、单位或其他字段的值；无数字的状态描述引用原始状态词。一个事实只取对应字段的最短连续片段，设备名字可在片段外由完整问题唯一绑定，不能将历史值、当前值、目标值混在同一个事实证据里。历史、假设、目标不能标current，目标仅入operations.parameters。
 - 指代按设备类型和目录归属消解：“主变及其风机……该风机”指风机，“另一台”仅在对应场景候选唯一时可确定；不能因为最近提及某台主变就将其当成附属设备，也不能把多个候选强选成一个。

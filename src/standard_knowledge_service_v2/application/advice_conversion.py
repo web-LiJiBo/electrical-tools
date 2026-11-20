@@ -69,9 +69,9 @@ def dynamic_evidence(sources, rule_ids, snapshot, profile):
         unit, rule = sources[rid]
         status, notes = validator.validate(unit, context)
         scope = unit.metadata.get('scenario', '')
-        conflict = bool(scope and scope not in (scenario, 'general'))
+        conflict = status.value == 'fail' or bool(scope and scope not in (scenario, 'general'))
         if conflict:
-            conflicts.append(f'{rid}的场景范围与当前会话不符')
+            conflicts.append(f'{rid}的原文或场景适用性未通过校验：' + '；'.join(notes))
         review = unit.metadata.get('audit', {}).get('manual_review_required') is True
         if review:
             warnings.append(f'{rid}为待复核来源，本次仅作为模拟建议的分析引用')
@@ -84,12 +84,3 @@ def dynamic_evidence(sources, rule_ids, snapshot, profile):
                          'applicability_status': 'fail' if conflict else status.value,
                          'applicability_notes': notes})
     return evidence, list(dict.fromkeys(warnings)), conflicts
-
-
-def convert_advice(runtime, snapshot, device, profile, instruction, sources):
-    evidence, warnings, conflicts = dynamic_evidence(sources, instruction['rule_ids'], snapshot, profile)
-    if conflicts:
-        return None, evidence, warnings, '；'.join(conflicts)
-    preview = runtime.preview(snapshot['session_id'], device['device_id'], instruction['action'],
-                              instruction['parameters'], evidence=evidence, expected_version=snapshot['version'])
-    return preview, evidence, warnings, ''

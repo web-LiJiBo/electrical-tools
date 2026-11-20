@@ -88,7 +88,8 @@ def preview_operation_plan(pipeline, request, decomposed, prepared):
             reason = '操作清单在准备后发生变化，请重新分析。'
         else:
             try:
-                plan = runtime.create_plan(snapshot['session_id'], prepared['steps'], expected_version=snapshot['version'])
+                plan = runtime.create_plan(snapshot['session_id'], prepared['steps'], expected_version=snapshot['version'],
+                    evidence=(decomposed.clause_context or {}).get('evidence', []))
             except (ValueError, KeyError) as exc:
                 return _blocked_response(base, f'计划预览已阻止：{exc}')
             base['simulation_plan'] = plan

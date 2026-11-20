@@ -18,6 +18,10 @@ def fact_schema(profile):
                             'integer' if type(value) is int else 'number' if type(value) is float else 'enum')
             spec['section'] = section
             spec.setdefault('unit', '')
+            configured_units = {action.get('unit') for action in profile.get('actions', {}).values()
+                                if action.get('configured_parameter_fact') == key and action.get('unit')}
+            if not spec['unit'] and len(configured_units) == 1:
+                spec['unit'] = next(iter(configured_units))
             for point in profile.get('points', {}).values():
                 if point.get('field') != f'{section}.{key}':
                     continue

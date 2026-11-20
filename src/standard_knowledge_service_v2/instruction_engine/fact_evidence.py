@@ -41,7 +41,7 @@ def verify_fact_value(fact, profile, spec, normalize_value, devices=()):
         if (spec['type'] == 'integer' and not spec.get('unit') and not fact.get('unit')
                 and type(fact['value']) is int and fact['value'] in (0, 1)
                 and (not value_text or value_text in source)
-                and not re.search(r'\d', evidence)):
+                and not re.search(r'\d', value_text or evidence)):
             return {'method': 'typed_status', 'value_text': value_text or evidence,
                     'source_text': fact['source_text']}
         raise ValueError('当前数值须有唯一的原始数字依据，请明确该字段的当前值')

@@ -153,14 +153,17 @@ class AnalysisPipeline:
             target_protocol=request.target_protocol, conversation_context=deepcopy(request.conversation_context))
         return self._analyze_decomposed(subrequest, scoped, review_context=review_context, process_questions=False)
 
-    def _analyze_decomposed(self, request, decomposed, *, review_context=None, process_questions=True, input_report=None):
+    def _analyze_decomposed(self, request, decomposed, *, review_context=None, process_questions=True, input_report=None, emit_audit=True):
         """Keep review state request-local; no preview exists before approval."""
+        clause_route = (decomposed.source == 'model_api' and not decomposed.clause_context
+                        and (decomposed.scenario.get('instruction_basis') == 'clauses'
+                             or request.parameters.get('simulation_mode') is not True))
         from .operation_review import review_packet, review_operations
         from .semantic_operations import catalog_context
         def respond(*args):
             if input_report:
                 args[2]['simulation_inputs'] = input_report
-            return self._respond(*args, review_context=review_context)
+            return self._respond(*args, review_context=review_context, record_audit=emit_audit)
         from .request_controls import analysis_only_requested, request_controls_error
         control_error = request_controls_error(decomposed, request.query)
         if control_error:
@@ -188,14 +191,14 @@ class AnalysisPipeline:
                 ('采用逐项任务统一推导的意图；操作仍须独立复核和程序校验',), decomposed.intent)
         else:
             intent = self.intent_classifier.classify(request.query, decomposed.intent, decomposed.actions, query_kind=kind)
-        if not process_questions or analysis_only:
+        if (not process_questions and not decomposed.clause_context) or analysis_only:
             from ..decomposition.intent_classifier import IntentClassification
             intent = IntentClassification('compliance' if kind == 'assessment' else 'search',
                 intent.confidence, (*intent.reasons, '知识子请求只做分析，不生成原操作候选'), intent.model_intent)
         decomposed.intent = intent.intent
         questions = [item for item in (decomposed.queries or []) if item['query_kind'] in ('standard_query', 'assessment')]
         factual = [item for item in (decomposed.queries or []) if item['query_kind'] in ('device_status', 'device_capability', 'device_readiness')]
-        needs_review = bool(decomposed.operations) and request.parameters.get('simulation_mode') is True
+        needs_review = bool(decomposed.operations) and request.parameters.get('simulation_mode') is True and not clause_route
         if needs_review:
             from .semantic_resolution import preflight_blocked_response
             blocked = preflight_blocked_response(self, request, decomposed)
@@ -220,6 +223,8 @@ class AnalysisPipeline:
                     action.pop('constraints', None)
         context = review_packet(request.query, decomposed, review_catalog, request.conversation_context) if needs_review else None
         if context is not None:
+            if decomposed.clause_context:
+                context['clause_basis'] = decomposed.clause_context
             from .semantic_operations import identity_resolution
             context['identity_resolution'] = identity_resolution(self, request, decomposed)
             context['business_parameters'] = {'action_parameters': request.parameters.get('action_parameters', {}), 'device_facts': request.parameters.get('device_facts', {})}
@@ -238,7 +243,7 @@ class AnalysisPipeline:
                     data.setdefault('decomposition', decomposed.to_dict())
                     return respond(request, status, data, evidence, warnings)
         knowledge = None
-        if process_questions and questions and (decomposed.operations or factual):
+        if not clause_route and process_questions and questions and (decomposed.operations or factual):
             knowledge = self._question_response(request, decomposed, questions, context)
         review = knowledge.data.get('operation_review') if knowledge is not None else None
         if needs_review:
@@ -259,7 +264,7 @@ class AnalysisPipeline:
                     (*intent.reasons, '受限操作清单已完成后台编译和独立语义复核，仍须逐步核验与确认'), intent.model_intent)
                 decomposed.intent = intent.intent
         from .simulation_query import answer_simulation_query
-        simulation_answer = (preview_operation_plan(self, request, decomposed, prepared) if prepared is not None
+        simulation_answer = None if clause_route else (preview_operation_plan(self, request, decomposed, prepared) if prepared is not None
                              else answer_simulation_query(self, request, decomposed=decomposed, intent=intent))
         if simulation_answer is not None:
             status, data, evidence, warnings = simulation_answer
@@ -276,7 +281,7 @@ class AnalysisPipeline:
                 if knowledge.status not in ('answered', 'generated'):
                     status = 'partial'
             return respond(request, status, data, evidence, warnings)
-        if request.parameters.get("simulation_mode") is True:
+        if request.parameters.get("simulation_mode") is True and not clause_route:
             if kind == 'assessment' or self.simulation_session.is_status_question(request.query):
                 from .real_clause_assessment import assess_real_clause
                 status,data,evidence = assess_real_clause(self,request,decomposed=decomposed)
@@ -286,6 +291,8 @@ class AnalysisPipeline:
         settings = self.retrieval_settings
         parsed_query = decomposed.to_lunwen_parsed_json()
         parsed_query["intent"] = intent.intent
+        if clause_route:
+            parsed_query['intent'], parsed_query['actions'] = 'search', []
         if built.definition:
             parsed_query["scenario_topics"] = built.definition.standard_topics
             parsed_query["scenario_devices"] = built.definition.device_types
@@ -316,7 +323,9 @@ class AnalysisPipeline:
                             **trace.parameters} if trace else {})
         if not matched.rules:
             return respond(request, "uncertain", {"decomposition": decomposed.to_dict(), "intent_classification": intent.to_dict(), "context": asdict(built.context), "missing_fields": [asdict(item) for item in built.missing_fields], "diagnostics": diagnostics, "retrieval_trace": retrieval_trace}, [], warnings + matched.warnings)
-        selected, assessments = self._select_rule(request, matched.rules, decomposed.actions if intent.intent == "instruction" else [], for_control=intent.intent == "instruction")
+        selected, assessments = self._select_rule(request, matched.rules,
+            decomposed.actions if intent.intent == "instruction" and not clause_route else [],
+            for_control=intent.intent == "instruction" and not clause_route)
         if selected is None:
             data = {
                 "decomposition": decomposed.to_dict(),
@@ -336,7 +345,7 @@ class AnalysisPipeline:
         for key in ("device_id", "device_type", "operating_state"):
             if request.parameters.get(key) not in (None, "") and key not in device_config:
                 device_config[key] = request.parameters[key]
-        is_instruction_request = intent.intent == "instruction"
+        is_instruction_request = intent.intent == "instruction" and not clause_route
         candidate = self.generator.generate(semantic, built.context, device_config, request.target_protocol, facts=request.parameters) if is_instruction_request else None
         program = self.generator.compiler.compile(semantic)
         static_parameters, dynamic_behaviors, constraint_rules = self.generator.compiler.framework.to_three_layers(semantic)
@@ -509,7 +518,7 @@ class AnalysisPipeline:
         selected = actionable[0][1] if actionable else (eligible[0][1] if eligible else None)
         return (selected, [item[2] for item in assessments])
 
-    def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str], *, review_context=None) -> AnalysisResponse:
+    def _respond(self, request: AnalysisRequest, status: str, data: dict, evidence: list[dict], warnings: list[str], *, review_context=None, record_audit=True) -> AnalysisResponse:
         source_result_status = status
         if data.get('simulation_factual'):
             from .context_facts import annotate_context
@@ -597,7 +606,7 @@ class AnalysisPipeline:
         if graph is not None and rule_id:
             data["knowledge_graph_evidence"] = graph.evidence_path(rule_id)
         response = AnalysisResponse(request.meta.request_id, status, data, evidence, warnings)
-        if self.audit_store:
+        if self.audit_store and record_audit:
             scenario = str(data.get("context", {}).get("scenario", ""))
             self.audit_store.append(AuditRecord(
                 request.meta.request_id,

@@ -95,6 +95,9 @@ def resolve_action_parameters(query, template, parameters, understanding=None):
     try:
         stated = target_evidence(query, data.get('parameter_evidence'), parameter, _convert, unit)
         selected = data.get('model_parameters', {}).get(parameter)
+        configured = data.get('configured_parameters', {})
+        if not stated and parameter in configured and selected == configured[parameter]:
+            stated.append(_number(configured[parameter]))
         if not stated and selected is not None and parameter not in data.get('business_parameters', {}):
             # Review checks the semantic role; this layer checks literal value and dimension.
             for match in VALUE_WITH_UNIT.finditer(query.translate(SIGNS)):
