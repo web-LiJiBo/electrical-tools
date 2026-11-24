@@ -53,6 +53,7 @@ class _Session:
     plans: dict = field(default_factory=dict)
     message_sequence: int = 0
     control_sequences: dict = field(default_factory=dict)
+    follows_scenario: bool = False
 
 
 class SimulationRuntime:
@@ -69,14 +70,34 @@ class SimulationRuntime:
         self._event_path = Path(event_path) if event_path is not None else None
 
     def refresh_catalog(self, catalog):
-        """Publish new templates without resetting shared live device state."""
+        """Publish catalog changes without resetting existing simulator states."""
         with self._lock:
             service = catalog.make_service()
+            updates = []
             for session in self._sessions.values():
+                scenario = catalog.scenarios.get(session.scenario_id, session.scenario)
                 profiles = {key: deepcopy(catalog.devices[key]) for key in session.profiles}
-                if profiles != session.profiles:
-                    session.profiles = profiles
-                    session.version += 1  # Pending commands must be previewed again.
+                added = {}
+                if session.follows_scenario:
+                    missing = set(scenario.get('device_ids', ())) - profiles.keys()
+                    groups = scenario.get('business_scenarios') or [session.scenario_id]
+                    for name in groups:
+                        group = catalog.scenarios[name]
+                        incoming = {key: deepcopy(catalog.devices[key])
+                                    for key in group['device_ids'] if key in missing}
+                        if not incoming:
+                            continue
+                        condition = session.scenario_conditions.get(name, session.condition)
+                        added.update(self._seed(replace(session, profiles=incoming, scenario=group), condition))
+                        profiles.update(incoming)
+                        missing.difference_update(incoming)
+                if profiles != session.profiles or scenario != session.scenario:
+                    updates.append((session, profiles, deepcopy(scenario), added))
+            for session, profiles, scenario, added in updates:
+                session.profiles = profiles
+                session.scenario = scenario
+                session.devices.update(added)
+                session.version += 1  # Pending commands must be previewed again.
             self.catalog, self._service = catalog, service
 
     def create_session(self, scenario_id='substation_maintenance', device_ids=None, condition='normal'):
@@ -84,6 +105,7 @@ class SimulationRuntime:
             if scenario_id is not None and (not isinstance(scenario_id, str) or scenario_id not in self.catalog.scenarios):
                 raise ValueError('未知模拟场景')
             scenario = deepcopy(self.catalog.scenarios.get(scenario_id, {}))
+            follows_scenario = device_ids is None and scenario_id is not None
             if device_ids is None:
                 device_ids = scenario.get('device_ids', [])
             if (not isinstance(device_ids, (list, tuple)) or not device_ids
@@ -91,7 +113,8 @@ class SimulationRuntime:
                     or len(device_ids) != len(set(device_ids))):
                 raise ValueError('需要非空且唯一的有效模拟设备列表')
             profiles = {key: deepcopy(self.catalog.devices[key]) for key in device_ids}
-            session = _Session(f'simulation-{uuid4().hex}', scenario_id, condition, profiles, scenario, {})
+            session = _Session(f'simulation-{uuid4().hex}', scenario_id, condition, profiles, scenario, {},
+                               follows_scenario=follows_scenario)
             session.devices = self._seed(session, condition)
             session.scenario_conditions = {name: 'normal' for name in scenario.get('business_scenarios', [])}
             self._sessions[session.session_id] = session
@@ -432,7 +455,7 @@ class SimulationRuntime:
                 if scenario_id not in session.scenario.get('business_scenarios', []):
                     raise ValueError('当前会话不支持该业务场景')
                 profile = self.catalog.scenarios[scenario_id]
-                selected = {key: session.profiles[key] for key in profile['device_ids']}
+                selected = {key: session.profiles[key] for key in profile['device_ids'] if key in session.profiles}
                 seed = self._seed(replace(session, profiles=selected, scenario=profile), condition)
                 devices = deepcopy(session.devices)
                 devices.update(seed)

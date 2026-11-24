@@ -11,6 +11,10 @@ PARAMETER_ALIASES = {
     'voltage_v': {'电压', '输出电压', '目标电压', '电压设定值'},
     'power_limit_kw': {'功率上限', '功率限制', '功率限值', '目标功率上限'},
     'target_power_mw': {'目标功率', '回降功率', '回降目标功率', '有功功率'},
+    'active_power_mw': {'有功出力', '有功功率', '目标有功出力'},
+    'power_limit_mw': {'功率上限', '功率限额', '目标功率上限'},
+    'reactive_power_mvar': {'无功出力', '无功功率', '目标无功出力'},
+    'voltage_kv': {'电压', '电压设定值', '目标电压'},
 }
 # dimension, scale to base unit; independent active/reactive power dimensions.
 UNITS = {

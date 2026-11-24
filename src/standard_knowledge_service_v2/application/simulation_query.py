@@ -126,6 +126,19 @@ def _targets(query, parameters, devices, profile, *, entity_names=()):
     return list(dict.fromkeys(selected))
 
 
+_MANUAL_NUMERIC_ACTIONS = {
+    'adjust_active_power': r'(?<!无)有功(?:功率|出力)',
+    'limit_power': r'功率上限|功率限额',
+    'adjust_reactive_power': r'无功(?:功率|出力)',
+    'regulate_voltage': r'电压(?:设定值)?',
+}
+
+
+def _manual_numeric_actions(query):
+    return [action for action, field in _MANUAL_NUMERIC_ACTIONS.items()
+            if re.search(r'(?:' + field + r')\s*(?:调(?:整|节)?|设(?:定|置)?|改)(?:至|到|为|成)\s*[+\-−]?\s*\d', query)]
+
+
 def _action(query, device):
     actions = device.get('actions', {})
     available = set(actions) if isinstance(actions, dict) else {
@@ -135,6 +148,10 @@ def _action(query, device):
                 ('set_tap', r'设定.*档|调(?:到|至)\s*\d+\s*档'),
                 ('start', r'启动|开启|开动'), ('stop', r'停止|停机|关闭风机|关闭油泵'),
                 ('trip', r'分闸|跳闸|断开'), ('open', r'分闸|分开|断开'), ('close', r'合闸|合上')]
+    if device.get('source') == 'manual_device_import':
+        numeric = [action for action in _manual_numeric_actions(query) if action in available]
+        if len(numeric) == 1:
+            return numeric[0]
     return next((a for a, pattern in patterns if a in available and re.search(pattern, query)), '')
 
 
@@ -153,6 +170,7 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     factual = kind == 'device_status' if kind else bool(re.search(r'状态|数据|读数|测量|温升|温度|电流|告警|档位|位置|正常|异常|比较|对比', query))
     readiness = kind == 'device_readiness'
     operation = kind == 'operation' if kind else bool(re.search(r'启动|开启|开动|停止|停机|关闭风机|关闭油泵|分闸|合闸|跳闸|升.*档|降.*档|设定.*档|调到.*档', query))
+    tentative_manual = not semantic and not kind and bool(_manual_numeric_actions(query))
     if semantic:
         operation = bool(decomposed.operations)
         capability = any(item['query_kind'] == 'device_capability' for item in decomposed.queries)
@@ -163,7 +181,7 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
         from .semantic_operations import clarification
         return clarification({'simulation_factual': True, 'candidate_instruction': None},
             controls_error or '本次请求仅限分析，不生成操作指令或计划预览。')
-    if not (capability or factual or readiness or operation):
+    if not (capability or factual or readiness or operation or tentative_manual):
         return None
     runtime = simulation_runtime(pipeline)
     sid = request.parameters.get('simulation_session_id')
@@ -201,6 +219,12 @@ def answer_simulation_query(pipeline, request, *, decomposed=None, intent=None):
     if mixed is not None:
         return mixed
     by_id = {d['device_id']: d for d in devices}
+    if tentative_manual:
+        matched = [by_id.get(key, {}) for key in ids]
+        operation = operation or bool(matched and all(
+            item.get('source') == 'manual_device_import' and _action(query, item) for item in matched))
+        if not (capability or factual or readiness or operation):
+            return None
     unknown = [key for key in ids if key not in by_id]
     base = {'simulation_factual': True, 'simulation_session_id': snapshot['session_id'],
             'context': {'scenario': snapshot.get('scenario_id', 'general')},

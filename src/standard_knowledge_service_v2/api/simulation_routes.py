@@ -1,7 +1,14 @@
 """Explicit, local-only simulation endpoints. Analysis never calls execution."""
-from fastapi import HTTPException
+import json
+import logging
+from urllib.parse import urlsplit
+
+from fastapi import HTTPException, Request
+from starlette.concurrency import run_in_threadpool
 
 from ..application.simulation_access import simulation_runtime
+
+logger = logging.getLogger(__name__)
 
 
 def register_simulation_routes(app, application):
@@ -29,6 +36,57 @@ def register_simulation_routes(app, application):
     @app.get('/simulation/catalog')
     def catalog():
         return runtime().catalog.describe()
+
+    @app.get('/simulation/device-import')
+    def device_import_options():
+        from ..instruction_engine.device_import import options
+        session = application.facade.simulation_session
+        with session.lock:
+            return options(session.service)
+
+    async def import_devices(request, publish=False):
+        from ..instruction_engine.device_import import MAX_FILE_SIZE, process
+
+        origin = request.headers.get('origin')
+        if origin:
+            try:
+                parsed = urlsplit(origin)
+                allowed = parsed.scheme in ('http', 'https') and parsed.hostname in ('localhost', '127.0.0.1', '::1')
+            except ValueError:
+                allowed = False
+            if not allowed:
+                raise HTTPException(403, '模拟设备导入仅允许本机页面发起。')
+
+        body = bytearray()
+        async for chunk in request.stream():
+            if len(body) + len(chunk) > MAX_FILE_SIZE:
+                raise HTTPException(413, '设备导入请求超过大小限制。')
+            body.extend(chunk)
+        try:
+            payload = json.loads(body)
+        except (ValueError, RecursionError) as exc:
+            raise HTTPException(422, '导入请求必须为有效 JSON。') from exc
+
+        def run():
+            fields(payload, {'devices', 'revision'} if publish else {'devices'})
+            if publish:
+                string(payload, 'revision')
+            return process(application.facade.simulation_session, runtime(), payload.get('devices'),
+                           publish=publish, revision=payload.get('revision'))
+
+        try:
+            return await run_in_threadpool(perform, run)
+        except OSError as exc:
+            logger.exception('模拟设备导入文件读写失败')
+            raise HTTPException(503, '无法读写已发布的设备数据，请检查文件权限或磁盘空间。') from exc
+
+    @app.post('/simulation/device-import/validate')
+    async def validate_device_import(request: Request):
+        return await import_devices(request)
+
+    @app.post('/simulation/device-import/publish')
+    async def publish_device_import(request: Request):
+        return await import_devices(request, publish=True)
 
     @app.post('/simulation/sessions')
     def create(payload: dict):

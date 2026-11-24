@@ -149,6 +149,8 @@ def save_custom(service, payload, path=CUSTOM_PATH, *, publish=None):
         # Validate the complete prospective runtime before touching the live
         # service or persistent file. Keep old quarantined rows for inspection.
         validation_service = SimulationInstructionService()
+        from .device_import import load_imported
+        load_imported(validation_service)
         loaded = load_custom(validation_service, temporary, strict=False)
         if not any(row['device_id'] == key and row['action'] == action for row in loaded):
             raise ValueError('补充模板运行目录校验失败；' + '；'.join(validation_service.template_load_errors))

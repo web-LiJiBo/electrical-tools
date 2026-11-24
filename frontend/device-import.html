@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>模拟设备导入</title>
+  <link rel="stylesheet" href="device-import.css">
+  <script src="device-import.js" defer></script>
+</head>
+<body>
+  <header><div class="wrap masthead">
+    <nav aria-label="项目导航"><a href="index.html" id="home">← 返回问题分析</a><a href="template-editor.html" id="templates">指令模板管理</a><a href="device-config.html" id="device-config">调度设备等手工录入</a></nav>
+    <h1>模拟设备导入</h1>
+    <p>新增模拟设备，核对初始状态和动作后发布到变电站设备运维场景。</p>
+  </div></header>
+  <main class="wrap workspace">
+    <section class="panel" aria-labelledby="input-heading">
+      <div class="panel-head"><h2 id="input-heading">设备数据</h2></div>
+      <div class="panel-body">
+        <div class="tabs" role="group" aria-label="录入方式">
+          <button type="button" id="manual" aria-controls="manual-panel" aria-pressed="true">表单填写</button>
+          <button type="button" id="bulk" aria-controls="bulk-panel" aria-pressed="false">JSON 批量导入</button>
+        </div>
+        <div id="manual-panel">
+          <p class="scope">变电站设备运维 <span> / </span> IEC 61850 冷却风机</p>
+          <div class="fields">
+            <label>设备编号 <input id="device-id" maxlength="31" placeholder="SIM-IMPORT-FAN-01" autocomplete="off"></label>
+            <label>设备名称 <input id="device-name" maxlength="40" placeholder="演示冷却风机01" autocomplete="off"></label>
+          </div>
+          <fieldset><legend>初始模拟状态</legend><div id="facts" class="fields checks"></div></fieldset>
+          <fieldset><legend>允许的动作</legend><div id="actions" class="checks action-checks"></div></fieldset>
+          <details><summary>查看模板的启停条件</summary><ul id="conditions"></ul></details>
+          <button type="button" id="fill-example" disabled>填入示例</button>
+        </div>
+        <div id="bulk-panel" hidden>
+          <label for="json-file">选择 JSON 文件</label>
+          <input id="json-file" type="file" accept=".json,application/json">
+          <div class="buttons"><button type="button" id="download" disabled>下载示例 JSON</button></div>
+          <label for="json-input">文件内容（也可直接粘贴）</label>
+          <textarea id="json-input" rows="12" spellcheck="false" placeholder='{"devices": []}'></textarea>
+          <p class="muted" id="file-limit"></p>
+        </div>
+      </div>
+      <div class="panel-foot"><button type="button" class="primary" id="validate" disabled>校验并预览</button></div>
+    </section>
+    <section class="panel review" aria-labelledby="review-heading">
+      <div class="panel-head"><h2 id="review-heading">校验和发布</h2></div>
+      <div class="panel-body">
+        <p class="status" data-tone="info" id="status" role="status" aria-live="polite">正在读取设备模板…</p>
+        <ul class="errors" id="errors" hidden></ul>
+        <ul class="preview" id="preview" hidden></ul>
+        <p id="report-scope" class="muted" hidden>导入后可查询设备并验证模拟动作。报文配置待补齐。</p>
+      </div>
+      <div class="panel-foot">
+        <button type="button" class="primary" id="publish" disabled>确认发布</button>
+        <a id="open-home" href="index.html?from=device-import" hidden>去首页查看已导入设备 →</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

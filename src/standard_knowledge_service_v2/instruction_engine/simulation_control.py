@@ -9,7 +9,9 @@ class SimulationControlSession:
     def __init__(self):
         self.lock = RLock()
         self.service = SimulationInstructionService()
+        from .device_import import load_imported
         from .template_editor import load_custom
+        load_imported(self.service)
         # A damaged/obsolete user row is quarantined and reported; it must not
         # make the whole built-in simulation catalogue unavailable.
         load_custom(self.service, strict=False)

@@ -93,8 +93,9 @@ class SimulationCatalog:
                     remap(device)
                     self.devices[identifier] = device
                 kind = '馈线断路器' if 'FEEDER' in identifier else types.get(device['device_type'], device['device_type'])
-                device['display_name'] = f"{label}{kind}（{device['protocol']}）"
-                device.setdefault('aliases', []).append(device['display_name'])
+                if device.get('source') != 'manual_device_import':
+                    device['display_name'] = f"{label}{kind}（{device['protocol']}）"
+                    device.setdefault('aliases', []).append(device['display_name'])
                 device['business_scenario'] = scene
                 if scene == 'grid_fault_isolation' and device['device_type'] == 'breaker':
                     facts = device['runtime_facts']
@@ -181,13 +182,17 @@ class SimulationCatalog:
         label = labels.get(kind, kind)
         device.setdefault('display_name', f'模拟{label}{index}')
         aliases = device.setdefault('aliases', [])
-        aliases.extend(x for x in [device['display_name'], f'{label}{index}'] if x not in aliases)
+        manual = device.get('source') == 'manual_device_import'
+        imported = manual or device.get('source') == 'synthetic_device_import'
+        default_aliases = [device['display_name']] if imported else [device['display_name'], f'{label}{index}']
+        aliases.extend(x for x in default_aliases if x not in aliases)
         if kind == 'transformer':
             aliases.extend(x for x in [f'主变{index}', f'模拟变压器{index}'] if x not in aliases)
             device['runtime_facts'].setdefault('load_percent', 70 if index == '1' else 55)
             device['runtime_facts'].setdefault('alarm_active', False)
         if kind == 'cooling_fan':
-            aliases.extend(x for x in [f'模拟风机{index}', f'冷却风机{index}'] if x not in aliases)
+            if not imported:
+                aliases.extend(x for x in [f'模拟风机{index}', f'冷却风机{index}'] if x not in aliases)
             device['runtime_facts'].setdefault('control_mode', 'remote')
         if kind == 'breaker':
             device['runtime_facts'].setdefault('voltage_present', 1 if device['initial_state'].get('position') == 'closed' else 0)
@@ -211,7 +216,7 @@ class SimulationCatalog:
                 })
             action.setdefault('template_ref', ref)
             action.setdefault('display_name', ACTION_LABELS.get(action_name, action_name))
-            effects = self._legacy_effects(device, action_name, action)
+            effects = action['simulation_effects'] if manual else self._legacy_effects(device, action_name, action)
             action.setdefault('simulation_effects', effects)
             generic = self.action_templates[ref]
             if generic.get('relation_requirements'):
@@ -223,7 +228,8 @@ class SimulationCatalog:
             section = 'state' if effects.get('state') else 'runtime_facts'
             state_key = next(iter(effects[section]))
             feedback_name = f'{state_key}_feedback'
-            feedback = self._legacy_feedback(device, feedback_name, section, state_key, action)
+            feedback = (deepcopy(action['feedback_mapping']) if manual else
+                        self._legacy_feedback(device, feedback_name, section, state_key, action))
             device['points'].setdefault(feedback_name, feedback)
             action.setdefault('feedback_mapping', deepcopy(device['points'][feedback_name]))
         # Transformer observations are read points; there are no invented body

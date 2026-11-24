@@ -36,7 +36,7 @@
       && Number.isInteger(preview.expected_version) ? preview : null;
   };
   async function request(path, payload, base = api()) {
-    const response = await fetch(base + path, payload === undefined ? {} : {
+    const response = await fetch(base + path, payload === undefined ? {cache: 'no-store'} : {
       method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
     });
     const value = await response.json();
@@ -46,16 +46,16 @@
   async function catalog(base) {
     if (!catalogs.has(base)) {
       const pending = request('/simulation/catalog', undefined, base).catch(error => {
-        catalogs.delete(base);
+        if (catalogs.get(base) === pending) catalogs.delete(base);
         throw error;
       });
       catalogs.set(base, pending);
     }
     return catalogs.get(base);
   }
-  async function ensureSession() {
+  async function ensureSession(available) {
     const base = api(), name = scenario(), key = sessionKey();
-    const available = await catalog(base);
+    available ??= await catalog(base);
     if (!available.scenarios.some(item => item.scenario_id === name && item.device_ids.length)) return '';
     if (sessions.has(key)) return sessions.get(key);
     if (!creating.has(key)) {
@@ -145,7 +145,9 @@
     }
     panel.textContent = '正在读取当前场景的模拟设备…';
     try {
-      const identifier = await ensureSession();
+      const available = await catalog(base);
+      if (!isCurrent()) return;
+      const identifier = await ensureSession(available);
       if (!isCurrent()) return;
       if (!identifier) {
         sessionId = '';
@@ -160,8 +162,6 @@
         stateVersions.set(versionKey, snapshot.version);
       }
       sessionId = identifier;
-      const available = await catalog(base);
-      if (!isCurrent()) return;
       const ids = new Set(available.scenarios.find(item => item.scenario_id === scenario()).device_ids);
       const devices = snapshot.devices.filter(device => ids.has(device.device_id));
       panel.innerHTML = `<p class="hint">当前场景共有 ${devices.length} 台模拟设备，状态与自动选择同步。</p>` + devices.map(device => {
@@ -400,6 +400,20 @@
   }
   for (const id of ['scenario', 'simulation-mode', 'api']) {
     document.getElementById(id).addEventListener('change', changeContext);
+  }
+  function refreshCatalog() {
+    catalogs.delete(api());
+    loadDeviceState();
+  }
+  window.addEventListener('pageshow', event => { if (event.persisted) refreshCatalog(); });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') refreshCatalog();
+  });
+  if (new URLSearchParams(location.search).get('from') === 'device-import') {
+    const select = document.getElementById('scenario');
+    const requested = new URLSearchParams(location.search).get('scenario');
+    select.value = [...select.options].some(option => option.value && option.value === requested)
+      ? requested : 'substation_maintenance';
   }
   // A state seed is not an executed command. Nothing calls execute on load/query.
   loadDeviceState();
