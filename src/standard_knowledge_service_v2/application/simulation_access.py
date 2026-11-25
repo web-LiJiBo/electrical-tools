@@ -30,6 +30,20 @@ def default_session(pipeline):
         return runtime.snapshot(identifier)
 
 
+def invalidate_simulation_sessions(pipeline):
+    with _runtime_lock:
+        revision = simulation_runtime(pipeline).invalidate_sessions()
+        pipeline._default_simulation_session_id = None
+        legacy = getattr(pipeline, 'simulation_session', None)
+        if legacy is not None:
+            with legacy.lock:
+                legacy.service.states = {key: deepcopy(device['initial_state'])
+                                         for key, device in legacy.service.devices.items()}
+                legacy.facts = {key: deepcopy(device.get('runtime_facts', {}))
+                                for key, device in legacy.service.devices.items()}
+        return {'requires_reanalysis': True, 'configuration_revision': revision}
+
+
 def view_snapshot(pipeline, request, snapshot):
     """Filter one shared simulation world without making another state copy."""
     name = request.parameters.get('simulation_scenario_id')

@@ -18,6 +18,7 @@ clause_basis非空时，operations来自第二轮条款建议，必须独立核�
 否定、执行条件及先后依赖；启动和停止、打开和关闭等反向动作不能相互替换。
 已经启动/停止等状态修饰不等于用户要求的动作；再次/再一次表示重复，不自动等于顺序。
 按整句语义判断真正的否定、条件和顺序，不能仅因单个字就判断存在先后依赖。
+逐项列举、逗号连接、编号或“这几项指令”仅表示清单顺序，不代表执行先后；这些情况下order必须为null且has_order=false，擅自添order必须拒绝。存在order时必须独立对照order_evidence与完整query，说明该原文确实建立步骤间执行依赖；引用只是来源证明，不证明语义成立，普通动作片段不能证明顺序。不得从execution_support.order或清单order反推用户有先后要求。
 context_facts是首轮对用户陈述的背景事实分类，不是已核验实测。scenario.context_kind区分背景与执行前提；必须独立核对完整原文，不能照抄其分类。“已发生的告警/当前测量/用户参考阈值”作为背景不等于要求满足某条件才执行；背景不应标has_conditions=true。真正执行前提必须保留conditions，不能因首轮标为background而忽略。明确陈述的当前状态可由后台补充到模拟会话，历史/假设/参考值仍分列；不把用户阈值当标准，不自行修改动作参数。
 business_parameters.action_parameters是本次用户在业务参数区明确补充的动作目标，与完整提问一起核对；原文未写数值但补充参数已提供，不属于目标缺少来源。二者冲突必须拒绝；仍按输入operations原样回显parameters，不通过改值获得批准。
 simulation_inputs.applied记录后台已经匹配字段并按单位换算的用户模拟补充值及来源。原文单位与目录单位不同但已正确换算，不构成目标冲突；明确陈述的当前值不是额外执行前提，不能因为未把它重复写进conditions而拒绝。用户补充覆盖模拟预设是允许行为，与旧模拟值不同不是语义冲突。联锁许可由后台按采用后的状态检查，语义复核不替代状态校验；此处仅核对用户请求是否完整忠实保留。操作目标仍逐项核对，不把背景测量值当动作目标。
@@ -52,12 +53,28 @@ has_conditions专指需要另外核验的设备事实、许可等执行前提，
 has_conditions=false、has_negation=false；不能因为没有把反馈写成设备条件而拒绝。
 若原文另有设备、许可或时间前提，则必须独立核对，不可借此示例省略。
 只有每项完全对应原文、无遗漏、否定或不受支持限制时才可approved=true。
+approved必须与结构化逐项结果一致：所有items.matches_request=true、missing_requests为空、has_negation=false且没有条件或顺序限制时，approved必须为true。不能一边逐项确认全部正确、理由写批准，一边输出approved=false。若拒绝，须在对应item、missing_requests或限制标志中明确反映原因；设备当前许可是否满足交后台逐项校验。
 仅输出一个完整JSON对象，所有字段必填，不要Markdown、前后解释或截断：
 {"approved":true或false,"items":[{"index":0,"matches_request":true或false,
 "reason":"核对理由","device_id":"输入编号","action":"输入动作","parameters":{}}],
 "missing_requests":["清单遗漏的原文诉求"],"has_negation":false,
 "has_conditions":false,"has_order":false,"reason":"整批复核结论"}。
 '''
+
+
+def semantic_review_inputs(parameters, input_report):
+    """Keep action targets in semantic review; state feasibility belongs to runtime.
+
+    Question-derived observations remain available for checking their meaning and
+    unit normalization. Business-only state values were already validated and
+    adopted atomically; exposing them as review permissions causes whole-batch
+    semantic vetoes before independent per-operation readiness checks.
+    """
+    rows = [{key: deepcopy(row[key]) for key in ('device_id', 'field', 'value', 'unit', 'sources')}
+            for row in (input_report or {}).get('applied', [])
+            if any(source.get('origin') == 'question' for source in row.get('sources', []))]
+    return ({'action_parameters': deepcopy(parameters.get('action_parameters', {}))},
+            {'applied': rows, 'state_validation': 'backend_per_operation'})
 
 
 def review_packet(query, understanding, catalog, conversation_context=None):
@@ -129,7 +146,22 @@ def parse_review_json(raw):
         raise ValueError('invalid_model_output') from exc
 
 
-def validate_review(raw, operations, execution_support=None):
+def order_evidence_error(operations, query=None):
+    """Check provenance only; the independent model must judge the relationship."""
+    for row in operations:
+        if row.get('order') is None:
+            continue
+        evidence = row.get('order_evidence')
+        if not isinstance(evidence, str) or not evidence.strip():
+            return '顺序步骤缺少用户原文中的执行依赖依据，请明确先后要求。'
+        if not isinstance(query, str) or not query.strip():
+            return '缺少本次请求原文，无法核验顺序依据。'
+        if evidence not in query:
+            return '顺序依据不是本次请求的原文，不能生成顺序计划。'
+    return ''
+
+
+def validate_review(raw, operations, execution_support=None, query=None):
     """Return approved only for a complete, typed, unchanged affirmative review."""
     invalid = _result('blocked', 'invalid_model_output', '操作语义复核结果不完整或格式不符合协议，未生成预览。')
     try:
@@ -164,6 +196,11 @@ def validate_review(raw, operations, execution_support=None):
             if (item['device_id'] != original['device_id'] or item['action'] != original['action']
                     or not _same_json(item['parameters'], original['parameters'])):
                 return _result('blocked', 'review_item_mismatch', '复核结果改变了原清单中的设备、动作或参数，未生成预览。', raw['items'])
+        if inconsistent_review(raw) and not any(row.get('order') is not None or row.get('conditions') for row in operations):
+            return _result('failed', 'inconsistent_review', '操作复核的总判定与逐项结论矛盾，未生成预览。', raw['items'])
+        provenance_error = order_evidence_error(operations, query)
+        if provenance_error:
+            return _result('blocked', 'review_order_evidence', provenance_error, raw['items'])
         support_bound = (type(execution_support) is dict
                          and _same_json(execution_support.get('operations'), operations))
         supports_conditions = support_bound and execution_support.get('conditions') is True
@@ -192,8 +229,17 @@ def validate_review(raw, operations, execution_support=None):
         return invalid
 
 
+def inconsistent_review(raw):
+    """A contradictory verdict is neither approval nor a meaningful veto."""
+    return (isinstance(raw, dict) and raw.get('approved') is False
+            and isinstance(raw.get('items'), list) and bool(raw['items'])
+            and all(isinstance(row, dict) and row.get('matches_request') is True for row in raw['items'])
+            and raw.get('missing_requests') == []
+            and all(raw.get(key) is False for key in ('has_negation', 'has_conditions', 'has_order')))
+
+
 def review_operations(client, packet):
-    """Use one independent model call; failures are secret-free and never retry."""
+    """Use one review, with one bounded recheck for contradictory verdict fields."""
     if client is None:
         return _result('failed', 'model_disabled', '未启用操作语义复核模型，未生成预览。')
     try:
@@ -208,7 +254,16 @@ def review_operations(client, packet):
     except Exception as exc:
         code = model_error_code(exc)
         return _result('failed', code, MESSAGES[code])
-    result = validate_review(raw, operations, snapshot.get('execution_support'))
+    result = validate_review(raw, operations, snapshot.get('execution_support'), snapshot.get('query'))
+    if result['reason_code'] == 'inconsistent_review':
+        try:
+            raw = client.complete(REVIEW_PROMPT + '\n上次总判定与逐项结果矛盾。请重新独立核对同一原文，保持设备和参数不变，输出一致的完整复核结果；不能为了通过而忽略真实否定、遗漏或限制。', payload)
+            result = validate_review(raw, operations, snapshot.get('execution_support'), snapshot.get('query'))
+            result['recheck_count'] = 1
+            result['recheck_reason'] = 'inconsistent_review'
+        except Exception as exc:
+            code = model_error_code(exc)
+            return _result('failed', code, MESSAGES[code])
     if result['reason_code'] in ('invalid_model_output', 'invalid_operation_plan'):
         result['status'] = 'failed'
     return result

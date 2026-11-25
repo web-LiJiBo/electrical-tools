@@ -23,8 +23,12 @@ class ActionPreconditionEvaluator:
     def __init__(self) -> None:
         self.engine = SafeRuleEngine()
 
-    def evaluate(self, expression: str, facts: dict[str, Any] | None = None, constraints: list[dict] | None = None) -> PreconditionDecision:
-        decisions = [self._evaluate_one(expression, facts)]
+    def evaluate(self, expression: str, facts: dict[str, Any] | None = None, constraints: list[dict] | None = None, *, allow_unconditional: bool = False) -> PreconditionDecision:
+        if allow_unconditional and expression == 'true':
+            decisions = [PreconditionDecision(ReasoningStatus.PASS, [TraceStep('precondition', ReasoningStatus.PASS,
+                         '模板明确未配置前置条件', {'expression': 'true'})])]
+        else:
+            decisions = [self._evaluate_one(expression, facts)]
         for constraint in constraints or []:
             role = constraint.get("role", "unspecified")
             if role == "compliance":

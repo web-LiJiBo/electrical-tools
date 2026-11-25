@@ -32,7 +32,7 @@ quote是分解片段，source_text是完整来源原文。容量、电压等级�
 用户要求编号、版本和条款时，formal_citation_ready为false的来源不能构成已确认适用的正式标准结论。试验项目清单、实测值要求和油中单项指标不能直接授权恢复送电或合闸。
 understanding.request_controls.analysis_only为true时，只分析，不提出设备指令，instruction必须为null。
 instruction_requested=false时只提供条款分析，instruction为null，不能因条款有动作就额外替用户生成控制操作。用户“只生成预览、不执行”允许生成预览，不等于只分析。
-instruction非null时增加operation对象，字段为target_text、owner_id、source_text、parameter_evidence、condition_evidence、conditions、order，格式与首轮operations对应字段完全相同。source_text与target_text引用用户原文，不引用改写建议；每个真实用户前提保留conditions及condition_evidence，目录固有联锁不添加为用户条件。背景测量/已发生保护动作不是用户额外执行条件。数值目标来自用户时引用parameter_evidence；采用设备configured_parameter_fact时参数取设备快照的配置值，parameter_evidence为空，不伪造用户原文。没有顺序时order=null。
+instruction非null时增加operation对象，字段为target_text、owner_id、source_text、parameter_evidence、condition_evidence、conditions、order、order_evidence，格式与首轮operations对应字段完全相同。source_text与target_text引用用户原文，不引用改写建议；每个真实用户前提保留conditions及condition_evidence，目录固有联锁不添加为用户条件。背景测量/已发生保护动作不是用户额外执行条件。数值目标来自用户时引用parameter_evidence；采用设备configured_parameter_fact时参数取设备快照的配置值，parameter_evidence为空，不伪造用户原文。没有执行依赖时order=null、order_evidence为空；逐项列举不是执行依赖。有顺序时order_evidence逐字引用建立步骤间依赖的用户原文，不得用条款建议或后台支持代替。
 source_quality、formal_citation_ready等字段和布尔标志仅供后台判断，不得原样写进summary、suggestions或unable_reason；面向用户使用中文说明，如“标准编号和版本尚未核验”“完整适用范围仍需核对”“本次只作分析”，不展示内部字段名、状态码或协议细节。
 '''
 
@@ -139,7 +139,7 @@ class GroundedAdviceService:
             if review_context is not None:
                 from .operation_review import validate_review
                 data['operation_review'] = validate_review(parsed.get('operation_review'), review_context['operations'],
-                    review_context.get('execution_support'))
+                    review_context.get('execution_support'), review_context.get('query'))
                 parsed = parsed['advice']
                 if parsed.get('instruction') is not None:
                     raise ValueError('Combined review must not propose executable replacements')

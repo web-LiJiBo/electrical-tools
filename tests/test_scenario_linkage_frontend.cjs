@@ -8,6 +8,61 @@ const vm = require('node:vm');
 const script = fs.readFileSync(path.join(__dirname, '../frontend/original-simulation.js'), 'utf8');
 const flush = () => new Promise(resolve => setImmediate(resolve));
 
+test('configuration change preserves the answer while stopping old operations and new questions',async()=>{
+ const app=fixture({fullPage:true});await flush();
+ app.context.window.configurationEvents={isStale:()=>false,check:async()=>{}};
+ app.element('query').value='查询状态';await app.element('run').onclick();
+ const before=vm.runInContext('result',app.context),html=app.element('output').innerHTML;
+ app.context.window.configurationEvents.isStale=()=>true;
+ app.context.window.originalSimulation.configurationChanged();
+ assert.equal(vm.runInContext('result',app.context),before);
+ assert.equal(app.element('output').innerHTML,html);
+ const count=app.requests.length;await app.element('run').onclick();
+ assert.equal(app.requests.length,count);assert.equal(app.element('output').innerHTML,html);
+});
+
+test('late analysis cannot restore active operations after a configuration change',async()=>{
+ const held=deferred(),app=fixture({fullPage:true,delayAnalyze:held});await flush();
+ app.element('query').value='查询运行状态';
+ app.context.window.configurationEvents={isStale:()=>false,check:async()=>{}};
+ const waiting=app.element('run').onclick();await flush();
+ app.context.window.configurationEvents.isStale=()=>true;
+ app.context.window.originalSimulation.configurationChanged();held.resolve();await waiting;
+ assert.equal(vm.runInContext('result',app.context),null);
+ assert.equal(app.element('run').disabled,true);
+});
+
+test('answer completion releases the question button even when the state refresh is slow',async()=>{
+ const app=fixture({fullPage:true});await flush();app.element('query').value='查询状态';
+ const original=app.context.loadDeviceState;let release;
+ app.context.loadDeviceState=()=>new Promise(r=>release=r);
+ const waiting=app.element('run').onclick();await flush();
+ assert.equal(app.element('run').disabled,false);release();await waiting;app.context.loadDeviceState=original;
+});
+
+test('a stalled analysis times out and allows the user to ask again',async()=>{
+ const app=fixture({fullPage:true});await flush();app.element('query').value='查询状态';
+ app.context.AbortSignal={timeout:()=>AbortSignal.timeout(10)};
+ const fetch=app.context.fetch;
+ app.context.fetch=(url,options)=>url.endsWith('/analyze')?new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(options.signal.reason))):fetch(url,options);
+ await Promise.race([app.element('run').onclick(),new Promise(resolve=>setTimeout(resolve,200))]);
+ assert.equal(app.element('run').disabled,false);assert.equal(app.element('status').textContent,'请求失败');
+});
+
+test('batch revalidation is bounded and stops scheduling old work after inputs change',async()=>{
+ const app=fixture();await flush();app.element('query').value='启动多个风机';await app.context.window.originalSimulation.prepare({simulation_mode:true});
+ app.context.result={data:{simulation_session_id:'session-all_devices',simulation_batch:{items:Array.from({length:7},(_,i)=>({device_id:'FAN-'+i,action:'start',parameters:{},preview:{status:'generated',command_id:'c'+i,expected_version:0,simulation_execution_allowed:true}}))}}};
+ app.context.tab='instruction';app.context.render();let count=0;const held=[],fetch=app.context.fetch;
+ app.context.fetch=async(url,opts)=>{
+  if(url.endsWith('/execute'))return {ok:true,json:async()=>({status:'succeeded',explanation:'ok'})};
+  if(url.endsWith('/preview')){count++;return new Promise(resolve=>held.push(()=>resolve({ok:true,json:async()=>({status:'generated',command_id:'new',expected_version:1,simulation_execution_allowed:true})})));}
+  return fetch(url,opts);
+ };
+ const action=app.element('simulate-batch-0').onclick();await flush();assert.equal(count,3);
+ app.element('query').value='另一问';for(const fn of app.element('query').listeners.input)fn();
+ for(const release of held)release();await action;assert.equal(count,3);assert.equal(app.element('run').disabled,false);
+});
+
 test('same-device mixed actions display one device and two distinct instructions', async () => {
   const app = fixture();
   await flush();
@@ -47,7 +102,7 @@ test('multi-device cards retain blocked rows and input changes disable every com
   assert.match(app.element('output').innerHTML, /SIM-IEC-FAN-01/);
   assert.match(app.element('output').innerHTML, /SIM-MB-FAN-01/);
   assert.match(app.element('output').innerHTML, /检修闭锁/);
-  assert.equal(app.element('status').textContent, '部分指令可用');
+  assert.equal(app.element('status').textContent, '1项可预览，1项受阻/待澄清');
   assert.equal(app.element('simulate-batch-0').disabled, false);
   assert.equal(app.element('simulate-batch-1').disabled, true);
   assert.equal(app.requests.some(r => r.route.endsWith('/execute')), false);
@@ -109,7 +164,7 @@ test('lost single-command response is unknown on both answer and operation tabs'
   await app.element('run').onclick();
   vm.runInContext("tab='instruction';render()",app.context);
   await app.element('simulate-execute').onclick();
-  vm.runInContext("tab='summary';render()",app.context);
+  vm.runInContext("if(globalThis.result)result=globalThis.result;tab='summary';render()",app.context);
   assert.match(app.element('output').innerHTML,/执行结果未确认/);
   assert.doesNotMatch(app.element('output').innerHTML,/尚未执行/);
   assert.equal(app.element('status').textContent,'执行结果未确认');
@@ -189,8 +244,8 @@ function fixture({delayCreate, fullPage = false, delayAnalyze, delayLegacy, stor
   }
   function response(data) { return {ok: true, json: async () => structuredClone(data)}; }
   const context = vm.createContext({document: {getElementById: element, querySelector: () => null,
-      querySelectorAll: () => []},
-    window: {}, sessionStorage: {getItem:key=>storage.get(key) || null, setItem:(key,value)=>storage.set(key,value), removeItem:key=>storage.delete(key)}, fetch, URL, URLSearchParams, location: {search: ''}, console,
+      querySelectorAll: () => [], addEventListener() {}},
+    window: {addEventListener() {}}, sessionStorage: {getItem:key=>storage.get(key) || null, setItem:(key,value)=>storage.set(key,value), removeItem:key=>storage.delete(key)}, fetch, AbortSignal, URL, URLSearchParams, location: {search: ''}, console,
     result: null, tab: 'summary', render() {},
     esc: value => String(value ?? ''), loadDeviceState() {},
     scenarioNames: {offshore_wind: '海上风电', substation_maintenance: '变电站设备运维'}});
@@ -408,7 +463,45 @@ test('lost plan execution response stops later steps and replaces the answer wit
   await app.element('simulate-plan-execute-0').onclick();
   assert.equal(app.element('simulate-plan-preview-1').disabled,true);
   assert.equal(app.requests.some(r=>r.route.endsWith('/plans/plan-lost/preview')),false);
-  vm.runInContext("tab='summary';render()",app.context);
+  vm.runInContext("if(globalThis.result)result=globalThis.result;tab='summary';render()",app.context);
   assert.match(app.element('output').innerHTML,/执行结果未确认/);
   assert.doesNotMatch(app.element('output').innerHTML,/尚未执行/);
+});
+
+
+test('answer reports mixed batch counts without claiming all commands generated', async () => {
+  const app = fixture({fullPage:true}); await flush();
+  app.context.result = {status:'generated',data:{answer:{text:'候选操作'},simulation_batch:{items:[
+    {preview:{status:'generated',command_id:'one',expected_version:0,simulation_execution_allowed:true}},
+    {preview:{status:'blocked',explanation:'缺少设备状态'}}
+  ]}}};
+  vm.runInContext("if(globalThis.result)result=globalThis.result;tab='summary';render()",app.context);
+  assert.equal(app.element('status').textContent,'1项可预览，1项受阻/待澄清');
+  assert.equal(app.element('status').className,'status warn');
+  assert.match(app.element('output').innerHTML,new RegExp('1项可预览，1项受阻/待澄清'));
+  assert.match(app.element('output').innerHTML,/生成指令未执行/);
+});
+
+test('sequential future steps remain drafts before their preview', async () => {
+  const app = fixture({fullPage:true}); await flush();
+  app.context.result = {status:'generated',data:{answer:{text:'顺序计划'},simulation_plan:{status:'active',next_step:1,steps:[{},{}]}}};
+  vm.runInContext("if(globalThis.result)result=globalThis.result;tab='summary';render()",app.context);
+  assert.equal(app.element('status').textContent,'0项可预览，0项受阻/待澄清，2项步骤草案待开放');
+  assert.match(app.element('output').innerHTML,/前一步成功反馈后重新预览/);
+  assert.doesNotMatch(app.element('status').textContent,/完成|已生成/);
+});
+
+test('applied facts have a compact answer notice and detailed understanding table', async () => {
+  const app = fixture({fullPage:true}); await flush();
+  app.context.result = {status:'uncertain',data:{simulation_factual:true,clarification_required:true,
+    simulation_inputs:{applied:[{device_id:'FAN-01',field:'running',value:false,original_value:true,conflict:true}]}}};
+  vm.runInContext("if(globalThis.result)result=globalThis.result;tab='summary';render()",app.context);
+  assert.equal(app.element('status').textContent,'设备条件待澄清');
+  assert.match(app.element('output').innerHTML,/本次补充已更新模拟会话；生成指令未执行/);
+  assert.match(app.element('output').innerHTML,/差异及采用来源请查看“系统理解”/);
+  assert.doesNotMatch(app.element('output').innerHTML,/<table/);
+  assert.doesNotMatch(app.element('output').innerHTML,/可靠条款/);
+  vm.runInContext("tab='decomposition';render()",app.context);
+  assert.match(app.element('output').innerHTML,/本次采用的补充参数/);
+  assert.match(app.element('output').innerHTML,/<table/);
 });

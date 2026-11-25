@@ -35,7 +35,8 @@ def register_simulation_routes(app, application):
 
     @app.get('/simulation/catalog')
     def catalog():
-        return runtime().catalog.describe()
+        instance = runtime()
+        return {**instance.catalog.describe(), 'configuration_revision': instance.configuration_revision}
 
     @app.get('/simulation/device-import')
     def device_import_options():
@@ -71,8 +72,13 @@ def register_simulation_routes(app, application):
             fields(payload, {'devices', 'revision'} if publish else {'devices'})
             if publish:
                 string(payload, 'revision')
-            return process(application.facade.simulation_session, runtime(), payload.get('devices'),
-                           publish=publish, revision=payload.get('revision'))
+            with application.facade.simulation_session.lock:
+                result = process(application.facade.simulation_session, runtime(), payload.get('devices'),
+                                 publish=publish, revision=payload.get('revision'))
+                if publish and result.get('status') == 'published':
+                    from ..application.simulation_access import invalidate_simulation_sessions
+                    result.update(invalidate_simulation_sessions(application.facade))
+                return result
 
         try:
             return await run_in_threadpool(perform, run)

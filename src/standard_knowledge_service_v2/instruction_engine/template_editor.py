@@ -17,6 +17,8 @@ def validate_template(service, payload):
     key, action = payload.get('device_id'), payload.get('action')
     if not isinstance(key, str) or not isinstance(action, str) or key not in service.devices or action not in ACTIONS:
         raise ValueError('请选择已登记模拟设备和支持的动作')
+    if service.devices[key].get('source') == 'customization':
+        raise ValueError('此设备由自定义配置管理，请在自定义配置的指令工作区维护指令。')
     template = deepcopy(payload.get('template'))
     if not isinstance(template, dict):
         raise ValueError('模板必须为JSON对象')
@@ -69,14 +71,27 @@ def _runtime_catalog(service):
     return SimulationCatalog(legacy_service=service)
 
 
-def load_custom(service, path=CUSTOM_PATH, *, strict=True):
+def _install_wire(service, key, action, wire):
+    if wire is None:
+        return
+    from .customization_wire import apply_wire
+    catalog = _runtime_catalog(service)
+    device = deepcopy(catalog.devices[key])
+    if wire.get('protocol') != device['protocol']:
+        raise ValueError('已有设备不能更换协议。')
+    apply_wire(device, action, wire)
+    service.devices[key] = device
+
+
+def load_custom(service, path=None, *, strict=True):
     """Load user templates without leaving a half-mutated catalogue.
 
     Strict mode is used by validation/tests and rejects the complete file.  The
     application session uses non-strict mode so one obsolete or damaged row is
     quarantined instead of preventing every simulated device from starting.
     """
-    if not Path(path).exists():
+    path = Path(path) if path is not None else Path(CUSTOM_PATH)
+    if not path.exists():
         service.template_load_errors = []
         return []
     try:
@@ -110,12 +125,13 @@ def load_custom(service, path=CUSTOM_PATH, *, strict=True):
                 raise ValueError('补充模板不能重复或覆盖已有设备动作')
             candidate = deepcopy(staged)
             candidate.devices[key]['actions'][action] = template
+            _install_wire(candidate, key, action, row.get('wire'))
             # Include derived feedback points and all other device instances.
             # Historical conflicts are quarantined one row at a time.
             _runtime_catalog(candidate)
             staged = candidate
             seen.add(identity)
-            loaded.append({'device_id': key, 'action': action, 'template': template})
+            loaded.append({'device_id': key, 'action': action, 'template': template, **({'wire': deepcopy(row['wire'])} if row.get('wire') is not None else {})})
         except (KeyError, TypeError, ValueError) as exc:
             errors.append(f'第{index + 1}条: {exc}')
     if errors and strict:
@@ -125,22 +141,23 @@ def load_custom(service, path=CUSTOM_PATH, *, strict=True):
     # partially initialized catalogue.
     for row in loaded:
         service.devices[row['device_id']]['actions'][row['action']] = row['template']
+        _install_wire(service, row['device_id'], row['action'], row.get('wire'))
     service.template_load_errors = errors
     return loaded
 
 
-def save_custom(service, payload, path=CUSTOM_PATH, *, publish=None):
+def save_custom(service, payload, path=None, *, publish=None):
     key, action, template = validate_template(service, payload)
     if action in service.devices[key]['actions']:
         raise ValueError('该设备已存在此动作，请选择其他设备或动作')
-    path = Path(path)
+    path = Path(path) if path is not None else Path(CUSTOM_PATH)
     data = json.loads(path.read_text(encoding='utf-8')) if path.exists() else {'simulation_only': True, 'items': []}
     if not isinstance(data, dict) or data.get('simulation_only') is not True or not isinstance(data.get('items'), list):
         raise ValueError('现有用户模板文件结构无效，未覆盖原文件')
     if any(isinstance(row, dict) and row.get('device_id') == key and row.get('action') == action
            for row in data['items']):
         raise ValueError('该设备的持久记录已存在此动作，请先修正未加载的历史模板')
-    data['items'].append({'device_id': key, 'action': action, 'template': template})
+    data['items'].append({'device_id': key, 'action': action, 'template': template, **({'wire': deepcopy(payload['wire'])} if payload.get('wire') is not None else {})})
     path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=path.parent, delete=False, suffix='.tmp') as handle:
         temporary = handle.name
@@ -154,7 +171,17 @@ def save_custom(service, payload, path=CUSTOM_PATH, *, publish=None):
         loaded = load_custom(validation_service, temporary, strict=False)
         if not any(row['device_id'] == key and row['action'] == action for row in loaded):
             raise ValueError('补充模板运行目录校验失败；' + '；'.join(validation_service.template_load_errors))
+        # All publication entrances must retain the same normalized devices and
+        # bindings. Overlay them on the prospective legacy templates, not the
+        # currently persisted file, before touching disk or live sessions.
+        from .customization import load_customization
+        load_customization(validation_service)
+        if getattr(validation_service, 'customization_load_error', ''):
+            raise ValueError(validation_service.customization_load_error)
         catalog = _runtime_catalog(validation_service)
+        from .customization_wire import apply_wire, extract_wire
+        device = catalog.devices[key]
+        apply_wire(deepcopy(device), action, extract_wire(device, action))
         previous = path.read_bytes() if path.exists() else None
         os.replace(temporary, path)
         try:
@@ -178,7 +205,10 @@ def save_custom(service, payload, path=CUSTOM_PATH, *, publish=None):
     finally:
         if os.path.exists(temporary):
             os.unlink(temporary)
-    service.devices[key]['actions'][action] = template
+    service.devices = validation_service.devices
+    service.customization_overrides = getattr(validation_service, 'customization_overrides', {})
+    for identifier, initial in validation_service.states.items():
+        service.states[identifier] = {**deepcopy(initial), **service.states.get(identifier, {})}
     service.template_load_errors = list(validation_service.template_load_errors)
     return {'status': 'saved', 'device_id': key, 'action': action, 'source_binding_status': 'pending'}
 
@@ -189,7 +219,11 @@ def test_template(service, payload):
     probe.devices = deepcopy(service.devices)
     probe.states = deepcopy(service.states)
     probe.devices[key]['actions'][action] = template
-    _runtime_catalog(probe)
+    _install_wire(probe, key, action, payload.get('wire'))
+    catalog = _runtime_catalog(probe)
+    from .customization_wire import apply_wire, extract_wire
+    device = catalog.devices[key]
+    apply_wire(deepcopy(device), action, extract_wire(device, action))
     facts, parameters = payload.get('facts', {}), payload.get('parameters', {})
     if not isinstance(facts, dict) or not isinstance(parameters, dict):
         raise ValueError('测试事实和参数必须为JSON对象')

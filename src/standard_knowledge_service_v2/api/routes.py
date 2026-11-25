@@ -10,6 +10,10 @@ def register_routes(app, application) -> None:
     from fastapi import HTTPException
     from .simulation_routes import register_simulation_routes
     register_simulation_routes(app, application)
+    from .customization_routes import register_customization_routes
+    register_customization_routes(app, application)
+    from .clause_import_routes import register_clause_import_routes
+    register_clause_import_routes(app, application)
 
     def analyze_payload(payload: object):
         try:
@@ -71,8 +75,10 @@ def register_routes(app, application) -> None:
                 from ..application.simulation_access import simulation_runtime
                 runtime = simulation_runtime(application.facade)
                 saved = save_custom(session.service, payload, publish=runtime.refresh_catalog)
+                from ..application.simulation_access import invalidate_simulation_sessions
                 return {**saved, 'runtime_refreshed': True,
-                        'notice': '模板已同步运行目录；设备状态保留，旧预览需重新生成。'}
+                        **invalidate_simulation_sessions(application.facade),
+                        'notice': '配置已保存；旧会话及预览已失效，请刷新页面后重新问答。'}
         except ValueError as exc:
             raise HTTPException(status_code=422, detail=str(exc)) from exc
 

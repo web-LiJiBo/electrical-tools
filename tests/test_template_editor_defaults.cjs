@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 
-const html = fs.readFileSync(path.join(__dirname, '../frontend/template-editor.html'), 'utf8');
+const html = fs.readFileSync(path.join(__dirname, '../frontend/customization-advanced.html'), 'utf8');
 const source = html.slice(html.indexOf('function updateMapping()'), html.indexOf('const actionNames='));
 
 function editor(devices) {

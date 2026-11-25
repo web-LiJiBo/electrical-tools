@@ -14,6 +14,16 @@ from .simulation import DEFAULT_PROFILES, SimulationInstructionService
 
 
 CONFIG_ROOT = DEFAULT_PROFILES.parent
+
+
+def _modbus_range(point):
+    width = 2 if point.get('data_type') in ('int32', 'uint32', 'float32') else 1
+    address = point['address']
+    if address + width > 65536:
+        raise ValueError('模拟Modbus点位占用范围越界')
+    return range(address, address + width)
+
+
 ACTION_LABELS = {
     'start': '启动', 'stop': '停止', 'trip': '分闸', 'close': '合闸',
     'open': '分闸', 'raise': '升一档', 'lower': '降一档', 'set_tap': '设定档位',
@@ -40,6 +50,14 @@ class SimulationCatalog:
             if identifier in self.devices:
                 raise ValueError(f'显式实例与兼容设备ID冲突: {identifier}')
             self.devices[identifier] = self._expand_instance(instance)
+        # Custom bindings reference effective existing instances without
+        # registering duplicates of explicit instances or copying their points.
+        for identifier, device in getattr(legacy_service, 'customization_overrides', {}).items():
+            if identifier not in self.devices:
+                raise ValueError(f'自定义关联引用未知设备: {identifier}')
+            expanded = deepcopy(device)
+            self._adapt_legacy(expanded)
+            self.devices[identifier] = expanded
         self._business_profiles()
         from .simulation_wire_profiles import apply_simulation_protocol_profiles
         self.wire_profile_diagnostics = apply_simulation_protocol_profiles(self.devices)
@@ -93,7 +111,7 @@ class SimulationCatalog:
                     remap(device)
                     self.devices[identifier] = device
                 kind = '馈线断路器' if 'FEEDER' in identifier else types.get(device['device_type'], device['device_type'])
-                if device.get('source') != 'manual_device_import':
+                if device.get('source') not in {'manual_device_import', 'customization'}:
                     device['display_name'] = f"{label}{kind}（{device['protocol']}）"
                     device.setdefault('aliases', []).append(device['display_name'])
                 device['business_scenario'] = scene
@@ -110,7 +128,9 @@ class SimulationCatalog:
                                 constraints.append({'parameter': sensor, 'operator': '==', 'value': 1, 'role': 'precondition'})
                 identifiers.append(identifier)
                 owned.add(identifier)
-            self.scenarios[scene] = {'scenario_id': scene, 'display_name': label,
+            declared = deepcopy(self.scenarios.get(scene, {}))
+            self.scenarios[scene] = {**declared, 'scenario_id': scene,
+                'display_name': declared.get('display_name', label),
                 'device_ids': identifiers, 'groups': {}, 'conditions': {'normal': {}},
                 'condition_labels': {'normal': '正常运行'}}
             if scene == 'grid_fault_isolation':
@@ -182,7 +202,7 @@ class SimulationCatalog:
         label = labels.get(kind, kind)
         device.setdefault('display_name', f'模拟{label}{index}')
         aliases = device.setdefault('aliases', [])
-        manual = device.get('source') == 'manual_device_import'
+        manual = device.get('source') in {'manual_device_import', 'customization'}
         imported = manual or device.get('source') == 'synthetic_device_import'
         default_aliases = [device['display_name']] if imported else [device['display_name'], f'{label}{index}']
         aliases.extend(x for x in default_aliases if x not in aliases)
@@ -323,25 +343,42 @@ class SimulationCatalog:
             if not identifier.startswith('SIM-'):
                 raise ValueError('模拟设备ID必须以SIM-开头')
             for point in device['points'].values():
+                communication = device.get('communication', {})
+                endpoint = (str(communication.get('host', point.get('host', ''))).strip().casefold(),
+                            communication.get('port', point.get('port', 502 if device['protocol'] == 'Modbus' else 102)))
                 if point.get('protocol') == 'Modbus':
                     slave, address = point.get('slave_id'), point.get('address')
                     if type(slave) is not int or not 1 <= slave <= 247 or type(address) is not int or not 0 <= address <= 65535:
                         raise ValueError('模拟Modbus点位地址无效')
                     # Coil/register spaces are distinct in Modbus.
                     space = 'coil' if point.get('function_code') in {1, 5} else 'register'
-                    key = ('Modbus', slave, space, address)
+                    keys = [('Modbus', endpoint, slave, space, offset) for offset in _modbus_range(point)]
                 elif point.get('protocol') == 'IEC61850' and point.get('object_reference'):
-                    key = ('IEC61850', point['object_reference'])
+                    # MMS identifiers are what the encoder sends. Object references
+                    # may name either the object or its attribute (short/long form).
+                    location = ((point['domain_id'], point['item_id'])
+                                if point.get('domain_id') and point.get('item_id')
+                                else point['object_reference'])
+                    keys = [('IEC61850', endpoint, location)]
                 else:
                     raise ValueError(f'模拟点位缺少协议或地址: {identifier}')
-                if key in addresses and addresses[key] != identifier:
-                    raise ValueError(f'模拟总线点位冲突: {identifier} / {addresses[key]}')
-                addresses[key] = identifier
+                for key in keys:
+                    if key in addresses and addresses[key] != identifier:
+                        raise ValueError(f'模拟总线点位冲突: {identifier} / {addresses[key]}')
+                    addresses[key] = identifier
             for action in device['actions'].values():
                 command = {**device['mapping'], **action.get('mapping', {})}
                 feedback = action['feedback_mapping']
                 field = 'address' if device['protocol'] == 'Modbus' else 'object_reference'
-                if command.get(field) == feedback.get(field):
+                if device['protocol'] == 'Modbus':
+                    command_space = 'coil' if command.get('function_code') in {1, 5} else 'register'
+                    feedback_space = 'coil' if feedback.get('function_code') in {1, 5} else 'register'
+                    overlap = (command.get('slave_id') == feedback.get('slave_id')
+                               and command_space == feedback_space
+                               and bool(set(_modbus_range(command)) & set(_modbus_range(feedback))))
+                else:
+                    overlap = command.get(field) == feedback.get(field)
+                if overlap:
                     raise ValueError('命令点与反馈点必须分开')
         for scenario in self.scenarios.values():
             ids = scenario['device_ids']

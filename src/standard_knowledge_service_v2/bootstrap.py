@@ -65,6 +65,15 @@ def build_application(config_path: str | Path) -> Application:
             raise ValueError("原库和补充库的条款内部标识发生冲突")
         retriever.repository.extend(supplemental.units)
         retriever.refresh_index()
+    from .data_ingestion.local_clauses import load_units
+    try:
+        local_units = load_units()
+        if local_units:
+            retriever.repository.extend(local_units)
+            retriever.refresh_index()
+            progress(f"本地导入条款加载完成：{len(local_units)}条")
+    except (OSError, ValueError, TypeError) as exc:
+        progress(f"本地导入条款未加载，原文件保留：{exc}")
     progress(f"条款加载完成，共 {len(retriever.repository.units)} 条")
     audit_store = JsonlAuditStore(config.data.audit_store, config.audit.retention_days)
     if config.llm.backend == "model_api":

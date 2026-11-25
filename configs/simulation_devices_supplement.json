@@ -99,7 +99,13 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "simulation_effects": {
+            "state": {
+              "running": false,
+              "active_power_kw": 0
+            }
+          }
         },
         "alarm": {
           "function": "battery_pcs_alarm",
@@ -217,7 +223,96 @@
           "source_scope": "synthetic_test_fixture_pending_source_binding",
           "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
-      }
+      },
+      "state_fields": {
+        "running": {
+          "display_name": "运行状态",
+          "unit": "",
+          "type": "boolean",
+          "source": "synthetic_test_fixture"
+        },
+        "alarm_active": {
+          "display_name": "告警状态",
+          "unit": "",
+          "type": "boolean",
+          "source": "synthetic_test_fixture"
+        },
+        "active_power_kw": {
+          "display_name": "有功出力",
+          "unit": "kW",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "power_limit_kw": {
+          "display_name": "放电功率上限",
+          "unit": "kW",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "start_permission": {
+          "display_name": "启动许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "stop_permission": {
+          "display_name": "停止许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "power_available": {
+          "display_name": "电源可用",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "maintenance_lockout": {
+          "display_name": "检修闭锁",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "device_fault": {
+          "display_name": "设备故障",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "alarm_required": {
+          "display_name": "模拟告警请求",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "grid_connected": {
+          "display_name": "并网状态",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "bms_permission": {
+          "display_name": "BMS许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "soc_percent": {
+          "display_name": "电池荷电状态",
+          "unit": "%",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "control_permission": {
+          "display_name": "控制许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "fixture_reference": "新能源并网场景指令问题信息.docx；保留统一初始状态，各题执行前/反馈状态见问题清单。"
     },
     {
       "device_id": "SIM-IEC-CAPACITOR-01",
@@ -528,7 +623,13 @@
           },
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding",
-          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
+          "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。",
+          "simulation_effects": {
+            "state": {
+              "running": false,
+              "active_power_kw": 0
+            }
+          }
         },
         "alarm": {
           "function": "battery_pcs_alarm",
@@ -654,7 +755,96 @@
           "source_scope": "synthetic_test_fixture_pending_source_binding",
           "source_note": "人工编制的软件测试模板，条件/范围/点位均非真实标准要求；待核验条款来源。"
         }
-      }
+      },
+      "state_fields": {
+        "running": {
+          "display_name": "运行状态",
+          "unit": "",
+          "type": "boolean",
+          "source": "synthetic_test_fixture"
+        },
+        "alarm_active": {
+          "display_name": "告警状态",
+          "unit": "",
+          "type": "boolean",
+          "source": "synthetic_test_fixture"
+        },
+        "active_power_kw": {
+          "display_name": "有功出力",
+          "unit": "kW",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "power_limit_kw": {
+          "display_name": "放电功率上限",
+          "unit": "kW",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "start_permission": {
+          "display_name": "启动许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "stop_permission": {
+          "display_name": "停止许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "power_available": {
+          "display_name": "电源可用",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "maintenance_lockout": {
+          "display_name": "检修闭锁",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "device_fault": {
+          "display_name": "设备故障",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "alarm_required": {
+          "display_name": "模拟告警请求",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "grid_connected": {
+          "display_name": "并网状态",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "bms_permission": {
+          "display_name": "BMS许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "soc_percent": {
+          "display_name": "电池荷电状态",
+          "unit": "%",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "control_permission": {
+          "display_name": "控制许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "fixture_reference": "新能源并网场景指令问题信息.docx；保留统一初始状态，各题执行前/反馈状态见问题清单。"
     },
     {
       "device_id": "SIM-MB-CAPACITOR-01",

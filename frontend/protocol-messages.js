@@ -49,14 +49,15 @@
     return `<label>${esc(f.label)}${input}</label>`;
   }
   async function request(path, payload, base) {
-    const response = await fetch(base + path, payload === undefined ? {} : {
+    const response = await fetch(base + path, {signal:AbortSignal.timeout(30000), ...(payload === undefined ? {} : {
       method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
-    });
+    })});
     const value = await response.json();
     if (!response.ok) throw Error(typeof value.detail === 'string' ? value.detail : '报文参数校验未通过');
     return value;
   }
   function renderForm(root, state, live) {
+    state.root=root;
     root.innerHTML = `<h3>生成完整协议请求包</h3><p class="hint">自动读取模拟设备配置。只生成和下载，不连接、不发送；后续阶段需要取得对端成功响应后才能继续。</p>`;
     const p = state.parameters;
     if (!p) {
@@ -68,7 +69,7 @@
           const parameters = await request(state.path + '/message-parameters?expected_version=' + state.version, undefined, state.base);
           if (live()) { state.parameters = parameters; state.values = {...parameters.defaults}; }
         } catch (e) { if (live()) state.error = e.message; }
-        finally { state.busy = false; if (live()) render(); }
+        finally { state.busy = false; if (live() && state.root?.isConnected) renderForm(state.root,state,live); }
       };
       root.querySelector('[data-load]').onclick = load;
       if (!state.attempted && live()) { state.attempted = true; queueMicrotask(load); }
@@ -127,7 +128,7 @@
           for (const key of p.managed_fields || []) state.values[key] = packet.parameters[key];
         }
       } catch (e) { if (live() && revision === state.revision) state.error = e.message; }
-      finally { state.busy = false; if (live()) render(); }
+      finally { state.busy = false; if (live() && state.root?.isConnected) renderForm(state.root,state,live); }
     };
     showPacket();
   }

@@ -37,10 +37,10 @@ JSON字段：
   "actions": ["标准动作码"],
   "constraints": [{"parameter": "参数", "operator": "比较符", "value": "数值或原文值", "unit": "单位", "condition": "适用条件"}],
   "standard_refs": [{"standard_id": "标准编号", "version": "版本"}],
-  "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "context_kind":"none|background|precondition|uncertain", "operation_type": "操作类型", "query_kind": "device_status|device_capability|device_readiness|standard_query|assessment|operation|other"},
+  "scenario": {"scenario_type": "场景", "device_type": "设备", "voltage_level": "电压等级", "operating_condition": "运行工况", "context_kind":"none|background|precondition|uncertain", "operation_type": "操作类型", "query_kind": "device_status|device_capability|device_readiness|standard_query|assessment|operation|other", "instruction_basis":"direct|clauses|none"},
   "keywords": ["检索关键词"],
   "retrieval_terms": ["标准问题的核心设备/物理量/主题规范称呼；不列整个业务场景的无关主题"],
-  "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "parameter_evidence":[{"parameter":"动作参数名","value_text":"原始数值片段","unit_text":"原始单位或空串","source_text":"原文目标赋值片段","role":"target"}], "condition_evidence":[], "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "clarification":"需澄清的问题或空字符串"}],
+  "operations": [{"device_id":"目录唯一编号", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "action":"该设备目录动作码", "parameters":{}, "parameter_evidence":[{"parameter":"动作参数名","value_text":"原始数值片段","unit_text":"原始单位或空串","source_text":"原文目标赋值片段","role":"target"}], "condition_evidence":[], "source_text":"完整保留本项诉求的原文片段", "negated":false, "conditions":[], "order":null, "order_evidence":"", "clarification":"需澄清的问题或空字符串"}],
   "queries": [{"device_id":"目录唯一编号，标准咨询可留空", "target_text":"原文目标片段", "owner_id":"所属主设备编号或空字符串", "query_kind":"device_status|device_capability|device_readiness|standard_query|assessment|other", "requested_action":"仅device_readiness必填的待判断目录动作码", "requested_fields":["device_status所问目录字段；整体状态或非状态查询填空列表"], "source_text":"本项原文", "clarification":"需澄清的问题或空字符串"}],
   "context_facts": [{"device_id":"目录编号", "parameter":"目录事实字段名或原参数名", "operator":"比较符", "value":0, "unit":"原单位", "value_text":"原始数字或状态词，不含单位", "unit_text":"原始单位或空字符串", "usage":"current|reference", "source_text":"包含该事实的最短完整原文，保留设备身份"}],
   "prohibitions": [{"device_id":"目录编号", "target_text":"原文目标", "owner_id":"所属编号或空串", "action":"被禁止动作码", "source_text":"原文禁止片段", "clarification":"问题或空串"}],
@@ -96,7 +96,7 @@ request_controls只记录对整次请求无条件生效的控制限制：“只�
 目录business_parameters.action_parameters也是本次用户明确补充的动作目标，可以填写到对应唯一操作的parameters；只从该补充或原文取值，不推测目标。原文未写数值而业务参数给出时不因缺少正文数值而澄清。若二者冲突须clarification，不选择其中一个。source_text仍引用实际提问原文，不把JSON改写为原文证据。
 承接同一设备的多步请求，每步source_text可以重复采用包含明确设备及所属关系的完整原句；不能只引用“再升一档”等孤立后半句而让target_text/owner_id失去原文依据。target_text引用完整source_text中的明确设备跨度，保留后续承接和失败停止要求。完整原文中的任务性结尾也必须被来源跨度覆盖，不要丢掉“请给出方案”等诉求；可用完整原句作为各项source_text，不硬删未覆盖内容。
 目录actions的condition/constraints只描述已有可核验字段；用户明确提出的conditions应使用这些字段的安全比较表达式，例如device_fault == 0、maintenance_lockout == 0、power_available == 1。不能因模板已有条件就声称用户提出该条件，不得补造用户未提及的条件、字段或授权；无法准确表达的条件保留原文以便后端明确阻断。
-明确的“先…再…”顺序使用每项order=1、2、…、N的连续整数；无顺序时null。每步source_text完整保留该步限制；只有前步真实成功反馈后才能预览下一步，并逐步确认。分支、延时和未知授权条件不能伪装成可执行比较表达式。
+明确的执行依赖才使用每项order=1、2、…、N的连续整数；每项order_evidence必须逐字引用本次原文中建立先后依赖的完整关系片段，可多项共用同一句。逐项列举、逗号连接、列表编号、“这几项指令”和生成清单的排列均不是执行依赖，order必须为null，order_evidence为空字符串；不能从操作出现顺序推导执行先后。无依据时不得新增order；真实依赖不确定时保留clarification，不得静默删掉依赖。每步source_text完整保留该步限制；只有前步真实成功反馈后才能预览下一步，并逐步确认。分支、延时和未知授权条件不能伪装成可执行比较表达式。
 “从当前档位升一档”是动作raise及其正常状态语义，不应写入conditions；“成功后再执行下一步”的真实反馈依赖由order承载，不当作额外自然语言条件。仅明确的外部前提才列入conditions，不压缩更复杂分支为普通order步骤。
 owner_id在用户说出所属关系时填写对应主设备，直接用设备自身编号或名称时可留空。target_text必须引用原文目标，不能自造新名称。
 并列共享后缀如“启动主变1和主变2各自的冷却风机”时，两项target_text都引用该完整原文跨度，分别用owner_id关联主变1、主变2；不要改写成原文不存在的连续词组。
@@ -285,6 +285,8 @@ def validate_semantic_plan(data: dict[str, Any]) -> list[str]:
                 if (not isinstance(row.get('conditions'), list)
                         or any(not isinstance(value, str) for value in row.get('conditions', []))):
                     errors.append(f'{prefix}缺少条件列表')
+                if 'order_evidence' in row and not isinstance(row['order_evidence'], str):
+                    errors.append(f'{prefix}.order_evidence格式无效')
                 if 'order' not in row or row['order'] is not None and type(row['order']) not in (str, int):
                     errors.append(f'{prefix}缺少顺序标记')
     return errors

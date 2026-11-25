@@ -14,6 +14,8 @@ from standard_knowledge_service_v2.instruction_engine.simulation_control import 
 from standard_knowledge_service_v2.instruction_engine.simulation_runtime import SimulationRuntime
 
 
+from wire_fixtures import import_wires, iec_wire
+
 def test_import_api_validates_then_publishes_whole_batch_and_loads_it_after_restart(tmp_path, monkeypatch):
     path = tmp_path / 'imported_devices.json'
     monkeypatch.setattr(device_import, 'IMPORT_PATH', path)
@@ -30,13 +32,14 @@ def test_import_api_validates_then_publishes_whole_batch_and_loads_it_after_rest
     register_simulation_routes(app, SimpleNamespace(facade=SimpleNamespace(simulation_runtime=runtime, simulation_session=session)))
     api = TestClient(app)
     base = '/simulation/device-import'
-    normal = api.get(base).json()['sample']
+    normal = import_wires(api.get(base).json()['sample'])
     assert api.post(base + '/validate', json={'devices': [normal]},
                     headers={'origin': 'https://unrelated.example'}).status_code == 403
     assert api.post(base + '/validate', content=b' ' * (device_import.MAX_FILE_SIZE + 1)).status_code == 413
     locked = deepcopy(normal)
     locked.update(device_id='SIM-IMPORT-FAN-02', display_name='测试闭锁风机')
     locked['initial_values']['maintenance_lockout'] = True
+    locked = import_wires(locked)
 
     duplicate = api.post(base + '/validate', json={'devices': [normal, normal]}).json()
     assert duplicate['status'] == 'invalid' and duplicate['errors'][0]['row'] == 2
@@ -54,19 +57,17 @@ def test_import_api_validates_then_publishes_whole_batch_and_loads_it_after_rest
     assert api.post(base + '/publish', json=request).json()['status'] == 'published'
     assert api.post(base + '/publish', json=request).json()['status'] == 'invalid'
     assert path.exists()
-    updated = api.get('/simulation/sessions/' + before['session_id']).json()
-    assert updated['session_id'] == before['session_id'] and updated['version'] == before['version'] + 1
-    devices = {device['device_id']: device for device in updated['devices']}
-    assert all(devices[device['device_id']] == device for device in before['devices'])
-    assert devices['SIM-IEC-FAN-01']['state']['running'] is True
-    for snapshot in (updated, runtime.snapshot(scoped['session_id'])):
-        assert {row['device_id'] for row in rows} <= {device['device_id'] for device in snapshot['devices']}
-    assert runtime.snapshot(isolated['session_id'])['devices'] == isolated['devices']
+    for old in (before, scoped, isolated):
+        with pytest.raises(KeyError):
+            runtime.snapshot(old['session_id'])
+    updated = runtime.create_session('all_devices')
+    assert {row['device_id'] for row in rows} <= {d['device_id'] for d in updated['devices']}
     catalog = api.get('/simulation/catalog').json()
     scenario = next(item for item in catalog['scenarios'] if item['scenario_id'] == 'substation_maintenance')
     assert {row['device_id'] for row in rows} <= set(scenario['device_ids'])
     assert runtime.catalog.devices[normal['device_id']]['aliases'] == [normal['display_name']]
-    assert runtime.preview(before['session_id'], normal['device_id'], 'start', {})['status'] == 'generated'
+    with pytest.raises(KeyError):
+        runtime.preview(before['session_id'], normal['device_id'], 'start', {})
     fresh = runtime.create_session('all_devices')['session_id']
     assert runtime.preview(fresh, normal['device_id'], 'start', {})['status'] == 'generated'
     assert runtime.preview(fresh, locked['device_id'], 'start', {})['status'] == 'blocked'
@@ -79,7 +80,7 @@ def test_publication_failure_rolls_back_and_unreadable_store_keeps_builtin_devic
     monkeypatch.setattr(device_import, 'IMPORT_PATH', path)
     session = SimulationControlSession()
     runtime = SimulationRuntime(SimulationCatalog(legacy_service=session.service))
-    row = device_import.options(session.service)['sample']
+    row = import_wires(device_import.options(session.service)['sample'])
     preview = device_import.process(session, runtime, [row])
 
     def fail(_catalog):
@@ -129,6 +130,7 @@ def test_manually_configured_dispatch_device_is_saved_and_available_to_queries(t
                          {'field': 'maintenance_lockout', 'operator': '==', 'value': False},
                      ]}],
     }
+    row['wire'] = iec_wire('IMPORT_DISPATCH_02', 'active_power_mw', action='adjust_active_power', numeric=True)
     invalid = deepcopy(row)
     invalid['fields'][0]['value'] = '100'
     assert api.post(base + '/validate', json={'devices': [invalid]}).json()['status'] == 'invalid'
@@ -144,7 +146,9 @@ def test_manually_configured_dispatch_device_is_saved_and_available_to_queries(t
     assert path.exists()
     assert identifier in runtime.catalog.scenarios['power_grid_operation']['device_ids']
     assert runtime.catalog.devices[identifier]['display_name'] == row['display_name']
-    sid = snapshot['session_id']
+    with pytest.raises(KeyError):
+        runtime.snapshot(snapshot['session_id'])
+    sid = runtime.create_session('all_devices')['session_id']
     query = '请把模拟调度机组2的有功功率调整到115 MW'
     request = SimpleNamespace(query=query, parameters={'simulation_mode': True, 'simulation_session_id': sid,
                                                         'simulation_scenario_id': 'power_grid_operation'})

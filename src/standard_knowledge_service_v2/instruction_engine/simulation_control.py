@@ -15,6 +15,8 @@ class SimulationControlSession:
         # A damaged/obsolete user row is quarantined and reported; it must not
         # make the whole built-in simulation catalogue unavailable.
         load_custom(self.service, strict=False)
+        from .customization import load_customization
+        load_customization(self.service)
         self.template_load_errors = list(getattr(self.service, 'template_load_errors', []))
         self.facts = {key: deepcopy(d.get('runtime_facts', {})) for key, d in self.service.devices.items()}
 

@@ -3,6 +3,7 @@
   let sessionId = '', submitted = '', lastResult = null, revision = 0;
   const sessions = new Map(), creating = new Map(), catalogs = new Map();
   let validPreview = false, executing = false, stateRequest = 0;
+  const configurationStale = () => window.configurationEvents?.isStale() === true;
   const stateVersions = new Map();
   const api = () => document.getElementById('api').value;
   const scenario = () => document.getElementById('scenario').value || 'all_devices';
@@ -36,9 +37,10 @@
       && Number.isInteger(preview.expected_version) ? preview : null;
   };
   async function request(path, payload, base = api()) {
-    const response = await fetch(base + path, payload === undefined ? {cache: 'no-store'} : {
+    if(configurationStale())throw Error('配置已更新，请手动刷新后重新问答。');
+    const response = await fetch(base + path, {signal:AbortSignal.timeout(30000),...(payload === undefined ? {cache: 'no-store'} : {
       method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)
-    });
+    })});
     const value = await response.json();
     if (!response.ok) { const error = Error(typeof value.detail === 'string' ? value.detail : '模拟请求未完成'); error.status = response.status; throw error; }
     return value;
@@ -88,9 +90,11 @@
   }
   window.originalSimulation = {
     invalidate,
+    configurationChanged() { revision++;stateRequest++;invalidate();document.getElementById('status').textContent='配置已更新，请手动刷新'; },
     context: signature,
-    isPreviewCurrent: () => validPreview && !executing && result === lastResult && signature() === submitted,
+    isPreviewCurrent: () => !configurationStale() && validPreview && !executing && result === lastResult && signature() === submitted,
     async prepare(parameters) {
+      await window.configurationEvents?.check(api());
       invalidate();
       submitted = signature();
       if (!parameters.simulation_mode) return parameters;
@@ -136,6 +140,7 @@
     oil_pump: '油泵', disconnector: '隔离开关', earthing_switch: '接地开关',
     tap_changer: '有载调压装置', inverter: '逆变器', pole_controller: '换流阀控制器'};
   loadDeviceState = async function () {
+    if(configurationStale())return;
     const current = revision, key = sessionKey(), base = api(), sequence = ++stateRequest;
     const panel = document.getElementById('device-state');
     const isCurrent = () => current === revision && key === sessionKey() && sequence === stateRequest;
@@ -195,7 +200,7 @@
       + rows.map((row, index) => {
         const preview = row.preview, candidate = preview?.candidate;
         const state = row.execution ? {succeeded: '已执行', blocked: '执行被阻止', failed: '执行失败', unknown: '执行结果未确认'}[row.execution.status]
-          : usable(preview) ? '待确认' : '已阻断';
+          : usable(preview) ? '可预览 · 待确认' : '受阻/待澄清';
         return `<section class="rule" style="margin:16px 0;padding:18px;border:1px solid #dbe4e1;border-radius:6px"><h3>${index + 1}. ${esc(row.display_name)} · ${esc(state || '请核对反馈')}</h3><p><code>${esc(row.device_id)}</code> · ${esc(row.protocol)} · ${esc(row.action_name || row.action || '无匹配动作')}</p>`
           + (row.source_query ? `<p class="hint">对应请求：${esc(row.source_query)}</p>` : '')
           + `<p>${esc(row.execution?.explanation || preview?.explanation || '请核对预览')}</p><p>动作参数：${Object.keys(row.parameters || {}).length ? esc(Object.values(row.parameters).map(value => String(value) + (row.parameter_unit || candidate?.payload?.unit || '')).join('、')) : '无需额外参数'}</p>`
@@ -218,7 +223,11 @@
           // Successful or blocked commands are immutable. Only pending items get
           // a NEW preview against current state, never an automatic execution.
           if (result === currentResult && signature() === current) {
-            for (const pending of rows.filter(item => !item.execution && usable(item.preview))) {
+            const pendingRows=rows.filter(item => !item.execution && usable(item.preview));
+            let next=0;
+            const refresh=async()=>{while(next<pendingRows.length){
+              if(result!==currentResult||signature()!==current||configurationStale())return;
+              const pending=pendingRows[next++];
               try {
                 pending.preview = await request('/simulation/sessions/' + encodeURIComponent(data.simulation_session_id) + '/preview',
                   {device_id: pending.device_id, action: pending.action, parameters: pending.parameters}, base);
@@ -226,8 +235,9 @@
               } catch (error) {
                 pending.preview = {status: 'blocked', explanation: '重新校验未完成：' + error.message};
               }
-            }
-            await loadDeviceState();
+            }};
+            await Promise.all(Array.from({length:Math.min(3,pendingRows.length)},refresh));
+            if(result===currentResult&&signature()===current)void loadDeviceState();
           }
         } catch (error) {
           row.execution = {status: 'unknown', explanation: '请求结果未确认，请查询设备状态：' + error.message};
@@ -236,7 +246,7 @@
         } finally {
           data.answer = {...data.answer, text: batchProgress(data)};
           executing = false;
-          document.getElementById('run').disabled = false;
+          document.getElementById('run').disabled = configurationStale();
           if (result === currentResult) render();
         }
       };
@@ -253,7 +263,7 @@
       + plan.steps.map((row, index) => {
         const preview = row.preview, candidate = preview?.candidate;
         const state = row.execution ? {succeeded:'已取得成功反馈',failed:'执行失败',blocked:'执行被阻止',unknown:'结果未确认'}[row.execution.status]
-          : usable(preview) ? '等待本步确认' : index + 1 === plan.next_step && !stopped ? '等待预览' : '尚未开放';
+          : usable(preview) ? '等待本步确认' : preview && !usable(preview) ? '受阻/待澄清' : index + 1 === plan.next_step && !stopped ? '步骤草案 · 等待预览' : '步骤草案 · 尚未开放';
         return `<section class="rule" style="margin:16px 0;padding:18px;border:1px solid #dbe4e1;border-radius:6px"><h3>${index + 1}. ${esc(row.display_name || row.device_id)} · ${esc(state || '')}</h3>`
           + `<p><code>${esc(row.device_id)}</code> · ${esc(row.action_name || row.action)}</p>`
           + (row.source_query ? `<p class="hint">对应请求：${esc(row.source_query)}</p>` : '')
@@ -283,7 +293,7 @@
         const latest = await request(route,undefined,base);
         if (result === currentResult && signature() === current) {
           data.simulation_plan = latest;
-          await loadDeviceState();
+          void loadDeviceState();
         }
       } catch (error) {
         if (execute) row.execution = {status:'unknown',explanation:'请求结果未确认，请查询设备状态：' + error.message};
@@ -299,7 +309,7 @@
           : `当前开放第${latest.next_step}步，请先预览并单独确认；后续步骤不会自动执行。`;
         data.answer = {...data.answer,text};
         executing = false;
-        document.getElementById('run').disabled = false;
+        document.getElementById('run').disabled = configurationStale();
         if (result === currentResult) render();
       }
     }
@@ -319,7 +329,7 @@
       lastResult = result;
       validPreview = (Boolean(selectedPreview()) || result?.data?.simulation_batch?.items?.some(row => usable(row.preview))
         || result?.data?.simulation_plan?.status === 'active')
-        && signature() === submitted;
+        && !configurationStale() && signature() === submitted;
     }
     if (result?.data?.simulation_preview && result.data.answer?.text) {
       result.data.answer.text = result.data.answer.text.replace('模拟工作台', '“操作建议”');
@@ -328,9 +338,15 @@
     const data = result?.data;
     if (data?.simulation_plan) {
       const plan = data.simulation_plan;
+      const current = plan.steps.filter((row, index) => !row.execution && index + 1 === plan.next_step);
+      const ready = plan.status === 'active' && !plan.execution_unknown ? current.filter(row => usable(row.preview)).length : 0;
+      const blocked = plan.steps.filter(row => !row.execution && row.preview && !usable(row.preview)).length;
+      const drafts = plan.steps.filter(row => !row.execution).length - ready - blocked;
+      const progress = ready + '项可预览，' + blocked + '项受阻/待澄清，' + drafts + '项步骤草案待开放';
+      if (tab === 'summary') document.getElementById('output').insertAdjacentHTML('afterbegin', '<div class="notice" data-simulation-progress>顺序计划共' + plan.steps.length + '项步骤草案：' + esc(progress) + '。' + (plan.steps.some(row => row.execution) ? '已确认步骤的模拟反馈见“操作建议”。' : '生成指令未执行。') + '后续步骤须在前一步成功反馈后重新预览并逐步确认。</div>');
       document.getElementById('status').textContent = plan.execution_unknown ? '执行结果未确认'
-        : plan.status === 'completed' ? '计划模拟完成' : plan.status === 'stopped' ? '计划已停止' : '逐步确认计划';
-      document.getElementById('status').className = 'status ' + (plan.status === 'stopped' ? 'warn' : 'ok');
+        : plan.status === 'completed' ? '计划模拟完成' : plan.status === 'stopped' ? '计划已停止' : progress;
+      document.getElementById('status').className = 'status ' + (plan.status === 'stopped' || plan.execution_unknown || blocked || !ready && plan.status !== 'completed' ? 'warn' : 'ok');
       if (tab === 'instruction') { renderPlan(data); return; }
     }
     if (data?.simulation_batch) {
@@ -339,10 +355,10 @@
       const status = data.simulation_batch.execution_unknown ? '执行结果未确认'
         : rows.every(row => row.execution?.status === 'succeeded') ? '模拟下发完成'
         : rows.some(row => row.execution) ? '部分指令已处理'
-        : rows.every(row => !usable(row.preview)) ? '指令均被阻止'
-        : blocked ? '部分指令可用' : '指令已生成';
+        : `${rows.filter(row => usable(row.preview)).length}项可预览，${rows.filter(row => !usable(row.preview)).length}项受阻/待澄清`;
       document.getElementById('status').textContent = status;
       document.getElementById('status').className = 'status ' + (blocked || data.simulation_batch.execution_unknown ? 'warn' : 'ok');
+      if (tab === 'summary') document.getElementById('output').insertAdjacentHTML('afterbegin', `<div class="notice" data-simulation-progress>${esc(status)}。${rows.some(row => row.execution) ? '未确认的指令不会自动执行。' : '生成指令未执行。'}各项原因及预览请查看“操作建议”。</div>`);
     }
     if (data?.simulation_execution?.status === 'unknown') {
       document.getElementById('status').textContent = '执行结果未确认';
@@ -357,7 +373,7 @@
     const scope = document.querySelector('#output > .kv dd:last-child');
     if (scope) scope.textContent = data.simulation_execution ? '模拟执行结果；真实设备下发关闭' : '仅预览；尚未模拟下发';
     document.getElementById('output').insertAdjacentHTML('beforeend',
-      `<div class="section"><button id="simulate-execute" class="primary" ${!preview || !validPreview || executing || data.simulation_execution ? 'disabled' : ''}>${executing ? '正在模拟下发…' : '模拟下发'}</button><p id="simulate-hint" class="hint">${data.simulation_execution ? '本条指令已处理，再次操作请重新分析。' : validPreview ? '仅点击此按钮才更新当前模拟设备状态。' : '请重新分析，获取当前输入和状态对应的有效预览。'}</p></div>`
+      `<div class="section"><button id="simulate-execute" class="primary" ${!preview || !validPreview || executing || data.simulation_execution ? 'disabled' : ''}>${executing ? '正在模拟下发…' : '模拟下发'}</button><p id="simulate-hint" class="hint">${data.simulation_execution ? '本条指令已处理，再次操作请重新分析。' : validPreview ? '仅点击此按钮才执行模拟动作。' + (data.simulation_inputs?.applied?.length ? '本次补充的当前值已用于更新模拟会话。' : '生成预览不执行动作。') : '请重新分析，获取当前输入和状态对应的有效预览。'}</p></div>`
       + (data.simulation_execution ? feedbackHtml(data.simulation_execution) : ''));
     document.getElementById('simulate-execute').onclick = async () => {
       if (executing || !validPreview || !preview || signature() !== submitted || result !== lastResult) return;
@@ -372,13 +388,13 @@
         });
         data.simulation_execution = execution;
         data.answer = {...data.answer, text: (execution.status === 'succeeded' ? '模拟下发已完成。' : '模拟下发未完成。') + execution.explanation};
-        await loadDeviceState();
+        void loadDeviceState();
       } catch (error) {
         data.simulation_execution = {status: 'unknown', explanation: '执行结果未确认，请查询当前状态并重新分析：' + error.message};
         data.answer = {...data.answer, text: data.simulation_execution.explanation};
       } finally {
         executing = false;
-        document.getElementById('run').disabled = false;
+        document.getElementById('run').disabled = configurationStale();
         if (result === currentResult) render();
       }
     };

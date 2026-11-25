@@ -49,7 +49,8 @@ def catalog_context(pipeline, request):
             'devices': [{key: deepcopy(device.get(key, '')) for key in
             ('device_id', 'display_name', 'device_type', 'aliases', 'business_scenario')}
             | {'actions': {action: {key: deepcopy(template.get(key)) for key in
-                ('display_name', 'parameter', 'unit', 'minimum', 'maximum', 'condition', 'constraints')}
+                ('display_name', 'parameter', 'parameter_label', 'parameter_type', 'unit', 'minimum', 'maximum',
+                 'value_source', 'value', 'result_field', 'simulation_effects', 'condition', 'constraints')}
                 for action, template in device.get('actions', {}).items()},
                'fact_fields': sorted(set(device.get('initial_state', {})) | set(device.get('runtime_facts', {}))),
                'fact_schema': fact_schema(device),
@@ -66,7 +67,8 @@ def _mentions(text, devices, *, nested=False):
 
 
 _ROLES = {'cooling_fan': r'风机|风扇', 'oil_pump': r'油泵', 'tap_changer': r'调压|档位',
-          'breaker': r'断路器', 'disconnector': r'隔离开关', 'earthing_switch': r'接地开关'}
+          'breaker': r'断路器', 'disconnector': r'隔离开关', 'earthing_switch': r'接地开关',
+          'inverter': r'逆变器', 'battery_pcs': r'储能(?:变流器)?'}
 
 
 def _explicit_targets(query, devices, profile):
@@ -171,7 +173,7 @@ def bind_target(item, query, devices, profile, *, previous=None, conversation_co
     direct_relation = (owner and role == device['device_type']
                        and owner in _mentions(source, devices, nested=True))
     if key not in mentioned and not direct_relation:
-        referenced = re.search(r'其|它|该(?:设备|冷却风机|风机|油泵|断路器|开关|装置)|刚才|另(?:一)?台|另一个', target)
+        referenced = role is not None or re.search(r'其|它|该(?:设备|冷却风机|风机|油泵|断路器|开关|装置)|刚才|另(?:一)?台|另一个', target)
         contextual = set()
         if referenced:
             for message in reversed(conversation_context):
@@ -388,6 +390,10 @@ def validate_operation_rows(pipeline, request, snapshot, devices, profile, under
         return blocked('本次请求仅限分析，不生成操作指令或计划预览。')
     if not rows:
         return blocked('未识别到明确操作，请说明设备和所需动作。')
+    from .operation_review import order_evidence_error
+    provenance_error = order_evidence_error(rows, request.query)
+    if provenance_error:
+        return blocked(provenance_error)
     orders = [item.get('order') for item in rows]
     feedback_sequence = (allow_restrictions and 2 <= len(rows) <= 8
         and all(item.get('negated') is False for item in rows)

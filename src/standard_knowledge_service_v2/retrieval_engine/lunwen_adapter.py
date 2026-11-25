@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from hashlib import sha256
 from collections import Counter
+from copy import copy
 from pathlib import Path
 import re
 from time import perf_counter
@@ -47,6 +48,17 @@ class LocalLunwenRetrievalAdapter:
                 self._rows.append((rule, unit, rule_text, rule_normalized, tokens(rule_normalized),
                                    unit_text, unit_normalized, tokens(unit_normalized)))
                 self._applicability[rule.rule_id] = source_applicability(rule, unit)
+
+    def with_units(self, additions):
+        delta = LocalLunwenRetrievalAdapter(JsonClauseRepository(additions), self.linker.threshold)
+        result = copy(self)
+        result.repository = JsonClauseRepository([*self.repository.units, *additions])
+        result._entities = [*self._entities, *delta._entities]
+        result._rows = [*self._rows, *delta._rows]
+        result._applicability = {**self._applicability, **delta._applicability}
+        result.linker = self.linker.extended(delta._entities)
+        result.last_trace = None
+        return result
 
     @classmethod
     def from_dataset(cls, directory: Path, limit: int | None = None, threshold: float = 0.3) -> "LocalLunwenRetrievalAdapter":

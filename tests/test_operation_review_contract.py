@@ -60,9 +60,12 @@ def test_review_packet_preserves_full_original_data_without_shared_mutation(kind
     context = [{'role': 'user', 'content': '原始历史内容'}]
     query = '  启动风机1；将调压装置2设为4档。\n'
     actual = reviewer().review_packet(query, understanding, catalog, context)
-    assert set(actual) == {'query', 'operations', 'queries', 'catalog', 'conversation_context'}
+    assert set(actual) == {'query', 'operations', 'queries', 'catalog', 'conversation_context',
+                           'context_facts', 'scenario', 'historical_facts', 'prohibitions', 'normalization_notes'}
     assert actual == {'query': query, 'operations': rows, 'queries': queries,
-                      'catalog': catalog, 'conversation_context': context}
+                      'catalog': catalog, 'conversation_context': context,
+                      'context_facts': [], 'scenario': [], 'historical_facts': [],
+                      'prohibitions': [], 'normalization_notes': []}
     actual['operations'][1]['parameters']['tap_position'] = 9
     actual['queries'][0]['source_text'] = 'changed'
     actual['catalog']['devices'][0]['actions'].clear()
@@ -144,7 +147,12 @@ def test_parameter_comparison_does_not_equate_booleans_and_numbers(original, pro
 def test_rejected_missing_or_restricted_request_never_allows_preview(field, value):
     raw = approval()
     raw[field] = value
-    assert reviewer().validate_review(raw, operations())['status'] == 'blocked'
+    result = reviewer().validate_review(raw, operations())
+    if field == 'approved' and value is False:
+        assert result['status'] == 'failed'
+        assert result['reason_code'] == 'inconsistent_review'
+    else:
+        assert result['status'] == 'blocked'
 
 
 @pytest.mark.parametrize('scope,field', [
@@ -284,6 +292,7 @@ def test_review_results_are_not_shared_across_concurrent_requests():
             raw = approval(rows)
             if rows[0]['action'] == 'stop':
                 raw.update(approved=False, reason='不符合原文')
+                raw['items'][0].update(matches_request=False, reason='不符合原文')
             return json.dumps(raw)
     first = packet([operations()[0]])
     second = deepcopy(first)

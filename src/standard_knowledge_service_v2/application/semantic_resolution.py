@@ -34,6 +34,13 @@ def normalize_plan(understanding, query, catalog, business_parameters=None, conv
         else:
             positive.append(operation)
     result.operations = positive
+    from .operation_review import order_evidence_error
+    for operation in positive:
+        if isinstance(operation.get('order_evidence'), str):
+            operation['order_evidence'] = operation['order_evidence'].strip()
+        error = order_evidence_error([operation], query)
+        if error and not operation.get('clarification'):
+            operation['clarification'] = error
     supplied = (business_parameters or {}).get('action_parameters', {})
     supplied = supplied if isinstance(supplied, dict) else {}
     for operation in positive:

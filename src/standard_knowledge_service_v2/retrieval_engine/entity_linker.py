@@ -1,4 +1,5 @@
 from __future__ import annotations
+from copy import copy
 
 from ..domain import Entity
 from .models import EntityHit
@@ -24,6 +25,18 @@ class EntityLinker:
         for name in self._name_entities:
             for token in tokens(name):
                 self._token_names.setdefault(token, set()).add(name)
+
+    def extended(self, candidates: list[Entity]):
+        delta = EntityLinker(self.threshold);delta.prepare(candidates)
+        result = copy(self)
+        result._prepared = {**self._prepared, **delta._prepared}
+        result._name_entities = dict(self._name_entities)
+        for key, values in delta._name_entities.items():
+            result._name_entities[key] = [*self._name_entities.get(key, []), *values]
+        result._token_names = dict(self._token_names)
+        for key, values in delta._token_names.items():
+            result._token_names[key] = self._token_names.get(key, set()) | values
+        return result
 
     def _shortlist(self, name: str, candidates: list[Entity]) -> list[Entity]:
         if not self._name_entities:

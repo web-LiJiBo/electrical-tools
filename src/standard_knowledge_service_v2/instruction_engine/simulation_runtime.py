@@ -68,6 +68,14 @@ class SimulationRuntime:
         self._sessions = {}
         self._lock = RLock()
         self._event_path = Path(event_path) if event_path is not None else None
+        self.configuration_revision = uuid4().hex
+
+    def invalidate_sessions(self):
+        """A successful configuration import requires new questions and worlds."""
+        with self._lock:
+            self._sessions.clear()
+            self.configuration_revision = uuid4().hex
+            return self.configuration_revision
 
     def refresh_catalog(self, catalog):
         """Publish catalog changes without resetting existing simulator states."""
@@ -92,11 +100,22 @@ class SimulationRuntime:
                         profiles.update(incoming)
                         missing.difference_update(incoming)
                 if profiles != session.profiles or scenario != session.scenario:
-                    updates.append((session, profiles, deepcopy(scenario), added))
-            for session, profiles, scenario, added in updates:
+                    entries = deepcopy(session.devices)
+                    for key, profile in profiles.items():
+                        if key not in entries:
+                            continue
+                        entry = entries[key]
+                        for section, source in [('state', 'initial_state'), ('runtime_facts', 'runtime_facts')]:
+                            entry[section] = {**deepcopy(profile.get(source, {})), **entry[section]}
+                        for field in ('points', 'actions', 'derived_runtime_facts', 'display_name', 'device_type', 'protocol'):
+                            if field in profile:
+                                entry[field] = deepcopy(profile[field])
+                    entries.update(added)
+                    updates.append((session, profiles, deepcopy(scenario), entries))
+            for session, profiles, scenario, entries in updates:
                 session.profiles = profiles
                 session.scenario = scenario
-                session.devices.update(added)
+                session.devices = entries
                 session.version += 1  # Pending commands must be previewed again.
             self.catalog, self._service = catalog, service
 

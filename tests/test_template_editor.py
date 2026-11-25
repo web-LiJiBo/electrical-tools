@@ -4,8 +4,10 @@ import pytest
 from standard_knowledge_service_v2.instruction_engine.simulation import SimulationInstructionService
 from standard_knowledge_service_v2.instruction_engine.template_editor import save_custom, load_custom, test_template as probe_template
 
+from wire_fixtures import modbus_wire
+
 def sample():
-    return {'device_id': 'SIM-MB-FAN-01', 'action': 'alarm', 'template': {
+    return {'wire': modbus_wire(), 'device_id': 'SIM-MB-FAN-01', 'action': 'alarm', 'template': {
         'function': 'mock_alarm', 'condition': 'alarm_permission == 1', 'constraints': [],
         'value': True, 'mapping': {'slave_id': 3, 'address': 10, 'function_code': 5, 'data_type': 'bool'}},
         'facts': {'alarm_permission': 1}, 'parameters': {}}
@@ -63,14 +65,33 @@ def test_runtime_template_refresh_keeps_state_and_invalidates_old_preview(tmp_pa
     from standard_knowledge_service_v2.instruction_engine.simulation_catalog import SimulationCatalog
     from standard_knowledge_service_v2.instruction_engine.simulation_runtime import SimulationRuntime
     service = SimulationInstructionService()
-    runtime = SimulationRuntime(SimulationCatalog(legacy_service=service))
+    runtime = SimulationRuntime(SimulationCatalog(legacy_service=service), event_path=tmp_path / 'events.jsonl')
     before = runtime.create_session('all_devices')
     sid = before['session_id']
+    runtime.apply_fact_inputs(sid, [
+        {'device_id': 'SIM-MB-FAN-01', 'field': 'state.running', 'value': True},
+        {'device_id': 'SIM-MB-FAN-01', 'field': 'runtime_facts.stop_permission', 'value': 0},
+    ], expected_version=before['version'])
+    before = runtime.snapshot(sid)
     old = runtime.preview(sid, 'SIM-MB-FAN-01', 'start', {})
     save_custom(service, sample(), tmp_path / 'custom.json')
     runtime.refresh_catalog(SimulationCatalog(legacy_service=service))
     after = runtime.snapshot(sid)
-    assert after['devices'] == before['devices']
+    previous = {device['device_id']: device for device in before['devices']}
+    current = {device['device_id']: device for device in after['devices']}
+    assert current.keys() == previous.keys()
+    for key, device in current.items():
+        assert device['state'] == previous[key]['state']
+        assert device['runtime_facts'] == previous[key]['runtime_facts']
+        assert device['actions'] == runtime.catalog.devices[key]['actions']
+        # Snapshots additionally attach live values to field-backed points.
+        without_values = lambda points: {name: {k: v for k, v in point.items() if k != 'value'}
+                                         for name, point in points.items()}
+        assert without_values(device['points']) == without_values(runtime.catalog.devices[key]['points'])
+    assert current['SIM-MB-FAN-01']['state']['running'] is True
+    assert current['SIM-MB-FAN-01']['runtime_facts']['stop_permission'] == 0
+    assert 'alarm' in current['SIM-MB-FAN-01']['actions']
+    assert 'alarm_command' in current['SIM-MB-FAN-01']['points']
     assert after['version'] > before['version']
     assert 'alarm' in runtime.catalog.devices['SIM-MB-FAN-01']['actions']
     assert 'alarm' in runtime._sessions[sid].profiles['SIM-MB-FAN-01']['actions']
@@ -100,4 +121,6 @@ def test_save_http_route_synchronizes_running_catalog(monkeypatch, tmp_path):
     assert response.status_code == 200
     assert response.json()['runtime_refreshed'] is True
     assert 'alarm' in runtime.catalog.devices['SIM-MB-FAN-01']['actions']
-    assert runtime.snapshot(snapshot['session_id'])['version'] == snapshot['version'] + 1
+    with pytest.raises(KeyError):
+        runtime.snapshot(snapshot['session_id'])
+    assert 'alarm' in next(d for d in runtime.create_session('all_devices')['devices'] if d['device_id'] == 'SIM-MB-FAN-01')['actions']

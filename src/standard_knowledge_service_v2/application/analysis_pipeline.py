@@ -227,11 +227,9 @@ class AnalysisPipeline:
                 context['clause_basis'] = decomposed.clause_context
             from .semantic_operations import identity_resolution
             context['identity_resolution'] = identity_resolution(self, request, decomposed)
-            context['business_parameters'] = {'action_parameters': request.parameters.get('action_parameters', {}), 'device_facts': request.parameters.get('device_facts', {})}
-            # Semantic review sees user facts, not superseded fixture values.
-            context['simulation_inputs'] = {'applied': [
-                {key: row[key] for key in ('device_id', 'field', 'value', 'unit', 'sources')}
-                for row in (input_report or {}).get('applied', [])]}
+            from .operation_review import semantic_review_inputs
+            context['business_parameters'], context['simulation_inputs'] = semantic_review_inputs(
+                request.parameters, input_report)
         prepared = None
         if needs_review:
             from .maintenance_plans import prepare_operation_plan, preview_operation_plan

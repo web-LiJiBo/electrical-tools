@@ -28,8 +28,8 @@ def execute_cited_plan(pipeline, request, data, instruction, sources, snapshot, 
                          if row['device_id'] == instruction['device_id'] and row['action'] == instruction['action']), {})
     if not metadata:
         return None, '条款建议缺少原文设备和操作限制清单，不能省略条件生成。'
-    operation = {key: deepcopy(metadata.get(key)) for key in
-                 ('target_text', 'owner_id', 'source_text', 'parameter_evidence', 'condition_evidence', 'conditions', 'order')}
+    operation = {key: deepcopy(metadata.get(key, '' if key == 'order_evidence' else None)) for key in
+                 ('target_text', 'owner_id', 'source_text', 'parameter_evidence', 'condition_evidence', 'conditions', 'order', 'order_evidence')}
     operation.update(device_id=instruction['device_id'], action=instruction['action'],
                      parameters=deepcopy(instruction['parameters']), negated=False, clarification='')
     errors = validate_semantic_plan({'operations': [operation], 'queries': plan.queries or []})

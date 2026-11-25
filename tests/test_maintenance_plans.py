@@ -130,19 +130,20 @@ def test_plan_and_command_cannot_cross_sessions():
 
 def test_independent_review_needs_server_proof_bound_to_exact_operations():
     from standard_knowledge_service_v2.application.operation_review import validate_review
-    ops = [dict(row, negated=False, clarification='') for row in steps()]
+    query = '前步反馈成功后才执行下一步'
+    ops = [dict(row, negated=False, clarification='', order_evidence=query) for row in steps()]
     raw = {'approved': True, 'items': [dict(index=i, matches_request=True, reason='原文一致',
         device_id=row['device_id'], action=row['action'], parameters={}) for i, row in enumerate(ops)],
         'missing_requests': [], 'has_negation': False, 'has_conditions': True,
         'has_order': True, 'reason': '原话条件和顺序与后台支持一致'}
     support = {'conditions': True, 'order': True, 'operations': deepcopy(ops)}
     assert validate_review(raw, ops)['status'] == 'blocked'
-    assert validate_review(raw, ops, support)['status'] == 'approved'
+    assert validate_review(raw, ops, support, query)['status'] == 'approved'
     changed = deepcopy(ops)
     changed[0]['conditions'] = ['device_fault == 1']
-    assert validate_review(raw, changed, support)['status'] == 'blocked'
+    assert validate_review(raw, changed, support, query)['status'] == 'blocked'
     raw['has_negation'] = True
-    assert validate_review(raw, ops, support)['status'] == 'blocked'
+    assert validate_review(raw, ops, support, query)['status'] == 'blocked'
 
 def preparation_input(conditions=None, order=None):
     from types import SimpleNamespace

@@ -57,7 +57,7 @@ def compile_device(row):
     fields, actions = row['fields'], row['actions']
     if not isinstance(fields, list) or not 1 <= len(fields) <= 30:
         raise ValueError('请填写 1 至 30 个状态字段。')
-    if not isinstance(actions, list) or not 1 <= len(actions) <= len(ACTIONS[kind]):
+    if not isinstance(actions, list) or not 1 <= len(actions) <= 64:
         raise ValueError('请填写至少一个支持的动作。')
     profile = dict(device_id=identifier, display_name=name, aliases=[], device_type=kind, scenario=scenario,
                    protocol='IEC61850', initial_state={}, runtime_facts={}, state_fields={}, runtime_fact_fields={},
@@ -80,14 +80,19 @@ def compile_device(row):
         profile[metadata][key] = {'display_name': label.strip(), 'type': dtype, 'unit': unit}
     prefix = 'LOCAL_' + identifier.replace('-', '_')
     for item in actions:
-        _keys(item, 'action result_field minimum maximum conditions', '动作配置字段不完整。')
+        custom = isinstance(item, dict) and 'value_source' in item
+        _keys(item, 'action result_field minimum maximum conditions' + (' display_name value_source value parameter' if custom else ''), '动作配置字段不完整。')
         action, key = item['action'], item['result_field']
-        if (not isinstance(action, str) or action not in ACTIONS[kind] or action in profile['actions']
+        if (not isinstance(action, str) or not re.fullmatch(r'[a-z][a-z0-9_]{0,47}', action)
+                or not custom and action not in ACTIONS[kind] or action in profile['actions']
                 or not isinstance(key, str) or key not in specs):
             raise ValueError('动作不受设备类型支持、重复或没有绑定有效的结果字段。')
         spec = specs[key]
         unit = spec['unit']
-        if action in ACTION_UNITS:
+        if custom:
+            from .custom_action_definition import compile_definition
+            settings, effect = compile_definition(item, spec, _literal)
+        elif action in ACTION_UNITS:
             low, high = item['minimum'], item['maximum']
             if (spec['type'] not in ('integer', 'number') or unit not in ACTION_UNITS[action]
                     or not _literal(low, spec['type']) or not _literal(high, spec['type']) or low >= high):
@@ -100,8 +105,8 @@ def compile_device(row):
             settings = {'value': action == 'start'}
             effect = settings['value']
         conditions = item['conditions']
-        if not isinstance(conditions, list) or not 1 <= len(conditions) <= 10:
-            raise ValueError('每个动作需明确填写 1 至 10 条前置条件。')
+        if not isinstance(conditions, list) or not (0 if custom else 1) <= len(conditions) <= 10:
+            raise ValueError('自定义动作可填写0至10条前置条件；已有动作至少填写1条。')
         checks = []
         for rule in conditions:
             _keys(rule, 'field operator value', '前置条件格式不完整。')
@@ -114,8 +119,8 @@ def compile_device(row):
             checks.append((field, op, literal))
         section = spec['section']
         profile['actions'][action] = {
-            'function': action, 'display_name': ACTIONS[kind][action], 'unit': unit, **settings,
-            'condition': ' '.join(checks[0]),
+            'function': action, 'display_name': ACTIONS[kind].get(action, action), 'unit': unit, **settings,
+            'condition': ' '.join(checks[0]) if checks else 'true',
             'constraints': [{'parameter': field, 'operator': op, 'value': literal, 'role': 'precondition'}
                             for field, op, literal in checks[1:]],
             'mapping': {'object_reference': f'{prefix}/CTRL/GGIO1.{action}',

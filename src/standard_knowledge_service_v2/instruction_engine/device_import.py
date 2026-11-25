@@ -63,7 +63,7 @@ def _identity(value):
     return ''.join(unicodedata.normalize('NFKC', value).split()).casefold()
 
 
-def _prepare(service, rows, catalog=None):
+def _prepare(service, rows, catalog=None, *, strict_wire=False):
     staged = deepcopy(service)
     blueprint = service.devices[BLUEPRINT]
     existing = (catalog or SimulationCatalog(legacy_service=service)).devices
@@ -75,7 +75,7 @@ def _prepare(service, rows, catalog=None):
         manual = isinstance(row, dict) and row.get('template_id') == 'manual_iec61850'
         fields = {'device_id', 'display_name', 'scenario_id', 'template_id', 'actions'}
         fields.update({'device_type', 'fields'} if manual else {'initial_values'})
-        if not isinstance(row, dict) or set(row) != fields:
+        if not isinstance(row, dict) or set(row) - {'wire', 'wires'} != fields:
             errors.append({'row': index, 'field': '', 'message': '设备记录字段不完整或包含未知字段，请对照示例。'})
             continue
         identifier, name = row['device_id'], row['display_name']
@@ -96,7 +96,7 @@ def _prepare(service, rows, catalog=None):
         if manual:
             if not issues:
                 try:
-                    device = manual_device_config.compile_device(row)
+                    device = manual_device_config.compile_device({k: v for k, v in row.items() if k not in ('wire', 'wires')})
                 except ValueError as exc:
                     issues['配置'] = str(exc)
             if issues:
@@ -139,6 +139,35 @@ def _prepare(service, rows, catalog=None):
         return errors, preview, None, None
     try:
         next_catalog = SimulationCatalog(legacy_service=staged)
+        from .customization_wire import apply_wire
+        supplied = False
+        for row in rows:
+            explicit = row.get('wires', {})
+            if row.get('wire') is not None:
+                if len(staged.devices[row['device_id']]['actions']) != 1:
+                    raise ValueError('多动作导入须用wires按动作分别配置完整报文。')
+                explicit = {next(iter(staged.devices[row['device_id']]['actions'])): row['wire']}
+            device = deepcopy(next_catalog.devices[row['device_id']])
+            if not isinstance(explicit, dict):
+                raise ValueError('wires须为动作名称到完整wire的映射。')
+            configurations = list(explicit.values())
+            if configurations and any(not isinstance(w, dict) or w.get('protocol') != configurations[0].get('protocol') or w.get('communication') != configurations[0].get('communication') for w in configurations):
+                raise ValueError('同一设备各动作须使用相同协议及通信配置。')
+            for action, wire in explicit.items():
+                if action not in device['actions']:
+                    raise ValueError('wires引用了未配置的动作。')
+                apply_wire(device, action, wire)
+                supplied = True
+            if explicit:
+                staged.devices[row['device_id']] = device
+        if supplied:
+            next_catalog = SimulationCatalog(legacy_service=staged)
+        if strict_wire:
+            from .customization_wire import apply_wire, extract_wire
+            for row in rows:
+                device = next_catalog.devices[row['device_id']]
+                for action in device['actions']:
+                    apply_wire(deepcopy(device), action, extract_wire(device, action))
     except ValueError as exc:
         return [{'row': None, 'field': '', 'message': str(exc)}], preview, None, None
     return [], preview, staged, next_catalog
@@ -196,7 +225,7 @@ def process(session, runtime, rows, *, publish=False, revision=None, path=None):
         published = _read(path)
         if len(published) + len(rows) > MAX_DEVICES:
             raise ValueError(f'导入设备总数不能超过 {MAX_DEVICES} 台。')
-        errors, preview, staged, catalog = _prepare(service, rows, runtime.catalog)
+        errors, preview, staged, catalog = _prepare(service, rows, runtime.catalog, strict_wire=True)
         if errors:
             return {'status': 'invalid', 'errors': errors, 'devices': preview}
         token = hashlib.sha256(_encode([published, rows])).hexdigest()

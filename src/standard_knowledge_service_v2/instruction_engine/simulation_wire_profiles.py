@@ -61,6 +61,16 @@ def apply_simulation_protocol_profiles(devices: dict, config_path=None) -> list[
     for identifier, device in devices.items():
         configured = config['devices'].get(identifier)
         missing, preserved = [], []
+        if configured is None and device.get('communication'):
+            # Explicit customization owns its own instance maps and endpoints.
+            for action_name, action in device.get('actions', {}).items():
+                fields = _missing_fields(action.get('mapping', {}), device['protocol'], command=True)
+                fields += ['feedback_mapping.' + k for k in _missing_fields(action.get('feedback_mapping', {}), device['protocol'], command=False)]
+                action['wire_profile_missing_fields'] = fields
+                missing.extend(f'actions.{action_name}.{k}' for k in fields)
+            device['wire_profile_missing_fields'] = missing
+            diagnostics.append({'device_id': identifier, 'status': 'custom_mapping', 'missing_fields': missing, 'preserved_actions': list(device.get('actions', {}))})
+            continue
         if configured is None:
             missing.append('simulation_protocol_profile')
             device['wire_profile_missing_fields'] = missing

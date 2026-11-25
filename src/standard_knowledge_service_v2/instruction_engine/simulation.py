@@ -61,7 +61,8 @@ class SimulationInstructionService:
             candidate.missing_fields = ["simulation_template"]
             candidate.explanation = "动作与模拟设备模板不匹配"
             return candidate
-        decision = self.preconditions.evaluate(template["condition"], facts, template.get('constraints'))
+        decision = self.preconditions.evaluate(template["condition"], facts, template.get('constraints'),
+                                               allow_unconditional=template.get('custom_action') is True)
         candidate.precondition_status = decision.status.value
         candidate.precondition_trace = decision.to_dict()["trace"]
         if candidate.precondition_status != "pass":

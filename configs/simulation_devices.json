@@ -299,7 +299,55 @@
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
-      }
+      },
+      "state_fields": {
+        "active_power_kw": {
+          "display_name": "有功出力",
+          "unit": "kW",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "reactive_power_kvar": {
+          "display_name": "无功输出",
+          "unit": "kvar",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "voltage_v": {
+          "display_name": "电压设定值",
+          "unit": "V",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "control_permission": {
+          "display_name": "控制许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "grid_connected": {
+          "display_name": "并网状态",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "maintenance_lockout": {
+          "display_name": "检修闭锁",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "control_mode_available": {
+          "display_name": "控制模式可用",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "fixture_reference": "新能源并网场景指令问题信息.docx；保留统一初始状态，各题执行前/反馈状态见问题清单。",
+      "configuration_scope": "新能源并网软件测试预设；范围、许可和协议点位不构成真实标准定值，不接入现场设备。"
     },
     {
       "device_id": "SIM-IEC-INVERTER-01",
@@ -399,7 +447,55 @@
           "source_rule_ids": [],
           "source_scope": "synthetic_test_fixture_pending_source_binding"
         }
-      }
+      },
+      "state_fields": {
+        "active_power_kw": {
+          "display_name": "有功出力",
+          "unit": "kW",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "reactive_power_kvar": {
+          "display_name": "无功输出",
+          "unit": "kvar",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        },
+        "voltage_v": {
+          "display_name": "电压设定值",
+          "unit": "V",
+          "type": "number",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "runtime_fact_fields": {
+        "control_permission": {
+          "display_name": "控制许可",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "grid_connected": {
+          "display_name": "并网状态",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "maintenance_lockout": {
+          "display_name": "检修闭锁",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        },
+        "control_mode_available": {
+          "display_name": "控制模式可用",
+          "unit": "",
+          "type": "integer",
+          "source": "synthetic_test_fixture"
+        }
+      },
+      "fixture_reference": "新能源并网场景指令问题信息.docx；保留统一初始状态，各题执行前/反馈状态见问题清单。",
+      "configuration_scope": "新能源并网软件测试预设；范围、许可和协议点位不构成真实标准定值，不接入现场设备。"
     },
     {
       "device_id": "SIM-IEC-FAN-01",
