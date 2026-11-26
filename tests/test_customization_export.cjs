@@ -16,3 +16,9 @@ test('mixed selection deduplicates dependencies; preset references remain refere
 test('empty or removed selections never silently export everything',()=>{
  const fn=build();assert.throws(()=>fn(state(),[],[]),/选择/);assert.throws(()=>fn(state(),['DELETED'],[]),/选择/);
 });
+
+test('selected export carries aliases and transitive type/unit definitions only',()=>{
+ const s=state();s.devices[0].aliases=['别名甲'];s.devices[0].device_type='monitor';s.devices[0].fields=[{unit:'kRunit'}];
+ s.definitions={device_types:[{code:'monitor',name:'监测'},{code:'unused',name:'其他'}],units:[{symbol:'kRunit',base_unit:'Runit',scale:1000,offset:0},{symbol:'Runit',base_unit:'',scale:1,offset:0},{symbol:'unused',base_unit:'',scale:1,offset:0}]};
+ const out=build()(s,['D1'],[]);assert.equal(out.devices[0].aliases[0],'别名甲');assert.equal(out.definitions.device_types.length,1);assert.equal(out.definitions.units.length,2);
+});

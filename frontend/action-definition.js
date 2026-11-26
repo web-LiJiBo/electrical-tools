@@ -24,6 +24,9 @@
    const op=row.querySelector('[data-op]'),old=op.value;op.innerHTML=optionMarkup(Object.fromEntries((type==='boolean'?['==','!=']:['==','!=','<','<=','>','>=']).map(x=>[x,x])),old||row.dataset.operator);
   }
   function refresh(){
+   const mode=get('[data-definition]'),available=Object.keys(actions[currentKind]||{}).length>0;
+   mode.querySelector('option[value="preset"]').disabled=!available;
+   if(!available)mode.value='custom';
    const preset=get('[data-definition]').value==='preset',action=get('[data-action]'),old=action.value;
    action.innerHTML=optionMarkup(actions[currentKind]||{},old||spec.action);
    const binary=preset&&['start','stop'].includes(action.value),parameter=!preset&&get('[data-source]').value==='parameter';

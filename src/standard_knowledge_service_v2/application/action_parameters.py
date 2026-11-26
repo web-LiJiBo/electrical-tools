@@ -55,11 +55,17 @@ def _number(value):
     return number
 
 
-def _convert(value, unit, target_unit):
+def _convert(value, unit, target_unit, unit_definitions=None):
     number = _number(value)
     unit, target_unit = str(unit or '').strip(), target_unit.strip()
     if unit == target_unit:
         return number
+    from ..instruction_engine.custom_definitions import unit_map
+    registered = unit_map(unit_definitions or [])
+    source, target = registered.get(unit), registered.get(target_unit)
+    if source and target:
+        if source[0] != target[0]: raise ValueError('单位量纲不兼容，不能换算目标值')
+        return (number * source[1] + source[2] - target[2]) / target[1]
     # Preserve SI prefix case: mW is a milliwatt, MW a megawatt.
     source = UNITS.get(unit) or UNITS.get(unit.lower())
     target = UNITS.get(target_unit) or UNITS.get(target_unit.lower())
@@ -97,7 +103,8 @@ def resolve_action_parameters(query, template, parameters, understanding=None):
     unit = str(template.get('unit', ''))
     data = understanding.to_dict() if hasattr(understanding, 'to_dict') else (understanding or {})
     try:
-        stated = target_evidence(query, data.get('parameter_evidence'), parameter, _convert, unit)
+        convert = lambda value, source, target: _convert(value, source, target, template.get('unit_definitions'))
+        stated = target_evidence(query, data.get('parameter_evidence'), parameter, convert, unit)
         selected = data.get('model_parameters', {}).get(parameter)
         configured = data.get('configured_parameters', {})
         if not stated and parameter in configured and selected == configured[parameter]:
@@ -106,7 +113,7 @@ def resolve_action_parameters(query, template, parameters, understanding=None):
             # Review checks the semantic role; this layer checks literal value and dimension.
             for match in VALUE_WITH_UNIT.finditer(query.translate(SIGNS)):
                 try:
-                    converted = _convert(match[1], match[2], unit)
+                    converted = convert(match[1], match[2], unit)
                 except ValueError:
                     continue
                 if converted == _number(selected):
@@ -114,13 +121,13 @@ def resolve_action_parameters(query, template, parameters, understanding=None):
             if not stated:
                 raise ValueError('动作目标数值未出现在对应原文中，请核对目标和单位')
         if not stated:
-            stated = [_convert(match[1], match[2], unit) for match in _target_tokens(query, parameter)]
+            stated = [convert(match[1], match[2], unit) for match in _target_tokens(query, parameter)]
         for constraint in data.get('constraints', []):
             if (matches_action_parameter(constraint.get('parameter'), parameter)
                     and constraint.get('operator') in ('=', '==') and not constraint.get('condition')):
                 # Tap models historically omit the unit on an unambiguous integer target.
                 constraint_unit = constraint.get('unit') or ('档' if parameter == 'tap_position' else '')
-                stated.append(_convert(constraint.get('value'), constraint_unit, unit))
+                stated.append(convert(constraint.get('value'), constraint_unit, unit))
         if len(set(stated)) > 1:
             return {}, '正文与模型理解包含不同目标值，未生成操作预览；请明确一个目标值'
         if parameter in result:

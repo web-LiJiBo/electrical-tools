@@ -57,7 +57,8 @@ def normalize_plan(understanding, query, catalog, business_parameters=None, conv
         template = catalog.devices.get(operation['device_id'], {}).get('actions', {}).get(operation['action'], {})
         parameter = template.get('parameter')
         try:
-            values = target_evidence(query, evidence, parameter, _convert, template.get('unit', '')) if parameter else []
+            convert = lambda value, source, target: _convert(value, source, target, template.get('unit_definitions'))
+            values = target_evidence(query, evidence, parameter, convert, template.get('unit', '')) if parameter else []
         except ValueError:
             values = []  # Keep invalid evidence for the validation layer to reject.
         if values and len(set(values)) == 1:

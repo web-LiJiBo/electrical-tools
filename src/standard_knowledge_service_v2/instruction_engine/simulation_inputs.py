@@ -18,6 +18,8 @@ def fact_schema(profile):
                             'integer' if type(value) is int else 'number' if type(value) is float else 'enum')
             spec['section'] = section
             spec.setdefault('unit', '')
+            if profile.get('unit_definitions'):
+                spec['unit_definitions'] = deepcopy(profile['unit_definitions'])
             configured_units = {action.get('unit') for action in profile.get('actions', {}).values()
                                 if action.get('configured_parameter_fact') == key and action.get('unit')}
             if not spec['unit'] and len(configured_units) == 1:
@@ -67,8 +69,8 @@ def normalize_value(value, unit, spec):
             source, target = current_units.get(unit), current_units.get(target_unit)
             if source and target:
                 value = float(Decimal(str(value)) * Decimal(source[1]) / Decimal(target[1]))
-            elif (unit in UNITS or unit.lower() in UNITS) and target_unit:
-                value = float(_convert(value, unit, target_unit))
+            elif target_unit:
+                value = float(_convert(value, unit, target_unit, spec.get('unit_definitions')))
             else:
                 raise ValueError(f'设备状态单位{unit}与配置单位{target_unit or "未登记"}不一致')
         if not math.isfinite(value) or kind == 'integer' and int(value) != value:

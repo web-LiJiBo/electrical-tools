@@ -733,9 +733,10 @@ class SimulationRuntime:
             if not mapping.get('object_reference') or mapping['object_reference'] == payload.get('object_reference'):
                 raise ValueError('命令点与反馈点必须分离')
         elif protocol == 'Modbus':
+            from .point_usage import point_keys
             slave, address = mapping.get('slave_id'), mapping.get('address')
             if (type(slave) is not int or not 1 <= slave <= 247 or type(address) is not int or not 0 <= address <= 65535
-                    or (slave, address) == (payload.get('slave_id'), payload.get('address'))):
+                    or set(point_keys(protocol, mapping)) & set(point_keys(protocol, payload))):
                 raise ValueError('反馈Modbus点位无效或与命令点相同')
             if mapping.get('data_type') == 'bool':
                 if type(encoded) is not bool:

@@ -17,7 +17,7 @@ ACTIONS = {
     'reactive_compensator': {'adjust_reactive_power': '调整无功功率', 'regulate_voltage': '调整电压'},
     'cooling_fan': {'start': '启动', 'stop': '停止'},
 }
-UNITS = ('MW', 'kW', 'W', 'Mvar', 'kvar', 'var', 'kV', 'V', 'MW/min', '℃', '%', 'Hz')
+UNITS = ('MW', 'kW', 'W', 'mW', 'Mvar', 'kvar', 'var', 'kV', 'V', 'MW/min', '℃', '%', 'Hz', 'A', 'kA', 'Ω', 'kΩ', 'MΩ', '档')
 ACTION_UNITS = {
     'adjust_active_power': {'MW', 'kW', 'W'}, 'limit_power': {'MW', 'kW', 'W'},
     'adjust_reactive_power': {'Mvar', 'kvar', 'var'}, 'regulate_voltage': {'kV', 'V'},
@@ -25,8 +25,13 @@ ACTION_UNITS = {
 OPS = ('==', '!=', '<', '<=', '>', '>=')
 
 
-def options():
-    return {'scenarios': SCENARIOS, 'device_types': DEVICE_TYPES, 'actions': ACTIONS, 'units': UNITS}
+def options(definitions=None, *, device_types=None):
+    from .custom_definitions import normalize
+    definitions = normalize(definitions)
+    kinds = {**DEVICE_TYPES, **(device_types or {}), **{row['code']: row['name'] for row in definitions['device_types']}}
+    return {'scenarios': SCENARIOS, 'device_types': kinds,
+            'actions': {key: ACTIONS.get(key, {}) for key in kinds},
+            'units': [*UNITS, *[row['symbol'] for row in definitions['units']]]}
 
 
 def _keys(row, expected, message):
@@ -48,11 +53,14 @@ def _literal(value, kind):
     return kind == 'enum' and isinstance(value, str) and bool(re.fullmatch(r'[A-Za-z][A-Za-z0-9_]{0,39}', value))
 
 
-def compile_device(row):
-    _keys(row, 'device_id display_name scenario_id template_id device_type fields actions',
+def compile_device(row, *, definitions=None, device_types=None):
+    from .custom_definitions import normalize, unit_map
+    definitions = normalize(definitions)
+    registered = options(definitions, device_types=device_types)
+    _keys(row, 'device_id display_name scenario_id template_id device_type fields actions' + (' aliases' if 'aliases' in row else ''),
           '设备配置字段不完整或包含未知字段。')
     identifier, name, kind, scenario = (row[k] for k in ('device_id', 'display_name', 'device_type', 'scenario_id'))
-    if not isinstance(kind, str) or kind not in DEVICE_TYPES or not isinstance(scenario, str) or scenario not in SCENARIOS:
+    if not isinstance(kind, str) or kind not in registered['device_types'] or not isinstance(scenario, str) or scenario not in SCENARIOS:
         raise ValueError('请选择支持的场景和设备类型。')
     fields, actions = row['fields'], row['actions']
     if not isinstance(fields, list) or not 1 <= len(fields) <= 30:
@@ -62,6 +70,12 @@ def compile_device(row):
     profile = dict(device_id=identifier, display_name=name, aliases=[], device_type=kind, scenario=scenario,
                    protocol='IEC61850', initial_state={}, runtime_facts={}, state_fields={}, runtime_fact_fields={},
                    source='manual_device_import', mapping={}, actions={})
+    aliases = row.get('aliases', [])
+    if not isinstance(aliases, list) or len(aliases) > 20 or any(not isinstance(alias, str) or not 2 <= len(alias) <= 40 for alias in aliases):
+        raise ValueError('设备别名须为最多20项、每项2至40字符的文本数组。')
+    profile['aliases'] = list(aliases)
+    if definitions['units']: profile['unit_definitions'] = definitions['units']
+    if kind not in DEVICE_TYPES: profile['device_type_name'] = registered['device_types'][kind]
     specs = {}
     for item in fields:
         _keys(item, 'key label section type unit value', '状态字段格式不完整。')
@@ -70,7 +84,7 @@ def compile_device(row):
                 or key in specs or key in ('true', 'false')):
             raise ValueError('状态字段名须为小写英文字母、数字或下划线，且不能重复。')
         if (not isinstance(label, str) or not 1 <= len(label.strip()) <= 40 or section not in ('state', 'runtime_facts')
-                or not _literal(value, dtype) or unit not in ('', *UNITS)
+                or not _literal(value, dtype) or unit not in ('', *registered['units'])
                 or (dtype in ('boolean', 'enum') and unit)):
             raise ValueError(f'状态字段 {key} 的名称、类型、单位或初始值无效。')
         specs[key] = item
@@ -84,7 +98,7 @@ def compile_device(row):
         _keys(item, 'action result_field minimum maximum conditions' + (' display_name value_source value parameter' if custom else ''), '动作配置字段不完整。')
         action, key = item['action'], item['result_field']
         if (not isinstance(action, str) or not re.fullmatch(r'[a-z][a-z0-9_]{0,47}', action)
-                or not custom and action not in ACTIONS[kind] or action in profile['actions']
+                or not custom and action not in ACTIONS.get(kind, {}) or action in profile['actions']
                 or not isinstance(key, str) or key not in specs):
             raise ValueError('动作不受设备类型支持、重复或没有绑定有效的结果字段。')
         spec = specs[key]
@@ -94,7 +108,9 @@ def compile_device(row):
             settings, effect = compile_definition(item, spec, _literal)
         elif action in ACTION_UNITS:
             low, high = item['minimum'], item['maximum']
-            if (spec['type'] not in ('integer', 'number') or unit not in ACTION_UNITS[action]
+            compatible_units = unit_map(definitions['units'])
+            valid_unit = unit in compatible_units and any(compatible_units[unit][0] == compatible_units[other][0] for other in ACTION_UNITS[action])
+            if (spec['type'] not in ('integer', 'number') or not valid_unit
                     or not _literal(low, spec['type']) or not _literal(high, spec['type']) or low >= high):
                 raise ValueError(f'{ACTIONS[kind][action]}：结果字段类型、单位或目标范围无效。')
             settings = {'parameter': key, 'parameter_type': spec['type'], 'minimum': low, 'maximum': high}
@@ -119,7 +135,7 @@ def compile_device(row):
             checks.append((field, op, literal))
         section = spec['section']
         profile['actions'][action] = {
-            'function': action, 'display_name': ACTIONS[kind].get(action, action), 'unit': unit, **settings,
+            'function': action, 'display_name': ACTIONS.get(kind, {}).get(action, action), 'unit': unit, **settings,
             'condition': ' '.join(checks[0]) if checks else 'true',
             'constraints': [{'parameter': field, 'operator': op, 'value': literal, 'role': 'precondition'}
                             for field, op, literal in checks[1:]],
@@ -130,4 +146,5 @@ def compile_device(row):
                                  'object_reference': f'{prefix}/STATUS/GGIO1.{key}', 'unit': unit,
                                  'data_type': {'boolean': 'bool', 'integer': 'int32', 'number': 'float32'}[spec['type']]},
         }
+        if definitions['units']: profile['actions'][action]['unit_definitions'] = definitions['units']
     return profile

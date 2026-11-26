@@ -1,55 +1,9 @@
-const {test} = require('node:test');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const vm = require('node:vm');
-
-const html = fs.readFileSync(path.join(__dirname, '../frontend/customization-advanced.html'), 'utf8');
-const source = html.slice(html.indexOf('function updateMapping()'), html.indexOf('const actionNames='));
-
-function editor(devices) {
-  const elements = new Map();
-  const $ = id => {
-    if (!elements.has(id)) elements.set(id, {value: '', hidden: false});
-    return elements.get(id);
-  };
-  $('kind').value = 'bool';
-  $('action').value = 'alarm';
-  const context = vm.createContext({$, devices});
-  vm.runInContext(source, context);
-  return (device, action = 'alarm') => {
-    $('device').value = device;
-    $('action').value = action;
-    context.updateMapping();
-    return JSON.parse($('mapping').value);
-  };
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+for(const [file,search] of [['customization-advanced.html',''],['customization-advanced.html','?backend_port=8001'],['template-editor.html','?backend_port=8001']]){
+ test(`retired ${file} redirects to unified instructions ${search}`,()=>{
+  const html=fs.readFileSync('frontend/'+file,'utf8');assert.doesNotMatch(html,/<select id="action"/);
+  let replaced;const link={};const source=html.match(/<script>([\s\S]*?)<\/script>/)[1];
+  vm.runInNewContext(source,{URL,URLSearchParams,location:{href:'http://127.0.0.1:5500/'+file+search,search,replace:url=>replaced=url},document:{getElementById:()=>link}});
+  const target=new URL(replaced);assert.equal(target.pathname,'/customization.html');assert.equal(target.searchParams.get('tab'),'instructions');assert.equal(target.searchParams.get('backend_port'),search?'8001':null);
+ });
 }
-
-test('different IEC devices and actions receive independent default command points', () => {
-  const mapping = editor([
-    {device_id: 'SIM-IEC-FAN-01', protocol: 'IEC61850', mapping: {}, actions: {}},
-    {device_id: 'SIM-IEC-PUMP-01', protocol: 'IEC61850', mapping: {}, actions: {}},
-  ]);
-  const points = [mapping('SIM-IEC-FAN-01'), mapping('SIM-IEC-PUMP-01'),
-    mapping('SIM-IEC-FAN-01', 'adjust_active_power')].map(item => item.object_reference);
-  assert.equal(new Set(points).size, 3);
-  assert.match(points[0], /^SIM_EDITOR/);
-});
-
-test('Modbus defaults avoid existing command and inferred feedback addresses', () => {
-  const mapping = editor([{device_id: 'SIM-MB-FAN-01', protocol: 'Modbus',
-    mapping: {slave_id: 3, address: 10}, actions: {
-      start: {mapping: {address: 3000}},
-      stop: {mapping: {address: 3001}},
-    }}]);
-  const point = mapping('SIM-MB-FAN-01');
-  assert.equal(point.slave_id, 3);
-  assert.equal(point.data_type, 'bool');
-  assert.equal(point.function_code, 5);
-  assert.ok(![10, 1010, 3000, 3001, 4000, 4001].includes(point.address));
-  assert.ok(![10, 1010, 3000, 3001, 4000, 4001].includes(point.address + 1000));
-});
-
-test('action changes regenerate their distinct IEC default mapping', () => {
-  assert.ok(/\$\('action'\)\.onchange=updateMapping/.test(html), 'action change must refresh its point');
-});

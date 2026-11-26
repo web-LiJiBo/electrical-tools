@@ -8,11 +8,19 @@
     const bindings = state.bindings.filter(b => devices.has(b.device_id) || instructions.has(b.instruction_id));
     const neededDevices = new Set([...devices, ...bindings.map(b => b.device_id)]);
     const neededInstructions = new Set([...instructions, ...bindings.map(b => b.instruction_id)]);
-    return structuredClone({
+    const result = {
       devices: state.devices.filter(d => neededDevices.has(d.device_id)),
       instructions: state.instructions.filter(i => neededInstructions.has(i.instruction_id)),
       bindings
-    });
+    };
+    if (state.definitions) {
+      const kinds = new Set([...result.devices, ...result.instructions].map(row => row.device_type));
+      const symbols = new Set([...result.devices, ...result.instructions].flatMap(row => (row.fields || []).map(f => f.unit)));
+      let changed;
+      do { changed = false; for (const row of state.definitions.units || []) if (symbols.has(row.symbol) && row.base_unit && !symbols.has(row.base_unit)) { symbols.add(row.base_unit); changed = true; } } while (changed);
+      result.definitions = {device_types: (state.definitions.device_types || []).filter(row => kinds.has(row.code)), units: (state.definitions.units || []).filter(row => symbols.has(row.symbol))};
+    }
+    return structuredClone(result);
   };
   window.createCustomizationExport = (container, getState) => {
     const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

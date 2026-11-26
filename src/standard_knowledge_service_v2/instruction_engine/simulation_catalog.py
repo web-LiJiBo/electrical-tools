@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 from .simulation import DEFAULT_PROFILES, SimulationInstructionService
+from .point_usage import modbus_space, validate_device_points
 
 
 CONFIG_ROOT = DEFAULT_PROFILES.parent
@@ -351,7 +352,7 @@ class SimulationCatalog:
                     if type(slave) is not int or not 1 <= slave <= 247 or type(address) is not int or not 0 <= address <= 65535:
                         raise ValueError('模拟Modbus点位地址无效')
                     # Coil/register spaces are distinct in Modbus.
-                    space = 'coil' if point.get('function_code') in {1, 5} else 'register'
+                    space = modbus_space(point.get('function_code'))
                     keys = [('Modbus', endpoint, slave, space, offset) for offset in _modbus_range(point)]
                 elif point.get('protocol') == 'IEC61850' and point.get('object_reference'):
                     # MMS identifiers are what the encoder sends. Object references
@@ -371,8 +372,8 @@ class SimulationCatalog:
                 feedback = action['feedback_mapping']
                 field = 'address' if device['protocol'] == 'Modbus' else 'object_reference'
                 if device['protocol'] == 'Modbus':
-                    command_space = 'coil' if command.get('function_code') in {1, 5} else 'register'
-                    feedback_space = 'coil' if feedback.get('function_code') in {1, 5} else 'register'
+                    command_space = modbus_space(command.get('function_code'))
+                    feedback_space = modbus_space(feedback.get('function_code'))
                     overlap = (command.get('slave_id') == feedback.get('slave_id')
                                and command_space == feedback_space
                                and bool(set(_modbus_range(command)) & set(_modbus_range(feedback))))
@@ -380,6 +381,7 @@ class SimulationCatalog:
                     overlap = command.get(field) == feedback.get(field)
                 if overlap:
                     raise ValueError('命令点与反馈点必须分开')
+            validate_device_points(device)
         for scenario in self.scenarios.values():
             ids = scenario['device_ids']
             if len(ids) != len(set(ids)) or not set(ids) <= self.devices.keys():

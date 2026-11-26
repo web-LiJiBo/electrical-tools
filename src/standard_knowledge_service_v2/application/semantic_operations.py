@@ -47,10 +47,10 @@ def catalog_context(pipeline, request):
                                  'unique_alternatives': alternatives},
             'business_parameters': {'action_parameters': deepcopy(request.parameters.get('action_parameters', {}))},
             'devices': [{key: deepcopy(device.get(key, '')) for key in
-            ('device_id', 'display_name', 'device_type', 'aliases', 'business_scenario')}
+            ('device_id', 'display_name', 'device_type', 'device_type_name', 'aliases', 'business_scenario')}
             | {'actions': {action: {key: deepcopy(template.get(key)) for key in
                 ('display_name', 'parameter', 'parameter_label', 'parameter_type', 'unit', 'minimum', 'maximum',
-                 'value_source', 'value', 'result_field', 'simulation_effects', 'condition', 'constraints')}
+                 'value_source', 'value', 'result_field', 'unit_definitions', 'simulation_effects', 'condition', 'constraints')}
                 for action, template in device.get('actions', {}).items()},
                'fact_fields': sorted(set(device.get('initial_state', {})) | set(device.get('runtime_facts', {}))),
                'fact_schema': fact_schema(device),

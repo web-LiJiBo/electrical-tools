@@ -53,8 +53,16 @@ def device_fields(device):
     return fields
 
 
-def _compile(device, actions):
-    return manual.compile_device(dict(device, template_id='manual_iec61850', actions=actions))
+def _compile(device, actions, definitions=None, device_types=None):
+    return manual.compile_device(dict(device, template_id='manual_iec61850', actions=actions), definitions=definitions, device_types=device_types)
+
+
+def _catalog_types(catalog):
+    labels = {'pole_controller':'换流阀', 'battery_pcs':'储能变流器', 'inverter':'逆变器',
+              'transformer':'变压器', 'breaker':'断路器', 'disconnector':'隔离开关',
+              'earthing_switch':'接地开关', 'oil_pump':'油泵', 'tap_changer':'有载调压装置',
+              'capacitor_bank':'电容器组', 'ventilation':'通风装置'}
+    return {d['device_type']: d.get('device_type_name') or labels.get(d['device_type'], manual.DEVICE_TYPES.get(d['device_type'], d['device_type'])) for d in catalog.devices.values()}
 
 
 def _presets(catalog):
@@ -120,7 +128,7 @@ def snapshot(session, runtime):
             devices.append(dict(deepcopy(device), scenario_id=device.get('business_scenario', device.get('scenario')),
                                 fields=device_fields(device), readonly=key not in {d['device_id'] for d in state['devices']}))
         return dict(state=deepcopy(state), base_revision=_revision(state, base), devices=devices,
-                    instructions=[*deepcopy(state['instructions']), *_presets(base)], options={**manual.options(), 'wire_presets': [dict(device_id=k, action=a, wire=extract_wire(d, a)) for k, d in base.devices.items() for a in d['actions']], 'wire_schema': {'protocols': ['IEC61850', 'Modbus'], 'sections': ['communication', 'command', 'feedback']}},
+                    instructions=[*deepcopy(state['instructions']), *_presets(base)], options={**manual.options(state.get('definitions'), device_types=_catalog_types(base)), 'wire_presets': [dict(device_id=k, action=a, wire=extract_wire(d, a)) for k, d in base.devices.items() for a in d['actions']], 'wire_schema': {'protocols': ['IEC61850', 'Modbus'], 'sections': ['communication', 'command', 'feedback']}},
                     load_error=getattr(session.service, 'customization_load_error', ''), load_warning=getattr(session.service, 'customization_load_warning', ''), incomplete_bindings=[deepcopy(r) for r in state['bindings'] if 'wire' not in r])
 
 
@@ -130,20 +138,35 @@ def _keys(row, expected, message):
 
 
 def _prepare(state, previous, *, base_service=None, strict=True):
-    _keys(state, 'devices instructions bindings', '配置须包含 devices、instructions、bindings。')
+    if not isinstance(state, dict) or set(state) - {*EMPTY, 'definitions'} or not set(EMPTY) <= set(state):
+        raise ValueError('配置须包含devices、instructions、bindings，可附带definitions。')
+    from .custom_definitions import normalize
+    definitions = normalize(state.get('definitions'))
+    previous_definitions = normalize(previous.get('definitions'))
+    used_units = {f['unit'] for row in [*previous['devices'], *previous['instructions']] for f in row['fields']}
+    for _ in previous_definitions['units']:
+        used_units.update(row['base_unit'] for row in previous_definitions['units'] if row['symbol'] in used_units and row['base_unit'])
+    new_units = {row['symbol']: row for row in definitions['units']}
+    for row in previous_definitions['units']:
+        if row['symbol'] in used_units and new_units.get(row['symbol']) != row:
+            raise ValueError('已使用单位的换算定义不能直接改变或删除，请先迁移相关字段。')
     if any(not isinstance(state[k], list) or len(state[k]) > 500 for k in EMPTY):
         raise ValueError('每类配置必须是最多500条的数组。')
     # Legacy template publication supplies its prospective, old-only service:
     # rebuilding from disk here would discard that not-yet-published template.
     service = deepcopy(base_service) if base_service is not None else _base()
     base = SimulationCatalog(legacy_service=service)
+    device_types = _catalog_types(base)
     presets = {r['instruction_id']: r for r in _presets(base)}
     custom, instructions, bound = {}, {}, {}
-    wires = {}
+    wires, field_additions = {}, {}
+    previous_instructions = {row['instruction_id']: row for row in previous['instructions']}
+    previous_fields = {(binding['device_id'], field['key']): field for binding in previous['bindings']
+                       for field in previous_instructions.get(binding['instruction_id'], {}).get('fields', [])}
     used_instructions = set()
     names = {_identity(n) for d in base.devices.values() for n in [d['device_id'], d['display_name'], *d.get('aliases', [])]}
     for row in state['devices']:
-        _keys(row, 'device_id display_name scenario_id device_type fields', '设备字段不完整或含未知字段。')
+        _keys(row, 'device_id display_name scenario_id device_type fields' + (' aliases' if isinstance(row, dict) and 'aliases' in row else ''), '设备字段不完整或含未知字段。')
         key, name = row['device_id'], row['display_name']
         if (not isinstance(key, str) or len(key) > 48 or not re.fullmatch(r'SIM-[A-Z0-9]+(?:-[A-Z0-9]+)*', key)
                 or key in custom or key in base.devices or _identity(key) in names):
@@ -152,6 +175,14 @@ def _prepare(state, previous, *, base_service=None, strict=True):
                 or any(ord(c) < 32 for c in name) or _identity(name) in names or _identity(name).startswith('sim-')):
             raise ValueError('设备名称须为2至40字符且不能与已有设备或别名重复。')
         names.update((_identity(name), _identity(key)))
+        aliases = row.get('aliases', [])
+        if not isinstance(aliases, list) or len(aliases) > 20:
+            raise ValueError('设备别名须为最多20项的文本数组。')
+        for alias in aliases:
+            if (not isinstance(alias, str) or not 2 <= len(alias) <= 40 or alias != alias.strip()
+                    or any(ord(c) < 32 for c in alias) or _identity(alias) in names or _identity(alias).startswith('sim-')):
+                raise ValueError('设备别名无效或与已有编号、名称、别名重复。')
+            names.add(_identity(alias))
         custom[key] = row
     if {r['device_id'] for r in previous['devices']} - custom.keys():
         raise ValueError('已发布设备不能在本次编辑中删除；请保留设备以保持运行状态。')
@@ -172,7 +203,7 @@ def _prepare(state, previous, *, base_service=None, strict=True):
         if not isinstance(row['display_name'], str) or not 1 <= len(row['display_name'].strip()) <= 80:
             raise ValueError('请填写有效的指令名称。')
         _compile(dict(device_id='SIM-VALIDATE', display_name='校验设备', scenario_id='substation_maintenance',
-                      device_type=row['device_type'], fields=row['fields']), [row['action']])
+                      device_type=row['device_type'], fields=row['fields']), [row['action']], definitions, device_types)
         instructions[key] = row
     library = {**presets, **instructions}
     seen = set()
@@ -195,6 +226,19 @@ def _prepare(state, previous, *, base_service=None, strict=True):
         specs = {f['key']: f for f in fields}
         required = {action['result_field'], *(r['field'] for r in action['conditions'])}
         declared = {f['key']: f for f in instruction['fields']}
+        if key in base.devices:
+            for field, spec in declared.items():
+                if field not in specs:
+                    old = previous_fields.get((key, field))
+                    if old and any(old[part] != spec[part] for part in ('section', 'type', 'unit')):
+                        raise ValueError(f'{key}：已补充字段{field}的分区、类型或单位不能直接改变。')
+                    prior = field_additions.setdefault(key, {}).get(field)
+                    if prior and any(prior[part] != spec[part] for part in ('section', 'type', 'unit', 'value')):
+                        raise ValueError(f'{key}：新增字段{field}的定义或默认值冲突。')
+                    field_additions[key][field] = deepcopy(spec)
+                    specs[field] = spec
+                elif any(specs[field][part] != spec[part] for part in ('section', 'type', 'unit')):
+                    raise ValueError(f'{key}：不能改变已有字段{field}的分区、类型或单位。')
         for field in required:
             if field not in specs or field not in declared or any(specs[field][part] != declared[field][part] for part in ('section', 'type', 'unit')):
                 raise ValueError(f'{key}：字段 {field} 的分区、类型或单位与指令不兼容。')
@@ -224,12 +268,16 @@ def _prepare(state, previous, *, base_service=None, strict=True):
         row = custom.get(key)
         target = base.devices.get(key)
         if row is None:
+            fields = [*device_fields(target), *field_additions.get(key, {}).values()]
+            if len(fields) > 30:
+                raise ValueError(f'{key}：补充后的字段不能超过30项。')
+            required = {a['result_field'] for a in bound.get(key, [])} | {r['field'] for a in bound.get(key, []) for r in a['conditions']}
             row = dict(device_id=key, display_name=target['display_name'], scenario_id=target.get('business_scenario', target['scenario']),
-                       device_type=target['device_type'], fields=device_fields(target))
+                       device_type=target['device_type'], fields=[f for f in fields if f['key'] in required])
         actions = bound.get(key, [])
         if not actions:
             raise ValueError(f'{key}：新设备至少关联一个指令。')
-        compiled = _compile(row, actions)
+        compiled = _compile(row, actions, definitions, device_types)
         for action_name, wire in wires.get(key, {}).items():
             if wire is not None:
                 apply_wire(compiled, action_name, wire, strict=strict)
@@ -241,6 +289,11 @@ def _prepare(state, previous, *, base_service=None, strict=True):
             service.states[key] = deepcopy(compiled['initial_state'])
         else:
             device = deepcopy(target)
+            for field in field_additions.get(key, {}).values():
+                section = 'initial_state' if field['section'] == 'state' else 'runtime_facts'
+                metadata = 'state_fields' if field['section'] == 'state' else 'runtime_fact_fields'
+                device.setdefault(section, {})[field['key']] = deepcopy(field['value'])
+                device.setdefault(metadata, {})[field['key']] = dict(display_name=field['label'], type=field['type'], unit=field['unit'])
             for action_name, generated in compiled['actions'].items():
                 original = target['actions'].get(action_name)
                 if original:
@@ -264,6 +317,8 @@ def _prepare(state, previous, *, base_service=None, strict=True):
             overlays[key] = device
             if key in service.devices:
                 service.devices[key] = deepcopy(device)
+                for field, value in device.get('initial_state', {}).items():
+                    service.states[key].setdefault(field, deepcopy(value))
     service.customization_overrides = overlays
     catalog = SimulationCatalog(legacy_service=service)
     return service, catalog, sorted(custom.keys() | bound.keys())
@@ -284,6 +339,37 @@ def load_customization(service):
         service.customization_load_error = f'自定义配置未加载：{exc}'
 
 
+def _communication_changes(before, after):
+    def normalized(device):
+        value = deepcopy(device.get('communication', {}))
+        for key in ('simulation_only', 'profile_id'):
+            value.pop(key, None)
+        value['host'] = str(value.get('host', '')).strip().casefold()
+        value.setdefault('port', 502 if device['protocol'] == 'Modbus' else 102)
+        return value
+    changes = []
+    # Removing the last overlay also restores the original endpoint.
+    for key in sorted(before.devices.keys() & after.devices.keys()):
+        old, new = normalized(before.devices[key]), normalized(after.devices[key])
+        if old != new:
+            changes.append(dict(device_id=key, before=old, after=new,
+                                affected_actions=sorted(after.devices[key]['actions']),
+                                affected_action_names=[row.get('display_name', action) for action, row in sorted(after.devices[key]['actions'].items())]))
+    return changes
+
+
+def _field_additions(before, after, affected):
+    changes = []
+    for key in affected:
+        if key not in before.devices:
+            continue
+        known = {field['key'] for field in device_fields(before.devices[key])}
+        added = [field for field in device_fields(after.devices[key]) if field['key'] not in known]
+        if added:
+            changes.append(dict(device_id=key, fields=added))
+    return changes
+
+
 def process(session, runtime, payload, *, publish=False):
     with session.lock:
         try:
@@ -294,12 +380,19 @@ def process(session, runtime, payload, *, publish=False):
                 raise ValueError('配置已变化，请重新加载后校验；未覆盖现有数据。')
             state = deepcopy(payload.get('state'))
             staged, catalog, affected = _prepare(state, previous)
+            communication_changes = _communication_changes(runtime.catalog, catalog)
+            affected = sorted(set(affected) | {row['device_id'] for row in communication_changes})
             token = hashlib.sha256(_encode([baseline, state, catalog.devices])).hexdigest()
-            result = dict(status='validated', revision=token, affected_devices=affected, errors=[])
+            result = dict(status='validated', revision=token, affected_devices=affected,
+                          communication_changes=communication_changes, field_additions=_field_additions(runtime.catalog, catalog, affected), errors=[])
             if not publish:
                 return result
             if payload.get('revision') != token:
                 raise ValueError('发布确认已失效，请重新校验当前配置。')
+            confirmations = payload.get('communication_confirmations', [])
+            if (not isinstance(confirmations, list) or any(not isinstance(key, str) for key in confirmations)
+                    or {row['device_id'] for row in communication_changes} - set(confirmations)):
+                raise ValueError('通信配置变化会影响整台设备，请核对受影响动作并确认通信变更后再保存。')
             if state == previous:
                 return dict(result, status='published', changed=False, requires_reanalysis=False,
                             configuration_revision=runtime.configuration_revision, base_revision=baseline)

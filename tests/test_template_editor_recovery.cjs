@@ -1,17 +1,10 @@
-const {test} = require('node:test');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const vm = require('node:vm');
-test('template refresh re-enables controls after initial connection failure', async () => {
-  const nodes = new Map();
-  const element = id => {if(!nodes.has(id))nodes.set(id,{value:'',options:[],innerHTML:'',textContent:'',disabled:false,setAttribute(){},addEventListener(){}});return nodes.get(id);};
-  let connected = false;
-  const context = vm.createContext({document:{getElementById:element},URLSearchParams,AbortSignal,window:{},location:{search:''},
-    fetch:async()=>{if(!connected)throw Error('offline');return {ok:true,json:async()=>({devices:[{device_id:"BUILTIN",protocol:"Modbus",mapping:{},actions:{}}]})};}});
-  const script = fs.readFileSync(require('node:path').join(__dirname,'../frontend/customization-advanced.html'),'utf8').match(/<script>([\s\S]*?)<\/script>/)[1];
-  vm.runInContext(script, context); await new Promise(setImmediate);
-  assert.equal(element('save').disabled,true);
-  connected = true; await element('refresh').onclick();
-  assert.equal(element('save').disabled,false);
-  assert.equal(element('test').disabled,false);
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+test('unified editor can retry initial connection failure without losing the workspace',async()=>{
+ const nodes=new Map(),element=id=>{if(!nodes.has(id))nodes.set(id,{value:'',dataset:{},disabled:true,after(){},replaceChildren(){}});return nodes.get(id)};
+ const storage={getItem:()=>null,setItem(){},removeItem(){}};let connected=false;
+ const data={state:{devices:[],instructions:[],bindings:[]},devices:[],instructions:[],base_revision:'revision',options:{device_types:{cooling_fan:'风机'},actions:{cooling_fan:{}},scenarios:{},units:[]}};
+ const context={window:{},document:{getElementById:element,querySelectorAll:()=>[],createElement:()=>({replaceChildren(){}})},structuredClone,URL,URLSearchParams,AbortSignal,location:{search:'',href:'http://localhost/customization.html'},history:{replaceState(){}},localStorage:storage,sessionStorage:storage,fetch:async()=>{if(!connected)throw Error('offline');return {ok:true,json:async()=>data}}};
+ vm.runInNewContext(fs.readFileSync('frontend/customization.js','utf8'),context);await new Promise(setImmediate);
+ assert.match(element('status').textContent,/无法读取/);connected=true;await element('refresh').onclick();
+ assert.equal(element('new-device').disabled,false);assert.equal(element('new-instruction').disabled,false);assert.equal(element('validate').disabled,false);
 });
